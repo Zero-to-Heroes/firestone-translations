@@ -35,6 +35,54 @@
 			"holy": "Sacré",
 			"shadow": "Ombre",
 			"fel": "Fiel"
+		},
+		"tribe": {
+			"bloodelf": "",
+			"draenei": "",
+			"Dwarf": "",
+			"gnome": "",
+			"goblin": "",
+			"goblin2": "",
+			"human": "",
+			"nightelf": "",
+			"orc": "",
+			"tauren": "",
+			"troll": "",
+			"undead": "",
+			"worgen": "",
+			"murloc": "",
+			"demon": "",
+			"scourge": "",
+			"mech": "",
+			"elemental": "",
+			"ogre": "",
+			"beast": "",
+			"totem": "",
+			"nerubian": "",
+			"pirate": "",
+			"dragon": "",
+			"blank": "",
+			"all": "",
+			"egg": "",
+			"quilboar": "",
+			"centaur": "",
+			"furbolg": "",
+			"highelf": "",
+			"treant": "",
+			"owlkin": "",
+			"halforc": "",
+			"lock": ""
+		},
+		"hs-terms": {
+			"attack": "",
+			"health": "",
+			"golden": "",
+			"divine-shield": "",
+			"poisonous": "",
+			"reborn": "",
+			"taunt": "",
+			"windfury": "",
+			"mega-windfury": ""
 		}
 	},
 	"app": {
@@ -162,7 +210,138 @@
 				"winrate-coin": "Taux de victoires (La pièce)"
 			}
 		},
-		"battlegrounds": {}
+		"battlegrounds": {
+			"filters": {
+				"hero": {
+					"all": ""
+				},
+				"hero-sort": {
+					"average-position": "",
+					"mmr": "",
+					"games-played": "",
+					"last-played": ""
+				},
+				"rank": {
+					"all": "",
+					"percentile": ""
+				},
+				"rank-group": {
+					"per-match": "",
+					"per-day": "",
+					"per-day-tooltip": ""
+				},
+				"time": {
+					"past-seven": "",
+					"past-three": "",
+					"last-patch": "",
+					"past-100": "",
+					"past-30": ""
+				},
+				"tier": {
+					"all-tiers": "",
+					"tier": ""
+				},
+				"tribe": {
+					"all-tribes": "",
+					"no-tribe": ""
+				}
+			},
+			"personal-stats": {
+				"hero": {
+					"average-position": "",
+					"games-played": "",
+					"net-mmr": "",
+					"net-mmr-tooltip": ""
+				},
+				"hero-details": {
+					"tabs": {
+						"mmr": "",
+						"final-warbands": "",
+						"warband-stats": "",
+						"winrate-stats": ""
+					},
+					"stats": {
+						"title": "",
+						"games-played": "",
+						"average-position": "",
+						"top-1": "",
+						"top-4": "",
+						"net-mmr": "",
+						"net-mmr-tooltip": "",
+						"avg-mmr-gain": "",
+						"avg-mmr-gain-tooltip": "",
+						"avg-mmr-loss": "",
+						"avg-mmr-loss-tooltip": ""
+					},
+					"last-warbands": {
+						"title": "",
+						"damage-dealt": "",
+						"damage-dealt-tooltip": "",
+						"damage-taken": "",
+						"damage-taken-tooltip": "",
+						"empty-state-message": "",
+						"finished-position": "",
+						"last-board": "",
+						"long-ago": "",
+						"place-1": "",
+						"place-2": "",
+						"place-3": "",
+						"place-4": "",
+						"place-default": ""
+					},
+					"warband-stats": {
+						"community-tooltip": "",
+						"your-tooltip": ""
+					},
+					"winrate-stats": {
+						"community-tooltip": "",
+						"your-tooltip": ""
+					},
+					"mmr": {
+						"empty-state-message": ""
+					}
+				},
+				"rating": {
+					"title": "",
+					"empty-state-message": "",
+					"axis-label": ""
+				},
+				"records": {
+					"title": "",
+					"columns": {
+						"record": "",
+						"hero": "",
+						"replay": "",
+						"score": ""
+					},
+					"rows": {
+						"total-dmg-dealt-minions": "",
+						"total-dmg-taken-minions": "",
+						"total-dmg-dealt-hero": "",
+						"total-dmg-dealt-hero-tooltip": "",
+						"max-dmg-dealt-hero": "",
+						"max-dmg-dealt-hero-tooltip": "",
+						"win-streak": "",
+						"triples": "",
+						"board-stats": "",
+						"coins-wasted": "",
+						"rerolls": "",
+						"freezes": "",
+						"hero-power": "",
+						"minions-bought": "",
+						"minions-sold": "",
+						"enemy-minions-killed": "",
+						"enemy-heroes-killed": "",
+						"battles-going-first": "",
+						"battle-luck": "",
+						"negative-battle-luck": ""
+					}
+				}
+			},
+			"tier-list": {
+				"header": ""
+			}
+		}
 	},
 	"decktracker": {
 		"zones": {
@@ -193,12 +372,18 @@
 			"deck-winrate": "Taux de victoires du deck",
 			"deck-winrate-tooltip": "Taux de victoires de ce deck en Partie classée depuis {{value}}",
 			"deck-winrate-vs-class": "VS {{value}}",
-			"deck-winrate-vs-class-tooltip": "Taux de victoires de ce deck en Partie classée contre {{opponent}} depuis {{date}}"
+			"deck-winrate-vs-class-tooltip": "Taux de victoires de ce deck en Partie classée contre {{opponent}} depuis le {{date}}"
 		},
 		"counter": {
 			"multicaster": {
 				"player": "Vous piocherez {{cardsTotal}} cartes des écoles de magie : {{schools}}",
 				"opponent": "Votre adversaire piochera {{cardsTotal}} cartes des écoles de magie : {{schools}}"
+			},
+			"brilliant-macaw": {
+				"player": "",
+				"opponent": "",
+				"settings-name": "",
+				"settings-tooltip": ""
 			}
 		},
 		"card-burned": "Carte brûlée",
@@ -222,7 +407,33 @@
 			"update-minion-button-tooltip": "Mettre à jour le serviteur",
 			"remove-minion-button-tooltip": "Enlever le serviteur",
 			"versus": "VS",
-			"simulate-button": "Simuler"
+			"simulate-button": "Simuler",
+			"simulate-button-tooltip": "",
+			"reset-button": "",
+			"actual": "",
+			"simulated": "",
+			"empty-state-title": "",
+			"empty-state-subtitle": "",
+			"battles-header": "",
+			"turn-winrate-graph-title": "",
+			"hero-power-title": "",
+			"hero-powers-header": "",
+			"hero-search-placeholder": "",
+			"select-button": "",
+			"select-hero-power-placeholder": "",
+			"select-hero-placeholder": "",
+			"hero-selection-title": "",
+			"heroes-header": "",
+			"search-heroes-placeholder": "",
+			"update-minion-title": "",
+			"summon-mechs": "",
+			"summon-mechs-tooltip": "",
+			"summon-plants": "",
+			"summon-plants-tooltip": "",
+			"sneed-deathrattle": "",
+			"sneed-deathrattle-tooltip": "",
+			"minions-selection-title": "",
+			"search-minion-placeholder": ""
 		},
 		"hero-stats": {
 			"avg-position-label": "Position moyenne :",
