@@ -11,7 +11,8 @@
 			"rogue": "Rogue",
 			"shaman": "Shaman",
 			"warlock": "Warlock",
-			"warrior": "Warrior"
+			"warrior": "Warrior",
+			"neutral": "Neutral"
 		},
 		"format": {
 			"standard": "Standard",
@@ -94,7 +95,7 @@
 			"goblin": "Goblin",
 			"goblin2": "Goblin",
 			"human": "Human",
-			"nightelf": "Nnight Elf",
+			"nightelf": "Night Elf",
 			"orc": "Orc",
 			"tauren": "Tauren",
 			"troll": "Troll",
@@ -150,6 +151,15 @@
 			"go-premium-header": "Support the dev and remove the ads",
 			"logged-in-as-header": "Logged in as {{value}}",
 			"not-logged-in-header": "Log in to save your progress online"
+		},
+		"gobal": {
+			"reward": {
+				"tooltip": "{{amount}} {{rewardType}}",
+				"dust": "dust",
+				"pack": "pack",
+				"gold": "gold",
+				"card": "golden card"
+			}
 		},
 		"arena": {
 			"filters": {
@@ -227,7 +237,8 @@
 				"you-have-viewed": "You've viewed {{numberOfCards}} out of {{totalCards}} cards",
 				"load-more-button": "Load more",
 				"empty-state-title": "No history yet",
-				"empty-state-subtitle": "Open a pack to start one!"
+				"empty-state-subtitle": "Open a pack to start one!",
+				"golden-card": "Golden {{cardName}}"
 			},
 			"card-search": {
 				"search-box-placeholder": "Search card...",
@@ -259,7 +270,7 @@
 						"oops": "Oops",
 						"threaten": "threaten",
 						"thanks": "Thanks",
-						"Sorry": "Sorry",
+						"sorry": "Sorry",
 						"concede": "Concede",
 						"start": "Start",
 						"timer": "Timer",
@@ -304,7 +315,8 @@
 			"pack-stats": {
 				"title": "All-time packs ({{value}})",
 				"best-opened-packs-title": "Best {{value}} opened packs",
-				"best-opened-packs-title-tooltip": "Best packs you opened with Firestone running"
+				"best-opened-packs-title-tooltip": "Best packs you opened with Firestone running",
+				"pack-stat-tooltip": "You received {{totalPacks}} {{packName}} packs since you started playing Hearthstone"
 			},
 			"set-stats": {
 				"title": "Set stats",
@@ -514,7 +526,7 @@
 					"no-tribe": "No tribe"
 				},
 				"signature-treasure": {
-					"all": "All Sig. Trasures"
+					"all": "All Sig. Treasures"
 				},
 				"stat-type": {
 					"hero": "Heroes",
@@ -628,6 +640,11 @@
 					"own": "Own all cards",
 					"dust": "{{value}} dust"
 				},
+				"stat-type": {
+					"hero": "Hero",
+					"hero-power": "Hero Power",
+					"signature-treasure": "Signature Treasure"
+				},
 				"game-mode": {
 					"all": "All modes",
 					"all-tooltip": "Community stats will only show data for Heroic Duels. Your own stats will show both Casual and Heroic.",
@@ -635,8 +652,14 @@
 					"casual-tooltip": "Community stats will only show data for Heroic Duels. Your own stats will only show Casual.",
 					"heroic": "Heroic"
 				},
+				"hero": {
+					"all": "All Heroes"
+				},
 				"hero-power": {
 					"all": "All Hero Powers"
+				},
+				"signature-treasure": {
+					"all": "All Signature Treasures"
 				},
 				"hero-sort": {
 					"player-winrate": "Your winrate",
@@ -665,9 +688,59 @@
 				}
 			},
 			"deck-stat": {
+				"title": "Deck stats",
 				"dust-missing-tooltip": "Total dust required to craft the missing cards in this deck",
 				"no-dust-missing-tooltip": "You have all the cards",
-				"view-details-button": "View details"
+				"view-details-button": "View details",
+				"winrate": "Winrate",
+				"runs": "Runs",
+				"starter-deck": "Starter deck",
+				"final-deck": "Final deck",
+				"all-runs-with-deck": "All runs with \"{{deckName}}\"",
+				"run-details": "Run details",
+				"number-of-runs": "Number of runs",
+				"average-wins-per-run": "Avg. wins per run",
+				"archive-deck-tooltip": "Archive deck (you can restore it later)",
+				"restore-deck-tooltip": "Restore deck",
+				"rename-deck-tooltip": "Rename deck",
+				"rename-confirm-button": "Ok"
+			},
+			"hero-stat": {
+				"global-winrate": "Global winrate",
+				"your-winrate": "You winrate",
+				"games-played": "Games played",
+				"number-of-games-tooltip": "{{totalRuns}} runs recorded ({{popularity}} popularity)"
+			},
+			"run": {
+				"replays-title": "Replays for the same run",
+				"rating": "Rating",
+				"view-deck-button": "View deck",
+				"view-run-button": "View run",
+				"minimize-run-button": "Minimize view",
+				"load-more-button": "Loading more runs..."
+			},
+			"stats": {
+				"tier-list-title": "Tier List",
+				"tier-list-title-tooltip": "The tiers are computed based on your current filters",
+				"tier-s-tooltip": "Must pick",
+				"tier-a-tooltip": "String pick",
+				"tier-b-tooltip": "Good pick",
+				"tier-c-tooltip": "Fair pick",
+				"tier-d-tooltip": "Preferably avoid",
+				"tier-e-tooltip": "Definitely avoid"
+			},
+			"leaderboard": {
+				"rank": "Rank",
+				"rating": "Rating",
+				"name": "Name"
+			},
+			"search": {
+				"hero": {
+					"placeholder": "Search hero..."
+				},
+				"treasure": {
+					"placeholder": "Search treasure..."
+				}
 			},
 			"classes-recap": {
 				"title": "Stats overview",
@@ -679,9 +752,119 @@
 				"best-winrate-against": "Best winrate against",
 				"stat-tooltip": "You played {{numberOfRuns}} runs and {{totalMatches}} matches with {{playerClass}} with a {{winrate}}% winrate",
 				"faced-tooltip": "You faced {{opponentClass}} {{totalMatches}} times with a {{winrate}}% winrate"
+			},
+			"empty-state": {
+				"title": "Nothing here yet",
+				"subtitle": "Start playing Duels to receive information"
 			}
 		}
 	},
+	"counters": {
+		"attack": {
+			"you": "You have {{value}} total attack from board and hero",
+			"opponent": "Your opponent has {{value}} total attack from board and hero"
+		},
+		"pogo": {
+			"you": "You have played {{value}} Pogo-Hoppers",
+			"opponent": "Your opponent has played {{value}} Pogo-Hoppers"
+		},
+		"bolner": "{{value}} was the first battlecry card played this turn",
+		"multicaster": {
+			"player": "You will draw {{cardsTotal}} cards from spell schools: {{schools}}",
+			"opponent": "Your opponent will draw {{cardsTotal}} cards from spell schools: {{schools}}"
+		},
+		"brilliant-macaw": {
+			"player": "{{value}} was the last battlecry card you played",
+			"opponent": "{{value}} was the last battlecry card your opponent played",
+			"settings-name": "Brilliant Macaw",
+			"settings-tooltip": "When you have a Brilliant Macaw in hand, show the last Battlecry card that you played, if any"
+		},
+		"cthun": {
+			"player": "Your C'Thun is a {{value}}/{{value}}",
+			"opponent": "Your opponent's C'Thun is a {{value}}/{{value}}"
+		},
+		"elemental": {
+			"player": "You have played {{lastTurn}} elementals last turn, and {{thisTurn}} elementals this turn",
+			"opponent": "Your opponent has played {{lastTurn}} elementals last turn, and {{thisTurn}} elementals this turn"
+		},
+		"elwynn-boar": {
+			"player": "{{value}} boards have died for you",
+			"opponent": "{{value}} boards have died for your opponent"
+		},
+		"fatigue": {
+			"player": "Your current fatigue damage is {{value}}",
+			"opponent": "Your opponent's current fatigue damage is {{value}}"
+		},
+		"galakrond": {
+			"player": "You have invoked Galakrond {{value}} times",
+			"opponent": "Your opponent has invoked Galakrond {{value}} times"
+		},
+		"hero-power-damage": {
+			"player": "Your hero power has dealt {{value}} damage this game",
+			"opponent": "Your opponent's hero power has dealt {{value}} damage this game"
+		},
+		"jade": {
+			"player": "Your Jade Golem size is {{value}}",
+			"opponent": "Your opponent's Jade Golem size is {{value}}"
+		},
+		"libram": {
+			"player": "You have played {{value}} librams this game",
+			"opponent": "Your opponent has played {{value}} librams this game"
+		},
+		"spell": {
+			"player": "You have played {{value}} spells this game",
+			"opponent": "Your opponent has played {{value}} spells this game"
+		},
+		"watchpost": {
+			"player": "You have played {{value}} watchposts this game",
+			"opponent": "Your opponent has played {{value}} watchposts this game"
+		}
+	},
+	"loading": {
+		"hotkey": "To view the app, hit",
+		"getting-ready": "Getting ready",
+		"ready": "Your abilities are ready!"
+	},
+	"ftue": {
+		"title": "Welcome to Firestone",
+		"subtitle": "How about a quick tour?",
+		"start-button": "Let's start",
+		"skip-button": "Skip",
+		"previous-button": "Previous",
+		"steps": {
+			"decktracker": {
+				"title": "Deck Tracker",
+				"text": "Track your cards in game and your deck stats."
+			},
+			"battlegrounds": {
+				"title": "Battlegrounds",
+				"text": "Our in game helper will appear once you start a game! We will accompany you along your game from hero selection to post match."
+			},
+			"duels": {
+				"title": "Duels",
+				"text": "Check global and personal stats, and see a selection of succesful decks for both Casual and Heroic Duels."
+			},
+			"arena": {
+				"title": "Arena",
+				"text": "Check your latest Arena runs and rewards."
+			},
+			"replays": {
+				"title": "Replays",
+				"text": "Here you can find all your past games, broken into step by step actions."
+			},
+			"achievements": {
+				"title": "Achievements",
+				"text": "Challenge yourself throughout the game. Here you'll find all the feats you have accomplished."
+			}
+		}
+	},
+	"new-version": {
+		"title": "New version version: {{value}}",
+		"dont-show-again": "Don't show again",
+		"dont-show-again-secondary": "You can change that in the settings",
+		"confirm-button": "Got it"
+	},
+	"mercenaries": {},
 	"decktracker": {
 		"zones": {
 			"global-effects": "Global effects",
@@ -712,18 +895,6 @@
 			"deck-winrate-tooltip": "This deck's winrate in ranked since {{value}}",
 			"deck-winrate-vs-class": "vs {{value}}",
 			"deck-winrate-vs-class-tooltip": "This deck's winrate in ranked against {{opponent}} since {{date}}"
-		},
-		"counter": {
-			"multicaster": {
-				"player": "You will draw {{cardsTotal}} cards from spell schools: {{schools}}",
-				"opponent": "Your opponent will draw {{cardsTotal}} cards from spell schools: {{schools}}"
-			},
-			"brilliant-macaw": {
-				"player": "{{value}} was the last battlecry card you played",
-				"opponent": "{{value}} was the last battlecry card your opponent played",
-				"settings-name": "Brilliant Macaw",
-				"settings-tooltip": "When you have a Brilliant Macaw in hand, show the last Battlecry card that you played, if any"
-			}
 		},
 		"card-burned": "Card burned",
 		"card-transformed": "Card transformed",
@@ -924,6 +1095,38 @@
 			},
 			"flash-window": "Flash HS window",
 			"flash-window-tooltip": "Flash HS window on your turn, or when the Recruit phase starts in BG"
+		},
+		"decktracker": {
+			"global": {
+				"minions-play-order": "Minions play order",
+				"minions-play-order-tooltip": "Show the play order of each minion on board, to help you track deathrattle resolve orders (or anything that relies on the order in which minions arrived on the board)",
+				"show-title-bar": "Show title bar",
+				"show-title-bar-tooltip": "Show/hide the deck name and cards left in hand and deck",
+				"show-control-bar": "Show control bar",
+				"show-control-bar-tooltip": "Show/hide the bar with the logo and the control buttons",
+				"show-tooltips-on-hover": "Show card tooltips",
+				"show-rarity-color": "Show rarity colors",
+				"show-rarity-color-tooltip": "Color the mana cost of cards in the tracker based on the card's rarity",
+				"show-deck-winrate": "Show deck winrate",
+				"show-deck-winrate-tooltip": "Show the deck overall Ranked winrate above the tracker, if we have data (in either Standard or Wild, based on the current game mode)",
+				"show-matchup-winrate": "Show matchup winrate",
+				"show-matchup-winrate-tooltip": "Show the deck overall Ranked winrate against the opponent's class above the tracker, if we have data (in either Standard or Wild, based on the current game mode)",
+				"show-gifts-separately": "Show gifts separately",
+				"show-gifts-separately-tooltip": "Display cards that have been created in their own lines (one line for each different creator)",
+				"show-stats-change": "Show stats change",
+				"show-stats-change-tooltip": "Show stats changed for some cards in the decklist (e.g. Ignite, Blacksmithing Hammer)",
+				"show-cost-reduction": "Update cost in deck",
+				"show-cost-reduction-tooltip": "Update the mana cost of cards in the deck when their cost has been modified by an effect (e.g. Incanter's Flow)",
+				"highlight-related-cards": "Highlight related cards",
+				"highlight-related-cards-tooltip": "When active, related cards will be highlighted on your decklist when mousing over specific cards (for instance, mousing over Double Jump in your decklist will highlight all Outcast cards in your deck)",
+				"close-tracker-on-end": "Close tracker on game end",
+				"close-tracker-on-end-tooltip": "Automatically close the tracker when the game ends. If disabled, the tracker needs to be closed manually",
+				"close-tracker-on-end-advanced": "Got it, Firestone won't close the tracker when the match ends",
+				"reset-button": "Reset positions",
+				"reset-button-confirm": "Are you sure?",
+				"reset-button-tooltip": "Reset the decktracker positions. This can solve an issue where your tracker doesn't show up anymore on screen",
+				"reset-button-confirmation": "Decktracker positions have been reset, and will be applied in your next match."
+			}
 		},
 		"collection": {
 			"history-show-only-new-cards": "Show only new cards",
