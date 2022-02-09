@@ -152,7 +152,7 @@
 			"logged-in-as-header": "Logged in as {{value}}",
 			"not-logged-in-header": "Log in to save your progress online"
 		},
-		"gobal": {
+		"global": {
 			"reward": {
 				"tooltip": "{{amount}} {{rewardType}}",
 				"dust": "dust",
@@ -761,11 +761,11 @@
 	},
 	"counters": {
 		"attack": {
-			"you": "You have {{value}} total attack from board and hero",
+			"player": "You have {{value}} total attack from board and hero",
 			"opponent": "Your opponent has {{value}} total attack from board and hero"
 		},
 		"pogo": {
-			"you": "You have played {{value}} Pogo-Hoppers",
+			"player": "You have played {{value}} Pogo-Hoppers",
 			"opponent": "Your opponent has played {{value}} Pogo-Hoppers"
 		},
 		"bolner": "{{value}} was the first battlecry card played this turn",
@@ -855,6 +855,10 @@
 			"achievements": {
 				"title": "Achievements",
 				"text": "Challenge yourself throughout the game. Here you'll find all the feats you have accomplished."
+			},
+			"collection": {
+				"title": "Collection",
+				"text": "Here you can find all the cards in the game, with detailed information (you can even play the sounds they make)."
 			}
 		}
 	},
@@ -968,6 +972,7 @@
 			"battles-header": "All battles",
 			"turn-winrate-graph-title": "Avg. winrate by turn",
 			"hero-power-title": "Hero Power",
+			"hero-power-info-tavish": "Current turn",
 			"hero-powers-header": "Hero Powers",
 			"hero-search-placeholder": "Search Hero / Hero power",
 			"select-button": "Select",
@@ -1017,17 +1022,23 @@
 				}
 			},
 			"opponents": {
-				"title": "Other opponents",
+				"title": "All heroes",
 				"empty-state-title": "Nothing here yet",
 				"empty-state-subtitle": "Pick a hero and wait for your opponents!",
 				"score-board-title": "Score board",
 				"score-board-tooltip": "Recap of all the encounters you had with the other players",
 				"tavern-upgrade-title": "Tavern upgrades",
 				"tavern-last-upgrade-title": "Last upgrades",
+				"tavern-empty-state": "No tavern upgrade",
 				"last-opponent-icon-tooltip": "Was last round's opponent",
 				"triple-title": "New triples",
 				"triple-tooltip": "Since last fight, this opponent got {{quantity}} tier {{tier}} minions as rewards for tripling",
-				"triple-empty-state": "No new triples"
+				"triple-empty-state": "No new triples",
+				"buddies-title": "Buddies received",
+				"buddies-empty-state": "No buddies",
+				"buddy-text": "Turn {{turn}}",
+				"buddy-tooltip": "Received their first Buddy at turn {{turn}}",
+				"buddy-tooltip-golden": "Received their other two Buddies at turn {{turn}}"
 			},
 			"minions-list": {
 				"reset-button": "Reset"
@@ -1084,6 +1095,43 @@
 		"empty-state-title": "Nothing here yet",
 		"empty-state-subtitle": "Start playing Battlegrounds to receive information"
 	},
+	"session": {
+		"title": "Session recap",
+		"title-tooltip": "Shows a recap of all your BG games since the last time you reset the session (with the button at the top). You can activate / deactivate it from the settings.",
+		"display-mode": {
+			"all": "All",
+			"battlegrounds": "Battlegrounds",
+			"unknown": "Unknown"
+		},
+		"grouping": {
+			"grouped": "Grouped",
+			"list": "List",
+			"tooltip": "Later on, you'll be able to view "
+		},
+		"buttons": {
+			"reset-tooltip": "Start a new session and reset all stats",
+			"close-tooltip": "Close and disable the widget. If you want to turn it on again, please reactivate it from the settings"
+		},
+		"summary": {
+			"total-games": "{{value}} games",
+			"total-games-tooltip": "Since {{value}} (use the Reset button at the top to start a new session)"
+		},
+		"groups": {
+			"battlegrounds": {
+				"category": {
+					"1": "1st!!!!",
+					"2": "2nd!!!",
+					"3": "3rd!!",
+					"4": "4th!",
+					"5": "5th",
+					"6": "6th",
+					"7": "7th",
+					"8": "8th"
+				},
+				"value-tooltip": "How many games you ended at this position this session"
+			}
+		}
+	},
 	"settings": {
 		"general": {
 			"third-party": {
@@ -1094,7 +1142,19 @@
 				}
 			},
 			"flash-window": "Flash HS window",
-			"flash-window-tooltip": "Flash HS window on your turn, or when the Recruit phase starts in BG"
+			"flash-window-tooltip": "Flash HS window on your turn, or when the Recruit phase starts in BG",
+			"bug-report": {
+				"title": "Send feedback / Report a bug",
+				"simulator-bug-text": "If you want to report a bug with the simulator (and want to help me as much as possible), please check the how-to",
+				"general-bug-text": "For other big issues (app not working), there are some helpful troubleshooting steps",
+				"link-text": "here",
+				"email-placeholder": "Your email (optional)",
+				"message-placeholder": "Your message. If you're reporting a bug, please try to describe what you were doing when the bug occurred, and what happened that caused you to report this bug.",
+				"send-button": "Send",
+				"status-uploading-logs": "Uploading log files",
+				"status-sending-feedback": "Log files uploaded, sending feedback",
+				"status-done": "Feedback sent. Thank you for reaching out! Stay up-to-date on by joining us on {{discordLink}} or on {{twitterLink}}"
+			}
 		},
 		"decktracker": {
 			"global": {
@@ -1138,6 +1198,24 @@
 			"personal-decks-show-hidden-decks": "Show archived",
 			"hide-stats-below-threshold": "Hide low data",
 			"hide-stats-below-threshold-tooltip": "Hide stats with fewer than {{value}} data points"
+		},
+		"battlegrounds": {
+			"session-widget-label": "Show session widget",
+			"session-widget-label-tooltip": "Show a recap of your current play session, grouped by final position. Useful mostly for streamers"
 		}
+	},
+	"twitch": {
+		"settings-side-text": "Settings",
+		"show-hero-cards-help": "Show hero cards",
+		"show-hero-cards-help-tooltip": "Show the hero's hero power and buddies (normal and golden versions) when mousing over a hero portrait in the leaderboard",
+		"show-minions-list": "Show minions list",
+		"show-minions-list-tooltip": "Show a widget with all minions available in the game. You can see the full card, as well as its golden version, on mouse over",
+		"minions-list-size": "Minions list size",
+		"show-minions-list-golden-cards": "Show golden cards",
+		"show-minions-list-golden-cards-tooltip": "Shows the golden version of each minion when mousing over the minion's image in the list",
+		"show-battle-simulator": "Show battle odds",
+		"battle-simulator-size": "Battle simulator size",
+		"last-board-size": "Last board size",
+		"last-board-size-tooltip": "Change the size of the opponent recap that appears when mousing over the hero's portrait in the leaderboard."
 	}
 }
