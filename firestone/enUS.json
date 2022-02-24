@@ -892,6 +892,7 @@
 			"import-deckstring-tooltip": "Import a deck code from your clipboard",
 			"confirmation-title": "Override deck list?",
 			"use-deck-text": "Use {{value}}?",
+			"use-deck-text-default": "Use deck from clipboard?",
 			"button-text": "Override",
 			"cancel-text": "Cancel",
 			"invalid-deck-code-title": "Invalid deck code",
@@ -1107,26 +1108,22 @@
 			"battlegrounds": "Battlegrounds",
 			"unknown": "Unknown"
 		},
-		"grouping": {
-			"grouped": "Grouped",
-			"list": "List",
-			"tooltip": "Later on, you'll be able to view "
-		},
 		"buttons": {
 			"reset-tooltip": "Start a new session and reset all stats",
 			"close-tooltip": "Close and disable the widget. If you want to turn it on again, please reactivate it from the settings"
 		},
 		"summary": {
 			"total-games": "{{value}} games",
-			"total-games-tooltip": "Since {{value}} (use the Reset button at the top to start a new session)"
+			"total-games-tooltip": "Since {{value}} (use the Reset button at the top to start a new session)",
+			"total-games-tooltip-all-time": "Since you have been using the app (use the Reset button at the top to start a new session)"
 		},
 		"groups": {
 			"battlegrounds": {
 				"category": {
-					"1": "1st!!!!",
-					"2": "2nd!!!",
-					"3": "3rd!!",
-					"4": "4th!",
+					"1": "1st",
+					"2": "2nd",
+					"3": "3rd",
+					"4": "4th",
 					"5": "5th",
 					"6": "6th",
 					"7": "7th",
@@ -1158,10 +1155,16 @@
 				"status-uploading-logs": "Uploading log files",
 				"status-sending-feedback": "Log files uploaded, sending feedback",
 				"status-done": "Feedback sent. Thank you for reaching out! Stay up-to-date on by joining us on {{discordLink}} or on {{twitterLink}}"
+			},
+			"twitch": {
+				"configuration-title": "Stream configuration",
+				"delay-label": "Stream delay (ms)",
+				"delay-label-tooltip": "Postpone events sent to Twitch by this amount of milliseconds. Useful if your stream is delayed to fight snipers"
 			}
 		},
 		"decktracker": {
 			"global": {
+				"title": "Activate / Deactivate features",
 				"minions-play-order": "Minions play order",
 				"minions-play-order-tooltip": "Show the play order of each minion on board, to help you track deathrattle resolve orders (or anything that relies on the order in which minions arrived on the board)",
 				"show-title-bar": "Show title bar",
@@ -1189,7 +1192,8 @@
 				"reset-button": "Reset positions",
 				"reset-button-confirm": "Are you sure?",
 				"reset-button-tooltip": "Reset the decktracker positions. This can solve an issue where your tracker doesn't show up anymore on screen",
-				"reset-button-confirmation": "Decktracker positions have been reset, and will be applied in your next match."
+				"reset-button-confirmation": "Decktracker positions have been reset, and will be applied in your next match.",
+				"counters-size": "Counters size"
 			}
 		},
 		"collection": {
@@ -1204,8 +1208,22 @@
 			"hide-stats-below-threshold-tooltip": "Hide stats with fewer than {{value}} data points"
 		},
 		"battlegrounds": {
+			"menu": {
+				"general": "General",
+				"overlay": "Overlay",
+				"session": "Session widget"
+			},
+			"session-widget-title": "Session widget",
 			"session-widget-label": "Show session widget",
-			"session-widget-label-tooltip": "Show a recap of your current play session, grouped by final position. Useful mostly for streamers"
+			"session-widget-label-tooltip": "Show a recap of your current play session. Useful mostly for streamers",
+			"session-widget-show-groups": "Show grouped info",
+			"session-widget-show-groups-tooltip": "Show a recap of your session matches, grouped by final position.",
+			"session-widget-show-matches": "Show latest matches",
+			"session-widget-show-matches-tooltip": "Show the latest matches.",
+			"session-widget-number-of-matches": "Number of matches",
+			"session-widget-number-of-matches-tooltip": "Maximum number of matches to show when showing match details (most recent is at the top)",
+			"session-widget-size-title": "Widget size",
+			"session-widget-opacity-title": "Widget opacity"
 		}
 	},
 	"twitch": {
