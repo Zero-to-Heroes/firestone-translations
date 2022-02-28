@@ -26,7 +26,14 @@
 		},
 		"game-mode": {
 			"casual-duels": "Duels",
-			"heroic-duels": "Heroic Duels"
+			"heroic-duels": "Heroic Duels",
+			"battlegrounds": "Battlegrounds",
+			"mercenaries": "Mercenaries",
+			"practice": "Practice",
+			"casual": "Casual",
+			"friendly": "Friendly",
+			"arena": "Arena",
+			"tavern-brawl": "Tavern Brawl"
 		},
 		"pack": {
 			"classic": "Classic",
@@ -191,6 +198,9 @@
 			"restart-needed": "New version ready, click to restart the app. We recommend that you do it while not in a match"
 		},
 		"arena": {
+			"menu": {
+				"my-runs": "My Runs"
+			},
 			"filters": {
 				"time": {
 					"past-three": "Past 3 days",
@@ -262,12 +272,19 @@
 			"card-history": {
 				"new-copy": "New",
 				"second-copy": "Second",
+				"new-copy-long": "New card",
+				"second-copy-long": "Second copy",
 				"title": "My Card History",
 				"you-have-viewed": "You've viewed {{numberOfCards}} out of {{totalCards}} cards",
 				"load-more-button": "Load more",
 				"empty-state-title": "No history yet",
 				"empty-state-subtitle": "Open a pack to start one!",
-				"golden-card": "Golden {{cardName}}"
+				"golden-card": "Golden {{cardName}}",
+				"diamond-card": "Diamond {{cardName}}",
+				"click-to-view": "CLick to {{link}}",
+				"click-to-view-link": "expand",
+				"duplicate-cards": "{{numberOfCards}} duplicate cards",
+				"dust-potential": "{{dust}} Dust potential"
 			},
 			"card-search": {
 				"search-box-placeholder": "Search card...",
@@ -536,6 +553,13 @@
 			}
 		},
 		"battlegrounds": {
+			"menu": {
+				"heroes": "Heroes",
+				"perfact-games": "Perfect Games",
+				"rating": "Rating",
+				"records": "Records Broken",
+				"simulator": "Simulator"
+			},
 			"filters": {
 				"hero": {
 					"all": "All heroes"
@@ -679,6 +703,14 @@
 			}
 		},
 		"duels": {
+			"menu": {
+				"my-runs": "My runs",
+				"my-decks": "My decks",
+				"heroes": "Heroes",
+				"treasures": "Treasures",
+				"high-win-decks": "High-wins decks",
+				"leaderboard": "Leaderboard"
+			},
 			"filters": {
 				"dust": {
 					"all": "All decks",
@@ -748,7 +780,8 @@
 				"archive-deck-tooltip": "Archive deck (you can restore it later)",
 				"restore-deck-tooltip": "Restore deck",
 				"rename-deck-tooltip": "Rename deck",
-				"rename-confirm-button": "Ok"
+				"rename-confirm-button": "Ok",
+				"default-deck-name": "{{wins}} wins {{playerClass}} ({{gameMode}})"
 			},
 			"hero-stat": {
 				"global-winrate": "Global winrate",
@@ -804,6 +837,15 @@
 			}
 		},
 		"achievements": {
+			"filters": {
+				"all": "All achievements",
+				"all-empty-state-title": "Holy Moly, you are epic!",
+				"all-empty-state-text": "100% of achievements in this category complete.",
+				"missing": "Incomplete achievements",
+				"missing-empty-state-title": "Tons of achievements are awaiting you!",
+				"missing-empty-state-text": "Find them listed here once completed.",
+				"completed": "Completed achievements"
+			},
 			"history": {
 				"title": "My Achievements History",
 				"empty-state-title": "No history yet",
@@ -873,6 +915,14 @@
 					"6": "6th",
 					"7": "7th",
 					"8": "8th"
+				},
+				"game-mode-tooltip": {
+					"legend-format": "{{format}} Legend",
+					"ladder": "{{format}} {{leagueName}} {{rank}}",
+					"ladder-fallback": "{{format}} {{rank}}",
+					"ladder-default": "{{format}} Rank 25",
+					"galakrond-explorers": "Galakrond's Awakening - Explorers",
+					"galakrond-evil": "Galakrond's Awakening - E.V.I.L."
 				},
 				"went-first-tooltip": "Went first",
 				"went-second-tooltip": "Had the Coin"
@@ -1120,7 +1170,8 @@
 			"global-effects": "Global effects",
 			"in-deck": "In deck",
 			"in-hand": "In hand",
-			"other": "Other"
+			"other": "Other",
+			"discard": "Discard"
 		},
 		"cards-in-hand-tooltip": "Cards in hand",
 		"cards-left-in-deck-tooltip": "Cards left in deck",
@@ -1155,9 +1206,17 @@
 		"card-discarded": "Card discarded",
 		"card-in-graveyard": "In graveyard",
 		"gift-created-by-single-card": "Created by <br/> {{value}}",
-		"gift-created-by-multiple-cards": "Created by <br/> multiple entities"
+		"gift-created-by-multiple-cards": "Created by <br/> multiple entities",
+		"unnamed-player": "Unnamed player"
 	},
 	"battlegrounds": {
+		"menu": {
+			"hero-selection": "Hero selection",
+			"opponent": "Opponent",
+			"live-stats": "Live stats",
+			"post-match-stats": "Post-match stats",
+			"simulator": "Simulator"
+		},
 		"battle": {
 			"turn": "Turn {{value}}",
 			"chance-label": "Your chance of:",
@@ -1239,7 +1298,8 @@
 			"sneed-deathrattle": "Sneed's DR",
 			"sneed-deathrattle-tooltip": "How many times has Sneed's Hero Power been used on this minion",
 			"minions-selection-title": "Minions",
-			"search-minion-placeholder": "Search minion"
+			"search-minion-placeholder": "Search minion",
+			"resimulating-battle": "Resimulating battle"
 		},
 		"hero-stats": {
 			"finishes-title": "Finishes",
@@ -1271,6 +1331,7 @@
 			},
 			"opponents": {
 				"title": "All heroes",
+				"next-opponent-title": "Turn {{turn}} - Next opponent",
 				"empty-state-title": "Nothing here yet",
 				"empty-state-subtitle": "Pick a hero and wait for your opponents!",
 				"score-board-title": "Score board",
@@ -1296,6 +1357,8 @@
 			"title": "Last match stats",
 			"final-board": "Your final board",
 			"current-board": "Your current board",
+			"final-position": "You finished #{{position}}",
+			"live-stats-title": "Live stats - Turn {{turn}}",
 			"tabs": {
 				"hp-by-turn": "Health by turn",
 				"stats": "Stats",
@@ -1332,13 +1395,6 @@
 			"last-board-empty": "Last board was empty",
 			"total-damage": "Total Dmg",
 			"stats-share-warning": "Multiple distinct minions, as well as golden minions, share the same stats (because of how Battlegrounds is coded)"
-		},
-		"menu": {
-			"hero-selection": "Hero selection",
-			"opponent": "Opponent",
-			"live-stats": "Live stats",
-			"post-match-stats": "Post-match stats",
-			"simulator": "Simulator"
 		},
 		"empty-state-title": "Nothing here yet",
 		"empty-state-subtitle": "Start playing Battlegrounds to receive information"
