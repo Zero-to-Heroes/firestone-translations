@@ -14,6 +14,11 @@
 			"warrior": "Warrior",
 			"neutral": "Neutral"
 		},
+		"role": {
+			"caster": "Caster",
+			"fighter": "Fighter",
+			"protector": "Protector"
+		},
 		"format": {
 			"standard": "Standard",
 			"wild": "Wild",
@@ -159,7 +164,31 @@
 				"pack": "pack",
 				"gold": "gold",
 				"card": "golden card"
+			},
+			"controls": {
+				"bug-button-tooltip": "Report a bug",
+				"help-button-tooltip": "Show release notes",
+				"default-confirmation-title": "Are you sure?",
+				"default-confirmation-text": "This will close the tracker for the duration of the current match",
+				"default-validation-button": "Ok",
+				"default-cancel-button": "Cancel",
+				"multiselect-validation-button": "Apply",
+				"multiselect-validation-error-tooltip": "Please select either all tribes or only 5",
+				"hotkey-text": "Show/Hide:"
+			},
+			"ads": {
+				"support-the-dev": "Support the dev and remove the ads",
+				"supporter": "Thank you for supporting us! You rock :)"
 			}
+		},
+		"loading": {
+			"title": "We're loading all the goods",
+			"subtitle": "Please wait while we're collecting the information"
+		},
+		"updates": {
+			"update-available": "New version available! Click to update",
+			"update-error": "An error occurred while updating the app. Please restart Overwolf to force the update",
+			"restart-needed": "New version ready, click to restart the app. We recommend that you do it while not in a match"
 		},
 		"arena": {
 			"filters": {
@@ -378,7 +407,23 @@
 			}
 		},
 		"share": {
-			"title": "Share"
+			"title": "Share",
+			"logged-out-message": "Please use the button on the left to login before posting a message",
+			"login-button": "Log in",
+			"logout-button": "Log out",
+			"clipboard": {
+				"title": "Clipboard",
+				"tooltip": "Copy current screen to clipboard",
+				"confirmation": "Image copied to clipboard"
+			},
+			"reddit": {
+				"title": "Reddit",
+				"post-title-placeholder": "Your post title",
+				"subreddit-placeholder": "subreddit",
+				"subreddit-tooltip": "Subreddit to post to. Most used subreddits are /r/hearthstone and /r/BobsTavern (with or without the leading /r/)",
+				"flair-tooltip": "Flair to tag your post with. Some subreddits rejects posts if no flair is assigned",
+				"logged-out-message": "Please use the button on the left to login before posting a message"
+			}
 		},
 		"decktracker": {
 			"menu": {
@@ -757,6 +802,94 @@
 				"title": "Nothing here yet",
 				"subtitle": "Start playing Duels to receive information"
 			}
+		},
+		"achievements": {
+			"history": {
+				"title": "My Achievements History",
+				"empty-state-title": "No history yet",
+				"empty-state-subtitle": "Complete an achievement to start one!"
+			},
+			"search-placeholder": "Search achievement..."
+		},
+		"replays": {
+			"filters": {
+				"hero": {
+					"all": "All heroes"
+				},
+				"deck": {
+					"all": "All decks"
+				},
+				"game-mode": {
+					"all": "All game modes",
+					"battlegrounds": "Battlegrounds",
+					"mercenaries-all": "Mercenaries (All)",
+					"mercenaries-pve": "Mercenaries PvE",
+					"mercenaries-pvp": "Mercenaries PvP",
+					"ranked": "Ranked (All)",
+					"ranked-standard": "Ranked Standard",
+					"ranked-wild": "Ranked Wild",
+					"ranked-classic": "Ranked Classic",
+					"both-duels": "Duels (All)",
+					"duels": "Duels Casual",
+					"paid-duels": "Duels Heroic",
+					"arena": "Arena",
+					"casual": "Casual",
+					"friendly": "Friendly",
+					"tavern-brawl": "Tavern Brawl",
+					"practice": "Vs AI"
+				},
+				"player": {
+					"all": "All classes (player)"
+				},
+				"opponent": {
+					"all": "All classes (opponent)"
+				}
+			},
+			"bg-stats": {
+				"title": "Match stats",
+				"empty-state-title": "Nothing here",
+				"empty-state-subtitle": "We couldn't retrieve the stats"
+			},
+			"replay-info": {
+				"rank-issue-tooltip": "We had an issue while retrieving the player rank",
+				"versus": "VS",
+				"loot-icon-tooltip": "Cards added to deck after this round",
+				"treasure-icon-tooltip": "Cards added to deck after this round",
+				"mmr": "MMR",
+				"show-stats-button": "Stats",
+				"show-stats-button-tooltip": "Show stats",
+				"watch-replay-button": "Watch",
+				"watch replay-button-tooltip": "Watch replay",
+				"mercenaries-bot-opponent-name": "The Innkeeper (AI Bot)",
+				"bgs-available-tribes-tooltip": "Tribes available in this run: {{value}}",
+				"bgs-perfect-game-result": "Perfect!",
+				"deck-name-tooltip": "with {{value}}",
+				"bgs-result": {
+					"1": "1st",
+					"2": "2nd",
+					"3": "3rd",
+					"4": "4th",
+					"5": "5th",
+					"6": "6th",
+					"7": "7th",
+					"8": "8th"
+				},
+				"went-first-tooltip": "Went first",
+				"went-second-tooltip": "Had the Coin"
+			},
+			"class-icon-toggle": {
+				"label": "Use class icons",
+				"tooltip": "Toggle between class icons and hero icons"
+			},
+			"merc-details-toggle": {
+				"label": "Show details",
+				"tooltip": "Show more information on the mercenaries replays"
+			},
+			"list": {
+				"load-more-button": "Click to load more replays...",
+				"empty-state-title": "No history yet",
+				"empty-state-subtitle": "Play a match to get started"
+			}
 		}
 	},
 	"counters": {
@@ -775,9 +908,7 @@
 		},
 		"brilliant-macaw": {
 			"player": "{{value}} was the last battlecry card you played",
-			"opponent": "{{value}} was the last battlecry card your opponent played",
-			"settings-name": "Brilliant Macaw",
-			"settings-tooltip": "When you have a Brilliant Macaw in hand, show the last Battlecry card that you played, if any"
+			"opponent": "{{value}} was the last battlecry card your opponent played"
 		},
 		"cthun": {
 			"player": "Your C'Thun is a {{value}}/{{value}}",
@@ -872,7 +1003,118 @@
 		"dont-show-again-secondary": "You can change that in the settings",
 		"confirm-button": "Got it"
 	},
-	"mercenaries": {},
+	"mercenaries": {
+		"filters": {
+			"show-hidden-teams-link-label": "Show archived",
+			"show-merc-names-in-teams-link-label": "Show names",
+			"fully-upgraded": {
+				"all": "All mercs",
+				"upgraded": "Fully upgraded",
+				"non-upgraded": "Not fully upgraded"
+			},
+			"hero-level": {
+				"level-0": "All levels",
+				"level-1": "Levels 1-4",
+				"level-5": "Levels 5-14",
+				"level-15": "Levels 15-29",
+				"level-30": "Level 30"
+			},
+			"mode": {
+				"pve": "PvE",
+				"pvp": "PvP"
+			},
+			"pve-difficulty": {
+				"all": "All difficulties",
+				"normal": "Normal",
+				"heroic": "Heroic",
+				"legendary": "Legendary"
+			},
+			"role": {
+				"all": "All roles",
+				"caster": "Casters",
+				"protector": "Protectors",
+				"fighter": "Fighters"
+			},
+			"starter": {
+				"all": "All",
+				"starter": "Starter",
+				"bench": "Bench"
+			}
+		},
+		"menu": {
+			"mercenaries-personal-hero-stats": "Progression",
+			"mercenaries-my-teams": "My PvP Teams",
+			"mercenaries-hero-stats": "PvP Heroes",
+			"mercenaries-compositions-stats": "PvP Teams"
+		},
+		"search": {
+			"hero-search-placeholder": "Search hero..."
+		},
+		"empty-state": {
+			"title": "Nothing here yet",
+			"subtitle": "Play some mercenaries matches to get started! Also, check your filters above :)"
+		},
+		"hero-stats": {
+			"games-played": "Games played",
+			"winrate": "Winrate",
+			"equipments": "Equipments",
+			"global-winrate": "Global winrate",
+			"your-winrate": "Your winrate",
+			"abilities": "Abilities",
+			"global-usage": "Global usage",
+			"global-usage-tooltip": "How many times each ability is used per time by the community",
+			"your-usage": "Your usage",
+			"your-usage-tooltip": "How many times each ability is used per time by you",
+			"number-of-games-tooltip": "{{totalMatches}} matches recorded ({{popularity}} popularity)",
+			"level-header": "Lvl",
+			"role-header": "Role",
+			"name-header": "Name",
+			"xp-header": "XP",
+			"coins-left-header": "Coins Left",
+			"coins-left-header-tooltip": "Total coins you have in reserve for this merc",
+			"coins-needed-header": "Coins Needed",
+			"coins-needed-header-tooltip": "Total coins you still need to get to fully max out this merc",
+			"coins-to-farm-header": "Coins To Farm",
+			"coins-to-farm-header-tooltip": "Total coins you still need to earn to fully max out this merc (counts coins you already have and coins you will get by maxing all tasks)",
+			"completed-tasks-header": "Completed Tasks",
+			"completed-tasks-header-tooltip": "Tasks completed. Ctrl + click on the current task to manually go to the next task. Alt + click to go back one step.",
+			"abilities-header": "Abilities",
+			"equipments-header": "Equipments",
+
+			"max-level": "Max level!",
+			"xp-tooltip": "{{value}} XP",
+			"current-task-tooltip": "The task can only be updated once a visitor for this mercenary visits your village while the app is running.",
+			"maxed": "Maxed!",
+			"coins-to-farm-tooltip": "Expecting that you get {{value}} coins from uncompleted tasks",
+			"empty-state-subtitle": "Go to the Mercenaries Village screen in Hearthstone to refresh the information",
+			"current-task-tooltip-title": "Current Task {{taskNumber}}: {{taskTitle}}",
+			"next-task-tooltip-title": "Next Task {{taskNumber}}: {{taskTitle}}"
+		},
+		"teams": {
+			"games": "{{value}} games",
+			"winrate": "{{value}}% win rate",
+			"last-used": "Last used: {{value}}",
+			"archive-button-tooltip": "Archive this team (you can restore it later)",
+			"restore-button-tooltip": "Restore this team",
+			"unnamed-team": "Unnamed Team"
+		},
+		"team-widget": {
+			"cooldown-left-tooltip": "Turns left before that ability can be used again",
+			"number-of-users-tooltip": "Number of times the mercenary has used this ability in this battle",
+			"base-speed-text": "Base Speed: {{value}}",
+			"speed-buff": "This ability will be {{value}} faster next turn",
+			"speed-debuff": "This ability will be {{value}} slower next turn",
+			"empty-state": "Head into a bounty or PvP battle to see your team",
+			"merc-level-tooltip": "Current mercenary level",
+			"unrecognized-mercenary": "Unrecognized mercenary",
+			"unknown-mercenary": "Unknown mercenary",
+			"tasks-button": "Tasks",
+			"task-title": "Task {{taskNumber}}: {{taskTitle}}",
+			"task-progress-label": "Progress:",
+			"task-progress-tooltip": "Quest progress at the beginning of the encounter",
+			"roles-chart-button": "Roles chart"
+		}
+	},
 	"decktracker": {
 		"zones": {
 			"global-effects": "Global effects",
@@ -904,6 +1146,9 @@
 			"deck-winrate-tooltip": "This deck's winrate in ranked since {{value}}",
 			"deck-winrate-vs-class": "vs {{value}}",
 			"deck-winrate-vs-class-tooltip": "This deck's winrate in ranked against {{opponent}} since {{date}}"
+		},
+		"secrets-helper": {
+			"title": "Secrets Helper"
 		},
 		"card-burned": "Card burned",
 		"card-transformed": "Card transformed",
@@ -1009,9 +1254,7 @@
 			"winning-tribes-title": "Top winning tribes",
 			"winning-tribes-title-tooltip": "Percentage of each tribe present in average in top 4 warbands"
 		},
-		"turn-counter": {
-			"settings-label": "Show turn counter"
-		},
+		"turn-counter": {},
 		"hero-selection": {
 			"achievement-completed": "Achievement completed",
 			"achievement-missing": "Achievement missing",
@@ -1134,16 +1377,79 @@
 		}
 	},
 	"settings": {
+		"title": "Settings",
+		"global": {
+			"knob-sizes": {
+				"small": "Small",
+				"medium": "Medium",
+				"large": "Large",
+				"default": "Default"
+			},
+			"knob-opacity": {
+				"opaque": "Opaque",
+				"transparent": "Transparent"
+			},
+			"knob-zoom": {
+				"normal": "Normal",
+				"zoom-200": "200%",
+				"zoom-400": "400%"
+			},
+			"widget-size-label": "Widget size",
+			"show-advanced-settings-button": "Show advanced settings",
+			"hide-advanced-settings-button": "Hide advanced settings"
+		},
+		"menu": {
+			"general": "General",
+			"decktracker": "Deck Tracker",
+			"battlegrounds": "Battlegrounds",
+			"mercenaries": "Mercenaries",
+			"replays": "Replays",
+			"collection": "Collection",
+			"achievements": "Achievements"
+		},
 		"general": {
+			"menu": {
+				"general": "General",
+				"localization": "Localization",
+				"bug-report": "Report a bug",
+				"third-party": "Third parties",
+				"broadcast": "Twitch"
+			},
 			"third-party": {
+				"intro": "We believe that your data belongs to you, and that you should be able to synchronize it to other third party websites and help them do whatever they do best with it. We don't get paid for this, but we do get some exposure since they then talk about us :)",
+				"vs": {
+					"title": "Vicious Syndicate",
+					"pitch": "Vicious Syndicate builds a weekly meta report that captures what the meta looks, using both data coming from thousands of games and insights by top-level players. You can visit them {{webisteLink}}",
+					"website-link": "here",
+					"next": "If you decide to contribute to the vS Data Reaper Report, Firestone will anonymously send them info about your games (mostly the cards played by each player and some meta data, like player ranks).",
+					"toggle-label": "Contribute to the vS Data Reaper Report"
+				},
+				"ooc": {
+					"title": "Out of Cards",
+					"pitch": "Out of Cards is a Hearthstone community site with articles, guides, decks, card database, and more. Syncing your card collection to the site makes it easier to find decks to play. You can visit them {{websiteLink}}",
+					"website-link": "here",
+					"next": "If you connect your Out of Cards account, Firestone will send your collection data to Out of Cards so you can use it online.",
+					"toggle-label": "Show notification when collection is synchronizeed",
+					"connect-button-text": "Connect",
+					"disconnect-button-test": "Disconnect",
+					"connected-text": "You're logged in"
+				},
+				"d0nkey": {
+					"title": "d0nkey.top",
+					"pitch": "d0nkey.top is a fan website that gathers all decks from official Hearthstone competitions, as well as decks from streamers to allow anyone to easily find interesting decks to play. Synchronizing to d0nkey.top will let you share your decks with your audience (if you're a streamer) or will help them build a better database to provide more free services to the community. You can visit them {{websiteLink}}",
+					"website-link": "here",
+					"next": "If you decide to sync to d0nkey.top, Firestone will send them each game you play, which will appear in a specific section on the website (which is still under construction). The replays will be private by default, unless you're streaming at the same time. See the {{link}} for how to set everything up.",
+					"instructions-page-link": "instrutions page",
+					"toggle-label": "Synchronize your replays to d0nkey.top"
+				},
 				"hsdecks": {
-					"pitch": "<a href=\"https://hearthstone-decks.net/\" target=\"_blank\">hearthstone-decks.net</a> shares Decks played at High Legend for all constructed modes, News & Articles.",
+					"title": "Hearthstone-decks",
+					"pitch": "Hearthstone-decks.net shares Decks played at High Legend for all constructed modes, News & Articles. You can visit them {{websiteLink}}",
+					"website-link": "here",
 					"next": "If you decide to sync to hearthstone-decks.net, Firestone will send them each game you play anonymously with some info about your games (Deck Code, Rank, Game Results)",
-					"pref-label": "Synchronize your replays to hearthstone-decks.net"
+					"toggle-label": "Synchronize your replays to hearthstone-decks.net"
 				}
 			},
-			"flash-window": "Flash HS window",
-			"flash-window-tooltip": "Flash HS window on your turn, or when the Recruit phase starts in BG",
 			"bug-report": {
 				"title": "Send feedback / Report a bug",
 				"simulator-bug-text": "If you want to report a bug with the simulator (and want to help me as much as possible), please check the how-to",
@@ -1157,12 +1463,52 @@
 				"status-done": "Feedback sent. Thank you for reaching out! Stay up-to-date on by joining us on {{discordLink}} or on {{twitterLink}}"
 			},
 			"twitch": {
+				"title": "Broadcast on Twitch",
+				"intro": "Firestone twitch extension allows you to stream while showing your deck tracker in the Twitch player, as well as letting them mouse over all the players in the leaderboard in Battlegrounds. To activate it, you will need to:",
+				"todo-1": "1. Install the Firestone Twitch extension on your channel:",
+				"todo-2": "2. Connect your Twitch account to Firestone by clicking the button below",
+				"todo-3": "3. Tweak your options: ",
+				"link": "here",
+				"login-button-text": "Login with Twitch",
+				"logout-button-text": "Disconnect",
+				"logged-in-as-text": "Logged in as:",
 				"configuration-title": "Stream configuration",
 				"delay-label": "Stream delay (ms)",
 				"delay-label-tooltip": "Postpone events sent to Twitch by this amount of milliseconds. Useful if your stream is delayed to fight snipers"
+			},
+			"launch": {
+				"launch-on-game-start-label": "Launch Firestone when game starts",
+				"launch-on-game-start-tooltip": "When turned off, you need to manually launch Firestone every time",
+				"integrated-mode-label": "Integrated mode",
+				"integrated-mode-tooltip": "When turned on, the main window becomes an overlay, and is bound to the game window. Using this is recommended for single monitor setups, or if you want to stream the app. Changing this value will close then reopen the Settings window and the Main window",
+				"session-recap-on-exit-label": "Session recap on exit",
+				"session-recap-on-exit-tooltip": "Shows a recap of the past session when you exit Hearthstone",
+				"xp-recap-on-game-end-label": "Show XP recap on game end",
+				"xp-recap-on-game-end-tooltip": "Shows a recap of the XP / levels gained after each match",
+				"hide-release-notes-label": "Hide release notes on app start",
+				"hide-release-notes-tooltip": "Don't show the new release notes for the new Firestone version",
+				"display-notifications-label": "Display notifications",
+				"display-notifications-tooltip": "Toggles global visibility of toast notifications [bottom-right]. When active, you can still configure notifications per game mode in the corresponding tabs",
+				"display-notifications-confirmation": "Notifications now TURNED OFF globally.",
+				"accessibility-title": "Accessibility",
+				"flash-window": "Flash HS window",
+				"flash-window-tooltip": "Flash HS window on your turn, or when the Recruit phase starts in BG",
+				"zoom-label": "Zoom level",
+				"zoom-tooltip": "A zoom level that will be applied to all windows",
+				"reset-prefs-button-default": "Reset preferences",
+				"reset-prefs-button-confirmation": "Are you sure?",
+				"reset-prefs-tooltip": "Reset ALL your preferences, including the various widgets positions on screen",
+				"reset-prefs-confirmation": "All your preferences have been reset. This includes the various widgets locations on screen, as well as your Twitch settings, so don't forget to set back what you need :)",
+				"restart-app-button-label": "Restart App"
 			}
 		},
 		"decktracker": {
+			"menu": {
+				"global": "Global options",
+				"your-deck": "Your deck",
+				"opponent-deck": "Opponent's deck",
+				"launch": "Launch options"
+			},
 			"global": {
 				"title": "Activate / Deactivate features",
 				"minions-play-order": "Minions play order",
@@ -1194,9 +1540,115 @@
 				"reset-button-tooltip": "Reset the decktracker positions. This can solve an issue where your tracker doesn't show up anymore on screen",
 				"reset-button-confirmation": "Decktracker positions have been reset, and will be applied in your next match.",
 				"counters-size": "Counters size"
+			},
+			"modes": {
+				"title": "Decktracker is active for the following modes",
+				"ranked": "Ranked",
+				"duels": "Duels",
+				"arena": "Arena",
+				"tavern-brawl": "Tavern Brawl",
+				"practice": "Practice",
+				"friendly": "Friendly",
+				"casual": "Casual"
+			},
+			"opponent-deck": {
+				"tracker-title": "Decktracker",
+				"show-tracker-label": "Show opponent's tracker",
+				"show-tracker-tooltip": "When active, a tracker will show for your opponent's cards",
+				"ai-decklist-label": "Load AI decklists",
+				"ai-decklist-tooltip": "When active, the tracker will try to load the decklist of the current AI opponent. Be aware that some decks are pseudo random, so the decklist will often be only indicative",
+				"group-cards-by-zone-label": "Group cards by zone",
+				"group-cards-by-zone-tooltip": "When active, the tracker will split the cards into collapsable sections. The sections active today are Deck, Hand and Other",
+				"used-cards-go-to-bottom-label": "Used cards go to bottom",
+				"used-cards-go-to-bottom-tooltip": "When active, the cards that have been used are shown at the bottom of the list. It can only be activated if the Group cards by zone option is disabled",
+				"darken-used-cards-label": "Darken used cards",
+				"darken-used-cards-tooltip": "When active, the cards that have been used are darkened.",
+				"global-effects-label": "Show global effects",
+				"global-effects-tooltip": "When active, a new section appears at the top of the tracker that shows global effects affecting the player / deck",
+				"sort-by-mana-cost-label": "Sort cards by mana cost",
+				"sort-by-mana-cost-tooltip": "When active, the cards will be sorted by mana cost in the Other zone. Otherwise, the zone will first show the cards on the board, then the graveyard, then the others",
+				"hide-generated-cards-label": "Hide generated cards in Other zone",
+				"hide-generated-cards-tooltip": "When active, the cards that didn't start in the deck won't appear in the Other zone",
+				"opponent-hand-title": "Opponent hand tracking",
+				"card-turn-draw-label": "Card turn draw",
+				"card-turn-draw-tooltip": "Show the turn at which a card in the opponent's hand was drawn",
+				"guessed-cards-label": "Guessed cards",
+				"guessed-cards-tooltip": "Show what card is in the opponent's hand when we know it (after it has been sent back to their hand with a Sap for instance)",
+				"buff-in-hand-label": "Buff in hand",
+				"buff-in-hand-tooltip": "Show buffs affecting cards in the opponent's hand",
+				"secrets-helper-title": "Secrets Helper",
+				"enable-secret-helper-label": "Enable Secrets Helper",
+				"enable-secret-helper-tooltip": "When active, a popup with all possible secrets will appear whenever the opponent plays a secret",
+				"counters": {
+					"title": "Counters",
+					"galakrond-label": "Galakrond Invoke",
+					"galakrond-tooltip": "Show the number of times your opponent has invoked Galakrond (appears only when the opponent plays Galakrond or a card that Invokes Galakrond)",
+					"pogo-label": "Pogo-Hopper",
+					"pogo-tooltip": "Show the number of times your opponent has played a Pogo-Hopper",
+					"jade-label": "Jade Golem",
+					"jade-tooltip": "Show the current size of your opponent's Jade Golems",
+					"cthun-label": "C'Thun",
+					"cthun-tooltip": "Show the current size of your opponent's C'Thun",
+					"fatigue-label": "Fatigue",
+					"fatigue-tooltip": "Show your opponent's current fatigue damage",
+					"attack-on-board-label": "Attack on board",
+					"attack-on-board-tooltip": "Show the total attack of minions on you opponent's board + their hero",
+					"watch-post-label": "Watch Posts",
+					"watch-post-tooltip": "Show the total number of watch posts they played this match. Shows up only if relevant cards are found in the deck or hand",
+					"libram-label": "Librams",
+					"libram-tooltip": "Show the total number of librams they played this match. Shows up only if relevant cards are found in the deck or hand",
+					"elwynn-boar-label": "Elwynn Boar deaths",
+					"elwynn-boar-tooltip": "Show the number of times an Elwynn Boar died for your opponent",
+					"hero-power-damage-label": "Hero Power damage",
+					"hero-power-damage-tooltip": "Show the total damage done by your opponent's hero power this match. It shows up only if the opponent's class is Mage and they have dealt at least one damage"
+				},
+				"size-title": "Size & opacity",
+				"opacity-title": "Opacity",
+				"hand-markers-title": "Hand markers"
+			},
+			"your-deck": {
+				"ignore-decklist-label": "Ignore decklist",
+				"ignore-decklist-tooltip": "Don't load the initial decklist and only track played and drawn cards. Changes will be applied for the next game",
+				"ignore-decklist-confirmation": "Got it, the tracker will ignore your decklist",
+				"counters": {
+					"galakrond-tooltip": "Show the number of times you have invoked Galakrond (appears only when the opponent plays Galakrond or a card that Invokes Galakrond)",
+					"pogo-tooltip": "Show the number of times you have played a Pogo-Hopper",
+					"jade-tooltip": "Show the current size of your Jade Golems",
+					"cthun-tooltip": "Show the current size of your C'Thun",
+					"fatigue-tooltip": "Show your current fatigue damage",
+					"attack-on-board-tooltip": "Show the total attack of minions on your board + your hero",
+					"number-of-spells-label": "Number of spells",
+					"number-of-spells-tooltip": "Show the total number of spells you played this match. Shows up only if relevant cards are found in the deck or hand",
+					"elementals-label": "Elementals",
+					"elementals-tooltip": "Show the total number of elementals you played this turn and last turn. Shows up only if relevant cards are found in your hand",
+					"watch-post-tooltip": "Show the total number of watch posts you played this match. Shows up only if relevant cards are found in the deck or hand",
+					"libram-tooltip": "Show the total number of librams you played this match. Shows up only if relevant cards are found in the deck or hand",
+					"elwynn-boar-tooltip": "Show the number of times an Elwynn Boar died for you",
+					"hero-power-damage-tooltip": "Show the total damage done by your hero power this match. Shows up only if Mordresh Fire Eye or Jan'Alai the Dragonhawk are in your deck or hand",
+					"bolner-label": "Bolner Hammerbeak",
+					"bolner-tooltip": "When you have Bolner Hammerbeak in hand, show the first Battlecry card that was played this turn, if any",
+					"brilliant-macaw-label": "Brilliant Macaw",
+					"brilliant-macaw-tooltip": "When you have a Brilliant Macaw in hand, show the last Battlecry card that you played, if any",
+					"multicaster-label": "Multicaster",
+					"multicaster-tooltip": "Show the spell schools of which you played a spell this game"
+				}
 			}
 		},
 		"collection": {
+			"menu": {
+				"general": "General"
+			},
+			"general": {
+				"title": "General options",
+				"high-resolution-images-label": "High res images",
+				"card-size-in-collection-label": "Card size in collection",
+				"notifications-label": "Enable notifications",
+				"selective-notifications-label": "You can selectively show some card notifications",
+				"notifications-dust-recap-label": "Dust recap",
+				"notifications-non-golden-commons-label": "Dust recap",
+				"notifications-rewards-label": "Rewards",
+				"notifications-rewards-tooltip": "Display a notification whenever you get a card outside of a pack, typically end-of-season or Arena rewards"
+			},
 			"history-show-only-new-cards": "Show only new cards",
 			"pack-stats-show-only-buyable-packs": "Only show main packs",
 			"pack-stats-show-only-buyable-packs-tooltip": "Show only the packs that can be bought in the shop, hiding all promotional / reward packs",
@@ -1213,17 +1665,131 @@
 				"overlay": "Overlay",
 				"session": "Session widget"
 			},
-			"session-widget-title": "Session widget",
-			"session-widget-label": "Show session widget",
-			"session-widget-label-tooltip": "Show a recap of your current play session. Useful mostly for streamers",
-			"session-widget-show-groups": "Show grouped info",
-			"session-widget-show-groups-tooltip": "Show a recap of your session matches, grouped by final position.",
-			"session-widget-show-matches": "Show latest matches",
-			"session-widget-show-matches-tooltip": "Show the latest matches.",
-			"session-widget-number-of-matches": "Number of matches",
-			"session-widget-number-of-matches-tooltip": "Maximum number of matches to show when showing match details (most recent is at the top)",
-			"session-widget-size-title": "Widget size",
-			"session-widget-opacity-title": "Widget opacity"
+			"full-toggle-label": "Enable Battlegrounds",
+			"full-toggle-tooltip": "Turn off to disable all Battlegrounds live features",
+			"general": {
+				"companion-app-title": "Companion App",
+				"enable-app-label": "Enable App",
+				"integrated-mode-label": "Integrated mode",
+				"integrated-mode-tooltip": "When turned on, the battlegrounds window becomes an overlay, and is bound to the game window. Using this is recommended for single monitor setups, or if you want to stream the app",
+				"enable-battle-sim-label": "Enable battle simulation",
+				"enable-battle-sim-tooltip": "When active, you will know your chances to win / tie / lose each battle at the start of the battle",
+				"hide-simulation-label": "Hide simulation after battle",
+				"hide-simulation-tooltip": "When active, simulation results will be hidden once the battle phase ends",
+				"show-sim-only-in-tavern-label": "Show simulation only in tavern",
+				"show-sim-only-in-tavern-tooltip": "When active, simulation results will be hidden during the battle, and shown once you get back to the tavern",
+				"use-local-simulator-label": "Use local battle simulator",
+				"use-local-simulator-tooltip": "Turning that off will run the battle simulations on a remote server, thus freeing your machine up. On the other hand, the results will take a bit longer to arrive",
+				"popup-hero-selection-screen-label": "Popup hero selection screen",
+				"popup-hero-selection-screen-tooltip": "When active, the hero selection screen, with various stats on each choice, will popup when being offered the initial heroes",
+				"show-next-opponent-recap-label": "Show next opp recap",
+				"show-next-opponent-recap-tooltip": "On the second-screen BG window, shows your next opponent's info at the top in a bigger space, in addition to being in the list with all the others below",
+				"show-achievements-label": "Show achievements",
+				"show-achievements-tooltip": "Shows the missing achievements for each hero at the hero selection stage",
+				"show-hero-tooltip-label": "Show hero tooltip",
+				"show-hero-tooltip-tooltip": "Shows hero stats when mousing over the hero portrait on the game's hero selection screen.",
+				"show-overlay-button": "Show overlay button",
+				"show-overlay-button-tooltip": "Shows a button on the overlay to toggle the main window or on off, which you can use instead of the hotkeys",
+				"popup-post-match-stats-label": "Popup post-match stats",
+				"popup-post-match-stats-tooltip": "When active, the battlegrounds window will be restored after a match to show the post-match stats, even if it was minimized",
+				"simulator-config-title": "Simulator configuration",
+				"simulator-number-of-sims-label": "Number of simulations",
+				"simulator-number-of-sims-tooltip": "The number of simulations ran for each battle. We found 5,000 simulations to be a pretty good spot. Increasing the number will increase the accuracy of the calculation but will require more resources from your PC."
+			},
+			"overlay": {
+				"overlay-title": "Overlay configuration",
+				"show-banned-tribes-label": "Show banned tribes",
+				"show-banned-tribes-tooltip": "Show what tribes are banned in the current run",
+				"show-minions-list-label": "Show minions list",
+				"show-minions-list-tooltip": "Show the list of minions, grouped by tavern tier",
+				"turn-counter-label": "Show turn counter",
+				"last-opponent-icon-label": "Last opponent icon",
+				"last-opponent-icon-tooltip": "Adds an icon next to your last opponent in the leaderboard",
+				"last-opponent-board-label": "Last opponent board",
+				"last-opponent-board-tooltip": "Show the last known opponent's board (and additional info) when mousing over their portrait in the leaderboard",
+				"battle-simulation-label": "Battle Simulation overlay",
+				"battle-simulation-tooltip": "Show the current battle simulation results as an overlay on top of the game",
+				"battle-simulation-example-label": "Simulation example in overlay",
+				"battle-simulation-example-tooltip": "Adds a button to view an example of how the simulator reached a specific result. WARNING: clicking on it will open a new tab in your default browser",
+				"widget-size-label": "Widget size",
+				"banned-tribes-title": "Banned tribes",
+				"banned-tribes-show-in-column-label": "Show in column",
+				"banned-tribes-show-in-column-tooltip": "Show the banned tribes in the column, instead of the row",
+				"banned-tribes-icon-size-label": "Icon size",
+				"minions-list-title": "Minions list",
+				"minions-list-show-on-mouse-over-label": "Show minions list on mouse over",
+				"minions-list-show-on-mouse-over-tooltip": "When deactivated, you will have to click on the tavern tier icons to show the minions list",
+				"minions-list-show-on-mouse-over-confirmation": "Got it, we will only show you the minions details when you click on a star",
+				"minions-list-show-tribes-highlight-label": "Show tribes highlight",
+				"minions-list-show-tribes-highlight-tooltip": "Adds buttons to highlight specific tribes in Bob's Tavern",
+				"minions-list-show-golden-cards-label": "Show golden cards",
+				"minions-list-show-golden-cards-tooltip": "Show both the normal and golden version of cards when mousing over the minion",
+				"opponent-board-title": "Opponent board",
+				"opponent-board-show-top-label": "Show at top of the screen",
+				"opponent-board-show-top-tooltip": "Toggle to show the opponent board at the top or bottom of the screen"
+			},
+			"session-widget": {
+				"title": "Session widget",
+				"label": "Show session widget",
+				"label-tooltip": "Show a recap of your current play session. Useful mostly for streamers",
+				"show-groups": "Show grouped info",
+				"show-groups-tooltip": "Show a recap of your session matches, grouped by final position.",
+				"show-matches": "Show latest matches",
+				"show-matches-tooltip": "Show the latest matches.",
+				"number-of-matches": "Number of matches",
+				"number-of-matches-tooltip": "Maximum number of matches to show when showing match details (most recent is at the top)",
+				"size-title": "Widget size",
+				"opacity-title": "Widget opacity"
+			}
+		},
+		"achievements": {
+			"menu": {
+				"notifications": "Notifications"
+			},
+			"notifications": {
+				"title": "Update when you see achievements notifications",
+				"firestone-achievements-text": "Enable FS achievements",
+				"firestone-achievements-tooltip": "Enable Firestone-exclusive achievements tracking",
+				"show-notifications-text": "Show notifications",
+				"show-notifications-tooltip": "Display a notification whenever you unlock an achievement. Turning this off also turns off in-game achievements tracking for  Hearthstone's native achievements",
+				"streamer-mode-text": "Streamer mode",
+				"streamer-mode-tooltip": "Reset your achievements for the session, so that notifications will show even for unlocked achievements. Uncheck to get all your old achievements back. App restart required",
+				"streamer-mode-confirmation": "Got it, we won't load your existing achievements next time you start Firestone"
+			}
+		},
+		"mercenaries": {
+			"menu": {
+				"general": "General"
+			},
+			"general": {
+				"player-team-widget-label": "Player team widget",
+				"player-team-widget-tooltip": "Show a recap overlay of all your heroes, abililties and equipment",
+				"opponent-team-widget-label": "Opponent team widget",
+				"opponent-team-widget-tooltip": "Show a recap overlay of all known opponent's heroes, abililties and equipment",
+				"map-team-widget-label": "Team widget: Map",
+				"map-team-widget-tooltip": "Show a recap overlay of all your heroes, abililties and equipment on the bounty map. Useful for easily inspecting your team when choosing a path or picking a treasure",
+				"village-team-widget-label": "Team widget: Village",
+				"village-team-widget-tooltip": "Show a recap overlay of all your heroes, abililties and equipment on the collection and team select screens",
+				"action-queue-pve-label": "Actions queue widget (PvE)",
+				"action-queue-pve-tooltip": "Show an ordered list of all queued actions in PvE encounters",
+				"action-queue-pvp-label": "Actions queue widget (PvP)",
+				"action-queue-pvp-tooltip": "When active, shows an ordered list of all queued actions in PvP encounters. Because the opponent's actions are hidden until they resolve, this will only show you your own mercenaries' actions",
+				"role-chart-label": "Show role chart",
+				"role-chart-tooltip": "Add a small button below the team widget over which you can mouse over to display a recap of the roles bonus damage triangle",
+				"tasks-label": "Show tasks button",
+				"tasks-tooltip": "Add a small button below the team widget over which you can mouse over to display a recap of all your current tasks. Always hidden in PvP",
+				"synergies-label": "Highlight synergies",
+				"synergies-tooltip": "When mousing over an ability or equipment (in the team widget) or a treasure (in the treasure selection screen), highlights all cards in the team widget that have synergies with it",
+				"your-team": "Your team",
+				"opponent-team": "Opponent's team",
+				"action-queue": "Action queue"
+			}
+		},
+		"replays": {
+			"menu": {
+				"general": "General"
+			},
+			"empty-state": "No settings there yet"
 		}
 	},
 	"twitch": {
