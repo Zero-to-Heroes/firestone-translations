@@ -136,6 +136,7 @@
 			"halforc": "Half-Orc",
 			"lock": "Lock"
 		},
+		"legendary-minion": "Legendary Minion",
 		"patch": "Patch {{version}}.{{number}} released on {{date}}",
 		"hs-terms": {
 			"attack": "Attack",
@@ -181,11 +182,22 @@
 				"default-cancel-button": "Cancel",
 				"multiselect-validation-button": "Apply",
 				"multiselect-validation-error-tooltip": "Please select either all tribes or only 5",
-				"hotkey-text": "Show/Hide:"
+				"hotkey-text": "Show/Hide:",
+				"no-hotkey-assigned": "No hotkey assigned"
 			},
 			"ads": {
 				"support-the-dev": "Support the dev and remove the ads",
 				"supporter": "Thank you for supporting us! You rock :)"
+			}
+		},
+		"internal": {
+			"memory": {
+				"reading-error-title": "Memory reading error",
+				"reading-error-text": "Some features will be unavailable. Please run Firestone/Overwolf as admin or contact us on Discord"
+			},
+			"startup": {
+				"firestone-ready-title": "Firestone ready to go",
+				"firestone-ready-text": "Thank you for supporting us!"
 			}
 		},
 		"loading": {
@@ -288,7 +300,8 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "Search card...",
-				"loading": "Loading more cards..."
+				"loading": "Loading more cards...",
+				"results-title": "Searching for {{value}}"
 			},
 			"card-details": {
 				"class": "Class:",
@@ -781,7 +794,8 @@
 				"restore-deck-tooltip": "Restore deck",
 				"rename-deck-tooltip": "Rename deck",
 				"rename-confirm-button": "Ok",
-				"default-deck-name": "{{wins}} wins {{playerClass}} ({{gameMode}})"
+				"default-deck-name": "{{wins}} wins {{playerClass}} ({{gameMode}})",
+				"default-deck-name-blank": "Duels deck"
 			},
 			"hero-stat": {
 				"global-winrate": "Global winrate",
@@ -837,6 +851,9 @@
 			}
 		},
 		"achievements": {
+			"menu": {
+				"categories": "Categories"
+			},
 			"filters": {
 				"all": "All achievements",
 				"all-empty-state-title": "Holy Moly, you are epic!",
@@ -940,6 +957,25 @@
 				"empty-state-title": "No history yet",
 				"empty-state-subtitle": "Play a match to get started"
 			}
+		},
+		"mercenaries": {
+			"menu": {
+				"composition-details": "Composition details"
+			}
+		},
+		"stats": {
+			"xp-graph-title": "XP Graph"
+		},
+		"tips": {
+			"tip-1": "Click on the \"Help\" icon at the top to view the app's latest release notes",
+			"tip-2": "Click on the \"Bug\" icon at the top to report a bug or suggest an improvement",
+			"tip-3": "If you're experiencing big bugs (like collection not synching, tracker not working, etc.), try running the app as Admin.",
+			"tip-4": "The Settings have lots of customization options, don't hesitate to have a look to enable / disable some features",
+			"tip-5": "[Mercenaries] See the \"Total Coins\" column by making the window wider",
+			"tip-6": "[Mercenaries] Select the \"Mercenaries (PvP)\" option in Replays to see more details about the Teams in each match",
+			"tip-7": "[Mercenaries] Mouse over the \"Task Completed\" column to learn how to manually set each merc's task progress",
+			"tip-8": "[Battlegrounds] See detailed live stats in a match by bringing up the Battlegrounds window with Alt + B",
+			"tip-9": "[Battlegrounds] Make the BG window wider to see average damage and lethal chances in the simulato"
 		}
 	},
 	"counters": {
@@ -1207,7 +1243,12 @@
 		"card-in-graveyard": "In graveyard",
 		"gift-created-by-single-card": "Created by <br/> {{value}}",
 		"gift-created-by-multiple-cards": "Created by <br/> multiple entities",
-		"unnamed-player": "Unnamed player"
+		"unnamed-player": "Unnamed player",
+		"created-by": "Created by {{value}}",
+		"unknown-class-card": "Unknownn {{playerClass}} card",
+		"unknown-card": "Unknownn card",
+		"unknown-mana-spell": "Unknown {{manaCost}} mana spell",
+		"unknown-info": "Unknown {{info}}"
 	},
 	"battlegrounds": {
 		"menu": {
@@ -1489,7 +1530,8 @@
 					"toggle-label": "Show notification when collection is synchronizeed",
 					"connect-button-text": "Connect",
 					"disconnect-button-test": "Disconnect",
-					"connected-text": "You're logged in"
+					"connected-text": "You're logged in",
+					"collection-synchronized": "Collection synchronized"
 				},
 				"d0nkey": {
 					"title": "d0nkey.top",
@@ -1850,6 +1892,8 @@
 		}
 	},
 	"twitch": {
+		"could-not-log-error-title": "We couldn't log you into your Twitch account",
+		"could-not-log-error-text": "Please go to the settings and reconnect to your Twitch account",
 		"settings-side-text": "Settings",
 		"show-hero-cards-help": "Show hero cards",
 		"show-hero-cards-help-tooltip": "Show the hero's hero power and buddies (normal and golden versions) when mousing over a hero portrait in the leaderboard",
