@@ -1,7 +1,10 @@
 # firestone-translations
 
-You can help with the translations here: https://crowdin.com/project/firestone
-This is still very experimental to me, so please bear with me as we figure out how to do this stuff together :)
+You can help with the translations here: https://crowdin.com/project/firestone. You will need to create an account, then you can right away propose translations in any of the supported languages.
+
+There is a #translations channel on the [Discord server](https://discord.gg/FhEHn8w) to discuss, well, anything related to the localization of the app.
+
+This is a first time for me and is still very experimental, so please bear with me as we figure out how to do this stuff together :)
 
 And of course, if you contribute to the translations, a BIG THANK YOU to you, as it's something that's impossible for me to do.
 
