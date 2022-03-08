@@ -6,7 +6,7 @@ const process = async () => {
 	for (const file of files) {
 		console.log('processing', file);
 		const content = await readFile(`./firestone/${file}`, 'utf8');
-		console.log(content);
+		// console.log(content);
 		if (!content?.length) {
 			continue;
 		}
@@ -18,7 +18,6 @@ const process = async () => {
 		const jsonWithoutEmptyStr = JSON.stringify(jsonWithoutEmpty, null, '\t');
 		await writeFile(`./firestone/${file}`, jsonWithoutEmptyStr);
 		// console.log('written');
-		break;
 	}
 };
 
