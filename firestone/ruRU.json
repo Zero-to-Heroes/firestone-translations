@@ -19,11 +19,19 @@
 			"fighter": "Боец",
 			"protector": "Защитник"
 		},
-		"format": {},
+		"format": {
+			"standard": "Стандартный",
+			"wild": "Вольный",
+			"classic": "Классический"
+		},
 		"game-mode": {
 			"casual-duels": "Дуэли",
+			"heroic-duels": "Героические дуэли",
 			"battlegrounds": "Поля сражений",
 			"mercenaries": "Наёмники",
+			"practice": "Тренировка",
+			"casual": "",
+			"friendly": "",
 			"arena": "Арена",
 			"tavern-brawl": "Потасовка"
 		},
@@ -46,17 +54,68 @@
 			"the-barrens": "Закаленные Степями",
 			"stormwind": "Сплоченные Штормградом",
 			"darkmoon-faire": "Ярмарка безумия",
-			"lettuce": "Наёмники"
+			"lettuce": "Наёмники",
+			"standard-druid": "",
+			"standard-paladin": "",
+			"standard-warrior": "",
+			"standard-priest": "",
+			"standard-rogue": "",
+			"standard-shaman": "",
+			"standard-warlock": "",
+			"standard-demonhunter": "",
+			"golden-darkmoon-faire": "",
+			"alterac-valley": "Разделенные Альтераком",
+			"golden-the-barrens": "",
+			"year-of-phoenix": "Год Феникса",
+			"standard-bundle": "Стандартный",
+			"wild-pack": "Вольный",
+			"golden-standard-bundle": "",
+			"golden-stormwind": "",
+			"golden-alterac-valley": ""
 		},
 		"ranks": {
-			"constructed": {}
+			"constructed": {
+				"bronze": "",
+				"silver": "",
+				"gold": "",
+				"platinum": "",
+				"diamond": "",
+				"legend": ""
+			}
+		},
+		"spellschool": {
+			"arcane": "Тайная магия",
+			"fire": "Огонь",
+			"frost": "Лёд",
+			"nature": "Природа",
+			"holy": "Свет",
+			"shadow": "Тьма",
+			"fel": "Скверна"
 		},
 		"spellschool": {},
 		"tribe": {
+			"bloodelf": "Эльф крови",
+			"draenei": "Дреней",
+			"dwarf": "Дворф",
+			"gnome": "Гном",
+			"goblin": "Гоблин",
+			"goblin2": "Гоблин",
+			"human": "Человек",
+			"nightelf": "Ночной эльф",
+			"orc": "Орк",
+			"tauren": "Таурен",
+			"troll": "Тролль",
+			"undead": "Нежить",
+			"worgen": "Ворген",
+			"murloc": "Мурлок",
+			"demon": "Демон",
+			"scourge": "Плеть",
+			"mech": "Механизм",
 			"elemental": "Элементаль",
 			"ogre": "Огр",
 			"beast": "Зверь",
 			"totem": "Тотем",
+			"nerubian": "Неруб",
 			"pirate": "Пират",
 			"dragon": "Дракон",
 			"all": "Все",
@@ -64,6 +123,7 @@
 			"quilboar": "Свинобраз",
 			"centaur": "Кентавр",
 			"furbolg": "Фурболг",
+			"highelf": "Высшие эльфы",
 			"treant": "Древень",
 			"owlkin": "Совух",
 			"halforc": "Полуорк"
@@ -75,7 +135,8 @@
 			"poisonous": "Яд",
 			"reborn": "Перерождение",
 			"taunt": "Провокация",
-			"windfury": "Неистовство ветра"
+			"windfury": "Неистовство ветра",
+			"mega-windfury": "Меганеистовство ветра"
 		}
 	},
 	"app": {
@@ -88,10 +149,13 @@
 			"achievements-header": "Достижения",
 			"collection-header": "Коллекция",
 			"stats-header": "Статистика",
-			"go-premium-header": "Поддержать разработчика и убрать рекламу"
+			"go-premium-header": "Поддержать разработчика и убрать рекламу",
+			"logged-in-as-header": "Вы вошли как {{value}}",
+			"not-logged-in-header": "Войдите, чтобы сохранить прогресс онлайн"
 		},
 		"global": {
 			"reward": {
+				"tooltip": "{{amount}} {{rewardType}}",
 				"dust": "пыль",
 				"pack": "комплект",
 				"gold": "золото",
@@ -104,7 +168,10 @@
 				"default-validation-button": "Ок",
 				"default-cancel-button": "Отмена"
 			},
-			"ads": {}
+			"ads": {
+				"support-the-dev": "Поддержать разработчика и убрать рекламу",
+				"supporter": "Спасибо за вашу поддержку! Вы супер :)"
+			}
 		},
 		"internal": {
 			"memory": {},
@@ -133,7 +200,9 @@
 			},
 			"filters": {
 				"format": {
-					"all": "Все"
+					"all": "Все",
+					"standard": "Стандартный",
+					"wild": "Вольный"
 				},
 				"hero-portrait": {
 					"battlegrounds": "Поля сражений",
@@ -389,6 +458,18 @@
 		"overlay-button": {},
 		"banned-tribes": {},
 		"board": {}
+	},
+	"duels": {
+		"hero-info": {
+			"winrate-label": "",
+			"popularity-label": "",
+			"player-matches": "",
+			"your-value-tooltip": "",
+			"community-value-tooltip": "",
+			"win-distribution-header": "",
+			"win-distribution-tooltip": "",
+			"top-decks-header": ""
+		}
 	},
 	"session": {
 		"display-mode": {},

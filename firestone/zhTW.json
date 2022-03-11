@@ -195,7 +195,7 @@
 				"reading-error-title": "內存讀取錯誤",
 				"reading-error-text": "某些功能將不可用。 請以管理員身份運行 Firestone/Overwolf 或通過 Discord 聯繫我們.",
 				"reset-started-title": "開始記憶體讀取重置",
-				"reset-started-text": "運用程式正在運行關鍵程序以蒐集全部的遊戲資訊。請稍等。",
+				"reset-started-text": "遊戲記憶體已更改。請等待幾秒。",
 				"reset-complete-title": "記憶體讀取已重置",
 				"reset-complete-text": "你可以正常使用此應用程式了:) 感謝你的耐心!"
 			},
@@ -583,6 +583,7 @@
 				},
 				"hero-sort": {
 					"average-position": "平均排名",
+					"mmr": "分數變化",
 					"games-played": "已遊玩局數",
 					"last-played": "最後遊玩"
 				},
@@ -622,7 +623,9 @@
 			"personal-stats": {
 				"hero": {
 					"average-position": "平均排名",
-					"games-played": "已遊玩局數"
+					"games-played": "已遊玩局數",
+					"net-mmr": "分數變化",
+					"net-mmr-tooltip": "每場比賽平均分數變化"
 				},
 				"hero-details": {
 					"tabs": {
@@ -636,7 +639,13 @@
 						"games-played": "已遊玩的局數",
 						"average-position": "平均排名",
 						"top-1": "第1名",
-						"top-4": "前4"
+						"top-4": "前4",
+						"net-mmr": "平均分數變化",
+						"net-mmr-tooltip": "每場比賽平均分數變化",
+						"avg-mmr-gain": "平均上分",
+						"avg-mmr-gain-tooltip": "每場比賽平均上分",
+						"avg-mmr-loss": "平均掉分",
+						"avg-mmr-loss-tooltip": "每場比賽平均掉分"
 					},
 					"last-warbands": {
 						"title": "最近 {{value}} 場比賽",
@@ -667,6 +676,7 @@
 					}
 				},
 				"rating": {
+					"title": "分數/對局",
 					"empty-state-message": "開始遊玩英雄戰場以收集一些資訊",
 					"axis-label": "等級"
 				},
@@ -699,6 +709,7 @@
 						"battles-going-first": "戰鬥先手",
 						"battle-luck": "戰鬥幸運",
 						"battle-luck-explain-link": "這是什麼？",
+						"battle-luck-explain-link-tooltip": "本賽局的好運指標。點擊查看更多",
 						"negative-battle-luck": "戰鬥運氣遭"
 					},
 					"record-broken-tooltip": "你打破了個人紀錄！"
@@ -793,7 +804,8 @@
 			"hero-stat": {
 				"global-winrate": "全球勝率",
 				"your-winrate": "你的勝率",
-				"games-played": "已遊玩局數"
+				"games-played": "已遊玩局數",
+				"number-of-games-tooltip": "記錄了 {{totalRuns}} 場(占 {{popularity}})"
 			},
 			"run": {
 				"replays-title": "同一場賽局回放",
@@ -933,6 +945,7 @@
 					"galakrond-explorers": "葛拉克朗的覺醒-探險者協會",
 					"galakrond-evil": "葛拉克朗的覺醒-邪惡陣線"
 				},
+				"went-first-tooltip": "先手",
 				"went-second-tooltip": "有幸運幣"
 			},
 			"class-icon-toggle": {
@@ -1232,6 +1245,7 @@
 		"card-discarded": "棄牌",
 		"card-in-graveyard": "在墓地",
 		"gift-created-by-single-card": "由<br/> {{value}} <br/>產生",
+		"gift-created-by-multiple-cards": "由 <br/> 多個產生",
 		"unnamed-player": "未命名的玩家",
 		"created-by": "由 {{value}} 產生",
 		"unknown-class-card": "未知 {{playerClass}} 卡",
@@ -1263,7 +1277,10 @@
 			"lethal-dealt-tooltip": "擊殺對手的機率(百分比)",
 			"lethal-received-tooltip": "被對手擊殺的機率(百分比)",
 			"composition-not-supported": {
+				"general": "目前不支持當前陣容，結果可能無效(原因: {{value}})",
 				"reason-secret": "秘密",
+				"reason-pirate": "海上無賴+瑞文戴爾男爵/卡德加",
+				"reason-piloted-whirl-o-tron": "有駕駛的迴旋機器人(斯尼德的夥伴)",
 				"bug": "發生了未知錯誤，錯誤報告已經自動回報給開發者"
 			},
 			"result": {
@@ -1295,6 +1312,11 @@
 			"reposition-button-done": "已完成",
 			"reposition-button-cancel": "取消",
 			"reposition-button-cancelling": "取消中",
+			"reposition-button-tooltip": "(BETA) 尋找手下的最佳站位。用時取決於處理器，通常需要幾分鐘，並且會大量占用處理器和記憶體資源。",
+			"reposition-button-tooltip-firstpass": "為每種佔位進行少量模擬(~50)來快速淘汰最差佔位",
+			"reposition-button-tooltip-secondpass": "運行一定次數的模擬(~250)以獲得最佳佔位",
+			"reposition-button-tooltip-finalresult": "為最佳佔位進行完整模擬。這需要用時最久，通常需要幾分鐘",
+			"reposition-button-tooltip-done": "",
 			"reposition-button-tooltip-cancel": "點擊以取消復位",
 			"reposition-button-tooltip-cancelling": "取消中, 請稍等",
 			"actual": "實際",
@@ -1419,6 +1441,18 @@
 		"empty-state-title": "這裡還沒有任何東西",
 		"empty-state-subtitle": "開始遊玩英雄戰場以接收資訊"
 	},
+	"duels": {
+		"hero-info": {
+			"winrate-label": "勝率",
+			"popularity-label": "熱門度",
+			"player-matches": "{{value}} 場對戰",
+			"your-value-tooltip": "你的場次",
+			"community-value-tooltip": "",
+			"win-distribution-header": "勝場分佈",
+			"win-distribution-tooltip": "勝場分佈",
+			"top-decks-header": "高勝牌組"
+		}
+	},
 	"session": {
 		"title": "歷史回顧",
 		"display-mode": {
@@ -1427,7 +1461,8 @@
 			"unknown": "未知模式"
 		},
 		"buttons": {
-			"reset-tooltip": "清楚歷史並重製數據"
+			"reset-tooltip": "清楚歷史並重製數據",
+			"close-tooltip": "關閉並停用小工具。如果你想再次啟用它，請從設定中重新開啟"
 		},
 		"summary": {
 			"total-games": "{{value}} 場對戰",
@@ -1492,14 +1527,19 @@
 			},
 			"third-party": {
 				"vs": {
-					"website-link": "這裡"
+					"title": "VS",
+					"pitch": "",
+					"website-link": "這裡",
+					"next": "",
+					"toggle-label": ""
 				},
 				"ooc": {
 					"title": "牌堆沒牌了",
 					"website-link": "這裡",
 					"connect-button-text": "連結",
 					"disconnect-button-test": "中斷連接",
-					"connected-text": "您已登錄"
+					"connected-text": "您已登錄",
+					"collection-synchronized": "收藏已同步"
 				},
 				"d0nkey": {
 					"title": "d0nkey.top",
@@ -1607,6 +1647,9 @@
 				"show-tracker-label": "顯示對手的套牌",
 				"show-tracker-tooltip": "啟用時會顯示你對手的卡",
 				"ai-decklist-label": "讀取AI套牌列表",
+				"ai-decklist-tooltip": "",
+				"group-cards-by-zone-label": "按區域分類牌組",
+				"group-cards-by-zone-tooltip": "",
 				"used-cards-go-to-bottom-label": "用過的卡移至底部",
 				"darken-used-cards-label": "壓暗用過的卡",
 				"darken-used-cards-tooltip": "啟用時, 用過的卡會被壓暗",
@@ -1650,6 +1693,9 @@
 				"hand-markers-title": "手牌標記"
 			},
 			"your-deck": {
+				"ignore-decklist-label": "忽略套牌列表",
+				"ignore-decklist-tooltip": "不再載入起始套牌列表，只追蹤已打出、抽到的卡牌。這將在下一局開始生效",
+				"ignore-decklist-confirmation": "好的，記牌器將忽略你的起始套牌",
 				"counters": {
 					"galakrond-tooltip": "顯示你的已祈求的次數(只會在你祈求或打出葛拉克朗時開始顯示)",
 					"pogo-tooltip": "顯示你已打出的蹦蹦兔數量",
@@ -1674,11 +1720,14 @@
 				}
 			},
 			"duels": {
+				"title": "決鬥擂台個人化設定",
 				"max-health-label": "對手最大生命值",
+				"max-health-tooltip": "選擇一種模式顯示對決模式中對手的最大生命值",
 				"max-health-option-off": "關",
 				"max-health-option-blink": "閃爍",
 				"max-health-option-mouseover": "滑鼠覆蓋",
-				"show-ooc-tracker-label": "在選單顯示記牌器"
+				"show-ooc-tracker-label": "在選單顯示記牌器",
+				"show-ooc-tracker-tooltip": "在戰鬥後選擇卡牌時顯示你的套排以讓你看到卡牌之間的連動。"
 			}
 		},
 		"collection": {
@@ -1690,10 +1739,15 @@
 				"high-resolution-images-label": "高解析度圖片",
 				"card-size-in-collection-label": "收藏中的卡牌大小",
 				"notifications-label": "啟用通知",
-				"notifications-rewards-label": "獎勵"
+				"selective-notifications-label": "你可以選擇性的顯示一些卡牌通知",
+				"notifications-dust-recap-label": "",
+				"notifications-non-golden-commons-label": "",
+				"notifications-rewards-label": "獎勵",
+				"notifications-rewards-tooltip": "當你通過其他方式獲得卡牌時(如天梯結算或競技場獎勵)，顯示通知"
 			},
 			"history-show-only-new-cards": "只顯示新卡",
 			"pack-stats-show-only-buyable-packs": "只顯示主要卡包",
+			"pack-stats-show-only-buyable-packs-tooltip": "只顯示可以在商店購買的卡包，隱藏所有促銷/獎勵卡包",
 			"set-show-golden-stats": "顯示金卡統計"
 		},
 		"duels": {
@@ -1720,6 +1774,11 @@
 				"show-sim-only-in-tavern-label": "只在酒館時顯示模擬面板",
 				"show-sim-only-in-tavern-tooltip": "啟用時, 模擬結果會在對戰時隱藏, 然後在回到酒館時出現",
 				"use-local-simulator-label": "使用本地模擬",
+				"use-local-simulator-tooltip": "",
+				"popup-hero-selection-screen-label": "",
+				"popup-hero-selection-screen-tooltip": "啟用此功能，將會在選擇英雄時彈出各英雄的數據",
+				"show-next-opponent-recap-label": "顯示下個對手的戰況回顧",
+				"show-next-opponent-recap-tooltip": "",
 				"show-achievements-label": "顯示成就",
 				"show-hero-tooltip-label": "顯示英雄提示工具",
 				"show-overlay-button": "顯示覆蓋按鈕",
@@ -1746,6 +1805,7 @@
 				"minions-list-title": "手下列表",
 				"minions-list-show-on-mouse-over-label": "滑鼠停留其上時顯示手下列表",
 				"minions-list-show-on-mouse-over-tooltip": "未啟用時, 你必須點擊酒館等級的圖示以顯示手下列表",
+				"minions-list-show-on-mouse-over-confirmation": "收到，將只會在您點擊星星時顯示詳細手下資訊",
 				"minions-list-show-tribes-highlight-label": "將種族標記",
 				"minions-list-show-tribes-highlight-tooltip": "當旅店出現相同種族手下時，標記它",
 				"minions-list-show-golden-cards-label": "顯示金卡",
@@ -1765,7 +1825,10 @@
 			},
 			"notifications": {
 				"show-notifications-text": "顯示通知",
-				"streamer-mode-text": "實況者模式"
+				"show-notifications-tooltip": "",
+				"streamer-mode-text": "實況者模式",
+				"streamer-mode-tooltip": "",
+				"streamer-mode-confirmation": "知道了，下次啟動Firestone時不會加載你的成就"
 			}
 		},
 		"mercenaries": {
@@ -1773,10 +1836,24 @@
 				"general": "一般"
 			},
 			"general": {
+				"player-team-widget-label": "友方隊伍小工具",
+				"player-team-widget-tooltip": "",
 				"opponent-team-widget-label": "對手陣容工具",
 				"opponent-team-widget-tooltip": "顯示對手所有已知的英雄、技能和裝備",
 				"map-team-widget-label": "隊伍小工具：懸賞地圖",
+				"map-team-widget-tooltip": "",
+				"village-team-widget-label": "隊伍小工具:村莊",
+				"village-team-widget-tooltip": "",
+				"action-queue-pve-label": "行動順序小工具(PVE)",
+				"action-queue-pve-tooltip": "顯示PVE戰鬥中的行動順序列表",
+				"action-queue-pvp-label": "行動順序小工具(PVP)",
+				"action-queue-pvp-tooltip": "啟用此功能會在PVP時顯示行動順序。由於開戰前無法得知對手順序，所以只會顯示自己的順序",
+				"role-chart-label": "顯示角色表",
+				"role-chart-tooltip": "在隊伍小工具下方添加一個小按鈕，你可以將鼠標停在上方以查看角色克制關係",
 				"tasks-label": "顯示任務按鈕",
+				"tasks-tooltip": "在隊伍小工具下方加入一個小按鈕，將鼠標停在上方以查看當前任務。在PVP時隱藏",
+				"synergies-label": "",
+				"synergies-tooltip": "",
 				"your-team": "你的隊伍",
 				"opponent-team": "對手隊伍",
 				"action-queue": "行動隊列"
@@ -1785,17 +1862,22 @@
 		"replays": {
 			"menu": {
 				"general": "一般"
-			}
+			},
+			"empty-state": "暫無設定選項"
 		}
 	},
 	"twitch": {
+		"could-not-log-error-title": "我們無法登入你的Twitch帳戶",
 		"could-not-log-error-text": "請至設定重新連接你的Twitch帳號",
 		"settings-side-text": "設定",
 		"show-hero-cards-help": "顯示英雄的卡牌",
 		"show-hero-cards-help-tooltip": "當鼠標滑到計分板的英雄圖示上，顯示英雄能力和夥伴(普卡和金卡)",
 		"show-minions-list": "顯示手下列表",
+		"show-minions-list-tooltip": "顯示一個有所有可用手下的小工具。將鼠標停在上方可以看到完整資訊和其金卡",
 		"minions-list-size": "手下列表大小",
 		"show-minions-list-golden-cards": "顯示金卡",
+		"show-minions-list-golden-cards-tooltip": "鼠標停在列表中的手下圖示時顯示其金卡",
+		"show-battle-simulator": "顯示戰鬥勝負概率",
 		"battle-simulator-size": "戰鬥模擬大小",
 		"last-board-size": "上個檯面的大小"
 	}
