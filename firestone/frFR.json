@@ -16,7 +16,8 @@
 		},
 		"role": {
 			"caster": "Lanceur de sorts",
-			"fighter": "Combattant"
+			"fighter": "Combattant",
+			"protector": "Protecteur"
 		},
 		"format": {
 			"standard": "Standard",
@@ -191,7 +192,12 @@
 		},
 		"internal": {
 			"memory": {
-				"reading-error-title": "Erreur de lecture de mémoire"
+				"reading-error-title": "Erreur de lecture de mémoire",
+				"reading-error-text": "Certaines fonctionnalités ne sont pas disponibles. Veuillez exécuter Firestone/Overwolf en tant qu'administrateur ou contactez-nous sur Discord.",
+				"reset-started-title": "Lecture de la mémoire en cours",
+				"reset-started-text": "L’application redémarre un processus clé pour pouvoir capturer toutes les infos du jeu. Veuillez patienter quelques secondes.",
+				"reset-complete-title": "Lecture de la mémoire réinitialisée",
+				"reset-complete-text": "Vous pouvez à nouveau utiliser l'application normalement :) Merci pour votre patience !"
 			},
 			"startup": {
 				"firestone-ready-title": "Firestone est prêt",
@@ -449,6 +455,7 @@
 				"post-title-placeholder": "Nom de la publication",
 				"subreddit-placeholder": "subreddit",
 				"subreddit-tooltip": "Ou poster ? Les subreddits les plus populaires sont /r/hearthstone et /r/BobsTavern (avec ou sans le préfixe /r/)",
+				"flair-tooltip": "",
 				"logged-out-message": "Veuillez vous enregistrer à l'aide du bouton sur la gauche avant d'envoyer un message"
 			}
 		},
@@ -565,7 +572,9 @@
 		"battlegrounds": {
 			"menu": {
 				"heroes": "Héros",
+				"perfect-games": "Parties parfaites",
 				"rating": "Classement",
+				"records": "Records battus",
 				"simulator": "Simulateur"
 			},
 			"filters": {
@@ -712,9 +721,11 @@
 		},
 		"duels": {
 			"menu": {
+				"my-runs": "Mes parties",
 				"my-decks": "Mes decks",
 				"heroes": "Héros",
 				"treasures": "Trésors",
+				"high-win-decks": "",
 				"leaderboard": "Classement"
 			},
 			"filters": {
@@ -786,7 +797,9 @@
 				"archive-deck-tooltip": "Archiver ce deck (vous pourrez le restaurer plus tard)",
 				"restore-deck-tooltip": "Restaurer ce deck",
 				"rename-deck-tooltip": "Renommer ce deck",
-				"rename-confirm-button": "OK"
+				"rename-confirm-button": "OK",
+				"default-deck-name": "",
+				"default-deck-name-blank": "Deck de Duels"
 			},
 			"hero-stat": {
 				"global-winrate": "Taux de victoires global",
@@ -842,38 +855,141 @@
 			}
 		},
 		"achievements": {
-			"menu": {},
-			"filters": {},
-			"history": {}
+			"menu": {
+				"categories": ""
+			},
+			"filters": {
+				"all": "Tous les hauts faits",
+				"all-empty-state-title": "",
+				"all-empty-state-text": "100 % des hauts faits complétés dans cette catégorie.",
+				"missing": "Hauts faits manquants",
+				"missing-empty-state-title": "Des tonnes de hauts faits vous attendent !",
+				"missing-empty-state-text": "",
+				"completed": ""
+			},
+			"history": {
+				"title": "Mon historique de hauts faits",
+				"empty-state-title": "",
+				"empty-state-subtitle": ""
+			},
+			"search-placeholder": "Rechercher un haut fait..."
 		},
 		"replays": {
 			"filters": {
-				"hero": {},
-				"deck": {},
-				"game-mode": {},
-				"player": {},
-				"opponent": {}
+				"hero": {
+					"all": "Tous les héros"
+				},
+				"deck": {
+					"all": "Tous les decks"
+				},
+				"game-mode": {
+					"all": "Tous les modes de jeu",
+					"battlegrounds": "Champs de bataille",
+					"mercenaries-all": "Mercenaires (Tous)",
+					"mercenaries-pve": "Mercenaires JcE",
+					"mercenaries-pvp": "Mercenaires JcJ",
+					"ranked": "Partie classée (Tous)",
+					"ranked-standard": "Partie classée Standard",
+					"ranked-wild": "Partie classée Libre",
+					"ranked-classic": "Partie classée Classique",
+					"both-duels": "Duels (Tous)",
+					"duels": "Duels non classés",
+					"paid-duels": "Duels héroïques",
+					"arena": "Arène",
+					"casual": "Non classé",
+					"friendly": "",
+					"tavern-brawl": "Bras de fer",
+					"practice": "Contre l’IA"
+				},
+				"player": {
+					"all": "Toutes les classes (joueur)"
+				},
+				"opponent": {
+					"all": "Toutes les classes (adversaire)"
+				}
 			},
-			"bg-stats": {},
+			"bg-stats": {
+				"title": "Stats de la partie",
+				"empty-state-title": "Il n’y a rien ici",
+				"empty-state-subtitle": "Nous n’avons pas pu récupérer les statistiques"
+			},
 			"replay-info": {
-				"bgs-result": {},
-				"game-mode-tooltip": {}
+				"rank-issue-tooltip": "Nous avons eu un problème lors de la récupération du rang",
+				"versus": "VS",
+				"loot-icon-tooltip": "Cartes ajoutées au deck après ce round",
+				"treasure-icon-tooltip": "Cartes ajoutées au deck après ce round",
+				"mmr": "Cote",
+				"show-stats-button": "Stats",
+				"show-stats-button-tooltip": "Afficher les stats",
+				"watch-replay-button": "Regarder",
+				"watch replay-button-tooltip": "Regarder le replay",
+				"mercenaries-bot-opponent-name": "L’aubergiste (IA)",
+				"bgs-available-tribes-tooltip": "Types de serviteur disponibles dans cette partie : {{value}}",
+				"bgs-perfect-game-result": "Parfait !",
+				"deck-name-tooltip": "avec {{value}}",
+				"bgs-result": {
+					"1": "1er",
+					"2": "2e",
+					"3": "3e",
+					"4": "4e",
+					"5": "5e",
+					"6": "6e",
+					"7": "7e",
+					"8": "8e"
+				},
+				"game-mode-tooltip": {
+					"legend-format": "",
+					"ladder": "",
+					"ladder-fallback": "",
+					"ladder-default": "",
+					"galakrond-explorers": "",
+					"galakrond-evil": ""
+				},
+				"went-first-tooltip": "",
+				"went-second-tooltip": ""
 			},
-			"class-icon-toggle": {},
-			"merc-details-toggle": {},
-			"list": {}
+			"class-icon-toggle": {
+				"label": "Icônes de classes",
+				"tooltip": "Basculer entre les icônes de classe et les icônes de héros"
+			},
+			"merc-details-toggle": {
+				"label": "",
+				"tooltip": ""
+			},
+			"list": {
+				"load-more-button": "",
+				"empty-state-title": "",
+				"empty-state-subtitle": ""
+			}
 		},
 		"mercenaries": {
-			"menu": {}
+			"menu": {
+				"composition-details": ""
+			}
 		},
-		"stats": {},
-		"tips": {}
+		"stats": {
+			"xp-graph-title": "Graphique d’XP"
+		},
+		"tips": {
+			"tip-1": "",
+			"tip-2": "",
+			"tip-3": "",
+			"tip-4": "",
+			"tip-5": "[Mercenaries] Voir la colonne « Total de pièces » en élargissant la fenêtre",
+			"tip-6": "",
+			"tip-7": "",
+			"tip-8": "",
+			"tip-9": "",
+			"tip-10": "[Duels] Vous pouvez survoler les PV de l’adversaire pour voir son maximum de PV"
+		}
 	},
 	"counters": {
 		"attack": {
+			"player": "Votre plateau et votre héros ont un total de {{value}} ATQ",
 			"opponent": "Le plateau et le héros de votre adversaire ont un total de {{value}} ATQ"
 		},
 		"pogo": {
+			"player": "Vous avez joué {{value}} lapins-échasseurs",
 			"opponent": "Votre adversaire a joué {{value}} lapins-échasseurs"
 		},
 		"bolner": "{{value}} est le premier Cri de guerre joué pendant ce tour",
@@ -917,7 +1033,10 @@
 			"player": "Vous avez joué {{value}} librams pendant cette partie",
 			"opponent": "Votre adversaire a joué {{value}} librams pendant cette partie"
 		},
-		"si-seven": {},
+		"si-seven": {
+			"player": "Vous avez joué {{value}} cartes du SI:7 pendant cette partie",
+			"opponent": "Votre adversaire a joué {{value}} cartes du SI:7 pendant cette partie"
+		},
 		"spell": {
 			"player": "Vous avez lancé {{value}} sorts pendant cette partie",
 			"opponent": "Votre adversaire a lancé {{value}} sorts pendant cette partie"
@@ -963,7 +1082,10 @@
 				"title": "Hauts faits",
 				"text": "Défiez-vous tout au long du jeu. Vous trouverez ici tous les exploits que vous avez accomplis."
 			},
-			"collection": {}
+			"collection": {
+				"title": "Collection",
+				"text": "Vous pouvez trouver ici toutes les cartes du jeu, avec des informations détaillées (vous pouvez même jouer les sons qu’ils font)."
+			}
 		}
 	},
 	"new-version": {
@@ -974,26 +1096,122 @@
 	},
 	"mercenaries": {
 		"filters": {
-			"fully-upgraded": {},
-			"hero-level": {},
-			"mode": {},
-			"pve-difficulty": {},
-			"role": {},
-			"starter": {}
+			"show-hidden-teams-link-label": "Afficher les groupes archivés",
+			"show-merc-names-in-teams-link-label": "Afficher les noms",
+			"fully-upgraded": {
+				"all": "Tous les mercenaires",
+				"upgraded": "",
+				"non-upgraded": ""
+			},
+			"hero-level": {
+				"level-0": "",
+				"level-1": "",
+				"level-5": "",
+				"level-15": "",
+				"level-30": ""
+			},
+			"mode": {
+				"pve": "JcE",
+				"pvp": "JcJ"
+			},
+			"pve-difficulty": {
+				"all": "",
+				"normal": "",
+				"heroic": "",
+				"legendary": ""
+			},
+			"role": {
+				"all": "",
+				"caster": "",
+				"protector": "",
+				"fighter": ""
+			},
+			"starter": {
+				"all": "",
+				"starter": "",
+				"bench": ""
+			}
 		},
-		"menu": {},
-		"search": {},
-		"empty-state": {},
-		"hero-stats": {},
-		"teams": {},
-		"team-widget": {}
+		"menu": {
+			"mercenaries-personal-hero-stats": "",
+			"mercenaries-my-teams": "Mes groupes JcJ",
+			"mercenaries-hero-stats": "Mercenaires JcJ",
+			"mercenaries-compositions-stats": "Groupes JcJ"
+		},
+		"search": {
+			"hero-search-placeholder": "Rechercher un mercenaire..."
+		},
+		"empty-state": {
+			"title": "Rien ici pour le moment",
+			"subtitle": "Jouez une partie de Mercenaires pour commencer, ou vérifiez vos filtres ci-dessus :)"
+		},
+		"hero-stats": {
+			"games-played": "Parties jouées",
+			"winrate": "Taux de victoires",
+			"equipments": "Équipements",
+			"global-winrate": "Taux de victoires global",
+			"your-winrate": "Votre taux de victoires",
+			"abilities": "Capacités",
+			"global-usage": "Utilisation globale",
+			"global-usage-tooltip": "Combien de fois chaque capacité est utilisée par la communauté",
+			"your-usage": "Votre utilisation",
+			"your-usage-tooltip": "Combien de fois vous avez utilisé chaque capacité",
+			"number-of-games-tooltip": "{{totalMatches}} parties enregistrées ({{popularity}} popularité)",
+			"level-header": "Niv",
+			"role-header": "Rôle",
+			"name-header": "Nom",
+			"xp-header": "XP",
+			"coins-left-header": "Pièces restantes",
+			"coins-left-header-tooltip": "Total des pièces que vous avez en réserve pour ce mercenaire",
+			"coins-needed-header": "Pièces nécess.",
+			"coins-needed-header-tooltip": "Total des pièces dont vous avez encore besoin pour avoir ce mercenaire au max",
+			"coins-to-farm-header": "Pièces manqu.",
+			"coins-to-farm-header-tooltip": "Total des pièces manquantes pour avoir ce mercenaire au max (prend en compte les pièces que vous avez déjà et les pièces que vous obtiendrez en finissant toutes les tâches)",
+			"completed-tasks-header": "Tâches complétées",
+			"completed-tasks-header-tooltip": "Tâches complétées. Ctrl + cliquer sur la tâche actuelle pour passer manuellement à la tâche suivante. Alt + cliquer pour revenir à la tâche précédente.",
+			"abilities-header": "Capacités",
+			"equipments-header": "Équipements",
+			"max-level": "Niveau max !",
+			"xp-tooltip": "{{value}} XP",
+			"current-task-tooltip": "La tâche ne peut être mise à jour qu’une fois qu’un visiteur visite votre village pendant que l’application est en cours d’exécution.",
+			"maxed": "Au max !",
+			"coins-to-farm-tooltip": "Vous devriez gagner {{value}} pièces des tâches non complétées",
+			"empty-state-subtitle": "Allez sur l’écran du village des Mercenaires dans Hearthstone pour actualiser les informations",
+			"current-task-tooltip-title": "Tâche {{taskNumber}} actuelle : {{taskTitle}}",
+			"next-task-tooltip-title": "Prochaine tâche {{taskNumber}} : {{taskTitle}}"
+		},
+		"teams": {
+			"games": "{{value}} parties",
+			"winrate": "{{value}} % victoires",
+			"last-used": "Vu le {{value}}",
+			"archive-button-tooltip": "Archiver ce groupe (vous pourrez le restaurer plus tard)",
+			"restore-button-tooltip": "Restaurer ce groupe",
+			"unnamed-team": "Groupe sans nom"
+		},
+		"team-widget": {
+			"cooldown-left-tooltip": "Tours restants avant que cette capacité puisse être réutilisée",
+			"number-of-users-tooltip": "Nombre de fois que le mercenaire a utilisé cette capacité dans ce combat",
+			"base-speed-text": "Vitesse de base : {{value}}",
+			"speed-buff": "Cette capacité sera plus rapide de {{value}} au prochain tour",
+			"speed-debuff": "",
+			"empty-state": "",
+			"merc-level-tooltip": "",
+			"unrecognized-mercenary": "",
+			"unknown-mercenary": "",
+			"tasks-button": "",
+			"task-title": "",
+			"task-progress-label": "",
+			"task-progress-tooltip": "",
+			"roles-chart-button": ""
+		}
 	},
 	"decktracker": {
 		"zones": {
 			"global-effects": "Effets globaux",
 			"in-deck": "Dans le deck",
 			"in-hand": "En main",
-			"other": "Autres"
+			"other": "Autres",
+			"discard": ""
 		},
 		"cards-in-hand-tooltip": "Cartes en main",
 		"cards-left-in-deck-tooltip": "Cartes restantes dans le deck",
@@ -1007,6 +1225,7 @@
 			"import-deckstring-tooltip": "Importer un code de deck depuis votre presse-papiers",
 			"confirmation-title": "Remplacer le deck ?",
 			"use-deck-text": "Utiliser {{value}} ?",
+			"use-deck-text-default": "",
 			"button-text": "Remplacer",
 			"cancel-text": "Annuler",
 			"invalid-deck-code-title": "Code de deck invalide",
@@ -1019,13 +1238,21 @@
 			"deck-winrate-vs-class": "VS {{value}}",
 			"deck-winrate-vs-class-tooltip": "Taux de victoires de ce deck en Partie classée contre {{opponent}} depuis le {{date}}"
 		},
-		"secrets-helper": {},
+		"secrets-helper": {
+			"title": ""
+		},
 		"card-burned": "Carte brûlée",
 		"card-transformed": "Carte transformée",
 		"card-discarded": "Carte défaussée",
 		"card-in-graveyard": "Dans le cimetière",
 		"gift-created-by-single-card": "Créée par <br/> {{value}}",
-		"gift-created-by-multiple-cards": "Créée par <br/> plusieurs entités"
+		"gift-created-by-multiple-cards": "Créée par <br/> plusieurs entités",
+		"unnamed-player": "",
+		"created-by": "",
+		"unknown-class-card": "",
+		"unknown-card": "",
+		"unknown-mana-spell": "",
+		"unknown-info": ""
 	},
 	"battlegrounds": {
 		"menu": {
@@ -1054,6 +1281,7 @@
 				"general": "Cette troupe de guerre n’est pas bien supportée, les résultats peuvent différer (raison : {{value}})",
 				"reason-secret": "Secrets",
 				"reason-pirate": "Forban + Baron / Khadgar",
+				"reason-piloted-whirl-o-tron": "",
 				"bug": "Une erreur inconnue est survenue, un rapport de bug a été envoyé automatiquement aux développeurs"
 			},
 			"result": {
@@ -1099,6 +1327,7 @@
 			"battles-header": "Tous les combats",
 			"turn-winrate-graph-title": "Taux de victoires moy. par tour",
 			"hero-power-title": "Pouvoir héroïque",
+			"hero-power-info-tavish": "",
 			"hero-powers-header": "Pouvoirs héroïques",
 			"hero-search-placeholder": "Rechercher un héros / pouvoir héroïque",
 			"select-button": "Sélectionner",
@@ -1115,7 +1344,8 @@
 			"sneed-deathrattle": "Râle d’agonie de Sneed",
 			"sneed-deathrattle-tooltip": "Combien de fois le pouvoir héroïque de Sneed a-t-il été utilisé sur ce serviteur",
 			"minions-selection-title": "Serviteurs",
-			"search-minion-placeholder": "Rechercher un serviteur"
+			"search-minion-placeholder": "Rechercher un serviteur",
+			"resimulating-battle": ""
 		},
 		"hero-stats": {
 			"finishes-title": "Complétions",
@@ -1147,16 +1377,23 @@
 			},
 			"opponents": {
 				"title": "Autres adversaires",
+				"next-opponent-title": "",
 				"empty-state-title": "Rien ici pour le moment",
 				"empty-state-subtitle": "Choisissez un héros et attendez vos adversaires !",
 				"score-board-title": "Tableau des scores",
 				"score-board-tooltip": "Résumé de toutes les rencontres que vous avez eues avec les autres joueurs",
 				"tavern-upgrade-title": "Améliorations de la taverne",
 				"tavern-last-upgrade-title": "Dernières améliorations",
+				"tavern-empty-state": "",
 				"last-opponent-icon-tooltip": "Était l'adversaire du dernier combat",
 				"triple-title": "Nouveaux triples",
 				"triple-tooltip": "Depuis le dernier combat, cet adversaire a reçu {{quantity}} serviteurs de niveau {{tier}} comme récompenses de triple",
-				"triple-empty-state": "Pas de nouveaux triples"
+				"triple-empty-state": "Pas de nouveaux triples",
+				"buddies-title": "",
+				"buddies-empty-state": "",
+				"buddy-text": "",
+				"buddy-tooltip": "",
+				"buddy-tooltip-golden": ""
 			},
 			"minions-list": {
 				"reset-button": "Réinitialiser"
@@ -1166,6 +1403,8 @@
 			"title": "Stats de la dernière partie",
 			"final-board": "Votre troupe de guerre finale",
 			"current-board": "Votre troupe de guerre actuelle",
+			"final-position": "",
+			"live-stats-title": "",
 			"tabs": {
 				"hp-by-turn": "Vie par tour",
 				"stats": "Stats",
@@ -1207,41 +1446,185 @@
 		"empty-state-subtitle": "Commencez à jouer à Champs de bataille pour collecter des informations"
 	},
 	"session": {
-		"display-mode": {},
-		"buttons": {},
-		"summary": {},
+		"title": "",
+		"title-tooltip": "",
+		"display-mode": {
+			"all": "",
+			"battlegrounds": "",
+			"unknown": ""
+		},
+		"buttons": {
+			"reset-tooltip": "",
+			"close-tooltip": ""
+		},
+		"summary": {
+			"total-games": "",
+			"total-games-tooltip": "",
+			"total-games-tooltip-all-time": "",
+			"mmr-tooltip": "",
+			"delta-mmr-tooltip": ""
+		},
 		"groups": {
 			"battlegrounds": {
-				"category": {}
+				"category": {
+					"1": "",
+					"2": "2e",
+					"3": "",
+					"4": "",
+					"5": "",
+					"6": "",
+					"7": "",
+					"8": "8e"
+				},
+				"value-tooltip": ""
 			}
 		}
 	},
 	"settings": {
+		"title": "Paramètres",
 		"global": {
-			"knob-sizes": {},
-			"knob-opacity": {},
-			"knob-zoom": {}
+			"knob-sizes": {
+				"small": "Petit",
+				"medium": "Moyen",
+				"large": "Grand",
+				"default": "Par défaut"
+			},
+			"knob-opacity": {
+				"opaque": "Opaque",
+				"transparent": "Transparent"
+			},
+			"knob-zoom": {
+				"normal": "Normal",
+				"zoom-200": "200 %",
+				"zoom-400": "400 %"
+			},
+			"widget-size-label": "Taille du widget",
+			"show-advanced-settings-button": "Afficher les paramètres avancés",
+			"hide-advanced-settings-button": "Masquer les paramètres avancés"
 		},
-		"menu": {},
+		"menu": {
+			"general": "Général",
+			"decktracker": "Decktracker",
+			"battlegrounds": "Champs de bataille",
+			"mercenaries": "Mercenaires",
+			"replays": "Replays",
+			"collection": "Collection",
+			"achievements": "Hauts faits"
+		},
 		"general": {
-			"menu": {},
+			"menu": {
+				"general": "Général",
+				"localization": "Traduction",
+				"bug-report": "Signaler un bug",
+				"third-party": "Services tiers",
+				"broadcast": "Twitch"
+			},
 			"third-party": {
-				"vs": {},
-				"ooc": {},
-				"d0nkey": {},
+				"intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Nous ne sommes pas payés pour cela, mais nous recevons une certaine exposition puisqu’ils parlent ensuite de nous :)",
+				"vs": {
+					"title": "Vicious Syndicate",
+					"pitch": "Vicious Syndicate construit un rapport hebdomadaire qui capture l’apparence du méta-jeu, en utilisant à la fois les données provenant de milliers de parties et les connaissances des joueurs de haut niveau. Vous pouvez leur rendre visite {{webisteLink}}",
+					"website-link": "ici",
+					"next": "Si vous décidez de contribuer au vS Data Reaper Report, Firestone leur enverra anonymement des informations sur vos parties (principalement les cartes jouées par chaque joueur et certaines métadonnées, comme les rangs des joueurs).",
+					"toggle-label": "Contribuer au vS Data Reaper Report"
+				},
+				"ooc": {
+					"title": "Out of Cards",
+					"pitch": "Out of Cards est un site communautaire de Hearthstone avec des articles, des guides, des paquets, des bases de données de cartes et plus encore. La synchronisation de votre collection de cartes sur le site facilite la recherche de decks à jouer. Vous pouvez leur rendre visite {{websiteLink}}",
+					"website-link": "ici",
+					"next": "Si vous vous connectez à votre compte Out of Cards, Firestone enverra vos données de collection à Out of Cards afin que vous puissiez les utiliser en ligne.",
+					"toggle-label": "Afficher une notification lorsque la collection est synchronisée",
+					"connect-button-text": "Se connecter",
+					"disconnect-button-test": "Se déconnecter",
+					"connected-text": "Vous êtes connecté",
+					"collection-synchronized": ""
+				},
+				"d0nkey": {
+					"title": "d0nkey.top",
+					"pitch": "d0nkey.top est un site web de fans qui rassemble tous les decks des compétitions officielles de Hearthstone, ainsi que les decks des streamers pour permettre à tout le monde de trouver facilement des decks intéressants à jouer. La synchronisation vers d0nkey.top vous permettra de partager vos decks avec votre public (si vous êtes streamer) ou les aidera à construire une meilleure base de données pour fournir plus de services gratuits à la communauté. Vous pouvez leur rendre visite {{websiteLink}}",
+					"website-link": "ici",
+					"next": "Si vous décidez d’activer la synchronisation avec d0nkey.top, Firestone leur enverra chaque partie que vous jouerez, qui apparaîtra dans une section spécifique sur le site (qui est toujours en construction). Les replays seront privés par défaut, sauf si vous diffusez en même temps. Voir {{link}} pour savoir comment tout configurer.",
+					"instructions-page-link": "",
+					"toggle-label": ""
+				},
 				"hsdecks": {
+					"title": "Hearthstone-decks",
 					"pitch": "<a href=\"https://hearthstone-decks.net/\" target=\"_blank\">hearthstone-decks.net</a> partage des decks joués dans les rangs élevés de Légende pour tous les modes construits, section News & Articles.",
-					"next": "Si vous décidez d'activer la synchronisation avec hearthstone-decks.net, Firestone leur enverra de façon anonyme chaque partie que vous jouez, avec quelques informations sur vos parties (code de deck, rang, résultats des parties)."
+					"website-link": "ici",
+					"next": "Si vous décidez d'activer la synchronisation avec hearthstone-decks.net, Firestone leur enverra de façon anonyme chaque partie que vous jouez, avec quelques informations sur vos parties (code de deck, rang, résultats des parties).",
+					"toggle-label": ""
 				}
 			},
-			"bug-report": {},
-			"twitch": {},
-			"launch": {},
-			"localization": {}
+			"bug-report": {
+				"title": "",
+				"simulator-bug-text": "",
+				"general-bug-text": "",
+				"link-text": "",
+				"email-placeholder": "",
+				"message-placeholder": "",
+				"send-button": "",
+				"status-uploading-logs": "",
+				"status-sending-feedback": "",
+				"status-done": ""
+			},
+			"twitch": {
+				"title": "",
+				"intro": "",
+				"todo-1": "",
+				"todo-2": "",
+				"todo-3": "",
+				"link": "",
+				"login-button-text": "",
+				"logout-button-text": "",
+				"logged-in-as-text": "Connecté en tant que :",
+				"configuration-title": "",
+				"delay-label": "",
+				"delay-label-tooltip": ""
+			},
+			"launch": {
+				"launch-on-game-start-label": "",
+				"launch-on-game-start-tooltip": "",
+				"integrated-mode-label": "",
+				"integrated-mode-tooltip": "",
+				"session-recap-on-exit-label": "",
+				"session-recap-on-exit-tooltip": "",
+				"xp-recap-on-game-end-label": "",
+				"xp-recap-on-game-end-tooltip": "",
+				"hide-release-notes-label": "",
+				"hide-release-notes-tooltip": "",
+				"display-notifications-label": "",
+				"display-notifications-tooltip": "",
+				"display-notifications-confirmation": "",
+				"accessibility-title": "",
+				"flash-window": "",
+				"flash-window-tooltip": "",
+				"zoom-label": "",
+				"zoom-tooltip": "",
+				"reset-prefs-button-default": "",
+				"reset-prefs-button-confirmation": "",
+				"reset-prefs-tooltip": "",
+				"reset-prefs-confirmation": "",
+				"restart-app-button-label": ""
+			},
+			"localization": {
+				"title": "",
+				"text-1": "",
+				"text-11": "",
+				"text-2": "",
+				"link": "",
+				"text-3": ""
+			}
 		},
 		"decktracker": {
-			"menu": {},
+			"menu": {
+				"global": "",
+				"your-deck": "",
+				"opponent-deck": "",
+				"duels": "",
+				"launch": ""
+			},
 			"global": {
+				"title": "",
 				"minions-play-order": "Ordre d’apparition des serviteurs",
 				"minions-play-order-tooltip": "Afficher l’ordre d’apparition de chaque serviteur sur le champ de bataille, pour vous aider à suivre l’ordre de résolution des Râles d’agonie (ou tout ce qui dépend de l’ordre dans lequel les serviteurs sont arrivés sur le champ de bataille)",
 				"show-title-bar": "Afficher le titre",
@@ -1269,20 +1652,127 @@
 				"reset-button": "Réinitialiser les positions",
 				"reset-button-confirm": "Confirmer ?",
 				"reset-button-tooltip": "Réinitialiser la position du decktracker. Cela peut résoudre un problème où votre tracker ne s’affiche plus à l’écran",
-				"reset-button-confirmation": "Les positions du decktracker ont été réinitialisées, et seront appliquées lors de votre prochaine partie."
+				"reset-button-confirmation": "Les positions du decktracker ont été réinitialisées, et seront appliquées lors de votre prochaine partie.",
+				"counters-size": ""
 			},
-			"modes": {},
+			"modes": {
+				"title": "",
+				"ranked": "",
+				"duels": "",
+				"arena": "",
+				"tavern-brawl": "",
+				"practice": "",
+				"friendly": "",
+				"casual": "Non classé"
+			},
 			"opponent-deck": {
-				"counters": {}
+				"tracker-title": "",
+				"show-tracker-label": "",
+				"show-tracker-tooltip": "",
+				"ai-decklist-label": "",
+				"ai-decklist-tooltip": "",
+				"group-cards-by-zone-label": "",
+				"group-cards-by-zone-tooltip": "",
+				"used-cards-go-to-bottom-label": "",
+				"used-cards-go-to-bottom-tooltip": "",
+				"darken-used-cards-label": "",
+				"darken-used-cards-tooltip": "",
+				"global-effects-label": "",
+				"global-effects-tooltip": "",
+				"sort-by-mana-cost-label": "",
+				"sort-by-mana-cost-tooltip": "",
+				"hide-generated-cards-label": "",
+				"hide-generated-cards-tooltip": "",
+				"opponent-hand-title": "",
+				"card-turn-draw-label": "",
+				"card-turn-draw-tooltip": "",
+				"guessed-cards-label": "",
+				"guessed-cards-tooltip": "",
+				"buff-in-hand-label": "",
+				"buff-in-hand-tooltip": "",
+				"secrets-helper-title": "",
+				"enable-secret-helper-label": "",
+				"enable-secret-helper-tooltip": "",
+				"counters": {
+					"title": "",
+					"galakrond-label": "",
+					"galakrond-tooltip": "",
+					"pogo-label": "",
+					"pogo-tooltip": "",
+					"jade-label": "",
+					"jade-tooltip": "",
+					"cthun-label": "",
+					"cthun-tooltip": "",
+					"fatigue-label": "",
+					"fatigue-tooltip": "",
+					"attack-on-board-label": "",
+					"attack-on-board-tooltip": "",
+					"watch-post-label": "",
+					"watch-post-tooltip": "",
+					"libram-label": "",
+					"libram-tooltip": "",
+					"elwynn-boar-label": "",
+					"elwynn-boar-tooltip": "",
+					"hero-power-damage-label": "",
+					"hero-power-damage-tooltip": ""
+				},
+				"size-title": "",
+				"opacity-title": "",
+				"hand-markers-title": ""
 			},
 			"your-deck": {
-				"counters": {}
+				"ignore-decklist-label": "",
+				"ignore-decklist-tooltip": "",
+				"ignore-decklist-confirmation": "",
+				"counters": {
+					"galakrond-tooltip": "",
+					"pogo-tooltip": "",
+					"jade-tooltip": "",
+					"cthun-tooltip": "",
+					"fatigue-tooltip": "",
+					"attack-on-board-tooltip": "",
+					"number-of-spells-label": "",
+					"number-of-spells-tooltip": "",
+					"elementals-label": "",
+					"elementals-tooltip": "",
+					"watch-post-tooltip": "",
+					"libram-tooltip": "",
+					"elwynn-boar-tooltip": "",
+					"hero-power-damage-tooltip": "",
+					"bolner-label": "",
+					"bolner-tooltip": "",
+					"brilliant-macaw-label": "",
+					"brilliant-macaw-tooltip": "",
+					"multicaster-label": "",
+					"multicaster-tooltip": ""
+				}
 			},
-			"duels": {}
+			"duels": {
+				"title": "",
+				"max-health-label": "",
+				"max-health-tooltip": "",
+				"max-health-option-off": "",
+				"max-health-option-blink": "",
+				"max-health-option-mouseover": "",
+				"show-ooc-tracker-label": "",
+				"show-ooc-tracker-tooltip": ""
+			}
 		},
 		"collection": {
-			"menu": {},
-			"general": {},
+			"menu": {
+				"general": ""
+			},
+			"general": {
+				"title": "",
+				"high-resolution-images-label": "",
+				"card-size-in-collection-label": "",
+				"notifications-label": "",
+				"selective-notifications-label": "",
+				"notifications-dust-recap-label": "",
+				"notifications-non-golden-commons-label": "",
+				"notifications-rewards-label": "",
+				"notifications-rewards-tooltip": ""
+			},
 			"history-show-only-new-cards": "Uniquement nouvelles",
 			"pack-stats-show-only-buyable-packs": "Afficher uniquement les paquets principaux",
 			"pack-stats-show-only-buyable-packs-tooltip": "Afficher uniquement les paquets qui peuvent être achetés dans la boutique, masquant tous les paquets promotionnels/récompenses",
@@ -1294,22 +1784,152 @@
 			"hide-stats-below-threshold-tooltip": "Masquer les stats avec moins de {{value}} points de données"
 		},
 		"battlegrounds": {
-			"menu": {},
-			"general": {},
-			"overlay": {},
-			"session-widget": {}
+			"menu": {
+				"general": "",
+				"overlay": "",
+				"session": ""
+			},
+			"full-toggle-label": "",
+			"full-toggle-tooltip": "",
+			"general": {
+				"companion-app-title": "",
+				"enable-app-label": "",
+				"integrated-mode-label": "",
+				"integrated-mode-tooltip": "",
+				"enable-battle-sim-label": "",
+				"enable-battle-sim-tooltip": "",
+				"hide-simulation-label": "",
+				"hide-simulation-tooltip": "",
+				"show-sim-only-in-tavern-label": "",
+				"show-sim-only-in-tavern-tooltip": "",
+				"use-local-simulator-label": "",
+				"use-local-simulator-tooltip": "",
+				"popup-hero-selection-screen-label": "",
+				"popup-hero-selection-screen-tooltip": "",
+				"show-next-opponent-recap-label": "",
+				"show-next-opponent-recap-tooltip": "",
+				"show-achievements-label": "",
+				"show-achievements-tooltip": "",
+				"show-hero-tooltip-label": "",
+				"show-hero-tooltip-tooltip": "",
+				"show-overlay-button": "",
+				"show-overlay-button-tooltip": "",
+				"popup-post-match-stats-label": "",
+				"popup-post-match-stats-tooltip": "",
+				"simulator-config-title": "",
+				"simulator-number-of-sims-label": "",
+				"simulator-number-of-sims-tooltip": ""
+			},
+			"overlay": {
+				"overlay-title": "",
+				"show-banned-tribes-label": "",
+				"show-banned-tribes-tooltip": "",
+				"show-minions-list-label": "",
+				"show-minions-list-tooltip": "",
+				"turn-counter-label": "",
+				"last-opponent-icon-label": "",
+				"last-opponent-icon-tooltip": "",
+				"last-opponent-board-label": "",
+				"last-opponent-board-tooltip": "",
+				"battle-simulation-label": "",
+				"battle-simulation-tooltip": "",
+				"battle-simulation-example-label": "",
+				"battle-simulation-example-tooltip": "",
+				"widget-size-label": "",
+				"banned-tribes-title": "",
+				"banned-tribes-show-in-column-label": "",
+				"banned-tribes-show-in-column-tooltip": "",
+				"banned-tribes-icon-size-label": "",
+				"minions-list-title": "",
+				"minions-list-show-on-mouse-over-label": "",
+				"minions-list-show-on-mouse-over-tooltip": "",
+				"minions-list-show-on-mouse-over-confirmation": "",
+				"minions-list-show-tribes-highlight-label": "",
+				"minions-list-show-tribes-highlight-tooltip": "",
+				"minions-list-show-golden-cards-label": "",
+				"minions-list-show-golden-cards-tooltip": "",
+				"opponent-board-title": "",
+				"opponent-board-show-top-label": "",
+				"opponent-board-show-top-tooltip": ""
+			},
+			"session-widget": {
+				"title": "",
+				"label": "",
+				"label-tooltip": "",
+				"show-groups": "",
+				"show-groups-tooltip": "",
+				"show-matches": "",
+				"show-matches-tooltip": "",
+				"number-of-matches": "",
+				"number-of-matches-tooltip": "",
+				"size-title": "",
+				"opacity-title": ""
+			}
 		},
 		"achievements": {
-			"menu": {},
-			"notifications": {}
+			"menu": {
+				"notifications": ""
+			},
+			"notifications": {
+				"title": "",
+				"firestone-achievements-text": "",
+				"firestone-achievements-tooltip": "",
+				"show-notifications-text": "",
+				"show-notifications-tooltip": "",
+				"streamer-mode-text": "",
+				"streamer-mode-tooltip": "",
+				"streamer-mode-confirmation": ""
+			}
 		},
 		"mercenaries": {
-			"menu": {},
-			"general": {}
+			"menu": {
+				"general": ""
+			},
+			"general": {
+				"player-team-widget-label": "",
+				"player-team-widget-tooltip": "",
+				"opponent-team-widget-label": "",
+				"opponent-team-widget-tooltip": "",
+				"map-team-widget-label": "",
+				"map-team-widget-tooltip": "",
+				"village-team-widget-label": "",
+				"village-team-widget-tooltip": "",
+				"action-queue-pve-label": "",
+				"action-queue-pve-tooltip": "",
+				"action-queue-pvp-label": "",
+				"action-queue-pvp-tooltip": "",
+				"role-chart-label": "",
+				"role-chart-tooltip": "",
+				"tasks-label": "",
+				"tasks-tooltip": "",
+				"synergies-label": "",
+				"synergies-tooltip": "",
+				"your-team": "",
+				"opponent-team": "",
+				"action-queue": ""
+			}
 		},
 		"replays": {
-			"menu": {}
+			"menu": {
+				"general": ""
+			},
+			"empty-state": ""
 		}
 	},
-	"twitch": {}
+	"twitch": {
+		"could-not-log-error-title": "",
+		"could-not-log-error-text": "",
+		"settings-side-text": "",
+		"show-hero-cards-help": "",
+		"show-hero-cards-help-tooltip": "Affiche le pouvoir héroïque et le compagnon (versions normale et dorée) des héros sur lesquels vous passez la souris dans le classement",
+		"show-minions-list": "",
+		"show-minions-list-tooltip": "",
+		"minions-list-size": "",
+		"show-minions-list-golden-cards": "",
+		"show-minions-list-golden-cards-tooltip": "",
+		"show-battle-simulator": "",
+		"battle-simulator-size": "",
+		"last-board-size": "",
+		"last-board-size-tooltip": ""
+	}
 }
