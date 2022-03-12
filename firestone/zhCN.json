@@ -348,7 +348,7 @@
 						"error-need-mana": "错误：法力水晶不足",
 						"error-minion-attacked": "错误：随从已经攻击",
 						"error-i-attacked": "错误：英雄已经攻击",
-						"error-just-played": "错误：无法打出",
+						"error-just-played": "错误：召唤失调",
 						"error-hand-full": "错误：手牌已满",
 						"error-full-minions": "错误：场上随从已满",
 						"error-stealth": "错误：目标已潜行",
@@ -593,7 +593,7 @@
 				},
 				"rank-group": {
 					"per-match": "显示所有对局",
-					"per-day": "按日分组",
+					"per-day": "按天分组",
 					"per-day-tooltip": "显示每天开始时的分数"
 				},
 				"time": {
@@ -605,7 +605,7 @@
 				},
 				"tier": {
 					"all-tiers": "所有星级",
-					"tier": "星级 {{value}}"
+					"tier": "{{value}} 星"
 				},
 				"tribe": {
 					"all-tribes": "所有随从类型",
@@ -623,20 +623,20 @@
 			"personal-stats": {
 				"hero": {
 					"average-position": "平均位次",
-					"games-played": "总场数",
+					"games-played": "总局数",
 					"net-mmr": "等级变化",
 					"net-mmr-tooltip": "每场比赛平均等级分数变化"
 				},
 				"hero-details": {
 					"tabs": {
 						"mmr": "等级分数",
-						"final-warbands": "过往阵容",
+						"final-warbands": "上次阵容",
 						"warband-stats": "阵容数据",
 						"winrate-stats": "战斗胜率"
 					},
 					"stats": {
 						"title": "综合数据",
-						"games-played": "总场数",
+						"games-played": "总局数",
 						"average-position": "平均位次",
 						"top-1": "吃鸡",
 						"top-4": "前4",
@@ -650,7 +650,7 @@
 					"last-warbands": {
 						"title": "最近 {{value}} 场对局",
 						"damage-dealt": "造成伤害",
-						"damage-dealt-tooltip": "各随从造成的总伤害。同名随从将累计计算，不做区分",
+						"damage-dealt-tooltip": "每个随从造成的总伤害。同名随从将累计计算，不做区分",
 						"damage-taken": "受到伤害",
 						"damage-taken-tooltip": "各随从受到的总伤害。同名随从将累计计算，不做区分",
 						"empty-state-message": "在酒馆战棋中使用此英雄以开启记录",
@@ -677,7 +677,7 @@
 				},
 				"rating": {
 					"title": "等级分数/对局",
-					"empty-state-message": "快去玩一局酒馆战棋以开启记录",
+					"empty-state-message": "快去玩一局酒馆战棋",
 					"axis-label": "等级"
 				},
 				"records": {
@@ -743,7 +743,7 @@
 				"game-mode": {
 					"all": "所有模式",
 					"all-tooltip": "社区统计将只显示对决模式英雄场的数据。您自己的统计资料将同时显示休闲场和英雄场。",
-					"casual": "休闲",
+					"casual": "休闲模式",
 					"casual-tooltip": "社区统计将只显示对决模式英雄场的数据。您自己的统计资料将只显示休闲场。",
 					"heroic": "英雄"
 				},
@@ -847,12 +847,12 @@
 				"best-winrate-classes": "最高胜率职业",
 				"most-faced-classes": "最多对手职业",
 				"best-winrate-against": "最优对抗职业",
-				"stat-tooltip": "您使用{{playerClass}} 玩了{{numberOfRuns}} 场对决模式，{{totalMatches}} 局比赛 ，胜率为 {{winrate}}%",
+				"stat-tooltip": "您使用{{playerClass}} 玩了{{numberOfRuns}} 场对决，{{totalMatches}} 局比赛 ，胜率为 {{winrate}}%",
 				"faced-tooltip": "你遇到了{{opponentClass}} {{totalMatches}} 次，胜率{{winrate}}%"
 			},
 			"empty-state": {
 				"title": "暂无记录",
-				"subtitle": "快去玩一场对决模式以开启记录"
+				"subtitle": "快去玩一场对决"
 			}
 		},
 		"achievements": {
@@ -951,7 +951,7 @@
 			},
 			"class-icon-toggle": {
 				"label": "使用职业标志",
-				"tooltip": "切换职业标志/英雄标志"
+				"tooltip": "切换职业头像或英雄头像"
 			},
 			"merc-details-toggle": {
 				"label": "显示详情",
@@ -977,7 +977,7 @@
 			"tip-3": "如果您遇到了严重的错误（例如收藏无法同步，记牌器无法正常工作等），请尝试以管理员身份运行此应用。",
 			"tip-4": "设置中有许多自定义选项，随心所欲去启用/停用某些功能",
 			"tip-5": "[Mercenaries] 调宽窗口查看“硬币总数”列",
-			"tip-6": "[Mercenaries] 在回放中勾选“佣兵战纪(PvP)”，可以查看每场对局的更多详细信息",
+			"tip-6": "[佣兵战纪] 在回放中勾选“佣兵战纪(PvP)”，可以查看每场对局的更多详细信息",
 			"tip-7": "[Mercenaries] 鼠标悬停在“已完成任务”列上，了解如何手动设置每个佣兵的任务进度",
 			"tip-8": "[Battlegrounds] 在对局中使用 Alt + B 跳出战棋窗口以查看实时数据",
 			"tip-9": "[Battlegrounds] 调宽战棋窗口，以在模拟器中看到平均伤害和致命概率",
@@ -990,17 +990,17 @@
 			"opponent": "敌方随从和英雄总场攻为{{value}}"
 		},
 		"pogo": {
-			"player": "你已打出过{{value}} 只蹦蹦兔",
-			"opponent": "对手已打出过{{value}} 只蹦蹦兔"
+			"player": "你已使用过{{value}} 张蹦蹦兔",
+			"opponent": "对手已使用过{{value}} 张蹦蹦兔"
 		},
-		"bolner": "{{value}} 是本回合打出的第一张战吼牌",
+		"bolner": "本回合打出的第一张战吼牌是{{value}}",
 		"multicaster": {
-			"player": "你已使用的法术派系有{{schools}}，将抽 {{cardsTotal}} 张牌",
+			"player": "你已使用的法术派系为{{schools}}，将抽 {{cardsTotal}} 张牌",
 			"opponent": "对手已使用的法术派系有{{schools}}，将抽 {{cardsTotal}} 张牌"
 		},
 		"brilliant-macaw": {
-			"player": "{{value}} 是你打出的上一张战吼牌",
-			"opponent": "{{value}} 是你的对手打出的上一张战吼牌"
+			"player": "你使用的上一张战吼牌是{{value}}",
+			"opponent": "你的对手打出的上一张战吼牌是{{value}}"
 		},
 		"cthun": {
 			"player": "你的克苏恩为 {{value}}/{{value}}",
@@ -1012,11 +1012,11 @@
 		},
 		"elwynn-boar": {
 			"player": "己方已死亡{{value}} 只艾尔文野猪",
-			"opponent": "敌方已死亡{{value}} 只艾尔文野猪"
+			"opponent": "对手已死亡{{value}} 只艾尔文野猪"
 		},
 		"fatigue": {
-			"player": "你当前疲劳伤害是 {{value}}",
-			"opponent": "对手当前疲劳伤害是 {{value}}"
+			"player": "你当前的疲劳伤害是 {{value}}",
+			"opponent": "对手当前的疲劳伤害是 {{value}}"
 		},
 		"galakrond": {
 			"player": "你已祈求迦拉克隆 {{value}} 次",
@@ -1031,8 +1031,8 @@
 			"opponent": "对手的青玉魔像大小是 {{value}}"
 		},
 		"libram": {
-			"player": "你的圣契减费为{{value}}",
-			"opponent": "对手圣契减费为{{value}}"
+			"player": "你的圣契牌已减费{{value}} 点",
+			"opponent": "对手的圣契牌已减费{{value}} 点"
 		},
 		"si-seven": {
 			"player": "你已使用过{{value}} 张军情七处牌",
@@ -1073,7 +1073,7 @@
 			},
 			"arena": {
 				"title": "竞技模式",
-				"text": "查看您最新的竞技模式场次和奖励。"
+				"text": "查看您最近的竞技模式场次和奖励。"
 			},
 			"replays": {
 				"title": "回放",
@@ -1355,7 +1355,7 @@
 			"avg-position-your-tooltip": "你的平均位次",
 			"avg-position-global-tooltip": "全球平均位次",
 			"matches-played-label": "对局场次",
-			"matches-played-tooltip": "你使用此英雄的总场次",
+			"matches-played-tooltip": "你使用此英雄的总局数",
 			"turn-winrate": "各回合胜率",
 			"turn-winrate-tooltip": "每轮战斗胜率（可以给予您此英雄的强势期参考值）",
 			"winning-tribes-title": "最高胜率的随从类型组合",
@@ -1444,7 +1444,7 @@
 			"stats-share-warning": "多个不同的随从，以及金色随从，都将共享相同的属性值（由于酒馆战棋的编码）"
 		},
 		"empty-state-title": "暂无记录",
-		"empty-state-subtitle": "快去玩一局酒馆战棋以开启记录"
+		"empty-state-subtitle": "快去玩一局酒馆战棋"
 	},
 	"duels": {
 		"hero-info": {
@@ -1625,7 +1625,7 @@
 				"text-11": "这也意味着并非应用的每一部分都会被翻译成你的语言。 出现这种情况时，缺少的部分将以英文显示。",
 				"text-2": "如果您想要帮助本地化翻译应用，请查看说明 {{link}}。",
 				"link": "此处",
-				"text-3": "请通过左边的常规选项卡中的按钮重启应用，以确保应用选定的本地化语言。"
+				"text-3": "请通过左边的通用选项卡中的按钮重启应用，以确保应用选定的本地化语言。"
 			}
 		},
 		"decktracker": {
@@ -1705,7 +1705,7 @@
 				"buff-in-hand-tooltip": "显示对手手牌受到的buff",
 				"secrets-helper-title": "奥秘助手",
 				"enable-secret-helper-label": "启用奥秘助手",
-				"enable-secret-helper-tooltip": "当启用时，会显示一个对手所有可能的奥秘弹窗",
+				"enable-secret-helper-tooltip": "当启用时，会显示一个记录对手所有可能奥秘的弹窗",
 				"counters": {
 					"title": "计数器",
 					"galakrond-label": "迦拉克隆",
