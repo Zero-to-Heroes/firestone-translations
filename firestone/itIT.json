@@ -312,6 +312,7 @@
 				"type": "Tipo:",
 				"set": "Set:",
 				"rarity": "Rarità:",
+				"flavor": "",
 				"sounds-title": "Suoni:",
 				"sounds": {
 					"category": {
@@ -506,6 +507,12 @@
 			},
 			"matchup-info": {
 				"total-matches-header": "Partite totali",
+				"win-percent-header": "",
+				"win-total-header": "",
+				"win-play-percent-header": "",
+				"win-play-total-header": "",
+				"win-coin-percent-header": "",
+				"win-coin-total-header": "",
 				"total-header": "Totale",
 				"show-as-percent-button-label": "Mostra come %",
 				"reset-button-label": "Ripristina le statistiche",
@@ -693,6 +700,7 @@
 						"board-stats": "Statistiche massima della scheda",
 						"coins-wasted": "Monete sprecate",
 						"rerolls": "Tira ancora",
+						"freezes": "",
 						"hero-power": "Potere dell'Eroe usato",
 						"minions-bought": "Minion acquistati",
 						"minions-sold": "Minion venduti",
@@ -718,7 +726,8 @@
 				"heroes": "Eroi",
 				"treasures": "Tesori",
 				"high-win-decks": "Mazzi ad alta vincita",
-				"leaderboard": "Classifica"
+				"leaderboard": "Classifica",
+				"deckbuilder": ""
 			},
 			"filters": {
 				"dust": {
@@ -758,7 +767,14 @@
 					"last-patch": "Ultima patch",
 					"past-100": "Ultimi 100 giorni"
 				},
-				"treasure-pools": {},
+				"treasure-pools": {
+					"treasure-1": "",
+					"treasure-2": "",
+					"treasure-3": "",
+					"passive-1": "",
+					"passive-2": "",
+					"passive-3": ""
+				},
 				"treasure-sort": {
 					"global-winrate": "Tasso di vittorie globale",
 					"global-pickrate": "Tasso di scelta globale",
@@ -923,6 +939,7 @@
 					"8": "8°"
 				},
 				"game-mode-tooltip": {
+					"legend-format": "",
 					"ladder": "{{format}} {{leagueName}} {{rank}}",
 					"ladder-fallback": "{{format}} {{rank}}",
 					"ladder-default": "{{format}} Rango 25",
@@ -968,24 +985,75 @@
 		}
 	},
 	"counters": {
-		"attack": {},
-		"pogo": {},
-		"multicaster": {},
-		"brilliant-macaw": {},
-		"cthun": {},
-		"elemental": {},
-		"elwynn-boar": {},
-		"fatigue": {},
-		"galakrond": {},
-		"hero-power-damage": {},
-		"jade": {},
-		"libram": {},
-		"si-seven": {},
-		"spell": {},
-		"watchpost": {}
+		"attack": {
+			"player": "",
+			"opponent": ""
+		},
+		"pogo": {
+			"player": "",
+			"opponent": ""
+		},
+		"bolner": "",
+		"multicaster": {
+			"player": "",
+			"opponent": ""
+		},
+		"brilliant-macaw": {
+			"player": "",
+			"opponent": ""
+		},
+		"cthun": {
+			"player": "",
+			"opponent": ""
+		},
+		"elemental": {
+			"player": "",
+			"opponent": ""
+		},
+		"elwynn-boar": {
+			"player": "",
+			"opponent": ""
+		},
+		"fatigue": {
+			"player": "",
+			"opponent": ""
+		},
+		"galakrond": {
+			"player": "",
+			"opponent": ""
+		},
+		"hero-power-damage": {
+			"player": "",
+			"opponent": ""
+		},
+		"jade": {
+			"player": "",
+			"opponent": ""
+		},
+		"libram": {
+			"player": "",
+			"opponent": ""
+		},
+		"si-seven": {
+			"player": "",
+			"opponent": ""
+		},
+		"spell": {
+			"player": "",
+			"opponent": ""
+		},
+		"watchpost": {
+			"player": "",
+			"opponent": ""
+		}
 	},
-	"loading": {},
+	"loading": {
+		"hotkey": "",
+		"getting-ready": "",
+		"ready": ""
+	},
 	"ftue": {
+		"title": "",
 		"subtitle": "Che ne dici di un tour rapido?",
 		"start-button": "Iniziamo",
 		"skip-button": "Salta",
@@ -1074,10 +1142,63 @@
 		"search": {
 			"hero-search-placeholder": "Cerca eroe..."
 		},
-		"empty-state": {},
-		"hero-stats": {},
-		"teams": {},
+		"empty-state": {
+			"title": "",
+			"subtitle": ""
+		},
+		"hero-stats": {
+			"games-played": "",
+			"winrate": "",
+			"equipments": "",
+			"global-winrate": "",
+			"your-winrate": "",
+			"abilities": "",
+			"global-usage": "",
+			"global-usage-tooltip": "",
+			"your-usage": "",
+			"your-usage-tooltip": "",
+			"number-of-games-tooltip": "",
+			"level-header": "",
+			"role-header": "",
+			"name-header": "",
+			"xp-header": "",
+			"coins-left-header": "",
+			"coins-left-header-tooltip": "",
+			"coins-needed-header": "",
+			"coins-needed-header-tooltip": "",
+			"coins-to-farm-header": "",
+			"coins-to-farm-header-tooltip": "",
+			"completed-tasks-header": "",
+			"completed-tasks-header-tooltip": "",
+			"abilities-header": "",
+			"equipments-header": "",
+			"max-level": "",
+			"xp-tooltip": "",
+			"current-task-tooltip": "",
+			"maxed": "",
+			"coins-to-farm-tooltip": "",
+			"empty-state-subtitle": "",
+			"current-task-tooltip-title": "",
+			"next-task-tooltip-title": ""
+		},
+		"teams": {
+			"games": "",
+			"winrate": "",
+			"last-used": "",
+			"archive-button-tooltip": "",
+			"restore-button-tooltip": "",
+			"unnamed-team": ""
+		},
 		"team-widget": {
+			"cooldown-left-tooltip": "",
+			"number-of-users-tooltip": "",
+			"base-speed-text": "",
+			"speed-buff": "",
+			"speed-debuff": "",
+			"empty-state": "",
+			"merc-level-tooltip": "",
+			"unrecognized-mercenary": "",
+			"unknown-mercenary": "",
 			"tasks-button": "Attività",
 			"task-title": "Attività {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Progresso:",
@@ -1129,6 +1250,7 @@
 		"gift-created-by-multiple-cards": "Creato da <br/> più entità",
 		"unnamed-player": "Giocatore senza nome",
 		"created-by": "Creato da {{value}}",
+		"unknown-class-card": "",
 		"unknown-card": "Carta sconosciuta",
 		"unknown-mana-spell": "Incantesimo di {{manaCost}} mana sconosciuto",
 		"unknown-info": "{{info}} sconosciuto"
@@ -1145,10 +1267,61 @@
 			"turn": "Turno {{value}}",
 			"chance-label": "La tua probabilità di:",
 			"win-chance-label": "Vittoria",
-			"composition-not-supported": {},
-			"result": {}
+			"win-chance-tooltip": "",
+			"tie-chance-label": "",
+			"tie-chance-tooltip": "",
+			"lose-chance-label": "",
+			"lose-chance-tooltip": "",
+			"damage-title": "",
+			"damage-dealt-tooltip": "",
+			"damage-received-tooltip": "",
+			"lethal-title": "",
+			"lethal-dealt-tooltip": "",
+			"lethal-received-tooltip": "",
+			"composition-not-supported": {
+				"general": "",
+				"reason-secret": "",
+				"reason-pirate": "",
+				"reason-piloted-whirl-o-tron": "",
+				"bug": ""
+			},
+			"result": {
+				"won": "",
+				"tied": "",
+				"lost": ""
+			},
+			"sim-sample-link-tooltip": ""
 		},
 		"sim": {
+			"add-minion-button-tooltip": "",
+			"update-minion-button-tooltip": "",
+			"remove-minion-button-tooltip": "",
+			"versus": "",
+			"simulate-button": "",
+			"simulate-button-tooltip": "",
+			"reset-button": "",
+			"export-button": "",
+			"export-button-tooltip": "",
+			"exporting": "",
+			"importing": "",
+			"export-confirmation": "",
+			"import-button": "",
+			"import-button-tooltip": "",
+			"reposition-button": "",
+			"reposition-button-firstpass": "",
+			"reposition-button-secondpass": "",
+			"reposition-button-finalresult": "",
+			"reposition-button-done": "",
+			"reposition-button-cancel": "",
+			"reposition-button-cancelling": "",
+			"reposition-button-tooltip": "",
+			"reposition-button-tooltip-firstpass": "",
+			"reposition-button-tooltip-secondpass": "",
+			"reposition-button-tooltip-finalresult": "",
+			"reposition-button-tooltip-done": "",
+			"reposition-button-tooltip-cancel": "",
+			"reposition-button-tooltip-cancelling": "",
+			"actual": "",
 			"simulated": "Simulato",
 			"empty-state-title": "Ancora niente qui",
 			"empty-state-subtitle": "La tua prima battaglia comparirà qui dopo aver affrontato un avversario",
@@ -1167,6 +1340,10 @@
 			"update-minion-title": "Potenzia minion",
 			"summon-mechs": "Evoca i Mecha",
 			"summon-mechs-tooltip": "Da ai minion \"Rantolo di Morte: evoca tre mecha 1/1\"",
+			"summon-plants": "",
+			"summon-plants-tooltip": "",
+			"sneed-deathrattle": "",
+			"sneed-deathrattle-tooltip": "",
 			"minions-selection-title": "Minion",
 			"search-minion-placeholder": "Cerca minion",
 			"resimulating-battle": "Risimulando la battaglia"
@@ -1206,19 +1383,68 @@
 				"empty-state-subtitle": "Seleziona un eroe e eattendi i tuoi avversari!",
 				"score-board-title": "Tabella dei punteggi",
 				"score-board-tooltip": "Riassunto di tutti gli incontri avuti con gli altri giocatori",
-				"tavern-upgrade-title": "Potenziamenti della taverna"
+				"tavern-upgrade-title": "Potenziamenti della taverna",
+				"tavern-last-upgrade-title": "",
+				"tavern-empty-state": "",
+				"last-opponent-icon-tooltip": "",
+				"triple-title": "",
+				"triple-tooltip": "",
+				"triple-empty-state": "",
+				"buddies-title": "",
+				"buddies-empty-state": "",
+				"buddy-text": "",
+				"buddy-tooltip": "",
+				"buddy-tooltip-golden": ""
 			},
-			"minions-list": {}
+			"minions-list": {
+				"reset-button": ""
+			}
 		},
 		"post-match-stats": {
-			"tabs": {},
-			"hp-graph": {},
-			"composition": {},
-			"warband-stats": {}
+			"title": "",
+			"final-board": "",
+			"current-board": "",
+			"final-position": "",
+			"live-stats-title": "",
+			"tabs": {
+				"hp-by-turn": "",
+				"stats": "",
+				"warband-composition-by-turn": "",
+				"warband-total-stats-by-turn": "",
+				"winrate-per-turn": "",
+				"battles": ""
+			},
+			"hp-graph": {
+				"legend-title": "",
+				"player-health": ""
+			},
+			"composition": {
+				"blank-tribe": "",
+				"empty-state-title": "",
+				"empty-state-subtitle": ""
+			},
+			"warband-stats": {
+				"community-label": "",
+				"your-label": ""
+			}
 		},
-		"overlay-button": {},
-		"banned-tribes": {},
-		"board": {}
+		"overlay-button": {
+			"tooltip": ""
+		},
+		"banned-tribes": {
+			"exceptions": "",
+			"exceptions-tooltip": ""
+		},
+		"board": {
+			"seen-just-now": "",
+			"seen-turns-ago": "",
+			"opponent-not-met": "",
+			"last-board-empty": "",
+			"total-damage": "",
+			"stats-share-warning": ""
+		},
+		"empty-state-title": "",
+		"empty-state-subtitle": ""
 	},
 	"duels": {
 		"hero-info": {
@@ -1233,13 +1459,21 @@
 		}
 	},
 	"session": {
-		"display-mode": {},
+		"title": "",
+		"title-tooltip": "",
+		"display-mode": {
+			"all": "",
+			"battlegrounds": "",
+			"unknown": ""
+		},
 		"buttons": {
 			"reset-tooltip": "Avvia una nuova sessione e ripristina tutte le statistiche",
 			"close-tooltip": "Chiudi e disabilita il widget, se vuoi riattivarlo, sei pregato di farlo dalle impostazioni"
 		},
 		"summary": {
 			"total-games": "{{value}} partite",
+			"total-games-tooltip": "",
+			"total-games-tooltip-all-time": "",
 			"mmr-tooltip": "Il tuo MMR corrente",
 			"delta-mmr-tooltip": "Il tuo guadagno/perdita di MMR dall'inizio della tua sessione"
 		},
@@ -1310,19 +1544,73 @@
 				"ooc": {
 					"title": "Out of Cards",
 					"pitch": "Out of Cards è un sito della community di Hearthstone con articoli, guide, mazzi, database delle carte e altro. Sincronizzare la tua raccolta di carte con il sito rende più facile trovare mazzi da giocare. Puoi visitarli a {{websiteLink}}",
-					"website-link": "qui"
+					"website-link": "qui",
+					"next": "",
+					"toggle-label": "",
+					"connect-button-text": "",
+					"disconnect-button-test": "",
+					"connected-text": "",
+					"collection-synchronized": ""
 				},
-				"d0nkey": {},
-				"hsdecks": {}
+				"d0nkey": {
+					"title": "",
+					"pitch": "",
+					"website-link": "",
+					"next": "",
+					"instructions-page-link": "",
+					"toggle-label": ""
+				},
+				"hsdecks": {
+					"title": "",
+					"pitch": "",
+					"website-link": "",
+					"next": "",
+					"toggle-label": ""
+				}
 			},
-			"bug-report": {},
-			"twitch": {},
+			"bug-report": {
+				"title": "",
+				"simulator-bug-text": "",
+				"general-bug-text": "",
+				"link-text": "",
+				"email-placeholder": "",
+				"message-placeholder": "",
+				"send-button": "",
+				"status-uploading-logs": "",
+				"status-sending-feedback": "",
+				"status-done": ""
+			},
+			"twitch": {
+				"title": "",
+				"intro": "",
+				"todo-1": "",
+				"todo-2": "",
+				"todo-3": "",
+				"link": "",
+				"login-button-text": "",
+				"logout-button-text": "",
+				"logged-in-as-text": "",
+				"configuration-title": "",
+				"delay-label": "",
+				"delay-label-tooltip": ""
+			},
 			"launch": {
+				"launch-on-game-start-label": "",
+				"launch-on-game-start-tooltip": "",
+				"integrated-mode-label": "",
+				"integrated-mode-tooltip": "",
+				"session-recap-on-exit-label": "",
+				"session-recap-on-exit-tooltip": "",
+				"xp-recap-on-game-end-label": "",
+				"xp-recap-on-game-end-tooltip": "",
+				"hide-release-notes-label": "",
 				"hide-release-notes-tooltip": "Non mostrare le nuove note di rilascio per la nuova versione di Firestone",
 				"display-notifications-label": "Visualizza le notifiche",
 				"display-notifications-tooltip": "Attiva/Disattiva la visibilità globale delle notifiche a tendina [bottom-right]. Quando attiva, puoi comunque configurare le notifiche per modalità di gioco nelle schede corrispondenti",
 				"display-notifications-confirmation": "Notifiche ora DISATTIVATE globalmente.",
 				"accessibility-title": "Accessibilità",
+				"flash-window": "",
+				"flash-window-tooltip": "",
 				"zoom-label": "Livello d'ingrandimento",
 				"zoom-tooltip": "Un livello d'ingrandimento che sarà applicato a tutte le finestre",
 				"reset-prefs-button-default": "Ripristina le preferenze",
@@ -1360,27 +1648,236 @@
 				"show-rarity-color": "Mostra i colori di rarità",
 				"show-rarity-color-tooltip": "Colora il costo di mana delle carte nel monitoraggio a seconda della rarità della carta",
 				"show-deck-winrate": "Mostra tasso di vittorie del mazzo",
-				"show-deck-winrate-tooltip": "Mostra il tasso di vittorie in Classifica complessivo del mazzo sul monitoraggio, se abbiamo i dati (in Standard o Selvaggia, a seconda della modalità di gioco corrente)"
+				"show-deck-winrate-tooltip": "Mostra il tasso di vittorie in Classifica complessivo del mazzo sul monitoraggio, se abbiamo i dati (in Standard o Selvaggia, a seconda della modalità di gioco corrente)",
+				"show-matchup-winrate": "",
+				"show-matchup-winrate-tooltip": "",
+				"show-gifts-separately": "",
+				"show-gifts-separately-tooltip": "",
+				"show-stats-change": "",
+				"show-stats-change-tooltip": "",
+				"show-cost-reduction": "",
+				"show-cost-reduction-tooltip": "",
+				"highlight-related-cards": "",
+				"highlight-related-cards-tooltip": "",
+				"close-tracker-on-end": "",
+				"close-tracker-on-end-tooltip": "",
+				"close-tracker-on-end-advanced": "",
+				"reset-button": "",
+				"reset-button-confirm": "",
+				"reset-button-tooltip": "",
+				"reset-button-confirmation": "",
+				"counters-size": ""
 			},
-			"modes": {},
+			"modes": {
+				"title": "",
+				"ranked": "",
+				"duels": "",
+				"arena": "",
+				"tavern-brawl": "",
+				"practice": "",
+				"friendly": "",
+				"casual": ""
+			},
 			"opponent-deck": {
-				"counters": {}
+				"tracker-title": "",
+				"show-tracker-label": "",
+				"show-tracker-tooltip": "",
+				"ai-decklist-label": "",
+				"ai-decklist-tooltip": "",
+				"group-cards-by-zone-label": "",
+				"group-cards-by-zone-tooltip": "",
+				"used-cards-go-to-bottom-label": "",
+				"used-cards-go-to-bottom-tooltip": "",
+				"darken-used-cards-label": "",
+				"darken-used-cards-tooltip": "",
+				"global-effects-label": "",
+				"global-effects-tooltip": "",
+				"sort-by-mana-cost-label": "",
+				"sort-by-mana-cost-tooltip": "",
+				"hide-generated-cards-label": "",
+				"hide-generated-cards-tooltip": "",
+				"opponent-hand-title": "",
+				"card-turn-draw-label": "",
+				"card-turn-draw-tooltip": "",
+				"guessed-cards-label": "",
+				"guessed-cards-tooltip": "",
+				"buff-in-hand-label": "",
+				"buff-in-hand-tooltip": "",
+				"secrets-helper-title": "",
+				"enable-secret-helper-label": "",
+				"enable-secret-helper-tooltip": "",
+				"counters": {
+					"title": "",
+					"galakrond-label": "",
+					"galakrond-tooltip": "",
+					"pogo-label": "",
+					"pogo-tooltip": "",
+					"jade-label": "",
+					"jade-tooltip": "",
+					"cthun-label": "",
+					"cthun-tooltip": "",
+					"fatigue-label": "",
+					"fatigue-tooltip": "",
+					"attack-on-board-label": "",
+					"attack-on-board-tooltip": "",
+					"watch-post-label": "",
+					"watch-post-tooltip": "",
+					"libram-label": "",
+					"libram-tooltip": "",
+					"elwynn-boar-label": "",
+					"elwynn-boar-tooltip": "",
+					"hero-power-damage-label": "",
+					"hero-power-damage-tooltip": ""
+				},
+				"size-title": "",
+				"opacity-title": "",
+				"hand-markers-title": ""
 			},
 			"your-deck": {
-				"counters": {}
+				"ignore-decklist-label": "",
+				"ignore-decklist-tooltip": "",
+				"ignore-decklist-confirmation": "",
+				"counters": {
+					"galakrond-tooltip": "",
+					"pogo-tooltip": "",
+					"jade-tooltip": "",
+					"cthun-tooltip": "",
+					"fatigue-tooltip": "",
+					"attack-on-board-tooltip": "",
+					"number-of-spells-label": "",
+					"number-of-spells-tooltip": "",
+					"elementals-label": "",
+					"elementals-tooltip": "",
+					"watch-post-tooltip": "",
+					"libram-tooltip": "",
+					"elwynn-boar-tooltip": "",
+					"hero-power-damage-tooltip": "",
+					"bolner-label": "",
+					"bolner-tooltip": "",
+					"brilliant-macaw-label": "",
+					"brilliant-macaw-tooltip": "",
+					"multicaster-label": "",
+					"multicaster-tooltip": ""
+				}
 			},
-			"duels": {}
+			"duels": {
+				"title": "",
+				"max-health-label": "",
+				"max-health-tooltip": "",
+				"max-health-option-off": "",
+				"max-health-option-blink": "",
+				"max-health-option-mouseover": "",
+				"show-ooc-tracker-label": "",
+				"show-ooc-tracker-tooltip": ""
+			}
 		},
 		"collection": {
-			"menu": {},
-			"general": {}
+			"menu": {
+				"general": ""
+			},
+			"general": {
+				"title": "",
+				"high-resolution-images-label": "",
+				"card-size-in-collection-label": "",
+				"notifications-label": "",
+				"selective-notifications-label": "",
+				"notifications-dust-recap-label": "",
+				"notifications-non-golden-commons-label": "",
+				"notifications-rewards-label": "",
+				"notifications-rewards-tooltip": ""
+			},
+			"history-show-only-new-cards": "",
+			"pack-stats-show-only-buyable-packs": "",
+			"pack-stats-show-only-buyable-packs-tooltip": "",
+			"set-show-golden-stats": ""
 		},
-		"duels": {},
+		"duels": {
+			"personal-decks-show-hidden-decks": "",
+			"hide-stats-below-threshold": "",
+			"hide-stats-below-threshold-tooltip": ""
+		},
 		"battlegrounds": {
-			"menu": {},
-			"general": {},
-			"overlay": {},
-			"session-widget": {}
+			"menu": {
+				"general": "",
+				"overlay": "",
+				"session": ""
+			},
+			"full-toggle-label": "",
+			"full-toggle-tooltip": "",
+			"general": {
+				"companion-app-title": "",
+				"enable-app-label": "",
+				"integrated-mode-label": "",
+				"integrated-mode-tooltip": "",
+				"enable-battle-sim-label": "",
+				"enable-battle-sim-tooltip": "",
+				"hide-simulation-label": "",
+				"hide-simulation-tooltip": "",
+				"show-sim-only-in-tavern-label": "",
+				"show-sim-only-in-tavern-tooltip": "",
+				"use-local-simulator-label": "",
+				"use-local-simulator-tooltip": "",
+				"popup-hero-selection-screen-label": "",
+				"popup-hero-selection-screen-tooltip": "",
+				"show-next-opponent-recap-label": "",
+				"show-next-opponent-recap-tooltip": "",
+				"show-achievements-label": "",
+				"show-achievements-tooltip": "",
+				"show-hero-tooltip-label": "",
+				"show-hero-tooltip-tooltip": "",
+				"show-overlay-button": "",
+				"show-overlay-button-tooltip": "",
+				"popup-post-match-stats-label": "",
+				"popup-post-match-stats-tooltip": "",
+				"simulator-config-title": "",
+				"simulator-number-of-sims-label": "",
+				"simulator-number-of-sims-tooltip": ""
+			},
+			"overlay": {
+				"overlay-title": "",
+				"show-banned-tribes-label": "",
+				"show-banned-tribes-tooltip": "",
+				"show-minions-list-label": "",
+				"show-minions-list-tooltip": "",
+				"turn-counter-label": "",
+				"last-opponent-icon-label": "",
+				"last-opponent-icon-tooltip": "",
+				"last-opponent-board-label": "",
+				"last-opponent-board-tooltip": "",
+				"battle-simulation-label": "",
+				"battle-simulation-tooltip": "",
+				"battle-simulation-example-label": "",
+				"battle-simulation-example-tooltip": "",
+				"widget-size-label": "",
+				"banned-tribes-title": "",
+				"banned-tribes-show-in-column-label": "",
+				"banned-tribes-show-in-column-tooltip": "",
+				"banned-tribes-icon-size-label": "",
+				"minions-list-title": "",
+				"minions-list-show-on-mouse-over-label": "",
+				"minions-list-show-on-mouse-over-tooltip": "",
+				"minions-list-show-on-mouse-over-confirmation": "",
+				"minions-list-show-tribes-highlight-label": "",
+				"minions-list-show-tribes-highlight-tooltip": "",
+				"minions-list-show-golden-cards-label": "",
+				"minions-list-show-golden-cards-tooltip": "",
+				"opponent-board-title": "",
+				"opponent-board-show-top-label": "",
+				"opponent-board-show-top-tooltip": ""
+			},
+			"session-widget": {
+				"title": "",
+				"label": "",
+				"label-tooltip": "",
+				"show-groups": "",
+				"show-groups-tooltip": "",
+				"show-matches": "",
+				"show-matches-tooltip": "",
+				"number-of-matches": "",
+				"number-of-matches-tooltip": "",
+				"size-title": "",
+				"opacity-title": ""
+			}
 		},
 		"achievements": {
 			"menu": {
@@ -1402,12 +1899,50 @@
 				"general": "Generale"
 			},
 			"general": {
-				"player-team-widget-label": "Widget del team del giocatore"
+				"player-team-widget-label": "Widget del team del giocatore",
+				"player-team-widget-tooltip": "",
+				"opponent-team-widget-label": "",
+				"opponent-team-widget-tooltip": "",
+				"map-team-widget-label": "",
+				"map-team-widget-tooltip": "",
+				"village-team-widget-label": "",
+				"village-team-widget-tooltip": "",
+				"action-queue-pve-label": "",
+				"action-queue-pve-tooltip": "",
+				"action-queue-pvp-label": "",
+				"action-queue-pvp-tooltip": "",
+				"role-chart-label": "",
+				"role-chart-tooltip": "",
+				"tasks-label": "",
+				"tasks-tooltip": "",
+				"synergies-label": "",
+				"synergies-tooltip": "",
+				"your-team": "",
+				"opponent-team": "",
+				"action-queue": ""
 			}
 		},
 		"replays": {
-			"menu": {}
+			"menu": {
+				"general": ""
+			},
+			"empty-state": ""
 		}
 	},
-	"twitch": {}
+	"twitch": {
+		"could-not-log-error-title": "",
+		"could-not-log-error-text": "",
+		"settings-side-text": "",
+		"show-hero-cards-help": "",
+		"show-hero-cards-help-tooltip": "",
+		"show-minions-list": "",
+		"show-minions-list-tooltip": "",
+		"minions-list-size": "",
+		"show-minions-list-golden-cards": "",
+		"show-minions-list-golden-cards-tooltip": "",
+		"show-battle-simulator": "",
+		"battle-simulator-size": "",
+		"last-board-size": "",
+		"last-board-size-tooltip": ""
+	}
 }
