@@ -195,7 +195,7 @@
 				"reading-error-title": "Errore di lettura della memoria",
 				"reading-error-text": "Alcune funzionalità non saranno disponibili. Sei pregato di eseguire Firestone/Overwolf come amministratore o di contattarci su Discord.",
 				"reset-started-title": "Ripristino della lettura della memoria avviato",
-				"reset-started-text": "",
+				"reset-started-text": "La struttura della memoria del gioco è cambiata. Sei pregato di attendere qualche secondo.",
 				"reset-complete-title": "Ripristino della lettura della memoria completato",
 				"reset-complete-text": "Puoi nuovamente usare l'app normalmente :) Grazie per la tua pazienza!"
 			},
@@ -297,7 +297,7 @@
 				"empty-state-subtitle": "Apri un pacchetto per iniziarne uno!",
 				"golden-card": "{{cardName}} Dorata",
 				"diamond-card": "{{cardName}} di Diamante",
-				"click-to-view": "",
+				"click-to-view": "Clicca per {{link}}",
 				"click-to-view-link": "espandi",
 				"duplicate-cards": "{{numberOfCards}} carte duplicate",
 				"dust-potential": "Polvere {{dust}} potenziale"
@@ -507,12 +507,12 @@
 			},
 			"matchup-info": {
 				"total-matches-header": "Partite totali",
-				"win-percent-header": "",
-				"win-total-header": "",
-				"win-play-percent-header": "",
-				"win-play-total-header": "",
-				"win-coin-percent-header": "",
-				"win-coin-total-header": "",
+				"win-percent-header": "Vittoria%",
+				"win-total-header": "Vittorie",
+				"win-play-percent-header": "Vittoria% Giocata",
+				"win-play-total-header": "Vittorie Giocata",
+				"win-coin-percent-header": "Vittoria% Moneta",
+				"win-coin-total-header": "Vittorie Moneta",
 				"total-header": "Totale",
 				"show-as-percent-button-label": "Mostra come %",
 				"reset-button-label": "Ripristina le statistiche",
@@ -700,7 +700,7 @@
 						"board-stats": "Statistiche massima della scheda",
 						"coins-wasted": "Monete sprecate",
 						"rerolls": "Tira ancora",
-						"freezes": "",
+						"freezes": "Congela",
 						"hero-power": "Potere dell'Eroe usato",
 						"minions-bought": "Minion acquistati",
 						"minions-sold": "Minion venduti",
@@ -727,11 +727,11 @@
 				"treasures": "Tesori",
 				"high-win-decks": "Mazzi ad alta vincita",
 				"leaderboard": "Classifica",
-				"deckbuilder": ""
+				"deckbuilder": "Creatore di mazzi"
 			},
 			"filters": {
 				"dust": {
-					"all": "",
+					"all": "Tutte le polveri",
 					"own": "Possiedi tutte le carte",
 					"dust": "{{value}} polvere"
 				},
@@ -768,12 +768,12 @@
 					"past-100": "Ultimi 100 giorni"
 				},
 				"treasure-pools": {
-					"treasure-1": "",
-					"treasure-2": "",
-					"treasure-3": "",
-					"passive-1": "",
-					"passive-2": "",
-					"passive-3": ""
+					"treasure-1": "Gruppo di Tesori 1",
+					"treasure-2": "Gruppo di Tesori 2",
+					"treasure-3": "Gruppo di Tesori 2 solo Ultra Rare",
+					"passive-1": "Gruppo Passive 1",
+					"passive-2": "Gruppo Passive 2",
+					"passive-3": "Gruppo Passive 2 solo Ultra Rare"
 				},
 				"treasure-sort": {
 					"global-winrate": "Tasso di vittorie globale",
@@ -782,9 +782,9 @@
 					"player-pickrate": "Il tuo tasso di scelta"
 				},
 				"locks": {
-					"all": "",
-					"unlocked": "",
-					"unlocked-tooltip": ""
+					"all": "Mostra bloccata",
+					"unlocked": "Solo sbloccate",
+					"unlocked-tooltip": "Mostra solo i mazzi per cui hai sbloccato il potere dell'eroe e il tesoro d'autore"
 				}
 			},
 			"deck-stat": {
@@ -944,7 +944,7 @@
 					"8": "8°"
 				},
 				"game-mode-tooltip": {
-					"legend-format": "",
+					"legend-format": "{{format}} Legenda",
 					"ladder": "{{format}} {{leagueName}} {{rank}}",
 					"ladder-fallback": "{{format}} {{rank}}",
 					"ladder-default": "{{format}} Rango 25",
@@ -991,74 +991,74 @@
 	},
 	"counters": {
 		"attack": {
-			"player": "",
-			"opponent": ""
+			"player": "Hai {{value}} attacco totale dal tavolo e l'eroe",
+			"opponent": "Il tuo avversario ha {{value}} di attacco totale dal tavolo e l'eroe"
 		},
 		"pogo": {
-			"player": "",
-			"opponent": ""
+			"player": "Hai giocato {{value}} Saltatori di Pogo",
+			"opponent": "Il tuo avversario ha giocato {{value}} Saltatori di Pogo"
 		},
-		"bolner": "",
+		"bolner": "{{value}} è stata la prima carta Grido di Battaglia giocata in questo turno",
 		"multicaster": {
-			"player": "",
-			"opponent": ""
+			"player": "Pescherai {{cardsTotal}} carte dalle scuole incantesimi: {{schools}}",
+			"opponent": "Il tuo avversario pescherà {{cardsTotal}} carte dalle scuole di incantesimi: {{schools}}"
 		},
 		"brilliant-macaw": {
-			"player": "",
-			"opponent": ""
+			"player": "{{value}} è stata l'ultima carta di grido di battaglia che hai giocato",
+			"opponent": "{{value}} è stata l'ultima carta di grido di battaglia giocata dal tuo avversario"
 		},
 		"cthun": {
-			"player": "",
-			"opponent": ""
+			"player": "Il tuo C'Thun è un {{value}}/{{value}}",
+			"opponent": "Il C'Thun del tuo avversario è un {{value}}/{{value}}"
 		},
 		"elemental": {
-			"player": "",
-			"opponent": ""
+			"player": "Hai giocato {{lastTurn}} elementi lo scorso turno e {{thisTurn}} elementi in questo",
+			"opponent": "Il tuo avversario ha giocato {{lastTurn}} elementi lo scorso turno e {{thisTurn}} elementi in questo"
 		},
 		"elwynn-boar": {
-			"player": "",
-			"opponent": ""
+			"player": "{{value}} cinghiali sono morti per te",
+			"opponent": "{{value}} cinghiali sono morti per il tuo avversario"
 		},
 		"fatigue": {
-			"player": "",
-			"opponent": ""
+			"player": "Il tuo danno da fatica corrente è {{value}}",
+			"opponent": "Il danno da fatica corrente del tuo avversario è {{value}}"
 		},
 		"galakrond": {
-			"player": "",
-			"opponent": ""
+			"player": "Hai invocato Galakrond {{value}} volte",
+			"opponent": "Il tuo avversario ha invocato Galakrond {{value}} volte"
 		},
 		"hero-power-damage": {
-			"player": "",
-			"opponent": ""
+			"player": "Il potere del tuo eroe ha inflitto {{value}} danni in questa partita",
+			"opponent": "Il potere dell'eroe del tuo avversario ha inflitto {{value}} danni in questa partita"
 		},
 		"jade": {
-			"player": "",
-			"opponent": ""
+			"player": "La dimensione del tuo Golem di Giada è {{value}}",
+			"opponent": "La dimensione del Golem di Giada del tuo avversario è {{value}}"
 		},
 		"libram": {
-			"player": "",
-			"opponent": ""
+			"player": "Hai giocato {{value}} librami in questa partita",
+			"opponent": "Il tuo avversario ha giocato {{value}} librami in questa partita"
 		},
 		"si-seven": {
-			"player": "",
-			"opponent": ""
+			"player": "Hai giocato {{value}} SI:7 carte in questa partita",
+			"opponent": "Il tuo avversario ha giocato {{value}} SI:7 carte in questa partita"
 		},
 		"spell": {
-			"player": "",
-			"opponent": ""
+			"player": "Hai giocato {{value}} incantesimi in questa partita",
+			"opponent": "Il tuo avversario ha giocato {{value}} incantesimi in questa partita"
 		},
 		"watchpost": {
-			"player": "",
-			"opponent": ""
+			"player": "Hai giocato {{value}} avamposti in questa partita",
+			"opponent": "Il tuo avversario ha giocato {{value}} avamposti in questa partita"
 		}
 	},
 	"loading": {
-		"hotkey": "",
-		"getting-ready": "",
-		"ready": ""
+		"hotkey": "Per visualizzare l'app, premi",
+		"getting-ready": "In preparazione",
+		"ready": "Le tue abilità sono pronte!"
 	},
 	"ftue": {
-		"title": "",
+		"title": "Benvenuto su Firestone",
 		"subtitle": "Che ne dici di un tour rapido?",
 		"start-button": "Iniziamo",
 		"skip-button": "Salta",
@@ -1148,54 +1148,54 @@
 			"hero-search-placeholder": "Cerca eroe..."
 		},
 		"empty-state": {
-			"title": "",
-			"subtitle": ""
+			"title": "Ancora niente qui",
+			"subtitle": "Gioca delle partite di mercenari per iniziare! Inoltre, dai un'occhiata ai tuoi filtri sopra :)"
 		},
 		"hero-stats": {
-			"games-played": "",
-			"winrate": "",
-			"equipments": "",
-			"global-winrate": "",
-			"your-winrate": "",
-			"abilities": "",
-			"global-usage": "",
-			"global-usage-tooltip": "",
-			"your-usage": "",
-			"your-usage-tooltip": "",
-			"number-of-games-tooltip": "",
-			"level-header": "",
-			"role-header": "",
-			"name-header": "",
-			"xp-header": "",
-			"coins-left-header": "",
-			"coins-left-header-tooltip": "",
-			"coins-needed-header": "",
-			"coins-needed-header-tooltip": "",
-			"coins-to-farm-header": "",
-			"coins-to-farm-header-tooltip": "",
-			"completed-tasks-header": "",
-			"completed-tasks-header-tooltip": "",
-			"abilities-header": "",
-			"equipments-header": "",
-			"max-level": "",
-			"xp-tooltip": "",
-			"current-task-tooltip": "",
-			"maxed": "",
-			"coins-to-farm-tooltip": "",
-			"empty-state-subtitle": "",
-			"current-task-tooltip-title": "",
-			"next-task-tooltip-title": ""
+			"games-played": "Partite giocate",
+			"winrate": "Tasso di vittoria",
+			"equipments": "Equipaggiamenti",
+			"global-winrate": "Tasso di vittoria globale",
+			"your-winrate": "Il tuo tasso di vittoria",
+			"abilities": "Abilità",
+			"global-usage": "Uso globale",
+			"global-usage-tooltip": "Quante volte è usata per volta ogni abilità dalla community",
+			"your-usage": "Il tuo uso",
+			"your-usage-tooltip": "Quante volte ogni abilità è usata per volta da te",
+			"number-of-games-tooltip": "{{totalMatches}} partite registrate ({{popularity}} popolarità)",
+			"level-header": "Lvl",
+			"role-header": "Ruolo",
+			"name-header": "Nome",
+			"xp-header": "XP",
+			"coins-left-header": "Monete Rimanenti",
+			"coins-left-header-tooltip": "Monete totali che hai in riserva per questo mercenario",
+			"coins-needed-header": "Monete Necessarie",
+			"coins-needed-header-tooltip": "Le monete totali ancora necessarie per ottenere questo mercenario totalmente al massimo",
+			"coins-to-farm-header": "Monete Per Farmare",
+			"coins-to-farm-header-tooltip": "Monete totali che necessiti ancora per ottenere questo mercenario al massimo livello (conta le monete già possedute e quelle che otterrai potenziando tutte le attività)",
+			"completed-tasks-header": "Attività Completate",
+			"completed-tasks-header-tooltip": "Attività completate. Ctrl + click sull'attività corrente per andare manualmente alla successiva. Alt + click per tornare indietro di un passaggio.",
+			"abilities-header": "Abilità",
+			"equipments-header": "Equipaggiamenti",
+			"max-level": "Livello massimo!",
+			"xp-tooltip": "{{value}} XP",
+			"current-task-tooltip": "L'attività è aggiornabile solo una volta che un visitatore per questo mercenario visita il tuo villaggio mentre l'app è in esecuzione.",
+			"maxed": "Al massimo!",
+			"coins-to-farm-tooltip": "Aspettando che tu ottenga {{value}} monete dalle attività non completate",
+			"empty-state-subtitle": "Vai alla schermata del Villaggio dei Mercenari su Hearthstone per aggiornare le informazioni",
+			"current-task-tooltip-title": "Attività Corrente {{taskNumber}}: {{taskTitle}}",
+			"next-task-tooltip-title": "Attività Successiva {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
-			"games": "",
-			"winrate": "",
-			"last-used": "",
-			"archive-button-tooltip": "",
-			"restore-button-tooltip": "",
-			"unnamed-team": ""
+			"games": "{{value}} partite",
+			"winrate": "Tasso di vittoria del {{value}}%",
+			"last-used": "Ultimo utilizzo: {{value}}",
+			"archive-button-tooltip": "Archivia questo team (puoi ripristinarlo in seguito)",
+			"restore-button-tooltip": "Ripristina questo team",
+			"unnamed-team": "Team Senza Nome"
 		},
 		"team-widget": {
-			"cooldown-left-tooltip": "",
+			"cooldown-left-tooltip": "Turni rimanenti prima che quell'abilità sia nuovamente utilizzabile",
 			"number-of-users-tooltip": "",
 			"base-speed-text": "",
 			"speed-buff": "",
@@ -1318,7 +1318,7 @@
 			"reposition-button-finalresult": "",
 			"reposition-button-done": "",
 			"reposition-button-cancel": "",
-			"reposition-button-cancelling": "",
+			"reposition-button-cancelling": "Annullando...",
 			"reposition-button-tooltip": "",
 			"reposition-button-tooltip-firstpass": "",
 			"reposition-button-tooltip-secondpass": "",
