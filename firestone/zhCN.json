@@ -182,7 +182,7 @@
 				"default-cancel-button": "取消",
 				"multiselect-validation-button": "应用",
 				"multiselect-validation-error-tooltip": "请选择全部或者5种随从类型",
-				"hotkey-text": "显示/隐藏",
+				"hotkey-text": "显示/隐藏:",
 				"no-hotkey-assigned": "未设置快捷键"
 			},
 			"ads": {
@@ -194,9 +194,9 @@
 			"memory": {
 				"reading-error-title": "内存读取错误",
 				"reading-error-text": "某些功能将不可用。请以管理员身份运行 Firestone/Overwolf 或在Discord上联系我们。",
-				"reset-started-title": "正在重置存储读取",
-				"reset-started-text": "游戏存储结构已更改。请稍等。",
-				"reset-complete-title": "存储读取已重置",
+				"reset-started-title": "正在重置内存读取",
+				"reset-started-text": "游戏内存结构已更改。请稍等。",
+				"reset-complete-title": "内存读取已重置",
 				"reset-complete-text": "您可以再次正常使用此应用 :) 感谢您的耐心！"
 			},
 			"startup": {
@@ -215,7 +215,7 @@
 		},
 		"arena": {
 			"menu": {
-				"my-runs": "我的场次"
+				"my-runs": "我的轮次"
 			},
 			"filters": {
 				"time": {
@@ -232,9 +232,9 @@
 				"wins-per-run": "每轮平均胜场",
 				"most-played-classes": "最常用职业",
 				"best-winrate-classes": "最高胜率职业",
-				"most-faced-classes": "最多对手职业",
+				"most-faced-classes": "对手最多职业",
 				"best-winrate-against": "最优对抗职业",
-				"stat-tooltip": "您在竞技模式中玩了 {{numberOfRuns}} 轮 {{playerClass}} ，共 {{totalMatches}} 局 ，胜率为 {{winrate}} %",
+				"stat-tooltip": "您使用{{playerClass}} 玩了{{numberOfRuns}} 轮竞技场，共{{totalMatches}} 局比赛 ，胜率为 {{winrate}}%",
 				"faced-tooltip": "您遇到了 {{opponentClass}} {{totalMatches}} 次，胜率为 {{winrate}}%"
 			},
 			"runs": {
@@ -297,7 +297,7 @@
 				"empty-state-subtitle": "打开一个卡牌包以开始记录！",
 				"golden-card": "金色的 {{cardName}}",
 				"diamond-card": "钻石的 {{cardName}}",
-				"click-to-view": "点击到 {{link}}",
+				"click-to-view": "单击以查看 {{link}}",
 				"click-to-view-link": "展开",
 				"duplicate-cards": "{{numberOfCards}} 张重复的卡牌",
 				"dust-potential": "分解可得 {{dust}} 点奥术之尘"
@@ -731,7 +731,7 @@
 			},
 			"filters": {
 				"dust": {
-					"all": "所有套牌",
+					"all": "所有奥术之尘",
 					"own": "已拥有全部卡牌",
 					"dust": "{{value}} 点奥术之尘"
 				},
@@ -742,10 +742,10 @@
 				},
 				"game-mode": {
 					"all": "所有模式",
-					"all-tooltip": "社区统计将只显示对决模式英雄场的数据。您自己的统计资料将同时显示休闲场和英雄场。",
+					"all-tooltip": "社区统计将只显示英雄场的数据。您自己的统计将同时显示休闲场和英雄场。",
 					"casual": "休闲模式",
-					"casual-tooltip": "社区统计将只显示对决模式英雄场的数据。您自己的统计资料将只显示休闲场。",
-					"heroic": "英雄"
+					"casual-tooltip": "社区统计将只显示英雄场的数据。您自己的统计将只显示休闲场。",
+					"heroic": "英雄模式"
 				},
 				"hero": {
 					"all": "所有英雄"
@@ -780,6 +780,11 @@
 					"global-pickrate": "全球选取率",
 					"global-offering": "全球提供数",
 					"player-pickrate": "您的选取率"
+				},
+				"locks": {
+					"all": "显示尚未解锁",
+					"unlocked": "仅已解锁",
+					"unlocked-tooltip": "仅显示已解锁英雄技能和签名宝藏的套牌"
 				}
 			},
 			"deck-stat": {
@@ -791,7 +796,7 @@
 				"runs": "场次",
 				"starter-deck": "初始套牌",
 				"final-deck": "最终套牌",
-				"all-runs-with-deck": "使用{{deckName}} 的所有对决场次",
+				"all-runs-with-deck": "使用 {{deckName}} 的所有对决",
 				"run-details": "场次详情",
 				"number-of-runs": "场数",
 				"average-wins-per-run": "每场平均胜局数",
