@@ -35,6 +35,12 @@
 			"arena": "Арена",
 			"tavern-brawl": "Потасовка"
 		},
+		"region": {
+			"region_us": "Америка",
+			"region_eu": "Европа",
+			"region_kr": "",
+			"region_cn": "Китай"
+		},
 		"pack": {
 			"classic": "",
 			"goblins-vs-gnomes": "Гоблины и гномы",
@@ -136,7 +142,7 @@
 			"halforc": "Полуорк",
 			"lock": ""
 		},
-		"legendary-minion": "",
+		"legendary-minion": "Легендарное существо",
 		"patch": "",
 		"hs-terms": {
 			"attack": "Атака",
@@ -177,13 +183,13 @@
 				"bug-button-tooltip": "Сообщить об ошибке",
 				"help-button-tooltip": "Показать описание обновления",
 				"default-confirmation-title": "Вы уверены?",
-				"default-confirmation-text": "",
+				"default-confirmation-text": "Это закроет трекер на время текущего матча",
 				"default-validation-button": "Ок",
 				"default-cancel-button": "Отмена",
-				"multiselect-validation-button": "",
-				"multiselect-validation-error-tooltip": "",
+				"multiselect-validation-button": "Применить",
+				"multiselect-validation-error-tooltip": "Пожалуйста, выберите либо все типы существ, либо только 5",
 				"hotkey-text": "Показать/скрыть:",
-				"no-hotkey-assigned": ""
+				"no-hotkey-assigned": "Горячая клавиша не назначена"
 			},
 			"ads": {
 				"support-the-dev": "Поддержать разработчика и убрать рекламу",
@@ -192,10 +198,10 @@
 		},
 		"internal": {
 			"memory": {
-				"reading-error-title": "",
-				"reading-error-text": "",
-				"reset-started-title": "",
-				"reset-started-text": "",
+				"reading-error-title": "Ошибка чтения памяти",
+				"reading-error-text": "Некоторые функции будут недоступны. Пожалуйста, запустите Firestone/Overwolf как администратор или свяжитесь с нами в Discord.",
+				"reset-started-title": "Сброс чтения памяти запущен",
+				"reset-started-text": "Структура игровой памяти изменилась. Пожалуйста, подождите несколько секунд.",
 				"reset-complete-title": "",
 				"reset-complete-text": ""
 			},
@@ -210,7 +216,7 @@
 		},
 		"updates": {
 			"update-available": "Доступна новая версия! Нажмите, чтобы обновить",
-			"update-error": "",
+			"update-error": "Произошла ошибка при обновлении приложения. Перезапустите Overwolf для принудительного обновления",
 			"restart-needed": ""
 		},
 		"arena": {
@@ -219,11 +225,11 @@
 			},
 			"filters": {
 				"time": {
-					"past-three": "",
-					"past-seven": "",
-					"last-patch": "",
-					"past-100": "",
-					"past-30": ""
+					"past-three": "Последние 3 дня",
+					"past-seven": "Последние 7 дней",
+					"last-patch": "Последнее обновление",
+					"past-100": "Последние 100 дней",
+					"past-30": "Последние 30 дней"
 				}
 			},
 			"stats": {
@@ -231,9 +237,9 @@
 				"total-runs": "Всего забегов",
 				"wins-per-run": "",
 				"most-played-classes": "",
-				"best-winrate-classes": "",
+				"best-winrate-classes": "Лучшие классы по винрейту",
 				"most-faced-classes": "",
-				"best-winrate-against": "",
+				"best-winrate-against": "Лучший винрейт против",
 				"stat-tooltip": "",
 				"faced-tooltip": ""
 			},
@@ -241,7 +247,7 @@
 				"view-run-button": "",
 				"minimize-run-button": "",
 				"run-name": "",
-				"load-runs-button": ""
+				"load-runs-button": "Нажмите, чтобы загрузить больше игр"
 			},
 			"empty-state": {
 				"title": "Здесь пока что ничего нет",
@@ -293,12 +299,12 @@
 				"title": "Последние полученные карты",
 				"you-have-viewed": "",
 				"load-more-button": "Ещё",
-				"empty-state-title": "",
+				"empty-state-title": "Нет истории",
 				"empty-state-subtitle": "Открой комплект, чтобы начать!",
 				"golden-card": "Золотая {{cardName}}",
 				"diamond-card": "Алмазная {{cardName}}",
-				"click-to-view": "",
-				"click-to-view-link": "",
+				"click-to-view": "Нажмите на {{link}}",
+				"click-to-view-link": "развернуть",
 				"duplicate-cards": "",
 				"dust-potential": ""
 			},
@@ -332,11 +338,11 @@
 						"well-played": "Неплохо сыграно",
 						"oops": "",
 						"threaten": "",
-						"thanks": "",
-						"sorry": "",
-						"concede": "",
+						"thanks": "Спасибо",
+						"sorry": "Извини",
+						"concede": "Сдаться",
 						"start": "",
-						"timer": "",
+						"timer": "Таймер",
 						"think-1": "",
 						"think-2": "",
 						"think-3": "",
@@ -387,7 +393,7 @@
 				"packs-received-tooltip": "",
 				"best-known-pack": "",
 				"dust": "",
-				"dust-tooltip": "",
+				"dust-tooltip": "Вам нужно {{value}} пыли для завершения набора",
 				"duplicate-dust": "",
 				"duplicate-dust-tooltip": "",
 				"golden-dust": "",
@@ -419,7 +425,7 @@
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
-					"title": "",
+					"title": "Этот набор закончен, и у вас есть все!",
 					"subtitle": ""
 				},
 				"no-card-in-set": {
@@ -492,21 +498,21 @@
 					"legend-500": "Топ 500"
 				},
 				"rank-group": {
-					"per-match": "",
+					"per-match": "Показать каждый матч",
 					"per-day": "",
 					"per-day-tooltip": ""
 				},
 				"time-filter": {
 					"all-time": "",
 					"season-start": "",
-					"last-patch": "",
+					"last-patch": "Последнее обновление",
 					"past-30": "",
 					"past-7": "",
 					"past-1": ""
 				}
 			},
 			"matchup-info": {
-				"total-matches-header": "",
+				"total-matches-header": "Всего матчей",
 				"win-percent-header": "",
 				"win-total-header": "",
 				"win-play-percent-header": "",
@@ -572,7 +578,7 @@
 		"battlegrounds": {
 			"menu": {
 				"heroes": "Герои",
-				"perfect-games": "",
+				"perfect-games": "Идеальные игры",
 				"rating": "",
 				"records": "",
 				"simulator": "Симулятор"
@@ -585,7 +591,7 @@
 					"average-position": "Место в среднем",
 					"mmr": "Чистый MMR",
 					"games-played": "Сыграно партий",
-					"last-played": ""
+					"last-played": "Последние игры"
 				},
 				"rank": {
 					"all": "Все ранги",
@@ -599,7 +605,7 @@
 				"time": {
 					"past-seven": "",
 					"past-three": "",
-					"last-patch": "",
+					"last-patch": "Последнее обновление",
 					"past-100": "",
 					"past-30": ""
 				},
@@ -608,7 +614,7 @@
 					"tier": ""
 				},
 				"tribe": {
-					"all-tribes": "",
+					"all-tribes": "Все типы существ",
 					"no-tribe": ""
 				},
 				"signature-treasure": {
@@ -712,7 +718,7 @@
 						"battle-luck-explain-link-tooltip": "",
 						"negative-battle-luck": ""
 					},
-					"record-broken-tooltip": ""
+					"record-broken-tooltip": "Вы побили свой рекорд!"
 				}
 			},
 			"tier-list": {
@@ -764,7 +770,7 @@
 				"time": {
 					"past-three": "",
 					"past-seven": "",
-					"last-patch": "",
+					"last-patch": "Последнее обновление",
 					"past-100": ""
 				},
 				"treasure-pools": {
@@ -834,7 +840,8 @@
 			"leaderboard": {
 				"rank": "",
 				"rating": "",
-				"name": ""
+				"name": "",
+				"region": ""
 			},
 			"search": {
 				"hero": {
@@ -915,7 +922,7 @@
 				}
 			},
 			"bg-stats": {
-				"title": "",
+				"title": "Статистика матча",
 				"empty-state-title": "",
 				"empty-state-subtitle": ""
 			},
@@ -931,7 +938,7 @@
 				"watch replay-button-tooltip": "",
 				"mercenaries-bot-opponent-name": "",
 				"bgs-available-tribes-tooltip": "",
-				"bgs-perfect-game-result": "",
+				"bgs-perfect-game-result": "Идеально!",
 				"deck-name-tooltip": "",
 				"bgs-result": {
 					"1": "1-е",
@@ -1032,8 +1039,8 @@
 			"opponent": ""
 		},
 		"jade": {
-			"player": "",
-			"opponent": ""
+			"player": "Размер вашего нефритового голема: {{value}}",
+			"opponent": "Размер нефритового голема противника: {{value}}"
 		},
 		"libram": {
 			"player": "",
@@ -1239,7 +1246,7 @@
 			"invalid-deck-code-button-text": ""
 		},
 		"stats": {
-			"deck-winrate": "",
+			"deck-winrate": "Винрейт колоды",
 			"deck-winrate-tooltip": "",
 			"deck-winrate-vs-class": "",
 			"deck-winrate-vs-class-tooltip": ""
@@ -1302,7 +1309,7 @@
 			"update-minion-button-tooltip": "",
 			"remove-minion-button-tooltip": "",
 			"versus": "",
-			"simulate-button": "",
+			"simulate-button": "Симулировать",
 			"simulate-button-tooltip": "",
 			"reset-button": "",
 			"export-button": "",
@@ -1312,7 +1319,7 @@
 			"export-confirmation": "",
 			"import-button": "",
 			"import-button-tooltip": "",
-			"reposition-button": "",
+			"reposition-button": "Репозиционировать",
 			"reposition-button-firstpass": "",
 			"reposition-button-secondpass": "",
 			"reposition-button-finalresult": "",
@@ -1461,6 +1468,11 @@
 			"win-distribution-header": "",
 			"win-distribution-tooltip": "",
 			"top-decks-header": ""
+		},
+		"deck-select": {
+			"copy-deck-tooltip": "",
+			"copy-deck-tooltip-confirmation": "",
+			"personal-deck-text": ""
 		}
 	},
 	"session": {
@@ -1619,7 +1631,7 @@
 				"zoom-label": "",
 				"zoom-tooltip": "",
 				"reset-prefs-button-default": "",
-				"reset-prefs-button-confirmation": "",
+				"reset-prefs-button-confirmation": "Вы уверены?",
 				"reset-prefs-tooltip": "",
 				"reset-prefs-confirmation": "",
 				"restart-app-button-label": ""
@@ -1662,13 +1674,15 @@
 				"show-stats-change-tooltip": "",
 				"show-cost-reduction": "",
 				"show-cost-reduction-tooltip": "",
+				"show-unknown-cards": "",
+				"show-unknown-cards-tooltip": "",
 				"highlight-related-cards": "",
 				"highlight-related-cards-tooltip": "",
 				"close-tracker-on-end": "",
 				"close-tracker-on-end-tooltip": "",
 				"close-tracker-on-end-advanced": "",
 				"reset-button": "",
-				"reset-button-confirm": "",
+				"reset-button-confirm": "Вы уверены?",
 				"reset-button-tooltip": "",
 				"reset-button-confirmation": "",
 				"counters-size": ""
@@ -1773,7 +1787,9 @@
 				"max-health-option-blink": "",
 				"max-health-option-mouseover": "",
 				"show-ooc-tracker-label": "",
-				"show-ooc-tracker-tooltip": ""
+				"show-ooc-tracker-tooltip": "",
+				"show-ooc-deck-select-label": "",
+				"show-ooc-deck-select-tooltip": ""
 			}
 		},
 		"collection": {
