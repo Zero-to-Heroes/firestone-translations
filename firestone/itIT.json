@@ -35,6 +35,12 @@
 			"arena": "Arena",
 			"tavern-brawl": "Rissa da Taverna"
 		},
+		"region": {
+			"region_us": "Americhe",
+			"region_eu": "Europa",
+			"region_kr": "Asia-Pacifico",
+			"region_cn": "Cina"
+		},
 		"pack": {
 			"classic": "Classica",
 			"goblins-vs-gnomes": "Goblin vs Gnomi",
@@ -834,7 +840,8 @@
 			"leaderboard": {
 				"rank": "Rango",
 				"rating": "Punteggio",
-				"name": "Nome"
+				"name": "Nome",
+				"region": "Regione"
 			},
 			"search": {
 				"hero": {
@@ -1319,14 +1326,14 @@
 			"reposition-button-done": "Completata",
 			"reposition-button-cancel": "Annulla",
 			"reposition-button-cancelling": "Annullando...",
-			"reposition-button-tooltip": "",
-			"reposition-button-tooltip-firstpass": "",
-			"reposition-button-tooltip-secondpass": "",
-			"reposition-button-tooltip-finalresult": "",
-			"reposition-button-tooltip-done": "",
-			"reposition-button-tooltip-cancel": "",
-			"reposition-button-tooltip-cancelling": "",
-			"actual": "",
+			"reposition-button-tooltip": "(BETA) Trova il miglior posizionamento per il tuo tavolo. A seconda del numero di CPU e la complessità dei tavoli, questo potrebbe richiedere diversi minuti e userà molta CPU e RAM.",
+			"reposition-button-tooltip-firstpass": "Eseguendo alcune (circa 50) simulazioni per ogni permutazione possibile per eliminare rapidamente le meno promettenti",
+			"reposition-button-tooltip-secondpass": "Eseguendo alcune centinaia (circa 250) di simulazioni per ottenere le più promettenti",
+			"reposition-button-tooltip-finalresult": "Eseguendo una simulazione completa sui candidati più promettenti. Questa è la fase più lunga e può richiedere diversi minuti",
+			"reposition-button-tooltip-done": "Miglior candidato trovato, sistemando",
+			"reposition-button-tooltip-cancel": "Clicca per annullare il riposizionamento",
+			"reposition-button-tooltip-cancelling": "Annullando i processi, sei pregato di attendere brevemente",
+			"actual": "Effettivo",
 			"simulated": "Simulato",
 			"empty-state-title": "Ancora niente qui",
 			"empty-state-subtitle": "La tua prima battaglia comparirà qui dopo aver affrontato un avversario",
@@ -1389,55 +1396,55 @@
 				"score-board-title": "Tabella dei punteggi",
 				"score-board-tooltip": "Riassunto di tutti gli incontri avuti con gli altri giocatori",
 				"tavern-upgrade-title": "Potenziamenti della taverna",
-				"tavern-last-upgrade-title": "",
-				"tavern-empty-state": "",
-				"last-opponent-icon-tooltip": "",
-				"triple-title": "",
-				"triple-tooltip": "",
-				"triple-empty-state": "",
+				"tavern-last-upgrade-title": "Ultimi potenziamenti",
+				"tavern-empty-state": "Nessun potenziamento della taverna",
+				"last-opponent-icon-tooltip": "Era l'avversario dello scorso turno",
+				"triple-title": "Nuove triplette",
+				"triple-tooltip": "Dall'ultimo combattimento, quest'avversario ha ottenuto {{quantity}} minion di rango {{tier}} come ricompense per aver triplicato",
+				"triple-empty-state": "Nessuna nuova tripletta",
 				"buddies-title": "",
 				"buddies-empty-state": "",
-				"buddy-text": "",
+				"buddy-text": "Turno {{turn}}",
 				"buddy-tooltip": "",
 				"buddy-tooltip-golden": ""
 			},
 			"minions-list": {
-				"reset-button": ""
+				"reset-button": "Ripristina"
 			}
 		},
 		"post-match-stats": {
-			"title": "",
-			"final-board": "",
-			"current-board": "",
-			"final-position": "",
-			"live-stats-title": "",
+			"title": "Statistiche dell'ultima partita",
+			"final-board": "Il tuo tavolo finale",
+			"current-board": "Il tuo tavolo corrente",
+			"final-position": "Sei arrivato #{{position}}",
+			"live-stats-title": "Statistiche live - Turno {{turn}}",
 			"tabs": {
-				"hp-by-turn": "",
-				"stats": "",
-				"warband-composition-by-turn": "",
-				"warband-total-stats-by-turn": "",
-				"winrate-per-turn": "",
-				"battles": ""
+				"hp-by-turn": "Salute per turno",
+				"stats": "Statistiche",
+				"warband-composition-by-turn": "Composizioni",
+				"warband-total-stats-by-turn": "Statistiche del plotone",
+				"winrate-per-turn": "Tasso di vittoria",
+				"battles": "Battaglie"
 			},
 			"hp-graph": {
-				"legend-title": "",
-				"player-health": ""
+				"legend-title": "Mostra:",
+				"player-health": "{{playerName}} salute"
 			},
 			"composition": {
-				"blank-tribe": "",
-				"empty-state-title": "",
-				"empty-state-subtitle": ""
+				"blank-tribe": "Nessuna tribù / Tutte",
+				"empty-state-title": "Nessun'informazione disponibile",
+				"empty-state-subtitle": "Le partite più vecchie o molto lunghe, non hanno memorizzata la composizione turno per turno."
 			},
 			"warband-stats": {
-				"community-label": "",
-				"your-label": ""
+				"community-label": "Media per eroe",
+				"your-label": "Ondata corrente"
 			}
 		},
 		"overlay-button": {
-			"tooltip": ""
+			"tooltip": "Clicca per mostrare / nascondere la finestra dell'app"
 		},
 		"banned-tribes": {
-			"exceptions": "",
+			"exceptions": "Eccezioni: {{value}}",
 			"exceptions-tooltip": ""
 		},
 		"board": {
@@ -1461,6 +1468,11 @@
 			"win-distribution-header": "Distribuzione delle vittorie",
 			"win-distribution-tooltip": "Distribuzione delle vittorie",
 			"top-decks-header": "Mazzi a vincita elevata"
+		},
+		"deck-select": {
+			"copy-deck-tooltip": "",
+			"copy-deck-tooltip-confirmation": "",
+			"personal-deck-text": ""
 		}
 	},
 	"session": {
@@ -1662,32 +1674,34 @@
 				"show-stats-change-tooltip": "",
 				"show-cost-reduction": "",
 				"show-cost-reduction-tooltip": "",
+				"show-unknown-cards": "",
+				"show-unknown-cards-tooltip": "",
 				"highlight-related-cards": "",
 				"highlight-related-cards-tooltip": "",
 				"close-tracker-on-end": "",
-				"close-tracker-on-end-tooltip": "",
-				"close-tracker-on-end-advanced": "",
-				"reset-button": "",
-				"reset-button-confirm": "",
-				"reset-button-tooltip": "",
-				"reset-button-confirmation": "",
-				"counters-size": ""
+				"close-tracker-on-end-tooltip": "Chiude automaticamente il monitoraggio alla fine della partita. Se disabilitato, dev'esser chiuso manualmente",
+				"close-tracker-on-end-advanced": "Capito, Firestone non chiuderà il monitoraggio al termine della partita",
+				"reset-button": "Ripristina le posizioni",
+				"reset-button-confirm": "Sei sicuro?",
+				"reset-button-tooltip": "Ripristina le posizioni del monitoraggio del mazzo. Questo può risolvere un problema in cui il monitoraggio non appare più sullo schermo",
+				"reset-button-confirmation": "Le posizioni del monitoraggio del mazzo sono state ripristinate e saranno applicate nella tua prossima partita.",
+				"counters-size": "Dimensione dei contatori"
 			},
 			"modes": {
-				"title": "",
-				"ranked": "",
-				"duels": "",
-				"arena": "",
-				"tavern-brawl": "",
-				"practice": "",
-				"friendly": "",
-				"casual": ""
+				"title": "Il monitoraggio del mazzo è attivo per le seguenti modalità",
+				"ranked": "Classificato",
+				"duels": "Duelli",
+				"arena": "Arena",
+				"tavern-brawl": "Rissa da Taverna",
+				"practice": "Pratica",
+				"friendly": "Amichevole",
+				"casual": "Casuale"
 			},
 			"opponent-deck": {
-				"tracker-title": "",
-				"show-tracker-label": "",
-				"show-tracker-tooltip": "",
-				"ai-decklist-label": "",
+				"tracker-title": "Monitoraggio del Mazzo",
+				"show-tracker-label": "Mostra il monitoraggio dell'avversario",
+				"show-tracker-tooltip": "Quando attivo, apparirà un monitoraggio per le carte del tuo avversario",
+				"ai-decklist-label": "Carica elenchi di mazzi dell'IA",
 				"ai-decklist-tooltip": "Quando attivo, il monitoraggio proverà a caricare l'elenco di mazzi dell'avversario IA corrente. Sappi che alcuni mazzi sono pseudo-casuali, quindi l'elenco di mazzi sarà spesso solo indicativo",
 				"group-cards-by-zone-label": "Raggruppa carte per zona",
 				"group-cards-by-zone-tooltip": "Quando attivo, il monitoraggio dividerà le carte in sezioni comprimibili. Le sezioni oggi attive sono Mazzo, Mano e Altre",
@@ -1712,7 +1726,7 @@
 				"enable-secret-helper-label": "Abilita l'Aiuto Segreti",
 				"enable-secret-helper-tooltip": "Quando attivo, un popup con tutti i segreti possibili comparirà ogni qual volta un avversario gioca un segreto",
 				"counters": {
-					"title": "",
+					"title": "Contatori",
 					"galakrond-label": "",
 					"galakrond-tooltip": "Mostra il numero di volte in cui il tuo avversario ha invocato Galakrond (appare solo quando l'avversario gioca Galakrond o una carta che lo invoca)",
 					"pogo-label": "Saltatore di Pogo",
@@ -1749,9 +1763,9 @@
 					"cthun-tooltip": "",
 					"fatigue-tooltip": "",
 					"attack-on-board-tooltip": "",
-					"number-of-spells-label": "",
-					"number-of-spells-tooltip": "",
-					"elementals-label": "",
+					"number-of-spells-label": "Numero di incantesimi",
+					"number-of-spells-tooltip": "Mostra il numero totale di incantesimi giocati in questa partita. Appare solo se le carte rilevanti si trovano nel mazzo o nella mano",
+					"elementals-label": "Elementali",
 					"elementals-tooltip": "",
 					"watch-post-tooltip": "",
 					"libram-tooltip": "",
@@ -1762,18 +1776,20 @@
 					"brilliant-macaw-label": "",
 					"brilliant-macaw-tooltip": "",
 					"multicaster-label": "",
-					"multicaster-tooltip": ""
+					"multicaster-tooltip": "Mostra le scuole di incantesimi di cui hai giocato un incantesimo in questa partita"
 				}
 			},
 			"duels": {
-				"title": "",
-				"max-health-label": "",
-				"max-health-tooltip": "",
+				"title": "Opzioni specifiche del duello",
+				"max-health-label": "Salute massima dell'avversario",
+				"max-health-tooltip": "Scegli come mostrare la salute massima dell'avversario in una partita dei Duelli",
 				"max-health-option-off": "",
 				"max-health-option-blink": "",
 				"max-health-option-mouseover": "",
 				"show-ooc-tracker-label": "",
-				"show-ooc-tracker-tooltip": ""
+				"show-ooc-tracker-tooltip": "",
+				"show-ooc-deck-select-label": "",
+				"show-ooc-deck-select-tooltip": ""
 			}
 		},
 		"collection": {

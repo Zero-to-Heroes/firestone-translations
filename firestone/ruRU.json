@@ -12,7 +12,7 @@
 			"shaman": "Шаман",
 			"warlock": "Чернокнижник",
 			"warrior": "Воин",
-			"neutral": "Нейтральный"
+			"neutral": "Нейтральные"
 		},
 		"role": {
 			"caster": "Заклинатель",
@@ -34,6 +34,12 @@
 			"friendly": "Дружеские дуэли",
 			"arena": "Арена",
 			"tavern-brawl": "Потасовка"
+		},
+		"region": {
+			"region_us": "Америка",
+			"region_eu": "Европа",
+			"region_kr": "",
+			"region_cn": "Китай"
 		},
 		"pack": {
 			"classic": "",
@@ -136,7 +142,7 @@
 			"halforc": "Полуорк",
 			"lock": ""
 		},
-		"legendary-minion": "",
+		"legendary-minion": "Легендарное существо",
 		"patch": "",
 		"hs-terms": {
 			"attack": "Атака",
@@ -177,13 +183,13 @@
 				"bug-button-tooltip": "Сообщить об ошибке",
 				"help-button-tooltip": "Показать описание обновления",
 				"default-confirmation-title": "Вы уверены?",
-				"default-confirmation-text": "",
+				"default-confirmation-text": "Это закроет трекер на время текущего матча",
 				"default-validation-button": "Ок",
 				"default-cancel-button": "Отмена",
-				"multiselect-validation-button": "",
-				"multiselect-validation-error-tooltip": "",
+				"multiselect-validation-button": "Применить",
+				"multiselect-validation-error-tooltip": "Пожалуйста, выберите либо все типы существ, либо только 5",
 				"hotkey-text": "Показать/скрыть:",
-				"no-hotkey-assigned": ""
+				"no-hotkey-assigned": "Горячая клавиша не назначена"
 			},
 			"ads": {
 				"support-the-dev": "Поддержать разработчика и убрать рекламу",
@@ -192,10 +198,10 @@
 		},
 		"internal": {
 			"memory": {
-				"reading-error-title": "",
-				"reading-error-text": "",
-				"reset-started-title": "",
-				"reset-started-text": "",
+				"reading-error-title": "Ошибка чтения памяти",
+				"reading-error-text": "Некоторые функции будут недоступны. Пожалуйста, запустите Firestone/Overwolf как администратор или свяжитесь с нами в Discord.",
+				"reset-started-title": "Сброс чтения памяти запущен",
+				"reset-started-text": "Структура игровой памяти изменилась. Пожалуйста, подождите несколько секунд.",
 				"reset-complete-title": "",
 				"reset-complete-text": ""
 			},
@@ -205,12 +211,12 @@
 			}
 		},
 		"loading": {
-			"title": "",
-			"subtitle": ""
+			"title": "Вся информация загружается",
+			"subtitle": "Пожалуйста, подождите, пока информация собирается"
 		},
 		"updates": {
 			"update-available": "Доступна новая версия! Нажмите, чтобы обновить",
-			"update-error": "",
+			"update-error": "Произошла ошибка при обновлении приложения. Перезапустите Overwolf для принудительного обновления",
 			"restart-needed": ""
 		},
 		"arena": {
@@ -219,11 +225,11 @@
 			},
 			"filters": {
 				"time": {
-					"past-three": "",
-					"past-seven": "",
-					"last-patch": "",
-					"past-100": "",
-					"past-30": ""
+					"past-three": "Последние 3 дня",
+					"past-seven": "Последние 7 дней",
+					"last-patch": "Последнее обновление",
+					"past-100": "Последние 100 дней",
+					"past-30": "Последние 30 дней"
 				}
 			},
 			"stats": {
@@ -231,9 +237,9 @@
 				"total-runs": "Всего забегов",
 				"wins-per-run": "",
 				"most-played-classes": "",
-				"best-winrate-classes": "",
+				"best-winrate-classes": "Лучшие классы по винрейту",
 				"most-faced-classes": "",
-				"best-winrate-against": "",
+				"best-winrate-against": "Лучший винрейт против",
 				"stat-tooltip": "",
 				"faced-tooltip": ""
 			},
@@ -241,7 +247,7 @@
 				"view-run-button": "",
 				"minimize-run-button": "",
 				"run-name": "",
-				"load-runs-button": ""
+				"load-runs-button": "Нажмите, чтобы загрузить больше игр"
 			},
 			"empty-state": {
 				"title": "Здесь пока что ничего нет",
@@ -272,10 +278,10 @@
 					"all": "Все",
 					"own": "Имеющиеся",
 					"dontown": "Недостающие",
-					"missingplayablecopies": "",
+					"missingplayablecopies": "Нехватающие играбельные копии",
 					"goldenown": "Имеющиеся золотые карты",
-					"notpremiumnotcompleted": "Карты, незолотых копий которых нехватает",
-					"notcompleted": "Карты, копий которых нехватает"
+					"notpremiumnotcompleted": "Недостающие не золотые копии",
+					"notcompleted": "Недостающие копии"
 				},
 				"rarity": {
 					"all": "Любая редкость",
@@ -293,12 +299,12 @@
 				"title": "Последние полученные карты",
 				"you-have-viewed": "",
 				"load-more-button": "Ещё",
-				"empty-state-title": "",
+				"empty-state-title": "Нет истории",
 				"empty-state-subtitle": "Открой комплект, чтобы начать!",
 				"golden-card": "Золотая {{cardName}}",
 				"diamond-card": "Алмазная {{cardName}}",
-				"click-to-view": "",
-				"click-to-view-link": "",
+				"click-to-view": "Нажмите на {{link}}",
+				"click-to-view-link": "развернуть",
 				"duplicate-cards": "",
 				"dust-potential": ""
 			},
@@ -332,11 +338,11 @@
 						"well-played": "Неплохо сыграно",
 						"oops": "",
 						"threaten": "",
-						"thanks": "",
-						"sorry": "",
-						"concede": "",
+						"thanks": "Спасибо",
+						"sorry": "Извини",
+						"concede": "Сдаться",
 						"start": "",
-						"timer": "",
+						"timer": "Таймер",
 						"think-1": "",
 						"think-2": "",
 						"think-3": "",
@@ -379,16 +385,16 @@
 				"title": "",
 				"best-opened-packs-title": "",
 				"best-opened-packs-title-tooltip": "",
-				"pack-stat-tooltip": "Всего вы получили {{totalPacks}} комплекта(ов) \"{{packName}}\""
+				"pack-stat-tooltip": "Всего получено {{totalPacks}} комплектов \"{{packName}}\""
 			},
 			"set-stats": {
 				"title": "",
 				"packs-received": "",
 				"packs-received-tooltip": "",
 				"best-known-pack": "",
-				"dust": "",
-				"dust-tooltip": "",
-				"duplicate-dust": "",
+				"dust": "Пыль",
+				"dust-tooltip": "Вам нужно {{value}} пыли для завершения набора",
+				"duplicate-dust": "Пыль с дубликатов",
 				"duplicate-dust-tooltip": "",
 				"golden-dust": "",
 				"golden-dust-tooltip": "",
@@ -413,13 +419,13 @@
 			},
 			"sets": {
 				"coming-soon": "Скоро!",
-				"next-guaranteed": "",
-				"in-packs": "",
-				"browse-set-button": ""
+				"next-guaranteed": "Следующая гарантированная",
+				"in-packs": "Через {{value}} наборов",
+				"browse-set-button": "Обзор набора"
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
-					"title": "",
+					"title": "Этот набор закончен, и у вас есть все!",
 					"subtitle": ""
 				},
 				"no-card-in-set": {
@@ -461,14 +467,14 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "",
-				"stats-header": "",
+				"decks-header": "Колоды",
+				"stats-header": "Статистика",
 				"ranking-header": ""
 			},
 			"filters": {
 				"filter-info-tooltip": "",
 				"deck-sort": {
-					"last-played": "",
+					"last-played": "Последнее использование",
 					"games-played": "Сыграно партий",
 					"winrate": "Доля побед"
 				},
@@ -492,21 +498,21 @@
 					"legend-500": "Топ 500"
 				},
 				"rank-group": {
-					"per-match": "",
+					"per-match": "Показать каждый матч",
 					"per-day": "",
 					"per-day-tooltip": ""
 				},
 				"time-filter": {
 					"all-time": "",
 					"season-start": "",
-					"last-patch": "",
+					"last-patch": "Последнее обновление",
 					"past-30": "",
 					"past-7": "",
 					"past-1": ""
 				}
 			},
 			"matchup-info": {
-				"total-matches-header": "",
+				"total-matches-header": "Всего матчей",
 				"win-percent-header": "",
 				"win-total-header": "",
 				"win-play-percent-header": "",
@@ -531,12 +537,12 @@
 				"watch-replays-button": "",
 				"best-against": "",
 				"winrate": "",
-				"games": ""
+				"games": "игр"
 			},
 			"deck-summary": {
-				"total-games": "",
+				"total-games": "{{value}} игр",
 				"winrate": "Доля побед {{value}}%",
-				"last-used": "",
+				"last-used": "Последнее использование: {{value}}",
 				"archive-button-tooltip": "",
 				"restore-button-tooltip": "",
 				"default-deck-name": "Название колоды"
@@ -556,7 +562,7 @@
 				"empty-state-message": ""
 			},
 			"replays-recap": {
-				"header": "",
+				"header": "Последние {{value}} повторов",
 				"no-replays": "Нет повторов"
 			},
 			"stats": {
@@ -572,8 +578,8 @@
 		"battlegrounds": {
 			"menu": {
 				"heroes": "Герои",
-				"perfect-games": "",
-				"rating": "",
+				"perfect-games": "Идеальные игры",
+				"rating": "Рейтинг",
 				"records": "",
 				"simulator": "Симулятор"
 			},
@@ -585,7 +591,7 @@
 					"average-position": "Место в среднем",
 					"mmr": "Чистый MMR",
 					"games-played": "Сыграно партий",
-					"last-played": ""
+					"last-played": "Последние игры"
 				},
 				"rank": {
 					"all": "Все ранги",
@@ -599,7 +605,7 @@
 				"time": {
 					"past-seven": "",
 					"past-three": "",
-					"last-patch": "",
+					"last-patch": "Последнее обновление",
 					"past-100": "",
 					"past-30": ""
 				},
@@ -608,7 +614,7 @@
 					"tier": ""
 				},
 				"tribe": {
-					"all-tribes": "",
+					"all-tribes": "Все типы существ",
 					"no-tribe": ""
 				},
 				"signature-treasure": {
@@ -637,7 +643,7 @@
 					"stats": {
 						"title": "",
 						"games-played": "Сыграно партий",
-						"average-position": "",
+						"average-position": "Ср. место",
 						"top-1": "",
 						"top-4": "",
 						"net-mmr": "",
@@ -676,9 +682,9 @@
 					}
 				},
 				"rating": {
-					"title": "",
+					"title": "MMR / Матчи",
 					"empty-state-message": "",
-					"axis-label": ""
+					"axis-label": "Рейтинг"
 				},
 				"records": {
 					"title": "",
@@ -712,11 +718,11 @@
 						"battle-luck-explain-link-tooltip": "",
 						"negative-battle-luck": ""
 					},
-					"record-broken-tooltip": ""
+					"record-broken-tooltip": "Вы побили свой рекорд!"
 				}
 			},
 			"tier-list": {
-				"header": ""
+				"header": "Тир-лист героев ({{value}} матчей) "
 			}
 		},
 		"duels": {
@@ -741,7 +747,7 @@
 					"signature-treasure": ""
 				},
 				"game-mode": {
-					"all": "",
+					"all": "Все режимы",
 					"all-tooltip": "",
 					"casual": "Обычный",
 					"casual-tooltip": "",
@@ -764,7 +770,7 @@
 				"time": {
 					"past-three": "",
 					"past-seven": "",
-					"last-patch": "",
+					"last-patch": "Последнее обновление",
 					"past-100": ""
 				},
 				"treasure-pools": {
@@ -815,14 +821,14 @@
 			},
 			"run": {
 				"replays-title": "",
-				"rating": "",
+				"rating": "Рейтинг",
 				"view-deck-button": "",
 				"view-run-button": "",
 				"minimize-run-button": "",
 				"load-more-button": ""
 			},
 			"stats": {
-				"tier-list-title": "",
+				"tier-list-title": "Тир-лист",
 				"tier-list-title-tooltip": "",
 				"tier-s-tooltip": "",
 				"tier-a-tooltip": "",
@@ -833,8 +839,9 @@
 			},
 			"leaderboard": {
 				"rank": "",
-				"rating": "",
-				"name": ""
+				"rating": "Рейтинг",
+				"name": "",
+				"region": ""
 			},
 			"search": {
 				"hero": {
@@ -878,7 +885,7 @@
 				"empty-state-title": "",
 				"empty-state-subtitle": "Выполните достижение, чтобы начать!"
 			},
-			"search-placeholder": ""
+			"search-placeholder": "Поиск достижения..."
 		},
 		"replays": {
 			"filters": {
@@ -886,10 +893,10 @@
 					"all": ""
 				},
 				"deck": {
-					"all": ""
+					"all": "Все колоды"
 				},
 				"game-mode": {
-					"all": "",
+					"all": "Все режимы",
 					"battlegrounds": "",
 					"mercenaries-all": "",
 					"mercenaries-pve": "Наёмники (PvE)",
@@ -915,7 +922,7 @@
 				}
 			},
 			"bg-stats": {
-				"title": "",
+				"title": "Статистика матча",
 				"empty-state-title": "",
 				"empty-state-subtitle": ""
 			},
@@ -925,13 +932,13 @@
 				"loot-icon-tooltip": "",
 				"treasure-icon-tooltip": "",
 				"mmr": "MMR",
-				"show-stats-button": "",
+				"show-stats-button": "Статистика",
 				"show-stats-button-tooltip": "",
-				"watch-replay-button": "",
+				"watch-replay-button": "Смотреть",
 				"watch replay-button-tooltip": "",
 				"mercenaries-bot-opponent-name": "",
 				"bgs-available-tribes-tooltip": "",
-				"bgs-perfect-game-result": "",
+				"bgs-perfect-game-result": "Идеально!",
 				"deck-name-tooltip": "",
 				"bgs-result": {
 					"1": "1-е",
@@ -1032,8 +1039,8 @@
 			"opponent": ""
 		},
 		"jade": {
-			"player": "",
-			"opponent": ""
+			"player": "Размер вашего нефритового голема: {{value}}",
+			"opponent": "Размер нефритового голема противника: {{value}}"
 		},
 		"libram": {
 			"player": "",
@@ -1055,7 +1062,7 @@
 	"loading": {
 		"hotkey": "",
 		"getting-ready": "",
-		"ready": ""
+		"ready": "Ваши способности готовы!"
 	},
 	"ftue": {
 		"title": "",
@@ -1065,7 +1072,7 @@
 		"previous-button": "",
 		"steps": {
 			"decktracker": {
-				"title": "",
+				"title": "Трекер колоды",
 				"text": ""
 			},
 			"battlegrounds": {
@@ -1127,7 +1134,7 @@
 				"legendary": ""
 			},
 			"role": {
-				"all": "",
+				"all": "Все роли",
 				"caster": "Заклинатели",
 				"protector": "Защитники",
 				"fighter": "Бойцы"
@@ -1139,7 +1146,7 @@
 			}
 		},
 		"menu": {
-			"mercenaries-personal-hero-stats": "",
+			"mercenaries-personal-hero-stats": "Прогресс",
 			"mercenaries-my-teams": "",
 			"mercenaries-hero-stats": "",
 			"mercenaries-compositions-stats": ""
@@ -1157,14 +1164,14 @@
 			"equipments": "Снаряжение",
 			"global-winrate": "",
 			"your-winrate": "",
-			"abilities": "",
+			"abilities": "Способности",
 			"global-usage": "",
 			"global-usage-tooltip": "",
 			"your-usage": "",
 			"your-usage-tooltip": "",
 			"number-of-games-tooltip": "",
 			"level-header": "",
-			"role-header": "",
+			"role-header": "Роль",
 			"name-header": "",
 			"xp-header": "",
 			"coins-left-header": "",
@@ -1173,23 +1180,23 @@
 			"coins-needed-header-tooltip": "",
 			"coins-to-farm-header": "",
 			"coins-to-farm-header-tooltip": "",
-			"completed-tasks-header": "",
-			"completed-tasks-header-tooltip": "",
-			"abilities-header": "",
-			"equipments-header": "",
-			"max-level": "",
+			"completed-tasks-header": "Выполнено поручений",
+			"completed-tasks-header-tooltip": "Выполненные поручения. Ctrl + клик на текущей задаче, чтобы вручную перейти к следующей задаче. Alt + клик для возврата на один шаг назад.",
+			"abilities-header": "Способности",
+			"equipments-header": "Снаряжение",
+			"max-level": "Макс. уровень!",
 			"xp-tooltip": "",
 			"current-task-tooltip": "",
-			"maxed": "",
+			"maxed": "Максимум!",
 			"coins-to-farm-tooltip": "",
 			"empty-state-subtitle": "",
-			"current-task-tooltip-title": "",
-			"next-task-tooltip-title": ""
+			"current-task-tooltip-title": "Текущее поручение {{taskNumber}}: {{taskTitle}}",
+			"next-task-tooltip-title": "Следующее поручение {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
-			"games": "",
+			"games": "{{value}} игр",
 			"winrate": "",
-			"last-used": "",
+			"last-used": "Последнее использование: {{value}}",
 			"archive-button-tooltip": "",
 			"restore-button-tooltip": "",
 			"unnamed-team": ""
@@ -1203,12 +1210,12 @@
 			"empty-state": "",
 			"merc-level-tooltip": "",
 			"unrecognized-mercenary": "",
-			"unknown-mercenary": "",
-			"tasks-button": "",
-			"task-title": "",
-			"task-progress-label": "",
+			"unknown-mercenary": "Неизвестный наемник",
+			"tasks-button": "Поручения",
+			"task-title": "Поручение {{taskNumber}}: {{taskTitle}}",
+			"task-progress-label": "Прогресс:",
 			"task-progress-tooltip": "",
-			"roles-chart-button": ""
+			"roles-chart-button": "Схема ролей"
 		}
 	},
 	"decktracker": {
@@ -1223,12 +1230,12 @@
 		"cards-left-in-deck-tooltip": "",
 		"deck-name": {
 			"unnamed-deck": "",
-			"unknown-deck": "",
+			"unknown-deck": "Неизвестная колода",
 			"copy-deckstring-label": "Копировать колоду",
-			"copy-deckstring-confirmation": ""
+			"copy-deckstring-confirmation": "Скопировано!"
 		},
 		"import": {
-			"import-deckstring-tooltip": "",
+			"import-deckstring-tooltip": "Импортировать код колоды из буфера",
 			"confirmation-title": "",
 			"use-deck-text": "",
 			"use-deck-text-default": "",
@@ -1239,7 +1246,7 @@
 			"invalid-deck-code-button-text": ""
 		},
 		"stats": {
-			"deck-winrate": "",
+			"deck-winrate": "Винрейт колоды",
 			"deck-winrate-tooltip": "",
 			"deck-winrate-vs-class": "",
 			"deck-winrate-vs-class-tooltip": ""
@@ -1255,8 +1262,8 @@
 		"gift-created-by-multiple-cards": "",
 		"unnamed-player": "",
 		"created-by": "",
-		"unknown-class-card": "",
-		"unknown-card": "",
+		"unknown-class-card": "Неизвестная карта {{playerClass}}",
+		"unknown-card": "Неизвестная карта",
 		"unknown-mana-spell": "",
 		"unknown-info": ""
 	},
@@ -1278,8 +1285,8 @@
 			"lose-chance-label": "",
 			"lose-chance-tooltip": "",
 			"damage-title": "",
-			"damage-dealt-tooltip": "",
-			"damage-received-tooltip": "",
+			"damage-dealt-tooltip": "Средний нанесенный урон",
+			"damage-received-tooltip": "Средний полученный урон",
 			"lethal-title": "",
 			"lethal-dealt-tooltip": "",
 			"lethal-received-tooltip": "",
@@ -1302,7 +1309,7 @@
 			"update-minion-button-tooltip": "",
 			"remove-minion-button-tooltip": "",
 			"versus": "",
-			"simulate-button": "",
+			"simulate-button": "Симулировать",
 			"simulate-button-tooltip": "",
 			"reset-button": "",
 			"export-button": "",
@@ -1312,14 +1319,14 @@
 			"export-confirmation": "",
 			"import-button": "",
 			"import-button-tooltip": "",
-			"reposition-button": "",
+			"reposition-button": "Репозиционировать",
 			"reposition-button-firstpass": "",
 			"reposition-button-secondpass": "",
 			"reposition-button-finalresult": "",
 			"reposition-button-done": "",
 			"reposition-button-cancel": "",
 			"reposition-button-cancelling": "",
-			"reposition-button-tooltip": "",
+			"reposition-button-tooltip": "(БЕТА) Подбор наилучшей позиции для вашего набора существ. В зависимости от количества CPU и сложности стола, процесс может занять несколько минут, во время которого будет использовано много ресурсов CPU и RAM.",
 			"reposition-button-tooltip-firstpass": "",
 			"reposition-button-tooltip-secondpass": "",
 			"reposition-button-tooltip-finalresult": "",
@@ -1355,12 +1362,12 @@
 		},
 		"hero-stats": {
 			"finishes-title": "",
-			"avg-position-label": "",
+			"avg-position-label": "Среднее место:",
 			"avg-position-tooltip": "",
 			"avg-position-your-tooltip": "",
 			"avg-position-global-tooltip": "",
-			"matches-played-label": "",
-			"matches-played-tooltip": "",
+			"matches-played-label": "Сыграно матчей",
+			"matches-played-tooltip": "Всего матчей, сыгранных этим героем",
 			"turn-winrate": "",
 			"turn-winrate-tooltip": "",
 			"winning-tribes-title": "",
@@ -1370,7 +1377,7 @@
 		"hero-selection": {
 			"achievement-completed": "",
 			"achievement-missing": "",
-			"total-matches": ""
+			"total-matches": "{{value}} матчей"
 		},
 		"in-game": {
 			"face-offs": {
@@ -1455,12 +1462,17 @@
 		"hero-info": {
 			"winrate-label": "Доля побед",
 			"popularity-label": "",
-			"player-matches": "",
+			"player-matches": "{{value}} матчей",
 			"your-value-tooltip": "",
 			"community-value-tooltip": "",
 			"win-distribution-header": "",
 			"win-distribution-tooltip": "",
 			"top-decks-header": ""
+		},
+		"deck-select": {
+			"copy-deck-tooltip": "",
+			"copy-deck-tooltip-confirmation": "",
+			"personal-deck-text": ""
 		}
 	},
 	"session": {
@@ -1476,7 +1488,7 @@
 			"close-tooltip": ""
 		},
 		"summary": {
-			"total-games": "",
+			"total-games": "{{value}} игр",
 			"total-games-tooltip": "",
 			"total-games-tooltip-all-time": "",
 			"mmr-tooltip": "Твой текущий MMR",
@@ -1522,7 +1534,7 @@
 		},
 		"menu": {
 			"general": "Общие",
-			"decktracker": "",
+			"decktracker": "Трекер колоды",
 			"battlegrounds": "Поля сражений",
 			"mercenaries": "Наёмники",
 			"replays": "Повторы",
@@ -1575,11 +1587,11 @@
 			},
 			"bug-report": {
 				"title": "",
-				"simulator-bug-text": "",
-				"general-bug-text": "",
+				"simulator-bug-text": "Если вы хотите сообщить об ошибке в симуляторе (и хотите помочь мне, насколько это возможно), пожалуйста, ознакомьтесь с инструкциями",
+				"general-bug-text": "Для других серьезных проблем (приложение не работает) есть несколько полезных шагов по устранению неполадок",
 				"link-text": "",
 				"email-placeholder": "",
-				"message-placeholder": "",
+				"message-placeholder": "Ваше сообщение. Если вы сообщаете об ошибке, постарайтесь описать, что именно вы делали в момент возникновения ошибки, и что именно привело к тому, что вы сообщаете об этой ошибке.",
 				"send-button": "",
 				"status-uploading-logs": "",
 				"status-sending-feedback": "",
@@ -1619,18 +1631,18 @@
 				"zoom-label": "",
 				"zoom-tooltip": "",
 				"reset-prefs-button-default": "",
-				"reset-prefs-button-confirmation": "",
+				"reset-prefs-button-confirmation": "Вы уверены?",
 				"reset-prefs-tooltip": "",
 				"reset-prefs-confirmation": "",
 				"restart-app-button-label": ""
 			},
 			"localization": {
 				"title": "Локализация",
-				"text-1": "",
-				"text-11": "",
-				"text-2": "",
+				"text-1": "Перевод приложения осуществляется сообществом, такими людьми, как вы, которые щедро вкладывают время и усилия, чтобы каждый мог пользоваться приложением на выбранном им языке. Поэтому, пожалуйста, наслаждайтесь и уважайте их труд.",
+				"text-11": "Это также означает, что не все части приложения будут переведены на ваш язык. В этом случае недостающие части будут отображаться на английском языке.",
+				"text-2": "Если вы хотите помочь с переводом приложения, пожалуйста, посмотрите инструкции {{link}}.",
 				"link": "",
-				"text-3": ""
+				"text-3": "Пожалуйста, перезапустите приложение (с помощью кнопки на вкладке Общие слева), чтобы убедиться, что новый язык включен."
 			}
 		},
 		"decktracker": {
@@ -1662,13 +1674,15 @@
 				"show-stats-change-tooltip": "",
 				"show-cost-reduction": "",
 				"show-cost-reduction-tooltip": "",
+				"show-unknown-cards": "Показывать неизвестные карты",
+				"show-unknown-cards-tooltip": "",
 				"highlight-related-cards": "",
 				"highlight-related-cards-tooltip": "",
 				"close-tracker-on-end": "",
 				"close-tracker-on-end-tooltip": "",
 				"close-tracker-on-end-advanced": "",
 				"reset-button": "",
-				"reset-button-confirm": "",
+				"reset-button-confirm": "Вы уверены?",
 				"reset-button-tooltip": "",
 				"reset-button-confirmation": "",
 				"counters-size": ""
@@ -1678,13 +1692,13 @@
 				"ranked": "",
 				"duels": "Дуэли",
 				"arena": "Арена",
-				"tavern-brawl": "",
-				"practice": "",
+				"tavern-brawl": "Потасовка",
+				"practice": "Тренировка",
 				"friendly": "Дружеские дуэли",
 				"casual": "Обычный"
 			},
 			"opponent-deck": {
-				"tracker-title": "",
+				"tracker-title": "Трекер колоды",
 				"show-tracker-label": "",
 				"show-tracker-tooltip": "",
 				"ai-decklist-label": "",
@@ -1729,7 +1743,7 @@
 					"watch-post-tooltip": "",
 					"libram-label": "",
 					"libram-tooltip": "",
-					"elwynn-boar-label": "",
+					"elwynn-boar-label": "Умерло элвиннских вепрей",
 					"elwynn-boar-tooltip": "",
 					"hero-power-damage-label": "",
 					"hero-power-damage-tooltip": ""
@@ -1773,7 +1787,9 @@
 				"max-health-option-blink": "",
 				"max-health-option-mouseover": "",
 				"show-ooc-tracker-label": "",
-				"show-ooc-tracker-tooltip": ""
+				"show-ooc-tracker-tooltip": "",
+				"show-ooc-deck-select-label": "",
+				"show-ooc-deck-select-tooltip": ""
 			}
 		},
 		"collection": {
@@ -1876,9 +1892,9 @@
 				"label-tooltip": "",
 				"show-groups": "",
 				"show-groups-tooltip": "",
-				"show-matches": "",
-				"show-matches-tooltip": "",
-				"number-of-matches": "",
+				"show-matches": "Показать последние матчи",
+				"show-matches-tooltip": "Показать последние матчи.",
+				"number-of-matches": "Количество матчей",
 				"number-of-matches-tooltip": "",
 				"size-title": "",
 				"opacity-title": ""
@@ -1916,7 +1932,7 @@
 				"action-queue-pve-tooltip": "",
 				"action-queue-pvp-label": "",
 				"action-queue-pvp-tooltip": "",
-				"role-chart-label": "",
+				"role-chart-label": "Показать график ролей",
 				"role-chart-tooltip": "",
 				"tasks-label": "",
 				"tasks-tooltip": "",
