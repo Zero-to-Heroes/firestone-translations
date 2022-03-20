@@ -38,7 +38,7 @@
 		"region": {
 			"region_us": "Америка",
 			"region_eu": "Европа",
-			"region_kr": "",
+			"region_kr": "Азиатско-тихоокеанский регион",
 			"region_cn": "Китай"
 		},
 		"pack": {
@@ -84,7 +84,8 @@
 			"wild-pack": "Вольный",
 			"golden-standard-bundle": "Стандартный (золотой)",
 			"golden-stormwind": "Сплоченные Штормградом (золотой)",
-			"golden-alterac-valley": "Разделенные Альтераком (золотой)"
+			"golden-alterac-valley": "Разделенные Альтераком (золотой)",
+			"the-sunken-city": "Путешествие в Затонувший город"
 		},
 		"ranks": {
 			"constructed": {
@@ -202,8 +203,8 @@
 				"reading-error-text": "Некоторые функции будут недоступны. Пожалуйста, запустите Firestone/Overwolf как администратор или свяжитесь с нами в Discord.",
 				"reset-started-title": "Сброс чтения памяти запущен",
 				"reset-started-text": "Структура игровой памяти изменилась. Пожалуйста, подождите несколько секунд.",
-				"reset-complete-title": "",
-				"reset-complete-text": ""
+				"reset-complete-title": "Сброс чтения памяти завершён",
+				"reset-complete-text": "Можно продолжать пользоваться приложением :) Спасибо за Ваше терпение!"
 			},
 			"startup": {
 				"firestone-ready-title": "",
@@ -217,7 +218,7 @@
 		"updates": {
 			"update-available": "Доступна новая версия! Нажмите, чтобы обновить",
 			"update-error": "Произошла ошибка при обновлении приложения. Перезапустите Overwolf для принудительного обновления",
-			"restart-needed": ""
+			"restart-needed": "Новая версия готова, нажмите для перезапуска приложения. Рекомендуется сделать это, пока вы не в матче"
 		},
 		"arena": {
 			"menu": {
@@ -278,7 +279,7 @@
 					"all": "Все",
 					"own": "Имеющиеся",
 					"dontown": "Недостающие",
-					"missingplayablecopies": "Нехватающие играбельные копии",
+					"missingplayablecopies": "Недостающие играбельные копии",
 					"goldenown": "Имеющиеся золотые карты",
 					"notpremiumnotcompleted": "Недостающие не золотые копии",
 					"notcompleted": "Недостающие копии"
@@ -382,7 +383,7 @@
 				}
 			},
 			"pack-stats": {
-				"title": "",
+				"title": "Всего комплектов ({{value}})",
 				"best-opened-packs-title": "",
 				"best-opened-packs-title-tooltip": "",
 				"pack-stat-tooltip": "Всего получено {{totalPacks}} комплектов \"{{packName}}\""
@@ -419,9 +420,9 @@
 			},
 			"sets": {
 				"coming-soon": "Скоро!",
-				"next-guaranteed": "Следующая гарантированная",
-				"in-packs": "Через {{value}} наборов",
-				"browse-set-button": "Обзор набора"
+				"next-guaranteed": "Гарантированная",
+				"in-packs": "в след. {{value}} комплектах",
+				"browse-set-button": "Смотреть карты"
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
@@ -452,7 +453,7 @@
 			"login-button": "Войти",
 			"logout-button": "Выйти",
 			"clipboard": {
-				"title": "",
+				"title": "Буфер обмена",
 				"tooltip": "",
 				"confirmation": ""
 			},
@@ -562,7 +563,7 @@
 				"empty-state-message": ""
 			},
 			"replays-recap": {
-				"header": "Последние {{value}} повторов",
+				"header": "Последние {{value}} повтора(ов)",
 				"no-replays": "Нет повторов"
 			},
 			"stats": {
@@ -580,7 +581,7 @@
 				"heroes": "Герои",
 				"perfect-games": "Идеальные игры",
 				"rating": "Рейтинг",
-				"records": "",
+				"records": "Рекорды",
 				"simulator": "Симулятор"
 			},
 			"filters": {
@@ -840,12 +841,12 @@
 			"leaderboard": {
 				"rank": "",
 				"rating": "Рейтинг",
-				"name": "",
-				"region": ""
+				"name": "Имя",
+				"region": "Регион"
 			},
 			"search": {
 				"hero": {
-					"placeholder": "Поиск героя..."
+					"placeholder": "Искать героя..."
 				},
 				"treasure": {
 					"placeholder": "Поиск сокровищ..."
@@ -938,7 +939,7 @@
 				"watch replay-button-tooltip": "",
 				"mercenaries-bot-opponent-name": "",
 				"bgs-available-tribes-tooltip": "",
-				"bgs-perfect-game-result": "Идеально!",
+				"bgs-perfect-game-result": "Идеально",
 				"deck-name-tooltip": "",
 				"bgs-result": {
 					"1": "1-е",
@@ -963,14 +964,14 @@
 			},
 			"class-icon-toggle": {
 				"label": "Использовать иконки классов",
-				"tooltip": ""
+				"tooltip": "Переключение между иконками классов и иконками героев"
 			},
 			"merc-details-toggle": {
 				"label": "",
 				"tooltip": ""
 			},
 			"list": {
-				"load-more-button": "",
+				"load-more-button": "Нажмите, чтобы загрузить больше повторов...",
 				"empty-state-title": "",
 				"empty-state-subtitle": ""
 			}
@@ -1102,8 +1103,8 @@
 		}
 	},
 	"new-version": {
-		"title": "",
-		"dont-show-again": "Больше не показывать",
+		"title": "Новая версия: {{value}}",
+		"dont-show-again": "Не показывать",
 		"dont-show-again-secondary": "Вы можете изменить это в настройках",
 		"confirm-button": "Понял"
 	},
@@ -1152,7 +1153,7 @@
 			"mercenaries-compositions-stats": ""
 		},
 		"search": {
-			"hero-search-placeholder": "Поиск героя..."
+			"hero-search-placeholder": "Искать наёмника..."
 		},
 		"empty-state": {
 			"title": "Здесь пока что ничего нет",
@@ -1172,26 +1173,26 @@
 			"number-of-games-tooltip": "",
 			"level-header": "",
 			"role-header": "Роль",
-			"name-header": "",
+			"name-header": "Имя",
 			"xp-header": "",
-			"coins-left-header": "",
-			"coins-left-header-tooltip": "",
-			"coins-needed-header": "",
-			"coins-needed-header-tooltip": "",
-			"coins-to-farm-header": "",
-			"coins-to-farm-header-tooltip": "",
-			"completed-tasks-header": "Выполнено поручений",
-			"completed-tasks-header-tooltip": "Выполненные поручения. Ctrl + клик на текущей задаче, чтобы вручную перейти к следующей задаче. Alt + клик для возврата на один шаг назад.",
+			"coins-left-header": "Имеется монет",
+			"coins-left-header-tooltip": "Сколько монет наёмника у вас есть",
+			"coins-needed-header": "Необходимо монет",
+			"coins-needed-header-tooltip": "Сколько монет наёмника нужно, чтоб максимально его улучшить",
+			"coins-to-farm-header": "Необходимо нафармить монет",
+			"coins-to-farm-header-tooltip": "Сколько монет, помимо наград за выполнение задач и имеющихся у вас, нужно заработать, чтобы максимально улучшить наёмника",
+			"completed-tasks-header": "Выполнено задач",
+			"completed-tasks-header-tooltip": "Ctrl + Клик по текущей задаче, чтобы вручную перейти к следующей задаче. Alt + Клик для возврата на задачу назад.",
 			"abilities-header": "Способности",
 			"equipments-header": "Снаряжение",
-			"max-level": "Макс. уровень!",
-			"xp-tooltip": "",
-			"current-task-tooltip": "",
+			"max-level": "Макс. ур.!",
+			"xp-tooltip": "{{value}} XP",
+			"current-task-tooltip": "Прогресс задач может быть обновлен только когда наёмник находится у костра",
 			"maxed": "Максимум!",
-			"coins-to-farm-tooltip": "",
-			"empty-state-subtitle": "",
-			"current-task-tooltip-title": "Текущее поручение {{taskNumber}}: {{taskTitle}}",
-			"next-task-tooltip-title": "Следующее поручение {{taskNumber}}: {{taskTitle}}"
+			"coins-to-farm-tooltip": "Ожидается, что вы получите {{value}} монет за невыполненные задачи",
+			"empty-state-subtitle": "Перейдите в лагерь наемников в Heartstone для обновления информации",
+			"current-task-tooltip-title": "Текущая задача {{taskNumber}}: {{taskTitle}}",
+			"next-task-tooltip-title": "Следующая задача {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
 			"games": "{{value}} игр",
@@ -1212,7 +1213,7 @@
 			"unrecognized-mercenary": "",
 			"unknown-mercenary": "Неизвестный наемник",
 			"tasks-button": "Поручения",
-			"task-title": "Поручение {{taskNumber}}: {{taskTitle}}",
+			"task-title": "Задача {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Прогресс:",
 			"task-progress-tooltip": "",
 			"roles-chart-button": "Схема ролей"
@@ -1305,7 +1306,7 @@
 			"sim-sample-link-tooltip": ""
 		},
 		"sim": {
-			"add-minion-button-tooltip": "",
+			"add-minion-button-tooltip": "Нажмите, чтобы добавить существо",
 			"update-minion-button-tooltip": "",
 			"remove-minion-button-tooltip": "",
 			"versus": "",
@@ -1319,7 +1320,7 @@
 			"export-confirmation": "",
 			"import-button": "",
 			"import-button-tooltip": "",
-			"reposition-button": "Репозиционировать",
+			"reposition-button": "Репозиция",
 			"reposition-button-firstpass": "",
 			"reposition-button-secondpass": "",
 			"reposition-button-finalresult": "",
@@ -1331,7 +1332,7 @@
 			"reposition-button-tooltip-secondpass": "",
 			"reposition-button-tooltip-finalresult": "",
 			"reposition-button-tooltip-done": "",
-			"reposition-button-tooltip-cancel": "",
+			"reposition-button-tooltip-cancel": "Нажмите, чтобы отменить репозицию",
 			"reposition-button-tooltip-cancelling": "",
 			"actual": "",
 			"simulated": "",
@@ -1431,7 +1432,7 @@
 				"player-health": ""
 			},
 			"composition": {
-				"blank-tribe": "",
+				"blank-tribe": "Без типа / Все",
 				"empty-state-title": "",
 				"empty-state-subtitle": ""
 			},
@@ -1467,10 +1468,11 @@
 			"community-value-tooltip": "",
 			"win-distribution-header": "",
 			"win-distribution-tooltip": "",
-			"top-decks-header": ""
+			"top-decks-header": "",
+			"footer": ""
 		},
 		"deck-select": {
-			"copy-deck-tooltip": "",
+			"copy-deck-tooltip": "Нажмите, чтобы скопировать",
 			"copy-deck-tooltip-confirmation": "",
 			"personal-deck-text": ""
 		}
@@ -1554,14 +1556,14 @@
 				"vs": {
 					"title": "Vicious Syndicate",
 					"pitch": "",
-					"website-link": "",
+					"website-link": "здесь",
 					"next": "",
 					"toggle-label": ""
 				},
 				"ooc": {
 					"title": "Out of Cards",
 					"pitch": "",
-					"website-link": "",
+					"website-link": "здесь",
 					"next": "",
 					"toggle-label": "",
 					"connect-button-text": "",
@@ -1572,7 +1574,7 @@
 				"d0nkey": {
 					"title": "",
 					"pitch": "",
-					"website-link": "",
+					"website-link": "здесь",
 					"next": "",
 					"instructions-page-link": "",
 					"toggle-label": ""
@@ -1580,7 +1582,7 @@
 				"hsdecks": {
 					"title": "Hearthstone-decks",
 					"pitch": "",
-					"website-link": "",
+					"website-link": "здесь",
 					"next": "",
 					"toggle-label": ""
 				}
@@ -1589,7 +1591,7 @@
 				"title": "",
 				"simulator-bug-text": "Если вы хотите сообщить об ошибке в симуляторе (и хотите помочь мне, насколько это возможно), пожалуйста, ознакомьтесь с инструкциями",
 				"general-bug-text": "Для других серьезных проблем (приложение не работает) есть несколько полезных шагов по устранению неполадок",
-				"link-text": "",
+				"link-text": "здесь",
 				"email-placeholder": "",
 				"message-placeholder": "Ваше сообщение. Если вы сообщаете об ошибке, постарайтесь описать, что именно вы делали в момент возникновения ошибки, и что именно привело к тому, что вы сообщаете об этой ошибке.",
 				"send-button": "",
@@ -1603,7 +1605,7 @@
 				"todo-1": "",
 				"todo-2": "",
 				"todo-3": "",
-				"link": "",
+				"link": "здесь",
 				"login-button-text": "",
 				"logout-button-text": "",
 				"logged-in-as-text": "",
@@ -1641,17 +1643,17 @@
 				"text-1": "Перевод приложения осуществляется сообществом, такими людьми, как вы, которые щедро вкладывают время и усилия, чтобы каждый мог пользоваться приложением на выбранном им языке. Поэтому, пожалуйста, наслаждайтесь и уважайте их труд.",
 				"text-11": "Это также означает, что не все части приложения будут переведены на ваш язык. В этом случае недостающие части будут отображаться на английском языке.",
 				"text-2": "Если вы хотите помочь с переводом приложения, пожалуйста, посмотрите инструкции {{link}}.",
-				"link": "",
+				"link": "здесь",
 				"text-3": "Пожалуйста, перезапустите приложение (с помощью кнопки на вкладке Общие слева), чтобы убедиться, что новый язык включен."
 			}
 		},
 		"decktracker": {
 			"menu": {
-				"global": "",
+				"global": "Глобальные настройки",
 				"your-deck": "Ваша колода",
 				"opponent-deck": "Колода оппонента",
 				"duels": "Дуэли",
-				"launch": ""
+				"launch": "Настройки запуска"
 			},
 			"global": {
 				"title": "",
@@ -1797,7 +1799,7 @@
 				"general": ""
 			},
 			"general": {
-				"title": "",
+				"title": "Общие настройки",
 				"high-resolution-images-label": "",
 				"card-size-in-collection-label": "",
 				"notifications-label": "",
