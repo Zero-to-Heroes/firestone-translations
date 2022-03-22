@@ -42,7 +42,7 @@
 			"region_cn": "Китай"
 		},
 		"pack": {
-			"classic": "",
+			"classic": "Классический",
 			"goblins-vs-gnomes": "Гоблины и гномы",
 			"the-grand-tournament": "Большой турнир",
 			"old-gods": "Пробуждение древних богов",
@@ -187,8 +187,10 @@
 				"default-confirmation-text": "Это закроет трекер на время текущего матча",
 				"default-validation-button": "Ок",
 				"default-cancel-button": "Отмена",
-				"multiselect-validation-button": "Применить",
+				"multiselect-validation-button": "Ок",
 				"multiselect-validation-error-tooltip": "",
+				"multiselect-clear-button": "",
+				"multiselect-reset-button": "",
 				"hotkey-text": "Показать/скрыть:",
 				"no-hotkey-assigned": "Горячая клавиша не назначена"
 			},
@@ -236,7 +238,7 @@
 			"stats": {
 				"title": "",
 				"total-runs": "Всего забегов",
-				"wins-per-run": "",
+				"wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "",
 				"best-winrate-classes": "Лучшие классы по винрейту",
 				"most-faced-classes": "",
@@ -245,8 +247,8 @@
 				"faced-tooltip": ""
 			},
 			"runs": {
-				"view-run-button": "",
-				"minimize-run-button": "",
+				"view-run-button": "Смотреть забег",
+				"minimize-run-button": "Свернуть",
 				"run-name": "",
 				"load-runs-button": "Нажмите, чтобы загрузить больше игр"
 			},
@@ -442,7 +444,7 @@
 					"subtitle": ""
 				},
 				"default": {
-					"title": "",
+					"title": "Здесь ничего нет",
 					"subtitle": ""
 				}
 			}
@@ -470,7 +472,7 @@
 			"menu": {
 				"decks-header": "Колоды",
 				"stats-header": "Статистика",
-				"ranking-header": ""
+				"ranking-header": "Рейтинг"
 			},
 			"filters": {
 				"filter-info-tooltip": "",
@@ -496,20 +498,20 @@
 					"platinum": "Платина+",
 					"diamond": "Алмаз+",
 					"legend": "Легенда",
-					"legend-500": "Топ 500"
+					"legend-500": "Топ-500"
 				},
 				"rank-group": {
 					"per-match": "Показать каждый матч",
-					"per-day": "",
+					"per-day": "Группировать по дням",
 					"per-day-tooltip": ""
 				},
 				"time-filter": {
-					"all-time": "",
+					"all-time": "Последние 100 дней",
 					"season-start": "",
 					"last-patch": "Последнее обновление",
-					"past-30": "",
-					"past-7": "",
-					"past-1": ""
+					"past-30": "Последние 30 дней",
+					"past-7": "Последние 7 дней",
+					"past-1": "За день"
 				}
 			},
 			"matchup-info": {
@@ -521,7 +523,7 @@
 				"win-coin-percent-header": "",
 				"win-coin-total-header": "",
 				"total-header": "",
-				"show-as-percent-button-label": "",
+				"show-as-percent-button-label": "Показать в %",
 				"reset-button-label": "",
 				"reset-button-tooltip": "",
 				"reset-confirmation": "",
@@ -535,17 +537,17 @@
 			},
 			"deck-recap": {
 				"overall-stats-header": "",
-				"watch-replays-button": "",
+				"watch-replays-button": "Смотреть повторы",
 				"best-against": "",
 				"winrate": "",
 				"games": "игр"
 			},
 			"deck-summary": {
-				"total-games": "{{value}} игр",
+				"total-games": "Игр: {{value}}",
 				"winrate": "Доля побед {{value}}%",
-				"last-used": "Последнее использование: {{value}}",
-				"archive-button-tooltip": "",
-				"restore-button-tooltip": "",
+				"last-used": "Посл. использование: {{value}}",
+				"archive-button-tooltip": "Архивировать эту колоду (вы можете восстановить её позже)",
+				"restore-button-tooltip": "Восстановить эту колоду",
 				"default-deck-name": "Название колоды"
 			},
 			"decks": {
@@ -604,11 +606,11 @@
 					"per-day-tooltip": ""
 				},
 				"time": {
-					"past-seven": "",
-					"past-three": "",
+					"past-seven": "Последние 7 дней",
+					"past-three": "Последние 3 дня",
 					"last-patch": "Последнее обновление",
-					"past-100": "",
-					"past-30": ""
+					"past-100": "Последние 100 дней",
+					"past-30": "Последние 30 дней"
 				},
 				"tier": {
 					"all-tiers": "",
@@ -617,7 +619,7 @@
 				"tribe": {
 					"all-tribes": "Все типы существ",
 					"no-tribe": "",
-					"validation-error-tooltip": ""
+					"validation-error-tooltip": "Пожалуйста, выберите все типы существ или только 5"
 				},
 				"signature-treasure": {
 					"all": ""
@@ -643,16 +645,16 @@
 						"winrate-stats": ""
 					},
 					"stats": {
-						"title": "",
+						"title": "Общая статистика",
 						"games-played": "Сыграно партий",
-						"average-position": "Ср. место",
-						"top-1": "",
-						"top-4": "",
-						"net-mmr": "",
+						"average-position": "Место в среднем",
+						"top-1": "Топ-1",
+						"top-4": "Топ-4",
+						"net-mmr": "Читсый MMR",
 						"net-mmr-tooltip": "Средний прирост/потеря MMR за матч",
-						"avg-mmr-gain": "",
+						"avg-mmr-gain": "Средний прирост MMR",
 						"avg-mmr-gain-tooltip": "Средний прирост MMR за матч",
-						"avg-mmr-loss": "",
+						"avg-mmr-loss": "Средняя потеря MMR",
 						"avg-mmr-loss-tooltip": "Средняя потеря MMR за матч"
 					},
 					"last-warbands": {
@@ -753,7 +755,7 @@
 					"all-tooltip": "",
 					"casual": "Обычный",
 					"casual-tooltip": "",
-					"heroic": ""
+					"heroic": "Героический"
 				},
 				"hero": {
 					"all": "Все герои"
@@ -770,10 +772,10 @@
 					"games-played": "Сыграно партий"
 				},
 				"time": {
-					"past-three": "",
-					"past-seven": "",
+					"past-three": "Последние 3 дня",
+					"past-seven": "Последние 7 дней",
 					"last-patch": "Последнее обновление",
-					"past-100": ""
+					"past-100": "Последние 100 дней"
 				},
 				"treasure-pools": {
 					"treasure-1": "Список сокровищ 1",
@@ -802,16 +804,16 @@
 				"view-details-button": "Подробнее",
 				"winrate": "Доля побед",
 				"runs": "Забегов",
-				"starter-deck": "",
-				"final-deck": "",
+				"starter-deck": "Начальная колода",
+				"final-deck": "Конечная колода",
 				"all-runs-with-deck": "",
 				"run-details": "",
 				"number-of-runs": "Количество забегов",
-				"average-wins-per-run": "",
-				"archive-deck-tooltip": "",
-				"restore-deck-tooltip": "",
-				"rename-deck-tooltip": "",
-				"rename-confirm-button": "",
+				"average-wins-per-run": "Побед за забег в среднем",
+				"archive-deck-tooltip": "Архивировать колоду (вы можете восстановить её позже)",
+				"restore-deck-tooltip": "Восстановить колоду",
+				"rename-deck-tooltip": "Переименовать колоду",
+				"rename-confirm-button": "Ок",
 				"default-deck-name": "",
 				"default-deck-name-blank": ""
 			},
@@ -824,9 +826,9 @@
 			"run": {
 				"replays-title": "",
 				"rating": "Рейтинг",
-				"view-deck-button": "",
-				"view-run-button": "",
-				"minimize-run-button": "",
+				"view-deck-button": "Смотреть колоду",
+				"view-run-button": "Смотреть забег",
+				"minimize-run-button": "Свернуть",
 				"load-more-button": ""
 			},
 			"stats": {
@@ -856,7 +858,7 @@
 			"classes-recap": {
 				"title": "",
 				"total-runs": "Всего забегов",
-				"avg-wins-per-run": "",
+				"avg-wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "",
 				"best-winrate-classes": "",
 				"most-faced-classes": "",
@@ -899,22 +901,22 @@
 				},
 				"game-mode": {
 					"all": "Все режимы",
-					"battlegrounds": "",
-					"mercenaries-all": "",
+					"battlegrounds": "Поля сражений",
+					"mercenaries-all": "Наёмники (PvP и PvE)",
 					"mercenaries-pve": "Наёмники (PvE)",
 					"mercenaries-pvp": "Наёмники (PvP)",
-					"ranked": "",
-					"ranked-standard": "",
-					"ranked-wild": "",
-					"ranked-classic": "",
-					"both-duels": "",
-					"duels": "",
-					"paid-duels": "",
-					"arena": "",
+					"ranked": "Рейтинговый (любой)",
+					"ranked-standard": "Рейтинговый стандартный",
+					"ranked-wild": "Рейтинговый вольный",
+					"ranked-classic": "Рейтинговый классический",
+					"both-duels": "Дуэли (любые)",
+					"duels": "Дуэли обычные",
+					"paid-duels": "Дуэли героические",
+					"arena": "Арена",
 					"casual": "Обычный",
 					"friendly": "Дружеские дуэли",
-					"tavern-brawl": "",
-					"practice": ""
+					"tavern-brawl": "Потасовка",
+					"practice": "Против ИИ"
 				},
 				"player": {
 					"all": ""
@@ -932,12 +934,12 @@
 				"rank-issue-tooltip": "",
 				"versus": "",
 				"loot-icon-tooltip": "",
-				"treasure-icon-tooltip": "",
+				"treasure-icon-tooltip": "Карты добавленные в колоду после этого раунда",
 				"mmr": "MMR",
 				"show-stats-button": "Статистика",
-				"show-stats-button-tooltip": "",
+				"show-stats-button-tooltip": "Показать статистику",
 				"watch-replay-button": "Смотреть",
-				"watch replay-button-tooltip": "",
+				"watch replay-button-tooltip": "Смотреть повтор",
 				"mercenaries-bot-opponent-name": "",
 				"bgs-available-tribes-tooltip": "",
 				"bgs-perfect-game-result": "Идеально",
@@ -973,8 +975,8 @@
 			},
 			"list": {
 				"load-more-button": "Нажмите, чтобы загрузить больше повторов...",
-				"empty-state-title": "",
-				"empty-state-subtitle": ""
+				"empty-state-title": "Повторов пока нет",
+				"empty-state-subtitle": "Сыграй матч, чтобы начать"
 			}
 		},
 		"mercenaries": {
@@ -1111,12 +1113,12 @@
 	},
 	"mercenaries": {
 		"filters": {
-			"show-hidden-teams-link-label": "",
+			"show-hidden-teams-link-label": "Показать архивные",
 			"show-merc-names-in-teams-link-label": "Отображать имена",
 			"fully-upgraded": {
 				"all": "Все наёмники",
 				"upgraded": "Полностью улучшенные",
-				"non-upgraded": "Не полностью улучшенные"
+				"non-upgraded": "Можно улучшить"
 			},
 			"hero-level": {
 				"level-0": "",
@@ -1143,15 +1145,15 @@
 			},
 			"starter": {
 				"all": "Все",
-				"starter": "",
-				"bench": ""
+				"starter": "Стартовые",
+				"bench": "Запасные"
 			}
 		},
 		"menu": {
 			"mercenaries-personal-hero-stats": "Прогресс",
-			"mercenaries-my-teams": "",
+			"mercenaries-my-teams": "Мои отряды для PvP",
 			"mercenaries-hero-stats": "",
-			"mercenaries-compositions-stats": ""
+			"mercenaries-compositions-stats": "Отряды для PvP"
 		},
 		"search": {
 			"hero-search-placeholder": "Поиск наёмника..."
@@ -1164,31 +1166,31 @@
 			"games-played": "Сыграно партий",
 			"winrate": "Доля побед",
 			"equipments": "Снаряжение",
-			"global-winrate": "",
+			"global-winrate": "Глобальный винрейт",
 			"your-winrate": "",
 			"abilities": "Способности",
 			"global-usage": "",
 			"global-usage-tooltip": "",
 			"your-usage": "",
 			"your-usage-tooltip": "",
-			"number-of-games-tooltip": "",
+			"number-of-games-tooltip": "{{totalMatches}} матчей записано (популярность {{popularity}})",
 			"level-header": "",
 			"role-header": "Роль",
 			"name-header": "Имя",
 			"xp-header": "",
 			"coins-left-header": "Имеется монет",
 			"coins-left-header-tooltip": "Сколько монет наёмника у вас есть",
-			"coins-needed-header": "Необходимо монет",
+			"coins-needed-header": "Нужно монет",
 			"coins-needed-header-tooltip": "Сколько монет наёмника нужно, чтоб максимально его улучшить",
-			"coins-to-farm-header": "Необходимо нафармить монет",
+			"coins-to-farm-header": "Нужно нафармить монет",
 			"coins-to-farm-header-tooltip": "Сколько монет, помимо наград за выполнение задач и имеющихся у вас, нужно заработать, чтобы максимально улучшить наёмника",
 			"completed-tasks-header": "Выполнено задач",
 			"completed-tasks-header-tooltip": "Ctrl + Клик по текущей задаче, чтобы вручную перейти к следующей задаче. Alt + Клик для возврата на задачу назад.",
 			"abilities-header": "Способности",
 			"equipments-header": "Снаряжение",
-			"max-level": "Макс. ур.!",
+			"max-level": "Макс. уровень!",
 			"xp-tooltip": "{{value}} XP",
-			"current-task-tooltip": "Прогресс задач может быть обновлен только когда наёмник находится у костра",
+			"current-task-tooltip": "",
 			"maxed": "Максимум!",
 			"coins-to-farm-tooltip": "Ожидается, что вы получите {{value}} монет за невыполненные задачи",
 			"empty-state-subtitle": "Перейдите в лагерь наемников в Heartstone для обновления информации",
@@ -1196,28 +1198,28 @@
 			"next-task-tooltip-title": "Следующая задача {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
-			"games": "{{value}} игр",
-			"winrate": "",
-			"last-used": "Последнее использование: {{value}}",
-			"archive-button-tooltip": "",
-			"restore-button-tooltip": "",
-			"unnamed-team": ""
+			"games": "Игр: {{value}}",
+			"winrate": "Доля побед: {{value}}%",
+			"last-used": "Посл. использование: {{value}}",
+			"archive-button-tooltip": "Архивировать этот отряд (вы можете восстановить его позже)",
+			"restore-button-tooltip": "Восстановить этот отряд",
+			"unnamed-team": "Безымянный отряд"
 		},
 		"team-widget": {
-			"cooldown-left-tooltip": "",
-			"number-of-users-tooltip": "",
-			"base-speed-text": "",
-			"speed-buff": "",
-			"speed-debuff": "",
-			"empty-state": "",
-			"merc-level-tooltip": "",
-			"unrecognized-mercenary": "",
+			"cooldown-left-tooltip": "Ходов осталось до восстановления способности",
+			"number-of-users-tooltip": "Сколько раз наёмник использовал эту способность",
+			"base-speed-text": "Базовая скорость: {{value}}",
+			"speed-buff": "Эта способность срабатывает на {{value}} быстрее на этом ходу",
+			"speed-debuff": "Эта способность срабатывает на {{value}} медленее на этом ходу",
+			"empty-state": "Отправляйтесь на выполнение поручения или начните сражение с другим пользователем, чтобы увидеть ваш отряд",
+			"merc-level-tooltip": "Текущий уровень наёмника",
+			"unrecognized-mercenary": "Неопознанный наёмник",
 			"unknown-mercenary": "Неизвестный наемник",
-			"tasks-button": "Поручения",
+			"tasks-button": "Задачи",
 			"task-title": "Задача {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Прогресс:",
 			"task-progress-tooltip": "",
-			"roles-chart-button": "Схема ролей"
+			"roles-chart-button": "Роли"
 		}
 	},
 	"decktracker": {
@@ -1278,7 +1280,7 @@
 			"simulator": ""
 		},
 		"battle": {
-			"turn": "",
+			"turn": "{{value}} ход",
 			"chance-label": "",
 			"win-chance-label": "",
 			"win-chance-tooltip": "",
@@ -1492,7 +1494,7 @@
 			"close-tooltip": ""
 		},
 		"summary": {
-			"total-games": "{{value}} игр",
+			"total-games": "Игр: {{value}}",
 			"total-games-tooltip": "",
 			"total-games-tooltip-all-time": "",
 			"mmr-tooltip": "Твой текущий MMR",
@@ -1515,13 +1517,13 @@
 		}
 	},
 	"settings": {
-		"title": "",
+		"title": "Настройки",
 		"global": {
 			"knob-sizes": {
-				"small": "",
-				"medium": "",
-				"large": "",
-				"default": ""
+				"small": "Мелко",
+				"medium": "Средне",
+				"large": "Крупно",
+				"default": "По умолчанию"
 			},
 			"knob-opacity": {
 				"opaque": "",
@@ -1533,8 +1535,8 @@
 				"zoom-400": ""
 			},
 			"widget-size-label": "",
-			"show-advanced-settings-button": "",
-			"hide-advanced-settings-button": ""
+			"show-advanced-settings-button": "Показать дополнительные настройки",
+			"hide-advanced-settings-button": "Скрыть дополнительные настройки"
 		},
 		"menu": {
 			"general": "Общие",
@@ -1592,10 +1594,10 @@
 			"bug-report": {
 				"title": "",
 				"simulator-bug-text": "Если вы хотите сообщить об ошибке в симуляторе (и хотите помочь мне, насколько это возможно), пожалуйста, ознакомьтесь с инструкциями",
-				"general-bug-text": "Для других серьезных проблем (приложение не работает) есть несколько полезных шагов по устранению неполадок",
+				"general-bug-text": "Для других серьезных проблем (например, приложение не работает) есть несколько полезных шагов по устранению неполадок",
 				"link-text": "здесь",
 				"email-placeholder": "",
-				"message-placeholder": "Ваше сообщение. Если вы сообщаете об ошибке, постарайтесь описать, что именно вы делали в момент возникновения ошибки, и что именно привело к тому, что вы сообщаете об этой ошибке.",
+				"message-placeholder": "Ваше сообщение. Если вы сообщаете об ошибке, постарайтесь максимально точно описать, что вы делали в момент возникновения ошибки, и в чем именно она заключается.",
 				"send-button": "",
 				"status-uploading-logs": "",
 				"status-sending-feedback": "",
@@ -1731,25 +1733,25 @@
 				"enable-secret-helper-tooltip": "",
 				"counters": {
 					"title": "",
-					"galakrond-label": "",
+					"galakrond-label": "Счётчик взываний к Галакронду",
 					"galakrond-tooltip": "",
-					"pogo-label": "",
+					"pogo-label": "Счётчик прыг-скокеров",
 					"pogo-tooltip": "",
-					"jade-label": "",
+					"jade-label": "Счётчик нефритовых големов",
 					"jade-tooltip": "",
-					"cthun-label": "",
+					"cthun-label": "К'Тун",
 					"cthun-tooltip": "",
-					"fatigue-label": "",
+					"fatigue-label": "Счётчик усталости",
 					"fatigue-tooltip": "",
-					"attack-on-board-label": "",
+					"attack-on-board-label": "Счётчик атаки со стола",
 					"attack-on-board-tooltip": "",
-					"watch-post-label": "",
+					"watch-post-label": "Счётчик застав",
 					"watch-post-tooltip": "",
-					"libram-label": "",
+					"libram-label": "Счётчик манускриптов",
 					"libram-tooltip": "",
-					"elwynn-boar-label": "Умерло элвиннских вепрей",
+					"elwynn-boar-label": "Счётчик элвиннских вепрей",
 					"elwynn-boar-tooltip": "",
-					"hero-power-damage-label": "",
+					"hero-power-damage-label": "Счётчик урона нанесенного силой героя",
 					"hero-power-damage-tooltip": ""
 				},
 				"size-title": "",
@@ -1767,19 +1769,19 @@
 					"cthun-tooltip": "",
 					"fatigue-tooltip": "",
 					"attack-on-board-tooltip": "",
-					"number-of-spells-label": "",
+					"number-of-spells-label": "Счётчик заклинаний",
 					"number-of-spells-tooltip": "",
-					"elementals-label": "",
+					"elementals-label": "Счётчик элементалей",
 					"elementals-tooltip": "",
 					"watch-post-tooltip": "",
 					"libram-tooltip": "",
 					"elwynn-boar-tooltip": "",
 					"hero-power-damage-tooltip": "",
-					"bolner-label": "",
+					"bolner-label": "Болнер Удар Клюва",
 					"bolner-tooltip": "",
-					"brilliant-macaw-label": "",
+					"brilliant-macaw-label": "Сверкающий ара",
 					"brilliant-macaw-tooltip": "",
-					"multicaster-label": "",
+					"multicaster-label": "Маг-универсал",
 					"multicaster-tooltip": ""
 				}
 			},
@@ -1798,13 +1800,13 @@
 		},
 		"collection": {
 			"menu": {
-				"general": ""
+				"general": "Общие"
 			},
 			"general": {
 				"title": "Общие настройки",
-				"high-resolution-images-label": "",
-				"card-size-in-collection-label": "",
-				"notifications-label": "",
+				"high-resolution-images-label": "Изображения в высоком разрешении",
+				"card-size-in-collection-label": "Размер карт в коллекции",
+				"notifications-label": "Включить уведомления",
 				"selective-notifications-label": "",
 				"notifications-dust-recap-label": "",
 				"notifications-non-golden-commons-label": "",
@@ -1817,7 +1819,7 @@
 			"set-show-golden-stats": ""
 		},
 		"duels": {
-			"personal-decks-show-hidden-decks": "",
+			"personal-decks-show-hidden-decks": "Показать архивные",
 			"hide-stats-below-threshold": "",
 			"hide-stats-below-threshold-tooltip": ""
 		},
@@ -1921,12 +1923,12 @@
 		},
 		"mercenaries": {
 			"menu": {
-				"general": ""
+				"general": "Общие"
 			},
 			"general": {
-				"player-team-widget-label": "",
+				"player-team-widget-label": "Виджет отряда игрока",
 				"player-team-widget-tooltip": "",
-				"opponent-team-widget-label": "",
+				"opponent-team-widget-label": "Виджет отряда оппонента",
 				"opponent-team-widget-tooltip": "",
 				"map-team-widget-label": "",
 				"map-team-widget-tooltip": "",
@@ -1936,20 +1938,20 @@
 				"action-queue-pve-tooltip": "",
 				"action-queue-pvp-label": "",
 				"action-queue-pvp-tooltip": "",
-				"role-chart-label": "Показать график ролей",
+				"role-chart-label": "Показывать схему взаимодействия ролей",
 				"role-chart-tooltip": "",
 				"tasks-label": "",
 				"tasks-tooltip": "",
-				"synergies-label": "",
+				"synergies-label": "Выделять синергии",
 				"synergies-tooltip": "",
-				"your-team": "",
-				"opponent-team": "",
+				"your-team": "Ваш отряд",
+				"opponent-team": "Отряд оппонента",
 				"action-queue": ""
 			}
 		},
 		"replays": {
 			"menu": {
-				"general": ""
+				"general": "Общие"
 			},
 			"empty-state": ""
 		}
@@ -1957,7 +1959,7 @@
 	"twitch": {
 		"could-not-log-error-title": "",
 		"could-not-log-error-text": "",
-		"settings-side-text": "",
+		"settings-side-text": "Настройки",
 		"show-hero-cards-help": "",
 		"show-hero-cards-help-tooltip": "",
 		"show-minions-list": "",
