@@ -189,8 +189,8 @@
 				"default-cancel-button": "Отмена",
 				"multiselect-validation-button": "Ок",
 				"multiselect-validation-error-tooltip": "",
-				"multiselect-clear-button": "",
-				"multiselect-reset-button": "",
+				"multiselect-clear-button": "Очистить",
+				"multiselect-reset-button": "Сбросить",
 				"hotkey-text": "Показать/скрыть:",
 				"no-hotkey-assigned": "Горячая клавиша не назначена"
 			},
@@ -623,7 +623,7 @@
 					"validation-error-tooltip": "Пожалуйста, выберите все типы существ или только 5"
 				},
 				"signature-treasure": {
-					"all": ""
+					"all": "Все сокровища"
 				},
 				"stat-type": {
 					"hero": "Герои",
@@ -664,7 +664,7 @@
 						"damage-dealt-tooltip": "",
 						"damage-taken": "",
 						"damage-taken-tooltip": "",
-						"empty-state-message": "",
+						"empty-state-message": "Начни играть в Поля сражений этим героем, чтоб собрать информацию",
 						"finished-position": "Занял {{value}}",
 						"last-board": "",
 						"long-ago": "",
@@ -683,7 +683,7 @@
 						"your-tooltip": ""
 					},
 					"mmr": {
-						"empty-state-message": ""
+						"empty-state-message": "Начни играть в Поля сражений этим героем, чтоб собрать информацию"
 					}
 				},
 				"rating": {
@@ -692,10 +692,10 @@
 					"axis-label": "Рейтинг"
 				},
 				"records": {
-					"title": "",
+					"title": "Герои-рекордсмены",
 					"columns": {
-						"record": "",
-						"hero": "",
+						"record": "Рекорд",
+						"hero": "Герой",
 						"replay": "Повтор",
 						"score": ""
 					},
@@ -713,10 +713,10 @@
 						"rerolls": "",
 						"freezes": "",
 						"hero-power": "",
-						"minions-bought": "",
-						"minions-sold": "",
-						"enemy-minions-killed": "",
-						"enemy-heroes-killed": "",
+						"minions-bought": "Существ куплено",
+						"minions-sold": "Существ продано",
+						"enemy-minions-killed": "Убито вражеских существ",
+						"enemy-heroes-killed": "Убито вражеских героев",
 						"battles-going-first": "",
 						"battle-luck": "",
 						"battle-luck-explain-link": "",
@@ -742,7 +742,7 @@
 			},
 			"filters": {
 				"dust": {
-					"all": "",
+					"all": "Любое количество пыли",
 					"own": "Есть все карты",
 					"dust": "{{value}} пыли"
 				},
@@ -765,10 +765,10 @@
 					"all": "Все силы героя"
 				},
 				"signature-treasure": {
-					"all": ""
+					"all": "Все сокровища"
 				},
 				"hero-sort": {
-					"player-winrate": "",
+					"player-winrate": "Твой винрейт",
 					"global-winrate": "Глобальный винрейт",
 					"games-played": "Сыграно партий"
 				},
@@ -799,7 +799,7 @@
 				}
 			},
 			"deck-stat": {
-				"title": "",
+				"title": "Статистика колоды",
 				"dust-missing-tooltip": "Количество пыли, необходимое для изготовления недостающих карт",
 				"no-dust-missing-tooltip": "",
 				"view-details-button": "Подробнее",
@@ -808,7 +808,7 @@
 				"starter-deck": "Начальная колода",
 				"final-deck": "Конечная колода",
 				"all-runs-with-deck": "",
-				"run-details": "",
+				"run-details": "Подробности забега",
 				"number-of-runs": "Количество забегов",
 				"average-wins-per-run": "Побед за забег в среднем",
 				"archive-deck-tooltip": "Архивировать колоду (вы можете восстановить её позже)",
@@ -816,13 +816,13 @@
 				"rename-deck-tooltip": "Переименовать колоду",
 				"rename-confirm-button": "Ок",
 				"default-deck-name": "",
-				"default-deck-name-blank": ""
+				"default-deck-name-blank": "Колода для дуэлей"
 			},
 			"hero-stat": {
 				"global-winrate": "Глобальный винрейт",
-				"your-winrate": "",
+				"your-winrate": "Твой винрейт",
 				"games-played": "Сыграно партий",
-				"number-of-games-tooltip": ""
+				"number-of-games-tooltip": "{{totalRuns}} забегов записано (популярность {{popularity}})"
 			},
 			"run": {
 				"replays-title": "",
@@ -929,7 +929,7 @@
 			"bg-stats": {
 				"title": "Статистика матча",
 				"empty-state-title": "",
-				"empty-state-subtitle": ""
+				"empty-state-subtitle": "Не удается получить статистику"
 			},
 			"replay-info": {
 				"rank-issue-tooltip": "",
@@ -944,7 +944,7 @@
 				"mercenaries-bot-opponent-name": "",
 				"bgs-available-tribes-tooltip": "Доступные типы существ: {{value}}",
 				"bgs-perfect-game-result": "Идеально",
-				"deck-name-tooltip": "",
+				"deck-name-tooltip": "с {{value}}",
 				"bgs-result": {
 					"1": "1-е",
 					"2": "2-е",
@@ -1168,7 +1168,7 @@
 			"winrate": "Доля побед",
 			"equipments": "Снаряжение",
 			"global-winrate": "Глобальный винрейт",
-			"your-winrate": "",
+			"your-winrate": "Твой винрейт",
 			"abilities": "Способности",
 			"global-usage": "",
 			"global-usage-tooltip": "",
@@ -1466,12 +1466,12 @@
 	"duels": {
 		"hero-info": {
 			"winrate-label": "Доля побед",
-			"popularity-label": "",
+			"popularity-label": "Популярность",
 			"player-matches": "{{value}} матчей",
 			"your-value-tooltip": "",
 			"community-value-tooltip": "",
 			"win-distribution-header": "",
-			"win-distribution-tooltip": "",
+			"win-distribution-tooltip": "Распределение побед",
 			"top-decks-header": "",
 			"footer": ""
 		},
@@ -1599,7 +1599,7 @@
 				"link-text": "здесь",
 				"email-placeholder": "",
 				"message-placeholder": "Ваше сообщение. Если вы сообщаете об ошибке, постарайтесь максимально точно описать, что вы делали в момент возникновения ошибки, и в чем именно она заключается.",
-				"send-button": "",
+				"send-button": "Отправить",
 				"status-uploading-logs": "",
 				"status-sending-feedback": "",
 				"status-done": ""
