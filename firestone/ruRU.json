@@ -189,8 +189,8 @@
 				"default-cancel-button": "Отмена",
 				"multiselect-validation-button": "Ок",
 				"multiselect-validation-error-tooltip": "",
-				"multiselect-clear-button": "",
-				"multiselect-reset-button": "",
+				"multiselect-clear-button": "Очистить",
+				"multiselect-reset-button": "Сбросить",
 				"hotkey-text": "Показать/скрыть:",
 				"no-hotkey-assigned": "Горячая клавиша не назначена"
 			},
@@ -214,7 +214,7 @@
 			}
 		},
 		"loading": {
-			"title": "Вся информация загружается",
+			"title": "Информация загружается",
 			"subtitle": "Пожалуйста, подождите"
 		},
 		"updates": {
@@ -299,7 +299,7 @@
 				"second-copy": "Вторая",
 				"new-copy-long": "Новая карта",
 				"second-copy-long": "Вторая копия",
-				"title": "Последние полученные карты",
+				"title": "История получения карт",
 				"you-have-viewed": "",
 				"load-more-button": "Ещё",
 				"empty-state-title": "Нет истории",
@@ -313,8 +313,8 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "Поиск карт...",
-				"loading": "",
-				"results-title": ""
+				"loading": "Загружаем еще карт...",
+				"results-title": "Поиск по запросу \"{{value}}\""
 			},
 			"card-details": {
 				"class": "Класс:",
@@ -376,7 +376,7 @@
 				}
 			},
 			"pack-history": {
-				"title": "История моих комплектов",
+				"title": "История открытий комплектов",
 				"you-have-viewed": "",
 				"load-more-button": "Ещё",
 				"empty-state": {
@@ -386,15 +386,15 @@
 			},
 			"pack-stats": {
 				"title": "Всего комплектов ({{value}})",
-				"best-opened-packs-title": "",
-				"best-opened-packs-title-tooltip": "",
-				"pack-stat-tooltip": "Всего получено {{totalPacks}} комплектов \"{{packName}}\""
+				"best-opened-packs-title": "{{value}} лучших комплектов",
+				"best-opened-packs-title-tooltip": "Лучшие комплекты, которые вы открыли с запущенным Firestone",
+				"pack-stat-tooltip": "Всего комплектов \"{{packName}}\" получено: {{totalPacks}}"
 			},
 			"set-stats": {
-				"title": "",
-				"packs-received": "",
-				"packs-received-tooltip": "",
-				"best-known-pack": "",
+				"title": "Статистика набора",
+				"packs-received": "Получено комплектов",
+				"packs-received-tooltip": "Получено комплектов за все время, включая те, что еще не открыты",
+				"best-known-pack": "Лучший комплект",
 				"dust": "Пыль",
 				"dust-tooltip": "Вам нужно {{value}} пыли для завершения набора",
 				"duplicate-dust": "Пыль с дубликатов",
@@ -507,7 +507,7 @@
 				},
 				"time-filter": {
 					"all-time": "Последние 100 дней",
-					"season-start": "",
+					"season-start": "Текущий сезон",
 					"last-patch": "Последнее обновление",
 					"past-30": "Последние 30 дней",
 					"past-7": "Последние 7 дней",
@@ -599,7 +599,7 @@
 				},
 				"rank": {
 					"all": "Все ранги",
-					"percentile": ""
+					"percentile": "Топ {{percentile}}% ({{mmr}}+)"
 				},
 				"rank-group": {
 					"per-match": "",
@@ -623,12 +623,12 @@
 					"validation-error-tooltip": "Пожалуйста, выберите все типы существ или только 5"
 				},
 				"signature-treasure": {
-					"all": ""
+					"all": "Все фирм. сокровища"
 				},
 				"stat-type": {
 					"hero": "Герои",
 					"hero-power": "Силы героев",
-					"signature-treasure": ""
+					"signature-treasure": "Фирменные сокровища"
 				}
 			},
 			"personal-stats": {
@@ -651,7 +651,7 @@
 						"average-position": "Место в среднем",
 						"top-1": "Топ-1",
 						"top-4": "Топ-4",
-						"net-mmr": "Читсый MMR",
+						"net-mmr": "Чистый MMR",
 						"net-mmr-tooltip": "Средний прирост/потеря MMR за матч",
 						"avg-mmr-gain": "Средний прирост MMR",
 						"avg-mmr-gain-tooltip": "Средний прирост MMR за матч",
@@ -664,7 +664,7 @@
 						"damage-dealt-tooltip": "",
 						"damage-taken": "",
 						"damage-taken-tooltip": "",
-						"empty-state-message": "",
+						"empty-state-message": "Начни играть в Поля сражений этим героем, чтоб собрать информацию",
 						"finished-position": "Занял {{value}}",
 						"last-board": "",
 						"long-ago": "",
@@ -683,7 +683,7 @@
 						"your-tooltip": ""
 					},
 					"mmr": {
-						"empty-state-message": ""
+						"empty-state-message": "Начни играть в Поля сражений этим героем, чтоб собрать информацию"
 					}
 				},
 				"rating": {
@@ -692,10 +692,10 @@
 					"axis-label": "Рейтинг"
 				},
 				"records": {
-					"title": "",
+					"title": "Герои-рекордсмены",
 					"columns": {
-						"record": "",
-						"hero": "",
+						"record": "Рекорд",
+						"hero": "Герой",
 						"replay": "Повтор",
 						"score": ""
 					},
@@ -713,10 +713,10 @@
 						"rerolls": "",
 						"freezes": "",
 						"hero-power": "",
-						"minions-bought": "",
-						"minions-sold": "",
-						"enemy-minions-killed": "",
-						"enemy-heroes-killed": "",
+						"minions-bought": "Существ куплено",
+						"minions-sold": "Существ продано",
+						"enemy-minions-killed": "Убито вражеских существ",
+						"enemy-heroes-killed": "Убито вражеских героев",
 						"battles-going-first": "",
 						"battle-luck": "",
 						"battle-luck-explain-link": "",
@@ -742,14 +742,14 @@
 			},
 			"filters": {
 				"dust": {
-					"all": "",
+					"all": "Любое количество пыли",
 					"own": "Есть все карты",
 					"dust": "{{value}} пыли"
 				},
 				"stat-type": {
 					"hero": "",
 					"hero-power": "Сила героя",
-					"signature-treasure": ""
+					"signature-treasure": "Фирменные сокровища"
 				},
 				"game-mode": {
 					"all": "Все режимы",
@@ -765,11 +765,11 @@
 					"all": "Все силы героя"
 				},
 				"signature-treasure": {
-					"all": ""
+					"all": "Все фирменные сокровища"
 				},
 				"hero-sort": {
-					"player-winrate": "",
-					"global-winrate": "",
+					"player-winrate": "Твой винрейт",
+					"global-winrate": "Глобальный винрейт",
 					"games-played": "Сыграно партий"
 				},
 				"time": {
@@ -787,7 +787,7 @@
 					"passive-3": ""
 				},
 				"treasure-sort": {
-					"global-winrate": "",
+					"global-winrate": "Глобальный винрейт",
 					"global-pickrate": "",
 					"global-offering": "",
 					"player-pickrate": ""
@@ -799,7 +799,7 @@
 				}
 			},
 			"deck-stat": {
-				"title": "",
+				"title": "Статистика колоды",
 				"dust-missing-tooltip": "Количество пыли, необходимое для изготовления недостающих карт",
 				"no-dust-missing-tooltip": "",
 				"view-details-button": "Подробнее",
@@ -808,7 +808,7 @@
 				"starter-deck": "Начальная колода",
 				"final-deck": "Конечная колода",
 				"all-runs-with-deck": "",
-				"run-details": "",
+				"run-details": "Подробности забега",
 				"number-of-runs": "Количество забегов",
 				"average-wins-per-run": "Побед за забег в среднем",
 				"archive-deck-tooltip": "Архивировать колоду (вы можете восстановить её позже)",
@@ -816,13 +816,13 @@
 				"rename-deck-tooltip": "Переименовать колоду",
 				"rename-confirm-button": "Ок",
 				"default-deck-name": "",
-				"default-deck-name-blank": ""
+				"default-deck-name-blank": "Колода для дуэлей"
 			},
 			"hero-stat": {
-				"global-winrate": "",
-				"your-winrate": "",
+				"global-winrate": "Глобальный винрейт",
+				"your-winrate": "Твой винрейт",
 				"games-played": "Сыграно партий",
-				"number-of-games-tooltip": ""
+				"number-of-games-tooltip": "{{totalRuns}} забегов записано (популярность {{popularity}})"
 			},
 			"run": {
 				"replays-title": "",
@@ -830,7 +830,7 @@
 				"view-deck-button": "Смотреть колоду",
 				"view-run-button": "Смотреть забег",
 				"minimize-run-button": "Свернуть",
-				"load-more-button": ""
+				"load-more-button": "Загружаем еще забегов..."
 			},
 			"stats": {
 				"tier-list-title": "Тир-лист",
@@ -843,7 +843,7 @@
 				"tier-e-tooltip": ""
 			},
 			"leaderboard": {
-				"rank": "",
+				"rank": "Место",
 				"rating": "Рейтинг",
 				"name": "Имя",
 				"region": "Регион"
@@ -929,7 +929,7 @@
 			"bg-stats": {
 				"title": "Статистика матча",
 				"empty-state-title": "",
-				"empty-state-subtitle": ""
+				"empty-state-subtitle": "Не удается получить статистику"
 			},
 			"replay-info": {
 				"rank-issue-tooltip": "",
@@ -944,7 +944,7 @@
 				"mercenaries-bot-opponent-name": "",
 				"bgs-available-tribes-tooltip": "Доступные типы существ: {{value}}",
 				"bgs-perfect-game-result": "Идеально",
-				"deck-name-tooltip": "",
+				"deck-name-tooltip": "с {{value}}",
 				"bgs-result": {
 					"1": "1-е",
 					"2": "2-е",
@@ -1012,8 +1012,8 @@
 		},
 		"bolner": "",
 		"multicaster": {
-			"player": "",
-			"opponent": ""
+			"player": "Вы доберете {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}",
+			"opponent": "Ваш оппонент доберет {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}"
 		},
 		"brilliant-macaw": {
 			"player": "",
@@ -1168,7 +1168,7 @@
 			"winrate": "Доля побед",
 			"equipments": "Снаряжение",
 			"global-winrate": "Глобальный винрейт",
-			"your-winrate": "",
+			"your-winrate": "Твой винрейт",
 			"abilities": "Способности",
 			"global-usage": "",
 			"global-usage-tooltip": "",
@@ -1191,7 +1191,7 @@
 			"equipments-header": "Снаряжение",
 			"max-level": "Макс. уровень!",
 			"xp-tooltip": "{{value}} XP",
-			"current-task-tooltip": "",
+			"current-task-tooltip": "Задачи могут быть обновлены только когда наёмник находится у костра",
 			"maxed": "Максимум!",
 			"coins-to-farm-tooltip": "Ожидается, что вы получите {{value}} монет за невыполненные задачи",
 			"empty-state-subtitle": "Перейдите в лагерь наемников в Heartstone для обновления информации",
@@ -1226,8 +1226,8 @@
 	"decktracker": {
 		"zones": {
 			"global-effects": "",
-			"in-deck": "",
-			"in-hand": "",
+			"in-deck": "В колоде",
+			"in-hand": "В руке",
 			"other": "",
 			"discard": ""
 		},
@@ -1278,7 +1278,7 @@
 			"opponent": "",
 			"live-stats": "",
 			"post-match-stats": "",
-			"simulator": ""
+			"simulator": "Симулятор"
 		},
 		"battle": {
 			"turn": "{{value}} ход",
@@ -1394,24 +1394,24 @@
 				}
 			},
 			"opponents": {
-				"title": "",
+				"title": "Все герои",
 				"next-opponent-title": "",
 				"empty-state-title": "Здесь пока что ничего нет",
-				"empty-state-subtitle": "",
+				"empty-state-subtitle": "Выбери героя и подожди своих противников!",
 				"score-board-title": "",
 				"score-board-tooltip": "",
 				"tavern-upgrade-title": "",
 				"tavern-last-upgrade-title": "",
 				"tavern-empty-state": "",
-				"last-opponent-icon-tooltip": "",
-				"triple-title": "",
+				"last-opponent-icon-tooltip": "Был противников в прошлом раунде",
+				"triple-title": "Новых триплетов",
 				"triple-tooltip": "",
-				"triple-empty-state": "",
-				"buddies-title": "",
+				"triple-empty-state": "Не было новых триплетов",
+				"buddies-title": "Компаньоны получены",
 				"buddies-empty-state": "",
-				"buddy-text": "",
-				"buddy-tooltip": "",
-				"buddy-tooltip-golden": ""
+				"buddy-text": "{{turn}} ход",
+				"buddy-tooltip": "Получил первого компаньона на {{turn}} ход",
+				"buddy-tooltip-golden": "Получил еще двух компаньонов на {{turn}} ход"
 			},
 			"minions-list": {
 				"reset-button": ""
@@ -1453,10 +1453,10 @@
 			"exceptions-tooltip": ""
 		},
 		"board": {
-			"seen-just-now": "",
-			"seen-turns-ago": "",
-			"opponent-not-met": "",
-			"last-board-empty": "",
+			"seen-just-now": "Стол оппонента сейчас",
+			"seen-turns-ago": "Стол оппонента {{value}} ходов назад",
+			"opponent-not-met": "Вы ещё не сражались с этим противником",
+			"last-board-empty": "Стол противника был пуст",
 			"total-damage": "",
 			"stats-share-warning": ""
 		},
@@ -1466,12 +1466,12 @@
 	"duels": {
 		"hero-info": {
 			"winrate-label": "Доля побед",
-			"popularity-label": "",
+			"popularity-label": "Популярность",
 			"player-matches": "{{value}} матчей",
 			"your-value-tooltip": "",
 			"community-value-tooltip": "",
 			"win-distribution-header": "",
-			"win-distribution-tooltip": "",
+			"win-distribution-tooltip": "Распределение побед",
 			"top-decks-header": "",
 			"footer": ""
 		},
@@ -1527,16 +1527,16 @@
 				"default": "По умолчанию"
 			},
 			"knob-opacity": {
-				"opaque": "",
-				"transparent": ""
+				"opaque": "Непрозрачный",
+				"transparent": "Прозрачный"
 			},
 			"knob-zoom": {
 				"normal": "",
 				"zoom-200": "",
 				"zoom-400": ""
 			},
-			"widget-size-label": "",
-			"show-advanced-settings-button": "Показать дополнительные настройки",
+			"widget-size-label": "Размер виджета",
+			"show-advanced-settings-button": "Показать доп. настройки",
 			"hide-advanced-settings-button": "Скрыть доп. настройки"
 		},
 		"menu": {
@@ -1599,7 +1599,7 @@
 				"link-text": "здесь",
 				"email-placeholder": "",
 				"message-placeholder": "Ваше сообщение. Если вы сообщаете об ошибке, постарайтесь максимально точно описать, что вы делали в момент возникновения ошибки, и в чем именно она заключается.",
-				"send-button": "",
+				"send-button": "Отправить",
 				"status-uploading-logs": "",
 				"status-sending-feedback": "",
 				"status-done": ""
@@ -1649,7 +1649,7 @@
 				"text-11": "Это также означает, что не все части приложения будут переведены на ваш язык. В этом случае недостающие части будут отображаться на английском языке.",
 				"text-2": "Если вы хотите помочь с переводом приложения, пожалуйста, посмотрите инструкции {{link}}.",
 				"link": "здесь",
-				"text-3": "Пожалуйста, перезапустите приложение (с помощью кнопки на вкладке Общие слева), чтобы убедиться, что новый язык включен."
+				"text-3": "Пожалуйста, перезапустите приложение (с помощью кнопки на вкладке Общие - слева), чтобы изменение вступило в силу."
 			}
 		},
 		"decktracker": {
@@ -1814,7 +1814,7 @@
 				"notifications-rewards-label": "",
 				"notifications-rewards-tooltip": ""
 			},
-			"history-show-only-new-cards": "Только новые",
+			"history-show-only-new-cards": "Показать только новые",
 			"pack-stats-show-only-buyable-packs": "Показывать только основные комплекты",
 			"pack-stats-show-only-buyable-packs-tooltip": "Показывать только комплекты, которые можно купить в магазине, скрывая все наградные комплекты",
 			"set-show-golden-stats": ""
@@ -1865,8 +1865,8 @@
 				"overlay-title": "",
 				"show-banned-tribes-label": "",
 				"show-banned-tribes-tooltip": "",
-				"show-minions-list-label": "",
-				"show-minions-list-tooltip": "",
+				"show-minions-list-label": "Показывать список существ",
+				"show-minions-list-tooltip": "Показывать список существ, сгруппированных по уровням таверн",
 				"turn-counter-label": "",
 				"last-opponent-icon-label": "",
 				"last-opponent-icon-tooltip": "",
@@ -1876,12 +1876,12 @@
 				"battle-simulation-tooltip": "",
 				"battle-simulation-example-label": "",
 				"battle-simulation-example-tooltip": "",
-				"widget-size-label": "",
+				"widget-size-label": "Размер виджета",
 				"banned-tribes-title": "",
 				"banned-tribes-show-in-column-label": "",
 				"banned-tribes-show-in-column-tooltip": "",
 				"banned-tribes-icon-size-label": "",
-				"minions-list-title": "",
+				"minions-list-title": "Список существ",
 				"minions-list-show-on-mouse-over-label": "",
 				"minions-list-show-on-mouse-over-tooltip": "",
 				"minions-list-show-on-mouse-over-confirmation": "",
@@ -1889,13 +1889,13 @@
 				"minions-list-show-tribes-highlight-tooltip": "",
 				"minions-list-show-golden-cards-label": "",
 				"minions-list-show-golden-cards-tooltip": "",
-				"opponent-board-title": "",
+				"opponent-board-title": "Стол оппонента",
 				"opponent-board-show-top-label": "",
 				"opponent-board-show-top-tooltip": "",
 				"counters-title": "",
 				"counter-soutshsea-label": "",
 				"counter-soutshsea-tooltip": "",
-				"counter-majordomo-label": "",
+				"counter-majordomo-label": "Мажордом Экзекутус",
 				"counter-majordomo-tooltip": ""
 			},
 			"session-widget": {
@@ -1908,8 +1908,8 @@
 				"show-matches-tooltip": "Показать последние матчи.",
 				"number-of-matches": "Количество матчей",
 				"number-of-matches-tooltip": "",
-				"size-title": "",
-				"opacity-title": ""
+				"size-title": "Размер виджета",
+				"opacity-title": "Непрозрачность виджета"
 			}
 		},
 		"achievements": {
@@ -1968,9 +1968,9 @@
 		"settings-side-text": "Настройки",
 		"show-hero-cards-help": "",
 		"show-hero-cards-help-tooltip": "",
-		"show-minions-list": "",
+		"show-minions-list": "Показывать список существ",
 		"show-minions-list-tooltip": "",
-		"minions-list-size": "",
+		"minions-list-size": "Размер списка существ",
 		"show-minions-list-golden-cards": "",
 		"show-minions-list-golden-cards-tooltip": "",
 		"show-battle-simulator": "",
