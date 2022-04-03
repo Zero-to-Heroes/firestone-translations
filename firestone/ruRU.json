@@ -545,7 +545,7 @@
 			"deck-summary": {
 				"total-games": "Игр: {{value}}",
 				"winrate": "Доля побед: {{value}}%",
-				"last-used": "Посл. использование: {{value}}",
+				"last-used": "Посл. игра: {{value}}",
 				"archive-button-tooltip": "Архивировать эту колоду (вы можете восстановить её позже)",
 				"restore-button-tooltip": "Восстановить эту колоду",
 				"default-deck-name": "Название колоды"
@@ -697,7 +697,7 @@
 						"record": "Рекорд",
 						"hero": "Герой",
 						"replay": "Повтор",
-						"score": ""
+						"score": "Счёт"
 					},
 					"rows": {
 						"total-dmg-dealt-minions": "Всего урона нанесено существам противника",
@@ -706,19 +706,19 @@
 						"total-dmg-dealt-hero-tooltip": "За исключением боёв против призрака",
 						"max-dmg-dealt-hero": "Максимальный урон герою противника",
 						"max-dmg-dealt-hero-tooltip": "За исключением боёв против призрака",
-						"win-streak": "",
+						"win-streak": "Лучшая серия побед",
 						"triples": "Собрано триплетов",
-						"board-stats": "",
+						"board-stats": "Максимальные характеристики стола",
 						"coins-wasted": "Потрачено монет",
-						"rerolls": "",
+						"rerolls": "Рероллы",
 						"freezes": "Количество заморозок",
 						"hero-power": "",
 						"minions-bought": "Существ куплено",
 						"minions-sold": "Существ продано",
 						"enemy-minions-killed": "Убито вражеских существ",
 						"enemy-heroes-killed": "Убито вражеских героев",
-						"battles-going-first": "",
-						"battle-luck": "",
+						"battles-going-first": "Ходов первым в бою",
+						"battle-luck": "Удача в битве",
 						"battle-luck-explain-link": "",
 						"battle-luck-explain-link-tooltip": "",
 						"negative-battle-luck": ""
@@ -993,12 +993,12 @@
 			"tip-2": "Нажмите на значок \"Сообщить об ошибке\" вверху, чтобы отправить отчёт об ошибке или предложить улучшения",
 			"tip-3": "Если вы сталкиваетесь с серьезными ошибками (например, сбор данных не синхронизируется, трекер не работает и т.п.), попробуйте запустить приложение как администратор.",
 			"tip-4": "Настройки имеют множество параметров кастомизации, ознакомьтесь с ними, чтобы включить/выключить некоторые функции",
-			"tip-5": "[Mercenaries] Смотрите столбец «Всего монет», сделав окно шире",
-			"tip-6": "[Mercenaries] Выберите опцию «Наемники (PvP)» в повторах, чтобы увидеть более подробную информацию о командах в каждом матче",
-			"tip-7": "",
+			"tip-5": "[Наёмники] Смотрите столбец «Всего монет», сделав окно шире",
+			"tip-6": "[Наёмники] Выберите опцию «Наемники (PvP)» в повторах, чтобы увидеть более подробную информацию о командах в каждом матче",
+			"tip-7": "[Наёмники] Наведите курсор на столбец «Выполнено задач», чтобы узнать как вручную задать прогресс задач каждого наёмника",
 			"tip-8": "[Поля сражений] Смотрите подробные данные в реальном времени, вызвав окно Полей сражений комбинацией Alt + B",
-			"tip-9": "[Battlegrounds] Сделайте окно BG шире, чтобы увидеть средний урон и смертельные шансы в симуляторе",
-			"tip-10": "[Duels] Вы можете навести курсор на здоровье противника, чтобы увидеть его максимальное здоровье"
+			"tip-9": "[Поля сражений] Сделайте окно BG шире, чтобы увидеть средний урон и смертельные шансы в симуляторе",
+			"tip-10": "[Дуэли] Вы можете навести курсор на здоровье противника, чтобы увидеть его максимальное здоровье"
 		}
 	},
 	"counters": {
@@ -1013,7 +1013,7 @@
 		"bolner": "",
 		"multicaster": {
 			"player": "Вы доберете {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}",
-			"opponent": "Ваш оппонент доберет {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}"
+			"opponent": "Ваш противник доберет {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}"
 		},
 		"brilliant-macaw": {
 			"player": "",
@@ -1281,9 +1281,9 @@
 	"battlegrounds": {
 		"menu": {
 			"hero-selection": "Выбор героя",
-			"opponent": "",
+			"opponent": "Противник",
 			"live-stats": "",
-			"post-match-stats": "",
+			"post-match-stats": "Статистика после матча",
 			"simulator": "Симулятор"
 		},
 		"battle": {
@@ -1321,14 +1321,14 @@
 			"remove-minion-button-tooltip": "Удалить существо",
 			"versus": "VS",
 			"simulate-button": "Запустить",
-			"simulate-button-tooltip": "",
+			"simulate-button-tooltip": "Провести симуляцию боя с новым столом",
 			"reset-button": "Сбросить",
 			"export-button": "Копировать",
 			"export-button-tooltip": "",
 			"exporting": "",
-			"importing": "",
+			"importing": "Существа импортируются, пожалуйста подождите",
 			"export-confirmation": "",
-			"import-button": "",
+			"import-button": "Импортировать",
 			"import-button-tooltip": "",
 			"reposition-button": "Репозиция",
 			"reposition-button-firstpass": "",
@@ -1344,12 +1344,12 @@
 			"reposition-button-tooltip-done": "",
 			"reposition-button-tooltip-cancel": "Нажмите, чтобы отменить репозицию",
 			"reposition-button-tooltip-cancelling": "",
-			"actual": "",
-			"simulated": "",
+			"actual": "Актуальный",
+			"simulated": "Симулированый",
 			"empty-state-title": "Здесь пока что ничего нет",
-			"empty-state-subtitle": "",
+			"empty-state-subtitle": "Ваша первая битва будет показана здесь после того, как вы столкнетесь с противником",
 			"battles-header": "",
-			"turn-winrate-graph-title": "",
+			"turn-winrate-graph-title": "Средняя доля побед по ходам",
 			"hero-power-title": "Сила героя",
 			"hero-power-info-tavish": "",
 			"hero-powers-header": "Силы героев",
@@ -1379,7 +1379,7 @@
 			"avg-position-global-tooltip": "",
 			"matches-played-label": "Сыграно матчей:",
 			"matches-played-tooltip": "Всего матчей, сыгранных этим героем",
-			"turn-winrate": "Вероятность побед в боях",
+			"turn-winrate": "Доля побед по ходам",
 			"turn-winrate-tooltip": "",
 			"winning-tribes-title": "",
 			"winning-tribes-title-tooltip": ""
@@ -1394,20 +1394,20 @@
 			"face-offs": {
 				"header": {
 					"hero": "Герой",
-					"won": "Победа",
-					"lost": "Поражение",
-					"tied": "Ничья"
+					"won": "Выиграно",
+					"lost": "Проиграно",
+					"tied": "Ничьи"
 				}
 			},
 			"opponents": {
 				"title": "Все герои",
-				"next-opponent-title": "",
+				"next-opponent-title": "Ход {{turn}} - Следующий противник",
 				"empty-state-title": "Здесь пока что ничего нет",
 				"empty-state-subtitle": "Выбери героя и подожди своих противников!",
 				"score-board-title": "",
 				"score-board-tooltip": "",
 				"tavern-upgrade-title": "",
-				"tavern-last-upgrade-title": "",
+				"tavern-last-upgrade-title": "Последние улучшения",
 				"tavern-empty-state": "",
 				"last-opponent-icon-tooltip": "Был противников в прошлом раунде",
 				"triple-title": "Новых триплетов",
@@ -1425,12 +1425,12 @@
 		},
 		"post-match-stats": {
 			"title": "",
-			"final-board": "",
+			"final-board": "Ваш финальный стол",
 			"current-board": "Ваш финальный стол",
-			"final-position": "",
+			"final-position": "Вы закончили #{{position}}",
 			"live-stats-title": "",
 			"tabs": {
-				"hp-by-turn": "",
+				"hp-by-turn": "Здоровье по ходам",
 				"stats": "",
 				"warband-composition-by-turn": "Состав сборки",
 				"warband-total-stats-by-turn": "Статистика сборок",
@@ -1438,7 +1438,7 @@
 				"battles": "Битвы"
 			},
 			"hp-graph": {
-				"legend-title": "",
+				"legend-title": "Показать:",
 				"player-health": "{{playerName}} ед. здоровья"
 			},
 			"composition": {
@@ -1459,8 +1459,8 @@
 			"exceptions-tooltip": ""
 		},
 		"board": {
-			"seen-just-now": "Стол оппонента сейчас",
-			"seen-turns-ago": "Стол оппонента {{value}} ходов назад",
+			"seen-just-now": "Текущий стол противника",
+			"seen-turns-ago": "Стол противника {{value}} ходов назад",
 			"opponent-not-met": "Вы ещё не сражались с этим противником",
 			"last-board-empty": "Стол противника был пуст",
 			"total-damage": "Сум. урон",
@@ -1662,7 +1662,7 @@
 			"menu": {
 				"global": "Глобальные настройки",
 				"your-deck": "Ваша колода",
-				"opponent-deck": "Колода оппонента",
+				"opponent-deck": "Колода противника",
 				"duels": "Дуэли",
 				"launch": "Настройки запуска"
 			},
@@ -1897,7 +1897,7 @@
 				"minions-list-show-tribes-highlight-tooltip": "",
 				"minions-list-show-golden-cards-label": "",
 				"minions-list-show-golden-cards-tooltip": "",
-				"opponent-board-title": "Стол оппонента",
+				"opponent-board-title": "Стол противника",
 				"opponent-board-show-top-label": "",
 				"opponent-board-show-top-tooltip": "",
 				"counters-title": "Счётчики",
@@ -1942,7 +1942,7 @@
 			"general": {
 				"player-team-widget-label": "Виджет отряда игрока",
 				"player-team-widget-tooltip": "",
-				"opponent-team-widget-label": "Виджет отряда оппонента",
+				"opponent-team-widget-label": "Виджет отряда противника",
 				"opponent-team-widget-tooltip": "",
 				"map-team-widget-label": "",
 				"map-team-widget-tooltip": "",
@@ -1959,7 +1959,7 @@
 				"synergies-label": "Выделять синергии",
 				"synergies-tooltip": "",
 				"your-team": "Ваш отряд",
-				"opponent-team": "Отряд оппонента",
+				"opponent-team": "Отряд противника",
 				"action-queue": ""
 			}
 		},
