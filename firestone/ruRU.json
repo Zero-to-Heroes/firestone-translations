@@ -272,7 +272,7 @@
 					"wild": "Вольный"
 				},
 				"hero-portrait": {
-					"collectible": "Рейтинговая",
+					"collectible": "Констрактед",
 					"battlegrounds": "Поля сражений",
 					"mercenaries": "Наёмники",
 					"book-of-mercs": "Книга наёмников"
@@ -399,9 +399,9 @@
 				"dust-tooltip": "Вам нужно {{value}} пыли для завершения набора",
 				"duplicate-dust": "Пыль с дубликатов",
 				"duplicate-dust-tooltip": "",
-				"golden-dust": "",
-				"golden-dust-tooltip": "",
-				"golden-duplicate-dust": "",
+				"golden-dust": "Золотая пыль",
+				"golden-dust-tooltip": "Вам нужно {{value}} пыли для завершения золотого набора",
+				"golden-duplicate-dust": "Пыль с золотых дубликатов",
 				"golden-duplicate-dust-tooltip": "",
 				"commons": "Обычные",
 				"commons-missing": "Недостающие обычные карты",
@@ -475,7 +475,7 @@
 				"ranking-header": "Рейтинг"
 			},
 			"filters": {
-				"filter-info-tooltip": "",
+				"filter-info-tooltip": "Изменение этих фильтров также повлияет на статистику, отображаемую в дек-трекере в игре",
 				"deck-sort": {
 					"last-played": "Последнее использование",
 					"games-played": "Сыграно партий",
@@ -503,7 +503,7 @@
 				"rank-group": {
 					"per-match": "Показать каждый матч",
 					"per-day": "Группировать по дням",
-					"per-day-tooltip": ""
+					"per-day-tooltip": "Показывать рейтинг в начале каждого дня"
 				},
 				"time-filter": {
 					"all-time": "Последние 100 дней",
@@ -562,7 +562,7 @@
 				"header": ""
 			},
 			"rating-graph": {
-				"empty-state-message": ""
+				"empty-state-message": "Пожалуйста, убедитесь, что выше выбран отдельный режим игры (Стандартный, Вольный или Классический), а также проверьте фильтр Бронза / Легенда."
 			},
 			"replays-recap": {
 				"header": "Последние {{value}} повторов(а)",
@@ -604,7 +604,7 @@
 				"rank-group": {
 					"per-match": "Показать каждый матч",
 					"per-day": "Группировать по дням",
-					"per-day-tooltip": ""
+					"per-day-tooltip": "Показывать рейтинг в начале каждого дня"
 				},
 				"time": {
 					"past-seven": "Последние 7 дней",
@@ -660,14 +660,14 @@
 					},
 					"last-warbands": {
 						"title": "",
-						"damage-dealt": "",
+						"damage-dealt": "Нанесено урона",
 						"damage-dealt-tooltip": "",
-						"damage-taken": "",
+						"damage-taken": "Получено урона",
 						"damage-taken-tooltip": "",
 						"empty-state-message": "Начни играть в Поля сражений этим героем, чтоб собрать информацию",
 						"finished-position": "Занял {{value}}",
-						"last-board": "",
-						"long-ago": "",
+						"last-board": "Последний стол",
+						"long-ago": "Давно",
 						"place-1": "1 место!!!!",
 						"place-2": "2 место!!!",
 						"place-3": "3 место!!",
@@ -675,12 +675,12 @@
 						"place-default": "{{value}} место"
 					},
 					"warband-stats": {
-						"community-tooltip": "",
-						"your-tooltip": ""
+						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода битвы",
+						"your-tooltip": "Ваши значения для этого героя"
 					},
 					"winrate-stats": {
-						"community-tooltip": "",
-						"your-tooltip": ""
+						"community-tooltip": "Средняя вероятность победы (% шанса выиграть битву) за каждый ход для этого героя",
+						"your-tooltip": "Ваши значения для этого героя"
 					},
 					"mmr": {
 						"empty-state-message": "Начни играть в Поля сражений этим героем, чтоб собрать информацию"
@@ -721,7 +721,7 @@
 						"battle-luck": "Удача в боях",
 						"battle-luck-explain-link": "Что это?",
 						"battle-luck-explain-link-tooltip": "Показатель, который говорит о том, насколько удачливым вы были в битвах. Нажмите для получения дополнительной информации",
-						"negative-battle-luck": ""
+						"negative-battle-luck": "Отрицательная удача в боях"
 					},
 					"record-broken-tooltip": "Вы побили свой рекорд!"
 				}
@@ -1083,7 +1083,7 @@
 		"previous-button": "Назад",
 		"steps": {
 			"decktracker": {
-				"title": "Трекер колоды",
+				"title": "Дек-трекер",
 				"text": ""
 			},
 			"battlegrounds": {
@@ -1181,7 +1181,7 @@
 			"your-usage": "",
 			"your-usage-tooltip": "",
 			"number-of-games-tooltip": "{{totalMatches}} матчей записано (популярность {{popularity}})",
-			"level-header": "",
+			"level-header": "Ур.",
 			"role-header": "Роль",
 			"name-header": "Имя",
 			"xp-header": "",
@@ -1259,7 +1259,7 @@
 		"stats": {
 			"deck-winrate": "Винрейт колоды",
 			"deck-winrate-tooltip": "Винрейт этой колоды в рейтинговой игре с {{value}}",
-			"deck-winrate-vs-class": "",
+			"deck-winrate-vs-class": "vs {{value}}",
 			"deck-winrate-vs-class-tooltip": ""
 		},
 		"secrets-helper": {
@@ -1489,7 +1489,7 @@
 		}
 	},
 	"session": {
-		"title": "",
+		"title": "Обзор сессии",
 		"title-tooltip": "",
 		"display-mode": {
 			"all": "",
@@ -1547,7 +1547,7 @@
 		},
 		"menu": {
 			"general": "Общие",
-			"decktracker": "Трекер колоды",
+			"decktracker": "Дек-трекер",
 			"battlegrounds": "Поля сражений",
 			"mercenaries": "Наёмники",
 			"replays": "Повторы",
@@ -1599,11 +1599,11 @@
 				}
 			},
 			"bug-report": {
-				"title": "",
+				"title": "Отправить отзыв / сообщить об ошибке",
 				"simulator-bug-text": "Если вы хотите сообщить об ошибке в симуляторе (и хотите помочь мне, насколько это возможно), пожалуйста, ознакомьтесь с инструкциями",
 				"general-bug-text": "Для других серьезных проблем (например, приложение не работает) есть несколько полезных шагов по устранению неполадок",
 				"link-text": "здесь",
-				"email-placeholder": "",
+				"email-placeholder": "Ваш email (необязательно)",
 				"message-placeholder": "Ваше сообщение. Если вы сообщаете об ошибке, постарайтесь максимально точно описать, что вы делали в момент возникновения ошибки, и в чем именно она заключается.",
 				"send-button": "Отправить",
 				"status-uploading-logs": "",
@@ -1625,28 +1625,28 @@
 				"delay-label-tooltip": ""
 			},
 			"launch": {
-				"launch-on-game-start-label": "",
-				"launch-on-game-start-tooltip": "",
+				"launch-on-game-start-label": "Запускать Firestone при старте игры",
+				"launch-on-game-start-tooltip": "Когда отключено, вам нужно будет запускать Firestone каждый раз вручную",
 				"integrated-mode-label": "Интегрированный режим",
-				"integrated-mode-tooltip": "",
-				"session-recap-on-exit-label": "",
-				"session-recap-on-exit-tooltip": "",
-				"xp-recap-on-game-end-label": "",
-				"xp-recap-on-game-end-tooltip": "",
+				"integrated-mode-tooltip": "Когда включено, главное окно становится оверлеем и встраивается в игровое окно. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением. Изменение этого значения закроет и откроет заново окно настроек и основное окно приложения",
+				"session-recap-on-exit-label": "Обзор сессии игры при выходе",
+				"session-recap-on-exit-tooltip": "Показывает обзор последней сессии игры при выходе из Hearthstone",
+				"xp-recap-on-game-end-label": "Показывать полученный опыт в конце игры",
+				"xp-recap-on-game-end-tooltip": "Показывает обзор опыта / уровней, полученных после каждого матча",
 				"hide-release-notes-label": "Скрывать описание релиза при запуске приложения",
-				"hide-release-notes-tooltip": "",
+				"hide-release-notes-tooltip": "Не показывать описание обновления о новой версии Firestone",
 				"display-notifications-label": "Отображать уведомления",
-				"display-notifications-tooltip": "",
-				"display-notifications-confirmation": "",
-				"accessibility-title": "",
-				"flash-window": "",
-				"flash-window-tooltip": "",
-				"zoom-label": "",
-				"zoom-tooltip": "",
-				"reset-prefs-button-default": "",
+				"display-notifications-tooltip": "Включение/отключение глобальной видимости всплывающих уведомлений [bottom-right]. Когда включено, вы по-прежнему можете настроить уведомления для каждого режима игры на соответствующих вкладках",
+				"display-notifications-confirmation": "Уведомления теперь ОТКЛЮЧЕНЫ везде.",
+				"accessibility-title": "Доступность",
+				"flash-window": "Мигать окном HS",
+				"flash-window-tooltip": "Мигать окном HS на вашем ходу или когда начинается фаза рекрутирования на BG",
+				"zoom-label": "Масштабирование",
+				"zoom-tooltip": "Уровень масштабирования, который будет применяться ко всем окнам",
+				"reset-prefs-button-default": "Сбросить настройки",
 				"reset-prefs-button-confirmation": "Вы уверены?",
-				"reset-prefs-tooltip": "",
-				"reset-prefs-confirmation": "",
+				"reset-prefs-tooltip": "Сбросить все ваши настройки, включая различные позиции виджетов на экране",
+				"reset-prefs-confirmation": "Все ваши настройки были сброшены. Это включает в себя различные места расположения виджетов на экране, а также ваши настройки Twitch, поэтому не забудьте настроить всё необходимое заново :)",
 				"restart-app-button-label": "Перезапустить Firestone"
 			},
 			"localization": {
@@ -1825,7 +1825,7 @@
 			"history-show-only-new-cards": "Только новые",
 			"pack-stats-show-only-buyable-packs": "Показывать только основные комплекты",
 			"pack-stats-show-only-buyable-packs-tooltip": "Показывать только комплекты, которые можно купить в магазине, скрывая все наградные комплекты",
-			"set-show-golden-stats": ""
+			"set-show-golden-stats": "Показывать статистику для золотых"
 		},
 		"duels": {
 			"personal-decks-show-hidden-decks": "Показать архивные",
@@ -1836,7 +1836,7 @@
 			"menu": {
 				"general": "Общие",
 				"overlay": "Оверлей",
-				"session": ""
+				"session": "Виджет сессии"
 			},
 			"full-toggle-label": "",
 			"full-toggle-tooltip": "",
@@ -1907,8 +1907,8 @@
 				"counter-majordomo-tooltip": ""
 			},
 			"session-widget": {
-				"title": "",
-				"label": "",
+				"title": "Виджет сессии",
+				"label": "Показывать виджет сессии",
 				"label-tooltip": "",
 				"show-groups": "",
 				"show-groups-tooltip": "",
@@ -1925,11 +1925,11 @@
 				"notifications": "Уведомления"
 			},
 			"notifications": {
-				"title": "",
-				"firestone-achievements-text": "",
-				"firestone-achievements-tooltip": "",
-				"show-notifications-text": "",
-				"show-notifications-tooltip": "",
+				"title": "Обновление параметров уведомлений о достижениях",
+				"firestone-achievements-text": "Включить Firestone достижения",
+				"firestone-achievements-tooltip": "Включить отслеживание эксклюзивных Firestone достижений",
+				"show-notifications-text": "Показывать уведомления",
+				"show-notifications-tooltip": "Отображение уведомления при разблокировке достижения. Отключение этой опции также отключит внутриигровое отслеживание для достижений из Hearthstone",
 				"streamer-mode-text": "",
 				"streamer-mode-tooltip": "",
 				"streamer-mode-confirmation": ""
