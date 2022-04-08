@@ -141,7 +141,7 @@
 			"treant": "Древень",
 			"owlkin": "Совух",
 			"halforc": "Полуорк",
-			"lock": ""
+			"lock": "Закрепить"
 		},
 		"legendary-minion": "Легендарное существо",
 		"patch": "Обновление {{version}}.{{number}} от {{date}}",
@@ -249,7 +249,7 @@
 			"runs": {
 				"view-run-button": "Смотреть забег",
 				"minimize-run-button": "Свернуть",
-				"run-name": "",
+				"run-name": "{{value}} Побед на Арене",
 				"load-runs-button": "Нажмите, чтобы загрузить больше игр"
 			},
 			"empty-state": {
@@ -272,7 +272,7 @@
 					"wild": "Вольный"
 				},
 				"hero-portrait": {
-					"collectible": "Рейтинговая",
+					"collectible": "Констрактед",
 					"battlegrounds": "Поля сражений",
 					"mercenaries": "Наёмники",
 					"book-of-mercs": "Книга наёмников"
@@ -328,50 +328,50 @@
 						"basic": "Базовые",
 						"spell": "Заклинания",
 						"emote": "Эмоции",
-						"event": "",
+						"event": "События",
 						"error": "Ошибки",
-						"other": ""
+						"other": "Прочие"
 					},
 					"effect": {
 						"play": "Розыгрыш карты",
 						"death": "Смерть",
 						"attack": "Атака",
-						"greetings": "Приветствия",
-						"greetings-response": "",
+						"greetings": "Приветствие",
+						"greetings-response": "Ответ на приветствие",
 						"well-played": "Неплохо сыграно",
-						"oops": "",
-						"threaten": "",
+						"oops": "Ой!",
+						"threaten": "Угроза",
 						"thanks": "Спасибо",
 						"sorry": "Извини",
 						"concede": "Сдаться",
-						"start": "",
+						"start": "Начало игры",
 						"timer": "Таймер",
-						"think-1": "",
-						"think-2": "",
-						"think-3": "",
-						"low-cards": "",
-						"no-cards": "",
+						"think-1": "Думает 1",
+						"think-2": "Думает 2",
+						"think-3": "Думает 3",
+						"low-cards": "Почти не осталось карт",
+						"no-cards": "Больше не осталось карт",
 						"won": "Победа",
-						"mirror-start": "",
-						"error-need-weapon": "",
-						"error-need-mana": "",
-						"error-minion-attacked": "",
-						"error-i-attacked": "",
-						"error-just-played": "",
-						"error-hand-full": "",
-						"error-full-minions": "",
-						"error-stealth": "",
-						"error-play": "",
-						"error-target": "",
-						"error-taunt": "",
-						"error-generic": "",
-						"lunar-new-year": "",
-						"winterveil-greetings": "",
-						"happy-new-year-20": "",
-						"fire-festival": "",
-						"pirate-day": "",
-						"hallows-end": "",
-						"noblegarden": ""
+						"mirror-start": "Зеркальный старт",
+						"error-need-weapon": "Ошибка Нужно оружие",
+						"error-need-mana": "Ошибка Нужна мана",
+						"error-minion-attacked": "Ошибка Существо уже атаковало",
+						"error-i-attacked": "Ошибка Я уже атаковал(а)",
+						"error-just-played": "Ошибка Существо уже ходило",
+						"error-hand-full": "Ошибка Полная рука",
+						"error-full-minions": "Ошибка Много существ",
+						"error-stealth": "Ошибка Стелс",
+						"error-play": "Ошибка Разыграть",
+						"error-target": "Ошибка Цель",
+						"error-taunt": "Ошибка Провокация",
+						"error-generic": "Ошибка Общая",
+						"lunar-new-year": "Лунный фестиваль",
+						"winterveil-greetings": "Зимний Покров - приветствие",
+						"happy-new-year-20": "С Новым годом 20",
+						"fire-festival": "Огненный солнцеворот",
+						"pirate-day": "День пирата",
+						"hallows-end": "Тыквовин",
+						"noblegarden": "Сад чудес"
 					}
 				}
 			},
@@ -380,7 +380,7 @@
 				"you-have-viewed": "",
 				"load-more-button": "Ещё",
 				"empty-state": {
-					"title": "",
+					"title": "Пока нет истории",
 					"subtitle": "Открой комплект, чтобы начать!"
 				}
 			},
@@ -399,9 +399,9 @@
 				"dust-tooltip": "Вам нужно {{value}} пыли для завершения набора",
 				"duplicate-dust": "Пыль с дубликатов",
 				"duplicate-dust-tooltip": "",
-				"golden-dust": "",
-				"golden-dust-tooltip": "",
-				"golden-duplicate-dust": "",
+				"golden-dust": "Золотая пыль",
+				"golden-dust-tooltip": "Вам нужно {{value}} пыли для завершения золотого набора",
+				"golden-duplicate-dust": "Пыль с золотых дубликатов",
 				"golden-duplicate-dust-tooltip": "",
 				"commons": "Обычные",
 				"commons-missing": "Недостающие обычные карты",
@@ -475,7 +475,7 @@
 				"ranking-header": "Рейтинг"
 			},
 			"filters": {
-				"filter-info-tooltip": "",
+				"filter-info-tooltip": "Изменение этих фильтров также повлияет на статистику, отображаемую в дек-трекере в игре",
 				"deck-sort": {
 					"last-played": "Последнее использование",
 					"games-played": "Сыграно партий",
@@ -503,7 +503,7 @@
 				"rank-group": {
 					"per-match": "Показать каждый матч",
 					"per-day": "Группировать по дням",
-					"per-day-tooltip": ""
+					"per-day-tooltip": "Показывает рейтинг на начало дня"
 				},
 				"time-filter": {
 					"all-time": "Последние 100 дней",
@@ -516,15 +516,15 @@
 			},
 			"matchup-info": {
 				"total-matches-header": "Всего матчей",
-				"win-percent-header": "",
-				"win-total-header": "",
-				"win-play-percent-header": "",
-				"win-play-total-header": "",
-				"win-coin-percent-header": "",
-				"win-coin-total-header": "",
+				"win-percent-header": "% Побед",
+				"win-total-header": "Побед",
+				"win-play-percent-header": "% Побед первым",
+				"win-play-total-header": "Побед первым",
+				"win-coin-percent-header": "% Побед с монеткой",
+				"win-coin-total-header": "Побед с монеткой",
 				"total-header": "Всего",
 				"show-as-percent-button-label": "Показать в %",
-				"reset-button-label": "",
+				"reset-button-label": "Сбросить статистику",
 				"reset-button-tooltip": "",
 				"reset-confirmation": "",
 				"reset-are-you-sure": "Вы уверены?",
@@ -536,10 +536,10 @@
 				"copy-deck-code-button": "Копировать код колоды"
 			},
 			"deck-recap": {
-				"overall-stats-header": "",
+				"overall-stats-header": "Общая статистика",
 				"watch-replays-button": "Смотреть повторы",
 				"best-against": "Лучше всего против",
-				"winrate": "",
+				"winrate": "доля побед",
 				"games": "игр"
 			},
 			"deck-summary": {
@@ -555,14 +555,14 @@
 				"empty-state-subtitle": ""
 			},
 			"ladder-stats": {
-				"title-player": "",
-				"title-opponent": ""
+				"title-player": "Разбивка классов игрока",
+				"title-opponent": "Разбивка классов оппонентов"
 			},
 			"personal-stats-ranking": {
 				"header": ""
 			},
 			"rating-graph": {
-				"empty-state-message": ""
+				"empty-state-message": "Пожалуйста, убедитесь, что выше выбран отдельный режим игры (Стандартный, Вольный или Классический), а также проверьте фильтр Бронза / Легенда."
 			},
 			"replays-recap": {
 				"header": "Последние {{value}} повторов(а)",
@@ -570,9 +570,9 @@
 			},
 			"stats": {
 				"total-games-played": "Всего партий сыграно",
-				"total-time-played": "",
-				"turns-to-win": "",
-				"turns-to-lose": "",
+				"total-time-played": "Общее время игры",
+				"turns-to-win": "Ходов до победы",
+				"turns-to-lose": "Ходов до поражения",
 				"winrate": "Доля побед",
 				"winrate-first": "Доля побед (первым)",
 				"winrate-coin": "Доля побед (с монеткой)"
@@ -591,7 +591,7 @@
 					"all": "Все герои"
 				},
 				"hero-sort": {
-					"tier": "",
+					"tier": "Тир",
 					"average-position": "Место в среднем",
 					"mmr": "Чистый MMR",
 					"games-played": "Сыграно партий",
@@ -604,7 +604,7 @@
 				"rank-group": {
 					"per-match": "Показать каждый матч",
 					"per-day": "Группировать по дням",
-					"per-day-tooltip": ""
+					"per-day-tooltip": "Показывает рейтинг на начало дня"
 				},
 				"time": {
 					"past-seven": "Последние 7 дней",
@@ -619,7 +619,7 @@
 				},
 				"tribe": {
 					"all-tribes": "Все типы существ",
-					"no-tribe": "",
+					"no-tribe": "Без типа",
 					"validation-error-tooltip": "Пожалуйста, выберите все типы существ или только 5"
 				},
 				"signature-treasure": {
@@ -660,14 +660,14 @@
 					},
 					"last-warbands": {
 						"title": "",
-						"damage-dealt": "",
+						"damage-dealt": "Нанесено урона",
 						"damage-dealt-tooltip": "",
-						"damage-taken": "",
+						"damage-taken": "Получено урона",
 						"damage-taken-tooltip": "",
 						"empty-state-message": "Начни играть в Поля сражений этим героем, чтоб собрать информацию",
 						"finished-position": "Занял {{value}}",
-						"last-board": "",
-						"long-ago": "",
+						"last-board": "Последний стол",
+						"long-ago": "Давно",
 						"place-1": "1 место!!!!",
 						"place-2": "2 место!!!",
 						"place-3": "3 место!!",
@@ -675,12 +675,12 @@
 						"place-default": "{{value}} место"
 					},
 					"warband-stats": {
-						"community-tooltip": "",
-						"your-tooltip": ""
+						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода битвы",
+						"your-tooltip": "Ваши значения для этого героя"
 					},
 					"winrate-stats": {
-						"community-tooltip": "",
-						"your-tooltip": ""
+						"community-tooltip": "Средняя вероятность победы (% шанса выиграть битву) за каждый ход для этого героя",
+						"your-tooltip": "Ваши значения для этого героя"
 					},
 					"mmr": {
 						"empty-state-message": "Начни играть в Поля сражений этим героем, чтоб собрать информацию"
@@ -721,7 +721,7 @@
 						"battle-luck": "Удача в боях",
 						"battle-luck-explain-link": "Что это?",
 						"battle-luck-explain-link-tooltip": "Показатель, который говорит о том, насколько удачливым вы были в битвах. Нажмите для получения дополнительной информации",
-						"negative-battle-luck": ""
+						"negative-battle-luck": "Отрицательная удача в боях"
 					},
 					"record-broken-tooltip": "Вы побили свой рекорд!"
 				}
@@ -883,19 +883,19 @@
 				"missing": "",
 				"missing-empty-state-title": "",
 				"missing-empty-state-text": "",
-				"completed": ""
+				"completed": "Выполненные достижения"
 			},
 			"history": {
 				"title": "История моих достижений",
 				"empty-state-title": "",
 				"empty-state-subtitle": "Выполните достижение, чтобы начать!"
 			},
-			"search-placeholder": "Поиск достижения..."
+			"search-placeholder": "Поиск достижений..."
 		},
 		"replays": {
 			"filters": {
 				"hero": {
-					"all": ""
+					"all": "Все герои"
 				},
 				"deck": {
 					"all": "Все колоды"
@@ -932,10 +932,10 @@
 				"empty-state-subtitle": "Не удается получить статистику"
 			},
 			"replay-info": {
-				"rank-issue-tooltip": "Возникла проблема при определении ранга игрока",
+				"rank-issue-tooltip": "Возникла проблема при определении ранга",
 				"versus": "VS",
-				"loot-icon-tooltip": "",
-				"treasure-icon-tooltip": "Карты добавленные в колоду после этого раунда",
+				"loot-icon-tooltip": "Карты добавленные в колоду после этого раунда",
+				"treasure-icon-tooltip": "Сокровище добавленное в колоду после этого раунда",
 				"mmr": "MMR",
 				"show-stats-button": "Статистика",
 				"show-stats-button-tooltip": "Показать статистику",
@@ -993,7 +993,7 @@
 			"tip-2": "Нажмите на значок \"Сообщить об ошибке\" вверху, чтобы отправить отчёт об ошибке или предложить улучшения",
 			"tip-3": "Если вы сталкиваетесь с серьезными ошибками (например, сбор данных не синхронизируется, трекер не работает и т.п.), попробуйте запустить приложение как администратор.",
 			"tip-4": "Настройки имеют множество параметров кастомизации, ознакомьтесь с ними, чтобы включить/выключить некоторые функции",
-			"tip-5": "[Наёмники] Смотрите столбец «Всего монет», сделав окно шире",
+			"tip-5": "[Наёмники] Если расширить окно приложения, то появится столбец «Всего монет»",
 			"tip-6": "[Наёмники] Выберите опцию «Наемники (PvP)» в повторах, чтобы увидеть более подробную информацию о командах в каждом матче",
 			"tip-7": "[Наёмники] Наведите курсор на столбец «Выполнено задач», чтобы узнать как вручную задать прогресс задач каждого наёмника",
 			"tip-8": "[Поля сражений] Смотрите подробные данные в реальном времени, вызвав окно Полей сражений комбинацией Alt + B",
@@ -1064,7 +1064,7 @@
 			"opponent": ""
 		},
 		"bgs-southsea": {
-			"player": ""
+			"player": "Силачка Южных Морей даст +{{value}}/+{{value}}"
 		},
 		"bgs-majordomo": {
 			"player": ""
@@ -1083,7 +1083,7 @@
 		"previous-button": "Назад",
 		"steps": {
 			"decktracker": {
-				"title": "Трекер колоды",
+				"title": "Дек-трекер",
 				"text": ""
 			},
 			"battlegrounds": {
@@ -1128,11 +1128,11 @@
 				"non-upgraded": "Можно улучшить"
 			},
 			"hero-level": {
-				"level-0": "",
-				"level-1": "",
-				"level-5": "",
-				"level-15": "",
-				"level-30": ""
+				"level-0": "Все уровни",
+				"level-1": "Уровень 1-4",
+				"level-5": "Уровень 5-14",
+				"level-15": "Уровень 15-29",
+				"level-30": "Уровень 30"
 			},
 			"mode": {
 				"pve": "PvE",
@@ -1181,7 +1181,7 @@
 			"your-usage": "",
 			"your-usage-tooltip": "",
 			"number-of-games-tooltip": "{{totalMatches}} матчей записано (популярность {{popularity}})",
-			"level-header": "",
+			"level-header": "Ур.",
 			"role-header": "Роль",
 			"name-header": "Имя",
 			"xp-header": "",
@@ -1207,7 +1207,7 @@
 		"teams": {
 			"games": "Игр: {{value}}",
 			"winrate": "Доля побед: {{value}}%",
-			"last-used": "Посл. использование: {{value}}",
+			"last-used": "Посл. игра: {{value}}",
 			"archive-button-tooltip": "Архивировать этот отряд (вы можете восстановить его позже)",
 			"restore-button-tooltip": "Восстановить этот отряд",
 			"unnamed-team": "Безымянный отряд"
@@ -1259,7 +1259,7 @@
 		"stats": {
 			"deck-winrate": "Винрейт колоды",
 			"deck-winrate-tooltip": "Винрейт этой колоды в рейтинговой игре с {{value}}",
-			"deck-winrate-vs-class": "",
+			"deck-winrate-vs-class": "vs {{value}}",
 			"deck-winrate-vs-class-tooltip": ""
 		},
 		"secrets-helper": {
@@ -1290,11 +1290,11 @@
 			"turn": "{{value}} ход",
 			"chance-label": "",
 			"win-chance-label": "Победа",
-			"win-chance-tooltip": "",
+			"win-chance-tooltip": "Шансы на победу в этой битве",
 			"tie-chance-label": "Ничья",
-			"tie-chance-tooltip": "",
+			"tie-chance-tooltip": "Шансы сыграть в ничью эту битву",
 			"lose-chance-label": "Поражение",
-			"lose-chance-tooltip": "",
+			"lose-chance-tooltip": "Шансы на поражение в этой битве",
 			"damage-title": "Урон",
 			"damage-dealt-tooltip": "Средний наносимый урон",
 			"damage-received-tooltip": "Средний получаемый урон",
@@ -1334,7 +1334,7 @@
 			"reposition-button-firstpass": "",
 			"reposition-button-secondpass": "",
 			"reposition-button-finalresult": "",
-			"reposition-button-done": "",
+			"reposition-button-done": "Завершена",
 			"reposition-button-cancel": "Отмена",
 			"reposition-button-cancelling": "",
 			"reposition-button-tooltip": "(БЕТА) Подбор наилучшей позиции для вашего набора существ. В зависимости от количества CPU и сложности стола, процесс может занять несколько минут, во время которого будет использовано много ресурсов CPU и RAM.",
@@ -1344,14 +1344,14 @@
 			"reposition-button-tooltip-done": "",
 			"reposition-button-tooltip-cancel": "Нажмите, чтобы отменить репозицию",
 			"reposition-button-tooltip-cancelling": "",
-			"actual": "Актуальный",
-			"simulated": "Симулированый",
+			"actual": "Актуальный стол",
+			"simulated": "Симуляция",
 			"empty-state-title": "Здесь пока что ничего нет",
 			"empty-state-subtitle": "Ваша первая битва будет показана здесь после того, как вы столкнетесь с противником",
 			"battles-header": "",
 			"turn-winrate-graph-title": "Средняя доля побед по ходам",
 			"hero-power-title": "Сила героя",
-			"hero-power-info-tavish": "",
+			"hero-power-info-tavish": "Текущий ход",
 			"hero-powers-header": "Силы героев",
 			"hero-search-placeholder": "Поиск героя / силы героя",
 			"select-button": "Выбрать",
@@ -1408,7 +1408,7 @@
 				"score-board-tooltip": "",
 				"tavern-upgrade-title": "",
 				"tavern-last-upgrade-title": "Последние улучшения",
-				"tavern-empty-state": "",
+				"tavern-empty-state": "Не было улучшения таверны",
 				"last-opponent-icon-tooltip": "Был противников в прошлом раунде",
 				"triple-title": "Новых триплетов",
 				"triple-tooltip": "",
@@ -1425,7 +1425,7 @@
 		},
 		"post-match-stats": {
 			"title": "",
-			"final-board": "Ваш финальный стол",
+			"final-board": "Финальный стол",
 			"current-board": "Ваш финальный стол",
 			"final-position": "Вы закончили #{{position}}",
 			"live-stats-title": "",
@@ -1489,11 +1489,11 @@
 		}
 	},
 	"session": {
-		"title": "",
+		"title": "Обзор сессии",
 		"title-tooltip": "",
 		"display-mode": {
 			"all": "",
-			"battlegrounds": "",
+			"battlegrounds": "Поля сражений",
 			"unknown": ""
 		},
 		"buttons": {
@@ -1547,8 +1547,8 @@
 		},
 		"menu": {
 			"general": "Общие",
-			"decktracker": "Трекер колоды",
-			"battlegrounds": "Поля сражений",
+			"decktracker": "Дек-трекер",
+			"battlegrounds": "Поля сражений",
 			"mercenaries": "Наёмники",
 			"replays": "Повторы",
 			"collection": "Коллекция",
@@ -1599,11 +1599,11 @@
 				}
 			},
 			"bug-report": {
-				"title": "",
+				"title": "Отправить отзыв / сообщить об ошибке",
 				"simulator-bug-text": "Если вы хотите сообщить об ошибке в симуляторе (и хотите помочь мне, насколько это возможно), пожалуйста, ознакомьтесь с инструкциями",
 				"general-bug-text": "Для других серьезных проблем (например, приложение не работает) есть несколько полезных шагов по устранению неполадок",
 				"link-text": "здесь",
-				"email-placeholder": "",
+				"email-placeholder": "Ваш email (необязательно)",
 				"message-placeholder": "Ваше сообщение. Если вы сообщаете об ошибке, постарайтесь максимально точно описать, что вы делали в момент возникновения ошибки, и в чем именно она заключается.",
 				"send-button": "Отправить",
 				"status-uploading-logs": "",
@@ -1625,29 +1625,29 @@
 				"delay-label-tooltip": ""
 			},
 			"launch": {
-				"launch-on-game-start-label": "",
-				"launch-on-game-start-tooltip": "",
+				"launch-on-game-start-label": "Запускать Firestone при старте игры",
+				"launch-on-game-start-tooltip": "Когда отключено, вам нужно будет запускать Firestone каждый раз вручную",
 				"integrated-mode-label": "Интегрированный режим",
-				"integrated-mode-tooltip": "",
-				"session-recap-on-exit-label": "",
-				"session-recap-on-exit-tooltip": "",
-				"xp-recap-on-game-end-label": "",
-				"xp-recap-on-game-end-tooltip": "",
+				"integrated-mode-tooltip": "Когда включено, главное окно становится оверлеем и встраивается в игровое окно. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением. Изменение этого значения закроет и откроет заново окно настроек и основное окно приложения",
+				"session-recap-on-exit-label": "Обзор сессии игры при выходе",
+				"session-recap-on-exit-tooltip": "Показывает обзор последней сессии игры при выходе из Hearthstone",
+				"xp-recap-on-game-end-label": "Показывать полученный опыт в конце игры",
+				"xp-recap-on-game-end-tooltip": "Показывает обзор опыта / уровней, полученных после каждого матча",
 				"hide-release-notes-label": "Скрывать описание релиза при запуске приложения",
-				"hide-release-notes-tooltip": "",
+				"hide-release-notes-tooltip": "Не показывать описание обновления о новой версии Firestone",
 				"display-notifications-label": "Отображать уведомления",
-				"display-notifications-tooltip": "",
-				"display-notifications-confirmation": "",
-				"accessibility-title": "",
-				"flash-window": "",
-				"flash-window-tooltip": "",
-				"zoom-label": "",
-				"zoom-tooltip": "",
-				"reset-prefs-button-default": "",
+				"display-notifications-tooltip": "Включение/отключение глобальной видимости всплывающих уведомлений [bottom-right]. Когда включено, вы по-прежнему можете настроить уведомления для каждого режима игры на соответствующих вкладках",
+				"display-notifications-confirmation": "Уведомления теперь ОТКЛЮЧЕНЫ везде.",
+				"accessibility-title": "Доступность",
+				"flash-window": "Мигать окном HS",
+				"flash-window-tooltip": "Мигать окном HS на вашем ходу или когда начинается фаза рекрутирования на BG",
+				"zoom-label": "Масштабирование",
+				"zoom-tooltip": "Уровень масштабирования, который будет применяться ко всем окнам",
+				"reset-prefs-button-default": "Сбросить настройки",
 				"reset-prefs-button-confirmation": "Вы уверены?",
-				"reset-prefs-tooltip": "",
-				"reset-prefs-confirmation": "",
-				"restart-app-button-label": ""
+				"reset-prefs-tooltip": "Сбросить все ваши настройки, включая различные позиции виджетов на экране",
+				"reset-prefs-confirmation": "Все ваши настройки были сброшены. Это включает в себя различные места расположения виджетов на экране, а также ваши настройки Twitch, поэтому не забудьте настроить всё необходимое заново :)",
+				"restart-app-button-label": "Перезапустить Firestone"
 			},
 			"localization": {
 				"title": "Локализация",
@@ -1668,12 +1668,12 @@
 			},
 			"global": {
 				"title": "",
-				"minions-play-order": "",
+				"minions-play-order": "Порядок разыгранных существ",
 				"minions-play-order-tooltip": "",
-				"show-title-bar": "",
-				"show-title-bar-tooltip": "",
-				"show-control-bar": "",
-				"show-control-bar-tooltip": "",
+				"show-title-bar": "Показать заголовок",
+				"show-title-bar-tooltip": "Показать/Скрыть название колоды и количество карт в руке и колоде",
+				"show-control-bar": "Показать панель управления",
+				"show-control-bar-tooltip": "Показать/Скрыть панель с лого и кнопками управления",
 				"show-tooltips-on-hover": "",
 				"show-rarity-color": "",
 				"show-rarity-color-tooltip": "",
@@ -1702,7 +1702,7 @@
 			},
 			"modes": {
 				"title": "",
-				"ranked": "",
+				"ranked": "Рейтинговый режим",
 				"duels": "Дуэли",
 				"arena": "Арена",
 				"tavern-brawl": "Потасовка",
@@ -1825,7 +1825,7 @@
 			"history-show-only-new-cards": "Только новые",
 			"pack-stats-show-only-buyable-packs": "Показывать только основные комплекты",
 			"pack-stats-show-only-buyable-packs-tooltip": "Показывать только комплекты, которые можно купить в магазине, скрывая все наградные комплекты",
-			"set-show-golden-stats": ""
+			"set-show-golden-stats": "Показывать статистику для золотых"
 		},
 		"duels": {
 			"personal-decks-show-hidden-decks": "Показать архивные",
@@ -1836,7 +1836,7 @@
 			"menu": {
 				"general": "Общие",
 				"overlay": "Оверлей",
-				"session": ""
+				"session": "Виджет сессии"
 			},
 			"full-toggle-label": "",
 			"full-toggle-tooltip": "",
@@ -1901,14 +1901,14 @@
 				"opponent-board-show-top-label": "",
 				"opponent-board-show-top-tooltip": "",
 				"counters-title": "Счётчики",
-				"counter-soutshsea-label": "",
+				"counter-soutshsea-label": "Силачка Южных Морей",
 				"counter-soutshsea-tooltip": "",
 				"counter-majordomo-label": "Мажордом Экзекутус",
 				"counter-majordomo-tooltip": ""
 			},
 			"session-widget": {
-				"title": "",
-				"label": "",
+				"title": "Виджет сессии",
+				"label": "Показывать виджет сессии",
 				"label-tooltip": "",
 				"show-groups": "",
 				"show-groups-tooltip": "",
@@ -1925,11 +1925,11 @@
 				"notifications": "Уведомления"
 			},
 			"notifications": {
-				"title": "",
-				"firestone-achievements-text": "",
-				"firestone-achievements-tooltip": "",
-				"show-notifications-text": "",
-				"show-notifications-tooltip": "",
+				"title": "Обновление параметров уведомлений о достижениях",
+				"firestone-achievements-text": "Включить Firestone достижения",
+				"firestone-achievements-tooltip": "Включить отслеживание эксклюзивных Firestone достижений",
+				"show-notifications-text": "Показывать уведомления",
+				"show-notifications-tooltip": "Отображение уведомления при разблокировке достижения. Отключение этой опции также отключит внутриигровое отслеживание для достижений из Hearthstone",
 				"streamer-mode-text": "",
 				"streamer-mode-tooltip": "",
 				"streamer-mode-confirmation": ""
