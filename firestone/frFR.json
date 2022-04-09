@@ -49,7 +49,7 @@
 			"mean-streets": "Main basse sur Gadgetzan",
 			"ungoro": "Voyage au centre d’Un’Goro",
 			"frozen-throne": "Chevaliers du Trône de glace",
-			"golden-classic-pack": "Classique dorés",
+			"golden-classic-pack": "Classique (Doré)",
 			"kobolds-and-catacombs": "Kobolds et Catacombes",
 			"witchwood": "Le Bois Maudit",
 			"the-boomsday-project": "Projet Armageboum",
@@ -65,7 +65,7 @@
 			"standard-mage": "de classe mage",
 			"the-barrens": "Forgés dans les Tarides",
 			"stormwind": "Unis à Hurlevent",
-			"golden-scholomance": "L’Académie Scholomance dorés",
+			"golden-scholomance": "L’Académie Scholomance (Doré)",
 			"darkmoon-faire": "Folle journée à Sombrelune",
 			"lettuce": "Mercenaires",
 			"standard-druid": "de classe druide",
@@ -76,16 +76,17 @@
 			"standard-shaman": "de classe chaman",
 			"standard-warlock": "de classe démoniste",
 			"standard-demonhunter": "de classe chasseur de démons",
-			"golden-darkmoon-faire": "Folle journée à Sombrelune dorés",
+			"golden-darkmoon-faire": "Folle journée à Sombrelune (Doré)",
 			"alterac-valley": "Divisés en Alterac",
-			"golden-the-barrens": "Forgés dans les Tarides dorés",
+			"golden-the-barrens": "Forgés dans les Tarides (Doré)",
 			"year-of-phoenix": "Année du Phénix",
 			"standard-bundle": "Standard",
-			"wild-pack": "Libres",
-			"golden-standard-bundle": "Standard dorés",
-			"golden-stormwind": "Unis à Hurlevent dorés",
-			"golden-alterac-valley": "Divisés en Alterac dorés",
-			"the-sunken-city": "Au cœur de la cité engloutie"
+			"wild-pack": "Libre",
+			"golden-standard-bundle": "Standard (Doré)",
+			"golden-stormwind": "Unis à Hurlevent (Doré)",
+			"golden-alterac-valley": "Divisés en Alterac (Doré)",
+			"the-sunken-city": "Au cœur de la cité engloutie",
+			"golden-the-sunken-city": "Au cœur de la cité engloutie (Doré)"
 		},
 		"ranks": {
 			"constructed": {
@@ -141,7 +142,9 @@
 			"treant": "Tréant",
 			"owlkin": "Chouettide",
 			"halforc": "Demi-Orc",
-			"lock": "Verrou"
+			"lock": "Verrou",
+			"naga:": "Naga",
+			"oldgod": "Dieu très ancien"
 		},
 		"legendary-minion": "Serviteur Légendaire",
 		"patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -1015,6 +1018,9 @@
 			"player": "Vous piocherez {{cardsTotal}} cartes des écoles de magie : {{schools}}",
 			"opponent": "Votre adversaire piochera {{cardsTotal}} cartes des écoles de magie : {{schools}}"
 		},
+		"coral-keeper": {
+			"player": "Vous invoquerez {{totalSummons}} élémentaires de corail. Écoles de sort jouées : {{schools}}"
+		},
 		"brilliant-macaw": {
 			"player": "La dernière carte avec Cri de guerre que vous avez jouée est {{value}}",
 			"opponent": "La dernière carte avec Cri de guerre que votre adversaire a jouée est {{value}}"
@@ -1064,10 +1070,10 @@
 			"opponent": "Votre adversaire a joué {{value}} postes pendant cette partie"
 		},
 		"bgs-southsea": {
-			"player": ""
+			"player": "Votre prochaine gaillarde des mers du Sud donnera +{{value}}/+{{value}}"
 		},
 		"bgs-majordomo": {
-			"player": ""
+			"player": "Chambellan Executus donnera +{{value}}/+{{value}} en plus à la fin du tour"
 		}
 	},
 	"loading": {
@@ -1154,8 +1160,8 @@
 			},
 			"starter": {
 				"all": "Tous",
-				"starter": "",
-				"bench": ""
+				"starter": "Départ",
+				"bench": "Réserve"
 			}
 		},
 		"menu": {
@@ -1220,7 +1226,7 @@
 			"base-speed-text": "Vitesse de base : {{value}}",
 			"speed-buff": "Cette capacité sera plus rapide de {{value}} au prochain tour",
 			"speed-debuff": "Cette capacité sera plus lente de {{value}} au prochain tour",
-			"empty-state": "",
+			"empty-state": "Choisissez une prime ou allez dans la fosse de combat pour voir votre groupe",
 			"merc-level-tooltip": "Niveau actuel du mercenaire",
 			"unrecognized-mercenary": "Mercenaire non reconnu",
 			"unknown-mercenary": "Mercenaire inconnu",
@@ -1228,7 +1234,7 @@
 			"task-title": "Tâche {{taskNumber}} : {{taskTitle}}",
 			"task-progress-label": "Progression :",
 			"task-progress-tooltip": "Progression de la quête au début de la rencontre",
-			"roles-chart-button": "Graphique des rôles"
+			"roles-chart-button": "Rôles"
 		}
 	},
 	"decktracker": {
@@ -1278,7 +1284,8 @@
 		"unknown-class-card": "Carte {{playerClass}} inconnue",
 		"unknown-card": "Carte inconnue",
 		"unknown-mana-spell": "Sort inconnu coûtant ({{manaCost}})",
-		"unknown-info": "{{info}} inconnu"
+		"unknown-info": "{{info}} inconnu",
+		"unknown-big-minion": "Serviteur inconnu de coût {{cost}}+"
 	},
 	"battlegrounds": {
 		"menu": {
@@ -1477,7 +1484,7 @@
 			"popularity-label": "Popularité",
 			"player-matches": "{{value}} parties",
 			"your-value-tooltip": "Votre valeur",
-			"community-value-tooltip": "",
+			"community-value-tooltip": "Valeur de la communauté, en utilisant les filtres définis dans l’application principale",
 			"win-distribution-header": "Victoires ({{value}} virées)",
 			"win-distribution-tooltip": "Répartition des victoires",
 			"top-decks-header": "Meilleurs decks ({{value}} decks)",
@@ -1588,8 +1595,8 @@
 					"title": "d0nkey.top",
 					"pitch": "d0nkey.top est un site web de fans qui rassemble tous les decks des compétitions officielles de Hearthstone, ainsi que les decks des streamers pour permettre à tout le monde de trouver facilement des decks intéressants à jouer. La synchronisation vers d0nkey.top vous permettra de partager vos decks avec votre public (si vous êtes streamer) ou les aidera à construire une meilleure base de données pour fournir plus de services gratuits à la communauté. Vous pouvez leur rendre visite {{websiteLink}}",
 					"website-link": "ici",
-					"next": "Si vous décidez d’activer la synchronisation avec d0nkey.top, Firestone leur enverra chaque partie que vous jouerez, qui apparaîtra dans une section spécifique sur le site (qui est toujours en construction). Les replays seront privés par défaut, sauf si vous diffusez en même temps. Voir {{link}} pour savoir comment tout configurer.",
-					"instructions-page-link": "",
+					"next": "Si vous décidez d’activer la synchronisation avec d0nkey.top, Firestone leur enverra chaque partie que vous jouerez, qui apparaîtra dans une section spécifique sur le site (qui est toujours en construction). Les replays seront privés par défaut, sauf si vous diffusez en même temps. Voir la {{link}} pour savoir comment tout configurer.",
+					"instructions-page-link": "page d’instructions",
 					"toggle-label": "Synchroniser vos replays avec d0nkey.top"
 				},
 				"hsdecks": {
@@ -1608,8 +1615,8 @@
 				"email-placeholder": "Votre courriel (facultatif)",
 				"message-placeholder": "Votre message. Si vous signalez un bug, veuillez essayer de décrire ce que vous faisiez lorsque le bug est survenu, et ce qui s’est passé avant que vous signaliez ce bug.",
 				"send-button": "Envoyer",
-				"status-uploading-logs": "",
-				"status-sending-feedback": "",
+				"status-uploading-logs": "Envoi des infos récentes",
+				"status-sending-feedback": "Infos récentes envoyées, envoi de retours",
 				"status-done": "Vos commentaires ont été envoyés. Merci de votre message ! Restez à jour en nous rejoignant sur {{discordLink}} ou sur {{twitterLink}}"
 			},
 			"twitch": {
@@ -1624,13 +1631,13 @@
 				"logged-in-as-text": "Connecté en tant que :",
 				"configuration-title": "Configuration du stream",
 				"delay-label": "Délai de diffusion (ms)",
-				"delay-label-tooltip": ""
+				"delay-label-tooltip": "Délaie les événements envoyés à Twitch par cette quantité de millisecondes. Utile si votre stream est délayé pour combattre les snipers"
 			},
 			"launch": {
 				"launch-on-game-start-label": "Lancer Firestone quand une partie commence",
 				"launch-on-game-start-tooltip": "Lorsque cette option est désactivée, vous devrez lancer manuellement Firestone à chaque fois",
-				"integrated-mode-label": "",
-				"integrated-mode-tooltip": "Lorsque cette option est activée, la fenêtre principale se superpose à la fenêtre de jeu, et lui est lié. L’utilisation de cette option est recommandée pour la configuration d’un seul écran, ou si vous voulez diffuser l’application. La modification de cette valeur se fermera puis rouvrira la fenêtre Paramètres et la fenêtre principale",
+				"integrated-mode-label": "Mode intégré",
+				"integrated-mode-tooltip": "Lorsque cette option est activée, la fenêtre principale devient un overlay et est liée à la fenêtre de jeu. Utiliser ceci est recommandé pour la configuration pour un seul écran, ou si vous voulez diffuser l’application. La modification de cette valeur fermera puis rouvrira la fenêtre Paramètres et la fenêtre principale",
 				"session-recap-on-exit-label": "Récapitulatif de la session à la fermeture",
 				"session-recap-on-exit-tooltip": "Affiche un récapitulatif de la dernière session lorsque vous quittez Hearthstone",
 				"xp-recap-on-game-end-label": "Afficher le récapitulatif d’XP en fin de partie",
@@ -1752,8 +1759,8 @@
 					"cthun-tooltip": "Montrer la taille actuelle du C’Thun de votre adversaire",
 					"fatigue-label": "Fatigue",
 					"fatigue-tooltip": "Afficher les dégâts de fatigue actuels de votre adversaire",
-					"attack-on-board-label": "",
-					"attack-on-board-tooltip": "",
+					"attack-on-board-label": "ATQ sur le plateau",
+					"attack-on-board-tooltip": "Montre l’ATQ totale des serviteurs + héros sur le plateau de votre adversaire",
 					"watch-post-label": "Postes de guerre",
 					"watch-post-tooltip": "Afficher le nombre total de postes que vous avez joués pendant cette partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main",
 					"libram-label": "Librams",
@@ -1769,8 +1776,8 @@
 			},
 			"your-deck": {
 				"ignore-decklist-label": "Ignorer le deck",
-				"ignore-decklist-tooltip": "",
-				"ignore-decklist-confirmation": "",
+				"ignore-decklist-tooltip": "Ne pas charger la liste de decks initiale et ne pas suivre que les cartes jouées et piochées. Les changements seront appliqués pour la prochaine partie",
+				"ignore-decklist-confirmation": "D’accord, le decktracker ignorera votre deck",
 				"counters": {
 					"galakrond-tooltip": "",
 					"pogo-tooltip": "Affiche le nombre de fois où vous avez joué un lapin-échasseur",
@@ -1791,7 +1798,9 @@
 					"brilliant-macaw-label": "Ara brillant",
 					"brilliant-macaw-tooltip": "Quand vous avez un Ara brillant en main, affiche la dernière carte avec Cri de guerre que vous avez jouée, s’il y en a une",
 					"multicaster-label": "Écoles de sorts",
-					"multicaster-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie"
+					"multicaster-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
+					"coral-keeper-label": "Sentinelle des coraux",
+					"coral-keeper-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie"
 				}
 			},
 			"duels": {
@@ -1802,10 +1811,10 @@
 				"max-health-option-blink": "Clignoter",
 				"max-health-option-mouseover": "En survolant le héros",
 				"show-ooc-tracker-label": "",
-				"show-ooc-tracker-tooltip": "",
-				"show-ooc-hero-info-label": "",
-				"show-ooc-hero-info-tooltip": "",
-				"show-ooc-deck-select-label": "",
+				"show-ooc-tracker-tooltip": "Ajoute votre deck lors de la sélection des trésors entre les parties. Cela vous permet de voir des synergies entre les cartes, par exemple.",
+				"show-ooc-hero-info-label": "Afficher les stats des héros",
+				"show-ooc-hero-info-tooltip": "Affiche les stats du héros / pouvoir héroïque / trésor signature lors du survol des options en jeu avant de commencer une virée de Duels.",
+				"show-ooc-deck-select-label": "Afficher le widget de deck rapide",
 				"show-ooc-deck-select-tooltip": "Affiche un widget sur l’écran de construction du deck qui vous permet de copier rapidement votre dernier deck joué avec cette combinaison Héros / Pouvoir héroïque / Trésor signature, ainsi que quelques-uns des meilleurs decks récents."
 			}
 		},
@@ -1820,7 +1829,7 @@
 				"notifications-label": "Activer les notifications",
 				"selective-notifications-label": "Sélection des notifications",
 				"notifications-dust-recap-label": "Récapitulatif de poussière",
-				"notifications-non-golden-commons-label": "",
+				"notifications-non-golden-commons-label": "Communes non dorées",
 				"notifications-rewards-label": "Récompenses",
 				"notifications-rewards-tooltip": "Affiche une notification quand vous obtenez une carte en dehors d’un paquet, généralement lors des récompenses de fin de saison ou d’Arène"
 			},
@@ -1846,7 +1855,7 @@
 				"companion-app-title": "Appli Compagnon",
 				"enable-app-label": "Activer l’appli",
 				"integrated-mode-label": "Mode intégré",
-				"integrated-mode-tooltip": "",
+				"integrated-mode-tooltip": "Lorsque cette option est activée, la fenêtre Champs de bataille devient un overlay et est liée à la fenêtre de jeu. Utiliser ceci est recommandé pour la configuration pour un seul écran, ou si vous voulez diffuser l’application",
 				"enable-battle-sim-label": "",
 				"enable-battle-sim-tooltip": "Lorsque cette option est activée, vous saurez vos chances de gagner/égaliser/perdre chaque combat au début du combat",
 				"hide-simulation-label": "",
@@ -1854,8 +1863,8 @@
 				"show-sim-only-in-tavern-label": "",
 				"show-sim-only-in-tavern-tooltip": "Lorsque cette option est activée, les résultats de simulation seront cachés pendant le combat, et affichés une fois que vous retournerez dans la taverne",
 				"use-local-simulator-label": "",
-				"use-local-simulator-tooltip": "",
-				"popup-hero-selection-screen-label": "",
+				"use-local-simulator-tooltip": "Si vous désactivez cette option, les simulations de combat seront exécutées sur un serveur distant, libérant ainsi votre machine. D’un autre côté, les résultats prendront un peu plus de temps à arriver",
+				"popup-hero-selection-screen-label": "Fenêtre popup de sélection de héros",
 				"popup-hero-selection-screen-tooltip": "Lorsque cette option est activée, un fenêtre de sélection des héros, avec différentes stats sur chaque choix, s’affichera en début de partie",
 				"show-next-opponent-recap-label": "",
 				"show-next-opponent-recap-tooltip": "",
@@ -1873,8 +1882,8 @@
 			},
 			"overlay": {
 				"overlay-title": "Configuration de l’overlay",
-				"show-banned-tribes-label": "Afficher les types interdits",
-				"show-banned-tribes-tooltip": "Afficher quels types de serviteur sont interdits dans la partie en cours",
+				"show-banned-tribes-label": "Afficher les types absents",
+				"show-banned-tribes-tooltip": "Afficher quels types de serviteur sont absents dans la partie en cours",
 				"show-minions-list-label": "Afficher la liste des serviteurs",
 				"show-minions-list-tooltip": "Afficher la liste des serviteurs, regroupés par niveau de taverne",
 				"turn-counter-label": "Afficher le compteur de tours",
@@ -1884,12 +1893,12 @@
 				"last-opponent-board-tooltip": "Afficher la dernière troupe de guerre connue de l’adversaire (et des infos supplémentaires) lorsque vous passez la souris sur son portrait dans le classement",
 				"battle-simulation-label": "Overlay de simulation de combat",
 				"battle-simulation-tooltip": "",
-				"battle-simulation-example-label": "",
-				"battle-simulation-example-tooltip": "",
+				"battle-simulation-example-label": "Exemple de simulation dans l’overlay",
+				"battle-simulation-example-tooltip": "Ajoute un bouton pour voir un exemple de la façon dont le simulateur a atteint un résultat spécifique. ATTENTION : cliquer dessus ouvrira un nouvel onglet dans votre navigateur par défaut",
 				"widget-size-label": "Taille du widget",
-				"banned-tribes-title": "Types bannis",
+				"banned-tribes-title": "Types absents",
 				"banned-tribes-show-in-column-label": "Afficher en colonne",
-				"banned-tribes-show-in-column-tooltip": "Afficher les types bannis en colonne plutôt qu’en ligne",
+				"banned-tribes-show-in-column-tooltip": "Afficher les types absents en colonne plutôt qu’en ligne",
 				"banned-tribes-icon-size-label": "Taille de l’icône",
 				"minions-list-title": "Liste des serviteurs",
 				"minions-list-show-on-mouse-over-label": "Afficher la liste des serviteurs au survol de la souris",
@@ -1927,7 +1936,7 @@
 				"notifications": "Notifications"
 			},
 			"notifications": {
-				"title": "",
+				"title": "Mettre à jour quand vous voyez les notifications de succès",
 				"firestone-achievements-text": "Activer les hauts faits FS",
 				"firestone-achievements-tooltip": "Activer le suivi des hauts faits exclusifs à Firestone",
 				"show-notifications-text": "Afficher les notifications",
@@ -1946,20 +1955,20 @@
 				"player-team-widget-tooltip": "Afficher un résumé de tous vos mercenaires, de leurs capacités et de leur équipement",
 				"opponent-team-widget-label": "Widget du groupe adverse",
 				"opponent-team-widget-tooltip": "Afficher un résumé de tous les mercenaires adverses connus, de leurs capacités et de leur équipement",
-				"map-team-widget-label": "",
-				"map-team-widget-tooltip": "",
-				"village-team-widget-label": "",
-				"village-team-widget-tooltip": "",
-				"action-queue-pve-label": "",
-				"action-queue-pve-tooltip": "",
-				"action-queue-pvp-label": "",
+				"map-team-widget-label": "Widget de groupe : Carte",
+				"map-team-widget-tooltip": "Afficher un récapitulatif de tous vos héros, capacités et équipements sur la carte des primes. Utile pour inspecter facilement votre groupe lors du choix d’un chemin ou pour choisir un trésor",
+				"village-team-widget-label": "Widget de groupe : Village",
+				"village-team-widget-tooltip": "Afficher un récapitulatif de tous vos héros, capacités et équipements dans la collection et dans les écrans de sélection du groupe",
+				"action-queue-pve-label": "Widget de file d’actions (JcE)",
+				"action-queue-pve-tooltip": "Affiche une liste ordonnée de toutes les actions en attente dans les parties JcE",
+				"action-queue-pvp-label": "Widget de file d’actions (JcJ)",
 				"action-queue-pvp-tooltip": "Lorsque cette option est activée, affiche une file d’attente des actions dans les rencontres JcJ. Puisque les actions de l’adversaire sont cachées jusqu’à ce qu’elles soient résolues, seules les actions de vos propres mercenaires seront affichées",
-				"role-chart-label": "",
+				"role-chart-label": "Afficher le tableau des rôles",
 				"role-chart-tooltip": "Ajouter un petit bouton sous le widget du groupe sur lequel vous pouvez passer la souris pour afficher un récapitulatif du triangle des dégâts bonus",
-				"tasks-label": "",
+				"tasks-label": "Afficher le bouton des tâches",
 				"tasks-tooltip": "Ajouter un petit bouton sous le widget du groupe sur lequel vous pouvez passer la souris pour afficher un récapitulatif de vos tâches actuelles. Toujours masqué en JcJ",
-				"synergies-label": "",
-				"synergies-tooltip": "",
+				"synergies-label": "Surligner les synergies",
+				"synergies-tooltip": "Lorsque vous passez la souris sur une capacité ou un équipement (dans le widget de l’équipe) ou un trésor (dans l’écran de sélection du trésor), met en évidence les cartes du widget de l’équipe qui synergisent avec lui",
 				"your-team": "Votre groupe",
 				"opponent-team": "Groupe adverse",
 				"action-queue": "File d’attente des actions"
@@ -1985,7 +1994,7 @@
 		"show-minions-list-golden-cards-tooltip": "Montre la version dorée de chaque serviteur lorsque vous survolez l’image du serviteur dans la liste",
 		"show-battle-simulator": "Afficher les chances de victoire",
 		"battle-simulator-size": "Taille du simulateur de combat",
-		"last-board-size": "",
-		"last-board-size-tooltip": ""
+		"last-board-size": "Taille de la dernière troupe",
+		"last-board-size-tooltip": "Change la taille du récapitulatif de l’adversaire qui apparaît quand vous passez la souris sur le portrait d’un héros dans le classement."
 	}
 }
