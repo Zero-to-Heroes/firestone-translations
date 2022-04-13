@@ -171,7 +171,7 @@
 			"achievements-header": "업적",
 			"collection-header": "수집품",
 			"stats-header": "통계",
-			"go-premium-header": "제작자 지원으로 광고를 지우세요",
+			"go-premium-header": "제작자를 지원해 광고를 지우세요",
 			"logged-in-as-header": "{{value}}로 로그인했습니다.",
 			"not-logged-in-header": "로그인하여 경과를 온라인에 저장하세요"
 		},
@@ -191,24 +191,24 @@
 				"default-validation-button": "확인",
 				"default-cancel-button": "취소",
 				"multiselect-validation-button": "적용",
-				"multiselect-validation-error-tooltip": "",
-				"multiselect-clear-button": "",
-				"multiselect-reset-button": "",
-				"hotkey-text": "",
-				"no-hotkey-assigned": ""
+				"multiselect-validation-error-tooltip": "무효 선택 (부디 제작자에게 보다 자세한 오류 메시지를 보내주세요. 이대로는 상황 파악이 불가능합니다)",
+				"multiselect-clear-button": "해제",
+				"multiselect-reset-button": "초기화",
+				"hotkey-text": "표시/숨김:",
+				"no-hotkey-assigned": "단축기 미설정"
 			},
 			"ads": {
-				"support-the-dev": "",
-				"supporter": ""
+				"support-the-dev": "제작자를 지원해 광고를 지우세요",
+				"supporter": "지원해 주셔서 감사합니다! 최고에요 :)"
 			}
 		},
 		"internal": {
 			"memory": {
-				"reading-error-title": "",
-				"reading-error-text": "",
-				"reset-started-title": "",
-				"reset-started-text": "",
-				"reset-complete-title": "메모리 읽기 리셋 완료",
+				"reading-error-title": "메모리 읽기 오류",
+				"reading-error-text": "몇몇 기능을 이용할 수 없습니다. 부디 관리자 권한으로 파이어스톤/오버울프를 실행하시거나 디스코드를 통해 연락해 주세요.",
+				"reset-started-title": "메모리 읽기 초기화 시작",
+				"reset-started-text": "게임의 메모리 구조가 바뀌었습니다. 부디 몇 초만 기다려주세요",
+				"reset-complete-title": "메모리 읽기 초기화 완료",
 				"reset-complete-text": "이제 다시 앱을 정상적으로 사용하실 수 있습니다 :) 기다려 주셔서 감사합니다!"
 			},
 			"startup": {
@@ -217,17 +217,17 @@
 			}
 		},
 		"loading": {
-			"title": "로딩 중입니다",
+			"title": "기능을 불러오는 중입니다",
 			"subtitle": "정보를 수집하는 동안 기다려 주세요."
 		},
 		"updates": {
 			"update-available": "새 버전이 사용가능합니다! 업데이트하시려면 클릭해 주세요",
-			"update-error": "앱을 업데이트 하던 중 에러가 발생했습니다. 업데이트를 하시려면 부디 오버울프를 재시작해주세요.",
+			"update-error": "앱을 업데이트 하던 중 오류가 발생했습니다. 업데이트를 하시려면 부디 오버울프를 재시작해주세요.",
 			"restart-needed": "새 버전이 준비됐으니 앱을 재시작해주세요. 대전 중에는 하시지 않기를 추천합니다."
 		},
 		"arena": {
 			"menu": {
-				"my-runs": ""
+				"my-runs": "내 투기장 전적"
 			},
 			"filters": {
 				"time": {
@@ -253,7 +253,7 @@
 				"view-run-button": "자세히 보기",
 				"minimize-run-button": "창 최소화",
 				"run-name": "투기장 {{value}} 승",
-				"load-runs-button": "클릭해 판을 더 로드하세요"
+				"load-runs-button": "클릭해 더 많은 판을 불러오세요"
 			},
 			"empty-state": {
 				"title": "아직 비어있습니다",
@@ -276,88 +276,88 @@
 				},
 				"hero-portrait": {
 					"collectible": "대전",
-					"battlegrounds": "",
-					"mercenaries": "",
-					"book-of-mercs": ""
+					"battlegrounds": "전장",
+					"mercenaries": "용병단",
+					"book-of-mercs": "용병들의 이야기"
 				},
 				"owned": {
-					"all": "",
-					"own": "",
-					"dontown": "",
-					"missingplayablecopies": "",
-					"goldenown": "",
-					"notpremiumnotcompleted": "",
-					"notcompleted": ""
+					"all": "전체",
+					"own": "보유한 것만",
+					"dontown": "보유하지 않은 것만",
+					"missingplayablecopies": "카드 수가 부족한 카드만",
+					"goldenown": "보유한 황금 카드만",
+					"notpremiumnotcompleted": "황금을 제외하고 카드 수가 부족한 카드만",
+					"notcompleted": "황금과 일반을 각각 따질 때 카드 수가 부족한 카드만"
 				},
 				"rarity": {
-					"all": "",
-					"common": "",
-					"rare": "",
-					"epic": "",
-					"legendary": ""
+					"all": "모든 등급",
+					"common": "일반",
+					"rare": "희귀",
+					"epic": "특급",
+					"legendary": "전설"
 				}
 			},
 			"card-history": {
-				"new-copy": "",
-				"second-copy": "",
-				"new-copy-long": "",
-				"second-copy-long": "",
-				"title": "",
-				"you-have-viewed": "",
-				"load-more-button": "",
-				"empty-state-title": "",
-				"empty-state-subtitle": "",
-				"golden-card": "",
-				"diamond-card": "",
-				"click-to-view": "",
-				"click-to-view-link": "",
-				"duplicate-cards": "",
-				"dust-potential": ""
+				"new-copy": "신규",
+				"second-copy": "두 번째",
+				"new-copy-long": "새 카드",
+				"second-copy-long": "두 번째 카드",
+				"title": "카드 기록",
+				"you-have-viewed": "총 {{numberOfCards}} 장 중 {{totalCards}} 개의 카드를 보았습니다",
+				"load-more-button": "더 보기",
+				"empty-state-title": "아직 기록이 없습니다",
+				"empty-state-subtitle": "카드 팩을 열어 시작해보세요!",
+				"golden-card": "황금 {{cardName}}",
+				"diamond-card": "다이아몬드 {{cardName}}",
+				"click-to-view": "클릭해 {{link}}",
+				"click-to-view-link": "펼치기",
+				"duplicate-cards": "{{numberOfCards}} 여분 카드",
+				"dust-potential": "{{dust}} 가루로 변환 가능"
 			},
 			"card-search": {
-				"search-box-placeholder": "",
-				"loading": "",
-				"results-title": ""
+				"search-box-placeholder": "카드 검색 중...",
+				"loading": "더 많은 카드 불러오는 중...",
+				"results-title": "{{value}} 검색 중"
 			},
 			"card-details": {
-				"class": "",
-				"type": "",
-				"set": "",
-				"rarity": "",
-				"flavor": "",
-				"sounds-title": "",
+				"class": "직업:",
+				"type": "유형:",
+				"set": "확장팩:",
+				"rarity": "등급:",
+				"flavor": "플레이버 텍스트:",
+				"sounds-title": "음향:",
 				"sounds": {
 					"category": {
-						"basic": "",
-						"spell": "",
-						"emote": "",
-						"event": "",
-						"error": "",
-						"other": ""
+						"basic": "기본",
+						"spell": "주문",
+						"emote": "감정표현",
+						"event": "이벤트",
+						"error": "오류",
+						"other": "기타"
 					},
 					"effect": {
-						"play": "",
-						"death": "",
-						"attack": "",
-						"greetings": "",
-						"greetings-response": "",
-						"well-played": "",
-						"oops": "",
-						"threaten": "",
-						"thanks": "",
-						"sorry": "",
-						"concede": "",
-						"start": "",
-						"timer": "",
-						"think-1": "",
-						"think-2": "",
-						"think-3": "",
-						"low-cards": "",
-						"no-cards": "",
-						"won": "",
-						"mirror-start": "",
-						"error-need-weapon": "",
-						"error-need-mana": "",
+						"play": "냈을 때",
+						"death": "사망 시",
+						"attack": "공격 시",
+						"greetings": "인사",
+						"greetings-response": "인사 답변",
+						"well-played": "칭찬",
+						"oops": "이런",
+						"threaten": "위협",
+						"thanks": "감사",
+						"sorry": "사과",
+						"concede": "항복",
+						"start": "시작 시",
+						"timer": "시간 제한",
+						"think-1": "생각 중 1",
+						"think-2": "생각 중 2",
+						"think-3": "생각 중 3",
+						"low-cards": "카드 적음",
+						"no-cards": "카드 없음",
+						"won": "승리",
+						"mirror-start": "동일한 영웅으로 시작 시",
+						"error-need-weapon": "무기가 필요한 오류",
+						"error-need-mana": "마나 부족 오류",
 						"error-minion-attacked": "",
 						"error-i-attacked": "",
 						"error-just-played": "",
@@ -527,10 +527,10 @@
 				"win-coin-total-header": "",
 				"total-header": "",
 				"show-as-percent-button-label": "",
-				"reset-button-label": "",
-				"reset-button-tooltip": "",
-				"reset-confirmation": "",
-				"reset-are-you-sure": "",
+				"reset-button-label": "통계 초기화",
+				"reset-button-tooltip": "현재 덱의 승률 통계를 초기화합니다. 과거의 대전은 여전히 다시 보기 탭에 남아있을 것입니다.",
+				"reset-confirmation": "승률 통계가 초기화되었습니다.",
+				"reset-are-you-sure": "확실하신가요?",
 				"delete-button-step-2": "",
 				"delete-confirmation": "",
 				"delete-tooltip": ""
@@ -1331,7 +1331,7 @@
 			"versus": "",
 			"simulate-button": "",
 			"simulate-button-tooltip": "",
-			"reset-button": "",
+			"reset-button": "초기화",
 			"export-button": "",
 			"export-button-tooltip": "",
 			"exporting": "",
@@ -1429,7 +1429,7 @@
 				"buddy-tooltip-golden": ""
 			},
 			"minions-list": {
-				"reset-button": ""
+				"reset-button": "초기화"
 			}
 		},
 		"post-match-stats": {
@@ -1498,37 +1498,37 @@
 		}
 	},
 	"session": {
-		"title": "",
-		"title-tooltip": "",
+		"title": "세션 요약",
+		"title-tooltip": "(상단의 버튼으로) 초기화를 했던 이후 플레이한 모든 전장 게임을 요약해 보여줍니다. 설정에서 활성화 / 비활성화 할 수 있습니다.",
 		"display-mode": {
-			"all": "",
-			"battlegrounds": "",
-			"unknown": ""
+			"all": "전체",
+			"battlegrounds": "전장",
+			"unknown": "불명"
 		},
 		"buttons": {
-			"reset-tooltip": "",
-			"close-tooltip": ""
+			"reset-tooltip": "새로 시작하여 모든 통계 초기화",
+			"close-tooltip": "위젯 종료 후 비활성화. 만약 다시 켜고 싶다면 설정으로 들어가 재활성화해주세요"
 		},
 		"summary": {
-			"total-games": "",
-			"total-games-tooltip": "",
-			"total-games-tooltip-all-time": "",
-			"mmr-tooltip": "",
-			"delta-mmr-tooltip": ""
+			"total-games": "{{value}} 게임",
+			"total-games-tooltip": "{{value}}부터 (상단의 초기화 버튼을 눌러 새로 시작하세요)",
+			"total-games-tooltip-all-time": "앱을 사용한 이후부터 (상단의 초기화 버튼을 눌러 새로 시작하세요)",
+			"mmr-tooltip": "현 MMR",
+			"delta-mmr-tooltip": "세션을 시작한 이후로 MMR 상승/하락"
 		},
 		"groups": {
 			"battlegrounds": {
 				"category": {
-					"1": "",
-					"2": "",
-					"3": "",
-					"4": "",
-					"5": "",
-					"6": "",
-					"7": "",
-					"8": ""
+					"1": "1등",
+					"2": "2등",
+					"3": "3등",
+					"4": "4등",
+					"5": "5등",
+					"6": "6등",
+					"7": "7등",
+					"8": "8등"
 				},
-				"value-tooltip": ""
+				"value-tooltip": "이번 세션 동안 이 등수에 안착한 횟수"
 			}
 		}
 	},
@@ -1638,8 +1638,8 @@
 				"launch-on-game-start-tooltip": "",
 				"integrated-mode-label": "",
 				"integrated-mode-tooltip": "",
-				"session-recap-on-exit-label": "",
-				"session-recap-on-exit-tooltip": "",
+				"session-recap-on-exit-label": "종료 시 세션 요약",
+				"session-recap-on-exit-tooltip": "하스스톤을 종료할 때 지난 세션을 요약해 보여줍니다",
 				"xp-recap-on-game-end-label": "",
 				"xp-recap-on-game-end-tooltip": "",
 				"hide-release-notes-label": "",
@@ -1652,10 +1652,10 @@
 				"flash-window-tooltip": "",
 				"zoom-label": "",
 				"zoom-tooltip": "",
-				"reset-prefs-button-default": "",
-				"reset-prefs-button-confirmation": "",
-				"reset-prefs-tooltip": "",
-				"reset-prefs-confirmation": "",
+				"reset-prefs-button-default": "설정 초기화",
+				"reset-prefs-button-confirmation": "확실하신가요?",
+				"reset-prefs-tooltip": "스크린에 뜨는 위치 등등을 포함한 모든 설정 초기화",
+				"reset-prefs-confirmation": "모든 설정을 초기화했습니다. 스크린에 뜨는 위치나 트위치 설정 등이 포함되어 있었으니 필요하신 대로 재설정하시는 걸 잊지 마세요 :)",
 				"restart-app-button-label": ""
 			},
 			"localization": {
@@ -1703,10 +1703,10 @@
 				"close-tracker-on-end": "",
 				"close-tracker-on-end-tooltip": "",
 				"close-tracker-on-end-advanced": "",
-				"reset-button": "",
-				"reset-button-confirm": "",
-				"reset-button-tooltip": "",
-				"reset-button-confirmation": "",
+				"reset-button": "위치 초기화",
+				"reset-button-confirm": "확실하신가요?",
+				"reset-button-tooltip": "덱 트래커 위치 초기화. 트래커가 화면에 뜨지 않는 문제를 해결할 수 있습니다.",
+				"reset-button-confirmation": "덱 트래커의 위치를 초기화했습니다.",
 				"counters-size": ""
 			},
 			"modes": {
@@ -1847,7 +1847,7 @@
 			"menu": {
 				"general": "",
 				"overlay": "",
-				"session": ""
+				"session": "세션 위젯"
 			},
 			"full-toggle-label": "",
 			"full-toggle-tooltip": "",
@@ -1918,17 +1918,17 @@
 				"counter-majordomo-tooltip": ""
 			},
 			"session-widget": {
-				"title": "",
-				"label": "",
-				"label-tooltip": "",
-				"show-groups": "",
-				"show-groups-tooltip": "",
-				"show-matches": "",
-				"show-matches-tooltip": "",
-				"number-of-matches": "",
-				"number-of-matches-tooltip": "",
-				"size-title": "",
-				"opacity-title": ""
+				"title": "세션 위젯",
+				"label": "세션 위젯 표시",
+				"label-tooltip": "현재 세션의 요약 표시. 기본적으로 스트리머에게 유용함",
+				"show-groups": "그룹화한 정보 표시",
+				"show-groups-tooltip": "최종 등수에 맞춰 그룹화한 이번 세션의 결과 요약 표시",
+				"show-matches": "최근 판 표시",
+				"show-matches-tooltip": "최근에 끝낸 판들을 표시합니다",
+				"number-of-matches": "판 수",
+				"number-of-matches-tooltip": "판 결과를 표시할 때 한 번에 보이는 판 수의 최대량 (가장 최근에 했던 판이 제일 위에 있습니다)",
+				"size-title": "위젯 크기",
+				"opacity-title": "위젯 투명도"
 			}
 		},
 		"achievements": {
@@ -1942,7 +1942,7 @@
 				"show-notifications-text": "",
 				"show-notifications-tooltip": "",
 				"streamer-mode-text": "",
-				"streamer-mode-tooltip": "",
+				"streamer-mode-tooltip": "이미 달성한 업적에도 알림이 오도록 이번 세션 동안 업적을 초기화하. 과거 업적을 돌려받기를 원한다면 체크 해제. 앱 재시작 필요",
 				"streamer-mode-confirmation": ""
 			}
 		},
