@@ -202,9 +202,9 @@
 				"supporter": "感谢您对我们的支持！"
 			},
 			"graph": {
-				"tooltip-title": "",
-				"wins-label": "",
-				"wins-value": ""
+				"tooltip-title": "标题",
+				"wins-label": "{{value}} 胜",
+				"wins-value": "占比 {{value}}%"
 			}
 		},
 		"internal": {
@@ -245,13 +245,13 @@
 			},
 			"stats": {
 				"title": "数据概览",
-				"total-runs": "总轮次",
+				"total-runs": "轮数",
 				"wins-per-run": "每轮平均胜场",
 				"most-played-classes": "最常用职业",
 				"best-winrate-classes": "最高胜率职业",
 				"most-faced-classes": "对手最多职业",
 				"best-winrate-against": "最优对抗职业",
-				"stat-tooltip": "您使用{{playerClass}} 玩了{{numberOfRuns}} 轮竞技场，共{{totalMatches}} 局比赛 ，胜率为 {{winrate}}%",
+				"stat-tooltip": "您使用 {{playerClass}} 玩了 {{numberOfRuns}} 轮竞技场，共 {{totalMatches}} 场对战 ，胜率为 {{winrate}}%",
 				"faced-tooltip": "您遇到了 {{opponentClass}} {{totalMatches}} 次，胜率为 {{winrate}}%"
 			},
 			"runs": {
@@ -486,7 +486,7 @@
 				"filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
 				"deck-sort": {
 					"last-played": "最近使用",
-					"games-played": "总场数",
+					"games-played": "对战场数",
 					"winrate": "胜率"
 				},
 				"format-filter": {
@@ -523,7 +523,7 @@
 				}
 			},
 			"matchup-info": {
-				"total-matches-header": "对局数",
+				"total-matches-header": "对战场数",
 				"win-percent-header": "胜率",
 				"win-total-header": "胜-负",
 				"win-play-percent-header": "先手胜率",
@@ -533,7 +533,7 @@
 				"total-header": "总计",
 				"show-as-percent-button-label": "按%显示",
 				"reset-button-label": "重置统计数据",
-				"reset-button-tooltip": "重置当前套牌胜负数据。之前的对局仍将出现在回放选项卡中。",
+				"reset-button-tooltip": "重置当前套牌胜负数据。之前的对战仍将出现在回放选项卡中。",
 				"reset-confirmation": "您的胜负数据已被重置。",
 				"reset-are-you-sure": "您确定吗？",
 				"delete-button-step-2": "删除",
@@ -577,8 +577,8 @@
 				"no-replays": "无回放"
 			},
 			"stats": {
-				"total-games-played": "总对局数",
-				"total-time-played": "总时长",
+				"total-games-played": "对战场数",
+				"total-time-played": "游戏时长",
 				"turns-to-win": "胜局回合数",
 				"turns-to-lose": "败局回合数",
 				"winrate": "胜率",
@@ -602,7 +602,7 @@
 					"tier": "层级",
 					"average-position": "平均位次",
 					"mmr": "等级分数变化",
-					"games-played": "总场数",
+					"games-played": "对战场数",
 					"last-played": "上次使用"
 				},
 				"rank": {
@@ -610,7 +610,7 @@
 					"percentile": "前 {{percentile}}% ({{mmr}}+)"
 				},
 				"rank-group": {
-					"per-match": "显示所有对局",
+					"per-match": "显示每一场对战",
 					"per-day": "按天分组",
 					"per-day-tooltip": "显示每天开始时的分数"
 				},
@@ -642,7 +642,7 @@
 			"personal-stats": {
 				"hero": {
 					"average-position": "平均位次",
-					"games-played": "总局数",
+					"games-played": "对战场数",
 					"net-mmr": "等级变化",
 					"net-mmr-tooltip": "每场比赛平均等级分数变化"
 				},
@@ -655,27 +655,27 @@
 					},
 					"stats": {
 						"title": "综合数据",
-						"games-played": "总局数",
+						"games-played": "对战场数",
 						"average-position": "平均位次",
 						"top-1": "吃鸡",
 						"top-4": "前4",
 						"net-mmr": "平均等级分数变化",
-						"net-mmr-tooltip": "每场对局平均等级分数变化",
+						"net-mmr-tooltip": "每场对战平均等级分数变化",
 						"avg-mmr-gain": "平均上分",
 						"avg-mmr-gain-tooltip": "每场比赛平均上分",
 						"avg-mmr-loss": "平均掉分",
-						"avg-mmr-loss-tooltip": "每场对局平均掉分"
+						"avg-mmr-loss-tooltip": "每场对场平均掉分"
 					},
 					"last-warbands": {
-						"title": "最近 {{value}} 场对局",
+						"title": "最近 {{value}} 场对战",
 						"damage-dealt": "造成伤害",
 						"damage-dealt-tooltip": "每个随从造成的总伤害。同名随从将累计计算，不做区分",
 						"damage-taken": "受到伤害",
 						"damage-taken-tooltip": "各随从受到的总伤害。同名随从将累计计算，不做区分",
 						"empty-state-message": "在酒馆战棋中使用此英雄以开启记录",
 						"finished-position": "最终 {{value}}",
-						"last-board": "上一场对局",
-						"long-ago": "更早的对局",
+						"last-board": "上一场对战",
+						"long-ago": "更早的对战",
 						"place-1": "吃鸡！！",
 						"place-2": "第二！",
 						"place-3": "第三！",
@@ -695,8 +695,8 @@
 					}
 				},
 				"rating": {
-					"title": "等级分数/对局",
-					"empty-state-message": "快去玩一局酒馆战棋",
+					"title": "等级分数/对战",
+					"empty-state-message": "快去玩一场酒馆战棋",
 					"axis-label": "等级"
 				},
 				"records": {
@@ -728,7 +728,7 @@
 						"battles-going-first": "战斗先手占比",
 						"battle-luck": "天选战斗指数",
 						"battle-luck-explain-link": "这是什么?",
-						"battle-luck-explain-link-tooltip": "表征您在此局战棋中的战斗运气。点击查看更多信息",
+						"battle-luck-explain-link-tooltip": "表征您在这场对战中的战斗运气。点击查看更多信息",
 						"negative-battle-luck": "天谴战斗指数"
 					},
 					"record-broken-tooltip": "您打破了您的个人记录！"
@@ -778,7 +778,7 @@
 				"hero-sort": {
 					"player-winrate": "您的胜率",
 					"global-winrate": "全球胜率",
-					"games-played": "总场数"
+					"games-played": "对战场数"
 				},
 				"time": {
 					"past-three": "过去 3 天内",
@@ -818,7 +818,7 @@
 				"all-runs-with-deck": "使用 {{deckName}} 的所有对决",
 				"run-details": "场次详情",
 				"number-of-runs": "场数",
-				"average-wins-per-run": "每场平均胜局数",
+				"average-wins-per-run": "每轮平均胜场数",
 				"archive-deck-tooltip": "存档这副套牌(您可以稍后还原它)",
 				"restore-deck-tooltip": "还原这副套牌",
 				"rename-deck-tooltip": "重命名套牌",
@@ -829,7 +829,7 @@
 			"hero-stat": {
 				"global-winrate": "全球胜率",
 				"your-winrate": "您的胜率",
-				"games-played": "总场数",
+				"games-played": "对战场数",
 				"number-of-games-tooltip": "记录了 {{totalRuns}} 场（占比 {{popularity}}）",
 				"wins-distribution-tooltip": "胜场分布"
 			},
@@ -867,14 +867,14 @@
 			},
 			"classes-recap": {
 				"title": "数据概览",
-				"total-runs": "总场次",
-				"avg-wins-per-run": "每场平均胜局数",
+				"total-runs": "轮数",
+				"avg-wins-per-run": "每轮平均胜场数",
 				"most-played-classes": "最常使用职业",
 				"best-winrate-classes": "最高胜率职业",
 				"most-faced-classes": "最多对手职业",
 				"best-winrate-against": "最优对抗职业",
-				"stat-tooltip": "您在对决模式中玩了 {{numberOfRuns}} 轮 {{playerClass}} ，共 {{totalMatches}} 局 ，胜率为 {{winrate}} %",
-				"faced-tooltip": "您遇到了{{opponentClass}} {{totalMatches}} 次，胜率{{winrate}}%"
+				"stat-tooltip": "您在对决模式中玩了 {{numberOfRuns}} 轮 {{playerClass}} ，共 {{totalMatches}} 场对战 ，胜率为 {{winrate}} %",
+				"faced-tooltip": "您遇到了 {{opponentClass}} {{totalMatches}} 次，胜率{{winrate}}%"
 			},
 			"empty-state": {
 				"title": "暂无记录",
@@ -943,8 +943,8 @@
 			"replay-info": {
 				"rank-issue-tooltip": "在获取玩家等级时出现问题",
 				"versus": "VS",
-				"loot-icon-tooltip": "在此对局后加入套牌的卡牌",
-				"treasure-icon-tooltip": "在此对局后加入套牌的宝藏牌",
+				"loot-icon-tooltip": "在这场对战后加入套牌的卡牌",
+				"treasure-icon-tooltip": "在这场对战后加入套牌的宝藏牌",
 				"mmr": "等级分数",
 				"show-stats-button": "统计数据",
 				"show-stats-button-tooltip": "显示统计数据",
@@ -986,7 +986,7 @@
 			"list": {
 				"load-more-button": "点击加载更多回放...",
 				"empty-state-title": "暂无记录",
-				"empty-state-subtitle": "快去开始一场对局以开启记录"
+				"empty-state-subtitle": "快去开始一场对战以开启记录"
 			}
 		},
 		"mercenaries": {
@@ -1002,10 +1002,10 @@
 			"tip-2": "点击顶部的\"Bug\"图标报告错误或提交建议",
 			"tip-3": "如果您遇到了严重的错误（例如收藏无法同步，记牌器无法正常工作等），请尝试以管理员身份运行此应用。",
 			"tip-4": "设置中有许多自定义选项，随心所欲去启用/停用某些功能",
-			"tip-5": "[佣兵战纪] 调宽窗口查看“硬币总数”列",
-			"tip-6": "[佣兵战纪] 在回放中勾选“佣兵战纪(PvP)”，可以查看每场对局的更多详细信息",
+			"tip-5": "[佣兵战纪] 调宽窗口查看“硬币数量”列",
+			"tip-6": "[佣兵战纪] 在回放中勾选“佣兵战纪(PvP)”，可以查看每场对战的更多详细信息",
 			"tip-7": "[佣兵战纪] 鼠标悬停在“已完成任务”列上，了解如何手动设置每个佣兵的任务进度",
-			"tip-8": "[酒馆战棋] 在对局中使用 Alt + B 跳出战棋窗口以查看实时数据",
+			"tip-8": "[酒馆战棋] 在对战中使用 Alt + B 跳出战棋窗口以查看实时数据",
 			"tip-9": "[酒馆战棋] 调宽战棋窗口，以在模拟器中看到平均伤害和致命概率",
 			"tip-10": "[对决模式] 您可以将鼠标悬停在对手的生命值上查看他们的最大生命值"
 		}
@@ -1079,7 +1079,7 @@
 			"player": "您的下一个南海勇夫将会给海盗+{{value}}/+{{value}}"
 		},
 		"bgs-majordomo": {
-			"player": ""
+			"player": "您的管理者埃克索图斯当前增益为 +{{value}}/+{{value}}"
 		}
 	},
 	"loading": {
@@ -1098,11 +1098,11 @@
 		"steps": {
 			"decktracker": {
 				"title": "记牌器",
-				"text": "记录您的套牌和在对局中的卡牌信息。"
+				"text": "记录您的套牌以及对战中的卡牌信息。"
 			},
 			"battlegrounds": {
 				"title": "酒馆战棋",
-				"text": "当您开始游戏时，游戏助手就会出现！从选择英雄到结束对局，我们将一直陪伴着您。"
+				"text": "当您开始游戏时，游戏助手就会出现！从选择英雄到对战结束，我们将一直陪伴着您。"
 			},
 			"duels": {
 				"title": "对决模式",
@@ -1114,7 +1114,7 @@
 			},
 			"replays": {
 				"title": "回放",
-				"text": "在这里您可以找到您过去的所有对局，并逐步复盘。"
+				"text": "在这里您可以找到您过去的所有对战，并逐步复盘。"
 			},
 			"achievements": {
 				"title": "成就",
@@ -1184,7 +1184,7 @@
 			"subtitle": "开始佣兵战纪对局以开启记录！记得检查上面的过滤器: )"
 		},
 		"hero-stats": {
-			"games-played": "总场数",
+			"games-played": "对战场数",
 			"winrate": "胜率",
 			"equipments": "装备",
 			"global-winrate": "全球胜率",
@@ -1200,11 +1200,11 @@
 			"name-header": "名字",
 			"xp-header": "经验值",
 			"coins-left-header": "剩余硬币",
-			"coins-left-header-tooltip": "已获得的此佣兵硬币总数",
+			"coins-left-header-tooltip": "已获得的此佣兵硬币数量",
 			"coins-needed-header": "所需硬币",
-			"coins-needed-header-tooltip": "此佣兵满练度所需的硬币总数",
+			"coins-needed-header-tooltip": "此佣兵满练度所需的硬币数量",
 			"coins-to-farm-header": "需额外获得硬币",
-			"coins-to-farm-header-tooltip": "此佣兵满练度所需额外获得的硬币总数（已扣除您已经拥有的硬币和完成此佣兵所有任务可稳定获得的硬币）",
+			"coins-to-farm-header-tooltip": "此佣兵满练度所需额外获得的硬币数量（已扣除您已经拥有的硬币和完成此佣兵所有任务可稳定获得的硬币）",
 			"completed-tasks-header": "已完成的任务",
 			"completed-tasks-header-tooltip": "已完成的任务。Ctrl + 点击当前任务将手动转到下一个任务。Alt + 点击将返回上一个。",
 			"abilities-header": "技能",
@@ -1219,7 +1219,7 @@
 			"next-task-tooltip-title": "下一个任务 {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
-			"games": "{{value}} 场对局",
+			"games": "{{value}} 场对战",
 			"winrate": "{{value}}%胜率",
 			"last-used": "最后使用于 {{value}}",
 			"archive-button-tooltip": "存档此队伍(您可以稍后还原它)",
@@ -1247,8 +1247,8 @@
 		"zones": {
 			"global-effects": "影响全局",
 			"in-deck": "牌库中",
-			"bottom-of-deck": "",
-			"top-of-deck": "",
+			"bottom-of-deck": "牌库底",
+			"top-of-deck": "牌库顶",
 			"in-hand": "手牌中",
 			"other": "其他",
 			"discard": "弃牌"
@@ -1294,7 +1294,7 @@
 		"unknown-mana-spell": "未知 {{manaCost}} 费法术",
 		"unknown-info": "未知 {{info}}",
 		"unknown-big-minion": "未知 {{cost}}+ 费随从",
-		"card-dredged-tooltip": ""
+		"card-dredged-tooltip": "被探底"
 	},
 	"battlegrounds": {
 		"menu": {
@@ -1395,8 +1395,8 @@
 			"avg-position-tooltip": "最终位次的平均值",
 			"avg-position-your-tooltip": "您的平均位次",
 			"avg-position-global-tooltip": "全球平均位次",
-			"matches-played-label": "您的对局数量",
-			"matches-played-tooltip": "您使用此英雄进行的对局数",
+			"matches-played-label": "您的对战场数",
+			"matches-played-tooltip": "您使用此英雄进行的对战场数",
 			"turn-winrate": "各回合胜率",
 			"turn-winrate-tooltip": "每轮战斗胜率（可以给予您此英雄的强势期参考值）",
 			"winning-tribes-title": "最高胜率的随从类型组合",
@@ -1406,8 +1406,8 @@
 		"hero-selection": {
 			"achievement-completed": "完成成就",
 			"achievement-missing": "未完成成就",
-			"total-matches": "{{value}} 场对局",
-			"tier-list-title-tooltip": ""
+			"total-matches": "{{value}} 场对战",
+			"tier-list-title-tooltip": "基于 {{totalMatches}} 场对战筛选："
 		},
 		"in-game": {
 			"face-offs": {
@@ -1443,7 +1443,7 @@
 			}
 		},
 		"post-match-stats": {
-			"title": "上局对战数据",
+			"title": "上场对战数据",
 			"final-board": "您的最终阵容",
 			"current-board": "您的当前阵容",
 			"final-position": "您最终获得第 {{position}}",
@@ -1463,11 +1463,11 @@
 			"composition": {
 				"blank-tribe": "无类型/融合怪",
 				"empty-state-title": "没有可用数据",
-				"empty-state-subtitle": "更早的对局或过长的对局，将没有详细的回合记录"
+				"empty-state-subtitle": "更早的对战或过长的对战将没有详细的回合记录"
 			},
 			"warband-stats": {
 				"community-label": "此英雄平均值",
-				"your-label": "本局"
+				"your-label": "本轮"
 			}
 		},
 		"overlay-button": {
@@ -1475,7 +1475,7 @@
 		},
 		"banned-tribes": {
 			"exceptions": "异常: {{value}}",
-			"exceptions-tooltip": "这局对战中将不会出现{{tribeNames}} 。 {{exceptions}}"
+			"exceptions-tooltip": "这场对战中将不会出现 {{tribeNames}} 。 {{exceptions}}"
 		},
 		"board": {
 			"seen-just-now": "上回合阵容",
@@ -1486,7 +1486,7 @@
 			"stats-share-warning": "多个不同的随从，以及金色随从，都将共享相同的属性值（由于酒馆战棋的编码）"
 		},
 		"empty-state-title": "暂无记录",
-		"empty-state-subtitle": "快去玩一局酒馆战棋"
+		"empty-state-subtitle": "快去玩一场酒馆战棋"
 	},
 	"duels": {
 		"hero-info": {
@@ -1496,7 +1496,7 @@
 			"your-value-tooltip": "您的场次",
 			"community-value-tooltip": "社区值，使用主应用中设置的筛选器",
 			"win-distribution-header": "胜场分布（共 {{value}} 轮）",
-			"win-distribution-tooltip": "获胜局数的分布情况",
+			"win-distribution-tooltip": "胜场的分布情况",
 			"top-decks-header": "高胜套牌（{{value}} 个套牌）",
 			"footer": "鼠标离开英雄头像时按住 Shift 键可防止英雄信息消失"
 		},
@@ -1509,7 +1509,7 @@
 	},
 	"session": {
 		"title": "期间回顾",
-		"title-tooltip": "显示自上次重置“期间”以来您的所有酒馆战棋对局的回顾(使用顶部的按钮)。 您可以在设置中启用/停用它。",
+		"title-tooltip": "显示自上次重置“期间”以来您的所有酒馆战棋对战的回顾(使用顶部的按钮)。 您可以在设置中启用/停用它。",
 		"display-mode": {
 			"all": "全部",
 			"battlegrounds": "酒馆战棋",
@@ -1520,7 +1520,7 @@
 			"close-tooltip": "关闭并停用小工具。如果您想要再次启用它，请从设置中重新开启"
 		},
 		"summary": {
-			"total-games": "{{value}} 场对局",
+			"total-games": "{{value}} 场对战",
 			"total-games-tooltip": "从 {{value}} 起（使用顶部重置按钮开始新期间）",
 			"total-games-tooltip-all-time": "从您开始使用此应用起（使用顶部重置按钮开始一段新期间）",
 			"mmr-tooltip": "你当前的等级分数",
@@ -1538,7 +1538,7 @@
 					"7": "速七",
 					"8": "速八"
 				},
-				"value-tooltip": "您在这期间最终获得这个位次的对局数"
+				"value-tooltip": "您在这期间最终获得这个位次的对战数"
 			}
 		}
 	},
@@ -1585,7 +1585,7 @@
 				"intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
 				"vs": {
 					"title": "Vicious Syndicate（vS）",
-					"pitch": "",
+					"pitch": "Vicious Syndicate（vS）使用来自数千场游戏数据加以尖端玩家的游戏理解，创建环境周报。 您可以访问 {{websiteLink}} 查看",
 					"website-link": "此处",
 					"next": "如果您决定为vS环境周报做出贡献， Firestone 将匿名发送您的游戏信息 (大多数是每位玩家使用的卡牌和一些环境数据，例如玩家排名)。",
 					"toggle-label": "为vS环境周报贡献数据"
@@ -1605,7 +1605,7 @@
 					"title": "d0nkey.top",
 					"pitch": "d0nkey.top 是一个粉丝网站，它收集了炉石传说官方比赛中的所有套牌，以及来自直播的套牌，可以让任何人轻松地找到有趣的套牌。同步到 d0nkey.top 将能让您分享套牌给您的观众（如果您是一个主播），或帮助他们建立一个更好的数据库，以便为社区提供更多免费服务。 您可以访问 {{websiteLink}} 查看",
 					"website-link": "此处",
-					"next": "如果您决定同步到 d0nkey.top，Firestone将发送您的每个对局，这个对局将出现在网站上的一个特定栏目中(仍在构建中)。 默认情况下，回放将是私密的，除非您同时在直播。请参阅 {{link}} 以了解如何设置。",
+					"next": "如果您决定同步到 d0nkey.top，Firestone将发送您的每场对战，这个对战将出现在网站上的一个特定栏目中(仍在构建中)。 默认情况下，回放将是私密的，除非您同时在直播。请参阅 {{link}} 以了解如何设置。",
 					"instructions-page-link": "引导页面",
 					"toggle-label": "同步您的回放到 d0nkey.top"
 				},
@@ -1744,11 +1744,11 @@
 				"global-effects-label": "显示全局效果",
 				"global-effects-tooltip": "启用此功能，记牌器顶端会出现一个新的部分用于记录影响英雄或牌库的效果。",
 				"sort-by-mana-cost-label": "按费用排序所有卡牌",
-				"sort-by-mana-cost-tooltip": "启用此功能，其他区域卡牌将按费用排序。 停用此功能，其他区域将首先显示战场上的卡牌，然后是分厂，最后是其他",
-				"show-bottom-cards-separately-label": "",
-				"show-bottom-cards-separately-tooltip": "",
-				"show-top-cards-separately-label": "",
-				"show-top-cards-separately-tooltip": "",
+				"sort-by-mana-cost-tooltip": "启用此功能，其他区域卡牌将按费用排序。 停用此功能，其他区域将依次显示战场上、坟场中和其他",
+				"show-bottom-cards-separately-label": "显示牌库底",
+				"show-bottom-cards-separately-tooltip": "启用此功能，记牌器中将出现一个显示已知牌库底的分区",
+				"show-top-cards-separately-label": "显示牌库顶",
+				"show-top-cards-separately-tooltip": "启用此功能，记牌器中将出现一个显示已知牌库顶的分区",
 				"hide-generated-cards-label": "在其他区域隐藏生成的卡牌",
 				"hide-generated-cards-tooltip": "启用此功能，不在起始套牌中的卡牌将不会出现在其他区域",
 				"opponent-hand-title": "对手手牌追踪",
@@ -1937,10 +1937,10 @@
 				"label-tooltip": "显示您在当前期间的战况回顾。对主播很有用。",
 				"show-groups": "分类显示信息",
 				"show-groups-tooltip": "按最终位次分类显示您在当前期间的战况回顾。",
-				"show-matches": "显示最近的对局",
+				"show-matches": "显示最近对战",
 				"show-matches-tooltip": "显示最近的对局。",
-				"number-of-matches": "对局数量",
-				"number-of-matches-tooltip": "显示对局详情时最多包含的对局数量 (最近一次在最上面)",
+				"number-of-matches": "对战场数",
+				"number-of-matches-tooltip": "显示对战详情时包含的对战数量上限 (最近一次在最上面)",
 				"size-title": "小工具大小",
 				"opacity-title": "小工具透明度"
 			}
