@@ -247,9 +247,9 @@
 				"title": "数据概览",
 				"total-runs": "轮数",
 				"wins-per-run": "每轮平均胜场",
-				"most-played-classes": "最常用职业",
-				"best-winrate-classes": "最高胜率职业",
-				"most-faced-classes": "对手最多职业",
+				"most-played-classes": "常用职业",
+				"best-winrate-classes": "高胜职业",
+				"most-faced-classes": "常见对手职业",
 				"best-winrate-against": "最优对抗职业",
 				"stat-tooltip": "您使用 {{playerClass}} 玩了 {{numberOfRuns}} 轮竞技场，共 {{totalMatches}} 场对战 ，胜率为 {{winrate}}%",
 				"faced-tooltip": "您遇到了 {{opponentClass}} {{totalMatches}} 次，胜率为 {{winrate}}%"
@@ -740,7 +740,7 @@
 		},
 		"duels": {
 			"menu": {
-				"my-runs": "我的场次",
+				"my-runs": "我的轮次",
 				"my-decks": "我的套牌",
 				"heroes": "英雄",
 				"treasures": "宝藏",
@@ -812,12 +812,12 @@
 				"no-dust-missing-tooltip": "已拥有所有卡牌",
 				"view-details-button": "查看详情",
 				"winrate": "胜率",
-				"runs": "场次",
+				"runs": "轮数",
 				"starter-deck": "初始套牌",
 				"final-deck": "最终套牌",
 				"all-runs-with-deck": "使用 {{deckName}} 的所有对决",
 				"run-details": "场次详情",
-				"number-of-runs": "场数",
+				"number-of-runs": "轮数",
 				"average-wins-per-run": "每轮平均胜场数",
 				"archive-deck-tooltip": "存档这副套牌(您可以稍后还原它)",
 				"restore-deck-tooltip": "还原这副套牌",
@@ -839,7 +839,7 @@
 				"view-deck-button": "查看套牌",
 				"view-run-button": "查看此场",
 				"minimize-run-button": "最小化",
-				"load-more-button": "正在加载更多场次..."
+				"load-more-button": "正在加载更多轮次..."
 			},
 			"stats": {
 				"tier-list-title": "英雄评级表",
@@ -868,11 +868,11 @@
 			"classes-recap": {
 				"title": "数据概览",
 				"total-runs": "轮数",
-				"avg-wins-per-run": "每轮平均胜场数",
-				"most-played-classes": "最常使用职业",
-				"best-winrate-classes": "最高胜率职业",
-				"most-faced-classes": "最多对手职业",
-				"best-winrate-against": "最优对抗职业",
+				"avg-wins-per-run": "每轮平均胜场",
+				"most-played-classes": "常用职业",
+				"best-winrate-classes": "高胜职业",
+				"most-faced-classes": "常见对手职业",
+				"best-winrate-against": "高胜率对抗",
 				"stat-tooltip": "您在对决模式中玩了 {{numberOfRuns}} 轮 {{playerClass}} ，共 {{totalMatches}} 场对战 ，胜率为 {{winrate}} %",
 				"faced-tooltip": "您遇到了 {{opponentClass}} {{totalMatches}} 次，胜率{{winrate}}%"
 			},
@@ -976,8 +976,8 @@
 				"went-second-tooltip": "后手"
 			},
 			"class-icon-toggle": {
-				"label": "使用职业标志",
-				"tooltip": "切换职业标志或英雄头像"
+				"label": "使用职业图标",
+				"tooltip": "切换 职业图标/英雄头像"
 			},
 			"merc-details-toggle": {
 				"label": "显示详情",
@@ -1276,7 +1276,7 @@
 			"deck-winrate": "套牌胜率",
 			"deck-winrate-tooltip": "此套牌自 {{value}} 以来的天梯胜率",
 			"deck-winrate-vs-class": "vs {{value}}",
-			"deck-winrate-vs-class-tooltip": "此套牌自 {{date}} 以来对抗{{opponent}} 的天梯胜率"
+			"deck-winrate-vs-class-tooltip": "此套牌自 {{date}} 以来对抗 {{opponent}} 的天梯胜率"
 		},
 		"secrets-helper": {
 			"title": "奥秘助手"
@@ -1650,8 +1650,8 @@
 				"integrated-mode-tooltip": "开启此功能时，记牌器主窗口会变成叠加层，并和游戏窗口绑定。\n如果您希望在直播中推流本应用，建议对单个显示器设置此功能。\n改变这个选项将会关闭并重启设置窗口和主窗口",
 				"session-recap-on-exit-label": "结束游戏时显示回顾",
 				"session-recap-on-exit-tooltip": "当您退出炉石传说时，显示您最近期间的回顾",
-				"xp-recap-on-game-end-label": "对局结束时显示经验回顾",
-				"xp-recap-on-game-end-tooltip": "每场对局结束后显示经验和等级的回顾",
+				"xp-recap-on-game-end-label": "对战结束时显示经验回顾",
+				"xp-recap-on-game-end-tooltip": "每场对战结束后显示经验和等级的回顾",
 				"hide-release-notes-label": "在应用启动时隐藏版本说明",
 				"hide-release-notes-tooltip": "不显示Firestone新版本的更新说明",
 				"display-notifications-label": "显示通知",
@@ -1699,7 +1699,7 @@
 				"show-deck-winrate": "显示套牌胜率",
 				"show-deck-winrate-tooltip": "如果我们有数据(无论标准或狂野)，在记牌器上方显示套牌在各个分段的胜率",
 				"show-matchup-winrate": "显示当前对局胜率",
-				"show-matchup-winrate-tooltip": "如果我们有数据(无论标准或狂野)，在记牌器上方显示此套牌所有分段对战此职业的胜率",
+				"show-matchup-winrate-tooltip": "如果我们有数据（无论标准或狂野），将在记牌器上方显示此套牌所有分段对战此职业的胜率",
 				"show-gifts-separately": "分别显示创建的卡牌",
 				"show-gifts-separately-tooltip": "在记牌器中标记创建的卡牌（不同方式创建则分开显示）",
 				"show-stats-change": "显示卡牌数值变化",
