@@ -200,6 +200,11 @@
 			"ads": {
 				"support-the-dev": "Support the dev and remove the ads",
 				"supporter": "Thank you for supporting us! You rock :)"
+			},
+			"graph": {
+				"tooltip-title": "Title",
+				"wins-label": "{{value}} wins",
+				"wins-value": "{{value}}% of runs"
 			}
 		},
 		"internal": {
@@ -825,7 +830,8 @@
 				"global-winrate": "Global winrate",
 				"your-winrate": "Your winrate",
 				"games-played": "Games played",
-				"number-of-games-tooltip": "{{totalRuns}} runs recorded ({{popularity}} popularity)"
+				"number-of-games-tooltip": "{{totalRuns}} runs recorded ({{popularity}} popularity)",
+				"wins-distribution-tooltip": "Wins distribution"
 			},
 			"run": {
 				"replays-title": "Replays for the same run",
@@ -1073,7 +1079,7 @@
 			"player": "Your next Southsea Strongarm will give +{{value}}/+{{value}}"
 		},
 		"bgs-majordomo": {
-			"player": "Your next Majordomo Executus will give an additional +{{value}}/+{{value}}"
+			"player": "Your next Majordomo Executus will give +{{value}}/+{{value}}"
 		}
 	},
 	"loading": {
@@ -1241,6 +1247,8 @@
 		"zones": {
 			"global-effects": "Global effects",
 			"in-deck": "In deck",
+			"bottom-of-deck": "Bottom of deck",
+			"top-of-deck": "Top of deck",
 			"in-hand": "In hand",
 			"other": "Other",
 			"discard": "Discard"
@@ -1285,7 +1293,8 @@
 		"unknown-card": "Unknown card",
 		"unknown-mana-spell": "Unknown {{manaCost}} mana spell",
 		"unknown-info": "Unknown {{info}}",
-		"unknown-big-minion": "Unknown {{cost}}+ cost minion"
+		"unknown-big-minion": "Unknown {{cost}}+ cost minion",
+		"card-dredged-tooltip": "Card dredged"
 	},
 	"battlegrounds": {
 		"menu": {
@@ -1397,7 +1406,8 @@
 		"hero-selection": {
 			"achievement-completed": "Achievement completed",
 			"achievement-missing": "Achievement missing",
-			"total-matches": "{{value}} matches"
+			"total-matches": "{{value}} matches",
+			"tier-list-title-tooltip": "Built from {{totalMatches}} matches filtering for:"
 		},
 		"in-game": {
 			"face-offs": {
@@ -1575,7 +1585,7 @@
 				"intro": "We believe that your data belongs to you, and that you should be able to synchronize it to other third party websites and help them do whatever they do best with it. We don't get paid for this, but we do get some exposure since they then talk about us :)",
 				"vs": {
 					"title": "Vicious Syndicate",
-					"pitch": "Vicious Syndicate builds a weekly meta report that captures what the meta looks, using both data coming from thousands of games and insights by top-level players. You can visit them {{webisteLink}}",
+					"pitch": "Vicious Syndicate builds a weekly meta report that captures what the meta looks, using both data coming from thousands of games and insights by top-level players. You can visit them {{websiteLink}}",
 					"website-link": "here",
 					"next": "If you decide to contribute to the vS Data Reaper Report, Firestone will anonymously send them info about your games (mostly the cards played by each player and some meta data, like player ranks).",
 					"toggle-label": "Contribute to the vS Data Reaper Report"
@@ -1735,6 +1745,10 @@
 				"global-effects-tooltip": "When active, a new section appears at the top of the tracker that shows global effects affecting the player / deck",
 				"sort-by-mana-cost-label": "Sort cards by mana cost",
 				"sort-by-mana-cost-tooltip": "When active, the cards will be sorted by mana cost in the Other zone. Otherwise, the zone will first show the cards on the board, then the graveyard, then the others",
+				"show-bottom-cards-separately-label": "Show bottom cards",
+				"show-bottom-cards-separately-tooltip": "Show the known cards at the bottom of the deck separately from the main deck",
+				"show-top-cards-separately-label": "Show top cards",
+				"show-top-cards-separately-tooltip": "Show the known cards at the top of the deck separately from the main deck",
 				"hide-generated-cards-label": "Hide generated cards in Other zone",
 				"hide-generated-cards-tooltip": "When active, the cards that didn't start in the deck won't appear in the Other zone",
 				"opponent-hand-title": "Opponent hand tracking",

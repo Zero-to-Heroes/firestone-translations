@@ -23,7 +23,7 @@ const process = async () => {
 
 process();
 
-const removeEmpty = (obj) => {
+const removeEmpty = (obj: any) => {
 	Object.entries(obj).forEach(
 		([key, val]) => (val && typeof val === 'object' && removeEmpty(val)) || ((val === null || val === '') && delete obj[key])
 	);
