@@ -39,7 +39,7 @@
 			"region_us": "美服",
 			"region_eu": "欧服",
 			"region_kr": "亚服",
-			"region_cn": "中国"
+			"region_cn": "国服"
 		},
 		"pack": {
 			"classic": "经典",
@@ -222,7 +222,7 @@
 			}
 		},
 		"loading": {
-			"title": "正在加载所有项目",
+			"title": "正在加载项目",
 			"subtitle": "请稍等，我们正在收集信息"
 		},
 		"updates": {
@@ -393,7 +393,7 @@
 				}
 			},
 			"pack-stats": {
-				"title": "所有时间的卡牌包（{{value}}）",
+				"title": "所有的卡牌包（{{value}}）",
 				"best-opened-packs-title": "最欧的 {{value}} 个卡牌包",
 				"best-opened-packs-title-tooltip": "您在Firestone运行时开出的最欧卡牌包",
 				"pack-stat-tooltip": "您的炉石传说生涯中总共开了 {{totalPacks}} 包 {{packName}}"
@@ -537,7 +537,7 @@
 				"reset-confirmation": "您的胜负数据已被重置。",
 				"reset-are-you-sure": "您确定吗？",
 				"delete-button-step-2": "删除",
-				"delete-confirmation": "这将从您的所有数据中永久删除这副套牌的记录，且无法撤销。",
+				"delete-confirmation": "这将从您的数据中永久删除这副套牌的记录，且无法撤销。",
 				"delete-tooltip": "删除您的套牌。这将无法撤消。如果您只想隐藏它，请考虑将其存档。"
 			},
 			"deck-details": {
@@ -876,6 +876,24 @@
 				"stat-tooltip": "您在对决模式中玩了 {{numberOfRuns}} 轮 {{playerClass}} ，共 {{totalMatches}} 场对战 ，胜率为 {{winrate}} %",
 				"faced-tooltip": "您遇到了 {{opponentClass}} {{totalMatches}} 次，胜率{{winrate}}%"
 			},
+			"deckbuilder": {
+				"choose-your-hero-title": "选择英雄",
+				"choose-your-hero-power-title": "选择英雄技能",
+				"choose-your-signature-treasure-title": "选择签名宝藏",
+				"build-your-deck-title": "构筑套牌",
+				"bo-back-hero": "{{selectedCardName}} - 点击返回英雄选择界面",
+				"bo-back-hero-power": "{{selectedCardName}} - 点击返回英雄技能选择界面",
+				"bo-back-signature-treasure": "{{selectedCardName}} - 点击返回签名宝藏选择界面",
+				"ongoing-deck-building": "构筑中 ({{currentCards}} / {{maxCards}})",
+				"export-deckcode-button": "复制代码",
+				"save-deck-button": "保存套牌",
+				"deck-saved-info": "套牌已保存",
+				"save-deckcode-button-tooltip": "将此套牌添加到“我的套牌”",
+				"warning": {
+					"neutral-hero": "由于炉石传说自身限制，套牌代码不支持选择中立签名宝藏的中立英雄（结盟职业签名宝藏可正常使用）",
+					"loe-hero": "由于炉石传说自身限制，套牌代码不支持探险者协会的英雄"
+				}
+			},
 			"empty-state": {
 				"title": "暂无记录",
 				"subtitle": "快去玩一场对决"
@@ -1007,7 +1025,8 @@
 			"tip-7": "[佣兵战纪] 鼠标悬停在“已完成任务”列上，了解如何手动设置每个佣兵的任务进度",
 			"tip-8": "[酒馆战棋] 在对战中使用 Alt + B 跳出战棋窗口以查看实时数据",
 			"tip-9": "[酒馆战棋] 调宽战棋窗口，以在模拟器中看到平均伤害和致命概率",
-			"tip-10": "[对决模式] 您可以将鼠标悬停在对手的生命值上查看他们的最大生命值"
+			"tip-10": "[对决模式] 您可以将鼠标悬停在对手的生命值上查看他们的最大生命值",
+			"tip-11": "[对决模式] 鼠标悬停于对手的名字会显示其职业"
 		}
 	},
 	"counters": {
@@ -1258,6 +1277,7 @@
 		"deck-name": {
 			"unnamed-deck": "未命名套牌",
 			"unknown-deck": "未知套牌",
+			"player-name": "{{playerName}} 职业为 {{playerClass}}",
 			"copy-deckstring-label": "复制套牌",
 			"copy-deckstring-confirmation": "已复制！"
 		},
@@ -1508,7 +1528,8 @@
 			"copy-deck-tooltip": "点击复制",
 			"copy-deck-tooltip-confirmation": "已复制到剪贴板，您现在可以导入到炉石传说",
 			"personal-deck-text": "您的最终套牌",
-			"explore-decks-tooltip": "寻找其他符合条件的高胜套牌"
+			"explore-decks-tooltip": "寻找其他符合条件的高胜套牌",
+			"build-deck-tooltip": "使用内置套牌编辑器构筑您的套牌"
 		}
 	},
 	"session": {

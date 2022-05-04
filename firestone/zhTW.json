@@ -876,6 +876,24 @@
 				"stat-tooltip": "你進行了{{numberOfRuns}} 場比賽，且以{{winrate}}%的勝率與{{playerClass}} 進行{{totalMatches}} 場比賽",
 				"faced-tooltip": "你以 {{winrate}}% 的勝率對上 {{opponentClass}} {{totalMatches}} 次"
 			},
+			"deckbuilder": {
+				"choose-your-hero-title": "選擇你的英雄",
+				"choose-your-hero-power-title": "選擇你的英雄能力",
+				"choose-your-signature-treasure-title": "選擇你的專屬寶藏",
+				"build-your-deck-title": "組建你的牌組",
+				"bo-back-hero": "{{selectedCardName}} - 點擊以返回英雄選擇畫面",
+				"bo-back-hero-power": "{{selectedCardName}} - 點擊以返回英雄能力選擇畫面",
+				"bo-back-signature-treasure": "{{selectedCardName}} - 點擊以返回專屬寶藏選擇畫面",
+				"ongoing-deck-building": "進行中 ({{currentCards}} / {{maxCards}})",
+				"export-deckcode-button": "複製代碼",
+				"save-deck-button": "儲存牌組",
+				"deck-saved-info": "牌組已儲存",
+				"save-deckcode-button-tooltip": "將此牌組加入我的牌組頁籤",
+				"warning": {
+					"neutral-hero": "牌組代碼不支援於用中立專屬寶藏的中立英雄(職業專屬寶藏可以正常運作)",
+					"loe-hero": "牌組代碼不支援於新的探險者協會英雄"
+				}
+			},
 			"empty-state": {
 				"title": "尚未有任何內容",
 				"subtitle": "開始遊玩決鬥擂台以接收資訊"
@@ -1007,7 +1025,8 @@
 			"tip-7": "【傭兵】鼠標懸停“任務完成”一欄，學習如何手動設置每個傭兵的任務進度",
 			"tip-8": "[Battlegrounds] 使用 Alt + B 調出 Battlegrounds 窗口，查看比賽中的詳細實時統計數據",
 			"tip-9": "[Battlegrounds] 拉大英雄戰場插件的視窗大小以查看戰鬥模擬器中平均傷害及致死機率",
-			"tip-10": "[Duels] 你可以將滑鼠移到對方的血量上以查看其最大血量"
+			"tip-10": "[Duels] 你可以將滑鼠移到對方的血量上以查看其最大血量",
+			"tip-11": "[Duels] 鼠標停在你對手的名字上時也顯示他們的職業"
 		}
 	},
 	"counters": {
@@ -1258,6 +1277,7 @@
 		"deck-name": {
 			"unnamed-deck": "未命名牌組",
 			"unknown-deck": "未知牌組",
+			"player-name": "{{playerName}} 是 {{playerClass}}",
 			"copy-deckstring-label": "複製套牌",
 			"copy-deckstring-confirmation": "複製成功!"
 		},
@@ -1508,7 +1528,8 @@
 			"copy-deck-tooltip": "點擊以複製",
 			"copy-deck-tooltip-confirmation": "複製到剪貼簿, 你現在可以將它導入爐石戰記",
 			"personal-deck-text": "你最後使用的牌組",
-			"explore-decks-tooltip": "探索其他對戰的高勝率套牌"
+			"explore-decks-tooltip": "探索其他對戰的高勝率套牌",
+			"build-deck-tooltip": "以牌組建構者來組建你自己的牌組"
 		}
 	},
 	"session": {
