@@ -631,12 +631,12 @@
 					"validation-error-tooltip": "Veuillez sélectionner tous les types ou seulement 5"
 				},
 				"signature-treasure": {
-					"all": "Tous les trésors sig."
+					"all": "Tous les trésors sp."
 				},
 				"stat-type": {
 					"hero": "Héros",
 					"hero-power": "Pouvoirs héroïques",
-					"signature-treasure": "Trésors signatures"
+					"signature-treasure": "Trésors spéciaux"
 				}
 			},
 			"personal-stats": {
@@ -757,7 +757,7 @@
 				"stat-type": {
 					"hero": "Héros",
 					"hero-power": "Pouvoir héroïque",
-					"signature-treasure": "Trésor signature"
+					"signature-treasure": "Trésor spécial"
 				},
 				"game-mode": {
 					"all": "Tous les modes",
@@ -773,7 +773,7 @@
 					"all": "Tous les pouvoirs héroïques"
 				},
 				"signature-treasure": {
-					"all": "Tous les trésors signatures"
+					"all": "Tous les trésors spéciaux"
 				},
 				"hero-sort": {
 					"player-winrate": "% victoires (vous)",
@@ -803,7 +803,7 @@
 				"locks": {
 					"all": "Afficher tout",
 					"unlocked": "Seulement quand débloqué",
-					"unlocked-tooltip": "Afficher uniquement les decks pour lesquels vous avez débloqué le pouvoir héroïque et le trésor signature"
+					"unlocked-tooltip": "Afficher uniquement les decks pour lesquels vous avez débloqué le pouvoir héroïque et le trésor spécial"
 				}
 			},
 			"deck-stat": {
@@ -820,6 +820,7 @@
 				"number-of-runs": "Nombre de virées",
 				"average-wins-per-run": "Nb de victoires moy.",
 				"archive-deck-tooltip": "Archiver ce deck (vous pourrez le restaurer plus tard)",
+				"delete-deck-tooltip": "Supprimer définitivement le deck (aucune virée ne lui est liée) ; vous devrez le recréer de zéro",
 				"restore-deck-tooltip": "Restaurer ce deck",
 				"rename-deck-tooltip": "Renommer ce deck",
 				"rename-confirm-button": "OK",
@@ -877,21 +878,30 @@
 				"faced-tooltip": "Vous avez rencontré un {{opponentClass}} {{totalMatches}} fois avec un taux de victoires de {{winrate}} %"
 			},
 			"deckbuilder": {
-				"choose-your-hero-title": "",
-				"choose-your-hero-power-title": "",
-				"choose-your-signature-treasure-title": "",
-				"build-your-deck-title": "",
-				"bo-back-hero": "",
-				"bo-back-hero-power": "",
-				"bo-back-signature-treasure": "",
-				"ongoing-deck-building": "",
-				"export-deckcode-button": "",
-				"save-deck-button": "",
-				"deck-saved-info": "",
-				"save-deckcode-button-tooltip": "",
+				"choose-your-hero-title": "Choisissez un héros",
+				"choose-your-hero-power-title": "Choisissez un pouvoir héroïque",
+				"choose-your-signature-treasure-title": "Choisissez votre trésor spécial",
+				"build-your-deck-title": "Construisez votre deck",
+				"go-back-hero": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du héros",
+				"go-back-hero-power": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du pouvoir héroïque",
+				"go-back-signature-treasure": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du trésor spécial",
+				"ongoing-deck-building": "En cours ({{currentCards}} / {{maxCards}})",
+				"export-deckcode-button": "Copier le code",
+				"save-deck-button": "Enregistrer le deck",
+				"deck-saved-info": "Deck enregistré",
+				"save-deckcode-button-tooltip": "Ajouter ce deck à l’onglet \"Mes deccks\"",
+				"show-buckets-button-label": "Afficher les sélections",
+				"show-buckets-button-tooltip": "[EXPÉRIMENTAL] (description TODO) Affiche les sélections de cartes que vous pouvez avoir en fonction des cartes de votre deck. L—hypothèse est que les sélections proposées sont basées sur les cartes de votre deck actuel de la manière suivante : 1) construisez toute la liste des sélections qui contiennent au moins une carte de votre deck, et 2) choisissez l’une d’entre elles à offrir.",
+				"bucket-filter-button-tooltip": "Filtrer par sélection. La liste des cartes comprendra uniquement les cartes qui appartiennent à au moins une des sélections sélectionnées",
+				"search-tooltip": {
+					"text": "Vous pouvez utiliser les raccourcis de recherche suivants :",
+					"info-1": "Entrée : ajoute le premier résultat à votre deck",
+					"info-2": "Shift + Entrée : ajoute le premier résultat à votre deck et efface la barre de recherche",
+					"info-3": "class:<class> : rechercher uniquement des cartes de cette classe (par ex. class:mage ou class:neutral)"
+				},
 				"warning": {
-					"neutral-hero": "",
-					"loe-hero": ""
+					"neutral-hero": "Les codes de deck ne sont pas supportés par HS lui-même pour les héros neutres avec leur trésor spécial neutre (les trésor spéciaux de classe fonctionnent correctement)",
+					"loe-hero": "Les codes de deck ne sont pas supportés par HS lui-même pour les héros de la Ligue des explorateurs"
 				}
 			},
 			"empty-state": {
@@ -1026,7 +1036,7 @@
 			"tip-8": "[Champs de bataille] Avec Alt+B, affichez les stats détaillées en direct d’une partie dans la fenêtre Champs de bataille",
 			"tip-9": "[Champs de bataille] Rendez la fenêtre Champs de bataille plus large pour voir les dégâts moyens et les chances de tuer le héros adverse dans le simulateur",
 			"tip-10": "[Duels] Vous pouvez survoler les PV de l’adversaire pour voir son maximum de PV",
-			"tip-11": ""
+			"tip-11": "[Duels] Passer la souris sur le nom de votre adversaire révèle également sa classe"
 		}
 	},
 	"counters": {
@@ -1049,6 +1059,10 @@
 		"brilliant-macaw": {
 			"player": "La dernière carte avec Cri de guerre que vous avez jouée est {{value}}",
 			"opponent": "La dernière carte avec Cri de guerre que votre adversaire a jouée est {{value}}"
+		},
+		"grey-sage-parrot": {
+			"player": "{{value}} est le dernier sort qui a coûté {{cost}} ou plus que vous avez joué",
+			"opponent": "{{value}} est le dernier sort qui a coûté {{cost}} ou plus que votre adversaire a joué"
 		},
 		"cthun": {
 			"player": "Votre C’Thun a {{value}}/{{value}}",
@@ -1095,10 +1109,10 @@
 			"opponent": "Votre adversaire a joué {{value}} postes pendant cette partie"
 		},
 		"bgs-southsea": {
-			"player": ""
+			"player": "Vous avez acheté {{value}} Pirates pendant ce tour"
 		},
 		"bgs-majordomo": {
-			"player": ""
+			"player": "Vous avez joué {{value}} Élémentaires pendant ce tour"
 		}
 	},
 	"loading": {
@@ -1112,8 +1126,8 @@
 		"start-button": "Commençons",
 		"skip-button": "Passer",
 		"previous-button": "Précédent",
-		"next-button": "",
-		"done-button": "",
+		"next-button": "Suivant",
+		"done-button": "Terminé",
 		"steps": {
 			"decktracker": {
 				"title": "Decktracker",
@@ -1277,7 +1291,7 @@
 		"deck-name": {
 			"unnamed-deck": "Deck sans nom",
 			"unknown-deck": "Deck inconnu",
-			"player-name": "",
+			"player-name": "{{playerName}} en tant que {{playerClass}}",
 			"copy-deckstring-label": "Copier le deck",
 			"copy-deckstring-confirmation": "Copié !"
 		},
@@ -1460,10 +1474,10 @@
 			},
 			"minions-list": {
 				"reset-button": "Réinitialiser",
-				"highlight-tribe": "",
-				"unhighlight-tribe": "",
-				"highlight-minion": "",
-				"unhighlight-minion": ""
+				"highlight-tribe": "Cliquez pour mettre en valeur tous les serviteurs de type {{value}} dans la taverne",
+				"unhighlight-tribe": "Cliquez pour ne plus mettre en valeur les serviteurs de type {{value}} dans la taverne",
+				"highlight-minion": "Épingler ce serviteur pour le mettre en valeur dans la taverne",
+				"unhighlight-minion": "Désépingler ce serviteur pour ne plus le mettre en avant dans la taverne"
 			}
 		},
 		"post-match-stats": {
@@ -1529,7 +1543,7 @@
 			"copy-deck-tooltip-confirmation": "Copié dans le presse-papiers, vous pouvez maintenant l’importer dans Hearthstone",
 			"personal-deck-text": "Votre dernier deck",
 			"explore-decks-tooltip": "Explorer les meilleurs decks assortis",
-			"build-deck-tooltip": ""
+			"build-deck-tooltip": "Construisez votre propre deck avec le constructeur de deck de l’application"
 		}
 	},
 	"session": {
@@ -1836,6 +1850,8 @@
 					"bolner-tooltip": "Quand vous avez Bolner Bec-de-Corbin en main, affiche la première carte avec Cri de guerre que vous avez jouée pendant ce tour, s’il y en a une",
 					"brilliant-macaw-label": "Ara brillant",
 					"brilliant-macaw-tooltip": "Quand vous avez un Ara brillant en main, affiche la dernière carte avec Cri de guerre que vous avez jouée, s’il y en a une",
+					"grey-sage-parrot-label": "Perroquet gris cendré",
+					"grey-sage-parrot-tooltip": "Quand vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte (5) cristaux ou plus que vous avez joué, s’il y en a un",
 					"multicaster-label": "Écoles de sorts",
 					"multicaster-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
 					"coral-keeper-label": "Sentinelle des coraux",
@@ -1852,9 +1868,9 @@
 				"show-ooc-tracker-label": "Afficher le tracker dans l’écran de sélection",
 				"show-ooc-tracker-tooltip": "Ajoute votre deck lors de la sélection des trésors entre les parties. Cela vous permet de voir des synergies entre les cartes, par exemple.",
 				"show-ooc-hero-info-label": "Afficher les stats des héros",
-				"show-ooc-hero-info-tooltip": "Affiche les stats du héros / pouvoir héroïque / trésor signature lors du survol des options en jeu avant de commencer une virée de Duels.",
+				"show-ooc-hero-info-tooltip": "Affiche les stats du héros / pouvoir héroïque / trésor spécial lors du survol des options en jeu avant de commencer une virée de Duels.",
 				"show-ooc-deck-select-label": "Afficher le widget de deck rapide",
-				"show-ooc-deck-select-tooltip": "Affiche un widget sur l’écran de construction du deck qui vous permet de copier rapidement votre dernier deck joué avec cette combinaison Héros / Pouvoir héroïque / Trésor signature, ainsi que quelques-uns des meilleurs decks récents."
+				"show-ooc-deck-select-tooltip": "Affiche un widget sur l’écran de construction du deck qui vous permet de copier rapidement votre dernier deck joué avec cette combinaison Héros / Pouvoir héroïque / Trésor spécial, ainsi que quelques-uns des meilleurs decks récents."
 			}
 		},
 		"collection": {
