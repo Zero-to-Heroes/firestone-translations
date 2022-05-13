@@ -820,7 +820,7 @@
 				"number-of-runs": "賽局數",
 				"average-wins-per-run": "平均先手勝場",
 				"archive-deck-tooltip": "歸檔牌組(你可以之後復原)",
-				"delete-deck-tooltip": "",
+				"delete-deck-tooltip": "永久刪除牌組(無對局連結它)-你將會需要從頭重建",
 				"restore-deck-tooltip": "復原牌組",
 				"rename-deck-tooltip": "重新命名牌組",
 				"rename-confirm-button": "確定",
@@ -882,22 +882,23 @@
 				"choose-your-hero-power-title": "選擇你的英雄能力",
 				"choose-your-signature-treasure-title": "選擇你的專屬寶藏",
 				"build-your-deck-title": "組建你的牌組",
-				"go-back-hero": "",
-				"go-back-hero-power": "",
-				"go-back-signature-treasure": "",
+				"go-back-hero": "{{selectedCardName}} - 點擊以返回英雄選擇畫面",
+				"go-back-hero-power": "{{selectedCardName}} - 點擊以返回英雄能力選擇畫面",
+				"go-back-signature-treasure": "{{selectedCardName}} - 點擊以返回專屬寶藏選擇畫面",
 				"ongoing-deck-building": "進行中 ({{currentCards}} / {{maxCards}})",
 				"export-deckcode-button": "複製代碼",
 				"save-deck-button": "儲存牌組",
 				"deck-saved-info": "牌組已儲存",
 				"save-deckcode-button-tooltip": "將此牌組加入我的牌組頁籤",
-				"show-buckets-button-label": "",
-				"show-buckets-button-tooltip": "",
-				"bucket-filter-button-tooltip": "",
+				"show-buckets-button-label": "詞條",
+				"show-buckets-button-tooltip": "[EXPERIMENTAL] 根據你牌組顯示你可能拿到的詞條。這些詞條是基於你當前的套牌依以下列方式作為假設提供的：1) 構建所有包含至少一張你牌組牌的詞條，以及 2) 選其一來提供。",
+				"bucket-filter-button-tooltip": "依詞條過濾。 卡片列表將僅包含至少有一張在選定詞條裡的卡片",
 				"search-tooltip": {
-					"text": "",
-					"info-1": "",
-					"info-2": "",
-					"info-3": ""
+					"text": "你可以用以下快捷來搜尋:",
+					"info-1": "Enter - 將第一個結果加入你的列表",
+					"info-2": "Shift + Enter - 將第一個結果加入你的列表並清空搜索盒",
+					"info-3": "類型:<class> - 只搜尋此類型的卡 (例如 類型:法師 或 類型:自然)",
+					"info-4": "詞條:無 - 不依照任何詞條來搜尋卡片"
 				},
 				"warning": {
 					"neutral-hero": "牌組代碼不支援於用中立專屬寶藏的中立英雄(職業專屬寶藏可以正常運作)",
@@ -1061,8 +1062,8 @@
 			"opponent": "{{value}} 是你對手打出的最後一張戰吼牌"
 		},
 		"grey-sage-parrot": {
-			"player": "",
-			"opponent": ""
+			"player": "你最後打出的法術是 {{value}}，花費了 {{cost}} 或更多",
+			"opponent": "你的對手最後打出的法術是 {{value}}，花費了 {{cost}} 或更多"
 		},
 		"cthun": {
 			"player": "你的克蘇恩體質是 {{value}}/{{value}}",
@@ -1850,8 +1851,8 @@
 					"bolner-tooltip": "當你手中有包那‧錘喙且本回合已打出一個戰吼，即啟動",
 					"brilliant-macaw-label": "聰明的金剛鸚鵡",
 					"brilliant-macaw-tooltip": "當你手中有聰明的金剛鸚鵡且本回合已打出一個戰吼，即啟動",
-					"grey-sage-parrot-label": "",
-					"grey-sage-parrot-tooltip": "",
+					"grey-sage-parrot-label": "灰綠鸚鵡",
+					"grey-sage-parrot-tooltip": "當你手上有灰綠鸚鵡時，顯示你最後打出的費用5以上的法術",
 					"multicaster-label": "多重施法者",
 					"multicaster-tooltip": "顯示你在本賽局中已打出的法術系別",
 					"coral-keeper-label": "珊瑚守衛者",
