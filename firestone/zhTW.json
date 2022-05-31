@@ -904,7 +904,7 @@
 					"neutral-hero": "牌組代碼不支援於用中立專屬寶藏的中立英雄(職業專屬寶藏可以正常運作)",
 					"loe-hero": "牌組代碼不支援於新的探險者協會英雄"
 				},
-				"card-offering-rate-tooltip": ""
+				"card-offering-rate-tooltip": "此詞條的提供率(意味著*有此詞條時*, 你會有幾%機率得到此卡)"
 			},
 			"empty-state": {
 				"title": "尚未有任何內容",
@@ -1079,12 +1079,12 @@
 			"opponent": "你的對手已經死了 {{value}} 隻豬豬"
 		},
 		"fatigue": {
-			"player": "",
-			"opponent": ""
+			"player": "你最後的疲勞傷害是{{value}}",
+			"opponent": "你對手最後的疲勞傷害是{{value}}"
 		},
 		"abyssal-curse": {
-			"player": "",
-			"opponent": ""
+			"player": "你對手的最後一個深淵詛咒對你造成 {{value}} 傷害，你將在下一回合開始時從手中的詛咒中受到 {{totalDamageFromCursesInHand}} 傷害",
+			"opponent": "你上一個深淵詛咒對你的對手造成 {{value}} 傷害，他們將在下一回合開始時從手中的詛咒中受到 {{totalDamageFromCursesInHand}} 傷害"
 		},
 		"galakrond": {
 			"player": "你已祈求葛拉克朗 {{value}} 次",
@@ -1427,7 +1427,14 @@
 			"sneed-deathrattle-tooltip": "斯尼德的英雄能力會對此手下使用幾次",
 			"minions-selection-title": "手下",
 			"search-minion-placeholder": "搜尋手下",
-			"resimulating-battle": "重新模擬戰鬥"
+			"resimulating-battle": "重新模擬戰鬥",
+			"simulator-help-tooltip": {
+				"title": "建立對立板並模擬結果。 模擬器支持鍵盤控制：",
+				"control-hero": "用“{{playerKey}}”改變你的英雄，用“{{opponentKey}}”改變對手的英雄",
+				"control-hero-power": "用“{{playerKey}}”改變你的英雄能力，用“{{opponentKey}}”改變對手的英雄能力",
+				"control-minion": "使用“{{playerKey}}”將手下添加到您的棋盤，使用“{{opponentKey}}”將手下添加到對手的棋盤",
+				"control-general": "每次選擇時，使用“Tab”循環瀏覽字段，並使用“Space”切換複選框。 使用 Enter 選擇第一個顯示的選項，然後使用 Shift + Enter 驗證最終選擇"
+			}
 		},
 		"hero-stats": {
 			"finishes-title": "完成",
@@ -1447,7 +1454,7 @@
 			"achievement-completed": "已完成成就",
 			"achievement-missing": "成就任務",
 			"total-matches": "{{value}} 場對戰",
-			"tier-list-title-tooltip": ""
+			"tier-list-title-tooltip": "從 {{totalMatches}} 構建匹配過濾(更改主應用程序中的過濾器以更新統計信息)："
 		},
 		"in-game": {
 			"face-offs": {
@@ -1747,8 +1754,8 @@
 				"show-matchup-winrate-tooltip": "有資料時在追蹤器上顯示此牌組對抗對方職業的整體天梯勝率(僅限標準或開放)",
 				"show-gifts-separately": "分別顯示非起始套牌的卡牌",
 				"show-gifts-separately-tooltip": "在記牌器中顯示非起始套牌的卡牌(不同來源則分開顯示)",
-				"reset-deck-position-after-trade": "",
-				"reset-deck-position-after-trade-tooltip": "",
+				"reset-deck-position-after-trade": "出售後重設位置",
+				"reset-deck-position-after-trade-tooltip": "在更換一張可更換卡後，理論上該卡可以放在牌組的底部。 因此，默認情況下，當更換發生時，“頂層”和“底層”部分會被清除。 如果您希望這些部分即使在更換之後也保持其先前的值，請關閉此選項。",
 				"show-stats-change": "顯示狀態變更",
 				"show-stats-change-tooltip": "在牌組列表中顯示某些卡牌發生的變化(如:點燃、鍛造錘)",
 				"show-cost-reduction": "更新牌庫裡的費用",
@@ -1819,9 +1826,9 @@
 					"cthun-label": "克蘇恩",
 					"cthun-tooltip": "顯示你的對手目前克蘇恩的大小",
 					"fatigue-label": "疲勞",
-					"fatigue-tooltip": "",
-					"abyssal-curse-label": "",
-					"abyssal-curse-tooltip": "",
+					"fatigue-tooltip": "顯示你的對手最後的疲勞傷害",
+					"abyssal-curse-label": "深淵詛咒",
+					"abyssal-curse-tooltip": "顯示你對手最後的深淵詛咒傷害",
 					"attack-on-board-label": "場上攻擊力總和",
 					"attack-on-board-tooltip": "顯示對手手下和英雄的攻擊力總和",
 					"watch-post-label": "哨所",
@@ -1846,8 +1853,8 @@
 					"pogo-tooltip": "顯示你已打出的蹦蹦兔數量",
 					"jade-tooltip": "顯示你目前翠玉魔像的體質",
 					"cthun-tooltip": "顯示你目前克蘇恩的體質",
-					"fatigue-tooltip": "",
-					"abyssal-curse-tooltip": "",
+					"fatigue-tooltip": "顯示你最後的疲勞傷害",
+					"abyssal-curse-tooltip": "顯示你最後的深淵詛咒傷害",
 					"attack-on-board-tooltip": "顯示你的手下和英雄的攻擊力總和",
 					"number-of-spells-label": "法術施放數量",
 					"number-of-spells-tooltip": "顯示本賽局中你施放的法術數量。只有在套牌或手牌中找到相關卡牌時啟動",
@@ -1891,8 +1898,8 @@
 			"general": {
 				"title": "一般選項",
 				"high-resolution-images-label": "高解析度圖片",
-				"show-related-cards-label": "",
-				"show-related-cards-tooltip": "",
+				"show-related-cards-label": "顯示相關卡牌",
+				"show-related-cards-tooltip": "將鼠標懸停在一張卡片上時，也顯示與其相關的卡片(通常是其衍伸卡)。",
 				"card-size-in-collection-label": "收藏中的卡牌大小",
 				"notifications-label": "啟用通知",
 				"selective-notifications-label": "你可以選擇性的顯示一些卡牌通知",
@@ -1934,10 +1941,10 @@
 				"use-local-simulator-tooltip": "停用此功能，戰鬥模擬將在雲端上進行，這樣可以減輕電腦的負擔。但同時也需要一些時間傳送模擬結果",
 				"popup-hero-selection-screen-label": "彈出選擇英雄介面",
 				"popup-hero-selection-screen-tooltip": "啟用此功能，將會在選擇英雄時彈出各英雄的數據",
-				"use-mmr-filter-for-live-stats-label": "",
-				"use-mmr-filter-for-live-stats-tooltip": "",
-				"use-tribe-filter-for-live-stats-label": "",
-				"use-tribe-filter-for-live-stats-tooltip": "",
+				"use-mmr-filter-for-live-stats-label": "在實時統計中使用匹配積分數據",
+				"use-mmr-filter-for-live-stats-tooltip": "啟用時，比賽開始時英雄選擇屏幕上顯示的英雄評分將考慮您當前的匹配積分。 警告：這可能會導致數據樣本量過低，因此使用風險自負:)",
+				"use-tribe-filter-for-live-stats-label": "在實時統計中使用種族數據",
+				"use-tribe-filter-for-live-stats-tooltip": "啟用時，比賽開始時英雄選擇屏幕上顯示的英雄等級將考慮遊戲當前可用的種族。 警告：這可能會導致數據樣本量非常低，因此使用風險自負:)",
 				"show-next-opponent-recap-label": "顯示下個對手的戰況回顧",
 				"show-next-opponent-recap-tooltip": "在英雄戰場的視窗上方空間顯示你下個對手的資訊",
 				"show-achievements-label": "顯示成就",
@@ -2054,15 +2061,15 @@
 		}
 	},
 	"twitch": {
-		"constructed-section-title": "",
-		"battlegrounds-section-title": "",
+		"constructed-section-title": "構築",
+		"battlegrounds-section-title": "英雄戰場",
 		"could-not-log-error-title": "我們無法登入你的Twitch帳戶",
 		"could-not-log-error-text": "請至設定重新連接你的Twitch帳號",
 		"settings-side-text": "設定",
 		"show-hero-cards-help": "顯示英雄的卡牌",
-		"show-hero-cards-help-tooltip": "",
+		"show-hero-cards-help-tooltip": "將鼠標懸停在排行榜中的英雄頭像上時顯示其英雄能力",
 		"show-related-cards-help": "顯示相關卡牌",
-		"show-related-cards-help-tooltip": "",
+		"show-related-cards-help-tooltip": "將鼠標懸停在一張卡片上時，也顯示與其相關的卡片(通常是其衍伸卡)。",
 		"show-minions-list": "顯示手下列表",
 		"show-minions-list-tooltip": "顯示一個有所有可用手下的小工具。將鼠標停在上方可以看到完整資訊和其金卡",
 		"minions-list-size": "手下列表大小",
