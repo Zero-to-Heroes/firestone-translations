@@ -191,7 +191,7 @@
 				"default-validation-button": "Ок",
 				"default-cancel-button": "Отмена",
 				"multiselect-validation-button": "Ок",
-				"multiselect-validation-error-tooltip": "",
+				"multiselect-validation-error-tooltip": "Неверный выбор (и, пожалуйста, свяжитесь с разработчиками для получения более точного сообщения об ошибке, это бесполезно)",
 				"multiselect-clear-button": "Очистить",
 				"multiselect-reset-button": "Сбросить",
 				"hotkey-text": "Показать/скрыть:",
@@ -202,9 +202,9 @@
 				"supporter": "Спасибо за вашу поддержку! Вы супер :)"
 			},
 			"graph": {
-				"tooltip-title": "",
-				"wins-label": "",
-				"wins-value": ""
+				"tooltip-title": "Название",
+				"wins-label": "{{value}} побед",
+				"wins-value": "{{value}}% игр"
 			}
 		},
 		"internal": {
@@ -244,15 +244,15 @@
 				}
 			},
 			"stats": {
-				"title": "",
+				"title": "Обзор статистики",
 				"total-runs": "Всего забегов",
 				"wins-per-run": "Побед за забег в среднем",
-				"most-played-classes": "",
+				"most-played-classes": "Самые популярные классы",
 				"best-winrate-classes": "Лучшие классы по винрейту",
-				"most-faced-classes": "",
+				"most-faced-classes": "Наиболее встречающиеся классы",
 				"best-winrate-against": "Лучший винрейт против",
-				"stat-tooltip": "",
-				"faced-tooltip": ""
+				"stat-tooltip": "Вы сыграли {{numberOfRuns}} игр и {{totalMatches}} матчей с {{playerClass}} с {{winrate}}% винрейта",
+				"faced-tooltip": "Вы столкнулись с {{opponentClass}} {{totalMatches}} раз с {{winrate}}% винрейта"
 			},
 			"runs": {
 				"view-run-button": "Смотреть забег",
@@ -262,7 +262,7 @@
 			},
 			"empty-state": {
 				"title": "Здесь пока что ничего нет",
-				"subtitle": ""
+				"subtitle": "Начните играть на Арене для получения информации"
 			}
 		},
 		"collection": {
@@ -448,7 +448,7 @@
 					"subtitle": ""
 				},
 				"no-search-results": {
-					"title": "",
+					"title": "О нет! Матчи отсутствуют: \"{{value}}\"",
 					"subtitle": ""
 				},
 				"default": {
