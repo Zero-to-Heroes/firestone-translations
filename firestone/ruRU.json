@@ -191,7 +191,7 @@
 				"default-validation-button": "Ок",
 				"default-cancel-button": "Отмена",
 				"multiselect-validation-button": "Ок",
-				"multiselect-validation-error-tooltip": "",
+				"multiselect-validation-error-tooltip": "Неверный выбор (и, пожалуйста, свяжитесь с разработчиками для получения более точного сообщения об ошибке, это бесполезно)",
 				"multiselect-clear-button": "Очистить",
 				"multiselect-reset-button": "Сбросить",
 				"hotkey-text": "Показать/скрыть:",
@@ -202,9 +202,9 @@
 				"supporter": "Спасибо за вашу поддержку! Вы супер :)"
 			},
 			"graph": {
-				"tooltip-title": "",
-				"wins-label": "",
-				"wins-value": ""
+				"tooltip-title": "Название",
+				"wins-label": "{{value}} побед",
+				"wins-value": "{{value}}% игр"
 			}
 		},
 		"internal": {
@@ -244,15 +244,15 @@
 				}
 			},
 			"stats": {
-				"title": "",
+				"title": "Обзор статистики",
 				"total-runs": "Всего забегов",
 				"wins-per-run": "Побед за забег в среднем",
-				"most-played-classes": "",
+				"most-played-classes": "Самые популярные классы",
 				"best-winrate-classes": "Лучшие классы по винрейту",
-				"most-faced-classes": "",
+				"most-faced-classes": "Наиболее встречающиеся классы",
 				"best-winrate-against": "Лучший винрейт против",
-				"stat-tooltip": "",
-				"faced-tooltip": ""
+				"stat-tooltip": "Вы сыграли {{numberOfRuns}} игр и {{totalMatches}} матчей с {{playerClass}} с {{winrate}}% винрейта",
+				"faced-tooltip": "Вы столкнулись с {{opponentClass}} {{totalMatches}} раз с {{winrate}}% винрейта"
 			},
 			"runs": {
 				"view-run-button": "Смотреть забег",
@@ -262,7 +262,7 @@
 			},
 			"empty-state": {
 				"title": "Здесь пока что ничего нет",
-				"subtitle": ""
+				"subtitle": "Начните играть на Арене для получения информации"
 			}
 		},
 		"collection": {
@@ -308,7 +308,7 @@
 				"new-copy-long": "Новая карта",
 				"second-copy-long": "Вторая копия",
 				"title": "История получения карт",
-				"you-have-viewed": "",
+				"you-have-viewed": "Вы просмотрели {{numberOfCards}} из {{totalCards}} карт",
 				"load-more-button": "Ещё",
 				"empty-state-title": "Нет истории",
 				"empty-state-subtitle": "Открой комплект, чтобы начать!",
@@ -385,7 +385,7 @@
 			},
 			"pack-history": {
 				"title": "История открытий комплектов",
-				"you-have-viewed": "",
+				"you-have-viewed": "Вы просмотрели {{numberOfPacks}} из {{totalPacks}} наборов",
 				"load-more-button": "Ещё",
 				"empty-state": {
 					"title": "Пока нет истории",
@@ -445,11 +445,11 @@
 				},
 				"no-golden-card-in-set": {
 					"title": "Пока что нет ни одной золотой карты из этого набора!",
-					"subtitle": ""
+					"subtitle": "Не расстраивайтесь, продолжайте играть и получите этих блестящих друзей."
 				},
 				"no-search-results": {
-					"title": "",
-					"subtitle": ""
+					"title": "О нет! Матчи отсутствуют: \"{{value}}\"",
+					"subtitle": "Не сдавайтесь - проверьте написание или попробуйте использовать менее специфические термины."
 				},
 				"default": {
 					"title": "Здесь ничего нет",
@@ -459,21 +459,21 @@
 		},
 		"share": {
 			"title": "Поделиться",
-			"logged-out-message": "",
+			"logged-out-message": "Пожалуйста, используйте кнопку слева для того, чтобы войти, перед тем, как писать сообщение",
 			"login-button": "Войти",
 			"logout-button": "Выйти",
 			"clipboard": {
 				"title": "Буфер обмена",
-				"tooltip": "",
-				"confirmation": ""
+				"tooltip": "Копировать текущий экран в буфер обмена",
+				"confirmation": "Изображение скопировано в буфер обмена"
 			},
 			"reddit": {
 				"title": "Reddit",
-				"post-title-placeholder": "",
+				"post-title-placeholder": "Заголовок вашего поста",
 				"subreddit-placeholder": "сабреддит",
 				"subreddit-tooltip": "",
 				"flair-tooltip": "",
-				"logged-out-message": ""
+				"logged-out-message": "Пожалуйста, используйте кнопку слева для того, чтобы войти, перед тем, как писать сообщение"
 			}
 		},
 		"decktracker": {
