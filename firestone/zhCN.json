@@ -567,14 +567,14 @@
 			"ladder-stats": {
 				"title-player": "己方职业明细",
 				"title-opponent": "对手职业明细",
-				"player-class-tooltip": "",
-				"opponent-class-tooltip": "",
-				"total": "",
-				"going-first-button-label": "",
-				"going-second-button-label": "",
+				"player-class-tooltip": "您的职业：{{className}}",
+				"opponent-class-tooltip": "对手职业：{{className}}",
+				"total": "总计",
+				"going-first-button-label": "仅先手",
+				"going-second-button-label": "仅后手",
 				"tab-selection": {
-					"overview": "",
-					"matchups": ""
+					"overview": "概览",
+					"matchups": "匹配"
 				}
 			},
 			"personal-stats-ranking": {
@@ -961,7 +961,7 @@
 				},
 				"deck": {
 					"all": "所有套牌",
-					"deckstring-tooltip": ""
+					"deckstring-tooltip": "{{deckName}}（{{deckClass}}），最后使用于{{lastPlayedDate}}"
 				},
 				"game-mode": {
 					"all": "所有模式",
@@ -1066,10 +1066,10 @@
 		}
 	},
 	"turn-timer": {
-		"mulligan": "",
-		"current-turn": "",
-		"player-current-turn-tooltip": "",
-		"player-total-turn-tooltip": ""
+		"mulligan": "起手换牌",
+		"current-turn": "第 {{value}} 回合",
+		"player-current-turn-tooltip": "您当前回合持续的时长。默认情况下，回合时长为75秒，此时长可被动画效果延长。",
+		"player-total-turn-tooltip": "这场对局的总时长"
 	},
 	"counters": {
 		"attack": {
@@ -1766,7 +1766,7 @@
 				"global": "全局选项",
 				"your-deck": "您的套牌",
 				"opponent-deck": "对手套牌",
-				"turn-timer": "",
+				"turn-timer": "回合计时器",
 				"duels": "对决模式",
 				"launch": "启动选项"
 			},
@@ -1924,14 +1924,14 @@
 				"show-ooc-deck-select-tooltip": "在构筑套牌界面显示小工具，让您能够快速复制您最近使用这个英雄/英雄技能/签名宝藏的构筑，或者最近的几个高胜套牌的构筑。"
 			},
 			"turn-timer": {
-				"title": "",
-				"show-turn-timer-label": "",
-				"show-turn-timer-tooltip": "",
-				"show-turn-timer-match-length-label": "",
-				"show-turn-timer-match-length-tooltip": "",
-				"size-title": "",
-				"opacity-title": "",
-				"width-title": ""
+				"title": "回合计时器",
+				"show-turn-timer-label": "显示回合计时器",
+				"show-turn-timer-tooltip": "显示一个记录此对局总时长和您当前回合时长的小工具，同时指明当前回合的剩余时长。",
+				"show-turn-timer-match-length-label": "显示对局时长",
+				"show-turn-timer-match-length-tooltip": "显示在这场对局已用的总时长，包括起手换牌",
+				"size-title": "小工具尺寸",
+				"opacity-title": "小工具透明度",
+				"width-title": "小工具宽度"
 			}
 		},
 		"collection": {
