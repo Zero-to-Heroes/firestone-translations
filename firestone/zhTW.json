@@ -574,10 +574,10 @@
 				"opponent-class-tooltip": "對手職業: {{className}}",
 				"total": "合計",
 				"going-first-button-label": "",
-				"going-second-button-label": "",
+				"going-second-button-label": "限硬幣",
 				"tab-selection": {
-					"overview": "",
-					"matchups": ""
+					"overview": "總覽",
+					"matchups": "對決"
 				}
 			},
 			"personal-stats-ranking": {
@@ -600,12 +600,12 @@
 				"winrate-coin": "勝率(後手)"
 			},
 			"deckbuilder": {
-				"choose-your-format-title": "",
-				"choose-your-class-title": "",
-				"build-your-deck-title": "",
-				"go-back-format": "",
-				"go-back-class": "",
-				"import-deck-button-tooltip": ""
+				"choose-your-format-title": "選擇你的版式",
+				"choose-your-class-title": "選擇您的職業",
+				"build-your-deck-title": "組建你的牌組",
+				"go-back-format": "{{formatName}} - 點擊以返回版式選擇畫面",
+				"go-back-class": "{{className}} - 點擊以返回職業選擇畫面",
+				"import-deck-button-tooltip": "導入已複製的牌組代碼"
 			}
 		},
 		"battlegrounds": {
@@ -769,7 +769,7 @@
 				"high-win-decks": "高勝率牌組",
 				"leaderboard": "排行榜",
 				"deckbuilder": "套牌小幫手",
-				"buckets": ""
+				"buckets": "詞條"
 			},
 			"filters": {
 				"dust": {
@@ -843,13 +843,13 @@
 				"number-of-runs": "賽局數",
 				"average-wins-per-run": "平均先手勝場",
 				"archive-deck-tooltip": "歸檔牌組(你可以之後復原)",
-				"delete-deck-tooltip": "",
+				"delete-deck-tooltip": "永久刪除牌組",
 				"restore-deck-tooltip": "復原牌組",
 				"rename-deck-tooltip": "重新命名牌組",
-				"delete-deck-confirmation-title": "",
-				"delete-deck-confirmation-text": "",
-				"delete-deck-confirmation-ok": "",
-				"delete-deck-confirmation-cancel": "",
+				"delete-deck-confirmation-title": "刪除牌組",
+				"delete-deck-confirmation-text": "永久刪除此牌組？",
+				"delete-deck-confirmation-ok": "刪除",
+				"delete-deck-confirmation-cancel": "取消",
 				"rename-confirm-button": "確定",
 				"default-deck-name": "{{wins}} 贏 {{playerClass}} ({{gameMode}})",
 				"default-deck-name-blank": "擂台牌組"
@@ -932,9 +932,9 @@
 					"loe-hero": "牌組代碼不支援於新的探險者協會英雄"
 				},
 				"card-offering-rate-tooltip": "此詞條的提供率(意味著*有此詞條時*, 你會有幾%機率得到此卡)",
-				"or": "",
-				"import-deck-button-title": "",
-				"import-deck-button-tooltip": ""
+				"or": "或",
+				"import-deck-button-title": "匯入牌組",
+				"import-deck-button-tooltip": "導入已複製的牌組代碼。 你仍然需要手動選擇你的英雄能力和專屬寶藏，因為它們不是套牌代碼的一部分"
 			},
 			"empty-state": {
 				"title": "尚未有任何內容",
@@ -968,7 +968,7 @@
 				},
 				"deck": {
 					"all": "所有牌組",
-					"deckstring-tooltip": ""
+					"deckstring-tooltip": "{{deckName}} ({{deckClass}}), 最後使用於 {{lastPlayedDate}}"
 				},
 				"game-mode": {
 					"all": "所有模式",
@@ -1035,7 +1035,7 @@
 				},
 				"went-first-tooltip": "先手",
 				"went-second-tooltip": "後手",
-				"bgs-prizes-tooltip": ""
+				"bgs-prizes-tooltip": "暗月獎勵已啟用"
 			},
 			"class-icon-toggle": {
 				"label": "使用職業圖示",
@@ -1074,10 +1074,10 @@
 		}
 	},
 	"turn-timer": {
-		"mulligan": "",
-		"current-turn": "",
-		"player-current-turn-tooltip": "",
-		"player-total-turn-tooltip": ""
+		"mulligan": "起手換牌",
+		"current-turn": "第{{value}} 回合",
+		"player-current-turn-tooltip": "你當前的回合已經進行了多長時間。 預設一回合為 75 秒，但由於動畫的原因可以延長。",
+		"player-total-turn-tooltip": "本賽局總花費時間"
 	},
 	"counters": {
 		"attack": {
@@ -1362,7 +1362,7 @@
 		"card-burned": "爆牌",
 		"card-transformed": "被轉換的卡",
 		"card-discarded": "棄牌",
-		"card-countered": "",
+		"card-countered": "被反制的牌",
 		"card-in-graveyard": "在墓地",
 		"gift-created-by-single-card": "由<br/> {{value}} <br/>產生",
 		"gift-created-by-multiple-cards": "由 <br/> 多個產生",
@@ -1566,7 +1566,7 @@
 		"banned-tribes": {
 			"exceptions": "例外：{{value}}",
 			"exceptions-tooltip": "{{tribeNames}} 不會出現在此局。{{exceptions}}",
-			"available-tooltip": ""
+			"available-tooltip": "{{tribeNames}} 將出現在此局。"
 		},
 		"board": {
 			"seen-just-now": "剛才看到的陣容",
@@ -1774,7 +1774,7 @@
 				"global": "全域選項",
 				"your-deck": "你的牌組",
 				"opponent-deck": "對手牌組",
-				"turn-timer": "",
+				"turn-timer": "回合計時器",
 				"duels": "決鬥擂台",
 				"launch": "啟動設定"
 			},
@@ -1932,14 +1932,14 @@
 				"show-ooc-deck-select-tooltip": "在套牌構築畫面上顯示小工具，可讓您快速複製玩過的最後一套套牌所使用的英雄/英雄能力/寶藏組合，以及最近的幾張高勝率套牌。"
 			},
 			"turn-timer": {
-				"title": "",
-				"show-turn-timer-label": "",
-				"show-turn-timer-tooltip": "",
+				"title": "回合計時器",
+				"show-turn-timer-label": "顯示回合計時器",
+				"show-turn-timer-tooltip": "顯示計算總時間和當前回合所花費時間的部件，並顯示你此回合還剩下多少時間",
 				"show-turn-timer-match-length-label": "",
-				"show-turn-timer-match-length-tooltip": "",
-				"size-title": "",
-				"opacity-title": "",
-				"width-title": ""
+				"show-turn-timer-match-length-tooltip": "顯示本場比賽經過的總時間，包括起手換牌",
+				"size-title": "元件的縮放",
+				"opacity-title": "元件透明度",
+				"width-title": "元件寬度"
 			}
 		},
 		"collection": {
@@ -2014,10 +2014,10 @@
 				"overlay-title": "覆蓋層選項",
 				"show-banned-tribes-label": "顯示被禁的種族",
 				"show-banned-tribes-tooltip": "顯示這個賽局被禁的種族",
-				"show-available-tribes-label": "",
-				"show-available-tribes-tooltip": "",
-				"banned-tribes-single-row-label": "",
-				"banned-tribes-single-row-tooltip": "",
+				"show-available-tribes-label": "改為顯示可用的種族",
+				"show-available-tribes-tooltip": "顯示可用的種族而不是被禁止的",
+				"banned-tribes-single-row-label": "強制單行",
+				"banned-tribes-single-row-tooltip": "強制種族顯示在單行中，不換行",
 				"show-minions-list-label": "顯示手下列表",
 				"show-minions-list-tooltip": "顯示手下列表，並以星等分類",
 				"turn-counter-label": "顯示回合計數器",
