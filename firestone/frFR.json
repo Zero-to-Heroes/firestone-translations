@@ -396,7 +396,10 @@
 				"title": "Paquets depuis toujours ({{value}})",
 				"best-opened-packs-title": "{{value}} meilleurs paquets ouverts",
 				"best-opened-packs-title-tooltip": "Meilleurs paquets que vous avez ouverts avec Firestone ouvert",
-				"pack-stat-tooltip": "Vous avez reçu {{totalPacks}} paquets {{packName}} depuis que vous avez commencé à jouer à Hearthstone"
+				"pack-stat-tooltip": "Vous avez reçu {{totalPacks}} paquets {{packName}} depuis que vous avez commencé à jouer à Hearthstone",
+				"main-sets-group-name": "Ensembles principaux ({{totalPacks}})",
+				"non-buyable-group-name": "Paquets spéciaux ({{totalPacks}})",
+				"other-group-name": "Autres ({{totalPacks}})"
 			},
 			"set-stats": {
 				"title": "Stats de l’ensemble",
@@ -480,7 +483,8 @@
 			"menu": {
 				"decks-header": "Decks",
 				"stats-header": "Stats",
-				"ranking-header": "Rang"
+				"ranking-header": "Rang",
+				"deckbuilder-header": "Construction de deck"
 			},
 			"filters": {
 				"filter-info-tooltip": "La modification de ces filtres aura également un impact sur les statistiques affichées dans le decktracker en jeu",
@@ -554,6 +558,7 @@
 				"total-games": "{{value}} parties",
 				"winrate": "{{value}}% victoires",
 				"last-used": "Vu le {{value}}",
+				"created-on": "Créé : {{value}}",
 				"archive-button-tooltip": "Archiver ce deck (vous pourrez le restaurer plus tard)",
 				"restore-button-tooltip": "Restaurer ce deck",
 				"default-deck-name": "Nom du deck"
@@ -564,7 +569,16 @@
 			},
 			"ladder-stats": {
 				"title-player": "Détail des classes jouées",
-				"title-opponent": "Détail des classes adverses"
+				"title-opponent": "Détail des classes adverses",
+				"player-class-tooltip": "Votre classe : {{className}}",
+				"opponent-class-tooltip": "Classe adverse : {{className}}",
+				"total": "Total",
+				"going-first-button-label": "Commencées seulement",
+				"going-second-button-label": "Seulement avec La pièce",
+				"tab-selection": {
+					"overview": "Aperçu ",
+					"matchups": "Matchups"
+				}
 			},
 			"personal-stats-ranking": {
 				"header": "Évolution du rang / Parties"
@@ -584,6 +598,14 @@
 				"winrate": "Taux de victoires",
 				"winrate-first": "Taux de victoires (premier)",
 				"winrate-coin": "Taux de victoires (La pièce)"
+			},
+			"deckbuilder": {
+				"choose-your-format-title": "Choisissez votre format",
+				"choose-your-class-title": "Choisissez votre classe",
+				"build-your-deck-title": "Construisez votre deck",
+				"go-back-format": "{{formatName}} – Cliquez pour revenir à l’écran de sélection du format",
+				"go-back-class": "{{className}} – Cliquez pour revenir à l’écran de sélection de la classe",
+				"import-deck-button-tooltip": "Importer un code de deck depuis votre presse-papiers."
 			}
 		},
 		"battlegrounds": {
@@ -746,7 +768,8 @@
 				"treasures": "Trésors",
 				"high-win-decks": "Meilleurs decks",
 				"leaderboard": "Classement",
-				"deckbuilder": "Construction de deck"
+				"deckbuilder": "Construction de deck",
+				"buckets": "Sélections"
 			},
 			"filters": {
 				"dust": {
@@ -820,9 +843,13 @@
 				"number-of-runs": "Nombre de virées",
 				"average-wins-per-run": "Nb de victoires moy.",
 				"archive-deck-tooltip": "Archiver ce deck (vous pourrez le restaurer plus tard)",
-				"delete-deck-tooltip": "Supprimer définitivement le deck (aucune virée ne lui est liée) ; vous devrez le recréer de zéro",
+				"delete-deck-tooltip": "Supprimer définitivement",
 				"restore-deck-tooltip": "Restaurer ce deck",
 				"rename-deck-tooltip": "Renommer ce deck",
+				"delete-deck-confirmation-title": "Supprimer le deck",
+				"delete-deck-confirmation-text": "Supprimer définitivement ce deck ?",
+				"delete-deck-confirmation-ok": "Supprimer",
+				"delete-deck-confirmation-cancel": "Annuler",
 				"rename-confirm-button": "OK",
 				"default-deck-name": "{{wins}} victoires {{playerClass}} ({{gameMode}})",
 				"default-deck-name-blank": "Deck de Duels"
@@ -904,7 +931,10 @@
 					"neutral-hero": "Les codes de deck ne sont pas supportés par HS lui-même pour les héros neutres avec leur trésor spécial neutre (les trésor spéciaux de classe fonctionnent correctement)",
 					"loe-hero": "Les codes de deck ne sont pas supportés par HS lui-même pour les héros de la Ligue des explorateurs"
 				},
-				"card-offering-rate-tooltip": "Taux d’apparition dans cette sélection (cela signifie que *si cette sélection vous est proposée*, vous aurez ce pourcentage de chances que cette carte vous soit proposée)"
+				"card-offering-rate-tooltip": "Taux d’apparition dans cette sélection (cela signifie que *si cette sélection vous est proposée*, vous aurez ce pourcentage de chances que cette carte vous soit proposée)",
+				"or": "ou",
+				"import-deck-button-title": "Importer un deck",
+				"import-deck-button-tooltip": "Importez le code de deck actuellement dans votre presse-papiers. Vous devrez toujours choisir manuellement le pouvoir héroïque et le trésor spécial, car ils ne font pas partie du code du deck"
 			},
 			"empty-state": {
 				"title": "Rien ici pour le moment",
@@ -937,7 +967,8 @@
 					"all": "Tous les héros"
 				},
 				"deck": {
-					"all": "Tous les decks"
+					"all": "Tous les decks",
+					"deckstring-tooltip": "{{deckName}} ({{deckClass}}), joué le {{lastPlayedDate}}"
 				},
 				"game-mode": {
 					"all": "Tous les modes de jeu",
@@ -1040,6 +1071,12 @@
 			"tip-10": "[Duels] Vous pouvez survoler les PV de l’adversaire pour voir son maximum de PV",
 			"tip-11": "[Duels] Passer la souris sur le nom de votre adversaire révèle également sa classe"
 		}
+	},
+	"turn-timer": {
+		"mulligan": "Mulligan",
+		"current-turn": "Tour {{value}}",
+		"player-current-turn-tooltip": "Depuis combien de temps dure votre tour actuel. Par défaut, les tours durent 75 secondes, mais peuvent parfois être plus longs en raison des animations.",
+		"player-total-turn-tooltip": "Temps total passé dans cette partie."
 	},
 	"counters": {
 		"attack": {
@@ -1324,6 +1361,7 @@
 		"card-burned": "Carte brûlée",
 		"card-transformed": "Carte transformée",
 		"card-discarded": "Carte défaussée",
+		"card-countered": "Carte contrée",
 		"card-in-graveyard": "Dans le cimetière",
 		"gift-created-by-single-card": "Créée par <br/> {{value}}",
 		"gift-created-by-multiple-cards": "Créée par <br/> plusieurs entités",
@@ -1526,7 +1564,8 @@
 		},
 		"banned-tribes": {
 			"exceptions": "Exceptions : {{value}}",
-			"exceptions-tooltip": "{{tribeNames}} n’apparaîtront pas dans cette partie. {{exceptions}}"
+			"exceptions-tooltip": "{{tribeNames}} n’apparaîtront pas dans cette partie. {{exceptions}}",
+			"available-tooltip": "{{tribeNames}} apparaîtront dans cette partie."
 		},
 		"board": {
 			"seen-just-now": "Troupe de guerre vue à l’instant",
@@ -1734,6 +1773,7 @@
 				"global": "Options générales",
 				"your-deck": "Votre deck",
 				"opponent-deck": "Deck de l’adversaire",
+				"turn-timer": "Minuteur",
 				"duels": "Duels",
 				"launch": "Options de lancement"
 			},
@@ -1889,6 +1929,16 @@
 				"show-ooc-hero-info-tooltip": "Affiche les stats du héros / pouvoir héroïque / trésor spécial lors du survol des options en jeu avant de commencer une virée de Duels.",
 				"show-ooc-deck-select-label": "Afficher le widget de deck rapide",
 				"show-ooc-deck-select-tooltip": "Affiche un widget sur l’écran de construction du deck qui vous permet de copier rapidement votre dernier deck joué avec cette combinaison Héros / Pouvoir héroïque / Trésor spécial, ainsi que quelques-uns des meilleurs decks récents."
+			},
+			"turn-timer": {
+				"title": "Minuteur",
+				"show-turn-timer-label": "Afficher le minuteur",
+				"show-turn-timer-tooltip": "Afficher un widget qui compte le temps passé dans la partie et dans votre tour, en plus de vous donner une indication du temps qu’il vous reste dans le tour",
+				"show-turn-timer-match-length-label": "Afficher la durée de la partie",
+				"show-turn-timer-match-length-tooltip": "Afficher le temps total écoulé dans cette partie, y compris le mulligan",
+				"size-title": "Échelle du widget",
+				"opacity-title": "Opacité du widget",
+				"width-title": "Largeur du widget"
 			}
 		},
 		"collection": {
@@ -1963,6 +2013,10 @@
 				"overlay-title": "Configuration de l’overlay",
 				"show-banned-tribes-label": "Afficher les types absents",
 				"show-banned-tribes-tooltip": "Afficher quels types de serviteur sont absents dans la partie en cours",
+				"show-available-tribes-label": "Afficher les types de serviteurs disponibles à la place",
+				"show-available-tribes-tooltip": "Afficher les types de serviteurs disponibles au lieu des types de serviteurs interdits",
+				"banned-tribes-single-row-label": "Forcer une seule ligne",
+				"banned-tribes-single-row-tooltip": "Forcer l’affichage des types de serviteurs sur une seule ligne",
 				"show-minions-list-label": "Afficher la liste des serviteurs",
 				"show-minions-list-tooltip": "Afficher la liste des serviteurs, regroupés par niveau de taverne",
 				"turn-counter-label": "Afficher le compteur de tours",

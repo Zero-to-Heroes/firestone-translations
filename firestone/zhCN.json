@@ -396,7 +396,10 @@
 				"title": "所有的卡牌包（{{value}}）",
 				"best-opened-packs-title": "最欧的 {{value}} 个卡牌包",
 				"best-opened-packs-title-tooltip": "您在Firestone运行时开出的最欧卡牌包",
-				"pack-stat-tooltip": "您的炉石传说生涯中总共开了 {{totalPacks}} 包 {{packName}}"
+				"pack-stat-tooltip": "您的炉石传说生涯中总共开了 {{totalPacks}} 包 {{packName}}",
+				"main-sets-group-name": "主扩展包（{{totalPacks}}）",
+				"non-buyable-group-name": "特殊卡包（{{totalPacks}}）",
+				"other-group-name": "其他（{{totalPacks}}）"
 			},
 			"set-stats": {
 				"title": "扩展包统计数据",
@@ -480,7 +483,8 @@
 			"menu": {
 				"decks-header": "套牌",
 				"stats-header": "统计数据",
-				"ranking-header": "等级"
+				"ranking-header": "等级",
+				"deckbuilder-header": "构筑套牌"
 			},
 			"filters": {
 				"filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
@@ -554,6 +558,7 @@
 				"total-games": "{{value}} 场对局",
 				"winrate": "{{value}}%胜率",
 				"last-used": "最后使用于 {{value}}",
+				"created-on": "创建于{{value}}",
 				"archive-button-tooltip": "存档这副套牌(您可以稍后还原它)",
 				"restore-button-tooltip": "还原这副套牌",
 				"default-deck-name": "套牌名称"
@@ -564,7 +569,16 @@
 			},
 			"ladder-stats": {
 				"title-player": "己方职业明细",
-				"title-opponent": "对手职业明细"
+				"title-opponent": "对手职业明细",
+				"player-class-tooltip": "您的职业：{{className}}",
+				"opponent-class-tooltip": "对手职业：{{className}}",
+				"total": "总计",
+				"going-first-button-label": "仅先手",
+				"going-second-button-label": "仅后手",
+				"tab-selection": {
+					"overview": "概览",
+					"matchups": "匹配"
+				}
 			},
 			"personal-stats-ranking": {
 				"header": "晋级赛"
@@ -584,6 +598,14 @@
 				"winrate": "胜率",
 				"winrate-first": "先手胜率",
 				"winrate-coin": "后手胜率"
+			},
+			"deckbuilder": {
+				"choose-your-format-title": "选择模式",
+				"choose-your-class-title": "选择职业",
+				"build-your-deck-title": "构筑套牌",
+				"go-back-format": "{{formatName}} - 点击返回模式选择界面",
+				"go-back-class": "{{className}} - 点击返回职业选择界面",
+				"import-deck-button-tooltip": "从剪贴板导入套牌代码"
 			}
 		},
 		"battlegrounds": {
@@ -746,7 +768,8 @@
 				"treasures": "宝藏",
 				"high-win-decks": "高胜套牌",
 				"leaderboard": "排行榜",
-				"deckbuilder": "构筑套牌"
+				"deckbuilder": "构筑套牌",
+				"buckets": "词条"
 			},
 			"filters": {
 				"dust": {
@@ -820,9 +843,13 @@
 				"number-of-runs": "轮数",
 				"average-wins-per-run": "每轮平均胜场数",
 				"archive-deck-tooltip": "存档这副套牌(您可以稍后还原它)",
-				"delete-deck-tooltip": "永久删除套牌（没有轮次关联它） -  您将需要重新创建",
+				"delete-deck-tooltip": "彻底删除套牌",
 				"restore-deck-tooltip": "还原这副套牌",
 				"rename-deck-tooltip": "重命名套牌",
+				"delete-deck-confirmation-title": "删除套牌",
+				"delete-deck-confirmation-text": "要彻底删除此套牌吗？",
+				"delete-deck-confirmation-ok": "删除",
+				"delete-deck-confirmation-cancel": "取消",
 				"rename-confirm-button": "确定",
 				"default-deck-name": "{{wins}} 胜 {{playerClass}} ({{gameMode}})",
 				"default-deck-name-blank": "对决模式套牌"
@@ -904,7 +931,10 @@
 					"neutral-hero": "由于炉石传说自身限制，套牌代码不支持选择中立签名宝藏的中立英雄（结盟职业签名宝藏可正常使用）",
 					"loe-hero": "由于炉石传说自身限制，套牌代码不支持探险者协会的英雄"
 				},
-				"card-offering-rate-tooltip": "卡牌在此词条中的提供概率（当系统提供此词条时，您可选到此卡牌的概率）"
+				"card-offering-rate-tooltip": "卡牌在此词条中的提供概率（当系统提供此词条时，您可选到此卡牌的概率）",
+				"or": "或",
+				"import-deck-button-title": "导入套牌",
+				"import-deck-button-tooltip": "导入剪贴板中的套牌代码。 您仍然需要手动选择您的英雄技能和签名宝藏，因为它们不是套牌代码的一部分。"
 			},
 			"empty-state": {
 				"title": "暂无记录",
@@ -937,7 +967,8 @@
 					"all": "所有英雄"
 				},
 				"deck": {
-					"all": "所有套牌"
+					"all": "所有套牌",
+					"deckstring-tooltip": "{{deckName}}（{{deckClass}}），最后使用于{{lastPlayedDate}}"
 				},
 				"game-mode": {
 					"all": "所有模式",
@@ -1040,6 +1071,12 @@
 			"tip-10": "[对决模式] 您可以将鼠标悬停在对手的生命值上查看他们的最大生命值",
 			"tip-11": "[对决模式] 鼠标悬停于对手的名字会显示其职业"
 		}
+	},
+	"turn-timer": {
+		"mulligan": "起手换牌",
+		"current-turn": "第 {{value}} 回合",
+		"player-current-turn-tooltip": "您当前回合持续的时长。默认情况下，回合时长为75秒，此时长可被动画效果延长。",
+		"player-total-turn-tooltip": "这场对局的总时长"
 	},
 	"counters": {
 		"attack": {
@@ -1324,6 +1361,7 @@
 		"card-burned": "爆牌",
 		"card-transformed": "被变形的卡牌",
 		"card-discarded": "弃牌",
+		"card-countered": "卡牌计数",
 		"card-in-graveyard": "坟场中",
 		"gift-created-by-single-card": "由 <br/> {{value}} 创建",
 		"gift-created-by-multiple-cards": "由 <br/> 多方创建",
@@ -1526,7 +1564,8 @@
 		},
 		"banned-tribes": {
 			"exceptions": "异常: {{value}}",
-			"exceptions-tooltip": "这场对战中将不会出现 {{tribeNames}} 。 {{exceptions}}"
+			"exceptions-tooltip": "这场对战中将不会出现 {{tribeNames}} 。 {{exceptions}}",
+			"available-tooltip": "这场对战中将出现 {{tribeNames}} 。 "
 		},
 		"board": {
 			"seen-just-now": "上回合阵容",
@@ -1734,6 +1773,7 @@
 				"global": "全局选项",
 				"your-deck": "您的套牌",
 				"opponent-deck": "对手套牌",
+				"turn-timer": "回合计时器",
 				"duels": "对决模式",
 				"launch": "启动选项"
 			},
@@ -1889,6 +1929,16 @@
 				"show-ooc-hero-info-tooltip": "在开始一轮对决前悬停鼠标显示英雄/英雄技能/签名宝藏统计数据。",
 				"show-ooc-deck-select-label": "显示快速套牌小工具",
 				"show-ooc-deck-select-tooltip": "在构筑套牌界面显示小工具，让您能够快速复制您最近使用这个英雄/英雄技能/签名宝藏的构筑，或者最近的几个高胜套牌的构筑。"
+			},
+			"turn-timer": {
+				"title": "回合计时器",
+				"show-turn-timer-label": "显示回合计时器",
+				"show-turn-timer-tooltip": "显示一个记录此对局总时长和您当前回合时长的小工具，同时指明当前回合的剩余时长。",
+				"show-turn-timer-match-length-label": "显示对局时长",
+				"show-turn-timer-match-length-tooltip": "显示在这场对局已用的总时长，包括起手换牌",
+				"size-title": "小工具尺寸",
+				"opacity-title": "小工具透明度",
+				"width-title": "小工具宽度"
 			}
 		},
 		"collection": {
@@ -1963,6 +2013,10 @@
 				"overlay-title": "浮窗选项",
 				"show-banned-tribes-label": "显示禁用的随从类型",
 				"show-banned-tribes-tooltip": "显示哪些随从类型在当前对局中被禁用",
+				"show-available-tribes-label": "转为显示可用的随从类型",
+				"show-available-tribes-tooltip": "显示可用的随从类型而非禁用的",
+				"banned-tribes-single-row-label": "强制单行显示",
+				"banned-tribes-single-row-tooltip": "强制单行显示随从类型",
 				"show-minions-list-label": "显示随从列表",
 				"show-minions-list-tooltip": "显示各星级的随从列表",
 				"turn-counter-label": "显示回合数",

@@ -396,7 +396,10 @@
 				"title": "Всего комплектов ({{value}})",
 				"best-opened-packs-title": "{{value}} лучших комплектов",
 				"best-opened-packs-title-tooltip": "Лучшие комплекты, которые вы открыли с запущенным Firestone",
-				"pack-stat-tooltip": "Всего комплектов \"{{packName}}\" получено: {{totalPacks}}"
+				"pack-stat-tooltip": "Всего комплектов \"{{packName}}\" получено: {{totalPacks}}",
+				"main-sets-group-name": "",
+				"non-buyable-group-name": "",
+				"other-group-name": ""
 			},
 			"set-stats": {
 				"title": "Статистика набора",
@@ -480,7 +483,8 @@
 			"menu": {
 				"decks-header": "Колоды",
 				"stats-header": "Статистика",
-				"ranking-header": "Рейтинг"
+				"ranking-header": "Рейтинг",
+				"deckbuilder-header": "Создание колод"
 			},
 			"filters": {
 				"filter-info-tooltip": "Изменение этих фильтров также повлияет на статистику, отображаемую в дек‑трекере в игре",
@@ -554,6 +558,7 @@
 				"total-games": "Игр: {{value}}",
 				"winrate": "Доля побед: {{value}}%",
 				"last-used": "Посл. игра: {{value}}",
+				"created-on": "",
 				"archive-button-tooltip": "Архивировать эту колоду (вы можете восстановить её позже)",
 				"restore-button-tooltip": "Восстановить эту колоду",
 				"default-deck-name": "Название колоды"
@@ -564,7 +569,16 @@
 			},
 			"ladder-stats": {
 				"title-player": "Разбивка классов игрока",
-				"title-opponent": "Разбивка классов оппонентов"
+				"title-opponent": "Разбивка классов оппонентов",
+				"player-class-tooltip": "",
+				"opponent-class-tooltip": "",
+				"total": "",
+				"going-first-button-label": "",
+				"going-second-button-label": "",
+				"tab-selection": {
+					"overview": "",
+					"matchups": ""
+				}
 			},
 			"personal-stats-ranking": {
 				"header": ""
@@ -584,6 +598,14 @@
 				"winrate": "Доля побед",
 				"winrate-first": "Доля побед (первым)",
 				"winrate-coin": "Доля побед (с монеткой)"
+			},
+			"deckbuilder": {
+				"choose-your-format-title": "",
+				"choose-your-class-title": "",
+				"build-your-deck-title": "Создайте свою колоду",
+				"go-back-format": "",
+				"go-back-class": "",
+				"import-deck-button-tooltip": ""
 			}
 		},
 		"battlegrounds": {
@@ -746,7 +768,8 @@
 				"treasures": "Сокровища",
 				"high-win-decks": "Лучшие колоды",
 				"leaderboard": "Лучшие игроки",
-				"deckbuilder": ""
+				"deckbuilder": "Создание колод",
+				"buckets": "Наборы добычи"
 			},
 			"filters": {
 				"dust": {
@@ -823,6 +846,10 @@
 				"delete-deck-tooltip": "",
 				"restore-deck-tooltip": "Восстановить колоду",
 				"rename-deck-tooltip": "Переименовать колоду",
+				"delete-deck-confirmation-title": "",
+				"delete-deck-confirmation-text": "",
+				"delete-deck-confirmation-ok": "",
+				"delete-deck-confirmation-cancel": "",
 				"rename-confirm-button": "Ок",
 				"default-deck-name": "{{wins}} побед {{playerClass}} ({{gameMode}})",
 				"default-deck-name-blank": "Колода для дуэлей"
@@ -878,18 +905,18 @@
 				"faced-tooltip": ""
 			},
 			"deckbuilder": {
-				"choose-your-hero-title": "",
-				"choose-your-hero-power-title": "",
-				"choose-your-signature-treasure-title": "",
-				"build-your-deck-title": "",
+				"choose-your-hero-title": "Выберите героя",
+				"choose-your-hero-power-title": "Выберите силу героя",
+				"choose-your-signature-treasure-title": "Выберите сокровище",
+				"build-your-deck-title": "Создайте свою колоду",
 				"go-back-hero": "",
 				"go-back-hero-power": "",
 				"go-back-signature-treasure": "",
 				"ongoing-deck-building": "",
-				"export-deckcode-button": "",
-				"save-deck-button": "",
-				"deck-saved-info": "",
-				"save-deckcode-button-tooltip": "",
+				"export-deckcode-button": "Копировать код",
+				"save-deck-button": "Сохранить",
+				"deck-saved-info": "Колода сохранена",
+				"save-deckcode-button-tooltip": "Добавить эту колоду на вкладку \"Мои колоды\"",
 				"show-buckets-button-label": "",
 				"show-buckets-button-tooltip": "",
 				"bucket-filter-button-tooltip": "",
@@ -904,7 +931,10 @@
 					"neutral-hero": "",
 					"loe-hero": ""
 				},
-				"card-offering-rate-tooltip": ""
+				"card-offering-rate-tooltip": "",
+				"or": "",
+				"import-deck-button-title": "Импортируй колоду",
+				"import-deck-button-tooltip": ""
 			},
 			"empty-state": {
 				"title": "Здесь пока что ничего нет",
@@ -937,7 +967,8 @@
 					"all": "Все герои"
 				},
 				"deck": {
-					"all": "Все колоды"
+					"all": "Все колоды",
+					"deckstring-tooltip": ""
 				},
 				"game-mode": {
 					"all": "Все режимы",
@@ -1041,6 +1072,12 @@
 			"tip-11": ""
 		}
 	},
+	"turn-timer": {
+		"mulligan": "",
+		"current-turn": "",
+		"player-current-turn-tooltip": "",
+		"player-total-turn-tooltip": ""
+	},
 	"counters": {
 		"attack": {
 			"player": "",
@@ -1063,8 +1100,8 @@
 			"opponent": ""
 		},
 		"grey-sage-parrot": {
-			"player": "",
-			"opponent": ""
+			"player": "{{value}} было последним заклинанием за {{cost}} или более, которое вы разыграли",
+			"opponent": "{{value}} было последним заклинанием за {{cost}} или более, которое разыграл ваш противник"
 		},
 		"cthun": {
 			"player": "",
@@ -1242,7 +1279,7 @@
 			"coins-left-header-tooltip": "Сколько монет наёмника у вас есть",
 			"coins-needed-header": "Нужно монет",
 			"coins-needed-header-tooltip": "Сколько монет наёмника нужно, чтоб максимально его улучшить",
-			"coins-to-farm-header": "Нужно нафармить монет",
+			"coins-to-farm-header": "Нужно нафармить",
 			"coins-to-farm-header-tooltip": "Сколько монет, помимо наград за выполнение задач и имеющихся у вас, нужно заработать, чтобы максимально улучшить наёмника",
 			"completed-tasks-header": "Выполнено задач",
 			"completed-tasks-header-tooltip": "Ctrl + Клик по текущей задаче, чтобы вручную перейти к следующей задаче. Alt + Клик для возврата на задачу назад.",
@@ -1324,6 +1361,7 @@
 		"card-burned": "",
 		"card-transformed": "",
 		"card-discarded": "",
+		"card-countered": "",
 		"card-in-graveyard": "",
 		"gift-created-by-single-card": "",
 		"gift-created-by-multiple-cards": "",
@@ -1526,7 +1564,8 @@
 		},
 		"banned-tribes": {
 			"exceptions": "",
-			"exceptions-tooltip": ""
+			"exceptions-tooltip": "",
+			"available-tooltip": ""
 		},
 		"board": {
 			"seen-just-now": "Текущий стол противника",
@@ -1553,7 +1592,7 @@
 		},
 		"deck-select": {
 			"copy-deck-tooltip": "Нажмите, чтобы скопировать",
-			"copy-deck-tooltip-confirmation": "",
+			"copy-deck-tooltip-confirmation": "Колода скопирована в буфер обмена, теперь вы можете импортировать её в Heartstone",
 			"personal-deck-text": "",
 			"explore-decks-tooltip": "",
 			"build-deck-tooltip": ""
@@ -1734,6 +1773,7 @@
 				"global": "Глобальные настройки",
 				"your-deck": "Ваша колода",
 				"opponent-deck": "Колода противника",
+				"turn-timer": "",
 				"duels": "Дуэли",
 				"launch": "Настройки запуска"
 			},
@@ -1869,7 +1909,7 @@
 					"brilliant-macaw-label": "Сверкающий ара",
 					"brilliant-macaw-tooltip": "",
 					"grey-sage-parrot-label": "",
-					"grey-sage-parrot-tooltip": "",
+					"grey-sage-parrot-tooltip": "Если у вас в колоде есть Серый мудрец, показывать последнее разыгранное вами заклинание за 5 или более",
 					"multicaster-label": "Маг-универсал",
 					"multicaster-tooltip": "",
 					"coral-keeper-label": "Хранительница кораллов",
@@ -1889,6 +1929,16 @@
 				"show-ooc-hero-info-tooltip": "",
 				"show-ooc-deck-select-label": "",
 				"show-ooc-deck-select-tooltip": ""
+			},
+			"turn-timer": {
+				"title": "",
+				"show-turn-timer-label": "",
+				"show-turn-timer-tooltip": "",
+				"show-turn-timer-match-length-label": "",
+				"show-turn-timer-match-length-tooltip": "",
+				"size-title": "",
+				"opacity-title": "",
+				"width-title": ""
 			}
 		},
 		"collection": {
@@ -1963,6 +2013,10 @@
 				"overlay-title": "",
 				"show-banned-tribes-label": "",
 				"show-banned-tribes-tooltip": "",
+				"show-available-tribes-label": "",
+				"show-available-tribes-tooltip": "",
+				"banned-tribes-single-row-label": "",
+				"banned-tribes-single-row-tooltip": "",
 				"show-minions-list-label": "Показывать список существ",
 				"show-minions-list-tooltip": "Показывать список существ, сгруппированных по уровням таверн",
 				"turn-counter-label": "",

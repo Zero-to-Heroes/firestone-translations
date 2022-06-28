@@ -396,7 +396,10 @@
 				"title": "총 카드팩 통합 ({{value}})",
 				"best-opened-packs-title": "연 최고의 팩 {{value}}",
 				"best-opened-packs-title-tooltip": "파이어스톤 실행 중 연 최고의 팩",
-				"pack-stat-tooltip": "하스스톤을 플레이하면서 {{packName}} 팩을 {{totalPacks}} 개 받았습니다"
+				"pack-stat-tooltip": "하스스톤을 플레이하면서 {{packName}} 팩을 {{totalPacks}} 개 받았습니다",
+				"main-sets-group-name": "",
+				"non-buyable-group-name": "",
+				"other-group-name": ""
 			},
 			"set-stats": {
 				"title": "확장팩 통계",
@@ -480,7 +483,8 @@
 			"menu": {
 				"decks-header": "",
 				"stats-header": "",
-				"ranking-header": ""
+				"ranking-header": "",
+				"deckbuilder-header": ""
 			},
 			"filters": {
 				"filter-info-tooltip": "",
@@ -554,6 +558,7 @@
 				"total-games": "{{value}} 게임",
 				"winrate": "{{value}}%의 승률",
 				"last-used": "마지막으로 사용한 날짜: {{value}}",
+				"created-on": "",
 				"archive-button-tooltip": "덱을 보관함에 넣기 (나중에 되돌리기 가능)",
 				"restore-button-tooltip": "덱 복원",
 				"default-deck-name": "덱 이름"
@@ -564,7 +569,16 @@
 			},
 			"ladder-stats": {
 				"title-player": "플레이어 직업 분석",
-				"title-opponent": "상대 직업 분석"
+				"title-opponent": "상대 직업 분석",
+				"player-class-tooltip": "",
+				"opponent-class-tooltip": "",
+				"total": "",
+				"going-first-button-label": "",
+				"going-second-button-label": "",
+				"tab-selection": {
+					"overview": "",
+					"matchups": ""
+				}
 			},
 			"personal-stats-ranking": {
 				"header": "등급 변화 / 판"
@@ -584,6 +598,14 @@
 				"winrate": "승률",
 				"winrate-first": "승률 (선턴)",
 				"winrate-coin": "승률 (후턴)"
+			},
+			"deckbuilder": {
+				"choose-your-format-title": "",
+				"choose-your-class-title": "",
+				"build-your-deck-title": "",
+				"go-back-format": "",
+				"go-back-class": "",
+				"import-deck-button-tooltip": ""
 			}
 		},
 		"battlegrounds": {
@@ -746,7 +768,8 @@
 				"treasures": "보물",
 				"high-win-decks": "고승률 덱",
 				"leaderboard": "순위표",
-				"deckbuilder": "덱 빌더"
+				"deckbuilder": "덱 빌더",
+				"buckets": ""
 			},
 			"filters": {
 				"dust": {
@@ -823,6 +846,10 @@
 				"delete-deck-tooltip": "",
 				"restore-deck-tooltip": "",
 				"rename-deck-tooltip": "",
+				"delete-deck-confirmation-title": "",
+				"delete-deck-confirmation-text": "",
+				"delete-deck-confirmation-ok": "",
+				"delete-deck-confirmation-cancel": "",
 				"rename-confirm-button": "",
 				"default-deck-name": "",
 				"default-deck-name-blank": ""
@@ -904,7 +931,10 @@
 					"neutral-hero": "",
 					"loe-hero": ""
 				},
-				"card-offering-rate-tooltip": ""
+				"card-offering-rate-tooltip": "",
+				"or": "",
+				"import-deck-button-title": "",
+				"import-deck-button-tooltip": ""
 			},
 			"empty-state": {
 				"title": "아직 비어있습니다",
@@ -937,7 +967,8 @@
 					"all": ""
 				},
 				"deck": {
-					"all": ""
+					"all": "",
+					"deckstring-tooltip": ""
 				},
 				"game-mode": {
 					"all": "",
@@ -1040,6 +1071,12 @@
 			"tip-10": "",
 			"tip-11": ""
 		}
+	},
+	"turn-timer": {
+		"mulligan": "",
+		"current-turn": "",
+		"player-current-turn-tooltip": "",
+		"player-total-turn-tooltip": ""
 	},
 	"counters": {
 		"attack": {
@@ -1324,6 +1361,7 @@
 		"card-burned": "",
 		"card-transformed": "",
 		"card-discarded": "",
+		"card-countered": "",
 		"card-in-graveyard": "",
 		"gift-created-by-single-card": "",
 		"gift-created-by-multiple-cards": "",
@@ -1526,7 +1564,8 @@
 		},
 		"banned-tribes": {
 			"exceptions": "",
-			"exceptions-tooltip": ""
+			"exceptions-tooltip": "",
+			"available-tooltip": ""
 		},
 		"board": {
 			"seen-just-now": "",
@@ -1734,6 +1773,7 @@
 				"global": "",
 				"your-deck": "",
 				"opponent-deck": "",
+				"turn-timer": "",
 				"duels": "",
 				"launch": ""
 			},
@@ -1889,6 +1929,16 @@
 				"show-ooc-hero-info-tooltip": "",
 				"show-ooc-deck-select-label": "",
 				"show-ooc-deck-select-tooltip": ""
+			},
+			"turn-timer": {
+				"title": "",
+				"show-turn-timer-label": "",
+				"show-turn-timer-tooltip": "",
+				"show-turn-timer-match-length-label": "",
+				"show-turn-timer-match-length-tooltip": "",
+				"size-title": "",
+				"opacity-title": "",
+				"width-title": ""
 			}
 		},
 		"collection": {
@@ -1963,6 +2013,10 @@
 				"overlay-title": "",
 				"show-banned-tribes-label": "",
 				"show-banned-tribes-tooltip": "",
+				"show-available-tribes-label": "",
+				"show-available-tribes-tooltip": "",
+				"banned-tribes-single-row-label": "",
+				"banned-tribes-single-row-tooltip": "",
 				"show-minions-list-label": "",
 				"show-minions-list-tooltip": "",
 				"turn-counter-label": "",

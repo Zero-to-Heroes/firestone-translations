@@ -396,7 +396,10 @@
 				"title": "所有時間的卡牌包({{value}})",
 				"best-opened-packs-title": "開出最好的 {{value}} 包卡包",
 				"best-opened-packs-title-tooltip": "你在運行 Firestone 時打開的最好的卡包",
-				"pack-stat-tooltip": "自從你開始玩爐石戰記以來，你拿到了 {{totalPacks}} {{packName}} 卡包"
+				"pack-stat-tooltip": "自從你開始玩爐石戰記以來，你拿到了 {{totalPacks}} {{packName}} 卡包",
+				"main-sets-group-name": "",
+				"non-buyable-group-name": "特殊包 ({{totalPacks}})",
+				"other-group-name": "其它 ({{totalPacks}})"
 			},
 			"set-stats": {
 				"title": "設置數據",
@@ -480,7 +483,8 @@
 			"menu": {
 				"decks-header": "牌組",
 				"stats-header": "統計",
-				"ranking-header": "排行"
+				"ranking-header": "排行",
+				"deckbuilder-header": "牌組建立"
 			},
 			"filters": {
 				"filter-info-tooltip": "更改篩選器將會影響記牌器在遊戲中顯示的數據",
@@ -554,6 +558,7 @@
 				"total-games": "{{value}} 場對戰",
 				"winrate": "{{value}}% 勝率",
 				"last-used": "最後一次使用：{{value}}",
+				"created-on": "已創建: {{value}}",
 				"archive-button-tooltip": "歸檔牌組(你可以之後復原)",
 				"restore-button-tooltip": "復原牌組",
 				"default-deck-name": "牌組名稱"
@@ -564,7 +569,16 @@
 			},
 			"ladder-stats": {
 				"title-player": "你職業的詳細信息",
-				"title-opponent": "對手職業的詳細信息"
+				"title-opponent": "對手職業的詳細信息",
+				"player-class-tooltip": "你的職業: {{className}}",
+				"opponent-class-tooltip": "對手職業: {{className}}",
+				"total": "合計",
+				"going-first-button-label": "",
+				"going-second-button-label": "",
+				"tab-selection": {
+					"overview": "",
+					"matchups": ""
+				}
 			},
 			"personal-stats-ranking": {
 				"header": "晉級賽"
@@ -584,6 +598,14 @@
 				"winrate": "勝率",
 				"winrate-first": "勝率(先手)",
 				"winrate-coin": "勝率(後手)"
+			},
+			"deckbuilder": {
+				"choose-your-format-title": "",
+				"choose-your-class-title": "",
+				"build-your-deck-title": "",
+				"go-back-format": "",
+				"go-back-class": "",
+				"import-deck-button-tooltip": ""
 			}
 		},
 		"battlegrounds": {
@@ -746,7 +768,8 @@
 				"treasures": "寶藏",
 				"high-win-decks": "高勝率牌組",
 				"leaderboard": "排行榜",
-				"deckbuilder": "套牌小幫手"
+				"deckbuilder": "套牌小幫手",
+				"buckets": ""
 			},
 			"filters": {
 				"dust": {
@@ -820,9 +843,13 @@
 				"number-of-runs": "賽局數",
 				"average-wins-per-run": "平均先手勝場",
 				"archive-deck-tooltip": "歸檔牌組(你可以之後復原)",
-				"delete-deck-tooltip": "永久刪除牌組(無對局連結它)-你將會需要從頭重建",
+				"delete-deck-tooltip": "",
 				"restore-deck-tooltip": "復原牌組",
 				"rename-deck-tooltip": "重新命名牌組",
+				"delete-deck-confirmation-title": "",
+				"delete-deck-confirmation-text": "",
+				"delete-deck-confirmation-ok": "",
+				"delete-deck-confirmation-cancel": "",
 				"rename-confirm-button": "確定",
 				"default-deck-name": "{{wins}} 贏 {{playerClass}} ({{gameMode}})",
 				"default-deck-name-blank": "擂台牌組"
@@ -904,7 +931,10 @@
 					"neutral-hero": "牌組代碼不支援於用中立專屬寶藏的中立英雄(職業專屬寶藏可以正常運作)",
 					"loe-hero": "牌組代碼不支援於新的探險者協會英雄"
 				},
-				"card-offering-rate-tooltip": "此詞條的提供率(意味著*有此詞條時*, 你會有幾%機率得到此卡)"
+				"card-offering-rate-tooltip": "此詞條的提供率(意味著*有此詞條時*, 你會有幾%機率得到此卡)",
+				"or": "",
+				"import-deck-button-title": "",
+				"import-deck-button-tooltip": ""
 			},
 			"empty-state": {
 				"title": "尚未有任何內容",
@@ -937,7 +967,8 @@
 					"all": "所有英雄"
 				},
 				"deck": {
-					"all": "所有牌組"
+					"all": "所有牌組",
+					"deckstring-tooltip": ""
 				},
 				"game-mode": {
 					"all": "所有模式",
@@ -1040,6 +1071,12 @@
 			"tip-10": "[Duels] 你可以將滑鼠移到對方的血量上以查看其最大血量",
 			"tip-11": "[Duels] 鼠標停在你對手的名字上時也顯示他們的職業"
 		}
+	},
+	"turn-timer": {
+		"mulligan": "",
+		"current-turn": "",
+		"player-current-turn-tooltip": "",
+		"player-total-turn-tooltip": ""
 	},
 	"counters": {
 		"attack": {
@@ -1324,6 +1361,7 @@
 		"card-burned": "爆牌",
 		"card-transformed": "被轉換的卡",
 		"card-discarded": "棄牌",
+		"card-countered": "",
 		"card-in-graveyard": "在墓地",
 		"gift-created-by-single-card": "由<br/> {{value}} <br/>產生",
 		"gift-created-by-multiple-cards": "由 <br/> 多個產生",
@@ -1526,7 +1564,8 @@
 		},
 		"banned-tribes": {
 			"exceptions": "例外：{{value}}",
-			"exceptions-tooltip": "{{tribeNames}} 不會出現在此局。{{exceptions}}"
+			"exceptions-tooltip": "{{tribeNames}} 不會出現在此局。{{exceptions}}",
+			"available-tooltip": ""
 		},
 		"board": {
 			"seen-just-now": "剛才看到的陣容",
@@ -1734,6 +1773,7 @@
 				"global": "全域選項",
 				"your-deck": "你的牌組",
 				"opponent-deck": "對手牌組",
+				"turn-timer": "",
 				"duels": "決鬥擂台",
 				"launch": "啟動設定"
 			},
@@ -1889,6 +1929,16 @@
 				"show-ooc-hero-info-tooltip": "在決鬥開始之前, 當滑鼠移到選項上時顯示英雄/英雄能力/專屬寶藏的數據",
 				"show-ooc-deck-select-label": "顯示快速牌組工具",
 				"show-ooc-deck-select-tooltip": "在套牌構築畫面上顯示小工具，可讓您快速複製玩過的最後一套套牌所使用的英雄/英雄能力/寶藏組合，以及最近的幾張高勝率套牌。"
+			},
+			"turn-timer": {
+				"title": "",
+				"show-turn-timer-label": "",
+				"show-turn-timer-tooltip": "",
+				"show-turn-timer-match-length-label": "",
+				"show-turn-timer-match-length-tooltip": "",
+				"size-title": "",
+				"opacity-title": "",
+				"width-title": ""
 			}
 		},
 		"collection": {
@@ -1963,6 +2013,10 @@
 				"overlay-title": "覆蓋層選項",
 				"show-banned-tribes-label": "顯示被禁的種族",
 				"show-banned-tribes-tooltip": "顯示這個賽局被禁的種族",
+				"show-available-tribes-label": "",
+				"show-available-tribes-tooltip": "",
+				"banned-tribes-single-row-label": "",
+				"banned-tribes-single-row-tooltip": "",
 				"show-minions-list-label": "顯示手下列表",
 				"show-minions-list-tooltip": "顯示手下列表，並以星等分類",
 				"turn-counter-label": "顯示回合計數器",

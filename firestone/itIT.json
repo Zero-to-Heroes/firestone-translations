@@ -396,7 +396,10 @@
 				"title": "Pacchetti da sempre ({{value}})",
 				"best-opened-packs-title": "Migliori {{value}} pacchetti aperti",
 				"best-opened-packs-title-tooltip": "Migliori pacchetti aperti con Firestone in esecuzione",
-				"pack-stat-tooltip": "Hai ricevuto {{totalPacks}} {{packName}} pacchetti da quando hai iniziato a giocare a Hearthstone"
+				"pack-stat-tooltip": "Hai ricevuto {{totalPacks}} {{packName}} pacchetti da quando hai iniziato a giocare a Hearthstone",
+				"main-sets-group-name": "",
+				"non-buyable-group-name": "",
+				"other-group-name": ""
 			},
 			"set-stats": {
 				"title": "Imposta statistiche",
@@ -480,7 +483,8 @@
 			"menu": {
 				"decks-header": "Mazzi",
 				"stats-header": "Statistiche",
-				"ranking-header": "Classifica"
+				"ranking-header": "Classifica",
+				"deckbuilder-header": ""
 			},
 			"filters": {
 				"filter-info-tooltip": "Modificare questi filtri influenzerà anche le statistiche mostrate nel decktracker di gioco",
@@ -554,6 +558,7 @@
 				"total-games": "{{value}} partite",
 				"winrate": "Tasso di vittoria del {{value}}%",
 				"last-used": "Ultimo uso: {{value}}",
+				"created-on": "",
 				"archive-button-tooltip": "Archivia questo mazzo (puoi ripristinarlo dopo)",
 				"restore-button-tooltip": "Ripristina questo mazzo",
 				"default-deck-name": "Nome del mazzo"
@@ -564,7 +569,16 @@
 			},
 			"ladder-stats": {
 				"title-player": "Ripartizione della classe del giocatore",
-				"title-opponent": "Ripartizione della classe dell'avversario"
+				"title-opponent": "Ripartizione della classe dell'avversario",
+				"player-class-tooltip": "",
+				"opponent-class-tooltip": "",
+				"total": "",
+				"going-first-button-label": "",
+				"going-second-button-label": "",
+				"tab-selection": {
+					"overview": "",
+					"matchups": ""
+				}
 			},
 			"personal-stats-ranking": {
 				"header": "Evoluzione del rango / Partite"
@@ -584,6 +598,14 @@
 				"winrate": "Tasso di vittorie",
 				"winrate-first": "Tasso di vittorie (prima)",
 				"winrate-coin": "Tasso di vittorie (moneta)"
+			},
+			"deckbuilder": {
+				"choose-your-format-title": "",
+				"choose-your-class-title": "",
+				"build-your-deck-title": "",
+				"go-back-format": "",
+				"go-back-class": "",
+				"import-deck-button-tooltip": ""
 			}
 		},
 		"battlegrounds": {
@@ -746,7 +768,8 @@
 				"treasures": "Tesori",
 				"high-win-decks": "Mazzi ad alta vincita",
 				"leaderboard": "Classifica",
-				"deckbuilder": "Creatore di mazzi"
+				"deckbuilder": "Creatore di mazzi",
+				"buckets": ""
 			},
 			"filters": {
 				"dust": {
@@ -823,6 +846,10 @@
 				"delete-deck-tooltip": "",
 				"restore-deck-tooltip": "Ripristina mazzo",
 				"rename-deck-tooltip": "Rinomina mazzo",
+				"delete-deck-confirmation-title": "",
+				"delete-deck-confirmation-text": "",
+				"delete-deck-confirmation-ok": "",
+				"delete-deck-confirmation-cancel": "",
 				"rename-confirm-button": "Ok",
 				"default-deck-name": "{{wins}} vittorie {{playerClass}} ({{gameMode}})",
 				"default-deck-name-blank": "Mazzo dei duelli"
@@ -904,7 +931,10 @@
 					"neutral-hero": "",
 					"loe-hero": ""
 				},
-				"card-offering-rate-tooltip": ""
+				"card-offering-rate-tooltip": "",
+				"or": "",
+				"import-deck-button-title": "",
+				"import-deck-button-tooltip": ""
 			},
 			"empty-state": {
 				"title": "Ancora niente qui",
@@ -937,7 +967,8 @@
 					"all": "Tutti gli eroi"
 				},
 				"deck": {
-					"all": "Tutti i mazzi"
+					"all": "Tutti i mazzi",
+					"deckstring-tooltip": ""
 				},
 				"game-mode": {
 					"all": "Tutte le modalità di gioco",
@@ -1040,6 +1071,12 @@
 			"tip-10": "[Duels] Puoi passare col mouse sulla salute dell'Avversario per vederne la salute massima",
 			"tip-11": ""
 		}
+	},
+	"turn-timer": {
+		"mulligan": "",
+		"current-turn": "",
+		"player-current-turn-tooltip": "",
+		"player-total-turn-tooltip": ""
 	},
 	"counters": {
 		"attack": {
@@ -1324,6 +1361,7 @@
 		"card-burned": "Carta bruciata",
 		"card-transformed": "Carta trasformata",
 		"card-discarded": "Carta scartata",
+		"card-countered": "",
 		"card-in-graveyard": "Nel cimitero",
 		"gift-created-by-single-card": "Creato da <br/> {{value}}",
 		"gift-created-by-multiple-cards": "Creato da <br/> più entità",
@@ -1526,7 +1564,8 @@
 		},
 		"banned-tribes": {
 			"exceptions": "Eccezioni: {{value}}",
-			"exceptions-tooltip": "{{tribeNames}} non apparirà a quest'ondata. {{exceptions}}"
+			"exceptions-tooltip": "{{tribeNames}} non apparirà a quest'ondata. {{exceptions}}",
+			"available-tooltip": ""
 		},
 		"board": {
 			"seen-just-now": "Tavola come appena vista",
@@ -1734,6 +1773,7 @@
 				"global": "Opzioni globali",
 				"your-deck": "Il tuo mazzo",
 				"opponent-deck": "Mazzo dell'avversario",
+				"turn-timer": "",
 				"duels": "Duelli",
 				"launch": "Opzioni di lancio"
 			},
@@ -1889,6 +1929,16 @@
 				"show-ooc-hero-info-tooltip": "Mostra le statistiche dell'eroe/potere dell'eroe/tesoro d'autore passando col mouse sulle opzioni di gioco prima di avviare un Duello.",
 				"show-ooc-deck-select-label": "Mostra widget del mazzo rapido",
 				"show-ooc-deck-select-tooltip": "Mostra il widget sulla schermata di creazione del mazzo che ti consente di copiare rapidamente l'ultimo mazzo da te giocato con questo eroe / potere dell'eroe / comibazione di tesori d'autore, nonché un paio di mazzi recenti dalle vittorie alte."
+			},
+			"turn-timer": {
+				"title": "",
+				"show-turn-timer-label": "",
+				"show-turn-timer-tooltip": "",
+				"show-turn-timer-match-length-label": "",
+				"show-turn-timer-match-length-tooltip": "",
+				"size-title": "",
+				"opacity-title": "",
+				"width-title": ""
 			}
 		},
 		"collection": {
@@ -1963,6 +2013,10 @@
 				"overlay-title": "Configurazione della sovrapposizione",
 				"show-banned-tribes-label": "Mostra tribù vietate",
 				"show-banned-tribes-tooltip": "Mostra quali tribù sono bandite all'ondata corrente",
+				"show-available-tribes-label": "",
+				"show-available-tribes-tooltip": "",
+				"banned-tribes-single-row-label": "",
+				"banned-tribes-single-row-tooltip": "",
 				"show-minions-list-label": "Mostra elenco dei minion",
 				"show-minions-list-tooltip": "Mostra l'elenco dei minion, raggruppati per rango della taverna",
 				"turn-counter-label": "Mostra contatore di turni",
