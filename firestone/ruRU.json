@@ -1014,7 +1014,7 @@
 				"mercenaries-bot-opponent-name": "Ваш противник",
 				"bgs-available-tribes-tooltip": "Доступные типы существ: {{value}}",
 				"bgs-perfect-game-result": "Идеально",
-				"deck-name-tooltip": "с {{value}}",
+				"deck-name-tooltip": "| {{value}}",
 				"bgs-result": {
 					"1": "1-е",
 					"2": "2-е",
@@ -1322,9 +1322,9 @@
 	},
 	"decktracker": {
 		"zones": {
-			"global-effects": "",
+			"global-effects": "Глобальные эффекты",
 			"in-deck": "В колоде",
-			"bottom-of-deck": "",
+			"bottom-of-deck": "Конец колоды",
 			"top-of-deck": "",
 			"in-hand": "В руке",
 			"other": "Прочие",
@@ -1335,7 +1335,7 @@
 		"deck-name": {
 			"unnamed-deck": "",
 			"unknown-deck": "Неизвестная колода",
-			"player-name": "",
+			"player-name": "{{playerName}} | {{playerClass}}",
 			"copy-deckstring-label": "Копировать колоду",
 			"copy-deckstring-confirmation": "Скопировано!"
 		},
@@ -1638,17 +1638,17 @@
 		"title": "Настройки",
 		"global": {
 			"knob-sizes": {
-				"small": "Мелко",
-				"medium": "Средне",
-				"large": "Крупно",
-				"default": "По умолчанию"
+				"small": "Мелкий",
+				"medium": "Средний",
+				"large": "Крупный",
+				"default": "По умолчанию"
 			},
 			"knob-opacity": {
 				"opaque": "Непрозрачный",
 				"transparent": "Прозрачный"
 			},
 			"knob-zoom": {
-				"normal": "",
+				"normal": "100%",
 				"zoom-200": "200%",
 				"zoom-400": "400%"
 			},
@@ -1737,7 +1737,7 @@
 			},
 			"launch": {
 				"launch-on-game-start-label": "Запускать Firestone при старте игры",
-				"launch-on-game-start-tooltip": "Когда отключено, вам нужно будет запускать Firestone каждый раз вручную",
+				"launch-on-game-start-tooltip": "Если выключено, то вам нужно будет каждый раз вручную запускать Firestone",
 				"integrated-mode-label": "Интегрированный режим",
 				"integrated-mode-tooltip": "Когда включено, главное окно становится оверлеем и встраивается в игровое окно. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением. Изменение этого значения закроет и откроет заново окно настроек и основное окно приложения",
 				"session-recap-on-exit-label": "Обзор сессии игры при выходе",
@@ -1747,7 +1747,7 @@
 				"hide-release-notes-label": "Скрывать описание релиза при запуске приложения",
 				"hide-release-notes-tooltip": "Не показывать описание обновления о новой версии Firestone",
 				"display-notifications-label": "Отображать уведомления",
-				"display-notifications-tooltip": "Включение/отключение глобальной видимости всплывающих уведомлений [bottom-right]. Когда включено, вы по-прежнему можете настроить уведомления для каждого режима игры на соответствующих вкладках",
+				"display-notifications-tooltip": "Включение/отключение глобальной видимости всплывающих уведомлений. Если включено, вы можете настроить уведомления для каждого режима игры на соответствующих вкладках",
 				"display-notifications-confirmation": "Уведомления теперь ОТКЛЮЧЕНЫ везде.",
 				"accessibility-title": "Доступность",
 				"flash-window": "Мигать окном HS",
@@ -1815,7 +1815,7 @@
 				"counters-size": "Размер счётчиков"
 			},
 			"modes": {
-				"title": "",
+				"title": "Трекер колод включен для следующих режимов:",
 				"ranked": "Рейтинговый режим",
 				"duels": "Дуэли",
 				"arena": "Арена",
@@ -1826,7 +1826,7 @@
 			},
 			"opponent-deck": {
 				"tracker-title": "Трекер колоды",
-				"show-tracker-label": "",
+				"show-tracker-label": "Показывать трекер колоды противника",
 				"show-tracker-tooltip": "",
 				"ai-decklist-label": "",
 				"ai-decklist-tooltip": "",
@@ -1834,9 +1834,9 @@
 				"group-cards-by-zone-tooltip": "",
 				"used-cards-go-to-bottom-label": "",
 				"used-cards-go-to-bottom-tooltip": "",
-				"darken-used-cards-label": "",
+				"darken-used-cards-label": "Затемнять сыгранные карты",
 				"darken-used-cards-tooltip": "",
-				"global-effects-label": "",
+				"global-effects-label": "Показывать глобальные эффекты",
 				"global-effects-tooltip": "",
 				"sort-by-mana-cost-label": "",
 				"sort-by-mana-cost-tooltip": "",
@@ -1846,16 +1846,16 @@
 				"show-top-cards-separately-tooltip": "",
 				"hide-generated-cards-label": "",
 				"hide-generated-cards-tooltip": "",
-				"opponent-hand-title": "",
+				"opponent-hand-title": "Отслеживание руки противника",
 				"card-turn-draw-label": "",
 				"card-turn-draw-tooltip": "",
-				"guessed-cards-label": "",
+				"guessed-cards-label": "Известные карты",
 				"guessed-cards-tooltip": "",
-				"buff-in-hand-label": "",
+				"buff-in-hand-label": "Бафф карт в руке",
 				"buff-in-hand-tooltip": "",
 				"secrets-helper-title": "Отслеживание секретов",
 				"enable-secret-helper-label": "Включить отслеживание секрктов",
-				"enable-secret-helper-tooltip": "",
+				"enable-secret-helper-tooltip": "Всякий раз, когда противник разыгрывает секрет будет появляться подсказка со всеми возможными секретами",
 				"counters": {
 					"title": "Счётчики",
 					"galakrond-label": "Счётчик взываний к Галакронду",
@@ -1881,7 +1881,7 @@
 					"hero-power-damage-label": "Счётчик урона нанесенного силой героя",
 					"hero-power-damage-tooltip": ""
 				},
-				"size-title": "",
+				"size-title": "Размер и непрозрачность",
 				"opacity-title": "Непрозрачность",
 				"hand-markers-title": ""
 			},
@@ -1937,9 +1937,9 @@
 				"show-turn-timer-tooltip": "",
 				"show-turn-timer-match-length-label": "",
 				"show-turn-timer-match-length-tooltip": "",
-				"size-title": "",
-				"opacity-title": "",
-				"width-title": ""
+				"size-title": "Размер виджета",
+				"opacity-title": "Непрозрачность виджета",
+				"width-title": "Ширина виджета"
 			}
 		},
 		"collection": {
@@ -1982,7 +1982,7 @@
 				"enable-app-label": "",
 				"integrated-mode-label": "",
 				"integrated-mode-tooltip": "",
-				"enable-battle-sim-label": "",
+				"enable-battle-sim-label": "Включить симуляцию сражений",
 				"enable-battle-sim-tooltip": "",
 				"hide-simulation-label": "",
 				"hide-simulation-tooltip": "",
@@ -1998,7 +1998,7 @@
 				"use-tribe-filter-for-live-stats-tooltip": "",
 				"show-next-opponent-recap-label": "",
 				"show-next-opponent-recap-tooltip": "",
-				"show-achievements-label": "",
+				"show-achievements-label": "Показывать достижения",
 				"show-achievements-tooltip": "",
 				"show-hero-tooltip-label": "",
 				"show-hero-tooltip-tooltip": "",
@@ -2093,9 +2093,9 @@
 				"map-team-widget-tooltip": "",
 				"village-team-widget-label": "",
 				"village-team-widget-tooltip": "",
-				"action-queue-pve-label": "",
+				"action-queue-pve-label": "Порядок срабатывания способностей (PvE)",
 				"action-queue-pve-tooltip": "",
-				"action-queue-pvp-label": "",
+				"action-queue-pvp-label": "Порядок срабатывания способностей (PvP)",
 				"action-queue-pvp-tooltip": "",
 				"role-chart-label": "Показывать схему взаимодействия ролей",
 				"role-chart-tooltip": "",
@@ -2105,7 +2105,7 @@
 				"synergies-tooltip": "",
 				"your-team": "Ваш отряд",
 				"opponent-team": "Отряд противника",
-				"action-queue": ""
+				"action-queue": "Порядок срабатывания способностей"
 			}
 		},
 		"replays": {
