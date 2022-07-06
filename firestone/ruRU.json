@@ -487,7 +487,7 @@
 				"deckbuilder-header": "Создание колод"
 			},
 			"filters": {
-				"filter-info-tooltip": "Изменение этих фильтров также повлияет на статистику, отображаемую в дек‑трекере в игре",
+				"filter-info-tooltip": "Изменение этих фильтров также повлияет на статистику, отображаемую в трекере колоды",
 				"deck-sort": {
 					"last-played": "Последнее использование",
 					"games-played": "Сыграно партий",
@@ -528,11 +528,11 @@
 			},
 			"matchup-info": {
 				"total-matches-header": "Всего матчей",
-				"win-percent-header": "% Побед",
+				"win-percent-header": "% побед",
 				"win-total-header": "Побед",
-				"win-play-percent-header": "% Побед первым",
+				"win-play-percent-header": "% побед первым",
 				"win-play-total-header": "Побед первым",
-				"win-coin-percent-header": "% Побед с монеткой",
+				"win-coin-percent-header": "% побед с монеткой",
 				"win-coin-total-header": "Побед с монеткой",
 				"total-header": "Всего",
 				"show-as-percent-button-label": "Показать в %",
@@ -541,7 +541,7 @@
 				"reset-confirmation": "",
 				"reset-are-you-sure": "Вы уверены?",
 				"delete-button-step-2": "Удалить",
-				"delete-confirmation": "",
+				"delete-confirmation": "Это безвозвратно удалит колоду из вашей статистики.",
 				"delete-tooltip": ""
 			},
 			"deck-details": {
@@ -570,11 +570,11 @@
 			"ladder-stats": {
 				"title-player": "Разбивка классов игрока",
 				"title-opponent": "Разбивка классов оппонентов",
-				"player-class-tooltip": "",
-				"opponent-class-tooltip": "",
-				"total": "",
-				"going-first-button-label": "",
-				"going-second-button-label": "",
+				"player-class-tooltip": "Ваш класс: {{className}}",
+				"opponent-class-tooltip": "Класс противника: {{className}}",
+				"total": "Общий",
+				"going-first-button-label": "Только без монетки",
+				"going-second-button-label": "Только с монеткой",
 				"tab-selection": {
 					"overview": "",
 					"matchups": ""
@@ -584,7 +584,7 @@
 				"header": ""
 			},
 			"rating-graph": {
-				"empty-state-message": "Пожалуйста, убедитесь, что выше выбран отдельный режим игры (Стандартный, Вольный или Классический), а также проверьте фильтр Бронза / Легенда."
+				"empty-state-message": "Пожалуйста, убедитесь, что выбран режим игры (Стандартный, Вольный или Классический), <br/> а также проверьте фильтр Бронза / Легенда."
 			},
 			"replays-recap": {
 				"header": "Последние {{value}} повторов(а)",
@@ -601,7 +601,7 @@
 			},
 			"deckbuilder": {
 				"choose-your-format-title": "Выберите формат",
-				"choose-your-class-title": "",
+				"choose-your-class-title": "Выберите класс",
 				"build-your-deck-title": "Создайте свою колоду",
 				"go-back-format": "{{formatName}} - Кликнете для возврата к выбору формата",
 				"go-back-class": "{{className}} - Кликнете для возврата к выбору класса",
@@ -671,7 +671,7 @@
 				"hero-details": {
 					"tabs": {
 						"mmr": "MMR",
-						"final-warbands": "Последнии сборки",
+						"final-warbands": "Последние сборки",
 						"warband-stats": "Статистика сборок",
 						"winrate-stats": ""
 					},
@@ -698,9 +698,9 @@
 						"finished-position": "Занял {{value}}",
 						"last-board": "Последний стол",
 						"long-ago": "Давно",
-						"place-1": "1 место!!!!",
-						"place-2": "2 место!!!",
-						"place-3": "3 место!!",
+						"place-1": "1 место!!",
+						"place-2": "2 место!",
+						"place-3": "3 место!",
 						"place-4": "4 место!",
 						"place-default": "{{value}} место"
 					},
@@ -843,13 +843,13 @@
 				"number-of-runs": "Количество забегов",
 				"average-wins-per-run": "Побед за забег в среднем",
 				"archive-deck-tooltip": "Архивировать колоду (вы можете восстановить её позже)",
-				"delete-deck-tooltip": "",
+				"delete-deck-tooltip": "Удалить безвозвратно",
 				"restore-deck-tooltip": "Восстановить колоду",
 				"rename-deck-tooltip": "Переименовать колоду",
-				"delete-deck-confirmation-title": "",
-				"delete-deck-confirmation-text": "",
-				"delete-deck-confirmation-ok": "",
-				"delete-deck-confirmation-cancel": "",
+				"delete-deck-confirmation-title": "Удалить колоду",
+				"delete-deck-confirmation-text": "Удалить колоду без возможности восстановления?",
+				"delete-deck-confirmation-ok": "Удалить",
+				"delete-deck-confirmation-cancel": "Отмена",
 				"rename-confirm-button": "Ок",
 				"default-deck-name": "{{wins}} побед {{playerClass}} ({{gameMode}})",
 				"default-deck-name-blank": "Колода для дуэлей"
@@ -1014,7 +1014,7 @@
 				"mercenaries-bot-opponent-name": "Ваш противник",
 				"bgs-available-tribes-tooltip": "Доступные типы существ: {{value}}",
 				"bgs-perfect-game-result": "Идеально",
-				"deck-name-tooltip": "| {{value}}",
+				"deck-name-tooltip": "<br/> {{value}}",
 				"bgs-result": {
 					"1": "1-е",
 					"2": "2-е",
@@ -1027,7 +1027,7 @@
 				},
 				"game-mode-tooltip": {
 					"legend-format": "",
-					"ladder": "",
+					"ladder": "{{format}} | {{leagueName}} {{rank}}",
 					"ladder-fallback": "",
 					"ladder-default": "",
 					"galakrond-explorers": "",
@@ -1363,11 +1363,11 @@
 		"card-transformed": "",
 		"card-discarded": "",
 		"card-countered": "",
-		"card-in-graveyard": "",
-		"gift-created-by-single-card": "",
+		"card-in-graveyard": "На кладбище",
+		"gift-created-by-single-card": "Источник: <br/> {{value}}",
 		"gift-created-by-multiple-cards": "",
 		"unnamed-player": "",
-		"created-by": "",
+		"created-by": "Источник: {{value}}",
 		"unknown-class-card": "Неизвестная карта {{playerClass}}",
 		"unknown-card": "Неизвестная карта",
 		"unknown-mana-spell": "",
@@ -1434,7 +1434,7 @@
 			"reposition-button-done": "Завершена",
 			"reposition-button-cancel": "Отмена",
 			"reposition-button-cancelling": "",
-			"reposition-button-tooltip": "(БЕТА) Подбор наилучшей позиции для вашего набора существ. В зависимости от количества CPU и сложности стола, процесс может занять несколько минут, во время которого будет использовано много ресурсов CPU и RAM.",
+			"reposition-button-tooltip": "(БЕТА) Подбор наилучшей расстановки для вашего стола. Процесс может занять несколько минут, во время которого будет использовано много ресурсов CPU и RAM.",
 			"reposition-button-tooltip-firstpass": "",
 			"reposition-button-tooltip-secondpass": "",
 			"reposition-button-tooltip-finalresult": "",
@@ -1511,7 +1511,7 @@
 				"empty-state-subtitle": "Выбери героя и подожди своих противников!",
 				"score-board-title": "",
 				"score-board-tooltip": "",
-				"tavern-upgrade-title": "",
+				"tavern-upgrade-title": "Улучшения таверны",
 				"tavern-last-upgrade-title": "Последние улучшения",
 				"tavern-empty-state": "Не было улучшения таверны",
 				"last-opponent-icon-tooltip": "Был противников в прошлом раунде",
