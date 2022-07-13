@@ -396,9 +396,9 @@
 				"title": "Всего комплектов ({{value}})",
 				"best-opened-packs-title": "{{value}} лучших комплектов",
 				"best-opened-packs-title-tooltip": "Лучшие комплекты, которые вы открыли с запущенным Firestone",
-				"pack-stat-tooltip": "Всего комплектов \"{{packName}}\" получено: {{totalPacks}}",
-				"main-sets-group-name": "",
-				"non-buyable-group-name": "",
+				"pack-stat-tooltip": "Всего комплектов \"{{packName}}\" получено: {{totalPacks}}",
+				"main-sets-group-name": "Основные комплекты ({{totalPacks}})",
+				"non-buyable-group-name": "Специальные комплекты ({{totalPacks}})",
 				"other-group-name": ""
 			},
 			"set-stats": {
@@ -451,11 +451,11 @@
 					"subtitle": "Не расстраивайтесь, продолжайте играть и получите этих блестящих друзей."
 				},
 				"no-search-results": {
-					"title": "О нет! Матчи отсутствуют: \"{{value}}\"",
+					"title": "О нет! Нет совпадений: \"{{value}}\"",
 					"subtitle": "Не сдавайтесь - проверьте написание или попробуйте использовать менее специфические термины."
 				},
 				"default": {
-					"title": "Здесь ничего нет",
+					"title": "Здесь пока что ничего нет",
 					"subtitle": "Пожалуйста, запустите Hearthstone для синхронизации коллекции."
 				}
 			}
@@ -558,7 +558,7 @@
 				"total-games": "Игр: {{value}}",
 				"winrate": "Доля побед: {{value}}%",
 				"last-used": "Посл. игра: {{value}}",
-				"created-on": "",
+				"created-on": "Источник: {{value}}",
 				"archive-button-tooltip": "Архивировать эту колоду (вы можете восстановить её позже)",
 				"restore-button-tooltip": "Восстановить эту колоду",
 				"default-deck-name": "Название колоды"
@@ -577,7 +577,7 @@
 				"going-second-button-label": "Только с монеткой",
 				"tab-selection": {
 					"overview": "",
-					"matchups": ""
+					"matchups": "Матчапы"
 				}
 			},
 			"personal-stats-ranking": {
@@ -718,7 +718,7 @@
 				},
 				"rating": {
 					"title": "MMR / Матчи",
-					"empty-state-message": "",
+					"empty-state-message": "Начните играть в Поля сражений, чтобы собрать информацию",
 					"axis-label": "Рейтинг"
 				},
 				"records": {
@@ -899,7 +899,7 @@
 				"avg-wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "",
 				"best-winrate-classes": "",
-				"most-faced-classes": "",
+				"most-faced-classes": "Наиболее часто встречающиеся классы",
 				"best-winrate-against": "",
 				"stat-tooltip": "",
 				"faced-tooltip": ""
@@ -998,7 +998,7 @@
 			},
 			"bg-stats": {
 				"title": "Статистика матча",
-				"empty-state-title": "",
+				"empty-state-title": "Здесь пока что ничего нет",
 				"empty-state-subtitle": "Не удается получить статистику"
 			},
 			"replay-info": {
@@ -1114,7 +1114,7 @@
 		},
 		"elwynn-boar": {
 			"player": "У вас погибло {{value}} элвинских вепрей",
-			"opponent": "У оппонента погибло {{value}} элвинских вепрей"
+			"opponent": "У противника погибло {{value}} элвинских вепрей"
 		},
 		"fatigue": {
 			"player": "",
@@ -1258,7 +1258,7 @@
 		},
 		"empty-state": {
 			"title": "Здесь пока что ничего нет",
-			"subtitle": ""
+			"subtitle": "Для начала сыграйте несколько матчей в Наёмников! Кроме того, проверьте свои фильтры выше :)"
 		},
 		"hero-stats": {
 			"games-played": "Сыграно партий",
@@ -1305,7 +1305,7 @@
 		},
 		"team-widget": {
 			"cooldown-left-tooltip": "Ходов осталось до восстановления способности",
-			"number-of-users-tooltip": "Сколько раз наёмник применил эту способность",
+			"number-of-users-tooltip": "Сколько раз наёмник применил эту способность",
 			"base-speed-text": "Базовая скорость: {{value}}",
 			"speed-buff": "Эта способность сработает на {{value}} быстрее",
 			"speed-debuff": "Эта способность сработает на {{value}} медленее",
@@ -1410,11 +1410,11 @@
 				"tied": "ничья",
 				"lost": "поражение"
 			},
-			"sim-sample-link-tooltip": ""
+			"sim-sample-link-tooltip": "Открыть в браузере пример симуляции приводящей к этому результату"
 		},
 		"sim": {
 			"add-minion-button-tooltip": "Нажмите, чтобы добавить существо",
-			"update-minion-button-tooltip": "",
+			"update-minion-button-tooltip": "Изменить существо",
 			"remove-minion-button-tooltip": "Удалить существо",
 			"versus": "VS",
 			"simulate-button": "Запустить",
@@ -1422,9 +1422,9 @@
 			"reset-button": "Сбросить",
 			"export-button": "Копировать",
 			"export-button-tooltip": "",
-			"exporting": "",
+			"exporting": "Создание кода симуляции, пожалуйста подождите",
 			"importing": "Существа импортируются, пожалуйста подождите",
-			"export-confirmation": "",
+			"export-confirmation": "Код симуляции скопирован в буфер обмена",
 			"import-button": "Импортировать",
 			"import-button-tooltip": "",
 			"reposition-button": "Репозиция",
@@ -1466,7 +1466,7 @@
 			"sneed-deathrattle-tooltip": "",
 			"minions-selection-title": "Существа",
 			"search-minion-placeholder": "Поиск существа",
-			"resimulating-battle": "",
+			"resimulating-battle": "Ресимуляция боя",
 			"simulator-help-tooltip": {
 				"title": "",
 				"control-hero": "",
@@ -1493,7 +1493,7 @@
 			"achievement-completed": "",
 			"achievement-missing": "",
 			"total-matches": "{{value}} матчей",
-			"tier-list-title-tooltip": ""
+			"tier-list-title-tooltip": "Создан на основе {{totalMatches}} матчей отобранных согласно фильтрам из основного окна:"
 		},
 		"in-game": {
 			"face-offs": {
@@ -1513,8 +1513,8 @@
 				"score-board-tooltip": "",
 				"tavern-upgrade-title": "Улучшения таверны",
 				"tavern-last-upgrade-title": "Последние улучшения",
-				"tavern-empty-state": "Не было улучшения таверны",
-				"last-opponent-icon-tooltip": "Был противников в прошлом раунде",
+				"tavern-empty-state": "Не было улучшений таверны",
+				"last-opponent-icon-tooltip": "Был противником в прошлом раунде",
 				"triple-title": "Новых триплетов",
 				"triple-tooltip": "",
 				"triple-empty-state": "Не было новых триплетов",
@@ -1525,11 +1525,11 @@
 				"buddy-tooltip-golden": "Получил еще двух компаньонов на {{turn}} ход"
 			},
 			"minions-list": {
-				"reset-button": "",
+				"reset-button": "Сбросить",
 				"highlight-tribe": "Нажмите, чтобы выделить всех существ типа {{value}} в таверне",
 				"unhighlight-tribe": "Нажмите, чтобы не выделять существ типа {{value}} в таверне",
-				"highlight-minion": "",
-				"unhighlight-minion": ""
+				"highlight-minion": "Закрепите существо, чтобы выделить его в таверне",
+				"unhighlight-minion": "Открепите существо, чтобы не выделять его в таверне"
 			}
 		},
 		"post-match-stats": {
@@ -1548,7 +1548,7 @@
 			},
 			"hp-graph": {
 				"legend-title": "Показать:",
-				"player-health": "{{playerName}} ед. здоровья"
+				"player-health": "{{playerName}} ед. здоровья"
 			},
 			"composition": {
 				"blank-tribe": "Без типа / Все",
@@ -1565,8 +1565,8 @@
 		},
 		"banned-tribes": {
 			"exceptions": "",
-			"exceptions-tooltip": "",
-			"available-tooltip": ""
+			"exceptions-tooltip": "{{tribeNames}} не представлены в этой игре. {{exceptions}}",
+			"available-tooltip": "{{tribeNames}} не представлены в этой игре."
 		},
 		"board": {
 			"seen-just-now": "Текущий стол противника",
@@ -1799,8 +1799,8 @@
 				"reset-deck-position-after-trade-tooltip": "",
 				"show-stats-change": "",
 				"show-stats-change-tooltip": "",
-				"show-cost-reduction": "",
-				"show-cost-reduction-tooltip": "",
+				"show-cost-reduction": "Отслеживать изменение стоимости карт в колоде",
+				"show-cost-reduction-tooltip": "Отслеживать изменение стоимости карт в колоде, когда она была изменена каким-либо эффектом (например, \"Из глубин\")",
 				"show-unknown-cards": "Показывать неизвестные карты",
 				"show-unknown-cards-tooltip": "",
 				"highlight-related-cards": "",
@@ -2028,7 +2028,7 @@
 				"battle-simulation-label": "",
 				"battle-simulation-tooltip": "",
 				"battle-simulation-example-label": "",
-				"battle-simulation-example-tooltip": "",
+				"battle-simulation-example-tooltip": "Добавить кнопку для просмотра примера симуляции приводящей к определенному результату.",
 				"widget-size-label": "Размер виджета",
 				"banned-tribes-title": "",
 				"banned-tribes-show-in-column-label": "",
@@ -2038,8 +2038,8 @@
 				"minions-list-show-on-mouse-over-label": "",
 				"minions-list-show-on-mouse-over-tooltip": "",
 				"minions-list-show-on-mouse-over-confirmation": "",
-				"minions-list-show-tribes-highlight-label": "",
-				"minions-list-show-tribes-highlight-tooltip": "",
+				"minions-list-show-tribes-highlight-label": "Выделение типов существ",
+				"minions-list-show-tribes-highlight-tooltip": "Добавить кнопки для выделения определенных типов существ в таверне Боба",
 				"minions-list-show-golden-cards-label": "",
 				"minions-list-show-golden-cards-tooltip": "",
 				"opponent-board-title": "Стол противника",
