@@ -28,6 +28,7 @@
 			"casual-duels": "Дуэли",
 			"heroic-duels": "Героические дуэли",
 			"battlegrounds": "Поля сражений",
+			"battlegrounds-friendly": "",
 			"mercenaries": "Наёмники",
 			"practice": "Тренировка",
 			"casual": "Обычный",
@@ -158,7 +159,8 @@
 			"taunt": "Провокация",
 			"windfury": "Неистовство ветра",
 			"mega-windfury": "Меганеистовство ветра"
-		}
+		},
+		"duration": ""
 	},
 	"app": {
 		"menu": {
@@ -481,10 +483,11 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "Колоды",
+				"decks-header": "",
 				"stats-header": "Статистика",
 				"ranking-header": "Рейтинг",
-				"deckbuilder-header": "Создание колод"
+				"deckbuilder-header": "Создание колод",
+				"meta-decks-header": ""
 			},
 			"filters": {
 				"filter-info-tooltip": "Изменение этих фильтров также повлияет на статистику, отображаемую в трекере колоды",
@@ -505,12 +508,16 @@
 				},
 				"rank-filter": {
 					"all": "Все ранги",
+					"bronze-platinum": "",
 					"silver": "Серебро+",
 					"gold": "Золото+",
 					"platinum": "Платина+",
 					"diamond": "Алмаз+",
+					"diamond-legend": "",
 					"legend": "Легенда",
-					"legend-500": "Топ-500"
+					"legend-1000": "",
+					"legend-500": "Топ-500",
+					"legend-100": ""
 				},
 				"rank-group": {
 					"per-match": "Показать каждый матч",
@@ -523,7 +530,12 @@
 					"last-patch": "Последнее обновление",
 					"past-30": "Последние 30 дней",
 					"past-7": "Последние 7 дней",
+					"past-3": "",
 					"past-1": "За день"
+				},
+				"deck-search": {
+					"placeholder": "",
+					"tooltip": ""
 				}
 			},
 			"matchup-info": {
@@ -567,6 +579,7 @@
 				"empty-state-title": "Здесь пока что ничего нет",
 				"empty-state-subtitle": ""
 			},
+			"meta-decks": {},
 			"ladder-stats": {
 				"title-player": "Разбивка классов игрока",
 				"title-opponent": "Разбивка классов оппонентов",
@@ -934,7 +947,9 @@
 				"card-offering-rate-tooltip": "",
 				"or": "",
 				"import-deck-button-title": "Импортируй колоду",
-				"import-deck-button-tooltip": ""
+				"import-deck-button-tooltip": "",
+				"missing-dust-tooltip": "",
+				"part-of-multiple-buckets-tooltip": ""
 			},
 			"empty-state": {
 				"title": "Здесь пока что ничего нет",
@@ -1214,9 +1229,14 @@
 			"show-hidden-teams-link-label": "Показать архивные",
 			"show-merc-names-in-teams-link-label": "Отображать имена",
 			"fully-upgraded": {
-				"all": "Все наёмники",
+				"all": "",
 				"upgraded": "Полностью улучшенные",
 				"non-upgraded": "Можно улучшить"
+			},
+			"owned": {
+				"all": "",
+				"owned": "",
+				"non-owned": ""
 			},
 			"hero-level": {
 				"level-0": "Все уровни",
@@ -1746,6 +1766,8 @@
 				"xp-recap-on-game-end-tooltip": "После каждого матча показывать полученный опыт/уровни",
 				"hide-release-notes-label": "Скрывать описание обновления при запуске",
 				"hide-release-notes-tooltip": "Не показывать описание обновления о новой версии Firestone",
+				"allow-games-share-label": "",
+				"allow-games-share-tooltip": "",
 				"display-notifications-label": "Отображать уведомления",
 				"display-notifications-tooltip": "Включение/отключение глобальной видимости всплывающих уведомлений. Если включено, вы можете настроить уведомления для каждого режима игры на соответствующих вкладках",
 				"display-notifications-confirmation": "Уведомления теперь ОТКЛЮЧЕНЫ везде.",
@@ -2116,6 +2138,12 @@
 		}
 	},
 	"twitch": {
+		"adaptative-scaling": "",
+		"adaptative-scaling-tooltip": "",
+		"scale": "",
+		"scale-tooltip": "",
+		"move-magnifier-icon-on-top": "",
+		"move-magnifier-icon-on-top-tooltip": "",
 		"constructed-section-title": "",
 		"battlegrounds-section-title": "",
 		"could-not-log-error-title": "",
@@ -2133,6 +2161,8 @@
 		"show-battle-simulator": "",
 		"battle-simulator-size": "",
 		"last-board-size": "",
-		"last-board-size-tooltip": ""
+		"last-board-size-tooltip": "",
+		"hide-battle-odds-in-combat": "",
+		"hide-battle-odds-in-combat-tooltip": ""
 	}
 }
