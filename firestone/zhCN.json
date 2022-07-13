@@ -28,7 +28,7 @@
 			"casual-duels": "对决模式（休闲）",
 			"heroic-duels": "对决模式（英雄）",
 			"battlegrounds": "酒馆战棋",
-			"battlegrounds-friendly": "",
+			"battlegrounds-friendly": "酒馆战棋（私人对局）",
 			"mercenaries": "佣兵战纪",
 			"practice": "练习模式",
 			"casual": "休闲模式",
@@ -160,7 +160,7 @@
 			"windfury": "风怒",
 			"mega-windfury": "超级风怒"
 		},
-		"duration": ""
+		"duration": "{{minutes}}:{{seconds}} 分钟"
 	},
 	"app": {
 		"menu": {
@@ -483,11 +483,11 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "",
+				"decks-header": "我的套牌",
 				"stats-header": "统计数据",
 				"ranking-header": "等级",
 				"deckbuilder-header": "构筑套牌",
-				"meta-decks-header": ""
+				"meta-decks-header": "环境套牌"
 			},
 			"filters": {
 				"filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
@@ -508,16 +508,16 @@
 				},
 				"rank-filter": {
 					"all": "所有分段",
-					"bronze-platinum": "",
+					"bronze-platinum": "青铜-铂金",
 					"silver": "白银+",
 					"gold": "黄金+",
 					"platinum": "白金+",
 					"diamond": "钻石+",
-					"diamond-legend": "",
+					"diamond-legend": "钻石-传说",
 					"legend": "传说",
-					"legend-1000": "",
+					"legend-1000": "传说前1000",
 					"legend-500": "传说前500",
-					"legend-100": ""
+					"legend-100": "传说前100"
 				},
 				"rank-group": {
 					"per-match": "显示所有对局",
@@ -530,12 +530,12 @@
 					"last-patch": "最新补丁",
 					"past-30": "过去 30 天内",
 					"past-7": "过去 7 天内",
-					"past-3": "",
+					"past-3": "过去 3 天内",
 					"past-1": "一天内"
 				},
 				"deck-search": {
-					"placeholder": "",
-					"tooltip": ""
+					"placeholder": "搜索套牌...",
+					"tooltip": "按职业名称或按套牌名称搜索"
 				}
 			},
 			"matchup-info": {
@@ -948,8 +948,8 @@
 				"or": "或",
 				"import-deck-button-title": "导入套牌",
 				"import-deck-button-tooltip": "导入剪贴板中的套牌代码。 您仍然需要手动选择您的英雄技能和签名宝藏，因为它们不是套牌代码的一部分。",
-				"missing-dust-tooltip": "",
-				"part-of-multiple-buckets-tooltip": ""
+				"missing-dust-tooltip": "合成此套牌缺少 {{value}} 点奥术之尘",
+				"part-of-multiple-buckets-tooltip": "此卡牌出现在 {{ value }} 个不同的词条中"
 			},
 			"empty-state": {
 				"title": "暂无记录",
@@ -1229,14 +1229,14 @@
 			"show-hidden-teams-link-label": "显示存档",
 			"show-merc-names-in-teams-link-label": "显示名称",
 			"fully-upgraded": {
-				"all": "",
+				"all": "满练度",
 				"upgraded": "满练度",
 				"non-upgraded": "尚未满练度"
 			},
 			"owned": {
-				"all": "",
-				"owned": "",
-				"non-owned": ""
+				"all": "已拥有和缺失的",
+				"owned": "仅显示已拥有的",
+				"non-owned": "仅显示缺失的"
 			},
 			"hero-level": {
 				"level-0": "所有等级",
@@ -1766,8 +1766,8 @@
 				"xp-recap-on-game-end-tooltip": "每场对战结束后显示经验和等级的回顾",
 				"hide-release-notes-label": "在应用启动时隐藏版本说明",
 				"hide-release-notes-tooltip": "不显示Firestone新版本的更新说明",
-				"allow-games-share-label": "",
-				"allow-games-share-tooltip": "",
+				"allow-games-share-label": "允许游戏共享",
+				"allow-games-share-tooltip": "允许本应用展示您的游戏（和套牌）。分享是匿名的，但是如果您正使用秘密套牌，您可以关闭它。",
 				"display-notifications-label": "显示通知",
 				"display-notifications-tooltip": "选择右下角祝贺通知的全局可见性。启用此功能，您仍然可以在相应标签中配置各个游戏模式的祝贺通知",
 				"display-notifications-confirmation": "全局通知现已关闭",
@@ -2138,10 +2138,10 @@
 		}
 	},
 	"twitch": {
-		"adaptative-scaling": "",
-		"adaptative-scaling-tooltip": "",
-		"scale": "",
-		"scale-tooltip": "",
+		"adaptative-scaling": "自适应缩放",
+		"adaptative-scaling-tooltip": "（测试功能）根据窗口大小自动改变小工具的大小",
+		"scale": "尺寸",
+		"scale-tooltip": "调节小工具的大小",
 		"move-magnifier-icon-on-top": "",
 		"move-magnifier-icon-on-top-tooltip": "",
 		"constructed-section-title": "传统对战",
