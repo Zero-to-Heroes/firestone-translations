@@ -28,6 +28,7 @@
 			"casual-duels": "決鬥擂台",
 			"heroic-duels": "英雄模式決鬥擂台",
 			"battlegrounds": "英雄戰場",
+			"battlegrounds-friendly": "",
 			"mercenaries": "傭兵戰隊",
 			"practice": "練習",
 			"casual": "休閒",
@@ -158,7 +159,8 @@
 			"taunt": "嘲諷",
 			"windfury": "風怒",
 			"mega-windfury": "超級風怒"
-		}
+		},
+		"duration": ""
 	},
 	"app": {
 		"menu": {
@@ -481,10 +483,11 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "牌組",
+				"decks-header": "",
 				"stats-header": "統計",
 				"ranking-header": "排行",
-				"deckbuilder-header": "牌組建立"
+				"deckbuilder-header": "牌組建立",
+				"meta-decks-header": ""
 			},
 			"filters": {
 				"filter-info-tooltip": "更改篩選器將會影響記牌器在遊戲中顯示的數據",
@@ -505,12 +508,16 @@
 				},
 				"rank-filter": {
 					"all": "全部階級",
+					"bronze-platinum": "",
 					"silver": "白銀+",
 					"gold": "黃金+",
 					"platinum": "白金+",
 					"diamond": "鑽石+",
+					"diamond-legend": "",
 					"legend": "傳說",
-					"legend-500": "前500"
+					"legend-1000": "",
+					"legend-500": "前500",
+					"legend-100": ""
 				},
 				"rank-group": {
 					"per-match": "顯示所有賽局",
@@ -523,7 +530,12 @@
 					"last-patch": "最新版本",
 					"past-30": "過去30天",
 					"past-7": "過去7天",
+					"past-3": "",
 					"past-1": "過去一天"
+				},
+				"deck-search": {
+					"placeholder": "",
+					"tooltip": ""
 				}
 			},
 			"matchup-info": {
@@ -567,6 +579,7 @@
 				"empty-state-title": "尚未有任何內容",
 				"empty-state-subtitle": "遊玩一場爐石戰記傳統模式天梯以開始，或注意上方的篩選器:)"
 			},
+			"meta-decks": {},
 			"ladder-stats": {
 				"title-player": "你職業的詳細信息",
 				"title-opponent": "對手職業的詳細信息",
@@ -934,7 +947,9 @@
 				"card-offering-rate-tooltip": "此詞條的提供率(意味著*有此詞條時*, 你會有幾%機率得到此卡)",
 				"or": "或",
 				"import-deck-button-title": "匯入牌組",
-				"import-deck-button-tooltip": "導入已複製的牌組代碼。 你仍然需要手動選擇你的英雄能力和專屬寶藏，因為它們不是套牌代碼的一部分"
+				"import-deck-button-tooltip": "導入已複製的牌組代碼。 你仍然需要手動選擇你的英雄能力和專屬寶藏，因為它們不是套牌代碼的一部分",
+				"missing-dust-tooltip": "",
+				"part-of-multiple-buckets-tooltip": ""
 			},
 			"empty-state": {
 				"title": "尚未有任何內容",
@@ -1214,9 +1229,14 @@
 			"show-hidden-teams-link-label": "顯示封存",
 			"show-merc-names-in-teams-link-label": "顯示名稱",
 			"fully-upgraded": {
-				"all": "全部傭兵",
+				"all": "",
 				"upgraded": "滿級",
 				"non-upgraded": "未滿級"
+			},
+			"owned": {
+				"all": "",
+				"owned": "",
+				"non-owned": ""
 			},
 			"hero-level": {
 				"level-0": "所有等級",
@@ -1746,6 +1766,8 @@
 				"xp-recap-on-game-end-tooltip": "每場賽局後顯示獲得的經驗值/等級",
 				"hide-release-notes-label": "隱藏程式啟動時顯示的更新說明",
 				"hide-release-notes-tooltip": "不要顯示新版本的更新說明",
+				"allow-games-share-label": "",
+				"allow-games-share-tooltip": "",
 				"display-notifications-label": "顯示通知",
 				"display-notifications-tooltip": "切換 toast 通知的全域可見性[bottom-right]，啟動時，您仍然可以在相應的選項中設定每種遊戲模式的通知。",
 				"display-notifications-confirmation": "現在已關閉通知。",
@@ -2116,6 +2138,12 @@
 		}
 	},
 	"twitch": {
+		"adaptative-scaling": "",
+		"adaptative-scaling-tooltip": "",
+		"scale": "",
+		"scale-tooltip": "",
+		"move-magnifier-icon-on-top": "",
+		"move-magnifier-icon-on-top-tooltip": "",
 		"constructed-section-title": "構築",
 		"battlegrounds-section-title": "英雄戰場",
 		"could-not-log-error-title": "我們無法登入你的Twitch帳戶",
@@ -2133,6 +2161,8 @@
 		"show-battle-simulator": "顯示戰鬥勝負概率",
 		"battle-simulator-size": "戰鬥模擬大小",
 		"last-board-size": "上個檯面的大小",
-		"last-board-size-tooltip": "更改當鼠標停在排行榜英雄頭像上顯示的陣容大小。"
+		"last-board-size-tooltip": "更改當鼠標停在排行榜英雄頭像上顯示的陣容大小。",
+		"hide-battle-odds-in-combat": "",
+		"hide-battle-odds-in-combat-tooltip": ""
 	}
 }
