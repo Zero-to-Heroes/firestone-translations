@@ -28,6 +28,7 @@
 			"casual-duels": "对决模式（休闲）",
 			"heroic-duels": "对决模式（英雄）",
 			"battlegrounds": "酒馆战棋",
+			"battlegrounds-friendly": "",
 			"mercenaries": "佣兵战纪",
 			"practice": "练习模式",
 			"casual": "休闲模式",
@@ -158,7 +159,8 @@
 			"taunt": "嘲讽",
 			"windfury": "风怒",
 			"mega-windfury": "超级风怒"
-		}
+		},
+		"duration": ""
 	},
 	"app": {
 		"menu": {
@@ -481,10 +483,11 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "套牌",
+				"decks-header": "",
 				"stats-header": "统计数据",
 				"ranking-header": "等级",
-				"deckbuilder-header": "构筑套牌"
+				"deckbuilder-header": "构筑套牌",
+				"meta-decks-header": ""
 			},
 			"filters": {
 				"filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
@@ -505,12 +508,16 @@
 				},
 				"rank-filter": {
 					"all": "所有分段",
+					"bronze-platinum": "",
 					"silver": "白银+",
 					"gold": "黄金+",
 					"platinum": "白金+",
 					"diamond": "钻石+",
+					"diamond-legend": "",
 					"legend": "传说",
-					"legend-500": "传说前500"
+					"legend-1000": "",
+					"legend-500": "传说前500",
+					"legend-100": ""
 				},
 				"rank-group": {
 					"per-match": "显示所有对局",
@@ -523,7 +530,12 @@
 					"last-patch": "最新补丁",
 					"past-30": "过去 30 天内",
 					"past-7": "过去 7 天内",
+					"past-3": "",
 					"past-1": "一天内"
+				},
+				"deck-search": {
+					"placeholder": "",
+					"tooltip": ""
 				}
 			},
 			"matchup-info": {
@@ -567,6 +579,7 @@
 				"empty-state-title": "暂无记录",
 				"empty-state-subtitle": "开始传统对战天梯以开启记录！或者先检查上面的过滤器: )"
 			},
+			"meta-decks": {},
 			"ladder-stats": {
 				"title-player": "己方职业明细",
 				"title-opponent": "对手职业明细",
@@ -934,7 +947,9 @@
 				"card-offering-rate-tooltip": "卡牌在此词条中的提供概率（当系统提供此词条时，您可选到此卡牌的概率）",
 				"or": "或",
 				"import-deck-button-title": "导入套牌",
-				"import-deck-button-tooltip": "导入剪贴板中的套牌代码。 您仍然需要手动选择您的英雄技能和签名宝藏，因为它们不是套牌代码的一部分。"
+				"import-deck-button-tooltip": "导入剪贴板中的套牌代码。 您仍然需要手动选择您的英雄技能和签名宝藏，因为它们不是套牌代码的一部分。",
+				"missing-dust-tooltip": "",
+				"part-of-multiple-buckets-tooltip": ""
 			},
 			"empty-state": {
 				"title": "暂无记录",
@@ -1214,9 +1229,14 @@
 			"show-hidden-teams-link-label": "显示存档",
 			"show-merc-names-in-teams-link-label": "显示名称",
 			"fully-upgraded": {
-				"all": "所有佣兵",
+				"all": "",
 				"upgraded": "满练度",
 				"non-upgraded": "尚未满练度"
+			},
+			"owned": {
+				"all": "",
+				"owned": "",
+				"non-owned": ""
 			},
 			"hero-level": {
 				"level-0": "所有等级",
@@ -1746,6 +1766,8 @@
 				"xp-recap-on-game-end-tooltip": "每场对战结束后显示经验和等级的回顾",
 				"hide-release-notes-label": "在应用启动时隐藏版本说明",
 				"hide-release-notes-tooltip": "不显示Firestone新版本的更新说明",
+				"allow-games-share-label": "",
+				"allow-games-share-tooltip": "",
 				"display-notifications-label": "显示通知",
 				"display-notifications-tooltip": "选择右下角祝贺通知的全局可见性。启用此功能，您仍然可以在相应标签中配置各个游戏模式的祝贺通知",
 				"display-notifications-confirmation": "全局通知现已关闭",
@@ -2116,6 +2138,12 @@
 		}
 	},
 	"twitch": {
+		"adaptative-scaling": "",
+		"adaptative-scaling-tooltip": "",
+		"scale": "",
+		"scale-tooltip": "",
+		"move-magnifier-icon-on-top": "",
+		"move-magnifier-icon-on-top-tooltip": "",
 		"constructed-section-title": "传统对战",
 		"battlegrounds-section-title": "酒馆战棋",
 		"could-not-log-error-title": "我们无法登录到您的Twitch账户",
@@ -2133,6 +2161,8 @@
 		"show-battle-simulator": "显示战斗胜负概率",
 		"battle-simulator-size": "战斗模拟器大小",
 		"last-board-size": "上个阵容的大小",
-		"last-board-size-tooltip": "更改在位次榜中鼠标悬停在英雄头像时显示的对手上个阵容的大小。"
+		"last-board-size-tooltip": "更改在位次榜中鼠标悬停在英雄头像时显示的对手上个阵容的大小。",
+		"hide-battle-odds-in-combat": "",
+		"hide-battle-odds-in-combat-tooltip": ""
 	}
 }
