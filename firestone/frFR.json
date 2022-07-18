@@ -28,7 +28,7 @@
 			"casual-duels": "Duels",
 			"heroic-duels": "Duels héroïques",
 			"battlegrounds": "Champs de bataille",
-			"battlegrounds-friendly": "",
+			"battlegrounds-friendly": "Champs de bataille (privé)",
 			"mercenaries": "Mercenaires",
 			"practice": "Entraînement",
 			"casual": "Non classé",
@@ -160,7 +160,7 @@
 			"windfury": "Furie des vents",
 			"mega-windfury": "Méga Furie des vents"
 		},
-		"duration": ""
+		"duration": "{{minutes}}:{{seconds}} min"
 	},
 	"app": {
 		"menu": {
@@ -483,11 +483,11 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "",
+				"decks-header": "Mes decks",
 				"stats-header": "Stats",
 				"ranking-header": "Rang",
 				"deckbuilder-header": "Construction de deck",
-				"meta-decks-header": ""
+				"meta-decks-header": "Decks méta"
 			},
 			"filters": {
 				"filter-info-tooltip": "La modification de ces filtres aura également un impact sur les statistiques affichées dans le decktracker en jeu",
@@ -508,16 +508,16 @@
 				},
 				"rank-filter": {
 					"all": "Tous les rangs",
-					"bronze-platinum": "",
+					"bronze-platinum": "Bronze-Platine",
 					"silver": "Argent+",
 					"gold": "Or+",
 					"platinum": "Platine+",
 					"diamond": "Diamant+",
-					"diamond-legend": "",
+					"diamond-legend": "Diamant-Légende",
 					"legend": "Légende",
-					"legend-1000": "",
+					"legend-1000": "Top 1000",
 					"legend-500": "Top 500",
-					"legend-100": ""
+					"legend-100": "Top 100"
 				},
 				"rank-group": {
 					"per-match": "Afficher chaque partie",
@@ -530,12 +530,12 @@
 					"last-patch": "Dernière mise à jour",
 					"past-30": "30 derniers jours",
 					"past-7": "7 derniers jours",
-					"past-3": "",
+					"past-3": "3 derniers jours",
 					"past-1": "Dernier jour"
 				},
 				"deck-search": {
-					"placeholder": "",
-					"tooltip": ""
+					"placeholder": "Rechercher un deck...",
+					"tooltip": "Rechercher par classe ou par nom de deck"
 				}
 			},
 			"matchup-info": {
@@ -948,8 +948,8 @@
 				"or": "ou",
 				"import-deck-button-title": "Importer un deck",
 				"import-deck-button-tooltip": "Importez le code de deck actuellement dans votre presse-papiers. Vous devrez toujours choisir manuellement le pouvoir héroïque et le trésor spécial, car ils ne font pas partie du code du deck",
-				"missing-dust-tooltip": "",
-				"part-of-multiple-buckets-tooltip": ""
+				"missing-dust-tooltip": "Il manque {{value}} poussières pour fabriquer ce deck",
+				"part-of-multiple-buckets-tooltip": "Cette carte est présente dans {{ value }} sélections différentes"
 			},
 			"empty-state": {
 				"title": "Rien ici pour le moment",
@@ -1229,14 +1229,14 @@
 			"show-hidden-teams-link-label": "Afficher les groupes archivés",
 			"show-merc-names-in-teams-link-label": "Afficher les noms",
 			"fully-upgraded": {
-				"all": "",
+				"all": "Toutes les améliorations",
 				"upgraded": "Au max !",
 				"non-upgraded": "Pas au max"
 			},
 			"owned": {
-				"all": "",
-				"owned": "",
-				"non-owned": ""
+				"all": "Possédés et manquants",
+				"owned": "Uniquement possédés",
+				"non-owned": "Uniquement non possédés"
 			},
 			"hero-level": {
 				"level-0": "Tous les niveaux",
@@ -1766,8 +1766,8 @@
 				"xp-recap-on-game-end-tooltip": "Affiche un récapitulatif de l’XP et des niveaux gagnés après chaque partie",
 				"hide-release-notes-label": "Masquer les notes mise à jour au démarrage de l’application",
 				"hide-release-notes-tooltip": "Ne pas afficher les notes de mise à jour pour les nouvelles versions de Firestone",
-				"allow-games-share-label": "",
-				"allow-games-share-tooltip": "",
+				"allow-games-share-label": "Autoriser le partage de parties",
+				"allow-games-share-tooltip": "Permettre à l’application de présenter vos parties (et decks). Le partage sera anonyme, mais si vous travaillez sur des decks secrets, vous pourriez vouloir désactiver cette option.",
 				"display-notifications-label": "Afficher les notifications",
 				"display-notifications-tooltip": "Active/désactive la visibilité globale des notifications Toast [bottom-right]. Lorsque cette option est activée, vous pouvez toujours configurer les notifications par mode de jeu dans les onglets correspondants",
 				"display-notifications-confirmation": "Les notifications sont maintenant DÉSACTIVÉES.",
@@ -2138,12 +2138,12 @@
 		}
 	},
 	"twitch": {
-		"adaptative-scaling": "",
-		"adaptative-scaling-tooltip": "",
-		"scale": "",
-		"scale-tooltip": "",
-		"move-magnifier-icon-on-top": "",
-		"move-magnifier-icon-on-top-tooltip": "",
+		"adaptative-scaling": "Échelle adaptative",
+		"adaptative-scaling-tooltip": "(EXPÉRIMENTAL) Changer automatiquement la taille des widgets en fonction de la taille de votre fenêtre",
+		"scale": "Échelle",
+		"scale-tooltip": "Modifier la taille des widgets",
+		"move-magnifier-icon-on-top": "Icône de l’adv. en haut",
+		"move-magnifier-icon-on-top-tooltip": "Déplacer l’icône de récapitulatif de l’adversaire en haut du classement",
 		"constructed-section-title": "Construit",
 		"battlegrounds-section-title": "Champs de bataille",
 		"could-not-log-error-title": "Nous n’avons pas pu vous connecter à votre compte Twitch",
@@ -2162,7 +2162,7 @@
 		"battle-simulator-size": "Taille du simulateur de combat",
 		"last-board-size": "Taille de la dernière troupe",
 		"last-board-size-tooltip": "Change la taille du récapitulatif de l’adversaire qui apparaît quand vous passez la souris sur le portrait d’un héros dans le classement.",
-		"hide-battle-odds-in-combat": "",
-		"hide-battle-odds-in-combat-tooltip": ""
+		"hide-battle-odds-in-combat": "Cacher les chances en combat",
+		"hide-battle-odds-in-combat-tooltip": "Montrer les chances de combat seulement dans la taverne"
 	}
 }
