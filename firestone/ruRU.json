@@ -864,7 +864,7 @@
 				"delete-deck-confirmation-ok": "Удалить",
 				"delete-deck-confirmation-cancel": "Отмена",
 				"rename-confirm-button": "Ок",
-				"default-deck-name": "{{wins}} побед {{playerClass}} ({{gameMode}})",
+				"default-deck-name": "{{playerClass}} {{wins}} побед ({{gameMode}})",
 				"default-deck-name-blank": "Колода для дуэлей"
 			},
 			"hero-stat": {
@@ -907,7 +907,7 @@
 				}
 			},
 			"classes-recap": {
-				"title": "",
+				"title": "Статистика",
 				"total-runs": "Всего забегов",
 				"avg-wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "",
@@ -915,7 +915,7 @@
 				"most-faced-classes": "Наиболее часто встречающиеся классы",
 				"best-winrate-against": "",
 				"stat-tooltip": "",
-				"faced-tooltip": ""
+				"faced-tooltip": "{{opponentClass}} <br/> Игр:{{totalMatches}}  Винрейт: {{winrate}}%"
 			},
 			"deckbuilder": {
 				"choose-your-hero-title": "Выберите героя",
@@ -925,7 +925,7 @@
 				"go-back-hero": "{{selectedCardName}} <br/> Кликнете для возврата к выбору героя",
 				"go-back-hero-power": "{{selectedCardName}} <br/> Кликнете для возврата к выбору силы героя",
 				"go-back-signature-treasure": "{{selectedCardName}} <br/> Кликнете для возврата к выбору сокровища героя",
-				"ongoing-deck-building": "Карты ({{currentCards}} / {{maxCards}})",
+				"ongoing-deck-building": "Карт: {{currentCards}} / {{maxCards}}",
 				"export-deckcode-button": "Копировать код",
 				"save-deck-button": "Сохранить",
 				"deck-saved-info": "Колода сохранена",
@@ -944,12 +944,12 @@
 					"neutral-hero": "Heartstone не поддерживает коды колод для нейтральных героев с нейтральными сокровищами (классовые сокровища работают правильно)",
 					"loe-hero": "Heartstone не поддерживает коды колод для героев из Лиги исследователей"
 				},
-				"card-offering-rate-tooltip": "",
+				"card-offering-rate-tooltip": "Вероятность предложения данной карты в этом наборе",
 				"or": "или",
 				"import-deck-button-title": "Импортируй колоду",
 				"import-deck-button-tooltip": "",
-				"missing-dust-tooltip": "",
-				"part-of-multiple-buckets-tooltip": ""
+				"missing-dust-tooltip": "Нужно {{value}} пыли, чтобы создать эту колоду",
+				"part-of-multiple-buckets-tooltip": "Эта карта присутствует в {{ value }} различных наборах добычи"
 			},
 			"empty-state": {
 				"title": "Здесь пока что ничего нет",
@@ -1354,7 +1354,7 @@
 		"cards-in-hand-tooltip": "Карт в руке",
 		"cards-left-in-deck-tooltip": "Карт в колоде",
 		"deck-name": {
-			"unnamed-deck": "",
+			"unnamed-deck": "Безымянная колода",
 			"unknown-deck": "Неизвестная колода",
 			"player-name": "{{playerName}} | {{playerClass}}",
 			"copy-deckstring-label": "Копировать колоду",
@@ -1512,7 +1512,7 @@
 		"turn-counter": {},
 		"hero-selection": {
 			"achievement-completed": "",
-			"achievement-missing": "",
+			"achievement-missing": "Недостающие достижения",
 			"total-matches": "{{value}} матчей",
 			"tier-list-title-tooltip": "Создан на основе {{totalMatches}} матчей отобранных согласно фильтрам из основного окна:"
 		},
