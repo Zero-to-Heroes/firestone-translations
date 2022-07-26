@@ -28,6 +28,7 @@
 			"casual-duels": "決鬥擂台",
 			"heroic-duels": "英雄模式決鬥擂台",
 			"battlegrounds": "英雄戰場",
+			"battlegrounds-friendly": "",
 			"mercenaries": "傭兵戰隊",
 			"practice": "練習",
 			"casual": "休閒",
@@ -158,7 +159,8 @@
 			"taunt": "嘲諷",
 			"windfury": "風怒",
 			"mega-windfury": "超級風怒"
-		}
+		},
+		"duration": ""
 	},
 	"app": {
 		"menu": {
@@ -481,10 +483,11 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "牌組",
+				"decks-header": "我的牌組",
 				"stats-header": "統計",
 				"ranking-header": "排行",
-				"deckbuilder-header": "牌組建立"
+				"deckbuilder-header": "牌組建立",
+				"meta-decks-header": "主流牌組"
 			},
 			"filters": {
 				"filter-info-tooltip": "更改篩選器將會影響記牌器在遊戲中顯示的數據",
@@ -505,12 +508,16 @@
 				},
 				"rank-filter": {
 					"all": "全部階級",
+					"bronze-platinum": "",
 					"silver": "白銀+",
 					"gold": "黃金+",
 					"platinum": "白金+",
 					"diamond": "鑽石+",
+					"diamond-legend": "",
 					"legend": "傳說",
-					"legend-500": "前500"
+					"legend-1000": "前1000",
+					"legend-500": "前500",
+					"legend-100": "前100"
 				},
 				"rank-group": {
 					"per-match": "顯示所有賽局",
@@ -523,7 +530,12 @@
 					"last-patch": "最新版本",
 					"past-30": "過去30天",
 					"past-7": "過去7天",
+					"past-3": "",
 					"past-1": "過去一天"
+				},
+				"deck-search": {
+					"placeholder": "",
+					"tooltip": ""
 				}
 			},
 			"matchup-info": {
@@ -567,6 +579,7 @@
 				"empty-state-title": "尚未有任何內容",
 				"empty-state-subtitle": "遊玩一場爐石戰記傳統模式天梯以開始，或注意上方的篩選器:)"
 			},
+			"meta-decks": {},
 			"ladder-stats": {
 				"title-player": "你職業的詳細信息",
 				"title-opponent": "對手職業的詳細信息",
@@ -934,7 +947,9 @@
 				"card-offering-rate-tooltip": "此詞條的提供率(意味著*有此詞條時*, 你會有幾%機率得到此卡)",
 				"or": "或",
 				"import-deck-button-title": "匯入牌組",
-				"import-deck-button-tooltip": "導入已複製的牌組代碼。 你仍然需要手動選擇你的英雄能力和專屬寶藏，因為它們不是套牌代碼的一部分"
+				"import-deck-button-tooltip": "導入已複製的牌組代碼。 你仍然需要手動選擇你的英雄能力和專屬寶藏，因為它們不是套牌代碼的一部分",
+				"missing-dust-tooltip": "",
+				"part-of-multiple-buckets-tooltip": ""
 			},
 			"empty-state": {
 				"title": "尚未有任何內容",
@@ -973,6 +988,7 @@
 				"game-mode": {
 					"all": "所有模式",
 					"battlegrounds": "英雄戰場",
+					"battlegrounds-friendly": "",
 					"mercenaries-all": "傭兵戰隊(全部)",
 					"mercenaries-pve": "傭兵戰隊PvE",
 					"mercenaries-pvp": "傭兵戰隊PvP",
@@ -1214,9 +1230,14 @@
 			"show-hidden-teams-link-label": "顯示封存",
 			"show-merc-names-in-teams-link-label": "顯示名稱",
 			"fully-upgraded": {
-				"all": "全部傭兵",
+				"all": "",
 				"upgraded": "滿級",
 				"non-upgraded": "未滿級"
+			},
+			"owned": {
+				"all": "",
+				"owned": "",
+				"non-owned": ""
 			},
 			"hero-level": {
 				"level-0": "所有等級",
@@ -1676,14 +1697,12 @@
 			"third-party": {
 				"intro": "您的資料屬於您自己，您可以將其同步到其他第三方網站並幫助他們。 我們不會因此獲得報酬，但我們確實得到了一些曝光，因為他們將會談論我們 :)",
 				"vs": {
-					"title": "VS",
 					"pitch": "Vicious Syndicate 使用來自數以千計的遊戲數據和頂級玩家的見解，來建構捕獲環境的周報。 您可以訪問他們 {{websiteLink}}",
 					"website-link": "這裡",
 					"next": "如果您決定為 vS Data Reaper 報告做出貢獻，Firestone 將匿名向他們發送有關您的遊戲的信息(主要是每個玩家所玩的牌和一些Meta，如：玩家階級)。",
 					"toggle-label": "貢獻給vS Data Reaper Report"
 				},
 				"ooc": {
-					"title": "牌堆沒牌了",
 					"pitch": "Out of Cards 是一個爐石社區網站，包含文章、指南、套牌、卡牌數據庫等。 將您的卡牌收藏同步到網站可以更輕鬆地找到要玩的牌組。 點擊連結觀看 {{websiteLink}}",
 					"website-link": "這裡",
 					"next": "如果您連接 Out of Cards 帳戶，Firestone 會將您的收集數據發送到 Out of Cards，以便您可以在線上使用。",
@@ -1694,7 +1713,6 @@
 					"collection-synchronized": "收藏已同步"
 				},
 				"d0nkey": {
-					"title": "d0nkey.top",
 					"pitch": "d0nkey.top 是一個粉絲網站，收集了來自官方《爐石戰記》比賽的所有套牌，以及來自實況主的套牌，讓任何人都可以輕鬆找到有趣的套牌來玩。 與 d0nkey.top 同步可以讓您與觀眾分享您的套牌(如果您是一名實況主)，或者幫助他們建立更好的數據庫，為社群提供更多免費服務。 你可以拜訪他們 {{websiteLink}}",
 					"website-link": "這裡",
 					"next": "如果您決定和 d0nkey.top 同步，Firestone 將向他們發送您玩的每場遊戲，這些遊戲將出現在網站的特定部分(仍在建構中)。 回放預設是私人的，除非您同時進行實況。 請參閱 {{link}} 了解如何設置所有內容。",
@@ -1702,7 +1720,6 @@
 					"toggle-label": "同步你的回放到 d0nkey.top"
 				},
 				"hsdecks": {
-					"title": "爐石套牌",
 					"pitch": "Hearthstone-decks.net 分享在高分段的所有構築模式的套牌、新聞和文章。 你可以拜訪他們 {{websiteLink}}",
 					"website-link": "這裡",
 					"next": "如果您決定同步到 hearthstone-decks.net，Firestone 將向他們發送您玩的每個遊戲(匿名)，並附上一些關於您的遊戲的訊息 (套牌代碼、排名、遊戲結果)",
@@ -1746,6 +1763,8 @@
 				"xp-recap-on-game-end-tooltip": "每場賽局後顯示獲得的經驗值/等級",
 				"hide-release-notes-label": "隱藏程式啟動時顯示的更新說明",
 				"hide-release-notes-tooltip": "不要顯示新版本的更新說明",
+				"allow-games-share-label": "",
+				"allow-games-share-tooltip": "",
 				"display-notifications-label": "顯示通知",
 				"display-notifications-tooltip": "切換 toast 通知的全域可見性[bottom-right]，啟動時，您仍然可以在相應的選項中設定每種遊戲模式的通知。",
 				"display-notifications-confirmation": "現在已關閉通知。",
@@ -2067,10 +2086,12 @@
 		},
 		"achievements": {
 			"menu": {
-				"notifications": "通知"
+				"general": ""
 			},
 			"notifications": {
 				"title": "當你看到成就通知時更新",
+				"achievements-enabled-text": "",
+				"achievements-enabled-tooltip": "",
 				"firestone-achievements-text": "啟用Firestone專屬成就",
 				"firestone-achievements-tooltip": "啟用Firestone專屬成就追蹤",
 				"show-notifications-text": "顯示通知",
@@ -2116,6 +2137,12 @@
 		}
 	},
 	"twitch": {
+		"adaptative-scaling": "",
+		"adaptative-scaling-tooltip": "",
+		"scale": "",
+		"scale-tooltip": "",
+		"move-magnifier-icon-on-top": "",
+		"move-magnifier-icon-on-top-tooltip": "",
 		"constructed-section-title": "構築",
 		"battlegrounds-section-title": "英雄戰場",
 		"could-not-log-error-title": "我們無法登入你的Twitch帳戶",
@@ -2133,6 +2160,8 @@
 		"show-battle-simulator": "顯示戰鬥勝負概率",
 		"battle-simulator-size": "戰鬥模擬大小",
 		"last-board-size": "上個檯面的大小",
-		"last-board-size-tooltip": "更改當鼠標停在排行榜英雄頭像上顯示的陣容大小。"
+		"last-board-size-tooltip": "更改當鼠標停在排行榜英雄頭像上顯示的陣容大小。",
+		"hide-battle-odds-in-combat": "",
+		"hide-battle-odds-in-combat-tooltip": ""
 	}
 }

@@ -28,6 +28,7 @@
 			"casual-duels": "Duels",
 			"heroic-duels": "Duels héroïques",
 			"battlegrounds": "Champs de bataille",
+			"battlegrounds-friendly": "Champs de bataille (privé)",
 			"mercenaries": "Mercenaires",
 			"practice": "Entraînement",
 			"casual": "Non classé",
@@ -158,7 +159,8 @@
 			"taunt": "Provocation",
 			"windfury": "Furie des vents",
 			"mega-windfury": "Méga Furie des vents"
-		}
+		},
+		"duration": "{{minutes}}:{{seconds}} min"
 	},
 	"app": {
 		"menu": {
@@ -481,10 +483,11 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "Decks",
+				"decks-header": "Mes decks",
 				"stats-header": "Stats",
 				"ranking-header": "Rang",
-				"deckbuilder-header": "Construction de deck"
+				"deckbuilder-header": "Construction de deck",
+				"meta-decks-header": "Decks méta"
 			},
 			"filters": {
 				"filter-info-tooltip": "La modification de ces filtres aura également un impact sur les statistiques affichées dans le decktracker en jeu",
@@ -505,12 +508,16 @@
 				},
 				"rank-filter": {
 					"all": "Tous les rangs",
+					"bronze-platinum": "Bronze-Platine",
 					"silver": "Argent+",
 					"gold": "Or+",
 					"platinum": "Platine+",
 					"diamond": "Diamant+",
+					"diamond-legend": "Diamant-Légende",
 					"legend": "Légende",
-					"legend-500": "Top 500"
+					"legend-1000": "Top 1000",
+					"legend-500": "Top 500",
+					"legend-100": "Top 100"
 				},
 				"rank-group": {
 					"per-match": "Afficher chaque partie",
@@ -523,7 +530,12 @@
 					"last-patch": "Dernière mise à jour",
 					"past-30": "30 derniers jours",
 					"past-7": "7 derniers jours",
+					"past-3": "3 derniers jours",
 					"past-1": "Dernier jour"
+				},
+				"deck-search": {
+					"placeholder": "Rechercher un deck...",
+					"tooltip": "Rechercher par classe ou par nom de deck"
 				}
 			},
 			"matchup-info": {
@@ -567,6 +579,7 @@
 				"empty-state-title": "Rien ici pour le moment",
 				"empty-state-subtitle": "Jouez une partie classée pour commencer, ou vérifiez vos filtres ci-dessus :)"
 			},
+			"meta-decks": {},
 			"ladder-stats": {
 				"title-player": "Détail des classes jouées",
 				"title-opponent": "Détail des classes adverses",
@@ -934,7 +947,9 @@
 				"card-offering-rate-tooltip": "Taux d’apparition dans cette sélection (cela signifie que *si cette sélection vous est proposée*, vous aurez ce pourcentage de chances que cette carte vous soit proposée)",
 				"or": "ou",
 				"import-deck-button-title": "Importer un deck",
-				"import-deck-button-tooltip": "Importez le code de deck actuellement dans votre presse-papiers. Vous devrez toujours choisir manuellement le pouvoir héroïque et le trésor spécial, car ils ne font pas partie du code du deck"
+				"import-deck-button-tooltip": "Importez le code de deck actuellement dans votre presse-papiers. Vous devrez toujours choisir manuellement le pouvoir héroïque et le trésor spécial, car ils ne font pas partie du code du deck",
+				"missing-dust-tooltip": "Il manque {{value}} poussières pour fabriquer ce deck",
+				"part-of-multiple-buckets-tooltip": "Cette carte est présente dans {{ value }} sélections différentes"
 			},
 			"empty-state": {
 				"title": "Rien ici pour le moment",
@@ -973,6 +988,7 @@
 				"game-mode": {
 					"all": "Tous les modes de jeu",
 					"battlegrounds": "Champs de bataille",
+					"battlegrounds-friendly": "Champs de bataille (privé)",
 					"mercenaries-all": "Mercenaires (Tous)",
 					"mercenaries-pve": "Mercenaires JcE",
 					"mercenaries-pvp": "Mercenaires JcJ",
@@ -1214,9 +1230,14 @@
 			"show-hidden-teams-link-label": "Afficher les groupes archivés",
 			"show-merc-names-in-teams-link-label": "Afficher les noms",
 			"fully-upgraded": {
-				"all": "Tous les mercenaires",
+				"all": "Toutes les améliorations",
 				"upgraded": "Au max !",
 				"non-upgraded": "Pas au max"
+			},
+			"owned": {
+				"all": "Possédés et manquants",
+				"owned": "Uniquement possédés",
+				"non-owned": "Uniquement non possédés"
 			},
 			"hero-level": {
 				"level-0": "Tous les niveaux",
@@ -1600,7 +1621,7 @@
 		}
 	},
 	"session": {
-		"title": "Récapitulatif de session",
+		"title": "Récap de session",
 		"title-tooltip": "Affiche un récapitulatif de toutes vos parties de Champs de bataille depuis que vous avez réinitialisé la session (avec le bouton en haut). Vous pouvez l’activer ou le désactiver dans les paramètres.",
 		"display-mode": {
 			"all": "Tous",
@@ -1676,14 +1697,12 @@
 			"third-party": {
 				"intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Nous ne sommes pas payés pour cela, mais nous recevons une certaine exposition puisqu’ils parlent ensuite de nous :)",
 				"vs": {
-					"title": "Vicious Syndicate",
 					"pitch": "Vicious Syndicate construit un rapport hebdomadaire qui capture l’apparence du méta-jeu, en utilisant à la fois les données provenant de milliers de parties et les connaissances des joueurs de haut niveau. Vous pouvez leur rendre visite {{websiteLink}}",
 					"website-link": "ici",
 					"next": "Si vous décidez de contribuer au vS Data Reaper Report, Firestone leur enverra anonymement des informations sur vos parties (principalement les cartes jouées par chaque joueur et certaines métadonnées, comme les rangs des joueurs).",
 					"toggle-label": "Contribuer au vS Data Reaper Report"
 				},
 				"ooc": {
-					"title": "Out of Cards",
 					"pitch": "Out of Cards est un site communautaire de Hearthstone avec des articles, des guides, des paquets, des bases de données de cartes et plus encore. La synchronisation de votre collection de cartes sur le site facilite la recherche de decks à jouer. Vous pouvez leur rendre visite {{websiteLink}}",
 					"website-link": "ici",
 					"next": "Si vous vous connectez à votre compte Out of Cards, Firestone enverra vos données de collection à Out of Cards afin que vous puissiez les utiliser en ligne.",
@@ -1694,7 +1713,6 @@
 					"collection-synchronized": "Collection synchronisée"
 				},
 				"d0nkey": {
-					"title": "d0nkey.top",
 					"pitch": "d0nkey.top est un site web de fans qui rassemble tous les decks des compétitions officielles de Hearthstone, ainsi que les decks des streamers pour permettre à tout le monde de trouver facilement des decks intéressants à jouer. La synchronisation vers d0nkey.top vous permettra de partager vos decks avec votre public (si vous êtes streamer) ou les aidera à construire une meilleure base de données pour fournir plus de services gratuits à la communauté. Vous pouvez leur rendre visite {{websiteLink}}",
 					"website-link": "ici",
 					"next": "Si vous décidez d’activer la synchronisation avec d0nkey.top, Firestone leur enverra chaque partie que vous jouerez, qui apparaîtra dans une section spécifique sur le site (qui est toujours en construction). Les replays seront privés par défaut, sauf si vous diffusez en même temps. Voir la {{link}} pour savoir comment tout configurer.",
@@ -1702,7 +1720,6 @@
 					"toggle-label": "Synchroniser vos replays avec d0nkey.top"
 				},
 				"hsdecks": {
-					"title": "Hearthstone-decks",
 					"pitch": "<a href=\"https://hearthstone-decks.net/\" target=\"_blank\">hearthstone-decks.net</a> partage des decks joués dans les rangs élevés de Légende pour tous les modes construits, section News & Articles.",
 					"website-link": "ici",
 					"next": "Si vous décidez d'activer la synchronisation avec hearthstone-decks.net, Firestone leur enverra de façon anonyme chaque partie que vous jouez, avec quelques informations sur vos parties (code de deck, rang, résultats des parties).",
@@ -1746,6 +1763,8 @@
 				"xp-recap-on-game-end-tooltip": "Affiche un récapitulatif de l’XP et des niveaux gagnés après chaque partie",
 				"hide-release-notes-label": "Masquer les notes mise à jour au démarrage de l’application",
 				"hide-release-notes-tooltip": "Ne pas afficher les notes de mise à jour pour les nouvelles versions de Firestone",
+				"allow-games-share-label": "Autoriser le partage de parties",
+				"allow-games-share-tooltip": "Permettre à l’application de présenter vos parties (et decks). Le partage sera anonyme, mais si vous travaillez sur des decks secrets, vous pourriez vouloir désactiver cette option.",
 				"display-notifications-label": "Afficher les notifications",
 				"display-notifications-tooltip": "Active/désactive la visibilité globale des notifications Toast [bottom-right]. Lorsque cette option est activée, vous pouvez toujours configurer les notifications par mode de jeu dans les onglets correspondants",
 				"display-notifications-confirmation": "Les notifications sont maintenant DÉSACTIVÉES.",
@@ -1954,7 +1973,7 @@
 				"card-size-in-collection-label": "Taille des cartes dans la collection",
 				"notifications-label": "Activer les notifications",
 				"selective-notifications-label": "Sélection des notifications",
-				"notifications-dust-recap-label": "Récapitulatif de poussière",
+				"notifications-dust-recap-label": "Récap de poussière",
 				"notifications-non-golden-commons-label": "Communes non dorées",
 				"notifications-rewards-label": "Récompenses",
 				"notifications-rewards-tooltip": "Affiche une notification quand vous obtenez une carte en dehors d’un paquet, généralement lors des récompenses de fin de saison ou d’Arène"
@@ -2067,10 +2086,12 @@
 		},
 		"achievements": {
 			"menu": {
-				"notifications": "Notifications"
+				"general": "Général"
 			},
 			"notifications": {
 				"title": "Mettre à jour quand vous voyez les notifications de succès",
+				"achievements-enabled-text": "Activer le système de hauts faits",
+				"achievements-enabled-tooltip": "Lorsque cette option est désativée, l’ensemble du système de suivi des hauts faits sera désactivé. Gardez cette option désactivée si vous ne prévoyez pas d’utiliser Firestone pour parcourir vos hauts faits existants. Nécessite un redémarrage de l’application.",
 				"firestone-achievements-text": "Activer les hauts faits FS",
 				"firestone-achievements-tooltip": "Activer le suivi des hauts faits exclusifs à Firestone",
 				"show-notifications-text": "Afficher les notifications",
@@ -2116,6 +2137,12 @@
 		}
 	},
 	"twitch": {
+		"adaptative-scaling": "Échelle adaptative",
+		"adaptative-scaling-tooltip": "(EXPÉRIMENTAL) Changer automatiquement la taille des widgets en fonction de la taille de votre fenêtre",
+		"scale": "Échelle",
+		"scale-tooltip": "Modifier la taille des widgets",
+		"move-magnifier-icon-on-top": "Icône de l’adv. en haut",
+		"move-magnifier-icon-on-top-tooltip": "Déplacer l’icône de récapitulatif de l’adversaire en haut du classement",
 		"constructed-section-title": "Construit",
 		"battlegrounds-section-title": "Champs de bataille",
 		"could-not-log-error-title": "Nous n’avons pas pu vous connecter à votre compte Twitch",
@@ -2133,6 +2160,8 @@
 		"show-battle-simulator": "Afficher les chances de victoire",
 		"battle-simulator-size": "Taille du simulateur de combat",
 		"last-board-size": "Taille de la dernière troupe",
-		"last-board-size-tooltip": "Change la taille du récapitulatif de l’adversaire qui apparaît quand vous passez la souris sur le portrait d’un héros dans le classement."
+		"last-board-size-tooltip": "Change la taille du récapitulatif de l’adversaire qui apparaît quand vous passez la souris sur le portrait d’un héros dans le classement.",
+		"hide-battle-odds-in-combat": "Cacher les chances en combat",
+		"hide-battle-odds-in-combat-tooltip": "Montrer les chances de combat seulement dans la taverne"
 	}
 }
