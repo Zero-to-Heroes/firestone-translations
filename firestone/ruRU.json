@@ -246,15 +246,15 @@
 				}
 			},
 			"stats": {
-				"title": "Обзор статистики",
+				"title": "Ваша статистика",
 				"total-runs": "Всего забегов",
 				"wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "Самые популярные классы",
 				"best-winrate-classes": "Лучшие классы по винрейту",
 				"most-faced-classes": "Наиболее встречающиеся классы",
 				"best-winrate-against": "Лучший винрейт против",
-				"stat-tooltip": "Вы сыграли {{numberOfRuns}} игр и {{totalMatches}} матчей с {{playerClass}} с {{winrate}}% винрейта",
-				"faced-tooltip": "Вы столкнулись с {{opponentClass}} {{totalMatches}} раз с {{winrate}}% винрейта"
+				"stat-tooltip": "{{playerClass}} <br/> Забегов: {{numberOfRuns}} Игр: {{totalMatches}} Винрейт: {{winrate}}%",
+				"faced-tooltip": "{{opponentClass}} <br/> Игр: {{totalMatches}} Винрейт: {{winrate}}%"
 			},
 			"runs": {
 				"view-run-button": "Смотреть забег",
@@ -756,8 +756,8 @@
 						"rerolls": "Обновлений таверны",
 						"freezes": "Количество заморозок",
 						"hero-power": "Сила героя использована раз",
-						"minions-bought": "Существ куплено",
-						"minions-sold": "Существ продано",
+						"minions-bought": "Куплено существ",
+						"minions-sold": "Продано существ",
 						"enemy-minions-killed": "Убито вражеских существ",
 						"enemy-heroes-killed": "Убито вражеских героев",
 						"battles-going-first": "Ходов первым в бою",
@@ -907,15 +907,15 @@
 				}
 			},
 			"classes-recap": {
-				"title": "Статистика",
+				"title": "Ваша статистика",
 				"total-runs": "Всего забегов",
 				"avg-wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "",
-				"best-winrate-classes": "",
+				"best-winrate-classes": "Лучшие классы по винрейту",
 				"most-faced-classes": "Наиболее часто встречающиеся классы",
-				"best-winrate-against": "",
-				"stat-tooltip": "",
-				"faced-tooltip": "{{opponentClass}} <br/> Игр:{{totalMatches}}  Винрейт: {{winrate}}%"
+				"best-winrate-against": "Лучший винрейт против",
+				"stat-tooltip": "{{playerClass}} <br/> Забегов: {{numberOfRuns}} Игр: {{totalMatches}} Винрейт: {{winrate}}%",
+				"faced-tooltip": "{{opponentClass}} <br/> Игр: {{totalMatches}} Винрейт: {{winrate}}%"
 			},
 			"deckbuilder": {
 				"choose-your-hero-title": "Выберите героя",
@@ -924,7 +924,7 @@
 				"build-your-deck-title": "Создайте свою колоду",
 				"go-back-hero": "Герой: {{selectedCardName}} <br/> Кликните для возврата к выбору героя",
 				"go-back-hero-power": "Сила героя: {{selectedCardName}} <br/> Кликните для возврата к выбору силы героя",
-				"go-back-signature-treasure": "Сокровище: {{selectedCardName}} <br/> Кликните для возврата к выбору сокровища героя",
+				"go-back-signature-treasure": "Сокровище: {{selectedCardName}} <br/> Кликните для возврата к выбору фирменного сокровища",
 				"ongoing-deck-building": "Карт: {{currentCards}} / {{maxCards}}",
 				"export-deckcode-button": "Копировать код",
 				"save-deck-button": "Сохранить",
@@ -944,12 +944,12 @@
 					"neutral-hero": "Heartstone не поддерживает коды колод для нейтральных героев с нейтральными сокровищами (классовые сокровища работают правильно)",
 					"loe-hero": "Heartstone не поддерживает коды колод для героев из Лиги исследователей"
 				},
-				"card-offering-rate-tooltip": "Вероятность предложения данной карты в этом наборе",
+				"card-offering-rate-tooltip": "Вероятность предложения этой карты в данном наборе",
 				"or": "или",
 				"import-deck-button-title": "Импортируйте колоду",
 				"import-deck-button-tooltip": "Добавить колоду из буфера обмена. Вам также нужно будет выбрать силу героя и фирменное сокровище, поскольку они не являются частью кода колоды.",
 				"missing-dust-tooltip": "Нужно {{value}} пыли, чтобы создать эту колоду",
-				"part-of-multiple-buckets-tooltip": "Эта карта присутствует в {{ value }} различных наборах добычи"
+				"part-of-multiple-buckets-tooltip": "Эта карта присутствует в {{ value }} наборах добычи"
 			},
 			"empty-state": {
 				"title": "Здесь пока ничего нет",
@@ -1573,7 +1573,7 @@
 			},
 			"composition": {
 				"blank-tribe": "Без типа / Все",
-				"empty-state-title": "",
+				"empty-state-title": "Информация недоступна",
 				"empty-state-subtitle": ""
 			},
 			"warband-stats": {
@@ -1606,7 +1606,7 @@
 			"popularity-label": "Популярность",
 			"player-matches": "{{value}} матчей",
 			"your-value-tooltip": "Ваше значение",
-			"community-value-tooltip": "",
+			"community-value-tooltip": "В среднем для героя, согласно фильтрам установленным в основном окне",
 			"win-distribution-header": "Распределение побед ({{value}} забегов)",
 			"win-distribution-tooltip": "Распределение побед",
 			"top-decks-header": "Результативные колоды ({{value}} колод)",
