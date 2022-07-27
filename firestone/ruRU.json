@@ -152,7 +152,7 @@
 		"hs-terms": {
 			"attack": "Атака",
 			"health": "Здоровье",
-			"golden": "Золотой",
+			"golden": "Золотое",
 			"divine-shield": "Божественный щит",
 			"poisonous": "Яд",
 			"reborn": "Перерождение",
@@ -160,7 +160,7 @@
 			"windfury": "Неистовство ветра",
 			"mega-windfury": "Меганеистовство ветра"
 		},
-		"duration": "{{minutes}} мин {{seconds}} сек"
+		"duration": "{{minutes}} мин {{seconds}} сек"
 	},
 	"app": {
 		"menu": {
@@ -246,15 +246,15 @@
 				}
 			},
 			"stats": {
-				"title": "Обзор статистики",
+				"title": "Ваша статистика",
 				"total-runs": "Всего забегов",
 				"wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "Самые популярные классы",
 				"best-winrate-classes": "Лучшие классы по винрейту",
 				"most-faced-classes": "Наиболее встречающиеся классы",
 				"best-winrate-against": "Лучший винрейт против",
-				"stat-tooltip": "Вы сыграли {{numberOfRuns}} игр и {{totalMatches}} матчей с {{playerClass}} с {{winrate}}% винрейта",
-				"faced-tooltip": "Вы столкнулись с {{opponentClass}} {{totalMatches}} раз с {{winrate}}% винрейта"
+				"stat-tooltip": "{{playerClass}} <br/> Забегов: {{numberOfRuns}} Игр: {{totalMatches}} Винрейт: {{winrate}}%",
+				"faced-tooltip": "{{opponentClass}} <br/> Игр: {{totalMatches}} Винрейт: {{winrate}}%"
 			},
 			"runs": {
 				"view-run-button": "Смотреть забег",
@@ -483,7 +483,7 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "",
+				"decks-header": "Мои колоды",
 				"stats-header": "Статистика",
 				"ranking-header": "Рейтинг",
 				"deckbuilder-header": "Создание колод",
@@ -530,7 +530,7 @@
 					"last-patch": "Последнее обновление",
 					"past-30": "Последние 30 дней",
 					"past-7": "Последние 7 дней",
-					"past-3": "",
+					"past-3": "Последние 3 дня",
 					"past-1": "За день"
 				},
 				"deck-search": {
@@ -577,7 +577,9 @@
 			},
 			"decks": {
 				"empty-state-title": "Здесь пока ничего нет",
-				"empty-state-subtitle": ""
+				"empty-state-subtitle": "",
+				"drag-to-merge-default": "",
+				"drag-to-merge": ""
 			},
 			"meta-decks": {},
 			"ladder-stats": {
@@ -616,9 +618,9 @@
 				"choose-your-format-title": "Выберите формат",
 				"choose-your-class-title": "Выберите класс",
 				"build-your-deck-title": "Создайте свою колоду",
-				"go-back-format": "Формат: {{formatName}} <br/> Кликнете для возврата к выбору формата",
-				"go-back-class": "Класс: {{className}} <br/> Кликнете для возврата к выбору класса",
-				"import-deck-button-tooltip": ""
+				"go-back-format": "Формат: {{formatName}} <br/> Кликните для возврата к выбору формата",
+				"go-back-class": "Класс: {{className}} <br/> Кликните для возврата к выбору класса",
+				"import-deck-button-tooltip": "Добавить колоду из буфера обмена."
 			}
 		},
 		"battlegrounds": {
@@ -756,8 +758,8 @@
 						"rerolls": "Обновлений таверны",
 						"freezes": "Количество заморозок",
 						"hero-power": "Сила героя использована раз",
-						"minions-bought": "Существ куплено",
-						"minions-sold": "Существ продано",
+						"minions-bought": "Куплено существ",
+						"minions-sold": "Продано существ",
 						"enemy-minions-killed": "Убито вражеских существ",
 						"enemy-heroes-killed": "Убито вражеских героев",
 						"battles-going-first": "Ходов первым в бою",
@@ -837,8 +839,8 @@
 					"player-pickrate": ""
 				},
 				"locks": {
-					"all": "",
-					"unlocked": "",
+					"all": "Показывать заблокированные",
+					"unlocked": "Только разблокированные",
 					"unlocked-tooltip": ""
 				}
 			},
@@ -907,24 +909,24 @@
 				}
 			},
 			"classes-recap": {
-				"title": "Статистика",
+				"title": "Ваша статистика",
 				"total-runs": "Всего забегов",
 				"avg-wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "",
-				"best-winrate-classes": "",
+				"best-winrate-classes": "Лучшие классы по винрейту",
 				"most-faced-classes": "Наиболее часто встречающиеся классы",
-				"best-winrate-against": "",
-				"stat-tooltip": "",
-				"faced-tooltip": "{{opponentClass}} <br/> Игр:{{totalMatches}}  Винрейт: {{winrate}}%"
+				"best-winrate-against": "Лучший винрейт против",
+				"stat-tooltip": "{{playerClass}} <br/> Забегов: {{numberOfRuns}} Игр: {{totalMatches}} Винрейт: {{winrate}}%",
+				"faced-tooltip": "{{opponentClass}} <br/> Игр: {{totalMatches}} Винрейт: {{winrate}}%"
 			},
 			"deckbuilder": {
 				"choose-your-hero-title": "Выберите героя",
 				"choose-your-hero-power-title": "Выберите силу героя",
 				"choose-your-signature-treasure-title": "Выберите сокровище",
 				"build-your-deck-title": "Создайте свою колоду",
-				"go-back-hero": "Герой: {{selectedCardName}} <br/> Кликнете для возврата к выбору героя",
-				"go-back-hero-power": "Сила героя: {{selectedCardName}} <br/> Кликнете для возврата к выбору силы героя",
-				"go-back-signature-treasure": "Сокровище: {{selectedCardName}} <br/> Кликнете для возврата к выбору сокровища героя",
+				"go-back-hero": "Герой: {{selectedCardName}} <br/> Кликните для возврата к выбору героя",
+				"go-back-hero-power": "Сила героя: {{selectedCardName}} <br/> Кликните для возврата к выбору силы героя",
+				"go-back-signature-treasure": "Сокровище: {{selectedCardName}} <br/> Кликните для возврата к выбору фирменного сокровища",
 				"ongoing-deck-building": "Карт: {{currentCards}} / {{maxCards}}",
 				"export-deckcode-button": "Копировать код",
 				"save-deck-button": "Сохранить",
@@ -944,12 +946,12 @@
 					"neutral-hero": "Heartstone не поддерживает коды колод для нейтральных героев с нейтральными сокровищами (классовые сокровища работают правильно)",
 					"loe-hero": "Heartstone не поддерживает коды колод для героев из Лиги исследователей"
 				},
-				"card-offering-rate-tooltip": "Вероятность предложения данной карты в этом наборе",
+				"card-offering-rate-tooltip": "Вероятность предложения этой карты в данном наборе",
 				"or": "или",
-				"import-deck-button-title": "Импортируй колоду",
-				"import-deck-button-tooltip": "",
+				"import-deck-button-title": "Импортируйте колоду",
+				"import-deck-button-tooltip": "Добавить колоду из буфера обмена. Вам также нужно будет выбрать силу героя и фирменное сокровище, поскольку они не являются частью кода колоды.",
 				"missing-dust-tooltip": "Нужно {{value}} пыли, чтобы создать эту колоду",
-				"part-of-multiple-buckets-tooltip": "Эта карта присутствует в {{ value }} различных наборах добычи"
+				"part-of-multiple-buckets-tooltip": "Эта карта присутствует в {{ value }} наборах добычи"
 			},
 			"empty-state": {
 				"title": "Здесь пока ничего нет",
@@ -1093,7 +1095,7 @@
 		"mulligan": "Муллиган",
 		"current-turn": "Ход {{value}}",
 		"player-current-turn-tooltip": "Продолжительность вашего хода. Обычно ход длится 75 сек.",
-		"player-total-turn-tooltip": ""
+		"player-total-turn-tooltip": "Общее время ходов"
 	},
 	"counters": {
 		"attack": {
@@ -1145,8 +1147,8 @@
 			"opponent": "Ваш противник воззвал к Галакронду {{value}} раз"
 		},
 		"hero-power-damage": {
-			"player": "",
-			"opponent": ""
+			"player": "Вы нанесли {{value}} урона силой героя в этой игре",
+			"opponent": "Противник нанес {{value}} урона силой героя в этой игре"
 		},
 		"jade": {
 			"player": "Характеристики вашего нефритового голема: {{value}}/{{value}}",
@@ -1230,7 +1232,7 @@
 			"show-hidden-teams-link-label": "Показать архивные",
 			"show-merc-names-in-teams-link-label": "Отображать имена",
 			"fully-upgraded": {
-				"all": "",
+				"all": "Все",
 				"upgraded": "Полностью улучшенные",
 				"non-upgraded": "Можно улучшить"
 			},
@@ -1296,7 +1298,7 @@
 			"level-header": "Ур.",
 			"role-header": "Роль",
 			"name-header": "Имя",
-			"xp-header": "",
+			"xp-header": "XP",
 			"coins-left-header": "Имеется монет",
 			"coins-left-header-tooltip": "Сколько монет наёмника у вас есть",
 			"coins-needed-header": "Нужно монет",
@@ -1454,7 +1456,7 @@
 			"reposition-button-finalresult": "",
 			"reposition-button-done": "Завершена",
 			"reposition-button-cancel": "Отмена",
-			"reposition-button-cancelling": "",
+			"reposition-button-cancelling": "Отмена...",
 			"reposition-button-tooltip": "(БЕТА) Подбор наилучшей расстановки для вашего стола. Процесс может занять несколько минут, во время которого будет использовано много ресурсов CPU и RAM.",
 			"reposition-button-tooltip-firstpass": "",
 			"reposition-button-tooltip-secondpass": "",
@@ -1511,10 +1513,10 @@
 		},
 		"turn-counter": {},
 		"hero-selection": {
-			"achievement-completed": "",
+			"achievement-completed": "Достижение выполнено",
 			"achievement-missing": "Недостающие достижения",
 			"total-matches": "{{value}} матчей",
-			"tier-list-title-tooltip": "Создан на основе {{totalMatches}} матчей отобранных согласно фильтрам из основного окна:"
+			"tier-list-title-tooltip": "Тир-лист создан на основе {{totalMatches}} матчей отобранных согласно фильтрам из основного окна:"
 		},
 		"in-game": {
 			"face-offs": {
@@ -1573,7 +1575,7 @@
 			},
 			"composition": {
 				"blank-tribe": "Без типа / Все",
-				"empty-state-title": "",
+				"empty-state-title": "Информация недоступна",
 				"empty-state-subtitle": ""
 			},
 			"warband-stats": {
@@ -1606,7 +1608,7 @@
 			"popularity-label": "Популярность",
 			"player-matches": "{{value}} матчей",
 			"your-value-tooltip": "Ваше значение",
-			"community-value-tooltip": "",
+			"community-value-tooltip": "В среднем для героя, согласно фильтрам установленным в основном окне",
 			"win-distribution-header": "Распределение побед ({{value}} забегов)",
 			"win-distribution-tooltip": "Распределение побед",
 			"top-decks-header": "Результативные колоды ({{value}} колод)",
@@ -1673,7 +1675,7 @@
 				"zoom-200": "200%",
 				"zoom-400": "400%"
 			},
-			"widget-size-label": "Размер виджета",
+			"widget-size-label": "Размер виджетов",
 			"show-advanced-settings-button": "Показать доп. настройки",
 			"hide-advanced-settings-button": "Скрыть доп. настройки"
 		},
@@ -1692,7 +1694,8 @@
 				"localization": "Локализация",
 				"bug-report": "Сообщить об ошибке",
 				"third-party": "Сторонние приложения",
-				"broadcast": "Twitch"
+				"broadcast": "Twitch",
+				"data": ""
 			},
 			"third-party": {
 				"intro": "",
@@ -1841,7 +1844,7 @@
 				"tavern-brawl": "Потасовка",
 				"practice": "Тренировка",
 				"friendly": "Дружеские игры",
-				"casual": "Обычный"
+				"casual": "Обычный режим"
 			},
 			"opponent-deck": {
 				"tracker-title": "Трекер колоды",
@@ -1867,24 +1870,24 @@
 				"hide-generated-cards-tooltip": "",
 				"opponent-hand-title": "Отслеживание руки противника",
 				"card-turn-draw-label": "Ход, на котором взята карта",
-				"card-turn-draw-tooltip": "",
+				"card-turn-draw-tooltip": "Показывать ход, на котором была взята карта в руке противника ",
 				"guessed-cards-label": "Известные карты",
 				"guessed-cards-tooltip": "",
 				"buff-in-hand-label": "Бафф карт в руке",
-				"buff-in-hand-tooltip": "",
+				"buff-in-hand-tooltip": "Показывать бафф карт в руке противника",
 				"secrets-helper-title": "Отслеживание секретов",
 				"enable-secret-helper-label": "Включить отслеживание секретов",
 				"enable-secret-helper-tooltip": "Всякий раз, когда противник разыгрывает секрет будет появляться подсказка со всеми возможными секретами",
 				"counters": {
 					"title": "Счётчики",
 					"galakrond-label": "Счётчик взываний к Галакронду",
-					"galakrond-tooltip": "",
+					"galakrond-tooltip": "Показывает сколько раз ваш противник взывал к Галакронду (появляется только когда он разыгрывает соответсвующую карту)",
 					"pogo-label": "Счётчик прыг-скокеров",
-					"pogo-tooltip": "",
+					"pogo-tooltip": "Показывает сколько Прыг-скокеров разыграл ваш противник",
 					"jade-label": "Счётчик нефритовых големов",
 					"jade-tooltip": "",
 					"cthun-label": "Характеристики К'Туна",
-					"cthun-tooltip": "",
+					"cthun-tooltip": "Показывает текущие харатеристики К'Туна противника",
 					"fatigue-label": "Счётчик усталости",
 					"fatigue-tooltip": "",
 					"abyssal-curse-label": "Счётчик проклятий глубин",
@@ -1902,7 +1905,7 @@
 				},
 				"size-title": "Размер и непрозрачность",
 				"opacity-title": "Непрозрачность",
-				"hand-markers-title": ""
+				"hand-markers-title": "Метки на картах в руке"
 			},
 			"your-deck": {
 				"ignore-decklist-label": "",
@@ -2031,9 +2034,9 @@
 			},
 			"overlay": {
 				"overlay-title": "",
-				"show-banned-tribes-label": "",
+				"show-banned-tribes-label": "Показывать какие типы существ непредставлены",
 				"show-banned-tribes-tooltip": "",
-				"show-available-tribes-label": "",
+				"show-available-tribes-label": "Вместо этого показывать представленные типы существ",
 				"show-available-tribes-tooltip": "",
 				"banned-tribes-single-row-label": "",
 				"banned-tribes-single-row-tooltip": "",
@@ -2049,17 +2052,17 @@
 				"battle-simulation-example-label": "",
 				"battle-simulation-example-tooltip": "Добавить кнопку для просмотра примера симуляции приводящей к определенному результату.",
 				"widget-size-label": "Размер виджета",
-				"banned-tribes-title": "Не представлены",
-				"banned-tribes-show-in-column-label": "",
-				"banned-tribes-show-in-column-tooltip": "",
-				"banned-tribes-icon-size-label": "",
+				"banned-tribes-title": "Не представленые типы существ",
+				"banned-tribes-show-in-column-label": "Расположить в столбик",
+				"banned-tribes-show-in-column-tooltip": "Расположить иконки непредставленных типов существ в столбик, а не в ряд",
+				"banned-tribes-icon-size-label": "Размер иконок",
 				"minions-list-title": "Список существ",
 				"minions-list-show-on-mouse-over-label": "",
 				"minions-list-show-on-mouse-over-tooltip": "",
 				"minions-list-show-on-mouse-over-confirmation": "",
 				"minions-list-show-tribes-highlight-label": "Выделение типов существ",
 				"minions-list-show-tribes-highlight-tooltip": "Добавить кнопки для выделения определенных типов существ в таверне Боба",
-				"minions-list-show-golden-cards-label": "",
+				"minions-list-show-golden-cards-label": "Показывать также и золотые версии карт",
 				"minions-list-show-golden-cards-tooltip": "",
 				"opponent-board-title": "Стол противника",
 				"opponent-board-show-top-label": "",
@@ -2107,13 +2110,13 @@
 			},
 			"general": {
 				"player-team-widget-label": "Виджет отряда игрока",
-				"player-team-widget-tooltip": "",
+				"player-team-widget-tooltip": "Показывать виджет с вашими наёмниками, их способностями и снаряжением во время боя",
 				"opponent-team-widget-label": "Виджет отряда противника",
-				"opponent-team-widget-tooltip": "",
-				"map-team-widget-label": "",
-				"map-team-widget-tooltip": "",
+				"opponent-team-widget-tooltip": "Показывать виджет со всеми известными наёмниками противника, их способностями и снаряжением во время боя",
+				"map-team-widget-label": "Виджет отряда игрока: карта поручения",
+				"map-team-widget-tooltip": "Показывать виджет с вашими наёмниками, их способностями и снаряжением во время просмотра карты поручения. Полезно при выборе пути или выборе сокровища",
 				"village-team-widget-label": "",
-				"village-team-widget-tooltip": "",
+				"village-team-widget-tooltip": "Показывать виджет с вашими наёмниками, их способностями и снаряжением во время просмотра коллекции и в окне выбора отряда",
 				"action-queue-pve-label": "Порядок срабатывания способностей (PvE)",
 				"action-queue-pve-tooltip": "",
 				"action-queue-pvp-label": "Порядок срабатывания способностей (PvP)",
@@ -2150,7 +2153,7 @@
 		"settings-side-text": "Настройки",
 		"show-hero-cards-help": "",
 		"show-hero-cards-help-tooltip": "",
-		"show-related-cards-help": "",
+		"show-related-cards-help": "Показывать связанные карты",
 		"show-related-cards-help-tooltip": "",
 		"show-minions-list": "Показывать список существ",
 		"show-minions-list-tooltip": "",
