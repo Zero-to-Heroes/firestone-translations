@@ -376,7 +376,7 @@
 						"error-target": "Неверная цель",
 						"error-taunt": "Провокация",
 						"error-generic": "Общая",
-						"happy-holidays": "",
+						"happy-holidays": "Счастливых Праздников",
 						"winterveil-greetings": "Зимний Покров - приветствие",
 						"lunar-new-year": "Лунный фестиваль",
 						"happy-new-year": "С Новым годом",
@@ -404,7 +404,7 @@
 				"pack-stat-tooltip": "Всего комплектов \"{{packName}}\" получено: {{totalPacks}}",
 				"main-sets-group-name": "Основные ({{totalPacks}})",
 				"non-buyable-group-name": "Специальные ({{totalPacks}})",
-				"other-group-name": ""
+				"other-group-name": "Другое ({{totalPacks}})"
 			},
 			"set-stats": {
 				"title": "Статистика набора",
@@ -479,8 +479,8 @@
 				"title": "Reddit",
 				"post-title-placeholder": "Заголовок вашего поста",
 				"subreddit-placeholder": "сабреддит",
-				"subreddit-tooltip": "",
-				"flair-tooltip": "",
+				"subreddit-tooltip": "Субреддит для публикации. Наиболее часто используемые субреддиты - /r/hearthstone и /r/BobsTavern (с ведущим /r/ или без него)",
+				"flair-tooltip": "Пометить ваше сообщение меткой. Некоторые сабреддиты отвергают сообщения, если флейр не назначен",
 				"logged-out-message": "Пожалуйста, используйте кнопку слева для того, чтобы войти, перед тем, как писать сообщение"
 			}
 		},
@@ -551,17 +551,17 @@
 				"matches-going-first": "",
 				"win-coin-percent-header": "% побед с монеткой",
 				"win-coin-total-header": "Побед с монеткой",
-				"matches-going-second": "",
+				"matches-going-second": "Сыграно {{totalMatches}} матчей, идущих вторым",
 				"total-header": "Всего",
 				"show-as-percent-button-label": "Показать в %",
 				"reset-button-label": "Сбросить статистику",
 				"reset-button-tooltip": "Сбросить статистику побед/поражений данной колодой. Сыгранные матчи продолжат отображаться во вкладке Повторы.",
-				"reset-confirmation": "",
+				"reset-confirmation": "Ваша статистика побед и поражений была сброшена.",
 				"reset-are-you-sure": "Вы уверены?",
 				"delete-button-label": "Удалить колоду",
 				"delete-button-step-2": "Удалить",
 				"delete-confirmation": "Это безвозвратно удалит колоду из вашей статистики.",
-				"delete-tooltip": ""
+				"delete-tooltip": "Удалить вашу колоду. Это действие не может быть отменено. Если вы просто хотите скрыть его, подумайте о его архивации."
 			},
 			"deck-details": {
 				"copy-deck-code-button": "Копировать код колоды"
@@ -584,7 +584,7 @@
 			},
 			"decks": {
 				"empty-state-title": "Здесь пока ничего нет",
-				"empty-state-subtitle": "",
+				"empty-state-subtitle": "Играйте в рейтинг, чтобы начать, или проверьте фильтры выше :)",
 				"drag-to-merge-default": "",
 				"drag-to-merge": ""
 			},
@@ -1274,7 +1274,7 @@
 				"all": "",
 				"normal": "",
 				"heroic": "(героич.)",
-				"legendary": ""
+				"legendary": "Легендарные"
 			},
 			"role": {
 				"all": "Все роли",
@@ -1308,10 +1308,10 @@
 			"global-winrate": "Глобальный винрейт",
 			"your-winrate": "Твой винрейт",
 			"abilities": "Способности",
-			"global-usage": "",
-			"global-usage-tooltip": "",
-			"your-usage": "",
-			"your-usage-tooltip": "",
+			"global-usage": "Общее использование",
+			"global-usage-tooltip": "Сколько раз каждая способность используется сообществом за раз",
+			"your-usage": "Ваше применение",
+			"your-usage-tooltip": "Сколько раз вы используете каждую способность за раз",
 			"number-of-games-tooltip": "Записано {{totalMatches}} матчей (популярность {{popularity}})",
 			"level-header": "Ур.",
 			"role-header": "Роль",
@@ -1361,7 +1361,7 @@
 			"tasks-button": "Задачи",
 			"task-title": "Задача {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Прогресс:",
-			"task-progress-tooltip": "",
+			"task-progress-tooltip": "Прогресс квеста в начале",
 			"roles-chart-button": "Роли"
 		}
 	},
@@ -1386,9 +1386,9 @@
 		},
 		"import": {
 			"import-deckstring-tooltip": "Добавить колоду из буфера обмена",
-			"confirmation-title": "",
-			"use-deck-text": "",
-			"use-deck-text-default": "",
+			"confirmation-title": "Переопределить список колод?",
+			"use-deck-text": "Использовать {{value}}?",
+			"use-deck-text-default": "Использовать колоду из буфера обмена?",
 			"button-text": "",
 			"cancel-text": "Отмена",
 			"invalid-deck-code-title": "Неверный код колоды",
@@ -1524,14 +1524,14 @@
 			"finishes-title": "Занятые места",
 			"avg-position-label": "Место в среднем:",
 			"avg-position-tooltip": "",
-			"avg-position-your-tooltip": "",
-			"avg-position-global-tooltip": "",
+			"avg-position-your-tooltip": "Ваша ценность",
+			"avg-position-global-tooltip": "Глобальная ценность",
 			"matches-played-label": "Сыграно матчей:",
 			"matches-played-tooltip": "Всего матчей, сыгранных этим героем",
 			"turn-winrate": "Винрейт по ходам",
-			"turn-winrate-tooltip": "",
-			"winning-tribes-title": "",
-			"winning-tribes-title-tooltip": ""
+			"turn-winrate-tooltip": "Коэффициент победы в битве за ход (он дает вам представление о том, когда этот герой является самым сильным)",
+			"winning-tribes-title": "Лучшие победившие племена",
+			"winning-tribes-title-tooltip": "Процент каждого типа существ, присутствующего в среднем в топ-4 боевых отрядах"
 		},
 		"turn-counter": {},
 		"hero-selection": {
@@ -1554,7 +1554,7 @@
 				"next-opponent-title": "Ход {{turn}} - Следующий противник",
 				"empty-state-title": "Здесь пока ничего нет",
 				"empty-state-subtitle": "Выбери героя и подожди своих противников!",
-				"score-board-title": "",
+				"score-board-title": "Таблица результатов",
 				"score-board-tooltip": "",
 				"tavern-upgrade-title": "Улучшения таверны",
 				"tavern-last-upgrade-title": "Последние улучшения",
@@ -2084,9 +2084,9 @@
 				"last-opponent-icon-tooltip": "",
 				"last-opponent-board-label": "",
 				"last-opponent-board-tooltip": "",
-				"battle-simulation-label": "",
-				"battle-simulation-tooltip": "",
-				"battle-simulation-example-label": "",
+				"battle-simulation-label": "Наложение симулятора битвы",
+				"battle-simulation-tooltip": "Отображение текущих результатов моделирования боя в виде наложения поверх игры",
+				"battle-simulation-example-label": "Пример моделирования в наложении",
 				"battle-simulation-example-tooltip": "Добавить кнопку для просмотра примера симуляции приводящей к определенному результату.",
 				"widget-size-label": "Размер виджета",
 				"banned-tribes-title": "Не представленые типы существ",
@@ -2094,7 +2094,7 @@
 				"banned-tribes-show-in-column-tooltip": "Расположить иконки непредставленных типов существ в столбик, а не в ряд",
 				"banned-tribes-icon-size-label": "Размер иконок",
 				"minions-list-title": "Список существ",
-				"minions-list-show-on-mouse-over-label": "",
+				"minions-list-show-on-mouse-over-label": "Показать список существ при наведении курсора мыши",
 				"minions-list-show-on-mouse-over-tooltip": "",
 				"minions-list-show-on-mouse-over-confirmation": "",
 				"minions-list-show-tribes-highlight-label": "Выделение типов существ",
@@ -2136,7 +2136,7 @@
 				"firestone-achievements-tooltip": "Включить отслеживание эксклюзивных Firestone достижений",
 				"show-notifications-text": "Показывать уведомления",
 				"show-notifications-tooltip": "Отображение уведомления при разблокировке достижения. Отключение этой опции также отключит внутриигровое отслеживание для достижений из Hearthstone",
-				"streamer-mode-text": "",
+				"streamer-mode-text": "Режим \"Скрытня\"",
 				"streamer-mode-tooltip": "",
 				"streamer-mode-confirmation": ""
 			}
@@ -2199,9 +2199,9 @@
 		"show-minions-list-golden-cards-tooltip": "",
 		"show-battle-simulator": "",
 		"battle-simulator-size": "",
-		"last-board-size": "",
+		"last-board-size": "Последний размер доски",
 		"last-board-size-tooltip": "",
-		"hide-battle-odds-in-combat": "",
-		"hide-battle-odds-in-combat-tooltip": ""
+		"hide-battle-odds-in-combat": "Скрыть шансы в бою",
+		"hide-battle-odds-in-combat-tooltip": "Показывать шансы битвы только в таверне"
 	}
 }
