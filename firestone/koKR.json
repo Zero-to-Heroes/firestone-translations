@@ -353,6 +353,7 @@
 						"threaten": "위협",
 						"thanks": "감사",
 						"sorry": "사과",
+						"wow": "",
 						"concede": "항복",
 						"start": "시작 시",
 						"timer": "시간 제한",
@@ -375,13 +376,15 @@
 						"error-target": "대상 지정 오류",
 						"error-taunt": "도발 오류",
 						"error-generic": "기본적인 오류",
-						"lunar-new-year": "설날",
+						"happy-holidays": "",
 						"winterveil-greetings": "겨울맞이 축제 인사",
-						"happy-new-year-20": "새해 인사 20",
+						"lunar-new-year": "설날",
+						"happy-new-year": "",
 						"fire-festival": "불의 축제",
 						"pirate-day": "해적의 날",
 						"hallows-end": "할로윈",
-						"noblegarden": "귀족의 정원 축제"
+						"noblegarden": "귀족의 정원 축제",
+						"picked": ""
 					}
 				}
 			},
@@ -539,19 +542,23 @@
 				}
 			},
 			"matchup-info": {
+				"opponents-popularity-header": "",
 				"total-matches-header": "",
 				"win-percent-header": "",
 				"win-total-header": "",
 				"win-play-percent-header": "",
 				"win-play-total-header": "",
+				"matches-going-first": "",
 				"win-coin-percent-header": "",
 				"win-coin-total-header": "",
+				"matches-going-second": "",
 				"total-header": "총계",
 				"show-as-percent-button-label": "%로 표시",
 				"reset-button-label": "통계 초기화",
 				"reset-button-tooltip": "현재 덱의 승률 통계를 초기화합니다. 과거의 대전은 여전히 다시 보기 탭에 남아있을 것입니다.",
 				"reset-confirmation": "승률 통계가 초기화되었습니다.",
 				"reset-are-you-sure": "확실하신가요?",
+				"delete-button-label": "",
 				"delete-button-step-2": "삭제",
 				"delete-confirmation": "해당 덱은 모든 통계에서 제외되며 되돌릴 수 없습니다.",
 				"delete-tooltip": "덱 삭제. 되돌릴 수 없습니다. 숨기고 싶은 것 뿐이라면 보관함에 넣는 것을 고려해보세요."
@@ -696,6 +703,7 @@
 						"average-position": "",
 						"top-1": "",
 						"top-4": "",
+						"community-value-tooltip": "",
 						"net-mmr": "",
 						"net-mmr-tooltip": "",
 						"avg-mmr-gain": "",
@@ -766,7 +774,9 @@
 						"battle-luck": "전투 운",
 						"battle-luck-explain-link": "이게 무엇인가요?",
 						"battle-luck-explain-link-tooltip": "이번 게임 동안 전투에서 얼마나 운이 따라줬는지 표시합니다. 더 자세히 알려면 클릭하세요.",
-						"negative-battle-luck": "음수 전투 운"
+						"negative-battle-luck": "음수 전투 운",
+						"best-stat-hero": "",
+						"watch-replay-tooltip": ""
 					},
 					"record-broken-tooltip": "개인 기록을 갱신하셨어요!"
 				}
@@ -1118,6 +1128,10 @@
 			"player": "",
 			"opponent": ""
 		},
+		"lady-darkvein": {
+			"player": "",
+			"opponent": ""
+		},
 		"grey-sage-parrot": {
 			"player": "",
 			"opponent": ""
@@ -1131,6 +1145,10 @@
 			"opponent": ""
 		},
 		"elwynn-boar": {
+			"player": "",
+			"opponent": ""
+		},
+		"volatile-skeleton": {
 			"player": "",
 			"opponent": ""
 		},
@@ -1311,6 +1329,7 @@
 			"equipments-header": "",
 			"max-level": "",
 			"xp-tooltip": "",
+			"bounties-to-farm": "",
 			"current-task-tooltip": "",
 			"maxed": "",
 			"coins-to-farm-tooltip": "",
@@ -1319,6 +1338,9 @@
 			"next-task-tooltip-title": ""
 		},
 		"teams": {
+			"team": "",
+			"global-winrate": "",
+			"total-matches": "",
 			"games": "",
 			"winrate": "",
 			"last-used": "",
@@ -1789,6 +1811,16 @@
 				"text-2": "",
 				"link": "",
 				"text-3": ""
+			},
+			"data": {
+				"remote-title": "",
+				"remote-intro-text": "",
+				"packs": "",
+				"packs-tooltip": "",
+				"achievements": "",
+				"achievements-tooltip": "",
+				"refresh-button-label": "",
+				"refresh-progress-button-label": ""
 			}
 		},
 		"decktracker": {
@@ -1900,6 +1932,8 @@
 					"libram-tooltip": "",
 					"elwynn-boar-label": "",
 					"elwynn-boar-tooltip": "",
+					"volatile-skeleton-label": "",
+					"volatile-skeleton-tooltip": "",
 					"hero-power-damage-label": "",
 					"hero-power-damage-tooltip": ""
 				},
@@ -1926,11 +1960,14 @@
 					"watch-post-tooltip": "",
 					"libram-tooltip": "",
 					"elwynn-boar-tooltip": "",
+					"volatile-skeleton-tooltip": "",
 					"hero-power-damage-tooltip": "",
 					"bolner-label": "",
 					"bolner-tooltip": "",
 					"brilliant-macaw-label": "",
 					"brilliant-macaw-tooltip": "",
+					"lady-darkvein-label": "",
+					"lady-darkvein-tooltip": "",
 					"grey-sage-parrot-label": "",
 					"grey-sage-parrot-tooltip": "",
 					"multicaster-label": "",

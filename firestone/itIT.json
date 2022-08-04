@@ -353,6 +353,7 @@
 						"threaten": "minaccia",
 						"thanks": "Grazie",
 						"sorry": "Scusa",
+						"wow": "",
 						"concede": "Resa",
 						"start": "Avvia",
 						"timer": "Timer",
@@ -375,13 +376,15 @@
 						"error-target": "Errore Target",
 						"error-taunt": "Errore Provocazione",
 						"error-generic": "Errore Generico",
-						"lunar-new-year": "Anno Nuovo Lunare",
+						"happy-holidays": "",
 						"winterveil-greetings": "Saluti del Grande Inverno",
-						"happy-new-year-20": "Felice Anno Nuovo 20",
+						"lunar-new-year": "Anno Nuovo Lunare",
+						"happy-new-year": "",
 						"fire-festival": "Festival del Fuoco",
 						"pirate-day": "Giorno del Pirata",
 						"hallows-end": "Veglia delle Ombre",
-						"noblegarden": "Nobiluova"
+						"noblegarden": "Nobiluova",
+						"picked": ""
 					}
 				}
 			},
@@ -539,19 +542,23 @@
 				}
 			},
 			"matchup-info": {
+				"opponents-popularity-header": "",
 				"total-matches-header": "Partite totali",
 				"win-percent-header": "Vittoria%",
 				"win-total-header": "Vittorie",
 				"win-play-percent-header": "Vittoria% Giocata",
 				"win-play-total-header": "Vittorie Giocata",
+				"matches-going-first": "",
 				"win-coin-percent-header": "Vittoria% Moneta",
 				"win-coin-total-header": "Vittorie Moneta",
+				"matches-going-second": "",
 				"total-header": "Totale",
 				"show-as-percent-button-label": "Mostra come %",
 				"reset-button-label": "Ripristina le statistiche",
 				"reset-button-tooltip": "Ripristina le statistiche vittoria/perdita del mazzo corrente. Le corrispondenze precedenti compariranno ancora nella scheda Riproduzioni.",
 				"reset-confirmation": "Le tue statistiche di vittoria/perdita sono state ripristinate.",
 				"reset-are-you-sure": "Sei sicuro?",
+				"delete-button-label": "",
 				"delete-button-step-2": "Elimina",
 				"delete-confirmation": "Questo eliminerà permanentemente il mazzo da tutte le tue statistiche e non è annullabile.",
 				"delete-tooltip": "Elimina il tuo mazzo. Questo non è annullabile. Se desideri semplicemente nasconderlo, considera invece di archiviarlo."
@@ -696,6 +703,7 @@
 						"average-position": "Posizione media",
 						"top-1": "Migliore",
 						"top-4": "Migliori 4",
+						"community-value-tooltip": "",
 						"net-mmr": "MMR netto medio",
 						"net-mmr-tooltip": "Guadagno/perdita di MMR media per partita",
 						"avg-mmr-gain": "Guadagno medio di MMR",
@@ -766,7 +774,9 @@
 						"battle-luck": "Fortuna di battaglia",
 						"battle-luck-explain-link": "Cos'è questo?",
 						"battle-luck-explain-link-tooltip": "Un indicatore che ti indica quanto sei stato fortunato nelle tue battaglie durante l'ondata. Clicca per ulteriori informazioni",
-						"negative-battle-luck": "Sfortuna di battaglia"
+						"negative-battle-luck": "Sfortuna di battaglia",
+						"best-stat-hero": "",
+						"watch-replay-tooltip": ""
 					},
 					"record-broken-tooltip": "Hai infranto il tuo record personale!"
 				}
@@ -1118,6 +1128,10 @@
 			"player": "{{value}} è stata l'ultima carta di grido di battaglia che hai giocato",
 			"opponent": "{{value}} è stata l'ultima carta di grido di battaglia giocata dal tuo avversario"
 		},
+		"lady-darkvein": {
+			"player": "",
+			"opponent": ""
+		},
 		"grey-sage-parrot": {
 			"player": "",
 			"opponent": ""
@@ -1133,6 +1147,10 @@
 		"elwynn-boar": {
 			"player": "{{value}} cinghiali sono morti per te",
 			"opponent": "{{value}} cinghiali sono morti per il tuo avversario"
+		},
+		"volatile-skeleton": {
+			"player": "",
+			"opponent": ""
 		},
 		"fatigue": {
 			"player": "",
@@ -1311,6 +1329,7 @@
 			"equipments-header": "Equipaggiamenti",
 			"max-level": "Livello massimo!",
 			"xp-tooltip": "{{value}} XP",
+			"bounties-to-farm": "",
 			"current-task-tooltip": "L'attività è potenziabile solo mentre il mercenario è al falò, mentre l'app è in esecuzione.",
 			"maxed": "Al massimo!",
 			"coins-to-farm-tooltip": "Aspettando che tu ottenga {{value}} monete dalle attività non completate",
@@ -1319,6 +1338,9 @@
 			"next-task-tooltip-title": "Attività Successiva {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
+			"team": "",
+			"global-winrate": "",
+			"total-matches": "",
 			"games": "{{value}} partite",
 			"winrate": "Tasso di vittoria del {{value}}%",
 			"last-used": "Ultimo utilizzo: {{value}}",
@@ -1789,6 +1811,16 @@
 				"text-2": "Se desideri aiutare a tradurre l'app, sei pregato di dare un'occhiata alle istruzioni {{link}}.",
 				"link": "qui",
 				"text-3": "Sei pregato di riavviare l'app (con il pulsante nella scheda Generale sulla sinistra), per assicurarti che la nuova lingua sia presa in considerazione."
+			},
+			"data": {
+				"remote-title": "",
+				"remote-intro-text": "",
+				"packs": "",
+				"packs-tooltip": "",
+				"achievements": "",
+				"achievements-tooltip": "",
+				"refresh-button-label": "",
+				"refresh-progress-button-label": ""
 			}
 		},
 		"decktracker": {
@@ -1900,6 +1932,8 @@
 					"libram-tooltip": "Mostra il numero totale di librami giocati in questa partita. Appare solo se sono trovate carte rilevanti nel mazzo o in mano",
 					"elwynn-boar-label": "Morti del Cinghiale di Elwynn",
 					"elwynn-boar-tooltip": "Mostra il numero di volte in cui un Cinghiale di Elwyinn è morto per il tuo avversario",
+					"volatile-skeleton-label": "",
+					"volatile-skeleton-tooltip": "",
 					"hero-power-damage-label": "Danno del Potere dell'Eroe",
 					"hero-power-damage-tooltip": "Mostra il danno totale inflitto dal potere dell'eroe del tuo avversario in questa partita. Appare solo se la classe del rivale è Mago e ha inflitto almeno uno di danno"
 				},
@@ -1926,11 +1960,14 @@
 					"watch-post-tooltip": "Mostra il numero totale di posti di guardia che hai giocato in questa partita. Appare solo se le carte rilevanti sono trovate nel mazzo o in mano",
 					"libram-tooltip": "Mostra il numero totale di librami che hai giocato in questa partita. Appare solo se sono trovate le carte rilevanti nel mazzo o nella mano",
 					"elwynn-boar-tooltip": "Mostra il numero di volte in cui un Cinghiale di Elwynn è morto per te",
+					"volatile-skeleton-tooltip": "",
 					"hero-power-damage-tooltip": "Mostra il danno totale inflitto dal potere del tuo eroe in questa partita. Appare solo se l'Occhio di Fuoco di Mordresh o Jan'Alai il Dragofalco sono nel tuo mazzo o nella tua mano",
 					"bolner-label": "Bolner Hammerbeak",
 					"bolner-tooltip": "Quando hai Bolner Hammerbeak in mano, mostra la prima carta di Grido di Battaglia giocata a questo turno, se presente",
 					"brilliant-macaw-label": "Ara Brillante",
 					"brilliant-macaw-tooltip": "Quando hai un Ara Brillante in mano, mostra l'ultima carta Grido della Battaglia che hai giocato, se presente",
+					"lady-darkvein-label": "",
+					"lady-darkvein-tooltip": "",
 					"grey-sage-parrot-label": "",
 					"grey-sage-parrot-tooltip": "",
 					"multicaster-label": "Multincantesimo",

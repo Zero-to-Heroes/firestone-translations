@@ -353,6 +353,7 @@
 						"threaten": "威胁",
 						"thanks": "感谢",
 						"sorry": "抱歉",
+						"wow": "惊叹",
 						"concede": "认输",
 						"start": "开始",
 						"timer": "烧绳",
@@ -375,13 +376,15 @@
 						"error-target": "错误：目标不合法",
 						"error-taunt": "错误：存在嘲讽单位",
 						"error-generic": "错误：通用",
-						"lunar-new-year": "农历新年",
+						"happy-holidays": "节日快乐",
 						"winterveil-greetings": "冬幕节问候",
-						"happy-new-year-20": "新年快乐 20",
+						"lunar-new-year": "农历新年",
+						"happy-new-year": "新年快乐",
 						"fire-festival": "火焰节",
 						"pirate-day": "海盗节",
 						"hallows-end": "万圣节",
-						"noblegarden": "复活节"
+						"noblegarden": "复活节",
+						"picked": "被选中"
 					}
 				}
 			},
@@ -539,19 +542,23 @@
 				}
 			},
 			"matchup-info": {
+				"opponents-popularity-header": "对手职业明细",
 				"total-matches-header": "对战场数",
 				"win-percent-header": "胜率",
 				"win-total-header": "胜-负",
 				"win-play-percent-header": "先手胜率",
 				"win-play-total-header": "先手",
+				"matches-going-first": "先手对战 {{totalMatches}} 局",
 				"win-coin-percent-header": "后手胜率",
 				"win-coin-total-header": "后手",
+				"matches-going-second": "后手对战 {{totalMatches}} 局",
 				"total-header": "总计",
 				"show-as-percent-button-label": "按%显示",
 				"reset-button-label": "重置统计数据",
 				"reset-button-tooltip": "重置当前套牌胜负数据。之前的对战仍将出现在回放选项卡中。",
 				"reset-confirmation": "您的胜负数据已被重置。",
 				"reset-are-you-sure": "您确定吗？",
+				"delete-button-label": "删除套牌",
 				"delete-button-step-2": "删除",
 				"delete-confirmation": "这将从您的数据中永久删除这副套牌的记录，且无法撤销。",
 				"delete-tooltip": "删除您的套牌。这将无法撤消。如果您只想隐藏它，请考虑将其存档。"
@@ -578,8 +585,8 @@
 			"decks": {
 				"empty-state-title": "暂无记录",
 				"empty-state-subtitle": "开始传统对战天梯以开启记录！或者先检查上面的过滤器: )",
-				"drag-to-merge-default": "",
-				"drag-to-merge": ""
+				"drag-to-merge-default": "拖动到另一个套牌以合并为新版本",
+				"drag-to-merge": "拖放它以创建一个新版本的 {{deckName}}"
 			},
 			"meta-decks": {},
 			"ladder-stats": {
@@ -696,6 +703,7 @@
 						"average-position": "平均位次",
 						"top-1": "吃鸡",
 						"top-4": "前4",
+						"community-value-tooltip": "社区平均值",
 						"net-mmr": "平均等级分数变化",
 						"net-mmr-tooltip": "每场对战平均等级分数变化",
 						"avg-mmr-gain": "平均上分",
@@ -766,7 +774,9 @@
 						"battle-luck": "天选战斗指数",
 						"battle-luck-explain-link": "这是什么?",
 						"battle-luck-explain-link-tooltip": "表征您在这场对战中的战斗运气。点击查看更多信息",
-						"negative-battle-luck": "天谴战斗指数"
+						"negative-battle-luck": "天谴战斗指数",
+						"best-stat-hero": "由 {{heroName}} 解锁的最佳纪录",
+						"watch-replay-tooltip": "观看获得此纪录的回放"
 					},
 					"record-broken-tooltip": "您打破了您的个人记录！"
 				}
@@ -1118,6 +1128,10 @@
 			"player": "您使用的上一张战吼牌是 {{value}}",
 			"opponent": "您的对手使用的上一张战吼牌是 {{value}}"
 		},
+		"lady-darkvein": {
+			"player": "",
+			"opponent": ""
+		},
 		"grey-sage-parrot": {
 			"player": "您使用的上一张法力值大于或等于 {{cost}} 的法术是 {{value}} ",
 			"opponent": "您的对手使用的上一张法力值大于或等于 {{cost}} 的法术是 {{value}} "
@@ -1133,6 +1147,10 @@
 		"elwynn-boar": {
 			"player": "您已有 {{value}} 只艾尔文野猪死亡",
 			"opponent": "对手已有 {{value}} 只艾尔文野猪死亡"
+		},
+		"volatile-skeleton": {
+			"player": "",
+			"opponent": ""
 		},
 		"fatigue": {
 			"player": "您上次受到的疲劳伤害是 {{value}}",
@@ -1311,6 +1329,7 @@
 			"equipments-header": "装备",
 			"max-level": "满级！",
 			"xp-tooltip": "经验值 {{value}}",
+			"bounties-to-farm": "刷硬币处",
 			"current-task-tooltip": "任务只有当访客在营火中时才能更新",
 			"maxed": "已完成！",
 			"coins-to-farm-tooltip": "您可从未完成的任务中预期获得 {{value}} 枚硬币",
@@ -1319,6 +1338,9 @@
 			"next-task-tooltip-title": "下一个任务 {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
+			"team": "队伍",
+			"global-winrate": "全球胜率",
+			"total-matches": "对战场数",
 			"games": "{{value}} 场对战",
 			"winrate": "{{value}}%胜率",
 			"last-used": "最后使用于 {{value}}",
@@ -1695,7 +1717,7 @@
 				"bug-report": "提交错误",
 				"third-party": "第三方",
 				"broadcast": "Twitch",
-				"data": ""
+				"data": "数据"
 			},
 			"third-party": {
 				"intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
@@ -1789,6 +1811,16 @@
 				"text-2": "如果您想要帮助本地化翻译应用，请查看说明 {{link}}。",
 				"link": "此处",
 				"text-3": "请通过左边的通用选项卡中的按钮重启应用，以确保应用选定的本地化语言。"
+			},
+			"data": {
+				"remote-title": "远程数据",
+				"remote-intro-text": "Firestone在线存储您的大部分数据，使它更容易在不同的计算机上使用。其中一些数据是本地缓存的，以减少应用的加载时间并降低带宽使用。您可以点击下面的按钮强制刷新该数据，通常是在您换机之后。",
+				"packs": "卡牌包",
+				"packs-tooltip": "",
+				"achievements": "",
+				"achievements-tooltip": "",
+				"refresh-button-label": "",
+				"refresh-progress-button-label": ""
 			}
 		},
 		"decktracker": {
@@ -1900,6 +1932,8 @@
 					"libram-tooltip": "显示对手使用的圣契牌数量。仅在对手牌库或手牌中有相关卡牌时显示",
 					"elwynn-boar-label": "艾尔文野猪死亡数",
 					"elwynn-boar-tooltip": "显示对手已死亡的艾尔文野猪数量",
+					"volatile-skeleton-label": "",
+					"volatile-skeleton-tooltip": "",
 					"hero-power-damage-label": "英雄技能伤害",
 					"hero-power-damage-tooltip": "显示对手的英雄技能在本局中造成的总伤害。 它仅在对方是法师且使用英雄技能造成至少1点伤害时显示"
 				},
@@ -1926,11 +1960,14 @@
 					"watch-post-tooltip": "显示您使用的哨所数量。仅在您的牌库或手牌中有相关卡牌时显示",
 					"libram-tooltip": "显示您使用的圣契牌数量。仅在对手牌库或手牌中有相关卡牌时显示。",
 					"elwynn-boar-tooltip": "显示您已死亡的艾尔文野猪数量",
+					"volatile-skeleton-tooltip": "",
 					"hero-power-damage-tooltip": "显示本局中您的英雄技能造成的总伤害。 仅当您的牌库或手牌中有“火眼莫德雷斯”或“加亚莱，龙鹰之神”时显示",
 					"bolner-label": "伯尔纳·锤喙",
 					"bolner-tooltip": "当您手牌中有“伯尔纳·锤喙”时，显示您在本回合中打出的第一张战吼牌（如果有）",
 					"brilliant-macaw-label": "艳丽的金刚鹦鹉",
 					"brilliant-macaw-tooltip": "当您手牌中有“艳丽的金刚鹦鹉”时，显示您使用的上一张战吼牌（如果有）",
+					"lady-darkvein-label": "",
+					"lady-darkvein-tooltip": "",
 					"grey-sage-parrot-label": "灰贤鹦鹉",
 					"grey-sage-parrot-tooltip": "当您手牌中有“灰贤鹦鹉”时，显示您使用的上一张法力值消耗大于或等于（5）点的法术牌（如果有）",
 					"multicaster-label": "多系施法者",
