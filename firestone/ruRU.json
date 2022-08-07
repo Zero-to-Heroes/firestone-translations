@@ -1570,8 +1570,8 @@
 				"reset-button": "Сбросить",
 				"highlight-tribe": "Нажмите, чтобы выделить всех существ типа {{value}} в таверне",
 				"unhighlight-tribe": "Нажмите, чтобы не выделять существ типа {{value}} в таверне",
-				"highlight-minion": "Закрепите существо, чтобы выделить его в таверне",
-				"unhighlight-minion": "Открепите существо, чтобы не выделять его в таверне"
+				"highlight-minion": "Нажмите, чтобы выделить это существо в таверне Боба",
+				"unhighlight-minion": "Нажмите, чтобы снять выделение с этого существа в таверне Боба"
 			}
 		},
 		"post-match-stats": {
@@ -1650,14 +1650,14 @@
 			"unknown": ""
 		},
 		"buttons": {
-			"reset-tooltip": "",
-			"close-tooltip": ""
+			"reset-tooltip": "Начать новую сессию и сбросить всю статистику",
+			"close-tooltip": "Закрыть и отключить виджет. Если вы хотите включить его снова, сделайте это в настройках"
 		},
 		"summary": {
 			"total-games": "Игр: {{value}}",
 			"total-games-tooltip": "",
 			"total-games-tooltip-all-time": "С тех пор как вы начали использовать приложение (используйте кнопку Сброса вверху, чтобы начать новую сессию)",
-			"mmr-tooltip": "Твой текущий MMR",
+			"mmr-tooltip": "Ваш текущий MMR",
 			"delta-mmr-tooltip": "Получено/потеряно MMR с момента начала сессии"
 		},
 		"groups": {
@@ -1778,7 +1778,7 @@
 				"launch-on-game-start-label": "Запускать Firestone при старте игры",
 				"launch-on-game-start-tooltip": "Если выключено, то вам нужно будет каждый раз вручную запускать Firestone",
 				"integrated-mode-label": "Интегрированный режим",
-				"integrated-mode-tooltip": "Когда включено, главное окно становится оверлеем и встраивается в игровое окно. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением.",
+				"integrated-mode-tooltip": "Когда включено, главное окно становится оверлеем и встраивается в окно игры. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением.",
 				"session-recap-on-exit-label": "Обзор сессии игры при выходе",
 				"session-recap-on-exit-tooltip": "Показывает обзор последней сессии игры при выходе из Hearthstone",
 				"xp-recap-on-game-end-label": "Показывать полученный опыт в конце игры",
@@ -2009,9 +2009,9 @@
 				"show-related-cards-tooltip": "При наведении на карту, показывать карты с ней связанные.",
 				"card-size-in-collection-label": "Размер карт в коллекции",
 				"notifications-label": "Включить уведомления",
-				"selective-notifications-label": "",
-				"notifications-dust-recap-label": "Обзор пыли",
-				"notifications-non-golden-commons-label": "",
+				"selective-notifications-label": "Вы можете выбрать какие уведомления показывать",
+				"notifications-dust-recap-label": "Количество пыли с лишних карт",
+				"notifications-non-golden-commons-label": "Не золотые обычные карты",
 				"notifications-rewards-label": "Награды",
 				"notifications-rewards-tooltip": ""
 			},
@@ -2036,11 +2036,11 @@
 			"general": {
 				"companion-app-title": "",
 				"enable-app-label": "",
-				"integrated-mode-label": "",
-				"integrated-mode-tooltip": "",
+				"integrated-mode-label": "Интегрированный режим",
+				"integrated-mode-tooltip": "Когда включено, окно Полей сражений становится оверлеем и встраивается в окно игры. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением.",
 				"enable-battle-sim-label": "Включить симуляцию сражений",
 				"enable-battle-sim-tooltip": "",
-				"hide-simulation-label": "",
+				"hide-simulation-label": "Скрывать шансы на победу после завершения сражения",
 				"hide-simulation-tooltip": "",
 				"show-sim-only-in-tavern-label": "",
 				"show-sim-only-in-tavern-tooltip": "",
@@ -2062,22 +2062,22 @@
 				"show-overlay-button-tooltip": "",
 				"popup-post-match-stats-label": "",
 				"popup-post-match-stats-tooltip": "",
-				"simulator-config-title": "",
-				"simulator-number-of-sims-label": "",
+				"simulator-config-title": "Настройки симулятора",
+				"simulator-number-of-sims-label": "Количество симуляций",
 				"simulator-number-of-sims-tooltip": ""
 			},
 			"overlay": {
-				"overlay-title": "",
-				"show-banned-tribes-label": "Показывать какие типы существ непредставлены",
+				"overlay-title": "Настройки оверлея",
+				"show-banned-tribes-label": "Показывать какие типы существ не представлены",
 				"show-banned-tribes-tooltip": "",
 				"show-available-tribes-label": "Вместо этого показывать представленные типы существ",
-				"show-available-tribes-tooltip": "",
-				"banned-tribes-single-row-label": "",
+				"show-available-tribes-tooltip": "Показывать представленные типы существ вместо непредставленных",
+				"banned-tribes-single-row-label": "В одну строку",
 				"banned-tribes-single-row-tooltip": "",
 				"show-minions-list-label": "Показывать список существ",
 				"show-minions-list-tooltip": "Показывать список существ, сгруппированных по уровням таверн",
-				"turn-counter-label": "",
-				"last-opponent-icon-label": "",
+				"turn-counter-label": "Показывать счётчик ходов",
+				"last-opponent-icon-label": "Отмечать последнего противника",
 				"last-opponent-icon-tooltip": "",
 				"last-opponent-board-label": "",
 				"last-opponent-board-tooltip": "",
@@ -2103,9 +2103,9 @@
 				"opponent-board-show-top-tooltip": "",
 				"counters-title": "Счётчики",
 				"counter-soutshsea-label": "Силачка Южных Морей",
-				"counter-soutshsea-tooltip": "",
+				"counter-soutshsea-tooltip": "Показывать количество купленных в этот ход пиратов, когда Силачка Южных морей находится в вашей руке или в тавере Боба",
 				"counter-majordomo-label": "Мажордом Экзекутус",
-				"counter-majordomo-tooltip": ""
+				"counter-majordomo-tooltip": "Показывать количество разыгранных в этот ход элеменеталей, когда Мажордом Экзекутус находится в вашей руке или в тавере Боба"
 			},
 			"session-widget": {
 				"title": "Виджет сессии",
