@@ -87,7 +87,9 @@
 			"golden-stormwind": "金色暴风城下的集结",
 			"golden-alterac-valley": "金色奥特兰克的决裂",
 			"the-sunken-city": "探寻沉没之城",
-			"golden-the-sunken-city": "金色探寻沉没之城"
+			"golden-the-sunken-city": "金色探寻沉没之城",
+			"revendreth": "纳斯利亚堡的悬案",
+			"golden-revendreth": "纳斯利亚堡的悬案"
 		},
 		"ranks": {
 			"constructed": {
@@ -319,7 +321,7 @@
 				"click-to-view": "单击以查看 {{link}}",
 				"click-to-view-link": "展开",
 				"duplicate-cards": "{{numberOfCards}} 张重复的卡牌",
-				"dust-potential": "分解可得 {{dust}} 点奥术之尘"
+				"dust-potential": "+分解可得 {{dust}} 点奥术之尘"
 			},
 			"card-search": {
 				"search-box-placeholder": "搜索卡牌...",
@@ -847,11 +849,6 @@
 					"global-pickrate": "按全球选取率排序",
 					"global-offering": "按全球提供数排序",
 					"player-pickrate": "按您的选取率排序"
-				},
-				"locks": {
-					"all": "显示尚未解锁",
-					"unlocked": "仅已解锁",
-					"unlocked-tooltip": "仅显示已解锁英雄技能和签名宝藏的套牌"
 				}
 			},
 			"deck-stat": {
@@ -1129,8 +1126,8 @@
 			"opponent": "您的对手使用的上一张战吼牌是 {{value}}"
 		},
 		"lady-darkvein": {
-			"player": "",
-			"opponent": ""
+			"player": "您使用的上一张暗影法术牌是 {{value}}",
+			"opponent": "您的对手使用的上一张暗影法术牌是 {{value}}"
 		},
 		"grey-sage-parrot": {
 			"player": "您使用的上一张法力值大于或等于 {{cost}} 的法术是 {{value}} ",
@@ -1149,8 +1146,8 @@
 			"opponent": "对手已有 {{value}} 只艾尔文野猪死亡"
 		},
 		"volatile-skeleton": {
-			"player": "",
-			"opponent": ""
+			"player": "己方-不稳定的骷髅：{{value}}",
+			"opponent": "敌方-不稳定的骷髅：{{value}}"
 		},
 		"fatigue": {
 			"player": "您上次受到的疲劳伤害是 {{value}}",
@@ -1816,11 +1813,11 @@
 				"remote-title": "远程数据",
 				"remote-intro-text": "Firestone在线存储您的大部分数据，使它更容易在不同的计算机上使用。其中一些数据是本地缓存的，以减少应用的加载时间并降低带宽使用。您可以点击下面的按钮强制刷新该数据，通常是在您换机之后。",
 				"packs": "卡牌包",
-				"packs-tooltip": "",
-				"achievements": "",
-				"achievements-tooltip": "",
-				"refresh-button-label": "",
-				"refresh-progress-button-label": ""
+				"packs-tooltip": "刷新您的开包记录。每隔7天会自动刷新。",
+				"achievements": "成就",
+				"achievements-tooltip": "刷新您的成就记录。每隔7天会自动刷新。",
+				"refresh-button-label": "刷新",
+				"refresh-progress-button-label": "正在处理..."
 			}
 		},
 		"decktracker": {
@@ -1932,8 +1929,8 @@
 					"libram-tooltip": "显示对手使用的圣契牌数量。仅在对手牌库或手牌中有相关卡牌时显示",
 					"elwynn-boar-label": "艾尔文野猪死亡数",
 					"elwynn-boar-tooltip": "显示对手已死亡的艾尔文野猪数量",
-					"volatile-skeleton-label": "",
-					"volatile-skeleton-tooltip": "",
+					"volatile-skeleton-label": "不稳定的骷髅死亡数",
+					"volatile-skeleton-tooltip": "显示对手已死亡的不稳定的骷髅数量",
 					"hero-power-damage-label": "英雄技能伤害",
 					"hero-power-damage-tooltip": "显示对手的英雄技能在本局中造成的总伤害。 它仅在对方是法师且使用英雄技能造成至少1点伤害时显示"
 				},
@@ -1960,14 +1957,14 @@
 					"watch-post-tooltip": "显示您使用的哨所数量。仅在您的牌库或手牌中有相关卡牌时显示",
 					"libram-tooltip": "显示您使用的圣契牌数量。仅在对手牌库或手牌中有相关卡牌时显示。",
 					"elwynn-boar-tooltip": "显示您已死亡的艾尔文野猪数量",
-					"volatile-skeleton-tooltip": "",
+					"volatile-skeleton-tooltip": "显示您已死亡的不稳定的骷髅数量",
 					"hero-power-damage-tooltip": "显示本局中您的英雄技能造成的总伤害。 仅当您的牌库或手牌中有“火眼莫德雷斯”或“加亚莱，龙鹰之神”时显示",
 					"bolner-label": "伯尔纳·锤喙",
 					"bolner-tooltip": "当您手牌中有“伯尔纳·锤喙”时，显示您在本回合中打出的第一张战吼牌（如果有）",
 					"brilliant-macaw-label": "艳丽的金刚鹦鹉",
 					"brilliant-macaw-tooltip": "当您手牌中有“艳丽的金刚鹦鹉”时，显示您使用的上一张战吼牌（如果有）",
-					"lady-darkvein-label": "",
-					"lady-darkvein-tooltip": "",
+					"lady-darkvein-label": "暗脉女勋爵",
+					"lady-darkvein-tooltip": "当您的手牌中有暗脉女勋爵，显示您使用的最后一张暗影法术牌（如果有）",
 					"grey-sage-parrot-label": "灰贤鹦鹉",
 					"grey-sage-parrot-tooltip": "当您手牌中有“灰贤鹦鹉”时，显示您使用的上一张法力值消耗大于或等于（5）点的法术牌（如果有）",
 					"multicaster-label": "多系施法者",
