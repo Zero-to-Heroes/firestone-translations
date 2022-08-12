@@ -87,7 +87,9 @@
 			"golden-stormwind": "Сплоченные Штормградом (золотой)",
 			"golden-alterac-valley": "Разделенные Альтераком (золотой)",
 			"the-sunken-city": "Путешествие в Затонувший город",
-			"golden-the-sunken-city": "Путешествие в Затонувший город (золотой)"
+			"golden-the-sunken-city": "Путешествие в Затонувший город (золотой)",
+			"revendreth": "Убийство в замке Нафрия",
+			"golden-revendreth": "Убийство в замке Нафрия (золотой)"
 		},
 		"ranks": {
 			"constructed": {
@@ -212,7 +214,7 @@
 		"internal": {
 			"memory": {
 				"reading-error-title": "Ошибка чтения памяти",
-				"reading-error-text": "Некоторые функции будут недоступны. Пожалуйста, запустите Firestone/Overwolf как администратор или свяжитесь с нами в Discord.",
+				"reading-error-text": "Некоторые функции будут недоступны. Пожалуйста, запустите Firestone/Overwolf от имени администратора или свяжитесь с нами в Discord.",
 				"reset-started-title": "Сброс чтения памяти запущен",
 				"reset-started-text": "Структура игровой памяти изменилась. Пожалуйста, подождите несколько секунд.",
 				"reset-complete-title": "Сброс чтения памяти завершён",
@@ -251,7 +253,7 @@
 				"wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "Наибольшее количество игр за классы",
 				"best-winrate-classes": "Лучшие классы по винрейту",
-				"most-faced-classes": "Наиболее встречающиеся классы",
+				"most-faced-classes": "Наиболее часто встречающиеся классы",
 				"best-winrate-against": "Лучший винрейт против",
 				"stat-tooltip": "{{playerClass}} <br/> Забегов: {{numberOfRuns}} Игр: {{totalMatches}} <br/> Винрейт: {{winrate}}%",
 				"faced-tooltip": "{{opponentClass}} <br/> Игр: {{totalMatches}} <br/> Винрейт: {{winrate}}%"
@@ -319,7 +321,7 @@
 				"click-to-view": "Нажмите, чтобы {{link}}",
 				"click-to-view-link": "развернуть",
 				"duplicate-cards": "{{numberOfCards}} дубликата карт",
-				"dust-potential": "Потенциально {{dust}} пыли"
+				"dust-potential": "Потенциально +{{dust}} пыли"
 			},
 			"card-search": {
 				"search-box-placeholder": "Поиск карт...",
@@ -390,7 +392,7 @@
 			},
 			"pack-history": {
 				"title": "История открытий комплектов",
-				"you-have-viewed": "Вы просмотрели {{numberOfPacks}} из {{totalPacks}} наборов",
+				"you-have-viewed": "Вы просмотрели {{numberOfPacks}} из {{totalPacks}} комплектов",
 				"load-more-button": "Ещё",
 				"empty-state": {
 					"title": "Здесь пока ничего нет",
@@ -672,7 +674,7 @@
 				"tribe": {
 					"all-tribes": "Все типы существ",
 					"no-tribe": "Без типа",
-					"validation-error-tooltip": "Пожалуйста, выберите все типы существ или только 5"
+					"validation-error-tooltip": "Пожалуйста, выберите все типы существ или только 5"
 				},
 				"signature-treasure": {
 					"all": "Все фирм. сокровища"
@@ -694,7 +696,7 @@
 					"tabs": {
 						"mmr": "MMR",
 						"final-warbands": "Последние сборки",
-						"warband-stats": "Статистика сборок",
+						"warband-stats": "Характеристики стола",
 						"winrate-stats": "Винрейт"
 					},
 					"stats": {
@@ -712,7 +714,7 @@
 						"avg-mmr-loss-tooltip": "Средняя потеря MMR за матч"
 					},
 					"last-warbands": {
-						"title": "Последние {{value}} матча(ей)",
+						"title": "Последние партии",
 						"damage-dealt": "Нанесено урона",
 						"damage-dealt-tooltip": "",
 						"damage-taken": "Получено урона",
@@ -753,36 +755,36 @@
 						"score": "Значение"
 					},
 					"rows": {
-						"total-dmg-dealt-minions": "Всего урона нанесено существам противника",
-						"total-dmg-taken-minions": "Всего урона нанесено вашим существам",
-						"total-dmg-dealt-hero": "Всего урона нанесено противникам",
+						"total-dmg-dealt-minions": "Больше всего урона нанесено существам противника",
+						"total-dmg-taken-minions": "Больше всего урона нанесено вашим существам",
+						"total-dmg-dealt-hero": "Больше всего урона нанесено героям противников",
 						"total-dmg-dealt-hero-tooltip": "За исключением боёв против призрака",
 						"max-dmg-dealt-hero": "Максимальный урон герою противника",
 						"max-dmg-dealt-hero-tooltip": "За исключением боёв против призрака",
 						"win-streak": "Самая продолжительная серия побед",
-						"triples": "Собрано триплетов",
+						"triples": "Наибольшее количество собранных триплетов",
 						"board-stats": "Максимальные характеристики стола",
-						"coins-wasted": "Потрачено монет",
+						"coins-wasted": "Больше всего монет потрачено",
 						"rerolls": "Обновлений таверны",
-						"freezes": "Количество заморозок",
-						"hero-power": "Сила героя использована раз",
-						"minions-bought": "Куплено существ",
-						"minions-sold": "Продано существ",
-						"enemy-minions-killed": "Убито вражеских существ",
-						"enemy-heroes-killed": "Убито вражеских героев",
-						"battles-going-first": "Ходов первым в бою",
-						"battle-luck": "Удача в боях",
+						"freezes": "Наибольшее количество заморозок",
+						"hero-power": "Наибольшее количество использований силы героя",
+						"minions-bought": "Больше всего существ куплено",
+						"minions-sold": "Больше всего существ продано",
+						"enemy-minions-killed": "Больше всего вражеских существ убито",
+						"enemy-heroes-killed": "Больше всего вражеских героев убито",
+						"battles-going-first": "Ходов первым в боях",
+						"battle-luck": "Удача в бою",
 						"battle-luck-explain-link": "Что это?",
-						"battle-luck-explain-link-tooltip": "Показатель, который говорит о том, насколько удачливым вы были в битвах. Нажмите для получения дополнительной информации",
-						"negative-battle-luck": "Отрицательная удача в боях",
+						"battle-luck-explain-link-tooltip": "Показатель, который говорит о том, насколько удачливым вы были в сражениях. Нажмите для получения дополнительной информации",
+						"negative-battle-luck": "Неудача в бою",
 						"best-stat-hero": "",
-						"watch-replay-tooltip": ""
+						"watch-replay-tooltip": "Смотреть повтор, где это значение было получено"
 					},
 					"record-broken-tooltip": "Вы побили свой рекорд!"
 				}
 			},
 			"tier-list": {
-				"header": "Тир-лист героев ({{value}} матчей) "
+				"header": "Тир-лист героев ({{value}} партий) "
 			}
 		},
 		"duels": {
@@ -847,11 +849,6 @@
 					"global-pickrate": "",
 					"global-offering": "",
 					"player-pickrate": ""
-				},
-				"locks": {
-					"all": "Показывать заблокированные",
-					"unlocked": "Только разблокированные",
-					"unlocked-tooltip": ""
 				}
 			},
 			"deck-stat": {
@@ -883,7 +880,7 @@
 				"global-winrate": "Глобальный винрейт",
 				"your-winrate": "Твой винрейт",
 				"games-played": "Сыграно партий",
-				"number-of-games-tooltip": "{{totalRuns}} забегов записано (популярность {{popularity}})",
+				"number-of-games-tooltip": "Забегов записано: {{totalRuns}} <br/> (популярность {{popularity}})",
 				"wins-distribution-tooltip": "Распределение побед"
 			},
 			"run": {
@@ -943,14 +940,14 @@
 				"deck-saved-info": "Колода сохранена",
 				"save-deckcode-button-tooltip": "Добавить эту колоду на вкладку \"Мои колоды\"",
 				"show-buckets-button-label": "Показать наборы добычи",
-				"show-buckets-button-tooltip": "",
-				"bucket-filter-button-tooltip": "",
+				"show-buckets-button-tooltip": "[BETA] Показывать синергирующие с вашей колодой наборы добычи, которые могут быть вам предложены. Мы предполагаем, что синергирующие наборы добычи выбираются случайно среди тех, которые содержат хотя бы одну карту общую с вашей колодой.",
+				"bucket-filter-button-tooltip": "Отфильтровать по набору добычи. Список карт будет включать только карты из одного из выбранных наборов добычи.",
 				"search-tooltip": {
-					"text": "",
-					"info-1": "",
-					"info-2": "",
-					"info-3": "",
-					"info-4": ""
+					"text": "Вы можете использовать следующие горячие клавиши:",
+					"info-1": "Enter - добавить первый результат в вашу колоду",
+					"info-2": "Shift + Enter - добавить первый результат в вашу колоду и очистить строку поиска",
+					"info-3": "class:<class> - искать карты определенного класса (например, class:mage или class:neutral)",
+					"info-4": "bucket:none - искать только карты, которых нет ни в одном наборе добычи"
 				},
 				"warning": {
 					"neutral-hero": "Heartstone не поддерживает коды колод для нейтральных героев с нейтральными сокровищами (классовые сокровища работают правильно)",
@@ -975,10 +972,10 @@
 			"filters": {
 				"all": "Все достижения",
 				"all-empty-state-title": "",
-				"all-empty-state-text": "",
+				"all-empty-state-text": "В этой категории выполнено 100% достижений.",
 				"missing": "Невыполненные",
-				"missing-empty-state-title": "",
-				"missing-empty-state-text": "",
+				"missing-empty-state-title": "Множество достижений ждут вас!",
+				"missing-empty-state-text": "Вы найдёте их здесь, когда выполните.",
 				"completed": "Выполненные"
 			},
 			"history": {
@@ -1025,7 +1022,7 @@
 				}
 			},
 			"bg-stats": {
-				"title": "Статистика матча",
+				"title": "Статистика партии",
 				"empty-state-title": "Здесь пока ничего нет",
 				"empty-state-subtitle": "Не удается получить статистику"
 			},
@@ -1063,7 +1060,7 @@
 				},
 				"went-first-tooltip": "Ходил первым",
 				"went-second-tooltip": "Начинал с монеткой",
-				"bgs-prizes-tooltip": "Доступны призы ярмарки Новолуния"
+				"bgs-prizes-tooltip": "Призы ярмарки Новолуния"
 			},
 			"class-icon-toggle": {
 				"label": "Использовать иконки классов",
@@ -1090,7 +1087,7 @@
 		"tips": {
 			"tip-1": "Нажмите на значок \"Помощь\" вверху для просмотра описаний последних версий приложения",
 			"tip-2": "Нажмите на значок \"Сообщить об ошибке\" вверху, чтобы отправить отчёт об ошибке или предложить улучшения",
-			"tip-3": "Если вы сталкиваетесь с серьезными ошибками (например, сбор данных не синхронизируется, трекер не работает и т.п.), попробуйте запустить приложение как администратор.",
+			"tip-3": "Если вы сталкиваетесь с серьезными ошибками (например, сбор данных не синхронизируется, трекер не работает и т.п.), попробуйте запустить приложение как администратор.",
 			"tip-4": "Настройки имеют множество параметров кастомизации, ознакомьтесь с ними, чтобы включить/выключить некоторые функции",
 			"tip-5": "[Наёмники] Если расширить окно приложения, то появится столбец «Всего монет»",
 			"tip-6": "[Наёмники] Выберите опцию «Наемники (PvP)» в повторах, чтобы увидеть более подробную информацию о командах в каждом матче",
@@ -1396,9 +1393,9 @@
 			"invalid-deck-code-button-text": "Ок"
 		},
 		"stats": {
-			"deck-winrate": "Винрейт колоды",
+			"deck-winrate": "Винрейт",
 			"deck-winrate-tooltip": "Винрейт этой колоды с {{value}}",
-			"deck-winrate-vs-class": "vs {{value}}",
+			"deck-winrate-vs-class": "Против {{value}}",
 			"deck-winrate-vs-class-tooltip": "Винрейт этой колоды против {{opponent}} с {{date}}"
 		},
 		"secrets-helper": {
@@ -1425,7 +1422,7 @@
 			"hero-selection": "Выбор героя",
 			"opponent": "Противник",
 			"live-stats": "Статистика в бою",
-			"post-match-stats": "Статистика после матча",
+			"post-match-stats": "Послематчевая статистика",
 			"simulator": "Симулятор"
 		},
 		"battle": {
@@ -1493,7 +1490,7 @@
 			"battles-header": "",
 			"turn-winrate-graph-title": "Средняя доля побед по ходам",
 			"hero-power-title": "Сила героя",
-			"hero-power-info-tavish": "Текущий ход",
+			"hero-power-info-tavish": "Текущий ход:",
 			"hero-powers-header": "Силы героев",
 			"hero-search-placeholder": "Поиск героя / силы героя",
 			"select-button": "Выбрать",
@@ -1526,7 +1523,7 @@
 			"avg-position-tooltip": "",
 			"avg-position-your-tooltip": "Ваша ценность",
 			"avg-position-global-tooltip": "Глобальная ценность",
-			"matches-played-label": "Сыграно матчей:",
+			"matches-played-label": "Сыграно партий:",
 			"matches-played-tooltip": "Всего матчей, сыгранных этим героем",
 			"turn-winrate": "Винрейт по ходам",
 			"turn-winrate-tooltip": "Коэффициент победы в битве за ход (он дает вам представление о том, когда этот герой является самым сильным)",
@@ -1538,7 +1535,7 @@
 			"achievement-completed": "Достижение выполнено",
 			"achievement-missing": "Недостающие достижения",
 			"total-matches": "{{value}} матчей",
-			"tier-list-title-tooltip": "Тир-лист создан на основе {{totalMatches}} матчей отобранных согласно фильтрам из основного окна:"
+			"tier-list-title-tooltip": "Тир-лист создан на основе {{totalMatches}} партий отобранных согласно фильтрам из основного окна:"
 		},
 		"in-game": {
 			"face-offs": {
@@ -1573,8 +1570,8 @@
 				"reset-button": "Сбросить",
 				"highlight-tribe": "Нажмите, чтобы выделить всех существ типа {{value}} в таверне",
 				"unhighlight-tribe": "Нажмите, чтобы не выделять существ типа {{value}} в таверне",
-				"highlight-minion": "Закрепите существо, чтобы выделить его в таверне",
-				"unhighlight-minion": "Открепите существо, чтобы не выделять его в таверне"
+				"highlight-minion": "Нажмите, чтобы выделить это существо в таверне Боба",
+				"unhighlight-minion": "Нажмите, чтобы снять выделение с этого существа в таверне Боба"
 			}
 		},
 		"post-match-stats": {
@@ -1587,7 +1584,7 @@
 				"hp-by-turn": "Здоровье по ходам",
 				"stats": "",
 				"warband-composition-by-turn": "Состав сборки",
-				"warband-total-stats-by-turn": "Статистика сборок",
+				"warband-total-stats-by-turn": "Характеристики стола",
 				"winrate-per-turn": "Вероятность победы",
 				"battles": "Сражения"
 			},
@@ -1601,7 +1598,7 @@
 				"empty-state-subtitle": ""
 			},
 			"warband-stats": {
-				"community-label": "В среднем для героя",
+				"community-label": "В среднем <br/> для героя",
 				"your-label": "Данный матч"
 			}
 		},
@@ -1653,15 +1650,15 @@
 			"unknown": ""
 		},
 		"buttons": {
-			"reset-tooltip": "",
-			"close-tooltip": ""
+			"reset-tooltip": "Начать новую сессию и сбросить всю статистику",
+			"close-tooltip": "Закрыть и отключить виджет. Если вы хотите включить его снова, сделайте это в настройках"
 		},
 		"summary": {
 			"total-games": "Игр: {{value}}",
 			"total-games-tooltip": "",
-			"total-games-tooltip-all-time": "",
-			"mmr-tooltip": "Твой текущий MMR",
-			"delta-mmr-tooltip": ""
+			"total-games-tooltip-all-time": "С тех пор как вы начали использовать приложение (используйте кнопку Сброса вверху, чтобы начать новую сессию)",
+			"mmr-tooltip": "Ваш текущий MMR",
+			"delta-mmr-tooltip": "Получено/потеряно MMR с момента начала сессии"
 		},
 		"groups": {
 			"battlegrounds": {
@@ -1675,7 +1672,7 @@
 					"7": "7-е",
 					"8": "8-е"
 				},
-				"value-tooltip": ""
+				"value-tooltip": "Сколько раз вы заняли это место в этой сессии"
 			}
 		}
 	},
@@ -1717,19 +1714,19 @@
 				"bug-report": "Сообщить об ошибке",
 				"third-party": "Сторонние приложения",
 				"broadcast": "Twitch",
-				"data": ""
+				"data": "Данные"
 			},
 			"third-party": {
 				"intro": "",
 				"vs": {
 					"pitch": "",
-					"website-link": "здесь",
+					"website-link": "here",
 					"next": "",
 					"toggle-label": ""
 				},
 				"ooc": {
 					"pitch": "",
-					"website-link": "здесь",
+					"website-link": "here",
 					"next": "",
 					"toggle-label": "",
 					"connect-button-text": "",
@@ -1739,14 +1736,14 @@
 				},
 				"d0nkey": {
 					"pitch": "",
-					"website-link": "здесь",
+					"website-link": "here",
 					"next": "",
 					"instructions-page-link": "",
 					"toggle-label": ""
 				},
 				"hsdecks": {
 					"pitch": "",
-					"website-link": "здесь",
+					"website-link": "here",
 					"next": "",
 					"toggle-label": ""
 				}
@@ -1781,7 +1778,7 @@
 				"launch-on-game-start-label": "Запускать Firestone при старте игры",
 				"launch-on-game-start-tooltip": "Если выключено, то вам нужно будет каждый раз вручную запускать Firestone",
 				"integrated-mode-label": "Интегрированный режим",
-				"integrated-mode-tooltip": "Когда включено, главное окно становится оверлеем и встраивается в игровое окно. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением.",
+				"integrated-mode-tooltip": "Когда включено, главное окно становится оверлеем и встраивается в окно игры. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением.",
 				"session-recap-on-exit-label": "Обзор сессии игры при выходе",
 				"session-recap-on-exit-tooltip": "Показывает обзор последней сессии игры при выходе из Hearthstone",
 				"xp-recap-on-game-end-label": "Показывать полученный опыт в конце игры",
@@ -1797,7 +1794,7 @@
 				"flash-window": "Мигать окном HS",
 				"flash-window-tooltip": "Мигать окном Heartstone на вашем ходу или когда начинается фаза рекрутирования на Полях сражений",
 				"zoom-label": "Масштабирование",
-				"zoom-tooltip": "Уровень масштабирования, который будет применяться ко всем окнам",
+				"zoom-tooltip": "Уровень масштабирования, который будет применяться ко всем окнам",
 				"reset-prefs-button-default": "Сбросить настройки",
 				"reset-prefs-button-confirmation": "Вы уверены?",
 				"reset-prefs-tooltip": "Сбросить все ваши настройки, включая различные позиции виджетов на экране",
@@ -1813,14 +1810,14 @@
 				"text-3": "Пожалуйста, перезапустите приложение (с помощью кнопки на вкладке Общие - слева), чтобы изменение вступило в силу."
 			},
 			"data": {
-				"remote-title": "",
-				"remote-intro-text": "",
-				"packs": "",
-				"packs-tooltip": "",
-				"achievements": "",
-				"achievements-tooltip": "",
-				"refresh-button-label": "",
-				"refresh-progress-button-label": ""
+				"remote-title": "Облачные данные",
+				"remote-intro-text": "Firestone хранит большинство ваших данных в сети, чтобы упростить их использование на разных компьютерах. Некоторые из этих данных кэшируются локально для уменьшения времени загрузки приложения. Однако вы можете принудительно обновить эти данные с помощью кнопок ниже, как правило, после того как вы пересели за другой компьютер.",
+				"packs": "Комплекты",
+				"packs-tooltip": "Обновить данные о комплектах. Это происходит автоматически каждые 7 дней.",
+				"achievements": "Достижения",
+				"achievements-tooltip": "Обновить данные о достижениях. Это происходит автоматически каждые 7 дней.",
+				"refresh-button-label": "Обновить",
+				"refresh-progress-button-label": "Загрузка..."
 			}
 		},
 		"decktracker": {
@@ -2012,9 +2009,9 @@
 				"show-related-cards-tooltip": "При наведении на карту, показывать карты с ней связанные.",
 				"card-size-in-collection-label": "Размер карт в коллекции",
 				"notifications-label": "Включить уведомления",
-				"selective-notifications-label": "",
-				"notifications-dust-recap-label": "Обзор пыли",
-				"notifications-non-golden-commons-label": "",
+				"selective-notifications-label": "Вы можете выбрать какие уведомления показывать",
+				"notifications-dust-recap-label": "Количество пыли с лишних карт",
+				"notifications-non-golden-commons-label": "Не золотые обычные карты",
 				"notifications-rewards-label": "Награды",
 				"notifications-rewards-tooltip": ""
 			},
@@ -2039,11 +2036,11 @@
 			"general": {
 				"companion-app-title": "",
 				"enable-app-label": "",
-				"integrated-mode-label": "",
-				"integrated-mode-tooltip": "",
+				"integrated-mode-label": "Интегрированный режим",
+				"integrated-mode-tooltip": "Когда включено, окно Полей сражений становится оверлеем и встраивается в окно игры. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением.",
 				"enable-battle-sim-label": "Включить симуляцию сражений",
 				"enable-battle-sim-tooltip": "",
-				"hide-simulation-label": "",
+				"hide-simulation-label": "Скрывать шансы на победу после завершения сражения",
 				"hide-simulation-tooltip": "",
 				"show-sim-only-in-tavern-label": "",
 				"show-sim-only-in-tavern-tooltip": "",
@@ -2065,22 +2062,22 @@
 				"show-overlay-button-tooltip": "",
 				"popup-post-match-stats-label": "",
 				"popup-post-match-stats-tooltip": "",
-				"simulator-config-title": "",
-				"simulator-number-of-sims-label": "",
+				"simulator-config-title": "Настройки симулятора",
+				"simulator-number-of-sims-label": "Количество симуляций",
 				"simulator-number-of-sims-tooltip": ""
 			},
 			"overlay": {
-				"overlay-title": "",
-				"show-banned-tribes-label": "Показывать какие типы существ непредставлены",
+				"overlay-title": "Настройки оверлея",
+				"show-banned-tribes-label": "Показывать какие типы существ не представлены",
 				"show-banned-tribes-tooltip": "",
 				"show-available-tribes-label": "Вместо этого показывать представленные типы существ",
-				"show-available-tribes-tooltip": "",
-				"banned-tribes-single-row-label": "",
+				"show-available-tribes-tooltip": "Показывать представленные типы существ вместо непредставленных",
+				"banned-tribes-single-row-label": "В одну строку",
 				"banned-tribes-single-row-tooltip": "",
 				"show-minions-list-label": "Показывать список существ",
 				"show-minions-list-tooltip": "Показывать список существ, сгруппированных по уровням таверн",
-				"turn-counter-label": "",
-				"last-opponent-icon-label": "",
+				"turn-counter-label": "Показывать счётчик ходов",
+				"last-opponent-icon-label": "Отмечать последнего противника",
 				"last-opponent-icon-tooltip": "",
 				"last-opponent-board-label": "",
 				"last-opponent-board-tooltip": "",
@@ -2106,9 +2103,9 @@
 				"opponent-board-show-top-tooltip": "",
 				"counters-title": "Счётчики",
 				"counter-soutshsea-label": "Силачка Южных Морей",
-				"counter-soutshsea-tooltip": "",
+				"counter-soutshsea-tooltip": "Показывать количество купленных в этот ход пиратов, когда Силачка Южных морей находится в вашей руке или в тавере Боба",
 				"counter-majordomo-label": "Мажордом Экзекутус",
-				"counter-majordomo-tooltip": ""
+				"counter-majordomo-tooltip": "Показывать количество разыгранных в этот ход элеменеталей, когда Мажордом Экзекутус находится в вашей руке или в тавере Боба"
 			},
 			"session-widget": {
 				"title": "Виджет сессии",
@@ -2130,7 +2127,7 @@
 			},
 			"notifications": {
 				"title": "Обновление параметров уведомлений о достижениях",
-				"achievements-enabled-text": "",
+				"achievements-enabled-text": "Включить систему достижений",
 				"achievements-enabled-tooltip": "",
 				"firestone-achievements-text": "Включить достижения Firestone",
 				"firestone-achievements-tooltip": "Включить отслеживание эксклюзивных Firestone достижений",
