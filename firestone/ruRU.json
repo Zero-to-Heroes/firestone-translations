@@ -253,7 +253,7 @@
 				"wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "Наибольшее количество игр за классы",
 				"best-winrate-classes": "Лучшие классы по винрейту",
-				"most-faced-classes": "Наиболее часто встречающиеся классы",
+				"most-faced-classes": "Наиболее частые противники",
 				"best-winrate-against": "Лучший винрейт против",
 				"stat-tooltip": "{{playerClass}} <br/> Забегов: {{numberOfRuns}} Игр: {{totalMatches}} <br/> Винрейт: {{winrate}}%",
 				"faced-tooltip": "{{opponentClass}} <br/> Игр: {{totalMatches}} <br/> Винрейт: {{winrate}}%"
@@ -442,7 +442,9 @@
 				"coming-soon": "Скоро!",
 				"next-guaranteed": "Гарантированная",
 				"in-packs": "в след. {{value}} комплектах",
-				"browse-set-button": "Смотреть карты"
+				"browse-set-button": "Смотреть карты",
+				"total-non-golden-cards": "",
+				"total-golden-cards": ""
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
@@ -705,7 +707,7 @@
 						"average-position": "Место в среднем",
 						"top-1": "Топ-1",
 						"top-4": "Топ-4",
-						"community-value-tooltip": "",
+						"community-value-tooltip": "Среднее значение сообщества",
 						"net-mmr": "Чистый MMR",
 						"net-mmr-tooltip": "Средний прирост/потеря MMR за матч",
 						"avg-mmr-gain": "Средний прирост MMR",
@@ -857,7 +859,7 @@
 				"no-dust-missing-tooltip": "У вас есть все карты",
 				"view-details-button": "Подробнее",
 				"winrate": "Доля побед",
-				"runs": "Забегов",
+				"runs": "забега",
 				"starter-deck": "Начальная колода",
 				"final-deck": "Конечная колода",
 				"all-runs-with-deck": "Все забеги с колодой \"{{deckName}}\"",
@@ -921,7 +923,7 @@
 				"avg-wins-per-run": "Побед за забег в среднем",
 				"most-played-classes": "Наибольшее количество игр за классы",
 				"best-winrate-classes": "Лучшие классы по винрейту",
-				"most-faced-classes": "Наиболее часто встречающиеся классы",
+				"most-faced-classes": "Наиболее частые противники",
 				"best-winrate-against": "Лучший винрейт против",
 				"stat-tooltip": "{{playerClass}} <br/> Забегов: {{numberOfRuns}} Игр: {{totalMatches}} <br/> Винрейт: {{winrate}}%",
 				"faced-tooltip": "{{opponentClass}} <br/> Игр: {{totalMatches}} <br/> Винрейт: {{winrate}}%"
@@ -1599,7 +1601,7 @@
 			},
 			"warband-stats": {
 				"community-label": "В среднем <br/> для героя",
-				"your-label": "Данный матч"
+				"your-label": "Данный матч"
 			}
 		},
 		"overlay-button": {
@@ -1912,7 +1914,7 @@
 					"galakrond-label": "Счётчик взываний к Галакронду",
 					"galakrond-tooltip": "Показывает сколько раз ваш противник взывал к Галакронду (появляется только когда он разыгрывает соответсвующую карту)",
 					"pogo-label": "Счётчик прыг-скокеров",
-					"pogo-tooltip": "Показывает сколько Прыг-скокеров разыграл ваш противник",
+					"pogo-tooltip": "Показывает сколько прыг-скокеров разыграл ваш противник",
 					"jade-label": "Счётчик нефритовых големов",
 					"jade-tooltip": "",
 					"cthun-label": "Характеристики К'Туна",
@@ -1928,9 +1930,9 @@
 					"libram-label": "Счётчик манускриптов",
 					"libram-tooltip": "",
 					"elwynn-boar-label": "Счётчик элвиннских вепрей",
-					"elwynn-boar-tooltip": "",
-					"volatile-skeleton-label": "Погибло взрывоопасных скелетов",
-					"volatile-skeleton-tooltip": "Показывать сколько у противника погибло взрывоопасных скелетов",
+					"elwynn-boar-tooltip": "Показывать сколько Элвинских вепрей погибло у противника",
+					"volatile-skeleton-label": "Погибло Взрывоопасных скелетов",
+					"volatile-skeleton-tooltip": "Показывать сколько Взрывоопасных скелетов погибло у противника",
 					"hero-power-damage-label": "Счётчик урона нанесенного силой героя",
 					"hero-power-damage-tooltip": ""
 				},
@@ -1944,9 +1946,9 @@
 				"ignore-decklist-confirmation": "",
 				"counters": {
 					"galakrond-tooltip": "",
-					"pogo-tooltip": "",
+					"pogo-tooltip": "Показывает сколько прыг-скокеров вы разыграли",
 					"jade-tooltip": "",
-					"cthun-tooltip": "",
+					"cthun-tooltip": "Показывает текущие харатеристики вашего К'Туна",
 					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "",
 					"attack-on-board-tooltip": "",
@@ -1956,15 +1958,15 @@
 					"elementals-tooltip": "",
 					"watch-post-tooltip": "",
 					"libram-tooltip": "",
-					"elwynn-boar-tooltip": "",
-					"volatile-skeleton-tooltip": "Показывать сколько у вас погибло взрывоопасных скелетов",
+					"elwynn-boar-tooltip": "Показывать сколько погибло ваших Элвинских вепрей",
+					"volatile-skeleton-tooltip": "Показывать сколько ваших Взрывоопасных скелетов погибло",
 					"hero-power-damage-tooltip": "",
 					"bolner-label": "Болнер Удар Клюва",
 					"bolner-tooltip": "",
 					"brilliant-macaw-label": "Сверкающий ара",
-					"brilliant-macaw-tooltip": "",
+					"brilliant-macaw-tooltip": "Если Сверкающий ара у вас в руке, показывает последний разыгранный вами боевой клич",
 					"lady-darkvein-label": "Леди Дарквейн",
-					"lady-darkvein-tooltip": "",
+					"lady-darkvein-tooltip": "Когда Леди Дарквейн у вас в руке, показывает последнее разыгранное вами заклинание Тьмы",
 					"grey-sage-parrot-label": "Серый мудрец",
 					"grey-sage-parrot-tooltip": "Если у вас в колоде есть Серый мудрец, показывать последнее разыгранное вами заклинание за 5 или более",
 					"multicaster-label": "Маг-универсал",
