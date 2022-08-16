@@ -146,7 +146,7 @@
 			"owlkin": "Eulkin",
 			"halforc": "Halborc",
 			"lock": "",
-			"naga": "",
+			"naga": "Naga",
 			"oldgod": ""
 		},
 		"legendary-minion": "Legendärer Diener",
@@ -206,7 +206,7 @@
 				"supporter": "Vielen Dank, dass Sie uns unterstützen!"
 			},
 			"graph": {
-				"tooltip-title": "",
+				"tooltip-title": "Titel",
 				"wins-label": "",
 				"wins-value": ""
 			}
@@ -287,7 +287,20 @@
 					"collectible": "Deckbau",
 					"battlegrounds": "Schlachtfelder",
 					"mercenaries": "Söldner",
-					"book-of-mercs": "Buch der Söldner"
+					"book-of-mercs": "Buch der Söldner",
+					"book-of-mercs-chapters": {
+						"rokara": "",
+						"xyrella": "",
+						"guff": "",
+						"kurtrus": "",
+						"tamsin": "",
+						"cariel": "",
+						"scabbs": "",
+						"tavish": "",
+						"brukan": "",
+						"dawngrasp": "",
+						"other": ""
+					}
 				},
 				"owned": {
 					"all": "Alle",
@@ -331,8 +344,22 @@
 			"card-details": {
 				"class": "Klasse:",
 				"type": "Typ:",
+				"types": {
+					"minion": "",
+					"spell": "",
+					"weapon": "",
+					"hero": "",
+					"location": ""
+				},
 				"set": "Set:",
 				"rarity": "Seltenheit:",
+				"rarities": {
+					"free": "",
+					"common": "",
+					"rare": "",
+					"epic": "",
+					"legendary": ""
+				},
 				"flavor": "",
 				"sounds-title": "Audio:",
 				"sounds": {
@@ -471,6 +498,7 @@
 		},
 		"share": {
 			"title": "Teilen",
+			"window-title": "",
 			"logged-out-message": "",
 			"login-button": "Einloggen",
 			"logout-button": "Ausloggen",
@@ -490,7 +518,7 @@
 		},
 		"decktracker": {
 			"menu": {
-				"decks-header": "",
+				"decks-header": "Meine Decks",
 				"stats-header": "Statistiken",
 				"ranking-header": "Rangliste",
 				"deckbuilder-header": "",
@@ -498,6 +526,7 @@
 			},
 			"filters": {
 				"filter-info-tooltip": "",
+				"show-hidden-decks": "",
 				"deck-sort": {
 					"last-played": "Zuletzt verwendet",
 					"games-played": "Gespielte Partien",
@@ -522,9 +551,9 @@
 					"diamond": "Diamant+",
 					"diamond-legend": "",
 					"legend": "Legende",
-					"legend-1000": "",
+					"legend-1000": "Top 1000",
 					"legend-500": "Top 500",
-					"legend-100": ""
+					"legend-100": "Top 100"
 				},
 				"rank-group": {
 					"per-match": "Zeige jedes Match",
@@ -537,7 +566,7 @@
 					"last-patch": "Letzter Patch",
 					"past-30": "Vergangene 30 Tage",
 					"past-7": "Vergangene 7 Tage",
-					"past-3": "",
+					"past-3": "Letzten 3 Tage",
 					"past-1": "Vergangener Tag"
 				},
 				"deck-search": {
@@ -562,7 +591,7 @@
 				"reset-button-tooltip": "",
 				"reset-confirmation": "",
 				"reset-are-you-sure": "Sind Sie sicher?",
-				"delete-button-label": "",
+				"delete-button-label": "Deck löschen",
 				"delete-button-step-2": "Löschen",
 				"delete-confirmation": "",
 				"delete-tooltip": ""
@@ -590,7 +619,12 @@
 				"empty-state-title": "Zurzeit gibt es hier noch nichts",
 				"empty-state-subtitle": "",
 				"drag-to-merge-default": "",
-				"drag-to-merge": ""
+				"drag-to-merge": "",
+				"versions": {
+					"title": "",
+					"click-to-view-version-stats-tooltip": "",
+					"click-to-view-all-stats-tooltip": ""
+				}
 			},
 			"meta-decks": {},
 			"ladder-stats": {
@@ -868,12 +902,12 @@
 				"average-wins-per-run": "",
 				"archive-deck-tooltip": "",
 				"delete-deck-tooltip": "",
-				"restore-deck-tooltip": "",
-				"rename-deck-tooltip": "",
-				"delete-deck-confirmation-title": "",
+				"restore-deck-tooltip": "Deck wiederherstellen",
+				"rename-deck-tooltip": "Deck umbenennen",
+				"delete-deck-confirmation-title": "Deck löschen",
 				"delete-deck-confirmation-text": "",
-				"delete-deck-confirmation-ok": "",
-				"delete-deck-confirmation-cancel": "",
+				"delete-deck-confirmation-ok": "Löschen",
+				"delete-deck-confirmation-cancel": "Abbrechen",
 				"rename-confirm-button": "OK",
 				"default-deck-name": "",
 				"default-deck-name-blank": ""
@@ -901,7 +935,8 @@
 				"tier-b-tooltip": "Gute Wahl",
 				"tier-c-tooltip": "Faire Wahl",
 				"tier-d-tooltip": "Bevorzugt vermeiden",
-				"tier-e-tooltip": "Definitiv vermeiden"
+				"tier-e-tooltip": "Definitiv vermeiden",
+				"tier-list-title-footer": ""
 			},
 			"leaderboard": {
 				"rank": "Rang",
@@ -1537,7 +1572,8 @@
 			"achievement-completed": "",
 			"achievement-missing": "Errungenschaft fehlt",
 			"total-matches": "",
-			"tier-list-title-tooltip": ""
+			"tier-list-title-tooltip": "",
+			"tier-list-title-footer": ""
 		},
 		"in-game": {
 			"face-offs": {
@@ -2125,7 +2161,7 @@
 		},
 		"achievements": {
 			"menu": {
-				"general": ""
+				"general": "Allgemein"
 			},
 			"notifications": {
 				"title": "",
@@ -2163,7 +2199,7 @@
 				"tasks-tooltip": "",
 				"synergies-label": "",
 				"synergies-tooltip": "",
-				"your-team": "",
+				"your-team": "Dein Team",
 				"opponent-team": "",
 				"action-queue": ""
 			}
