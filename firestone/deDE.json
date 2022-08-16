@@ -162,7 +162,7 @@
 			"windfury": "Windzorn",
 			"mega-windfury": "Super-Windzorn"
 		},
-		"duration": ""
+		"duration": "{{minutes}}:{{seconds}} min"
 	},
 	"app": {
 		"menu": {
@@ -207,7 +207,7 @@
 			},
 			"graph": {
 				"tooltip-title": "Titel",
-				"wins-label": "",
+				"wins-label": "{{value}} Siege",
 				"wins-value": ""
 			}
 		},
@@ -404,12 +404,12 @@
 						"error-play": "",
 						"error-target": "Fehler Ziel",
 						"error-taunt": "Fehler Spott",
-						"error-generic": "",
-						"happy-holidays": "",
-						"winterveil-greetings": "",
+						"error-generic": "Fehler allgemein",
+						"happy-holidays": "Frohe Feiertage",
+						"winterveil-greetings": "Winterhauchfest",
 						"lunar-new-year": "Neues Mondjahr",
 						"happy-new-year": "Frohes neues Jahr",
-						"fire-festival": "",
+						"fire-festival": "Sonnenwendfest",
 						"pirate-day": "Tag der Piraten",
 						"hallows-end": "Schlotternächte",
 						"noblegarden": "Nobelgarten",
@@ -570,7 +570,7 @@
 					"past-1": "Vergangener Tag"
 				},
 				"deck-search": {
-					"placeholder": "",
+					"placeholder": "Suche Deck...",
 					"tooltip": ""
 				}
 			},
@@ -653,11 +653,11 @@
 			"stats": {
 				"total-games-played": "",
 				"total-time-played": "",
-				"turns-to-win": "",
-				"turns-to-lose": "",
+				"turns-to-win": "Züge zum Sieg",
+				"turns-to-lose": "Züge zur Niederlage",
 				"winrate": "Gewinnrate",
-				"winrate-first": "",
-				"winrate-coin": ""
+				"winrate-first": "Gewinnrate (Erster)",
+				"winrate-coin": "Gewinnrate (Münze)"
 			},
 			"deckbuilder": {
 				"choose-your-format-title": "Wähle dein Format",
@@ -723,7 +723,7 @@
 			},
 			"personal-stats": {
 				"hero": {
-					"average-position": "",
+					"average-position": "Durchschnittliche Position",
 					"games-played": "Gespielte Partien",
 					"net-mmr": "",
 					"net-mmr-tooltip": ""
@@ -798,7 +798,7 @@
 						"max-dmg-dealt-hero": "",
 						"max-dmg-dealt-hero-tooltip": "",
 						"win-streak": "",
-						"triples": "",
+						"triples": "Drillinge erschaffen",
 						"board-stats": "",
 						"coins-wasted": "Münzen vergeudet",
 						"rerolls": "Neu würfeln",
@@ -848,7 +848,7 @@
 				"game-mode": {
 					"all": "Alle Modi",
 					"all-tooltip": "",
-					"casual": "",
+					"casual": "Ungewertet",
 					"casual-tooltip": "",
 					"heroic": "Heroisch"
 				},
@@ -910,11 +910,11 @@
 				"delete-deck-confirmation-cancel": "Abbrechen",
 				"rename-confirm-button": "OK",
 				"default-deck-name": "",
-				"default-deck-name-blank": ""
+				"default-deck-name-blank": "Duelle Deck"
 			},
 			"hero-stat": {
-				"global-winrate": "",
-				"your-winrate": "",
+				"global-winrate": "Globale Gewinnrate",
+				"your-winrate": "Deine Gewinnrate",
 				"games-played": "Gespielte Partien",
 				"number-of-games-tooltip": "",
 				"wins-distribution-tooltip": ""
@@ -972,7 +972,7 @@
 				"go-back-hero-power": "",
 				"go-back-signature-treasure": "",
 				"ongoing-deck-building": "",
-				"export-deckcode-button": "",
+				"export-deckcode-button": "Code kopieren",
 				"save-deck-button": "Deck speichern",
 				"deck-saved-info": "Deck gespeichert",
 				"save-deckcode-button-tooltip": "",
@@ -1036,15 +1036,15 @@
 					"battlegrounds": "Schlachtfelder",
 					"battlegrounds-friendly": "",
 					"mercenaries-all": "Söldner (Alle)",
-					"mercenaries-pve": "",
-					"mercenaries-pvp": "",
-					"ranked": "",
+					"mercenaries-pve": "Söldner PvE",
+					"mercenaries-pvp": "Söldner PvP",
+					"ranked": "Gewertet (alle)",
 					"ranked-standard": "Standard Gewertet",
 					"ranked-wild": "Wild Gewertet",
 					"ranked-classic": "Klassisch Gewertet",
 					"both-duels": "Duelle (Alle)",
-					"duels": "",
-					"paid-duels": "",
+					"duels": "Duelle Ungewertet",
+					"paid-duels": "Duelle Heroisch",
 					"arena": "Arena",
 					"casual": "Ungewertet",
 					"friendly": "",
@@ -1097,7 +1097,7 @@
 				},
 				"went-first-tooltip": "Zuerst begonnen",
 				"went-second-tooltip": "Hatte die Münze",
-				"bgs-prizes-tooltip": ""
+				"bgs-prizes-tooltip": "Dunkelmondpreise waren verfügbar"
 			},
 			"class-icon-toggle": {
 				"label": "Klassensymbole verwenden",
@@ -1119,7 +1119,7 @@
 			}
 		},
 		"stats": {
-			"xp-graph-title": ""
+			"xp-graph-title": "EP Grafik"
 		},
 		"tips": {
 			"tip-1": "",
@@ -1362,7 +1362,7 @@
 			"abilities-header": "Fähigkeiten",
 			"equipments-header": "Ausrüstungen",
 			"max-level": "Max. Level!",
-			"xp-tooltip": "",
+			"xp-tooltip": "{{value}} EP",
 			"bounties-to-farm": "",
 			"current-task-tooltip": "",
 			"maxed": "Maximiert!",
@@ -1855,22 +1855,22 @@
 				"achievements": "Errungenschaften",
 				"achievements-tooltip": "",
 				"refresh-button-label": "Aktualisieren",
-				"refresh-progress-button-label": ""
+				"refresh-progress-button-label": "Arbeite..."
 			}
 		},
 		"decktracker": {
 			"menu": {
-				"global": "",
+				"global": "Allgemeine Optionen",
 				"your-deck": "Dein Deck",
-				"opponent-deck": "",
-				"turn-timer": "",
+				"opponent-deck": "Deck des Gegners",
+				"turn-timer": "Zug Timer",
 				"duels": "Duelle",
-				"launch": ""
+				"launch": "Startoptionen"
 			},
 			"global": {
 				"title": "",
 				"minions-play-order": "",
-				"minions-play-order-tooltip": "",
+				"minions-play-order-tooltip": "Zeige die Spielreihenfolge aller Diener auf dem Feld, um somit bei der Aktivierungsreihenfolge von Todesröchelneffekten zu helfen (oder bei allem anderen, was auf der Spielreihenfolge der Diener basiert)",
 				"show-title-bar": "",
 				"show-title-bar-tooltip": "",
 				"show-control-bar": "",
@@ -1878,7 +1878,7 @@
 				"show-tooltips-on-hover": "",
 				"show-rarity-color": "",
 				"show-rarity-color-tooltip": "",
-				"show-deck-winrate": "",
+				"show-deck-winrate": "Zeige Deck Gewinnrate",
 				"show-deck-winrate-tooltip": "",
 				"show-matchup-winrate": "",
 				"show-matchup-winrate-tooltip": "",
@@ -1914,7 +1914,7 @@
 				"casual": "Ungewertet"
 			},
 			"opponent-deck": {
-				"tracker-title": "",
+				"tracker-title": "Decktracker",
 				"show-tracker-label": "",
 				"show-tracker-tooltip": "",
 				"ai-decklist-label": "",
@@ -1957,17 +1957,17 @@
 					"cthun-tooltip": "",
 					"fatigue-label": "Erschöpfung",
 					"fatigue-tooltip": "",
-					"abyssal-curse-label": "",
+					"abyssal-curse-label": "Abyssischer Fluch",
 					"abyssal-curse-tooltip-2": "",
-					"attack-on-board-label": "",
+					"attack-on-board-label": "Angriff auf dem Feld",
 					"attack-on-board-tooltip": "",
-					"watch-post-label": "",
+					"watch-post-label": "Wachposten",
 					"watch-post-tooltip": "",
 					"libram-label": "Buchbände",
 					"libram-tooltip": "",
 					"elwynn-boar-label": "",
 					"elwynn-boar-tooltip": "",
-					"volatile-skeleton-label": "",
+					"volatile-skeleton-label": "Instabiles Skelett Tode",
 					"volatile-skeleton-tooltip": "",
 					"hero-power-damage-label": "Schaden mit Heldenfähigkeit",
 					"hero-power-damage-tooltip": ""
@@ -2026,8 +2026,8 @@
 				"show-ooc-deck-select-tooltip": ""
 			},
 			"turn-timer": {
-				"title": "",
-				"show-turn-timer-label": "",
+				"title": "Zug Timer",
+				"show-turn-timer-label": "Zeige Zug Timer",
 				"show-turn-timer-tooltip": "",
 				"show-turn-timer-match-length-label": "",
 				"show-turn-timer-match-length-tooltip": "",
