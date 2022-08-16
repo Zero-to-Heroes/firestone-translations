@@ -464,7 +464,7 @@
 			},
 			"pack-stats": {
 				"title": "Packungen insgesamt ({{value}})",
-				"best-opened-packs-title": "",
+				"best-opened-packs-title": "Besten {{value}} geöffneten Packungen",
 				"best-opened-packs-title-tooltip": "Die besten Pakete, die du geöffnet hast, während Firestone aktiv war",
 				"pack-stat-tooltip": "Du hast {{totalPacks}} {{packName}} Packungen erhalten, seit du Hearthstone spielst",
 				"main-sets-group-name": "Hauptsets ({{totalPacks}})",
@@ -474,16 +474,16 @@
 			"set-stats": {
 				"title": "Set Statistiken",
 				"packs-received": "Packungen erhalten",
-				"packs-received-tooltip": "",
+				"packs-received-tooltip": "Alle erhaltenen Packungen, inklusive noch nicht geöffneter Packungen.",
 				"best-known-pack": "Beste bekannte Packung",
 				"dust": "Staub",
 				"dust-tooltip": "Du benötigst {{value}} Staub, um das Set zu vervollständigen",
 				"duplicate-dust": "Staub aus Dubletten",
-				"duplicate-dust-tooltip": "",
+				"duplicate-dust-tooltip": "Du kannst {{value}} Staub gewinnen, indem du nicht goldene doppelte Karten entzauberst",
 				"golden-dust": "Goldener Staub",
 				"golden-dust-tooltip": "Du benötigst {{value}} Staub, um das goldene Set zu vervollständigen",
 				"golden-duplicate-dust": "",
-				"golden-duplicate-dust-tooltip": "",
+				"golden-duplicate-dust-tooltip": "Du kannst {{value}} Staub gewinnen, indem du goldene doppelte Karten entzauberst",
 				"commons": "Gewöhnliche",
 				"commons-missing": "Fehlende standard",
 				"rares": "Seltene",
@@ -506,8 +506,8 @@
 				"next-guaranteed": "Nächste garantiert",
 				"in-packs": "In {{value}} Packungen",
 				"browse-set-button": "Set durchsuchen",
-				"total-non-golden-cards": "",
-				"total-golden-cards": ""
+				"total-non-golden-cards": "Insgesamt gesammelte nicht goldene Karten",
+				"total-golden-cards": "Insgesamt gesammelte goldene Karten"
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
@@ -520,15 +520,15 @@
 				},
 				"no-golden-card-in-set": {
 					"title": "Noch keine goldenen Karten aus diesem Set!",
-					"subtitle": ""
+					"subtitle": "Keine Sorge, spiele weiter und hol dir diese glänzenden Schätzchen."
 				},
 				"no-search-results": {
-					"title": "",
+					"title": "Oh nein! Kein Ergebnis für: \"{{value}}\"",
 					"subtitle": ""
 				},
 				"default": {
 					"title": "Hier gibt es nichts zu sehen",
-					"subtitle": ""
+					"subtitle": "Bitte starte Hearthstone um die Sammlung zu synchronisieren."
 				}
 			}
 		},
@@ -630,7 +630,7 @@
 				"delete-button-label": "Deck löschen",
 				"delete-button-step-2": "Löschen",
 				"delete-confirmation": "",
-				"delete-tooltip": ""
+				"delete-tooltip": "Lösche dein Deck. Dies kann nicht rückgängig gemacht werden. Wenn du es nur ausblenden willst, solltest du es stattdessen archivieren."
 			},
 			"deck-details": {
 				"copy-deck-code-button": "Deck-Code kopieren"
@@ -638,15 +638,15 @@
 			"deck-recap": {
 				"overall-stats-header": "Gesamtstatistik",
 				"watch-replays-button": "Wiederholungen ansehen",
-				"best-against": "",
+				"best-against": "Am besten gegen",
 				"winrate": "Gewinnrate",
 				"games": "Spiele"
 			},
 			"deck-summary": {
 				"total-games": "{{value}} Spiele",
 				"winrate": "{{value}}% Gewinnrate",
-				"last-used": "",
-				"created-on": "",
+				"last-used": "Benutzt: {{value}}",
+				"created-on": "Erstellt: {{value}}",
 				"archive-button-tooltip": "Archiviere dieses Deck (du kannst es später wiederherstellen)",
 				"restore-button-tooltip": "Dieses Deck wiederherstellen",
 				"default-deck-name": "Deckname"
@@ -672,7 +672,7 @@
 				"going-first-button-label": "",
 				"going-second-button-label": "",
 				"tab-selection": {
-					"overview": "",
+					"overview": "Überblick",
 					"matchups": ""
 				}
 			},
@@ -828,10 +828,10 @@
 					},
 					"rows": {
 						"total-dmg-dealt-minions": "",
-						"total-dmg-taken-minions": "Gesamt erlittener Schaden (Diener)",
-						"total-dmg-dealt-hero": "Gesamt verteilter Schaden (Held)",
+						"total-dmg-taken-minions": "Gesamt genommener Schaden (Diener)",
+						"total-dmg-dealt-hero": "Gesamt ausgeteilter Schaden (Held)",
 						"total-dmg-dealt-hero-tooltip": "",
-						"max-dmg-dealt-hero": "Max. Schaden verteilt (Held)",
+						"max-dmg-dealt-hero": "Max. Schaden ausgeteilt (Held)",
 						"max-dmg-dealt-hero-tooltip": "",
 						"win-streak": "Höchste Siegesserie",
 						"triples": "Drillinge erschaffen",
@@ -1085,7 +1085,7 @@
 					"casual": "Ungewertet",
 					"friendly": "",
 					"tavern-brawl": "Kartenchaos",
-					"practice": ""
+					"practice": "VS KI"
 				},
 				"player": {
 					"all": "Alle Klassen (Spieler)"
@@ -1799,10 +1799,10 @@
 					"toggle-label": ""
 				},
 				"ooc": {
-					"pitch": "",
+					"pitch": "Out of Cards ist eine Hearthstone Community Seite mit Artikeln, Guides, Decks, einer Kartendatenbank und mehr. Deine Kartensammlung mit dieser Seite zu synchronisieren, macht es dir einfacher Decks zum Spielen zu finden. Besuche sie hier {{websiteLink}}",
 					"website-link": "hier",
-					"next": "",
-					"toggle-label": "",
+					"next": "Wenn du dein Out of Cards Accounts verbindest, sendet Firestone Daten deiner Sammlung an Out of Cards, damit sie sie online nutzen können.",
+					"toggle-label": "Zeige eine Benachrichtigung, wenn die Sammlung synchronisiert ist",
 					"connect-button-text": "Verbinden",
 					"disconnect-button-test": "Verbindung trennen",
 					"connected-text": "Du bist angemeldet",
@@ -1818,8 +1818,8 @@
 				"hsdecks": {
 					"pitch": "",
 					"website-link": "hier",
-					"next": "",
-					"toggle-label": ""
+					"next": "Wenn du dich für die Synchronisierung mit hearthstone-decks.net entscheidest, sendet Firestone ihnen anonym jedes Spiel, dass du spielst, mit einigen Informationen zum Spiel (Deck Code, Rang, Spielergebnis)",
+					"toggle-label": "Synchronisiere deine Aufzeichnungen mit hearthstone-decks.net"
 				}
 			},
 			"bug-report": {
@@ -1830,9 +1830,9 @@
 				"email-placeholder": "Ihre E-Mail-Adresse (optional)",
 				"message-placeholder": "",
 				"send-button": "Senden",
-				"status-uploading-logs": "Protokoll Dateien hochladen",
-				"status-sending-feedback": "",
-				"status-done": ""
+				"status-uploading-logs": "Log-Dateien hochladen",
+				"status-sending-feedback": "Log-Dateien hochgeladen, sende Feedback",
+				"status-done": "Feedback gesendet. Vielen Dank für deine Benachrichtigung! Bleib auf dem Laufenden, indem du uns auf {{discordLink}} oder auf {{twitterLink}} beitrittst"
 			},
 			"twitch": {
 				"title": "Auf Twitch übertragen",
@@ -1850,7 +1850,7 @@
 			},
 			"launch": {
 				"launch-on-game-start-label": "Starte Firestone wenn das Spiel gestartet wird",
-				"launch-on-game-start-tooltip": "",
+				"launch-on-game-start-tooltip": "Wenn deaktiviert, musst du Firestone jedes Mal manuell starten",
 				"integrated-mode-label": "Integrierter Modus",
 				"integrated-mode-tooltip": "",
 				"session-recap-on-exit-label": "",
@@ -1869,10 +1869,10 @@
 				"flash-window-tooltip": "",
 				"zoom-label": "",
 				"zoom-tooltip": "",
-				"reset-prefs-button-default": "",
+				"reset-prefs-button-default": "Einstellungen zurücksetzen",
 				"reset-prefs-button-confirmation": "Sind Sie sicher?",
-				"reset-prefs-tooltip": "",
-				"reset-prefs-confirmation": "",
+				"reset-prefs-tooltip": "ALLE Einstellungen zurücksetzen, inklusive diverser Widget-Positionen auf dem Bildschirm",
+				"reset-prefs-confirmation": "Alle Einstellungen wurden zurückgesetzt. Dies beinhaltet diverse Widget-Positionen auf dem Bildschirm, sowie Twitch Einstellungen. Also vergiss nicht wieder zu setzen, was du brauchst :)",
 				"restart-app-button-label": "App neustarten"
 			},
 			"localization": {
@@ -1884,8 +1884,8 @@
 				"text-3": "Bitte starte die App neu (mit dem Button im Tab Allgemein auf der linken Seite) um sicherzustellen, dass die neue Sprache berücksichtigt wird."
 			},
 			"data": {
-				"remote-title": "",
-				"remote-intro-text": "",
+				"remote-title": "Online Daten",
+				"remote-intro-text": "Firestone speichert einen Großteil deiner Daten online, um die Bedienung auf mehreren Geräten zu vereinfachen. Einige Daten werden lokal zwischengespeichert um Ladezeiten und Internetnutzung zu reduzieren. Du kannst eine Aktualisierung dieser Daten mit den Buttons unten erzwingen, beispielsweise wenn du das Gerät wechselst.",
 				"packs": "Packungen",
 				"packs-tooltip": "",
 				"achievements": "Errungenschaften",
@@ -1904,8 +1904,8 @@
 				"launch": "Startoptionen"
 			},
 			"global": {
-				"title": "",
-				"minions-play-order": "",
+				"title": "Features aktivieren / deaktivieren",
+				"minions-play-order": "Diener Spielreihenfolge",
 				"minions-play-order-tooltip": "Zeige die Spielreihenfolge aller Diener auf dem Feld, um somit bei der Aktivierungsreihenfolge von Todesröchelneffekten zu helfen (oder bei allem anderen, was auf der Spielreihenfolge der Diener basiert)",
 				"show-title-bar": "",
 				"show-title-bar-tooltip": "",
@@ -2023,13 +2023,13 @@
 					"cthun-tooltip": "",
 					"fatigue-tooltip": "Zeige deinen letzten Erschöpfungsschaden",
 					"abyssal-curse-tooltip": "Zeige deinen höchsten Abyssischen Fluch Schaden",
-					"attack-on-board-tooltip": "Zeige den gesamten Schaden deines Helden und deiner Diener auf dem Feld",
+					"attack-on-board-tooltip": "Zeige den Gesamtschaden deines Helden und deiner Diener auf dem Feld",
 					"number-of-spells-label": "Anzahl der Zauber",
-					"number-of-spells-tooltip": "Zeige die Gesamtanzahl aller Zauber, die du in diesem Spiel ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten im Deck befinden",
+					"number-of-spells-tooltip": "Zeige die Gesamtanzahl aller Zauber, die du in diesem Spiel ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten im Deck oder der Hand befinden",
 					"elementals-label": "Elementare",
-					"elementals-tooltip": "Zeige die Gesamtanzahl aller Elementare, die du in diesem und im letzten Zug ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten im Deck befinden",
-					"watch-post-tooltip": "Zeige die Gesamtanzahl aller Wachposten, die du in diesem Spiel ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten im Deck befinden",
-					"libram-tooltip": "Zeige die Gesamtanzahl aller Buchbände, die du in diesem Spiel ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten im Deck befinden",
+					"elementals-tooltip": "Zeige die Gesamtanzahl aller Elementare, die du in diesem und im letzten Zug ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten in der Hand befinden",
+					"watch-post-tooltip": "Zeige die Gesamtanzahl aller Wachposten, die du in diesem Spiel ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten im Deck oder der Hand befinden",
+					"libram-tooltip": "Zeige die Gesamtanzahl aller Buchbände, die du in diesem Spiel ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten im Deck oder der Hand befinden",
 					"elwynn-boar-tooltip": "Zeige, wie oft ein Elwynneber für dich gestorben ist",
 					"volatile-skeleton-tooltip": "Zeige, wie oft ein Instabiles Skelett für dich gestorben ist",
 					"hero-power-damage-tooltip": "Zeige den Gesamtschaden, der durch deine Heldenfähigkeit verursacht wurde. Wird nur angezeigt, wenn sich Mordresh Feuerauge oder Jan’alai der Drachenfalke in deinem Deck oder deiner Hand befinden",
