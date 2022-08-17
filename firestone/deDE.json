@@ -788,7 +788,7 @@
 					"last-warbands": {
 						"title": "Letzte {{value}} Spiele",
 						"damage-dealt": "Schaden ausgeteilt",
-						"damage-dealt-tooltip": "Gesamtschaden, der von jeder Einheit ausgeteilt wurde. Der Schaden für Einheiten mit demselben Namen sind aggregiert und nicht pro Einheit aufgeteilt",
+						"damage-dealt-tooltip": "Gesamtschaden, der von jeder Einheit verursacht wurde. Der Schaden für Einheiten mit demselben Namen sind aggregiert und nicht pro Einheit aufgeteilt",
 						"damage-taken": "Schaden genommen",
 						"damage-taken-tooltip": "",
 						"empty-state-message": "Beginne Schlachtfeld mit diesem Helden zu spielen, um Informationen zu erhalten",
@@ -827,11 +827,11 @@
 						"score": "Bewertung"
 					},
 					"rows": {
-						"total-dmg-dealt-minions": "Gesamt ausgeteilter Schaden (Diener)",
+						"total-dmg-dealt-minions": "Gesamtschaden verursacht (Diener)",
 						"total-dmg-taken-minions": "Gesamt genommener Schaden (Diener)",
-						"total-dmg-dealt-hero": "Gesamt ausgeteilter Schaden (Held)",
+						"total-dmg-dealt-hero": "Gesamtschaden verursacht (Held)",
 						"total-dmg-dealt-hero-tooltip": "Enthält keine Kämpfe gegen den Geist",
-						"max-dmg-dealt-hero": "Max. Schaden ausgeteilt (Held)",
+						"max-dmg-dealt-hero": "Max. Schaden verursacht (Held)",
 						"max-dmg-dealt-hero-tooltip": "Enthält keine Kämpfe gegen den Geist",
 						"win-streak": "Höchste Siegesserie",
 						"triples": "Drillinge erschaffen",
@@ -1183,10 +1183,10 @@
 			"opponent": ""
 		},
 		"pogo": {
-			"player": "Du hast {{value}} Robohopser gespielt",
-			"opponent": "Dein Gegner hat {{value}} Robohopser gespielt"
+			"player": "Du hast {{value}} Robohopser ausgespielt",
+			"opponent": "Dein Gegner hat {{value}} Robohopser ausgespielt"
 		},
-		"bolner": "{{value}} war der erste Kampfschrei, der in diesem Zug gespielt wurde",
+		"bolner": "{{value}} war der erste Kampfschrei, der in diesem Zug ausgespielt wurde",
 		"multicaster": {
 			"player": "Du ziehst {{cardsTotal}} Karten dieser Zaubertypen: {{schools}}",
 			"opponent": "Dein Gegner zieht {{cardsTotal}} Karten dieser Zaubertypen: {{schools}}"
@@ -1195,24 +1195,24 @@
 			"player": ""
 		},
 		"brilliant-macaw": {
-			"player": "{{value}} war die letzte Kampfschrei Karte, die du gespielt hast",
-			"opponent": ""
+			"player": "{{value}} war die letzte Kampfschreikarte, die du ausgespielt hast",
+			"opponent": "{{value}} war die letzte Kampfschreikarte, die dein Gegner ausgespielt hat"
 		},
 		"lady-darkvein": {
 			"player": "{{value}} war der letzte Schattenzauber, den du ausgespielt hast",
 			"opponent": "{{value}} war der letzte Schattenzauber, den dein Gegner ausgespielt hat"
 		},
 		"grey-sage-parrot": {
-			"player": "",
-			"opponent": ""
+			"player": "{{value}} war der letzte Zauber, den du ausgespielt hast, der {{cost}} oder mehr kostete",
+			"opponent": "{{value}} war der letzte Zauber, den dein Gegner ausgespielt hat, der {{cost}} oder mehr kostete"
 		},
 		"cthun": {
 			"player": "Dein C'Thun ist ein {{value}}/{{value}}",
 			"opponent": "Der C'Thun deines Gegners ist ein {{value}}/{{value}}"
 		},
 		"elemental": {
-			"player": "",
-			"opponent": ""
+			"player": "Du hast im letzten Zug {{lastTurn}} Elementare und in diesem Zug {{thisTurn}} Elementare ausgespielt",
+			"opponent": "Dein Gegner hat im letzten Zug {{lastTurn}} Elementare und in diesem Zug {{thisTurn}} Elementare ausgespielt"
 		},
 		"elwynn-boar": {
 			"player": "{{value}} Elwynneber sind für dich gestorben",
@@ -1220,7 +1220,7 @@
 		},
 		"volatile-skeleton": {
 			"player": "{{value}} Instabile Skelette sind für dich gestorben",
-			"opponent": ""
+			"opponent": "{{value}} Instabile Skelette sind für deinen Gegner gestorben"
 		},
 		"fatigue": {
 			"player": "Dein letzter Erschöpfungsschaden war {{value}}",
@@ -1235,8 +1235,8 @@
 			"opponent": ""
 		},
 		"hero-power-damage": {
-			"player": "",
-			"opponent": ""
+			"player": "Deine Heldenfähigkeit hat {{value}} Schaden verursacht",
+			"opponent": "Die Heldenfähigkeit deines Gegners hat {{value}} Schaden verursacht"
 		},
 		"jade": {
 			"player": "",
@@ -2034,9 +2034,9 @@
 					"volatile-skeleton-tooltip": "Zeige, wie oft ein Instabiles Skelett für dich gestorben ist",
 					"hero-power-damage-tooltip": "Zeige den Gesamtschaden, der durch deine Heldenfähigkeit verursacht wurde. Wird nur angezeigt, wenn sich Mordresh Feuerauge oder Jan’alai der Drachenfalke in deinem Deck oder deiner Hand befinden",
 					"bolner-label": "Bolner Hammerschnabel",
-					"bolner-tooltip": "Zeige die erste Kampfschrei Karte, die in diesem Zug ausgespielt wurde, wenn sich Bolner Hammerschnabel in deiner Hand befindet",
+					"bolner-tooltip": "Zeige die erste Kampfschreikarte, die in diesem Zug ausgespielt wurde, wenn sich Bolner Hammerschnabel in deiner Hand befindet",
 					"brilliant-macaw-label": "Brillantara",
-					"brilliant-macaw-tooltip": "Zeige die letzte Kampfschrei Karte, die du ausgespielt hast, wenn sich Brillantara in deiner Hand befindet",
+					"brilliant-macaw-tooltip": "Zeige die letzte Kampfschreikarte, die du ausgespielt hast, wenn sich Brillantara in deiner Hand befindet",
 					"lady-darkvein-label": "Lady Dunkelader",
 					"lady-darkvein-tooltip": "",
 					"grey-sage-parrot-label": "Grauweisenpapagei",
