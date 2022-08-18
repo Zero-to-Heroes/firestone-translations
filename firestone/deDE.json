@@ -622,14 +622,14 @@
 				"win-coin-total-header": "",
 				"matches-going-second": "In {{totalMatches}} Spielen als Zweiter begonnen",
 				"total-header": "Gesamt",
-				"show-as-percent-button-label": "Anzeigen als %",
+				"show-as-percent-button-label": "Als % anzeigen",
 				"reset-button-label": "Statistik zurücksetzen",
 				"reset-button-tooltip": "Setze die Sieg-/Niederlagestatistik des aktuellen Decks zurück. Die vorherigen Spiele werden weiterhin im Aufzeichnung-Reiter angezeigt.",
 				"reset-confirmation": "Deine Sieg/Niederlagen Statistiken wurden zurückgesetzt.",
 				"reset-are-you-sure": "Sind Sie sicher?",
 				"delete-button-label": "Deck löschen",
 				"delete-button-step-2": "Löschen",
-				"delete-confirmation": "",
+				"delete-confirmation": "Dies wird dein Deck dauerhaft aus allen deinen Statistiken löschen. Ddas kann nicht rückgängig gemacht werden.",
 				"delete-tooltip": "Lösche dein Deck. Dies kann nicht rückgängig gemacht werden. Wenn du es nur ausblenden willst, solltest du es stattdessen archivieren."
 			},
 			"deck-details": {
@@ -658,8 +658,8 @@
 				"drag-to-merge": "",
 				"versions": {
 					"title": "Deck Versionen",
-					"click-to-view-version-stats-tooltip": "",
-					"click-to-view-all-stats-tooltip": ""
+					"click-to-view-version-stats-tooltip": "Klicke, um nur Statistiken für diese Version anzuzeigen",
+					"click-to-view-all-stats-tooltip": "Klicke nochmal, um Statistiken für alle Versionen zusammen zu sehen"
 				}
 			},
 			"meta-decks": {},
@@ -680,7 +680,7 @@
 				"header": ""
 			},
 			"rating-graph": {
-				"empty-state-message": ""
+				"empty-state-message": "Bitte überprüfe, ob ein einzigartiger Spielmodus (Standard, Wild oder Klassisch) ausgewählt ist und überprüfe den Bronze / Legende Filter."
 			},
 			"replays-recap": {
 				"header": "Letzten {{value}} Aufzeichnungen",
@@ -688,7 +688,7 @@
 			},
 			"stats": {
 				"total-games-played": "Anzahl gespielte Spiele",
-				"total-time-played": "Anzahl gespielte Zeit",
+				"total-time-played": "Gespielte Zeit",
 				"turns-to-win": "Züge zum Sieg",
 				"turns-to-lose": "Züge zur Niederlage",
 				"winrate": "Gewinnrate",
@@ -718,7 +718,7 @@
 				},
 				"hero-sort": {
 					"tier": "Rang",
-					"average-position": "Durchschn. Position",
+					"average-position": "Ø Position",
 					"mmr": "",
 					"games-played": "Gespielte Partien",
 					"last-played": "Zuletzt gespielt"
@@ -807,7 +807,7 @@
 					},
 					"winrate-stats": {
 						"community-tooltip": "",
-						"your-tooltip": ""
+						"your-tooltip": "Deine Werte für diesen Helden"
 					},
 					"mmr": {
 						"empty-state-message": "Beginne Schlachtfeld mit diesem Helden zu spielen, um Informationen zu erhalten"
@@ -828,7 +828,7 @@
 					},
 					"rows": {
 						"total-dmg-dealt-minions": "Gesamtschaden verursacht (Diener)",
-						"total-dmg-taken-minions": "Gesamt genommener Schaden (Diener)",
+						"total-dmg-taken-minions": "Gesamtschaden erlitten (Diener)",
 						"total-dmg-dealt-hero": "Gesamtschaden verursacht (Held)",
 						"total-dmg-dealt-hero-tooltip": "Enthält keine Kämpfe gegen den Geist",
 						"max-dmg-dealt-hero": "Max. Schaden verursacht (Held)",
@@ -1394,7 +1394,7 @@
 			"coins-left-header-tooltip": "",
 			"coins-needed-header": "Münzen benötigt",
 			"coins-needed-header-tooltip": "",
-			"coins-to-farm-header": "",
+			"coins-to-farm-header": "Münzen zu sammeln",
 			"coins-to-farm-header-tooltip": "",
 			"completed-tasks-header": "Erledigte Aufgaben",
 			"completed-tasks-header-tooltip": "",
@@ -1402,34 +1402,34 @@
 			"equipments-header": "Ausrüstungen",
 			"max-level": "Max. Level!",
 			"xp-tooltip": "{{value}} EP",
-			"bounties-to-farm": "",
-			"current-task-tooltip": "",
+			"bounties-to-farm": "Wo Münzen sammeln?",
+			"current-task-tooltip": "Die Aufgabe kann nur am Lagerfeuer aktualisiert werden, während die App läuft.",
 			"maxed": "Maximiert!",
-			"coins-to-farm-tooltip": "",
-			"empty-state-subtitle": "",
-			"current-task-tooltip-title": "",
-			"next-task-tooltip-title": ""
+			"coins-to-farm-tooltip": "Du kannst {{value}} Münzen von unerledigten Aufgaben erwarten",
+			"empty-state-subtitle": "Gehe zum Söldner Dorf Bildschirm in Hearthstone, um die Informationen zu aktualisieren",
+			"current-task-tooltip-title": "Aktuelle Aufgabe {{taskNumber}}: {{taskTitle}}",
+			"next-task-tooltip-title": "Nächste Aufgabe {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
 			"team": "Team",
 			"global-winrate": "Globale Gewinnrate",
 			"total-matches": "",
 			"games": "{{value}} Spiele",
-			"winrate": "",
+			"winrate": "{{value}} Gewinnrate",
 			"last-used": "Zuletzt verwendet: {{value}}",
-			"archive-button-tooltip": "",
-			"restore-button-tooltip": "",
+			"archive-button-tooltip": "Archiviere dieses Team (du kannst es später wiederherstellen)",
+			"restore-button-tooltip": "Dieses Team wiederherstellen",
 			"unnamed-team": "Unbenanntes Team"
 		},
 		"team-widget": {
-			"cooldown-left-tooltip": "",
-			"number-of-users-tooltip": "",
+			"cooldown-left-tooltip": "Züge bis die Fähigkeit wieder verwendet werden kann",
+			"number-of-users-tooltip": "Anzahl, wie oft der Söldner diese Fähigkeit in diesem Kampf benutzt hat",
 			"base-speed-text": "",
 			"speed-buff": "",
 			"speed-debuff": "",
-			"empty-state": "",
-			"merc-level-tooltip": "",
-			"unrecognized-mercenary": "",
+			"empty-state": "Gehe in ein Kopfgeld oder einen PvP Kampf um dein Team zu sehen",
+			"merc-level-tooltip": "Aktuelles Söldner Level",
+			"unrecognized-mercenary": "Unbekannter Söldner",
 			"unknown-mercenary": "Unbekannter Söldner",
 			"tasks-button": "Aufgaben",
 			"task-title": "Aufgabe {{taskNumber}}: {{taskTitle}}",
@@ -1505,11 +1505,11 @@
 			"turn": "Zug {{value}}",
 			"chance-label": "Deine Chance:",
 			"win-chance-label": "Sieg",
-			"win-chance-tooltip": "",
+			"win-chance-tooltip": "Deine Chance, den aktuellen Kampf zu gewinnen",
 			"tie-chance-label": "Unentschieden",
-			"tie-chance-tooltip": "",
+			"tie-chance-tooltip": "Deine Chance auf ein Unentschieden im aktuellen Kampf",
 			"lose-chance-label": "Niederlage",
-			"lose-chance-tooltip": "",
+			"lose-chance-tooltip": "Deine Chance, den aktuellen Kampf zu verlieren",
 			"damage-title": "Schaden",
 			"damage-dealt-tooltip": "",
 			"damage-received-tooltip": "",
@@ -1706,7 +1706,7 @@
 			"your-value-tooltip": "",
 			"community-value-tooltip": "",
 			"win-distribution-header": "",
-			"win-distribution-tooltip": "",
+			"win-distribution-tooltip": "Gewinnverteilung",
 			"top-decks-header": "",
 			"footer": ""
 		},
