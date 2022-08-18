@@ -42,6 +42,42 @@
 			"region_kr": "亚服",
 			"region_cn": "国服"
 		},
+		"set": {
+			"legacy": "怀旧",
+			"core": "核心",
+			"naxx": "纳克萨玛斯的诅咒",
+			"gvg": "地精大战侏儒",
+			"brm": "黑石山的火焰",
+			"tgt": "冠军的试炼",
+			"loe": "探险者协会",
+			"og": "上古之神的低语",
+			"kara": "卡拉赞之夜",
+			"gangs": "龙争虎斗加基森",
+			"ungoro": "勇闯安戈洛",
+			"icecrown": "冰封王座的骑士",
+			"lootapalooza": "狗头人与地下世界",
+			"gilneas": "女巫森林",
+			"boomsday": "砰砰计划",
+			"troll": "拉斯塔哈的大乱斗",
+			"dalaran": "暗影崛起",
+			"uldum": "奥丹姆奇兵",
+			"dragons": "巨龙降临",
+			"yod": "迦拉克隆的觉醒",
+			"demon_hunter_initiate": "恶魔猎手新兵",
+			"black_temple": "外域的灰烬",
+			"scholomance": "通灵学园",
+			"darkmoon_faire": "疯狂的暗月马戏团",
+			"darkmoon_races": "暗月竞速赛",
+			"the_barrens": "贫瘠之地的锤炼",
+			"wailing_caverns": "哀嚎洞穴",
+			"stormwind": "暴风城下的集结",
+			"deadmines": "死亡矿井",
+			"alterac_valley": "奥特兰克的决裂",
+			"onyxias_lair": "奥妮克希亚的巢穴",
+			"the_sunken_city": "探寻沉没之城",
+			"throne_of_tides": "潮汐王座",
+			"revendreth": "纳斯利亚堡的悬案"
+		},
 		"pack": {
 			"classic": "经典",
 			"goblins-vs-gnomes": "地精大战侏儒",
@@ -287,7 +323,20 @@
 					"collectible": "传统对战",
 					"battlegrounds": "酒馆战棋",
 					"mercenaries": "佣兵战纪",
-					"book-of-mercs": "佣兵之书"
+					"book-of-mercs": "佣兵之书",
+					"book-of-mercs-chapters": {
+						"rokara": "洛卡拉的佣兵之书",
+						"xyrella": "泽瑞拉的佣兵之书",
+						"guff": "古夫的佣兵之书",
+						"kurtrus": "库尔特鲁斯的佣兵之书",
+						"tamsin": "塔姆辛的佣兵之书",
+						"cariel": "凯瑞尔的佣兵之书",
+						"scabbs": "斯卡布斯的佣兵之书",
+						"tavish": "塔维什的佣兵之书",
+						"brukan": "布鲁坎的佣兵之书",
+						"dawngrasp": "晨拥的佣兵之书",
+						"other": "其他"
+					}
 				},
 				"owned": {
 					"all": "全部",
@@ -331,8 +380,22 @@
 			"card-details": {
 				"class": "职业：",
 				"type": "类型：",
+				"types": {
+					"minion": "随从",
+					"spell": "法术",
+					"weapon": "武器",
+					"hero": "英雄",
+					"location": "地标"
+				},
 				"set": "扩展包：",
 				"rarity": "稀有度：",
+				"rarities": {
+					"free": "免费",
+					"common": "普通",
+					"rare": "稀有",
+					"epic": "史诗",
+					"legendary": "传说"
+				},
 				"flavor": "卡牌趣闻：",
 				"sounds-title": "音效：",
 				"sounds": {
@@ -444,7 +507,7 @@
 				"in-packs": "在 {{value}} 个卡牌包中",
 				"browse-set-button": "浏览扩展包",
 				"total-non-golden-cards": "收集的非金色卡总数",
-				"total-golden-cards": ""
+				"total-golden-cards": "已收集的金卡总数"
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
@@ -471,6 +534,7 @@
 		},
 		"share": {
 			"title": "分享",
+			"window-title": "分享到 ",
 			"logged-out-message": "在发布消息之前，请点击左边的按钮登录",
 			"login-button": "登录",
 			"logout-button": "注销",
@@ -498,6 +562,7 @@
 			},
 			"filters": {
 				"filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
+				"show-hidden-decks": "显示存档套牌",
 				"deck-sort": {
 					"last-played": "按最近使用排序",
 					"games-played": "按对战场数排序",
@@ -590,7 +655,12 @@
 				"empty-state-title": "暂无记录",
 				"empty-state-subtitle": "开始传统对战天梯以开启记录！或者先检查上面的过滤器: )",
 				"drag-to-merge-default": "拖动到另一个套牌以合并为新版本",
-				"drag-to-merge": "拖放它以创建一个新版本的 {{deckName}}"
+				"drag-to-merge": "拖放它以创建一个新版本的 {{deckName}}",
+				"versions": {
+					"title": "套牌版本",
+					"click-to-view-version-stats-tooltip": "",
+					"click-to-view-all-stats-tooltip": ""
+				}
 			},
 			"meta-decks": {},
 			"ladder-stats": {
@@ -901,7 +971,8 @@
 				"tier-b-tooltip": "凑合能玩",
 				"tier-c-tooltip": "不太彳亍",
 				"tier-d-tooltip": "尽量别玩",
-				"tier-e-tooltip": "千万别玩"
+				"tier-e-tooltip": "千万别玩",
+				"tier-list-title-footer": "最后更新于 {{lastUpdateDate}}"
 			},
 			"leaderboard": {
 				"rank": "名次",
@@ -1537,7 +1608,8 @@
 			"achievement-completed": "完成成就",
 			"achievement-missing": "未完成成就",
 			"total-matches": "{{value}} 场对战",
-			"tier-list-title-tooltip": "筛选后共计 {{totalMatches}} 场（更改主应用程序中的筛选规则将更新数据）："
+			"tier-list-title-tooltip": "筛选后共计 {{totalMatches}} 场（更改主应用程序中的筛选规则将更新数据）：",
+			"tier-list-title-footer": "最近更新于 {{lastUpdateDate}}"
 		},
 		"in-game": {
 			"face-offs": {

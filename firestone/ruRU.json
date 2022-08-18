@@ -42,6 +42,42 @@
 			"region_kr": "Азия",
 			"region_cn": "Китай"
 		},
+		"set": {
+			"legacy": "Прошлые наборы",
+			"core": "Основной набор",
+			"naxx": "Проклятие Наксрамаса",
+			"gvg": "Гоблины и гномы",
+			"brm": "Чёрная гора",
+			"tgt": "Большой турнир",
+			"loe": "Лига исследователей",
+			"og": "Пробуждение древних богов",
+			"kara": "Вечеринка в Каражане",
+			"gangs": "Злачный город Прибамбасск",
+			"ungoro": "Экспедиция в Ун'Горо",
+			"icecrown": "Рыцари Ледяного Трона",
+			"lootapalooza": "Кобольды и катакомбы",
+			"gilneas": "Ведьмин лес",
+			"boomsday": "Проект Бумного дня",
+			"troll": "Растахановы игрища",
+			"dalaran": "Возмездие теней",
+			"uldum": "Спасители Ульдума",
+			"dragons": "Натиск драконов",
+			"yod": "Пробуждение Галакронда",
+			"demon_hunter_initiate": "Иллидари-посвященный",
+			"black_temple": "Руины Запределья",
+			"scholomance": "Некроситет",
+			"darkmoon_faire": "Ярмарка безумия",
+			"darkmoon_races": "Гонки Новолуния",
+			"the_barrens": "Закаленные Степями",
+			"wailing_caverns": "Пещеры Стенаний",
+			"stormwind": "Сплочённые Штормградом",
+			"deadmines": "Мёртвые копи",
+			"alterac_valley": "Разделенные Альтераком",
+			"onyxias_lair": "Логово Ониксии",
+			"the_sunken_city": "Путешествие в Затонувший город",
+			"throne_of_tides": "Трон Приливов",
+			"revendreth": "Убийство в замке Нафрия"
+		},
 		"pack": {
 			"classic": "Классический",
 			"goblins-vs-gnomes": "Гоблины и гномы",
@@ -287,7 +323,20 @@
 					"collectible": "Основной режим",
 					"battlegrounds": "Поля сражений",
 					"mercenaries": "Наёмники",
-					"book-of-mercs": "Книга наёмников"
+					"book-of-mercs": "Книга наёмников",
+					"book-of-mercs-chapters": {
+						"rokara": "История Рокары",
+						"xyrella": "История Зиреллы",
+						"guff": "История Гаффа",
+						"kurtrus": "История Куртруса",
+						"tamsin": "История Тамсин",
+						"cariel": "История Кариэль",
+						"scabbs": "История Скаббса",
+						"tavish": "История Тавиша",
+						"brukan": "История Бру'кана",
+						"dawngrasp": "История Вардена",
+						"other": "Другие истории"
+					}
 				},
 				"owned": {
 					"all": "Все",
@@ -331,8 +380,22 @@
 			"card-details": {
 				"class": "Класс:",
 				"type": "Тип:",
+				"types": {
+					"minion": "Существо",
+					"spell": "Заклинание",
+					"weapon": "Оружие",
+					"hero": "Герой",
+					"location": "Область"
+				},
 				"set": "Набор:",
 				"rarity": "Редкость:",
+				"rarities": {
+					"free": "Бесплатно",
+					"common": "Обычная",
+					"rare": "Редкая",
+					"epic": "Эпическая",
+					"legendary": "Легендарная"
+				},
 				"flavor": "Художественный текст:",
 				"sounds-title": "Звуки:",
 				"sounds": {
@@ -367,7 +430,7 @@
 						"won": "Победа",
 						"mirror-start": "Зеркальный старт",
 						"error-need-weapon": "Нужно оружие",
-						"error-need-mana": "Нужна мана",
+						"error-need-mana": "Недостаточно маны",
 						"error-minion-attacked": "Существо уже атаковало",
 						"error-i-attacked": "Я уже атаковал(а)",
 						"error-just-played": "Существо только что разыграно",
@@ -406,7 +469,7 @@
 				"pack-stat-tooltip": "Всего комплектов \"{{packName}}\" получено: {{totalPacks}}",
 				"main-sets-group-name": "Основные ({{totalPacks}})",
 				"non-buyable-group-name": "Специальные ({{totalPacks}})",
-				"other-group-name": "Другое ({{totalPacks}})"
+				"other-group-name": "Прочие ({{totalPacks}})"
 			},
 			"set-stats": {
 				"title": "Статистика набора",
@@ -443,8 +506,8 @@
 				"next-guaranteed": "Гарантированная",
 				"in-packs": "в след. {{value}} комплектах",
 				"browse-set-button": "Смотреть карты",
-				"total-non-golden-cards": "",
-				"total-golden-cards": ""
+				"total-non-golden-cards": "Всего незолотых карт собрано",
+				"total-golden-cards": "Всего золотых карт собрано"
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
@@ -471,6 +534,7 @@
 		},
 		"share": {
 			"title": "Поделиться",
+			"window-title": "Поделиться в",
 			"logged-out-message": "Пожалуйста, используйте кнопку слева для того, чтобы войти, перед тем, как писать сообщение",
 			"login-button": "Войти",
 			"logout-button": "Выйти",
@@ -498,6 +562,7 @@
 			},
 			"filters": {
 				"filter-info-tooltip": "Изменение этих фильтров также повлияет на статистику, отображаемую в трекере колоды",
+				"show-hidden-decks": "Показать архивные",
 				"deck-sort": {
 					"last-played": "Последнее использование",
 					"games-played": "Сыграно партий",
@@ -590,7 +655,12 @@
 				"empty-state-title": "Здесь пока ничего нет",
 				"empty-state-subtitle": "Играйте в рейтинг, чтобы начать, или проверьте фильтры выше :)",
 				"drag-to-merge-default": "",
-				"drag-to-merge": ""
+				"drag-to-merge": "",
+				"versions": {
+					"title": "Версии колоды",
+					"click-to-view-version-stats-tooltip": "",
+					"click-to-view-all-stats-tooltip": ""
+				}
 			},
 			"meta-decks": {},
 			"ladder-stats": {
@@ -779,7 +849,7 @@
 						"battle-luck-explain-link": "Что это?",
 						"battle-luck-explain-link-tooltip": "Показатель, который говорит о том, насколько удачливым вы были в сражениях. Нажмите для получения дополнительной информации",
 						"negative-battle-luck": "Неудача в бою",
-						"best-stat-hero": "",
+						"best-stat-hero": "Рекорд поставил {{heroName}}",
 						"watch-replay-tooltip": "Смотреть повтор, где это значение было получено"
 					},
 					"record-broken-tooltip": "Вы побили свой рекорд!"
@@ -886,7 +956,7 @@
 				"wins-distribution-tooltip": "Распределение побед"
 			},
 			"run": {
-				"replays-title": "",
+				"replays-title": "Повторы партий из того же забега",
 				"rating": "Рейтинг",
 				"view-deck-button": "Смотреть колоду",
 				"view-run-button": "Смотреть забег",
@@ -901,7 +971,8 @@
 				"tier-b-tooltip": "Хороший выбор",
 				"tier-c-tooltip": "Нормальный выбор",
 				"tier-d-tooltip": "Плохой выбор",
-				"tier-e-tooltip": "Ужасный выбор"
+				"tier-e-tooltip": "Ужасный выбор",
+				"tier-list-title-footer": ""
 			},
 			"leaderboard": {
 				"rank": "Место",
@@ -1537,7 +1608,8 @@
 			"achievement-completed": "Достижение выполнено",
 			"achievement-missing": "Недостающие достижения",
 			"total-matches": "{{value}} матчей",
-			"tier-list-title-tooltip": "Тир-лист создан на основе {{totalMatches}} партий отобранных согласно фильтрам из основного окна:"
+			"tier-list-title-tooltip": "Тир-лист создан на основе {{totalMatches}} партий отобранных согласно фильтрам из основного окна:",
+			"tier-list-title-footer": ""
 		},
 		"in-game": {
 			"face-offs": {
