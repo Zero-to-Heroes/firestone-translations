@@ -805,13 +805,21 @@
 						"place-4": "4th!",
 						"place-default": "{{value}}th"
 					},
-					"warband-stats": {
-						"community-tooltip": "Average total stats (attack + health) on board at the beginning of each turn battle",
-						"your-tooltip": "Your values for this hero"
-					},
 					"winrate-stats": {
+						"community-label": "Average for hero",
 						"community-tooltip": "Average winrate (% chance to win a battle) per turn for this hero",
-						"your-tooltip": "Your values for this hero"
+						"your-label": "Current run",
+						"your-tooltip": "Your values for this hero",
+						"turn-label": "Turn",
+						"winrate-label": "Winrate",
+					},
+					"warband-stats": {
+						"community-label": "Average for hero",
+						"community-tooltip": "Average total stats (attack + health) on board at the beginning of each turn battle",
+						"your-label": "Current run",
+						"your-tooltip": "Your values for this hero",
+						"turn-label": "Turn",
+						"stat-label": "Stat",
 					},
 					"mmr": {
 						"empty-state-message": "Start playing Battlegrounds with this hero to collect some information"
@@ -1679,9 +1687,18 @@
 				"empty-state-title": "No information available",
 				"empty-state-subtitle": "Older games, or very long games, don't have the turn-by-turn composition stored."
 			},
+			"winrate-stats": {
+				"community-label": "Average for hero",
+				"your-label": "Current run",
+				"turn-label": "Turn",
+				"winrate-label": "Winrate",	
+			},
 			"warband-stats": {
 				"community-label": "Average for hero",
-				"your-label": "Current run"
+				"your-label": "Current run",
+				"turn-label": "Turn",
+				"stat-label": "Stat",
+				"delta-label": "+{{delta}} this turn"
 			}
 		},
 		"overlay-button": {
