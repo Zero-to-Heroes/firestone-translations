@@ -524,7 +524,7 @@
 				},
 				"no-search-results": {
 					"title": "О нет! Нет совпадений: \"{{value}}\"",
-					"subtitle": "Не сдавайтесь - проверьте написание или попробуйте использовать менее специфические термины."
+					"subtitle": "Не сдавайтесь: проверьте написание или переформулируйте ваш запрос."
 				},
 				"default": {
 					"title": "Здесь пока ничего нет",
@@ -534,7 +534,7 @@
 		},
 		"share": {
 			"title": "Поделиться",
-			"window-title": "Поделиться в",
+			"window-title": "Поделиться в ",
 			"logged-out-message": "Пожалуйста, используйте кнопку слева для того, чтобы войти, перед тем, как писать сообщение",
 			"login-button": "Войти",
 			"logout-button": "Выйти",
@@ -617,10 +617,10 @@
 				"win-total-header": "Побед",
 				"win-play-percent-header": "% побед первым",
 				"win-play-total-header": "Побед первым",
-				"matches-going-first": "",
+				"matches-going-first": "Ходил первым в {{totalMatches}} матчах",
 				"win-coin-percent-header": "% побед с монеткой",
 				"win-coin-total-header": "Побед с монеткой",
-				"matches-going-second": "Сыграно {{totalMatches}} матчей, идущих вторым",
+				"matches-going-second": "Ходил вторым в {{totalMatches}} матчах",
 				"total-header": "Всего",
 				"show-as-percent-button-label": "Показать в %",
 				"reset-button-label": "Сбросить статистику",
@@ -668,7 +668,7 @@
 				"title-opponent": "Разбивка классов противников",
 				"player-class-tooltip": "Ваш класс: {{className}}",
 				"opponent-class-tooltip": "Класс противника: {{className}}",
-				"total": "Общий",
+				"total": "Всего",
 				"going-first-button-label": "Только без монетки",
 				"going-second-button-label": "Только с монеткой",
 				"tab-selection": {
@@ -921,6 +921,9 @@
 					"global-pickrate": "",
 					"global-offering": "",
 					"player-pickrate": ""
+				},
+				"passive-treasures": {
+					"all": "Все пассивные сокровища"
 				}
 			},
 			"deck-stat": {
@@ -972,7 +975,7 @@
 				"tier-c-tooltip": "Нормальный выбор",
 				"tier-d-tooltip": "Плохой выбор",
 				"tier-e-tooltip": "Ужасный выбор",
-				"tier-list-title-footer": ""
+				"tier-list-title-footer": "Обновлен {{lastUpdateDate}}"
 			},
 			"leaderboard": {
 				"rank": "Место",
@@ -1186,7 +1189,7 @@
 			"player": "Вы сыграли {{value}} прыг-скокеров",
 			"opponent": "Ваш противник сыграл {{value}} прыг-скокеров"
 		},
-		"bolner": "",
+		"bolner": "Первый боевой клич разыгранный на этом ходу: {{value}}",
 		"multicaster": {
 			"player": "Вы доберете {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}",
 			"opponent": "Ваш противник доберет {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}"
@@ -1211,7 +1214,7 @@
 			"opponent": "К'Тун противника имеет характеристики {{value}}/{{value}}"
 		},
 		"elemental": {
-			"player": "",
+			"player": "Вы разыграли {{lastTurn}} элементалей на прошлом ходу и {{thisTurn}} элементалей на этом",
 			"opponent": ""
 		},
 		"elwynn-boar": {
@@ -1467,8 +1470,8 @@
 		},
 		"stats": {
 			"deck-winrate": "Винрейт",
-			"deck-winrate-tooltip": "Винрейт этой колоды с {{value}}",
-			"deck-winrate-vs-class": "Против {{value}}",
+			"deck-winrate-tooltip": "Винрейт этой колоды с <br/>{{value}}",
+			"deck-winrate-vs-class": "VS {{value}}",
 			"deck-winrate-vs-class-tooltip": "Винрейт этой колоды против {{opponent}} с {{date}}"
 		},
 		"secrets-helper": {
@@ -1560,8 +1563,8 @@
 			"simulated": "Симуляция",
 			"empty-state-title": "Здесь пока ничего нет",
 			"empty-state-subtitle": "Ваша первая битва будет показана здесь после того, как вы столкнетесь с противником",
-			"battles-header": "",
-			"turn-winrate-graph-title": "Средняя доля побед по ходам",
+			"battles-header": "Все сражения",
+			"turn-winrate-graph-title": "Средний венрейт по ходам",
 			"hero-power-title": "Сила героя",
 			"hero-power-info-tavish": "Текущий ход:",
 			"hero-powers-header": "Силы героев",
@@ -1606,17 +1609,17 @@
 		"turn-counter": {},
 		"hero-selection": {
 			"achievement-completed": "Достижение выполнено",
-			"achievement-missing": "Недостающие достижения",
+			"achievement-missing": "Недостающее достижение",
 			"total-matches": "{{value}} матчей",
 			"tier-list-title-tooltip": "Тир-лист создан на основе {{totalMatches}} партий отобранных согласно фильтрам из основного окна:",
-			"tier-list-title-footer": ""
+			"tier-list-title-footer": "Обновлен {{lastUpdateDate}}"
 		},
 		"in-game": {
 			"face-offs": {
 				"header": {
 					"hero": "Герой",
-					"won": "Выиграно",
-					"lost": "Проиграно",
+					"won": "Побед",
+					"lost": "Поражений",
 					"tied": "Ничьи"
 				}
 			},
@@ -1631,8 +1634,8 @@
 				"tavern-last-upgrade-title": "Последние улучшения",
 				"tavern-empty-state": "Не было улучшений таверны",
 				"last-opponent-icon-tooltip": "Был противником в прошлом раунде",
-				"triple-title": "Новых триплетов",
-				"triple-tooltip": "",
+				"triple-title": "Новые триплеты",
+				"triple-tooltip": "С последней битвы, этот противник получил {{quantity}} миньонов с таверны {{tier}} уровня в качестве награды за триплет",
 				"triple-empty-state": "Не было новых триплетов",
 				"buddies-title": "Компаньоны ­получены",
 				"buddies-empty-state": "Нет компаньонов",
@@ -1649,7 +1652,7 @@
 			}
 		},
 		"post-match-stats": {
-			"title": "",
+			"title": "Статистика последнего матча",
 			"final-board": "Финальный стол",
 			"current-board": "Финальный стол",
 			"final-position": "Вы закончили #{{position}}",
@@ -1664,7 +1667,7 @@
 			},
 			"hp-graph": {
 				"legend-title": "Показать:",
-				"player-health": "{{playerName}} ед. здоровья"
+				"player-health": "{{playerName}} здоровья"
 			},
 			"composition": {
 				"blank-tribe": "Без типа / Все",
@@ -1672,7 +1675,7 @@
 				"empty-state-subtitle": ""
 			},
 			"warband-stats": {
-				"community-label": "В среднем <br/> для героя",
+				"community-label": "В среднем для героя",
 				"your-label": "Данный матч"
 			}
 		},
@@ -1702,9 +1705,9 @@
 			"player-matches": "{{value}} матчей",
 			"your-value-tooltip": "Ваше значение",
 			"community-value-tooltip": "В среднем для героя, согласно фильтрам установленным в основном окне",
-			"win-distribution-header": "Распределение побед ({{value}} забегов)",
+			"win-distribution-header": "Распределение побед ({{value}} забегов)",
 			"win-distribution-tooltip": "Распределение побед",
-			"top-decks-header": "Результативные колоды ({{value}} колод)",
+			"top-decks-header": "Результативные колоды ({{value}} колод)",
 			"footer": "Зажмите клавишу Shift, чтобы предотвратить скрытие этого виджета"
 		},
 		"deck-select": {
@@ -1725,7 +1728,7 @@
 		},
 		"buttons": {
 			"reset-tooltip": "Начать новую сессию и сбросить всю статистику",
-			"close-tooltip": "Закрыть и отключить виджет. Если вы хотите включить его снова, сделайте это в настройках"
+			"close-tooltip": "Закрыть и отключить виджет. Если вы захотите снова его включить, вы можете сделать это в настройках"
 		},
 		"summary": {
 			"total-games": "Игр: {{value}}",
@@ -1746,7 +1749,7 @@
 					"7": "7-е",
 					"8": "8-е"
 				},
-				"value-tooltip": "Сколько раз вы заняли это место в этой сессии"
+				"value-tooltip": "Сколько раз вы заняли это место в текущей сессии"
 			}
 		}
 	},
@@ -2124,7 +2127,7 @@
 				"popup-hero-selection-screen-tooltip": "",
 				"use-mmr-filter-for-live-stats-label-short": "",
 				"use-mmr-filter-for-live-stats-tooltip": "",
-				"use-tribe-filter-for-live-stats-label-short": "Фильтр типов существ",
+				"use-tribe-filter-for-live-stats-label-short": "Фильтр типов существ",
 				"use-tribe-filter-for-live-stats-tooltip": "",
 				"show-next-opponent-recap-label": "",
 				"show-next-opponent-recap-tooltip": "",
