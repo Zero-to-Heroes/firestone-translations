@@ -43,6 +43,10 @@
 			"region_cn": "Китай"
 		},
 		"set": {
+			"hero-skins": "",
+			"lettuce": "",
+			"battlegrounds": "",
+			"vanilla": "",
 			"legacy": "Прошлые наборы",
 			"core": "Основной набор",
 			"naxx": "Проклятие Наксрамаса",
@@ -356,10 +360,14 @@
 				}
 			},
 			"card-history": {
+				"version": {
+					"golden": "",
+					"diamond": ""
+				},
 				"new-copy": "Новая",
 				"second-copy": "Вторая",
-				"new-copy-long": "Новая карта",
-				"second-copy-long": "Вторая копия",
+				"new-copy-long": "",
+				"second-copy-long": "",
 				"title": "История получения карт",
 				"you-have-viewed": "Вы просмотрели {{numberOfCards}} из {{totalCards}} карт",
 				"load-more-button": "Ещё",
@@ -367,8 +375,7 @@
 				"empty-state-subtitle": "Откройте комплект, чтобы начать!",
 				"golden-card": "[Золотая] {{cardName}}",
 				"diamond-card": "[Алмазная] {{cardName}}",
-				"click-to-view": "Нажмите, чтобы {{link}}",
-				"click-to-view-link": "развернуть",
+				"click-to-expand": "",
 				"duplicate-cards": "{{numberOfCards}} дубликата карт",
 				"dust-potential": "Потенциально +{{dust}} пыли"
 			},
@@ -801,13 +808,21 @@
 						"place-4": "4 место!",
 						"place-default": "{{value}} место"
 					},
-					"warband-stats": {
-						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода битвы",
-						"your-tooltip": "Ваши значения для этого героя"
-					},
 					"winrate-stats": {
+						"community-label": "",
 						"community-tooltip": "Средняя вероятность победы каждый ход для этого героя",
-						"your-tooltip": "Ваши значения для этого героя"
+						"your-label": "",
+						"your-tooltip": "Ваши значения для этого героя",
+						"turn-label": "",
+						"winrate-label": ""
+					},
+					"warband-stats": {
+						"community-label": "",
+						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода битвы",
+						"your-label": "",
+						"your-tooltip": "Ваши значения для этого героя",
+						"turn-label": "",
+						"stat-label": ""
 					},
 					"mmr": {
 						"empty-state-message": "Начните играть в Поля сражений этим героем, чтоб собрать информацию"
@@ -1374,6 +1389,10 @@
 			"title": "Здесь пока ничего нет",
 			"subtitle": "Для начала сыграйте несколько матчей в Наёмников! Кроме того, проверьте свои фильтры выше :)"
 		},
+		"search-empty-state": {
+			"title": "",
+			"subtitle": ""
+		},
 		"hero-stats": {
 			"games-played": "Сыграно партий",
 			"winrate": "Доля побед",
@@ -1416,7 +1435,7 @@
 			"total-matches": "Всего матчей",
 			"games": "Игр: {{value}}",
 			"winrate": "Доля побед: {{value}}%",
-			"last-used": "Посл. игра: {{value}}",
+			"last-used": "",
 			"archive-button-tooltip": "Архивировать этот отряд (вы можете восстановить его позже)",
 			"restore-button-tooltip": "Восстановить этот отряд",
 			"unnamed-team": "Безымянный отряд"
@@ -1432,6 +1451,7 @@
 			"unrecognized-mercenary": "Неопознанный наёмник",
 			"unknown-mercenary": "Неизвестный наёмник",
 			"tasks-button": "Задачи",
+			"tasks-completed": "",
 			"task-title": "Задача {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Прогресс:",
 			"task-progress-tooltip": "Прогресс квеста в начале",
@@ -1632,6 +1652,7 @@
 				"score-board-tooltip": "",
 				"tavern-upgrade-title": "Улучшения таверны",
 				"tavern-last-upgrade-title": "Последние улучшения",
+				"tavern-latest-upgrade-title": "",
 				"tavern-empty-state": "Не было улучшений таверны",
 				"last-opponent-icon-tooltip": "Был противником в прошлом раунде",
 				"triple-title": "Новые триплеты",
@@ -1674,9 +1695,18 @@
 				"empty-state-title": "Информация недоступна",
 				"empty-state-subtitle": ""
 			},
+			"winrate-stats": {
+				"community-label": "",
+				"your-label": "",
+				"turn-label": "",
+				"winrate-label": ""
+			},
 			"warband-stats": {
 				"community-label": "В среднем для героя",
-				"your-label": "Данный матч"
+				"your-label": "Данный матч",
+				"turn-label": "",
+				"stat-label": "",
+				"delta-label": ""
 			}
 		},
 		"overlay-button": {
