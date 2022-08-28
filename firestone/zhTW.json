@@ -43,6 +43,10 @@
 			"region_cn": "中國"
 		},
 		"set": {
+			"hero-skins": "",
+			"lettuce": "",
+			"battlegrounds": "",
+			"vanilla": "",
 			"legacy": "",
 			"core": "",
 			"naxx": "",
@@ -356,10 +360,14 @@
 				}
 			},
 			"card-history": {
+				"version": {
+					"golden": "",
+					"diamond": ""
+				},
 				"new-copy": "新",
 				"second-copy": "第二",
-				"new-copy-long": "新卡",
-				"second-copy-long": "第二張",
+				"new-copy-long": "",
+				"second-copy-long": "",
 				"title": "我的開包歷史",
 				"you-have-viewed": "您已查看 {{numberOfCards}} 張卡片，共 {{totalCards}} 張卡片",
 				"load-more-button": "讀取更多",
@@ -367,8 +375,7 @@
 				"empty-state-subtitle": "打開一包！",
 				"golden-card": "{{cardName}} 金卡",
 				"diamond-card": "{{cardName}} 鑽石卡",
-				"click-to-view": "點擊{{link}}",
-				"click-to-view-link": "展開",
+				"click-to-expand": "",
 				"duplicate-cards": "{{numberOfCards}} 重複卡",
 				"dust-potential": ""
 			},
@@ -801,13 +808,21 @@
 						"place-4": "第四!",
 						"place-default": "第{{value}}"
 					},
-					"warband-stats": {
-						"community-tooltip": "每回合戰鬥開始時船上的平均總統計數據（攻擊+健康）",
-						"your-tooltip": "你玩這個英雄的戰績"
-					},
 					"winrate-stats": {
+						"community-label": "",
 						"community-tooltip": "此英雄每回合平均勝率(% 機率贏得戰鬥)",
-						"your-tooltip": "你玩這個英雄的戰績"
+						"your-label": "",
+						"your-tooltip": "你玩這個英雄的戰績",
+						"turn-label": "",
+						"winrate-label": ""
+					},
+					"warband-stats": {
+						"community-label": "",
+						"community-tooltip": "每回合戰鬥開始時船上的平均總統計數據（攻擊+健康）",
+						"your-label": "",
+						"your-tooltip": "你玩這個英雄的戰績",
+						"turn-label": "",
+						"stat-label": ""
 					},
 					"mmr": {
 						"empty-state-message": "使用此英雄遊玩戰場以收集資訊"
@@ -1374,6 +1389,10 @@
 			"title": "尚未有任何內容",
 			"subtitle": "玩一些僱傭兵比賽開始！ 另外，檢查上面的過濾器:)"
 		},
+		"search-empty-state": {
+			"title": "",
+			"subtitle": ""
+		},
 		"hero-stats": {
 			"games-played": "已遊玩局數",
 			"winrate": "勝率",
@@ -1416,7 +1435,7 @@
 			"total-matches": "",
 			"games": "{{value}} 場對戰",
 			"winrate": "{{value}}% 勝率",
-			"last-used": "最後一次使用：{{value}}",
+			"last-used": "",
 			"archive-button-tooltip": "歸檔此陣容(你可以之後復原)",
 			"restore-button-tooltip": "復原此陣容",
 			"unnamed-team": "未命名陣容"
@@ -1432,6 +1451,7 @@
 			"unrecognized-mercenary": "無法識別的傭兵",
 			"unknown-mercenary": "未知的傭兵",
 			"tasks-button": "任務",
+			"tasks-completed": "",
 			"task-title": "任務 {{taskNumber}}：{{taskTitle}}",
 			"task-progress-label": "進度：",
 			"task-progress-tooltip": "戰鬥開始時的任務進度",
@@ -1632,6 +1652,7 @@
 				"score-board-tooltip": "回顧你遇到的其他玩家",
 				"tavern-upgrade-title": "升星歷程",
 				"tavern-last-upgrade-title": "最後一次升級旅店",
+				"tavern-latest-upgrade-title": "",
 				"tavern-empty-state": "無升星歷程",
 				"last-opponent-icon-tooltip": "這是你的上一個對手",
 				"triple-title": "新的三合一",
@@ -1674,9 +1695,18 @@
 				"empty-state-title": "沒有可用的資訊",
 				"empty-state-subtitle": "過就賽局或過長賽局無回合紀錄"
 			},
+			"winrate-stats": {
+				"community-label": "",
+				"your-label": "",
+				"turn-label": "",
+				"winrate-label": ""
+			},
 			"warband-stats": {
 				"community-label": "英雄平均排名",
-				"your-label": "當前賽局"
+				"your-label": "當前賽局",
+				"turn-label": "",
+				"stat-label": "",
+				"delta-label": ""
 			}
 		},
 		"overlay-button": {
