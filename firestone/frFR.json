@@ -43,6 +43,10 @@
 			"region_cn": "Chine"
 		},
 		"set": {
+			"hero-skins": "",
+			"lettuce": "",
+			"battlegrounds": "",
+			"vanilla": "",
 			"legacy": "Héritage",
 			"core": "Fondamental",
 			"naxx": "La malédiction de Naxxramas",
@@ -356,10 +360,14 @@
 				}
 			},
 			"card-history": {
+				"version": {
+					"golden": "",
+					"diamond": ""
+				},
 				"new-copy": "Nouvelle",
 				"second-copy": "Seconde",
-				"new-copy-long": "Nouvelle carte",
-				"second-copy-long": "Second exemplaire",
+				"new-copy-long": "",
+				"second-copy-long": "",
 				"title": "Mon historique de cartes",
 				"you-have-viewed": "Vous avez consulté {{numberOfCards}} cartes sur {{totalCards}}",
 				"load-more-button": "Afficher plus",
@@ -367,8 +375,7 @@
 				"empty-state-subtitle": "Ouvrez un paquet pour en commencer un !",
 				"golden-card": "{{cardName}} dorée",
 				"diamond-card": "{{cardName}} Diamant",
-				"click-to-view": "Cliquez pour {{link}}",
-				"click-to-view-link": "voir plus",
+				"click-to-expand": "",
 				"duplicate-cards": "{{numberOfCards}} Cartes en trop",
 				"dust-potential": "+{{dust}} poussière potentielle"
 			},
@@ -801,13 +808,21 @@
 						"place-4": "4e place !",
 						"place-default": "{{value}}e place"
 					},
-					"warband-stats": {
-						"community-tooltip": "Stats totales moyennes (attaque + vie) sur le champ de bataille au début de chaque combat",
-						"your-tooltip": "Vos stats pour ce héros"
-					},
 					"winrate-stats": {
+						"community-label": "",
 						"community-tooltip": "Taux de victoires moyen (% de chances de gagner un combat) par tour pour ce héros",
-						"your-tooltip": "Vos stats pour ce héros"
+						"your-label": "",
+						"your-tooltip": "Vos stats pour ce héros",
+						"turn-label": "",
+						"winrate-label": ""
+					},
+					"warband-stats": {
+						"community-label": "",
+						"community-tooltip": "Stats totales moyennes (attaque + vie) sur le champ de bataille au début de chaque combat",
+						"your-label": "",
+						"your-tooltip": "Vos stats pour ce héros",
+						"turn-label": "",
+						"stat-label": ""
 					},
 					"mmr": {
 						"empty-state-message": "Commencez à jouer à Champs de bataille avec ce héros pour collecter des informations"
@@ -1374,6 +1389,10 @@
 			"title": "Rien ici pour le moment",
 			"subtitle": "Jouez une partie de Mercenaires pour commencer, ou vérifiez vos filtres ci-dessus :)"
 		},
+		"search-empty-state": {
+			"title": "",
+			"subtitle": ""
+		},
 		"hero-stats": {
 			"games-played": "Parties jouées",
 			"winrate": "Taux de victoires",
@@ -1416,7 +1435,7 @@
 			"total-matches": "Nb de parties",
 			"games": "{{value}} parties",
 			"winrate": "{{value}} % victoires",
-			"last-used": "Vu le {{value}}",
+			"last-used": "",
 			"archive-button-tooltip": "Archiver ce groupe (vous pourrez le restaurer plus tard)",
 			"restore-button-tooltip": "Restaurer ce groupe",
 			"unnamed-team": "Groupe sans nom"
@@ -1432,6 +1451,7 @@
 			"unrecognized-mercenary": "Mercenaire non reconnu",
 			"unknown-mercenary": "Mercenaire inconnu",
 			"tasks-button": "Tâches",
+			"tasks-completed": "",
 			"task-title": "Tâche {{taskNumber}} : {{taskTitle}}",
 			"task-progress-label": "Progression :",
 			"task-progress-tooltip": "Progression de la quête au début de la rencontre",
@@ -1632,6 +1652,7 @@
 				"score-board-tooltip": "Résumé de toutes les rencontres que vous avez eues avec les autres joueurs",
 				"tavern-upgrade-title": "Améliorations de la taverne",
 				"tavern-last-upgrade-title": "Dernières améliorations",
+				"tavern-latest-upgrade-title": "",
 				"tavern-empty-state": "Pas d’amélioration de taverne",
 				"last-opponent-icon-tooltip": "Était l'adversaire du dernier combat",
 				"triple-title": "Nouveaux triples",
@@ -1674,9 +1695,18 @@
 				"empty-state-title": "Aucune information disponible",
 				"empty-state-subtitle": "La composition tour par tour ne peut pas être affichée pour les parties très longues ou plus anciennes."
 			},
+			"winrate-stats": {
+				"community-label": "",
+				"your-label": "",
+				"turn-label": "",
+				"winrate-label": ""
+			},
 			"warband-stats": {
 				"community-label": "Moyenne pour ce héros",
-				"your-label": "Partie en cours"
+				"your-label": "Partie en cours",
+				"turn-label": "",
+				"stat-label": "",
+				"delta-label": ""
 			}
 		},
 		"overlay-button": {
