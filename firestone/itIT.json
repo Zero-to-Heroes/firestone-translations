@@ -43,6 +43,10 @@
 			"region_cn": "Cina"
 		},
 		"set": {
+			"hero-skins": "",
+			"lettuce": "",
+			"battlegrounds": "",
+			"vanilla": "",
 			"legacy": "",
 			"core": "",
 			"naxx": "",
@@ -356,10 +360,14 @@
 				}
 			},
 			"card-history": {
+				"version": {
+					"golden": "",
+					"diamond": ""
+				},
 				"new-copy": "Nuova",
 				"second-copy": "Seconda",
-				"new-copy-long": "Nuova carta",
-				"second-copy-long": "Seconda copia",
+				"new-copy-long": "",
+				"second-copy-long": "",
 				"title": "La Cronologia delle mie Carte",
 				"you-have-viewed": "Hai visualizzato {{numberOfCards}} di {{totalCards}} carte",
 				"load-more-button": "Carica di più",
@@ -367,8 +375,7 @@
 				"empty-state-subtitle": "Apri un pacchetto per iniziarne uno!",
 				"golden-card": "{{cardName}} Dorata",
 				"diamond-card": "{{cardName}} di Diamante",
-				"click-to-view": "Clicca per {{link}}",
-				"click-to-view-link": "espandi",
+				"click-to-expand": "",
 				"duplicate-cards": "{{numberOfCards}} carte duplicate",
 				"dust-potential": ""
 			},
@@ -801,13 +808,21 @@
 						"place-4": "4°!",
 						"place-default": "{{value}}°"
 					},
-					"warband-stats": {
-						"community-tooltip": "Statistiche totali medie (attacco + salute) all'inizio della battaglia di ogni turno",
-						"your-tooltip": "I tuoi valori per questo eroe"
-					},
 					"winrate-stats": {
+						"community-label": "",
 						"community-tooltip": "Tasso di vittorie medio (% di probabilità di vincere una battaglia) per turno per questo eroe",
-						"your-tooltip": "I tuoi valori per questo eroe"
+						"your-label": "",
+						"your-tooltip": "I tuoi valori per questo eroe",
+						"turn-label": "",
+						"winrate-label": ""
+					},
+					"warband-stats": {
+						"community-label": "",
+						"community-tooltip": "Statistiche totali medie (attacco + salute) all'inizio della battaglia di ogni turno",
+						"your-label": "",
+						"your-tooltip": "I tuoi valori per questo eroe",
+						"turn-label": "",
+						"stat-label": ""
 					},
 					"mmr": {
 						"empty-state-message": "Inizia a giocare ai Campi di Battaglia con questo eroe per raccogliere alcune informazioni"
@@ -1374,6 +1389,10 @@
 			"title": "Ancora niente qui",
 			"subtitle": "Gioca delle partite di mercenari per iniziare! Inoltre, dai un'occhiata ai tuoi filtri sopra :)"
 		},
+		"search-empty-state": {
+			"title": "",
+			"subtitle": ""
+		},
 		"hero-stats": {
 			"games-played": "Partite giocate",
 			"winrate": "Tasso di vittoria",
@@ -1416,7 +1435,7 @@
 			"total-matches": "",
 			"games": "{{value}} partite",
 			"winrate": "Tasso di vittoria del {{value}}%",
-			"last-used": "Ultimo utilizzo: {{value}}",
+			"last-used": "",
 			"archive-button-tooltip": "Archivia questo team (puoi ripristinarlo in seguito)",
 			"restore-button-tooltip": "Ripristina questo team",
 			"unnamed-team": "Team Senza Nome"
@@ -1432,6 +1451,7 @@
 			"unrecognized-mercenary": "Mercenario non riconosciuto",
 			"unknown-mercenary": "Mercenario sconosciuto",
 			"tasks-button": "Attività",
+			"tasks-completed": "",
 			"task-title": "Attività {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Progresso:",
 			"task-progress-tooltip": "Il progresso della richiesta all'inizio dell'incontro",
@@ -1632,6 +1652,7 @@
 				"score-board-tooltip": "Riassunto di tutti gli incontri avuti con gli altri giocatori",
 				"tavern-upgrade-title": "Potenziamenti della taverna",
 				"tavern-last-upgrade-title": "Ultimi potenziamenti",
+				"tavern-latest-upgrade-title": "",
 				"tavern-empty-state": "Nessun potenziamento della taverna",
 				"last-opponent-icon-tooltip": "Era l'avversario dello scorso turno",
 				"triple-title": "Nuove triplette",
@@ -1674,9 +1695,18 @@
 				"empty-state-title": "Nessun'informazione disponibile",
 				"empty-state-subtitle": "Le partite più vecchie o molto lunghe, non hanno memorizzata la composizione turno per turno."
 			},
+			"winrate-stats": {
+				"community-label": "",
+				"your-label": "",
+				"turn-label": "",
+				"winrate-label": ""
+			},
 			"warband-stats": {
 				"community-label": "Media per eroe",
-				"your-label": "Ondata corrente"
+				"your-label": "Ondata corrente",
+				"turn-label": "",
+				"stat-label": "",
+				"delta-label": ""
 			}
 		},
 		"overlay-button": {
