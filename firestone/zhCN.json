@@ -43,10 +43,10 @@
 			"region_cn": "国服"
 		},
 		"set": {
-			"hero_skins": "",
-			"lettuce": "",
-			"battlegrounds": "",
-			"vanilla": "",
+			"hero_skins": "-",
+			"lettuce": "佣兵包",
+			"battlegrounds": "酒馆战棋",
+			"vanilla": "经典",
 			"legacy": "怀旧",
 			"core": "核心",
 			"naxx": "纳克萨玛斯的诅咒",
@@ -361,13 +361,13 @@
 			},
 			"card-history": {
 				"version": {
-					"golden": "",
-					"diamond": ""
+					"golden": "金色",
+					"diamond": "钻石"
 				},
 				"new-copy": "新",
 				"second-copy": "第二张",
-				"new-copy-long": "",
-				"second-copy-long": "",
+				"new-copy-long": "新的 {{version}} ：",
+				"second-copy-long": "第二张 {{version}} ：",
 				"title": "我的开包历史",
 				"you-have-viewed": "您已经获得了 {{numberOfCards}} / {{totalCards}} 种卡牌",
 				"load-more-button": "显示更多",
@@ -375,7 +375,7 @@
 				"empty-state-subtitle": "打开一个卡牌包以开始记录！",
 				"golden-card": "金色的 {{cardName}}",
 				"diamond-card": "钻石的 {{cardName}}",
-				"click-to-expand": "",
+				"click-to-expand": "点击展开",
 				"duplicate-cards": "{{numberOfCards}} 张重复的卡牌",
 				"dust-potential": "+分解可得 {{dust}} 点奥术之尘"
 			},
@@ -809,20 +809,20 @@
 						"place-default": "第 {{value}}"
 					},
 					"winrate-stats": {
-						"community-label": "",
+						"community-label": "此英雄平均值",
 						"community-tooltip": "此英雄每轮战斗的平均胜率（赢得战斗的几率百分比）",
-						"your-label": "",
+						"your-label": "当前回合",
 						"your-tooltip": "您使用此英雄的数值",
-						"turn-label": "",
-						"winrate-label": ""
+						"turn-label": "回合",
+						"winrate-label": "胜率"
 					},
 					"warband-stats": {
-						"community-label": "",
+						"community-label": "此英雄平均值",
 						"community-tooltip": "每轮战斗开始时场上的平均总属性值（攻击力+生命值）",
-						"your-label": "",
+						"your-label": "当前回合",
 						"your-tooltip": "您使用此英雄的数值",
-						"turn-label": "",
-						"stat-label": ""
+						"turn-label": "回合",
+						"stat-label": "属性值"
 					},
 					"mmr": {
 						"empty-state-message": "在酒馆战棋中使用此英雄以开启记录"
@@ -1217,7 +1217,7 @@
 			"opponent": "您的对手使用的上一张战吼牌是 {{value}}"
 		},
 		"vanessa": {
-			"player": ""
+			"player": "您的对手使用的上一张牌是 {{value}}"
 		},
 		"lady-darkvein": {
 			"player": "您使用的上一张暗影法术牌是 {{value}}",
@@ -1393,8 +1393,8 @@
 			"subtitle": "开始佣兵战纪对局以开启记录！记得检查上面的过滤器: )"
 		},
 		"search-empty-state": {
-			"title": "",
-			"subtitle": ""
+			"title": "没有找到任何佣兵",
+			"subtitle": "请尝试更改您的查询条件或筛选设置"
 		},
 		"hero-stats": {
 			"games-played": "对战场数",
@@ -1438,7 +1438,7 @@
 			"total-matches": "对战场数",
 			"games": "{{value}} 场对战",
 			"winrate": "{{value}}%胜率",
-			"last-used": "",
+			"last-used": "最后使用于 {{value}}",
 			"archive-button-tooltip": "存档此队伍(您可以稍后还原它)",
 			"restore-button-tooltip": "恢复此队伍",
 			"unnamed-team": "未命名的队伍"
@@ -1454,7 +1454,7 @@
 			"unrecognized-mercenary": "未能识别的佣兵",
 			"unknown-mercenary": "未知的佣兵",
 			"tasks-button": "任务",
-			"tasks-completed": "",
+			"tasks-completed": "您已完成所有任务",
 			"task-title": "任务 {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "进度：",
 			"task-progress-tooltip": "战斗开始时的任务进度",
@@ -1655,7 +1655,7 @@
 				"score-board-tooltip": "回顾您遇到的其他玩家",
 				"tavern-upgrade-title": "升级酒馆",
 				"tavern-last-upgrade-title": "上次升本",
-				"tavern-latest-upgrade-title": "",
+				"tavern-latest-upgrade-title": "上次升本",
 				"tavern-empty-state": "暂未升本",
 				"last-opponent-icon-tooltip": "是上回合的对手",
 				"triple-title": "新的三连",
@@ -1699,16 +1699,16 @@
 				"empty-state-subtitle": "更早的对战或过长的对战将没有详细的回合记录"
 			},
 			"winrate-stats": {
-				"community-label": "",
-				"your-label": "",
-				"turn-label": "",
-				"winrate-label": ""
+				"community-label": "此英雄平均值",
+				"your-label": "当前回合",
+				"turn-label": "回合",
+				"winrate-label": "胜率"
 			},
 			"warband-stats": {
 				"community-label": "此英雄平均值",
 				"your-label": "本轮",
-				"turn-label": "",
-				"stat-label": "",
+				"turn-label": "回合",
+				"stat-label": "属性值",
 				"delta-label": ""
 			}
 		},
@@ -2073,7 +2073,7 @@
 					"bolner-tooltip": "当您手牌中有“伯尔纳·锤喙”时，显示您在本回合中打出的第一张战吼牌（如果有）",
 					"brilliant-macaw-label": "艳丽的金刚鹦鹉",
 					"brilliant-macaw-tooltip": "当您手牌中有“艳丽的金刚鹦鹉”时，显示您使用的上一张战吼牌（如果有）",
-					"vanessa-label": "",
+					"vanessa-label": "梵妮莎·范克里夫",
 					"vanessa-tooltip": "",
 					"murozond-label": "",
 					"murozond-tooltip": "",
