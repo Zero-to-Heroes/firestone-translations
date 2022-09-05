@@ -199,6 +199,7 @@
 			"poisonous": "Toxicité",
 			"reborn": "Réincarnation",
 			"taunt": "Provocation",
+			"stealth": "",
 			"windfury": "Furie des vents",
 			"mega-windfury": "Méga Furie des vents"
 		},
@@ -1022,9 +1023,9 @@
 				"choose-your-hero-power-title": "Choisissez un pouvoir héroïque",
 				"choose-your-signature-treasure-title": "Choisissez votre trésor spécial",
 				"build-your-deck-title": "Construisez votre deck",
-				"go-back-hero": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du héros",
-				"go-back-hero-power": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du pouvoir héroïque",
-				"go-back-signature-treasure": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du trésor spécial",
+				"go-back-hero": "",
+				"go-back-hero-power": "",
+				"go-back-signature-treasure": "",
 				"ongoing-deck-building": "En cours ({{currentCards}} / {{maxCards}})",
 				"export-deckcode-button": "Copier le code",
 				"save-deck-button": "Enregistrer le deck",
@@ -1242,6 +1243,10 @@
 		"volatile-skeleton": {
 			"player": "{{value}} de vos squelettes instables sont morts",
 			"opponent": "{{value}} des squelettes instables de votre adversaire sont morts"
+		},
+		"relic": {
+			"player": "",
+			"opponent": ""
 		},
 		"fatigue": {
 			"player": "Vos derniers dégâts de fatigue étaient de {{value}}",
@@ -1588,12 +1593,16 @@
 			"empty-state-subtitle": "Votre première bataille sera montrée ici une fois que vous aurez affronté un adversaire",
 			"battles-header": "Tous les combats",
 			"turn-winrate-graph-title": "Taux de victoires moy. par tour",
+			"select-button": "Sélectionner",
 			"hero-power-title": "Pouvoir héroïque",
 			"hero-power-info-tavish": "Tour actuel",
 			"hero-powers-header": "Pouvoirs héroïques",
 			"hero-search-placeholder": "Rechercher un héros / pouvoir héroïque",
-			"select-button": "Sélectionner",
 			"select-hero-power-placeholder": "Sélectionner un pouvoir héroïque",
+			"quest-reward-title": "",
+			"quest-reward-header": "",
+			"quest-reward-search-placeholder": "",
+			"select-quest-reward-placeholder": "",
 			"select-hero-placeholder": "Sélectionner un pouvoir héroïque",
 			"hero-selection-title": "Héros",
 			"heroes-header": "Héros",
@@ -1665,7 +1674,10 @@
 				"buddies-empty-state": "Pas de Compagnon",
 				"buddy-text": "Tour {{turn}}",
 				"buddy-tooltip": "A reçu son premier Compagnon au tour {{turn}}",
-				"buddy-tooltip-golden": "A reçu ses deux autres Compagnons au tour {{turn}}"
+				"buddy-tooltip-golden": "A reçu ses deux autres Compagnons au tour {{turn}}",
+				"rewards-title": "",
+				"rewards-empty-state": "",
+				"reward-turn-tooltip": ""
 			},
 			"minions-list": {
 				"reset-button": "Réinitialiser",
@@ -2041,6 +2053,8 @@
 					"elwynn-boar-tooltip": "Afficher le nombre de sangliers d’Elwynn de votre adversaire morts pendant cette partie",
 					"volatile-skeleton-label": "Morts de squelettes instables",
 					"volatile-skeleton-tooltip": "Afficher le nombre de squelettes volatiles de votre adversaire morts pendant cette partie",
+					"relic-label": "",
+					"relic-tooltip": "",
 					"hero-power-damage-label": "Dégâts du pouvoir héroïque",
 					"hero-power-damage-tooltip": "Affiche le total des dégâts infligés par le pouvoir héroïque de votre adversaire pendant cette partie. Il n’apparaît que si la classe de l’adversaire est Mage et qu’il a infligé au moins un point de dégâts"
 				},
@@ -2068,6 +2082,7 @@
 					"libram-tooltip": "Afficher le nombre total de librams que vous avez joués pendant cette partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main",
 					"elwynn-boar-tooltip": "Afficher le nombre de vos sangliers d’Elwynn morts pendant cette partie",
 					"volatile-skeleton-tooltip": "Afficher le nombre de vos squelettes volatiles morts pendant cette partie",
+					"relic-tooltip": "",
 					"hero-power-damage-tooltip": "Affiche le total des dégâts infligés par votre pouvoir héroïque pendant cette partie. Ne s’affiche que si Mordresh Œil-de-Feu ou Jan’alai, le faucon-dragon sont dans votre deck ou votre main",
 					"bolner-label": "Bolner Bec-de-Corbin",
 					"bolner-tooltip": "Quand vous avez Bolner Bec-de-Corbin en main, affiche la première carte avec Cri de guerre que vous avez jouée pendant ce tour, s’il y en a une",
@@ -2313,6 +2328,15 @@
 		"last-board-size": "Taille de la dernière troupe",
 		"last-board-size-tooltip": "Change la taille du récapitulatif de l’adversaire qui apparaît quand vous passez la souris sur le portrait d’un héros dans le classement.",
 		"hide-battle-odds-in-combat": "Cacher les chances en combat",
-		"hide-battle-odds-in-combat-tooltip": "Montrer les chances de combat seulement dans la taverne"
+		"hide-battle-odds-in-combat-tooltip": "",
+		"hide-battle-odds-in-tavern": "",
+		"hide-battle-odds-in-tavern-tooltip": "",
+		"hide-battle-odds-when-empty": "",
+		"hide-battle-odds-when-empty-tooltip": "",
+		"options": {
+			"auto": "",
+			"true": "",
+			"false": ""
+		}
 	}
 }
