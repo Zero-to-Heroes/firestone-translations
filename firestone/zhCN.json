@@ -204,10 +204,10 @@
 			"mega-windfury": "超级风怒"
 		},
 		"duration": {
-			"min-sec": "",
-			"hrs-min": "",
-			"min": "",
-			"sec": ""
+			"min-sec": "{{min}}:{{sec}}",
+			"hrs-min": "{{hrs}} 小时 {{min}} 分钟",
+			"min": "{{min}} 分钟",
+			"sec": "{{sec}} 秒"
 		}
 	},
 	"app": {
@@ -1028,9 +1028,9 @@
 				"choose-your-hero-power-title": "选择英雄技能",
 				"choose-your-signature-treasure-title": "选择签名宝藏",
 				"build-your-deck-title": "构筑套牌",
-				"go-back-hero": "",
-				"go-back-hero-power": "",
-				"go-back-signature-treasure": "",
+				"go-back-hero": "英雄：{{selectedCardName}} - 点击返回英雄选择界面",
+				"go-back-hero-power": "英雄技能：{{selectedCardName}} - 点击返回英雄技能选择界面",
+				"go-back-signature-treasure": "签名宝藏：{{selectedCardName}} - 点击返回签名宝藏选择界面",
 				"ongoing-deck-building": "构筑中 ({{currentCards}} / {{maxCards}})",
 				"export-deckcode-button": "复制代码",
 				"save-deck-button": "保存套牌",
@@ -1250,8 +1250,8 @@
 			"opponent": "敌方-不稳定的骷髅：{{value}}"
 		},
 		"relic": {
-			"player": "",
-			"opponent": ""
+			"player": "己方圣物计数：{{value}}",
+			"opponent": "对手圣物计数：{{value}}"
 		},
 		"fatigue": {
 			"player": "您上次受到的疲劳伤害是 {{value}}",
@@ -1604,10 +1604,10 @@
 			"hero-powers-header": "英雄技能",
 			"hero-search-placeholder": "搜索英雄/英雄技能",
 			"select-hero-power-placeholder": "选择一个英雄技能",
-			"quest-reward-title": "",
-			"quest-reward-header": "",
-			"quest-reward-search-placeholder": "",
-			"select-quest-reward-placeholder": "",
+			"quest-reward-title": "任务奖励",
+			"quest-reward-header": "任务奖励",
+			"quest-reward-search-placeholder": "搜索任务奖励",
+			"select-quest-reward-placeholder": "选择一个任务奖励",
 			"select-hero-placeholder": "选择一个英雄技能",
 			"hero-selection-title": "英雄",
 			"heroes-header": "英雄",
@@ -1680,9 +1680,9 @@
 				"buddy-text": "第 {{turn}} 回合",
 				"buddy-tooltip": "在第 {{turn}} 回合获得第一个伙伴",
 				"buddy-tooltip-golden": "在第 {{turn}} 回合获得另两个伙伴",
-				"rewards-title": "",
-				"rewards-empty-state": "",
-				"reward-turn-tooltip": ""
+				"rewards-title": "任务奖励",
+				"rewards-empty-state": "无任务奖励",
+				"reward-turn-tooltip": "在第 {{turn}} 回合获得任务奖励"
 			},
 			"minions-list": {
 				"reset-button": "重置",
@@ -2058,8 +2058,8 @@
 					"elwynn-boar-tooltip": "显示对手已死亡的艾尔文野猪数量",
 					"volatile-skeleton-label": "不稳定的骷髅死亡数",
 					"volatile-skeleton-tooltip": "显示对手已死亡的不稳定的骷髅数量",
-					"relic-label": "",
-					"relic-tooltip": "",
+					"relic-label": "圣物",
+					"relic-tooltip": "显示对手的下一个恶魔猎手圣物计数",
 					"hero-power-damage-label": "英雄技能伤害",
 					"hero-power-damage-tooltip": "显示对手的英雄技能在本局中造成的总伤害。 它仅在对方是法师且使用英雄技能造成至少1点伤害时显示"
 				},
@@ -2087,7 +2087,7 @@
 					"libram-tooltip": "显示您使用的圣契牌数量。仅在对手牌库或手牌中有相关卡牌时显示。",
 					"elwynn-boar-tooltip": "显示您已死亡的艾尔文野猪数量",
 					"volatile-skeleton-tooltip": "显示您已死亡的不稳定的骷髅数量",
-					"relic-tooltip": "",
+					"relic-tooltip": "显示您的下一个恶魔猎手圣物计数",
 					"hero-power-damage-tooltip": "显示本局中您的英雄技能造成的总伤害。 仅当您的牌库或手牌中有“火眼莫德雷斯”或“加亚莱，龙鹰之神”时显示",
 					"bolner-label": "伯尔纳·锤喙",
 					"bolner-tooltip": "当“伯尔纳·锤喙”在您手牌中时，显示您在本回合中打出的第一张战吼牌（如果有）",
@@ -2333,15 +2333,15 @@
 		"last-board-size": "上个阵容的大小",
 		"last-board-size-tooltip": "更改在位次榜中鼠标悬停在英雄头像时显示的对手上个阵容的大小。",
 		"hide-battle-odds-in-combat": "在战斗阶段隐藏对战模拟",
-		"hide-battle-odds-in-combat-tooltip": "",
+		"hide-battle-odds-in-combat-tooltip": "不在战斗阶段显示对战模拟",
 		"hide-battle-odds-in-tavern": "",
 		"hide-battle-odds-in-tavern-tooltip": "",
 		"hide-battle-odds-when-empty": "",
 		"hide-battle-odds-when-empty-tooltip": "",
 		"options": {
-			"auto": "",
-			"true": "",
-			"false": ""
+			"auto": "自动",
+			"true": "确定",
+			"false": "取消"
 		}
 	}
 }
