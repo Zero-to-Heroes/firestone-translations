@@ -199,6 +199,7 @@
 			"poisonous": "致命劇毒",
 			"reborn": "重生",
 			"taunt": "嘲諷",
+			"stealth": "",
 			"windfury": "風怒",
 			"mega-windfury": "超級風怒"
 		},
@@ -1022,9 +1023,9 @@
 				"choose-your-hero-power-title": "選擇你的英雄能力",
 				"choose-your-signature-treasure-title": "選擇你的專屬寶藏",
 				"build-your-deck-title": "組建你的牌組",
-				"go-back-hero": "{{selectedCardName}} - 點擊以返回英雄選擇畫面",
-				"go-back-hero-power": "{{selectedCardName}} - 點擊以返回英雄能力選擇畫面",
-				"go-back-signature-treasure": "{{selectedCardName}} - 點擊以返回專屬寶藏選擇畫面",
+				"go-back-hero": "",
+				"go-back-hero-power": "",
+				"go-back-signature-treasure": "",
 				"ongoing-deck-building": "進行中 ({{currentCards}} / {{maxCards}})",
 				"export-deckcode-button": "複製代碼",
 				"save-deck-button": "儲存牌組",
@@ -1242,6 +1243,10 @@
 		"volatile-skeleton": {
 			"player": "{{value}} 隻友方易變骷髏已死亡",
 			"opponent": "{{value}} 隻敵方易變骷髏已死亡"
+		},
+		"relic": {
+			"player": "",
+			"opponent": ""
 		},
 		"fatigue": {
 			"player": "你最後的疲勞傷害是{{value}}",
@@ -1588,12 +1593,16 @@
 			"empty-state-subtitle": "在你和對手交戰後，第一次對戰將會顯示在這裡",
 			"battles-header": "所有對戰",
 			"turn-winrate-graph-title": "每場戰鬥平均勝率",
+			"select-button": "選擇",
 			"hero-power-title": "英雄能力",
 			"hero-power-info-tavish": "當前回合",
 			"hero-powers-header": "英雄能力",
 			"hero-search-placeholder": "搜尋英雄/英雄能力",
-			"select-button": "選擇",
 			"select-hero-power-placeholder": "選擇一個英雄能力",
+			"quest-reward-title": "",
+			"quest-reward-header": "",
+			"quest-reward-search-placeholder": "",
+			"select-quest-reward-placeholder": "",
 			"select-hero-placeholder": "選擇一個英雄能力",
 			"hero-selection-title": "英雄",
 			"heroes-header": "英雄",
@@ -1665,7 +1674,10 @@
 				"buddies-empty-state": "沒有拿到夥伴",
 				"buddy-text": "第{{turn}} 回合",
 				"buddy-tooltip": "在第{{turn}}回合拿到他的第一隻夥伴",
-				"buddy-tooltip-golden": "在第{{turn}}回合拿到兩隻他的夥伴"
+				"buddy-tooltip-golden": "在第{{turn}}回合拿到兩隻他的夥伴",
+				"rewards-title": "",
+				"rewards-empty-state": "",
+				"reward-turn-tooltip": ""
 			},
 			"minions-list": {
 				"reset-button": "重設",
@@ -2041,6 +2053,8 @@
 					"elwynn-boar-tooltip": "顯示你對手的艾爾文野豬死亡數量",
 					"volatile-skeleton-label": "易變骷髏死亡數",
 					"volatile-skeleton-tooltip": "",
+					"relic-label": "",
+					"relic-tooltip": "",
 					"hero-power-damage-label": "英雄能力傷害",
 					"hero-power-damage-tooltip": "顯示對手在本賽局英雄能力造成的傷害總量。這只會在對手是法師且造成最少1點傷害時顯示"
 				},
@@ -2068,6 +2082,7 @@
 					"libram-tooltip": "顯示本賽局中你打出的聖契數量。只有在套牌或手牌中找到相關卡牌時啟動",
 					"elwynn-boar-tooltip": "顯示你艾爾文野豬的死亡數量",
 					"volatile-skeleton-tooltip": "",
+					"relic-tooltip": "",
 					"hero-power-damage-tooltip": "顯示本賽局中你的英雄技能造成的總傷害。僅在你套牌或手牌中有火眼莫德雷斯或相關卡牌時啟動。",
 					"bolner-label": "包那‧錘喙",
 					"bolner-tooltip": "當你手中有包那‧錘喙且本回合已打出一個戰吼，即啟動",
@@ -2313,6 +2328,15 @@
 		"last-board-size": "上個檯面的大小",
 		"last-board-size-tooltip": "更改當鼠標停在排行榜英雄頭像上顯示的陣容大小。",
 		"hide-battle-odds-in-combat": "在戰鬥階段隱藏戰鬥模擬",
-		"hide-battle-odds-in-combat-tooltip": "僅在僱用階段顯示戰鬥模擬"
+		"hide-battle-odds-in-combat-tooltip": "",
+		"hide-battle-odds-in-tavern": "",
+		"hide-battle-odds-in-tavern-tooltip": "",
+		"hide-battle-odds-when-empty": "",
+		"hide-battle-odds-when-empty-tooltip": "",
+		"options": {
+			"auto": "",
+			"true": "",
+			"false": ""
+		}
 	}
 }
