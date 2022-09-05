@@ -43,6 +43,10 @@
 			"region_cn": "Китай"
 		},
 		"set": {
+			"hero_skins": "",
+			"lettuce": "Наёмники",
+			"battlegrounds": "Поля сражений",
+			"vanilla": "",
 			"legacy": "Прошлые наборы",
 			"core": "Основной набор",
 			"naxx": "Проклятие Наксрамаса",
@@ -356,10 +360,14 @@
 				}
 			},
 			"card-history": {
+				"version": {
+					"golden": "золотая",
+					"diamond": "алмазная"
+				},
 				"new-copy": "Новая",
 				"second-copy": "Вторая",
-				"new-copy-long": "Новая карта",
-				"second-copy-long": "Вторая копия",
+				"new-copy-long": "Новая {{version}}карта:",
+				"second-copy-long": "Вторая {{version}}копия:",
 				"title": "История получения карт",
 				"you-have-viewed": "Вы просмотрели {{numberOfCards}} из {{totalCards}} карт",
 				"load-more-button": "Ещё",
@@ -367,8 +375,7 @@
 				"empty-state-subtitle": "Откройте комплект, чтобы начать!",
 				"golden-card": "[Золотая] {{cardName}}",
 				"diamond-card": "[Алмазная] {{cardName}}",
-				"click-to-view": "Нажмите, чтобы {{link}}",
-				"click-to-view-link": "развернуть",
+				"click-to-expand": "",
 				"duplicate-cards": "{{numberOfCards}} дубликата карт",
 				"dust-potential": "Потенциально +{{dust}} пыли"
 			},
@@ -506,8 +513,8 @@
 				"next-guaranteed": "Гарантированная",
 				"in-packs": "в след. {{value}} комплектах",
 				"browse-set-button": "Смотреть карты",
-				"total-non-golden-cards": "Всего незолотых карт собрано",
-				"total-golden-cards": "Всего золотых карт собрано"
+				"total-non-golden-cards": "Незолотых карт собрано",
+				"total-golden-cards": "Золотых карт собрано"
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
@@ -658,8 +665,8 @@
 				"drag-to-merge": "",
 				"versions": {
 					"title": "Версии колоды",
-					"click-to-view-version-stats-tooltip": "",
-					"click-to-view-all-stats-tooltip": ""
+					"click-to-view-version-stats-tooltip": "Нажмите, чтобы посмотреть статистику только для этой версии",
+					"click-to-view-all-stats-tooltip": "Нажмите снова, чтобы посмотреть статистику для всех версий колоды"
 				}
 			},
 			"meta-decks": {},
@@ -801,13 +808,21 @@
 						"place-4": "4 место!",
 						"place-default": "{{value}} место"
 					},
-					"warband-stats": {
-						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода битвы",
-						"your-tooltip": "Ваши значения для этого героя"
-					},
 					"winrate-stats": {
+						"community-label": "",
 						"community-tooltip": "Средняя вероятность победы каждый ход для этого героя",
-						"your-tooltip": "Ваши значения для этого героя"
+						"your-label": "",
+						"your-tooltip": "Ваши значения для этого героя",
+						"turn-label": "Ход",
+						"winrate-label": "Винрейт"
+					},
+					"warband-stats": {
+						"community-label": "",
+						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода битвы",
+						"your-label": "",
+						"your-tooltip": "Ваши значения для этого героя",
+						"turn-label": "Ход",
+						"stat-label": "Характеристики"
 					},
 					"mmr": {
 						"empty-state-message": "Начните играть в Поля сражений этим героем, чтоб собрать информацию"
@@ -1201,6 +1216,9 @@
 			"player": "Последняя разыгранная Вами карта с боевым кличом: {{value}}",
 			"opponent": "Последняя карта с боевым кличом разыгранный Вашим противником: {{value}}"
 		},
+		"vanessa": {
+			"player": "Последняя карта разыгранная вашим противником: {{value}}"
+		},
 		"lady-darkvein": {
 			"player": "Последнее разыгранное Вами заклинание тьмы: {{value}}",
 			"opponent": "Последнее разыгранное противником заклинание тьмы: {{value}}"
@@ -1374,6 +1392,10 @@
 			"title": "Здесь пока ничего нет",
 			"subtitle": "Для начала сыграйте несколько матчей в Наёмников! Кроме того, проверьте свои фильтры выше :)"
 		},
+		"search-empty-state": {
+			"title": "Наёмников не найдено",
+			"subtitle": ""
+		},
 		"hero-stats": {
 			"games-played": "Сыграно партий",
 			"winrate": "Доля побед",
@@ -1416,7 +1438,7 @@
 			"total-matches": "Всего матчей",
 			"games": "Игр: {{value}}",
 			"winrate": "Доля побед: {{value}}%",
-			"last-used": "Посл. игра: {{value}}",
+			"last-used": "",
 			"archive-button-tooltip": "Архивировать этот отряд (вы можете восстановить его позже)",
 			"restore-button-tooltip": "Восстановить этот отряд",
 			"unnamed-team": "Безымянный отряд"
@@ -1432,9 +1454,10 @@
 			"unrecognized-mercenary": "Неопознанный наёмник",
 			"unknown-mercenary": "Неизвестный наёмник",
 			"tasks-button": "Задачи",
+			"tasks-completed": "Все задания выполнены!",
 			"task-title": "Задача {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Прогресс:",
-			"task-progress-tooltip": "Прогресс квеста в начале",
+			"task-progress-tooltip": "Прогресс задач обновится после окончания матча",
 			"roles-chart-button": "Роли"
 		}
 	},
@@ -1517,7 +1540,7 @@
 			"lethal-dealt-tooltip": "Вероятность убить героя противника",
 			"lethal-received-tooltip": "Вероятность убийства вашего героя",
 			"composition-not-supported": {
-				"general": "",
+				"general": "Результаты могут быть недостаточно точными (причина: {{value}})",
 				"reason-secret": "Секреты",
 				"reason-pirate": "Шалопайка + Ревендер / Кадгар",
 				"reason-piloted-whirl-o-tron": "Пилотируемый вихретрон",
@@ -1632,6 +1655,7 @@
 				"score-board-tooltip": "",
 				"tavern-upgrade-title": "Улучшения таверны",
 				"tavern-last-upgrade-title": "Последние улучшения",
+				"tavern-latest-upgrade-title": "Последнее улучшение",
 				"tavern-empty-state": "Не было улучшений таверны",
 				"last-opponent-icon-tooltip": "Был противником в прошлом раунде",
 				"triple-title": "Новые триплеты",
@@ -1674,9 +1698,18 @@
 				"empty-state-title": "Информация недоступна",
 				"empty-state-subtitle": ""
 			},
+			"winrate-stats": {
+				"community-label": "",
+				"your-label": "",
+				"turn-label": "Ход",
+				"winrate-label": "Винрейт"
+			},
 			"warband-stats": {
 				"community-label": "В среднем для героя",
-				"your-label": "Данный матч"
+				"your-label": "Данный матч",
+				"turn-label": "Ход",
+				"stat-label": "Характеристики",
+				"delta-label": ""
 			}
 		},
 		"overlay-button": {
@@ -2040,6 +2073,10 @@
 					"bolner-tooltip": "",
 					"brilliant-macaw-label": "Сверкающий ара",
 					"brilliant-macaw-tooltip": "Если Сверкающий ара у вас в руке, показывает последний разыгранный вами боевой клич",
+					"vanessa-label": "Ванесса ван Клиф",
+					"vanessa-tooltip": "Показывать последнюю разыгранную противником карту, когда Ванесса ван Клиф у вас в руке",
+					"murozond-label": "Дорнозму Бесконечный",
+					"murozond-tooltip": "Показывать все карты разыгранные противником на прошлом ходу, когда Дорнозму Бесконечный у вас в руке",
 					"lady-darkvein-label": "Леди Дарквейн",
 					"lady-darkvein-tooltip": "Когда Леди Дарквейн у вас в руке, показывает последнее разыгранное вами заклинание Тьмы",
 					"grey-sage-parrot-label": "Серый мудрец",
