@@ -199,6 +199,7 @@
 			"poisonous": "Яд",
 			"reborn": "Перерождение",
 			"taunt": "Провокация",
+			"stealth": "",
 			"windfury": "Неистовство ветра",
 			"mega-windfury": "Меганеистовство ветра"
 		},
@@ -1022,9 +1023,9 @@
 				"choose-your-hero-power-title": "Выберите силу героя",
 				"choose-your-signature-treasure-title": "Выберите сокровище",
 				"build-your-deck-title": "Создайте свою колоду",
-				"go-back-hero": "Герой: {{selectedCardName}} <br/> Кликните для возврата к выбору героя",
-				"go-back-hero-power": "Сила героя: {{selectedCardName}} <br/> Кликните для возврата к выбору силы героя",
-				"go-back-signature-treasure": "Сокровище: {{selectedCardName}} <br/> Кликните для возврата к выбору фирменного сокровища",
+				"go-back-hero": "",
+				"go-back-hero-power": "",
+				"go-back-signature-treasure": "",
 				"ongoing-deck-building": "Карт: {{currentCards}} / {{maxCards}}",
 				"export-deckcode-button": "Копировать код",
 				"save-deck-button": "Сохранить",
@@ -1242,6 +1243,10 @@
 		"volatile-skeleton": {
 			"player": "У вас погибло {{value}} взрывоопасных скелетов",
 			"opponent": "У противника погибло {{value}} взрывоопасных скелетов"
+		},
+		"relic": {
+			"player": "",
+			"opponent": ""
 		},
 		"fatigue": {
 			"player": "",
@@ -1588,12 +1593,16 @@
 			"empty-state-subtitle": "Ваша первая битва будет показана здесь после того, как вы столкнетесь с противником",
 			"battles-header": "Все сражения",
 			"turn-winrate-graph-title": "Средний венрейт по ходам",
+			"select-button": "Выбрать",
 			"hero-power-title": "Сила героя",
 			"hero-power-info-tavish": "Текущий ход:",
 			"hero-powers-header": "Силы героев",
 			"hero-search-placeholder": "Поиск героя / силы героя",
-			"select-button": "Выбрать",
 			"select-hero-power-placeholder": "Выберите силу героя",
+			"quest-reward-title": "",
+			"quest-reward-header": "",
+			"quest-reward-search-placeholder": "",
+			"select-quest-reward-placeholder": "",
 			"select-hero-placeholder": "Выберите силу героя",
 			"hero-selection-title": "Герой",
 			"heroes-header": "Герои",
@@ -1665,7 +1674,10 @@
 				"buddies-empty-state": "Нет компаньонов",
 				"buddy-text": "{{turn}} ход",
 				"buddy-tooltip": "Получил первого компаньона на {{turn}} ход",
-				"buddy-tooltip-golden": "Получил еще двух компаньонов на {{turn}} ход"
+				"buddy-tooltip-golden": "Получил еще двух компаньонов на {{turn}} ход",
+				"rewards-title": "",
+				"rewards-empty-state": "",
+				"reward-turn-tooltip": ""
 			},
 			"minions-list": {
 				"reset-button": "Сбросить",
@@ -2041,6 +2053,8 @@
 					"elwynn-boar-tooltip": "Показывать сколько Элвинских вепрей погибло у противника",
 					"volatile-skeleton-label": "Погибло Взрывоопасных скелетов",
 					"volatile-skeleton-tooltip": "Показывать сколько Взрывоопасных скелетов погибло у противника",
+					"relic-label": "",
+					"relic-tooltip": "",
 					"hero-power-damage-label": "Счётчик урона нанесенного силой героя",
 					"hero-power-damage-tooltip": ""
 				},
@@ -2068,6 +2082,7 @@
 					"libram-tooltip": "",
 					"elwynn-boar-tooltip": "Показывать сколько погибло ваших Элвинских вепрей",
 					"volatile-skeleton-tooltip": "Показывать сколько ваших Взрывоопасных скелетов погибло",
+					"relic-tooltip": "",
 					"hero-power-damage-tooltip": "",
 					"bolner-label": "Болнер Удар Клюва",
 					"bolner-tooltip": "",
@@ -2313,6 +2328,15 @@
 		"last-board-size": "Последний размер доски",
 		"last-board-size-tooltip": "",
 		"hide-battle-odds-in-combat": "Скрыть шансы в бою",
-		"hide-battle-odds-in-combat-tooltip": "Показывать шансы битвы только в таверне"
+		"hide-battle-odds-in-combat-tooltip": "",
+		"hide-battle-odds-in-tavern": "",
+		"hide-battle-odds-in-tavern-tooltip": "",
+		"hide-battle-odds-when-empty": "",
+		"hide-battle-odds-when-empty-tooltip": "",
+		"options": {
+			"auto": "",
+			"true": "",
+			"false": ""
+		}
 	}
 }
