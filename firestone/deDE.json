@@ -199,10 +199,16 @@
 			"poisonous": "Giftig",
 			"reborn": "Wiederkehr",
 			"taunt": "Spott",
+			"stealth": "",
 			"windfury": "Windzorn",
 			"mega-windfury": "Super-Windzorn"
 		},
-		"duration": "{{minutes}}:{{seconds}} min"
+		"duration": {
+			"min-sec": "",
+			"hrs-min": "",
+			"min": "",
+			"sec": ""
+		}
 	},
 	"app": {
 		"menu": {
@@ -1022,8 +1028,8 @@
 				"choose-your-hero-power-title": "Wähle deine Heldenfähigkeit",
 				"choose-your-signature-treasure-title": "",
 				"build-your-deck-title": "Erstelle dein Deck",
-				"go-back-hero": "{{selectedCardName}} - Klicken, um zum Heldenauswahlbildschirm zurückzukehren",
-				"go-back-hero-power": "{{selectedCardName}} - Klicken, um zum Heldenfähigkeitsauswahlbildschirm zurückzukehren",
+				"go-back-hero": "",
+				"go-back-hero-power": "",
 				"go-back-signature-treasure": "",
 				"ongoing-deck-building": "",
 				"export-deckcode-button": "Code kopieren",
@@ -1242,6 +1248,10 @@
 		"volatile-skeleton": {
 			"player": "{{value}} Instabile Skelette sind für dich gestorben",
 			"opponent": "{{value}} Instabile Skelette sind für deinen Gegner gestorben"
+		},
+		"relic": {
+			"player": "",
+			"opponent": ""
 		},
 		"fatigue": {
 			"player": "Dein letzter Erschöpfungsschaden war {{value}}",
@@ -1588,12 +1598,16 @@
 			"empty-state-subtitle": "",
 			"battles-header": "Alle Kämpfe",
 			"turn-winrate-graph-title": "",
+			"select-button": "Auswählen",
 			"hero-power-title": "Heldenfähigkeit",
 			"hero-power-info-tavish": "Aktueller Zug",
 			"hero-powers-header": "Heldenfähigkeiten",
 			"hero-search-placeholder": "Suche Helden / Heldenfähigkeit",
-			"select-button": "Auswählen",
 			"select-hero-power-placeholder": "Wähle einen Helden",
+			"quest-reward-title": "",
+			"quest-reward-header": "",
+			"quest-reward-search-placeholder": "",
+			"select-quest-reward-placeholder": "",
 			"select-hero-placeholder": "Wähle eine Heldenfähigkeit",
 			"hero-selection-title": "Held",
 			"heroes-header": "Helden",
@@ -1665,7 +1679,10 @@
 				"buddies-empty-state": "",
 				"buddy-text": "Zug {{turn}}",
 				"buddy-tooltip": "",
-				"buddy-tooltip-golden": ""
+				"buddy-tooltip-golden": "",
+				"rewards-title": "",
+				"rewards-empty-state": "",
+				"reward-turn-tooltip": ""
 			},
 			"minions-list": {
 				"reset-button": "",
@@ -2041,6 +2058,8 @@
 					"elwynn-boar-tooltip": "",
 					"volatile-skeleton-label": "Instabiles Skelett Tode",
 					"volatile-skeleton-tooltip": "",
+					"relic-label": "",
+					"relic-tooltip": "",
 					"hero-power-damage-label": "Schaden mit Heldenfähigkeit",
 					"hero-power-damage-tooltip": ""
 				},
@@ -2068,6 +2087,7 @@
 					"libram-tooltip": "Zeige die Gesamtanzahl aller Buchbände, die du in diesem Spiel ausgespielt hast. Wird nur angezeigt, wenn sich relevante Karten im Deck oder der Hand befinden",
 					"elwynn-boar-tooltip": "Zeige, wie oft ein Elwynneber für dich gestorben ist",
 					"volatile-skeleton-tooltip": "Zeige, wie oft ein Instabiles Skelett für dich gestorben ist",
+					"relic-tooltip": "",
 					"hero-power-damage-tooltip": "Zeige den Gesamtschaden, der durch deine Heldenfähigkeit verursacht wurde. Wird nur angezeigt, wenn sich Mordresh Feuerauge oder Jan’alai der Drachenfalke in deinem Deck oder deiner Hand befinden",
 					"bolner-label": "Bolner Hammerschnabel",
 					"bolner-tooltip": "Zeige die erste Kampfschreikarte, die in diesem Zug ausgespielt wurde, wenn sich Bolner Hammerschnabel in deiner Hand befindet",
@@ -2313,6 +2333,15 @@
 		"last-board-size": "",
 		"last-board-size-tooltip": "",
 		"hide-battle-odds-in-combat": "",
-		"hide-battle-odds-in-combat-tooltip": ""
+		"hide-battle-odds-in-combat-tooltip": "",
+		"hide-battle-odds-in-tavern": "",
+		"hide-battle-odds-in-tavern-tooltip": "",
+		"hide-battle-odds-when-empty": "",
+		"hide-battle-odds-when-empty-tooltip": "",
+		"options": {
+			"auto": "",
+			"true": "",
+			"false": ""
+		}
 	}
 }

@@ -43,10 +43,10 @@
 			"region_cn": "Китай"
 		},
 		"set": {
-			"hero_skins": "",
+			"hero_skins": "-",
 			"lettuce": "Наёмники",
 			"battlegrounds": "Поля сражений",
-			"vanilla": "",
+			"vanilla": "Классика",
 			"legacy": "Прошлые наборы",
 			"core": "Основной набор",
 			"naxx": "Проклятие Наксрамаса",
@@ -199,10 +199,16 @@
 			"poisonous": "Яд",
 			"reborn": "Перерождение",
 			"taunt": "Провокация",
+			"stealth": "Маскировка",
 			"windfury": "Неистовство ветра",
 			"mega-windfury": "Меганеистовство ветра"
 		},
-		"duration": "{{minutes}} мин {{seconds}} сек"
+		"duration": {
+			"min-sec": "{{min}} мин {{sec}} сек",
+			"hrs-min": "{{hrs}} ч {{min}} мин",
+			"min": "{{min}} мин",
+			"sec": "{{sec}} сек"
+		}
 	},
 	"app": {
 		"menu": {
@@ -237,7 +243,7 @@
 				"multiselect-validation-button": "Ок",
 				"multiselect-validation-error-tooltip": "Неверный выбор (и, пожалуйста, свяжитесь с разработчиками для получения более точного сообщения об ошибке, это бесполезно)",
 				"multiselect-clear-button": "Очистить",
-				"multiselect-reset-button": "Сбросить",
+				"multiselect-reset-button": "Все",
 				"hotkey-text": "Показать/скрыть:",
 				"no-hotkey-assigned": "Горячая клавиша не назначена"
 			},
@@ -375,7 +381,7 @@
 				"empty-state-subtitle": "Откройте комплект, чтобы начать!",
 				"golden-card": "[Золотая] {{cardName}}",
 				"diamond-card": "[Алмазная] {{cardName}}",
-				"click-to-expand": "",
+				"click-to-expand": "Нажмите, чтобы раскрыть",
 				"duplicate-cards": "{{numberOfCards}} дубликата карт",
 				"dust-potential": "Потенциально +{{dust}} пыли"
 			},
@@ -571,7 +577,7 @@
 				"filter-info-tooltip": "Изменение этих фильтров также повлияет на статистику, отображаемую в трекере колоды",
 				"show-hidden-decks": "Показать архивные",
 				"deck-sort": {
-					"last-played": "Последнее использование",
+					"last-played": "Последняя игра",
 					"games-played": "Сыграно партий",
 					"winrate": "Доля побед"
 				},
@@ -661,7 +667,7 @@
 			"decks": {
 				"empty-state-title": "Здесь пока ничего нет",
 				"empty-state-subtitle": "Играйте в рейтинг, чтобы начать, или проверьте фильтры выше :)",
-				"drag-to-merge-default": "",
+				"drag-to-merge-default": "Перетащите на другую колоду, чтобы объединить их как версии одной колоды",
 				"drag-to-merge": "",
 				"versions": {
 					"title": "Версии колоды",
@@ -1129,7 +1135,7 @@
 				"watch-replay-button-tooltip": "Смотреть повтор",
 				"mercenaries-bot-opponent-name": "Ваш противник",
 				"bgs-available-tribes-tooltip": "Доступные типы существ: {{value}}",
-				"bgs-perfect-game-result": "Идеально",
+				"bgs-perfect-game-result": "Идеал",
 				"deck-name-tooltip": "<br/> {{value}}",
 				"bgs-result": {
 					"1": "1-е",
@@ -1242,6 +1248,10 @@
 		"volatile-skeleton": {
 			"player": "У вас погибло {{value}} взрывоопасных скелетов",
 			"opponent": "У противника погибло {{value}} взрывоопасных скелетов"
+		},
+		"relic": {
+			"player": "",
+			"opponent": ""
 		},
 		"fatigue": {
 			"player": "",
@@ -1438,7 +1448,7 @@
 			"total-matches": "Всего матчей",
 			"games": "Игр: {{value}}",
 			"winrate": "Доля побед: {{value}}%",
-			"last-used": "",
+			"last-used": "Посл. игра: {{value}}",
 			"archive-button-tooltip": "Архивировать этот отряд (вы можете восстановить его позже)",
 			"restore-button-tooltip": "Восстановить этот отряд",
 			"unnamed-team": "Безымянный отряд"
@@ -1587,13 +1597,17 @@
 			"empty-state-title": "Здесь пока ничего нет",
 			"empty-state-subtitle": "Ваша первая битва будет показана здесь после того, как вы столкнетесь с противником",
 			"battles-header": "Все сражения",
-			"turn-winrate-graph-title": "Средний венрейт по ходам",
+			"turn-winrate-graph-title": "Средний винрейт по ходам",
+			"select-button": "Выбрать",
 			"hero-power-title": "Сила героя",
 			"hero-power-info-tavish": "Текущий ход:",
 			"hero-powers-header": "Силы героев",
 			"hero-search-placeholder": "Поиск героя / силы героя",
-			"select-button": "Выбрать",
 			"select-hero-power-placeholder": "Выберите силу героя",
+			"quest-reward-title": "Награда за задание",
+			"quest-reward-header": "Награды за задания",
+			"quest-reward-search-placeholder": "Поиск наград за задания",
+			"select-quest-reward-placeholder": "Выберите награду за задание",
 			"select-hero-placeholder": "Выберите силу героя",
 			"hero-selection-title": "Герой",
 			"heroes-header": "Герои",
@@ -1620,8 +1634,8 @@
 			"finishes-title": "Занятые места",
 			"avg-position-label": "Место в среднем:",
 			"avg-position-tooltip": "",
-			"avg-position-your-tooltip": "Ваша ценность",
-			"avg-position-global-tooltip": "Глобальная ценность",
+			"avg-position-your-tooltip": "Ваше значение",
+			"avg-position-global-tooltip": "Глобальное значение",
 			"matches-played-label": "Сыграно партий:",
 			"matches-played-tooltip": "Всего матчей, сыгранных этим героем",
 			"turn-winrate": "Винрейт по ходам",
@@ -1651,7 +1665,7 @@
 				"next-opponent-title": "Ход {{turn}} - Следующий противник",
 				"empty-state-title": "Здесь пока ничего нет",
 				"empty-state-subtitle": "Выбери героя и подожди своих противников!",
-				"score-board-title": "Таблица результатов",
+				"score-board-title": "Табло",
 				"score-board-tooltip": "",
 				"tavern-upgrade-title": "Улучшения таверны",
 				"tavern-last-upgrade-title": "Последние улучшения",
@@ -1665,10 +1679,13 @@
 				"buddies-empty-state": "Нет компаньонов",
 				"buddy-text": "{{turn}} ход",
 				"buddy-tooltip": "Получил первого компаньона на {{turn}} ход",
-				"buddy-tooltip-golden": "Получил еще двух компаньонов на {{turn}} ход"
+				"buddy-tooltip-golden": "Получил еще двух компаньонов на {{turn}} ход",
+				"rewards-title": "Награды за задания",
+				"rewards-empty-state": "Нет наград за задания",
+				"reward-turn-tooltip": "Награда за задание получена на {{turn}} ходу"
 			},
 			"minions-list": {
-				"reset-button": "Сбросить",
+				"reset-button": "Все",
 				"highlight-tribe": "Нажмите, чтобы выделить всех существ типа {{value}} в таверне",
 				"unhighlight-tribe": "Нажмите, чтобы не выделять существ типа {{value}} в таверне",
 				"highlight-minion": "Нажмите, чтобы выделить это существо в таверне Боба",
@@ -1676,7 +1693,7 @@
 			}
 		},
 		"post-match-stats": {
-			"title": "Статистика последнего матча",
+			"title": "Статистика последней партии",
 			"final-board": "Финальный стол",
 			"current-board": "Финальный стол",
 			"final-position": "Вы заняли {{position}} место",
@@ -2041,6 +2058,8 @@
 					"elwynn-boar-tooltip": "Показывать сколько Элвинских вепрей погибло у противника",
 					"volatile-skeleton-label": "Погибло Взрывоопасных скелетов",
 					"volatile-skeleton-tooltip": "Показывать сколько Взрывоопасных скелетов погибло у противника",
+					"relic-label": "Реликвии",
+					"relic-tooltip": "",
 					"hero-power-damage-label": "Счётчик урона нанесенного силой героя",
 					"hero-power-damage-tooltip": ""
 				},
@@ -2068,6 +2087,7 @@
 					"libram-tooltip": "",
 					"elwynn-boar-tooltip": "Показывать сколько погибло ваших Элвинских вепрей",
 					"volatile-skeleton-tooltip": "Показывать сколько ваших Взрывоопасных скелетов погибло",
+					"relic-tooltip": "",
 					"hero-power-damage-tooltip": "",
 					"bolner-label": "Болнер Удар Клюва",
 					"bolner-tooltip": "",
@@ -2096,7 +2116,7 @@
 				"max-health-option-mouseover": "При наведении",
 				"show-ooc-tracker-label": "Показывать колоду во время выбора сокровищ",
 				"show-ooc-tracker-tooltip": "",
-				"show-ooc-hero-info-label": "Показывать статистику для героя / силы героя / сокровища",
+				"show-ooc-hero-info-label": "Показывать статистику для героя, силы героя, фирменного сокровища",
 				"show-ooc-hero-info-tooltip": "Показывается при наведении в начале забега в дуэлях",
 				"show-ooc-deck-select-label": "",
 				"show-ooc-deck-select-tooltip": ""
@@ -2313,6 +2333,15 @@
 		"last-board-size": "Последний размер доски",
 		"last-board-size-tooltip": "",
 		"hide-battle-odds-in-combat": "Скрыть шансы в бою",
-		"hide-battle-odds-in-combat-tooltip": "Показывать шансы битвы только в таверне"
+		"hide-battle-odds-in-combat-tooltip": "",
+		"hide-battle-odds-in-tavern": "",
+		"hide-battle-odds-in-tavern-tooltip": "",
+		"hide-battle-odds-when-empty": "",
+		"hide-battle-odds-when-empty-tooltip": "",
+		"options": {
+			"auto": "Авто",
+			"true": "Да",
+			"false": "Нет"
+		}
 	}
 }

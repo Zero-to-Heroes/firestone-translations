@@ -189,20 +189,26 @@
 			"naga": "Naga",
 			"oldgod": "Dieu très ancien"
 		},
-		"legendary-minion": "Serviteur Légendaire",
+		"legendary-minion": "Serviteur légendaire",
 		"patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
 		"hs-terms": {
-			"attack": "Attaque",
-			"health": "Vie",
+			"attack": "ATQ",
+			"health": "PV",
 			"golden": "dorée",
 			"divine-shield": "Bouclier divin",
 			"poisonous": "Toxicité",
 			"reborn": "Réincarnation",
 			"taunt": "Provocation",
+			"stealth": "Camouflage",
 			"windfury": "Furie des vents",
 			"mega-windfury": "Méga Furie des vents"
 		},
-		"duration": "{{minutes}}:{{seconds}} min"
+		"duration": {
+			"min-sec": "{{min}}:{{sec}} min",
+			"hrs-min": "{{hrs}} h {{min}} min",
+			"min": "{{min}} min",
+			"sec": "{{sec}} s"
+		}
 	},
 	"app": {
 		"menu": {
@@ -222,28 +228,28 @@
 		"global": {
 			"reward": {
 				"tooltip": "{{amount}} {{rewardType}}",
-				"dust": "Poussière Arcanique",
+				"dust": "poussière arcanique",
 				"pack": "paquet de cartes",
 				"gold": "or",
 				"card": "carte dorée"
 			},
 			"controls": {
 				"bug-button-tooltip": "Signaler un bug",
-				"help-button-tooltip": "Voir les notes de mise à jour",
-				"default-confirmation-title": "Êtes vous sur?",
-				"default-confirmation-text": "Ceci fermera l'application pour le restant de la partie",
+				"help-button-tooltip": "Afficher les notes de mise à jour",
+				"default-confirmation-title": "Confirmer ?",
+				"default-confirmation-text": "Ceci fermera l’application pendant le reste de la partie en cours",
 				"default-validation-button": "Ok",
 				"default-cancel-button": "Annuler",
 				"multiselect-validation-button": "Confirmer",
 				"multiselect-validation-error-tooltip": "Sélection invalide (et n’hésitez pas à contacter le développeur pour avoir un message d’erreur plus précis)",
 				"multiselect-clear-button": "Effacer",
 				"multiselect-reset-button": "Réinitialiser",
-				"hotkey-text": "Montrer/Cacher:",
+				"hotkey-text": "Afficher/Masquer :",
 				"no-hotkey-assigned": "Aucune touche assignée"
 			},
 			"ads": {
-				"support-the-dev": "Soutenez le développeur et débarrassez vous des pubs",
-				"supporter": "Merci du soutien ! Vous êtes génial(e) :)"
+				"support-the-dev": "Soutenez le développeur et débarrassez-vous des pubs",
+				"supporter": "Merci du soutien ! Vous êtes super :)"
 			},
 			"graph": {
 				"tooltip-title": "Titre",
@@ -262,7 +268,7 @@
 			},
 			"startup": {
 				"firestone-ready-title": "Firestone est prêt",
-				"firestone-ready-text": "Merci pour votre soutien!"
+				"firestone-ready-text": "Merci pour votre soutien !"
 			}
 		},
 		"loading": {
@@ -271,12 +277,12 @@
 		},
 		"updates": {
 			"update-available": "Mise à jour disponible ! Cliquez pour la télécharger",
-			"update-error": "Une erreur s'est produite lors de la mise à jour de l'application, veuillez redémarrer Overwolf pour forcer la mise à jour",
-			"restart-needed": "Nouvelle version disponible ! Cliquez pour redémarrer l'application. Nous vous recommandons de ne pas le faire durant une partie"
+			"update-error": "Une erreur s’est produite lors de la mise à jour de l’application, veuillez redémarrer Overwolf pour forcer la mise à jour",
+			"restart-needed": "Nouvelle version disponible ! Cliquez pour redémarrer l’application. Nous vous recommandons de ne pas le faire pendant une partie"
 		},
 		"arena": {
 			"menu": {
-				"my-runs": "Mes parties"
+				"my-runs": "Mes virées"
 			},
 			"filters": {
 				"time": {
@@ -372,11 +378,11 @@
 				"you-have-viewed": "Vous avez consulté {{numberOfCards}} cartes sur {{totalCards}}",
 				"load-more-button": "Afficher plus",
 				"empty-state-title": "Pas encore d’historique",
-				"empty-state-subtitle": "Ouvrez un paquet pour en commencer un !",
+				"empty-state-subtitle": "Ouvez un paquet pour en commencer un !",
 				"golden-card": "{{cardName}} dorée",
-				"diamond-card": "{{cardName}} Diamant",
+				"diamond-card": "{{cardName}} diamant",
 				"click-to-expand": "Cliquez pour agrandir",
-				"duplicate-cards": "{{numberOfCards}} Cartes en trop",
+				"duplicate-cards": "{{numberOfCards}} cartes en surplus",
 				"dust-potential": "+{{dust}} poussière potentielle"
 			},
 			"card-search": {
@@ -466,7 +472,7 @@
 				"load-more-button": "Charger plus",
 				"empty-state": {
 					"title": "Pas encore d’historique",
-					"subtitle": "Ouvrez un paquet pour en commencer un !"
+					"subtitle": "Ouvez un paquet pour en commencer un !"
 				}
 			},
 			"pack-stats": {
@@ -542,21 +548,21 @@
 		"share": {
 			"title": "Partager",
 			"window-title": "Partager...",
-			"logged-out-message": "Veuillez vous enregistrer à l'aide du bouton sur la gauche avant d'envoyer un message",
+			"logged-out-message": "Veuillez vous connecter à l’aide du bouton sur la gauche avant d’envoyer un message",
 			"login-button": "Connexion",
 			"logout-button": "Déconnexion",
 			"clipboard": {
 				"title": "Presse-papiers",
-				"tooltip": "Enregister l'écran dans le presse papier",
-				"confirmation": "Image copiée dans le presse papiers"
+				"tooltip": "Copier l’écran actuel dans le presse-papiers",
+				"confirmation": "Image copiée dans le presse-papiers"
 			},
 			"reddit": {
 				"title": "Reddit",
 				"post-title-placeholder": "Nom de la publication",
 				"subreddit-placeholder": "subreddit",
-				"subreddit-tooltip": "Ou poster ? Les subreddits les plus populaires sont /r/hearthstone et /r/BobsTavern (avec ou sans le préfixe /r/)",
-				"flair-tooltip": "Flair pour marquer votre message. Certains subreddits rejettent les messages si aucun flair n'est assigné",
-				"logged-out-message": "Veuillez vous enregistrer à l'aide du bouton sur la gauche avant d'envoyer un message"
+				"subreddit-tooltip": "Subreddit où poster. Les subreddits les plus populaires sont /r/hearthstone et /r/BobsTavern (avec ou sans le préfixe /r/)",
+				"flair-tooltip": "Flair pour votre message. Certains subreddits rejettent les messages où aucun flair n’est renseigné",
+				"logged-out-message": "Veuillez vous connecter à l’aide du bouton sur la gauche avant d’envoyer un message"
 			}
 		},
 		"decktracker": {
@@ -576,13 +582,13 @@
 					"winrate": "Taux de victoires"
 				},
 				"format-filter": {
-					"all-formats": "Tous les formats",
+					"all-formats": "Tous formats",
 					"standard": "Standard",
 					"wild": "Libre",
 					"classic": "Classique"
 				},
 				"rank-category": {
-					"leagues": "Bronze - Diamant",
+					"leagues": "Bronze-Diamant",
 					"legend": "Légende"
 				},
 				"rank-filter": {
@@ -610,7 +616,7 @@
 					"past-30": "30 derniers jours",
 					"past-7": "7 derniers jours",
 					"past-3": "3 derniers jours",
-					"past-1": "Dernier jour"
+					"past-1": "Hier"
 				},
 				"deck-search": {
 					"placeholder": "Rechercher un deck...",
@@ -651,7 +657,7 @@
 			},
 			"deck-summary": {
 				"total-games": "{{value}} parties",
-				"winrate": "{{value}}% victoires",
+				"winrate": "{{value}} % victoires",
 				"last-used": "Vu le {{value}}",
 				"created-on": "Créé : {{value}}",
 				"archive-button-tooltip": "Archiver ce deck (vous pourrez le restaurer plus tard)",
@@ -818,7 +824,7 @@
 					},
 					"warband-stats": {
 						"community-label": "Moyenne pour ce héros",
-						"community-tooltip": "Stats totales moyennes (attaque + vie) sur le champ de bataille au début de chaque combat",
+						"community-tooltip": "Stats totales moyennes (ATQ + PV) sur le champ de bataille au début de chaque combat",
 						"your-label": "Partie en cours",
 						"your-tooltip": "Vos stats pour ce héros",
 						"turn-label": "Tour",
@@ -898,9 +904,9 @@
 				},
 				"game-mode": {
 					"all": "Tous les modes",
-					"all-tooltip": "Les stats de la communauté ne montreront les données que pour les duels héroïques. Vos propres stats afficheront à la fois les duels non classés et héroïques.",
+					"all-tooltip": "Les stats de la communauté n’afficheront les données que pour les duels héroïques. Vos propres stats afficheront à la fois les duels non classés et héroïques.",
 					"casual": "Non classé",
-					"casual-tooltip": "Les stats de la communauté ne montreront les données que pour les duels héroïques. Vos propres stats afficheront n’afficheront que les duels non classés.",
+					"casual-tooltip": "Les stats de la communauté n’afficheront les données que pour les duels héroïques. Vos propres stats afficheront n’afficheront que les duels non classés.",
 					"heroic": "Héroïque"
 				},
 				"hero": {
@@ -914,7 +920,7 @@
 				},
 				"hero-sort": {
 					"player-winrate": "% victoires (vous)",
-					"global-winrate": "Taux de victoires global",
+					"global-winrate": "% victoires (global)",
 					"games-played": "Parties jouées"
 				},
 				"time": {
@@ -932,7 +938,7 @@
 					"passive-3": "Groupe de trésors passifs 2 ultra rares"
 				},
 				"treasure-sort": {
-					"global-winrate": "Taux de victoires global",
+					"global-winrate": "% victoires (global)",
 					"global-pickrate": "Taux de sélection global",
 					"global-offering": "Présentés",
 					"player-pickrate": "Votre taux de sélection"
@@ -967,7 +973,7 @@
 				"default-deck-name-blank": "Deck de Duels"
 			},
 			"hero-stat": {
-				"global-winrate": "Taux de victoires global",
+				"global-winrate": "% victoires (global)",
 				"your-winrate": "% victoires (vous)",
 				"games-played": "Parties jouées",
 				"number-of-games-tooltip": "{{totalRuns}} virées enregistrées ({{popularity}} de popularité)",
@@ -1022,9 +1028,9 @@
 				"choose-your-hero-power-title": "Choisissez un pouvoir héroïque",
 				"choose-your-signature-treasure-title": "Choisissez votre trésor spécial",
 				"build-your-deck-title": "Construisez votre deck",
-				"go-back-hero": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du héros",
-				"go-back-hero-power": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du pouvoir héroïque",
-				"go-back-signature-treasure": "{{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du trésor spécial",
+				"go-back-hero": "Héros : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du héros",
+				"go-back-hero-power": "Pouvoir héroïque : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du pouvoir héroïque",
+				"go-back-signature-treasure": "Trésor spécial : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du trésor spécial",
 				"ongoing-deck-building": "En cours ({{currentCards}} / {{maxCards}})",
 				"export-deckcode-button": "Copier le code",
 				"save-deck-button": "Enregistrer le deck",
@@ -1041,7 +1047,7 @@
 					"info-4": "bucket:none : rechercher uniquement les cartes qui n’appartiennent à aucune sélection"
 				},
 				"warning": {
-					"neutral-hero": "Les codes de deck ne sont pas supportés par HS lui-même pour les héros neutres avec leur trésor spécial neutre (les trésor spéciaux de classe fonctionnent correctement)",
+					"neutral-hero": "Les codes de deck ne sont pas supportés par HS lui-même pour les héros neutres avec leur trésor spécial neutre (les trésors spéciaux de classe fonctionnent correctement)",
 					"loe-hero": "Les codes de deck ne sont pas supportés par HS lui-même pour les héros de la Ligue des explorateurs"
 				},
 				"card-offering-rate-tooltip": "Taux d’apparition dans cette sélection (cela signifie que *si cette sélection vous est proposée*, vous aurez ce pourcentage de chances que cette carte vous soit proposée)",
@@ -1243,6 +1249,10 @@
 			"player": "{{value}} de vos squelettes instables sont morts",
 			"opponent": "{{value}} des squelettes instables de votre adversaire sont morts"
 		},
+		"relic": {
+			"player": "La puissance de votre prochaine relique sera de {{value}}",
+			"opponent": "La puissance de la prochaine relique de votre adversaire sera de {{value}}"
+		},
 		"fatigue": {
 			"player": "Vos derniers dégâts de fatigue étaient de {{value}}",
 			"opponent": "Les derniers dégâts de fatigue de votre adversaire étaient de {{value}}"
@@ -1434,7 +1444,7 @@
 		},
 		"teams": {
 			"team": "Groupe",
-			"global-winrate": "Taux de victoires global",
+			"global-winrate": "% victoires (global)",
 			"total-matches": "Nb de parties",
 			"games": "{{value}} parties",
 			"winrate": "{{value}} % victoires",
@@ -1492,7 +1502,7 @@
 			"invalid-deck-code-button-text": "OK"
 		},
 		"stats": {
-			"deck-winrate": "% victoire",
+			"deck-winrate": "% victoires",
 			"deck-winrate-tooltip": "Taux de victoires de ce deck en Partie classée depuis {{value}}",
 			"deck-winrate-vs-class": "VS {{value}}",
 			"deck-winrate-vs-class-tooltip": "Taux de victoires de ce deck en Partie classée contre {{opponent}} depuis le {{date}}"
@@ -1588,12 +1598,16 @@
 			"empty-state-subtitle": "Votre première bataille sera montrée ici une fois que vous aurez affronté un adversaire",
 			"battles-header": "Tous les combats",
 			"turn-winrate-graph-title": "Taux de victoires moy. par tour",
+			"select-button": "Sélectionner",
 			"hero-power-title": "Pouvoir héroïque",
 			"hero-power-info-tavish": "Tour actuel",
 			"hero-powers-header": "Pouvoirs héroïques",
 			"hero-search-placeholder": "Rechercher un héros / pouvoir héroïque",
-			"select-button": "Sélectionner",
 			"select-hero-power-placeholder": "Sélectionner un pouvoir héroïque",
+			"quest-reward-title": "Récompense de quête",
+			"quest-reward-header": "Récompenses de quête",
+			"quest-reward-search-placeholder": "Rechercher une récompense de quête",
+			"select-quest-reward-placeholder": "Sélectionnez une récompense de quête",
 			"select-hero-placeholder": "Sélectionner un pouvoir héroïque",
 			"hero-selection-title": "Héros",
 			"heroes-header": "Héros",
@@ -1665,7 +1679,10 @@
 				"buddies-empty-state": "Pas de Compagnon",
 				"buddy-text": "Tour {{turn}}",
 				"buddy-tooltip": "A reçu son premier Compagnon au tour {{turn}}",
-				"buddy-tooltip-golden": "A reçu ses deux autres Compagnons au tour {{turn}}"
+				"buddy-tooltip-golden": "A reçu ses deux autres Compagnons au tour {{turn}}",
+				"rewards-title": "Récompenses de quête",
+				"rewards-empty-state": "Aucune récompense de quête",
+				"reward-turn-tooltip": "Récompense de quête reçue au tour {{turn}}"
 			},
 			"minions-list": {
 				"reset-button": "Réinitialiser",
@@ -2041,6 +2058,8 @@
 					"elwynn-boar-tooltip": "Afficher le nombre de sangliers d’Elwynn de votre adversaire morts pendant cette partie",
 					"volatile-skeleton-label": "Morts de squelettes instables",
 					"volatile-skeleton-tooltip": "Afficher le nombre de squelettes volatiles de votre adversaire morts pendant cette partie",
+					"relic-label": "Reliques",
+					"relic-tooltip": "Afficher la puissance de la prochaine relique de chasseur de démons de votre adversaire",
 					"hero-power-damage-label": "Dégâts du pouvoir héroïque",
 					"hero-power-damage-tooltip": "Affiche le total des dégâts infligés par le pouvoir héroïque de votre adversaire pendant cette partie. Il n’apparaît que si la classe de l’adversaire est Mage et qu’il a infligé au moins un point de dégâts"
 				},
@@ -2068,6 +2087,7 @@
 					"libram-tooltip": "Afficher le nombre total de librams que vous avez joués pendant cette partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main",
 					"elwynn-boar-tooltip": "Afficher le nombre de vos sangliers d’Elwynn morts pendant cette partie",
 					"volatile-skeleton-tooltip": "Afficher le nombre de vos squelettes volatiles morts pendant cette partie",
+					"relic-tooltip": "Afficher la puissance de votre prochaine relique de chasseur de démons",
 					"hero-power-damage-tooltip": "Affiche le total des dégâts infligés par votre pouvoir héroïque pendant cette partie. Ne s’affiche que si Mordresh Œil-de-Feu ou Jan’alai, le faucon-dragon sont dans votre deck ou votre main",
 					"bolner-label": "Bolner Bec-de-Corbin",
 					"bolner-tooltip": "Quand vous avez Bolner Bec-de-Corbin en main, affiche la première carte avec Cri de guerre que vous avez jouée pendant ce tour, s’il y en a une",
@@ -2207,7 +2227,7 @@
 				"minions-list-title": "Liste des serviteurs",
 				"minions-list-show-on-mouse-over-label": "Afficher la liste des serviteurs au survol de la souris",
 				"minions-list-show-on-mouse-over-tooltip": "Lorsque cette option est désactivée, vous devrez cliquer sur les icônes de niveau de la taverne pour afficher la liste des serviteurs",
-				"minions-list-show-on-mouse-over-confirmation": "D’accord, nous vous montrerons les détails des serviteurs uniquement lorsque vous cliquez sur une étoile",
+				"minions-list-show-on-mouse-over-confirmation": "D’accord, nous afficherons les détails des serviteurs uniquement lorsque vous cliquez sur une étoile",
 				"minions-list-show-tribes-highlight-label": "Afficher les types mis en avant",
 				"minions-list-show-tribes-highlight-tooltip": "Ajoute des boutons pour mettre en avant des types spécifiques dans la taverne de Bob",
 				"minions-list-show-golden-cards-label": "Afficher les cartes dorées",
@@ -2313,6 +2333,15 @@
 		"last-board-size": "Taille de la dernière troupe",
 		"last-board-size-tooltip": "Change la taille du récapitulatif de l’adversaire qui apparaît quand vous passez la souris sur le portrait d’un héros dans le classement.",
 		"hide-battle-odds-in-combat": "Cacher les chances en combat",
-		"hide-battle-odds-in-combat-tooltip": "Montrer les chances de combat seulement dans la taverne"
+		"hide-battle-odds-in-combat-tooltip": "Ne pas afficher les chances de combat pendant le combat",
+		"hide-battle-odds-in-tavern": "Cacher les chances dans la taverne",
+		"hide-battle-odds-in-tavern-tooltip": "Ne pas afficher les chances de combat dans la taverne (phase d’achat)",
+		"hide-battle-odds-when-empty": "Cacher les chances si vides",
+		"hide-battle-odds-when-empty-tooltip": "Cacher complètement le widget des chances de combat quand aucune information n’est disponible, au lieu d'afficher des infos vides",
+		"options": {
+			"auto": "Auto",
+			"true": "Oui",
+			"false": "Non"
+		}
 	}
 }
