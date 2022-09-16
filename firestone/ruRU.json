@@ -1464,11 +1464,17 @@
 			"unrecognized-mercenary": "Неопознанный наёмник",
 			"unknown-mercenary": "Неизвестный наёмник",
 			"tasks-button": "Задачи",
-			"tasks-completed": "Все задания выполнены!",
+			"tasks-completed": "Все задачи выполнены",
 			"task-title": "Задача {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Прогресс:",
 			"task-progress-tooltip": "Прогресс задач обновится после окончания матча",
-			"roles-chart-button": "Роли"
+			"roles-chart-button": "Роли",
+			"turn-counter": {
+				"turns": "",
+				"current-battle-turn-tooltip": "",
+				"total-map-turns-error-tooltip": "Не удалось получить количество ходов в походе. Значение обновится, когда вы закончите эту битву",
+				"total-map-turns-tooltip": "Ходов в этом походе"
+			}
 		}
 	},
 	"decktracker": {
@@ -1633,7 +1639,7 @@
 		"hero-stats": {
 			"finishes-title": "Занятые места",
 			"avg-position-label": "Место в среднем:",
-			"avg-position-tooltip": "",
+			"avg-position-tooltip": "Место в среднем",
 			"avg-position-your-tooltip": "Ваше значение",
 			"avg-position-global-tooltip": "Глобальное значение",
 			"matches-played-label": "Сыграно партий:",
@@ -1803,6 +1809,9 @@
 			}
 		}
 	},
+	"quests": {
+		"quests-completed": "Все задания выполнены"
+	},
 	"settings": {
 		"title": "Настройки",
 		"global": {
@@ -1841,6 +1850,7 @@
 				"bug-report": "Сообщить об ошибке",
 				"third-party": "Сторонние приложения",
 				"broadcast": "Twitch",
+				"quests": "Задания",
 				"data": "Данные"
 			},
 			"third-party": {
@@ -1945,6 +1955,19 @@
 				"achievements-tooltip": "Обновить данные о достижениях. Это происходит автоматически каждые 7 дней.",
 				"refresh-button-label": "Обновить",
 				"refresh-progress-button-label": "Загрузка..."
+			},
+			"quests": {
+				"title": "Задания",
+				"enable-quests-label": "",
+				"enable-quests-tooltip": "",
+				"show-when-empty-label": "",
+				"show-when-empty-tooltip": "",
+				"show-in-game-label": "",
+				"show-in-game-tooltip": "",
+				"constructed-label": "",
+				"constructed-tooltip": "",
+				"battlegrounds-label": "Поля сражений",
+				"battlegrounds-tooltip": ""
 			}
 		},
 		"decktracker": {
@@ -2295,6 +2318,8 @@
 				"tasks-tooltip": "",
 				"synergies-label": "Выделять синергии",
 				"synergies-tooltip": "",
+				"turn-counter-battle-label": "",
+				"turn-counter-battle-tooltip": "",
 				"your-team": "Ваш отряд",
 				"opponent-team": "Отряд противника",
 				"action-queue": "Порядок срабатывания способностей"
