@@ -712,15 +712,15 @@
 				"choose-your-format-title": "Выберите формат",
 				"choose-your-class-title": "Выберите класс",
 				"build-your-deck-title": "Создайте свою колоду",
-				"go-back-format": "",
-				"go-back-class": "",
+				"go-back-format": "Формат: {{formatName}} <br/> Кликните для возврата к выбору формата",
+				"go-back-class": "Класс: {{className}} <br/> Кликните для возврата к выбору класса",
 				"import-deck-button-tooltip": "Добавить колоду из буфера обмена."
 			}
 		},
 		"battlegrounds": {
 			"menu": {
 				"heroes": "Герои",
-				"quests": "",
+				"quests": "Квесты",
 				"rating": "Рейтинг",
 				"perfect-games": "Идеальные игры",
 				"records": "Рекорды",
@@ -816,7 +816,7 @@
 						"place-default": "{{value}} место"
 					},
 					"winrate-stats": {
-						"community-label": "",
+						"community-label": "В среднем для героя",
 						"community-tooltip": "Средняя вероятность победы каждый ход для этого героя",
 						"your-label": "",
 						"your-tooltip": "Ваши значения для этого героя",
@@ -824,7 +824,7 @@
 						"winrate-label": "Винрейт"
 					},
 					"warband-stats": {
-						"community-label": "",
+						"community-label": "В среднем для героя",
 						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода битвы",
 						"your-label": "",
 						"your-tooltip": "Ваши значения для этого героя",
@@ -881,7 +881,7 @@
 				"header": "Тир-лист героев ({{value}} партий) "
 			},
 			"bgs-tier-list": {
-				"header": ""
+				"header": "Тир-лист квестов ({{value}} партий) "
 			}
 		},
 		"duels": {
@@ -1119,7 +1119,7 @@
 					"all": "Все классы (игрок)"
 				},
 				"opponent": {
-					"all": ""
+					"all": "Все классы (противник)"
 				}
 			},
 			"bg-stats": {
@@ -1243,7 +1243,7 @@
 		},
 		"elemental": {
 			"player": "Вы разыграли {{lastTurn}} элементалей на прошлом ходу и {{thisTurn}} элементалей на этом",
-			"opponent": ""
+			"opponent": "Ваш противник разыграл {{lastTurn}} элементалей на прошлом ходу и {{thisTurn}} элементалей на этом"
 		},
 		"elwynn-boar": {
 			"player": "У вас погибло {{value}} элвинских вепрей",
@@ -1254,8 +1254,8 @@
 			"opponent": "У противника погибло {{value}} взрывоопасных скелетов"
 		},
 		"relic": {
-			"player": "",
-			"opponent": ""
+			"player": "Сила следующей вашей реликвии будет равна {{value}}",
+			"opponent": "Сила следующей реликвии противника будет равна {{value}}"
 		},
 		"fatigue": {
 			"player": "Ваш ожидаемый урон от усталости: {{value}} урона",
@@ -1376,7 +1376,7 @@
 				"pvp": "PvP"
 			},
 			"pve-difficulty": {
-				"all": "",
+				"all": "Любая сложность",
 				"normal": "",
 				"heroic": "(героич.)",
 				"legendary": "Легендарные"
@@ -1408,7 +1408,7 @@
 		},
 		"search-empty-state": {
 			"title": "Наёмников не найдено",
-			"subtitle": ""
+			"subtitle": "Попробуйте изменить ваш запрос или настройки фильтров"
 		},
 		"hero-stats": {
 			"games-played": "Сыграно партий",
@@ -1458,7 +1458,7 @@
 			"unnamed-team": "Безымянный отряд"
 		},
 		"team-widget": {
-			"cooldown-left-tooltip": "",
+			"cooldown-left-tooltip": "Способность восстанавливается еще {{value}} хода",
 			"number-of-users-tooltip": "Сколько раз наёмник применил эту способность",
 			"base-speed-text": "Базовая скорость: {{value}}",
 			"speed-buff": "Эта способность сработает на {{value}} быстрее",
@@ -1475,10 +1475,10 @@
 			"create-team-button-label": "",
 			"create-team-button-tooltip": "",
 			"create-team-button-ok-label": "",
-			"task-team-default-name": "",
+			"task-team-default-name": "Отряд для заданий",
 			"roles-chart-button": "Роли",
 			"turn-counter": {
-				"turns": "",
+				"turns": "Ходов",
 				"current-battle-turn-tooltip": "",
 				"total-map-turns-error-tooltip": "",
 				"total-map-turns-tooltip": "Ходов в этом походе"
@@ -1538,7 +1538,7 @@
 		"unknown-mana-spell": "Неизвестное заклинание за ({{manaCost}})",
 		"unknown-info": "Неизвестный {{info}}",
 		"unknown-big-minion": "Неизвестное существо стоимостью {{cost}}+",
-		"card-dredged-tooltip": ""
+		"card-dredged-tooltip": "Карта с улова"
 	},
 	"battlegrounds": {
 		"menu": {
@@ -1908,8 +1908,8 @@
 			"twitch": {
 				"title": "",
 				"intro": "",
-				"todo-1": "",
-				"todo-2": "",
+				"todo-1": "1. Установите расширение Firestone на ваш Twitch-канал:",
+				"todo-2": "2. Подключите ваш Twitch-аккаунт к Firestone, нажав кнопку ниже",
 				"todo-3": "",
 				"link": "здесь",
 				"login-button-text": "",
@@ -1957,9 +1957,9 @@
 			"data": {
 				"remote-title": "Облачные данные",
 				"remote-intro-text": "Firestone хранит большинство ваших данных в сети, чтобы упростить их использование на разных компьютерах. Некоторые из этих данных кэшируются локально для уменьшения времени загрузки приложения. Однако вы можете принудительно обновить эти данные с помощью кнопок ниже, как правило, после того как вы пересели за другой компьютер.",
-				"packs": "Комплекты",
+				"packs": "Информация о комплектах",
 				"packs-tooltip": "Обновить данные о комплектах. Это происходит автоматически каждые 7 дней.",
-				"achievements": "Достижения",
+				"achievements": "Информация о достижениях",
 				"achievements-tooltip": "Обновить данные о достижениях. Это происходит автоматически каждые 7 дней.",
 				"refresh-button-label": "Обновить",
 				"refresh-progress-button-label": "Загрузка..."
