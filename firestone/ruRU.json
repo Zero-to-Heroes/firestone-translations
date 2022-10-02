@@ -1159,7 +1159,7 @@
 				"game-mode-tooltip": {
 					"legend-format": "{{format}} Легенда",
 					"ladder": "{{format}} | {{leagueName}} {{rank}}",
-					"ladder-fallback": "",
+					"ladder-fallback": "{{format}} {{rank}}",
 					"ladder-default": "{{format}} Ранг 25",
 					"galakrond-explorers": "Пробуждение Галакронда - Исследователи",
 					"galakrond-evil": "Пробуждение Галакронда - ЗЛО"
@@ -1484,7 +1484,7 @@
 			"roles-chart-button": "Роли",
 			"turn-counter": {
 				"turns": "Ходов",
-				"current-battle-turn-tooltip": "",
+				"current-battle-turn-tooltip": "Текущий ход",
 				"total-map-turns-error-tooltip": "",
 				"total-map-turns-tooltip": "Ходов в этом походе"
 			}
@@ -1591,7 +1591,7 @@
 			"simulate-button-tooltip": "Провести симуляцию сражения",
 			"reset-button": "Сбросить",
 			"export-button": "Копировать",
-			"export-button-tooltip": "",
+			"export-button-tooltip": "Скопируйте код симуляции, чтобы поделиться им или импортировать его в симулятор (в данный момент он довольно большой и не помещается в твит)",
 			"exporting": "Создание кода симуляции, пожалуйста подождите",
 			"importing": "Существа импортируются, пожалуйста подождите",
 			"export-confirmation": "Код симуляции скопирован в буфер обмена",
@@ -1712,14 +1712,14 @@
 			}
 		},
 		"post-match-stats": {
-			"title": "Статистика последней партии",
+			"title": "Статистика последнего матча",
 			"final-board": "Финальный стол",
 			"current-board": "Финальный стол",
 			"final-position": "Вы заняли {{position}} место",
 			"live-stats-title": "Текущая статистика - Ход {{turn}}",
 			"tabs": {
 				"hp-by-turn": "Здоровье по ходам",
-				"stats": "",
+				"stats": "Статистика",
 				"warband-composition-by-turn": "Состав сборки",
 				"warband-total-stats-by-turn": "Характеристики стола",
 				"winrate-per-turn": "Вероятность победы",
@@ -1742,7 +1742,7 @@
 			},
 			"warband-stats": {
 				"community-label": "В среднем для героя",
-				"your-label": "Данный матч",
+				"your-label": "Этот матч",
 				"turn-label": "Ход",
 				"stat-label": "Характеристики",
 				"delta-label": ""
@@ -1762,7 +1762,7 @@
 			"opponent-not-met": "Вы ещё не сражались с этим противником",
 			"last-board-empty": "Стол противника был пуст",
 			"total-damage": "Сум. урон",
-			"stats-share-warning": ""
+			"stats-share-warning": "Несколько отдельных существ, а также золотые существа, имеют одни и те же статы (из-за того как работают Поля сражений)"
 		},
 		"empty-state-title": "Здесь пока ничего нет",
 		"empty-state-subtitle": "Сыграйте на Полях сражений, чтобы начать!"
@@ -2120,7 +2120,7 @@
 					"number-of-spells-label": "Счётчик заклинаний",
 					"number-of-spells-tooltip": "",
 					"elementals-label": "Счётчик элементалей",
-					"elementals-tooltip": "",
+					"elementals-tooltip": "Показывает общее количество элементалей, которых вы разыграли на этом и предыдущем ходу. Показывается только если в вашей руке будут найдены подходящие карты",
 					"watch-post-tooltip": "",
 					"libram-tooltip": "",
 					"elwynn-boar-tooltip": "Показывать сколько погибло ваших Элвинских вепрей",
@@ -2338,7 +2338,7 @@
 				"tasks-tooltip": "",
 				"synergies-label": "Выделять синергии",
 				"synergies-tooltip": "",
-				"turn-counter-battle-label": "",
+				"turn-counter-battle-label": "Счётчик ходов в сражениях",
 				"turn-counter-battle-tooltip": "",
 				"your-team": "Ваш отряд",
 				"opponent-team": "Отряд противника",
