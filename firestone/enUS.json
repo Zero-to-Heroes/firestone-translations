@@ -65,7 +65,7 @@
 			"troll": "Rastakhan's Rumble",
 			"dalaran": "Rise of Shadows",
 			"uldum": "Saviors of Uldum",
-			"dragons": "Descend of Dragons",
+			"dragons": "Descent of Dragons",
 			"yod": "Galakrond's Awakening",
 			"demon_hunter_initiate": "Demon Hunter Initiate",
 			"black_temple": "Ashes of Outland",
@@ -80,7 +80,8 @@
 			"onyxias_lair": "Onyxia's Lair",
 			"the_sunken_city": "Voyage to the Sunken City",
 			"throne_of_tides": "Throne of the Tides",
-			"revendreth": "Murder at Castle Nathria"
+			"revendreth": "Murder at Castle Nathria",
+			"maw_and_disorder": "Maw and Disorder"
 		},
 		"pack": {
 			"classic": "Classic",
@@ -387,6 +388,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "Search card...",
+				"search-box-tooltip": "You can use the following keywords in your search: text: (search in card text instead of just name), name:, cards:all (includes non-collectibles), tribe: ",
 				"loading": "Loading more cards...",
 				"results-title": "Searching for {{value}}"
 			},
@@ -927,6 +929,10 @@
 					"global-winrate": "Global winrate",
 					"games-played": "Games played"
 				},
+				"deck-sort": {
+					"last-played": "Last played",
+					"winrate": "Average wins"
+				},
 				"time": {
 					"past-three": "Past 3 days",
 					"past-seven": "Past 7 days",
@@ -1228,6 +1234,10 @@
 			"player": "{{value}} was the last battlecry card you played",
 			"opponent": "{{value}} was the last battlecry card your opponent played"
 		},
+		"monstrous-parrot": {
+			"player": "{{value}} was the last friendly deathrattle that triggered",
+			"opponent": "{{value}} was the last enemy deathrattle that triggered"
+		},
 		"vanessa": {
 			"player": "{{value}} was the last card your opponent played"
 		},
@@ -1525,6 +1535,10 @@
 		},
 		"secrets-helper": {
 			"title": "Secrets Helper"
+		},
+		"streamer-mode": {
+			"you": "You",
+			"opponent": "Your opponent"
 		},
 		"card-burned": "Card burned",
 		"card-transformed": "Card transformed",
@@ -1993,6 +2007,8 @@
 				"title": "Activate / Deactivate features",
 				"minions-play-order": "Minions play order",
 				"minions-play-order-tooltip": "Show the play order of each minion on board, to help you track deathrattle resolve orders (or anything that relies on the order in which minions arrived on the board)",
+				"streamer-mode": "Streamer mode",
+				"streamer-mode-tooltip": "Replace your name and your opponent's name by \"You\" and \"Your Opponent\". This mirrors the game's Streamer Mode functionality that is activated by pressing Ctrl + Shift + S while in a match.",
 				"show-title-bar": "Show title bar",
 				"show-title-bar-tooltip": "Show/hide the deck name and cards left in hand and deck",
 				"show-control-bar": "Show control bar",
@@ -2016,6 +2032,8 @@
 				"show-unknown-cards-tooltip": "Add an \"Unknown card\" entry in the tracker for cards about which we have no information",
 				"highlight-related-cards": "Highlight related cards",
 				"highlight-related-cards-tooltip": "When active, related cards will be highlighted on your decklist when mousing over specific cards (for instance, mousing over Double Jump in your decklist will highlight all Outcast cards in your deck)",
+				"discover-help": "Discover contextual help",
+				"discover-help-tooltip": "Shows contextual help when Discovering cards. It can range from simply highlighting related cards in your deck to providing more specific information.",
 				"close-tracker-on-end": "Close tracker on game end",
 				"close-tracker-on-end-tooltip": "Automatically close the tracker when the game ends. If disabled, the tracker needs to be closed manually",
 				"close-tracker-on-end-advanced": "Got it, Firestone won't close the tracker when the match ends",
@@ -2126,6 +2144,8 @@
 					"bolner-tooltip": "When you have Bolner Hammerbeak in hand, show the first Battlecry card that was played this turn, if any",
 					"brilliant-macaw-label": "Brilliant Macaw",
 					"brilliant-macaw-tooltip": "When you have a Brilliant Macaw in hand, show the last Battlecry card that you played, if any",
+					"monstrous-parrot-label": "Monstrous Parrot",
+					"monstrous-parrot-tooltip": "When you have a Monstrous Parrot in hand, show the last friendly Deathrattle that triggered, if any",
 					"vanessa-label": "Vanessa VanCleef",
 					"vanessa-tooltip": "When you have Vanessa VanCleef in hand, show the last card that your opponent played",
 					"murozond-label": "Murozond the Infinite",
@@ -2225,6 +2245,8 @@
 				"show-achievements-tooltip": "Shows the missing achievements for each hero at the hero selection stage",
 				"show-hero-tooltip-label": "Show hero tooltip",
 				"show-hero-tooltip-tooltip": "Shows hero stats when mousing over the hero portrait on the game's hero selection screen.",
+				"show-hero-tier-label": "Show hero tier",
+				"show-hero-tier-tooltip": "Shows hero tier and global average position directly on the hero portrait during hero selection.",
 				"show-overlay-button": "Show overlay button",
 				"show-overlay-button-tooltip": "Shows a button on the overlay to toggle the main window or on off, which you can use instead of the hotkeys",
 				"popup-post-match-stats-label": "Popup post-match stats",
@@ -2280,6 +2302,8 @@
 				"label-tooltip": "Show a recap of your current play session. Useful mostly for streamers",
 				"show-groups": "Show grouped info",
 				"show-groups-tooltip": "Show a recap of your session matches, grouped by final position.",
+				"hide-when-friends-list-open": "Hide when friends list is open",
+				"hide-when-friends-list-open-tooltip": "Hide the widget when the friends list is open.",
 				"show-matches": "Show latest matches",
 				"show-matches-tooltip": "Show the latest matches.",
 				"number-of-matches": "Number of matches",
@@ -2350,7 +2374,7 @@
 		}
 	},
 	"twitch": {
-		"adaptative-scaling": "Adaptative scaling",
+		"adaptative-scaling": "Adaptive scaling",
 		"adaptative-scaling-tooltip": "(EXPERIMENTAL) Automatically change the size of the widgets based on your window size",
 		"scale": "Scale",
 		"scale-tooltip": "Modify the size of the widgets",

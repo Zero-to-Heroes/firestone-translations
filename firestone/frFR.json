@@ -712,16 +712,17 @@
 				"choose-your-format-title": "Choisissez votre format",
 				"choose-your-class-title": "Choisissez votre classe",
 				"build-your-deck-title": "Construisez votre deck",
-				"go-back-format": "{{formatName}} – Cliquez pour revenir à l’écran de sélection du format",
-				"go-back-class": "{{className}} – Cliquez pour revenir à l’écran de sélection de la classe",
+				"go-back-format": "Format : {{formatName}} – Cliquez pour revenir à l’écran de sélection du format",
+				"go-back-class": "Classe : {{className}} – Cliquez pour revenir à l’écran de sélection de la classe",
 				"import-deck-button-tooltip": "Importer un code de deck depuis votre presse-papiers."
 			}
 		},
 		"battlegrounds": {
 			"menu": {
 				"heroes": "Héros",
-				"perfect-games": "Parties parfaites",
+				"quests": "Quêtes",
 				"rating": "Classement",
+				"perfect-games": "Parties parfaites",
 				"records": "Records battus",
 				"simulator": "Simulateur"
 			},
@@ -824,7 +825,7 @@
 					},
 					"warband-stats": {
 						"community-label": "Moyenne pour ce héros",
-						"community-tooltip": "Stats totales moyennes (ATQ + PV) sur le champ de bataille au début de chaque combat",
+						"community-tooltip": "Stats totales moyennes (ATQ + PV) sur le champ de bataille au début de chaque combat",
 						"your-label": "Partie en cours",
 						"your-tooltip": "Vos stats pour ce héros",
 						"turn-label": "Tour",
@@ -878,6 +879,9 @@
 			},
 			"tier-list": {
 				"header": "Tierlist des héros ({{value}} parties) "
+			},
+			"bgs-tier-list": {
+				"header": "Tierlist des quêtes ({{value}} parties) "
 			}
 		},
 		"duels": {
@@ -956,7 +960,7 @@
 				"runs": "Virées",
 				"starter-deck": "Deck de départ",
 				"final-deck": "Deck final",
-				"all-runs-with-deck": "Toutes les virées avec « {{deckName}} »",
+				"all-runs-with-deck": "Toutes les virées avec « {{deckName}} »",
 				"run-details": "Détails de la virée",
 				"number-of-runs": "Nombre de virées",
 				"average-wins-per-run": "Nb de victoires moy.",
@@ -1042,7 +1046,7 @@
 				"search-tooltip": {
 					"text": "Vous pouvez utiliser les raccourcis de recherche suivants :",
 					"info-1": "Entrée : ajoute le premier résultat à votre deck",
-					"info-2": "Shift + Entrée : ajoute le premier résultat à votre deck et efface la barre de recherche",
+					"info-2": "Shift + Entrée : ajoute le premier résultat à votre deck et efface la barre de recherche",
 					"info-3": "class:<class> : rechercher uniquement des cartes de cette classe (par ex. class:mage ou class:neutral)",
 					"info-4": "bucket:none : rechercher uniquement les cartes qui n’appartiennent à aucune sélection"
 				},
@@ -1186,9 +1190,9 @@
 			"tip-2": "Cliquez sur l’icône \"Bug\" en haut pour signaler un bug ou suggérer une amélioration",
 			"tip-3": "Si vous rencontrez de gros bugs (comme la synchronisation de la collection, le decktracker ne fonctionne pas, etc.), essayez d’exécuter l’application en tant qu’administrateur.",
 			"tip-4": "Les paramètres ont de nombreuses options de personnalisation, n’hésitez pas à regarder pour activer / désactiver certaines fonctionnalités",
-			"tip-5": "[Mercenaires] Voir la colonne « Total de pièces » en élargissant la fenêtre",
+			"tip-5": "[Mercenaires] Affichez la colonne « Total de pièces » en élargissant la fenêtre",
 			"tip-6": "[Mercenaires] Sélectionnez l’option \"Mercenaires (JcJ)\" dans Replays pour voir plus de détails sur les groupes dans chaque partie",
-			"tip-7": "[Mercenaires] Placer la souris sur la colonne « Tâche terminée » pour apprendre à définir manuellement la progression de chaque tâche de mercenaire",
+			"tip-7": "[Mercenaires] Placer la souris sur la colonne « Tâche terminée » pour savoir comment définir manuellement la progression de chaque tâche de mercenaire",
 			"tip-8": "[Champs de bataille] Avec Alt+B, affichez les stats détaillées en direct d’une partie dans la fenêtre Champs de bataille",
 			"tip-9": "[Champs de bataille] Rendez la fenêtre Champs de bataille plus large pour voir les dégâts moyens et les chances de tuer le héros adverse dans le simulateur",
 			"tip-10": "[Duels] Vous pouvez survoler les PV de l’adversaire pour voir son maximum de PV",
@@ -1254,8 +1258,8 @@
 			"opponent": "La puissance de la prochaine relique de votre adversaire sera de {{value}}"
 		},
 		"fatigue": {
-			"player": "Vos derniers dégâts de fatigue étaient de {{value}}",
-			"opponent": "Les derniers dégâts de fatigue de votre adversaire étaient de {{value}}"
+			"player": "Votre prochaine pioche vous inflige {{value}} points de dégâts de fatigue",
+			"opponent": "La prochaine pioche de votre adversaire lui inflige {{value}} points de dégâts de fatigue"
 		},
 		"abyssal-curse-2": {
 			"player": "La malédiction abyssale la plus forte de votre adversaire était à {{value}} points de dégâts, et vous subirez {{totalDamageFromCursesInHand}} points de dégâts des malédictions en main au début du prochain tour",
@@ -1429,7 +1433,7 @@
 			"coins-to-farm-header": "Pièces manqu.",
 			"coins-to-farm-header-tooltip": "Total des pièces manquantes pour avoir ce mercenaire au max (prend en compte les pièces que vous avez déjà et les pièces que vous obtiendrez en finissant toutes les tâches)",
 			"completed-tasks-header": "Tâches complétées",
-			"completed-tasks-header-tooltip": "Tâches complétées. Ctrl + cliquer sur la tâche actuelle pour passer manuellement à la tâche suivante. Alt + cliquer pour revenir à la tâche précédente.",
+			"completed-tasks-header-tooltip": "Tâches complétées. Ctrl + cliquer sur la tâche actuelle pour passer manuellement à la tâche suivante. Alt + cliquer pour revenir à la tâche précédente.",
 			"abilities-header": "Capacités",
 			"equipments-header": "Équipements",
 			"max-level": "Niv max !",
@@ -1454,7 +1458,7 @@
 			"unnamed-team": "Groupe sans nom"
 		},
 		"team-widget": {
-			"cooldown-left-tooltip": "Tours restants avant que cette capacité puisse être réutilisée",
+			"cooldown-left-tooltip": "En recharge pendant {{value}} tours",
 			"number-of-users-tooltip": "Nombre de fois que le mercenaire a utilisé cette capacité dans ce combat",
 			"base-speed-text": "Vitesse de base : {{value}}",
 			"speed-buff": "Cette capacité sera plus rapide de {{value}} au prochain tour",
@@ -1468,11 +1472,15 @@
 			"task-title": "Tâche {{taskNumber}} : {{taskTitle}}",
 			"task-progress-label": "Progression :",
 			"task-progress-tooltip": "Progression de la quête au début de la rencontre",
+			"create-team-button-label": "Créer un groupe de tâches",
+			"create-team-button-tooltip": "Créer un groupe en fonction des tâches à réaliser. Vous pouvez configurer qui complétera le groupe dans les paramètres",
+			"create-team-button-ok-label": "Code de groupe copié dans le presse-papier",
+			"task-team-default-name": "Groupe de tâches",
 			"roles-chart-button": "Rôles",
 			"turn-counter": {
 				"turns": "Tours",
 				"current-battle-turn-tooltip": "Tour actuel",
-				"total-map-turns-error-tooltip": "Impossible de récupérer le nombre de tours. Veuillez retourner sur la carte pour actualiser les données",
+				"total-map-turns-error-tooltip": "Impossible de récupérer le nombre de tours de cette virée. Veuillez retourner sur la carte pour actualiser les données",
 				"total-map-turns-tooltip": "Tours cette virée"
 			}
 		}
@@ -1620,9 +1628,9 @@
 			"search-heroes-placeholder": "Rechercher des héros",
 			"update-minion-title": "Mettre à jour le serviteur",
 			"summon-mechs": "Invoquer des Méca",
-			"summon-mechs-tooltip": "Confère au serviteur « Râle d’agonie : invoque trois Méca 1/1 »",
+			"summon-mechs-tooltip": "Confère au serviteur « Râle d’agonie : invoque trois microbots 1/1. »",
 			"summon-plants": "Invoquer des Plantes",
-			"summon-plants-tooltip": "Confère au serviteur « Râle d’agonie : invoque deux Plantes 1/1 »",
+			"summon-plants-tooltip": "Confère au serviteur « Râle d’agonie : invoque deux plantes 1/1 »",
 			"sneed-deathrattle": "Râle d’agonie de Sneed",
 			"sneed-deathrattle-tooltip": "Combien de fois le pouvoir héroïque de Sneed a-t-il été utilisé sur ce serviteur",
 			"minions-selection-title": "Serviteurs",
@@ -1633,7 +1641,7 @@
 				"control-hero": "Changez votre héros avec « {{playerKey}} » et le héros adverse avec « {{opponentKey}} »",
 				"control-hero-power": "Changez votre pouvoir héroïque avec « {{playerKey}} » et celui du héros adverse avec « {{opponentKey}} »",
 				"control-minion": "Ajoutez un serviteur à votre troupe de guerre avec « {{playerKey}} » et à la troupe de guerre de votre adversaire avec « {{opponentKey}} »",
-				"control-general": "Lors de chaque sélection, faites défiler les champs avec Tabulation, et cochez les cases avec Espace. Choisissez la première option affichée avec Entrée, et validez la sélection finale avec Maj + Entrée"
+				"control-general": "Lors de chaque sélection, faites défiler les champs avec Tabulation, et cochez les cases avec Espace. Choisissez la première option affichée avec Entrée, et validez la sélection finale avec Maj + Entrée"
 			}
 		},
 		"hero-stats": {
@@ -1831,7 +1839,7 @@
 				"zoom-400": "400 %"
 			},
 			"widget-size-label": "Taille du widget",
-			"show-advanced-settings-button": "Afficher les paramètres avancés",
+			"show-advanced-settings-button": "Afficher les param. avancés",
 			"hide-advanced-settings-button": "Masquer les param. avancés"
 		},
 		"menu": {
@@ -1965,7 +1973,7 @@
 				"show-in-game-label": "Afficher en jeu",
 				"show-in-game-tooltip": "Lorsque cette option est désactivée, le widget de quêtes sera masqué pendant les parties",
 				"constructed-label": "Hearthstone",
-				"constructed-tooltip": "Afficher les widgets de quête pour les quêtes Hearthstone traditionnel dans les matchs construits, Duels, Bras de fer et parties amicales, ainsi que sur leurs écrans principaux",
+				"constructed-tooltip": "Afficher le widget de quêtes pour les quêtes Hearthstone traditionnel dans les parties en mode Construit, Duels, Bras de fer et parties amicales, ainsi que sur leurs écrans principaux",
 				"battlegrounds-label": "Champs de bataille",
 				"battlegrounds-tooltip": "Afficher les widgets de quête pour les missions de Champs de bataille en parties Champs de bataille et sur l’écran principal du mode"
 			}
@@ -2072,11 +2080,11 @@
 					"abyssal-curse-label": "Malédiction abyssale",
 					"abyssal-curse-tooltip-2": "Afficher les dégâts de la malédiction abyssale la plus forte de votre adversaire",
 					"attack-on-board-label": "ATQ sur le plateau",
-					"attack-on-board-tooltip": "Montre l’ATQ totale des serviteurs + héros sur le plateau de votre adversaire",
+					"attack-on-board-tooltip": "Montre l’ATQ totale des serviteurs + héros sur le plateau de votre adversaire",
 					"watch-post-label": "Postes de guerre",
 					"watch-post-tooltip": "Afficher le nombre total de postes que vous avez joués pendant cette partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main",
 					"libram-label": "Librams",
-					"libram-tooltip": "Afficher le nombre total de librams que vous avez joués pendant cette partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main",
+					"libram-tooltip": "Afficher le nombre total de librams que votre adversaire a joués pendant cette partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans son deck ou sa main",
 					"elwynn-boar-label": "Morts de sangliers d’Elwynn",
 					"elwynn-boar-tooltip": "Afficher le nombre de sangliers d’Elwynn de votre adversaire morts pendant cette partie",
 					"volatile-skeleton-label": "Morts de squelettes instables",
@@ -2101,7 +2109,7 @@
 					"cthun-tooltip": "Afficher la taille actuelle de votre C’Thun",
 					"fatigue-tooltip": "Afficher vos derniers dégâts de fatigue",
 					"abyssal-curse-tooltip": "Afficher les dégâts de votre malédiction abyssale la plus forte",
-					"attack-on-board-tooltip": "Afficher l’ATQ totale des serviteurs + héros sur votre plateau",
+					"attack-on-board-tooltip": "Afficher l’ATQ totale des serviteurs + héros sur votre plateau",
 					"number-of-spells-label": "Nombre de sorts",
 					"number-of-spells-tooltip": "Afficher le nombre total de sorts que vous avez joués pendant cette partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main",
 					"elementals-label": "Élémentaires",
@@ -2136,7 +2144,7 @@
 				"max-health-tooltip": "Choisissez une façon d’afficher les PV max de l’adversaire dans une partie de Duels",
 				"max-health-option-off": "Désactivé",
 				"max-health-option-blink": "Clignoter",
-				"max-health-option-mouseover": "En survolant le héros",
+				"max-health-option-mouseover": "Souris sur le héros",
 				"show-ooc-tracker-label": "Afficher le tracker dans l’écran de sélection",
 				"show-ooc-tracker-tooltip": "Ajoute votre deck lors de la sélection des trésors entre les parties. Cela vous permet de voir des synergies entre les cartes, par exemple.",
 				"show-ooc-hero-info-label": "Afficher les stats des héros",
@@ -2297,7 +2305,8 @@
 		},
 		"mercenaries": {
 			"menu": {
-				"general": "Général"
+				"general": "Général",
+				"quests": "Quêtes"
 			},
 			"general": {
 				"player-team-widget-label": "Widget du groupe du joueur",
@@ -2323,6 +2332,12 @@
 				"your-team": "Votre groupe",
 				"opponent-team": "Groupe adverse",
 				"action-queue": "File d’attente des actions"
+			},
+			"quests": {
+				"title": "Choisir des mercenaires supplémentaires",
+				"explanation": "Choisissez jusqu’à 6 mercenaires qui seront automatiquement ajoutés pour compléter le groupe lors de la construction d’une équipe de tâches (lue de gauche à droite).",
+				"search-box-placeholder": "Rechercher un mercenaire...",
+				"empty-team": "Vous n’avez pas encore construit d’équipe de sauvegarde. "
 			}
 		},
 		"replays": {

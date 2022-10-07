@@ -712,16 +712,17 @@
 				"choose-your-format-title": "选择模式",
 				"choose-your-class-title": "选择职业",
 				"build-your-deck-title": "构筑套牌",
-				"go-back-format": "{{formatName}} - 点击返回模式选择界面",
-				"go-back-class": "{{className}} - 点击返回职业选择界面",
+				"go-back-format": "模式：{{formatName}} - 点击返回模式选择界面",
+				"go-back-class": "职业：{{className}} - 点击返回职业选择界面",
 				"import-deck-button-tooltip": "从剪贴板导入套牌代码"
 			}
 		},
 		"battlegrounds": {
 			"menu": {
 				"heroes": "英雄",
-				"perfect-games": "无敌蘸酱",
+				"quests": "任务",
 				"rating": "等级",
+				"perfect-games": "无敌蘸酱",
 				"records": "纪录",
 				"simulator": "模拟器"
 			},
@@ -878,6 +879,9 @@
 			},
 			"tier-list": {
 				"header": "英雄评级表 ( {{value}} 场对战) "
+			},
+			"bgs-tier-list": {
+				"header": "任务评级表 ( {{value}} 场对战) "
 			}
 		},
 		"duels": {
@@ -1254,8 +1258,8 @@
 			"opponent": "对手圣物计数：{{value}}"
 		},
 		"fatigue": {
-			"player": "您上次受到的疲劳伤害是 {{value}}",
-			"opponent": "对手上次受到的疲劳伤害是 {{value}}"
+			"player": "您的抽牌疲劳伤害：{{value}}",
+			"opponent": "对手抽牌疲劳伤害：{{value}}"
 		},
 		"abyssal-curse-2": {
 			"player": "对手的深渊诅咒伤害最高已达到 {{value}} 点，您将在下一回合开始时受到{{totalDamageFromCursesInHand}} 点诅咒伤害",
@@ -1454,7 +1458,7 @@
 			"unnamed-team": "未命名的队伍"
 		},
 		"team-widget": {
-			"cooldown-left-tooltip": "再次使用此技能所需的剩余回合数",
+			"cooldown-left-tooltip": "冷却 {{value}} 回合",
 			"number-of-users-tooltip": "此佣兵在这场战斗中使用此技能的次数",
 			"base-speed-text": "基础速度： {{value}}",
 			"speed-buff": "此技能在下个回合将会加快 {{value}}",
@@ -1468,11 +1472,15 @@
 			"task-title": "任务 {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "进度：",
 			"task-progress-tooltip": "战斗开始时的任务进度",
+			"create-team-button-label": "创建任务队伍",
+			"create-team-button-tooltip": "根据需要完成的任务创建一支队伍。您可以在设置中配置补位的佣兵。",
+			"create-team-button-ok-label": "复制队伍代码至剪贴板",
+			"task-team-default-name": "任务队伍",
 			"roles-chart-button": "角色克制",
 			"turn-counter": {
 				"turns": "回合数",
 				"current-battle-turn-tooltip": "当前回合",
-				"total-map-turns-error-tooltip": "您可以获取当前地图所用回合数。请返回地图界面以刷新数据",
+				"total-map-turns-error-tooltip": "无法获取当前地图所用回合数。请返回地图界面以刷新数据",
 				"total-map-turns-tooltip": "本轮所用回合数"
 			}
 		}
@@ -2297,7 +2305,8 @@
 		},
 		"mercenaries": {
 			"menu": {
-				"general": "通用"
+				"general": "通用",
+				"quests": "任务"
 			},
 			"general": {
 				"player-team-widget-label": "己方队伍小部件",
@@ -2323,6 +2332,12 @@
 				"your-team": "您的队伍",
 				"opponent-team": "敌方队伍",
 				"action-queue": "行动顺序"
+			},
+			"quests": {
+				"title": "选择补位",
+				"explanation": "选择至多 6 名佣兵，他们将在创建一支任务队伍时自动补位（按从左到右的顺序）",
+				"search-box-placeholder": "搜索佣兵...",
+				"empty-team": "您尚未建立备份队伍 "
 			}
 		},
 		"replays": {
