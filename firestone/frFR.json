@@ -80,7 +80,8 @@
 			"onyxias_lair": "Repaire d’Onyxia",
 			"the_sunken_city": "Au cœur de la cité engloutie",
 			"throne_of_tides": "Trône des marées",
-			"revendreth": "Meurtre au château Nathria"
+			"revendreth": "Meurtre au château Nathria",
+			"maw_and_disorder": "L’Antre hors des lois"
 		},
 		"pack": {
 			"classic": "Classique",
@@ -220,6 +221,7 @@
 			"replays-header": "Replays",
 			"achievements-header": "Hauts faits",
 			"collection-header": "Collection",
+			"streams-header": "",
 			"stats-header": "Stats",
 			"go-premium-header": "Soutenez le développeur et enlevez la pub",
 			"logged-in-as-header": "Connecté en tant que {{value}}",
@@ -387,6 +389,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "Rechercher une carte...",
+				"search-box-tooltip": "Vous pouvez utiliser les mots-clés suivants dans votre recherche : text: (rechercher dans le texte de la carte au lieu du nom uniquement), name:, cards:all (inclut les non-collectionnables), tribe: ",
 				"loading": "Chargement des cartes...",
 				"results-title": "Recherche de {{value}}"
 			},
@@ -418,13 +421,16 @@
 						"emote": "Emotes",
 						"event": "Événement",
 						"error": "Erreurs",
+						"disabled": "",
 						"other": "Autre"
 					},
 					"effect": {
 						"play": "Jouée",
 						"death": "Mort",
 						"attack": "Attaque",
+						"picked": "Choisi",
 						"greetings": "Bonjour",
+						"greetings-mirror": "",
 						"greetings-response": "Bonjour (Réponse)",
 						"well-played": "Bien joué",
 						"oops": "Oups",
@@ -434,14 +440,13 @@
 						"wow": "Wow",
 						"concede": "Capituler",
 						"start": "Entrée",
+						"start-mirror": "",
 						"timer": "Temps",
-						"think-1": "Réflexion 1",
-						"think-2": "Réflexion 2",
-						"think-3": "Réflexion 3",
+						"think": "",
 						"low-cards": "Presque plus de cartes",
 						"no-cards": "Plus de cartes",
 						"won": "Victoire",
-						"mirror-start": "Entrée (miroir)",
+						"idle": "",
 						"error-need-weapon": "Erreur : Arme nécessaire",
 						"error-need-mana": "Erreur : Mana nécessaire",
 						"error-minion-attacked": "Erreur : Serviteur ayant déjà attaqué",
@@ -454,15 +459,14 @@
 						"error-target": "Erreur : Cible",
 						"error-taunt": "Erreur : Provocation",
 						"error-generic": "Erreur générique",
-						"happy-holidays": "Joyeuses fêtes",
+						"holiday": "",
 						"winterveil-greetings": "Bonjour (Voile d’hiver)",
 						"lunar-new-year": "Nouvelle année lunaire",
 						"happy-new-year": "Bonne année",
 						"fire-festival": "Fête du Feu",
 						"pirate-day": "Jour des Pirates",
 						"hallows-end": "Sanssaint",
-						"noblegarden": "Fête du Jardin des nobles",
-						"picked": "Choisi"
+						"noblegarden": "Fête du Jardin des nobles"
 					}
 				}
 			},
@@ -927,6 +931,10 @@
 					"global-winrate": "% victoires (global)",
 					"games-played": "Parties jouées"
 				},
+				"deck-sort": {
+					"last-played": "Joué récemment",
+					"winrate": "Nb de victoires moyen"
+				},
 				"time": {
 					"past-three": "3 derniers jours",
 					"past-seven": "7 derniers jours",
@@ -1197,6 +1205,12 @@
 			"tip-9": "[Champs de bataille] Rendez la fenêtre Champs de bataille plus large pour voir les dégâts moyens et les chances de tuer le héros adverse dans le simulateur",
 			"tip-10": "[Duels] Vous pouvez survoler les PV de l’adversaire pour voir son maximum de PV",
 			"tip-11": "[Duels] Passer la souris sur le nom de votre adversaire révèle également sa classe"
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1225,6 +1239,10 @@
 		"brilliant-macaw": {
 			"player": "La dernière carte avec Cri de guerre que vous avez jouée est {{value}}",
 			"opponent": "La dernière carte avec Cri de guerre que votre adversaire a jouée est {{value}}"
+		},
+		"monstrous-parrot": {
+			"player": "{{value}} est le dernier Râle d’agonie allié déclenché",
+			"opponent": "{{value}} est le dernier Râle d’agonie adverse déclenché"
 		},
 		"vanessa": {
 			"player": "La dernière carte que votre adversaire a jouée est {{value}}"
@@ -1523,6 +1541,10 @@
 		},
 		"secrets-helper": {
 			"title": "Assistant des Secrets"
+		},
+		"streamer-mode": {
+			"you": "Vous",
+			"opponent": ""
 		},
 		"card-burned": "Carte brûlée",
 		"card-transformed": "Carte transformée",
@@ -1875,7 +1897,7 @@
 					"next": "Si vous vous connectez à votre compte Out of Cards, Firestone enverra vos données de collection à Out of Cards afin que vous puissiez les utiliser en ligne.",
 					"toggle-label": "Afficher une notification lorsque la collection est synchronisée",
 					"connect-button-text": "Se connecter",
-					"disconnect-button-test": "Se déconnecter",
+					"disconnect-button-text": "",
 					"connected-text": "Vous êtes connecté",
 					"collection-synchronized": "Collection synchronisée"
 				},
@@ -1917,7 +1939,10 @@
 				"logged-in-as-text": "Connecté en tant que :",
 				"configuration-title": "Configuration du stream",
 				"delay-label": "Délai de diffusion (ms)",
-				"delay-label-tooltip": "Délaie les événements envoyés à Twitch par cette quantité de millisecondes. Utile si votre stream est délayé pour combattre les snipers"
+				"delay-label-tooltip": "Délaie les événements envoyés à Twitch par cette quantité de millisecondes. Utile si votre stream est délayé pour combattre les snipers",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "Lancer Firestone quand une partie commence",
@@ -1991,6 +2016,8 @@
 				"title": "Activer / désactiver des options",
 				"minions-play-order": "Ordre d’apparition des serviteurs",
 				"minions-play-order-tooltip": "Afficher l’ordre d’apparition de chaque serviteur sur le champ de bataille, pour vous aider à suivre l’ordre de résolution des Râles d’agonie (ou tout ce qui dépend de l’ordre dans lequel les serviteurs sont arrivés sur le champ de bataille)",
+				"streamer-mode": "Mode stream",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "Afficher le titre",
 				"show-title-bar-tooltip": "Afficher/masquer le nom du deck et les cartes restantes dans la main et le deck",
 				"show-control-bar": "Afficher la barre de contrôle",
@@ -2014,6 +2041,8 @@
 				"show-unknown-cards-tooltip": "Ajouter une entrée \"Carte inconnue\" dans le tracker pour les cartes pour lesquelles nous n’avons aucune information",
 				"highlight-related-cards": "Faire briller les cartes liées",
 				"highlight-related-cards-tooltip": "Lorsque cette option est activée, les cartes liées dans votre liste de cartes sont en surbrillance quand vous passez la souris sur des cartes spécifiques (ex : passer la sourir sur Double saut dans votre liste de cartes mettra en surbrillance les cartes avec Marginal de votre deck)",
+				"discover-help": "Aide contextuelle à la découverte",
+				"discover-help-tooltip": "Affiche une aide contextuelle quand vous découvrez une carte. Cette aide peut mettre en surbrillance des cartes associées dans votre deck, voire fournir des informations plus spécifiques.",
 				"close-tracker-on-end": "Fermer le tracker à la fin de la partie",
 				"close-tracker-on-end-tooltip": "Fermer automatiquement le tracker lorsque la partie se termine. Si désactivé, le tracker doit être fermé manuellement",
 				"close-tracker-on-end-advanced": "D’accord, Firestone ne fermera pas le tracker à la fin de la partie",
@@ -2076,7 +2105,7 @@
 					"cthun-label": "C’Thun",
 					"cthun-tooltip": "Afficher la taille actuelle du C’Thun de votre adversaire",
 					"fatigue-label": "Fatigue",
-					"fatigue-tooltip": "Afficher les derniers dégâts de fatigue de votre adversaire",
+					"fatigue-tooltip": "",
 					"abyssal-curse-label": "Malédiction abyssale",
 					"abyssal-curse-tooltip-2": "Afficher les dégâts de la malédiction abyssale la plus forte de votre adversaire",
 					"attack-on-board-label": "ATQ sur le plateau",
@@ -2107,7 +2136,7 @@
 					"pogo-tooltip": "Affiche le nombre de fois où vous avez joué un lapin-échasseur",
 					"jade-tooltip": "Afficher la taille actuelle de vos golems de jade",
 					"cthun-tooltip": "Afficher la taille actuelle de votre C’Thun",
-					"fatigue-tooltip": "Afficher vos derniers dégâts de fatigue",
+					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "Afficher les dégâts de votre malédiction abyssale la plus forte",
 					"attack-on-board-tooltip": "Afficher l’ATQ totale des serviteurs + héros sur votre plateau",
 					"number-of-spells-label": "Nombre de sorts",
@@ -2124,6 +2153,8 @@
 					"bolner-tooltip": "Quand vous avez Bolner Bec-de-Corbin en main, affiche la première carte avec Cri de guerre que vous avez jouée pendant ce tour, s’il y en a une",
 					"brilliant-macaw-label": "Ara brillant",
 					"brilliant-macaw-tooltip": "Quand vous avez un Ara brillant en main, affiche la dernière carte avec Cri de guerre que vous avez jouée, s’il y en a une",
+					"monstrous-parrot-label": "Perroquet monstrueux",
+					"monstrous-parrot-tooltip": "Quand vous avez un perroquet monstrueux en main, affiche le dernier Râle d’agonie allié qui s’est déclenché, s’il y en a eu",
 					"vanessa-label": "Vanessa VanCleef",
 					"vanessa-tooltip": "Quand vous avez Vanessa VanCleef en main, montrez la dernière carte que votre adversaire a jouée",
 					"murozond-label": "Murozond l’Infini",
@@ -2223,6 +2254,8 @@
 				"show-achievements-tooltip": "Affiche les hauts faits manquants pour chaque héros lors de la sélection du héros",
 				"show-hero-tooltip-label": "Afficher les infobulles des héros",
 				"show-hero-tooltip-tooltip": "Affiche les stats des héros en passant la souris sur leur portrait dans l’écran de sélection des héros.",
+				"show-hero-tier-label": "Afficher le tier des héros",
+				"show-hero-tier-tooltip": "Affiche le tier de héros et la position moyenne globale directement sur le portrait du héros lors de la sélection des héros.",
 				"show-overlay-button": "Afficher le bouton d’overlay",
 				"show-overlay-button-tooltip": "Affiche un bouton sur l’overlay pour activer/désactiver la fenêtre principale, utilisable à la place des raccourcis clavier",
 				"popup-post-match-stats-label": "Afficher les stats d’après-match",
@@ -2278,6 +2311,8 @@
 				"label-tooltip": "Afficher un récapitulatif de votre session de jeu en cours. Utile principalement pour le stream",
 				"show-groups": "Afficher les infos groupées",
 				"show-groups-tooltip": "Afficher un récapitulatif des parties de votre sessions, regroupées par position finale.",
+				"hide-when-friends-list-open": "Cacher quand la liste d’amis est ouverte",
+				"hide-when-friends-list-open-tooltip": "Masquer le widget lorsque la liste d'amis est ouverte.",
 				"show-matches": "Afficher les dernières parties",
 				"show-matches-tooltip": "Afficher les dernières parties.",
 				"number-of-matches": "Nombre de parties",

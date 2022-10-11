@@ -80,7 +80,8 @@
 			"onyxias_lair": "",
 			"the_sunken_city": "",
 			"throne_of_tides": "",
-			"revendreth": ""
+			"revendreth": "",
+			"maw_and_disorder": ""
 		},
 		"pack": {
 			"classic": "Clássico",
@@ -220,6 +221,7 @@
 			"replays-header": "Replays",
 			"achievements-header": "Conquistas",
 			"collection-header": "Coleção",
+			"streams-header": "",
 			"stats-header": "Estatísticas",
 			"go-premium-header": "Apoie o dev e remova os anúncios",
 			"logged-in-as-header": "Conectado como {{value}}",
@@ -387,6 +389,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "Buscar card...",
+				"search-box-tooltip": "",
 				"loading": "Carregando mais cards...",
 				"results-title": "Buscando por {{value}}"
 			},
@@ -418,13 +421,16 @@
 						"emote": "",
 						"event": "",
 						"error": "",
+						"disabled": "",
 						"other": ""
 					},
 					"effect": {
 						"play": "Reproduzir",
 						"death": "Morte",
 						"attack": "Ataque",
+						"picked": "",
 						"greetings": "Saudações",
+						"greetings-mirror": "",
 						"greetings-response": "Resposta de Saudações",
 						"well-played": "Bom jogo",
 						"oops": "Opa",
@@ -434,14 +440,13 @@
 						"wow": "",
 						"concede": "Desistir",
 						"start": "",
+						"start-mirror": "",
 						"timer": "",
-						"think-1": "",
-						"think-2": "",
-						"think-3": "",
+						"think": "",
 						"low-cards": "Poucos Cards",
 						"no-cards": "Sem Cards",
 						"won": "Venceu",
-						"mirror-start": "",
+						"idle": "",
 						"error-need-weapon": "",
 						"error-need-mana": "",
 						"error-minion-attacked": "",
@@ -454,15 +459,14 @@
 						"error-target": "",
 						"error-taunt": "",
 						"error-generic": "",
-						"happy-holidays": "",
+						"holiday": "",
 						"winterveil-greetings": "",
 						"lunar-new-year": "",
 						"happy-new-year": "",
 						"fire-festival": "Festival do Fogo",
 						"pirate-day": "Dia do Pirata",
 						"hallows-end": "",
-						"noblegarden": "",
-						"picked": ""
+						"noblegarden": ""
 					}
 				}
 			},
@@ -927,6 +931,10 @@
 					"global-winrate": "Índice de vitória global",
 					"games-played": "Partidas realizadas"
 				},
+				"deck-sort": {
+					"last-played": "",
+					"winrate": ""
+				},
 				"time": {
 					"past-three": "Últimos 3 dias",
 					"past-seven": "Últimos 7 dias",
@@ -1197,6 +1205,12 @@
 			"tip-9": "",
 			"tip-10": "",
 			"tip-11": ""
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1223,6 +1237,10 @@
 			"player": ""
 		},
 		"brilliant-macaw": {
+			"player": "",
+			"opponent": ""
+		},
+		"monstrous-parrot": {
 			"player": "",
 			"opponent": ""
 		},
@@ -1523,6 +1541,10 @@
 		},
 		"secrets-helper": {
 			"title": ""
+		},
+		"streamer-mode": {
+			"you": "",
+			"opponent": ""
 		},
 		"card-burned": "",
 		"card-transformed": "",
@@ -1875,7 +1897,7 @@
 					"next": "",
 					"toggle-label": "",
 					"connect-button-text": "",
-					"disconnect-button-test": "",
+					"disconnect-button-text": "",
 					"connected-text": "",
 					"collection-synchronized": ""
 				},
@@ -1917,7 +1939,10 @@
 				"logged-in-as-text": "",
 				"configuration-title": "",
 				"delay-label": "",
-				"delay-label-tooltip": ""
+				"delay-label-tooltip": "",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "",
@@ -1991,6 +2016,8 @@
 				"title": "",
 				"minions-play-order": "",
 				"minions-play-order-tooltip": "",
+				"streamer-mode": "",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "Mostrar barra de título",
 				"show-title-bar-tooltip": "Mostrar/ocultar nome do deck e os cards restantes na mão e no deck",
 				"show-control-bar": "Mostrar barra de controle",
@@ -2014,6 +2041,8 @@
 				"show-unknown-cards-tooltip": "",
 				"highlight-related-cards": "",
 				"highlight-related-cards-tooltip": "",
+				"discover-help": "",
+				"discover-help-tooltip": "",
 				"close-tracker-on-end": "",
 				"close-tracker-on-end-tooltip": "",
 				"close-tracker-on-end-advanced": "",
@@ -2124,6 +2153,8 @@
 					"bolner-tooltip": "",
 					"brilliant-macaw-label": "",
 					"brilliant-macaw-tooltip": "",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
 					"vanessa-label": "",
 					"vanessa-tooltip": "",
 					"murozond-label": "",
@@ -2223,6 +2254,8 @@
 				"show-achievements-tooltip": "",
 				"show-hero-tooltip-label": "",
 				"show-hero-tooltip-tooltip": "",
+				"show-hero-tier-label": "",
+				"show-hero-tier-tooltip": "",
 				"show-overlay-button": "",
 				"show-overlay-button-tooltip": "",
 				"popup-post-match-stats-label": "",
@@ -2278,6 +2311,8 @@
 				"label-tooltip": "",
 				"show-groups": "",
 				"show-groups-tooltip": "",
+				"hide-when-friends-list-open": "",
+				"hide-when-friends-list-open-tooltip": "",
 				"show-matches": "",
 				"show-matches-tooltip": "",
 				"number-of-matches": "",

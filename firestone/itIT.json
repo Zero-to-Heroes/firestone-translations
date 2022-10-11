@@ -80,7 +80,8 @@
 			"onyxias_lair": "",
 			"the_sunken_city": "",
 			"throne_of_tides": "",
-			"revendreth": ""
+			"revendreth": "",
+			"maw_and_disorder": ""
 		},
 		"pack": {
 			"classic": "Classica",
@@ -220,6 +221,7 @@
 			"replays-header": "Ripetizioni",
 			"achievements-header": "Trofei",
 			"collection-header": "Raccolta",
+			"streams-header": "",
 			"stats-header": "Statistiche",
 			"go-premium-header": "Supporta lo sviluppatore e rimuovi gli annunci",
 			"logged-in-as-header": "Connesso come {{value}}",
@@ -387,6 +389,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "Cerca carta...",
+				"search-box-tooltip": "",
 				"loading": "Caricando altre carte...",
 				"results-title": "Cercando {{value}}"
 			},
@@ -418,13 +421,16 @@
 						"emote": "Emote",
 						"event": "Eventi",
 						"error": "Errori",
+						"disabled": "",
 						"other": "Altro"
 					},
 					"effect": {
 						"play": "Riproduci",
 						"death": "Morte",
 						"attack": "Attacco",
+						"picked": "",
 						"greetings": "Saluti",
+						"greetings-mirror": "",
 						"greetings-response": "Risposta ai Saluti",
 						"well-played": "Bella Giocata",
 						"oops": "Ops",
@@ -434,14 +440,13 @@
 						"wow": "",
 						"concede": "Resa",
 						"start": "Avvia",
+						"start-mirror": "",
 						"timer": "Timer",
-						"think-1": "Pensa 1",
-						"think-2": "Pensa 2",
-						"think-3": "Pensa 3",
+						"think": "",
 						"low-cards": "Carte Basse",
 						"no-cards": "Nessuna Carta",
 						"won": "Vinto",
-						"mirror-start": "Inizio Specchio",
+						"idle": "",
 						"error-need-weapon": "Errore Arma Necessaria",
 						"error-need-mana": "Errore Mana Necessario",
 						"error-minion-attacked": "Errore Minion Attaccato",
@@ -454,15 +459,14 @@
 						"error-target": "Errore Target",
 						"error-taunt": "Errore Provocazione",
 						"error-generic": "Errore Generico",
-						"happy-holidays": "",
+						"holiday": "",
 						"winterveil-greetings": "Saluti del Grande Inverno",
 						"lunar-new-year": "Anno Nuovo Lunare",
 						"happy-new-year": "",
 						"fire-festival": "Festival del Fuoco",
 						"pirate-day": "Giorno del Pirata",
 						"hallows-end": "Veglia delle Ombre",
-						"noblegarden": "Nobiluova",
-						"picked": ""
+						"noblegarden": "Nobiluova"
 					}
 				}
 			},
@@ -927,6 +931,10 @@
 					"global-winrate": "Tasso di vittoria globale",
 					"games-played": "Partite giocate"
 				},
+				"deck-sort": {
+					"last-played": "",
+					"winrate": ""
+				},
 				"time": {
 					"past-three": "Ultimi 3 giorni",
 					"past-seven": "Ultimi 7 giorni",
@@ -1197,6 +1205,12 @@
 			"tip-9": "[Battlegrounds] Rendi la finestra CB più ampia per visualizzare il danno medio e le probabilità letali nel simulatore",
 			"tip-10": "[Duels] Puoi passare col mouse sulla salute dell'Avversario per vederne la salute massima",
 			"tip-11": ""
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1225,6 +1239,10 @@
 		"brilliant-macaw": {
 			"player": "{{value}} è stata l'ultima carta di grido di battaglia che hai giocato",
 			"opponent": "{{value}} è stata l'ultima carta di grido di battaglia giocata dal tuo avversario"
+		},
+		"monstrous-parrot": {
+			"player": "",
+			"opponent": ""
 		},
 		"vanessa": {
 			"player": ""
@@ -1523,6 +1541,10 @@
 		},
 		"secrets-helper": {
 			"title": "Aiutante dei Segreti"
+		},
+		"streamer-mode": {
+			"you": "",
+			"opponent": ""
 		},
 		"card-burned": "Carta bruciata",
 		"card-transformed": "Carta trasformata",
@@ -1875,7 +1897,7 @@
 					"next": "Se connetti il tuo profilo di Out of Cards, Firestone invierà i dati della tua collezione a Out of Cards, così che possa usarla online.",
 					"toggle-label": "Mostra notifica quando la collezione è sincronizzata",
 					"connect-button-text": "Connetti",
-					"disconnect-button-test": "Disconnetti",
+					"disconnect-button-text": "",
 					"connected-text": "Sei connesso",
 					"collection-synchronized": "Collezione sincronizzata"
 				},
@@ -1917,7 +1939,10 @@
 				"logged-in-as-text": "Connesso come:",
 				"configuration-title": "Configurazione di streaming",
 				"delay-label": "Ritardo streaming (ms)",
-				"delay-label-tooltip": "Posponi gli eventi inviati a Twitch di questa quantità di millisecondi. Utile se la tua streaming è in ritardo per combattere gli stream sniper"
+				"delay-label-tooltip": "Posponi gli eventi inviati a Twitch di questa quantità di millisecondi. Utile se la tua streaming è in ritardo per combattere gli stream sniper",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "Avvia Firestone all'avvio del gioco",
@@ -1991,6 +2016,8 @@
 				"title": "Attiva / Disattiva funzionalità",
 				"minions-play-order": "Ordine di gioco dei minion",
 				"minions-play-order-tooltip": "Mostra l'ordine di gioco di ogni minion sul tavolo, per aiutarti a monitorare gli ordini di Risoluzione del Rantolo di Morte (o tutto ciò che fa affidamento sull'ordine in cui i minion sono arrivati sul tavolo)",
+				"streamer-mode": "",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "Mostra la barra del titolo",
 				"show-title-bar-tooltip": "Mostra/nascondi il nome del mazzo e le carte rimanenti in mano e nel mazzo",
 				"show-control-bar": "Mostra barra di controllo",
@@ -2014,6 +2041,8 @@
 				"show-unknown-cards-tooltip": "Aggiungi una voce \"Carta sconosciuta\" nel monitoraggio per le carte su cui non hai alcuna informazione",
 				"highlight-related-cards": "Evidenzia carte correlate",
 				"highlight-related-cards-tooltip": "Quando attivo, le carte correlate saranno evidenziate sul tuo elenco del mazzo passando col mouse su carte specifiche (per esempio, passare sul Doppio Salto nel tuo elenco del mazzo evidenzierà tutte le carte Relitto nel tuo mazzo)",
+				"discover-help": "",
+				"discover-help-tooltip": "",
 				"close-tracker-on-end": "Chiudi monitoraggio alla fine della partita",
 				"close-tracker-on-end-tooltip": "Chiude automaticamente il monitoraggio alla fine della partita. Se disabilitato, dev'esser chiuso manualmente",
 				"close-tracker-on-end-advanced": "Capito, Firestone non chiuderà il monitoraggio al termine della partita",
@@ -2124,6 +2153,8 @@
 					"bolner-tooltip": "Quando hai Bolner Hammerbeak in mano, mostra la prima carta di Grido di Battaglia giocata a questo turno, se presente",
 					"brilliant-macaw-label": "Ara Brillante",
 					"brilliant-macaw-tooltip": "Quando hai un Ara Brillante in mano, mostra l'ultima carta Grido della Battaglia che hai giocato, se presente",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
 					"vanessa-label": "",
 					"vanessa-tooltip": "",
 					"murozond-label": "",
@@ -2223,6 +2254,8 @@
 				"show-achievements-tooltip": "Mostra i trofei mancanti per ogni eroe alla fase di selezione dell'eroe",
 				"show-hero-tooltip-label": "Mostra suggerimenti eroe",
 				"show-hero-tooltip-tooltip": "Mostra le statistiche dell'eroe passando col mouse sul ritratto dell'eroe nella schermata di selezione dell'eroe del gioco.",
+				"show-hero-tier-label": "",
+				"show-hero-tier-tooltip": "",
 				"show-overlay-button": "Mostra pulsante di sovrapposizione",
 				"show-overlay-button-tooltip": "Mostra un pulsante sulla sovrapposizione per attivare o disattivare la finestra principale, che puoi usare al posto dei tasti di scelta rapida",
 				"popup-post-match-stats-label": "Statistiche post-partita popup",
@@ -2278,6 +2311,8 @@
 				"label-tooltip": "Mostra un riepilogo della tua sessione di gioco corrente. Utile principalmente per gli streamer",
 				"show-groups": "Mostra info raggruppate",
 				"show-groups-tooltip": "Mostra un riepilogo delle partite della tua sessione, raggruppate per posizione finale.",
+				"hide-when-friends-list-open": "",
+				"hide-when-friends-list-open-tooltip": "",
 				"show-matches": "Mostra ultime partite",
 				"show-matches-tooltip": "Mostra le ultime partite.",
 				"number-of-matches": "Numero di partite",

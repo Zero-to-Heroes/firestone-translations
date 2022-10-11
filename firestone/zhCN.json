@@ -65,7 +65,7 @@
 			"troll": "拉斯塔哈的大乱斗",
 			"dalaran": "暗影崛起",
 			"uldum": "奥丹姆奇兵",
-			"dragons": "巨龙降临",
+			"dragons": "",
 			"yod": "迦拉克隆的觉醒",
 			"demon_hunter_initiate": "恶魔猎手新兵",
 			"black_temple": "外域的灰烬",
@@ -80,7 +80,8 @@
 			"onyxias_lair": "奥妮克希亚的巢穴",
 			"the_sunken_city": "探寻沉没之城",
 			"throne_of_tides": "潮汐王座",
-			"revendreth": "纳斯利亚堡的悬案"
+			"revendreth": "纳斯利亚堡的悬案",
+			"maw_and_disorder": "混乱噬渊"
 		},
 		"pack": {
 			"classic": "经典",
@@ -220,6 +221,7 @@
 			"replays-header": "回放",
 			"achievements-header": "成就",
 			"collection-header": "我的收藏",
+			"streams-header": "",
 			"stats-header": "个人概况",
 			"go-premium-header": "支持开发者并移除广告",
 			"logged-in-as-header": "以 {{value}} 身份登录",
@@ -387,6 +389,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "搜索卡牌...",
+				"search-box-tooltip": "",
 				"loading": "正在载入更多卡牌...",
 				"results-title": "正在搜索 {{value}}"
 			},
@@ -418,13 +421,16 @@
 						"emote": "表情",
 						"event": "活动事件",
 						"error": "错误操作",
+						"disabled": "",
 						"other": "其他"
 					},
 					"effect": {
 						"play": "使用",
 						"death": "死亡",
 						"attack": "攻击",
+						"picked": "被选中",
 						"greetings": "问候",
+						"greetings-mirror": "",
 						"greetings-response": "问候回应",
 						"well-played": "称赞",
 						"oops": "失误",
@@ -434,14 +440,13 @@
 						"wow": "惊叹",
 						"concede": "认输",
 						"start": "开始",
+						"start-mirror": "",
 						"timer": "烧绳",
-						"think-1": "思考1",
-						"think-2": "思考2",
-						"think-3": "思考3",
+						"think": "",
 						"low-cards": "牌库见底",
 						"no-cards": "牌库枯竭",
 						"won": "胜利",
-						"mirror-start": "镜像开始",
+						"idle": "",
 						"error-need-weapon": "错误：需要武器",
 						"error-need-mana": "错误：法力水晶不足",
 						"error-minion-attacked": "错误：随从已经攻击",
@@ -454,15 +459,14 @@
 						"error-target": "错误：目标不合法",
 						"error-taunt": "错误：存在嘲讽单位",
 						"error-generic": "错误：通用",
-						"happy-holidays": "节日快乐",
+						"holiday": "",
 						"winterveil-greetings": "冬幕节问候",
 						"lunar-new-year": "农历新年",
 						"happy-new-year": "新年快乐",
 						"fire-festival": "火焰节",
 						"pirate-day": "海盗节",
 						"hallows-end": "万圣节",
-						"noblegarden": "复活节",
-						"picked": "被选中"
+						"noblegarden": "复活节"
 					}
 				}
 			},
@@ -927,6 +931,10 @@
 					"global-winrate": "按全球胜率排序",
 					"games-played": "按对战场数排序"
 				},
+				"deck-sort": {
+					"last-played": "按最近使用排序",
+					"winrate": "按平均胜利场数排序"
+				},
 				"time": {
 					"past-three": "过去 3 天内",
 					"past-seven": "过去 7 天内",
@@ -1197,6 +1205,12 @@
 			"tip-9": "[酒馆战棋] 调宽战棋窗口，以在模拟器中看到平均伤害和致命概率",
 			"tip-10": "[对决模式] 您可以将鼠标悬停在对手的生命值上查看他们的最大生命值",
 			"tip-11": "[对决模式] 鼠标悬停于对手的名字会显示其职业"
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1225,6 +1239,10 @@
 		"brilliant-macaw": {
 			"player": "您使用的上一张战吼牌是 {{value}}",
 			"opponent": "您的对手使用的上一张战吼牌是 {{value}}"
+		},
+		"monstrous-parrot": {
+			"player": "",
+			"opponent": ""
 		},
 		"vanessa": {
 			"player": "您的对手使用的上一张牌是 {{value}}"
@@ -1523,6 +1541,10 @@
 		},
 		"secrets-helper": {
 			"title": "奥秘助手"
+		},
+		"streamer-mode": {
+			"you": "",
+			"opponent": ""
 		},
 		"card-burned": "爆牌",
 		"card-transformed": "被变形的卡牌",
@@ -1875,7 +1897,7 @@
 					"next": "如果您关联了Out of Cards 账号，Firestone会将您的收藏数据发送到Out of Cards，以便您在线使用。",
 					"toggle-label": "收藏同步后显示通知",
 					"connect-button-text": "关联",
-					"disconnect-button-test": "取消关联",
+					"disconnect-button-text": "",
 					"connected-text": "您已登录",
 					"collection-synchronized": "收藏已同步"
 				},
@@ -1917,7 +1939,10 @@
 				"logged-in-as-text": "登录身份：",
 				"configuration-title": "直播设置",
 				"delay-label": "直播延迟（毫秒）",
-				"delay-label-tooltip": "延迟推流给Twitch的时长。如果您被狙击了，这将很有用"
+				"delay-label-tooltip": "延迟推流给Twitch的时长。如果您被狙击了，这将很有用",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "游戏开始时启动 Firestone",
@@ -1991,6 +2016,8 @@
 				"title": "启用/停用功能",
 				"minions-play-order": "随从召唤顺序",
 				"minions-play-order-tooltip": "显示战场上每个随从的入场顺序，可帮助您判断亡语的触发顺序（或者任何依赖于随从入场顺序的事物）",
+				"streamer-mode": "",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "显示标题栏",
 				"show-title-bar-tooltip": "显示/隐藏套牌名称以及手牌和牌库中的卡牌",
 				"show-control-bar": "显示控制栏",
@@ -2014,6 +2041,8 @@
 				"show-unknown-cards-tooltip": "在记牌器中为我们没有信息的卡牌标记上“未知卡牌”",
 				"highlight-related-cards": "高亮相关卡牌",
 				"highlight-related-cards-tooltip": "启用此功能，当鼠标悬停在特定卡牌上时，相关的卡片将会被高亮显示在您的套牌列表中 (例如，鼠标悬停在“二段跳”时，将会突出显示您套牌中的所有流放牌)",
+				"discover-help": "“发现”建议",
+				"discover-help-tooltip": "当“发现”卡牌时显示关联建议。通过高亮显示您的套牌中的相关卡牌，为您提供一些特定信息。",
 				"close-tracker-on-end": "在游戏结束时关闭记牌器",
 				"close-tracker-on-end-tooltip": "游戏结束时自动关闭记牌器。停用此功能，记牌器需要手动关闭",
 				"close-tracker-on-end-advanced": "知道了，Firestone 将不会在对局结束时关闭记牌器",
@@ -2076,7 +2105,7 @@
 					"cthun-label": "克苏恩",
 					"cthun-tooltip": "显示对手的克苏恩当前大小",
 					"fatigue-label": "疲劳",
-					"fatigue-tooltip": "显示对手上次受到的疲劳伤害",
+					"fatigue-tooltip": "",
 					"abyssal-curse-label": "深渊诅咒",
 					"abyssal-curse-tooltip-2": "显示对手的深渊诅咒伤害最大值",
 					"attack-on-board-label": "场攻",
@@ -2107,7 +2136,7 @@
 					"pogo-tooltip": "显示您已使用的蹦蹦兔次数",
 					"jade-tooltip": "显示您的青玉魔像当前属性值",
 					"cthun-tooltip": "显示您的克苏恩当前属性值",
-					"fatigue-tooltip": "显示您上次受到的疲劳伤害",
+					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "显示您的深渊诅咒伤害最大值",
 					"attack-on-board-tooltip": "显示您的随从及英雄的总场攻",
 					"number-of-spells-label": "法术数量",
@@ -2124,6 +2153,8 @@
 					"bolner-tooltip": "当“伯尔纳·锤喙”在您手牌中时，显示您在本回合中打出的第一张战吼牌（如果有）",
 					"brilliant-macaw-label": "艳丽的金刚鹦鹉",
 					"brilliant-macaw-tooltip": "当“艳丽的金刚鹦鹉”在您手牌中时，显示您使用的上一张战吼牌（如果有）",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
 					"vanessa-label": "梵妮莎·范克里夫",
 					"vanessa-tooltip": "当“梵妮莎·范克里夫”在您手牌中时，显示对手打出的最后一张卡牌",
 					"murozond-label": "永恒巨龙姆诺兹多",
@@ -2223,6 +2254,8 @@
 				"show-achievements-tooltip": "在英雄选择阶段显示每个英雄尚未完成的成就",
 				"show-hero-tooltip-label": "显示英雄提示",
 				"show-hero-tooltip-tooltip": "选择英雄时，鼠标悬停在英雄头像上会显示英雄的统计数据",
+				"show-hero-tier-label": "显示英雄评级",
+				"show-hero-tier-tooltip": "在选择英雄时在英雄头像上显示英雄评级和全球平均名次。",
 				"show-overlay-button": "显示浮窗按钮",
 				"show-overlay-button-tooltip": "在主界面上显示一个切换主界面的按钮，可用来代替快捷键",
 				"popup-post-match-stats-label": "自动弹出赛后数据",
@@ -2278,6 +2311,8 @@
 				"label-tooltip": "显示您在当前期间的战况回顾。推荐主播使用。",
 				"show-groups": "分类显示信息",
 				"show-groups-tooltip": "在战绩记录按最终位次分类显示您的战绩回顾。",
+				"hide-when-friends-list-open": "当好友列表展开时隐藏",
+				"hide-when-friends-list-open-tooltip": "当好友列表展开时隐藏战绩记录小部件。",
 				"show-matches": "显示最近的对战",
 				"show-matches-tooltip": "显示最近的几场对战。",
 				"number-of-matches": "对战场数",

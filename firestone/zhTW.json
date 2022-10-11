@@ -65,7 +65,7 @@
 			"troll": "拉斯塔哈大混戰",
 			"dalaran": "反派大進擊",
 			"uldum": "奧丹姆守護者",
-			"dragons": "降臨！遠古巨龍",
+			"dragons": "",
 			"yod": "葛拉克朗的覺醒",
 			"demon_hunter_initiate": "核心惡魔獵人",
 			"black_temple": "外域之燼",
@@ -80,7 +80,8 @@
 			"onyxias_lair": "奧妮克希亞的巢穴",
 			"the_sunken_city": "海底歷險記",
 			"throne_of_tides": "海潮王座",
-			"revendreth": "納撒亞古堡懸案"
+			"revendreth": "納撒亞古堡懸案",
+			"maw_and_disorder": ""
 		},
 		"pack": {
 			"classic": "經典",
@@ -220,6 +221,7 @@
 			"replays-header": "重播",
 			"achievements-header": "成就",
 			"collection-header": "收藏",
+			"streams-header": "",
 			"stats-header": "統計",
 			"go-premium-header": "支持開發並刪除廣告",
 			"logged-in-as-header": "以 {{value}} 身份登錄",
@@ -387,6 +389,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "搜索卡牌...",
+				"search-box-tooltip": "",
 				"loading": "正在加載更多卡牌...",
 				"results-title": "搜索 {{value}}"
 			},
@@ -418,13 +421,16 @@
 						"emote": "表情",
 						"event": "事件",
 						"error": "錯誤",
+						"disabled": "",
 						"other": "其它"
 					},
 					"effect": {
 						"play": "打出",
 						"death": "死亡",
 						"attack": "攻擊",
+						"picked": "被選中",
 						"greetings": "你好",
+						"greetings-mirror": "",
 						"greetings-response": "回應你好",
 						"well-played": "玩的不錯",
 						"oops": "唉呀！",
@@ -434,14 +440,13 @@
 						"wow": "厲害",
 						"concede": "投降",
 						"start": "開始",
+						"start-mirror": "",
 						"timer": "計時器",
-						"think-1": "思考",
-						"think-2": "思考",
-						"think-3": "思考",
+						"think": "",
 						"low-cards": "牌庫快沒卡牌",
 						"no-cards": "牌庫無卡牌",
 						"won": "勝利",
-						"mirror-start": "鏡像開局",
+						"idle": "",
 						"error-need-weapon": "我需要武器",
 						"error-need-mana": "我需要法力",
 						"error-minion-attacked": "手下攻擊過了",
@@ -454,15 +459,14 @@
 						"error-target": "我無法選定那個目標",
 						"error-taunt": "必須先攻擊有嘲諷的手下",
 						"error-generic": "我不能這麼做",
-						"happy-holidays": "佳節愉快",
+						"holiday": "",
 						"winterveil-greetings": "冬暮節快樂",
 						"lunar-new-year": "農曆新年",
 						"happy-new-year": "新年快樂",
 						"fire-festival": "仲夏火焰節",
 						"pirate-day": "海盜日",
 						"hallows-end": "萬鬼節快樂",
-						"noblegarden": "歡慶貴族花園節",
-						"picked": "被選中"
+						"noblegarden": "歡慶貴族花園節"
 					}
 				}
 			},
@@ -927,6 +931,10 @@
 					"global-winrate": "全球勝率",
 					"games-played": "已遊玩局數"
 				},
+				"deck-sort": {
+					"last-played": "",
+					"winrate": ""
+				},
 				"time": {
 					"past-three": "過去3天",
 					"past-seven": "過去7天",
@@ -1197,6 +1205,12 @@
 			"tip-9": "[Battlegrounds] 拉大英雄戰場插件的視窗大小以查看戰鬥模擬器中平均傷害及致死機率",
 			"tip-10": "[Duels] 你可以將滑鼠移到對方的血量上以查看其最大血量",
 			"tip-11": "[Duels] 鼠標停在你對手的名字上時也顯示他們的職業"
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1225,6 +1239,10 @@
 		"brilliant-macaw": {
 			"player": "{{value}} 是你打出的最後一張戰吼牌",
 			"opponent": "{{value}} 是你對手打出的最後一張戰吼牌"
+		},
+		"monstrous-parrot": {
+			"player": "",
+			"opponent": ""
 		},
 		"vanessa": {
 			"player": ""
@@ -1523,6 +1541,10 @@
 		},
 		"secrets-helper": {
 			"title": "秘密小幫手"
+		},
+		"streamer-mode": {
+			"you": "",
+			"opponent": ""
 		},
 		"card-burned": "爆牌",
 		"card-transformed": "被轉換的卡",
@@ -1875,7 +1897,7 @@
 					"next": "如果您連接 Out of Cards 帳戶，Firestone 會將您的收集數據發送到 Out of Cards，以便您可以在線上使用。",
 					"toggle-label": "收藏同步後顯示通知",
 					"connect-button-text": "連結",
-					"disconnect-button-test": "中斷連接",
+					"disconnect-button-text": "",
 					"connected-text": "您已登錄",
 					"collection-synchronized": "收藏已同步"
 				},
@@ -1917,7 +1939,10 @@
 				"logged-in-as-text": "登入身份：",
 				"configuration-title": "直播配置",
 				"delay-label": "直播延遲(毫秒)",
-				"delay-label-tooltip": "將發送到 Twitch 的事件延遲幾毫秒， 如果您的直播被延遲以對抗狙擊，這很有用。"
+				"delay-label-tooltip": "將發送到 Twitch 的事件延遲幾毫秒， 如果您的直播被延遲以對抗狙擊，這很有用。",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "啟動遊戲時也啟動Firestone",
@@ -1991,6 +2016,8 @@
 				"title": "啟動/關閉功能",
 				"minions-play-order": "手下召喚順序",
 				"minions-play-order-tooltip": "顯示手下召喚順序，幫助你解決死亡之聲順序問題(以及所有依據手下入場順序的問題)",
+				"streamer-mode": "",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "顯示標題列",
 				"show-title-bar-tooltip": "隱藏/顯示牌組名稱和牌堆、手中剩餘的牌",
 				"show-control-bar": "顯示控制列",
@@ -2014,6 +2041,8 @@
 				"show-unknown-cards-tooltip": "當沒有卡片資料時, 增加\"未知卡牌\"進追蹤器",
 				"highlight-related-cards": "標記相關卡牌",
 				"highlight-related-cards-tooltip": "啟用此功能後，當鼠標停在特定卡牌上時，相關的卡牌會在你的牌組列表中被標記(例如:當鼠標停在「二段跳」時，將會標記牌堆中的所有流放牌)",
+				"discover-help": "",
+				"discover-help-tooltip": "",
 				"close-tracker-on-end": "遊戲結束時關閉追蹤器",
 				"close-tracker-on-end-tooltip": "自動在遊戲結束時關閉追蹤器。如果禁用的話需要手動關閉",
 				"close-tracker-on-end-advanced": "知道了，Firestone將不會對戰結束時關閉記牌器",
@@ -2076,7 +2105,7 @@
 					"cthun-label": "克蘇恩",
 					"cthun-tooltip": "顯示你的對手目前克蘇恩的大小",
 					"fatigue-label": "疲勞",
-					"fatigue-tooltip": "顯示你的對手最後的疲勞傷害",
+					"fatigue-tooltip": "",
 					"abyssal-curse-label": "深淵詛咒",
 					"abyssal-curse-tooltip-2": "顯示你對手最高的深淵詛咒傷害",
 					"attack-on-board-label": "場上攻擊力總和",
@@ -2107,7 +2136,7 @@
 					"pogo-tooltip": "顯示你已打出的蹦蹦兔數量",
 					"jade-tooltip": "顯示你目前翠玉魔像的體質",
 					"cthun-tooltip": "顯示你目前克蘇恩的體質",
-					"fatigue-tooltip": "顯示你最後的疲勞傷害",
+					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "顯示你最高的深淵詛咒傷害",
 					"attack-on-board-tooltip": "顯示你的手下和英雄的攻擊力總和",
 					"number-of-spells-label": "法術施放數量",
@@ -2124,6 +2153,8 @@
 					"bolner-tooltip": "當你手中有包那‧錘喙且本回合已打出一個戰吼，即啟動",
 					"brilliant-macaw-label": "聰明的金剛鸚鵡",
 					"brilliant-macaw-tooltip": "當你手中有聰明的金剛鸚鵡且本回合已打出一個戰吼，即啟動",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
 					"vanessa-label": "",
 					"vanessa-tooltip": "",
 					"murozond-label": "",
@@ -2223,6 +2254,8 @@
 				"show-achievements-tooltip": "在英雄選擇時顯示每個英雄未完成的成就",
 				"show-hero-tooltip-label": "顯示英雄提示工具",
 				"show-hero-tooltip-tooltip": "選擇英雄時，將鼠標停在英雄上會顯示統計數據。",
+				"show-hero-tier-label": "",
+				"show-hero-tier-tooltip": "",
 				"show-overlay-button": "顯示覆蓋按鈕",
 				"show-overlay-button-tooltip": "顯示一個可用來控制插件視窗的按鈕並覆蓋在遊戲上，你可以用這個按鈕取代快捷鍵",
 				"popup-post-match-stats-label": "彈出賽後統計數據",
@@ -2278,6 +2311,8 @@
 				"label-tooltip": "顯示最近的戰局。這對主播很有用",
 				"show-groups": "顯示群組資訊",
 				"show-groups-tooltip": "按最終名次分類最近的戰局",
+				"hide-when-friends-list-open": "",
+				"hide-when-friends-list-open-tooltip": "",
 				"show-matches": "顯示最近的戰局",
 				"show-matches-tooltip": "顯示最近的戰局",
 				"number-of-matches": "場數",
@@ -2348,7 +2383,7 @@
 		}
 	},
 	"twitch": {
-		"adaptative-scaling": "自動縮放",
+		"adaptative-scaling": "",
 		"adaptative-scaling-tooltip": "",
 		"scale": "尺寸",
 		"scale-tooltip": "",

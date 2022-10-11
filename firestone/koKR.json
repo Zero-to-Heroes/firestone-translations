@@ -80,7 +80,8 @@
 			"onyxias_lair": "",
 			"the_sunken_city": "",
 			"throne_of_tides": "",
-			"revendreth": ""
+			"revendreth": "",
+			"maw_and_disorder": ""
 		},
 		"pack": {
 			"classic": "고전",
@@ -220,6 +221,7 @@
 			"replays-header": "다시 보기",
 			"achievements-header": "업적",
 			"collection-header": "수집품",
+			"streams-header": "",
 			"stats-header": "통계",
 			"go-premium-header": "제작자를 지원해 광고를 지우세요",
 			"logged-in-as-header": "{{value}}로 로그인했습니다.",
@@ -387,6 +389,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "카드 검색 중...",
+				"search-box-tooltip": "",
 				"loading": "더 많은 카드 불러오는 중...",
 				"results-title": "{{value}} 검색 중"
 			},
@@ -418,13 +421,16 @@
 						"emote": "감정표현",
 						"event": "이벤트",
 						"error": "오류",
+						"disabled": "",
 						"other": "기타"
 					},
 					"effect": {
 						"play": "냈을 때",
 						"death": "사망 시",
 						"attack": "공격 시",
+						"picked": "",
 						"greetings": "인사",
+						"greetings-mirror": "",
 						"greetings-response": "인사 답변",
 						"well-played": "칭찬",
 						"oops": "이런",
@@ -434,14 +440,13 @@
 						"wow": "",
 						"concede": "항복",
 						"start": "시작 시",
+						"start-mirror": "",
 						"timer": "시간 제한",
-						"think-1": "생각 중 1",
-						"think-2": "생각 중 2",
-						"think-3": "생각 중 3",
+						"think": "",
 						"low-cards": "카드 적음",
 						"no-cards": "카드 없음",
 						"won": "승리",
-						"mirror-start": "동일한 영웅으로 시작 시",
+						"idle": "",
 						"error-need-weapon": "무기 필요 오류",
 						"error-need-mana": "마나 부족 오류",
 						"error-minion-attacked": "공격한 하수인 오류",
@@ -454,15 +459,14 @@
 						"error-target": "대상 지정 오류",
 						"error-taunt": "도발 오류",
 						"error-generic": "기본적인 오류",
-						"happy-holidays": "",
+						"holiday": "",
 						"winterveil-greetings": "겨울맞이 축제 인사",
 						"lunar-new-year": "설날",
 						"happy-new-year": "",
 						"fire-festival": "불의 축제",
 						"pirate-day": "해적의 날",
 						"hallows-end": "할로윈",
-						"noblegarden": "귀족의 정원 축제",
-						"picked": ""
+						"noblegarden": "귀족의 정원 축제"
 					}
 				}
 			},
@@ -927,6 +931,10 @@
 					"global-winrate": "",
 					"games-played": ""
 				},
+				"deck-sort": {
+					"last-played": "",
+					"winrate": ""
+				},
 				"time": {
 					"past-three": "",
 					"past-seven": "",
@@ -1197,6 +1205,12 @@
 			"tip-9": "",
 			"tip-10": "",
 			"tip-11": ""
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1223,6 +1237,10 @@
 			"player": ""
 		},
 		"brilliant-macaw": {
+			"player": "",
+			"opponent": ""
+		},
+		"monstrous-parrot": {
 			"player": "",
 			"opponent": ""
 		},
@@ -1523,6 +1541,10 @@
 		},
 		"secrets-helper": {
 			"title": ""
+		},
+		"streamer-mode": {
+			"you": "",
+			"opponent": ""
 		},
 		"card-burned": "",
 		"card-transformed": "",
@@ -1875,7 +1897,7 @@
 					"next": "",
 					"toggle-label": "",
 					"connect-button-text": "",
-					"disconnect-button-test": "",
+					"disconnect-button-text": "",
 					"connected-text": "",
 					"collection-synchronized": ""
 				},
@@ -1917,7 +1939,10 @@
 				"logged-in-as-text": "",
 				"configuration-title": "",
 				"delay-label": "",
-				"delay-label-tooltip": ""
+				"delay-label-tooltip": "",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "",
@@ -1991,6 +2016,8 @@
 				"title": "",
 				"minions-play-order": "",
 				"minions-play-order-tooltip": "",
+				"streamer-mode": "",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "",
 				"show-title-bar-tooltip": "",
 				"show-control-bar": "",
@@ -2014,6 +2041,8 @@
 				"show-unknown-cards-tooltip": "",
 				"highlight-related-cards": "",
 				"highlight-related-cards-tooltip": "",
+				"discover-help": "",
+				"discover-help-tooltip": "",
 				"close-tracker-on-end": "",
 				"close-tracker-on-end-tooltip": "",
 				"close-tracker-on-end-advanced": "",
@@ -2124,6 +2153,8 @@
 					"bolner-tooltip": "",
 					"brilliant-macaw-label": "",
 					"brilliant-macaw-tooltip": "",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
 					"vanessa-label": "",
 					"vanessa-tooltip": "",
 					"murozond-label": "",
@@ -2223,6 +2254,8 @@
 				"show-achievements-tooltip": "",
 				"show-hero-tooltip-label": "",
 				"show-hero-tooltip-tooltip": "",
+				"show-hero-tier-label": "",
+				"show-hero-tier-tooltip": "",
 				"show-overlay-button": "",
 				"show-overlay-button-tooltip": "",
 				"popup-post-match-stats-label": "",
@@ -2278,6 +2311,8 @@
 				"label-tooltip": "현재 세션의 요약 표시. 기본적으로 스트리머에게 유용함",
 				"show-groups": "그룹화한 정보 표시",
 				"show-groups-tooltip": "최종 등수에 맞춰 그룹화한 이번 세션의 결과 요약 표시",
+				"hide-when-friends-list-open": "",
+				"hide-when-friends-list-open-tooltip": "",
 				"show-matches": "최근 판 표시",
 				"show-matches-tooltip": "최근에 끝낸 판들을 표시합니다",
 				"number-of-matches": "판 수",

@@ -80,7 +80,8 @@
 			"onyxias_lair": "Логово Ониксии",
 			"the_sunken_city": "Путешествие в Затонувший город",
 			"throne_of_tides": "Трон Приливов",
-			"revendreth": "Убийство в замке Нафрия"
+			"revendreth": "Убийство в замке Нафрия",
+			"maw_and_disorder": "Неисправимые преступники"
 		},
 		"pack": {
 			"classic": "Классический",
@@ -220,6 +221,7 @@
 			"replays-header": "Повторы",
 			"achievements-header": "Достижения",
 			"collection-header": "Коллекция",
+			"streams-header": "",
 			"stats-header": "Статистика",
 			"go-premium-header": "Поддержать разработчика и убрать рекламу",
 			"logged-in-as-header": "Вы вошли как {{value}}",
@@ -387,6 +389,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "Поиск карт...",
+				"search-box-tooltip": "",
 				"loading": "Загружаем еще карт...",
 				"results-title": "Поиск по запросу \"{{value}}\""
 			},
@@ -418,13 +421,16 @@
 						"emote": "Эмоции",
 						"event": "События",
 						"error": "Ошибки",
+						"disabled": "",
 						"other": "Прочие"
 					},
 					"effect": {
 						"play": "Розыгрыш карты",
 						"death": "Смерть",
 						"attack": "Атака",
+						"picked": "Реплика при выборе",
 						"greetings": "Приветствие",
+						"greetings-mirror": "",
 						"greetings-response": "Ответ на приветствие",
 						"well-played": "Неплохо сыграно",
 						"oops": "Ой!",
@@ -434,14 +440,13 @@
 						"wow": "Ух ты",
 						"concede": "Признание поражения",
 						"start": "Начало игры",
-						"timer": "Таймер",
-						"think-1": "Раздумье 1",
-						"think-2": "Раздумье 2",
-						"think-3": "Раздумье 3",
+						"start-mirror": "",
+						"timer": "Время истекает",
+						"think": "",
 						"low-cards": "Почти не осталось карт",
 						"no-cards": "Карты закончились",
 						"won": "Победа",
-						"mirror-start": "Зеркальный старт",
+						"idle": "",
 						"error-need-weapon": "Нужно оружие",
 						"error-need-mana": "Недостаточно маны",
 						"error-minion-attacked": "Существо уже атаковало",
@@ -454,15 +459,14 @@
 						"error-target": "Неверная цель",
 						"error-taunt": "Провокация",
 						"error-generic": "Общая",
-						"happy-holidays": "Счастливых Праздников",
-						"winterveil-greetings": "Зимний Покров - приветствие",
-						"lunar-new-year": "Лунный фестиваль",
-						"happy-new-year": "С Новым годом",
+						"holiday": "",
+						"winterveil-greetings": "Зимний Покров",
+						"lunar-new-year": "Лунный Новый Год",
+						"happy-new-year": "Новый год",
 						"fire-festival": "Огненный солнцеворот",
 						"pirate-day": "День пирата",
 						"hallows-end": "Тыквовин",
-						"noblegarden": "Сад чудес",
-						"picked": "Выбран"
+						"noblegarden": "Сад чудес"
 					}
 				}
 			},
@@ -578,7 +582,7 @@
 				"show-hidden-decks": "Показать архивные",
 				"deck-sort": {
 					"last-played": "Последняя игра",
-					"games-played": "Сыграно партий",
+					"games-played": "Количество партий",
 					"winrate": "Доля побед"
 				},
 				"format-filter": {
@@ -668,7 +672,7 @@
 				"empty-state-title": "Здесь пока ничего нет",
 				"empty-state-subtitle": "Играйте в рейтинг, чтобы начать, или проверьте фильтры выше :)",
 				"drag-to-merge-default": "Перетащите на другую колоду, чтобы объединить их как версии одной колоды",
-				"drag-to-merge": "",
+				"drag-to-merge": "Перетащите, чтобы создать новую версию {{deckName}}",
 				"versions": {
 					"title": "Версии колоды",
 					"click-to-view-version-stats-tooltip": "Нажмите, чтобы посмотреть статистику только для этой версии",
@@ -720,7 +724,7 @@
 		"battlegrounds": {
 			"menu": {
 				"heroes": "Герои",
-				"quests": "Квесты",
+				"quests": "Задания",
 				"rating": "Рейтинг",
 				"perfect-games": "Идеальные игры",
 				"records": "Рекорды",
@@ -825,7 +829,7 @@
 					},
 					"warband-stats": {
 						"community-label": "В среднем для героя",
-						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода битвы",
+						"community-tooltip": "Средние общие характеристики существ (атака + здоровье) на доске в начале каждого хода сражения",
 						"your-label": "",
 						"your-tooltip": "Ваши значения для этого героя",
 						"turn-label": "Ход",
@@ -866,11 +870,11 @@
 						"minions-sold": "Больше всего существ продано",
 						"enemy-minions-killed": "Больше всего вражеских существ убито",
 						"enemy-heroes-killed": "Больше всего вражеских героев убито",
-						"battles-going-first": "Ходов первым в боях",
-						"battle-luck": "Удача в бою",
+						"battles-going-first": "Ходов первым",
+						"battle-luck": "Удача в сражениях",
 						"battle-luck-explain-link": "Что это?",
 						"battle-luck-explain-link-tooltip": "Показатель, который говорит о том, насколько удачливым вы были в сражениях. Нажмите для получения дополнительной информации",
-						"negative-battle-luck": "Неудача в бою",
+						"negative-battle-luck": "Неудача в сражениях",
 						"best-stat-hero": "Рекорд поставил {{heroName}}",
 						"watch-replay-tooltip": "Смотреть повтор, где это значение было получено"
 					},
@@ -926,6 +930,10 @@
 					"player-winrate": "Твой винрейт",
 					"global-winrate": "Глобальный винрейт",
 					"games-played": "Сыграно партий"
+				},
+				"deck-sort": {
+					"last-played": "",
+					"winrate": "Побед в среднем"
 				},
 				"time": {
 					"past-three": "Последние 3 дня",
@@ -1154,8 +1162,8 @@
 				"game-mode-tooltip": {
 					"legend-format": "{{format}} Легенда",
 					"ladder": "{{format}} | {{leagueName}} {{rank}}",
-					"ladder-fallback": "",
-					"ladder-default": "",
+					"ladder-fallback": "{{format}} {{rank}}",
+					"ladder-default": "{{format}} Ранг 25",
 					"galakrond-explorers": "Пробуждение Галакронда - Исследователи",
 					"galakrond-evil": "Пробуждение Галакронда - ЗЛО"
 				},
@@ -1197,6 +1205,12 @@
 			"tip-9": "[Поля сражений] Сделайте окно BG шире, чтобы увидеть в симуляторе средний урон и вероятность погибнуть",
 			"tip-10": "[Дуэли] Вы можете навести курсор на здоровье противника, чтобы увидеть его максимальное здоровье",
 			"tip-11": ""
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1225,6 +1239,10 @@
 		"brilliant-macaw": {
 			"player": "Последняя разыгранная Вами карта с боевым кличом: {{value}}",
 			"opponent": "Последняя карта с боевым кличом разыгранный Вашим противником: {{value}}"
+		},
+		"monstrous-parrot": {
+			"player": "",
+			"opponent": ""
 		},
 		"vanessa": {
 			"player": "Последняя карта разыгранная вашим противником: {{value}}"
@@ -1472,14 +1490,14 @@
 			"task-title": "Задача {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Прогресс:",
 			"task-progress-tooltip": "Прогресс задач обновится после окончания матча",
-			"create-team-button-label": "",
-			"create-team-button-tooltip": "",
+			"create-team-button-label": "Создание отряда для задач",
+			"create-team-button-tooltip": "Создайте отряд на основе списка ваших задач. Вы можете выбрать тех, кто заполнит недостающие места в команде в Настройках",
 			"create-team-button-ok-label": "",
-			"task-team-default-name": "Отряд для заданий",
+			"task-team-default-name": "Отряд для задач",
 			"roles-chart-button": "Роли",
 			"turn-counter": {
 				"turns": "Ходов",
-				"current-battle-turn-tooltip": "",
+				"current-battle-turn-tooltip": "Текущий ход",
 				"total-map-turns-error-tooltip": "",
 				"total-map-turns-tooltip": "Ходов в этом походе"
 			}
@@ -1524,6 +1542,10 @@
 		"secrets-helper": {
 			"title": "Отслеживание секретов"
 		},
+		"streamer-mode": {
+			"you": "Вы",
+			"opponent": ""
+		},
 		"card-burned": "Карта сожжена",
 		"card-transformed": "Карта превращена",
 		"card-discarded": "Карта сброшена",
@@ -1544,7 +1566,7 @@
 		"menu": {
 			"hero-selection": "Выбор героя",
 			"opponent": "Противник",
-			"live-stats": "Статистика в бою",
+			"live-stats": "Текущая статистика",
 			"post-match-stats": "Послематчевая статистика",
 			"simulator": "Симулятор"
 		},
@@ -1583,19 +1605,19 @@
 			"remove-minion-button-tooltip": "Удалить существо",
 			"versus": "VS",
 			"simulate-button": "Запустить",
-			"simulate-button-tooltip": "Провести симуляцию боя",
+			"simulate-button-tooltip": "Провести симуляцию сражения",
 			"reset-button": "Сбросить",
 			"export-button": "Копировать",
-			"export-button-tooltip": "",
+			"export-button-tooltip": "Скопируйте код симуляции, чтобы поделиться им или импортировать его в симулятор (в данный момент он довольно большой и не помещается в твит)",
 			"exporting": "Создание кода симуляции, пожалуйста подождите",
 			"importing": "Существа импортируются, пожалуйста подождите",
 			"export-confirmation": "Код симуляции скопирован в буфер обмена",
 			"import-button": "Импортировать",
 			"import-button-tooltip": "",
 			"reposition-button": "Репозиция",
-			"reposition-button-firstpass": "",
-			"reposition-button-secondpass": "",
-			"reposition-button-finalresult": "",
+			"reposition-button-firstpass": "1-й проход...",
+			"reposition-button-secondpass": "2-й проход...",
+			"reposition-button-finalresult": "Посл. проход...",
 			"reposition-button-done": "Завершена",
 			"reposition-button-cancel": "Отмена",
 			"reposition-button-cancelling": "Отмена...",
@@ -1609,7 +1631,7 @@
 			"actual": "Актуальный стол",
 			"simulated": "Симуляция",
 			"empty-state-title": "Здесь пока ничего нет",
-			"empty-state-subtitle": "Ваша первая битва будет показана здесь после того, как вы столкнетесь с противником",
+			"empty-state-subtitle": "Ваше первое сражение будет показано здесь после того, как вы столкнетесь с противником",
 			"battles-header": "Все сражения",
 			"turn-winrate-graph-title": "Средний винрейт по ходам",
 			"select-button": "Выбрать",
@@ -1635,7 +1657,7 @@
 			"sneed-deathrattle-tooltip": "",
 			"minions-selection-title": "Существа",
 			"search-minion-placeholder": "Поиск существа",
-			"resimulating-battle": "Ресимуляция боя",
+			"resimulating-battle": "Ресимуляция сражения",
 			"simulator-help-tooltip": {
 				"title": "",
 				"control-hero": "",
@@ -1653,7 +1675,7 @@
 			"matches-played-label": "Сыграно партий:",
 			"matches-played-tooltip": "Всего матчей, сыгранных этим героем",
 			"turn-winrate": "Винрейт по ходам",
-			"turn-winrate-tooltip": "Коэффициент победы в битве за ход (он дает вам представление о том, когда этот герой является самым сильным)",
+			"turn-winrate-tooltip": "Коэффициент победы в сражении за ход (показывает когда этот герой самый сильный)",
 			"winning-tribes-title": "Лучшие победившие племена",
 			"winning-tribes-title-tooltip": "Процент каждого типа существ, присутствующего в среднем в топ-4 боевых отрядах"
 		},
@@ -1707,14 +1729,14 @@
 			}
 		},
 		"post-match-stats": {
-			"title": "Статистика последней партии",
+			"title": "Статистика последнего матча",
 			"final-board": "Финальный стол",
 			"current-board": "Финальный стол",
 			"final-position": "Вы заняли {{position}} место",
-			"live-stats-title": "Статистика в бою - Ход {{turn}}",
+			"live-stats-title": "Текущая статистика - Ход {{turn}}",
 			"tabs": {
 				"hp-by-turn": "Здоровье по ходам",
-				"stats": "",
+				"stats": "Статистика",
 				"warband-composition-by-turn": "Состав сборки",
 				"warband-total-stats-by-turn": "Характеристики стола",
 				"winrate-per-turn": "Вероятность победы",
@@ -1737,10 +1759,10 @@
 			},
 			"warband-stats": {
 				"community-label": "В среднем для героя",
-				"your-label": "Данный матч",
+				"your-label": "Этот матч",
 				"turn-label": "Ход",
 				"stat-label": "Характеристики",
-				"delta-label": ""
+				"delta-label": "+{{delta}} за этот ход"
 			}
 		},
 		"overlay-button": {
@@ -1757,7 +1779,7 @@
 			"opponent-not-met": "Вы ещё не сражались с этим противником",
 			"last-board-empty": "Стол противника был пуст",
 			"total-damage": "Сум. урон",
-			"stats-share-warning": ""
+			"stats-share-warning": "Несколько отдельных существ, а также золотые существа, имеют одни и те же статы (из-за того как работают Поля сражений)"
 		},
 		"empty-state-title": "Здесь пока ничего нет",
 		"empty-state-subtitle": "Сыграйте на Полях сражений, чтобы начать!"
@@ -1786,7 +1808,7 @@
 		"title": "Обзор сессии",
 		"title-tooltip": "",
 		"display-mode": {
-			"all": "",
+			"all": "Все",
 			"battlegrounds": "Поля сражений",
 			"unknown": ""
 		},
@@ -1874,9 +1896,9 @@
 					"website-link": "here",
 					"next": "",
 					"toggle-label": "",
-					"connect-button-text": "",
-					"disconnect-button-test": "",
-					"connected-text": "",
+					"connect-button-text": "Подключиться",
+					"disconnect-button-text": "",
+					"connected-text": "Вы авторизованы",
 					"collection-synchronized": "Коллекция синхронизирована"
 				},
 				"d0nkey": {
@@ -1910,14 +1932,17 @@
 				"intro": "",
 				"todo-1": "1. Установите расширение Firestone на ваш Twitch-канал:",
 				"todo-2": "2. Подключите ваш Twitch-аккаунт к Firestone, нажав кнопку ниже",
-				"todo-3": "",
+				"todo-3": "3. Настройте ваши параметры: ",
 				"link": "здесь",
-				"login-button-text": "",
-				"logout-button-text": "",
+				"login-button-text": "Войти через Twitch",
+				"logout-button-text": "Отключиться",
 				"logged-in-as-text": "Вы вошли как:",
-				"configuration-title": "",
+				"configuration-title": "Настройки стрима",
 				"delay-label": "Задержка стрима (мс)",
-				"delay-label-tooltip": ""
+				"delay-label-tooltip": "Задерживать события отправляемые на Twitch на это количество миллисекунд. Полезно при борьбе со стрим-снайперами",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "Запускать Firestone при старте игры",
@@ -1966,13 +1991,13 @@
 			},
 			"quests": {
 				"title": "Задания",
-				"enable-quests-label": "",
-				"enable-quests-tooltip": "",
-				"show-when-empty-label": "",
-				"show-when-empty-tooltip": "",
-				"show-in-game-label": "",
-				"show-in-game-tooltip": "",
-				"constructed-label": "",
+				"enable-quests-label": "Включить виджет заданий",
+				"enable-quests-tooltip": "Показывать виджет в различных режимах игры, перечисляющий ваши текущие задания",
+				"show-when-empty-label": "Показывать пустым",
+				"show-when-empty-tooltip": "Если включено, виджет заданий будет отображаться, даже если все задания завершены",
+				"show-in-game-label": "Показывать во время игры",
+				"show-in-game-tooltip": "Если выключено, то виджет заданий будет скрыт во время игры",
+				"constructed-label": "Hearthstone",
 				"constructed-tooltip": "",
 				"battlegrounds-label": "Поля сражений",
 				"battlegrounds-tooltip": ""
@@ -1991,6 +2016,8 @@
 				"title": "Включение/выключение функций",
 				"minions-play-order": "Порядок разыгранных существ",
 				"minions-play-order-tooltip": "",
+				"streamer-mode": "Режим стримера",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "Показывать название колоды",
 				"show-title-bar-tooltip": "Показать/Скрыть название колоды и количество карт в руке и колоде",
 				"show-control-bar": "Показывать строку заголовка",
@@ -2014,6 +2041,8 @@
 				"show-unknown-cards-tooltip": "",
 				"highlight-related-cards": "",
 				"highlight-related-cards-tooltip": "",
+				"discover-help": "",
+				"discover-help-tooltip": "",
 				"close-tracker-on-end": "",
 				"close-tracker-on-end-tooltip": "",
 				"close-tracker-on-end-advanced": "",
@@ -2113,7 +2142,7 @@
 					"number-of-spells-label": "Счётчик заклинаний",
 					"number-of-spells-tooltip": "",
 					"elementals-label": "Счётчик элементалей",
-					"elementals-tooltip": "",
+					"elementals-tooltip": "Показывает общее количество элементалей, которых вы разыграли на этом и предыдущем ходу. Показывается только если в вашей руке будут найдены подходящие карты",
 					"watch-post-tooltip": "",
 					"libram-tooltip": "",
 					"elwynn-boar-tooltip": "Показывать сколько погибло ваших Элвинских вепрей",
@@ -2124,6 +2153,8 @@
 					"bolner-tooltip": "",
 					"brilliant-macaw-label": "Сверкающий ара",
 					"brilliant-macaw-tooltip": "Если Сверкающий ара у вас в руке, показывает последний разыгранный вами боевой клич",
+					"monstrous-parrot-label": "Страшный попугай",
+					"monstrous-parrot-tooltip": "Показывает ваш последний сработавший предсмертный хрип, когда Страшный попугай у вас в руке",
 					"vanessa-label": "Ванесса ван Клиф",
 					"vanessa-tooltip": "Показывать последнюю разыгранную противником карту, когда Ванесса ван Клиф у вас в руке",
 					"murozond-label": "Дорнозму Бесконечный",
@@ -2199,13 +2230,13 @@
 			"full-toggle-label": "Включить поле сражений",
 			"full-toggle-tooltip": "",
 			"general": {
-				"companion-app-title": "",
-				"enable-app-label": "",
+				"companion-app-title": "Дополнительное приложение",
+				"enable-app-label": "Включить приложение",
 				"integrated-mode-label": "Интегрированный режим",
 				"integrated-mode-tooltip": "Когда включено, окно Полей сражений становится оверлеем и встраивается в окно игры. Этот параметр рекомендуется для использования с одним монитором или если вы стримите с приложением.",
 				"enable-battle-sim-label": "Включить симуляцию сражений",
-				"enable-battle-sim-tooltip": "",
-				"hide-simulation-label": "Скрывать шансы на победу после завершения сражения",
+				"enable-battle-sim-tooltip": "Когда включено, вы будете видеть ваши шансы на победу / ничью / поражение каждое сражение в начале битвы",
+				"hide-simulation-label": "Скрывать симуляцию после завершения сражения",
 				"hide-simulation-tooltip": "",
 				"show-sim-only-in-tavern-label": "",
 				"show-sim-only-in-tavern-tooltip": "",
@@ -2213,7 +2244,7 @@
 				"use-local-simulator-tooltip": "",
 				"popup-hero-selection-screen-label": "",
 				"popup-hero-selection-screen-tooltip": "",
-				"use-mmr-filter-for-live-stats-label-short": "",
+				"use-mmr-filter-for-live-stats-label-short": "MMR фильтр",
 				"use-mmr-filter-for-live-stats-tooltip": "",
 				"use-tribe-filter-for-live-stats-label-short": "Фильтр типов существ",
 				"use-tribe-filter-for-live-stats-tooltip": "",
@@ -2223,9 +2254,11 @@
 				"show-achievements-tooltip": "",
 				"show-hero-tooltip-label": "",
 				"show-hero-tooltip-tooltip": "",
+				"show-hero-tier-label": "",
+				"show-hero-tier-tooltip": "",
 				"show-overlay-button": "",
 				"show-overlay-button-tooltip": "",
-				"popup-post-match-stats-label": "",
+				"popup-post-match-stats-label": "Вспывающая послематчевая статистика",
 				"popup-post-match-stats-tooltip": "",
 				"simulator-config-title": "Настройки симулятора",
 				"simulator-number-of-sims-label": "Количество симуляций",
@@ -2246,9 +2279,9 @@
 				"last-opponent-icon-tooltip": "",
 				"last-opponent-board-label": "",
 				"last-opponent-board-tooltip": "",
-				"battle-simulation-label": "Наложение симулятора битвы",
-				"battle-simulation-tooltip": "Отображение текущих результатов моделирования боя в виде наложения поверх игры",
-				"battle-simulation-example-label": "Пример моделирования в наложении",
+				"battle-simulation-label": "Наложение симуляции сражений",
+				"battle-simulation-tooltip": "Отображение текущих результатов симуляции боя в виде наложения поверх игры",
+				"battle-simulation-example-label": "Пример симуляции в наложении",
 				"battle-simulation-example-tooltip": "Добавить кнопку для просмотра примера симуляции приводящей к определенному результату.",
 				"widget-size-label": "Размер виджета",
 				"banned-tribes-title": "Не представленые типы существ",
@@ -2278,6 +2311,8 @@
 				"label-tooltip": "",
 				"show-groups": "",
 				"show-groups-tooltip": "",
+				"hide-when-friends-list-open": "Скрывать при открытом списке друзей",
+				"hide-when-friends-list-open-tooltip": "Скрывать виджет при открытом списке друзей",
 				"show-matches": "Показать последние матчи",
 				"show-matches-tooltip": "Показать последние матчи.",
 				"number-of-matches": "Количество матчей",
@@ -2306,7 +2341,7 @@
 		"mercenaries": {
 			"menu": {
 				"general": "Общие",
-				"quests": ""
+				"quests": "Задания"
 			},
 			"general": {
 				"player-team-widget-label": "Виджет отряда игрока",
@@ -2315,7 +2350,7 @@
 				"opponent-team-widget-tooltip": "Показывать виджет со всеми известными наёмниками противника, их способностями и снаряжением во время боя",
 				"map-team-widget-label": "Виджет отряда игрока: карта поручения",
 				"map-team-widget-tooltip": "Показывать виджет с вашими наёмниками, их способностями и снаряжением во время просмотра карты поручения. Полезно при выборе пути или выборе сокровища",
-				"village-team-widget-label": "",
+				"village-team-widget-label": "Виджет отряда: Лагерь",
 				"village-team-widget-tooltip": "Показывать виджет с вашими наёмниками, их способностями и снаряжением во время просмотра коллекции и в окне выбора отряда",
 				"action-queue-pve-label": "Порядок срабатывания способностей (PvE)",
 				"action-queue-pve-tooltip": "",
@@ -2327,7 +2362,7 @@
 				"tasks-tooltip": "",
 				"synergies-label": "Выделять синергии",
 				"synergies-tooltip": "",
-				"turn-counter-battle-label": "",
+				"turn-counter-battle-label": "Счётчик ходов в сражениях",
 				"turn-counter-battle-tooltip": "",
 				"your-team": "Ваш отряд",
 				"opponent-team": "Отряд противника",
@@ -2335,7 +2370,7 @@
 			},
 			"quests": {
 				"title": "",
-				"explanation": "",
+				"explanation": "Выберите до 6 наёмников, которые будут автоматически добавлены в отряд на оставшиеся места при создании отряда для задач (слева направо).",
 				"search-box-placeholder": "Поиск наёмников...",
 				"empty-team": ""
 			}
@@ -2349,15 +2384,15 @@
 	},
 	"twitch": {
 		"adaptative-scaling": "Адаптивное масштабирование",
-		"adaptative-scaling-tooltip": "",
+		"adaptative-scaling-tooltip": "(ЭКСПЕРИМЕНТАЛЬНО) Автоматическое изменение размера виджетов на основе размера окна",
 		"scale": "Масштаб",
 		"scale-tooltip": "Изменить размер виджетов",
 		"move-magnifier-icon-on-top": "Развернуть иконку вверх",
 		"move-magnifier-icon-on-top-tooltip": "",
 		"constructed-section-title": "Основной режим",
 		"battlegrounds-section-title": "Поля сражений",
-		"could-not-log-error-title": "",
-		"could-not-log-error-text": "",
+		"could-not-log-error-title": "Не удалось подключиться к вашему аккаунту Twitch",
+		"could-not-log-error-text": "Пожалуйста, зайдите в настройки и переподключитесь к вашему аккаунту Twitch",
 		"settings-side-text": "Настройки",
 		"show-hero-cards-help": "Показать карты героев",
 		"show-hero-cards-help-tooltip": "",
@@ -2368,8 +2403,8 @@
 		"minions-list-size": "Размер списка существ",
 		"show-minions-list-golden-cards": "Показать золотые карты",
 		"show-minions-list-golden-cards-tooltip": "",
-		"show-battle-simulator": "Показать шансы битвы",
-		"battle-simulator-size": "Размер симулятора битвы",
+		"show-battle-simulator": "Показать шансы сражений",
+		"battle-simulator-size": "Размер симулятора сражений",
 		"last-board-size": "Последний размер доски",
 		"last-board-size-tooltip": "",
 		"hide-battle-odds-in-combat": "Скрыть шансы в бою",
