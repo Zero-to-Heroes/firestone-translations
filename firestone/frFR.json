@@ -221,6 +221,7 @@
 			"replays-header": "Replays",
 			"achievements-header": "Hauts faits",
 			"collection-header": "Collection",
+			"streams-header": "",
 			"stats-header": "Stats",
 			"go-premium-header": "Soutenez le développeur et enlevez la pub",
 			"logged-in-as-header": "Connecté en tant que {{value}}",
@@ -420,13 +421,16 @@
 						"emote": "Emotes",
 						"event": "Événement",
 						"error": "Erreurs",
+						"disabled": "",
 						"other": "Autre"
 					},
 					"effect": {
 						"play": "Jouée",
 						"death": "Mort",
 						"attack": "Attaque",
+						"picked": "Choisi",
 						"greetings": "Bonjour",
+						"greetings-mirror": "",
 						"greetings-response": "Bonjour (Réponse)",
 						"well-played": "Bien joué",
 						"oops": "Oups",
@@ -436,14 +440,13 @@
 						"wow": "Wow",
 						"concede": "Capituler",
 						"start": "Entrée",
+						"start-mirror": "",
 						"timer": "Temps",
-						"think-1": "Réflexion 1",
-						"think-2": "Réflexion 2",
-						"think-3": "Réflexion 3",
+						"think": "",
 						"low-cards": "Presque plus de cartes",
 						"no-cards": "Plus de cartes",
 						"won": "Victoire",
-						"mirror-start": "Entrée (miroir)",
+						"idle": "",
 						"error-need-weapon": "Erreur : Arme nécessaire",
 						"error-need-mana": "Erreur : Mana nécessaire",
 						"error-minion-attacked": "Erreur : Serviteur ayant déjà attaqué",
@@ -456,15 +459,14 @@
 						"error-target": "Erreur : Cible",
 						"error-taunt": "Erreur : Provocation",
 						"error-generic": "Erreur générique",
-						"happy-holidays": "Joyeuses fêtes",
+						"holiday": "",
 						"winterveil-greetings": "Bonjour (Voile d’hiver)",
 						"lunar-new-year": "Nouvelle année lunaire",
 						"happy-new-year": "Bonne année",
 						"fire-festival": "Fête du Feu",
 						"pirate-day": "Jour des Pirates",
 						"hallows-end": "Sanssaint",
-						"noblegarden": "Fête du Jardin des nobles",
-						"picked": "Choisi"
+						"noblegarden": "Fête du Jardin des nobles"
 					}
 				}
 			},
@@ -1203,6 +1205,12 @@
 			"tip-9": "[Champs de bataille] Rendez la fenêtre Champs de bataille plus large pour voir les dégâts moyens et les chances de tuer le héros adverse dans le simulateur",
 			"tip-10": "[Duels] Vous pouvez survoler les PV de l’adversaire pour voir son maximum de PV",
 			"tip-11": "[Duels] Passer la souris sur le nom de votre adversaire révèle également sa classe"
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1536,7 +1544,7 @@
 		},
 		"streamer-mode": {
 			"you": "Vous",
-			"opponent": "Votre adversaire"
+			"opponent": ""
 		},
 		"card-burned": "Carte brûlée",
 		"card-transformed": "Carte transformée",
@@ -1889,7 +1897,7 @@
 					"next": "Si vous vous connectez à votre compte Out of Cards, Firestone enverra vos données de collection à Out of Cards afin que vous puissiez les utiliser en ligne.",
 					"toggle-label": "Afficher une notification lorsque la collection est synchronisée",
 					"connect-button-text": "Se connecter",
-					"disconnect-button-test": "Se déconnecter",
+					"disconnect-button-text": "",
 					"connected-text": "Vous êtes connecté",
 					"collection-synchronized": "Collection synchronisée"
 				},
@@ -1931,7 +1939,10 @@
 				"logged-in-as-text": "Connecté en tant que :",
 				"configuration-title": "Configuration du stream",
 				"delay-label": "Délai de diffusion (ms)",
-				"delay-label-tooltip": "Délaie les événements envoyés à Twitch par cette quantité de millisecondes. Utile si votre stream est délayé pour combattre les snipers"
+				"delay-label-tooltip": "Délaie les événements envoyés à Twitch par cette quantité de millisecondes. Utile si votre stream est délayé pour combattre les snipers",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "Lancer Firestone quand une partie commence",
@@ -2006,7 +2017,7 @@
 				"minions-play-order": "Ordre d’apparition des serviteurs",
 				"minions-play-order-tooltip": "Afficher l’ordre d’apparition de chaque serviteur sur le champ de bataille, pour vous aider à suivre l’ordre de résolution des Râles d’agonie (ou tout ce qui dépend de l’ordre dans lequel les serviteurs sont arrivés sur le champ de bataille)",
 				"streamer-mode": "Mode stream",
-				"streamer-mode-tooltip": "Remplace votre nom et celui de votre adversaire par « Vous » et « Votre adversaire ». Cela reflète la fonctionnalité du mode streamer du jeu qui est activée en appuyant sur Ctrl + Shift + S pendant une partie.",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "Afficher le titre",
 				"show-title-bar-tooltip": "Afficher/masquer le nom du deck et les cartes restantes dans la main et le deck",
 				"show-control-bar": "Afficher la barre de contrôle",
@@ -2094,7 +2105,7 @@
 					"cthun-label": "C’Thun",
 					"cthun-tooltip": "Afficher la taille actuelle du C’Thun de votre adversaire",
 					"fatigue-label": "Fatigue",
-					"fatigue-tooltip": "Afficher les derniers dégâts de fatigue de votre adversaire",
+					"fatigue-tooltip": "",
 					"abyssal-curse-label": "Malédiction abyssale",
 					"abyssal-curse-tooltip-2": "Afficher les dégâts de la malédiction abyssale la plus forte de votre adversaire",
 					"attack-on-board-label": "ATQ sur le plateau",
@@ -2125,7 +2136,7 @@
 					"pogo-tooltip": "Affiche le nombre de fois où vous avez joué un lapin-échasseur",
 					"jade-tooltip": "Afficher la taille actuelle de vos golems de jade",
 					"cthun-tooltip": "Afficher la taille actuelle de votre C’Thun",
-					"fatigue-tooltip": "Afficher vos derniers dégâts de fatigue",
+					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "Afficher les dégâts de votre malédiction abyssale la plus forte",
 					"attack-on-board-tooltip": "Afficher l’ATQ totale des serviteurs + héros sur votre plateau",
 					"number-of-spells-label": "Nombre de sorts",
