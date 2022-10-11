@@ -221,6 +221,7 @@
 			"replays-header": "重播",
 			"achievements-header": "成就",
 			"collection-header": "收藏",
+			"streams-header": "",
 			"stats-header": "統計",
 			"go-premium-header": "支持開發並刪除廣告",
 			"logged-in-as-header": "以 {{value}} 身份登錄",
@@ -420,13 +421,16 @@
 						"emote": "表情",
 						"event": "事件",
 						"error": "錯誤",
+						"disabled": "",
 						"other": "其它"
 					},
 					"effect": {
 						"play": "打出",
 						"death": "死亡",
 						"attack": "攻擊",
+						"picked": "被選中",
 						"greetings": "你好",
+						"greetings-mirror": "",
 						"greetings-response": "回應你好",
 						"well-played": "玩的不錯",
 						"oops": "唉呀！",
@@ -436,14 +440,13 @@
 						"wow": "厲害",
 						"concede": "投降",
 						"start": "開始",
+						"start-mirror": "",
 						"timer": "計時器",
-						"think-1": "思考",
-						"think-2": "思考",
-						"think-3": "思考",
+						"think": "",
 						"low-cards": "牌庫快沒卡牌",
 						"no-cards": "牌庫無卡牌",
 						"won": "勝利",
-						"mirror-start": "鏡像開局",
+						"idle": "",
 						"error-need-weapon": "我需要武器",
 						"error-need-mana": "我需要法力",
 						"error-minion-attacked": "手下攻擊過了",
@@ -456,15 +459,14 @@
 						"error-target": "我無法選定那個目標",
 						"error-taunt": "必須先攻擊有嘲諷的手下",
 						"error-generic": "我不能這麼做",
-						"happy-holidays": "佳節愉快",
+						"holiday": "",
 						"winterveil-greetings": "冬暮節快樂",
 						"lunar-new-year": "農曆新年",
 						"happy-new-year": "新年快樂",
 						"fire-festival": "仲夏火焰節",
 						"pirate-day": "海盜日",
 						"hallows-end": "萬鬼節快樂",
-						"noblegarden": "歡慶貴族花園節",
-						"picked": "被選中"
+						"noblegarden": "歡慶貴族花園節"
 					}
 				}
 			},
@@ -1203,6 +1205,12 @@
 			"tip-9": "[Battlegrounds] 拉大英雄戰場插件的視窗大小以查看戰鬥模擬器中平均傷害及致死機率",
 			"tip-10": "[Duels] 你可以將滑鼠移到對方的血量上以查看其最大血量",
 			"tip-11": "[Duels] 鼠標停在你對手的名字上時也顯示他們的職業"
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1889,7 +1897,7 @@
 					"next": "如果您連接 Out of Cards 帳戶，Firestone 會將您的收集數據發送到 Out of Cards，以便您可以在線上使用。",
 					"toggle-label": "收藏同步後顯示通知",
 					"connect-button-text": "連結",
-					"disconnect-button-test": "中斷連接",
+					"disconnect-button-text": "",
 					"connected-text": "您已登錄",
 					"collection-synchronized": "收藏已同步"
 				},
@@ -1931,7 +1939,10 @@
 				"logged-in-as-text": "登入身份：",
 				"configuration-title": "直播配置",
 				"delay-label": "直播延遲(毫秒)",
-				"delay-label-tooltip": "將發送到 Twitch 的事件延遲幾毫秒， 如果您的直播被延遲以對抗狙擊，這很有用。"
+				"delay-label-tooltip": "將發送到 Twitch 的事件延遲幾毫秒， 如果您的直播被延遲以對抗狙擊，這很有用。",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "啟動遊戲時也啟動Firestone",
@@ -2094,7 +2105,7 @@
 					"cthun-label": "克蘇恩",
 					"cthun-tooltip": "顯示你的對手目前克蘇恩的大小",
 					"fatigue-label": "疲勞",
-					"fatigue-tooltip": "顯示你的對手最後的疲勞傷害",
+					"fatigue-tooltip": "",
 					"abyssal-curse-label": "深淵詛咒",
 					"abyssal-curse-tooltip-2": "顯示你對手最高的深淵詛咒傷害",
 					"attack-on-board-label": "場上攻擊力總和",
@@ -2125,7 +2136,7 @@
 					"pogo-tooltip": "顯示你已打出的蹦蹦兔數量",
 					"jade-tooltip": "顯示你目前翠玉魔像的體質",
 					"cthun-tooltip": "顯示你目前克蘇恩的體質",
-					"fatigue-tooltip": "顯示你最後的疲勞傷害",
+					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "顯示你最高的深淵詛咒傷害",
 					"attack-on-board-tooltip": "顯示你的手下和英雄的攻擊力總和",
 					"number-of-spells-label": "法術施放數量",
