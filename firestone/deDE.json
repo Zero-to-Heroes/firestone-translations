@@ -221,6 +221,7 @@
 			"replays-header": "Aufzeichnungen",
 			"achievements-header": "Errungenschaften",
 			"collection-header": "Sammlung",
+			"streams-header": "",
 			"stats-header": "Statistiken",
 			"go-premium-header": "Unterstützen Sie den Entwickler und entfernen Sie die Anzeigen",
 			"logged-in-as-header": "Eingeloggt als {{value}}",
@@ -420,13 +421,16 @@
 						"emote": "Emotes",
 						"event": "Veranstaltungen",
 						"error": "Fehler",
+						"disabled": "",
 						"other": "Andere"
 					},
 					"effect": {
 						"play": "Spielen",
 						"death": "Tod",
 						"attack": "Angriff",
+						"picked": "Ausgewählt",
 						"greetings": "Grüße",
+						"greetings-mirror": "",
 						"greetings-response": "Grüße Antwort",
 						"well-played": "Gut gespielt",
 						"oops": "Ups",
@@ -436,14 +440,13 @@
 						"wow": "Wow",
 						"concede": "Aufgeben",
 						"start": "Start",
+						"start-mirror": "",
 						"timer": "Timer",
-						"think-1": "Nachdenken 1",
-						"think-2": "Nachdenken 2",
-						"think-3": "Nachdenken 3",
+						"think": "",
 						"low-cards": "Niedrige Karten",
 						"no-cards": "Keine Karten",
 						"won": "Gewonnen",
-						"mirror-start": "",
+						"idle": "",
 						"error-need-weapon": "Fehler Waffe fehlt",
 						"error-need-mana": "Fehler Mana fehlt",
 						"error-minion-attacked": "Fehler: Diener bereits angegriffen",
@@ -456,15 +459,14 @@
 						"error-target": "Fehler Ziel",
 						"error-taunt": "Fehler Spott",
 						"error-generic": "Fehler allgemein",
-						"happy-holidays": "Frohe Feiertage",
+						"holiday": "",
 						"winterveil-greetings": "Winterhauchfest",
 						"lunar-new-year": "Neues Mondjahr",
 						"happy-new-year": "Frohes neues Jahr",
 						"fire-festival": "Sonnenwendfest",
 						"pirate-day": "Tag der Piraten",
 						"hallows-end": "Schlotternächte",
-						"noblegarden": "Nobelgarten",
-						"picked": "Ausgewählt"
+						"noblegarden": "Nobelgarten"
 					}
 				}
 			},
@@ -1203,6 +1205,12 @@
 			"tip-9": "",
 			"tip-10": "",
 			"tip-11": ""
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1889,7 +1897,7 @@
 					"next": "Wenn du dein Out of Cards Accounts verbindest, sendet Firestone Daten deiner Sammlung an Out of Cards, damit sie sie online nutzen können.",
 					"toggle-label": "Zeige eine Benachrichtigung, wenn die Sammlung synchronisiert ist",
 					"connect-button-text": "Verbinden",
-					"disconnect-button-test": "Verbindung trennen",
+					"disconnect-button-text": "",
 					"connected-text": "Du bist angemeldet",
 					"collection-synchronized": "Sammlung synchronisiert"
 				},
@@ -1931,7 +1939,10 @@
 				"logged-in-as-text": "Eingeloggt als:",
 				"configuration-title": "Stream Konfiguration",
 				"delay-label": "Streamverzögerung (ms)",
-				"delay-label-tooltip": ""
+				"delay-label-tooltip": "",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "Starte Firestone wenn das Spiel gestartet wird",
@@ -2125,7 +2136,7 @@
 					"pogo-tooltip": "",
 					"jade-tooltip": "",
 					"cthun-tooltip": "",
-					"fatigue-tooltip": "Zeige deinen letzten Erschöpfungsschaden",
+					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "Zeige deinen höchsten Abyssischen Fluch Schaden",
 					"attack-on-board-tooltip": "Zeige den Gesamtschaden deines Helden und deiner Diener auf dem Feld",
 					"number-of-spells-label": "Anzahl der Zauber",
