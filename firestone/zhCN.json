@@ -221,6 +221,7 @@
 			"replays-header": "回放",
 			"achievements-header": "成就",
 			"collection-header": "我的收藏",
+			"streams-header": "",
 			"stats-header": "个人概况",
 			"go-premium-header": "支持开发者并移除广告",
 			"logged-in-as-header": "以 {{value}} 身份登录",
@@ -420,13 +421,16 @@
 						"emote": "表情",
 						"event": "活动事件",
 						"error": "错误操作",
+						"disabled": "",
 						"other": "其他"
 					},
 					"effect": {
 						"play": "使用",
 						"death": "死亡",
 						"attack": "攻击",
+						"picked": "被选中",
 						"greetings": "问候",
+						"greetings-mirror": "",
 						"greetings-response": "问候回应",
 						"well-played": "称赞",
 						"oops": "失误",
@@ -436,14 +440,13 @@
 						"wow": "惊叹",
 						"concede": "认输",
 						"start": "开始",
+						"start-mirror": "",
 						"timer": "烧绳",
-						"think-1": "思考1",
-						"think-2": "思考2",
-						"think-3": "思考3",
+						"think": "",
 						"low-cards": "牌库见底",
 						"no-cards": "牌库枯竭",
 						"won": "胜利",
-						"mirror-start": "镜像开始",
+						"idle": "",
 						"error-need-weapon": "错误：需要武器",
 						"error-need-mana": "错误：法力水晶不足",
 						"error-minion-attacked": "错误：随从已经攻击",
@@ -456,15 +459,14 @@
 						"error-target": "错误：目标不合法",
 						"error-taunt": "错误：存在嘲讽单位",
 						"error-generic": "错误：通用",
-						"happy-holidays": "节日快乐",
+						"holiday": "",
 						"winterveil-greetings": "冬幕节问候",
 						"lunar-new-year": "农历新年",
 						"happy-new-year": "新年快乐",
 						"fire-festival": "火焰节",
 						"pirate-day": "海盗节",
 						"hallows-end": "万圣节",
-						"noblegarden": "复活节",
-						"picked": "被选中"
+						"noblegarden": "复活节"
 					}
 				}
 			},
@@ -1203,6 +1205,12 @@
 			"tip-9": "[酒馆战棋] 调宽战棋窗口，以在模拟器中看到平均伤害和致命概率",
 			"tip-10": "[对决模式] 您可以将鼠标悬停在对手的生命值上查看他们的最大生命值",
 			"tip-11": "[对决模式] 鼠标悬停于对手的名字会显示其职业"
+		},
+		"streams": {
+			"category": {
+				"live-streams": ""
+			},
+			"current-viewers": ""
 		}
 	},
 	"turn-timer": {
@@ -1889,7 +1897,7 @@
 					"next": "如果您关联了Out of Cards 账号，Firestone会将您的收藏数据发送到Out of Cards，以便您在线使用。",
 					"toggle-label": "收藏同步后显示通知",
 					"connect-button-text": "关联",
-					"disconnect-button-test": "取消关联",
+					"disconnect-button-text": "",
 					"connected-text": "您已登录",
 					"collection-synchronized": "收藏已同步"
 				},
@@ -1931,7 +1939,10 @@
 				"logged-in-as-text": "登录身份：",
 				"configuration-title": "直播设置",
 				"delay-label": "直播延迟（毫秒）",
-				"delay-label-tooltip": "延迟推流给Twitch的时长。如果您被狙击了，这将很有用"
+				"delay-label-tooltip": "延迟推流给Twitch的时长。如果您被狙击了，这将很有用",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "游戏开始时启动 Firestone",
@@ -2094,7 +2105,7 @@
 					"cthun-label": "克苏恩",
 					"cthun-tooltip": "显示对手的克苏恩当前大小",
 					"fatigue-label": "疲劳",
-					"fatigue-tooltip": "显示对手上次受到的疲劳伤害",
+					"fatigue-tooltip": "",
 					"abyssal-curse-label": "深渊诅咒",
 					"abyssal-curse-tooltip-2": "显示对手的深渊诅咒伤害最大值",
 					"attack-on-board-label": "场攻",
@@ -2125,7 +2136,7 @@
 					"pogo-tooltip": "显示您已使用的蹦蹦兔次数",
 					"jade-tooltip": "显示您的青玉魔像当前属性值",
 					"cthun-tooltip": "显示您的克苏恩当前属性值",
-					"fatigue-tooltip": "显示您上次受到的疲劳伤害",
+					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "显示您的深渊诅咒伤害最大值",
 					"attack-on-board-tooltip": "显示您的随从及英雄的总场攻",
 					"number-of-spells-label": "法术数量",
