@@ -65,7 +65,7 @@
 			"troll": "拉斯塔哈的大乱斗",
 			"dalaran": "暗影崛起",
 			"uldum": "奥丹姆奇兵",
-			"dragons": "",
+			"dragons": "巨龙降临",
 			"yod": "迦拉克隆的觉醒",
 			"demon_hunter_initiate": "恶魔猎手新兵",
 			"black_temple": "外域的灰烬",
@@ -221,7 +221,7 @@
 			"replays-header": "回放",
 			"achievements-header": "成就",
 			"collection-header": "我的收藏",
-			"streams-header": "",
+			"streams-header": "直播",
 			"stats-header": "个人概况",
 			"go-premium-header": "支持开发者并移除广告",
 			"logged-in-as-header": "以 {{value}} 身份登录",
@@ -389,7 +389,7 @@
 			},
 			"card-search": {
 				"search-box-placeholder": "搜索卡牌...",
-				"search-box-tooltip": "",
+				"search-box-tooltip": "您可以在搜索中使用以下关键词：text:(搜索卡牌描述而非仅仅名称)| name: | cards:all (包括不可收藏的卡牌) | tribe:(种族)  ",
 				"loading": "正在载入更多卡牌...",
 				"results-title": "正在搜索 {{value}}"
 			},
@@ -421,7 +421,7 @@
 						"emote": "表情",
 						"event": "活动事件",
 						"error": "错误操作",
-						"disabled": "",
+						"disabled": "无法使用",
 						"other": "其他"
 					},
 					"effect": {
@@ -430,7 +430,7 @@
 						"attack": "攻击",
 						"picked": "被选中",
 						"greetings": "问候",
-						"greetings-mirror": "",
+						"greetings-mirror": "问候（镜像）",
 						"greetings-response": "问候回应",
 						"well-played": "称赞",
 						"oops": "失误",
@@ -440,13 +440,13 @@
 						"wow": "惊叹",
 						"concede": "认输",
 						"start": "开始",
-						"start-mirror": "",
+						"start-mirror": "开局狠话 (镜像)",
 						"timer": "烧绳",
-						"think": "",
+						"think": "思考",
 						"low-cards": "牌库见底",
 						"no-cards": "牌库枯竭",
 						"won": "胜利",
-						"idle": "",
+						"idle": "挂机",
 						"error-need-weapon": "错误：需要武器",
 						"error-need-mana": "错误：法力水晶不足",
 						"error-minion-attacked": "错误：随从已经攻击",
@@ -459,7 +459,7 @@
 						"error-target": "错误：目标不合法",
 						"error-taunt": "错误：存在嘲讽单位",
 						"error-generic": "错误：通用",
-						"holiday": "",
+						"holiday": "假日",
 						"winterveil-greetings": "冬幕节问候",
 						"lunar-new-year": "农历新年",
 						"happy-new-year": "新年快乐",
@@ -1208,9 +1208,9 @@
 		},
 		"streams": {
 			"category": {
-				"live-streams": ""
+				"live-streams": "直播"
 			},
-			"current-viewers": ""
+			"current-viewers": "观众"
 		}
 	},
 	"turn-timer": {
@@ -1241,8 +1241,8 @@
 			"opponent": "您的对手使用的上一张战吼牌是 {{value}}"
 		},
 		"monstrous-parrot": {
-			"player": "",
-			"opponent": ""
+			"player": "最后触发的己方亡语是：{{value}}",
+			"opponent": "最后触发的敌方亡语是：{{value}}"
 		},
 		"vanessa": {
 			"player": "您的对手使用的上一张牌是 {{value}}"
@@ -1543,8 +1543,8 @@
 			"title": "奥秘助手"
 		},
 		"streamer-mode": {
-			"you": "",
-			"opponent": ""
+			"you": "您",
+			"opponent": "对手"
 		},
 		"card-burned": "爆牌",
 		"card-transformed": "被变形的卡牌",
@@ -1897,7 +1897,7 @@
 					"next": "如果您关联了Out of Cards 账号，Firestone会将您的收藏数据发送到Out of Cards，以便您在线使用。",
 					"toggle-label": "收藏同步后显示通知",
 					"connect-button-text": "关联",
-					"disconnect-button-text": "",
+					"disconnect-button-text": "取消关联",
 					"connected-text": "您已登录",
 					"collection-synchronized": "收藏已同步"
 				},
@@ -1940,9 +1940,9 @@
 				"configuration-title": "直播设置",
 				"delay-label": "直播延迟（毫秒）",
 				"delay-label-tooltip": "延迟推流给Twitch的时长。如果您被狙击了，这将很有用",
-				"other-options-title": "",
-				"appear-on-live-streams-label": "",
-				"appear-on-live-streams-tooltip": ""
+				"other-options-title": "更多选项",
+				"appear-on-live-streams-label": "在直播时显示",
+				"appear-on-live-streams-tooltip": "在”直播”选项卡上显示。 此功能仍在开发中，将列出所有正在使用Firestone的主播及其当前游戏模式，并链接到他们的Twitch直播间。"
 			},
 			"launch": {
 				"launch-on-game-start-label": "游戏开始时启动 Firestone",
@@ -2016,8 +2016,8 @@
 				"title": "启用/停用功能",
 				"minions-play-order": "随从召唤顺序",
 				"minions-play-order-tooltip": "显示战场上每个随从的入场顺序，可帮助您判断亡语的触发顺序（或者任何依赖于随从入场顺序的事物）",
-				"streamer-mode": "",
-				"streamer-mode-tooltip": "",
+				"streamer-mode": "主播模式",
+				"streamer-mode-tooltip": "将您的名字和对手的名字替换为“您”和“对手”。 这对应了游戏的主播模式功能，在对局中按下 Ctrl + Shift + S 启用。",
 				"show-title-bar": "显示标题栏",
 				"show-title-bar-tooltip": "显示/隐藏套牌名称以及手牌和牌库中的卡牌",
 				"show-control-bar": "显示控制栏",
@@ -2105,7 +2105,7 @@
 					"cthun-label": "克苏恩",
 					"cthun-tooltip": "显示对手的克苏恩当前大小",
 					"fatigue-label": "疲劳",
-					"fatigue-tooltip": "",
+					"fatigue-tooltip": "显示对手下次受到的疲劳伤害",
 					"abyssal-curse-label": "深渊诅咒",
 					"abyssal-curse-tooltip-2": "显示对手的深渊诅咒伤害最大值",
 					"attack-on-board-label": "场攻",
@@ -2136,7 +2136,7 @@
 					"pogo-tooltip": "显示您已使用的蹦蹦兔次数",
 					"jade-tooltip": "显示您的青玉魔像当前属性值",
 					"cthun-tooltip": "显示您的克苏恩当前属性值",
-					"fatigue-tooltip": "",
+					"fatigue-tooltip": "显示您下次受到的疲劳伤害",
 					"abyssal-curse-tooltip": "显示您的深渊诅咒伤害最大值",
 					"attack-on-board-tooltip": "显示您的随从及英雄的总场攻",
 					"number-of-spells-label": "法术数量",
@@ -2153,8 +2153,8 @@
 					"bolner-tooltip": "当“伯尔纳·锤喙”在您手牌中时，显示您在本回合中打出的第一张战吼牌（如果有）",
 					"brilliant-macaw-label": "艳丽的金刚鹦鹉",
 					"brilliant-macaw-tooltip": "当“艳丽的金刚鹦鹉”在您手牌中时，显示您使用的上一张战吼牌（如果有）",
-					"monstrous-parrot-label": "",
-					"monstrous-parrot-tooltip": "",
+					"monstrous-parrot-label": "巨型鹦鹉",
+					"monstrous-parrot-tooltip": "当您的手牌中有巨型鹦鹉时，显示您最后触发的己方亡语（如果有的话）",
 					"vanessa-label": "梵妮莎·范克里夫",
 					"vanessa-tooltip": "当“梵妮莎·范克里夫”在您手牌中时，显示对手打出的最后一张卡牌",
 					"murozond-label": "永恒巨龙姆诺兹多",
