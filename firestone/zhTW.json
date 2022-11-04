@@ -30,6 +30,8 @@
 			"battlegrounds": "英雄戰場",
 			"battlegrounds-friendly": "英雄戰場(私人)",
 			"mercenaries": "傭兵戰隊",
+			"mercenaries-pvp": "",
+			"mercenaries-pve": "",
 			"practice": "練習",
 			"casual": "休閒",
 			"friendly": "好友對戰",
@@ -37,6 +39,7 @@
 			"tavern-brawl": "旅店大亂鬥"
 		},
 		"region": {
+			"all": "",
 			"region_us": "美洲",
 			"region_eu": "歐洲",
 			"region_kr": "亞太地區",
@@ -81,7 +84,8 @@
 			"the_sunken_city": "海底歷險記",
 			"throne_of_tides": "海潮王座",
 			"revendreth": "納撒亞古堡懸案",
-			"maw_and_disorder": "混亂淵喉"
+			"maw_and_disorder": "混亂淵喉",
+			"return_of_the_lich_king": ""
 		},
 		"pack": {
 			"classic": "經典",
@@ -189,6 +193,10 @@
 			"lock": "鎖定",
 			"naga": "納迦",
 			"oldgod": "古神"
+		},
+		"mechanics": {
+			"battlecry": "",
+			"deathrattle": ""
 		},
 		"legendary-minion": "傳說手下",
 		"patch": "補丁 {{version}}.{{number}} 於 {{date}} 發布",
@@ -411,6 +419,13 @@
 					"rare": "精良",
 					"epic": "史詩",
 					"legendary": "傳說"
+				},
+				"race": "",
+				"faction": "",
+				"factions": {
+					"alliance": "",
+					"horde": "",
+					"none": ""
 				},
 				"flavor": "卡牌趣聞：",
 				"sounds-title": "聲音:",
@@ -697,6 +712,7 @@
 				"header": "晉級賽"
 			},
 			"rating-graph": {
+				"missing-region-title": "",
 				"empty-state-message": "請確保已選擇對的遊戲模式(標準、開放、經典)，並檢查青銅/傳說篩選器。"
 			},
 			"replays-recap": {
@@ -1210,7 +1226,11 @@
 			"category": {
 				"live-streams": ""
 			},
-			"current-viewers": ""
+			"info-tooltip": "",
+			"language-tooltip": "",
+			"current-viewers": "",
+			"empty-state-title": "",
+			"empty-state-tooltip": ""
 		}
 	},
 	"turn-timer": {
@@ -1722,8 +1742,11 @@
 			},
 			"minions-list": {
 				"reset-button": "重設",
+				"mechanics-tier-tooltip": "",
 				"highlight-tribe": "點擊以突出顯示這個酒館的所有 {{value}}",
 				"unhighlight-tribe": "點擊以移除這個酒館裡的 {{value}} 突出顯示",
+				"highlight-mechanics": "",
+				"unhighlight-mechanics": "",
 				"highlight-minion": "釘選這個手下以在酒館裡突出顯示",
 				"unhighlight-minion": "取消釘選這個手下在酒館裡的突出顯示"
 			}
@@ -2000,7 +2023,9 @@
 				"constructed-label": "《爐石戰記》",
 				"constructed-tooltip": "",
 				"battlegrounds-label": "英雄戰場",
-				"battlegrounds-tooltip": ""
+				"battlegrounds-tooltip": "",
+				"mercenaries-label": "",
+				"mercenaries-tooltip": ""
 			}
 		},
 		"decktracker": {
@@ -2159,6 +2184,8 @@
 					"vanessa-tooltip": "當「凡妮莎‧范克里夫」在手中時，顯示對手打出的最後一張牌",
 					"murozond-label": "『恆龍之王』姆多茲諾",
 					"murozond-tooltip": "當「『恆龍之王』姆多茲諾」在手中時，按打出順序顯示對手上回合打出的所有卡牌",
+					"queensguard-label": "",
+					"queensguard-tooltip": "",
 					"lady-darkvein-label": "暗脈女士",
 					"lady-darkvein-tooltip": "當「暗脈女士」在你手中，顯示上一張使用的暗影法術(如果有的話)",
 					"grey-sage-parrot-label": "灰綠鸚鵡",
@@ -2292,8 +2319,14 @@
 				"minions-list-show-on-mouse-over-label": "滑鼠停留其上時顯示手下列表",
 				"minions-list-show-on-mouse-over-tooltip": "未啟用時, 你必須點擊酒館等級的圖示以顯示手下列表",
 				"minions-list-show-on-mouse-over-confirmation": "收到，將只會在您點擊星星時顯示詳細手下資訊",
+				"minions-list-group-minions-into-tribes-label": "",
+				"minions-list-group-minions-into-tribes-tooltip": "",
 				"minions-list-show-tribes-highlight-label": "將種族標記",
 				"minions-list-show-tribes-highlight-tooltip": "當旅店出現相同種族手下時，標記它",
+				"minions-list-show-mechanics-highlight-label": "",
+				"minions-list-show-mechanics-highlight-tooltip": "",
+				"minions-list-show-mechanics-tiers-label": "",
+				"minions-list-show-mechanics-tiers-tooltip": "",
 				"minions-list-show-golden-cards-label": "顯示金卡",
 				"minions-list-show-golden-cards-tooltip": "當滑鼠移到手下上時顯示其普卡與金卡",
 				"opponent-board-title": "對手檯面",

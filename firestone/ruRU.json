@@ -30,6 +30,8 @@
 			"battlegrounds": "Поля сражений",
 			"battlegrounds-friendly": "Поля сражений (дружеские)",
 			"mercenaries": "Наёмники",
+			"mercenaries-pvp": "Наёмники (PvP)",
+			"mercenaries-pve": "Наёмники (PvE)",
 			"practice": "Тренировка",
 			"casual": "Обычный",
 			"friendly": "Дружеские дуэли",
@@ -37,6 +39,7 @@
 			"tavern-brawl": "Потасовка"
 		},
 		"region": {
+			"all": "Все регионы",
 			"region_us": "Америка",
 			"region_eu": "Европа",
 			"region_kr": "Азия",
@@ -81,7 +84,8 @@
 			"the_sunken_city": "Путешествие в Затонувший город",
 			"throne_of_tides": "Трон Приливов",
 			"revendreth": "Убийство в замке Нафрия",
-			"maw_and_disorder": "Неисправимые преступники"
+			"maw_and_disorder": "Неисправимые преступники",
+			"return_of_the_lich_king": ""
 		},
 		"pack": {
 			"classic": "Классический",
@@ -190,6 +194,10 @@
 			"naga": "Наги",
 			"oldgod": "Древние боги"
 		},
+		"mechanics": {
+			"battlecry": "",
+			"deathrattle": ""
+		},
 		"legendary-minion": "Легендарное существо",
 		"patch": "Обновление {{version}}.{{number}} от {{date}}",
 		"hs-terms": {
@@ -221,7 +229,7 @@
 			"replays-header": "Повторы",
 			"achievements-header": "Достижения",
 			"collection-header": "Коллекция",
-			"streams-header": "",
+			"streams-header": "Стримы",
 			"stats-header": "Статистика",
 			"go-premium-header": "Поддержать разработчика и убрать рекламу",
 			"logged-in-as-header": "Вы вошли как {{value}}",
@@ -412,6 +420,13 @@
 					"epic": "Эпическая",
 					"legendary": "Легендарная"
 				},
+				"race": "Тип существа:",
+				"faction": "Фракция:",
+				"factions": {
+					"alliance": "Альянс",
+					"horde": "Орда",
+					"none": "Нет"
+				},
 				"flavor": "Художественный текст:",
 				"sounds-title": "Звуки:",
 				"sounds": {
@@ -421,7 +436,7 @@
 						"emote": "Эмоции",
 						"event": "События",
 						"error": "Ошибки",
-						"disabled": "",
+						"disabled": "Немота",
 						"other": "Прочие"
 					},
 					"effect": {
@@ -430,7 +445,7 @@
 						"attack": "Атака",
 						"picked": "Реплика при выборе",
 						"greetings": "Приветствие",
-						"greetings-mirror": "",
+						"greetings-mirror": "Приветствие (зеркальный матч)",
 						"greetings-response": "Ответ на приветствие",
 						"well-played": "Неплохо сыграно",
 						"oops": "Ой!",
@@ -440,13 +455,13 @@
 						"wow": "Ух ты",
 						"concede": "Признание поражения",
 						"start": "Начало игры",
-						"start-mirror": "",
+						"start-mirror": "Начало игры (зеркальный матч)",
 						"timer": "Время истекает",
-						"think": "",
+						"think": "Раздумье",
 						"low-cards": "Почти не осталось карт",
 						"no-cards": "Карты закончились",
 						"won": "Победа",
-						"idle": "",
+						"idle": "Бездействие",
 						"error-need-weapon": "Нужно оружие",
 						"error-need-mana": "Недостаточно маны",
 						"error-minion-attacked": "Существо уже атаковало",
@@ -459,7 +474,7 @@
 						"error-target": "Неверная цель",
 						"error-taunt": "Провокация",
 						"error-generic": "Общая",
-						"holiday": "",
+						"holiday": "Праздники",
 						"winterveil-greetings": "Зимний Покров",
 						"lunar-new-year": "Лунный Новый Год",
 						"happy-new-year": "Новый год",
@@ -697,6 +712,7 @@
 				"header": ""
 			},
 			"rating-graph": {
+				"missing-region-title": "Пожалуйста выберите регион",
 				"empty-state-message": "Пожалуйста, убедитесь, что выбран режим игры (Стандартный, Вольный или Классический), <br/> а также проверьте фильтр Бронза / Легенда."
 			},
 			"replays-recap": {
@@ -1208,9 +1224,13 @@
 		},
 		"streams": {
 			"category": {
-				"live-streams": ""
+				"live-streams": "Стримы"
 			},
-			"current-viewers": ""
+			"info-tooltip": "",
+			"language-tooltip": "Язык стрима",
+			"current-viewers": "зрителей",
+			"empty-state-title": "",
+			"empty-state-tooltip": ""
 		}
 	},
 	"turn-timer": {
@@ -1241,8 +1261,8 @@
 			"opponent": "Последняя карта с боевым кличом разыгранный Вашим противником: {{value}}"
 		},
 		"monstrous-parrot": {
-			"player": "",
-			"opponent": ""
+			"player": "Последним вашим сработавшим предсмертным хрипом был: {{value}}",
+			"opponent": "Последним сработавшим предсмертным хрипом противника был: {{value}}"
 		},
 		"vanessa": {
 			"player": "Последняя карта разыгранная вашим противником: {{value}}"
@@ -1544,7 +1564,7 @@
 		},
 		"streamer-mode": {
 			"you": "Вы",
-			"opponent": ""
+			"opponent": "Противник"
 		},
 		"card-burned": "Карта сожжена",
 		"card-transformed": "Карта превращена",
@@ -1722,8 +1742,11 @@
 			},
 			"minions-list": {
 				"reset-button": "Все",
+				"mechanics-tier-tooltip": "",
 				"highlight-tribe": "Нажмите, чтобы выделить всех существ типа {{value}} в таверне",
 				"unhighlight-tribe": "Нажмите, чтобы не выделять существ типа {{value}} в таверне",
+				"highlight-mechanics": "",
+				"unhighlight-mechanics": "",
 				"highlight-minion": "Нажмите, чтобы выделить это существо в таверне Боба",
 				"unhighlight-minion": "Нажмите, чтобы снять выделение с этого существа в таверне Боба"
 			}
@@ -1940,8 +1963,8 @@
 				"configuration-title": "Настройки стрима",
 				"delay-label": "Задержка стрима (мс)",
 				"delay-label-tooltip": "Задерживать события отправляемые на Twitch на это количество миллисекунд. Полезно при борьбе со стрим-снайперами",
-				"other-options-title": "",
-				"appear-on-live-streams-label": "",
+				"other-options-title": "Прочее",
+				"appear-on-live-streams-label": "Появляться на вкладке \"Стримы\"",
 				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
@@ -2000,7 +2023,9 @@
 				"constructed-label": "Hearthstone",
 				"constructed-tooltip": "",
 				"battlegrounds-label": "Поля сражений",
-				"battlegrounds-tooltip": ""
+				"battlegrounds-tooltip": "",
+				"mercenaries-label": "",
+				"mercenaries-tooltip": ""
 			}
 		},
 		"decktracker": {
@@ -2017,7 +2042,7 @@
 				"minions-play-order": "Порядок разыгранных существ",
 				"minions-play-order-tooltip": "",
 				"streamer-mode": "Режим стримера",
-				"streamer-mode-tooltip": "",
+				"streamer-mode-tooltip": "Заменить ваш ник и ник противника на \"Вы\" и \"Противник\". Это аналог стримерского режима в Heartstone, который активируется нажатием Ctrl + Shift + S.",
 				"show-title-bar": "Показывать название колоды",
 				"show-title-bar-tooltip": "Показать/Скрыть название колоды и количество карт в руке и колоде",
 				"show-control-bar": "Показывать строку заголовка",
@@ -2105,7 +2130,7 @@
 					"cthun-label": "Характеристики К'Туна",
 					"cthun-tooltip": "Показывает текущие харатеристики К'Туна противника",
 					"fatigue-label": "Счётчик усталости",
-					"fatigue-tooltip": "",
+					"fatigue-tooltip": "Показать ожидаемый урон от усталости противнику",
 					"abyssal-curse-label": "Счётчик проклятий глубин",
 					"abyssal-curse-tooltip-2": "",
 					"attack-on-board-label": "Счётчик атаки со стола",
@@ -2136,7 +2161,7 @@
 					"pogo-tooltip": "Показывает сколько прыг-скокеров вы разыграли",
 					"jade-tooltip": "Показывает текущий размер ваших нефритовых големов",
 					"cthun-tooltip": "Показывает текущие харатеристики вашего К'Туна",
-					"fatigue-tooltip": "",
+					"fatigue-tooltip": "Показать ваш ожидаемый урон от усталости",
 					"abyssal-curse-tooltip": "",
 					"attack-on-board-tooltip": "",
 					"number-of-spells-label": "Счётчик заклинаний",
@@ -2159,6 +2184,8 @@
 					"vanessa-tooltip": "Показывать последнюю разыгранную противником карту, когда Ванесса ван Клиф у вас в руке",
 					"murozond-label": "Дорнозму Бесконечный",
 					"murozond-tooltip": "Показывать все карты разыгранные противником на прошлом ходу, когда Дорнозму Бесконечный у вас в руке",
+					"queensguard-label": "",
+					"queensguard-tooltip": "",
 					"lady-darkvein-label": "Леди Дарквейн",
 					"lady-darkvein-tooltip": "Когда Леди Дарквейн у вас в руке, показывает последнее разыгранное вами заклинание Тьмы",
 					"grey-sage-parrot-label": "Серый мудрец",
@@ -2292,8 +2319,14 @@
 				"minions-list-show-on-mouse-over-label": "Показать список существ при наведении курсора мыши",
 				"minions-list-show-on-mouse-over-tooltip": "",
 				"minions-list-show-on-mouse-over-confirmation": "",
+				"minions-list-group-minions-into-tribes-label": "",
+				"minions-list-group-minions-into-tribes-tooltip": "",
 				"minions-list-show-tribes-highlight-label": "Выделение типов существ",
 				"minions-list-show-tribes-highlight-tooltip": "Добавить кнопки для выделения определенных типов существ в таверне Боба",
+				"minions-list-show-mechanics-highlight-label": "",
+				"minions-list-show-mechanics-highlight-tooltip": "",
+				"minions-list-show-mechanics-tiers-label": "",
+				"minions-list-show-mechanics-tiers-tooltip": "",
 				"minions-list-show-golden-cards-label": "Показывать также и золотые версии карт",
 				"minions-list-show-golden-cards-tooltip": "",
 				"opponent-board-title": "Стол противника",

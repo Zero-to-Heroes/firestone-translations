@@ -30,6 +30,8 @@
 			"battlegrounds": "Champs de bataille",
 			"battlegrounds-friendly": "Champs de bataille (privé)",
 			"mercenaries": "Mercenaires",
+			"mercenaries-pvp": "Mercenaires JcJ",
+			"mercenaries-pve": "Mercenaires JcE",
 			"practice": "Entraînement",
 			"casual": "Non classé",
 			"friendly": "Duel amical",
@@ -37,6 +39,7 @@
 			"tavern-brawl": "Bras de fer"
 		},
 		"region": {
+			"all": "Toutes les régions",
 			"region_us": "Amériques",
 			"region_eu": "Europe",
 			"region_kr": "Asie-Pacifique",
@@ -81,7 +84,8 @@
 			"the_sunken_city": "Au cœur de la cité engloutie",
 			"throne_of_tides": "Trône des marées",
 			"revendreth": "Meurtre au château Nathria",
-			"maw_and_disorder": "L’Antre hors des lois"
+			"maw_and_disorder": "L’Antre hors des lois",
+			"return_of_the_lich_king": ""
 		},
 		"pack": {
 			"classic": "Classique",
@@ -189,6 +193,10 @@
 			"lock": "Verrou",
 			"naga": "Naga",
 			"oldgod": "Dieu très ancien"
+		},
+		"mechanics": {
+			"battlecry": "Cri de guerre",
+			"deathrattle": "Râle d’agonie"
 		},
 		"legendary-minion": "Serviteur légendaire",
 		"patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -412,6 +420,13 @@
 					"epic": "Épique",
 					"legendary": "Légendaire"
 				},
+				"race": "Race :",
+				"faction": "Faction :",
+				"factions": {
+					"alliance": "Alliance",
+					"horde": "Horde",
+					"none": "Aucune"
+				},
 				"flavor": "Texte d’ambiance :",
 				"sounds-title": "Sons :",
 				"sounds": {
@@ -540,7 +555,7 @@
 					"subtitle": "Ne vous inquiétez pas, continuez à jouer et obtenez ces beautés étincelantes."
 				},
 				"no-search-results": {
-					"title": "Oh non ! Rien ne correspond à \"{{value}}\"",
+					"title": "Oh non ! Rien ne correspond à « {{value}} »",
 					"subtitle": "Ne renoncez pas - vérifiez l'orthographe ou essayez des termes moins spécifiques."
 				},
 				"default": {
@@ -697,6 +712,7 @@
 				"header": "Évolution du rang / Parties"
 			},
 			"rating-graph": {
+				"missing-region-title": "Veuillez sélectionner une région",
 				"empty-state-message": "Veuillez vérifier qu'un seul mode de jeu (Standard, Libre ou Classique) est sélectionné ci-dessus, et vérifiez le filtre Bronze / Légende."
 			},
 			"replays-recap": {
@@ -707,7 +723,7 @@
 				"total-games-played": "Nb total de parties",
 				"total-time-played": "Temps de jeu total",
 				"turns-to-win": "Tours pour gagner",
-				"turns-to-lose": "Tour pour perdre",
+				"turns-to-lose": "Tours pour perdre",
 				"winrate": "Taux de victoires",
 				"winrate-first": "Taux de victoires (premier)",
 				"winrate-coin": "Taux de victoires (La pièce)"
@@ -1014,7 +1030,7 @@
 				"rank": "Rang",
 				"rating": "Cote",
 				"name": "Nom",
-				"region": "Régions"
+				"region": "Région"
 			},
 			"search": {
 				"hero": {
@@ -1047,7 +1063,7 @@
 				"export-deckcode-button": "Copier le code",
 				"save-deck-button": "Enregistrer le deck",
 				"deck-saved-info": "Deck enregistré",
-				"save-deckcode-button-tooltip": "Ajouter ce deck à l’onglet \"Mes deccks\"",
+				"save-deckcode-button-tooltip": "Ajouter ce deck à l’onglet « Mes decks »",
 				"show-buckets-button-label": "Afficher les sélections",
 				"show-buckets-button-tooltip": "[EXPÉRIMENTAL] Affiche les sélections de cartes que vous pouvez avoir en fonction des cartes de votre deck. L’hypothèse est que les sélections proposées sont basées sur les cartes de votre deck actuel de la manière suivante : 1) construisez toute la liste des sélections qui contiennent au moins une carte de votre deck, et 2) choisissez l’une d’entre elles à offrir.",
 				"bucket-filter-button-tooltip": "Filtrer par sélection. La liste des cartes comprendra uniquement les cartes qui appartiennent à au moins une des sélections sélectionnées",
@@ -1055,7 +1071,7 @@
 					"text": "Vous pouvez utiliser les raccourcis de recherche suivants :",
 					"info-1": "Entrée : ajoute le premier résultat à votre deck",
 					"info-2": "Shift + Entrée : ajoute le premier résultat à votre deck et efface la barre de recherche",
-					"info-3": "class:<class> : rechercher uniquement des cartes de cette classe (par ex. class:mage ou class:neutral)",
+					"info-3": "class:<class> : rechercher uniquement des cartes de cette classe (par ex. class:hunter ou class:neutral)",
 					"info-4": "bucket:none : rechercher uniquement les cartes qui n’appartiennent à aucune sélection"
 				},
 				"warning": {
@@ -1194,12 +1210,12 @@
 			"xp-graph-title": "Graphique d’XP"
 		},
 		"tips": {
-			"tip-1": "Cliquez sur l’icône \"Aide\" en haut pour voir les dernières notes de mise à jour de l’application",
-			"tip-2": "Cliquez sur l’icône \"Bug\" en haut pour signaler un bug ou suggérer une amélioration",
+			"tip-1": "Cliquez sur l’icône « Aide » en haut pour voir les dernières notes de mise à jour de l’application",
+			"tip-2": "Cliquez sur l’icône « Bug » en haut pour signaler un bug ou suggérer une amélioration",
 			"tip-3": "Si vous rencontrez de gros bugs (comme la synchronisation de la collection, le decktracker ne fonctionne pas, etc.), essayez d’exécuter l’application en tant qu’administrateur.",
 			"tip-4": "Les paramètres ont de nombreuses options de personnalisation, n’hésitez pas à regarder pour activer / désactiver certaines fonctionnalités",
 			"tip-5": "[Mercenaires] Affichez la colonne « Total de pièces » en élargissant la fenêtre",
-			"tip-6": "[Mercenaires] Sélectionnez l’option \"Mercenaires (JcJ)\" dans Replays pour voir plus de détails sur les groupes dans chaque partie",
+			"tip-6": "[Mercenaires] Sélectionnez l’option « Mercenaires (JcJ) » dans Replays pour voir plus de détails sur les groupes dans chaque partie",
 			"tip-7": "[Mercenaires] Placer la souris sur la colonne « Tâche terminée » pour savoir comment définir manuellement la progression de chaque tâche de mercenaire",
 			"tip-8": "[Champs de bataille] Avec Alt+B, affichez les stats détaillées en direct d’une partie dans la fenêtre Champs de bataille",
 			"tip-9": "[Champs de bataille] Rendez la fenêtre Champs de bataille plus large pour voir les dégâts moyens et les chances de tuer le héros adverse dans le simulateur",
@@ -1210,7 +1226,11 @@
 			"category": {
 				"live-streams": "Streams"
 			},
-			"current-viewers": "spectateurs"
+			"info-tooltip": "Liste de streams Hearthstone « actifs » (avec une partie en cours, ou terminée il y a moins de 5 minutes). Pour obtenir votre propre stream sur cette liste, connectez simplement votre Firestone à Twitch à partir des paramètres (à l’avenir, vous devrez peut-être aussi installer l’extension Twitch sur votre stream, mais pour l’instant ce n’est pas nécessaire).",
+			"language-tooltip": "Langue du stream",
+			"current-viewers": "spectateurs",
+			"empty-state-title": "Aucun stream en direct",
+			"empty-state-tooltip": "Il n’y a pas de stream en direct pour le moment. Veuillez réessayer plus tard."
 		}
 	},
 	"turn-timer": {
@@ -1722,8 +1742,11 @@
 			},
 			"minions-list": {
 				"reset-button": "Réinitialiser",
+				"mechanics-tier-tooltip": "Voir tous les serviteurs avec {{value}}",
 				"highlight-tribe": "Cliquez pour mettre en valeur tous les serviteurs de type {{value}} dans la taverne",
 				"unhighlight-tribe": "Cliquez pour ne plus mettre en valeur les serviteurs de type {{value}} dans la taverne",
+				"highlight-mechanics": "Cliquez pour mettre en valeur tous les serviteurs avec {{value}} dans la taverne",
+				"unhighlight-mechanics": "Cliquez pour ne plus mettre en valeur les serviteurs avec {{value}} dans la taverne",
 				"highlight-minion": "Épingler ce serviteur pour le mettre en valeur dans la taverne",
 				"unhighlight-minion": "Désépingler ce serviteur pour ne plus le mettre en avant dans la taverne"
 			}
@@ -2000,7 +2023,9 @@
 				"constructed-label": "Hearthstone",
 				"constructed-tooltip": "Afficher le widget de quêtes pour les quêtes Hearthstone traditionnel dans les parties en mode Construit, Duels, Bras de fer et parties amicales, ainsi que sur leurs écrans principaux",
 				"battlegrounds-label": "Champs de bataille",
-				"battlegrounds-tooltip": "Afficher les widgets de quête pour les missions de Champs de bataille en parties Champs de bataille et sur l’écran principal du mode"
+				"battlegrounds-tooltip": "Afficher les widgets de quête pour les missions de Champs de bataille en parties Champs de bataille et sur l’écran principal du mode",
+				"mercenaries-label": "Mercenaires",
+				"mercenaries-tooltip": ""
 			}
 		},
 		"decktracker": {
@@ -2038,9 +2063,9 @@
 				"show-cost-reduction": "Mettre à jour le coût dans le deck",
 				"show-cost-reduction-tooltip": "Mettre à jour le coût en mana des cartes dans le deck quand leur coût a été modifié par un effet (ex : Flux de l’incantateur)",
 				"show-unknown-cards": "Afficher les cartes inconnues",
-				"show-unknown-cards-tooltip": "Ajouter une entrée \"Carte inconnue\" dans le tracker pour les cartes pour lesquelles nous n’avons aucune information",
+				"show-unknown-cards-tooltip": "Ajouter une entrée « Carte inconnue » dans le tracker pour les cartes pour lesquelles nous n’avons aucune information",
 				"highlight-related-cards": "Faire briller les cartes liées",
-				"highlight-related-cards-tooltip": "Lorsque cette option est activée, les cartes liées dans votre liste de cartes sont en surbrillance quand vous passez la souris sur des cartes spécifiques (ex : passer la sourir sur Double saut dans votre liste de cartes mettra en surbrillance les cartes avec Marginal de votre deck)",
+				"highlight-related-cards-tooltip": "Lorsque cette option est activée, les cartes connexes dans votre liste de cartes sont en surbrillance quand vous passez la souris sur des cartes spécifiques (ex : passer la souris sur Double saut dans votre liste de cartes mettra en surbrillance les cartes avec Marginal de votre deck)",
 				"discover-help": "Aide contextuelle à la découverte",
 				"discover-help-tooltip": "Affiche une aide contextuelle quand vous découvrez une carte. Cette aide peut mettre en surbrillance des cartes associées dans votre deck, voire fournir des informations plus spécifiques.",
 				"close-tracker-on-end": "Fermer le tracker à la fin de la partie",
@@ -2159,6 +2184,8 @@
 					"vanessa-tooltip": "Quand vous avez Vanessa VanCleef en main, montrez la dernière carte que votre adversaire a jouée",
 					"murozond-label": "Murozond l’Infini",
 					"murozond-tooltip": "Quand vous avez Murozond l’Infini en main, affiche toutes les cartes que votre adversaire a jouées le dernier tour, dans l'ordre où elles ont été jouées",
+					"queensguard-label": "",
+					"queensguard-tooltip": "",
 					"lady-darkvein-label": "Dame Sombreveine",
 					"lady-darkvein-tooltip": "Quand vous avez Dame Sombreveine en main, affiche le dernier sort de l'Ombre que vous avez joué, s’il y en a un",
 					"grey-sage-parrot-label": "Perroquet gris cendré",
@@ -2292,8 +2319,14 @@
 				"minions-list-show-on-mouse-over-label": "Afficher la liste des serviteurs au survol de la souris",
 				"minions-list-show-on-mouse-over-tooltip": "Lorsque cette option est désactivée, vous devrez cliquer sur les icônes de niveau de la taverne pour afficher la liste des serviteurs",
 				"minions-list-show-on-mouse-over-confirmation": "D’accord, nous afficherons les détails des serviteurs uniquement lorsque vous cliquez sur une étoile",
+				"minions-list-group-minions-into-tribes-label": "Rattacher les serviteurs à leur type principal",
+				"minions-list-group-minions-into-tribes-tooltip": "Inclut les serviteurs sans type dans les sections de type de serviteur. Par exemple, la carte Jongleur d’âmes apparaîtrait dans la section des Démons.",
 				"minions-list-show-tribes-highlight-label": "Afficher les types mis en avant",
 				"minions-list-show-tribes-highlight-tooltip": "Ajoute des boutons pour mettre en avant des types spécifiques dans la taverne de Bob",
+				"minions-list-show-mechanics-highlight-label": "Afficher la surbrillance des mots-clés",
+				"minions-list-show-mechanics-highlight-tooltip": "Ajoute des boutons pour mettre en surbrillance un mot-clé spécifique (comme Cri de guerre ou Râle d’agonie) dans la taverne de Bob",
+				"minions-list-show-mechanics-tiers-label": "Afficher les listes de mots-clés",
+				"minions-list-show-mechanics-tiers-tooltip": "Ajoute des colonnes à la liste des serviteurs qui regroupent les serviteurs par mot-clé (pour l’instant, Cri de guerre et Râle d’agonie)",
 				"minions-list-show-golden-cards-label": "Afficher les cartes dorées",
 				"minions-list-show-golden-cards-tooltip": "Afficher à la fois la version normale et la version dorée des cartes lorsque vous passez la souris sur le serviteur",
 				"opponent-board-title": "Troupe de guerre de l’adversaire",

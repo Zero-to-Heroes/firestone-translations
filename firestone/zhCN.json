@@ -30,6 +30,8 @@
 			"battlegrounds": "酒馆战棋",
 			"battlegrounds-friendly": "酒馆战棋（私人对局）",
 			"mercenaries": "佣兵战纪",
+			"mercenaries-pvp": "佣兵战纪（PvP）",
+			"mercenaries-pve": "佣兵战纪（PvE）",
 			"practice": "练习模式",
 			"casual": "休闲模式",
 			"friendly": "好友对战",
@@ -37,6 +39,7 @@
 			"tavern-brawl": "乱斗模式"
 		},
 		"region": {
+			"all": "所有地区",
 			"region_us": "美服",
 			"region_eu": "欧服",
 			"region_kr": "亚服",
@@ -81,7 +84,8 @@
 			"the_sunken_city": "探寻沉没之城",
 			"throne_of_tides": "潮汐王座",
 			"revendreth": "纳斯利亚堡的悬案",
-			"maw_and_disorder": "混乱噬渊"
+			"maw_and_disorder": "混乱噬渊",
+			"return_of_the_lich_king": ""
 		},
 		"pack": {
 			"classic": "经典",
@@ -189,6 +193,10 @@
 			"lock": "锁头",
 			"naga": "纳迦",
 			"oldgod": "古神"
+		},
+		"mechanics": {
+			"battlecry": "战吼",
+			"deathrattle": "亡语"
 		},
 		"legendary-minion": "传说随从",
 		"patch": "补丁 {{version}}.{{number}} 发布于{{date}}",
@@ -411,6 +419,13 @@
 					"rare": "稀有",
 					"epic": "史诗",
 					"legendary": "传说"
+				},
+				"race": "随从类型：",
+				"faction": "阵营：",
+				"factions": {
+					"alliance": "联盟",
+					"horde": "部落",
+					"none": "无"
 				},
 				"flavor": "卡牌趣闻：",
 				"sounds-title": "音效：",
@@ -697,6 +712,7 @@
 				"header": "晋级赛"
 			},
 			"rating-graph": {
+				"missing-region-title": "请选择一个地区",
 				"empty-state-message": "请确保已选择唯一的游戏模式（标准，狂野或经典），然后检查青铜/传说筛选器。"
 			},
 			"replays-recap": {
@@ -1210,7 +1226,11 @@
 			"category": {
 				"live-streams": "直播"
 			},
-			"current-viewers": "观众"
+			"info-tooltip": "活跃的《炉石传说》直播间列表（包括正在直播的，和在5分钟内结束上场对战的）。如果您希望将自己的直播间加入此列表，只需要在设置中将 Firestone 与 Twitch 关联（未来您可能需要在直播间安装 Twitch 扩展，但至少现在不需要）。",
+			"language-tooltip": "直播间语种",
+			"current-viewers": "观众",
+			"empty-state-title": "没有在线主播",
+			"empty-state-tooltip": "现在没有在线的主播，请稍后再试"
 		}
 	},
 	"turn-timer": {
@@ -1722,8 +1742,11 @@
 			},
 			"minions-list": {
 				"reset-button": "重置",
+				"mechanics-tier-tooltip": "查看全部 {{value}} 个随从",
 				"highlight-tribe": "点击以高亮显示酒馆中所有的 {{value}}",
 				"unhighlight-tribe": "点击以取消突出显示酒馆中的 {{value}}",
+				"highlight-mechanics": "点击以在酒馆中高亮显示全部 {{value}} 个随从",
+				"unhighlight-mechanics": "点击以取消在酒馆中高亮显示全部 {{value}} 个随从",
 				"highlight-minion": "标记这个随从使其在酒馆中高亮显示",
 				"unhighlight-minion": "解除这个随从的标记，取消其在酒馆中的高亮显示"
 			}
@@ -2000,7 +2023,9 @@
 				"constructed-label": "传统对战",
 				"constructed-tooltip": "在传统对战、对决模式、乱斗模式和友谊赛以及其主屏幕中显示包含原生任务的任务小部件",
 				"battlegrounds-label": "酒馆战棋",
-				"battlegrounds-tooltip": "在酒馆战棋对战和其主界面中显示包含战棋任务的任务小部件"
+				"battlegrounds-tooltip": "在酒馆战棋对战和其主界面中显示包含战棋任务的任务小部件",
+				"mercenaries-label": "佣兵战纪",
+				"mercenaries-tooltip": ""
 			}
 		},
 		"decktracker": {
@@ -2159,6 +2184,8 @@
 					"vanessa-tooltip": "当“梵妮莎·范克里夫”在您手牌中时，显示对手打出的最后一张卡牌",
 					"murozond-label": "永恒巨龙姆诺兹多",
 					"murozond-tooltip": "当“永恒巨龙姆诺兹多”在您手牌中时，显示对手上回合打出的所有卡牌，按打出顺序排序",
+					"queensguard-label": "",
+					"queensguard-tooltip": "",
 					"lady-darkvein-label": "暗脉女勋爵",
 					"lady-darkvein-tooltip": "当“暗脉女勋爵”在您手牌中时，显示您使用的上一张暗影法术牌（如果有）",
 					"grey-sage-parrot-label": "灰贤鹦鹉",
@@ -2292,8 +2319,14 @@
 				"minions-list-show-on-mouse-over-label": "鼠标悬停时显示随从列表",
 				"minions-list-show-on-mouse-over-tooltip": "停用此功能，您将需要点击酒馆星级图标来显示随从列表",
 				"minions-list-show-on-mouse-over-confirmation": "知道了，我们只会在您点击“星星”时为您显示随从的详细信息",
+				"minions-list-group-minions-into-tribes-label": "按随从类型归类随从",
+				"minions-list-group-minions-into-tribes-tooltip": "这将会把无类型的随从归入随从类型分区。比如“灵魂杂耍者”将出现在“恶魔”分区中。",
 				"minions-list-show-tribes-highlight-label": "高亮显示随从类型",
 				"minions-list-show-tribes-highlight-tooltip": "添加按钮以高亮显示酒馆中中的特定随从类型",
+				"minions-list-show-mechanics-highlight-label": "高亮显示关键词随从",
+				"minions-list-show-mechanics-highlight-tooltip": "添加一个能够在鲍勃酒馆中高亮显示含关键词的随从（如“战吼”、“亡语”）",
+				"minions-list-show-mechanics-tiers-label": "显示关键词分类",
+				"minions-list-show-mechanics-tiers-tooltip": "添加按关键词分类的随从列表（现在支持“战吼”和“亡语”）",
 				"minions-list-show-golden-cards-label": "显示金卡",
 				"minions-list-show-golden-cards-tooltip": "鼠标悬停在随从上将同时显示普通和金色卡牌",
 				"opponent-board-title": "对手阵容",
