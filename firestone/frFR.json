@@ -2,6 +2,7 @@
 	"global": {
 		"class": {
 			"all": "Toutes les classes",
+			"deathknight": "Chevalier de la mort",
 			"demonhunter": "Chasseur de démons",
 			"druid": "Druide",
 			"hunter": "Chasseur",
@@ -122,6 +123,7 @@
 			"standard-shaman": "Chaman",
 			"standard-warlock": "Démoniste",
 			"standard-demonhunter": "Chasseur de démons",
+			"standard-deathknight": "Chevalier de la mort",
 			"golden-darkmoon-faire": "Folle journée à Sombrelune (Doré)",
 			"alterac-valley": "Divisés en Alterac",
 			"golden-the-barrens": "Forgés dans les Tarides (Doré)",
@@ -134,7 +136,9 @@
 			"the-sunken-city": "Au cœur de la cité engloutie",
 			"golden-the-sunken-city": "Au cœur de la cité engloutie (Doré)",
 			"revendreth": "Meurtre au château Nathria",
-			"golden-revendreth": "Meurtre au château Nathria (Doré)"
+			"golden-revendreth": "Meurtre au château Nathria (Doré)",
+			"return-of-the-lich-king": "La marche du roi-liche",
+			"golden-return-of-the-lich-king": "La marche du roi-liche (Doré)"
 		},
 		"ranks": {
 			"constructed": {
@@ -197,9 +201,9 @@
 		"mechanics": {
 			"battlecry": "Cri de guerre",
 			"deathrattle": "Râle d’agonie",
-			"divine_shield": "",
-			"taunt": "",
-			"end_of_turn": ""
+			"divine_shield": "Bouclier divin",
+			"taunt": "Provocation",
+			"end_of_turn": "Fin de tour"
 		},
 		"legendary-minion": "Serviteur légendaire",
 		"patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -229,10 +233,13 @@
 			"mercenaries-header": "Mercenaires",
 			"duels-header": "Duels",
 			"arena-header": "Arène",
+			"tavern-brawl-header": "",
 			"replays-header": "Replays",
 			"achievements-header": "Hauts faits",
 			"collection-header": "Collection",
 			"streams-header": "Streams",
+			"mailbox-header": "",
+			"mailbox-text-details": "",
 			"stats-header": "Stats",
 			"go-premium-header": "Soutenez le développeur et enlevez la pub",
 			"logged-in-as-header": "Connecté en tant que {{value}}",
@@ -271,10 +278,10 @@
 			}
 		},
 		"tray": {
-			"exit": "",
-			"restart": "",
-			"settings": "",
-			"main-window": ""
+			"exit": "Quitter",
+			"restart": "Redémarrer Firestone",
+			"settings": "Paramètres",
+			"main-window": "Afficher la fenêtre principale"
 		},
 		"internal": {
 			"memory": {
@@ -754,6 +761,19 @@
 				"perfect-games": "Parties parfaites",
 				"records": "Records battus",
 				"simulator": "Simulateur"
+			},
+			"tribes": {
+				"beast": "Bêtes",
+				"demon": "Démons",
+				"dragon": "Dragons",
+				"elemental": "Élémentaires",
+				"mech": "Méca",
+				"murloc": "Murlocs",
+				"naga": "Nagas",
+				"pirate": "Pirates",
+				"quilboar": "Hurans",
+				"blank": "Aucun type",
+				"all": "Tout"
 			},
 			"filters": {
 				"hero": {
@@ -1240,6 +1260,19 @@
 			"current-viewers": "spectateurs",
 			"empty-state-title": "Aucun stream en direct",
 			"empty-state-tooltip": "Il n’y a pas de stream en direct pour le moment. Veuillez réessayer plus tard."
+		},
+		"mailbox": {
+			"category": {
+				"inbox": ""
+			}
+		},
+		"tavern-brawl": {
+			"category": {
+				"meta": ""
+			},
+			"copy-deck-tooltip": "",
+			"with-name": "",
+			"no-name": ""
 		}
 	},
 	"turn-timer": {
@@ -1480,7 +1513,6 @@
 			"coins-to-farm-header": "Pièces manqu.",
 			"coins-to-farm-header-tooltip": "Total des pièces manquantes pour avoir ce mercenaire au max (prend en compte les pièces que vous avez déjà et les pièces que vous obtiendrez en finissant toutes les tâches)",
 			"completed-tasks-header": "Tâches complétées",
-			"completed-tasks-header-tooltip": "Tâches complétées. Ctrl + cliquer sur la tâche actuelle pour passer manuellement à la tâche suivante. Alt + cliquer pour revenir à la tâche précédente.",
 			"abilities-header": "Capacités",
 			"equipments-header": "Équipements",
 			"max-level": "Niv max !",
@@ -1519,10 +1551,10 @@
 			"task-title": "Tâche {{taskNumber}} : {{taskTitle}}",
 			"task-progress-label": "Progression :",
 			"task-progress-tooltip": "Progression de la quête au début de la rencontre",
-			"create-team-button-label": "Créer un groupe de tâches",
-			"create-team-button-tooltip": "Créer un groupe en fonction des tâches à réaliser. Vous pouvez configurer qui complétera le groupe dans les paramètres",
+			"create-team-button-label": "",
+			"create-team-button-tooltip": "",
 			"create-team-button-ok-label": "Code de groupe copié dans le presse-papier",
-			"task-team-default-name": "Groupe de tâches",
+			"task-team-default-name": "",
 			"roles-chart-button": "Rôles",
 			"turn-counter": {
 				"turns": "Tours",
@@ -2196,6 +2228,8 @@
 					"murozond-tooltip": "Quand vous avez Murozond l’Infini en main, affiche toutes les cartes que votre adversaire a jouées le dernier tour, dans l'ordre où elles ont été jouées",
 					"queensguard-label": "Garde de la reine",
 					"queensguard-tooltip": "Quand vous avez une garde de la reine en main, affiche le nombre de sorts que vous avez lancés pendant ce tour",
+					"spectral-pillager-label": "",
+					"spectral-pillager-tooltip": "",
 					"lady-darkvein-label": "Dame Sombreveine",
 					"lady-darkvein-tooltip": "Quand vous avez Dame Sombreveine en main, affiche le dernier sort de l'Ombre que vous avez joué, s’il y en a un",
 					"grey-sage-parrot-label": "Perroquet gris cendré",

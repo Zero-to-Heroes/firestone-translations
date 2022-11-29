@@ -2,6 +2,7 @@
 	"global": {
 		"class": {
 			"all": "所有职业",
+			"deathknight": "死亡骑士",
 			"demonhunter": "恶魔猎手",
 			"druid": "德鲁伊",
 			"hunter": "猎人",
@@ -122,6 +123,7 @@
 			"standard-shaman": "萨满祭司卡牌包",
 			"standard-warlock": "术士卡牌包",
 			"standard-demonhunter": "恶魔猎手卡牌包",
+			"standard-deathknight": "死亡骑士卡牌包",
 			"golden-darkmoon-faire": "金色疯狂的暗月马戏团",
 			"alterac-valley": "奥特兰克的决裂",
 			"golden-the-barrens": "金色贫瘠之地的锤炼",
@@ -134,7 +136,9 @@
 			"the-sunken-city": "探寻沉没之城",
 			"golden-the-sunken-city": "金色探寻沉没之城",
 			"revendreth": "纳斯利亚堡的悬案",
-			"golden-revendreth": "纳斯利亚堡的悬案"
+			"golden-revendreth": "纳斯利亚堡的悬案",
+			"return-of-the-lich-king": "巫妖王的进军",
+			"golden-return-of-the-lich-king": "金色巫妖王的进军"
 		},
 		"ranks": {
 			"constructed": {
@@ -197,9 +201,9 @@
 		"mechanics": {
 			"battlecry": "战吼",
 			"deathrattle": "亡语",
-			"divine_shield": "",
-			"taunt": "",
-			"end_of_turn": ""
+			"divine_shield": "圣盾",
+			"taunt": "嘲讽",
+			"end_of_turn": "回合结束"
 		},
 		"legendary-minion": "传说随从",
 		"patch": "补丁 {{version}}.{{number}} 发布于{{date}}",
@@ -229,10 +233,13 @@
 			"mercenaries-header": "佣兵战纪",
 			"duels-header": "对决模式",
 			"arena-header": "竞技模式",
+			"tavern-brawl-header": "",
 			"replays-header": "回放",
 			"achievements-header": "成就",
 			"collection-header": "我的收藏",
 			"streams-header": "直播",
+			"mailbox-header": "",
+			"mailbox-text-details": "",
 			"stats-header": "个人概况",
 			"go-premium-header": "支持开发者并移除广告",
 			"logged-in-as-header": "以 {{value}} 身份登录",
@@ -271,10 +278,10 @@
 			}
 		},
 		"tray": {
-			"exit": "",
-			"restart": "",
-			"settings": "",
-			"main-window": ""
+			"exit": "退出",
+			"restart": "重启Firestone",
+			"settings": "设置",
+			"main-window": "显示主窗口"
 		},
 		"internal": {
 			"memory": {
@@ -754,6 +761,19 @@
 				"perfect-games": "无敌蘸酱",
 				"records": "纪录",
 				"simulator": "模拟器"
+			},
+			"tribes": {
+				"beast": "野兽",
+				"demon": "恶魔",
+				"dragon": "龙",
+				"elemental": "元素",
+				"mech": "机械",
+				"murloc": "鱼人",
+				"naga": "纳迦",
+				"pirate": "海盗",
+				"quilboar": "野猪人",
+				"blank": "无随从类型",
+				"all": "全部"
 			},
 			"filters": {
 				"hero": {
@@ -1240,6 +1260,19 @@
 			"current-viewers": "观众",
 			"empty-state-title": "没有在线主播",
 			"empty-state-tooltip": "现在没有在线的主播，请稍后再试"
+		},
+		"mailbox": {
+			"category": {
+				"inbox": ""
+			}
+		},
+		"tavern-brawl": {
+			"category": {
+				"meta": ""
+			},
+			"copy-deck-tooltip": "",
+			"with-name": "",
+			"no-name": ""
 		}
 	},
 	"turn-timer": {
@@ -1480,7 +1513,6 @@
 			"coins-to-farm-header": "需额外获得硬币",
 			"coins-to-farm-header-tooltip": "此佣兵满练度所需额外获得的硬币数量（已扣除您已经拥有的硬币和完成此佣兵所有任务可稳定获得的硬币）",
 			"completed-tasks-header": "任务",
-			"completed-tasks-header-tooltip": "已完成的任务。Ctrl + 点击当前任务将手动转到下一个任务。Alt + 点击将返回上一个。",
 			"abilities-header": "技能",
 			"equipments-header": "装备",
 			"max-level": "满级！",
@@ -1519,10 +1551,10 @@
 			"task-title": "任务 {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "进度：",
 			"task-progress-tooltip": "战斗开始时的任务进度",
-			"create-team-button-label": "创建任务队伍",
-			"create-team-button-tooltip": "根据需要完成的任务创建一支队伍。您可以在设置中配置补位的佣兵。",
+			"create-team-button-label": "",
+			"create-team-button-tooltip": "",
 			"create-team-button-ok-label": "复制队伍代码至剪贴板",
-			"task-team-default-name": "任务队伍",
+			"task-team-default-name": "",
 			"roles-chart-button": "角色克制",
 			"turn-counter": {
 				"turns": "回合数",
@@ -2196,6 +2228,8 @@
 					"murozond-tooltip": "当“永恒巨龙姆诺兹多”在您手牌中时，显示对手上回合打出的所有卡牌，按打出顺序排序",
 					"queensguard-label": "女王护卫",
 					"queensguard-tooltip": "当您的手牌中有女王护卫时，显示您在本回合中使用过的法术牌数量",
+					"spectral-pillager-label": "",
+					"spectral-pillager-tooltip": "",
 					"lady-darkvein-label": "暗脉女勋爵",
 					"lady-darkvein-tooltip": "当“暗脉女勋爵”在您手牌中时，显示您使用的上一张暗影法术牌（如果有）",
 					"grey-sage-parrot-label": "灰贤鹦鹉",

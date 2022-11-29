@@ -2,6 +2,7 @@
 	"global": {
 		"class": {
 			"all": "Все классы",
+			"deathknight": "Рыцарь смерти",
 			"demonhunter": "Охотник на демонов",
 			"druid": "Друид",
 			"hunter": "Охотник",
@@ -122,6 +123,7 @@
 			"standard-shaman": "Комплект шамана",
 			"standard-warlock": "Комплект чернокнижника",
 			"standard-demonhunter": "Комплект охотника на демонов",
+			"standard-deathknight": "Комплект рыцаря смерти",
 			"golden-darkmoon-faire": "Ярмарка безумия (золотой)",
 			"alterac-valley": "Разделенные Альтераком",
 			"golden-the-barrens": "Закаленные Степями (золотой)",
@@ -134,7 +136,9 @@
 			"the-sunken-city": "Путешествие в Затонувший город",
 			"golden-the-sunken-city": "Путешествие в Затонувший город (золотой)",
 			"revendreth": "Убийство в замке Нафрия",
-			"golden-revendreth": "Убийство в замке Нафрия (золотой)"
+			"golden-revendreth": "Убийство в замке Нафрия (золотой)",
+			"return-of-the-lich-king": "Марш Короля-лича",
+			"golden-return-of-the-lich-king": "Марш Короля-лича (золотой)"
 		},
 		"ranks": {
 			"constructed": {
@@ -169,37 +173,37 @@
 			"troll": "Тролль",
 			"undead": "Нежить",
 			"worgen": "Ворген",
-			"murloc": "Мурлоки",
-			"demon": "Демоны",
+			"murloc": "Мурлок",
+			"demon": "Демон",
 			"scourge": "Плеть",
-			"mech": "Механизмы",
-			"elemental": "Элементали",
+			"mech": "Механизм",
+			"elemental": "Элементаль",
 			"ogre": "Огр",
-			"beast": "Звери",
+			"beast": "Зверь",
 			"totem": "Тотем",
 			"nerubian": "Неруб",
-			"pirate": "Пираты",
-			"dragon": "Драконы",
+			"pirate": "Пират",
+			"dragon": "Дракон",
 			"blank": "Без типа",
 			"all": "Все",
 			"egg": "Яйцо",
-			"quilboar": "Свинобразы",
-			"centaur": "Кентавры",
-			"furbolg": "Фурболги",
-			"highelf": "Высшие эльфы",
+			"quilboar": "Свинобраз",
+			"centaur": "Кентавр",
+			"furbolg": "Фурболг",
+			"highelf": "Высший эльф",
 			"treant": "Древень",
 			"owlkin": "Совух",
 			"halforc": "Полуорк",
 			"lock": "Lock",
-			"naga": "Наги",
-			"oldgod": "Древние боги"
+			"naga": "Нага",
+			"oldgod": "Древний бог"
 		},
 		"mechanics": {
 			"battlecry": "Боевой клич",
 			"deathrattle": "Предсмертный хрип",
-			"divine_shield": "",
-			"taunt": "",
-			"end_of_turn": ""
+			"divine_shield": "Божественный щит",
+			"taunt": "Провокация",
+			"end_of_turn": "Конец хода"
 		},
 		"legendary-minion": "Легендарное существо",
 		"patch": "Обновление {{version}}.{{number}} от {{date}}",
@@ -229,10 +233,13 @@
 			"mercenaries-header": "Наёмники",
 			"duels-header": "Дуэли",
 			"arena-header": "Арена",
+			"tavern-brawl-header": "Потасовка",
 			"replays-header": "Повторы",
 			"achievements-header": "Достижения",
 			"collection-header": "Коллекция",
 			"streams-header": "Стримы",
+			"mailbox-header": "",
+			"mailbox-text-details": "",
 			"stats-header": "Статистика",
 			"go-premium-header": "Поддержать разработчика и убрать рекламу",
 			"logged-in-as-header": "Вы вошли как {{value}}",
@@ -272,9 +279,9 @@
 		},
 		"tray": {
 			"exit": "",
-			"restart": "",
-			"settings": "",
-			"main-window": ""
+			"restart": "Перезапустить Firestone",
+			"settings": "Настройки",
+			"main-window": "Открыть главное окно"
 		},
 		"internal": {
 			"memory": {
@@ -754,6 +761,19 @@
 				"perfect-games": "Идеальные игры",
 				"records": "Рекорды",
 				"simulator": "Симулятор"
+			},
+			"tribes": {
+				"beast": "Звери",
+				"demon": "Демоны",
+				"dragon": "Драконы",
+				"elemental": "Элементали",
+				"mech": "Механизмы",
+				"murloc": "Мурлоки",
+				"naga": "Наги",
+				"pirate": "Пираты",
+				"quilboar": "Свинобразы",
+				"blank": "Без типа",
+				"all": "Все"
 			},
 			"filters": {
 				"hero": {
@@ -1240,6 +1260,19 @@
 			"current-viewers": "зрителей",
 			"empty-state-title": "",
 			"empty-state-tooltip": ""
+		},
+		"mailbox": {
+			"category": {
+				"inbox": ""
+			}
+		},
+		"tavern-brawl": {
+			"category": {
+				"meta": ""
+			},
+			"copy-deck-tooltip": "",
+			"with-name": "",
+			"no-name": ""
 		}
 	},
 	"turn-timer": {
@@ -1480,7 +1513,6 @@
 			"coins-to-farm-header": "Нужно нафармить",
 			"coins-to-farm-header-tooltip": "Сколько монет, помимо наград за выполнение задач и имеющихся у вас, нужно заработать, чтобы максимально улучшить наёмника",
 			"completed-tasks-header": "Выполнено задач",
-			"completed-tasks-header-tooltip": "Ctrl + Клик по текущей задаче, чтобы вручную перейти к следующей задаче. Alt + Клик для возврата на задачу назад.",
 			"abilities-header": "Способности",
 			"equipments-header": "Снаряжение",
 			"max-level": "Макс. уровень!",
@@ -1519,10 +1551,10 @@
 			"task-title": "Задача {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "Прогресс:",
 			"task-progress-tooltip": "Прогресс задач обновится после окончания матча",
-			"create-team-button-label": "Создание отряда для задач",
-			"create-team-button-tooltip": "Создайте отряд на основе списка ваших задач. Вы можете выбрать тех, кто заполнит недостающие места в команде в Настройках",
+			"create-team-button-label": "",
+			"create-team-button-tooltip": "",
 			"create-team-button-ok-label": "",
-			"task-team-default-name": "Отряд для задач",
+			"task-team-default-name": "",
 			"roles-chart-button": "Роли",
 			"turn-counter": {
 				"turns": "Ходов",
@@ -2196,6 +2228,8 @@
 					"murozond-tooltip": "Показывать все карты разыгранные противником на прошлом ходу, когда Дорнозму Бесконечный у вас в руке",
 					"queensguard-label": "Королевский стражник",
 					"queensguard-tooltip": "Когда Королевский стражник у вас в руке показывает количество заклинаний, которые вы играли за этот ход",
+					"spectral-pillager-label": "",
+					"spectral-pillager-tooltip": "",
 					"lady-darkvein-label": "Леди Дарквейн",
 					"lady-darkvein-tooltip": "Когда Леди Дарквейн у вас в руке, показывает последнее разыгранное вами заклинание Тьмы",
 					"grey-sage-parrot-label": "Серый мудрец",
