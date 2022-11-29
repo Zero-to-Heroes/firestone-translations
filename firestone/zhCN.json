@@ -233,13 +233,13 @@
 			"mercenaries-header": "佣兵战纪",
 			"duels-header": "对决模式",
 			"arena-header": "竞技模式",
-			"tavern-brawl-header": "",
+			"tavern-brawl-header": "乱斗模式",
 			"replays-header": "回放",
 			"achievements-header": "成就",
 			"collection-header": "我的收藏",
 			"streams-header": "直播",
-			"mailbox-header": "",
-			"mailbox-text-details": "",
+			"mailbox-header": "火石信箱",
+			"mailbox-text-details": "您有 {{value}} 条未读信息",
 			"stats-header": "个人概况",
 			"go-premium-header": "支持开发者并移除广告",
 			"logged-in-as-header": "以 {{value}} 身份登录",
@@ -1263,16 +1263,16 @@
 		},
 		"mailbox": {
 			"category": {
-				"inbox": ""
+				"inbox": "信箱"
 			}
 		},
 		"tavern-brawl": {
 			"category": {
-				"meta": ""
+				"meta": "环境"
 			},
-			"copy-deck-tooltip": "",
-			"with-name": "",
-			"no-name": ""
+			"copy-deck-tooltip": "点击复制高胜率套牌到剪贴板",
+			"with-name": "本周的乱斗模式是： {{name}} (开始于 {{date}} )",
+			"no-name": "乱斗模式，开始于 {{date}}"
 		}
 	},
 	"turn-timer": {
@@ -1287,7 +1287,7 @@
 			"opponent": "对手的随从和英雄总场攻为 {{value}}"
 		},
 		"pogo": {
-			"player": "您已使用过 {{value}} 张蹦蹦兔",
+			"player": "您已使用过 {{value}} 张“蹦蹦兔”",
 			"opponent": "对手已使用过 {{value}} 张蹦蹦兔"
 		},
 		"bolner": "本回合使用的第一张战吼牌是{{value}}",
@@ -1310,7 +1310,7 @@
 			"player": "您的对手使用的上一张牌是 {{value}}"
 		},
 		"spectral-pillager": {
-			"player": ""
+			"player": "“鬼灵匪贼”将造成 {{value}} 点伤害"
 		},
 		"lady-darkvein": {
 			"player": "您使用的上一张暗影法术牌是 {{value}}",
@@ -1329,12 +1329,12 @@
 			"opponent": "对手上回合使用了 {{lastTurn}} 张元素牌，本回合使用了{{thisTurn}} 张元素牌"
 		},
 		"elwynn-boar": {
-			"player": "您已有 {{value}} 只艾尔文野猪死亡",
-			"opponent": "对手已有 {{value}} 只艾尔文野猪死亡"
+			"player": "您已有 {{value}} 只“艾尔文野猪”死亡",
+			"opponent": "对手已有 {{value}} 只“艾尔文野猪”死亡"
 		},
 		"volatile-skeleton": {
-			"player": "己方-不稳定的骷髅：{{value}}",
-			"opponent": "敌方-不稳定的骷髅：{{value}}"
+			"player": "您已有 {{value}} 个“不稳定的骷髅”死亡",
+			"opponent": "对手已有 {{value}} 个“不稳定的骷髅”死亡"
 		},
 		"relic": {
 			"player": "己方圣物计数：{{value}}",
@@ -1349,7 +1349,7 @@
 			"opponent": "您的深渊诅咒伤害最高已达到 {{value}} 点，对手将在下一回合开始时受到{{totalDamageFromCursesInHand}} 点诅咒伤害"
 		},
 		"galakrond": {
-			"player": "您已祈求迦拉克隆 {{value}} 次",
+			"player": "您已祈求“迦拉克隆” {{value}} 次",
 			"opponent": "对手已祈求迦拉克隆 {{value}} 次"
 		},
 		"hero-power-damage": {
@@ -1554,10 +1554,10 @@
 			"task-title": "任务 {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "进度：",
 			"task-progress-tooltip": "战斗开始时的任务进度",
-			"create-team-button-label": "",
-			"create-team-button-tooltip": "",
+			"create-team-button-label": "创建 {{mercName}} 队伍",
+			"create-team-button-tooltip": "根据需要完成的 {{mercName}} 任务创建一支队伍。您可以在设置中配置补位的佣兵。",
 			"create-team-button-ok-label": "复制队伍代码至剪贴板",
-			"task-team-default-name": "",
+			"task-team-default-name": "{{mercName }} 任务队",
 			"roles-chart-button": "角色克制",
 			"turn-counter": {
 				"turns": "回合数",
@@ -2152,8 +2152,8 @@
 				"show-bottom-cards-separately-tooltip": "启用此功能，记牌器中将出现一个显示已知牌库底的分区",
 				"show-top-cards-separately-label": "显示牌库顶",
 				"show-top-cards-separately-tooltip": "启用此功能，记牌器中将出现一个显示已知牌库顶的分区",
-				"hide-generated-cards-label": "",
-				"hide-generated-cards-tooltip": "",
+				"hide-generated-cards-label": "隐藏生成的卡片",
+				"hide-generated-cards-tooltip": "隐藏由其他卡牌创建且不在手牌或牌库中的卡牌。警告：禁用此功能会导致某些功能效果残缺，例如卡牌高亮显示",
 				"opponent-hand-title": "对手手牌追踪",
 				"card-turn-draw-label": "卡牌获得回合",
 				"card-turn-draw-tooltip": "显示对手手牌中获得卡牌的回合",
@@ -2203,7 +2203,7 @@
 				"ignore-decklist-confirmation": "好的，记牌器将忽略您的牌库",
 				"counters": {
 					"galakrond-tooltip": "显示您祈求迦拉克隆的次数 (仅当您使用迦拉克隆或者祈求牌时显示)",
-					"pogo-tooltip": "显示您已使用的蹦蹦兔次数",
+					"pogo-tooltip": "显示您已使用“蹦蹦兔”的次数",
 					"jade-tooltip": "显示您的青玉魔像当前属性值",
 					"cthun-tooltip": "显示您的克苏恩当前属性值",
 					"fatigue-tooltip": "显示您下次受到的疲劳伤害",
@@ -2218,23 +2218,23 @@
 					"elwynn-boar-tooltip": "显示您已死亡的艾尔文野猪数量",
 					"volatile-skeleton-tooltip": "显示您已死亡的不稳定的骷髅数量",
 					"relic-tooltip": "显示您的下一个恶魔猎手圣物计数",
-					"hero-power-damage-tooltip": "显示本局中您的英雄技能造成的总伤害。 仅当您的牌库或手牌中有“火眼莫德雷斯”或“加亚莱，龙鹰之神”时显示",
+					"hero-power-damage-tooltip": "显示本局中您的英雄技能造成的总伤害。 仅当“火眼莫德雷斯”或“加亚莱，龙鹰之神”在您的牌库或手牌中时显示",
 					"bolner-label": "伯尔纳·锤喙",
 					"bolner-tooltip": "当“伯尔纳·锤喙”在您手牌中时，显示您在本回合中打出的第一张战吼牌（如果有）",
 					"brilliant-macaw-label": "艳丽的金刚鹦鹉",
 					"brilliant-macaw-tooltip": "当“艳丽的金刚鹦鹉”在您手牌中时，显示您使用的上一张战吼牌（如果有）",
 					"monstrous-parrot-label": "巨型鹦鹉",
-					"monstrous-parrot-tooltip": "当您的手牌中有巨型鹦鹉时，显示您最后触发的己方亡语（如果有的话）",
+					"monstrous-parrot-tooltip": "当“巨型鹦鹉”在您的手牌中时，显示您最后触发的己方亡语（如果有的话）",
 					"vanessa-label": "梵妮莎·范克里夫",
 					"vanessa-tooltip": "当“梵妮莎·范克里夫”在您手牌中时，显示对手打出的最后一张卡牌",
 					"murozond-label": "永恒巨龙姆诺兹多",
 					"murozond-tooltip": "当“永恒巨龙姆诺兹多”在您手牌中时，显示对手上回合打出的所有卡牌，按打出顺序排序",
-					"parrot-mascot-label": "",
-					"parrot-mascot-tooltip": "",
+					"parrot-mascot-label": "吉祥物鹦鹉（拉斯塔哈大乱斗的宝藏牌）",
+					"parrot-mascot-tooltip": "当“吉祥物鹦鹉”在您手牌中时，显示您上回合打出的所有卡牌，按打出顺序排序",
 					"queensguard-label": "女王护卫",
-					"queensguard-tooltip": "当您的手牌中有女王护卫时，显示您在本回合中使用过的法术牌数量",
-					"spectral-pillager-label": "",
-					"spectral-pillager-tooltip": "",
+					"queensguard-tooltip": "当“女王护卫”在您的手牌中时，显示您在本回合中使用过的法术牌数量",
+					"spectral-pillager-label": "鬼灵匪贼",
+					"spectral-pillager-tooltip": "当“鬼灵匪贼”在您的手牌中时，显示您在本回合中使用过的卡牌数量",
 					"lady-darkvein-label": "暗脉女勋爵",
 					"lady-darkvein-tooltip": "当“暗脉女勋爵”在您手牌中时，显示您使用的上一张暗影法术牌（如果有）",
 					"grey-sage-parrot-label": "灰贤鹦鹉",
