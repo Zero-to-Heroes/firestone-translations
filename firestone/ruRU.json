@@ -114,7 +114,7 @@
 			"stormwind": "Сплоченные Штормградом",
 			"golden-scholomance": "Некроситет (золотой)",
 			"darkmoon-faire": "Ярмарка безумия",
-			"lettuce": "Наёмники",
+			"mercenaries": "",
 			"standard-druid": "Комплект друида",
 			"standard-paladin": "Комплект паладина",
 			"standard-warrior": "Комплект воина",
@@ -128,11 +128,11 @@
 			"alterac-valley": "Разделенные Альтераком",
 			"golden-the-barrens": "Закаленные Степями (золотой)",
 			"year-of-phoenix": "Год Феникса",
-			"standard-bundle": "Стандартный",
+			"standard-pack": "",
 			"wild-pack": "Вольный",
-			"golden-standard-bundle": "Стандартный (золотой)",
-			"golden-stormwind": "Сплоченные Штормградом (золотой)",
-			"golden-alterac-valley": "Разделенные Альтераком (золотой)",
+			"golden-standard-pack": "",
+			"stormwind-golden": "",
+			"alterac-valley-golden": "",
 			"the-sunken-city": "Путешествие в Затонувший город",
 			"golden-the-sunken-city": "Путешествие в Затонувший город (золотой)",
 			"revendreth": "Убийство в замке Нафрия",
@@ -548,6 +548,8 @@
 			"sets": {
 				"coming-soon": "Скоро!",
 				"next-guaranteed": "Гарантированная",
+				"pity-timer-reset-tooltip": "",
+				"pity-timer-reset-button": "",
 				"in-packs": "в след. {{value}} комплектах",
 				"browse-set-button": "Смотреть карты",
 				"total-non-golden-cards": "Незолотых карт собрано",
@@ -677,7 +679,8 @@
 				"delete-tooltip": "Удалить вашу колоду. Это действие не может быть отменено. Если вы просто хотите скрыть его, подумайте о его архивации."
 			},
 			"deck-details": {
-				"copy-deck-code-button": "Копировать код колоды"
+				"copy-deck-code-button": "Копировать код колоды",
+				"deck-archived": ""
 			},
 			"deck-recap": {
 				"overall-stats-header": "Общая статистика",
@@ -1073,6 +1076,8 @@
 				"go-back-hero-power": "Сила героя: {{selectedCardName}} <br/> Кликните для возврата к выбору силы героя",
 				"go-back-signature-treasure": "Сокровище: {{selectedCardName}} <br/> Кликните для возврата к выбору фирменного сокровища",
 				"ongoing-deck-building": "Карт: {{currentCards}} / {{maxCards}}",
+				"dk-runes-text": "",
+				"dk-runes-tooltip": "",
 				"export-deckcode-button": "Копировать код",
 				"save-deck-button": "Сохранить",
 				"deck-saved-info": "Колода сохранена",
@@ -1279,6 +1284,19 @@
 		"vanessa": {
 			"player": "Последняя карта разыгранная вашим противником: {{value}}"
 		},
+		"anachronos": {
+			"player": ""
+		},
+		"bonelord-frostwhisper": {
+			"player": "",
+			"opponent": ""
+		},
+		"asvedon": {
+			"player": ""
+		},
+		"spectral-pillager": {
+			"player": ""
+		},
 		"lady-darkvein": {
 			"player": "Последнее разыгранное Вами заклинание тьмы: {{value}}",
 			"opponent": "Последнее разыгранное противником заклинание тьмы: {{value}}"
@@ -1319,6 +1337,9 @@
 		"hero-power-damage": {
 			"player": "Вы нанесли {{value}} урона силой героя в этой игре",
 			"opponent": "Противник нанес {{value}} урона силой героя в этой игре"
+		},
+		"shockspitter": {
+			"player": ""
 		},
 		"jade": {
 			"player": "Характеристики вашего последнего нефритового голема: {{value}}/{{value}}",
@@ -1640,6 +1661,10 @@
 			"reposition-button-done": "Завершена",
 			"reposition-button-cancel": "Отмена",
 			"reposition-button-cancelling": "Отмена...",
+			"reposition-button-tooltip-firstpass": "",
+			"reposition-button-tooltip-secondpass": "",
+			"reposition-button-tooltip-finalresult": "",
+			"reposition-button-tooltip-done": "",
 			"reposition-button-tooltip": "(BETA) Подбор наилучшей расстановки для вашего стола. Процесс может занять несколько минут, во время которого будет использовано много ресурсов CPU и RAM.",
 			"reposition-button-tooltip-cancel": "Нажмите, чтобы отменить репозицию",
 			"actual": "Актуальный стол",
@@ -1794,6 +1819,7 @@
 			"win-distribution-header": "Распределение побед ({{value}} забегов)",
 			"win-distribution-tooltip": "Распределение побед",
 			"top-decks-header": "Результативные колоды ({{value}} колод)",
+			"stats-period": "",
 			"footer": "Зажмите клавишу Shift, чтобы предотвратить скрытие этого виджета"
 		},
 		"deck-select": {
@@ -2026,6 +2052,11 @@
 				"sort-by-mana-cost-label": "Сортировать карты по стоимости",
 				"show-bottom-cards-separately-label": "Показывать карты с низа колоды",
 				"show-top-cards-separately-label": "Показывать карты с верха колоды",
+				"show-top-cards-separately-tooltip": "",
+				"hide-generated-cards-label": "",
+				"hide-generated-cards-tooltip": "",
+				"show-dk-runes-label": "",
+				"show-dk-runes-tooltip": "",
 				"opponent-hand-title": "Отслеживание руки противника",
 				"card-turn-draw-label": "Ход, на котором взята карта",
 				"card-turn-draw-tooltip": "Показывать ход, на котором была взята карта в руке противника ",
@@ -2080,8 +2111,18 @@
 					"monstrous-parrot-tooltip": "Показывает ваш последний сработавший предсмертный хрип, когда Страшный попугай у вас в руке",
 					"vanessa-label": "Ванесса ван Клиф",
 					"vanessa-tooltip": "Показывать последнюю разыгранную противником карту, когда Ванесса ван Клиф у вас в руке",
+					"bonelord-frostwhisper-label": "",
+					"bonelord-frostwhisper-tooltip": "",
+					"anachronos-label": "",
+					"anachronos-tooltip": "",
+					"asvedon-label": "",
+					"asvedon-tooltip": "",
 					"murozond-label": "Дорнозму Бесконечный",
 					"murozond-tooltip": "Показывать все карты разыгранные противником на прошлом ходу, когда Дорнозму Бесконечный у вас в руке",
+					"shockspitter-label": "",
+					"shockspitter-tooltip": "",
+					"parrot-mascot-label": "",
+					"parrot-mascot-tooltip": "",
 					"queensguard-label": "Королевский стражник",
 					"queensguard-tooltip": "Когда Королевский стражник у вас в руке показывает количество заклинаний, которые вы играли за этот ход",
 					"lady-darkvein-label": "Леди Дарквейн",

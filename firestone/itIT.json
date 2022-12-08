@@ -67,7 +67,7 @@
 			"stormwind": "Uniti a Roccavento",
 			"golden-scholomance": "Accademia di Scholomance Dorata",
 			"darkmoon-faire": "Follia alla Fiera di Lunacupa",
-			"lettuce": "Mercenari",
+			"mercenaries": "",
 			"standard-druid": "Druido Standard",
 			"standard-paladin": "Paladino Standard",
 			"standard-warrior": "Guerriero Standard",
@@ -80,11 +80,11 @@
 			"alterac-valley": "Divisi nella Valle di Alterac",
 			"golden-the-barrens": "Forgiato nelle Savane Dorate",
 			"year-of-phoenix": "Anno della Fenice",
-			"standard-bundle": "Standard",
+			"standard-pack": "",
 			"wild-pack": "Selvatico",
-			"golden-standard-bundle": "Standard Dorata",
-			"golden-stormwind": "Uniti a Roccavento Dorata",
-			"golden-alterac-valley": "Divisi nella Valle di Alterac Dorata",
+			"golden-standard-pack": "",
+			"stormwind-golden": "",
+			"alterac-valley-golden": "",
 			"the-sunken-city": "Rotta per la Città Sommersa",
 			"golden-the-sunken-city": "Rotta per la Città Sommersa Dorata"
 		},
@@ -423,6 +423,8 @@
 			"sets": {
 				"coming-soon": "Prossimamente!",
 				"next-guaranteed": "Prossima garantita",
+				"pity-timer-reset-tooltip": "",
+				"pity-timer-reset-button": "",
 				"in-packs": "In {{value}} pacchetti",
 				"browse-set-button": "Sfoglia Set"
 			},
@@ -533,7 +535,8 @@
 				"delete-tooltip": "Elimina il tuo mazzo. Questo non è annullabile. Se desideri semplicemente nasconderlo, considera invece di archiviarlo."
 			},
 			"deck-details": {
-				"copy-deck-code-button": "Copia il codice del mazzo"
+				"copy-deck-code-button": "Copia il codice del mazzo",
+				"deck-archived": ""
 			},
 			"deck-recap": {
 				"overall-stats-header": "Statistiche complessive",
@@ -870,8 +873,40 @@
 				"faced-tooltip": "Hai affrontato {{opponentClass}} {{totalMatches}} volte con un tasso di vittorie {{winrate}}%"
 			},
 			"deckbuilder": {
-				"search-tooltip": {},
-				"warning": {}
+				"choose-your-hero-title": "",
+				"choose-your-hero-power-title": "",
+				"choose-your-signature-treasure-title": "",
+				"build-your-deck-title": "",
+				"go-back-hero": "",
+				"go-back-hero-power": "",
+				"go-back-signature-treasure": "",
+				"ongoing-deck-building": "",
+				"dk-runes-text": "",
+				"dk-runes-tooltip": "",
+				"export-deckcode-button": "",
+				"save-deck-button": "",
+				"deck-saved-info": "",
+				"save-deckcode-button-tooltip": "",
+				"show-buckets-button-label": "",
+				"show-buckets-button-tooltip": "",
+				"bucket-filter-button-tooltip": "",
+				"search-tooltip": {
+					"text": "",
+					"info-1": "",
+					"info-2": "",
+					"info-3": "",
+					"info-4": ""
+				},
+				"warning": {
+					"neutral-hero": "",
+					"loe-hero": ""
+				},
+				"card-offering-rate-tooltip": "",
+				"or": "",
+				"import-deck-button-title": "",
+				"import-deck-button-tooltip": "",
+				"missing-dust-tooltip": "",
+				"part-of-multiple-buckets-tooltip": ""
 			},
 			"empty-state": {
 				"title": "Ancora niente qui",
@@ -1038,10 +1073,34 @@
 			"player": "{{value}} è stata l'ultima carta di grido di battaglia che hai giocato",
 			"opponent": "{{value}} è stata l'ultima carta di grido di battaglia giocata dal tuo avversario"
 		},
-		"monstrous-parrot": {},
-		"vanessa": {},
-		"lady-darkvein": {},
-		"grey-sage-parrot": {},
+		"monstrous-parrot": {
+			"player": "",
+			"opponent": ""
+		},
+		"vanessa": {
+			"player": ""
+		},
+		"anachronos": {
+			"player": ""
+		},
+		"bonelord-frostwhisper": {
+			"player": "",
+			"opponent": ""
+		},
+		"asvedon": {
+			"player": ""
+		},
+		"spectral-pillager": {
+			"player": ""
+		},
+		"lady-darkvein": {
+			"player": "",
+			"opponent": ""
+		},
+		"grey-sage-parrot": {
+			"player": "",
+			"opponent": ""
+		},
 		"cthun": {
 			"player": "Il tuo C'Thun è un {{value}}/{{value}}",
 			"opponent": "Il C'Thun del tuo avversario è un {{value}}/{{value}}"
@@ -1065,6 +1124,9 @@
 		"hero-power-damage": {
 			"player": "Il potere del tuo eroe ha inflitto {{value}} danni in questa partita",
 			"opponent": "Il potere dell'eroe del tuo avversario ha inflitto {{value}} danni in questa partita"
+		},
+		"shockspitter": {
+			"player": ""
 		},
 		"jade": {
 			"player": "La dimensione del tuo Golem di Giada è {{value}}",
@@ -1357,7 +1419,7 @@
 			"reposition-button-done": "Completata",
 			"reposition-button-cancel": "Annulla",
 			"reposition-button-cancelling": "Annullando...",
-			"reposition-button-tooltip": "(BETA) Trova il miglior posizionamento per il tuo tavolo. A seconda del numero di CPU e la complessità dei tavoli, questo potrebbe richiedere diversi minuti e userà molta CPU e RAM.",
+			"reposition-button-tooltip": "",
 			"reposition-button-tooltip-firstpass": "Eseguendo alcune (circa 50) simulazioni per ogni permutazione possibile per eliminare rapidamente le meno promettenti",
 			"reposition-button-tooltip-secondpass": "Eseguendo alcune centinaia (circa 250) di simulazioni per ottenere le più promettenti",
 			"reposition-button-tooltip-finalresult": "Eseguendo una simulazione completa sui candidati più promettenti. Questa è la fase più lunga e può richiedere diversi minuti",
@@ -1501,6 +1563,7 @@
 			"win-distribution-header": "Distribuzione delle vittorie ({{value}} ondate)",
 			"win-distribution-tooltip": "Distribuzione delle vittorie",
 			"top-decks-header": "Mazzi ad alta vincita ({{value}} mazzi)",
+			"stats-period": "",
 			"footer": "Tieni premuto il tasto Shift abbandonando la carta eroe per prevenire che scompaia"
 		},
 		"deck-select": {
@@ -1745,6 +1808,12 @@
 				"global-effects-tooltip": "Quando attivo, compare una nuova sezione in cima al monitoraggio che mostra gli effetti globali inflitti al giocatore / mazzo",
 				"sort-by-mana-cost-label": "Ordina carte per costo di mana",
 				"sort-by-mana-cost-tooltip": "Quando attivo, le carte saranno ordinate per costo di mana nella zona Altre. Altrimenti, la zona mostrerà prima le carte sul tavolo, poi nel cimitero, poi le altre",
+				"show-bottom-cards-separately-label": "",
+				"show-bottom-cards-separately-tooltip": "",
+				"show-top-cards-separately-label": "",
+				"show-top-cards-separately-tooltip": "",
+				"show-dk-runes-label": "",
+				"show-dk-runes-tooltip": "",
 				"hide-generated-cards-label": "Nascondi le carte generate nella zona Altre",
 				"hide-generated-cards-tooltip": "Quando attivo, le carte che non hanno iniziato nel mazzo non compariranno nella zona Altre",
 				"opponent-hand-title": "Monitoraggio della mano dell'avversario",
@@ -1805,6 +1874,30 @@
 					"bolner-tooltip": "Quando hai Bolner Hammerbeak in mano, mostra la prima carta di Grido di Battaglia giocata a questo turno, se presente",
 					"brilliant-macaw-label": "Ara Brillante",
 					"brilliant-macaw-tooltip": "Quando hai un Ara Brillante in mano, mostra l'ultima carta Grido della Battaglia che hai giocato, se presente",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
+					"vanessa-label": "",
+					"vanessa-tooltip": "",
+					"bonelord-frostwhisper-label": "",
+					"bonelord-frostwhisper-tooltip": "",
+					"anachronos-label": "",
+					"anachronos-tooltip": "",
+					"asvedon-label": "",
+					"asvedon-tooltip": "",
+					"murozond-label": "",
+					"murozond-tooltip": "",
+					"shockspitter-label": "",
+					"shockspitter-tooltip": "",
+					"parrot-mascot-label": "",
+					"parrot-mascot-tooltip": "",
+					"queensguard-label": "",
+					"queensguard-tooltip": "",
+					"spectral-pillager-label": "",
+					"spectral-pillager-tooltip": "",
+					"lady-darkvein-label": "",
+					"lady-darkvein-tooltip": "",
+					"grey-sage-parrot-label": "",
+					"grey-sage-parrot-tooltip": "",
 					"multicaster-label": "Multincantesimo",
 					"multicaster-tooltip": "Mostra le scuole di incantesimi di cui hai giocato un incantesimo in questa partita",
 					"coral-keeper-label": "Custode del Corallo",

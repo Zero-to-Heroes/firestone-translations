@@ -109,7 +109,7 @@
 			"stormwind": "Vereint in Sturmwind",
 			"golden-scholomance": "Akademie Scholomance - Gold",
 			"darkmoon-faire": "Der Dunkelmond-Wahnsinn",
-			"lettuce": "Söldner",
+			"mercenaries": "",
 			"standard-druid": "Standard Druide",
 			"standard-paladin": "Standard Paladin",
 			"standard-warrior": "Standard Krieger",
@@ -122,11 +122,11 @@
 			"alterac-valley": "Gespalten im Alteractal",
 			"golden-the-barrens": "Geschmiedet im Brachland - Gold",
 			"year-of-phoenix": "Jahr des Phönix",
-			"standard-bundle": "Standard",
+			"standard-pack": "",
 			"wild-pack": "Wild",
-			"golden-standard-bundle": "Standard - Gold",
-			"golden-stormwind": "Vereint in Sturmwind - Gold",
-			"golden-alterac-valley": "Gespalten im Alteractal - Gold",
+			"golden-standard-pack": "",
+			"stormwind-golden": "",
+			"alterac-valley-golden": "",
 			"the-sunken-city": "Reise in die Versunkene Stadt",
 			"golden-the-sunken-city": "Reise in die Versunkene Stadt - Golden",
 			"revendreth": "Mord auf Schloss Nathria",
@@ -514,6 +514,8 @@
 			"sets": {
 				"coming-soon": "Kommt bald!",
 				"next-guaranteed": "Nächste garantiert",
+				"pity-timer-reset-tooltip": "",
+				"pity-timer-reset-button": "",
 				"in-packs": "In {{value}} Packungen",
 				"browse-set-button": "Set durchsuchen",
 				"total-non-golden-cards": "Insgesamt gesammelte nicht goldene Karten",
@@ -638,7 +640,8 @@
 				"delete-tooltip": "Lösche dein Deck. Dies kann nicht rückgängig gemacht werden. Wenn du es nur ausblenden willst, solltest du es stattdessen archivieren."
 			},
 			"deck-details": {
-				"copy-deck-code-button": "Deck-Code kopieren"
+				"copy-deck-code-button": "Deck-Code kopieren",
+				"deck-archived": ""
 			},
 			"deck-recap": {
 				"overall-stats-header": "Gesamtstatistik",
@@ -961,6 +964,12 @@
 				"choose-your-hero-title": "Wähle deinen Helden",
 				"choose-your-hero-power-title": "Wähle deine Heldenfähigkeit",
 				"build-your-deck-title": "Erstelle dein Deck",
+				"go-back-hero": "",
+				"go-back-hero-power": "",
+				"go-back-signature-treasure": "",
+				"ongoing-deck-building": "",
+				"dk-runes-text": "",
+				"dk-runes-tooltip": "",
 				"export-deckcode-button": "Code kopieren",
 				"save-deck-button": "Deck speichern",
 				"deck-saved-info": "Deck gespeichert",
@@ -1137,6 +1146,19 @@
 		"vanessa": {
 			"player": "{{value}} war die letzte Karte, die dein Gegner ausgespielt hat"
 		},
+		"anachronos": {
+			"player": ""
+		},
+		"bonelord-frostwhisper": {
+			"player": "",
+			"opponent": ""
+		},
+		"asvedon": {
+			"player": ""
+		},
+		"spectral-pillager": {
+			"player": ""
+		},
 		"lady-darkvein": {
 			"player": "{{value}} war der letzte Schattenzauber, den du ausgespielt hast",
 			"opponent": "{{value}} war der letzte Schattenzauber, den dein Gegner ausgespielt hat"
@@ -1169,8 +1191,17 @@
 			"player": "Deine Heldenfähigkeit hat {{value}} Schaden verursacht",
 			"opponent": "Die Heldenfähigkeit deines Gegners hat {{value}} Schaden verursacht"
 		},
-		"jade": {},
-		"libram": {},
+		"shockspitter": {
+			"player": ""
+		},
+		"jade": {
+			"player": "",
+			"opponent": ""
+		},
+		"libram": {
+			"player": "",
+			"opponent": ""
+		},
 		"si-seven": {
 			"player": "Du hast {{value}} SI:7 Karten in diesem Spiel ausgespielt",
 			"opponent": "Dein Gegner hat {{value}} SI:7 Karten in diesem SPiel ausgespielt"
@@ -1539,7 +1570,14 @@
 		"hero-info": {
 			"winrate-label": "Gewinnrate",
 			"popularity-label": "Beliebtheit",
-			"win-distribution-tooltip": "Gewinnverteilung"
+			"player-matches": "",
+			"your-value-tooltip": "",
+			"community-value-tooltip": "",
+			"win-distribution-header": "",
+			"win-distribution-tooltip": "Gewinnverteilung",
+			"top-decks-header": "",
+			"stats-period": "",
+			"footer": ""
 		},
 		"deck-select": {
 			"copy-deck-tooltip": "Zum Kopieren klicken",
@@ -1731,6 +1769,17 @@
 				"darken-used-cards-label": "Verwendete Karten abdunkeln",
 				"global-effects-label": "Zeige globale Effekte",
 				"sort-by-mana-cost-label": "Sortiere Karten nach Manakosten",
+				"sort-by-mana-cost-tooltip": "",
+				"show-bottom-cards-separately-label": "",
+				"show-bottom-cards-separately-tooltip": "",
+				"show-top-cards-separately-label": "",
+				"show-top-cards-separately-tooltip": "",
+				"hide-generated-cards-label": "",
+				"hide-generated-cards-tooltip": "",
+				"show-dk-runes-label": "",
+				"show-dk-runes-tooltip": "",
+				"opponent-hand-title": "",
+				"card-turn-draw-label": "",
 				"card-turn-draw-tooltip": "Zeige den Zug, in welchem der Gegner eine Karte auf die Hand erhalten hat",
 				"guessed-cards-label": "Erratene Karten",
 				"secrets-helper-title": "Geheimnishelfer",
@@ -1775,6 +1824,23 @@
 					"monstrous-parrot-label": "Monströser Papagei",
 					"monstrous-parrot-tooltip": "Zeige das letzte befreundete Todesröcheln, wenn du einen Monströsen Papagei auf der Hand hast.",
 					"vanessa-label": "Vanessa van Cleef",
+					"vanessa-tooltip": "",
+					"bonelord-frostwhisper-label": "",
+					"bonelord-frostwhisper-tooltip": "",
+					"anachronos-label": "",
+					"anachronos-tooltip": "",
+					"asvedon-label": "",
+					"asvedon-tooltip": "",
+					"murozond-label": "",
+					"murozond-tooltip": "",
+					"shockspitter-label": "",
+					"shockspitter-tooltip": "",
+					"parrot-mascot-label": "",
+					"parrot-mascot-tooltip": "",
+					"queensguard-label": "",
+					"queensguard-tooltip": "",
+					"spectral-pillager-label": "",
+					"spectral-pillager-tooltip": "",
 					"lady-darkvein-label": "Lady Dunkelader",
 					"grey-sage-parrot-label": "Grauweisenpapagei",
 					"multicaster-label": "Multiwirkerin",

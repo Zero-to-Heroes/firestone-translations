@@ -67,7 +67,7 @@
 			"stormwind": "스톰윈드",
 			"golden-scholomance": "황금 스칼로맨스 아카데미",
 			"darkmoon-faire": "광기의 다크문 축제",
-			"lettuce": "용병단",
+			"mercenaries": "",
 			"standard-druid": "정규 드루이드",
 			"standard-paladin": "정규 성기사",
 			"standard-warrior": "정규 전사",
@@ -80,11 +80,11 @@
 			"alterac-valley": "알터랙 계곡",
 			"golden-the-barrens": "황금 불모의 땅",
 			"year-of-phoenix": "불사조의 해",
-			"standard-bundle": "정규",
+			"standard-pack": "",
 			"wild-pack": "야생",
-			"golden-standard-bundle": "황금 정규",
-			"golden-stormwind": "황금 스톰윈드",
-			"golden-alterac-valley": "황금 알터랙 계곡",
+			"golden-standard-pack": "",
+			"stormwind-golden": "",
+			"alterac-valley-golden": "",
 			"the-sunken-city": "가라앉은 도시로의 항해",
 			"golden-the-sunken-city": "황금 가라앉은 도시로의 항해"
 		},
@@ -425,6 +425,8 @@
 			"sets": {
 				"coming-soon": "곧 출시됩니다!",
 				"next-guaranteed": "다음 확정",
+				"pity-timer-reset-tooltip": "",
+				"pity-timer-reset-button": "",
 				"in-packs": "{{value}} 팩 중",
 				"browse-set-button": "확장팩 찾기"
 			},
@@ -517,7 +519,8 @@
 				"delete-tooltip": "덱 삭제. 되돌릴 수 없습니다. 숨기고 싶은 것 뿐이라면 보관함에 넣는 것을 고려해보세요."
 			},
 			"deck-details": {
-				"copy-deck-code-button": "덱 코드 복사"
+				"copy-deck-code-button": "덱 코드 복사",
+				"deck-archived": ""
 			},
 			"deck-recap": {
 				"overall-stats-header": "통계 총합",
@@ -737,8 +740,40 @@
 				"faced-tooltip": "{{opponentClass}} 직업을 상대한 {{totalMatches}} 번의 대전 동안 {{winrate}}%의 승률을 보였습니다"
 			},
 			"deckbuilder": {
-				"search-tooltip": {},
-				"warning": {}
+				"choose-your-hero-title": "",
+				"choose-your-hero-power-title": "",
+				"choose-your-signature-treasure-title": "",
+				"build-your-deck-title": "",
+				"go-back-hero": "",
+				"go-back-hero-power": "",
+				"go-back-signature-treasure": "",
+				"ongoing-deck-building": "",
+				"dk-runes-text": "",
+				"dk-runes-tooltip": "",
+				"export-deckcode-button": "",
+				"save-deck-button": "",
+				"deck-saved-info": "",
+				"save-deckcode-button-tooltip": "",
+				"show-buckets-button-label": "",
+				"show-buckets-button-tooltip": "",
+				"bucket-filter-button-tooltip": "",
+				"search-tooltip": {
+					"text": "",
+					"info-1": "",
+					"info-2": "",
+					"info-3": "",
+					"info-4": ""
+				},
+				"warning": {
+					"neutral-hero": "",
+					"loe-hero": ""
+				},
+				"card-offering-rate-tooltip": "",
+				"or": "",
+				"import-deck-button-title": "",
+				"import-deck-button-tooltip": "",
+				"missing-dust-tooltip": "",
+				"part-of-multiple-buckets-tooltip": ""
 			},
 			"empty-state": {
 				"title": "아직 비어있습니다",
@@ -798,31 +833,124 @@
 	},
 	"turn-timer": {},
 	"counters": {
-		"attack": {},
-		"pogo": {},
-		"multicaster": {},
-		"coral-keeper": {},
-		"brilliant-macaw": {},
-		"monstrous-parrot": {},
-		"vanessa": {},
-		"lady-darkvein": {},
-		"grey-sage-parrot": {},
-		"cthun": {},
-		"elemental": {},
-		"elwynn-boar": {},
-		"volatile-skeleton": {},
-		"relic": {},
-		"fatigue": {},
-		"abyssal-curse-2": {},
-		"galakrond": {},
-		"hero-power-damage": {},
-		"jade": {},
-		"libram": {},
-		"si-seven": {},
-		"spell": {},
-		"watchpost": {},
-		"bgs-southsea": {},
-		"bgs-majordomo": {}
+		"attack": {
+			"player": "",
+			"opponent": ""
+		},
+		"pogo": {
+			"player": "",
+			"opponent": ""
+		},
+		"bolner": "",
+		"multicaster": {
+			"player": "",
+			"opponent": ""
+		},
+		"coral-keeper": {
+			"player": ""
+		},
+		"brilliant-macaw": {
+			"player": "",
+			"opponent": ""
+		},
+		"monstrous-parrot": {
+			"player": "",
+			"opponent": ""
+		},
+		"vanessa": {
+			"player": ""
+		},
+		"anachronos": {
+			"player": ""
+		},
+		"bonelord-frostwhisper": {
+			"player": "",
+			"opponent": ""
+		},
+		"asvedon": {
+			"player": ""
+		},
+		"spectral-pillager": {
+			"player": ""
+		},
+		"lady-darkvein": {
+			"player": "",
+			"opponent": ""
+		},
+		"grey-sage-parrot": {
+			"player": "",
+			"opponent": ""
+		},
+		"cthun": {
+			"player": "",
+			"opponent": ""
+		},
+		"elemental": {
+			"player": "",
+			"opponent": ""
+		},
+		"elwynn-boar": {
+			"player": "",
+			"opponent": ""
+		},
+		"volatile-skeleton": {
+			"player": "",
+			"opponent": ""
+		},
+		"relic": {
+			"player": "",
+			"opponent": ""
+		},
+		"fatigue": {
+			"player": "",
+			"opponent": ""
+		},
+		"abyssal-curse-2": {
+			"player": "",
+			"opponent": ""
+		},
+		"galakrond": {
+			"player": "",
+			"opponent": ""
+		},
+		"hero-power-damage": {
+			"player": "",
+			"opponent": ""
+		},
+		"shockspitter": {
+			"player": ""
+		},
+		"jade": {
+			"player": "",
+			"opponent": ""
+		},
+		"libram": {
+			"player": "",
+			"opponent": ""
+		},
+		"si-seven": {
+			"player": "",
+			"opponent": ""
+		},
+		"spell": {
+			"player": "",
+			"opponent": ""
+		},
+		"watchpost": {
+			"player": "",
+			"opponent": ""
+		},
+		"bgs-southsea": {
+			"player": ""
+		},
+		"bgs-majordomo": {
+			"player": ""
+		}
+	},
+	"loading": {
+		"hotkey": "",
+		"getting-ready": "",
+		"ready": ""
 	},
 	"loading": {},
 	"ftue": {
@@ -899,8 +1027,25 @@
 		"board": {}
 	},
 	"duels": {
-		"hero-info": {},
-		"deck-select": {}
+		"hero-info": {
+			"winrate-label": "",
+			"popularity-label": "",
+			"player-matches": "",
+			"your-value-tooltip": "",
+			"community-value-tooltip": "",
+			"win-distribution-header": "",
+			"win-distribution-tooltip": "",
+			"top-decks-header": "",
+			"stats-period": "",
+			"footer": ""
+		},
+		"deck-select": {
+			"copy-deck-tooltip": "",
+			"copy-deck-tooltip-confirmation": "",
+			"personal-deck-text": "",
+			"explore-decks-tooltip": "",
+			"build-deck-tooltip": ""
+		}
 	},
 	"session": {
 		"title": "세션 요약",
@@ -977,10 +1122,141 @@
 			},
 			"modes": {},
 			"opponent-deck": {
-				"counters": {}
+				"tracker-title": "",
+				"show-tracker-label": "",
+				"show-tracker-tooltip": "",
+				"ai-decklist-label": "",
+				"ai-decklist-tooltip": "",
+				"group-cards-by-zone-label": "",
+				"group-cards-by-zone-tooltip": "",
+				"used-cards-go-to-bottom-label": "",
+				"used-cards-go-to-bottom-tooltip": "",
+				"darken-used-cards-label": "",
+				"darken-used-cards-tooltip": "",
+				"global-effects-label": "",
+				"global-effects-tooltip": "",
+				"sort-by-mana-cost-label": "",
+				"sort-by-mana-cost-tooltip": "",
+				"show-bottom-cards-separately-label": "",
+				"show-bottom-cards-separately-tooltip": "",
+				"show-top-cards-separately-label": "",
+				"show-top-cards-separately-tooltip": "",
+				"hide-generated-cards-label": "",
+				"hide-generated-cards-tooltip": "",
+				"show-dk-runes-label": "",
+				"show-dk-runes-tooltip": "",
+				"opponent-hand-title": "",
+				"card-turn-draw-label": "",
+				"card-turn-draw-tooltip": "",
+				"guessed-cards-label": "",
+				"guessed-cards-tooltip": "",
+				"buff-in-hand-label": "",
+				"buff-in-hand-tooltip": "",
+				"secrets-helper-title": "",
+				"enable-secret-helper-label": "",
+				"enable-secret-helper-tooltip": "",
+				"counters": {
+					"title": "",
+					"galakrond-label": "",
+					"galakrond-tooltip": "",
+					"pogo-label": "",
+					"pogo-tooltip": "",
+					"jade-label": "",
+					"jade-tooltip": "",
+					"cthun-label": "",
+					"cthun-tooltip": "",
+					"fatigue-label": "",
+					"fatigue-tooltip": "",
+					"abyssal-curse-label": "",
+					"abyssal-curse-tooltip-2": "",
+					"attack-on-board-label": "",
+					"attack-on-board-tooltip": "",
+					"watch-post-label": "",
+					"watch-post-tooltip": "",
+					"libram-label": "",
+					"libram-tooltip": "",
+					"elwynn-boar-label": "",
+					"elwynn-boar-tooltip": "",
+					"volatile-skeleton-label": "",
+					"volatile-skeleton-tooltip": "",
+					"relic-label": "",
+					"relic-tooltip": "",
+					"hero-power-damage-label": "",
+					"hero-power-damage-tooltip": ""
+				},
+				"size-title": "",
+				"opacity-title": "",
+				"hand-markers-title": ""
 			},
 			"your-deck": {
-				"counters": {}
+				"ignore-decklist-label": "",
+				"ignore-decklist-tooltip": "",
+				"ignore-decklist-confirmation": "",
+				"counters": {
+					"galakrond-tooltip": "",
+					"pogo-tooltip": "",
+					"jade-tooltip": "",
+					"cthun-tooltip": "",
+					"fatigue-tooltip": "",
+					"abyssal-curse-tooltip": "",
+					"attack-on-board-tooltip": "",
+					"number-of-spells-label": "",
+					"number-of-spells-tooltip": "",
+					"elementals-label": "",
+					"elementals-tooltip": "",
+					"watch-post-tooltip": "",
+					"libram-tooltip": "",
+					"elwynn-boar-tooltip": "",
+					"volatile-skeleton-tooltip": "",
+					"relic-tooltip": "",
+					"hero-power-damage-tooltip": "",
+					"bolner-label": "",
+					"bolner-tooltip": "",
+					"brilliant-macaw-label": "",
+					"brilliant-macaw-tooltip": "",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
+					"vanessa-label": "",
+					"vanessa-tooltip": "",
+					"bonelord-frostwhisper-label": "",
+					"bonelord-frostwhisper-tooltip": "",
+					"anachronos-label": "",
+					"anachronos-tooltip": "",
+					"asvedon-label": "",
+					"asvedon-tooltip": "",
+					"murozond-label": "",
+					"murozond-tooltip": "",
+					"shockspitter-label": "",
+					"shockspitter-tooltip": "",
+					"parrot-mascot-label": "",
+					"parrot-mascot-tooltip": "",
+					"queensguard-label": "",
+					"queensguard-tooltip": "",
+					"spectral-pillager-label": "",
+					"spectral-pillager-tooltip": "",
+					"lady-darkvein-label": "",
+					"lady-darkvein-tooltip": "",
+					"grey-sage-parrot-label": "",
+					"grey-sage-parrot-tooltip": "",
+					"multicaster-label": "",
+					"multicaster-tooltip": "",
+					"coral-keeper-label": "",
+					"coral-keeper-tooltip": ""
+				}
+			},
+			"duels": {
+				"title": "",
+				"max-health-label": "",
+				"max-health-tooltip": "",
+				"max-health-option-off": "",
+				"max-health-option-blink": "",
+				"max-health-option-mouseover": "",
+				"show-ooc-tracker-label": "",
+				"show-ooc-tracker-tooltip": "",
+				"show-ooc-hero-info-label": "",
+				"show-ooc-hero-info-tooltip": "",
+				"show-ooc-deck-select-label": "",
+				"show-ooc-deck-select-tooltip": ""
 			},
 			"duels": {},
 			"turn-timer": {}

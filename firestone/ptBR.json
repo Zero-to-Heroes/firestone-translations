@@ -2,6 +2,7 @@
 	"global": {
 		"class": {
 			"all": "Todas as classes",
+			"deathknight": "Cavaleiro da Morte",
 			"demonhunter": "Caçador de Demônios",
 			"druid": "Druida",
 			"hunter": "Caçador",
@@ -28,7 +29,10 @@
 			"casual-duels": "Duelos",
 			"heroic-duels": "Duelos Heroicos",
 			"battlegrounds": "Campos de Batalha",
+			"battlegrounds-friendly": "Campos de Batalha (privados)",
 			"mercenaries": "Mercenários",
+			"mercenaries-pvp": "Mercenários PvP",
+			"mercenaries-pve": "Mercenários PvE",
 			"practice": "Praticar",
 			"casual": "Casual",
 			"friendly": "Amistoso",
@@ -36,18 +40,61 @@
 			"tavern-brawl": "Contenda de Taverna"
 		},
 		"region": {
+			"all": "Todas as regiões",
 			"region_us": "Américas",
 			"region_eu": "Europa",
 			"region_kr": "Ásia-Pacífico",
 			"region_cn": "China"
 		},
-		"set": {},
+		"set": {
+			"hero_skins": "-",
+			"lettuce": "Mercenários",
+			"battlegrounds": "Campos de Batalha",
+			"vanilla": "Clássico",
+			"legacy": "Legado",
+			"core": "Essencial",
+			"naxx": "Maldição de Naxxramas",
+			"gvg": "Goblins vs Gnomos",
+			"brm": "Montanha Rocha Negra",
+			"tgt": "O Grande Torneio",
+			"loe": "Liga dos Exploradores",
+			"og": "Sussurros dos Deuses Antigos",
+			"kara": "Uma Noite em Karazhan",
+			"gangs": "Gangues de Geringontzan",
+			"ungoro": "Jornada a Un'Goro",
+			"icecrown": "Cavaleiros do Trono de Gelo",
+			"lootapalooza": "Kobolds e Catacumbas",
+			"gilneas": "Bosque das Bruxas",
+			"boomsday": "Projeto Cabum",
+			"troll": "Ringue do Rastakhan",
+			"dalaran": "Ascensão das Sombras",
+			"uldum": "Salvadores de Uldum",
+			"dragons": "Despontar dos Dragões",
+			"yod": "O Despertar de Galakrond",
+			"demon_hunter_initiate": "Caçador de Demônios Inicial",
+			"black_temple": "Cinzas de Terralém",
+			"scholomance": "Universidade de Scolomântia",
+			"darkmoon_faire": "Delírios em Negraluna",
+			"darkmoon_races": "Corrida de Negraluna",
+			"the_barrens": "Forjado nos Sertões",
+			"wailing_caverns": "Caverna Ululante",
+			"stormwind": "Juntos em Ventobravo",
+			"deadmines": "Minas Mortas",
+			"alterac_valley": "Divididos no Vale Alterac",
+			"onyxias_lair": "Covil de Onyxia",
+			"the_sunken_city": "Viagem à Cidade Submersa",
+			"throne_of_tides": "Trono das Marés",
+			"revendreth": "Assassinato no Castelo de Nathria",
+			"maw_and_disorder": "Desordem no Tribunal",
+			"return_of_the_lich_king": "Ascensão do Lich Rei"
+		},
 		"pack": {
 			"classic": "Clássico",
 			"goblins-vs-gnomes": "Goblins x Gnomos",
 			"the-grand-tournament": "O Grande Torneio",
 			"old-gods": "Sussurros dos Deuses Antigos",
 			"mean-streets": "Gangues de Geringontzan",
+			"ungoro": "Jornada a Un'Goro",
 			"frozen-throne": "Cavaleiros do Trono de Gelo",
 			"golden-classic-pack": "Clássico Dourado",
 			"kobolds-and-catacombs": "Kobolds e Catacumbas",
@@ -67,7 +114,7 @@
 			"stormwind": "Juntos em Ventobravo",
 			"golden-scholomance": "Universidade de Scolomântia Dourado",
 			"darkmoon-faire": "Delírios em Negraluna",
-			"lettuce": "Mercenários",
+			"mercenaries": "Mercenários",
 			"standard-druid": "Druida Padrão",
 			"standard-paladin": "Paladino Padrão",
 			"standard-warrior": "Guerreiro padrão",
@@ -76,15 +123,16 @@
 			"standard-shaman": "Xamã Padrão",
 			"standard-warlock": "Bruxo Padrão",
 			"standard-demonhunter": "Caçador de Demônios Padrão",
+			"standard-deathknight": "Cavaleiro da Morte Padrão",
 			"golden-darkmoon-faire": "Delírios em Negraluna Dourado",
 			"alterac-valley": "Divididos no Vale Alterac",
 			"golden-the-barrens": "Forjado nos Sertões Dourado",
 			"year-of-phoenix": "Ano da Fênix",
-			"standard-bundle": "Padrão",
+			"standard-pack": "Padrão",
 			"wild-pack": "Livre",
-			"golden-standard-bundle": "Padrão Dourado",
-			"golden-stormwind": "Juntos em Ventobravo Dourado",
-			"golden-alterac-valley": "Divididos no Vale Alterac Dourado",
+			"golden-standard-pack": "Padrão Dourado",
+			"stormwind-golden": "",
+			"alterac-valley-golden": "",
 			"the-sunken-city": "Viagem à Cidade Submersa",
 			"golden-the-sunken-city": "Viagem à Cidade Submersa Dourado"
 		},
@@ -306,38 +354,93 @@
 				"empty-state-subtitle": "Abra um pacote para começar um!",
 				"golden-card": "Dourado {{cardName}}",
 				"diamond-card": "Diamante {{cardName}}",
-				"duplicate-cards": "{{numberOfCards}} cards duplicados"
+				"click-to-expand": "",
+				"duplicate-cards": "{{numberOfCards}} cards duplicados",
+				"dust-potential": "+{{dust}} Potencial de pó arcano"
 			},
 			"card-search": {
 				"search-box-placeholder": "Buscar card...",
+				"search-box-tooltip": "Você pode usar as seguintes palavras-chave na sua pesquisa: texto: (pesquise no texto do card em vez de apenas nome), nome:, cartas: todas (inclui não-colecionáveis), tribo: ",
 				"loading": "Carregando mais cards...",
 				"results-title": "Buscando por {{value}}"
 			},
 			"card-details": {
 				"class": "Classe:",
 				"type": "Tipo:",
-				"types": {},
+				"types": {
+					"minion": "Lacaio",
+					"spell": "Feitiço",
+					"weapon": "Arma",
+					"hero": "Herói",
+					"location": "Lugar"
+				},
 				"set": "Conjunto:",
 				"rarity": "Raridade:",
-				"rarities": {},
-				"factions": {},
+				"rarities": {
+					"free": "Free",
+					"common": "Comum",
+					"rare": "Raro",
+					"epic": "Épico",
+					"legendary": "Lendário"
+				},
+				"race": "Raça:",
+				"faction": "Facção:",
+				"factions": {
+					"alliance": "Aliança",
+					"horde": "Horda",
+					"none": "Nenhum"
+				},
 				"flavor": "Texto ilustrativo:",
+				"sounds-title": "Sons:",
 				"sounds": {
-					"category": {},
+					"category": {
+						"basic": "Básico",
+						"spell": "Feitiços",
+						"emote": "Emotes",
+						"event": "Eventos",
+						"error": "Erros",
+						"disabled": "Desativado",
+						"other": "Outros"
+					},
 					"effect": {
 						"play": "Reproduzir",
 						"death": "Morte",
 						"attack": "Ataque",
+						"picked": "Escolhido",
 						"greetings": "Saudações",
+						"greetings-mirror": "Saudações (partida espelhada)",
 						"greetings-response": "Resposta de Saudações",
 						"well-played": "Bom jogo",
 						"oops": "Opa",
+						"threaten": "Ameaçar",
 						"thanks": "Obrigado",
 						"sorry": "Desculpa",
+						"wow": "Wow",
 						"concede": "Desistir",
+						"start": "Iniciar",
+						"start-mirror": "Iniciar (partida espelhada)",
+						"timer": "Cronômetro",
+						"think": "Pensar",
 						"low-cards": "Poucos Cards",
 						"no-cards": "Sem Cards",
 						"won": "Venceu",
+						"idle": "Ocioso",
+						"error-need-weapon": "Erro Necessário Arma",
+						"error-need-mana": "Erro Necessário Mana",
+						"error-minion-attacked": "Erro Minion Atacado",
+						"error-i-attacked": "Erro Eu já Ataquei",
+						"error-just-played": "Erro Já Jogado",
+						"error-hand-full": "Erro Mão está Cheia",
+						"error-full-minions": "Erro Cheio de Lacaios",
+						"error-stealth": "Erro Furtivo",
+						"error-play": "Erro Jogar",
+						"error-target": "Erro Alvo",
+						"error-taunt": "Erro Provocar",
+						"error-generic": "Erro Genérico",
+						"holiday": "Feriado",
+						"winterveil-greetings": "Saudações do Véu de Inverno",
+						"lunar-new-year": "Ano Novo Lunar",
+						"happy-new-year": "Feliz Ano Novo",
 						"fire-festival": "Festival do Fogo",
 						"pirate-day": "Dia do Pirata"
 					}
@@ -379,6 +482,8 @@
 			"sets": {
 				"coming-soon": "Em breve!",
 				"next-guaranteed": "Próximo garantido",
+				"pity-timer-reset-tooltip": "",
+				"pity-timer-reset-button": "",
 				"in-packs": "Em {{value}} pacotes",
 				"browse-set-button": "Visualizar Conjunto"
 			},
@@ -451,7 +556,46 @@
 				"deck-search": {}
 			},
 			"matchup-info": {
-				"show-as-percent-button-label": "Mostrar em %"
+				"opponents-popularity-header": "",
+				"total-matches-header": "",
+				"win-percent-header": "",
+				"win-total-header": "Vitórias",
+				"win-play-percent-header": "% de Vitórias indo Primeiro",
+				"win-play-total-header": "Vitórias indo Primeiro",
+				"matches-going-first": "Jogou {{totalMatches}} partidas indo primeiro",
+				"win-coin-percent-header": "% de Vitórias indo em segundo",
+				"win-coin-total-header": "Vitórias indo em segundo",
+				"matches-going-second": "Jogou {{totalMatches}} partidas indo em segundo",
+				"total-header": "Total",
+				"show-as-percent-button-label": "Mostrar em %",
+				"reset-button-label": "Zerar as estatísticas",
+				"reset-button-tooltip": "Zerar as estatísticas de vitória/derrota do deck atual. As partidas anteriores ainda aparecerão na aba replay.",
+				"reset-confirmation": "Suas estatísticas de vitória/derrota foram zeradas.",
+				"reset-are-you-sure": "Você tem certeza?",
+				"delete-button-label": "Deletar Deck",
+				"delete-button-step-2": "Deletar",
+				"delete-confirmation": "Isto excluirá permanentemente o deck de todas as suas estatísticas e não poderá ser desfeito.",
+				"delete-tooltip": ""
+			},
+			"deck-details": {
+				"copy-deck-code-button": "",
+				"deck-archived": ""
+			},
+			"deck-recap": {
+				"overall-stats-header": "",
+				"watch-replays-button": "",
+				"best-against": "",
+				"winrate": "",
+				"games": ""
+			},
+			"deck-summary": {
+				"total-games": "",
+				"winrate": "",
+				"last-used": "",
+				"created-on": "",
+				"archive-button-tooltip": "",
+				"restore-button-tooltip": "",
+				"default-deck-name": ""
 			},
 			"deck-details": {},
 			"deck-recap": {},
@@ -654,8 +798,40 @@
 			},
 			"classes-recap": {},
 			"deckbuilder": {
-				"search-tooltip": {},
-				"warning": {}
+				"choose-your-hero-title": "",
+				"choose-your-hero-power-title": "",
+				"choose-your-signature-treasure-title": "",
+				"build-your-deck-title": "",
+				"go-back-hero": "",
+				"go-back-hero-power": "",
+				"go-back-signature-treasure": "",
+				"ongoing-deck-building": "",
+				"dk-runes-text": "",
+				"dk-runes-tooltip": "",
+				"export-deckcode-button": "",
+				"save-deck-button": "",
+				"deck-saved-info": "",
+				"save-deckcode-button-tooltip": "",
+				"show-buckets-button-label": "",
+				"show-buckets-button-tooltip": "",
+				"bucket-filter-button-tooltip": "",
+				"search-tooltip": {
+					"text": "",
+					"info-1": "",
+					"info-2": "",
+					"info-3": "",
+					"info-4": ""
+				},
+				"warning": {
+					"neutral-hero": "",
+					"loe-hero": ""
+				},
+				"card-offering-rate-tooltip": "",
+				"or": "",
+				"import-deck-button-title": "",
+				"import-deck-button-tooltip": "",
+				"missing-dust-tooltip": "",
+				"part-of-multiple-buckets-tooltip": ""
 			},
 			"empty-state": {}
 		},
@@ -699,31 +875,124 @@
 	},
 	"turn-timer": {},
 	"counters": {
-		"attack": {},
-		"pogo": {},
-		"multicaster": {},
-		"coral-keeper": {},
-		"brilliant-macaw": {},
-		"monstrous-parrot": {},
-		"vanessa": {},
-		"lady-darkvein": {},
-		"grey-sage-parrot": {},
-		"cthun": {},
-		"elemental": {},
-		"elwynn-boar": {},
-		"volatile-skeleton": {},
-		"relic": {},
-		"fatigue": {},
-		"abyssal-curse-2": {},
-		"galakrond": {},
-		"hero-power-damage": {},
-		"jade": {},
-		"libram": {},
-		"si-seven": {},
-		"spell": {},
-		"watchpost": {},
-		"bgs-southsea": {},
-		"bgs-majordomo": {}
+		"attack": {
+			"player": "",
+			"opponent": ""
+		},
+		"pogo": {
+			"player": "",
+			"opponent": ""
+		},
+		"bolner": "",
+		"multicaster": {
+			"player": "",
+			"opponent": ""
+		},
+		"coral-keeper": {
+			"player": ""
+		},
+		"brilliant-macaw": {
+			"player": "",
+			"opponent": ""
+		},
+		"monstrous-parrot": {
+			"player": "",
+			"opponent": ""
+		},
+		"vanessa": {
+			"player": ""
+		},
+		"anachronos": {
+			"player": ""
+		},
+		"bonelord-frostwhisper": {
+			"player": "",
+			"opponent": ""
+		},
+		"asvedon": {
+			"player": ""
+		},
+		"spectral-pillager": {
+			"player": ""
+		},
+		"lady-darkvein": {
+			"player": "",
+			"opponent": ""
+		},
+		"grey-sage-parrot": {
+			"player": "",
+			"opponent": ""
+		},
+		"cthun": {
+			"player": "",
+			"opponent": ""
+		},
+		"elemental": {
+			"player": "",
+			"opponent": ""
+		},
+		"elwynn-boar": {
+			"player": "",
+			"opponent": ""
+		},
+		"volatile-skeleton": {
+			"player": "",
+			"opponent": ""
+		},
+		"relic": {
+			"player": "",
+			"opponent": ""
+		},
+		"fatigue": {
+			"player": "",
+			"opponent": ""
+		},
+		"abyssal-curse-2": {
+			"player": "",
+			"opponent": ""
+		},
+		"galakrond": {
+			"player": "",
+			"opponent": ""
+		},
+		"hero-power-damage": {
+			"player": "",
+			"opponent": ""
+		},
+		"shockspitter": {
+			"player": ""
+		},
+		"jade": {
+			"player": "",
+			"opponent": ""
+		},
+		"libram": {
+			"player": "",
+			"opponent": ""
+		},
+		"si-seven": {
+			"player": "",
+			"opponent": ""
+		},
+		"spell": {
+			"player": "",
+			"opponent": ""
+		},
+		"watchpost": {
+			"player": "",
+			"opponent": ""
+		},
+		"bgs-southsea": {
+			"player": ""
+		},
+		"bgs-majordomo": {
+			"player": ""
+		}
+	},
+	"loading": {
+		"hotkey": "",
+		"getting-ready": "",
+		"ready": ""
 	},
 	"loading": {},
 	"ftue": {
@@ -800,8 +1069,25 @@
 		"board": {}
 	},
 	"duels": {
-		"hero-info": {},
-		"deck-select": {}
+		"hero-info": {
+			"winrate-label": "",
+			"popularity-label": "",
+			"player-matches": "",
+			"your-value-tooltip": "",
+			"community-value-tooltip": "",
+			"win-distribution-header": "",
+			"win-distribution-tooltip": "",
+			"top-decks-header": "",
+			"stats-period": "",
+			"footer": ""
+		},
+		"deck-select": {
+			"copy-deck-tooltip": "",
+			"copy-deck-tooltip-confirmation": "",
+			"personal-deck-text": "",
+			"explore-decks-tooltip": "",
+			"build-deck-tooltip": ""
+		}
 	},
 	"session": {
 		"display-mode": {},
@@ -848,10 +1134,141 @@
 			},
 			"modes": {},
 			"opponent-deck": {
-				"counters": {}
+				"tracker-title": "",
+				"show-tracker-label": "",
+				"show-tracker-tooltip": "",
+				"ai-decklist-label": "",
+				"ai-decklist-tooltip": "",
+				"group-cards-by-zone-label": "",
+				"group-cards-by-zone-tooltip": "",
+				"used-cards-go-to-bottom-label": "",
+				"used-cards-go-to-bottom-tooltip": "",
+				"darken-used-cards-label": "",
+				"darken-used-cards-tooltip": "",
+				"global-effects-label": "",
+				"global-effects-tooltip": "",
+				"sort-by-mana-cost-label": "",
+				"sort-by-mana-cost-tooltip": "",
+				"show-bottom-cards-separately-label": "",
+				"show-bottom-cards-separately-tooltip": "",
+				"show-top-cards-separately-label": "",
+				"show-top-cards-separately-tooltip": "",
+				"hide-generated-cards-label": "",
+				"hide-generated-cards-tooltip": "",
+				"show-dk-runes-label": "",
+				"show-dk-runes-tooltip": "",
+				"opponent-hand-title": "",
+				"card-turn-draw-label": "",
+				"card-turn-draw-tooltip": "",
+				"guessed-cards-label": "",
+				"guessed-cards-tooltip": "",
+				"buff-in-hand-label": "",
+				"buff-in-hand-tooltip": "",
+				"secrets-helper-title": "",
+				"enable-secret-helper-label": "",
+				"enable-secret-helper-tooltip": "",
+				"counters": {
+					"title": "",
+					"galakrond-label": "",
+					"galakrond-tooltip": "",
+					"pogo-label": "",
+					"pogo-tooltip": "",
+					"jade-label": "",
+					"jade-tooltip": "",
+					"cthun-label": "",
+					"cthun-tooltip": "",
+					"fatigue-label": "",
+					"fatigue-tooltip": "",
+					"abyssal-curse-label": "",
+					"abyssal-curse-tooltip-2": "",
+					"attack-on-board-label": "",
+					"attack-on-board-tooltip": "",
+					"watch-post-label": "",
+					"watch-post-tooltip": "",
+					"libram-label": "",
+					"libram-tooltip": "",
+					"elwynn-boar-label": "",
+					"elwynn-boar-tooltip": "",
+					"volatile-skeleton-label": "",
+					"volatile-skeleton-tooltip": "",
+					"relic-label": "",
+					"relic-tooltip": "",
+					"hero-power-damage-label": "",
+					"hero-power-damage-tooltip": ""
+				},
+				"size-title": "",
+				"opacity-title": "",
+				"hand-markers-title": ""
 			},
 			"your-deck": {
-				"counters": {}
+				"ignore-decklist-label": "",
+				"ignore-decklist-tooltip": "",
+				"ignore-decklist-confirmation": "",
+				"counters": {
+					"galakrond-tooltip": "",
+					"pogo-tooltip": "",
+					"jade-tooltip": "",
+					"cthun-tooltip": "",
+					"fatigue-tooltip": "",
+					"abyssal-curse-tooltip": "",
+					"attack-on-board-tooltip": "",
+					"number-of-spells-label": "",
+					"number-of-spells-tooltip": "",
+					"elementals-label": "",
+					"elementals-tooltip": "",
+					"watch-post-tooltip": "",
+					"libram-tooltip": "",
+					"elwynn-boar-tooltip": "",
+					"volatile-skeleton-tooltip": "",
+					"relic-tooltip": "",
+					"hero-power-damage-tooltip": "",
+					"bolner-label": "",
+					"bolner-tooltip": "",
+					"brilliant-macaw-label": "",
+					"brilliant-macaw-tooltip": "",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
+					"vanessa-label": "",
+					"vanessa-tooltip": "",
+					"bonelord-frostwhisper-label": "",
+					"bonelord-frostwhisper-tooltip": "",
+					"anachronos-label": "",
+					"anachronos-tooltip": "",
+					"asvedon-label": "",
+					"asvedon-tooltip": "",
+					"murozond-label": "",
+					"murozond-tooltip": "",
+					"shockspitter-label": "",
+					"shockspitter-tooltip": "",
+					"parrot-mascot-label": "",
+					"parrot-mascot-tooltip": "",
+					"queensguard-label": "",
+					"queensguard-tooltip": "",
+					"spectral-pillager-label": "",
+					"spectral-pillager-tooltip": "",
+					"lady-darkvein-label": "",
+					"lady-darkvein-tooltip": "",
+					"grey-sage-parrot-label": "",
+					"grey-sage-parrot-tooltip": "",
+					"multicaster-label": "",
+					"multicaster-tooltip": "",
+					"coral-keeper-label": "",
+					"coral-keeper-tooltip": ""
+				}
+			},
+			"duels": {
+				"title": "",
+				"max-health-label": "",
+				"max-health-tooltip": "",
+				"max-health-option-off": "",
+				"max-health-option-blink": "",
+				"max-health-option-mouseover": "",
+				"show-ooc-tracker-label": "",
+				"show-ooc-tracker-tooltip": "",
+				"show-ooc-hero-info-label": "",
+				"show-ooc-hero-info-tooltip": "",
+				"show-ooc-deck-select-label": "",
+				"show-ooc-deck-select-tooltip": ""
 			},
 			"duels": {},
 			"turn-timer": {}

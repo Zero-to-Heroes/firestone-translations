@@ -114,7 +114,7 @@
 			"stormwind": "暴风城下的集结",
 			"golden-scholomance": "金色通灵学园",
 			"darkmoon-faire": "疯狂的暗月马戏团",
-			"lettuce": "佣兵包",
+			"mercenaries": "佣兵包",
 			"standard-druid": "德鲁伊卡牌包",
 			"standard-paladin": "圣骑士卡牌包",
 			"standard-warrior": "战士卡牌包",
@@ -128,11 +128,11 @@
 			"alterac-valley": "奥特兰克的决裂",
 			"golden-the-barrens": "金色贫瘠之地的锤炼",
 			"year-of-phoenix": "凤凰年卡牌包",
-			"standard-bundle": "标准合集",
+			"standard-pack": "标准模式",
 			"wild-pack": "狂野合集",
-			"golden-standard-bundle": "金色标准合集",
-			"golden-stormwind": "金色暴风城下的集结",
-			"golden-alterac-valley": "金色奥特兰克的决裂",
+			"golden-standard-pack": "金色标准合集",
+			"stormwind-golden": "金色暴风城下的集结",
+			"alterac-valley-golden": "金色奥特兰克的决裂",
 			"the-sunken-city": "探寻沉没之城",
 			"golden-the-sunken-city": "金色探寻沉没之城",
 			"revendreth": "纳斯利亚堡的悬案",
@@ -233,10 +233,13 @@
 			"mercenaries-header": "佣兵战纪",
 			"duels-header": "对决模式",
 			"arena-header": "竞技模式",
+			"tavern-brawl-header": "乱斗模式",
 			"replays-header": "回放",
 			"achievements-header": "成就",
 			"collection-header": "我的收藏",
 			"streams-header": "直播",
+			"mailbox-header": "信箱",
+			"mailbox-text-details": "您有 {{value}} 条未读信息",
 			"stats-header": "个人概况",
 			"go-premium-header": "支持开发者并移除广告",
 			"logged-in-as-header": "以 {{value}} 身份登录",
@@ -549,6 +552,8 @@
 			"sets": {
 				"coming-soon": "敬请期待！",
 				"next-guaranteed": "下一张保底",
+				"pity-timer-reset-tooltip": "",
+				"pity-timer-reset-button": "",
 				"in-packs": "在 {{value}} 个卡牌包中",
 				"browse-set-button": "浏览扩展包",
 				"total-non-golden-cards": "收集的非金色卡总数",
@@ -678,7 +683,8 @@
 				"delete-tooltip": "删除您的套牌。这将无法撤消。如果您只想隐藏它，请考虑将其存档。"
 			},
 			"deck-details": {
-				"copy-deck-code-button": "复制套牌代码"
+				"copy-deck-code-button": "复制套牌代码",
+				"deck-archived": "套牌已存档，但仍计入全局统计。如果您想要忽略它，请排除此版本"
 			},
 			"deck-recap": {
 				"overall-stats-header": "数据总览",
@@ -1086,6 +1092,8 @@
 				"go-back-hero-power": "英雄技能：{{selectedCardName}} - 点击返回英雄技能选择界面",
 				"go-back-signature-treasure": "签名宝藏：{{selectedCardName}} - 点击返回签名宝藏选择界面",
 				"ongoing-deck-building": "构筑中 ({{currentCards}} / {{maxCards}})",
+				"dk-runes-text": "",
+				"dk-runes-tooltip": "",
 				"export-deckcode-button": "复制代码",
 				"save-deck-button": "保存套牌",
 				"deck-saved-info": "套牌已保存",
@@ -1259,10 +1267,17 @@
 			"empty-state-tooltip": "现在没有在线的主播，请稍后再试"
 		},
 		"mailbox": {
-			"category": {}
+			"category": {
+				"inbox": "信箱"
+			}
 		},
 		"tavern-brawl": {
-			"category": {}
+			"category": {
+				"meta": "环境"
+			},
+			"copy-deck-tooltip": "点击复制高胜率套牌到剪贴板",
+			"with-name": "本周的乱斗模式是： {{name}} (开始于 {{date}} )",
+			"no-name": "乱斗模式，开始于 {{date}}"
 		}
 	},
 	"turn-timer": {
@@ -1277,7 +1292,7 @@
 			"opponent": "对手的随从和英雄总场攻为 {{value}}"
 		},
 		"pogo": {
-			"player": "您已使用过 {{value}} 张蹦蹦兔",
+			"player": "您已使用过 {{value}} 张“蹦蹦兔”",
 			"opponent": "对手已使用过 {{value}} 张蹦蹦兔"
 		},
 		"bolner": "本回合使用的第一张战吼牌是{{value}}",
@@ -1299,6 +1314,19 @@
 		"vanessa": {
 			"player": "您的对手使用的上一张牌是 {{value}}"
 		},
+		"anachronos": {
+			"player": ""
+		},
+		"bonelord-frostwhisper": {
+			"player": "",
+			"opponent": ""
+		},
+		"asvedon": {
+			"player": ""
+		},
+		"spectral-pillager": {
+			"player": "“鬼灵匪贼”将造成 {{value}} 点伤害"
+		},
 		"lady-darkvein": {
 			"player": "您使用的上一张暗影法术牌是 {{value}}",
 			"opponent": "您的对手使用的上一张暗影法术牌是 {{value}}"
@@ -1316,12 +1344,12 @@
 			"opponent": "对手上回合使用了 {{lastTurn}} 张元素牌，本回合使用了{{thisTurn}} 张元素牌"
 		},
 		"elwynn-boar": {
-			"player": "您已有 {{value}} 只艾尔文野猪死亡",
-			"opponent": "对手已有 {{value}} 只艾尔文野猪死亡"
+			"player": "您已有 {{value}} 只“艾尔文野猪”死亡",
+			"opponent": "对手已有 {{value}} 只“艾尔文野猪”死亡"
 		},
 		"volatile-skeleton": {
-			"player": "己方-不稳定的骷髅：{{value}}",
-			"opponent": "敌方-不稳定的骷髅：{{value}}"
+			"player": "您已有 {{value}} 个“不稳定的骷髅”死亡",
+			"opponent": "对手已有 {{value}} 个“不稳定的骷髅”死亡"
 		},
 		"relic": {
 			"player": "己方圣物计数：{{value}}",
@@ -1336,12 +1364,15 @@
 			"opponent": "您的深渊诅咒伤害最高已达到 {{value}} 点，对手将在下一回合开始时受到{{totalDamageFromCursesInHand}} 点诅咒伤害"
 		},
 		"galakrond": {
-			"player": "您已祈求迦拉克隆 {{value}} 次",
+			"player": "您已祈求“迦拉克隆” {{value}} 次",
 			"opponent": "对手已祈求迦拉克隆 {{value}} 次"
 		},
 		"hero-power-damage": {
 			"player": "您的英雄技能已造成 {{value}} 点伤害",
 			"opponent": "对手的英雄技能已造成 {{value}} 点伤害"
+		},
+		"shockspitter": {
+			"player": ""
 		},
 		"jade": {
 			"player": "您的青玉魔像大小是 {{value}}",
@@ -1541,7 +1572,10 @@
 			"task-title": "任务 {{taskNumber}}: {{taskTitle}}",
 			"task-progress-label": "进度：",
 			"task-progress-tooltip": "战斗开始时的任务进度",
+			"create-team-button-label": "创建 {{mercName}} 队伍",
+			"create-team-button-tooltip": "根据需要完成的 {{mercName}} 任务创建一支队伍。您可以在设置中配置补位的佣兵。",
 			"create-team-button-ok-label": "复制队伍代码至剪贴板",
+			"task-team-default-name": "{{mercName }} 任务队
 			"roles-chart-button": "角色克制",
 			"turn-counter": {
 				"turns": "回合数",
@@ -1669,7 +1703,7 @@
 			"reposition-button-done": "已完成",
 			"reposition-button-cancel": "取消",
 			"reposition-button-cancelling": "正在取消...",
-			"reposition-button-tooltip": "(BETA) 寻找您的最佳站位。 用时取决于CPU的数量和阵容的复杂程度， 可能需要几分钟，并且将使用大量的CPU和RAM资源。",
+			"reposition-button-tooltip": "(BETA) 寻找您阵容的最佳站位。 用时取决于CPU性能和阵容的复杂程度， 可能需要几分钟，并且将占用大量的CPU和RAM资源。",
 			"reposition-button-tooltip-firstpass": "为每种站位运行少量(~50) 模拟来快速淘汰最差站位",
 			"reposition-button-tooltip-secondpass": "运行一定次数(~250) 的模拟来获得最佳站位",
 			"reposition-button-tooltip-finalresult": "为最佳候选站位运行完整的模拟。这是用时最久的一步，可能需要几分钟",
@@ -1845,6 +1879,7 @@
 			"win-distribution-header": "胜场分布（共 {{value}} 轮）",
 			"win-distribution-tooltip": "胜场的分布情况",
 			"top-decks-header": "高胜套牌（{{value}} 个套牌）",
+			"stats-period": "统计信息开始采集于补丁 {{patchNumber}} ({{patchDate}})",
 			"footer": "鼠标离开英雄头像时按住 Shift 键可防止英雄信息消失"
 		},
 		"deck-select": {
@@ -2136,8 +2171,10 @@
 				"show-bottom-cards-separately-tooltip": "启用此功能，记牌器中将出现一个显示已知牌库底的分区",
 				"show-top-cards-separately-label": "显示牌库顶",
 				"show-top-cards-separately-tooltip": "启用此功能，记牌器中将出现一个显示已知牌库顶的分区",
-				"hide-generated-cards-label": "在其他区域隐藏生成的卡牌",
-				"hide-generated-cards-tooltip": "启用此功能，不在起始套牌中的卡牌将不会出现在其他区域",
+				"hide-generated-cards-label": "隐藏生成的卡片",
+				"hide-generated-cards-tooltip": "隐藏由其他卡牌创建且不在手牌或牌库中的卡牌。警告：禁用此功能会导致某些功能效果残缺，例如卡牌高亮显示",
+				"show-dk-runes-label": "",
+				"show-dk-runes-tooltip": "",
 				"opponent-hand-title": "对手手牌追踪",
 				"card-turn-draw-label": "卡牌获得回合",
 				"card-turn-draw-tooltip": "显示对手手牌中获得卡牌的回合",
@@ -2187,7 +2224,7 @@
 				"ignore-decklist-confirmation": "好的，记牌器将忽略您的牌库",
 				"counters": {
 					"galakrond-tooltip": "显示您祈求迦拉克隆的次数 (仅当您使用迦拉克隆或者祈求牌时显示)",
-					"pogo-tooltip": "显示您已使用的蹦蹦兔次数",
+					"pogo-tooltip": "显示您已使用“蹦蹦兔”的次数",
 					"jade-tooltip": "显示您的青玉魔像当前属性值",
 					"cthun-tooltip": "显示您的克苏恩当前属性值",
 					"fatigue-tooltip": "显示您下次受到的疲劳伤害",
@@ -2202,19 +2239,31 @@
 					"elwynn-boar-tooltip": "显示您已死亡的艾尔文野猪数量",
 					"volatile-skeleton-tooltip": "显示您已死亡的不稳定的骷髅数量",
 					"relic-tooltip": "显示您的下一个恶魔猎手圣物计数",
-					"hero-power-damage-tooltip": "显示本局中您的英雄技能造成的总伤害。 仅当您的牌库或手牌中有“火眼莫德雷斯”或“加亚莱，龙鹰之神”时显示",
+					"hero-power-damage-tooltip": "显示本局中您的英雄技能造成的总伤害。 仅当“火眼莫德雷斯”或“加亚莱，龙鹰之神”在您的牌库或手牌中时显示",
 					"bolner-label": "伯尔纳·锤喙",
 					"bolner-tooltip": "当“伯尔纳·锤喙”在您手牌中时，显示您在本回合中打出的第一张战吼牌（如果有）",
 					"brilliant-macaw-label": "艳丽的金刚鹦鹉",
 					"brilliant-macaw-tooltip": "当“艳丽的金刚鹦鹉”在您手牌中时，显示您使用的上一张战吼牌（如果有）",
 					"monstrous-parrot-label": "巨型鹦鹉",
-					"monstrous-parrot-tooltip": "当您的手牌中有巨型鹦鹉时，显示您最后触发的己方亡语（如果有的话）",
+					"monstrous-parrot-tooltip": "当“巨型鹦鹉”在您的手牌中时，显示您最后触发的己方亡语（如果有的话）",
 					"vanessa-label": "梵妮莎·范克里夫",
 					"vanessa-tooltip": "当“梵妮莎·范克里夫”在您手牌中时，显示对手打出的最后一张卡牌",
+					"bonelord-frostwhisper-label": "",
+					"bonelord-frostwhisper-tooltip": "",
+					"anachronos-label": "",
+					"anachronos-tooltip": "",
+					"asvedon-label": "",
+					"asvedon-tooltip": "",
 					"murozond-label": "永恒巨龙姆诺兹多",
 					"murozond-tooltip": "当“永恒巨龙姆诺兹多”在您手牌中时，显示对手上回合打出的所有卡牌，按打出顺序排序",
+					"shockspitter-label": "",
+					"shockspitter-tooltip": "",
+					"parrot-mascot-label": "吉祥物鹦鹉（拉斯塔哈大乱斗的宝藏牌）",
+					"parrot-mascot-tooltip": "当“吉祥物鹦鹉”在您手牌中时，显示您上回合打出的所有卡牌，按打出顺序排序",
 					"queensguard-label": "女王护卫",
-					"queensguard-tooltip": "当您的手牌中有女王护卫时，显示您在本回合中使用过的法术牌数量",
+					"queensguard-tooltip": "当“女王护卫”在您的手牌中时，显示您在本回合中使用过的法术牌数量",
+					"spectral-pillager-label": "鬼灵匪贼",
+					"spectral-pillager-tooltip": "当“鬼灵匪贼”在您的手牌中时，显示您在本回合中使用过的卡牌数量",
 					"lady-darkvein-label": "暗脉女勋爵",
 					"lady-darkvein-tooltip": "当“暗脉女勋爵”在您手牌中时，显示您使用的上一张暗影法术牌（如果有）",
 					"grey-sage-parrot-label": "灰贤鹦鹉",
