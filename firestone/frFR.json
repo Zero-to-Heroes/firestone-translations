@@ -1092,8 +1092,8 @@
 				"go-back-hero-power": "Pouvoir héroïque : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du pouvoir héroïque",
 				"go-back-signature-treasure": "Trésor spécial : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du trésor spécial",
 				"ongoing-deck-building": "En cours ({{currentCards}} / {{maxCards}})",
-				"dk-runes-text": "",
-				"dk-runes-tooltip": "",
+				"dk-runes-text": "Runes",
+				"dk-runes-tooltip": "Les runes de chevalier de la mort dans votre deck. La construction de deck est restreinte en fonction des runes que vous avez dans votre deck (voir les informations en jeu pour plus de détails)",
 				"export-deckcode-button": "Copier le code",
 				"save-deck-button": "Enregistrer le deck",
 				"deck-saved-info": "Deck enregistré",
@@ -1315,14 +1315,14 @@
 			"player": "La dernière carte que votre adversaire a jouée est {{value}}"
 		},
 		"anachronos": {
-			"player": ""
+			"player": "Les serviteurs reviendront dans {{value}} tour(s)"
 		},
 		"bonelord-frostwhisper": {
-			"player": "",
-			"opponent": ""
+			"player": "Vous mourez dans {{value}} tour(s)",
+			"opponent": "Votre adversaire meurt dans {{value}} tour(s)"
 		},
 		"asvedon": {
-			"player": ""
+			"player": "Le dernier sort que votre adversaire a joué est {{value}}"
 		},
 		"spectral-pillager": {
 			"player": "La pilleuse spectrale infligera {{value}} points de dégâts"
@@ -1372,7 +1372,7 @@
 			"opponent": "Le pouvoir héroïque de votre adversaire a infligé {{value}} dégâts pendant cette partie"
 		},
 		"shockspitter": {
-			"player": ""
+			"player": "Votre prochain crache-foudre infligera {{value}} dégâts"
 		},
 		"jade": {
 			"player": "Votre dernier golem de jade avait {{value}}/{{value}}",
@@ -2198,7 +2198,7 @@
 					"fatigue-label": "Fatigue",
 					"fatigue-tooltip": "Afficher les prochains dégâts de fatigue de votre adversaire",
 					"abyssal-curse-label": "Malédiction abyssale",
-					"abyssal-curse-tooltip-2": "Afficher les dégâts de la malédiction abyssale la plus forte de votre adversaire",
+					"abyssal-curse-tooltip-2": "Afficher les points de dégâts de la malédiction abyssale la plus forte de votre adversaire",
 					"attack-on-board-label": "ATQ sur le plateau",
 					"attack-on-board-tooltip": "Affiche l’ATQ totale des serviteurs + héros sur le plateau de votre adversaire",
 					"watch-post-label": "Postes de guerre",
@@ -2211,8 +2211,8 @@
 					"volatile-skeleton-tooltip": "Afficher le nombre de squelettes volatiles de votre adversaire morts pendant cette partie",
 					"relic-label": "Reliques",
 					"relic-tooltip": "Afficher la puissance de la prochaine relique de chasseur de démons de votre adversaire",
-					"hero-power-damage-label": "Dégâts du pouvoir héroïque",
-					"hero-power-damage-tooltip": "Affiche le total des dégâts infligés par le pouvoir héroïque de votre adversaire pendant cette partie. Il n’apparaît que si la classe de l’adversaire est Mage et qu’il a infligé au moins un point de dégâts"
+					"hero-power-damage-label": "Points de dégâts du pouvoir héroïque",
+					"hero-power-damage-tooltip": "Affiche le total des points de dégâts infligés par le pouvoir héroïque de votre adversaire pendant cette partie. Il n’apparaît que si la classe de l’adversaire est Mage et qu’il a infligé au moins un point de dégâts"
 				},
 				"size-title": "Taille et opacité",
 				"opacity-title": "Opacité",
@@ -2228,7 +2228,7 @@
 					"jade-tooltip": "Afficher la taille actuelle de vos golems de jade",
 					"cthun-tooltip": "Afficher la taille actuelle de votre C’Thun",
 					"fatigue-tooltip": "Afficher vos prochains dégâts de fatigue",
-					"abyssal-curse-tooltip": "Afficher les dégâts de votre malédiction abyssale la plus forte",
+					"abyssal-curse-tooltip": "Afficher les points de dégâts de votre malédiction abyssale la plus forte",
 					"attack-on-board-tooltip": "Afficher l’ATQ totale des serviteurs + héros sur votre plateau",
 					"number-of-spells-label": "Nombre de sorts",
 					"number-of-spells-tooltip": "Afficher le nombre total de sorts que vous avez joués pendant cette partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main",
@@ -2239,7 +2239,7 @@
 					"elwynn-boar-tooltip": "Afficher le nombre de vos sangliers d’Elwynn morts pendant cette partie",
 					"volatile-skeleton-tooltip": "Afficher le nombre de vos squelettes volatiles morts pendant cette partie",
 					"relic-tooltip": "Afficher la puissance de votre prochaine relique de chasseur de démons",
-					"hero-power-damage-tooltip": "Affiche le total des dégâts infligés par votre pouvoir héroïque pendant cette partie. Ne s’affiche que si Mordresh Œil-de-Feu ou Jan’alai, le faucon-dragon sont dans votre deck ou votre main",
+					"hero-power-damage-tooltip": "Affiche le total de points de dégâts infligés par votre pouvoir héroïque pendant cette partie. Ne s’affiche que si Mordresh Œil-de-Feu ou Jan’alai, le faucon-dragon sont dans votre deck ou votre main",
 					"bolner-label": "Bolner Bec-de-Corbin",
 					"bolner-tooltip": "Quand vous avez Bolner Bec-de-Corbin en main, affiche la première carte avec Cri de guerre que vous avez jouée pendant ce tour, s’il y en a une",
 					"brilliant-macaw-label": "Ara brillant",
@@ -2256,8 +2256,8 @@
 					"asvedon-tooltip": "",
 					"murozond-label": "Murozond l’Infini",
 					"murozond-tooltip": "Quand vous avez Murozond l’Infini en main, affiche toutes les cartes que votre adversaire a jouées le dernier tour, dans l'ordre où elles ont été jouées",
-					"shockspitter-label": "",
-					"shockspitter-tooltip": "",
+					"shockspitter-label": "Crache-foudre",
+					"shockspitter-tooltip": "Lorsque vous avez un crache-foudre dans votre deck ou dans votre main, affiche un widget indiquant combien de points de dégâts il va infliger",
 					"parrot-mascot-label": "Mascotte perroquet",
 					"parrot-mascot-tooltip": "Quand vous avez une carte Mascotte perroquet en main, affiche toutes les cartes que vous avez jouées pendant ce tour, dans l'ordre où elles ont été jouées",
 					"queensguard-label": "Garde de la reine",
