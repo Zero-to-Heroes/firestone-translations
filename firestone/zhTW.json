@@ -1372,7 +1372,8 @@
 			"opponent": "你對手的英雄能力在本賽局造成了 {{value}} 點傷害"
 		},
 		"shockspitter": {
-			"player": ""
+			"player": "",
+			"opponent": ""
 		},
 		"jade": {
 			"player": "你的翠玉魔像體質為 {{value}}",
@@ -1624,7 +1625,10 @@
 		"secrets-helper": {
 			"title": "秘密小幫手"
 		},
-		"streamer-mode": {},
+		"streamer-mode": {
+			"you": "",
+			"opponent": ""
+		},
 		"card-burned": "爆牌",
 		"card-transformed": "被轉換的卡",
 		"card-discarded": "棄牌",
@@ -1842,7 +1846,9 @@
 			"warband-stats": {
 				"community-label": "英雄平均排名",
 				"your-label": "當前賽局",
-				"turn-label": "回合"
+				"turn-label": "回合",
+				"stat-label": "",
+				"delta-label": ""
 			}
 		},
 		"overlay-button": {
@@ -1980,6 +1986,7 @@
 					"connect-button-text": "連結",
 					"disconnect-button-text": "連接中斷",
 					"connected-text": "您已登錄",
+					"title": "",
 					"collection-synchronized": "收藏已同步"
 				},
 				"d0nkey": {
@@ -2020,7 +2027,10 @@
 				"logged-in-as-text": "登入身份：",
 				"configuration-title": "直播配置",
 				"delay-label": "直播延遲(毫秒)",
-				"delay-label-tooltip": "將發送到 Twitch 的事件延遲幾毫秒， 如果您的直播被延遲以對抗狙擊，這很有用。"
+				"delay-label-tooltip": "將發送到 Twitch 的事件延遲幾毫秒， 如果您的直播被延遲以對抗狙擊，這很有用。",
+				"other-options-title": "",
+				"appear-on-live-streams-label": "",
+				"appear-on-live-streams-tooltip": ""
 			},
 			"launch": {
 				"launch-on-game-start-label": "啟動遊戲時也啟動Firestone",
@@ -2034,6 +2044,7 @@
 				"hide-release-notes-label": "隱藏程式啟動時顯示的更新說明",
 				"hide-release-notes-tooltip": "不要顯示新版本的更新說明",
 				"allow-games-share-label": "允許遊戲分享",
+				"allow-games-share-tooltip": "",
 				"display-notifications-label": "顯示通知",
 				"display-notifications-tooltip": "切換 toast 通知的全域可見性[bottom-right]，啟動時，您仍然可以在相應的選項中設定每種遊戲模式的通知。",
 				"display-notifications-confirmation": "現在已關閉通知。",
@@ -2058,17 +2069,28 @@
 			},
 			"data": {
 				"remote-title": "遠端資料",
+				"remote-intro-text": "",
 				"packs": "卡包",
+				"packs-tooltip": "",
 				"achievements": "成就",
+				"achievements-tooltip": "",
 				"refresh-button-label": "重新整理",
 				"refresh-progress-button-label": "處理中..."
 			},
 			"quests": {
 				"title": "任務",
+				"enable-quests-label": "",
+				"enable-quests-tooltip": "",
 				"show-when-empty-label": "即使為空也顯示",
+				"show-when-empty-tooltip": "",
 				"show-in-game-label": "在對戰中顯示",
+				"show-in-game-tooltip": "",
 				"constructed-label": "《爐石戰記》",
-				"battlegrounds-label": "英雄戰場"
+				"constructed-tooltip": "",
+				"battlegrounds-label": "英雄戰場",
+				"battlegrounds-tooltip": "",
+				"mercenaries-label": "",
+				"mercenaries-tooltip": ""
 			}
 		},
 		"decktracker": {
@@ -2085,6 +2107,7 @@
 				"minions-play-order": "手下召喚順序",
 				"minions-play-order-tooltip": "顯示手下召喚順序，幫助你解決死亡之聲順序問題(以及所有依據手下入場順序的問題)",
 				"streamer-mode": "直播模式",
+				"streamer-mode-tooltip": "",
 				"show-title-bar": "顯示標題列",
 				"show-title-bar-tooltip": "隱藏/顯示牌組名稱和牌堆、手中剩餘的牌",
 				"show-control-bar": "顯示控制列",
@@ -2108,6 +2131,8 @@
 				"show-unknown-cards-tooltip": "當沒有卡片資料時, 增加\"未知卡牌\"進追蹤器",
 				"highlight-related-cards": "標記相關卡牌",
 				"highlight-related-cards-tooltip": "啟用此功能後，當鼠標停在特定卡牌上時，相關的卡牌會在你的牌組列表中被標記(例如:當鼠標停在「二段跳」時，將會標記牌堆中的所有流放牌)",
+				"discover-help": "",
+				"discover-help-tooltip": "",
 				"close-tracker-on-end": "遊戲結束時關閉追蹤器",
 				"close-tracker-on-end-tooltip": "自動在遊戲結束時關閉追蹤器。如果禁用的話需要手動關閉",
 				"close-tracker-on-end-advanced": "知道了，Firestone將不會對戰結束時關閉記牌器",
@@ -2172,6 +2197,7 @@
 					"cthun-label": "克蘇恩",
 					"cthun-tooltip": "顯示你的對手目前克蘇恩的大小",
 					"fatigue-label": "疲勞",
+					"fatigue-tooltip": "",
 					"abyssal-curse-label": "深淵詛咒",
 					"abyssal-curse-tooltip-2": "顯示你對手最高的深淵詛咒傷害",
 					"attack-on-board-label": "場上攻擊力總和",
@@ -2183,8 +2209,12 @@
 					"elwynn-boar-label": "艾爾文野豬的死亡數量",
 					"elwynn-boar-tooltip": "顯示你對手的艾爾文野豬死亡數量",
 					"volatile-skeleton-label": "易變骷髏死亡數",
+					"volatile-skeleton-tooltip": "",
+					"relic-label": "",
+					"relic-tooltip": "",
 					"hero-power-damage-label": "英雄能力傷害",
-					"hero-power-damage-tooltip": "顯示對手在本賽局英雄能力造成的傷害總量。這只會在對手是法師且造成最少1點傷害時顯示"
+					"hero-power-damage-tooltip": "顯示對手在本賽局英雄能力造成的傷害總量。這只會在對手是法師且造成最少1點傷害時顯示",
+					"shockspitter-tooltip": ""
 				},
 				"size-title": "大小與透明度",
 				"opacity-title": "透明度",
@@ -2199,6 +2229,7 @@
 					"pogo-tooltip": "顯示你已打出的蹦蹦兔數量",
 					"jade-tooltip": "顯示你目前翠玉魔像的體質",
 					"cthun-tooltip": "顯示你目前克蘇恩的體質",
+					"fatigue-tooltip": "",
 					"abyssal-curse-tooltip": "顯示你最高的深淵詛咒傷害",
 					"attack-on-board-tooltip": "顯示你的手下和英雄的攻擊力總和",
 					"number-of-spells-label": "法術施放數量",
@@ -2208,11 +2239,15 @@
 					"watch-post-tooltip": "顯示本賽局中你打出的哨所數量。只有在套牌或手牌中找到相關卡牌時啟動",
 					"libram-tooltip": "顯示本賽局中你打出的聖契數量。只有在套牌或手牌中找到相關卡牌時啟動",
 					"elwynn-boar-tooltip": "顯示你艾爾文野豬的死亡數量",
+					"volatile-skeleton-tooltip": "",
+					"relic-tooltip": "",
 					"hero-power-damage-tooltip": "顯示本賽局中你的英雄技能造成的總傷害。僅在你套牌或手牌中有火眼莫德雷斯或相關卡牌時啟動。",
 					"bolner-label": "包那‧錘喙",
 					"bolner-tooltip": "當你手中有包那‧錘喙且本回合已打出一個戰吼，即啟動",
 					"brilliant-macaw-label": "聰明的金剛鸚鵡",
 					"brilliant-macaw-tooltip": "當你手中有聰明的金剛鸚鵡且本回合已打出一個戰吼，即啟動",
+					"monstrous-parrot-label": "",
+					"monstrous-parrot-tooltip": "",
 					"vanessa-label": "凡妮莎‧范克里夫",
 					"vanessa-tooltip": "當「凡妮莎‧范克里夫」在手中時，顯示對手打出的最後一張牌",
 					"bonelord-frostwhisper-label": "",
@@ -2327,6 +2362,7 @@
 				"show-hero-tooltip-label": "顯示英雄提示工具",
 				"show-hero-tooltip-tooltip": "選擇英雄時，將鼠標停在英雄上會顯示統計數據。",
 				"show-hero-tier-label": "顯示英雄等級",
+				"show-hero-tier-tooltip": "",
 				"show-overlay-button": "顯示覆蓋按鈕",
 				"show-overlay-button-tooltip": "顯示一個可用來控制插件視窗的按鈕並覆蓋在遊戲上，你可以用這個按鈕取代快捷鍵",
 				"popup-post-match-stats-label": "彈出賽後統計數據",
@@ -2363,6 +2399,8 @@
 				"minions-list-show-on-mouse-over-label": "滑鼠停留其上時顯示手下列表",
 				"minions-list-show-on-mouse-over-tooltip": "未啟用時, 你必須點擊酒館等級的圖示以顯示手下列表",
 				"minions-list-show-on-mouse-over-confirmation": "收到，將只會在您點擊星星時顯示詳細手下資訊",
+				"minions-list-group-minions-into-tribes-label": "",
+				"minions-list-group-minions-into-tribes-tooltip": "",
 				"minions-list-show-tribes-highlight-label": "將種族標記",
 				"minions-list-show-tribes-highlight-tooltip": "當旅店出現相同種族手下時，標記它",
 				"minions-list-show-mechanics-highlight-label": "",
@@ -2386,6 +2424,8 @@
 				"label-tooltip": "顯示最近的戰局。這對主播很有用",
 				"show-groups": "顯示群組資訊",
 				"show-groups-tooltip": "按最終名次分類最近的戰局",
+				"hide-when-friends-list-open": "",
+				"hide-when-friends-list-open-tooltip": "",
 				"show-matches": "顯示最近的戰局",
 				"show-matches-tooltip": "顯示最近的戰局",
 				"number-of-matches": "場數",
@@ -2401,6 +2441,7 @@
 			"notifications": {
 				"title": "當你看到成就通知時更新",
 				"achievements-enabled-text": "啟用成就系統",
+				"achievements-enabled-tooltip": "",
 				"firestone-achievements-text": "啟用Firestone專屬成就",
 				"firestone-achievements-tooltip": "啟用Firestone專屬成就追蹤",
 				"show-notifications-text": "顯示通知",
@@ -2435,11 +2476,17 @@
 				"synergies-label": "標記連動卡牌",
 				"synergies-tooltip": "當鼠標停在技能或裝備上(在隊伍小工具中)或寶藏(在寶藏選擇介面時)，隊伍小工具會標記與其有連動的所有卡牌",
 				"turn-counter-battle-label": "對戰回合計數器",
+				"turn-counter-battle-tooltip": "",
 				"your-team": "你的隊伍",
 				"opponent-team": "對手隊伍",
 				"action-queue": "行動隊列"
 			},
-			"quests": {}
+			"quests": {
+				"title": "",
+				"explanation": "",
+				"search-box-placeholder": "",
+				"empty-team": ""
+			}
 		},
 		"replays": {
 			"menu": {
@@ -2449,7 +2496,10 @@
 		}
 	},
 	"twitch": {
+		"adaptative-scaling": "",
+		"adaptative-scaling-tooltip": "",
 		"scale": "尺寸",
+		"scale-tooltip": "",
 		"move-magnifier-icon-on-top": "顯示對手陣容圖標",
 		"move-magnifier-icon-on-top-tooltip": "在排行榜上方顯示對手陣容圖標",
 		"constructed-section-title": "構築",
@@ -2471,6 +2521,15 @@
 		"last-board-size": "上個檯面的大小",
 		"last-board-size-tooltip": "更改當鼠標停在排行榜英雄頭像上顯示的陣容大小。",
 		"hide-battle-odds-in-combat": "在戰鬥階段隱藏戰鬥模擬",
-		"options": {}
+		"hide-battle-odds-in-combat-tooltip": "",
+		"hide-battle-odds-in-tavern": "",
+		"hide-battle-odds-in-tavern-tooltip": "",
+		"hide-battle-odds-when-empty": "",
+		"hide-battle-odds-when-empty-tooltip": "",
+		"options": {
+			"auto": "",
+			"true": "",
+			"false": ""
+		}
 	}
 }

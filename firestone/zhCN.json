@@ -552,8 +552,8 @@
 			"sets": {
 				"coming-soon": "敬请期待！",
 				"next-guaranteed": "下一张保底",
-				"pity-timer-reset-tooltip": "",
-				"pity-timer-reset-button": "",
+				"pity-timer-reset-tooltip": "重置此卡包的计数器会忽略此前已开过的所有此卡包，并重置您的下一张保底史诗/传说卡牌期望。",
+				"pity-timer-reset-button": "重置计数器",
 				"in-packs": "在 {{value}} 个卡牌包中",
 				"browse-set-button": "浏览扩展包",
 				"total-non-golden-cards": "收集的非金色卡总数",
@@ -1092,8 +1092,8 @@
 				"go-back-hero-power": "英雄技能：{{selectedCardName}} - 点击返回英雄技能选择界面",
 				"go-back-signature-treasure": "签名宝藏：{{selectedCardName}} - 点击返回签名宝藏选择界面",
 				"ongoing-deck-building": "构筑中 ({{currentCards}} / {{maxCards}})",
-				"dk-runes-text": "",
-				"dk-runes-tooltip": "",
+				"dk-runes-text": "死亡骑士符文",
+				"dk-runes-tooltip": "您的套牌的死亡骑士符文。套牌构筑将受限于您当前套牌带有的符文类型（详见游戏内信息）",
 				"export-deckcode-button": "复制代码",
 				"save-deck-button": "保存套牌",
 				"deck-saved-info": "套牌已保存",
@@ -1315,14 +1315,14 @@
 			"player": "您的对手使用的上一张牌是 {{value}}"
 		},
 		"anachronos": {
-			"player": ""
+			"player": "随从将会在 {{value}} 个回合后返回"
 		},
 		"bonelord-frostwhisper": {
-			"player": "",
-			"opponent": ""
+			"player": "您的英雄将会在 {{value}} 个回合后死亡",
+			"opponent": "您的对手将会在 {{value}} 个回合后死亡"
 		},
 		"asvedon": {
-			"player": ""
+			"player": "您的对手使用的上一张法术牌是 {{value}}"
 		},
 		"spectral-pillager": {
 			"player": "“鬼灵匪贼”将造成 {{value}} 点伤害"
@@ -1372,7 +1372,8 @@
 			"opponent": "对手的英雄技能已造成 {{value}} 点伤害"
 		},
 		"shockspitter": {
-			"player": ""
+			"player": "您的“啸雷龙鹰”将造成 {{value}} 点伤害",
+			"opponent": "对手的“哮雷龙鹰”将造成 {{value}} 点伤害"
 		},
 		"jade": {
 			"player": "您的青玉魔像大小是 {{value}}",
@@ -2173,8 +2174,8 @@
 				"show-top-cards-separately-tooltip": "启用此功能，记牌器中将出现一个显示已知牌库顶的分区",
 				"hide-generated-cards-label": "隐藏生成的卡片",
 				"hide-generated-cards-tooltip": "隐藏由其他卡牌创建且不在手牌或牌库中的卡牌。警告：禁用此功能会导致某些功能效果残缺，例如卡牌高亮显示",
-				"show-dk-runes-label": "",
-				"show-dk-runes-tooltip": "",
+				"show-dk-runes-label": "显示死亡骑士符文",
+				"show-dk-runes-tooltip": "在记牌器顶端添加一栏显示当前套牌已知的死亡骑士符文",
 				"opponent-hand-title": "对手手牌追踪",
 				"card-turn-draw-label": "卡牌获得回合",
 				"card-turn-draw-tooltip": "显示对手手牌中获得卡牌的回合",
@@ -2212,7 +2213,8 @@
 					"relic-label": "圣物",
 					"relic-tooltip": "显示对手的下一个恶魔猎手圣物计数",
 					"hero-power-damage-label": "英雄技能伤害",
-					"hero-power-damage-tooltip": "显示对手的英雄技能在本局中造成的总伤害。 它仅在对方是法师且使用英雄技能造成至少1点伤害时显示"
+					"hero-power-damage-tooltip": "显示对手的英雄技能在本局中造成的总伤害。 它仅在对方是法师且使用英雄技能造成至少1点伤害时显示",
+					"shockspitter-tooltip": "显示当前对局中对手攻击的次数。仅当对手是猎人且已至少攻击过一次时显示。"
 				},
 				"size-title": "大小和透明度",
 				"opacity-title": "透明度",
@@ -2248,16 +2250,16 @@
 					"monstrous-parrot-tooltip": "当“巨型鹦鹉”在您的手牌中时，显示您最后触发的己方亡语（如果有的话）",
 					"vanessa-label": "梵妮莎·范克里夫",
 					"vanessa-tooltip": "当“梵妮莎·范克里夫”在您手牌中时，显示对手打出的最后一张卡牌",
-					"bonelord-frostwhisper-label": "",
-					"bonelord-frostwhisper-tooltip": "",
-					"anachronos-label": "",
-					"anachronos-tooltip": "",
-					"asvedon-label": "",
-					"asvedon-tooltip": "",
+					"bonelord-frostwhisper-label": "白骨领主霜语",
+					"bonelord-frostwhisper-tooltip": "在打出“白骨领主霜语”后，追踪剩余存活回合数",
+					"anachronos-label": "阿纳克洛斯",
+					"anachronos-tooltip": "在打出“阿纳克洛斯”后，追踪随从返回战场的回合数",
+					"asvedon-label": "巨盾卫士阿斯维顿",
+					"asvedon-tooltip": "当“巨盾卫士阿斯维顿”在您手牌中时，显示对手打出的最后一张法术牌",
 					"murozond-label": "永恒巨龙姆诺兹多",
 					"murozond-tooltip": "当“永恒巨龙姆诺兹多”在您手牌中时，显示对手上回合打出的所有卡牌，按打出顺序排序",
-					"shockspitter-label": "",
-					"shockspitter-tooltip": "",
+					"shockspitter-label": "哮雷龙鹰",
+					"shockspitter-tooltip": "当“哮雷龙鹰”在您牌库或手牌中时，显示其可造成的伤害",
 					"parrot-mascot-label": "吉祥物鹦鹉（拉斯塔哈大乱斗的宝藏牌）",
 					"parrot-mascot-tooltip": "当“吉祥物鹦鹉”在您手牌中时，显示您上回合打出的所有卡牌，按打出顺序排序",
 					"queensguard-label": "女王护卫",

@@ -552,8 +552,8 @@
 			"sets": {
 				"coming-soon": "Prochainement !",
 				"next-guaranteed": "Prochaine",
-				"pity-timer-reset-tooltip": "",
-				"pity-timer-reset-button": "",
+				"pity-timer-reset-tooltip": "Réinitialiser le compteur de pitié (pity timer) pour ce paquet ignorera tous les paquets ouverts avant lors du calcul de votre prochaine carte épique ou légendaire garantie.",
+				"pity-timer-reset-button": "Réinitialiser les compteurs",
 				"in-packs": "Dans {{value}} paquets",
 				"browse-set-button": "Parcourir",
 				"total-non-golden-cards": "Total de vos cartes non dorées",
@@ -854,9 +854,9 @@
 					"last-warbands": {
 						"title": "{{value}} dernières parties",
 						"damage-dealt": "Dégâts infligés",
-						"damage-dealt-tooltip": "Dégâts totaux infligés par chaque serviteur. Les dégâts pour les serviteurs avec le même nom sont regroupés, et non divisés par serviteur",
+						"damage-dealt-tooltip": "Points de dégâts totaux infligés par chaque serviteur. Les points de dégâts pour les serviteurs avec le même nom sont regroupés, et non divisés par serviteur",
 						"damage-taken": "Dégâts subis",
-						"damage-taken-tooltip": "Dégâts totaux reçus par chaque serviteur. Les dégâts pour les serviteurs avec le même nom sont regroupés, et non divisés par serviteur",
+						"damage-taken-tooltip": "Points de dégâts totaux reçus par chaque serviteur. Les points de dégâts pour les serviteurs avec le même nom sont regroupés, et non divisés par serviteur",
 						"empty-state-message": "Commencez à jouer à Champs de bataille avec ce héros pour collecter des informations",
 						"finished-position": "Terminé {{value}}",
 						"last-board": "Dernière troupe de guerre",
@@ -901,11 +901,11 @@
 						"score": "Score"
 					},
 					"rows": {
-						"total-dmg-dealt-minions": "Dégâts totaux infligés (serviteurs)",
-						"total-dmg-taken-minions": "Dégâts totaux reçus (serviteurs)",
-						"total-dmg-dealt-hero": "Dégâts totaux infligés (héros)",
+						"total-dmg-dealt-minions": "Pts de dégâts totaux infligés (serviteurs)",
+						"total-dmg-taken-minions": "Pts de dégâts totaux reçus (serviteurs)",
+						"total-dmg-dealt-hero": "Pts de dégâts totaux infligés (héros)",
 						"total-dmg-dealt-hero-tooltip": "N’inclut pas les combats contre Kel’Thuzad",
-						"max-dmg-dealt-hero": "Dégâts max infligés (héros)",
+						"max-dmg-dealt-hero": "Pts de dégâts max infligés (héros)",
 						"max-dmg-dealt-hero-tooltip": "N’inclut pas les combats contre Kel’Thuzad",
 						"win-streak": "Meilleure série de victoires",
 						"triples": "Triples créés",
@@ -1322,18 +1322,18 @@
 			"opponent": "Votre adversaire meurt dans {{value}} tour(s)"
 		},
 		"asvedon": {
-			"player": "Le dernier sort que votre adversaire a joué est {{value}}"
+			"player": "Le dernier sort que votre adversaire a lancé est {{value}}"
 		},
 		"spectral-pillager": {
 			"player": "La pilleuse spectrale infligera {{value}} points de dégâts"
 		},
 		"lady-darkvein": {
-			"player": "Le dernier sort d’Ombre que vous avez joué est {{value}}",
-			"opponent": "Le dernier sort d’Ombre que votre adversaire a joué est {{value}}"
+			"player": "Le dernier sort d’Ombre que vous avez lancé est {{value}}",
+			"opponent": "Le dernier sort d’Ombre que votre adversaire a lancé est {{value}}"
 		},
 		"grey-sage-parrot": {
-			"player": "{{value}} est le dernier sort qui a coûté {{cost}} ou plus que vous avez joué",
-			"opponent": "{{value}} est le dernier sort qui a coûté {{cost}} ou plus que votre adversaire a joué"
+			"player": "{{value}} est le dernier sort qui a coûté {{cost}} ou plus que vous avez lancé",
+			"opponent": "{{value}} est le dernier sort qui a coûté {{cost}} ou plus que votre adversaire a lancé"
 		},
 		"cthun": {
 			"player": "Votre C’Thun a {{value}}/{{value}}",
@@ -1369,10 +1369,11 @@
 		},
 		"hero-power-damage": {
 			"player": "Votre pouvoir héroïque a infligé {{value}} points de dégâts pendant cette partie",
-			"opponent": "Le pouvoir héroïque de votre adversaire a infligé {{value}} dégâts pendant cette partie"
+			"opponent": "Le pouvoir héroïque de votre adversaire a infligé {{value}} points de dégâts pendant cette partie"
 		},
 		"shockspitter": {
-			"player": "Votre prochain crache-foudre infligera {{value}} dégâts"
+			"player": "Votre prochain crache-foudre infligera {{value}} points de dégâts",
+			"opponent": "Le prochain crache-foudre de votre adversaire infligera {{value}} points de dégâts"
 		},
 		"jade": {
 			"player": "Votre dernier golem de jade avait {{value}}/{{value}}",
@@ -1617,7 +1618,7 @@
 		},
 		"stats": {
 			"deck-winrate": "% victoires",
-			"deck-winrate-tooltip": "Taux de victoires de ce deck en Partie classée depuis {{value}}",
+			"deck-winrate-tooltip": "Taux de victoires de ce deck en Partie classée depuis le {{value}}",
 			"deck-winrate-vs-class": "VS {{value}}",
 			"deck-winrate-vs-class-tooltip": "Taux de victoires de ce deck en Partie classée contre {{opponent}} depuis le {{date}}"
 		},
@@ -2173,8 +2174,8 @@
 				"show-top-cards-separately-tooltip": "Afficher les cartes connues du dessus du deck séparément du deck principal",
 				"hide-generated-cards-label": "Masquer les cartes générées",
 				"hide-generated-cards-tooltip": "Masquer les cartes qui ont été créées par d’autres cartes et qui ne sont pas dans la main ou dans le deck. ATTENTION : la désactivation de cette option peut dégrader certaines fonctionnalités, comme la surbrillance des cartes",
-				"show-dk-runes-label": "",
-				"show-dk-runes-tooltip": "",
+				"show-dk-runes-label": "Afficher les runes",
+				"show-dk-runes-tooltip": "Ajouter une section en haut du decktracker affichant les runes de chevalier de la mort connues dans le deck",
 				"opponent-hand-title": "Suivi de la main de l’adversaire",
 				"card-turn-draw-label": "Tour de pioche",
 				"card-turn-draw-tooltip": "Afficher le tour où une carte dans la main de votre adversaire a été piochée",
@@ -2212,7 +2213,8 @@
 					"relic-label": "Reliques",
 					"relic-tooltip": "Afficher la puissance de la prochaine relique de chasseur de démons de votre adversaire",
 					"hero-power-damage-label": "Points de dégâts du pouvoir héroïque",
-					"hero-power-damage-tooltip": "Affiche le total des points de dégâts infligés par le pouvoir héroïque de votre adversaire pendant cette partie. Il n’apparaît que si la classe de l’adversaire est Mage et qu’il a infligé au moins un point de dégâts"
+					"hero-power-damage-tooltip": "Affiche le total des points de dégâts infligés par le pouvoir héroïque de votre adversaire pendant cette partie. Il n’apparaît que si la classe de l’adversaire est Mage et qu’il a infligé au moins un point de dégâts",
+					"shockspitter-tooltip": "Affiche le nombre de fois que votre adversaire a attaqué pendant cette partie. Il n’apparaît que si la classe de l’adversaire est chasseur et qu’il a attaqué au moins une fois"
 				},
 				"size-title": "Taille et opacité",
 				"opacity-title": "Opacité",
@@ -2248,12 +2250,12 @@
 					"monstrous-parrot-tooltip": "Quand vous avez un perroquet monstrueux en main, affiche le dernier Râle d’agonie allié qui s’est déclenché, s’il y en a eu",
 					"vanessa-label": "Vanessa VanCleef",
 					"vanessa-tooltip": "Quand vous avez Vanessa VanCleef en main, affiche la dernière carte que votre adversaire a jouée",
-					"bonelord-frostwhisper-label": "",
-					"bonelord-frostwhisper-tooltip": "",
-					"anachronos-label": "",
-					"anachronos-tooltip": "",
-					"asvedon-label": "",
-					"asvedon-tooltip": "",
+					"bonelord-frostwhisper-label": "Seigneur-des-ossements Murmegivre",
+					"bonelord-frostwhisper-tooltip": "Une fois que le Seigneur-des-ossements Murmegivre a été joué, affiche le nombre de tours restants à vivre",
+					"anachronos-label": "Anachronos",
+					"anachronos-tooltip": "Après avoir joué Anachronos, affiche le nombre de tours restants avant que les serviteurs reviennent",
+					"asvedon-label": "Asvedon, le grand bouclier",
+					"asvedon-tooltip": "Quand vous avez Asvedon, le grand bouclier en main, affiche le dernier sort que votre adversaire a lancé",
 					"murozond-label": "Murozond l’Infini",
 					"murozond-tooltip": "Quand vous avez Murozond l’Infini en main, affiche toutes les cartes que votre adversaire a jouées le dernier tour, dans l'ordre où elles ont été jouées",
 					"shockspitter-label": "Crache-foudre",
@@ -2265,9 +2267,9 @@
 					"spectral-pillager-label": "Pilleuse spectrale",
 					"spectral-pillager-tooltip": "Quand vous avez une pilleuse spectrale en main, affiche le nombre de cartes que vous avez jouées pendant ce tour",
 					"lady-darkvein-label": "Dame Sombreveine",
-					"lady-darkvein-tooltip": "Quand vous avez Dame Sombreveine en main, affiche le dernier sort de l'Ombre que vous avez joué, s’il y en a un",
+					"lady-darkvein-tooltip": "Quand vous avez Dame Sombreveine en main, affiche le dernier sort de l'Ombre que vous avez lancé, s’il y en a un",
 					"grey-sage-parrot-label": "Perroquet gris cendré",
-					"grey-sage-parrot-tooltip": "Quand vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte (5) cristaux ou plus que vous avez joué, s’il y en a un",
+					"grey-sage-parrot-tooltip": "Quand vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte (5) cristaux ou plus que vous avez lancé, s’il y en a un",
 					"multicaster-label": "Écoles de sorts",
 					"multicaster-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
 					"coral-keeper-label": "Sentinelle des coraux",
