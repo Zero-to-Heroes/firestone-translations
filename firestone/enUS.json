@@ -87,7 +87,8 @@
 			"revendreth": "Murder at Castle Nathria",
 			"maw_and_disorder": "Maw and Disorder",
 			"return_of_the_lich_king": "March of the Lich King",
-			"path_of_arthas": "Path of Arthas"
+			"path_of_arthas": "Path of Arthas",
+			"tb": "Tavern Brawl"
 		},
 		"pack": {
 			"classic": "Classic",
@@ -427,7 +428,8 @@
 					"spell": "Spell",
 					"weapon": "Weapon",
 					"hero": "Hero",
-					"location": "Location"
+					"location": "Location",
+					"enchantment": "Enchantment"
 				},
 				"set": "Set:",
 				"rarity": "Rarity:",
@@ -909,6 +911,7 @@
 						"total-dmg-dealt-hero-tooltip": "Doesn't include fights against the ghost",
 						"max-dmg-dealt-hero": "Max dmg dealt (hero)",
 						"max-dmg-dealt-hero-tooltip": "Doesn't include fights against the ghost",
+						"total-stats-tooltip": "The maximum total stats (attack + health) of your board at the beginning of a battle",
 						"win-streak": "Highest Win streak",
 						"triples": "Triples created",
 						"board-stats": "Max board stats",
@@ -1428,7 +1431,7 @@
 			},
 			"duels": {
 				"title": "Duels",
-				"text": "Check global and personal stats, and see a selection of succesful decks for both Casual and Heroic Duels."
+				"text": "Check global and personal stats, and see a selection of successful decks for both Casual and Heroic Duels."
 			},
 			"arena": {
 				"title": "Arena",
@@ -1762,7 +1765,8 @@
 			"turn-winrate": "Winrate per turn",
 			"turn-winrate-tooltip": "Battle winrate per turn (it gives you an indication of when this hero is the strongest)",
 			"winning-tribes-title": "Top winning tribes",
-			"winning-tribes-title-tooltip": "Percentage of each tribe present in average in top 4 warbands"
+			"winning-tribes-title-tooltip": "Percentage of each tribe present in average in top 4 warbands",
+			"place": "Place: {{value}}"
 		},
 		"turn-counter": {},
 		"hero-selection": {
@@ -1970,7 +1974,29 @@
 				"third-party": "Third parties",
 				"broadcast": "Twitch",
 				"quests": "Quests",
+				"mods": "Mods",
 				"data": "Data"
+			},
+			"mods": {
+				"title": "Mods",
+				"warning": "WARNING: mods modify how the game itself behaves, and as such are against the game's Terms of Service, and could get you banned, though I haven't heard of such cases. The mods listed below are ones that *I think* are safe to use, but you never know.",
+				"instructions-link": "Getting Started",
+				"instructions": "Please read the {{link}} for all the necessary details.",
+				"game-location-placeholder": "Game install location",
+				"check-mods-title": "1. Check mod engine",
+				"check-mods-description": "Check whether mods are already active, and whether your game path is properly configured.",
+				"enable-mods-title": "2. Enable mods",
+				"enable-mods-description": "Mods are currently disabled. Click to enable mod support. It will download the mod engine and configure everything, so it might take a short while.",
+				"disable-mods-description": "Mods are currently enabled. Click to disable mod support. It will remove the mod engine and its configuration, but the mod files won't be deleted (in case you want to reactivate them). See the wiki for instructions on how to completely delete everything.",
+				"check-mods": "Check",
+				"enable-mods": "Enable mods",
+				"disable-mods": "Disable mods",
+				"game-running-error": "Hearthstone is currently running. Please close it before enabling / disabling mods.",
+				"refresh-engine": "Refresh engine",
+				"refresh-engine-tooltip": "After each Hearthstone client patch, you will need to refresh the engine (or disable mods altogether), otherwise the game will fail to start.",
+				"add-mods-title": "3. Add mods",
+				"add-mods-description": "Find some mods, and follow the instructions from the {{link}} guide to install them (which also contains a list of a few mods that I think are safe to use).",
+				"installed-mods-description": "The following mods are installed (delete the corresponding file in Hearthstone/Mods to uninstall them):"
 			},
 			"third-party": {
 				"intro": "We believe that your data belongs to you, and that you should be able to synchronize it to other third party websites and help them do whatever they do best with it. We don't get paid for this, but we do get some exposure since they then talk about us :)",
@@ -2047,6 +2073,10 @@
 				"hide-release-notes-tooltip": "Don't show the new release notes for the new Firestone version",
 				"allow-games-share-label": "Allow games sharing",
 				"allow-games-share-tooltip": "Allow the app to showcase your games (and decklist). The share will be anonymous, but if you're working on secret decklists, you might want to turn that off.",
+				"enable-mailbox-label": "Enable Mailbox",
+				"enable-mailbox-tooltip": "Show the Mailbox menu, which lets you access the latest important Hearthstone news in-app.",
+				"enable-mailbox-unread-label": "Show unread mailbox",
+				"enable-mailbox-unread-tooltip": "Show a red dot on the Mailbox icon when you have unread messages.",
 				"display-notifications-label": "Display notifications",
 				"display-notifications-tooltip": "Toggles global visibility of toast notifications [bottom-right]. When active, you can still configure notifications per game mode in the corresponding tabs",
 				"display-notifications-confirmation": "Notifications now TURNED OFF globally.",
@@ -2126,7 +2156,7 @@
 				"show-matchup-winrate": "Show matchup winrate",
 				"show-matchup-winrate-tooltip": "Show the deck overall Ranked winrate against the opponent's class above the tracker, if we have data (in either Standard or Wild, based on the current game mode)",
 				"show-gifts-separately": "Show gifts separately",
-				"show-gifts-separately-tooltip": "Display cards that have been created in their own lines (one line for each different creator)",
+				"show-gifts-separately-tooltip": "Display cards that have been created in their own lines (one line for each different creator). Doesn't work in the Legacy display mode.",
 				"reset-deck-position-after-trade": "Reset position after trade",
 				"reset-deck-position-after-trade-tooltip": "After trading a Tradeable card, that card could in theory be place at the bottom of the deck. So by default, when a Trade happens, the \"Top of Deck\" and \"Bottom of Deck\" sections are cleared. Toggle this option off if you want the sections to keep their previous values even after a Trade.",
 				"show-stats-change": "Show stats change",
@@ -2164,8 +2194,8 @@
 				"show-tracker-tooltip": "When active, a tracker will show for your opponent's cards",
 				"ai-decklist-label": "Load AI decklists",
 				"ai-decklist-tooltip": "When active, the tracker will try to load the decklist of the current AI opponent. Be aware that some decks are pseudo random, so the decklist will often be only indicative",
-				"group-cards-by-zone-label": "Group cards by zone",
-				"group-cards-by-zone-tooltip": "When active, the tracker will split the cards into collapsable sections. The sections active today are Deck, Hand and Other",
+				"group-cards-by-zone-label": "Modern tracker",
+				"group-cards-by-zone-tooltip": "When active, the tracker will split the cards into collapsable sections (Deck, Hand and Other), which enable some new features. Turn that off to use the Legacy display mode, where all cards are grouped together in a single section",
 				"used-cards-go-to-bottom-label": "Used cards go to bottom",
 				"used-cards-go-to-bottom-tooltip": "When active, the cards that have been used are shown at the bottom of the list. It can only be activated if the Group cards by zone option is disabled",
 				"darken-used-cards-label": "Darken used cards",
@@ -2179,7 +2209,7 @@
 				"show-top-cards-separately-label": "Show top cards",
 				"show-top-cards-separately-tooltip": "Show the known cards at the top of the deck separately from the main deck",
 				"hide-generated-cards-label": "Hide generated cards",
-				"hide-generated-cards-tooltip": "Hide cards that were created by other cards and that are not in hand or in deck. WARNING: deactivating this can cause some features to work in a degraded mode, like card highlights",
+				"hide-generated-cards-tooltip": "Hide cards that were created by other cards and that are not in hand or in deck. WARNING: hiding generated cards can cause some features to work in a degraded mode, like card highlights",
 				"show-dk-runes-label": "Show DK runes",
 				"show-dk-runes-tooltip": "Add a section at the top of the tracker showing the known Death Knights runes in the deck",
 				"opponent-hand-title": "Opponent hand tracking",
