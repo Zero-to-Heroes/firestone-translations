@@ -206,7 +206,8 @@
 			"deathrattle": "Râle d’agonie",
 			"divine_shield": "Bouclier divin",
 			"taunt": "Provocation",
-			"end_of_turn": "Fin de tour"
+			"end_of_turn": "Fin de tour",
+			"reborn": "Réincarnation"
 		},
 		"legendary-minion": "Serviteur légendaire",
 		"patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -779,6 +780,7 @@
 				"naga": "Nagas",
 				"pirate": "Pirates",
 				"quilboar": "Hurans",
+				"undead": "Morts-vivants",
 				"blank": "Aucun type",
 				"all": "Tout"
 			},
@@ -1752,7 +1754,10 @@
 				"control-hero-power": "Changez votre pouvoir héroïque avec « {{playerKey}} » et celui du héros adverse avec « {{opponentKey}} »",
 				"control-minion": "Ajoutez un serviteur à votre troupe de guerre avec « {{playerKey}} » et à la troupe de guerre de votre adversaire avec « {{opponentKey}} »",
 				"control-general": "Lors de chaque sélection, faites défiler les champs avec Tabulation, et cochez les cases avec Espace. Choisissez la première option affichée avec Entrée, et validez la sélection finale avec Maj + Entrée"
-			}
+			},
+			"global-effects-header": "Effets globaux",
+			"undead-army-tooltip": "L’ATQ supplémentaire que vos Morts-vivants obtiennent quand ils sont invoqués",
+			"eternal-legion-tooltip": ""
 		},
 		"hero-stats": {
 			"finishes-title": "Hauts faits",
@@ -1914,7 +1919,7 @@
 			"total-games-tooltip": "Depuis {{value}} (utilisez le bouton Réinitialiser en haut pour démarrer une nouvelle session)",
 			"total-games-tooltip-all-time": "Depuis que vous utilisez l’application (utilisez le bouton Réinitialiser en haut pour démarrer une nouvelle session)",
 			"mmr-tooltip": "Votre cote actuelle",
-			"delta-mmr-tooltip": "Gain/perte de MMR depuis le début de votre session"
+			"delta-mmr-tooltip": "Gain/perte de cote depuis le début de votre session"
 		},
 		"groups": {
 			"battlegrounds": {
@@ -1974,29 +1979,36 @@
 				"third-party": "Services tiers",
 				"broadcast": "Twitch",
 				"quests": "Quêtes",
-				"mods": "",
+				"mods": "Mods",
 				"data": "Données"
 			},
 			"mods": {
-				"title": "",
-				"warning": "",
-				"instructions-link": "",
-				"instructions": "",
-				"game-location-placeholder": "",
-				"check-mods-title": "",
-				"check-mods-description": "",
-				"enable-mods-title": "",
-				"enable-mods-description": "",
-				"disable-mods-description": "",
-				"check-mods": "",
-				"enable-mods": "",
-				"disable-mods": "",
-				"game-running-error": "",
-				"refresh-engine": "",
-				"refresh-engine-tooltip": "",
-				"add-mods-title": "",
-				"add-mods-description": "",
-				"installed-mods-description": ""
+				"title": "Mods",
+				"warning": "AVERTISSEMENT : les mods modifient le comportement du jeu lui-même, et sont donc en tant que tel contraires aux conditions d’utilisation du jeu, ce qui pourrait faire suspendre votre compte Hearthstone, même s’il n’existe pas de tel cas pour le moment. Les mods listés ci-dessous sont ceux qui devraient être sûrs à utiliser, mais on ne sait jamais.",
+				"instructions-link": "Premiers pas",
+				"instructions": "Veuillez lire la page {{link}} pour tous les détails nécessaires.",
+				"game-location-placeholder": "Emplacement de l’installation",
+				"check-mods-title": "1. Vérifier le moteur de mods",
+				"check-mods-description": "Vérifiez si les mods sont déjà actifs et si votre chemin de jeu est correctement configuré.",
+				"enable-mods-title": "2. Activer les mods",
+				"enable-mods-description": "Les mods sont actuellement désactivés. Cliquez pour activer la prise en charge des mods. Ceci téléchargera le moteur de mods et configurera tout, donc cela peut prendre un peu de temps.",
+				"disable-mods-description": "Les mods sont actuellement activés. Cliquez pour désactiver la prise en charge des mods. Ceci supprimera le moteur de mods et sa configuration, mais les fichiers de mods ne seront pas supprimés (au cas où vous vouliez les réactiver). Consultez le wiki pour des instructions sur la façon de tout supprimer.",
+				"check-mods": "Vérifier",
+				"enable-mods": "Activer les mods",
+				"disable-mods": "Désactiver les mods",
+				"game-running-error": "Hearthstone est en cours d’exécution. Veuillez le fermer avant d’activer ou désactiver les mods.",
+				"refresh-engine": "Actualiser le moteur",
+				"refresh-engine-tooltip": "Après chaque mise à jour client de Hearthstone, vous devrez actualiser le moteur (ou désactiver complètement les mods), sinon le jeu ne démarrera pas.",
+				"add-mods-title": "3. Ajouter des mods",
+				"add-mods-description": "Trouver des mods et suivez les instructions de la page {{link}} pour les installer. Elle contient également une liste de quelques mods qui devraient pouvoir être utilisés.",
+				"installed-mods-description": "Les mods suivants sont installés (supprimez le fichier correspondant dans Hearthstone/Mods pour les désinstaller) :",
+				"enabling-mods": "",
+				"downloading-mod-engine": "",
+				"creating-config": "",
+				"installing-mod-manager": "",
+				"installing-game-connector": "",
+				"refreshing-engine": "",
+				"mods-ready": ""
 			},
 			"third-party": {
 				"intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Nous ne sommes pas payés pour cela, mais nous recevons une certaine exposition puisqu’ils parlent ensuite de nous :)",
@@ -2156,7 +2168,7 @@
 				"show-matchup-winrate": "Afficher le taux de victoires du matchup",
 				"show-matchup-winrate-tooltip": "Afficher le taux de victoires du deck contre la classe de l’adversaire au-dessus du tracker, si nous avons des données (en mode Standard ou Libre, basé sur le format actuel)",
 				"show-gifts-separately": "Afficher les cadeaux séparément",
-				"show-gifts-separately-tooltip": "",
+				"show-gifts-separately-tooltip": "Afficher les cartes qui ont été créées dans leurs propres lignes (une ligne pour chaque carte créatrice différente). Ne fonctionne pas dans le mode d’affichage Héritage.",
 				"reset-deck-position-after-trade": "Réinitialiser la position après un échange",
 				"reset-deck-position-after-trade-tooltip": "Après avoir échangé une carte avec Échangeable, la carte pourrait en théorie être placée au fond du deck. Donc, par défaut, quand une échange se produit, les sections « Dessus du deck » et « Fond du deck » sont réinitialisées. Si vous désactivez cette option, les sections conserveront leurs valeurs précédentes même après un échange.",
 				"show-stats-change": "Afficher les changements de stats",
@@ -2194,8 +2206,8 @@
 				"show-tracker-tooltip": "Lorsque cette option est activée, un decktracker sera affiché pour les cartes de votre adversaire",
 				"ai-decklist-label": "Charger les decks d’IA",
 				"ai-decklist-tooltip": "Lorsque cette option est activée, le decktracker essaiera de charger le deck de l’IA adverse. Sachez que certains decks sont pseudo-aléatoires, donc le deck ne sera parfois qu’une indication",
-				"group-cards-by-zone-label": "",
-				"group-cards-by-zone-tooltip": "",
+				"group-cards-by-zone-label": "Decktracker moderne",
+				"group-cards-by-zone-tooltip": "Lorsque cette option est activée, le decktracker divise les cartes en sections enroulables (Deck, Main et Autres), ce qui permet certaines nouvelles fonctionnalités. Désactivez cette option pour utiliser le mode d’affichage Héritage où toutes les cartes sont regroupées en une seule section",
 				"used-cards-go-to-bottom-label": "Les cartes utilisées vont en bas",
 				"used-cards-go-to-bottom-tooltip": "Lorsque cette option est activée, les cartes qui ont été utilisées sont affichées en bas de la liste. Il ne peut être activé que si l’option « Grouper les cartes par zone » est désactivée",
 				"darken-used-cards-label": "Griser les cartes utilisées",
