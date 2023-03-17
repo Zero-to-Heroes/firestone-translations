@@ -88,7 +88,9 @@
 			"maw_and_disorder": "Maw and Disorder",
 			"return_of_the_lich_king": "March of the Lich King",
 			"path_of_arthas": "Path of Arthas",
-			"tb": "Tavern Brawl"
+			"return_to_naxxramas": "Return to Naxxramas",
+			"tb": "Tavern Brawl",
+			"battle_of_the_bands": "Battle of the Bands"
 		},
 		"pack": {
 			"classic": "Classic",
@@ -141,7 +143,8 @@
 			"revendreth": "Murder at Castle Nathria",
 			"golden-revendreth": "Golden Murder at Castle Nathria",
 			"return-of-the-lich-king": "March of the Lich King",
-			"golden-return-of-the-lich-king": "Golden March of the Lich King"
+			"golden-return-of-the-lich-king": "Golden March of the Lich King",
+			"battle-of-the-bands": "Battle of the Bands"
 		},
 		"ranks": {
 			"constructed": {
@@ -284,6 +287,7 @@
 		"tray": {
 			"exit": "Exit",
 			"restart": "Restart Firestone",
+			"reset-positions": "Reset window positions",
 			"settings": "Settings",
 			"main-window": "Show main window"
 		},
@@ -319,7 +323,7 @@
 					"past-three": "Past 3 days",
 					"past-seven": "Past 7 days",
 					"last-patch": "Last patch",
-					"past-100": "Past 100 days",
+					"past-100": "All time",
 					"past-30": "Past 30 days"
 				}
 			},
@@ -618,6 +622,8 @@
 			"filters": {
 				"filter-info-tooltip": "Changing these filters will also impact the stats displayed in the decktracker in-game",
 				"show-hidden-decks": "Show archived",
+				"use-conservative-estimate": "True rank",
+				"use-conservative-estimate-tooltip": "Integrate the sample size in the average position estimate. See the link at the bottom of the tier list for more information",
 				"deck-sort": {
 					"last-played": "Last used",
 					"games-played": "Games played",
@@ -703,6 +709,7 @@
 				"winrate": "{{value}}% winrate",
 				"last-used": "Used: {{value}}",
 				"created-on": "Created: {{value}}",
+				"move-button-tooltip": "Drag and drop this deck to another deck of the same class to merge them",
 				"archive-button-tooltip": "Archive this deck (you can restore it later)",
 				"restore-button-tooltip": "Restore this deck",
 				"default-deck-name": "Deck name"
@@ -764,6 +771,7 @@
 		"battlegrounds": {
 			"menu": {
 				"heroes": "Heroes",
+				"meta-heroes": "Heroes",
 				"quests": "Quests",
 				"rating": "Rating",
 				"perfect-games": "Perfect Games",
@@ -790,7 +798,7 @@
 				},
 				"hero-sort": {
 					"tier": "Tier",
-					"average-position": "Average position",
+					"average-position": "Your avg. placement",
 					"mmr": "Net MMR",
 					"games-played": "Games played",
 					"last-played": "Last played"
@@ -808,7 +816,7 @@
 					"past-seven": "Past 7 days",
 					"past-three": "Past 3 days",
 					"last-patch": "Last patch",
-					"past-100": "Past 100 days",
+					"past-100": "All time",
 					"past-30": "Past 30 days"
 				},
 				"tier": {
@@ -841,7 +849,8 @@
 						"mmr": "MMR",
 						"final-warbands": "Last warbands",
 						"warband-stats": "Warband stats",
-						"winrate-stats": "Combat winrate"
+						"winrate-stats": "Combat winrate",
+						"strategies": "Strategies"
 					},
 					"stats": {
 						"title": "General stats",
@@ -937,10 +946,76 @@
 				}
 			},
 			"tier-list": {
-				"header": "Heroes tier list ({{value}} matches) "
+				"header": "Heroes tier list ({{value}} matches) ",
+				"tier": "Tier {{value}}",
+				"data-points": "{{value}} games",
+				"player-data-points": "{{value}}",
+				"player-data-points-tooltip": "The number of games you played with this hero",
+				"player-average-position-tooltip": "Your average placement with this hero",
+				"header-hero-details": "Hero",
+				"header-average-position": "Avg. Placement",
+				"header-placement-distribution": "Placement Distribution",
+				"header-combat-winrate": "Combat winrate",
+				"header-net-mmr": "Net MMR",
+				"learn-more": "How is this data calculated?"
 			},
 			"bgs-tier-list": {
 				"header": "Quests tier list ({{value}} matches) "
+			},
+			"strategies": {
+				"date": "published on {{date}} (patch {{patch}})",
+				"curve-label": "Curves: ",
+				"curve": {
+					"name": {
+						"basic": "Basic Curve",
+						"fast-basic": "Fast Basic Curve",
+						"jeef": "Jeef Curve",
+						"fast-jeef": "Fast Jeef Curve",
+						"slow-jeef": "Slow Jeef Curve",
+						"warrior": "Warrior Curve",
+						"extended-warrior": "Extended Warrior Curve",
+						"basic-yogg": "Basic Yogg Curve",
+						"aggro-yogg": "Aggro Yogg Curve",
+						"rafaam": "Rafaam Curve",
+						"slow-rafaam": "Slow Rafaam Curve",
+						"3-on-3": "3 on 3 (level on 8)",
+						"3-on-3-bis": "3 on 3 (level on 9)",
+						"4-on-4": "4 on 4",
+						"toki": "Toki Curve",
+						"pocky": "Pocky Curve",
+						"special": "Special"
+					},
+					"notes": {
+						"basic": "Stronger with a token start, turn 4 shop RNG weakness. No heropower requirement.",
+						"fast-basic": "Stronger with a token start, turn 4 shop RNG weakness. No heropower requirement.",
+						"jeef": "Uses tier 1 economy and strong pairs for a flexible start to the game with its variations.",
+						"fast-jeef": "Uses tier 1 economy and strong pairs for a flexible start to the game with its variations. Pushes levels quickly.",
+						"slow-jeef": "Uses tier 1 economy and strong pairs for a flexible start to the game with its variations. Stays on tier 2 to solidify the board.",
+						"warrior": "A highly valueable line if tier 1 economy and forced triples are strong.",
+						"extended-warrior": "A highly valueable line if tier 1 economy and forced triples are strong. This variant is a fallback option in case a triple hasn't shown up yet playing regular warrior curve.",
+						"basic-yogg": "Uses a 2-cost heropower to get to tier 3 faster.",
+						"aggro-yogg": "Uses a 2-cost heropower to get good tier 1s on board before leveling to 3 faster",
+						"rafaam": "Clean leveling using 1-cost heropower, 2-cost heropower with economy, or tavern tippers",
+						"slow-rafaam": "Clean leveling using 1-cost heropower, 2-cost heropower with economy, or tavern tippers. Cut off on tier 2 to get stronger",
+						"3-on-3": "Sacrifices early health to get very fast access to tier 3 minions, then pushes levels",
+						"3-on-3-bis": "Sacrifices early health to fill the board with tier 3 minions",
+						"4-on-4": "Sacrifices early health to get very fast access to tier 3 minions. A fallback option in case of a bad shop after 3 on 3; requires economy",
+						"toki": "A way to use 1 cost heropowers that don't provide tempo",
+						"pocky": "A very niche use for 1 cost heropowers"
+					},
+					"step": {
+						"turn": "Turn {{value}}",
+						"gold": "{{value}} gold"
+					},
+					"action": {
+						"buy": "Buy",
+						"buy-token": "Buy a Token",
+						"roll": "Roll",
+						"sell": "Sell",
+						"level": "Level to {{value}}",
+						"hero-power": "Hero power"
+					}
+				}
 			}
 		},
 		"duels": {
@@ -994,7 +1069,7 @@
 					"past-three": "Past 3 days",
 					"past-seven": "Past 7 days",
 					"last-patch": "Last patch",
-					"past-100": "Past 100 days"
+					"past-100": "All time"
 				},
 				"treasure-pools": {
 					"treasure-1": "Treasures Pool 1",
@@ -1257,7 +1332,6 @@
 			"tip-4": "The Settings have lots of customization options, don't hesitate to have a look to enable / disable some features",
 			"tip-5": "[Mercenaries] See the \"Total Coins\" column by making the window wider",
 			"tip-6": "[Mercenaries] Select the \"Mercenaries (PvP)\" option in Replays to see more details about the Teams in each match",
-			"tip-7": "[Mercenaries] Mouse over the \"Task Completed\" column to learn how to manually set each merc's task progress",
 			"tip-8": "[Battlegrounds] See detailed live stats in a match by bringing up the Battlegrounds window with Alt + B",
 			"tip-9": "[Battlegrounds] Make the BG window wider to see average damage and lethal chances in the simulator",
 			"tip-10": "[Duels] You can mouse over the Opponent's health to see their max health",
@@ -1683,6 +1757,7 @@
 				"reason-secret": "Secrets",
 				"reason-pirate": "Scallywag + Baron / Khadgar",
 				"reason-piloted-whirl-o-tron": "Piloted Whirl-o-Tron",
+				"reason-festergut": "Festergut",
 				"bug": "An unknown error occured, a bug report has automatically been sent out to the devs"
 			},
 			"result": {
@@ -1749,6 +1824,7 @@
 			"sneed-deathrattle": "Sneed's DR",
 			"sneed-deathrattle-tooltip": "How many times has Sneed's Hero Power been used on this minion",
 			"minions-selection-title": "Minions",
+			"show-buddies-button-title": "Show buddies",
 			"search-minion-placeholder": "Search minion",
 			"resimulating-battle": "Resimulating battle",
 			"simulator-help-tooltip": {
@@ -1774,7 +1850,9 @@
 			"turn-winrate-tooltip": "Battle winrate per turn (it gives you an indication of when this hero is the strongest)",
 			"winning-tribes-title": "Top winning tribes",
 			"winning-tribes-title-tooltip": "Percentage of each tribe present in average in top 4 warbands",
-			"place": "Place: {{value}}"
+			"place": "Place: {{value}}",
+			"strategies-link": "Click to see recommended strategies",
+			"strategies-link-tooltip": "Will open the app's main window to show this hero's strategies"
 		},
 		"turn-counter": {},
 		"hero-selection": {
@@ -1963,7 +2041,8 @@
 			},
 			"widget-size-label": "Widget size",
 			"show-advanced-settings-button": "Show advanced settings",
-			"hide-advanced-settings-button": "Hide advanced settings"
+			"hide-advanced-settings-button": "Hide advanced settings",
+			"locked-tooltip": "Become a premium user to use this option! (you can become a premium user and support the app by clicking on the text above the ad space in the main window)"
 		},
 		"menu": {
 			"general": "General",
@@ -2002,6 +2081,7 @@
 				"game-running-error": "Hearthstone is currently running. Please close it before enabling / disabling mods.",
 				"refresh-engine": "Refresh engine",
 				"refresh-engine-tooltip": "After each Hearthstone client patch, you will need to refresh the engine (or disable mods altogether), otherwise the game will fail to start.",
+				"refreshing-engine": "Copying libs...",
 				"add-mods-title": "3. Add mods",
 				"add-mods-description": "Find some mods, and follow the instructions from the {{link}} guide to install them (which also contains a list of a few mods that I think are safe to use).",
 				"installed-mods-description": "The following mods are installed (delete the corresponding file in Hearthstone/Mods to uninstall them):",
@@ -2010,8 +2090,13 @@
 				"creating-config": "Creating config...",
 				"installing-mod-manager": "Downloading mod manager (~15 kB)...",
 				"installing-game-connector": "Downloading game connector (~10 kB)...",
-				"refreshing-engine": "Refreshing engine...",
-				"mods-ready": "Mods are ready, see the link above for instructions on how to install them"
+				"mods-ready": "Mods are ready, see the link above for instructions on how to install them",
+				"check-for-updates": "Check for updates",
+				"check-for-updates-tooltip": "Only mods that have provided a download link can be checked for updates",
+				"checking-for-updates": "Checking...",
+				"checking-mod-for-updates": "Checking {{modName}}",
+				"update-available": "A new version of this mod is available. Click to update it",
+				"update-disabled": "A new version of this mod is available, but you can't install it until you close the game"
 			},
 			"third-party": {
 				"intro": "We believe that your data belongs to you, and that you should be able to synchronize it to other third party websites and help them do whatever they do best with it. We don't get paid for this, but we do get some exposure since they then talk about us :)",
@@ -2049,7 +2134,7 @@
 			"bug-report": {
 				"title": "Send feedback / Report a bug",
 				"simulator-bug-text": "If you want to report a bug with the simulator (and want to help me as much as possible), please check the how-to",
-				"general-bug-text": "For other big issues (app not working), there are some helpful troubleshooting steps",
+				"general-bug-text": "Please first check the troubleshoot steps",
 				"link-text": "here",
 				"email-placeholder": "Your email (optional)",
 				"message-placeholder": "Your message. If you're reporting a bug, please try to describe what you were doing when the bug occurred, and what happened that caused you to report this bug.",
@@ -2117,12 +2202,26 @@
 			"data": {
 				"remote-title": "Remote data",
 				"remote-intro-text": "Firestone stores most of your data online, to make it easy to use it across different computers. Some of that data is cached locally to improve the loading time of the app and reduce the bandwidth usage. You can however force a refresh of that data with the buttons below, typically after you've switched computers.",
+				"games-title": "Games",
+				"total-games": "The app has retrieved a total of {{value}} games",
+				"other-title": "Other",
 				"packs": "Packs",
 				"packs-tooltip": "Refresh your packs. This is automatically done every 7 days.",
+				"games-tooltip": "Refresh your games. It will retrieve all your games since you started using the app, and it might take a while",
+				"clear-games-tooltip": "Clear your games, and reload the latest games based on your preferences (last 100 days by default, you can change that by enabling the Advanced Settings). This might be useful if you have a lot of games and feel that the app is using too much RAM",
+				"games-period": "Load your games for",
+				"games-period-options": {
+					"all-time": "All time",
+					"past-100": "Last 100 days",
+					"last-patch": "Last patch",
+					"past-7": "Last 7 days",
+					"season-start": "Season start"
+				},
 				"achievements": "Achievements",
 				"achievements-tooltip": "Refresh your achievements. This is automatically done every 7 days.",
 				"refresh-button-label": "Refresh",
-				"refresh-progress-button-label": "Working..."
+				"refresh-progress-button-label": "Working...",
+				"clear-button-label": "Clear"
 			},
 			"quests": {
 				"title": "Quests",
@@ -2411,13 +2510,15 @@
 				"show-achievements-label": "Show achievements",
 				"show-achievements-tooltip": "Shows the missing achievements for each hero at the hero selection stage",
 				"show-hero-tooltip-label": "Show hero tooltip",
-				"show-hero-tooltip-tooltip": "Shows hero stats when mousing over the hero portrait on the game's hero selection screen.",
+				"show-hero-tooltip-tooltip": "Shows hero stats and strategy tips when mousing over the hero portrait on the game's hero selection screen.",
 				"show-hero-tier-label": "Show hero tier",
 				"show-hero-tier-tooltip": "Shows hero tier and global average position directly on the hero portrait during hero selection.",
 				"show-overlay-button": "Show overlay button",
 				"show-overlay-button-tooltip": "Shows a button on the overlay to toggle the main window or on off, which you can use instead of the hotkeys",
 				"popup-post-match-stats-label": "Popup post-match stats",
 				"popup-post-match-stats-tooltip": "When active, the battlegrounds window will be restored after a match to show the post-match stats, even if it was minimized",
+				"show-game-end-notif-label": "Show game end notif",
+				"show-game-end-notif-tooltip": "Show a small notification at the bottom right of the screen after the game ends to quickly access your game stats",
 				"simulator-config-title": "Simulator configuration",
 				"simulator-number-of-sims-label": "Number of simulations",
 				"simulator-number-of-sims-tooltip": "The number of simulations ran for each battle. We found 5,000 simulations to be a pretty good spot. Increasing the number will increase the accuracy of the calculation but will require more resources from your PC."
@@ -2546,6 +2647,13 @@
 				"general": "General"
 			},
 			"empty-state": "No settings there yet"
+		}
+	},
+	"website": {
+		"desktop-app": {
+			"navigation-cta-header": "Download Desktop App",
+			"navigation-cta-text": "See live game information, hero stats, pro tips and much more in your game client while you play with our FREE app.",
+			"navigation-cta-button-text": "Download"
 		}
 	},
 	"twitch": {
