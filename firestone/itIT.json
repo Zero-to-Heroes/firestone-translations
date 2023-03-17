@@ -88,7 +88,9 @@
 			"maw_and_disorder": "",
 			"return_of_the_lich_king": "",
 			"path_of_arthas": "",
-			"tb": ""
+			"return_to_naxxramas": "",
+			"tb": "",
+			"battle_of_the_bands": ""
 		},
 		"pack": {
 			"classic": "Classica",
@@ -141,7 +143,8 @@
 			"revendreth": "",
 			"golden-revendreth": "",
 			"return-of-the-lich-king": "",
-			"golden-return-of-the-lich-king": ""
+			"golden-return-of-the-lich-king": "",
+			"battle-of-the-bands": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -284,6 +287,7 @@
 		"tray": {
 			"exit": "",
 			"restart": "",
+			"reset-positions": "",
 			"settings": "",
 			"main-window": ""
 		},
@@ -618,6 +622,8 @@
 			"filters": {
 				"filter-info-tooltip": "Modificare questi filtri influenzerà anche le statistiche mostrate nel decktracker di gioco",
 				"show-hidden-decks": "",
+				"use-conservative-estimate": "",
+				"use-conservative-estimate-tooltip": "",
 				"deck-sort": {
 					"last-played": "Ultimo uso",
 					"games-played": "Partite giocate",
@@ -703,6 +709,7 @@
 				"winrate": "Tasso di vittoria del {{value}}%",
 				"last-used": "",
 				"created-on": "",
+				"move-button-tooltip": "",
 				"archive-button-tooltip": "Archivia questo mazzo (puoi ripristinarlo dopo)",
 				"restore-button-tooltip": "Ripristina questo mazzo",
 				"default-deck-name": "Nome del mazzo"
@@ -764,6 +771,7 @@
 		"battlegrounds": {
 			"menu": {
 				"heroes": "Eroi",
+				"meta-heroes": "",
 				"quests": "",
 				"rating": "Punteggio",
 				"perfect-games": "Partite Perfette",
@@ -841,7 +849,8 @@
 						"mmr": "MMR",
 						"final-warbands": "Ultimi Plotoni",
 						"warband-stats": "Statistiche del plotone",
-						"winrate-stats": "Tasso di vittorie di combattimento"
+						"winrate-stats": "Tasso di vittorie di combattimento",
+						"strategies": ""
 					},
 					"stats": {
 						"title": "Statistiche generali",
@@ -937,10 +946,76 @@
 				}
 			},
 			"tier-list": {
-				"header": "Elenco di ranghi degli eroi ({{value}} partite) "
+				"header": "Elenco di ranghi degli eroi ({{value}} partite) ",
+				"tier": "",
+				"data-points": "",
+				"player-data-points": "",
+				"player-data-points-tooltip": "",
+				"player-average-position-tooltip": "",
+				"header-hero-details": "",
+				"header-average-position": "",
+				"header-placement-distribution": "",
+				"header-combat-winrate": "",
+				"header-net-mmr": "",
+				"learn-more": ""
 			},
 			"bgs-tier-list": {
 				"header": ""
+			},
+			"strategies": {
+				"date": "",
+				"curve-label": "",
+				"curve": {
+					"name": {
+						"basic": "",
+						"fast-basic": "",
+						"jeef": "",
+						"fast-jeef": "",
+						"slow-jeef": "",
+						"warrior": "",
+						"extended-warrior": "",
+						"basic-yogg": "",
+						"aggro-yogg": "",
+						"rafaam": "",
+						"slow-rafaam": "",
+						"3-on-3": "",
+						"3-on-3-bis": "",
+						"4-on-4": "",
+						"toki": "",
+						"pocky": "",
+						"special": ""
+					},
+					"notes": {
+						"basic": "",
+						"fast-basic": "",
+						"jeef": "",
+						"fast-jeef": "",
+						"slow-jeef": "",
+						"warrior": "",
+						"extended-warrior": "",
+						"basic-yogg": "",
+						"aggro-yogg": "",
+						"rafaam": "",
+						"slow-rafaam": "",
+						"3-on-3": "",
+						"3-on-3-bis": "",
+						"4-on-4": "",
+						"toki": "",
+						"pocky": ""
+					},
+					"step": {
+						"turn": "",
+						"gold": ""
+					},
+					"action": {
+						"buy": "",
+						"buy-token": "",
+						"roll": "",
+						"sell": "",
+						"level": "",
+						"hero-power": ""
+					}
+				}
 			}
 		},
 		"duels": {
@@ -1257,7 +1332,6 @@
 			"tip-4": "Le Impostazioni hanno molte opzioni di personalizzazione, non esitare a dare un'occhiata per abilitare/disabilitare alcune funzionalità",
 			"tip-5": "[Mercenaries] Vedi la colonna delle \"Monete Totali\" rendendo la finestra più ampia",
 			"tip-6": "[Mercenaries] Seleziona l'opzione \"Mercenari (PvP)\" nei Replay per visualizzare ulteriori dettagli sui Team in ogni partita",
-			"tip-7": "[Mercenaries] Passa col mouse sulla colonna \"Attività Completate\" per scoprire come impostare manualmente il progresso dell'attività di ogni mercenario",
 			"tip-8": "[Battlegrounds] Visualizza le statistiche live dettagliate in una partita, portando avanti la finestra Campi di Battaglia con Alt + B",
 			"tip-9": "[Battlegrounds] Rendi la finestra CB più ampia per visualizzare il danno medio e le probabilità letali nel simulatore",
 			"tip-10": "[Duels] Puoi passare col mouse sulla salute dell'Avversario per vederne la salute massima",
@@ -1683,6 +1757,7 @@
 				"reason-secret": "Segreti",
 				"reason-pirate": "Mascalzone + Baron / Khadgar",
 				"reason-piloted-whirl-o-tron": "Vortice Pilotato",
+				"reason-festergut": "",
 				"bug": "Si è verificato un errore sconosciuto, una segnalazione di bug è stata inviata automaticamente agli sviluppatori"
 			},
 			"result": {
@@ -1749,6 +1824,7 @@
 			"sneed-deathrattle": "RM di Sneed",
 			"sneed-deathrattle-tooltip": "Quante volte è stato usato il Potere dell'Eroe di Sneed usato su questo minion",
 			"minions-selection-title": "Minion",
+			"show-buddies-button-title": "",
 			"search-minion-placeholder": "Cerca minion",
 			"resimulating-battle": "Risimulando la battaglia",
 			"simulator-help-tooltip": {
@@ -1774,7 +1850,9 @@
 			"turn-winrate-tooltip": "Tasso di vittorie della battaglia per turno (ti da un'indicazione di quando questo eroe è il più forte)",
 			"winning-tribes-title": "Migliori tribù vincenti",
 			"winning-tribes-title-tooltip": "Percentuale di ogni tribù presente in media nei migliori 4 plotoni",
-			"place": ""
+			"place": "",
+			"strategies-link": "",
+			"strategies-link-tooltip": ""
 		},
 		"turn-counter": {},
 		"hero-selection": {
@@ -1963,7 +2041,8 @@
 			},
 			"widget-size-label": "Dimensione del widget",
 			"show-advanced-settings-button": "Mostra le impostazioni avanzate",
-			"hide-advanced-settings-button": "Nascondi le impostazioni avanzate"
+			"hide-advanced-settings-button": "Nascondi le impostazioni avanzate",
+			"locked-tooltip": ""
 		},
 		"menu": {
 			"general": "Generale",
@@ -2002,6 +2081,7 @@
 				"game-running-error": "",
 				"refresh-engine": "",
 				"refresh-engine-tooltip": "",
+				"refreshing-engine": "",
 				"add-mods-title": "",
 				"add-mods-description": "",
 				"installed-mods-description": "",
@@ -2010,8 +2090,13 @@
 				"creating-config": "",
 				"installing-mod-manager": "",
 				"installing-game-connector": "",
-				"refreshing-engine": "",
-				"mods-ready": ""
+				"mods-ready": "",
+				"check-for-updates": "",
+				"check-for-updates-tooltip": "",
+				"checking-for-updates": "",
+				"checking-mod-for-updates": "",
+				"update-available": "",
+				"update-disabled": ""
 			},
 			"third-party": {
 				"intro": "Crediamo che i tuoi dati ti appartengano e che tu dovresti poterli sincronizzare con altri siti web di terze parti e aiutarli a fare ciò che fanno meglio con essi. Non siamo pagati per farlo, ma riceviamo della visibilità poiché poi loro parlano di noi :)",
@@ -2117,12 +2202,26 @@
 			"data": {
 				"remote-title": "",
 				"remote-intro-text": "",
+				"games-title": "",
+				"total-games": "",
+				"other-title": "",
 				"packs": "",
 				"packs-tooltip": "",
+				"games-tooltip": "",
+				"clear-games-tooltip": "",
+				"games-period": "",
+				"games-period-options": {
+					"all-time": "",
+					"past-100": "",
+					"last-patch": "",
+					"past-7": "",
+					"season-start": ""
+				},
 				"achievements": "",
 				"achievements-tooltip": "",
 				"refresh-button-label": "",
-				"refresh-progress-button-label": ""
+				"refresh-progress-button-label": "",
+				"clear-button-label": ""
 			},
 			"quests": {
 				"title": "",
@@ -2418,6 +2517,8 @@
 				"show-overlay-button-tooltip": "Mostra un pulsante sulla sovrapposizione per attivare o disattivare la finestra principale, che puoi usare al posto dei tasti di scelta rapida",
 				"popup-post-match-stats-label": "Statistiche post-partita popup",
 				"popup-post-match-stats-tooltip": "Quando attiva, la finestra dei campi di battaglia sarà ripristinata dopo una partita per mostrare le statistiche post-partita, anche se era minimizzata",
+				"show-game-end-notif-label": "",
+				"show-game-end-notif-tooltip": "",
 				"simulator-config-title": "Configurazione del simulatore",
 				"simulator-number-of-sims-label": "Numero di simulazioni",
 				"simulator-number-of-sims-tooltip": "Il numero di simulazioni eseguite per ogni battaglia. Abbiamo trovato 5.000 simulazioni per esser a buon punto. Aumentare il numero, aumenterà l'accuratezza del calcolo, ma richiederà maggiori risorse dal tuo PC."
@@ -2546,6 +2647,13 @@
 				"general": "Generali"
 			},
 			"empty-state": "Ancora nessun'impostazione qui"
+		}
+	},
+	"website": {
+		"desktop-app": {
+			"navigation-cta-header": "",
+			"navigation-cta-text": "",
+			"navigation-cta-button-text": ""
 		}
 	},
 	"twitch": {
