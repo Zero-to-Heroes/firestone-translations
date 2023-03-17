@@ -88,9 +88,9 @@
 			"maw_and_disorder": "混乱噬渊",
 			"return_of_the_lich_king": "巫妖王的进军",
 			"path_of_arthas": "阿尔萨斯之路",
-			"return_to_naxxramas": "",
+			"return_to_naxxramas": "重返纳克萨玛斯",
 			"tb": "乱斗模式",
-			"battle_of_the_bands": ""
+			"battle_of_the_bands": "传奇音乐节"
 		},
 		"pack": {
 			"classic": "经典模式 卡牌包",
@@ -144,7 +144,7 @@
 			"golden-revendreth": "纳斯利亚堡的悬案 金色卡牌包",
 			"return-of-the-lich-king": "巫妖王的进军 卡牌包",
 			"golden-return-of-the-lich-king": "巫妖王的进军 异画金色卡牌包",
-			"battle-of-the-bands": ""
+			"battle-of-the-bands": "传奇音乐节 卡牌包"
 		},
 		"ranks": {
 			"constructed": {
@@ -287,7 +287,7 @@
 		"tray": {
 			"exit": "退出",
 			"restart": "重启Firestone",
-			"reset-positions": "",
+			"reset-positions": "恢复窗口默认位置",
 			"settings": "设置",
 			"main-window": "显示主窗口"
 		},
@@ -320,11 +320,11 @@
 			},
 			"filters": {
 				"time": {
-					"past-three": "过去 3 天内",
-					"past-seven": "过去 7 天内",
+					"past-three": "最近3天内",
+					"past-seven": "最近7天内",
 					"last-patch": "最新补丁",
-					"past-100": "过去 100 天内",
-					"past-30": "过去 30 天内"
+					"past-100": "所有时段的数据",
+					"past-30": "最近30天内"
 				}
 			},
 			"stats": {
@@ -622,8 +622,8 @@
 			"filters": {
 				"filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
 				"show-hidden-decks": "显示存档套牌",
-				"use-conservative-estimate": "",
-				"use-conservative-estimate-tooltip": "",
+				"use-conservative-estimate": "真实排名",
+				"use-conservative-estimate-tooltip": "在计算排名时考虑热度（样本大小）问题。（点击梯度排名表底部的链接查看更多信息）",
 				"deck-sort": {
 					"last-played": "按最近使用排序",
 					"games-played": "按对战场数排序",
@@ -663,7 +663,7 @@
 					"last-patch": "最新补丁",
 					"past-30": "过去 30 天内",
 					"past-7": "过去 7 天内",
-					"past-3": "过去 3 天内",
+					"past-3": "最近3天内",
 					"past-1": "一天内"
 				},
 				"deck-search": {
@@ -709,7 +709,7 @@
 				"winrate": "{{value}}%胜率",
 				"last-used": "曾用于{{value}}",
 				"created-on": "创建于{{value}}",
-				"move-button-tooltip": "",
+				"move-button-tooltip": "拖动到另一个同职业的卡组上可以合并为同一套牌的不同版本",
 				"archive-button-tooltip": "存档这副套牌(您可以稍后还原它)",
 				"restore-button-tooltip": "还原这副套牌",
 				"default-deck-name": "套牌名称"
@@ -771,7 +771,7 @@
 		"battlegrounds": {
 			"menu": {
 				"heroes": "英雄",
-				"meta-heroes": "",
+				"meta-heroes": "英雄",
 				"quests": "任务",
 				"rating": "等级",
 				"perfect-games": "精彩对局",
@@ -813,11 +813,11 @@
 					"per-day-tooltip": "显示每天开始时的分数"
 				},
 				"time": {
-					"past-seven": "过去 7 天内",
-					"past-three": "过去 3 天内",
+					"past-seven": "最近7天内",
+					"past-three": "最近3天内",
 					"last-patch": "最新补丁",
-					"past-100": "过去 100 天内",
-					"past-30": "过去 30 天内"
+					"past-100": "所有时段的数据",
+					"past-30": "最近30天内"
 				},
 				"tier": {
 					"all-tiers": "不限等级",
@@ -850,7 +850,7 @@
 						"final-warbands": "上次阵容",
 						"warband-stats": "阵容数据",
 						"winrate-stats": "战斗胜率",
-						"strategies": ""
+						"strategies": "策略"
 					},
 					"stats": {
 						"title": "综合数据",
@@ -947,24 +947,24 @@
 			},
 			"tier-list": {
 				"header": "英雄评级表 ( {{value}} 场对战) ",
-				"tier": "",
-				"data-points": "",
-				"player-data-points": "",
-				"player-data-points-tooltip": "",
-				"player-average-position-tooltip": "",
-				"header-hero-details": "",
-				"header-average-position": "",
-				"header-placement-distribution": "",
-				"header-combat-winrate": "",
-				"header-net-mmr": "",
-				"learn-more": ""
+				"tier": "T{{value}}",
+				"data-points": "{{value}} 场对局",
+				"player-data-points": "{{value}}",
+				"player-data-points-tooltip": "选择这个英雄的次数",
+				"player-average-position-tooltip": "选择这个英雄的平均排名",
+				"header-hero-details": "英雄",
+				"header-average-position": "平均排名",
+				"header-placement-distribution": "排名分布",
+				"header-combat-winrate": "战斗胜率",
+				"header-net-mmr": "MMR变化",
+				"learn-more": "这个梯队是怎么计算出来的？"
 			},
 			"bgs-tier-list": {
 				"header": "任务评级表 ( {{value}} 场对战) "
 			},
 			"strategies": {
-				"date": "",
-				"curve-label": "",
+				"date": "发布于 {{date}} (版本{{patch}})",
+				"curve-label": "曲线: ",
 				"curve": {
 					"name": {
 						"basic": "",
@@ -1004,16 +1004,16 @@
 						"pocky": ""
 					},
 					"step": {
-						"turn": "",
-						"gold": ""
+						"turn": "第{{value}}回合",
+						"gold": "{{value}} 铸币"
 					},
 					"action": {
-						"buy": "",
-						"buy-token": "",
-						"roll": "",
-						"sell": "",
+						"buy": "买随从",
+						"buy-token": "买理财",
+						"roll": "搜",
+						"sell": "出售",
 						"level": "",
-						"hero-power": ""
+						"hero-power": "英雄技能"
 					}
 				}
 			}
@@ -1066,10 +1066,10 @@
 					"winrate": "按平均胜利场数排序"
 				},
 				"time": {
-					"past-three": "过去 3 天内",
-					"past-seven": "过去 7 天内",
+					"past-three": "最近3天内",
+					"past-seven": "最近7天内",
 					"last-patch": "最新补丁",
-					"past-100": "过去 100 天内"
+					"past-100": "所有时段的数据"
 				},
 				"treasure-pools": {
 					"treasure-1": "一级宝藏池",
@@ -1282,10 +1282,10 @@
 				"bgs-perfect-game-result": "精彩",
 				"deck-name-tooltip": "使用 {{value}}",
 				"bgs-result": {
-					"1": "冠军",
-					"2": "亚军",
-					"3": "季军",
-					"4": "殿军",
+					"1": "吃鸡",
+					"2": "第二",
+					"3": "第三",
+					"4": "第四",
 					"5": "第五",
 					"6": "第六",
 					"7": "速七",
@@ -1480,7 +1480,7 @@
 			"player": "本回合中您已购买 {{value}} 个海盗"
 		},
 		"bgs-magmaloc": {
-			"player": "您的“熔岩鱼人”将在回合结束时获得 +{{value}}/+{{value}}"
+			"player": "熔岩鱼人将在回合结束时获得 +{{value}}/+{{value}}"
 		},
 		"bgs-majordomo": {
 			"player": "本回合中您已使用 {{value}} 张元素牌"
@@ -1824,7 +1824,7 @@
 			"sneed-deathrattle": "斯尼德的亡语",
 			"sneed-deathrattle-tooltip": "对此随从使用斯尼德的英雄技能的次数",
 			"minions-selection-title": "随从",
-			"show-buddies-button-title": "",
+			"show-buddies-button-title": "显示伙伴",
 			"search-minion-placeholder": "搜索随从",
 			"resimulating-battle": "重新模拟战斗",
 			"simulator-help-tooltip": {
@@ -1851,8 +1851,8 @@
 			"winning-tribes-title": "最高胜率的随从类型组合",
 			"winning-tribes-title-tooltip": "前四名阵容中各随从类型的占比",
 			"place": "名次：{{value}}",
-			"strategies-link": "",
-			"strategies-link-tooltip": ""
+			"strategies-link": "点击以查看推荐策略",
+			"strategies-link-tooltip": "将打开单独窗口来显示这个英雄的玩法建议"
 		},
 		"turn-counter": {},
 		"hero-selection": {
@@ -2091,12 +2091,12 @@
 				"installing-mod-manager": "正在下载Mod管理器（约15 kB）...",
 				"installing-game-connector": "正在下载游戏连接器 （约10 kB）...",
 				"mods-ready": "Mod已准备就绪，请查看上面的链接获取安装说明",
-				"check-for-updates": "",
-				"check-for-updates-tooltip": "",
-				"checking-for-updates": "",
-				"checking-mod-for-updates": "",
-				"update-available": "",
-				"update-disabled": ""
+				"check-for-updates": "检查更新",
+				"check-for-updates-tooltip": "自动检查更新只对带有下载链接的Mod生效",
+				"checking-for-updates": "正在检查...",
+				"checking-mod-for-updates": "正在检查{{modName}}的更新",
+				"update-available": "这个Mod已更新新版本，点击进行更新",
+				"update-disabled": "这个Mod有版本更新，不过只有在游戏关闭后才能进行。"
 			},
 			"third-party": {
 				"intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
@@ -2202,26 +2202,26 @@
 			"data": {
 				"remote-title": "远程数据",
 				"remote-intro-text": "Firestone在线存储您的大部分数据，使它更容易在不同的计算机上使用。其中一些数据是本地缓存的，以减少应用的加载时间并降低带宽使用。您可以点击下面的按钮强制刷新该数据，通常是在您换机之后。",
-				"games-title": "",
-				"total-games": "",
-				"other-title": "",
+				"games-title": "对局",
+				"total-games": "已完成获取{{value}}场对局记录。",
+				"other-title": "其他",
 				"packs": "卡牌包",
 				"packs-tooltip": "刷新您的开包记录。每隔7天会自动刷新。",
-				"games-tooltip": "",
-				"clear-games-tooltip": "",
-				"games-period": "",
+				"games-tooltip": "刷新历史记录，获取自从使用Firestone以来的所有对局记录（可能需要等待一段时间）。",
+				"clear-games-tooltip": "清除历史并根据设置重新加载对局记录（默认加载最近100天内的数据，可以通过启用高级设置来调整这个数值）。如果对局历史很多且记牌器占用了大量内存，清理历史或许有助于减小占用。",
+				"games-period": "加载对局历史记录：",
 				"games-period-options": {
-					"all-time": "",
-					"past-100": "",
-					"last-patch": "",
-					"past-7": "",
-					"season-start": ""
+					"all-time": "所有时段的数据",
+					"past-100": "最近100天内",
+					"last-patch": "最新补丁",
+					"past-7": "最近7天内",
+					"season-start": "本赛季内"
 				},
 				"achievements": "成就",
 				"achievements-tooltip": "刷新您的成就记录。每隔7天会自动刷新。",
 				"refresh-button-label": "刷新",
 				"refresh-progress-button-label": "正在处理...",
-				"clear-button-label": ""
+				"clear-button-label": "清除"
 			},
 			"quests": {
 				"title": "任务",
@@ -2510,15 +2510,15 @@
 				"show-achievements-label": "显示成就",
 				"show-achievements-tooltip": "在英雄选择阶段显示每个英雄尚未完成的成就",
 				"show-hero-tooltip-label": "显示英雄提示",
-				"show-hero-tooltip-tooltip": "选择英雄时，鼠标悬停在英雄头像上会显示英雄的统计数据",
+				"show-hero-tooltip-tooltip": "选择英雄时，鼠标悬停在英雄头像上会显示英雄的统计数据和玩法建议",
 				"show-hero-tier-label": "显示英雄评级",
 				"show-hero-tier-tooltip": "在选择英雄时在英雄头像上显示英雄评级和全球平均名次。",
 				"show-overlay-button": "显示浮窗按钮",
 				"show-overlay-button-tooltip": "在主界面上显示一个切换主界面的按钮，可用来代替快捷键",
 				"popup-post-match-stats-label": "自动弹出赛后数据",
 				"popup-post-match-stats-tooltip": "启用此功能，酒馆战棋窗口会在对局结束后恢复，并显示赛后数据，即使它已最小化",
-				"show-game-end-notif-label": "",
-				"show-game-end-notif-tooltip": "",
+				"show-game-end-notif-label": "显示回顾弹窗",
+				"show-game-end-notif-tooltip": "对局结束后，在窗口右下角显示一个可以点击查看数据的弹窗",
 				"simulator-config-title": "模拟器设置",
 				"simulator-number-of-sims-label": "模拟次数",
 				"simulator-number-of-sims-tooltip": "每场战斗的模拟次数。我们发现5000次模拟最佳。增加模拟次数会提高计算准确度，但也会耗费更多您的电脑资源。"
@@ -2568,7 +2568,7 @@
 				"counter-soutshsea-label": "南海勇夫",
 				"counter-soutshsea-tooltip": "当“南海勇夫”在酒馆或您手牌中时，显示您在本回合中购买海盗的数量",
 				"counter-magmaloc-label": "熔岩鱼人",
-				"counter-magmaloc-tooltip": "显示您的“熔岩鱼人”在回合结束时将获得的属性值",
+				"counter-magmaloc-tooltip": "显示熔岩鱼人在回合结束时获得的属性值",
 				"counter-majordomo-label": "管理者埃克索图斯",
 				"counter-majordomo-tooltip": "当“管理者埃克索图斯”在酒馆、战场或您的手牌中时，显示您在本回合中使用元素牌的数量"
 			},
@@ -2651,9 +2651,9 @@
 	},
 	"website": {
 		"desktop-app": {
-			"navigation-cta-header": "",
-			"navigation-cta-text": "",
-			"navigation-cta-button-text": ""
+			"navigation-cta-header": "下载桌面应用",
+			"navigation-cta-text": "免费下载使用，即可在游戏里显示实时信息、英雄数据、职业玩家建议等信息",
+			"navigation-cta-button-text": "下载"
 		}
 	},
 	"twitch": {
