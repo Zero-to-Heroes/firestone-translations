@@ -245,7 +245,7 @@
 			"achievements-header": "Hauts faits",
 			"collection-header": "Collection",
 			"streams-header": "Streams",
-			"mailbox-header": "Messagerie",
+			"mailbox-header": "Boîte aux lettres",
 			"mailbox-text-details": "Vous avez {{value}} messages non lus",
 			"stats-header": "Stats",
 			"go-premium-header": "Soutenez le développeur et enlevez la pub",
@@ -277,10 +277,10 @@
 			"ads": {
 				"support-the-dev": "Soutenez le développeur et débarrassez-vous des pubs",
 				"supporter": "Merci du soutien ! Vous êtes super :)",
-				"unlock-text": "",
-				"unlock-subtext": "",
-				"cta-text": "",
-				"features-link": ""
+				"unlock-text": "Accéder aux fonctionnalités Premium",
+				"unlock-subtext": "et supprimez toutes les pubs",
+				"cta-text": "Améliorer maintenant",
+				"features-link": "Cliquez pour voir toutes les fonctionnalités premium que vous obtiendrez"
 			},
 			"graph": {
 				"tooltip-title": "Titre",
@@ -626,7 +626,7 @@
 			"filters": {
 				"filter-info-tooltip": "La modification de ces filtres aura également un impact sur les statistiques affichées dans le decktracker en jeu",
 				"show-hidden-decks": "Afficher les archives",
-				"use-conservative-estimate": "",
+				"use-conservative-estimate": "Rang réel",
 				"use-conservative-estimate-tooltip": "Prendre en compte la taille de l’échantillon dans l’estimation de la place moyenne. Référez-vous au lien en dessous de la tierlist pour plus d’informations",
 				"deck-sort": {
 					"last-played": "Utilisé récemment",
@@ -662,7 +662,7 @@
 					"per-day-tooltip": "Afficher la cote au début de chaque jour"
 				},
 				"time-filter": {
-					"all-time": "",
+					"all-time": "Toujours",
 					"season-start": "Cette saison",
 					"last-patch": "Dernière mise à jour",
 					"past-30": "30 derniers jours",
@@ -995,12 +995,12 @@
 						"jeef": "Utilise l’économie du niveau de taverne 1 pour un début de partie flexible avec ses variations.",
 						"fast-jeef": "Utilise l’économie du niveau de taverne 1 pour un début de partie flexible avec ses variations. Monte de niveau rapidement.",
 						"slow-jeef": "Utilise l’économie du niveau de taverne 1 pour un début de partie flexible avec ses variations. Reste au niveau 2 pour stabiliser la troupe de guerre.",
-						"warrior": "",
-						"extended-warrior": "",
+						"warrior": "Une stratégie très prisée si l’économie du niveau 1 et que les triples trouvés sont puissants.",
+						"extended-warrior": "Une stratégie très prisée si l’économie du niveau 1 et que les triples trouvés sont puissants. Cette variante est une option de secours dans le cas où un triple ne serait pas encore apparu tout en jouant une courbe Warrior classique.",
 						"basic-yogg": "Utilise un pouvoir héroïque à 2 cristaux de mana pour arriver au niveau 3 plus rapidement.",
 						"aggro-yogg": "Utilise un pouvoir héroïque à 2 cristaux de mana pour obtenir des bons serviteurs de niveau 1 dans la troupe de guerre avant de monter rapidement au niveau 3",
-						"rafaam": "",
-						"slow-rafaam": "",
+						"rafaam": "Une montée de niveau propre en utilisant un pouvoir héroïque à 1 cristal, ou à 2 cristaux avec de l’économie ou des clientes généreuses",
+						"slow-rafaam": "Une montée de niveau propre en utilisant un pouvoir héroïque à 1 cristal, ou à 2 cristaux avec de l’économie ou des clientes généreuses. Pause au niveau de taverne 2 pour devenir plus puissant",
 						"3-on-3": "Sacrifie des PV dès le départ pour avoir très rapidement accès à des serviteurs de niveau 3, puis augmente de niveau",
 						"3-on-3-bis": "Sacrifie des PV dès le départ pour remplir le plateau avec des serviteurs de niveau 3",
 						"4-on-4": "Sacrifie des PV dès le départ pour avoir très rapidement accès à des serviteurs de niveau 3. Une option de secours en cas de mauvais magain après un 3 sur 3 ; nécessite de l’économie",
@@ -1119,15 +1119,15 @@
 				"default-deck-name-blank": "Deck de Duels"
 			},
 			"tier-list": {
-				"header": "",
-				"header-hero-details": "",
-				"header-winrate": "",
-				"header-placement-distribution": "",
-				"tier": "",
-				"data-points": "",
-				"player-data-points": "",
-				"player-data-points-tooltip": "",
-				"player-winrate-tooltip": ""
+				"header": "Tierlist ({{value}} parties) ",
+				"header-hero-details": "Carte",
+				"header-winrate": "% victoires",
+				"header-placement-distribution": "Distribution des places",
+				"tier": "Niveau {{value}}",
+				"data-points": "{{value}} virées",
+				"player-data-points": "{{value}}",
+				"player-data-points-tooltip": "Le nombre de parties jouées avec cette carte",
+				"player-winrate-tooltip": "Votre taux de victoires moyen avec ce héros"
 			},
 			"hero-stat": {
 				"global-winrate": "% victoires (global)",
@@ -1341,7 +1341,7 @@
 			"xp-graph-title": "Graphique d’XP"
 		},
 		"tips": {
-			"tip-0": "",
+			"tip-0": "Si vous avez des commentaires, des bugs ou si vous voulez juste entrer en contact, veuillez nous rendre visite sur Discord (lien en haut) !",
 			"tip-1": "Cliquez sur l’icône « Aide » en haut pour voir les dernières notes de mise à jour de l’application",
 			"tip-2": "Cliquez sur l’icône « Bug » en haut pour signaler un bug ou suggérer une amélioration",
 			"tip-3": "Si vous rencontrez de gros bugs (comme la synchronisation de la collection, le decktracker ne fonctionne pas, etc.), essayez d’exécuter l’application en tant qu’administrateur.",
@@ -1365,7 +1365,7 @@
 		},
 		"mailbox": {
 			"category": {
-				"inbox": "Messagerie"
+				"inbox": "Boîte aux lettres"
 			}
 		},
 		"tavern-brawl": {
@@ -1410,6 +1410,9 @@
 		},
 		"vanessa": {
 			"player": "La dernière carte que votre adversaire a jouée est {{value}}"
+		},
+		"overdraft": {
+			"player": "À découvert infligera {{value}} points de dégâts"
 		},
 		"anachronos": {
 			"player": "Les serviteurs reviendront dans {{value}} tour(s)"
@@ -1789,6 +1792,7 @@
 			"remove-minion-button-tooltip": "Enlever le serviteur",
 			"versus": "VS",
 			"simulate-button": "Simuler",
+			"simulating-button": "Simulation en cours...",
 			"simulate-button-tooltip": "Simuler le combat avec les nouvelles compositions",
 			"reset-button": "Réinitialiser",
 			"export-button": "Copier",
@@ -1903,10 +1907,10 @@
 				"triple-tooltip": "Depuis le dernier combat, cet adversaire a reçu {{quantity}} serviteurs de niveau {{tier}} comme récompenses de triple",
 				"triple-empty-state": "Pas de nouveaux triples",
 				"buddies-title": "Compagnons reçus",
-				"buddies-empty-state": "Pas de Compagnon",
+				"buddies-empty-state": "Pas de compagnon",
 				"buddy-text": "Tour {{turn}}",
-				"buddy-tooltip": "A reçu son premier Compagnon au tour {{turn}}",
-				"buddy-tooltip-golden": "A reçu ses deux autres Compagnons au tour {{turn}}",
+				"buddy-tooltip": "A reçu son premier compagnon au tour {{turn}}",
+				"buddy-tooltip-golden": "A reçu ses deux autres compagnons au tour {{turn}}",
 				"rewards-title": "Récompenses de quête",
 				"rewards-empty-state": "Aucune récompense de quête",
 				"reward-turn-tooltip": "Récompense de quête reçue au tour {{turn}}"
@@ -1914,6 +1918,7 @@
 			"minions-list": {
 				"reset-button": "Réinitialiser",
 				"mechanics-tier-tooltip": "Voir tous les serviteurs avec {{value}}",
+				"buddies-tier-tooltip": "Voir tous les compagnons du jeu",
 				"highlight-tribe": "Cliquez pour mettre en valeur tous les serviteurs de type {{value}} dans la taverne",
 				"unhighlight-tribe": "Cliquez pour ne plus mettre en valeur les serviteurs de type {{value}} dans la taverne",
 				"highlight-mechanics": "Cliquez pour mettre en valeur tous les serviteurs avec {{value}} dans la taverne",
@@ -2416,6 +2421,8 @@
 					"monstrous-parrot-tooltip": "Quand vous avez un perroquet monstrueux en main, affiche le dernier Râle d’agonie allié qui s’est déclenché, s’il y en a eu",
 					"vanessa-label": "Vanessa VanCleef",
 					"vanessa-tooltip": "Quand vous avez Vanessa VanCleef en main, affiche la dernière carte que votre adversaire a jouée",
+					"overdraft-label": "À découvert",
+					"overdraft-tooltip": "Affiche un compteur lorsque vous avez une carte À découvert en main ou dans votre deck, qui vous indique combien de dégâts elle va infliger",
 					"bonelord-frostwhisper-label": "Seigneur-des-ossements Murmegivre",
 					"bonelord-frostwhisper-tooltip": "Une fois que le Seigneur-des-ossements Murmegivre est mort, affiche le nombre de tours restants à vivre",
 					"anachronos-label": "Anachronos",
@@ -2503,7 +2510,7 @@
 			"full-toggle-label": "Activer pour Champs de bataille",
 			"full-toggle-tooltip": "Désactiver toutes les fonctionnalités en direct de Champs de Bataille",
 			"general": {
-				"companion-app-title": "Appli Compagnon",
+				"companion-app-title": "Appli compagnon",
 				"enable-app-label": "Activer l’appli",
 				"integrated-mode-label": "Mode intégré",
 				"integrated-mode-tooltip": "Lorsque cette option est activée, la fenêtre Champs de bataille devient un overlay et est liée à la fenêtre de jeu. Utiliser ceci est recommandé pour la configuration pour un seul écran, ou si vous voulez diffuser l’application",
@@ -2529,8 +2536,8 @@
 				"show-hero-tooltip-tooltip": "Affiche les stats des héros en passant la souris sur leur portrait dans l’écran de sélection des héros.",
 				"show-hero-tier-label": "Afficher le tier des héros",
 				"show-hero-tier-tooltip": "Affiche le tier de héros et la position moyenne globale directement sur le portrait du héros lors de la sélection des héros.",
-				"show-hero-tips-label": "",
-				"show-hero-tips-tooltip": "",
+				"show-hero-tips-label": "Afficher les conseils de stratégie",
+				"show-hero-tips-tooltip": "La sphère de sagesse miraculeuse apparaît et vous permet de voir rapidement les conseils de pro pour votre héros actuel en passant la souris dessus.",
 				"show-overlay-button": "Afficher le bouton d’overlay",
 				"show-overlay-button-tooltip": "Affiche un bouton sur l’overlay pour activer/désactiver la fenêtre principale, utilisable à la place des raccourcis clavier",
 				"popup-post-match-stats-label": "Afficher les stats d’après-match",
@@ -2597,7 +2604,7 @@
 				"show-groups": "Afficher les infos groupées",
 				"show-groups-tooltip": "Afficher un récapitulatif des parties de votre sessions, regroupées par position finale.",
 				"hide-when-friends-list-open": "Masquer quand la liste d’amis est ouverte",
-				"hide-when-friends-list-open-tooltip": "Masquer le widget lorsque la liste d'amis est ouverte.",
+				"hide-when-friends-list-open-tooltip": "Masquer le widget lorsque la liste d’amis est ouverte.",
 				"show-matches": "Afficher les dernières parties",
 				"show-matches-tooltip": "Afficher les dernières parties.",
 				"number-of-matches": "Nombre de parties",

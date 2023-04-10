@@ -277,10 +277,10 @@
 			"ads": {
 				"support-the-dev": "支持开发者并移除广告",
 				"supporter": "感谢您对我们的支持！",
-				"unlock-text": "",
-				"unlock-subtext": "",
-				"cta-text": "",
-				"features-link": ""
+				"unlock-text": "解锁高级功能",
+				"unlock-subtext": "移除所有广告",
+				"cta-text": "立即升级",
+				"features-link": "点击查看所有高级功能"
 			},
 			"graph": {
 				"tooltip-title": "标题",
@@ -662,7 +662,7 @@
 					"per-day-tooltip": "显示每天开始时的等级"
 				},
 				"time-filter": {
-					"all-time": "",
+					"all-time": "所有时段的数据",
 					"season-start": "本赛季",
 					"last-patch": "最新补丁",
 					"past-30": "过去 30 天内",
@@ -954,7 +954,7 @@
 				"tier": "T{{value}}",
 				"data-points": "{{value}} 场对局",
 				"player-data-points": "{{value}}",
-				"player-data-points-tooltip": "选择这个英雄的次数",
+				"player-data-points-tooltip": "选择这个英雄的游戏次数",
 				"player-average-position-tooltip": "选择这个英雄的平均排名",
 				"header-hero-details": "英雄",
 				"header-average-position": "平均排名",
@@ -968,11 +968,11 @@
 			},
 			"strategies": {
 				"date": "发布于 {{date}} (版本{{patch}})",
-				"curve-label": "曲线: ",
+				"curve-label": "路线：",
 				"curve": {
 					"name": {
 						"basic": "常规路线",
-						"fast-basic": "常规路线（跳4）",
+						"fast-basic": "速本常规路线",
 						"jeef": "迟2本路线",
 						"fast-jeef": "迟2本路线（跳4本）",
 						"slow-jeef": "迟2本路线（迟3本）",
@@ -1119,15 +1119,15 @@
 				"default-deck-name-blank": "对决模式套牌"
 			},
 			"tier-list": {
-				"header": "",
-				"header-hero-details": "",
-				"header-winrate": "",
-				"header-placement-distribution": "",
-				"tier": "",
-				"data-points": "",
-				"player-data-points": "",
-				"player-data-points-tooltip": "",
-				"player-winrate-tooltip": ""
+				"header": "评级表 ({{value}} 场对战) ",
+				"header-hero-details": "卡牌",
+				"header-winrate": "胜率",
+				"header-placement-distribution": "排名分布",
+				"tier": "T{{value}}",
+				"data-points": "{{value}} 轮",
+				"player-data-points": "{{value}}",
+				"player-data-points-tooltip": "选择这张牌的游戏次数",
+				"player-winrate-tooltip": "选择这个英雄的平均胜率"
 			},
 			"hero-stat": {
 				"global-winrate": "全球胜率",
@@ -1341,7 +1341,7 @@
 			"xp-graph-title": "经验图"
 		},
 		"tips": {
-			"tip-0": "",
+			"tip-0": "如果想要反馈、汇报Bug或者联系Firestone社区，请点击上方的Discord链接",
 			"tip-1": "点击顶部的“帮助”图标查看应用的最新更新日志",
 			"tip-2": "点击顶部的\"Bug\"图标报告错误或提交建议",
 			"tip-3": "如果您遇到了严重的错误（例如收藏无法同步，记牌器无法正常工作等），请尝试以管理员身份运行此应用。",
@@ -1410,6 +1410,9 @@
 		},
 		"vanessa": {
 			"player": "您的对手使用的上一张牌是 {{value}}"
+		},
+		"overdraft": {
+			"player": "强行透支：{{value}}点伤害"
 		},
 		"anachronos": {
 			"player": "随从将会在 {{value}} 个回合后返回"
@@ -1789,6 +1792,7 @@
 			"remove-minion-button-tooltip": "移除随从",
 			"versus": "VS",
 			"simulate-button": "模拟",
+			"simulating-button": "正在模拟对战...",
 			"simulate-button-tooltip": "以新站位模拟上场战斗",
 			"reset-button": "重置",
 			"export-button": "复制",
@@ -1914,6 +1918,7 @@
 			"minions-list": {
 				"reset-button": "重置",
 				"mechanics-tier-tooltip": "查看全部{{value}}类型的随从",
+				"buddies-tier-tooltip": "查看所有战棋伙伴",
 				"highlight-tribe": "点击以高亮显示酒馆中所有的 {{value}}",
 				"unhighlight-tribe": "点击以取消突出显示酒馆中的 {{value}}",
 				"highlight-mechanics": "特殊标记{{value}}类型的随从",
@@ -2416,6 +2421,8 @@
 					"monstrous-parrot-tooltip": "当“巨型鹦鹉”在您的手牌中时，显示您最后触发的己方亡语（如果有的话）",
 					"vanessa-label": "梵妮莎·范克里夫",
 					"vanessa-tooltip": "当“梵妮莎·范克里夫”在您手牌中时，显示对手打出的最后一张卡牌",
+					"overdraft-label": "强行透支",
+					"overdraft-tooltip": "当“强行透支”在牌库或手牌中时，显示其可造成的伤害",
 					"bonelord-frostwhisper-label": "白骨领主霜语",
 					"bonelord-frostwhisper-tooltip": "在“白骨领主霜语”死亡后，追踪剩余存活回合数",
 					"anachronos-label": "阿纳克洛斯",
@@ -2529,8 +2536,8 @@
 				"show-hero-tooltip-tooltip": "选择英雄时，鼠标悬停在英雄头像上会显示英雄的统计数据和玩法建议",
 				"show-hero-tier-label": "显示英雄评级",
 				"show-hero-tier-tooltip": "在选择英雄时在英雄头像上显示英雄评级和全球平均名次。",
-				"show-hero-tips-label": "",
-				"show-hero-tips-tooltip": "",
+				"show-hero-tips-label": "显示玩法建议",
+				"show-hero-tips-tooltip": "神奇的智慧之球将会在鼠标悬停时显示职业玩家建议",
 				"show-overlay-button": "显示浮窗按钮",
 				"show-overlay-button-tooltip": "在主界面上显示一个切换主界面的按钮，可用来代替快捷键",
 				"popup-post-match-stats-label": "自动弹出赛后数据",
