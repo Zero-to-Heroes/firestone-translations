@@ -35,7 +35,7 @@
 			"mercenaries-pve": "マーセナリーズ PvE",
 			"practice": "練習",
 			"casual": "カジュアル",
-			"friendly": "",
+			"friendly": "フレンド対戦",
 			"arena": "闘技場",
 			"tavern-brawl": "酒場の喧嘩"
 		},
@@ -514,7 +514,7 @@
 						"error-need-mana": "マナがない",
 						"error-minion-attacked": "ミニオンが攻撃済み",
 						"error-i-attacked": "攻撃済み",
-						"error-just-played": "",
+						"error-just-played": "プレイできない",
 						"error-hand-full": "ハンドがいっぱい",
 						"error-full-minions": "ミニオンがいっぱい",
 						"error-stealth": "隠れ身が選べない",
@@ -545,41 +545,41 @@
 			"pack-stats": {
 				"title": "",
 				"best-opened-packs-title": "",
-				"best-opened-packs-title-tooltip": "",
-				"pack-stat-tooltip": "",
-				"main-sets-group-name": "",
-				"non-buyable-group-name": "",
-				"other-group-name": ""
+				"best-opened-packs-title-tooltip": "Firestone起動中に開けた最高のパック",
+				"pack-stat-tooltip": "ハースストーンを始めてから {{totalPacks}} 個の {{packName}} のパックを入手しました",
+				"main-sets-group-name": "通常パック ({{totalPacks}} 個)",
+				"non-buyable-group-name": "特殊パック ({{totalPacks}} 個)",
+				"other-group-name": "その他 ({{totalPacks}} 個)"
 			},
 			"set-stats": {
-				"title": "",
-				"packs-received": "",
-				"packs-received-tooltip": "",
-				"best-known-pack": "",
-				"dust": "",
-				"dust-tooltip": "",
-				"duplicate-dust": "",
-				"duplicate-dust-tooltip": "",
-				"golden-dust": "",
-				"golden-dust-tooltip": "",
+				"title": "セット統計",
+				"packs-received": "入手したパック",
+				"packs-received-tooltip": "未開封を含む、今まで入手した全てのパック",
+				"best-known-pack": "最も記憶に残るパック",
+				"dust": "魔素",
+				"dust-tooltip": "セットのコンプリートには {{value}} 魔素が必要です",
+				"duplicate-dust": "余分なカードの魔素",
+				"duplicate-dust-tooltip": "ゴールデン以外の余分なカードを還元すると、 {{value}} 魔素が手に入ります。",
+				"golden-dust": "ゴールデンカードの魔素",
+				"golden-dust-tooltip": "セットのゴールデン版のコンプリートには {{value}} 魔素が必要です",
 				"golden-duplicate-dust": "",
 				"golden-duplicate-dust-tooltip": "",
 				"commons": "コモン",
-				"commons-missing": "",
+				"commons-missing": "必要枚数所持していないコモンカード",
 				"rares": "レア",
-				"rares-missing": "",
+				"rares-missing": "通常版を必要数所持していないレアカード",
 				"epics": "エピック",
-				"epics-missing": "",
+				"epics-missing": "通常版を必要数所持していないエピックカード",
 				"legendaries": "レジェンド",
-				"legendaries-missing": "",
+				"legendaries-missing": "通常版を必要数所持していないレジェンドカード",
 				"golden-commons": "",
-				"golden-commons-missing": "",
+				"golden-commons-missing": "ゴールデン版を必要数所持していないコモンカード",
 				"golden-rares": "",
-				"golden-rares-missing": "",
+				"golden-rares-missing": "ゴールデン版を必要数所持していないレアカード",
 				"golden-epics": "",
-				"golden-epics-missing": "",
+				"golden-epics-missing": "ゴールデン版を必要数所持していないエピックカード",
 				"golden-legendaries": "",
-				"golden-legendaries-missing": ""
+				"golden-legendaries-missing": "ゴールデン版を必要数所持していないレジェンドカード"
 			},
 			"sets": {
 				"coming-soon": "",
@@ -609,8 +609,8 @@
 					"subtitle": "綴りをチェックするか、より少なく具体的な用語を試してください。"
 				},
 				"default": {
-					"title": "",
-					"subtitle": ""
+					"title": "ここには何もありません",
+					"subtitle": "コレクションを同期するには、ハースストーンを開始してください。"
 				}
 			}
 		},
@@ -703,28 +703,28 @@
 				"win-play-total-header": "先攻勝利数",
 				"matches-going-first": "先攻で {{totalMatches}} 試合プレイ",
 				"win-coin-percent-header": "後攻勝率",
-				"win-coin-total-header": "",
-				"matches-going-second": "",
-				"total-header": "",
-				"show-as-percent-button-label": "",
-				"reset-button-label": "",
-				"reset-button-tooltip": "",
-				"reset-confirmation": "",
-				"reset-are-you-sure": "",
-				"delete-button-label": "",
-				"delete-button-step-2": "",
-				"delete-confirmation": "",
-				"delete-tooltip": ""
+				"win-coin-total-header": "後攻勝利数",
+				"matches-going-second": "後攻で {{totalMatches}} 試合プレイ",
+				"total-header": "合計",
+				"show-as-percent-button-label": "%で表示",
+				"reset-button-label": "戦績をリセットする",
+				"reset-button-tooltip": "現在のデッキの戦績をリセットします。以前の試合は引き続きリプレイタブに表示されます。",
+				"reset-confirmation": "戦績がリセットされました。",
+				"reset-are-you-sure": "本当によろしいですか？",
+				"delete-button-label": "デッキを削除する",
+				"delete-button-step-2": "削除する",
+				"delete-confirmation": "全ての統計からこのデッキが完全に削除され、元に戻すことはできません。",
+				"delete-tooltip": "デッキを削除します。元に戻すことはできません。ただ非表示にしたい場合は、デッキをアーカイブすることもできます。"
 			},
 			"deck-details": {
-				"copy-deck-code-button": "",
+				"copy-deck-code-button": "デッキコードをコピー",
 				"deck-archived": ""
 			},
 			"deck-recap": {
 				"overall-stats-header": "",
-				"watch-replays-button": "",
+				"watch-replays-button": "リプレイを見る",
 				"best-against": "",
-				"winrate": "",
+				"winrate": "勝率",
 				"games": ""
 			},
 			"deck-summary": {
@@ -734,7 +734,7 @@
 				"created-on": "",
 				"move-button-tooltip": "",
 				"archive-button-tooltip": "",
-				"restore-button-tooltip": "",
+				"restore-button-tooltip": "このデッキを復元",
 				"default-deck-name": ""
 			},
 			"decks": {
@@ -1069,9 +1069,9 @@
 				},
 				"game-mode": {
 					"all": "",
-					"all-tooltip": "",
+					"all-tooltip": "コミュニティの統計はヒロイックのデータのみを表示します。自分の統計はカジュアルとヒロイックの両方を表示します。",
 					"casual": "カジュアル",
-					"casual-tooltip": "",
+					"casual-tooltip": "コミュニティの統計はヒロイックのデータのみを表示します。自分の統計はカジュアルのみを表示します。",
 					"heroic": ""
 				},
 				"hero": {
@@ -1240,12 +1240,12 @@
 				"or": "",
 				"import-deck-button-title": "",
 				"import-deck-button-tooltip": "",
-				"missing-dust-tooltip": "",
+				"missing-dust-tooltip": "デッキを作るには {{value}} 魔素不足しています",
 				"part-of-multiple-buckets-tooltip": ""
 			},
 			"empty-state": {
 				"title": "",
-				"subtitle": ""
+				"subtitle": "デュエルをプレイして情報を受け取ろう"
 			}
 		},
 		"achievements": {
@@ -1288,9 +1288,9 @@
 					"ranked-standard": "",
 					"ranked-wild": "",
 					"ranked-classic": "",
-					"both-duels": "",
-					"duels": "",
-					"paid-duels": "",
+					"both-duels": "デュエル (全て)",
+					"duels": "デュエル (カジュアル)",
+					"paid-duels": "デュエル (ヒロイック)",
 					"arena": "競技場",
 					"casual": "カジュアル",
 					"friendly": "",
@@ -1571,7 +1571,7 @@
 				"text": ""
 			},
 			"arena": {
-				"title": "競技場",
+				"title": "闘技場",
 				"text": ""
 			},
 			"replays": {
@@ -1775,7 +1775,7 @@
 		"card-transformed": "",
 		"card-discarded": "",
 		"card-countered": "",
-		"card-in-graveyard": "墓地で",
+		"card-in-graveyard": "墓地",
 		"gift-created-by-single-card": "作成：<br/>{{value}}",
 		"gift-created-by-multiple-cards": "作成：<br/>複数のエンティティ",
 		"unnamed-player": "",
