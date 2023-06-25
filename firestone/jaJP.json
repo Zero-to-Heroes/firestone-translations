@@ -29,7 +29,7 @@
 			"casual-duels": "デュエル",
 			"heroic-duels": "デュエル (ヒロイック)",
 			"battlegrounds": "バトルグラウンド",
-			"battlegrounds-friendly": "バトルグラウンド(フレンド対戦)",
+			"battlegrounds-friendly": "バトルグラウンド (フレンド対戦)",
 			"mercenaries": "マーセナリーズ",
 			"mercenaries-pvp": "マーセナリーズ PvP",
 			"mercenaries-pve": "マーセナリーズ PvE",
@@ -234,6 +234,10 @@
 			"hrs-min": "{{hrs}}時間{{min}}分",
 			"min": "{{min}}分",
 			"sec": "{{sec}}秒"
+		},
+		"social": {
+			"discord": "",
+			"twitter": ""
 		}
 	},
 	"app": {
@@ -368,7 +372,7 @@
 				"load-runs-button": "さらに読み込む"
 			},
 			"empty-state": {
-				"title": "ここにはまだ何もありません",
+				"title": "まだ何もありません",
 				"subtitle": "闘技場をプレイして情報を受け取ろう"
 			}
 		},
@@ -838,7 +842,7 @@
 				"time": {
 					"past-seven": "過去7日間",
 					"past-three": "過去3日間",
-					"last-patch": "最新のパッチ",
+					"last-patch": "最新パッチ",
 					"past-100": "全期間",
 					"past-30": "過去30日間"
 				},
@@ -865,27 +869,27 @@
 					"average-position": "平均順位",
 					"games-played": "プレイ回数",
 					"net-mmr": "Net MMR",
-					"net-mmr-tooltip": ""
+					"net-mmr-tooltip": "1試合あたりの平均獲得/喪失 MMR"
 				},
 				"hero-details": {
 					"tabs": {
 						"mmr": "レーティング",
-						"final-warbands": "",
-						"warband-stats": "",
-						"winrate-stats": "",
-						"strategies": ""
+						"final-warbands": "前回の戦場",
+						"warband-stats": "戦場のステータス",
+						"winrate-stats": "戦闘勝率",
+						"strategies": "戦略"
 					},
 					"stats": {
-						"title": "",
-						"games-played": "",
-						"average-position": "",
+						"title": "全体統計",
+						"games-played": "プレイ回数",
+						"average-position": "平均順位",
 						"top-1": "1位",
 						"top-4": "トップ 4",
-						"community-value-tooltip": "",
-						"net-mmr": "",
-						"net-mmr-tooltip": "",
-						"avg-mmr-gain": "",
-						"avg-mmr-gain-tooltip": "",
+						"community-value-tooltip": "コミュニティの平均順位",
+						"net-mmr": "平均MMR",
+						"net-mmr-tooltip": "1試合あたりの平均獲得/喪失 MMR",
+						"avg-mmr-gain": "平均獲得MMR",
+						"avg-mmr-gain-tooltip": "1試合あたりの平均獲得 MMR",
 						"avg-mmr-loss": "",
 						"avg-mmr-loss-tooltip": ""
 					},
@@ -895,7 +899,7 @@
 						"damage-dealt-tooltip": "",
 						"damage-taken": "",
 						"damage-taken-tooltip": "",
-						"empty-state-message": "",
+						"empty-state-message": "このヒーローでバトルグラウンドを遊んで、情報を集めよう",
 						"finished-position": "{{value}}位",
 						"last-board": "",
 						"long-ago": "",
@@ -922,12 +926,12 @@
 						"stat-label": ""
 					},
 					"mmr": {
-						"empty-state-message": ""
+						"empty-state-message": "このヒーローでバトルグラウンドを遊んで、情報を集めよう"
 					}
 				},
 				"rating": {
 					"title": "",
-					"empty-state-message": "",
+					"empty-state-message": "バトルグラウンドを遊んで、情報を集めよう",
 					"axis-label": ""
 				},
 				"records": {
@@ -1280,7 +1284,7 @@
 				"game-mode": {
 					"all": "",
 					"battlegrounds": "バトルグラウンド",
-					"battlegrounds-friendly": "",
+					"battlegrounds-friendly": "バトルグラウンド (フレンド対戦)",
 					"mercenaries-all": "マーセナリーズ (All)",
 					"mercenaries-pve": "マーセナリーズ PvE",
 					"mercenaries-pvp": "マーセナリーズ PvP",
@@ -1375,8 +1379,8 @@
 			"tip-4": "",
 			"tip-5": "[Mercenaries] ウィンドウを広くすることで、合計コイン数が表示できます",
 			"tip-6": "[Mercenaries] 各試合のチームの詳細を表示するには、リプレイで「Mercenaries(PvP)」オプションを選択してください。",
-			"tip-8": "",
-			"tip-9": "",
+			"tip-8": "[Battlegrounds] Alt + Bでバトルグラウンド用ウィンドウを表示することで、試合中も詳細な統計を確認できます。",
+			"tip-9": "[Battlegrounds] バトルグラウンド用ウィンドウの横幅を広げると、シミュレーターで平均ダメージとリーサル確率が確認できます",
 			"tip-10": "[Duels] 試合中に対戦相手の体力にマウスオーバーすると、最大体力が見えます",
 			"tip-11": "[Duels] 対戦相手の名前にマウスオーバーすると、相手のクラスが表示されます"
 		},
@@ -1402,6 +1406,20 @@
 			"copy-deck-tooltip": "",
 			"with-name": "",
 			"no-name": ""
+		},
+		"lottery": {
+			"title": "",
+			"info-text": "",
+			"resources": "",
+			"resources-tooltip": "",
+			"quilboars": "",
+			"quilboars-tooltip": "",
+			"spells": "",
+			"spells-tooltip": "",
+			"close-confirmation-text-1": "",
+			"close-confirmation-text-2": "",
+			"close-confirmation-button-cancel": "",
+			"close-confirmation-button-ok": ""
 		}
 	},
 	"turn-timer": {
@@ -1639,92 +1657,92 @@
 		},
 		"menu": {
 			"mercenaries-personal-hero-stats": "進捗",
-			"mercenaries-my-teams": "",
-			"mercenaries-hero-stats": "",
-			"mercenaries-compositions-stats": ""
+			"mercenaries-my-teams": "自分の PvP パーティ",
+			"mercenaries-hero-stats": "PvP ヒーロー",
+			"mercenaries-compositions-stats": "PvP パーティ"
 		},
 		"search": {
-			"hero-search-placeholder": ""
+			"hero-search-placeholder": "傭兵を検索..."
 		},
 		"empty-state": {
-			"title": "",
+			"title": "まだ何もありません",
 			"subtitle": "マーセナリーズを遊んでみよう！フィルターの確認もしてみてね :)"
 		},
 		"search-empty-state": {
 			"title": "マーセナリーズの戦歴が見つかりません",
-			"subtitle": ""
+			"subtitle": "照会またはフィルタの設定を変更してみてください"
 		},
 		"hero-stats": {
-			"games-played": "",
-			"winrate": "",
-			"equipments": "",
-			"global-winrate": "",
-			"your-winrate": "",
-			"abilities": "",
-			"global-usage": "",
-			"global-usage-tooltip": "",
-			"your-usage": "",
-			"your-usage-tooltip": "",
-			"number-of-games-tooltip": "",
+			"games-played": "プレイ回数",
+			"winrate": "勝率",
+			"equipments": "装備",
+			"global-winrate": "全体勝率",
+			"your-winrate": "自分の勝率",
+			"abilities": "能力",
+			"global-usage": "全体の使用状況",
+			"global-usage-tooltip": "コミュニティ全体で各能力が一度に何回使用されているか",
+			"your-usage": "自分の使用状況",
+			"your-usage-tooltip": "自分が、各能力を一度に何回使用しているか",
+			"number-of-games-tooltip": "{{totalMatches}} 回の試合が行われました (人気度: {{popularity}})",
 			"level-header": "レベル",
-			"role-header": "",
-			"name-header": "",
+			"role-header": "兵種",
+			"name-header": "名前",
 			"xp-header": "XP",
-			"coins-left-header": "",
-			"coins-left-header-tooltip": "",
-			"coins-needed-header": "",
-			"coins-needed-header-tooltip": "",
-			"coins-to-farm-header": "",
-			"coins-to-farm-header-tooltip": "",
-			"completed-tasks-header": "",
+			"coins-left-header": "残コイン数",
+			"coins-left-header-tooltip": "この傭兵のために用意された合計コイン数",
+			"coins-needed-header": "コインが必要です",
+			"coins-needed-header-tooltip": "この葉柄の完全アップグレードに必要な残りの合計コイン数",
+			"coins-to-farm-header": "稼げるコイン",
+			"coins-to-farm-header-tooltip": "この傭兵の完全アップグレードに必要なコイン数 (すでに所持しているコインと仕事の報酬として入手できるコインを除く)",
+			"completed-tasks-header": "完了した仕事",
 			"abilities-header": "能力",
-			"equipments-header": "",
-			"max-level": "",
-			"xp-tooltip": "",
-			"bounties-to-farm": "",
-			"current-task-tooltip": "",
-			"maxed": "",
-			"coins-to-farm-tooltip": "",
+			"equipments-header": "装備",
+			"max-level": "最高レベル！",
+			"xp-tooltip": "{{value}} XP",
+			"bounties-to-farm": "コインの稼ぎ場所",
+			"current-task-tooltip": "アプリが起動中で、キャンプファイアーにいるときのみ仕事が更新されます。",
+			"maxed": "アップグレード完了！",
+			"coins-to-farm-tooltip": "未完了の仕事から {{value}} コイン獲得できます",
 			"empty-state-subtitle": "情報を更新するため、ハースストーンの傭兵村を訪れて下さい",
-			"current-task-tooltip-title": "",
-			"next-task-tooltip-title": ""
+			"current-task-tooltip-title": "現在の仕事 {{taskNumber}}: {{taskTitle}}",
+			"next-task-tooltip-title": "次の仕事 {{taskNumber}}: {{taskTitle}}"
 		},
 		"teams": {
 			"team": "パーティ",
-			"global-winrate": "",
-			"total-matches": "",
-			"games": "",
-			"winrate": "",
-			"last-used": "",
-			"archive-button-tooltip": "",
-			"restore-button-tooltip": "",
-			"unnamed-team": ""
+			"global-winrate": "全体勝率",
+			"total-matches": "全試合",
+			"games": "{{value}} 試合",
+			"winrate": "勝率 {{value}}%",
+			"last-used": "前回使用: {{value}}",
+			"archive-button-tooltip": "パーティをアーカイブ (後で復元できます)",
+			"restore-button-tooltip": "このパーティを復元",
+			"unnamed-team": "名称未設定のパーティ"
 		},
 		"team-widget": {
-			"cooldown-left-tooltip": "",
-			"number-of-users-tooltip": "",
-			"base-speed-text": "",
-			"speed-buff": "",
-			"speed-debuff": "",
-			"empty-state": "",
-			"merc-level-tooltip": "",
-			"unrecognized-mercenary": "",
-			"unknown-mercenary": "",
+			"cooldown-left-tooltip": "再使用まで {{value}} ターンのクールダウン中",
+			"number-of-users-tooltip": "この戦闘中、傭兵がこの能力を使用した回数",
+			"base-speed-text": "基本速度: {{value}}",
+			"speed-buff": "この能力は次のターンに {{value}} 速くなります",
+			"speed-debuff": "この能力は次のターンに {{value}} 遅くなります",
+			"empty-state": "パーティを確認するため、賞金稼ぎか PvP 対戦に行く",
+			"merc-level-tooltip": "現在の傭兵レベル",
+			"unrecognized-mercenary": "未確認の傭兵",
+			"unknown-mercenary": "不明な傭兵",
 			"tasks-button": "仕事",
-			"tasks-completed": "",
+			"tasks-completed": "全ての仕事を完了しました",
 			"task-title": "仕事{{taskNumber}}：{{taskTitle}}",
-			"task-progress-label": "",
-			"task-progress-tooltip": "",
-			"create-team-button-label": "",
-			"create-team-button-tooltip": "",
-			"create-team-button-ok-label": "",
-			"task-team-default-name": "",
-			"roles-chart-button": "",
+			"task-progress-label": "進捗：",
+			"task-progress-tooltip": "戦闘開始時のクエスト進捗",
+			"create-team-button-label": "{{mercName}} のパーティを作成",
+			"create-team-button-tooltip": "{{mercName}} の仕事を完了するためのパーティを作成します。設定で誰が空席を埋めるかを設定できます。",
+			"create-team-button-ok-label": "パーティコードをクリップボードにコピーしました",
+			"task-team-default-name": "{{mercName }} の仕事用パーティ",
+			"roles-chart-button": "兵種チャート",
 			"turn-counter": {
 				"turns": "ターン",
-				"current-battle-turn-tooltip": "",
-				"total-map-turns-error-tooltip": "",
-				"total-map-turns-tooltip": ""
+				"current-battle-turn-tooltip": "現在のターン",
+				"total-map-turns-error-tooltip": "現在のターンを取得できませんでした。データを更新するには、マップ画面に戻ってください。",
+				"total-map-turns-tooltip": "この挑戦のターン数"
 			}
 		}
 	},
@@ -2016,10 +2034,10 @@
 			"opponent-not-met": "",
 			"last-board-empty": "",
 			"total-damage": "",
-			"stats-share-warning": ""
+			"stats-share-warning": "複数のミニオンは、ゴールデン版と同じステータスを持っています（バトルグラウンドの内部コードによると）"
 		},
 		"empty-state-title": "",
-		"empty-state-subtitle": ""
+		"empty-state-subtitle": "バトルグラウンドを遊んで、情報を集めよう"
 	},
 	"duels": {
 		"hero-info": {
@@ -2047,7 +2065,7 @@
 		"title-tooltip": "",
 		"display-mode": {
 			"all": "",
-			"battlegrounds": "",
+			"battlegrounds": "バトルグラウンド",
 			"unknown": ""
 		},
 		"buttons": {
@@ -2106,7 +2124,7 @@
 		"menu": {
 			"general": "",
 			"decktracker": "",
-			"battlegrounds": "",
+			"battlegrounds": "バトルグラウンド",
 			"mercenaries": "マーセナリーズ",
 			"replays": "",
 			"collection": "コレクション",
@@ -2205,7 +2223,7 @@
 			},
 			"twitch": {
 				"title": "",
-				"intro": "",
+				"intro": "Twitch用 Firestone 拡張機能を使えば、配信中にTwitch視聴者がマウスオーバーで他のプレイヤーの情報を確認できるようになります。有効化するには以下を行います：",
 				"todo-1": "",
 				"todo-2": "",
 				"todo-3": "",
@@ -2263,9 +2281,9 @@
 				"title": "",
 				"text-1": "",
 				"link": "",
-				"overlay-ad-block-title": "",
-				"overlay-ad-block-text": "",
-				"overlay-ad-button-text": ""
+				"lottery-block-title": "",
+				"lottery-block-text": "",
+				"lottery-button-text": ""
 			},
 			"data": {
 				"remote-title": "",
@@ -2307,8 +2325,8 @@
 				"constructed-on-hub-tooltip": "",
 				"constructed-on-bg-label": "",
 				"constructed-on-bg-tooltip": "",
-				"battlegrounds-label": "",
-				"battlegrounds-tooltip": "",
+				"battlegrounds-label": "バトルグラウンド",
+				"battlegrounds-tooltip": "試合中とメイン画面で、バトルグラウンド用のクエストウィジェットを表示する",
 				"mercenaries-label": "マーセナリーズ",
 				"mercenaries-tooltip": "マーセナリーズの全ての場面で、仕事のウィジェットを表示する。それを起動すると、チームリスト画面から仕事確認ボタンが削除されます。"
 			}
@@ -2565,13 +2583,13 @@
 				"overlay": "",
 				"session": ""
 			},
-			"full-toggle-label": "",
-			"full-toggle-tooltip": "",
+			"full-toggle-label": "バトルグラウンドで機能を有効化",
+			"full-toggle-tooltip": "オフにすると、全てのバトルグラウンド用のライブ機能が無効化されます",
 			"general": {
 				"companion-app-title": "",
 				"enable-app-label": "",
 				"integrated-mode-label": "",
-				"integrated-mode-tooltip": "",
+				"integrated-mode-tooltip": "オンにすると、バトルグラウンド用ウィンドウがオーバーレイになり、ゲームウィンドウとバインドされます。シングルモニターの場合や、アプリを配信に載せたい場合にオススメです。",
 				"enable-battle-sim-label": "",
 				"enable-battle-sim-tooltip": "",
 				"hide-simulation-label": "",
@@ -2599,7 +2617,7 @@
 				"show-overlay-button": "",
 				"show-overlay-button-tooltip": "",
 				"popup-post-match-stats-label": "",
-				"popup-post-match-stats-tooltip": "",
+				"popup-post-match-stats-tooltip": "オンにすると、バトルグラウンド用ウィンドウを最小化していた場合でも、試合後にウィンドウを復元し戦績を表示します。",
 				"show-game-end-notif-label": "",
 				"show-game-end-notif-tooltip": "",
 				"simulator-config-title": "",
@@ -2690,8 +2708,8 @@
 		},
 		"mercenaries": {
 			"menu": {
-				"general": "",
-				"quests": ""
+				"general": "全般",
+				"quests": "クエスト"
 			},
 			"general": {
 				"player-team-widget-label": "",
@@ -2773,7 +2791,7 @@
 		"move-magnifier-icon-on-top": "",
 		"move-magnifier-icon-on-top-tooltip": "",
 		"constructed-section-title": "",
-		"battlegrounds-section-title": "",
+		"battlegrounds-section-title": "バトルグラウンド",
 		"could-not-log-error-title": "",
 		"could-not-log-error-text": "",
 		"settings-side-text": "",
