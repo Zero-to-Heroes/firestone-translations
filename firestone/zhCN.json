@@ -90,7 +90,8 @@
 			"path_of_arthas": "阿尔萨斯之路",
 			"return_to_naxxramas": "重返纳克萨玛斯",
 			"tb": "乱斗模式",
-			"battle_of_the_bands": "传奇音乐节"
+			"battle_of_the_bands": "传奇音乐节",
+			"audiopocalypse": "音乐之劫"
 		},
 		"pack": {
 			"classic": "经典模式 卡牌包",
@@ -241,6 +242,11 @@
 			"battlegrounds-header": "酒馆战棋",
 			"mercenaries-header": "佣兵战纪",
 			"profile-header": "个人页面",
+			"profile-overview-header": "个人概况",
+			"profile-share-button-text": "分享",
+			"profile-shared-button-text": "取消分享",
+			"profile-share-button-tooltip": "与其他人分享您的个人概况页面",
+			"profile-shared-button-tooltip": "您的个人概况目前以“{{shareAlias}}”的形式共享，任何人都可以看到此链接。点击停止共享。",
 			"duels-header": "对决模式",
 			"duels-hero-header": "英雄",
 			"duels-hero-power-header": "英雄技能",
@@ -316,6 +322,10 @@
 			"startup": {
 				"firestone-ready-title": "Firestone 已准备就绪",
 				"firestone-ready-text": "感谢您对我们的支持！"
+			},
+			"client-config": {
+				"title": "客户端配置已更新",
+				"message": "炉石传说游戏配置文件已更新。请重启游戏使应用正常工作。"
 			}
 		},
 		"loading": {
@@ -960,7 +970,7 @@
 			},
 			"tier-list": {
 				"header": "英雄评级表 ( {{value}} 场对战) ",
-				"tier": "T{{value}}",
+				"tier": "{{value}}级",
 				"data-points": "{{value}} 场对局",
 				"player-data-points": "{{value}}",
 				"player-data-points-tooltip": "选择这个英雄的游戏次数",
@@ -1136,7 +1146,7 @@
 				"header-hero-details": "卡牌",
 				"header-winrate": "胜率",
 				"header-placement-distribution": "排名分布",
-				"tier": "T{{value}}",
+				"tier": "{{value}}级",
 				"data-points": "{{value}} 轮",
 				"player-data-points": "{{value}}",
 				"player-data-points-tooltip": "选择这张牌的游戏次数",
@@ -1314,7 +1324,7 @@
 				"bgs-perfect-game-result": "精彩",
 				"deck-name-tooltip": "使用 {{value}}",
 				"bgs-result": {
-					"1": "冠军",
+					"1": "吃鸡",
 					"2": "第二",
 					"3": "第三",
 					"4": "第四",
@@ -1427,6 +1437,12 @@
 		},
 		"vanessa": {
 			"player": "敌方使用的上一张牌：{{value}}"
+		},
+		"lightray": {
+			"player": "你使用过{{value}张圣骑士牌，光鳐的费用减少{{lightray}}"
+		},
+		"naga-giant": {
+			"player": "友方纳迦巨人法力值消耗：{{cost}}（本局对战你已使用法术：{{spells}}个）"
 		},
 		"menagerie": {
 			"player": "你已使用过的随从类型数：{{value}}"
@@ -1998,7 +2014,7 @@
 			"seen-just-now": "上回合阵容",
 			"seen-turns-ago": "{{value}} 个回合前的阵容",
 			"opponent-not-met": "您未曾与这名对手交手",
-			"last-board-empty": "上回合空城了",
+			"last-board-empty": "上次遇见空城",
 			"total-damage": "伤害总计",
 			"stats-share-warning": "由于酒馆战棋的内部代码设定，多个同类的随从以及金色的随从会共享统计的数值"
 		},
@@ -2100,6 +2116,7 @@
 			"menu": {
 				"general": "通用",
 				"localization": "本地化",
+				"premium": "会员",
 				"bug-report": "提交错误",
 				"third-party": "第三方",
 				"broadcast": "Twitch",
@@ -2241,6 +2258,14 @@
 				"text-2": "如果您想要参与Firestone的翻译，请查看 {{link}} 的教程。",
 				"link": "此处",
 				"text-3": "你可以重启Firestone以确保正常加载所有翻译。左侧“通用”栏中有“重启应用”按钮。"
+			},
+			"premium": {
+				"title": "会员选项",
+				"text-1": "开通会员可以支持Firestone和开发者，还可以解锁高级功能。这包括悬浮窗挂件、个人专属主页等功能（前往{{link}}查看详情）",
+				"link": "在Wiki上",
+				"overlay-ad-block-title": "悬浮广告（测试功能）",
+				"overlay-ad-block-text": "你可以选择在游戏的左下角主动显示广告来解锁高级功能，不过并不包括个人专属主页和那些需要占用侧边栏的功能。仅对测试用户开放。",
+				"overlay-ad-button-text": "开启悬浮广告"
 			},
 			"data": {
 				"remote-title": "远程数据",
@@ -2409,6 +2434,7 @@
 					"relic-tooltip": "显示对手下一个恶魔猎手“圣物”计数",
 					"hero-power-damage-label": "英雄技能伤害",
 					"hero-power-damage-tooltip": "显示本局对战中对手的英雄技能累计造成的伤害。仅当对手为法师且英雄技能已造成时显示",
+					"corpse-spent-tooltip": "当可能有相关卡牌时，显示本局对战中消耗的尸体数量（例如彩虹DK可能有通灵最强音）",
 					"shockspitter-tooltip": "显示当前对局中敌方英雄已攻击次数。仅当对手为猎人且英雄已至少攻击过一次时显示"
 				},
 				"size-title": "大小和透明度",
@@ -2445,6 +2471,8 @@
 					"monstrous-parrot-tooltip": "当“巨型鹦鹉”在你的手牌中时，显示最后触发的友方亡语（如果有）",
 					"vanessa-label": "梵妮莎·范克里夫",
 					"vanessa-tooltip": "当“梵妮莎·范克里夫”在你的手牌中时，显示对手使用的最后一张卡牌",
+					"lightray-label": "光鳐",
+					"lightray-tooltip": "当有需要时，显示本局对战中你使用的圣骑士牌的数量（相关卡牌：光鳐等）",
 					"menagerie-label": "随从类型数量",
 					"menagerie-tooltip": "当有需要时，显示本局对战中使用过的随从类型数量（相关卡牌：融合独奏团、滑铲铁腿）",
 					"corpse-spent-label": "消耗过的尸体",
@@ -2459,6 +2487,8 @@
 					"asvedon-tooltip": "当“巨盾卫士阿斯维顿”在你的手牌中时，显示对手使用的最后一张法术牌",
 					"murozond-label": "永恒巨龙姆诺兹多",
 					"murozond-tooltip": "当“永恒巨龙姆诺兹多”在你的手牌中时，显示对手上回合使用的所有卡牌，按使用顺序排序",
+					"naga-giant-label": "纳迦巨人",
+					"naga-giant-tooltip": "当你手牌或牌库中有法术时，显示纳迦巨人的实际法力值消耗（减少后）",
 					"shockspitter-label": "哮雷龙鹰",
 					"shockspitter-tooltip": "当“哮雷龙鹰”在你的手牌或牌库中时，显示其可造成的伤害",
 					"parrot-mascot-label": "吉祥物鹦鹉（冒险模式专属）",
@@ -2707,6 +2737,32 @@
 			"navigation-cta-header": "下载桌面应用",
 			"navigation-cta-text": "免费下载使用，即可在游戏里显示实时信息、英雄数据、职业玩家建议等信息",
 			"navigation-cta-button-text": "下载"
+		},
+		"spectator": {
+			"close-button-tooltip": "停止观看 {{playerName}}"
+		},
+		"battlegrounds": {
+			"games-played-label": "游玩：",
+			"games-played-tooltip": "使用这个英雄进行过的对局数量（当前帐号的所有时间，包括Firestone未启动、在手机上游玩等情况时的数据）",
+			"top-4-label": "前四",
+			"top-4-tooltip": "使用这个英雄得到过的前四的次数（当前帐号的所有时间，包括Firestone未启动、在手机上游玩等情况时的数据）",
+			"top-1-label": "吃鸡",
+			"top-1-tooltip": "使用这个英雄得到过的第一的次数（当前帐号的所有时间，包括Firestone未启动、在手机上游玩等情况时的数据）",
+			"games-played-label-global": "游玩",
+			"games-played-tooltip-global": "进行过的对局数量（当前帐号的所有时间，包括Firestone未启动、在手机上游玩等情况时的数据）",
+			"top-4-label-global": "前四",
+			"top-4-tooltip-global": "得到过的前四的次数（当前帐号的所有时间，包括Firestone未启动、在手机上游玩等情况时的数据）",
+			"top-1-label-global": "吃鸡",
+			"top-1-tooltip-global": "得到过的第一的次数（当前帐号的所有时间，包括Firestone未启动、在手机上游玩等情况时的数据）",
+			"games-played-label-global-with-bg": "战棋对局次数",
+			"top-4-label-global-with-bg": "战棋前四",
+			"top-1-label-global-with-bg": "战棋第一"
+		},
+		"collection": {
+			"packs": {
+				"overview-title": "总卡包数",
+				"overview-title-tooltip": "这个账号所获得过的卡包数量（包括未开的卡包）"
+			}
 		}
 	},
 	"twitch": {
