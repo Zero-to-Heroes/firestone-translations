@@ -429,10 +429,10 @@
 				},
 				"new-copy": "新規",
 				"second-copy": "2枚目のコピー",
-				"new-copy-long": "",
-				"second-copy-long": "",
+				"new-copy-long": "新規 {{version}} のカード：",
+				"second-copy-long": "2番目の {{version}} のコピー:",
 				"title": "カード履歴",
-				"you-have-viewed": "",
+				"you-have-viewed": "全 {{totalCards}} カード中 {{numberOfCards}} 枚を閲覧済み",
 				"load-more-button": "更に読み込む",
 				"empty-state-title": "履歴なし",
 				"empty-state-subtitle": "パックを開けてスタート！",
@@ -543,8 +543,8 @@
 				}
 			},
 			"pack-stats": {
-				"title": "",
-				"best-opened-packs-title": "",
+				"title": "今までに開封したパック ({{value}})",
+				"best-opened-packs-title": "開封したパックのベスト {{value}}",
 				"best-opened-packs-title-tooltip": "Firestone起動中に開けた最高のパック",
 				"pack-stat-tooltip": "ハースストーンを始めてから {{totalPacks}} 個の {{packName}} のパックを入手しました",
 				"main-sets-group-name": "通常パック ({{totalPacks}} 個)",
@@ -562,8 +562,8 @@
 				"duplicate-dust-tooltip": "ゴールデン以外の余分なカードを還元すると、 {{value}} 魔素が手に入ります。",
 				"golden-dust": "ゴールデンカードの魔素",
 				"golden-dust-tooltip": "セットのゴールデン版のコンプリートには {{value}} 魔素が必要です",
-				"golden-duplicate-dust": "",
-				"golden-duplicate-dust-tooltip": "",
+				"golden-duplicate-dust": "余分なゴールデンカードの魔素",
+				"golden-duplicate-dust-tooltip": "余分なゴールデンカードを還元すると、 {{value}} 魔素を入手できます",
 				"commons": "コモン",
 				"commons-missing": "必要枚数所持していないコモンカード",
 				"rares": "レア",
@@ -572,28 +572,28 @@
 				"epics-missing": "通常版を必要数所持していないエピックカード",
 				"legendaries": "レジェンド",
 				"legendaries-missing": "通常版を必要数所持していないレジェンドカード",
-				"golden-commons": "",
+				"golden-commons": "ゴールデン・コモン",
 				"golden-commons-missing": "ゴールデン版を必要数所持していないコモンカード",
-				"golden-rares": "",
+				"golden-rares": "ゴールデン・レア",
 				"golden-rares-missing": "ゴールデン版を必要数所持していないレアカード",
-				"golden-epics": "",
+				"golden-epics": "ゴールデン・エピック",
 				"golden-epics-missing": "ゴールデン版を必要数所持していないエピックカード",
-				"golden-legendaries": "",
+				"golden-legendaries": "ゴールデン・レジェンド",
 				"golden-legendaries-missing": "ゴールデン版を必要数所持していないレジェンドカード"
 			},
 			"sets": {
-				"coming-soon": "",
-				"next-guaranteed": "",
-				"pity-timer-reset-tooltip": "",
-				"pity-timer-reset-button": "",
-				"in-packs": "",
-				"browse-set-button": "",
-				"total-non-golden-cards": "",
-				"total-golden-cards": ""
+				"coming-soon": "近日公開！",
+				"next-guaranteed": "次の確定まで",
+				"pity-timer-reset-tooltip": "このカウントをリセットすると、エピックやレジェンド確定までのパック数を計算するとき、これまで開封した全てのパックが無視されます。",
+				"pity-timer-reset-button": "カウントをリセット",
+				"in-packs": "{{value}} パック以内",
+				"browse-set-button": "セットを閲覧",
+				"total-non-golden-cards": "集めた通常版カードの合計数",
+				"total-golden-cards": "集めたゴールデン、ダイアモンド、シグネチャーカードの合計数"
 			},
 			"empty-state": {
 				"no-missing-card-in-set": {
-					"title": "",
+					"title": "このセットをコンプリートしました！",
 					"subtitle": "素晴らしい！その調子！"
 				},
 				"no-card-in-set": {
@@ -1281,9 +1281,9 @@
 					"all": "",
 					"battlegrounds": "バトルグラウンド",
 					"battlegrounds-friendly": "",
-					"mercenaries-all": "",
-					"mercenaries-pve": "",
-					"mercenaries-pvp": "",
+					"mercenaries-all": "マーセナリーズ (All)",
+					"mercenaries-pve": "マーセナリーズ PvE",
+					"mercenaries-pvp": "マーセナリーズ PvP",
 					"ranked": "",
 					"ranked-standard": "",
 					"ranked-wild": "",
@@ -1319,7 +1319,7 @@
 				"show-stats-button-tooltip": "",
 				"watch-replay-button": "",
 				"watch-replay-button-tooltip": "",
-				"mercenaries-bot-opponent-name": "",
+				"mercenaries-bot-opponent-name": "酒場の親父 (AI Bot)",
 				"bgs-available-tribes-tooltip": "",
 				"bgs-perfect-game-result": "",
 				"deck-name-tooltip": "",
@@ -1351,7 +1351,7 @@
 			},
 			"merc-details-toggle": {
 				"label": "",
-				"tooltip": ""
+				"tooltip": "マーセナリーズのリプレイの追加情報を表示します"
 			},
 			"list": {
 				"load-more-button": "",
@@ -1361,7 +1361,7 @@
 		},
 		"mercenaries": {
 			"menu": {
-				"composition-details": ""
+				"composition-details": "編成の詳細"
 			}
 		},
 		"stats": {
@@ -1373,8 +1373,8 @@
 			"tip-2": "",
 			"tip-3": "重大なバグ (コレクションが同期しない、トラッカーが動作しない等) に遭遇した場合、アプリを管理者として実行してみてください",
 			"tip-4": "",
-			"tip-5": "",
-			"tip-6": "",
+			"tip-5": "[Mercenaries] ウィンドウを広くすることで、合計コイン数が表示できます",
+			"tip-6": "[Mercenaries] 各試合のチームの詳細を表示するには、リプレイで「Mercenaries(PvP)」オプションを選択してください。",
 			"tip-8": "",
 			"tip-9": "",
 			"tip-10": "[Duels] 試合中に対戦相手の体力にマウスオーバーすると、最大体力が見えます",
@@ -1584,7 +1584,7 @@
 			},
 			"collection": {
 				"title": "コレクション",
-				"text": ""
+				"text": "ゲーム内の全てのカードの詳細情報を閲覧できます (効果音を含む)"
 			}
 		}
 	},
@@ -1596,49 +1596,49 @@
 	},
 	"mercenaries": {
 		"filters": {
-			"show-hidden-teams-link-label": "",
-			"show-merc-names-in-teams-link-label": "",
+			"show-hidden-teams-link-label": "アーカイブを表示",
+			"show-merc-names-in-teams-link-label": "チーム名を表示",
 			"fully-upgraded": {
-				"all": "",
-				"upgraded": "",
-				"non-upgraded": ""
+				"all": "全てのアップグレード",
+				"upgraded": "完全アップグレード済み",
+				"non-upgraded": "アップグレードの余地あり"
 			},
 			"owned": {
-				"all": "",
-				"owned": "",
-				"non-owned": ""
+				"all": "所持もしくは未所持",
+				"owned": "所持のみ",
+				"non-owned": "未所持のみ"
 			},
 			"hero-level": {
-				"level-0": "",
+				"level-0": "全てのレベル",
 				"level-1": "レベル1～4",
 				"level-5": "レベル5～14",
 				"level-15": "レベル15～29",
 				"level-30": "レベル30"
 			},
 			"mode": {
-				"pve": "",
-				"pvp": ""
+				"pve": "PvE",
+				"pvp": "PvP"
 			},
 			"pve-difficulty": {
-				"all": "",
-				"normal": "",
-				"heroic": "",
+				"all": "全ての難易度",
+				"normal": "ノーマル",
+				"heroic": "ヒロイック",
 				"legendary": "レジェンド"
 			},
 			"role": {
-				"all": "",
+				"all": "全ての兵種",
 				"caster": "術師",
 				"protector": "護衛",
-				"fighter": ""
+				"fighter": "戦士"
 			},
 			"starter": {
-				"all": "",
-				"starter": "",
-				"bench": ""
+				"all": "全て",
+				"starter": "スタメン",
+				"bench": "ベンチ"
 			}
 		},
 		"menu": {
-			"mercenaries-personal-hero-stats": "",
+			"mercenaries-personal-hero-stats": "進捗",
 			"mercenaries-my-teams": "",
 			"mercenaries-hero-stats": "",
 			"mercenaries-compositions-stats": ""
@@ -1648,10 +1648,10 @@
 		},
 		"empty-state": {
 			"title": "",
-			"subtitle": ""
+			"subtitle": "マーセナリーズを遊んでみよう！フィルターの確認もしてみてね :)"
 		},
 		"search-empty-state": {
-			"title": "",
+			"title": "マーセナリーズの戦歴が見つかりません",
 			"subtitle": ""
 		},
 		"hero-stats": {
@@ -1685,7 +1685,7 @@
 			"current-task-tooltip": "",
 			"maxed": "",
 			"coins-to-farm-tooltip": "",
-			"empty-state-subtitle": "",
+			"empty-state-subtitle": "情報を更新するため、ハースストーンの傭兵村を訪れて下さい",
 			"current-task-tooltip-title": "",
 			"next-task-tooltip-title": ""
 		},
@@ -2309,8 +2309,8 @@
 				"constructed-on-bg-tooltip": "",
 				"battlegrounds-label": "",
 				"battlegrounds-tooltip": "",
-				"mercenaries-label": "",
-				"mercenaries-tooltip": ""
+				"mercenaries-label": "マーセナリーズ",
+				"mercenaries-tooltip": "マーセナリーズの全ての場面で、仕事のウィジェットを表示する。それを起動すると、チームリスト画面から仕事確認ボタンが削除されます。"
 			}
 		},
 		"decktracker": {
@@ -2534,25 +2534,25 @@
 		},
 		"collection": {
 			"menu": {
-				"general": ""
+				"general": "全般"
 			},
 			"general": {
-				"title": "",
-				"high-resolution-images-label": "",
-				"show-related-cards-label": "",
-				"show-related-cards-tooltip": "",
+				"title": "一般的な設定",
+				"high-resolution-images-label": "カードを高解像度で表示",
+				"show-related-cards-label": "関連するカードを表示",
+				"show-related-cards-tooltip": "カードにマウスオーバーすると、関連するカードが表示されます (生成されるカード等)",
 				"card-size-in-collection-label": "コレクション内のカードサイズ",
-				"notifications-label": "",
-				"selective-notifications-label": "",
-				"notifications-dust-recap-label": "",
-				"notifications-non-golden-commons-label": "",
-				"notifications-rewards-label": "",
+				"notifications-label": "通知を有効にする",
+				"selective-notifications-label": "有効な通知",
+				"notifications-dust-recap-label": "合計魔素",
+				"notifications-non-golden-commons-label": "通常版のコモンカード",
+				"notifications-rewards-label": "報酬",
 				"notifications-rewards-tooltip": "シーズン終了時や闘技場の報酬など、パック以外からカードを入手したときに通知する"
 			},
-			"history-show-only-new-cards": "",
-			"pack-stats-show-only-buyable-packs": "",
-			"pack-stats-show-only-buyable-packs-tooltip": "",
-			"set-show-golden-stats": ""
+			"history-show-only-new-cards": "新規カードのみ表示",
+			"pack-stats-show-only-buyable-packs": "メインパックのみ表示",
+			"pack-stats-show-only-buyable-packs-tooltip": "ショップで購入できるパックのみを表示し、全てのプロモーション/報酬パックを非表示にします",
+			"set-show-golden-stats": "ゴールデンの統計を表示"
 		},
 		"duels": {
 			"personal-decks-show-hidden-decks": "アーカイブを表示",
@@ -2705,7 +2705,7 @@
 				"action-queue-pve-label": "",
 				"action-queue-pve-tooltip": "",
 				"action-queue-pvp-label": "",
-				"action-queue-pvp-tooltip": "",
+				"action-queue-pvp-tooltip": "有効にすると、PvPで選択した能力の行動順が表示されます。戦闘開始まで対戦相手の能力がわからないため、自分の傭兵の行動のみが表示されます",
 				"role-chart-label": "",
 				"role-chart-tooltip": "",
 				"tasks-label": "",
@@ -2720,7 +2720,7 @@
 			},
 			"quests": {
 				"title": "",
-				"explanation": "",
+				"explanation": "仕事のチームを編成するときに、空席を埋める傭兵を6人まで選ぶ (左から順に選択される)",
 				"search-box-placeholder": "",
 				"empty-team": ""
 			}
@@ -2760,8 +2760,8 @@
 		},
 		"collection": {
 			"packs": {
-				"overview-title": "",
-				"overview-title-tooltip": ""
+				"overview-title": "合計パック数",
+				"overview-title-tooltip": "未開封を含む、入手した全てのパックの合計数"
 			}
 		}
 	},
