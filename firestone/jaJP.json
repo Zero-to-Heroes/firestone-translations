@@ -1164,7 +1164,7 @@
 				"wins-distribution-tooltip": "勝利数分布"
 			},
 			"run": {
-				"replays-title": "",
+				"replays-title": "同じ挑戦のリプレイ",
 				"rating": "レーティング",
 				"view-deck-button": "デッキを表示",
 				"view-run-button": "挑戦を表示",
@@ -1185,157 +1185,157 @@
 			"leaderboard": {
 				"rank": "ランク",
 				"rating": "レーティング",
-				"name": "",
-				"region": ""
+				"name": "名前",
+				"region": "地域"
 			},
 			"search": {
 				"hero": {
-					"placeholder": ""
+					"placeholder": "ヒーローを検索..."
 				},
 				"deck": {
-					"placeholder": "",
-					"placeholder-tooltip": ""
+					"placeholder": "デッキを検索...",
+					"placeholder-tooltip": "カード名を入力して、そのカードを含む開始時デッキを検索します"
 				},
 				"treasure": {
-					"placeholder": ""
+					"placeholder": "宝物を検索..."
 				}
 			},
 			"classes-recap": {
-				"title": "",
-				"total-runs": "",
-				"avg-wins-per-run": "",
-				"most-played-classes": "",
-				"best-winrate-classes": "",
-				"most-faced-classes": "",
-				"best-winrate-against": "",
-				"stat-tooltip": "",
-				"faced-tooltip": ""
+				"title": "統計概要",
+				"total-runs": "総挑戦数",
+				"avg-wins-per-run": "平均勝利数",
+				"most-played-classes": "最多プレイクラス",
+				"best-winrate-classes": "最高勝率のクラス",
+				"most-faced-classes": "最多対面クラス",
+				"best-winrate-against": "最も好相性の相手クラス",
+				"stat-tooltip": "{{playerClass}} で {{numberOfRuns}} 回挑戦し、 {{totalMatches}} 試合を行い、 勝率は {{winrate}} %でした",
+				"faced-tooltip": "{{opponentClass}}と {{totalMatches}} 回対戦し、 勝率は {{winrate}}%です"
 			},
 			"deckbuilder": {
-				"choose-your-hero-title": "",
-				"choose-your-hero-power-title": "",
-				"choose-your-signature-treasure-title": "",
-				"build-your-deck-title": "",
-				"go-back-hero": "",
-				"go-back-hero-power": "",
-				"go-back-signature-treasure": "",
-				"ongoing-deck-building": "",
-				"dk-runes-text": "",
-				"dk-runes-tooltip": "",
+				"choose-your-hero-title": "ヒーローを選ぼう",
+				"choose-your-hero-power-title": "ヒーローパワーを選ぼう",
+				"choose-your-signature-treasure-title": "愛用の宝物を選ぼう",
+				"build-your-deck-title": "デッキを作ろう",
+				"go-back-hero": "ヒーロー： {{selectedCardName}} - クリックしてヒーロー選択画面に戻る",
+				"go-back-hero-power": "ヒーローパワー： {{selectedCardName}} - クリックしてヒーローパワー選択画面に戻る",
+				"go-back-signature-treasure": "宝物： {{selectedCardName}} - クリックして愛用の宝物選択画面に戻る",
+				"ongoing-deck-building": "選択中 ({{currentCards}}枚 / {{maxCards}}枚)",
+				"dk-runes-text": "ルーン",
+				"dk-runes-tooltip": "デッキ内にあるデスナイトのルーン。デッキの構築は、デッキ内にあるデスナイトのルーンに基づいて制限されます (詳細は、ハースストーン内の情報を参照してください)",
 				"export-deckcode-button": "コードをコピー",
-				"save-deck-button": "",
-				"deck-saved-info": "",
-				"save-deckcode-button-tooltip": "",
-				"show-buckets-button-label": "",
-				"show-buckets-button-tooltip": "",
-				"bucket-filter-button-tooltip": "",
+				"save-deck-button": "デッキを保存",
+				"deck-saved-info": "デッキが保存されました",
+				"save-deckcode-button-tooltip": "このデッキを\"自分のデッキ\"タブに追加します",
+				"show-buckets-button-label": "バケットを表示",
+				"show-buckets-button-tooltip": "[実験的] 自分のデッキのカードに基づき、提供される可能性のあるシナジーカードのバケットを表示します。バケットは以下のような法則で提供されると仮定します。\n1) デッキの中から少なくとも1枚のカードを含むバケットを全てリストアップする。\n2) その中から提供されたものを1つ選ぶ。",
+				"bucket-filter-button-tooltip": "バケットでフィルタリングします。カードリストには、選択したバケットのうち少なくとも1つに属するカードのみが含まれます",
 				"search-tooltip": {
-					"text": "",
-					"info-1": "",
-					"info-2": "",
-					"info-3": "",
-					"info-4": ""
+					"text": "これらのショートカットを使用して検索できます:",
+					"info-1": "\"Enter\" - 最初の結果をリストに追加",
+					"info-2": "\"Shift + Enter\" - 最初の結果をリストに追加し、検索ボックスをクリアします",
+					"info-3": "\"class:<クラス名>\" - そのクラスのカードのみを検索します（例：\"class:mage\"、\"class:neutral\"）",
+					"info-4": "\"bucket:none\" - バケットに属さないカードのみを検索します"
 				},
 				"warning": {
-					"neutral-hero": "",
-					"loe-hero": ""
+					"neutral-hero": "ハースストーンにおいて、中立のヒーローと中立の愛用の宝物の組み合わせでは、デッキコードが動作しません (クラスカードの愛用の宝物との組み合わせでは正常に動作します)",
+					"loe-hero": "ハースストーンにおいて、新しいリーグ・オブ・エクスプローラーのヒーローでは、デッキコードが動作しません"
 				},
-				"card-offering-rate-tooltip": "",
-				"or": "",
-				"import-deck-button-title": "",
-				"import-deck-button-tooltip": "",
+				"card-offering-rate-tooltip": "このバケット内でのカードの提供割合です（このバケットがあなたに提供された場合、この確率(%)で特定のカードを入手できます）",
+				"or": "または",
+				"import-deck-button-title": "デッキをインポート",
+				"import-deck-button-tooltip": "現在クリップボードにあるデッキコードをインポートします。 デッキコードに含まれていなければ、ヒーローパワーと愛用の宝物を手動で選択する必要があります",
 				"missing-dust-tooltip": "デッキを作るには {{value}} 魔素不足しています",
-				"part-of-multiple-buckets-tooltip": ""
+				"part-of-multiple-buckets-tooltip": "このカードは {{ value }} 個の異なるバケットに存在しています"
 			},
 			"empty-state": {
-				"title": "",
+				"title": "まだ何もありません",
 				"subtitle": "デュエルをプレイして情報を受け取ろう"
 			}
 		},
 		"achievements": {
 			"menu": {
-				"categories": ""
+				"categories": "カテゴリ"
 			},
 			"filters": {
-				"all": "",
-				"all-empty-state-title": "",
-				"all-empty-state-text": "",
-				"missing": "",
-				"missing-empty-state-title": "",
-				"missing-empty-state-text": "",
-				"completed": ""
+				"all": "全ての実績",
+				"all-empty-state-title": "ピャァア！あんたはすごい！",
+				"all-empty-state-text": "このカテゴリの実績を全て達成しました",
+				"missing": "未達成の実績",
+				"missing-empty-state-title": "たくさんの実績があなたを待っています！",
+				"missing-empty-state-text": "達成済みの実績をここにリスト表示",
+				"completed": "達成済みの実績"
 			},
 			"history": {
-				"title": "",
-				"empty-state-title": "",
-				"empty-state-subtitle": ""
+				"title": "自分の実績の履歴",
+				"empty-state-title": "履歴なし",
+				"empty-state-subtitle": "実績を1つ達成して開始しよう！"
 			},
-			"search-placeholder": ""
+			"search-placeholder": "実績を検索..."
 		},
 		"replays": {
 			"filters": {
 				"hero": {
-					"all": ""
+					"all": "全てのヒーロー"
 				},
 				"deck": {
-					"all": "",
-					"deckstring-tooltip": ""
+					"all": "全てのデッキ",
+					"deckstring-tooltip": "{{deckName}} ({{deckClass}})：{{lastPlayedDate}}に最後にプレイ"
 				},
 				"game-mode": {
-					"all": "",
+					"all": "全てのモード",
 					"battlegrounds": "バトルグラウンド",
 					"battlegrounds-friendly": "バトルグラウンド (フレンド対戦)",
 					"mercenaries-all": "マーセナリーズ (All)",
 					"mercenaries-pve": "マーセナリーズ PvE",
 					"mercenaries-pvp": "マーセナリーズ PvP",
-					"ranked": "",
-					"ranked-standard": "",
-					"ranked-wild": "",
-					"ranked-classic": "",
+					"ranked": "全てのランク戦",
+					"ranked-standard": "スタンダード",
+					"ranked-wild": "ワイルド",
+					"ranked-classic": "クラシック",
 					"both-duels": "デュエル (全て)",
 					"duels": "デュエル (カジュアル)",
 					"paid-duels": "デュエル (ヒロイック)",
 					"arena": "闘技場",
 					"casual": "カジュアル",
-					"friendly": "",
+					"friendly": "フレンド対戦",
 					"tavern-brawl": "酒場の喧嘩",
-					"practice": ""
+					"practice": "練習"
 				},
 				"player": {
-					"all": ""
+					"all": "全てのクラス(自分)"
 				},
 				"opponent": {
-					"all": ""
+					"all": "全てのクラス(相手)"
 				}
 			},
 			"bg-stats": {
-				"title": "",
-				"empty-state-title": "",
-				"empty-state-subtitle": ""
+				"title": "対戦統計",
+				"empty-state-title": "何もありません",
+				"empty-state-subtitle": "統計を取得できませんでした"
 			},
 			"replay-info": {
-				"rank-issue-tooltip": "",
+				"rank-issue-tooltip": "プレイヤーランクを取得中に問題が発生しました",
 				"versus": "VS",
-				"loot-icon-tooltip": "",
-				"treasure-icon-tooltip": "",
+				"loot-icon-tooltip": "このラウンドの後、デッキにカードが追加されました",
+				"treasure-icon-tooltip": "このラウンドの後、デッキにカードが追加されました",
 				"mmr": "レーティング",
-				"show-stats-button": "",
-				"show-stats-button-tooltip": "",
-				"watch-replay-button": "",
-				"watch-replay-button-tooltip": "",
+				"show-stats-button": "統計",
+				"show-stats-button-tooltip": "統計を表示します",
+				"watch-replay-button": "見る",
+				"watch-replay-button-tooltip": "リプレイを見ます",
 				"mercenaries-bot-opponent-name": "酒場の親父 (AI Bot)",
-				"bgs-available-tribes-tooltip": "",
-				"bgs-perfect-game-result": "",
-				"deck-name-tooltip": "",
+				"bgs-available-tribes-tooltip": "この対戦で登場する種族：{{value}}",
+				"bgs-perfect-game-result": "完璧だ!",
+				"deck-name-tooltip": "{{value}} を使用",
 				"bgs-result": {
 					"1": "1位",
-					"2": "",
-					"3": "",
-					"4": "",
-					"5": "",
-					"6": "",
-					"7": "",
-					"8": ""
+					"2": "2位",
+					"3": "3位",
+					"4": "4位",
+					"5": "5位",
+					"6": "6位",
+					"7": "7位",
+					"8": "8位"
 				},
 				"game-mode-tooltip": {
 					"legend-format": "{{format}}レジェンド",
@@ -1345,8 +1345,8 @@
 					"galakrond-explorers": "ガラクロンドの目覚め・悪党同盟",
 					"galakrond-evil": "ガラクロンドの目覚め・探検同盟"
 				},
-				"went-first-tooltip": "",
-				"went-second-tooltip": "",
+				"went-first-tooltip": "先攻でした",
+				"went-second-tooltip": "後攻でした",
 				"bgs-prizes-tooltip": ""
 			},
 			"class-icon-toggle": {
@@ -1358,7 +1358,7 @@
 				"tooltip": "マーセナリーズのリプレイの追加情報を表示します"
 			},
 			"list": {
-				"load-more-button": "",
+				"load-more-button": "さらに読み込む...",
 				"empty-state-title": "",
 				"empty-state-subtitle": ""
 			}
@@ -2045,7 +2045,7 @@
 			"popularity-label": "",
 			"player-matches": "",
 			"your-value-tooltip": "",
-			"community-value-tooltip": "",
+			"community-value-tooltip": "アプリのメイン画面で設定されたフィルターを適応した、コミュニティによる値",
 			"win-distribution-header": "勝利数分布 ({{value}} 回の挑戦)",
 			"win-distribution-tooltip": "勝利数分布",
 			"top-decks-header": "高勝利数デッキ ({{value}} デッキ)",
