@@ -23,6 +23,7 @@
 		"format": {
 			"standard": "標準",
 			"wild": "開放",
+			"twist": "",
 			"classic": "經典"
 		},
 		"game-mode": {
@@ -91,7 +92,8 @@
 			"return_to_naxxramas": "重返納克薩瑪斯",
 			"tb": "旅店大亂鬥",
 			"battle_of_the_bands": "傳說音樂祭",
-			"audiopocalypse": ""
+			"audiopocalypse": "",
+			"titans": ""
 		},
 		"pack": {
 			"classic": "經典",
@@ -146,7 +148,8 @@
 			"return-of-the-lich-king": "進擊吧！巫妖王",
 			"golden-return-of-the-lich-king": "金色的進擊吧！巫妖王",
 			"battle-of-the-bands": "傳說音樂祭",
-			"golden-battle-of-the-bands": "傳說音樂祭"
+			"golden-battle-of-the-bands": "傳說音樂祭",
+			"titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -388,6 +391,7 @@
 				"format": {
 					"all": "全部",
 					"standard": "標準",
+					"twist": "",
 					"wild": "開放"
 				},
 				"hero-portrait": {
@@ -444,7 +448,8 @@
 				"diamond-card": "{{cardName}} 鑽石卡",
 				"click-to-expand": "點擊以展開",
 				"duplicate-cards": "{{numberOfCards}} 重複卡",
-				"dust-potential": "+{{dust}} 魔塵"
+				"dust-potential": "+{{dust}} 魔塵",
+				"click-to-show-stats": ""
 			},
 			"card-search": {
 				"search-box-placeholder": "搜索卡牌...",
@@ -583,7 +588,8 @@
 				"golden-epics": "史詩金卡",
 				"golden-epics-missing": "無史詩金卡",
 				"golden-legendaries": "傳說金卡",
-				"golden-legendaries-missing": "無傳說金卡"
+				"golden-legendaries-missing": "無傳說金卡",
+				"click-to-show-history": ""
 			},
 			"sets": {
 				"coming-soon": "即將推出！",
@@ -660,7 +666,8 @@
 					"all-formats": "所有模式",
 					"standard": "標準",
 					"wild": "開放",
-					"classic": "經典"
+					"classic": "經典",
+					"twist": ""
 				},
 				"rank-category": {
 					"leagues": "青銅-鑽石",
@@ -771,7 +778,7 @@
 			},
 			"rating-graph": {
 				"missing-region-title": "請選擇一個區域。",
-				"empty-state-message": "請確保已選擇對的遊戲模式(標準、開放、經典)，並檢查青銅/傳說篩選器。"
+				"empty-state-message": ""
 			},
 			"replays-recap": {
 				"header": "上 {{value}} 個回放",
@@ -1270,6 +1277,10 @@
 				"empty-state-title": "沒有歷史紀錄",
 				"empty-state-subtitle": "完成一個成就以開啟紀錄！"
 			},
+			"pin-achievement-tooltip": "",
+			"pin-without-tracking-confirmation-text": "",
+			"enable-live-tracking": "",
+			"cancel-pin": "",
 			"search-placeholder": "搜尋成就…"
 		},
 		"replays": {
@@ -1292,6 +1303,7 @@
 					"ranked-standard": "標準排名模式",
 					"ranked-wild": "開放排名模式",
 					"ranked-classic": "經典排名模式",
+					"ranked-twist": "",
 					"both-duels": "決鬥擂台(全部)",
 					"duels": "休閒模式決鬥擂台",
 					"paid-duels": "英雄模式決鬥擂台",
@@ -1372,6 +1384,23 @@
 			"xp-graph-title": "等級圖"
 		},
 		"tips": {
+			"ad-tip-prefix": "",
+			"ad-tip-premium": "",
+			"deck_merge": "",
+			"collection_stats": "",
+			"lottery": "",
+			"achievements_pick_for_me": "",
+			"achievements_pin": "",
+			"share_profile_page": "",
+			"contextual_related_cards": "",
+			"etc_buddies": "",
+			"bg_hero_select": "",
+			"bg_wisdomball": "",
+			"bg_tab_key": "",
+			"guess_the_weight": "",
+			"discover_highlight": "",
+			"minion_play_order": "",
+			"mercs_terasure_highlight": "",
 			"tip-0": "",
 			"tip-1": "單擊頂部的“幫助”圖標以查看應用程序的最新版本說明",
 			"tip-2": "單擊頂部的“錯誤”圖標以報告錯誤或提出改進建議",
@@ -1408,18 +1437,64 @@
 			"no-name": "旅店大亂鬥，開始於 {{date}}"
 		},
 		"lottery": {
-			"title": "",
-			"info-text": "",
-			"resources": "",
-			"resources-tooltip": "",
-			"quilboars": "",
-			"quilboars-tooltip": "",
-			"spells": "",
-			"spells-tooltip": "",
-			"close-confirmation-text-1": "",
+			"overlay-toggle-label": "",
+			"overlay-toggle-tooltip": "",
+			"opt-out-tooltip": "",
+			"opt-out-confirmation-text": "",
+			"opt-out-button-cancel": "",
+			"opt-out-button-ok": "",
+			"tracking-ongoing-tooltip": "",
+			"tracking-not-ongoing-tooltip": "",
 			"close-confirmation-text-2": "",
 			"close-confirmation-button-cancel": "",
-			"close-confirmation-button-ok": ""
+			"close-confirmation-button-ok": "",
+			"navigation": {
+				"lottery": "",
+				"achievements": ""
+			},
+			"lottery": {
+				"info-text": "",
+				"points-text": "",
+				"season-duration-end": "",
+				"season-duration-end-tooltip": "",
+				"sign-in-button-text": "",
+				"sign-in-button-tooltip": "",
+				"stats": {
+					"totalResourcesUsed-label": "",
+					"totalResourcesUsed-tooltip": "",
+					"quilboarsPlayed-label": "",
+					"quilboarsPlayed-tooltip": "",
+					"beastsPlayed-label": "",
+					"beastsPlayed-tooltip": "",
+					"demonsPlayed-label": "",
+					"demonsPlayed-tooltip": "",
+					"dragonsPlayed-label": "",
+					"dragonsPlayed-tooltip": "",
+					"mechsPlayed-label": "",
+					"mechsPlayed-tooltip": "",
+					"murlocsPlayed-label": "",
+					"murlocsPlayed-tooltip": "",
+					"piratesPlayed-label": "",
+					"piratesPlayed-tooltip": "",
+					"elementalsPlayed-label": "",
+					"elementalsPlayed-tooltip": "",
+					"nagasPlayed-label": "",
+					"nagasPlayed-tooltip": "",
+					"undeadPlayed-label": "",
+					"undeadPlayed-tooltip": "",
+					"spellsPlayed-label": "",
+					"spellsPlayed-tooltip": "",
+					"damageWithSpells-label": "",
+					"damageWithSpells-tooltip": ""
+				}
+			},
+			"achievements-title": "",
+			"achievements-progress": "",
+			"achievements-empty-state": "",
+			"achievements-reset-button": "",
+			"achievements-reset-button-tooltip": "",
+			"achievements-pick-for-me-button": "",
+			"achievements-pick-for-me-button-tooltip": ""
 		}
 	},
 	"turn-timer": {
@@ -2135,6 +2210,7 @@
 				"general": "常項",
 				"localization": "在地化",
 				"premium": "",
+				"lottery": "",
 				"bug-report": "回報問題",
 				"third-party": "第三方",
 				"broadcast": "Twitch",
@@ -2282,8 +2358,15 @@
 				"text-1": "",
 				"link": "",
 				"lottery-block-title": "",
-				"lottery-block-text": "",
-				"lottery-button-text": ""
+				"lottery-block-text1": "",
+				"lottery-block-text2": "",
+				"lottery-block-text3": "",
+				"lottery-block-text4": "",
+				"lottery-button-text": "",
+				"lottery-widget-settings-title": "",
+				"lottery-size-title": "",
+				"lottery-opacity-title": "",
+				"lottery-premium-section-tooltip": ""
 			},
 			"data": {
 				"remote-title": "遠端資料",
@@ -2697,13 +2780,12 @@
 				"title": "當你看到成就通知時更新",
 				"achievements-enabled-text": "啟用成就系統",
 				"achievements-enabled-tooltip": "",
+				"achievements-live-tracking-text": "",
+				"achievements-live-tracking-tooltip": "",
 				"firestone-achievements-text": "啟用Firestone專屬成就",
 				"firestone-achievements-tooltip": "啟用Firestone專屬成就追蹤",
 				"show-notifications-text": "顯示通知",
-				"show-notifications-tooltip": "當解鎖一個成就時顯示通知。關閉後會停止紀錄遊戲內的成就",
-				"streamer-mode-text": "實況者模式",
-				"streamer-mode-tooltip": "重置您的成就追蹤，以使未鎖定的成就也會顯示通知，取消選中以恢復所有舊成就；需要重新啟動App。",
-				"streamer-mode-confirmation": "知道了，下次啟動Firestone時不會加載你的成就"
+				"show-notifications-tooltip": "當解鎖一個成就時顯示通知。關閉後會停止紀錄遊戲內的成就"
 			}
 		},
 		"mercenaries": {
