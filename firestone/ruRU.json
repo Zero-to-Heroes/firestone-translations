@@ -23,6 +23,7 @@
 		"format": {
 			"standard": "Стандартный",
 			"wild": "Вольный",
+			"twist": "",
 			"classic": "Классический"
 		},
 		"game-mode": {
@@ -91,7 +92,8 @@
 			"return_to_naxxramas": "Возвращение в Наксрамас",
 			"tb": "Потасовка",
 			"battle_of_the_bands": "Фестиваль Легенд",
-			"audiopocalypse": "Аудиопокалипсис"
+			"audiopocalypse": "Аудиопокалипсис",
+			"titans": ""
 		},
 		"pack": {
 			"classic": "Классический",
@@ -146,7 +148,8 @@
 			"return-of-the-lich-king": "Марш Короля-лича",
 			"golden-return-of-the-lich-king": "Марш Короля-лича (золотой)",
 			"battle-of-the-bands": "Фестиваль Легенд",
-			"golden-battle-of-the-bands": "Золотой Фестиваль Легенд"
+			"golden-battle-of-the-bands": "Золотой Фестиваль Легенд",
+			"titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -388,6 +391,7 @@
 				"format": {
 					"all": "Все",
 					"standard": "Стандартный",
+					"twist": "",
 					"wild": "Вольный"
 				},
 				"hero-portrait": {
@@ -444,7 +448,8 @@
 				"diamond-card": "Алмазная {{cardName}}",
 				"click-to-expand": "Нажмите, чтобы раскрыть",
 				"duplicate-cards": "{{numberOfCards}} дубликата карт",
-				"dust-potential": "Потенциально +{{dust}} пыли"
+				"dust-potential": "Потенциально +{{dust}} пыли",
+				"click-to-show-stats": ""
 			},
 			"card-search": {
 				"search-box-placeholder": "Поиск карт...",
@@ -583,7 +588,8 @@
 				"golden-epics": "Золотые эпические",
 				"golden-epics-missing": "Недостающие золотые эпические карты",
 				"golden-legendaries": "Золотые легендарные",
-				"golden-legendaries-missing": "Недостающие золотые легендарные карты"
+				"golden-legendaries-missing": "Недостающие золотые легендарные карты",
+				"click-to-show-history": ""
 			},
 			"sets": {
 				"coming-soon": "Скоро!",
@@ -660,7 +666,8 @@
 					"all-formats": "Все форматы",
 					"standard": "Стандартный",
 					"wild": "Вольный",
-					"classic": "Классический"
+					"classic": "Классический",
+					"twist": ""
 				},
 				"rank-category": {
 					"leagues": "Бронза–Алмаз",
@@ -771,7 +778,7 @@
 			},
 			"rating-graph": {
 				"missing-region-title": "Пожалуйста выберите регион",
-				"empty-state-message": "Пожалуйста, убедитесь, что выбран режим игры (Стандартный, Вольный или Классический), <br/> а также проверьте фильтр Бронза / Легенда."
+				"empty-state-message": ""
 			},
 			"replays-recap": {
 				"header": "Последние {{value}} повторов",
@@ -1270,6 +1277,10 @@
 				"empty-state-title": "Здесь пока ничего нет",
 				"empty-state-subtitle": "Выполните достижение, чтобы начать!"
 			},
+			"pin-achievement-tooltip": "",
+			"pin-without-tracking-confirmation-text": "",
+			"enable-live-tracking": "",
+			"cancel-pin": "",
 			"search-placeholder": "Поиск достижений..."
 		},
 		"replays": {
@@ -1292,6 +1303,7 @@
 					"ranked-standard": "Рейтинговый стандартный",
 					"ranked-wild": "Рейтинговый вольный",
 					"ranked-classic": "Рейтинговый классический",
+					"ranked-twist": "",
 					"both-duels": "Дуэли (любые)",
 					"duels": "Дуэли обычные",
 					"paid-duels": "Дуэли героические",
@@ -1372,6 +1384,23 @@
 			"xp-graph-title": "График опыта"
 		},
 		"tips": {
+			"ad-tip-prefix": "",
+			"ad-tip-premium": "",
+			"deck_merge": "",
+			"collection_stats": "",
+			"lottery": "",
+			"achievements_pick_for_me": "",
+			"achievements_pin": "",
+			"share_profile_page": "",
+			"contextual_related_cards": "",
+			"etc_buddies": "",
+			"bg_hero_select": "",
+			"bg_wisdomball": "",
+			"bg_tab_key": "",
+			"guess_the_weight": "",
+			"discover_highlight": "",
+			"minion_play_order": "",
+			"mercs_terasure_highlight": "",
 			"tip-0": "",
 			"tip-1": "Нажмите на значок \"Помощь\" вверху для просмотра описаний последних версий приложения",
 			"tip-2": "Нажмите на значок \"Сообщить об ошибке\" вверху, чтобы отправить отчёт об ошибке или предложить улучшения",
@@ -1408,18 +1437,64 @@
 			"no-name": "Потасовка началась {{date}}"
 		},
 		"lottery": {
-			"title": "Очки лотереи",
-			"info-text": "",
-			"resources": "Использовано ресурсов",
-			"resources-tooltip": "Потратьте ресурсы (кристаллы маны в Hearthstone и золото на полях сражений), чтобы заработать очки",
-			"quilboars": "Разыграно Свинобразов",
-			"quilboars-tooltip": "",
-			"spells": "Разыграно заклинаний",
-			"spells-tooltip": "Разыгрывайте заклинания для получения очков",
-			"close-confirmation-text-1": "",
+			"overlay-toggle-label": "",
+			"overlay-toggle-tooltip": "",
+			"opt-out-tooltip": "",
+			"opt-out-confirmation-text": "",
+			"opt-out-button-cancel": "",
+			"opt-out-button-ok": "",
+			"tracking-ongoing-tooltip": "",
+			"tracking-not-ongoing-tooltip": "",
 			"close-confirmation-text-2": "",
 			"close-confirmation-button-cancel": "Оставить открытым",
-			"close-confirmation-button-ok": "Закрыть все равно"
+			"close-confirmation-button-ok": "Закрыть все равно",
+			"navigation": {
+				"lottery": "",
+				"achievements": ""
+			},
+			"lottery": {
+				"info-text": "",
+				"points-text": "",
+				"season-duration-end": "",
+				"season-duration-end-tooltip": "",
+				"sign-in-button-text": "",
+				"sign-in-button-tooltip": "",
+				"stats": {
+					"totalResourcesUsed-label": "",
+					"totalResourcesUsed-tooltip": "",
+					"quilboarsPlayed-label": "",
+					"quilboarsPlayed-tooltip": "",
+					"beastsPlayed-label": "",
+					"beastsPlayed-tooltip": "",
+					"demonsPlayed-label": "",
+					"demonsPlayed-tooltip": "",
+					"dragonsPlayed-label": "",
+					"dragonsPlayed-tooltip": "",
+					"mechsPlayed-label": "",
+					"mechsPlayed-tooltip": "",
+					"murlocsPlayed-label": "",
+					"murlocsPlayed-tooltip": "",
+					"piratesPlayed-label": "",
+					"piratesPlayed-tooltip": "",
+					"elementalsPlayed-label": "",
+					"elementalsPlayed-tooltip": "",
+					"nagasPlayed-label": "",
+					"nagasPlayed-tooltip": "",
+					"undeadPlayed-label": "",
+					"undeadPlayed-tooltip": "",
+					"spellsPlayed-label": "",
+					"spellsPlayed-tooltip": "",
+					"damageWithSpells-label": "",
+					"damageWithSpells-tooltip": ""
+				}
+			},
+			"achievements-title": "",
+			"achievements-progress": "",
+			"achievements-empty-state": "",
+			"achievements-reset-button": "",
+			"achievements-reset-button-tooltip": "",
+			"achievements-pick-for-me-button": "",
+			"achievements-pick-for-me-button-tooltip": ""
 		}
 	},
 	"turn-timer": {
@@ -1466,7 +1541,7 @@
 			"player": ""
 		},
 		"corpse": {
-			"player": "Вы потратили {{value}} трупов в этой игре"
+			"player": ""
 		},
 		"overdraft": {
 			"player": ""
@@ -2135,6 +2210,7 @@
 				"general": "Общие",
 				"localization": "Локализация",
 				"premium": "Премиум",
+				"lottery": "",
 				"bug-report": "Сообщить об ошибке",
 				"third-party": "Сторонние приложения",
 				"broadcast": "Twitch",
@@ -2281,9 +2357,16 @@
 				"title": "Настройки Премиум подписки",
 				"text-1": "",
 				"link": "",
-				"lottery-block-title": "Премиум лотерея (бета)",
-				"lottery-block-text": "",
-				"lottery-button-text": "Включить лотерею"
+				"lottery-block-title": "",
+				"lottery-block-text1": "",
+				"lottery-block-text2": "",
+				"lottery-block-text3": "",
+				"lottery-block-text4": "",
+				"lottery-button-text": "Включить лотерею",
+				"lottery-widget-settings-title": "",
+				"lottery-size-title": "",
+				"lottery-opacity-title": "",
+				"lottery-premium-section-tooltip": ""
 			},
 			"data": {
 				"remote-title": "Облачные данные",
@@ -2697,13 +2780,12 @@
 				"title": "Обновление параметров уведомлений о достижениях",
 				"achievements-enabled-text": "Включить систему достижений",
 				"achievements-enabled-tooltip": "",
+				"achievements-live-tracking-text": "",
+				"achievements-live-tracking-tooltip": "",
 				"firestone-achievements-text": "Включить достижения Firestone",
 				"firestone-achievements-tooltip": "Включить отслеживание эксклюзивных Firestone достижений",
 				"show-notifications-text": "Показывать уведомления",
-				"show-notifications-tooltip": "Отображение уведомления при разблокировке достижения. Отключение этой опции также отключит внутриигровое отслеживание для достижений из Hearthstone",
-				"streamer-mode-text": "Режим \"Скрытня\"",
-				"streamer-mode-tooltip": "",
-				"streamer-mode-confirmation": ""
+				"show-notifications-tooltip": "Отображение уведомления при разблокировке достижения. Отключение этой опции также отключит внутриигровое отслеживание для достижений из Hearthstone"
 			}
 		},
 		"mercenaries": {
