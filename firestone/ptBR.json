@@ -23,6 +23,7 @@
 		"format": {
 			"standard": "Padrão",
 			"wild": "Livre",
+			"twist": "",
 			"classic": "Clássico"
 		},
 		"game-mode": {
@@ -91,7 +92,8 @@
 			"return_to_naxxramas": "",
 			"tb": "",
 			"battle_of_the_bands": "",
-			"audiopocalypse": ""
+			"audiopocalypse": "",
+			"titans": ""
 		},
 		"pack": {
 			"classic": "Clássico",
@@ -146,7 +148,8 @@
 			"return-of-the-lich-king": "",
 			"golden-return-of-the-lich-king": "",
 			"battle-of-the-bands": "",
-			"golden-battle-of-the-bands": ""
+			"golden-battle-of-the-bands": "",
+			"titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -388,6 +391,7 @@
 				"format": {
 					"all": "Todos",
 					"standard": "Padrão",
+					"twist": "",
 					"wild": "Livre"
 				},
 				"hero-portrait": {
@@ -444,7 +448,8 @@
 				"diamond-card": "Diamante {{cardName}}",
 				"click-to-expand": "",
 				"duplicate-cards": "{{numberOfCards}} cards duplicados",
-				"dust-potential": "+{{dust}} Potencial de pó arcano"
+				"dust-potential": "+{{dust}} Potencial de pó arcano",
+				"click-to-show-stats": ""
 			},
 			"card-search": {
 				"search-box-placeholder": "Buscar card...",
@@ -583,7 +588,8 @@
 				"golden-epics": "Épicos Dourados",
 				"golden-epics-missing": "Épicos Dourados Faltando",
 				"golden-legendaries": "Lendários Dourados",
-				"golden-legendaries-missing": "Lendários Dourados Faltando"
+				"golden-legendaries-missing": "Lendários Dourados Faltando",
+				"click-to-show-history": ""
 			},
 			"sets": {
 				"coming-soon": "Em breve!",
@@ -660,7 +666,8 @@
 					"all-formats": "Todos os formatos",
 					"standard": "Padrão",
 					"wild": "Livre",
-					"classic": "Clássico"
+					"classic": "Clássico",
+					"twist": ""
 				},
 				"rank-category": {
 					"leagues": "Bronze-Diamante",
@@ -1270,6 +1277,10 @@
 				"empty-state-title": "",
 				"empty-state-subtitle": ""
 			},
+			"pin-achievement-tooltip": "",
+			"pin-without-tracking-confirmation-text": "",
+			"enable-live-tracking": "",
+			"cancel-pin": "",
 			"search-placeholder": ""
 		},
 		"replays": {
@@ -1292,6 +1303,7 @@
 					"ranked-standard": "",
 					"ranked-wild": "",
 					"ranked-classic": "",
+					"ranked-twist": "",
 					"both-duels": "",
 					"duels": "",
 					"paid-duels": "",
@@ -1372,6 +1384,23 @@
 			"xp-graph-title": ""
 		},
 		"tips": {
+			"ad-tip-prefix": "",
+			"ad-tip-premium": "",
+			"deck_merge": "",
+			"collection_stats": "",
+			"lottery": "",
+			"achievements_pick_for_me": "",
+			"achievements_pin": "",
+			"share_profile_page": "",
+			"contextual_related_cards": "",
+			"etc_buddies": "",
+			"bg_hero_select": "",
+			"bg_wisdomball": "",
+			"bg_tab_key": "",
+			"guess_the_weight": "",
+			"discover_highlight": "",
+			"minion_play_order": "",
+			"mercs_terasure_highlight": "",
 			"tip-0": "",
 			"tip-1": "",
 			"tip-2": "",
@@ -1408,18 +1437,64 @@
 			"no-name": ""
 		},
 		"lottery": {
-			"title": "",
-			"info-text": "",
-			"resources": "",
-			"resources-tooltip": "",
-			"quilboars": "",
-			"quilboars-tooltip": "",
-			"spells": "",
-			"spells-tooltip": "",
-			"close-confirmation-text-1": "",
+			"overlay-toggle-label": "",
+			"overlay-toggle-tooltip": "",
+			"opt-out-tooltip": "",
+			"opt-out-confirmation-text": "",
+			"opt-out-button-cancel": "",
+			"opt-out-button-ok": "",
+			"tracking-ongoing-tooltip": "",
+			"tracking-not-ongoing-tooltip": "",
 			"close-confirmation-text-2": "",
 			"close-confirmation-button-cancel": "",
-			"close-confirmation-button-ok": ""
+			"close-confirmation-button-ok": "",
+			"navigation": {
+				"lottery": "",
+				"achievements": ""
+			},
+			"lottery": {
+				"info-text": "",
+				"points-text": "",
+				"season-duration-end": "",
+				"season-duration-end-tooltip": "",
+				"sign-in-button-text": "",
+				"sign-in-button-tooltip": "",
+				"stats": {
+					"totalResourcesUsed-label": "",
+					"totalResourcesUsed-tooltip": "",
+					"quilboarsPlayed-label": "",
+					"quilboarsPlayed-tooltip": "",
+					"beastsPlayed-label": "",
+					"beastsPlayed-tooltip": "",
+					"demonsPlayed-label": "",
+					"demonsPlayed-tooltip": "",
+					"dragonsPlayed-label": "",
+					"dragonsPlayed-tooltip": "",
+					"mechsPlayed-label": "",
+					"mechsPlayed-tooltip": "",
+					"murlocsPlayed-label": "",
+					"murlocsPlayed-tooltip": "",
+					"piratesPlayed-label": "",
+					"piratesPlayed-tooltip": "",
+					"elementalsPlayed-label": "",
+					"elementalsPlayed-tooltip": "",
+					"nagasPlayed-label": "",
+					"nagasPlayed-tooltip": "",
+					"undeadPlayed-label": "",
+					"undeadPlayed-tooltip": "",
+					"spellsPlayed-label": "",
+					"spellsPlayed-tooltip": "",
+					"damageWithSpells-label": "",
+					"damageWithSpells-tooltip": ""
+				}
+			},
+			"achievements-title": "",
+			"achievements-progress": "",
+			"achievements-empty-state": "",
+			"achievements-reset-button": "",
+			"achievements-reset-button-tooltip": "",
+			"achievements-pick-for-me-button": "",
+			"achievements-pick-for-me-button-tooltip": ""
 		}
 	},
 	"turn-timer": {
@@ -2135,6 +2210,7 @@
 				"general": "",
 				"localization": "",
 				"premium": "",
+				"lottery": "",
 				"bug-report": "",
 				"third-party": "",
 				"broadcast": "",
@@ -2282,8 +2358,15 @@
 				"text-1": "",
 				"link": "",
 				"lottery-block-title": "",
-				"lottery-block-text": "",
-				"lottery-button-text": ""
+				"lottery-block-text1": "",
+				"lottery-block-text2": "",
+				"lottery-block-text3": "",
+				"lottery-block-text4": "",
+				"lottery-button-text": "",
+				"lottery-widget-settings-title": "",
+				"lottery-size-title": "",
+				"lottery-opacity-title": "",
+				"lottery-premium-section-tooltip": ""
 			},
 			"data": {
 				"remote-title": "",
@@ -2697,13 +2780,12 @@
 				"title": "",
 				"achievements-enabled-text": "",
 				"achievements-enabled-tooltip": "",
+				"achievements-live-tracking-text": "",
+				"achievements-live-tracking-tooltip": "",
 				"firestone-achievements-text": "",
 				"firestone-achievements-tooltip": "",
 				"show-notifications-text": "",
-				"show-notifications-tooltip": "",
-				"streamer-mode-text": "",
-				"streamer-mode-tooltip": "",
-				"streamer-mode-confirmation": ""
+				"show-notifications-tooltip": ""
 			}
 		},
 		"mercenaries": {
