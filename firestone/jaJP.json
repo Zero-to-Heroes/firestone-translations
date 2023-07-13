@@ -23,6 +23,7 @@
 		"format": {
 			"standard": "スタンダード",
 			"wild": "ワイルド",
+			"twist": "",
 			"classic": "クラシック"
 		},
 		"game-mode": {
@@ -91,7 +92,8 @@
 			"return_to_naxxramas": "ナクスラーマス再訪",
 			"tb": "酒場の喧嘩",
 			"battle_of_the_bands": "集え！レジェンド・フェス",
-			"audiopocalypse": "音響黙示録"
+			"audiopocalypse": "音響黙示録",
+			"titans": ""
 		},
 		"pack": {
 			"classic": "クラシック",
@@ -146,7 +148,8 @@
 			"return-of-the-lich-king": "リッチキングの凱旋",
 			"golden-return-of-the-lich-king": "ゴールデン・リッチキングの凱旋",
 			"battle-of-the-bands": "集え！レジェンド・フェス",
-			"golden-battle-of-the-bands": "ゴールデン・集え！レジェンド・フェス"
+			"golden-battle-of-the-bands": "ゴールデン・集え！レジェンド・フェス",
+			"titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -388,6 +391,7 @@
 				"format": {
 					"all": "全て",
 					"standard": "スタンダード",
+					"twist": "",
 					"wild": "ワイルド"
 				},
 				"hero-portrait": {
@@ -444,7 +448,8 @@
 				"diamond-card": "ダイヤモンド「{{cardName}}」",
 				"click-to-expand": "クリックして展開",
 				"duplicate-cards": "{{numberOfCards}} 枚のカードが重複しています",
-				"dust-potential": "{{dust}} 魔素に還元可能"
+				"dust-potential": "{{dust}} 魔素に還元可能",
+				"click-to-show-stats": ""
 			},
 			"card-search": {
 				"search-box-placeholder": "検索カード",
@@ -583,7 +588,8 @@
 				"golden-epics": "ゴールデン・エピック",
 				"golden-epics-missing": "ゴールデン版を必要数所持していないエピックカード",
 				"golden-legendaries": "ゴールデン・レジェンド",
-				"golden-legendaries-missing": "ゴールデン版を必要数所持していないレジェンドカード"
+				"golden-legendaries-missing": "ゴールデン版を必要数所持していないレジェンドカード",
+				"click-to-show-history": ""
 			},
 			"sets": {
 				"coming-soon": "近日公開！",
@@ -660,7 +666,8 @@
 					"all-formats": "全てのフォーマット",
 					"standard": "スタンダード",
 					"wild": "ワイルド",
-					"classic": "クラシック"
+					"classic": "クラシック",
+					"twist": ""
 				},
 				"rank-category": {
 					"leagues": "ブロンズ・ダイヤモンド",
@@ -771,7 +778,7 @@
 			},
 			"rating-graph": {
 				"missing-region-title": "地域を選択してください",
-				"empty-state-message": "上部でゲームモード (スタンダード、ワイルドなど) が選ばれていること、ブロンズ/レジェンドのフィルターを確認してください"
+				"empty-state-message": ""
 			},
 			"replays-recap": {
 				"header": "直近 {{value}} 個のリプレイ",
@@ -1270,6 +1277,10 @@
 				"empty-state-title": "履歴なし",
 				"empty-state-subtitle": "実績を1つ達成して開始しよう！"
 			},
+			"pin-achievement-tooltip": "",
+			"pin-without-tracking-confirmation-text": "",
+			"enable-live-tracking": "",
+			"cancel-pin": "",
 			"search-placeholder": "実績を検索..."
 		},
 		"replays": {
@@ -1292,6 +1303,7 @@
 					"ranked-standard": "スタンダード",
 					"ranked-wild": "ワイルド",
 					"ranked-classic": "クラシック",
+					"ranked-twist": "",
 					"both-duels": "デュエル (全て)",
 					"duels": "デュエル (カジュアル)",
 					"paid-duels": "デュエル (ヒロイック)",
@@ -1372,6 +1384,23 @@
 			"xp-graph-title": "XPグラフ"
 		},
 		"tips": {
+			"ad-tip-prefix": "",
+			"ad-tip-premium": "",
+			"deck_merge": "",
+			"collection_stats": "",
+			"lottery": "",
+			"achievements_pick_for_me": "",
+			"achievements_pin": "",
+			"share_profile_page": "",
+			"contextual_related_cards": "",
+			"etc_buddies": "",
+			"bg_hero_select": "",
+			"bg_wisdomball": "",
+			"bg_tab_key": "",
+			"guess_the_weight": "",
+			"discover_highlight": "",
+			"minion_play_order": "",
+			"mercs_terasure_highlight": "",
 			"tip-0": "バグ報告やフィードバック、連絡を取りたい場合は、Discord(上部にあるリンク)をご覧ください！",
 			"tip-1": "上部にある\"？\"アイコン(ヘルプアイコン)をクリックすると、アプリの最新のリリースノートが表示されます",
 			"tip-2": "上部にある\"バグ\"アイコン(虫のアイコン)をクリックすると、バグ報告や改善の提案ができます",
@@ -1408,18 +1437,64 @@
 			"no-name": "酒場の喧嘩 ({{date}} に開始!)"
 		},
 		"lottery": {
-			"title": "抽選ポイント",
-			"info-text": "毎月抽選で、4人に2ヶ月分のFirestoneのサブスクリプションが配られます。抽選に参加するにはOverwolfのアカウントが必要です。このウィンドウが開いている間にゲームをプレイし、目標を達成するだけでポイントが貯まります(広告で開発者をサポートしています)",
-			"resources": "使用したマナ",
-			"resources-tooltip": "マナやコインを消費してポイントを入手しよう (王道ハースストーンではマナ、バトルグラウンドではコイン)",
-			"quilboars": "使用したキルボア",
-			"quilboars-tooltip": "キルボアを使用するとポイントを獲得できます",
-			"spells": "使用した呪文",
-			"spells-tooltip": "呪文を使用するとポイントを獲得できます",
-			"close-confirmation-text-1": "このウィンドウは開発者をサポートし、更に毎月末に無料の Firestone サブスクリプションを獲得するための抽選に参加することができます",
-			"close-confirmation-text-2": "このウィンドウを閉じると、トラッキングが停止します。設定からいつでも再開できます",
+			"overlay-toggle-label": "",
+			"overlay-toggle-tooltip": "",
+			"opt-out-tooltip": "",
+			"opt-out-confirmation-text": "",
+			"opt-out-button-cancel": "",
+			"opt-out-button-ok": "",
+			"tracking-ongoing-tooltip": "",
+			"tracking-not-ongoing-tooltip": "",
+			"close-confirmation-text-2": "",
 			"close-confirmation-button-cancel": "開いたままにする",
-			"close-confirmation-button-ok": "閉じる"
+			"close-confirmation-button-ok": "閉じる",
+			"navigation": {
+				"lottery": "",
+				"achievements": ""
+			},
+			"lottery": {
+				"info-text": "",
+				"points-text": "",
+				"season-duration-end": "",
+				"season-duration-end-tooltip": "",
+				"sign-in-button-text": "",
+				"sign-in-button-tooltip": "",
+				"stats": {
+					"totalResourcesUsed-label": "",
+					"totalResourcesUsed-tooltip": "",
+					"quilboarsPlayed-label": "",
+					"quilboarsPlayed-tooltip": "",
+					"beastsPlayed-label": "",
+					"beastsPlayed-tooltip": "",
+					"demonsPlayed-label": "",
+					"demonsPlayed-tooltip": "",
+					"dragonsPlayed-label": "",
+					"dragonsPlayed-tooltip": "",
+					"mechsPlayed-label": "",
+					"mechsPlayed-tooltip": "",
+					"murlocsPlayed-label": "",
+					"murlocsPlayed-tooltip": "",
+					"piratesPlayed-label": "",
+					"piratesPlayed-tooltip": "",
+					"elementalsPlayed-label": "",
+					"elementalsPlayed-tooltip": "",
+					"nagasPlayed-label": "",
+					"nagasPlayed-tooltip": "",
+					"undeadPlayed-label": "",
+					"undeadPlayed-tooltip": "",
+					"spellsPlayed-label": "",
+					"spellsPlayed-tooltip": "",
+					"damageWithSpells-label": "",
+					"damageWithSpells-tooltip": ""
+				}
+			},
+			"achievements-title": "",
+			"achievements-progress": "",
+			"achievements-empty-state": "",
+			"achievements-reset-button": "",
+			"achievements-reset-button-tooltip": "",
+			"achievements-pick-for-me-button": "",
+			"achievements-pick-for-me-button-tooltip": ""
 		}
 	},
 	"turn-timer": {
@@ -1457,7 +1532,7 @@
 			"player": "相手が最後に使用したカードは「{{value}}」"
 		},
 		"lightray": {
-			"player": "この対戦で{{value}}枚のパラディン用カードを使用した。「ヒカリエイ」は {{lightray}} マナ"
+			"player": ""
 		},
 		"naga-giant": {
 			"player": "「ナーガの巨人」のコストは{{value}} ({{spells}}枚の呪文を使用した)"
@@ -1466,7 +1541,7 @@
 			"player": "この対戦で使用したミニオンの種族は{{value}}種類"
 		},
 		"corpse": {
-			"player": "この対戦で死体を{{value}}体消費した"
+			"player": ""
 		},
 		"overdraft": {
 			"player": "「焦げ付き」は{{value}}ダメージを与える"
@@ -2135,6 +2210,7 @@
 				"general": "全般",
 				"localization": "ローカライズ",
 				"premium": "プレミアム",
+				"lottery": "",
 				"bug-report": "バグを報告",
 				"third-party": "サードパーティ",
 				"broadcast": "Twitch",
@@ -2281,9 +2357,16 @@
 				"title": "プレミアムサブスクオプション",
 				"text-1": "プレミアムユーザーになることは、Firestoneの改善と私の作業を支援する最善の方法です。さらに、オーバレイウィジェットや、自分のプロフィールを持つウェブサイトなど、たくさんの機能が手に入ります。プレミアム機能の詳細は {{link}} を御覧ください",
 				"link": "wiki",
-				"lottery-block-title": "プレミアム抽選 (ベータ)",
-				"lottery-block-text": "抽選に参加すると、ゲームを遊びながら (マナの消費などによって) ポイントを獲得できます。毎月末、4人の当選者がランダムに選ばれます (ポイントが多いほど当選率があがります)。当選すると、2ヶ月のプレミアムサブスクリプションが付与され、{{twitterLink}} や {{discordLink}} で発表されます",
-				"lottery-button-text": "抽選を有効化"
+				"lottery-block-title": "",
+				"lottery-block-text1": "",
+				"lottery-block-text2": "",
+				"lottery-block-text3": "",
+				"lottery-block-text4": "",
+				"lottery-button-text": "抽選を有効化",
+				"lottery-widget-settings-title": "",
+				"lottery-size-title": "",
+				"lottery-opacity-title": "",
+				"lottery-premium-section-tooltip": ""
 			},
 			"data": {
 				"remote-title": "リモートデータ",
@@ -2697,13 +2780,12 @@
 				"title": "実績通知が表示されたら更新する",
 				"achievements-enabled-text": "実績システムを有効化",
 				"achievements-enabled-tooltip": "オフにすると、実績トラッキングシステム全体が無効化されます。Firestoneで自分の達成済みの実績を閲覧する予定がない場合、オフにして構いません。アプリの再起動が必要です",
+				"achievements-live-tracking-text": "",
+				"achievements-live-tracking-tooltip": "",
 				"firestone-achievements-text": "アプリの実績を有効化",
 				"firestone-achievements-tooltip": "Firestone専用の実績のトラッキングが有効になります",
 				"show-notifications-text": "通知を表示",
-				"show-notifications-tooltip": "実績を達成するたび、通知を表示します。オフにすると、ハースストーン本体の実績をトラッキングする機能も無効になります",
-				"streamer-mode-text": "ストリーマーモード",
-				"streamer-mode-tooltip": "全ての実績をリセットします。実績解除の通知が表示されます。全ての古い実績を元に戻すにはチェックを外してください。アプリの再起動が必要です",
-				"streamer-mode-confirmation": "了解しました。次回 Firestone を起動したとき、既存の実績は読み込まれません"
+				"show-notifications-tooltip": "実績を達成するたび、通知を表示します。オフにすると、ハースストーン本体の実績をトラッキングする機能も無効になります"
 			}
 		},
 		"mercenaries": {
