@@ -23,6 +23,7 @@
 		"format": {
 			"standard": "标准模式",
 			"wild": "狂野模式",
+			"twist": "",
 			"classic": "经典模式"
 		},
 		"game-mode": {
@@ -91,7 +92,8 @@
 			"return_to_naxxramas": "重返纳克萨玛斯",
 			"tb": "乱斗模式",
 			"battle_of_the_bands": "传奇音乐节",
-			"audiopocalypse": "音乐之劫"
+			"audiopocalypse": "音乐之劫",
+			"titans": ""
 		},
 		"pack": {
 			"classic": "经典模式 卡牌包",
@@ -146,7 +148,8 @@
 			"return-of-the-lich-king": "巫妖王的进军 卡牌包",
 			"golden-return-of-the-lich-king": "巫妖王的进军 异画金色卡牌包",
 			"battle-of-the-bands": "传奇音乐节 卡牌包",
-			"golden-battle-of-the-bands": "传奇音乐节 金色卡牌包"
+			"golden-battle-of-the-bands": "传奇音乐节 金色卡牌包",
+			"titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -388,6 +391,7 @@
 				"format": {
 					"all": "全部",
 					"standard": "标准模式",
+					"twist": "",
 					"wild": "狂野模式"
 				},
 				"hero-portrait": {
@@ -444,7 +448,8 @@
 				"diamond-card": "钻石的 {{cardName}}",
 				"click-to-expand": "点击展开",
 				"duplicate-cards": "{{numberOfCards}} 张重复的卡牌",
-				"dust-potential": "+分解可得 {{dust}} 点奥术之尘"
+				"dust-potential": "+分解可得 {{dust}} 点奥术之尘",
+				"click-to-show-stats": ""
 			},
 			"card-search": {
 				"search-box-placeholder": "搜索卡牌...",
@@ -583,7 +588,8 @@
 				"golden-epics": "金色史诗",
 				"golden-epics-missing": "缺失的金色史诗",
 				"golden-legendaries": "金色传说",
-				"golden-legendaries-missing": "缺失的金色传说"
+				"golden-legendaries-missing": "缺失的金色传说",
+				"click-to-show-history": ""
 			},
 			"sets": {
 				"coming-soon": "敬请期待！",
@@ -660,7 +666,8 @@
 					"all-formats": "所有模式",
 					"standard": "标准模式",
 					"wild": "狂野模式",
-					"classic": "经典模式"
+					"classic": "经典模式",
+					"twist": ""
 				},
 				"rank-category": {
 					"leagues": "青铜到钻石",
@@ -771,7 +778,7 @@
 			},
 			"rating-graph": {
 				"missing-region-title": "请选择一个地区",
-				"empty-state-message": "请确保已选择唯一的游戏模式（标准，狂野或经典），然后检查青铜/传说筛选器。"
+				"empty-state-message": ""
 			},
 			"replays-recap": {
 				"header": "最近 {{value}} 次回放",
@@ -1270,6 +1277,10 @@
 				"empty-state-title": "暂无记录",
 				"empty-state-subtitle": "完成一个成就来开启记录！"
 			},
+			"pin-achievement-tooltip": "",
+			"pin-without-tracking-confirmation-text": "",
+			"enable-live-tracking": "",
+			"cancel-pin": "",
 			"search-placeholder": "搜索成就…"
 		},
 		"replays": {
@@ -1292,6 +1303,7 @@
 					"ranked-standard": "标准天梯",
 					"ranked-wild": "狂野天梯",
 					"ranked-classic": "经典天梯",
+					"ranked-twist": "",
 					"both-duels": "对决模式（所有）",
 					"duels": "对决模式（休闲）",
 					"paid-duels": "对决模式（英雄）",
@@ -1372,6 +1384,23 @@
 			"xp-graph-title": "经验图"
 		},
 		"tips": {
+			"ad-tip-prefix": "",
+			"ad-tip-premium": "",
+			"deck_merge": "",
+			"collection_stats": "",
+			"lottery": "",
+			"achievements_pick_for_me": "",
+			"achievements_pin": "",
+			"share_profile_page": "",
+			"contextual_related_cards": "",
+			"etc_buddies": "",
+			"bg_hero_select": "",
+			"bg_wisdomball": "",
+			"bg_tab_key": "",
+			"guess_the_weight": "",
+			"discover_highlight": "",
+			"minion_play_order": "",
+			"mercs_terasure_highlight": "",
 			"tip-0": "如果想要反馈、汇报Bug或者联系Firestone社区，请点击上方的Discord链接",
 			"tip-1": "点击顶部的“帮助”图标查看应用的最新更新日志",
 			"tip-2": "点击顶部的\"Bug\"图标报告错误或提交建议",
@@ -1408,18 +1437,64 @@
 			"no-name": "乱斗模式，开始于 {{date}}"
 		},
 		"lottery": {
-			"title": "抽奖点数",
-			"info-text": "Firestone每月会从奖池中出抽取4位用户赠送每人2个月的会员（需有Overwolf账号）。在这个窗口开启时，你可以通过正常游戏和完成相关任务（例如观看广告）来获得抽奖点数。",
-			"resources": "使用的资源",
-			"resources-tooltip": "在天梯和战棋中消耗法力水晶或铸币来获取点数",
-			"quilboars": "打出的野猪人",
-			"quilboars-tooltip": "打出野猪人来获取点数",
-			"spells": "使用的法术",
-			"spells-tooltip": "使用法术来获取点数",
-			"close-confirmation-text-1": "显示广告支持Firestone的开发，并在月末参与抽奖获得Firestone会员。",
-			"close-confirmation-text-2": "关闭这个窗口将会停止计入抽奖点数（你可以从设置里重新打开）。",
+			"overlay-toggle-label": "",
+			"overlay-toggle-tooltip": "",
+			"opt-out-tooltip": "",
+			"opt-out-confirmation-text": "",
+			"opt-out-button-cancel": "",
+			"opt-out-button-ok": "",
+			"tracking-ongoing-tooltip": "",
+			"tracking-not-ongoing-tooltip": "",
+			"close-confirmation-text-2": "",
 			"close-confirmation-button-cancel": "保持开启",
-			"close-confirmation-button-ok": "继续关闭"
+			"close-confirmation-button-ok": "继续关闭",
+			"navigation": {
+				"lottery": "",
+				"achievements": ""
+			},
+			"lottery": {
+				"info-text": "",
+				"points-text": "",
+				"season-duration-end": "",
+				"season-duration-end-tooltip": "",
+				"sign-in-button-text": "",
+				"sign-in-button-tooltip": "",
+				"stats": {
+					"totalResourcesUsed-label": "",
+					"totalResourcesUsed-tooltip": "",
+					"quilboarsPlayed-label": "",
+					"quilboarsPlayed-tooltip": "",
+					"beastsPlayed-label": "",
+					"beastsPlayed-tooltip": "",
+					"demonsPlayed-label": "",
+					"demonsPlayed-tooltip": "",
+					"dragonsPlayed-label": "",
+					"dragonsPlayed-tooltip": "",
+					"mechsPlayed-label": "",
+					"mechsPlayed-tooltip": "",
+					"murlocsPlayed-label": "",
+					"murlocsPlayed-tooltip": "",
+					"piratesPlayed-label": "",
+					"piratesPlayed-tooltip": "",
+					"elementalsPlayed-label": "",
+					"elementalsPlayed-tooltip": "",
+					"nagasPlayed-label": "",
+					"nagasPlayed-tooltip": "",
+					"undeadPlayed-label": "",
+					"undeadPlayed-tooltip": "",
+					"spellsPlayed-label": "",
+					"spellsPlayed-tooltip": "",
+					"damageWithSpells-label": "",
+					"damageWithSpells-tooltip": ""
+				}
+			},
+			"achievements-title": "",
+			"achievements-progress": "",
+			"achievements-empty-state": "",
+			"achievements-reset-button": "",
+			"achievements-reset-button-tooltip": "",
+			"achievements-pick-for-me-button": "",
+			"achievements-pick-for-me-button-tooltip": ""
 		}
 	},
 	"turn-timer": {
@@ -1457,7 +1532,7 @@
 			"player": "敌方使用的上一张牌：{{value}}"
 		},
 		"lightray": {
-			"player": "你使用过{{value}}张圣骑士牌，光鳐当前法力消耗{{lightray}}"
+			"player": ""
 		},
 		"naga-giant": {
 			"player": "友方纳迦巨人法力值消耗：{{cost}}（本局对战你已使用法术：{{spells}}个）"
@@ -1466,7 +1541,7 @@
 			"player": "你已使用过的随从类型数：{{value}}"
 		},
 		"corpse": {
-			"player": "本局对战中你已消耗尸体：{{value}}"
+			"player": ""
 		},
 		"overdraft": {
 			"player": "强行透支：{{value}}点伤害"
@@ -2135,6 +2210,7 @@
 				"general": "通用",
 				"localization": "本地化",
 				"premium": "会员",
+				"lottery": "",
 				"bug-report": "提交错误",
 				"third-party": "第三方",
 				"broadcast": "Twitch",
@@ -2281,9 +2357,16 @@
 				"title": "会员选项",
 				"text-1": "开通会员可以支持Firestone和开发者，还可以解锁高级功能。这包括悬浮窗挂件、个人专属主页等功能（前往{{link}}查看详情）",
 				"link": "在Wiki上",
-				"lottery-block-title": "抽取免费会员（测试）",
-				"lottery-block-text": "参与抽奖将有机会获得免费的Firestone会员。你可以通过正常游戏或完成相关任务来获得抽奖点数。每月将会从奖池中出抽取4位用户，这些用户将获得2个月的免费会员。点数越高被选中的可能就越大，中奖的用户将会公布在{{twitterLink}}和{{discordLink}}。",
-				"lottery-button-text": "启用抽奖"
+				"lottery-block-title": "",
+				"lottery-block-text1": "",
+				"lottery-block-text2": "",
+				"lottery-block-text3": "",
+				"lottery-block-text4": "",
+				"lottery-button-text": "启用抽奖",
+				"lottery-widget-settings-title": "",
+				"lottery-size-title": "",
+				"lottery-opacity-title": "",
+				"lottery-premium-section-tooltip": ""
 			},
 			"data": {
 				"remote-title": "远程数据",
@@ -2697,13 +2780,12 @@
 				"title": "当您看到成就通知时更新",
 				"achievements-enabled-text": "启用成就系统",
 				"achievements-enabled-tooltip": "停用此功能，整个成就跟踪系统将关闭。如果您不打算使用 Firestone 来浏览您现有的成就，请关闭。设置后需要重启应用。",
+				"achievements-live-tracking-text": "",
+				"achievements-live-tracking-tooltip": "",
 				"firestone-achievements-text": "启用Firestone 专属成就",
 				"firestone-achievements-tooltip": "启用Firestone 专属成就追踪",
 				"show-notifications-text": "显示通知",
-				"show-notifications-tooltip": "当您解锁成就时显示一个通知。停用此功能也会停止记录炉石传说的游戏内成就",
-				"streamer-mode-text": "主播模式",
-				"streamer-mode-tooltip": "重置战绩记录中的成就，那些未解锁的成就也会显示通知。取消选中将恢复您所有曾经达成的成就。需要重启应用",
-				"streamer-mode-confirmation": "知道了，在您下次启动Firestone时我们将不会加载您现有的成就"
+				"show-notifications-tooltip": "当您解锁成就时显示一个通知。停用此功能也会停止记录炉石传说的游戏内成就"
 			}
 		},
 		"mercenaries": {
