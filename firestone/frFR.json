@@ -23,6 +23,7 @@
 		"format": {
 			"standard": "Standard",
 			"wild": "Libre",
+			"twist": "",
 			"classic": "Classique"
 		},
 		"game-mode": {
@@ -91,7 +92,8 @@
 			"return_to_naxxramas": "Retour à Naxxramas",
 			"tb": "Bras de fer",
 			"battle_of_the_bands": "La fête des légendes",
-			"audiopocalypse": "Audiopocalypse"
+			"audiopocalypse": "Audiopocalypse",
+			"titans": ""
 		},
 		"pack": {
 			"classic": "Classique",
@@ -146,7 +148,8 @@
 			"return-of-the-lich-king": "La marche du roi-liche",
 			"golden-return-of-the-lich-king": "La marche du roi-liche (Doré)",
 			"battle-of-the-bands": "La fête des légendes",
-			"golden-battle-of-the-bands": "La fête des légendes (Doré)"
+			"golden-battle-of-the-bands": "La fête des légendes (Doré)",
+			"titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -388,6 +391,7 @@
 				"format": {
 					"all": "Tout",
 					"standard": "Standard",
+					"twist": "",
 					"wild": "Libre"
 				},
 				"hero-portrait": {
@@ -444,7 +448,8 @@
 				"diamond-card": "{{cardName}} diamant",
 				"click-to-expand": "Cliquez pour agrandir",
 				"duplicate-cards": "{{numberOfCards}} cartes en surplus",
-				"dust-potential": "+{{dust}} poussière potentielle"
+				"dust-potential": "+{{dust}} poussière potentielle",
+				"click-to-show-stats": ""
 			},
 			"card-search": {
 				"search-box-placeholder": "Rechercher une carte...",
@@ -583,7 +588,8 @@
 				"golden-epics": "Épiques dorées",
 				"golden-epics-missing": "Épiques dorées manquantes",
 				"golden-legendaries": "Légendaires dorées",
-				"golden-legendaries-missing": "Légendaires dorées manquantes"
+				"golden-legendaries-missing": "Légendaires dorées manquantes",
+				"click-to-show-history": ""
 			},
 			"sets": {
 				"coming-soon": "Prochainement !",
@@ -660,7 +666,8 @@
 					"all-formats": "Tous formats",
 					"standard": "Standard",
 					"wild": "Libre",
-					"classic": "Classique"
+					"classic": "Classique",
+					"twist": ""
 				},
 				"rank-category": {
 					"leagues": "Bronze-Diamant",
@@ -771,7 +778,7 @@
 			},
 			"rating-graph": {
 				"missing-region-title": "Veuillez sélectionner une région",
-				"empty-state-message": "Veuillez vérifier qu'un seul mode de jeu (Standard, Libre ou Classique) est sélectionné ci-dessus, et vérifiez le filtre Bronze / Légende."
+				"empty-state-message": ""
 			},
 			"replays-recap": {
 				"header": "{{value}} derniers replays",
@@ -1270,6 +1277,10 @@
 				"empty-state-title": "Pas encore d’historique",
 				"empty-state-subtitle": "Complétez un haut fait pour démarrer votre historique !"
 			},
+			"pin-achievement-tooltip": "",
+			"pin-without-tracking-confirmation-text": "",
+			"enable-live-tracking": "",
+			"cancel-pin": "",
 			"search-placeholder": "Rechercher un haut fait..."
 		},
 		"replays": {
@@ -1292,6 +1303,7 @@
 					"ranked-standard": "Partie classée Standard",
 					"ranked-wild": "Partie classée Libre",
 					"ranked-classic": "Partie classée Classique",
+					"ranked-twist": "",
 					"both-duels": "Duels (Tous)",
 					"duels": "Duels non classés",
 					"paid-duels": "Duels héroïques",
@@ -1372,6 +1384,23 @@
 			"xp-graph-title": "Graphique d’XP"
 		},
 		"tips": {
+			"ad-tip-prefix": "",
+			"ad-tip-premium": "",
+			"deck_merge": "",
+			"collection_stats": "",
+			"lottery": "",
+			"achievements_pick_for_me": "",
+			"achievements_pin": "",
+			"share_profile_page": "",
+			"contextual_related_cards": "",
+			"etc_buddies": "",
+			"bg_hero_select": "",
+			"bg_wisdomball": "",
+			"bg_tab_key": "",
+			"guess_the_weight": "",
+			"discover_highlight": "",
+			"minion_play_order": "",
+			"mercs_terasure_highlight": "",
 			"tip-0": "Si vous avez des commentaires, des bugs ou si vous voulez juste entrer en contact, veuillez nous rendre visite sur Discord (lien en haut) !",
 			"tip-1": "Cliquez sur l’icône « Aide » en haut pour voir les dernières notes de mise à jour de l’application",
 			"tip-2": "Cliquez sur l’icône « Bug » en haut pour signaler un bug ou suggérer une amélioration",
@@ -1408,18 +1437,64 @@
 			"no-name": "Bras de fer, commencé le {{date}}"
 		},
 		"lottery": {
-			"title": "Points de loterie",
-			"info-text": "Chaque mois, rejoignez un tirage au sort pour gagner 4 abonnements Firestone, chacun d’une durée de 2 mois. Vous aurez besoin d’un compte Overwolf pour rejoindre la loterie. Les points sont simplements accumulés en jouant des parties et en complétant les objectifs avec cette fenêtre ouverte (la pub soutient le développeur).",
-			"resources": "Ressources utilisées",
-			"resources-tooltip": "Dépensez des ressources (cristaux de mana dans Hearthstone, or dans Champs de bataille) pour gagner des points",
-			"quilboars": "Hurans joués",
-			"quilboars-tooltip": "Jouez des Hurans pour gagner des points",
-			"spells": "Sorts joués",
-			"spells-tooltip": "Jouez des sorts pour gagner des points",
-			"close-confirmation-text-1": "Cette fenêtre supporte le développeur, et vous permet de rejoindre un tirage au sort à la fin de chaque mois pour obtenir des abonnements Firestone gratuits.",
-			"close-confirmation-text-2": "Fermer cette fenêtre arrêtera de comptabiliser les points de loterie. Vous pouvez la réactiver depuis les paramètres à tout moment.",
+			"overlay-toggle-label": "",
+			"overlay-toggle-tooltip": "",
+			"opt-out-tooltip": "",
+			"opt-out-confirmation-text": "",
+			"opt-out-button-cancel": "",
+			"opt-out-button-ok": "",
+			"tracking-ongoing-tooltip": "",
+			"tracking-not-ongoing-tooltip": "",
+			"close-confirmation-text-2": "",
 			"close-confirmation-button-cancel": "Garder ouverte",
-			"close-confirmation-button-ok": "Fermer quand même"
+			"close-confirmation-button-ok": "Fermer quand même",
+			"navigation": {
+				"lottery": "",
+				"achievements": ""
+			},
+			"lottery": {
+				"info-text": "",
+				"points-text": "",
+				"season-duration-end": "",
+				"season-duration-end-tooltip": "",
+				"sign-in-button-text": "",
+				"sign-in-button-tooltip": "",
+				"stats": {
+					"totalResourcesUsed-label": "",
+					"totalResourcesUsed-tooltip": "",
+					"quilboarsPlayed-label": "",
+					"quilboarsPlayed-tooltip": "",
+					"beastsPlayed-label": "",
+					"beastsPlayed-tooltip": "",
+					"demonsPlayed-label": "",
+					"demonsPlayed-tooltip": "",
+					"dragonsPlayed-label": "",
+					"dragonsPlayed-tooltip": "",
+					"mechsPlayed-label": "",
+					"mechsPlayed-tooltip": "",
+					"murlocsPlayed-label": "",
+					"murlocsPlayed-tooltip": "",
+					"piratesPlayed-label": "",
+					"piratesPlayed-tooltip": "",
+					"elementalsPlayed-label": "",
+					"elementalsPlayed-tooltip": "",
+					"nagasPlayed-label": "",
+					"nagasPlayed-tooltip": "",
+					"undeadPlayed-label": "",
+					"undeadPlayed-tooltip": "",
+					"spellsPlayed-label": "",
+					"spellsPlayed-tooltip": "",
+					"damageWithSpells-label": "",
+					"damageWithSpells-tooltip": ""
+				}
+			},
+			"achievements-title": "",
+			"achievements-progress": "",
+			"achievements-empty-state": "",
+			"achievements-reset-button": "",
+			"achievements-reset-button-tooltip": "",
+			"achievements-pick-for-me-button": "",
+			"achievements-pick-for-me-button-tooltip": ""
 		}
 	},
 	"turn-timer": {
@@ -1457,7 +1532,7 @@
 			"player": "La dernière carte que votre adversaire a jouée est {{value}}"
 		},
 		"lightray": {
-			"player": "Vous avez joué {{value}} cartes de paladin pendant cette partie, réduisant vos raies de lumière à {{lightray}} mana"
+			"player": ""
 		},
 		"naga-giant": {
 			"player": "Vos géants naga coûtent ({{cost}}) cristaux (vous avez joué {{spells}} sorts pendant cette partie)"
@@ -1466,7 +1541,7 @@
 			"player": "Cette partie, les types de serviteurs disponibles étaient : {{value}}"
 		},
 		"corpse": {
-			"player": "Vous avez dépensé {{value}} cadavres pendant cette partie"
+			"player": ""
 		},
 		"overdraft": {
 			"player": "À découvert infligera {{value}} points de dégâts"
@@ -2135,6 +2210,7 @@
 				"general": "Général",
 				"localization": "Traduction",
 				"premium": "Premium",
+				"lottery": "",
 				"bug-report": "Signaler un bug",
 				"third-party": "Services tiers",
 				"broadcast": "Twitch",
@@ -2281,9 +2357,16 @@
 				"title": "Options d’abonnement Premium",
 				"text-1": "Devenir un utilisateur Premium est le meilleur moyen de soutenir l’application et le travail que je fais pour améliorer Firestone. De plus, vous obtenez un tas de fonctionnalités, comme des widgets d’overlay, un site web avec votre propre page de profil, et bien plus encore. Vous pouvez trouver les détails de toutes les fonctionnalités Premium {{link}}.",
 				"link": "sur le wiki",
-				"lottery-block-title": "Loterie Premium (bêta)",
-				"lottery-block-text": "La participation à la loterie vous permet d’accumuler des points en faisant des actions pendant que vous jouez des parties (comme dépenser des ressources). À la fin de chaque mois, 4 personnes seront choisies au hasard et recevront un abonnement Premium de 2 mois (plus vous avez de points, plus vous avez de chances de gagner). L’annonce aura lieu sur {{twitterLink}} et {{discordLink}}.",
-				"lottery-button-text": "Activer la loterie"
+				"lottery-block-title": "",
+				"lottery-block-text1": "",
+				"lottery-block-text2": "",
+				"lottery-block-text3": "",
+				"lottery-block-text4": "",
+				"lottery-button-text": "Activer la loterie",
+				"lottery-widget-settings-title": "",
+				"lottery-size-title": "",
+				"lottery-opacity-title": "",
+				"lottery-premium-section-tooltip": ""
 			},
 			"data": {
 				"remote-title": "Données distantes",
@@ -2697,13 +2780,12 @@
 				"title": "Mettre à jour quand vous voyez les notifications de succès",
 				"achievements-enabled-text": "Activer le système de hauts faits",
 				"achievements-enabled-tooltip": "Lorsque cette option est désativée, l’ensemble du système de suivi des hauts faits sera désactivé. Gardez cette option désactivée si vous ne prévoyez pas d’utiliser Firestone pour parcourir vos hauts faits existants. Nécessite un redémarrage de l’application.",
+				"achievements-live-tracking-text": "",
+				"achievements-live-tracking-tooltip": "",
 				"firestone-achievements-text": "Activer les hauts faits FS",
 				"firestone-achievements-tooltip": "Activer le suivi des hauts faits exclusifs à Firestone",
 				"show-notifications-text": "Afficher les notifications",
-				"show-notifications-tooltip": "Afficher une notification chaque fois que vous débloquez un haut fait. Désactiver cette option désactive également le suivi des hauts faits natifs à Hearthstone",
-				"streamer-mode-text": "Mode stream",
-				"streamer-mode-tooltip": "Réinitialisez vos hauts faits pour la session, afin que les notifications s’affichent même pour les hauts faits débloqués. Désactivez cette option pour récupérer tous vos anciens hauts faits. Un redémarrage de l’application est requis",
-				"streamer-mode-confirmation": "D’accord, nous ne chargerons pas vos hauts faits existants la prochaine fois que vous lancerez Firestone"
+				"show-notifications-tooltip": "Afficher une notification chaque fois que vous débloquez un haut fait. Désactiver cette option désactive également le suivi des hauts faits natifs à Hearthstone"
 			}
 		},
 		"mercenaries": {
