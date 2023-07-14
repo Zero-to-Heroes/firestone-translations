@@ -1458,43 +1458,43 @@
 				"season-duration-end": "シーズンは残り {{ days }}日 {{ hours }}時間 {{ minutes }}分で終了します",
 				"season-duration-end-tooltip": "シーズンは{{ startDate}}に始まりました",
 				"sign-in-button-text": "サインインして抽選に参加",
-				"sign-in-button-tooltip": "",
+				"sign-in-button-tooltip": "シーズン終了時の抽選に参加するにはOverwolfアカウントが必要です。ログインしていなくても、抽選のためのポイントを貯めることはできます",
 				"stats": {
-					"totalResourcesUsed-label": "",
-					"totalResourcesUsed-tooltip": "",
-					"quilboarsPlayed-label": "",
-					"quilboarsPlayed-tooltip": "",
-					"beastsPlayed-label": "",
-					"beastsPlayed-tooltip": "",
-					"demonsPlayed-label": "",
-					"demonsPlayed-tooltip": "",
-					"dragonsPlayed-label": "",
-					"dragonsPlayed-tooltip": "",
-					"mechsPlayed-label": "",
-					"mechsPlayed-tooltip": "",
-					"murlocsPlayed-label": "",
-					"murlocsPlayed-tooltip": "",
-					"piratesPlayed-label": "",
-					"piratesPlayed-tooltip": "",
-					"elementalsPlayed-label": "",
-					"elementalsPlayed-tooltip": "",
-					"nagasPlayed-label": "",
-					"nagasPlayed-tooltip": "",
-					"undeadPlayed-label": "",
-					"undeadPlayed-tooltip": "",
-					"spellsPlayed-label": "",
-					"spellsPlayed-tooltip": "",
-					"damageWithSpells-label": "",
-					"damageWithSpells-tooltip": ""
+					"totalResourcesUsed-label": "使用したマナ",
+					"totalResourcesUsed-tooltip": "マナやコインを消費してポイントを入手しよう (王道ハースストーンではマナ、バトルグラウンドではコイン)。消費するごとに {{pointsGained}}ポイントを入手します",
+					"quilboarsPlayed-label": "使用したキルボア",
+					"quilboarsPlayed-tooltip": "キルボアを使用するごとに {{pointsGained}} ポイントを入手します",
+					"beastsPlayed-label": "使用した獣",
+					"beastsPlayed-tooltip": "獣を使用するごとに {{pointsGained}} ポイントを入手します",
+					"demonsPlayed-label": "使用した悪魔",
+					"demonsPlayed-tooltip": "悪魔を使用するごとに {{pointsGained}} ポイントを入手します",
+					"dragonsPlayed-label": "使用したドラゴン",
+					"dragonsPlayed-tooltip": "ドラゴンを使用するごとに {{pointsGained}} ポイントを入手します",
+					"mechsPlayed-label": "使用したメカ",
+					"mechsPlayed-tooltip": "メカを使用するごとに {{pointsGained}} ポイントを入手します",
+					"murlocsPlayed-label": "使用したマーロック",
+					"murlocsPlayed-tooltip": "マーロックを使用するごとに {{pointsGained}} ポイントを入手します",
+					"piratesPlayed-label": "使用した海賊",
+					"piratesPlayed-tooltip": "海賊を使用するごとに {{pointsGained}} ポイントを入手します",
+					"elementalsPlayed-label": "使用したエレメンタル",
+					"elementalsPlayed-tooltip": "エレメンタルを使用するごとに {{pointsGained}} ポイントを入手します",
+					"nagasPlayed-label": "使用したナーガ",
+					"nagasPlayed-tooltip": "ナーガを使用するごとに {{pointsGained}} ポイントを入手します",
+					"undeadPlayed-label": "使用したアンデッド",
+					"undeadPlayed-tooltip": "アンデッドを使用するごとに {{pointsGained}} ポイントを入手します",
+					"spellsPlayed-label": "使用した呪文",
+					"spellsPlayed-tooltip": "呪文を使用するごとに {{pointsGained}} ポイントを入手します",
+					"damageWithSpells-label": "呪文によるダメージ",
+					"damageWithSpells-tooltip": "呪文でダメージを与えるたび、 {{pointsGained}} ポイントを入手します"
 				}
 			},
-			"achievements-title": "",
-			"achievements-progress": "",
-			"achievements-empty-state": "",
-			"achievements-reset-button": "",
-			"achievements-reset-button-tooltip": "",
-			"achievements-pick-for-me-button": "",
-			"achievements-pick-for-me-button-tooltip": ""
+			"achievements-title": "実績",
+			"achievements-progress": "{{current}} / {{max}}, この試合では {{thisGame}} ",
+			"achievements-empty-state": "アプリの実績セクションを参照し、追跡したいものを選択",
+			"achievements-reset-button": "全て解除",
+			"achievements-reset-button-tooltip": "全ての実績の追跡を解除し、画面から削除します",
+			"achievements-pick-for-me-button": "おまかせ",
+			"achievements-pick-for-me-button-tooltip": "現在達成した実績に基づき、アプリが追跡する実績を3つ選択します"
 		}
 	},
 	"turn-timer": {
@@ -1532,7 +1532,7 @@
 			"player": "相手が最後に使用したカードは「{{value}}」"
 		},
 		"lightray": {
-			"player": ""
+			"player": "この対戦で{{value}}枚のパラディン用カードを使用した。「ヒカリエイ」は {{lightray}} マナ"
 		},
 		"naga-giant": {
 			"player": "「ナーガの巨人」のコストは{{value}} ({{spells}}枚の呪文を使用した)"
@@ -1541,7 +1541,7 @@
 			"player": "この対戦で使用したミニオンの種族は{{value}}種類"
 		},
 		"corpse": {
-			"player": ""
+			"player": "この対戦で死体を{{value}}体消費した"
 		},
 		"overdraft": {
 			"player": "「焦げ付き」は{{value}}ダメージを与える"
@@ -2358,15 +2358,15 @@
 				"text-1": "プレミアムユーザーになることは、Firestoneの改善と私の作業を支援する最善の方法です。さらに、オーバレイウィジェットや、自分のプロフィールを持つウェブサイトなど、たくさんの機能が手に入ります。プレミアム機能の詳細は {{link}} を御覧ください",
 				"link": "wiki",
 				"lottery-block-title": "抽選",
-				"lottery-block-text1": "",
-				"lottery-block-text2": "",
-				"lottery-block-text3": "",
-				"lottery-block-text4": "",
+				"lottery-block-text1": "抽選に参加すると、抽選ウィンドウを開きながらゲームを遊んで(マナの消費などによって) ポイントを獲得できます。毎月末、4人の当選者がランダムに選ばれます (ポイントが多いほど当選率があがります)。当選すると、2ヶ月のプレミアムサブスクリプションが付与され、{{twitterLink}} や {{discordLink}} で発表されます",
+				"lottery-block-text2": "新しい抽選のシーズンが始まると、前シーズンのポイントがリセットされます",
+				"lottery-block-text3": "注意:複数のモニターを使用している場合は、ウィジェットで「オーバーレイを表示」設定をオフにして、2番目の画面に移動してみてください",
+				"lottery-block-text4": "注意:プレミアムユーザーの場合、抽選に参加しても広告は表示されません。 -もし当選したら、同等の価値のある景品を一緒に探しましょう",
 				"lottery-button-text": "抽選を有効化",
-				"lottery-widget-settings-title": "",
-				"lottery-size-title": "",
-				"lottery-opacity-title": "",
-				"lottery-premium-section-tooltip": ""
+				"lottery-widget-settings-title": "ウィジェットの設定",
+				"lottery-size-title": "抽選ウィジェットのサイズ",
+				"lottery-opacity-title": "抽選ウィジェットの不透明度",
+				"lottery-premium-section-tooltip": "この機能はプレミアムユーザーのみが利用できます"
 			},
 			"data": {
 				"remote-title": "リモートデータ",
@@ -2780,8 +2780,8 @@
 				"title": "実績通知が表示されたら更新する",
 				"achievements-enabled-text": "実績システムを有効化",
 				"achievements-enabled-tooltip": "オフにすると、実績トラッキングシステム全体が無効化されます。Firestoneで自分の達成済みの実績を閲覧する予定がない場合、オフにして構いません。アプリの再起動が必要です",
-				"achievements-live-tracking-text": "",
-				"achievements-live-tracking-tooltip": "",
+				"achievements-live-tracking-text": "ライブトラッキング",
+				"achievements-live-tracking-tooltip": "ウィジェトを表示して、追跡したい任意の数の実績の現在の進捗を確認できます。アプリの実績セクションで、追跡したい実績を選択できます",
 				"firestone-achievements-text": "アプリの実績を有効化",
 				"firestone-achievements-tooltip": "Firestone専用の実績のトラッキングが有効になります",
 				"show-notifications-text": "通知を表示",
