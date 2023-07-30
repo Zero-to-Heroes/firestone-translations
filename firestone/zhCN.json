@@ -1437,7 +1437,8 @@
 			},
 			"copy-deck-tooltip": "点击复制高胜率套牌到剪贴板",
 			"with-name": "本周的乱斗模式是： {{name}} (开始于 {{date}} )",
-			"no-name": "乱斗模式，开始于 {{date}}"
+			"no-name": "乱斗模式，开始于 {{date}}",
+			"non-buildable-warning-tooltip": ""
 		},
 		"lottery": {
 			"overlay-toggle-label": "设置浮窗",
@@ -1515,13 +1516,14 @@
 			"player": "友方“蹦蹦兔”使用数量：{{value}}",
 			"opponent": "敌方“蹦蹦兔”使用数量：{{value}}"
 		},
+		"astral-automaton": {
+			"player": "",
+			"opponent": ""
+		},
 		"bolner": "本回合使用的第一张战吼牌：{{value}}",
 		"multicaster": {
-			"player": "你可抽 {{cardsTotal}} 张牌；已使用的法术派系：{{schools}}",
-			"opponent": "敌方可抽 {{cardsTotal}} 张牌；已使用的法术派系：{{schools}}"
-		},
-		"coral-keeper": {
-			"player": "你可召唤 {{totalSummons}} 个“珊瑚元素”；已使用的法术派系：{{schools}}"
+			"player": "",
+			"opponent": ""
 		},
 		"brilliant-macaw": {
 			"player": "你使用的上一张战吼牌：{{value}}",
@@ -2061,7 +2063,8 @@
 				"unhighlight-minion": "取消标记这个随从"
 			},
 			"quests": {
-				"turn-to-complete-tooltip": "此英雄完成此任务的平均回合数与任务难度（越低越好）"
+				"turn-to-complete-tooltip": "",
+				"reward-position-tooltip": ""
 			}
 		},
 		"post-match-stats": {
@@ -2519,6 +2522,8 @@
 					"galakrond-tooltip": "显示对手祈求“迦拉克隆”的次数 (仅当对手使用“迦拉克隆”或者祈求牌时显示)",
 					"pogo-label": "蹦蹦兔",
 					"pogo-tooltip": "显示对手使用的“蹦蹦兔”数量",
+					"astral-automaton-label": "",
+					"astral-automaton-tooltip": "",
 					"jade-label": "青玉魔像",
 					"jade-tooltip": "显示对手的”青玉魔像“当前属性值",
 					"cthun-label": "克苏恩",
@@ -2555,6 +2560,7 @@
 				"counters": {
 					"galakrond-tooltip": "显示你祈求”迦拉克隆“的次数（仅当你使用“迦拉克隆”或者祈求牌时显示）",
 					"pogo-tooltip": "显示你已使用的“蹦蹦兔”数量",
+					"astral-automaton-tooltip": "",
 					"jade-tooltip": "显示你的“青玉魔像”当前属性值",
 					"cthun-tooltip": "显示你的“克苏恩”当前属性值",
 					"fatigue-tooltip": "显示你下次受到的疲劳伤害",
@@ -2608,10 +2614,8 @@
 					"lady-darkvein-tooltip": "当有需要时，显示你施放的上一个暗影法术（相关卡牌：暗脉女勋爵）",
 					"grey-sage-parrot-label": "灰贤鹦鹉",
 					"grey-sage-parrot-tooltip": "当有需要时，显示你施放的上一个法力值消耗大于或等于 6 点的法术（相关卡牌：灰贤鹦鹉）",
-					"multicaster-label": "多系施法者",
-					"multicaster-tooltip": "显示在本局对战中你已使用过的法术派系",
-					"coral-keeper-label": "珊瑚培育师",
-					"coral-keeper-tooltip": "显示在本局对战中你已使用过的法术派系"
+					"multicaster-label": "",
+					"multicaster-tooltip": "显示在本局对战中你已使用过的法术派系"
 				}
 			},
 			"duels": {
