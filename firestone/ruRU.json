@@ -1437,7 +1437,8 @@
 			},
 			"copy-deck-tooltip": "Кликните, чтобы скопировать колоду с высоким винрейтом в буфер обмена",
 			"with-name": "Потасовка этой недели: {{name}} (началось {{date}})",
-			"no-name": "Потасовка началась {{date}}"
+			"no-name": "Потасовка началась {{date}}",
+			"non-buildable-warning-tooltip": ""
 		},
 		"lottery": {
 			"overlay-toggle-label": "",
@@ -1515,13 +1516,14 @@
 			"player": "Вы сыграли {{value}} прыг-скокеров",
 			"opponent": "Ваш противник сыграл {{value}} прыг-скокеров"
 		},
+		"astral-automaton": {
+			"player": "",
+			"opponent": ""
+		},
 		"bolner": "Первый боевой клич разыгранный на этом ходу: {{value}}",
 		"multicaster": {
-			"player": "Вы доберете {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}",
-			"opponent": "Ваш противник доберет {{cardsTotal}} карты за следующие школы заклинаний: {{schools}}"
-		},
-		"coral-keeper": {
-			"player": "Вы призовете {{totalSummons}} коралломенталей. Разыграны школы заклинаний: {{schools}}"
+			"player": "",
+			"opponent": ""
 		},
 		"brilliant-macaw": {
 			"player": "Последняя разыгранная Вами карта с боевым кличом: {{value}}",
@@ -2061,7 +2063,8 @@
 				"unhighlight-minion": "Нажмите, чтобы снять выделение с этого существа в таверне Боба"
 			},
 			"quests": {
-				"turn-to-complete-tooltip": ""
+				"turn-to-complete-tooltip": "",
+				"reward-position-tooltip": ""
 			}
 		},
 		"post-match-stats": {
@@ -2519,6 +2522,8 @@
 					"galakrond-tooltip": "Показывает сколько раз ваш противник взывал к Галакронду (появляется только когда он разыгрывает соответсвующую карту)",
 					"pogo-label": "Счётчик прыг-скокеров",
 					"pogo-tooltip": "Показывает сколько прыг-скокеров разыграл ваш противник",
+					"astral-automaton-label": "",
+					"astral-automaton-tooltip": "",
 					"jade-label": "Счётчик нефритовых големов",
 					"jade-tooltip": "Показать текущие характеристики нефритовых големов вашего противника",
 					"cthun-label": "Характеристики К'Туна",
@@ -2555,6 +2560,7 @@
 				"counters": {
 					"galakrond-tooltip": "",
 					"pogo-tooltip": "Показывает сколько прыг-скокеров вы разыграли",
+					"astral-automaton-tooltip": "",
 					"jade-tooltip": "Показывает текущий размер ваших нефритовых големов",
 					"cthun-tooltip": "Показывает текущие харатеристики вашего К'Туна",
 					"fatigue-tooltip": "Показать ваш ожидаемый урон от усталости",
@@ -2608,10 +2614,8 @@
 					"lady-darkvein-tooltip": "Когда Леди Дарквейн у вас в руке, показывает последнее разыгранное вами заклинание Тьмы",
 					"grey-sage-parrot-label": "Серый мудрец",
 					"grey-sage-parrot-tooltip": "Если у вас в колоде есть Серый мудрец, показывать последнее разыгранное вами заклинание за 5 или более",
-					"multicaster-label": "Маг-универсал",
-					"multicaster-tooltip": "",
-					"coral-keeper-label": "Хранительница кораллов",
-					"coral-keeper-tooltip": "Показывать школы заклинаний, которые вы разыграли за игру"
+					"multicaster-label": "",
+					"multicaster-tooltip": ""
 				}
 			},
 			"duels": {
