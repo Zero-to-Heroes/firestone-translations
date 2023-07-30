@@ -1436,7 +1436,8 @@
             },
             "copy-deck-tooltip": "点击复制高胜率套牌到剪贴板",
             "with-name": "本周的乱斗模式是： {{name}} (开始于 {{date}} )",
-            "no-name": "乱斗模式，开始于 {{date}}"
+            "no-name": "乱斗模式，开始于 {{date}}",
+            "non-buildable-warning-tooltip": "在本期乱斗中，这个职业的所有热门卡组都含有你缺失的卡牌"
         },
         "lottery": {
             "title": "抽奖点数",
@@ -1525,8 +1526,8 @@
         },
         "bolner": "本回合使用的第一张战吼牌：{{value}}",
         "multicaster": {
-            "player": "你可抽 {{cardsTotal}} 张牌；已使用的法术派系：{{schools}}",
-            "opponent": "敌方可抽 {{cardsTotal}} 张牌；已使用的法术派系：{{schools}}"
+            "player": "你已使用过的法术派系：{{schools}}",
+            "opponent": "对手已使用过的法术派系：{{schools}}"
         },
         "coral-keeper": {
             "player": "你可召唤 {{totalSummons}} 个“珊瑚元素”；已使用的法术派系：{{schools}}"
@@ -1646,6 +1647,10 @@
         },
         "bgs-majordomo": {
             "player": "本回合中您已使用 {{value}} 张元素牌"
+        },
+        "astral-automaton": {
+            "player": "你已打出过的星界自动机的数量：{{value}}",
+            "opponent": "对手已打出过的星界自动机的数量：{{value}}"
         }
     },
     "loading": {
@@ -2068,7 +2073,8 @@
                 "unhighlight-minion": "取消标记这个随从"
             },
             "quests": {
-                "turn-to-complete-tooltip": "这个英雄完成这个难度的任务的平均回合数（越快越好）"
+                "turn-to-complete-tooltip": "当前分段的任务难度：这个任务平均需要{{averageTurnsToComplete}}回合，这个英雄平均需要{{turnsToCompleteForHero}}回合，这个难度平均为{{turnsToCompleteImpact}}",
+                "reward-position-tooltip": "在当前分段里，选择这个任务的玩家平均的最终排名"
             }
         },
         "post-match-stats": {
@@ -2550,7 +2556,9 @@
                     "hero-power-damage-label": "英雄技能伤害",
                     "hero-power-damage-tooltip": "显示本局对战中对手的英雄技能累计造成的伤害。仅当对手为法师且英雄技能已造成时显示",
                     "corpse-spent-tooltip": "当可能有相关卡牌时，显示本局对战中消耗的尸体数量（例如彩虹DK可能有通灵最强音）",
-                    "shockspitter-tooltip": "显示当前对局中敌方英雄已攻击次数。仅当对手为猎人且英雄已至少攻击过一次时显示"
+                    "shockspitter-tooltip": "显示当前对局中敌方英雄已攻击次数。仅当对手为猎人且英雄已至少攻击过一次时显示",
+                    "astral-automaton-label": "星界自动机",
+                    "astral-automaton-tooltip": "显示本局对战中对手打出过的星界自动机的数量"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -2616,10 +2624,11 @@
                     "lady-darkvein-tooltip": "当有需要时，显示你施放的上一个暗影法术（相关卡牌：暗脉女勋爵）",
                     "grey-sage-parrot-label": "灰贤鹦鹉",
                     "grey-sage-parrot-tooltip": "当有需要时，显示你施放的上一个法力值消耗大于或等于 6 点的法术（相关卡牌：灰贤鹦鹉）",
-                    "multicaster-label": "多系施法者",
+                    "multicaster-label": "法术派系",
                     "multicaster-tooltip": "显示在本局对战中你已使用过的法术派系",
                     "coral-keeper-label": "珊瑚培育师",
-                    "coral-keeper-tooltip": "显示在本局对战中你已使用过的法术派系"
+                    "coral-keeper-tooltip": "显示在本局对战中你已使用过的法术派系",
+                    "astral-automaton-tooltip": "显示本局对战中你打出过的星界自动机的数量"
                 }
             },
             "duels": {
