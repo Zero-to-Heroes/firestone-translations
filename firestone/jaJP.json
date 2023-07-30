@@ -1437,7 +1437,8 @@
 			},
 			"copy-deck-tooltip": "クリックして高勝率デッキのデッキコードをクリップボードにコピーします",
 			"with-name": "今週の酒場の喧嘩: {{name}} ( {{date}} に始まった)",
-			"no-name": "酒場の喧嘩 ({{date}} に開始!)"
+			"no-name": "酒場の喧嘩 ({{date}} に開始!)",
+			"non-buildable-warning-tooltip": ""
 		},
 		"lottery": {
 			"overlay-toggle-label": "オーバーレイを表示",
@@ -1515,13 +1516,14 @@
 			"player": "「ホッピング・ホッパー」を{{value}}回使用した",
 			"opponent": "相手は「ホッピング・ホッパー」を{{value}}回使用した"
 		},
+		"astral-automaton": {
+			"player": "",
+			"opponent": ""
+		},
 		"bolner": "このターン最初に使った雄叫びカードは「{{value}}」",
 		"multicaster": {
-			"player": "{{cardsTotal}} 枚のカードを引けます ({{schools}} 種の呪文系統を使用)",
-			"opponent": "相手は{{cardsTotal}} 枚のカードを引けます ({{schools}} 種の呪文系統を使用)"
-		},
-		"coral-keeper": {
-			"player": "{{totalSummons}}体の「珊瑚のエレメンタル」を召喚可能 ({{schools}}種の呪文系統を使用)"
+			"player": "",
+			"opponent": ""
 		},
 		"brilliant-macaw": {
 			"player": "最後に使用した雄叫びカードは「{{value}}」",
@@ -2061,7 +2063,8 @@
 				"unhighlight-minion": "ピン留めを外してこのミニオンの強調表示を解除します"
 			},
 			"quests": {
-				"turn-to-complete-tooltip": ""
+				"turn-to-complete-tooltip": "",
+				"reward-position-tooltip": ""
 			}
 		},
 		"post-match-stats": {
@@ -2519,6 +2522,8 @@
 					"galakrond-tooltip": "ガラクロンドに祈願した回数を表示します。ガラクロンド、もしくはガラクロンドに祈願するカードを使用したときのみ表示されます",
 					"pogo-label": "「ホッピング・ホッパー」",
 					"pogo-tooltip": "「ホッピング・ホッパー」をプレイした回数を表示します",
+					"astral-automaton-label": "",
+					"astral-automaton-tooltip": "",
 					"jade-label": "「翡翠のゴーレム」",
 					"jade-tooltip": "「翡翠のゴーレム」の現在のサイズを表示します",
 					"cthun-label": "「クトゥーン」",
@@ -2555,6 +2560,7 @@
 				"counters": {
 					"galakrond-tooltip": "ガラクロンドに祈願した回数を表示します。ガラクロンド、もしくはガラクロンドに祈願するカードを使用したときのみ表示されます",
 					"pogo-tooltip": "\"ホッピング・ホッパー\" をプレイした回数を表示します",
+					"astral-automaton-tooltip": "",
 					"jade-tooltip": "\"翡翠のゴーレム\" の現在のサイズを表示します",
 					"cthun-tooltip": "\"クトゥーン\" の現在のサイズを表示します",
 					"fatigue-tooltip": "次の疲労ダメージを表示します",
@@ -2608,10 +2614,8 @@
 					"lady-darkvein-tooltip": "「レディ・ダークヴェイン」が手札にいる場合、自分が直前に使用した影呪文を表示します",
 					"grey-sage-parrot-label": "「物知りヨウム」",
 					"grey-sage-parrot-tooltip": "「物知りヨウム」が手札にいる場合、自分が直前に使用したコスト6以上の呪文を表示します",
-					"multicaster-label": "「マルチキャスター」",
-					"multicaster-tooltip": "この対戦で自分が使用した呪文系統の数を表示する",
-					"coral-keeper-label": "「珊瑚の番人」",
-					"coral-keeper-tooltip": "この対戦で自分が使用した呪文系統の数を表示する"
+					"multicaster-label": "",
+					"multicaster-tooltip": "この対戦で自分が使用した呪文系統の数を表示する"
 				}
 			},
 			"duels": {
