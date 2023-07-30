@@ -1436,7 +1436,8 @@
             },
             "copy-deck-tooltip": "クリックして高勝率デッキのデッキコードをクリップボードにコピーします",
             "with-name": "今週の酒場の喧嘩: {{name}} ( {{date}} に始まった)",
-            "no-name": "酒場の喧嘩 ({{date}} に開始!)"
+            "no-name": "酒場の喧嘩 ({{date}} に開始!)",
+            "non-buildable-warning-tooltip": "あなたが所持していないカードを必要とする、全てのトップデッキです"
         },
         "lottery": {
             "title": "抽選ポイント",
@@ -1525,8 +1526,8 @@
         },
         "bolner": "このターン最初に使った雄叫びカードは「{{value}}」",
         "multicaster": {
-            "player": "{{cardsTotal}} 枚のカードを引けます ({{schools}} 種の呪文系統を使用)",
-            "opponent": "相手は{{cardsTotal}} 枚のカードを引けます ({{schools}} 種の呪文系統を使用)"
+            "player": "{{schools}} 種の異なる呪文系統を使用",
+            "opponent": "対戦相手は{{schools}} 種の異なる呪文系統を使用"
         },
         "coral-keeper": {
             "player": "{{totalSummons}}体の「珊瑚のエレメンタル」を召喚可能 ({{schools}}種の呪文系統を使用)"
@@ -1646,6 +1647,10 @@
         },
         "bgs-majordomo": {
             "player": "このターン、エレメンタルを {{value}} 体使用した"
+        },
+        "astral-automaton": {
+            "player": "{{value}}体の「星霊の自動人形」を召喚した",
+            "opponent": "対戦相手は{{value}}体の「星霊の自動人形」を召喚した"
         }
     },
     "loading": {
@@ -2068,7 +2073,8 @@
                 "unhighlight-minion": "ピン留めを外してこのミニオンの強調表示を解除します"
             },
             "quests": {
-                "turn-to-complete-tooltip": "このヒーローとそのクエスト難易度で、このクエストを達成するための平均ターン数(低いほど優れています)"
+                "turn-to-complete-tooltip": "あなたのMMR帯において、このヒーローとそのクエスト難易度で、このクエストを達成するための平均ターン数です(低いほど優れています)。このクエストの平均達成ターンは {{averageTurnsToComplete}}ターン、このヒーローの平均達成ターンは{{turnsToCompleteForHero}} ターン、難易度調整は{{turnsToCompleteImpact}}ターンです。",
+                "reward-position-tooltip": "あなたのMMR帯で、このクエストを選択した全てのプレイヤーの平均順位です"
             }
         },
         "post-match-stats": {
@@ -2461,7 +2467,7 @@
                 "show-stats-change": "変化した数値を表示",
                 "show-stats-change-tooltip": "デッキ内で値が変化するカードを、変化した値で表示します (例えば、\"火付け\" のダメージ や \"鍛冶屋の槌\" の耐久度など)",
                 "show-cost-reduction": "デッキのコストを更新",
-                "show-cost-reduction-tooltip": "カードの効果によってデッキ内のカードのコストが変化した場合、変化後のコストを表示します (例えば \"詠唱者の循環\" など)",
+                "show-cost-reduction-tooltip": "カードの効果によってデッキ内のカードのコストが変化した場合、変化後のコストを表示します (例えば 「詠唱者の循環」 など)",
                 "show-unknown-cards": "不明なカードを表示",
                 "show-unknown-cards-tooltip": "情報がないカードを \"不明なカード\" としてデッキトラッカーに表示します。例えば、相手の手札のカードなどです",
                 "highlight-related-cards": "関連カードを強調表示",
@@ -2542,15 +2548,17 @@
                     "libram-label": "聖典",
                     "libram-tooltip": "この対戦で使用した聖典の合計数を表示します。関連するカードがデッキまたは手札にある場合にのみ表示されます",
                     "elwynn-boar-label": "「エルウィンのイノシシ」",
-                    "elwynn-boar-tooltip": "対戦相手の \"エルウィンのイノシシ\" が死亡した数を表示します",
+                    "elwynn-boar-tooltip": "対戦相手の 「エルウィンのイノシシ」が死亡した数を表示します",
                     "volatile-skeleton-label": "「即発の骸骨」 の死亡数",
                     "volatile-skeleton-tooltip": "対戦相手の「即発の骸骨」が死亡した数を表示します",
                     "relic-label": "遺物",
                     "relic-tooltip": "対戦相手の次の遺物の数値を表示します",
                     "hero-power-damage-label": "ヒーローパワーの累積ダメージ",
-                    "hero-power-damage-tooltip": "対戦相手のヒーローパワーによるダメージの合計を表示します。 対戦相手のクラスがメイジで、ヒーローパワーでダメージを1以上与えた場合にのみ表示されます (例えば \"モードレッシュ・ファイヤー・アイ\" などに役立ちます)",
+                    "hero-power-damage-tooltip": "対戦相手のヒーローパワーによるダメージの合計を表示します。 対戦相手のクラスがメイジで、ヒーローパワーでダメージを1以上与えた場合にのみ表示されます (例えば 「モードレッシュ・ファイヤー・アイ」 などに役立ちます)",
                     "corpse-spent-tooltip": "対戦相手が消費した死体の合計数を表示します。対戦相手がそれぞれのタイプのシングルルーンのカードを使用したときに表示されます ( \"クライマックス・デスDIE爆発\" を持っている可能性が高いです)",
-                    "shockspitter-tooltip": "対戦相手がこの試合中ヒーローで攻撃した回数を表示します。 対戦相手のクラスがハンターで、少なくとも一度攻撃した場合にのみ表示されます"
+                    "shockspitter-tooltip": "対戦相手がこの試合中ヒーローで攻撃した回数を表示します。 対戦相手のクラスがハンターで、少なくとも一度攻撃した場合にのみ表示されます",
+                    "astral-automaton-label": "「星霊の自動人形」",
+                    "astral-automaton-tooltip": "対戦相手が召喚した「星霊の自動人形」の数を表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -2562,9 +2570,9 @@
                 "ignore-decklist-confirmation": "わかりました。トラッカーはあなたのデッキリストを無視します",
                 "counters": {
                     "galakrond-tooltip": "ガラクロンドに祈願した回数を表示します。ガラクロンド、もしくはガラクロンドに祈願するカードを使用したときのみ表示されます",
-                    "pogo-tooltip": "\"ホッピング・ホッパー\" をプレイした回数を表示します",
-                    "jade-tooltip": "\"翡翠のゴーレム\" の現在のサイズを表示します",
-                    "cthun-tooltip": "\"クトゥーン\" の現在のサイズを表示します",
+                    "pogo-tooltip": "「ホッピング・ホッパー」 をプレイした回数を表示します",
+                    "jade-tooltip": "「翡翠のゴーレム」の現在のサイズを表示します",
+                    "cthun-tooltip": "「クトゥーン」 の現在のサイズを表示します",
                     "fatigue-tooltip": "次の疲労ダメージを表示します",
                     "abyssal-curse-tooltip": "最も高い「奈落の呪い」のダメージを表示します",
                     "attack-on-board-tooltip": "戦場のミニオンの攻撃力と、自分のヒーローパワーを合計した数値を表示します",
@@ -2616,10 +2624,11 @@
                     "lady-darkvein-tooltip": "「レディ・ダークヴェイン」が手札にいる場合、自分が直前に使用した影呪文を表示します",
                     "grey-sage-parrot-label": "「物知りヨウム」",
                     "grey-sage-parrot-tooltip": "「物知りヨウム」が手札にいる場合、自分が直前に使用したコスト6以上の呪文を表示します",
-                    "multicaster-label": "「マルチキャスター」",
+                    "multicaster-label": "呪文系統",
                     "multicaster-tooltip": "この対戦で自分が使用した呪文系統の数を表示する",
                     "coral-keeper-label": "「珊瑚の番人」",
-                    "coral-keeper-tooltip": "この対戦で自分が使用した呪文系統の数を表示する"
+                    "coral-keeper-tooltip": "この対戦で自分が使用した呪文系統の数を表示する",
+                    "astral-automaton-tooltip": "召喚した「星霊の自動人形」の数を表示します"
                 }
             },
             "duels": {
