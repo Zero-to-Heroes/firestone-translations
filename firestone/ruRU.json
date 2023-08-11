@@ -137,6 +137,7 @@
 			"alterac-valley": "Разделенные Альтераком",
 			"golden-the-barrens": "Закаленные Степями (золотой)",
 			"year-of-phoenix": "Год Феникса",
+			"golden-year-of-phoenix": "",
 			"standard-pack": "Стандартный",
 			"wild-pack": "Вольный",
 			"golden-standard-pack": "Стандартный (золотой)",
@@ -151,7 +152,8 @@
 			"golden-return-of-the-lich-king": "Марш Короля-лича (золотой)",
 			"battle-of-the-bands": "Фестиваль Легенд",
 			"golden-battle-of-the-bands": "Золотой Фестиваль Легенд",
-			"titans": ""
+			"titans": "",
+			"golden-titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -849,6 +851,10 @@
 					"per-day": "Группировать по дням",
 					"per-day-tooltip": "Показывает рейтинг на начало дня"
 				},
+				"quest-type": {
+					"quests": "",
+					"rewards": ""
+				},
 				"time": {
 					"past-seven": "Последние 7 дней",
 					"past-three": "Последние 3 дня",
@@ -991,14 +997,27 @@
 				"player-average-position-tooltip": "Ваше среднее место с этим героем",
 				"tribe-impact-position-tooltip": "Сколько средняя позиция меняется в зависимости от выбранных типов существ",
 				"header-hero-details": "Герой",
+				"header-quest-details": "",
+				"header-quest-reward-details": "",
 				"header-average-position": "Средняя позиция",
+				"header-average-turns-to-complete": "",
 				"header-placement-distribution": "Распределение мест",
 				"header-combat-winrate": "",
 				"header-net-mmr": "Сетевой MMR",
 				"header-tribes": "",
 				"header-tribes-tooltip": "",
+				"header-collapse-all-button": "",
+				"header-expand-all-button": "",
+				"header-group-difficulty-button": "",
+				"header-ungroup-difficulty-button": "",
+				"header-group-difficulty-button-tooltip": "",
+				"header-ungroup-difficulty-button-tooltip": "",
 				"tribe-info-tooltip": "",
-				"learn-more": "Как рассчитываются эти данные?"
+				"learn-more": "Как рассчитываются эти данные?",
+				"quest-tooltip-with-difficulty": "",
+				"quest-tooltip-all-difficulties": "",
+				"quest-search-placeholder": "",
+				"reward-search-placeholder": ""
 			},
 			"bgs-tier-list": {
 				"header": "Тир-лист квестов ({{value}} партий) "
@@ -1404,6 +1423,7 @@
 			"discover_highlight": "",
 			"minion_play_order": "",
 			"mercs_terasure_highlight": "",
+			"quest_stats": "",
 			"tip-0": "",
 			"tip-1": "Нажмите на значок \"Помощь\" вверху для просмотра описаний последних версий приложения",
 			"tip-2": "Нажмите на значок \"Сообщить об ошибке\" вверху, чтобы отправить отчёт об ошибке или предложить улучшения",
@@ -1516,9 +1536,12 @@
 			"player": "Вы сыграли {{value}} прыг-скокеров",
 			"opponent": "Ваш противник сыграл {{value}} прыг-скокеров"
 		},
-		"astral-automaton": {
+		"specific-summons": {
 			"player": "",
 			"opponent": ""
+		},
+		"chained-guardian": {
+			"player": ""
 		},
 		"bolner": "Первый боевой клич разыгранный на этом ходу: {{value}}",
 		"multicaster": {
@@ -2524,6 +2547,8 @@
 					"pogo-tooltip": "Показывает сколько прыг-скокеров разыграл ваш противник",
 					"astral-automaton-label": "",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-label": "",
+					"earthen-golem-tooltip": "",
 					"jade-label": "Счётчик нефритовых големов",
 					"jade-tooltip": "Показать текущие характеристики нефритовых големов вашего противника",
 					"cthun-label": "Характеристики К'Туна",
@@ -2562,6 +2587,11 @@
 					"galakrond-tooltip": "",
 					"pogo-tooltip": "Показывает сколько прыг-скокеров вы разыграли",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-tooltip": "",
+					"treant-label": "",
+					"treant-tooltip": "",
+					"chained-guardian-label": "",
+					"chained-guardian-tooltip": "",
 					"jade-tooltip": "Показывает текущий размер ваших нефритовых големов",
 					"cthun-tooltip": "Показывает текущие харатеристики вашего К'Туна",
 					"fatigue-tooltip": "Показать ваш ожидаемый урон от усталости",
@@ -2708,6 +2738,8 @@
 				"show-hero-tier-tooltip": "",
 				"show-hero-tips-label": "",
 				"show-hero-tips-tooltip": "",
+				"show-quest-stats-label": "",
+				"show-quest-stats-tooltip": "",
 				"show-overlay-button": "Показать кнопку наложения",
 				"show-overlay-button-tooltip": "",
 				"popup-post-match-stats-label": "Вспывающая послематчевая статистика",
