@@ -137,6 +137,7 @@
 			"alterac-valley": "Divisés en Alterac",
 			"golden-the-barrens": "Forgés dans les Tarides (Doré)",
 			"year-of-phoenix": "Année du Phénix",
+			"golden-year-of-phoenix": "",
 			"standard-pack": "Standard",
 			"wild-pack": "Libre",
 			"golden-standard-pack": "Standard (Doré)",
@@ -151,7 +152,8 @@
 			"golden-return-of-the-lich-king": "La marche du roi-liche (Doré)",
 			"battle-of-the-bands": "La fête des légendes",
 			"golden-battle-of-the-bands": "La fête des légendes (Doré)",
-			"titans": ""
+			"titans": "",
+			"golden-titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -849,6 +851,10 @@
 					"per-day": "Grouper par jour",
 					"per-day-tooltip": "Afficher la cote au début de chaque jour"
 				},
+				"quest-type": {
+					"quests": "",
+					"rewards": ""
+				},
 				"time": {
 					"past-seven": "7 derniers jours",
 					"past-three": "3 derniers jours",
@@ -991,14 +997,27 @@
 				"player-average-position-tooltip": "Votre place moyenne avec ce héros",
 				"tribe-impact-position-tooltip": "Combien la position moyenne change en fonction des types sélectionnés",
 				"header-hero-details": "Héros",
+				"header-quest-details": "",
+				"header-quest-reward-details": "",
 				"header-average-position": "Place moyenne",
+				"header-average-turns-to-complete": "",
 				"header-placement-distribution": "Distribution des places",
 				"header-combat-winrate": "% victoires en combat",
 				"header-net-mmr": "Gain de cote",
 				"header-tribes": "Meilleurs types",
 				"header-tribes-tooltip": "Les types de serviteur qui ont l’impact le plus bénéfique sur la position moyenne du héros",
+				"header-collapse-all-button": "",
+				"header-expand-all-button": "",
+				"header-group-difficulty-button": "",
+				"header-ungroup-difficulty-button": "",
+				"header-group-difficulty-button-tooltip": "",
+				"header-ungroup-difficulty-button-tooltip": "",
 				"tribe-info-tooltip": "Lorsque des {{ tribe }} sont présents dans la taverne, la position moyenne du héros est {{value}} meilleure",
-				"learn-more": "Comment ces données sont-elles calculées ?"
+				"learn-more": "Comment ces données sont-elles calculées ?",
+				"quest-tooltip-with-difficulty": "",
+				"quest-tooltip-all-difficulties": "",
+				"quest-search-placeholder": "",
+				"reward-search-placeholder": ""
 			},
 			"bgs-tier-list": {
 				"header": "Tierlist des quêtes ({{value}} parties) "
@@ -1404,6 +1423,7 @@
 			"discover_highlight": "",
 			"minion_play_order": "",
 			"mercs_terasure_highlight": "",
+			"quest_stats": "",
 			"tip-0": "Si vous avez des commentaires, des bugs ou si vous voulez juste entrer en contact, veuillez nous rendre visite sur Discord (lien en haut) !",
 			"tip-1": "Cliquez sur l’icône « Aide » en haut pour voir les dernières notes de mise à jour de l’application",
 			"tip-2": "Cliquez sur l’icône « Bug » en haut pour signaler un bug ou suggérer une amélioration",
@@ -1516,9 +1536,12 @@
 			"player": "Vous avez joué {{value}} lapins-échasseurs",
 			"opponent": "Votre adversaire a joué {{value}} lapins-échasseurs"
 		},
-		"astral-automaton": {
+		"specific-summons": {
 			"player": "",
 			"opponent": ""
+		},
+		"chained-guardian": {
+			"player": ""
 		},
 		"bolner": "{{value}} est le premier Cri de guerre joué pendant ce tour",
 		"multicaster": {
@@ -2524,6 +2547,8 @@
 					"pogo-tooltip": "Affiche le nombre de fois où votre adversaire a joué un lapin-échasseur",
 					"astral-automaton-label": "",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-label": "",
+					"earthen-golem-tooltip": "",
 					"jade-label": "Golem de jade",
 					"jade-tooltip": "Afficher la taille actuelle des golems de jade de votre adversaire",
 					"cthun-label": "C’Thun",
@@ -2562,6 +2587,11 @@
 					"galakrond-tooltip": "Afficher le nombre de fois que vous avez conjuré Galakrond (n’apparaît que lorsque vous jouez Galakrond ou une carte qui conjure Galakrond)",
 					"pogo-tooltip": "Affiche le nombre de fois où vous avez joué un lapin-échasseur",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-tooltip": "",
+					"treant-label": "",
+					"treant-tooltip": "",
+					"chained-guardian-label": "",
+					"chained-guardian-tooltip": "",
 					"jade-tooltip": "Afficher la taille actuelle de vos golems de jade",
 					"cthun-tooltip": "Afficher la taille actuelle de votre C’Thun",
 					"fatigue-tooltip": "Afficher vos prochains dégâts de fatigue",
@@ -2708,6 +2738,8 @@
 				"show-hero-tier-tooltip": "Affiche le tier de héros et la position moyenne globale directement sur le portrait du héros lors de la sélection des héros.",
 				"show-hero-tips-label": "Afficher les conseils de stratégie",
 				"show-hero-tips-tooltip": "La sphère de sagesse miraculeuse apparaît et vous permet de voir rapidement les conseils de pro pour votre héros actuel en passant la souris dessus.",
+				"show-quest-stats-label": "",
+				"show-quest-stats-tooltip": "",
 				"show-overlay-button": "Afficher le bouton d’overlay",
 				"show-overlay-button-tooltip": "Affiche un bouton sur l’overlay pour activer/désactiver la fenêtre principale, utilisable à la place des raccourcis clavier",
 				"popup-post-match-stats-label": "Afficher les stats d’après-match",
