@@ -151,7 +151,9 @@
             "golden-return-of-the-lich-king": "巫妖王的进军 异画金色卡牌包",
             "battle-of-the-bands": "传奇音乐节 卡牌包",
             "golden-battle-of-the-bands": "传奇音乐节 金色卡牌包",
-            "titans": "泰坦诸神"
+            "titans": "泰坦诸神",
+            "golden-titans": "泰坦诸神 金色卡牌包",
+            "golden-year-of-phoenix": "凤凰年 金色卡牌包"
         },
         "ranks": {
             "constructed": {
@@ -871,6 +873,10 @@
                     "hero": "英雄",
                     "hero-power": "英雄技能",
                     "signature-treasure": "签名宝藏"
+                },
+                "quest-type": {
+                    "quests": "任务",
+                    "rewards": "奖励"
                 }
             },
             "personal-stats": {
@@ -997,7 +1003,20 @@
                 "header-tribes": "最优的随从类型",
                 "header-tribes-tooltip": "对这个英雄平均排名最有帮助的随从类型",
                 "tribe-info-tooltip": "在对局中有 {{ tribe }} 的随从时，这个英雄的平均排名提升了 {{value}}",
-                "learn-more": "这个梯队是怎么计算出来的？"
+                "learn-more": "这个梯队是怎么计算出来的？",
+                "header-average-turns-to-complete": "平均完成回合",
+                "header-group-difficulty-button-tooltip": "按名称分类任务，以便于概览所有任务的难度",
+                "header-quest-details": "任务",
+                "quest-tooltip-with-difficulty": "{{questName}}的难度为{{difficulty}}（替换任务卡牌描述中的{0}）",
+                "header-quest-reward-details": "任务奖励",
+                "header-collapse-all-button": "折叠全部",
+                "header-expand-all-button": "展开全部",
+                "quest-search-placeholder": "搜索任务…",
+                "reward-search-placeholder": "搜索奖励…",
+                "header-ungroup-difficulty-button": "分离显示",
+                "header-ungroup-difficulty-button-tooltip": "分离显示任务以在同一行内显示难度",
+                "quest-tooltip-all-difficulties": "{{questName}}的所有难度",
+                "header-group-difficulty-button": "合并显示"
             },
             "bgs-tier-list": {
                 "header": "任务评级表 ( {{value}} 场对战) "
@@ -1413,7 +1432,8 @@
             "minion_play_order": "战场中随从上方的数字就是随从的入场顺序，这也是它们同时死亡后触发亡语的顺序",
             "mercs_terasure_highlight": "[佣兵战纪] 鼠标悬停宝藏时，高亮显示宝藏对您的队伍的协同提升",
             "ad-tip-premium": "会员",
-            "collection_stats": "你可以随时查看不同卡包的卡牌历史、统计数据等信息"
+            "collection_stats": "你可以随时查看不同卡包的卡牌历史、统计数据等信息",
+            "quest_stats": "在浮窗直接查看完成任务的平均回合数和奖励的平均位次"
         },
         "streams": {
             "category": {
@@ -1651,6 +1671,13 @@
         "astral-automaton": {
             "player": "友方已使用“星界自动机”数量：{{value}}",
             "opponent": "敌方已使用“星界自动机”数量：{{value}}"
+        },
+        "specific-summons": {
+            "player": "你已使用{{value}} 张{{cardName}}",
+            "opponent": "对手已使用过{{value}} 张{{cardName}}"
+        },
+        "chained-guardian": {
+            "player": "你已向对手牌库洗入的“疫病”数量：{{value}}"
         }
     },
     "loading": {
@@ -2073,7 +2100,7 @@
                 "unhighlight-minion": "取消标记这个随从"
             },
             "quests": {
-                "turn-to-complete-tooltip": "当前分段的任务难度：这个任务平均需要{{averageTurnsToComplete}}回合，这个英雄平均需要{{turnsToCompleteForHero}}回合，这个难度平均为{{turnsToCompleteImpact}}",
+                "turn-to-complete-tooltip": "当前分段的任务难度（数值越低越容易）：完成此任务平均需要{{averageTurnsToComplete}}回合，此英雄平均需要{{turnsToCompleteForHero}}回合，难度调整为{{turnsToCompleteImpact}}",
                 "reward-position-tooltip": "在当前分段里，选择这个任务的玩家平均的最终排名"
             }
         },
@@ -2437,8 +2464,8 @@
         "decktracker": {
             "menu": {
                 "global": "全局选项",
-                "your-deck": "您的套牌",
-                "opponent-deck": "对手套牌",
+                "your-deck": "友方选项",
+                "opponent-deck": "敌方选项",
                 "turn-timer": "回合计时器",
                 "duels": "对决模式",
                 "launch": "启动选项"
@@ -2558,8 +2585,10 @@
                     "corpse-spent-tooltip": "当敌方死亡骑士符文为三混色时（可能拥有“通灵最强音”），显示敌方已消耗的尸体数量",
                     "shockspitter-tooltip": "显示当前对局中敌方英雄已攻击次数。仅当对手为猎人且英雄已至少攻击过一次时显示",
                     "astral-automaton-label": "星界自动机",
-                    "astral-automaton-tooltip": "显示对手已使用的“星界自动机”数量",
-                    "multicaster-tooltip": "显示对手在本局对战中已使用的的法术派系"
+                    "astral-automaton-tooltip": "显示对手已召唤的“星界自动机”数量",
+                    "multicaster-tooltip": "显示对手在本局对战中已使用的的法术派系",
+                    "earthen-golem-label": "土灵魔像",
+                    "earthen-golem-tooltip": "显示对手已召唤的“土灵魔像”数量"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -2629,7 +2658,12 @@
                     "multicaster-tooltip": "显示在本局对战中你已使用过的法术派系",
                     "coral-keeper-label": "珊瑚培育师",
                     "coral-keeper-tooltip": "显示在本局对战中你已使用过的法术派系",
-                    "astral-automaton-tooltip": "显示友方已使用的“星界自动机”数量"
+                    "astral-automaton-tooltip": "显示你已召唤的“星界自动机”数量",
+                    "chained-guardian-label": "疫病",
+                    "chained-guardian-tooltip": "显示你向对手牌库洗入的“疫病”数量",
+                    "earthen-golem-tooltip": "显示你已召唤“土灵魔像”数量",
+                    "treant-label": "树人",
+                    "treant-tooltip": "显示你已召唤的“树人”数量"
                 }
             },
             "duels": {
@@ -2729,7 +2763,9 @@
                 "show-game-end-notif-tooltip": "对局结束后，在窗口右下角显示一个可以点击查看数据的弹窗",
                 "simulator-config-title": "模拟器设置",
                 "simulator-number-of-sims-label": "模拟次数",
-                "simulator-number-of-sims-tooltip": "每场战斗的模拟次数。我们发现5000次模拟最佳。增加模拟次数会提高计算准确度，但也会耗费更多您的电脑资源。"
+                "simulator-number-of-sims-tooltip": "每场战斗的模拟次数。我们发现5000次模拟最佳。增加模拟次数会提高计算准确度，但也会耗费更多您的电脑资源。",
+                "show-quest-stats-label": "显示任务统计数据",
+                "show-quest-stats-tooltip": "显示每个任务的平均完成回合数，以及选取该奖励的玩家的平均位次。注意选取任务奖励时要同时考虑二者！"
             },
             "overlay": {
                 "overlay-title": "浮窗选项",
