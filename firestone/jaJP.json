@@ -137,6 +137,7 @@
 			"alterac-valley": "烈戦のアルタラック",
 			"golden-the-barrens": "ゴールデン・荒ぶる大地の強者たち",
 			"year-of-phoenix": "フェニックス年",
+			"golden-year-of-phoenix": "",
 			"standard-pack": "スタンダード",
 			"wild-pack": "ワイルド",
 			"golden-standard-pack": "ゴールデン・スタンダード",
@@ -151,7 +152,8 @@
 			"golden-return-of-the-lich-king": "ゴールデン・リッチキングの凱旋",
 			"battle-of-the-bands": "集え！レジェンド・フェス",
 			"golden-battle-of-the-bands": "ゴールデン・集え！レジェンド・フェス",
-			"titans": "タイタンの目醒め"
+			"titans": "タイタンの目醒め",
+			"golden-titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -849,6 +851,10 @@
 					"per-day": "日ごとにグループ化",
 					"per-day-tooltip": "毎日の開始時のレートを表示"
 				},
+				"quest-type": {
+					"quests": "",
+					"rewards": ""
+				},
 				"time": {
 					"past-seven": "過去7日間",
 					"past-three": "過去3日間",
@@ -991,14 +997,27 @@
 				"player-average-position-tooltip": "このヒーローでの自分の平均順位",
 				"tribe-impact-position-tooltip": "選択した種族により、どれほど平均順位が変化するか",
 				"header-hero-details": "ヒーロー",
+				"header-quest-details": "",
+				"header-quest-reward-details": "",
 				"header-average-position": "平均順位",
+				"header-average-turns-to-complete": "",
 				"header-placement-distribution": "順位分布",
 				"header-combat-winrate": "戦闘勝率",
 				"header-net-mmr": "Net MMR",
 				"header-tribes": "相性の良い種族",
 				"header-tribes-tooltip": "平均順位に最も寄与する種族",
+				"header-collapse-all-button": "",
+				"header-expand-all-button": "",
+				"header-group-difficulty-button": "",
+				"header-ungroup-difficulty-button": "",
+				"header-group-difficulty-button-tooltip": "",
+				"header-ungroup-difficulty-button-tooltip": "",
 				"tribe-info-tooltip": "{{ tribe }} がロビーにいる場合、このヒーローの平均順位は {{value}} 上昇します。",
-				"learn-more": "このデータはどのように算出されますか？"
+				"learn-more": "このデータはどのように算出されますか？",
+				"quest-tooltip-with-difficulty": "",
+				"quest-tooltip-all-difficulties": "",
+				"quest-search-placeholder": "",
+				"reward-search-placeholder": ""
 			},
 			"bgs-tier-list": {
 				"header": "クエストTierリスト ({{value}} 試合) "
@@ -1404,6 +1423,7 @@
 			"discover_highlight": "発見中にカードにマウスオーバーすると、デッキ内の関連するカードが強調表示されます",
 			"minion_play_order": "各ミニオンの上に表示されている数字は、それらが盤面に登場した順番です(断末魔はその順番で発動します)",
 			"mercs_terasure_highlight": "マーセナリーズで宝物にマウスオーバーすると、パーティ内のシナジーが強調表示されます",
+			"quest_stats": "",
 			"tip-0": "バグ報告やフィードバック、連絡を取りたい場合は、Discord(上部にあるリンク)をご覧ください！",
 			"tip-1": "上部にある\"？\"アイコン(ヘルプアイコン)をクリックすると、アプリの最新のリリースノートが表示されます",
 			"tip-2": "上部にある\"バグ\"アイコン(虫のアイコン)をクリックすると、バグ報告や改善の提案ができます",
@@ -1516,9 +1536,12 @@
 			"player": "「ホッピング・ホッパー」を{{value}}回使用した",
 			"opponent": "相手は「ホッピング・ホッパー」を{{value}}回使用した"
 		},
-		"astral-automaton": {
+		"specific-summons": {
 			"player": "",
 			"opponent": ""
+		},
+		"chained-guardian": {
+			"player": ""
 		},
 		"bolner": "このターン最初に使った雄叫びカードは「{{value}}」",
 		"multicaster": {
@@ -2524,6 +2547,8 @@
 					"pogo-tooltip": "「ホッピング・ホッパー」をプレイした回数を表示します",
 					"astral-automaton-label": "",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-label": "",
+					"earthen-golem-tooltip": "",
 					"jade-label": "「翡翠のゴーレム」",
 					"jade-tooltip": "「翡翠のゴーレム」の現在のサイズを表示します",
 					"cthun-label": "「クトゥーン」",
@@ -2562,6 +2587,11 @@
 					"galakrond-tooltip": "ガラクロンドに祈願した回数を表示します。ガラクロンド、もしくはガラクロンドに祈願するカードを使用したときのみ表示されます",
 					"pogo-tooltip": "\"ホッピング・ホッパー\" をプレイした回数を表示します",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-tooltip": "",
+					"treant-label": "",
+					"treant-tooltip": "",
+					"chained-guardian-label": "",
+					"chained-guardian-tooltip": "",
 					"jade-tooltip": "\"翡翠のゴーレム\" の現在のサイズを表示します",
 					"cthun-tooltip": "\"クトゥーン\" の現在のサイズを表示します",
 					"fatigue-tooltip": "次の疲労ダメージを表示します",
@@ -2708,6 +2738,8 @@
 				"show-hero-tier-tooltip": "ヒーロー選択画面で、ヒーローの Tier と全体の平均順位を直接表示します",
 				"show-hero-tips-label": "戦略のヒントを表示",
 				"show-hero-tips-tooltip": "ヒーローにマウスオーバーすると、脅威の教育球が現れて、君に今のヒーローにあう戦略のヒントを教えてくれるぞ！",
+				"show-quest-stats-label": "",
+				"show-quest-stats-tooltip": "",
 				"show-overlay-button": "オーバーレイボタンを表示",
 				"show-overlay-button-tooltip": "メインウィンドウを表示/非表示できるボタンを表示します。ホットキーでも表示/非表示が切り替えられます",
 				"popup-post-match-stats-label": "前回の試合の戦績を表示",
