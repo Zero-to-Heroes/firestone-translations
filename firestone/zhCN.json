@@ -137,6 +137,7 @@
 			"alterac-valley": "奥特兰克的决裂 卡牌包",
 			"golden-the-barrens": "贫瘠之地的锤炼 金色卡牌包",
 			"year-of-phoenix": "凤凰年 卡牌包",
+			"golden-year-of-phoenix": "",
 			"standard-pack": "标准模式 卡牌包",
 			"wild-pack": "狂野模式 卡牌包",
 			"golden-standard-pack": "标准模式 金色卡牌包",
@@ -151,7 +152,8 @@
 			"golden-return-of-the-lich-king": "巫妖王的进军 异画金色卡牌包",
 			"battle-of-the-bands": "传奇音乐节 卡牌包",
 			"golden-battle-of-the-bands": "传奇音乐节 金色卡牌包",
-			"titans": "泰坦诸神"
+			"titans": "泰坦诸神",
+			"golden-titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -849,6 +851,10 @@
 					"per-day": "按天分组",
 					"per-day-tooltip": "显示每天开始时的分数"
 				},
+				"quest-type": {
+					"quests": "",
+					"rewards": ""
+				},
 				"time": {
 					"past-seven": "最近7天内",
 					"past-three": "最近3天内",
@@ -991,14 +997,27 @@
 				"player-average-position-tooltip": "选择这个英雄的平均排名",
 				"tribe-impact-position-tooltip": "选定随从类型所带来的平均排名变化",
 				"header-hero-details": "英雄",
+				"header-quest-details": "",
+				"header-quest-reward-details": "",
 				"header-average-position": "平均排名",
+				"header-average-turns-to-complete": "",
 				"header-placement-distribution": "排名分布",
 				"header-combat-winrate": "战斗胜率",
 				"header-net-mmr": "MMR变化",
 				"header-tribes": "最优的随从类型",
 				"header-tribes-tooltip": "对这个英雄平均排名最有帮助的随从类型",
+				"header-collapse-all-button": "",
+				"header-expand-all-button": "",
+				"header-group-difficulty-button": "",
+				"header-ungroup-difficulty-button": "",
+				"header-group-difficulty-button-tooltip": "",
+				"header-ungroup-difficulty-button-tooltip": "",
 				"tribe-info-tooltip": "在对局中有 {{ tribe }} 的随从时，这个英雄的平均排名提升了 {{value}}",
-				"learn-more": "这个梯队是怎么计算出来的？"
+				"learn-more": "这个梯队是怎么计算出来的？",
+				"quest-tooltip-with-difficulty": "",
+				"quest-tooltip-all-difficulties": "",
+				"quest-search-placeholder": "",
+				"reward-search-placeholder": ""
 			},
 			"bgs-tier-list": {
 				"header": "任务评级表 ( {{value}} 场对战) "
@@ -1404,6 +1423,7 @@
 			"discover_highlight": "在发现卡牌时，鼠标悬停在卡牌上方可以高亮显示套牌中的相关卡牌",
 			"minion_play_order": "战场中随从上方的数字就是随从的入场顺序，这也是它们同时死亡后触发亡语的顺序",
 			"mercs_terasure_highlight": "[佣兵战纪] 鼠标悬停宝藏时，高亮显示宝藏对您的队伍的协同提升",
+			"quest_stats": "",
 			"tip-0": "如果想要反馈、汇报Bug或者联系Firestone社区，请点击上方的Discord链接",
 			"tip-1": "点击顶部的“帮助”图标查看应用的最新更新日志",
 			"tip-2": "点击顶部的\"Bug\"图标报告错误或提交建议",
@@ -1516,9 +1536,12 @@
 			"player": "友方“蹦蹦兔”使用数量：{{value}}",
 			"opponent": "敌方“蹦蹦兔”使用数量：{{value}}"
 		},
-		"astral-automaton": {
+		"specific-summons": {
 			"player": "",
 			"opponent": ""
+		},
+		"chained-guardian": {
+			"player": ""
 		},
 		"bolner": "本回合使用的第一张战吼牌：{{value}}",
 		"multicaster": {
@@ -2524,6 +2547,8 @@
 					"pogo-tooltip": "显示对手使用的“蹦蹦兔”数量",
 					"astral-automaton-label": "",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-label": "",
+					"earthen-golem-tooltip": "",
 					"jade-label": "青玉魔像",
 					"jade-tooltip": "显示对手的”青玉魔像“当前属性值",
 					"cthun-label": "克苏恩",
@@ -2562,6 +2587,11 @@
 					"galakrond-tooltip": "显示你祈求”迦拉克隆“的次数（仅当你使用“迦拉克隆”或者祈求牌时显示）",
 					"pogo-tooltip": "显示你已使用的“蹦蹦兔”数量",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-tooltip": "",
+					"treant-label": "",
+					"treant-tooltip": "",
+					"chained-guardian-label": "",
+					"chained-guardian-tooltip": "",
 					"jade-tooltip": "显示你的“青玉魔像”当前属性值",
 					"cthun-tooltip": "显示你的“克苏恩”当前属性值",
 					"fatigue-tooltip": "显示你下次受到的疲劳伤害",
@@ -2708,6 +2738,8 @@
 				"show-hero-tier-tooltip": "在选择英雄时在英雄头像上显示英雄评级和全球平均名次。",
 				"show-hero-tips-label": "显示玩法建议",
 				"show-hero-tips-tooltip": "神奇的智慧之球将会在鼠标悬停时显示职业玩家建议",
+				"show-quest-stats-label": "",
+				"show-quest-stats-tooltip": "",
 				"show-overlay-button": "显示浮窗按钮",
 				"show-overlay-button-tooltip": "在主界面上显示一个切换主界面的按钮，可用来代替快捷键",
 				"popup-post-match-stats-label": "自动弹出赛后数据",
