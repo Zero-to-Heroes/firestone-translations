@@ -137,6 +137,7 @@
 			"alterac-valley": "Divisi nella Valle di Alterac",
 			"golden-the-barrens": "Forgiato nelle Savane Dorate",
 			"year-of-phoenix": "Anno della Fenice",
+			"golden-year-of-phoenix": "",
 			"standard-pack": "",
 			"wild-pack": "Selvatico",
 			"golden-standard-pack": "",
@@ -151,7 +152,8 @@
 			"golden-return-of-the-lich-king": "",
 			"battle-of-the-bands": "",
 			"golden-battle-of-the-bands": "",
-			"titans": ""
+			"titans": "",
+			"golden-titans": ""
 		},
 		"ranks": {
 			"constructed": {
@@ -849,6 +851,10 @@
 					"per-day": "Gruppo al giorno",
 					"per-day-tooltip": "Mostra la valutazione all'inizio di ogni giorno"
 				},
+				"quest-type": {
+					"quests": "",
+					"rewards": ""
+				},
 				"time": {
 					"past-seven": "Ultimi 7 giorni",
 					"past-three": "Ultimi 3 giorni",
@@ -991,14 +997,27 @@
 				"player-average-position-tooltip": "",
 				"tribe-impact-position-tooltip": "",
 				"header-hero-details": "",
+				"header-quest-details": "",
+				"header-quest-reward-details": "",
 				"header-average-position": "",
+				"header-average-turns-to-complete": "",
 				"header-placement-distribution": "",
 				"header-combat-winrate": "",
 				"header-net-mmr": "",
 				"header-tribes": "",
 				"header-tribes-tooltip": "",
+				"header-collapse-all-button": "",
+				"header-expand-all-button": "",
+				"header-group-difficulty-button": "",
+				"header-ungroup-difficulty-button": "",
+				"header-group-difficulty-button-tooltip": "",
+				"header-ungroup-difficulty-button-tooltip": "",
 				"tribe-info-tooltip": "",
-				"learn-more": ""
+				"learn-more": "",
+				"quest-tooltip-with-difficulty": "",
+				"quest-tooltip-all-difficulties": "",
+				"quest-search-placeholder": "",
+				"reward-search-placeholder": ""
 			},
 			"bgs-tier-list": {
 				"header": ""
@@ -1404,6 +1423,7 @@
 			"discover_highlight": "",
 			"minion_play_order": "",
 			"mercs_terasure_highlight": "",
+			"quest_stats": "",
 			"tip-0": "",
 			"tip-1": "Clicca sull'icona \"Aiuto\" in alto per visualizzare le ultime note di rilascio dell'app",
 			"tip-2": "Clicca sull'icona \"Bug\" in alto per segnalare un bug o suggerire un miglioramento",
@@ -1516,9 +1536,12 @@
 			"player": "Hai giocato {{value}} Saltatori di Pogo",
 			"opponent": "Il tuo avversario ha giocato {{value}} Saltatori di Pogo"
 		},
-		"astral-automaton": {
+		"specific-summons": {
 			"player": "",
 			"opponent": ""
+		},
+		"chained-guardian": {
+			"player": ""
 		},
 		"bolner": "{{value}} è stata la prima carta Grido di Battaglia giocata in questo turno",
 		"multicaster": {
@@ -2524,6 +2547,8 @@
 					"pogo-tooltip": "Mostra il numero di volte che il tuo avversario ha giocato un Saltatore di Pogo",
 					"astral-automaton-label": "",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-label": "",
+					"earthen-golem-tooltip": "",
 					"jade-label": "Golem di Giada",
 					"jade-tooltip": "Mostra le dimensioni correnti dei Golem di Giada del tuo avversario",
 					"cthun-label": "C'Thun",
@@ -2562,6 +2587,11 @@
 					"galakrond-tooltip": "Mostra il numero di volte in cui hai invocato Galakrond (appare solo quando giochi Galakrond o una carta che lo Invoca)",
 					"pogo-tooltip": "Mostra il numero di volte in cui hai giocato un Saltatore di Pogo",
 					"astral-automaton-tooltip": "",
+					"earthen-golem-tooltip": "",
+					"treant-label": "",
+					"treant-tooltip": "",
+					"chained-guardian-label": "",
+					"chained-guardian-tooltip": "",
 					"jade-tooltip": "Mostra le dimensioni correnti dei tuoi Golem di Giada",
 					"cthun-tooltip": "Mostra le dimensioni correnti del tuo C'Thun",
 					"fatigue-tooltip": "",
@@ -2708,6 +2738,8 @@
 				"show-hero-tier-tooltip": "",
 				"show-hero-tips-label": "",
 				"show-hero-tips-tooltip": "",
+				"show-quest-stats-label": "",
+				"show-quest-stats-tooltip": "",
 				"show-overlay-button": "Mostra pulsante di sovrapposizione",
 				"show-overlay-button-tooltip": "Mostra un pulsante sulla sovrapposizione per attivare o disattivare la finestra principale, che puoi usare al posto dei tasti di scelta rapida",
 				"popup-post-match-stats-label": "Statistiche post-partita popup",
