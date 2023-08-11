@@ -23,7 +23,8 @@
         "format": {
             "standard": "Standard",
             "wild": "Libre",
-            "classic": "Classique"
+            "classic": "Classique",
+            "twist": "Imprévu"
         },
         "game-mode": {
             "casual-duels": "Duels",
@@ -37,7 +38,9 @@
             "casual": "Non classé",
             "friendly": "Duel amical",
             "arena": "Arène",
-            "tavern-brawl": "Bras de fer"
+            "tavern-brawl": "Bras de fer",
+            "constructed": "Partie classée",
+            "duels": "Duels"
         },
         "region": {
             "all": "Toutes les régions",
@@ -91,7 +94,8 @@
             "return_to_naxxramas": "Retour à Naxxramas",
             "tb": "Bras de fer",
             "battle_of_the_bands": "La fête des légendes",
-            "audiopocalypse": "Audiopocalypse"
+            "audiopocalypse": "Audiopocalypse",
+            "titans": "TITANS"
         },
         "pack": {
             "classic": "Classique",
@@ -146,7 +150,8 @@
             "return-of-the-lich-king": "La marche du roi-liche",
             "golden-return-of-the-lich-king": "La marche du roi-liche (Doré)",
             "battle-of-the-bands": "La fête des légendes",
-            "golden-battle-of-the-bands": "La fête des légendes (Doré)"
+            "golden-battle-of-the-bands": "La fête des légendes (Doré)",
+            "titans": "TITANS"
         },
         "ranks": {
             "constructed": {
@@ -268,7 +273,8 @@
             "stats-header": "Stats",
             "go-premium-header": "Soutenez le développeur et enlevez la pub",
             "logged-in-as-header": "Connecté en tant que {{value}}",
-            "not-logged-in-header": "Connectez-vous pour enregistrer votre progression en ligne"
+            "not-logged-in-header": "Connectez-vous pour enregistrer votre progression en ligne",
+            "ranked-header": "Partie classée"
         },
         "global": {
             "reward": {
@@ -388,7 +394,8 @@
                 "format": {
                     "all": "Tout",
                     "standard": "Standard",
-                    "wild": "Libre"
+                    "wild": "Libre",
+                    "twist": "Imprévu"
                 },
                 "hero-portrait": {
                     "collectible": "Construit",
@@ -444,7 +451,8 @@
                 "diamond-card": "{{cardName}} diamant",
                 "click-to-expand": "Cliquez pour agrandir",
                 "duplicate-cards": "{{numberOfCards}} cartes en surplus",
-                "dust-potential": "+{{dust}} poussière potentielle"
+                "dust-potential": "+{{dust}} poussière potentielle",
+                "click-to-show-stats": "Cliquez pour afficher les stats des ensembles visibles"
             },
             "card-search": {
                 "search-box-placeholder": "Rechercher une carte...",
@@ -583,7 +591,8 @@
                 "golden-epics": "Épiques dorées",
                 "golden-epics-missing": "Épiques dorées manquantes",
                 "golden-legendaries": "Légendaires dorées",
-                "golden-legendaries-missing": "Légendaires dorées manquantes"
+                "golden-legendaries-missing": "Légendaires dorées manquantes",
+                "click-to-show-history": "Cliquez pour afficher l’historique des cartes pour les ensembles visibles."
             },
             "sets": {
                 "coming-soon": "Prochainement !",
@@ -660,7 +669,8 @@
                     "all-formats": "Tous formats",
                     "standard": "Standard",
                     "wild": "Libre",
-                    "classic": "Classique"
+                    "classic": "Classique",
+                    "twist": "Imprévu"
                 },
                 "rank-category": {
                     "leagues": "Bronze-Diamant",
@@ -1269,7 +1279,11 @@
                 "empty-state-title": "Pas encore d’historique",
                 "empty-state-subtitle": "Complétez un haut fait pour démarrer votre historique !"
             },
-            "search-placeholder": "Rechercher un haut fait..."
+            "search-placeholder": "Rechercher un haut fait...",
+            "pin-achievement-tooltip": "Épinglez ce haut fait pour suivre sa progression dans le jeu",
+            "pin-without-tracking-confirmation-text": "Vous épinglez un haut fait à suivre, mais le suivi en direct est désactivé. L’activer ?",
+            "cancel-pin": "Ne pas épingler",
+            "enable-live-tracking": "Activer"
         },
         "replays": {
             "filters": {
@@ -1289,7 +1303,7 @@
                     "mercenaries-pvp": "Mercenaires JcJ",
                     "ranked": "Partie classée (Tous)",
                     "ranked-standard": "Partie classée Standard",
-                    "ranked-wild": "Partie classée Libre",
+                    "ranked-wild": "Partie classée libre",
                     "ranked-classic": "Partie classée Classique",
                     "both-duels": "Duels (Tous)",
                     "duels": "Duels non classés",
@@ -1298,7 +1312,8 @@
                     "casual": "Non classé",
                     "friendly": "Amical",
                     "tavern-brawl": "Bras de fer",
-                    "practice": "Contre l’IA"
+                    "practice": "Contre l’IA",
+                    "ranked-twist": "Partie classée imprévue"
                 },
                 "player": {
                     "all": "Toutes les classes (joueur)"
@@ -1384,7 +1399,21 @@
             "tip-11": "[Duels] Passer la souris sur le nom de votre adversaire révèle également sa classe",
             "ad-tip-premium": "Premium",
             "share_profile_page": "Accédez à votre propre page de profil en ligne, et partagez-la avec les autres pour montrer vos hauts faits et vos statistiques",
-            "ad-tip-prefix": "Le saviez-vous ? {{text}}"
+            "ad-tip-prefix": "Le saviez-vous ? {{text}}",
+            "contextual_related_cards": "Passez la souris sur certaines cartes dans le decktracker pour obtenir des informations sur ce qu’elles vont faire",
+            "discover_highlight": "Passer la souris sur une carte pendant une découverte met en surbrillance les informations pertinentes dans votre deck",
+            "guess_the_weight": "Certaines cartes bénéficient d’aide contextuelle lors des découvertes",
+            "minion_play_order": "Le numéro en haut de chaque serviteur sur le plateau indique l’ordre dans lequel ils ont été invoqués, ce qui correspond entre autres à l'ordre de résolution des Râles d’agonie",
+            "achievements_pick_for_me": "Vous pouvez laisser l’application choisir 3 hauts faits à suivre pour vous",
+            "lottery": "Vous pouvez participer à un tirage au sort mensuel pour gagner des abonnements Firestone premium (activez-le à partir de Paramètres > Général > Loterie).",
+            "deck_merge": "Vous pouvez fusionner un deck en tant que nouvelle version d'un autre en le faisant glisser sur l’ancienne version",
+            "achievements_pin": "Sélectionnez n’importe quel nombre de hauts faits pour les suivre pendant le jeu et les voir s’actualiser en temps réel",
+            "collection_stats": "Vous pouvez consulter l’historique des cartes et les stats globales des ensembles affichés, et passer de l’un à l’autre à tout moment.",
+            "mercs_terasure_highlight": "Passer la souris sur un trésor dans Mercenaires met en surbrillance les synergies de votre groupe",
+            "bg_tab_key": "Appuyez sur « Tab » pour avoir un aperçu rapide de la progression de tous les joueurs",
+            "etc_buddies": "Lorsque vous jouez en tant qu’E.T.C., agent artistique, vous pouvez voir tous les compagnons que vous pouvez découvrir",
+            "bg_wisdomball": "Vous pouvez obtenir des conseils des meilleurs joueurs du jeu directement à partir de l’écran et adopter leurs stratégies",
+            "bg_hero_select": "Vous pouvez obtenir les stats de chaque héros directement sur l’écran de sélection des héros"
         },
         "streams": {
             "category": {
@@ -1407,7 +1436,8 @@
             },
             "copy-deck-tooltip": "Cliquez pour copier un des decks les plus performants dans votre presse-papiers",
             "with-name": "Le Bras de fer de cette semaine est {{name}} (commencé le {{date}})",
-            "no-name": "Bras de fer, commencé le {{date}}"
+            "no-name": "Bras de fer, commencé le {{date}}",
+            "non-buildable-warning-tooltip": "Les meilleurs decks de cette classe nécessitent tous des cartes que vous n’avez pas dans votre collection"
         },
         "lottery": {
             "title": "Points de loterie",
@@ -1423,16 +1453,60 @@
             "close-confirmation-button-cancel": "Garder ouverte",
             "close-confirmation-button-ok": "Fermer quand même",
             "navigation": {
-                "achievements": "Hauts-Faits"
+                "achievements": "Hauts-Faits",
+                "lottery": "Loterie"
             },
             "achievements-title": "Hauts Faits",
             "opt-out-confirmation-text": "Voulez-vous vraiment sortir de la loterie ? Cette fenêtre soutient le développeur, et vous permet de participer à une loterie à la fin de chaque mois pour gagner des abonnements Firestone",
             "lottery": {
                 "stats": {
                     "beastsPlayed-label": "Bêtes jouées",
-                    "demonsPlayed-label": "Démons joués"
-                }
-            }
+                    "demonsPlayed-label": "Démons joués",
+                    "piratesPlayed-tooltip": "Jouez des Pirates pour gagner {{pointsGain}} points par Pirate joué",
+                    "totalResourcesUsed-tooltip": "Dépensez des ressources (cristaux de mana dans Hearthstone, pièces d’or dans Battlegrounds) pour gagner {{pointsGain}} point par ressource dépensée.",
+                    "beastsPlayed-tooltip": "Jouez des Bêtes pour gagner {{pointsGain}} points par Bête jouée.",
+                    "quilboarsPlayed-tooltip": "Jouez des Hurans pour gagner {{pointsGain}} points par Huran joué",
+                    "quilboarsPlayed-label": "Hurans joués",
+                    "totalResourcesUsed-label": "Ressources utilisées",
+                    "damageWithSpells-label": "Dégâts avec des sorts",
+                    "dragonsPlayed-tooltip": "Jouez des Dragons pour gagner{{pointsGain}} points par Dragon joué",
+                    "mechsPlayed-tooltip": "Jouez des Méca pour gagner{{pointsGain}} points par Méca joué",
+                    "damageWithSpells-tooltip": "Infligez des dégâts avec des sorts pour gagner {{pointsGain}} points par point de dégâts infligé",
+                    "dragonsPlayed-label": "Dragons joués",
+                    "mechsPlayed-label": "Méca joués",
+                    "murlocsPlayed-label": "Murlocs joués",
+                    "piratesPlayed-label": "Pirates joués",
+                    "demonsPlayed-tooltip": "Jouez des Démons pour gagner {{pointsGain}} points par Démon joué",
+                    "murlocsPlayed-tooltip": "Jouez des Murlocs pour gagner {{pointsGain}} points par Murloc joué",
+                    "spellsPlayed-tooltip": "Jouez des sorts pour gagner {{pointsGain}} points par sort joué",
+                    "elementalsPlayed-label": "Élémentaires joués",
+                    "elementalsPlayed-tooltip": "Jouez des Élémentaires pour gagner{{pointsGain}} points par Élémentaire joué",
+                    "nagasPlayed-label": "Nagas joués",
+                    "nagasPlayed-tooltip": "Jouez des Nagas pour gagner {{pointsGain}} points par Naga joué",
+                    "undeadPlayed-tooltip": "Jouez des Morts-vivants pour gagner {{pointsGain}} points par Mort-vivant joué",
+                    "spellsPlayed-label": "Sorts joués",
+                    "undeadPlayed-label": "Morts-vivants joués"
+                },
+                "info-text": "Participez à un tirage au sort pour gagner des abonnements Firestone, d’une durée de 2 mois chacun. Vous avez besoin d’un compte Overwolf pour participer au tirage. Vous gagnez des points juste en jouant au jeu et en remplissant les objectifs pendant que cette fenêtre est ouverte (la pub soutient le développeur). ",
+                "season-duration-end": "La saison se termine dans {{ jours }}j {{ heures }}h {{ minutes }}min",
+                "season-duration-end-tooltip": "La saison a commencé le {{ startDate}}",
+                "sign-in-button-text": "Connectez-vous pour participer au tirage au sort",
+                "points-text": "Points totaux",
+                "sign-in-button-tooltip": "Vous devez vous connecter à votre compte Overwolf pour participer au tirage au sort de fin de saison. Vous pouvez toujours accumuler des points tant que vous ne vous connectez pas."
+            },
+            "achievements-progress": "{{current}} / {{max}}, {{thisGame}} pendant cette partie",
+            "overlay-toggle-tooltip": "Lier la fenêtre de loterie à la fenêtre de jeu, de façon à ce qu’elle soit toujours visible. Vous devriez utiliser cette option si la loterie se trouve sur le même écran que le jeu.",
+            "opt-out-tooltip": "Cliquez ici pour désactiver complètement le widget de loterie. Vous pourrez le réactiver à tout moment dans Paramètres > Général > Loterie.",
+            "tracking-ongoing-tooltip": "Suivi de la loterie en cours, vous accumulerez des points en jouant",
+            "tracking-not-ongoing-tooltip": "Suivi de la loterie en pause, vous n’accumulerez pas de points tant que le widget n’est pas visible",
+            "opt-out-button-ok": "Désactiver",
+            "opt-out-button-cancel": "Activer",
+            "achievements-empty-state": "Parcourez la section Hauts faits de l’application et choisissez ceux que vous voulez suivre.",
+            "achievements-pick-for-me-button-tooltip": "Laissez l’application choisir 3 hauts faits à suivre, en fonction de leur avancement",
+            "achievements-pick-for-me-button": "Choix auto",
+            "achievements-reset-button": "Réinit. le suivi",
+            "achievements-reset-button-tooltip": "Réinitialise le suivi de tous les hauts faits et les enlève de la fenêtre",
+            "overlay-toggle-label": "Ancrer l’overlay"
         }
     },
     "turn-timer": {
@@ -1452,8 +1526,8 @@
         },
         "bolner": "{{value}} est le premier Cri de guerre joué pendant ce tour",
         "multicaster": {
-            "player": "Vous piocherez {{cardsTotal}} cartes des écoles de magie : {{schools}}",
-            "opponent": "Votre adversaire piochera {{cardsTotal}} cartes des écoles de magie : {{schools}}"
+            "player": "Vous avez utilisé les écoles de magie : {{school}}",
+            "opponent": "Votre adversaire a utilisé les écoles de magie : {{schools}}"
         },
         "coral-keeper": {
             "player": "Vous invoquerez {{totalSummons}} élémentaires de corail. Écoles de sort jouées : {{schools}}"
@@ -1573,6 +1647,10 @@
         },
         "bgs-majordomo": {
             "player": "Vous avez joué {{value}} Élémentaires pendant ce tour"
+        },
+        "astral-automaton": {
+            "player": "Vous avez joué {{value}} automates astraux",
+            "opponent": "Votre adversaire a joué {{value}} automates astraux"
         }
     },
     "loading": {
@@ -1993,6 +2071,10 @@
                 "unhighlight-mechanics": "Cliquez pour ne plus mettre en valeur les serviteurs avec {{value}} dans la taverne",
                 "highlight-minion": "Épingler ce serviteur pour le mettre en valeur dans la taverne",
                 "unhighlight-minion": "Désépingler ce serviteur pour ne plus le mettre en avant dans la taverne"
+            },
+            "quests": {
+                "turn-to-complete-tooltip": "Nombre moyen de tours pour terminer cette quête pour ce héros et cette difficulté de quête (plus elle est faible, mieux c’est) à cote similaire à la vôtre. Le nombre de tours moyen pour terminer la quête est {{averageTurnsToComplete}}, la moyenne pour ce héros est {{turnsToCompleteForHero}}, et le modificateur de difficulté est {{turnsToCompleteImpact}}.",
+                "reward-position-tooltip": "Position finale moyenne de tous les joueurs ayant choisi cette quête à cote similaire à la vôtre"
             }
         },
         "post-match-stats": {
@@ -2296,7 +2378,15 @@
                 "link": "sur le wiki",
                 "lottery-block-title": "Loterie Premium (bêta)",
                 "lottery-block-text": "La participation à la loterie vous permet d’accumuler des points en faisant des actions pendant que vous jouez des parties (comme dépenser des ressources). À la fin de chaque mois, 4 personnes seront choisies au hasard et recevront un abonnement Premium de 2 mois (plus vous avez de points, plus vous avez de chances de gagner). L’annonce aura lieu sur {{twitterLink}} et {{discordLink}}.",
-                "lottery-button-text": "Activer la loterie"
+                "lottery-button-text": "Activer la loterie",
+                "lottery-block-text4": "Note : si vous avez un abonnement Premium, participer à la loterie ne vous montrera PAS de publicités ; et si vous gagnez, nous verrons ensemble pour un prix de valeur équivalente.",
+                "lottery-block-text2": "Quand une nouvelle saison de loterie commence, les points des saisons précédentes sont remis à zéro.",
+                "lottery-block-text1": "Participer à la loterie vous permet d’accumuler des points en effectuant certaines actions lors de vos parties (comme dépenser des ressources) avec la fenêtre de loterie visible. À la fin de chaque mois, 4 gagnants seront tirés au sort (plus vous avez de points, plus vous avez de chances de gagner). Les gagnants recevront un abonnement Firestone Premium de 2 mois, et seront annoncés sur {{twitterLink}} et {{discordLink}}.",
+                "lottery-opacity-title": "Opacité du widget loterie",
+                "lottery-size-title": "Taille du widget loterie",
+                "lottery-block-text3": "Note : si vous avez plusieurs écrans, essayez de désactiver le paramètre « Définir la superposition » dans le widget et déplacez-le sur un autre écran.",
+                "lottery-premium-section-tooltip": "Cette section n’est accessible qu’aux utilisateurs Premium",
+                "lottery-widget-settings-title": "Paramètres du widget"
             },
             "data": {
                 "remote-title": "Données distantes",
@@ -2466,7 +2556,10 @@
                     "hero-power-damage-label": "Points de dégâts du pouvoir héroïque",
                     "hero-power-damage-tooltip": "Affiche le total des points de dégâts infligés par le pouvoir héroïque de votre adversaire pendant cette partie. Il n’apparaît que si la classe de l’adversaire est Mage et qu’il a infligé au moins un point de dégâts",
                     "corpse-spent-tooltip": "Affiche un compteur avec le nombre total de cadavres que l’adversaire a dépensés. Il apparaît lorsque l’adversaire a joué une rune de chaque type, et est susceptible d’avoir Vive explosion nécrotique.",
-                    "shockspitter-tooltip": "Affiche le nombre de fois que votre adversaire a attaqué pendant cette partie. Il n’apparaît que si la classe de l’adversaire est chasseur et qu’il a attaqué au moins une fois"
+                    "shockspitter-tooltip": "Affiche le nombre de fois que votre adversaire a attaqué pendant cette partie. Il n’apparaît que si la classe de l’adversaire est chasseur et qu’il a attaqué au moins une fois",
+                    "multicaster-tooltip": "Affiche les écoles de sorts que votre adversaire a utilisées pendant cette partie",
+                    "astral-automaton-label": "Automate astral",
+                    "astral-automaton-tooltip": "Partie classée imprévue"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -2532,10 +2625,11 @@
                     "lady-darkvein-tooltip": "Quand vous avez Dame Sombreveine en main, affiche le dernier sort de l'Ombre que vous avez lancé, s’il y en a un",
                     "grey-sage-parrot-label": "Perroquet gris cendré",
                     "grey-sage-parrot-tooltip": "Quand vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte (5) cristaux ou plus que vous avez lancé, s’il y en a un",
-                    "multicaster-label": "Écoles de sorts",
+                    "multicaster-label": "Écoles de magie",
                     "multicaster-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
                     "coral-keeper-label": "Sentinelle des coraux",
-                    "coral-keeper-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie"
+                    "coral-keeper-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
+                    "astral-automaton-tooltip": "Affiche le nombre de fois où vous avez joué un automate astral"
                 }
             },
             "duels": {
@@ -2716,7 +2810,9 @@
                 "show-notifications-tooltip": "Afficher une notification chaque fois que vous débloquez un haut fait. Désactiver cette option désactive également le suivi des hauts faits natifs à Hearthstone",
                 "streamer-mode-text": "Mode stream",
                 "streamer-mode-tooltip": "Réinitialisez vos hauts faits pour la session, afin que les notifications s’affichent même pour les hauts faits débloqués. Désactivez cette option pour récupérer tous vos anciens hauts faits. Un redémarrage de l’application est requis",
-                "streamer-mode-confirmation": "D’accord, nous ne chargerons pas vos hauts faits existants la prochaine fois que vous lancerez Firestone"
+                "streamer-mode-confirmation": "D’accord, nous ne chargerons pas vos hauts faits existants la prochaine fois que vous lancerez Firestone",
+                "achievements-live-tracking-tooltip": "Affichez un widget qui montre votre progression actuelle dans n’importe quel nombre de hauts faits que vous souhaitez suivre. Vous pouvez sélectionner les hauts faits à suivre dans la section Hauts faits de l’application.",
+                "achievements-live-tracking-text": "Suivi en direct"
             }
         },
         "mercenaries": {
@@ -2794,6 +2890,21 @@
                 "overview-title": "Nombre total de paquets",
                 "overview-title-tooltip": "Le nombre total de paquets que vous avez reçus DEPUIS TOUJOURS, y compris ceux que vous n’avez pas ouverts"
             }
+        },
+        "arena": {
+            "title-label-global": "Arène",
+            "title-tooltip-global": "Vos victoires et défaites DEPUIS TOUJOURS en Arène"
+        },
+        "player-class": {
+            "tooltip-game-mode": "Vos victoires et défaites DEPUIS TOUJOURS avec la classe {{classe}} dans le mode {{mode de jeu}}"
+        },
+        "duels": {
+            "title-label-global": "Duels",
+            "title-tooltip-global": "Vos victoires et défaites DEPUIS TOUJOURS en Duels (non classé et héroïque)"
+        },
+        "ranked": {
+            "title-label-global": "Partie classée",
+            "title-tooltip-global": "Vos victoires et défaites DEPUIS TOUJOURS en Partie classée (tous formats confondus)"
         }
     },
     "twitch": {
