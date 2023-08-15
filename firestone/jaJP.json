@@ -151,7 +151,9 @@
             "golden-return-of-the-lich-king": "ゴールデン・リッチキングの凱旋",
             "battle-of-the-bands": "集え！レジェンド・フェス",
             "golden-battle-of-the-bands": "ゴールデン・集え！レジェンド・フェス",
-            "titans": "タイタンの目醒め"
+            "titans": "タイタンの目醒め",
+            "golden-year-of-phoenix": "ゴールデン・フェニックス年",
+            "golden-titans": "ゴールデン・タイタンの目醒め"
         },
         "ranks": {
             "constructed": {
@@ -871,6 +873,10 @@
                     "hero": "ヒーロー",
                     "hero-power": "ヒーローパワー",
                     "signature-treasure": "愛用の宝物"
+                },
+                "quest-type": {
+                    "quests": "クエスト",
+                    "rewards": "報酬"
                 }
             },
             "personal-stats": {
@@ -997,7 +1003,20 @@
                 "header-tribes": "相性の良い種族",
                 "header-tribes-tooltip": "平均順位に最も寄与する種族",
                 "tribe-info-tooltip": "{{ tribe }} がロビーにいる場合、このヒーローの平均順位は {{value}} 上昇します。",
-                "learn-more": "このデータはどのように算出されますか？"
+                "learn-more": "このデータはどのように算出されますか？",
+                "header-average-turns-to-complete": "平均達成ターン",
+                "header-group-difficulty-button-tooltip": "クエストごとにグループ化します。そのクエストの全ての難易度を通した統計を閲覧できます",
+                "header-expand-all-button": "全て展開",
+                "header-collapse-all-button": "全て折りたたむ",
+                "header-group-difficulty-button": "グループ",
+                "header-quest-details": "クエスト",
+                "header-quest-reward-details": "クエスト報酬",
+                "quest-search-placeholder": "クエストを検索...",
+                "reward-search-placeholder": "報酬を検索...",
+                "header-ungroup-difficulty-button": "分割",
+                "header-ungroup-difficulty-button-tooltip": "クエストをそれぞれの難易度ことに分割し、1行ずつ表示します",
+                "quest-tooltip-all-difficulties": "全ての難易度の{{questName}}",
+                "quest-tooltip-with-difficulty": "難易度{{difficulty}}での{{questName}} (クエストのカードテキストには {0} と表示)"
             },
             "bgs-tier-list": {
                 "header": "クエストTierリスト ({{value}} 試合) "
@@ -1413,7 +1432,8 @@
             "achievements_pick_for_me": "追跡する実績を3つアプリに選んでもらえます",
             "collection_stats": "表示されているセットのカード履歴と統計を閲覧でき、またいつでも切り替えることができます",
             "discover_highlight": "発見中にカードにマウスオーバーすると、デッキ内の関連するカードがハイライトされます",
-            "bg_tab_key": "\"Tab\"キーを押すと、ロビーに居る全プレイヤーの概要を表示できます"
+            "bg_tab_key": "\"Tab\"キーを押すと、ロビーに居る全プレイヤーの概要を表示できます",
+            "quest_stats": "クエストの平均達成ターンと、報酬の平均最終順位を、オーバーレイで直接表示します"
         },
         "streams": {
             "category": {
@@ -1526,8 +1546,8 @@
         },
         "bolner": "このターン最初に使った雄叫びカードは「{{value}}」",
         "multicaster": {
-            "player": "{{schools}} 種の異なる呪文系統を使用",
-            "opponent": "対戦相手は{{schools}} 種の異なる呪文系統を使用"
+            "player": "{{schools}} 系統の呪文を使用",
+            "opponent": "対戦相手は{{schools}} 系統の呪文を使用"
         },
         "coral-keeper": {
             "player": "{{totalSummons}}体の「珊瑚のエレメンタル」を召喚可能 ({{schools}}種の呪文系統を使用)"
@@ -1651,6 +1671,13 @@
         "astral-automaton": {
             "player": "{{value}}体の「星霊の自動人形」を召喚した",
             "opponent": "対戦相手は{{value}}体の「星霊の自動人形」を召喚した"
+        },
+        "specific-summons": {
+            "player": "{{value}}枚の{{cardName}}を使用済み",
+            "opponent": "対戦相手は{{value}}枚の{{cardName}}を使用済み"
+        },
+        "chained-guardian": {
+            "player": "{{value}}枚の「疫病」を対戦相手のデッキに混ぜた"
         }
     },
     "loading": {
@@ -2559,7 +2586,9 @@
                     "shockspitter-tooltip": "対戦相手がこの試合中ヒーローで攻撃した回数を表示します。 対戦相手のクラスがハンターで、少なくとも一度攻撃した場合にのみ表示されます",
                     "astral-automaton-label": "「星霊の自動人形」",
                     "astral-automaton-tooltip": "対戦相手が召喚した「星霊の自動人形」の数を表示します",
-                    "multicaster-tooltip": "この対戦で相手が使用した呪文系統の数を表示する"
+                    "multicaster-tooltip": "この対戦で相手が使用した呪文系統の数を表示する",
+                    "earthen-golem-label": "「アースンのゴーレム」",
+                    "earthen-golem-tooltip": "対戦相手が召喚した「アースンのゴーレム」の数を表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -2629,7 +2658,12 @@
                     "multicaster-tooltip": "この対戦で自分が使用した呪文系統の数を表示する",
                     "coral-keeper-label": "「珊瑚の番人」",
                     "coral-keeper-tooltip": "この対戦で自分が使用した呪文系統の数を表示する",
-                    "astral-automaton-tooltip": "召喚した「星霊の自動人形」の数を表示します"
+                    "astral-automaton-tooltip": "自分が召喚した「星霊の自動人形」の数を表示します",
+                    "chained-guardian-label": "「疫病」",
+                    "chained-guardian-tooltip": "自分が対戦相手のデッキに混ぜた「疫病」の数を表示します",
+                    "earthen-golem-tooltip": "自分が召喚した「アースンのゴーレム」の数を表示します",
+                    "treant-tooltip": "自分が召喚した「トレント」の数を表示します",
+                    "treant-label": "「トレント」"
                 }
             },
             "duels": {
@@ -2729,7 +2763,9 @@
                 "show-game-end-notif-tooltip": "試合終了時、素早く統計にアクセスするため、右下に小さな通知を表示します",
                 "simulator-config-title": "シミュレータの設定",
                 "simulator-number-of-sims-label": "シミュレーションする回数",
-                "simulator-number-of-sims-tooltip": "各戦闘での行うシミュレーションの回数です。5000回がちょうど良いと思われます。回数を増やすと正確性が増しますが、お使いのパソコンからのリソースが必要になります。"
+                "simulator-number-of-sims-tooltip": "各戦闘での行うシミュレーションの回数です。5000回がちょうど良いと思われます。回数を増やすと正確性が増しますが、お使いのパソコンからのリソースが必要になります。",
+                "show-quest-stats-label": "クエストの統計を表示",
+                "show-quest-stats-tooltip": "提示された各クエストの平均達成ターンと、それに紐づいた報酬を選んだプレイヤーの平均最終順位を表示します。どれを選ぶか決める際は、両方の情報を考慮しましょう！"
             },
             "overlay": {
                 "overlay-title": "オーバーレイ設定",
