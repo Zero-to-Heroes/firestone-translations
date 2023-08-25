@@ -23,7 +23,8 @@
         "format": {
             "standard": "Стандартный",
             "wild": "Вольный",
-            "classic": "Классический"
+            "classic": "Классический",
+            "twist": "Твист"
         },
         "game-mode": {
             "casual-duels": "Дуэли",
@@ -92,7 +93,9 @@
             "return_to_naxxramas": "Возвращение в Наксрамас",
             "tb": "Потасовка",
             "battle_of_the_bands": "Фестиваль Легенд",
-            "audiopocalypse": "Аудиопокалипсис"
+            "audiopocalypse": "Аудиопокалипсис",
+            "titans": "Титаны",
+            "caverns_of_time": "Пещеры Времени"
         },
         "pack": {
             "classic": "Классический",
@@ -147,7 +150,8 @@
             "return-of-the-lich-king": "Марш Короля-лича",
             "golden-return-of-the-lich-king": "Марш Короля-лича (золотой)",
             "battle-of-the-bands": "Фестиваль Легенд",
-            "golden-battle-of-the-bands": "Золотой Фестиваль Легенд"
+            "golden-battle-of-the-bands": "Золотой Фестиваль Легенд",
+            "titans": "Титаны"
         },
         "ranks": {
             "constructed": {
@@ -385,7 +389,8 @@
                 "format": {
                     "all": "Все",
                     "standard": "Стандартный",
-                    "wild": "Вольный"
+                    "wild": "Вольный",
+                    "twist": "Твист"
                 },
                 "hero-portrait": {
                     "collectible": "Основной режим",
@@ -654,7 +659,8 @@
                     "all-formats": "Все форматы",
                     "standard": "Стандартный",
                     "wild": "Вольный",
-                    "classic": "Классический"
+                    "classic": "Классический",
+                    "twist": "Твист"
                 },
                 "rank-category": {
                     "leagues": "Бронза–Алмаз",
@@ -851,6 +857,13 @@
                     "hero": "Герои",
                     "hero-power": "Силы героев",
                     "signature-treasure": "Фирменные сокровища"
+                },
+                "quest-type": {
+                    "quests": "Задания",
+                    "rewards": "Награды"
+                },
+                "anomaly": {
+                    "all-anomalies": "Все аномалии"
                 }
             },
             "personal-stats": {
@@ -972,7 +985,9 @@
                 "header-average-position": "Средняя позиция",
                 "header-placement-distribution": "Распределение мест",
                 "header-net-mmr": "Сетевой MMR",
-                "learn-more": "Как рассчитываются эти данные?"
+                "learn-more": "Как рассчитываются эти данные?",
+                "header-quest-details": "Задание",
+                "header-quest-reward-details": "Награда"
             },
             "bgs-tier-list": {
                 "header": "Тир-лист квестов ({{value}} партий) "
@@ -1108,7 +1123,8 @@
                 "data-points": "{{value}} игр",
                 "player-data-points": "{{value}}",
                 "player-data-points-tooltip": "Количество игр, которые вы играли с этой картой",
-                "player-winrate-tooltip": "Ваш средний винрейт с этим героем"
+                "player-winrate-tooltip": "Ваш средний винрейт с этим героем",
+                "header-winrate": "Винрейт"
             },
             "hero-stat": {
                 "global-winrate": "Глобальный винрейт",
@@ -1252,7 +1268,8 @@
                     "casual": "Обычный",
                     "friendly": "Дружеские игры",
                     "tavern-brawl": "Потасовка",
-                    "practice": "Против ИИ"
+                    "practice": "Против ИИ",
+                    "ranked-twist": "Рейтинговый твист"
                 },
                 "player": {
                     "all": "Все классы (игрок)"
@@ -1368,9 +1385,37 @@
             "close-confirmation-button-cancel": "Оставить открытым",
             "close-confirmation-button-ok": "Закрыть все равно",
             "navigation": {
-                "achievements": "Достижения"
+                "achievements": "Достижения",
+                "lottery": "Лотерея"
             },
-            "achievements-title": "Достижения"
+            "achievements-title": "Достижения",
+            "lottery": {
+                "stats": {
+                    "dragonsPlayed-label": "Разыграно драконов",
+                    "spellsPlayed-label": "Разыграно заклинаний",
+                    "beastsPlayed-label": "Разыграно зверей",
+                    "demonsPlayed-label": "Разыграно демонов",
+                    "mechsPlayed-label": "Разыграно механизмов",
+                    "murlocsPlayed-label": "Разыграно мурлоков",
+                    "nagasPlayed-label": "Разыграно наг",
+                    "piratesPlayed-label": "Разыграно пиратов",
+                    "quilboarsPlayed-label": "Разыграно свинобразов",
+                    "elementalsPlayed-label": "Разыграно элементалей"
+                }
+            }
+        },
+        "profile": {
+            "match-stats-title": "Статистика матчей",
+            "match-stats": {
+                "header-top-1": "Топ-1",
+                "header-top-4": "Топ-4",
+                "header-winrate": "Винрейт",
+                "overview-top-1": "{{value}} Топ-1",
+                "header-total-matches-short": "Матчи"
+            },
+            "xp-seasons": {
+                "season": "Сезон {{seasonNumber}}"
+            }
         }
     },
     "turn-timer": {
@@ -2045,7 +2090,8 @@
                 "broadcast": "Twitch",
                 "quests": "Задания",
                 "mods": "Режимы",
-                "data": "Данные"
+                "data": "Данные",
+                "lottery": "Лотерея"
             },
             "mods": {
                 "title": "Режимы",
@@ -2164,7 +2210,10 @@
             "premium": {
                 "title": "Настройки Премиум подписки",
                 "lottery-block-title": "Премиум лотерея (бета)",
-                "lottery-button-text": "Включить лотерею"
+                "lottery-button-text": "Включить лотерею",
+                "lottery-widget-settings-title": "Настройки виджета",
+                "lottery-opacity-title": "Прозрачность виджета лотереи",
+                "lottery-size-title": "Размер виджета лотереи"
             },
             "data": {
                 "remote-title": "Облачные данные",
@@ -2178,7 +2227,8 @@
                     "all-time": "За все время",
                     "past-100": "Последние 100 дней",
                     "last-patch": "Последний патч",
-                    "past-7": "Последние 7 дней"
+                    "past-7": "Последние 7 дней",
+                    "season-start": "Начало сезона"
                 },
                 "achievements": "Информация о достижениях",
                 "achievements-tooltip": "Обновить данные о достижениях. Это происходит автоматически каждые 7 дней.",
@@ -2292,7 +2342,8 @@
                     "relic-label": "Счётчик реликвий",
                     "hero-power-damage-label": "Счётчик урона нанесенного силой героя",
                     "astral-automaton-label": "Астральный механизм",
-                    "earthen-golem-label": "Земляной голем"
+                    "earthen-golem-label": "Земляной голем",
+                    "astral-automaton-tooltip": "Показывает, сколько раз ваш противник призвал Астральный механизм"
                 },
                 "size-title": "Размер и непрозрачность",
                 "opacity-title": "Непрозрачность",
@@ -2337,7 +2388,14 @@
                     "grey-sage-parrot-tooltip": "Если у вас в колоде есть Серый мудрец, показывать последнее разыгранное вами заклинание за 5 или более",
                     "multicaster-label": "Маг-универсал",
                     "coral-keeper-label": "Хранительница кораллов",
-                    "coral-keeper-tooltip": "Показывать школы заклинаний, которые вы разыграли за игру"
+                    "coral-keeper-tooltip": "Показывать школы заклинаний, которые вы разыграли за игру",
+                    "astral-automaton-tooltip": "Показывает, сколько раз вы призвали Астральный механизм",
+                    "earthen-golem-tooltip": "Показывает, сколько раз вы призвали Земляного голема",
+                    "chained-guardian-label": "Счетчик карт чумы",
+                    "overdraft-label": "Перерасход",
+                    "lightray-label": "Световой скат",
+                    "parrot-mascot-label": "Попугай-талисман",
+                    "treant-label": "Счетчик древней"
                 }
             },
             "duels": {
@@ -2410,7 +2468,9 @@
                 "show-overlay-button": "Показать кнопку наложения",
                 "popup-post-match-stats-label": "Вспывающая послематчевая статистика",
                 "simulator-config-title": "Настройки симулятора",
-                "simulator-number-of-sims-label": "Количество симуляций"
+                "simulator-number-of-sims-label": "Количество симуляций",
+                "show-quest-stats-label": "Показывать статистику заданий",
+                "show-hero-tips-label": "Показывать подсказки по стратегии"
             },
             "overlay": {
                 "overlay-title": "Настройки оверлея",
