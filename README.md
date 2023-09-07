@@ -1,6 +1,6 @@
 # firestone-translations
 
-You can help with the translations here: https://crowdin.com/project/firestone. You will need to create an account, then you can right away propose translations in any of the supported languages.
+You can help with the translations here: https://translate.zerotoheroes.com/projects/firestone/overwolf-app/. You will need to create an account, then you can right away propose translations in any of the supported languages.
 
 There is a #translations channel on the [Discord server](https://discord.gg/FhEHn8w) to discuss, well, anything related to the localization of the app.
 
