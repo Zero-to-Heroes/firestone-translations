@@ -668,7 +668,7 @@
                 "filter-info-tooltip": "La modification de ces filtres aura également un impact sur les statistiques affichées dans le decktracker en jeu",
                 "show-hidden-decks": "Afficher les archives",
                 "use-conservative-estimate": "Rang réel",
-                "use-conservative-estimate-tooltip": "Prendre en compte la taille de l’échantillon dans l’estimation de la place moyenne. Référez-vous au lien en dessous de la tierlist pour plus d’informations",
+                "use-conservative-estimate-tooltip": "Prendre en compte l’incertitude liée à la taille de l’échantillon dans l’estimation de la place moyenne.",
                 "deck-sort": {
                     "last-played": "Utilisé récemment",
                     "games-played": "Parties jouées",
@@ -715,7 +715,17 @@
                 "deck-search": {
                     "placeholder": "Rechercher un deck...",
                     "tooltip": "Rechercher par classe ou par nom de deck"
-                }
+                },
+                "use-conservative-winrate": "Taux de victoires conservateur",
+                "rank-bracket": {
+                    "bronze-gold": "Bronze–Or",
+                    "diamond": "Diamant",
+                    "legend-diamond": "Diamant–Légende",
+                    "legend": "Légende",
+                    "platinum": "Platine",
+                    "top-2000-legend": "Top 2000 Légende"
+                },
+                "use-conservative-winrate-tooltip": "Intégrer l’incertitude liée à la taille de l’échantillon dans l’estimation du taux de victoires"
             },
             "matchup-info": {
                 "opponents-popularity-header": "Détail des classes adverses",
@@ -811,6 +821,24 @@
                 "go-back-format": "Format : {{formatName}} – Cliquez pour revenir à l’écran de sélection du format",
                 "go-back-class": "Classe : {{className}} – Cliquez pour revenir à l’écran de sélection de la classe",
                 "import-deck-button-tooltip": "Importer un code de deck depuis votre presse-papiers."
+            },
+            "meta": {
+                "deck": {
+                    "copy-deckstring-button": "Copier vers Hearthstone",
+                    "deviation-tooltip": "La taille de l’échantillon rend incertain le taux de victoires de chaque deck. Le taux de victoires réel se situe entre le taux de victoires de base, plus ou moins l’incertitude affichée ici, avec un intervalle de confiance de 95 %. Vous pouvez activer l’option « Taux de victoires conservateur » dans les filtres pour afficher un nouveau taux de victoires qui prend en compte cette incertitude.",
+                    "added-cards-header": "Cartes ajoutées",
+                    "removed-cards-header": "Cartes retirées",
+                    "view-online-button-tooltip": "Voir + de stats en ligne sur https://www.d0nkey.top",
+                    "view-online-button": "Voir en ligne",
+                    "archetype-core-cards-header": "Cartes de base de l’archétype"
+                },
+                "cards-header-tooltip": "Afficher les cartes qui ont été retirées ou ajoutées aux cartes de base de l’archétype. Cliquez sur un deck pour voir les détails",
+                "archetype-header": "Archétype",
+                "cards-header": "Cartes",
+                "class-header": "Classe",
+                "cost-header": "Coût",
+                "games-header": "Parties",
+                "winrate-header": "% victoires"
             }
         },
         "battlegrounds": {
@@ -3038,5 +3066,8 @@
         "language-auto": "Auto",
         "language-auto-tooltip": "Utilisez la langue de vos préférences Twitch",
         "language": "Langue"
+    },
+    "archetype": {
+        "mech-rogue": "Voleur Méca"
     }
 }
