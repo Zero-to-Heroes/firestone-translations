@@ -662,13 +662,14 @@
                 "stats-header": "统计数据",
                 "ranking-header": "等级",
                 "deckbuilder-header": "构筑套牌",
-                "meta-decks-header": "环境套牌"
+                "meta-decks-header": "环境套牌",
+                "meta-archetypes-header": "环境卡组类型"
             },
             "filters": {
                 "filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
                 "show-hidden-decks": "显示存档套牌",
                 "use-conservative-estimate": "真实排名",
-                "use-conservative-estimate-tooltip": "在计算排名时考虑热度（样本大小）问题。（点击梯度排名表底部的链接查看更多信息）",
+                "use-conservative-estimate-tooltip": "在计算排名时考虑热度（样本大小）问题。",
                 "deck-sort": {
                     "last-played": "按最近使用排序",
                     "games-played": "按对战场数排序",
@@ -715,6 +716,16 @@
                 "deck-search": {
                     "placeholder": "搜索套牌...",
                     "tooltip": "按职业名称或按套牌名称搜索"
+                },
+                "use-conservative-winrate-tooltip": "在计算胜率时考虑热度（样本大小）问题。",
+                "use-conservative-winrate": "保守胜率估计",
+                "rank-bracket": {
+                    "bronze-gold": "青铜到黄金",
+                    "diamond": "钻石",
+                    "legend-diamond": "钻石到传说",
+                    "legend": "传说",
+                    "platinum": "白金",
+                    "top-2000-legend": "传说前2000名"
                 }
             },
             "matchup-info": {
@@ -811,6 +822,24 @@
                 "go-back-format": "模式：{{formatName}} - 点击返回模式选择界面",
                 "go-back-class": "职业：{{className}} - 点击返回职业选择界面",
                 "import-deck-button-tooltip": "从剪贴板导入套牌代码"
+            },
+            "meta": {
+                "archetype-header": "卡组类型",
+                "cards-header-tooltip": "显示哪些卡牌被加入或移出关键卡牌列表（点击卡组查看详情）",
+                "deck": {
+                    "deviation-tooltip": "样本大小会影响胜率统计的准确程度，有95%的可能真实胜率就在这个区间之内。开启“保守胜率估计”来将对局数纳入胜率计算当中。",
+                    "added-cards-header": "添加卡牌",
+                    "archetype-core-cards-header": "关键卡牌",
+                    "copy-deckstring-button": "复制卡组代码",
+                    "removed-cards-header": "移除卡牌",
+                    "view-online-button-tooltip": "前往https://www.d0nkey.top 查看更多数据",
+                    "view-online-button": "打开在线数据"
+                },
+                "cards-header": "卡牌",
+                "class-header": "职业",
+                "cost-header": "费用",
+                "games-header": "对局",
+                "winrate-header": "胜率"
             }
         },
         "battlegrounds": {
@@ -3038,5 +3067,8 @@
         "language": "语言",
         "language-auto-tooltip": "使用你在Twitch的语言设置",
         "language-auto": "自动"
+    },
+    "archetype": {
+        "mech-rogue": "机械贼"
     }
 }
