@@ -245,10 +245,10 @@
             "mega-windfury": "Méga Furie des vents"
         },
         "duration": {
-            "min-sec": "{{min}}:{{sec}} min",
-            "hrs-min": "{{hrs}} h {{min}} min",
-            "min": "{{min}} min",
-            "sec": "{{sec}} s"
+            "min-sec": "{{min}} min {{sec}} s",
+            "hrs-min": "{{hrs}} h {{min}} min",
+            "min": "{{min}} min",
+            "sec": "{{sec}} s"
         },
         "social": {
             "discord": "Discord",
@@ -378,8 +378,8 @@
                 "best-winrate-classes": "Classes avec le meilleur taux de victoires",
                 "most-faced-classes": "Classes les plus rencontrées",
                 "best-winrate-against": "Meilleur taux de victoires contre",
-                "stat-tooltip": "Vous avez fait {{numberOfRuns}} virées et {{totalMatches}} parties en {{playerClass}} avec un taux de victoires de {{winrate}} %",
-                "faced-tooltip": "Vous avez rencontré un {{opponentClass}} {{totalMatches}} fois avec un taux de victoires de {{winrate}} %"
+                "stat-tooltip": "Vous avez fait {{numberOfRuns}} virées et {{totalMatches}} parties en tant que {{playerClass}}, avec un taux de victoires de {{winrate}} %",
+                "faced-tooltip": "Vous avez rencontré un {{opponentClass}} {{totalMatches}} fois avec un taux de victoires de {{winrate}} %"
             },
             "runs": {
                 "view-run-button": "Voir la virée",
@@ -451,17 +451,17 @@
                 },
                 "new-copy": "Nouvelle",
                 "second-copy": "Seconde",
-                "new-copy-long": "Nouvelle carte {{version}}:",
-                "second-copy-long": "Seconde copie {{version}}:",
+                "new-copy-long": "Nouvelle carte {{version}} :",
+                "second-copy-long": "Seconde copie {{version}} :",
                 "title": "Mon historique de cartes",
-                "you-have-viewed": "Vous avez consulté {{numberOfCards}} cartes sur {{totalCards}}",
+                "you-have-viewed": "Vous avez consulté {{numberOfCards}} cartes sur {{totalCards}}",
                 "load-more-button": "Afficher plus",
                 "empty-state-title": "Pas encore d’historique",
                 "empty-state-subtitle": "Ouvrez un paquet pour en commencer un !",
                 "golden-card": "{{cardName}} dorée",
                 "diamond-card": "{{cardName}} diamant",
                 "click-to-expand": "Cliquez pour agrandir",
-                "duplicate-cards": "{{numberOfCards}} cartes en surplus",
+                "duplicate-cards": "{{numberOfCards}} cartes en surplus",
                 "dust-potential": "+{{dust}} poussière potentielle",
                 "click-to-show-stats": "Cliquez pour afficher les stats des ensembles visibles",
                 "signature-card": "{{cardName}} signature"
@@ -559,7 +559,7 @@
             },
             "pack-history": {
                 "title": "Mon historique de paquets",
-                "you-have-viewed": "Vous avez consulté {{numberOfPacks}} paquets sur {{totalPacks}}",
+                "you-have-viewed": "Vous avez consulté {{numberOfPacks}} paquets sur {{totalPacks}}",
                 "load-more-button": "Charger plus",
                 "empty-state": {
                     "title": "Pas encore d’historique",
@@ -740,14 +740,14 @@
             "matchup-info": {
                 "opponents-popularity-header": "Détail des classes adverses",
                 "total-matches-header": "Nb de parties",
-                "win-percent-header": "%Victoires",
+                "win-percent-header": "% victoires",
                 "win-total-header": "Victoires",
-                "win-play-percent-header": "%Victoires 1er",
+                "win-play-percent-header": "% victoires 1er",
                 "win-play-total-header": "Victoires 1er",
-                "matches-going-first": "{{totalMatches}} parties jouées en premier",
-                "win-coin-percent-header": "%Victoires Pièce",
+                "matches-going-first": "{{totalMatches}} parties jouées en premier",
+                "win-coin-percent-header": "% victoires Pièce",
                 "win-coin-total-header": "Victoires Pièce",
-                "matches-going-second": "{{totalMatches}} parties jouées en second",
+                "matches-going-second": "{{totalMatches}} parties jouées en second",
                 "total-header": "Total",
                 "show-as-percent-button-label": "Afficher en %",
                 "reset-button-label": "Réinitialiser les stats",
@@ -828,8 +828,8 @@
                 "choose-your-format-title": "Choisissez votre format",
                 "choose-your-class-title": "Choisissez votre classe",
                 "build-your-deck-title": "Construisez votre deck",
-                "go-back-format": "Format : {{formatName}} – Cliquez pour revenir à l’écran de sélection du format",
-                "go-back-class": "Classe : {{className}} – Cliquez pour revenir à l’écran de sélection de la classe",
+                "go-back-format": "Format : {{formatName}} – Cliquez pour revenir à l’écran de sélection du format",
+                "go-back-class": "Classe : {{className}} – Cliquez pour revenir à l’écran de sélection de la classe",
                 "import-deck-button-tooltip": "Importer un code de deck depuis votre presse-papiers."
             },
             "meta": {
@@ -925,7 +925,7 @@
                 },
                 "rank": {
                     "all": "Tous les rangs",
-                    "percentile": "Top {{percentile}} % ({{mmr}}+)"
+                    "percentile": "Top {{percentile}} % ({{mmr}}+)"
                 },
                 "rank-group": {
                     "per-match": "Afficher chaque partie",
@@ -1256,7 +1256,7 @@
                 "delete-deck-confirmation-ok": "Supprimer",
                 "delete-deck-confirmation-cancel": "Annuler",
                 "rename-confirm-button": "OK",
-                "default-deck-name": "{{wins}} victoires {{playerClass}} ({{gameMode}})",
+                "default-deck-name": "{{wins}  victoires {{playerClass}} ({{gameMode}})",
                 "default-deck-name-blank": "Deck de Duels"
             },
             "tier-list": {
@@ -1274,7 +1274,7 @@
                 "global-winrate": "% victoires (global)",
                 "your-winrate": "% victoires (vous)",
                 "games-played": "Parties jouées",
-                "number-of-games-tooltip": "{{totalRuns}} virées enregistrées ({{popularity}} de popularité)",
+                "number-of-games-tooltip": "{{totalRuns}} virées enregistrées ({{popularity}} de popularité)",
                 "wins-distribution-tooltip": "Répartition des victoires"
             },
             "run": {
@@ -1322,18 +1322,18 @@
                 "best-winrate-classes": "Classes avec le meilleur taux de victoires",
                 "most-faced-classes": "Classes les plus rencontrées",
                 "best-winrate-against": "Meilleur taux de victoires contre",
-                "stat-tooltip": "Vous avez fait {{numberOfRuns}} virées et {{totalMatches}} parties en {{playerClass}} avec un taux de victoires de {{winrate}} %",
-                "faced-tooltip": "Vous avez rencontré un {{opponentClass}} {{totalMatches}} fois avec un taux de victoires de {{winrate}} %"
+                "stat-tooltip": "Vous avez fait {{numberOfRuns}} virées et {{totalMatches}} parties en tant que {{playerClass}}, avec un taux de victoires de {{winrate}} %",
+                "faced-tooltip": "Vous avez rencontré un {{opponentClass}} {{totalMatches}} fois avec un taux de victoires de {{winrate}} %"
             },
             "deckbuilder": {
                 "choose-your-hero-title": "Choisissez un héros ou une héroïne",
                 "choose-your-hero-power-title": "Choisissez un pouvoir héroïque",
                 "choose-your-signature-treasure-title": "Choisissez votre trésor spécial",
                 "build-your-deck-title": "Construisez votre deck",
-                "go-back-hero": "Héros ou héroïne : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection des héros et héroïnes",
-                "go-back-hero-power": "Pouvoir héroïque : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du pouvoir héroïque",
-                "go-back-signature-treasure": "Trésor spécial : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du trésor spécial",
-                "ongoing-deck-building": "En cours ({{currentCards}} / {{maxCards}})",
+                "go-back-hero": "Héros ou héroïne : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection des héros et héroïnes",
+                "go-back-hero-power": "Pouvoir héroïque : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du pouvoir héroïque",
+                "go-back-signature-treasure": "Trésor spécial : {{selectedCardName}} – Cliquez pour revenir à l’écran de sélection du trésor spécial",
+                "ongoing-deck-building": "En cours ({{currentCards}}/{{maxCards}})",
                 "dk-runes-text": "Runes",
                 "dk-runes-tooltip": "Les runes de chevalier de la mort dans votre deck. La construction de decks est restreinte en fonction des runes que vous avez dans votre deck (voir les informations en jeu pour plus de détails)",
                 "export-deckcode-button": "Copier le code",
@@ -1359,7 +1359,7 @@
                 "import-deck-button-title": "Importer un deck",
                 "import-deck-button-tooltip": "Importez le code de deck actuellement dans votre presse-papiers. Vous devrez toujours choisir manuellement le pouvoir héroïque et le trésor spécial, car ils ne font pas partie du code du deck",
                 "missing-dust-tooltip": "Il vous manque {{value}} poussières pour créer ce deck",
-                "part-of-multiple-buckets-tooltip": "Cette carte est présente dans {{ value }} sélections différentes"
+                "part-of-multiple-buckets-tooltip": "Cette carte est présente dans {{ value }} sélections différentes"
             },
             "empty-state": {
                 "title": "Rien ici pour le moment",
@@ -1373,7 +1373,7 @@
             "filters": {
                 "all": "Tous les hauts faits",
                 "all-empty-state-title": "Sacrebleu, vous êtes épique !",
-                "all-empty-state-text": "100 % des hauts faits complétés dans cette catégorie.",
+                "all-empty-state-text": "100 % des hauts faits complétés dans cette catégorie.",
                 "missing": "Hauts faits manquants",
                 "missing-empty-state-title": "Des tonnes de hauts faits vous attendent !",
                 "missing-empty-state-text": "Retrouvez-les ici une fois terminés.",
@@ -1460,9 +1460,9 @@
                     "legend-format": "Légende {{format}}",
                     "ladder": "{{leagueName}} {{rank}} {{format}}",
                     "ladder-fallback": "{{rank}} {{format}}",
-                    "ladder-default": "Rang 25 {{format}}",
-                    "galakrond-explorers": "Le Réveil de Galakrond – Explorateurs",
-                    "galakrond-evil": "Le Réveil de Galakrond – M.A.L."
+                    "ladder-default": "Rang 25 {{format}}",
+                    "galakrond-explorers": "Le Réveil de Galakrond – Explorateurs",
+                    "galakrond-evil": "Le Réveil de Galakrond – M.A.L."
                 },
                 "went-first-tooltip": "1er à jouer",
                 "went-second-tooltip": "A eu La pièce",
@@ -1574,7 +1574,7 @@
                     "demonsPlayed-label": "Démons joués",
                     "piratesPlayed-tooltip": "Jouez des Pirates pour gagner {{pointsGained}} points par Pirate joué",
                     "totalResourcesUsed-tooltip": "Dépensez des ressources (cristaux de mana dans Hearthstone, pièces d’or dans Champs de bataille) pour gagner {{pointsGained}} point par ressource dépensée.",
-                    "beastsPlayed-tooltip": "Jouez des Bêtes pour gagner {{pointsGained}} points par Bête jouée.",
+                    "beastsPlayed-tooltip": "Jouez des Bêtes pour gagner {{pointsGained}} points par Bête jouée",
                     "quilboarsPlayed-tooltip": "Jouez des Hurans pour gagner {{pointsGained}} points par Huran joué",
                     "quilboarsPlayed-label": "Hurans joués",
                     "totalResourcesUsed-label": "Ressources utilisées",
@@ -1604,7 +1604,7 @@
                 "points-text": "Points totaux",
                 "sign-in-button-tooltip": "Vous devez vous connecter à votre compte Overwolf pour participer au tirage au sort de fin de saison. Vous pouvez toujours accumuler des points tant que vous ne vous connectez pas."
             },
-            "achievements-progress": "{{current}} / {{max}}, {{thisGame}} pendant cette partie",
+            "achievements-progress": "{{current}}/{{max}}, {{thisGame}} pendant cette partie",
             "overlay-toggle-tooltip": "Lier la fenêtre de loterie à la fenêtre de jeu, de façon à ce qu’elle soit toujours visible. Vous devriez utiliser cette option si la loterie se trouve sur le même écran que le jeu.",
             "opt-out-tooltip": "Cliquez ici pour désactiver complètement le widget de loterie. Vous pourrez le réactiver à tout moment dans Paramètres > Général > Loterie.",
             "tracking-ongoing-tooltip": "Suivi de la loterie en cours, vous accumulerez des points en jouant",
@@ -1640,8 +1640,8 @@
             },
             "match-stats-title": "Stats de partie",
             "xp-seasons": {
-                "season": "Saison {{seasonNumber}}",
-                "start-date": "Commencée le {{startDate}}"
+                "season": "Saison {{seasonNumber}}",
+                "start-date": "Commencée le {{startDate}}"
             }
         }
     },
@@ -1720,7 +1720,7 @@
             "opponent": "Le C’Thun de votre adversaire a {{atk}}/{{health}}"
         },
         "elemental": {
-            "player": "Vous avez joué {{lastTurn}} Élémentaires au tour précédent, et {{thisTurn}} Élémentaires pendant ce tour",
+            "player": "Vous avez joué {{lastTurn}} Élémentaires au tour précédent, et {{thisTurn}} Élémentaires pendant ce tour",
             "opponent": "Votre adversaire a joué {{lastTurn}} Élémentaires au tour précédent, et {{thisTurn}} Élémentaires pendant ce tour"
         },
         "elwynn-boar": {
@@ -1924,7 +1924,7 @@
             "global-usage-tooltip": "Combien de fois chaque capacité est utilisée par la communauté",
             "your-usage": "Votre utilisation",
             "your-usage-tooltip": "Combien de fois vous avez utilisé chaque capacité",
-            "number-of-games-tooltip": "{{totalMatches}} parties enregistrées ({{popularity}} de popularité)",
+            "number-of-games-tooltip": "{{totalMatches}} parties enregistrées ({{popularity}} de popularité)",
             "level-header": "Niv",
             "role-header": "Rôle",
             "name-header": "Nom",
@@ -2041,7 +2041,7 @@
         "created-by": "Créée par {{value}}",
         "unknown-class-card": "Carte {{playerClass}} inconnue",
         "unknown-card": "Carte inconnue",
-        "unknown-mana-spell": "Sort inconnu coûtant ({{manaCost}})",
+        "unknown-mana-spell": "Sort inconnu coûtant ({{manaCost}}) cristaux",
         "unknown-info": "{{info}} inconnu",
         "unknown-big-minion": "Serviteur inconnu de coût {{cost}}+",
         "card-dredged-tooltip": "Carte draguée"
@@ -2192,7 +2192,7 @@
             },
             "opponents": {
                 "title": "Autres adversaires",
-                "next-opponent-title": "Tour {{turn}} – Prochain adversaire",
+                "next-opponent-title": "Tour {{turn}} – Prochain adversaire",
                 "empty-state-title": "Rien ici pour le moment",
                 "empty-state-subtitle": "Choisissez un héros ou une héroïne et attendez vos adversaires !",
                 "score-board-title": "Tableau des scores",
@@ -2212,7 +2212,7 @@
                 "buddy-tooltip-golden": "A reçu ses deux autres compagnons au tour {{turn}}",
                 "rewards-title": "Récompenses de quête",
                 "rewards-empty-state": "Aucune récompense de quête",
-                "reward-turn-tooltip": "Récompense de quête reçue au tour {{turn}}"
+                "reward-turn-tooltip": "Récompense de quête reçue au tour {{turn}}"
             },
             "minions-list": {
                 "reset-button": "Réinitialiser",
@@ -2227,7 +2227,7 @@
                 "minion-banned-tooltip": "Ce serviteur est absent à cause de l’anomalie actuelle"
             },
             "quests": {
-                "turn-to-complete-tooltip": "Nombre moyen de tours pour terminer cette quête avec ce héros ou cette héroïne, cette difficulté de quête (plus elle est faible, mieux c’est), et à cote similaire à la vôtre. Le nombre de tours moyen pour terminer la quête est {{averageTurnsToComplete}}, la moyenne pour ce héros ou cette héroïne est {{turnsToCompleteForHero}}, et le modificateur de difficulté est {{turnsToCompleteImpact}}.",
+                "turn-to-complete-tooltip": "Nombre moyen de tours pour terminer cette quête avec ce héros ou cette héroïne, cette difficulté de quête (plus elle est faible, mieux c’est), et à cote similaire à la vôtre. En moyenne, il faut {{averageTurnsToComplete}} tours pour compléter la quête, {{turnsToCompleteForHero}} tours avec ce héros ou cette héroïne, et le modificateur de difficulté est de {{turnsToCompleteImpact}}.",
                 "reward-position-tooltip": "Position finale moyenne de tous les joueurs ayant choisi cette quête à cote similaire à la vôtre"
             }
         },
@@ -2236,7 +2236,7 @@
             "final-board": "Votre troupe de guerre finale",
             "current-board": "Votre troupe de guerre actuelle",
             "final-position": "Vous avez terminé #{{position}}",
-            "live-stats-title": "Stats en direct – Tour {{turn}}",
+            "live-stats-title": "Stats en direct – Tour {{turn}}",
             "tabs": {
                 "hp-by-turn": "Vie par tour",
                 "stats": "Stats",
@@ -2247,7 +2247,7 @@
             },
             "hp-graph": {
                 "legend-title": "Afficher :",
-                "player-health": "{{playerName}} PV"
+                "player-health": "PV de {{playerName}}"
             },
             "composition": {
                 "blank-tribe": "Aucun / Tout",
@@ -2361,8 +2361,8 @@
             },
             "knob-zoom": {
                 "normal": "Normal",
-                "zoom-200": "200 %",
-                "zoom-400": "400 %"
+                "zoom-200": "200 %",
+                "zoom-400": "400 %"
             },
             "widget-size-label": "Taille du widget",
             "show-advanced-settings-button": "Afficher les param. avancés",
@@ -2442,7 +2442,7 @@
                     "toggle-label": "Contribuer au vS Data Reaper Report"
                 },
                 "ooc": {
-                    "pitch": "Out of Games est un site communautaire de Hearthstone avec des articles, des guides, des paquets, des bases de données de cartes et plus encore. La synchronisation de votre collection de cartes sur le site facilite la recherche de decks à jouer. Vous pouvez leur rendre visite {{websiteLink}}",
+                    "pitch": "Out of Games est un site communautaire de Hearthstone avec des articles, des guides, des decks, une base de données des cartes, et plus encore. Vous pouvez synchroniser votre collection sur le site pour chercher plus facilement des decks à jouer. Vous pouvez leur rendre visite {{websiteLink}}",
                     "website-link": "ici",
                     "next": "Si vous vous connectez à votre compte Out of Games, Firestone enverra vos données de collection à Out of Games afin que vous puissiez les utiliser en ligne.",
                     "toggle-label": "Afficher une notification lorsque la collection est synchronisée",
@@ -2460,7 +2460,7 @@
                     "toggle-label": "Synchroniser vos replays avec d0nkey.top"
                 },
                 "hsdecks": {
-                    "pitch": "<a href=\"https://hearthstone-decks.net/\" target=\"_blank\">hearthstone-decks.net</a> partage des decks joués dans les rangs élevés de Légende pour tous les modes construits, section News & Articles.",
+                    "pitch": "Hearthstone-decks.net partage des decks joués dans les meilleurs rangs de Légende pour tous les modes construits, dans la section « News & Articles ». Vous pouvez leur rendre visite {{websiteLink}}",
                     "website-link": "ici",
                     "next": "Si vous décidez d'activer la synchronisation avec hearthstone-decks.net, Firestone leur enverra de façon anonyme chaque partie que vous jouez, avec quelques informations sur vos parties (code de deck, rang, résultats des parties).",
                     "toggle-label": "Synchroniser vos replays avec hearthstone-decks.net"
@@ -2543,7 +2543,7 @@
                 "lottery-button-text": "Activer la loterie",
                 "lottery-block-text4": "Note : si vous avez un abonnement Premium, participer à la loterie n’affichera PAS de publicités ; et si vous gagnez, nous verrons ensemble pour un prix de valeur équivalente.",
                 "lottery-block-text2": "Quand une nouvelle saison de loterie commence, les points des saisons précédentes sont remis à zéro.",
-                "lottery-block-text1": "Participer à la loterie vous permet d’accumuler des points en effectuant certaines actions lors de vos parties (comme dépenser des ressources) avec la fenêtre de loterie visible. À la fin de chaque mois, 4 gagnants seront tirés au sort (plus vous avez de points, plus vous avez de chances de gagner). Les gagnants recevront un abonnement Firestone Premium de 2 mois, et seront annoncés sur {{twitterLink}} et {{discordLink}}.",
+                "lottery-block-text1": "Participer à la loterie vous permet d’accumuler des points en effectuant certaines actions lors de vos parties (par exemple dépenser des ressources) avec la fenêtre de loterie visible. À la fin de chaque mois, 4 gagnants seront tirés au sort (plus vous avez de points, plus vous avez de chances de gagner). Les gagnants recevront un abonnement Firestone Premium de 2 mois, et seront annoncés sur {{twitterLink}} et {{discordLink}}.",
                 "lottery-opacity-title": "Opacité du widget loterie",
                 "lottery-size-title": "Taille du widget loterie",
                 "lottery-block-text3": "Note : si vous avez plusieurs écrans, essayez de désactiver le paramètre « Définir la superposition » dans le widget et déplacez-le sur un autre écran.",
@@ -2790,7 +2790,7 @@
                     "lady-darkvein-label": "Dame Sombreveine",
                     "lady-darkvein-tooltip": "Quand vous avez Dame Sombreveine en main, affiche le dernier sort d’Ombre que vous avez lancé, s’il y en a un",
                     "grey-sage-parrot-label": "Perroquet gris cendré",
-                    "grey-sage-parrot-tooltip": "Quand vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte ({{cost}}) cristaux ou plus que vous avez lancé, s’il y en a un",
+                    "grey-sage-parrot-tooltip": "Quand vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte ({{cost}}) cristaux ou plus que vous avez lancé, s’il y en a un",
                     "multicaster-label": "Écoles de magie",
                     "multicaster-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
                     "coral-keeper-label": "Sentinelle des coraux",
