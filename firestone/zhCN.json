@@ -98,7 +98,8 @@
             "audiopocalypse": "音乐之劫",
             "titans": "泰坦诸神",
             "caverns_of_time": "时光之穴",
-            "ulduar": "奥杜尔的陷落"
+            "ulduar": "奥杜尔的陷落",
+            "wild_west": "决战荒芜之地"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -159,7 +160,8 @@
             "golden-year-of-phoenix": "凤凰年 金色卡牌包",
             "golden-year-of-the-phoenix": "凤凰年 金色卡牌包",
             "golden-caverns-of-time": "时光之穴 金色卡牌包",
-            "caverns-of-time": "时光之穴 卡牌包"
+            "caverns-of-time": "时光之穴 卡牌包",
+            "wild-west": "决战荒芜之地卡牌包"
         },
         "ranks": {
             "constructed": {
@@ -712,7 +714,9 @@
                     "past-30": "过去 30 天内",
                     "past-7": "过去 7 天内",
                     "past-3": "最近3天内",
-                    "past-1": "一天内"
+                    "past-1": "一天内",
+                    "past-20": "过去20天",
+                    "current-season": "当前赛季"
                 },
                 "deck-search": {
                     "placeholder": "搜索套牌...",
@@ -731,7 +735,8 @@
                 },
                 "archetype-filter": {
                     "all": "所有类型"
-                }
+                },
+                "sample-size-filter": "{{value}}场对局"
             },
             "matchup-info": {
                 "opponents-popularity-header": "对手职业明细",
@@ -839,7 +844,11 @@
                     "removed-cards-header": "可变卡牌",
                     "view-online-button-tooltip": "前往https://www.d0nkey.top 查看更多数据",
                     "view-online-button": "打开在线数据",
-                    "cards-header-details": "({{value}} cards)"
+                    "cards-header-details": "({{value}} cards)",
+                    "view-decks-button-tooltip": "显示所有此类型的套牌",
+                    "view-details-button-tooltip": "查看卡牌强度等更深层次的数据细节（会员专属）",
+                    "view-decks-button": "查看套牌",
+                    "view-details-button": "查看详情"
                 },
                 "cards-header": "卡牌",
                 "class-header": "职业",
@@ -861,14 +870,23 @@
                         "mulligan-drawn-winrate-header": "抽到胜率",
                         "mulligan-kept-header": "保留",
                         "card-header": "卡牌",
-                        "mulligan-winrate-header": "起手胜率"
+                        "mulligan-winrate-header": "起手胜率",
+                        "copy-1-header-tooltip": "包含至少一张此卡牌的此类型套牌占比",
+                        "show-relative-info-button": "显示相关信息",
+                        "show-relative-info-button-tooltip": "显示每张卡牌与此类套牌的相对胜率",
+                        "copy-2-header-tooltip": "包含两张此卡牌的此套牌类型占比",
+                        "copy-1-header": "流行度"
                     },
                     "deck-type": "套牌列表",
                     "archetype-type": "套牌类型"
                 },
                 "archetype": {
                     "archetype-core-cards-header": "关键卡牌"
-                }
+                },
+                "matchups-header-tooltip": "显示对阵其他所有职业的胜率。未来将会推出对阵各类套牌的情况，敬请期待:)",
+                "deck-type-header": "类型",
+                "card-stats-header-tooltip": "显示曾经从此类型套牌的核心卡牌中移除或添加的卡牌。点击套牌查看详情",
+                "matchup-vs-tooltip": "vs {{className}}"
             }
         },
         "battlegrounds": {
@@ -1505,7 +1523,9 @@
             "collection_stats": "你可以随时查看不同卡包的卡牌历史、统计数据等信息",
             "quest_stats": "在浮窗直接查看完成任务的平均回合数和奖励的平均位次",
             "minion_auto_highlight": "在扮演特定英雄时可无脑购买特定的随从（例如在扮演海盗帕奇斯时遇见白赚赌徒）。Firestone将自动高亮商店中的这些随从",
-            "minions_list_by_tribe": "你可以选择将随从按种族分组（可以稍微节省一点空间，需要在设置里开启）"
+            "minions_list_by_tribe": "你可以选择将随从按种族分组（可以稍微节省一点空间，需要在设置里开启）",
+            "constructed_deck_stats": "查看卡牌数据详情（例如起手或抽到胜率），以及所有套牌类型数据",
+            "constructed_deck_stats_free": "免费查看当前的顶尖套牌！"
         },
         "streams": {
             "category": {
@@ -1599,7 +1619,8 @@
             "achievements-reset-button-tooltip": "停止追踪所有成就并从屏幕中移除",
             "achievements-pick-for-me-button": "为我选择",
             "achievements-pick-for-me-button-tooltip": "根据当前成就的进度，让Firestone为你选择三个成就来追踪",
-            "achievements-progress": "进度 {{current}} / {{max}}，本局游戏中 {{thisGame}}"
+            "achievements-progress": "进度 {{current}} / {{max}}，本局游戏中 {{thisGame}}",
+            "achievements-not-in-game": "启动游戏查看你已标记的成就"
         },
         "profile": {
             "match-stats": {
@@ -1666,7 +1687,7 @@
             "player": "你使用过{{value}}张圣骑士牌，光鳐当前法力消耗{{lightray}}"
         },
         "naga-giant": {
-            "player": "友方纳迦巨人法力值消耗：{{cost}}（本局对战你已使用法术：{{spells}}个）"
+            "player": "友方纳迦巨人法力值消耗：{{cost}}（本局对战你已使用法术：{{spells}}个，总消耗：{{spellsMana}} ）"
         },
         "menagerie": {
             "player": "你已使用过的随从类型数：{{value}}"
@@ -2784,7 +2805,7 @@
                     "earthen-golem-tooltip": "显示你已召唤“土灵魔像”数量",
                     "treant-label": "树人",
                     "treant-tooltip": "显示你已召唤的“树人”数量",
-                    "secrets-tooltip": "当有需要时，显示打出过的奥秘数量（相关卡牌：暗金教水晶侍女）",
+                    "secrets-tooltip": "当你拥有受益于已使用奥秘数量的卡牌时，显示使用过的奥秘数量",
                     "chaotic-tendril-label": "混乱触须",
                     "chaotic-tendril-tooltip": "显示你已使用的“混乱触须”数量",
                     "secrets-label": "打出的奥秘"
@@ -3166,6 +3187,64 @@
         "coc-rogue": "药剂贼",
         "chadadin": "纯净骑",
         "cocacle-rogue": "药剂奇迹贼",
-        "moonbeam-druid": "法强德"
+        "moonbeam-druid": "法强德",
+        "j-lock": "大王控制术",
+        "xl-gaia-paladin": "40土灵骑",
+        "xl-ramp-druid": "40跳费德",
+        "xl-bbb-undead-dk": "40亡灵血DK",
+        "pirate-rogue": "海盗贼",
+        "quest-drud": "任务德",
+        "uuu-plague-dk": "疫病邪DK",
+        "uuu-undead-dk": "亡灵邪DK",
+        "priest": "未归类牧师",
+        "xl-abyssal-warlock": "40诅咒术",
+        "xl-control-warlock": "40控制术",
+        "xl-druid": "40德",
+        "xl-quest-mage": "40任务法",
+        "rainbow-naga-mage": "纳迦多系法",
+        "relic-demon-hunter": "圣物瞎",
+        "mage": "未归类法师",
+        "paladin": "未归类圣骑士",
+        "shaman": "未归类萨满祭司",
+        "warlock": "未归类术士",
+        "xl-big-beast-hunter": "40大野兽猎",
+        "xl-rock-n-roll-warrior": "40摇滚战",
+        "xl-casino-mage": "40随机法",
+        "xl-coc-rogue": "40药剂贼",
+        "xl-coc-thief-rogue": "40药剂剽窃贼",
+        "xl-fuu-plague-dk": "40疫病冰DK",
+        "xl-thief-rogue": "40剽窃贼",
+        "xl-uuu-plague-dk": "40疫病邪DK",
+        "ramp-druid": "跳费德",
+        "secret-mage": "奥秘法",
+        "secret-rogue": "奥秘贼",
+        "spell-demon-hunter": "法术瞎",
+        "spooky-mage": "骷髅法",
+        "hunter": "未归类猎人",
+        "warrior": "未归类战士",
+        "xl-buu-plague-dk": "40疫病血DK",
+        "xl-chadlock": "40控制术",
+        "xl-hero-power-druid": "40变脸德",
+        "xl-jackpot-rogue": "40大奖贼",
+        "xl-mage": "40其他法师",
+        "xl-priest": "40牧",
+        "xl-secret-mage": "40奥秘法",
+        "'xl-shaggro-priest": "40暗牧",
+        "pure-paladin": "光铸骑",
+        "rainbow-mage": "多系法",
+        "secret-hunter": "奥秘猎",
+        "shaggro-priest": "快攻暗牧",
+        "tony-druid": "托尼德",
+        "treant-druid": "树人德",
+        "xl-control-priest": "40控制牧",
+        "xl-odyn-warrior": "40奥丁战",
+        "xl-rainbow-mage": "40多系法",
+        "chadlock": "巨怪术",
+        "thief-rogue": "剽窃贼",
+        "totem-shaman": "图腾萨",
+        "druid": "未归类德鲁伊",
+        "rogue": "未归类潜行者",
+        "xl-bbb-death-knight": "40血DK",
+        "xl-warrior": "40战"
     }
 }
