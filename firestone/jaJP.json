@@ -715,7 +715,8 @@
                     "past-7": "過去7日間",
                     "past-3": "過去3日間",
                     "past-1": "昨日",
-                    "current-season": "今シーズン"
+                    "current-season": "今シーズン",
+                    "past-20": "過去20日間"
                 },
                 "deck-search": {
                     "placeholder": "デッキを検索...",
@@ -732,7 +733,10 @@
                 },
                 "use-conservative-winrate-tooltip": "勝率推定において、サンプルサイズに関連する不確実性を統合します。",
                 "use-conservative-winrate": "保守的勝率",
-                "sample-size-filter": "{{value}}試合"
+                "sample-size-filter": "{{value}}試合",
+                "archetype-filter": {
+                    "all": "全てのアーキタイプ"
+                }
             },
             "matchup-info": {
                 "opponents-popularity-header": "対戦相手のクラス内訳",
@@ -841,7 +845,9 @@
                     "view-online-button": "オンラインで見る",
                     "cards-header-details": "({{value}} 枚)",
                     "view-details-button-tooltip": "カードレベルの詳細やより詳しい情報を見ます(プレミアムオンリー)",
-                    "view-details-button": "詳細を見る"
+                    "view-details-button": "詳細を見る",
+                    "view-decks-button-tooltip": "このアーキタイプの全てのデッキを表示します",
+                    "view-decks-button": "デッキを見る"
                 },
                 "archetype-header": "アーキタイプ",
                 "cards-header": "カード",
@@ -877,7 +883,10 @@
                 "deck-type-header": "タイプ",
                 "archetype": {
                     "archetype-core-cards-header": "コアカード"
-                }
+                },
+                "matchup-vs-tooltip": "vs{{className}}",
+                "matchups-header": "マッチアップ",
+                "matchups-header-tooltip": "他のクラスに対する勝率を表示します。アーキタイプ別マッチアップは将来的に実装予定です。お楽しみに:)"
             }
         },
         "battlegrounds": {
@@ -1514,7 +1523,8 @@
             "bg_tab_key": "\"Tab\"キーを押すと、ロビーに居る全プレイヤーの概要を表示できます",
             "quest_stats": "クエストの平均達成ターンと、報酬の平均最終順位を、オーバーレイで直接表示します",
             "minions_list_by_tribe": "ミニオンリストに、種族ごとにミニオンを表示できます。これにより、種族用のウィジェットをなくせるので、省スペース化に繋がります。",
-            "minion_auto_highlight": "あるヒーローでは、いくつかのミニオンは必ず買うべきです(\"海賊パッチーズ\"使用時の「宵越しの博打打ち」など)。Firestoneはそれらを自動ハイライトできます"
+            "minion_auto_highlight": "あるヒーローでは、いくつかのミニオンは必ず買うべきです(\"海賊パッチーズ\"使用時の「宵越しの博打打ち」など)。Firestoneはそれらを自動ハイライトできます",
+            "constructed_deck_stats": "アーキタイプ全体でのカードの詳細(マリガン/ドロー時勝率など)を表示"
         },
         "streams": {
             "category": {
@@ -1608,7 +1618,8 @@
             "opt-out-button-cancel": "今のままにする",
             "achievements-title": "実績",
             "achievements-empty-state": "アプリの実績セクションを閲覧し、追跡したい実績を選択",
-            "achievements-pick-for-me-button-tooltip": "現在の進行状況に基づき、アプリが3つの実績を選んでくれます"
+            "achievements-pick-for-me-button-tooltip": "現在の進行状況に基づき、アプリが3つの実績を選んでくれます",
+            "achievements-not-in-game": "ゲームを開始してピン留めした実績を見る"
         },
         "profile": {
             "match-stats": {
@@ -1675,7 +1686,7 @@
             "player": "この対戦で{{value}}枚のパラディン用カードを使用した。「ヒカリエイ」は {{lightray}} マナ"
         },
         "naga-giant": {
-            "player": "「ナーガの巨人」のコストは{{value}} ({{spells}}枚の呪文を使用した)"
+            "player": "「ナーガの巨人」のコストは{{value}} ({{spellsMana}}マナを呪文に消費した)"
         },
         "menagerie": {
             "player": "この対戦で使用したミニオンの種族は{{value}}種類"
