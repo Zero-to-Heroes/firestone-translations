@@ -28,7 +28,7 @@
         },
         "game-mode": {
             "casual-duels": "Duels",
-            "heroic-duels": "Duels héroïques",
+            "heroic-duels": "Duel héroïque",
             "battlegrounds": "Champs de bataille",
             "battlegrounds-friendly": "Champs de bataille (privé)",
             "mercenaries": "Mercenaires",
@@ -99,7 +99,8 @@
             "titans": "TITANS",
             "caverns_of_time": "Grottes du Temps",
             "ulduar": "La chute d’Ulduar",
-            "wild_west": "Rixe en terres Ingrates"
+            "wild_west": "Rixe en terres Ingrates",
+            "wild_west2": "Rattrapage (Rixe en terres Ingrates)"
         },
         "pack": {
             "classic": "Classique",
@@ -161,7 +162,8 @@
             "golden-year-of-the-phoenix": "Année du Phénix (Doré)",
             "caverns-of-time": "Grottes du Temps",
             "golden-caverns-of-time": "Grottes du Temps (Doré)",
-            "wild-west": "Rixe en terres Ingrates"
+            "wild-west": "Rixe en terres Ingrates",
+            "wild-west2": "Rattrapage (Rixe en terres Ingrates)"
         },
         "ranks": {
             "constructed": {
@@ -570,7 +572,7 @@
                 "title": "Paquets depuis toujours ({{value}})",
                 "best-opened-packs-title": "{{value}} meilleurs paquets ouverts",
                 "best-opened-packs-title-tooltip": "Meilleurs paquets que vous avez ouverts avec Firestone ouvert",
-                "pack-stat-tooltip": "Vous avez reçu {{totalPacks}} paquets {{packName}} depuis que vous avez commencé à jouer à Hearthstone",
+                "pack-stat-tooltip": "Vous avez reçu {{totalPacks}} paquets {{packName}} depuis que vous avez commencé à jouer à Hearthstone",
                 "main-sets-group-name": "Ensembles principaux ({{totalPacks}})",
                 "non-buyable-group-name": "Paquets spéciaux ({{totalPacks}})",
                 "other-group-name": "Autres ({{totalPacks}})"
@@ -785,7 +787,7 @@
                 "empty-state-title": "Rien ici pour le moment",
                 "empty-state-subtitle": "Jouez en Partie classée pour commencer, ou vérifiez vos filtres ci-dessus :)",
                 "drag-to-merge-default": "Faites glisser ceci vers un autre deck pour le fusionner en tant que nouvelle version",
-                "drag-to-merge": "Déposez-le pour créer une nouvelle version de {{deckName}}",
+                "drag-to-merge": "Lâchez-le pour créer une nouvelle version de {{deckName}}",
                 "versions": {
                     "title": "Versions du deck",
                     "click-to-view-version-stats-tooltip": "Cliquez pour voir les stats de cette version uniquement",
@@ -846,7 +848,8 @@
                     "cards-header-details": "({{value}} cartes)",
                     "view-details-button-tooltip": "Afficher les détails des cartes, et des stats plus approfondies (Premium uniquement)",
                     "view-decks-button-tooltip": "Afficher tous les decks de cet archétype",
-                    "view-decks-button": "Afficher les decks"
+                    "view-decks-button": "Afficher les decks",
+                    "no-data-empty-state-title": "Aucune donnée pour cette combinaison « deck / rang / période / format » n’a été trouvée"
                 },
                 "cards-header-tooltip": "Afficher quelles cartes ont été retirées ou ajoutées aux cartes de base de l’archétype. Cliquez sur un deck pour voir les détails",
                 "archetype-header": "Archétype",
@@ -1258,7 +1261,11 @@
                 "delete-deck-confirmation-cancel": "Annuler",
                 "rename-confirm-button": "OK",
                 "default-deck-name": "{{wins} victoires {{playerClass}} ({{gameMode}})",
-                "default-deck-name-blank": "Deck de Duels"
+                "default-deck-name-blank": "Deck de Duels",
+                "no-meta-deck": "Aucun deck méta",
+                "no-personal-deck-tooltip": "Aucune de vos virées avec cette combinaison « héros ou héroïne / pouvoir héroïque / trésor spécial » n’a été trouvée.",
+                "no-personal-deck": "Aucune virée récente",
+                "no-meta-deck-tooltip": "Aucun des meilleurs decks avec cette combinaison « héros ou héroïne / pouvoir héroïque / trésor spécial » n’a été trouvé."
             },
             "tier-list": {
                 "header": "Tierlist ({{value}} parties) ",
@@ -1413,7 +1420,7 @@
                     "ranked-classic": "Partie classée classique",
                     "both-duels": "Duels (Tous)",
                     "duels": "Duels non classés",
-                    "paid-duels": "Duels héroïques",
+                    "paid-duels": "Duel héroïque",
                     "arena": "Arène",
                     "casual": "Non classé",
                     "friendly": "Amical",
@@ -1576,7 +1583,7 @@
                     "beastsPlayed-label": "Bêtes jouées",
                     "demonsPlayed-label": "Démons joués",
                     "piratesPlayed-tooltip": "Jouez des Pirates pour gagner {{pointsGained}} points par Pirate joué",
-                    "totalResourcesUsed-tooltip": "Dépensez des ressources (cristaux de mana dans Hearthstone, pièces d’or dans Champs de bataille) pour gagner {{pointsGained}} point par ressource dépensée.",
+                    "totalResourcesUsed-tooltip": "Dépensez des ressources (cristaux de mana dans Hearthstone, pièces d’or dans Champs de bataille) pour gagner {{pointsGained}} point par ressource dépensée",
                     "beastsPlayed-tooltip": "Jouez des Bêtes pour gagner {{pointsGained}} points par Bête jouée",
                     "quilboarsPlayed-tooltip": "Jouez des Hurans pour gagner {{pointsGained}} points par Huran joué",
                     "quilboarsPlayed-label": "Hurans joués",
@@ -1805,6 +1812,16 @@
         "specific-plays": {
             "player": "Vous avez joué {{value}} cartes {{cardName}}",
             "opponent": "Votre adversaire a joué {{value}} cartes {{cardName}}"
+        },
+        "tram-heist": {
+            "player": "Votre adversaire a joué {{value}} cartes au tour précédent"
+        },
+        "excavate": {
+            "player": "Actuellement, vous déterrez des trésors de niveau {{value}} / {{maxTier}}. La prochaine fois, vous déterrerez un trésor de niveau {{value}}",
+            "opponent": "Actuellement, votre adversaire déterre des trésors de niveau {{value}} / {{maxTier}}. La prochaine fois, il ou elle déterrera un trésor de niveau {{value}}"
+        },
+        "gardens-grace": {
+            "player": "Votre prochaine carte {{cardName}} coûtera ({{cost}}) cristaux (pendant cette partie, vous avez joué {{spells}} sorts du Sacré, pour un total de {{spellsMana}} cristaux de mana)"
         }
     },
     "loading": {
@@ -2045,10 +2062,11 @@
         "created-by": "Créée par {{value}}",
         "unknown-class-card": "Carte {{playerClass}} inconnue",
         "unknown-card": "Carte inconnue",
-        "unknown-mana-spell": "Sort inconnu coûtant ({{manaCost}}) cristaux",
+        "unknown-mana-spell": "Sort inconnu coûtant ({{manaCost}}) cristaux",
         "unknown-info": "{{info}} inconnu",
         "unknown-big-minion": "Serviteur inconnu de coût {{cost}}+",
-        "card-dredged-tooltip": "Carte draguée"
+        "card-dredged-tooltip": "Carte draguée",
+        "card-tooltip-scroll-text": "Maintenez la touche « Maj » tout en déplaçant la souris hors de la carte pour garder cette fenêtre ouverte et faire défiler les cartes. Appuyez sur « Q » pour la fermer."
     },
     "battlegrounds": {
         "menu": {
@@ -2181,7 +2199,7 @@
             "achievement-completed": "Haut fait obtenu",
             "achievement-missing": "Haut fait manquant",
             "total-matches": "{{value}} parties",
-            "tier-list-title-tooltip": "Construit à partir de {{totalMatches}} parties avec les filtres suivants (changer les filtres dans l’application principale pour mettre à jour les stats) :",
+            "tier-list-title-tooltip": "Construit à partir de {{totalMatches}} parties avec les filtres suivants (changer les filtres dans l’application principale pour mettre à jour les stats) :",
             "tier-list-title-footer": "Dernière mise à jour le {{lastUpdateDate}}",
             "not-enough-data-points-warning": "La taille de l’échantillon pour ce personnage est faible (seulement {{value}} points de données), donc les stats peuvent être inexactes. Vous pouvez essayer de désactiver certains filtres dans l’écran de sélection des héros et héroïnes de la fenêtre Champs de bataille."
         },
@@ -2211,9 +2229,9 @@
                 "triple-empty-state": "Pas de nouveaux triples",
                 "buddies-title": "Compagnons reçus",
                 "buddies-empty-state": "Pas de compagnon",
-                "buddy-text": "Tour {{turn}}",
-                "buddy-tooltip": "A reçu son premier compagnon au tour {{turn}}",
-                "buddy-tooltip-golden": "A reçu ses deux autres compagnons au tour {{turn}}",
+                "buddy-text": "Tour {{turn}}",
+                "buddy-tooltip": "A reçu son premier compagnon au tour {{turn}}",
+                "buddy-tooltip-golden": "A reçu ses deux autres compagnons au tour {{turn}}",
                 "rewards-title": "Récompenses de quête",
                 "rewards-empty-state": "Aucune récompense de quête",
                 "reward-turn-tooltip": "Récompense de quête reçue au tour {{turn}}"
@@ -2302,13 +2320,14 @@
             "win-distribution-tooltip": "Répartition des victoires",
             "top-decks-header": "Meilleurs decks ({{value}} decks)",
             "stats-period": "Stats depuis le patch {{patchNumber}} ({{patchDate}})",
-            "footer": "Maintenez la touche Shift appuyée lorsque vous enlevez la souris du héros ou de l’héroïne pour éviter que ce bandeau ne disparaisse"
+            "footer": "Maintenez la touche Shift appuyée lorsque vous enlevez la souris du héros ou de l’héroïne pour éviter que ce bandeau ne disparaisse",
+            "stats-period-time": "Les stats sont celles des {{value}} derniers jours"
         },
         "deck-select": {
-            "copy-deck-tooltip": "Cliquez pour copier",
+            "copy-deck-tooltip": "Ce deck a obtenu plus de 10 victoires lors d’une virée héroïque. Cliquez pour copier le code du deck dans votre presse-papiers.",
             "copy-deck-tooltip-confirmation": "Copié dans le presse-papiers, vous pouvez maintenant l’importer dans Hearthstone",
             "personal-deck-text": "Votre dernier deck",
-            "explore-decks-tooltip": "Explorer les meilleurs decks similaires",
+            "explore-decks-tooltip": "Découvrez d’autres decks ayant obtenu plus de 10 victoires en duels héroïques avec la même combinaison « héros ou héroïne / pouvoir héroïque / trésor spécial »",
             "build-deck-tooltip": "Construisez votre propre deck avec le constructeur de deck de l’application"
         }
     },
@@ -2729,7 +2748,8 @@
                     "earthen-golem-label": "Golem terrestre",
                     "earthen-golem-tooltip": "Afficher le nombre de golems terrestres que votre adversaire a invoqués pendant cette partie",
                     "number-of-spells-tooltip": "Affiche le nombre de sorts lancés par votre adversaire pendant cette partie. N’apparaît que si votre adversaire a lancé au moins un sort",
-                    "chaotic-tendril-tooltip": "Afficher le nombre de fois où votre adversaire a joué un tentacule chaotique"
+                    "chaotic-tendril-tooltip": "Afficher le nombre de fois où votre adversaire a joué un tentacule chaotique",
+                    "excavate-tooltip": "Affiche les niveaux actuels et maximum de trésors à déterrer de votre adversaire. Lorsque vous passez la souris sur le compteur, affiche aussi les trésors que votre adversaire pourra obtenir la prochaine fois qu’il ou elle en déterrera un."
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -2808,7 +2828,15 @@
                     "chaotic-tendril-tooltip": "Afficher le nombre de fois où vous avez joué un tentacule chaotique",
                     "chaotic-tendril-label": "Tentacule chaotique",
                     "secrets-label": "Secrets joués",
-                    "secrets-tooltip": "Lorsque vous avez des cartes qui s’améliorent selon le nombre de Secrets que vous avez joués, affiche le nombre de Secrets que vous avez joués pendant cette partie"
+                    "secrets-tooltip": "Lorsque vous avez des cartes qui s’améliorent selon le nombre de Secrets que vous avez joués, affiche le nombre de Secrets que vous avez joués pendant cette partie",
+                    "tram-heist-tooltip": "Lorsque vous avez {{cardName}} en main, affiche les cartes jouées par votre adversaire au tour précédent",
+                    "gardens-grace-label": "Grâce des jardins",
+                    "dragons-summoned-label": "Dragons invoqués",
+                    "excavate-label": "Déterrer",
+                    "gardens-grace-tooltip": "Afficher le coût réel (après réduction) des cartes Grâce des jardins lorsque vous en avez une dans votre main ou dans votre deck",
+                    "dragons-summoned-tooltip": "Afficher le nombre Dragons que vous avez invoqués",
+                    "excavate-tooltip": "Affiche vos niveaux actuels et maximum de trésors à déterrer. Lorsque vous passez la souris sur le compteur, affiche aussi les trésors que vous pourrez obtenir la prochaine fois que vous en déterrez un.",
+                    "tram-heist-label": "Braquage de wagonnets"
                 }
             },
             "duels": {
@@ -2821,7 +2849,7 @@
                 "show-ooc-tracker-label": "Afficher le decktracker dans l’écran de sélection",
                 "show-ooc-tracker-tooltip": "Ajoute votre deck lors de la sélection des trésors entre les parties. Cela vous permet de voir des synergies entre les cartes, par exemple.",
                 "show-ooc-hero-info-label": "Afficher les stats des héros et héroïnes",
-                "show-ooc-hero-info-tooltip": "Affiche les stats « héros ou héroïne / pouvoir héroïque / trésor spécial » lors du survol des options en jeu avant de commencer une virée de Duels.",
+                "show-ooc-hero-info-tooltip": "Affiche les stats « héros ou héroïne / pouvoir héroïque / trésor spécial » lors du survol des options en jeu avant de commencer une virée de duels.",
                 "show-ooc-deck-select-label": "Afficher le widget de deck rapide",
                 "show-ooc-deck-select-tooltip": "Affiche un widget sur l’écran de construction du deck qui vous permet de copier rapidement votre dernier deck joué avec cette combinaison « héros ou héroïne / pouvoir héroïque / trésor spécial », ainsi que quelques-uns des meilleurs decks récents."
             },
