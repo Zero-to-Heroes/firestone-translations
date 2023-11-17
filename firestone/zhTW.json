@@ -265,7 +265,8 @@
             "stats-header": "統計",
             "go-premium-header": "支持開發並刪除廣告",
             "logged-in-as-header": "以 {{value}} 身份登錄",
-            "not-logged-in-header": "登錄以保存您的進度"
+            "not-logged-in-header": "登錄以保存您的進度",
+            "profile-overview-header": "總覽"
         },
         "global": {
             "reward": {
@@ -673,7 +674,7 @@
                 "rank-group": {
                     "per-match": "顯示所有賽局",
                     "per-day": "按日分組",
-                    "per-day-tooltip": "顯示每天開始的等級"
+                    "per-day-tooltip": "每天开始时显示等级"
                 },
                 "time-filter": {
                     "all-time": "所有時間",
@@ -682,7 +683,8 @@
                     "past-30": "過去30天",
                     "past-7": "過去7天",
                     "past-3": "過去3天",
-                    "past-1": "過去一天"
+                    "past-1": "過去一天",
+                    "past-20": "过去 20 天"
                 },
                 "deck-search": {
                     "placeholder": "尋找牌組",
@@ -813,7 +815,10 @@
                         "mulligan-winrate-header-tooltip": "在起手牌中结束闷牌时的平均胜率",
                         "mulligan-drawn-winrate-header": "已绘制 WR",
                         "copy-2-header": "複製第二個",
-                        "mulligan-drawn-winrate-header-tooltip": "游戏中抽到这张牌或闷牌结束时这张牌出现在起手牌中时的平均胜率"
+                        "mulligan-drawn-winrate-header-tooltip": "游戏中抽到这张牌或闷牌结束时这张牌出现在起手牌中时的平均胜率",
+                        "mulligan-winrate-header": "穆里根 WR",
+                        "copy-1-header-tooltip": "该原型卡组中至少包含一张此卡的百分比",
+                        "copy-2-header-tooltip": "该原型卡组中包含两份此卡的百分比"
                     },
                     "archetype-type": "原型",
                     "deck-type": "阵容表"
@@ -1021,7 +1026,8 @@
                 "header-average-turns-to-complete": "平均值完成周转次数",
                 "header-collapse-all-button": "全部折叠",
                 "header-expand-all-button": "全部展开",
-                "tribe-impact-position-tooltip": "根据所选部落和异常情况，平均位置会发生多大变化"
+                "tribe-impact-position-tooltip": "根据所选部落和异常情况，平均位置会发生多大变化",
+                "header-net-mmr": "分數變化"
             },
             "bgs-tier-list": {
                 "header": "任務排名列表({{value}} 場遊戲) "
@@ -1152,7 +1158,9 @@
                 "delete-deck-confirmation-cancel": "取消",
                 "rename-confirm-button": "確定",
                 "default-deck-name": "{{wins}} 贏 {{playerClass}} ({{gameMode}})",
-                "default-deck-name-blank": "擂台牌組"
+                "default-deck-name-blank": "擂台牌組",
+                "no-meta-deck": "没有元卡组",
+                "no-personal-deck": "没有最后一次运行"
             },
             "hero-stat": {
                 "global-winrate": "全球勝率",
@@ -1269,7 +1277,8 @@
             },
             "search-placeholder": "搜尋成就…",
             "enable-live-tracking": "启用",
-            "cancel-pin": "不要别针"
+            "cancel-pin": "不要别针",
+            "pin-achievement-tooltip": "钉住此成就，以便在游戏中跟踪其进度"
         },
         "replays": {
             "filters": {
@@ -1385,7 +1394,10 @@
             "ad-tip-prefix": "您知道吗？{{文本｝",
             "share_profile_page": "在线访问自己的个人主页，并与他人分享，展示自己的成就和统计数据",
             "constructed_deck_stats_free": "免费浏览当前的顶级卡组列表！",
-            "tip-0": "如果您有任何反馈、错误或只是想与我们取得联系，请访问我们的 Discord（链接在顶部）！"
+            "tip-0": "如果您有任何反馈、错误或只是想与我们取得联系，请访问我们的 Discord（链接在顶部）！",
+            "discover_highlight": "在 \"发现 \"过程中，鼠标移过一张牌，会高亮显示卡组中的相关信息",
+            "contextual_related_cards": "将鼠标移至跟踪器中的某些卡牌上，可获得更多有关这些卡牌作用的信息",
+            "mercs_terasure_highlight": "在《水兵》中点击宝藏，可提高团队的协同效应"
         },
         "streams": {
             "category": {
@@ -1427,7 +1439,9 @@
                     "mechsPlayed-label": "机甲游戏",
                     "damageWithSpells-label": "法术伤害",
                     "damageWithSpells-tooltip": "使用法术造成伤害，每造成一次伤害可获得 {{pointsGained}} 点数",
-                    "elementalsPlayed-label": "元素游戏"
+                    "elementalsPlayed-label": "元素游戏",
+                    "murlocsPlayed-label": "玩过的 Murlocs",
+                    "nagasPlayed-label": "纳迦人演奏"
                 }
             },
             "close-confirmation-button-cancel": "保持开放",
@@ -1439,12 +1453,18 @@
             "achievements-empty-state": "浏览应用程序中的 \"成就 \"部分，然后选择要跟踪的成就。",
             "achievements-not-in-game": "启动游戏，开始查看已固定的成就。",
             "tracking-ongoing-tooltip": "彩票跟踪正在进行中，您将在游戏过程中积累积分",
-            "tracking-not-ongoing-tooltip": "彩票跟踪已暂停，当小部件不可见时，您将无法累积积分"
+            "tracking-not-ongoing-tooltip": "彩票跟踪已暂停，当小部件不可见时，您将无法累积积分",
+            "opt-out-button-ok": "选择退出",
+            "achievements-pick-for-me-button": "为我挑选"
         },
         "profile": {
             "match-stats": {
                 "header-losses": "失敗數",
-                "header-total-matches-short": "匹配"
+                "header-total-matches-short": "匹配",
+                "header-player-class": "名稱",
+                "no-data": {
+                    "title": "该游戏模式无数据"
+                }
             },
             "match-stats-title": "對戰數據"
         }
@@ -1467,7 +1487,7 @@
         "bolner": "{{value}} 是本回合第一個打出的戰吼",
         "multicaster": {
             "player": "您將從法術學校中抽取 {{cardsTotal}} 張牌：{{schools}}",
-            "opponent": "你的對手將因為施放過 {{schools}} 法術而抽 {{cardsTotal}} 張牌"
+            "opponent": "您的对手使用了 {{schools}} 法术流派"
         },
         "coral-keeper": {
             "player": "你將因施放過 {{schools}} 法術而召喚 {{totalSummons}} 個3/3珊瑚元素"
@@ -1505,8 +1525,8 @@
             "opponent": "你的對手最後打出的法術是 {{value}}，花費了 {{cost}} 或更多"
         },
         "cthun": {
-            "player": "你的克蘇恩體質是 {{value}}/{{value}}",
-            "opponent": "你對手的克蘇恩體質為 {{value}}/{{value}}"
+            "player": "你的克蘇恩體質是 {{atk}}/{{health}}",
+            "opponent": "你對手的克蘇恩體質為 {{atk}}/{{health}}"
         },
         "elemental": {
             "player": "你上回合打出 {{lastTurn}} 個元素, 這回合打出 {{thisTurn}} 個元素",
@@ -1569,6 +1589,9 @@
         },
         "bgs-majordomo": {
             "player": "你這回合打出 {{value}} 個元素"
+        },
+        "overdraft": {
+            "player": "透支会造成 {{value}} 损害"
         }
     },
     "loading": {
@@ -1806,7 +1829,11 @@
         "unknown-mana-spell": "未知 {{manaCost}} 費法術",
         "unknown-info": "未知 {{info}}",
         "unknown-big-minion": "未知 {{cost}}+ 費手下",
-        "card-dredged-tooltip": "探底"
+        "card-dredged-tooltip": "探底",
+        "streamer-mode": {
+            "opponent": "對手"
+        },
+        "card-tooltip-scroll-text": "鼠标移出卡片时按住 \"Shift \"键，可保持窗口打开并滚动卡片。点击 \"q \"关闭窗口。"
     },
     "battlegrounds": {
         "menu": {
@@ -2049,10 +2076,10 @@
             "footer": "離開英雄卡時保持壓按Shift鍵以防它消失"
         },
         "deck-select": {
-            "copy-deck-tooltip": "點擊以複製",
+            "copy-deck-tooltip": "该卡组在英雄赛中取得了 10+ 场胜利。点击将卡组代码复制到剪贴板",
             "copy-deck-tooltip-confirmation": "複製到剪貼簿, 你現在可以將它導入爐石戰記",
             "personal-deck-text": "你最後使用的牌組",
-            "explore-decks-tooltip": "探索其他對戰的高勝率套牌",
+            "explore-decks-tooltip": "探索其他在英雄对决中使用相同英雄/英雄力量/招牌宝物组合获得 10+ 胜场的卡组",
             "build-deck-tooltip": "以牌組建構者來組建你自己的牌組"
         }
     },
@@ -2118,7 +2145,11 @@
             "locked-tooltip": "成为高级用户才能使用此选项！(点击主窗口广告位上方的文字，即可成为高级用户并支持本应用程序）",
             "counter-dropdown": {
                 "on-tooltip": "在当前卡组、手牌和发现选项中检测到相关卡牌时，或在游戏过程中是否使用过相关卡牌时，始终显示计数器",
-                "limited": "有限公司"
+                "limited": "有限公司",
+                "off-tooltip": "切勿显示计数器",
+                "off": "關",
+                "limited-tooltip": "只有在您的手牌、当前牌组和发现选项中检测到相关牌时，才会显示计数器",
+                "on": "关于"
             }
         },
         "menu": {
@@ -2157,7 +2188,9 @@
                     "disconnect-button-text": "連接中斷",
                     "connected-text": "您已登錄",
                     "collection-synchronized": "收藏已同步",
-                    "next": "如果您连接了 Out of Games 帐户，Firestone 会将您的收藏数据发送到 Out of Games，以便您在线使用。"
+                    "next": "如果您连接了 Out of Games 帐户，Firestone 会将您的收藏数据发送到 Out of Games，以便您在线使用。",
+                    "pitch": "Out of Games 是一个炉石传说社区网站，提供文章、指南、卡组、卡牌数据库等内容。将您的卡牌收藏同步到该网站可让您更轻松地找到要玩的卡组。您可以访问它们 {{websiteLink}}",
+                    "title": "退出游戏"
                 },
                 "d0nkey": {
                     "pitch": "d0nkey.top 是一個粉絲網站，收集了來自官方《爐石戰記》比賽的所有套牌，以及來自實況主的套牌，讓任何人都可以輕鬆找到有趣的套牌來玩。 與 d0nkey.top 同步可以讓您與觀眾分享您的套牌(如果您是一名實況主)，或者幫助他們建立更好的數據庫，為社群提供更多免費服務。 你可以拜訪他們 {{websiteLink}}",
@@ -2199,7 +2232,8 @@
                 "delay-label": "直播延遲(毫秒)",
                 "delay-label-tooltip": "將發送到 Twitch 的事件延遲幾毫秒， 如果您的直播被延遲以對抗狙擊，這很有用。",
                 "appear-on-live-streams-tooltip": "出现在 \"实时流 \"选项卡上。该功能仍在开发中，将列出目前使用 Firestone 的所有流媒体，以及他们当前的游戏类型、列表（如适用）和转到其 Twitch 流媒体的链接。",
-                "appear-on-live-streams-label": "出现在直播流中"
+                "appear-on-live-streams-label": "出现在直播流中",
+                "other-options-title": "其他选择"
             },
             "launch": {
                 "launch-on-game-start-label": "啟動遊戲時也啟動Firestone",
@@ -2255,7 +2289,8 @@
                 "disable-local-cache-tooltip": "禁用游戏的本地缓存。这将迫使应用程序从服务器检索您的所有游戏，从而稍稍减慢应用程序的加载速度。禁用本地缓存也会清除现有缓存。",
                 "clear-button-label": "清除",
                 "games-period": "加载您的游戏",
-                "games-title": "游戏"
+                "games-title": "游戏",
+                "other-title": "其他地方"
             },
             "quests": {
                 "title": "任務",
@@ -2297,14 +2332,18 @@
                 "checking-mod-for-updates": "检查 {{modName}",
                 "creating-config": "创建配置...",
                 "refreshing-engine": "复制图书馆...",
-                "add-mods-description": "找到一些修改器，然后按照{{link}}指南中的说明进行安装（其中还包含一些我认为可以安全使用的修改器列表）。"
+                "add-mods-description": "找到一些修改器，然后按照{{link}}指南中的说明进行安装（其中还包含一些我认为可以安全使用的修改器列表）。",
+                "check-for-updates-tooltip": "只有提供了下载链接的模式才能检查更新"
             },
             "premium": {
                 "lottery-opacity-title": "彩票小部件不透明度",
                 "lottery-size-title": "彩票小部件尺寸",
                 "text-1": "成为高级用户是支持应用程序和我为改进 Firestone 所做工作的最佳方式。此外，您还将获得一系列功能，如叠加部件、拥有自己个人简介页面的网站等。您可以在{{link}}中找到所有高级功能的详细信息。",
                 "lottery-button-text": "启用彩票",
-                "lottery-block-title": "彩票"
+                "lottery-block-title": "彩票",
+                "lottery-block-text3": "注意：如果您有多个屏幕，请尝试关闭小工具中的 \"设置叠加 \"设置，并将其移动到第二个屏幕。",
+                "lottery-block-text4": "注意：如果您是高级用户，选择参加抽奖将不会向您显示广告，如果您中奖，我们将一起为您颁发等值奖品。",
+                "lottery-block-text2": "新赛季开始后，之前赛季的积分将被重置。"
             }
         },
         "decktracker": {
@@ -2471,7 +2510,13 @@
                     "corpse-spent-label": "消耗的尸体",
                     "monstrous-parrot-label": "怪鹦鹉",
                     "bonelord-frostwhisper-tooltip": "在波奈洛德-霜语死后，记录下剩余的生存回合数",
-                    "bonelord-frostwhisper-label": "鲣鸟霜语"
+                    "bonelord-frostwhisper-label": "鲣鸟霜语",
+                    "dragons-summoned-label": "召唤巨龙",
+                    "excavate-label": "挖掘",
+                    "naga-giant-label": "纳迦巨人",
+                    "gardens-grace-label": "花园的恩典",
+                    "overdraft-label": "透支",
+                    "parrot-mascot-label": "鹦鹉吉祥物"
                 }
             },
             "duels": {
@@ -2724,7 +2769,8 @@
         "language-auto": "自動",
         "language": "语言",
         "options": {
-            "auto": "汽车"
+            "auto": "汽车",
+            "false": "没有"
         },
         "hide-battle-odds-when-empty-tooltip": "在无赔率可用时完全隐藏战斗赔率小部件，而不是显示空信息",
         "hide-battle-odds-in-combat-tooltip": "战斗时不显示战斗赔率",
@@ -2788,6 +2834,13 @@
         "big-demon-hunter": "大恶魔猎手",
         "big-druid": "大德鲁伊",
         "dude-paladin": "花花公子圣骑士",
-        "miracle-rogue": "奇迹游侠"
+        "miracle-rogue": "奇迹游侠",
+        "moonbeam-druid": "月光德鲁伊",
+        "fdos-shaman": "另一边巫师",
+        "nature-shaman": "自然巫师",
+        "oathbreaker-paladin": "破誓圣骑士",
+        "odyn-warrior": "奥丁战士",
+        "overheal-priest": "愈合牧师",
+        "outcast-dh": "弃儿 DH"
     }
 }
