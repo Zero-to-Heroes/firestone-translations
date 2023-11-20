@@ -99,7 +99,8 @@
             "titans": "泰坦诸神",
             "caverns_of_time": "时光之穴",
             "ulduar": "奥杜尔的陷落",
-            "wild_west": "决战荒芜之地"
+            "wild_west": "决战荒芜之地",
+            "wild_west2": "决战荒芜之地 追赶包"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -161,7 +162,8 @@
             "golden-year-of-the-phoenix": "凤凰年 金色卡牌包",
             "golden-caverns-of-time": "时光之穴 金色卡牌包",
             "caverns-of-time": "时光之穴 卡牌包",
-            "wild-west": "决战荒芜之地 卡牌包"
+            "wild-west": "决战荒芜之地 卡牌包",
+            "wild-west2": "决战荒芜之地 追赶包"
         },
         "ranks": {
             "constructed": {
@@ -848,7 +850,8 @@
                     "view-decks-button-tooltip": "显示所有此类型的套牌",
                     "view-details-button-tooltip": "查看卡牌强度等更深层次的数据细节（会员专属）",
                     "view-decks-button": "查看套牌",
-                    "view-details-button": "查看详情"
+                    "view-details-button": "查看详情",
+                    "no-data-empty-state-title": "我们没有此套牌/分段/时间/模式组合的数据"
                 },
                 "cards-header": "卡牌",
                 "class-header": "职业",
@@ -1258,7 +1261,11 @@
                 "delete-deck-confirmation-cancel": "取消",
                 "rename-confirm-button": "确定",
                 "default-deck-name": "{{wins}} 胜 {{playerClass}} ({{gameMode}})",
-                "default-deck-name-blank": "对决模式套牌"
+                "default-deck-name-blank": "对决模式套牌",
+                "no-personal-deck-tooltip": "我们尚未记录到你使用此英雄/英雄技能/签名宝藏组合的轮次。",
+                "no-personal-deck": "无最近对局数据",
+                "no-meta-deck": "无环境套牌",
+                "no-meta-deck-tooltip": "我们尚未记录到任何使用此英雄/英雄技能/签名宝藏组合的高胜套牌。"
             },
             "tier-list": {
                 "header": "评级表 ({{value}} 场对战) ",
@@ -1805,6 +1812,16 @@
         "specific-plays": {
             "opponent": "你的对手打出了{{value}} {{cardName}}",
             "player": "你已打出了{{value}} {{cardName}}"
+        },
+        "tram-heist": {
+            "player": "对手上回合使用了{{value}}张卡牌"
+        },
+        "excavate": {
+            "player": "你当前发掘等级为{{value}} / {{maxTier}}。当你发掘时，你将获得等级{{value}}的宝藏",
+            "opponent": "敌方当前发掘等级为{{value}} / {{maxTier}}。当敌方发掘时，他将获得等级{{value}}的宝藏"
+        },
+        "gardens-grace": {
+            "player": "你的下一张{{cardName}}为{{cost}}费（本局游戏你已使用 {{spells}}个神圣法术，累计消耗{{spellsMana}}费）"
         }
     },
     "loading": {
@@ -2048,7 +2065,8 @@
         "unknown-mana-spell": "未知 {{manaCost}} 费法术",
         "unknown-info": "未知 {{info}}",
         "unknown-big-minion": "未知 {{cost}}+ 费随从",
-        "card-dredged-tooltip": "被探底"
+        "card-dredged-tooltip": "被探底",
+        "card-tooltip-scroll-text": "按住“Shift”键可在鼠标离开卡牌时保持窗口开启并滚动卡牌。按“Q”关闭。"
     },
     "battlegrounds": {
         "menu": {
@@ -2302,14 +2320,16 @@
             "win-distribution-tooltip": "胜场的分布情况",
             "top-decks-header": "高胜套牌（{{value}} 个套牌）",
             "stats-period": "统计数据始于版本 {{patchNumber}} ({{patchDate}})",
-            "footer": "按住 Shift 键，鼠标离开英雄头像可保持英雄信息显示"
+            "footer": "按住 Shift 键，鼠标离开英雄头像可保持英雄信息显示",
+            "stats-period-time": "统计数据基于过去{{value}}天"
         },
         "deck-select": {
-            "copy-deck-tooltip": "点击复制",
+            "copy-deck-tooltip": "此套牌在对决英雄模式中获得了10+胜。点击复制套牌代码至你的剪贴板",
             "copy-deck-tooltip-confirmation": "已复制到剪贴板，您现在可以导入到炉石传说",
             "personal-deck-text": "您的最终套牌",
-            "explore-decks-tooltip": "寻找其他符合条件的高胜套牌",
-            "build-deck-tooltip": "使用内置套牌编辑器构筑您的套牌"
+            "explore-decks-tooltip": "搜索在英雄模式中使用相同英雄/英雄技能/签名宝藏的其他10+胜套牌",
+            "build-deck-tooltip": "使用内置套牌编辑器构筑您的套牌",
+            "copy-personal-deck-tooltip": "这是你上轮对决使用的组合。点击复制套牌代码至剪贴板"
         }
     },
     "session": {
@@ -2373,10 +2393,10 @@
             "hide-advanced-settings-button": "隐藏高级设置",
             "locked-tooltip": "成为会员用户即可解锁这个选项！（点击主界面右下角的广告上方的链接来支持开发者）",
             "counter-dropdown": {
-                "on-tooltip": "当你的卡组中、手牌中、发现或打出过相关卡牌时显示对应计数器",
+                "on-tooltip": "当你的套牌、手牌或发现选项中侦测到相关卡牌，或在本局对战中使用过相关卡牌时，显示对应计数器",
                 "limited": "有限",
                 "off-tooltip": "从不显示计数器",
-                "limited-tooltip": "当你的卡组中、手牌中有或发现过相关卡牌时显示对应计数器",
+                "limited-tooltip": "仅当你的套牌、手牌或发现选项中出现相关卡牌时才显示对应计数器",
                 "off": "关闭",
                 "on": "开启"
             }
@@ -2729,7 +2749,8 @@
                     "earthen-golem-label": "土灵魔像",
                     "earthen-golem-tooltip": "显示对手已召唤的“土灵魔像”数量",
                     "chaotic-tendril-tooltip": "显示你对手已使用的“混乱触须”数量",
-                    "number-of-spells-tooltip": "显示你对手使用过的最后一个法术。仅在对手使用过法术时显示。"
+                    "number-of-spells-tooltip": "显示你对手使用过的最后一个法术。仅在对手使用过法术时显示。",
+                    "excavate-tooltip": "显示敌方当前和最多可发掘的等级，并在你的鼠标移至计数器时显示敌方可获得的下一等级的发掘宝藏"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -2808,7 +2829,15 @@
                     "secrets-tooltip": "当你拥有受益于已使用奥秘数量的卡牌时，显示使用过的奥秘数量",
                     "chaotic-tendril-label": "混乱触须",
                     "chaotic-tendril-tooltip": "显示你已使用的“混乱触须”数量",
-                    "secrets-label": "打出的奥秘"
+                    "secrets-label": "打出的奥秘",
+                    "excavate-label": "发掘",
+                    "tram-heist-label": "飞车劫掠",
+                    "tram-heist-tooltip": "当你的手牌中有{{cardName}}时，显示你的对手上回合使用过的卡牌",
+                    "dragons-summoned-label": "龙（已召唤的）",
+                    "gardens-grace-label": "花园惠景",
+                    "gardens-grace-tooltip": "当你的手牌或牌库中有花园惠景时，显示它的实际费用（即减费后的）",
+                    "dragons-summoned-tooltip": "显示你已召唤的龙的数量",
+                    "excavate-tooltip": "显示你当前和最多可发掘的等级，并在你的鼠标移至计数器时显示你可获得的下一等级的发掘宝藏"
                 }
             },
             "duels": {
@@ -3245,6 +3274,30 @@
         "druid": "未归类德鲁伊",
         "rogue": "未归类潜行者",
         "xl-bbb-death-knight": "40血DK",
-        "xl-warrior": "40战"
+        "xl-warrior": "40战",
+        "coin-rogue": "许愿井贼",
+        "dragon-druid": "龙德",
+        "drilling-rogue": "发掘贼",
+        "fff-excavate-dk": "发掘冰DK",
+        "highlander-dh": "宇宙瞎",
+        "highlander-druid": "宇宙德",
+        "highlander-hunter": "宇宙猎",
+        "highlander-paladin": "宇宙骑",
+        "highlander-priest": "宇宙牧",
+        "highlander-shaman": "宇宙萨",
+        "naga-demon-hunter": "纳迦瞎",
+        "ogre-rogue": "食人魔贼",
+        "bfu-excavate-dk": "发掘彩虹DK",
+        "bfu-undead-dk": "亡灵彩虹DK",
+        "snek-warlock": "发掘术",
+        "xl-excavate-warrior": "40发掘战",
+        "xl-highlander-druid": "40宇宙德",
+        "xl-highlander-hunter": "40宇宙猎",
+        "xl-highlander-mage": "40宇宙法",
+        "xl-highlander-paladin": "40宇宙骑",
+        "xl-highlander-priest": "40宇宙牧",
+        "xl-bfu-excavate-dk": "40发掘彩虹DK",
+        "xl-snek-warlock": "40发掘术",
+        "elemental-shaman": "元素萨"
     }
 }
