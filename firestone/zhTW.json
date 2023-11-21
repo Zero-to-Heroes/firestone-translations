@@ -38,7 +38,9 @@
             "friendly": "好友對戰",
             "arena": "競技場",
             "tavern-brawl": "旅店大亂鬥",
-            "duels": "決鬥擂台"
+            "duels": "決鬥擂台",
+            "constructed": "排名模式",
+            "ranked": "排名模式"
         },
         "region": {
             "all": "所有區域",
@@ -266,7 +268,9 @@
             "go-premium-header": "支持開發並刪除廣告",
             "logged-in-as-header": "以 {{value}} 身份登錄",
             "not-logged-in-header": "登錄以保存您的進度",
-            "profile-overview-header": "總覽"
+            "profile-overview-header": "總覽",
+            "profile-header": "简介",
+            "ranked-header": "排名模式"
         },
         "global": {
             "reward": {
@@ -696,7 +700,8 @@
                     "diamond": "鑽石",
                     "all": "全部階級",
                     "legend-diamond": "鑽石-傳說",
-                    "legend": "傳說"
+                    "legend": "傳說",
+                    "platinum": "白金"
                 },
                 "use-conservative-winrate": "保守胜率",
                 "use-conservative-winrate-tooltip": "将与样本大小相关的不确定性纳入胜率估算中",
@@ -818,7 +823,8 @@
                         "mulligan-drawn-winrate-header-tooltip": "游戏中抽到这张牌或闷牌结束时这张牌出现在起手牌中时的平均胜率",
                         "mulligan-winrate-header": "穆里根 WR",
                         "copy-1-header-tooltip": "该原型卡组中至少包含一张此卡的百分比",
-                        "copy-2-header-tooltip": "该原型卡组中包含两份此卡的百分比"
+                        "copy-2-header-tooltip": "该原型卡组中包含两份此卡的百分比",
+                        "copy-1-header": "熱門度"
                     },
                     "archetype-type": "原型",
                     "deck-type": "阵容表"
@@ -905,7 +911,11 @@
                     "signature-treasure": "英雄夥伴"
                 },
                 "anomaly": {
-                    "all-anomalies": "所有异常情况"
+                    "all-anomalies": "所有异常情况",
+                    "validation-error-tooltip": "请选择任意號碼的異變"
+                },
+                "quest-type": {
+                    "quests": "任務"
                 }
             },
             "personal-stats": {
@@ -1027,7 +1037,10 @@
                 "header-collapse-all-button": "全部折叠",
                 "header-expand-all-button": "全部展开",
                 "tribe-impact-position-tooltip": "根据所选部落和异常情况，平均位置会发生多大变化",
-                "header-net-mmr": "分數變化"
+                "header-net-mmr": "分數變化",
+                "header-placement-distribution": "安置分布",
+                "header-quest-details": "任務",
+                "header-quest-reward-details": "任務獎勵"
             },
             "bgs-tier-list": {
                 "header": "任務排名列表({{value}} 場遊戲) "
@@ -1044,7 +1057,9 @@
                         "extended-warrior": "延伸的勇士曲线",
                         "fast-basic": "快速基本曲线",
                         "fast-jeef": "快速 Jeef 曲线",
-                        "jeef": "Jeef 曲线"
+                        "jeef": "Jeef 曲线",
+                        "pocky": "波奇曲线",
+                        "rafaam": "拉法姆曲线"
                     },
                     "notes": {
                         "warrior": "如果一級的經濟體和搶三連實力強勁，這是一條非常有價值的經營線。",
@@ -1254,7 +1269,8 @@
                 "subtitle": "開始遊玩決鬥擂台以接收資訊"
             },
             "tier-list": {
-                "header-hero-details": "卡片"
+                "header-hero-details": "卡片",
+                "header-placement-distribution": "安置分布"
             }
         },
         "achievements": {
@@ -1397,7 +1413,9 @@
             "tip-0": "如果您有任何反馈、错误或只是想与我们取得联系，请访问我们的 Discord（链接在顶部）！",
             "discover_highlight": "在 \"发现 \"过程中，鼠标移过一张牌，会高亮显示卡组中的相关信息",
             "contextual_related_cards": "将鼠标移至跟踪器中的某些卡牌上，可获得更多有关这些卡牌作用的信息",
-            "mercs_terasure_highlight": "在《水兵》中点击宝藏，可提高团队的协同效应"
+            "mercs_terasure_highlight": "在《水兵》中点击宝藏，可提高团队的协同效应",
+            "ad-tip-premium": "高级",
+            "bg_tab_key": "按 \"Tab \"键可快速查看大厅内所有玩家的游戏进度"
         },
         "streams": {
             "category": {
@@ -1441,7 +1459,20 @@
                     "damageWithSpells-tooltip": "使用法术造成伤害，每造成一次伤害可获得 {{pointsGained}} 点数",
                     "elementalsPlayed-label": "元素游戏",
                     "murlocsPlayed-label": "玩过的 Murlocs",
-                    "nagasPlayed-label": "纳迦人演奏"
+                    "nagasPlayed-label": "纳迦人演奏",
+                    "undeadPlayed-tooltip": "打出不死族，每打出一次不死族可获得 {{pointsGained}} 点数",
+                    "nagasPlayed-tooltip": "每打出一次娜迦，就能获得 {{pointsGained}} 点数",
+                    "demonsPlayed-tooltip": "每打出一个恶魔，就能获得 {{pointsGained}} 点数",
+                    "mechsPlayed-tooltip": "每打出一次機械，就能获得 {{pointsGained}} 点数",
+                    "murlocsPlayed-tooltip": "每打出一次魚人，就能获得 {{pointsGained}} 点数",
+                    "quilboarsPlayed-tooltip": "打出野豬人，每打出一次野豬人即可获得 {{pointsGained}} 点数",
+                    "spellsPlayed-tooltip": "施放法术，每施放一个法术可获得 {{pointsGained}} 点数",
+                    "elementalsPlayed-tooltip": "打出元素，每打出一个元素可获得 {{pointsGained}}点数",
+                    "quilboarsPlayed-label": "奎尔波尔演奏",
+                    "beastsPlayed-tooltip": "打出野兽，每打出一只野兽可获得 {{pointsGained}} 点数",
+                    "piratesPlayed-tooltip": "打出海盜，每打出一个海盗可获得 {{pointsGained}} 点数",
+                    "piratesPlayed-label": "已打出的海盜",
+                    "dragonsPlayed-tooltip": "打出龍類，每打出一条龍類可获得 {{pointsGained}} 点数"
                 }
             },
             "close-confirmation-button-cancel": "保持开放",
@@ -1463,7 +1494,11 @@
                 "header-total-matches-short": "匹配",
                 "header-player-class": "名稱",
                 "no-data": {
-                    "title": "该游戏模式无数据"
+                    "title": "该游戏模式无数据",
+                    "ranked": "玩一场排名游戏或启动《炉石传说》，开始追踪你的统计数据",
+                    "battlegrounds": "玩一款战场游戏或启动《炉石传说》，开始追踪你的统计数据",
+                    "duels": "玩决斗游戏或启动《炉石传说》，然后进入决斗界面开始追踪你的统计数据",
+                    "arena": "玩一场竞技场游戏或启动《炉石传说》，开始追踪你的统计数据"
                 }
             },
             "match-stats-title": "對戰數據"
@@ -1936,7 +1971,9 @@
                 "control-general": "每次選擇時，使用“Tab”循環瀏覽字段，並使用“Space”切換複選框。 使用 Enter 選擇第一個顯示的選項，然後使用 Shift + Enter 驗證最終選擇"
             },
             "reposition-button-tooltip": "（測試版）找到適合您的棋盤的最佳定位。根據 CPU 的數量和棋盤的複雜性，這可能需要幾分鐘的時間，並且會使用大量的 CPU 和 RAM。",
-            "global-effects-header": "光環影響"
+            "global-effects-header": "光環影響",
+            "quest-reward-header": "任務獎勵",
+            "quest-reward-title": "任務獎勵"
         },
         "hero-stats": {
             "finishes-title": "完成",
@@ -1951,7 +1988,8 @@
             "winning-tribes-title": "獲勝最多的種族",
             "winning-tribes-title-tooltip": "前四名中各種族占的百分比",
             "avg-position-details-tooltip-base-value": "基准值",
-            "strategies-link": "点击查看推荐策略"
+            "strategies-link": "点击查看推荐策略",
+            "place": "Place: {{value}}"
         },
         "hero-selection": {
             "achievement-completed": "已完成成就",
@@ -2171,7 +2209,8 @@
                 "quests": "任務",
                 "data": "數據",
                 "lottery": "彩票",
-                "mods": "模組"
+                "mods": "模組",
+                "premium": "高级"
             },
             "third-party": {
                 "intro": "您的資料屬於您自己，您可以將其同步到其他第三方網站並幫助他們。 我們不會因此獲得報酬，但我們確實得到了一些曝光，因為他們將會談論我們 :)",
@@ -2333,7 +2372,8 @@
                 "creating-config": "创建配置...",
                 "refreshing-engine": "复制图书馆...",
                 "add-mods-description": "找到一些修改器，然后按照{{link}}指南中的说明进行安装（其中还包含一些我认为可以安全使用的修改器列表）。",
-                "check-for-updates-tooltip": "只有提供了下载链接的模式才能检查更新"
+                "check-for-updates-tooltip": "只有提供了下载链接的模式才能检查更新",
+                "instructions": "请阅读 {{link}} 了解所有必要细节。"
             },
             "premium": {
                 "lottery-opacity-title": "彩票小部件不透明度",
@@ -2343,7 +2383,8 @@
                 "lottery-block-title": "彩票",
                 "lottery-block-text3": "注意：如果您有多个屏幕，请尝试关闭小工具中的 \"设置叠加 \"设置，并将其移动到第二个屏幕。",
                 "lottery-block-text4": "注意：如果您是高级用户，选择参加抽奖将不会向您显示广告，如果您中奖，我们将一起为您颁发等值奖品。",
-                "lottery-block-text2": "新赛季开始后，之前赛季的积分将被重置。"
+                "lottery-block-text2": "新赛季开始后，之前赛季的积分将被重置。",
+                "title": "高级订阅选项"
             }
         },
         "decktracker": {
@@ -2516,7 +2557,9 @@
                     "naga-giant-label": "纳迦巨人",
                     "gardens-grace-label": "花园的恩典",
                     "overdraft-label": "透支",
-                    "parrot-mascot-label": "鹦鹉吉祥物"
+                    "parrot-mascot-label": "鹦鹉吉祥物",
+                    "queensguard-label": "皇后卫队",
+                    "chained-guardian-label": "瘟疫"
                 }
             },
             "duels": {
@@ -2782,7 +2825,9 @@
         "battlegrounds": {
             "games-played-label-global-with-bg": "已进行的 BG 游戏",
             "top-1-label-global-with-bg": "BG 顶部 1",
-            "top-4-label-global-with-bg": "BG 4 强"
+            "top-4-label-global-with-bg": "BG 4 强",
+            "games-played-label": "已遊玩:",
+            "games-played-label-global": "已遊玩"
         },
         "desktop-app": {
             "navigation-cta-button-text": "下载",
@@ -2793,10 +2838,13 @@
         },
         "duels": {
             "title-label-global": "決鬥擂台"
+        },
+        "ranked": {
+            "title-label-global": "排名模式"
         }
     },
     "archetype": {
-        "fff-undead-dk": "FFF 亡灵 DK",
+        "fff-undead-dk": "冰霜亡灵 DK",
         "mech-paladin": "机甲圣骑士",
         "elemental-mage": "元素法师",
         "aggro-hunter": "攻击型猎人",
@@ -2841,6 +2889,27 @@
         "oathbreaker-paladin": "破誓圣骑士",
         "odyn-warrior": "奥丁战士",
         "overheal-priest": "愈合牧师",
-        "outcast-dh": "弃儿 DH"
+        "outcast-dh": "弃儿 DH",
+        "rainbow-mage": "彩虹法师",
+        "quest-drud": "任务德鲁伊",
+        "rainbow-naga-mage": "彩虹娜迦法师",
+        "ramp-druid": "斜坡德鲁伊",
+        "dragon-druid": "龙德鲁伊",
+        "elemental-shaman": "元素薩滿",
+        "fff-excavate-dk": "冰霜挖寶死亡骑士",
+        "naga-demon-hunter": "娜迦恶魔猎手",
+        "ogre-rogue": "食人魔盜賊",
+        "highlander-paladin": "無雙圣骑士",
+        "highlander-shaman": "無雙巫师",
+        "bfu-excavate-dk": "彩虹挖寶 DK",
+        "bfu-undead-dk": "彩虹不死族 DK",
+        "coin-rogue": "硬幣盜賊",
+        "drilling-rogue": "挖寶盜賊",
+        "highlander-dh": "無雙恶魔猎手",
+        "pirate-rogue": "海盗盜賊",
+        "highlander-druid": "無雙德鲁伊",
+        "highlander-priest": "無雙牧师",
+        "highlander-hunter": "無雙猎人",
+        "pure-paladin": "纯圣骑士"
     }
 }
