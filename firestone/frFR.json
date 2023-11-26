@@ -323,6 +323,9 @@
                 "tooltip-title": "Titre",
                 "wins-label": "{{value}} victoires",
                 "wins-value": "{{value}} % des virées"
+            },
+            "filters": {
+                "time-patch": "Patch {{value}}"
             }
         },
         "tray": {
@@ -361,15 +364,18 @@
         },
         "arena": {
             "menu": {
-                "my-runs": "Mes virées"
+                "my-runs": "Mes virées",
+                "class-tier-list": "Tierlist des classes",
+                "card-stats": "Stats de carte"
             },
             "filters": {
                 "time": {
-                    "past-three": "3 derniers jours",
-                    "past-seven": "7 derniers jours",
+                    "past-three": "3 derniers jours",
+                    "past-seven": "7 derniers jours",
                     "last-patch": "Dernière mise à jour",
-                    "past-100": "100 derniers jours",
-                    "past-30": "30 derniers jours"
+                    "past-100": "Depuis toujours",
+                    "past-30": "30 derniers jours",
+                    "past-20": "20 derniers jours"
                 }
             },
             "stats": {
@@ -392,6 +398,23 @@
             "empty-state": {
                 "title": "Rien ici pour le moment",
                 "subtitle": "Commencez à jouer en Arène pour recevoir des informations"
+            },
+            "card-stats": {
+                "header-drawn-winrate": "% vic. qd piochée",
+                "header-card-name": "Nom",
+                "header-drawn-total": "Nb de cartes piochées"
+            },
+            "class-tier-list": {
+                "header-placement-distribution-tooltip": "Indique à quel point une classe se détache des autres pour un nombre donné de victoires. ",
+                "header-hero-name": "Nom",
+                "tier": "Niveau {{value}}",
+                "header-winrate": "% victoires",
+                "header-placement-distribution": "Profil de victoires"
+            },
+            "draft": {
+                "hero-tier": "Niveau",
+                "hero-winrate": "% victoires",
+                "card-drawn-winrate": "Taux de victoires quand la carte est piochée"
             }
         },
         "collection": {
@@ -713,9 +736,9 @@
                     "all-time": "Toujours",
                     "season-start": "Cette saison",
                     "last-patch": "Dernière mise à jour",
-                    "past-30": "30 derniers jours",
-                    "past-7": "7 derniers jours",
-                    "past-3": "3 derniers jours",
+                    "past-30": "30 derniers jours",
+                    "past-7": "7 derniers jours",
+                    "past-3": "3 derniers jours",
                     "past-1": "Hier",
                     "current-season": "Cette saison",
                     "past-20": "20 derniers jours"
@@ -937,11 +960,11 @@
                     "per-day-tooltip": "Afficher la cote au début de chaque jour"
                 },
                 "time": {
-                    "past-seven": "7 derniers jours",
-                    "past-three": "3 derniers jours",
+                    "past-seven": "7 derniers jours",
+                    "past-three": "3 derniers jours",
                     "last-patch": "Dernière mise à jour",
-                    "past-100": "100 derniers jours",
-                    "past-30": "30 derniers jours"
+                    "past-100": "Depuis toujours",
+                    "past-30": "30 derniers jours"
                 },
                 "tier": {
                     "all-tiers": "Tous les niveaux",
@@ -1090,7 +1113,7 @@
                 "header-placement-distribution": "Distribution des places",
                 "header-combat-winrate": "% victoires en combat",
                 "header-net-mmr": "Gain de cote",
-                "header-tribes": "Meilleurs types",
+                "header-tribes": "Impact des types",
                 "header-tribes-tooltip": "Les types qui ont le meilleur impact sur la position moyenne du héros ou de l’héroïne",
                 "tribe-info-tooltip": "Lorsqu’il y a des {{ tribe }} dans la taverne, la position moyenne du héros ou de l’héroïne est meilleure de {{value}} place",
                 "learn-more": "Comment ces données sont-elles calculées ?",
@@ -1215,10 +1238,10 @@
                     "winrate": "Nb de victoires moyen"
                 },
                 "time": {
-                    "past-three": "3 derniers jours",
-                    "past-seven": "7 derniers jours",
+                    "past-three": "3 derniers jours",
+                    "past-seven": "7 derniers jours",
                     "last-patch": "Dernière mise à jour",
-                    "past-100": "100 derniers jours"
+                    "past-100": "Depuis toujours"
                 },
                 "treasure-pools": {
                     "treasure-1": "Groupe de trésors 1",
@@ -1531,7 +1554,7 @@
             "quest_stats": "Le nombre moyen de tours pour terminer les quêtes, et la place moyenne liée à chaque récompense sont affichés directement dans l’overlay",
             "minion_auto_highlight": "Certains serviteurs sont des immanquables avec certains héros ou héroïnes (comme la parieuse convaincante avec Neunœil). Firestone les met automatiquement en surbrillance dans la taverne.",
             "minions_list_by_tribe": "Vous pouvez activer une option qui regroupe les serviteurs par type dans la liste des serviteurs. Cela vous permet également d’enlever le widget des types, ce qui libère de l’espace.",
-            "constructed_deck_stats": "Vous pouvez consulter les stats détaillées des cartes (taux de victoires au mulligan ou lorsqu’elle est piochée), ainsi que les stats globales des archétypes.",
+            "constructed_deck_stats": "Vous pouvez consulter les stats détaillées des cartes (taux de victoires au mulligan ou quand la carte est piochée), ainsi que les stats globales des archétypes.",
             "constructed_deck_stats_free": "Explorez gratuitement les meilleurs decks !"
         },
         "streams": {
@@ -1817,8 +1840,8 @@
             "player": "Votre adversaire a joué {{value}} cartes au tour précédent"
         },
         "excavate": {
-            "player": "Actuellement, vous déterrez des trésors de niveau {{value}} / {{maxTier}}. La prochaine fois, vous déterrerez un trésor de niveau {{value}}",
-            "opponent": "Actuellement, votre adversaire déterre des trésors de niveau {{value}} / {{maxTier}}. La prochaine fois, il ou elle déterrera un trésor de niveau {{value}}"
+            "player": "Vous avez déterré {{totalExcavates}} trésors. La prochaine fois, vous déterrerez un trésor de niveau {{nextTier}}",
+            "opponent": "Votre adversaire a déterré {{totalExcavates}} trésors. La prochaine fois, il ou elle déterrera un trésor de niveau {{nextTier}}"
         },
         "gardens-grace": {
             "player": "Votre prochaine carte {{cardName}} coûtera ({{cost}}) cristaux (pendant cette partie, vous avez joué {{spells}} sorts du Sacré, pour un total de {{spellsMana}} cristaux de mana)"
@@ -2585,13 +2608,13 @@
                 "packs": "Paquets",
                 "packs-tooltip": "Actualisez vos paquets. Cela se fait automatiquement tous les 7 jours.",
                 "games-tooltip": "Acutaliser vos parties. Ceci récupérera toutes vos parties depuis que vous avez commencé à utiliser l’application, et cela peut prendre un certain temps",
-                "clear-games-tooltip": "Effacer vos parties et recharger les dernières parties selon vos préférences (100 derniers jours par défaut, que vous pouvez changer en activant les paramètres avancés). Cela peut être utile si vous avez beaucoup de parties et que l’application utilise trop de RAM",
+                "clear-games-tooltip": "Effacer vos parties et recharger les dernières parties selon vos préférences (100 derniers jours par défaut, que vous pouvez changer en activant les paramètres avancés). Cela peut être utile si vous avez beaucoup de parties et que l’application utilise trop de RAM",
                 "games-period": "Chargez vos parties depuis",
                 "games-period-options": {
                     "all-time": "Toujours",
-                    "past-100": "100 derniers jours",
+                    "past-100": "100 derniers jours",
                     "last-patch": "Dernière mise à jour",
-                    "past-7": "7 derniers jours",
+                    "past-7": "7 derniers jours",
                     "season-start": "Début de la saison"
                 },
                 "achievements": "Hauts faits",
@@ -2960,9 +2983,9 @@
                 "show-minions-list-label": "Afficher la liste des serviteurs",
                 "show-minions-list-tooltip": "Afficher la liste des serviteurs, regroupés par niveau de taverne",
                 "turn-counter-label": "Afficher le compteur de tours",
-                "last-opponent-icon-label": "Icône du dernier adversaire",
+                "last-opponent-icon-label": "Icône de votre dernier adversaire",
                 "last-opponent-icon-tooltip": "Ajoute une icône à côté de votre dernier adversaire dans le classement",
-                "last-opponent-board-label": "Troupe de guerre du dernier adversaire",
+                "last-opponent-board-label": "Troupe de guerre de votre dernier adversaire",
                 "last-opponent-board-tooltip": "Afficher la dernière troupe de guerre connue de l’adversaire (et des infos supplémentaires) lorsque vous passez la souris sur son portrait dans le classement",
                 "battle-simulation-label": "Overlay de simulation de combat",
                 "battle-simulation-tooltip": "Afficher une simulation des résultats du combat actuel en tant qu’overlay au-dessus du jeu",
