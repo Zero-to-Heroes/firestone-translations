@@ -99,7 +99,8 @@
             "titans": "タイタンの目醒め",
             "caverns_of_time": "時の大洞窟",
             "ulduar": "ウルドゥアーの興亡",
-            "wild_west": "ワイルドウエスト"
+            "wild_west": "バッドランドの決斗",
+            "wild_west2": "バッドランドの決斗キャッチアップ"
         },
         "pack": {
             "classic": "クラシック",
@@ -161,7 +162,8 @@
             "golden-year-of-the-phoenix": "ゴールデン・フェニックス年",
             "caverns-of-time": "時の大洞窟",
             "golden-caverns-of-time": "ゴールデン・時の大洞窟",
-            "wild-west": "ワイルドウエスト"
+            "wild-west": "バッドランドの決斗",
+            "wild-west2": "バッドランドの決斗キャッチアップ"
         },
         "ranks": {
             "constructed": {
@@ -321,6 +323,9 @@
                 "tooltip-title": "タイトル",
                 "wins-label": "{{value}} 勝",
                 "wins-value": "勝率{{value}}%"
+            },
+            "filters": {
+                "time-patch": "パッチ{{value}}"
             }
         },
         "tray": {
@@ -359,7 +364,9 @@
         },
         "arena": {
             "menu": {
-                "my-runs": "自分の履歴"
+                "my-runs": "自分の履歴",
+                "card-stats": "カード詳細",
+                "class-tier-list": "クラスTier表"
             },
             "filters": {
                 "time": {
@@ -367,7 +374,8 @@
                     "past-seven": "過去7日間",
                     "last-patch": "最新パッチ",
                     "past-100": "全期間",
-                    "past-30": "過去30日間"
+                    "past-30": "過去30日間",
+                    "past-20": "過去20日間"
                 }
             },
             "stats": {
@@ -390,6 +398,25 @@
             "empty-state": {
                 "title": "まだ何もありません",
                 "subtitle": "闘技場をプレイして情報を受け取ろう"
+            },
+            "draft": {
+                "locked-premium-info-tooltip": "最初のカード詳細は全てのユーザーが利用可能です。ヒーローとその他のカードについては、プレミアムユーザーのみ利用可能です。クリックするとサブスクライブページを開きます",
+                "locked-premium-info": "プレミアムになって詳細をアンロック",
+                "card-drawn-winrate": "ドロー時勝率",
+                "hero-tier": "Tier",
+                "hero-winrate": "勝率"
+            },
+            "card-stats": {
+                "header-drawn-winrate": "ドロー時勝率",
+                "header-card-name": "名前",
+                "header-drawn-total": "合計ドロー数"
+            },
+            "class-tier-list": {
+                "header-hero-name": "名前",
+                "header-placement-distribution-tooltip": "各クラスの勝利数が平均と比べてどの程度偏っているかを表します ",
+                "tier": "Tier {{value}}",
+                "header-winrate": "勝率",
+                "header-placement-distribution": "勝利時の詳細"
             }
         },
         "collection": {
@@ -705,7 +732,7 @@
                 "rank-group": {
                     "per-match": "各試合を表示",
                     "per-day": "日ごとにグループ化",
-                    "per-day-tooltip": "毎日の開始時に評価を表示する"
+                    "per-day-tooltip": "毎日の開始時にランクを表示します"
                 },
                 "time-filter": {
                     "all-time": "全期間",
@@ -847,7 +874,8 @@
                     "view-details-button-tooltip": "カードレベルの詳細やより詳しい情報を見ます(プレミアムオンリー)",
                     "view-details-button": "詳細を見る",
                     "view-decks-button-tooltip": "このアーキタイプの全てのデッキを表示します",
-                    "view-decks-button": "デッキを見る"
+                    "view-decks-button": "デッキを見る",
+                    "no-data-empty-state-title": "このデッキ/ランク/期間/フォーマットの組み合わせでは、データは見つけられませんでした"
                 },
                 "archetype-header": "アーキタイプ",
                 "cards-header": "カード",
@@ -1087,7 +1115,7 @@
                 "header-placement-distribution": "順位分布",
                 "header-combat-winrate": "戦闘勝率",
                 "header-net-mmr": "Net MMR",
-                "header-tribes": "相性の良い種族",
+                "header-tribes": "種族による影響",
                 "header-tribes-tooltip": "平均順位に最も寄与する種族",
                 "tribe-info-tooltip": "{{ tribe }} がロビーにいる場合、このヒーローの平均順位は {{value}} 上昇します。",
                 "learn-more": "このデータはどのように算出されますか？",
@@ -1258,7 +1286,11 @@
                 "delete-deck-confirmation-cancel": "キャンセル",
                 "rename-confirm-button": "OK",
                 "default-deck-name": "{{wins}} 勝 {{playerClass}} ({{gameMode}})",
-                "default-deck-name-blank": "デュエルのデッキ"
+                "default-deck-name-blank": "デュエルのデッキ",
+                "no-personal-deck": "最近の挑戦がありません",
+                "no-personal-deck-tooltip": "このヒーロー/ヒーローパワー/愛用の宝物の組み合わせでは、あなたの挑戦が見つけられませんでした",
+                "no-meta-deck": "メタデッキが見つかりません",
+                "no-meta-deck-tooltip": "このヒーロー/ヒーローパワー/愛用の宝物の組み合わせでは、高勝利数のデッキを見つけられませんでした"
             },
             "tier-list": {
                 "header": "Tierリスト ({{value}} 件) ",
@@ -1426,6 +1458,9 @@
                 },
                 "opponent": {
                     "all": "全てのクラス(相手)"
+                },
+                "opponent-search": {
+                    "placeholder": "対戦相手を検索…"
                 }
             },
             "bg-stats": {
@@ -1511,7 +1546,7 @@
             "etc_buddies": "「バンドマネージャーE.T.C.」を使用したとき、発見プールにいる全てのメンバーを確認できます",
             "bg_hero_select": "各ヒーローの戦績は、ヒーロー選択画面から直接確認できます",
             "minion_play_order": "戦場にいるミニオンの上部に表示される数字は、ミニオンが戦場に出現した順番です。断末魔の処理はこの順で行われます",
-            "ad-tip-prefix": "ご存知ですか？{{text}}",
+            "ad-tip-prefix": "ヒント：{{text}}",
             "contextual_related_cards": "トラッカーで特定のカードにマウスオーバーすると、そのカードのより詳しい情報を見ることができます",
             "ad-tip-premium": "プレミアム",
             "achievements_pin": "試合中に達成状況を確認したい任意の数の実績を選んでください。それらはリアルタイムで更新されます",
@@ -1628,7 +1663,7 @@
                 "header-total-matches-short": "試合数",
                 "no-data": {
                     "title": "このモードのデータがありません",
-                    "battlegrounds": "バトルグラウンドを遊ぶ、またはハースストーンを起動して戦績のトラッキングを開始",
+                    "battlegrounds": "ハースストーンを起動し、バトルグラウンドモードを選ぶと、戦績のトラッキングを開始します",
                     "duels": "デュエルを遊ぶ、またはデュエルモードに行って戦績のトラッキングを始める",
                     "ranked": "ランク戦を遊ぶ、またはハースストーンを起動して戦績のトラッキングを開始",
                     "arena": "闘技場を遊ぶ、またはハースストーンを起動して戦績のトラッキングを開始"
@@ -1805,6 +1840,16 @@
         "specific-plays": {
             "player": "{{values}}枚の{{cardName}}を使用した",
             "opponent": "対戦相手は{{value}}枚の{{cardName}}を使用した"
+        },
+        "excavate": {
+            "player": "発掘を{{totalExcavates}}回しました。次発掘するとレア度{{nextTier}}の宝物を入手します",
+            "opponent": "対戦相手は発掘を{{totalExcavates}}回しました。次発掘するとレア度{{nextTier}}の宝物を入手します"
+        },
+        "gardens-grace": {
+            "player": "次の {{cardName}}のコストは({{cost}})。({{spells}}枚、 {{spellsMana}}マナ分の神聖呪文を使用した)"
+        },
+        "tram-heist": {
+            "player": "対戦相手は前のターン{{value}}枚のカードを使用"
         }
     },
     "loading": {
@@ -2048,7 +2093,8 @@
         "unknown-mana-spell": "不明なコスト{{manaCost}}の呪文",
         "unknown-info": "不明な{{info}}",
         "unknown-big-minion": "不明なコスト{{cost}}+のミニオン",
-        "card-dredged-tooltip": "海底探査のカード"
+        "card-dredged-tooltip": "海底探査のカード",
+        "card-tooltip-scroll-text": "このウィンドウを開いたままにするには、\"Shift\"キーを押しながらマウスをカードから離します。\"Q\"キーを押すと閉じます"
     },
     "battlegrounds": {
         "menu": {
@@ -2302,14 +2348,16 @@
             "win-distribution-tooltip": "勝利数分布",
             "top-decks-header": "高勝利数デッキ ({{value}} デッキ)",
             "stats-period": "パッチ {{patchNumber}} での戦績 ({{patchDate}})",
-            "footer": "ヒーローカードから離れるときにShiftキーを押したままにしておくと、消えないようになります。"
+            "footer": "ヒーローカードから離れるときにShiftキーを押したままにしておくと、消えないようになります。",
+            "stats-period-time": "過去{{value}}日間の戦績"
         },
         "deck-select": {
-            "copy-deck-tooltip": "クリックしてコピー",
+            "copy-deck-tooltip": "ヒロイックにおいて、10勝以上を記録したデッキの表です。クリックするとデッキコードをコピーします",
             "copy-deck-tooltip-confirmation": "クリップボードにコピーしました。ハースストーンでインポートできます。",
             "personal-deck-text": "自分の最後のデッキ",
-            "explore-decks-tooltip": "一致するその他の高勝利数デッキを探す",
-            "build-deck-tooltip": "アプリのデッキ構築ヘルパーで自分のデッキを作る"
+            "explore-decks-tooltip": "ヒロイックデュエルにおいて、今と同じヒーロー/ヒーローパワー/愛用の宝物の組み合わせで、10勝以上を記録したデッキを探します",
+            "build-deck-tooltip": "アプリのデッキ構築ヘルパーで自分のデッキを作る",
+            "copy-personal-deck-tooltip": "あなたがこの組み合わせで行った最新の挑戦です。クリックするとデッキコードをコピーします"
         }
     },
     "session": {
@@ -2388,7 +2436,8 @@
             "mercenaries": "マーセナリーズ",
             "replays": "リプレイ",
             "collection": "コレクション",
-            "achievements": "実績"
+            "achievements": "実績",
+            "arena": "闘技場"
         },
         "general": {
             "menu": {
@@ -2729,7 +2778,8 @@
                     "earthen-golem-label": "「アースンのゴーレム」",
                     "earthen-golem-tooltip": "対戦相手が召喚した「アースンのゴーレム」の数を表示します",
                     "number-of-spells-tooltip": "対戦相手が呪文を使用した回数を表示します。呪文を1回以上を使用したときのみ表示されます",
-                    "chaotic-tendril-tooltip": "対戦相手が「混沌の触手」をプレイした回数を表示します"
+                    "chaotic-tendril-tooltip": "対戦相手が「混沌の触手」をプレイした回数を表示します",
+                    "excavate-tooltip": "対戦相手の、現在と最大値の発掘のレア度を表示します。カウンターにマウスオーバーすると、次回の発掘で入手可能なカードを表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -2808,7 +2858,15 @@
                     "chaotic-tendril-label": "「混沌の触手」",
                     "chaotic-tendril-tooltip": "「混沌の触手」をプレイした回数を表示します",
                     "secrets-label": "使用した秘策",
-                    "secrets-tooltip": "この試合中に秘策を使用した数を知ると得するカードを持っている場合、その数を表示します"
+                    "secrets-tooltip": "この試合中に秘策を使用した数を知ると得するカードを持っている場合、その数を表示します",
+                    "dragons-summoned-tooltip": "自分が召喚したドラゴンの数を表示します",
+                    "excavate-label": "発掘",
+                    "excavate-tooltip": "現在と最大値の発掘のレア度を表示します。カウンターにマウスオーバーすると、次回の発掘で入手可能なカードを表示します",
+                    "tram-heist-label": "「トラム強盗」",
+                    "tram-heist-tooltip": "{{cardName}}が手札にある時、対戦相手が前のターンに使ったカードを表示します",
+                    "gardens-grace-label": "「御苑の御意」",
+                    "dragons-summoned-label": "召喚したドラゴン",
+                    "gardens-grace-tooltip": "「御苑の御意」が手札かデッキにある場合、その実際のコスト(減った後のコスト)を表示します"
                 }
             },
             "duels": {
@@ -3048,6 +3106,20 @@
                 "general": "全般"
             },
             "empty-state": "まだ設定がありません"
+        },
+        "arena": {
+            "general": {
+                "show-draft-tracker-tooltip": "カード選択中にトラッカーを表示します。トラッカーは、カードにマウスオーバーした時にシナジーを強調表示します",
+                "show-card-selection-overlay-tooltip": "(プレミアムのみ)カードを選んでいる最中に詳細を表示します",
+                "show-hero-selection-overlay-tooltip": "(プレミアムのみ)ヒーロー選択中にその詳細を表示します",
+                "show-card-selection-overlay": "カード選択オーバーレイ",
+                "tracker-size": "ドラフトトラッカーのサイズ",
+                "show-hero-selection-overlay": "ヒーロー選択オーバーレイ",
+                "show-draft-tracker": "ドラフト中のトラッカー"
+            },
+            "menu": {
+                "general": "全般"
+            }
         }
     },
     "website": {
@@ -3174,14 +3246,14 @@
         "shaggro-priest": "影アグロプリースト",
         "thief-rogue": "泥棒ローグ",
         "tony-druid": "トニードルイド",
-        "uuu-plague-dk": "緑緑緑疫病デスナイト",
-        "uuu-undead-dk": "緑緑緑アンデッドデスナイト",
+        "uuu-plague-dk": "緑疫病デスナイト",
+        "uuu-undead-dk": "緑アンデッドデスナイト",
         "treant-druid": "トレントドルイド",
         "priest": "謎のプリースト",
         "rogue": "謎のローグ",
         "xl-abyssal-warlock": "XL呪いウォーロック",
-        "xl-bbb-death-knight": "XL赤赤赤デスナイト",
-        "xl-bbb-undead-dk": "XL緑緑緑アンデッドデスナイト",
+        "xl-bbb-death-knight": "XL赤デスナイト",
+        "xl-bbb-undead-dk": "XL緑アンデッドデスナイト",
         "xl-control-warlock": "XLコントロールウォーロック",
         "xl-druid": "XLドルイド",
         "xl-odyn-warrior": "XLオーディンウォリアー",
@@ -3191,11 +3263,11 @@
         "coc-rogue": "調合薬ローグ",
         "chadlock": "サディアスウォーロック",
         "automaton-priest": "自動人形プリースト",
-        "bbb-undead-dk": "赤赤赤アンデッドデスナイト",
+        "bbb-undead-dk": "赤アンデッドデスナイト",
         "big-beast-hunter": "ビッグ獣ハンター",
         "big-paladin": "ビッグパラディン",
         "elemental-mage": "エレメンタルメイジ",
-        "fff-undead-dk": "青青青アンデッドデスナイト",
+        "fff-undead-dk": "青アンデッドデスナイト",
         "hero-power-druid": "ヒロパドルイド",
         "ignis-druid": "イグニスドルイド",
         "implock": "インプロック",
@@ -3237,6 +3309,52 @@
         "'xl-shaggro-priest": "XL影アグロプリースト",
         "dude-paladin": "新兵パラディン",
         "fdos-shaman": "後生の軍勢シャーマン",
-        "xl-chadlock": "XLサディアスウォーロック"
+        "xl-chadlock": "XLサディアスウォーロック",
+        "highlander-paladin": "ハイランダーパラディン",
+        "ogre-rogue": "オーガローグ",
+        "xl-mage": "XLメイジ",
+        "elemental-shaman": "エレメンタルシャーマン",
+        "fff-excavate-dk": "青発掘デスナイト",
+        "highlander-dh": "ハイランダーデモハン",
+        "highlander-druid": "ハイランダードルイド",
+        "highlander-shaman": "ハイランダーシャーマン",
+        "xl-highlander-druid": "XLハイランダードルイド",
+        "xl-highlander-priest": "XLハイランダープリースト",
+        "drilling-rogue": "ドリリーローグ",
+        "highlander-hunter": "ハイランダーハンター",
+        "highlander-priest": "ハイランダープリースト",
+        "xl-bfu-excavate-dk": "XLレインボー発掘デスナイト",
+        "bfu-excavate-dk": "レインボー発掘デスナイト",
+        "xl-highlander-mage": "XLハイランダーメイジ",
+        "xl-highlander-paladin": "XLハイランダーパラディン",
+        "bfu-undead-dk": "レインボーアンデッドデスナイト",
+        "cleave-hunter": "ヨルムンガーハンター",
+        "xl-bbb-highlander-dk": "XL赤ハイランダーデスナイト",
+        "xl-excavate-warrior": "XL発掘ウォリアー",
+        "buu-highlander-dk": "赤緑緑ハイランダーデスナイト",
+        "beast-hunter": "獣ハンター",
+        "egg-hunter": "エッグハンター",
+        "excavate-mage": "発掘メイジ",
+        "highlander-warlock": "ハイランダーウォーロック",
+        "highlander-warrior": "ハイランダーウォリアー",
+        "xl-excavate-mage": "XL発掘メイジ",
+        "xl-highlander-shaman": "ZLハイランダーシャーマン",
+        "xl-highlander-warlock": "XLハイランダーウォーロック",
+        "xl-highlander-warrior": "XLハイランダーウォリアー",
+        "bbb-highlander-dk": "赤ハイランダーデスナイト",
+        "xl-fuu-highlander-dk": "XL青緑緑ハイランダーデスナイト",
+        "xl-bfu-highlander-dk": "XLレインボーハイランダーデスナイト",
+        "fuu-highlander-dk": "青緑緑ハイランダーデスナイト",
+        "fff-death-knight": "青デスナイト",
+        "xl-buu-highlander-dk": "XL赤緑緑ハイランダーデスナイト",
+        "bfu-highlander-dk": "レインボーハイランダーデスナイト",
+        "highlander-pure-paladin": "ハイランダーピュアパラディン",
+        "uuu-highlander-dk": "緑ハイランダーデスナイト",
+        "naga-demon-hunter": "ナーガデモハン",
+        "dragon-druid": "ドラゴンドルイド",
+        "xl-snek-warlock": "XLヘビウォーロック",
+        "snek-warlock": "ヘビウォーロック",
+        "coin-rogue": "コインローグ",
+        "xl-highlander-hunter": "XLハイランダーハンター"
     }
 }
