@@ -323,6 +323,9 @@
                 "tooltip-title": "标题",
                 "wins-label": "{{value}} 胜",
                 "wins-value": "占比 {{value}}%"
+            },
+            "filters": {
+                "time-patch": "补丁 {{value}}"
             }
         },
         "tray": {
@@ -361,7 +364,9 @@
         },
         "arena": {
             "menu": {
-                "my-runs": "我的轮次"
+                "my-runs": "我的轮次",
+                "card-stats": "卡牌数据",
+                "class-tier-list": "职业评级表"
             },
             "filters": {
                 "time": {
@@ -369,7 +374,8 @@
                     "past-seven": "最近7天内",
                     "last-patch": "最新补丁",
                     "past-100": "所有时段的数据",
-                    "past-30": "最近30天内"
+                    "past-30": "最近30天内",
+                    "past-20": "过去20天"
                 }
             },
             "stats": {
@@ -392,6 +398,25 @@
             "empty-state": {
                 "title": "暂无信息",
                 "subtitle": "快去玩一场竞技模式以开启记录"
+            },
+            "draft": {
+                "locked-premium-info-tooltip": "向所有用户开放第一张卡牌的选择数据。选择英雄和其他卡牌的数据仅对会员开放。点击打开订阅页面。",
+                "card-drawn-winrate": "抽到胜率",
+                "hero-tier": "等级",
+                "hero-winrate": "胜率",
+                "locked-premium-info": "订阅会员解锁数据"
+            },
+            "card-stats": {
+                "header-drawn-winrate": "抽到胜率",
+                "header-card-name": "卡牌名",
+                "header-drawn-total": "总抽到数"
+            },
+            "class-tier-list": {
+                "header-hero-name": "英雄名",
+                "tier": "T{{value}}",
+                "header-winrate": "胜率",
+                "header-placement-distribution": "胜率概况",
+                "header-placement-distribution-tooltip": "显示各职业的胜场与平均值的差值。 "
             }
         },
         "collection": {
@@ -1090,7 +1115,7 @@
                 "header-placement-distribution": "排名分布",
                 "header-combat-winrate": "战斗胜率",
                 "header-net-mmr": "MMR变化",
-                "header-tribes": "最优的随从类型",
+                "header-tribes": "随从类型影响",
                 "header-tribes-tooltip": "对这个英雄平均排名最有帮助的随从类型",
                 "tribe-info-tooltip": "在对局中有 {{ tribe }} 时，这个英雄的平均排名提升了 {{value}}",
                 "learn-more": "这个梯队是怎么计算出来的？",
@@ -1433,6 +1458,9 @@
                 },
                 "opponent": {
                     "all": "所有职业（对手）"
+                },
+                "opponent-search": {
+                    "placeholder": "搜索对手…"
                 }
             },
             "bg-stats": {
@@ -1633,7 +1661,7 @@
             "match-stats": {
                 "no-data": {
                     "arena": "开始竞技模式对战或启动炉石传说以查找你的数据",
-                    "battlegrounds": "进行酒馆战棋对战或启动炉石传说以查找你的数据",
+                    "battlegrounds": "启动炉石传说进行酒馆战棋对战以记录你的数据",
                     "title": "当前游戏模式下没有数据",
                     "duels": "开始对决模式对战或启动炉石传说并进入对决模式界面以查找你的数据",
                     "ranked": "开始天梯排名对战或启动炉石传说以查找你的数据"
@@ -1817,8 +1845,8 @@
             "player": "对手上回合使用了{{value}}张卡牌"
         },
         "excavate": {
-            "player": "你当前发掘等级为{{value}} / {{maxTier}}。当你发掘时，你将获得等级{{value}}的宝藏",
-            "opponent": "敌方当前发掘等级为{{value}} / {{maxTier}}。当敌方发掘时，他将获得等级{{value}}的宝藏"
+            "player": "你已发掘{{totalExcavates}}次。你下次发掘将获得等级{{nextTier}}的宝藏",
+            "opponent": "对手已发掘{{totalExcavates}}次。对手下次发掘将获得等级{{nextTier}}的宝藏"
         },
         "gardens-grace": {
             "player": "你的下一张{{cardName}}为{{cost}}费（本局游戏你已使用 {{spells}}个神圣法术，累计消耗{{spellsMana}}费）"
@@ -2408,7 +2436,8 @@
             "mercenaries": "佣兵战纪",
             "replays": "回放",
             "collection": "我的收藏",
-            "achievements": "成就"
+            "achievements": "成就",
+            "arena": "竞技模式"
         },
         "general": {
             "menu": {
@@ -3077,6 +3106,20 @@
                 "general": "通用"
             },
             "empty-state": "暂无设置选项"
+        },
+        "arena": {
+            "general": {
+                "show-card-selection-overlay-tooltip": "（会员专属）在选择卡牌时显示数据",
+                "show-hero-selection-overlay-tooltip": "（会员专属）在选择英雄时显示数据",
+                "show-card-selection-overlay": "选择卡牌浮窗",
+                "tracker-size": "竞技场抓牌器尺寸",
+                "show-hero-selection-overlay": "选择英雄浮窗",
+                "show-draft-tracker-tooltip": "当抓牌时显示记牌器，在鼠标停靠选项时高亮显示可配合的卡牌",
+                "show-draft-tracker": "抓牌时记牌器"
+            },
+            "menu": {
+                "general": "通用"
+            }
         }
     },
     "website": {
@@ -3298,6 +3341,27 @@
         "xl-highlander-priest": "40宇宙牧",
         "xl-bfu-excavate-dk": "40发掘彩虹DK",
         "xl-snek-warlock": "40发掘术",
-        "elemental-shaman": "元素萨"
+        "elemental-shaman": "元素萨",
+        "bbb-highlander-dk": "宇宙血DK",
+        "cleave-hunter": "狂战猎",
+        "highlander-warrior": "宇宙战",
+        "xl-bbb-highlander-dk": "40宇宙血DK",
+        "xl-highlander-warrior": "40宇宙战",
+        "buu-highlander-dk": "宇宙血邪DK",
+        "beast-hunter": "野兽猎",
+        "egg-hunter": "亡语蛋猎",
+        "excavate-mage": "发掘法",
+        "fuu-highlander-dk": "宇宙冰邪DK",
+        "fff-death-knight": "冰DK",
+        "highlander-pure-paladin": "宇宙光铸骑",
+        "highlander-warlock": "宇宙术",
+        "bfu-highlander-dk": "宇宙彩虹DK",
+        "uuu-highlander-dk": "宇宙邪DK",
+        "xl-buu-highlander-dk": "40宇宙血邪DK",
+        "xl-excavate-mage": "40发掘法",
+        "xl-fuu-highlander-dk": "40宇宙冰邪DK",
+        "xl-highlander-shaman": "40宇宙萨",
+        "xl-highlander-warlock": "40宇宙术",
+        "xl-bfu-highlander-dk": "40宇宙彩虹DK"
     }
 }
