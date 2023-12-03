@@ -415,7 +415,7 @@
                 "hero-tier": "Niveau",
                 "hero-winrate": "% victoires",
                 "card-drawn-winrate": "Taux de victoires quand la carte est piochée",
-                "locked-premium-info-tooltip": "Les stats de la première carte choisie sont disponibles pour tout le monde. Les stats sur les héros et héroïnes et sur les autres cartes ne sont disponibles que pour les membres Premium. Cliquez pour vous abonner !",
+                "locked-premium-info-tooltip": "Les stats de la première carte choisie sont disponibles pour tout le monde. Les stats sur les héros et héroïnes et sur les autres cartes ne sont disponibles que pour les membres Premium. Cliquez pour vous abonner, ou allez dans les paramètres pour désactiver ces boîtes d’information.",
                 "locked-premium-info": "Débloquer les stats Premium"
             }
         },
@@ -763,6 +763,9 @@
                 "sample-size-filter": "{{value}} parties",
                 "archetype-filter": {
                     "all": "Tous les archétypes"
+                },
+                "card-filter": {
+                    "all": "Sélectionnez des cartes"
                 }
             },
             "matchup-info": {
@@ -1418,7 +1421,7 @@
                 "empty-state-subtitle": "Complétez un haut fait pour démarrer votre historique !"
             },
             "search-placeholder": "Rechercher un haut fait...",
-            "pin-achievement-tooltip": "Épinglez ce haut fait pour suivre sa progression dans le jeu",
+            "pin-achievement-tooltip": "Épinglez ce haut fait pour suivre sa progression pendant que vous jouez",
             "pin-without-tracking-confirmation-text": "Vous épinglez un haut fait à suivre, mais le suivi en direct est désactivé. L’activer ?",
             "cancel-pin": "Ne pas épingler",
             "enable-live-tracking": "Activer"
@@ -1545,7 +1548,7 @@
             "contextual_related_cards": "Passez la souris sur certaines cartes dans le decktracker pour obtenir des informations sur ce qu’elles vont faire",
             "discover_highlight": "Passer la souris sur une carte pendant une découverte met en surbrillance les informations pertinentes dans votre deck",
             "guess_the_weight": "Certaines cartes bénéficient d’une aide contextuelle lors des découvertes",
-            "minion_play_order": "Le numéro en haut des serviteurs sur le plateau indique l’ordre d’invocation, ce qui correspond entre autres à l'ordre de résolution des Râles d’agonie",
+            "minion_play_order": "Les nombres sur les serviteurs du plateau indiquent l’ordre d’invocation, ce qui correspond entre autres à l'ordre de résolution des Râles d’agonie",
             "achievements_pick_for_me": "Vous pouvez laisser l’application choisir automatiquement 3 hauts faits à suivre",
             "lottery": "Vous pouvez participer à un tirage au sort mensuel pour gagner des abonnements Firestone Premium (activez-le à partir de Paramètres > Général > Loterie).",
             "deck_merge": "Vous pouvez fusionner un deck en tant que nouvelle version d'un autre en le faisant glisser sur l’ancienne version",
@@ -1554,8 +1557,8 @@
             "mercs_terasure_highlight": "Passer la souris sur un trésor dans Mercenaires met en surbrillance les synergies de votre groupe",
             "bg_tab_key": "Appuyez sur « Tab » pour avoir un aperçu rapide de la progression de tous les joueurs",
             "etc_buddies": "Lorsque vous jouez en tant qu’E.T.C., agent artistique, vous pouvez voir tous les compagnons que vous pouvez découvrir",
-            "bg_wisdomball": "Vous pouvez obtenir des conseils des meilleurs joueurs du jeu directement à partir de l’écran et adopter leurs stratégies",
-            "bg_hero_select": "Vous pouvez obtenir les stats de chaque personnage directement sur l’écran de sélection des héros et héroïnes",
+            "bg_wisdomball": "Vous pouvez obtenir des conseils des meilleurs joueurs en jeu directement depuis l’overlay et adopter leurs stratégies",
+            "bg_hero_select": "Vous pouvez obtenir les stats de chaque héros ou héroïne directement sur l’écran de sélection des héros et héroïnes",
             "quest_stats": "Le nombre moyen de tours pour terminer les quêtes, et la place moyenne liée à chaque récompense sont affichés directement dans l’overlay",
             "minion_auto_highlight": "Certains serviteurs sont des immanquables avec certains héros ou héroïnes (comme la parieuse convaincante avec Neunœil). Firestone les met automatiquement en surbrillance dans la taverne.",
             "minions_list_by_tribe": "Vous pouvez activer une option qui regroupe les serviteurs par type dans la liste des serviteurs. Cela vous permet également d’enlever le widget des types, ce qui libère de l’espace.",
@@ -1642,7 +1645,7 @@
                 "points-text": "Points totaux",
                 "sign-in-button-tooltip": "Vous devez vous connecter à votre compte Overwolf pour participer au tirage au sort de fin de saison. Vous pouvez toujours accumuler des points tant que vous ne vous connectez pas."
             },
-            "achievements-progress": "{{current}}/{{max}}, {{thisGame}} pendant cette partie",
+            "achievements-progress": "{{current}}/{{max}}, {{thisGame}} pendant cette partie",
             "overlay-toggle-tooltip": "Lier la fenêtre de loterie à la fenêtre de jeu, de façon à ce qu’elle soit toujours visible. Vous devriez utiliser cette option si la loterie se trouve sur le même écran que le jeu.",
             "opt-out-tooltip": "Cliquez ici pour désactiver complètement le widget de loterie. Vous pourrez le réactiver à tout moment dans Paramètres > Général > Loterie.",
             "tracking-ongoing-tooltip": "Suivi de la loterie en cours, vous accumulerez des points en jouant",
@@ -1652,8 +1655,8 @@
             "achievements-empty-state": "Parcourez la section Hauts faits de l’application et choisissez ceux que vous voulez suivre.",
             "achievements-pick-for-me-button-tooltip": "Laissez l’application choisir 3 hauts faits à suivre, en fonction de leur avancement",
             "achievements-pick-for-me-button": "Choix automatique",
-            "achievements-reset-button": "Réinit. le suivi",
-            "achievements-reset-button-tooltip": "Réinitialise le suivi de tous les hauts faits et les enlève de la fenêtre",
+            "achievements-reset-button": "Réinitialiser le suivi",
+            "achievements-reset-button-tooltip": "Réinitialise le suivi de tous les hauts faits et les retire de la fenêtre",
             "overlay-toggle-label": "Ancrer l’overlay",
             "achievements-not-in-game": "Lancez le jeu pour voir vos hauts faits épinglés."
         },
@@ -1701,8 +1704,10 @@
         },
         "bolner": "{{value}} est le premier Cri de guerre joué pendant ce tour",
         "multicaster": {
-            "player": "Vous avez utilisé les écoles de magie : {{schools}}",
-            "opponent": "Votre adversaire a utilisé les écoles de magie : {{schools}}"
+            "player": "Vous avez utilisé {{schools}} écoles de magie",
+            "opponent": "Votre adversaire a utilisé {{schools}} écoles de magie",
+            "opponent-new": "Écoles de sorts que votre adversaire a utilisées : {{schools}}",
+            "player-new": "Écoles de sorts que vous avez utilisées : {{schools}}"
         },
         "coral-keeper": {
             "player": "Vous invoquerez {{totalSummons}} élémentaires de corail. Écoles de sort jouées : {{schools}}"
@@ -2845,8 +2850,8 @@
                     "lady-darkvein-tooltip": "Quand vous avez Dame Sombreveine en main, affiche le dernier sort d’Ombre que vous avez lancé, s’il y en a un",
                     "grey-sage-parrot-label": "Perroquet gris cendré",
                     "grey-sage-parrot-tooltip": "Quand vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte ({{cost}}) cristaux ou plus que vous avez lancé, s’il y en a un",
-                    "multicaster-label": "Écoles de magie",
-                    "multicaster-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
+                    "multicaster-label": "Écoles de sorts",
+                    "multicaster-tooltip": "Afficher les écoles de sorts que vous avez utilisées pendant cette partie",
                     "coral-keeper-label": "Sentinelle des coraux",
                     "coral-keeper-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
                     "astral-automaton-tooltip": "Afficher le nombre d’automates astraux que vous avez invoqué pendant cette partie",
