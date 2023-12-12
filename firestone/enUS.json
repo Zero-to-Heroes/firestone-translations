@@ -250,7 +250,13 @@
 			"min-sec": "{{min}}:{{sec}} min",
 			"hrs-min": "{{hrs}} hours {{min}} min",
 			"min": "{{min}} min",
-			"sec": "{{sec}} s"
+			"sec": "{{sec}} s",
+			"ago": {
+				"less-than-an-hour-ago": "Less than an hour ago",
+				"hours-ago": "{{value}} hours ago",
+				"days-ago": "{{value}} days ago",
+				"weeks-ago": "{{value}} weeks ago"
+			}
 		},
 		"social": {
 			"discord": "Discord",
@@ -2595,18 +2601,18 @@
 				"discord-presence-tooltip": "Show that you use Firestone in Discord (it changes the default status from \"Playing Hearthstone\" to \"Playing HS with Firestone\")",
 				"advanced-config-title": "Advanced Config",
 				"activate-custom-in-game-text-label": "Custom in-game text",
-				"activate-custom-in-game-text-tooltip": "Customize the text that will appear when users click on your username",
+				"activate-custom-in-game-text-tooltip": "Customize the text that will appear when users click on your username and Hearthstone is running",
 				"activate-custom-in-match-text-label": "Custom in-match text",
 				"activate-custom-in-match-text-tooltip": "Customize the text that will appear when users click on your username and you're in a match",
 				"in-game-text-default-value": "In Game",
 				"in-game-text-in-match-default-value": "In a {mode} game",
 				"in-game-details": {
 					"text": "You can customize the text that is displayed when you are in a match. You can use the following placeholders:",
-					"text-2": "Need some more placeholder customization? Let me know on {{discordLink}}",
+					"text-2": "Need some more placeholder customization? Let me know on {{discordLink}}!",
 					"tokens": {
 						"mode": "The current mode (Ranked, Battlegrounds, etc.)",
 						"rank": "Your current rank in the mode (League + Rank in Ranked, MMR for Battlegrounds and Duels)",
-						"hero": "Your current hero "
+						"hero": "The full name of your current hero "
 					}
 				},
 				"in-game-text": {
