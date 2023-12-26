@@ -230,7 +230,8 @@
             "divine_shield": "Bouclier divin",
             "taunt": "Provocation",
             "end_of_turn": "Fin de tour",
-            "reborn": "Réincarnation"
+            "reborn": "Réincarnation",
+            "bg_spell": "Sort de taverne"
         },
         "legendary-minion": "Serviteur légendaire",
         "patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -251,7 +252,13 @@
             "min-sec": "{{min}} min {{sec}} s",
             "hrs-min": "{{hrs}} h {{min}} min",
             "min": "{{min}} min",
-            "sec": "{{sec}} s"
+            "sec": "{{sec}} s",
+            "ago": {
+                "less-than-an-hour-ago": "Il y a moins d’une heure",
+                "days-ago": "Il y a {{value}} jours",
+                "hours-ago": "Il y a {{value}} heures",
+                "weeks-ago": "Il y a {{value}} semaines"
+            }
         },
         "social": {
             "discord": "Discord",
@@ -918,7 +925,9 @@
                 },
                 "matchups-header": "Matchups",
                 "matchups-header-tooltip": "Afficher le taux de victoires contre toutes les autres classes. Les matchups entre archétypes seront ajoutés plus tard, restez à l’écoute :)",
-                "matchup-vs-tooltip": "VS {{className}}"
+                "matchup-vs-tooltip": "VS {{className}}",
+                "last-updated": "Dernière mise à jour",
+                "total-games": "Nb parties"
             }
         },
         "battlegrounds": {
@@ -1119,8 +1128,8 @@
                 "header-placement-distribution": "Distribution des places",
                 "header-combat-winrate": "% victoires en combat",
                 "header-net-mmr": "Gain de cote",
-                "header-tribes": "Impact des types",
-                "header-tribes-tooltip": "Les types qui ont le meilleur impact sur la position moyenne du héros ou de l’héroïne",
+                "header-tribes": "Types de la partie",
+                "header-tribes-tooltip": "Les types qui ont le meilleur impact sur la position moyenne du héros ou de l’héroïne lorsqu’ils sont dans la partie",
                 "tribe-info-tooltip": "Lorsqu’il y a des {{ tribe }} dans la taverne, la position moyenne du héros ou de l’héroïne est meilleure de {{value}} place",
                 "learn-more": "Comment ces données sont-elles calculées ?",
                 "header-group-difficulty-button-tooltip": "Regrouper les quêtes par nom, pour avoir une vue d’ensemble pour toutes les difficultés de quête",
@@ -1686,6 +1695,58 @@
                 "season": "Saison {{seasonNumber}}",
                 "start-date": "Commencée le {{startDate}}"
             }
+        },
+        "premium": {
+            "features": {
+                "params": {
+                    "epic": "« Épique »",
+                    "friend": "« Ami »",
+                    "premium": "« Premium »"
+                },
+                "premiumFeatures": "Fonctionnalités Premium",
+                "title": "Fonctionnalités",
+                "removeAds": "Supprimer les pubs",
+                "supportFirestone": "Soutenir Firestone",
+                "discordRole": "Rôle Discord « {{value}} »",
+                "prioritySupport": "Assistance prioritaire"
+            },
+            "auto-renew": "Actif et se renouvelle le {{ date }}",
+            "activate-discord-details": "Pour activer votre rôle Discord, veuillez entrer la commande suivante sur le serveur Discord de Firestone :",
+            "unsubscribe-button-tooltip-legacy": "Se désabonner du plan Héritage. Une fois le désabonnement effectué, ce plan n’apparaîtra plus dans la liste des plans disponibles, et vous devrez choisir l’un des nouveaux plans pour continuer à bénéficier des fonctionnalités Premium.",
+            "unsubscribe-modal": {
+                "text-legacy": "Le désabonnement met fin au renouvellement automatique de votre abonnement. Vous pourrez toujours utiliser les fonctionnalités Premium jusqu’à la fin de la période en cours. Remarque : le plan Héritage est obsolète, vous ne pourrez donc plus vous y réabonner.",
+                "cancel-button": "Continuer mon abonnement",
+                "title": "Se désabonner du plan {{plan}} ?",
+                "text": "Le désabonnement met fin au renouvellement automatique de votre abonnement. Vous pourrez toujours utiliser les fonctionnalités Premium jusqu’à la fin de la période en cours. L’application vous redirigera vers la page de paiement de Tebex pour y gérer vos abonnements, qui seront mis à jour dans l’application après quelques minutes.",
+                "unsubscribe-ongoing-label": "Désabonnement..."
+            },
+            "presubscribe-modal": {
+                "text": "L’application va vous rediriger vers la page de paiement de Tebex pour finaliser l’abonnement, qui s’ouvrira dans votre navigateur par défaut. Vous pourrez annuler votre abonnement à tout moment à partir de l'application.",
+                "title": "S’abonner au plan {{plan}}",
+                "cancel-button": "Annuler",
+                "subscribe-button": "C’est parti !"
+            },
+            "plan": {
+                "friend": "Ami",
+                "legacy": "Héritage",
+                "premium": "Premium",
+                "epic": "Épique"
+            },
+            "periodicity": {
+                "monthly": "Par mois",
+                "yearly": "Par an"
+            },
+            "legacy-plan-text": "Le plan Héritage est obsolète et cessera d’être pris en charge à un moment donné. Veuillez envisager de migrer vers un autre plan.",
+            "active-until": "Actif jusqu’au {{ date }} sans renouvellement",
+            "check-status-online": "Actif. Plus de détails {{link}}",
+            "activate-discord-details-copy-tooltip": "Cliquez pour copier dans le presse-papiers",
+            "subscribe-button-epic": "Passez à l’épique !",
+            "title": "Plans Premium",
+            "subscribe-button": "S’abonner",
+            "unsubscribe-button": "Se désabonner",
+            "unsubscribe-button-tooltip": "Se désabonner du plan actuel. Votre abonnement restera valable jusqu’à la fin de la période en cours et ne sera pas renouvelé automatiquement.",
+            "subscribe-button-upgrade": "Améliorer",
+            "check-status-online-link": "sur Tebex"
         }
     },
     "turn-timer": {
@@ -2456,7 +2517,8 @@
                 "quests": "Quêtes",
                 "mods": "Mods",
                 "data": "Données",
-                "lottery": "Loterie"
+                "lottery": "Loterie",
+                "discord": "Discord"
             },
             "mods": {
                 "title": "Mods",
@@ -2653,6 +2715,30 @@
                 "battlegrounds-tooltip": "Afficher les widgets de quête pour les missions de Champs de bataille en parties Champs de bataille et sur l’écran principal du mode",
                 "mercenaries-label": "Mercenaires",
                 "mercenaries-tooltip": "Afficher les widgets de tâches sur tous les écrans Mercenaires. Activer le widget Tâches supprimera le bouton Tâches de la liste du groupe."
+            },
+            "discord": {
+                "activate-custom-in-game-text-tooltip": "Personnalise le texte qui apparaîtra lorsque les utilisateurs cliqueront sur votre profil lorsque vous jouez à Hearthstone",
+                "discord-presence-tooltip": "Montrez que vous utilisez Firestone dans Discord (change le statut par défaut de « Joue à Hearthstone » à « Joue à HS avec Firestone »)",
+                "advanced-config-title": "Config. avancée",
+                "activate-custom-in-game-text-label": "Texte personnalisé (en jeu)",
+                "activate-custom-in-match-text-label": "Texte personnalisé (pendant une partie)",
+                "activate-custom-in-match-text-tooltip": "Personnalise le texte qui apparaîtra lorsque les utilisateurs cliqueront sur votre profil lorsque vous êtes dans une partie",
+                "in-game-text-default-value": "En jeu",
+                "in-game-text-in-match-default-value": "Dans une partie de {mode}",
+                "in-game-text": {
+                    "legend": "Légende {{rank}}",
+                    "league": "{{league}} {{rank}}",
+                    "mmr": "{{value}} de cote"
+                },
+                "in-game-details": {
+                    "text-2": "Besoin de plus de personnalisation ? Faites-le moi savoir sur {{discordLink}} !",
+                    "tokens": {
+                        "mode": "Le mode actuel (Partie classée, Champs de bataille, etc.)",
+                        "hero": "Le nom complet de votre héros ou héroïne ",
+                        "rank": "Votre rang actuel dans le mode (ligue + rang en Partie classée, cote pour Champs de bataille et Duels)"
+                    },
+                    "text": "Vous pouvez personnaliser le texte qui s’affiche lorsque vous êtes dans une partie. Vous pouvez utiliser les mots magiques suivants :"
+                }
             }
         },
         "decktracker": {
@@ -2702,7 +2788,9 @@
                 "reset-button-confirm": "Confirmer ?",
                 "reset-button-tooltip": "Réinitialiser la position du decktracker. Cela peut résoudre un problème où votre tracker ne s’affiche plus à l’écran",
                 "reset-button-confirmation": "Les positions du decktracker ont été réinitialisées, et seront appliquées lors de votre prochaine partie.",
-                "counters-size": "Taille des compteurs"
+                "counters-size": "Taille des compteurs",
+                "counters-use-expanded-view-label": "Vue élargie des compteurs",
+                "counters-use-expanded-view-tooltip": "Si l’option est disponible, les infobulles des compteurs afficheront les éléments sur des lignes séparées"
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
