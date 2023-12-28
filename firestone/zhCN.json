@@ -230,7 +230,8 @@
             "divine_shield": "圣盾",
             "taunt": "嘲讽",
             "end_of_turn": "回合结束",
-            "reborn": "复生"
+            "reborn": "复生",
+            "bg_spell": "酒馆法术"
         },
         "legendary-minion": "传说随从",
         "patch": "补丁 {{version}}.{{number}} 发布于{{date}}",
@@ -251,7 +252,13 @@
             "min-sec": "{{min}}:{{sec}}",
             "hrs-min": "{{hrs}} 小时 {{min}} 分钟",
             "min": "{{min}} 分钟",
-            "sec": "{{sec}} 秒"
+            "sec": "{{sec}} 秒",
+            "ago": {
+                "less-than-an-hour-ago": "少于一小时前",
+                "weeks-ago": "{{value}}周前",
+                "hours-ago": "{{value}}小时前",
+                "days-ago": "{{value}}天前"
+            }
         },
         "social": {
             "discord": "Discord",
@@ -918,7 +925,9 @@
                 "matchups-header-tooltip": "显示对阵其他所有职业的胜率。未来将会推出对阵各类套牌的情况，敬请期待:)",
                 "deck-type-header": "类型",
                 "card-stats-header-tooltip": "显示曾经从此类型套牌的核心卡牌中移除或添加的卡牌。点击套牌查看详情",
-                "matchup-vs-tooltip": "vs {{className}}"
+                "matchup-vs-tooltip": "vs {{className}}",
+                "last-updated": "最近更新",
+                "total-games": "总对局数"
             }
         },
         "battlegrounds": {
@@ -1119,8 +1128,8 @@
                 "header-placement-distribution": "排名分布",
                 "header-combat-winrate": "战斗胜率",
                 "header-net-mmr": "MMR变化",
-                "header-tribes": "随从类型影响",
-                "header-tribes-tooltip": "对这个英雄平均排名最有帮助的随从类型",
+                "header-tribes": "当前对局随从类型",
+                "header-tribes-tooltip": "当前对局中对这个英雄平均排名最有提升的随从类型",
                 "tribe-info-tooltip": "在对局中有 {{ tribe }} 时，这个英雄的平均排名提升了 {{value}}",
                 "learn-more": "这个梯队是怎么计算出来的？",
                 "header-average-turns-to-complete": "平均完成回合",
@@ -1686,6 +1695,58 @@
                 "season": "第{{seasonNumber}}赛季",
                 "start-date": "开始于{{startDate}}"
             }
+        },
+        "premium": {
+            "active-until": "生效中，将于{{ date }}到期，且不会自动续费",
+            "activate-discord-details-copy-tooltip": "点击复制到剪贴板",
+            "unsubscribe-button-tooltip": "取消当前订阅方案。你的订阅将持续生效至本次订阅结束，并将不会自动续订。",
+            "unsubscribe-modal": {
+                "text-legacy": "取消订阅将停止你的自动续订。你可在本次订阅结束前继续使用会员功能。请注意Legacy方案已经取消，所以你将无法在之后订阅这一方案。",
+                "text": "取消订阅将停止你的自动续订。你可在本次订阅结束前继续使用会员功能。你将会被带往Tebex结账页面管理你的订阅，应用内的订阅信息将会在几分钟后更新。",
+                "cancel-button": "持续订阅",
+                "title": "取消{{plan}}方案订阅？",
+                "unsubscribe-ongoing-label": "取消订阅…"
+            },
+            "auto-renew": "生效中，自动续费于{{ date }}",
+            "check-status-online": "生效中，点击{{link}}查看详情",
+            "features": {
+                "title": "特性",
+                "premiumFeatures": "Premium特性",
+                "prioritySupport": "优先支持",
+                "removeAds": "去除广告",
+                "supportFirestone": "支持Firestone",
+                "discordRole": "{{value}} Discord角色",
+                "params": {
+                    "epic": "\"Epic\"",
+                    "friend": "\"Friend\"",
+                    "premium": "\"Premium\""
+                }
+            },
+            "plan": {
+                "legacy": "Legacy",
+                "premium": "Premium",
+                "epic": "Epic",
+                "friend": "Friend"
+            },
+            "periodicity": {
+                "monthly": "每月",
+                "yearly": "每年"
+            },
+            "title": "Premium方案",
+            "legacy-plan-text": "Legacy方案已取消并将在未来某一时间点停止服务。请考虑迁移到其他方案",
+            "activate-discord-details": "要激活Discord角色，请在Firestone的Discord频道中输入下列命令：",
+            "check-status-online-link": "在Tebex上",
+            "presubscribe-modal": {
+                "cancel-button": "取消",
+                "title": "订阅{{plan}}方案",
+                "subscribe-button": "带我前往！",
+                "text": "你将被带往Tebex结账页面完成订阅，该页面会在你的默认浏览器中打开。你可以任意时间在应用中取消订阅。"
+            },
+            "subscribe-button": "订阅",
+            "unsubscribe-button": "取消订阅",
+            "unsubscribe-button-tooltip-legacy": "取消legacy方案订阅。一旦取消，这一方案将从可选的订阅方案中消失，且你必须选择一种新的方案继续享受会员功能。",
+            "subscribe-button-upgrade": "升级",
+            "subscribe-button-epic": "获取Epic！"
         }
     },
     "turn-timer": {
@@ -2456,7 +2517,8 @@
                 "quests": "任务",
                 "mods": "Mod",
                 "data": "数据",
-                "lottery": "抽奖"
+                "lottery": "抽奖",
+                "discord": "Discord"
             },
             "mods": {
                 "title": "Mod",
@@ -2653,6 +2715,31 @@
                 "battlegrounds-tooltip": "在酒馆战棋对战和其主界面中显示包含战棋任务的任务小部件",
                 "mercenaries-label": "佣兵战纪",
                 "mercenaries-tooltip": "在所有佣兵战纪界面中显示任务小部件。启用任务小部件将移除队伍列表中任务按钮。"
+            },
+            "discord": {
+                "advanced-config-title": "高级选项",
+                "activate-custom-in-game-text-label": "自定义“在游戏中”文本",
+                "activate-custom-in-match-text-label": "自定义“在比赛中”文本",
+                "activate-custom-in-game-text-tooltip": "自定义当你正在炉石传说游戏中，若用户点击你的用户名时显示的文本",
+                "activate-custom-in-match-text-tooltip": "自定义当你正在对战中，若用户点击你的用户名时显示的文本",
+                "discord-presence-label": "Discord个性状态",
+                "in-game-text-in-match-default-value": "In a {mode} game",
+                "in-game-details": {
+                    "text-2": "需要更多的占位符选项？通过{{discordLink}}让作者了解你的需求！",
+                    "tokens": {
+                        "mode": "当前模式（排名天梯、酒馆战棋等）",
+                        "hero": "你当前英雄的全名 ",
+                        "rank": "你在当前模式中的等级（天梯排名段位+等级，酒馆战棋或对决模式的等级分数）"
+                    },
+                    "text": "你可以自定义显示你正在对局中的文本。你可以使用下列占位符："
+                },
+                "discord-presence-tooltip": "在Discord上显示你正在游玩炉石传说（会将默认状态从“Playing Hearthstone”修改为\"Playing HS with Firestone\"）",
+                "in-game-text-default-value": "In Game",
+                "in-game-text": {
+                    "legend": "传说{{rank}}",
+                    "mmr": "{{value}} MMR",
+                    "league": "{{league}} {{rank}}"
+                }
             }
         },
         "decktracker": {
@@ -2702,7 +2789,9 @@
                 "reset-button-confirm": "您确定吗？",
                 "reset-button-tooltip": "重置记牌器位置。这可以解决您的记牌器无法显示在屏幕上的问题",
                 "reset-button-confirmation": "记牌器位置已经重置，并在下场对局中生效",
-                "counters-size": "计数器大小"
+                "counters-size": "计数器大小",
+                "counters-use-expanded-view-label": "计数器展开图",
+                "counters-use-expanded-view-tooltip": "启用时，计数器说明将会分行显示"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
