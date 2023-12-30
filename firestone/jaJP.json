@@ -230,7 +230,8 @@
             "divine_shield": "聖なる盾",
             "taunt": "挑発",
             "end_of_turn": "ターン終了時",
-            "reborn": "蘇り"
+            "reborn": "蘇り",
+            "bg_spell": "酒場の呪文"
         },
         "legendary-minion": "レジェンドミニオン",
         "patch": "パッチ{{version}}.{{number}} が{{date}} にリリース！",
@@ -251,7 +252,13 @@
             "min-sec": "{{min}}分{{sec}}秒",
             "hrs-min": "{{hrs}}時間{{min}}分",
             "min": "{{min}}分",
-            "sec": "{{sec}}秒"
+            "sec": "{{sec}}秒",
+            "ago": {
+                "less-than-an-hour-ago": "1時間弱前",
+                "days-ago": "{{value}}日前",
+                "hours-ago": "{{value}}時間前",
+                "weeks-ago": "{{value}}週間前"
+            }
         },
         "social": {
             "discord": "Discord",
@@ -918,7 +925,9 @@
                 },
                 "matchup-vs-tooltip": "vs{{className}}",
                 "matchups-header": "マッチアップ",
-                "matchups-header-tooltip": "他のクラスに対する勝率を表示します。アーキタイプ別マッチアップは将来的に実装予定です。お楽しみに:)"
+                "matchups-header-tooltip": "他のクラスに対する勝率を表示します。アーキタイプ別マッチアップは将来的に実装予定です。お楽しみに:)",
+                "last-updated": "前回のアップデート",
+                "total-games": "合計試合数"
             }
         },
         "battlegrounds": {
@@ -1119,8 +1128,8 @@
                 "header-placement-distribution": "順位分布",
                 "header-combat-winrate": "戦闘勝率",
                 "header-net-mmr": "Net MMR",
-                "header-tribes": "種族による影響",
-                "header-tribes-tooltip": "平均順位に最も寄与する種族",
+                "header-tribes": "出現する種族",
+                "header-tribes-tooltip": "試合に出現する時、そのヒーローの平均順位に最も寄与する種族",
                 "tribe-info-tooltip": "{{ tribe }} がロビーにいる場合、このヒーローの平均順位は {{value}} 上昇します。",
                 "learn-more": "このデータはどのように算出されますか？",
                 "header-average-turns-to-complete": "平均達成ターン",
@@ -1686,6 +1695,58 @@
                 "season": "シーズン{{seasonNumber}}",
                 "start-date": "{{startDate}}に開始"
             }
+        },
+        "premium": {
+            "active-until": "{{ date }}まで有効化し、自動更新はしない",
+            "activate-discord-details-copy-tooltip": "クリックするとクリップボードにコピーします",
+            "activate-discord-details": "Discordの役(role)を有効化したい場合、Discordサーバーで下記のコマンドを入力して下さい",
+            "unsubscribe-button-tooltip": "現在のサブスクリプションプランを解約します。サブスクリプションは終了期限まで有効のままで、自動更新は行われません",
+            "unsubscribe-modal": {
+                "text-legacy": "解約するとサブスクリプションの自動更新が停止します。契約したプランの終了期限までは、プレミアム機能を使うことができます。レガシープランは非推奨となっており、今後そのプランを再契約することはできませんのでご注意ください。",
+                "cancel-button": "サブスクリプションを継続",
+                "title": "{{plan}}プランを解約しますか？",
+                "text": "解約するとサブスクリプションの自動更新が停止します。契約したプランの終了期限までは、プレミアム機能を使うことができます。Tebexのチェックアウトページが表示されますので、そこでサブスクリプション契約の手続きを行ってください。契約後数分で、アプリがアップデートされます。",
+                "unsubscribe-ongoing-label": "解約中…"
+            },
+            "features": {
+                "params": {
+                    "epic": "\"エピック\"",
+                    "friend": "\"フレンド\"",
+                    "premium": "\"プレミアム\""
+                },
+                "title": "特徴",
+                "premiumFeatures": "プレミアムの特徴",
+                "prioritySupport": "優先的なサポート",
+                "supportFirestone": "Firestoneを支援する",
+                "removeAds": "広告を除去",
+                "discordRole": "{{value}} Discord の役(Role)"
+            },
+            "auto-renew": "有効化して{{ date }}に自動更新する",
+            "check-status-online": "有効。{{link}}で詳細を確認",
+            "plan": {
+                "epic": "エピック",
+                "friend": "フレンド",
+                "legacy": "レガシー",
+                "premium": "プレミアム"
+            },
+            "periodicity": {
+                "monthly": "一ヶ月あたり",
+                "yearly": "一年あたり"
+            },
+            "title": "プレミアムプラン",
+            "legacy-plan-text": "レガシープランは非推奨であり、将来のある時点でサポートを終了する予定です。他のプランへの移行をご検討ください。",
+            "check-status-online-link": "on Tabex",
+            "presubscribe-modal": {
+                "cancel-button": "キャンセル",
+                "title": "{{plan}}プランに加入する",
+                "subscribe-button": "参加する！",
+                "text": "サブスクを完了するために、デフォルトのブラウザでTebexのチェックアウトページが表示されます。アプリからいつでも契約をキャンセルすることができます。"
+            },
+            "subscribe-button": "サブスクライブ",
+            "unsubscribe-button": "サブスクを解約",
+            "unsubscribe-button-tooltip-legacy": "レガシープランを解約します。解約すると、このプランは利用可能なサブスクのプランとして表示されなくなります。プレミアム特典を有効にするには、新しいプランから選択する必要があります。",
+            "subscribe-button-upgrade": "アップグレード",
+            "subscribe-button-epic": "エピックになる！"
         }
     },
     "turn-timer": {
@@ -2456,7 +2517,8 @@
                 "quests": "クエスト",
                 "mods": "Mod",
                 "data": "データ",
-                "lottery": "抽選"
+                "lottery": "抽選",
+                "discord": "Discord"
             },
             "mods": {
                 "title": "Mod",
@@ -2653,6 +2715,31 @@
                 "battlegrounds-tooltip": "試合中とメイン画面で、バトルグラウンド用のクエストウィジェットを表示する",
                 "mercenaries-label": "マーセナリーズ",
                 "mercenaries-tooltip": "マーセナリーズの全ての場面で、仕事のウィジェットを表示します。それを起動すると、チームリスト画面から仕事確認ボタンが削除されます"
+            },
+            "discord": {
+                "advanced-config-title": "高度な設定",
+                "discord-presence-tooltip": "Firestoneを使っていることをDiscordで表示する(\"ハースストーンをプレイ中\"から\"Firestoneを使いながらハースストーンをプレイ中\"に変わります)",
+                "discord-presence-label": "Discordの表示名を変更",
+                "activate-custom-in-match-text-label": "試合中のテキストをカスタム",
+                "activate-custom-in-game-text-label": "ゲーム中のテキストをカスタム",
+                "activate-custom-in-game-text-tooltip": "ハースストーン起動中に、自身のユーザーネームをクリックした際に出てくるテキストをカスタマイズします",
+                "activate-custom-in-match-text-tooltip": "試合中に、自身のユーザーネームをクリックした際に出てくるテキストをカスタマイズします",
+                "in-game-text-default-value": "ゲーム内",
+                "in-game-details": {
+                    "tokens": {
+                        "mode": "現在のモード(構築戦、バトルグラウンド等)",
+                        "hero": "現在のヒーローのフルネーム ",
+                        "rank": "該当モードでのあなたの現在のランク(構築戦では段位+ランク、バトルグラウンドとデュエルではMMR)"
+                    },
+                    "text": "自分の試合中に表示される名前をカスタマイズできます。以下のプレースホルダー(placeholder)を利用可能",
+                    "text-2": "もっとプレースホルダー(placeholder)をカスタムしたい？Discordで教えてね {{discordLink}}!"
+                },
+                "in-game-text-in-match-default-value": "{mode}をプレイ中",
+                "in-game-text": {
+                    "legend": "レジェンド{{rank}}位",
+                    "league": "{{league}}{{rank}}",
+                    "mmr": "{{value}} MMR"
+                }
             }
         },
         "decktracker": {
@@ -2702,7 +2789,9 @@
                 "reset-button-confirm": "よろしいですか？",
                 "reset-button-tooltip": "デッキトラッカーの位置をリセットします。これにより、デッキトラッカーが画面に表示されなくなる不具合が解決する可能性があります。",
                 "reset-button-confirmation": "デッキトラッカーの位置がリセットされました。次の試合から適用されます",
-                "counters-size": "カウンターのサイズ"
+                "counters-size": "カウンターのサイズ",
+                "counters-use-expanded-view-tooltip": "該当する場合、カウンターのヒントは項目を別々の行に表示します。",
+                "counters-use-expanded-view-label": "カウンターの拡大表示"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
