@@ -100,7 +100,8 @@
             "caverns_of_time": "Grottes du Temps",
             "ulduar": "La chute d’Ulduar",
             "wild_west": "Rixe en terres Ingrates",
-            "wild_west2": "Rattrapage (Rixe en terres Ingrates)"
+            "wild_west2": "Rattrapage (Rixe en terres Ingrates)",
+            "deepholm": "Exploration du Tréfonds"
         },
         "pack": {
             "classic": "Classique",
@@ -384,6 +385,11 @@
                     "past-100": "Depuis toujours",
                     "past-30": "30 derniers jours",
                     "past-20": "20 derniers jours"
+                },
+                "card-type": {
+                    "all": "Tous les types de cartes",
+                    "legendary": "Légendaire",
+                    "treasure": "Trésor"
                 }
             },
             "stats": {
@@ -885,7 +891,10 @@
                     "view-details-button-tooltip": "Afficher les détails des cartes, et des stats plus approfondies (Premium uniquement)",
                     "view-decks-button-tooltip": "Afficher tous les decks de cet archétype",
                     "view-decks-button": "Afficher les decks",
-                    "no-data-empty-state-title": "Aucune donnée pour cette combinaison « deck / rang / période / format » n’a été trouvée"
+                    "no-data-empty-state-title": "Aucune donnée pour cette combinaison « deck / rang / période / format » n’a été trouvée",
+                    "archetype-core-cards-header-tooltip": "Cartes présentes dans la plupart des decks de cet archétype",
+                    "removed-cards-header-tooltip": "Cartes principales qui ne sont pas dans ce deck",
+                    "added-cards-header-tooltip": "Cartes qui sont dans ce deck mais pas dans les cartes principales"
                 },
                 "cards-header-tooltip": "Afficher quelles cartes ont été retirées ou ajoutées aux cartes de base de l’archétype. Cliquez sur un deck pour voir les détails",
                 "archetype-header": "Archétype",
@@ -1917,6 +1926,11 @@
         },
         "gardens-grace": {
             "player": "Votre prochaine carte {{cardName}} coûtera ({{cost}}) cristaux (pendant cette partie, vous avez joué {{spells}} sorts du Sacré, pour un total de {{spellsMana}} cristaux de mana)"
+        },
+        "bgs-gold-delta": {
+            "up-to": "(jusqu’à {{maxValue}})",
+            "player": "Vous obtiendrez {{valeur}} pièces d’or supplémentaires au prochain tour{{maxValueText}}, car vous avez joué les cartes suivantes pendant ce tour : {{cards}}",
+            "card": "{{cardName}} (× {{count}})"
         }
     },
     "loading": {
@@ -2111,7 +2125,9 @@
             "top-of-deck": "Dessus du deck",
             "in-hand": "En main",
             "other": "Autres",
-            "discard": "Défaussée"
+            "discard": "Défaussée",
+            "board": "Plateau",
+            "other-generated": "Autres (créées)"
         },
         "cards-in-hand-tooltip": "Cartes en main",
         "cards-left-in-deck-tooltip": "Cartes restantes dans le deck",
@@ -2161,7 +2177,8 @@
         "unknown-info": "{{info}} inconnu",
         "unknown-big-minion": "Serviteur inconnu de coût {{cost}}+",
         "card-dredged-tooltip": "Carte draguée",
-        "card-tooltip-scroll-text": "Maintenez la touche « Maj » tout en déplaçant la souris hors de la carte pour garder cette fenêtre ouverte et faire défiler les cartes. Appuyez sur « Q » pour la fermer."
+        "card-tooltip-scroll-text": "Maintenez la touche « Maj » tout en déplaçant la souris hors de la carte pour garder cette fenêtre ouverte et faire défiler les cartes. Appuyez sur « Q » pour la fermer.",
+        "unknown-mana-minion": "Serviteur inconnu à {{manaCost}} cristaux"
     },
     "battlegrounds": {
         "menu": {
@@ -2191,7 +2208,8 @@
                 "reason-secret": "Secrets",
                 "reason-pirate": "Forban + Baron / Khadgar",
                 "reason-festergut": "Pulentraille",
-                "bug": "Une erreur inconnue est survenue, un rapport de bug a été envoyé automatiquement aux développeurs"
+                "bug": "Une erreur inconnue est survenue, un rapport de bug a été envoyé automatiquement aux développeurs",
+                "reason-stitched": "Création de Putricide"
             },
             "result": {
                 "won": "victoire",
@@ -2337,10 +2355,10 @@
                 "buddies-tier-tooltip": "Voir tous les compagnons du jeu",
                 "highlight-tribe": "Cliquez pour mettre en valeur tous les serviteurs de type {{value}} dans la taverne",
                 "unhighlight-tribe": "Cliquez pour ne plus mettre en valeur les serviteurs de type {{value}} dans la taverne",
-                "highlight-mechanics": "Cliquez pour mettre en valeur tous les serviteurs avec {{value}} dans la taverne",
-                "unhighlight-mechanics": "Cliquez pour ne plus mettre en valeur les serviteurs avec {{value}} dans la taverne",
-                "highlight-minion": "Épingler ce serviteur pour le mettre en valeur dans la taverne",
-                "unhighlight-minion": "Désépingler ce serviteur pour ne plus le mettre en avant dans la taverne",
+                "highlight-mechanics": "Cliquez pour mettre en valeur toutes les cartes avec {{value}} dans la taverne",
+                "unhighlight-mechanics": "Cliquez pour ne plus mettre en valeur les cartes avec {{value}} dans la taverne",
+                "highlight-minion": "Épingler cette carte pour la mettre en valeur dans la taverne",
+                "unhighlight-minion": "Désépingler cette carte pour ne plus la mettre en avant dans la taverne",
                 "minion-banned-tooltip": "Ce serviteur est absent à cause de l’anomalie actuelle"
             },
             "quests": {
@@ -2590,9 +2608,9 @@
             "bug-report": {
                 "title": "Envoyer un commentaire / Signaler un bug",
                 "simulator-bug-text": "Si vous voulez signaler un bug avec le simulateur (et que vous voulez m’aider autant que possible), veuillez vérifier le mode d’emploi du simulateur",
-                "general-bug-text": "Pour les autres gros problèmes (application qui ne fonctionne pas), il y a quelques étapes utiles de dépannage",
+                "general-bug-text": "ATTENTION : vérifiez d’abord les étapes de dépannage",
                 "link-text": "ici",
-                "email-placeholder": "Votre courriel (facultatif)",
+                "email-placeholder": "Votre courriel (recommandé)",
                 "message-placeholder": "Votre message. Si vous signalez un bug, veuillez essayer de décrire ce que vous faisiez lorsque le bug est survenu, et ce qui s’est passé avant que vous signaliez ce bug.",
                 "send-button": "Envoyer",
                 "status-uploading-logs": "Envoi des infos récentes",
@@ -2790,7 +2808,11 @@
                 "reset-button-confirmation": "Les positions du decktracker ont été réinitialisées, et seront appliquées lors de votre prochaine partie.",
                 "counters-size": "Taille des compteurs",
                 "counters-use-expanded-view-label": "Vue élargie des compteurs",
-                "counters-use-expanded-view-tooltip": "Si l’option est disponible, les infobulles des compteurs afficheront les éléments sur des lignes séparées"
+                "counters-use-expanded-view-tooltip": "Si l’option est disponible, les infobulles des compteurs afficheront les éléments sur des lignes séparées",
+                "show-board-in-separate-zone-tooltip": "Déplace les cartes du plateau de la zone « Autres » vers une nouvelle zone repliable « Plateau ».",
+                "show-gifts-in-separate-zone-tooltip": "Déplace les cartes générées de la zone « Autres » vers une nouvelle zone repliable « Autres (créées) ».",
+                "show-board-in-separate-zone": "Afficher le plateau dans une zone séparée",
+                "show-gifts-in-separate-zone": "Afficher les cartes générées dans une zone séparée"
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
@@ -3123,7 +3145,9 @@
                 "minions-list-show-tribe-tiers-tooltip": "Ajoute des colonnes à la liste des serviteurs qui regroupent les serviteurs par type",
                 "minions-list-show-tribe-tiers-label": "Voir par type",
                 "minions-list-show-spells-at-bottom-label": "Afficher les sorts en bas",
-                "minions-list-show-spells-at-bottom-tooltip": "Afficher les sorts en bas de la decklist, plutôt qu’en haut"
+                "minions-list-show-spells-at-bottom-tooltip": "Afficher les sorts en bas de la decklist, plutôt qu’en haut",
+                "gold-delta-label": "Delta d’or",
+                "gold-delta-tooltip": "Affiche combien d’or vous aurez en plus ou en moins au prochain tour, en tenant compte des cartes comme Investissement prudent ou Artiste des mers du Sud."
             },
             "session-widget": {
                 "title": "Widget de session",
