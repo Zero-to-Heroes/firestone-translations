@@ -100,7 +100,8 @@
             "caverns_of_time": "时光之穴",
             "ulduar": "奥杜尔的陷落",
             "wild_west": "决战荒芜之地",
-            "wild_west2": "决战荒芜之地 追赶包"
+            "wild_west2": "决战荒芜之地 追赶包",
+            "deepholm": "深入深岩之洲"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -384,6 +385,11 @@
                     "past-100": "所有时段的数据",
                     "past-30": "最近30天内",
                     "past-20": "过去20天"
+                },
+                "card-type": {
+                    "legendary": "传说",
+                    "treasure": "竞技场宝藏牌",
+                    "all": "所有卡牌类型"
                 }
             },
             "stats": {
@@ -424,7 +430,8 @@
                 "tier": "T{{value}}",
                 "header-winrate": "胜率",
                 "header-placement-distribution": "胜率概况",
-                "header-placement-distribution-tooltip": "显示各职业的胜场与平均值的差值。 "
+                "header-placement-distribution-tooltip": "显示各职业的胜场与平均值的差值。 ",
+                "graph-placement-tooltip": "为全职业平均水平的{{value}}%"
             }
         },
         "collection": {
@@ -887,7 +894,10 @@
                     "view-details-button-tooltip": "查看卡牌强度等更深层次的数据细节（会员专属）",
                     "view-decks-button": "查看套牌",
                     "view-details-button": "查看详情",
-                    "no-data-empty-state-title": "我们没有此套牌/分段/时间/模式组合的数据"
+                    "no-data-empty-state-title": "我们没有此套牌/分段/时间/模式组合的数据",
+                    "archetype-core-cards-header-tooltip": "在此类型套牌的多数套牌中出现的卡牌",
+                    "removed-cards-header-tooltip": "不在套牌中的核心卡牌",
+                    "added-cards-header-tooltip": "套牌中的非核心卡牌"
                 },
                 "cards-header": "卡牌",
                 "class-header": "职业",
@@ -1544,7 +1554,7 @@
             "tip-0": "如果想要反馈、汇报Bug或者联系Firestone社区，请点击上方的Discord链接",
             "tip-1": "点击顶部的“帮助”图标查看应用的最新更新日志",
             "tip-2": "点击顶部的\"Bug\"图标报告错误或提交建议",
-            "tip-3": "如果您遇到了严重的错误（例如收藏无法同步，记牌器无法正常工作等），请尝试以管理员身份运行此应用。",
+            "tip-3": "如果您遇到了严重的错误（例如收藏无法同步，记牌器无法正常工作等），请尝试以管理员身份运行此应用，或检查您的网络状况（国内玩家可尝试更换host，或使用网络代理）。",
             "tip-4": "设置中有许多自定义选项，随心所欲去启用/停用某些功能",
             "tip-5": "[佣兵战纪] 调宽窗口查看“硬币数量”列",
             "tip-6": "[佣兵战纪] 在回放中勾选“佣兵战纪(PvP)”，可以查看每场对战的更多详细信息",
@@ -1917,6 +1927,11 @@
         },
         "gardens-grace": {
             "player": "你的下一张{{cardName}}为{{cost}}费（本局游戏你已使用 {{spells}}个神圣法术，累计消耗{{spellsMana}}费）"
+        },
+        "bgs-gold-delta": {
+            "player": "你将在下回合中额外获得{{value}}（~{{maxValueText}}）枚铸币，，因为你在本回合中使用了以下卡牌：{{cards}}",
+            "card": "{{cardName}} ({{count}}次)",
+            "up-to": "（不高于{{maxValue}}）"
         }
     },
     "loading": {
@@ -2111,7 +2126,9 @@
             "top-of-deck": "牌库顶",
             "in-hand": "手牌中",
             "other": "其他",
-            "discard": "弃牌"
+            "discard": "弃牌",
+            "board": "战场",
+            "other-generated": "其他（衍生）"
         },
         "cards-in-hand-tooltip": "手牌",
         "cards-left-in-deck-tooltip": "牌库",
@@ -2161,7 +2178,8 @@
         "unknown-info": "未知 {{info}}",
         "unknown-big-minion": "未知 {{cost}}+ 费随从",
         "card-dredged-tooltip": "被探底",
-        "card-tooltip-scroll-text": "按住“Shift”键可在鼠标离开卡牌时保持窗口开启并滚动卡牌。按“Q”关闭。"
+        "card-tooltip-scroll-text": "按住“Shift”键可在鼠标离开卡牌时保持窗口开启并滚动卡牌。按“Q”关闭。",
+        "unknown-mana-minion": "未知 {{manaCost}} 费随从"
     },
     "battlegrounds": {
         "menu": {
@@ -2191,7 +2209,8 @@
                 "reason-secret": "奥秘",
                 "reason-pirate": "跳操（海盗无赖+瑞文/卡德加）",
                 "reason-festergut": "暂未支持伙伴“烂肠”",
-                "bug": "出现未知错误，错误报告已自动发送给开发人员"
+                "bug": "出现未知错误，错误报告已自动发送给开发人员",
+                "reason-stitched": "普崔塞德的作品"
             },
             "result": {
                 "won": "胜",
@@ -2337,10 +2356,10 @@
                 "buddies-tier-tooltip": "查看所有战棋伙伴",
                 "highlight-tribe": "点击以高亮显示酒馆中所有的 {{value}}",
                 "unhighlight-tribe": "点击以取消突出显示酒馆中的 {{value}}",
-                "highlight-mechanics": "特殊标记{{value}}类型的随从",
-                "unhighlight-mechanics": "取消标记{{value}}类型的随从",
-                "highlight-minion": "特殊标记这个随从",
-                "unhighlight-minion": "取消标记这个随从",
+                "highlight-mechanics": "特殊标记{{value}}类型的卡牌",
+                "unhighlight-mechanics": "取消标记{{value}}类型的卡牌",
+                "highlight-minion": "在酒馆中特殊标记这张卡牌",
+                "unhighlight-minion": "在酒馆中取消标记这张卡牌",
                 "minion-banned-tooltip": "这个随从已在当前畸变被禁用。"
             },
             "quests": {
@@ -2590,7 +2609,7 @@
             "bug-report": {
                 "title": "发送反馈/报告错误",
                 "simulator-bug-text": "如果您想要报告模拟器的问题（并想帮助我们改善），请查看帮助",
-                "general-bug-text": "对于其他重大问题 (应用无法工作)，这里有一些有用的排障步骤",
+                "general-bug-text": "请首先参考：一些或许有用的排障步骤",
                 "link-text": "此处",
                 "email-placeholder": "您的电子邮箱（可选填）",
                 "message-placeholder": "您的消息，如果您提交了一个问题，请尝试描述下您在问题发生时做了什么，以及问题的具体情形。",
@@ -2791,7 +2810,11 @@
                 "reset-button-confirmation": "记牌器位置已经重置，并在下场对局中生效",
                 "counters-size": "计数器大小",
                 "counters-use-expanded-view-label": "计数器展开图",
-                "counters-use-expanded-view-tooltip": "启用时，计数器说明将会分行显示"
+                "counters-use-expanded-view-tooltip": "启用时，计数器说明将会分行显示",
+                "show-board-in-separate-zone-tooltip": "将当前战场上的卡牌从“其他”区移至可折叠的“战场”区",
+                "show-gifts-in-separate-zone-tooltip": "将衍生的卡牌从“其他”区移至可折叠的“其他（衍生）”区",
+                "show-board-in-separate-zone": "在单独分区显示战场上的卡牌",
+                "show-gifts-in-separate-zone": "在单独分区显示衍生（非初始牌库中的）卡牌"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -3124,7 +3147,9 @@
                 "minions-list-show-tribe-tiers-tooltip": "添加按种族分类的随从列表",
                 "minions-list-show-tribe-tiers-label": "显示种族评级",
                 "minions-list-show-spells-at-bottom-label": "在底部显示法术",
-                "minions-list-show-spells-at-bottom-tooltip": "在随从列表的底部显示法术，而不是在顶部"
+                "minions-list-show-spells-at-bottom-tooltip": "在随从列表的底部显示法术，而不是在顶部",
+                "gold-delta-label": "金三角",
+                "gold-delta-tooltip": "计算“慎重投资”、“南海卖艺者”等卡牌的效果，显示下回合你的铸币增减量"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
