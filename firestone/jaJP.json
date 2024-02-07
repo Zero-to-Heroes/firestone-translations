@@ -100,7 +100,8 @@
             "caverns_of_time": "時の大洞窟",
             "ulduar": "ウルドゥアーの興亡",
             "wild_west": "バッドランドの決斗",
-            "wild_west2": "バッドランドの決斗キャッチアップ"
+            "wild_west2": "バッドランドの決斗キャッチアップ",
+            "deepholm": "深層究明ディープホルム"
         },
         "pack": {
             "classic": "クラシック",
@@ -384,6 +385,11 @@
                     "past-100": "全期間",
                     "past-30": "過去30日間",
                     "past-20": "過去20日間"
+                },
+                "card-type": {
+                    "all": "全カードタイプ",
+                    "legendary": "レジェンド",
+                    "treasure": "宝物"
                 }
             },
             "stats": {
@@ -424,7 +430,8 @@
                 "header-placement-distribution-tooltip": "各クラスの勝利数が平均と比べてどの程度偏っているかを表します ",
                 "tier": "Tier {{value}}",
                 "header-winrate": "勝率",
-                "header-placement-distribution": "勝利時の詳細"
+                "header-placement-distribution": "勝利時の詳細",
+                "graph-placement-tooltip": "この合計勝利数{{value}}%は世界平均と同じ頻度です"
             }
         },
         "collection": {
@@ -886,7 +893,10 @@
                     "view-details-button": "詳細を見る",
                     "view-decks-button-tooltip": "このアーキタイプの全てのデッキを表示します",
                     "view-decks-button": "デッキを見る",
-                    "no-data-empty-state-title": "このデッキ/ランク/期間/フォーマットの組み合わせでは、データは見つけられませんでした"
+                    "no-data-empty-state-title": "このデッキ/ランク/期間/フォーマットの組み合わせでは、データは見つけられませんでした",
+                    "added-cards-header-tooltip": "このデッキに入っている、コアセット以外のカード",
+                    "archetype-core-cards-header-tooltip": "このアーキタイプのデッキの殆どに採用されているカード",
+                    "removed-cards-header-tooltip": "このデッキに入っていないコアカード"
                 },
                 "archetype-header": "アーキタイプ",
                 "cards-header": "カード",
@@ -1596,7 +1606,7 @@
                 "meta": "メタ"
             },
             "copy-deck-tooltip": "クリックして高勝率デッキのデッキコードをクリップボードにコピーします",
-            "with-name": "今週の酒場の喧嘩: {{name}} ( {{date}} に始まった)",
+            "with-name": "今週の酒場の喧嘩: {{name}} ( {{date}} に開始)",
             "no-name": "酒場の喧嘩 ({{date}} に開始!)",
             "non-buildable-warning-tooltip": "あなたが所持していないカードを必要とする、全てのトップデッキです"
         },
@@ -1917,6 +1927,11 @@
         },
         "tram-heist": {
             "player": "対戦相手は前のターン{{value}}枚のカードを使用"
+        },
+        "bgs-gold-delta": {
+            "player": "次のターン、追加で{{value}}ゴールドを得て{{maxValueText}}ゴールドになります。このターン以下のカードを使用したためです{{cards}}",
+            "up-to": "(最大 {{maxValue}})",
+            "card": "{{cardName}} (x{{count}})"
         }
     },
     "loading": {
@@ -2111,7 +2126,9 @@
             "top-of-deck": "デッキの一番上",
             "in-hand": "手札",
             "other": "その他",
-            "discard": "破棄"
+            "discard": "破棄",
+            "board": "盤面",
+            "other-generated": "その他(生成)"
         },
         "cards-in-hand-tooltip": "手に持っているカード",
         "cards-left-in-deck-tooltip": "デッキに残されたカード",
@@ -2161,7 +2178,8 @@
         "unknown-info": "不明な{{info}}",
         "unknown-big-minion": "不明なコスト{{cost}}+のミニオン",
         "card-dredged-tooltip": "海底探査のカード",
-        "card-tooltip-scroll-text": "このウィンドウを開いたままにするには、\"Shift\"キーを押しながらマウスをカードから離します。\"Q\"キーを押すと閉じます"
+        "card-tooltip-scroll-text": "このウィンドウを開いたままにするには、\"Shift\"キーを押しながらマウスをカードから離します。\"Q\"キーを押すと閉じます",
+        "unknown-mana-minion": "{{manaCost}}マナの不明なミニオン"
     },
     "battlegrounds": {
         "menu": {
@@ -2191,7 +2209,8 @@
                 "reason-secret": "秘密",
                 "reason-pirate": "海の荒くれ + バロン / カドガー",
                 "reason-festergut": "タダレハラワタ",
-                "bug": "不明なエラーが発生しました。開発者に自動的にバグが報告されました。"
+                "bug": "不明なエラーが発生しました。開発者に自動的にバグが報告されました。",
+                "reason-stitched": "アンデッド創造"
             },
             "result": {
                 "won": "勝ち",
@@ -2339,8 +2358,8 @@
                 "unhighlight-tribe": "クリックして酒場の{{value}}の強調表示を解除します",
                 "highlight-mechanics": "クリックして酒場の全ての{{value}}を強調表示します",
                 "unhighlight-mechanics": "クリックして酒場の{{value}}の強調表示を解除します",
-                "highlight-minion": "ピン留めして酒場のこのミニオンを強調表示します",
-                "unhighlight-minion": "ピン留めを外してこのミニオンの強調表示を解除します",
+                "highlight-minion": "ピン留めして酒場のこのカードを強調表示します",
+                "unhighlight-minion": "ピン留めを外してこのカードの強調表示を解除します",
                 "minion-banned-tooltip": "このミニオンは現在の異常では出現しません"
             },
             "quests": {
@@ -2590,9 +2609,9 @@
             "bug-report": {
                 "title": "フィードバックを送信 / バグを報告",
                 "simulator-bug-text": "シミュレーターのバグを報告したい場合 (そして可能な限り私を手助けしたい場合)、こちらで方法を確認してください",
-                "general-bug-text": "最初にトラブルシューティングの手順を確認してください",
+                "general-bug-text": "必ず、最初にトラブルシューティングの手順を確認してください",
                 "link-text": "こちら",
-                "email-placeholder": "あなたのメールアドレス (任意)",
+                "email-placeholder": "あなたのメールアドレス (推奨)",
                 "message-placeholder": "メッセージを入力。バグ報告の際は、何をしていてバグが起きたのか、どんなことが起こったのかなど、できるだけ詳しく説明してください。",
                 "send-button": "送信",
                 "status-uploading-logs": "ログファイルをアップロード",
@@ -2791,7 +2810,11 @@
                 "reset-button-confirmation": "デッキトラッカーの位置がリセットされました。次の試合から適用されます",
                 "counters-size": "カウンターのサイズ",
                 "counters-use-expanded-view-tooltip": "該当する場合、カウンターのヒントは項目を別々の行に表示します。",
-                "counters-use-expanded-view-label": "カウンターの拡大表示"
+                "counters-use-expanded-view-label": "カウンターの拡大表示",
+                "show-gifts-in-separate-zone-tooltip": "生成されたカードを、旧来の\"その他\"エリアではなく、新しい\"その他(生成)\"エリアで表示します",
+                "show-board-in-separate-zone-tooltip": "盤面にあるカードを、トラッカーの\"その他\"エリアではなく、\"盤面\"エリアで表示する",
+                "show-board-in-separate-zone": "盤面を専用エリアで表示",
+                "show-gifts-in-separate-zone": "生成カードを専用エリアで表示"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
@@ -3124,7 +3147,9 @@
                 "minions-list-show-tribe-tiers-tooltip": "種族によって分類されたミニオンリストの列を表示します",
                 "minions-list-show-tribe-tiers-label": "種族ごとに表示",
                 "minions-list-show-spells-at-bottom-label": "呪文を下部に表示",
-                "minions-list-show-spells-at-bottom-tooltip": "呪文のリストをミニオン一覧の上部に表示するかわりに、下部に表示します"
+                "minions-list-show-spells-at-bottom-tooltip": "呪文のリストをミニオン一覧の上部に表示するかわりに、下部に表示します",
+                "gold-delta-tooltip": "次のターン、「南海の大道芸人」や「慎重な投資」などで何ゴールド得/損するかを表示します",
+                "gold-delta-label": "ゴールド計算"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
