@@ -389,7 +389,16 @@
                 "card-type": {
                     "legendary": "传说",
                     "treasure": "竞技场宝藏牌",
-                    "all": "所有卡牌类型"
+                    "all": "所有卡牌类型",
+                    "other": "其他"
+                },
+                "card-class": {
+                    "all": "全部职业",
+                    "no-neutral": "排除中立卡牌",
+                    "neutral": "仅中立卡牌"
+                },
+                "hero-class": {
+                    "all": "全部职业英雄"
                 }
             },
             "stats": {
@@ -423,7 +432,14 @@
             "card-stats": {
                 "header-drawn-winrate": "抽到胜率",
                 "header-card-name": "卡牌名",
-                "header-drawn-total": "总抽到数"
+                "header-drawn-total": "总抽到数",
+                "header-pickrate": "选取率",
+                "header-pickrate-impact": "选取率变化",
+                "header-pickrate-high-wins-tooltip": "每轮选取率（{{value}}+胜）",
+                "header-pickrate-high-wins": "{{value}}+胜选取率",
+                "header-pickrate-impact-tooltip": "{{value}}+胜套牌对此卡牌的选取率差别，和此卡牌的平均选取率",
+                "header-offered-total": "提供总数",
+                "total-cards-drafted": "卡牌选取总数"
             },
             "class-tier-list": {
                 "header-hero-name": "英雄名",
@@ -432,6 +448,10 @@
                 "header-placement-distribution": "胜率概况",
                 "header-placement-distribution-tooltip": "显示各职业的胜场与平均值的差值。 ",
                 "graph-placement-tooltip": "为全职业平均水平的{{value}}%"
+            },
+            "deck-details": {
+                "picks-header": "抓牌选项",
+                "deck-summary-header": "轮次总览"
             }
         },
         "collection": {
@@ -924,7 +944,9 @@
                         "show-relative-info-button": "显示相关信息",
                         "show-relative-info-button-tooltip": "显示每张卡牌与此类套牌的相对胜率",
                         "copy-2-header-tooltip": "包含两张此卡牌的此套牌类型占比",
-                        "copy-1-header": "流行度"
+                        "copy-1-header": "流行度",
+                        "copy-per-deck-header-tooltip": "此类套牌中该卡牌的平均数量",
+                        "copy-per-deck-header": "每套牌平均携带"
                     },
                     "deck-type": "套牌列表",
                     "archetype-type": "套牌类型"
@@ -1929,9 +1951,12 @@
             "player": "你的下一张{{cardName}}为{{cost}}费（本局游戏你已使用 {{spells}}个神圣法术，累计消耗{{spellsMana}}费）"
         },
         "bgs-gold-delta": {
-            "player": "你将在下回合中额外获得{{value}}（~{{maxValueText}}）枚铸币，，因为你在本回合中使用了以下卡牌：{{cards}}",
+            "player": "你将在下回合中额外获得{{value}}（~{{maxValueText}}）枚铸币，因为你在本回合中使用了以下卡牌：{{cards}}",
             "card": "{{cardName}} ({{count}}次)",
-            "up-to": "（不高于{{maxValue}}）"
+            "up-to": "不高于{{maxValue}}"
+        },
+        "bgs-blood-gem": {
+            "player": "你的{{cardName}}可使随从+{{attack}}/+{{health}}"
         }
     },
     "loading": {
@@ -2179,7 +2204,19 @@
         "unknown-big-minion": "未知 {{cost}}+ 费随从",
         "card-dredged-tooltip": "被探底",
         "card-tooltip-scroll-text": "按住“Shift”键可在鼠标离开卡牌时保持窗口开启并滚动卡牌。按“Q”关闭。",
-        "unknown-mana-minion": "未知 {{manaCost}} 费随从"
+        "unknown-mana-minion": "未知 {{manaCost}} 费随从",
+        "overlay": {
+            "mulligan": {
+                "mulligan-impact-tooltip-premium": "起手调度保留此卡牌对你胜率的影响程度",
+                "mulligan-impact-tooltip-free": "起手调度保留此卡牌对你胜率的影响程度（今日剩余免费使用{{value}}次）",
+                "mulligan-impact": "起手调度影响",
+                "no-mulligan-data": "无数据",
+                "no-mulligan-data-tooltip": "暂无此类型套牌的起手调度数据",
+                "locked-premium-info-tooltip": "成为会员可查看你的套牌的详细调度数据。你每日可以免费使用此功能{{value}}次",
+                "deck-mulligan-overview-title": "卡牌起手调度总览",
+                "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs {{opponentClass}} | {{sampleSize}} 场对局"
+            }
+        }
     },
     "battlegrounds": {
         "menu": {
@@ -2768,7 +2805,8 @@
                 "opponent-deck": "敌方选项",
                 "turn-timer": "回合计时器",
                 "duels": "对决模式",
-                "launch": "启动选项"
+                "launch": "启动选项",
+                "mulligan": "起手调度"
             },
             "global": {
                 "title": "启用/停用功能",
@@ -2814,7 +2852,11 @@
                 "show-board-in-separate-zone-tooltip": "将当前战场上的卡牌从“其他”区移至可折叠的“战场”区",
                 "show-gifts-in-separate-zone-tooltip": "将衍生的卡牌从“其他”区移至可折叠的“其他（衍生）”区",
                 "show-board-in-separate-zone": "在单独分区显示战场上的卡牌",
-                "show-gifts-in-separate-zone": "在单独分区显示衍生（非初始牌库中的）卡牌"
+                "show-gifts-in-separate-zone": "在单独分区显示衍生（非初始牌库中的）卡牌",
+                "group-same-cards-tooltip": "将卡牌按卡牌编号分类，不论其被弃、死亡、摧毁或以非原始费用使用等。",
+                "group-same-cards": "将相同卡牌合并列出",
+                "show-plagues-on-top-tooltip": "在记牌器的“牌库”顶显示全部死亡骑士疫病，以便追踪它们",
+                "show-plagues-on-top": "在顶部显示疫病牌"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -3010,6 +3052,12 @@
                 "size-title": "小部件尺寸",
                 "opacity-title": "小部件透明度",
                 "width-title": "小部件宽度"
+            },
+            "mulligan": {
+                "show-mulligan-deck-overview-tooltip": "显示你套牌中的每张牌起手调度影响总览",
+                "show-mulligan-card-impact-label": "显示卡牌影响",
+                "show-mulligan-deck-overview-label": "显示套牌总览",
+                "show-mulligan-card-impact-tooltip": "显示你手牌中的卡牌对套牌胜率的影响"
             }
         },
         "collection": {
@@ -3149,7 +3197,11 @@
                 "minions-list-show-spells-at-bottom-label": "在底部显示法术",
                 "minions-list-show-spells-at-bottom-tooltip": "在随从列表的底部显示法术，而不是在顶部",
                 "gold-delta-label": "金三角",
-                "gold-delta-tooltip": "计算“慎重投资”、“南海卖艺者”等卡牌的效果，显示下回合你的铸币增减量"
+                "gold-delta-tooltip": "计算“慎重投资”、“南海卖艺者”等卡牌的效果，显示下回合你的铸币增减量",
+                "counter-blood-gem-label": "鲜血宝石",
+                "counter-blood-gem-tooltip": "显示你的鲜血宝石的攻/血增益",
+                "counter-gold-delta-tooltip": "显示你在下个回合的铸币增减量（计算慎重投资、南海卖艺者等卡牌效果)",
+                "counter-gold-delta-label": "铸币变化"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -3237,7 +3289,8 @@
                 "tracker-size": "竞技场抓牌器尺寸",
                 "show-hero-selection-overlay": "选择英雄浮窗",
                 "show-draft-tracker-tooltip": "当抓牌时显示记牌器，在鼠标停靠选项时高亮显示可配合的卡牌",
-                "show-draft-tracker": "抓牌时记牌器"
+                "show-draft-tracker": "抓牌时记牌器",
+                "draft-overlay-size": "抓牌器尺寸"
             },
             "menu": {
                 "general": "通用"
@@ -3484,6 +3537,20 @@
         "xl-fuu-highlander-dk": "40宇宙冰邪DK",
         "xl-highlander-shaman": "40宇宙萨",
         "xl-highlander-warlock": "40宇宙术",
-        "xl-bfu-highlander-dk": "40宇宙彩虹DK"
+        "xl-bfu-highlander-dk": "40宇宙彩虹DK",
+        "excavate-paladin": "发掘骑",
+        "sludge-warlock": "淤泥术",
+        "brann-warrior": "铜须战",
+        "rommath-mage": "罗曼斯法",
+        "topior-druid": "绿龙德",
+        "uuu-undead-death-knight": "亡灵邪DK",
+        "xl-drilling-rogue": "40发掘贼",
+        "xl-rommath-mage": "40罗曼斯法",
+        "xl-topior-druid": "40绿龙德",
+        "excavate-shaman": "发掘萨",
+        "excavate-warrior": "发掘战",
+        "highlander-rogue": "宇宙贼",
+        "naga-priest": "纳迦牧",
+        "xl-mill-druid": "40爆牌德"
     }
 }
