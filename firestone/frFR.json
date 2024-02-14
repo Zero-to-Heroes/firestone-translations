@@ -389,7 +389,16 @@
                 "card-type": {
                     "all": "Tous les types de cartes",
                     "legendary": "Légendaire",
-                    "treasure": "Trésor"
+                    "treasure": "Trésor",
+                    "other": "Autre"
+                },
+                "card-class": {
+                    "no-neutral": "Exclure les neutres",
+                    "neutral": "Neutres uniquement",
+                    "all": "Toutes classes de cartes"
+                },
+                "hero-class": {
+                    "all": "Toutes classes de héros"
                 }
             },
             "stats": {
@@ -416,7 +425,14 @@
             "card-stats": {
                 "header-drawn-winrate": "% vic. qd piochée",
                 "header-card-name": "Nom",
-                "header-drawn-total": "Nb de cartes piochées"
+                "header-drawn-total": "Nb de cartes piochées",
+                "header-pickrate": "% sélection",
+                "header-pickrate-impact": "Delta % sélection",
+                "header-pickrate-high-wins-tooltip": "Taux de sélection pour les virées avec au moins {{value}} victoires",
+                "header-pickrate-high-wins": "Taux de sélection {{value}}+ victoires",
+                "header-pickrate-impact-tooltip": "La différence de taux de sélection entre les virées avec au moins {{valeur}} victoires et le taux de sélection moyen pour cette carte",
+                "total-cards-drafted": "Nb total de cartes choisies",
+                "header-offered-total": "Nb total offert"
             },
             "class-tier-list": {
                 "header-placement-distribution-tooltip": "Indique à quel point une classe se détache des autres pour un nombre donné de victoires. ",
@@ -432,6 +448,10 @@
                 "card-drawn-winrate": "Taux de victoires quand la carte est piochée",
                 "locked-premium-info-tooltip": "Les stats de la première carte choisie sont disponibles pour tout le monde. Les stats sur les héros et héroïnes et sur les autres cartes ne sont disponibles que pour les membres Premium. Cliquez pour vous abonner, ou allez dans les paramètres pour désactiver ces boîtes d’information.",
                 "locked-premium-info": "Débloquer les stats Premium"
+            },
+            "deck-details": {
+                "picks-header": "Choix",
+                "deck-summary-header": "Aperçu de la virée"
             }
         },
         "collection": {
@@ -921,7 +941,9 @@
                         "copy-2-header-tooltip": "Pourcentage de decks de cet archétype qui incluent deux exemplaires de cette carte",
                         "copy-1-header": "Popularité",
                         "show-relative-info-button": "Afficher infos relatives",
-                        "show-relative-info-button-tooltip": "Afficher le taux de victoires de chaque carte par rapport à celui de l'archétype"
+                        "show-relative-info-button-tooltip": "Afficher le taux de victoires de chaque carte par rapport à celui de l'archétype",
+                        "copy-per-deck-header-tooltip": "Nombre moyen de copies de cette carte dans les decks de cet archétype",
+                        "copy-per-deck-header": "Nb moy. de copies"
                     },
                     "deck-type": "Deck"
                 },
@@ -1929,9 +1951,12 @@
             "player": "Votre prochaine carte {{cardName}} coûtera ({{cost}}) cristaux (pendant cette partie, vous avez joué {{spells}} sorts du Sacré, pour un total de {{spellsMana}} cristaux de mana)"
         },
         "bgs-gold-delta": {
-            "up-to": "(jusqu’à {{maxValue}})",
+            "up-to": "jusqu’à {{maxValue}}",
             "player": "Vous obtiendrez {{valeur}} pièces d’or supplémentaires au prochain tour{{maxValueText}}, car vous avez joué les cartes suivantes pendant ce tour : {{cards}}",
             "card": "{{cardName}} (× {{count}})"
+        },
+        "bgs-blood-gem": {
+            "player": "Vos cartes {{cardName}} donnent +{{attack}}/+{{health}}"
         }
     },
     "loading": {
@@ -2179,7 +2204,19 @@
         "unknown-big-minion": "Serviteur inconnu de coût {{cost}}+",
         "card-dredged-tooltip": "Carte draguée",
         "card-tooltip-scroll-text": "Maintenez la touche « Maj » tout en déplaçant la souris hors de la carte pour garder cette fenêtre ouverte et faire défiler les cartes. Appuyez sur « Q » pour la fermer.",
-        "unknown-mana-minion": "Serviteur inconnu à {{manaCost}} cristaux"
+        "unknown-mana-minion": "Serviteur inconnu à {{manaCost}} cristaux",
+        "overlay": {
+            "mulligan": {
+                "deck-mulligan-overview-title": "Aperçu du mulligan du deck",
+                "mulligan-impact-tooltip-premium": "L’impact de la présence de cette carte dans votre main de départ sur votre taux de victoires",
+                "mulligan-impact-tooltip-free": "L’impact de la présence de cette carte dans votre main de départ sur votre taux de victoires. (Vous avez encore {{value}} utilisations gratuites restantes aujourd’hui.)",
+                "mulligan-impact": "Impact sur le mulligan",
+                "no-mulligan-data": "Aucune donnée",
+                "no-mulligan-data-tooltip": "Aucune donnée de mulligan pour cet archétype",
+                "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs {{opponentClass}} | {{sampleSize}} parties",
+                "locked-premium-info-tooltip": "Devenez Premium pour voir les données détaillées du mulligan de votre deck. Vous pouvez utiliser cette fonctionnalité gratuitement {{value}} fois par jour."
+            }
+        }
     },
     "battlegrounds": {
         "menu": {
@@ -2767,7 +2804,8 @@
                 "opponent-deck": "Deck de l’adversaire",
                 "turn-timer": "Minuteur",
                 "duels": "Duels",
-                "launch": "Options de lancement"
+                "launch": "Options de lancement",
+                "mulligan": "Mulligan"
             },
             "global": {
                 "title": "Activer / désactiver des options",
@@ -2813,7 +2851,11 @@
                 "show-board-in-separate-zone-tooltip": "Déplace les cartes du plateau de la zone « Autres » vers une nouvelle zone repliable « Plateau ».",
                 "show-gifts-in-separate-zone-tooltip": "Déplace les cartes générées de la zone « Autres » vers une nouvelle zone repliable « Autres (créées) ».",
                 "show-board-in-separate-zone": "Afficher le plateau dans une zone séparée",
-                "show-gifts-in-separate-zone": "Afficher les cartes générées dans une zone séparée"
+                "show-gifts-in-separate-zone": "Afficher les cartes générées dans une zone séparée",
+                "group-same-cards-tooltip": "Regrouper toutes les cartes ayant le même ID, qu’elles aient été défaussées, détruites, brûlées, jouées avec un coût différent, etc.",
+                "group-same-cards": "Regrouper les cartes identiques",
+                "show-plagues-on-top": "Afficher les Pestes en haut du deck",
+                "show-plagues-on-top-tooltip": "Affichez tous les Pestes de chevalier de la mort en haut de votre deck pour une meilleure lecture."
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
@@ -3009,6 +3051,12 @@
                 "size-title": "Échelle du widget",
                 "opacity-title": "Opacité du widget",
                 "width-title": "Largeur du widget"
+            },
+            "mulligan": {
+                "show-mulligan-deck-overview-tooltip": "Afficher une vue d’ensemble de votre deck via l’impact sur le mulligan de chaque carte",
+                "show-mulligan-card-impact-label": "Afficher l’impact de la carte",
+                "show-mulligan-deck-overview-label": "Afficher l’aperçu du deck",
+                "show-mulligan-card-impact-tooltip": "Affiche l’impact de chaque carte de votre main sur le taux de victoires de votre deck"
             }
         },
         "collection": {
@@ -3148,7 +3196,11 @@
                 "minions-list-show-spells-at-bottom-label": "Afficher les sorts en bas",
                 "minions-list-show-spells-at-bottom-tooltip": "Afficher les sorts en bas de la decklist, plutôt qu’en haut",
                 "gold-delta-label": "Delta d’or",
-                "gold-delta-tooltip": "Affiche combien d’or vous aurez en plus ou en moins au prochain tour, en tenant compte des cartes comme Investissement prudent ou Artiste des mers du Sud."
+                "gold-delta-tooltip": "Affiche combien d’or vous aurez en plus ou en moins au prochain tour, en tenant compte des cartes comme Investissement prudent ou Artiste des mers du Sud.",
+                "counter-blood-gem-label": "Gemme de sang",
+                "counter-gold-delta-tooltip": "Indique combien d’or vous aurez en plus ou en moins au prochain tour après avoir pris en compte des cartes comme Investissement prudent ou Artiste des mers du Sud",
+                "counter-blood-gem-tooltip": "Afficher le buff de vos gemmes de sang",
+                "counter-gold-delta-label": "Delta d’or"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -3236,7 +3288,8 @@
                 "show-hero-selection-overlay-tooltip": "(Premium uniquement) Afficher les stats lors de la sélection du héros ou de l’héroïne",
                 "show-card-selection-overlay": "Overlay de choix des cartes",
                 "show-hero-selection-overlay": "Overlay de sélection des héros et héroïnes",
-                "show-draft-tracker": "Decktracker pendant le draft"
+                "show-draft-tracker": "Decktracker pendant le draft",
+                "draft-overlay-size": "Taille de l’overlay de draft"
             },
             "menu": {
                 "general": "Général"
@@ -3483,6 +3536,20 @@
         "xl-highlander-shaman": "Chaman singleton XL",
         "xl-highlander-warlock": "Démoniste singleton XL",
         "xl-highlander-warrior": "Guerrier singleton XL",
-        "xl-bfu-highlander-dk": "DK arc-en-ciel singleton XL"
+        "xl-bfu-highlander-dk": "DK arc-en-ciel singleton XL",
+        "sludge-warlock": "Démoniste tonneau",
+        "brann-warrior": "Guerrier Brann",
+        "excavate-paladin": "Paladin Déterrer",
+        "rommath-mage": "Mage Rommath",
+        "topior-druid": "Druide Topior",
+        "uuu-undead-death-knight": "DK impie Morts-vivants",
+        "xl-drilling-rogue": "Voleur Drilly XL",
+        "xl-rommath-mage": "Mage Rommath XL",
+        "xl-topior-druid": "Druide Topior XL",
+        "excavate-shaman": "Chaman Déterrer",
+        "excavate-warrior": "Guerrier Déterrer",
+        "highlander-rogue": "Voleur singleton",
+        "naga-priest": "Prêtre Nagas",
+        "xl-mill-druid": "Druide meule XL"
     }
 }
