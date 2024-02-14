@@ -389,7 +389,16 @@
                 "card-type": {
                     "all": "全カードタイプ",
                     "legendary": "レジェンド",
-                    "treasure": "宝物"
+                    "treasure": "宝物",
+                    "other": "その他"
+                },
+                "card-class": {
+                    "all": "全てのクラスカード",
+                    "no-neutral": "中立以外",
+                    "neutral": "中立のみ"
+                },
+                "hero-class": {
+                    "all": "全てのヒーロー"
                 }
             },
             "stats": {
@@ -423,7 +432,14 @@
             "card-stats": {
                 "header-drawn-winrate": "ドロー時勝率",
                 "header-card-name": "名前",
-                "header-drawn-total": "合計ドロー数"
+                "header-drawn-total": "合計ドロー数",
+                "total-cards-drafted": "合計ドラフトカード枚数",
+                "header-pickrate-impact": "ピック率変量",
+                "header-pickrate-impact-tooltip": "このカードの、少なくとも{{value}}勝した挑戦でのピック率と、平均的な挑戦でのピック率の差を表示します",
+                "header-offered-total": "合計提示数",
+                "header-pickrate": "ピック率",
+                "header-pickrate-high-wins-tooltip": "少なくとも{{value}}勝した挑戦でのピック率",
+                "header-pickrate-high-wins": "ピック率 ({{value}}+勝)"
             },
             "class-tier-list": {
                 "header-hero-name": "名前",
@@ -432,6 +448,10 @@
                 "header-winrate": "勝率",
                 "header-placement-distribution": "勝利時の詳細",
                 "graph-placement-tooltip": "この合計勝利数{{value}}%は世界平均と同じ頻度です"
+            },
+            "deck-details": {
+                "deck-summary-header": "挑戦概要",
+                "picks-header": "ドラフトピック"
             }
         },
         "collection": {
@@ -509,7 +529,7 @@
                 "signature-card": "シグネチャー・{{cardName}}"
             },
             "card-search": {
-                "search-box-placeholder": "検索カード",
+                "search-box-placeholder": "カードを検索...",
                 "search-box-tooltip": "検索では、次のキーワードを使用できます。text: (カード名だけなくテキストで検索)、name:、cards:all (コレクション不可カードを含む)、tribe: (種族) ",
                 "loading": "ロード中...",
                 "results-title": "{{value}} を検索中"
@@ -920,7 +940,9 @@
                         "copy-2-header-tooltip": "このアーキタイプのデッキに、このカードが2枚含まれている割合です",
                         "copy-1-header": "人気度",
                         "show-relative-info-button": "関連情報を表示",
-                        "show-relative-info-button-tooltip": "アーキタイプの勝率に対する各カードの勝率を表示します"
+                        "show-relative-info-button-tooltip": "アーキタイプの勝率に対する各カードの勝率を表示します",
+                        "copy-per-deck-header-tooltip": "このアーキタイプにおけるこのカードの平均枚数",
+                        "copy-per-deck-header": "平均枚数"
                     },
                     "archetype-type": "アーキタイプ",
                     "deck-type": "デッキリスト"
@@ -1930,8 +1952,11 @@
         },
         "bgs-gold-delta": {
             "player": "次のターン、追加で{{value}}ゴールドを得て{{maxValueText}}ゴールドになります。このターン以下のカードを使用したためです{{cards}}",
-            "up-to": "(最大 {{maxValue}})",
+            "up-to": "最大 {{maxValue}}",
             "card": "{{cardName}} (x{{count}})"
+        },
+        "bgs-blood-gem": {
+            "player": "｢{{cardName}}｣は+{{attack}}/+{{health}}を付与する"
         }
     },
     "loading": {
@@ -2127,7 +2152,7 @@
             "in-hand": "手札",
             "other": "その他",
             "discard": "破棄",
-            "board": "盤面",
+            "board": "陣地",
             "other-generated": "その他(生成)"
         },
         "cards-in-hand-tooltip": "手に持っているカード",
@@ -2179,7 +2204,19 @@
         "unknown-big-minion": "不明なコスト{{cost}}+のミニオン",
         "card-dredged-tooltip": "海底探査のカード",
         "card-tooltip-scroll-text": "このウィンドウを開いたままにするには、\"Shift\"キーを押しながらマウスをカードから離します。\"Q\"キーを押すと閉じます",
-        "unknown-mana-minion": "{{manaCost}}マナの不明なミニオン"
+        "unknown-mana-minion": "{{manaCost}}マナの不明なミニオン",
+        "overlay": {
+            "mulligan": {
+                "no-mulligan-data": "データなし",
+                "mulligan-impact": "マリガン効果",
+                "no-mulligan-data-tooltip": "このアーキタイプでのマリガンデータを発見できませんでした",
+                "deck-mulligan-overview-title": "デッキマリガン概要",
+                "mulligan-impact-tooltip-premium": "このカードを初手でキープすると、どれくらい勝率に影響するか",
+                "mulligan-impact-tooltip-free": "このカードを初手でキープすると、どれくらい勝率に影響するか。本日は、無料であと{{value}}回まで使用できます",
+                "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs {{opponentClass}} | {{sampleSize}} 試合",
+                "locked-premium-info-tooltip": "プレミアムになるとマリガンデータの詳細を見れます。毎日、無料で{{value}}回までこの機能を使えます"
+            }
+        }
     },
     "battlegrounds": {
         "menu": {
@@ -2768,7 +2805,8 @@
                 "opponent-deck": "対戦相手のデッキ",
                 "turn-timer": "ターンタイマー",
                 "duels": "デュエル",
-                "launch": "起動オプション"
+                "launch": "起動オプション",
+                "mulligan": "マリガン"
             },
             "global": {
                 "title": "機能の有効化/無効化",
@@ -2814,7 +2852,11 @@
                 "show-gifts-in-separate-zone-tooltip": "生成されたカードを、旧来の\"その他\"エリアではなく、新しい\"その他(生成)\"エリアで表示します",
                 "show-board-in-separate-zone-tooltip": "盤面にあるカードを、トラッカーの\"その他\"エリアではなく、\"盤面\"エリアで表示する",
                 "show-board-in-separate-zone": "盤面を専用エリアで表示",
-                "show-gifts-in-separate-zone": "生成カードを専用エリアで表示"
+                "show-gifts-in-separate-zone": "生成カードを専用エリアで表示",
+                "group-same-cards-tooltip": "同じカードならば、死亡した･破棄された･破壊された･異なるマナコストでプレイされたなどに関わらず、同じグループにまとめて表示します",
+                "group-same-cards": "同じカードのグループ化",
+                "show-plagues-on-top": "｢疫病｣を一番上に表示",
+                "show-plagues-on-top-tooltip": "デスナイトの全ての疫病カードをデッキの一番上に表示し、目で追いやすくします"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
@@ -3010,6 +3052,12 @@
                 "size-title": "ウィジェットのサイズ",
                 "opacity-title": "ウィジェットの不透明度",
                 "width-title": "ウィジェットの幅"
+            },
+            "mulligan": {
+                "show-mulligan-card-impact-label": "マリガン効果を表示",
+                "show-mulligan-deck-overview-label": "デッキ概要を表示",
+                "show-mulligan-card-impact-tooltip": "手札にあるカードがデッキ勝率に与える影響を表示します",
+                "show-mulligan-deck-overview-tooltip": "あなたのデッキの各カードのマリガン効果の概要を表示します"
             }
         },
         "collection": {
@@ -3149,7 +3197,11 @@
                 "minions-list-show-spells-at-bottom-label": "呪文を下部に表示",
                 "minions-list-show-spells-at-bottom-tooltip": "呪文のリストをミニオン一覧の上部に表示するかわりに、下部に表示します",
                 "gold-delta-tooltip": "次のターン、「南海の大道芸人」や「慎重な投資」などで何ゴールド得/損するかを表示します",
-                "gold-delta-label": "ゴールド計算"
+                "gold-delta-label": "ゴールド計算",
+                "counter-blood-gem-label": "血の宝石",
+                "counter-gold-delta-tooltip": "次のターン、｢慎重な投資｣や｢南海の大道芸人｣などの効果で、ゴールドがどのくらい増える/減るかを表示します",
+                "counter-blood-gem-tooltip": "自分の｢血の宝石｣が付与する値を表示します",
+                "counter-gold-delta-label": "ゴールド予測"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -3237,7 +3289,8 @@
                 "show-card-selection-overlay": "カード選択オーバーレイ",
                 "tracker-size": "ドラフトトラッカーのサイズ",
                 "show-hero-selection-overlay": "ヒーロー選択オーバーレイ",
-                "show-draft-tracker": "ドラフト中のトラッカー"
+                "show-draft-tracker": "ドラフト中のトラッカー",
+                "draft-overlay-size": "ドラフトオーバーレイサイズ"
             },
             "menu": {
                 "general": "全般"
@@ -3484,6 +3537,20 @@
         "oathbreaker-paladin": "Oathbreakerパラディン",
         "chadadin": "chadパラディン",
         "gaia-pure-paladin": "ガイアピュアパラディン",
-        "xl-gaia-paladin": "XLガイアパラディン"
+        "xl-gaia-paladin": "XLガイアパラディン",
+        "excavate-paladin": "発掘パラディン",
+        "sludge-warlock": "ヘドロウォーロック",
+        "xl-rommath-mage": "XLロンマスメイジ",
+        "brann-warrior": "ブランウォリアー",
+        "excavate-shaman": "発掘シャーマン",
+        "excavate-warrior": "発掘ウォリアー",
+        "highlander-rogue": "ハイランダーローグ",
+        "naga-priest": "ナーガプリースト",
+        "rommath-mage": "ロンマスメイジ",
+        "topior-druid": "トピアードルイド",
+        "uuu-undead-death-knight": "緑緑緑アンデッドデスナイト",
+        "xl-drilling-rogue": "XLドリルローグ",
+        "xl-mill-druid": "XLミルドルイド",
+        "xl-topior-druid": "XLトピアードルイド"
     }
 }
