@@ -101,7 +101,8 @@
             "ulduar": "奥杜尔的陷落",
             "wild_west": "决战荒芜之地",
             "wild_west2": "决战荒芜之地 追赶包",
-            "deepholm": "深入深岩之洲"
+            "deepholm": "深入深岩之洲",
+            "whizbangs_workshop": "威兹班的工坊"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -164,7 +165,9 @@
             "golden-caverns-of-time": "时光之穴 金色卡牌包",
             "caverns-of-time": "时光之穴 卡牌包",
             "wild-west": "决战荒芜之地 卡牌包",
-            "wild-west2": "决战荒芜之地 追赶包"
+            "wild-west2": "决战荒芜之地 追赶包",
+            "golden-whizbangs-workshop": "威兹班的工坊金色包",
+            "whizbangs-workshop": "威兹班的工坊"
         },
         "ranks": {
             "constructed": {
@@ -941,12 +944,18 @@
                         "card-header": "卡牌",
                         "mulligan-winrate-header": "起手胜率",
                         "copy-1-header-tooltip": "包含至少一张此卡牌的此类型套牌占比",
-                        "show-relative-info-button": "显示相关信息",
+                        "show-relative-info-button": "显示影响",
                         "show-relative-info-button-tooltip": "显示每张卡牌与此类套牌的相对胜率",
                         "copy-2-header-tooltip": "包含两张此卡牌的此套牌类型占比",
                         "copy-1-header": "流行度",
                         "copy-per-deck-header-tooltip": "此类套牌中该卡牌的平均数量",
-                        "copy-per-deck-header": "每套牌平均携带"
+                        "copy-per-deck-header": "每套牌平均携带",
+                        "mulligan-winrate-impact-header-tooltip": "当此卡牌在你的起手调度后的手牌中时，套牌的平均胜率变化",
+                        "drawn-winrate-impact-header-tooltip": "当此卡牌在对局中被抽到或出现在你的起手调度后的手牌中时，套牌的平均胜率变化",
+                        "drawn-winrate-header-tooltip": "当此卡牌在对局中被抽到或出现在你的起手调度后的手牌中时，套牌的平均胜率",
+                        "drawn-winrate-impact-header": "抽到影响",
+                        "drawn-winrate-header": "抽到胜率",
+                        "mulligan-winrate-impact-header": "起手影响"
                     },
                     "deck-type": "套牌列表",
                     "archetype-type": "套牌类型"
@@ -1827,7 +1836,8 @@
             "player": "你已使用过的随从类型数：{{value}}"
         },
         "corpse": {
-            "player": "本局对战中你已消耗尸体：{{value}}"
+            "player": "本局对战中你已消耗尸体：{{value}}",
+            "opponent": "对手本局对战已消耗尸体：{{value}}具"
         },
         "overdraft": {
             "player": "强行透支：{{value}}点伤害"
@@ -1957,6 +1967,9 @@
         },
         "bgs-blood-gem": {
             "player": "你的{{cardName}}可使随从+{{attack}}/+{{health}}"
+        },
+        "bgs-lord-of-gains": {
+            "player": "你本回合使用了{{value}}种不同的法术，分别为：{{cards}}"
         }
     },
     "loading": {
@@ -2401,7 +2414,29 @@
             },
             "quests": {
                 "turn-to-complete-tooltip": "当前分段的任务难度（数值越低越容易）：完成此任务平均需要{{averageTurnsToComplete}}回合，此英雄平均需要{{turnsToCompleteForHero}}回合，难度调整为{{turnsToCompleteImpact}}",
-                "reward-position-tooltip": "在当前分段里，选择这个任务的玩家平均的最终排名"
+                "reward-position-tooltip": "在当前分段里，选择这个任务的玩家平均的最终排名",
+                "reward": {
+                    "average-placement-global-tooltip": "全英雄平均最终名次",
+                    "average-placement-tooltip": "补丁后前{{value}}%玩家的奖励数据，计入全种族",
+                    "average-placement-hero-tooltip": "此英雄平均最终名次（总计{{value}}场）",
+                    "average-placement-global": "全局",
+                    "average-placement-hero": "英雄",
+                    "average-placement-header": "奖励平均位次"
+                },
+                "locked-premium-info-tooltip": "成为会员查看任务与奖励的详细数据。你每天可以免费使用此功能{{value}}次",
+                "quest": {
+                    "average-difficulty-header": "难度",
+                    "average-global-tooltip": "完成任务的回合数，计入所有难度",
+                    "average-difficulty-tooltip": "完成特定难度任务的回合数。总场数：{{value}}",
+                    "turns-to-complete-header-tooltip": "补丁后前{{value}}%玩家的任务数据，计入全种族",
+                    "turns-to-complete-header": "完成任务的回合数",
+                    "average-global-header": "全局",
+                    "average-hero-header": "英雄",
+                    "average-hero-tooltip": "此英雄完成任务的回合数，计入所有难度。总场数：{{value}}"
+                },
+                "sample-size": "总场数：",
+                "free-uses-tooltip": "你每天最多可以免费使用此功能{{max}}次，剩余{{left}}次",
+                "free-uses-text": "剩余{{value}}次"
             }
         },
         "post-match-stats": {
@@ -3201,7 +3236,10 @@
                 "counter-blood-gem-label": "鲜血宝石",
                 "counter-blood-gem-tooltip": "显示你的鲜血宝石的攻/血增益",
                 "counter-gold-delta-tooltip": "显示你在下个回合的铸币增减量（计算慎重投资、南海卖艺者等卡牌效果)",
-                "counter-gold-delta-label": "铸币变化"
+                "counter-gold-delta-label": "铸币变化",
+                "counter-lord-of-gains-tooltip": "显示本局对战中你使用了多少种不同的法术，及这些法术的名字",
+                "counter-lord-of-gains-label": "肌肉领主滑矛",
+                "quest-stats-title": "任务数据"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -3386,7 +3424,8 @@
         "language-auto-tooltip": "使用你在Twitch的语言设置",
         "language-auto": "自动",
         "cards-in-deck-player-tooltip": "你手牌中有{{cardsInHand}}张卡牌，牌库中有{{cardsInDeck}}张卡牌。",
-        "cards-in-deck-opponent-tooltip": "你对手手牌中有{{cardsInHand}}张卡牌，牌库中有{{cardsInDeck}}张卡牌。"
+        "cards-in-deck-opponent-tooltip": "你对手手牌中有{{cardsInHand}}张卡牌，牌库中有{{cardsInDeck}}张卡牌。",
+        "show-tracker": "显示记牌器"
     },
     "archetype": {
         "mech-rogue": "机械贼",
