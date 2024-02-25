@@ -943,7 +943,12 @@
                         "show-relative-info-button": "Afficher infos relatives",
                         "show-relative-info-button-tooltip": "Afficher le taux de victoires de chaque carte par rapport à celui de l'archétype",
                         "copy-per-deck-header-tooltip": "Nombre moyen de copies de cette carte dans les decks de cet archétype",
-                        "copy-per-deck-header": "Nb moy. de copies"
+                        "copy-per-deck-header": "Nb moy. de copies",
+                        "mulligan-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoire du jeu lorsque la carte commence dans votre main de départ à la fin du mulligan",
+                        "drawn-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du jeu lorsque la carte est piochée en cours de partie ou dans votre main de départ à la fin du mulligan",
+                        "drawn-winrate-header-tooltip": "Taux de victoires moyen lorsque la carte est piochée en cours de partie ou présente dans votre main de départ à la fin du mulligan",
+                        "drawn-winrate-impact-header": "Impact quand piochée",
+                        "drawn-winrate-header": "% victoires (piochée)"
                     },
                     "deck-type": "Deck"
                 },
@@ -2401,7 +2406,15 @@
             },
             "quests": {
                 "turn-to-complete-tooltip": "Nombre moyen de tours pour terminer cette quête avec ce héros ou cette héroïne, cette difficulté de quête (plus elle est faible, mieux c’est), et à cote similaire à la vôtre. En moyenne, il faut {{averageTurnsToComplete}} tours pour compléter la quête, {{turnsToCompleteForHero}} tours avec ce héros ou cette héroïne, et le modificateur de difficulté est de {{turnsToCompleteImpact}}.",
-                "reward-position-tooltip": "Position finale moyenne de tous les joueurs ayant choisi cette quête à cote similaire à la vôtre"
+                "reward-position-tooltip": "Position finale moyenne de tous les joueurs ayant choisi cette quête à cote similaire à la vôtre",
+                "reward": {
+                    "average-placement-global-tooltip": "Position finale moyenne (tous les héros)",
+                    "average-placement-hero-tooltip": "Position finale moyenne (ce héros). Nb parties : {{value}}"
+                },
+                "locked-premium-info-tooltip": "Devenez membre Premium pour voir les stats détaillées des quêtes et des récompenses. Vous pouvez utiliser cette fonctionnalité gratuitement {{value}} fois par jour.",
+                "quest": {
+                    "average-difficulty-header": "Difficulté"
+                }
             }
         },
         "post-match-stats": {
@@ -3200,7 +3213,8 @@
                 "counter-blood-gem-label": "Gemme de sang",
                 "counter-gold-delta-tooltip": "Indique combien d’or vous aurez en plus ou en moins au prochain tour après avoir pris en compte des cartes comme Investissement prudent ou Artiste des mers du Sud",
                 "counter-blood-gem-tooltip": "Afficher le buff de vos gemmes de sang",
-                "counter-gold-delta-label": "Delta d’or"
+                "counter-gold-delta-label": "Delta d’or",
+                "counter-lord-of-gains-tooltip": "Affiche le nombre de sorts différents que vous avez lancés cette partie, ainsi que leur nom"
             },
             "session-widget": {
                 "title": "Widget de session",
