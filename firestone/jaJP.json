@@ -101,7 +101,8 @@
             "ulduar": "ウルドゥアーの興亡",
             "wild_west": "バッドランドの決斗",
             "wild_west2": "バッドランドの決斗キャッチアップ",
-            "deepholm": "深層究明ディープホルム"
+            "deepholm": "深層究明ディープホルム",
+            "whizbangs_workshop": "ウィズバンのワクワクワークショップ"
         },
         "pack": {
             "classic": "クラシック",
@@ -164,7 +165,9 @@
             "caverns-of-time": "時の大洞窟",
             "golden-caverns-of-time": "ゴールデン・時の大洞窟",
             "wild-west": "バッドランドの決斗",
-            "wild-west2": "バッドランドの決斗キャッチアップ"
+            "wild-west2": "バッドランドの決斗キャッチアップ",
+            "golden-whizbangs-workshop": "ゴールデン･ウィズバンのワクワクワークショップ",
+            "whizbangs-workshop": "ウィズバンのワクワクワークショップ"
         },
         "ranks": {
             "constructed": {
@@ -939,10 +942,16 @@
                         "mulligan-winrate-header": "マリガン勝率",
                         "copy-2-header-tooltip": "このアーキタイプのデッキに、このカードが2枚含まれている割合です",
                         "copy-1-header": "人気度",
-                        "show-relative-info-button": "関連情報を表示",
+                        "show-relative-info-button": "影響を表示",
                         "show-relative-info-button-tooltip": "アーキタイプの勝率に対する各カードの勝率を表示します",
                         "copy-per-deck-header-tooltip": "このアーキタイプにおけるこのカードの平均枚数",
-                        "copy-per-deck-header": "平均枚数"
+                        "copy-per-deck-header": "平均枚数",
+                        "drawn-winrate-header-tooltip": "そのカードがマリガン終了時に手札にあるとき、またはゲーム中に引いたときのデッキ勝率",
+                        "drawn-winrate-header": "ドロー時勝率",
+                        "mulligan-winrate-impact-header-tooltip": "そのカードがマリガン終了時に手札にあるときの、デッキ勝率に対する平均勝率。",
+                        "drawn-winrate-impact-header": "ドロー影響",
+                        "mulligan-winrate-impact-header": "マリガン影響",
+                        "drawn-winrate-impact-header-tooltip": "そのカードがマリガン終了時に手札にあるとき、またはゲーム中に引いたときの、デッキ勝率に対する平均勝率。"
                     },
                     "archetype-type": "アーキタイプ",
                     "deck-type": "デッキリスト"
@@ -1827,7 +1836,8 @@
             "player": "この対戦で使用したミニオンの種族は{{value}}種類"
         },
         "corpse": {
-            "player": "この対戦で死体を{{value}}体消費した"
+            "player": "この対戦で死体を{{value}}体消費した",
+            "opponent": "対戦相手はこの試合で死体を{{value}}体消費した。"
         },
         "overdraft": {
             "player": "「焦げ付き」は{{value}}ダメージを与える"
@@ -1957,6 +1967,9 @@
         },
         "bgs-blood-gem": {
             "player": "｢{{cardName}}｣は+{{attack}}/+{{health}}を付与する"
+        },
+        "bgs-lord-of-gains": {
+            "player": "このターン、異なる呪文を{{value}}回唱えた。{{cards}}"
         }
     },
     "loading": {
@@ -2208,7 +2221,7 @@
         "overlay": {
             "mulligan": {
                 "no-mulligan-data": "データなし",
-                "mulligan-impact": "マリガン効果",
+                "mulligan-impact": "マリガン影響",
                 "no-mulligan-data-tooltip": "このアーキタイプでのマリガンデータを発見できませんでした",
                 "deck-mulligan-overview-title": "デッキマリガン概要",
                 "mulligan-impact-tooltip-premium": "このカードを初手でキープすると、どれくらい勝率に影響するか",
@@ -2401,7 +2414,29 @@
             },
             "quests": {
                 "turn-to-complete-tooltip": "あなたのMMR帯において、このヒーローとそのクエスト難易度で、このクエストを達成するための平均ターン数です(低いほど優れています)。このクエストの平均達成ターンは {{averageTurnsToComplete}}ターン、このヒーローの平均達成ターンは{{turnsToCompleteForHero}} ターン、難易度調整は{{turnsToCompleteImpact}}ターンです。",
-                "reward-position-tooltip": "あなたのMMR帯で、このクエストを選択した全てのプレイヤーの平均順位です"
+                "reward-position-tooltip": "あなたのMMR帯で、このクエストを選択した全てのプレイヤーの平均順位です",
+                "reward": {
+                    "average-placement-hero-tooltip": "このヒーローのみの平均最終順位。総試合数:{{value}}試合",
+                    "average-placement-global-tooltip": "全ヒーローを合わせた平均最終順位",
+                    "average-placement-global": "全体",
+                    "average-placement-hero": "ヒーロー",
+                    "average-placement-header": "報酬の平均順位",
+                    "average-placement-tooltip": "最新パッチにおける、全プレイヤー中トップ{{value}}%の、全ての種族を考慮した、報酬の統計です。"
+                },
+                "sample-size": "合計試合数：",
+                "quest": {
+                    "average-difficulty-header": "難易度",
+                    "turns-to-complete-header": "クエスト達成ターン数",
+                    "turns-to-complete-header-tooltip": "最新パッチにおける、全プレイヤー中トップ{{value}}%の、全ての種族を考慮した、クエストの統計です。",
+                    "average-difficulty-tooltip": "この難易度でのクエスト達成ターン数です。(試合数：{{value}})",
+                    "average-global-header": "全体",
+                    "average-hero-header": "ヒーロー",
+                    "average-global-tooltip": "全ての難易度を考慮したときの、クエスト達成までのターン数です",
+                    "average-hero-tooltip": "このヒーローでの、全ての難易度を考慮したときの、クエスト達成までのターン数です(試合数：{{value}})"
+                },
+                "locked-premium-info-tooltip": "プレミアムになるとクエストと報酬の詳細を見れます。毎日、無料で{{value}}回までこの機能を使えます",
+                "free-uses-tooltip": "毎日{{max}}回までこの機能を無料で使えます。今日はあと{{left}}回使えます。",
+                "free-uses-text": "残り{{value}}回"
             }
         },
         "post-match-stats": {
@@ -3054,10 +3089,10 @@
                 "width-title": "ウィジェットの幅"
             },
             "mulligan": {
-                "show-mulligan-card-impact-label": "マリガン効果を表示",
+                "show-mulligan-card-impact-label": "マリガン影響を表示",
                 "show-mulligan-deck-overview-label": "デッキ概要を表示",
                 "show-mulligan-card-impact-tooltip": "手札にあるカードがデッキ勝率に与える影響を表示します",
-                "show-mulligan-deck-overview-tooltip": "あなたのデッキの各カードのマリガン効果の概要を表示します"
+                "show-mulligan-deck-overview-tooltip": "あなたのデッキの各カードのマリガン影響の概要を表示します"
             }
         },
         "collection": {
@@ -3201,7 +3236,10 @@
                 "counter-blood-gem-label": "血の宝石",
                 "counter-gold-delta-tooltip": "次のターン、｢慎重な投資｣や｢南海の大道芸人｣などの効果で、ゴールドがどのくらい増える/減るかを表示します",
                 "counter-blood-gem-tooltip": "自分の｢血の宝石｣が付与する値を表示します",
-                "counter-gold-delta-label": "ゴールド予測"
+                "counter-gold-delta-label": "ゴールド予測",
+                "counter-lord-of-gains-label": "｢銭ゲバ・スリザースピア｣",
+                "counter-lord-of-gains-tooltip": "このゲーム中に異なるスペルを唱えた数と、その名前を表示します。",
+                "quest-stats-title": "クエスト統計"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -3386,7 +3424,8 @@
         "language": "言語",
         "language-auto-tooltip": "あなたが使っているTwitchと同じ言語を使用します",
         "cards-in-deck-player-tooltip": "デッキに{{cardsInDeck}}枚、ハンドに{{cardsInHand}}枚のカードがあります",
-        "cards-in-deck-opponent-tooltip": "対戦相手は、デッキに{{cardsInDeck}}枚、ハンドに{{cardsInHand}}枚のカードがあります"
+        "cards-in-deck-opponent-tooltip": "対戦相手は、デッキに{{cardsInDeck}}枚、ハンドに{{cardsInHand}}枚のカードがあります",
+        "show-tracker": "デッキトラッカーを表示"
     },
     "archetype": {
         "mech-rogue": "メカローグ",
