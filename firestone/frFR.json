@@ -101,7 +101,8 @@
             "ulduar": "La chute d’Ulduar",
             "wild_west": "Rixe en terres Ingrates",
             "wild_west2": "Rattrapage (Rixe en terres Ingrates)",
-            "deepholm": "Exploration du Tréfonds"
+            "deepholm": "Exploration du Tréfonds",
+            "whizbangs_workshop": "L’Atelier de Mystifix"
         },
         "pack": {
             "classic": "Classique",
@@ -164,7 +165,9 @@
             "caverns-of-time": "Grottes du Temps",
             "golden-caverns-of-time": "Grottes du Temps (Doré)",
             "wild-west": "Rixe en terres Ingrates",
-            "wild-west2": "Rattrapage (Rixe en terres Ingrates)"
+            "wild-west2": "Rattrapage (Rixe en terres Ingrates)",
+            "golden-whizbangs-workshop": "L’Atelier de Mystifix (Doré)",
+            "whizbangs-workshop": "L’Atelier de Mystifix"
         },
         "ranks": {
             "constructed": {
@@ -940,7 +943,7 @@
                         "copy-1-header-tooltip": "Pourcentage de decks de cet archétype qui incluent au moins un exemplaire de cette carte",
                         "copy-2-header-tooltip": "Pourcentage de decks de cet archétype qui incluent deux exemplaires de cette carte",
                         "copy-1-header": "Popularité",
-                        "show-relative-info-button": "Afficher infos relatives",
+                        "show-relative-info-button": "Afficher l’impact",
                         "show-relative-info-button-tooltip": "Afficher le taux de victoires de chaque carte par rapport à celui de l'archétype",
                         "copy-per-deck-header-tooltip": "Nombre moyen de copies de cette carte dans les decks de cet archétype",
                         "copy-per-deck-header": "Nb moy. de copies",
@@ -948,7 +951,8 @@
                         "drawn-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du jeu lorsque la carte est piochée en cours de partie ou dans votre main de départ à la fin du mulligan",
                         "drawn-winrate-header-tooltip": "Taux de victoires moyen lorsque la carte est piochée en cours de partie ou présente dans votre main de départ à la fin du mulligan",
                         "drawn-winrate-impact-header": "Impact quand piochée",
-                        "drawn-winrate-header": "% victoires (piochée)"
+                        "drawn-winrate-header": "% victoires (piochée)",
+                        "mulligan-winrate-impact-header": "Impact sur le mulligan"
                     },
                     "deck-type": "Deck"
                 },
@@ -1832,7 +1836,8 @@
             "player": "Pendant cette partie, vous avez joué des serviteurs des types suivants : {{value}}"
         },
         "corpse": {
-            "player": "Vous avez dépensé {{value}} cadavres pendant cette partie"
+            "player": "Vous avez dépensé {{value}} cadavres pendant cette partie",
+            "opponent": "Votre adversaire a dépensé {{value}} cadavres pendant cette partie"
         },
         "overdraft": {
             "player": "À découvert infligera {{value}} points de dégâts"
@@ -1962,6 +1967,12 @@
         },
         "bgs-blood-gem": {
             "player": "Vos cartes {{cardName}} donnent +{{attack}}/+{{health}}"
+        },
+        "bgs-lord-of-gains": {
+            "player": "Vous avez lancé {{value}} sorts différents pendant ce tour : {{cards}}"
+        },
+        "elemental-streak": {
+            "player": "Vous avez joué un Élémentaire {{value}} tours consécutifs"
         }
     },
     "loading": {
@@ -2409,12 +2420,26 @@
                 "reward-position-tooltip": "Position finale moyenne de tous les joueurs ayant choisi cette quête à cote similaire à la vôtre",
                 "reward": {
                     "average-placement-global-tooltip": "Position finale moyenne (tous les héros)",
-                    "average-placement-hero-tooltip": "Position finale moyenne (ce héros). Nb parties : {{value}}"
+                    "average-placement-hero-tooltip": "Position finale moyenne (ce héros). Nb parties : {{value}}",
+                    "average-placement-global": "Global",
+                    "average-placement-tooltip": "Stats de Récompense pour le top {{value}} % des joueurs depuis la dernière mise à jour, tous types confondus",
+                    "average-placement-hero": "Héros",
+                    "average-placement-header": "Place moy. de Récompense"
                 },
                 "locked-premium-info-tooltip": "Devenez membre Premium pour voir les stats détaillées des quêtes et des récompenses. Vous pouvez utiliser cette fonctionnalité gratuitement {{value}} fois par jour.",
                 "quest": {
-                    "average-difficulty-header": "Difficulté"
-                }
+                    "average-difficulty-header": "Difficulté",
+                    "average-global-header": "Global",
+                    "turns-to-complete-header-tooltip": "Stats de Quête pour le top {{value}} % des joueurs depuis la dernière mise à jour, tous types confondus",
+                    "turns-to-complete-header": "Tours de complétion de Quête",
+                    "average-global-tooltip": "Nombre de tours pour terminer la Quête en considérant chaque difficulté et chaque héros et héroïne",
+                    "average-difficulty-tooltip": "Nombre de tours pour terminer la Quête pour cette difficulté, en considérant chaque héros et héroïne. Nb parties : {{value}}",
+                    "average-hero-header": "Héros",
+                    "average-hero-tooltip": "Nombre de tours pour terminer la Quête pour ce héros ou cette héroïne spécifique, en considérant chaque difficulté. Nb parties : {{value}}"
+                },
+                "sample-size": "Nb parties :",
+                "free-uses-text": "Encore {{value}}",
+                "free-uses-tooltip": "Vous pouvez utiliser cette fonctionnalité gratuitement {{max}} fois par jour, et il vous reste {{left}} utilisations"
             }
         },
         "post-match-stats": {
@@ -2807,7 +2832,8 @@
                         "rank": "Votre rang actuel dans le mode (ligue + rang en Partie classée, cote pour Champs de bataille et Duels)"
                     },
                     "text": "Vous pouvez personnaliser le texte qui s’affiche lorsque vous êtes dans une partie. Vous pouvez utiliser les mots magiques suivants :"
-                }
+                },
+                "discord-presence-label": "Infos Discord détaillées"
             }
         },
         "decktracker": {
@@ -2992,7 +3018,7 @@
                     "menagerie-label": "Ménagerie",
                     "menagerie-tooltip": "Lorsque vous avez des cartes pertinentes (Amalgame instrumental, Rockeuse redoutable) dans votre main ou dans votre deck, affiche quels types de serviteurs vous avez déjà joués",
                     "corpse-spent-label": "Cadavres dépensés",
-                    "corpse-spent-tooltip": "Afficher un compteur avec le nombre total de cadavres dépensés si vous avez des cartes qui peuvent profiter de cette valeur exacte (par exemple Vive explosion nécrotique)",
+                    "corpse-spent-tooltip": "Afficher un compteur avec le nombre total de cadavres dépensés si vous avez des cartes qui bénéficient de cette valeur (par exemple Vive explosion nécrotique)",
                     "overdraft-label": "À découvert",
                     "overdraft-tooltip": "Affiche un compteur lorsque vous avez une carte À découvert en main ou dans votre deck, qui vous indique quel montant de dégâts elle va infliger",
                     "bonelord-frostwhisper-label": "Seigneur-des-ossements Murmegivre",
@@ -3038,7 +3064,9 @@
                     "gardens-grace-tooltip": "Afficher le coût réel (après réduction) des cartes Grâce des jardins lorsque vous en avez une dans votre main ou dans votre deck",
                     "dragons-summoned-tooltip": "Afficher le nombre Dragons que vous avez invoqués",
                     "excavate-tooltip": "Affiche vos niveaux actuels et maximum de trésors à déterrer. Lorsque vous passez la souris sur le compteur, affiche aussi les trésors que vous pourrez obtenir la prochaine fois que vous en déterrez un.",
-                    "tram-heist-label": "Braquage de wagonnets"
+                    "tram-heist-label": "Braquage de wagonnets",
+                    "elemental-streak-tooltip": "Compte le nombre de tours consécutifs où vous avez joué un Élémentaire.",
+                    "elemental-streak-label": "Élémentaires consécutifs"
                 }
             },
             "duels": {
@@ -3214,7 +3242,9 @@
                 "counter-gold-delta-tooltip": "Indique combien d’or vous aurez en plus ou en moins au prochain tour après avoir pris en compte des cartes comme Investissement prudent ou Artiste des mers du Sud",
                 "counter-blood-gem-tooltip": "Afficher le buff de vos gemmes de sang",
                 "counter-gold-delta-label": "Delta d’or",
-                "counter-lord-of-gains-tooltip": "Affiche le nombre de sorts différents que vous avez lancés cette partie, ainsi que leur nom"
+                "counter-lord-of-gains-tooltip": "Affiche le nombre de sorts différents que vous avez lancés cette partie, ainsi que leur nom",
+                "counter-lord-of-gains-label": "Seigneur des gains",
+                "quest-stats-title": "Stats de Quête"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -3399,7 +3429,8 @@
         "language-auto-tooltip": "Utilisez la langue de vos préférences Twitch",
         "language": "Langue",
         "cards-in-deck-opponent-tooltip": "Il y a {{cardsInDeck}} cartes dans le deck de votre adversaire et {{cardsInHand}} cartes dans sa main",
-        "cards-in-deck-player-tooltip": "Il y a {{cardsInDeck}} cartes dans votre deck et {{cardsInHand}} cartes dans votre main"
+        "cards-in-deck-player-tooltip": "Il y a {{cardsInDeck}} cartes dans votre deck et {{cardsInHand}} cartes dans votre main",
+        "show-tracker": "Afficher le decktracker"
     },
     "archetype": {
         "mech-rogue": "Voleur Méca",
