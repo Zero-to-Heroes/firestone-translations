@@ -378,7 +378,8 @@
             "menu": {
                 "my-runs": "自分の履歴",
                 "card-stats": "カード詳細",
-                "class-tier-list": "クラスTier表"
+                "class-tier-list": "クラスTier表",
+                "arena-top-runs": "高勝利数の挑戦"
             },
             "filters": {
                 "time": {
@@ -402,6 +403,9 @@
                 },
                 "hero-class": {
                     "all": "全てのヒーロー"
+                },
+                "high-win-runs": {
+                    "wins": "{{value}}勝以上"
                 }
             },
             "stats": {
@@ -419,7 +423,8 @@
                 "view-run-button": "挑戦を表示",
                 "minimize-run-button": "表示を最小化",
                 "run-name": "闘技場 {{value}} 勝",
-                "load-runs-button": "さらに読み込む"
+                "load-runs-button": "さらに読み込む",
+                "deck-score-tooltip": "これはあなたのデッキのスコアです。デッキ内の全てのカードのドロー時勝率を基に計算されています"
             },
             "empty-state": {
                 "title": "まだ何もありません",
@@ -430,7 +435,9 @@
                 "locked-premium-info": "プレミアムになって詳細をアンロック",
                 "card-drawn-winrate": "ドロー時勝率",
                 "hero-tier": "Tier",
-                "hero-winrate": "勝率"
+                "hero-winrate": "勝率",
+                "card-drawn-impact": "影響",
+                "card-drawn-impact-tooltip": "ドロー時影響は、クラス勝率と、そのカードを引いた際の勝率 ({{drawWinrate}}) の差を表します"
             },
             "card-stats": {
                 "header-drawn-winrate": "ドロー時勝率",
@@ -442,7 +449,15 @@
                 "header-offered-total": "合計提示数",
                 "header-pickrate": "ピック率",
                 "header-pickrate-high-wins-tooltip": "少なくとも{{value}}勝した挑戦でのピック率",
-                "header-pickrate-high-wins": "ピック率 ({{value}}+勝)"
+                "header-pickrate-high-wins": "ピック率 ({{value}}+勝)",
+                "header-pickrate-high-wins-short": "ピックレート {{value}}+",
+                "header-deck-winrate": "デッキ勝率",
+                "header-mulligan-winrate": "マリガン勝率",
+                "header-pickrate-tooltip": "ドラフト提示時にピックされる頻度を示します",
+                "header-drawn-winrate-tooltip": "このカードを引いた際の勝率を示します",
+                "header-mulligan-winrate-tooltip": "このカードが初期手札にあった際の平均勝率です",
+                "header-deck-winrate-tooltip": "このカードをデッキに含むときの勝率です",
+                "header-deck-total": "合計デッキ"
             },
             "class-tier-list": {
                 "header-hero-name": "名前",
@@ -2224,13 +2239,15 @@
         "overlay": {
             "mulligan": {
                 "no-mulligan-data": "データなし",
-                "mulligan-impact": "マリガン影響",
+                "mulligan-impact": "影響",
                 "no-mulligan-data-tooltip": "このアーキタイプでのマリガンデータを発見できませんでした",
                 "deck-mulligan-overview-title": "デッキマリガン概要",
                 "mulligan-impact-tooltip-premium": "このカードを初手でキープすると、どれくらい勝率に影響するか",
                 "mulligan-impact-tooltip-free": "このカードを初手でキープすると、どれくらい勝率に影響するか。本日は、無料であと{{value}}回まで使用できます",
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs {{opponentClass}} | {{sampleSize}} 試合",
-                "locked-premium-info-tooltip": "プレミアムになるとマリガンデータの詳細を見れます。毎日、無料で{{value}}回までこの機能を使えます"
+                "locked-premium-info-tooltip": "プレミアムになるとマリガンデータの詳細を見れます。毎日、無料で{{value}}回までこの機能を使えます",
+                "mulligan-keep-rate-tooltip": "このカードを初期手札で持てた際の勝率を示します",
+                "mulligan-keep-rate": "キープ"
             }
         }
     },
@@ -3097,7 +3114,8 @@
                 "show-mulligan-card-impact-label": "マリガン影響を表示",
                 "show-mulligan-deck-overview-label": "デッキ概要を表示",
                 "show-mulligan-card-impact-tooltip": "手札にあるカードがデッキ勝率に与える影響を表示します",
-                "show-mulligan-deck-overview-tooltip": "あなたのデッキの各カードのマリガン影響の概要を表示します"
+                "show-mulligan-deck-overview-tooltip": "あなたのデッキの各カードのマリガン影響の概要を表示します",
+                "size": "サイズ"
             }
         },
         "collection": {
@@ -3595,6 +3613,28 @@
         "uuu-undead-death-knight": "緑緑緑アンデッドデスナイト",
         "xl-drilling-rogue": "XLドリルローグ",
         "xl-mill-druid": "XLミルドルイド",
-        "xl-topior-druid": "XLトピアードルイド"
+        "xl-topior-druid": "XLトピアードルイド",
+        "beast-warrior": "獣ウォリアー",
+        "big-demon-warlock": "ビッグデーモンウォーロック",
+        "bu-death-knight": "赤緑デスナイト",
+        "cutlass-rogue": "カトラスローグ",
+        "cycle-odyn-warrior": "サイクルオーディンウォリアー",
+        "cycle-rogue": "サイクルローグ",
+        "f-warrior": "Fウォリアー",
+        "handlock": "ハンドロック",
+        "highlander-dk": "ハイランダーデスナイト",
+        "mech-warrior": "メカウォリアー",
+        "murloc-warrior": "マーロックウォリアー",
+        "mystery-egg-hunter": "ミステリーエッグハンター",
+        "owlonius-druid": "アウロニクスドルイド",
+        "bfu-rainbow-dk": "レインボーデスナイト",
+        "bffu-rainbow-dk": "レインボーデスナイト",
+        "bfuu-rainbow-dk": "レインボーデスナイト",
+        "spell-mage": "スペルメイジ",
+        "zarimi-priest": "ザリミプリースト",
+        "demon-hunter": "不明なデーモンハンター",
+        "bffuu-rainbow-dk": "レインボーデスナイト",
+        "riff-warrior": "リフウォリアー",
+        "weapon-dh": "武器デモハン"
     }
 }
