@@ -48,7 +48,10 @@
             "region_us": "アメリカ",
             "region_eu": "ヨーロッパ",
             "region_kr": "アジア太平洋",
-            "region_cn": "中国"
+            "region_cn": "中国",
+            "us": "アメリカ",
+            "ap": "アジア太平洋",
+            "eu": "ヨーロッパ"
         },
         "set": {
             "hero_skins": "-",
@@ -424,7 +427,7 @@
                 "minimize-run-button": "表示を最小化",
                 "run-name": "闘技場 {{value}} 勝",
                 "load-runs-button": "さらに読み込む",
-                "deck-score-tooltip": "これはあなたのデッキのスコアです。デッキ内の全てのカードのドロー時勝率を基に計算されています"
+                "deck-score-tooltip": "これはあなたのデッキのスコアです。デッキ内の全てのカードのデッキ勝率を基に計算されています"
             },
             "empty-state": {
                 "title": "まだ何もありません",
@@ -436,8 +439,10 @@
                 "card-drawn-winrate": "ドロー時勝率",
                 "hero-tier": "Tier",
                 "hero-winrate": "勝率",
-                "card-drawn-impact": "影響",
-                "card-drawn-impact-tooltip": "ドロー時影響は、クラス勝率と、そのカードを引いた際の勝率 ({{drawWinrate}}) の差を表します"
+                "card-drawn-impact": "ドロー影響力",
+                "card-drawn-impact-tooltip": "ドロー影響力は、クラス勝率と、そのカードを引いた際の勝率 ({{drawWinrate}}) の差を表します",
+                "card-deck-impact": "デッキ影響力",
+                "card-deck-impact-tooltip": "デッキ影響力は、クラス勝率と、そのカードがデッキにある際のデッキ勝率 ({{deckWinrate}})の差を表します"
             },
             "card-stats": {
                 "header-drawn-winrate": "ドロー時勝率",
@@ -957,15 +962,15 @@
                         "mulligan-winrate-header": "マリガン勝率",
                         "copy-2-header-tooltip": "このアーキタイプのデッキに、このカードが2枚含まれている割合です",
                         "copy-1-header": "人気度",
-                        "show-relative-info-button": "影響を表示",
+                        "show-relative-info-button": "影響力を表示",
                         "show-relative-info-button-tooltip": "アーキタイプの勝率に対する各カードの勝率を表示します",
                         "copy-per-deck-header-tooltip": "このアーキタイプにおけるこのカードの平均枚数",
                         "copy-per-deck-header": "平均枚数",
                         "drawn-winrate-header-tooltip": "そのカードがマリガン終了時に手札にあるとき、またはゲーム中に引いたときのデッキ勝率",
                         "drawn-winrate-header": "ドロー時勝率",
                         "mulligan-winrate-impact-header-tooltip": "そのカードがマリガン終了時に手札にあるときの、デッキ勝率に対する平均勝率。",
-                        "drawn-winrate-impact-header": "ドロー影響",
-                        "mulligan-winrate-impact-header": "マリガン影響",
+                        "drawn-winrate-impact-header": "ドロー影響力",
+                        "mulligan-winrate-impact-header": "マリガン影響力",
                         "drawn-winrate-impact-header-tooltip": "そのカードがマリガン終了時に手札にあるとき、またはゲーム中に引いたときの、デッキ勝率に対する平均勝率。"
                     },
                     "archetype-type": "アーキタイプ",
@@ -994,7 +999,8 @@
                 "rating": "レーティング",
                 "perfect-games": "完全試合",
                 "records": "ハイスコア",
-                "simulator": "シミュレーター"
+                "simulator": "シミュレーター",
+                "leaderboard": "リーダーボード"
             },
             "tribes": {
                 "beast": "獣",
@@ -1061,6 +1067,9 @@
                 "anomaly": {
                     "validation-error-tooltip": "任意の数の異常を選んでください",
                     "all-anomalies": "全ての異常"
+                },
+                "leaderboard": {
+                    "search-placeholder": "プレイヤーを検索…"
                 }
             },
             "personal-stats": {
@@ -1988,6 +1997,16 @@
         },
         "elemental-streak": {
             "player": "エレメンタルを連続{{value}}ターン使用中"
+        },
+        "cards-drawn": {
+            "player": "この対戦中に{{value}}枚のカードを引いた"
+        },
+        "thirsty-drifter": {
+            "player": "コスト1のカードを{{value}}枚使用した"
+        },
+        "wheel-of-death": {
+            "player": "あと{{value}}ターンで死ぬ！急げ！",
+            "opponent": "対戦相手は{{value}}ターンで死ぬ！耐え抜け！"
         }
     },
     "loading": {
@@ -2239,7 +2258,7 @@
         "overlay": {
             "mulligan": {
                 "no-mulligan-data": "データなし",
-                "mulligan-impact": "影響",
+                "mulligan-impact": "影響力",
                 "no-mulligan-data-tooltip": "このアーキタイプでのマリガンデータを発見できませんでした",
                 "deck-mulligan-overview-title": "デッキマリガン概要",
                 "mulligan-impact-tooltip-premium": "このカードを初手でキープすると、どれくらい勝率に影響するか",
@@ -2994,7 +3013,8 @@
                     "earthen-golem-tooltip": "対戦相手が召喚した「アースンのゴーレム」の数を表示します",
                     "number-of-spells-tooltip": "対戦相手が呪文を使用した回数を表示します。呪文を1回以上を使用したときのみ表示されます",
                     "chaotic-tendril-tooltip": "対戦相手が「混沌の触手」をプレイした回数を表示します",
-                    "excavate-tooltip": "対戦相手の、現在と最大値の発掘のレア度を表示します。カウンターにマウスオーバーすると、次回の発掘で入手可能なカードを表示します"
+                    "excavate-tooltip": "対戦相手の、現在と最大値の発掘のレア度を表示します。カウンターにマウスオーバーすると、次回の発掘で入手可能なカードを表示します",
+                    "wheel-of-death-tooltip": "対戦相手が{{cardName}}を使用した後、対戦相手が死ぬまでのターン数を表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3083,7 +3103,13 @@
                     "dragons-summoned-label": "召喚したドラゴン",
                     "gardens-grace-tooltip": "「御苑の御意」が手札かデッキにある場合、その実際のコスト(減った後のコスト)を表示します",
                     "elemental-streak-tooltip": "何ターン連続でエレメンタルを使用したかを表示します",
-                    "elemental-streak-label": "エレメンタル連続使用"
+                    "elemental-streak-label": "エレメンタル連続使用",
+                    "thirst-drifter-label": "「のどが渇いた流れ者」",
+                    "wheel-of-death-label": "「死の大車輪！！！」",
+                    "wheel-of-death-tooltip": "{{cardName}}を使用した後、自分が死ぬまでのターン数を表示します",
+                    "cards-drawn-label": "引いたカード",
+                    "thirst-drifter-tooltip": "「のどが渇いた流れ者」がデッキか手札にある場合、自分が使用したコスト1のカードの枚数を表示します",
+                    "cards-drawn-tooltip": "「{{cardName}}」が手札にある場合、このゲーム中に引いたカードの枚数を表示します"
                 }
             },
             "duels": {
@@ -3111,10 +3137,10 @@
                 "width-title": "ウィジェットの幅"
             },
             "mulligan": {
-                "show-mulligan-card-impact-label": "マリガン影響を表示",
+                "show-mulligan-card-impact-label": "マリガン影響力を表示",
                 "show-mulligan-deck-overview-label": "デッキ概要を表示",
                 "show-mulligan-card-impact-tooltip": "手札にあるカードがデッキ勝率に与える影響を表示します",
-                "show-mulligan-deck-overview-tooltip": "あなたのデッキの各カードのマリガン影響の概要を表示します",
+                "show-mulligan-deck-overview-tooltip": "あなたのデッキの各カードのマリガン影響力の概要を表示します",
                 "size": "サイズ"
             }
         },
@@ -3635,6 +3661,7 @@
         "demon-hunter": "不明なデーモンハンター",
         "bffuu-rainbow-dk": "レインボーデスナイト",
         "riff-warrior": "リフウォリアー",
-        "weapon-dh": "武器デモハン"
+        "weapon-dh": "武器デモハン",
+        "wheel-warlock": "大車輪ウォーロック"
     }
 }
