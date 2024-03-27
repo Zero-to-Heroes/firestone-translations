@@ -48,7 +48,10 @@
             "region_us": "美服",
             "region_eu": "欧服",
             "region_kr": "亚服",
-            "region_cn": "国服"
+            "region_cn": "国服",
+            "ap": "亚服",
+            "eu": "欧服",
+            "us": "美服"
         },
         "set": {
             "hero_skins": "-",
@@ -424,7 +427,7 @@
                 "minimize-run-button": "最小化视图",
                 "run-name": "竞技场 {{value}} 胜",
                 "load-runs-button": "点击加载更多轮次",
-                "deck-score-tooltip": "这是你的套牌分数，由你套牌中的所有卡牌的抽到胜率计算得到"
+                "deck-score-tooltip": "这是你的套牌分数，由你套牌中的所有卡牌的胜率计算得到"
             },
             "empty-state": {
                 "title": "暂无信息",
@@ -436,8 +439,10 @@
                 "hero-tier": "等级",
                 "hero-winrate": "胜率",
                 "locked-premium-info": "订阅会员解锁数据",
-                "card-drawn-impact": "影响",
-                "card-drawn-impact-tooltip": "抽到影响指卡牌抽到胜率（{{drawWinrate}}）与职业胜率的差值"
+                "card-drawn-impact": "抽到影响",
+                "card-drawn-impact-tooltip": "抽到影响指卡牌抽到胜率（{{drawWinrate}}）与职业胜率的差值",
+                "card-deck-impact": "对套牌影响",
+                "card-deck-impact-tooltip": "“对套牌影响”指单卡在套牌中的胜率与职业胜率的差值"
             },
             "card-stats": {
                 "header-drawn-winrate": "抽到胜率",
@@ -994,7 +999,8 @@
                 "rating": "等级",
                 "perfect-games": "精彩对局",
                 "records": "纪录",
-                "simulator": "模拟器"
+                "simulator": "模拟器",
+                "leaderboard": "排行榜"
             },
             "tribes": {
                 "beast": "野兽",
@@ -1061,6 +1067,9 @@
                 "anomaly": {
                     "all-anomalies": "全部畸变",
                     "validation-error-tooltip": "请选择畸变"
+                },
+                "leaderboard": {
+                    "search-placeholder": "搜索玩家…"
                 }
             },
             "personal-stats": {
@@ -1988,6 +1997,16 @@
         },
         "elemental-streak": {
             "player": "元素链连续回合数：{{value}}"
+        },
+        "thirsty-drifter": {
+            "player": "你已使用过{{value}}张(1)费牌"
+        },
+        "wheel-of-death": {
+            "player": "你的生命已如风中残烛，仅剩{{value}}个回合！",
+            "opponent": "你的对手即将油尽灯枯，再坚守{{value}}个回合！"
+        },
+        "cards-drawn": {
+            "player": "本局对战中你已抽取{{value}}张牌"
         }
     },
     "loading": {
@@ -2994,7 +3013,8 @@
                     "earthen-golem-tooltip": "显示对手已召唤的“土灵魔像”数量",
                     "chaotic-tendril-tooltip": "显示你对手已使用的“混乱触须”数量",
                     "number-of-spells-tooltip": "显示你对手使用过的最后一个法术。仅在对手使用过法术时显示。",
-                    "excavate-tooltip": "显示敌方当前和最多可发掘的等级，并在你的鼠标移至计数器时显示敌方可获得的下一等级的发掘宝藏"
+                    "excavate-tooltip": "显示敌方当前和最多可发掘的等级，并在你的鼠标移至计数器时显示敌方可获得的下一等级的发掘宝藏",
+                    "wheel-of-death-tooltip": "在你的对手使用{{cardName}}后，显示你的对手死亡前的剩余回合数"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3083,7 +3103,13 @@
                     "dragons-summoned-tooltip": "显示你已召唤的龙的数量",
                     "excavate-tooltip": "显示你当前和最多可发掘的等级，并在你的鼠标移至计数器时显示你可获得的下一等级的发掘宝藏",
                     "elemental-streak-tooltip": "记录你使用过元素牌的连续的回合。",
-                    "elemental-streak-label": "元素链"
+                    "elemental-streak-label": "元素链",
+                    "wheel-of-death-label": "死亡轮盘",
+                    "thirst-drifter-tooltip": "当你的手牌或牌库中有“口渴的流浪者”时，显示你已经使用的(1)费卡牌数量",
+                    "cards-drawn-tooltip": "当你的手牌中有“{{cardName}}”时，显示你已经抽到的卡牌数量",
+                    "thirst-drifter-label": "口渴的流浪者",
+                    "cards-drawn-label": "已抽到的卡牌",
+                    "wheel-of-death-tooltip": "在你使用{{cardName}}后，显示你死亡前的剩余回合数"
                 }
             },
             "duels": {
@@ -3635,6 +3661,7 @@
         "weapon-dh": "武器瞎",
         "beast-warrior": "威兹班传说猎",
         "big-demon-warlock": "大恶魔术",
-        "f-warrior": "威兹班彩虹DK"
+        "f-warrior": "威兹班彩虹DK",
+        "wheel-warlock": "轮盘术"
     }
 }
