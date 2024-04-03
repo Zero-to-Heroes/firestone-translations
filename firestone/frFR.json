@@ -475,7 +475,8 @@
             "deck-details": {
                 "picks-header": "Choix",
                 "deck-summary-header": "Aperçu de la virée"
-            }
+            },
+            "card-search-tooltip": "Vous pouvez utiliser des virgules (,) pour rechercher plusieurs cartes à la fois."
         },
         "collection": {
             "menu": {
@@ -2437,7 +2438,9 @@
                 "buddy-tooltip-golden": "A reçu ses deux autres compagnons au tour {{turn}}",
                 "rewards-title": "Récompenses de quête",
                 "rewards-empty-state": "Aucune récompense de quête",
-                "reward-turn-tooltip": "Récompense de quête reçue au tour {{turn}}"
+                "reward-turn-tooltip": "Récompense de quête reçue au tour {{turn}}",
+                "mmr-tooltip": "La cote de ce joueur ou de cette joueuse. Nous cherchons le nom sur le classement officiel pour obtenir cette valeur, donc elle peut ne pas être exacte, surtout aux cotes plus basses.",
+                "mmr": "Cote : {{value}}"
             },
             "minions-list": {
                 "reset-button": "Réinitialiser",
@@ -3014,7 +3017,7 @@
                     "number-of-spells-tooltip": "Affiche le nombre de sorts lancés par votre adversaire pendant cette partie. N’apparaît que si votre adversaire a lancé au moins un sort",
                     "chaotic-tendril-tooltip": "Afficher le nombre de fois où votre adversaire a joué un tentacule chaotique",
                     "excavate-tooltip": "Affiche les niveaux actuels et maximum de trésors à déterrer de votre adversaire. Lorsque vous passez la souris sur le compteur, affiche aussi les trésors que votre adversaire pourra obtenir la prochaine fois qu’il ou elle en déterrera un.",
-                    "wheel-of-death-tooltip": "Une fois que votre adversaire a joué {{cardName}}, affiche le nombre de tours avant que votre héros soit détruit"
+                    "wheel-of-death-tooltip": "Une fois que votre adversaire a joué {{cardName}}, affiche le nombre de tours avant que votre héros ou héroïne soit détruit"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -3043,15 +3046,15 @@
                     "relic-tooltip": "Afficher la puissance de votre prochaine relique de chasseur de démons",
                     "hero-power-damage-tooltip": "Afficher le total de points de dégâts infligés par votre pouvoir héroïque pendant cette partie. Ne s’affiche que si Mordresh Œil-de-Feu ou Jan’alai, le faucon-dragon sont dans votre deck ou votre main",
                     "bolner-label": "Bolner Bec-de-Corbin",
-                    "bolner-tooltip": "Quand vous avez Bolner Bec-de-Corbin en main, affiche la première carte avec Cri de guerre que vous avez jouée pendant ce tour, s’il y en a une",
+                    "bolner-tooltip": "Lorsque vous avez Bolner Bec-de-Corbin en main, affiche la première carte avec Cri de guerre que vous avez jouée pendant ce tour, s’il y en a une",
                     "brilliant-macaw-label": "Ara brillant",
-                    "brilliant-macaw-tooltip": "Quand vous avez un ara brillant en main, affiche la dernière carte avec Cri de guerre que vous avez jouée, s’il y en a une",
+                    "brilliant-macaw-tooltip": "Lorsque vous avez un ara brillant en main, affiche la dernière carte avec Cri de guerre que vous avez jouée, s’il y en a une",
                     "monstrous-parrot-label": "Perroquet monstrueux",
-                    "monstrous-parrot-tooltip": "Quand vous avez un perroquet monstrueux en main, affiche le dernier Râle d’agonie allié qui s’est déclenché, s’il y en a un",
+                    "monstrous-parrot-tooltip": "Lorsque vous avez un perroquet monstrueux en main, affiche le dernier Râle d’agonie allié qui s’est déclenché, s’il y en a un",
                     "vanessa-label": "Vanessa VanCleef",
-                    "vanessa-tooltip": "Quand vous avez Vanessa VanCleef en main, affiche la dernière carte que votre adversaire a jouée",
+                    "vanessa-tooltip": "Lorsque vous avez Vanessa VanCleef en main, affiche la dernière carte que votre adversaire a jouée",
                     "lightray-label": "Raie de lumière",
-                    "lightray-tooltip": "Quand vous avez des raies de lumière (ou d’autres cartes dont le coût est réduit en jouant des cartes de paladin) dans votre main ou dans votre deck, affiche le nombre de cartes de paladin que vous avez jouées pendant cette partie.",
+                    "lightray-tooltip": "Lorsque vous avez des raies de lumière (ou d’autres cartes dont le coût est réduit en jouant des cartes de paladin) dans votre main ou dans votre deck, affiche le nombre de cartes de paladin que vous avez jouées pendant cette partie.",
                     "menagerie-label": "Ménagerie",
                     "menagerie-tooltip": "Lorsque vous avez des cartes pertinentes (Amalgame instrumental, Rockeuse redoutable) dans votre main ou dans votre deck, affiche quels types de serviteurs vous avez déjà joués",
                     "corpse-spent-label": "Cadavres dépensés",
@@ -3063,23 +3066,23 @@
                     "anachronos-label": "Anachronos",
                     "anachronos-tooltip": "Après avoir joué Anachronos, affiche le nombre de tours restants avant que les serviteurs ne reviennent",
                     "asvedon-label": "Asvedon, le grand bouclier",
-                    "asvedon-tooltip": "Quand vous avez Asvedon, le grand bouclier en main, affiche le dernier sort que votre adversaire a lancé",
+                    "asvedon-tooltip": "Lorsque vous avez Asvedon, le grand bouclier en main, affiche le dernier sort que votre adversaire a lancé",
                     "murozond-label": "Murozond l’Infini",
-                    "murozond-tooltip": "Quand vous avez Murozond l’Infini en main, affiche toutes les cartes que votre adversaire a jouées le dernier tour, dans l'ordre où elles ont été jouées",
+                    "murozond-tooltip": "Lorsque vous avez Murozond l’Infini en main, affiche toutes les cartes que votre adversaire a jouées le dernier tour, dans l'ordre où elles ont été jouées",
                     "naga-giant-label": "Géant naga",
-                    "naga-giant-tooltip": "Afficher le coût réel (après réduction) des géants naga quand vous en avez un dans la main ou dans le deck",
+                    "naga-giant-tooltip": "Lorsque le coût réel (après réduction) des géants naga quand vous en avez un dans la main ou dans le deck",
                     "shockspitter-label": "Crache-foudre",
                     "shockspitter-tooltip": "Lorsque vous avez un crache-foudre dans votre deck ou dans votre main, affiche un widget indiquant quel montant de dégâts il va infliger",
                     "parrot-mascot-label": "Mascotte perroquet",
-                    "parrot-mascot-tooltip": "Quand vous avez une mascotte perroquet en main, affiche toutes les cartes que vous avez jouées pendant ce tour, dans l'ordre où elles ont été jouées",
+                    "parrot-mascot-tooltip": "Lorsque vous avez une mascotte perroquet en main, affiche toutes les cartes que vous avez jouées pendant ce tour, dans l'ordre où elles ont été jouées",
                     "queensguard-label": "Garde de la reine",
-                    "queensguard-tooltip": "Quand vous avez une garde de la reine en main, affiche le nombre de sorts que vous avez lancés pendant ce tour",
+                    "queensguard-tooltip": "Lorsque vous avez une garde de la reine en main, affiche le nombre de sorts que vous avez lancés pendant ce tour",
                     "spectral-pillager-label": "Pilleuse spectrale",
-                    "spectral-pillager-tooltip": "Quand vous avez une pilleuse spectrale en main, affiche le nombre de cartes que vous avez jouées pendant ce tour",
+                    "spectral-pillager-tooltip": "Lorsque vous avez une pilleuse spectrale en main, affiche le nombre de cartes que vous avez jouées pendant ce tour",
                     "lady-darkvein-label": "Dame Sombreveine",
-                    "lady-darkvein-tooltip": "Quand vous avez Dame Sombreveine en main, affiche le dernier sort d’Ombre que vous avez lancé, s’il y en a un",
+                    "lady-darkvein-tooltip": "Lorsque vous avez Dame Sombreveine en main, affiche le dernier sort d’Ombre que vous avez lancé, s’il y en a un",
                     "grey-sage-parrot-label": "Perroquet gris cendré",
-                    "grey-sage-parrot-tooltip": "Quand vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte ({{cost}}) cristaux ou plus que vous avez lancé, s’il y en a un",
+                    "grey-sage-parrot-tooltip": "Lorsque vous avez un perroquet gris cendré en main, affiche le dernier sort qui coûte ({{cost}}) cristaux ou plus que vous avez lancé, s’il y en a un",
                     "multicaster-label": "Écoles de sorts",
                     "multicaster-tooltip": "Afficher les écoles de sorts que vous avez utilisées pendant cette partie",
                     "coral-keeper-label": "Sentinelle des coraux",
@@ -3109,7 +3112,9 @@
                     "thirst-drifter-label": "Nomade assoiffée",
                     "wheel-of-death-label": "Roulette de la MORT !",
                     "thirst-drifter-tooltip": "Quand vous avez une nomade assoiffée dans votre main ou votre deck, affiche le nombre de cartes à 1 cristal que vous avez jouées pendant cette partie",
-                    "cards-drawn-tooltip": "Quand vous avez une carte {{cardName}} dans votre main, affiche le nombre de cartes que vous avez piochées pendant cette partie"
+                    "cards-drawn-tooltip": "Lorsque vous avez une carte {{cardName}} dans votre main, affiche le nombre de cartes que vous avez piochées pendant cette partie",
+                    "thirsty-drifter-label": "Nomade assoiffée",
+                    "thirsty-drifter-tooltip": "Lorsque vous avez {{cardName}} en main ou dans votre deck, affiche de nombres de cartes à 1 cristal que vous avez jouées pendant cette partie"
                 }
             },
             "duels": {
@@ -3175,7 +3180,8 @@
             "menu": {
                 "general": "Général",
                 "overlay": "Overlay",
-                "session": "Widget de session"
+                "session": "Widget de session",
+                "leaderboard": "Classement"
             },
             "full-toggle-label": "Activer pour Champs de bataille",
             "full-toggle-tooltip": "Désactiver toutes les fonctionnalités en direct de Champs de Bataille",
@@ -3199,7 +3205,7 @@
                 "use-tribe-filter-for-live-stats-label-short": "Filtre de type",
                 "use-tribe-filter-for-live-stats-tooltip": "Lorsque cette option est activée, les niveaux de héros affichés sur l’écran de sélection des héros au début d’une partie prendront en compte les types de serviteurs disponibles dans cette partie. AVERTISSEMENT : cela peut entraîner une TRÈS faible taille d’échantillon de données, donc utilisez à vos propres risques :)",
                 "show-next-opponent-recap-label": "Récap du prochain adversaire",
-                "show-next-opponent-recap-tooltip": "Quand la fenêtre Champs de bataille est sur un deuxième écran, affiche les informations de votre prochain adversaire en haut dans un espace plus grand, en plus d’être dans la liste avec les autres options ci-dessous",
+                "show-next-opponent-recap-tooltip": "Lorsque la fenêtre Champs de bataille est sur un deuxième écran, affiche les informations de votre prochain adversaire en haut dans un espace plus grand, en plus d’être dans la liste avec les autres options ci-dessous",
                 "show-achievements-label": "Afficher les hauts faits",
                 "show-achievements-tooltip": "Affiche les hauts faits manquants pour chaque personnage lors de la sélection du héros ou de l’héroïne",
                 "show-hero-tooltip-label": "Afficher les infobulles des héros et héroïnes",
@@ -3271,11 +3277,11 @@
                 "opponent-board-show-top-tooltip": "Activer/désactiver pour afficher la troupe de guerre adverse en haut ou en bas de l’écran",
                 "counters-title": "Compteurs",
                 "counter-soutshsea-label": "Gaillarde des mers du Sud",
-                "counter-soutshsea-tooltip": "Afficher le nombre de Pirates que vous avez achetés pendant ce tour (s’il y en a eu) quand une gaillarde des mers du Sud est dans la taverne de Bob ou dans votre main",
+                "counter-soutshsea-tooltip": "Afficher le nombre de Pirates que vous avez achetés pendant ce tour (s’il y en a eu) lorsqu’une gaillarde des mers du Sud est dans la taverne de Bob ou dans votre main",
                 "counter-magmaloc-label": "Magmaloc",
                 "counter-magmaloc-tooltip": "Afficher le total des statistiques que votre magmaloc aura à la fin du tour",
                 "counter-majordomo-label": "Chambellan Executus",
-                "counter-majordomo-tooltip": "Afficher le nombre d’Élémentaires que vous avez joués ce tour (s’il y en a eu) quand le Chambellan Executus est dans la taverne de Bob, dans votre troupe de guerre ou dans votre main",
+                "counter-majordomo-tooltip": "Afficher le nombre d’Élémentaires que vous avez joués ce tour (s’il y en a eu) lorsque le Chambellan Executus est dans la taverne de Bob, dans votre troupe de guerre ou dans votre main",
                 "minions-list-show-tribe-tiers-tooltip": "Ajoute des colonnes à la liste des serviteurs qui regroupent les serviteurs par type",
                 "minions-list-show-tribe-tiers-label": "Voir par type",
                 "minions-list-show-spells-at-bottom-label": "Afficher les sorts en bas",
@@ -3304,6 +3310,17 @@
                 "number-of-matches-tooltip": "Nombre max de parties à afficher lors de l’affichage des détails du match (le plus récent est en haut)",
                 "size-title": "Taille du widget",
                 "opacity-title": "Opacité du widget"
+            },
+            "leaderboard": {
+                "show-in-leaderboard": "Afficher sur les tuiles de classement",
+                "show-in-leaderboard-tooltip": "Afficher le nom et la cote du joueur directement sur les tuiles de classement dans le jeu",
+                "text-3": "ATTENTION : le classement ne contient que les informations des meilleurs joueurs, et la correspondance se fait uniquement sur la base du nom. Si vous utilisez cette option à des cotes moyennes ou basses, il y a des chances que les infos affichées soient incorrectes.",
+                "text-2": "IMPORTANT : vous devez d’abord passer la souris sur un personnage pour que l’application puisse récupérer ses infos de classement",
+                "title": "Info de classement dans l’overlay",
+                "show-in-opponent-recap": "Afficher dans le récap",
+                "show-in-opponent-recap-tooltip": "Afficher le nom et la cote du joueur à côté des infos sur sa dernière troupe de guerre",
+                "text": "Ces options permettent à l’application de récupérer des infos du classement officiel directement dans l’overlay, pour que vous ayez accès aux cotes des autres joueurs ou joueuses directement en jeu.",
+                "enable": "Utiliser le classement dans l’overlay"
             }
         },
         "achievements": {
@@ -3311,7 +3328,7 @@
                 "general": "Général"
             },
             "notifications": {
-                "title": "Mettre à jour quand vous voyez les notifications de succès",
+                "title": "Mettre à jour quand vous voyez les notifications de hauts faits",
                 "achievements-enabled-text": "Activer le système de hauts faits",
                 "achievements-enabled-tooltip": "Lorsque cette option est désativée, l’ensemble du système de suivi des hauts faits sera désactivé. Gardez cette option désactivée si vous ne prévoyez pas d’utiliser Firestone pour parcourir vos hauts faits existants. Nécessite un redémarrage de l’application.",
                 "firestone-achievements-text": "Activer les hauts faits FS",
@@ -3456,7 +3473,7 @@
         "show-battle-simulator": "Afficher les chances de victoire",
         "battle-simulator-size": "Taille du simulateur de combat",
         "last-board-size": "Taille de la dernière troupe",
-        "last-board-size-tooltip": "Change la taille du récapitulatif de l’adversaire qui apparaît quand vous passez la souris sur un portrait dans le classement.",
+        "last-board-size-tooltip": "Change la taille du récapitulatif de l’adversaire qui apparaît lorsque vous passez la souris sur un portrait dans le classement.",
         "hide-battle-odds-in-combat": "Masquer les chances en combat",
         "hide-battle-odds-in-combat-tooltip": "Ne pas afficher les chances de combat pendant le combat",
         "hide-battle-odds-in-tavern": "Masquer les chances dans la taverne",
