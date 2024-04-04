@@ -475,7 +475,8 @@
             "deck-details": {
                 "picks-header": "抓牌选项",
                 "deck-summary-header": "轮次总览"
-            }
+            },
+            "card-search-tooltip": "你可以使用英文半角逗号(,)来同时搜索多张卡牌。"
         },
         "collection": {
             "menu": {
@@ -2437,7 +2438,9 @@
                 "buddy-tooltip-golden": "在第 {{turn}} 回合获得另两个伙伴",
                 "rewards-title": "任务奖励",
                 "rewards-empty-state": "无任务奖励",
-                "reward-turn-tooltip": "在第 {{turn}} 回合获得任务奖励"
+                "reward-turn-tooltip": "在第 {{turn}} 回合获得任务奖励",
+                "mmr-tooltip": "该玩家的预测等级分数。我们仅仅使用排行榜上的玩家昵称获取此数据（可能存在同名昵称），所以并不保证精准，尤其是在低分段。",
+                "mmr": "{{value}}分"
             },
             "minions-list": {
                 "reset-button": "重置",
@@ -3014,7 +3017,7 @@
                     "chaotic-tendril-tooltip": "显示你对手已使用的“混乱触须”数量",
                     "number-of-spells-tooltip": "显示你对手使用过的最后一个法术。仅在对手使用过法术时显示。",
                     "excavate-tooltip": "显示敌方当前和最多可发掘的等级，并在你的鼠标移至计数器时显示敌方可获得的下一等级的发掘宝藏",
-                    "wheel-of-death-tooltip": "在你的对手使用{{cardName}}后，显示你的对手死亡前的剩余回合数"
+                    "wheel-of-death-tooltip": "在对手使用{{cardName}}后，显示你死亡前的剩余回合数"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3109,7 +3112,9 @@
                     "cards-drawn-tooltip": "当你的手牌中有“{{cardName}}”时，显示你已经抽到的卡牌数量",
                     "thirst-drifter-label": "口渴的流浪者",
                     "cards-drawn-label": "已抽到的卡牌",
-                    "wheel-of-death-tooltip": "在你使用{{cardName}}后，显示你死亡前的剩余回合数"
+                    "wheel-of-death-tooltip": "在你使用{{cardName}}后，显示对手死亡前的剩余回合数",
+                    "thirsty-drifter-label": "口渴的流浪者",
+                    "thirsty-drifter-tooltip": "当你的手牌或牌库中有口渴的流浪者，显示你已经使用过的(1)费卡牌数量"
                 }
             },
             "duels": {
@@ -3175,7 +3180,8 @@
             "menu": {
                 "general": "通用",
                 "overlay": "浮窗",
-                "session": "战绩记录小部件"
+                "session": "战绩记录小部件",
+                "leaderboard": "排行榜"
             },
             "full-toggle-label": "在酒馆战棋中启用记牌器",
             "full-toggle-tooltip": "关闭后，将停用记牌器的所有战棋实时功能",
@@ -3304,6 +3310,17 @@
                 "number-of-matches-tooltip": "显示对战详情时包含的比赛局数上限 (最近一局在最上面)",
                 "size-title": "小部件大小",
                 "opacity-title": "小部件透明度"
+            },
+            "leaderboard": {
+                "title": "排行榜信息浮窗",
+                "text": "这些设置将使应用推送官方排行榜数据到浮窗上显示，这样你可以在游戏时直接看到其他玩家的等级分数信息",
+                "text-2": "重要：你需要将鼠标悬停在对手头像上，应用才能获取其在排行榜上的信息",
+                "text-3": "警告：排行榜仅包含较高分段（8000+）玩家的信息，并且我们只能使用昵称进行粗略匹配。所以如果你将这些信息用于中低分段对局，大概率会得到错误信息。",
+                "show-in-leaderboard": "在左侧位次栏中显示",
+                "enable": "在浮窗上显示排行榜信息",
+                "show-in-leaderboard-tooltip": "直接在游戏内的位次栏中显示玩家昵称和等级分数信息",
+                "show-in-opponent-recap": "在回顾中显示",
+                "show-in-opponent-recap-tooltip": "在上局对战回顾中同时显示玩家昵称和等级分数信息"
             }
         },
         "achievements": {
