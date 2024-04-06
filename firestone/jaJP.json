@@ -475,7 +475,8 @@
             "deck-details": {
                 "deck-summary-header": "挑戦概要",
                 "picks-header": "ドラフトピック"
-            }
+            },
+            "card-search-tooltip": "カンマ (,) を使うことで、複数のカードを同時に検索できます"
         },
         "collection": {
             "menu": {
@@ -2437,7 +2438,9 @@
                 "buddy-tooltip-golden": "2回目のバディを{{turn}}ターン目に入手しました",
                 "rewards-title": "クエスト報酬",
                 "rewards-empty-state": "クエスト報酬なし",
-                "reward-turn-tooltip": "クエスト報酬を{{turn}}ターン目に入手しました"
+                "reward-turn-tooltip": "クエスト報酬を{{turn}}ターン目に入手しました",
+                "mmr-tooltip": "このプレイヤーの推定MMRです。リーダーボード上を名前で検索してMMRを取得しているため、特に低MMRにおいて、誤った数値である可能性があります。",
+                "mmr": "{{value}} MMR"
             },
             "minions-list": {
                 "reset-button": "リセット",
@@ -3014,7 +3017,7 @@
                     "number-of-spells-tooltip": "対戦相手が呪文を使用した回数を表示します。呪文を1回以上を使用したときのみ表示されます",
                     "chaotic-tendril-tooltip": "対戦相手が「混沌の触手」をプレイした回数を表示します",
                     "excavate-tooltip": "対戦相手の、現在と最大値の発掘のレア度を表示します。カウンターにマウスオーバーすると、次回の発掘で入手可能なカードを表示します",
-                    "wheel-of-death-tooltip": "対戦相手が{{cardName}}を使用した後、対戦相手が死ぬまでのターン数を表示します"
+                    "wheel-of-death-tooltip": "対戦相手が「{{cardName}}」を使用した後、自分が死ぬまでのターン数を表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3106,10 +3109,12 @@
                     "elemental-streak-label": "エレメンタル連続使用",
                     "thirst-drifter-label": "「のどが渇いた流れ者」",
                     "wheel-of-death-label": "「死の大車輪！！！」",
-                    "wheel-of-death-tooltip": "{{cardName}}を使用した後、自分が死ぬまでのターン数を表示します",
+                    "wheel-of-death-tooltip": "「{{cardName}}」を使用した後、対戦相手が死ぬまでのターン数を表示します",
                     "cards-drawn-label": "引いたカード",
                     "thirst-drifter-tooltip": "「のどが渇いた流れ者」がデッキか手札にある場合、自分が使用したコスト1のカードの枚数を表示します",
-                    "cards-drawn-tooltip": "「{{cardName}}」が手札にある場合、このゲーム中に引いたカードの枚数を表示します"
+                    "cards-drawn-tooltip": "「{{cardName}}」が手札にある場合、このゲーム中に引いたカードの枚数を表示します",
+                    "thirsty-drifter-label": "「のどが渇いた流れ者」",
+                    "thirsty-drifter-tooltip": "「のどが渇いた流れ者」が手札かデッキにある場合、自分が使用したコスト1のカードの枚数を表示します"
                 }
             },
             "duels": {
@@ -3175,7 +3180,8 @@
             "menu": {
                 "general": "全般",
                 "overlay": "オーバーレイ",
-                "session": "戦績ウィジェット"
+                "session": "戦績ウィジェット",
+                "leaderboard": "リーダーボード"
             },
             "full-toggle-label": "バトルグラウンドで機能を有効化",
             "full-toggle-tooltip": "オフにすると、全てのバトルグラウンド用のライブ機能が無効化されます",
@@ -3304,6 +3310,17 @@
                 "number-of-matches-tooltip": "試合の詳細を表示するときの最大数 (最新の試合が上部に表示)",
                 "size-title": "ウィジェットのサイズ",
                 "opacity-title": "ウィジェットの不透明度"
+            },
+            "leaderboard": {
+                "text-3": "警告：公式のリーダーボードは上位プレイヤーの情報のみを掲示しているため、アプリは名前の照会のみでプレイヤーのMMRを推定しています。そのため、この機能を低/中MMR帯で使用すると、高い確率で誤った情報を表示してしまうと思われます。",
+                "title": "リーダーボード情報オーバーレイ",
+                "text-2": "重要：アプリがリーダーボードの情報を取得するためには、まず該当のプレイヤーにマウスオーバーする必要があります",
+                "text": "これらの設定により、このアプリは公式サイトにあるリーダーボードの情報を直接オーバーレイに取り込み、ゲーム中に他のプレーヤーのMMR情報にアクセスできるようになります。",
+                "enable": "リーダーボードの情報をオーバーレイで使用する",
+                "show-in-opponent-recap": "戦績まとめに表示",
+                "show-in-leaderboard": "ランキングタイルを表示",
+                "show-in-opponent-recap-tooltip": "プレイヤー名とMMRの情報を、最後の盤面の情報と共に表示します",
+                "show-in-leaderboard-tooltip": "プレイヤー名とMMRの情報を、ゲーム中ランキングタイルに直接表示します"
             }
         },
         "achievements": {
