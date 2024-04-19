@@ -41,7 +41,8 @@
             "tavern-brawl": "酒場の喧嘩",
             "duels": "デュエル",
             "constructed": "ランク戦",
-            "ranked": "ランク戦"
+            "ranked": "ランク戦",
+            "battlegrounds-duo": "バトルグラウンド・デュオ"
         },
         "region": {
             "all": "全ての地域",
@@ -170,7 +171,8 @@
             "wild-west": "バッドランドの決斗",
             "wild-west2": "バッドランドの決斗キャッチアップ",
             "golden-whizbangs-workshop": "ゴールデン･ウィズバンのワクワクワークショップ",
-            "whizbangs-workshop": "ウィズバンのワクワクワークショップ"
+            "whizbangs-workshop": "ウィズバンのワクワクワークショップ",
+            "golden-wild-west": "ゴールデン・バッドランドの決斗"
         },
         "ranks": {
             "constructed": {
@@ -309,7 +311,7 @@
                 "dust": "魔素",
                 "pack": "パック",
                 "gold": "ゴールド",
-                "card": "ゴールドカード"
+                "card": "カード"
             },
             "controls": {
                 "bug-button-tooltip": "バグを報告",
@@ -324,7 +326,8 @@
                 "multiselect-clear-button": "削除",
                 "multiselect-reset-button": "リセット",
                 "hotkey-text": "表示/非表示:",
-                "no-hotkey-assigned": "ホットキーが割り当てられていません"
+                "no-hotkey-assigned": "ホットキーが割り当てられていません",
+                "close-button-tooltip": "ウィンドウを閉じます"
             },
             "ads": {
                 "support-the-dev": "開発者をサポートし、広告を削除します",
@@ -1530,7 +1533,8 @@
                     "friendly": "フレンド対戦",
                     "tavern-brawl": "酒場の喧嘩",
                     "practice": "練習",
-                    "ranked-twist": "ツイスト(ランク)"
+                    "ranked-twist": "ツイスト(ランク)",
+                    "battlegrounds-duo": "バトルグラウンド・デュオ"
                 },
                 "player": {
                     "all": "全てのクラス(自分)"
@@ -1986,7 +1990,7 @@
             "player": "対戦相手は前のターン{{value}}枚のカードを使用"
         },
         "bgs-gold-delta": {
-            "player": "次のターン、追加で{{value}}ゴールドを得て{{maxValueText}}ゴールドになります。このターン以下のカードを使用したためです{{cards}}",
+            "player": "次のターン、追加で{{value}}ゴールドを得て{{maxValueText}}ゴールドになります。これらのカードの影響です：{{cards}}",
             "up-to": "最大 {{maxValue}}",
             "card": "{{cardName}} (x{{count}})"
         },
@@ -2566,7 +2570,8 @@
         "display-mode": {
             "all": "全て",
             "battlegrounds": "バトルグラウンド",
-            "unknown": "不明"
+            "unknown": "不明",
+            "battlegrounds-duo": "バトルグラウンド・デュオ"
         },
         "buttons": {
             "reset-tooltip": "新しいセッションを開始し、すべての統計情報をリセットします",
@@ -2574,8 +2579,8 @@
         },
         "summary": {
             "total-games": "{{value}} 試合",
-            "total-games-tooltip": "{{value}} 以降 (新しいセッションを開始するには上にあるボタンを押してください)",
-            "total-games-tooltip-all-time": "アプリを使用して以降  (新しいセッションを開始するには上にあるボタンを押してください)",
+            "total-games-tooltip": "{{gameMode}}モードにおいて、{{value}} 以降 (新しいセッションを開始するには上にあるボタンを押してください)",
+            "total-games-tooltip-all-time": "{{gameMode}}モードにおいて、アプリを使用し始めて以降  (新しいセッションを開始するには上にあるボタンを押してください)",
             "mmr-tooltip": "自分の現在のMMR",
             "delta-mmr-tooltip": "このセッションでのあなたの獲得/喪失 MMR です"
         },
@@ -3017,7 +3022,8 @@
                     "number-of-spells-tooltip": "対戦相手が呪文を使用した回数を表示します。呪文を1回以上を使用したときのみ表示されます",
                     "chaotic-tendril-tooltip": "対戦相手が「混沌の触手」をプレイした回数を表示します",
                     "excavate-tooltip": "対戦相手の、現在と最大値の発掘のレア度を表示します。カウンターにマウスオーバーすると、次回の発掘で入手可能なカードを表示します",
-                    "wheel-of-death-tooltip": "対戦相手が「{{cardName}}」を使用した後、自分が死ぬまでのターン数を表示します"
+                    "wheel-of-death-tooltip": "対戦相手が「{{cardName}}」を使用した後、自分が死ぬまでのターン数を表示します",
+                    "dragons-summoned-tooltip": "対戦相手が召喚したドラゴンの数を表示します。対戦相手がプリーストで、ドラゴンを使用したときだけ表示されます"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3114,7 +3120,9 @@
                     "thirst-drifter-tooltip": "「のどが渇いた流れ者」がデッキか手札にある場合、自分が使用したコスト1のカードの枚数を表示します",
                     "cards-drawn-tooltip": "「{{cardName}}」が手札にある場合、このゲーム中に引いたカードの枚数を表示します",
                     "thirsty-drifter-label": "「のどが渇いた流れ者」",
-                    "thirsty-drifter-tooltip": "「のどが渇いた流れ者」が手札かデッキにある場合、自分が使用したコスト1のカードの枚数を表示します"
+                    "thirsty-drifter-tooltip": "「のどが渇いた流れ者」が手札かデッキにある場合、自分が使用したコスト1のカードの枚数を表示します",
+                    "pirates-summoned-label": "召喚した海賊",
+                    "pirates-summoned-tooltip": "自分が召喚した海賊の数を表示します"
                 }
             },
             "duels": {
