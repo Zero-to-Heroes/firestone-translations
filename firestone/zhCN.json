@@ -41,7 +41,8 @@
             "tavern-brawl": "乱斗模式",
             "constructed": "天梯模式",
             "duels": "对决模式",
-            "ranked": "天梯排名模式"
+            "ranked": "天梯排名模式",
+            "battlegrounds-duo": "战棋双打"
         },
         "region": {
             "all": "所有地区",
@@ -170,7 +171,8 @@
             "wild-west": "决战荒芜之地 卡牌包",
             "wild-west2": "决战荒芜之地 追赶包",
             "golden-whizbangs-workshop": "威兹班的工坊金色包",
-            "whizbangs-workshop": "威兹班的工坊"
+            "whizbangs-workshop": "威兹班的工坊",
+            "golden-wild-west": "决战荒芜之地金色包"
         },
         "ranks": {
             "constructed": {
@@ -309,7 +311,7 @@
                 "dust": "奥术之尘",
                 "pack": "卡牌包",
                 "gold": "金币",
-                "card": "金色卡牌"
+                "card": "卡牌"
             },
             "controls": {
                 "bug-button-tooltip": "提交错误",
@@ -324,7 +326,8 @@
                 "multiselect-clear-button": "清除",
                 "multiselect-reset-button": "重置",
                 "hotkey-text": "显示/隐藏:",
-                "no-hotkey-assigned": "未设置快捷键"
+                "no-hotkey-assigned": "未设置快捷键",
+                "close-button-tooltip": "关闭窗口"
             },
             "ads": {
                 "support-the-dev": "支持开发者并移除广告",
@@ -459,10 +462,13 @@
                 "header-drawn-winrate-tooltip": "当此牌被抽到后的获胜频率",
                 "header-mulligan-winrate": "起手胜率",
                 "header-pickrate-tooltip": "当此牌供选时的选取频率",
-                "header-pickrate-high-wins-short": "抓位{{value}}+",
+                "header-pickrate-high-wins-short": "{{value}}+胜选取率",
                 "header-mulligan-winrate-tooltip": "该卡牌在你的起始手牌时的平均胜率",
                 "header-deck-winrate-tooltip": "包含该卡牌的套牌胜率",
-                "header-deck-total": "总套牌数"
+                "header-deck-total": "总套牌数",
+                "header-play-on-curve-winrate": "按费拍怪胜率",
+                "header-play-on-curve-winrate-tooltip": "当你按费用使用此卡牌时的胜率",
+                "header-play-on-curve-total": "按费使用次数"
             },
             "class-tier-list": {
                 "header-hero-name": "英雄名",
@@ -816,8 +822,10 @@
                     "legend-diamond": "钻石到传说",
                     "legend": "传说",
                     "platinum": "白金",
-                    "top-2000-legend": "传说前2000名",
-                    "all": "所有排名分段"
+                    "top-2000-legend": "传说前2000",
+                    "all": "所有排名分段",
+                    "competitive": "排名对战",
+                    "competitive-tooltip": "传说前2000与钻石1-4"
                 },
                 "archetype-filter": {
                     "all": "所有类型"
@@ -1530,7 +1538,8 @@
                     "friendly": "好友对战",
                     "tavern-brawl": "乱斗模式",
                     "practice": "练习模式",
-                    "ranked-twist": "幻变天梯"
+                    "ranked-twist": "幻变天梯",
+                    "battlegrounds-duo": "战棋双打"
                 },
                 "player": {
                     "all": "所有职业（自己）"
@@ -1986,7 +1995,7 @@
             "player": "你的下一张{{cardName}}为{{cost}}费（本局游戏你已使用 {{spells}}个神圣法术，累计消耗{{spellsMana}}费）"
         },
         "bgs-gold-delta": {
-            "player": "你将在下回合中额外获得{{value}}（~{{maxValueText}}）枚铸币，因为你在本回合中使用了以下卡牌：{{cards}}",
+            "player": "你将在下回合中额外获得{{value}}（~{{maxValueText}}）枚铸币，因为：{{cards}}",
             "card": "{{cardName}} ({{count}}次)",
             "up-to": "不高于{{maxValue}}"
         },
@@ -2003,8 +2012,8 @@
             "player": "你已使用过{{value}}张(1)费牌"
         },
         "wheel-of-death": {
-            "player": "你的生命已如风中残烛，仅剩{{value}}个回合！",
-            "opponent": "你的对手即将油尽灯枯，再坚守{{value}}个回合！"
+            "player": "你的生命已如风中残烛，仅剩{{value}}个回合！急急急！",
+            "opponent": "你的对手即将油尽灯枯，再坚守{{value}}个回合！顶住！"
         },
         "cards-drawn": {
             "player": "本局对战中你已抽取{{value}}张牌"
@@ -2566,7 +2575,8 @@
         "display-mode": {
             "all": "全部",
             "battlegrounds": "酒馆战棋",
-            "unknown": "未知"
+            "unknown": "未知",
+            "battlegrounds-duo": "战棋双打"
         },
         "buttons": {
             "reset-tooltip": "开始新的战绩记录并重置所有统计数据",
@@ -2574,8 +2584,8 @@
         },
         "summary": {
             "total-games": "{{value}} 局比赛",
-            "total-games-tooltip": "从 {{value}} 起（使用顶部重置按钮开始新期间）",
-            "total-games-tooltip-all-time": "从您开始使用此应用起（使用顶部重置按钮开始一段新战绩记录）",
+            "total-games-tooltip": "从{{value}}起记录的{{gameMode}}战绩（使用顶部重置按钮可开始一段新的战绩记录）",
+            "total-games-tooltip-all-time": "从您开始使用此应用起记录的{{gameMode}}战绩（使用顶部重置按钮可开始一段新的战绩记录）",
             "mmr-tooltip": "你当前的等级分",
             "delta-mmr-tooltip": "此战绩记录内您的上分/掉分"
         },
@@ -2999,9 +3009,9 @@
                     "watch-post-tooltip": "显示对手使用“哨所”的数量。仅在对手牌库或手牌中有相关卡牌时显示。",
                     "libram-label": "圣契",
                     "libram-tooltip": "显示对手使用的“圣契”牌数量。仅在对手牌库或手牌中有相关卡牌时显示",
-                    "elwynn-boar-label": "艾尔文野猪死亡数",
+                    "elwynn-boar-label": "艾尔文野猪（死亡数）",
                     "elwynn-boar-tooltip": "显示敌方已死亡的“艾尔文野猪”数量",
-                    "volatile-skeleton-label": "不稳定的骷髅死亡数",
+                    "volatile-skeleton-label": "不稳定的骷髅（死亡数）",
                     "volatile-skeleton-tooltip": "显示敌方已死亡的“不稳定的骷髅”数量",
                     "relic-label": "圣物",
                     "relic-tooltip": "显示敌方下一个恶魔猎手“圣物”数值",
@@ -3016,8 +3026,9 @@
                     "earthen-golem-tooltip": "显示对手已召唤的“土灵魔像”数量",
                     "chaotic-tendril-tooltip": "显示你对手已使用的“混乱触须”数量",
                     "number-of-spells-tooltip": "显示你对手使用过的最后一个法术。仅在对手使用过法术时显示。",
-                    "excavate-tooltip": "显示敌方当前和最多可发掘的等级，并在你的鼠标移至计数器时显示敌方可获得的下一等级的发掘宝藏",
-                    "wheel-of-death-tooltip": "在对手使用{{cardName}}后，显示你死亡前的剩余回合数"
+                    "excavate-tooltip": "显示敌方当前和最高的发掘等级，并在你的鼠标移至计数器时显示敌方可获得的下一等级的发掘宝藏",
+                    "wheel-of-death-tooltip": "在对手使用{{cardName}}后，显示你死亡前的剩余回合数",
+                    "dragons-summoned-tooltip": "显示你的对手已召唤的龙数量。仅在对手为牧师且已使用过龙牌时显示"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3028,14 +3039,14 @@
                 "ignore-decklist-tooltip": "忽略卡组的内容，假设初始牌库未知，只追踪打出或抽到的卡牌。自从下一场对局开始生效。",
                 "ignore-decklist-confirmation": "好的，记牌器将忽略您的牌库",
                 "counters": {
-                    "galakrond-tooltip": "显示友方祈求”迦拉克隆“的次数（仅当你使用“迦拉克隆”或者祈求牌时显示）",
+                    "galakrond-tooltip": "显示友方祈求“迦拉克隆”的次数（仅当你使用“迦拉克隆”或者祈求牌时显示）",
                     "pogo-tooltip": "显示你已使用的“蹦蹦兔”数量",
                     "jade-tooltip": "显示友方“青玉魔像”当前属性值",
                     "cthun-tooltip": "显示友方“克苏恩”当前属性值",
                     "fatigue-tooltip": "显示你下次受到的疲劳伤害",
                     "abyssal-curse-tooltip": "显示友方对敌”深渊诅咒“伤害",
                     "attack-on-board-tooltip": "显示友方随从和英雄的攻击总和",
-                    "number-of-spells-label": "法术数量",
+                    "number-of-spells-label": "法术（数量）",
                     "number-of-spells-tooltip": "显示你使用的法术数量。仅在你的牌库或手牌中有相关卡牌时显示",
                     "elementals-label": "元素",
                     "elementals-tooltip": "显示你在上回合使用过的元素牌数量。仅在你的手牌中有相关卡牌时显示",
@@ -3044,7 +3055,7 @@
                     "elwynn-boar-tooltip": "显示友方已死亡的”艾尔文野猪“数量",
                     "volatile-skeleton-tooltip": "显示友方已死亡的“不稳定的骷髅”数量",
                     "relic-tooltip": "显示友方下一个恶魔猎手“圣物”数值",
-                    "hero-power-damage-tooltip": "当有需要时，显示本局对战中你的英雄技能造成的伤害总和（相关卡牌：火眼莫德雷斯、加亚莱龙鹰之神）",
+                    "hero-power-damage-tooltip": "显示本局对战中你的英雄技能造成的伤害总和。仅在你的手牌或牌库中有“火眼莫德雷斯”、“加亚莱，龙鹰之神”时显示）",
                     "bolner-label": "伯尔纳·锤喙",
                     "bolner-tooltip": "当“伯尔纳·锤喙”在你的手牌中时，显示你本回合中使用的第一张战吼牌（如果有）",
                     "brilliant-macaw-label": "艳丽的金刚鹦鹉",
@@ -3054,10 +3065,10 @@
                     "vanessa-label": "梵妮莎·范克里夫",
                     "vanessa-tooltip": "当“梵妮莎·范克里夫”在你的手牌中时，显示对手使用的最后一张卡牌",
                     "lightray-label": "光鳐",
-                    "lightray-tooltip": "当有需要时，显示本局对战中你使用的圣骑士牌的数量（相关卡牌：光鳐等）",
+                    "lightray-tooltip": "当“光鳐”（或其他因使用过的圣骑士牌而减费的卡牌）在你的手牌或牌库中时，显示本局对战中你使用的圣骑士牌的数量",
                     "menagerie-label": "随从类型数量",
-                    "menagerie-tooltip": "当有需要时，显示本局对战中使用过的随从类型数量（相关卡牌：融合独奏团、滑铲铁腿）",
-                    "corpse-spent-label": "已消耗尸体",
+                    "menagerie-tooltip": "当相关卡牌在你的手牌或牌库中时，显示本局对战中使用过的随从类型数量（相关卡牌：融合独奏团、滑铲铁腿）",
+                    "corpse-spent-label": "尸体（已消耗的）",
                     "corpse-spent-tooltip": "当你的手牌或牌库有相关卡牌（例如“通灵最强音”）时，显示友方已消耗的尸体数量",
                     "overdraft-label": "强行透支",
                     "overdraft-tooltip": "当“强行透支”在你的手牌或牌库中时，显示其可造成的伤害",
@@ -3070,19 +3081,19 @@
                     "murozond-label": "永恒巨龙姆诺兹多",
                     "murozond-tooltip": "当“永恒巨龙姆诺兹多”在你的手牌中时，显示对手上回合使用的所有卡牌，按使用顺序排序",
                     "naga-giant-label": "纳迦巨人",
-                    "naga-giant-tooltip": "当你手牌或牌库中有法术时，显示纳迦巨人的实际法力值消耗（减少后）",
+                    "naga-giant-tooltip": "当你手牌或牌库中有法术时，显示“纳迦巨人”的实际法力值消耗（减少后的）",
                     "shockspitter-label": "哮雷龙鹰",
                     "shockspitter-tooltip": "当“哮雷龙鹰”在你的手牌或牌库中时，显示其可造成的伤害",
-                    "parrot-mascot-label": "吉祥物鹦鹉（冒险模式专属）",
+                    "parrot-mascot-label": "吉祥物鹦鹉（“挑战之旅”冒险模式）",
                     "parrot-mascot-tooltip": "当“吉祥物鹦鹉”在你的手牌中时，显示你上回合使用的所有卡牌，按使用顺序排序",
                     "queensguard-label": "女王护卫",
                     "queensguard-tooltip": "当“女王护卫”在你的手牌中时，显示你在本回合中使用过的法术牌数量",
                     "spectral-pillager-label": "鬼灵匪贼",
-                    "spectral-pillager-tooltip": "当有需要时，显示本回合中你使用的其他牌的数量（相关卡牌：鬼灵匪贼）",
+                    "spectral-pillager-tooltip": "当“鬼灵匪贼”在你的手牌中时，显示本回合中你使用的其他卡牌的数量",
                     "lady-darkvein-label": "暗脉女勋爵",
-                    "lady-darkvein-tooltip": "当有需要时，显示你施放的上一个暗影法术（相关卡牌：暗脉女勋爵）",
+                    "lady-darkvein-tooltip": "当“暗脉女勋爵”在你的手牌中时，显示你施放的上一个暗影法术（如果有）",
                     "grey-sage-parrot-label": "灰贤鹦鹉",
-                    "grey-sage-parrot-tooltip": "当有需要时，显示你施放的上一个法力值消耗大于或等于 {{cost}} 点的法术（相关卡牌：灰贤鹦鹉）",
+                    "grey-sage-parrot-tooltip": "当“灰贤鹦鹉”在你的手牌中时，显示你施放的上一个{{cost}} 费及以上的法术（如果有）",
                     "multicaster-label": "法术派系",
                     "multicaster-tooltip": "显示在本局对战中你已使用过的法术派系",
                     "coral-keeper-label": "珊瑚培育师",
@@ -3096,25 +3107,27 @@
                     "secrets-tooltip": "当你拥有受益于已使用奥秘数量的卡牌时，显示使用过的奥秘数量",
                     "chaotic-tendril-label": "混乱触须",
                     "chaotic-tendril-tooltip": "显示你已使用的“混乱触须”数量",
-                    "secrets-label": "打出的奥秘",
+                    "secrets-label": "奥秘（已使用的）",
                     "excavate-label": "发掘",
                     "tram-heist-label": "飞车劫掠",
-                    "tram-heist-tooltip": "当你的手牌中有{{cardName}}时，显示你的对手上回合使用过的卡牌",
+                    "tram-heist-tooltip": "当“{{cardName}}”在你的手牌中时，显示你的对手上回合使用过的卡牌",
                     "dragons-summoned-label": "龙（已召唤的）",
                     "gardens-grace-label": "花园惠景",
-                    "gardens-grace-tooltip": "当你的手牌或牌库中有花园惠景时，显示它的实际费用（即减费后的）",
+                    "gardens-grace-tooltip": "当你的手牌或牌库中有“花园惠景”时，显示它的实际法力值消耗（减少后的）",
                     "dragons-summoned-tooltip": "显示你已召唤的龙的数量",
-                    "excavate-tooltip": "显示你当前和最多可发掘的等级，并在你的鼠标移至计数器时显示你可获得的下一等级的发掘宝藏",
+                    "excavate-tooltip": "显示你当前和最高的发掘等级，并在你的鼠标移至计数器时显示你可获得的下一等级的发掘宝藏",
                     "elemental-streak-tooltip": "记录你使用过元素牌的连续的回合。",
                     "elemental-streak-label": "元素链",
                     "wheel-of-death-label": "死亡轮盘",
                     "thirst-drifter-tooltip": "当你的手牌或牌库中有“口渴的流浪者”时，显示你已经使用的(1)费卡牌数量",
-                    "cards-drawn-tooltip": "当你的手牌中有“{{cardName}}”时，显示你已经抽到的卡牌数量",
+                    "cards-drawn-tooltip": "当“{{cardName}}”在你的手牌中时，显示你已经抽到的卡牌数量",
                     "thirst-drifter-label": "口渴的流浪者",
                     "cards-drawn-label": "已抽到的卡牌",
                     "wheel-of-death-tooltip": "在你使用{{cardName}}后，显示对手死亡前的剩余回合数",
                     "thirsty-drifter-label": "口渴的流浪者",
-                    "thirsty-drifter-tooltip": "当你的手牌或牌库中有口渴的流浪者，显示你已经使用过的(1)费卡牌数量"
+                    "thirsty-drifter-tooltip": "当“口渴的流浪者”在你的手牌或牌库中时，显示你已经使用过的(1)费卡牌数量",
+                    "pirates-summoned-tooltip": "显示你已召唤的海盗的数量",
+                    "pirates-summoned-label": "海盗（已召唤的）"
                 }
             },
             "duels": {
@@ -3315,7 +3328,7 @@
                 "title": "排行榜信息浮窗",
                 "text": "这些设置将使应用推送官方排行榜数据到浮窗上显示，这样你可以在游戏时直接看到其他玩家的等级分数信息",
                 "text-2": "重要：你需要将鼠标悬停在对手头像上，应用才能获取其在排行榜上的信息",
-                "text-3": "警告：排行榜仅包含较高分段（8000+）玩家的信息，并且我们只能使用昵称进行粗略匹配。所以如果你将这些信息用于中低分段对局，大概率会得到错误信息。",
+                "text-3": "警告：排行榜仅包含较高分段（8000+）玩家的信息，并且我们只能使用昵称进行模糊匹配。所以如果你将这些信息用于中低分段对局，大概率会得到错误信息。",
                 "show-in-leaderboard": "在左侧位次栏中显示",
                 "enable": "在浮窗上显示排行榜信息",
                 "show-in-leaderboard-tooltip": "直接在游戏内的位次栏中显示玩家昵称和等级分数信息",
@@ -3679,6 +3692,29 @@
         "beast-warrior": "威兹班传说猎",
         "big-demon-warlock": "大恶魔术",
         "f-warrior": "威兹班彩虹DK",
-        "wheel-warlock": "轮盘术"
+        "wheel-warlock": "轮盘术",
+        "bbu-control-dk": "控制邪血DK",
+        "bfu-handbuff-dk": "污手DK",
+        "lightshow-mage": "灯光法",
+        "murloc-shaman": "鱼人萨",
+        "naga-shopper-dh": "纳迦看客瞎",
+        "orb-mage": "星空法",
+        "painlock": "自残术",
+        "pip-priest": "威兹班牧",
+        "shopper-dh": "看客瞎",
+        "spell-damage-druid": "法强德",
+        "spell-damage-shaman": "法强萨",
+        "splendiferous-whizbang": "酷炫的威兹班",
+        "taunt-warrior": "嘲讽战",
+        "zoo-hunter": "超生猎",
+        "handbuff-paladin": "污手骑",
+        "bfu-rainbow-excavate-dk": "彩虹发掘DK"
+    },
+    "arena": {
+        "overlay": {
+            "mulligan": {
+                "mulligan-overview-footer": "vs {{opponentClass}} | {{sampleSize}} 场"
+            }
+        }
     }
 }
