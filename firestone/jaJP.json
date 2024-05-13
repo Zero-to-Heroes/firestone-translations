@@ -385,7 +385,8 @@
                 "my-runs": "自分の履歴",
                 "card-stats": "カード詳細",
                 "class-tier-list": "クラスTier表",
-                "arena-top-runs": "高勝利数の挑戦"
+                "arena-top-runs": "高勝利数の挑戦",
+                "my-stats": "自分の成績"
             },
             "filters": {
                 "time": {
@@ -394,7 +395,8 @@
                     "last-patch": "最新パッチ",
                     "past-100": "全期間",
                     "past-30": "過去30日間",
-                    "past-20": "過去20日間"
+                    "past-20": "過去20日間",
+                    "current-season": "現シーズン"
                 },
                 "card-type": {
                     "all": "全カードタイプ",
@@ -465,7 +467,10 @@
                 "header-drawn-winrate-tooltip": "このカードを引いた際の勝率を示します",
                 "header-mulligan-winrate-tooltip": "このカードが初期手札にあった際の平均勝率です",
                 "header-deck-winrate-tooltip": "このカードをデッキに含むときの勝率です",
-                "header-deck-total": "合計デッキ"
+                "header-deck-total": "合計デッキ",
+                "header-play-on-curve-winrate": "マナカーブプレイ時勝率",
+                "header-play-on-curve-winrate-tooltip": "このカードをマナカーブ通りにプレイできたときの勝率です(補足：カードのコストと自身の最大マナが一致してるときのこと)",
+                "header-play-on-curve-total": "マナカーブ通りにプレイされた回数"
             },
             "class-tier-list": {
                 "header-hero-name": "名前",
@@ -479,7 +484,13 @@
                 "deck-summary-header": "挑戦概要",
                 "picks-header": "ドラフトピック"
             },
-            "card-search-tooltip": "カンマ (,) を使うことで、複数のカードを同時に検索できます"
+            "card-search-tooltip": "カンマ (,) を使うことで、複数のカードを同時に検索できます",
+            "personal-stats": {
+                "header-average-wins": "挑戦ごとの平均勝利数",
+                "header-class-name": "クラス",
+                "header-runs": "挑戦",
+                "header-games-played": "試合回数"
+            }
         },
         "collection": {
             "menu": {
@@ -818,7 +829,9 @@
                     "legend": "レジェンド",
                     "platinum": "プラチナ",
                     "top-2000-legend": "Top2000 レジェンド",
-                    "all": "全てのランク"
+                    "all": "全てのランク",
+                    "competitive": "競技",
+                    "competitive-tooltip": "Top2000 レジェンドとダイヤモンド1-4"
                 },
                 "use-conservative-winrate-tooltip": "勝率推定において、サンプルサイズに関連する不確実性を統合します。",
                 "use-conservative-winrate": "現実的な勝率",
@@ -2448,7 +2461,7 @@
             },
             "minions-list": {
                 "reset-button": "リセット",
-                "mechanics-tier-tooltip": "{{value}} をすべて表示",
+                "mechanics-tier-tooltip": "{{value}} カードを全て表示します",
                 "buddies-tier-tooltip": "ゲーム内の全てのバディを表示します",
                 "highlight-tribe": "クリックして酒場の全ての{{value}}を強調表示します",
                 "unhighlight-tribe": "クリックして酒場の{{value}}の強調表示を解除します",
@@ -2456,7 +2469,7 @@
                 "unhighlight-mechanics": "クリックして酒場の{{value}}の強調表示を解除します",
                 "highlight-minion": "ピン留めして酒場のこのカードを強調表示します",
                 "unhighlight-minion": "ピン留めを外してこのカードの強調表示を解除します",
-                "minion-banned-tooltip": "このミニオンは現在の異常では出現しません"
+                "minion-banned-tooltip": "このカードは現在の異常では出現しません"
             },
             "quests": {
                 "turn-to-complete-tooltip": "あなたのMMR帯において、このヒーローとそのクエスト難易度で、このクエストを達成するための平均ターン数です(低いほど優れています)。このクエストの平均達成ターンは {{averageTurnsToComplete}}ターン、このヒーローの平均達成ターンは{{turnsToCompleteForHero}} ターン、難易度調整は{{turnsToCompleteImpact}}ターンです。",
@@ -3687,6 +3700,29 @@
         "bffuu-rainbow-dk": "レインボーデスナイト",
         "riff-warrior": "リフウォリアー",
         "weapon-dh": "武器デモハン",
-        "wheel-warlock": "大車輪ウォーロック"
+        "wheel-warlock": "大車輪ウォーロック",
+        "spell-damage-druid": "スペルダメージドルイド",
+        "zoo-hunter": "ズーハンター",
+        "shopper-dh": "ショッパーデモハン",
+        "splendiferous-whizbang": "デッキルカーナ・ウィズバン",
+        "pip-priest": "ピッププリースト",
+        "bfu-handbuff-dk": "ハンドバフデスナイト",
+        "handbuff-paladin": "ハンドバフパラディン",
+        "bfu-rainbow-excavate-dk": "レインボー発掘デスナイト",
+        "lightshow-mage": "ライトショーメイジ",
+        "naga-shopper-dh": "ナーガショッパーデモハン",
+        "painlock": "自傷ウォーロック",
+        "spell-damage-shaman": "スペルダメージシャーマン",
+        "bbu-control-dk": "赤赤緑コントロールデスナイト",
+        "murloc-shaman": "マーロックシャーマン",
+        "orb-mage": "プロジェクタードームメイジ",
+        "taunt-warrior": "挑発ウォリアー"
+    },
+    "arena": {
+        "overlay": {
+            "mulligan": {
+                "mulligan-overview-footer": "vs {{opponentClass}} | {{sampleSize}} 試合"
+            }
+        }
     }
 }
