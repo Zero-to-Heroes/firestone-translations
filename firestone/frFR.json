@@ -385,7 +385,8 @@
                 "my-runs": "Mes virées",
                 "class-tier-list": "Tierlist des classes",
                 "card-stats": "Stats de carte",
-                "arena-top-runs": "Meilleures virées"
+                "arena-top-runs": "Meilleures virées",
+                "my-stats": "Mes stats"
             },
             "filters": {
                 "time": {
@@ -394,7 +395,8 @@
                     "last-patch": "Dernière mise à jour",
                     "past-100": "Depuis toujours",
                     "past-30": "30 derniers jours",
-                    "past-20": "20 derniers jours"
+                    "past-20": "20 derniers jours",
+                    "current-season": "Saison actuelle"
                 },
                 "card-type": {
                     "all": "Tous les types de cartes",
@@ -454,7 +456,10 @@
                 "header-pickrate-tooltip": "La fréquence à laquelle cette carte est choisie lorsqu’elle est proposée dans la sélection des cartes",
                 "header-mulligan-winrate": "% victoires mulligan",
                 "header-mulligan-winrate-tooltip": "Le taux de victoires moyen lorsque cette carte est dans la main de départ",
-                "header-deck-winrate-tooltip": "Le taux de victoires des decks qui comportent cette carte"
+                "header-deck-winrate-tooltip": "Le taux de victoires des decks qui comportent cette carte",
+                "header-play-on-curve-winrate": "% victoires on curve",
+                "header-play-on-curve-winrate-tooltip": "Le taux de victoires quand vous jouez cette carte on curve, c'est-à-dire au tour où vous avez autant de mana que le coût de cette carte",
+                "header-play-on-curve-total": "Nb jouées on curve"
             },
             "class-tier-list": {
                 "header-placement-distribution-tooltip": "Indique à quel point une classe se détache des autres pour un nombre donné de victoires. ",
@@ -479,7 +484,13 @@
                 "picks-header": "Choix",
                 "deck-summary-header": "Aperçu de la virée"
             },
-            "card-search-tooltip": "Vous pouvez utiliser des virgules (,) pour rechercher plusieurs cartes à la fois."
+            "card-search-tooltip": "Vous pouvez utiliser des virgules (,) pour rechercher plusieurs cartes à la fois.",
+            "personal-stats": {
+                "header-class-name": "Classe",
+                "header-runs": "Virées",
+                "header-average-wins": "Nb de victoires moy.",
+                "header-games-played": "Parties jouées"
+            }
         },
         "collection": {
             "menu": {
@@ -819,7 +830,9 @@
                     "legend": "Légende",
                     "platinum": "Platine",
                     "top-2000-legend": "Top 2000 Légende",
-                    "all": "Tous les rangs"
+                    "all": "Tous les rangs",
+                    "competitive": "Compétitif",
+                    "competitive-tooltip": "Top 2000 Légende et Diamant 1–4"
                 },
                 "use-conservative-winrate-tooltip": "Intégrer l’incertitude liée à la taille de l’échantillon dans l’estimation du taux de victoires",
                 "sample-size-filter": "{{value}} parties",
@@ -2448,7 +2461,7 @@
             },
             "minions-list": {
                 "reset-button": "Réinitialiser",
-                "mechanics-tier-tooltip": "Voir tous les serviteurs avec {{value}}",
+                "mechanics-tier-tooltip": "Voir toutes les cartes avec {{value}}",
                 "buddies-tier-tooltip": "Voir tous les compagnons du jeu",
                 "highlight-tribe": "Cliquez pour mettre en valeur tous les serviteurs de type {{value}} dans la taverne",
                 "unhighlight-tribe": "Cliquez pour ne plus mettre en valeur les serviteurs de type {{value}} dans la taverne",
@@ -2456,7 +2469,7 @@
                 "unhighlight-mechanics": "Cliquez pour ne plus mettre en valeur les cartes avec {{value}} dans la taverne",
                 "highlight-minion": "Épingler cette carte pour la mettre en valeur dans la taverne",
                 "unhighlight-minion": "Désépingler cette carte pour ne plus la mettre en avant dans la taverne",
-                "minion-banned-tooltip": "Ce serviteur est absent à cause de l’anomalie actuelle"
+                "minion-banned-tooltip": "Cette carte est absente à cause de l’anomalie actuelle"
             },
             "quests": {
                 "turn-to-complete-tooltip": "Nombre moyen de tours pour terminer cette quête avec ce héros ou cette héroïne, cette difficulté de quête (plus elle est faible, mieux c’est), et à cote similaire à la vôtre. En moyenne, il faut {{averageTurnsToComplete}} tours pour compléter la quête, {{turnsToCompleteForHero}} tours avec ce héros ou cette héroïne, et le modificateur de difficulté est de {{turnsToCompleteImpact}}.",
@@ -3687,6 +3700,29 @@
         "murloc-warrior": "Guerrier Murlocs",
         "mystery-egg-hunter": "Chasseur œuf mystère",
         "f-warrior": "Guerrier S",
-        "wheel-warlock": "Démoniste roulette"
+        "wheel-warlock": "Démoniste roulette",
+        "spell-damage-druid": "Druide Dégâts des sorts",
+        "naga-shopper-dh": "DH Naga lèche-vitrines",
+        "handbuff-paladin": "Paladin handbuff",
+        "painlock": "Démoniste mutilation",
+        "shopper-dh": "DH lèche-vitrines",
+        "splendiferous-whizbang": "Mystifix le Magnifique",
+        "zoo-hunter": "Chasseur zoo",
+        "pip-priest": "Prêtre Pépite",
+        "bfu-rainbow-excavate-dk": "DK arc-en-ciel Déterrer",
+        "bfu-handbuff-dk": "DK handbuff",
+        "lightshow-mage": "Mage jeux de lumière",
+        "spell-damage-shaman": "Chaman Dégâts des sorts",
+        "bbu-control-dk": "DK contrôle SSI",
+        "murloc-shaman": "Chaman Murlocs",
+        "orb-mage": "Mage orbe",
+        "taunt-warrior": "Guerrier Provocation"
+    },
+    "arena": {
+        "overlay": {
+            "mulligan": {
+                "mulligan-overview-footer": "vs {{opponentClass}} | {{sampleSize]} parties"
+            }
+        }
     }
 }
