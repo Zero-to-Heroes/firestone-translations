@@ -13,7 +13,9 @@
             "shaman": "Chaman",
             "warlock": "Démoniste",
             "warrior": "Guerrier",
-            "neutral": "Neutre"
+            "neutral": "Neutre",
+            "dream": "Rêve",
+            "whizbang": "Mystifix"
         },
         "role": {
             "caster": "Lanceur de sorts",
@@ -343,7 +345,10 @@
                 "wins-value": "{{value}} % des virées"
             },
             "filters": {
-                "time-patch": "Patch {{value}}"
+                "time-patch": "Patch {{value}}",
+                "time": {
+                    "all-time-tooltip": "Inclut toutes les parties que vous avez chargées dans l’application. Par défaut, ces données sont celles des 100 derniers jours, mais vous pouvez les modifier dans les paramètres, sous Général > Données."
+                }
             }
         },
         "tray": {
@@ -425,7 +430,8 @@
                 "most-faced-classes": "Classes les plus rencontrées",
                 "best-winrate-against": "Meilleur taux de victoires contre",
                 "stat-tooltip": "Vous avez fait {{numberOfRuns}} virées et {{totalMatches}} parties en tant que {{playerClass}}, avec un taux de victoires de {{winrate}} %",
-                "faced-tooltip": "Vous avez rencontré un {{opponentClass}} {{totalMatches}} fois avec un taux de victoires de {{winrate}} %"
+                "faced-tooltip": "Vous avez rencontré un {{opponentClass}} {{totalMatches}} fois avec un taux de victoires de {{winrate}} %",
+                "total-games-played": "Nombre total de parties"
             },
             "runs": {
                 "view-run-button": "Voir la virée",
@@ -488,8 +494,14 @@
             "personal-stats": {
                 "header-class-name": "Classe",
                 "header-runs": "Virées",
-                "header-average-wins": "Nb de victoires moy.",
-                "header-games-played": "Parties jouées"
+                "header-average-wins": "Victoires par virée",
+                "header-games-played": "Parties jouées",
+                "leaderboard-average": "Moyenne du classement",
+                "header-time-played": "Temps de jeu",
+                "header-winrate": "Taux de victoires",
+                "header-winrate-coin": "Taux de victoires (La pièce)",
+                "header-winrate-first": "Taux de victoires (premier)",
+                "leaderboard-average-tooltip": "Votre moyenne telle qu’elle est calculée pour le classement. Les détails sont un peu complexes à détailler ici, n’hésitez pas à vous rendre sur Discord si vous souhaitez en savoir plus"
             }
         },
         "collection": {
@@ -1210,7 +1222,7 @@
                 "header-placement-distribution": "Distribution des places",
                 "header-combat-winrate": "% victoires en combat",
                 "header-net-mmr": "Gain de cote",
-                "header-tribes": "Types de la partie",
+                "header-tribes": "Meilleur en présence de :",
                 "header-tribes-tooltip": "Les types qui ont le meilleur impact sur la position moyenne du héros ou de l’héroïne lorsqu’ils sont dans la partie",
                 "tribe-info-tooltip": "Lorsqu’il y a des {{ tribe }} dans la taverne, la position moyenne du héros ou de l’héroïne est meilleure de {{value}} place",
                 "learn-more": "Comment ces données sont-elles calculées ?",
@@ -2025,6 +2037,9 @@
         },
         "cards-drawn": {
             "player": "Vous avez pioché {{value}} cartes pendant cette partie"
+        },
+        "holy-spells": {
+            "player": "Vous avez joué {{value}} sorts du Sacré pendant cette partie"
         }
     },
     "loading": {
@@ -3135,7 +3150,9 @@
                     "thirsty-drifter-label": "Nomade assoiffée",
                     "thirsty-drifter-tooltip": "Lorsque vous avez {{cardName}} en main ou dans votre deck, affiche de nombres de cartes à 1 cristal que vous avez jouées pendant cette partie",
                     "pirates-summoned-label": "Pirates invoqués",
-                    "pirates-summoned-tooltip": "Affiche le nombre de Pirates que vous avez invoqués"
+                    "pirates-summoned-tooltip": "Affiche le nombre de Pirates que vous avez invoqués",
+                    "holy-spells-label": "Sorts du Sacré",
+                    "holy-spells-tooltip": "Afficher le nombre de sorts du Sacré que vous avez lancés. Ce compteur apparaît lorsque vous avez dans votre main ou dans votre deck des cartes dont le coût est réduit quand vous lancez des sorts du Sacré"
                 }
             },
             "duels": {
