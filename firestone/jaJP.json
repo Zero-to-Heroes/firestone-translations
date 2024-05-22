@@ -13,7 +13,9 @@
             "shaman": "シャーマン",
             "warlock": "ウォーロック",
             "warrior": "ウォリアー",
-            "neutral": "中立"
+            "neutral": "中立",
+            "dream": "夢",
+            "whizbang": "ウィズバン"
         },
         "role": {
             "caster": "術師",
@@ -343,7 +345,10 @@
                 "wins-value": "勝率{{value}}%"
             },
             "filters": {
-                "time-patch": "パッチ{{value}}"
+                "time-patch": "パッチ{{value}}",
+                "time": {
+                    "all-time-tooltip": "このアプリでロードされた全ての試合を含みます。デフォルトでは過去100日間分ですが、設定>全般>データから変更することができます"
+                }
             }
         },
         "tray": {
@@ -425,7 +430,8 @@
                 "most-faced-classes": "最も対面するクラス",
                 "best-winrate-against": "最高勝率",
                 "stat-tooltip": "{{playerClass}}で {{numberOfRuns}} 回挑戦し、 {{totalMatches}} 試合を行い、 勝率は {{winrate}} %でした",
-                "faced-tooltip": "{{opponentClass}}と {{totalMatches}} 回対戦し、 勝率は {{winrate}}%です"
+                "faced-tooltip": "{{opponentClass}}と {{totalMatches}} 回対戦し、 勝率は {{winrate}}%です",
+                "total-games-played": "合計試合回数"
             },
             "runs": {
                 "view-run-button": "挑戦を表示",
@@ -486,10 +492,15 @@
             },
             "card-search-tooltip": "カンマ (,) を使うことで、複数のカードを同時に検索できます",
             "personal-stats": {
-                "header-average-wins": "挑戦ごとの平均勝利数",
+                "header-average-wins": "平均勝利数",
                 "header-class-name": "クラス",
                 "header-runs": "挑戦",
-                "header-games-played": "試合回数"
+                "header-games-played": "試合回数",
+                "leaderboard-average": "リーダーボードの平均",
+                "header-time-played": "プレイ回数",
+                "header-winrate": "勝率",
+                "header-winrate-coin": "後攻時勝率",
+                "header-winrate-first": "先攻時勝率"
             }
         },
         "collection": {
@@ -1210,7 +1221,7 @@
                 "header-placement-distribution": "順位分布",
                 "header-combat-winrate": "戦闘勝率",
                 "header-net-mmr": "Net MMR",
-                "header-tribes": "出現する種族",
+                "header-tribes": "ロビーで最も強い種族",
                 "header-tribes-tooltip": "試合に出現する時、そのヒーローの平均順位に最も寄与する種族",
                 "tribe-info-tooltip": "{{ tribe }} がロビーにいる場合、このヒーローの平均順位は {{value}} 上昇します。",
                 "learn-more": "このデータはどのように算出されますか？",
@@ -2025,6 +2036,9 @@
         "wheel-of-death": {
             "player": "あと{{value}}ターンで死ぬ！急げ！",
             "opponent": "対戦相手は{{value}}ターンで死ぬ！耐え抜け！"
+        },
+        "holy-spells": {
+            "player": "神聖呪文を{{value}}回使用した"
         }
     },
     "loading": {
@@ -3135,7 +3149,9 @@
                     "thirsty-drifter-label": "「のどが渇いた流れ者」",
                     "thirsty-drifter-tooltip": "「のどが渇いた流れ者」が手札かデッキにある場合、自分が使用したコスト1のカードの枚数を表示します",
                     "pirates-summoned-label": "召喚した海賊",
-                    "pirates-summoned-tooltip": "自分が召喚した海賊の数を表示します"
+                    "pirates-summoned-tooltip": "自分が召喚した海賊の数を表示します",
+                    "holy-spells-label": "神聖呪文",
+                    "holy-spells-tooltip": "自分が使用したパラディンのカードの枚数を表示します。神聖呪文を使用することでコストが減少するカードが手札かデッキにある場合に表示されます。"
                 }
             },
             "duels": {
