@@ -13,7 +13,9 @@
             "shaman": "萨满祭司",
             "warlock": "术士",
             "warrior": "战士",
-            "neutral": "中立"
+            "neutral": "中立",
+            "dream": "梦境",
+            "whizbang": "威兹班"
         },
         "role": {
             "caster": "施法者",
@@ -343,7 +345,10 @@
                 "wins-value": "占比 {{value}}%"
             },
             "filters": {
-                "time-patch": "补丁 {{value}}"
+                "time-patch": "补丁 {{value}}",
+                "time": {
+                    "all-time-tooltip": "此选项包含你在启用本应用时的所有对局。默认筛选最近100天，你可以在“通用-数据”选项卡中更改设置。"
+                }
             }
         },
         "tray": {
@@ -425,7 +430,8 @@
                 "most-faced-classes": "常见对手职业",
                 "best-winrate-against": "优势对战",
                 "stat-tooltip": "您使用 {{playerClass}} 玩了 {{numberOfRuns}} 轮竞技场，共 {{totalMatches}} 场对战 ，胜率为 {{winrate}}%",
-                "faced-tooltip": "您遇到了 {{opponentClass}} {{totalMatches}} 次，胜率为 {{winrate}}%"
+                "faced-tooltip": "您遇到了 {{opponentClass}} {{totalMatches}} 次，胜率为 {{winrate}}%",
+                "total-games-played": "对局总数"
             },
             "runs": {
                 "view-run-button": "查看此轮",
@@ -489,7 +495,13 @@
                 "header-average-wins": "平均胜场",
                 "header-class-name": "职业",
                 "header-games-played": "对局数",
-                "header-runs": "轮数"
+                "header-runs": "轮数",
+                "leaderboard-average": "均胜排行榜",
+                "header-winrate": "胜率",
+                "leaderboard-average-tooltip": "按排行榜规则计算的均胜。更多细节难以在此详述，详见Discord",
+                "header-winrate-coin": "后手胜率",
+                "header-time-played": "游戏时长",
+                "header-winrate-first": "先手胜率"
             }
         },
         "collection": {
@@ -1210,7 +1222,7 @@
                 "header-placement-distribution": "排名分布",
                 "header-combat-winrate": "战斗胜率",
                 "header-net-mmr": "MMR变化",
-                "header-tribes": "当前对局随从类型",
+                "header-tribes": "最强流派",
                 "header-tribes-tooltip": "当前对局中对这个英雄平均排名最有提升的随从类型",
                 "tribe-info-tooltip": "在对局中有 {{ tribe }} 时，这个英雄的平均排名提升了 {{value}}",
                 "learn-more": "这个梯队是怎么计算出来的？",
@@ -2025,6 +2037,9 @@
         },
         "cards-drawn": {
             "player": "本局对战中你已抽取{{value}}张牌"
+        },
+        "holy-spells": {
+            "player": "你已使用的神圣法术数量：{{value}}"
         }
     },
     "loading": {
@@ -3135,7 +3150,9 @@
                     "thirsty-drifter-label": "口渴的流浪者",
                     "thirsty-drifter-tooltip": "当“口渴的流浪者”在你的手牌或牌库中时，显示你已经使用过的(1)费卡牌数量",
                     "pirates-summoned-tooltip": "显示你已召唤的海盗的数量",
-                    "pirates-summoned-label": "海盗（已召唤的）"
+                    "pirates-summoned-label": "海盗（已召唤的）",
+                    "holy-spells-label": "神圣法术",
+                    "holy-spells-tooltip": "显示你已使用的圣骑士法术数量。仅当受益于已使用的神圣法术的卡牌在你的手牌或牌库中显示"
                 }
             },
             "duels": {
