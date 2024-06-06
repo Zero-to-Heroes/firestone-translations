@@ -108,7 +108,8 @@
             "wild_west": "バッドランドの決斗",
             "wild_west2": "バッドランドの決斗キャッチアップ",
             "deepholm": "深層究明ディープホルム",
-            "whizbangs_workshop": "ウィズバンのワクワクワークショップ"
+            "whizbangs_workshop": "ウィズバンのワクワクワークショップ",
+            "boom_inventions": "ブームの爆々博覧会"
         },
         "pack": {
             "classic": "クラシック",
@@ -466,7 +467,7 @@
                 "header-pickrate": "ピック率",
                 "header-pickrate-high-wins-tooltip": "少なくとも{{value}}勝した挑戦でのピック率",
                 "header-pickrate-high-wins": "ピック率 ({{value}}+勝)",
-                "header-pickrate-high-wins-short": "ピックレート {{value}}+",
+                "header-pickrate-high-wins-short": "ピック率 {{value}}+",
                 "header-deck-winrate": "デッキ勝率",
                 "header-mulligan-winrate": "マリガン勝率",
                 "header-pickrate-tooltip": "ドラフト提示時にピックされる頻度を示します",
@@ -593,7 +594,12 @@
                     "weapon": "武器",
                     "hero": "ヒーロー",
                     "location": "場所",
-                    "enchantment": "エンチャント"
+                    "enchantment": "エンチャント",
+                    "lettuce_ability": "能力(マーセナリーズ)",
+                    "hero_power": "ヒーローパワー",
+                    "battleground_anomaly": "異常(バトルグラウンド)",
+                    "battleground_quest_reward": "クエスト報酬(バトルグラウンド)",
+                    "battleground_spell": "呪文(バトルグラウンド)"
                 },
                 "set": "セット：",
                 "rarity": "レアリティ:",
@@ -997,7 +1003,7 @@
                         "copy-per-deck-header": "平均枚数",
                         "drawn-winrate-header-tooltip": "そのカードがマリガン終了時に手札にあるとき、またはゲーム中に引いたときのデッキ勝率",
                         "drawn-winrate-header": "ドロー時勝率",
-                        "mulligan-winrate-impact-header-tooltip": "そのカードがマリガン終了時に手札にあるときの、デッキ勝率に対する平均勝率。",
+                        "mulligan-winrate-impact-header-tooltip": "数値が高いほど優れています。そのカードがマリガン終了時に手札にあるときの、デッキ勝率に対する平均勝率です。",
                         "drawn-winrate-impact-header": "ドロー影響力",
                         "mulligan-winrate-impact-header": "マリガン影響力",
                         "drawn-winrate-impact-header-tooltip": "そのカードがマリガン終了時に手札にあるとき、またはゲーム中に引いたときの、デッキ勝率に対する平均勝率。"
@@ -1238,7 +1244,9 @@
                 "header-ungroup-difficulty-button": "分割",
                 "header-ungroup-difficulty-button-tooltip": "クエストをそれぞれの難易度ことに分割し、1行ずつ表示します",
                 "quest-tooltip-all-difficulties": "全ての難易度の{{questName}}",
-                "quest-tooltip-with-difficulty": "難易度{{difficulty}}での{{questName}} (クエストのカードテキストには {0} と表示)"
+                "quest-tooltip-with-difficulty": "難易度{{difficulty}}での{{questName}} (クエストのカードテキストには {0} と表示)",
+                "header-games-played": "試合回数",
+                "header-games-played-tooltip": "指定された期間に、このヒーローで試合をした回数です。"
             },
             "bgs-tier-list": {
                 "header": "クエストTierリスト ({{value}} 試合) "
@@ -2299,7 +2307,10 @@
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs {{opponentClass}} | {{sampleSize}} 試合",
                 "locked-premium-info-tooltip": "プレミアムになるとマリガンデータの詳細を見れます。毎日、無料で{{value}}回までこの機能を使えます",
                 "mulligan-keep-rate-tooltip": "このカードを初期手札で持てた際の勝率を示します",
-                "mulligan-keep-rate": "キープ"
+                "mulligan-keep-rate": "キープ率",
+                "deck-mulligan-filter-rank-bracket-tooltip": "{{rankBracket}}ランク帯での試合を表示します。クリックして変更できます",
+                "mulligan-card": "カード",
+                "deck-mulligan-filter-opponent-tooltip": "{{opponent}}相手の試合を表示します。クリックすると変更できます"
             }
         }
     },
@@ -2437,7 +2448,11 @@
             "total-matches": "{{value}} 試合",
             "tier-list-title-tooltip": "フィルタリングにマッチする {{totalMatches}} 試合から構成されています (統計を更新するためには、メイン画面からフィルタを変更して下さい)",
             "tier-list-title-footer": "最終更新日： {{lastUpdateDate}}",
-            "not-enough-data-points-warning": "このヒーローのサンプルサイズは小さいため({{vale}}件のみ)、戦績が無効になるかもしれません。バトルグラウンド用ウィンドウのヒーロー選択画面において、いくつかのフィルタの無効化を試すことができます"
+            "not-enough-data-points-warning": "このヒーローのサンプルサイズは小さいため({{vale}}件のみ)、戦績が無効になるかもしれません。バトルグラウンド用ウィンドウのヒーロー選択画面において、いくつかのフィルタの無効化を試すことができます",
+            "average-position": "平均順位",
+            "locked-premium-info-tooltip": "プレミアムになるとヒーローの詳細な戦績を見れます。この機能は、毎日{{value}}回まで無料で使えます",
+            "tier": "Tier",
+            "tribes-impact": "種族影響力"
         },
         "in-game": {
             "face-offs": {
@@ -2684,7 +2699,8 @@
                 "mods": "Mod",
                 "data": "データ",
                 "lottery": "抽選",
-                "discord": "Discord"
+                "discord": "Discord",
+                "appearance": "外観"
             },
             "mods": {
                 "title": "Mod",
@@ -2906,6 +2922,13 @@
                     "league": "{{league}}{{rank}}",
                     "mmr": "{{value}} MMR"
                 }
+            },
+            "appearance": {
+                "battlegrounds": {
+                    "title": "バトルグラウンド",
+                    "widget-background-color": "ウィジェットの背景色"
+                },
+                "reset-button": "全てリセット"
             }
         },
         "decktracker": {
@@ -2944,7 +2967,7 @@
                 "show-cost-reduction": "デッキのコストを更新",
                 "show-cost-reduction-tooltip": "カードの効果によってデッキ内のカードのコストが変化した場合、変化後のコストを表示します (例えば 「詠唱者の循環」 など)",
                 "show-unknown-cards": "不明なカードを表示",
-                "show-unknown-cards-tooltip": "情報がないカードを \"不明なカード\" としてデッキトラッカーに表示します。例えば、相手の手札のカードなどです",
+                "show-unknown-cards-tooltip": "情報がないカードを \"不明なカード\" としてデッキトラッカーに表示します",
                 "highlight-related-cards": "関連カードを強調表示",
                 "highlight-related-cards-tooltip": "オンにすると、デッキトラッカーで特定のカードにマウスオーバーしたとき、関連するカードが強調表示されます (例えば、デッキトラッカーで「二段ジャンプ」にマウスオーバーすると、デッキ内の異端カードが強調表示されます)",
                 "discover-help": "発見のヘルプを表示",
@@ -2966,7 +2989,9 @@
                 "group-same-cards-tooltip": "同じカードならば、死亡した･破棄された･破壊された･異なるマナコストでプレイされたなどに関わらず、同じグループにまとめて表示します",
                 "group-same-cards": "同じカードのグループ化",
                 "show-plagues-on-top": "｢疫病｣を一番上に表示",
-                "show-plagues-on-top-tooltip": "デスナイトの全ての疫病カードをデッキの一番上に表示し、目で追いやすくします"
+                "show-plagues-on-top-tooltip": "デスナイトの全ての疫病カードをデッキの一番上に表示し、目で追いやすくします",
+                "show-transformed-into-tooltip": "変身したカードをトラッカーに追加します",
+                "show-transformed-into-label": "変身したカードを表示"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
@@ -3055,7 +3080,9 @@
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
-                "hand-markers-title": "手札のマーク"
+                "hand-markers-title": "手札のマーク",
+                "known-decklist-label": "既知のデッキリストをロードする",
+                "known-decklist-tooltip": "有効にすると、対戦相手のデッキリストが既知の場合に、そのリストをロードします(例：ツイストで、「ウィズバンのヒーロー」シーズンをプレイしている時など)"
             },
             "your-deck": {
                 "ignore-decklist-label": "デッキリストを無視",
@@ -3152,7 +3179,7 @@
                     "pirates-summoned-label": "召喚した海賊",
                     "pirates-summoned-tooltip": "自分が召喚した海賊の数を表示します",
                     "holy-spells-label": "神聖呪文",
-                    "holy-spells-tooltip": "自分が使用したパラディンのカードの枚数を表示します。神聖呪文を使用することでコストが減少するカードが手札かデッキにある場合に表示されます。"
+                    "holy-spells-tooltip": "自分が使用した神聖呪文の枚数を表示します。神聖呪文を使用することでコストが減少するカードが手札かデッキにある場合に表示されます。"
                 }
             },
             "duels": {
@@ -3202,7 +3229,9 @@
                 "notifications-dust-recap-label": "合計魔素",
                 "notifications-non-golden-commons-label": "通常版のコモンカード",
                 "notifications-rewards-label": "報酬",
-                "notifications-rewards-tooltip": "シーズン終了時や闘技場の報酬など、パック以外からカードを入手したときに通知する"
+                "notifications-rewards-tooltip": "シーズン終了時や闘技場の報酬など、パック以外からカードを入手したときに通知する",
+                "show-transformed-info-tooltip": "変身したカードを表示します(例：動物変身でヒツジになったカードなど)",
+                "show-transformed-info-label": "変身したカードを表示"
             },
             "history-show-only-new-cards": "新規カードのみ表示",
             "pack-stats-show-only-buyable-packs": "メインパックのみ表示",
@@ -3248,7 +3277,7 @@
                 "show-achievements-tooltip": "ヒーロー選択画面で、各ヒーローの未達成の実績を表示します",
                 "show-hero-tooltip-label": "ヒーローのヒントを表示",
                 "show-hero-tooltip-tooltip": "ヒーロー選択画面で、ヒーローの画像にマウスオーバーすると、ヒーローの戦績と戦略のヒントを表示します",
-                "show-hero-tier-label": "ヒーローの Tier を表示",
+                "show-hero-tier-label": "ヒーロー統計オーバーレイ",
                 "show-hero-tier-tooltip": "ヒーロー選択画面で、ヒーローの Tier と全体の平均順位を直接表示します",
                 "show-hero-tips-label": "戦略のヒントを表示",
                 "show-hero-tips-tooltip": "ヒーローにマウスオーバーすると、脅威の教育球が現れて、君に今のヒーローにあう戦略のヒントを教えてくれるぞ！",
@@ -3270,7 +3299,9 @@
                 "show-minions-auto-highlight-tooltip": "特定のヒーローで常に有用なミニオンが酒場に並んだとき、それらを自動でハイライトします(例えば、\"海賊パッチーズ\"を使っているときの「宵越しの博打打ち」など)",
                 "show-tribes-auto-highlight-tooltip": "特定のヒーローで有用な種族が酒場に並んだとき、それらを自動的にハイライトします(例えば、\"シェンバーラ\"を使っているときのエレメンタルなど)",
                 "use-remote-simulator-label": "リモート戦闘シミュレータを使う",
-                "use-remote-simulator-tooltip": "オンにすると、戦闘シミュレータをリモートサーバーで実行します。これにより、パソコンの負荷が軽くなりますが、結果が出るまでに少し時間がかかるようになります。"
+                "use-remote-simulator-tooltip": "オンにすると、戦闘シミュレータをリモートサーバーで実行します。これにより、パソコンの負荷が軽くなりますが、結果が出るまでに少し時間がかかるようになります。",
+                "use-tribes-filter-for-live-stats-label-short": "種族フィルター",
+                "use-tribes-filter-for-live-stats-tooltip": "有効にすると、試合開始時にヒーロー選択画面で表示されるヒーローレーティングは、その試合にでるのと同じ種族のみを考慮するようになります。"
             },
             "overlay": {
                 "overlay-title": "オーバーレイ設定",
@@ -3733,7 +3764,8 @@
         "bbu-control-dk": "赤赤緑コントロールデスナイト",
         "murloc-shaman": "マーロックシャーマン",
         "orb-mage": "プロジェクタードームメイジ",
-        "taunt-warrior": "挑発ウォリアー"
+        "taunt-warrior": "挑発ウォリアー",
+        "arfus": "アーファス"
     },
     "arena": {
         "overlay": {
