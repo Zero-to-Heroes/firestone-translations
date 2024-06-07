@@ -108,7 +108,8 @@
             "wild_west": "决战荒芜之地",
             "wild_west2": "决战荒芜之地 追赶包",
             "deepholm": "深入深岩之洲",
-            "whizbangs_workshop": "威兹班的工坊"
+            "whizbangs_workshop": "威兹班的工坊",
+            "boom_inventions": "砰砰博士的疯狂发明"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -593,7 +594,12 @@
                     "weapon": "武器",
                     "hero": "英雄",
                     "location": "地标",
-                    "enchantment": "额外效果"
+                    "enchantment": "额外效果",
+                    "lettuce_ability": "佣兵技能",
+                    "battleground_anomaly": "战棋畸变",
+                    "hero_power": "英雄技能",
+                    "battleground_spell": "战棋法术",
+                    "battleground_quest_reward": "战棋任务奖励"
                 },
                 "set": "扩展包：",
                 "rarity": "稀有度：",
@@ -999,7 +1005,7 @@
                         "copy-1-header": "流行度",
                         "copy-per-deck-header-tooltip": "此类套牌中该卡牌的平均数量",
                         "copy-per-deck-header": "每套牌平均携带",
-                        "mulligan-winrate-impact-header-tooltip": "当此卡牌在你的起手调度后的手牌中时，套牌的平均胜率变化",
+                        "mulligan-winrate-impact-header-tooltip": "当此卡牌在你的起手调度后的手牌中时，套牌的平均胜率变化（数值越高越好）",
                         "drawn-winrate-impact-header-tooltip": "当此卡牌在对局中被抽到或出现在你的起手调度后的手牌中时，套牌的平均胜率变化",
                         "drawn-winrate-header-tooltip": "当此卡牌在对局中被抽到或出现在你的起手调度后的手牌中时，套牌的平均胜率",
                         "drawn-winrate-impact-header": "抽到影响",
@@ -1238,7 +1244,9 @@
                 "header-ungroup-difficulty-button": "分离显示",
                 "header-ungroup-difficulty-button-tooltip": "分离显示任务以在同一行内显示难度",
                 "quest-tooltip-all-difficulties": "{{questName}}的所有难度",
-                "header-group-difficulty-button": "合并显示"
+                "header-group-difficulty-button": "合并显示",
+                "header-games-played": "对战场数",
+                "header-games-played-tooltip": "在选定时间范围内使用此英雄的对局数"
             },
             "bgs-tier-list": {
                 "header": "任务评级表 ( {{value}} 场对战) "
@@ -2299,7 +2307,10 @@
                 "deck-mulligan-overview-title": "卡牌起手调度总览",
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs {{opponentClass}} | {{sampleSize}} 场对局",
                 "mulligan-keep-rate-tooltip": "此牌在起始手牌中的保留率",
-                "mulligan-keep-rate": "保留率"
+                "mulligan-keep-rate": "保留率%",
+                "mulligan-card": "卡牌",
+                "deck-mulligan-filter-opponent-tooltip": "显示对战{{opponent}}的对局。点击更改。",
+                "deck-mulligan-filter-rank-bracket-tooltip": "显示自{{rankBracket}}分段以来的对局。点击更改。"
             }
         }
     },
@@ -2437,7 +2448,11 @@
             "total-matches": "{{value}} 场对战",
             "tier-list-title-tooltip": "筛选后共计 {{totalMatches}} 场（更改主应用程序中的筛选规则将更新数据）：",
             "tier-list-title-footer": "最近更新于 {{lastUpdateDate}}",
-            "not-enough-data-points-warning": "此英雄的样本数量太少（仅{{value}}个数据点），因此数据将被剔除。你可以试试取消某些战棋数据页的筛选。"
+            "not-enough-data-points-warning": "此英雄的样本数量太少（仅{{value}}个数据点），因此数据将被剔除。你可以试试取消某些战棋数据页的筛选。",
+            "average-position": "平均位次",
+            "tier": "等级",
+            "locked-premium-info-tooltip": "订阅会员查看详细的英雄数据。此功能每日可免费使用{{value}}次。",
+            "tribes-impact": "随从类型影响"
         },
         "in-game": {
             "face-offs": {
@@ -2684,7 +2699,8 @@
                 "mods": "Mod",
                 "data": "数据",
                 "lottery": "抽奖",
-                "discord": "Discord"
+                "discord": "Discord",
+                "appearance": "外观"
             },
             "mods": {
                 "title": "Mod",
@@ -2906,6 +2922,13 @@
                     "mmr": "{{value}} MMR",
                     "league": "{{league}} {{rank}}"
                 }
+            },
+            "appearance": {
+                "battlegrounds": {
+                    "title": "酒馆战棋",
+                    "widget-background-color": "小部件背景色"
+                },
+                "reset-button": "重置全部"
             }
         },
         "decktracker": {
@@ -2944,7 +2967,7 @@
                 "show-cost-reduction": "更新套牌中的卡牌费用",
                 "show-cost-reduction-tooltip": "更新受到某些卡牌影响后，牌库中的卡牌费用（如“咒术洪流”）",
                 "show-unknown-cards": "显示未知卡牌",
-                "show-unknown-cards-tooltip": "在记牌器中为我们没有信息的卡牌标记上“未知卡牌”",
+                "show-unknown-cards-tooltip": "在记牌器中为我们没有信息的卡牌标记上“未知卡牌”。",
                 "highlight-related-cards": "高亮相关卡牌",
                 "highlight-related-cards-tooltip": "启用此功能，当鼠标悬停在特定卡牌上时，相关的卡片将会被高亮显示在您的套牌列表中 (例如，鼠标悬停在“二段跳”时，将会突出显示您套牌中的所有流放牌)",
                 "discover-help": "“发现”建议",
@@ -2966,7 +2989,9 @@
                 "group-same-cards-tooltip": "将卡牌按卡牌编号分类，不论其被弃、死亡、摧毁或以非原始费用使用等。",
                 "group-same-cards": "将相同卡牌合并列出",
                 "show-plagues-on-top-tooltip": "在记牌器的“牌库”顶显示全部死亡骑士疫病，以便追踪它们",
-                "show-plagues-on-top": "在顶部显示疫病牌"
+                "show-plagues-on-top": "在顶部显示疫病牌",
+                "show-transformed-into-tooltip": "将被变形的卡牌添加到记牌器中",
+                "show-transformed-into-label": "显示变形后的卡牌"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -3055,7 +3080,9 @@
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
-                "hand-markers-title": "手牌标记"
+                "hand-markers-title": "手牌标记",
+                "known-decklist-label": "加载已知卡牌列表",
+                "known-decklist-tooltip": "启用此功能，若在对局开始时知晓对手套牌详情，记牌器会自动加载当前对手的套牌（如幻变模式-“威兹班的英雄”）"
             },
             "your-deck": {
                 "ignore-decklist-label": "忽略卡组内容",
@@ -3152,7 +3179,7 @@
                     "pirates-summoned-tooltip": "显示你已召唤的海盗的数量",
                     "pirates-summoned-label": "海盗（已召唤的）",
                     "holy-spells-label": "神圣法术",
-                    "holy-spells-tooltip": "显示你已使用的圣骑士法术数量。仅当受益于已使用的神圣法术的卡牌在你的手牌或牌库中显示"
+                    "holy-spells-tooltip": "显示你已使用的神圣法术数量。仅当受益于已使用的神圣法术的卡牌在你的手牌或牌库中显示"
                 }
             },
             "duels": {
@@ -3202,7 +3229,9 @@
                 "notifications-dust-recap-label": "奥术之尘回顾",
                 "notifications-non-golden-commons-label": "非金色普通",
                 "notifications-rewards-label": "奖励",
-                "notifications-rewards-tooltip": "当您通过其他方式（如月末结算或竞技模式奖励）获得卡牌时，显示通知"
+                "notifications-rewards-tooltip": "当您通过其他方式（如月末结算或竞技模式奖励）获得卡牌时，显示通知",
+                "show-transformed-info-tooltip": "显示变形后的卡牌（如“变形术”变出的绵羊）",
+                "show-transformed-info-label": "显示变形后的卡牌"
             },
             "history-show-only-new-cards": "只显示新卡牌",
             "pack-stats-show-only-buyable-packs": "只显示可购买的卡牌包",
@@ -3248,7 +3277,7 @@
                 "show-achievements-tooltip": "在英雄选择阶段显示每个英雄尚未完成的成就",
                 "show-hero-tooltip-label": "显示英雄提示",
                 "show-hero-tooltip-tooltip": "选择英雄时，鼠标悬停在英雄头像上会显示英雄的统计数据和玩法建议",
-                "show-hero-tier-label": "显示英雄评级",
+                "show-hero-tier-label": "英雄数据概览",
                 "show-hero-tier-tooltip": "在选择英雄时在英雄头像上显示英雄评级和全球平均名次。",
                 "show-hero-tips-label": "显示玩法建议",
                 "show-hero-tips-tooltip": "神奇的智慧之球将会在鼠标悬停时显示职业玩家建议",
@@ -3270,7 +3299,9 @@
                 "show-tribes-auto-highlight-tooltip": "在扮演特定英雄时自动高亮特定种族的随从（例如在扮演齐恩瓦拉时高亮元素）",
                 "show-minions-auto-highlight-tooltip": "在扮演特定英雄时自动高亮特定的随从（例如在扮演海盗帕奇斯时高亮白赚赌徒）",
                 "use-remote-simulator-label": "使用云端战斗模拟器",
-                "use-remote-simulator-tooltip": "开启后将在云端模拟战斗结果。可以减小对电脑的占用，但计算结果会稍有延迟。"
+                "use-remote-simulator-tooltip": "开启后将在云端模拟战斗结果。可以减小对电脑的占用，但计算结果会稍有延迟。",
+                "use-tribes-filter-for-live-stats-label-short": "筛选随从类型",
+                "use-tribes-filter-for-live-stats-tooltip": "启用此功能，会在对局开始时的英雄选择界面中显示考虑当前对局随从池的英雄评级"
             },
             "overlay": {
                 "overlay-title": "浮窗选项",
@@ -3733,7 +3764,8 @@
         "taunt-warrior": "嘲讽战",
         "zoo-hunter": "超生猎",
         "handbuff-paladin": "污手骑",
-        "bfu-rainbow-excavate-dk": "彩虹发掘DK"
+        "bfu-rainbow-excavate-dk": "彩虹发掘DK",
+        "arfus": "阿尔福斯"
     },
     "arena": {
         "overlay": {
