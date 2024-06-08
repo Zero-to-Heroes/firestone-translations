@@ -108,7 +108,8 @@
             "wild_west": "Rixe en terres Ingrates",
             "wild_west2": "Rattrapage (Rixe en terres Ingrates)",
             "deepholm": "Exploration du Tréfonds",
-            "whizbangs_workshop": "L’Atelier de Mystifix"
+            "whizbangs_workshop": "L’Atelier de Mystifix",
+            "boom_inventions": "Incroyables inventions du Dr Boum"
         },
         "pack": {
             "classic": "Classique",
@@ -593,7 +594,12 @@
                     "weapon": "Arme",
                     "hero": "Héros",
                     "location": "Lieu",
-                    "enchantment": "Enchantement"
+                    "enchantment": "Enchantement",
+                    "lettuce_ability": "Capacité (Mercenaires)",
+                    "battleground_anomaly": "Anomalie (Champs de bataille)",
+                    "hero_power": "Pouvoir héroïque",
+                    "battleground_quest_reward": "Récompense de Quête (Champs de bataille)",
+                    "battleground_spell": "Sort (Champs de bataille)"
                 },
                 "set": "Ensemble :",
                 "rarity": "Rareté :",
@@ -781,7 +787,7 @@
                 "meta-archetypes-header": "Archétypes de la méta"
             },
             "filters": {
-                "filter-info-tooltip": "La modification de ces filtres aura également un impact sur les statistiques affichées dans le decktracker en jeu",
+                "filter-info-tooltip": "La modification de ces filtres aura également un impact sur les stats affichées dans le decktracker en jeu",
                 "show-hidden-decks": "Afficher les archives",
                 "use-conservative-estimate": "Rang réel",
                 "use-conservative-estimate-tooltip": "Prendre en compte l’incertitude liée à la taille de l’échantillon dans l’estimation de la place moyenne.",
@@ -882,7 +888,7 @@
                 "deck-archived": "Le deck est archivé, mais compte toujours dans les stats globales. Éliminez cette version si vous voulez qu’il soit ignoré"
             },
             "deck-recap": {
-                "overall-stats-header": "Statistiques générales",
+                "overall-stats-header": "Stats générales",
                 "watch-replays-button": "Regarder les replays",
                 "best-against": "Meilleur contre",
                 "winrate": "victoires",
@@ -996,8 +1002,8 @@
                         "show-relative-info-button-tooltip": "Afficher le taux de victoires de chaque carte par rapport à celui de l'archétype",
                         "copy-per-deck-header-tooltip": "Nombre moyen de copies de cette carte dans les decks de cet archétype",
                         "copy-per-deck-header": "Nb moy. de copies",
-                        "mulligan-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoire du jeu lorsque la carte commence dans votre main de départ à la fin du mulligan",
-                        "drawn-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du jeu lorsque la carte est piochée en cours de partie ou dans votre main de départ à la fin du mulligan",
+                        "mulligan-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du deck lorsque la carte commence dans votre main de départ à la fin du mulligan (plus la valeur est élevée, mieux c’est)",
+                        "drawn-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du deck lorsque la carte est piochée en cours de partie ou dans votre main de départ à la fin du mulligan",
                         "drawn-winrate-header-tooltip": "Taux de victoires moyen lorsque la carte est piochée en cours de partie ou présente dans votre main de départ à la fin du mulligan",
                         "drawn-winrate-impact-header": "Impact quand piochée",
                         "drawn-winrate-header": "% victoires (piochée)",
@@ -1238,7 +1244,9 @@
                 "reward-search-placeholder": "Rechercher...",
                 "header-ungroup-difficulty-button-tooltip": "Séparer les quêtes pour que chaque difficulté apparaisse sur sa propre ligne",
                 "quest-tooltip-all-difficulties": "« {{questName}} » pour toutes les difficultés",
-                "quest-tooltip-with-difficulty": "« {{questName}} » avec la difficulté {{difficulty}} (apparaît en tant que {0} dans le texte de la quête)"
+                "quest-tooltip-with-difficulty": "« {{questName}} » avec la difficulté {{difficulty}} (apparaît en tant que {0} dans le texte de la quête)",
+                "header-games-played": "Parties jouées",
+                "header-games-played-tooltip": "Le nombre de parties que vous avez jouées avec ce héros ou cette héroïne pendant la période sélectionnée"
             },
             "bgs-tier-list": {
                 "header": "Tierlist des quêtes ({{value}} parties) "
@@ -1657,7 +1665,7 @@
             "achievements_pick_for_me": "Vous pouvez laisser l’application choisir automatiquement 3 hauts faits à suivre",
             "lottery": "Vous pouvez participer à un tirage au sort mensuel pour gagner des abonnements Firestone Premium (activez-le à partir de Paramètres > Général > Loterie).",
             "deck_merge": "Vous pouvez fusionner un deck en tant que nouvelle version d'un autre en le faisant glisser sur l’ancienne version",
-            "achievements_pin": "Sélectionnez n’importe quel nombre de hauts faits pour les suivre pendant le jeu et les voir s’actualiser en temps réel",
+            "achievements_pin": "Sélectionnez n’importe quel nombre de hauts faits pour les suivre en jeu et les voir s’actualiser en temps réel",
             "collection_stats": "Vous pouvez consulter l’historique des cartes et les stats globales des ensembles affichés, et passer de l’un à l’autre à tout moment.",
             "mercs_terasure_highlight": "Passer la souris sur un trésor dans Mercenaires met en surbrillance les synergies de votre groupe",
             "bg_tab_key": "Appuyez sur « Tab » pour avoir un aperçu rapide de la progression de tous les joueurs",
@@ -2058,7 +2066,7 @@
         "steps": {
             "decktracker": {
                 "title": "Decktracker",
-                "text": "Suivez vos cartes en jeu et les statistiques de vos decks."
+                "text": "Suivez vos cartes pendant une partie et les stats de vos decks."
             },
             "battlegrounds": {
                 "title": "Champs de bataille",
@@ -2082,7 +2090,7 @@
             },
             "collection": {
                 "title": "Collection",
-                "text": "Vous pouvez trouver ici toutes les cartes du jeu, avec des informations détaillées (vous pouvez même jouer les sons qu’ils font)."
+                "text": "Vous pouvez trouver ici toutes les cartes du jeu, avec des informations détaillées (vous pouvez même jouer leurs audios)."
             }
         }
     },
@@ -2299,7 +2307,10 @@
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs {{opponentClass}} | {{sampleSize}} parties",
                 "locked-premium-info-tooltip": "Devenez Premium pour voir les données détaillées du mulligan de votre deck. Vous pouvez utiliser cette fonctionnalité gratuitement {{value}} fois par jour.",
                 "mulligan-keep-rate-tooltip": "À quelle fréquence cette carte est conservée dans la main de départ.",
-                "mulligan-keep-rate": "Conservée"
+                "mulligan-keep-rate": "% conservée",
+                "deck-mulligan-filter-rank-bracket-tooltip": "Afficher les parties du rang {{rankBracket}}. Cliquez pour modifier.",
+                "mulligan-card": "Carte",
+                "deck-mulligan-filter-opponent-tooltip": "Afficher les parties contre {{opponent}}. Cliquez pour modifier."
             }
         }
     },
@@ -2437,7 +2448,11 @@
             "total-matches": "{{value}} parties",
             "tier-list-title-tooltip": "Construit à partir de {{totalMatches}} parties avec les filtres suivants (changer les filtres dans l’application principale pour mettre à jour les stats) :",
             "tier-list-title-footer": "Dernière mise à jour le {{lastUpdateDate}}",
-            "not-enough-data-points-warning": "La taille de l’échantillon pour ce personnage est faible (seulement {{value}} points de données), donc les stats peuvent être inexactes. Vous pouvez essayer de désactiver certains filtres dans l’écran de sélection des héros et héroïnes de la fenêtre Champs de bataille."
+            "not-enough-data-points-warning": "La taille de l’échantillon pour ce personnage est faible (seulement {{value}} points de données), donc les stats peuvent être inexactes. Vous pouvez essayer de désactiver certains filtres dans l’écran de sélection des héros et héroïnes de la fenêtre Champs de bataille.",
+            "tier": "Niveau",
+            "tribes-impact": "Impact des types",
+            "average-position": "Position moy.",
+            "locked-premium-info-tooltip": "Devenez Premium pour voir les stats détaillées des héros et héroïnes. Vous pouvez utiliser cette fonctionnalité gratuitement {{value}} fois par jour."
         },
         "in-game": {
             "face-offs": {
@@ -2564,7 +2579,7 @@
             "opponent-not-met": "Vous n’avez pas encore combattu cet adversaire",
             "last-board-empty": "La dernière troupe de guerre était vide",
             "total-damage": "Dégâts totaux",
-            "stats-share-warning": "Plusieurs serviteurs distincts, ainsi que des serviteurs dorés, partagent les mêmes statistiques (en raison de la façon dont Champs de bataille est codé)"
+            "stats-share-warning": "Plusieurs serviteurs distincts, ainsi que les serviteurs dorés, partagent les mêmes stats (en raison de la façon dont Champs de bataille est codé)"
         },
         "empty-state-title": "Rien ici pour le moment",
         "empty-state-subtitle": "Commencez à jouer à Champs de bataille pour collecter des informations"
@@ -2684,7 +2699,8 @@
                 "mods": "Mods",
                 "data": "Données",
                 "lottery": "Loterie",
-                "discord": "Discord"
+                "discord": "Discord",
+                "appearance": "Apparence"
             },
             "mods": {
                 "title": "Mods",
@@ -2906,6 +2922,13 @@
                     "text": "Vous pouvez personnaliser le texte qui s’affiche lorsque vous êtes dans une partie. Vous pouvez utiliser les mots magiques suivants :"
                 },
                 "discord-presence-label": "Infos Discord détaillées"
+            },
+            "appearance": {
+                "battlegrounds": {
+                    "title": "Champs de bataille",
+                    "widget-background-color": "Widget de couleur d’arrière-plan"
+                },
+                "reset-button": "Tout réinitialiser"
             }
         },
         "decktracker": {
@@ -2944,7 +2967,7 @@
                 "show-cost-reduction": "Mettre à jour le coût dans le deck",
                 "show-cost-reduction-tooltip": "Mettre à jour le coût en mana des cartes dans le deck quand leur coût a été modifié par un effet (ex : Flux de l’incantatrice)",
                 "show-unknown-cards": "Afficher les cartes inconnues",
-                "show-unknown-cards-tooltip": "Ajouter une entrée « Carte inconnue » dans le decktracker pour les cartes pour lesquelles nous n’avons aucune information",
+                "show-unknown-cards-tooltip": "Ajouter une entrée « Carte inconnue » dans le decktracker pour les cartes pour lesquelles nous n’avons aucune information.",
                 "highlight-related-cards": "Faire briller les cartes liées",
                 "highlight-related-cards-tooltip": "Lorsque cette option est activée, les cartes connexes dans votre liste de cartes sont en surbrillance quand vous passez la souris sur des cartes spécifiques (ex : passer la souris sur Double saut dans votre liste de cartes mettra en surbrillance les cartes avec Marginal de votre deck)",
                 "discover-help": "Aide contextuelle à la découverte",
@@ -2966,7 +2989,9 @@
                 "group-same-cards-tooltip": "Regrouper toutes les cartes ayant le même ID, qu’elles aient été défaussées, détruites, brûlées, jouées avec un coût différent, etc.",
                 "group-same-cards": "Regrouper les cartes identiques",
                 "show-plagues-on-top": "Afficher les Pestes en haut du deck",
-                "show-plagues-on-top-tooltip": "Affichez tous les Pestes de chevalier de la mort en haut de votre deck pour une meilleure lecture."
+                "show-plagues-on-top-tooltip": "Affichez tous les Pestes de chevalier de la mort en haut de votre deck pour une meilleure lecture.",
+                "show-transformed-into-label": "Afficher les transformations",
+                "show-transformed-into-tooltip": "Ajoute dans le decktracker les cartes en lesquelles d’autres cartes ont été transformées"
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
@@ -3055,7 +3080,9 @@
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
-                "hand-markers-title": "Marqueurs en main"
+                "hand-markers-title": "Marqueurs en main",
+                "known-decklist-label": "Charger les decks connus",
+                "known-decklist-tooltip": "Lorsque cette option est activée, le decktracker essaiera de charger le deck de l’adversaire actuel au début de la partie s’il s'agit d’un deck connu (comme lors de la saison d’Imprévu Héroïsme de Mystifix)"
             },
             "your-deck": {
                 "ignore-decklist-label": "Ignorer le deck",
@@ -3202,7 +3229,9 @@
                 "notifications-dust-recap-label": "Récap de poussière",
                 "notifications-non-golden-commons-label": "Communes non dorées",
                 "notifications-rewards-label": "Récompenses",
-                "notifications-rewards-tooltip": "Afficher une notification quand vous obtenez une carte en dehors d’un paquet, notamment lors des récompenses de fin de saison ou d’Arène"
+                "notifications-rewards-tooltip": "Afficher une notification quand vous obtenez une carte en dehors d’un paquet, notamment lors des récompenses de fin de saison ou d’Arène",
+                "show-transformed-info-label": "Afficher les transformations",
+                "show-transformed-info-tooltip": "Afficher les cartes en lesquelles d’autres cartes ont été transformées (par exemple, lorsqu’un serviteur est métamorphosé en mouton)"
             },
             "history-show-only-new-cards": "Nouvelles uniquement",
             "pack-stats-show-only-buyable-packs": "Afficher uniquement les paquets principaux",
@@ -3248,7 +3277,7 @@
                 "show-achievements-tooltip": "Affiche les hauts faits manquants pour chaque personnage lors de la sélection du héros ou de l’héroïne",
                 "show-hero-tooltip-label": "Afficher les infobulles des héros et héroïnes",
                 "show-hero-tooltip-tooltip": "Affiche les stats des personnages en passant la souris sur leur portrait dans l’écran de sélection des héros et héroïnes.",
-                "show-hero-tier-label": "Afficher le niveau des héros et héroïnes",
+                "show-hero-tier-label": "Overlay des stats des héros",
                 "show-hero-tier-tooltip": "Affiche le niveau du héros ou de l’héroïne et sa position moyenne globale directement sur son portrait lors de la sélection des héros et héroïnes.",
                 "show-hero-tips-label": "Afficher les conseils de stratégie",
                 "show-hero-tips-tooltip": "La sphère de sagesse miraculeuse apparaît et vous permet de voir rapidement des conseils de pro pour le héros ou l’héroïne que vous jouez en passant la souris dessus.",
@@ -3270,7 +3299,9 @@
                 "show-minions-auto-highlight-tooltip": "Met automatiquement en surbrillance certains serviteurs dans la taverne indispensables avec certains héros ou certaines héroïnes (par exemple, la parieuse convaincante avec Neunœuil le pirate).",
                 "show-tribes-auto-highlight-tooltip": "Met automatiquement en surbrillance certains types dans la taverne indispensables avec certains héros ou certaines héroïnes (par exemple, les Élémentaires avec Chenvaa’la).",
                 "use-remote-simulator-tooltip": "Lorsque cette option est activée, les simulations de combat seront exécutées sur un serveur distant, libérant ainsi votre machine. Cependant, les résultats mettront un peu plus de temps à arriver",
-                "use-remote-simulator-label": "Simuler les combats à distance"
+                "use-remote-simulator-label": "Simuler les combats à distance",
+                "use-tribes-filter-for-live-stats-label-short": "Filtre de types",
+                "use-tribes-filter-for-live-stats-tooltip": "Lorsque cette option est activée, le niveau des héros et héroïnes affiché sur l'écran de sélection des héros prend en compte les types de serviteurs présents dans la partie"
             },
             "overlay": {
                 "overlay-title": "Configuration de l’overlay",
@@ -3733,7 +3764,8 @@
         "bbu-control-dk": "DK contrôle SSI",
         "murloc-shaman": "Chaman Murlocs",
         "orb-mage": "Mage orbe",
-        "taunt-warrior": "Guerrier Provocation"
+        "taunt-warrior": "Guerrier Provocation",
+        "arfus": "Arfus"
     },
     "arena": {
         "overlay": {
