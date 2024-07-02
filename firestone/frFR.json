@@ -463,7 +463,7 @@
                 "header-offered-total": "Nb total offert",
                 "header-pickrate-high-wins-short": "Choix {{value}}+",
                 "header-drawn-winrate-tooltip": "La fréquence à laquelle le deck gagne après avoir piochée la carte",
-                "header-deck-total": "Nb total de decks",
+                "header-deck-total": "Nb parties",
                 "header-deck-winrate": "% victoires deck",
                 "header-pickrate-tooltip": "La fréquence à laquelle cette carte est choisie lorsqu’elle est proposée dans la sélection des cartes",
                 "header-mulligan-winrate": "% victoires mulligan",
@@ -471,7 +471,8 @@
                 "header-deck-winrate-tooltip": "Le taux de victoires des decks qui comportent cette carte",
                 "header-play-on-curve-winrate": "% victoires on curve",
                 "header-play-on-curve-winrate-tooltip": "Le taux de victoires quand vous jouez cette carte on curve, c'est-à-dire au tour où vous avez autant de mana que le coût de cette carte",
-                "header-play-on-curve-total": "Nb jouées on curve"
+                "header-play-on-curve-total": "Nb jouées on curve",
+                "header-deck-total-tooltip": "Le nombre de parties avec cette carte dans le deck"
             },
             "class-tier-list": {
                 "header-placement-distribution-tooltip": "Indique à quel point une classe se détache des autres pour un nombre donné de victoires. ",
@@ -1855,6 +1856,46 @@
             "unsubscribe-button-tooltip": "Se désabonner du plan actuel. Votre abonnement restera valable jusqu’à la fin de la période en cours et ne sera pas renouvelé automatiquement.",
             "subscribe-button-upgrade": "Améliorer",
             "check-status-online-link": "sur Tebex"
+        },
+        "communities": {
+            "manage": {
+                "status": {
+                    "error": "Une erreur est survenue en rejoignant la guilde",
+                    "joining": "Arrivée dans la guilde..."
+                },
+                "create-text": "Créer une guilde",
+                "join-text": "Rejoindre une guilde",
+                "create-text-disabled-tooltip": "Cette fonctionnalité est encore en bêta et en cours de développement. Si vous streamez et que vous souhaitez créer une guilde, veuillez m’envoyer un message sur Discord (le lien est en haut de l’application)"
+            },
+            "join": {
+                "join-button": "Rejoindre",
+                "title": "Rejoindre une guilde",
+                "text": "Veuillez entre le code donné par l’hôte ou l’hôtesse de la guilde"
+            },
+            "menu": {
+                "manage": "Gérer",
+                "my-communities": "Mes guildes"
+            },
+            "details": {
+                "total-members": "membres",
+                "communities": {
+                    "games-header": "Parties de la semaine dernière",
+                    "members-header": "Membres",
+                    "name-header": "Nom",
+                    "empty-communities": "Vous ne faites partie d’aucune guilde pour le moment"
+                },
+                "leaderboards": {
+                    "header": "Classements",
+                    "name-header": "Nom",
+                    "rank-header": "Rang",
+                    "rating-header": "Cote",
+                    "runs-completed-header": "Virées",
+                    "empty-leaderboard": "Il n’y a personne dans ce classement pour le moment"
+                },
+                "games-played": "parties jouées dans les {{value}} derniers jours"
+            },
+            "please-log-in": "Veuillez vous connecter pour utiliser les fonctionnalités de guilde",
+            "what-are-guilds": "Les... guildes ?"
         }
     },
     "turn-timer": {
@@ -2349,7 +2390,8 @@
                 "reason-pirate": "Forban + Baron / Khadgar",
                 "reason-festergut": "Pulentraille",
                 "bug": "Une erreur inconnue est survenue, un rapport de bug a été envoyé automatiquement aux développeurs",
-                "reason-stitched": "Création de Putricide"
+                "reason-stitched": "Création de Putricide",
+                "reason-enchantment": "Enchantement {{cardName}}"
             },
             "result": {
                 "won": "victoire",
