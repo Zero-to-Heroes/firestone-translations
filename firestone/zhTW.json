@@ -1,7 +1,7 @@
 {
     "global": {
         "class": {
-            "all": "所有職業",
+            "all": "全部職業",
             "deathknight": "死亡騎士",
             "demonhunter": "惡魔獵人",
             "druid": "德魯伊",
@@ -24,7 +24,7 @@
             "standard": "標準",
             "wild": "開放",
             "classic": "經典",
-            "twist": "轉變"
+            "twist": "扭曲"
         },
         "game-mode": {
             "casual-duels": "決鬥擂台",
@@ -44,11 +44,12 @@
             "ranked": "排名模式"
         },
         "region": {
-            "all": "所有區域",
+            "all": "全部區域",
             "region_us": "美洲",
             "region_eu": "歐洲",
             "region_kr": "亞太地區",
-            "region_cn": "中國"
+            "region_cn": "中國",
+            "us": "美洲"
         },
         "set": {
             "hero_skins": "-",
@@ -232,7 +233,7 @@
             "reborn": "重生"
         },
         "legendary-minion": "傳說手下",
-        "patch": "補丁 {{version}}.{{number}} 於 {{date}} 發布",
+        "patch": "於 {{date}} 發佈了版本 {{version}}.{{number}}",
         "hs-terms": {
             "attack": "攻擊力",
             "health": "生命值",
@@ -286,7 +287,8 @@
             "duels-signature-treasure-header": "珍藏",
             "profile-shared-button-text": "不分享",
             "profile-shared-button-tooltip": "您的個人資料目前以“{{shareAlias}}”分享，任何知道連結的人都可以看到。按一下可停止共用。",
-            "duels-active-treasure-header": "寶藏"
+            "duels-active-treasure-header": "寶藏",
+            "communities-header": "公會"
         },
         "global": {
             "reward": {
@@ -294,7 +296,7 @@
                 "dust": "魔塵",
                 "pack": "卡包",
                 "gold": "金幣",
-                "card": "金卡"
+                "card": "卡牌"
             },
             "controls": {
                 "bug-button-tooltip": "回報錯誤",
@@ -309,15 +311,16 @@
                 "multiselect-reset-button": "重設",
                 "hotkey-text": "顯示/隱藏",
                 "no-hotkey-assigned": "沒有設定快捷鍵",
-                "website-button-tooltip": "使用網頁版（僅限進階）"
+                "website-button-tooltip": "使用網頁版（僅限進階）",
+                "close-button-tooltip": "關閉這個視窗"
             },
             "ads": {
                 "support-the-dev": "支援開發並刪除廣告",
                 "supporter": "感謝您對我們的支持！您很酷:)",
-                "features-link": "点击檢視您将获得的所有進階功能",
+                "features-link": "点击檢視您将获得的全部進階功能",
                 "unlock-text": "解鎖進階功能",
                 "cta-text": "立刻升級",
-                "unlock-subtext": "並移除所有廣告"
+                "unlock-subtext": "並移除全部廣告"
             },
             "graph": {
                 "tooltip-title": "標題",
@@ -325,7 +328,10 @@
                 "wins-value": "局數的 {{value}}%"
             },
             "filters": {
-                "time-patch": "修補 {{value}}"
+                "time-patch": "當前版本 {{value}}",
+                "time": {
+                    "all-time-tooltip": "包括您在應用程式中加載的全部遊戲。預設情況下，這些數據是過去 100 天的數據，但您可以在「設定」中的「常項」>「數據」下變更此設定。"
+                }
             }
         },
         "tray": {
@@ -354,7 +360,7 @@
             }
         },
         "loading": {
-            "title": "我們正在加載所有的東西",
+            "title": "我們正在加載全部的東西",
             "subtitle": "我們正在收集信息，請稍候"
         },
         "updates": {
@@ -366,7 +372,7 @@
             "menu": {
                 "my-runs": "我的戰局",
                 "card-stats": "卡牌統計",
-                "class-tier-list": "職業星等列表",
+                "class-tier-list": "職業名次列表",
                 "my-stats": "我的統計",
                 "arena-top-runs": "高勝局數"
             },
@@ -382,20 +388,20 @@
                 },
                 "card-type": {
                     "legendary": "傳説",
-                    "all": "所有形態卡牌",
+                    "all": "全部形態卡牌",
                     "other": "其它",
                     "treasure": "寶藏"
                 },
                 "card-class": {
                     "no-neutral": "排除中立",
                     "neutral": "只有中立",
-                    "all": "所有職業卡牌"
+                    "all": "全部職業卡牌"
                 },
                 "high-win-runs": {
                     "wins": "{{value}}+ 勝場數"
                 },
                 "hero-class": {
-                    "all": "所有形態英雄"
+                    "all": "全部形態英雄"
                 }
             },
             "stats": {
@@ -415,7 +421,7 @@
                 "minimize-run-button": "最小化",
                 "run-name": "競技場 {{value}} 勝",
                 "load-runs-button": "點擊讀取更多戰局",
-                "deck-score-tooltip": "這是你的牌組得分，是使用牌組中所有卡牌的牌組勝率計算出來的。"
+                "deck-score-tooltip": "這是你的牌組得分，是使用牌組中全部卡牌的牌組勝率計算出來的。"
             },
             "empty-state": {
                 "title": "這裡還沒有任何東西",
@@ -438,7 +444,7 @@
                 "header-pickrate-tooltip": "這張卡在構築期間提供時被選中的頻率是多少",
                 "header-offered-total": "提供的總數",
                 "header-deck-total-tooltip": "這張牌在牌組中的遊戲次數",
-                "header-deck-total": "總遊戲數",
+                "header-deck-total": "總遊玩數",
                 "header-pickrate-high-wins": "揀選率 {{value}}+ 勝場",
                 "header-pickrate-impact": "揀選率 三角",
                 "total-cards-drafted": "已構築的卡牌總數",
@@ -447,9 +453,9 @@
             },
             "draft": {
                 "card-drawn-winrate": "抽取勝率",
-                "hero-tier": "星等",
+                "hero-tier": "名次",
                 "hero-winrate": "勝率",
-                "locked-premium-info-tooltip": "第一張卡牌選擇統計資料可供所有使用者使用。英雄和其他卡牌選擇僅適用於進階用戶。點擊以開啟訂閱頁面，或前往「設定」以停用這些資訊框。",
+                "locked-premium-info-tooltip": "第一張卡牌選擇統計資料可供全部使用者使用。英雄和其他卡牌選擇僅適用於進階用戶。點擊以開啟訂閱頁面，或前往「設定」以停用這些資訊框。",
                 "locked-premium-info": "使用進階版來解鎖統計數據",
                 "card-deck-impact": "牌組影響（數值越大越好）",
                 "card-deck-impact-tooltip": "「牌組影響」是該卡牌在原始牌組勝率 ({{deckWinrate}}) 與職業牌組勝率之間的差異",
@@ -458,13 +464,13 @@
             },
             "class-tier-list": {
                 "header-hero-name": "名稱",
-                "header-placement-distribution-tooltip": "顯示與平均值相比，每個星等在給定獲勝次數方面的偏差程度。 ",
-                "tier": "星等 {{value}}",
+                "header-placement-distribution-tooltip": "顯示與平均值相比，每個名次在給定獲勝次數方面的偏差程度。 ",
+                "tier": "名次 {{value}}",
                 "header-winrate": "勝率",
                 "header-placement-distribution": "勝場輪廓",
                 "graph-placement-tooltip": "達到此總勝率的 {{value}}% 是全球的平均勝率"
             },
-            "card-search-tooltip": "您可以使用逗號（,）同時搜尋多張卡片。",
+            "card-search-tooltip": "您可以使用逗號（,）同時搜尋多張卡牌。",
             "deck-details": {
                 "deck-summary-header": "運行概覽",
                 "picks-header": "構築選牌"
@@ -495,7 +501,7 @@
                     "all": "全部",
                     "standard": "標準",
                     "wild": "開放",
-                    "twist": "轉變"
+                    "twist": "扭曲"
                 },
                 "hero-portrait": {
                     "collectible": "構築",
@@ -662,7 +668,7 @@
                 }
             },
             "pack-stats": {
-                "title": "所有時間的卡牌包({{value}})",
+                "title": "全部時間的卡牌包({{value}})",
                 "best-opened-packs-title": "開出最好的 {{value}} 包卡包",
                 "best-opened-packs-title-tooltip": "您在運行 Firestone 時打開的最好的卡包",
                 "pack-stat-tooltip": "自從您開始玩「爐石戰記」以來，您拿到了 {{totalPacks}} {{packName}} 卡牌包",
@@ -673,7 +679,7 @@
             "set-stats": {
                 "title": "設置數據",
                 "packs-received": "獲得卡包",
-                "packs-received-tooltip": "所有時間收到的卡包，包括仍未打開的卡包。",
+                "packs-received-tooltip": "全部時間收到的卡包，包括仍未打開的卡包。",
                 "best-known-pack": "最知名的包",
                 "dust": "魔塵",
                 "dust-tooltip": "您還需要 {{value}} 魔塵以完成系列",
@@ -708,12 +714,12 @@
                 "in-packs": "在 {{value}} 包",
                 "browse-set-button": "瀏覽資料片",
                 "total-non-golden-cards": "已收集的非金卡總數",
-                "pity-timer-reset-tooltip": "重置此礼包的 \"遗憾 \"计时器后，在考虑下一个史诗/传奇保证礼包到期时间时，将忽略之前打开的所有礼包。",
+                "pity-timer-reset-tooltip": "重置此礼包的 \"遗憾 \"计时器后，在考虑下一个史诗/传奇保证礼包到期时间时，将忽略之前打开的全部礼包。",
                 "total-golden-cards": "收集傳說卡、鑽石卡和珍藏卡的總數"
             },
             "empty-state": {
                 "no-missing-card-in-set": {
-                    "title": "您已經收集完這個資料片的所有卡牌！！！",
+                    "title": "您已經收集完這個資料片的全部卡牌！！！",
                     "subtitle": "再接再厲"
                 },
                 "no-card-in-set": {
@@ -764,7 +770,7 @@
                 "meta-archetypes-header": "當下流行牌組"
             },
             "filters": {
-                "filter-info-tooltip": "更改篩選器將會影響記牌器在遊戲中顯示的數據",
+                "filter-info-tooltip": "更改篩選器將會影響追蹤器在遊戲中顯示的數據",
                 "show-hidden-decks": "顯示封存",
                 "deck-sort": {
                     "last-played": "上一次使用",
@@ -772,18 +778,18 @@
                     "winrate": "勝率"
                 },
                 "format-filter": {
-                    "all-formats": "所有模式",
+                    "all-formats": "全部模式",
                     "standard": "標準",
                     "wild": "開放",
                     "classic": "經典",
-                    "twist": "轉變"
+                    "twist": "扭曲"
                 },
                 "rank-category": {
                     "leagues": "青銅-鑽石",
                     "legend": "傳說"
                 },
                 "rank-filter": {
-                    "all": "全部等級",
+                    "all": "全部排名",
                     "bronze-platinum": "青銅-白金",
                     "silver": "白銀+",
                     "gold": "黃金+",
@@ -796,12 +802,12 @@
                     "legend-100": "前100"
                 },
                 "rank-group": {
-                    "per-match": "顯示所有戰局",
+                    "per-match": "顯示全部戰局",
                     "per-day": "按日分組",
                     "per-day-tooltip": "在每天開始時顯示排名"
                 },
                 "time-filter": {
-                    "all-time": "所有時間",
+                    "all-time": "全部時間",
                     "season-start": "當前賽季",
                     "last-patch": "最新版本",
                     "past-30": "過去30天",
@@ -819,18 +825,18 @@
                 "rank-bracket": {
                     "bronze-gold": "青銅-黃金",
                     "diamond": "鑽石",
-                    "all": "全部等級",
+                    "all": "全部排名",
                     "legend-diamond": "鑽石-傳說",
                     "legend": "傳說",
                     "platinum": "鉑金",
-                    "top-2000-legend": "傳説前2000",
+                    "top-2000-legend": "傳説 前2000",
                     "competitive": "競爭的",
                     "competitive-tooltip": "前 2000 名傳奇和鑽石 1-4"
                 },
                 "use-conservative-winrate": "保守勝率",
                 "use-conservative-winrate-tooltip": "在勝率估計中整合與樣本量相關的不確定性",
                 "archetype-filter": {
-                    "all": "所有形態"
+                    "all": "全部形態"
                 },
                 "sample-size-filter": "{{value}} 場戰局",
                 "use-conservative-estimate": "真實排名",
@@ -840,7 +846,7 @@
             },
             "matchup-info": {
                 "opponents-popularity-header": "對手職業的詳細信息",
-                "total-matches-header": "所有戰局",
+                "total-matches-header": "全部戰局",
                 "win-percent-header": "勝率",
                 "win-total-header": "勝場",
                 "win-play-percent-header": "先手勝率",
@@ -889,7 +895,7 @@
                 "versions": {
                     "title": "牌組版本",
                     "click-to-view-version-stats-tooltip": "單擊以僅檢視此版本的統計信息",
-                    "click-to-view-all-stats-tooltip": "再次點擊可同時檢視所有版本的統計數據"
+                    "click-to-view-all-stats-tooltip": "再次點擊可同時檢視全部版本的統計數據"
                 }
             },
             "ladder-stats": {
@@ -940,12 +946,12 @@
                     "added-cards-header": "新增的卡牌",
                     "copy-deckstring-button": "複製到「爐石戰記」",
                     "removed-cards-header": "已移除的卡牌",
-                    "deviation-tooltip": "樣本量增加了每副牌勝率的不確定性。真實勝率介於基本勝率加上或減去此處顯示的不確定性之間的置信度為 95%。您可以在篩選器中切換“保守勝率”選項，以檢視考慮這種不確定性的新勝率分數。",
+                    "deviation-tooltip": "樣本量增加了每副牌勝率的不確定性。真實勝率介於基本勝率加上或減去此處顯示的不確定性之間的置信度為 95%。您可以在篩選器中切換“保守勝率”選項，以檢視考慮這種不確定性的新勝率積分。",
                     "view-details-button": "檢視詳情",
                     "view-online-button-tooltip": "線上檢視更多統計數據：https://www.d0nkey.top",
                     "view-online-button": "線上檢視",
                     "view-decks-button": "檢視牌組",
-                    "view-decks-button-tooltip": "檢視該形態的所有套牌",
+                    "view-decks-button-tooltip": "檢視該形態的全部套牌",
                     "no-data-empty-state-title": "我們沒有該牌組/排名/時間/賽制組合的數據",
                     "view-details-button-tooltip": "檢視卡牌等級的詳細資訊和更深入的統計數據（僅限進階版）",
                     "added-cards-header-tooltip": "這牌組中不在核心卡中的卡牌",
@@ -966,8 +972,16 @@
                         "copy-1-header-tooltip": "該形態的牌組中至少包含一張該牌的百分比",
                         "copy-2-header-tooltip": "包含這張卡的兩張副本的該形態牌組的百分比",
                         "copy-1-header": "熱門度",
-                        "show-relative-info-button": "顯示相關訊息",
-                        "show-relative-info-button-tooltip": "顯示每張卡牌相對於形態勝率的勝率"
+                        "show-relative-info-button": "顯示影響",
+                        "show-relative-info-button-tooltip": "顯示每張卡牌相對於形態勝率的勝率",
+                        "mulligan-winrate-impact-header-tooltip": "這是該牌在你的起手牌中結束更換後相對於牌組勝率的平均勝率，越高越好。",
+                        "drawn-winrate-impact-header": "抽取影響（數值越大越好）",
+                        "drawn-winrate-header": "抽取勝率",
+                        "drawn-winrate-header-tooltip": "當卡牌在遊戲中被抽出或在更換結束後出現在你的起始手牌中時的平均勝率",
+                        "copy-per-deck-header-tooltip": "此卡牌在該形態牌組中的平均張數",
+                        "mulligan-winrate-impact-header": "起手換牌影響",
+                        "drawn-winrate-impact-header-tooltip": "平均勝率相對於遊戲中抽出的牌或更換結束後出現在你的起始手牌中時的牌組勝率",
+                        "copy-per-deck-header": "每副牌組的平均複製份數"
                     },
                     "archetype-type": "形態",
                     "deck-type": "套牌列表"
@@ -986,10 +1000,12 @@
                 "matchups-header": "對決",
                 "card-stats-header-tooltip": "顯示哪些卡牌已從形態核心卡中刪除或新增。點擊牌組即可檢視詳細資訊",
                 "core-cards-header-tooltip": "顯示哪些卡牌已從形態核心卡中刪除或新增。點擊牌組即可檢視詳細資訊",
-                "matchups-header-tooltip": "顯示所有其他職業的勝率。形態配對將在未來推出，敬請期待:)",
+                "matchups-header-tooltip": "顯示全部其他職業的勝率。形態配對將在未來推出，敬請期待:)",
                 "matchup-vs-tooltip": "對陣 {{className}}",
                 "deck-type-header": "鍵入",
-                "winrate-header": "勝率"
+                "winrate-header": "勝率",
+                "total-games": "總遊玩數",
+                "last-updated": "最近一次更新"
             }
         },
         "battlegrounds": {
@@ -1014,7 +1030,7 @@
                 "pirate": "海盜",
                 "quilboar": "野豬人",
                 "blank": "無種族",
-                "all": "所有種族",
+                "all": "全部種族",
                 "undead": "不死族"
             },
             "filters": {
@@ -1022,14 +1038,14 @@
                     "all": "全部英雄"
                 },
                 "hero-sort": {
-                    "tier": "星等",
+                    "tier": "名次",
                     "average-position": "平均排名",
-                    "mmr": "分數變化",
+                    "mmr": "積分變化",
                     "games-played": "已遊玩局數",
                     "last-played": "最後遊玩"
                 },
                 "rank": {
-                    "all": "全部星等",
+                    "all": "全部積分排名",
                     "percentile": "前 {{percentile}}% ({{mmr}}+)"
                 },
                 "rank-group": {
@@ -1045,16 +1061,16 @@
                     "past-30": "過去30天"
                 },
                 "tier": {
-                    "all-tiers": "所有星等",
+                    "all-tiers": "全部名次",
                     "tier": "{{value}} 星"
                 },
                 "tribe": {
                     "all-tribes": "全種族",
                     "no-tribe": "無種族",
-                    "validation-error-tooltip": "請選擇所有種族或僅選擇 5 個"
+                    "validation-error-tooltip": "請選擇全部種族或僅選擇 5 個"
                 },
                 "signature-treasure": {
-                    "all": "所有英雄夥伴"
+                    "all": "全部英雄夥伴"
                 },
                 "stat-type": {
                     "hero": "英雄",
@@ -1062,7 +1078,7 @@
                     "signature-treasure": "英雄夥伴"
                 },
                 "anomaly": {
-                    "all-anomalies": "所有異變現象",
+                    "all-anomalies": "全部異變現象",
                     "validation-error-tooltip": "请选择任意數量的異變"
                 },
                 "quest-type": {
@@ -1077,8 +1093,8 @@
                 "hero": {
                     "average-position": "平均排名",
                     "games-played": "已遊玩局數",
-                    "net-mmr": "分數變化",
-                    "net-mmr-tooltip": "每場戰局平均分數變化"
+                    "net-mmr": "積分變化",
+                    "net-mmr-tooltip": "每場戰局平均積分變化"
                 },
                 "hero-details": {
                     "tabs": {
@@ -1095,8 +1111,8 @@
                         "top-1": "第1名",
                         "top-4": "前4名",
                         "community-value-tooltip": "社區平均值",
-                        "net-mmr": "平均分數變化",
-                        "net-mmr-tooltip": "每場戰局平均分數變化",
+                        "net-mmr": "平均積分變化",
+                        "net-mmr-tooltip": "每場戰局平均積分變化",
                         "avg-mmr-gain": "平均上分",
                         "avg-mmr-gain-tooltip": "每場戰局平均上分",
                         "avg-mmr-loss": "平均掉分",
@@ -1139,9 +1155,9 @@
                     }
                 },
                 "rating": {
-                    "title": "分數/對局",
+                    "title": "積分/對局",
                     "empty-state-message": "開始遊玩英雄戰場以收集一些資訊",
-                    "axis-label": "星等"
+                    "axis-label": "名次"
                 },
                 "records": {
                     "title": "戰績最佳的英雄",
@@ -1149,7 +1165,7 @@
                         "record": "錄製",
                         "hero": "英雄",
                         "replay": "回放",
-                        "score": "分數"
+                        "score": "積分"
                     },
                     "rows": {
                         "total-dmg-dealt-minions": "造成總傷害(手下)",
@@ -1184,33 +1200,33 @@
             "tier-list": {
                 "header": "英雄排名列表({{value}} 場遊戲) ",
                 "header-hero-details": "英雄",
-                "header-tribes": "種族的影响",
+                "header-tribes": "在大廳中最強",
                 "header-combat-winrate": "戰局勝率",
                 "header-group-difficulty-button": "分組",
-                "header-group-difficulty-button-tooltip": "將任務按名稱分組，這樣您就可以全面檢視所有難度的任務",
+                "header-group-difficulty-button-tooltip": "將任務按名稱分組，這樣您就可以全面檢視全部難度的任務",
                 "learn-more": "這個數據是怎麼計算出來的呢？",
-                "header-average-position": "平均值安置情况",
-                "header-average-turns-to-complete": "Avg. 轉至完成",
+                "header-average-position": "平均名次",
+                "header-average-turns-to-complete": "平均每場完賽數",
                 "header-collapse-all-button": "全部收縮",
                 "header-expand-all-button": "展開全部",
                 "tribe-impact-position-tooltip": "根據所選種族和異變情況，來決定平均位置會發生多少變化",
-                "header-net-mmr": "分數變化",
-                "header-placement-distribution": "安置分布",
+                "header-net-mmr": "積分變化",
+                "header-placement-distribution": "名次分布",
                 "header-quest-details": "任務",
                 "header-quest-reward-details": "任務獎勵",
                 "header-ungroup-difficulty-button": "拆分",
                 "player-data-points-tooltip": "您使用該英雄玩過的遊戲數量",
-                "header-tribes-tooltip": "對英雄平均位置影響最大的種族",
+                "header-tribes-tooltip": "對大廳中的英雄平均位置影響最大的種族",
                 "quest-search-placeholder": "搜尋任務...",
                 "reward-search-placeholder": "搜尋獎勵...",
                 "header-ungroup-difficulty-button-tooltip": "拆分任務，以便每個難度都顯示在它的位置上",
                 "player-data-points": "{{value}}",
-                "tier": "星等 {{value}}",
+                "tier": "名次 {{value}}",
                 "player-average-position-tooltip": "您於這個英雄的平均排名",
                 "data-points": "{{value}} 場戰局",
                 "tribe-info-tooltip": "當 {{ tribe }} 出現在櫃枱時，英雄會有{{value}}好於平均位置",
                 "quest-tooltip-with-difficulty": "{{questName}}，難度為 {{difficulty}}（在任務卡文字上顯示為 {0}）",
-                "quest-tooltip-all-difficulties": "{{questName}} 適用於所有難度",
+                "quest-tooltip-all-difficulties": "{{questName}} 適用於全部難度",
                 "header-games-played": "已遊玩局數",
                 "header-games-played-tooltip": "在選定的時間範圍內您使用該英雄遊玩的場數"
             },
@@ -1270,7 +1286,7 @@
                     }
                 },
                 "curve-label": "曲線： ",
-                "date": "於 {{date}} 推送了（補丁 {{patch}}）"
+                "date": "於 {{date}} 推送了（版本 {{patch}}）"
             }
         },
         "duels": {
@@ -1287,7 +1303,7 @@
             "filters": {
                 "dust": {
                     "all": "全部魔塵",
-                    "own": "自己的所有卡牌",
+                    "own": "自己的全部卡牌",
                     "dust": "{{value}} 魔塵"
                 },
                 "stat-type": {
@@ -1296,7 +1312,7 @@
                     "signature-treasure": "英雄專屬寶藏"
                 },
                 "game-mode": {
-                    "all": "所有模式",
+                    "all": "全部模式",
                     "all-tooltip": "社區統計數據只會顯示英雄決鬥的數據。 您自己的統計數據將同時顯示休閒和英雄。",
                     "casual": "休閒",
                     "casual-tooltip": "社區統計數據只會顯示決鬥擂台的數據。 您自己的統計數據只會顯示休閒",
@@ -1309,7 +1325,7 @@
                     "all": "全部英雄能力"
                 },
                 "signature-treasure": {
-                    "all": "所有英雄專屬寶藏"
+                    "all": "全部英雄專屬寶藏"
                 },
                 "hero-sort": {
                     "player-winrate": "您的勝率",
@@ -1341,13 +1357,13 @@
                     "player-pickrate": "您的挑選率"
                 },
                 "passive-treasures": {
-                    "all": "所有被動寶藏"
+                    "all": "全部被動寶藏"
                 }
             },
             "deck-stat": {
                 "title": "牌組數據",
                 "dust-missing-tooltip": "此牌組中缺少卡牌的魔塵之和",
-                "no-dust-missing-tooltip": "您有所有的卡牌",
+                "no-dust-missing-tooltip": "您有全部的卡牌",
                 "view-details-button": "檢視詳細",
                 "winrate": "勝率",
                 "runs": "局數",
@@ -1390,7 +1406,7 @@
             },
             "stats": {
                 "tier-list-title": "強度列表",
-                "tier-list-title-tooltip": "星等是根據您當前的篩選器計算的",
+                "tier-list-title-tooltip": "名次是根據您當前的篩選器計算的",
                 "tier-s-tooltip": "必須選",
                 "tier-a-tooltip": "強力的選擇",
                 "tier-b-tooltip": "好的選擇",
@@ -1444,7 +1460,7 @@
                 "deck-saved-info": "牌組已儲存",
                 "save-deckcode-button-tooltip": "將此牌組加入我的牌組頁籤",
                 "show-buckets-button-label": "詞條",
-                "show-buckets-button-tooltip": "[EXPERIMENTAL] 根據您牌組顯示您可能拿到的詞條。這些詞條是基於您當前的套牌依以下列方式作為假設提供的：1) 構築所有包含至少一張您牌組牌的詞條，以及 2) 選其一來提供。",
+                "show-buckets-button-tooltip": "[EXPERIMENTAL] 根據您牌組顯示您可能拿到的詞條。這些詞條是基於您當前的套牌依以下列方式作為假設提供的：1) 構築全部包含至少一張您牌組牌的詞條，以及 2) 選其一來提供。",
                 "bucket-filter-button-tooltip": "依詞條過濾。 卡牌列表將僅包含至少有一張在選定詞條裡的卡牌",
                 "search-tooltip": {
                     "text": "您可以用以下快捷來搜尋:",
@@ -1470,11 +1486,11 @@
             },
             "tier-list": {
                 "header-hero-details": "卡牌",
-                "header-placement-distribution": "安置分布",
+                "header-placement-distribution": "名次分布",
                 "player-data-points-tooltip": "您用這張卡玩過的遊戲數量",
-                "header": "星等列表 ({{value}} 場遊戲) ",
+                "header": "名次列表 ({{value}} 場遊戲) ",
                 "header-winrate": "勝率",
-                "tier": "星等 {{value}}",
+                "tier": "名次 {{value}}",
                 "player-data-points": "{{value}}",
                 "data-points": "{{value}} 次運行",
                 "player-winrate-tooltip": "你於這個英雄的平均勝率"
@@ -1507,14 +1523,14 @@
         "replays": {
             "filters": {
                 "hero": {
-                    "all": "所有英雄"
+                    "all": "全部英雄"
                 },
                 "deck": {
-                    "all": "所有牌組",
+                    "all": "全部牌組",
                     "deckstring-tooltip": "{{deckName}} ({{deckClass}}), 最後使用於 {{lastPlayedDate}}"
                 },
                 "game-mode": {
-                    "all": "所有模式",
+                    "all": "全部模式",
                     "battlegrounds": "英雄戰場",
                     "battlegrounds-friendly": "英雄戰場(私人)",
                     "mercenaries-all": "傭兵戰隊(全部)",
@@ -1532,13 +1548,14 @@
                     "friendly": "好友戰局",
                     "tavern-brawl": "旅店大亂鬥",
                     "practice": "VS AI",
-                    "ranked-twist": "異變排名模式"
+                    "ranked-twist": "異變排名模式",
+                    "battlegrounds-duo": "英雄戰場 雙人組"
                 },
                 "player": {
-                    "all": "所有職業(自己)"
+                    "all": "全部職業(自己)"
                 },
                 "opponent": {
-                    "all": "所有職業(對手)"
+                    "all": "全部職業(對手)"
                 },
                 "opponent-search": {
                     "placeholder": "搜尋對手中..."
@@ -1611,7 +1628,7 @@
         "tips": {
             "tip-1": "單擊頂部的“幫助”圖標以檢視應用程序的最新版本說明",
             "tip-2": "單擊頂部的“錯誤”圖標以報告錯誤或提出改進建議",
-            "tip-3": "如果您遇到大錯誤（例如收藏不同步、記牌器不工作等），請嘗試以管理員身份執行應用程式。",
+            "tip-3": "如果您遇到大錯誤（例如收藏不同步、追蹤器不工作等），請嘗試以管理員身份執行應用程式。",
             "tip-4": "設定有很多自訂選項，請隨時檢視以啟用/停用某些功能",
             "tip-5": "[傭兵]將視窗拉寬檢視「總金幣」欄",
             "tip-6": "[傭兵] 在重播中選擇「傭兵（PvP）」選項，檢視每場遊戲中隊伍的更多詳細信息",
@@ -1623,11 +1640,11 @@
             "share_profile_page": "在线访问自己的个人主页，并与他人分享，展示自己的成就和统计数据",
             "constructed_deck_stats_free": "免費瀏覽當前熱門套牌列表！",
             "tip-0": "如果您有任何反饋、錯誤或只是想聯繫，請訪問我們的 Discord（連結位於頂部）！",
-            "discover_highlight": "「發現」時將滑鼠懸停在卡片上會突出顯示牌組中的相關訊息",
+            "discover_highlight": "「發現」時將滑鼠懸停在卡牌上會突出顯示牌組中的相關訊息",
             "contextual_related_cards": "将鼠标移至跟踪器中的某些卡牌上，可获得更多有关这些卡牌作用的信息",
             "mercs_terasure_highlight": "將滑鼠懸停在傭兵中的寶藏上可以突出團隊中的協同作用",
             "ad-tip-premium": "進階",
-            "bg_tab_key": "按下「Tab」即可快速概覽大廳中所有玩家的進度",
+            "bg_tab_key": "按下「Tab」即可快速概覽大廳中全部玩家的進度",
             "achievements_pin": "選擇任意數量的成就以在遊戲過程中追蹤它們，並檢視它們的即時更新",
             "quest_stats": "直接在覆蓋層中檢視任務的平均完成輪數和獎勵的平均位置",
             "guess_the_weight": "有些卡牌在發現期間有上下文幫助",
@@ -1638,7 +1655,7 @@
             "collection_stats": "您可以檢視所顯示羣組的卡牌歷史記錄和全域統計數據，並隨時在它們之間切換",
             "achievements_pick_for_me": "您可以讓應用程式來為您選擇跟踪 3 項成就",
             "lottery": "您可以參加每月樂透來贏得進階 Firestone 訂閱（從「設定」 > 「常項」 > 「樂透」頁面啟用）",
-            "etc_buddies": "當扮演『樂團經理』精英牛頭大佬時，您可以看到發現池中的所有夥伴",
+            "etc_buddies": "當扮演『樂團經理』精英牛頭大佬時，您可以看到發現池中的全部夥伴",
             "bg_hero_select": "您可以直接在英雄選擇介面上取得每個英雄的統計數據",
             "minions_list_by_tribe": "您可以啟動一個選項，在手下列表中按種族將手下分組。這還可以讓您擺脫種族小部件，從而閒置出一些空間。",
             "deck_merge": "您可以將一副牌組拖放到舊牌組的上方，將其指定為另一副牌組的新版本"
@@ -1666,7 +1683,7 @@
             "copy-deck-tooltip": "單擊以將高勝率套牌複製到剪貼板",
             "with-name": "本週的旅店大亂鬥是：{{name}}(開始於 {{date}})",
             "no-name": "旅店大亂鬥，開始於 {{date}}",
-            "non-buildable-warning-tooltip": "該類別的所有頂級套牌都需要您收藏中沒有的卡牌"
+            "non-buildable-warning-tooltip": "該類別的全部頂級套牌都需要您收藏中沒有的卡牌"
         },
         "lottery": {
             "navigation": {
@@ -1725,8 +1742,8 @@
             "achievements-pick-for-me-button": "為我挑選",
             "opt-out-button-cancel": "留着吧",
             "overlay-toggle-label": "設定覆蓋層",
-            "achievements-reset-button": "取消所有追蹤",
-            "achievements-reset-button-tooltip": "取消追蹤所有成就並將其從螢幕上移除",
+            "achievements-reset-button": "取消全部追蹤",
+            "achievements-reset-button-tooltip": "取消追蹤全部成就並將其從螢幕上移除",
             "achievements-progress": "{{current}} / {{max}}，{{thisGame}} 這場遊戲"
         },
         "profile": {
@@ -1984,7 +2001,7 @@
         "done-button": "完畢",
         "steps": {
             "decktracker": {
-                "title": "記牌器",
+                "title": "追蹤器",
                 "text": "在遊戲中追蹤您的卡牌和牌組的數據。"
             },
             "battlegrounds": {
@@ -2005,11 +2022,11 @@
             },
             "achievements": {
                 "title": "成就",
-                "text": "在遊戲中挑戰自我。您可以在這裡找到所有完成的成就。"
+                "text": "在遊戲中挑戰自我。您可以在這裡找到全部完成的成就。"
             },
             "collection": {
                 "title": "收藏",
-                "text": "在這裡您可以找到遊戲中的所有卡牌，以及詳細資訊（您甚至可以播放它們發出的聲音）。"
+                "text": "在這裡您可以找到遊戲中的全部卡牌，以及詳細資訊（您甚至可以播放它們發出的聲音）。"
             }
         }
     },
@@ -2024,7 +2041,7 @@
             "show-hidden-teams-link-label": "顯示已存檔",
             "show-merc-names-in-teams-link-label": "顯示名稱",
             "fully-upgraded": {
-                "all": "所有升級",
+                "all": "全部升級",
                 "upgraded": "全面升級",
                 "non-upgraded": "未完全升級"
             },
@@ -2034,7 +2051,7 @@
                 "non-owned": "僅顯示缺失的"
             },
             "hero-level": {
-                "level-0": "所有等級",
+                "level-0": "全部等級",
                 "level-1": "等級1~4",
                 "level-5": "等級5~14",
                 "level-15": "等級15~29",
@@ -2045,7 +2062,7 @@
                 "pvp": "PvP"
             },
             "pve-difficulty": {
-                "all": "所有難度",
+                "all": "全部難度",
                 "normal": "普通",
                 "heroic": "英雄模式",
                 "legendary": "傳說"
@@ -2100,7 +2117,7 @@
             "coins-needed-header": "需要的代幣數",
             "coins-needed-header-tooltip": "您將此傭兵升到滿級需要的代幣數",
             "coins-to-farm-header": "需額外獲得代幣",
-            "coins-to-farm-header-tooltip": "此傭兵練到滿等所還需要的代幣數(已扣除擁有的代幣、完成此傭兵所有任務可獲得的代幣數)",
+            "coins-to-farm-header-tooltip": "此傭兵練到滿等所還需要的代幣數(已扣除擁有的代幣、完成此傭兵全部任務可獲得的代幣數)",
             "completed-tasks-header": "已完成的任務",
             "abilities-header": "技能",
             "equipments-header": "裝備",
@@ -2136,7 +2153,7 @@
             "unrecognized-mercenary": "無法識別的傭兵",
             "unknown-mercenary": "未知的傭兵",
             "tasks-button": "任務",
-            "tasks-completed": "您已完成所有任務",
+            "tasks-completed": "您已完成全部任務",
             "task-title": "任務 {{taskNumber}}：{{taskTitle}}",
             "task-progress-label": "進度：",
             "task-progress-tooltip": "戰鬥開始時的任務進度",
@@ -2282,7 +2299,7 @@
             "simulated": "模擬",
             "empty-state-title": "尚未有任何內容",
             "empty-state-subtitle": "在您和對手交戰後，第一次戰局將會顯示在這裡",
-            "battles-header": "所有戰局",
+            "battles-header": "全部戰局",
             "turn-winrate-graph-title": "每場戰鬥平均勝率",
             "select-button": "選擇",
             "hero-power-title": "英雄能力",
@@ -2337,7 +2354,7 @@
             "avg-position-details-tooltip-base-value": "基礎值",
             "strategies-link": "点击檢視推荐策略",
             "place": "Place: {{value}}",
-            "avg-position-details-tooltip-details-text": "在此MMR範圍內使用該英雄的所有玩家的平均最終排名。該值是透過應用以下修飾符計算的：",
+            "avg-position-details-tooltip-details-text": "在此MMR範圍內使用該英雄的全部玩家的平均最終排名。該值是透過應用以下修飾符計算的：",
             "strategies-link-tooltip": "將開啟應用程式的主視窗以顯示該英雄的策略"
         },
         "hero-selection": {
@@ -2383,14 +2400,14 @@
             },
             "minions-list": {
                 "reset-button": "重設",
-                "mechanics-tier-tooltip": "檢視所有 {{value}} 手下",
-                "highlight-tribe": "點擊以突出顯示這個酒館的所有 {{value}}",
+                "mechanics-tier-tooltip": "檢視全部 {{value}} 手下",
+                "highlight-tribe": "點擊以突出顯示這個酒館的全部 {{value}}",
                 "unhighlight-tribe": "點擊以移除這個酒館裡的 {{value}} 突出顯示",
-                "highlight-mechanics": "單擊以突出顯示酒館中的所有 {{value}} 手下",
+                "highlight-mechanics": "單擊以突出顯示酒館中的全部 {{value}} 手下",
                 "unhighlight-mechanics": "點擊以從酒館中移除 {{value}} 手下高亮",
                 "highlight-minion": "釘選這個手下以在酒館裡突出顯示",
                 "unhighlight-minion": "取消釘選這個手下在酒館裡的突出顯示",
-                "buddies-tier-tooltip": "檢視遊戲中的所有夥伴",
+                "buddies-tier-tooltip": "檢視遊戲中的全部夥伴",
                 "minion-banned-tooltip": "該手下因當前異變被禁止使用"
             },
             "quests": {
@@ -2466,7 +2483,7 @@
             "top-decks-header": "高勝率牌組({{value}} 套)",
             "footer": "離開英雄卡時保持壓按Shift鍵以防它消失",
             "stats-period-time": "統計數據來自過去 {{value}} 天",
-            "stats-period": "統計資料自補丁 {{patchNumber}} ({{patchDate}}) 起"
+            "stats-period": "自版本 {{patchNumber}} ({{patchDate}}) 起的統計資料"
         },
         "deck-select": {
             "copy-deck-tooltip": "這份名單在英雄之旅中取得了 10 場以上的勝利。點擊將其套牌代碼複製到剪貼簿",
@@ -2479,7 +2496,7 @@
     },
     "session": {
         "title": "歷史回顧",
-        "title-tooltip": "顯示自上次重置以來所有英雄戰場的回顧(頂端有按鈕)。 您可以從設置中啟用/停用它。",
+        "title-tooltip": "顯示自上次重置以來全部英雄戰場的回顧(頂端有按鈕)。 您可以從設置中啟用/停用它。",
         "display-mode": {
             "all": "全部模式",
             "battlegrounds": "英雄戰場",
@@ -2513,7 +2530,7 @@
         }
     },
     "quests": {
-        "quests-completed": "您已完成所有任務"
+        "quests-completed": "您已完成全部任務"
     },
     "settings": {
         "title": "設定",
@@ -2548,7 +2565,7 @@
         },
         "menu": {
             "general": "常項",
-            "decktracker": "記牌器",
+            "decktracker": "追蹤器",
             "battlegrounds": "英雄戰場",
             "mercenaries": "傭兵戰隊",
             "replays": "回放",
@@ -2589,14 +2606,14 @@
                     "title": "退出遊戲"
                 },
                 "d0nkey": {
-                    "pitch": "d0nkey.top 是一個粉絲網站，收集了《爐石戰記》官方遊戲中的所有套牌以及來自主播的套牌，讓任何人都可以輕鬆找到有趣的套牌來玩。同步到 d0nkey.top 可以讓您與觀眾分享您的套牌（如果您是主播），或幫助他們建立更好的資料庫，為社群提供更多免費服務。您可以造訪他們{{websiteLink}}",
+                    "pitch": "d0nkey.top 是一個粉絲網站，收集了《爐石戰記》官方遊戲中的全部套牌以及來自主播的套牌，讓任何人都可以輕鬆找到有趣的套牌來玩。同步到 d0nkey.top 可以讓您與觀眾分享您的套牌（如果您是主播），或幫助他們建立更好的資料庫，為社群提供更多免費服務。您可以造訪他們{{websiteLink}}",
                     "website-link": "這裡",
-                    "next": "如果您決定同步到 d0nkey.top，Firestone 會將您玩的每場遊戲發送給他們，這些遊戲將出現在網站上的特定部分（仍在建設中）。預設情況下，回放將是私人的，除非您同時進行串流傳輸。請參閱 {{link}} 以了解如何設定所有內容。",
+                    "next": "如果您決定同步到 d0nkey.top，Firestone 會將您玩的每場遊戲發送給他們，這些遊戲將出現在網站上的特定部分（仍在建設中）。預設情況下，回放將是私人的，除非您同時進行串流傳輸。請參閱 {{link}} 以了解如何設定全部內容。",
                     "instructions-page-link": "說明頁",
                     "toggle-label": "將您的回放同步到 d0nkey.top"
                 },
                 "hsdecks": {
-                    "pitch": "Hearthstone-decks.net 分享在 High Legend 中玩過的所有構築模式、新聞和文章的套牌。您可以拜訪他們{{websiteLink}}",
+                    "pitch": "Hearthstone-decks.net 分享在 High Legend 中玩過的全部構築模式、新聞和文章的套牌。您可以拜訪他們{{websiteLink}}",
                     "website-link": "這裡",
                     "next": "如果您決定同步到 hearthstone-decks.net，Firestone 會向他們發送您匿名玩的每場遊戲以及有關您遊戲的一些資訊（牌組代碼、排名、遊戲結果）",
                     "toggle-label": "將您的回放同步到hearthstone-decks.net"
@@ -2616,7 +2633,7 @@
             },
             "twitch": {
                 "title": "在圖奇（Twitch）上推送",
-                "intro": "Firestone 圖奇（Twitch） 擴充功能允許您在 Twitch 實況中顯示您的牌組，並讓他們將滑鼠停留在英雄戰場排行榜中的所有玩家上。 要啟用它，您需要：",
+                "intro": "Firestone 圖奇（Twitch） 擴充功能允許您在 Twitch 實況中顯示您的牌組，並讓他們將滑鼠停留在英雄戰場排行榜中的全部玩家上。 要啟用它，您需要：",
                 "todo-1": "1. 在您的頻道安裝Firestone Twitch擴充",
                 "todo-2": "2. 點擊下方按鈕以連結您的Twitch帳戶至Firestone",
                 "todo-3": "3. 調整您的選項: ",
@@ -2627,7 +2644,7 @@
                 "configuration-title": "直播配置",
                 "delay-label": "直播延遲(毫秒)",
                 "delay-label-tooltip": "將發送到 Twitch 的事件延遲幾毫秒， 如果您希望直播被延遲以對抗狙擊手。",
-                "appear-on-live-streams-tooltip": "顯示在「實況直播」標籤上。該功能仍在開發中，將列出目前使用 Firestone 的所有主播以及他們當前的遊戲類型、列表（如果適用）以及前往其 Twitch 直播的連結。",
+                "appear-on-live-streams-tooltip": "顯示在「實況直播」標籤上。該功能仍在開發中，將列出目前使用 Firestone 的全部主播以及他們當前的遊戲類型、列表（如果適用）以及前往其 Twitch 直播的連結。",
                 "appear-on-live-streams-label": "出現在實況直播中",
                 "other-options-title": "其他選項"
             },
@@ -2653,8 +2670,8 @@
                 "zoom-tooltip": "縮放級別會套用在全部視窗",
                 "reset-prefs-button-default": "重置偏好",
                 "reset-prefs-button-confirmation": "您確定嗎？",
-                "reset-prefs-tooltip": "重製所有設定，包含圖標位置",
-                "reset-prefs-confirmation": "所有設定已重製。這包括圖標位置及Twitch設置，別忘了設定您需要的 :)",
+                "reset-prefs-tooltip": "重製全部設定，包含圖標位置",
+                "reset-prefs-confirmation": "全部設定已重製。這包括圖標位置及Twitch設置，別忘了設定您需要的 :)",
                 "restart-app-button-label": "重新啟動應用程式",
                 "enable-mailbox-label": "啓用信箱",
                 "allow-games-share-tooltip": "允許應用程式展示您的遊戲（和牌組列表）。該分享將是匿名的，但如果您正在處理私密的牌組列表，您可能需要將其關閉。",
@@ -2679,20 +2696,20 @@
                 "clear-games-tooltip": "清除您的遊戲，並根據您的喜好重新載入最新遊戲（預設為最近 100 天，您可以透過啟用進階設定來變更）。如果您有很多遊戲並且感覺該應用程式使用了太多記憶體，這可能會很有用",
                 "remote-intro-text": "Firestone 在線上儲存您的大部分數據，以便您可以輕鬆地在不同的電腦上使用這些數據。其中一些資料在本地緩存，以縮短應用程式的載入時間並減少頻寬使用。不過，您可以使用下面的按鈕強制刷新該數據，通常是在更換電腦之後。",
                 "games-period-options": {
-                    "all-time": "所有時間",
+                    "all-time": "全部時間",
                     "past-100": "最近 100 天",
                     "past-7": "最近 7 天",
                     "last-patch": "最新版本",
                     "season-start": "賽季開始"
                 },
                 "disable-local-cache": "停用本地快取",
-                "disable-local-cache-tooltip": "停用遊戲的本地快取。這將強制應用程式從伺服器檢索所有遊戲，這會稍微減慢應用程式的載入速度。停用本機快取也會清除現有快取。",
+                "disable-local-cache-tooltip": "停用遊戲的本地快取。這將強制應用程式從伺服器檢索全部遊戲，這會稍微減慢應用程式的載入速度。停用本機快取也會清除現有快取。",
                 "clear-button-label": "清除",
                 "games-period": "載入您的遊戲",
                 "games-title": "遊戲",
                 "other-title": "其他",
                 "packs-tooltip": "重新整理你的卡牌包。此操作每 7 天自動完成一次。",
-                "games-tooltip": "重新整理你的遊戲。它將檢索自您開始使用該應用程式以來的所有遊戲，這可能需要一段時間",
+                "games-tooltip": "重新整理你的遊戲。它將檢索自您開始使用該應用程式以來的全部遊戲，這可能需要一段時間",
                 "total-games": "該應用程式總共檢索了 {{value}} 場遊戲",
                 "achievements-tooltip": "重新整理你的成就。此操作每 7 天自動完成一次。"
             },
@@ -2706,10 +2723,10 @@
                 "constructed-on-bg-label": "在英雄戰場中的「爐石戰記」",
                 "constructed-on-hub-label": "主介面的「爐石戰記」",
                 "show-in-game-tooltip": "如果切换为 \"关闭\"，任務小部件将在游戏中隐藏。",
-                "show-when-empty-tooltip": "如果切换为 \"开启\"，即使所有任務都已完成，任務小部件仍会显示",
+                "show-when-empty-tooltip": "如果切换为 \"开启\"，即使全部任務都已完成，任務小部件仍会显示",
                 "mercenaries-label": "傭兵戰隊",
                 "battlegrounds-tooltip": "在英雄戰場比赛和英雄戰場主屏幕上显示战场任務的任務小部件",
-                "mercenaries-tooltip": "在所有雇佣兵屏幕上显示任務部件。激活任務部件将移除团队列表中的任務按钮。",
+                "mercenaries-tooltip": "在全部雇佣兵屏幕上显示任務部件。激活任務部件将移除团队列表中的任務按钮。",
                 "constructed-tooltip": "在構築（我的牌庫）、決鬥擂台、旅店大亂鬥和好友戰局及其主螢幕上顯示「爐石戰記」任務的任務小部件",
                 "constructed-on-hub-tooltip": "在 \"主介面\"（可選擇遊戲模式的主介面）中顯示「爐石戰記」任務的任務小部件",
                 "constructed-on-bg-tooltip": "在英雄戰場螢幕上顯示「爐石戰記」任務的任務小部件",
@@ -2722,7 +2739,7 @@
                 "update-available": "該模組的新版本現已推出。點擊更新即可",
                 "installing-mod-manager": "正在下載模組管理器 (~15 kB)...",
                 "game-running-error": "請在啓用 / 停用模組前，關閉「爐石戰記」。",
-                "disable-mods-description": "目前已啟用 Mod。點擊以停用模組支援。它將刪除模組引擎及其配置，但模組檔案不會被刪除（如果您想重新啟動它們）。有關如何完全刪除所有內容的說明，請參閱維基。",
+                "disable-mods-description": "目前已啟用 Mod。點擊以停用模組支援。它將刪除模組引擎及其配置，但模組檔案不會被刪除（如果您想重新啟動它們）。有關如何完全刪除全部內容的說明，請參閱維基。",
                 "instructions-link": "入門",
                 "game-location-placeholder": "遊戲安裝位置",
                 "update-disabled": "該模組有新版本可用，但只有關閉遊戲後才能安裝",
@@ -2731,7 +2748,7 @@
                 "checking-for-updates": "檢查...",
                 "disable-mods": "停用模組",
                 "enable-mods": "啟用模組",
-                "enable-mods-description": "模組目前已停用。點擊以啟用模組支援。它將下載模組引擎並配置所有內容，因此可能需要一段時間。",
+                "enable-mods-description": "模組目前已停用。點擊以啟用模組支援。它將下載模組引擎並配置全部內容，因此可能需要一段時間。",
                 "check-mods": "檢查",
                 "title": "模組",
                 "mods-ready": "模組已準備就緒，請參閱上面的連結以獲取有關如何安裝它們的說明",
@@ -2744,7 +2761,7 @@
                 "refreshing-engine": "正在複製庫...",
                 "add-mods-description": "找到一些模組，然後按照 {{link}} 指南中的說明進行安裝（其中還包含一些我認為可以安全使用的模組的列表）。",
                 "check-for-updates-tooltip": "只能檢查提供下載連結的模組是否有更新",
-                "instructions": "請閱讀 {{link}} 以了解所有必要的詳細資訊。",
+                "instructions": "請閱讀 {{link}} 以了解全部必要的詳細資訊。",
                 "refresh-engine": "重新整理引擎",
                 "installed-mods-description": "安裝了以下模組（刪除「爐石戰記」/「模組」中的對應檔案即可卸載）：",
                 "warning": "警告：模組修改了遊戲本身的行為方式，因此違反了遊戲的服務條款，並且可能會讓你被禁止，儘管我還沒有聽說過這樣的情況。下面列出的模組是*我認為*可以安全使用的模組，但以後會怎麼樣林北不知道。"
@@ -2752,7 +2769,7 @@
             "premium": {
                 "lottery-opacity-title": "樂透小部件不透明度",
                 "lottery-size-title": "樂透小部件尺寸",
-                "text-1": "成為進階用戶是支持該應用程式以及我為改進 Firestone 所做的工作的最佳方式。此外，您還可以獲得許多功能，例如覆蓋層小部件、帶有您自己的個人資訊頁面的網站等等。您可以找到所有進階功能的詳細資訊{{link}}。",
+                "text-1": "成為進階用戶是支持該應用程式以及我為改進 Firestone 所做的工作的最佳方式。此外，您還可以獲得許多功能，例如覆蓋層小部件、帶有您自己的個人資訊頁面的網站等等。您可以找到全部進階功能的詳細資訊{{link}}。",
                 "lottery-button-text": "啓用樂透",
                 "lottery-block-title": "樂透",
                 "lottery-block-text3": "注意：如果您有多個螢幕，請嘗試在小工具中關閉「設定覆蓋層」，然後將其移至第二個螢幕。",
@@ -2763,6 +2780,9 @@
                 "lottery-widget-settings-title": "小部件設定",
                 "link": "維基上",
                 "lottery-premium-section-tooltip": "此部分僅適用於進階用戶"
+            },
+            "discord": {
+                "advanced-config-title": "進階配置"
             }
         },
         "decktracker": {
@@ -2777,7 +2797,7 @@
             "global": {
                 "title": "啟動/關閉功能",
                 "minions-play-order": "手下召喚順序",
-                "minions-play-order-tooltip": "顯示手下召喚順序，幫助您解決死亡之聲順序問題(以及所有依據手下入場順序的問題)",
+                "minions-play-order-tooltip": "顯示手下召喚順序，幫助您解決死亡之聲順序問題(以及全部依據手下入場順序的問題)",
                 "streamer-mode": "直播開台模式",
                 "show-title-bar": "顯示標題列",
                 "show-title-bar-tooltip": "隱藏/顯示牌組名稱和牌堆、手中剩餘的牌",
@@ -2785,11 +2805,11 @@
                 "show-control-bar-tooltip": "顯示/隱藏有標誌和控制按鈕的欄位",
                 "show-tooltips-on-hover": "顯示卡牌提示部件",
                 "show-rarity-color": "顯示稀有度顏色",
-                "show-rarity-color-tooltip": "根據卡牌的稀有度為記牌器中卡牌的法力值塗上對應顏色",
+                "show-rarity-color-tooltip": "根據卡牌的稀有度為追蹤器中卡牌的法力值塗上對應顏色",
                 "show-deck-winrate": "顯示牌組勝率",
-                "show-deck-winrate-tooltip": "有資料時在記牌器上顯示此牌組的整體天梯勝率(僅限標準或開放)",
+                "show-deck-winrate-tooltip": "有資料時在追蹤器上顯示此牌組的整體天梯勝率(僅限標準或開放)",
                 "show-matchup-winrate": "顯示配對勝率",
-                "show-matchup-winrate-tooltip": "有資料時在記牌器上顯示此牌組對抗對方職業的整體天梯勝率(僅限標準或開放)",
+                "show-matchup-winrate-tooltip": "有資料時在追蹤器上顯示此牌組對抗對方職業的整體天梯勝率(僅限標準或開放)",
                 "show-gifts-separately": "分別顯示非起始套牌的卡牌",
                 "reset-deck-position-after-trade": "更換後重置位置",
                 "reset-deck-position-after-trade-tooltip": "在更換一張「可更換」的卡牌後，理論上該卡可以放在牌組的底部。 因此，默認情況下，當更換發生時，顯示“頂層”和“底層”的列表部分會被清除。 如果您希望這些部分即使在更換之後也保持其先前的顯示，請關閉此選項。",
@@ -2798,24 +2818,25 @@
                 "show-cost-reduction": "更新牌庫裡的費用",
                 "show-cost-reduction-tooltip": "當有降費效果時更新牌庫裡卡牌的水晶花費(例如:咒法之流)",
                 "show-unknown-cards": "顯示未知卡牌",
-                "show-unknown-cards-tooltip": "當沒有卡牌資料時, 增加\"未知卡牌\"進記牌器",
+                "show-unknown-cards-tooltip": "當沒有卡片資料時, 增加\"未知卡牌\"進追蹤器",
                 "highlight-related-cards": "標記相關卡牌",
-                "highlight-related-cards-tooltip": "啟用此功能後，當滑鼠指標停在特定卡牌上時，相關的卡牌會在您的牌組列表中被標記(例如:當滑鼠指標停在「二段跳」時，將會標記牌堆中的所有流放牌)",
-                "close-tracker-on-end": "遊戲結束時關閉記牌器",
-                "close-tracker-on-end-tooltip": "自動在遊戲結束時關閉記牌器。如果停用的話需要手動關閉",
-                "close-tracker-on-end-advanced": "知道了，Firestone將不會戰局結束時關閉記牌器",
+                "highlight-related-cards-tooltip": "啟用此功能後，當滑鼠指標停在特定卡牌上時，相關的卡牌會在您的牌組列表中被標記(例如:當滑鼠指標停在「二段跳」時，將會標記牌堆中的全部流放牌)",
+                "close-tracker-on-end": "遊戲結束時關閉追蹤器",
+                "close-tracker-on-end-tooltip": "自動在遊戲結束時關閉追蹤器。如果停用的話需要手動關閉",
+                "close-tracker-on-end-advanced": "知道了，Firestone將不會戰局結束時關閉追蹤器",
                 "reset-button": "重設位置",
                 "reset-button-confirm": "您確定嗎？",
-                "reset-button-tooltip": "重設牌組記牌器的位置. 這可以解決記牌器沒有出現在介面上的問題",
-                "reset-button-confirmation": "已重設牌組記牌器位置，將會在您下次配對時套用",
+                "reset-button-tooltip": "重設牌組追蹤器的位置. 這可以解決追蹤器沒有出現在介面上的問題",
+                "reset-button-confirmation": "已重設牌組追蹤器位置，將會在您下次配對時套用",
                 "counters-size": "計數器大小",
                 "discover-help": "「發現」機制上下文幫助",
                 "show-gifts-separately-tooltip": "将已创建的卡牌显示在各自的行中（每个创建者一行）。在传统显示模式下不起作用。",
                 "streamer-mode-tooltip": "將你的名字和對手的名字替換為「你」和「對手」。這相等於遊戲的流媒體模式功能，在遊戲中按 Ctrl + Shift + S 即可啟動該功能。",
-                "discover-help-tooltip": "在發現卡牌時顯示上下文幫助。它能力及的範圍可以從：簡單地突出顯示牌組中的相關卡牌，到：提供更具體的資訊。"
+                "discover-help-tooltip": "在發現卡牌時顯示上下文幫助。它能力及的範圍可以從：簡單地突出顯示牌組中的相關卡牌，到：提供更具體的資訊。",
+                "show-transformed-into-tooltip": "將一張變形後的卡牌加入追蹤器中"
             },
             "modes": {
-                "title": "記牌器將在以下模式中開啟",
+                "title": "追蹤器將在以下模式中開啟",
                 "ranked": "排名模式",
                 "duels": "決鬥擂台",
                 "arena": "競技場",
@@ -2825,17 +2846,17 @@
                 "casual": "休閒"
             },
             "opponent-deck": {
-                "tracker-title": "記牌器",
+                "tracker-title": "追蹤器",
                 "show-tracker-label": "顯示對手的套牌",
                 "show-tracker-tooltip": "啟用時會顯示您對手的卡",
                 "ai-decklist-label": "讀取AI套牌列表",
-                "ai-decklist-tooltip": "啟用此功能，記牌器會嘗試導入已知的AI套牌。請注意，有些套牌是偽隨機的，所以只做參考",
+                "ai-decklist-tooltip": "啟用此功能，追蹤器會嘗試導入已知的AI套牌。請注意，有些套牌是偽隨機的，所以只做參考",
                 "used-cards-go-to-bottom-label": "用過的卡移至底部",
                 "used-cards-go-to-bottom-tooltip": "啟用時, 已經用過的卡牌會顯示再列表底部。這只能在按區域分類牌組的功能未啟用時才能啟用",
                 "darken-used-cards-label": "壓暗用過的卡",
                 "darken-used-cards-tooltip": "啟用時, 用過的卡會被壓暗",
                 "global-effects-label": "顯示全域特效",
-                "global-effects-tooltip": "啟用時，記牌器頂端會出現一個新部分，顯示影響玩家/套牌的全域效果",
+                "global-effects-tooltip": "啟用時，追蹤器頂端會出現一個新部分，顯示影響玩家/套牌的全域效果",
                 "sort-by-mana-cost-label": "根據費用排列",
                 "sort-by-mana-cost-tooltip": "啟用時, 在「其他地方」的卡牌會依照水晶費用排列。反之則會先顯示檯面上的卡, 接著是墓地, 再然後為其它",
                 "show-bottom-cards-separately-label": "顯示底部卡牌",
@@ -2851,7 +2872,7 @@
                 "buff-in-hand-tooltip": "顯示對手手中的加成",
                 "secrets-helper-title": "秘密小幫手",
                 "enable-secret-helper-label": "啟用秘密小幫手",
-                "enable-secret-helper-tooltip": "啟用時, 將對手打出的所有可能的秘密顯示出來",
+                "enable-secret-helper-tooltip": "啟用時, 將對手打出的全部可能的秘密顯示出來",
                 "counters": {
                     "title": "計數器",
                     "galakrond-label": "祈求葛拉克朗次數",
@@ -2889,22 +2910,23 @@
                     "number-of-spells-tooltip": "顯示對手在這場戰局中施放過的法術總數。只有當他們至少使用了一個法師時才會顯示",
                     "astral-automaton-tooltip": "顯示對手召喚星界自動機的次數",
                     "earthen-golem-tooltip": "顯示對手召喚土靈魔像的次數",
-                    "multicaster-tooltip": "顯示對手在本場戰局中已施展法術的法術流派"
+                    "multicaster-tooltip": "顯示對手在本場戰局中已施展法術的法術流派",
+                    "wheel-of-death-tooltip": "在你的對手打出{{cardName}}後，顯示你死亡前的回合數"
                 },
                 "size-title": "大小與透明度",
                 "opacity-title": "透明度",
                 "hand-markers-title": "手牌標記",
                 "hide-generated-cards-label": "隱藏生成的卡牌",
-                "group-cards-by-zone-label": "新款記牌器",
-                "hide-generated-cards-tooltip": "隱藏由其他卡牌創建且不在手牌或牌組中的卡牌。警告：隱藏產生的卡片可能會導致某些功能在降級模式下運作，例如卡片突出顯示",
-                "show-dk-runes-tooltip": "在記牌器頂部新增一個部分，顯示牌組中已知的死亡騎士符文",
+                "group-cards-by-zone-label": "新款追蹤器",
+                "hide-generated-cards-tooltip": "隱藏由其他卡牌創建且不在手牌或牌組中的卡牌。警告：隱藏產生的卡牌可能會導致某些功能在降級模式下運作，例如卡牌突出顯示",
+                "show-dk-runes-tooltip": "在追蹤器頂部新增一個部分，顯示牌組中已知的死亡騎士符文",
                 "show-dk-runes-label": "顯示死亡騎士符文",
-                "group-cards-by-zone-tooltip": "當啟動時，記牌器會將卡牌分成可折疊的部分（牌組、手牌和其他），從而啟用一些新功能。關閉它以使用傳統顯示模式，其中所有卡牌都分組在一個部分中"
+                "group-cards-by-zone-tooltip": "當啟動時，追蹤器會將卡牌分成可折疊的部分（牌組、手牌和其他），從而啟用一些新功能。關閉它以使用傳統顯示模式，其中全部卡牌都分組在一個部分中"
             },
             "your-deck": {
                 "ignore-decklist-label": "忽略牌組列表",
                 "ignore-decklist-tooltip": "不載入初始牌組列表，僅追蹤已打出的牌和抽出的牌。更改將應用於下一場遊戲",
-                "ignore-decklist-confirmation": "明白了，記牌器將忽略你的牌組列表",
+                "ignore-decklist-confirmation": "明白了，追蹤器將忽略你的牌組列表",
                 "counters": {
                     "galakrond-tooltip": "顯示您祈求葛拉克朗的次數(僅在您打出葛拉克朗或祈求葛拉克朗的牌時出現)",
                     "pogo-tooltip": "顯示您已打出的蹦蹦兔數量",
@@ -2927,7 +2949,7 @@
                     "vanessa-label": "凡妮莎‧范克里夫",
                     "vanessa-tooltip": "當「凡妮莎‧范克里夫」在手中時，顯示對手打出的最後一張牌",
                     "murozond-label": "『恆龍之王』姆多茲諾",
-                    "murozond-tooltip": "當「『恆龍之王』姆多茲諾」在手中時，按打出順序顯示對手上回合打出的所有卡牌",
+                    "murozond-tooltip": "當「『恆龍之王』姆多茲諾」在手中時，按打出順序顯示對手上回合打出的全部卡牌",
                     "lady-darkvein-label": "暗脈女士",
                     "lady-darkvein-tooltip": "當你手上有張「暗脈女士」的卡牌時，顯示上一張使用的暗影法術(如果有的話)",
                     "grey-sage-parrot-label": "灰綠鸚鵡",
@@ -2971,7 +2993,7 @@
                     "earthen-golem-tooltip": "顯示你召喚土靈魔像的次數",
                     "shockspitter-label": "閃電龍鷹",
                     "lightray-tooltip": "當您手上或牌組中有聖光魟魚（或其它可以透過打出聖騎士卡牌來減費的卡牌）時，顯示您已打出的聖騎士卡牌數量。",
-                    "parrot-mascot-tooltip": "當您手上有張「鸚鵡吉祥物」的卡牌時，會按照打出的順序顯示您本回合打出的所有牌",
+                    "parrot-mascot-tooltip": "當您手上有張「鸚鵡吉祥物」的卡牌時，會按照打出的順序顯示您本回合打出的全部牌",
                     "spectral-pillager-tooltip": "當你手上有張「鬼靈掠取者」的卡牌時，顯示你本回合打出的牌數",
                     "tram-heist-label": "地鐵大劫案",
                     "asvedon-tooltip": "當你手上有張「『巨盾』亞思維頓」的卡牌時，顯示對手施放的最後一個法術",
@@ -2982,7 +3004,9 @@
                     "secrets-tooltip": "當您的卡牌可以透過了解您施放的秘密數量而受益時，顯示您在本局戰局施放的秘密數量",
                     "menagerie-tooltip": "當您手上或牌組有相關卡牌（合一樂團、強力滑行者）時，檢視您已經打出過哪些種族",
                     "queensguard-tooltip": "當你手上有張「女王近衞」的卡牌時，顯示你本回合施放的法術數量",
-                    "overdraft-tooltip": "當您手上或牌組中有張「透支」的卡牌時，會顯示一個計數器，告訴您「透支」會造成多少傷害"
+                    "overdraft-tooltip": "當您手上或牌組中有張「透支」的卡牌時，會顯示一個計數器，告訴您「透支」會造成多少傷害",
+                    "wheel-of-death-tooltip": "在你打出{{cardName}}後，顯示對手死亡前的回合數",
+                    "cards-played-from-another-class-label": "另一種職業卡"
                 }
             },
             "duels": {
@@ -2992,7 +3016,7 @@
                 "max-health-option-off": "關",
                 "max-health-option-blink": "閃爍",
                 "max-health-option-mouseover": "滑鼠覆蓋",
-                "show-ooc-tracker-label": "在選單顯示記牌器",
+                "show-ooc-tracker-label": "在選單顯示追蹤器",
                 "show-ooc-tracker-tooltip": "在戰鬥後選擇卡牌時顯示您的套排以讓您看到卡牌之間的連動。",
                 "show-ooc-hero-info-label": "顯示英雄數據",
                 "show-ooc-hero-info-tooltip": "在決鬥開始之前, 當滑鼠移到選項上時顯示英雄/英雄能力/專屬寶藏的數據",
@@ -3029,7 +3053,7 @@
             },
             "history-show-only-new-cards": "只顯示新卡",
             "pack-stats-show-only-buyable-packs": "只顯示主要卡包",
-            "pack-stats-show-only-buyable-packs-tooltip": "僅顯示可以在商店中使用金幣購買的卡包，隱藏所有促銷及免費卡包",
+            "pack-stats-show-only-buyable-packs-tooltip": "僅顯示可以在商店中使用金幣購買的卡包，隱藏全部促銷及免費卡包",
             "set-show-golden-stats": "顯示金卡統計"
         },
         "duels": {
@@ -3044,7 +3068,7 @@
                 "session": "歷史戰局小部件"
             },
             "full-toggle-label": "啟用英雄戰場",
-            "full-toggle-tooltip": "關閉以停用所有英雄戰場即時功能",
+            "full-toggle-tooltip": "關閉以停用全部英雄戰場即時功能",
             "general": {
                 "companion-app-title": "配套應用程式",
                 "enable-app-label": "啟用應用程式",
@@ -3061,7 +3085,7 @@
                 "popup-hero-selection-screen-label": "彈出選擇英雄介面",
                 "popup-hero-selection-screen-tooltip": "啟用此功能，將會在選擇英雄時彈出各英雄的數據",
                 "use-mmr-filter-for-live-stats-label-short": "配對積分篩選",
-                "use-mmr-filter-for-live-stats-tooltip": "啟用時，戰局開始時英雄選擇屏幕上顯示的英雄星等將考慮遊戲當前可用的種族。 警告：這可能會導致數據樣本量非常低，因此使用風險自負:)",
+                "use-mmr-filter-for-live-stats-tooltip": "啟用時，戰局開始時英雄選擇屏幕上顯示的英雄名次將考慮遊戲當前可用的種族。 警告：這可能會導致數據樣本量非常低，因此使用風險自負:)",
                 "use-tribe-filter-for-live-stats-label-short": "種族篩選",
                 "use-tribe-filter-for-live-stats-tooltip": "啟用時，比賽開始時英雄選擇屏幕上顯示的英雄等級將考慮遊戲當前可用的種族。 警告：這可能會導致數據樣本量非常低，因此使用風險自負:)",
                 "show-next-opponent-recap-label": "顯示下個對手的戰況回顧",
@@ -3070,7 +3094,7 @@
                 "show-achievements-tooltip": "在英雄選擇時顯示每個英雄未完成的成就",
                 "show-hero-tooltip-label": "顯示英雄提示部件",
                 "show-hero-tooltip-tooltip": "選擇英雄時，將滑鼠指標停在英雄上會顯示統計數據。",
-                "show-hero-tier-label": "顯示英雄星等",
+                "show-hero-tier-label": "顯示英雄名次",
                 "show-overlay-button": "顯示覆蓋按鈕",
                 "show-overlay-button-tooltip": "在覆蓋層上顯示按鍵來切換主視窗開啟或關閉，您可以使用該按鍵代替熱鍵",
                 "popup-post-match-stats-label": "彈出賽後統計數據",
@@ -3091,7 +3115,7 @@
                 "show-hero-tips-label": "顯示策略提示",
                 "use-remote-simulator-tooltip": "打開該功能將在遠端伺服器上執行戰鬥模擬，從而釋放您的機器。另一方面，結果將需要更長的時間才能到達",
                 "use-anomaly-filter-for-live-stats-tooltip": "啟動後，戰局開始時英雄選擇畫面上顯示的英雄評級將考慮啟動的異常。警告：這可能會導致資料樣本量過低",
-                "show-hero-tier-tooltip": "選擇英雄時，直接在英雄頭像上顯示英雄星等和全球平均排名。",
+                "show-hero-tier-tooltip": "選擇英雄時，直接在英雄頭像上顯示英雄名次和全球平均排名。",
                 "use-remote-simulator-label": "使用遠端戰鬥模擬器"
             },
             "overlay": {
@@ -3189,13 +3213,13 @@
             },
             "general": {
                 "player-team-widget-label": "友方隊伍小部件",
-                "player-team-widget-tooltip": "顯示所有您的英雄、技能和裝備",
+                "player-team-widget-tooltip": "顯示全部您的英雄、技能和裝備",
                 "opponent-team-widget-label": "對手陣容部件",
-                "opponent-team-widget-tooltip": "顯示對手所有已知的英雄、技能和裝備",
+                "opponent-team-widget-tooltip": "顯示對手全部已知的英雄、技能和裝備",
                 "map-team-widget-label": "隊伍小部件：懸賞地圖",
-                "map-team-widget-tooltip": "在懸賞地圖上顯示所有您的英雄、技能和裝備的浮窗。能幫助您在選擇路徑和寶藏時檢視隊伍。",
+                "map-team-widget-tooltip": "在懸賞地圖上顯示全部您的英雄、技能和裝備的浮窗。能幫助您在選擇路徑和寶藏時檢視隊伍。",
                 "village-team-widget-label": "隊伍小部件:村莊",
-                "village-team-widget-tooltip": "在收藏和隊伍選擇介面中顯示您所有英雄、技能和裝備的視窗",
+                "village-team-widget-tooltip": "在收藏和隊伍選擇介面中顯示您全部英雄、技能和裝備的視窗",
                 "action-queue-pve-label": "行動順序小部件(PVE)",
                 "action-queue-pve-tooltip": "顯示PVE戰鬥中的行動順序列表",
                 "action-queue-pvp-label": "行動順序小部件(PVP)",
@@ -3205,7 +3229,7 @@
                 "tasks-label": "顯示任務按鈕",
                 "tasks-tooltip": "在隊伍小部件下方加入一個小按鈕，將滑鼠指標停在上方以檢視當前任務。在PVP時隱藏",
                 "synergies-label": "標記連動卡牌",
-                "synergies-tooltip": "當滑鼠指標停在技能或裝備上(在隊伍小部件中)或寶藏(在寶藏選擇介面時)，隊伍小部件會標記與其有連動的所有卡牌",
+                "synergies-tooltip": "當滑鼠指標停在技能或裝備上(在隊伍小部件中)或寶藏(在寶藏選擇介面時)，隊伍小部件會標記與其有連動的全部卡牌",
                 "turn-counter-battle-label": "戰局回合計數器",
                 "your-team": "您的隊伍",
                 "opponent-team": "對手隊伍",
@@ -3230,10 +3254,10 @@
                 "show-card-selection-overlay-tooltip": "（僅限進階版）在選牌時顯示統計數據",
                 "show-hero-selection-overlay-tooltip": "（僅限進階版）在選英雄時顯示統計數據",
                 "show-card-selection-overlay": "選卡覆蓋層",
-                "show-draft-tracker": "構築套牌時的記牌器",
+                "show-draft-tracker": "構築套牌時的追蹤器",
                 "show-hero-selection-overlay": "英雄選擇覆蓋層",
-                "show-draft-tracker-tooltip": "在構築套牌時顯示記牌器，這樣您可以在將滑鼠懸停在卡牌挑選介面上時，突出顯示協同作用",
-                "tracker-size": "競技場套牌構築記牌器尺寸"
+                "show-draft-tracker-tooltip": "在構築套牌時顯示追蹤器，這樣您可以在將滑鼠懸停在卡牌挑選介面上時，突出顯示協同作用",
+                "tracker-size": "競技場套牌構築追蹤器尺寸"
             },
             "menu": {
                 "general": "常項"
@@ -3254,7 +3278,7 @@
         "show-related-cards-help": "顯示相關卡牌",
         "show-related-cards-help-tooltip": "將滑鼠指標懸停在一張卡牌上時，也顯示與其相關的卡牌(通常是由該卡牌衍伸的其他卡牌)。",
         "show-minions-list": "顯示手下列表",
-        "show-minions-list-tooltip": "顯示一個有所有可用手下的小部件。將滑鼠指標停在上方可以看到完整資訊和其金卡",
+        "show-minions-list-tooltip": "顯示一個有全部可用手下的小部件。將滑鼠指標停在上方可以看到完整資訊和其金卡",
         "minions-list-size": "手下列表大小",
         "show-minions-list-golden-cards": "顯示金卡",
         "show-minions-list-golden-cards-tooltip": "滑鼠指標停在列表中的手下圖示時顯示其金卡",
@@ -3292,9 +3316,9 @@
             "games-played-label-global": "已遊玩",
             "top-4-tooltip": "您使用的這個英雄進入排名前 4 名的總次數（包含在行動裝置上，或即使沒有運行 Firestone）",
             "games-played-tooltip": "您使用這個英雄的歷史遊玩次數（包含在行動裝置上，或即使沒有運行 Firestone）",
-            "top-4-tooltip-global": "您使用的所有英雄中進入排名前 4 名的總次數（包含在行動裝置上，或即使沒有運行 Firestone）",
-            "games-played-tooltip-global": "您使用所有英雄的歷史遊玩次數（包含在行動裝置上，或即使沒有運行 Firestone）",
-            "top-1-tooltip-global": "您使用的所有英雄中進入排名第 1 名的總次數（包含在行動裝置上，或即使沒有運行 Firestone）",
+            "top-4-tooltip-global": "您使用的全部英雄中進入排名前 4 名的總次數（包含在行動裝置上，或即使沒有運行 Firestone）",
+            "games-played-tooltip-global": "您使用全部英雄的歷史遊玩次數（包含在行動裝置上，或即使沒有運行 Firestone）",
+            "top-1-tooltip-global": "您使用的全部英雄中進入排名第 1 名的總次數（包含在行動裝置上，或即使沒有運行 Firestone）",
             "top-1-tooltip": "您使用的這個英雄進入排名第 1 名的總次數（包含在行動裝置上，或即使沒有運行 Firestone）",
             "top-4-label": "前4名：",
             "top-1-label-global": "第1名",
@@ -3308,27 +3332,27 @@
         },
         "arena": {
             "title-label-global": "競技場",
-            "title-tooltip-global": "您在競技場中所有時間的勝負"
+            "title-tooltip-global": "您在競技場中全部時間的勝負"
         },
         "duels": {
             "title-label-global": "決鬥擂台",
-            "title-tooltip-global": "您在決鬥擂台（休閒模式和英雄模式）中的所有時間的勝負"
+            "title-tooltip-global": "您在決鬥擂台（休閒模式和英雄模式）中的全部時間的勝負"
         },
         "ranked": {
             "title-label-global": "排名模式",
-            "title-tooltip-global": "您在排名模式中的所有輸贏（所有規則）"
+            "title-tooltip-global": "您在排名模式中的全部輸贏（全部規則）"
         },
         "spectator": {
             "close-button-tooltip": "停止觀看{{playerName}}"
         },
         "collection": {
             "packs": {
-                "overview-title-tooltip": "您在所有時間收到的卡牌包總數，包括未開封的卡牌包",
+                "overview-title-tooltip": "您在全部時間收到的卡牌包總數，包括未開封的卡牌包",
                 "overview-title": "總卡牌包數"
             }
         },
         "player-class": {
-            "tooltip-game-mode": "您在 {{gameMode}} 於 {{class}} 中的所有的勝負"
+            "tooltip-game-mode": "您在 {{gameMode}} 於 {{class}} 中的全部的勝負"
         }
     },
     "archetype": {
@@ -3480,6 +3504,38 @@
         "xl-highlander-warrior": "40牌 無雙戰士",
         "xl-bfu-highlander-dk": "40牌 彩虹無雙死亡騎士",
         "buu-highlander-dk": "血魄穢邪無雙死亡騎士",
-        "fuu-highlander-dk": "冰霜穢邪無雙死亡騎士"
+        "fuu-highlander-dk": "冰霜穢邪無雙死亡騎士",
+        "bbu-control-dk": "BBU 控制死亡騎士",
+        "orb-mage": "銀河投影球法師",
+        "handlock": "手牌鎖定",
+        "highlander-rogue": "無雙盜賊",
+        "bfu-rainbow-dk": "彩虹死亡騎士",
+        "cutlass-rogue": "彎刀盜賊",
+        "mystery-egg-hunter": "神秘蛋獵人",
+        "bffu-rainbow-dk": "彩虹死亡騎士",
+        "f-warrior": "F 戰士",
+        "excavate-paladin": "挖寶聖騎士",
+        "excavate-shaman": "挖寶薩滿",
+        "excavate-warrior": "挖寶戰士",
+        "cycle-rogue": "無限盜賊",
+        "mech-warrior": "機械戰士",
+        "big-demon-warlock": "大惡魔術士",
+        "bu-death-knight": "鮮血/污穢 死亡騎士",
+        "cycle-odyn-warrior": "無限歐丁戰士",
+        "bfuu-rainbow-dk": "彩虹死亡騎士",
+        "beast-warrior": "野獸戰士",
+        "brann-warrior": "戰吼戰士",
+        "murloc-warrior": "魚人戰士",
+        "naga-priest": "納迦牧師",
+        "demon-hunter": "未知的惡魔獵人",
+        "highlander-dk": "無雙死亡騎士",
+        "lightshow-mage": "燈光秀法師",
+        "bffuu-rainbow-dk": "彩虹死亡騎士",
+        "arfus": "阿福斯",
+        "bfu-rainbow-excavate-dk": "彩虹挖寶死亡騎士",
+        "bfu-handbuff-dk": "手牌增益死亡騎士",
+        "handbuff-paladin": "手牌增益聖騎士",
+        "naga-shopper-dh": "納迦 逛街客 惡魔獵人",
+        "murloc-shaman": "魚人薩滿"
     }
 }
