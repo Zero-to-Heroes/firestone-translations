@@ -180,7 +180,9 @@
             "whizbangs-workshop": "ウィズバンのワクワクワークショップ",
             "golden-wild-west": "ゴールデン・バッドランドの決斗",
             "golden-perils-in-paradise": "ゴールデン・大ピンチ！パイレーツ・パラダイス",
-            "perils-in-paradise": "大ピンチ！パイレーツ・パラダイス"
+            "perils-in-paradise": "大ピンチ！パイレーツ・パラダイス",
+            "island-vacation": "大ピンチ！パイレーツ・パラダイス",
+            "golden-island-vacation": "ゴールデン・大ピンチ！パイレーツ・パラダイス"
         },
         "ranks": {
             "constructed": {
@@ -871,7 +873,7 @@
             },
             "matchup-info": {
                 "opponents-popularity-header": "対戦相手のクラス内訳",
-                "total-matches-header": "全試合数",
+                "total-matches-header": "総試合数",
                 "win-percent-header": "勝率",
                 "win-total-header": "勝利数",
                 "win-play-percent-header": "先攻勝率",
@@ -2114,6 +2116,15 @@
         "queensguard": {
             "player": "このターン{{value}}枚の呪文を使用した",
             "opponent": "対戦相手はこのターン{{value}}枚の呪文を使用した"
+        },
+        "damage-taken-on-your-turn": {
+            "player": "自分のターンに{{times}}回、合計{{damage}}ダメージを受けた"
+        },
+        "locations-used": {
+            "player": "この対戦中、場所を{{value}}回使用した"
+        },
+        "dead-minions-this-game": {
+            "player": "この対戦中、{{value}}体のミニオンが死亡した"
         }
     },
     "loading": {
@@ -2264,7 +2275,7 @@
         "teams": {
             "team": "パーティ",
             "global-winrate": "全体勝率",
-            "total-matches": "全試合数",
+            "total-matches": "総試合数",
             "games": "{{value}} 試合",
             "winrate": "勝率 {{value}}%",
             "last-used": "前回使用: {{value}}",
@@ -3251,7 +3262,13 @@
                     "sea-shanty-label": "「海の舟唄」",
                     "sea-shanty-tooltip": "「海の舟唄」が自分の手札かデッキにあるとき、キャラクターに対して使用した呪文の数と、呪文の詳細を表示します",
                     "cards-played-from-another-class-label": "他クラスカード",
-                    "cards-played-from-another-class-tooltip": "「ひったくり」が自分の手札かデッキにあるとき、自分が使用した他クラスのカードの数を表示します"
+                    "cards-played-from-another-class-tooltip": "「ひったくり」が自分の手札かデッキにあるとき、自分が使用した他クラスのカードの数を表示します",
+                    "damage-taken-on-your-turn-tooltip": "自分のヒーローが自分のターンに受けたダメージの情報(受けた回数と総ダメージ量)を表示します。関連するカードがデッキや手札にある場合に表示されます(「サウナの常連」や「パーティープランナー・ヴォナ」など)",
+                    "damage-taken-on-your-turn-label": "自分のターンに受けたダメージ",
+                    "dead-minions-this-game-label": "死亡したミニオンの数",
+                    "locations-used-label": "使用した場所",
+                    "locations-used-tooltip": "自分が場所を使用した回数を表示します。関連するカードが手札かデッキにある場合に表示されます",
+                    "dead-minions-this-game-tooltip": "この対戦で死亡したミニオンの数を表示します。関連するカードが手札かデッキにある場合に表示されます(「鉱山長レスカ」など)"
                 }
             },
             "duels": {
@@ -3839,7 +3856,41 @@
         "murloc-shaman": "マーロックシャーマン",
         "orb-mage": "プロジェクタードームメイジ",
         "taunt-warrior": "挑発ウォリアー",
-        "arfus": "アーファス"
+        "arfus": "アーファス",
+        "burn-spell-mage": "バーンスペルメイジ",
+        "concierge-druid": "コンシェルジュドルイド",
+        "even-warlock": "偶数ウォーロック",
+        "lamplighter-rogue": "点灯係ローグ",
+        "pirate-demon-hunter": "海賊デーモンハンター",
+        "sonya-rogue": "ソニアローグ",
+        "tempo-druid": "テンポドルイド",
+        "bbu-handbuff-dk": "赤赤緑ハンドバフデスナイト",
+        "big-spell-mage": "ビッグスペルメイジ",
+        "drunk-mage": "ドリンクメイジ",
+        "incindius-shaman": "インシディウスシャーマン",
+        "lynessa-paladin": "リネッサパラディン",
+        "nostalgia-shaman": "懐かしの波シャーマン",
+        "pirate-shaman": "海賊シャーマン",
+        "bfu-even-death-knight": "レインボー偶数デスナイト",
+        "bfu-rainbox-plague-dk": "レインボー疫病デスナイト",
+        "uuu-even-death-knight": "緑偶数デスナイト",
+        "odd-warrior": "奇数ウォリアー",
+        "pain-zarimi-priest": "自傷ザリミプリースト",
+        "rainbow-dk": "レインボーデスナイト",
+        "rainbow-excavate-dk": "レインボー発掘デスナイト",
+        "zilliax-warrior": "ジリアックスウォリアー",
+        "amalgam-hunter": "融合体ハンター",
+        "drunk-paladin": "ドリンクパラディン",
+        "bfu-deathrattle-warlock": "レインボー断末魔ウォーロック",
+        "rainbow-shaman": "レインボーシャーマン",
+        "sandwich-warrior": "サンドイッチウォリアー",
+        "concierge-hunter": "コンシェルジュハンター",
+        "fatigue-demon-hunter": "ファティーグデーモンハンター",
+        "handbuff-hunter": "ハンドバフハンター",
+        "jive-shaman": "虫ケラシャーマン",
+        "menagerie-warrior": "動物園ウォリアー",
+        "pain-demon-hunter": "自傷デーモンハンター",
+        "pain-rogue": "自傷ローグ"
     },
     "arena": {
         "overlay": {
