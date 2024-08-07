@@ -2092,7 +2092,8 @@
             "player": "Vous avez lancé {{value}} sorts différents pendant ce tour : {{cards}}"
         },
         "elemental-streak": {
-            "player": "Vous avez joué un Élémentaire {{value}} tours consécutifs"
+            "player": "Vous avez joué un Élémentaire {{value}} tours consécutifs",
+            "opponent": "Votre adversaire a joué un Élémentaire {{value}} tours consécutifs"
         },
         "thirsty-drifter": {
             "player": "Vous avez joué {{value}} cartes à 1 cristal"
@@ -2125,6 +2126,9 @@
         },
         "dead-minions-this-game": {
             "player": "{{value}} serviteurs sont morts pendant cette partie"
+        },
+        "bgs-tuskarr-raider": {
+            "player": "Vous avez joué {{value}} Pirates pendant cette partie"
         }
     },
     "loading": {
@@ -2390,7 +2394,8 @@
                 "deck-mulligan-filter-opponent-tooltip": "Afficher les parties contre {{opponent}}. Cliquez pour modifier.",
                 "deck-mulligan-filter-time-tooltip": "Afficher les parties pour {{timeFrame}} {{patchDetails}}. Cliquez pour modifier."
             }
-        }
+        },
+        "stolen-tooltip": "Volé à l’adversaire"
     },
     "battlegrounds": {
         "menu": {
@@ -2487,7 +2492,7 @@
             "summon-plants": "Invoquer des Plantes",
             "summon-plants-tooltip": "Confère au serviteur « Râle d’agonie : invoque deux plantes 1/1 »",
             "sneed-deathrattle": "Râle d’agonie de Sneed",
-            "sneed-deathrattle-tooltip": "Combien de fois le pouvoir héroïque de Sneed a-t-il été utilisé sur ce serviteur",
+            "sneed-deathrattle-tooltip": "Combien de fois le pouvoir héroïque de Sneed a été utilisé sur ce serviteur",
             "minions-selection-title": "Serviteurs",
             "show-buddies-button-title": "Afficher les compagnons",
             "search-minion-placeholder": "Rechercher un serviteur",
@@ -2983,7 +2988,7 @@
                 "advanced-config-title": "Config. avancée",
                 "activate-custom-in-game-text-label": "Texte personnalisé (en jeu)",
                 "activate-custom-in-match-text-label": "Texte personnalisé (pendant une partie)",
-                "activate-custom-in-match-text-tooltip": "Personnalise le texte qui apparaîtra lorsque les utilisateurs cliqueront sur votre profil lorsque vous êtes dans une partie",
+                "activate-custom-in-match-text-tooltip": "Personnalise le texte qui apparaît lorsque les gens cliquent sur votre profil Discord lorsque vous êtes dans une partie",
                 "in-game-text-default-value": "En jeu",
                 "in-game-text-in-match-default-value": "Dans une partie de {mode}",
                 "in-game-text": {
@@ -3155,13 +3160,14 @@
                     "chaotic-tendril-tooltip": "Afficher le nombre de fois où votre adversaire a joué un tentacule chaotique",
                     "excavate-tooltip": "Affiche les niveaux actuels et maximum de trésors à déterrer de votre adversaire. Lorsque vous passez la souris sur le compteur, affiche aussi les trésors que votre adversaire pourra obtenir la prochaine fois qu’il ou elle en déterrera un.",
                     "wheel-of-death-tooltip": "Une fois que votre adversaire a joué {{cardName}}, affiche le nombre de tours avant que votre héros ou héroïne soit détruit",
-                    "dragons-summoned-tooltip": "Affiche le nombre de Dragons que votre adversaire a invoqués. Apparaît uniquement quand l’adversaire est un prêtre et a joué un Dragon"
+                    "dragons-summoned-tooltip": "Affiche le nombre de Dragons que votre adversaire a invoqués. Apparaît uniquement quand l’adversaire est un prêtre et a joué un Dragon",
+                    "elemental-streak-tooltip": "Compte le nombre de tours consécutifs où votre adversaire a joué un Élémentaire. N’apparaît que s’il ou elle a joué au moins 2 Élémentaires à la suite."
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
                 "hand-markers-title": "Marqueurs en main",
                 "known-decklist-label": "Charger les decks connus",
-                "known-decklist-tooltip": "Lorsque cette option est activée, le decktracker essaiera de charger le deck de l’adversaire actuel au début de la partie s’il s'agit d’un deck connu (comme lors de la saison d’Imprévu Héroïsme de Mystifix)"
+                "known-decklist-tooltip": "Lorsque cette option est activée, le decktracker essaiera de charger le deck de l’adversaire au début de la partie s’il s'agit d’un deck connu (comme lors de la saison d’Imprévu Héroïsme de Mystifix)"
             },
             "your-deck": {
                 "ignore-decklist-label": "Ignorer le deck",
@@ -3454,7 +3460,9 @@
                 "counter-lord-of-gains-label": "Seigneur des gains",
                 "quest-stats-title": "Stats de Quête",
                 "minions-list-show-tier-7-label": "Afficher les serviteurs de niveau 7",
-                "minions-list-show-tier-7-tooltip": "Affiche toujours les serviteurs de niveau 7, même lorsque vous n’êtes pas Thorim."
+                "minions-list-show-tier-7-tooltip": "Affiche toujours les serviteurs de niveau 7, même lorsque vous n’êtes pas Thorim.",
+                "counter-tuskarr-raider-label": "Écumeur rohart",
+                "counter-tuskarr-raider-tooltip": "Afficher le nombre de Pirates que vous avez joués pendant cette partie"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -3474,7 +3482,7 @@
             "leaderboard": {
                 "show-in-leaderboard": "Afficher sur les tuiles de classement",
                 "show-in-leaderboard-tooltip": "Afficher le nom et la cote du joueur directement sur les tuiles de classement dans le jeu",
-                "text-3": "ATTENTION : le classement ne contient que les informations des meilleurs joueurs, et la correspondance se fait uniquement sur la base du nom. Si vous utilisez cette option à des cotes moyennes ou basses, il y a des chances que les infos affichées soient incorrectes.",
+                "text-3": "ATTENTION : le classement ne contient que les informations des meilleurs joueurs et joueuses, et la correspondance se fait uniquement sur la base du nom. Si vous utilisez cette option à des cotes moyennes ou basses, il y a des chances que les infos affichées soient incorrectes.",
                 "text-2": "IMPORTANT : vous devez d’abord passer la souris sur un personnage pour que l’application puisse récupérer ses infos de classement",
                 "title": "Info de classement dans l’overlay",
                 "show-in-opponent-recap": "Afficher dans le récap",
