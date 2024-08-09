@@ -349,7 +349,7 @@
             "graph": {
                 "tooltip-title": "標題",
                 "wins-label": "{{value}} 勝",
-                "wins-value": "局數的 {{value}}%"
+                "wins-value": "場次的 {{value}}%"
             },
             "filters": {
                 "time-patch": "當前版本 {{value}}",
@@ -394,11 +394,11 @@
         },
         "arena": {
             "menu": {
-                "my-runs": "我的戰局",
+                "my-runs": "我的場次",
                 "card-stats": "卡牌統計",
                 "class-tier-list": "職業名次列表",
                 "my-stats": "我的統計",
-                "arena-top-runs": "高勝對局"
+                "arena-top-runs": "高勝場次"
             },
             "filters": {
                 "time": {
@@ -422,7 +422,7 @@
                     "all": "全部職業卡牌"
                 },
                 "high-win-runs": {
-                    "wins": "{{value}}+ 勝場數"
+                    "wins": "{{value}}+ 勝"
                 },
                 "hero-class": {
                     "all": "全部形態英雄"
@@ -430,19 +430,19 @@
             },
             "stats": {
                 "title": "狀態總覽",
-                "total-runs": "總局數",
+                "total-runs": "總場次",
                 "wins-per-run": "平均先手勝場",
-                "most-played-classes": "使用最多職業",
+                "most-played-classes": "遊玩最多的職業",
                 "best-winrate-classes": "最佳勝率職業",
                 "most-faced-classes": "最常遇到職業",
                 "best-winrate-against": "最佳勝率戰局",
-                "stat-tooltip": "您進行了{{numberOfRuns}} 場戰局，且以{{winrate}}%的勝率與{{playerClass}} 進行{{totalMatches}} 場戰局",
+                "stat-tooltip": "你遊玩了 {{numberOfRuns}} 場，並且使用 {{playerClass}} 以 {{winrate}}% 的勝率進行了 {{totalMatches}} 場對戰。",
                 "faced-tooltip": "您以 {{winrate}}% 的勝率對上 {{opponentClass}} {{totalMatches}} 次",
-                "total-games-played": "總遊玩戰局已打出數"
+                "total-games-played": "總遊玩遊戲次數"
             },
             "runs": {
                 "view-run-button": "檢視戰局",
-                "minimize-run-button": "最小化",
+                "minimize-run-button": "縮進視圖",
                 "run-name": "競技場 {{value}} 勝",
                 "load-runs-button": "點擊讀取更多戰局",
                 "deck-score-tooltip": "這是你的牌組得分，是使用牌組中全部卡牌的牌組勝率計算出來的。"
@@ -457,13 +457,13 @@
                 "header-drawn-total": "總抽取數",
                 "header-deck-winrate": "牌組世界紀錄",
                 "header-drawn-winrate-tooltip": "抽卡後獲勝的頻率",
-                "header-pickrate-impact-tooltip": "至少達到 {{value}} 勝場的回合之間的選擇率差異以及該卡的平均選擇率",
-                "header-pickrate-high-wins-tooltip": "至少獲得 {{value}} 勝場的揀選率",
+                "header-pickrate-impact-tooltip": "在至少達到 {{value}} 場對戰勝利以及該卡的平均選擇率之間的選擇率差異",
+                "header-pickrate-high-wins-tooltip": "至少獲得 {{value}} 場對戰勝利的揀選率",
                 "header-play-on-curve-winrate": "已打出的世界記錄趨勢",
                 "header-play-on-curve-total": "已打出總次數的趨勢",
                 "header-play-on-curve-winrate-tooltip": "當你打出這張卡牌時的平均勝率的趨勢，即當你的法力值與卡牌消耗的一樣多時",
                 "header-deck-winrate-tooltip": "包含這張卡的牌組的勝率",
-                "header-mulligan-winrate": "起手換牌世界記錄",
+                "header-mulligan-winrate": "起始手牌世界記錄",
                 "header-mulligan-winrate-tooltip": "當你的起始手牌中有這張卡牌時的平均勝率",
                 "header-pickrate-tooltip": "這張卡在構築期間提供時被選中的頻率是多少",
                 "header-offered-total": "提供的總數",
@@ -503,7 +503,7 @@
                 "header-average-wins": "每局勝場",
                 "header-games-played": "已遊玩局數",
                 "header-class-name": "職業",
-                "header-runs": "局數",
+                "header-runs": "場次",
                 "header-winrate": "勝率",
                 "leaderboard-average": "排行榜平均值",
                 "leaderboard-average-tooltip": "為排行榜計算的平均值。實際細節有點複雜，如果你想了解更多，請跳到 Discord",
@@ -739,7 +739,7 @@
                 "browse-set-button": "瀏覽資料片",
                 "total-non-golden-cards": "已收集的非金卡總數",
                 "pity-timer-reset-tooltip": "重置此礼包的 \"遗憾 \"计时器后，在考虑下一个史诗/传奇保证礼包到期时间时，将忽略之前打开的全部礼包。",
-                "total-golden-cards": "收集傳說卡、鑽石卡和珍藏卡的總數"
+                "total-golden-cards": "收集傳說卡、鑽石卡和簽名版珍藏卡的總數"
             },
             "empty-state": {
                 "no-missing-card-in-set": {
@@ -870,7 +870,7 @@
             },
             "matchup-info": {
                 "opponents-popularity-header": "對手職業的詳細信息",
-                "total-matches-header": "全部戰局",
+                "total-matches-header": "全部比賽",
                 "win-percent-header": "勝率",
                 "win-total-header": "勝場",
                 "win-play-percent-header": "先手勝率",
@@ -949,8 +949,8 @@
             "stats": {
                 "total-games-played": "總遊玩戰局已打出數",
                 "total-time-played": "總遊玩時間",
-                "turns-to-win": "勝局回合",
-                "turns-to-lose": "敗局回合",
+                "turns-to-win": "獲勝局數",
+                "turns-to-lose": "失敗局數",
                 "winrate": "勝率",
                 "winrate-first": "勝率(先手)",
                 "winrate-coin": "勝率(後手)"
@@ -1003,7 +1003,7 @@
                         "drawn-winrate-header": "抽取勝率",
                         "drawn-winrate-header-tooltip": "當卡牌在遊戲中被抽出或在更換結束後出現在你的起始手牌中時的平均勝率",
                         "copy-per-deck-header-tooltip": "此卡牌在該形態牌組中的平均張數",
-                        "mulligan-winrate-impact-header": "起手換牌影響",
+                        "mulligan-winrate-impact-header": "起始手牌影響",
                         "drawn-winrate-impact-header-tooltip": "平均勝率相對於遊戲中抽出的牌或更換結束後出現在你的起始手牌中時的牌組勝率",
                         "copy-per-deck-header": "每副牌組的平均複製份數"
                     },
@@ -1186,7 +1186,7 @@
                 "records": {
                     "title": "戰績最佳的英雄",
                     "columns": {
-                        "record": "錄製",
+                        "record": "紀錄",
                         "hero": "英雄",
                         "replay": "回顧",
                         "score": "積分"
@@ -1390,12 +1390,12 @@
                 "no-dust-missing-tooltip": "您有全部的卡牌",
                 "view-details-button": "檢視詳細",
                 "winrate": "勝率",
-                "runs": "局數",
+                "runs": "場次",
                 "starter-deck": "起始牌組",
                 "final-deck": "最後牌組",
-                "all-runs-with-deck": "\"{{deckName}}\"的局數",
+                "all-runs-with-deck": "\"{{deckName}}\" 的所有場次",
                 "run-details": "戰局詳情",
-                "number-of-runs": "戰局數",
+                "number-of-runs": "場次的數值",
                 "average-wins-per-run": "平均先手勝場",
                 "archive-deck-tooltip": "歸檔牌組(您可以之後復原)",
                 "delete-deck-tooltip": "永久刪除牌組",
@@ -1417,23 +1417,23 @@
                 "global-winrate": "全球勝率",
                 "your-winrate": "您的勝率",
                 "games-played": "已遊玩局數",
-                "number-of-games-tooltip": "記錄了 {{totalRuns}} 場(占 {{popularity}})",
+                "number-of-games-tooltip": "已記錄 {{totalRuns}} 場 (占 {{popularity}})",
                 "wins-distribution-tooltip": "勝場分佈"
             },
             "run": {
                 "replays-title": "同一場戰局回顧",
-                "rating": "排名",
+                "rating": "鬼祟",
                 "view-deck-button": "檢視牌組",
                 "view-run-button": "檢視戰局",
                 "minimize-run-button": "最小化",
-                "load-more-button": "加載更多戰局…"
+                "load-more-button": "載入更多場次…"
             },
             "stats": {
-                "tier-list-title": "強度列表",
+                "tier-list-title": "名次列表",
                 "tier-list-title-tooltip": "名次是根據您當前的篩選器計算的",
-                "tier-s-tooltip": "必須選",
+                "tier-s-tooltip": "必選",
                 "tier-a-tooltip": "強力的選擇",
-                "tier-b-tooltip": "好的選擇",
+                "tier-b-tooltip": "不錯的選擇",
                 "tier-c-tooltip": "正確的選擇",
                 "tier-d-tooltip": "最好避免",
                 "tier-e-tooltip": "千萬別選",
@@ -1459,13 +1459,13 @@
             },
             "classes-recap": {
                 "title": "狀態總覽",
-                "total-runs": "總局數",
+                "total-runs": "總場次",
                 "avg-wins-per-run": "平均勝場",
                 "most-played-classes": "使用最多職業",
                 "best-winrate-classes": "最佳勝率職業",
                 "most-faced-classes": "最常遇到職業",
                 "best-winrate-against": "最佳勝率戰局",
-                "stat-tooltip": "您進行了{{numberOfRuns}} 場戰局，且以{{winrate}}%的勝率與{{playerClass}} 進行{{totalMatches}} 場戰局",
+                "stat-tooltip": "你遊玩了 {{numberOfRuns}} 場，並且使用 {{playerClass}} 以 {{winrate}}% 的勝率進行了 {{totalMatches}} 場對戰。",
                 "faced-tooltip": "您以 {{winrate}}% 的勝率對上 {{opponentClass}} {{totalMatches}} 次"
             },
             "deckbuilder": {
@@ -1516,7 +1516,7 @@
                 "header-winrate": "勝率",
                 "tier": "名次 {{value}}",
                 "player-data-points": "{{value}}",
-                "data-points": "{{value}} 次運行",
+                "data-points": "{{value}} 場",
                 "player-winrate-tooltip": "你於這個英雄的平均勝率"
             }
         },
@@ -1602,7 +1602,7 @@
                 "watch-replay-button-tooltip": "觀看回顧",
                 "mercenaries-bot-opponent-name": "旅店老闆(AI)",
                 "bgs-available-tribes-tooltip": "本戰局中的手下種族有：{{value}}",
-                "bgs-perfect-game-result": "完美!",
+                "bgs-perfect-game-result": "水欸!",
                 "deck-name-tooltip": "使用 {{value}}",
                 "bgs-result": {
                     "1": "第一",
@@ -1615,12 +1615,12 @@
                     "8": "第八"
                 },
                 "game-mode-tooltip": {
-                    "legend-format": "{{format}}傳說",
-                    "ladder": "{{format}}{{leagueName}}{{rank}}",
-                    "ladder-fallback": "{{format}}{{rank}}",
-                    "ladder-default": "{{format}}25",
-                    "galakrond-explorers": "葛拉克朗的覺醒-探險者協會",
-                    "galakrond-evil": "葛拉克朗的覺醒-邪惡陣線"
+                    "legend-format": "{{format}} 傳說",
+                    "ladder": "{{format}} {{leagueName}} {{rank}}",
+                    "ladder-fallback": "{{format}} {{rank}}",
+                    "ladder-default": "{{format}} 排名25",
+                    "galakrond-explorers": "葛拉克朗的覺醒 - 探險者協會",
+                    "galakrond-evil": "葛拉克朗的覺醒 - 邪惡陣線"
                 },
                 "went-first-tooltip": "先手",
                 "went-second-tooltip": "後手",
@@ -1674,7 +1674,7 @@
             "guess_the_weight": "有些卡牌在發現期間有上下文幫助",
             "minion_play_order": "戰場上每個手下頂部的數字告訴你他們上場的順序 - 這就是死亡之聲觸發的順序",
             "minion_auto_highlight": "有些手下會在有正確的英雄下無腦購買（例如保本賭客於海盜派奇）。 Firestone 會自動在商店中為您突出顯示這些手下。",
-            "constructed_deck_stats": "檢視詳細的卡牌統計數據（例如調度和平局勝率）以及整個形態的統計數據。",
+            "constructed_deck_stats": "檢視詳細的卡牌統計數據（例如起始手牌和抽取勝率）以及整個形態的統計數據。",
             "bg_wisdomball": "您可以直接從覆蓋層中獲得遊戲裏一些最佳玩家的建議並採用他們的策略",
             "collection_stats": "您可以檢視所顯示羣組的卡牌歷史記錄和全域統計數據，並隨時在它們之間切換",
             "achievements_pick_for_me": "您可以讓應用程式來為您選擇跟踪 3 項成就",
@@ -1724,7 +1724,7 @@
                     "dragonsPlayed-label": "打出龍類",
                     "mechsPlayed-label": "打出機械",
                     "damageWithSpells-label": "法術傷害",
-                    "damageWithSpells-tooltip": "使用法術造成傷害，每次造成傷害即可獲得 {{pointsGained}} 點數",
+                    "damageWithSpells-tooltip": "施放法術造成傷害，每次造成傷害即可獲得 {{pointsGained}} 點數",
                     "elementalsPlayed-label": "打出元素",
                     "murlocsPlayed-label": "打出魚人",
                     "nagasPlayed-label": "打出納迦",
@@ -1783,7 +1783,7 @@
                     "arena": "遊玩一局競技場戰局或啓動「爐石戰記」來開始追蹤您的統計數據"
                 },
                 "header-winrate": "勝率",
-                "header-total-matches": "總戰局數",
+                "header-total-matches": "全部比賽",
                 "header-wins": "勝場",
                 "header-wins-bg": "勝場（前 4 名）",
                 "header-top-1": "第1名",
@@ -1814,7 +1814,7 @@
                 "games-played": "過去 {{value}} 天內遊玩過的遊戲",
                 "total-members": "成員",
                 "leaderboards": {
-                    "runs-completed-header": "局數",
+                    "runs-completed-header": "場次",
                     "rating-header": "等級",
                     "rank-header": "排名",
                     "empty-leaderboard": "該排行榜還沒有玩家",
@@ -2002,10 +2002,10 @@
             "player": "你的對手上回合打出了 {{value}} 張卡牌"
         },
         "lightray": {
-            "player": "您已在本場戰局中打出 {{value}} 張聖騎士卡牌，將聖光魟魚減少為 {{lightray}} 法力值"
+            "player": "您已在本戰局中打出 {{value}} 張聖騎士卡牌，將聖光魟魚減少為 {{lightray}} 法力值"
         },
         "menagerie": {
-            "player": "您在本場對戰中打出過以下種族：{{value}}"
+            "player": "您在本戰局中打出過以下種族：{{value}}"
         },
         "bgs-magmaloc": {
             "player": "你的「岩漿流」將在回合結束時獲得 +{{value}}/+{{value}}"
@@ -2026,10 +2026,10 @@
             "player": "您在自己的回合中已受到 {{times}} 次傷害，總共受到 {{damage}} 點傷害"
         },
         "locations-used": {
-            "player": "您已在本場對戰中使用地點 {{value}} 次"
+            "player": "您已在本戰局中使用地點 {{value}} 次"
         },
         "dead-minions-this-game": {
-            "player": "這場對戰中有 {{value}} 個手下死亡"
+            "player": "本戰局有 {{value}} 個手下死亡"
         },
         "cards-drawn": {
             "player": "您在本場比賽中抽取了 {{value}} 張卡牌"
@@ -2038,7 +2038,7 @@
             "player": "您打出了 {{value}} 張花費 (1) 法力值的卡牌"
         },
         "holy-spells": {
-            "player": "您已在本場對戰中施放了 {{value}} 張神聖法術"
+            "player": "您已在本戰局中施放了 {{value}} 張神聖法術"
         },
         "bgs-blood-gem": {
             "player": "你的「{{cardName}}」給予 +{{attack}}/+{{health}}"
@@ -2054,7 +2054,11 @@
             "opponent": "你的對手本回合已施放 {{value}} 張法術"
         },
         "elemental-streak": {
-            "player": "您已連續 {{value}} 回合打出元素"
+            "player": "您已連續 {{value}} 回合打出元素",
+            "opponent": "你的對手已連續 {{value}} 回合打出過元素"
+        },
+        "bgs-tuskarr-raider": {
+            "player": "您在本戰局已打出 {{value}} 張海盜"
         }
     },
     "loading": {
@@ -2085,7 +2089,7 @@
             },
             "arena": {
                 "title": "競技場",
-                "text": "檢視您最後一次競技場的局數與獎勵"
+                "text": "檢視您最後一次競技場活動與獎勵"
             },
             "replays": {
                 "title": "回顧",
@@ -2205,7 +2209,7 @@
         "teams": {
             "team": "隊伍",
             "global-winrate": "全球勝率",
-            "total-matches": "戰局數",
+            "total-matches": "全部比賽",
             "games": "{{value}} 場戰局",
             "winrate": "{{value}}% 勝率",
             "last-used": "上次使用的隊伍: {{value}}",
@@ -2308,19 +2312,20 @@
                 "mulligan-card": "卡牌",
                 "mulligan-impact": "影響",
                 "no-mulligan-data": "沒有數據",
-                "deck-mulligan-filter-rank-bracket-tooltip": "顯示來自 {{rankBracket}} 的對戰。單擊進行更改。",
+                "deck-mulligan-filter-rank-bracket-tooltip": "顯示來自 {{rankBracket}} 的戰局。單擊進行更改。",
                 "mulligan-impact-tooltip-premium": "將這張卡牌保留在你的起始手牌中對你的勝率有多大影響。",
                 "no-mulligan-data-tooltip": "我們找不到此形態的任何起始手牌數據",
                 "mulligan-keep-rate-tooltip": "這張卡牌在起始手牌中保留的頻率。",
                 "mulligan-keep-rate": "保留%",
                 "mulligan-impact-tooltip-free": "將這張卡牌保留在你的起始手牌中對你的勝率有多大影響。今天您還有 {{value}} 次免費使用機會。",
                 "deck-mulligan-overview-title": "牌組起手概觀",
-                "locked-premium-info-tooltip": "成為進階會員即可查看您套牌的詳細調度資料。您每天可以免費使用此功能 {{value}} 次。",
-                "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對上 {{opponentClass}} | {{sampleSize}} 的對戰",
-                "deck-mulligan-filter-time-tooltip": "顯示 {{time Frame}} {{patchDetails}} 的對戰。單擊進行更改。"
+                "locked-premium-info-tooltip": "成為進階會員即可查詢您套牌的詳細起始手牌資訊。您每天可以免費使用此功能 {{value}} 次。",
+                "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對上 {{opponentClass}} | {{sampleSize}} 的戰局",
+                "deck-mulligan-filter-time-tooltip": "顯示 {{time Frame}} {{patchDetails}} 的戰局。單擊進行更改。"
             }
         },
-        "unknown-mana-minion": "未知 {{manaCost}} 法力值手下"
+        "unknown-mana-minion": "未知 {{manaCost}} 法力值手下",
+        "stolen-tooltip": "從對手那裡偷來的"
     },
     "battlegrounds": {
         "menu": {
@@ -2431,7 +2436,7 @@
             "undead-army-tooltip": "您的不死族獲得的額外攻擊",
             "simulating-button": "模擬中...",
             "show-buddies-button-title": "显示夥伴",
-            "eternal-legion-tooltip": "本場戰局死亡的友方永恆騎士數量"
+            "eternal-legion-tooltip": "本戰局死亡的友方永恆騎士數量"
         },
         "hero-stats": {
             "finishes-title": "完成",
@@ -2513,7 +2518,7 @@
             "quests": {
                 "turn-to-complete-tooltip": "在你目前的MMR範圍內完成該英雄的任務的平均輪數和任務難度（越低越好）。任務完成的平均回合為 {{averageTurnsToComplete}}，英雄的平均回合為 {{turnsToCompleteForHero}}，難度修正為 {{turnsToCompleteImpact}}。",
                 "reward-position-tooltip": "在您目前的MMR範圍內選擇此任務的所有玩家的平均最終排名",
-                "sample-size": "總遊玩戰局：",
+                "sample-size": "總遊玩次數：",
                 "reward": {
                     "average-placement-tooltip": "自上個補丁以來排名前 {{value}}% 的玩家的獎勵統計數據（考慮到所有種族）",
                     "average-placement-header": "平均獎勵放置",
@@ -2558,7 +2563,7 @@
             "composition": {
                 "blank-tribe": "無種族 / 全部",
                 "empty-state-title": "沒有可用的資訊",
-                "empty-state-subtitle": "過就戰局或過長戰局無回合紀錄"
+                "empty-state-subtitle": "較老的對戰或很長的對戰都沒有儲存逐個回合的記錄。"
             },
             "winrate-stats": {
                 "community-label": "英雄平均值",
@@ -2600,7 +2605,7 @@
             "player-matches": "{{value}} 場戰局",
             "your-value-tooltip": "您的戰局",
             "community-value-tooltip": "使用程式中的篩選器來確認價值",
-            "win-distribution-header": "勝場分佈({{value}} 局)",
+            "win-distribution-header": "勝場分佈 ({{value}} 場次)",
             "win-distribution-tooltip": "勝場分佈",
             "top-decks-header": "高勝率牌組({{value}} 套)",
             "footer": "離開英雄卡時保持壓按Shift鍵以防它消失",
@@ -3062,23 +3067,24 @@
                     "elwynn-boar-tooltip": "顯示您對手的艾爾文野豬死亡數量",
                     "volatile-skeleton-label": "易變骷髏死亡數",
                     "hero-power-damage-label": "英雄能力傷害",
-                    "hero-power-damage-tooltip": "顯示本場對戰對手英雄能力造成的總傷害。只有當對手的職業是法師且已造成至少 1 點傷害時才會顯示",
+                    "hero-power-damage-tooltip": "顯示本戰局對手英雄能力造成的總傷害。只有當對手的職業是法師且已造成至少 1 點傷害時才會顯示",
                     "astral-automaton-label": "星界自動機",
                     "earthen-golem-label": "土靈魔像",
                     "fatigue-tooltip": "顯示對手的下一次疲倦傷害",
-                    "chaotic-tendril-tooltip": "顯示對手使用混沌觸鬚的次數",
+                    "chaotic-tendril-tooltip": "顯示對手打出過混沌觸鬚的次數",
                     "volatile-skeleton-tooltip": "顯示對手易變骷髏的死亡數量",
                     "relic-label": "文物",
                     "relic-tooltip": "展示對手下一個惡魔獵人文物的強化",
                     "excavate-tooltip": "顯示對手當前和最大的挖掘級別，並在將滑鼠懸停在櫃檯上時顯示他們可以從下一個挖掘層獲得的寶藏",
                     "corpse-spent-tooltip": "顯示對手消耗的屍體總數的計數器。當對手使用其中一種類型的符文時，它就會出現，並且很可能會持有高潮死靈爆炸。",
                     "shockspitter-tooltip": "顯示對手在這場戰局中進攻的次數。只有當對手的職業是獵人且至少攻擊過一次時才會顯示",
-                    "number-of-spells-tooltip": "顯示對手在這場對戰中施放過的法術總數。只有當他們至少施放過一個法術時才會顯示",
-                    "astral-automaton-tooltip": "顯示對手召喚星界自動機的次數",
-                    "earthen-golem-tooltip": "顯示對手召喚土靈魔像的次數",
-                    "multicaster-tooltip": "顯示對手在本場戰局中已施放法術的法術流派",
+                    "number-of-spells-tooltip": "顯示對手在本戰局中施放過的法術總數。只有當他們至少施放過一個法術時才會顯示",
+                    "astral-automaton-tooltip": "顯示對手召喚過星界自動機的次數",
+                    "earthen-golem-tooltip": "顯示對手召喚過土靈魔像的次數",
+                    "multicaster-tooltip": "顯示對手在本戰局中已施放法術的法術流派",
                     "wheel-of-death-tooltip": "在你的對手打出「{{cardName}}」後，顯示你死亡前的回合數",
-                    "dragons-summoned-tooltip": "顯示對手召喚龍類的次數。只有當對手是牧師且打出過龍類時才會出現"
+                    "dragons-summoned-tooltip": "顯示對手召喚過龍類的次數。只有當對手是牧師且打出過龍類時才會出現",
+                    "elemental-streak-tooltip": "計算對手連續打出元素的回合數。只有當他們連續打出過至少 2 個元素時才會出現。"
                 },
                 "size-title": "尺寸與透明度",
                 "opacity-title": "透明度",
@@ -3104,13 +3110,13 @@
                     "abyssal-curse-tooltip": "顯示您最高的深淵詛咒傷害",
                     "attack-on-board-tooltip": "顯示您的手下和英雄的攻擊力總和",
                     "number-of-spells-label": "法術施放數量",
-                    "number-of-spells-tooltip": "顯示您在本場對戰中施放過的法術總數。僅在牌組或手牌中找到相關卡牌時才顯示",
+                    "number-of-spells-tooltip": "顯示您在本戰局中施放過的法術總數。僅在牌組或手牌中找到相關卡牌時才顯示",
                     "elementals-label": "元素",
                     "elementals-tooltip": "顯示本回合中和上回合您打出的元素數量。只有在套牌或手牌中找到相關卡牌時啟動",
                     "watch-post-tooltip": "顯示本戰局中您打出的哨所數量。只有在套牌或手牌中找到相關卡牌時啟動",
                     "libram-tooltip": "顯示本戰局中您打出的聖契數量。只有在套牌或手牌中找到相關卡牌時啟動",
                     "elwynn-boar-tooltip": "顯示您艾爾文野豬的死亡數量",
-                    "hero-power-damage-tooltip": "顯示本場對戰你的英雄能力造成的總傷害。只有當「火眼莫德雷斯」或「『龍鷹』賈納雷」在你的牌組或手牌中時才會出現",
+                    "hero-power-damage-tooltip": "顯示本戰局你的英雄能力造成的總傷害。只有當「火眼莫德雷斯」或「『龍鷹』賈納雷」在你的牌組或手牌中時才會出現",
                     "bolner-label": "包那‧錘喙",
                     "bolner-tooltip": "當你手上有張「包那‧錘喙」的卡牌時，展示本回合打出的第一張戰吼牌（如果有）",
                     "brilliant-macaw-label": "聰明的金剛鸚鵡",
@@ -3146,9 +3152,9 @@
                     "queensguard-label": "女王近衞",
                     "chained-guardian-label": "瘟疫",
                     "fatigue-tooltip": "顯示您的下一次疲倦傷害",
-                    "chaotic-tendril-tooltip": "顯示您使用混沌觸鬚的次數",
-                    "dragons-summoned-tooltip": "顯示你召喚龍類的次數",
-                    "treant-tooltip": "顯示你召喚樹人的次數",
+                    "chaotic-tendril-tooltip": "顯示您打出過混沌觸鬚的次數",
+                    "dragons-summoned-tooltip": "顯示你召喚過龍類的次數",
+                    "treant-tooltip": "顯示你召喚過樹人的次數",
                     "relic-tooltip": "展示你的下一個惡魔獵人文物的強化",
                     "volatile-skeleton-tooltip": "顯示您易變骷髏的死亡數量",
                     "secrets-label": "已施放過的秘密",
@@ -3158,8 +3164,8 @@
                     "naga-giant-tooltip": "當你手上或牌組中有張「納迦巨人」的卡牌時，顯示納迦巨人實際（減少後）的花費",
                     "spectral-pillager-label": "鬼靈掠取者",
                     "chained-guardian-tooltip": "顯示你洗入對手牌庫的瘟疫數量",
-                    "astral-automaton-tooltip": "顯示你召喚星界自動機的次數",
-                    "earthen-golem-tooltip": "顯示你召喚土靈魔像的次數",
+                    "astral-automaton-tooltip": "顯示你召喚過星界自動機的次數",
+                    "earthen-golem-tooltip": "顯示你召喚過土靈魔像的次數",
                     "shockspitter-label": "閃電龍鷹",
                     "lightray-tooltip": "當您手上或牌組中有聖光魟魚（或其它可以透過打出聖騎士卡牌來減少法力值的卡牌）時，顯示您已打出的聖騎士卡牌數量。",
                     "parrot-mascot-tooltip": "當您手上有張「鸚鵡吉祥物」的卡牌時，會按照打出的順序顯示您本回合打出過的全部卡牌",
@@ -3182,7 +3188,7 @@
                     "damage-taken-on-your-turn-tooltip": "當您的手牌或牌組中有一些使用此資訊的卡牌（例如 三溫暖常客 或 派對策劃員沃娜）時，為您提供有關您的英雄在您的回合中受到的傷害的信息（次數和總傷害）",
                     "locations-used-label": "已使用地點",
                     "dead-minions-this-game-tooltip": "當您手上或牌組中有相關卡牌時（例如，礦坑老大雷斯卡），顯示本場比賽死亡的小兵數量",
-                    "locations-used-tooltip": "當您手上或牌組中有依賴該資訊的卡牌時，顯示您使用地點的次數",
+                    "locations-used-tooltip": "當您手上或牌組中有依賴該資訊的卡牌時，顯示您使用過地點的次數",
                     "cards-drawn-tooltip": "當您手上有「{{cardName}}」時，顯示您在本場比賽中已抽取的卡牌數量",
                     "holy-spells-label": "神聖法術",
                     "holy-spells-tooltip": "顯示您已使用的神聖法術數量。當您手上或牌組中擁有透過使用神聖法術而獲得的卡牌時，它會出現",
@@ -3190,7 +3196,7 @@
                     "wheel-of-death-label": "死亡輪盤",
                     "thirsty-drifter-tooltip": "當你手上或牌組中有口渴的漂泊者時，顯示你已打出的花費為 (1) 的卡牌數量",
                     "sea-shanty-label": "船員之歌",
-                    "pirates-summoned-tooltip": "顯示你召喚海盜的次數",
+                    "pirates-summoned-tooltip": "顯示你召喚過海盜的次數",
                     "sea-shanty-tooltip": "當您的手牌或牌組中有「船員之歌」時，會顯示您對角色施放的法術數量，以及您施放的法術的詳細訊息",
                     "cards-played-from-another-class-tooltip": "當您手上或牌組中有偷取和搶奪時，顯示您已打出其他職業卡牌的數量",
                     "cards-drawn-label": "抽牌",
@@ -3216,8 +3222,8 @@
                 "title": "回合計時器",
                 "show-turn-timer-label": "顯示回合計時器",
                 "show-turn-timer-tooltip": "顯示計算總時間和當前回合所花費時間的部件，並顯示您此回合還剩下多少時間",
-                "show-turn-timer-match-length-label": "顯示對戰時長",
-                "show-turn-timer-match-length-tooltip": "顯示本場戰局經過的總時間，包含起手換牌",
+                "show-turn-timer-match-length-label": "顯示戰局時長",
+                "show-turn-timer-match-length-tooltip": "顯示本戰局經過的總時間，包含起手換牌階段",
                 "size-title": "元件的縮放",
                 "opacity-title": "元件透明度",
                 "width-title": "元件寬度"
@@ -3360,7 +3366,7 @@
                 "counter-soutshsea-label": "南海惡棍",
                 "counter-soutshsea-tooltip": "當「南海惡棍」在商店或您手中時，顯示本回合購買的海盜數量(如果有)",
                 "counter-majordomo-label": "管理者埃克索圖斯",
-                "counter-majordomo-tooltip": "顯示當「管理者埃克索圖斯」在商店、您的戰場或手上時本回合使用的元素數量(如果有)",
+                "counter-majordomo-tooltip": "顯示當「管理者埃克索圖斯」在商店、您的戰場或手上時本回合已打出的元素數量(如果有)",
                 "minions-list-show-tribe-tiers-tooltip": "在手下列表中新增按種族分組的列",
                 "minions-list-group-minions-into-tribes-label": "將聯動類手下顯示在對應的種族",
                 "counter-magmaloc-tooltip": "顯示你的「岩漿流」在回合結束時將獲得的總統計數據",
@@ -3376,10 +3382,12 @@
                 "minions-list-show-tier-7-label": "顯示 7星等 手下",
                 "counter-gold-delta-tooltip": "顯示考慮到謹慎投資或南海街頭藝人等卡牌後，下一回合您有多少金幣將多/少獲得",
                 "counter-lord-of-gains-label": "增長之王",
-                "counter-lord-of-gains-tooltip": "顯示您在本場對戰中施放過多少種不同的法術，以及這些法術的名稱",
+                "counter-lord-of-gains-tooltip": "顯示您在本戰局中施放過多少種不同的法術，以及這些法術的名稱",
                 "counter-blood-gem-label": "鮮血寶石",
                 "quest-stats-title": "任務統計",
-                "minions-list-show-tier-7-tooltip": "即使你不是索林姆，也會一直顯示 7星等 手下。"
+                "minions-list-show-tier-7-tooltip": "即使你不是索林姆，也會一直顯示 7星等 手下。",
+                "counter-tuskarr-raider-label": "巨牙海民劫掠者",
+                "counter-tuskarr-raider-tooltip": "顯示您在本戰局中已打出的海盜數量"
             },
             "session-widget": {
                 "title": "歷史戰局小部件",
@@ -3820,7 +3828,7 @@
     "arena": {
         "overlay": {
             "mulligan": {
-                "mulligan-overview-footer": "對上 {{opponentClass}} | {{sampleSize}} 的對戰"
+                "mulligan-overview-footer": "對上 {{opponentClass}} | {{sampleSize}} 的戰局"
             }
         }
     }
