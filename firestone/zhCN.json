@@ -203,7 +203,9 @@
             "nature": "自然",
             "holy": "神圣",
             "shadow": "暗影",
-            "fel": "邪能"
+            "fel": "邪能",
+            "greater_trinket": "大型饰品",
+            "lesser_trinket": "小型饰品"
         },
         "tribe": {
             "bloodelf": "血精灵",
@@ -285,6 +287,9 @@
         "social": {
             "discord": "Discord",
             "twitter": "Twitter"
+        },
+        "card-type": {
+            "trinket": "饰品"
         }
     },
     "app": {
@@ -1047,7 +1052,8 @@
                 "perfect-games": "精彩对局",
                 "records": "纪录",
                 "simulator": "模拟器",
-                "leaderboard": "排行榜"
+                "leaderboard": "排行榜",
+                "trinkets": "饰品"
             },
             "tribes": {
                 "beast": "野兽",
@@ -1117,6 +1123,10 @@
                 },
                 "leaderboard": {
                     "search-placeholder": "搜索玩家…"
+                },
+                "trinket-type": {
+                    "greater": "大型饰品",
+                    "lesser": "小型饰品"
                 }
             },
             "personal-stats": {
@@ -1258,7 +1268,14 @@
                 "quest-tooltip-all-difficulties": "{{questName}}的所有难度",
                 "header-group-difficulty-button": "合并显示",
                 "header-games-played": "对战场数",
-                "header-games-played-tooltip": "在选定时间范围内使用此英雄的对局数"
+                "header-games-played-tooltip": "在选定时间范围内使用此英雄的对局数",
+                "trinket-search-placeholder": "搜索饰品...",
+                "header-trinket-details": "饰品",
+                "header-average-position-high-mmr-tooltip": "前{{value}}%玩家的平均最终排名",
+                "header-pick-rate": "选取率",
+                "header-pick-rate-high-mmr": "前{{value}}%选取率",
+                "header-pick-rate-high-mmr-tooltip": "前{{value}}%的玩家的选取率",
+                "header-average-position-high-mmr": "前{{value}}%位次"
             },
             "bgs-tier-list": {
                 "header": "任务评级表 ( {{value}} 场对战) "
@@ -2573,7 +2590,9 @@
                 "rewards-empty-state": "无任务奖励",
                 "reward-turn-tooltip": "在第 {{turn}} 回合获得任务奖励",
                 "mmr-tooltip": "该玩家的预测等级分数。我们仅仅使用排行榜上的玩家昵称获取此数据（可能存在同名昵称），所以并不保证精准，尤其是在低分段。",
-                "mmr": "{{value}}分"
+                "mmr": "{{value}}分",
+                "trinkets-empty-state": "无饰品",
+                "trinkets-title": "饰品"
             },
             "minions-list": {
                 "reset-button": "重置",
@@ -2585,7 +2604,14 @@
                 "unhighlight-mechanics": "取消标记{{value}}类型的卡牌",
                 "highlight-minion": "在酒馆中特殊标记这张卡牌",
                 "unhighlight-minion": "在酒馆中取消标记这张卡牌",
-                "minion-banned-tooltip": "此卡牌已在当前畸变中禁用。"
+                "minion-banned-tooltip": "此卡牌已在当前畸变中禁用。",
+                "rules": {
+                    "missing-board-type": "需要你的战场和手牌包含至少2个{{type}}",
+                    "menagerie": "需要你的战场和手牌包含至少3个不同种族的随从",
+                    "tavern-level": "需要你的酒馆等级至少为{{target}}"
+                },
+                "trinket-name-greater": "{{name}}（大型）",
+                "trinket-name-lesser": "{{name}}（小型）"
             },
             "quests": {
                 "turn-to-complete-tooltip": "当前分段的任务难度（数值越低越容易）：完成此任务平均需要{{averageTurnsToComplete}}回合，此英雄平均需要{{turnsToCompleteForHero}}回合，难度调整为{{turnsToCompleteImpact}}",
@@ -2612,6 +2638,16 @@
                 "sample-size": "总场数：",
                 "free-uses-tooltip": "你每天最多可以免费使用此功能{{max}}次，剩余{{left}}次",
                 "free-uses-text": "剩余{{value}}次"
+            },
+            "trinkets": {
+                "placement-title-tooltip": "选择此饰品的玩家的平均最终排名",
+                "placement-title": "平均位次",
+                "global-header": "全局",
+                "pick-rate-title-tooltip": "此饰品的选取频率",
+                "pick-rate-title": "选取率",
+                "high-mmr-header": "前{{value}}%",
+                "high-mmr-header-tooltip": "仅顶尖分段玩家的数据",
+                "global-header-tooltip": "全分段玩家的数据"
             }
         },
         "post-match-stats": {
@@ -3398,7 +3434,9 @@
                 "use-remote-simulator-label": "使用云端战斗模拟器",
                 "use-remote-simulator-tooltip": "开启后将在云端模拟战斗结果。可以减小对电脑的占用，但计算结果会稍有延迟。",
                 "use-tribes-filter-for-live-stats-label-short": "筛选随从类型",
-                "use-tribes-filter-for-live-stats-tooltip": "启用此功能，会在对局开始时的英雄选择界面中显示考虑当前对局随从池的英雄评级"
+                "use-tribes-filter-for-live-stats-tooltip": "启用此功能，会在对局开始时的英雄选择界面中显示考虑当前对局随从池的英雄评级",
+                "show-trinket-stats-label": "显示饰品数据",
+                "show-trinket-stats-tooltip": "显示饰品选项的选取率与平均位次"
             },
             "overlay": {
                 "overlay-title": "浮窗选项",
@@ -3431,7 +3469,7 @@
                 "minions-list-group-minions-into-tribes-label": "按随从池归类随从",
                 "minions-list-group-minions-into-tribes-tooltip": "这将会把无类型的随从归入随从类型分区。比如“灵魂杂耍者”将出现在“恶魔”分区中。",
                 "minions-list-show-tribes-highlight-label": "高亮显示随从类型",
-                "minions-list-show-tribes-highlight-tooltip": "添加按钮以高亮显示酒馆中中的特定随从类型",
+                "minions-list-show-tribes-highlight-tooltip": "添加按钮以高亮显示酒馆中的特定随从类型或机制",
                 "minions-list-show-mechanics-highlight-label": "高亮显示关键词随从",
                 "minions-list-show-mechanics-highlight-tooltip": "添加一个能够在鲍勃酒馆中高亮显示含关键词的随从（如“战吼”、“亡语”）",
                 "minions-list-show-mechanics-tiers-label": "显示关键词分类",
@@ -3464,7 +3502,9 @@
                 "minions-list-show-tier-7-label": "显示酒馆等级7的随从",
                 "minions-list-show-tier-7-tooltip": "将常驻显示酒馆等级7的随从，即使你的英雄不是托里姆",
                 "counter-tuskarr-raider-tooltip": "显示你在本局对战中使用的海盗牌数量",
-                "counter-tuskarr-raider-label": "海象人海盗"
+                "counter-tuskarr-raider-label": "海象人海盗",
+                "minions-list-show-trinkets-label": "显示饰品",
+                "minions-list-show-trinkets-tooltip": "当对局中存在饰品且已启用“种族评级”，在随从列表中显示饰品"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
