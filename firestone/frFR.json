@@ -2606,12 +2606,19 @@
                 "unhighlight-minion": "Désépingler cette carte pour ne plus la mettre en avant dans la taverne",
                 "minion-banned-tooltip": "Cette carte est absente à cause de l’anomalie actuelle",
                 "rules": {
-                    "missing-board-type": "Besoin d’au moins 2 serviteurs {{type}} dans votre main et votre troupe de guerre",
+                    "missing-board-type": "Besoin d’au moins {{typesAndQuantity}} dans votre main et votre troupe de guerre",
                     "menagerie": "Besoin d’au moins 3 serviteurs de types différents dans votre main et votre troupe de guerre",
-                    "tavern-level": "Besoin d’une taverne au moins au niveau {{target}}"
+                    "tavern-level": "Besoin d’une taverne au moins au niveau {{target}}",
+                    "missing-board-linked": " ou ",
+                    "mechanics": "Besoin d’au moins {{numberofMinions}} serviteurs avec {{mechanic}} dans votre main et votre troupe de guerre",
+                    "missing-board-expected-quantity": "{{quantity}} serviteurs {{minionType}}"
                 },
                 "trinket-name-greater": "{{name}} (Supérieur)",
-                "trinket-name-lesser": "{{name}} (Inférieur)"
+                "trinket-name-lesser": "{{name}} (Inférieur)",
+                "banned-reason": {
+                    "anomaly": "Banni dans les parties avec l’anomalie actuelle",
+                    "hero": "Banni en jouant {{heroName}}"
+                }
             },
             "quests": {
                 "turn-to-complete-tooltip": "Nombre moyen de tours pour terminer cette quête avec ce héros ou cette héroïne, cette difficulté de quête (plus elle est faible, mieux c’est), et à cote similaire à la vôtre. En moyenne, il faut {{averageTurnsToComplete}} tours pour compléter la quête, {{turnsToCompleteForHero}} tours avec ce héros ou cette héroïne, et le modificateur de difficulté est de {{turnsToCompleteImpact}}.",
@@ -3504,7 +3511,9 @@
                 "counter-tuskarr-raider-label": "Écumeur rohart",
                 "counter-tuskarr-raider-tooltip": "Afficher le nombre de Pirates que vous avez joués pendant cette partie",
                 "minions-list-show-trinkets-label": "Afficher les bibelots",
-                "minions-list-show-trinkets-tooltip": "Lorsque des bibelots sont dans la partie et que les niveaux sont activés, les affiche dans la liste des serviteurs."
+                "minions-list-show-trinkets-tooltip": "Lorsque des bibelots sont dans la partie et que les niveaux sont activés, les affiche dans la liste des serviteurs.",
+                "minions-list-include-trinkets-in-tribes-label": "Inclure les bibelots dans les types de serviteur",
+                "minions-list-include-trinkets-in-tribes-tooltip": "Les bibelots spécifiques à certains types seront inclus dans la rubrique correspondante de la liste des serviteurs"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -3701,7 +3710,8 @@
         "language": "Langue",
         "cards-in-deck-opponent-tooltip": "Il y a {{cardsInDeck}} cartes dans le deck de votre adversaire et {{cardsInHand}} cartes dans sa main",
         "cards-in-deck-player-tooltip": "Il y a {{cardsInDeck}} cartes dans votre deck et {{cardsInHand}} cartes dans votre main",
-        "show-tracker": "Afficher le decktracker"
+        "show-tracker": "Afficher le decktracker",
+        "show-opponent-tracker": "Afficher le decktracker adverse"
     },
     "archetype": {
         "mech-rogue": "Voleur Méca",
