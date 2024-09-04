@@ -2606,12 +2606,19 @@
                 "unhighlight-minion": "在酒馆中取消标记这张卡牌",
                 "minion-banned-tooltip": "此卡牌已在当前畸变中禁用。",
                 "rules": {
-                    "missing-board-type": "需要你的战场和手牌包含至少2个{{type}}",
+                    "missing-board-type": "需要你的战场和手牌中有至少2个{{typesAndQuantity}}随从",
                     "menagerie": "需要你的战场和手牌包含至少3个不同种族的随从",
-                    "tavern-level": "需要你的酒馆等级至少为{{target}}"
+                    "tavern-level": "需要你的酒馆等级至少为{{target}}",
+                    "missing-board-expected-quantity": "{{quantity}} {{minionType}}",
+                    "missing-board-linked": " 或 ",
+                    "mechanics": "需要你的战场和手牌中有至少{{numberOfMinions}}个{{mechanic}}随从"
                 },
                 "trinket-name-greater": "{{name}}（大型）",
-                "trinket-name-lesser": "{{name}}（小型）"
+                "trinket-name-lesser": "{{name}}（小型）",
+                "banned-reason": {
+                    "anomaly": "在当前畸变被禁用",
+                    "hero": "在使用{{heroName}}时被禁用"
+                }
             },
             "quests": {
                 "turn-to-complete-tooltip": "当前分段的任务难度（数值越低越容易）：完成此任务平均需要{{averageTurnsToComplete}}回合，此英雄平均需要{{turnsToCompleteForHero}}回合，难度调整为{{turnsToCompleteImpact}}",
@@ -3504,7 +3511,9 @@
                 "counter-tuskarr-raider-tooltip": "显示你在本局对战中使用的海盗牌数量",
                 "counter-tuskarr-raider-label": "海象人海盗",
                 "minions-list-show-trinkets-label": "显示饰品",
-                "minions-list-show-trinkets-tooltip": "当对局中存在饰品且已启用“种族评级”，在随从列表中显示饰品"
+                "minions-list-show-trinkets-tooltip": "当对局中存在饰品且已启用“种族评级”，在随从列表中显示饰品",
+                "minions-list-include-trinkets-in-tribes-label": "包括种族专属饰品",
+                "minions-list-include-trinkets-in-tribes-tooltip": "当查看特定种族的随从时将种族专属饰品纳入列表"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -3701,7 +3710,8 @@
         "language-auto": "自动",
         "cards-in-deck-player-tooltip": "你手牌中有{{cardsInHand}}张卡牌，牌库中有{{cardsInDeck}}张卡牌。",
         "cards-in-deck-opponent-tooltip": "你对手手牌中有{{cardsInHand}}张卡牌，牌库中有{{cardsInDeck}}张卡牌。",
-        "show-tracker": "显示记牌器"
+        "show-tracker": "显示记牌器",
+        "show-opponent-tracker": "显示对手记牌器"
     },
     "archetype": {
         "mech-rogue": "机械贼",
