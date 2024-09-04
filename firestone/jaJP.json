@@ -405,7 +405,7 @@
         "arena": {
             "menu": {
                 "my-runs": "自分の履歴",
-                "card-stats": "カード詳細",
+                "card-stats": "カード統計",
                 "class-tier-list": "クラスTier表",
                 "arena-top-runs": "高勝利数の挑戦",
                 "my-stats": "自分の成績"
@@ -462,7 +462,7 @@
                 "subtitle": "闘技場をプレイして情報を受け取ろう"
             },
             "draft": {
-                "locked-premium-info-tooltip": "最初のカード詳細は全てのユーザーが利用可能です。ヒーローとその他のカードについては、プレミアムユーザーのみ利用可能です。クリックするとサブスクライブページを開きます。設定からこれらの詳細を無効化することができます",
+                "locked-premium-info-tooltip": "最初のカードピック統計は全てのユーザーが利用可能です。ヒーローとその他のカードについては、プレミアムユーザーのみ利用可能です。クリックするとサブスクライブページを開きます。設定からこれらの情報を無効化することができます",
                 "locked-premium-info": "プレミアムで統計をアンロック",
                 "card-drawn-winrate": "ドロー時勝率",
                 "hero-tier": "Tier",
@@ -942,7 +942,7 @@
                 "going-second-button-label": "後攻のみ",
                 "tab-selection": {
                     "overview": "概要",
-                    "matchups": "詳細"
+                    "matchups": "マッチアップ"
                 }
             },
             "personal-stats-ranking": {
@@ -1029,7 +1029,7 @@
                     "deck-type": "デッキリスト"
                 },
                 "card-stats-header-tooltip": "アーキタイプの核となるカードに追加、または削除されたカードを表示します。デッキをクリックすると詳細を表示します",
-                "card-stats-header": "カード詳細",
+                "card-stats-header": "カード統計",
                 "view-details-cta": "クリックして詳細を表示",
                 "deck-format-header": "フォーマット",
                 "deck-type-header": "タイプ",
@@ -2606,12 +2606,19 @@
                 "unhighlight-minion": "ピン留めを外してこのカードの強調表示を解除します",
                 "minion-banned-tooltip": "このカードは現在の異常では出現しません",
                 "rules": {
-                    "missing-board-type": "手札や戦場に最低2体の{{type}}のミニオンが必要です",
-                    "menagerie": "手札や戦場に、種族の異なるミニオンが少なくとも3体必要です",
-                    "tavern-level": "少なくとも酒場グレード{{target}}になる必要があります"
+                    "missing-board-type": "戦場か手札に、少なくとも{{typesAndQuantity}}が必要です",
+                    "menagerie": "戦場か手札に、少なくとも3体の種族の異なるミニオンが必要です",
+                    "tavern-level": "少なくとも酒場グレード{{target}}になる必要があります",
+                    "mechanics": "戦場か手札に、少なくとも{{numberOfMinions}}体の{{mechanic}}を持つミニオンが必要です",
+                    "missing-board-expected-quantity": "{{quantity}}体の{{minionType}}",
+                    "missing-board-linked": " 、又は "
                 },
                 "trinket-name-greater": "{{name}}(上級)",
-                "trinket-name-lesser": "{{name}}(下級)"
+                "trinket-name-lesser": "{{name}}(下級)",
+                "banned-reason": {
+                    "anomaly": "この異常では出現しない",
+                    "hero": "{{heroName}}を使っていると出現しない"
+                }
             },
             "quests": {
                 "turn-to-complete-tooltip": "あなたのMMR帯において、このヒーローとそのクエスト難易度で、このクエストを達成するための平均ターン数です(低いほど優れています)。このクエストの平均達成ターンは {{averageTurnsToComplete}}ターン、このヒーローの平均達成ターンは{{turnsToCompleteForHero}} ターン、難易度調整は{{turnsToCompleteImpact}}ターンです。",
@@ -3504,7 +3511,9 @@
                 "counter-tuskarr-raider-label": "「タスカーの襲撃兵」",
                 "counter-tuskarr-raider-tooltip": "この試合中、何体の海賊を使用したかを表示します",
                 "minions-list-show-trinkets-label": "装飾品を表示",
-                "minions-list-show-trinkets-tooltip": "装飾品が出現する試合で、\"種族ごとに表示\"が有効になっていると、ミニオンリストに装飾品を表示します"
+                "minions-list-show-trinkets-tooltip": "装飾品が出現する試合で、\"種族ごとに表示\"が有効になっていると、ミニオンリストに装飾品を表示します",
+                "minions-list-include-trinkets-in-tribes-label": "種族欄に装飾品を追加",
+                "minions-list-include-trinkets-in-tribes-tooltip": "特定の種族のリストを見る際、その種族用の装飾品をリストに追加します"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -3598,7 +3607,7 @@
         "arena": {
             "general": {
                 "show-draft-tracker-tooltip": "カード選択中にトラッカーを表示します。トラッカーは、カードにマウスオーバーした時にシナジーを強調表示します",
-                "show-card-selection-overlay-tooltip": "(プレミアムのみ)カードピック中に詳細を表示します",
+                "show-card-selection-overlay-tooltip": "(プレミアムのみ)カードピック中に統計を表示します",
                 "show-hero-selection-overlay-tooltip": "(プレミアムのみ)ヒーロー選択中にその統計を表示します",
                 "show-card-selection-overlay": "カード選択オーバーレイ",
                 "tracker-size": "ドラフトトラッカーのサイズ",
@@ -3701,7 +3710,8 @@
         "language-auto-tooltip": "あなたが使っているTwitchと同じ言語を使用します",
         "cards-in-deck-player-tooltip": "デッキに{{cardsInDeck}}枚、ハンドに{{cardsInHand}}枚のカードがあります",
         "cards-in-deck-opponent-tooltip": "対戦相手は、デッキに{{cardsInDeck}}枚、ハンドに{{cardsInHand}}枚のカードがあります",
-        "show-tracker": "デッキトラッカーを表示"
+        "show-tracker": "デッキトラッカーを表示",
+        "show-opponent-tracker": "対戦相手の装飾品を表示"
     },
     "archetype": {
         "mech-rogue": "メカローグ",
