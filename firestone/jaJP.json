@@ -578,7 +578,8 @@
                 "version": {
                     "golden": "ゴールデン",
                     "diamond": "ダイヤモンド",
-                    "signature": "シグネチャー"
+                    "signature": "シグネチャー",
+                    "normal": "ノーマル"
                 },
                 "new-copy": "新規",
                 "second-copy": "2枚目のコピー",
@@ -2345,7 +2346,8 @@
             "other": "その他",
             "discard": "破棄",
             "board": "陣地",
-            "other-generated": "その他(生成)"
+            "other-generated": "その他(生成)",
+            "discovery": "発見中"
         },
         "cards-in-hand-tooltip": "手に持っているカード",
         "cards-left-in-deck-tooltip": "デッキに残されたカード",
@@ -2533,7 +2535,7 @@
             "undead-army-tooltip": "自分のアンデッドが得る追加の攻撃力",
             "eternal-legion-tooltip": "この対戦で死んだ味方の「永劫の騎士」の数",
             "add-teammate-button": "パートナーを追加",
-            "empty-teammate-board": "戦場は空だ。クリックでパートナーの戦場と交代して編集しよう",
+            "empty-teammate-board": "戦場は空です。クリックでパートナーの戦場と交代して編集できます",
             "teammate-board-tooltip": "自分の戦場です。クリックするとパートナーの戦場と交代し、そちらを編集することができます",
             "greater-trinket-title": "上級装飾品",
             "greater-trinkets-header": "上級装飾品",
@@ -2554,7 +2556,8 @@
             "pirates-played-tooltip": "この試合中に使用した海賊の数です",
             "tavern-spells-cast-tooltip": "この試合中に使用した酒場の呪文の数です",
             "ancestral-automaton-tooltip": "この試合中に召喚した「祖霊の自動人形」の数です",
-            "ancestral-automaton": "「祖霊の自動人形」"
+            "ancestral-automaton": "「祖霊の自動人形」",
+            "clear-button": "削除"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -2683,7 +2686,8 @@
                 "pick-rate-title": "ピック率",
                 "high-mmr-header": "トップ{{value}}%",
                 "high-mmr-header-tooltip": "トッププレイヤーのみを考慮した値です",
-                "global-header-tooltip": "プレイヤー全体を考慮した値です"
+                "global-header-tooltip": "プレイヤー全体を考慮した値です",
+                "view-tips": "ヒントを見る"
             }
         },
         "post-match-stats": {
@@ -2939,7 +2943,8 @@
                 "send-button": "送信",
                 "status-uploading-logs": "ログファイルをアップロード",
                 "status-sending-feedback": "ログファイルがアップロードされ、フィードバックが送信されました",
-                "status-done": "フィードバックを送信しました。ご連絡ありがとうございました！最新情報は{{discordLink}} または{{twitterLink}} でご確認ください"
+                "status-done": "フィードバックを送信しました。ご連絡ありがとうございました！最新情報は{{discordLink}} または{{twitterLink}} でご確認ください",
+                "menu-title": "バグを報告"
             },
             "twitch": {
                 "title": "Twitchで配信する",
@@ -2996,7 +3001,7 @@
                 "text-11": "これは、アプリの全ての部分があなたの言語に翻訳されるわけではないことを意味しています。 その場合、欠落している部分は英語で表示されます",
                 "text-2": "アプリの翻訳を手伝いたい場合は、 {{link}} の手順をご覧ください",
                 "link": "こちら",
-                "text-3": "左側にある全般タブからアプリを再起動し、新しく設定された言語が適用されているか確認してください"
+                "text-3": "アプリを再起動し(パソコンのシステムトレイにあるFirestoneのアイコンを右クリック→再起動)、新しく設定された言語が適用されているか確認してください"
             },
             "premium": {
                 "title": "プレミアムサブスクオプション",
@@ -3038,7 +3043,8 @@
                 "achievements-tooltip": "実績を更新します。これは7日ごとに自動的に行われます",
                 "refresh-button-label": "更新",
                 "refresh-progress-button-label": "処理中...",
-                "clear-button-label": "削除"
+                "clear-button-label": "削除",
+                "clear-games-label": "試合を削除"
             },
             "quests": {
                 "title": "クエスト",
@@ -3355,7 +3361,9 @@
                     "locations-used-label": "使用した場所",
                     "locations-used-tooltip": "自分が場所を使用した回数を表示します。関連するカードが手札かデッキにある場合に表示されます",
                     "dead-minions-this-game-tooltip": "この対戦で死亡したミニオンの数を表示します。関連するカードが手札かデッキにある場合に表示されます(「鉱山長レスカ」など)"
-                }
+                },
+                "discovery-zone-label": "発見ゾーン",
+                "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
             },
             "duels": {
                 "title": "デュエル特有のオプション",
@@ -3454,7 +3462,7 @@
                 "show-hero-tooltip-tooltip": "ヒーロー選択画面で、ヒーローの画像にマウスオーバーすると、ヒーローの戦績と戦略のヒントを表示します",
                 "show-hero-tier-label": "ヒーロー統計オーバーレイ",
                 "show-hero-tier-tooltip": "ヒーロー選択画面で、ヒーローの Tier と全体の平均順位を直接表示します",
-                "show-hero-tips-label": "戦略のヒントを表示",
+                "show-hero-tips-label": "ヒーローのヒントを表示",
                 "show-hero-tips-tooltip": "ヒーローにマウスオーバーすると、脅威の教育球が現れて、君に今のヒーローにあう戦略のヒントを教えてくれるぞ！",
                 "show-overlay-button": "オーバーレイボタンを表示",
                 "show-overlay-button-tooltip": "メインウィンドウを表示/非表示できるボタンを表示します。ホットキーでも表示/非表示が切り替えられます",
@@ -3482,7 +3490,9 @@
                 "show-intermediate-results-label": "中間結果を表示",
                 "show-intermediate-results-tooltip": "戦闘シミュレーションの中間結果を表示し、戦闘が進むに連れて勝率が変化するようになります",
                 "max-sim-duration-label": "最大計算時間",
-                "max-sim-duration-tooltip": "シミュレーションの最大許容時間(ミリ秒)です。この時間内にシミュレーションが最大回数行われなかった場合、そこで計算を中断しその時点で得られた結果を表示します。"
+                "max-sim-duration-tooltip": "シミュレーションの最大許容時間(ミリ秒)です。この時間内にシミュレーションが最大回数行われなかった場合、そこで計算を中断しその時点で得られた結果を表示します。",
+                "show-trinket-tips-label": "装飾品のヒントを表示",
+                "show-trinket-tips-tooltip": "トッププレイヤー達によって提供された、装飾品のヒントを表示します。装飾品選択オーバーレイ(プレミアムユーザーのみ)か、ミニオンリスト(全ユーザー)から閲覧できます"
             },
             "overlay": {
                 "overlay-title": "オーバーレイ設定",
