@@ -29,8 +29,8 @@
             "twist": "幻变模式"
         },
         "game-mode": {
-            "casual-duels": "对决模式（休闲）",
-            "heroic-duels": "对决模式（英雄）",
+            "casual-duels": "对决模式",
+            "heroic-duels": "英雄对决模式",
             "battlegrounds": "酒馆战棋",
             "battlegrounds-friendly": "酒馆战棋（私人对局）",
             "mercenaries": "佣兵战纪",
@@ -39,7 +39,7 @@
             "practice": "练习模式",
             "casual": "休闲模式",
             "friendly": "好友对战",
-            "arena": "竞技模式",
+            "arena": "竞技场",
             "tavern-brawl": "乱斗模式",
             "constructed": "天梯模式",
             "duels": "对决模式",
@@ -243,7 +243,7 @@
             "treant": "树人",
             "owlkin": "枭兽",
             "halforc": "半兽人",
-            "lock": "锁头",
+            "lock": "锁定",
             "naga": "纳迦",
             "oldgod": "古神",
             "spell": "法术",
@@ -583,15 +583,15 @@
                 },
                 "new-copy": "新",
                 "second-copy": "第二张",
-                "new-copy-long": "新的 {{version}} ：",
+                "new-copy-long": "{{version}}新卡 ：",
                 "second-copy-long": "第二张 {{version}} ：",
                 "title": "我的开包历史",
                 "you-have-viewed": "您已经获得了 {{numberOfCards}} / {{totalCards}} 种卡牌",
                 "load-more-button": "显示更多",
                 "empty-state-title": "暂无记录",
                 "empty-state-subtitle": "打开一个卡牌包以开始记录！",
-                "golden-card": "金色的 {{cardName}}",
-                "diamond-card": "钻石的 {{cardName}}",
+                "golden-card": "金色 {{cardName}}",
+                "diamond-card": "钻石 {{cardName}}",
                 "click-to-expand": "点击展开",
                 "duplicate-cards": "{{numberOfCards}} 张重复的卡牌",
                 "dust-potential": "+分解可得 {{dust}} 点奥术之尘",
@@ -833,7 +833,7 @@
                     "gold": "黄金+",
                     "platinum": "白金+",
                     "diamond": "钻石+",
-                    "diamond-legend": "钻石-传说",
+                    "diamond-legend": "钻石到传说",
                     "legend": "传说",
                     "legend-1000": "传说前1000",
                     "legend-500": "传说前500",
@@ -1078,7 +1078,7 @@
                 "hero-sort": {
                     "tier": "按评级排序",
                     "average-position": "按平均位次排序",
-                    "mmr": "按等级分变化排序",
+                    "mmr": "净MMR变化",
                     "games-played": "按对战场数排序",
                     "last-played": "按最近使用排序"
                 },
@@ -1135,7 +1135,7 @@
                 "hero": {
                     "average-position": "平均位次",
                     "games-played": "对战场数",
-                    "net-mmr": "等级变化",
+                    "net-mmr": "净MMR变化",
                     "net-mmr-tooltip": "每局比赛平均等级分变化"
                 },
                 "hero-details": {
@@ -1179,7 +1179,7 @@
                     "winrate-stats": {
                         "community-label": "此英雄平均值",
                         "community-tooltip": "此英雄每轮战斗的平均胜率（赢得战斗的几率百分比）",
-                        "your-label": "当前回合",
+                        "your-label": "当前对局",
                         "your-tooltip": "您使用此英雄的数值",
                         "turn-label": "回合",
                         "winrate-label": "胜率"
@@ -1187,7 +1187,7 @@
                     "warband-stats": {
                         "community-label": "此英雄平均值",
                         "community-tooltip": "每轮战斗开始时场上的平均总属性值（攻击力+生命值）",
-                        "your-label": "当前回合",
+                        "your-label": "当前对局",
                         "your-tooltip": "您使用此英雄的数值",
                         "turn-label": "回合",
                         "stat-label": "属性值"
@@ -1251,7 +1251,7 @@
                 "header-average-position": "平均排名",
                 "header-placement-distribution": "排名分布",
                 "header-combat-winrate": "战斗胜率",
-                "header-net-mmr": "MMR变化",
+                "header-net-mmr": "净MMR变化",
                 "header-tribes": "最强流派",
                 "header-tribes-tooltip": "当前对局中对这个英雄平均排名最有提升的随从类型",
                 "tribe-info-tooltip": "在对局中有 {{ tribe }} 时，这个英雄的平均排名提升了 {{value}}",
@@ -1361,7 +1361,7 @@
                     "signature-treasure": "签名宝藏"
                 },
                 "game-mode": {
-                    "all": "不限模式",
+                    "all": "所有模式",
                     "all-tooltip": "社区统计将只显示英雄场的数据。您自己的统计将同时显示休闲场和英雄场。",
                     "casual": "休闲模式",
                     "casual-tooltip": "社区统计将只显示英雄场的数据。您自己的统计将只显示休闲场。",
@@ -1524,7 +1524,7 @@
                 "bucket-filter-button-tooltip": "按词条筛选。列表中的卡牌将至少属于所选的一个词条",
                 "search-tooltip": {
                     "text": "您可以使用以下快捷方式进行搜索：",
-                    "info-1": "Enter - 将第一个搜索结果添加到您的列表",
+                    "info-1": "回车 - 将第一个搜索结果添加到您的列表",
                     "info-2": "Shift + Enter - 将第一个搜索结果添加到您的列表并清空搜索框",
                     "info-3": "calss:<class> - 搜索特定职业卡牌（如 class:mage or class:neutral）",
                     "info-4": "bucket:none - 搜索不属于任何词条的卡牌"
@@ -1560,7 +1560,7 @@
             },
             "history": {
                 "title": "我的成就历史",
-                "empty-state-title": "暂无记录",
+                "empty-state-title": "暂无历史记录",
                 "empty-state-subtitle": "完成一个成就来开启记录！"
             },
             "search-placeholder": "搜索成就…",
@@ -1592,7 +1592,7 @@
                     "both-duels": "对决模式（所有）",
                     "duels": "对决模式（休闲）",
                     "paid-duels": "对决模式（英雄）",
-                    "arena": "竞技模式",
+                    "arena": "竞技场",
                     "casual": "休闲模式",
                     "friendly": "好友对战",
                     "tavern-brawl": "乱斗模式",
@@ -1662,7 +1662,7 @@
             },
             "list": {
                 "load-more-button": "点击加载更多回放...",
-                "empty-state-title": "暂无记录",
+                "empty-state-title": "暂无历史记录",
                 "empty-state-subtitle": "快去开始一场对战以开启记录"
             }
         },
@@ -2255,7 +2255,7 @@
             "hero-search-placeholder": "搜索佣兵..."
         },
         "empty-state": {
-            "title": "暂无",
+            "title": "暂无信息",
             "subtitle": "开始佣兵战纪对局以开启记录！记得检查上面的过滤器: )"
         },
         "search-empty-state": {
@@ -2338,7 +2338,7 @@
     },
     "decktracker": {
         "zones": {
-            "global-effects": "影响全局",
+            "global-effects": "全局效果",
             "in-deck": "牌库中",
             "bottom-of-deck": "牌库底",
             "top-of-deck": "牌库顶",
@@ -2715,13 +2715,13 @@
             },
             "winrate-stats": {
                 "community-label": "此英雄平均值",
-                "your-label": "当前回合",
+                "your-label": "当前对局",
                 "turn-label": "回合",
                 "winrate-label": "胜率"
             },
             "warband-stats": {
                 "community-label": "此英雄平均值",
-                "your-label": "本轮",
+                "your-label": "当前对局",
                 "turn-label": "回合",
                 "stat-label": "属性值",
                 "delta-label": "此回合 +{{delta}}"
@@ -2862,7 +2862,7 @@
                 "third-party": "第三方",
                 "broadcast": "Twitch",
                 "quests": "任务",
-                "mods": "Mod",
+                "mods": "模组",
                 "data": "数据",
                 "lottery": "抽奖",
                 "discord": "Discord",
@@ -2871,38 +2871,38 @@
                 "widgets": "小部件"
             },
             "mods": {
-                "title": "Mod",
-                "warning": "警告：Mod会改变游戏本身的行为，违反游戏的服务条款，你可能会因此而被封禁；不过目前并没有听说过有这样的案例。下面列出的是*我认为*可以使用没有问题的Mod，但谁也不好说。",
+                "title": "模组",
+                "warning": "警告：模组会改变游戏本身的行为，违反游戏的服务条款，你可能会因此而被封禁；不过目前并没有听说过有这样的案例。下面列出的是*我认为*可以使用没有问题的模组，但谁也不好说。",
                 "instructions-link": "开始使用",
                 "instructions": "请阅读 {{link}} 获取所有必要的详细信息。",
                 "game-location-placeholder": "游戏安装路径",
                 "check-mods-title": "1. 检查模组引擎",
-                "check-mods-description": "检查Mod是否已经启用，您的游戏路径是否配置正确。",
+                "check-mods-description": "检查模组是否已经启用，您的游戏路径是否配置正确。",
                 "enable-mods-title": "2. 启用模组",
-                "enable-mods-description": "Mod当前未启用。点击以启用Mod支持。它将下载Mod引擎并配置，需要等待一段时间。",
-                "disable-mods-description": "Mod当前已启用。点击停用Mod支持。 它将移除Mod引擎及其配置，但是Mod文件不会被删除（如果你想要重新启用它们）。查看wiki获取如何完全移除所有内容的说明。",
+                "enable-mods-description": "模组当前未启用。点击以启用模组支持。它将下载模组引擎并配置，需要等待一段时间。",
+                "disable-mods-description": "模组当前已启用。点击停用模组支持。 它将移除模组引擎及其配置，但是模组文件不会被删除（如果你想要重新启用它们）。查看wiki获取如何完全移除所有内容的说明。",
                 "check-mods": "检查",
-                "enable-mods": "启用Mod",
-                "disable-mods": "停用Mod",
-                "game-running-error": "炉石传说正在运行中。请在启用/停用Mod之前关闭游戏。",
+                "enable-mods": "启用模组",
+                "disable-mods": "停用模组",
+                "game-running-error": "炉石传说正在运行中。请在启用/停用模组之前关闭游戏。",
                 "refresh-engine": "更新引擎",
-                "refresh-engine-tooltip": "炉石传说客户端补丁更新后，您需要更新引擎 （或完全停用Mod），否则游戏将无法启动。",
-                "refreshing-engine": "正在更新引擎...",
-                "add-mods-title": "3. 添加Mod",
-                "add-mods-description": "查找一些Mod， 然后按照 {{link}} 提供的说明安装它们（其中也包含我认为可以安全使用的Mod列表）。",
-                "installed-mods-description": "已安装下列Mod（删除 Hearthstone/Mods 文件夹中的相应文件以卸载它们）：",
-                "enabling-mods": "正在启用Mod…",
-                "downloading-mod-engine": "正在下载Mod引擎 (约20 MB)...",
+                "refresh-engine-tooltip": "炉石传说客户端补丁更新后，您需要更新引擎 （或完全停用模组），否则游戏将无法启动。",
+                "refreshing-engine": "正在复制程序库...",
+                "add-mods-title": "3. 添加模组",
+                "add-mods-description": "查找一些模组， 然后按照 {{link}} 提供的说明安装它们（其中也包含我认为可以安全使用的模组列表）。",
+                "installed-mods-description": "已安装下列模组（删除 Hearthstone/Mods 文件夹中的相应文件以卸载它们）：",
+                "enabling-mods": "正在启用模组…",
+                "downloading-mod-engine": "正在下载模组引擎 （约20 MB）...",
                 "creating-config": "正在创建配置…",
-                "installing-mod-manager": "正在下载Mod管理器（约15 kB）...",
+                "installing-mod-manager": "正在下载模组管理器（约15 kB）...",
                 "installing-game-connector": "正在下载游戏连接器 （约10 kB）...",
-                "mods-ready": "Mod已准备就绪，请查看上面的链接获取安装说明",
+                "mods-ready": "模组已准备就绪，请查看上面的链接获取安装说明",
                 "check-for-updates": "检查更新",
-                "check-for-updates-tooltip": "自动检查更新只对带有下载链接的Mod生效",
+                "check-for-updates-tooltip": "自动检查更新只对带有下载链接的模组生效",
                 "checking-for-updates": "正在检查...",
                 "checking-mod-for-updates": "正在检查{{modName}}的更新",
-                "update-available": "这个Mod已更新新版本，点击进行更新",
-                "update-disabled": "这个Mod有版本更新，不过只有在游戏关闭后才能进行。"
+                "update-available": "这个模组已更新新版本，点击进行更新",
+                "update-disabled": "这个模组有版本更新，但只有在游戏关闭后才能安装。"
             },
             "third-party": {
                 "intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
@@ -3078,7 +3078,7 @@
                 "activate-custom-in-game-text-tooltip": "自定义当你正在炉石传说游戏中，若用户点击你的用户名时显示的文本",
                 "activate-custom-in-match-text-tooltip": "自定义当你正在对战中，若用户点击你的用户名时显示的文本",
                 "discord-presence-label": "Discord个性状态",
-                "in-game-text-in-match-default-value": "In a {mode} game",
+                "in-game-text-in-match-default-value": "在一场{mode}游戏中",
                 "in-game-details": {
                     "text-2": "需要更多的占位符选项？通过{{discordLink}}让作者了解你的需求！",
                     "tokens": {
@@ -3089,7 +3089,7 @@
                     "text": "你可以自定义显示你正在对局中的文本。你可以使用下列占位符："
                 },
                 "discord-presence-tooltip": "在Discord上显示你正在游玩炉石传说（会将默认状态从“Playing Hearthstone”修改为\"Playing HS with Firestone\"）",
-                "in-game-text-default-value": "In Game",
+                "in-game-text-default-value": "在游戏中",
                 "in-game-text": {
                     "legend": "传说{{rank}}",
                     "mmr": "{{value}} MMR",
@@ -3122,7 +3122,7 @@
                 "minions-play-order": "随从召唤顺序",
                 "minions-play-order-tooltip": "显示战场上随从的入场顺序（可以帮助判断亡语的触发顺序，或者其他取决于入场顺序的判定）",
                 "streamer-mode": "主播模式",
-                "streamer-mode-tooltip": "将您的名字和对手的名字替换为“您”和“对手”。 这对应了游戏的主播模式功能，在对局中按下 Ctrl + Shift + S 启用。",
+                "streamer-mode-tooltip": "将你的名字和对手的名字替换为“你”和“你的对手”。 这对应了游戏的主播模式功能，在对局中按下 Ctrl + Shift + S 启用。",
                 "show-title-bar": "显示标题栏",
                 "show-title-bar-tooltip": "显示/隐藏套牌名称以及手牌和牌库中的卡牌",
                 "show-control-bar": "显示控制栏",
@@ -3173,7 +3173,7 @@
                 "title": "记牌器将在以下模式中开启",
                 "ranked": "天梯模式",
                 "duels": "对决模式",
-                "arena": "竞技模式",
+                "arena": "竞技场",
                 "tavern-brawl": "乱斗模式",
                 "practice": "练习模式",
                 "friendly": "好友对战",
@@ -3338,7 +3338,7 @@
                     "excavate-label": "发掘",
                     "tram-heist-label": "飞车劫掠",
                     "tram-heist-tooltip": "当“{{cardName}}”在你的手牌中时，显示你的对手上回合使用过的卡牌",
-                    "dragons-summoned-label": "龙（已召唤的）",
+                    "dragons-summoned-label": "已召唤的龙",
                     "gardens-grace-label": "花园惠景",
                     "gardens-grace-tooltip": "当你的手牌或牌库中有“花园惠景”时，显示它的实际法力值消耗（减少后的）",
                     "dragons-summoned-tooltip": "显示你已召唤的龙的数量",
@@ -3546,7 +3546,7 @@
                 "opponent-board-show-top-tooltip": "切换显示对手阵容的位置（屏幕顶部或底部）",
                 "counters-title": "计数器",
                 "counter-soutshsea-label": "南海勇夫",
-                "counter-soutshsea-tooltip": "当“南海勇夫”在酒馆或您手牌中时，显示您在本回合中购买海盗的数量",
+                "counter-soutshsea-tooltip": "当“南海恶徒”在酒馆或您手牌中时，显示您在本回合中购买海盗的数量",
                 "counter-magmaloc-label": "熔岩鱼人",
                 "counter-magmaloc-tooltip": "显示“熔岩鱼人”在回合结束时获得的属性值",
                 "counter-majordomo-label": "管理者埃克索图斯",
