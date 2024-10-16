@@ -678,7 +678,7 @@
                         "error-stealth": "無法指定潛行的手下",
                         "error-play": "我無法出這張卡牌",
                         "error-target": "我無法選定那個目標",
-                        "error-taunt": "必須先攻擊有嘲諷的手下",
+                        "error-taunt": "必須先攻擊擁有嘲諷的手下",
                         "error-generic": "我不能這麼做",
                         "holiday": "節慶",
                         "winterveil-greetings": "冬暮節快樂",
@@ -1182,7 +1182,7 @@
                     },
                     "warband-stats": {
                         "community-label": "英雄平均值",
-                        "community-tooltip": "每回合戰鬥開始時船上的平均總統計資訊（攻擊+健康）",
+                        "community-tooltip": "每回合戰鬥開始時戰場上的平均總統計數字（攻擊力 + 生命值）",
                         "your-label": "目前回合",
                         "your-tooltip": "您玩這個英雄的戰績",
                         "turn-label": "回合",
@@ -1230,7 +1230,7 @@
                         "negative-battle-luck": "戰鬥運氣遭",
                         "best-stat-hero": "使用 {{heroName}} 解鎖的最佳統計資訊",
                         "watch-replay-tooltip": "觀看回顧以獲得此值的位置",
-                        "total-stats-tooltip": "戰鬥開始時你的戰場的最大總統計（攻擊力+生命值）"
+                        "total-stats-tooltip": "戰鬥開始時你的戰場的最大總統計數字（攻擊力 + 生命值）"
                     },
                     "record-broken-tooltip": "您打破了個人紀錄！"
                 }
@@ -1873,8 +1873,8 @@
     },
     "counters": {
         "attack": {
-            "player": "您場上的攻擊力（手下+武器）共有 {{value}} 點",
-            "opponent": "對手場上的攻擊力（手下+武器）共有 {{value}} 點"
+            "player": "您場上的攻擊力（手下 + 武器）共有 {{value}} 點",
+            "opponent": "對手場上的攻擊力（手下 + 武器）共有 {{value}} 點"
         },
         "pogo": {
             "player": "您打出過 {{value}} 個 Pogo-Hoppers",
@@ -2461,7 +2461,7 @@
             "global-effects-header": "光環影響",
             "quest-reward-header": "任務獎勵",
             "quest-reward-title": "任務獎勵",
-            "undead-army-tooltip": "您的不死族獲得的額外攻擊",
+            "undead-army-tooltip": "您的不死族獲得的額外攻擊力",
             "simulating-button": "模擬中...",
             "show-buddies-button-title": "显示戰寵",
             "eternal-legion-tooltip": "本賽局死亡的友方永恆騎士數量",
@@ -3001,7 +3001,7 @@
                 "lottery-block-title": "樂透",
                 "lottery-block-text3": "注意：如果您有多個螢幕，請嘗試在小工具中關閉「設定覆蓋層」，然後將其移至第二個螢幕。",
                 "lottery-block-text4": "注意：如果您是高級會員用戶，選擇參加樂透將不會向您展示廣告 - 如果您獲勝，我們將為你發放等值的獎品。",
-                "lottery-block-text2": "一旦新的樂透賽季開始，先前賽季的評級分將被重設。",
+                "lottery-block-text2": "一旦新的樂透賽季開始，先前賽季的積分將被重設。",
                 "title": "高級會員訂閱選項",
                 "lottery-block-text1": "參加樂透將通過您在玩遊戲時執行的一些操作（例如花費資源）並在樂透窗口可見的情況下累計積分。每個月末，將隨機選出 4 位得獎者（積分越多，獲勝的機會就越大）。獲獎者將獲得 2 個月的高級會員訂閱，並將在 {{twitterLink}} 和 {{discordLink}} 上公佈。",
                 "lottery-widget-settings-title": "小部件設定",
@@ -3158,7 +3158,7 @@
                     "abyssal-curse-label": "深淵詛咒",
                     "abyssal-curse-tooltip-2": "顯示您對手最高的深淵詛咒傷害",
                     "attack-on-board-label": "場上攻擊力總和",
-                    "attack-on-board-tooltip": "顯示對手手下和英雄的攻擊力總和",
+                    "attack-on-board-tooltip": "顯示敵人手下和英雄的攻擊力總和",
                     "watch-post-label": "哨所",
                     "watch-post-tooltip": "顯示本賽局中對方打出的哨所數量。只有在牌組或手牌中找到相關卡牌時啟動",
                     "libram-label": "聖契",
@@ -3456,7 +3456,7 @@
                 "battle-simulation-label": "戰鬥模擬器覆蓋層",
                 "battle-simulation-tooltip": "在遊戲頂部顯示目前戰鬥的模擬結果",
                 "battle-simulation-example-label": "顯示模擬範本",
-                "battle-simulation-example-tooltip": "添加此按鈕且點擊可檢視特定結果的範本。警告:這將在瀏覽器中打開一個新分頁",
+                "battle-simulation-example-tooltip": "添加此按鈕且點擊可檢視特定結果的範本。警告：這將在瀏覽器中打開一個新分頁",
                 "widget-size-label": "小部件尺寸",
                 "banned-tribes-title": "被禁的手下類別",
                 "banned-tribes-show-in-column-label": "在欄位中顯示",
@@ -3490,7 +3490,7 @@
                 "minions-list-group-minions-into-tribes-tooltip": "將在手下類別分組中包含無類別的手下。例如「靈魂飛刀手」就會出現在「惡魔」的列表裏。",
                 "minions-list-show-spells-at-bottom-label": "在底部顯示法術",
                 "minions-list-show-spells-at-bottom-tooltip": "在手下列表的「底部」顯示法術，而不是「頂部」",
-                "counter-blood-gem-tooltip": "顯示你的鮮血寶石的攻擊/生命值加成",
+                "counter-blood-gem-tooltip": "顯示你的鮮血寶石的攻擊力/生命值加成",
                 "counter-gold-delta-label": "預測金幣",
                 "minions-list-show-tier-7-label": "顯示 7等級 手下",
                 "counter-gold-delta-tooltip": "顯示考慮到「謹慎投資」或「南海街頭藝人」等卡牌後，下一回合您將增加或減少獲得的金幣",
