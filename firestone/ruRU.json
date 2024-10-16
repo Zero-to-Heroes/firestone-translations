@@ -47,7 +47,10 @@
             "region_us": "Америка",
             "region_eu": "Европа",
             "region_kr": "Азия",
-            "region_cn": "Китай"
+            "region_cn": "Китай",
+            "us": "Америка",
+            "eu": "Европа",
+            "ap": "Азия"
         },
         "set": {
             "hero_skins": "-",
@@ -303,7 +306,8 @@
                 "multiselect-clear-button": "Очистить",
                 "multiselect-reset-button": "Сбросить",
                 "hotkey-text": "Показать/скрыть:",
-                "no-hotkey-assigned": "Горячая клавиша не назначена"
+                "no-hotkey-assigned": "Горячая клавиша не назначена",
+                "close-button-tooltip": "Закрыть окно"
             },
             "ads": {
                 "support-the-dev": "Поддержать разработчика и убрать рекламу",
@@ -317,6 +321,12 @@
                 "tooltip-title": "Название",
                 "wins-label": "{{value}} побед",
                 "wins-value": "{{value}}% игр"
+            },
+            "filters": {
+                "time": {
+                    "all-time-tooltip": "Включить все игры загруженные в приложение. По умолчанию берутся игры за последние 100 дней. Вы можете изменить это в настройках в разделе Приложение > Данные."
+                },
+                "time-patch": "Обновление {{value}}"
             }
         },
         "tray": {
@@ -340,7 +350,8 @@
                 "firestone-ready-text": "Спасибо за вашу поддержку!"
             },
             "client-config": {
-                "title": "Настройки клиента обновлены"
+                "title": "Настройки клиента обновлены",
+                "message": "Конфигурационный файл Hearthstone был изменен. Пожалуйста перезапустите приложение."
             }
         },
         "loading": {
@@ -354,7 +365,8 @@
         },
         "arena": {
             "menu": {
-                "my-runs": "Мои забеги"
+                "my-runs": "Мои забеги",
+                "my-stats": "Моя статистика"
             },
             "filters": {
                 "time": {
@@ -362,7 +374,22 @@
                     "past-seven": "Последние 7 дней",
                     "last-patch": "Последнее обновление",
                     "past-100": "За все время",
-                    "past-30": "Последние 30 дней"
+                    "past-30": "Последние 30 дней",
+                    "past-20": "Последние 20 дней",
+                    "current-season": "Текущий сезон"
+                },
+                "card-type": {
+                    "legendary": "Легендарные"
+                },
+                "card-class": {
+                    "neutral": "Только нейтральные",
+                    "no-neutral": "Исключить нейтральные"
+                },
+                "high-win-runs": {
+                    "wins": "{{value}}+ побед"
+                },
+                "hero-class": {
+                    "all": "Все классы"
                 }
             },
             "stats": {
@@ -387,13 +414,22 @@
                 "subtitle": "Начните играть на Арене для получения информации"
             },
             "personal-stats": {
-                "header-games-played": "Сыграно партий"
+                "header-games-played": "Сыграно партий",
+                "header-winrate": "Винрейт",
+                "leaderboard-average-tooltip": "Ваш средний результат, рассчитанный для таблицы лидеров. Здесь немного сложно описать реальные детали, пожалуйста, зайдите в Discord, если хотите узнать больше",
+                "header-class-name": "Класс"
             },
             "draft": {
-                "hero-tier": "Тир"
+                "hero-tier": "Тир",
+                "locked-premium-info-tooltip": "Статистика первого выбора карты доступна всем пользователям. Выбор героя и других карт доступен только премиум-пользователям. Нажмите, чтобы открыть страницу подписки, или перейдите в настройки, чтобы отключить эти информационные поля.",
+                "hero-winrate": "Винрейт"
             },
             "card-stats": {
-                "header-pickrate": "Частота выбора"
+                "header-pickrate": "Частота выбора",
+                "header-deck-total": "Всего игр"
+            },
+            "class-tier-list": {
+                "header-winrate": "Винрейт"
             }
         },
         "collection": {
@@ -450,7 +486,9 @@
             "card-history": {
                 "version": {
                     "golden": "золотая",
-                    "diamond": "алмазная"
+                    "diamond": "алмазная",
+                    "signature": "сигнатурная",
+                    "normal": "обычная"
                 },
                 "new-copy": "Новая",
                 "second-copy": "Вторая",
@@ -465,7 +503,8 @@
                 "diamond-card": "Алмазная {{cardName}}",
                 "click-to-expand": "Нажмите, чтобы раскрыть",
                 "duplicate-cards": "{{numberOfCards}} дубликата карт",
-                "dust-potential": "Потенциально +{{dust}} пыли"
+                "dust-potential": "Потенциально +{{dust}} пыли",
+                "signature-card": "Сигнатурная {{cardName}}"
             },
             "card-search": {
                 "search-box-placeholder": "Поиск карт...",
@@ -710,11 +749,20 @@
                     "past-30": "Последние 30 дней",
                     "past-7": "Последние 7 дней",
                     "past-3": "Последние 3 дня",
-                    "past-1": "За день"
+                    "past-1": "За день",
+                    "current-season": "Текущий сезон",
+                    "past-20": "Последние 20 дней"
                 },
                 "deck-search": {
                     "placeholder": "Поиск колод...",
                     "tooltip": "Поиск по классу или названию колоды"
+                },
+                "archetype-filter": {
+                    "all": "Все архетипы"
+                },
+                "rank-bracket": {
+                    "legend": "Легенда",
+                    "all": "Любой ранг"
                 }
             },
             "matchup-info": {
@@ -811,12 +859,29 @@
             "meta": {
                 "details": {
                     "cards": {
-                        "copy-2-header": "2-я копия"
-                    }
+                        "copy-2-header": "2-я копия",
+                        "copy-1-header": "Популярность",
+                        "card-header": "Карта"
+                    },
+                    "archetype-type": "Архетип"
                 },
                 "deck": {
-                    "cards-header-details": "карты"
-                }
+                    "cards-header-details": "(карт {{value}})",
+                    "archetype-core-cards-header-tooltip": "Карты, которые присутствуют в большинстве колод этого архетипа",
+                    "archetype-core-cards-header": "Ключевые карты архетипа"
+                },
+                "winrate-header": "Винрейт",
+                "games-header": "Кол-во игр",
+                "matchup-vs-tooltip": "vs {{className}}",
+                "cards-header": "Карты",
+                "archetype": {
+                    "archetype-core-cards-header": "Ключевые карты"
+                },
+                "total-games": "Всего игр",
+                "archetype-header": "Архетип",
+                "class-header": "Класс",
+                "last-updated": "Последнее обновление",
+                "core-cards-header": "Ключевые карты"
             }
         },
         "battlegrounds": {
@@ -1028,7 +1093,12 @@
                 "header-quest-reward-details": "Награда",
                 "header-games-played": "Сыграно партий",
                 "header-pick-rate": "Частота выбора",
-                "header-trinket-details": "Тринкет"
+                "header-trinket-details": "Тринкет",
+                "quest-search-placeholder": "Поиск задания...",
+                "trinket-search-placeholder": "Поиск тринкета...",
+                "header-pick-rate-high-mmr": "Частота выбора Топ {{value}}%",
+                "reward-search-placeholder": "Поиск награды...",
+                "header-pick-rate-high-mmr-tooltip": "Частота выбора для игроков из топ {{value}}%"
             },
             "bgs-tier-list": {
                 "header": "Тир-лист квестов ({{value}} партий) "
@@ -1042,10 +1112,19 @@
                         "fast-basic": "Быстрая базовая кривая",
                         "warrior": "Кривая воина",
                         "extended-warrior": "Расширенная кривая воина",
-                        "3-on-3": "3 на 3 (уровень 8)",
-                        "3-on-3-bis": "3 на 3 (уровень 9)",
-                        "4-on-4": "4 на 4",
-                        "special": "Особый"
+                        "3-on-3": "3 x 3 ( 4й ур. на 6й ход)",
+                        "3-on-3-bis": "3 x 3 (4й ур. на 7 ход)",
+                        "4-on-4": "4 x 4",
+                        "special": "Особый",
+                        "pocky": "Кривая Pocky",
+                        "fast-jeef": "Быстрая кривая Jeef'a",
+                        "jeef": "Кривая Jeef'a",
+                        "aggro-yogg": "Агро-кривая Yogg-Saron'a",
+                        "slow-rafaam": "Медленная кривая Rafaam'a",
+                        "basic-yogg": "Кривая Yogg-Saron'a",
+                        "slow-jeef": "Медленная кривая Jeef'a",
+                        "toki": "Кривая Toki",
+                        "rafaam": "Кривая Rafaam'a"
                     },
                     "step": {
                         "turn": "Ход {{value}}",
@@ -1273,14 +1352,19 @@
                 "missing": "Невыполненные",
                 "missing-empty-state-title": "Множество достижений ждут вас!",
                 "missing-empty-state-text": "Вы найдёте их здесь, когда выполните.",
-                "completed": "Выполненные"
+                "completed": "Выполненные",
+                "all-empty-state-title": "Боже правый, ты великолепен!"
             },
             "history": {
                 "title": "История моих достижений",
                 "empty-state-title": "Здесь пока ничего нет",
                 "empty-state-subtitle": "Выполните достижение, чтобы начать!"
             },
-            "search-placeholder": "Поиск достижений..."
+            "search-placeholder": "Поиск достижений...",
+            "enable-live-tracking": "Включить",
+            "pin-achievement-tooltip": "Закрепите это достижение, чтобы отслеживать его прогресс во время игры",
+            "cancel-pin": "Не закреплять",
+            "pin-without-tracking-confirmation-text": "Вы закрепляете достижение для отслеживания, но отслеживание в реальном времени отключено. Следует ли нам его включить?"
         },
         "replays": {
             "filters": {
@@ -1318,6 +1402,9 @@
                 },
                 "opponent": {
                     "all": "Все классы (противник)"
+                },
+                "opponent-search": {
+                    "placeholder": "Поиск противника..."
                 }
             },
             "bg-stats": {
@@ -1359,7 +1446,8 @@
                 },
                 "went-first-tooltip": "Ходил первым",
                 "went-second-tooltip": "Начинал с монеткой",
-                "bgs-prizes-tooltip": "Призы ярмарки Новолуния"
+                "bgs-prizes-tooltip": "Призы ярмарки Новолуния",
+                "bgs-anomalies-tooltip": "Аномалий в этой игре: {{value}}"
             },
             "class-icon-toggle": {
                 "label": "Использовать иконки классов",
@@ -1394,7 +1482,8 @@
             "tip-9": "[Поля сражений] Сделайте окно BG шире, чтобы увидеть в симуляторе средний урон и вероятность погибнуть",
             "tip-10": "[Дуэли] Вы можете навести курсор на здоровье противника, чтобы увидеть его максимальное здоровье",
             "tip-11": "[Duels] Наведясь на имя противника, вы увидите его класс",
-            "share_profile_page": "Зайдите на свою страницу профиля онлайн и поделитесь ею с другими, чтобы продемонстрировать свои достижения и статистику"
+            "share_profile_page": "Зайдите на свою страницу профиля онлайн и поделитесь ею с другими, чтобы продемонстрировать свои достижения и статистику",
+            "ad-tip-premium": "Премиум"
         },
         "streams": {
             "category": {
@@ -1459,7 +1548,10 @@
                 "header-total-matches": "Всего матчей",
                 "header-losses": "Поражений",
                 "header-wins": "Побед",
-                "header-wins-bg": "Побед (топ-4)"
+                "header-wins-bg": "Побед (топ-4)",
+                "no-data": {
+                    "battlegrounds": "Запустите Hearthstone и откройте «Поля сражений», чтобы начать отслеживать вашу статистику"
+                }
             },
             "xp-seasons": {
                 "season": "Сезон {{seasonNumber}}"
@@ -1468,9 +1560,28 @@
         "communities": {
             "details": {
                 "menu": {
-                    "leaderboards": "Таблица лидеров"
+                    "leaderboards": "Таблица лидеров",
+                    "internal-ladder": "Ladder"
+                },
+                "communities": {
+                    "games-header": "Игр за неделю",
+                    "empty-communities": "Вы не состоите ни в одной гильдии"
                 }
-            }
+            },
+            "join": {
+                "title": "Присоединиться к гильдии",
+                "join-button": "Присоединиться"
+            },
+            "manage": {
+                "status": {
+                    "error": "Ошибка присоединения к гильдии",
+                    "joining": "Присоединение к гильдии..."
+                },
+                "join-text": "Присоединиться к гильдии",
+                "create-text": "Создать гильдию"
+            },
+            "what-are-guilds": "Что такое гильдии?",
+            "leave-community-button": "Покинуть гильдию"
         }
     },
     "turn-timer": {
@@ -1811,7 +1922,7 @@
         "stats": {
             "deck-winrate": "Винрейт",
             "deck-winrate-tooltip": "Винрейт этой колоды с <br/>{{value}}",
-            "deck-winrate-vs-class": "VS {{value}}",
+            "deck-winrate-vs-class": "vs {{value}}",
             "deck-winrate-vs-class-tooltip": "Винрейт этой колоды против {{opponent}} с {{date}}"
         },
         "secrets-helper": {
@@ -1835,7 +1946,14 @@
         "unknown-mana-spell": "Неизвестное заклинание за ({{manaCost}})",
         "unknown-info": "Неизвестный {{info}}",
         "unknown-big-minion": "Неизвестное существо стоимостью {{cost}}+",
-        "card-dredged-tooltip": "Карта с улова"
+        "card-dredged-tooltip": "Карта с улова",
+        "overlay": {
+            "mulligan": {
+                "deck-mulligan-filter-rank-bracket-tooltip": "Показывать игры из {{rankBracket}}. Нажмите, чтобы изменить.",
+                "deck-mulligan-filter-opponent-tooltip": "Показывать матчи с {{opponent}}. Нажмите, чтобы изменить.",
+                "mulligan-card": "Карта"
+            }
+        }
     },
     "battlegrounds": {
         "menu": {
@@ -1941,7 +2059,16 @@
             "lesser-trinkets-header": "Малые тринкеты",
             "tavern-spells-cast-tooltip": "Количество разыгранных заклинаний из таверны",
             "pirates-played-tooltip": "Количество разыгранных пиратов за игру",
-            "frostling-bonus-tooltip": "Количество элементалей разыгранных вами за игру"
+            "frostling-bonus-tooltip": "Количество элементалей разыгранных вами за игру",
+            "bloodgem-attack": "Кровавые самоцветы (Атака)",
+            "ancestral-automaton": "Механизм предков",
+            "undead-army": "Бонус к атаке нежити",
+            "bloodgem-health": "Кровавые самоцветы (Здоровье)",
+            "tavern-spells-cast": "Заклинания из таверны",
+            "bloodgem-health-tooltip": "Бонус к здоровью от кровавых самоцветов",
+            "bloodgem-attack-tooltip": "Бонус к атаке от кровавых самоцветов",
+            "ancestral-automaton-tooltip": "Количество механизмов предков, призванных за матч",
+            "pirates-played": "Пиратов разыграно"
         },
         "hero-stats": {
             "finishes-title": "Занятые места",
@@ -2000,7 +2127,8 @@
                 "rewards-title": "Награды за задания",
                 "rewards-empty-state": "Награда за задание не получена",
                 "reward-turn-tooltip": "Награда за задание получена на {{turn}} ходу",
-                "mmr": "{{value}} MMR"
+                "mmr": "{{value}} MMR",
+                "trinkets-title": "Тринкеты"
             },
             "minions-list": {
                 "reset-button": "Все",
@@ -2015,10 +2143,16 @@
                 "trinket-name-lesser": "{{name}} (малый)",
                 "trinket-name-greater": "{{name}} (большой)",
                 "rules": {
-                    "missing-board-expected-quantity": "{{quantity}} {{minionType}}"
+                    "missing-board-expected-quantity": "{{quantity}} {{minionType}}",
+                    "missing-board-linked": " или ",
+                    "missing-board-type": "На доске должно быть как минимум {{typesAndQuantity}}",
+                    "tavern-level": "Уровень таверны должен быть не ниже {{target}}",
+                    "menagerie": "На доске (включая руку) должны быть существа как минимум 3-х разных типов"
                 },
                 "navigation": {
-                    "tribes": "Типы существ"
+                    "tribes": "Типы существ",
+                    "tiers": "Тиры",
+                    "mechanics": "Способности"
                 }
             },
             "trinkets": {
@@ -2034,7 +2168,9 @@
                 "quest": {
                     "average-difficulty-header": "Сложность",
                     "average-hero-header": "Герой"
-                }
+                },
+                "locked-premium-info-tooltip": "Станьте премиум-игроком, чтобы видеть подробную статистику заданий и вознаграждений. Вы можете пользоваться этой функцией бесплатно {{value}} раза в день.",
+                "sample-size": "Всего игр:"
             }
         },
         "post-match-stats": {
@@ -2170,7 +2306,14 @@
             },
             "widget-size-label": "Размер виджетов",
             "show-advanced-settings-button": "Показать доп. настройки",
-            "hide-advanced-settings-button": "Скрыть доп. настройки"
+            "hide-advanced-settings-button": "Скрыть доп. настройки",
+            "counter-dropdown": {
+                "on": "Вкл.",
+                "off": "Выкл.",
+                "limited-tooltip": "Показывать счетчик только при обнаружении соответствующей карты в вашей руке, текущей колоде и других доступных вариантах",
+                "on-tooltip": "Всегда показывайте счетчик, когда встречаются соответствующие карты в вашей текущей колоде, руке, или когда вы разыгрываете их во время игры"
+            },
+            "locked-tooltip": "Чтобы воспользоваться этой опцией, станьте премиум-пользователем! (вы можете стать премиум-пользователем и поддержать приложение, нажав на текст над рекламным полем в главном окне)"
         },
         "menu": {
             "general": "Общие",
@@ -2180,7 +2323,11 @@
             "replays": "Повторы",
             "collection": "Коллекция",
             "achievements": "Достижения",
-            "arena": "Арена"
+            "arena": "Арена",
+            "troubleshooting": "Неполадки",
+            "integrations": "Интеграции",
+            "global": "Общие",
+            "app": "Приложение"
         },
         "general": {
             "menu": {
@@ -2193,7 +2340,10 @@
                 "quests": "Задания",
                 "mods": "Режимы",
                 "data": "Данные",
-                "lottery": "Лотерея"
+                "lottery": "Лотерея",
+                "widgets": "Виджеты",
+                "discord": "Discord",
+                "appearance": "Внешний вид"
             },
             "mods": {
                 "title": "Режимы",
@@ -2235,7 +2385,8 @@
                     "website-link": "here",
                     "connect-button-text": "Подключиться",
                     "connected-text": "Вы авторизованы",
-                    "collection-synchronized": "Коллекция синхронизирована"
+                    "collection-synchronized": "Коллекция синхронизирована",
+                    "disconnect-button-text": "Отключиться"
                 },
                 "d0nkey": {
                     "website-link": "here",
@@ -2296,11 +2447,15 @@
                 "flash-window-tooltip": "Мигать окном Heartstone на вашем ходу или когда начинается фаза рекрутирования на Полях сражений",
                 "zoom-label": "Масштабирование",
                 "zoom-tooltip": "Уровень масштабирования, который будет применяться ко всем окнам",
-                "reset-prefs-button-default": "Сбросить настройки",
+                "reset-prefs-button-default": "Сбросить",
                 "reset-prefs-button-confirmation": "Вы уверены?",
                 "reset-prefs-tooltip": "Сбросить все ваши настройки, включая различные позиции виджетов на экране",
                 "reset-prefs-confirmation": "Все ваши настройки были сброшены. Это включает в себя различные места расположения виджетов на экране, а также ваши настройки Twitch, поэтому не забудьте настроить всё необходимое заново :)",
-                "restart-app-button-label": "Перезапустить Firestone"
+                "restart-app-button-label": "Перезапустить Firestone",
+                "reset-prefs-button-label": "Сбросить настройки",
+                "title": "Настройки запуска",
+                "restart-app-button-text": "Перезапустить",
+                "enable-mailbox-unread-tooltip": "Показывать красную точку рядом со значком почтового ящика, если у вас есть непрочитанные сообщения."
             },
             "localization": {
                 "title": "Локализация",
@@ -2316,7 +2471,9 @@
                 "lottery-button-text": "Включить лотерею",
                 "lottery-widget-settings-title": "Настройки виджета",
                 "lottery-opacity-title": "Прозрачность виджета лотереи",
-                "lottery-size-title": "Размер виджета лотереи"
+                "lottery-size-title": "Размер виджета лотереи",
+                "lottery-premium-section-tooltip": "Доступно только для премиум-пользователей",
+                "text-1": "Стать премиум-пользователем – это лучший способ поддержать приложение и работу по улучшению Firestone. Кроме того, вы получаете множество функций, таких как оверлейные виджеты, веб-сайт с собственной страницей профиля и многое другое. Вы можете ознакомиться с подробной информацией обо всех премиум-функциях {{link}}."
             },
             "data": {
                 "remote-title": "Облачные данные",
@@ -2355,13 +2512,18 @@
             "discord": {
                 "in-game-text": {
                     "league": "{{league}} {{rank}}",
-                    "mmr": "{{value}} MMR"
+                    "mmr": "{{value}} MMR",
+                    "legend": "Легенда {{rank}}"
                 }
             },
             "appearance": {
                 "battlegrounds": {
                     "title": "Поля сражений"
-                }
+                },
+                "reset-button": "Сбросить все"
+            },
+            "notifications": {
+                "title": "Уведомления"
             }
         },
         "decktracker": {
@@ -2371,7 +2533,8 @@
                 "opponent-deck": "Колода противника",
                 "turn-timer": "Таймер хода",
                 "duels": "Дуэли",
-                "launch": "Настройки запуска"
+                "launch": "Настройки запуска",
+                "mulligan": "Муллиган"
             },
             "global": {
                 "title": "Включение/выключение функций",
@@ -2596,7 +2759,15 @@
                 "show-trinket-tips-label": "Показывать советы по выбору тринкетов",
                 "show-achievements-tooltip": "Показывать еще не полученные достижения для каждого героя на этапе выбора",
                 "show-game-end-notif-label": "Показывать уведомление в конце игры",
-                "show-game-end-notif-tooltip": "После завершения игры показывать уведомление в нижнем правом углу экрана для быстрого доступа к игровой статистике"
+                "show-game-end-notif-tooltip": "После завершения игры показывать уведомление в нижнем правом углу экрана для быстрого доступа к игровой статистике",
+                "use-remote-simulator-tooltip": "При включении этой опции симуляция боя будет запущена на удаленном сервере, что освободит ваш компьютер. С другой стороны, получение результатов займет немного больше времени",
+                "use-tribes-filter-for-live-stats-label-short": "Фильтр по типу существ",
+                "use-anomaly-filter-for-live-stats-label-short": "Фильтр аномалий",
+                "use-remote-simulator-label": "Запускать симуляцию на удаленном сервере",
+                "show-intermediate-results-label": "Показывать промежуточные результаты",
+                "use-mmr-filter-for-live-stats-tooltip": "Когда опция включена, рейтинги героев, отображаемые на экране выбора в начале матча, будут учитывать ваш текущий MMR. ВНИМАНИЕ: это может привести к малому объему выборки данных.",
+                "show-intermediate-results-tooltip": "Показывать промежуточные результаты симуляции боя (шансы на победу будут меняться по мере прохождения симуляции)",
+                "show-trinket-stats-label": "Показывать статистику по тринкетам"
             },
             "overlay": {
                 "overlay-title": "Настройки оверлея",
@@ -2638,7 +2809,15 @@
                 "counter-soutshsea-tooltip": "Показывать количество купленных в этот ход пиратов, когда Силачка Южных морей находится в вашей руке или в тавере Боба",
                 "counter-magmaloc-label": "Магмалок",
                 "counter-majordomo-label": "Мажордом Экзекутус",
-                "counter-majordomo-tooltip": "Показывать количество разыгранных в этот ход элеменеталей, когда Мажордом Экзекутус находится в вашей руке или в тавере Боба"
+                "counter-majordomo-tooltip": "Показывать количество разыгранных в этот ход элеменеталей, когда Мажордом Экзекутус находится в вашей руке или в тавере Боба",
+                "minions-list-include-trinkets-in-tribes-label": "Показывать тринкеты со списком существ",
+                "minions-list-show-tier-7-label": "Показывать существ 7 тира",
+                "minions-list-show-spells-at-bottom-label": "Показывать заклинания внизу списка",
+                "minions-list-show-tier-7-tooltip": "Всегда показывать существ 7 тира",
+                "counter-tuskarr-raider-tooltip": "Показывать количество разыгранный вами пиратов за матч",
+                "counter-blood-gem-label": "Кровавый самоцвет",
+                "counter-blood-gem-tooltip": "Показывать бонус (атака/здоровье) от кровавых самоцветов",
+                "minions-list-show-trinkets-label": "Показывать тринкеты"
             },
             "session-widget": {
                 "title": "Виджет сессии",
@@ -2664,7 +2843,9 @@
                 "firestone-achievements-tooltip": "Включить отслеживание эксклюзивных Firestone достижений",
                 "show-notifications-text": "Показывать уведомления",
                 "show-notifications-tooltip": "Отображение уведомления при разблокировке достижения. Отключение этой опции также отключит внутриигровое отслеживание для достижений из Hearthstone",
-                "streamer-mode-text": "Режим \"Скрытня\""
+                "streamer-mode-text": "Режим \"Скрытня\"",
+                "achievements-enabled-tooltip": "При выключении вся система отслеживания достижений будет отключена. Отключите ее, если вы не планируете использовать Firestone для просмотра существующих достижений. Требуется перезагрузка приложения.",
+                "achievements-live-tracking-text": "Отслеживание в реальном времени"
             }
         },
         "mercenaries": {
@@ -2689,7 +2870,8 @@
                 "turn-counter-battle-label": "Счётчик ходов в сражениях",
                 "your-team": "Ваш отряд",
                 "opponent-team": "Отряд противника",
-                "action-queue": "Порядок срабатывания способностей"
+                "action-queue": "Порядок срабатывания способностей",
+                "action-queue-pve-tooltip": "Показывать отсортированный список всех действий в PvE"
             },
             "quests": {
                 "title": "Выберите дополнительные места",
