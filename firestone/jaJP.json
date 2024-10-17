@@ -113,7 +113,8 @@
             "perils_in_paradise": "大ピンチ！パイレーツ・パラダイス",
             "credits": "クレジット",
             "tutorial": "チュートリアル",
-            "traveling_travel_agency": "トラベるトラベラーズ"
+            "traveling_travel_agency": "トラベるトラベラーズ",
+            "great_dark_beyond": "暗黒宇宙ドラナイ伝"
         },
         "pack": {
             "classic": "クラシック",
@@ -185,7 +186,8 @@
             "island-vacation": "大ピンチ！パイレーツ・パラダイス",
             "golden-island-vacation": "ゴールデン・大ピンチ！パイレーツ・パラダイス",
             "island-vacation-catch-up": "大ピンチ！パイレーツ・パラダイス・キャッチアップ",
-            "whizbang-catch-up": "ウィズバンのワクワクワークショップ・キャッチアップ"
+            "whizbang-catch-up": "ウィズバンのワクワクワークショップ・キャッチアップ",
+            "space": "暗黒宇宙ドラナイ伝"
         },
         "ranks": {
             "constructed": {
@@ -1248,7 +1250,7 @@
                 "player-average-position-tooltip": "このヒーローでの自分の平均順位",
                 "tribe-impact-position-tooltip": "選択した種族と異常により、どれほど平均順位が変化するかを示す値です",
                 "header-hero-details": "ヒーロー",
-                "header-average-position": "平均順位",
+                "header-average-position": "順位",
                 "header-placement-distribution": "順位分布",
                 "header-combat-winrate": "戦闘勝率",
                 "header-net-mmr": "Net MMR",
@@ -1277,7 +1279,8 @@
                 "header-average-position-high-mmr-tooltip": "トップ{{value}}%のプレイヤーの平均最終順位です",
                 "header-pick-rate": "ピック率",
                 "header-pick-rate-high-mmr-tooltip": "トップ{{value}}%のプレイヤーのピック率です",
-                "header-pick-rate-high-mmr": "トップ{{value}}%でのピック率"
+                "header-pick-rate-high-mmr": "トップ{{value}}%でのピック率",
+                "header-pickrate": "ピック率"
             },
             "bgs-tier-list": {
                 "header": "クエストTierリスト ({{value}} 試合) "
@@ -2558,7 +2561,9 @@
             "tavern-spells-cast-tooltip": "この試合中に使用した酒場の呪文の数です",
             "ancestral-automaton-tooltip": "この試合中に召喚した「祖霊の自動人形」の数です",
             "ancestral-automaton": "「祖霊の自動人形」",
-            "clear-button": "削除"
+            "clear-button": "削除",
+            "pirates-summoned": "召喚した海賊の数",
+            "pirates-summoned-tooltip": "この試合中にあなたが召喚した海賊の数です"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -2585,10 +2590,11 @@
             "tier-list-title-tooltip": "フィルタリングにマッチする {{totalMatches}} 試合から構成されています (統計を更新するためには、メイン画面からフィルタを変更して下さい)",
             "tier-list-title-footer": "最終更新日： {{lastUpdateDate}}",
             "not-enough-data-points-warning": "このヒーローのサンプルサイズは小さいため({{vale}}件のみ)、戦績が無効になるかもしれません。バトルグラウンド用ウィンドウのヒーロー選択画面において、いくつかのフィルタの無効化を試すことができます",
-            "average-position": "平均順位",
+            "average-position": "順位",
             "locked-premium-info-tooltip": "プレミアムになるとヒーローの詳細な統計を見れます。この機能は、毎日{{value}}回まで無料で使えます",
             "tier": "Tier",
-            "tribes-impact": "種族影響"
+            "tribes-impact": "種族影響",
+            "pickrate": "ピック率"
         },
         "in-game": {
             "face-offs": {
@@ -2657,7 +2663,8 @@
                     "tiers": "ティア",
                     "compositions-tooltip": "構成",
                     "tribes": "種族",
-                    "mechanics": "パワー"
+                    "mechanics": "パワー",
+                    "tiers-tribes": "ミニオン"
                 }
             },
             "quests": {
@@ -3054,11 +3061,17 @@
                     "season-start": "シーズン開始時"
                 },
                 "achievements": "実績",
-                "achievements-tooltip": "実績を更新します。これは7日ごとに自動的に行われます",
+                "achievements-tooltip": "実績を更新します",
                 "refresh-button-label": "更新",
                 "refresh-progress-button-label": "処理中...",
                 "clear-button-label": "削除",
-                "clear-games-label": "試合データを削除"
+                "clear-games-label": "試合データを削除",
+                "clear-local-cache": "全キャッシュを削除",
+                "clear-local-cache-tooltip": "全てのローカルキャッシュを削除します。次にFirestoneを起動したとき、全てのデータがサーバーから再取得されます。Firestoneを使わずにHearthstoneを遊んでいた場合に利用してください。",
+                "open-local-cache-folder-button": "開く",
+                "open-local-cache-folder": "ローカルキャッシュを開く",
+                "arena-rewards-tooltip": "闘技場の報酬を更新します",
+                "arena-rewards": "闘技場の報酬"
             },
             "quests": {
                 "title": "クエスト",
@@ -3579,7 +3592,11 @@
                 "minions-list-show-trinkets-label": "装飾品を表示",
                 "minions-list-show-trinkets-tooltip": "装飾品が出現する試合で、\"種族ごとに表示\"が有効になっていると、ミニオンリストに装飾品を表示します",
                 "minions-list-include-trinkets-in-tribes-label": "種族欄に装飾品を追加",
-                "minions-list-include-trinkets-in-tribes-tooltip": "特定の種族のリストを見る際、その種族用の装飾品をリストに追加します"
+                "minions-list-include-trinkets-in-tribes-tooltip": "特定の種族のリストを見る際、その種族用の装飾品をリストに追加します",
+                "minions-list-new-header-label": "新しいヘッダーを使用",
+                "minions-list-show-buddies-label": "バディを表示",
+                "minions-list-new-header-tooltip": "2ステップナビゲーションメニューを使用します。ミニオンリストの乱雑さが軽減されます",
+                "minions-list-show-buddies-tooltip": "バディを入手する方法がない状況でも、常にリストにバディを表示します。"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
