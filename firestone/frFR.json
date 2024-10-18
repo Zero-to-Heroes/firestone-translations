@@ -113,7 +113,8 @@
             "perils_in_paradise": "Paradis en péril",
             "credits": "Crédits",
             "tutorial": "Tutoriel",
-            "traveling_travel_agency": "L’agence tous terrains"
+            "traveling_travel_agency": "L’agence tous terrains",
+            "great_dark_beyond": "La Ténèbre de l’Au-delà"
         },
         "pack": {
             "classic": "Classique",
@@ -185,7 +186,8 @@
             "golden-island-vacation": "Paradis en péril (Doré)",
             "island-vacation": "Paradis en péril",
             "island-vacation-catch-up": "Rattrapage (Paradis en péril)",
-            "whizbang-catch-up": "Rattrapage (L’Atelier de Mystifix)"
+            "whizbang-catch-up": "Rattrapage (L’Atelier de Mystifix)",
+            "space": "La Ténèbre de l’Au-delà"
         },
         "ranks": {
             "constructed": {
@@ -1248,7 +1250,7 @@
                 "player-average-position-tooltip": "Votre place moyenne avec ce héros ou cette héroïne",
                 "tribe-impact-position-tooltip": "Combien la position moyenne change en fonction des types et anomalies sélectionnés",
                 "header-hero-details": "Héros",
-                "header-average-position": "Place moyenne",
+                "header-average-position": "Placement",
                 "header-placement-distribution": "Distribution des places",
                 "header-combat-winrate": "% victoires en combat",
                 "header-net-mmr": "Gain de cote",
@@ -1277,7 +1279,8 @@
                 "trinket-search-placeholder": "Rechercher un bibelot...",
                 "header-pick-rate": "% sélection",
                 "header-pick-rate-high-mmr": "% sélection (Top {{value}} %)",
-                "header-pick-rate-high-mmr-tooltip": "Taux de sélection pour le top {{value]] % des joueurs et joueuses"
+                "header-pick-rate-high-mmr-tooltip": "Taux de sélection pour le top {{value]] % des joueurs et joueuses",
+                "header-pickrate": "% sélection"
             },
             "bgs-tier-list": {
                 "header": "Tierlist des quêtes ({{value}} parties) "
@@ -2558,7 +2561,9 @@
             "ancestral-automaton-tooltip": "Le nombre d’automates ancestraux que vous avez invoqués pendant cette partie",
             "pirates-played-tooltip": "Le nombre de Pirates que vous avez joués pendant cette partie",
             "tavern-spells-cast-tooltip": "Le nombre de sorts de taverne que vous avez lancés pendant cette partie",
-            "clear-button": "Effacer"
+            "clear-button": "Effacer",
+            "pirates-summoned": "Pirates invoqués",
+            "pirates-summoned-tooltip": "Le nombre de Pirates que vous avez invoqués pendant cette partie"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -2587,8 +2592,9 @@
             "not-enough-data-points-warning": "La taille de l’échantillon pour ce personnage est faible (seulement {{value}} points de données), donc les stats peuvent être inexactes. Vous pouvez essayer de désactiver certains filtres dans l’écran de sélection des héros et héroïnes de la fenêtre Champs de bataille.",
             "tier": "Niveau",
             "tribes-impact": "Impact des types",
-            "average-position": "Position moy.",
-            "locked-premium-info-tooltip": "Devenez Premium pour voir les stats détaillées des héros et héroïnes. Vous pouvez utiliser cette fonctionnalité gratuitement {{value}} fois par jour."
+            "average-position": "Position",
+            "locked-premium-info-tooltip": "Devenez Premium pour voir les stats détaillées des héros et héroïnes. Vous pouvez utiliser cette fonctionnalité gratuitement {{value}} fois par jour.",
+            "pickrate": "% sélection"
         },
         "in-game": {
             "face-offs": {
@@ -2657,7 +2663,8 @@
                     "compositions-tooltip": "Compositions",
                     "mechanics": "Pouvoirs",
                     "tiers": "Niveaux",
-                    "tribes": "Types"
+                    "tribes": "Types",
+                    "tiers-tribes": "Serviteurs"
                 }
             },
             "quests": {
@@ -3054,11 +3061,17 @@
                     "season-start": "Début de la saison"
                 },
                 "achievements": "Hauts faits",
-                "achievements-tooltip": "Actualisez vos hauts faits. Cela se fait automatiquement tous les 7 jours.",
+                "achievements-tooltip": "Actualisez vos hauts faits.",
                 "refresh-button-label": "Actualiser",
                 "refresh-progress-button-label": "En cours...",
                 "clear-button-label": "Effacer",
-                "clear-games-label": "Effacer les parties."
+                "clear-games-label": "Effacer les parties.",
+                "arena-rewards": "Récompenses d’Arène",
+                "clear-local-cache": "Vider tout le cache",
+                "clear-local-cache-tooltip": "Vide tout le cache local. La prochaine fois que vous vous connecterez, les données seront récupérées depuis le serveur. Utilisez ceci si vous avez joué sans Firestone.",
+                "open-local-cache-folder": "Ouvrir le cache local",
+                "arena-rewards-tooltip": "Actualiser vos récompenses d’Arène.",
+                "open-local-cache-folder-button": "Ouvrir"
             },
             "quests": {
                 "title": "Quêtes",
@@ -3509,7 +3522,8 @@
                 "max-sim-duration-label": "Durée max de simulation",
                 "max-sim-duration-tooltip": "Le temps maximum (en millisecondes) alloué pour une simulation. Si ce temps n’a pas permis d’atteindre le nombre max de simulations, elle s’arrêtera et donnera les résultats.",
                 "show-trinket-tips-label": "Afficher les conseils liés aux bibelots",
-                "show-trinket-tips-tooltip": "Afficher les conseils des meilleurs joueurs de Champs de bataille liés aux bibelots, pendant la phase de sélection dans l’overlay (pour les utilisateurs Premium) et dans la liste des serviteurs (pour tout le monde)."
+                "show-trinket-tips-tooltip": "Afficher les conseils des meilleurs joueurs de Champs de bataille liés aux bibelots, pendant la phase de sélection dans l’overlay (pour les utilisateurs Premium) et dans la liste des serviteurs (pour tout le monde).",
+                "hero-stats-overlay-scale": "Taille de l’overlay des stats des héros"
             },
             "overlay": {
                 "overlay-title": "Configuration de l’overlay",
@@ -3579,7 +3593,11 @@
                 "minions-list-show-trinkets-label": "Afficher les bibelots",
                 "minions-list-show-trinkets-tooltip": "Lorsque des bibelots sont dans la partie et que les niveaux sont activés, les affiche dans la liste des serviteurs.",
                 "minions-list-include-trinkets-in-tribes-label": "Inclure les bibelots dans les types de serviteur",
-                "minions-list-include-trinkets-in-tribes-tooltip": "Les bibelots spécifiques à certains types seront inclus dans la rubrique correspondante de la liste des serviteurs"
+                "minions-list-include-trinkets-in-tribes-tooltip": "Les bibelots spécifiques à certains types seront inclus dans la rubrique correspondante de la liste des serviteurs",
+                "minions-list-new-header-label": "Utiliser le nouvel en-tête",
+                "minions-list-new-header-tooltip": "Utiliser le menu de navigation en 2 étapes pour fluidifier la liste des serviteurs",
+                "minions-list-show-buddies-label": "Afficher les compagnons",
+                "minions-list-show-buddies-tooltip": "Activer cette option affichera toujours les compagnons, même sans moyen d’en obtenir."
             },
             "session-widget": {
                 "title": "Widget de session",
