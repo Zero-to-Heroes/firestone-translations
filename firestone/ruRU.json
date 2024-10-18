@@ -521,12 +521,15 @@
                     "weapon": "Оружие",
                     "hero": "Герой",
                     "location": "Область",
-                    "enchantment": "Чары"
+                    "enchantment": "Чары",
+                    "hero_power": "Сила героя",
+                    "battleground_anomaly": "Аномалия (поля сражений)",
+                    "battleground_spell": "Заклинание (поля сражений)"
                 },
                 "set": "Набор:",
                 "rarity": "Редкость:",
                 "rarities": {
-                    "free": "Бесплатно",
+                    "free": "Бесплатная",
                     "common": "Обычная",
                     "rare": "Редкая",
                     "epic": "Эпическая",
@@ -1087,7 +1090,7 @@
                 "header-hero-details": "Герой",
                 "header-average-position": "Средняя позиция",
                 "header-placement-distribution": "Распределение мест",
-                "header-net-mmr": "Сетевой MMR",
+                "header-net-mmr": "Чистый MMR",
                 "learn-more": "Как рассчитываются эти данные?",
                 "header-quest-details": "Задание",
                 "header-quest-reward-details": "Награда",
@@ -1098,7 +1101,8 @@
                 "trinket-search-placeholder": "Поиск тринкета...",
                 "header-pick-rate-high-mmr": "Частота выбора Топ {{value}}%",
                 "reward-search-placeholder": "Поиск награды...",
-                "header-pick-rate-high-mmr-tooltip": "Частота выбора для игроков из топ {{value}}%"
+                "header-pick-rate-high-mmr-tooltip": "Частота выбора для игроков из топ {{value}}%",
+                "header-pickrate": "Частота выбора"
             },
             "bgs-tier-list": {
                 "header": "Тир-лист квестов ({{value}} партий) "
@@ -1395,7 +1399,7 @@
                     "tavern-brawl": "Потасовка",
                     "practice": "Против ИИ",
                     "ranked-twist": "Рейтинговый твист",
-                    "battlegrounds-duo": "Дуэты"
+                    "battlegrounds-duo": "Поля сражений (дуэты)"
                 },
                 "player": {
                     "all": "Все классы (игрок)"
@@ -1492,7 +1496,9 @@
             "language-tooltip": "Язык стрима",
             "current-viewers": "зрителей",
             "empty-state-title": "Отсутствуют активные трансляции",
-            "empty-state-tooltip": "На данный нет активных трансляций, пожалуйста, загляните позже"
+            "empty-state-tooltip": "На данный нет активных трансляций, пожалуйста, загляните позже",
+            "watch-on-twitch-button": "Смотреть на Twitch'e",
+            "info-tooltip": "Чтобы ваша трансляция появилась в этом списке, укажите ваш Twitch-аккаунт в настройках Firestone. Если раньше ваша трансляция была в списке, но больше не появляется, то повторно переподключите вашу учетную запись Twitch в настройках."
         },
         "mailbox": {
             "category": {
@@ -1868,7 +1874,7 @@
             "number-of-users-tooltip": "Сколько раз наёмник применил эту способность",
             "base-speed-text": "Базовая скорость: {{value}}",
             "speed-buff": "Эта способность сработает на {{value}} быстрее",
-            "speed-debuff": "Эта способность сработает на {{value}} медленее",
+            "speed-debuff": "Эта способность сработает на {{value}} медленнее",
             "empty-state": "Отправляйтесь на выполнение поручения или начните сражение с другим пользователем, чтобы увидеть ваш отряд",
             "merc-level-tooltip": "Уровень наёмника",
             "unrecognized-mercenary": "Неопознанный наёмник",
@@ -1897,7 +1903,8 @@
             "top-of-deck": "Верх колоды",
             "in-hand": "В руке",
             "other": "Остальные",
-            "discard": "Сброс"
+            "discard": "Сброс",
+            "board": "Стол"
         },
         "cards-in-hand-tooltip": "Карт в руке",
         "cards-left-in-deck-tooltip": "Карт в колоде",
@@ -1951,9 +1958,11 @@
             "mulligan": {
                 "deck-mulligan-filter-rank-bracket-tooltip": "Показывать игры из {{rankBracket}}. Нажмите, чтобы изменить.",
                 "deck-mulligan-filter-opponent-tooltip": "Показывать матчи с {{opponent}}. Нажмите, чтобы изменить.",
-                "mulligan-card": "Карта"
+                "mulligan-card": "Карта",
+                "no-mulligan-data": "Нет данных"
             }
-        }
+        },
+        "unknown-mana-minion": "Неизвестное существо за {{manaCost}} маны"
     },
     "battlegrounds": {
         "menu": {
@@ -2051,7 +2060,7 @@
             "global-effects-header": "Глобальные эффекты",
             "undead-army-tooltip": "Дополнительная атака вашей нежити",
             "eternal-legion-tooltip": "Количество дружественных Вечных Рыцарей, погибших в этой игре",
-            "reposition-button-tooltip": "Найдите наилучшее расположение для вашей системы. В зависимости от количества процессоров и сложности плат это может занять несколько минут и потребует много ресурсов процессора и оперативной памяти.",
+            "reposition-button-tooltip": "Найдите наилучшую расстановку для ваших существ. В зависимости от количества процессоров и сложности расстановки это может занять несколько минут и потребует много ресурсов процессора и оперативной памяти.",
             "clear-button": "Очистить",
             "greater-trinkets-header": "Большие тринкеты",
             "lesser-trinket-title": "Малый тринкет",
@@ -2060,17 +2069,20 @@
             "tavern-spells-cast-tooltip": "Количество разыгранных заклинаний из таверны",
             "pirates-played-tooltip": "Количество разыгранных пиратов за игру",
             "frostling-bonus-tooltip": "Количество элементалей разыгранных вами за игру",
-            "bloodgem-attack": "Кровавые самоцветы (Атака)",
+            "bloodgem-attack": "Атака самоцветов",
             "ancestral-automaton": "Механизм предков",
             "undead-army": "Бонус к атаке нежити",
-            "bloodgem-health": "Кровавые самоцветы (Здоровье)",
+            "bloodgem-health": "Здоровье самоцветов",
             "tavern-spells-cast": "Заклинания из таверны",
             "bloodgem-health-tooltip": "Бонус к здоровью от кровавых самоцветов",
             "bloodgem-attack-tooltip": "Бонус к атаке от кровавых самоцветов",
             "ancestral-automaton-tooltip": "Количество механизмов предков, призванных за матч",
             "pirates-played": "Пиратов разыграно",
             "pirates-summoned": "Пиратов призвано",
-            "pirates-summoned-tooltip": "Количество пиратов, призванных за весь матч"
+            "pirates-summoned-tooltip": "Количество пиратов, призванных за весь матч",
+            "frostling-bonus": "Элементали",
+            "eternal-legion": "Легион рыцарей",
+            "sneed-deathrattle-tooltip": "Сколько раз сила героя Снида использовалась на существе"
         },
         "hero-stats": {
             "finishes-title": "Занятые места",
@@ -2086,7 +2098,9 @@
             "winning-tribes-title-tooltip": "Процент каждого типа существ, присутствующего в среднем в топ-4 боевых отрядах",
             "place": "Место: {{value}}",
             "strategies-link": "Нажмите, чтобы посмотреть рекомендуемые стратегии",
-            "avg-position-details-tooltip-base-value": "Базовое значение"
+            "avg-position-details-tooltip-base-value": "Базовое значение",
+            "avg-position-details-tooltip-details-text": "Среднее итоговое место для всех игроков с данным героем в данном диапазоне MMR. Это значение рассчитывается путем применения следующих модификаторов:",
+            "strategies-link-tooltip": "Откроет главное окно приложения, в котором будут показаны стратегии для конкретного героя"
         },
         "hero-selection": {
             "achievement-completed": "Достижение выполнено",
@@ -2096,7 +2110,8 @@
             "tier-list-title-footer": "Обновлен {{lastUpdateDate}}",
             "locked-premium-info-tooltip": "Купите premium доступ, чтобы увидеть детальную статистику по герою. Только {{value}} раза в день статистика показывается бесплатно.",
             "tier": "Тир",
-            "average-position": "Место в среднем"
+            "average-position": "Место",
+            "pickrate": "Частота выбора"
         },
         "in-game": {
             "face-offs": {
@@ -2138,7 +2153,7 @@
                 "buddies-tier-tooltip": "Посмотреть всех компаньонов в игре",
                 "highlight-tribe": "Нажмите, чтобы выделить всех существ типа {{value}} в таверне",
                 "unhighlight-tribe": "Нажмите, чтобы не выделять существ типа {{value}} в таверне",
-                "highlight-mechanics": "Нажмите, чтобы выделить всех существ типа {{value}} в таверне",
+                "highlight-mechanics": "Нажмите, чтобы выделить все карты типа {{value}} в таверне",
                 "unhighlight-mechanics": "Нажмите, чтобы не выделять существ типа {{value}} в таверне",
                 "highlight-minion": "Нажмите, чтобы выделить это существо в таверне Боба",
                 "unhighlight-minion": "Нажмите, чтобы снять выделение с этой карты в таверне Боба",
@@ -2154,7 +2169,7 @@
                 "navigation": {
                     "tribes": "Типы существ",
                     "tiers": "Тиры",
-                    "mechanics": "Способности",
+                    "mechanics": "Свойства",
                     "tiers-tribes": "Существа"
                 }
             },
@@ -2803,7 +2818,7 @@
                 "battle-simulation-example-label": "Пример симуляции в наложении",
                 "battle-simulation-example-tooltip": "Добавить кнопку для просмотра примера симуляции приводящей к определенному результату.",
                 "widget-size-label": "Размер виджета",
-                "banned-tribes-title": "Не представленые типы существ",
+                "banned-tribes-title": "Не представленные типы существ",
                 "banned-tribes-show-in-column-label": "Расположить в столбик",
                 "banned-tribes-show-in-column-tooltip": "Расположить иконки непредставленных типов существ в столбик, а не в ряд",
                 "banned-tribes-icon-size-label": "Размер иконок",
@@ -2908,7 +2923,7 @@
         "arena": {
             "general": {
                 "show-card-selection-overlay-tooltip": "Показывать статистику при выборе карт",
-                "show-hero-selection-overlay-tooltip": "Показывайте статистику при выборе своего героя"
+                "show-hero-selection-overlay-tooltip": "Показывать статистику при выборе своего героя"
             },
             "menu": {
                 "general": "Общие"
@@ -2929,7 +2944,9 @@
             "top-1-label": "Топ-1:",
             "games-played-label-global": "Сыграно",
             "top-4-label-global": "Топ-4",
-            "top-1-label-global": "Топ-1"
+            "top-1-label-global": "Топ-1",
+            "top-1-label-global-with-bg": "BG Топ-1",
+            "top-4-label-global-with-bg": "BG Топ-4"
         },
         "collection": {
             "packs": {
