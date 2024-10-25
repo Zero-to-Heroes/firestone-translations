@@ -39,11 +39,11 @@
             "practice": "练习模式",
             "casual": "休闲模式",
             "friendly": "好友对战",
-            "arena": "竞技场",
+            "arena": "竞技模式",
             "tavern-brawl": "乱斗模式",
             "constructed": "天梯模式",
             "duels": "对决模式",
-            "ranked": "天梯排名模式",
+            "ranked": "天梯模式",
             "battlegrounds-duo": "战棋双打"
         },
         "region": {
@@ -111,9 +111,10 @@
             "whizbangs_workshop": "威兹班的工坊",
             "boom_inventions": "砰砰博士的疯狂发明",
             "perils_in_paradise": "胜地历险记",
-            "credits": "暴雪工作人员",
+            "credits": "鸣谢",
             "tutorial": "教程",
-            "traveling_travel_agency": "行旅旅行社"
+            "traveling_travel_agency": "行旅旅行社",
+            "great_dark_beyond": "深暗领域"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -182,10 +183,11 @@
             "golden-wild-west": "决战荒芜之地 金色卡牌包",
             "golden-perils-in-paradise": "胜地历险记 金色卡牌包",
             "perils-in-paradise": "胜地历险记 卡牌包",
-            "golden-island-vacation": "胜地历险记金色包",
-            "island-vacation": "胜地历险记",
-            "island-vacation-catch-up": "胜地历险记追赶包",
-            "whizbang-catch-up": "威兹班的工坊追赶包"
+            "golden-island-vacation": "胜地历险记 金色卡牌包",
+            "island-vacation": "胜地历险记 卡牌包",
+            "island-vacation-catch-up": "胜地历险记 追赶包",
+            "whizbang-catch-up": "威兹班的工坊 追赶包",
+            "space": "深暗领域 卡牌包"
         },
         "ranks": {
             "constructed": {
@@ -274,7 +276,7 @@
             "mega-windfury": "超级风怒"
         },
         "duration": {
-            "min-sec": "{{min}}:{{sec}}",
+            "min-sec": "{{min}}:{{sec}} 分",
             "hrs-min": "{{hrs}} 小时 {{min}} 分钟",
             "min": "{{min}} 分钟",
             "sec": "{{sec}} 秒",
@@ -594,9 +596,9 @@
                 "diamond-card": "钻石 {{cardName}}",
                 "click-to-expand": "点击展开",
                 "duplicate-cards": "{{numberOfCards}} 张重复的卡牌",
-                "dust-potential": "+分解可得 {{dust}} 点奥术之尘",
+                "dust-potential": "分解可得 +{{dust}} 点奥术之尘",
                 "click-to-show-stats": "点击查看当前显示卡池的统计数据",
-                "signature-card": "异画{{cardName}}"
+                "signature-card": "异画 {{cardName}}"
             },
             "card-search": {
                 "search-box-placeholder": "搜索卡牌...",
@@ -980,10 +982,10 @@
                 "cards-header-tooltip": "显示哪些卡牌被加入或移出关键卡牌列表（点击卡组查看详情）",
                 "deck": {
                     "deviation-tooltip": "样本大小会影响胜率统计的准确程度，有95%的可能真实胜率就在这个区间之内。开启“保守胜率估计”来将对局数纳入胜率计算当中。",
-                    "added-cards-header": "替代卡牌",
+                    "added-cards-header": "新增的卡牌",
                     "archetype-core-cards-header": "关键卡牌",
                     "copy-deckstring-button": "复制卡组代码",
-                    "removed-cards-header": "可变卡牌",
+                    "removed-cards-header": "已移除的卡牌",
                     "view-online-button-tooltip": "前往https://www.d0nkey.top 查看更多数据",
                     "view-online-button": "打开在线数据",
                     "cards-header-details": "({{value}} 张卡牌)",
@@ -1040,7 +1042,7 @@
                 "matchups-header-tooltip": "显示对阵其他所有职业的胜率。未来将会推出对阵各类套牌的情况，敬请期待:)",
                 "deck-type-header": "类型",
                 "card-stats-header-tooltip": "显示曾经从此类型套牌的核心卡牌中移除或添加的卡牌。点击套牌查看详情",
-                "matchup-vs-tooltip": "vs {{className}}",
+                "matchup-vs-tooltip": "对阵 {{className}}",
                 "last-updated": "最近更新",
                 "total-games": "总对局数"
             }
@@ -1248,7 +1250,7 @@
                 "player-average-position-tooltip": "选择这个英雄的平均排名",
                 "tribe-impact-position-tooltip": "选定随从类型和畸变所带来的平均排名变化",
                 "header-hero-details": "英雄",
-                "header-average-position": "平均排名",
+                "header-average-position": "排名",
                 "header-placement-distribution": "排名分布",
                 "header-combat-winrate": "战斗胜率",
                 "header-net-mmr": "净MMR变化",
@@ -1277,7 +1279,8 @@
                 "header-pick-rate": "选取率",
                 "header-pick-rate-high-mmr": "前{{value}}%选取率",
                 "header-pick-rate-high-mmr-tooltip": "前{{value}}%的玩家的选取率",
-                "header-average-position-high-mmr": "前{{value}}%位次"
+                "header-average-position-high-mmr": "前{{value}}%位次",
+                "header-pickrate": "选取率"
             },
             "bgs-tier-list": {
                 "header": "任务评级表 ( {{value}} 场对战) "
@@ -1592,7 +1595,7 @@
                     "both-duels": "对决模式（所有）",
                     "duels": "对决模式（休闲）",
                     "paid-duels": "对决模式（英雄）",
-                    "arena": "竞技场",
+                    "arena": "竞技模式",
                     "casual": "休闲模式",
                     "friendly": "好友对战",
                     "tavern-brawl": "乱斗模式",
@@ -1617,10 +1620,10 @@
             },
             "replay-info": {
                 "rank-issue-tooltip": "在获取玩家等级时出现问题",
-                "versus": "VS",
+                "versus": "对阵",
                 "loot-icon-tooltip": "在这场对战后加入套牌的卡牌",
                 "treasure-icon-tooltip": "在这场对战后加入套牌的宝藏牌",
-                "mmr": "等级分",
+                "mmr": "匹配制度排名分（MMR）",
                 "show-stats-button": "统计数据",
                 "show-stats-button-tooltip": "显示统计数据",
                 "watch-replay-button": "观看",
@@ -1977,8 +1980,8 @@
             "player": "你已使用过的随从类型数：{{value}}"
         },
         "corpse": {
-            "player": "本局对战中你已消耗尸体：{{value}}",
-            "opponent": "对手本局对战已消耗尸体：{{value}}"
+            "player": "本局对战中你已消耗了{{value}}具残骸",
+            "opponent": "对手本局对战已消耗了{{value}}具残骸"
         },
         "overdraft": {
             "player": "强行透支：{{value}}点伤害"
@@ -2373,7 +2376,7 @@
         "stats": {
             "deck-winrate": "套牌胜率",
             "deck-winrate-tooltip": "此套牌自 {{value}} 以来的天梯胜率",
-            "deck-winrate-vs-class": "vs {{value}}",
+            "deck-winrate-vs-class": "对阵 {{value}}",
             "deck-winrate-vs-class-tooltip": "此套牌自 {{date}} 以来对战 {{opponent}} 的天梯胜率"
         },
         "secrets-helper": {
@@ -2441,8 +2444,8 @@
             "damage-dealt-tooltip": "平均造成伤害",
             "damage-received-tooltip": "平均受到伤害",
             "lethal-title": "出局",
-            "lethal-dealt-tooltip": "击杀对手的概率%",
-            "lethal-received-tooltip": "被击杀的概率%",
+            "lethal-dealt-tooltip": "击杀对手的概率百分比",
+            "lethal-received-tooltip": "被击杀的概率百分比",
             "composition-not-supported": {
                 "general": "尚不支持当前阵容，结果可能无效。（原因：{{value}}）",
                 "reason-secret": "奥秘",
@@ -2558,7 +2561,9 @@
             "ancestral-automaton-tooltip": "本局对战中你召唤的“星元自动机”数量",
             "pirates-played-tooltip": "本局对战中你使用的海盗数量",
             "tavern-spells-cast-tooltip": "本局对战中你施放的酒馆法术数量",
-            "clear-button": "清除"
+            "clear-button": "清除",
+            "pirates-summoned": "已召唤的海盗",
+            "pirates-summoned-tooltip": "本局对战中已召唤的海盗数量"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -2585,10 +2590,11 @@
             "tier-list-title-tooltip": "筛选后共计 {{totalMatches}} 场（更改主应用程序中的筛选规则将更新数据）：",
             "tier-list-title-footer": "最近更新于 {{lastUpdateDate}}",
             "not-enough-data-points-warning": "此英雄的样本数量太少（仅{{value}}个数据点），因此数据将被剔除。你可以试试取消某些战棋数据页的筛选。",
-            "average-position": "平均位次",
+            "average-position": "位次",
             "tier": "等级",
             "locked-premium-info-tooltip": "订阅会员查看详细的英雄数据。此功能每日可免费使用{{value}}次。",
-            "tribes-impact": "随从类型影响"
+            "tribes-impact": "随从类型影响",
+            "pickrate": "选取率"
         },
         "in-game": {
             "face-offs": {
@@ -2657,7 +2663,8 @@
                     "compositions": "对比",
                     "mechanics": "强度",
                     "tiers": "等级",
-                    "tribes": "随从类型"
+                    "tribes": "随从类型",
+                    "tiers-tribes": "随从"
                 }
             },
             "quests": {
@@ -3054,11 +3061,17 @@
                     "season-start": "本赛季内"
                 },
                 "achievements": "成就",
-                "achievements-tooltip": "刷新您的成就记录。每隔7天会自动刷新。",
+                "achievements-tooltip": "刷新您的成就记录。",
                 "refresh-button-label": "刷新",
                 "refresh-progress-button-label": "正在处理...",
                 "clear-button-label": "清除",
-                "clear-games-label": "清除数据"
+                "clear-games-label": "清除数据",
+                "clear-local-cache": "清除所有缓存",
+                "arena-rewards": "竞技场奖励",
+                "clear-local-cache-tooltip": "清除所有本地缓存，这意味着下次启动本程序时将从服务器检索所有数据。如果您在没有开启 Firestone 的情况下进行游戏，请使用此功能。",
+                "open-local-cache-folder": "打开本地缓存",
+                "arena-rewards-tooltip": "刷新你的竞技场奖励。",
+                "open-local-cache-folder-button": "打开"
             },
             "quests": {
                 "title": "任务",
@@ -3249,7 +3262,7 @@
                     "relic-tooltip": "显示对手下一个恶魔猎手“圣物”数值",
                     "hero-power-damage-label": "英雄技能伤害",
                     "hero-power-damage-tooltip": "显示本局对战中对手的英雄技能累计造成的伤害。仅当对手为法师且英雄技能已造成时显示",
-                    "corpse-spent-tooltip": "当对手死亡骑士符文为三混色时（可能拥有“通灵最强音”），显示对手已消耗的尸体数量",
+                    "corpse-spent-tooltip": "当对手死亡骑士符文为三混色时（可能拥有“通灵最强音”），显示对手已消耗的残骸数量",
                     "shockspitter-tooltip": "显示当前对局中对手英雄已攻击次数。仅当对手为猎人且英雄已至少攻击过一次时显示",
                     "astral-automaton-label": "星界自动机",
                     "astral-automaton-tooltip": "显示对手已召唤的“星界自动机”数量",
@@ -3303,8 +3316,8 @@
                     "lightray-tooltip": "当“光鳐”（或其他因使用过的圣骑士牌而减费的卡牌）在你的手牌或牌库中时，显示本局对战中你使用的圣骑士牌的数量",
                     "menagerie-label": "随从类型数量",
                     "menagerie-tooltip": "当相关卡牌在你的手牌或牌库中时，显示本局对战中使用过的随从类型数量（相关卡牌：融合独奏团、滑铲铁腿）",
-                    "corpse-spent-label": "尸体（已消耗的）",
-                    "corpse-spent-tooltip": "当相关卡牌在你的手牌或牌库中时（如“通灵最强音”），显示你已消耗的尸体数量",
+                    "corpse-spent-label": "已消耗的残骸",
+                    "corpse-spent-tooltip": "当相关卡牌在你的手牌或牌库中时（如“通灵最强音”），显示你已消耗的残骸数量",
                     "overdraft-label": "强行透支",
                     "overdraft-tooltip": "当“强行透支”在你的手牌或牌库中时，显示其可造成的伤害",
                     "bonelord-frostwhisper-label": "白骨领主霜语",
@@ -3352,7 +3365,7 @@
                     "dragons-summoned-tooltip": "显示你已召唤的龙的数量",
                     "excavate-tooltip": "显示你当前和最高的发掘等级，并在你的鼠标移至计数器时显示你可获得的下一等级的发掘宝藏",
                     "elemental-streak-tooltip": "记录你使用过元素牌的连续的回合。",
-                    "elemental-streak-label": "元素链",
+                    "elemental-streak-label": "连续使用元素",
                     "wheel-of-death-label": "死亡轮盘",
                     "thirst-drifter-tooltip": "当你的手牌或牌库中有“口渴的流浪者”时，显示你已经使用的(1)费卡牌数量",
                     "cards-drawn-tooltip": "当“{{cardName}}”在你的手牌中时，显示你已经抽到的卡牌数量",
@@ -3362,7 +3375,7 @@
                     "thirsty-drifter-label": "口渴的流浪者",
                     "thirsty-drifter-tooltip": "当“口渴的流浪者”在你的手牌或牌库中时，显示你已经使用过的(1)费卡牌数量",
                     "pirates-summoned-tooltip": "显示你已召唤的海盗的数量",
-                    "pirates-summoned-label": "海盗（已召唤的）",
+                    "pirates-summoned-label": "已召唤的海盗",
                     "holy-spells-label": "神圣法术",
                     "holy-spells-tooltip": "显示你已使用的神圣法术数量。仅当受益于已使用的神圣法术的卡牌在你的手牌或牌库中显示",
                     "sea-shanty-label": "海上船歌",
@@ -3509,7 +3522,8 @@
                 "max-sim-duration-label": "最长模拟持续时间",
                 "max-sim-duration-tooltip": "允许模拟运行的最长时间（以毫秒为单位）。如果在此之后，模拟仍然没有达到最大次数，将停止并给出已有结果。",
                 "show-trinket-tips-label": "显示饰品提示",
-                "show-trinket-tips-tooltip": "显示由顶尖战棋玩家提供的饰品提示，高级会员可在饰品选择阶段查看浮窗，所有用户可在随从列表中查看。"
+                "show-trinket-tips-tooltip": "显示由顶尖战棋玩家提供的饰品提示，高级会员可在饰品选择阶段查看浮窗，所有用户可在随从列表中查看。",
+                "hero-stats-overlay-scale": "英雄数据浮窗尺寸"
             },
             "overlay": {
                 "overlay-title": "浮窗选项",
@@ -3579,7 +3593,11 @@
                 "minions-list-show-trinkets-label": "显示饰品",
                 "minions-list-show-trinkets-tooltip": "当对局中存在饰品且已启用“种族评级”，在随从列表中显示饰品",
                 "minions-list-include-trinkets-in-tribes-label": "包括种族专属饰品",
-                "minions-list-include-trinkets-in-tribes-tooltip": "当查看特定种族的随从时将种族专属饰品纳入列表"
+                "minions-list-include-trinkets-in-tribes-tooltip": "当查看特定种族的随从时将种族专属饰品纳入列表",
+                "minions-list-new-header-label": "使用新版顶栏",
+                "minions-list-show-buddies-tooltip": "始终显示伙伴，即使您目前没有办法获得伙伴。",
+                "minions-list-show-buddies-label": "显示伙伴",
+                "minions-list-new-header-tooltip": "使用两步式导航菜单，减少随从列表中的杂乱信息"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -3746,7 +3764,7 @@
         "could-not-log-error-title": "我们无法登录到您的Twitch账户",
         "could-not-log-error-text": "请前往设置并重新关联您的Twitch账户",
         "settings-side-text": "设置",
-        "show-hero-cards-help": "显示英雄牌",
+        "show-hero-cards-help": "显示英雄卡",
         "show-hero-cards-help-tooltip": "当鼠标悬停在位次榜的英雄头像上时显示此英雄的英雄技能",
         "show-related-cards-help": "显示相关卡牌",
         "show-related-cards-help-tooltip": "当鼠标悬停在卡牌上时，也会显示与此关联的卡牌（一般是其衍生卡牌）。",
@@ -4023,7 +4041,7 @@
     "arena": {
         "overlay": {
             "mulligan": {
-                "mulligan-overview-footer": "vs {{opponentClass}} | {{sampleSize}} 场"
+                "mulligan-overview-footer": "对阵 {{opponentClass}} | {{sampleSize}} 场"
             }
         }
     }
