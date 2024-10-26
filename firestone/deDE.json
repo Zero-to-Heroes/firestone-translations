@@ -270,11 +270,13 @@
         "duration": {
             "ago": {
                 "hours-ago": "vor {{value}} Stunden",
-                "days-ago": "vor {{value}} Tagen"
+                "days-ago": "vor {{value}} Tagen",
+                "weeks-ago": "vor {{value}} Wochen"
             },
             "sec": "{{sec}} sek",
             "hrs-min": "{{hrs}} Stunden {{min}} min",
-            "min-sec": "{{min}}:{{sec}} min"
+            "min-sec": "{{min}}:{{sec}} min",
+            "min": "{{min}} min"
         },
         "card-type": {
             "trinket": "Schmuckstück"
@@ -434,7 +436,8 @@
             },
             "personal-stats": {
                 "header-class-name": "Klasse",
-                "header-winrate": "Gewinnrate"
+                "header-winrate": "Gewinnrate",
+                "header-games-played": "Gespielte Partien"
             }
         },
         "collection": {
@@ -860,7 +863,8 @@
                 "winrate-header": "Gewinnrate",
                 "view-details-cta": "Klicken, um mehr Details zu sehen!",
                 "class-header": "Klasse",
-                "archetype-header": "Archetyp"
+                "archetype-header": "Archetyp",
+                "matchup-vs-tooltip": "vs. {{className}}"
             }
         },
         "battlegrounds": {
@@ -937,12 +941,16 @@
                     "greater": "Große Schmuckstücke"
                 },
                 "quest-type": {
-                    "rewards": "Belohnungen"
+                    "rewards": "Belohnungen",
+                    "quests": "Quests"
+                },
+                "anomaly": {
+                    "all-anomalies": "Alle Anomalien"
                 }
             },
             "personal-stats": {
                 "hero": {
-                    "average-position": "Durchschn. Position",
+                    "average-position": "Ø Position",
                     "games-played": "Gespielte Partien",
                     "net-mmr": "MMR gesamt"
                 },
@@ -950,12 +958,13 @@
                     "tabs": {
                         "mmr": "MMR",
                         "final-warbands": "Letzte Trupps",
-                        "warband-stats": "Trupp Statistiken"
+                        "warband-stats": "Trupp Statistiken",
+                        "winrate-stats": "Kampf-Gewinnrate"
                     },
                     "stats": {
                         "title": "Allgemeine Statistiken",
                         "games-played": "Gespielte Partien",
-                        "average-position": "Durchschn. Position",
+                        "average-position": "Ø Position",
                         "top-1": "Top 1",
                         "top-4": "Top 4"
                     },
@@ -972,15 +981,22 @@
                         "place-2": "2.!!!",
                         "place-3": "3.!!",
                         "place-4": "4.",
-                        "place-default": "{{value}}."
+                        "place-default": "{{value}}.",
+                        "damage-taken-tooltip": "Schaden, den jede Einheit insgesamt erhalten hat. Der Schaden für Einheiten mit gleichem Namen ist aufsummiert und nicht auf die Einheiten aufgeteilt"
                     },
                     "winrate-stats": {
                         "your-tooltip": "Deine Werte für diesen Helden",
                         "turn-label": "Zug",
-                        "winrate-label": "Gewinnrate"
+                        "winrate-label": "Gewinnrate",
+                        "community-tooltip": "Durchschnittliche Gewinnrate (% Wahrscheinlichkeit, einen Kampf zu gewinnen) pro Zug für diesen Held",
+                        "community-label": "Durchschnitt für Held",
+                        "your-label": "Aktueller Versuch"
                     },
                     "warband-stats": {
-                        "turn-label": "Zug"
+                        "turn-label": "Zug",
+                        "your-label": "Aktueller Versuch",
+                        "your-tooltip": "Deine Werte für diesen Helden",
+                        "community-label": "Durchschnitt für Held"
                     },
                     "mmr": {
                         "empty-state-message": "Beginne Schlachtfeld mit diesem Helden zu spielen, um Informationen zu erhalten"
@@ -1038,12 +1054,23 @@
                 "quest-search-placeholder": "Quest suchen...",
                 "tier": "Rang {{value}}",
                 "header": "Helden-Rangliste ({{value}} Spiele) ",
-                "header-average-position": "Platz",
+                "header-average-position": "Platzierung",
                 "header-quest-reward-details": "Questbelohnung",
                 "player-data-points-tooltip": "Die Anzahl deiner Spiele mit diesem Held",
                 "header-trinket-details": "Schmuckstück",
                 "header-pick-rate": "Auswahlrate",
-                "header-pickrate": "Auswahlrate"
+                "header-pickrate": "Auswahlrate",
+                "header-games-played": "Gespielte Partien",
+                "tribe-impact-position-tooltip": "Wie sehr sich die durchschnittliche Platzierung besierend auf ausgewählten Dienertypen und Anomalie ändert",
+                "header-ungroup-difficulty-button": "Aufteilen",
+                "quest-tooltip-with-difficulty": "{{questName}} mit Schwierigkeitsstufe {{difficulty}} (erscheint als {0} auf dem Kartentext des Quests)",
+                "quest-tooltip-all-difficulties": "{{questName}} für alle Schwierigkeitsstufen",
+                "header-group-difficulty-button-tooltip": "Quests nach Name gruppieren, damit du einen Überblick auf die Quests über alle Schwierigkeiten erhältst",
+                "header-placement-distribution": "Verteilung der Platzierungen",
+                "player-average-position-tooltip": "Deine durchschnittliche Platzierung mit diesem Held",
+                "header-pick-rate-high-mmr-tooltip": "Auswahlrate für die obersten {{value}}% der Spieler",
+                "header-combat-winrate": "Kampf-Gewinnrate",
+                "header-average-turns-to-complete": "Ø Züge zum Abschließen"
             },
             "strategies": {
                 "curve": {
@@ -1056,6 +1083,9 @@
                     }
                 },
                 "date": "Veröffentlicht am  {{date}} (patch {{patch}})"
+            },
+            "bgs-tier-list": {
+                "header": "Questrangliste ({{value}} Spiele) "
             }
         },
         "duels": {
@@ -1138,13 +1168,16 @@
                 "header-winrate": "Gewinnrate",
                 "tier": "Rang {{value}}",
                 "player-data-points-tooltip": "Die Anzahl deiner Spiele mit dieser Karte",
-                "player-data-points": "{{value}}"
+                "player-data-points": "{{value}}",
+                "data-points": "{{value}} Durchläufe",
+                "header-placement-distribution": "Verteilung der Platzierungen"
             },
             "hero-stat": {
                 "global-winrate": "Globale Gewinnrate",
                 "your-winrate": "Deine Gewinnrate",
                 "games-played": "Gespielte Partien",
-                "wins-distribution-tooltip": "Gewinnverteilung"
+                "wins-distribution-tooltip": "Gewinnverteilung",
+                "number-of-games-tooltip": "{{totalRuns}} Durchläufe aufgezeichnet ({{popularity}} Beliebtheit)"
             },
             "run": {
                 "rating": "Bewertung",
@@ -1196,7 +1229,8 @@
                 "save-deckcode-button-tooltip": "Füge dieses Deck dem \"Meine Decks\" Reiter hinzu",
                 "search-tooltip": {
                     "info-1": "Enter - füge das erste Ergebnis deiner Liste hinzu",
-                    "info-2": "Umschalt + Enter - füge das erste Ergebnis deiner Liste hinzu und leere das Suchfeld"
+                    "info-2": "Umschalt + Enter - füge das erste Ergebnis deiner Liste hinzu und leere das Suchfeld",
+                    "info-3": "class:<class> - suche nur Karten von dieser Klasse (z.B. class:mage oder class:neutral)"
                 },
                 "or": "oder",
                 "import-deck-button-title": "Deck importieren",
@@ -1329,7 +1363,11 @@
             "tip-5": "[Mercenaries] Zeige die \"Münzen übrig\" Spalte an, indem du das Fenster vergrößerst",
             "ad-tip-prefix": "Wusstest du schon? {{text}}",
             "minion_play_order": "Die Zahl über jedem Diener zeigt die Reihenfolge, in der sie angekommen sind - das ist ebenfalls die Reihenfolge, in der Todesröcheln-Effekte auslösen.",
-            "etc_buddies": "Wenn du als Band Manager E.T.C. spielst, kannst du alle Partner sehen, die du entdecken kannst"
+            "etc_buddies": "Wenn du als Band Manager E.T.C. spielst, kannst du alle Partner sehen, die du entdecken kannst",
+            "tip-10": "[Duels] Ziehe deine Maus über die Leben deines Gegners um sein maximales Leben zu sehen",
+            "tip-9": "[Schlachtfeld] Mache das Schlachtfeld Fenster breiter um den durchschnittlichen Schaden und die Tötungschancen im Simulator zu sehen",
+            "tip-11": "[Duels] bewege deine Maus über den Namen von deinem Gegner um seine Klasse zu sehen",
+            "tip-8": "[Schlachtfeld] Siehe dir detaillierte Livestatistiken an indem du das Schlachtfeld Fenster mit Alt + B öffnest"
         },
         "streams": {
             "category": {
@@ -1370,7 +1408,8 @@
             "details": {
                 "leaderboards": {
                     "name-header": "Name",
-                    "empty-leaderboard": "Es sind noch keine Spieler auf dieser Bestenliste"
+                    "empty-leaderboard": "Es sind noch keine Spieler auf dieser Bestenliste",
+                    "rank-header": "Rang"
                 },
                 "communities": {
                     "name-header": "Name",
@@ -1381,7 +1420,8 @@
                     "leaderboards": "Bestenlisten",
                     "overview": "Übersicht"
                 },
-                "total-members": "Mitglieder"
+                "total-members": "Mitglieder",
+                "games-played": "gespielte Spiele in den letzten {{value}} Tagen"
             },
             "please-log-in": "Bitte logge dich ein, um Gilden zu benutzen",
             "join": {
@@ -1402,6 +1442,9 @@
                 "create-text-disabled-tooltip": "Dieses Feature ist in der Beta und wird noch weiterentwickelt. Wenn du ein Streamer bist und eine Gilde erstellen möchtest, schreibe mir bitte auf Discord (link oben rechts in der App)",
                 "create-text": "Gilde erstellen"
             }
+        },
+        "lottery": {
+            "achievements-progress": "{{current}} / {{max}}, {{thisGame}} dieses Spiel"
         }
     },
     "turn-timer": {
@@ -1498,6 +1541,14 @@
         },
         "asvedon": {
             "player": "{{value}} war der letzte Zauber den dein Gegner gespielt hat"
+        },
+        "bgs-gold-delta": {
+            "up-to": "bis zu {{maxValue}}",
+            "card": "{{cardName}} ({{count}} Mal)"
+        },
+        "monstrous-parrot": {
+            "player": "{{value}} war der letzte freundliche Todesröcheln Effekt, der ausgelöst wurde",
+            "opponent": "{{value}} war der letzte gegnerische Todesröcheln Effekt, der ausgelöst wurde"
         }
     },
     "loading": {
@@ -1728,7 +1779,8 @@
                 "mulligan-impact": "Einfluss",
                 "mulligan-impact-tooltip-free": "Wie stark es deine Gewinnrate beeinflusst, diese Karte auf der Hand zu behalten. Du hast heute noch {{value}} Benutzungen übrig.",
                 "mulligan-keep-rate-tooltip": "Wie oft diese Karte in der Starthand behalten wird",
-                "deck-mulligan-filter-rank-bracket-tooltip": "Zeige Spiele aus {{rankBracket}}. Klicken, um zu ändern."
+                "deck-mulligan-filter-rank-bracket-tooltip": "Zeige Spiele aus {{rankBracket}}. Klicken, um zu ändern.",
+                "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs. {{opponentClass}} | {{sampleSize}} Spiele"
             }
         },
         "stolen-tooltip": "Vom Gegner gestohlen",
@@ -1758,7 +1810,8 @@
             "lethal-received-tooltip": "% Chance in diesem Kampf zu sterben",
             "composition-not-supported": {
                 "reason-secret": "Geheimnisse",
-                "bug": "Ein unbekannter Fehler ist aufgetreten. Ein Fehlerbericht wurde automatisiert an die Entwickler gesendet"
+                "bug": "Ein unbekannter Fehler ist aufgetreten. Ein Fehlerbericht wurde automatisiert an die Entwickler gesendet",
+                "reason-enchantment": "{{cardName}} Verzauberung"
             },
             "result": {
                 "won": "Gewonnen",
@@ -1768,8 +1821,8 @@
             "import-tooltip": "Klicken, um diesen Kampf in den Simulator zu importieren",
             "sim-sample-link-tooltip": "Öffnet eine Beispielsimulation mit diesem Ergebnis in deinem Browser",
             "temp-result-text": "Simulation läuft",
-            "damage-received-tooltip": "Durchschnittlicher Schaden bei Verlust",
-            "damage-dealt-tooltip": "Durchschnittlicher Schaden bei Gewinn"
+            "damage-received-tooltip": "Ø Schaden bei Verlust",
+            "damage-dealt-tooltip": "Ø Schaden bei Gewinn"
         },
         "sim": {
             "update-minion-button-tooltip": "Diener aktualisieren",
@@ -1839,7 +1892,8 @@
             "turn-winrate": "Gewinnrate pro Zug",
             "avg-position-details-tooltip-base-value": "Basiswert",
             "turn-winrate-tooltip": "Kampfgewinnrate pro Zug (zeigt dir, wann dieser Held am stärksten ist)",
-            "avg-position-tooltip": "Durchschnittliche Platzierung"
+            "avg-position-tooltip": "Durchschnittliche Platzierung",
+            "avg-position-your-tooltip": "Deine Werte"
         },
         "hero-selection": {
             "achievement-completed": "Errungenschaft abgeschlossen",
@@ -1923,19 +1977,34 @@
                     "average-difficulty-header": "Schwierigkeit",
                     "average-hero-tooltip": "Runden, um diese Quest mit diesem Helden abzuschließen, unter Berücksichtigung aller Schwierigkeitsstufen. Spiele gesamt: {{value}}",
                     "average-hero-header": "Held",
-                    "average-global-tooltip": "Runden, um die Quest zu erfüllen, unter Berücksichtigung aller Schwierigkeitsstufen und Helden"
+                    "average-global-tooltip": "Runden, um die Quest zu erfüllen, unter Berücksichtigung aller Schwierigkeitsstufen und Helden",
+                    "average-global-header": "Global",
+                    "turns-to-complete-header": "Quest Runden zum Abschließen",
+                    "turns-to-complete-header-tooltip": "Queststatistiken für die obersten {{value}}% der Spieler seit letztem Patch, unter Berücksichtigung aller Dienertypen",
+                    "average-difficulty-tooltip": "Züge, um den Quest mit dieser Schwierigkeit abzuschließen, unter Berücksichtigung aller Helden. Spiele gesamt: {{value}}"
                 },
                 "free-uses-text": "noch {{value}}",
                 "locked-premium-info-tooltip": "Werde Premium, um detaillierte Statistiken für Quests und Belohnungen zu sehen. Du erhältst diese Daten {{value}} Mal pro Tag gratis.",
                 "reward": {
-                    "average-placement-header": "Durchschn. Platz für Belohnung",
-                    "average-placement-hero": "Held"
-                }
+                    "average-placement-header": "Ø Platzierung für Belohnung",
+                    "average-placement-hero": "Held",
+                    "average-placement-global": "Global",
+                    "average-placement-tooltip": "Belohnungsstatistiken für die obersten {{value}}% der Spieler seit letztem Patch, unter Berücksichtigung aller Dienertypen",
+                    "average-placement-global-tooltip": "Durchschnittliche Platzierung für alle Helden",
+                    "average-placement-hero-tooltip": "Durchschnittliche Platzierung nur für diesen Held. Spiele gesamt: {{value}}"
+                },
+                "free-uses-tooltip": "Du kannst dies {{max}} Mal pro Tag gratis nutzen, heute noch {{left}} Mal übrig"
             },
             "trinkets": {
-                "placement-title": "Durchschn. Platz",
+                "placement-title": "Ø Platz",
                 "placement-title-tooltip": "Durchschnittliche Platzierung aller Spieler, die dieses Schmuckstück ausgewählt haben.",
-                "pick-rate-title": "Auswahlrate"
+                "pick-rate-title": "Auswahlrate",
+                "high-mmr-header": "Oberste {{value}}%",
+                "global-header-tooltip": "Wert unter Berücksichtigung der gesamten Spielerschaft",
+                "global-header": "Global",
+                "high-mmr-header-tooltip": "Wert für die besten Spieler",
+                "view-tips": "Tips ansehen",
+                "pick-rate-title-tooltip": "Wie oft dieses Schmuckstück von Spielern gewählt wurde."
             }
         },
         "post-match-stats": {
@@ -1949,7 +2018,8 @@
                 "warband-composition-by-turn": "Kompositionen"
             },
             "hp-graph": {
-                "player-health": "{{playerName}} Gesundheit"
+                "player-health": "{{playerName}} Gesundheit",
+                "legend-title": "Zeige:"
             },
             "composition": {
                 "blank-tribe": "Kein Stamm / Alle",
@@ -1958,14 +2028,20 @@
             },
             "winrate-stats": {
                 "turn-label": "Zug",
-                "winrate-label": "Gewinnrate"
+                "winrate-label": "Gewinnrate",
+                "your-label": "Aktueller Versuch",
+                "community-label": "Durchschnitt für Held"
             },
             "warband-stats": {
-                "community-label": "Durchschnitt per Held",
+                "community-label": "Durchschnitt für Held",
                 "your-label": "Aktueller Versuch",
                 "turn-label": "Zug",
                 "delta-label": "+{{delta}} in dieser Runde"
-            }
+            },
+            "live-stats-title": "Live-Statistiken - Zug {{turn}}",
+            "current-board": "Dein aktuelles Feld",
+            "title": "Statistiken letztes Spiel",
+            "final-board": "Dein finales Feld"
         },
         "overlay-button": {
             "tooltip": "Klicken, um das App-Fenster anzuzeigen / auszublenden"
@@ -1986,7 +2062,8 @@
             "winrate-label": "Gewinnrate",
             "popularity-label": "Beliebtheit",
             "win-distribution-tooltip": "Gewinnverteilung",
-            "player-matches": "{{value}}Spiele"
+            "player-matches": "{{value}}Spiele",
+            "your-value-tooltip": "Deine Werte"
         },
         "deck-select": {
             "copy-deck-tooltip": "Zum Kopieren klicken",
@@ -2084,11 +2161,33 @@
                 "enable-mods-title": "2. Mods aktivieren",
                 "update-disabled": "Eine neue Version dieses Mods ist verfügbar, aber du kannst sie erst installieren, wenn du das Spiel schließt",
                 "disable-mods-description": "Mods sind aktiviert. Klicken, um die Unterstützung für Mods zu deaktiviern. Dadurch wird die Mod-Engine und ihre Konfiguration entfernt, aber die Mod-Dateien werden nicht gelöscht (falls du sie später reaktiviern möchtest). Schau ins Wiki für eine Anleitung, alles vollständig zu löschen.",
-                "check-mods": "Überprüfen"
+                "check-mods": "Überprüfen",
+                "warning": "ACHTUNG: Mods verändern das Verhalten des Spiels und stellen somit einen Verstoß gegen die AGB dar, der dazu führen könnte, dass du gebannt wirst. Wobei mir keine Fälle bekannt sind, in denen das vorgekommen ist. *Ich glaube*, die nachfolgenden Mods können sicher benutzt werden, aber man weiß nie.",
+                "instructions": "Bitte lies {{link}} für alle nötigen Details.",
+                "game-location-placeholder": "Speicherort des Spiels",
+                "refresh-engine": "Engine aktualisieren",
+                "installed-mods-description": "Folgende Mods sind installiert (lösche die zugehörigen Dateien in Hearthstone/Mods, um sie zu deinstallieren):",
+                "downloading-mod-engine": "Mod-Engine wird heruntergeladen (~20 MB)...",
+                "enabling-mods": "Aktiviere Mods...",
+                "refreshing-engine": "Kopiere libs...",
+                "creating-config": "Erstelle Konfiguration...",
+                "installing-mod-manager": "Mod-Verwalter wird heruntergeladen (~15 kB)...",
+                "installing-game-connector": "Spielverbinder wird heruntergeladen (~10 kB)...",
+                "add-mods-description": "Finde ein paar Mods und folge den Anleitungen aus {{link}}, um sie zu installieren (dort findet sich auch eine Liste von Mods, die ich für sicher benutzbar halte).",
+                "instructions-link": "Erste Schritte",
+                "game-running-error": "Hearthstone wird aktuell ausgeführt. Bitte schließe es, bevor du Mods aktivierst / deaktivierst.",
+                "mods-ready": "Mods sind bereit, siehe obigen Link um zu erfahren, wie du sie installieren kannst",
+                "enable-mods": "Mods aktivieren",
+                "check-mods-description": "Überprüfe, ob Mods bereits aktiviert sind, und ob dein Dateipfad zum Spiel korrekt eingerichtet ist.",
+                "refresh-engine-tooltip": "Nach jedem Patch für Hearthstone musst du die Engine aktualisieren (oder Mods deaktivieren), sonst wird das Spiel nicht starten.",
+                "check-for-updates-tooltip": "Nur Mods die einen Downloadlink bereitstellen können auf Updates überprüft werden"
             },
             "third-party": {
                 "vs": {
-                    "website-link": "hier"
+                    "website-link": "hier",
+                    "next": "Wenn du dich entscheidest, zum vS Data Reaper Report beizutragen, wird Firestone ihnen anonyme Daten über deine Spiele senden (größtenteils ausgespielte Karten und einige Metadaten wie z.B. Spielerränge)",
+                    "pitch": "Vicious Syndicate erstellt eine wöchentliche Metaanalyse mithilfe von tausenden von Spielen und Einblicken der besten Spieler. Du kannst sie besuchen unter {{websiteLink}}",
+                    "toggle-label": "Zum vS Data Reaper Report beitragen"
                 },
                 "ooc": {
                     "website-link": "hier",
@@ -2096,29 +2195,38 @@
                     "connect-button-text": "Verbinden",
                     "connected-text": "Du bist angemeldet",
                     "collection-synchronized": "Sammlung synchronisiert",
-                    "disconnect-button-text": "Verbindung trennen"
+                    "disconnect-button-text": "Verbindung trennen",
+                    "next": "Wenn du deinen Out of Games-Account verbindest, wird Firestone ihnen deine Kartensammlung senden, damit du sie online einsehen kannst.",
+                    "title": "Out of Games",
+                    "pitch": "Out of Games ist eine Communitywebsite mit Artikels, Anleitungen, Decks, einer Kartendatenbank und mehr. Durch die Synchronisierung deiner Kartensammlung mit der Seite kannst du einfacher neue Decks zum Spielen finden. Du kannst sie besuchen unter {{websiteLink}}"
                 },
                 "d0nkey": {
                     "website-link": "hier",
-                    "instructions-page-link": "Anleitungsseite"
+                    "instructions-page-link": "Anleitungsseite",
+                    "next": "Wenn du dich entscheidest, mit d0nkey.top zu synchronisieren, wird Firestone ihnen alle deine Spiele senden, welche in einer bestimmen Sektion auf der Website erscheinen werden, die noch in der Entwicklung ist. Die Daten werden standardmäßig privat sein, außer wenn du gleichzeitig streamst. Siehe den {{link}} für die notwendigen Schritte.",
+                    "pitch": "d0nkey.top ist eine Fan-Website, die Decks aus offiziellen Hearthstone-Wettbewerben und von Streamern sammelt, um allen Spielern dabei zu helfen, interessante Decks zu finden. Die Synchronisierung mit d0nkey.top erlaubt dir, deine Decks mit deinen Zuschauern zu teilen (wenn du ein Streamer bist). Außerdem wird sie der Seite helfen, eine bessere Datenbank zu bauen und der Community bessere kostenlose Angebote zur Verfügung zu stellen. Du kannst die Seite besuchen unter {{websiteLink}}",
+                    "toggle-label": "Aufzeichnungen mit d0nkey.top synchronisieren"
                 },
                 "hsdecks": {
                     "website-link": "hier",
                     "next": "Wenn du dich für die Synchronisierung mit hearthstone-decks.net entscheidest, sendet Firestone ihnen anonym jedes Spiel, dass du spielst, mit einigen Informationen zum Spiel (Deck Code, Rang, Spielergebnis)",
-                    "toggle-label": "Synchronisiere deine Aufzeichnungen mit hearthstone-decks.net"
-                }
+                    "toggle-label": "Synchronisiere deine Aufzeichnungen mit hearthstone-decks.net",
+                    "pitch": "Hearthstone-decks.net teilt Decks, die in allen Modi auf hohen Rängen gespielt werden, sowie Neuigkeiten und Artikel. Du kannst sie besuchen unter {{websiteLink}}"
+                },
+                "intro": "Wir glauben, dass deine Daten dein Eigentum sind, und dass du sie mit anderen Webseiten synchronisieren können solltest, damit sie mit den Daten das tun können, was sie am besten tun. Wir werden dafür nicht bezahlt, aber es schenkt uns etwas Aufmerksamkeit, weil dann über uns gesprochen wird :)"
             },
             "bug-report": {
                 "title": "Sende Feedback / melde einen Fehler",
                 "simulator-bug-text": "Wenn du einen Fehler beim Simulator melden möchtest (und mir so viel wie möglich helfen möchtest), schaue in die Anleitung",
-                "general-bug-text": "Bei anderen großen Problemen (App funktioniert nicht) gibt es einige hilfreiche Schritte zur Fehlerbehebung",
+                "general-bug-text": "BITTE: Schau zuerst in die Schritte zur Fehlerbehebung",
                 "link-text": "hier",
                 "email-placeholder": "Ihre E-Mail-Adresse (empfohlen)",
                 "message-placeholder": "Deine Nachricht. Wenn du einen Fehler meldest, versuche bitte zu beschreiben, was du gemacht hast, als der Fehler auftrat und was dich veranlasst hat den Fehler zu melden.",
                 "send-button": "Senden",
                 "status-uploading-logs": "Log-Dateien hochladen",
                 "status-sending-feedback": "Log-Dateien hochgeladen, sende Feedback",
-                "status-done": "Feedback gesendet. Vielen Dank für deine Benachrichtigung! Bleib auf dem Laufenden, indem du uns auf {{discordLink}} oder auf {{twitterLink}} beitrittst"
+                "status-done": "Feedback gesendet. Vielen Dank für deine Benachrichtigung! Bleib auf dem Laufenden, indem du uns auf {{discordLink}} oder auf {{twitterLink}} beitrittst",
+                "menu-title": "Fehler melden"
             },
             "twitch": {
                 "title": "Auf Twitch übertragen",
@@ -2131,7 +2239,11 @@
                 "logged-in-as-text": "Eingeloggt als:",
                 "configuration-title": "Stream Konfiguration",
                 "delay-label": "Streamverzögerung (ms)",
-                "other-options-title": "Andere Optionen"
+                "other-options-title": "Andere Optionen",
+                "intro": "Die Twitch-Erweiterung erlaubt deinen Zuschauern, während des Streams deinen Decktracker im Twitch-Player zu sehen und im Schlachtfeld Infos über alle Gegenspieler zu erhalten. Um sie zu aktivieren, musst du:",
+                "appear-on-live-streams-label": "In Livestreams erscheinen",
+                "appear-on-live-streams-tooltip": "Sei im \"Livestreams\" Tab zu finden. Dieser ist noch in der Entwicklung und listet alle Streamer auf, die gerade Firestone benutzen, sowie was sie gerade spielen und einen Link zu ihrem Stream.",
+                "delay-label-tooltip": "Verzögert die Datenübertragung an Twitch um so viele Millisekunden. Nützlich, wenn dein Stream ebenfalls verzögert ist, um Sniper zu bekämpfen"
             },
             "launch": {
                 "launch-on-game-start-label": "Starte Firestone wenn das Spiel gestartet wird",
@@ -2158,7 +2270,14 @@
                 "reset-prefs-confirmation": "Alle Einstellungen wurden zurückgesetzt. Dies beinhaltet diverse Widget-Positionen auf dem Bildschirm, sowie Twitch Einstellungen. Also vergiss nicht wieder zu setzen, was du brauchst :)",
                 "restart-app-button-label": "App neustarten",
                 "reset-prefs-button-label": "Einstellungen zurücksetzen",
-                "restart-app-button-text": "Neu starten"
+                "restart-app-button-text": "Neu starten",
+                "title": "Startoptionen",
+                "display-notifications-label": "Benachrichtigungen anzeigen",
+                "enable-mailbox-unread-tooltip": "Zeige einen roten Punkt auf dem Postach, wenn es ungelesene Nachrichten enthält.",
+                "enable-mailbox-tooltip": "Zeige das Postfachmenü, das dir in der App Neuigkeiten zu Hearthstone anzeigt.",
+                "enable-mailbox-unread-label": "Zeige ungelesene im Postfach",
+                "display-notifications-confirmation": "Alle Benachrichtigungen sind nun AUSGESCHALTET.",
+                "display-notifications-tooltip": "Schaltet Sichtbarkeit der Toast-Benachrichtigungen um [unten rechts]. Wenn diese Einstellung an ist, kannst du zusätzlich Benachrichtigungen für einzelne Spielmodi in den zugehörigen Tabs konfigurieren"
             },
             "localization": {
                 "title": "Übersetzung",
@@ -2188,8 +2307,26 @@
                 "discord-presence-label": "Discord Rich Presence",
                 "discord-presence-tooltip": "Zeigt auf Discord, dass du Firestone benutzt (ändert den Status von \"Spielt Hearthstone\" zu \"Playing HS with Firestone\")",
                 "in-game-text": {
-                    "mmr": "{{value}} MMR"
-                }
+                    "mmr": "{{value}} MMR",
+                    "legend": "Legende {{rank}}",
+                    "league": "{{league}} {{rank}}"
+                },
+                "activate-custom-in-game-text-tooltip": "Passe den Text an, der erscheint, wenn Benutzer auf dein Profil klicken, während du Hearthstone spielst",
+                "activate-custom-in-game-text-label": "Eigener \"im Spiel\" Text",
+                "activate-custom-in-match-text-label": "Eigener \"in Runde\" Text",
+                "in-game-text-default-value": "Im Spiel",
+                "in-game-details": {
+                    "tokens": {
+                        "rank": "Dein aktueller Rang in dem Modus (Liga + Rang im gewerteten Format, MMR für Schlachtfeld)",
+                        "hero": "Der vollständige Name von deinem aktuellen Helden ",
+                        "mode": "Der aktuelle Modus (Gewertet, Schlachtfeld, usw.)"
+                    },
+                    "text": "Du kannst den Text anpassen, der angezeigt wird, wenn du in einer Runde bist. Es sind folgende Platzhalter erlaubt:",
+                    "text-2": "Brauchst du weitere Optionen für Platzhalter? Erzähle es mir auf {{discordLink}}!"
+                },
+                "advanced-config-title": "Genauere Konfiguration",
+                "in-game-text-in-match-default-value": "In einem {mode} Spiel",
+                "activate-custom-in-match-text-tooltip": "Passe den Text an, der erscheint, wenn Benutzer auf dein Profil klicken, während du in einer Runde bist"
             },
             "notifications": {
                 "title": "Benachrichtigungen"
@@ -2205,6 +2342,9 @@
                 "constructed-label": "Hearthstone",
                 "title": "Quests",
                 "battlegrounds-label": "Schlachtfeld"
+            },
+            "premium": {
+                "link": "auf dem Wiki"
             }
         },
         "decktracker": {
@@ -2225,7 +2365,9 @@
                 "show-deck-winrate": "Zeige Deck Gewinnrate",
                 "reset-button-confirm": "Sind Sie sicher?",
                 "counters-size": "Zählergröße",
-                "discover-help": "Kontexthilfe beim Entdecken"
+                "discover-help": "Kontexthilfe beim Entdecken",
+                "streamer-mode-tooltip": "Ersetze deinen Namen und den deines Gegners durch \"Du\" und \"Gegner\". Dies spiegelt den Streamermodus im Spiel wider, der durch Drücken von Strg + Shift + S aktiviert werden kann.",
+                "show-unknown-cards-tooltip": "Zeige \"Unbekannte Karte\" im Tracker für Karten, über die wir keine Informationen haben."
             },
             "modes": {
                 "ranked": "Gewertet",
@@ -2364,11 +2506,16 @@
                 "counter-soutshsea-label": "Südmeerschlägerin",
                 "minions-list-title": "Dienerliste",
                 "overlay-title": "Overlay-Konfiguration",
-                "battle-simulation-example-tooltip": "Fügt einen Button hinzu, der ein Bespiel zeigt, wie der Simulator zu einem Ergebnis gekommen ist. ACHTUNG: dadurch wird ein neuer Tab in deinem Standardbrowser geöffnet"
+                "battle-simulation-example-tooltip": "Fügt einen Button hinzu, der ein Bespiel zeigt, wie der Simulator zu einem Ergebnis gekommen ist. ACHTUNG: dadurch wird ein neuer Tab in deinem Standardbrowser geöffnet",
+                "widget-size-label": "Widgetgröße",
+                "minions-list-show-tier-7-label": "Zeige Stufe 7 Diener"
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ MMR und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger MMR kann zu falschen Informationen führen.",
                 "show-in-leaderboard": "Über den Ranglistenkacheln anzeigen"
+            },
+            "session-widget": {
+                "size-title": "Widgetgröße"
             }
         },
         "achievements": {
@@ -2430,7 +2577,8 @@
             "title-label-global": "Arena"
         },
         "battlegrounds": {
-            "games-played-tooltip-global": "Deine GESAMTANZAHL an Spielen mit allen Helden (auch auf anderen Geräten oder ohne Firestone an)"
+            "games-played-tooltip-global": "Deine GESAMTANZAHL an Spielen mit allen Helden (auch auf anderen Geräten oder ohne Firestone an)",
+            "games-played-label-global": "Gespielt"
         },
         "spectator": {
             "close-button-tooltip": "{{playerName}} nicht mehr zuschauen"
