@@ -187,7 +187,13 @@
             "island-vacation": "Paradis en péril",
             "island-vacation-catch-up": "Rattrapage (Paradis en péril)",
             "whizbang-catch-up": "Rattrapage (L’Atelier de Mystifix)",
-            "space": "La Ténèbre de l’Au-delà"
+            "space": "La Ténèbre de l’Au-delà",
+            "golden-the-great-dark-beyond": "La Ténèbre de l’Au-delà (doré)",
+            "the-great-dark-beyond": "La Ténèbre de l’Au-delà",
+            "the-great-dark-beyond-catch-up": "Rattrapage (La Ténèbre de l’Au-delà)",
+            "golden-year-of-the-pegasus": "Année du Pégase (doré)",
+            "year-of-the-pegasus": "Année du Pégase",
+            "golden-ashes-of-outland": "Les Cendres de l’Outreterre (doré)"
         },
         "ranks": {
             "constructed": {
@@ -1099,7 +1105,8 @@
                     "past-three": "3 derniers jours",
                     "last-patch": "Dernière mise à jour",
                     "past-100": "Depuis toujours",
-                    "past-30": "30 derniers jours"
+                    "past-30": "30 derniers jours",
+                    "all-time": "Depuis toujours"
                 },
                 "tier": {
                     "all-tiers": "Tous les niveaux",
@@ -1140,7 +1147,8 @@
                     "average-position": "Position moy. :",
                     "games-played": "Parties jouées",
                     "net-mmr": "Gain de cote",
-                    "net-mmr-tooltip": "Gain/perte de cote moyen par partie"
+                    "net-mmr-tooltip": "Gain/perte de cote moyen par partie",
+                    "empty-state-text": "Aucune stat n’a été trouvée pour les filtres sélectionnés. Pour les bibelots, il faut d’abord rafraîchir le cache local en allant dans Paramètres > Général > Données, et en vidant le cache local."
                 },
                 "hero-details": {
                     "tabs": {
@@ -2426,7 +2434,13 @@
                 "deck-mulligan-filter-time-tooltip": "Afficher les parties pour {{timeFrame}} {{patchDetails}}. Cliquez pour modifier."
             }
         },
-        "stolen-tooltip": "Volé à l’adversaire"
+        "stolen-tooltip": "Volé à l’adversaire",
+        "guessed-info": {
+            "header": "Infos supplémentaires",
+            "cost": "Coût",
+            "possible-cards": "Cartes possibles"
+        },
+        "tourist": "Touriste : {{className}}"
     },
     "battlegrounds": {
         "menu": {
@@ -2568,7 +2582,8 @@
             "tavern-spells-cast-tooltip": "Le nombre de sorts de taverne que vous avez lancés pendant cette partie",
             "clear-button": "Effacer",
             "pirates-summoned": "Pirates invoqués",
-            "pirates-summoned-tooltip": "Le nombre de Pirates que vous avez invoqués pendant cette partie"
+            "pirates-summoned-tooltip": "Le nombre de Pirates que vous avez invoqués pendant cette partie",
+            "remove-teammate-button": "Retirer le duo"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3395,7 +3410,11 @@
                     "damage-taken-on-your-turn-tooltip": "Donne des infos sur les points de dégâts subis par votre héros ou héroïne pendant vos tours (nombre de fois et total de dégâts) lorsque des cartes qui utilisent cette donnée sont dans votre main ou votre deck (comme Habituée du sauna ou Vona, organisatrice de soirée)",
                     "locations-used-label": "Lieux utilisés",
                     "dead-minions-this-game-tooltip": "Affiche le nombre de serviteurs morts pendant la partie. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main ou votre deck (par exemple Reska, responsable de la fosse)",
-                    "locations-used-tooltip": "Affiche le nombre de fois où vous avez utilisé un lieu. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main ou votre deck"
+                    "locations-used-tooltip": "Affiche le nombre de fois où vous avez utilisé un lieu. Ne s’affiche que si des cartes pertinentes sont trouvées dans votre main ou votre deck",
+                    "dragons-played-label": "Dragons joués",
+                    "ceaseless-expanse-tooltip": "Afficher le nombre de fois qu’une carte a été jouée, piochée ou détruite pendant la partie",
+                    "dragons-played-tooltip": "Afficher le nombre de Dragons que vous avez joués",
+                    "ceaseless-expanse-label": "L’Étendue infinie"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -3449,7 +3468,9 @@
                 "notifications-rewards-label": "Récompenses",
                 "notifications-rewards-tooltip": "Afficher une notification quand vous obtenez une carte en dehors d’un paquet, notamment lors des récompenses de fin de saison ou d’Arène",
                 "show-transformed-info-label": "Afficher les transformations",
-                "show-transformed-info-tooltip": "Afficher les cartes en lesquelles d’autres cartes ont été transformées (par exemple, lorsqu’un serviteur est métamorphosé en mouton)"
+                "show-transformed-info-tooltip": "Afficher les cartes en lesquelles d’autres cartes ont été transformées (par exemple, lorsqu’un serviteur est métamorphosé en mouton)",
+                "remove-duplicate-in-tooltip-label": "Enlever les doublons de l’infobulle",
+                "remove-duplicate-in-tooltip-tooltip": "N’afficher qu’une copie max de chaque carte lorsque la souris passe sur certaines cartes dans le decktracker (par exemple sur une carte qui liste les serviteurs morts)"
             },
             "history-show-only-new-cards": "Nouvelles uniquement",
             "pack-stats-show-only-buyable-packs": "Afficher uniquement les paquets principaux",
@@ -4044,7 +4065,63 @@
         "handbuff-hunter": "Chasseur handbuff",
         "pain-zarimi-priest": "Prêtre douleur Zarimi",
         "pain-demon-hunter": "Chasseur de démons douleur",
-        "pain-rogue": "Voleur douleur"
+        "pain-rogue": "Voleur douleur",
+        "incindius-rogue": "Voleur Incindius",
+        "orb-big-spell-mage": "Mage gros sorts orbe",
+        "xl-orb-big-spell-mage": "Mage gros sorts orbe XL",
+        "xl-owlonius-druid": "Druide Chouettius XL",
+        "ffu-buttons-dk": "DK GGI Boutons",
+        "maestra-rogue": "Voleur Maestra",
+        "shaffar-rogue": "Voleur Shaffar",
+        "xl-handlock": "Handlock XL",
+        "xl-painlock": "Démoniste douleur XL",
+        "xl-rainbow-excavate-dk": "DK arc-en-ciel Déterrer XL",
+        "dungar-druid": "Druide Dungar",
+        "pipsi-paladin": "Paladin Pipsi",
+        "uu-insanity-warlock": "Démoniste II démence",
+        "xl-bbu-control-dk": "DK SSI contrôle XL",
+        "xl-bbb-control-dk": "DK sang contrôle XL",
+        "xl-tony-druid": "Druide Tony XL",
+        "xl-wheel-warlock": "Démoniste roulette XL",
+        "amalgam-rogue": "Voleur amalgame",
+        "buttons-rainbow-dk": "DK arc-en-ciel Boutons",
+        "evolve-shaman": "Chaman évolution",
+        "weapon-rogue": "Voleur arme",
+        "xl-excavate-odyn-warror": "Guerrier Odyn Déterrer XL",
+        "xl-ogre-rogue": "Voleur du gang-ogre XL",
+        "xl-bfu-handbuff-dk": "DK arc-en-ciel handbuff XL",
+        "xl-tempo-druid": "Druide tempo XL",
+        "bbb-control-dk": "DK sang contrôle",
+        "xl-buttons-rainbow-dk": "DK arc-en-ciel Boutons XL",
+        "xl-highlander-dh": "Chasseur de démons singleton XL",
+        "xl-highlander-rogue": "Voleur singleton XL",
+        "xl-justicar-warrior": "Guerrier justicière XL",
+        "xl-mystery-egg-hunter": "Chasseur œuf mystère XL",
+        "big-shaman": "Chaman grosses cartes",
+        "location-priest": "Prêtre lieux",
+        "xl-coin-rogue": "Voleur La pièce XL",
+        "xl-dungar-druid": "Druide Dungar XL",
+        "buu-handbuff-dk": "DK SII handbuff",
+        "ffu-deathrattle-dk": "DK GGI Râle d’agonie",
+        "frost-dk": "DK givre",
+        "uuu-aggro-dk": "DK impie aggro",
+        "xl-bbu-highlander-dk": "DK SSI singleton XL",
+        "xl-cutlass-rogue": "Voleur coutelas XL",
+        "xl-fatigue-demon-hunter": "Chasseur de démons fatigue XL",
+        "xl-elemental-shaman": "Chaman Élémentaires XL",
+        "xl-handbuff-hunter": "Chasseur handbuff XL",
+        "justicar-warrior": "Guerrier justicière",
+        "xl-mech-warrior": "Guerrier Méca XL",
+        "xl-rainbow-shaman": "Chaman arc-en-ciel XL",
+        "xl-secret-hunter": "Chasseur Secrets XL",
+        "xl-excavate-paladin": "Paladin Déterrer XL",
+        "xl-f-insanity-warlock": "Démoniste G démence XL",
+        "xl-ff-handlock": "Handlock GG XL",
+        "xl-maestra-rogue": "Voleur Maestra XL",
+        "xl-orb-mage": "Mage orbe XL",
+        "xl-pipsi-paladin": "Paladin Pipsi XL",
+        "xl-zilliax-warrior": "Guerrier Zilliax XL",
+        "pain-priest": "Prêtre douleur"
     },
     "arena": {
         "overlay": {
