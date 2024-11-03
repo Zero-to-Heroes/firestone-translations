@@ -884,7 +884,10 @@
                 "archetype-header": "Архетип",
                 "class-header": "Класс",
                 "last-updated": "Последнее обновление",
-                "core-cards-header": "Ключевые карты"
+                "core-cards-header": "Ключевые карты",
+                "deck-type-header": "Тип",
+                "cost-header": "Цена",
+                "view-details-cta": "Кликните, чтобы увидеть больше деталей!"
             }
         },
         "battlegrounds": {
@@ -939,7 +942,8 @@
                     "past-three": "Последние 3 дня",
                     "last-patch": "Последнее обновление",
                     "past-100": "Последние 100 дней",
-                    "past-30": "Последние 30 дней"
+                    "past-30": "Последние 30 дней",
+                    "all-time": "За все время"
                 },
                 "tier": {
                     "all-tiers": "Любая таверна",
@@ -964,7 +968,8 @@
                     "rewards": "Награды"
                 },
                 "anomaly": {
-                    "all-anomalies": "Все аномалии"
+                    "all-anomalies": "Все аномалии",
+                    "validation-error-tooltip": "Выберете любое количество аномалий"
                 },
                 "leaderboard": {
                     "search-placeholder": "Поиск игрока..."
@@ -979,7 +984,8 @@
                     "average-position": "Место в среднем",
                     "games-played": "Сыграно партий",
                     "net-mmr": "Чистый MMR",
-                    "net-mmr-tooltip": "Средний прирост/потеря MMR за матч"
+                    "net-mmr-tooltip": "Средний прирост/потеря MMR за матч",
+                    "empty-state-text": "Нам не удалось получить статистику по выбранным фильтрам. Если вы пытаетесь получить данные по тринкетам, вам сначала нужно обновить локальный кэш, перейдя в Настройки > Приложение > Данные и очистив локальный кэш."
                 },
                 "hero-details": {
                     "tabs": {
@@ -1967,7 +1973,11 @@
                 "no-mulligan-data": "Нет данных"
             }
         },
-        "unknown-mana-minion": "Неизвестное существо за {{manaCost}} маны"
+        "unknown-mana-minion": "Неизвестное существо за {{manaCost}} маны",
+        "guessed-info": {
+            "header": "Доп. инфо",
+            "cost": "Цена"
+        }
     },
     "battlegrounds": {
         "menu": {
@@ -2089,7 +2099,9 @@
             "eternal-legion": "Легион рыцарей",
             "sneed-deathrattle-tooltip": "Сколько раз сила героя Снида использовалась на существе",
             "global-info-title-tooltip": "Кликните, чтобы модифицировать параметры героя",
-            "global-info-title": "Чары героя"
+            "global-info-title": "Чары героя",
+            "remove-teammate-button": "Удалить сокомандника",
+            "add-teammate-button": "Добавить сокомандника"
         },
         "hero-stats": {
             "finishes-title": "Занятые места",
@@ -2706,7 +2718,11 @@
                     "lightray-label": "Световой скат",
                     "parrot-mascot-label": "Попугай-талисман",
                     "treant-label": "Счетчик древней",
-                    "pirates-summoned-label": "Пиратов призвано"
+                    "pirates-summoned-label": "Пиратов призвано",
+                    "pirates-summoned-tooltip": "Показывает количество призванных за матч пиратов",
+                    "dragons-played-label": "Разыграно драконов",
+                    "dragons-summoned-label": "Драконов призвано",
+                    "treant-tooltip": "Показывает сколько раз вы призвали Древня"
                 }
             },
             "duels": {
@@ -3003,5 +3019,12 @@
         "language": "Язык",
         "language-auto-tooltip": "Использовать язык из настроек Twitch",
         "hide-battle-odds-in-tavern-tooltip": "Не показывать шансы на победу, когда находитесь в таверне (вне боя)"
+    },
+    "arena": {
+        "overlay": {
+            "mulligan": {
+                "mulligan-overview-footer": "vs {{opponentClass}} | {{sampleSize}} игр"
+            }
+        }
     }
 }
