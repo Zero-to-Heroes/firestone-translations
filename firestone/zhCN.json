@@ -187,7 +187,13 @@
             "island-vacation": "胜地历险记 卡牌包",
             "island-vacation-catch-up": "胜地历险记 追赶包",
             "whizbang-catch-up": "威兹班的工坊 追赶包",
-            "space": "深暗领域 卡牌包"
+            "space": "深暗领域 卡牌包",
+            "golden-ashes-of-outland": "外域的灰烬金色包",
+            "golden-the-great-dark-beyond": "深暗领域金色包",
+            "golden-year-of-the-pegasus": "天马年金色包",
+            "the-great-dark-beyond": "深暗领域",
+            "the-great-dark-beyond-catch-up": "深暗领域追赶包",
+            "year-of-the-pegasus": "天马年"
         },
         "ranks": {
             "constructed": {
@@ -1099,7 +1105,8 @@
                     "past-three": "最近3天内",
                     "last-patch": "最新补丁",
                     "past-100": "所有时段的数据",
-                    "past-30": "最近30天内"
+                    "past-30": "最近30天内",
+                    "all-time": "全部时间"
                 },
                 "tier": {
                     "all-tiers": "不限等级",
@@ -1140,7 +1147,8 @@
                     "average-position": "平均位次",
                     "games-played": "对战场数",
                     "net-mmr": "净MMR变化",
-                    "net-mmr-tooltip": "每局比赛平均等级分变化"
+                    "net-mmr-tooltip": "每局比赛平均等级分变化",
+                    "empty-state-text": "当前筛选条件下没有数据。如果你试图获取饰品数据，请进入“设置-通用-数据”删除缓存以刷新数据。"
                 },
                 "hero-details": {
                     "tabs": {
@@ -2426,7 +2434,13 @@
                 "deck-mulligan-filter-time-tooltip": "显示{{timeFrame}} （{{patchDetails}}）以来的游戏。点击更改。"
             }
         },
-        "stolen-tooltip": "偷窃自对手"
+        "stolen-tooltip": "偷窃自对手",
+        "guessed-info": {
+            "header": "额外信息",
+            "cost": "消耗",
+            "possible-cards": "可能的卡牌"
+        },
+        "tourist": "游客：{{className}}"
     },
     "battlegrounds": {
         "menu": {
@@ -2568,7 +2582,8 @@
             "tavern-spells-cast-tooltip": "本局对战中你施放的酒馆法术数量",
             "clear-button": "清除",
             "pirates-summoned": "已召唤的海盗",
-            "pirates-summoned-tooltip": "本局对战中已召唤的海盗数量"
+            "pirates-summoned-tooltip": "本局对战中已召唤的海盗数量",
+            "remove-teammate-button": "移除队友"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -3395,7 +3410,11 @@
                     "dead-minions-this-game-tooltip": "当相关卡牌在你的手牌中时（如“矿坑老板雷斯卡”），显示本局对战中已死亡的随从数量",
                     "damage-taken-on-your-turn-tooltip": "当自残收益卡牌在你的手牌或牌库中时（如“桑拿常客”和“派对策划者沃娜”），显示在自己的回合中你的英雄受到的伤害（受伤次数及总和）",
                     "locations-used-label": "已使用地标效果",
-                    "locations-used-tooltip": "当相关卡牌在你的手牌或牌库中时，显示你已使用过地标效果的次数"
+                    "locations-used-tooltip": "当相关卡牌在你的手牌或牌库中时，显示你已使用过地标效果的次数",
+                    "dragons-played-tooltip": "显示你已使用的龙的数量",
+                    "ceaseless-expanse-label": "无界空宇",
+                    "ceaseless-expanse-tooltip": "显示本局对战中使用、抽到或摧毁的卡牌数量",
+                    "dragons-played-label": "龙（已使用的）"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -3449,7 +3468,9 @@
                 "notifications-rewards-label": "奖励",
                 "notifications-rewards-tooltip": "当您通过其他方式（如月末结算或竞技模式奖励）获得卡牌时，显示通知",
                 "show-transformed-info-tooltip": "显示变形后的卡牌（如“变形术”变出的绵羊）",
-                "show-transformed-info-label": "显示变形后的卡牌"
+                "show-transformed-info-label": "显示变形后的卡牌",
+                "remove-duplicate-in-tooltip-label": "移除提示中的重复项",
+                "remove-duplicate-in-tooltip-tooltip": "当鼠标悬停在记牌器的某些卡牌时，仅显示每张关联卡牌的一份副本（如鼠标悬停在一张与已死亡的随从关联的卡牌时）"
             },
             "history-show-only-new-cards": "只显示新卡牌",
             "pack-stats-show-only-buyable-packs": "只显示可购买的卡牌包",
@@ -4044,7 +4065,63 @@
         "lamplighter-rogue": "燃灯贼",
         "nostalgia-shaman": "念旧萨",
         "tempo-druid": "节奏德",
-        "uuu-even-death-knight": "偶数邪DK"
+        "uuu-even-death-knight": "偶数邪DK",
+        "incindius-rogue": "爆发贼",
+        "xl-orb-big-spell-mage": "40-星球大法术法",
+        "dungar-druid": "杜加尔德",
+        "ffu-buttons-dk": "冰冰邪-纽扣DK",
+        "maestra-rogue": "面具贼",
+        "orb-big-spell-mage": "星球大法术法",
+        "pipsi-paladin": "彩蹄骑",
+        "shaffar-rogue": "亲王贼",
+        "xl-bbu-control-dk": "40-血血邪-控制DK",
+        "xl-bbb-control-dk": "40-控制血DK",
+        "xl-handlock": "40-手牌术",
+        "xl-owlonius-druid": "40-法强德",
+        "xl-painlock": "40-自伤术",
+        "xl-rainbow-excavate-dk": "40-发掘彩虹DK",
+        "buttons-rainbow-dk": "彩虹DK",
+        "uu-insanity-warlock": "游客疲劳术",
+        "xl-bfu-handbuff-dk": "40-污手彩虹DK",
+        "xl-tony-druid": "40-托尼德",
+        "xl-wheel-warlock": "40-轮盘术",
+        "amalgam-rogue": "融合怪贼",
+        "evolve-shaman": "异变萨",
+        "weapon-rogue": "刀贼",
+        "xl-excavate-odyn-warror": "40-发掘奥丁战",
+        "xl-ogre-rogue": "40-食人魔贼",
+        "xl-tempo-druid": "40-节奏德",
+        "xl-mystery-egg-hunter": "40-蛋猎",
+        "xl-highlander-rogue": "40-宇宙贼",
+        "xl-justicar-warrior": "40-防战",
+        "bbb-control-dk": "控制血DK",
+        "big-shaman": "大哥萨",
+        "xl-buttons-rainbow-dk": "40-纽扣彩虹DK",
+        "xl-coin-rogue": "40-硬币贼",
+        "xl-dungar-druid": "40-杜加尔德",
+        "xl-highlander-dh": "40-宇宙瞎",
+        "location-priest": "地标牧",
+        "xl-bbu-highlander-dk": "40-血血邪-宇宙DK",
+        "buu-handbuff-dk": "污手DK",
+        "ffu-deathrattle-dk": "冰冰邪-亡语DK",
+        "frost-dk": "冰DK",
+        "uuu-aggro-dk": "快攻邪DK",
+        "xl-fatigue-demon-hunter": "40-疲劳瞎",
+        "xl-cutlass-rogue": "40-剽窃贼",
+        "xl-rainbow-shaman": "40-多系萨",
+        "justicar-warrior": "审判战",
+        "pain-priest": "自伤牧",
+        "xl-elemental-shaman": "40-元素萨",
+        "xl-excavate-paladin": "40-发掘骑",
+        "xl-f-insanity-warlock": "40-游客疲劳术",
+        "xl-ff-handlock": "40-游客手牌术",
+        "xl-handbuff-hunter": "40-污手骑",
+        "xl-maestra-rogue": "40-面具贼",
+        "xl-mech-warrior": "40-机械战",
+        "xl-orb-mage": "40-星球法",
+        "xl-pipsi-paladin": "40-彩蹄骑",
+        "xl-secret-hunter": "40-奥秘猎",
+        "xl-zilliax-warrior": "40-补水战"
     },
     "arena": {
         "overlay": {
