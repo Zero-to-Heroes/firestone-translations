@@ -187,7 +187,13 @@
             "golden-island-vacation": "ゴールデン・大ピンチ！パイレーツ・パラダイス",
             "island-vacation-catch-up": "大ピンチ！パイレーツ・パラダイス・キャッチアップ",
             "whizbang-catch-up": "ウィズバンのワクワクワークショップ・キャッチアップ",
-            "space": "暗黒宇宙ドラナイ伝"
+            "space": "暗黒宇宙ドラナイ伝",
+            "golden-ashes-of-outland": "ゴールデン・灰に舞う降魔の狩人",
+            "golden-the-great-dark-beyond": "ゴールデン・暗黒宇宙ドラナイ伝",
+            "golden-year-of-the-pegasus": "ゴールデン・ペガサス年",
+            "the-great-dark-beyond": "暗黒宇宙ドラナイ伝",
+            "the-great-dark-beyond-catch-up": "暗黒宇宙ドラナイ伝・キャッチアップ",
+            "year-of-the-pegasus": "ペガサス年"
         },
         "ranks": {
             "constructed": {
@@ -1057,7 +1063,8 @@
                 "records": "ハイスコア",
                 "simulator": "シミュレータ",
                 "leaderboard": "リーダーボード",
-                "trinkets": "装飾品"
+                "trinkets": "装飾品",
+                "your-stats": "統計"
             },
             "tribes": {
                 "beast": "獣",
@@ -1098,7 +1105,8 @@
                     "past-three": "過去3日間",
                     "last-patch": "最新パッチ",
                     "past-100": "全期間",
-                    "past-30": "過去30日間"
+                    "past-30": "過去30日間",
+                    "all-time": "全期間"
                 },
                 "tier": {
                     "all-tiers": "全てのTier",
@@ -1139,7 +1147,8 @@
                     "average-position": "平均順位",
                     "games-played": "プレイ回数",
                     "net-mmr": "Net MMR",
-                    "net-mmr-tooltip": "1試合あたりの平均獲得/喪失 MMR"
+                    "net-mmr-tooltip": "1試合あたりの平均獲得/喪失 MMR",
+                    "empty-state-text": "選択されたフィルターでは、戦績が見つかりませんでした。装飾品のデータを取得したい場合、設定>アプリ>データから、ローカルキャッシュを更新する必要があると思われます。"
                 },
                 "hero-details": {
                     "tabs": {
@@ -2425,7 +2434,13 @@
                 "deck-mulligan-filter-time-tooltip": "{{timeFrame}} 、{{patchDetails}}での試合を表示します。クリックすると変更できます。"
             }
         },
-        "stolen-tooltip": "対戦相手から盗んだ"
+        "stolen-tooltip": "対戦相手から盗んだ",
+        "guessed-info": {
+            "header": "追加情報",
+            "cost": "コスト",
+            "possible-cards": "ありうるカード"
+        },
+        "tourist": "観光客：{{className}}"
     },
     "battlegrounds": {
         "menu": {
@@ -2567,7 +2582,8 @@
             "ancestral-automaton": "「祖霊の自動人形」",
             "clear-button": "削除",
             "pirates-summoned": "召喚した海賊の数",
-            "pirates-summoned-tooltip": "この試合中にあなたが召喚した海賊の数です"
+            "pirates-summoned-tooltip": "この試合中にあなたが召喚した海賊の数です",
+            "remove-teammate-button": "チームメイトを削除"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -2645,7 +2661,7 @@
                 "unhighlight-tribe": "クリックして酒場の{{value}}の強調表示を解除します",
                 "highlight-mechanics": "クリックして酒場の全ての{{value}}を強調表示します",
                 "unhighlight-mechanics": "クリックして酒場の{{value}}の強調表示を解除します",
-                "highlight-minion": "ピン留めして酒場のこのカードを強調表示します",
+                "highlight-minion": "ピン留めして酒場のこのカードを強調表示します。右クリックでも同じことができます",
                 "unhighlight-minion": "ピン留めを外してこのカードの強調表示を解除します",
                 "minion-banned-tooltip": "このカードは現在の異常では出現しません",
                 "rules": {
@@ -3394,7 +3410,11 @@
                     "dead-minions-this-game-label": "死亡したミニオンの数",
                     "locations-used-label": "使用した場所",
                     "locations-used-tooltip": "自分が場所を使用した回数を表示します。関連するカードが手札かデッキにある場合に表示されます",
-                    "dead-minions-this-game-tooltip": "この対戦で死亡したミニオンの数を表示します。関連するカードが手札かデッキにある場合に表示されます(「鉱山長レスカ」など)"
+                    "dead-minions-this-game-tooltip": "この対戦で死亡したミニオンの数を表示します。関連するカードが手札かデッキにある場合に表示されます(「鉱山長レスカ」など)",
+                    "dragons-played-label": "ドラゴンのプレイ数",
+                    "ceaseless-expanse-label": "「無窮無辺」",
+                    "dragons-played-tooltip": "自分が使用したドラゴンの数を標示します",
+                    "ceaseless-expanse-tooltip": "この試合中にプレイ、ドロー又は破壊されたカードの合計数を標示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -3448,7 +3468,9 @@
                 "notifications-rewards-label": "報酬",
                 "notifications-rewards-tooltip": "シーズン終了時や闘技場の報酬など、パック以外からカードを入手したときに通知する",
                 "show-transformed-info-tooltip": "変身したカードを表示します(例：動物変身でヒツジになったカードなど)",
-                "show-transformed-info-label": "変身したカードを表示"
+                "show-transformed-info-label": "変身したカードを表示",
+                "remove-duplicate-in-tooltip-label": "重複するツールチップを削除する",
+                "remove-duplicate-in-tooltip-tooltip": "トラッカーで特定のカードにマウスオーバーした場合、各カードのコピーを1枚のみ表示します（例：死亡したミニオンが表示されているカードにマウスオーバーした場合）"
             },
             "history-show-only-new-cards": "新規カードのみ表示",
             "pack-stats-show-only-buyable-packs": "メインパックのみ表示",
@@ -3982,7 +4004,7 @@
         "mech-warrior": "メカウォリアー",
         "murloc-warrior": "マーロックウォリアー",
         "mystery-egg-hunter": "ミステリーエッグハンター",
-        "owlonius-druid": "アウロニクスドルイド",
+        "owlonius-druid": "アウロニウスドルイド",
         "bfu-rainbow-dk": "レインボーデスナイト",
         "bffu-rainbow-dk": "レインボーデスナイト",
         "bfuu-rainbow-dk": "レインボーデスナイト",
@@ -4043,7 +4065,63 @@
         "jive-shaman": "虫ケラシャーマン",
         "menagerie-warrior": "動物園ウォリアー",
         "pain-demon-hunter": "自傷デーモンハンター",
-        "pain-rogue": "自傷ローグ"
+        "pain-rogue": "自傷ローグ",
+        "incindius-rogue": "インシンディウスローグ",
+        "orb-big-spell-mage": "オーブビッグスペルメイジ",
+        "xl-handlock": "XLハンドロック",
+        "xl-orb-big-spell-mage": "XLオーブビッグスペルメイジ",
+        "xl-owlonius-druid": "XLアウロニウスドルイド",
+        "ffu-buttons-dk": "青青緑ボタンズデスナイト",
+        "maestra-rogue": "マエストラローグ",
+        "shaffar-rogue": "シャファルローグ",
+        "xl-rainbow-excavate-dk": "XLレインボー発掘デスナイト",
+        "dungar-druid": "ドラゴンドルイド",
+        "pipsi-paladin": "ピプシパラディン",
+        "xl-bbb-control-dk": "XK赤コントロールデスナイト",
+        "xl-painlock": "XL自傷ウォーロック",
+        "uu-insanity-warlock": "UU狂気ウォーロック",
+        "xl-bbu-control-dk": "XL赤赤緑コントロールデスナイト",
+        "xl-tony-druid": "XLトニードルイド",
+        "xl-wheel-warlock": "XL大車輪ウォーロック",
+        "amalgam-rogue": "融合体ローグ",
+        "buttons-rainbow-dk": "ボタンズレインボーデスナイト",
+        "evolve-shaman": "進化シャーマン",
+        "weapon-rogue": "武器ローグ",
+        "xl-ogre-rogue": "XLオーガローグ",
+        "xl-bfu-handbuff-dk": "XLレインボーハンドバフデスナイト",
+        "xl-excavate-odyn-warror": "XL発掘オーディンウォリアー",
+        "xl-highlander-rogue": "Xlハイランダーローグ",
+        "xl-mystery-egg-hunter": "XLミステリーエッグハンター",
+        "xl-tempo-druid": "XLテンポドルイド",
+        "big-shaman": "ビッグシャーマン",
+        "bbb-control-dk": "赤コントロールデスナイト",
+        "location-priest": "場所プリースト",
+        "xl-buttons-rainbow-dk": "XLボタンズレインボーデスナイト",
+        "xl-coin-rogue": "XLコインローグ",
+        "xl-dungar-druid": "XLダンガードルイド",
+        "xl-highlander-dh": "XLハイランダーデーモンハンター",
+        "xl-justicar-warrior": "XLジャスティサーウォリアー",
+        "buu-handbuff-dk": "赤緑緑ハンドバフデスナイト",
+        "ffu-deathrattle-dk": "青青緑断末魔デスナイト",
+        "frost-dk": "青デスナイト",
+        "justicar-warrior": "ジャスティサーウォリアー",
+        "uuu-aggro-dk": "緑アグロデスナイト",
+        "xl-bbu-highlander-dk": "XL赤赤緑ハイランダーデスナイト",
+        "xl-cutlass-rogue": "XLカトラスローグ",
+        "xl-fatigue-demon-hunter": "XL疲労デーモンハンター",
+        "xl-rainbow-shaman": "XLレインボーシャーマン",
+        "xl-elemental-shaman": "XLエレメンタルシャーマン",
+        "xl-excavate-paladin": "XL発掘パラディン",
+        "xl-handbuff-hunter": "XLハンドバフハンター",
+        "xl-maestra-rogue": "XLマエストラローグ",
+        "xl-mech-warrior": "XLメカウォリアー",
+        "xl-orb-mage": "XLオーブメイジ",
+        "xl-pipsi-paladin": "XLピプシパラディン",
+        "xl-secret-hunter": "XL秘策ハンター",
+        "pain-priest": "自傷プリースト",
+        "xl-f-insanity-warlock": "XLF狂気ウォーロック",
+        "xl-ff-handlock": "XL FF ハンドロック",
+        "xl-zilliax-warrior": "XLジリアックスウォリアー"
     },
     "arena": {
         "overlay": {
