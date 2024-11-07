@@ -2166,6 +2166,17 @@
         },
         "bgs-tuskarr-raider": {
             "player": "Vous avez joué {{value}} Pirates pendant cette partie"
+        },
+        "ceaseless": {
+            "player": "{{value}} cartes ont été piochées, jouées ou détruites pendant cette partie"
+        },
+        "discovers": {
+            "player": "Vous avez découvert {{value}} cartes",
+            "opponent": "Votre adversaire a découvert {{value}} cartes"
+        },
+        "libram-reduction": {
+            "player": "Vos librams coûtent ({{value}}) cristaux de moins",
+            "opponent": "Les librams de votre adversaire coûtent ({{value}}) cristaux de moins"
         }
     },
     "loading": {
@@ -2493,7 +2504,7 @@
             "versus": "VS",
             "simulate-button": "Simuler",
             "simulating-button": "Simulation en cours...",
-            "simulate-button-tooltip": "Simuler le combat avec les nouvelles compositions",
+            "simulate-button-tooltip": "Simuler le combat avec les nouvelles troupes de guerre",
             "reset-button": "Réinitialiser",
             "export-button": "Copier",
             "export-button-tooltip": "Copiez le code de simulation pour le partager et le réimporter dans le simulateur (il est assez gros pour le moment et ne tient pas dans un tweet)",
@@ -2679,15 +2690,19 @@
                     "hero": "Banni en jouant {{heroName}}"
                 },
                 "navigation": {
-                    "compositions": "Comps",
-                    "compositions-tooltip": "Compositions",
+                    "compositions": "Troupes",
+                    "compositions-tooltip": "Troupes de guerre",
                     "mechanics": "Pouvoirs",
                     "tiers": "Niveaux",
                     "tribes": "Types",
                     "tiers-tribes": "Serviteurs"
                 },
                 "spells-tier-tooltip": "Sorts",
-                "tribe-category-tooltip": "Voir toutes les cartes {{tribeName}}. Faites un clic droit pour mettre en valeur toutes les cartes {{tribeName}} dans la taverne."
+                "tribe-category-tooltip": "Voir toutes les cartes {{tribeName}}. Faites un clic droit pour mettre en valeur toutes les cartes {{tribeName}} dans la taverne.",
+                "compositions": {
+                    "core-cards-header": "Cartes principales",
+                    "header": "Troupes de guerre"
+                }
             },
             "quests": {
                 "turn-to-complete-tooltip": "Nombre moyen de tours pour terminer cette quête avec ce héros ou cette héroïne, cette difficulté de quête (plus elle est faible, mieux c’est), et à cote similaire à la vôtre. En moyenne, il faut {{averageTurnsToComplete}} tours pour compléter la quête, {{turnsToCompleteForHero}} tours avec ce héros ou cette héroïne, et le modificateur de difficulté est de {{turnsToCompleteImpact}}.",
@@ -3297,7 +3312,9 @@
                     "wheel-of-death-tooltip": "Une fois que votre adversaire a joué {{cardName}}, affiche le nombre de tours avant que votre héros ou héroïne soit détruit",
                     "dragons-summoned-tooltip": "Affiche le nombre de Dragons que votre adversaire a invoqués. Apparaît uniquement quand l’adversaire est un prêtre et a joué un Dragon",
                     "elemental-streak-tooltip": "Compte le nombre de tours consécutifs où votre adversaire a joué un Élémentaire. N’apparaît que s’il ou elle a joué au moins 2 Élémentaires à la suite.",
-                    "dead-minions-this-game-tooltip": "Affiche le nombre de serviteurs morts pendant cette partie si votre adversaire est un chevalier de la mort ou s’il a une carte pertinente dans sa main ou dans son deck (par exemple, Reska, responsable de la fosse)."
+                    "dead-minions-this-game-tooltip": "Affiche le nombre de serviteurs morts pendant cette partie si votre adversaire est un chevalier de la mort ou s’il a une carte pertinente dans sa main ou dans son deck (par exemple, Reska, responsable de la fosse).",
+                    "libram-reduction-tooltip": "Afficher de combien est réduit le coût des librams de votre adversaire",
+                    "discovers-tooltip": "Compte le nombre de cartes que votre adversaire a découvertes"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -3414,7 +3431,11 @@
                     "dragons-played-label": "Dragons joués",
                     "ceaseless-expanse-tooltip": "Afficher le nombre de fois qu’une carte a été jouée, piochée ou détruite pendant la partie",
                     "dragons-played-tooltip": "Afficher le nombre de Dragons que vous avez joués",
-                    "ceaseless-expanse-label": "L’Étendue infinie"
+                    "ceaseless-expanse-label": "L’Étendue infinie",
+                    "discovers-tooltip": "Compte le nombre de cartes que vous avez découvertes",
+                    "discovers-label": "Découvertes",
+                    "libram-reduction-label": "Réduction des librams",
+                    "libram-reduction-tooltip": "Afficher de combien est réduit le coût de vos librams"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -4121,7 +4142,77 @@
         "xl-orb-mage": "Mage orbe XL",
         "xl-pipsi-paladin": "Paladin Pipsi XL",
         "xl-zilliax-warrior": "Guerrier Zilliax XL",
-        "pain-priest": "Prêtre douleur"
+        "pain-priest": "Prêtre douleur",
+        "42-priest": "Prêtre 42",
+        "among-us-dh": "Chasseur de démons Among Us",
+        "buu-starship-dk": "DK SII Vaisseau",
+        "bonk-shaman": "Chaman Bonk",
+        "control-warrior": "Guerrier contrôle",
+        "ffu-excavate-dk": "DK GGI Déterrer",
+        "ff-wheel-warlock": "Démoniste givre roulette",
+        "libram-paladin": "Paladin librams",
+        "starship-warlock": "Démoniste Vaisseau",
+        "xl-elemental-mage": "Mage Élémentaires XL",
+        "xl-bfu-deathrattle-warlock": "Démoniste arc-en-ciel Râle d’agonie XL",
+        "anchorite-priest": "Prêtre anchorite",
+        "arkwing-mage": "Mage Escardrache",
+        "asteroid-shaman": "Chaman astéroïdes",
+        "attack-dh": "Chasseur de démons ATQ",
+        "bbu-deathrattle-dk": "DK SSI Râle d’agonie",
+        "bbu-highlander-dk": "DK SSI singleton",
+        "bbu-starship-dk": "DK SSI Vaisseau",
+        "bff-buttons-dk": "DK SGG Boutons",
+        "buu-deathrattle-dk": "DK SII Râle d’agonie",
+        "beast-demon-hunter": "Chasseur de démons Bêtes",
+        "combo-rogue": "Voleur combo",
+        "cute-demon-hunter": "Chasseur de démons mignon",
+        "discover-hunter": "Chasseur découverte",
+        "draenei-mage": "Mage Draeneï",
+        "draenei-priest": "Prêtre Draeneï",
+        "ffu-death-knight": "Chevalier de la mort GGI",
+        "ffu-starship-dk": "DK GGI Vaisseau",
+        "fu-excavate-dk": "DK GI Déterrer",
+        "fuu-death-knight": "Chevalier de la mort GII",
+        "fuu-deathrattle-dk": "DK GII Râle d’agonie",
+        "fuu-mech-dk": "DK GII Méca",
+        "fff-buttons-dk": "DK givre Boutons",
+        "giants-priest": "Prêtre géants",
+        "giants-rogue": "Voleur géants",
+        "kiljaeden-dh": "DH Kil’jaeden",
+        "quasar-rogue": "Voleur Quasar",
+        "starship-demon-hunter": "DH Vaisseau",
+        "starship-druid": "Druide Vaisseau",
+        "starship-hunter": "Chasseur Vaisseau",
+        "starship-rogue": "Voleur Vaisseau",
+        "tentacle-demon-hunter": "DH tentacules",
+        "undead-priest": "Prêtre Morts-vivants",
+        "xl-big-spell-mage": "Mage gros sorts XL",
+        "xl-handbuff-paladin": "Paladin handbuff XL",
+        "xl-menagerie-druid": "Druide ménagerie XL",
+        "xl-rogue": "Voleur XL",
+        "xl-rainbow-dk": "DK arc-en-ciel XL",
+        "demon-warlock": "Démoniste Démons",
+        "draenei-warrior": "Guerrier Draeneï",
+        "dungar-shaman": "Chaman Dungar",
+        "fuu-deathrattle-warlock": "Démoniste GII Râle d’agonie",
+        "ff-insanity-warlock": "Démoniste givre Démence envahissante",
+        "giants-warrior": "Guerrier géants",
+        "hydration-warrior": "Guerrier hydratation",
+        "kiljaeden-warlock": "Démoniste Kil’jaeden",
+        "mech-shaman": "Chaman Méca",
+        "mech-warlock": "Démoniste Méca",
+        "nebula-shaman": "Chaman nébuleuse",
+        "overload-shaman": "Chaman Surcharge",
+        "quest-warlock": "Démoniste Quête",
+        "starship-warrior": "Guerrier Vaisseau",
+        "tentacle-warlock": "Démoniste tentacules",
+        "xl-bf-painlock": "Démoniste SG douleur XL",
+        "xl-excavate-odyn-warrior": "Guerrier Odyn Déterrer XL",
+        "xl-insanity-warlock": "Démoniste démence XL",
+        "xl-jive-shaman": "Chaman jive XL",
+        "xl-shaman": "Chaman XL",
+        "xl-uu-insanity-warlock": "Démoniste démence Morts-vivants XL",
+        "xl-uu-snek-warlock": "Démoniste Déterrer Morts-vivants XL"
     },
     "arena": {
         "overlay": {
