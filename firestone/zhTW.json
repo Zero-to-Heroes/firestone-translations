@@ -2096,6 +2096,17 @@
         },
         "bgs-tuskarr-raider": {
             "player": "您在本賽局已打出 {{value}} 張海盜"
+        },
+        "ceaseless": {
+            "player": "你和你的對手已經抽出、打出或摧毀了 {{value}} 張卡牌"
+        },
+        "discovers": {
+            "player": "您已經發現了 {{value}} 次卡牌",
+            "opponent": "對手已經發現了 {{value}} 次卡牌"
+        },
+        "libram-reduction": {
+            "player": "您的聖契降低 {{value}} 法力值花費",
+            "opponent": "對手的聖契降低 {{value}} 法力值花費"
         }
     },
     "loading": {
@@ -2617,7 +2628,16 @@
                     "tiers-tribes": "手下"
                 },
                 "spells-tier-tooltip": "法術",
-                "tribe-category-tooltip": "檢視全部 {{tribeName}} 卡牌。右鍵單擊以突出顯示旅店中的所有 {{tribeName}} 卡牌。"
+                "tribe-category-tooltip": "檢視全部 {{tribeName}} 卡牌。右鍵單擊以突出顯示旅店中的所有 {{tribeName}} 卡牌。",
+                "compositions": {
+                    "header": "陣容組成",
+                    "core-cards-header": "核心卡牌",
+                    "add-ons-header": "擴充套件",
+                    "filters": {
+                        "browsing": "瀏覽",
+                        "exploring": "探索"
+                    }
+                }
             },
             "quests": {
                 "turn-to-complete-tooltip": "在你目前的MMR範圍內完成該英雄的任務的平均輪數和任務難度（越低越好）。任務完成的平均回合為 {{averageTurnsToComplete}}，英雄的平均回合為 {{turnsToCompleteForHero}}，難度修正為 {{turnsToCompleteImpact}}。",
@@ -2962,7 +2982,7 @@
                 "clear-button-label": "清除",
                 "games-period": "載入您的賽局",
                 "games-title": "賽局",
-                "other-title": "其他",
+                "other-title": "其它",
                 "packs-tooltip": "重新整理你的卡牌包。此操作每 7 天自動完成一次。",
                 "games-tooltip": "重新整理你的遊戲。它將檢索自您開始使用該應用程式以來的全部賽局，這可能需要一段時間",
                 "total-games": "該應用程式總共檢索了 {{value}} 場賽局",
@@ -3220,7 +3240,9 @@
                     "wheel-of-death-tooltip": "在你的對手打出「{{cardName}}」後，顯示你死亡前的回合數",
                     "dragons-summoned-tooltip": "顯示對手已召喚龍類的數量。只有當對手是牧師且打出過龍類時才會出現",
                     "elemental-streak-tooltip": "計算對手連續打出元素的回合數。只有當他們連續兩回合打出過元素時才會出現。",
-                    "dead-minions-this-game-tooltip": "當你的對手是死亡騎士或他們手上或牌組中有相關卡牌（例如「礦坑老大雷斯卡」）時，顯示本場比賽死亡的手下數量"
+                    "dead-minions-this-game-tooltip": "當你的對手是死亡騎士或他們手上或牌組中有相關卡牌（例如「礦坑老大雷斯卡」）時，顯示本場比賽死亡的手下數量",
+                    "discovers-tooltip": "計算對手「發現」卡牌的次數",
+                    "libram-reduction-tooltip": "顯示對手的聖契已降低的法力值花費"
                 },
                 "size-title": "尺寸與透明度",
                 "opacity-title": "透明度",
@@ -3341,7 +3363,11 @@
                     "dragons-played-label": "龍類（已打出）",
                     "ceaseless-expanse-tooltip": "顯示該遊戲中打出、抽出或摧毀一張卡牌的次數",
                     "dragons-played-tooltip": "顯示您打出過龍類的次數",
-                    "ceaseless-expanse-label": "無垠邊際"
+                    "ceaseless-expanse-label": "無垠邊際",
+                    "discovers-label": "發現",
+                    "discovers-tooltip": "計算您「發現」卡牌的次數",
+                    "libram-reduction-label": "聖契（已減少）",
+                    "libram-reduction-tooltip": "顯示您的聖契已降低的法力值花費"
                 },
                 "discovery-zone-label": "發現區",
                 "discovery-zone-tooltip": "啟動後，計牌器中會出現一個新部分，其中包含賽局為您提供的「發現」選項。這可以讓您看到相關卡牌並突出顯示與牌組的協同作用。"
@@ -4046,7 +4072,77 @@
         "uu-insanity-warlock": "UU瘋狂自殘術士",
         "uuu-aggro-dk": "穢邪仇恨DK",
         "xl-orb-mage": "40牌 銀河投影球法師",
-        "xl-bfu-handbuff-dk": "40牌 彩虹手牌加加DK"
+        "xl-bfu-handbuff-dk": "40牌 彩虹手牌加加DK",
+        "quasar-rogue": "類星體盜賊",
+        "bbu-deathrattle-dk": "BBU 死亡之聲DK",
+        "bbu-highlander-dk": "BBU 無雙DK",
+        "bbu-starship-dk": "BBU 星艦DK",
+        "bff-buttons-dk": "BFF 扣仔DK",
+        "combo-rogue": "連擊盜賊",
+        "buu-starship-dk": "BUU 星艦DK",
+        "ffu-death-knight": "FFU 死亡騎士",
+        "ffu-starship-dk": "FFU 星艦DK",
+        "fu-excavate-dk": "FU 挖寶DK",
+        "fuu-death-knight": "FUU 死亡騎士",
+        "fff-buttons-dk": "冰霜扣仔DK",
+        "attack-dh": "瘋狗惡魔獵人",
+        "fuu-deathrattle-dk": "FUU 死亡之聲DK",
+        "fuu-mech-dk": "FUU 機械DK",
+        "xl-rainbow-dk": "40牌 彩虹DK",
+        "beast-demon-hunter": "野獸惡魔獵人",
+        "cute-demon-hunter": "食肉立方怪惡魔獵人",
+        "kiljaeden-dh": "基爾加丹惡魔獵人",
+        "starship-demon-hunter": "星艦惡魔獵人",
+        "discover-hunter": "發現獵人",
+        "starship-druid": "星艦德魯伊",
+        "tentacle-demon-hunter": "觸手惡魔獵人",
+        "xl-menagerie-druid": "40牌 動物園德魯伊",
+        "arkwing-mage": "亞克戰機飛行員法師",
+        "draenei-mage": "德萊尼法師",
+        "libram-paladin": "聖契聖騎士",
+        "starship-hunter": "星艦獵人",
+        "xl-big-spell-mage": "40牌 大法術法師",
+        "xl-elemental-mage": "40牌 元素法師",
+        "xl-handbuff-paladin": "40牌 手牌加加聖騎士",
+        "42-priest": "42牧師",
+        "anchorite-priest": "隱士牧師",
+        "draenei-priest": "德萊尼牧師",
+        "giants-priest": "巨巨牧師",
+        "giants-rogue": "巨巨盜賊",
+        "undead-priest": "不死族牧師",
+        "dungar-shaman": "旅行管理員杜加爾薩滿",
+        "mech-shaman": "機械薩滿",
+        "nebula-shaman": "星雲薩滿",
+        "overload-shaman": "超載薩滿",
+        "xl-jive-shaman": "40牌 拉格納羅斯薩滿",
+        "xl-rogue": "40牌 其它盜賊",
+        "xl-shaman": "40牌 其它薩滿",
+        "demon-warlock": "惡魔術士",
+        "fuu-deathrattle-warlock": "FUU 死亡之聲術士",
+        "ff-insanity-warlock": "冰霜瘋狂自殘術士",
+        "ff-wheel-warlock": "冰霜輪盤術士",
+        "kiljaeden-warlock": "基爾加丹術士",
+        "mech-warlock": "機械術士",
+        "quest-warlock": "任務術士",
+        "starship-warlock": "星艦術士",
+        "tentacle-warlock": "觸手術士",
+        "xl-bf-painlock": "40牌 BF痛苦術士",
+        "control-warrior": "控制戰士",
+        "draenei-warrior": "德萊尼戰士",
+        "xl-insanity-warlock": "40牌 瘋狂自殘術士",
+        "xl-bfu-deathrattle-warlock": "40牌 彩虹死亡之聲術士",
+        "xl-uu-insanity-warlock": "40牌 不死族瘋狂自殘術士",
+        "xl-uu-snek-warlock": "40牌 不死族蛇蛇術士",
+        "giants-warrior": "巨巨戰士",
+        "hydration-warrior": "補水站戰士",
+        "starship-warrior": "星艦戰士",
+        "xl-excavate-odyn-warrior": "40牌 挖寶歐丁戰士",
+        "among-us-dh": "星艦惡魔獵人",
+        "asteroid-shaman": "爆破隕星薩滿",
+        "buu-deathrattle-dk": "BUU 死亡之聲DK",
+        "bonk-shaman": "幼龍棒槌手薩滿",
+        "ffu-excavate-dk": "FFU 挖寶DK",
+        "starship-rogue": "星艦盜賊"
     },
     "arena": {
         "overlay": {
