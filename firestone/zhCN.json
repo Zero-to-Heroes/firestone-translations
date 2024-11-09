@@ -2166,6 +2166,17 @@
         },
         "bgs-tuskarr-raider": {
             "player": "本局对战中你已使用{{value}}张海盗牌"
+        },
+        "ceaseless": {
+            "player": "你和你的对手已经抽到，使用或摧毁了{{value}}张卡牌"
+        },
+        "discovers": {
+            "opponent": "对手已经发现了{{value}}次卡牌",
+            "player": "您已经发现了{{value}}次卡牌"
+        },
+        "libram-reduction": {
+            "opponent": "对手的圣契法力值消耗降低了{{value}}点",
+            "player": "你的圣契法力值消耗降低了{{value}}点"
         }
     },
     "loading": {
@@ -2687,7 +2698,16 @@
                     "tiers-tribes": "随从"
                 },
                 "spells-tier-tooltip": "法术",
-                "tribe-category-tooltip": "查看全部{{tribeName}}类型的卡牌。右键点击在酒馆中高亮显示全部{{tribeName}}卡牌。"
+                "tribe-category-tooltip": "查看全部{{tribeName}}类型的卡牌。右键点击在酒馆中高亮显示全部{{tribeName}}卡牌。",
+                "compositions": {
+                    "add-ons-header": "插件",
+                    "core-cards-header": "核心卡",
+                    "header": "阵容构成",
+                    "filters": {
+                        "browsing": "浏览",
+                        "exploring": "探索"
+                    }
+                }
             },
             "quests": {
                 "turn-to-complete-tooltip": "当前分段的任务难度（数值越低越容易）：完成此任务平均需要{{averageTurnsToComplete}}回合，此英雄平均需要{{turnsToCompleteForHero}}回合，难度调整为{{turnsToCompleteImpact}}",
@@ -3297,7 +3317,9 @@
                     "wheel-of-death-tooltip": "在对手使用{{cardName}}后，显示你死亡前的剩余回合数",
                     "dragons-summoned-tooltip": "显示你的对手已召唤的龙数量。仅在对手为牧师且已使用过龙牌时显示",
                     "elemental-streak-tooltip": "计算你的对手连续使用元素牌的回合数。仅当其已至少连续两回合使用元素牌时显示。",
-                    "dead-minions-this-game-tooltip": "当你的对手是死亡骑士或者他们手牌或卡组中有相关卡牌时（如“矿坑老板雷斯卡”），显示本局对战中已死亡的随从数量"
+                    "dead-minions-this-game-tooltip": "当你的对手是死亡骑士或者他们手牌或卡组中有相关卡牌时（如“矿坑老板雷斯卡”），显示本局对战中已死亡的随从数量",
+                    "discovers-tooltip": "计算对手发现卡牌的次数",
+                    "libram-reduction-tooltip": "显示对手圣契法力值消耗的总减少量"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3414,7 +3436,11 @@
                     "dragons-played-tooltip": "显示你已使用的龙的数量",
                     "ceaseless-expanse-label": "无界空宇",
                     "ceaseless-expanse-tooltip": "显示本局对战中使用、抽到或摧毁的卡牌数量",
-                    "dragons-played-label": "龙（已使用的）"
+                    "dragons-played-label": "龙（已使用的）",
+                    "discovers-label": "发现",
+                    "discovers-tooltip": "计算你发现卡牌的次数",
+                    "libram-reduction-label": "圣契减费",
+                    "libram-reduction-tooltip": "显示你的圣契法力值消耗的总减少量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
