@@ -2166,6 +2166,17 @@
         },
         "bgs-tuskarr-raider": {
             "player": "この対戦中、{{value}}体の海賊を使用した"
+        },
+        "ceaseless": {
+            "player": "自分と対戦相手は、合計{{value}} 枚のカードを引き、使用、破壊した"
+        },
+        "discovers": {
+            "player": "{{value}}枚のカードを発見した",
+            "opponent": "対戦相手は{{value}}枚のカードを発見した"
+        },
+        "libram-reduction": {
+            "player": "自分の聖典のコストは{{value}}減る",
+            "opponent": "対戦相手の聖典のコストは{{value}}減る"
         }
     },
     "loading": {
@@ -2687,7 +2698,16 @@
                     "tiers-tribes": "ミニオン"
                 },
                 "spells-tier-tooltip": "酒場の呪文",
-                "tribe-category-tooltip": "{{tribeName}}"
+                "tribe-category-tooltip": "{{tribeName}}",
+                "compositions": {
+                    "filters": {
+                        "browsing": "閲覧",
+                        "exploring": "探す"
+                    },
+                    "header": "構成",
+                    "core-cards-header": "コアカード",
+                    "add-ons-header": "サブカード"
+                }
             },
             "quests": {
                 "turn-to-complete-tooltip": "あなたのMMR帯において、このヒーローとそのクエスト難易度で、このクエストを達成するための平均ターン数です(低いほど優れています)。このクエストの平均達成ターンは {{averageTurnsToComplete}}ターン、このヒーローの平均達成ターンは{{turnsToCompleteForHero}} ターン、難易度調整は{{turnsToCompleteImpact}}ターンです。",
@@ -3297,7 +3317,9 @@
                     "wheel-of-death-tooltip": "対戦相手が「{{cardName}}」を使用した後、自分が死ぬまでのターン数を表示します",
                     "dragons-summoned-tooltip": "対戦相手が召喚したドラゴンの数を表示します。対戦相手がプリーストで、ドラゴンを使用したときだけ表示されます",
                     "elemental-streak-tooltip": "対戦相手が何ターン連続でエレメンタルを使用しているかを表示します。少なくとも2ターン連続で使用したときのみ表示されます",
-                    "dead-minions-this-game-tooltip": "この試合中に死亡したミニオンの数を表示します。対戦相手がデスナイトのとき、又は関連するカード(「鉱山長レスカ」など)が手札か山札にあるときに表示されます。"
+                    "dead-minions-this-game-tooltip": "この試合中に死亡したミニオンの数を表示します。対戦相手がデスナイトのとき、又は関連するカード(「鉱山長レスカ」など)が手札か山札にあるときに表示されます。",
+                    "discovers-tooltip": "対戦相手が発見した回数を表示します",
+                    "libram-reduction-tooltip": "対戦相手の聖典のコスト軽減量を表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3414,7 +3436,11 @@
                     "dragons-played-label": "ドラゴンのプレイ数",
                     "ceaseless-expanse-label": "「無窮無辺」",
                     "dragons-played-tooltip": "自分が使用したドラゴンの数を標示します",
-                    "ceaseless-expanse-tooltip": "この試合中にプレイ、ドロー又は破壊されたカードの合計数を標示します"
+                    "ceaseless-expanse-tooltip": "この試合中にプレイ、ドロー又は破壊されたカードの合計数を標示します",
+                    "discovers-label": "発見",
+                    "libram-reduction-label": "聖典の軽減",
+                    "discovers-tooltip": "自分が発見した回数を表示します",
+                    "libram-reduction-tooltip": "自分の聖典のコスト軽減量を表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -4121,7 +4147,77 @@
         "pain-priest": "自傷プリースト",
         "xl-f-insanity-warlock": "XLF狂気ウォーロック",
         "xl-ff-handlock": "XL FF ハンドロック",
-        "xl-zilliax-warrior": "XLジリアックスウォリアー"
+        "xl-zilliax-warrior": "XLジリアックスウォリアー",
+        "asteroid-shaman": "アステロイドシャーマン",
+        "combo-rogue": "コンボローグ",
+        "quasar-rogue": "クエーサーローグ",
+        "bbu-highlander-dk": "赤赤緑ハイランダーデスナイト",
+        "bbu-deathrattle-dk": "赤赤緑断末魔デスナイト",
+        "bbu-starship-dk": "赤赤緑宇宙船デスナイト",
+        "bff-buttons-dk": "赤青青ボタンズデスナイト",
+        "buu-deathrattle-dk": "赤緑緑断末魔デスナイト",
+        "buu-starship-dk": "赤緑緑宇宙船デスナイト",
+        "ffu-death-knight": "青青緑デスナイト",
+        "fff-buttons-dk": "青ボタンズデスナイト",
+        "ffu-excavate-dk": "青青緑発掘デスナイト",
+        "ffu-starship-dk": "青青緑宇宙船デスナイト",
+        "fu-excavate-dk": "青緑発掘デスナイト",
+        "fuu-death-knight": "青緑緑デスナイト",
+        "fuu-deathrattle-dk": "青緑緑断末魔デスナイト",
+        "fuu-mech-dk": "青緑緑メカデスナイト",
+        "among-us-dh": "Among Usデーモンハンター",
+        "attack-dh": "アタックデーモンハンター",
+        "beast-demon-hunter": "獣デーモンハンター",
+        "xl-rainbow-dk": "XLレインボーデスナイト",
+        "cute-demon-hunter": "キュートデーモンハンター",
+        "kiljaeden-dh": "キルジェイデンデーモンハンター",
+        "starship-demon-hunter": "宇宙船デーモンハンター",
+        "starship-druid": "宇宙船ドルイド",
+        "tentacle-demon-hunter": "触手デーモンハンター",
+        "xl-menagerie-druid": "XL動物園ドルイド",
+        "arkwing-mage": "アークウィングメイジ",
+        "discover-hunter": "発見ハンター",
+        "starship-hunter": "宇宙船ハンター",
+        "42-priest": "42プリースト",
+        "anchorite-priest": "隠遁者プリースト",
+        "draenei-mage": "ドラナイメイジ",
+        "libram-paladin": "聖典パラディン",
+        "xl-big-spell-mage": "XLビッグスペルメイジ",
+        "xl-elemental-mage": "XLエレメンタルメイジ",
+        "xl-handbuff-paladin": "XLハンドバフパラディン",
+        "draenei-priest": "ドラナイプリースト",
+        "dungar-shaman": "ダンガーシャーマン",
+        "giants-priest": "巨人プリースト",
+        "giants-rogue": "巨人ローグ",
+        "starship-rogue": "宇宙船ローグ",
+        "xl-rogue": "XLその他ローグ",
+        "undead-priest": "アンデッドプリースト",
+        "demon-warlock": "悪魔ウォーロック",
+        "fuu-deathrattle-warlock": "青緑緑断末魔ウォーロック",
+        "ff-insanity-warlock": "凍気狂気ウォーロック",
+        "ff-wheel-warlock": "凍気大車輪ウォーロック",
+        "mech-shaman": "メカシャーマン",
+        "nebula-shaman": "星雲シャーマン",
+        "overload-shaman": "オーバーロードシャーマン",
+        "xl-jive-shaman": "XL虫ケラシャーマン",
+        "xl-shaman": "XLその他シャーマン",
+        "kiljaeden-warlock": "キルジェイデンウォーロック",
+        "quest-warlock": "クエストウォーロック",
+        "starship-warlock": "宇宙船ウォーロック",
+        "tentacle-warlock": "触手ウォーロック",
+        "xl-bf-painlock": "XL BF自傷ウォーロック",
+        "xl-insanity-warlock": "XL狂気ウォーロック",
+        "control-warrior": "コントロールウォリアー",
+        "draenei-warrior": "ドラナイウォリアー",
+        "giants-warrior": "巨人ウォリアー",
+        "hydration-warrior": "給水ステーションウォリアー",
+        "starship-warrior": "宇宙船ウォリアー",
+        "xl-uu-insanity-warlock": "XLアンデッド狂気ウォーロック",
+        "xl-uu-snek-warlock": "XLアンデッドアゼライトのヘビウォーロック",
+        "xl-excavate-odyn-warrior": "XL発掘オーディンウォリアー",
+        "bonk-shaman": "Bonkシャーマン",
+        "mech-warlock": "メカウォーロック",
+        "xl-bfu-deathrattle-warlock": "XLレインボー断末魔ウォーロック"
     },
     "arena": {
         "overlay": {
