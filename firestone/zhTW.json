@@ -1027,7 +1027,7 @@
                     "archetype-type": "牌組型態",
                     "deck-type": "牌組列表"
                 },
-                "cost-header": "花費",
+                "cost-header": "消耗",
                 "archetype-header": "牌組型態",
                 "card-stats-header": "卡牌統計",
                 "cards-header": "卡牌",
@@ -1326,7 +1326,7 @@
                         "4-on-4": "犧牲早期生命值來快速獲得 3等級 手下。 可以作為如果在第3回合3等級旅店商店差勁的後備選項；需要理財",
                         "jeef": "使用 1等級 理財手下和強大的對子靈活地開始賽局及變化。",
                         "fast-jeef": "使用 1等級 理財手下和強大的對子靈活地開始賽局及變化。快速提升等級。",
-                        "basic-yogg": "使用花費 2金幣 能力的英雄來更快升級到 3 等級",
+                        "basic-yogg": "使用消耗 2金幣 能力的英雄來更快升級到 3 等級",
                         "aggro-yogg": "使用 2金幣 的英雄能力，在更快升級到 3等級 之前獲取不錯的 1等級 手下到戰場上",
                         "slow-jeef": "使用 1等級 理財和強大的手下對子來開局及靈活地變化。留在 2等級旅館 以鞏固戰場。"
                     },
@@ -1779,7 +1779,7 @@
                     "piratesPlayed-label": "海盜（已打出）",
                     "dragonsPlayed-tooltip": "打出龍類，每打出一次龍類即可獲得 {{pointsGained}} 點數",
                     "spellsPlayed-label": "施放法術",
-                    "totalResourcesUsed-tooltip": "花費資源（「爐石戰記」中的法力水晶，「英雄戰場」中的金幣），每次花費資源即可賺取 {{pointsGained}} 點數",
+                    "totalResourcesUsed-tooltip": "消耗資源（「爐石戰記」中的法力水晶，「英雄戰場」中的金幣），每次消耗資源即可賺取 {{pointsGained}} 點數",
                     "totalResourcesUsed-label": "使用資源",
                     "undeadPlayed-label": "打出不死族"
                 },
@@ -1885,7 +1885,7 @@
         "mulligan": "起手換牌",
         "current-turn": "第 {{value}} 回合",
         "player-current-turn-tooltip": "您目前的回合已經進行了多長時間。 預設一回合為 75 秒，但由於動畫的原因可以延長。",
-        "player-total-turn-tooltip": "本賽局總花費時間"
+        "player-total-turn-tooltip": "本賽局總消耗時間"
     },
     "counters": {
         "attack": {
@@ -1935,8 +1935,8 @@
             "opponent": "{{value}} 是您對手打出的最後一張暗影法術"
         },
         "grey-sage-parrot": {
-            "player": "您最後打出的法術是 {{value}}，花費了 {{cost}} 或更多",
-            "opponent": "您的對手最後打出的法術是 {{value}}，花費了 {{cost}} 或更多"
+            "player": "您最後打出消耗為 {{cost}} 或更多的法術是 {{value}}",
+            "opponent": "您的對手最後打出的法術是 {{value}}，消耗了 {{cost}} 或更多"
         },
         "cthun": {
             "player": "您的克蘇恩體質是 {{atk}}/{{health}}",
@@ -2008,7 +2008,7 @@
             "player": "『透支』会造成 {{value}} 损害"
         },
         "naga-giant": {
-            "player": "你的納迦巨人花費 {{cost}} 點法力水晶（你於本賽局中施放了 {{spells}} 張法術，價值 {{spellsMana}} 法力值）"
+            "player": "你的納迦巨人消耗 {{cost}} 點法力水晶（你於本賽局中施放了 {{spells}} 張法術，價值 {{spellsMana}} 法力值）"
         },
         "specific-summons": {
             "opponent": "你的對手已召喚了 {{value}} 個「{{cardName}}」手下",
@@ -2019,7 +2019,7 @@
             "opponent": "你的對手已經在這場對局中消耗了 {{value}} 具屍體"
         },
         "gardens-grace": {
-            "player": "你的下一張「{{cardName}}」卡牌花費（{{cost}}）點法力水晶（你於本賽局中施放了 {{spells}} 張神聖法術，價值 {{spellsMana}} 法力值）"
+            "player": "你的下一張「{{cardName}}」卡牌消耗（{{cost}}）點法力水晶（你於本賽局中施放了 {{spells}} 張神聖法術，價值 {{spellsMana}} 法力值）"
         },
         "chained-guardian": {
             "player": "您已將 {{value}} 張瘟疫洗入對手的牌堆中"
@@ -2072,7 +2072,7 @@
             "player": "您在本場賽局中抽取了 {{value}} 張卡牌"
         },
         "thirsty-drifter": {
-            "player": "您打出了 {{value}} 張花費（1）法力值的卡牌"
+            "player": "您打出了 {{value}} 張消耗（1）法力值的卡牌"
         },
         "holy-spells": {
             "player": "您已在本賽局中施放了 {{value}} 張神聖法術"
@@ -2105,8 +2105,8 @@
             "opponent": "對手已經發現了 {{value}} 次卡牌"
         },
         "libram-reduction": {
-            "player": "您的聖契降低 {{value}} 點法力值花費",
-            "opponent": "對手的聖契降低 {{value}} 點法力值花費"
+            "player": "您的聖契降低 {{value}} 點法力值消耗",
+            "opponent": "對手的聖契降低 {{value}} 點法力值消耗"
         }
     },
     "loading": {
@@ -2349,7 +2349,7 @@
         "unknown-card": "未知卡牌",
         "unknown-mana-spell": "未知 {{manaCost}} 費法術",
         "unknown-info": "未知 {{info}}",
-        "unknown-big-minion": "未知 {{cost}}+ 花費手下",
+        "unknown-big-minion": "未知 {{cost}}+ 消耗手下",
         "card-dredged-tooltip": "探底",
         "streamer-mode": {
             "opponent": "對手",
@@ -2378,7 +2378,7 @@
         "stolen-tooltip": "從對手那裡偷來的",
         "guessed-info": {
             "header": "附加資訊",
-            "cost": "花費",
+            "cost": "消耗",
             "possible-cards": "猜測卡牌"
         },
         "tourist": "遊客：{{className}}"
@@ -3058,7 +3058,7 @@
                 "lottery-block-text4": "注意：如果您是高級會員用戶，選擇參加樂透將不會向您展示廣告 - 如果您獲勝，我們將為你發放等值的獎品。",
                 "lottery-block-text2": "一旦新的樂透賽季開始，先前賽季的積分將被重設。",
                 "title": "高級會員訂閱選項",
-                "lottery-block-text1": "參加樂透將通過您在玩遊戲時執行的一些操作（例如花費資源）並在樂透窗口可見的情況下累計積分。每個月末，將隨機選出 4 位得獎者（積分越多，獲勝的機會就越大）。獲獎者將獲得 2 個月的高級會員訂閱，並將在 {{twitterLink}} 和 {{discordLink}} 上公佈。",
+                "lottery-block-text1": "參加樂透將通過您在玩遊戲時執行的一些操作（例如消耗資源）並在樂透窗口可見的情況下累計積分。每個月末，將隨機選出 4 位得獎者（積分越多，獲勝的機會就越大）。獲獎者將獲得 2 個月的高級會員訂閱，並將在 {{twitterLink}} 和 {{discordLink}} 上公佈。",
                 "lottery-widget-settings-title": "小工具設定",
                 "link": "維基上",
                 "lottery-premium-section-tooltip": "此部分僅適用於高級會員用戶"
@@ -3130,8 +3130,8 @@
                 "reset-deck-position-after-trade-tooltip": "在更換一張「可更換」的卡牌後，理論上該卡可以放在牌組的底部。 因此，默認情況下，當更換發生時，顯示“頂層”和“底層”的列表部分會被清除。 如果您希望這些部分即使在更換之後也保持其先前的顯示，請關閉此選項。",
                 "show-stats-change": "顯示狀態變更",
                 "show-stats-change-tooltip": "在牌組列表中顯示某些卡牌發生的變化（如:點燃、鍛造錘）",
-                "show-cost-reduction": "更新牌堆裏的卡牌花費",
-                "show-cost-reduction-tooltip": "當觸發降費效果時更新牌堆裏的卡牌實際花費（例如：「咒法之流」的影響）",
+                "show-cost-reduction": "更新牌堆裏的卡牌消耗",
+                "show-cost-reduction-tooltip": "當觸發降費效果時更新牌堆裏的卡牌實際消耗（例如：「咒法之流」的影響）",
                 "show-unknown-cards": "顯示未知卡牌",
                 "show-unknown-cards-tooltip": "當沒有準確的卡牌資訊時，增加「未知卡牌」進計牌器",
                 "highlight-related-cards": "標記相關卡牌",
@@ -3183,8 +3183,8 @@
                 "darken-used-cards-tooltip": "啟用時, 用過的卡會被遮暗",
                 "global-effects-label": "顯示光環影響",
                 "global-effects-tooltip": "啟用時，計牌器頂端會出現一個新部分，顯示影響玩家/牌組的光環效果",
-                "sort-by-mana-cost-label": "根據花費排序",
-                "sort-by-mana-cost-tooltip": "啟用時, 在「其他地方」的卡牌會依據所需花費的法力水晶排序。反之則會先顯示戰場上的卡, 接著是墓地, 再然後為其它",
+                "sort-by-mana-cost-label": "根據消耗排序",
+                "sort-by-mana-cost-tooltip": "啟用時, 在「其他地方」的卡牌會依據所需消耗的法力水晶排序。反之則會先顯示戰場上的卡, 接著是墓地, 再然後為其它",
                 "show-bottom-cards-separately-label": "顯示底部卡牌",
                 "show-bottom-cards-separately-tooltip": "獨立顯示牌堆底已知的卡牌",
                 "show-top-cards-separately-label": "顯示頂部卡牌",
@@ -3242,7 +3242,7 @@
                     "elemental-streak-tooltip": "計算對手連續打出元素的回合數。只有當他們連續兩回合打出過元素時才會出現。",
                     "dead-minions-this-game-tooltip": "當你的對手是死亡騎士或他們手上或牌組中有相關卡牌（例如「礦坑老大雷斯卡」）時，顯示本場比賽死亡的手下數量",
                     "discovers-tooltip": "計算對手「發現」卡牌的次數",
-                    "libram-reduction-tooltip": "顯示對手的聖契已降低的法力值花費"
+                    "libram-reduction-tooltip": "顯示對手的聖契已降低的法力值消耗"
                 },
                 "size-title": "尺寸與透明度",
                 "opacity-title": "透明度",
@@ -3286,7 +3286,7 @@
                     "lady-darkvein-label": "暗脈女士",
                     "lady-darkvein-tooltip": "當你手上有張「暗脈女士」的卡牌時，顯示上一張成功施放的暗影法術（如果有的話）",
                     "grey-sage-parrot-label": "灰綠鸚鵡",
-                    "grey-sage-parrot-tooltip": "當您手上有灰綠鸚鵡時，顯示您最後打出的花費5以上的法術",
+                    "grey-sage-parrot-tooltip": "當您手上有灰綠鸚鵡時，顯示您最後打出的消耗5以上的法術",
                     "multicaster-label": "法術學院",
                     "multicaster-tooltip": "顯示您在本賽局中已施放過的法術系別",
                     "coral-keeper-label": "珊瑚守衛者",
@@ -3318,8 +3318,8 @@
                     "secrets-label": "已施放過的秘密",
                     "excavate-tooltip": "顯示您目前和最大的挖掘級別，並在將滑鼠懸停在櫃檯上時顯示您可以從下一個挖掘層獲得的寶藏",
                     "corpse-spent-tooltip": "當您擁有可以從此精確數值中受益的卡牌時（例如「高潮死靈爆炸」），顯示一個計數器，其中包含已消耗的屍體總數",
-                    "gardens-grace-tooltip": "當你手上或牌組中有一張花園祝福卡時，顯示花園祝福卡的實際花費（減少後）",
-                    "naga-giant-tooltip": "當你手上或牌組中有張「納迦巨人」的卡牌時，顯示納迦巨人實際（減少後）的花費",
+                    "gardens-grace-tooltip": "當你手上或牌組中有一張花園祝福卡時，顯示花園祝福卡的實際消耗（減少後）",
+                    "naga-giant-tooltip": "當你手上或牌組中有張「納迦巨人」的卡牌時，顯示納迦巨人實際（減少後）的消耗",
                     "spectral-pillager-label": "鬼靈掠取者",
                     "chained-guardian-tooltip": "顯示你洗入對手牌堆的瘟疫數量",
                     "astral-automaton-tooltip": "顯示你已召喚「星界自動機」的數量",
@@ -3352,7 +3352,7 @@
                     "holy-spells-tooltip": "顯示您已使用的神聖法術數量。當您手上或牌組中擁有透過使用神聖法術而獲得的卡牌時，它會出現",
                     "pirates-summoned-label": "海盜（已召喚）",
                     "wheel-of-death-label": "死亡輪盤",
-                    "thirsty-drifter-tooltip": "當你手上或牌組中有口渴的漂泊者時，顯示你已打出的花費為（1）的卡牌數量",
+                    "thirsty-drifter-tooltip": "當你手上或牌組中有口渴的漂泊者時，顯示你已打出的消耗為（1）的卡牌數量",
                     "sea-shanty-label": "船員之歌",
                     "pirates-summoned-tooltip": "顯示你已召喚「海盜」的數量",
                     "sea-shanty-tooltip": "當您的手牌或牌組中有「船員之歌」時，會顯示您對角色施放的法術數量，以及您施放的法術的詳細訊息",
@@ -3367,7 +3367,7 @@
                     "discovers-label": "發現",
                     "discovers-tooltip": "計算您「發現」卡牌的次數",
                     "libram-reduction-label": "聖契（已減少）",
-                    "libram-reduction-tooltip": "顯示您的聖契已降低的法力值花費"
+                    "libram-reduction-tooltip": "顯示您的聖契已降低的法力值消耗"
                 },
                 "discovery-zone-label": "發現區",
                 "discovery-zone-tooltip": "啟動後，計牌器中會出現一個新部分，其中包含賽局為您提供的「發現」選項。這可以讓您看到相關卡牌並突出顯示與牌組的協同作用。"
@@ -3389,7 +3389,7 @@
             "turn-timer": {
                 "title": "回合計時器",
                 "show-turn-timer-label": "顯示回合計時器",
-                "show-turn-timer-tooltip": "顯示計算總時間和目前回合所花費時間的部件，並顯示您此回合還剩下多少時間",
+                "show-turn-timer-tooltip": "顯示計算總時間和目前回合所消耗時間的部件，並顯示您此回合還剩下多少時間",
                 "show-turn-timer-match-length-label": "顯示賽局時長",
                 "show-turn-timer-match-length-tooltip": "顯示本賽局經過的總時間，包含起手換牌階段",
                 "size-title": "元件的縮放",
@@ -3653,7 +3653,7 @@
                 "your-team": "小工具尺寸 - 您的隊伍",
                 "opponent-team": "小工具尺寸 - 對手隊伍",
                 "action-queue": "小工具尺寸 - 操作佇列",
-                "turn-counter-battle-tooltip": "顯示戰鬥目前回合數，以及在地圖上花費的總回合數（包含目前戰鬥）"
+                "turn-counter-battle-tooltip": "顯示戰鬥目前回合數，以及在地圖上消耗的總回合數（包含目前戰鬥）"
             },
             "quests": {
                 "explanation": "最多可选择 6 名雇佣兵，他们将在组建任務团队时自动加入，以填补额外的位置（从左到右依次排序）。",
