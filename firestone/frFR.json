@@ -54,7 +54,8 @@
             "region_cn": "Chine",
             "us": "Amériques",
             "ap": "Asie-Pacifique",
-            "eu": "Europe"
+            "eu": "Europe",
+            "cn": "Chine"
         },
         "set": {
             "hero_skins": "—",
@@ -264,7 +265,8 @@
             "taunt": "Provocation",
             "end_of_turn": "Fin de tour",
             "reborn": "Réincarnation",
-            "bg_spell": "Sort de taverne"
+            "bg_spell": "Sort de taverne",
+            "choose_one": "Choix des armes"
         },
         "legendary-minion": "Serviteur légendaire",
         "patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -1064,7 +1066,8 @@
                 "simulator": "Simulateur",
                 "leaderboard": "Classement",
                 "trinkets": "Bibelots",
-                "your-stats": "Vos stats"
+                "your-stats": "Vos stats",
+                "cards": "Cartes"
             },
             "tribes": {
                 "beast": "Bêtes",
@@ -1140,6 +1143,10 @@
                 "trinket-type": {
                     "greater": "Bibelots supérieurs",
                     "lesser": "Bibelots inférieurs"
+                },
+                "card-type": {
+                    "minion": "Serviteurs",
+                    "spell": "Sorts"
                 }
             },
             "personal-stats": {
@@ -1290,7 +1297,9 @@
                 "header-pick-rate": "% sélection",
                 "header-pick-rate-high-mmr": "% sélection (Top {{value}} %)",
                 "header-pick-rate-high-mmr-tooltip": "Taux de sélection pour le top {{value]] % des joueurs et joueuses",
-                "header-pickrate": "% sélection"
+                "header-pickrate": "% sélection",
+                "header-card-details": "Carte",
+                "card-search-placeholder": "Rechercher..."
             },
             "bgs-tier-list": {
                 "header": "Tierlist des quêtes ({{value}} parties) "
@@ -2140,7 +2149,8 @@
             "opponent": "Votre adversaire mourra dans {{value}} tours ! Courage !"
         },
         "cards-drawn": {
-            "player": "Vous avez pioché {{value}} cartes pendant cette partie"
+            "player": "Vous avez pioché {{value}} cartes pendant cette partie",
+            "opponent": "Votre adversaire a pioché {{value}} cartes pendant cette partie"
         },
         "holy-spells": {
             "player": "Vous avez joué {{value}} sorts du Sacré pendant cette partie"
@@ -2168,7 +2178,7 @@
             "player": "Vous avez joué {{value}} Pirates pendant cette partie"
         },
         "ceaseless": {
-            "player": "{{value}} cartes ont été piochées, jouées ou détruites pendant cette partie"
+            "player": "{{cardName}} coûte actuellement {{cost}} cristaux. {{value}} cartes ont été piochées, jouées ou détruites pendant cette partie"
         },
         "discovers": {
             "player": "Vous avez découvert {{value}} cartes",
@@ -2449,7 +2459,10 @@
         "guessed-info": {
             "header": "Infos supplémentaires",
             "cost": "Coût",
-            "possible-cards": "Cartes possibles"
+            "possible-cards": "Cartes possibles",
+            "attack-buff": "Buff d’ATQ",
+            "health-buff": "Buff de PV",
+            "spell-schools": "Écoles de sorts"
         },
         "tourist": "Touriste : {{className}}"
     },
@@ -2706,7 +2719,10 @@
                     "filters": {
                         "browsing": "Recherche",
                         "exploring": "Exploration"
-                    }
+                    },
+                    "core-cards-header-tooltip": "Cartes essentielles à la troupe de guerre",
+                    "add-ons-header-tooltip": "Bonnes cartes de la troupe de guerre",
+                    "pin-tooltip": "Cliquez pour épingler/désépingler tous les serviteurs de cette troupe de guerre"
                 }
             },
             "quests": {
@@ -3178,7 +3194,8 @@
                 "turn-timer": "Minuteur",
                 "duels": "Duels",
                 "launch": "Options de lancement",
-                "mulligan": "Mulligan"
+                "mulligan": "Mulligan",
+                "lobby": "Salon"
             },
             "global": {
                 "title": "Activer / désactiver des options",
@@ -3319,7 +3336,8 @@
                     "elemental-streak-tooltip": "Compte le nombre de tours consécutifs où votre adversaire a joué un Élémentaire. N’apparaît que s’il ou elle a joué au moins 2 Élémentaires à la suite.",
                     "dead-minions-this-game-tooltip": "Affiche le nombre de serviteurs morts pendant cette partie si votre adversaire est un chevalier de la mort ou s’il a une carte pertinente dans sa main ou dans son deck (par exemple, Reska, responsable de la fosse).",
                     "libram-reduction-tooltip": "Afficher de combien est réduit le coût des librams de votre adversaire",
-                    "discovers-tooltip": "Compte le nombre de cartes que votre adversaire a découvertes"
+                    "discovers-tooltip": "Compte le nombre de cartes que votre adversaire a découvertes",
+                    "cards-drawn-tooltip": "Lorsque votre adversaire a une carte {{cardName}} dans son deck, ou s’il ou elle joue un {{cardClass}}, affiche le nombre de cartes qu’il ou elle a piochées pendant cette partie"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -3475,6 +3493,11 @@
                 "show-mulligan-deck-overview-label": "Afficher l’aperçu du deck",
                 "show-mulligan-card-impact-tooltip": "Affiche l’impact de chaque carte de votre main sur le taux de victoires de votre deck",
                 "size": "Taille"
+            },
+            "lobby": {
+                "title": "Tracker du salon",
+                "show-lobby-tracker": "Afficher le tracker du salon",
+                "show-lobby-tracker-tooltip": "Affiche la liste des cartes du deck sélectionné, sur l’écran de sélection du deck"
             }
         },
         "collection": {
@@ -3652,7 +3675,14 @@
                 "minions-list-new-header-label": "Utiliser le nouvel en-tête",
                 "minions-list-new-header-tooltip": "Utiliser le menu de navigation en 2 étapes pour fluidifier la liste des serviteurs",
                 "minions-list-show-buddies-label": "Afficher les compagnons",
-                "minions-list-show-buddies-tooltip": "Activer cette option affichera toujours les compagnons, même sans moyen d’en obtenir."
+                "minions-list-show-buddies-tooltip": "Activer cette option affichera toujours les compagnons, même sans moyen d’en obtenir.",
+                "minions-list-show-compositions-tooltip": "Ajoute un onglet à la liste des serviteurs permettant d’explorer les troupes de guerre du méta-jeu actuel. L’option « {{newHeaderOption}} » doit être activée.",
+                "minions-list-show-compositions-label": "Afficher les troupes de guerre",
+                "minions-list-compositions": {
+                    "header": "Troupes de guerre",
+                    "fade-higher-tier-cards-label": "Effacer les cartes de niveau supérieur",
+                    "fade-higher-tier-cards-tooltip": "Les cartes des niveaux supérieurs au vôtre sont effacées"
+                }
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -4217,7 +4247,8 @@
         "xl-jive-shaman": "Chaman jive XL",
         "xl-shaman": "Chaman XL",
         "xl-uu-insanity-warlock": "Démoniste démence Morts-vivants XL",
-        "xl-uu-snek-warlock": "Démoniste Déterrer Morts-vivants XL"
+        "xl-uu-snek-warlock": "Démoniste Déterrer Morts-vivants XL",
+        "bbb-contol-dk": "DK sang contrôle"
     },
     "arena": {
         "overlay": {
