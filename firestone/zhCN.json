@@ -54,7 +54,8 @@
             "region_cn": "国服",
             "ap": "亚服",
             "eu": "欧服",
-            "us": "美服"
+            "us": "美服",
+            "cn": "国服"
         },
         "set": {
             "hero_skins": "-",
@@ -264,7 +265,8 @@
             "taunt": "嘲讽",
             "end_of_turn": "回合结束",
             "reborn": "复生",
-            "bg_spell": "酒馆法术"
+            "bg_spell": "酒馆法术",
+            "choose_one": "选择一个"
         },
         "legendary-minion": "传说随从",
         "patch": "补丁 {{version}}.{{number}} 发布于{{date}}",
@@ -1064,7 +1066,8 @@
                 "simulator": "模拟器",
                 "leaderboard": "排行榜",
                 "trinkets": "饰品",
-                "your-stats": "你的统计概况"
+                "your-stats": "你的统计概况",
+                "cards": "卡牌"
             },
             "tribes": {
                 "beast": "野兽",
@@ -1140,6 +1143,10 @@
                 "trinket-type": {
                     "greater": "大型饰品",
                     "lesser": "小型饰品"
+                },
+                "card-type": {
+                    "minion": "随从",
+                    "spell": "法术"
                 }
             },
             "personal-stats": {
@@ -1283,14 +1290,16 @@
                 "header-group-difficulty-button": "合并显示",
                 "header-games-played": "对战场数",
                 "header-games-played-tooltip": "在选定时间范围内使用此英雄的对局数",
-                "trinket-search-placeholder": "搜索饰品...",
+                "trinket-search-placeholder": "搜索饰品…",
                 "header-trinket-details": "饰品",
                 "header-average-position-high-mmr-tooltip": "前{{value}}%玩家的平均最终排名",
                 "header-pick-rate": "选取率",
                 "header-pick-rate-high-mmr": "前{{value}}%选取率",
                 "header-pick-rate-high-mmr-tooltip": "前{{value}}%的玩家的选取率",
                 "header-average-position-high-mmr": "前{{value}}%位次",
-                "header-pickrate": "选取率"
+                "header-pickrate": "选取率",
+                "header-card-details": "卡牌",
+                "card-search-placeholder": "搜索卡牌…"
             },
             "bgs-tier-list": {
                 "header": "任务评级表 ( {{value}} 场对战) "
@@ -2140,7 +2149,8 @@
             "opponent": "你的对手即将油尽灯枯，再坚守{{value}}个回合！顶住！"
         },
         "cards-drawn": {
-            "player": "本局对战中你已抽取{{value}}张牌"
+            "player": "本局对战中你已抽取{{value}}张牌",
+            "opponent": "本局对战中对手已抽取{{value}}张牌"
         },
         "holy-spells": {
             "player": "你已使用的神圣法术数量：{{value}}"
@@ -2168,7 +2178,7 @@
             "player": "本局对战中你已使用{{value}}张海盗牌"
         },
         "ceaseless": {
-            "player": "你和你的对手已经抽到，使用或摧毁了{{value}}张卡牌"
+            "player": "{{cardName}} 现在消耗{{cost}}法力水晶.。你和你的对手已经抽到，使用或摧毁了{{value}}张卡牌"
         },
         "discovers": {
             "opponent": "对手已经发现了{{value}}次卡牌",
@@ -2449,7 +2459,10 @@
         "guessed-info": {
             "header": "额外信息",
             "cost": "消耗",
-            "possible-cards": "可能的卡牌"
+            "possible-cards": "可能的卡牌",
+            "attack-buff": "攻击增益",
+            "health-buff": "血量增益",
+            "spell-schools": "法术派系"
         },
         "tourist": "游客：{{className}}"
     },
@@ -2666,9 +2679,9 @@
             },
             "minions-list": {
                 "reset-button": "重置",
-                "mechanics-tier-tooltip": "查看全部{{value}}类型的卡牌。右键点击在酒馆中高亮显示全部{{value}}卡牌。",
+                "mechanics-tier-tooltip": "查看全部{{value}}类型的卡牌。右键点击在酒馆中特殊标记全部{{value}}卡牌。",
                 "buddies-tier-tooltip": "查看所有战棋伙伴",
-                "highlight-tribe": "点击以高亮显示酒馆中所有的 {{value}}",
+                "highlight-tribe": "点击以特殊标记酒馆中所有的 {{value}}",
                 "unhighlight-tribe": "点击以取消突出显示酒馆中的 {{value}}",
                 "highlight-mechanics": "特殊标记{{value}}类型的卡牌",
                 "unhighlight-mechanics": "取消标记{{value}}类型的卡牌",
@@ -2706,7 +2719,10 @@
                     "filters": {
                         "browsing": "浏览",
                         "exploring": "探索"
-                    }
+                    },
+                    "add-ons-header-tooltip": "适合在此流派中加入的卡牌",
+                    "core-cards-header-tooltip": "对此流派至关重要的卡牌",
+                    "pin-tooltip": "点击以置顶/取消置顶此流派中所有的随从"
                 }
             },
             "quests": {
@@ -3178,7 +3194,8 @@
                 "turn-timer": "回合计时器",
                 "duels": "对决模式",
                 "launch": "启动选项",
-                "mulligan": "起手调度"
+                "mulligan": "起手调度",
+                "lobby": "大厅"
             },
             "global": {
                 "title": "启用/停用功能",
@@ -3271,8 +3288,8 @@
                 "card-turn-draw-tooltip": "显示对手手牌中获得卡牌的回合",
                 "guessed-cards-label": "猜到的卡牌",
                 "guessed-cards-tooltip": "显示对手的已知卡牌（如卡牌回手）",
-                "buff-in-hand-label": "手牌buff",
-                "buff-in-hand-tooltip": "显示对手手牌受到的buff",
+                "buff-in-hand-label": "手牌增益",
+                "buff-in-hand-tooltip": "显示对手手牌受到的增益",
                 "secrets-helper-title": "奥秘助手",
                 "enable-secret-helper-label": "启用奥秘助手",
                 "enable-secret-helper-tooltip": "当启用时，会显示一个记录对手所有可能奥秘的弹窗",
@@ -3319,7 +3336,8 @@
                     "elemental-streak-tooltip": "计算你的对手连续使用元素牌的回合数。仅当其已至少连续两回合使用元素牌时显示。",
                     "dead-minions-this-game-tooltip": "当你的对手是死亡骑士或者他们手牌或卡组中有相关卡牌时（如“矿坑老板雷斯卡”），显示本局对战中已死亡的随从数量",
                     "discovers-tooltip": "计算对手发现卡牌的次数",
-                    "libram-reduction-tooltip": "显示对手圣契法力值消耗的总减少量"
+                    "libram-reduction-tooltip": "显示对手圣契法力值消耗的总减少量",
+                    "cards-drawn-tooltip": "当您的套牌中有{{cardName}}，或者它们是{{cardClass}}卡时，显示它们在本局对战中抽到的卡牌数量"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3475,6 +3493,11 @@
                 "show-mulligan-deck-overview-label": "显示套牌总览",
                 "show-mulligan-card-impact-tooltip": "显示你手牌中的卡牌对套牌胜率的影响",
                 "size": "尺寸"
+            },
+            "lobby": {
+                "show-lobby-tracker": "显示大厅记牌器",
+                "show-lobby-tracker-tooltip": "在套牌选择屏幕上显示所选的套牌列表",
+                "title": "大厅记牌器"
             }
         },
         "collection": {
@@ -3652,7 +3675,14 @@
                 "minions-list-new-header-label": "使用新版顶栏",
                 "minions-list-show-buddies-tooltip": "始终显示伙伴，即使您目前没有办法获得伙伴。",
                 "minions-list-show-buddies-label": "显示伙伴",
-                "minions-list-new-header-tooltip": "使用两步式导航菜单，减少随从列表中的杂乱信息"
+                "minions-list-new-header-tooltip": "使用两步式导航菜单，减少随从列表中的杂乱信息",
+                "minions-list-compositions": {
+                    "header": "阵容构成",
+                    "fade-higher-tier-cards-tooltip": "淡化显示比当前酒馆等级高等级的卡牌",
+                    "fade-higher-tier-cards-label": "淡化显示更高级等级卡牌"
+                },
+                "minions-list-show-compositions-tooltip": "在随从列表中添加一个标签页，在这里你可以探索当前环境的各种流派。需要开启“{{newHeaderOption}}”选项",
+                "minions-list-show-compositions-label": "显示流派"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -4217,7 +4247,8 @@
         "xl-uu-snek-warlock": "40-亡灵蛇术",
         "overload-shaman": "过载萨",
         "cute-demon-hunter": "魔块瞎",
-        "bonk-shaman": "雏龙狂魔萨"
+        "bonk-shaman": "雏龙狂魔萨",
+        "bbb-contol-dk": "控制血DK"
     },
     "arena": {
         "overlay": {
