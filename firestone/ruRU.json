@@ -910,7 +910,8 @@
                 "simulator": "Симулятор",
                 "trinkets": "Тринкеты",
                 "leaderboard": "Таблица лидеров",
-                "your-stats": "Ваша статистика"
+                "your-stats": "Ваша статистика",
+                "cards": "Карты"
             },
             "tribes": {
                 "beast": "Звери",
@@ -986,6 +987,10 @@
                 "trinket-type": {
                     "lesser": "Малые тринкеты",
                     "greater": "Большие тринкеты"
+                },
+                "card-type": {
+                    "spell": "Заклинания",
+                    "minion": "Существа"
                 }
             },
             "personal-stats": {
@@ -1119,7 +1124,15 @@
                 "header-pick-rate-high-mmr": "Частота выбора Топ {{value}}%",
                 "reward-search-placeholder": "Поиск награды...",
                 "header-pick-rate-high-mmr-tooltip": "Частота выбора для игроков из топ {{value}}%",
-                "header-pickrate": "Частота выбора"
+                "header-pickrate": "Частота выбора",
+                "header-tribes-tooltip": "Типы существ, которые оказывают наибольшее влияние на финальное место в матче на этом герое",
+                "header-collapse-all-button": "Свернуть все",
+                "header-games-played-tooltip": "Количество игр, сыгранных вами на этом герое за выбранный период времени",
+                "header-average-position-high-mmr": "Место топ {{value}}%",
+                "header-average-position-high-mmr-tooltip": "Среднее фильное место для игроков из топ {{value}}%",
+                "header-expand-all-button": "Развернуть все",
+                "header-card-details": "Карта",
+                "card-search-placeholder": "Поиск карты..."
             },
             "bgs-tier-list": {
                 "header": "Тир-лист квестов ({{value}} партий) "
@@ -1576,7 +1589,11 @@
                 "header-wins": "Побед",
                 "header-wins-bg": "Побед (топ-4)",
                 "no-data": {
-                    "battlegrounds": "Запустите Hearthstone и откройте «Поля сражений», чтобы начать отслеживать вашу статистику"
+                    "battlegrounds": "Запустите Hearthstone и откройте «Поля сражений», чтобы начать отслеживать вашу статистику",
+                    "ranked": "Сыграйте ранговую игру или запустите Hearthstone, чтобы получить вашу статистику",
+                    "arena": "Сыграйте игру на арене или запустите Hearthstone, чтобы получить вашу статистику",
+                    "duels": "Сыграйте игру в дуэли или запустите Hearthstone и перейдите на экран Дуэли, чтобы получить вашу статистику",
+                    "title": "Нет данных для этого режима игры"
                 }
             },
             "xp-seasons": {
@@ -1734,10 +1751,28 @@
             "player": "Вы призвали {{value}} \"{{cardName}}\""
         },
         "specific-plays": {
-            "opponent": "Ваш оппонент сыграл {{value}} \"{{cardName}}\""
+            "opponent": "Ваш оппонент сыграл {{value}} \"{{cardName}}\"",
+            "player": "Вы разыграли {{value}} {{cardName}}"
         },
         "bgs-blood-gem": {
             "player": "{{cardName}} дают +{{attack}}/+{{health}}"
+        },
+        "bgs-gold-delta": {
+            "card": "{{cardName}} ({{count}})",
+            "player": "Вы получите еще {{value}} золота на следующий ход {{maxValueText}}, благодаря {{cards}}"
+        },
+        "bgs-magmaloc": {
+            "player": "Ваш Магмалок получит +{{value}}/+{{value}} в конце хода"
+        },
+        "bgs-lord-of-gains": {
+            "player": "Вы разыграли {{value}} различных заклинаний на этом ходу: {{cards}}"
+        },
+        "bgs-tuskarr-raider": {
+            "player": "Пиратов разыгранных вами за игру: {{value}}"
+        },
+        "queensguard": {
+            "opponent": "Заклинаний разыграно противником на этом ходу: {{value}}",
+            "player": "Заклинаний разыграно вами на этом ходу: {{value}}"
         }
     },
     "loading": {
@@ -2185,7 +2220,7 @@
             },
             "minions-list": {
                 "reset-button": "Все",
-                "mechanics-tier-tooltip": "Показать все {{value}} карты. Правая кнопка мыши подсветит все {{value}} карты в таверне.",
+                "mechanics-tier-tooltip": "Показать все карты с {{value}}. Правая кнопка мыши подсветит все карты с {{value}} в таверне.",
                 "buddies-tier-tooltip": "Посмотреть всех компаньонов в игре",
                 "highlight-tribe": "Нажмите, чтобы выделить всех существ типа {{value}} в таверне",
                 "unhighlight-tribe": "Нажмите, чтобы не выделять существ типа {{value}} в таверне",
@@ -2214,8 +2249,11 @@
                 "compositions": {
                     "header": "Сборки",
                     "core-cards-header": "Ключевые карты",
-                    "add-ons-header": "Доп. карты"
-                }
+                    "add-ons-header": "Доп. карты",
+                    "core-cards-header-tooltip": "Карты, которые необходимы для сборки",
+                    "add-ons-header-tooltip": "Карты, которые могут быть полезны для сборки"
+                },
+                "minion-banned-tooltip": "Эта карта исключена из-за текущей Аномалии"
             },
             "trinkets": {
                 "pick-rate-title-tooltip": "Как часто игроки выбирают этот тринкет",
