@@ -477,8 +477,8 @@
                 "header-drawn-winrate-tooltip": "抽到卡牌後獲勝的次數",
                 "header-pickrate-impact-tooltip": "該卡牌在至少達到 {{value}} 場賽局勝利的牌組中的揀選率差異以及平均揀選率",
                 "header-pickrate-high-wins-tooltip": "至少獲得 {{value}} 場賽局勝利的揀選率",
-                "header-play-on-curve-winrate": "按費出怪體系的勝率",
-                "header-play-on-curve-total": "按費出怪體系的總次數",
+                "header-play-on-curve-winrate": "按費出怪玩法的勝率",
+                "header-play-on-curve-total": "按費出怪玩法的總次數",
                 "header-play-on-curve-winrate-tooltip": "當你打出這張卡牌時的平均勝率，即當你的法力值與卡牌消耗的一樣多時",
                 "header-deck-winrate-tooltip": "包含這張卡牌的牌組勝率",
                 "header-mulligan-winrate": "起始手牌世界記錄",
@@ -1142,7 +1142,7 @@
                 },
                 "card-type": {
                     "minion": "手下",
-                    "spell": "法術"
+                    "spell": "旅店法術"
                 }
             },
             "personal-stats": {
@@ -1257,7 +1257,7 @@
             "tier-list": {
                 "header": "英雄強度列表（{{value}} 場賽局） ",
                 "header-hero-details": "英雄",
-                "header-tribes": "最強體系",
+                "header-tribes": "最強玩法",
                 "header-combat-winrate": "戰鬥勝率",
                 "header-group-difficulty-button": "分組",
                 "header-group-difficulty-button-tooltip": "將任務按名稱分組，這樣您就可以檢視所有任務的全部難度",
@@ -1306,26 +1306,26 @@
                         "3-on-3": "第3回合3等級旅店（8金幣升級4等級）",
                         "3-on-3-bis": "第3回合3等級旅店（9金幣升級4等級）",
                         "4-on-4": "第4回合4等級旅店",
-                        "aggro-yogg": "侵略性 Yogg 體系",
-                        "basic": "基礎體系",
-                        "basic-yogg": "基礎 Yogg 體系",
-                        "extended-warrior": "超龜縮體系",
-                        "fast-basic": "快速基礎體系",
-                        "fast-jeef": "快速 Jeef 體系",
-                        "jeef": "Jeef 體系",
-                        "pocky": "Pocky 體系",
-                        "rafaam": "Rafaam 體系",
+                        "aggro-yogg": "侵略性 Yogg 玩法",
+                        "basic": "基礎玩法",
+                        "basic-yogg": "基礎 Yogg 玩法",
+                        "extended-warrior": "超龜縮玩法",
+                        "fast-basic": "快速基礎玩法",
+                        "fast-jeef": "快速 Jeef 玩法",
+                        "jeef": "Jeef 玩法",
+                        "pocky": "Pocky 玩法",
+                        "rafaam": "Rafaam 玩法",
                         "special": "特別的",
-                        "slow-jeef": "慢速 Jeef 體系",
-                        "slow-rafaam": "慢速 Rafaam 體系",
-                        "toki": "Toki 體系",
-                        "warrior": "龜縮體系"
+                        "slow-jeef": "慢速 Jeef 玩法",
+                        "slow-rafaam": "慢速 Rafaam 玩法",
+                        "toki": "Toki 玩法",
+                        "warrior": "龜縮玩法"
                     },
                     "notes": {
                         "warrior": "如果 1等級 的理財手下和搶三合一實力強勁，這是一條非常有價值的經營線。",
                         "rafaam": "使用1金幣英雄能力、2金幣英雄能力與理財或旅店小費進行乾淨的升級",
                         "slow-rafaam": "使用1金幣英雄能力、2金幣英雄能力與理財或旅店小費進行乾淨的升級。跳過第 3 等級旅館以變得更強",
-                        "extended-warrior": "如果在 1等級 理財和強行三合一都很強，這是一個非常有價值的陣容。 在常規龜縮體系時，如果還沒有出現三合一，這個改變是一個備用選擇。",
+                        "extended-warrior": "如果在 1等級 理財和強行三合一都很強，這是一個非常有價值的陣容。 在常規龜縮玩法時，如果還沒有出現三合一，這個改變是一個備用選擇。",
                         "toki": "一種遊玩不提供節奏的1金幣英雄能力的方法",
                         "pocky": "一個非常適用於1金幣的英雄能力",
                         "basic": "於關鍵開局更強，第4回合商店RNG弱勢。沒有英雄能力要求。",
@@ -1352,7 +1352,7 @@
                         "gold": "{{value}} 金幣"
                     }
                 },
-                "curve-label": "趨勢： ",
+                "curve-label": "玩法路線： ",
                 "date": "於 {{date}} 釋出（版本 {{patch}}）"
             }
         },
@@ -1451,7 +1451,7 @@
                 "rename-confirm-button": "確定",
                 "default-deck-name": "{{wins}} 贏 {{playerClass}}（{{gameMode}}）",
                 "default-deck-name-blank": "擂台牌組",
-                "no-meta-deck": "沒有體系牌組",
+                "no-meta-deck": "沒有趨勢牌組",
                 "no-personal-deck": "沒有最後一次運行",
                 "no-meta-deck-tooltip": "我們找不到任何具有此英雄/英雄能力/標誌性寶藏組合的高勝牌組。",
                 "no-personal-deck-tooltip": "我們找不到您使用這牌組/英雄能力/標誌性寶藏組合的任何賽局。"
@@ -2422,9 +2422,9 @@
             "composition-not-supported": {
                 "general": "此陣容未得到很好的支持，結果可能會出現偏差（原因：{{value}}）",
                 "reason-secret": "秘密",
-                "reason-pirate": "海上無賴+瑞文戴爾男爵/卡德加",
+                "reason-pirate": "海上無賴➕️瑞文戴爾男爵/卡德加",
                 "bug": "發生了未知錯誤，一份錯誤報告已經自動發送至開發者",
-                "reason-festergut": "Festergut",
+                "reason-festergut": "未支援：Festergut",
                 "reason-stitched": "普崔希德教授發明",
                 "reason-enchantment": "「{{cardName}}」魔法"
             },
@@ -2633,14 +2633,14 @@
                     "anomaly": "在遊玩目前異變時被禁止"
                 },
                 "navigation": {
-                    "compositions": "玩法構築",
+                    "compositions": "玩法陣容",
                     "mechanics": "關鍵字",
                     "tribes": "類別",
                     "compositions-tooltip": "陣容組成",
                     "tiers": "等級",
                     "tiers-tribes": "手下"
                 },
-                "spells-tier-tooltip": "法術",
+                "spells-tier-tooltip": "「旅店法術」",
                 "tribe-category-tooltip": "檢視全部 {{tribeName}} 卡牌。右鍵單擊以突出顯示旅店中的所有 {{tribeName}} 卡牌。",
                 "compositions": {
                     "header": "陣容組成",
@@ -2650,9 +2650,9 @@
                         "browsing": "瀏覽",
                         "exploring": "探索"
                     },
-                    "core-cards-header-tooltip": "對構築必不可少的卡牌",
-                    "add-ons-header-tooltip": "在構築中最好擁有的卡牌",
-                    "pin-tooltip": "單擊以釘選/取消釘選此趨勢中的所有手下"
+                    "core-cards-header-tooltip": "對陣容必不可少的卡牌",
+                    "add-ons-header-tooltip": "在陣容中最好擁有的卡牌",
+                    "pin-tooltip": "單擊以釘選/取消釘選此陣容中的所有手下"
                 }
             },
             "quests": {
