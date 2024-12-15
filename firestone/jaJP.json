@@ -54,7 +54,8 @@
             "region_cn": "中国",
             "us": "アメリカ",
             "ap": "アジア太平洋",
-            "eu": "ヨーロッパ"
+            "eu": "ヨーロッパ",
+            "cn": "中国"
         },
         "set": {
             "hero_skins": "-",
@@ -264,7 +265,8 @@
             "taunt": "挑発",
             "end_of_turn": "ターン終了時",
             "reborn": "蘇り",
-            "bg_spell": "酒場の呪文"
+            "bg_spell": "酒場の呪文",
+            "choose_one": "選択"
         },
         "legendary-minion": "レジェンドミニオン",
         "patch": "パッチ{{version}}.{{number}} が{{date}} にリリース！",
@@ -1064,7 +1066,8 @@
                 "simulator": "シミュレータ",
                 "leaderboard": "リーダーボード",
                 "trinkets": "装飾品",
-                "your-stats": "統計"
+                "your-stats": "統計",
+                "cards": "カード"
             },
             "tribes": {
                 "beast": "獣",
@@ -1140,6 +1143,10 @@
                 "trinket-type": {
                     "greater": "上級装飾品",
                     "lesser": "下級装飾品"
+                },
+                "card-type": {
+                    "minion": "ミニオン",
+                    "spell": "呪文"
                 }
             },
             "personal-stats": {
@@ -1290,7 +1297,9 @@
                 "header-pick-rate": "ピック率",
                 "header-pick-rate-high-mmr-tooltip": "トップ{{value}}%のプレイヤーのピック率です",
                 "header-pick-rate-high-mmr": "トップ{{value}}%でのピック率",
-                "header-pickrate": "ピック率"
+                "header-pickrate": "ピック率",
+                "header-card-details": "カード",
+                "card-search-placeholder": "カードを検索…"
             },
             "bgs-tier-list": {
                 "header": "クエストTierリスト ({{value}} 試合) "
@@ -2133,7 +2142,8 @@
             "opponent": "対戦相手は{{value}}ターン連続でエレメンタルを使用した"
         },
         "cards-drawn": {
-            "player": "この対戦中に{{value}}枚のカードを引いた"
+            "player": "この対戦中に{{value}}枚のカードを引いた",
+            "opponent": "対戦相手はこの試合中{{value}}枚のカードを引いた"
         },
         "thirsty-drifter": {
             "player": "コスト1のカードを{{value}}枚使用した"
@@ -2449,7 +2459,10 @@
         "guessed-info": {
             "header": "追加情報",
             "cost": "コスト",
-            "possible-cards": "ありうるカード"
+            "possible-cards": "ありうるカード",
+            "attack-buff": "攻撃力バフ",
+            "health-buff": "体力バフ",
+            "spell-schools": "呪文系統"
         },
         "tourist": "観光客：{{className}}"
     },
@@ -2706,7 +2719,10 @@
                     },
                     "header": "構成",
                     "core-cards-header": "コアカード",
-                    "add-ons-header": "サブカード"
+                    "add-ons-header": "サブカード",
+                    "core-cards-header-tooltip": "構成に必要不可欠なカードです",
+                    "add-ons-header-tooltip": "構成にあると良いカードです",
+                    "pin-tooltip": "クリックすると、この構成の全てのミニオンをピン留め/ピン解除します"
                 }
             },
             "quests": {
@@ -3178,7 +3194,8 @@
                 "turn-timer": "ターンタイマー",
                 "duels": "デュエル",
                 "launch": "起動オプション",
-                "mulligan": "マリガン"
+                "mulligan": "マリガン",
+                "lobby": "ロビー"
             },
             "global": {
                 "title": "機能の有効化/無効化",
@@ -3319,7 +3336,8 @@
                     "elemental-streak-tooltip": "対戦相手が何ターン連続でエレメンタルを使用しているかを表示します。少なくとも2ターン連続で使用したときのみ表示されます",
                     "dead-minions-this-game-tooltip": "この試合中に死亡したミニオンの数を表示します。対戦相手がデスナイトのとき、又は関連するカード(「鉱山長レスカ」など)が手札か山札にあるときに表示されます。",
                     "discovers-tooltip": "対戦相手が発見した回数を表示します",
-                    "libram-reduction-tooltip": "対戦相手の聖典のコスト軽減量を表示します"
+                    "libram-reduction-tooltip": "対戦相手の聖典のコスト軽減量を表示します",
+                    "cards-drawn-tooltip": "デッキに{{cardName}}がある場合、または{{cardClass}}の場合、この試合中にドローしたカードの枚数を表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3475,6 +3493,11 @@
                 "show-mulligan-card-impact-tooltip": "手札にあるカードがデッキ勝率に与える影響を表示します",
                 "show-mulligan-deck-overview-tooltip": "あなたのデッキの各カードのマリガン影響の概要を表示します",
                 "size": "サイズ"
+            },
+            "lobby": {
+                "show-lobby-tracker-tooltip": "デッキ選択画面で、選択したデッキのデッキリストを表示します",
+                "title": "ロビートラッカー",
+                "show-lobby-tracker": "ロビートラッカーを表示"
             }
         },
         "collection": {
@@ -3652,7 +3675,14 @@
                 "minions-list-new-header-label": "新しいヘッダーデザインを使用",
                 "minions-list-show-buddies-label": "バディを表示",
                 "minions-list-new-header-tooltip": "2ステップナビゲーションメニューを使用します。ミニオンリストの乱雑さが軽減されます",
-                "minions-list-show-buddies-tooltip": "バディを入手する方法がない状況でも、常にリストにバディを表示します。"
+                "minions-list-show-buddies-tooltip": "バディを入手する方法がない状況でも、常にリストにバディを表示します。",
+                "minions-list-show-compositions-tooltip": "ミニオンリストに、現在のメタの様々な構成が載っているタブを追加します。 オプションで、\"{{newHeaderOption}}\" を有効にする必要があります",
+                "minions-list-show-compositions-label": "構成を表示",
+                "minions-list-compositions": {
+                    "header": "構成",
+                    "fade-higher-tier-cards-label": "高い酒場グレードのカードを薄くする",
+                    "fade-higher-tier-cards-tooltip": "自分の現在の酒場グレードよりもグレードが高いミニオンをグレーアウトします"
+                }
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -4217,7 +4247,8 @@
         "xl-excavate-odyn-warrior": "XL発掘オーディンウォリアー",
         "bonk-shaman": "Bonkシャーマン",
         "mech-warlock": "メカウォーロック",
-        "xl-bfu-deathrattle-warlock": "XLレインボー断末魔ウォーロック"
+        "xl-bfu-deathrattle-warlock": "XLレインボー断末魔ウォーロック",
+        "bbb-contol-dk": "赤コントロールデスナイト"
     },
     "arena": {
         "overlay": {
