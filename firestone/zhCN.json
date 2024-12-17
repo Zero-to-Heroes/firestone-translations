@@ -266,7 +266,8 @@
             "end_of_turn": "回合结束",
             "reborn": "复生",
             "bg_spell": "酒馆法术",
-            "choose_one": "抉择"
+            "choose_one": "抉择",
+            "modular": "磁力"
         },
         "legendary-minion": "传说随从",
         "patch": "补丁 {{version}}.{{number}} 发布于{{date}}",
@@ -2187,6 +2188,24 @@
         "libram-reduction": {
             "opponent": "对手的圣契法力值消耗降低了{{value}}点",
             "player": "你的圣契法力值消耗降低了{{value}}点"
+        },
+        "bgs-free-refresh": {
+            "player": "您还剩{{value}}次免费重掷"
+        },
+        "bgs-magnetized": {
+            "player": "您在本局对战中已磁力了{{value}}张卡牌"
+        },
+        "bgs-baller": {
+            "player": "您的投球手将提供+{{value}}数值"
+        },
+        "bgs-beetles": {
+            "player": "你的 {{cardName}} 拥有 +{{atk}}/+{{health}}"
+        },
+        "spells-on-friendly-characters": {
+            "player": "您在本局对战中对友方角色施放了{{value}}张法术"
+        },
+        "gifts-played": {
+            "player": "您已打出了不在初始套牌中的{{value}}张卡牌"
         }
     },
     "loading": {
@@ -2722,7 +2741,9 @@
                     },
                     "add-ons-header-tooltip": "适合在此流派中加入的卡牌",
                     "core-cards-header-tooltip": "对此流派至关重要的卡牌",
-                    "pin-tooltip": "点击以置顶/取消置顶此流派中所有的随从"
+                    "pin-tooltip": "点击以置顶/取消置顶此流派中所有的随从",
+                    "cycles-header-tooltip": "适合循环使用的卡牌。即通过购买和出售来触发其效果，但不需要把它留在你的棋盘上",
+                    "cycles-header": "循环"
                 }
             },
             "quests": {
@@ -3337,7 +3358,7 @@
                     "dead-minions-this-game-tooltip": "当你的对手是死亡骑士或者他们手牌或卡组中有相关卡牌时（如“矿坑老板雷斯卡”），显示本局对战中已死亡的随从数量",
                     "discovers-tooltip": "计算对手发现卡牌的次数",
                     "libram-reduction-tooltip": "显示对手圣契法力值消耗的总减少量",
-                    "cards-drawn-tooltip": "当您的套牌中有{{cardName}}，或者它们是{{cardClass}}卡时，显示它们在本局对战中抽到的卡牌数量"
+                    "cards-drawn-tooltip": "当对手的套牌中有{{cardName}}，或者它们是{{cardClass}}卡时，显示它们在本局对战中抽到的卡牌数量"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3458,7 +3479,11 @@
                     "discovers-label": "发现",
                     "discovers-tooltip": "计算你发现卡牌的次数",
                     "libram-reduction-label": "圣契减费",
-                    "libram-reduction-tooltip": "显示你的圣契法力值消耗的总减少量"
+                    "libram-reduction-tooltip": "显示你的圣契法力值消耗的总减少量",
+                    "gifts-played-tooltip": "显示你打出的由另一张卡牌创建的延伸卡的数量",
+                    "gifts-played-label": "已打出的礼物卡牌",
+                    "spells-on-friendly-characters-label": "法术（友方）",
+                    "spells-on-friendly-characters-tooltip": "显示本局对战中你对友方角色施放的法术卡牌的数量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -3588,7 +3613,7 @@
                 "show-minions-auto-highlight-label": "自动高亮随从",
                 "show-tribes-auto-highlight-label": "自动高亮种族",
                 "show-tribes-auto-highlight-tooltip": "在扮演特定英雄时自动高亮特定种族的随从（例如在扮演齐恩瓦拉时高亮元素）",
-                "show-minions-auto-highlight-tooltip": "在扮演特定英雄时自动高亮特定的随从（例如在扮演海盗帕奇斯时高亮白赚赌徒）",
+                "show-minions-auto-highlight-tooltip": "根据您的英雄和场面阵容自动高亮显示一些随从（例如在扮演海盗帕奇斯时高亮白赚赌徒）",
                 "use-remote-simulator-label": "使用云端战斗模拟器",
                 "use-remote-simulator-tooltip": "开启后将在云端模拟战斗结果。可以减小对电脑的占用，但计算结果会稍有延迟。",
                 "use-tribes-filter-for-live-stats-label-short": "筛选随从类型",
@@ -3682,7 +3707,15 @@
                     "fade-higher-tier-cards-label": "淡化显示更高级等级卡牌"
                 },
                 "minions-list-show-compositions-tooltip": "在随从列表中添加一个标签页，在这里你可以探索当前环境的各种流派。需要开启“{{newHeaderOption}}”选项",
-                "minions-list-show-compositions-label": "显示流派"
+                "minions-list-show-compositions-label": "显示流派",
+                "counter-beetle-tooltip": "显示甲虫的攻击力/生命值增益",
+                "counter-baller-tooltip": "显示你的下一个投球手的增益",
+                "counter-baller-label": "投球手",
+                "counter-beetle-label": "甲虫",
+                "counter-free-refresh-label": "免费重掷",
+                "counter-magnetized-label": "磁力",
+                "counter-magnetized-tooltip": "显示您在本局对战中已磁力的次数",
+                "counter-free-refresh-tooltip": "显示您剩余的免费重掷次数"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
