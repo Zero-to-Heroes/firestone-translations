@@ -225,7 +225,7 @@
             "nightelf": "夜精靈",
             "orc": "獸人",
             "tauren": "牛頭人",
-            "troll": "食人妖",
+            "troll": "巨魔",
             "undead": "不死族",
             "worgen": "狼人",
             "murloc": "魚人",
@@ -263,7 +263,8 @@
             "end_of_turn": "回合結束",
             "reborn": "重生",
             "bg_spell": "旅店法術",
-            "choose_one": "二選一"
+            "choose_one": "二選一",
+            "modular": "合體"
         },
         "legendary-minion": "傳說手下",
         "patch": "版本 {{version}}.{{number}} 釋出於 {{date}}",
@@ -1232,7 +1233,7 @@
                         "max-dmg-dealt-hero": "最大造成傷害（對英雄）",
                         "max-dmg-dealt-hero-tooltip": "不包含與柯爾蘇嘉德戰鬥",
                         "win-streak": "最大連勝",
-                        "triples": "三合一產生",
+                        "triples": "三合一數",
                         "board-stats": "牌桌上最高體質",
                         "coins-wasted": "已浪費金幣",
                         "rerolls": "略過",
@@ -2117,6 +2118,24 @@
         "libram-reduction": {
             "player": "您的聖契降低 {{value}} 點法力值消耗",
             "opponent": "對手的聖契降低 {{value}} 點法力值消耗"
+        },
+        "gifts-played": {
+            "player": "您已打出不存在初始牌組中的 {{value}} 張卡牌"
+        },
+        "bgs-free-refresh": {
+            "player": "您還剩 {{value}} 次免費重骰"
+        },
+        "bgs-magnetized": {
+            "player": "您在本賽局中已合體 {{value}} 張卡牌"
+        },
+        "bgs-baller": {
+            "player": "您的球手將提供 +{{value}} 數值"
+        },
+        "bgs-beetles": {
+            "player": "你的 {{cardName}} 擁有 +{{atk}}/+{{health}}"
+        },
+        "spells-on-friendly-characters": {
+            "player": "您在本賽局中對友方角色施放了 {{value}} 張法術"
         }
     },
     "loading": {
@@ -2351,10 +2370,10 @@
         "card-discarded": "棄牌",
         "card-countered": "被反制的牌",
         "card-in-graveyard": "在墓地",
-        "gift-created-by-single-card": "由<br/> {{value}} 產生",
-        "gift-created-by-multiple-cards": "由 <br/> 多個產生",
+        "gift-created-by-single-card": "由<br/> {{value}} 創建",
+        "gift-created-by-multiple-cards": "由 <br/> 多個創建",
         "unnamed-player": "未命名的玩家",
-        "created-by": "由 {{value}} 產生",
+        "created-by": "由 {{value}} 創建",
         "unknown-class-card": "未知 {{playerClass}} 卡",
         "unknown-card": "未知卡牌",
         "unknown-mana-spell": "未知 {{manaCost}} 費法術",
@@ -2652,7 +2671,9 @@
                     },
                     "core-cards-header-tooltip": "對陣容必不可少的卡牌",
                     "add-ons-header-tooltip": "在陣容中最好擁有的卡牌",
-                    "pin-tooltip": "單擊以釘選/取消釘選此陣容中的所有手下"
+                    "pin-tooltip": "單擊以釘選/取消釘選此陣容中的所有手下",
+                    "cycles-header-tooltip": "通過買賣來觸發其效果，不需要留在棋盤上的迴環卡牌",
+                    "cycles-header": "迴環"
                 }
             },
             "quests": {
@@ -3174,7 +3195,7 @@
                 "group-same-cards": "將相同的卡牌分組在一起",
                 "show-transformed-into-label": "顯示已變形為",
                 "group-same-cards-tooltip": "將具有相同卡牌 ID 的所有卡牌分組在一起，無論它們是否被丟棄、死亡、摧毀、使用不同的法力值消耗等。",
-                "show-gifts-in-separate-zone-tooltip": "將產生的卡牌從「其他」區域移動到新的「其他（活動）」可折疊區域。",
+                "show-gifts-in-separate-zone-tooltip": "將創建的卡牌從「其他」區域移動到新的「其他（活動）」可折疊區域。",
                 "show-plagues-on-top-tooltip": "將所有DK瘟疫卡牌一起顯示在牌組頂部，以便更輕鬆地追蹤它們。",
                 "show-plagues-on-top": "在頂部顯示瘟疫"
             },
@@ -3260,14 +3281,14 @@
                     "dead-minions-this-game-tooltip": "當對手是死亡騎士或他們手上或牌組中有相關卡牌（例如「礦坑老大雷斯卡」）時，顯示本場比賽死亡的手下數量",
                     "discovers-tooltip": "計算對手「發現」卡牌的次數",
                     "libram-reduction-tooltip": "顯示對手的聖契已降低的法力值消耗",
-                    "cards-drawn-tooltip": "當你的牌組中有 {{cardName}}，或者如果它們是 {{cardClass}} 卡時，顯示它們在本賽局中抽到的牌數"
+                    "cards-drawn-tooltip": "當對手牌組中有 {{cardName}}，或者如果它們是 {{cardClass}} 卡時，顯示它們在本賽局中抽到的牌數"
                 },
                 "size-title": "尺寸與透明度",
                 "opacity-title": "透明度",
                 "hand-markers-title": "手牌標記",
                 "hide-generated-cards-label": "隱藏生成的卡牌",
                 "group-cards-by-zone-label": "新現代計牌器",
-                "hide-generated-cards-tooltip": "隱藏由其他卡牌創建且不在手牌或牌組中的卡牌。警告：隱藏產生的卡牌可能會導致某些功能在降級模式下運作（效能下降），例如卡牌突出顯示",
+                "hide-generated-cards-tooltip": "隱藏由其他卡牌創建且不在手牌或牌組中的卡牌。警告：隱藏創建的卡牌可能會導致某些功能在降級模式下運作（效能下降），例如卡牌突出顯示",
                 "show-dk-runes-tooltip": "在計牌器頂部新增一個部分，顯示牌組中已知的DK符文",
                 "show-dk-runes-label": "顯示DK符文",
                 "group-cards-by-zone-tooltip": "當啟用時，計牌器會將卡牌分成可折疊的部分（牌組、手牌和其他），從而啟用一些新功能。關閉它以使用傳統顯示模式，其中全部卡牌都分組在一個部分中",
@@ -3385,7 +3406,11 @@
                     "discovers-label": "發現",
                     "discovers-tooltip": "計算您「發現」卡牌的次數",
                     "libram-reduction-label": "聖契（已減少）",
-                    "libram-reduction-tooltip": "顯示您的聖契已降低的法力值消耗"
+                    "libram-reduction-tooltip": "顯示您的聖契已降低的法力值消耗",
+                    "spells-on-friendly-characters-label": "法術（友方）",
+                    "gifts-played-tooltip": "顯示您打出衍伸牌（由另一張牌所創建）的數量",
+                    "gifts-played-label": "已打出的事件卡牌",
+                    "spells-on-friendly-characters-tooltip": "顯示您在本賽局對友方角色施展的法術數量"
                 },
                 "discovery-zone-label": "發現區",
                 "discovery-zone-tooltip": "啟動後，計牌器中會出現一個新部分，其中包含賽局為您提供的「發現」選項。這可以讓您看到相關卡牌並突出顯示與牌組的協同作用。"
@@ -3505,7 +3530,7 @@
                 "simulator-number-of-sims-tooltip": "每場賽局的模擬次數。我們發現5000是很好的模擬次數。增加次數會增進計算準確性但也會要求更多的電腦資源。",
                 "show-minions-auto-highlight-label": "自動突出顯示手下",
                 "show-tribes-auto-highlight-label": "自動突出顯示手下類別",
-                "show-minions-auto-highlight-tooltip": "自動突出顯示您於遊玩某些英雄時總是想在旅店中購買的手下（例如「保本賭客」於海盜派奇）。",
+                "show-minions-auto-highlight-tooltip": "根據您的英雄和面板陣容自動突出顯示旅店中的一些手下（例如「保本賭客」於海盜派奇）。",
                 "show-tribes-auto-highlight-tooltip": "自動突出顯示您於遊玩某些英雄時總是想在旅店中購買的手下類別（例如\"元素\"於泫瓦拉）。",
                 "use-anomaly-filter-for-live-stats-label-short": "異變篩選器",
                 "show-hero-tips-tooltip": "奇妙的智慧球出現，您可以透過將滑鼠懸停在它上面來快速檢視目前英雄的專業貼士。",
@@ -3607,7 +3632,15 @@
                     "fade-higher-tier-cards-label": "淡出更高⭐️的卡牌",
                     "fade-higher-tier-cards-tooltip": "淡出高於目前旅店⭐️的卡牌"
                 },
-                "minions-list-show-compositions-label": "顯示陣容組成"
+                "minions-list-show-compositions-label": "顯示陣容組成",
+                "counter-beetle-label": "甲蟲",
+                "counter-free-refresh-label": "免費重骰",
+                "counter-magnetized-label": "合體",
+                "counter-baller-tooltip": "顯示你下一個球手的增益",
+                "counter-beetle-tooltip": "顯示甲蟲的攻擊力/生命值增益",
+                "counter-magnetized-tooltip": "顯示您在本賽局已合體的次數",
+                "counter-baller-label": "球手",
+                "counter-free-refresh-tooltip": "顯示您剩餘的免費重骰次數"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
