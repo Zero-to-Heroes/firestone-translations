@@ -266,7 +266,8 @@
             "end_of_turn": "Fin de tour",
             "reborn": "Réincarnation",
             "bg_spell": "Sort de taverne",
-            "choose_one": "Choix des armes"
+            "choose_one": "Choix des armes",
+            "modular": "Magnétisme"
         },
         "legendary-minion": "Serviteur légendaire",
         "patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -2187,6 +2188,24 @@
         "libram-reduction": {
             "player": "Vos librams coûtent ({{value}}) cristaux de moins",
             "opponent": "Les librams de votre adversaire coûtent ({{value}}) cristaux de moins"
+        },
+        "bgs-magnetized": {
+            "player": "Vous avez magnétisé {{value}} cartes pendant cette partie"
+        },
+        "bgs-free-refresh": {
+            "player": "Il vous reste {{value}} actualisations gratuites"
+        },
+        "bgs-baller": {
+            "player": "Vos modeleurs donnent +{{value}} ATQ/PV"
+        },
+        "bgs-beetles": {
+            "player": "Vos {{cardName}} ont +{{atk}}/+{{health}}"
+        },
+        "gifts-played": {
+            "player": "Vous avez joué {{value}} cartes qui n’étaient pas dans votre deck de départ"
+        },
+        "spells-on-friendly-characters": {
+            "player": "Vous avez lancé {{value}} sorts sur des personnages alliés pendant cette partie"
         }
     },
     "loading": {
@@ -2722,7 +2741,9 @@
                     },
                     "core-cards-header-tooltip": "Cartes essentielles à la troupe de guerre",
                     "add-ons-header-tooltip": "Bonnes cartes de la troupe de guerre",
-                    "pin-tooltip": "Cliquez pour épingler/désépingler tous les serviteurs de cette troupe de guerre"
+                    "pin-tooltip": "Cliquez pour épingler/désépingler tous les serviteurs de cette troupe de guerre",
+                    "cycles-header-tooltip": "Cartes bonnes pour cycler, c'est-à-dire à acheter puis vendre en déclenchant leurs effets, mais qui n’ont pas besoin de rester sur le plateau",
+                    "cycles-header": "Cycles"
                 }
             },
             "quests": {
@@ -3458,7 +3479,11 @@
                     "discovers-tooltip": "Compte le nombre de cartes que vous avez découvertes",
                     "discovers-label": "Découvertes",
                     "libram-reduction-label": "Réduction des librams",
-                    "libram-reduction-tooltip": "Afficher de combien est réduit le coût de vos librams"
+                    "libram-reduction-tooltip": "Afficher de combien est réduit le coût de vos librams",
+                    "gifts-played-label": "Cadeaux joués",
+                    "gifts-played-tooltip": "Affiche le nombre de cartes jouées créées par une autre carte",
+                    "spells-on-friendly-characters-label": "Sorts (alliés)",
+                    "spells-on-friendly-characters-tooltip": "Affiche le nombre de sorts lancés sur des personnages alliés pendant cette partie"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -3587,7 +3612,7 @@
                 "use-anomaly-filter-for-live-stats-tooltip": "Lorsque cette option est activée, les niveaux de héros et héroïnes affichés sur l’écran de sélection en début de partie prennent en compte l’anomalie active. ATTENTION : ceci peut entraîner une faible taille d’échantillonnage",
                 "show-minions-auto-highlight-label": "Surbrillance auto (serviteurs)",
                 "show-tribes-auto-highlight-label": "Surbrillance auto (types)",
-                "show-minions-auto-highlight-tooltip": "Met automatiquement en surbrillance certains serviteurs dans la taverne indispensables avec certains héros ou certaines héroïnes (par exemple, la parieuse convaincante avec Neunœuil le pirate).",
+                "show-minions-auto-highlight-tooltip": "Met automatiquement en surbrillance certains serviteurs dans la taverne selon votre troupe ou de votre héros ou héroïne (par exemple, la parieuse convaincante avec Neunœuil le pirate).",
                 "show-tribes-auto-highlight-tooltip": "Met automatiquement en surbrillance certains types dans la taverne indispensables avec certains héros ou certaines héroïnes (par exemple, les Élémentaires avec Chenvaa’la).",
                 "use-remote-simulator-tooltip": "Lorsque cette option est activée, les simulations de combat seront exécutées sur un serveur distant, libérant ainsi votre machine. Cependant, les résultats mettront un peu plus de temps à arriver",
                 "use-remote-simulator-label": "Simuler les combats à distance",
@@ -3682,7 +3707,15 @@
                     "header": "Troupes de guerre",
                     "fade-higher-tier-cards-label": "Effacer les cartes de niveau supérieur",
                     "fade-higher-tier-cards-tooltip": "Les cartes des niveaux supérieurs au vôtre sont effacées"
-                }
+                },
+                "counter-beetle-label": "Hannetons",
+                "counter-beetle-tooltip": "Affiche les buffs d’ATQ/de PV de vos hannetons",
+                "counter-baller-label": "Modeleurs",
+                "counter-baller-tooltip": "Affiche le buff de votre prochain modeleur",
+                "counter-magnetized-label": "Magnétisés",
+                "counter-magnetized-tooltip": "Affiche le nombre de magnétisations effectuées pendant cette partie",
+                "counter-free-refresh-label": "Actualisations gratuites",
+                "counter-free-refresh-tooltip": "Affiche le nombre d’actualisations gratuites restantes"
             },
             "session-widget": {
                 "title": "Widget de session",
