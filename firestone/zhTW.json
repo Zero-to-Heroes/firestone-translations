@@ -2400,7 +2400,18 @@
                 "deck-mulligan-overview-title": "牌組起手概觀",
                 "locked-premium-info-tooltip": "成為高級會員即可查詢您牌組的詳細起始手牌資訊。您每天可以免費使用此功能 {{value}} 次。",
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對上 {{opponentClass}} | {{sampleSize}} 的賽局",
-                "deck-mulligan-filter-time-tooltip": "顯示自 {{timeFrame}} {{patchDetails}} 的所有賽局。單擊進行更改。"
+                "deck-mulligan-filter-time-tooltip": "顯示自 {{timeFrame}} {{patchDetails}} 的所有賽局。單擊進行更改。",
+                "sample-size-tooltip": "遊玩該牌組型態的賽局數（如果有）；否則它會使用精確的牌組列表"
+            },
+            "lobby": {
+                "toggle-button-tooltip": "在列表視圖和詳細資料視圖之間切換",
+                "deck-stats": {
+                    "title": "牌組數據",
+                    "global-stats-subtitle": "全域牌組列表統計",
+                    "your-stats-subtitle": "你自己的統計"
+                },
+                "close-button-tooltip": "停用牌組總覽。您可以從「設定」中重新啟動它",
+                "toggle-button-locked-tooltip": "高級會員可以查看該套牌的起手換牌指南和統計資料。點擊訂閱以解鎖所有高級福利！"
             }
         },
         "unknown-mana-minion": "未知 {{manaCost}} 法力值手下",
@@ -3197,7 +3208,8 @@
                 "group-same-cards-tooltip": "將具有相同卡牌 ID 的所有卡牌分組在一起，無論它們是否被丟棄、死亡、摧毀、使用不同的法力值消耗等。",
                 "show-gifts-in-separate-zone-tooltip": "將創建的卡牌從「其他」區域移動到新的「其他（活動）」可折疊區域。",
                 "show-plagues-on-top-tooltip": "將所有DK瘟疫卡牌一起顯示在牌組頂部，以便更輕鬆地追蹤它們。",
-                "show-plagues-on-top": "在頂部顯示瘟疫"
+                "show-plagues-on-top": "在頂部顯示瘟疫",
+                "attack-counter-size": "攻擊力計數器尺寸"
             },
             "modes": {
                 "title": "計牌器在下列模式處於作用中狀態",
@@ -3281,7 +3293,8 @@
                     "dead-minions-this-game-tooltip": "當對手是死亡騎士或他們手上或牌組中有相關卡牌（例如「礦坑老大雷斯卡」）時，顯示本場比賽死亡的手下數量",
                     "discovers-tooltip": "計算對手「發現」卡牌的次數",
                     "libram-reduction-tooltip": "顯示對手的聖契已降低的法力值消耗",
-                    "cards-drawn-tooltip": "當對手牌組中有 {{cardName}}，或者如果它們是 {{cardClass}} 卡時，顯示它們在本賽局中抽到的牌數"
+                    "cards-drawn-tooltip": "當對手牌組中有 {{cardName}}，或者如果它們是 {{cardClass}} 卡時，顯示它們在本賽局中抽到的牌數",
+                    "abyssal-curse-tooltip": "顯示對手最高的深淵詛咒傷害"
                 },
                 "size-title": "尺寸與透明度",
                 "opacity-title": "透明度",
@@ -4206,7 +4219,59 @@
         "bonk-shaman": "幼龍棒槌手薩滿",
         "ffu-excavate-dk": "FFU 挖寶DK",
         "starship-rogue": "星艦盜賊",
-        "bbb-contol-dk": "鮮血控制DK"
+        "bbb-contol-dk": "鮮血控制DK",
+        "bbu-death-knight": "BBU 死亡騎士",
+        "bbu-plague-dk": "BBU 瘟疫DK",
+        "swarm-shaman": "超展開薩滿",
+        "buu-buttons-dk": "BUU 扣仔DK",
+        "buu-corpse-dk": "BUU 屍體DK",
+        "buu-death-knight": "BUU 死亡騎士",
+        "buu-starship-plague-dk": "BUU 星艦瘟疫DK",
+        "buttons-dk": "扣仔DK",
+        "ffu-frost-dk": "FFU 冰霜DK",
+        "ffu-highlander-dk": "FFU 無雙DK",
+        "ffu-plague-dk": "FFU 瘟疫DK",
+        "uu-unholy-dk": "雙穢邪 DK",
+        "fuu-excavate-dk": "FUU 挖寶DK",
+        "fuu-frostbitten-dk": "FUU 霜凍掠劫者DK",
+        "fuu-starship-dk": "FUU 星艦DK",
+        "rainbow-starship-dk": "彩虹星艦DK",
+        "u-unholy-dk": "單穢邪 DK",
+        "bad-mage": "壞壞法師",
+        "cycle-dh": "流放惡魔獵人",
+        "floppy-hunter": "軟萌多頭蛇獵人",
+        "giants-druid": "巨人德魯伊",
+        "giants-mage": "巨人法師",
+        "elemental-rogue": "元素盜賊",
+        "menagerie-paladin": "動物園聖騎士",
+        "menagerie-priest": "動物園牧師",
+        "starship-priest": "星艦牧師",
+        "tentacle-mage": "觸手法師",
+        "ff-kiljaeden-warlock": "雙冰基爾加丹術士術士",
+        "giants-shaman": "巨人薩滿",
+        "murmur-shaman": "莫爾墨薩滿",
+        "f-painlock": "單霜痛苦術士",
+        "ffu-deathrattle-warlock": "FFU 死亡之聲術士",
+        "u-armor-warlock": "單穢邪護甲術士",
+        "u-deathrattle-warlock": "單穢邪死亡之聲術士",
+        "uu-demon-warlock": "雙穢邪惡魔術士",
+        "uu-snek-warlock": "雙穢邪蛇蛇術士",
+        "fizzle-warrior": "攝影師菲茲爾戰士",
+        "shaper-discover-hunter": "地函塑造者發現獵人",
+        "xl-hydration-warrior": "40牌 補水站戰士",
+        "armor-priest": "護甲牧師",
+        "bbu-buttons-dk": "BBU 扣仔DK",
+        "bad-druid": "壞壞德魯伊",
+        "colifero-demon-hunter": "藝術家科利斐洛惡魔獵人",
+        "death-knight": "死亡騎士",
+        "deckless-warlock": "棄牌術士",
+        "uu-armor-warlock": "雙穢邪護甲術士",
+        "uu-deathrattle-warlock": "雙穢邪死亡之聲術士",
+        "ffu-armor-warlock": "FFU 護甲術士",
+        "ffu-frostbitten-dk": "FFU 霜凍掠劫者DK",
+        "fizzle-rogue": "攝影師菲茲爾盜賊",
+        "goldbeard-rogue": "竊貨手金鬍子盜賊",
+        "hydration-druid": "補水站德魯伊"
     },
     "arena": {
         "overlay": {
