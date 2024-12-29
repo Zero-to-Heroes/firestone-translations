@@ -266,7 +266,8 @@
             "end_of_turn": "ターン終了時",
             "reborn": "蘇り",
             "bg_spell": "酒場の呪文",
-            "choose_one": "選択"
+            "choose_one": "選択",
+            "modular": "超電磁"
         },
         "legendary-minion": "レジェンドミニオン",
         "patch": "パッチ{{version}}.{{number}} が{{date}} にリリース！",
@@ -2187,6 +2188,24 @@
         "libram-reduction": {
             "player": "自分の聖典のコストは{{value}}減る",
             "opponent": "対戦相手の聖典のコストは{{value}}減る"
+        },
+        "bgs-beetles": {
+            "player": "「{{cardName}}」は +{{atk}}/+{{health}}を持つ"
+        },
+        "bgs-free-refresh": {
+            "player": "{{value}}回の無料入替が残っている"
+        },
+        "bgs-magnetized": {
+            "player": "この試合中、{{value}}体を超電磁しました"
+        },
+        "gifts-played": {
+            "player": "最初のデッキに入っていなかったカードを{{value}}枚使用しました"
+        },
+        "spells-on-friendly-characters": {
+            "player": "この試合中、{{value}}枚の呪文を味方のキャラクターに使用しました"
+        },
+        "bgs-baller": {
+            "player": "ボーラーは+{{value}}のバフを与える"
         }
     },
     "loading": {
@@ -2452,7 +2471,18 @@
                 "deck-mulligan-filter-rank-bracket-tooltip": "{{rankBracket}}ランク帯での試合を表示します。クリックして変更できます",
                 "mulligan-card": "カード",
                 "deck-mulligan-filter-opponent-tooltip": "{{opponent}}相手の試合を表示します。クリックすると変更できます",
-                "deck-mulligan-filter-time-tooltip": "{{timeFrame}} 、{{patchDetails}}での試合を表示します。クリックすると変更できます。"
+                "deck-mulligan-filter-time-tooltip": "{{timeFrame}} 、{{patchDetails}}での試合を表示します。クリックすると変更できます。",
+                "sample-size-tooltip": "このアーキタイプでの試合数です(利用可能な場合)。そうでなければ、正確なデッキリストを使用します"
+            },
+            "lobby": {
+                "close-button-tooltip": "デッキ概要を無効化します。設定から再び有効化することができます",
+                "deck-stats": {
+                    "title": "デッキ統計",
+                    "global-stats-subtitle": "デッキの全体の統計",
+                    "your-stats-subtitle": "自分の統計"
+                },
+                "toggle-button-locked-tooltip": "プレミアムユーザーはマリガンガイドやデッキの統計を閲覧できます。クリックしてプレミアム機能を開放！",
+                "toggle-button-tooltip": "デッキリストと詳細ビューを切り替えます"
             }
         },
         "stolen-tooltip": "対戦相手から盗んだ",
@@ -2722,7 +2752,9 @@
                     "add-ons-header": "サブカード",
                     "core-cards-header-tooltip": "構成に必要不可欠なカードです",
                     "add-ons-header-tooltip": "構成にあると良いカードです",
-                    "pin-tooltip": "クリックすると、この構成の全てのミニオンをピン留め/ピン解除します"
+                    "pin-tooltip": "クリックすると、この構成の全てのミニオンをピン留め/ピン解除します",
+                    "cycles-header-tooltip": "サイクルに適したカードです。つまり、効果を発動させるために買い売りをしますが、盤面に残す必要はありません",
+                    "cycles-header": "サイクル"
                 }
             },
             "quests": {
@@ -3247,7 +3279,8 @@
                 "show-plagues-on-top": "｢疫病｣を一番上に表示",
                 "show-plagues-on-top-tooltip": "デスナイトの全ての疫病カードをデッキの一番上に表示し、目で追いやすくします",
                 "show-transformed-into-tooltip": "変身したカードをトラッカーに追加します",
-                "show-transformed-into-label": "変身したカードを表示"
+                "show-transformed-into-label": "変身したカードを表示",
+                "attack-counter-size": "攻撃力カウンターサイズ"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
@@ -3337,7 +3370,8 @@
                     "dead-minions-this-game-tooltip": "この試合中に死亡したミニオンの数を表示します。対戦相手がデスナイトのとき、又は関連するカード(「鉱山長レスカ」など)が手札か山札にあるときに表示されます。",
                     "discovers-tooltip": "対戦相手が発見した回数を表示します",
                     "libram-reduction-tooltip": "対戦相手の聖典のコスト軽減量を表示します",
-                    "cards-drawn-tooltip": "デッキに{{cardName}}がある場合、または{{cardClass}}の場合、この試合中にドローしたカードの枚数を表示します"
+                    "cards-drawn-tooltip": "デッキに{{cardName}}がある場合、または{{cardClass}}の場合、この試合中にドローしたカードの枚数を表示します",
+                    "abyssal-curse-tooltip": "対戦相手の最も高い「奈落の呪い」のダメージを表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3458,7 +3492,11 @@
                     "discovers-label": "発見",
                     "libram-reduction-label": "聖典の軽減",
                     "discovers-tooltip": "自分が発見した回数を表示します",
-                    "libram-reduction-tooltip": "自分の聖典のコスト軽減量を表示します"
+                    "libram-reduction-tooltip": "自分の聖典のコスト軽減量を表示します",
+                    "gifts-played-label": "生成カードの使用数",
+                    "spells-on-friendly-characters-tooltip": "この対戦中、味方のキャラクターに使用した呪文の数を表示します",
+                    "gifts-played-tooltip": "他のカードによって生成されたカードを使用した回数を表示します",
+                    "spells-on-friendly-characters-label": "呪文(味方)"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -3682,7 +3720,15 @@
                     "header": "構成",
                     "fade-higher-tier-cards-label": "高い酒場グレードのカードを薄くする",
                     "fade-higher-tier-cards-tooltip": "自分の現在の酒場グレードよりもグレードが高いミニオンをグレーアウトします"
-                }
+                },
+                "counter-baller-label": "ボーラー",
+                "counter-beetle-tooltip": "自分の甲虫の攻撃力/体力のバフを表示します",
+                "counter-baller-tooltip": "次のボーラーのバフを表示します",
+                "counter-beetle-label": "甲虫",
+                "counter-free-refresh-tooltip": "無料で入替できる残り回数を表示します",
+                "counter-magnetized-tooltip": "この試合中に超電磁した回数を表示します",
+                "counter-free-refresh-label": "無料入替",
+                "counter-magnetized-label": "超電磁"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -4248,7 +4294,59 @@
         "bonk-shaman": "Bonkシャーマン",
         "mech-warlock": "メカウォーロック",
         "xl-bfu-deathrattle-warlock": "XLレインボー断末魔ウォーロック",
-        "bbb-contol-dk": "赤コントロールデスナイト"
+        "bbb-contol-dk": "赤コントロールデスナイト",
+        "bbu-death-knight": "赤赤緑デスナイト",
+        "bbu-buttons-dk": "赤赤緑ボタンズデスナイト",
+        "bbu-plague-dk": "赤赤緑疫病デスナイト",
+        "buu-buttons-dk": "赤緑緑ボタンズデスナイト",
+        "buttons-dk": "ボタンズデスナイト",
+        "hydration-druid": "給水ステーションドルイド",
+        "swarm-shaman": "大群シャーマン",
+        "buu-corpse-dk": "赤緑緑死体デスナイト",
+        "buu-death-knight": "赤緑緑デスナイト",
+        "death-knight": "デスナイト",
+        "ffu-frost-dk": "青青緑凍気デスナイト",
+        "ffu-frostbitten-dk": "青青緑ぶんどり船員デスナイト",
+        "ffu-highlander-dk": "青青緑ハイランダーデスナイト",
+        "ffu-plague-dk": "青青緑疫病デスナイト",
+        "fuu-excavate-dk": "青青緑発掘デスナイト",
+        "bad-druid": "バッドドルイド",
+        "colifero-demon-hunter": "コリフェロデーモンハンター",
+        "cycle-dh": "サイクルデーモンハンター",
+        "uu-unholy-dk": "緑緑デスナイト",
+        "fuu-frostbitten-dk": "青緑緑ぶんどり船員デスナイト",
+        "fuu-starship-dk": "青緑緑宇宙船デスナイト",
+        "floppy-hunter": "フロッピーヒドラ",
+        "giants-druid": "巨人ドルイド",
+        "rainbow-starship-dk": "レインボー宇宙船デスナイト",
+        "u-unholy-dk": "緑デスナイト",
+        "armor-priest": "装甲プリースト",
+        "bad-mage": "バッドメイジ",
+        "elemental-rogue": "エレメンタルローグ",
+        "fizzle-rogue": "フィズルローグ",
+        "giants-mage": "巨人メイジ",
+        "giants-shaman": "巨人シャーマン",
+        "goldbeard-rogue": "金ひげローグ",
+        "menagerie-paladin": "動物園パラディン",
+        "menagerie-priest": "動物園プリースト",
+        "murmur-shaman": "マーマーシャーマン",
+        "starship-priest": "宇宙船プリースト",
+        "tentacle-mage": "触手ローグ",
+        "deckless-warlock": "デッキレスウォーロック",
+        "ff-kiljaeden-warlock": "青青キルジェイデンウォーロック",
+        "uu-armor-warlock": "緑緑装甲ウォーロック",
+        "uu-deathrattle-warlock": "緑緑断末魔ウォーロック",
+        "ffu-armor-warlock": "青青緑装甲ウォーロック",
+        "ffu-deathrattle-warlock": "青青緑断末魔ウォーロック",
+        "f-painlock": "青ペインウォーロック",
+        "u-armor-warlock": "緑装甲ウォーロック",
+        "uu-demon-warlock": "緑緑悪魔ウォーロック",
+        "fizzle-warrior": "フィズルウォリアー",
+        "uu-snek-warlock": "緑緑スネックウォーロック",
+        "shaper-discover-hunter": "有形マントル発見ハンター",
+        "xl-hydration-warrior": "XL給水ステーションウォリアー",
+        "buu-starship-plague-dk": "赤緑緑宇宙船疫病デスナイト",
+        "u-deathrattle-warlock": "緑断末魔ウォーロック"
     },
     "arena": {
         "overlay": {
