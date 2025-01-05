@@ -1157,7 +1157,7 @@
 				"hero-sort": {
 					"tier": "Tier",
 					"average-position": "Your avg. placement",
-					"mmr": "Net MMR",
+					"mmr": "Net Rating",
 					"games-played": "Games played",
 					"last-played": "Last played"
 				},
@@ -1220,13 +1220,13 @@
 				"hero": {
 					"average-position": "Average position",
 					"games-played": "Games played",
-					"net-mmr": "Net MMR",
+					"net-mmr": "Net Rating",
 					"net-mmr-tooltip": "Average MMR gain/loss per match",
 					"empty-state-text": "We couldn't find any stats for the selected filters. If you're trying to get trinket data, you will first need to refresh your local cache by going to the Settings > General > Data and clear the local cache."
 				},
 				"hero-details": {
 					"tabs": {
-						"mmr": "MMR",
+						"mmr": "Rating",
 						"final-warbands": "Last warbands",
 						"warband-stats": "Warband stats",
 						"winrate-stats": "Combat winrate",
@@ -1239,12 +1239,12 @@
 						"top-1": "Top 1",
 						"top-4": "Top 4",
 						"community-value-tooltip": "Average value for the community",
-						"net-mmr": "Avg. net MMR",
-						"net-mmr-tooltip": "Average MMR gain/loss per match",
-						"avg-mmr-gain": "Avg. MMR gain",
-						"avg-mmr-gain-tooltip": "Average MMR gain per match",
-						"avg-mmr-loss": "Avg. MMR loss",
-						"avg-mmr-loss-tooltip": "Average MMR loss per match"
+						"net-mmr": "Avg. net Rating",
+						"net-mmr-tooltip": "Average Rating gain/loss per match",
+						"avg-mmr-gain": "Avg. Rating gain",
+						"avg-mmr-gain-tooltip": "Average Rating gain per match",
+						"avg-mmr-loss": "Avg. Rating loss",
+						"avg-mmr-loss-tooltip": "Average Rating loss per match"
 					},
 					"last-warbands": {
 						"title": "Last {{value}} matches",
@@ -1283,7 +1283,7 @@
 					}
 				},
 				"rating": {
-					"title": "MMR / Matches",
+					"title": "Rating / Matches",
 					"empty-state-message": "Start playing Battlegrounds to collect some information",
 					"axis-label": "Rating"
 				},
@@ -1343,7 +1343,7 @@
 				"header-average-turns-to-complete": "Avg. Turns to Complete",
 				"header-placement-distribution": "Placement Distribution",
 				"header-combat-winrate": "Combat winrate",
-				"header-net-mmr": "Net MMR",
+				"header-net-mmr": "Net Rating",
 				"header-games-played": "Games played",
 				"header-games-played-tooltip": "The number of games you played with this hero for the selected time frame",
 				"header-tribes": "Strongest when in Lobby",
@@ -1712,7 +1712,7 @@
 				"versus": "VS",
 				"loot-icon-tooltip": "Cards added to deck after this round",
 				"treasure-icon-tooltip": "Cards added to deck after this round",
-				"mmr": "MMR",
+				"mmr": "Rating",
 				"show-stats-button": "Stats",
 				"show-stats-button-tooltip": "Show stats",
 				"watch-replay-button": "Watch",
@@ -2576,7 +2576,7 @@
 			"avg-position-tooltip": "Average final position",
 			"avg-position-your-tooltip": "Your value",
 			"avg-position-global-tooltip": "Global value",
-			"avg-position-details-tooltip-details-text": "The average final position for all players with this hero at this MMR range. This value is calculated by applying the following modifiers:",
+			"avg-position-details-tooltip-details-text": "The average final position for all players with this hero at this Rating range. This value is calculated by applying the following modifiers:",
 			"avg-position-details-tooltip-base-value": "Base value",
 			"matches-played-label": "Matches played",
 			"matches-played-tooltip": "Total matches you played with this hero",
@@ -2636,8 +2636,8 @@
 				"reward-turn-tooltip": "Quest reward received on turn {{turn}}",
 				"trinkets-title": "Trinkets",
 				"trinkets-empty-state": "No trinkets",
-				"mmr": "{{value}} MMR",
-				"mmr-tooltip": "The supposed MMR of this player. We use a lookup by name on the leaderboard to get this value, so it may not be accurate, especially at the lower MMRs."
+				"mmr": "{{value}} Rating",
+				"mmr-tooltip": "The supposed Rating of this player. We use a lookup by name on the leaderboard to get this value, so it may not be accurate, especially at the lower Ratings."
 			},
 			"minions-list": {
 				"navigation": {
@@ -2821,8 +2821,8 @@
 			"total-games": "{{value}} games",
 			"total-games-tooltip": "For {{gameMode}}, since {{value}} (use the Reset button at the top to start a new session)",
 			"total-games-tooltip-all-time": "For {{gameMode}}, since you have been using the app (use the Reset button at the top to start a new session)",
-			"mmr-tooltip": "Your current MMR",
-			"delta-mmr-tooltip": "Your MMR gain/loss since the start of your session"
+			"mmr-tooltip": "Your current Rating",
+			"delta-mmr-tooltip": "Your Rating gain/loss since the start of your session"
 		},
 		"groups": {
 			"battlegrounds": {
@@ -3024,12 +3024,12 @@
 					"text-2": "Need some more placeholder customization? Let me know on {{discordLink}}!",
 					"tokens": {
 						"mode": "The current mode (Ranked, Battlegrounds, etc.)",
-						"rank": "Your current rank in the mode (League + Rank in Ranked, MMR for Battlegrounds and Duels)",
+						"rank": "Your current rank in the mode (League + Rank in Ranked, Rating for Battlegrounds and Duels)",
 						"hero": "The full name of your current hero "
 					}
 				},
 				"in-game-text": {
-					"mmr": "{{value}} MMR",
+					"mmr": "{{value}} Rating",
 					"legend": "Legend {{rank}}",
 					"league": "{{league}} {{rank}}"
 				}
@@ -3537,8 +3537,8 @@
 				"show-intermediate-results-tooltip": "Show the intermediate results of the battle simulation, showing the odds evolve as the simulation is ongoing",
 				"popup-hero-selection-screen-label": "Popup hero selection screen",
 				"popup-hero-selection-screen-tooltip": "When active, the hero selection screen, with various stats on each choice, will popup when being offered the initial heroes",
-				"use-mmr-filter-for-live-stats-label-short": "MMR filter",
-				"use-mmr-filter-for-live-stats-tooltip": "When active, the hero ratings that are displayed on the Hero Selection screen at the start of a match will take into account your current MMR. WARNING: this may result in a low data sample size",
+				"use-mmr-filter-for-live-stats-label-short": "Rating filter",
+				"use-mmr-filter-for-live-stats-tooltip": "When active, the hero ratings that are displayed on the Hero Selection screen at the start of a match will take into account your current Rating. WARNING: this may result in a low data sample size",
 				"use-tribes-filter-for-live-stats-label-short": "Tribes filter",
 				"use-tribes-filter-for-live-stats-tooltip": "When active, the hero ratings that are displayed on the Hero Selection screen at the start of a match will take into account the tribes from the current lobby",
 				"use-anomaly-filter-for-live-stats-label-short": "Anomaly filter",
@@ -3678,14 +3678,14 @@
 			},
 			"leaderboard": {
 				"title": "Leaderboard info in Overlay",
-				"text": "These settings lets the app pull information from the official leaderboard directly into the overlay, so that you can have access to the other players' MMR information while playing.",
+				"text": "These settings lets the app pull information from the official leaderboard directly into the overlay, so that you can have access to the other players' Rating information while playing.",
 				"text-2": "IMPORTANT: You need to mouse over a player first for the app to be able to retrieve its leaderboard information.",
-				"text-3": "WARNING: the leaderboard only have information about the top players, and we have to do a rough match by name. So if you're using this on low/medium MMR, there is a high probability that you will get incorrect information.",
+				"text-3": "WARNING: the leaderboard only have information about the top players, and we have to do a rough match by name. So if you're using this on low/medium Rating, there is a high probability that you will get incorrect information.",
 				"enable": "Use leaderboard info in overlay",
 				"show-in-leaderboard": "Show over ranking tiles",
-				"show-in-leaderboard-tooltip": "Show the player name and MMR information directly on the ranking tiles in-game",
+				"show-in-leaderboard-tooltip": "Show the player name and Rating information directly on the ranking tiles in-game",
 				"show-in-opponent-recap": "Show in recap",
-				"show-in-opponent-recap-tooltip": "Show the player name and MMR information alongside the last board information"
+				"show-in-opponent-recap-tooltip": "Show the player name and Rating information alongside the last board information"
 			}
 		},
 		"achievements": {
