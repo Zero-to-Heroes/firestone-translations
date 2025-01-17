@@ -264,7 +264,8 @@
             "reborn": "重生",
             "bg_spell": "旅店法術",
             "choose_one": "二選一",
-            "modular": "合體"
+            "modular": "合體",
+            "bacon_buddy": "戰寵（夥伴）"
         },
         "legendary-minion": "傳說手下",
         "patch": "版本 {{version}}.{{number}} 釋出於 {{date}}",
@@ -1089,7 +1090,8 @@
                     "average-position": "平均名次",
                     "mmr": "評級分變化",
                     "games-played": "已遊玩局數",
-                    "last-played": "最後遊玩"
+                    "last-played": "最近遊玩",
+                    "pick-rate": "揀選率"
                 },
                 "rank": {
                     "all": "全部評級分排名",
@@ -1156,7 +1158,7 @@
                 },
                 "hero-details": {
                     "tabs": {
-                        "mmr": "配對評級分",
+                        "mmr": "天梯評級",
                         "final-warbands": "最後陣容",
                         "warband-stats": "戰場數據",
                         "winrate-stats": "賽局勝率",
@@ -1642,7 +1644,7 @@
                 "versus": "對上",
                 "loot-icon-tooltip": "在此局後加入牌組的卡",
                 "treasure-icon-tooltip": "在此局後加入牌組的卡",
-                "mmr": "配對評級分",
+                "mmr": "天梯評級",
                 "show-stats-button": "統計",
                 "show-stats-button-tooltip": "顯示統計數據",
                 "watch-replay-button": "觀看",
@@ -2136,6 +2138,9 @@
         },
         "spells-on-friendly-characters": {
             "player": "您在本賽局中對友方角色施放了 {{value}} 張法術"
+        },
+        "bgs-spells-played": {
+            "player": "你目前的增益為 +{{buff}}，還需要 {{target}} 才能達到下一個增益等級"
         }
     },
     "loading": {
@@ -2584,7 +2589,7 @@
             "avg-position-details-tooltip-base-value": "基礎值",
             "strategies-link": "点击檢視推荐策略",
             "place": "名次：{{value}}",
-            "avg-position-details-tooltip-details-text": "在此MMR範圍內使用該英雄的全部玩家的平均最終名次。該值是透過應用以下變數計算的：",
+            "avg-position-details-tooltip-details-text": "在此評級分範圍內使用該英雄的全部玩家的平均最終名次。該值是透過應用以下變數計算的：",
             "strategies-link-tooltip": "將開啟應用程式的主視窗以顯示該英雄的策略"
         },
         "hero-selection": {
@@ -2632,8 +2637,8 @@
                 "rewards-title": "任務獎勵",
                 "rewards-empty-state": "沒有任務獎勵",
                 "reward-turn-tooltip": "{{turn}} 回合後獲得任務獎勵",
-                "mmr": "{{value}} MMR",
-                "mmr-tooltip": "該玩家的假定 MMR。我們使用排行榜上的名稱查找來獲取此值，因此它可能不準確，尤其是在 MMR 較低的情況下。",
+                "mmr": "{{value}} 評級分",
+                "mmr-tooltip": "該玩家的推測天梯評級。我們使用排行榜上的名稱查找來獲取此值，因此它可能不準確，尤其是在評級分較低的情況下。",
                 "trinkets-empty-state": "沒有飾品",
                 "trinkets-title": "飾品"
             },
@@ -2821,7 +2826,7 @@
             "total-games": "{{value}} 場賽局",
             "total-games-tooltip": "從為 {{gameMode}} {{value}} 開始（使用頂部的重設按鈕開始一個新會話）",
             "total-games-tooltip-all-time": "從您為 {{gameMode}} 使用應用程式開始（使用上方的重設按鈕來啟動新的紀錄階段）",
-            "mmr-tooltip": "您目前的配對評級分",
+            "mmr-tooltip": "您目前的天梯評級",
             "delta-mmr-tooltip": "從紀錄階段開始至今您的配對評級分增減"
         },
         "groups": {
@@ -3115,7 +3120,7 @@
                 "advanced-config-title": "進階配置",
                 "in-game-text": {
                     "league": "{{league}} {{rank}}",
-                    "mmr": "{{value}} MMR",
+                    "mmr": "{{value}} 評級分",
                     "legend": "傳奇 {{rank}}"
                 },
                 "discord-presence-label": "Discord 豐富內嵌",
@@ -3124,7 +3129,7 @@
                 "activate-custom-in-match-text-tooltip": "自訂當使用者點擊您的使用者名稱並且您正在賽局時顯示的文本",
                 "in-game-details": {
                     "tokens": {
-                        "rank": "您目前在該模式中的排名（聯賽+排位賽中的排名，英雄戰場和決鬥擂台的MMR）",
+                        "rank": "您目前在該模式中的排名（聯賽+排位賽中的排名，英雄戰場和決鬥擂台的評級分）",
                         "hero": "您目前英雄的全名 ",
                         "mode": "目前模式（排名、英雄戰場等）"
                     },
@@ -3145,6 +3150,10 @@
             },
             "notifications": {
                 "title": "通知"
+            },
+            "widgets": {
+                "lock-widgets-tooltip": "將小工具鎖定，這樣它們就無法移動",
+                "lock-widgets-label": "鎖定小工具位置"
             }
         },
         "decktracker": {
@@ -3523,8 +3532,8 @@
                 "use-local-simulator-tooltip": "停用此功能，戰鬥模擬將在雲端上進行，這樣可以減輕電腦的負擔。但同時也需要一些時間傳送模擬結果",
                 "popup-hero-selection-screen-label": "彈出英雄揀選介面",
                 "popup-hero-selection-screen-tooltip": "啟用此功能，將會在揀選英雄時彈出各英雄的數據",
-                "use-mmr-filter-for-live-stats-label-short": "配對評級分篩選",
-                "use-mmr-filter-for-live-stats-tooltip": "啟用時，賽局開始時英雄選擇屏幕上顯示的英雄強度將考慮賽局目前可用的手下類別。 警告：這可能會導致數據樣本量非常低，因此使用風險自負:)",
+                "use-mmr-filter-for-live-stats-label-short": "評級分篩選",
+                "use-mmr-filter-for-live-stats-tooltip": "啟用時，賽局開始時英雄選擇介面將顯示考慮賽局目前可用的手下類別的英雄強度。 警告：這可能會導致數據樣本量非常低，因此使用風險自負:)",
                 "use-tribe-filter-for-live-stats-label-short": "種族篩選",
                 "use-tribe-filter-for-live-stats-tooltip": "啟用時，比賽開始時英雄選擇屏幕上顯示的英雄等級將考慮遊戲當前可用的種族。 警告：這可能會導致數據樣本量非常低，因此使用風險自負:)",
                 "show-next-opponent-recap-label": "顯示下個對手的戰況回顧",
@@ -3653,7 +3662,9 @@
                 "counter-beetle-tooltip": "顯示甲蟲的攻擊力/生命值增益",
                 "counter-magnetized-tooltip": "顯示您在本賽局已合體的次數",
                 "counter-baller-label": "球手",
-                "counter-free-refresh-tooltip": "顯示您剩餘的免費重骰次數"
+                "counter-free-refresh-tooltip": "顯示您剩餘的免費重骰次數",
+                "counter-spells-played-label": "已施放「旅店法術」",
+                "counter-spells-played-tooltip": "顯示4組以上的「旅店法術」總增益效果，以及目前獲得下一個增益效果的進度"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
@@ -3674,11 +3685,11 @@
                 "enable": "在覆蓋層中使用排行榜資訊",
                 "title": "在覆蓋層中顯示排行榜資訊",
                 "show-in-opponent-recap": "在回顧中顯示",
-                "text-3": "警告：排行榜只有頂級玩家的訊息，我們必須按名稱進行粗略的匹配。因此，如果您在低/中 MMR 上使用此功能，您很可能會得到不正確的資訊。",
+                "text-3": "警告：排行榜只有頂級玩家的訊息，我們必須按名稱進行粗略的匹配。因此，如果您在低/中評級分上使用此功能，您很可能會得到不正確的資訊。",
                 "show-in-leaderboard": "顯示排名小磁磚",
-                "show-in-leaderboard-tooltip": "直接在賽局中的排名圖塊上顯示玩家姓名和 MMR 資訊",
-                "text": "這些設定使應用程式可以將官方排行榜中的資訊直接提取到覆蓋層中，以便您可以在玩遊戲時存取其他玩家的 MMR 資訊。",
-                "show-in-opponent-recap-tooltip": "顯示玩家名稱和 MMR 以及最後的戰場資訊",
+                "show-in-leaderboard-tooltip": "直接在賽局中的排名圖塊上顯示玩家姓名和評級分資訊",
+                "text": "這些設定使應用程式可以將官方排行榜中的資訊直接提取到覆蓋層中，以便您可以在玩遊戲時存取其他玩家的評級分資訊。",
+                "show-in-opponent-recap-tooltip": "顯示玩家名稱和評級分以及最後的戰場資訊",
                 "text-2": "重要貼士：您需要先將滑鼠懸停在玩家上，應用程式才能檢索其排行榜資訊。"
             }
         },
@@ -3753,7 +3764,9 @@
                 "show-hero-selection-overlay": "英雄揀選階段覆蓋層",
                 "show-draft-tracker-tooltip": "在構築牌組時顯示計牌器，這樣您可以在將滑鼠懸停在卡牌挑選介面上時，突出顯示協同作用",
                 "tracker-size": "競技場牌組構築計牌器尺寸",
-                "draft-overlay-size": "構築覆蓋層尺寸"
+                "draft-overlay-size": "構築覆蓋層尺寸",
+                "show-card-stats-discover": "發現時的卡牌統計",
+                "show-card-stats-discover-tooltip": "（限高級會員）顯示發現時的卡牌統計數據"
             },
             "menu": {
                 "general": "常規"
