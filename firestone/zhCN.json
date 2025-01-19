@@ -267,7 +267,8 @@
             "reborn": "复生",
             "bg_spell": "酒馆法术",
             "choose_one": "抉择",
-            "modular": "磁力"
+            "modular": "磁力",
+            "bacon_buddy": "伙伴"
         },
         "legendary-minion": "传说随从",
         "patch": "补丁 {{version}}.{{number}} 发布于{{date}}",
@@ -1091,9 +1092,10 @@
                 "hero-sort": {
                     "tier": "按评级排序",
                     "average-position": "按平均位次排序",
-                    "mmr": "净MMR变化",
+                    "mmr": "你的净排名积分",
                     "games-played": "按对战场数排序",
-                    "last-played": "按最近使用排序"
+                    "last-played": "按最近使用排序",
+                    "pick-rate": "选取率"
                 },
                 "rank": {
                     "all": "不限分段",
@@ -1154,13 +1156,13 @@
                 "hero": {
                     "average-position": "平均位次",
                     "games-played": "对战场数",
-                    "net-mmr": "净MMR变化",
+                    "net-mmr": "净排名积分",
                     "net-mmr-tooltip": "每局比赛平均等级分变化",
                     "empty-state-text": "当前筛选条件下没有数据。如果你试图获取饰品数据，请进入“设置-通用-数据”删除缓存以刷新数据。"
                 },
                 "hero-details": {
                     "tabs": {
-                        "mmr": "等级分",
+                        "mmr": "排名积分",
                         "final-warbands": "上次阵容",
                         "warband-stats": "阵容数据",
                         "winrate-stats": "战斗胜率",
@@ -1173,12 +1175,12 @@
                         "top-1": "吃鸡",
                         "top-4": "前4",
                         "community-value-tooltip": "社区平均值",
-                        "net-mmr": "平均等级分变化",
-                        "net-mmr-tooltip": "每局比赛平均等级分变化",
+                        "net-mmr": "平均排名积分变化",
+                        "net-mmr-tooltip": "每场对战平均排名积分变化",
                         "avg-mmr-gain": "平均上分",
                         "avg-mmr-gain-tooltip": "每场比赛平均上分",
                         "avg-mmr-loss": "平均掉分",
-                        "avg-mmr-loss-tooltip": "每场对场平均掉分"
+                        "avg-mmr-loss-tooltip": "每场对战平均掉分"
                     },
                     "last-warbands": {
                         "title": "最近 {{value}} 场对战",
@@ -1217,7 +1219,7 @@
                     }
                 },
                 "rating": {
-                    "title": "等级分/局数",
+                    "title": "排名积分/对战场数",
                     "empty-state-message": "快去玩一场酒馆战棋",
                     "axis-label": "等级"
                 },
@@ -1271,7 +1273,7 @@
                 "header-average-position": "排名",
                 "header-placement-distribution": "排名分布",
                 "header-combat-winrate": "战斗胜率",
-                "header-net-mmr": "净MMR变化",
+                "header-net-mmr": "净排名积分",
                 "header-tribes": "最强流派",
                 "header-tribes-tooltip": "当前对局中对这个英雄平均排名最有提升的随从类型",
                 "tribe-info-tooltip": "在对局中有 {{ tribe }} 时，这个英雄的平均排名提升了 {{value}}",
@@ -1646,7 +1648,7 @@
                 "versus": "对阵",
                 "loot-icon-tooltip": "在这场对战后加入套牌的卡牌",
                 "treasure-icon-tooltip": "在这场对战后加入套牌的宝藏牌",
-                "mmr": "排名积分\n（MMR）",
+                "mmr": "排名积分",
                 "show-stats-button": "统计数据",
                 "show-stats-button-tooltip": "显示统计数据",
                 "watch-replay-button": "观看",
@@ -2206,6 +2208,9 @@
         },
         "gifts-played": {
             "player": "您已打出了不在初始套牌中的{{value}}张卡牌"
+        },
+        "bgs-spells-played": {
+            "player": "你当前的增益为 +{{buff}}，还需要{{target}}才能达到下一个增益等级"
         }
     },
     "loading": {
@@ -2703,7 +2708,7 @@
                 "rewards-empty-state": "无任务奖励",
                 "reward-turn-tooltip": "在第 {{turn}} 回合获得任务奖励",
                 "mmr-tooltip": "该玩家的预测等级分数。我们仅仅使用排行榜上的玩家昵称获取此数据（可能存在同名昵称），所以并不保证精准，尤其是在低分段。",
-                "mmr": "{{value}}分",
+                "mmr": "{{value}}排名积分",
                 "trinkets-empty-state": "无饰品",
                 "trinkets-title": "饰品"
             },
@@ -2891,7 +2896,7 @@
             "total-games": "{{value}} 局比赛",
             "total-games-tooltip": "从{{value}}起记录的{{gameMode}}战绩（使用顶部重置按钮可开始一段新的战绩记录）",
             "total-games-tooltip-all-time": "从您开始使用此应用起记录的{{gameMode}}战绩（使用顶部重置按钮可开始一段新的战绩记录）",
-            "mmr-tooltip": "你当前的等级分",
+            "mmr-tooltip": "你当前的排名积分",
             "delta-mmr-tooltip": "此战绩记录内您的上分/掉分"
         },
         "groups": {
@@ -3195,7 +3200,7 @@
                     "tokens": {
                         "mode": "当前模式（排名天梯、酒馆战棋等）",
                         "hero": "你当前英雄的全名 ",
-                        "rank": "你在当前模式中的等级（天梯排名段位+等级，酒馆战棋或对决模式的等级分数）"
+                        "rank": "你在当前模式中的等级（天梯排名段位+等级，酒馆战棋或对决模式的排名积分）"
                     },
                     "text": "你可以自定义显示你正在对局中的文本。你可以使用下列占位符："
                 },
@@ -3203,7 +3208,7 @@
                 "in-game-text-default-value": "在游戏中",
                 "in-game-text": {
                     "legend": "传说{{rank}}",
-                    "mmr": "{{value}} MMR",
+                    "mmr": "{{value}} 排名积分",
                     "league": "{{league}} {{rank}}"
                 }
             },
@@ -3216,6 +3221,10 @@
             },
             "notifications": {
                 "title": "通知"
+            },
+            "widgets": {
+                "lock-widgets-label": "锁定小部件位置",
+                "lock-widgets-tooltip": "将小部件锁定，这样它们就无法移动"
             }
         },
         "decktracker": {
@@ -3728,7 +3737,9 @@
                 "counter-free-refresh-label": "免费重掷",
                 "counter-magnetized-label": "磁力",
                 "counter-magnetized-tooltip": "显示您在本局对战中已磁力的次数",
-                "counter-free-refresh-tooltip": "显示您剩余的免费重掷次数"
+                "counter-free-refresh-tooltip": "显示您剩余的免费重掷次数",
+                "counter-spells-played-label": "已施放的法术",
+                "counter-spells-played-tooltip": "显示4组以上法术的总增益，以及你当前获得下一个增益的进度"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -3828,7 +3839,9 @@
                 "show-hero-selection-overlay": "选择英雄浮窗",
                 "show-draft-tracker-tooltip": "当抓牌时显示记牌器，在鼠标停靠选项时高亮显示可配合的卡牌",
                 "show-draft-tracker": "抓牌时记牌器",
-                "draft-overlay-size": "抓牌器尺寸"
+                "draft-overlay-size": "抓牌器尺寸",
+                "show-card-stats-discover": "发现时的卡牌数据",
+                "show-card-stats-discover-tooltip": "（会员专属）在发现卡牌时显示数据"
             },
             "menu": {
                 "general": "通用"
