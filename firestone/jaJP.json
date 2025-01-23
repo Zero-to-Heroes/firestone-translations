@@ -267,7 +267,8 @@
             "reborn": "蘇り",
             "bg_spell": "酒場の呪文",
             "choose_one": "選択",
-            "modular": "超電磁"
+            "modular": "超電磁",
+            "bacon_buddy": "バディ"
         },
         "legendary-minion": "レジェンドミニオン",
         "patch": "パッチ{{version}}.{{number}} が{{date}} にリリース！",
@@ -1091,9 +1092,10 @@
                 "hero-sort": {
                     "tier": "Tier",
                     "average-position": "自分の平均順位",
-                    "mmr": "Net MMR",
+                    "mmr": "レート",
                     "games-played": "プレイ回数",
-                    "last-played": "最近プレイ"
+                    "last-played": "最近プレイ",
+                    "pick-rate": "ピック率"
                 },
                 "rank": {
                     "all": "全てのランク",
@@ -1154,13 +1156,13 @@
                 "hero": {
                     "average-position": "平均順位",
                     "games-played": "プレイ回数",
-                    "net-mmr": "Net MMR",
+                    "net-mmr": "Netレート",
                     "net-mmr-tooltip": "1試合あたりの平均獲得/喪失 MMR",
                     "empty-state-text": "選択されたフィルターでは、戦績が見つかりませんでした。装飾品のデータを取得したい場合、設定>アプリ>データから、ローカルキャッシュを更新する必要があると思われます。"
                 },
                 "hero-details": {
                     "tabs": {
-                        "mmr": "レーティング",
+                        "mmr": "レート",
                         "final-warbands": "前回の戦場",
                         "warband-stats": "戦場のステータス",
                         "winrate-stats": "戦闘勝率",
@@ -1173,12 +1175,12 @@
                         "top-1": "1位",
                         "top-4": "トップ 4",
                         "community-value-tooltip": "コミュニティの平均順位",
-                        "net-mmr": "平均MMR",
-                        "net-mmr-tooltip": "1試合あたりの平均獲得/喪失 MMR",
-                        "avg-mmr-gain": "平均獲得 MMR",
-                        "avg-mmr-gain-tooltip": "1試合あたりの平均獲得 MMR",
-                        "avg-mmr-loss": "平均喪失 MMR",
-                        "avg-mmr-loss-tooltip": "1試合あたりの平均喪失 MMR"
+                        "net-mmr": "平均Netレート",
+                        "net-mmr-tooltip": "1試合あたりの平均獲得/喪失 レート",
+                        "avg-mmr-gain": "平均獲得レート",
+                        "avg-mmr-gain-tooltip": "1試合あたりの平均獲得 レート",
+                        "avg-mmr-loss": "平均喪失レート",
+                        "avg-mmr-loss-tooltip": "1試合あたりの平均喪失 レート"
                     },
                     "last-warbands": {
                         "title": "直近 {{value}} 試合",
@@ -1217,7 +1219,7 @@
                     }
                 },
                 "rating": {
-                    "title": "MMR / 試合",
+                    "title": "レート / 試合",
                     "empty-state-message": "バトルグラウンドを遊んで、情報を集めよう",
                     "axis-label": "レーティング"
                 },
@@ -1271,7 +1273,7 @@
                 "header-average-position": "順位",
                 "header-placement-distribution": "順位分布",
                 "header-combat-winrate": "戦闘勝率",
-                "header-net-mmr": "Net MMR",
+                "header-net-mmr": "Netレート",
                 "header-tribes": "ロビーで最も強い種族",
                 "header-tribes-tooltip": "試合に出現する時、そのヒーローの平均順位に最も寄与する種族",
                 "tribe-info-tooltip": "{{ tribe }} がロビーにいる場合、このヒーローの平均順位は {{value}} 上昇します。",
@@ -1646,7 +1648,7 @@
                 "versus": "VS",
                 "loot-icon-tooltip": "このラウンドの後、デッキにカードが追加されました",
                 "treasure-icon-tooltip": "このラウンドの後、デッキにカードが追加されました",
-                "mmr": "レーティング",
+                "mmr": "レート",
                 "show-stats-button": "統計",
                 "show-stats-button-tooltip": "統計を表示します",
                 "watch-replay-button": "見る",
@@ -2179,7 +2181,7 @@
             "player": "この対戦中、{{value}}体の海賊を使用した"
         },
         "ceaseless": {
-            "player": "自分と対戦相手は、合計{{value}} 枚のカードを引き、使用、破壊した"
+            "player": "{{cardName}}のコストは{{cost}}。自分と対戦相手は、合計{{value}} 枚のカードを引き、使用、破壊した"
         },
         "discovers": {
             "player": "{{value}}枚のカードを発見した",
@@ -2206,6 +2208,9 @@
         },
         "bgs-baller": {
             "player": "ボーラーは+{{value}}のバフを与える"
+        },
+        "bgs-spells-played": {
+            "player": "今のバフ量は+{{buff}}で、あと{{target}}回で強化される"
         }
     },
     "loading": {
@@ -2537,7 +2542,7 @@
             "import-tooltip": "クリックすると、この戦闘をシミュレータにインポートします",
             "temp-result-text": "結果計算中",
             "locked-premium-info-tooltip": "プレミアムになると、戦闘シミュレータの中間結果を有効化し、結果をより早く知ることができます。",
-            "locked-premium-info": "クイックシミュをアンロック",
+            "locked-premium-info": "クイックシミュを開放",
             "temp-result-tooltip": "中間結果を表示中です。シミュレーションは継続中で、最終結果は変わる可能性があります"
         },
         "sim": {
@@ -2655,7 +2660,7 @@
             "strategies-link": "クリックして推奨される戦略を確認",
             "strategies-link-tooltip": "このヒーローの戦略を表示するため、アプリのメインウィンドウを開きます",
             "avg-position-details-tooltip-base-value": "基本の値",
-            "avg-position-details-tooltip-details-text": "このMMR帯でのこのヒーローの平均最終順位です。以下の修正を適用した上で計算されます"
+            "avg-position-details-tooltip-details-text": "このレート帯でのこのヒーローの平均最終順位です。以下の修正を適用した上で計算されます"
         },
         "hero-selection": {
             "achievement-completed": "実績コンプリート済み",
@@ -2702,8 +2707,8 @@
                 "rewards-title": "クエスト報酬",
                 "rewards-empty-state": "クエスト報酬なし",
                 "reward-turn-tooltip": "クエスト報酬を{{turn}}ターン目に入手しました",
-                "mmr-tooltip": "このプレイヤーの推定MMRです。リーダーボード上を名前で検索してMMRを取得しているため、特に低MMRにおいて、誤った数値である可能性があります。",
-                "mmr": "{{value}} MMR",
+                "mmr-tooltip": "このプレイヤーの推定レートです。リーダーボード上を名前で検索してMMRを取得しているため、特に低MMRにおいて、誤った数値である可能性があります。",
+                "mmr": "レート:{{value}}",
                 "trinkets-title": "装飾品",
                 "trinkets-empty-state": "装飾品なし"
             },
@@ -2891,8 +2896,8 @@
             "total-games": "{{value}} 試合",
             "total-games-tooltip": "{{gameMode}}モードにおいて、{{value}} 以降 (新しいセッションを開始するには上にあるボタンを押してください)",
             "total-games-tooltip-all-time": "{{gameMode}}モードにおいて、アプリを使用し始めて以降  (新しいセッションを開始するには上にあるボタンを押してください)",
-            "mmr-tooltip": "自分の現在のMMR",
-            "delta-mmr-tooltip": "このセッションでのあなたの獲得/喪失 MMR です"
+            "mmr-tooltip": "自分の現在のレート",
+            "delta-mmr-tooltip": "このセッションでのあなたの獲得/喪失レートです"
         },
         "groups": {
             "battlegrounds": {
@@ -3195,7 +3200,7 @@
                     "tokens": {
                         "mode": "現在のモード(構築戦、バトルグラウンド等)",
                         "hero": "現在のヒーローのフルネーム ",
-                        "rank": "該当モードでのあなたの現在のランク(構築戦では段位+ランク、バトルグラウンドとデュエルではMMR)"
+                        "rank": "該当モードでのあなたの現在のランク(構築戦では段位+ランク、バトルグラウンドとデュエルではレート)"
                     },
                     "text": "自分の試合中に表示される名前をカスタマイズできます。以下のプレースホルダー(placeholder)を利用可能",
                     "text-2": "もっとプレースホルダー(placeholder)をカスタムしたい？Discordで教えてね {{discordLink}}!"
@@ -3204,7 +3209,7 @@
                 "in-game-text": {
                     "legend": "レジェンド{{rank}}位",
                     "league": "{{league}}{{rank}}",
-                    "mmr": "{{value}} MMR"
+                    "mmr": "レート{{value}}"
                 }
             },
             "appearance": {
@@ -3216,6 +3221,10 @@
             },
             "notifications": {
                 "title": "通知"
+            },
+            "widgets": {
+                "lock-widgets-tooltip": "ウィジェットを固定し、動かせなくします",
+                "lock-widgets-label": "ウィジェットの位置を固定"
             }
         },
         "decktracker": {
@@ -3370,7 +3379,7 @@
                     "dead-minions-this-game-tooltip": "この試合中に死亡したミニオンの数を表示します。対戦相手がデスナイトのとき、又は関連するカード(「鉱山長レスカ」など)が手札か山札にあるときに表示されます。",
                     "discovers-tooltip": "対戦相手が発見した回数を表示します",
                     "libram-reduction-tooltip": "対戦相手の聖典のコスト軽減量を表示します",
-                    "cards-drawn-tooltip": "デッキに{{cardName}}がある場合、または{{cardClass}}の場合、この試合中にドローしたカードの枚数を表示します",
+                    "cards-drawn-tooltip": "対戦相手のデッキに{{cardName}}がある場合、または相手が{{cardClass}}の場合、この試合中にドローしたカードの枚数を表示します",
                     "abyssal-curse-tooltip": "対戦相手の最も高い「奈落の呪い」のダメージを表示します"
                 },
                 "size-title": "サイズと不透明度",
@@ -3596,8 +3605,8 @@
                 "use-local-simulator-tooltip": "オフにすると、サーバー上で戦闘シミュレーションが実行され、パソコンの負荷が軽くなります。一方、結果が出るまでに少々時間がかかる場合があります。",
                 "popup-hero-selection-screen-label": "ヒーロー選択画面での統計表示",
                 "popup-hero-selection-screen-tooltip": "オンにすると、最初のヒーロー選択画面で様々な統計情報が表示されます",
-                "use-mmr-filter-for-live-stats-label-short": "MMR フィルタ",
-                "use-mmr-filter-for-live-stats-tooltip": "オンにすると、試合開始時のヒーロー選択画面における評価は、現在のMMRを考慮したものになります(警告：サンプルサイズが小さくなる可能性があります)",
+                "use-mmr-filter-for-live-stats-label-short": "レートフィルタ",
+                "use-mmr-filter-for-live-stats-tooltip": "オンにすると、試合開始時のヒーロー選択画面における評価は、現在のレートを考慮したものになります(警告：サンプルサイズが小さくなる可能性があります)",
                 "use-tribe-filter-for-live-stats-label-short": "種族フィルター",
                 "use-tribe-filter-for-live-stats-tooltip": "オンにすると、最初のヒーロー選択画面で、出現する種族を考慮したヒーローの評価が表示されます (警告：データのサンプルサイズが小さくなる可能性がありますので、自己責任で使用して下さい :)",
                 "show-next-opponent-recap-label": "次の対戦相手の概要を表示",
@@ -3625,7 +3634,7 @@
                 "use-anomaly-filter-for-live-stats-label-short": "異常フィルタ",
                 "show-tribes-auto-highlight-label": "自動ハイライト種族",
                 "show-minions-auto-highlight-label": "自動ハイライトミニオン",
-                "show-minions-auto-highlight-tooltip": "特定のヒーローで常に有用なミニオンが酒場に並んだとき、それらを自動でハイライトします(例えば、\"海賊パッチーズ\"を使っているときの「宵越しの博打打ち」など)",
+                "show-minions-auto-highlight-tooltip": "特定のヒーローやミニオンを使っていて、有用なミニオンが酒場に並んだとき、それらを自動でハイライトします(例えば、\"海賊パッチーズ\"を使っているときの「宵越しの博打打ち」など)",
                 "show-tribes-auto-highlight-tooltip": "特定のヒーローで有用な種族が酒場に並んだとき、それらを自動的にハイライトします(例えば、\"シェンバーラ\"を使っているときのエレメンタルなど)",
                 "use-remote-simulator-label": "リモート戦闘シミュレータを使う",
                 "use-remote-simulator-tooltip": "オンにすると、戦闘シミュレータをリモートサーバーで実行します。これにより、パソコンの負荷が軽くなりますが、結果が出るまでに少し時間がかかるようになります。",
@@ -3728,7 +3737,9 @@
                 "counter-free-refresh-tooltip": "無料で入替できる残り回数を表示します",
                 "counter-magnetized-tooltip": "この試合中に超電磁した回数を表示します",
                 "counter-free-refresh-label": "無料入替",
-                "counter-magnetized-label": "超電磁"
+                "counter-magnetized-label": "超電磁",
+                "counter-spells-played-tooltip": "4枚ごとに強化される呪文の合計バフと、次の強化までの進捗を表示します",
+                "counter-spells-played-label": "呪文使用数"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -3746,15 +3757,15 @@
                 "opacity-title": "ウィジェットの不透明度"
             },
             "leaderboard": {
-                "text-3": "警告：公式のリーダーボードは上位プレイヤーの情報のみを掲示していて、またアプリは名前の照会のみでプレイヤーのMMRを推定しています。そのため、この機能を低/中MMR帯で使用すると、高い確率で誤った情報を表示してしまうと思われます。",
+                "text-3": "警告：公式のリーダーボードは上位プレイヤーの情報のみを掲示していて、またアプリは名前の照会のみでプレイヤーのレートを推定しています。そのため、この機能を低/中MMR帯で使用すると、高い確率で誤った情報を表示してしまうと思われます。",
                 "title": "リーダーボード情報オーバーレイ",
                 "text-2": "重要：アプリがリーダーボードの情報を取得するためには、まず該当のプレイヤーにマウスオーバーする必要があります",
-                "text": "これらの設定により、このアプリは公式サイトにあるリーダーボードの情報を直接オーバーレイに取り込み、ゲーム中に他のプレーヤーのMMR情報にアクセスできるようになります。",
+                "text": "これらの設定により、このアプリは公式サイトにあるリーダーボードの情報を直接オーバーレイに取り込み、ゲーム中に他のプレーヤーのレート情報にアクセスできるようになります。",
                 "enable": "リーダーボードの情報をオーバーレイで使用する",
                 "show-in-opponent-recap": "戦績まとめに表示",
                 "show-in-leaderboard": "ランキングタイルを表示",
-                "show-in-opponent-recap-tooltip": "プレイヤー名とMMRの情報を、最後の盤面の情報と共に表示します",
-                "show-in-leaderboard-tooltip": "プレイヤー名とMMRの情報を、ゲーム中ランキングタイルに直接表示します"
+                "show-in-opponent-recap-tooltip": "プレイヤー名とレートの情報を、最後の盤面の情報と共に表示します",
+                "show-in-leaderboard-tooltip": "プレイヤー名とレートの情報を、ゲーム中ランキングタイルに直接表示します"
             }
         },
         "achievements": {
@@ -3828,7 +3839,9 @@
                 "tracker-size": "ドラフトトラッカーのサイズ",
                 "show-hero-selection-overlay": "ヒーロー選択オーバーレイ",
                 "show-draft-tracker": "ドラフト中のトラッカー",
-                "draft-overlay-size": "ドラフトオーバーレイサイズ"
+                "draft-overlay-size": "ドラフトオーバーレイサイズ",
+                "show-card-stats-discover-tooltip": "(プレミアムのみ)発見中にカード統計を表示",
+                "show-card-stats-discover": "発見中のカード統計"
             },
             "menu": {
                 "general": "全般"
@@ -4241,7 +4254,7 @@
         "fuu-death-knight": "青緑緑デスナイト",
         "fuu-deathrattle-dk": "青緑緑断末魔デスナイト",
         "fuu-mech-dk": "青緑緑メカデスナイト",
-        "among-us-dh": "Among Usデーモンハンター",
+        "among-us-dh": "クルーデーモンハンター",
         "attack-dh": "アタックデーモンハンター",
         "beast-demon-hunter": "獣デーモンハンター",
         "xl-rainbow-dk": "XLレインボーデスナイト",
