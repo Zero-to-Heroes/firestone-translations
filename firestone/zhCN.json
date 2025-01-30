@@ -115,7 +115,8 @@
             "credits": "鸣谢",
             "tutorial": "教程",
             "traveling_travel_agency": "行旅旅行社",
-            "great_dark_beyond": "深暗领域"
+            "great_dark_beyond": "深暗领域",
+            "heroes_of_starcraft": "星际英雄传"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -483,7 +484,8 @@
                 "card-drawn-impact": "抽到影响",
                 "card-drawn-impact-tooltip": "“抽到影响”指卡牌抽到胜率（{{drawWinrate}}）与职业胜率的差值",
                 "card-deck-impact": "对套牌影响",
-                "card-deck-impact-tooltip": "“对套牌影响”指单卡在套牌中的胜率与职业胜率的差值"
+                "card-deck-impact-tooltip": "“对套牌影响”指单卡在套牌中的胜率与职业胜率的差值",
+                "remove-locked-premium-info-tooltip": "永久隐藏此功能的信息框"
             },
             "card-stats": {
                 "header-drawn-winrate": "抽到胜率",
@@ -1302,7 +1304,9 @@
                 "header-average-position-high-mmr": "前{{value}}%位次",
                 "header-pickrate": "选取率",
                 "header-card-details": "卡牌",
-                "card-search-placeholder": "搜索卡牌…"
+                "card-search-placeholder": "搜索卡牌…",
+                "header-impact-tooltip": "打出这张牌时，最终位次平均会发生多少变化",
+                "header-impact": "影响"
             },
             "bgs-tier-list": {
                 "header": "任务评级表 ( {{value}} 场对战) "
@@ -2169,7 +2173,8 @@
             "opponent": "对手本回合已使用法术牌数量：{{value}}"
         },
         "damage-taken-on-your-turn": {
-            "player": "你在己方回合受到伤害：{{times}}次，共{{damage}}点"
+            "player": "你在己方回合受到伤害：{{times}}次，共{{damage}}点",
+            "opponent": "你的对手在其回合中受到了{{times}}次伤害，总计{{damage}}点伤害"
         },
         "locations-used": {
             "player": "你已使用地标效果：{{value}}次"
@@ -2211,6 +2216,18 @@
         },
         "bgs-spells-played": {
             "player": "你当前的增益为 +{{buff}}，还需要{{target}}才能达到下一个增益等级"
+        },
+        "protoss-spells": {
+            "player": "你已使用{{value}}张星灵法术"
+        },
+        "next-starship-launch": {
+            "player": "你的下一艘星舰发射法力消耗减少{{value}}点"
+        },
+        "protoss-minion-reduction": {
+            "player": "本局对战中你的星灵随从法力消耗减少{{game}}点，且你的下一个星灵随从法力消耗额外减少{{next}}点"
+        },
+        "combo-cards-played": {
+            "player": "你已使用{{value}}张连击牌"
         }
     },
     "loading": {
@@ -3380,7 +3397,9 @@
                     "discovers-tooltip": "计算对手发现卡牌的次数",
                     "libram-reduction-tooltip": "显示对手圣契法力值消耗的总减少量",
                     "cards-drawn-tooltip": "当对手的套牌中有{{cardName}}，或者它们是{{cardClass}}卡时，显示它们在本局对战中抽到的卡牌数量",
-                    "abyssal-curse-tooltip": "显示对手的深渊诅咒的最高伤害"
+                    "abyssal-curse-tooltip": "显示对手的深渊诅咒的最高伤害",
+                    "damage-taken-on-your-turn-tooltip": "向您提供对手作为{{classes}}职业对局时在对手的回合中所受伤害的信息（次数和总伤害）",
+                    "protoss-spells-tooltip": "显示对手本局使用过的星灵法术数量。只在对手是法师且至少使用过一次星灵法术时才显示"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3505,7 +3524,15 @@
                     "gifts-played-tooltip": "显示你打出的由另一张卡牌创建的延伸卡的数量",
                     "gifts-played-label": "已打出的礼物卡牌",
                     "spells-on-friendly-characters-label": "法术（友方）",
-                    "spells-on-friendly-characters-tooltip": "显示本局对战中你对友方角色施放的法术卡牌的数量"
+                    "spells-on-friendly-characters-tooltip": "显示本局对战中你对友方角色施放的法术卡牌的数量",
+                    "combo-cards-played-label": "已使用的连击牌",
+                    "protoss-minion-reduction-label": "星灵随从法力消耗减少",
+                    "next-starship-launch-label": "下一艘星舰发射费用减少",
+                    "protoss-spells-label": "已使用的星灵法术",
+                    "next-starship-launch-tooltip": "显示下一次星舰发射的法力消耗减少",
+                    "protoss-spells-tooltip": "如果你的牌组中有 {{cardName}}，则显示你在本局对战中使用过的星灵法术数量",
+                    "protoss-minion-reduction-tooltip": "显示星灵随从的总法力消耗减少数量（包括整个对局中适用的减少和仅适用于下一个随从的减少）",
+                    "combo-cards-played-tooltip": "当你手牌或牌库中有 {{cardName}} 时，显示你本局使用过的连击牌数量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -3739,7 +3766,7 @@
                 "counter-magnetized-tooltip": "显示您在本局对战中已磁力的次数",
                 "counter-free-refresh-tooltip": "显示您剩余的免费重掷次数",
                 "counter-spells-played-label": "已施放的法术",
-                "counter-spells-played-tooltip": "显示4组以上法术的总增益，以及你当前获得下一个增益的进度"
+                "counter-spells-played-tooltip": "显示你施放了多少组 4个法术，以及你目前达成下一组法术的进度"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -3841,7 +3868,7 @@
                 "show-draft-tracker": "抓牌时记牌器",
                 "draft-overlay-size": "抓牌器尺寸",
                 "show-card-stats-discover": "发现时的卡牌数据",
-                "show-card-stats-discover-tooltip": "（会员专属）在发现卡牌时显示数据"
+                "show-card-stats-discover-tooltip": "在发现卡牌时显示数据。非会员每天可使用 {{freeUses}} 场对局，会员用户可以无限制使用"
             },
             "menu": {
                 "general": "通用"
@@ -4359,7 +4386,45 @@
         "ff-kiljaeden-warlock": "双冰基尔加丹术",
         "uu-deathrattle-warlock": "双邪亡语术",
         "bad-druid": "大哥德",
-        "bad-mage": "大哥法"
+        "bad-mage": "大哥法",
+        "amalgam-priest": "融合怪牧",
+        "bbu-zerg-dk": "异虫DK（红红绿）",
+        "buu-zerg-dk": "异虫DK（红绿绿）",
+        "uu-zerg-unholy-dk": "双邪异虫DK",
+        "lynessa-otk-paladin": "莱妮莎OTK骑",
+        "bu-deathrattle-dk": "亡语DK（红/绿）",
+        "ffu-zerg-frost-dk": "异虫冰DK（蓝蓝绿）",
+        "fu-deathrattle-dk": "亡语DK（蓝绿）",
+        "uu-plague-dk": "双邪疫病DK",
+        "fu-zerg-dk": "异虫DK（蓝绿）",
+        "fuu-zerg-dk": "异虫DK（蓝绿绿）",
+        "uuu-deathrattle-dk": "邪亡语DK",
+        "zerg-attack-dh": "异虫打脸瞎",
+        "zerg-rainbow-dk": "异虫DK（彩虹）",
+        "zerg-unholy-dk": "异虫DK（绿）",
+        "protoss-druid": "星灵德",
+        "shaffar-hunter": "虚灵猎",
+        "protoss-mage": "星灵法",
+        "zerg-discover-hunter": "异虫发现猎",
+        "zerg-egg-hunter": "异虫蛋猎",
+        "zerg-hunter": "异虫猎",
+        "zerg-zoo-hunter": "异虫动物园猎",
+        "protoss-priest": "星灵牧",
+        "starship-paladin": "星舰骑",
+        "supernova-mage": "超新星法",
+        "fizzle-priest": "拍照牧",
+        "zealot-otk-priest": "狂热者OTK牧",
+        "protoss-rogue": "星灵贼",
+        "archon-rogue": "执政官贼",
+        "archon-cycle-rogue": "执政官循环贼",
+        "battlecruiser-shaman-": "战列舰萨",
+        "murmur-otk-shaman": "摩摩尔OTK萨",
+        "turbulus-shaman": "特布勒斯萨",
+        "f-location-warlock": "冰地标术",
+        "uu-location-warlock": "双邪地标术",
+        "location-warlock": "地标术",
+        "uu-deckless-warlock": "双邪弃牌术",
+        "starship-shaman": "星舰萨"
     },
     "arena": {
         "overlay": {
