@@ -115,7 +115,8 @@
             "credits": "Crédits",
             "tutorial": "Tutoriel",
             "traveling_travel_agency": "L’agence tous terrains",
-            "great_dark_beyond": "La Ténèbre de l’Au-delà"
+            "great_dark_beyond": "La Ténèbre de l’Au-delà",
+            "heroes_of_starcraft": "Héros de StarCraft"
         },
         "pack": {
             "classic": "Classique",
@@ -515,7 +516,8 @@
                 "card-drawn-impact": "Impact pioche",
                 "card-drawn-impact-tooltip": "L’impact de pioche est la différence entre le taux de victoires brut lorsque la carte est piochée ({{drawWinrate}}) et le taux de victoires de la classe",
                 "card-deck-impact": "Impact deck",
-                "card-deck-impact-tooltip": "L’impact deck est la différence entre le taux de victoires brut de la carte ({{deckWinrate}}) et le taux de victoires de la classe"
+                "card-deck-impact-tooltip": "L’impact deck est la différence entre le taux de victoires brut de la carte ({{deckWinrate}}) et le taux de victoires de la classe",
+                "remove-locked-premium-info-tooltip": "Cacher définitivement la bulle d’infos pour cette fonctionnalité"
             },
             "deck-details": {
                 "picks-header": "Choix",
@@ -1302,7 +1304,9 @@
                 "header-pick-rate-high-mmr-tooltip": "Taux de sélection pour le top {{value]] % des joueurs et joueuses",
                 "header-pickrate": "% sélection",
                 "header-card-details": "Carte",
-                "card-search-placeholder": "Rechercher..."
+                "card-search-placeholder": "Rechercher...",
+                "header-impact": "Impact",
+                "header-impact-tooltip": "En moyenne, de combien la position finale change lorsque cette carte est jouée"
             },
             "bgs-tier-list": {
                 "header": "Tierlist des quêtes ({{value}} parties) "
@@ -2169,7 +2173,8 @@
             "player": "Vous avez lancé {{value}} sorts pendant ce tour"
         },
         "damage-taken-on-your-turn": {
-            "player": "Vous avez subi {{times}} fois des dégâts pendant votre tour, pour un total de {{damage}} points de dégâts"
+            "player": "Vous avez subi {{times}} fois des dégâts pendant votre tour, pour un total de {{damage}} points de dégâts",
+            "opponent": "Votre adversaire a subi {{times}} fois des dégâts pendant son tour, pour un total de {{damage}} points de dégâts"
         },
         "locations-used": {
             "player": "Vous avez utilisé un lieu {{value}} fois pendant cette partie"
@@ -2208,6 +2213,21 @@
         },
         "spells-on-friendly-characters": {
             "player": "Vous avez lancé {{value}} sorts sur des personnages alliés pendant cette partie"
+        },
+        "protoss-spells": {
+            "player": "Vous avez joué {{value}} sorts protoss pendant cette partie"
+        },
+        "next-starship-launch": {
+            "player": "Votre prochain déploiement de vaisseau coûte ({{value}}) cristaux de moins"
+        },
+        "protoss-minion-reduction": {
+            "player": "Vos serviteurs protoss coûtent ({{game}}) cristaux de moins pendant cette partie, et votre prochain serviteur protoss coûte encore ({{next}}) cristaux de moins"
+        },
+        "combo-cards-played": {
+            "player": "Vous avez joué {{value}} cartes avec Combo pendant cette partie"
+        },
+        "bgs-spells-played": {
+            "player": "Votre buff actuel est +{{buff}}, et il vous faut {{target}} sorts de plus pour atteindre le niveau suivant"
         }
     },
     "loading": {
@@ -3377,7 +3397,9 @@
                     "libram-reduction-tooltip": "Afficher de combien est réduit le coût des librams de votre adversaire",
                     "discovers-tooltip": "Compte le nombre de cartes que votre adversaire a découvertes",
                     "cards-drawn-tooltip": "Lorsque votre adversaire a une carte {{cardName}} dans son deck, ou s’il ou elle joue un {{cardClass}}, affiche le nombre de cartes qu’il ou elle a piochées pendant cette partie",
-                    "abyssal-curse-tooltip": "Afficher les points de dégâts de la malédiction abyssale la plus forte de votre adversaire"
+                    "abyssal-curse-tooltip": "Afficher les points de dégâts de la malédiction abyssale la plus forte de votre adversaire",
+                    "damage-taken-on-your-turn-tooltip": "Donne des infos sur les dégâts subis par votre adversaire lors de ses tours (nombre de fois et total des dégâts) si sa classe est {{classes}}.",
+                    "protoss-spells-tooltip": "Affiche le nombre de sorts protoss lancés par votre adversaire pendant la partie. Ne s’affiche que contre les mages ayant lancé au moins un sort protoss."
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -3502,7 +3524,15 @@
                     "gifts-played-label": "Cadeaux joués",
                     "gifts-played-tooltip": "Affiche le nombre de cartes jouées créées par une autre carte",
                     "spells-on-friendly-characters-label": "Sorts (alliés)",
-                    "spells-on-friendly-characters-tooltip": "Affiche le nombre de sorts lancés sur des personnages alliés pendant cette partie"
+                    "spells-on-friendly-characters-tooltip": "Affiche le nombre de sorts lancés sur des personnages alliés pendant cette partie",
+                    "combo-cards-played-tooltip": "Lorsque vous avez {{carteName}} dans votre main ou votre deck, affiche le nombre de cartes avec Combo que vous avez jouées pendant cette partie.",
+                    "protoss-minion-reduction-label": "Réduction de coût des serviteurs protoss",
+                    "protoss-spells-label": "Sorts protoss joués",
+                    "protoss-minion-reduction-tooltip": "Affiche la réduction totale du coût de vos serviteurs protoss (à la fois celle permanente et celle qui ne s’applique qu’au prochain serviteur)",
+                    "next-starship-launch-label": "Réduction de coût du prochain déploiement de vaisseau",
+                    "protoss-spells-tooltip": "Affiche le nombre de sorts protoss que vous avez lancés dans cette partie, si {{cardName}} est dans votre deck.",
+                    "next-starship-launch-tooltip": "Affiche la réduction du coût de votre prochain déploiement de vaisseau",
+                    "combo-cards-played-label": "Cartes avec Combo jouées"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -3735,7 +3765,8 @@
                 "counter-magnetized-tooltip": "Affiche le nombre de magnétisations effectuées pendant cette partie",
                 "counter-free-refresh-label": "Actualisations gratuites",
                 "counter-free-refresh-tooltip": "Affiche le nombre d’actualisations gratuites restantes",
-                "counter-spells-played-label": "Sorts lancés"
+                "counter-spells-played-label": "Sorts lancés",
+                "counter-spells-played-tooltip": "Affiche le nombre de groupes de 4 sorts que vous avez lancés, ainsi que la progression vers la formation du groupe suivant"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -3828,7 +3859,7 @@
         },
         "arena": {
             "general": {
-                "show-card-selection-overlay-tooltip": "(Premium uniquement) Afficher les stats lors de la sélection des cartes",
+                "show-card-selection-overlay-tooltip": "(Premium uniquement) Afficher les stats lors de la sélection des cartes.",
                 "tracker-size": "Taille du tracker de draft",
                 "show-draft-tracker-tooltip": "Afficher le tracker pendant le draft, ce qui met en surbrillance les synergies quand vous passez la souris sur les cartes proposées",
                 "show-hero-selection-overlay-tooltip": "(Premium uniquement) Afficher les stats lors de la sélection du héros ou de l’héroïne",
@@ -3836,7 +3867,7 @@
                 "show-hero-selection-overlay": "Overlay de sélection des héros et héroïnes",
                 "show-draft-tracker": "Decktracker pendant le draft",
                 "draft-overlay-size": "Taille de l’overlay de draft",
-                "show-card-stats-discover-tooltip": "(Premium) Afficher les stats des cartes en découverte",
+                "show-card-stats-discover-tooltip": "Afficher les stats des cartes en découverte. Sans le Premium, vous pouvez l’utiliser pendant {{freeUses}} parties par jour ; le Premium offre un accès illimité",
                 "show-card-stats-discover": "Stats des cartes en découverte"
             },
             "menu": {
@@ -4355,7 +4386,45 @@
         "ffu-frostbitten-dk": "DK GGI Pirate givrée",
         "fuu-frostbitten-dk": "DK GII Pirate givrée",
         "bad-druid": "Druide nul",
-        "bad-mage": "Mage nul"
+        "bad-mage": "Mage nul",
+        "bu-deathrattle-dk": "DK SI Râle d’agonie",
+        "bbu-zerg-dk": "DK SSI zergs",
+        "buu-zerg-dk": "DK SII zergs",
+        "ffu-zerg-frost-dk": "DK GGI zergs Givre",
+        "uu-plague-dk": "DK II Plaies",
+        "fu-deathrattle-dk": "DK GI Râle d’agonie",
+        "fu-zerg-dk": "DK GI zergs",
+        "fuu-zerg-dk": "DK GII zergs",
+        "uu-zerg-unholy-dk": "DK II zergs",
+        "protoss-druid": "Druide protoss",
+        "uuu-deathrattle-dk": "DK impie Râle d’agonie",
+        "zerg-attack-dh": "DK attaque zergs",
+        "zerg-rainbow-dk": "DK arc-en-ciel zergs",
+        "zerg-unholy-dk": "DK impie zergs",
+        "protoss-mage": "Mage protoss",
+        "shaffar-hunter": "Chasseur Shaffar",
+        "supernova-mage": "Mage supernova",
+        "zerg-discover-hunter": "Chasseur découverte zergs",
+        "zerg-egg-hunter": "Chasseur œufs zergs",
+        "zerg-hunter": "Chasseur zergs",
+        "zerg-zoo-hunter": "Chasseur zoo zergs",
+        "amalgam-priest": "Prêtre amalgame",
+        "fizzle-priest": "Prêtre Féplouf",
+        "lynessa-otk-paladin": "Paladin OTK Lynessa",
+        "protoss-priest": "Prêtre protoss",
+        "starship-paladin": "Paladin vaisseau",
+        "zealot-otk-priest": "Prêtre OTK zélote",
+        "archon-cycle-rogue": "Voleur cycle archonte",
+        "archon-rogue": "Voleur archonte",
+        "battlecruiser-shaman-": "Chaman Cuirassé",
+        "uu-deckless-warlock": "Démoniste II sans deck",
+        "uu-location-warlock": "Démoniste II lieux",
+        "f-location-warlock": "Démoniste G lieux",
+        "location-warlock": "Démoniste lieux",
+        "murmur-otk-shaman": "Chaman OTK Murmure",
+        "protoss-rogue": "Voleur protoss",
+        "starship-shaman": "Chaman vaisseau",
+        "turbulus-shaman": "Chaman Turbulus"
     },
     "arena": {
         "overlay": {
