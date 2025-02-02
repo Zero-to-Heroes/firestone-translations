@@ -115,7 +115,8 @@
             "credits": "クレジット",
             "tutorial": "チュートリアル",
             "traveling_travel_agency": "トラベるトラベラーズ",
-            "great_dark_beyond": "暗黒宇宙ドラナイ伝"
+            "great_dark_beyond": "暗黒宇宙ドラナイ伝",
+            "heroes_of_starcraft": "スタークラフト英雄伝"
         },
         "pack": {
             "classic": "クラシック",
@@ -483,7 +484,8 @@
                 "card-drawn-impact": "ドロー影響",
                 "card-drawn-impact-tooltip": "ドロー影響は、クラス勝率と、そのカードを引いた際の勝率 ({{drawWinrate}}) の差を表します",
                 "card-deck-impact": "デッキ影響",
-                "card-deck-impact-tooltip": "デッキ影響は、クラス勝率と、そのカードがデッキにある際のデッキ勝率 ({{deckWinrate}})の差を表します"
+                "card-deck-impact-tooltip": "デッキ影響は、クラス勝率と、そのカードがデッキにある際のデッキ勝率 ({{deckWinrate}})の差を表します",
+                "remove-locked-premium-info-tooltip": "この機能において、情報ボックスを永久的に隠します"
             },
             "card-stats": {
                 "header-drawn-winrate": "ドロー時勝率",
@@ -1302,7 +1304,9 @@
                 "header-pick-rate-high-mmr": "トップ{{value}}%でのピック率",
                 "header-pickrate": "ピック率",
                 "header-card-details": "カード",
-                "card-search-placeholder": "カードを検索…"
+                "card-search-placeholder": "カードを検索…",
+                "header-impact-tooltip": "このカードをプレイしたとき、平均して最終順位がどれくらい変化するかを示します",
+                "header-impact": "影響"
             },
             "bgs-tier-list": {
                 "header": "クエストTierリスト ({{value}} 試合) "
@@ -2169,7 +2173,8 @@
             "opponent": "対戦相手はこのターン{{value}}枚の呪文を使用した"
         },
         "damage-taken-on-your-turn": {
-            "player": "自分のターンに{{times}}回、合計{{damage}}ダメージを受けた"
+            "player": "自分のターンに{{times}}回、合計{{damage}}ダメージを受けた",
+            "opponent": "対戦相手は、自身のターン中に{{times}}回、計{{value}}ダメージを受けた"
         },
         "locations-used": {
             "player": "この対戦中、場所を{{value}}回使用した"
@@ -2211,6 +2216,18 @@
         },
         "bgs-spells-played": {
             "player": "今のバフ量は+{{buff}}で、あと{{target}}回で強化される"
+        },
+        "protoss-spells": {
+            "player": "この対戦中、プロトス用呪文を{{value}}回使用した"
+        },
+        "combo-cards-played": {
+            "player": "この対戦中、コンボカードを{{value}}回使用した"
+        },
+        "next-starship-launch": {
+            "player": "次の宇宙船発射コストは{{value}}減る"
+        },
+        "protoss-minion-reduction": {
+            "player": "自分のプロトスミニオンはこのゲーム中{{game}}コスト減り、次のプロトスミニオンは更に{{next}}コスト減る"
         }
     },
     "loading": {
@@ -3380,7 +3397,9 @@
                     "discovers-tooltip": "対戦相手が発見した回数を表示します",
                     "libram-reduction-tooltip": "対戦相手の聖典のコスト軽減量を表示します",
                     "cards-drawn-tooltip": "対戦相手のデッキに{{cardName}}がある場合、または相手が{{cardClass}}の場合、この試合中にドローしたカードの枚数を表示します",
-                    "abyssal-curse-tooltip": "対戦相手の最も高い「奈落の呪い」のダメージを表示します"
+                    "abyssal-curse-tooltip": "対戦相手の最も高い「奈落の呪い」のダメージを表示します",
+                    "damage-taken-on-your-turn-tooltip": "対戦相手が{{classes}}の場合、対戦相手が自身のターン中に喰らったダメージと、その回数を表示します",
+                    "protoss-spells-tooltip": "対戦相手がこの試合中に使用したプロトス呪文の数を表示します。対戦相手がメイジで、少なくとも1つのプロトス呪文を使用した場合のみ表示されます"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3505,7 +3524,15 @@
                     "gifts-played-label": "生成カードの使用数",
                     "spells-on-friendly-characters-tooltip": "この対戦中、味方のキャラクターに使用した呪文の数を表示します",
                     "gifts-played-tooltip": "他のカードによって生成されたカードを使用した回数を表示します",
-                    "spells-on-friendly-characters-label": "呪文(味方)"
+                    "spells-on-friendly-characters-label": "呪文(味方)",
+                    "protoss-spells-tooltip": "{{cardName}}がデッキにある場合、この試合中に使用したプロトス呪文の数を表示します",
+                    "combo-cards-played-tooltip": "{{cardName}}が手札かデッキにある場合、この試合中に使用したコンボカードの数を表示します",
+                    "protoss-minion-reduction-label": "プロトスミニオンのコスト軽減",
+                    "next-starship-launch-label": "次の宇宙船発射コスト軽減",
+                    "protoss-spells-label": "プロトス呪文使用数",
+                    "next-starship-launch-tooltip": "次の宇宙船を発射するときに軽減されるコストを表示します",
+                    "protoss-minion-reduction-tooltip": "自分のプロトスミニオンが軽減されるコストを表示します。ゲーム全体に適用されるものと、次のミニオンにのみ適用されるものの両方が表示されます。",
+                    "combo-cards-played-label": "コンボカード使用数"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -3840,7 +3867,7 @@
                 "show-hero-selection-overlay": "ヒーロー選択オーバーレイ",
                 "show-draft-tracker": "ドラフト中のトラッカー",
                 "draft-overlay-size": "ドラフトオーバーレイサイズ",
-                "show-card-stats-discover-tooltip": "(プレミアムのみ)発見中にカード統計を表示",
+                "show-card-stats-discover-tooltip": "発見中に統計を表示します。一般ユーザーは一日に{{freeUses}}試合まで、プレミアムユーザーは無制限に使用できます",
                 "show-card-stats-discover": "発見中のカード統計"
             },
             "menu": {
@@ -4359,7 +4386,45 @@
         "shaper-discover-hunter": "有形マントル発見ハンター",
         "xl-hydration-warrior": "XL給水ステーションウォリアー",
         "buu-starship-plague-dk": "赤緑緑宇宙船疫病デスナイト",
-        "u-deathrattle-warlock": "緑断末魔ウォーロック"
+        "u-deathrattle-warlock": "緑断末魔ウォーロック",
+        "uu-zerg-unholy-dk": "緑緑ザーグデスナイト",
+        "lynessa-otk-paladin": "リネッサOTKパラディン",
+        "uuu-deathrattle-dk": "緑断末魔デスナイト",
+        "zerg-unholy-dk": "ザーグ緑デスナイト",
+        "amalgam-priest": "融合体プリースト",
+        "archon-cycle-rogue": "アーコンサイクルローグ",
+        "archon-rogue": "アーコンローグ",
+        "bbu-zerg-dk": "赤赤緑ザーグデスナイト",
+        "buu-zerg-dk": "赤緑緑ザーグデスナイト",
+        "bu-deathrattle-dk": "赤緑断末魔デスナイト",
+        "uu-plague-dk": "緑緑疫病デスナイト",
+        "ffu-zerg-frost-dk": "緑緑青ザーグ凍気デスナイト",
+        "fu-deathrattle-dk": "緑青断末魔デスナイト",
+        "fu-zerg-dk": "緑青ザーグデスナイト",
+        "fuu-zerg-dk": "青緑緑ザーグデスナイト",
+        "fizzle-priest": "フィズルプリースト",
+        "protoss-druid": "プロトスドルイド",
+        "protoss-mage": "プロトスメイジ",
+        "protoss-priest": "プロトスプリースト",
+        "protoss-rogue": "プロトスローグ",
+        "shaffar-hunter": "シャファルハンター",
+        "starship-paladin": "宇宙船パラディン",
+        "supernova-mage": "超新星メイジ",
+        "zealot-otk-priest": "Zetalot OTKプリースト",
+        "zerg-attack-dh": "ザーグアタックデーモンハンター",
+        "zerg-discover-hunter": "ザーグ発見ハンター",
+        "zerg-egg-hunter": "ザーグ卵ハンター",
+        "zerg-hunter": "ザーグハンター",
+        "zerg-rainbow-dk": "ザーグレインボーデスナイト",
+        "zerg-zoo-hunter": "ザーグズーハンター",
+        "battlecruiser-shaman-": "宇宙船シャーマン",
+        "uu-deckless-warlock": "緑緑デッキレスウォーロック",
+        "uu-location-warlock": "緑緑場所ウォーロック",
+        "f-location-warlock": "凍気場所ウォーロック",
+        "location-warlock": "場所ウォーロック",
+        "murmur-otk-shaman": "マーマーOTKシャーマン",
+        "turbulus-shaman": "タービュランスシャーマン",
+        "starship-shaman": "宇宙船シャーマン"
     },
     "arena": {
         "overlay": {
