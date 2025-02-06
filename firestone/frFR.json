@@ -380,6 +380,12 @@
                 "time": {
                     "all-time-tooltip": "Inclut toutes les parties que vous avez chargées dans l’application. Par défaut, ces données sont celles des 100 derniers jours, mais vous pouvez les modifier dans les paramètres, sous Général > Données."
                 }
+            },
+            "errors": {
+                "no-cards": {
+                    "title": "Chargement des cartes impossible",
+                    "message": "ERREUR CRITIQUE :Impossible de charger la base de données des cartes. Cliquez pour obtenir plus d’infos en ligne."
+                }
             }
         },
         "tray": {
@@ -497,7 +503,8 @@
                 "header-play-on-curve-winrate": "% victoires on curve",
                 "header-play-on-curve-winrate-tooltip": "Le taux de victoires quand vous jouez cette carte on curve, c'est-à-dire au tour où vous avez autant de mana que le coût de cette carte",
                 "header-play-on-curve-total": "Nb jouées on curve",
-                "header-deck-total-tooltip": "Le nombre de parties avec cette carte dans le deck"
+                "header-deck-total-tooltip": "Le nombre de parties avec cette carte dans le deck",
+                "header-discovered": "Points de données"
             },
             "class-tier-list": {
                 "header-placement-distribution-tooltip": "Indique à quel point une classe se détache des autres pour un nombre donné de victoires. ",
@@ -1040,7 +1047,13 @@
                         "drawn-winrate-header-tooltip": "Taux de victoires moyen lorsque la carte est piochée en cours de partie ou présente dans votre main de départ à la fin du mulligan",
                         "drawn-winrate-impact-header": "Impact quand piochée",
                         "drawn-winrate-header": "% victoires (piochée)",
-                        "mulligan-winrate-impact-header": "Impact sur le mulligan"
+                        "mulligan-winrate-impact-header": "Impact sur le mulligan",
+                        "discovered-winrate-header-tooltip": "Taux de victoires moyen lorsque la carte est découverte pendant la partie",
+                        "discovered-winrate-impact-header": "Impact de découverte",
+                        "discovered-winrate-header": "% victoires (découverte)",
+                        "discovered-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du deck lorsque la carte est découverte pendant la partie",
+                        "discovered-winrate-impact-tooltip-low-data": "Attention : cette carte n’a été découverte que {{value}} fois. Les stats peuvent être imprécises.",
+                        "discovered-winrate-impact-tooltip-data": "Cette carte a été découverte {{value}} fois"
                     },
                     "deck-type": "Deck"
                 },
@@ -1056,7 +1069,9 @@
                 "matchups-header-tooltip": "Afficher le taux de victoires contre toutes les autres classes. Les matchups entre archétypes seront ajoutés plus tard, restez à l’écoute :)",
                 "matchup-vs-tooltip": "VS {{className}}",
                 "last-updated": "Dernière mise à jour",
-                "total-games": "Nb parties"
+                "total-games": "Nb parties",
+                "discover-stats-header": "Stats de découverte",
+                "discover-stats-header-tooltip": "Affiche les stats des cartes découvertes pendant la partie."
             }
         },
         "battlegrounds": {
@@ -2227,7 +2242,7 @@
             "player": "Vous avez joué {{value}} cartes avec Combo pendant cette partie"
         },
         "bgs-spells-played": {
-            "player": "Votre buff actuel est +{{buff}}, et il vous faut {{target}} sorts de plus pour atteindre le niveau suivant"
+            "player": "Vous avez joué {{buff}} groupes de 4 sorts, et il vous faut {{target}} sorts de plus pour former un nouveau groupe"
         }
     },
     "loading": {
