@@ -377,6 +377,12 @@
                 "time": {
                     "all-time-tooltip": "包含您在應用程式中加載的全部賽局。預設情況下，這些資料是過去 100 天的資料，但您可以在「設定」中的「常規」>「資料」下變更此設定。"
                 }
+            },
+            "errors": {
+                "no-cards": {
+                    "title": "無法載入卡牌",
+                    "message": "嚴重錯誤：無法載入卡牌資料庫。點擊即可線上檢視更多資訊。"
+                }
             }
         },
         "tray": {
@@ -691,7 +697,7 @@
                         "error-hand-full": "我的手牌滿了",
                         "error-full-minions": "我的手下太多了",
                         "error-stealth": "無法指定潛行的手下",
-                        "error-play": "我無法出這張卡牌",
+                        "error-play": "我無法打出這張卡牌",
                         "error-target": "我無法選定那個目標",
                         "error-taunt": "必須先攻擊擁有嘲諷的手下",
                         "error-generic": "我不能這麼做",
@@ -1034,7 +1040,8 @@
                         "discovered-winrate-impact-header": "發現—影響",
                         "discovered-winrate-header": "發現—勝率",
                         "discovered-winrate-impact-header-tooltip": "顯示賽局中發現的卡牌相對於牌組勝率的平均勝率",
-                        "discovered-winrate-impact-tooltip-low-data": "警告 - 此牌僅發現過 {{value}} 次，因此統計資料可能不準確"
+                        "discovered-winrate-impact-tooltip-low-data": "警告 - 此牌僅發現過 {{value}} 次，因此統計資料可能不準確",
+                        "discovered-winrate-impact-tooltip-data": "此牌已發現過 {{value}} 次"
                     },
                     "archetype-type": "牌組型態",
                     "deck-type": "牌組列表"
@@ -1955,8 +1962,8 @@
             "player": "鬼靈掠取者會造成 {{value}} 傷害"
         },
         "lady-darkvein": {
-            "player": "{{value}} 是您最後施放的一張暗影法術",
-            "opponent": "{{value}} 是對手打出的最後一張暗影法術"
+            "player": "{{value}} 是您最後施放的一個暗影法術",
+            "opponent": "{{value}} 是對手打出的最後一個暗影法術"
         },
         "grey-sage-parrot": {
             "player": "您最後打出消耗為 {{cost}} 或更多的法術是 {{value}}",
@@ -2015,8 +2022,8 @@
             "opponent": "對手於本賽局中打出過 {{value}} 張「軍情七處」卡牌"
         },
         "spell": {
-            "player": "您於本賽局中施放過 {{value}} 張法術",
-            "opponent": "對手於本賽局中施放過 {{value}} 張法術"
+            "player": "您於本賽局中施放過 {{value}} 個法術",
+            "opponent": "對手於本賽局中施放過 {{value}} 個法術"
         },
         "watchpost": {
             "player": "您於本賽局中打出過 {{value}} 張哨所",
@@ -2032,7 +2039,7 @@
             "player": "『透支』会造成 {{value}} 损害"
         },
         "naga-giant": {
-            "player": "你的納迦巨人消耗 {{cost}} 點法力水晶（你於本賽局中施放了 {{spells}} 張法術，價值 {{spellsMana}} 法力值）"
+            "player": "你的納迦巨人消耗 {{cost}} 點法力水晶（你於本賽局中施放了 {{spells}} 個法術，價值 {{spellsMana}} 法力值）"
         },
         "specific-summons": {
             "opponent": "對手已召喚了 {{value}} 個「{{cardName}}」手下",
@@ -2043,7 +2050,7 @@
             "opponent": "對手已經在這場對局中消耗了 {{value}} 具屍體"
         },
         "gardens-grace": {
-            "player": "你的下一張「{{cardName}}」卡牌消耗（{{cost}}）點法力水晶（你於本賽局中施放了 {{spells}} 張神聖法術，價值 {{spellsMana}} 法力值）"
+            "player": "你的下一張「{{cardName}}」卡牌消耗（{{cost}}）點法力水晶（你於本賽局中施放了 {{spells}} 個神聖法術，總計 {{spellsMana}} 點法力水晶）"
         },
         "chained-guardian": {
             "player": "您已將 {{value}} 張瘟疫洗入對手的牌堆中"
@@ -2077,7 +2084,7 @@
             "up-to": "最高可達 {{maxValue}}"
         },
         "bgs-lord-of-gains": {
-            "player": "本回合你已經施放了 {{value}} 張不同的法術：{{cards}}"
+            "player": "本回合你已經施放了 {{value}} 個不同的法術：{{cards}}"
         },
         "wheel-of-death": {
             "player": "快脆啲！你會在 {{value}} 回合後賣鹹鴨蛋！！！",
@@ -2101,7 +2108,7 @@
             "player": "您打出了 {{value}} 張消耗（1）法力值的卡牌"
         },
         "holy-spells": {
-            "player": "您已在本賽局中施放了 {{value}} 張神聖法術"
+            "player": "您已在本賽局中施放了 {{value}} 個神聖法術"
         },
         "bgs-blood-gem": {
             "player": "你的「{{cardName}}」給予 +{{attack}}/+{{health}}"
@@ -2113,15 +2120,15 @@
             "player": "您已打出的其他職業的 {{value}} 卡牌"
         },
         "queensguard": {
-            "player": "本回合你已經施放了 {{value}} 張法術",
-            "opponent": "對手本回合已施放 {{value}} 張法術"
+            "player": "本回合你已經施放了 {{value}} 個法術",
+            "opponent": "對手本回合已施放 {{value}} 個法術"
         },
         "elemental-streak": {
             "player": "您已連續 {{value}} 回合打出元素",
             "opponent": "對手已連續 {{value}} 回合打出過元素"
         },
         "bgs-tuskarr-raider": {
-            "player": "您在本賽局已打出 {{value}} 張海盜"
+            "player": "您在本賽局已打出 {{value}} 個海盜"
         },
         "ceaseless": {
             "player": "現在 {{cardName}} 的法力水晶為 {{cost}} 點。你和對手已經抽出、打出或摧毀了 {{value}} 張卡牌"
@@ -2150,10 +2157,10 @@
             "player": "你的 {{cardName}} 擁有 +{{atk}}/+{{health}}"
         },
         "spells-on-friendly-characters": {
-            "player": "您在本賽局中對友方角色施放了 {{value}} 張法術"
+            "player": "您在本賽局中對友方角色施放了 {{value}} 個法術"
         },
         "bgs-spells-played": {
-            "player": "你目前的增益為 +{{buff}}，還需要多施放 {{target}} 個法術才能達到下一個增益等級"
+            "player": "你已達成 {{buff}} 組 「每施放 4 個法術」，目前作成下一組的進度是 {{target}}"
         },
         "protoss-spells": {
             "player": "您已施放 {{value}} 個神族法術"
@@ -3372,7 +3379,7 @@
                     "murozond-label": "『恆龍之王』姆多茲諾",
                     "murozond-tooltip": "當「『恆龍之王』姆多茲諾」在手中時，按打出順序顯示對手上回合打出過的全部卡牌",
                     "lady-darkvein-label": "暗脈女士",
-                    "lady-darkvein-tooltip": "當你手上有張「暗脈女士」的卡牌時，顯示上一張成功施放的暗影法術（如果有的話）",
+                    "lady-darkvein-tooltip": "當你手上有張「暗脈女士」的卡牌時，顯示上一個成功施放的暗影法術（如果有的話）",
                     "grey-sage-parrot-label": "灰綠鸚鵡",
                     "grey-sage-parrot-tooltip": "當您手上有灰綠鸚鵡時，顯示您最後打出的消耗5以上的法術",
                     "multicaster-label": "法術流派",
@@ -3699,7 +3706,7 @@
                 "counter-baller-label": "球手",
                 "counter-free-refresh-tooltip": "顯示您剩餘的免費重骰次數",
                 "counter-spells-played-label": "已施放「旅店法術」",
-                "counter-spells-played-tooltip": "顯示達成「每施放4個法術」的組數，以及下一組法術目前的進度"
+                "counter-spells-played-tooltip": "顯示達成「每施放4個法術」的組數，以及作成下一組法術目前的進度"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
