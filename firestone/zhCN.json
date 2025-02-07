@@ -380,6 +380,12 @@
                 "time": {
                     "all-time-tooltip": "此选项包含你在启用本应用时的所有对局。默认筛选最近100天，你可以在“通用-数据”选项卡中更改设置。"
                 }
+            },
+            "errors": {
+                "no-cards": {
+                    "title": "无法加载卡牌",
+                    "message": "严重错误：无法加载卡牌数据库。点击查看更多在线信息。"
+                }
             }
         },
         "tray": {
@@ -1049,7 +1055,8 @@
                         "discovered-winrate-impact-header": "发现影响",
                         "discovered-winrate-header": "发现胜率",
                         "discovered-winrate-impact-tooltip-low-data": "警告 - 此卡牌只被发现过{{value}}次，因此统计数据可能不准确",
-                        "discovered-winrate-impact-header-tooltip": "对局中发现该卡牌时，相对于卡组胜率的平均胜率"
+                        "discovered-winrate-impact-header-tooltip": "对局中发现该卡牌时，相对于卡组胜率的平均胜率",
+                        "discovered-winrate-impact-tooltip-data": "此卡牌已被发现过{{value}}次"
                     },
                     "deck-type": "套牌列表",
                     "archetype-type": "套牌类型"
@@ -2223,7 +2230,7 @@
             "player": "您已打出了不在初始套牌中的{{value}}张卡牌"
         },
         "bgs-spells-played": {
-            "player": "你当前的增益为 +{{buff}}，还需要{{target}}才能达到下一个增益等级"
+            "player": "你已经施放了{{buff}}组“每施放4个法术”，目前你的下一组进度为 {{target}}"
         },
         "protoss-spells": {
             "player": "你已使用{{value}}张星灵法术"
