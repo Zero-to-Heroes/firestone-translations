@@ -380,6 +380,12 @@
                 "time": {
                     "all-time-tooltip": "このアプリでロードされた全ての試合を含みます。デフォルトでは過去100日間分ですが、設定>全体>データから変更することができます"
                 }
+            },
+            "errors": {
+                "no-cards": {
+                    "message": "危機的なエラー：カードデータべースをロードできません。クリックすると、オンラインでさらなる情報を閲覧できます",
+                    "title": "カードをロードできません"
+                }
             }
         },
         "tray": {
@@ -509,7 +515,8 @@
                 "header-play-on-curve-winrate": "マナカーブプレイ時勝率",
                 "header-play-on-curve-winrate-tooltip": "このカードをマナカーブ通りにプレイできたときの勝率です(補足：カードのコストと自身の最大マナが一致してるときのこと)",
                 "header-play-on-curve-total": "マナカーブ通りにプレイされた回数",
-                "header-deck-total-tooltip": "このカードがデッキの中にあるままで行われた試合数です"
+                "header-deck-total-tooltip": "このカードがデッキの中にあるままで行われた試合数です",
+                "header-discovered": "データポイント"
             },
             "class-tier-list": {
                 "header-hero-name": "名前",
@@ -1039,7 +1046,13 @@
                         "mulligan-winrate-impact-header-tooltip": "数値が高いほど優れています。そのカードがマリガン終了時に手札にあるときの、デッキ勝率に対する平均勝率です。",
                         "drawn-winrate-impact-header": "ドロー影響",
                         "mulligan-winrate-impact-header": "マリガン影響",
-                        "drawn-winrate-impact-header-tooltip": "そのカードがマリガン終了時に手札にあるとき、またはゲーム中に引いたときの、デッキ勝率に対する平均勝率。"
+                        "drawn-winrate-impact-header-tooltip": "そのカードがマリガン終了時に手札にあるとき、またはゲーム中に引いたときの、デッキ勝率に対する平均勝率。",
+                        "discovered-winrate-impact-header": "発見の影響",
+                        "discovered-winrate-header": "発見の勝率",
+                        "discovered-winrate-impact-header-tooltip": "試合中にそのカードを発見できた場合の、デッキの勝率に対する平均勝率です",
+                        "discovered-winrate-header-tooltip": "そのカードをゲーム中に発見できた場合の平均勝率です",
+                        "discovered-winrate-impact-tooltip-data": "このカードは{{value}}回発見されました",
+                        "discovered-winrate-impact-tooltip-low-data": "警告：このカードは{{value}}回しか発見されていません。よって、統計が不正確なことがあります"
                     },
                     "archetype-type": "アーキタイプ",
                     "deck-type": "デッキリスト"
@@ -1056,7 +1069,9 @@
                 "matchups-header": "マッチアップ",
                 "matchups-header-tooltip": "他のクラスに対する勝率を表示します。アーキタイプ別マッチアップは将来的に実装予定です。お楽しみに:)",
                 "last-updated": "前回のアップデート",
-                "total-games": "合計試合数"
+                "total-games": "合計試合数",
+                "discover-stats-header": "発見の統計",
+                "discover-stats-header-tooltip": "試合中に発見したカードの統計を表示します"
             }
         },
         "battlegrounds": {
@@ -2218,7 +2233,8 @@
             "player": "今のバフ量は+{{buff}}で、あと{{target}}回で強化される"
         },
         "protoss-spells": {
-            "player": "この対戦中、プロトス用呪文を{{value}}回使用した"
+            "player": "この対戦中、プロトス用呪文を{{value}}回使用した",
+            "opponent": "対戦相手は試合中にプロトス呪文を{{value}}回使用した"
         },
         "combo-cards-played": {
             "player": "この対戦中、コンボカードを{{value}}回使用した"
