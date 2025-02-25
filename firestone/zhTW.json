@@ -1225,7 +1225,7 @@
                     },
                     "warband-stats": {
                         "community-label": "英雄平均值",
-                        "community-tooltip": "每回合戰鬥開始時戰場上的平均總體質數值（攻擊力 + 生命值）",
+                        "community-tooltip": "每回合戰鬥開始時陣容中的平均總體質數值（攻擊力 + 生命值）",
                         "your-label": "目前回合",
                         "your-tooltip": "您於此英雄的數值",
                         "turn-label": "回合",
@@ -1257,7 +1257,7 @@
                         "max-dmg-dealt-hero-tooltip": "不包含與柯爾蘇嘉德戰鬥",
                         "win-streak": "最大連勝",
                         "triples": "三合一數",
-                        "board-stats": "牌桌上最高體質",
+                        "board-stats": "陣容中最大體質數值",
                         "coins-wasted": "已浪費金幣",
                         "rerolls": "略過",
                         "freezes": "凍結",
@@ -1273,7 +1273,7 @@
                         "negative-battle-luck": "最壞的戰鬥運氣",
                         "best-stat-hero": "使用 {{heroName}} 解鎖的最佳統計",
                         "watch-replay-tooltip": "觀看回顧以獲得此值的位置",
-                        "total-stats-tooltip": "戰鬥開始時你的戰場的最大總體質數值（攻擊力 + 生命值）"
+                        "total-stats-tooltip": "戰鬥開始時你的陣容中的最大總體質數值（攻擊力 + 生命值）"
                     },
                     "record-broken-tooltip": "您打破了個人紀錄！"
                 }
@@ -1356,14 +1356,14 @@
                         "pocky": "一個非常適用於1金幣的英雄能力",
                         "basic": "於關鍵開局更強，第4回合商店RNG弱勢。沒有英雄能力要求。",
                         "fast-basic": "於關鍵開局更強，第4回合商店RNG弱勢。沒有英雄能力要求。",
-                        "3-on-3-bis": "犧牲早期生命值來讓戰場上有多個 3⭐️ 手下",
+                        "3-on-3-bis": "犧牲早期生命值來讓陣容中有多個 3⭐️ 手下",
                         "3-on-3": "犧牲早期生命值以快速獲得 3⭐️ 手下，然後提升⭐️",
                         "4-on-4": "犧牲早期生命值來快速獲得 3⭐️ 手下。 可以作為如果在第3回合3⭐️旅店商店差勁的後備選項；需要理財",
                         "jeef": "使用 1⭐️ 理財手下和強大的對子靈活地開始賽局及變化。",
                         "fast-jeef": "使用 1⭐️ 理財手下和強大的對子靈活地開始賽局及變化。快速提升⭐️。",
                         "basic-yogg": "使用消耗2金幣英雄能力來更快升級到3⭐️旅館",
-                        "aggro-yogg": "使用2金幣的英雄能力，在更快升級到3⭐️旅店之前以獲取不錯的1⭐️手下到戰場上",
-                        "slow-jeef": "使用 1⭐️ 理財和強大的手下對子來開局及靈活地變化。留在 2⭐️旅館 以鞏固戰場。"
+                        "aggro-yogg": "使用2金幣的英雄能力，在更快升級到3⭐️旅店之前以獲取不錯的1⭐️手下到陣容中",
+                        "slow-jeef": "使用 1⭐️ 理財和強大的手下對子來開局及靈活地變化。留在 2⭐️旅館 以鞏固陣容。"
                     },
                     "action": {
                         "level": "升級到 {{value}}",
@@ -2569,13 +2569,13 @@
             "search-minion-placeholder": "搜尋手下",
             "resimulating-battle": "重新模擬戰鬥",
             "simulator-help-tooltip": {
-                "title": "建造對立的戰場並模擬結果。模擬器支援鍵盤控制：",
+                "title": "建造對立的陣容並模擬結果。模擬器支援鍵盤控制：",
                 "control-hero": "用“{{playerKey}}”改變您的英雄，用“{{opponentKey}}”改變對手的英雄",
                 "control-hero-power": "用“{{playerKey}}”改變您的英雄能力，用“{{opponentKey}}”改變對手的英雄能力",
-                "control-minion": "使用“{{playerKey}}”將手下添加到您的戰場，使用“{{opponentKey}}”將手下添加到對手的戰場",
+                "control-minion": "使用“{{playerKey}}”將手下添加到您的陣容，使用“{{opponentKey}}”將手下添加到對手的陣容",
                 "control-general": "每次揀選時，使用“Tab”循環瀏覽字段，並使用“Space”切換複選框。 使用 Enter 揀選第一個顯示的選項，然後使用 Shift + Enter 驗證最終揀選"
             },
-            "reposition-button-tooltip": "（測試版）找到適合您的戰場的最佳擺設。根據 CPU 的核心數量和陣容的複雜程度，這可能需要幾分鐘的時間，並且會使用大量的 CPU 和 RAM。",
+            "reposition-button-tooltip": "（測試版）找到適合你陣容的最佳擺設。根據 CPU 的核心數量和陣容的複雜程度，這可能需要幾分鐘的時間，並且會使用大量的 CPU 和 RAM。",
             "global-effects-header": "光環影響",
             "quest-reward-header": "任務獎勵",
             "quest-reward-title": "任務獎勵",
@@ -2603,9 +2603,9 @@
             "add-teammate-button": "添加隊友",
             "bloodgem-attack": "鮮血寶石攻擊力",
             "bloodgem-health": "鮮血寶石生命值",
-            "empty-teammate-board": "尚無戰場。點選以將隊友切換到活動位置，並在那裡編輯牌桌。",
+            "empty-teammate-board": "尚無陣容。點選以將隊友切換到活動位置，並在那裡編輯陣容。",
             "frostling-bonus-tooltip": "您在本賽局中打出「元素」的數量",
-            "teammate-board-tooltip": "你隊友的戰場。點選將隊友切換到活動位置，並在那裡編輯牌桌。",
+            "teammate-board-tooltip": "你隊友的陣容。點選將隊友切換到活動位置，並在那裡編輯陣容。",
             "clear-button": "清除",
             "pirates-summoned": "海盜（已召喚）",
             "pirates-summoned-tooltip": "本賽局中你已召喚的海盜數量",
@@ -2675,7 +2675,7 @@
                 "rewards-empty-state": "沒有任務獎勵",
                 "reward-turn-tooltip": "{{turn}} 回合後獲得任務獎勵",
                 "mmr": "{{value}} 評分",
-                "mmr-tooltip": "該玩家的推測天梯評級。我們使用排行榜上的名稱查找來獲取此值，因此它可能不準確，尤其是在評分較低的情況下。",
+                "mmr-tooltip": "該玩家的推測評分。我們使用排行榜上的名稱查找來獲取此值，因此它可能不準確，尤其是在評分較低的情況下。",
                 "trinkets-empty-state": "沒有飾品",
                 "trinkets-title": "飾品"
             },
@@ -2692,12 +2692,12 @@
                 "minion-banned-tooltip": "這張卡牌被禁用於目前異變",
                 "trinket-name-lesser": "{{name}}（次級）",
                 "rules": {
-                    "missing-board-type": "在你的戰場/手牌之中需要有 {{typesAndQuantity}} 手下",
+                    "missing-board-type": "在你的陣容/手牌之中需要有 {{typesAndQuantity}} 手下",
                     "tavern-level": "您至少需要達到旅店⭐️ {{target}}",
-                    "menagerie": "你的戰場/手牌之間至少需要 3 個不同類別的手下",
+                    "menagerie": "你的陣容/手牌之間至少需要 3 個不同類別的手下",
                     "missing-board-expected-quantity": "{{quantity}} {{minionType}}",
                     "missing-board-linked": " 或 ",
-                    "mechanics": "在你的戰場/手牌之中要有至少 {{numberOfMinions}} 個帶有 {{mechanic}} 關鍵字的手下"
+                    "mechanics": "在你的陣容/手牌之中要有至少 {{numberOfMinions}} 個帶有 {{mechanic}} 關鍵字的手下"
                 },
                 "trinket-name-greater": "{{name}}（強效）",
                 "banned-reason": {
@@ -2769,8 +2769,8 @@
         },
         "post-match-stats": {
             "title": "最後一場資料",
-            "final-board": "您的最終戰場陣容",
-            "current-board": "您現在的戰場",
+            "final-board": "您的最終陣容",
+            "current-board": "您現在的陣容",
             "final-position": "您以 #{{position}} 結束賽局",
             "live-stats-title": "即時資料-第 {{turn}} 回合",
             "tabs": {
@@ -2816,7 +2816,7 @@
             "seen-just-now": "剛剛看到的陣容",
             "seen-turns-ago": "{{value}} 回合前看到的陣容",
             "opponent-not-met": "您未曾對上此對手",
-            "last-board-empty": "上一個對手的戰場為空",
+            "last-board-empty": "上一個對手的陣容為空",
             "total-damage": "總傷害",
             "stats-share-warning": "多個不同手下以及金卡都享有共同的屬性值（由於英雄戰場編碼的關係）"
         },
@@ -2863,7 +2863,7 @@
             "total-games": "{{value}} 場賽局",
             "total-games-tooltip": "從為 {{gameMode}} {{value}} 開始（使用頂部的重設按鈕開始一個新會話）",
             "total-games-tooltip-all-time": "從您為 {{gameMode}} 使用應用程式開始（使用上方的重設按鈕來啟動新的紀錄階段）",
-            "mmr-tooltip": "您目前的天梯評級",
+            "mmr-tooltip": "您目前的評分",
             "delta-mmr-tooltip": "從紀錄階段開始至今您的配對評分增減"
         },
         "groups": {
@@ -3246,7 +3246,7 @@
                 "show-transformed-into-tooltip": "將一張變形後的卡牌加入計牌器中",
                 "counters-use-expanded-view-label": "計數器視圖展開",
                 "show-board-in-separate-zone": "在單獨的區域顯示版面",
-                "show-board-in-separate-zone-tooltip": "將戰場上的卡牌從「其他」區域移動到新的「戰場」可折疊區域。",
+                "show-board-in-separate-zone-tooltip": "將戰場上的卡牌從「其他」移動到新的可折疊「戰場」區域。",
                 "show-gifts-in-separate-zone": "在單獨的區域顯示非起始卡牌",
                 "counters-use-expanded-view-tooltip": "如果適用，計數器小工具提醒將在單獨的行列上顯示項目",
                 "group-same-cards": "將相同的卡牌分組在一起",
@@ -3280,7 +3280,7 @@
                 "global-effects-label": "顯示光環影響",
                 "global-effects-tooltip": "啟用時，計牌器頂端會出現一個新部分，顯示影響玩家/牌組的光環效果",
                 "sort-by-mana-cost-label": "根據消耗排序",
-                "sort-by-mana-cost-tooltip": "啟用時, 在「其他地方」的卡牌會依據所需消耗的法力水晶排序。反之則會先顯示戰場上的卡, 接著是墓地, 再然後為其它",
+                "sort-by-mana-cost-tooltip": "啟用時, 在「其他區域」的卡牌會依據所需消耗的法力水晶排序。反之則會先顯示戰場上的卡, 接著是墓地, 再然後為其它",
                 "show-bottom-cards-separately-label": "顯示底部卡牌",
                 "show-bottom-cards-separately-tooltip": "獨立顯示牌堆底已知的卡牌",
                 "show-top-cards-separately-label": "顯示頂部卡牌",
