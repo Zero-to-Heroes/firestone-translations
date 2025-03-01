@@ -363,7 +363,8 @@
                     "spell": "Feitiço",
                     "weapon": "Arma",
                     "hero": "Herói",
-                    "location": "Lugar"
+                    "location": "Lugar",
+                    "lettuce_ability": "Habilidade (Mercs)"
                 },
                 "set": "Conjunto:",
                 "rarity": "Raridade:",
@@ -572,7 +573,12 @@
             },
             "meta": {
                 "deck": {
-                    "cards-header-details": "({{valor}} cartas)"
+                    "cards-header-details": "({{value}} cartas)"
+                },
+                "details": {
+                    "cards": {
+                        "copy-2-header": "2ª cópia"
+                    }
                 }
             }
         },
@@ -649,7 +655,10 @@
                         "average-position": "Pos. Média"
                     },
                     "last-warbands": {
-                        "place-1": "1º!!!!"
+                        "place-1": "1º!!!!",
+                        "place-2": "2º!!!",
+                        "place-3": "3º!!!",
+                        "place-4": "4º!"
                     }
                 },
                 "records": {
@@ -667,6 +676,21 @@
             },
             "tier-list": {
                 "header": "Lista de níveis de heróis ({{value}} partidas) "
+            },
+            "strategies": {
+                "curve": {
+                    "notes": {
+                        "pocky": "Um uso muito específico para os poderes de herói de custo 1",
+                        "toki": "Uma maneira de usar os poderes de herói de custo 1 que não proporcionam tempo",
+                        "warrior": "Uma linha altamente valiosa se a economia de nível 1 e os triplos forçados forem fortes.",
+                        "extended-warrior": "Uma linha altamente valiosa se a economia de nível 1 e os triplos forçados forem fortes. Essa variante é uma opção alternativa caso um triplo ainda não tenha aparecido na curva regular do guerreiro."
+                    },
+                    "name": {
+                        "3-on-3-bis": "3 no 3 (level no 9)",
+                        "4-on-4": "4 no 4",
+                        "3-on-3": "3 no 3 (level no 8)"
+                    }
+                }
             }
         },
         "duels": {
@@ -738,8 +762,19 @@
                 "show-stats-button-tooltip": "Mostrar estatísticas",
                 "bgs-result": {
                     "1": "1º",
-                    "2": "2º"
+                    "2": "2º",
+                    "8": "8º",
+                    "3": "3º",
+                    "4": "4º",
+                    "5": "5º",
+                    "6": "6º",
+                    "7": "8º"
                 }
+            }
+        },
+        "achievements": {
+            "filters": {
+                "all-empty-state-text": "100% das conquistas nessa categoria foram concluídas."
             }
         }
     },
@@ -749,13 +784,18 @@
     "mercenaries": {
         "filters": {
             "show-merc-names-in-teams-link-label": "Mostrar nomes"
+        },
+        "hero-stats": {
+            "abilities-header": "Habilidades",
+            "abilities": "Habilidades"
         }
     },
     "settings": {
         "global": {
             "show-advanced-settings-button": "Mostrar configurações avançadas",
             "knob-zoom": {
-                "zoom-200": "200%"
+                "zoom-200": "200%",
+                "zoom-400": "400%"
             }
         },
         "decktracker": {
@@ -769,16 +809,25 @@
         },
         "general": {
             "twitch": {
-                "todo-2": "2. Conecte sua conta do Twitch ao Firestone clicando no botão abaixo"
+                "todo-2": "2. Conecte sua conta do Twitch ao Firestone clicando no botão abaixo",
+                "todo-3": "3. Ajuste suas opções: ",
+                "todo-1": "1. Instale a extensão Firestone Twitch em seu canal:"
             },
             "mods": {
-                "enable-mods-title": "2. Habilitar mods"
+                "enable-mods-title": "2. Habilitar mods",
+                "add-mods-title": "3. Adicione mods",
+                "update-disabled": "Uma nova versão desse mod está disponível, mas você não poderá instalá-la até fechar o jogo",
+                "check-mods-title": "1. Verifique a mod engine",
+                "update-available": "Uma nova versão desse mod está disponível. Clique para atualizá-la"
+            },
+            "launch": {
+                "zoom-tooltip": "Um nível de zoom que será aplicado a todas as janelas"
             }
         },
         "arena": {
             "general": {
-                "show-hero-selection-overlay-tooltip": "(Somente Premium) Mostrar estatísticas enquanto escolhe seu herói",
-                "show-card-selection-overlay-tooltip": "(Somente Premium) Mostrar estatísticas enquanto escolhe suas cartas"
+                "show-hero-selection-overlay-tooltip": "(Somente Premium) Mostrar estatísticas ao escolher seu herói",
+                "show-card-selection-overlay-tooltip": "(Somente Premium) Mostrar estatísticas ao escolher cartas."
             }
         }
     },
@@ -787,7 +836,13 @@
             "battlegrounds": {
                 "category": {
                     "1": "1º",
-                    "2": "2º"
+                    "2": "2º",
+                    "3": "3º",
+                    "5": "5º",
+                    "7": "7ª",
+                    "8": "8º",
+                    "6": "6º",
+                    "4": "4º"
                 }
             }
         }
@@ -802,7 +857,7 @@
         },
         "post-match-stats": {
             "warband-stats": {
-                "delta-label": "+{{delta}} esta rodada"
+                "delta-label": "+{{delta}} neste turno"
             }
         },
         "in-game": {
@@ -815,5 +870,8 @@
     },
     "twitch": {
         "adaptative-scaling-tooltip": "(EXPERIMENTAL) Altere automaticamente o tamanho dos widgets com base no tamanho da janela"
+    },
+    "archetype": {
+        "42-priest": "42 Sacerdote"
     }
 }
