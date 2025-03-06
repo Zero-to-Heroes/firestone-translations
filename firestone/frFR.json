@@ -116,7 +116,8 @@
             "tutorial": "Tutoriel",
             "traveling_travel_agency": "L’agence tous terrains",
             "great_dark_beyond": "La Ténèbre de l’Au-delà",
-            "heroes_of_starcraft": "Héros de StarCraft"
+            "heroes_of_starcraft": "Héros de StarCraft",
+            "into_the_emerald_dream": "Au cœur du Rêve d’émeraude"
         },
         "pack": {
             "classic": "Classique",
@@ -195,7 +196,9 @@
             "the-great-dark-beyond-catch-up": "Rattrapage (La Ténèbre de l’Au-delà)",
             "golden-year-of-the-pegasus": "Année du Pégase (doré)",
             "year-of-the-pegasus": "Année du Pégase",
-            "golden-ashes-of-outland": "Les Cendres de l’Outreterre (doré)"
+            "golden-ashes-of-outland": "Les Cendres de l’Outreterre (doré)",
+            "into-the-emerald-dream": "Au cœur du Rêve d’émeraude",
+            "golden-into-the-emerald-dream": "Au cœur du Rêve d’émeraude (Doré)"
         },
         "ranks": {
             "constructed": {
@@ -257,7 +260,11 @@
             "naga": "Naga",
             "oldgod": "Dieu très ancien",
             "spell": "Sort",
-            "golem": "Golem"
+            "golem": "Golem",
+            "battlecruiser": "Cuirassé",
+            "protoss": "Protoss",
+            "terran": "Terran",
+            "zerg": "Zerg"
         },
         "mechanics": {
             "battlecry": "Cri de guerre",
@@ -384,11 +391,15 @@
             "errors": {
                 "no-cards": {
                     "title": "Chargement des cartes impossible",
-                    "message": "ERREUR CRITIQUE :Impossible de charger la base de données des cartes. Cliquez pour obtenir plus d’infos en ligne."
+                    "message": "ERREUR CRITIQUE : impossible de charger la base de données des cartes. Cliquez pour plus d’infos en ligne."
                 },
                 "memory-reading": {
-                    "message": "ERREUR CRITIQUE : impossible de lire la mémoire du jeu. Cliquez pour voir plus d’infos en ligne.",
+                    "message": "ERREUR CRITIQUE : impossible de lire la mémoire du jeu. Cliquez pour plus d’infos en ligne.",
                     "title": "Lecture de la mémoire impossible"
+                },
+                "truncated-logs": {
+                    "message": "ERREUR CRITIQUE : veuillez mettre à jour le fichier de configuration du jeu. Cliquez pour plus d’infos en ligne.",
+                    "title": "Les logs sont bloqués"
                 }
             }
         },
@@ -1104,7 +1115,10 @@
                 "quilboar": "Hurans",
                 "undead": "Morts-vivants",
                 "blank": "Aucun type",
-                "all": "Tout"
+                "all": "Tout",
+                "protoss": "Protoss",
+                "terran": "Terrans",
+                "zerg": "Zergs"
             },
             "filters": {
                 "hero": {
@@ -1909,13 +1923,15 @@
                 "text": "L’application va vous rediriger vers la page de paiement de Tebex pour finaliser l’abonnement, qui s’ouvrira dans votre navigateur par défaut. Vous pourrez annuler votre abonnement à tout moment à partir de l'application.",
                 "title": "S’abonner au plan {{plan}}",
                 "cancel-button": "Annuler",
-                "subscribe-button": "C’est parti !"
+                "subscribe-button": "C’est parti !",
+                "text-legacy": "L’application va vous rediriger vers la page de paiement sur Overwolf pour finaliser l’abonnement, qui s’ouvrira dans votre navigateur par défaut. Vous pourrez annuler votre abonnement à tout moment depuis l’app."
             },
             "plan": {
                 "friend": "Ami",
                 "legacy": "Héritage",
                 "premium": "Premium",
-                "epic": "Épique"
+                "epic": "Épique",
+                "premium-annual": "Premium"
             },
             "periodicity": {
                 "monthly": "Par mois",
@@ -1931,7 +1947,18 @@
             "unsubscribe-button": "Se désabonner",
             "unsubscribe-button-tooltip": "Se désabonner du plan actuel. Votre abonnement restera valable jusqu’à la fin de la période en cours et ne sera pas renouvelé automatiquement.",
             "subscribe-button-upgrade": "Améliorer",
-            "check-status-online-link": "sur Tebex"
+            "check-status-online-link": "sur Tebex",
+            "billing": {
+                "monthly": "Facturation mensuelle",
+                "yearly-subtext": "(Économisez {{value}} %)",
+                "yearly": "Facturation annuelle",
+                "click-to-copy-code": "Cliquez pour copier le code dans le presse-papiers",
+                "yearly-coupon-text": "Offre limitée ! Jusqu’au {{endDate}}, obtenez {{reduction}} de réduction en utilisant le code suivant pendant votre paiement :"
+            },
+            "cant-subscribe-button": "Abonnement impossible",
+            "check-status-online-inactive": "Annulé. Voir les détails {{link}}",
+            "view-payment-history": "Afficher l’historique de paiement",
+            "cant-subscribe-tooltip": "Vous ne pouvez pas vous abonner à un autre plan si vous avez déjà un plan en cours. Veuillez vous désabonner de votre plan actuel et attendre son expiration."
         },
         "communities": {
             "manage": {
@@ -2248,6 +2275,9 @@
         },
         "bgs-spells-played": {
             "player": "Vous avez joué {{buff}} groupes de 4 sorts, et il vous faut {{target}} sorts de plus pour former un nouveau groupe"
+        },
+        "cards-played-this-turn": {
+            "player": "Vous avez joué {{value}} cartes pendant ce tour"
         }
     },
     "loading": {
@@ -2679,7 +2709,11 @@
             "clear-button": "Effacer",
             "pirates-summoned": "Pirates invoqués",
             "pirates-summoned-tooltip": "Le nombre de Pirates que vous avez invoqués pendant cette partie",
-            "remove-teammate-button": "Retirer le duo"
+            "remove-teammate-button": "Retirer le duo",
+            "beasts-summoned": "Bêtes invoquées",
+            "magnetized-tooltip": "Le nombre de serviteurs que vous avez magnétisés pendant cette partie",
+            "beasts-summoned-tooltip": "Le nombre de Bêtes que vous avez invoquées pendant cette partie",
+            "magnetized": "Magnétisés"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3203,7 +3237,12 @@
                 "clear-local-cache-tooltip": "Vide tout le cache local. La prochaine fois que vous vous connecterez, les données seront récupérées depuis le serveur. Utilisez ceci si vous avez joué sans Firestone.",
                 "open-local-cache-folder": "Ouvrir le cache local",
                 "arena-rewards-tooltip": "Actualiser vos récompenses d’Arène.",
-                "open-local-cache-folder-button": "Ouvrir"
+                "open-local-cache-folder-button": "Ouvrir",
+                "export-settings-button-label": "Exporter les paramètres",
+                "export-settings-button-tooltip": "Exporte vos paramètres dans un fichier, que vous pourrez réimporter sur un autre ordinateur",
+                "import-settings-button-label": "Importer des paramètres",
+                "import-settings-button-tooltip": "Importe des paramètres depuis un fichier, exporté depuis un autre ordinateur",
+                "settings-title": "Paramètres"
             },
             "quests": {
                 "title": "Quêtes",
@@ -3261,7 +3300,9 @@
             },
             "widgets": {
                 "lock-widgets-tooltip": "Verrouille les widgets, afin qu’ils ne puissent plus être bougés",
-                "lock-widgets-label": "Verrouillage des widgets"
+                "lock-widgets-label": "Verrouillage des widgets",
+                "size": "Taille de widget globale",
+                "size-tooltiplabel": "Modifie la taille globale de tous les widgets de l’app"
             }
         },
         "decktracker": {
@@ -3273,7 +3314,8 @@
                 "duels": "Duels",
                 "launch": "Options de lancement",
                 "mulligan": "Mulligan",
-                "lobby": "Salon"
+                "lobby": "Salon",
+                "overlay": "Overlay"
             },
             "global": {
                 "title": "Activer / désactiver des options",
@@ -3552,7 +3594,9 @@
                     "next-starship-launch-label": "Réduction de coût du prochain déploiement de vaisseau",
                     "protoss-spells-tooltip": "Affiche le nombre de sorts protoss que vous avez lancés dans cette partie, si {{cardName}} est dans votre deck.",
                     "next-starship-launch-tooltip": "Affiche la réduction du coût de votre prochain déploiement de vaisseau",
-                    "combo-cards-played-label": "Cartes avec Combo jouées"
+                    "combo-cards-played-label": "Cartes avec Combo jouées",
+                    "cards-played-this-turn-label": "Cartes jouées pendant ce tour",
+                    "cards-played-this-turn-tooltip": "Affiche le nombre de cartes que vous avez jouées pendant ce tour, si une carte de votre deck utilise cette donnée"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -3592,6 +3636,13 @@
                 "title": "Tracker du salon",
                 "show-lobby-tracker": "Afficher le tracker du salon",
                 "show-lobby-tracker-tooltip": "Affiche la liste des cartes du deck sélectionné, sur l’écran de sélection du deck"
+            },
+            "max-resources-widget": {
+                "always-on": "Toujours activé",
+                "always-on-tooltip": "Affiche le widget même quand vos PV max ou mana max n’ont pas changé",
+                "title": "Widget de ressources max",
+                "toggle": "Afficher le widget",
+                "toggle-tooltip": "Lorsque vos PV max ou votre mana max change, affiche un widget qui indique les ressources max que vous avez dans cette partie"
             }
         },
         "collection": {
@@ -3782,7 +3833,7 @@
                 "counter-baller-label": "Modeleurs",
                 "counter-baller-tooltip": "Affiche le buff de votre prochain modeleur",
                 "counter-magnetized-label": "Magnétisés",
-                "counter-magnetized-tooltip": "Affiche le nombre de magnétisations effectuées pendant cette partie",
+                "counter-magnetized-tooltip": "Affiche le nombre de magnétisations que vous avez effectuées pendant cette partie",
                 "counter-free-refresh-label": "Actualisations gratuites",
                 "counter-free-refresh-tooltip": "Affiche le nombre d’actualisations gratuites restantes",
                 "counter-spells-played-label": "Sorts lancés",
