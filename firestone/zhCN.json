@@ -116,7 +116,8 @@
             "tutorial": "教程",
             "traveling_travel_agency": "行旅旅行社",
             "great_dark_beyond": "深暗领域",
-            "heroes_of_starcraft": "星际英雄传"
+            "heroes_of_starcraft": "星际英雄传",
+            "into_the_emerald_dream": "漫游翡翠梦境"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -195,7 +196,9 @@
             "golden-year-of-the-pegasus": "天马年金色包",
             "the-great-dark-beyond": "深暗领域",
             "the-great-dark-beyond-catch-up": "深暗领域追赶包",
-            "year-of-the-pegasus": "天马年"
+            "year-of-the-pegasus": "天马年",
+            "golden-into-the-emerald-dream": "漫游翡翠梦境 金色卡牌包",
+            "into-the-emerald-dream": "漫游翡翠梦境 卡牌包"
         },
         "ranks": {
             "constructed": {
@@ -257,7 +260,11 @@
             "naga": "纳迦",
             "oldgod": "古神",
             "spell": "法术",
-            "golem": "魔像"
+            "golem": "魔像",
+            "protoss": "星灵",
+            "terran": "人族",
+            "zerg": "异虫",
+            "battlecruiser": "战列巡航舰"
         },
         "mechanics": {
             "battlecry": "战吼",
@@ -389,6 +396,10 @@
                 "memory-reading": {
                     "title": "无法读取内存",
                     "message": "严重错误：无法读取游戏内存。点击在线查看更多信息。"
+                },
+                "truncated-logs": {
+                    "message": "严重错误：请更新游戏配置文件。点击在线查看更多信息。",
+                    "title": "日志卡住了"
                 }
             }
         },
@@ -1104,7 +1115,10 @@
                 "quilboar": "野猪人",
                 "undead": "亡灵",
                 "blank": "无随从类型",
-                "all": "全部"
+                "all": "全部",
+                "protoss": "星灵",
+                "terran": "人族",
+                "zerg": "异虫"
             },
             "filters": {
                 "hero": {
@@ -1911,7 +1925,8 @@
                 "legacy": "Legacy",
                 "premium": "Premium",
                 "epic": "Epic",
-                "friend": "Friend"
+                "friend": "Friend",
+                "premium-annual": "Premium"
             },
             "periodicity": {
                 "monthly": "每月",
@@ -1925,13 +1940,25 @@
                 "cancel-button": "取消",
                 "title": "订阅{{plan}}方案",
                 "subscribe-button": "带我前往！",
-                "text": "你将被带往Tebex结账页面完成订阅，该页面会在你的默认浏览器中打开。你可以任意时间在应用中取消订阅。"
+                "text": "你将被带往Tebex结账页面完成订阅，该页面会在你的默认浏览器中打开。你可以任意时间在应用中取消订阅。",
+                "text-legacy": "你将被带往Overwolf结账页面完成订阅，该页面会在你的默认浏览器中打开。你可以任意时间在应用中取消订阅。"
             },
             "subscribe-button": "订阅",
             "unsubscribe-button": "取消订阅",
             "unsubscribe-button-tooltip-legacy": "取消legacy方案订阅。一旦取消，这一方案将从可选的订阅方案中消失，且你必须选择一种新的方案继续享受会员功能。",
             "subscribe-button-upgrade": "升级",
-            "subscribe-button-epic": "获取Epic！"
+            "subscribe-button-epic": "获取Epic！",
+            "billing": {
+                "yearly-subtext": "(节省 {{value}}%)",
+                "monthly": "按月计费",
+                "yearly": "按年计费",
+                "click-to-copy-code": "单击复制代码到剪贴板",
+                "yearly-coupon-text": "限时优惠！截止至{{endDate}}，结账时使用以下代码可获得额外的{{reduction}}折扣："
+            },
+            "cant-subscribe-button": "无法订阅",
+            "check-status-online-inactive": "已取消。查看详情 {{link}}",
+            "view-payment-history": "查看付款历史",
+            "cant-subscribe-tooltip": "您不能在已有激活方案的情况下订阅其他方案。请取消当前方案并等待其到期。"
         },
         "communities": {
             "join": {
@@ -2248,6 +2275,9 @@
         },
         "combo-cards-played": {
             "player": "你已使用{{value}}张连击牌"
+        },
+        "cards-played-this-turn": {
+            "player": "本回合中您已使用了 {{value}} 张牌"
         }
     },
     "loading": {
@@ -2679,7 +2709,11 @@
             "clear-button": "清除",
             "pirates-summoned": "已召唤的海盗",
             "pirates-summoned-tooltip": "本局对战中已召唤的海盗数量",
-            "remove-teammate-button": "移除队友"
+            "remove-teammate-button": "移除队友",
+            "beasts-summoned": "召唤的野兽",
+            "magnetized": "磁力",
+            "magnetized-tooltip": "本局对战中你使用的磁力数量",
+            "beasts-summoned-tooltip": "本局对战中你召唤的野兽数量"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -3203,7 +3237,12 @@
                 "clear-local-cache-tooltip": "清除所有本地缓存，这意味着下次启动本程序时将从服务器检索所有数据。如果您在没有开启 Firestone 的情况下进行游戏，请使用此功能。",
                 "open-local-cache-folder": "打开本地缓存",
                 "arena-rewards-tooltip": "刷新你的竞技场奖励。",
-                "open-local-cache-folder-button": "打开"
+                "open-local-cache-folder-button": "打开",
+                "import-settings-button-tooltip": "从文件导入你的设置，你可能已经从另一台电脑导出了该文件",
+                "settings-title": "设置",
+                "export-settings-button-label": "导出设置",
+                "export-settings-button-tooltip": "将设置导出到文件，然后导入另一台电脑",
+                "import-settings-button-label": "导入设置"
             },
             "quests": {
                 "title": "任务",
@@ -3261,7 +3300,9 @@
             },
             "widgets": {
                 "lock-widgets-label": "锁定小部件位置",
-                "lock-widgets-tooltip": "将小部件锁定，这样它们就无法移动"
+                "lock-widgets-tooltip": "将小部件锁定，这样它们就无法移动",
+                "size": "全局小部件尺寸",
+                "size-tooltiplabel": "全局修改所有本应用程序小部件的尺寸"
             }
         },
         "decktracker": {
@@ -3273,7 +3314,8 @@
                 "duels": "对决模式",
                 "launch": "启动选项",
                 "mulligan": "起手调度",
-                "lobby": "大厅"
+                "lobby": "大厅",
+                "overlay": "浮窗"
             },
             "global": {
                 "title": "启用/停用功能",
@@ -3552,7 +3594,9 @@
                     "next-starship-launch-tooltip": "显示下一次星舰发射的法力消耗减少",
                     "protoss-spells-tooltip": "如果你的牌组中有 {{cardName}}，则显示你在本局对战中使用过的星灵法术数量",
                     "protoss-minion-reduction-tooltip": "显示星灵随从的总法力消耗减少数量（包括整个对局中适用的减少和仅适用于下一个随从的减少）",
-                    "combo-cards-played-tooltip": "当你手牌或牌库中有 {{cardName}} 时，显示你本局使用过的连击牌数量"
+                    "combo-cards-played-tooltip": "当你手牌或牌库中有 {{cardName}} 时，显示你本局使用过的连击牌数量",
+                    "cards-played-this-turn-tooltip": "如果套牌中有使用该牌的牌，显示本回合你已打出的卡牌数量",
+                    "cards-played-this-turn-label": "本回合打出的卡牌"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -3592,6 +3636,13 @@
                 "show-lobby-tracker": "显示大厅记牌器",
                 "show-lobby-tracker-tooltip": "在套牌选择屏幕上显示所选的套牌列表",
                 "title": "大厅记牌器"
+            },
+            "max-resources-widget": {
+                "always-on": "始终开启",
+                "toggle-tooltip": "当你的最大生命值/法力水晶发生变化时，会显示一个显示您在游戏中可拥有的最大资源量小部件",
+                "title": "最大资源小部件",
+                "always-on-tooltip": "即使最大生命值/法力水晶没有变化，也会显示小部件",
+                "toggle": "显示小部件"
             }
         },
         "collection": {
@@ -4437,7 +4488,7 @@
         "protoss-rogue": "星灵贼",
         "archon-rogue": "执政官贼",
         "archon-cycle-rogue": "执政官循环贼",
-        "battlecruiser-shaman-": "战列舰萨",
+        "battlecruiser-shaman-": "星舰萨",
         "murmur-otk-shaman": "摩摩尔OTK萨",
         "turbulus-shaman": "特布勒斯萨",
         "f-location-warlock": "冰地标术",
