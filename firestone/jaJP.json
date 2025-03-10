@@ -116,7 +116,8 @@
             "tutorial": "チュートリアル",
             "traveling_travel_agency": "トラベるトラベラーズ",
             "great_dark_beyond": "暗黒宇宙ドラナイ伝",
-            "heroes_of_starcraft": "スタークラフト英雄伝"
+            "heroes_of_starcraft": "スタークラフト英雄伝",
+            "into_the_emerald_dream": "夢見る大地エメラルド・ドリーム"
         },
         "pack": {
             "classic": "クラシック",
@@ -195,7 +196,9 @@
             "golden-year-of-the-pegasus": "ゴールデン・ペガサス年",
             "the-great-dark-beyond": "暗黒宇宙ドラナイ伝",
             "the-great-dark-beyond-catch-up": "暗黒宇宙ドラナイ伝・キャッチアップ",
-            "year-of-the-pegasus": "ペガサス年"
+            "year-of-the-pegasus": "ペガサス年",
+            "golden-into-the-emerald-dream": "ゴールデン・夢見る大地エメラルド・ドリーム",
+            "into-the-emerald-dream": "夢見る大地エメラルド・ドリーム"
         },
         "ranks": {
             "constructed": {
@@ -257,7 +260,11 @@
             "naga": "ナーガ",
             "oldgod": "旧神",
             "spell": "呪文",
-            "golem": "ゴーレム"
+            "golem": "ゴーレム",
+            "battlecruiser": "バトルクルーザー",
+            "protoss": "プロトス",
+            "terran": "テラン",
+            "zerg": "ザーグ"
         },
         "mechanics": {
             "battlecry": "雄叫び",
@@ -389,6 +396,10 @@
                 "memory-reading": {
                     "message": "致命的なエラー：ゲームのメモリが読み込めません。クリックするとオンラインで詳細な情報を表示します",
                     "title": "メモリが読み込めません"
+                },
+                "truncated-logs": {
+                    "message": "致命的なエラー：ゲームの設定ファイルを更新してください。クリックすると、オンラインでさらなる情報を確認できます",
+                    "title": "ログがスタックしています"
                 }
             }
         },
@@ -1104,7 +1115,10 @@
                 "quilboar": "キルボア",
                 "undead": "アンデッド",
                 "blank": "種族なし",
-                "all": "全て"
+                "all": "全て",
+                "protoss": "プロトス",
+                "terran": "テラン",
+                "zerg": "ザーグ"
             },
             "filters": {
                 "hero": {
@@ -1912,7 +1926,8 @@
                 "epic": "エピック",
                 "friend": "フレンド",
                 "legacy": "レガシー",
-                "premium": "プレミアム"
+                "premium": "プレミアム",
+                "premium-annual": "プレミアムサポーター"
             },
             "periodicity": {
                 "monthly": "一ヶ月あたり",
@@ -1925,13 +1940,25 @@
                 "cancel-button": "キャンセル",
                 "title": "{{plan}}プランに加入する",
                 "subscribe-button": "参加する！",
-                "text": "サブスクを完了するために、デフォルトのブラウザでTebexのチェックアウトページが表示されます。アプリからいつでも契約をキャンセルすることができます。"
+                "text": "サブスクを完了するために、デフォルトのブラウザでTebexのチェックアウトページが表示されます。アプリからいつでも契約をキャンセルすることができます。",
+                "text-legacy": "デフォルトブラウザで開かれるOverwolfのチェックアウトページに移動し、サブスクライブを完了できます。アプリからいつでもサブスクライブをキャンセルできます。"
             },
             "subscribe-button": "サブスクライブ",
             "unsubscribe-button": "サブスクを解約",
             "unsubscribe-button-tooltip-legacy": "レガシープランを解約します。解約すると、このプランは利用可能なサブスクのプランとして表示されなくなります。プレミアム特典を有効にするには、新しいプランから選択する必要があります。",
             "subscribe-button-upgrade": "アップグレード",
-            "subscribe-button-epic": "エピックになる！"
+            "subscribe-button-epic": "エピックになる！",
+            "billing": {
+                "yearly-subtext": "({{value}%割引)",
+                "monthly": "毎月の請求",
+                "yearly": "年間の請求",
+                "click-to-copy-code": "クリックしてデッキコードをクリップボードにコピー",
+                "yearly-coupon-text": "期間限定オファー！{{endDate}}まで、決済において下記のコードを使うと、追加で{{reduction}}の割引を受けられます"
+            },
+            "cant-subscribe-button": "サブスクライブできません",
+            "cant-subscribe-tooltip": "すでに有効なプランがある間、他のプランにサブスクライブすることはできません。現在契約中のプランを解約し、有効期限が切れるまでお待ち下さい",
+            "check-status-online-inactive": "キャンセルされました。{{link}}で詳細を確認",
+            "view-payment-history": "支払い履歴を見る"
         },
         "communities": {
             "join": {
@@ -2248,6 +2275,9 @@
         },
         "protoss-minion-reduction": {
             "player": "自分のプロトスミニオンはこのゲーム中{{game}}コスト減り、次のプロトスミニオンは更に{{next}}コスト減る"
+        },
+        "cards-played-this-turn": {
+            "player": "このターン中、{{value}}枚のカードを使用した"
         }
     },
     "loading": {
@@ -2679,7 +2709,11 @@
             "clear-button": "削除",
             "pirates-summoned": "召喚した海賊の数",
             "pirates-summoned-tooltip": "この試合中にあなたが召喚した海賊の数です",
-            "remove-teammate-button": "チームメイトを削除"
+            "remove-teammate-button": "チームメイトを削除",
+            "beasts-summoned": "召喚した獣の数",
+            "beasts-summoned-tooltip": "この試合中に召喚した獣の数です",
+            "magnetized": "超電磁",
+            "magnetized-tooltip": "この試合中に超電磁したミニオンの数です"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -3203,7 +3237,12 @@
                 "open-local-cache-folder-button": "開く",
                 "open-local-cache-folder": "ローカルキャッシュを開く",
                 "arena-rewards-tooltip": "闘技場の報酬を更新します",
-                "arena-rewards": "闘技場の報酬"
+                "arena-rewards": "闘技場の報酬",
+                "export-settings-button-label": "設定をエクスポート",
+                "export-settings-button-tooltip": "設定をファイルに書き出します。別のコンピューターにインポートすることができます",
+                "import-settings-button-label": "設定をインポート",
+                "import-settings-button-tooltip": "設定をファイルからインポートします。他のコンピューターから書き出したファイルを使います",
+                "settings-title": "設定"
             },
             "quests": {
                 "title": "クエスト",
@@ -3261,7 +3300,9 @@
             },
             "widgets": {
                 "lock-widgets-tooltip": "ウィジェットを固定し、動かせなくします",
-                "lock-widgets-label": "ウィジェットの位置を固定"
+                "lock-widgets-label": "ウィジェットの位置を固定",
+                "size": "全体のウィジェットのサイズ",
+                "size-tooltiplabel": "アプリ全体のウィジェットのサイズを設定します"
             }
         },
         "decktracker": {
@@ -3273,7 +3314,8 @@
                 "duels": "デュエル",
                 "launch": "起動オプション",
                 "mulligan": "マリガン",
-                "lobby": "ロビー"
+                "lobby": "ロビー",
+                "overlay": "オーバーレイ"
             },
             "global": {
                 "title": "機能の有効化/無効化",
@@ -3552,7 +3594,9 @@
                     "protoss-spells-label": "プロトス呪文使用数",
                     "next-starship-launch-tooltip": "次の宇宙船を発射するときに軽減されるコストを表示します",
                     "protoss-minion-reduction-tooltip": "自分のプロトスミニオンが軽減されるコストを表示します。ゲーム全体に適用されるものと、次のミニオンにのみ適用されるものの両方が表示されます。",
-                    "combo-cards-played-label": "コンボカード使用数"
+                    "combo-cards-played-label": "コンボカード使用数",
+                    "cards-played-this-turn-label": "このターンにプレイされたカード",
+                    "cards-played-this-turn-tooltip": "使ったことがあるカードがデッキに存在する場合、このターン中に使ったカードの枚数を表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -3592,6 +3636,13 @@
                 "show-lobby-tracker-tooltip": "デッキ選択画面で、選択したデッキのデッキリストを表示します",
                 "title": "ロビートラッカー",
                 "show-lobby-tracker": "ロビートラッカーを表示"
+            },
+            "max-resources-widget": {
+                "toggle-tooltip": "最大体力や最大マナが変化したとき、それらの最大値を表すウィジェットを表示します",
+                "always-on": "常にオン",
+                "always-on-tooltip": "最大体力や最大マナ数が変化していなくても、ウィジェットを表示します",
+                "toggle": "ウィジェットを表示",
+                "title": "最大リソースウィジェット"
             }
         },
         "collection": {
