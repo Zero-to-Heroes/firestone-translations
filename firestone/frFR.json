@@ -556,7 +556,13 @@
                 "header-winrate": "Taux de victoires",
                 "header-winrate-coin": "Taux de victoires (La pièce)",
                 "header-winrate-first": "Taux de victoires (premier)",
-                "leaderboard-average-tooltip": "Votre moyenne telle qu’elle est calculée pour le classement. Les détails sont un peu complexes à détailler ici, n’hésitez pas à vous rendre sur Discord si vous souhaitez en savoir plus"
+                "leaderboard-average-tooltip": "Votre moyenne telle qu’elle est calculée pour le classement. Les détails sont un peu complexes à détailler ici, n’hésitez pas à vous rendre sur Discord si vous souhaitez en savoir plus",
+                "reward-dust": "Poussière en récompense",
+                "reward-gold": "Récompenses en or",
+                "reward-gold-tooltip": "Le nombre total / moyen d’or que vous avez gagné en Arène. N’inclut que les virées pour lesquelles toutes les données de récompenses sont disponibles",
+                "reward-packs": "Paquets en récompense",
+                "reward-packs-tooltip": "Le nombre total / moyen de paquets que vous avez gagnés en Arène. N’inclut que les virées pour lesquelles toutes les données de récompenses sont disponibles",
+                "reward-dust-tooltip": "Le nombre total / moyen de poussière que vous avez gagnée en Arène. N’inclut que les virées pour lesquelles toutes les données de récompenses sont disponibles"
             }
         },
         "collection": {
@@ -1939,7 +1945,7 @@
             },
             "legacy-plan-text": "Le plan Héritage est obsolète et cessera d’être pris en charge à un moment donné. Veuillez envisager de migrer vers un autre plan.",
             "active-until": "Actif jusqu’au {{ date }} sans renouvellement",
-            "check-status-online": "Actif. Plus de détails {{link}}",
+            "check-status-online": "Actif et se renouvelle automatiquement. Plus de détails {{link}}",
             "activate-discord-details-copy-tooltip": "Cliquez pour copier dans le presse-papiers",
             "subscribe-button-epic": "Passez à l’épique !",
             "title": "Plans Premium",
@@ -1956,9 +1962,11 @@
                 "yearly-coupon-text": "Offre limitée ! Jusqu’au {{endDate}}, obtenez {{reduction}} de réduction en utilisant le code suivant pendant votre paiement :"
             },
             "cant-subscribe-button": "Abonnement impossible",
-            "check-status-online-inactive": "Annulé. Voir les détails {{link}}",
+            "check-status-online-inactive": "Annulé, mais toujours actif. Voir les détails {{link}}",
             "view-payment-history": "Afficher l’historique de paiement",
-            "cant-subscribe-tooltip": "Vous ne pouvez pas vous abonner à un autre plan si vous avez déjà un plan en cours. Veuillez vous désabonner de votre plan actuel et attendre son expiration."
+            "cant-subscribe-tooltip": "Vous ne pouvez pas vous abonner à un autre plan si vous avez déjà un plan en cours. Veuillez vous désabonner de votre plan actuel et attendre son expiration.",
+            "override-checkbox-label": "Souscrire quand même",
+            "override-confirmation": "Je comprends que je perdrai mon abonnement actuel si je termine le processus d’abonnement"
         },
         "communities": {
             "manage": {
@@ -2278,6 +2286,12 @@
         },
         "cards-played-this-turn": {
             "player": "Vous avez joué {{value}} cartes pendant ce tour"
+        },
+        "starships-launched": {
+            "opponent": "Votre adversaire a déployé {{value}} vaisseaux"
+        },
+        "friendly-dead-minions-this-game": {
+            "player": "{{value}} serviteurs alliés sont morts pendant cette partie"
         }
     },
     "loading": {
@@ -2586,7 +2600,7 @@
             "lose-chance-label": "Défaite",
             "lose-chance-tooltip": "Vos chances de perdre le combat en cours",
             "damage-title": "Dégâts",
-            "damage-dealt-tooltip": "Dégâts infligés en moyenne",
+            "damage-dealt-tooltip": "Dans au moins {{value}} % des cas, les dégâts infligés seront dans cet intervalle",
             "damage-received-tooltip": "Dégâts reçus en moyenne",
             "lethal-title": "Létal",
             "lethal-dealt-tooltip": "% de chances de tuer l’adversaire",
@@ -3461,7 +3475,9 @@
                     "cards-drawn-tooltip": "Lorsque votre adversaire a une carte {{cardName}} dans son deck, ou s’il ou elle joue un {{cardClass}}, affiche le nombre de cartes qu’il ou elle a piochées pendant cette partie",
                     "abyssal-curse-tooltip": "Afficher les points de dégâts de la malédiction abyssale la plus forte de votre adversaire",
                     "damage-taken-on-your-turn-tooltip": "Donne des infos sur les dégâts subis par votre adversaire lors de ses tours (nombre de fois et total des dégâts) si sa classe est {{classes}}.",
-                    "protoss-spells-tooltip": "Affiche le nombre de sorts protoss lancés par votre adversaire pendant la partie. Ne s’affiche que contre les mages ayant lancé au moins un sort protoss."
+                    "protoss-spells-tooltip": "Affiche le nombre de sorts protoss lancés par votre adversaire pendant la partie. Ne s’affiche que contre les mages ayant lancé au moins un sort protoss.",
+                    "starships-launched-label": "Vaisseaux déployés",
+                    "starships-launched-tooltip": "Affiche le nombre de vaisseaux que votre adversaire a déployés au cours de la partie avec leurs pièces"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -3596,7 +3612,9 @@
                     "next-starship-launch-tooltip": "Affiche la réduction du coût de votre prochain déploiement de vaisseau",
                     "combo-cards-played-label": "Cartes avec Combo jouées",
                     "cards-played-this-turn-label": "Cartes jouées pendant ce tour",
-                    "cards-played-this-turn-tooltip": "Affiche le nombre de cartes que vous avez jouées pendant ce tour, si une carte de votre deck utilise cette donnée"
+                    "cards-played-this-turn-tooltip": "Affiche le nombre de cartes que vous avez jouées pendant ce tour, si une carte de votre deck utilise cette donnée",
+                    "friendly-dead-minions-this-game-label": "Serviteurs alliés morts",
+                    "friendly-dead-minions-this-game-tooltip": "Affiche le nombre de serviteurs alliés morts pendant cette partie lorsque vous avez une carte dans votre main ou votre deck qui utilise cette information"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
