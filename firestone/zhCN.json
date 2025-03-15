@@ -556,7 +556,13 @@
                 "leaderboard-average-tooltip": "按排行榜规则计算的均胜。更多细节难以在此详述，详见Discord",
                 "header-winrate-coin": "后手胜率",
                 "header-time-played": "游戏时长",
-                "header-winrate-first": "先手胜率"
+                "header-winrate-first": "先手胜率",
+                "reward-packs": "卡牌包奖励",
+                "reward-gold-tooltip": "您在竞技场中赢得的总/平均金币数量。仅包括我们拥有完整奖励数据的比赛",
+                "reward-packs-tooltip": "您在竞技场中赢得的总/平均卡牌包数量。仅包括我们拥有完整奖励数据的比赛",
+                "reward-dust": "奥术之尘奖励",
+                "reward-gold": "金币奖励",
+                "reward-dust-tooltip": "您在竞技场中赢得的总/平均奥术之尘数量。仅包括我们拥有完整奖励数据的比赛"
             }
         },
         "collection": {
@@ -1907,7 +1913,7 @@
                 "unsubscribe-ongoing-label": "取消订阅…"
             },
             "auto-renew": "生效中，自动续费于{{ date }}",
-            "check-status-online": "生效中，点击{{link}}查看详情",
+            "check-status-online": "生效且自动续费，点击{{link}}查看详情",
             "features": {
                 "title": "特性",
                 "premiumFeatures": "会员功能",
@@ -1956,9 +1962,11 @@
                 "yearly-coupon-text": "限时优惠！截止至{{endDate}}，结账时使用以下代码可获得额外的{{reduction}}折扣："
             },
             "cant-subscribe-button": "无法订阅",
-            "check-status-online-inactive": "已取消。查看详情 {{link}}",
+            "check-status-online-inactive": "已取消，但仍生效。查看详情 {{link}}",
             "view-payment-history": "查看付款历史",
-            "cant-subscribe-tooltip": "您不能在已有激活方案的情况下订阅其他方案。请取消当前方案并等待其到期。"
+            "cant-subscribe-tooltip": "您不能在已有激活方案的情况下订阅其他方案。请取消当前方案并等待其到期。",
+            "override-checkbox-label": "无论如何让我继续订阅",
+            "override-confirmation": "我已了解：如果我完成此订阅流程，我将失去当前的订阅"
         },
         "communities": {
             "join": {
@@ -2278,6 +2286,12 @@
         },
         "cards-played-this-turn": {
             "player": "本回合中您已使用了 {{value}} 张牌"
+        },
+        "friendly-dead-minions-this-game": {
+            "player": "本局对战已有 {{value}} 名友方随从死亡"
+        },
+        "starships-launched": {
+            "opponent": "对手已发射了 {{value}} 艘星舰"
         }
     },
     "loading": {
@@ -2586,7 +2600,7 @@
             "lose-chance-label": "负",
             "lose-chance-tooltip": "您在当前战斗落败的概率",
             "damage-title": "伤害",
-            "damage-dealt-tooltip": "平均造成伤害",
+            "damage-dealt-tooltip": "在至少 {{value}}% 的案例中，伤害将在该范围内",
             "damage-received-tooltip": "平均受到伤害",
             "lethal-title": "出局",
             "lethal-dealt-tooltip": "击杀对手的概率百分比",
@@ -3461,7 +3475,9 @@
                     "cards-drawn-tooltip": "当对手的套牌中有{{cardName}}，或者它们是{{cardClass}}卡时，显示它们在本局对战中抽到的卡牌数量",
                     "abyssal-curse-tooltip": "显示对手的深渊诅咒的最高伤害",
                     "damage-taken-on-your-turn-tooltip": "向您提供对手作为{{classes}}职业对局时在对手的回合中所受伤害的信息（次数和总伤害）",
-                    "protoss-spells-tooltip": "显示对手本局使用过的星灵法术数量。只在对手是法师且至少使用过一次星灵法术时才显示"
+                    "protoss-spells-tooltip": "显示对手本局使用过的星灵法术数量。只在对手是法师且至少使用过一次星灵法术时才显示",
+                    "starships-launched-label": "已发射的星舰",
+                    "starships-launched-tooltip": "显示对手本局对战中发射的星舰数量及其组件"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3596,7 +3612,9 @@
                     "protoss-minion-reduction-tooltip": "显示星灵随从的总法力消耗减少数量（包括整个对局中适用的减少和仅适用于下一个随从的减少）",
                     "combo-cards-played-tooltip": "当你手牌或牌库中有 {{cardName}} 时，显示你本局使用过的连击牌数量",
                     "cards-played-this-turn-tooltip": "如果套牌中有使用该牌的牌，显示本回合你已打出的卡牌数量",
-                    "cards-played-this-turn-label": "本回合打出的卡牌"
+                    "cards-played-this-turn-label": "本回合打出的卡牌",
+                    "friendly-dead-minions-this-game-label": "已死亡的友方随从",
+                    "friendly-dead-minions-this-game-tooltip": "当你手牌或牌库中有相关卡牌时，显示本场游戏中死亡的友方随从数量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
