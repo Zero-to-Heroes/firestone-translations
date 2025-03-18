@@ -291,7 +291,8 @@
             "taunt": "挑発",
             "stealth": "隠れ身",
             "windfury": "疾風",
-            "mega-windfury": "メガ疾風"
+            "mega-windfury": "メガ疾風",
+            "mana": "マナ"
         },
         "duration": {
             "min-sec": "{{min}}分{{sec}}秒",
@@ -556,7 +557,13 @@
                 "header-winrate": "勝率",
                 "header-winrate-coin": "後攻時勝率",
                 "header-winrate-first": "先攻時勝率",
-                "leaderboard-average-tooltip": "リーダーボー用に計算されたあなたの平均です。実際の詳細はここで説明するには少し複雑なので、詳しく知りたい方はDiscordにアクセスしてください。"
+                "leaderboard-average-tooltip": "リーダーボー用に計算されたあなたの平均です。実際の詳細はここで説明するには少し複雑なので、詳しく知りたい方はDiscordにアクセスしてください。",
+                "reward-dust": "ダスト報酬",
+                "reward-gold": "ゴールド報酬",
+                "reward-gold-tooltip": "今まで闘技場で入手した合計/平均ゴールド量です。報酬のデータを完全に取得できた挑戦のみが含まれます",
+                "reward-dust-tooltip": "今まで闘技場で入手した合計/平均魔素量です。報酬のデータを完全に取得できた挑戦のみが含まれます",
+                "reward-packs-tooltip": "今まで闘技場で入手した合計/平均パック数です。報酬のデータを完全に取得できた挑戦のみが含まれます",
+                "reward-packs": "パック報酬"
             }
         },
         "collection": {
@@ -1921,7 +1928,7 @@
                 "discordRole": "{{value}} Discord の役(Role)"
             },
             "auto-renew": "有効化して{{ date }}に自動更新する",
-            "check-status-online": "有効。{{link}}で詳細を確認",
+            "check-status-online": "有効にし、自動更新します。{{link}}で詳細を確認",
             "plan": {
                 "epic": "エピック",
                 "friend": "フレンド",
@@ -1957,8 +1964,10 @@
             },
             "cant-subscribe-button": "サブスクライブできません",
             "cant-subscribe-tooltip": "すでに有効なプランがある間、他のプランにサブスクライブすることはできません。現在契約中のプランを解約し、有効期限が切れるまでお待ち下さい",
-            "check-status-online-inactive": "キャンセルされました。{{link}}で詳細を確認",
-            "view-payment-history": "支払い履歴を見る"
+            "check-status-online-inactive": "キャンセルされましたが、まだ有効のままです。{{link}}で詳細を確認",
+            "view-payment-history": "支払い履歴を見る",
+            "override-checkbox-label": "とにかくサブスクライブする",
+            "override-confirmation": "私は、現在のサブスクリプションが満了した場合、そのサブスクリプションを失うことを理解しました"
         },
         "communities": {
             "join": {
@@ -2278,6 +2287,12 @@
         },
         "cards-played-this-turn": {
             "player": "このターン中、{{value}}枚のカードを使用した"
+        },
+        "starships-launched": {
+            "opponent": "対戦相手は宇宙船を{{value}}回発射した"
+        },
+        "friendly-dead-minions-this-game": {
+            "player": "この対戦中、味方のミニオンが{{value}}体死亡した"
         }
     },
     "loading": {
@@ -2586,7 +2601,7 @@
             "lose-chance-label": "負け",
             "lose-chance-tooltip": "今回の戦闘で負ける確率",
             "damage-title": "ダメージ",
-            "damage-dealt-tooltip": "平均与ダメージ",
+            "damage-dealt-tooltip": "少なくとも{{value}}%の確率で、ダメージはこの範囲に収まります",
             "damage-received-tooltip": "平均被ダメージ",
             "lethal-title": "リーサル",
             "lethal-dealt-tooltip": "%で敵のヒーローを倒せる",
@@ -3291,7 +3306,8 @@
             "appearance": {
                 "battlegrounds": {
                     "title": "バトルグラウンド",
-                    "widget-background-color": "ウィジェットの背景色"
+                    "widget-background-color": "ウィジェットの背景色",
+                    "global": "全体"
                 },
                 "reset-button": "全てリセット"
             },
@@ -3461,7 +3477,9 @@
                     "cards-drawn-tooltip": "対戦相手のデッキに{{cardName}}がある場合、または相手が{{cardClass}}の場合、この試合中にドローしたカードの枚数を表示します",
                     "abyssal-curse-tooltip": "対戦相手の最も高い「奈落の呪い」のダメージを表示します",
                     "damage-taken-on-your-turn-tooltip": "対戦相手が{{classes}}の場合、対戦相手が自身のターン中に喰らったダメージと、その回数を表示します",
-                    "protoss-spells-tooltip": "対戦相手がこの試合中に使用したプロトス呪文の数を表示します。対戦相手がメイジで、少なくとも1つのプロトス呪文を使用した場合のみ表示されます"
+                    "protoss-spells-tooltip": "対戦相手がこの試合中に使用したプロトス呪文の数を表示します。対戦相手がメイジで、少なくとも1つのプロトス呪文を使用した場合のみ表示されます",
+                    "starships-launched-label": "発射した宇宙船",
+                    "starships-launched-tooltip": "対戦相手が宇宙船を発射した回数と、その中身を表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3596,7 +3614,9 @@
                     "protoss-minion-reduction-tooltip": "自分のプロトスミニオンが軽減されるコストを表示します。ゲーム全体に適用されるものと、次のミニオンにのみ適用されるものの両方が表示されます。",
                     "combo-cards-played-label": "コンボカード使用数",
                     "cards-played-this-turn-label": "このターンにプレイされたカード",
-                    "cards-played-this-turn-tooltip": "使ったことがあるカードがデッキに存在する場合、このターン中に使ったカードの枚数を表示します"
+                    "cards-played-this-turn-tooltip": "使ったことがあるカードがデッキに存在する場合、このターン中に使ったカードの枚数を表示します",
+                    "friendly-dead-minions-this-game-label": "死亡した味方のミニオン",
+                    "friendly-dead-minions-this-game-tooltip": "手札かデッキに関連するカードがある場合、この対戦中に死亡した味方のミニオンの数を表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -3836,7 +3856,7 @@
                 "counter-magnetized-tooltip": "この試合中に超電磁した回数を表示します",
                 "counter-free-refresh-label": "無料入替",
                 "counter-magnetized-label": "超電磁",
-                "counter-spells-played-tooltip": "呪文を4枚で1セットとして、何セット使ったのかと、次のセットまでの進捗を表示します。",
+                "counter-spells-played-tooltip": "呪文を4枚で1組として、何組使ったのかと、次の強化までの進捗を表示します。",
                 "counter-spells-played-label": "呪文使用数"
             },
             "session-widget": {
