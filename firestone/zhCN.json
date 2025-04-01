@@ -193,15 +193,15 @@
             "island-vacation-catch-up": "胜地历险记 追赶包",
             "whizbang-catch-up": "威兹班的工坊 追赶包",
             "space": "深暗领域 卡牌包",
-            "golden-ashes-of-outland": "外域的灰烬金色包",
-            "golden-the-great-dark-beyond": "深暗领域金色包",
-            "golden-year-of-the-pegasus": "天马年金色包",
-            "the-great-dark-beyond": "深暗领域",
-            "the-great-dark-beyond-catch-up": "深暗领域追赶包",
-            "year-of-the-pegasus": "天马年",
+            "golden-ashes-of-outland": "外域的灰烬 金色卡牌包",
+            "golden-the-great-dark-beyond": "深暗领域 金色卡牌包",
+            "golden-year-of-the-pegasus": "天马年 金色卡牌包",
+            "the-great-dark-beyond": "深暗领域 卡牌包",
+            "the-great-dark-beyond-catch-up": "深暗领域 追赶包",
+            "year-of-the-pegasus": "天马年 卡牌包",
             "golden-into-the-emerald-dream": "漫游翡翠梦境 金色卡牌包",
             "into-the-emerald-dream": "漫游翡翠梦境 卡牌包",
-            "golden-classic": "职业 金色卡牌包",
+            "golden-classic": "经典模式 金色卡牌包",
             "into-the-emerald-dream-catch-up": "漫游翡翠梦境 追赶包"
         },
         "ranks": {
@@ -308,7 +308,8 @@
                 "weeks-ago": "{{value}}周前",
                 "hours-ago": "{{value}}小时前",
                 "days-ago": "{{value}}天前"
-            }
+            },
+            "hrs-min-short": "{{hrs}}时{{min}}分"
         },
         "social": {
             "discord": "Discord",
@@ -495,7 +496,8 @@
                 "minimize-run-button": "最小化视图",
                 "run-name": "竞技场 {{value}} 胜",
                 "load-runs-button": "点击加载更多轮次",
-                "deck-score-tooltip": "这是你的套牌分数，由你套牌中的所有卡牌的胜率计算得到"
+                "deck-score-tooltip": "这是你的套牌分数，由你套牌中的所有卡牌的胜率计算得到",
+                "average-match-time": "平均对局时长 {{value}}"
             },
             "empty-state": {
                 "title": "暂无信息",
@@ -533,7 +535,7 @@
                 "header-deck-winrate-tooltip": "包含该卡牌的套牌胜率",
                 "header-deck-total": "总对局数",
                 "header-play-on-curve-winrate": "按费拍怪胜率",
-                "header-play-on-curve-winrate-tooltip": "当你按费用使用此卡牌时的胜率",
+                "header-play-on-curve-winrate-tooltip": "在法力消耗曲线上使用这张牌时的平均胜率，即当你的最大法力值与这张牌的法力消耗相同时的胜率",
                 "header-play-on-curve-total": "按费使用次数",
                 "header-deck-total-tooltip": "此卡牌在套牌中的对局场数",
                 "header-discovered": "数据点"
@@ -554,7 +556,7 @@
             "personal-stats": {
                 "header-average-wins": "平均胜场",
                 "header-class-name": "职业",
-                "header-games-played": "对局数",
+                "header-games-played": "对战场数",
                 "header-runs": "轮数",
                 "leaderboard-average": "均胜排行榜",
                 "header-winrate": "胜率",
@@ -567,7 +569,9 @@
                 "reward-packs-tooltip": "您在竞技场中赢得的总/平均卡牌包数量。仅包括我们拥有完整奖励数据的比赛",
                 "reward-dust": "奥术之尘奖励",
                 "reward-gold": "金币奖励",
-                "reward-dust-tooltip": "您在竞技场中赢得的总/平均奥术之尘数量。仅包括我们拥有完整奖励数据的比赛"
+                "reward-dust-tooltip": "您在竞技场中赢得的总/平均奥术之尘数量。仅包括我们拥有完整奖励数据的比赛",
+                "average-match-time": "对局时长",
+                "average-match-time-tooltip": "你的平均对局时长"
             }
         },
         "collection": {
@@ -850,7 +854,7 @@
                 "ranking-header": "等级",
                 "deckbuilder-header": "构筑套牌",
                 "meta-decks-header": "环境套牌",
-                "meta-archetypes-header": "环境卡组类型"
+                "meta-archetypes-header": "环境套牌类型"
             },
             "filters": {
                 "filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
@@ -922,7 +926,7 @@
                 "archetype-filter": {
                     "all": "所有类型"
                 },
-                "sample-size-filter": "{{value}}场对局",
+                "sample-size-filter": "{{value}} 场对局",
                 "card-filter": {
                     "all": "选择卡牌"
                 }
@@ -965,7 +969,7 @@
                 "winrate": "{{value}}%胜率",
                 "last-used": "曾用于{{value}}",
                 "created-on": "创建于{{value}}",
-                "move-button-tooltip": "拖动到另一个同职业的卡组上可以合并为同一套牌的不同版本",
+                "move-button-tooltip": "拖动到另一个同职业的套牌上可以合并为同一套牌的不同版本",
                 "archive-button-tooltip": "存档这副套牌(您可以稍后还原它)",
                 "restore-button-tooltip": "还原这副套牌",
                 "default-deck-name": "套牌名称"
@@ -1023,13 +1027,13 @@
                 "import-deck-button-tooltip": "从剪贴板导入套牌代码"
             },
             "meta": {
-                "archetype-header": "卡组类型",
+                "archetype-header": "套牌类型",
                 "cards-header-tooltip": "显示哪些卡牌被加入或移出关键卡牌列表（点击卡组查看详情）",
                 "deck": {
                     "deviation-tooltip": "样本大小会影响胜率统计的准确程度，有95%的可能真实胜率就在这个区间之内。开启“保守胜率估计”来将对局数纳入胜率计算当中。",
                     "added-cards-header": "新增的卡牌",
                     "archetype-core-cards-header": "关键卡牌",
-                    "copy-deckstring-button": "复制卡组代码",
+                    "copy-deckstring-button": "复制套牌代码到炉石传说",
                     "removed-cards-header": "已移除的卡牌",
                     "view-online-button-tooltip": "前往https://www.d0nkey.top 查看更多数据",
                     "view-online-button": "打开在线数据",
@@ -1049,7 +1053,7 @@
                 "games-header": "对局",
                 "winrate-header": "胜率",
                 "core-cards-header": "核心卡",
-                "core-cards-header-tooltip": "显示这个卡组的核心卡中有哪些卡牌被添加或移除。点击卡组查看详情",
+                "core-cards-header-tooltip": "显示这个套牌类型的核心卡中有哪些卡牌被添加或移除。点击套牌查看详情",
                 "card-stats-header": "卡牌数据",
                 "view-details-cta": "点击查看详情！",
                 "deck-format-header": "模式",
@@ -1081,7 +1085,7 @@
                         "discovered-winrate-impact-header": "发现影响",
                         "discovered-winrate-header": "发现胜率",
                         "discovered-winrate-impact-tooltip-low-data": "警告 - 此卡牌只被发现过{{value}}次，因此统计数据可能不准确",
-                        "discovered-winrate-impact-header-tooltip": "对局中发现该卡牌时，相对于卡组胜率的平均胜率",
+                        "discovered-winrate-impact-header-tooltip": "对局中发现该卡牌时，相对于套牌胜率的平均胜率",
                         "discovered-winrate-impact-tooltip-data": "此卡牌已被发现过{{value}}次"
                     },
                     "deck-type": "套牌列表",
@@ -1349,7 +1353,7 @@
                 "header-pickrate": "选取率",
                 "header-card-details": "卡牌",
                 "card-search-placeholder": "搜索卡牌…",
-                "header-impact-tooltip": "打出这张牌时，最终位次平均会发生多少变化",
+                "header-impact-tooltip": "使用这张牌时，最终位次平均会发生多少变化",
                 "header-impact": "影响"
             },
             "bgs-tier-list": {
@@ -1765,7 +1769,7 @@
             "share_profile_page": "在线访问您自己的个人资料页面，并与其他人分享展示您的成就和数据",
             "lottery": "你可以参与每月抽奖来获得Firestone会员（设置 -> 通用 -> 抽奖）",
             "ad-tip-prefix": "你知道吗？{{text}}",
-            "deck_merge": "你可以将一个卡组拖动到另一个卡组上来合并相同卡组的不同版本",
+            "deck_merge": "你可以将一个套牌拖动到另一个套牌上来合并相同套牌的不同版本",
             "achievements_pick_for_me": "你可以让Firestone为你选择三个成就来追踪进度",
             "achievements_pin": "选择任意数量的成就，在游戏中跟踪它们并实时更新",
             "contextual_related_cards": "鼠标悬停在记牌器中的某些卡牌上，可以获得更多卡牌效果信息",
@@ -1808,7 +1812,7 @@
             "copy-deck-tooltip": "点击复制高胜率套牌到剪贴板",
             "with-name": "本周的乱斗模式是： {{name}} (开始于 {{date}} )",
             "no-name": "乱斗模式，开始于 {{date}}",
-            "non-buildable-warning-tooltip": "在本期乱斗中，这个职业的所有热门卡组都含有你缺失的卡牌"
+            "non-buildable-warning-tooltip": "在本期乱斗中，这个职业的所有热门套牌都含有你收藏中缺失的卡牌"
         },
         "lottery": {
             "title": "抽奖点数",
@@ -1834,8 +1838,8 @@
                 "stats": {
                     "totalResourcesUsed-label": "使用的资源",
                     "totalResourcesUsed-tooltip": "在天梯和战棋中消耗法力水晶或铸币来获取点数（{{pointsGained}}点）",
-                    "quilboarsPlayed-label": "已使用的野猪人",
-                    "quilboarsPlayed-tooltip": "使用野猪人来获取点数（{{pointsGained}}点）",
+                    "quilboarsPlayed-label": "打出的野猪人",
+                    "quilboarsPlayed-tooltip": "打出野猪人来获取点数（{{pointsGained}}点）",
                     "beastsPlayed-label": "打出的野兽",
                     "beastsPlayed-tooltip": "打出野兽来获取点数（{{pointsGained}}点）",
                     "demonsPlayed-label": "打出的恶魔",
@@ -1854,8 +1858,8 @@
                     "nagasPlayed-tooltip": "打出纳迦来获取点数（{{pointsGained}}点）",
                     "undeadPlayed-label": "打出的亡灵",
                     "undeadPlayed-tooltip": "打出亡灵来获取点数（{{pointsGained}}点）",
-                    "spellsPlayed-label": "使用的法术",
-                    "spellsPlayed-tooltip": "使用法术来获取点数（{{pointsGained}}点）",
+                    "spellsPlayed-label": "打出的法术",
+                    "spellsPlayed-tooltip": "打出法术来获取点数（{{pointsGained}}点）",
                     "damageWithSpells-label": "使用法术造成伤害",
                     "damageWithSpells-tooltip": "使用法术造成伤害来获取点数（{{pointsGained}}点）"
                 }
@@ -2042,8 +2046,8 @@
         "multicaster": {
             "player": "你已使用过的法术派系：{{schools}}",
             "opponent": "对手已使用过的法术派系：{{schools}}",
-            "opponent-new": "对手打出过的法术派系: {{schools}}",
-            "player-new": "你打出过的法术派系: {{schools}}"
+            "opponent-new": "对手使用过的法术派系: {{schools}}",
+            "player-new": "你使用过的法术派系: {{schools}}"
         },
         "coral-keeper": {
             "player": "你可召唤 {{totalSummons}} 个“珊瑚元素”；已使用的法术派系：{{schools}}"
@@ -2180,8 +2184,8 @@
             "player": "你已使用过的奥秘数量：{{value}}"
         },
         "specific-plays": {
-            "opponent": "你的对手打出了{{value}} {{cardName}}",
-            "player": "你已打出了{{value}} {{cardName}}"
+            "opponent": "对手已使用了{{value}}张{{cardName}}",
+            "player": "你已使用了{{value}}张{{cardName}}"
         },
         "tram-heist": {
             "player": "对手上回合使用了{{value}}张卡牌"
@@ -2206,14 +2210,14 @@
         },
         "elemental-streak": {
             "player": "元素链连续回合数：{{value}}",
-            "opponent": "你的对手已连续使用元素牌：{{value}}个回合"
+            "opponent": "对手已连续{{value}}个回合使用了元素"
         },
         "thirsty-drifter": {
             "player": "你已使用过{{value}}张(1)费牌"
         },
         "wheel-of-death": {
             "player": "你的生命已如风中残烛，仅剩{{value}}个回合！急急急！",
-            "opponent": "你的对手即将油尽灯枯，再坚守{{value}}个回合！顶住！"
+            "opponent": "对手即将油尽灯枯，再坚守{{value}}个回合！顶住！"
         },
         "cards-drawn": {
             "player": "本局对战中你已抽取{{value}}张牌",
@@ -2234,7 +2238,7 @@
         },
         "damage-taken-on-your-turn": {
             "player": "你在己方回合受到伤害：{{times}}次，共{{damage}}点",
-            "opponent": "你的对手在其回合中受到了{{times}}次伤害，总计{{damage}}点伤害"
+            "opponent": "对手在其回合中受到了{{times}}次伤害，总计{{damage}}点伤害"
         },
         "locations-used": {
             "player": "你已使用地标效果：{{value}}次"
@@ -2272,7 +2276,7 @@
             "player": "您在本局对战中对友方角色施放了{{value}}张法术"
         },
         "gifts-played": {
-            "player": "您已打出了不在初始套牌中的{{value}}张卡牌"
+            "player": "您已使用了不在初始套牌中的卡牌{{value}}张"
         },
         "bgs-spells-played": {
             "player": "你已经施放了{{buff}}组“每施放4个法术”，目前你的下一组进度为 {{target}}"
@@ -2313,6 +2317,9 @@
         "hero-power-use": {
             "player": "你在本局对战中使用过英雄技能 {{value}} 次",
             "opponent": "对手在本局对战中使用过英雄技能 {{value}} 次"
+        },
+        "imbue": {
+            "player": "你在本局对战中灌注了英雄技能 {{value}} 次"
         }
     },
     "loading": {
@@ -2465,7 +2472,7 @@
             "team": "队伍",
             "global-winrate": "全球胜率",
             "total-matches": "对战场数",
-            "games": "{{value}} 场对战",
+            "games": "{{value}} 场对局",
             "winrate": "{{value}}%胜率",
             "last-used": "最后使用于 {{value}}",
             "archive-button-tooltip": "存档此队伍(您可以稍后还原它)",
@@ -2579,7 +2586,7 @@
                 "deck-mulligan-filter-opponent-tooltip": "显示对战{{opponent}}的对局。点击更改。",
                 "deck-mulligan-filter-rank-bracket-tooltip": "显示自{{rankBracket}}分段以来的对局。点击更改。",
                 "deck-mulligan-filter-time-tooltip": "显示{{timeFrame}} （{{patchDetails}}）以来的游戏。点击更改。",
-                "sample-size-tooltip": "使用该卡组类型进行过的对局场数（如果有的话）；否则会使用准确的套牌列表"
+                "sample-size-tooltip": "使用该套牌类型进行过的对局场数（如果有的话）；否则会使用精确的套牌列表"
             },
             "lobby": {
                 "close-button-tooltip": "禁用套牌概览。您可以在设置中重新激活它",
@@ -2771,7 +2778,7 @@
         "hero-selection": {
             "achievement-completed": "完成成就",
             "achievement-missing": "未完成成就",
-            "total-matches": "{{value}} 场对战",
+            "total-matches": "{{value}} 场对局",
             "tier-list-title-tooltip": "筛选后共计 {{totalMatches}} 场（更改主应用程序中的筛选规则将更新数据）：",
             "tier-list-title-footer": "最近更新于 {{lastUpdateDate}}",
             "not-enough-data-points-warning": "此英雄的样本数量太少（仅{{value}}个数据点），因此数据将被剔除。你可以试试取消某些战棋数据页的筛选。",
@@ -2814,7 +2821,7 @@
                 "rewards-empty-state": "无任务奖励",
                 "reward-turn-tooltip": "在第 {{turn}} 回合获得任务奖励",
                 "mmr-tooltip": "该玩家的预测等级分数。我们仅仅使用排行榜上的玩家昵称获取此数据（可能存在同名昵称），所以并不保证精准，尤其是在低分段。",
-                "mmr": "{{value}}排名积分",
+                "mmr": "{{value}} 排名积分",
                 "trinkets-empty-state": "无饰品",
                 "trinkets-title": "饰品"
             },
@@ -2966,7 +2973,7 @@
         "hero-info": {
             "winrate-label": "胜率",
             "popularity-label": "热度",
-            "player-matches": "{{value}} 场对决",
+            "player-matches": "{{value}} 场对局",
             "your-value-tooltip": "您的场次",
             "community-value-tooltip": "社区值，使用主应用中设置的筛选器",
             "win-distribution-header": "胜场分布（共 {{value}} 轮）",
@@ -2999,7 +3006,7 @@
             "close-tooltip": "关闭并停用小部件。如果您想要再次启用它，请在设置中重新开启"
         },
         "summary": {
-            "total-games": "{{value}} 局比赛",
+            "total-games": "{{value}} 场对局",
             "total-games-tooltip": "从{{value}}起记录的{{gameMode}}战绩（使用顶部重置按钮可开始一段新的战绩记录）",
             "total-games-tooltip-all-time": "从您开始使用此应用起记录的{{gameMode}}战绩（使用顶部重置按钮可开始一段新的战绩记录）",
             "mmr-tooltip": "你当前的排名积分",
@@ -3376,8 +3383,8 @@
                 "reset-deck-position-after-trade-tooltip": "在交易了一张可交易牌之后，牌库的顶部和底部可能被打乱，因此牌库顶部和底部的记录默认会在交易后被清除。在此选择是否保留交易前的记录。",
                 "show-stats-change": "显示卡牌数值变化",
                 "show-stats-change-tooltip": "在套牌列表中显示某些发生变化的卡牌（例如“点燃”、“铁匠锤”）",
-                "show-cost-reduction": "更新套牌中的卡牌费用",
-                "show-cost-reduction-tooltip": "更新受到某些卡牌影响后，牌库中的卡牌费用（如“咒术洪流”）",
+                "show-cost-reduction": "更新套牌中的卡牌法力值消耗",
+                "show-cost-reduction-tooltip": "更新受到某些卡牌影响后，牌库中的卡牌法力值消耗（如“咒术洪流”）",
                 "show-unknown-cards": "显示未知卡牌",
                 "show-unknown-cards-tooltip": "在记牌器中为我们没有信息的卡牌标记上“未知卡牌”。",
                 "highlight-related-cards": "高亮相关卡牌",
@@ -3398,7 +3405,7 @@
                 "show-gifts-in-separate-zone-tooltip": "将衍生的卡牌从“其他”区移至可折叠的“其他（衍生）”区",
                 "show-board-in-separate-zone": "在单独分区显示战场上的卡牌",
                 "show-gifts-in-separate-zone": "在单独分区显示衍生（非初始牌库中的）卡牌",
-                "group-same-cards-tooltip": "将卡牌按卡牌编号分类，不论其被弃、死亡、摧毁或以非原始费用使用等。",
+                "group-same-cards-tooltip": "将卡牌按卡牌编号分类，不论其被丢弃、死亡、摧毁或以非原始法力值消耗使用等。",
                 "group-same-cards": "将相同卡牌合并列出",
                 "show-plagues-on-top-tooltip": "在记牌器的“牌库”顶显示全部死亡骑士疫病，以便追踪它们",
                 "show-plagues-on-top": "在顶部显示疫病牌",
@@ -3430,8 +3437,8 @@
                 "darken-used-cards-tooltip": "启用此功能，已使用的卡牌将变暗",
                 "global-effects-label": "显示全局效果",
                 "global-effects-tooltip": "启用此功能，记牌器顶端会出现一个新的部分用于记录影响英雄或牌库的效果。",
-                "sort-by-mana-cost-label": "按费用排序所有卡牌",
-                "sort-by-mana-cost-tooltip": "启用此功能，其他区域卡牌将按费用排序。 停用此功能，其他区域将依次显示战场上、坟场中和其他",
+                "sort-by-mana-cost-label": "按法力值消耗排序所有卡牌",
+                "sort-by-mana-cost-tooltip": "启用此功能，其他区域卡牌将按法力值消耗排序。 停用此功能，其他区域将依次显示战场上、坟场中和其他",
                 "show-bottom-cards-separately-label": "显示牌库底",
                 "show-bottom-cards-separately-tooltip": "启用此功能，记牌器中将出现一个显示已知牌库底的分区",
                 "show-top-cards-separately-label": "显示牌库顶",
@@ -3485,13 +3492,13 @@
                     "multicaster-tooltip": "显示对手在本局对战中已使用的的法术派系",
                     "earthen-golem-label": "土灵魔像",
                     "earthen-golem-tooltip": "显示对手已召唤的“土灵魔像”数量",
-                    "chaotic-tendril-tooltip": "显示你对手已使用的“混乱触须”数量",
-                    "number-of-spells-tooltip": "显示你对手使用过的最后一个法术。仅在对手使用过法术时显示。",
+                    "chaotic-tendril-tooltip": "显示对手已使用的“混乱触须”数量",
+                    "number-of-spells-tooltip": "显示对手使用过的最后一个法术。仅在对手使用过法术时显示。",
                     "excavate-tooltip": "显示对手当前和最高的发掘等级，并在你的鼠标移至计数器时显示对手可获得的下一等级的发掘宝藏",
                     "wheel-of-death-tooltip": "在对手使用{{cardName}}后，显示你死亡前的剩余回合数",
-                    "dragons-summoned-tooltip": "显示你的对手已召唤的龙数量。仅在对手为牧师且已使用过龙牌时显示",
+                    "dragons-summoned-tooltip": "显示对手已召唤的龙的数量。仅在对手为牧师且已使用过龙牌时显示",
                     "elemental-streak-tooltip": "计算你的对手连续使用元素牌的回合数。仅当其已至少连续两回合使用元素牌时显示。",
-                    "dead-minions-this-game-tooltip": "当你的对手是死亡骑士或者他们手牌或卡组中有相关卡牌时（如“矿坑老板雷斯卡”），显示本局对战中已死亡的随从数量",
+                    "dead-minions-this-game-tooltip": "当对手是死亡骑士或者他们手牌或套牌中有相关卡牌时（如“矿坑老板雷斯卡”），显示本局对战中已死亡的随从数量",
                     "discovers-tooltip": "计算对手发现卡牌的次数",
                     "libram-reduction-tooltip": "显示对手圣契法力值消耗的总减少量",
                     "cards-drawn-tooltip": "当对手的套牌中有{{cardName}}，或者它们是{{cardClass}}卡时，显示它们在本局对战中抽到的卡牌数量",
@@ -3503,7 +3510,9 @@
                     "hero-power-use-label": "英雄技能使用",
                     "ysondre-tooltip": "显示在本局对战中伊森德雷的死亡次数",
                     "ysondre-label": "伊森德雷",
-                    "hero-power-use-tooltip": "显示你使用英雄技能的次数"
+                    "hero-power-use-tooltip": "显示你使用英雄技能的次数",
+                    "imbue-tooltip": "显示你在本局对战中灌注英雄技能的次数",
+                    "imbue-label": "灌注"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3512,8 +3521,8 @@
                 "known-decklist-tooltip": "启用此功能，若在对局开始时知晓对手套牌详情，记牌器会自动加载当前对手的套牌（如幻变模式-“威兹班的英雄”）"
             },
             "your-deck": {
-                "ignore-decklist-label": "忽略卡组内容",
-                "ignore-decklist-tooltip": "忽略卡组的内容，假设初始牌库未知，只追踪打出或抽到的卡牌。自从下一场对局开始生效。",
+                "ignore-decklist-label": "忽略套牌内容",
+                "ignore-decklist-tooltip": "忽略套牌的内容，假设初始牌库未知，只追踪已使用或抽到的卡牌。自从下一场对局开始生效。",
                 "ignore-decklist-confirmation": "好的，记牌器将忽略您的牌库",
                 "counters": {
                     "galakrond-tooltip": "显示你已祈求“迦拉克隆”的次数（仅当你使用过“迦拉克隆”或者祈求牌时显示）",
@@ -3587,7 +3596,7 @@
                     "secrets-label": "奥秘（已使用的）",
                     "excavate-label": "发掘",
                     "tram-heist-label": "飞车劫掠",
-                    "tram-heist-tooltip": "当“{{cardName}}”在你的手牌中时，显示你的对手上回合使用过的卡牌",
+                    "tram-heist-tooltip": "当“{{cardName}}”在你的手牌中时，显示对手上回合使用过的卡牌",
                     "dragons-summoned-label": "已召唤的龙",
                     "gardens-grace-label": "花园惠景",
                     "gardens-grace-tooltip": "当你的手牌或牌库中有“花园惠景”时，显示它的实际法力值消耗（减少后的）",
@@ -3625,20 +3634,20 @@
                     "discovers-tooltip": "计算你发现卡牌的次数",
                     "libram-reduction-label": "圣契减费",
                     "libram-reduction-tooltip": "显示你的圣契法力值消耗的总减少量",
-                    "gifts-played-tooltip": "显示你打出的由另一张卡牌创建的衍生卡的数量",
-                    "gifts-played-label": "已打出的礼物卡牌",
+                    "gifts-played-tooltip": "显示你使用的由另一张卡牌创建的衍生卡的数量",
+                    "gifts-played-label": "已使用的礼物卡牌",
                     "spells-on-friendly-characters-label": "法术（友方）",
                     "spells-on-friendly-characters-tooltip": "显示本局对战中你对友方角色施放的法术卡牌的数量",
                     "combo-cards-played-label": "已使用的连击牌",
                     "protoss-minion-reduction-label": "星灵随从法力消耗减少",
-                    "next-starship-launch-label": "下一艘星舰发射费用减少",
+                    "next-starship-launch-label": "下一艘星舰发射法力值消耗减少",
                     "protoss-spells-label": "已使用的星灵法术",
                     "next-starship-launch-tooltip": "显示下一次星舰发射的法力消耗减少",
                     "protoss-spells-tooltip": "如果你的牌组中有 {{cardName}}，则显示你在本局对战中使用过的星灵法术数量",
                     "protoss-minion-reduction-tooltip": "显示星灵随从的总法力消耗减少数量（包括整个对局中适用的减少和仅适用于下一个随从的减少）",
                     "combo-cards-played-tooltip": "当你手牌或牌库中有 {{cardName}} 时，显示你本局使用过的连击牌数量",
-                    "cards-played-this-turn-tooltip": "如果套牌中有使用该牌的牌，显示本回合你已打出的卡牌数量",
-                    "cards-played-this-turn-label": "本回合打出的卡牌",
+                    "cards-played-this-turn-tooltip": "如果套牌中有使用该牌的牌，显示本回合你已使用的卡牌数量",
+                    "cards-played-this-turn-label": "本回合使用的卡牌",
                     "friendly-dead-minions-this-game-label": "已死亡的友方随从",
                     "friendly-dead-minions-this-game-tooltip": "当你手牌或牌库中有相关卡牌时，显示本场游戏中死亡的友方随从数量",
                     "aviana-elunes-chosen-label": "艾维娜",
@@ -4083,7 +4092,7 @@
         "language-auto-tooltip": "使用你在Twitch的语言设置",
         "language-auto": "自动",
         "cards-in-deck-player-tooltip": "你手牌中有{{cardsInHand}}张卡牌，牌库中有{{cardsInDeck}}张卡牌。",
-        "cards-in-deck-opponent-tooltip": "你对手手牌中有{{cardsInHand}}张卡牌，牌库中有{{cardsInDeck}}张卡牌。",
+        "cards-in-deck-opponent-tooltip": "对手的手牌中有{{cardsInHand}}张卡牌，牌库中有{{cardsInDeck}}张卡牌。",
         "show-tracker": "显示记牌器",
         "show-opponent-tracker": "显示对手记牌器",
         "card-scale": "卡牌大小",
