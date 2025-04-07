@@ -554,7 +554,7 @@
                 "header-average-wins": "每局勝場",
                 "header-games-played": "已遊玩局數",
                 "header-class-name": "職業",
-                "header-runs": "賽局",
+                "header-runs": "場次",
                 "header-winrate": "勝率",
                 "leaderboard-average": "排行榜平均值",
                 "leaderboard-average-tooltip": "為排行榜計算的平均值。實際細節有點複雜，如果你想了解更多，請跳到 Discord",
@@ -1488,7 +1488,7 @@
                 "no-dust-missing-tooltip": "你有全部的卡牌",
                 "view-details-button": "檢視詳情",
                 "winrate": "勝率",
-                "runs": "賽局",
+                "runs": "賽局數",
                 "starter-deck": "起始牌組",
                 "final-deck": "最後牌組",
                 "all-runs-with-deck": "\"{{deckName}}\" 的所有賽局",
@@ -1915,7 +1915,7 @@
                 "games-played": "過去 {{value}} 天內遊玩過的賽局",
                 "total-members": "成員",
                 "leaderboards": {
-                    "runs-completed-header": "賽局",
+                    "runs-completed-header": "場次",
                     "rating-header": "評分",
                     "rank-header": "排名",
                     "empty-leaderboard": "該排行榜還沒有玩家",
@@ -2065,8 +2065,8 @@
             "opponent": "對手最後打出花費為 {{cost}} 顆法力水晶或更多的法術是 {{value}}"
         },
         "cthun": {
-            "player": "你的克蘇恩體質是 {{atk}}/{{health}}",
-            "opponent": "對手的克蘇恩體質為 {{atk}}/{{health}}"
+            "player": "你的「克蘇恩」體質是 {{atk}}/{{health}}",
+            "opponent": "對手的「克蘇恩」體質為 {{atk}}/{{health}}"
         },
         "elemental": {
             "player": "你上回合打出過 {{lastTurn}} 個元素，這回合打出過 {{thisTurn}} 個元素",
@@ -2077,8 +2077,8 @@
             "opponent": "對手已經死了 {{value}} 隻豬豬"
         },
         "volatile-skeleton": {
-            "player": "{{value}} 隻友方易變骷髏已死亡",
-            "opponent": "{{value}} 隻敵方易變骷髏已死亡"
+            "player": "{{value}} 個友方「易變骷髏」已死亡",
+            "opponent": "{{value}} 個對手「易變骷髏」已死亡"
         },
         "relic": {
             "player": "你下一個文物的力量將是 {{value}}",
@@ -2105,12 +2105,12 @@
             "opponent": "對手的下一張「閃電龍鷹」卡牌將造成 {{value}} 傷害"
         },
         "jade": {
-            "player": "你的「翠玉魔像」體質為 {{value}}",
-            "opponent": "對手的「翠玉魔像」體質為 {{value}}"
+            "player": "你的「「翠玉魔像」」體質為 {{value}}",
+            "opponent": "對手的「「翠玉魔像」」體質為 {{value}}"
         },
         "libram": {
-            "player": "你於本賽局施放過 {{value}} 張聖契",
-            "opponent": "對手於本賽局施放過 {{value}} 張聖契"
+            "player": "你於本賽局施放過 {{value}} 張「聖契」",
+            "opponent": "對手於本賽局施放過 {{value}} 張「聖契」"
         },
         "si-seven": {
             "player": "你於本賽局打出過 {{value}} 張「軍情七處」卡牌",
@@ -2121,8 +2121,8 @@
             "opponent": "對手於本賽局施放過 {{value}} 個法術"
         },
         "watchpost": {
-            "player": "你於本賽局打出過 {{value}} 張哨所",
-            "opponent": "對手於本賽局打出過 {{value}} 張哨所"
+            "player": "你於本賽局打出過 {{value}} 張「哨所」",
+            "opponent": "對手於本賽局打出過 {{value}} 張「哨所」"
         },
         "bgs-southsea": {
             "player": "你這回合買入了 {{value}} 個海盜"
@@ -2148,11 +2148,11 @@
             "player": "你的下一張「{{cardName}}」卡牌花費（{{cost}}）顆法力水晶（你於本賽局施放了 {{spells}} 個神聖法術—總計 {{spellsMana}} 顆法力水晶）"
         },
         "chained-guardian": {
-            "player": "你已將 {{value}} 張瘟疫洗入對手的牌堆中"
+            "player": "你已將 {{value}} 張「瘟疫」洗入對手的牌堆中"
         },
         "specific-plays": {
             "opponent": "對手已經打出過 {{value}} 張「{{cardName}}」卡牌",
-            "player": "你已打出過 {{value}} 張「{{cardName}}」卡牌"
+            "player": "你打出過 {{value}} 張「{{cardName}}」卡牌"
         },
         "secrets": {
             "player": "你於此賽局中施放過 {{value}} 個秘密"
@@ -2162,10 +2162,10 @@
             "opponent": "對手已挖掘了 {{totalExcavates}} 次。下一次挖掘，他們將獲得第 {{nextTier}} 級寶藏"
         },
         "tram-heist": {
-            "player": "對手上回合打出了 {{value}} 張卡牌"
+            "player": "對手上回合打出過 {{value}} 張卡牌"
         },
         "lightray": {
-            "player": "本賽局你已打出 {{value}} 張聖騎士卡牌，將聖光魟魚降低為 {{lightray}} 顆法力水晶"
+            "player": "本賽局你打出過 {{value}} 張聖騎士卡牌，將聖光魟魚降低為 {{lightray}} 顆法力水晶"
         },
         "menagerie": {
             "player": "本賽局你打出過以下手下類別：{{value}}"
@@ -2200,7 +2200,7 @@
             "opponent": "對手在本賽局已抽取 {{value}} 張卡牌"
         },
         "thirsty-drifter": {
-            "player": "你已打出 {{value}} 張花費（1）顆法力水晶的卡牌"
+            "player": "你打出過 {{value}} 張花費（1）顆法力水晶的卡牌"
         },
         "holy-spells": {
             "player": "本賽局你已施放 {{value}} 個神聖法術"
@@ -2212,7 +2212,7 @@
             "player": "你已對任意目標施放過 {{value}} 個法術"
         },
         "cards-played-from-another-class": {
-            "player": "你已打出的其他職業的 {{value}} 卡牌"
+            "player": "你打出過 {{value}} 張其他職業的卡牌"
         },
         "queensguard": {
             "player": "本回合你已施放 {{value}} 個法術",
@@ -2223,7 +2223,7 @@
             "opponent": "對手已連續 {{value}} 回合打出過元素"
         },
         "bgs-tuskarr-raider": {
-            "player": "你在本賽局已打出 {{value}} 個海盜"
+            "player": "你在本賽局打出過 {{value}} 個海盜"
         },
         "ceaseless": {
             "player": "現在「{{cardName}}」的法力水晶為 {{cost}} 點。你和對手已經抽出、打出或摧毀了 {{value}} 張卡牌"
@@ -2233,11 +2233,11 @@
             "opponent": "對手已經發現了 {{value}} 次卡牌"
         },
         "libram-reduction": {
-            "player": "你的聖契降低 {{value}} 顆法力水晶花費",
-            "opponent": "對手的聖契降低 {{value}} 顆法力水晶花費"
+            "player": "你的「聖契」降低 {{value}} 顆法力水晶花費",
+            "opponent": "對手的「聖契」降低 {{value}} 顆法力水晶花費"
         },
         "gifts-played": {
-            "player": "你已打出不存在初始牌堆中的 {{value}} 張卡牌"
+            "player": "你打出過 {{value}} 張不存在初始牌堆中的卡牌"
         },
         "bgs-free-refresh": {
             "player": "你還剩 {{value}} 次免費重骰"
@@ -2268,16 +2268,17 @@
             "player": "本賽局你的神族手下花費降低 {{game}}，而你的下一個神族手下花費額外降低 {{next}}"
         },
         "combo-cards-played": {
-            "player": "你已打出 {{value}} 張連擊牌"
+            "player": "你打出過 {{value}} 張連擊牌"
         },
         "cards-played-this-turn": {
-            "player": "你本回合已打出 {{value}} 張牌"
+            "player": "你本回合打出過 {{value}} 張牌"
         },
         "starships-launched": {
             "opponent": "對手已發射 {{value}} 艘星艦"
         },
         "friendly-dead-minions-this-game": {
-            "player": "本賽局有 {{value}} 名友方手下死亡"
+            "player": "本賽局有 {{value}} 名友方手下死亡",
+            "opponnet": "對手在這場遊戲中有 {{value}} 個手下死亡"
         },
         "aviana-elunes-chosen": {
             "player": "{{turns}} 回合後，你的卡牌將花費 {{value}} 點法力水晶",
@@ -2715,7 +2716,7 @@
             "bloodgem-health-tooltip": "因打出一顆鮮血寶石獲得的額外生命值",
             "tavern-spells-cast-tooltip": "本賽局你施放「旅店法術」的數量",
             "ancestral-automaton": "遠古自動機",
-            "pirates-played": "已打出的海盜",
+            "pirates-played": "打出過的海盜",
             "ancestral-automaton-tooltip": "本賽局你已召喚「遠古自動機」的數量",
             "pirates-played-tooltip": "本賽局你打出「海盜」的數量",
             "add-teammate-button": "添加隊友",
@@ -2731,7 +2732,13 @@
             "beasts-summoned": "野獸（已召喚）",
             "magnetized": "已合體",
             "beasts-summoned-tooltip": "本賽局你已召喚的野獸數量",
-            "magnetized-tooltip": "本賽局你已合體的手下數量"
+            "magnetized-tooltip": "本賽局你已合體的手下數量",
+            "battlecries-triggered": "戰吼（已觸發）",
+            "beetle-attack-buff": "甲蟲攻擊力增益",
+            "beetle-health-buff": "甲蟲生命值增益",
+            "friendly-minions-dead-last-combat-tooltip": "在上場戰鬥中死亡的友方手下數量",
+            "friendly-minions-dead-last-combat": "上場戰鬥死亡（友方手下）",
+            "battlecries-triggered-tooltip": "您在這場遊戲中觸發戰吼的次數"
         },
         "hero-stats": {
             "finishes-title": "完賽數",
@@ -2775,7 +2782,7 @@
             },
             "opponents": {
                 "title": "全部英雄",
-                "next-opponent-title": "第 {{turn}} 回合-下個對手",
+                "next-opponent-title": "第 {{turn} 回合 - 下一個對手",
                 "empty-state-title": "尚未有任何內容",
                 "empty-state-subtitle": "揀選一個英雄並等候你的對手",
                 "score-board-title": "計分板",
@@ -2986,7 +2993,8 @@
             "total-games-tooltip": "從為 {{gameMode}} {{value}} 開始（使用頂端的重設按鈕開始一個新會話）",
             "total-games-tooltip-all-time": "從你為 {{gameMode}} 使用應用程式開始（使用上方的重設按鈕來啟動新的紀錄階段）",
             "mmr-tooltip": "你目前的評分",
-            "delta-mmr-tooltip": "從紀錄階段開始至今你的配對評分增減"
+            "delta-mmr-tooltip": "從紀錄階段開始至今你的配對評分增減",
+            "total-runs": "{{value}} 場"
         },
         "groups": {
             "battlegrounds": {
@@ -3002,7 +3010,8 @@
                 },
                 "value-tooltip": "你結束在這個排名幾場"
             }
-        }
+        },
+        "arena-title-tooltip": "顯示您最近一次競技場遊戲以來的回顧。時間範圍取決於您目前的設定。"
     },
     "quests": {
         "quests-completed": "你已達成全部任務"
@@ -3384,8 +3393,8 @@
                 "show-transformed-into-label": "顯示已變形為",
                 "group-same-cards-tooltip": "將具有相同卡牌 ID 的所有卡牌分組在一起，無論它們是否被丟棄、死亡、摧毀、使用不同的法力水晶花費等。",
                 "show-gifts-in-separate-zone-tooltip": "將創建的卡牌從「其他」區域移動到新的「其他（活動）」可折疊區域。",
-                "show-plagues-on-top-tooltip": "將所有DK瘟疫卡牌一起顯示在牌組頂端，以便更輕鬆地追蹤它們。",
-                "show-plagues-on-top": "在頂端顯示瘟疫",
+                "show-plagues-on-top-tooltip": "將所有DK「瘟疫」卡牌一起顯示在牌組頂端，以便更輕鬆地追蹤它們。",
+                "show-plagues-on-top": "在頂端顯示「瘟疫」",
                 "attack-counter-size": "攻擊力計數器大小"
             },
             "modes": {
@@ -3431,30 +3440,30 @@
                     "galakrond-label": "祈求葛拉克朗次數",
                     "galakrond-tooltip": "顯示對手已祈求的次數（只會在對手祈求或打出葛拉克朗時開始顯示）",
                     "pogo-label": "蹦蹦兔",
-                    "pogo-tooltip": "顯示對手已打出的蹦蹦兔數量",
+                    "pogo-tooltip": "顯示對手打出過的蹦蹦兔數量",
                     "jade-label": "翠玉魔像",
-                    "jade-tooltip": "顯示對手當前翠玉魔像的大小",
+                    "jade-tooltip": "顯示對手當前「翠玉魔像」的大小",
                     "cthun-label": "克蘇恩",
-                    "cthun-tooltip": "顯示對手當前克蘇恩的大小",
+                    "cthun-tooltip": "顯示對手當前「克蘇恩」的大小",
                     "fatigue-label": "疲倦",
                     "abyssal-curse-label": "深淵詛咒",
                     "abyssal-curse-tooltip-2": "顯示對手最高的深淵詛咒傷害",
                     "attack-on-board-label": "場上攻擊力總和",
                     "attack-on-board-tooltip": "顯示敵人手下和英雄的攻擊力總和",
                     "watch-post-label": "哨所",
-                    "watch-post-tooltip": "顯示本賽局對方打出的哨所數量。只有在牌組或手牌中找到相關卡牌時啟動",
+                    "watch-post-tooltip": "顯示本賽局對方打出的「哨所」數量。只有在牌組或手牌中找到相關卡牌時啟動",
                     "libram-label": "聖契",
-                    "libram-tooltip": "顯示本賽局對方打出的聖契數量。只有在牌組或手牌中找到相關卡牌時啟動",
-                    "elwynn-boar-label": "艾爾文野豬的死亡數量",
-                    "elwynn-boar-tooltip": "顯示對手的艾爾文野豬死亡數量",
-                    "volatile-skeleton-label": "易變骷髏死亡數",
+                    "libram-tooltip": "顯示本賽局對方打出的「聖契」數量。只有在牌組或手牌中找到相關卡牌時啟動",
+                    "elwynn-boar-label": "「艾爾文野豬」的死亡數量",
+                    "elwynn-boar-tooltip": "顯示對手「艾爾文野豬」的死亡數量",
+                    "volatile-skeleton-label": "「易變骷髏」死亡數",
                     "hero-power-damage-label": "英雄能力傷害",
                     "hero-power-damage-tooltip": "顯示本賽局對手英雄能力造成的總傷害。只有當對手的職業是法師且已造成至少 1 點傷害時才會顯示",
                     "astral-automaton-label": "星界自動機",
                     "earthen-golem-label": "土靈魔像",
                     "fatigue-tooltip": "顯示對手的下一次疲倦傷害",
-                    "chaotic-tendril-tooltip": "顯示對手打出過混沌觸鬚的次數",
-                    "volatile-skeleton-tooltip": "顯示對手易變骷髏的死亡數量",
+                    "chaotic-tendril-tooltip": "顯示對手打出過「混沌觸鬚」的數量",
+                    "volatile-skeleton-tooltip": "顯示對手「易變骷髏」的死亡數量",
                     "relic-label": "文物",
                     "relic-tooltip": "顯示對手下一個惡魔獵人文物的強化",
                     "excavate-tooltip": "顯示對手當前和最大的挖掘級別，並在將滑鼠懸停在櫃檯上時顯示他們可以從下一個挖掘層獲得的寶藏",
@@ -3465,11 +3474,11 @@
                     "earthen-golem-tooltip": "顯示對手已召喚「土靈魔像」的數量",
                     "multicaster-tooltip": "顯示對手在本賽局已施放過一次的法術流派",
                     "wheel-of-death-tooltip": "在對手打出「{{cardName}}」後，顯示你死亡前的回合數",
-                    "dragons-summoned-tooltip": "顯示對手已召喚龍類的數量。只有當對手是牧師且打出過龍類時才會出現",
+                    "dragons-summoned-tooltip": "顯示對手已召喚龍類的數量。",
                     "elemental-streak-tooltip": "計算對手連續打出元素的回合數。只有當他們連續兩回合打出過元素時才會出現。",
                     "dead-minions-this-game-tooltip": "當對手是死亡騎士或他們手上或牌堆中有相關卡牌（例如「礦坑老大雷斯卡」）時，顯示本場比賽死亡的手下數量",
                     "discovers-tooltip": "計算對手「發現」卡牌的次數",
-                    "libram-reduction-tooltip": "顯示對手聖契總降低的法力水晶花費",
+                    "libram-reduction-tooltip": "顯示對手「聖契」總降低的法力水晶花費",
                     "cards-drawn-tooltip": "當對手牌堆中有「{{cardName}}」，或它們是 {{cardClass}} 卡時，顯示它們在本賽局抽到的牌數",
                     "abyssal-curse-tooltip": "顯示對手最高的深淵詛咒傷害",
                     "damage-taken-on-your-turn-tooltip": "向你提供對手以 {{classes}} 職業遊戲時在其回合中所受傷害的資訊（次數和總傷害）",
@@ -3481,7 +3490,8 @@
                     "hero-power-use-tooltip": "顯示你已使用英雄能力的次數",
                     "ysondre-label": "伊索德雷",
                     "imbue-label": "注能",
-                    "imbue-tooltip": "顯示本賽局你注能英雄能力的次數"
+                    "imbue-tooltip": "顯示本賽局你注能英雄能力的次數",
+                    "dragons-played-tooltip": "顯示對手打出過龍類的數量。（僅對手是牧師且打出過龍類時才會顯示）"
                 },
                 "size-title": "大小與不透明度",
                 "opacity-title": "透明度",
@@ -3497,22 +3507,22 @@
             },
             "your-deck": {
                 "ignore-decklist-label": "忽略牌組列表",
-                "ignore-decklist-tooltip": "不載入初始牌組列表，僅追蹤已打出的牌和抽出的牌。更改將應用於下一場賽局",
+                "ignore-decklist-tooltip": "不載入初始牌組列表，僅追蹤打出過的牌和抽出的牌。更改將應用於下一場賽局",
                 "ignore-decklist-confirmation": "明白了，記牌器將忽略你的牌組列表",
                 "counters": {
                     "galakrond-tooltip": "顯示你祈求葛拉克朗的次數（僅在你打出葛拉克朗或祈求葛拉克朗的牌時出現）",
-                    "pogo-tooltip": "顯示你已打出的蹦蹦兔數量",
-                    "jade-tooltip": "顯示你當前翠玉魔像的體質",
-                    "cthun-tooltip": "顯示你當前克蘇恩的體質",
+                    "pogo-tooltip": "顯示你打出過的蹦蹦兔數量",
+                    "jade-tooltip": "顯示你當前「翠玉魔像」的體質",
+                    "cthun-tooltip": "顯示你當前「克蘇恩」的體質",
                     "abyssal-curse-tooltip": "顯示你最高的深淵詛咒傷害",
                     "attack-on-board-tooltip": "顯示你的手下和英雄的攻擊力總和",
                     "number-of-spells-label": "法術施放數量",
                     "number-of-spells-tooltip": "顯示本賽局你施放過的法術總數。僅在牌組或手牌中找到相關卡牌時才顯示",
                     "elementals-label": "元素",
                     "elementals-tooltip": "顯示本回合中和上回合你打出的元素數量。只有在牌組或手牌中找到相關卡牌時啟動",
-                    "watch-post-tooltip": "顯示本賽局你打出的哨所數量。只有在牌組或手牌中找到相關卡牌時顯示",
-                    "libram-tooltip": "顯示本賽局你打出的聖契數量。只有在牌組或手牌中找到相關卡牌時啟動",
-                    "elwynn-boar-tooltip": "顯示你艾爾文野豬的死亡數量",
+                    "watch-post-tooltip": "顯示本賽局你打出的「哨所」數量。只有在牌組或手牌中找到相關卡牌時顯示",
+                    "libram-tooltip": "顯示本賽局你打出的「聖契」數量。只有在牌組或手牌中找到相關卡牌時啟動",
+                    "elwynn-boar-tooltip": "顯示你「艾爾文野豬」的死亡數量",
                     "hero-power-damage-tooltip": "顯示本賽局你的英雄能力造成的總傷害。只有當「火眼莫德雷斯」或「『龍鷹』賈納雷」在你的牌組或手牌中時才會出現",
                     "bolner-label": "包那‧錘喙",
                     "bolner-tooltip": "當你手上有「包那‧錘喙」時，顯示本回合打出的第一張戰吼牌（若有）",
@@ -3549,31 +3559,31 @@
                     "queensguard-label": "女王近衞",
                     "chained-guardian-label": "瘟疫",
                     "fatigue-tooltip": "顯示你的下一次疲倦傷害",
-                    "chaotic-tendril-tooltip": "顯示你打出過混沌觸鬚的次數",
+                    "chaotic-tendril-tooltip": "顯示你打出過「混沌觸鬚」的數量",
                     "dragons-summoned-tooltip": "顯示你已召喚龍類的數量",
                     "treant-tooltip": "顯示你已召喚「樹人」的數量",
                     "relic-tooltip": "顯示你的下一個惡魔獵人文物的強化",
-                    "volatile-skeleton-tooltip": "顯示你易變骷髏的死亡數量",
+                    "volatile-skeleton-tooltip": "顯示你「易變骷髏」的死亡數量",
                     "secrets-label": "已施放過的秘密",
                     "excavate-tooltip": "顯示你當前和最大的挖掘級別，並在將滑鼠懸停在櫃檯上時顯示你可以從下一個挖掘層獲得的寶藏",
                     "corpse-spent-tooltip": "當你擁有可以從此精確數值中受益的卡牌時（例如「高潮死靈爆炸」），顯示一個計數器，其中包括已消耗的屍體總數",
                     "gardens-grace-tooltip": "當你手上或牌堆中有「花園祝福」時，顯示花園祝福卡的實際花費（降低後）",
                     "naga-giant-tooltip": "當你手上或牌堆中有「納迦巨人」時，顯示納迦巨人實際（降低後）的花費",
                     "spectral-pillager-label": "鬼靈掠取者",
-                    "chained-guardian-tooltip": "顯示你洗入對手牌堆的瘟疫數量",
+                    "chained-guardian-tooltip": "顯示你洗入對手牌堆的「瘟疫」數量",
                     "astral-automaton-tooltip": "顯示你已召喚「星界自動機」的數量",
                     "earthen-golem-tooltip": "顯示你已召喚「土靈魔像」的數量",
                     "shockspitter-label": "閃電龍鷹",
-                    "lightray-tooltip": "當你手上或牌堆中有聖光魟魚（或其他可以透過打出聖騎士卡牌來降低法力水晶的卡牌）時，顯示你已打出的聖騎士卡牌數量。",
+                    "lightray-tooltip": "當你手上或牌堆中有聖光魟魚（或其他可以透過打出聖騎士卡牌來降低法力水晶的卡牌）時，顯示你打出過的聖騎士卡牌數量。",
                     "parrot-mascot-tooltip": "當你手上有「鸚鵡吉祥物」時，會按照打出的順序顯示你本回合打出過的全部卡牌",
-                    "spectral-pillager-tooltip": "當你手上有「鬼靈掠取者」時，顯示你本回合已打出的卡牌數",
+                    "spectral-pillager-tooltip": "當你手上有「鬼靈掠取者」時，顯示你本回合打出過的卡牌數",
                     "tram-heist-label": "地鐵大劫案",
                     "asvedon-tooltip": "當你手上有「『巨盾』亞思維頓」時，顯示對手施放的最後一個法術",
                     "shockspitter-tooltip": "當你的牌組/手上有「閃電龍鷹」時，會顯示一個小工具來告訴你接下來它會造成多少傷害",
                     "treant-label": "樹人",
                     "monstrous-parrot-tooltip": "當你手上有「恐怖的鸚鵡」時，顯示最後觸發的友方亡語（若有）",
                     "tram-heist-tooltip": "當你手上有「{{cardName}}」時，顯示對手上回合打出的卡牌",
-                    "secrets-tooltip": "當你的卡牌可以透過了解你施放的秘密數量而受益時，顯示你在本賽局施放的秘密數量",
+                    "secrets-tooltip": "當你有卡牌可透過了解你施放秘密的數量中受益時，顯示你在本賽局施放的秘密數量",
                     "menagerie-tooltip": "當你手上或牌組有相關卡牌（合一樂團、強力滑行者）時，顯示你已經打出過哪些手下類別",
                     "queensguard-tooltip": "當你手上有「女王近衞」時，顯示你本回合施放的法術數量",
                     "overdraft-tooltip": "當你手上或牌堆中有「透支」時，會顯示一個計數器，告訴你「透支」會造成多少傷害",
@@ -3591,27 +3601,27 @@
                     "holy-spells-tooltip": "顯示你已使用的神聖法術數量。當你手上或牌堆中擁有透過使用神聖法術而減費的卡牌時，它就會出現",
                     "pirates-summoned-label": "海盜（已召喚）",
                     "wheel-of-death-label": "死亡輪盤",
-                    "thirsty-drifter-tooltip": "當你手上或牌堆中有「口渴的漂泊者」時，顯示你已打出的花費為(1)的卡牌數量",
+                    "thirsty-drifter-tooltip": "當你手上或牌堆中有「口渴的漂泊者」時，顯示你打出過的花費為(1)的卡牌數量",
                     "sea-shanty-label": "船員之歌",
                     "pirates-summoned-tooltip": "顯示你已召喚「海盜」的數量",
                     "sea-shanty-tooltip": "當你的手牌或牌堆中有「船員之歌」時，會顯示你對角色施放的法術數量，以及法術的詳細訊息",
-                    "cards-played-from-another-class-tooltip": "當你手上或牌堆中有「搶了就跑」時，顯示你已打出其他職業卡牌的數量",
+                    "cards-played-from-another-class-tooltip": "當你手上或牌堆中有「搶了就跑」時，顯示你打出過其他職業卡牌的數量",
                     "cards-drawn-label": "抽牌",
                     "elemental-streak-tooltip": "計算你連續多少回合打出過元素。",
                     "elemental-streak-label": "元素連續",
-                    "dragons-played-label": "龍類（已打出）",
+                    "dragons-played-label": "龍類（打出過）",
                     "ceaseless-expanse-tooltip": "顯示該遊戲中打出、抽出或摧毀一張卡牌的次數",
-                    "dragons-played-tooltip": "顯示你打出過龍類的次數",
+                    "dragons-played-tooltip": "顯示你打出過龍類的數量",
                     "ceaseless-expanse-label": "無垠邊際",
                     "discovers-label": "發現",
                     "discovers-tooltip": "計算你「發現」卡牌的次數",
                     "libram-reduction-label": "聖契（已降低）",
-                    "libram-reduction-tooltip": "顯示你的聖契總降低的法力水晶花費",
+                    "libram-reduction-tooltip": "顯示你的「聖契」總降低的法力水晶花費",
                     "spells-on-friendly-characters-label": "法術（友方）",
                     "gifts-played-tooltip": "顯示你打出衍伸牌（由另一張牌所創建）的數量",
-                    "gifts-played-label": "已打出的事件卡牌",
+                    "gifts-played-label": "打出過的事件卡牌",
                     "spells-on-friendly-characters-tooltip": "顯示你在本賽局對友方角色施展的法術數量",
-                    "combo-cards-played-label": "連擊牌（已打出）",
+                    "combo-cards-played-label": "連擊牌（打出過）",
                     "protoss-spells-tooltip": "如果你的牌堆中有「{{cardName}}」，則顯示本賽局你施放過的神族法術數量",
                     "protoss-minion-reduction-tooltip": "顯示降低神族手下的總花費（包括適用整個賽局中的降低和僅適用於下一個手下的降低）",
                     "combo-cards-played-tooltip": "當你手上/牌堆中有「{{cardName}}」時，顯示你本賽局打出過的連擊牌數量",
@@ -3619,8 +3629,8 @@
                     "next-starship-launch-label": "下一艘星艦發射費用降低",
                     "protoss-spells-label": "神族法術（已施放）",
                     "next-starship-launch-tooltip": "顯示降低發射下一艘星艦的花費",
-                    "cards-played-this-turn-label": "本回合已打出的卡牌",
-                    "cards-played-this-turn-tooltip": "顯示你本回合已打出的卡牌數（如果牌堆中有與該數值連動的卡牌）",
+                    "cards-played-this-turn-label": "本回合打出過的卡牌",
+                    "cards-played-this-turn-tooltip": "顯示你本回合打出過的卡牌數（如果牌堆中有與該數值連動的卡牌）",
                     "friendly-dead-minions-this-game-label": "友方手下（已死亡）",
                     "friendly-dead-minions-this-game-tooltip": "當你手牌或牌堆中有相關卡牌時，顯示本賽局死亡的友方手下數量",
                     "aviana-elunes-chosen-label": "『伊露恩之選』艾維娜",
@@ -3687,7 +3697,7 @@
                 "card-size-in-collection-label": "我的牌庫中的卡牌大小",
                 "notifications-label": "啟用通知",
                 "selective-notifications-label": "你可以選擇性的顯示一些卡牌通知",
-                "notifications-dust-recap-label": "魔塵",
+                "notifications-dust-recap-label": "魔塵回顧",
                 "notifications-non-golden-commons-label": "非金普通卡",
                 "notifications-rewards-label": "獎勵",
                 "notifications-rewards-tooltip": "當你通過其他方式獲得卡牌時（如天梯結算或競技場獎勵），顯示通知",
@@ -3819,7 +3829,7 @@
                 "counter-soutshsea-label": "南海惡棍",
                 "counter-soutshsea-tooltip": "當「南海惡棍」在商店或你手中時，顯示本回合購買的海盜數量（若有）",
                 "counter-majordomo-label": "管理者埃克索圖斯",
-                "counter-majordomo-tooltip": "顯示當「管理者埃克索圖斯」在商店、你的戰場或手上時本回合已打出的元素數量（若有）",
+                "counter-majordomo-tooltip": "顯示當「管理者埃克索圖斯」在商店、你的戰場或手上時本回合打出過的元素數量（若有）",
                 "minions-list-show-tribe-tiers-tooltip": "在手下列表中新增按類別分組的列表",
                 "minions-list-group-minions-into-tribes-label": "將連動類手下顯示在相應的手下類別",
                 "counter-magmaloc-tooltip": "顯示你的「岩漿流」在回合結束時將獲得的總統計",
@@ -3840,7 +3850,7 @@
                 "quest-stats-title": "任務統計",
                 "minions-list-show-tier-7-tooltip": "即使你不是索林姆，也會一直顯示 7⭐️手下。",
                 "counter-tuskarr-raider-label": "巨牙海民劫掠者",
-                "counter-tuskarr-raider-tooltip": "顯示本賽局你已打出的海盜數量",
+                "counter-tuskarr-raider-tooltip": "顯示本賽局你打出過的海盜數量",
                 "minions-list-show-trinkets-label": "顯示飾品",
                 "minions-list-show-trinkets-tooltip": "當賽局中出現飾品並且「顯示手下類別⭐️」被啟用時，將它們顯示在手下列表中。",
                 "minions-list-include-trinkets-in-tribes-label": "在類別中包括飾品",
@@ -3976,7 +3986,7 @@
     },
     "twitch": {
         "scale": "大小",
-        "move-magnifier-icon-on-top": "對手回顧頂端圖示",
+        "move-magnifier-icon-on-top": "對手回顧圖示（螢幕頂端）",
         "move-magnifier-icon-on-top-tooltip": "在名次榜上方顯示對手回顧圖示",
         "constructed-section-title": "構築模式",
         "battlegrounds-section-title": "英雄戰場",
