@@ -2321,6 +2321,9 @@
         },
         "imbue": {
             "player": "Vous avez empreint votre pouvoir héroïque {{value}} fois pendant cette partie"
+        },
+        "specific-cards-in-hand": {
+            "player": "Vous avez {{value}} cartes {{cardName}} en main"
         }
     },
     "loading": {
@@ -2609,7 +2612,7 @@
             "health-buff": "Buff de PV",
             "spell-schools": "Écoles de sorts"
         },
-        "tourist": "Touriste : {{className}}"
+        "tourist": "Tourisme : {{className}}"
     },
     "battlegrounds": {
         "menu": {
@@ -3018,7 +3021,10 @@
             "total-games-tooltip-all-time": "Pour {{gameMode}}, depuis que vous utilisez l’application (utilisez le bouton Réinitialiser en haut pour démarrer une nouvelle session)",
             "mmr-tooltip": "Votre cote actuelle",
             "delta-mmr-tooltip": "Gain/perte de cote depuis le début de votre session",
-            "total-runs": "{{value}} virées"
+            "total-runs": "{{value}} virées",
+            "average-tooltip": "Nb victoires moyen par virée",
+            "average-text": "nb victoires moyen",
+            "runs-text": "virées"
         },
         "groups": {
             "battlegrounds": {
@@ -3033,9 +3039,18 @@
                     "8": "8e"
                 },
                 "value-tooltip": "Combien de parties vous avez terminé à cette position pendant cette session"
+            },
+            "arena": {
+                "deck-title": "{{wins}} deck"
             }
         },
-        "arena-title-tooltip": "Affiche un récap de vos dernières parties d’Arène. L’étendue dépend de vos paramètres acutels."
+        "arena-title-tooltip": "Affiche un récap de vos dernières parties d’Arène. L’étendue dépend de vos paramètres acutels.",
+        "arena-title": "Récap de session",
+        "time-frame": {
+            "current-season": "cette saison",
+            "tooltip": "Cliquez pour modifier la période des stats affichées dans le récap de session",
+            "all-time": "depuis toujours"
+        }
     },
     "quests": {
         "quests-completed": "Vous avez fini toutes vos quêtes"
@@ -3663,7 +3678,9 @@
                     "aviana-elunes-chosen-label": "Aviana",
                     "tyrande-tooltip": "Affiche le nombre de sorts restants qui seront lancés deux fois",
                     "aviana-elunes-chosen-tooltip": "Affiche le nombre de tours restants avant que l’effet d’Aviana se déclenche",
-                    "tyrande-label": "Tyrande"
+                    "tyrande-label": "Tyrande",
+                    "dragons-in-hand-label": "Dragons en main",
+                    "dragons-in-hand-tooltip": "Afficher le nombre de Dragons en main, pour {{cardName}}"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -4010,6 +4027,19 @@
             },
             "menu": {
                 "general": "Général"
+            },
+            "session-widget": {
+                "title": "Récap de session",
+                "label": "Afficher le widget",
+                "show-groups-tooltip": "Affiche un récap de vos virées de la saison, groupées par nombre de victoires.",
+                "label-tooltip": "Affiche un récap de votre saison d’Arène actuelle",
+                "show-runs": "Afficher les dernières virées",
+                "show-runs-tooltip": "Afficher les dernières virées.",
+                "show-groups-in-game-tooltip": "Afficher le widget",
+                "number-of-runs": "Nombre de virées",
+                "show-in-game-tooltip": "Affiche le widget pendant la partie. Désactiver pour ne le montrer que pendant le draft",
+                "show-runs-in-game-tooltip": "Désactiver pour cacher les dernières virées pendant une partie",
+                "number-of-runs-tooltip": "Nombre max de virées à afficher dans les détails de virées (la plus récente est en haut)"
             }
         }
     },
@@ -4569,6 +4599,12 @@
             "mulligan": {
                 "mulligan-overview-footer": "vs {{opponentClass}} | {{sampleSize]} parties"
             }
+        }
+    },
+    "widgets": {
+        "max-resources": {
+            "max-health-tooltip": "PV max",
+            "max-mana-tooltip": "Mana max"
         }
     }
 }
