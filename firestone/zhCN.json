@@ -2321,6 +2321,9 @@
         },
         "imbue": {
             "player": "你在本局对战中灌注了英雄技能 {{value}} 次"
+        },
+        "specific-cards-in-hand": {
+            "player": "你的手牌中有{{value}}张{{cardName}}"
         }
     },
     "loading": {
@@ -3018,7 +3021,10 @@
             "total-games-tooltip-all-time": "从您开始使用此应用起记录的{{gameMode}}战绩（使用顶部重置按钮可开始一段新的战绩记录）",
             "mmr-tooltip": "你当前的排名积分",
             "delta-mmr-tooltip": "此战绩记录内您的上分/掉分",
-            "total-runs": "{{value}} 轮"
+            "total-runs": "{{value}} 轮",
+            "runs-text": "轮数",
+            "average-text": "平均胜场",
+            "average-tooltip": "你的平均每轮获胜场次"
         },
         "groups": {
             "battlegrounds": {
@@ -3033,9 +3039,18 @@
                     "8": "8"
                 },
                 "value-tooltip": "您在这段战绩记录内最终获得此位次的对战数"
+            },
+            "arena": {
+                "deck-title": "{{wins}}胜的套牌"
             }
         },
-        "arena-title-tooltip": "显示最近的一次竞技场比赛回顾。时间范围取决于您当前的设置。"
+        "arena-title-tooltip": "显示最近的一次竞技场比赛回顾。时间范围取决于您当前的设置。",
+        "arena-title": "赛季回顾",
+        "time-frame": {
+            "all-time": "所有时段的数据",
+            "current-season": "当前赛季",
+            "tooltip": "点击更改赛季回顾中显示的统计数据的时间范围"
+        }
     },
     "quests": {
         "quests-completed": "您已完成所有任务"
@@ -3653,7 +3668,7 @@
                     "next-starship-launch-label": "下一艘星舰发射法力值消耗减少",
                     "protoss-spells-label": "已使用的星灵法术",
                     "next-starship-launch-tooltip": "显示下一次星舰发射的法力消耗减少",
-                    "protoss-spells-tooltip": "如果你的牌组中有 {{cardName}}，则显示你在本局对战中使用过的星灵法术数量",
+                    "protoss-spells-tooltip": "如果你的套牌中有 {{cardName}}，则显示你在本局对战中使用过的星灵法术数量",
                     "protoss-minion-reduction-tooltip": "显示星灵随从的总法力消耗减少数量（包括整个对局中适用的减少和仅适用于下一个随从的减少）",
                     "combo-cards-played-tooltip": "当你手牌或牌库中有 {{cardName}} 时，显示你本局使用过的连击牌数量",
                     "cards-played-this-turn-tooltip": "如果套牌中有使用该牌的牌，显示本回合你已使用的卡牌数量",
@@ -3663,7 +3678,9 @@
                     "aviana-elunes-chosen-label": "艾维娜",
                     "tyrande-tooltip": "显示还剩多少法术会施放两次",
                     "tyrande-label": "泰兰德",
-                    "aviana-elunes-chosen-tooltip": "显示艾维娜效果触发的剩余回合数"
+                    "aviana-elunes-chosen-tooltip": "显示艾维娜效果触发的剩余回合数",
+                    "dragons-in-hand-tooltip": "为{{cardName}}显示手牌中的龙卡牌数量",
+                    "dragons-in-hand-label": "手牌中的龙"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -4010,6 +4027,22 @@
             },
             "menu": {
                 "general": "通用"
+            },
+            "session-widget": {
+                "number-of-runs": "轮数",
+                "title": "赛季回顾",
+                "label-tooltip": "显示当前竞技模式赛季的回顾",
+                "show-groups-in-game": "在游戏中显示分组",
+                "show-groups-tooltip": "显示你本赛季的轮数，以胜场数分组。",
+                "show-in-game": "在游戏中显示",
+                "show-runs": "显示最近的轮次",
+                "show-runs-in-game": "在游戏中显示轮次",
+                "show-runs-tooltip": "显示最近的轮次。",
+                "show-in-game-tooltip": "在游戏中显示小部件。关闭后只在选牌时显示",
+                "label": "显示小部件",
+                "show-groups-in-game-tooltip": "关闭此项可在游戏中隐藏分组信息",
+                "show-runs-in-game-tooltip": "关闭此项可在游戏中隐藏最近轮次",
+                "number-of-runs-tooltip": "显示轮次详情时，显示的最大运轮次数（最近的位于最顶部）"
             }
         }
     },
@@ -4569,6 +4602,12 @@
             "mulligan": {
                 "mulligan-overview-footer": "对阵 {{opponentClass}} | {{sampleSize}} 场"
             }
+        }
+    },
+    "widgets": {
+        "max-resources": {
+            "max-health-tooltip": "最大生命值",
+            "max-mana-tooltip": "最大法力水晶"
         }
     }
 }
