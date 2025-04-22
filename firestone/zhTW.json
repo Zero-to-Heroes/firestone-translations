@@ -2203,13 +2203,15 @@
             "player": "你打出過 {{value}} 張花費（1）顆法力水晶的卡牌"
         },
         "holy-spells": {
-            "player": "本賽局你已施放 {{value}} 個神聖法術"
+            "player": "本賽局你已施放 {{value}} 個神聖法術",
+            "opponent": "對手本賽局已施放 {{value}} 個神聖法術"
         },
         "bgs-blood-gem": {
             "player": "你的「{{cardName}}」給予 +{{attack}}/+{{health}}"
         },
         "sea-shanty": {
-            "player": "你已對任意目標施放過 {{value}} 個法術"
+            "player": "你已對任意目標施放過 {{value}} 個法術",
+            "opponent": "對手對角色施放過 {{value}} 個法術"
         },
         "cards-played-from-another-class": {
             "player": "你打出過 {{value}} 張其他職業的卡牌"
@@ -2278,7 +2280,8 @@
         },
         "friendly-dead-minions-this-game": {
             "player": "本賽局有 {{value}} 名友方手下死亡",
-            "opponnet": "對手在這場遊戲中有 {{value}} 個手下死亡"
+            "opponnet": "對手在這場遊戲中有 {{value}} 個手下死亡",
+            "opponent": "對手本賽局已有 {{value}} 個手下死亡"
         },
         "aviana-elunes-chosen": {
             "player": "{{turns}} 回合後，你的卡牌將花費 {{value}} 點法力水晶",
@@ -3473,7 +3476,7 @@
                     "elwynn-boar-tooltip": "顯示對手「艾爾文野豬」的死亡數量",
                     "volatile-skeleton-label": "「易變骷髏」死亡數",
                     "hero-power-damage-label": "英雄能力傷害",
-                    "hero-power-damage-tooltip": "顯示本賽局對手英雄能力造成的總傷害。只有當對手的職業是法師且已造成至少 1 點傷害時才會顯示",
+                    "hero-power-damage-tooltip": "顯示本賽局對手英雄能力造成的總傷害。對手是法師且英雄能力已造成至少 1 點傷害時才會顯示",
                     "astral-automaton-label": "星界自動機",
                     "earthen-golem-label": "土靈魔像",
                     "fatigue-tooltip": "顯示對手的下一次疲倦傷害",
@@ -3482,8 +3485,8 @@
                     "relic-label": "文物",
                     "relic-tooltip": "顯示對手下一個惡魔獵人文物的強化",
                     "excavate-tooltip": "顯示對手當前和最大的挖掘級別，並在將滑鼠懸停在櫃檯上時顯示他們可以從下一個挖掘層獲得的寶藏",
-                    "corpse-spent-tooltip": "顯示對手消耗的屍體總數的計數器。當對手使用其中一種類型的符文時，它就會出現，並且很可能會持有高潮死靈爆炸。",
-                    "shockspitter-tooltip": "顯示對手在這場賽局中進攻的次數。只有當對手的職業是獵人且至少攻擊過一次時才會顯示",
+                    "corpse-spent-tooltip": "顯示對手消耗的屍體總數的計數器。當對手是彩虹符文就會出現，並且很可能會帶有「高潮死靈爆炸」。",
+                    "shockspitter-tooltip": "顯示對手在本賽局中攻擊的次數。對手是獵人且至少攻擊過一次時才會顯示",
                     "number-of-spells-tooltip": "顯示對手在本賽局施放過的法術總數。只有當他們至少施放過一個法術時才會顯示",
                     "astral-automaton-tooltip": "顯示對手已召喚「星界自動機」的數量",
                     "earthen-golem-tooltip": "顯示對手已召喚「土靈魔像」的數量",
@@ -3491,10 +3494,10 @@
                     "wheel-of-death-tooltip": "在對手打出「{{cardName}}」後，顯示你死亡前的回合數",
                     "dragons-summoned-tooltip": "顯示對手已召喚龍類的數量。",
                     "elemental-streak-tooltip": "計算對手連續打出元素的回合數。只有當他們連續兩回合打出過元素時才會出現。",
-                    "dead-minions-this-game-tooltip": "當對手是死亡騎士或他們手上或牌堆中有相關卡牌（例如「礦坑老大雷斯卡」）時，顯示本場比賽死亡的手下數量",
+                    "dead-minions-this-game-tooltip": "當對手是死亡騎士或他們手上/牌堆中有相關卡牌（例如「礦坑老大雷斯卡」），顯示本場比賽死亡的手下數量",
                     "discovers-tooltip": "計算對手「發現」卡牌的次數",
                     "libram-reduction-tooltip": "顯示對手「聖契」總降低的法力水晶花費",
-                    "cards-drawn-tooltip": "當對手牌堆中有「{{cardName}}」，或它們是 {{cardClass}} 卡時，顯示它們在本賽局抽到的牌數",
+                    "cards-drawn-tooltip": "當對手牌堆中有「{{cardName}}」，或他們是 {{cardClass}} 卡時，顯示他們在本賽局抽到的牌數",
                     "abyssal-curse-tooltip": "顯示對手最高的深淵詛咒傷害",
                     "damage-taken-on-your-turn-tooltip": "向你提供對手以 {{classes}} 職業遊戲時在其回合中所受傷害的資訊（次數和總傷害）",
                     "protoss-spells-tooltip": "顯示對手本賽局已使用的神族法術數量。只有當他們是法師並且至少施放過一次神族法術時才會顯示",
@@ -3506,7 +3509,10 @@
                     "ysondre-label": "伊索德雷",
                     "imbue-label": "注能",
                     "imbue-tooltip": "顯示本賽局你注能英雄能力的次數",
-                    "dragons-played-tooltip": "顯示對手打出過龍類的數量。（僅對手是牧師且打出過龍類時才會顯示）"
+                    "dragons-played-tooltip": "顯示對手打出過龍類的數量。（僅對手是牧師且打出過龍類時才會顯示）",
+                    "friendly-dead-minions-this-game-label": "敵方手下（已死亡）",
+                    "holy-spells-tooltip": "對手是聖騎士時，顯示對手已施放的神聖法術數量。",
+                    "sea-shanty-tooltip": "對手是聖騎士時，顯示對手對角色施放過的法術數量。"
                 },
                 "size-title": "大小與不透明度",
                 "opacity-title": "透明度",
