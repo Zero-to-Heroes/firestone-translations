@@ -2224,13 +2224,15 @@
             "opponent": "対戦相手は{{value}}ターンで死ぬ！耐え抜け！"
         },
         "holy-spells": {
-            "player": "神聖呪文を{{value}}回使用した"
+            "player": "神聖呪文を{{value}}回使用した",
+            "opponent": "対戦相手はこの試合中に{{value}}枚の神聖呪文を使用した"
         },
         "cards-played-from-another-class": {
             "player": "{{value}}枚の他クラスのカードを使用した"
         },
         "sea-shanty": {
-            "player": "キャラクターに対し{{value}}枚の呪文を使用した"
+            "player": "キャラクターに対し{{value}}枚の呪文を使用した",
+            "opponent": "対戦相手はキャラクターに{{value}}枚の呪文を使用した"
         },
         "queensguard": {
             "player": "このターン{{value}}枚の呪文を使用した",
@@ -2302,7 +2304,8 @@
         },
         "friendly-dead-minions-this-game": {
             "player": "この対戦中、味方のミニオンが{{value}}体死亡した",
-            "opponnet": "この試合中、対戦相手のミニオンは{{value}}体死亡した"
+            "opponnet": "この試合中、対戦相手のミニオンは{{value}}体死亡した",
+            "opponent": "この試合中敵のミニオンは{{value}}体死亡した"
         },
         "specific-cards-in-hand": {
             "player": "手札に{{cardName}}が{{value}}枚ある"
@@ -2324,6 +2327,12 @@
         },
         "ysondre": {
             "player": "この対戦中、「イソンドレ」は{{value}}回死亡した"
+        },
+        "elemental-buff": {
+            "player": "自分のエレメンタルは追加で+{{atk}}/+{{health}}を与える"
+        },
+        "tavern-spells-buff": {
+            "player": "自分の酒場の呪文は追加で+{{atk}}/+{{health}}を与える"
         }
     },
     "loading": {
@@ -2765,7 +2774,9 @@
             "friendly-minions-dead-last-combat-tooltip": "前回の戦闘で死亡した味方ミニオンの数です",
             "beetle-health-buff": "戦闘体力バフ",
             "battlecries-triggered": "雄叫び発動数",
-            "battlecries-triggered-tooltip": "この対戦中に自分が発動した雄叫びの回数です"
+            "battlecries-triggered-tooltip": "この対戦中に自分が発動した雄叫びの回数です",
+            "elemental-attack-buff": "エレメンタル攻撃力バフ",
+            "elemental-health-buff": "エレメンタル体力バフ"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -3368,7 +3379,8 @@
                 "lock-widgets-tooltip": "ウィジェットを固定し、動かせなくします",
                 "lock-widgets-label": "ウィジェットの位置を固定",
                 "size": "全体のウィジェットのサイズ",
-                "size-tooltiplabel": "アプリ全体のウィジェットのサイズを設定します"
+                "size-tooltiplabel": "アプリ全体のウィジェットのサイズを設定します",
+                "card-tooltip-size": "カードのヒントのサイズ"
             }
         },
         "decktracker": {
@@ -3536,7 +3548,10 @@
                     "ysondre-tooltip": "この試合中に死亡した「イソンドレ」の数を表示します",
                     "ysondre-label": "「イソンドレ」",
                     "hero-power-use-label": "ヒーローパワー使用数",
-                    "hero-power-use-tooltip": "使用したヒーローパワーの回数を表示します"
+                    "hero-power-use-tooltip": "使用したヒーローパワーの回数を表示します",
+                    "friendly-dead-minions-this-game-label": "敵の死亡したミニオン",
+                    "holy-spells-tooltip": "大戦相手が使用した神聖呪文の数を表示します。対戦相手がパラディンのときのみ表示されます",
+                    "sea-shanty-tooltip": "対戦相手がキャラクターに使用した呪文の数を表示します。対戦相手がパラディンのときのみ表示されます"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -3920,7 +3935,11 @@
                 "counter-free-refresh-label": "無料入替",
                 "counter-magnetized-label": "超電磁",
                 "counter-spells-played-tooltip": "呪文を4枚で1組として、何組使ったのかと、次の強化までの進捗を表示します。",
-                "counter-spells-played-label": "呪文使用数"
+                "counter-spells-played-label": "呪文使用数",
+                "counter-elemental-buff-tooltip": "ステータスを付与するエレメンタルの、攻撃力/体力の追加のバフ量を表示します",
+                "counter-tavern-spells-buff-tooltip": "ステータスを付与する酒場の呪文の、攻撃力/体力の追加のバフ量を表示します",
+                "counter-elemental-buff-label": "エレメンタルバフ",
+                "counter-tavern-spells-buff-label": "酒場の呪文バフ"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
