@@ -119,7 +119,8 @@
             "heroes_of_starcraft": "星海英雄傳",
             "into_the_emerald_dream": "翡翠夢境",
             "gift": "事件",
-            "old_core_230": "舊核心"
+            "old_core_230": "舊核心",
+            "embers_of_the_world_tree": "世界之樹的餘燼"
         },
         "pack": {
             "classic": "經典",
@@ -2299,16 +2300,23 @@
             "opponent": "對手在本賽局已使用英雄能力 {{value}} 次"
         },
         "imbue": {
-            "player": "本賽局你已注能英雄能力：{{value}} 次"
+            "player": "本賽局你已注能英雄能力：{{value}} 次",
+            "opponent": "對手本賽局已注能英雄能力 {{value}} 次"
         },
         "specific-cards-in-hand": {
             "player": "你有 {{value}}張「{{cardName}}」卡牌在手中"
         },
         "elemental-buff": {
-            "player": "你的元素會額外賦予 +{{atk}}/+{{health}}"
+            "player": "你賦予體質的元素會額外賦予 +{{atk}}/+{{health}}"
         },
         "tavern-spells-buff": {
-            "player": "你的旅店法術會額外賦予 +{{atk}}/+{{health}}"
+            "player": "你賦予體質的旅店法術會額外賦予 +{{atk}}/+{{health}}"
+        },
+        "card-name-played": {
+            "player": "本賽局你已打出 {{times}} 張 {{cardName}} 卡牌"
+        },
+        "elemental-tavern-stats": {
+            "player": "你旅店中的元素擁有額外 +{{atk}}/+{{health}}"
         }
     },
     "loading": {
@@ -2752,7 +2760,11 @@
             "friendly-minions-dead-last-combat": "上場戰鬥死亡（友方手下）",
             "battlecries-triggered-tooltip": "你在這場遊戲中觸發戰吼的次數",
             "elemental-attack-buff": "元素攻擊力增益",
-            "elemental-health-buff": "元素生命值增益"
+            "elemental-health-buff": "元素生命值增益",
+            "spells-cast": "旅店法術施放",
+            "tavern-spell-attack-buff": "旅店法術攻擊力增益",
+            "spells-cast-tooltip": "本賽局你施放過「旅店法術」的次數",
+            "tavern-spell-health-buff": "旅店法術生命值增益"
         },
         "hero-stats": {
             "finishes-title": "完賽數",
@@ -3180,7 +3192,7 @@
                 "hide-release-notes-tooltip": "不要顯示新版本的更新說明",
                 "allow-games-share-label": "允許賽局分享",
                 "display-notifications-label": "顯示通知",
-                "display-notifications-tooltip": "切換吐司通知的全域可見性 [右下角]。啟用時，你仍可在對應的分頁中配置每個遊戲模式的通知",
+                "display-notifications-tooltip": "切換吐司通知的全域可見性。啟用時，你仍可在對應的分頁中配置每個遊戲模式的通知",
                 "display-notifications-confirmation": "現在已關閉通知。",
                 "accessibility-title": "輔助功能",
                 "flash-window": "閃爍爐石視窗",
@@ -3199,7 +3211,14 @@
                 "enable-mailbox-unread-label": "顯示未讀取信箱",
                 "title": "啟動設定",
                 "reset-prefs-button-label": "重設偏好",
-                "restart-app-button-text": "重新啟動"
+                "restart-app-button-text": "重新啟動",
+                "notifications-position-label": "「通知」位置",
+                "notification-positions": {
+                    "top-left": "↖️左上角",
+                    "bottom-left": "↙️左下角",
+                    "bottom-right": "↘️右下角",
+                    "top-right": "↗️右上角"
+                }
             },
             "localization": {
                 "title": "在地化",
@@ -3467,7 +3486,7 @@
                     "galakrond-label": "祈求葛拉克朗次數",
                     "galakrond-tooltip": "顯示對手已祈求的次數（只會在對手祈求或打出葛拉克朗時開始顯示）",
                     "pogo-label": "蹦蹦兔",
-                    "pogo-tooltip": "顯示對手打出過的蹦蹦兔數量",
+                    "pogo-tooltip": "顯示對手打出過「蹦蹦兔」的數量",
                     "jade-label": "翠玉魔像",
                     "jade-tooltip": "顯示對手當前「翠玉魔像」的大小",
                     "cthun-label": "克蘇恩",
@@ -3513,11 +3532,11 @@
                     "starships-launched-label": "星艦（已發射）",
                     "starships-launched-tooltip": "顯示對手本賽局已發射星艦的數量及其組件",
                     "hero-power-use-label": "使用英雄能力",
-                    "ysondre-tooltip": "顯示「伊索德雷」在本賽局已死亡的次數",
+                    "ysondre-tooltip": "顯示「伊索德雷」在本賽局的死亡數量",
                     "hero-power-use-tooltip": "顯示你已使用英雄能力的次數",
                     "ysondre-label": "伊索德雷",
                     "imbue-label": "注能",
-                    "imbue-tooltip": "顯示本賽局你注能英雄能力的次數",
+                    "imbue-tooltip": "顯示本賽局對手注能英雄能力的次數",
                     "dragons-played-tooltip": "顯示對手打出過龍類的數量。（僅對手是牧師且打出過龍類時才會顯示）",
                     "friendly-dead-minions-this-game-label": "敵方手下（已死亡）",
                     "holy-spells-tooltip": "對手是聖騎士時，顯示對手已施放的神聖法術數量。",
@@ -3541,7 +3560,7 @@
                 "ignore-decklist-confirmation": "明白了，記牌器將忽略你的牌組列表",
                 "counters": {
                     "galakrond-tooltip": "顯示你祈求葛拉克朗的次數（僅在你打出葛拉克朗或祈求葛拉克朗的牌時出現）",
-                    "pogo-tooltip": "顯示你打出過的蹦蹦兔數量",
+                    "pogo-tooltip": "顯示你打出過「蹦蹦兔」的數量",
                     "jade-tooltip": "顯示你當前「翠玉魔像」的體質",
                     "cthun-tooltip": "顯示你當前「克蘇恩」的體質",
                     "abyssal-curse-tooltip": "顯示你最高的深淵詛咒傷害",
@@ -3625,7 +3644,7 @@
                     "damage-taken-on-your-turn-tooltip": "當你的手牌或牌堆中有一些使用此資訊的卡牌（例如「三溫暖常客」或「派對策劃員沃娜」）時，為你提供有關你的英雄在你的回合中受到的傷害的訊息（次數和總傷害）",
                     "locations-used-label": "地點（已使用）",
                     "dead-minions-this-game-tooltip": "當你手上或牌堆中有相關卡牌時（例如「礦坑老大雷斯卡」），顯示本場賽局死亡的手下數量",
-                    "locations-used-tooltip": "當你手上或牌堆中有依賴該資訊的卡牌時，顯示你已使用地點的次數",
+                    "locations-used-tooltip": "當你手上或牌堆中有依賴該資訊的卡牌時，顯示你已使用「地點」的次數",
                     "cards-drawn-tooltip": "當你手上有「{{cardName}}」時，顯示你在本場賽局中已抽取的卡牌數量",
                     "holy-spells-label": "神聖法術",
                     "holy-spells-tooltip": "顯示你已使用的神聖法術數量。當你手上或牌堆中擁有透過使用神聖法術而減費的卡牌時，它就會出現",
@@ -3640,7 +3659,7 @@
                     "elemental-streak-tooltip": "計算你連續多少回合打出過元素。",
                     "elemental-streak-label": "元素連續",
                     "dragons-played-label": "龍類（打出過）",
-                    "ceaseless-expanse-tooltip": "顯示該遊戲中打出、抽出或摧毀一張卡牌的次數",
+                    "ceaseless-expanse-tooltip": "顯示本賽局打出、抽出或摧毀一張卡牌的次數",
                     "dragons-played-tooltip": "顯示你打出過龍類的數量",
                     "ceaseless-expanse-label": "無垠邊際",
                     "discovers-label": "發現",
@@ -3654,7 +3673,7 @@
                     "combo-cards-played-label": "連擊牌（打出過）",
                     "protoss-spells-tooltip": "如果你的牌堆中有「{{cardName}}」，則顯示本賽局你施放過的神族法術數量",
                     "protoss-minion-reduction-tooltip": "顯示降低神族手下的總花費（包括適用整個賽局中的降低和僅適用於下一個手下的降低）",
-                    "combo-cards-played-tooltip": "當你手上/牌堆中有「{{cardName}}」時，顯示你本賽局打出過的連擊牌數量",
+                    "combo-cards-played-tooltip": "當你手上/牌堆中有「{{cardName}}」時，顯示本賽局你打出過的連擊牌數量",
                     "protoss-minion-reduction-label": "神族手下花費降低",
                     "next-starship-launch-label": "下一艘星艦發射費用降低",
                     "protoss-spells-label": "神族法術（已施放）",
@@ -3668,7 +3687,9 @@
                     "aviana-elunes-chosen-tooltip": "顯示『伊露恩之選』艾維娜效果觸發的剩餘回合數",
                     "tyrande-label": "泰蘭妲",
                     "dragons-in-hand-label": "龍類（手牌中）",
-                    "dragons-in-hand-tooltip": "為 {{cardName}} 顯示手牌中龍類的數量"
+                    "dragons-in-hand-tooltip": "為 {{cardName}} 顯示手牌中龍類的數量",
+                    "imbue-tooltip": "顯示本賽局你注能英雄能力的次數",
+                    "card-name-played-tooltip": "顯示你打出過 {{cardName}} 的數量"
                 },
                 "discovery-zone-label": "發現區",
                 "discovery-zone-tooltip": "啟動後，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並突出顯示與牌組的協同作用。"
@@ -3911,7 +3932,9 @@
                 "counter-tavern-spells-buff-label": "旅店法術增益",
                 "counter-elemental-buff-tooltip": "顯示你元素額外賦予的攻擊力/生命值增益",
                 "counter-tavern-spells-buff-tooltip": "顯示你旅店法術額外賦予的攻擊力/生命值增益",
-                "counter-elemental-buff-label": "元素增益"
+                "counter-elemental-buff-label": "元素增益",
+                "counter-elemental-tavern-stats-tooltip": "在旅店中顯示元素的額外攻擊力/生命值增益",
+                "counter-elemental-tavern-stats-label": "旅店元素統計"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
