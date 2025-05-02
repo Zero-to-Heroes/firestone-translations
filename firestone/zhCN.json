@@ -119,7 +119,8 @@
             "heroes_of_starcraft": "星际英雄传",
             "into_the_emerald_dream": "漫游翡翠梦境",
             "gift": "活动",
-            "old_core_230": "旧核心系列"
+            "old_core_230": "旧核心系列",
+            "embers_of_the_world_tree": "世界之树的余烬"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -2323,16 +2324,23 @@
             "opponent": "对手在本局对战中使用过英雄技能 {{value}} 次"
         },
         "imbue": {
-            "player": "你在本局对战中灌注了英雄技能 {{value}} 次"
+            "player": "你在本局对战中灌注了英雄技能 {{value}} 次",
+            "opponent": "对手在本局对战中已灌注英雄技能{{value}}次"
         },
         "specific-cards-in-hand": {
             "player": "你的手牌中有{{value}}张{{cardName}}"
         },
         "elemental-buff": {
-            "player": "你的元素可额外获得 +{{atk}}/+{{health}}"
+            "player": "你的能使随从获得额外属性值的元素可额外获得 +{{atk}}/+{{health}}"
         },
         "tavern-spells-buff": {
-            "player": "你的酒馆法术可额外获得 +{{atk}}/+{{health}}"
+            "player": "你的能使随从获得额外属性值的酒馆法术可额外获得 +{{atk}}/+{{health}}"
+        },
+        "elemental-tavern-stats": {
+            "player": "酒馆中的元素拥有额外的 +{{atk}}/+{{health}}"
+        },
+        "card-name-played": {
+            "player": "本局对战中你已经使用了{{times}}张{{cardName}}"
         }
     },
     "loading": {
@@ -2776,7 +2784,11 @@
             "battlecries-triggered-tooltip": "你在本局对战中触发过的战吼次数",
             "friendly-minions-dead-last-combat-tooltip": "在上一场战斗中死亡的友方随从数量",
             "elemental-attack-buff": "元素攻击增益",
-            "elemental-health-buff": "元素生命值增益"
+            "elemental-health-buff": "元素生命值增益",
+            "spells-cast": "法术施放",
+            "tavern-spell-attack-buff": "酒馆法术攻击增益",
+            "tavern-spell-health-buff": "酒馆法术生命值增益",
+            "spells-cast-tooltip": "你在本局对战中使用过法术的次数"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -3243,7 +3255,7 @@
                 "enable-mailbox-unread-label": "显示未读信件",
                 "enable-mailbox-unread-tooltip": "当您有未读消息时，在信箱图标上显示红点标记。",
                 "display-notifications-label": "显示通知",
-                "display-notifications-tooltip": "选择右下角祝贺通知的全局可见性。启用此功能，您仍然可以在相应标签中配置各个游戏模式的祝贺通知",
+                "display-notifications-tooltip": "选择祝贺通知的全局可见性。启用此功能，您仍然可以在相应标签中配置各个游戏模式的祝贺通知",
                 "display-notifications-confirmation": "全局通知现已关闭",
                 "accessibility-title": "辅助功能",
                 "flash-window": "使炉石窗口闪烁",
@@ -3257,7 +3269,14 @@
                 "restart-app-button-label": "重启应用",
                 "title": "加载选项",
                 "restart-app-button-text": "重启",
-                "reset-prefs-button-label": "重置偏好设置"
+                "reset-prefs-button-label": "重置偏好设置",
+                "notification-positions": {
+                    "top-left": "左上",
+                    "bottom-left": "左下",
+                    "bottom-right": "右下",
+                    "top-right": "右上"
+                },
+                "notifications-position-label": "通知位置"
             },
             "localization": {
                 "title": "本地化",
@@ -3547,7 +3566,7 @@
                     "ysondre-tooltip": "显示在本局对战中伊森德雷的死亡次数",
                     "ysondre-label": "伊森德雷",
                     "hero-power-use-tooltip": "显示你使用英雄技能的次数",
-                    "imbue-tooltip": "显示你在本局对战中灌注英雄技能的次数",
+                    "imbue-tooltip": "显示对手在本局对战中灌注英雄技能的次数",
                     "imbue-label": "灌注",
                     "dragons-played-tooltip": "显示对手使用过龙的次数。仅当对手为牧师且已至少使用过一张龙时显示",
                     "sea-shanty-tooltip": "显示对手对角色施放的法术数量。仅当对手是圣骑士时显示",
@@ -3695,7 +3714,9 @@
                     "tyrande-label": "泰兰德",
                     "aviana-elunes-chosen-tooltip": "显示艾维娜效果触发的剩余回合数",
                     "dragons-in-hand-tooltip": "为{{cardName}}显示手牌中的龙卡牌数量",
-                    "dragons-in-hand-label": "手牌中的龙"
+                    "dragons-in-hand-label": "手牌中的龙",
+                    "imbue-tooltip": "显示你在本局对战中灌注英雄技能的次数",
+                    "card-name-played-tooltip": "显示你使用{{cardName}}的次数"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -3940,7 +3961,9 @@
                 "counter-tavern-spells-buff-label": "酒馆法术增益",
                 "counter-tavern-spells-buff-tooltip": "显示你的酒馆法术额外获得的攻击/生命值增益",
                 "counter-elemental-buff-label": "元素增益",
-                "counter-elemental-buff-tooltip": "显示元素额外获得的攻击/生命值增益"
+                "counter-elemental-buff-tooltip": "显示元素额外获得的攻击/生命值增益",
+                "counter-elemental-tavern-stats-tooltip": "在酒馆中为元素显示额外的攻击力/生命值增益",
+                "counter-elemental-tavern-stats-label": "酒馆元素统计"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
