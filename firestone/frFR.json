@@ -119,7 +119,8 @@
             "heroes_of_starcraft": "Héros de StarCraft",
             "into_the_emerald_dream": "Au cœur du Rêve d’émeraude",
             "gift": "Évènement",
-            "old_core_230": "Remise du Fondamental"
+            "old_core_230": "Remise du Fondamental",
+            "embers_of_the_world_tree": "Les braises de l’Arbre-Monde"
         },
         "pack": {
             "classic": "Classique",
@@ -2101,8 +2102,8 @@
             "opponent": "{{value}} est le dernier sort coûtant ({{cost}}) cristaux ou plus que votre adversaire a lancé"
         },
         "cthun": {
-            "player": "Votre C’Thun a {{atk}}/{{health}}",
-            "opponent": "Le C’Thun de votre adversaire a {{atk}}/{{health}}"
+            "player": "Votre C’Thun a {{atk}}/{{health}}",
+            "opponent": "Le C’Thun de votre adversaire a {{atk}}/{{health}}"
         },
         "elemental": {
             "player": "Vous avez joué {{lastTurn}} Élémentaires au tour précédent, et {{thisTurn}} Élémentaires pendant ce tour",
@@ -2272,7 +2273,7 @@
             "player": "Vos modeleurs donnent +{{value}} ATQ/PV"
         },
         "bgs-beetles": {
-            "player": "Vos cartes {{cardName}} ont +{{atk}}/+{{health}}"
+            "player": "Vos cartes {{cardName}} ont +{{atk}}/+{{health}}"
         },
         "gifts-played": {
             "player": "Vous avez joué {{value}} cartes qui n’étaient pas dans votre deck de départ"
@@ -2323,16 +2324,23 @@
             "player": "Ysondre est morte {{value}} fois pendant cette partie"
         },
         "imbue": {
-            "player": "Vous avez empreint votre pouvoir héroïque {{value}} fois pendant cette partie"
+            "player": "Vous avez empreint votre pouvoir héroïque {{value}} fois pendant cette partie",
+            "opponent": "Votre adversaire a empreint son pouvoir héroïque {{value}} fois pendant cette partie"
         },
         "specific-cards-in-hand": {
             "player": "Vous avez {{value}} cartes {{cardName}} en main"
         },
         "tavern-spells-buff": {
-            "player": "Vos sorts de la taverne donnent +{{atk}}/+{{health}} en plus"
+            "player": "Vos sorts de la taverne qui confèrent des caractéristiques donnent +{{atk}}/+{{health}} en plus"
         },
         "elemental-buff": {
-            "player": "Vos Élémentaires donnent +{{atk}}/+{{health}} en plus"
+            "player": "Vos Élémentaires qui confèrent des caractéristiques donnent +{{atk}}/+{{health}} en plus"
+        },
+        "elemental-tavern-stats": {
+            "player": "Les Élémentaires dans la taverne ont +{{atk}}/+{{health}}"
+        },
+        "card-name-played": {
+            "player": "Vous avez joué {{times}} cartes {{cardName}} pendant cette partie"
         }
     },
     "loading": {
@@ -2776,7 +2784,11 @@
             "battlecries-triggered-tooltip": "Le nombre de Cris de guerre que vous avez déclenchés pendant cette partie",
             "friendly-minions-dead-last-combat-tooltip": "Le nombre de serviteurs alliés morts pendant le dernier combat",
             "elemental-attack-buff": "Amélioration d’ATQ des Élémentaires",
-            "elemental-health-buff": "Amélioration de PV des Élémentaires"
+            "elemental-health-buff": "Amélioration de PV des Élémentaires",
+            "spells-cast": "Sorts lancés",
+            "spells-cast-tooltip": "Nombre de sorts que vous avez lancés pendant cette partie",
+            "tavern-spell-attack-buff": "Buff d’ATQ des sorts de taverne",
+            "tavern-spell-health-buff": "Buff de PV des sorts de taverne"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3243,7 +3255,7 @@
                 "enable-mailbox-unread-label": "Afficher les messages non lus",
                 "enable-mailbox-unread-tooltip": "Afficher un point rouge sur l’icône de la boîte aux lettres lorsque vous avez des messages non lus.",
                 "display-notifications-label": "Afficher les notifications",
-                "display-notifications-tooltip": "Active ou désactive la visibilité globale des notifications Toast (en bas à droite). Lorsque cette option est activée, vous pouvez toujours configurer les notifications par mode de jeu dans les onglets correspondants",
+                "display-notifications-tooltip": "Active ou désactive la visibilité globale des notifications toast. Lorsque cette option est activée, vous pouvez toujours configurer les notifications par mode de jeu dans les onglets correspondants",
                 "display-notifications-confirmation": "Les notifications sont maintenant DÉSACTIVÉES.",
                 "accessibility-title": "Accessibilté",
                 "flash-window": "Faire clignoter la fenêtre HS",
@@ -3257,7 +3269,14 @@
                 "restart-app-button-label": "Relancer l’application",
                 "title": "Options de lancement",
                 "reset-prefs-button-label": "Réinitialiser les préférences",
-                "restart-app-button-text": "Relancer"
+                "restart-app-button-text": "Relancer",
+                "notifications-position-label": "Position des notifications",
+                "notification-positions": {
+                    "top-left": "En haut à gauche",
+                    "top-right": "En haut à droite",
+                    "bottom-right": "En bas à droite",
+                    "bottom-left": "En bas à gauche"
+                }
             },
             "localization": {
                 "title": "Localisation",
@@ -3548,7 +3567,7 @@
                     "hero-power-use-tooltip": "Affiche le nombre de fois que vous avez utilisé votre pouvoir héroïque",
                     "ysondre-label": "Ysondre",
                     "imbue-label": "Empreinte",
-                    "imbue-tooltip": "Affiche le nombre de fois que vous avez empreint votre pouvoir héroïque pendant cette partie",
+                    "imbue-tooltip": "Affiche le nombre de fois que votre adversaire a empreint son pouvoir héroïque pendant cette partie",
                     "dragons-played-tooltip": "Affiche le nombre de fois que votre adversaire a joué un Dragon. Apparaît uniquement lorsque votre adversaire est un prêtre et a joué un Dragon",
                     "friendly-dead-minions-this-game-label": "Serviteurs adverses morts",
                     "holy-spells-tooltip": "Affiche le nombre de sorts du sacré lancés par votre adversaire. N’apparaît que si votre adversaire est un paladin",
@@ -3695,7 +3714,9 @@
                     "aviana-elunes-chosen-tooltip": "Affiche le nombre de tours restants avant que l’effet d’Aviana se déclenche",
                     "tyrande-label": "Tyrande",
                     "dragons-in-hand-label": "Dragons en main",
-                    "dragons-in-hand-tooltip": "Afficher le nombre de Dragons en main, pour {{cardName}}"
+                    "dragons-in-hand-tooltip": "Afficher le nombre de Dragons en main, pour {{cardName}}",
+                    "imbue-tooltip": "Affiche le nombre de fois que vous avez empreint votre pouvoir héroïque pendant cette partie",
+                    "card-name-played-tooltip": "Affiche le nombre de fois que vous avez joué la carte {{cardName}}"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -3940,7 +3961,9 @@
                 "counter-tavern-spells-buff-tooltip": "Affiche les améliorations de vos sorts de la taverne qui confèrent des caractéristiques",
                 "counter-elemental-buff-tooltip": "Affiche les améliorations de vos Élémentaires qui confèrent des caractéristiques",
                 "counter-elemental-buff-label": "Améliorations des Élémentaires",
-                "counter-tavern-spells-buff-label": "Améliorations des sorts de la taverne"
+                "counter-tavern-spells-buff-label": "Améliorations des sorts de la taverne",
+                "counter-elemental-tavern-stats-label": "Stats des Élémentaires dans la taverne",
+                "counter-elemental-tavern-stats-tooltip": "Affiche les caractéristiques supplémentaires des Élémentaires dans la taverne"
             },
             "session-widget": {
                 "title": "Widget de session",
