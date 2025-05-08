@@ -119,7 +119,8 @@
             "heroes_of_starcraft": "スタークラフト英雄伝",
             "into_the_emerald_dream": "夢見る大地エメラルド・ドリーム",
             "gift": "ギフト",
-            "old_core_230": "オールドコア"
+            "old_core_230": "過去のコア",
+            "embers_of_the_world_tree": "世界樹の残火"
         },
         "pack": {
             "classic": "クラシック",
@@ -2323,16 +2324,23 @@
             "opponent": "対戦相手はこの対戦中ヒーローパワーを{{value}}回使用した"
         },
         "imbue": {
-            "player": "この対戦中、自分はヒーローパワーを{{value}}回鼓舞した"
+            "player": "この対戦中、自分はヒーローパワーを{{value}}回鼓舞した",
+            "opponent": "この対戦中、対戦相手はヒーローパワーを{{value}}回鼓舞した"
         },
         "ysondre": {
             "player": "この対戦中、「イソンドレ」は{{value}}回死亡した"
         },
         "elemental-buff": {
-            "player": "自分のエレメンタルは追加で+{{atk}}/+{{health}}を与える"
+            "player": "攻撃力・体力を付与するエレメンタルは、追加で+{{atk}}/+{{health}}を付与する"
         },
         "tavern-spells-buff": {
-            "player": "自分の酒場の呪文は追加で+{{atk}}/+{{health}}を与える"
+            "player": "攻撃力・体力を付与する酒場の呪文は、追加で+{{atk}}/+{{health}}を付与する"
+        },
+        "elemental-tavern-stats": {
+            "player": "酒場のエレメンタルは追加で+{{atk}}/+{{health}}を得る"
+        },
+        "card-name-played": {
+            "player": "この対戦中、「{{cardName}}」を{{times}}回使用した"
         }
     },
     "loading": {
@@ -2776,7 +2784,11 @@
             "battlecries-triggered": "雄叫び発動数",
             "battlecries-triggered-tooltip": "この対戦中に自分が発動した雄叫びの回数です",
             "elemental-attack-buff": "エレメンタル攻撃力バフ",
-            "elemental-health-buff": "エレメンタル体力バフ"
+            "elemental-health-buff": "エレメンタル体力バフ",
+            "spells-cast": "呪文使用数",
+            "spells-cast-tooltip": "この対戦中に自分が使用した呪文の数です",
+            "tavern-spell-attack-buff": "酒場の呪文の攻撃力バフ",
+            "tavern-spell-health-buff": "酒場の呪文の体力バフ"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -3242,7 +3254,7 @@
                 "enable-mailbox-unread-label": "未読のメールを通知",
                 "enable-mailbox-unread-tooltip": "未読メールがある場合、メールボックスに赤いドットを表示して通知します",
                 "display-notifications-label": "通知を表示",
-                "display-notifications-tooltip": "ゲーム全体におけるトースト通知を切り替えます。 オンにしている場合でも、対応するタブでゲームモードごとに通知を設定できます",
+                "display-notifications-tooltip": "ゲーム全体におけるトースト通知の可視/不可視を切り替えます。 オンにしている場合でも、対応するタブでゲームモードごとに通知を設定できます",
                 "display-notifications-confirmation": "ゲーム全体において、通知がオフになりました",
                 "accessibility-title": "ユーザー補助機能",
                 "flash-window": "画面を点滅させる",
@@ -3256,7 +3268,14 @@
                 "restart-app-button-label": "アプリを再起動",
                 "title": "起動オプション",
                 "reset-prefs-button-label": "全設定をリセット",
-                "restart-app-button-text": "再起動"
+                "restart-app-button-text": "再起動",
+                "notifications-position-label": "通知の位置",
+                "notification-positions": {
+                    "bottom-right": "右下",
+                    "bottom-left": "左下",
+                    "top-left": "左上",
+                    "top-right": "右上"
+                }
             },
             "localization": {
                 "title": "ローカライズ",
@@ -3543,7 +3562,7 @@
                     "starships-launched-label": "発射した宇宙船",
                     "starships-launched-tooltip": "対戦相手が宇宙船を発射した回数と、その中身を表示します",
                     "dragons-played-tooltip": "この対戦中に対戦相手が使用したドラゴンの数を表示します(相手がプリーストでドラゴンを使用したときのみ表示されます)",
-                    "imbue-tooltip": "この対戦中に自分が鼓舞した回数を表示します",
+                    "imbue-tooltip": "この対戦中に、対戦相手がヒーローパワーを鼓舞した回数を表示します",
                     "imbue-label": "鼓舞",
                     "ysondre-tooltip": "この試合中に死亡した「イソンドレ」の数を表示します",
                     "ysondre-label": "「イソンドレ」",
@@ -3694,7 +3713,9 @@
                     "dragons-in-hand-label": "手札のドラゴン",
                     "dragons-in-hand-tooltip": "{{cardName}}により、手札のドラゴンの数を表示します",
                     "tyrande-tooltip": "2回使用される呪文の残り回数を表示します",
-                    "aviana-elunes-chosen-tooltip": "アヴィアナの効果が発動するまでの残りターン数を表示します"
+                    "aviana-elunes-chosen-tooltip": "アヴィアナの効果が発動するまでの残りターン数を表示します",
+                    "imbue-tooltip": "この対戦中に自分のヒーローパワーを鼓舞した回数を表示します",
+                    "card-name-played-tooltip": "{{cardName}}を使用した回数を表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -3939,7 +3960,9 @@
                 "counter-elemental-buff-tooltip": "ステータスを付与するエレメンタルの、攻撃力/体力の追加のバフ量を表示します",
                 "counter-tavern-spells-buff-tooltip": "ステータスを付与する酒場の呪文の、攻撃力/体力の追加のバフ量を表示します",
                 "counter-elemental-buff-label": "エレメンタルバフ",
-                "counter-tavern-spells-buff-label": "酒場の呪文バフ"
+                "counter-tavern-spells-buff-label": "酒場の呪文バフ",
+                "counter-elemental-tavern-stats-tooltip": "酒場のエレメンタルへの追加の攻撃力/体力のバフを表示します",
+                "counter-elemental-tavern-stats-label": "酒場のエレメンタルのステータス"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
