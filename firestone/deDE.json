@@ -266,7 +266,7 @@
             "stealth": "Verstohlen",
             "windfury": "Windzorn",
             "mega-windfury": "Super-Windzorn",
-            "venomous": "Toxisch"
+            "venomous": "giftig"
         },
         "social": {
             "discord": "Discord"
@@ -335,10 +335,11 @@
                 "close-button-tooltip": "Fenster schließen"
             },
             "ads": {
-                "support-the-dev": "Unterstützen Sie den Entwickler und entfernen Sie die Anzeigen",
+                "support-the-dev": "Unterstützen Sie den Entwickler und entfernt die Anzeigen",
                 "supporter": "Vielen Dank, dass Sie uns unterstützen!",
                 "unlock-subtext": "und deaktiviere alle Werbungen",
-                "unlock-text": "Schalte Premiumfeatures frei"
+                "unlock-text": "Schalte Premiumfeatures frei",
+                "cta-text": "jetzt Upgraden"
             },
             "graph": {
                 "tooltip-title": "Titel",
@@ -432,7 +433,8 @@
             },
             "draft": {
                 "hero-tier": "Rang",
-                "hero-winrate": "Gewinnrate"
+                "hero-winrate": "Gewinnrate",
+                "locked-premium-info": "Schalte Statistik mit Premium frei"
             },
             "class-tier-list": {
                 "header-winrate": "Gewinnrate",
@@ -850,10 +852,11 @@
                 "deck": {
                     "view-decks-button": "Decks ansehen",
                     "cards-header-details": "({{value}} Karten)",
-                    "view-details-button-tooltip": "Zeige Details für jede Karte und weitere Statistiken (nur Premium)",
+                    "view-details-button-tooltip": "Zeige Details für jede Karte und detailliertere Statistiken (nur Premium)",
                     "removed-cards-header": "Entfernte Karten",
                     "added-cards-header": "Hinzugefügte Karten",
-                    "deviation-tooltip": "Die Datenmenge fügt zur Gewinnrate jedes Decks Unsicherheit hinzu. Es besteht eine 95% Wahrscheinlichkeit, dass die tatsächliche Gewinnrate innerhalb der berechneten Gewinnrate plus oder minus der hier anzeigten Unsicherheit liegt. Schalte \"Konservative Gewinnrate\" in den Filtern ein, um eine neue Gewinnrate zu sehen, die diese Unsicherheit mit berücksichtigt."
+                    "deviation-tooltip": "Die Datenmenge fügt zur Gewinnrate jedes Decks Unsicherheit hinzu. Es besteht eine 95% Wahrscheinlichkeit, dass die tatsächliche Gewinnrate innerhalb der berechneten Gewinnrate plus oder minus der hier anzeigten Unsicherheit liegt. Schalte \"Konservative Gewinnrate\" in den Filtern ein, um eine neue Gewinnrate zu sehen, die diese Unsicherheit mit berücksichtigt.",
+                    "view-decks-button-tooltip": "Alle Decks für diesen Archetyp anzeigen"
                 },
                 "card-stats-header": "Kartensets",
                 "cards-header": "Karten",
@@ -1092,7 +1095,9 @@
                     },
                     "notes": {
                         "pocky": "Eine sehr nischenhafte Verwendung für 1-Kosten-Heropowers",
-                        "toki": "Ein Weg, um 1-Kosten Heropowers zu verwenden, die kein Tempo bereitstellen"
+                        "toki": "Ein Weg, um 1-Kosten Heropowers zu verwenden, die kein Tempo bereitstellen",
+                        "basic-yogg": "Verwendet eine 2-Kosten-Heropower, um schneller auf Tier 3 zu kommen.",
+                        "aggro-yogg": "Verwendet eine 2-Kosten-Heropower, um ein gutes Tier 1s aufs Bord zu bekommen, bevor schneller auf 3 zu leveln"
                     },
                     "name": {
                         "3-on-3-bis": "3 gegen 3 (Level 8)",
@@ -1100,7 +1105,7 @@
                         "3-on-3": "3 gegen 3 (Level 8)"
                     }
                 },
-                "date": "Veröffentlicht am  {{date}} (patch {{patch}})"
+                "date": "Veröffentlicht am {{date}} (Patch {{patch}})"
             },
             "bgs-tier-list": {
                 "header": "Questrangliste ({{value}} Spiele) "
@@ -1463,15 +1468,24 @@
         },
         "lottery": {
             "achievements-progress": "{{current}} / {{max}}, {{thisGame}} dieses Spiel",
-            "achievements-title": "Errungenschaften"
+            "achievements-title": "Errungenschaften",
+            "achievements-reset-button-tooltip": "Erfolge nicht mehr anzeigen und vom Bildschirm entfernen"
         },
         "premium": {
             "check-status-online": "Aktiv und automatische Erneuerung. Details prüfen {{link}}",
             "auto-renew": "Aktiv und verlängert sich automatisch am {{ Datum }}",
             "active-until": "Aktiv bis {{ date }} und wird nicht automatisch verlängert",
             "features": {
-                "discordRole": "{{value}} Discord-Rolle"
-            }
+                "discordRole": "{{value}} Discord-Rolle",
+                "supportFirestone": "Unterstützt Firestone"
+            },
+            "unsubscribe-modal": {
+                "text": "Wenn Du Dich abmeldest, wird die automatische Verlängerung Deines Abonnements gestoppt. Du kannst die Premium-Funktionen noch bis zum Ende des aktuellen Zeitraums nutzen. Du wirst auf die Kassenseite von Tebex weitergeleitet, um Deine Abonnements dort zu bearbeiten, und die App wird nach einigen Minuten aktualisiert.",
+                "unsubscribe-ongoing-label": "Abbestellen",
+                "text-legacy": "Abbestellen wird automatisch die Erneuerung des Abonnements stoppen. Du wirst die Premium Funktionen noch bis zum Ende der laufenden Periode nützen können. Bitte beachte, dass das Legacy-Abo veraltet ist. Du kannst Dich also nicht mehr für dieses Angebot anmelden"
+            },
+            "subscribe-button-upgrade": "Upgrade",
+            "unsubscribe-button": "abbestellen"
         }
     },
     "turn-timer": {
@@ -1720,7 +1734,7 @@
             "winrate": "{{value}} Gewinnrate",
             "archive-button-tooltip": "Archiviere dieses Team (du kannst es später wiederherstellen)",
             "restore-button-tooltip": "Dieses Team wiederherstellen",
-            "unnamed-team": "Unbenanntes Team",
+            "unnamed-team": "Nicht benanntes Team",
             "total-matches": "Spiele insgesamt",
             "last-used": "Benutzt: {{value}}"
         },
@@ -1728,7 +1742,7 @@
             "number-of-users-tooltip": "Anzahl, wie oft der Söldner diese Fähigkeit in diesem Kampf benutzt hat",
             "empty-state": "Gehe in ein Kopfgeld oder einen PvP Kampf um dein Team zu sehen",
             "merc-level-tooltip": "Aktuelles Söldner Level",
-            "unrecognized-mercenary": "Unbekannter Söldner",
+            "unrecognized-mercenary": "Unerkannter Söldner",
             "unknown-mercenary": "Unbekannter Söldner",
             "tasks-button": "Aufgaben",
             "tasks-completed": "Du hast alle deine Aufgaben abgeschlossen",
@@ -1758,7 +1772,7 @@
         "cards-in-hand-tooltip": "Karten in der Hand",
         "cards-left-in-deck-tooltip": "Karten übrig im Deck",
         "deck-name": {
-            "unnamed-deck": "Unbenanntes Deck",
+            "unnamed-deck": "Nicht benanntes Deck",
             "unknown-deck": "Unbekanntes Deck",
             "copy-deckstring-label": "Deck kopieren",
             "copy-deckstring-confirmation": "Kopiert!",
@@ -1799,7 +1813,7 @@
         "unknown-card": "Unbekannte Karte",
         "unknown-mana-spell": "Unbekannter {{manaCost}} Mana-Zauber",
         "unknown-info": "Unbekannte {{info}}",
-        "unknown-big-minion": "Unbekannter {{cost}}+ Mana Diener",
+        "unknown-big-minion": "Unbekannter {{cost}}+ Kosten Diener",
         "card-dredged-tooltip": "Karte geborgen",
         "overlay": {
             "mulligan": {
@@ -1978,7 +1992,7 @@
                 "reset-button": "Zurücksetzen",
                 "highlight-tribe": "Klicken, um alle {{value}}s im Gasthaus hervorzuheben",
                 "unhighlight-tribe": "Klicke, um {{value}}s im Gasthaus nicht hervorzuheben",
-                "mechanics-tier-tooltip": "Zeige alle Karten mit {{value}}",
+                "mechanics-tier-tooltip": "Zeige alle Karten mit {{value}}. Rechtsklick, um alle {{value}}Karten im Gasthaus hervorzuheben",
                 "buddies-tier-tooltip": "Zeige alle Partner im Spiel",
                 "rules": {
                     "missing-board-linked": " oder ",
@@ -2008,7 +2022,8 @@
                 },
                 "compositions": {
                     "add-ons-header": "Add-ons"
-                }
+                },
+                "tribe-category-tooltip": "Alle{{tribeName}} Karten anzeigen. Rechtsklick, um alle {{tribeName}} Karten im Gasthaus hervorzuheben."
             },
             "quests": {
                 "sample-size": "Spiele gesamt:",
@@ -2041,7 +2056,7 @@
                 "high-mmr-header": "Oberste {{value}}%",
                 "global-header-tooltip": "Wert unter Berücksichtigung der gesamten Spielerschaft",
                 "global-header": "Global",
-                "high-mmr-header-tooltip": "Wert für die besten Spieler",
+                "high-mmr-header-tooltip": "Wert berücksichtigt nur die besten Spieler",
                 "view-tips": "Tips ansehen",
                 "pick-rate-title-tooltip": "Wie oft dieses Schmuckstück von Spielern gewählt wurde."
             }
@@ -2366,7 +2381,7 @@
                     "text": "Du kannst den Text anpassen, der angezeigt wird, wenn du in einer Runde bist. Es sind folgende Platzhalter erlaubt:",
                     "text-2": "Brauchst du weitere Optionen für Platzhalter? Erzähle es mir auf {{discordLink}}!"
                 },
-                "advanced-config-title": "Genauere Konfiguration",
+                "advanced-config-title": "Erweiterte Konfiguration",
                 "in-game-text-in-match-default-value": "In einem {mode} Spiel",
                 "activate-custom-in-match-text-tooltip": "Passe den Text an, der erscheint, wenn Benutzer auf dein Profil klicken, während du in einer Runde bist"
             },
@@ -2404,12 +2419,13 @@
                 "minions-play-order": "Spielreihenfolge der Diener",
                 "minions-play-order-tooltip": "Zeige die Spielreihenfolge aller Diener auf dem Feld, um somit bei der Aktivierungsreihenfolge von Todesröchelneffekten zu helfen (oder bei allem anderen, was auf der Spielreihenfolge der Diener basiert)",
                 "streamer-mode": "Streamermodus",
-                "show-deck-winrate": "Zeige Deck Gewinnrate",
+                "show-deck-winrate": "Zeige Gewinnrate des Decks",
                 "reset-button-confirm": "Sind Sie sicher?",
                 "counters-size": "Zählergröße",
                 "discover-help": "Kontexthilfe beim Entdecken",
                 "streamer-mode-tooltip": "Ersetze deinen Namen und den deines Gegners durch \"Du\" und \"Gegner\". Dies spiegelt den Streamermodus im Spiel wider, der durch Drücken von Strg + Shift + S aktiviert werden kann.",
-                "show-unknown-cards-tooltip": "Zeige \"Unbekannte Karte\" im Tracker für Karten, über die wir keine Informationen haben."
+                "show-unknown-cards-tooltip": "Zeige \"Unbekannte Karte\" im Tracker für Karten, über die wir keine Informationen haben.",
+                "show-cost-reduction-tooltip": "Aktualisieren der Mana-Kosten im Deck,wenn diese durch einen Effekt geändert wurden (z.B. Incanter's Flow)"
             },
             "modes": {
                 "ranked": "Gewertet",
@@ -2443,10 +2459,12 @@
                     "elwynn-boar-label": "Elwynneber Tode",
                     "volatile-skeleton-label": "Instabiles Skelett Tode",
                     "relic-label": "Relikte",
-                    "hero-power-damage-label": "Schaden mit Heldenfähigkeit"
+                    "hero-power-damage-label": "Schaden mit Heldenfähigkeit",
+                    "wheel-of-death-tooltip": "Nachdem Dein Gegner {{cardName}}gespielt hat, zeige die Anzahl der Runden, bevor Du stirbst"
                 },
                 "opacity-title": "Deckkraft",
-                "show-dk-runes-tooltip": "Füge oben im Tracker einen Abschnitt hinzu, der die bekannten Todesritter-Runen im Deck anzeigt"
+                "show-dk-runes-tooltip": "Füge oben im Tracker einen Abschnitt hinzu, der die bekannten Todesritter-Runen im Deck anzeigt",
+                "used-cards-go-to-bottom-label": "Benutzte Karten kommen nach unten"
             },
             "your-deck": {
                 "counters": {
@@ -2478,7 +2496,9 @@
                     "gardens-grace-tooltip": "Zeigt die tatsächlichen Kosten (nach Reduktion) deiner Segen der Gärten, wenn du einen auf der Hand oder im Deck hast",
                     "lady-darkvein-tooltip": "Wenn du eine Lady Dunkelader auf der Hand hast, zeige den letzten Schattenzauber, den du gewirkt hast",
                     "multicaster-tooltip": "Zeigt die Zaubertypen, von denen du bisher einen Zauber gewirkt hast",
-                    "bonelord-frostwhisper-tooltip": "Nachdem Knochenfürst Frostraune gestorben ist, behalte dir Anzahl der verbleibenden Runden im Auge"
+                    "bonelord-frostwhisper-tooltip": "Nachdem Knochenfürst Frostraune gestorben ist, behalte dir Anzahl der verbleibenden Runden im Auge",
+                    "anachronos-tooltip": "Nachdem Anachronos gespielt wurde, verfolge die verbleibenden Runden bevor die Diener zurückkommen",
+                    "wheel-of-death-tooltip": "Nachdem Du {{cardName}} gespielt hast, zeige die Anzahl der Runden, bevor Dein Gegner stirbt"
                 }
             },
             "duels": {
@@ -2529,7 +2549,8 @@
                 "integrated-mode-label": "Integrierter Modus",
                 "integrated-mode-tooltip": "Wenn aktiviert, wird das Schlachtfeld-Fenster zu einem Overlay, das an das Spielfenster gebunden ist. Dies ist für Einzelmonitor-Setups und für das Streamen der App empfohlen",
                 "use-tribe-filter-for-live-stats-label-short": "Dienertypen Filter",
-                "show-achievements-label": "Zeige 'Errungenschaften'"
+                "show-achievements-label": "Zeige 'Errungenschaften'",
+                "use-remote-simulator-label": "Fernkampfsimulator verwenden"
             },
             "overlay": {
                 "show-banned-tribes-label": "Zeige gebannte Dienertypen",
@@ -2557,7 +2578,9 @@
                 "last-opponent-icon-tooltip": "Fügt ein Symbol neben dem letzten Gegner in der Rangliste hinzu",
                 "minions-list-show-mechanics-tiers-tooltip": "Fügt der Dienerliste Spalten hinzu, welche die Diener nach Mechanik gruppieren",
                 "minions-list-show-tribe-tiers-tooltip": "Fügt der Dienerliste Spalten hinzu, die die Diener nach ihrem Stamm gruppieren",
-                "minions-list-show-compositions-tooltip": "Fügt eine Registerkarte zur Dienerliste hinzu, auf der du die verschiedenen Zusammenstellungen des aktuellen Metas erkunden kannst. Die Option \"{{newHeaderOption}}\"muss aktiviert sein."
+                "minions-list-show-compositions-tooltip": "Fügt eine Registerkarte zur Dienerliste hinzu, auf der du die verschiedenen Zusammenstellungen des aktuellen Metas erkunden kannst. Die Option \"{{newHeaderOption}}\"muss aktiviert sein.",
+                "minions-list-new-header-tooltip": "Verwende das 2-stufige Navigationsmenü, um das Durcheinander in der Dienerliste zu reduzieren",
+                "minions-list-new-header-label": "Neue Überschrift verwenden"
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ MMR und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger MMR kann zu falschen Informationen führen.",
@@ -2575,7 +2598,8 @@
                 "achievements-enabled-tooltip": "Wenn deaktiviert, wird die gesamte Errungenschaftsverfolgung deaktiviert. Lass es deaktiviert, wenn du nicht planst deine Errugngenschafften mit Firestone zu durchsuchen. Ein Neustart der App wird benötigt.",
                 "firestone-achievements-text": "Aktiviere FS-Errungenschaften",
                 "show-notifications-text": "Zeige Benachrichtigungen",
-                "streamer-mode-text": "Streamer-Modus"
+                "streamer-mode-text": "Streamer-Modus",
+                "title": "Aktualisieren, wenn Du Benachrichtigungen über Erfolge siehst"
             }
         },
         "mercenaries": {
@@ -2612,7 +2636,8 @@
         "options": {
             "auto": "Auto",
             "true": "Ja",
-            "false": "Nein"
+            "false": "Nein",
+            "auto-tooltip": "Streamer-Standardwerte verwenden"
         },
         "language-auto-tooltip": "Sprache aus deinen Twitch-Einstellungen übernehmen",
         "could-not-log-error-text": "Bitte öffne die Einstellungen und verbinde deinen Twitch-Account erneut",
@@ -2649,6 +2674,16 @@
     },
     "archetype": {
         "starship-shaman": "Raumschiff Schamane",
-        "uu-location-warlock": "Double Unholy Location Warlock"
+        "uu-location-warlock": "Double Unholy Location Warlock",
+        "rogue": "Unbekannter Schurke",
+        "hunter": "Unbekannter Jäger",
+        "druid": "Unbekannter Druide",
+        "priest": "Unbekannter Priester",
+        "paladin": "Unbekannter Paladin",
+        "shaman": "Unbekannter Schamane",
+        "warlock": "Unbekannter Hexenmeister",
+        "warrior": "Unbekannter Krieger",
+        "demon-hunter": "Unbekannter Dämonenjäger",
+        "mage": "Unbekannter Magier"
     }
 }
