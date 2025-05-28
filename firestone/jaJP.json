@@ -282,7 +282,7 @@
             "choose_one": "選択",
             "modular": "超電磁",
             "bacon_buddy": "バディ",
-            "bacon_buffs_tavern_spell": "酒場の呪文へのバフ"
+            "bacon_buffs_tavern_spell": "酒場の呪文強化"
         },
         "legendary-minion": "レジェンドミニオン",
         "patch": "パッチ{{version}}.{{number}} が{{date}} にリリース！",
@@ -1085,7 +1085,12 @@
                         "discovered-winrate-impact-header-tooltip": "試合中にそのカードを発見できた場合の、デッキの勝率に対する平均勝率です",
                         "discovered-winrate-header-tooltip": "そのカードをゲーム中に発見できた場合の平均勝率です",
                         "discovered-winrate-impact-tooltip-data": "このカードは{{value}}回発見されました",
-                        "discovered-winrate-impact-tooltip-low-data": "警告：このカードは{{value}}回しか発見されていません。よって、統計が不正確なことがあります"
+                        "discovered-winrate-impact-tooltip-low-data": "警告：このカードは{{value}}回しか発見されていません。よって、統計が不正確なことがあります",
+                        "play-coin-filter": {
+                            "play": "先攻",
+                            "all": "後攻",
+                            "coin": "後攻"
+                        }
                     },
                     "archetype-type": "アーキタイプ",
                     "deck-type": "デッキリスト"
@@ -1104,7 +1109,9 @@
                 "last-updated": "前回のアップデート",
                 "total-games": "合計試合数",
                 "discover-stats-header": "発見の統計",
-                "discover-stats-header-tooltip": "試合中に発見したカードの統計を表示します"
+                "discover-stats-header-tooltip": "試合中に発見したカードの統計を表示します",
+                "winrate-first-header": "先攻",
+                "winrate-second-header": "後攻"
             }
         },
         "battlegrounds": {
@@ -2297,7 +2304,8 @@
             "player": "次の宇宙船発射コストは{{value}}減る"
         },
         "protoss-minion-reduction": {
-            "player": "自分のプロトスミニオンはこのゲーム中{{game}}コスト減り、次のプロトスミニオンは更に{{next}}コスト減る"
+            "player": "自分のプロトスミニオンはこのゲーム中{{game}}コスト減り、次のプロトスミニオンは更に{{next}}コスト減る",
+            "opponent": "対戦相手のプロトスミニオンのコストはこの試合中{{game}}減り、次のプロトスミニオンは追加で{{next}}減る"
         },
         "cards-played-this-turn": {
             "player": "このターン中、{{value}}枚のカードを使用した"
@@ -2343,6 +2351,10 @@
         },
         "card-name-played": {
             "player": "この対戦中、「{{cardName}}」を{{times}}回使用した"
+        },
+        "colossus-damage": {
+            "player": "自分のコロッサスは1+{{value}}ダメージを2回与えます",
+            "opponent": "対戦相手のコロッサスは1+{{value}}ダメージを2回与えます"
         }
     },
     "loading": {
@@ -2609,14 +2621,20 @@
                 "mulligan-card": "カード",
                 "deck-mulligan-filter-opponent-tooltip": "{{opponent}}相手の試合を表示します。クリックすると変更できます",
                 "deck-mulligan-filter-time-tooltip": "{{timeFrame}} 、{{patchDetails}}での試合を表示します。クリックすると変更できます。",
-                "sample-size-tooltip": "このアーキタイプでの試合数です(利用可能な場合)。そうでなければ、正確なデッキリストを使用します"
+                "sample-size-tooltip": "このアーキタイプでの試合数です(利用可能な場合)。そうでなければ、正確なデッキリストを使用します",
+                "deck-mulligan-filter-play-coin-tooltip": {
+                    "all": "先攻と後攻の試合両方を表示します。クリックで変更できます",
+                    "coin": "後攻の試合のみを表示します。クリックで変更できます",
+                    "play": "先攻の試合のみを表示します。クリックで変更できます"
+                }
             },
             "lobby": {
                 "close-button-tooltip": "デッキ概要を無効化します。設定から再び有効化することができます",
                 "deck-stats": {
                     "title": "デッキ統計",
                     "global-stats-subtitle": "デッキ全体の統計",
-                    "your-stats-subtitle": "自分の統計"
+                    "your-stats-subtitle": "自分の統計",
+                    "global-stats-tooltip": "これと完全に同じデッキリストの統計です(上部にある統計はアーキタイプ全体のものです)"
                 },
                 "toggle-button-locked-tooltip": "プレミアムユーザーはマリガンガイドやデッキの統計を閲覧できます。クリックしてプレミアム機能を開放！",
                 "toggle-button-tooltip": "デッキリストと詳細ビューを切り替えます"
@@ -2909,7 +2927,19 @@
                     "cycles-header-tooltip": "サイクルに適したカードです。つまり、効果を発動させるために買い売りをしますが、盤面に残す必要はありません",
                     "cycles-header": "サイクル",
                     "trinkets-header": "装飾品",
-                    "trinkets-header-tooltip": "この構成でうまく機能する装飾品です"
+                    "trinkets-header-tooltip": "この構成でうまく機能する装飾品です",
+                    "advice": {
+                        "author": "筆者：{{author}}",
+                        "difficulty-tooltip": "この構成を組む難易度です",
+                        "how-to-play": "プレイ方法",
+                        "when-to-commit": "始めるタイミング"
+                    },
+                    "difficulty": {
+                        "easy": "簡単",
+                        "hard": "難しい",
+                        "medium": "普通",
+                        "very-hard": "とても難しい"
+                    }
                 }
             },
             "quests": {
@@ -3725,7 +3755,9 @@
                     "tyrande-tooltip": "2回使用される呪文の残り回数を表示します",
                     "aviana-elunes-chosen-tooltip": "アヴィアナの効果が発動するまでの残りターン数を表示します",
                     "imbue-tooltip": "この対戦中に自分のヒーローパワーを鼓舞した回数を表示します",
-                    "card-name-played-tooltip": "{{cardName}}を使用した回数を表示します"
+                    "card-name-played-tooltip": "{{cardName}}を使用した回数を表示します",
+                    "colossus-damage-label": "コロッサスのダメージ",
+                    "colossus-damage-tooltip": "自分のコロッサスが与えるダメージを表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
