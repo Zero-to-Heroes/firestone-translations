@@ -1086,7 +1086,12 @@
                         "discovered-winrate-header": "% victoires (découverte)",
                         "discovered-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du deck lorsque la carte est découverte pendant la partie",
                         "discovered-winrate-impact-tooltip-low-data": "Attention : cette carte n’a été découverte que {{value}} fois. Les stats peuvent être imprécises.",
-                        "discovered-winrate-impact-tooltip-data": "Cette carte a été découverte {{value}} fois"
+                        "discovered-winrate-impact-tooltip-data": "Cette carte a été découverte {{value}} fois",
+                        "play-coin-filter": {
+                            "play": "En premier",
+                            "coin": "Avec La pièce",
+                            "all": "1er et Pièce"
+                        }
                     },
                     "deck-type": "Deck"
                 },
@@ -1104,7 +1109,9 @@
                 "last-updated": "Dernière mise à jour",
                 "total-games": "Nb parties",
                 "discover-stats-header": "Stats de découverte",
-                "discover-stats-header-tooltip": "Affiche les stats des cartes découvertes pendant la partie."
+                "discover-stats-header-tooltip": "Affiche les stats des cartes découvertes pendant la partie.",
+                "winrate-first-header": "En premier",
+                "winrate-second-header": "Avec La pièce"
             }
         },
         "battlegrounds": {
@@ -2291,7 +2298,8 @@
             "player": "Votre prochain déploiement de vaisseau coûte ({{value}}) cristaux de moins"
         },
         "protoss-minion-reduction": {
-            "player": "Vos serviteurs protoss coûtent ({{game}}) cristaux de moins pendant cette partie, et votre prochain serviteur protoss coûte encore ({{next}}) cristaux de moins"
+            "player": "Vos serviteurs protoss coûtent ({{game}}) cristaux de moins pendant cette partie, et votre prochain serviteur protoss coûte encore ({{next}}) cristaux de moins",
+            "opponent": "Les serviteurs protoss de votre adversaire coûtent ({game}}) cristaux de moins pendant cette partie, et son prochain serviteur protoss coûte encore ({{next}}) cristaux de moins"
         },
         "combo-cards-played": {
             "player": "Vous avez joué {{value}} cartes avec Combo pendant cette partie"
@@ -2343,6 +2351,10 @@
         },
         "card-name-played": {
             "player": "Vous avez joué {{times}} cartes {{cardName}} pendant cette partie"
+        },
+        "colossus-damage": {
+            "opponent": "Les colosses de votre adversaire infligeront 1 + {{value}} points de dégâts, deux fois",
+            "player": "Vos colosses infligeront 1 + {{value}} points de dégâts, deux fois"
         }
     },
     "loading": {
@@ -2609,7 +2621,12 @@
                 "mulligan-card": "Carte",
                 "deck-mulligan-filter-opponent-tooltip": "Afficher les parties contre {{opponent}}. Cliquez pour modifier.",
                 "deck-mulligan-filter-time-tooltip": "Afficher les parties pour {{timeFrame}} {{patchDetails}}. Cliquez pour modifier.",
-                "sample-size-tooltip": "Le nombre de parties jouées avec cet archétype (lorsqu’il est reconnu), ou bien celui avec ce deck exactement"
+                "sample-size-tooltip": "Le nombre de parties jouées avec cet archétype (lorsqu’il est reconnu), ou bien celui avec ce deck exactement",
+                "deck-mulligan-filter-play-coin-tooltip": {
+                    "coin": "N’affiche que les parties où vous avez La pièce. Cliquez pour changer.",
+                    "play": "N’affiche que les parties où vous commencez. Cliquez pour changer.",
+                    "all": "Affiche les parties où vous jouez en premier et celles où vous avez La pièce. Cliquez pour changer."
+                }
             },
             "lobby": {
                 "close-button-tooltip": "Désactive l’aperçu du deck. Vous pourrez le réactiver dans les paramètres",
@@ -2617,7 +2634,8 @@
                 "deck-stats": {
                     "title": "Stats du deck",
                     "global-stats-subtitle": "Stats globales du deck",
-                    "your-stats-subtitle": "Vos stats"
+                    "your-stats-subtitle": "Vos stats",
+                    "global-stats-tooltip": "Stats avec cette liste précise ; les stats en haut sont pour l’archétype"
                 },
                 "toggle-button-locked-tooltip": "Avec l’abonnement Premium, vous pouvez voir le guide de mulligan et les stats du deck. Cliquez pour vous abonner et débloquer tous les avantages Premium !"
             }
@@ -2909,7 +2927,19 @@
                     "cycles-header-tooltip": "Cartes bonnes pour cycler, c'est-à-dire à acheter puis vendre en déclenchant leurs effets, mais qui n’ont pas besoin de rester sur le plateau",
                     "cycles-header": "Cycles",
                     "trinkets-header": "Bibelots",
-                    "trinkets-header-tooltip": "Les bibelots qui s’intègrent bien à cette composition"
+                    "trinkets-header-tooltip": "Les bibelots qui s’intègrent bien à cette composition",
+                    "difficulty": {
+                        "hard": "Difficile",
+                        "medium": "Intermédiaire",
+                        "easy": "Facile",
+                        "very-hard": "Très difficile"
+                    },
+                    "advice": {
+                        "difficulty-tooltip": "Difficulté de maîtrise de la compo",
+                        "how-to-play": "Comment la jouer",
+                        "author": "Conseils fournis par {{author}}",
+                        "when-to-commit": "Quand y aller"
+                    }
                 }
             },
             "quests": {
@@ -3726,7 +3756,9 @@
                     "dragons-in-hand-label": "Dragons en main",
                     "dragons-in-hand-tooltip": "Afficher le nombre de Dragons en main, pour {{cardName}}",
                     "imbue-tooltip": "Affiche le nombre de fois que vous avez empreint votre pouvoir héroïque pendant cette partie",
-                    "card-name-played-tooltip": "Affiche le nombre de fois que vous avez joué la carte {{cardName}}"
+                    "card-name-played-tooltip": "Affiche le nombre de fois que vous avez joué la carte {{cardName}}",
+                    "colossus-damage-tooltip": "Affiche les dégâts que vos colosses infligeront",
+                    "colossus-damage-label": "Dégâts du colosse"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
