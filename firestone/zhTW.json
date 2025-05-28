@@ -1074,7 +1074,12 @@
                         "discovered-winrate-header": "發現—勝率",
                         "discovered-winrate-impact-header-tooltip": "顯示賽局中發現的卡牌相對於牌組勝率的平均勝率",
                         "discovered-winrate-impact-tooltip-low-data": "⚠️ - 此牌僅發現過 {{value}} 次，因此統計資料可能不準確",
-                        "discovered-winrate-impact-tooltip-data": "此牌已發現 {{value}} 次"
+                        "discovered-winrate-impact-tooltip-data": "此牌已發現 {{value}} 次",
+                        "play-coin-filter": {
+                            "all": "後手",
+                            "coin": "後手",
+                            "play": "先手"
+                        }
                     },
                     "archetype-type": "牌組型態",
                     "deck-type": "牌組列表"
@@ -1100,7 +1105,9 @@
                 "total-games": "總遊玩賽局",
                 "last-updated": "最近一次更新",
                 "discover-stats-header": "發現—統計",
-                "discover-stats-header-tooltip": "顯示賽局中發現的卡牌的統計資料。"
+                "discover-stats-header-tooltip": "顯示賽局中發現的卡牌的統計資料。",
+                "winrate-second-header": "後手",
+                "winrate-first-header": "先手"
             }
         },
         "battlegrounds": {
@@ -2190,7 +2197,7 @@
         },
         "damage-taken-on-your-turn": {
             "player": "你在自己的回合中已受到 {{times}} 次傷害，總共受到 {{damage}} 點傷害",
-            "opponent": "對手在其回合中受到了 {{times}} 次傷害，總計 {{damage}} 傷害"
+            "opponent": "對手在其回合中受到了 {{times}} 次傷害，總計 {{damage}} 點傷害"
         },
         "locations-used": {
             "player": "本賽局你已使用地點 {{value}} 次"
@@ -2270,7 +2277,8 @@
             "player": "你的下一艘星艦將降低 {{value}} 發射花費"
         },
         "protoss-minion-reduction": {
-            "player": "本賽局你的神族手下花費降低 {{game}}，而你的下一個神族手下花費額外降低 {{next}}"
+            "player": "本賽局你的神族手下花費降低 {{game}}，而你的下一個神族手下花費額外降低 {{next}}",
+            "opponent": "對手的神族手下在這場對戰中花費減少 {{game}} 點，且他下一個神族手下額外減少 {{next}} 點花費。"
         },
         "combo-cards-played": {
             "player": "你打出過 {{value}} 張連擊牌"
@@ -2309,16 +2317,20 @@
             "player": "你有 {{value}}張「{{cardName}}」卡牌在手中"
         },
         "elemental-buff": {
-            "player": "你賦予體質的元素會額外賦予 +{{atk}}/+{{health}}"
+            "player": "你賦予體質的「元素」會額外賦予 +{{atk}}/+{{health}}"
         },
         "tavern-spells-buff": {
-            "player": "你賦予體質的旅店法術會額外賦予 +{{atk}}/+{{health}}"
+            "player": "你賦予體質的「旅店法術」會額外賦予 +{{atk}}/+{{health}}"
         },
         "card-name-played": {
-            "player": "本賽局你已打出 {{times}} 張 {{cardName}} 卡牌"
+            "player": "本賽局你已打出 {{times}} 張「{{cardName}}」卡牌"
         },
         "elemental-tavern-stats": {
-            "player": "你旅店中的元素擁有額外 +{{atk}}/+{{health}}"
+            "player": "你旅店中的「元素」擁有額外 +{{atk}}/+{{health}}"
+        },
+        "colossus-damage": {
+            "opponent": "對手的「巨像」會造成 1 + {{value}} 點傷害，兩次",
+            "player": "你的「巨像」會造成 1 + {{value}} 點傷害，兩次"
         }
     },
     "loading": {
@@ -2584,14 +2596,20 @@
                 "locked-premium-info-tooltip": "成為高級會員即可查詢你牌組的詳細起始手牌資訊。你每天可以免費使用此功能 {{value}} 次。",
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對上 {{opponentClass}} | {{sampleSize}} 的賽局",
                 "deck-mulligan-filter-time-tooltip": "顯示自 {{timeFrame}} {{patchDetails}} 的所有賽局。點選進行更改。",
-                "sample-size-tooltip": "遊玩該牌組型態的賽局數（若有）；否則它會使用精確的牌組列表"
+                "sample-size-tooltip": "遊玩該牌組型態的賽局數（若有）；否則它會使用精確的牌組列表",
+                "deck-mulligan-filter-play-coin-tooltip": {
+                    "coin": "僅顯示您後手的對局。點擊此處更改。",
+                    "play": "僅顯示您先手的對局。點擊此處更改。",
+                    "all": "一起顯示先手或後手的對局。點擊此處更改。"
+                }
             },
             "lobby": {
                 "toggle-button-tooltip": "在列表視圖和詳細資料視圖之間切換",
                 "deck-stats": {
                     "title": "牌組資料",
                     "global-stats-subtitle": "全域牌組列表統計",
-                    "your-stats-subtitle": "你自己的統計"
+                    "your-stats-subtitle": "你自己的統計",
+                    "global-stats-tooltip": "這個列表的統計數據是專屬於使用此確切牌組的結果，而頁面頂部的統計數據則是針對整個原型卡組。"
                 },
                 "close-button-tooltip": "停用牌組概覽。你可以從「設定」中重新啟動它",
                 "toggle-button-locked-tooltip": "高級會員可以查看該套牌的起手換牌指南和統計資料。點選訂閱以解鎖所有高級福利！"
@@ -2885,7 +2903,19 @@
                     "cycles-header-tooltip": "通過買賣來觸發其效果，不需要留在棋盤上的迴環卡牌",
                     "cycles-header": "迴環",
                     "trinkets-header-tooltip": "與此陣容組成搭配的飾品",
-                    "trinkets-header": "飾品"
+                    "trinkets-header": "飾品",
+                    "advice": {
+                        "how-to-play": "怎麼玩",
+                        "when-to-commit": "何時成形",
+                        "author": "由 {{author}} 向你提供",
+                        "difficulty-tooltip": "玩出這個組合有多難"
+                    },
+                    "difficulty": {
+                        "easy": "簡易",
+                        "medium": "中等",
+                        "hard": "困難",
+                        "very-hard": "非常困難"
+                    }
                 }
             },
             "quests": {
@@ -3226,7 +3256,7 @@
             },
             "localization": {
                 "title": "在地化",
-                "text-1": "本應用程式的在地化翻譯由社群的大家完成，由像您一樣慷慨的人投入時間與精力，讓每個人都能以自己選擇的語言使用此應用程式。因此，請享受並尊重他們的工作。",
+                "text-1": "應用程式的翻譯是由社群成員貢獻的，他們就像您一樣，慷慨地投入時間與精力，讓每個人都能用自己選擇的語言來使用這個應用程式。因此，請您享受並尊重他們的成果。",
                 "text-11": "這也意味著並非整個程式都會被翻譯。所以缺少翻譯的部分會用英文代替。",
                 "text-2": "如果你想幫忙翻譯這個程式，請檢閱說明。 {{link}}",
                 "link": "這裡",
@@ -3697,9 +3727,11 @@
                     "aviana-elunes-chosen-tooltip": "顯示『伊露恩之選』艾維娜效果觸發的剩餘回合數",
                     "tyrande-label": "泰蘭妲",
                     "dragons-in-hand-label": "龍類（手牌中）",
-                    "dragons-in-hand-tooltip": "為 {{cardName}} 顯示手牌中龍類的數量",
+                    "dragons-in-hand-tooltip": "為「{{cardName}}」顯示手牌中龍類的數量",
                     "imbue-tooltip": "顯示本賽局你注能英雄能力的次數",
-                    "card-name-played-tooltip": "顯示你打出過 {{cardName}} 的數量"
+                    "card-name-played-tooltip": "顯示你打出過「{{cardName}}」的數量",
+                    "colossus-damage-tooltip": "顯示你的「巨像」將會造成的傷害",
+                    "colossus-damage-label": "「巨像」傷害"
                 },
                 "discovery-zone-label": "發現區",
                 "discovery-zone-tooltip": "啟動後，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並突出顯示與牌組的協同作用。"
@@ -3940,13 +3972,13 @@
                 "counter-spells-played-label": "已施放「旅店法術」",
                 "counter-spells-played-tooltip": "顯示達成「每施放4個法術」的組數，以及當前作成下一組的法術進度",
                 "counter-tavern-spells-buff-label": "旅店法術增益",
-                "counter-elemental-buff-tooltip": "顯示你元素額外賦予的攻擊力/生命值增益",
-                "counter-tavern-spells-buff-tooltip": "顯示你旅店法術額外賦予的攻擊力/生命值增益",
+                "counter-elemental-buff-tooltip": "顯示你「元素」額外賦予的攻擊力/生命值增益",
+                "counter-tavern-spells-buff-tooltip": "顯示你「旅店法術」額外賦予的攻擊力/生命值增益",
                 "counter-elemental-buff-label": "元素增益",
-                "counter-elemental-tavern-stats-tooltip": "在旅店中顯示元素的額外攻擊力/生命值增益",
+                "counter-elemental-tavern-stats-tooltip": "在旅店中顯示「元素」的額外攻擊力/生命值增益",
                 "counter-elemental-tavern-stats-label": "旅店元素統計",
                 "show-tribe-colors-label": "使用手下類別色",
-                "show-tribe-colors-tooltip": "使用手下類別色為每個小工具著色"
+                "show-tribe-colors-tooltip": "將每個小工具塗上手下類別色。"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
@@ -4024,7 +4056,7 @@
                 "action-queue": "小工具大小 - 行動佇列",
                 "turn-counter-battle-tooltip": "顯示戰鬥目前回合數，以及在地圖上花費的總回合數（包括當前戰鬥）",
                 "enabled": "啟用傭兵戰隊",
-                "enabled-tooltip": "如果你玩 「傭兵戰隊」模式，請啟用它，否則請保持停用，以改善應用程式的效能。變更此設定後，請重新啟動應用程式。"
+                "enabled-tooltip": "如果你玩 「傭兵戰隊」模式，請啟用此選項，請保持禁用以提升應用程式效能。更改此設定後請重新啟動應用程式。"
             },
             "quests": {
                 "explanation": "最多可选择 6 名雇佣兵，他们将在组建任務团队时自动加入，以填补额外的位置（从左到右依次排序）。",
