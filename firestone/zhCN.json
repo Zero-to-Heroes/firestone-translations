@@ -1089,7 +1089,12 @@
                         "discovered-winrate-header": "发现胜率",
                         "discovered-winrate-impact-tooltip-low-data": "警告 - 此卡牌只被发现过{{value}}次，因此统计数据可能不准确",
                         "discovered-winrate-impact-header-tooltip": "对局中发现该卡牌时，相对于套牌胜率的平均胜率",
-                        "discovered-winrate-impact-tooltip-data": "此卡牌已被发现过{{value}}次"
+                        "discovered-winrate-impact-tooltip-data": "此卡牌已被发现过{{value}}次",
+                        "play-coin-filter": {
+                            "all": "后手",
+                            "play": "先手",
+                            "coin": "后手"
+                        }
                     },
                     "deck-type": "套牌列表",
                     "archetype-type": "套牌类型"
@@ -1104,7 +1109,9 @@
                 "last-updated": "最近更新",
                 "total-games": "总对局数",
                 "discover-stats-header": "发现数据",
-                "discover-stats-header-tooltip": "在对局中显示已发现的卡牌数据"
+                "discover-stats-header-tooltip": "在对局中显示已发现的卡牌数据",
+                "winrate-first-header": "先手",
+                "winrate-second-header": "后手"
             }
         },
         "battlegrounds": {
@@ -2294,7 +2301,8 @@
             "player": "你的下一艘星舰发射法力消耗减少{{value}}点"
         },
         "protoss-minion-reduction": {
-            "player": "本局对战中你的星灵随从法力消耗减少{{game}}点，且你的下一个星灵随从法力消耗额外减少{{next}}点"
+            "player": "本局对战中你的星灵随从法力消耗减少{{game}}点，且你的下一个星灵随从法力消耗额外减少{{next}}点",
+            "opponent": "对手的星灵随从在本局对战中的法力值消耗会减少{{game}}点，且他的下一个星灵随从的法力值消耗会额外减少{{next}}点。"
         },
         "combo-cards-played": {
             "player": "你已使用{{value}}张连击牌"
@@ -2343,6 +2351,10 @@
         },
         "card-name-played": {
             "player": "本局对战中你已经使用了{{times}}张{{cardName}}"
+        },
+        "colossus-damage": {
+            "player": "你的巨像会造成 1 + {{value}} 点伤害两次",
+            "opponent": "对手的巨像会造成 1 + {{value}} 点伤害两次"
         }
     },
     "loading": {
@@ -2609,7 +2621,12 @@
                 "deck-mulligan-filter-opponent-tooltip": "显示对战{{opponent}}的对局。点击更改。",
                 "deck-mulligan-filter-rank-bracket-tooltip": "显示自{{rankBracket}}分段以来的对局。点击更改。",
                 "deck-mulligan-filter-time-tooltip": "显示{{timeFrame}} （{{patchDetails}}）以来的游戏。点击更改。",
-                "sample-size-tooltip": "使用该套牌类型进行过的对局场数（如果有的话）；否则会使用精确的套牌列表"
+                "sample-size-tooltip": "使用该套牌类型进行过的对局场数（如果有的话）；否则会使用精确的套牌列表",
+                "deck-mulligan-filter-play-coin-tooltip": {
+                    "play": "仅在您先手的对局中显示。点击更改。",
+                    "all": "先手和后手的对局中都显示。点击更改。",
+                    "coin": "仅在您后手的对局中显示。点击更改。"
+                }
             },
             "lobby": {
                 "close-button-tooltip": "禁用套牌概览。您可以在设置中重新激活它",
@@ -2618,7 +2635,8 @@
                 "deck-stats": {
                     "your-stats-subtitle": "你的统计数据",
                     "global-stats-subtitle": "全球套牌列表统计",
-                    "title": "套牌数据"
+                    "title": "套牌数据",
+                    "global-stats-tooltip": "此数据是针对套牌中的卡完全相同的套牌的统计数据，而顶部的统计数据是对整个套牌类型的。"
                 }
             }
         },
@@ -2909,7 +2927,19 @@
                     "cycles-header-tooltip": "适合循环使用的卡牌。即通过购买和出售来触发其效果，但不需要把它留在你的棋盘上",
                     "cycles-header": "循环",
                     "trinkets-header": "饰品",
-                    "trinkets-header-tooltip": "与此流派完美搭配的饰品"
+                    "trinkets-header-tooltip": "与此流派完美搭配的饰品",
+                    "advice": {
+                        "author": "由 {{author}} 向你提供",
+                        "difficulty-tooltip": "玩这个流派有多难",
+                        "how-to-play": "怎么玩",
+                        "when-to-commit": "何时成型"
+                    },
+                    "difficulty": {
+                        "easy": "简单",
+                        "hard": "困难",
+                        "medium": "中等",
+                        "very-hard": "非常困难"
+                    }
                 }
             },
             "quests": {
@@ -3726,7 +3756,9 @@
                     "dragons-in-hand-tooltip": "为{{cardName}}显示手牌中的龙卡牌数量",
                     "dragons-in-hand-label": "手牌中的龙",
                     "imbue-tooltip": "显示你在本局对战中灌注英雄技能的次数",
-                    "card-name-played-tooltip": "显示你使用{{cardName}}的次数"
+                    "card-name-played-tooltip": "显示你使用{{cardName}}的次数",
+                    "colossus-damage-label": "巨像伤害",
+                    "colossus-damage-tooltip": "显示你的巨像将会造成的伤害"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
