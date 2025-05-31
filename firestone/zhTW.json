@@ -514,7 +514,7 @@
                 "header-play-on-curve-total": "按費出怪玩法的總次數",
                 "header-play-on-curve-winrate-tooltip": "當你打出這張卡牌時的平均勝率，即當你的法力水晶與卡牌花費的一樣多時",
                 "header-deck-winrate-tooltip": "包括這張卡牌的牌組勝率",
-                "header-mulligan-winrate": "起始手牌世界記錄",
+                "header-mulligan-winrate": "起手勝率",
                 "header-mulligan-winrate-tooltip": "當你的起始手牌中有這張卡牌時的平均勝率",
                 "header-pickrate-tooltip": "這張卡牌出現在構築期間時被選中的次數是多少",
                 "header-offered-total": "提供的總數",
@@ -1050,24 +1050,24 @@
                     "cards": {
                         "card-header": "卡牌",
                         "mulligan-kept-header": "保持",
-                        "mulligan-kept-header-tooltip": "該卡牌在起手換牌中的平均留牌率",
-                        "mulligan-winrate-header-tooltip": "當牌結束你的起始手牌的調整時的平均勝率",
+                        "mulligan-kept-header-tooltip": "卡牌在起手換牌階段的平均留牌率",
+                        "mulligan-winrate-header-tooltip": "當卡牌在你的起手換牌結束後的平均勝率",
                         "mulligan-drawn-winrate-header": "抽取勝率",
                         "copy-2-header": "第二張複製",
                         "mulligan-drawn-winrate-header-tooltip": "當牌在遊戲中被抽出或在調度結束時出現在你的起始手牌中時的平均勝率",
-                        "mulligan-winrate-header": "穆里根 WR",
+                        "mulligan-winrate-header": "起手勝率",
                         "copy-1-header-tooltip": "該型態的牌組中至少包括一張該牌的百分比",
                         "copy-2-header-tooltip": "包括這張兩張卡的該牌組型態的百分比",
                         "copy-1-header": "熱門度",
                         "show-relative-info-button": "顯示影響",
                         "show-relative-info-button-tooltip": "顯示每張卡牌相對於牌組型態勝率的勝率",
-                        "mulligan-winrate-impact-header-tooltip": "這是該牌在你的起手牌中結束更換後相對於牌組勝率的平均勝率，越高越好。",
+                        "mulligan-winrate-impact-header-tooltip": "這是卡牌在你的起手換牌後相對於牌組勝率的平均勝率，越高越好。",
                         "drawn-winrate-impact-header": "抽取影響（越大越好）",
                         "drawn-winrate-header": "抽取勝率",
-                        "drawn-winrate-header-tooltip": "當卡牌在賽局中被抽出或在更換結束後出現在你的起始手牌中時的平均勝率",
+                        "drawn-winrate-header-tooltip": "卡牌在賽局中被抽出或換牌結束後出現在你的起始手牌中時的平均勝率",
                         "copy-per-deck-header-tooltip": "此卡牌在該型態牌組中的平均張數",
-                        "mulligan-winrate-impact-header": "起始手牌影響",
-                        "drawn-winrate-impact-header-tooltip": "平均勝率相對於賽局中抽出的牌或更換結束後出現在你的起始手牌中時的牌組勝率",
+                        "mulligan-winrate-impact-header": "起手影響",
+                        "drawn-winrate-impact-header-tooltip": "卡牌在賽局中被抽出或換牌結束後出現在你的起始手牌中時的牌組平均勝率",
                         "copy-per-deck-header": "每副牌組的平均複製份數",
                         "discovered-winrate-header-tooltip": "顯示賽局中發現的卡牌的平均勝率",
                         "discovered-winrate-impact-header": "發現—影響",
@@ -2278,7 +2278,7 @@
         },
         "protoss-minion-reduction": {
             "player": "本賽局你的神族手下花費降低 {{game}}，而你的下一個神族手下花費額外降低 {{next}}",
-            "opponent": "對手的神族手下在這場對戰中花費減少 {{game}} 點，且他下一個神族手下額外減少 {{next}} 點花費。"
+            "opponent": "對手的神族手下在本賽局中花費減少 {{game}} 點，且他下一個神族手下額外減少 {{next}} 點花費。"
         },
         "combo-cards-played": {
             "player": "你打出過 {{value}} 張連擊牌"
@@ -2536,7 +2536,7 @@
         "deck-name": {
             "unnamed-deck": "未命名牌組",
             "unknown-deck": "未知牌組",
-            "player-name": "{{playerName}} 是 {{playerClass}}",
+            "player-name": "{{playerName}}: {{playerClass}}",
             "copy-deckstring-label": "複製牌組",
             "copy-deckstring-confirmation": "成功複製!"
         },
@@ -2590,12 +2590,12 @@
                 "mulligan-impact-tooltip-premium": "這張卡牌留在起始手牌中對你的勝率有多大影響。",
                 "no-mulligan-data-tooltip": "我們找不到此型態牌組的任何起始手牌資料",
                 "mulligan-keep-rate-tooltip": "這張卡牌在起始手牌中的保留率。",
-                "mulligan-keep-rate": "留牌率%",
+                "mulligan-keep-rate": "(留牌率)%",
                 "mulligan-impact-tooltip-free": "這張卡牌留在起始手牌中對你的勝率有多大影響。今天你還有 {{value}} 次免費使用機會。",
                 "deck-mulligan-overview-title": "牌組起手概觀",
                 "locked-premium-info-tooltip": "成為高級會員即可查詢你牌組的詳細起始手牌資訊。你每天可以免費使用此功能 {{value}} 次。",
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對上 {{opponentClass}} | {{sampleSize}} 的賽局",
-                "deck-mulligan-filter-time-tooltip": "顯示自 {{timeFrame}} {{patchDetails}} 的所有賽局。點選進行更改。",
+                "deck-mulligan-filter-time-tooltip": "顯示自 {{timeFrame}} -（{{patchDetails}}）以來的所有賽局。點選進行更改。",
                 "sample-size-tooltip": "遊玩該牌組型態的賽局數（若有）；否則它會使用精確的牌組列表",
                 "deck-mulligan-filter-play-coin-tooltip": {
                     "coin": "僅顯示您後手的對局。點擊此處更改。",
@@ -2609,7 +2609,7 @@
                     "title": "牌組資料",
                     "global-stats-subtitle": "全域牌組列表統計",
                     "your-stats-subtitle": "你自己的統計",
-                    "global-stats-tooltip": "這個列表的統計數據是專屬於使用此確切牌組的結果，而頁面頂部的統計數據則是針對整個原型卡組。"
+                    "global-stats-tooltip": "這個列表的統計數據是專屬於使用此確切牌組的結果，而頁面頂部的統計數據則是針對整個牌組型態。"
                 },
                 "close-button-tooltip": "停用牌組概覽。你可以從「設定」中重新啟動它",
                 "toggle-button-locked-tooltip": "高級會員可以查看該套牌的起手換牌指南和統計資料。點選訂閱以解鎖所有高級福利！"
