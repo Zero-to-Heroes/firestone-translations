@@ -1367,7 +1367,8 @@
                 "tooltip": "Umschalten zwischen Klassensymbole und Helden-Symbolen"
             },
             "merc-details-toggle": {
-                "label": "Zeige Details"
+                "label": "Zeige Details",
+                "tooltip": "Weitere Infos zu den Söldner-Aufzeichnungen"
             },
             "list": {
                 "load-more-button": "Kilcke um mehr Aufzeichnungen zu laden...",
@@ -1390,7 +1391,11 @@
             "tip-10": "[Duels] Ziehe deine Maus über die Leben deines Gegners um sein maximales Leben zu sehen",
             "tip-9": "[Schlachtfeld] Mache das Schlachtfeld Fenster breiter um den durchschnittlichen Schaden und die Tötungschancen im Simulator zu sehen",
             "tip-11": "[Duels] bewege deine Maus über den Namen von deinem Gegner um seine Klasse zu sehen",
-            "tip-8": "[Schlachtfeld] Siehe dir detaillierte Livestatistiken an indem du das Schlachtfeld Fenster mit Alt + B öffnest"
+            "tip-8": "[Schlachtfeld] Siehe dir detaillierte Livestatistiken an indem du das Schlachtfeld Fenster mit Alt + B öffnest",
+            "ad-tip-premium": "Premium",
+            "tip-0": "Für Feedback oder Bugs, oder um einfach etwas zu reden, besuche uns gerne auf Discord (Link oben rechts)!",
+            "contextual_related_cards": "Bewege die Maus über bestimmte Karten im Tracker, um Details über ihre Effekte zu sehen",
+            "deck_merge": "Mache ein Deck zu einer neuen Version eines anderen Decks, indem du es mit der Maus über das alte ziehst"
         },
         "streams": {
             "category": {
@@ -1399,7 +1404,9 @@
             "language-tooltip": "Die Sprache des Streams",
             "current-viewers": "Zuschauer",
             "empty-state-title": "Keine Streams live",
-            "empty-state-tooltip": "Es sind momentan keine Streams live. Schau später noch mal"
+            "empty-state-tooltip": "Es sind momentan keine Streams live. Schau später noch mal",
+            "watch-on-twitch-button": "Auf Twitch ansehen",
+            "info-tooltip": "Um deinen Stream auf diese Liste zu bringen, verbinde Twitch in den Einstellungen. Wenn es früher einmal funktioniert hat, aber das jetzt nicht mehr tut, trenne die Verbindung und stelle sie danach wieder her."
         },
         "mailbox": {
             "category": {
@@ -1409,7 +1416,9 @@
         "tavern-brawl": {
             "category": {
                 "meta": "Meta"
-            }
+            },
+            "copy-deck-tooltip": "Klicken, um ein Deck mit hoher Gewinnrate in die Zwischenablage zu kopieren",
+            "with-name": "Das Kartenchaos diese Woche ist: {{name}} (begann am {{date}})"
         },
         "profile": {
             "match-stats": {
@@ -1469,7 +1478,20 @@
         "lottery": {
             "achievements-progress": "{{current}} / {{max}}, {{thisGame}} dieses Spiel",
             "achievements-title": "Errungenschaften",
-            "achievements-reset-button-tooltip": "Erfolge nicht mehr anzeigen und vom Bildschirm entfernen"
+            "achievements-reset-button-tooltip": "Erfolge nicht mehr anzeigen und vom Bildschirm entfernen",
+            "navigation": {
+                "lottery": "Lotterie",
+                "achievements": "Errungenschaften"
+            },
+            "lottery": {
+                "stats": {
+                    "mechsPlayed-tooltip": "Spiele Mechs um pro gespieltem Mech {{pointsGained}} Punkte zu erhalten"
+                },
+                "season-duration-end": "Season endet in {{ days }}d {{ hours }}h {{ minutes }}m"
+            },
+            "tracking-ongoing-tooltip": "Tracking für die Lotterie läuft, du wirst beim Spielen Punkte erhalten",
+            "overlay-toggle-tooltip": "Binde das Lotteriefenster an das Spielfenster, damit es immer sichtbar ist. Empfohlen, wenn die Lotterie auf demselben Bildschirm wie das Spiel ist",
+            "tracking-not-ongoing-tooltip": "Tracking für die Lotterie ist pausiert, du erhältst keine Punkte solange das Widget nicht sichtbar ist"
         },
         "premium": {
             "check-status-online": "Aktiv und automatische Erneuerung. Details prüfen {{link}}",
@@ -1485,7 +1507,10 @@
                 "text-legacy": "Abbestellen wird automatisch die Erneuerung des Abonnements stoppen. Du wirst die Premium Funktionen noch bis zum Ende der laufenden Periode nützen können. Bitte beachte, dass das Legacy-Abo veraltet ist. Du kannst Dich also nicht mehr für dieses Angebot anmelden"
             },
             "subscribe-button-upgrade": "Upgrade",
-            "unsubscribe-button": "abbestellen"
+            "unsubscribe-button": "abbestellen",
+            "billing": {
+                "click-to-copy-code": "Klicken, um den Code in die Zwischenablage zu kopieren"
+            }
         }
     },
     "turn-timer": {
@@ -1860,7 +1885,8 @@
             "composition-not-supported": {
                 "reason-secret": "Geheimnisse",
                 "bug": "Ein unbekannter Fehler ist aufgetreten. Ein Fehlerbericht wurde automatisiert an die Entwickler gesendet",
-                "reason-enchantment": "{{cardName}} Verzauberung"
+                "reason-enchantment": "{{cardName}} Verzauberung",
+                "general": "Diese Komposition ist nicht gut unterstützt, Ergebnisse können falsch sein (Grund: {{value}})"
             },
             "result": {
                 "won": "Gewonnen",
@@ -1871,7 +1897,9 @@
             "sim-sample-link-tooltip": "Öffnet eine Beispielsimulation mit diesem Ergebnis in deinem Browser",
             "temp-result-text": "Simulation läuft",
             "damage-received-tooltip": "Ø Schaden bei Verlust",
-            "damage-dealt-tooltip": "Ø Schaden bei Gewinn"
+            "damage-dealt-tooltip": "In mindestens {{value}}% der Fälle wird der Schaden in diesem Bereich liegen",
+            "locked-premium-info-tooltip": "Werde Premium, um Zwischenergebnisse im Simulator zu sehen und Ergebnisse früher zu erhalten",
+            "temp-result-tooltip": "Nur Zwischenergebnisse; die Simulation läuft noch und Endergebnisse können anders ausfallen"
         },
         "sim": {
             "update-minion-button-tooltip": "Diener aktualisieren",
@@ -1931,7 +1959,23 @@
             "summon-plants-tooltip": "Verleiht dem Diener \"Todesröcheln: ruft zwei 1/1 Pflanzen herbei\"",
             "bloodgem-attack": "Blutedelsteine - Angriff",
             "ancestral-automaton-tooltip": "Die Anzahl an Mechanoiden der Ahnen, die du dieses Spiel herbeigerufen hast",
-            "teammate-board-tooltip": "Feld deines Partners. Klicken, um den Partner in die aktive Zone zu bewegen und sein Feld zu bearbeiten."
+            "teammate-board-tooltip": "Feld deines Partners. Klicken, um den Partner in die aktive Zone zu bewegen und sein Feld zu bearbeiten.",
+            "reposition-button-tooltip-firstpass": "Berechne einige (~50) Simulationen für jede mögliche Permutation, um die schlechten schnell zu eliminieren",
+            "reposition-button-tooltip-secondpass": "Berechne einige Hundert (~250) Simulationen, um die vielversprechendsten Permutationen zu finden",
+            "empty-state-subtitle": "Dein erster Kampf wird hier angezeigt, nachdem er stattgefunden hat",
+            "reposition-button-tooltip-cancel": "Klicken, um die Neupositionierung abzubrechen",
+            "simulate-button-tooltip": "Den Kampf in der aktuellen Situation simulieren",
+            "empty-teammate-board": "Noch kein Feld. Klicken, um den Teampartner in den Arbeitsbereich zu bewegen.",
+            "importing": "Wird importiert, bitte warten",
+            "reposition-button-tooltip-finalresult": "Berechne eine vollständige Simulation für die vielversprechendsten Kandidaten. Dies ist der längste Schritt und kann mehrere Minuten dauern",
+            "reposition-button-finalresult": "Letzte Berechnungen...",
+            "reposition-button-tooltip-done": "Bester Kandidat gefunden, Berechnung wird abgeschlossen",
+            "remove-teammate-button": "Teampartner entfernen",
+            "export-confirmation": "Simulationscode wurde in Zwischenablage kopiert",
+            "import-button-tooltip": "Simulationscode importieren, um den Simulator mit Leben zu füllen",
+            "reposition-button": "Neu positionieren",
+            "reposition-button-firstpass": "Erster Durchlauf...",
+            "clear-button": "Leeren"
         },
         "hero-stats": {
             "matches-played-label": "Gespielte Spiele",
@@ -2176,7 +2220,8 @@
             "counter-dropdown": {
                 "on": "An"
             },
-            "widget-size-label": "Widgetgröße"
+            "widget-size-label": "Widgetgröße",
+            "locked-tooltip": "Werde Premium, um das zu benutzen! (Du kannst Premium werden und uns unterstützen, indem du auf den Text über der Werbung im Hauptfenster klickst)"
         },
         "menu": {
             "general": "Allgemein",
@@ -2203,7 +2248,9 @@
                 "mods": "Mods",
                 "appearance": "Aussehen",
                 "quests": "Quests",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "premium": "Premium",
+                "lottery": "Lotterie"
             },
             "mods": {
                 "check-for-updates": "Nach Updates suchen",
@@ -2401,7 +2448,8 @@
                 "battlegrounds-label": "Schlachtfeld"
             },
             "premium": {
-                "link": "auf dem Wiki"
+                "link": "auf dem Wiki",
+                "lottery-block-title": "Lotterie"
             }
         },
         "decktracker": {
@@ -2412,7 +2460,8 @@
                 "turn-timer": "Zug Timer",
                 "duels": "Duelle",
                 "launch": "Startoptionen",
-                "mulligan": "Mulligan"
+                "mulligan": "Mulligan",
+                "overlay": "Overlay"
             },
             "global": {
                 "title": "Features aktivieren / deaktivieren",
@@ -2425,7 +2474,10 @@
                 "discover-help": "Kontexthilfe beim Entdecken",
                 "streamer-mode-tooltip": "Ersetze deinen Namen und den deines Gegners durch \"Du\" und \"Gegner\". Dies spiegelt den Streamermodus im Spiel wider, der durch Drücken von Strg + Shift + S aktiviert werden kann.",
                 "show-unknown-cards-tooltip": "Zeige \"Unbekannte Karte\" im Tracker für Karten, über die wir keine Informationen haben.",
-                "show-cost-reduction-tooltip": "Aktualisieren der Mana-Kosten im Deck,wenn diese durch einen Effekt geändert wurden (z.B. Incanter's Flow)"
+                "show-cost-reduction-tooltip": "Aktualisieren der Mana-Kosten im Deck,wenn diese durch einen Effekt geändert wurden (z.B. Incanter's Flow)",
+                "show-deck-winrate-tooltip": "Zeige die Gewinnrate des Decks im gewerteten Format über dem Tracker, wenn genügend Daten vorhanden sind (aus Standard oder Wild, abhängig vom aktuellen Spielmodus)",
+                "show-title-bar": "Titelleiste anzeigen",
+                "reset-deck-position-after-trade-tooltip": "Nachdem eine handelbare Karte gehandelt wurde, könnte sie auch unten im Deck sein. Deswegen werden beim Handeln üblicherweise die Bereiche \"Oben im Deck\" und \"Unten im Deck\" gelöscht. Schalte diese Option aus, damit die Bereiche stattdessen nach dem Handeln ihre Inhalte beibehalten."
             },
             "modes": {
                 "ranked": "Gewertet",
@@ -2550,7 +2602,9 @@
                 "integrated-mode-tooltip": "Wenn aktiviert, wird das Schlachtfeld-Fenster zu einem Overlay, das an das Spielfenster gebunden ist. Dies ist für Einzelmonitor-Setups und für das Streamen der App empfohlen",
                 "use-tribe-filter-for-live-stats-label-short": "Dienertypen Filter",
                 "show-achievements-label": "Zeige 'Errungenschaften'",
-                "use-remote-simulator-label": "Fernkampfsimulator verwenden"
+                "use-remote-simulator-label": "Fernkampfsimulator verwenden",
+                "show-minions-auto-highlight-label": "Diener automatisch hervorheben",
+                "show-achievements-tooltip": "Zeigt die noch fehlenden Errungenschaften für die angebotenen Helden bei der Heldenauswahl"
             },
             "overlay": {
                 "show-banned-tribes-label": "Zeige gebannte Dienertypen",
@@ -2626,6 +2680,9 @@
             "general": {
                 "show-hero-selection-overlay-tooltip": "(Nur Premium) Während der Heldenauswahl Statistiken anzeigen",
                 "show-card-selection-overlay-tooltip": "(Nur Premium) Während der Kartenauswahl Statistiken anzeigen"
+            },
+            "session-widget": {
+                "number-of-runs-tooltip": "Maximale Anzahl an Durchläufen, die in den Details angezeigt werden sollen (neuster Durchlauf oben)"
             }
         }
     },
