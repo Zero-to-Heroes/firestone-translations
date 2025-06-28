@@ -44,7 +44,9 @@
             "constructed": "Partie classée",
             "duels": "Duels",
             "ranked": "Partie classée",
-            "battlegrounds-duo": "Duos de champs de bataille"
+            "battlegrounds-duo": "Duos de champs de bataille",
+            "arena-all": "Arène (tout)",
+            "arena-underground": "Arène souterraine"
         },
         "region": {
             "all": "Toutes les régions",
@@ -479,6 +481,16 @@
                 },
                 "high-win-runs": {
                     "wins": "{{value}}+ victoires"
+                },
+                "mode": {
+                    "arena": "Arène",
+                    "arena-legacy": "Arène d’antan",
+                    "arena-tooltip": "Virées d’Arène",
+                    "all": "Toutes Arènes",
+                    "all-tooltip": "Toutes les parties d’Arène (comprenant l’ancien et le nouveau format)",
+                    "arena-legacy-tooltip": "Virées d’Arène de l’ancien format, avant la scission avec le souterrain",
+                    "arena-underground-tooltip": "Virées d’Arène souterraine, après la scission",
+                    "arena-underground": "Arène souterraine"
                 }
             },
             "stats": {
@@ -499,7 +511,8 @@
                 "run-name": "{{value}} victoires en Arène",
                 "load-runs-button": "Cliquez pour charger plus de virées",
                 "deck-score-tooltip": "Ceci est le score de votre deck, calculé en utilisant le taux de victoires de chaque carte du deck.",
-                "average-match-time": "Une partie dure en moyenne {{value}}"
+                "average-match-time": "Une partie dure en moyenne {{value}}",
+                "underground-run-name": "{{value}} victoires en Arène souterraine"
             },
             "empty-state": {
                 "title": "Rien ici pour le moment",
@@ -528,7 +541,10 @@
                 "header-play-on-curve-winrate-tooltip": "Le taux de victoires quand vous jouez cette carte on curve, c'est-à-dire au tour où vous avez autant de mana que le coût de cette carte",
                 "header-play-on-curve-total": "Nb jouées on curve",
                 "header-deck-total-tooltip": "Le nombre de parties avec cette carte dans le deck",
-                "header-discovered": "Points de données"
+                "header-discovered": "Points de données",
+                "header-deck-winrate-impact": "Impact",
+                "header-pickrate-high-wins-variable-tooltip": "Taux de tirage pour les virées d’au moins {{value}} victoires en Arène souterraine, ou {{value2}} victoires en Arène",
+                "header-deck-winrate-impact-tooltip": "L’impact de la présence de cette carte dans un deck par rapport au taux de victoires moyen de la classe"
             },
             "class-tier-list": {
                 "header-placement-distribution-tooltip": "Indique à quel point une classe se détache des autres pour un nombre donné de victoires. ",
@@ -1035,7 +1051,7 @@
                     "deviation-tooltip": "La taille de l’échantillon rend incertain le taux de victoires de chaque deck. Le taux de victoires réel se situe entre le taux de victoires de base, plus ou moins l’incertitude affichée ici, avec un intervalle de confiance de 95 %. Vous pouvez activer l’option « Taux de victoires conservateur » dans les filtres pour afficher un nouveau taux de victoires qui prend en compte cette incertitude.",
                     "added-cards-header": "Cartes ajoutées",
                     "removed-cards-header": "Cartes retirées",
-                    "view-online-button-tooltip": "Voir + de stats en ligne sur https://www.d0nkey.top",
+                    "view-online-button-tooltip": "Voir + de stats en ligne sur https://www.hsguru.com",
                     "view-online-button": "Voir en ligne",
                     "archetype-core-cards-header": "Cartes de base",
                     "view-details-button": "Afficher les détails",
@@ -1085,8 +1101,8 @@
                         "discovered-winrate-impact-header": "Impact de découverte",
                         "discovered-winrate-header": "% victoires (découverte)",
                         "discovered-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du deck lorsque la carte est découverte pendant la partie",
-                        "discovered-winrate-impact-tooltip-low-data": "Attention : cette carte n’a été découverte que {{value}} fois. Les stats peuvent être imprécises.",
-                        "discovered-winrate-impact-tooltip-data": "Cette carte a été découverte {{value}} fois",
+                        "discovered-winrate-impact-tooltip-low-data": "Attention : cette carte n’a été découverte ou piochée que {{value}} fois. Les stats peuvent être imprécises.",
+                        "discovered-winrate-impact-tooltip-data": "Cette carte a été découverte ou piochée {{value}} fois",
                         "play-coin-filter": {
                             "play": "En premier",
                             "coin": "Avec La pièce",
@@ -1112,6 +1128,10 @@
                 "discover-stats-header-tooltip": "Affiche les stats des cartes découvertes pendant la partie.",
                 "winrate-first-header": "En premier",
                 "winrate-second-header": "Avec La pièce"
+            },
+            "notifications": {
+                "turn-start-title": "À vous de jouer !",
+                "turn-start-message": "À votre tour de jouer ! (Tour {{value}})"
             }
         },
         "battlegrounds": {
@@ -1143,7 +1163,8 @@
                 "all": "Tout",
                 "protoss": "Protoss",
                 "terran": "Terrans",
-                "zerg": "Zergs"
+                "zerg": "Zergs",
+                "battlecruiser": "Cuirassé"
             },
             "filters": {
                 "hero": {
@@ -1685,7 +1706,9 @@
                     "tavern-brawl": "Bras de fer",
                     "practice": "Contre l’IA",
                     "ranked-twist": "Partie classée imprévue",
-                    "battlegrounds-duo": "Duos de champs de bataille"
+                    "battlegrounds-duo": "Duos de champs de bataille",
+                    "arena-all": "Arène (tout)",
+                    "arena-underground": "Arène souterraine"
                 },
                 "player": {
                     "all": "Toutes les classes (vous)"
@@ -1740,7 +1763,9 @@
                 "went-first-tooltip": "1er à jouer",
                 "went-second-tooltip": "A eu La pièce",
                 "bgs-prizes-tooltip": "Les Prix de Sombrelune étaient disponibles",
-                "bgs-anomalies-tooltip": "Anomalie dans cette partie : {{value}}"
+                "bgs-anomalies-tooltip": "Anomalie dans cette partie : {{value}}",
+                "watch-replay-online-button-tooltip": "Voir le replay en ligne (ouvre une fenêtre de votre navigateur)",
+                "watch-replay-online-button": "Navigateur"
             },
             "class-icon-toggle": {
                 "label": "Icônes de classes",
@@ -2355,6 +2380,18 @@
         "colossus-damage": {
             "opponent": "Les colosses de votre adversaire infligeront 1 + {{value}} points de dégâts, deux fois",
             "player": "Vos colosses infligeront 1 + {{value}} points de dégâts, deux fois"
+        },
+        "specific-cost": {
+            "player": "Vos cartes {{cardName}} coûtent désormais ({{value}}) cristaux",
+            "opponent": "Les cartes {{cardName}} de votre adversaire coûtent désormais ({{value}}) cristaux"
+        },
+        "cards-shuffled-into-your-deck": {
+            "player": "Vous avez placé des cartes dans votre deck {{value}} fois",
+            "opponent": "Votre adversaire a placé des cartes dans son deck {{value}} fois"
+        },
+        "hero-attacks": {
+            "player": "Vous avez attaqué {{times}} fois avec votre héros ou héroïne pendant cette partie",
+            "opponent": "Votre adversaire a attaqué {{times}} fois avec son héros ou héroïne dans cette partie"
         }
     },
     "loading": {
@@ -3228,11 +3265,12 @@
                     "collection-synchronized": "Collection synchronisée"
                 },
                 "d0nkey": {
-                    "pitch": "d0nkey.top est un site web de fans qui rassemble tous les decks des compétitions officielles de Hearthstone, ainsi que les decks des streamers pour permettre à tout le monde de trouver facilement des decks intéressants à jouer. La synchronisation vers d0nkey.top vous permettra de partager vos decks avec votre public (si vous êtes streamer) ou les aidera à construire une meilleure base de données pour fournir plus de services gratuits à la communauté. Vous pouvez leur rendre visite {{websiteLink}}",
+                    "pitch": "hsguru.com est un site web de fans qui rassemble tous les decks des compétitions officielles de Hearthstone, ainsi que les decks des streamers pour permettre à tout le monde de trouver facilement des decks intéressants à jouer. La synchronisation vers hsguru.com vous permettra de partager vos decks avec votre public (si vous êtes streamer) ou les aidera à construire une meilleure base de données pour fournir plus de services gratuits à la communauté. Vous pouvez leur rendre visite {{websiteLink}}",
                     "website-link": "ici",
-                    "next": "Si vous décidez d’activer la synchronisation avec d0nkey.top, Firestone leur enverra chaque partie que vous jouerez, qui apparaîtra dans une section spécifique sur le site (qui est toujours en construction). Les replays seront privés par défaut, sauf si vous diffusez en même temps. Voir la {{link}} pour savoir comment tout configurer.",
+                    "next": "Si vous décidez d’activer la synchronisation avec hsguru.com, Firestone leur enverra chaque partie que vous jouerez, qui apparaîtra dans une section spécifique sur le site (qui est toujours en construction). Les replays seront privés par défaut, sauf si vous diffusez en même temps. Voir la {{link}} pour savoir comment tout configurer.",
                     "instructions-page-link": "page d’instructions",
-                    "toggle-label": "Synchroniser vos replays avec d0nkey.top"
+                    "toggle-label": "Synchroniser vos replays avec hsguru.com",
+                    "toggle-collection-label": "Synchroniser votre collection avec hsguru.com"
                 },
                 "hsdecks": {
                     "pitch": "Hearthstone-decks.net partage des decks joués dans les meilleurs rangs de Légende pour tous les formats construits, dans la section « News & Articles ». Vous pouvez leur rendre visite {{websiteLink}}",
@@ -3310,7 +3348,9 @@
                     "top-right": "En haut à droite",
                     "bottom-right": "En bas à droite",
                     "bottom-left": "En bas à gauche"
-                }
+                },
+                "show-notification": "Afficher les notifications Windows",
+                "show-notification-tooltip": "Afficher une notification Windows lorsque c’est votre tour, ou lorsque la phase de recrutement commence dans Champs de bataille"
             },
             "localization": {
                 "title": "Localisation",
@@ -3424,7 +3464,12 @@
                     "widget-background-color": "Widget de couleur d’arrière-plan",
                     "global": "Global"
                 },
-                "reset-button": "Tout réinitialiser"
+                "reset-button": "Tout réinitialiser",
+                "decktracker": {
+                    "title": "Decktracker",
+                    "use-new-card-tile-style": "Nouvelles tuiles",
+                    "use-new-card-tile-style-tooltip": "Utiliser le nouveau style de tuiles de cartes dans le decktracker et les decklists"
+                }
             },
             "notifications": {
                 "title": "Notifications"
@@ -3758,7 +3803,13 @@
                     "imbue-tooltip": "Affiche le nombre de fois que vous avez empreint votre pouvoir héroïque pendant cette partie",
                     "card-name-played-tooltip": "Affiche le nombre de fois que vous avez joué la carte {{cardName}}",
                     "colossus-damage-tooltip": "Affiche les dégâts que vos colosses infligeront",
-                    "colossus-damage-label": "Dégâts du colosse"
+                    "colossus-damage-label": "Dégâts du colosse",
+                    "table-flip-label": "{{cardName}}",
+                    "table-flip-tooltip": "Afficher le coût de {{cardName}}. Même si c’est un simple calcul, cela peut être utile d’avoir son coût sous les yeux à tout moment",
+                    "cards-shuffled-into-your-deck-label": "Cartes placées dans le deck",
+                    "cards-shuffled-into-your-deck-tooltip": "Compte le nombre de fois que vous avez placé des cartes dans votre deck",
+                    "hero-attacks-label": "Attaques de héros ou d’héroïne",
+                    "hero-attacks-tooltip": "Affiche le nombre de fois que votre héros ou héroïne a attaqué pendant cette partie, si vous avez des cartes en main dans votre deck qui bénéficient de cette information"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -3804,7 +3855,9 @@
                 "always-on-tooltip": "Affiche le widget même quand vos PV max ou mana max n’ont pas changé",
                 "title": "Widget de ressources max",
                 "toggle": "Afficher le widget",
-                "toggle-tooltip": "Lorsque vos PV max ou votre mana max change, affiche un widget qui indique les ressources max que vous avez dans cette partie"
+                "toggle-tooltip": "Lorsque vos PV max ou votre mana max change, affiche un widget qui indique les ressources max que vous avez dans cette partie",
+                "show-horizontally": "Afficher horizontalement",
+                "show-horizontally-tooltip": "Afficher les ressources max sur une seule ligne, au lieu d’une seule colonne"
             }
         },
         "collection": {
@@ -4007,7 +4060,9 @@
                 "counter-elemental-tavern-stats-label": "Stats des Élémentaires dans la taverne",
                 "counter-elemental-tavern-stats-tooltip": "Affiche les caractéristiques supplémentaires des Élémentaires dans la taverne",
                 "show-tribe-colors-tooltip": "Colorer les widgets de type",
-                "show-tribe-colors-label": "Utiliser les couleurs de type"
+                "show-tribe-colors-label": "Utiliser les couleurs de type",
+                "minions-list-keep-in-bounds-tooltip": "Faire en sorte que la decklist ne sorte jamais trop de ses limites. Désactivez cette option si vous ne pouvez pas positionner la decklist comme vous le souhaitez",
+                "minions-list-keep-in-bounds-label": "Maintenir dans les limites"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -4111,10 +4166,17 @@
                 "show-draft-tracker": "Decktracker pendant le tirage",
                 "draft-overlay-size": "Taille de l’overlay de tirage",
                 "show-card-stats-discover-tooltip": "Afficher les stats des cartes en découverte. Sans le Premium, vous pouvez l’utiliser pendant {{freeUses}} parties par jour ; le Premium offre un accès illimité",
-                "show-card-stats-discover": "Stats des cartes en découverte"
+                "show-card-stats-discover": "Stats des cartes en découverte",
+                "show-draft-tracker-impact": "Afficher l’impact",
+                "show-draft-tracker-pick-rate": "Afficher le taux de sélection",
+                "show-draft-tracker-pick-rate-tooltip": "Affiche les infos de taux de sélection de chaque carte de votre deck dans le tracker de tirage",
+                "show-impact-on-redraft": "Ne voir que les stats lors de l’édition de decks",
+                "show-impact-on-redraft-tooltip": "Ne voir que l’impact et les stats de tirage lorsque vous retirez des cartes de votre deck",
+                "show-draft-tracker-impact-tooltip": "Afficher l’impact sur le taux de victoires du deck de chaque carte de votre deck dans le tracker de tirage"
             },
             "menu": {
-                "general": "Général"
+                "general": "Général",
+                "draft-tracker": "Tracker de tirage"
             },
             "session-widget": {
                 "title": "Récap de session",
@@ -4335,7 +4397,7 @@
         "gaia-pure-paladin": "Paladin pur golems terrestres",
         "j-lock": "Démoniste J",
         "dragon-druid": "Druide Dragons",
-        "highlander-dh": "Chasseur de démons singleton",
+        "highlander-dh": "DH singleton",
         "highlander-druid": "Druide singleton",
         "highlander-hunter": "Chasseur singleton",
         "highlander-paladin": "Paladin singleton",
@@ -4494,7 +4556,7 @@
         "xl-tempo-druid": "Druide tempo XL",
         "bbb-control-dk": "DK sang contrôle",
         "xl-buttons-rainbow-dk": "DK arc-en-ciel Boutons XL",
-        "xl-highlander-dh": "Chasseur de démons singleton XL",
+        "xl-highlander-dh": "DH singleton XL",
         "xl-highlander-rogue": "Voleur singleton XL",
         "xl-justicar-warrior": "Guerrier justicière XL",
         "xl-mystery-egg-hunter": "Chasseur œuf mystère XL",
@@ -4524,7 +4586,7 @@
         "xl-zilliax-warrior": "Guerrier Zilliax XL",
         "pain-priest": "Prêtre douleur",
         "42-priest": "Prêtre 42",
-        "among-us-dh": "Chasseur de démons Among Us",
+        "among-us-dh": "DH Among Us",
         "buu-starship-dk": "DK SII Vaisseau",
         "bonk-shaman": "Chaman Bonk",
         "control-warrior": "Guerrier contrôle",
@@ -4537,7 +4599,7 @@
         "anchorite-priest": "Prêtre anchorite",
         "arkwing-mage": "Mage Escardrache",
         "asteroid-shaman": "Chaman astéroïdes",
-        "attack-dh": "Chasseur de démons ATQ",
+        "attack-dh": "DH ATQ",
         "bbu-deathrattle-dk": "DK SSI Râle d’agonie",
         "bbu-highlander-dk": "DK SSI singleton",
         "bbu-starship-dk": "DK SSI Vaisseau",
@@ -4609,7 +4671,7 @@
         "buu-buttons-dk": "DK SII Boutons",
         "buu-corpse-dk": "DK SII cadavres",
         "buu-death-knight": "DK SII",
-        "buu-starship-plague-dk": "DK SII Pestes vaisseau",
+        "buu-starship-plague-dk": "DK SII Pestes Vaisseau",
         "colifero-demon-hunter": "DH Colifero",
         "cycle-dh": "DH cycle",
         "death-knight": "Chevalier de la mort",
@@ -4683,7 +4745,96 @@
         "murmur-otk-shaman": "Chaman OTK Murmure",
         "protoss-rogue": "Voleur protoss",
         "starship-shaman": "Chaman vaisseau",
-        "turbulus-shaman": "Chaman Turbulus"
+        "turbulus-shaman": "Chaman Turbulus",
+        "aviana-druid": "Druide Aviana",
+        "aviana-priest": "Prêtre Aviana",
+        "menagerie-dh": "DH ménagerie",
+        "bbb-starship-dk": "DK sang Vaisseau",
+        "ffu-starship-warlock": "Démoniste GGI Vaisseau",
+        "imbue-druid": "Druide empreinte",
+        "imbue-paladin": "Paladin empreinte",
+        "rainbow-menagerie-dk": "DK arc-en-ciel ménagerie",
+        "f-wallow-warlock": "Démoniste givre Saule",
+        "u-wallow-warlock": "Démoniste impie Saule",
+        "bfu-aggro-dk": "DK arc-en-ciel ombre",
+        "astral-communion-druid": "Druide communion astrale",
+        "xl-hostage-mage": "Mage otage XL",
+        "xl-imbue-mage": "Mage empreinte XL",
+        "imbue-mage": "Mage empreinte",
+        "lynessa-libram-paladin": "Paladin librams Lynessa",
+        "miracle-druid": "Druide miracle",
+        "ravenous-cliff-dive-dh": "DH Chasseur corrompu Saut de falaise",
+        "xl-hooktusk-rogue": "Voleur Double-Crochet XL",
+        "xl-seedlock": "Démoniste graine démoniaque XL",
+        "imbue-shaman": "Chaman empreinte",
+        "shadow-priest": "Prêtre ombre",
+        "bbu-menagerie-succ-dk": "DK SSI ménagerie succ",
+        "bbu-succ-dk": "DK SSI succ",
+        "bbb-succ-dk": "DK sang succ",
+        "ffu-mill-warlock": "Démoniste GGI meule",
+        "bbb-starship-succ-dk": "DK sang Vaisseau succ",
+        "ffu-menagerie-dk": "DK GGI ménagerie",
+        "ffu-zerg-dk": "DK GGI zergs",
+        "f-splendiferous-whizbang": "Mystifix le Magnifique",
+        "unholy-dk": "DK impie",
+        "deathrattle-dh": "DH Râle d’agonie",
+        "imbue-priest": "Prêtre empreinte",
+        "protoss-imbue-mage": "Mage empreinte Protoss",
+        "raylla-imbue-mage": "Mage empreinte Raylla",
+        "skyla-imbue-mage": "Mage empreinte Skyla",
+        "ffu-deckless-warlock": "Démoniste GGI sans deck",
+        "fu-wallow-warlock": "Démoniste GI Saule",
+        "wallow-warlock": "Démoniste Saule",
+        "location-wallow-warlock": "Démoniste lieux Saule",
+        "defense-terran-shaman": "Chasseur Terrans défense",
+        "armor-dh": "DH armure",
+        "bbf-menagerie-succ-dk": "DK SSG ménagerie succ",
+        "bbu-starship-succ-dk": "DK SSI Vaisseau succ",
+        "ysondre-warrior": "Guerrier Ysondre",
+        "terran-warrior": "Guerrier Terrans",
+        "ashamane-rogue": "Voleur Ashamane",
+        "colifero-hunter": "Chasseur Colifero",
+        "hog-demon-hunter": "DH cochon",
+        "menagerie-mage": "Mage ménagerie",
+        "murloc-demon-hunter": "DH Murlocs",
+        "sd-starship-druid": "Druide Dégâts des sorts Vaisseau",
+        "asteroid-imbue-shaman": "Chaman astéroïdes empreinte",
+        "bbu-even-dk": "DK SSI pair",
+        "dark-gift-rogue": "Voleur Sombre don",
+        "uu-starship-warlock": "Démoniste II Vaisseau",
+        "uuu-aggro-plague-dk": "DK impie aggro Pestes",
+        "xl-buu-starship-dk": "DK SII Vaisseau XL",
+        "questline-dh": "DH Suite de quêtes",
+        "xl-aviana-druid": "Druide Aviana XL",
+        "xl-draenei-demon-hunter": "DH Draeneï XL",
+        "xl-malygos-druid": "Druide Malygos XL",
+        "xl-miracle-druid": "Druide miracle XL",
+        "linecracker-druid": "Druide brute forcenée",
+        "mechathun-druid": "Druide Méc’Thun",
+        "old-aggro-druid": "Druide aggro d’antan",
+        "xl-hl-jtu-quest-mage": "Mage Quête UNG singleton XL",
+        "xl-spell-damage-druid": "Druide Dégâts des sorts XL",
+        "jtu-quest-mage": "Mage Quête UNG",
+        "holy-wrath-paladin": "Paladin colère divine",
+        "xl-cta-paladin": "Paladin Appel aux armes XL",
+        "xl-holy-wrath-paladin": "Paladin colère divine XL",
+        "xl-jtu-quest-mage": "Mage Quête UNG XL",
+        "boar-priest": "Prêtre sanglier",
+        "hooktusk-rogue": "Voleur Double-Crochet",
+        "tog-priest": "Prêtre Cire-Pilleur",
+        "xl-hl-questline-priest": "Prêtre Suite de quêtes singleton XL",
+        "xl-shadow-priest": "Prêtre ombre XL",
+        "nazmani-priest": "Prêtre nazmani",
+        "ashtoungue-warlock": "Démoniste cendrelangue",
+        "xl-mill-rogue": "Voleur meule XL",
+        "xl-uu-highlander-warlock": "Démoniste II singleton XL",
+        "jtu-quest-rogue": "Voleur Quête UNG",
+        "sou-quest-shaman": "Chaman Quête d’Uldum",
+        "chad-warrior": "Guerrier chad",
+        "dragon-priest": "Prêtre Dragons",
+        "tog-warrior": "Guerrier Cire-Pilleur",
+        "xl-odd-warrior": "Guerrier impair XL",
+        "xl-taunt-warrior": "Guerrier Provocation XL"
     },
     "arena": {
         "overlay": {
