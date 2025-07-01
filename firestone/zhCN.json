@@ -44,7 +44,9 @@
             "constructed": "天梯模式",
             "duels": "对决模式",
             "ranked": "天梯模式",
-            "battlegrounds-duo": "战棋双打"
+            "battlegrounds-duo": "战棋双打",
+            "arena-underground": "地下竞技场",
+            "arena-all": "竞技场（全部）"
         },
         "region": {
             "all": "所有地区",
@@ -479,6 +481,16 @@
                 },
                 "high-win-runs": {
                     "wins": "{{value}}+ 胜"
+                },
+                "mode": {
+                    "arena-underground-tooltip": "来自地下竞技场的轮次（在竞技场和地下竞技场分开之后）",
+                    "all": "全部竞技场",
+                    "all-tooltip": "全部竞技场对局（包括旧版和新模式）",
+                    "arena": "竞技场",
+                    "arena-legacy": "旧版竞技场",
+                    "arena-underground": "地下竞技场",
+                    "arena-legacy-tooltip": "来自竞技场传统模式的轮次（在竞技场和地下竞技场分开之前）",
+                    "arena-tooltip": "竞技场轮次"
                 }
             },
             "stats": {
@@ -499,7 +511,8 @@
                 "run-name": "竞技场 {{value}} 胜",
                 "load-runs-button": "点击加载更多轮次",
                 "deck-score-tooltip": "这是你的套牌分数，由你套牌中的所有卡牌的胜率计算得到",
-                "average-match-time": "平均对局时长 {{value}}"
+                "average-match-time": "平均对局时长 {{value}}",
+                "underground-run-name": "地下竞技场 {{value}} 胜"
             },
             "empty-state": {
                 "title": "暂无信息",
@@ -540,7 +553,10 @@
                 "header-play-on-curve-winrate-tooltip": "在法力消耗曲线上使用这张牌时的平均胜率，即当你的最大法力值与这张牌的法力消耗相同时的胜率",
                 "header-play-on-curve-total": "按费使用次数",
                 "header-deck-total-tooltip": "此卡牌在套牌中的对局场数",
-                "header-discovered": "数据点"
+                "header-discovered": "数据点",
+                "header-deck-winrate-impact-tooltip": "包含这张卡的套牌的整体表现与等级平均胜率相比有多好或多差",
+                "header-deck-winrate-impact": "影响",
+                "header-pickrate-high-wins-variable-tooltip": "在地下竞技场至少获得 {{value}} 胜场，或在普通竞技场获得 {{value2}} 胜场的选取率"
             },
             "class-tier-list": {
                 "header-hero-name": "英雄名",
@@ -1038,7 +1054,7 @@
                     "archetype-core-cards-header": "关键卡牌",
                     "copy-deckstring-button": "复制套牌代码到炉石传说",
                     "removed-cards-header": "已移除的卡牌",
-                    "view-online-button-tooltip": "前往https://www.d0nkey.top 查看更多数据",
+                    "view-online-button-tooltip": "前往 https://www.hsguru.com 查看更多数据",
                     "view-online-button": "打开在线数据",
                     "cards-header-details": "({{value}} 张卡牌)",
                     "view-decks-button-tooltip": "显示所有此类型的套牌",
@@ -1087,9 +1103,9 @@
                         "discovered-winrate-header-tooltip": "对局中发现该卡牌时的平均胜率",
                         "discovered-winrate-impact-header": "发现影响",
                         "discovered-winrate-header": "发现胜率",
-                        "discovered-winrate-impact-tooltip-low-data": "警告 - 此卡牌只被发现过{{value}}次，因此统计数据可能不准确",
+                        "discovered-winrate-impact-tooltip-low-data": "警告 - 此卡牌只被发现或抽到过{{value}}次，因此统计数据可能不准确",
                         "discovered-winrate-impact-header-tooltip": "对局中发现该卡牌时，相对于套牌胜率的平均胜率",
-                        "discovered-winrate-impact-tooltip-data": "此卡牌已被发现过{{value}}次",
+                        "discovered-winrate-impact-tooltip-data": "此卡牌已被发现或抽到过{{value}}次",
                         "play-coin-filter": {
                             "all": "后手",
                             "play": "先手",
@@ -1112,6 +1128,10 @@
                 "discover-stats-header-tooltip": "在对局中显示已发现的卡牌数据",
                 "winrate-first-header": "先手",
                 "winrate-second-header": "后手"
+            },
+            "notifications": {
+                "turn-start-message": "该你出牌了（第 {{value}} 回合）！",
+                "turn-start-title": "你的回合！"
             }
         },
         "battlegrounds": {
@@ -1143,7 +1163,8 @@
                 "all": "全部",
                 "protoss": "星灵",
                 "terran": "人族",
-                "zerg": "异虫"
+                "zerg": "异虫",
+                "battlecruiser": "战列巡航舰"
             },
             "filters": {
                 "hero": {
@@ -1685,7 +1706,9 @@
                     "tavern-brawl": "乱斗模式",
                     "practice": "练习模式",
                     "ranked-twist": "幻变天梯",
-                    "battlegrounds-duo": "战棋双打"
+                    "battlegrounds-duo": "战棋双打",
+                    "arena-all": "竞技场（全部）",
+                    "arena-underground": "地下竞技场"
                 },
                 "player": {
                     "all": "所有职业（自己）"
@@ -1740,7 +1763,9 @@
                 "went-first-tooltip": "先手",
                 "went-second-tooltip": "后手",
                 "bgs-prizes-tooltip": "暗月奖品可用",
-                "bgs-anomalies-tooltip": "本局游戏的畸变: {{value}}"
+                "bgs-anomalies-tooltip": "本局游戏的畸变: {{value}}",
+                "watch-replay-online-button": "在浏览器中打开",
+                "watch-replay-online-button-tooltip": "在线观看回放（打开一个新的浏览器窗口）"
             },
             "class-icon-toggle": {
                 "label": "使用职业图标",
@@ -2355,6 +2380,18 @@
         "colossus-damage": {
             "player": "你的巨像会造成 1 + {{value}} 点伤害两次",
             "opponent": "对手的巨像会造成 1 + {{value}} 点伤害两次"
+        },
+        "specific-cost": {
+            "opponent": "对手的 {{cardName}} 现在消耗 {{value}} 法力水晶",
+            "player": "你的 {{cardName}} 现在消耗 {{value}} 法力水晶"
+        },
+        "cards-shuffled-into-your-deck": {
+            "player": "本局对战中你已将卡牌洗入牌库 {{value}} 次",
+            "opponent": "本局对战中对手已将卡牌洗入牌库 {{value}} 次"
+        },
+        "hero-attacks": {
+            "player": "本局对战中你的英雄攻击了 {{times}} 次",
+            "opponent": "本局对战中对手英雄攻击了 {{times}} 次"
         }
     },
     "loading": {
@@ -3228,11 +3265,12 @@
                     "collection-synchronized": "收藏已同步"
                 },
                 "d0nkey": {
-                    "pitch": "d0nkey.top 是一个粉丝网站，它收集了炉石传说官方比赛中的所有套牌，以及来自直播的套牌，可以让任何人轻松地找到有趣的套牌。同步到 d0nkey.top 将能让您分享套牌给您的观众（如果您是一个主播），或帮助他们建立一个更好的数据库，以便为社区提供更多免费服务。 您可以访问 {{websiteLink}} 查看",
+                    "pitch": "hsguru.com 是一个粉丝网站，它收集了炉石传说官方比赛中的所有套牌，以及来自直播的套牌，可以让任何人轻松地找到有趣的套牌。同步到 hsguru.com 将能让您分享套牌给您的观众（如果您是一个主播），或帮助他们建立一个更好的数据库，以便为社区提供更多免费服务。 您可以访问 {{websiteLink}} 查看",
                     "website-link": "此处",
-                    "next": "如果您决定同步到 d0nkey.top，Firestone将发送您的每场对战，这个对战将出现在网站上的一个特定栏目中(仍在构建中)。 默认情况下，回放将是私密的，除非您同时在直播。请参阅 {{link}} 以了解如何设置。",
+                    "next": "如果您决定同步到 hsguru.com，Firestone将发送您的每场对战，这个对战将出现在网站上的一个特定栏目中(仍在构建中)。 默认情况下，回放将是私密的，除非您同时在直播。请参阅 {{link}} 以了解如何设置。",
                     "instructions-page-link": "引导页面",
-                    "toggle-label": "同步您的回放到 d0nkey.top"
+                    "toggle-label": "同步回放到 hsguru.com",
+                    "toggle-collection-label": "将我的收藏同步到 hsguru.com"
                 },
                 "hsdecks": {
                     "pitch": "Hearthstone-decks.net分享所有传统对战模式的传说高分段套牌以及新闻、文章。您可以访问{{websiteLink}}查看",
@@ -3310,7 +3348,9 @@
                     "bottom-right": "右下",
                     "top-right": "右上"
                 },
-                "notifications-position-label": "通知位置"
+                "notifications-position-label": "通知位置",
+                "show-notification": "显示 Windows 系统通知",
+                "show-notification-tooltip": "在你的回合开始或酒馆战棋的招募阶段开始时显示 Windows 系统通知"
             },
             "localization": {
                 "title": "本地化",
@@ -3424,7 +3464,12 @@
                     "widget-background-color": "小部件背景色",
                     "global": "全局"
                 },
-                "reset-button": "重置全部"
+                "reset-button": "重置全部",
+                "decktracker": {
+                    "title": "记牌器",
+                    "use-new-card-tile-style-tooltip": "在记牌器或套牌列表中显示卡牌时使用新的卡牌砖块样式",
+                    "use-new-card-tile-style": "新版卡牌砖块"
+                }
             },
             "notifications": {
                 "title": "通知"
@@ -3758,7 +3803,13 @@
                     "imbue-tooltip": "显示你在本局对战中灌注英雄技能的次数",
                     "card-name-played-tooltip": "显示你使用{{cardName}}的次数",
                     "colossus-damage-label": "巨像伤害",
-                    "colossus-damage-tooltip": "显示你的巨像将会造成的伤害"
+                    "colossus-damage-tooltip": "显示你的巨像将会造成的伤害",
+                    "cards-shuffled-into-your-deck-label": "卡牌（已洗入牌库）",
+                    "cards-shuffled-into-your-deck-tooltip": "计算将牌洗入牌库的次数",
+                    "table-flip-tooltip": "显示 {{cardName}} 的费用。虽然计算起来很简单，但随时提醒用户法力水晶消耗还是很有用的",
+                    "table-flip-label": "{{cardName}}",
+                    "hero-attacks-label": "英雄攻击次数",
+                    "hero-attacks-tooltip": "显示你的英雄在本场对战中的攻击次数（如果你的手牌或套牌中的卡牌可以从该信息中获益）"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -3804,7 +3855,9 @@
                 "toggle-tooltip": "当你的最大生命值/法力水晶发生变化时，会显示一个显示您在游戏中可拥有的最大资源量小部件",
                 "title": "最大资源小部件",
                 "always-on-tooltip": "即使最大生命值/法力水晶没有变化，也会显示小部件",
-                "toggle": "显示小部件"
+                "toggle": "显示小部件",
+                "show-horizontally-tooltip": "单行显示最大资源，而不是单列显示",
+                "show-horizontally": "水平显示"
             }
         },
         "collection": {
@@ -4007,7 +4060,9 @@
                 "counter-elemental-tavern-stats-tooltip": "在酒馆中为元素显示额外的攻击力/生命值增益",
                 "counter-elemental-tavern-stats-label": "酒馆元素统计",
                 "show-tribe-colors-label": "使用种族颜色",
-                "show-tribe-colors-tooltip": "用种族类型的颜色为每个小部件着色"
+                "show-tribe-colors-tooltip": "用种族类型的颜色为每个小部件着色",
+                "minions-list-keep-in-bounds-label": "保持在范围内",
+                "minions-list-keep-in-bounds-tooltip": "确保列表不会超出范围太多。如果无法准确定位列表，请将其关闭"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -4111,10 +4166,17 @@
                 "show-draft-tracker": "抓牌时记牌器",
                 "draft-overlay-size": "抓牌器尺寸",
                 "show-card-stats-discover": "发现时的卡牌数据",
-                "show-card-stats-discover-tooltip": "在发现卡牌时显示数据。非会员每天可使用 {{freeUses}} 场对局，会员用户可以无限制使用"
+                "show-card-stats-discover-tooltip": "在发现卡牌时显示数据。非会员每天可使用 {{freeUses}} 场对局，会员用户可以无限制使用",
+                "show-impact-on-redraft": "仅在套牌编辑时显示统计数据",
+                "show-impact-on-redraft-tooltip": "仅在从套牌移除卡牌时显示影响/选取率数据",
+                "show-draft-tracker-pick-rate-tooltip": "在选牌记牌器中显示套牌每张卡牌的选取率信息",
+                "show-draft-tracker-pick-rate": "显示选取率",
+                "show-draft-tracker-impact": "显示影响",
+                "show-draft-tracker-impact-tooltip": "在选牌记牌器中显示套牌中每张牌的胜率影响"
             },
             "menu": {
-                "general": "通用"
+                "general": "通用",
+                "draft-tracker": "选牌记牌器"
             },
             "session-widget": {
                 "number-of-runs": "轮数",
@@ -4683,7 +4745,96 @@
         "uu-location-warlock": "双邪地标术",
         "location-warlock": "地标术",
         "uu-deckless-warlock": "双邪弃牌术",
-        "starship-shaman": "星舰萨"
+        "starship-shaman": "星舰萨",
+        "ravenous-cliff-dive-dh": "地狱犬跳崖瞎",
+        "u-wallow-warlock": "瓦洛术（绿）",
+        "bbb-starship-succ-dk": "星舰血蛭DK（红）",
+        "deathrattle-dh": "亡语瞎",
+        "imbue-druid": "灌注德",
+        "imbue-mage": "灌注法",
+        "imbue-paladin": "灌注骑",
+        "imbue-priest": "灌注牧",
+        "imbue-shaman": "灌注萨",
+        "ffu-menagerie-dk": "茶壶DK（蓝蓝绿）",
+        "ffu-mill-warlock": "爆牌术（蓝蓝绿）",
+        "ffu-starship-warlock": "星舰术（蓝蓝绿）",
+        "ffu-zerg-dk": "异虫DK（蓝蓝绿）",
+        "f-wallow-warlock": "瓦洛术（蓝）",
+        "protoss-imbue-mage": "星灵灌注法",
+        "bfu-aggro-dk": "彩虹快攻DK",
+        "rainbow-menagerie-dk": "彩虹茶壶DK",
+        "raylla-imbue-mage": "蕾拉灌注法",
+        "skyla-imbue-mage": "斯奇拉灌注法",
+        "f-splendiferous-whizbang": "酷炫的威兹班",
+        "astral-communion-druid": "星界德",
+        "aviana-druid": "艾维娜德",
+        "aviana-priest": "艾维娜牧",
+        "defense-terran-shaman": "防守人族萨",
+        "lynessa-libram-paladin": "莱妮莎圣契骑",
+        "menagerie-dh": "茶壶瞎",
+        "miracle-druid": "奇迹德",
+        "shadow-priest": "暗牧",
+        "unholy-dk": "邪DK",
+        "xl-hooktusk-rogue": "40-钩牙贼",
+        "xl-hostage-mage": "40-乌龟法",
+        "xl-imbue-mage": "40-灌注法",
+        "xl-seedlock": "40-恶魔之种术",
+        "bbu-menagerie-succ-dk": "茶壶血蛭DK（红红绿）",
+        "bbu-succ-dk": "血蛭DK（红红绿）",
+        "bbb-succ-dk": "血蛭DK（红）",
+        "bbb-starship-dk": "星舰DK（红）",
+        "dark-gift-rogue": "黑赐贼",
+        "ffu-deckless-warlock": "弃牌术（蓝蓝绿）",
+        "fu-wallow-warlock": "瓦洛术（蓝绿）",
+        "hog-demon-hunter": "野猪人瞎",
+        "terran-warrior": "人族战",
+        "wallow-warlock": "瓦洛术",
+        "armor-dh": "护甲瞎",
+        "ashamane-rogue": "阿莎曼贼",
+        "ysondre-warrior": "伊森德雷战",
+        "colifero-hunter": "可丽菲罗猎",
+        "location-wallow-warlock": "地标瓦洛术",
+        "menagerie-mage": "茶壶法",
+        "murloc-demon-hunter": "鱼人瞎",
+        "sd-starship-druid": "法强星舰德",
+        "bbf-menagerie-succ-dk": "茶壶血蛭DK（红红蓝）",
+        "bbu-starship-succ-dk": "星舰血蛭DK（红红绿）",
+        "xl-buu-starship-dk": "40-星舰DK（绿绿红）",
+        "asteroid-imbue-shaman": "小行星灌注萨",
+        "uu-starship-warlock": "双邪星舰术",
+        "uuu-aggro-plague-dk": "邪快攻疫病DK",
+        "bbu-even-dk": "偶数DK（红红绿）",
+        "questline-dh": "任务瞎",
+        "jtu-quest-mage": "开门法",
+        "xl-aviana-druid": "40-艾维娜德",
+        "holy-wrath-paladin": "元气骑",
+        "linecracker-druid": "阵线破坏者德",
+        "mechathun-druid": "机克德",
+        "old-aggro-druid": "旧快攻德",
+        "xl-draenei-demon-hunter": "40-德莱尼瞎",
+        "xl-jtu-quest-mage": "40-开门法",
+        "xl-malygos-druid": "40-蓝龙德",
+        "xl-miracle-druid": "40-奇迹德",
+        "xl-spell-damage-druid": "40-法强德",
+        "xl-hl-jtu-quest-mage": "40-宇宙开门法",
+        "boar-priest": "猪猪牧",
+        "xl-cta-paladin": "40-战斗号角骑",
+        "xl-holy-wrath-paladin": "40-元气骑",
+        "nazmani-priest": "纳兹曼尼织血者牧",
+        "tog-priest": "托瓦格尔国王牧",
+        "xl-hl-questline-priest": "40-宇宙任务牧",
+        "hooktusk-rogue": "钩牙贼",
+        "jtu-quest-rogue": "任务贼",
+        "sou-quest-shaman": "任务萨",
+        "xl-mill-rogue": "40-爆牌贼",
+        "xl-shadow-priest": "40-暗牧",
+        "xl-uu-highlander-warlock": "40-双邪宇宙术",
+        "dragon-priest": "龙牧",
+        "chad-warrior": "冲锋战",
+        "tog-warrior": "托瓦格尔国王战",
+        "xl-odd-warrior": "40-奇数战",
+        "xl-taunt-warrior": "40-嘲讽战",
+        "ashtongue-warlock": "灰舌术"
     },
     "arena": {
         "overlay": {
