@@ -44,7 +44,9 @@
             "duels": "デュエル",
             "constructed": "ランク戦",
             "ranked": "ランク戦",
-            "battlegrounds-duo": "バトルグラウンド・デュオ"
+            "battlegrounds-duo": "バトルグラウンド・デュオ",
+            "arena-all": "闘技場(全て)",
+            "arena-underground": "地下闘技場"
         },
         "region": {
             "all": "全ての地域",
@@ -479,6 +481,16 @@
                 },
                 "high-win-runs": {
                     "wins": "{{value}}勝以上"
+                },
+                "mode": {
+                    "arena": "闘技場",
+                    "arena-tooltip": "闘技場の挑戦",
+                    "arena-legacy": "レガシー闘技場",
+                    "arena-legacy-tooltip": "地下闘技場と通常闘技場が分かれる以前の、闘技場の挑戦です。",
+                    "all": "全ての闘技場",
+                    "all-tooltip": "全ての闘技場の試合(古いものと新しいものを含む)",
+                    "arena-underground-tooltip": "地下闘技場と通常闘技場が分かれた以後の、地下闘技場の挑戦です。",
+                    "arena-underground": "地下闘技場"
                 }
             },
             "stats": {
@@ -499,7 +511,8 @@
                 "run-name": "闘技場 {{value}} 勝",
                 "load-runs-button": "さらに読み込む",
                 "deck-score-tooltip": "これはあなたのデッキのスコアです。デッキ内の全てのカードのデッキ勝率を基に計算されています",
-                "average-match-time": "平均試合時間は{{value}}"
+                "average-match-time": "平均試合時間は{{value}}",
+                "underground-run-name": "地下闘技場{{value}}勝"
             },
             "empty-state": {
                 "title": "まだ何もありません",
@@ -540,7 +553,10 @@
                 "header-play-on-curve-winrate-tooltip": "このカードをマナカーブ通りにプレイできたときの勝率です(補足：カードのコストと自身の最大マナが一致してるときのこと)",
                 "header-play-on-curve-total": "マナカーブ通りにプレイされた回数",
                 "header-deck-total-tooltip": "このカードがデッキの中にあるままで行われた試合数です",
-                "header-discovered": "データポイント"
+                "header-discovered": "データポイント",
+                "header-deck-winrate-impact-tooltip": "このカードを含むデッキが、このクラスの全体的な平均勝率と比べ、どの程度良い/悪いパフォーマンスを発揮するかを表します",
+                "header-deck-winrate-impact": "影響",
+                "header-pickrate-high-wins-variable-tooltip": "地下闘技場で最低 {{value}}勝、もしくは通常闘技場で最低{{value2}}勝した挑戦においてのピック率です"
             },
             "class-tier-list": {
                 "header-hero-name": "名前",
@@ -1037,7 +1053,7 @@
                     "archetype-core-cards-header": "アーキタイプのコアカード",
                     "copy-deckstring-button": "ハースストーンにコピー",
                     "removed-cards-header": "削除されたカード",
-                    "view-online-button-tooltip": "さらなる統計をオンライン上の https://www.d0nkey.top で見ます",
+                    "view-online-button-tooltip": "さらなる統計をオンライン上の https://www.hsguru.com で見ます",
                     "view-online-button": "オンラインで見る",
                     "cards-header-details": "({{value}} 枚)",
                     "view-details-button-tooltip": "カードレベルの詳細やより詳しい情報を見ます(プレミアムオンリー)",
@@ -1085,7 +1101,7 @@
                         "discovered-winrate-impact-header-tooltip": "試合中にそのカードを発見できた場合の、デッキの勝率に対する平均勝率です",
                         "discovered-winrate-header-tooltip": "そのカードをゲーム中に発見できた場合の平均勝率です",
                         "discovered-winrate-impact-tooltip-data": "このカードは{{value}}回発見されました",
-                        "discovered-winrate-impact-tooltip-low-data": "警告：このカードは{{value}}回しか発見されていません。よって、統計が不正確なことがあります",
+                        "discovered-winrate-impact-tooltip-low-data": "警告：このカードは{{value}}回しか発見/ドローされていません。よって、統計が不正確なことがあります",
                         "play-coin-filter": {
                             "play": "先攻",
                             "all": "後攻",
@@ -1112,6 +1128,10 @@
                 "discover-stats-header-tooltip": "試合中に発見したカードの統計を表示します",
                 "winrate-first-header": "先攻",
                 "winrate-second-header": "後攻"
+            },
+            "notifications": {
+                "turn-start-title": "あんたのターンだ！",
+                "turn-start-message": "あんたのターンだ ({{value}}ターン目)!"
             }
         },
         "battlegrounds": {
@@ -1143,7 +1163,8 @@
                 "all": "全て",
                 "protoss": "プロトス",
                 "terran": "テラン",
-                "zerg": "ザーグ"
+                "zerg": "ザーグ",
+                "battlecruiser": "バトルクルーザー"
             },
             "filters": {
                 "hero": {
@@ -1685,7 +1706,9 @@
                     "tavern-brawl": "酒場の喧嘩",
                     "practice": "練習",
                     "ranked-twist": "ツイスト(ランク)",
-                    "battlegrounds-duo": "バトルグラウンド・デュオ"
+                    "battlegrounds-duo": "バトルグラウンド・デュオ",
+                    "arena-all": "闘技場(全て)",
+                    "arena-underground": "地下闘技場"
                 },
                 "player": {
                     "all": "全てのクラス(自分)"
@@ -1740,7 +1763,9 @@
                 "went-first-tooltip": "先攻でした",
                 "went-second-tooltip": "後攻でした",
                 "bgs-prizes-tooltip": "ダークムーンの景品が利用可能でした",
-                "bgs-anomalies-tooltip": "この試合の異常は{{value}}"
+                "bgs-anomalies-tooltip": "この試合の異常は{{value}}",
+                "watch-replay-online-button": "ブラウザで",
+                "watch-replay-online-button-tooltip": "リプレイをオンライで見る(ブラウザの新しいウィンドウを開きます)"
             },
             "class-icon-toggle": {
                 "label": "クラスアイコンを使用",
@@ -2355,6 +2380,18 @@
         "colossus-damage": {
             "player": "自分のコロッサスは1+{{value}}ダメージを2回与えます",
             "opponent": "対戦相手のコロッサスは1+{{value}}ダメージを2回与えます"
+        },
+        "specific-cost": {
+            "player": "自分の「{{cardName}}」の現在のコストは{{value}}",
+            "opponent": "対戦相手の「{{cardName}}」の現在のコストは{{value}}"
+        },
+        "cards-shuffled-into-your-deck": {
+            "player": "自分のデッキにカードを{{value}}回混ぜた",
+            "opponent": "対戦相手は相手のデッキにカードを{{value}}回混ぜた"
+        },
+        "hero-attacks": {
+            "player": "この試合中、自分のヒーローで{{times}}回攻撃した",
+            "opponent": "この試合中、対戦相手はヒーローで{{times}}回攻撃した"
         }
     },
     "loading": {
@@ -3229,9 +3266,10 @@
                 "d0nkey": {
                     "pitch": "d0nkey.top は、ハースストーンの公式大会のデッキや、ストリーマーのデッキを集めたファンサイトで、誰でも簡単に面白いデッキを見つけることができます。d0nkey.top に同期することで、自分のデッキを視聴者と共有したり (配信者の場合)、d0nkey.top がより良いデータベースを構築し、コミュニティに無料のサービスを提供する手助けができます。d0nkey.top のサイトはこちら {{websiteLink}}",
                     "website-link": "こちら",
-                    "next": "d0nkey.top と同期する場合、Firestoneはあなたの各試合を送信し、ウェブサイトの特定のセクションに表示されます (まだ開発中です)。試合のリプレイは、同時に配信している場合を除き、デフォルトで非公開になっています。設定方法は {{link}} を参照してください",
+                    "next": "hsguru.comと同期する場合、Firestoneはあなたの各試合を送信し、ウェブサイトの特定のセクションに表示されます (まだ開発中です)。試合のリプレイは、同時に配信している場合を除き、デフォルトで非公開になっています。設定方法は {{link}} を参照してください",
                     "instructions-page-link": "解説ページ",
-                    "toggle-label": "リプレイをd0nkey.topと同期"
+                    "toggle-label": "リプレイをhsguru.comと同期",
+                    "toggle-collection-label": "hsguru.comとコレクションを同期"
                 },
                 "hsdecks": {
                     "pitch": "Hearthstone-decks.netでは、ハイレジェンドでプレイされた全構築モードのデッキ、ニュース、記事を共有しています。{{websiteLink}}をご覧ください",
@@ -3309,7 +3347,9 @@
                     "bottom-left": "左下",
                     "top-left": "左上",
                     "top-right": "右上"
-                }
+                },
+                "show-notification": "Windowsの通知を表示",
+                "show-notification-tooltip": "ターン開始時、もしくはバトグラの雇用フェーズ開始時にWindowsの通知を表示します"
             },
             "localization": {
                 "title": "ローカライズ",
@@ -3423,7 +3463,12 @@
                     "widget-background-color": "ウィジェットの背景色",
                     "global": "全体"
                 },
-                "reset-button": "全てリセット"
+                "reset-button": "全てリセット",
+                "decktracker": {
+                    "use-new-card-tile-style": "新しいカードタイル",
+                    "title": "デッキトラッカー",
+                    "use-new-card-tile-style-tooltip": "デッキリストやトラッカーにおいて、カードタイルの新しいスタイルを使用します"
+                }
             },
             "notifications": {
                 "title": "通知"
@@ -3757,7 +3802,13 @@
                     "imbue-tooltip": "この対戦中に自分のヒーローパワーを鼓舞した回数を表示します",
                     "card-name-played-tooltip": "{{cardName}}を使用した回数を表示します",
                     "colossus-damage-label": "コロッサスのダメージ",
-                    "colossus-damage-tooltip": "自分のコロッサスが与えるダメージを表示します"
+                    "colossus-damage-tooltip": "自分のコロッサスが与えるダメージを表示します",
+                    "table-flip-tooltip": "{{cardName}}のコストを表示します。これは単純な計算ですが、常にコストを頭に入れておくのは有用です",
+                    "table-flip-label": "「{{cardName}}」",
+                    "cards-shuffled-into-your-deck-tooltip": "自分が自分のデッキにカードを混ぜた回数をカウントします",
+                    "cards-shuffled-into-your-deck-label": "混ぜられたカード",
+                    "hero-attacks-label": "ヒーローの攻撃",
+                    "hero-attacks-tooltip": "自分のヒーローがこの試合中に攻撃した回数を表示します。手札かデッキにこの情報が役立つカードがある場合のみ表示されます"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -3803,7 +3854,9 @@
                 "always-on": "常にオン",
                 "always-on-tooltip": "最大体力や最大マナ数が変化していなくても、ウィジェットを表示します",
                 "toggle": "ウィジェットを表示",
-                "title": "最大リソースウィジェット"
+                "title": "最大リソースウィジェット",
+                "show-horizontally": "水平方向に表示",
+                "show-horizontally-tooltip": "最大リソースを、一列の代わりに一行で表示します"
             }
         },
         "collection": {
@@ -4006,7 +4059,9 @@
                 "counter-elemental-tavern-stats-tooltip": "酒場のエレメンタルへの追加の攻撃力/体力のバフを表示します",
                 "counter-elemental-tavern-stats-label": "酒場のエレメンタルのステータス",
                 "show-tribe-colors-tooltip": "各ウィジェットを種族の色にします",
-                "show-tribe-colors-label": "種族の色を使用"
+                "show-tribe-colors-label": "種族の色を使用",
+                "minions-list-keep-in-bounds-label": "ゲーム画面内に収める",
+                "minions-list-keep-in-bounds-tooltip": "ミニオンリストがゲーム画面外にいかないようにします。もし配置したい場所にリストが配置できない場合、これをオフにしてください。"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -4110,16 +4165,23 @@
                 "show-draft-tracker": "ドラフト中のトラッカー",
                 "draft-overlay-size": "ドラフトオーバーレイサイズ",
                 "show-card-stats-discover-tooltip": "発見中に統計を表示します。一般ユーザーは一日に{{freeUses}}試合まで、プレミアムユーザーは無制限に使用できます",
-                "show-card-stats-discover": "発見中のカード統計"
+                "show-card-stats-discover": "発見中のカード統計",
+                "show-draft-tracker-pick-rate": "ピック率を表示",
+                "show-draft-tracker-impact": "影響を表示",
+                "show-draft-tracker-impact-tooltip": "ドラフトトラッカーにおいて、全てのカードのデッキ勝率への影響を表示します",
+                "show-draft-tracker-pick-rate-tooltip": "ドラフトトラッカーにおいて、デッキの全てのカードのピック率の情報を表示します",
+                "show-impact-on-redraft-tooltip": "デッキからカードを削除するときのみ、影響やピック率の統計を表示します",
+                "show-impact-on-redraft": "デッキ編集時のみ統計を表示"
             },
             "menu": {
-                "general": "全般"
+                "general": "全般",
+                "draft-tracker": "ドラフトトラッカー"
             },
             "session-widget": {
                 "show-groups-tooltip": "勝利数によってグループ分けされた、シーズンの戦績を表示します",
                 "title": "シーズン戦績",
                 "label-tooltip": "闘技場の現在のシーズンの戦績を表示します",
-                "show-groups-in-game": "ゲーム内のグループを表示します",
+                "show-groups-in-game": "ゲーム内のグループを表示",
                 "label": "ウィジェットを表示",
                 "show-runs": "前回の挑戦を表示",
                 "show-runs-in-game": "ゲーム内で挑戦を表示",
@@ -4682,7 +4744,87 @@
         "location-warlock": "場所ウォーロック",
         "murmur-otk-shaman": "マーマーOTKシャーマン",
         "turbulus-shaman": "タービュランスシャーマン",
-        "starship-shaman": "宇宙船シャーマン"
+        "starship-shaman": "宇宙船シャーマン",
+        "bbb-starship-dk": "赤宇宙船デスナイト",
+        "rainbow-menagerie-dk": "赤青緑ミナジェリデスナイト",
+        "menagerie-dh": "ミナジェリデーモンハンター",
+        "aviana-druid": "アヴィアナドルイド",
+        "imbue-druid": "鼓舞ドルイド",
+        "imbue-paladin": "鼓舞パラディン",
+        "aviana-priest": "アヴィアナプリースト",
+        "ffu-starship-warlock": "青青緑宇宙船ウォーロック",
+        "f-wallow-warlock": "青ワロウウォーロック",
+        "u-wallow-warlock": "緑ワロウウォーロック",
+        "astral-communion-druid": "星霊交信ドルイド",
+        "imbue-mage": "鼓舞メイジ",
+        "miracle-druid": "ミラクルドルイド",
+        "bfu-aggro-dk": "赤青緑アグロデスナイト",
+        "lynessa-libram-paladin": "リネッサ聖典パラディン",
+        "xl-imbue-mage": "XL鼓舞メイジ",
+        "shadow-priest": "影プリースト",
+        "ffu-mill-warlock": "青青緑ミルウォーロック",
+        "imbue-shaman": "鼓舞シャーマン",
+        "ravenous-cliff-dive-dh": "フェルハンタークリフダイビングデーモンハンター",
+        "xl-hooktusk-rogue": "XLフックタスクローグ",
+        "bbu-menagerie-succ-dk": "赤赤緑ミナジェリヒルデスナイト",
+        "bbu-succ-dk": "赤赤緑ヒルデスナイト",
+        "bbb-starship-succ-dk": "赤宇宙船ヒルデスナイト",
+        "bbb-succ-dk": "赤ヒルデスナイト",
+        "ffu-menagerie-dk": "青青緑ミナジェリデスナイト",
+        "ffu-zerg-dk": "青青緑ザーグデスナイト",
+        "f-splendiferous-whizbang": "デッキルカーナ・ウィズバン",
+        "unholy-dk": "緑デスナイト",
+        "deathrattle-dh": "断末魔デーモンハンター",
+        "protoss-imbue-mage": "プロトス鼓舞メイジ",
+        "raylla-imbue-mage": "レイラ鼓舞メイジ",
+        "imbue-priest": "鼓舞プリースト",
+        "skyla-imbue-mage": "スカイラ鼓舞メイジ",
+        "defense-terran-shaman": "防御テランシャーマン",
+        "ffu-deckless-warlock": "青青緑デッキレスウォーロック",
+        "fu-wallow-warlock": "青緑ワロウウォーロック",
+        "location-wallow-warlock": "場所ワロウウォーロック",
+        "terran-warrior": "テランウォリアー",
+        "wallow-warlock": "ワロウウォーロック",
+        "ysondre-warrior": "イソンドレウォリアー",
+        "bbf-menagerie-succ-dk": "赤赤青ミナジェリヒルデスナイト",
+        "armor-dh": "装甲デーモンハンター",
+        "bbu-starship-succ-dk": "赤赤緑宇宙船ヒルデスナイト",
+        "colifero-hunter": "コリフェロハンター",
+        "hog-demon-hunter": "ホッグデーモンハンター",
+        "menagerie-mage": "ミナジェリメイジ",
+        "murloc-demon-hunter": "マーロックデーモンハンター",
+        "sd-starship-druid": "SD宇宙船ドルイド",
+        "ashamane-rogue": "アシャマネローグ",
+        "asteroid-imbue-shaman": "アステロイド鼓舞シャーマン",
+        "bbu-even-dk": "赤赤緑偶数デスナイト",
+        "dark-gift-rogue": "悪魔の恵みローグ",
+        "uu-starship-warlock": "緑緑宇宙船ウォーロック",
+        "questline-dh": "連続クエストデーモンハンター",
+        "uuu-aggro-plague-dk": "緑アグロ疫病デスナイト",
+        "xl-buu-starship-dk": "XL赤緑緑宇宙船デスナイト",
+        "xl-draenei-demon-hunter": "XLドラナイデーモンハンター",
+        "linecracker-druid": "前線崩しドルイド",
+        "mechathun-druid": "メックトゥーンドルイド",
+        "old-aggro-druid": "オールドアグロドルイド",
+        "xl-aviana-druid": "XLアヴィアナドルイド",
+        "xl-malygos-druid": "XLマリゴスドルイド",
+        "jtu-quest-mage": "大魔境ウンゴロ・クエストメイジ",
+        "xl-spell-damage-druid": "XL呪文ダメージドルイド",
+        "xl-miracle-druid": "XLミラクルドルイド",
+        "holy-wrath-paladin": "聖なる怒りパラディン",
+        "xl-holy-wrath-paladin": "XL聖なる怒りパラディン",
+        "boar-priest": "イノシシプリースト",
+        "nazmani-priest": "ナズマニプリースト",
+        "xl-shadow-priest": "XL影プリースト",
+        "hooktusk-rogue": "フックタスクローグ",
+        "jtu-quest-rogue": "大魔境ウンゴロ・クエストローグ",
+        "sou-quest-shaman": "突撃！探検同盟・クエストシャーマン",
+        "xl-mill-rogue": "XLミルローグ",
+        "xl-uu-highlander-warlock": "XL緑緑ウォーロック",
+        "dragon-priest": "ドラゴンプリースト",
+        "xl-taunt-warrior": "XL挑発ウォリアー",
+        "xl-odd-warrior": "XL奇数ウォリアー",
+        "ashtongue-warlock": "アッシュタンウォーロック"
     },
     "arena": {
         "overlay": {
