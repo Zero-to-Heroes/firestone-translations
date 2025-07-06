@@ -44,7 +44,9 @@
             "duels": "Дуэли",
             "battlegrounds-duo": "Поля сражений (дуэты)",
             "constructed": "Рейтинговый режим",
-            "ranked": "Рейтинговый режим"
+            "ranked": "Рейтинговый режим",
+            "arena-all": "Арена (все)",
+            "arena-underground": "Подпольная Арена"
         },
         "region": {
             "all": "Все регионы",
@@ -475,6 +477,17 @@
                 },
                 "hero-class": {
                     "all": "Все классы героев"
+                },
+                "show-advanced-card-stats": "Расширенная статистика",
+                "mode": {
+                    "arena-legacy": "Старая Арена",
+                    "arena-tooltip": "Забеги на Арене",
+                    "arena-legacy-tooltip": "Забеги на Арене в старом режиме, до разделения на Арену / Подпольную Арену",
+                    "arena": "Арена",
+                    "all": "Вся Арена",
+                    "arena-underground": "Подпольная Арена",
+                    "arena-underground-tooltip": "Забеги на Арене в Подпольном режиме, после разделения на Арену / Подпольную Арену",
+                    "all-tooltip": "Все игры на Арене (включая старый и новый форматы)"
                 }
             },
             "stats": {
@@ -495,7 +508,8 @@
                 "run-name": "{{value}} побед на Арене",
                 "load-runs-button": "Нажмите, чтобы загрузить больше забегов",
                 "deck-score-tooltip": "Это оценка вашей колоды, которая вычисляется на основе \"Винрейта колоды\" всех карт в вашей колоде.",
-                "average-match-time": "Среднее время матча: {{value}}"
+                "average-match-time": "Среднее время матча: {{value}}",
+                "underground-run-name": "Подпольная Арена {{value}} wins"
             },
             "empty-state": {
                 "title": "Здесь пока ничего нет",
@@ -556,7 +570,10 @@
                 "header-play-on-curve-winrate": "Винрейт по кривой маны",
                 "header-play-on-curve-total": "Сыграно по кривой",
                 "header-deck-winrate-tooltip": "Винрейт колод, содержащих эту карту",
-                "header-discovered": "Данные"
+                "header-discovered": "Данные",
+                "header-deck-winrate-impact-tooltip": "Насколько лучше или хуже в среднем играют колоды с этой картой по сравнению со средним винрейтом класса",
+                "header-deck-winrate-impact": "Влияние",
+                "header-pickrate-high-wins-variable-tooltip": "Частота выбора для забегов, достигших как минимум {{value}} побед на Подпольной Арене или {{value2}} побед на Арене"
             },
             "class-tier-list": {
                 "header-winrate": "Винрейт",
@@ -1046,10 +1063,10 @@
                         "show-relative-info-button-tooltip": "Показать винрейт каждой карты относительно винрейта архетипа",
                         "discovered-winrate-impact-header-tooltip": "Средний процент побед относительно винрейта колоды, когда карта была раскопана во время игры",
                         "discovered-winrate-header-tooltip": "Средний процент побед, когда карта была раскопана во время игры",
-                        "discovered-winrate-impact-tooltip-low-data": "Внимание – эта карта была раскопана всего {{value}} раз, поэтому статистика может быть неточной",
+                        "discovered-winrate-impact-tooltip-low-data": "Внимание – эта карта была раскопана или взята всего {{value}} раз, поэтому статистика может быть неточной",
                         "discovered-winrate-impact-header": "Винрейт Раскопки",
                         "discovered-winrate-header": "Винрейт Раскопки",
-                        "discovered-winrate-impact-tooltip-data": "Эта карта была раскопана {{value}} раз",
+                        "discovered-winrate-impact-tooltip-data": "Эта карта была раскопана или взята {{value}} раз",
                         "play-coin-filter": {
                             "all": "Монетка и розыгрыш",
                             "play": "Без монетки",
@@ -1063,7 +1080,7 @@
                     "cards-header-details": "(карт {{value}})",
                     "archetype-core-cards-header-tooltip": "Карты, которые присутствуют в большинстве колод этого архетипа",
                     "archetype-core-cards-header": "Ключевые карты архетипа",
-                    "view-online-button-tooltip": "Смотрите больше статистики онлайн по адресу https://www.d0nkey.top",
+                    "view-online-button-tooltip": "Смотрите больше статистики онлайн по адресу https://www.hsguru.com",
                     "no-data-empty-state-title": "У нас нет данных для этой комбинации колода/ранг/время/формат",
                     "added-cards-header-tooltip": "Карты, которые есть в этой колоде, но отсутствуют в основном наборе карт",
                     "deviation-tooltip": "Размер выборки (количество сыгранных игр) добавляет неопределенность к винрейту каждой колоды. Существует 95% уверенность, что истинный винрейт находится в пределах от базового винрейта плюс/минус указанная здесь неопределенность. Вы можете включить опцию \"консервативный винрейт\" в фильтрах, чтобы увидеть новый показатель винрейта, учитывающий эту неопределенность",
@@ -1105,6 +1122,10 @@
             },
             "personal-stats-ranking": {
                 "header": "Изменение ранга / Матчи"
+            },
+            "notifications": {
+                "turn-start-message": "Ваш ход (ход {{value}})!",
+                "turn-start-title": "Ваш ход!"
             }
         },
         "battlegrounds": {
@@ -1136,7 +1157,8 @@
                 "all": "Все",
                 "protoss": "Протоссы",
                 "terran": "Терраны",
-                "zerg": "Зерги"
+                "zerg": "Зерги",
+                "battlecruiser": "Крейсер"
             },
             "filters": {
                 "hero": {
@@ -1678,7 +1700,9 @@
                     "tavern-brawl": "Потасовка",
                     "practice": "Против ИИ",
                     "ranked-twist": "Рейтинговый твист",
-                    "battlegrounds-duo": "Поля сражений (дуэты)"
+                    "battlegrounds-duo": "Поля сражений (дуэты)",
+                    "arena-underground": "Подпольная Арена",
+                    "arena-all": "Арена (все)"
                 },
                 "player": {
                     "all": "Все классы (игрок)"
@@ -1733,7 +1757,9 @@
                 "went-first-tooltip": "Ходил первым",
                 "went-second-tooltip": "Начинал с монеткой",
                 "bgs-prizes-tooltip": "Призы ярмарки Новолуния",
-                "bgs-anomalies-tooltip": "Аномалия в этой игре: {{value}}"
+                "bgs-anomalies-tooltip": "Аномалия в этой игре: {{value}}",
+                "watch-replay-online-button-tooltip": "Смотреть повтор онлайн (откроется в новом окне браузера)",
+                "watch-replay-online-button": "В браузере"
             },
             "class-icon-toggle": {
                 "label": "Использовать иконки классов",
@@ -2333,6 +2359,18 @@
         "colossus-damage": {
             "player": "Ваш Колосс нанесёт 1 + {{value}} урона, дважды",
             "opponent": "Колосс вашего оппонента нанесёт 1 + {{value}} урона, дважды"
+        },
+        "specific-cost": {
+            "opponent": "{{cardName}} вашего противника теперь стоит {{value}}",
+            "player": "Ваша карта {{cardName}} теперь стоит {{value}}"
+        },
+        "hero-attacks": {
+            "opponent": "Ваш противник атаковал героем {{times}} раз за эту игру",
+            "player": "Вы атаковали героем {{times}} раз за эту игру"
+        },
+        "cards-shuffled-into-your-deck": {
+            "player": "Вы замешали карты в колоду {{value}} раз",
+            "opponent": "Ваш противник замешал карты в колоду {{value}} раз"
         }
     },
     "loading": {
@@ -3204,9 +3242,10 @@
                 "d0nkey": {
                     "website-link": "здесь",
                     "instructions-page-link": "страница с инструкциями",
-                    "toggle-label": "Синхронизируйте повторы с d0nkey.top",
-                    "pitch": "d0nkey.top – это фанатский сайт, который собирает все колоды с официальных соревнований Hearthstone, а также колоды стримеров, чтобы помочь игрокам легко находить интересные варианты для игры. Синхронизация с d0nkey.top позволит вам делиться своими колодами с аудиторией (если вы стример) или поможет им создать лучшую базу данных для предоставления большего количества бесплатных услуг сообществу. Посетить сайт можно по ссылке {{websiteLink}}",
-                    "next": "Если вы решите синхронизироваться с d0nkey.top, Firestone будет отправлять им каждую вашу игру, которая будет отображаться в специальном разделе на сайте (который пока находится в разработке). Повторы по умолчанию будут приватными, если вы не стримите одновременно. Инструкции по настройке можно найти тут:  {{link}}."
+                    "toggle-label": "Синхронизируйте повторы с hsguru.com",
+                    "pitch": "hsguru.com – это фанатский сайт, который собирает все колоды с официальных соревнований Hearthstone, а также колоды стримеров, чтобы помочь игрокам легко находить интересные варианты для игры. Синхронизация с hsguru.com позволит вам делиться своими колодами с аудиторией (если вы стример) или поможет им создать лучшую базу данных для предоставления большего количества бесплатных услуг сообществу. Посетить сайт можно по ссылке {{websiteLink}}",
+                    "next": "Если вы решите синхронизироваться с hsguru.com, Firestone будет отправлять им каждую вашу игру, которая будет отображаться в специальном разделе на сайте (который пока находится в разработке). Повторы по умолчанию будут приватными, если вы не стримите одновременно. Инструкции по настройке можно найти тут:  {{link}}.",
+                    "toggle-collection-label": "Синхронизировать свою коллекцию с hsguru.com"
                 },
                 "hsdecks": {
                     "website-link": "здесь",
@@ -3285,7 +3324,9 @@
                     "bottom-right": "Внизу справа",
                     "top-left": "Сверху слева",
                     "top-right": "Сверху справа"
-                }
+                },
+                "show-notification": "Показывать уведомление Windows",
+                "show-notification-tooltip": "Показывать уведомление Windows в ваш ход или когда начинается фаза вербовки на Полях сражений"
             },
             "localization": {
                 "title": "Локализация",
@@ -3398,7 +3439,12 @@
                     "widget-background-color": "Цвет фона виджета",
                     "global": "Общие"
                 },
-                "reset-button": "Сбросить все"
+                "reset-button": "Сбросить все",
+                "decktracker": {
+                    "title": "Дек-трекер",
+                    "use-new-card-tile-style": "Новый стиль карт",
+                    "use-new-card-tile-style-tooltip": "Использовать новый стиль отображения карт в трекере или в списках колод"
+                }
             },
             "notifications": {
                 "title": "Уведомления"
@@ -3729,7 +3775,13 @@
                     "dragons-in-hand-label": "Драконов в руке",
                     "dragons-in-hand-tooltip": "Показать количество драконов в руке для карты {{cardName}}",
                     "tyrande-tooltip": "Показать количество оставшихся заклинаний, которые будут разыграны дважды",
-                    "tyrande-label": "Тиранда"
+                    "tyrande-label": "Тиранда",
+                    "cards-shuffled-into-your-deck-tooltip": "Считает, сколько раз вы замешивали карты в свою колоду",
+                    "hero-attacks-label": "Атаки героя",
+                    "hero-attacks-tooltip": "Показывает, сколько раз ваш герой атаковал в этой игре, если у вас в руке или колоде есть карты, которые могут извлечь из этого выгоду",
+                    "table-flip-tooltip": "Показывает стоимость {{cardName}}. Хотя это простой расчет, напоминание о стоимости может быть полезно в любой момент",
+                    "table-flip-label": "{{cardName}}",
+                    "cards-shuffled-into-your-deck-label": "Замешанные карты"
                 },
                 "discovery-zone-tooltip": "Когда эта функция активна, в трекере появляется новый раздел с вариантами раскопки, которые вам предлагаются. Это позволяет видеть связанные карты и выделять синергии с вашей колодой",
                 "discovery-zone-label": "Область раскопок",
@@ -3776,7 +3828,9 @@
                 "title": "Виджет максимальных ресурсов",
                 "toggle": "Показывать виджет",
                 "always-on-tooltip": "Показывать виджет, даже если максимальное здоровье / мана не изменились",
-                "toggle-tooltip": "Когда ваше максимальное здоровье / мана изменяется, показывает виджет, отображающий максимальные ресурсы, которые вы можете иметь в игре"
+                "toggle-tooltip": "Когда ваше максимальное здоровье / мана изменяется, показывает виджет, отображающий максимальные ресурсы, которые вы можете иметь в игре",
+                "show-horizontally": "Показывать горизонтально",
+                "show-horizontally-tooltip": "Показывать максимум ресурсов в одной строке, а не в одном столбце"
             }
         },
         "collection": {
@@ -3973,7 +4027,9 @@
                 "counter-elemental-tavern-stats-tooltip": "Отображать доп. усиление атаки/здоровья для Элементалей в таверне",
                 "counter-elemental-tavern-stats-label": "Характеристики элементалей в таверне",
                 "show-tribe-colors-tooltip": "Окрасить каждый виджет в цвет типа существ",
-                "counter-tavern-spells-buff-tooltip": "Отображать доп. усиление атаки/здоровья от ваших заклинаний таверны"
+                "counter-tavern-spells-buff-tooltip": "Отображать доп. усиление атаки/здоровья от ваших заклинаний таверны",
+                "minions-list-keep-in-bounds-label": "Держать в границах",
+                "minions-list-keep-in-bounds-tooltip": "Убедитесь, что список не выходит далеко за границы. Отключите, если не получается расположить список так, как вам нужно"
             },
             "session-widget": {
                 "title": "Виджет сессии",
@@ -4076,10 +4132,17 @@
                 "show-card-selection-overlay": "Оверлей выбора карт",
                 "tracker-size": "Размер трекера драфта",
                 "show-hero-selection-overlay": "Оверлей выбора героя",
-                "draft-overlay-size": "Размер оверлея драфта"
+                "draft-overlay-size": "Размер оверлея драфта",
+                "show-draft-tracker-pick-rate": "Показывать частоту выбора",
+                "show-impact-on-redraft": "Показывать статистику только при редактировании колоды",
+                "show-draft-tracker-pick-rate-tooltip": "Показывать информацию о частоте выбора каждой карты в вашей колоде в трекере драфта",
+                "show-draft-tracker-impact": "Показывать влияние",
+                "show-draft-tracker-impact-tooltip": "Показывать влияние на винрейт каждой карты в вашей колоде в трекере драфта",
+                "show-impact-on-redraft-tooltip": "Показывать статистику влияния / выбора только при удалении карт из колоды"
             },
             "menu": {
-                "general": "Общие"
+                "general": "Общие",
+                "draft-tracker": "Трекер драфта"
             },
             "session-widget": {
                 "title": "Итоги сезона",
@@ -4655,7 +4718,96 @@
         "uu-demon-warlock": "Двойной Нечестивый Демон Чернокнижник",
         "deckless-warlock": "Бесколодный Чернокнижник",
         "f-painlock": "Одиночный Ледяной Чернокнижник боли",
-        "u-deathrattle-warlock": "Одиночный Нечестивый Предсмертный хрип Чернокнижник"
+        "u-deathrattle-warlock": "Одиночный Нечестивый Предсмертный хрип Чернокнижник",
+        "bbu-menagerie-succ-dk": "BBU Зверинец на пиявках DK",
+        "bbu-succ-dk": "BBU DK на пиявках",
+        "bbb-succ-dk": "Кровавый DK на пиявках",
+        "defense-terran-shaman": "Защитный терран-шаман",
+        "ffu-deckless-warlock": "FFU Безколодный Чернокнижник",
+        "colifero-hunter": "Охотник на Колиферо",
+        "fu-wallow-warlock": "FU Иводрев Презренный Чернокнижник",
+        "holy-wrath-paladin": "Паладин с Гневом небес",
+        "menagerie-mage": "Зверинец Зоопарк",
+        "murloc-demon-hunter": "Мурлок Охотник на демонов",
+        "sd-starship-druid": "Звездолётный Друид на уроне от заклинаний",
+        "xl-cta-paladin": "XL CTA Паладин",
+        "xl-holy-wrath-paladin": "XL Паладин с Гневом небес",
+        "boar-priest": "Жрец на вепрях",
+        "nazmani-priest": "Назманийский Жрец",
+        "tog-priest": "Вихлепых Жрец",
+        "xl-hl-questline-priest": "XL Хайлендер Жрец на цепочке заданий",
+        "xl-shadow-priest": "XL Темный жрец",
+        "astral-communion-druid": "Друид на астральном единении",
+        "aviana-druid": "Друид на Авиане",
+        "aviana-priest": "Жрец на Авиане",
+        "bbb-starship-dk": "DK Звездолетный на крови",
+        "ffu-starship-warlock": "FFU Звездолетный Чернокнижник",
+        "f-wallow-warlock": "Лёдяной Иводрев Презренный Чернокнижник",
+        "imbue-druid": "Друид на зарядке",
+        "imbue-paladin": "Паладин на зарядке",
+        "u-wallow-warlock": "Нечестивый Иводрев Презренный Чернокнижник",
+        "menagerie-dh": "Зверинец DH",
+        "miracle-druid": "Чудо Друид",
+        "bfu-aggro-dk": "Радужный агро-DK",
+        "rainbow-menagerie-dk": "Радужный Зверинец DK",
+        "xl-hostage-mage": "XL Маг на заложниках",
+        "xl-imbue-mage": "XL Маг на зарядке",
+        "xl-seedlock": "XL Сид-лок",
+        "ffu-mill-warlock": "FFU Чернокнижник‑мельница",
+        "imbue-mage": "Маг на зарядке",
+        "imbue-shaman": "Шаман на зарядке",
+        "lynessa-libram-paladin": "Паладин на Линессе и манускриптах",
+        "ravenous-cliff-dive-dh": "DH на Ненасытном и Прыжке с обрыва",
+        "shadow-priest": "Темный жрец",
+        "xl-hooktusk-rogue": "XL Кривоклык Разбойник",
+        "imbue-priest": "Жрец на зарядке",
+        "protoss-imbue-mage": "Протосс-маг на зарядке",
+        "raylla-imbue-mage": "Райлла Маг на зарядке",
+        "skyla-imbue-mage": "Скайла Маг на зарядке",
+        "f-splendiferous-whizbang": "Непревзойденный Чудастер",
+        "unholy-dk": "Нечестивый DK",
+        "bbb-starship-succ-dk": "DK Кровавый Звездолетный на пиявках",
+        "deathrattle-dh": "Охотник на демонов на хрипах",
+        "ffu-menagerie-dk": "FFU Зверинец DK",
+        "ffu-zerg-dk": "FFU Зерг DK",
+        "bbu-starship-succ-dk": "BBU Звездолетный на пиявках DK",
+        "location-wallow-warlock": "Иводрев Презренный Чернокнижник на областях",
+        "wallow-warlock": "Иводрев Презренный Чернокнижник",
+        "terran-warrior": "Терран-воин",
+        "ysondre-warrior": "Воин на Исондре",
+        "armor-dh": "Охотник на демонов на броне",
+        "bbf-menagerie-succ-dk": "BBF Зверинец на пиявках DK",
+        "hog-demon-hunter": "Охотник на демонов на Кабанах",
+        "xl-jtu-quest-mage": "XL Квест-маг Ун'Горо",
+        "xl-malygos-druid": "XL Малигос Друид",
+        "xl-miracle-druid": "XLЧудо Друид",
+        "xl-spell-damage-druid": "XL Друид на уроне от заклинаний",
+        "xl-hl-jtu-quest-mage": "XL Хайлендер Квест-маг Ун'Горо",
+        "ashamane-rogue": "Пеплошкурая Разбойник",
+        "asteroid-imbue-shaman": "Шаман на астероидах и зарядке",
+        "bbu-even-dk": "BBU Четный DK",
+        "dark-gift-rogue": "Разбойник на тёмном даре",
+        "uu-starship-warlock": "UU Звездолетный Чернокнижник",
+        "jtu-quest-mage": "Квест-маг Ун'Горо",
+        "linecracker-druid": "Пробойник Друид",
+        "mechathun-druid": "Друид на Меха-К'Туне",
+        "old-aggro-druid": "Старый Агро-друид",
+        "questline-dh": "Охотник на демонов на цепочке заданий",
+        "uuu-aggro-plague-dk": "Нечестивый Чумной Агро-DK",
+        "xl-aviana-druid": "XL Друид на Авиане",
+        "xl-buu-starship-dk": "XL BUU Звездолётный DK",
+        "xl-draenei-demon-hunter": "XL Охотник на демонов на дренеях",
+        "sou-quest-shaman": "SOU Квест Шаман",
+        "xl-odd-warrior": "XL Нечетный Воин",
+        "xl-taunt-warrior": "XL Воин на провокациях",
+        "tog-warrior": "Вихлепых Воин",
+        "xl-uu-highlander-warlock": "XL UU Хайлендер Чернокнижник",
+        "xl-mill-rogue": "XL Мельница-Разбойник",
+        "chad-warrior": "Чад Воин",
+        "dragon-priest": "Жрец на драконах",
+        "hooktusk-rogue": "Кривоклык Разбойник",
+        "jtu-quest-rogue": "Квест-Разбойник Ун'Горо",
+        "ashtongue-warlock": "Пеплоуст Чернокнижник"
     },
     "widgets": {
         "max-resources": {
