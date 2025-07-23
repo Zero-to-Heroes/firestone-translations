@@ -122,7 +122,8 @@
             "into_the_emerald_dream": "漫游翡翠梦境",
             "gift": "活动",
             "old_core_230": "旧核心系列",
-            "embers_of_the_world_tree": "世界之树的余烬"
+            "embers_of_the_world_tree": "世界之树的余烬",
+            "lost_city_of_ungoro": "安戈洛龟途"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -205,7 +206,12 @@
             "golden-into-the-emerald-dream": "漫游翡翠梦境 金色卡牌包",
             "into-the-emerald-dream": "漫游翡翠梦境 卡牌包",
             "golden-classic": "经典模式 金色卡牌包",
-            "into-the-emerald-dream-catch-up": "漫游翡翠梦境 追赶包"
+            "into-the-emerald-dream-catch-up": "漫游翡翠梦境 追赶包",
+            "golden-year-of-the-raptor": "迅猛龙年 金色卡牌包",
+            "golden-the-lost-city": "安戈洛龟途 金色卡牌包",
+            "the-lost-city": "安戈洛龟途 卡牌包",
+            "the-lost-city-catch-up": "安戈洛龟途 追赶包",
+            "year-of-the-raptor": "迅猛龙年 卡牌包"
         },
         "ranks": {
             "constructed": {
@@ -361,7 +367,8 @@
                 "dust": "奥术之尘",
                 "pack": "卡牌包",
                 "gold": "金币",
-                "card": "卡牌"
+                "card": "卡牌",
+                "ticket": "竞技场通票"
             },
             "controls": {
                 "bug-button-tooltip": "提交错误",
@@ -590,7 +597,9 @@
                 "reward-gold": "金币奖励",
                 "reward-dust-tooltip": "您在竞技场中赢得的总/平均奥术之尘数量。仅包括我们拥有完整奖励数据的比赛",
                 "average-match-time": "对局时长",
-                "average-match-time-tooltip": "你的平均对局时长"
+                "average-match-time-tooltip": "你的平均对局时长",
+                "reward-tickets-tooltip": "你在竞技场中赢得的竞技场通票总数/平均数。仅包含我们记录的拥有完整奖励数据的轮次。",
+                "reward-tickets": "通票奖励"
             }
         },
         "collection": {
@@ -689,7 +698,8 @@
                     "hero_power": "英雄技能",
                     "battleground_spell": "战棋法术",
                     "battleground_quest_reward": "战棋任务奖励",
-                    "battleground_trinket": "饰品（酒馆战棋）"
+                    "battleground_trinket": "饰品（酒馆战棋）",
+                    "pet": "宠物"
                 },
                 "set": "扩展包：",
                 "rarity": "稀有度：",
@@ -1147,7 +1157,8 @@
                 "leaderboard": "排行榜",
                 "trinkets": "饰品",
                 "your-stats": "你的统计概况",
-                "cards": "卡牌"
+                "cards": "卡牌",
+                "comps": "流派"
             },
             "tribes": {
                 "beast": "野兽",
@@ -1444,6 +1455,26 @@
                         "level": "升{{value}}本",
                         "hero-power": "英雄技能"
                     }
+                }
+            },
+            "compositions": {
+                "contributors": {
+                    "info": "结合了纯粹的大数据与顶级酒馆战棋玩家的见解。",
+                    "text": "由顶级酒馆战棋玩家精心打造的流派和技巧",
+                    "header": "由职业玩家提供"
+                },
+                "columns": {
+                    "core-cards": "核心卡牌",
+                    "expert-rating-tooltip": "基于专业玩家见解的强度等级",
+                    "position-tooltip": "基于统计数据的平均最终排名。警告：这可能会低估那些版本早期就实装上线的流派，因为在早期比赛中会检测到更多这样的对局。",
+                    "addon-cards": "附加组件",
+                    "name": "流派",
+                    "position": "位次",
+                    "expert-rating": "等级",
+                    "expert-difficulty": "困难",
+                    "expert-difficulty-tooltip": "基于职业玩家见解的难度评级",
+                    "first-percent": "强度",
+                    "first-percent-tooltip": "反映了此流派在所有取得第一名的对局中所占的百分比，并根据各种偏差进行了调整。"
                 }
             }
         },
@@ -2393,6 +2424,10 @@
         "hero-attacks": {
             "player": "本局对战中你的英雄攻击了 {{times}} 次",
             "opponent": "本局对战中对手英雄攻击了 {{times}} 次"
+        },
+        "dive-the-golakka-depths": {
+            "player": "你在本局对战中已完成{{cardName}}任务{{value}}次",
+            "opponent": "对手在本局对战中已完成{{cardName}}任务{{value}}次"
         }
     },
     "loading": {
@@ -2687,7 +2722,8 @@
             "health-buff": "血量增益",
             "spell-schools": "法术派系"
         },
-        "tourist": "游客：{{className}}"
+        "tourist": "游客：{{className}}",
+        "burns-in": "{{value}} 回合后弃掉"
     },
     "battlegrounds": {
         "menu": {
@@ -3193,7 +3229,8 @@
             "app": "应用",
             "global": "全局",
             "integrations": "整合",
-            "troubleshooting": "故障排除"
+            "troubleshooting": "故障排除",
+            "replay": "回放"
         },
         "general": {
             "menu": {
@@ -3810,7 +3847,11 @@
                     "table-flip-tooltip": "显示 {{cardName}} 的费用。虽然计算起来很简单，但随时提醒用户法力水晶消耗还是很有用的",
                     "table-flip-label": "{{cardName}}",
                     "hero-attacks-label": "英雄攻击次数",
-                    "hero-attacks-tooltip": "显示你的英雄在本场对战中的攻击次数（如果你的手牌或套牌中的卡牌可以从该信息中获益）"
+                    "hero-attacks-tooltip": "显示你的英雄在本场对战中的攻击次数（如果你的手牌或套牌中的卡牌可以从该信息中获益）",
+                    "disable-all": "禁用全部计数器",
+                    "dive-the-golakka-depths-label": "圣骑士鱼人任务",
+                    "dive-the-golakka-depths-tooltip": "显示你已完成 {{cardName}} 任务的次数",
+                    "enable-all": "启用全部计数器"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -4194,6 +4235,15 @@
                 "show-groups-in-game-tooltip": "关闭此项可在游戏中隐藏分组信息",
                 "show-runs-in-game-tooltip": "关闭此项可在游戏中隐藏最近轮次",
                 "number-of-runs-tooltip": "显示轮次详情时，显示的最大运轮次数（最近的位于最顶部）"
+            }
+        },
+        "replay": {
+            "menu": {
+                "general": "通用"
+            },
+            "general": {
+                "hide-games-vs-ai": "隐藏与AI对阵的对局",
+                "hide-games-vs-ai-tooltip": "查看完整回放列表时隐藏与AI对阵的对局"
             }
         }
     },
@@ -4850,5 +4900,28 @@
             "max-mana-tooltip": "最大法力水晶",
             "max-coins-tooltip": "铸币上限"
         }
+    },
+    "bgs-comp": {
+        "boost_quilboar": "宝石流野猪人",
+        "cycle_elementals": "循环流元素",
+        "deathrattle_naga": "亡语流纳迦",
+        "electron_mechs": "磁力流机械",
+        "beetle_beasts": "甲虫流野兽",
+        "buff_shop_demons": "酒馆Buff流恶魔",
+        "silithid_beasts": "钻地虫流野兽",
+        "spell_buff": "法术增益",
+        "shop_eating_demons": "酒馆吞噬流恶魔",
+        "end_of_turn_elementals": "回合结束流元素",
+        "kalecgos_dragons": "卡雷苟斯流龙族",
+        "poet_dragons": "诗心龙流龙族",
+        "hand_buff_murlocs": "手牌Buff流鱼人",
+        "stew_murlocs": "海鲜乱炖流鱼人",
+        "scam_murlocs": "下毒流鱼人",
+        "groundbreaker_naga": "碎地者流纳迦",
+        "overflow_undead": "挤爆流亡灵",
+        "self_damage_demons": "自伤流恶魔",
+        "boost_spell_naga": "法术流纳迦",
+        "attack_undead": "攻击提升流亡灵",
+        "apm_pirates": "倒转流海盗"
     }
 }
