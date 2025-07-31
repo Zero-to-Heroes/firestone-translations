@@ -308,7 +308,9 @@
             "logged-in-as-header": "Eingeloggt als {{value}}",
             "not-logged-in-header": "Anmelden, um Ihren Fortschritt online zu speichern",
             "communities-header": "Gilden",
-            "profile-overview-header": "Übersicht"
+            "profile-overview-header": "Übersicht",
+            "ranked-header": "Gewertet",
+            "profile-header": "Profil"
         },
         "global": {
             "reward": {
@@ -328,7 +330,7 @@
                 "default-cancel-button": "Abbrechen",
                 "multiselect-validation-button": "Übern.",
                 "multiselect-validation-error-tooltip": "Ungültige Auswahl (bitte kontaktiere die Entwickler für eine genauere Fehlermeldung, das ist so nicht hilreich)",
-                "multiselect-clear-button": "Leeren",
+                "multiselect-clear-button": "Löschen",
                 "multiselect-reset-button": "Standard",
                 "hotkey-text": "Anzeigen/Verbergen:",
                 "no-hotkey-assigned": "Kein Hotkey zugeordnet",
@@ -393,13 +395,24 @@
                     "past-seven": "Vergangene 7 Tage",
                     "last-patch": "Letzter Patch",
                     "past-100": "Vergangene 100 Tage",
-                    "past-30": "Vergangene 30 Tage"
+                    "past-30": "Vergangene 30 Tage",
+                    "past-20": "Vergangene 20 Tage"
                 },
                 "card-class": {
                     "no-neutral": "Neutrale auslassen"
                 },
                 "high-win-runs": {
                     "wins": "{{value}}+ Siege"
+                },
+                "mode": {
+                    "arena-legacy-tooltip": "Alle Spiele aus dem ehemaligen Format, vor der Teilung in Arena / Underground",
+                    "arena-underground": "Undergroundmodus",
+                    "arena-tooltip": "Alle Arenaspiele (Underground ausgenommen)",
+                    "arena": "Arena",
+                    "arena-legacy": "Ehemaliges Arenasystem",
+                    "all-tooltip": "Alle Arenaspiele (neue Formate und altes Format)",
+                    "all": "Alle Arenaspiele",
+                    "arena-underground-tooltip": "Alle Spiele aus dem Undergroundmodus, nach der Teilung in Arena / Underground"
                 }
             },
             "stats": {
@@ -411,7 +424,8 @@
                 "most-faced-classes": "häufig gesehene Klassen",
                 "best-winrate-against": "Beste Gewinnrate gegen",
                 "stat-tooltip": "Du hast {{numberOfRuns}} Runden und {{totalMatches}} Spiele mit {{playerClass}} mit einer {{winrate}}% Gewinnrate gespielt",
-                "faced-tooltip": "Du hast {{opponentClass}} {{totalMatches}} mal mit einer {{winrate}}% Gewinnrate konfrontiert"
+                "faced-tooltip": "Du hast {{opponentClass}} {{totalMatches}} mal mit einer {{winrate}}% Gewinnrate konfrontiert",
+                "total-games-played": "Anzahl gespielte Spiele"
             },
             "runs": {
                 "view-run-button": "Durchlauf ansehen",
@@ -429,7 +443,8 @@
                 "header-deck-total": "Spiele gesamt",
                 "header-deck-winrate-tooltip": "Die Gewinnrate von Decks, die diese Karte beinhalten",
                 "header-pickrate": "Auswahlrate",
-                "header-deck-total-tooltip": "Die Anzahl an Spielen, bei denen diese Karte im Deck war"
+                "header-deck-total-tooltip": "Die Anzahl an Spielen, bei denen diese Karte im Deck war",
+                "header-deck-winrate-impact": "Einfluss"
             },
             "draft": {
                 "hero-tier": "Rang",
@@ -439,7 +454,9 @@
             "class-tier-list": {
                 "header-winrate": "Gewinnrate",
                 "tier": "Rang {{value}}",
-                "header-hero-name": "Name"
+                "header-hero-name": "Name",
+                "header-placement-distribution": "Siegeprofil",
+                "header-placement-distribution-tooltip": "Zeigt die Verteilung der Gesamtsiege einer Klasse in Relation zum Durchschnitt. "
             },
             "personal-stats": {
                 "header-class-name": "Klasse",
@@ -756,7 +773,8 @@
                     "past-30": "Vergangene 30 Tage",
                     "past-7": "Vergangene 7 Tage",
                     "past-3": "Letzten 3 Tage",
-                    "past-1": "Vergangener Tag"
+                    "past-1": "Vergangener Tag",
+                    "past-20": "Vergangene 20 Tage"
                 },
                 "deck-search": {
                     "placeholder": "Suche Deck...",
@@ -876,7 +894,14 @@
                 "view-details-cta": "Klicken, um mehr Details zu sehen!",
                 "class-header": "Klasse",
                 "archetype-header": "Archetyp",
-                "matchup-vs-tooltip": "vs. {{className}}"
+                "matchup-vs-tooltip": "vs. {{className}}",
+                "core-cards-header": "Notwendige Karten",
+                "winrate-first-header": "Erster Zug",
+                "winrate-second-header": "Mit der Münze",
+                "archetype": {
+                    "archetype-core-cards-header": "Notwendige Karten"
+                },
+                "cost-header": "Kosten"
             }
         },
         "battlegrounds": {
@@ -884,7 +909,7 @@
                 "heroes": "Helden",
                 "meta-heroes": "Helden",
                 "quests": "Quests",
-                "rating": "Bewertung",
+                "rating": "Wertung",
                 "perfect-games": "Perfekte Spiele",
                 "records": "Rekorde",
                 "simulator": "Simulator",
@@ -914,7 +939,8 @@
                     "average-position": "Ø Position",
                     "games-played": "Gespielte Partien",
                     "last-played": "Zuletzt gespielt",
-                    "mmr": "MMR gesamt"
+                    "mmr": "MMR gesamt",
+                    "pick-rate": "Auswahlrate"
                 },
                 "rank": {
                     "all": "Alle Ränge",
@@ -930,7 +956,8 @@
                     "past-three": "Vergangene 3 Tage",
                     "last-patch": "Letzter Patch",
                     "past-100": "Vergangene 100 Tage",
-                    "past-30": "Vergangene 30 Tage"
+                    "past-30": "Vergangene 30 Tage",
+                    "all-time": "Gesamte Zeit"
                 },
                 "tier": {
                     "all-tiers": "Alle Stufen",
@@ -958,27 +985,35 @@
                 },
                 "anomaly": {
                     "all-anomalies": "Alle Anomalien"
+                },
+                "card-type": {
+                    "minion": "Diener",
+                    "spell": "Zauber"
                 }
             },
             "personal-stats": {
                 "hero": {
                     "average-position": "Ø Position",
                     "games-played": "Gespielte Partien",
-                    "net-mmr": "MMR gesamt"
+                    "net-mmr": "Ø Wertung",
+                    "empty-state-text": "Für die gewählten Filter wurden keinen Daten gefunden. Wenn du nach Daten für Schmuckstücke suchst, leere zuerst deinen lokalen Cache (Einstellungen > Allgemein > Daten > Lokalen Cache löschen)",
+                    "net-mmr-tooltip": "Ø Gewinn/Verlust von Wertung pro Spiel"
                 },
                 "hero-details": {
                     "tabs": {
-                        "mmr": "MMR",
+                        "mmr": "Wertung",
                         "final-warbands": "Letzte Trupps",
                         "warband-stats": "Trupp Statistiken",
-                        "winrate-stats": "Kampf-Gewinnrate"
+                        "winrate-stats": "Kampf-Gewinnrate",
+                        "strategies": "Strategien"
                     },
                     "stats": {
                         "title": "Allgemeine Statistiken",
                         "games-played": "Gespielte Partien",
                         "average-position": "Ø Position",
                         "top-1": "Top 1",
-                        "top-4": "Top 4"
+                        "top-4": "Top 4",
+                        "community-value-tooltip": "Durchschnittlicher Wert aus der Community"
                     },
                     "last-warbands": {
                         "title": "Letzte {{value}} Spiele",
@@ -1016,7 +1051,7 @@
                 },
                 "rating": {
                     "empty-state-message": "Beginne Schlachtfeld zu spielen, um Informationen zu erhalten",
-                    "axis-label": "Bewertung"
+                    "axis-label": "Wertung"
                 },
                 "records": {
                     "columns": {
@@ -1062,7 +1097,7 @@
                 "player-data-points": "{{value}}",
                 "header-quest-details": "Quest",
                 "reward-search-placeholder": "Belohnung suchen...",
-                "header-net-mmr": "MMR gesamt",
+                "header-net-mmr": "Ø Wertung",
                 "quest-search-placeholder": "Quest suchen...",
                 "tier": "Rang {{value}}",
                 "header": "Helden-Rangliste ({{value}} Spiele) ",
@@ -1082,7 +1117,22 @@
                 "player-average-position-tooltip": "Deine durchschnittliche Platzierung mit diesem Held",
                 "header-pick-rate-high-mmr-tooltip": "Auswahlrate für die obersten {{value}}% der Spieler",
                 "header-combat-winrate": "Kampf-Gewinnrate",
-                "header-average-turns-to-complete": "Ø Züge zum Abschließen"
+                "header-average-turns-to-complete": "Ø Züge zum Abschließen",
+                "card-search-placeholder": "Karte suchen...",
+                "header-average-position-high-mmr": "Platzierung oberste {{value}}%",
+                "header-expand-all-button": "Alles ausklappen",
+                "header-tribes": "Stärkste Dienertypten",
+                "header-tribes-tooltip": "Diese Dienertypen haben den größten positiven Einfluss auf die durchschnittliche Platzierung des Helden, wenn sie im Spiel sind",
+                "header-collapse-all-button": "Alles einklappen",
+                "learn-more": "Wie wurde das berechnet?",
+                "header-group-difficulty-button": "Gruppe",
+                "header-impact-tooltip": "Änderung der durchschnittlichen Platzierung, wenn diese Karte gespielt wird",
+                "tribe-info-tooltip": "Wenn {{ tribe }} im Spiel sind, verbessert sich die durchschnittliche Platzierung dieses Helden um {{value}}",
+                "header-impact": "Einfluss",
+                "header-average-position-high-mmr-tooltip": "Durchschnittliche Platzierung für die obersten {{value}}% der Spieler",
+                "header-card-details": "Karte",
+                "trinket-search-placeholder": "Schmuckstück suchen...",
+                "header-pick-rate-high-mmr": "Auswahlrate der top-{{value}}%"
             },
             "strategies": {
                 "curve": {
@@ -1109,6 +1159,26 @@
             },
             "bgs-tier-list": {
                 "header": "Questrangliste ({{value}} Spiele) "
+            },
+            "compositions": {
+                "columns": {
+                    "name": "Komposition",
+                    "position": "Platzierung",
+                    "first-percent": "Stärke",
+                    "position-tooltip": "Durchschnittliche Platzierung basierend auf den Daten. Achtung: Kompositionen, die häufig früh im Spiel aufgebaut werden, sind hier vielleicht unterbewertet, weil spätere Kompositionen nicht registriert werden, wenn ein Spieler früh stirbt.",
+                    "core-cards": "Notwendige Karten",
+                    "addon-cards": "Add-ons",
+                    "expert-rating": "Wertung",
+                    "expert-rating-tooltip": "Stärke laut Expertenmeinung",
+                    "expert-difficulty": "Schwierigkeit",
+                    "expert-difficulty-tooltip": "Schwierigkeitsbewertung laut Expertenmeinung",
+                    "first-percent-tooltip": "Anteil aller ersten Plätze, die mit dieser Komposition erzielt wurden, leicht verändert um Verzerrungen in den Daten zu beheben."
+                },
+                "contributors": {
+                    "info": "Kombiniert Rohdaten mit dem Wissen der besten Spieler.",
+                    "header": "Von Experten unterstützt",
+                    "text": "Kompositionen und Tipps wurden von den besten Spielern erstellt"
+                }
             }
         },
         "duels": {
@@ -1203,7 +1273,7 @@
                 "number-of-games-tooltip": "{{totalRuns}} Durchläufe aufgezeichnet ({{popularity}} Beliebtheit)"
             },
             "run": {
-                "rating": "Bewertung",
+                "rating": "Wertung",
                 "view-deck-button": "Deck ansehen",
                 "view-run-button": "Durchlauf ansehen",
                 "minimize-run-button": "Ansicht minimieren",
@@ -1222,7 +1292,7 @@
             },
             "leaderboard": {
                 "rank": "Rang",
-                "rating": "Bewertung",
+                "rating": "Wertung",
                 "name": "Name",
                 "region": "Region"
             },
@@ -1330,7 +1400,7 @@
             "replay-info": {
                 "rank-issue-tooltip": "Wir konnten den Rang des Spielers nicht abrufen",
                 "versus": "VS.",
-                "mmr": "MMR",
+                "mmr": "Wertung",
                 "show-stats-button": "Statistiken",
                 "show-stats-button-tooltip": "Zeige Statistiken",
                 "watch-replay-button": "Ansehen",
@@ -1423,7 +1493,8 @@
         "profile": {
             "match-stats": {
                 "no-data": {
-                    "title": "Keine Daten für diesen Spielmodus"
+                    "title": "Keine Daten für diesen Spielmodus",
+                    "ranked": "Spiele ein gewertetes Spiel oder starte Hearthstone, um mit der Aufzeichnung zu beginnen"
                 },
                 "header-total-matches": "Spiele insgesamt",
                 "header-player-class": "Name",
@@ -1441,12 +1512,14 @@
                 "leaderboards": {
                     "name-header": "Name",
                     "empty-leaderboard": "Es sind noch keine Spieler auf dieser Bestenliste",
-                    "rank-header": "Rang"
+                    "rank-header": "Rang",
+                    "rating-header": "Bewertung"
                 },
                 "communities": {
                     "name-header": "Name",
                     "games-header": "Spiele letzte Woche",
-                    "members-header": "Mitglieder"
+                    "members-header": "Mitglieder",
+                    "empty-communities": "Du bist noch nicht Mitglied einer Gilde"
                 },
                 "menu": {
                     "leaderboards": "Bestenlisten",
@@ -1473,7 +1546,8 @@
                 "join-text": "Einer Gilde beitreten",
                 "create-text-disabled-tooltip": "Dieses Feature ist in der Beta und wird noch weiterentwickelt. Wenn du ein Streamer bist und eine Gilde erstellen möchtest, schreibe mir bitte auf Discord (link oben rechts in der App)",
                 "create-text": "Gilde erstellen"
-            }
+            },
+            "what-are-guilds": "Was sind Gilden?"
         },
         "lottery": {
             "achievements-progress": "{{current}} / {{max}}, {{thisGame}} dieses Spiel",
@@ -1509,7 +1583,8 @@
             "subscribe-button-upgrade": "Upgrade",
             "unsubscribe-button": "abbestellen",
             "billing": {
-                "click-to-copy-code": "Klicken, um den Code in die Zwischenablage zu kopieren"
+                "click-to-copy-code": "Klicken, um den Code in die Zwischenablage zu kopieren",
+                "yearly-subtext": "(Spare  {{value}}%)"
             }
         }
     },
@@ -1858,7 +1933,10 @@
         "unknown-mana-minion": "Unbekannter {{manaCost}} Mana Diener",
         "card-tooltip-scroll-text": "Halte \"Shift\" gedrückt, während du den Cursor wegbewegst, um dieses Fenster offenzuhalten. Drücke \"q\", um es zu schließen.",
         "guessed-info": {
-            "header": "Zusätzliche Informationen"
+            "header": "Zusätzliche Informationen",
+            "possible-cards": "Mögliche Karten",
+            "cost": "Kosten",
+            "spell-schools": "Zauberschulen"
         }
     },
     "battlegrounds": {
@@ -1975,7 +2053,11 @@
             "import-button-tooltip": "Simulationscode importieren, um den Simulator mit Leben zu füllen",
             "reposition-button": "Neu positionieren",
             "reposition-button-firstpass": "Erster Durchlauf...",
-            "clear-button": "Leeren"
+            "clear-button": "Löschen",
+            "global-info-title-tooltip": "Klicken, um globale Effekte zu verändern",
+            "global-info-title": "Globale Effekte",
+            "quest-reward-header": "Questbelohnungen",
+            "turn-winrate-graph-title": "Ø Gewinnrate pro Zug"
         },
         "hero-stats": {
             "matches-played-label": "Gespielte Spiele",
@@ -2029,14 +2111,17 @@
                 "buddies-title": "Erhaltene Partner",
                 "trinkets-empty-state": "Keine Schmuckstücke",
                 "empty-state-subtitle": "Wähle einen Held und warte auf die Gegner!",
-                "mmr-tooltip": "Das angebliche MMR dieses Spielers. Wir gleichen anhand des Spielernamens mit der Bestenliste ab, also könnte es falsch sein, besonders bei geringerem MMR.",
-                "buddies-empty-state": "Keine Partner"
+                "mmr-tooltip": "Die angebliche Wertung dieses Spielers. Wir gleichen anhand des Spielernamens mit der Bestenliste ab, also könnte es falsch sein, besonders bei geringerer Wertung.",
+                "buddies-empty-state": "Keine Partner",
+                "rewards-title": "Questbelohnungen",
+                "reward-turn-tooltip": "Questbelohnung erhalten in Zug {{turn}}",
+                "buddy-tooltip-golden": "Erhielt die zwei weiteren Partner in Zug {{turn}}"
             },
             "minions-list": {
                 "reset-button": "Zurücksetzen",
                 "highlight-tribe": "Klicken, um alle {{value}}s im Gasthaus hervorzuheben",
                 "unhighlight-tribe": "Klicke, um {{value}}s im Gasthaus nicht hervorzuheben",
-                "mechanics-tier-tooltip": "Zeige alle Karten mit {{value}}. Rechtsklick, um alle {{value}}Karten im Gasthaus hervorzuheben",
+                "mechanics-tier-tooltip": "Zeige alle Karten mit {{value}}. Rechtsklick, um alle {{value}} Karten im Gasthaus hervorzuheben",
                 "buddies-tier-tooltip": "Zeige alle Partner im Spiel",
                 "rules": {
                     "missing-board-linked": " oder ",
@@ -2055,7 +2140,7 @@
                     "mechanics": "Fähigkeiten"
                 },
                 "minion-banned-tooltip": "Diese Karte ist aufgrund der aktiven Anomalie gebannt",
-                "highlight-minion": "Diese Karte anpinnen, um sie im Gasthaus hervorzuheben",
+                "highlight-minion": "Diese Karte anpinnen, um sie im Gasthaus hervorzuheben. Du kannst auch auf Karten in der Dienerliste rechtsklicken, um sie hervorzuheben",
                 "unhighlight-minion": "Pinne diese Karte ab, um sie nicht mehr im Gasthaus hervorzuheben",
                 "highlight-mechanics": "Klicken, um alle {{value}} Karten im Gasthaus hervorzuheben",
                 "unhighlight-mechanics": "Klicken, um {{value}} Karten im Gasthaus nicht mehr hervorzuheben",
@@ -2065,9 +2150,19 @@
                     "hero": "Gebannt, wenn mit {{heroName}} gespielt wird"
                 },
                 "compositions": {
-                    "add-ons-header": "Add-ons"
+                    "add-ons-header": "Add-ons",
+                    "add-ons-header-tooltip": "Karten, die gut zur Komposition dazupassen",
+                    "core-cards-header-tooltip": "Karten, die für die Komposition unbedingt nötig sind",
+                    "core-cards-header": "Notwendige Karten",
+                    "difficulty": {
+                        "easy": "Einfach",
+                        "medium": "Mittel",
+                        "hard": "Schwer",
+                        "very-hard": "Sehr schwer"
+                    }
                 },
-                "tribe-category-tooltip": "Alle{{tribeName}} Karten anzeigen. Rechtsklick, um alle {{tribeName}} Karten im Gasthaus hervorzuheben."
+                "tribe-category-tooltip": "Alle{{tribeName}} Karten anzeigen. Rechtsklick, um alle {{tribeName}} Karten im Gasthaus hervorzuheben.",
+                "spells-tier-tooltip": "Zauber"
             },
             "quests": {
                 "sample-size": "Spiele gesamt:",
@@ -2405,7 +2500,10 @@
                     "past-7": "Letzte 7 Tage"
                 },
                 "disable-local-cache-tooltip": "Deaktiviert das lokale Speichern deiner Spiele. Dies wird die App dazu zwingen, alle deine Spiele vom Server zu erhalten, was die Ladezeit der App etwas erhöht. Durch das Deaktivieren wird auch der bereits bestehende lokale Cache gelöscht.",
-                "arena-rewards": "Arenabelohnungen"
+                "arena-rewards": "Arenabelohnungen",
+                "clear-local-cache-tooltip": "Löscht alle im lokalen Cache gespeicherten Daten. Dadurch wird die App beim nächsten Start alles erneut vom Server abfragen. Empfohlen, wenn du zwischenzeitlich ohne Firestone gespielt hast.",
+                "clear-button-label": "Löschen",
+                "clear-local-cache": "Lokalen Cache löschen"
             },
             "discord": {
                 "discord-presence-label": "Discord Rich Presence",
@@ -2541,7 +2639,7 @@
                     "vanessa-label": "Vanessa van Cleef",
                     "lady-darkvein-label": "Lady Dunkelader",
                     "grey-sage-parrot-label": "Grauweisenpapagei",
-                    "multicaster-label": "Multiwirkerin",
+                    "multicaster-label": "Zauberschulen",
                     "coral-keeper-label": "Korallenhüterin",
                     "cards-drawn-label": "Gezogene Karten",
                     "gardens-grace-label": "Segen der Gärten",
@@ -2550,7 +2648,10 @@
                     "multicaster-tooltip": "Zeigt die Zaubertypen, von denen du bisher einen Zauber gewirkt hast",
                     "bonelord-frostwhisper-tooltip": "Nachdem Knochenfürst Frostraune gestorben ist, behalte dir Anzahl der verbleibenden Runden im Auge",
                     "anachronos-tooltip": "Nachdem Anachronos gespielt wurde, verfolge die verbleibenden Runden bevor die Diener zurückkommen",
-                    "wheel-of-death-tooltip": "Nachdem Du {{cardName}} gespielt hast, zeige die Anzahl der Runden, bevor Dein Gegner stirbt"
+                    "wheel-of-death-tooltip": "Nachdem Du {{cardName}} gespielt hast, zeige die Anzahl der Runden, bevor Dein Gegner stirbt",
+                    "hero-attacks-tooltip": "Zeigt, wie oft dein Held in diesem Spiel angegriffen hat, wenn du Karten auf der Hand oder im Deck hast, für die das relevant ist",
+                    "anachronos-label": "Anachronos",
+                    "hero-attacks-label": "Heldenangriffe"
                 }
             },
             "duels": {
@@ -2720,6 +2821,9 @@
             "packs": {
                 "overview-title-tooltip": "Die GESAMTANZAHL an Packungen, die du erhalten hast, inklusive ungeöffnete"
             }
+        },
+        "ranked": {
+            "title-label-global": "Gewertet"
         }
     },
     "arena": {
