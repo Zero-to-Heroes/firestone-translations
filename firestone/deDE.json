@@ -1144,15 +1144,17 @@
                         "turn": "Zug {{value}}"
                     },
                     "notes": {
-                        "pocky": "Eine sehr nischenhafte Verwendung für 1-Kosten-Heropowers",
+                        "pocky": "Eine sehr nischenhafte Verwendung für 1-kostende Heldenfähigkeiten",
                         "toki": "Ein Weg, um 1-Kosten Heropowers zu verwenden, die kein Tempo bereitstellen",
                         "basic-yogg": "Verwendet eine 2-Kosten-Heropower, um schneller auf Tier 3 zu kommen.",
-                        "aggro-yogg": "Verwendet eine 2-Kosten-Heropower, um ein gutes Tier 1s aufs Bord zu bekommen, bevor schneller auf 3 zu leveln"
+                        "aggro-yogg": "Verwendet eine 2-Kosten-Heropower, um ein gutes Tier 1s aufs Bord zu bekommen, bevor schneller auf 3 zu leveln",
+                        "warrior": "Eine sehr gute Linie, wenn die Wirtschaft auf Stufe 1 und schnelle Drillinge stark sind.",
+                        "extended-warrior": "Eine sehr gute Linie, wenn die Wirtschaft auf Stufe 1 und schnelle Drillinge stark sind. Diese Variante ist eine Ausweichoption für den Fall, dass ein Drilling noch nicht aufgetaucht ist, wenn man die normale Kriegerkurve spielt."
                     },
                     "name": {
-                        "3-on-3-bis": "3 gegen 3 (Level 8)",
-                        "4-on-4": "4 gegen 4",
-                        "3-on-3": "3 gegen 3 (Level 8)"
+                        "3-on-3-bis": "3 auf 3 (Level Zug 9)",
+                        "4-on-4": "4 auf 4",
+                        "3-on-3": "3 auf 3 (Level Zug 8)"
                     }
                 },
                 "date": "Veröffentlicht am {{date}} (Patch {{patch}})"
@@ -1233,6 +1235,9 @@
                 },
                 "passive-treasures": {
                     "all": "Alle Passiven"
+                },
+                "deck-sort": {
+                    "winrate": "Ø Siege"
                 }
             },
             "deck-stat": {
@@ -1465,7 +1470,8 @@
             "ad-tip-premium": "Premium",
             "tip-0": "Für Feedback oder Bugs, oder um einfach etwas zu reden, besuche uns gerne auf Discord (Link oben rechts)!",
             "contextual_related_cards": "Bewege die Maus über bestimmte Karten im Tracker, um Details über ihre Effekte zu sehen",
-            "deck_merge": "Mache ein Deck zu einer neuen Version eines anderen Decks, indem du es mit der Maus über das alte ziehst"
+            "deck_merge": "Mache ein Deck zu einer neuen Version eines anderen Decks, indem du es mit der Maus über das alte ziehst",
+            "share_profile_page": "Greife online auf deine eigene Profilseite zu und teile sie mit anderen, um deine Erfolge und Statistiken zu präsentieren."
         },
         "streams": {
             "category": {
@@ -1569,11 +1575,14 @@
         },
         "premium": {
             "check-status-online": "Aktiv und automatische Erneuerung. Details prüfen {{link}}",
-            "auto-renew": "Aktiv und verlängert sich automatisch am {{ Datum }}",
+            "auto-renew": "Aktiv und verlängert sich automatisch am {{ date }}",
             "active-until": "Aktiv bis {{ date }} und wird nicht automatisch verlängert",
             "features": {
                 "discordRole": "{{value}} Discord-Rolle",
-                "supportFirestone": "Unterstützt Firestone"
+                "supportFirestone": "Unterstützt Firestone",
+                "params": {
+                    "premium": "\"Premium-Unterstützer\""
+                }
             },
             "unsubscribe-modal": {
                 "text": "Wenn Du Dich abmeldest, wird die automatische Verlängerung Deines Abonnements gestoppt. Du kannst die Premium-Funktionen noch bis zum Ende des aktuellen Zeitraums nutzen. Du wirst auf die Kassenseite von Tebex weitergeleitet, um Deine Abonnements dort zu bearbeiten, und die App wird nach einigen Minuten aktualisiert.",
@@ -1959,7 +1968,7 @@
             "damage-title": "Schaden",
             "lethal-title": "Tödlich",
             "lethal-dealt-tooltip": "% Chance den gegnerischen Helden zu töten",
-            "lethal-received-tooltip": "% Chance, in diesem Kampf zu sterben",
+            "lethal-received-tooltip": "% Chance in diesem Kampf zu sterben",
             "composition-not-supported": {
                 "reason-secret": "Geheimnisse",
                 "bug": "Ein unbekannter Fehler ist aufgetreten. Ein Fehlerbericht wurde automatisiert an die Entwickler gesendet",
@@ -1993,7 +2002,7 @@
             "reposition-button-cancel": "Abbrechen",
             "reposition-button-cancelling": "Wird abgebrochen...",
             "reposition-button-tooltip-cancelling": "Prozesse werden abgebrochen, bitte warte einen Moment",
-            "actual": "Aktuell",
+            "actual": "Realer Wert",
             "simulated": "Simuliert",
             "empty-state-title": "Zurzeit gibt es hier noch nichts",
             "battles-header": "Alle Kämpfe",
@@ -2272,7 +2281,14 @@
             "battlegrounds-duo": "Schlachtfeld: Duos"
         },
         "summary": {
-            "total-games": "{{value}} Spiele"
+            "total-games": "{{value}} Spiele",
+            "delta-mmr-tooltip": "Dein insgesamtiger Gewinn/Verlust von Wertung seit Beginn der Sitzung",
+            "mmr-tooltip": "Deine aktuelle Wertung",
+            "average-text": "Ø Siege",
+            "runs-text": "Durchläufe",
+            "total-games-tooltip-all-time": "Gesammelte Daten für {{gameMode}}, seit du die App benutzt (Der Reset-Knopf oben startet eine neue Sitzung)",
+            "average-tooltip": "Durchschnittliche Anzahl von Siegen pro Durchlauf",
+            "total-games-tooltip": "Gesammelte Daten für {{gameMode}}, seit {{value}} (Der Reset-Knopf oben startet eine neue Sitzung)"
         },
         "groups": {
             "battlegrounds": {
@@ -2285,12 +2301,25 @@
                     "6": "6.",
                     "7": "7.",
                     "8": "8."
-                }
+                },
+                "value-tooltip": "Anzahl deiner Spiele mit dieser Platzierung in der aktuellen Sitzung"
             },
             "arena": {
-                "deck-title": "{{Gewinnt}} Deck"
+                "deck-title": "{{wins}} Deck"
             }
-        }
+        },
+        "title-tooltip": "Zeigt eine Zusammenfassung all deiner Spiele seit dem Beginn der aktuellen Sitzung. Schalte dieses Fenster in den Einstellungen ein oder aus.",
+        "time-frame": {
+            "all-time": "gesamte Zeit",
+            "tooltip": "Klicken, um den Zeitrahmen für die in der Zusammenfassung angezeigten Daten zu ändern",
+            "current-season": "diese Saison"
+        },
+        "buttons": {
+            "close-tooltip": "Das Fenster schließen und deaktivieren. Du kannst es später in den Einstellungen wieder aktivieren",
+            "reset-tooltip": "Alles zurücksetzen und eine neue Sitzung beginnen"
+        },
+        "arena-title": "Saisonverlauf",
+        "arena-title-tooltip": "Zeigt eine Zusammenfassung all deiner Arenaspiele aus dem eingestellten Zeitrahmen."
     },
     "settings": {
         "title": "Einstellungen",
@@ -2313,7 +2342,12 @@
             "show-advanced-settings-button": "Zeige erw. Einstellungen",
             "hide-advanced-settings-button": "Verstecke erw. Einstellungen",
             "counter-dropdown": {
-                "on": "An"
+                "on": "An",
+                "off-tooltip": "Zähler gar nicht anzeigen",
+                "limited-tooltip": "Zähler nur dann anzeigen, wenn relevante Karten im Deck, auf der Hand, oder beim Entdecken registriert werden",
+                "on-tooltip": "Zähler immer anzeigen, wenn relevante Karten gespielt wurden oder im Deck, auf der Hand, oder beim Entdecken registriert werden",
+                "off": "Aus",
+                "limited": "Begrenzt"
             },
             "widget-size-label": "Widgetgröße",
             "locked-tooltip": "Werde Premium, um das zu benutzen! (Du kannst Premium werden und uns unterstützen, indem du auf den Text über der Werbung im Hauptfenster klickst)"
@@ -2328,7 +2362,10 @@
             "integrations": "Integrationen",
             "troubleshooting": "Fehlerbehebung",
             "global": "Allgemein",
-            "arena": "Arena"
+            "arena": "Arena",
+            "replays": "Aufzeichnungen",
+            "app": "Funktionalität",
+            "replay": "Aufzeichnungen"
         },
         "general": {
             "menu": {
@@ -2355,7 +2392,7 @@
                 "disable-mods": "Mods deaktivieren",
                 "title": "Mods",
                 "check-mods-title": "1. Überprüfe Mod-Engine",
-                "update-available": "Eine neue Version dieses Mods ist verfügbar. Klicken, um zu updaten",
+                "update-available": "Eine neue Version dieses Mods ist verfügbar. Klicken, um zu aktualisieren",
                 "add-mods-title": "3. Mods hinzufügen",
                 "enable-mods-title": "2. Mods aktivieren",
                 "update-disabled": "Eine neue Version dieses Mods ist verfügbar, aber du kannst sie erst installieren, wenn du das Spiel schließt",
@@ -2450,7 +2487,7 @@
                 "integrated-mode-label": "Integrierter Modus",
                 "integrated-mode-tooltip": "Wenn aktiviert, wird das Hauptfenster zu einem Overlay, das an das Spielfenster gebunden ist. Dies ist für Einzelmonitor-Setups und für das Streamen der App empfohlen. Das Ändern dieser Einstellung führt zu einem Neustart des Haupt- und Einstellungsfensters",
                 "session-recap-on-exit-label": "Sitzungsüberblick beim Verlassen",
-                "session-recap-on-exit-tooltip": "Zeigt einen Überblick der letzten Sitzung, wenn du Hearthstone verlässt",
+                "session-recap-on-exit-tooltip": "Zeigt einen Überblick der letzten Sitzung, wenn du Hearthstone schließt",
                 "xp-recap-on-game-end-label": "Zeige einen EP Überblick am Spielende",
                 "xp-recap-on-game-end-tooltip": "Zeigt einen Überblick der erhaltenen EP / Level nach jedem Spiel",
                 "hide-release-notes-label": "Versionshinweise beim App-Start ausblenden",
@@ -2693,7 +2730,8 @@
                 "tribes": "Dienertypen",
                 "overlay": "Overlay",
                 "leaderboard": "Bestenliste",
-                "minions-list": "Dienerliste"
+                "minions-list": "Dienerliste",
+                "session": "Sitzungswidget"
             },
             "full-toggle-label": "Schlachtfeld aktivieren",
             "general": {
@@ -2742,7 +2780,19 @@
                 "show-in-leaderboard": "Über den Ranglistenkacheln anzeigen"
             },
             "session-widget": {
-                "size-title": "Widgetgröße"
+                "size-title": "Widgetgröße",
+                "hide-when-friends-list-open-tooltip": "Das Widget verbergen, wenn die Freundesliste offen ist.",
+                "number-of-matches": "Anzahl Spiele",
+                "show-groups-tooltip": "Zeigt eine Zusammenfassung deiner Spiele in der Sitzung, gruppiert nach Platzierung.",
+                "show-matches": "Letzte Spiele anzeigen",
+                "title": "Sitzungswidget",
+                "label": "Sitzungswidget benutzen",
+                "show-matches-tooltip": "Zeigt den Ausgang der letzten Spiele.",
+                "number-of-matches-tooltip": "Anzahl an Spielen, die im Widget unter der Zusammenfassung angezeigt werden sollen (neustes Spiel oben)",
+                "show-groups": "Gruppierte Zusammenfassung",
+                "hide-when-friends-list-open": "Verbergen wenn Freundesliste offen",
+                "opacity-title": "Deckkraft des Widgets",
+                "label-tooltip": "Zeigt eine Zusammenfassung deiner aktuellen Spielsitzung. Besonders für Streamer nützlich"
             }
         },
         "achievements": {
@@ -2765,7 +2815,8 @@
             "general": {
                 "your-team": "Dein Team",
                 "action-queue-pve-label": "Anwendung für die Aktionswarteschlange (PvE)",
-                "tasks-tooltip": "Fügen Sie eine kleine Schaltfläche unter der Team-Anwendung (Widget) hinzu, über die Sie mit der Maus fahren können, um eine Zusammenfassung aller Ihrer aktuellen Aufgaben anzuzeigen. \nIm PvP immer versteckt."
+                "tasks-tooltip": "Fügen Sie eine kleine Schaltfläche unter der Team-Anwendung (Widget) hinzu, über die Sie mit der Maus fahren können, um eine Zusammenfassung aller Ihrer aktuellen Aufgaben anzuzeigen. \nIm PvP immer versteckt.",
+                "action-queue-pvp-label": "Anwendung für die Aktionswarteschlange (PvP)"
             },
             "quests": {
                 "search-box-placeholder": "Suche Söldner..."
@@ -2780,10 +2831,23 @@
         "arena": {
             "general": {
                 "show-hero-selection-overlay-tooltip": "(Nur Premium) Während der Heldenauswahl Statistiken anzeigen",
-                "show-card-selection-overlay-tooltip": "(Nur Premium) Während der Kartenauswahl Statistiken anzeigen"
+                "show-card-selection-overlay-tooltip": "(Nur Premium) Während der Kartenauswahl Statistiken anzeigen."
             },
             "session-widget": {
-                "number-of-runs-tooltip": "Maximale Anzahl an Durchläufen, die in den Details angezeigt werden sollen (neuster Durchlauf oben)"
+                "number-of-runs-tooltip": "Maximale Anzahl an Durchläufen, die in den Details angezeigt werden sollen (neuster Durchlauf oben)",
+                "label-tooltip": "Zeigt eine Zusammenfassung der aktuellen Arenasaison",
+                "show-runs-in-game-tooltip": "Schalte das aus, um die letzten Durchläufe nicht während des Spiels anzuzeigen",
+                "show-groups-tooltip": "Zeigt eine Zusammenfassung deiner Durchläufe für diese Saison, gruppiert nach Anzahl an Siegen.",
+                "show-groups-in-game-tooltip": "Schalte das aus, um die gruppierte Zusammenfassung nicht während des Spiels anzuzeigen",
+                "number-of-runs": "Anzahl Durchläufe",
+                "show-runs-in-game": "Durchläufe im Spiel anzeigen",
+                "title": "Saisonverlauf",
+                "show-groups-in-game": "Gruppen im Spiel anzeigen",
+                "show-in-game": "Im Spiel anzeigen",
+                "show-in-game-tooltip": "Zeigt das Widget während des Spiels. Schalte das aus, um das Widget nur bei der Kartenwahl anzuzeigen",
+                "label": "Widget anzeigen",
+                "show-runs": "Letzte Durchläufe anzeigen",
+                "show-runs-tooltip": "Zeigt den Ausgang der letzten Durchläufe."
             }
         }
     },
@@ -2845,6 +2909,13 @@
         "warlock": "Unbekannter Hexenmeister",
         "warrior": "Unbekannter Krieger",
         "demon-hunter": "Unbekannter Dämonenjäger",
-        "mage": "Unbekannter Magier"
+        "mage": "Unbekannter Magier",
+        "42-priest": "42 Priester"
+    },
+    "quests": {
+        "quests-completed": "Alle Quests abgeschlossen"
+    },
+    "bgs-comp": {
+        "apm_pirates": "APM-Piraten"
     }
 }
