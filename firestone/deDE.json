@@ -44,7 +44,9 @@
             "battlegrounds-duo": "Schlachtfeld: Duos",
             "ranked": "Rangliste",
             "constructed": "Rangliste",
-            "duels": "Duelle"
+            "duels": "Duelle",
+            "arena-all": "Arena (alle)",
+            "arena-underground": "Arena Untergrund"
         },
         "region": {
             "all": "Alle Regionen",
@@ -355,7 +357,9 @@
         "tray": {
             "exit": "Schließen",
             "restart": "Firestone neu starten",
-            "settings": "Einstellungen"
+            "settings": "Einstellungen",
+            "main-window": "Hauptfenster zeigen",
+            "reset-positions": "Fensterpositionen zurücksetzen"
         },
         "internal": {
             "memory": {
@@ -387,7 +391,8 @@
         "arena": {
             "menu": {
                 "my-runs": "meine Runden",
-                "card-stats": "Kartensets"
+                "card-stats": "Kartensets",
+                "class-tier-list": "Klassenhierarchie"
             },
             "filters": {
                 "time": {
@@ -396,10 +401,12 @@
                     "last-patch": "Letzter Patch",
                     "past-100": "Vergangene 100 Tage",
                     "past-30": "Vergangene 30 Tage",
-                    "past-20": "Vergangene 20 Tage"
+                    "past-20": "Vergangene 20 Tage",
+                    "current-season": "Aktuelle Saison"
                 },
                 "card-class": {
-                    "no-neutral": "Neutrale auslassen"
+                    "no-neutral": "Neutrale auslassen",
+                    "all": "Alle Kartenklassen"
                 },
                 "high-win-runs": {
                     "wins": "{{value}}+ Siege"
@@ -413,6 +420,13 @@
                     "all-tooltip": "Alle Arenaspiele (neue Formate und altes Format)",
                     "all": "Alle Arenaspiele",
                     "arena-underground-tooltip": "Alle Spiele aus dem Undergroundmodus, nach der Teilung in Arena / Underground"
+                },
+                "hero-class": {
+                    "all": "Alle Heldenklassen"
+                },
+                "show-advanced-card-stats": "Erweiterte Statistiken",
+                "card-type": {
+                    "all": "Alle Kartentypen"
                 }
             },
             "stats": {
@@ -432,7 +446,8 @@
                 "minimize-run-button": "Ansicht minimieren",
                 "run-name": "Arena {{value}} Siege",
                 "load-runs-button": "Klicke um mehr Runden zu laden",
-                "deck-score-tooltip": "Das ist dein Deckscore, berechnet anhand der einzelnen Gewinnraten aller Karten im Deck."
+                "deck-score-tooltip": "Das ist dein Deckscore, berechnet anhand der einzelnen Gewinnraten aller Karten im Deck.",
+                "average-match-time": "Die durchschnittliche Spielzeit ist {{value}}"
             },
             "empty-state": {
                 "title": "Zurzeit gibt es hier noch nichts",
@@ -444,12 +459,16 @@
                 "header-deck-winrate-tooltip": "Die Gewinnrate von Decks, die diese Karte beinhalten",
                 "header-pickrate": "Auswahlrate",
                 "header-deck-total-tooltip": "Die Anzahl an Spielen, bei denen diese Karte im Deck war",
-                "header-deck-winrate-impact": "Einfluss"
+                "header-deck-winrate-impact": "Einfluss",
+                "header-discovered": "Datenpunkte"
             },
             "draft": {
                 "hero-tier": "Rang",
                 "hero-winrate": "Gewinnrate",
-                "locked-premium-info": "Schalte Statistik mit Premium frei"
+                "locked-premium-info": "Schalte Statistik mit Premium frei",
+                "card-deck-impact": "Einfluss auf Deck",
+                "card-drawn-impact": "Gezogen Einfluss",
+                "card-drawn-winrate": "Gezogen Sieg-%"
             },
             "class-tier-list": {
                 "header-winrate": "Gewinnrate",
@@ -462,6 +481,9 @@
                 "header-class-name": "Klasse",
                 "header-winrate": "Gewinnrate",
                 "header-games-played": "Gespielte Partien"
+            },
+            "deck-details": {
+                "picks-header": "Kartenauswahl"
             }
         },
         "collection": {
@@ -550,7 +572,8 @@
                     "hero": "Held",
                     "location": "Schauplatz",
                     "enchantment": "Verzauberung",
-                    "lettuce_ability": "Fähigkeit (Söldner)"
+                    "lettuce_ability": "Fähigkeit (Söldner)",
+                    "battleground_anomaly": "Anomalie (Schlachtfeld)"
                 },
                 "set": "Set:",
                 "rarity": "Seltenheit:",
@@ -781,7 +804,11 @@
                     "tooltip": "Suche nach Klassennamen oder Decknamen"
                 },
                 "sample-size-filter": "{{value}} Spiele",
-                "use-conservative-winrate": "Konservative Gewinnrate"
+                "use-conservative-winrate": "Konservative Gewinnrate",
+                "rank-bracket": {
+                    "diamond": "Diamant",
+                    "legend-diamond": "Diamant-Legende"
+                }
             },
             "matchup-info": {
                 "opponents-popularity-header": "Gegner Klassenaufteilung",
@@ -884,7 +911,9 @@
                         "card-header": "Karte",
                         "mulligan-kept-header": "Behalten",
                         "copy-2-header": "2. Kopie",
-                        "copy-1-header": "Beliebtheit"
+                        "copy-1-header": "Beliebtheit",
+                        "discovered-winrate-impact-header": "Einfluss wenn entdeckt",
+                        "discovered-winrate-header": "Sieg-% wenn entdeckt"
                     },
                     "archetype-type": "Archetyp"
                 },
@@ -914,7 +943,8 @@
                 "records": "Rekorde",
                 "simulator": "Simulator",
                 "trinkets": "Schmuckstücke",
-                "leaderboard": "Bestenlisten"
+                "leaderboard": "Bestenlisten",
+                "cards": "Karten"
             },
             "tribes": {
                 "beast": "Wildtiere",
@@ -989,6 +1019,9 @@
                 "card-type": {
                     "minion": "Diener",
                     "spell": "Zauber"
+                },
+                "comps": {
+                    "all-comps": "Alle Komp."
                 }
             },
             "personal-stats": {
@@ -1013,7 +1046,10 @@
                         "average-position": "Ø Position",
                         "top-1": "Top 1",
                         "top-4": "Top 4",
-                        "community-value-tooltip": "Durchschnittlicher Wert aus der Community"
+                        "community-value-tooltip": "Durchschnittlicher Wert aus der Community",
+                        "net-mmr-tooltip": "Durchschnittlicher Gewinn/Verlust von Wertung pro Spiel",
+                        "avg-mmr-loss-tooltip": "Durchschnittlicher Verlust von Wertung pro Spiel",
+                        "avg-mmr-gain-tooltip": "Durchschnittlicher Gewinn von Wertung pro Spiel"
                     },
                     "last-warbands": {
                         "title": "Letzte {{value}} Spiele",
@@ -1043,7 +1079,8 @@
                         "turn-label": "Zug",
                         "your-label": "Aktueller Versuch",
                         "your-tooltip": "Deine Werte für diesen Helden",
-                        "community-label": "Durchschnitt für Held"
+                        "community-label": "Durchschnitt für Held",
+                        "community-tooltip": "Durchschnittliche Summe der Dienerwerte (Angriff + Leben) zu Beginn des Kampfes in jedem Zug"
                     },
                     "mmr": {
                         "empty-state-message": "Beginne Schlachtfeld mit diesem Helden zu spielen, um Informationen zu erhalten"
@@ -1064,9 +1101,9 @@
                         "total-dmg-dealt-minions": "Gesamtschaden verursacht (Diener)",
                         "total-dmg-taken-minions": "Gesamtschaden erlitten (Diener)",
                         "total-dmg-dealt-hero": "Gesamtschaden verursacht (Held)",
-                        "total-dmg-dealt-hero-tooltip": "Enthält keine Kämpfe gegen den Geist",
+                        "total-dmg-dealt-hero-tooltip": "Enthält keine Kämpfe gegen tote Spieler",
                         "max-dmg-dealt-hero": "Max. Schaden verursacht (Held)",
-                        "max-dmg-dealt-hero-tooltip": "Enthält keine Kämpfe gegen den Geist",
+                        "max-dmg-dealt-hero-tooltip": "Enthält keine Kämpfe gegen tote Spieler",
                         "win-streak": "Höchste Siegesserie",
                         "triples": "Drillinge erschaffen",
                         "coins-wasted": "Münzen vergeudet",
@@ -1154,7 +1191,8 @@
                     "name": {
                         "3-on-3-bis": "3 auf 3 (Level Zug 9)",
                         "4-on-4": "4 auf 4",
-                        "3-on-3": "3 auf 3 (Level Zug 8)"
+                        "3-on-3": "3 auf 3 (Level Zug 8)",
+                        "basic": "Standardkurve"
                     }
                 },
                 "date": "Veröffentlicht am {{date}} (Patch {{patch}})"
@@ -1254,7 +1292,7 @@
                 "restore-deck-tooltip": "Deck wiederherstellen",
                 "rename-deck-tooltip": "Deck umbenennen",
                 "delete-deck-confirmation-title": "Deck löschen",
-                "delete-deck-confirmation-text": "Dieses Deck permantent löschen?",
+                "delete-deck-confirmation-text": "Dieses Deck permanent löschen?",
                 "delete-deck-confirmation-ok": "Löschen",
                 "delete-deck-confirmation-cancel": "Abbrechen",
                 "rename-confirm-button": "OK",
@@ -1356,7 +1394,9 @@
                 "title": "Meine Errungenschaften Historie",
                 "empty-state-title": "Noch kein Verlauf"
             },
-            "search-placeholder": "Suche Errungenschaft..."
+            "search-placeholder": "Suche Errungenschaft...",
+            "cancel-pin": "Nicht anpinnen",
+            "pin-achievement-tooltip": "Pinne diese Errungenschaft an, um ihren Fortschritt im Spiel zu verfolgen"
         },
         "replays": {
             "filters": {
@@ -1385,7 +1425,9 @@
                     "casual": "Ungewertet",
                     "tavern-brawl": "Kartenchaos",
                     "practice": "VS KI",
-                    "battlegrounds-duo": "Schlachtfeld: Duos"
+                    "battlegrounds-duo": "Schlachtfeld: Duos",
+                    "arena-all": "Arena (alle)",
+                    "arena-underground": "Arena Untergrund"
                 },
                 "player": {
                     "all": "Alle Klassen (Spieler)"
@@ -1471,7 +1513,8 @@
             "tip-0": "Für Feedback oder Bugs, oder um einfach etwas zu reden, besuche uns gerne auf Discord (Link oben rechts)!",
             "contextual_related_cards": "Bewege die Maus über bestimmte Karten im Tracker, um Details über ihre Effekte zu sehen",
             "deck_merge": "Mache ein Deck zu einer neuen Version eines anderen Decks, indem du es mit der Maus über das alte ziehst",
-            "share_profile_page": "Greife online auf deine eigene Profilseite zu und teile sie mit anderen, um deine Erfolge und Statistiken zu präsentieren."
+            "share_profile_page": "Greife online auf deine eigene Profilseite zu und teile sie mit anderen, um deine Erfolge und Statistiken zu präsentieren.",
+            "achievements_pin": "Wähle eine beliebige Anzahl von Errungenschaften aus, um sie während des Spiels zu verfolgen, und sieh zu, wie sie in Echtzeit aktualisiert werden"
         },
         "streams": {
             "category": {
@@ -1494,7 +1537,8 @@
                 "meta": "Meta"
             },
             "copy-deck-tooltip": "Klicken, um ein Deck mit hoher Gewinnrate in die Zwischenablage zu kopieren",
-            "with-name": "Das Kartenchaos diese Woche ist: {{name}} (begann am {{date}})"
+            "with-name": "Das Kartenchaos diese Woche ist: {{name}} (begann am {{date}})",
+            "non-buildable-warning-tooltip": "Alle guten Decks für diese Klasse enthalten Karten, die du nicht besitzt"
         },
         "profile": {
             "match-stats": {
@@ -1565,13 +1609,15 @@
             },
             "lottery": {
                 "stats": {
-                    "mechsPlayed-tooltip": "Spiele Mechs um pro gespieltem Mech {{pointsGained}} Punkte zu erhalten"
+                    "mechsPlayed-tooltip": "Spiele Mechs um pro gespieltem Mech {{pointsGained}} Punkte zu erhalten",
+                    "demonsPlayed-label": "Dämonen gespielt"
                 },
                 "season-duration-end": "Season endet in {{ days }}d {{ hours }}h {{ minutes }}m"
             },
             "tracking-ongoing-tooltip": "Tracking für die Lotterie läuft, du wirst beim Spielen Punkte erhalten",
             "overlay-toggle-tooltip": "Binde das Lotteriefenster an das Spielfenster, damit es immer sichtbar ist. Empfohlen, wenn die Lotterie auf demselben Bildschirm wie das Spiel ist",
-            "tracking-not-ongoing-tooltip": "Tracking für die Lotterie ist pausiert, du erhältst keine Punkte solange das Widget nicht sichtbar ist"
+            "tracking-not-ongoing-tooltip": "Tracking für die Lotterie ist pausiert, du erhältst keine Punkte solange das Widget nicht sichtbar ist",
+            "achievements-not-in-game": "Starte das Spiel, um deine angepinnten Erfolge zu sehen."
         },
         "premium": {
             "check-status-online": "Aktiv und automatische Erneuerung. Details prüfen {{link}}",
@@ -1632,7 +1678,7 @@
         },
         "cthun": {
             "player": "Dein C'Thun ist ein {{atk}}/{{health}}",
-            "opponent": "Der C'Thun deines Gegners ist ein {{value}}/{{value}}"
+            "opponent": "Der C'Thun deines Gegners hat die Werte {{atk}}/{{health}}"
         },
         "elemental": {
             "player": "Du hast im letzten Zug {{lastTurn}} Elementare und in diesem Zug {{thisTurn}} Elementare ausgespielt",
@@ -1703,6 +1749,18 @@
         "friendly-dead-minions-this-game": {
             "player": "{{value}} freundliche Diener sind in diesem Spiel gestorben",
             "opponent": "{{value}} gegnerische Diener starben in diesem Spiel"
+        },
+        "hero-power-use": {
+            "opponent": "Dein Gegner hat seine Heldenfäfigkeit bisher {{value}} Mal benutzt"
+        },
+        "jade": {
+            "opponent": "Die Jadegolems deines Gegners haben die Größe {{value}}"
+        },
+        "aviana-elunes-chosen": {
+            "opponent": "Die Karten deines Gegners werden in {{turns}} Zügen {{value}} kosten"
+        },
+        "bonelord-frostwhisper": {
+            "opponent": "Dein Gegner wird in {{value}} Zügen sterben"
         }
     },
     "loading": {
@@ -2036,7 +2094,8 @@
             "quest-reward-title": "Questbelohnung",
             "simulator-help-tooltip": {
                 "title": "Erstelle Kämpfe und simuliere das Ergebnis. Es werden Tastaturbefehle unterstützt:",
-                "control-minion": "Füge einen Diener mit \"{{playerKey}}\" zu deinem Spielbrett und mit \"{{opponentKey}}\" zum gegnerischen Spielbrett hinzu."
+                "control-minion": "Füge einen Diener mit \"{{playerKey}}\" zu deinem Spielbrett und mit \"{{opponentKey}}\" zum gegnerischen Spielbrett hinzu.",
+                "control-hero-power": "Ändere deine Heldenfähigkeit mit \"{{playerKey}}\" und die des Gegners mit \"{{opponentKey}}\""
             },
             "eternal-legion-tooltip": "Die Anzahl befreundeter Ewiger Ritter, die dieses Spiel gestorben sind",
             "summon-mechs-tooltip": "Verleiht dem Diener \"Todesröcheln: ruft drei 1/1 Mechs herbei\"",
@@ -2066,7 +2125,9 @@
             "global-info-title-tooltip": "Klicken, um globale Effekte zu verändern",
             "global-info-title": "Globale Effekte",
             "quest-reward-header": "Questbelohnungen",
-            "turn-winrate-graph-title": "Ø Gewinnrate pro Zug"
+            "turn-winrate-graph-title": "Ø Gewinnrate pro Zug",
+            "battlecries-triggered": "Ausgelöste Kampfschreie",
+            "beasts-summoned": "Herbeigerufene Wildtiere"
         },
         "hero-stats": {
             "matches-played-label": "Gespielte Spiele",
@@ -2090,7 +2151,8 @@
             "tier": "Rang",
             "tribes-impact": "Einfluss von Dienertypen",
             "pickrate": "Auswahlrate",
-            "not-enough-data-points-warning": "Die Datenmenge für diesen Helden ist gering (nur {{value}} Einträge), deswegen kann die Statistik daneben liegen. Du kannst versuchen, im Schlachtfeld-Fenster einige Filter zu deaktivieren"
+            "not-enough-data-points-warning": "Die Datenmenge für diesen Helden ist gering (nur {{value}} Einträge), deswegen kann die Statistik daneben liegen. Du kannst versuchen, im Schlachtfeld-Fenster einige Filter zu deaktivieren",
+            "tier-list-title-tooltip": "Erstellt aus insgesamt {{totalMatches}} Spielen, gefiltert nach (ändere die Filter im Hauptfenster, um die Statistik zu aktualisieren):"
         },
         "in-game": {
             "face-offs": {
@@ -2168,7 +2230,12 @@
                         "medium": "Mittel",
                         "hard": "Schwer",
                         "very-hard": "Sehr schwer"
-                    }
+                    },
+                    "cycles-header-tooltip": "Karten, die du kaufen und direkt wieder verkaufen kannst, aber nicht auf dem Feld bleiben sollten",
+                    "advice": {
+                        "author": "Erstellt von {{author}}"
+                    },
+                    "pin-tooltip": "Klicken, um alle Diener in dieser Komposition an-/abzupinnen"
                 },
                 "tribe-category-tooltip": "Alle{{tribeName}} Karten anzeigen. Rechtsklick, um alle {{tribeName}} Karten im Gasthaus hervorzuheben.",
                 "spells-tier-tooltip": "Zauber"
@@ -2254,7 +2321,9 @@
             "available-tooltip": "{{tribeNames}} werden in diesem Versuch erscheinen."
         },
         "board": {
-            "total-damage": "Gesamtschaden"
+            "total-damage": "Gesamtschaden",
+            "seen-just-now": "Aktuelles Spielfeld",
+            "seen-turns-ago": "Spielfeld von vor {{value}} Zügen"
         },
         "empty-state-title": "Zurzeit gibt es hier noch nichts",
         "empty-state-subtitle": "Beginne Schlachtfeld zu spielen, um Informationen zu erhalten"
@@ -2440,7 +2509,7 @@
                     "website-link": "hier",
                     "instructions-page-link": "Anleitungsseite",
                     "next": "Wenn du dich entscheidest, mit d0nkey.top zu synchronisieren, wird Firestone ihnen alle deine Spiele senden, welche in einer bestimmen Sektion auf der Website erscheinen werden, die noch in der Entwicklung ist. Die Daten werden standardmäßig privat sein, außer wenn du gleichzeitig streamst. Siehe den {{link}} für die notwendigen Schritte.",
-                    "pitch": "d0nkey.top ist eine Fan-Website, die Decks aus offiziellen Hearthstone-Wettbewerben und von Streamern sammelt, um allen Spielern dabei zu helfen, interessante Decks zu finden. Die Synchronisierung mit d0nkey.top erlaubt dir, deine Decks mit deinen Zuschauern zu teilen (wenn du ein Streamer bist). Außerdem wird sie der Seite helfen, eine bessere Datenbank zu bauen und der Community bessere kostenlose Angebote zur Verfügung zu stellen. Du kannst die Seite besuchen unter {{websiteLink}}",
+                    "pitch": "hsguru.com ist eine Fan-Website, die Decks aus offiziellen Hearthstone-Wettbewerben und von Streamern sammelt, um allen Spielern dabei zu helfen, interessante Decks zu finden. Die Synchronisierung mit hsguru.com erlaubt dir, deine Decks mit deinen Zuschauern zu teilen (wenn du ein Streamer bist). Außerdem wird sie der Seite helfen, eine bessere Datenbank zu bauen und der Community bessere kostenlose Angebote zur Verfügung zu stellen. Du kannst die Seite besuchen unter {{websiteLink}}",
                     "toggle-label": "Aufzeichnungen mit d0nkey.top synchronisieren"
                 },
                 "hsdecks": {
@@ -2521,7 +2590,7 @@
                 "text-11": "Das bedeutet auch, dass nicht alle Teile der App in deine Sprache übersetzt werden. In diesem Fall werden die fehlenden Teile in englischer Sprache angezeigt.",
                 "text-2": "Wenn du helfen möchtest, die App zu übersetzen, lies bitte diese Anweisungen {{link}}.",
                 "link": "hier",
-                "text-3": "Bitte starte die App neu (mit dem Button im Tab Allgemein auf der linken Seite) um sicherzustellen, dass die neue Sprache berücksichtigt wird."
+                "text-3": "Bitte starte die App neu (durch Rechtsklick auf das Firestone-Icon rechts unten in der Taskleiste) um sicherzustellen, dass die neue Sprache berücksichtigt wird."
             },
             "data": {
                 "remote-title": "Online Daten",
@@ -2620,7 +2689,8 @@
                 "arena": "Arena",
                 "tavern-brawl": "Kartenchaos",
                 "practice": "Üben",
-                "casual": "Ungewertet"
+                "casual": "Ungewertet",
+                "title": "Decktracker ist für folgende Modi aktiv"
             },
             "opponent-deck": {
                 "tracker-title": "Decktracker",
@@ -2688,8 +2758,11 @@
                     "wheel-of-death-tooltip": "Nachdem Du {{cardName}} gespielt hast, zeige die Anzahl der Runden, bevor Dein Gegner stirbt",
                     "hero-attacks-tooltip": "Zeigt, wie oft dein Held in diesem Spiel angegriffen hat, wenn du Karten auf der Hand oder im Deck hast, für die das relevant ist",
                     "anachronos-label": "Anachronos",
-                    "hero-attacks-label": "Heldenangriffe"
-                }
+                    "hero-attacks-label": "Heldenangriffe",
+                    "discovers-label": "Entdeckungen",
+                    "disable-all": "Alle Zähler deaktivieren"
+                },
+                "ignore-decklist-tooltip": "Die ursprüngliche Deckliste wird nicht geladen und nur die gespielten und gezogenen Karten werden erfasst. Die Änderungen werden für das nächste Spiel übernommen"
             },
             "duels": {
                 "title": "Spezielle Duelle Optionen",
@@ -2703,6 +2776,9 @@
             },
             "mulligan": {
                 "size": "Größe"
+            },
+            "max-resources-widget": {
+                "always-on": "Immer an"
             }
         },
         "collection": {
@@ -2731,7 +2807,8 @@
                 "overlay": "Overlay",
                 "leaderboard": "Bestenliste",
                 "minions-list": "Dienerliste",
-                "session": "Sitzungswidget"
+                "session": "Sitzungswidget",
+                "battle-odds": "Kampfergebnis-Wahrscheinlichkeiten"
             },
             "full-toggle-label": "Schlachtfeld aktivieren",
             "general": {
@@ -2743,7 +2820,9 @@
                 "show-achievements-label": "Zeige 'Errungenschaften'",
                 "use-remote-simulator-label": "Fernkampfsimulator verwenden",
                 "show-minions-auto-highlight-label": "Diener automatisch hervorheben",
-                "show-achievements-tooltip": "Zeigt die noch fehlenden Errungenschaften für die angebotenen Helden bei der Heldenauswahl"
+                "show-achievements-tooltip": "Zeigt die noch fehlenden Errungenschaften für die angebotenen Helden bei der Heldenauswahl",
+                "show-tribes-auto-highlight-tooltip": "Hebt alle Diener eines bestimmten Types im Gasthaus hervor, wenn du einen Helden spielst, der diesen Dienertyp bevorzugt kaufen möchte (wie z.B. Elementare mit Chenvaala)",
+                "use-anomaly-filter-for-live-stats-label-short": "Anomalienfilter"
             },
             "overlay": {
                 "show-banned-tribes-label": "Zeige gebannte Dienertypen",
@@ -2773,7 +2852,21 @@
                 "minions-list-show-tribe-tiers-tooltip": "Fügt der Dienerliste Spalten hinzu, die die Diener nach ihrem Stamm gruppieren",
                 "minions-list-show-compositions-tooltip": "Fügt eine Registerkarte zur Dienerliste hinzu, auf der du die verschiedenen Zusammenstellungen des aktuellen Metas erkunden kannst. Die Option \"{{newHeaderOption}}\"muss aktiviert sein.",
                 "minions-list-new-header-tooltip": "Verwende das 2-stufige Navigationsmenü, um das Durcheinander in der Dienerliste zu reduzieren",
-                "minions-list-new-header-label": "Neue Überschrift verwenden"
+                "minions-list-new-header-label": "Neue Überschrift verwenden",
+                "counter-blood-gem-tooltip": "Zeigt die Angriff/Leben-Boni für deine Blutedelsteine",
+                "counter-tuskarr-raider-tooltip": "Zeigt an, wie viele Piraten du in diesem Spiel gespielt hast",
+                "counter-gold-delta-tooltip": "Zeigt an, wie viel Gold du in der nächsten Runde mehr oder weniger hast, unter Berücksichtigung von Karten wie \"Sorgfältige Investition\" oder \"Südmeermusikantin\" .",
+                "counter-magnetized-tooltip": "Zeigt an, wie oft du dieses Spiel magnetisiert hast",
+                "banned-tribes-single-row-tooltip": "Zeige alle Dienergattungen in einer Zeile, ohne Umbruch",
+                "counter-elemental-tavern-stats-tooltip": "Zeigt die Angriff/Leben-Boni für Elementare in deinem Gasthaus",
+                "battle-simulation-label": "Overlay für Kampfsimulation",
+                "counter-elemental-buff-tooltip": "Zeigt die Angriff/Leben-Boni für deine Elementare, die Werte verleihen",
+                "counter-lord-of-gains-tooltip": "Zeigt an, wie viele verschiedene Zauber du in diesem Spiel gewirkt hast, sowie den Namen dieser Zauber",
+                "counter-spells-played-tooltip": "Zeigt an, wie viele Gruppen von 4 Zaubern du gewirkt hast und wie weit du mit der Bildung der nächsten Gruppe bist.",
+                "counter-free-refresh-tooltip": "Zeigt, wie viele gratis-Aktualisierungen du übrig hast",
+                "counter-baller-tooltip": "Zeigt den Bonus für deinen nächsten Dribbler",
+                "counter-baller-label": "Dribbler",
+                "counter-tavern-spells-buff-tooltip": "Zeigt die Angriff/Leben-Boni für deine Gasthauszauber, die Werte verleihen"
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ MMR und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger MMR kann zu falschen Informationen führen.",
@@ -2804,7 +2897,9 @@
                 "firestone-achievements-text": "Aktiviere FS-Errungenschaften",
                 "show-notifications-text": "Zeige Benachrichtigungen",
                 "streamer-mode-text": "Streamer-Modus",
-                "title": "Aktualisieren, wenn Du Benachrichtigungen über Erfolge siehst"
+                "title": "Aktualisieren, wenn Du Benachrichtigungen über Erfolge siehst",
+                "show-notifications-tooltip": "Eine Benachrichtigung anzeigen, wenn du eine Errungenschaft freischaltest. Wenn diese Option deaktiviert ist, wird auch die Aufzeichnung der nativen Hearthstone-Erungenschaften ausgeschaltet",
+                "achievements-live-tracking-tooltip": "Zeigt ein Fenster, das deinen aktuellen Fortschritt für eine beliebige Anzahl von Errungenschaften mitzählt. Diese Errungenschaften kannst du in der App unter dem Errungenschaften-Menüpunkt auswählen."
             }
         },
         "mercenaries": {
@@ -2831,7 +2926,9 @@
         "arena": {
             "general": {
                 "show-hero-selection-overlay-tooltip": "(Nur Premium) Während der Heldenauswahl Statistiken anzeigen",
-                "show-card-selection-overlay-tooltip": "(Nur Premium) Während der Kartenauswahl Statistiken anzeigen."
+                "show-card-selection-overlay-tooltip": "(Nur Premium) Während der Kartenauswahl Statistiken anzeigen.",
+                "show-card-selection-overlay": "Overlay für die Kartenauswahl",
+                "show-card-stats-discover": "Kartenstatistiken beim Entdecken"
             },
             "session-widget": {
                 "number-of-runs-tooltip": "Maximale Anzahl an Durchläufen, die in den Details angezeigt werden sollen (neuster Durchlauf oben)",
@@ -2872,11 +2969,16 @@
     },
     "website": {
         "arena": {
-            "title-label-global": "Arena"
+            "title-label-global": "Arena",
+            "cards": "Karten",
+            "classes": "Klassen"
         },
         "battlegrounds": {
             "games-played-tooltip-global": "Deine GESAMTANZAHL an Spielen mit allen Helden (auch auf anderen Geräten oder ohne Firestone an)",
-            "games-played-label-global": "Gespielt"
+            "games-played-label-global": "Gespielt",
+            "cards": {
+                "description": "Analysiere Statistiken für alle Schlachtfeldkarten und finde heraus, welche Karten in der Meta eine zentrale Rolle spielen."
+            }
         },
         "spectator": {
             "close-button-tooltip": "{{playerName}} nicht mehr zuschauen"
@@ -2888,6 +2990,14 @@
         },
         "ranked": {
             "title-label-global": "Gewertet"
+        },
+        "constructed": {
+            "decks": "Decks"
+        },
+        "unused-do-not-translate": {
+            "arena": {
+                "title-label-global": "Arena"
+            }
         }
     },
     "arena": {
