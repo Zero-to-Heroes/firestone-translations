@@ -368,7 +368,7 @@
                 "pack": "paquet de cartes",
                 "gold": "or",
                 "card": "carte",
-                "ticket": "Ticket d’Arène"
+                "ticket": "Ticket de la taverne"
             },
             "controls": {
                 "bug-button-tooltip": "Signaler un bug",
@@ -1243,6 +1243,9 @@
                 "card-type": {
                     "minion": "Serviteurs",
                     "spell": "Sorts"
+                },
+                "comps": {
+                    "all-comps": "Toutes les compos"
                 }
             },
             "personal-stats": {
@@ -1475,6 +1478,9 @@
                     "info": "Combine des données pures et des informations fournies par les meilleurs joueurs et joueuses de Champs de bataille.",
                     "header": "Des experts à l’œuvre",
                     "text": "Compos et astuces élaborées par les meilleurs joueurs et joueuses de Champs de bataille"
+                },
+                "advice": {
+                    "title": "Stratégie"
                 }
             }
         },
@@ -2428,6 +2434,13 @@
         "dive-the-golakka-depths": {
             "player": "Vous avez complété la Quête {{cardName}} {{value}} fois pendant cette partie",
             "opponent": "Votre adversaire a complété la Quête {{cardName}} {{value}} fois pendant cette partie"
+        },
+        "dark-gifts": {
+            "opponent": "Votre adversaire a joué {{value}} Sombres dons pendant cette partie",
+            "player": "Vous avez joué {{value}} Sombres dons différents pendant cette partie"
+        },
+        "corpses": {
+            "opponent": "Votre adversaire a actuellement {{value}} cadavres"
         }
     },
     "loading": {
@@ -3694,7 +3707,9 @@
                     "dragons-played-tooltip": "Affiche le nombre de fois que votre adversaire a joué un Dragon. Apparaît uniquement lorsque votre adversaire est un prêtre et a joué un Dragon",
                     "friendly-dead-minions-this-game-label": "Serviteurs adverses morts",
                     "holy-spells-tooltip": "Affiche le nombre de sorts du sacré lancés par votre adversaire. N’apparaît que si votre adversaire est un paladin",
-                    "sea-shanty-tooltip": "Affiche le nombre de sorts que votre adversaire a lancés sur des personnages. N’apparaît que si votre adversaire est un paladin"
+                    "sea-shanty-tooltip": "Affiche le nombre de sorts que votre adversaire a lancés sur des personnages. N’apparaît que si votre adversaire est un paladin",
+                    "corpses-label": "Cadavres",
+                    "corpses-tooltip": "Afficher un compteur avec le nombre total de cadavres de votre adversaire : il apparaît lorsque vous savez qu’il ou elle possède une carte qui dépense des cadavres mais que le jeu n’affiche pas le compteur"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -3851,7 +3866,9 @@
                     "disable-all": "Désactiver tous les compteurs",
                     "enable-all": "Activer tous les compteurs",
                     "dive-the-golakka-depths-label": "Paladin Quête Murlocs",
-                    "dive-the-golakka-depths-tooltip": "Affiche le nombre de fois que vous avez complété la Quête {{cardName}}"
+                    "dive-the-golakka-depths-tooltip": "Affiche le nombre de fois que vous avez complété la Quête {{cardName}}",
+                    "dark-gifts-tooltip": "Afficher le nombre de Sombres dons différents que vous avez joué pendant cette partie",
+                    "dark-gifts-label": "Sombres dons"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -4271,7 +4288,13 @@
             "top-1-tooltip-global": "Le nombre total de fois où vous avez fini top 1 DEPUIS TOUJOURS (même sur mobile, ou sans que Firestone ne soit lancé)",
             "games-played-label-global-with-bg": "Parties jouées",
             "top-4-label-global-with-bg": "Top 4",
-            "top-1-label-global-with-bg": "Top 1"
+            "top-1-label-global-with-bg": "Top 1",
+            "cards": {
+                "description": "Analysez les stats des cartes de Champs de bataille, les performances à chaque niveau, et découvrez quelles cartes façonnent la méta."
+            },
+            "comps": {
+                "description": "Explorez les compos, synergies et stratégies les plus efficaces de Champs de bataille pour dominer vos parties."
+            }
         },
         "collection": {
             "packs": {
@@ -4281,7 +4304,10 @@
         },
         "arena": {
             "title-label-global": "Arène",
-            "title-tooltip-global": "Vos victoires et défaites DEPUIS TOUJOURS en Arène"
+            "title-tooltip-global": "Vos victoires et défaites DEPUIS TOUJOURS en Arène",
+            "cards": "Cartes",
+            "classes": "Classes",
+            "description": "Consultez les statistiques des héros et des cartes, ainsi que les anciens decks réussis et bien plus encore, GRATUITEMENT."
         },
         "player-class": {
             "tooltip-game-mode": "Vos victoires et défaites DEPUIS TOUJOURS avec la classe {{class}} en mode {{gameMode}}"
@@ -4293,6 +4319,59 @@
         "ranked": {
             "title-label-global": "Partie classée",
             "title-tooltip-global": "Vos victoires et défaites DEPUIS TOUJOURS en Partie classée (tous formats confondus)"
+        },
+        "unused-do-not-translate": {
+            "desktop-app": {
+                "navigation-cta-header": "Télécharger l’app de bureau",
+                "navigation-cta-button-text": "Télécharger",
+                "navigation-cta-text": "Consultez des infos sur vos parties en temps réel, les stats de héros et héroïnes, les conseils de pro et bien plus encore dans votre client de jeu pendant que vous jouez avec notre application GRATUITE."
+            },
+            "spectator": {
+                "close-button-tooltip": "Arrêter de regarder {{playerName}}"
+            },
+            "battlegrounds": {
+                "top-1-tooltip": "Le nombre de fois où vous avez fini dans le top 1 avec ce héros DEPUIS TOUJOURS (même sur mobile, ou sans que Firestone ne soit lancé)",
+                "top-1-label-global-with-bg": "Tops 1 (BG)",
+                "games-played-label": "Jouées :",
+                "games-played-tooltip": "Le nombre de parties que vous avez jouées avec ce héros DEPUIS TOUJOURS (même sur mobile, ou sans que Firestone ne soit lancé)",
+                "top-1-label": "Top 1 :",
+                "games-played-label-global": "Jouées",
+                "top-4-tooltip": "Le nombre de fois où vous avez fini dans le top 4 avec ce héros DEPUIS TOUJOURS (même sur mobile, ou sans que Firestone ne soit lancé)",
+                "top-4-label": "Top 4 :",
+                "games-played-tooltip-global": "Le nombre de parties que vous avez jouées avec n’importe quel héros DEPUIS TOUJOURS (même sur mobile, ou sans que Firestone ne soit lancé)",
+                "top-4-label-global": "Top 4",
+                "games-played-label-global-with-bg": "Parties jouées (BG)",
+                "top-4-label-global-with-bg": "Tops 4 (BG)",
+                "top-1-tooltip-global": "Le nombre de fois où vous avez fini dans le top 1 avec n’importe quel héros DEPUIS TOUJOURS (même sur mobile, ou sans que Firestone ne soit lancé)",
+                "top-1-label-global": "Top 1",
+                "top-4-tooltip-global": "Le nombre de fois où vous avez fini dans le top 4 avec n’importe quel héros DEPUIS TOUJOURS (même sur mobile, ou sans que Firestone ne soit lancé)"
+            },
+            "collection": {
+                "packs": {
+                    "overview-title": "Nombre total de paquets",
+                    "overview-title-tooltip": "Le nombre total de paquets que vous avez reçus DEPUIS TOUJOURS, y compris ceux que vous n’avez pas ouverts"
+                }
+            },
+            "ranked": {
+                "title-label-global": "Classé",
+                "title-tooltip-global": "Vos résultats en Partie classée (tous formats) DEPUIS TOUJOURS"
+            },
+            "duels": {
+                "title-tooltip-global": "Vos résultats en Duels (non classé et héroïque) DEPUIS TOUJOURS",
+                "title-label-global": "Duels"
+            },
+            "arena": {
+                "title-label-global": "Arène",
+                "title-tooltip-global": "Vos résultats en Arène DEPUIS TOUJOURS"
+            },
+            "player-class": {
+                "tooltip-game-mode": "Vos résultats DEPUIS TOUJOURS avec la classe {{class}} dans le mode de jeu {{gameMode}}"
+            }
+        },
+        "constructed": {
+            "decks": "Decks",
+            "meta": "Méta",
+            "description": "Affichez GRATUITEMENT la classe, les cartes et les statistiques du deck, pour n’importe quel rang."
         }
     },
     "twitch": {
