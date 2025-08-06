@@ -368,7 +368,7 @@
                 "pack": "卡牌包",
                 "gold": "金币",
                 "card": "卡牌",
-                "ticket": "竞技场通票"
+                "ticket": "旅店通票"
             },
             "controls": {
                 "bug-button-tooltip": "提交错误",
@@ -1243,6 +1243,9 @@
                 "card-type": {
                     "minion": "随从",
                     "spell": "法术"
+                },
+                "comps": {
+                    "all-comps": "全部流派"
                 }
             },
             "personal-stats": {
@@ -1475,6 +1478,9 @@
                     "expert-difficulty-tooltip": "基于职业玩家见解的难度评级",
                     "first-percent": "强度",
                     "first-percent-tooltip": "反映了此流派在所有取得第一名的对局中所占的百分比，并根据各种偏差进行了调整。"
+                },
+                "advice": {
+                    "title": "策略"
                 }
             }
         },
@@ -2428,6 +2434,13 @@
         "dive-the-golakka-depths": {
             "player": "你在本局对战中已完成{{cardName}}任务{{value}}次",
             "opponent": "对手在本局对战中已完成{{cardName}}任务{{value}}次"
+        },
+        "dark-gifts": {
+            "player": "你在本局对战中已使用过 {{value}} 种不同的黑暗之赐卡牌",
+            "opponent": "对手在本局对战中已使用过 {{value}} 种不同的黑暗之赐卡牌"
+        },
+        "corpses": {
+            "opponent": "对手目前有 {{value}} 份残骸"
         }
     },
     "loading": {
@@ -3694,7 +3707,9 @@
                     "dragons-played-tooltip": "显示对手使用过龙的次数。仅当对手为牧师且已至少使用过一张龙时显示",
                     "sea-shanty-tooltip": "显示对手对角色施放的法术数量。仅当对手是圣骑士时显示",
                     "holy-spells-tooltip": "显示对手施放的神圣法术数量。仅当对手是圣骑士时显示",
-                    "friendly-dead-minions-this-game-label": "敌方已死亡的随从"
+                    "friendly-dead-minions-this-game-label": "敌方已死亡的随从",
+                    "corpses-label": "残骸",
+                    "corpses-tooltip": "显示对手当前残骸总数的计数器 - 当你知道对手有一张消耗残骸的卡牌，但游戏中没有显示内置计数器时，此计数器就会出现"
                 },
                 "size-title": "大小和透明度",
                 "opacity-title": "透明度",
@@ -3851,7 +3866,9 @@
                     "disable-all": "禁用全部计数器",
                     "dive-the-golakka-depths-label": "圣骑士鱼人任务",
                     "dive-the-golakka-depths-tooltip": "显示你已完成 {{cardName}} 任务的次数",
-                    "enable-all": "启用全部计数器"
+                    "enable-all": "启用全部计数器",
+                    "dark-gifts-label": "黑暗之赐",
+                    "dark-gifts-tooltip": "显示你在本局对战中使用过的不同的黑暗之赐卡牌数量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -4271,7 +4288,13 @@
             "top-1-tooltip-global": "得到过的第一的次数（当前帐号的所有时间，包括Firestone未启动、在手机上游玩等情况时的数据）",
             "games-played-label-global-with-bg": "战棋对局次数",
             "top-4-label-global-with-bg": "战棋前四",
-            "top-1-label-global-with-bg": "战棋第一"
+            "top-1-label-global-with-bg": "战棋第一",
+            "comps": {
+                "description": "探索最成功的酒馆战棋流派、协同效果和策略，在比赛中占据主导地位。"
+            },
+            "cards": {
+                "description": "分析酒馆战棋卡牌数据、等级表现，并发现哪些卡牌正在影响环境。"
+            }
         },
         "collection": {
             "packs": {
@@ -4289,10 +4312,18 @@
         },
         "arena": {
             "title-label-global": "竞技场",
-            "title-tooltip-global": "历史竞技场战绩（任何时间）"
+            "title-tooltip-global": "历史竞技场战绩（任何时间）",
+            "cards": "卡牌",
+            "classes": "职业",
+            "description": "免费查看英雄、卡牌数据以及过去的成功套牌等。"
         },
         "player-class": {
             "tooltip-game-mode": "历史{{gameMode}}战绩（使用{{class}}）"
+        },
+        "constructed": {
+            "meta": "环境",
+            "decks": "套牌",
+            "description": "免费查看任何分段区间的职业、卡牌和套牌数据"
         }
     },
     "twitch": {
