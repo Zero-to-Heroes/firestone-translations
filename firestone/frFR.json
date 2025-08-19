@@ -1112,8 +1112,8 @@
                         "discovered-winrate-impact-header": "Impact de découverte",
                         "discovered-winrate-header": "% victoires (découverte)",
                         "discovered-winrate-impact-header-tooltip": "Taux de victoires moyen par rapport au taux de victoires du deck lorsque la carte est découverte pendant la partie",
-                        "discovered-winrate-impact-tooltip-low-data": "Attention : cette carte n’a été découverte ou piochée que {{value}} fois. Les stats peuvent être imprécises.",
-                        "discovered-winrate-impact-tooltip-data": "Cette carte a été découverte ou piochée {{value}} fois",
+                        "discovered-winrate-impact-tooltip-low-data": "Attention : cette carte n’a été découverte ou piochée que {{value}} fois, en utilisant les stats de l’archétype, contre toutes les classes, pour le top Légende et Diamant. Les stats peuvent être imprécises.",
+                        "discovered-winrate-impact-tooltip-data": "Cette carte a été découverte ou piochée {{value}} fois, en utilisant les données de l’archétype, contre toutes les classes, pour le top Légende et Diamant.",
                         "play-coin-filter": {
                             "play": "En premier",
                             "coin": "Avec La pièce",
@@ -1467,12 +1467,12 @@
                     "position": "Position",
                     "expert-rating": "Évaluation",
                     "expert-rating-tooltip": "Évaluation de la puissance basée sur l’avis d’experts et expertes",
-                    "name": "Troupe",
+                    "name": "Composition",
                     "position-tooltip": "Position finale moyenne basée sur les stats. Attention : cette donnée peut sous-estimer les compositions terminant tôt leur formation, car elles seront plus nombreuses à être détectées dans les premiers tours.",
                     "first-percent": "Puissance",
                     "expert-difficulty": "Difficulté",
                     "expert-difficulty-tooltip": "Difficulté (selon les avis d’experts)",
-                    "first-percent-tooltip": "Reflète le pourcentage de tous les top 1 obtenus avec cette troupe, avec certains ajustements pour prendre en compte divers biais."
+                    "first-percent-tooltip": "Reflète le pourcentage de tous les top 1 obtenus avec cette composition, avec certains ajustements pour prendre en compte divers biais."
                 },
                 "contributors": {
                     "info": "Combine des données pures et des informations fournies par les meilleurs joueurs et joueuses de Champs de bataille.",
@@ -2736,7 +2736,8 @@
             "spell-schools": "Écoles de sorts"
         },
         "tourist": "Tourisme : {{className}}",
-        "burns-in": "Brûlera dans {{value}}"
+        "burns-in": "Brûlera dans {{value}}",
+        "unknown-minion": "Serviteur inconnu"
     },
     "battlegrounds": {
         "menu": {
@@ -2762,7 +2763,7 @@
             "lethal-dealt-tooltip": "% de chances de tuer l’adversaire",
             "lethal-received-tooltip": "% de chances de mourir ce combat",
             "composition-not-supported": {
-                "general": "Cette troupe de guerre n’est pas correctement supportée, les résultats peuvent être inexacts (raison : {{value}})",
+                "general": "Cette composition n’est pas correctement supportée, les résultats peuvent être inexacts (raison : {{value}})",
                 "reason-secret": "Secrets",
                 "reason-pirate": "Forban + Baron / Khadgar",
                 "reason-festergut": "Pulentraille",
@@ -2895,7 +2896,11 @@
             "spells-cast": "Sorts lancés",
             "spells-cast-tooltip": "Nombre de sorts que vous avez lancés pendant cette partie",
             "tavern-spell-attack-buff": "Buff d’ATQ des sorts de taverne",
-            "tavern-spell-health-buff": "Buff de PV des sorts de taverne"
+            "tavern-spell-health-buff": "Buff de PV des sorts de taverne",
+            "haunted-carapace-attack": "ATQ Carapace hantée",
+            "haunted-carapace-health": "PV Carapace hantée",
+            "haunted-carapace-attack-tooltip": "L’ATQ additionnelle donnée par vos carapaces hantées",
+            "haunted-carapace-health-tooltip": "Les PV additionnels donnés par vos carapaces hantées"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3008,13 +3013,13 @@
                         "browsing": "Recherche",
                         "exploring": "Exploration"
                     },
-                    "core-cards-header-tooltip": "Cartes essentielles à la troupe de guerre",
-                    "add-ons-header-tooltip": "Bonnes cartes de la troupe de guerre",
-                    "pin-tooltip": "Cliquez pour épingler/désépingler tous les serviteurs de cette troupe de guerre",
+                    "core-cards-header-tooltip": "Cartes essentielles à la composition",
+                    "add-ons-header-tooltip": "Bonnes cartes pour cette composition",
+                    "pin-tooltip": "Cliquez pour épingler/désépingler tous les serviteurs de cette composition",
                     "cycles-header-tooltip": "Cartes bonnes pour cycler, c'est-à-dire à acheter puis vendre en déclenchant leurs effets, mais qui n’ont pas besoin de rester sur le plateau",
                     "cycles-header": "Cycles",
                     "trinkets-header": "Bibelots",
-                    "trinkets-header-tooltip": "Les bibelots qui s’intègrent bien à cette troupe de guerre",
+                    "trinkets-header-tooltip": "Les bibelots qui s’intègrent bien à cette composition",
                     "difficulty": {
                         "hard": "Difficile",
                         "medium": "Intermédiaire",
@@ -3022,7 +3027,7 @@
                         "very-hard": "Très difficile"
                     },
                     "advice": {
-                        "difficulty-tooltip": "Difficulté de maîtrise de la troupe",
+                        "difficulty-tooltip": "Difficulté de maîtrise de la composition",
                         "how-to-play": "Comment la jouer",
                         "author": "Conseils fournis par {{author}}",
                         "when-to-commit": "Quand y aller"
@@ -3076,7 +3081,7 @@
             "tabs": {
                 "hp-by-turn": "Vie par tour",
                 "stats": "Stats",
-                "warband-composition-by-turn": "Troupes de guerre",
+                "warband-composition-by-turn": "Compositions",
                 "warband-total-stats-by-turn": "Stats de troupe de guerre",
                 "winrate-per-turn": "Taux de victoires",
                 "battles": "Combats"
@@ -5002,6 +5007,22 @@
         "attack_undead": "Morts-vivants ATQ",
         "boost_spell_naga": "Nagas boosts sorts",
         "overflow_undead": "Déferlement de Morts-vivants",
-        "self_damage_demons": "Démons rembobineur"
+        "self_damage_demons": "Démons rembobineur",
+        "goldrinn_beasts": "Bêtes Goldrinn",
+        "avalanche_elementals": "Élémentaires avalanche",
+        "charmwing_dragons": "Dragons Charmaile",
+        "cycle_nagas": "Nagas cycle",
+        "damage_demons": "Démons dégâts",
+        "end_of_turn_murlocs": "Murlocs Fin de tour",
+        "magnet_mechs": "Méca Magnétisme",
+        "shield_mechs": "Méca Bouclier divin",
+        "stego_beasts": "Bêtes stégosaure",
+        "ultraviolet_elementals": "Élémentaires ultraviolet",
+        "bounty_pirates": "Pirates primes",
+        "carapace_undead": "Morts-vivants carapaces",
+        "deep_blue_nagas": "Nagas Grand blues",
+        "end_of_turn_nagas": "Nagas Fin de tour",
+        "rally_quilboar": "Hurans Ralliement",
+        "rally_menagerie": "Ménagerie Ralliement"
     }
 }
