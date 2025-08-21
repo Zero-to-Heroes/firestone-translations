@@ -952,7 +952,9 @@
                 "simulator": "Simulator",
                 "trinkets": "Schmuckstücke",
                 "leaderboard": "Bestenlisten",
-                "cards": "Karten"
+                "cards": "Karten",
+                "your-stats": "Pers. Statistik",
+                "comps": "Kompositionen"
             },
             "tribes": {
                 "beast": "Wildtiere",
@@ -966,7 +968,9 @@
                 "quilboar": "Stacheleber",
                 "blank": "Kein Dienertyp",
                 "all": "Alle",
-                "undead": "Untot"
+                "undead": "Untot",
+                "battlecruiser": "Schwerer Kreuzer",
+                "zerg": "Zerg"
             },
             "filters": {
                 "hero": {
@@ -1527,7 +1531,9 @@
             "contextual_related_cards": "Bewege die Maus über bestimmte Karten im Tracker, um Details über ihre Effekte zu sehen",
             "deck_merge": "Mache ein Deck zu einer neuen Version eines anderen Decks, indem du es mit der Maus über das alte ziehst",
             "share_profile_page": "Greife online auf deine eigene Profilseite zu und teile sie mit anderen, um deine Erfolge und Statistiken zu präsentieren.",
-            "achievements_pin": "Wähle eine beliebige Anzahl von Errungenschaften aus, um sie während des Spiels zu verfolgen, und sieh zu, wie sie in Echtzeit aktualisiert werden"
+            "achievements_pin": "Wähle eine beliebige Anzahl von Errungenschaften aus, um sie während des Spiels zu verfolgen, und sieh zu, wie sie in Echtzeit aktualisiert werden",
+            "minion_auto_highlight": "Mit einigen Helden gibt es Diener, die du immer kaufen solltest (z.B. Gewiefte Glücksspielerin mit Käpt’n Glubschauge). Firestone kann diese im Gasthaus automatisch hervorheben.",
+            "guess_the_weight": "Einige Karten haben Kontexthilfen beim Entdecken"
         },
         "streams": {
             "category": {
@@ -2111,7 +2117,8 @@
             "simulator-help-tooltip": {
                 "title": "Erstelle Kämpfe und simuliere das Ergebnis. Es werden Tastaturbefehle unterstützt:",
                 "control-minion": "Füge einen Diener mit \"{{playerKey}}\" zu deinem Spielbrett und mit \"{{opponentKey}}\" zum gegnerischen Spielbrett hinzu.",
-                "control-hero-power": "Ändere deine Heldenfähigkeit mit \"{{playerKey}}\" und die des Gegners mit \"{{opponentKey}}\""
+                "control-hero-power": "Ändere deine Heldenfähigkeit mit \"{{playerKey}}\" und die des Gegners mit \"{{opponentKey}}\"",
+                "control-hero": "Wechsle deinen Helden mit \"{{playerKey}}\" und den des Gegners mit \"{{opponentKey}}\""
             },
             "eternal-legion-tooltip": "Die Anzahl befreundeter Ewiger Ritter, die dieses Spiel gestorben sind",
             "summon-mechs-tooltip": "Verleiht dem Diener \"Todesröcheln: ruft drei 1/1 Mechs herbei\"",
@@ -2143,7 +2150,8 @@
             "quest-reward-header": "Questbelohnungen",
             "turn-winrate-graph-title": "Ø Gewinnrate pro Zug",
             "battlecries-triggered": "Ausgelöste Kampfschreie",
-            "beasts-summoned": "Herbeigerufene Wildtiere"
+            "beasts-summoned": "Herbeigerufene Wildtiere",
+            "sneed-deathrattle": "Sneed-Effekt"
         },
         "hero-stats": {
             "matches-played-label": "Gespielte Spiele",
@@ -2155,7 +2163,9 @@
             "avg-position-details-tooltip-base-value": "Basiswert",
             "turn-winrate-tooltip": "Kampfgewinnrate pro Zug (zeigt dir, wann dieser Held am stärksten ist)",
             "avg-position-tooltip": "Durchschnittliche Platzierung",
-            "avg-position-your-tooltip": "Deine Werte"
+            "avg-position-your-tooltip": "Deine Werte",
+            "strategies-link-tooltip": "Öffnet das Hauptfenster, um Strategien für diesen Helden anzuzeigen",
+            "strategies-link": "Klicken für empfohlene Strategien"
         },
         "hero-selection": {
             "achievement-completed": "Errungenschaft abgeschlossen",
@@ -2251,7 +2261,8 @@
                     "advice": {
                         "author": "Erstellt von {{author}}"
                     },
-                    "pin-tooltip": "Klicken, um alle Diener in dieser Komposition an-/abzupinnen"
+                    "pin-tooltip": "Klicken, um alle Diener in dieser Komposition an-/abzupinnen",
+                    "header": "Kompositionen"
                 },
                 "tribe-category-tooltip": "Alle{{tribeName}} Karten anzeigen. Rechtsklick, um alle {{tribeName}} Karten im Gasthaus hervorzuheben.",
                 "spells-tier-tooltip": "Zauber"
@@ -2339,7 +2350,8 @@
         "board": {
             "total-damage": "Gesamtschaden",
             "seen-just-now": "Aktuelles Spielfeld",
-            "seen-turns-ago": "Spielfeld von vor {{value}} Zügen"
+            "seen-turns-ago": "Spielfeld von vor {{value}} Zügen",
+            "opponent-not-met": "Noch kein Kampf gegen diesen Spieler"
         },
         "empty-state-title": "Zurzeit gibt es hier noch nichts",
         "empty-state-subtitle": "Beginne Schlachtfeld zu spielen, um Informationen zu erhalten"
@@ -2843,7 +2855,12 @@
                 "show-achievements-tooltip": "Zeigt die noch fehlenden Errungenschaften für die angebotenen Helden bei der Heldenauswahl",
                 "show-tribes-auto-highlight-tooltip": "Hebt alle Diener eines bestimmten Types im Gasthaus hervor, wenn du einen Helden spielst, der diesen Dienertyp bevorzugt kaufen möchte (wie z.B. Elementare mit Chenvaala)",
                 "use-anomaly-filter-for-live-stats-label-short": "Anomalienfilter",
-                "use-mmr-filter-for-live-stats-tooltip": "Wenn diese Funktion aktiviert ist, werden die Heldenbewertungen, die zu Beginn eines Spiels auf dem Heldenauswahlbildschirm angezeigt werden, unter Berücksichtigung deiner aktuellen Wertung berechnet. WARNUNG: Dies kann zu einer geringen Anzahl von Daten führen."
+                "use-mmr-filter-for-live-stats-tooltip": "Wenn diese Funktion aktiviert ist, werden die Heldenbewertungen, die zu Beginn eines Spiels auf dem Heldenauswahlbildschirm angezeigt werden, unter Berücksichtigung deiner aktuellen Wertung berechnet. WARNUNG: Dies kann zu einer geringen Anzahl von Daten führen.",
+                "use-tribes-filter-for-live-stats-tooltip": "Wenn aktiviert werden für die bei der Heldenauswahl gezeigten Statistiken die im aktuellen Spiel verfügbaren Dienertypen berücksichtigt",
+                "use-anomaly-filter-for-live-stats-tooltip": "Wenn aktiviert wird für die bei der Heldenauswahl gezeigten Statistiken die im aktuellen Spiel vorhandene Anomalie berücksichtigt. ACHTUNG: Dies kann zu geringen Datenmengen führen",
+                "show-minions-auto-highlight-tooltip": "Hebt einige Diener im Gasthaus automatisch basierend auf deinem Held oder Spielfeld hervor (z.B. Gewiefte Glücksspielerin mit Käpt’n Glubschauge).",
+                "enable-battle-sim-tooltip": "Wenn aktiviert, zeige zu Beginn des Kampfes die Chancen auf Sieg, Unentschieden und Verlust",
+                "popup-hero-selection-screen-tooltip": "Wenn aktiviert, zeige bei der Heldenauswahl ein Fenster mit diversen Statistiken für die einzelnen Optionen"
             },
             "overlay": {
                 "show-banned-tribes-label": "Zeige gebannte Dienertypen",
@@ -2887,7 +2904,15 @@
                 "counter-free-refresh-tooltip": "Zeigt, wie viele gratis-Aktualisierungen du übrig hast",
                 "counter-baller-tooltip": "Zeigt den Bonus für deinen nächsten Dribbler",
                 "counter-baller-label": "Dribbler",
-                "counter-tavern-spells-buff-tooltip": "Zeigt die Angriff/Leben-Boni für deine Gasthauszauber, die Werte verleihen"
+                "counter-tavern-spells-buff-tooltip": "Zeigt die Angriff/Leben-Boni für deine Gasthauszauber, die Werte verleihen",
+                "minions-list-show-buddies-tooltip": "Zeige Partner immer, auch wenn es dir nicht gerade möglich ist, einen zu erhalten.",
+                "counter-magmaloc-tooltip": "Zeigt die Werte, die dein Magmaloc am Ende des Zuges erhalten wird",
+                "minions-list-group-minions-into-tribes-tooltip": "Fügt den Listen mit Dienern einer bestimmten Gattung auch passende Diener ohne Gattung hinzu. Zum Beispiel wäre dann Katastrophenkoch Nomi auch bei den Elementaren zu finden.",
+                "minions-list-compositions": {
+                    "header": "Kompositionen"
+                },
+                "minions-list-show-tier-7-tooltip": "Zeige Diener der Stufe 7 immer, auch wenn du nicht Thorim spielst",
+                "counter-majordomo-tooltip": "Zeigt die Anzahl der in diesem Zug gespielten Elementare, wenn Majordomo Executus im Gasthaus, auf dem Spielfeld oder auf der Hand ist"
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ Wertung und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger Wertung kann zu falschen Informationen führen.",
