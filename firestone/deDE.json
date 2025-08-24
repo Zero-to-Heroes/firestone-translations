@@ -579,7 +579,10 @@
                     "location": "Schauplatz",
                     "enchantment": "Verzauberung",
                     "lettuce_ability": "Fähigkeit (Söldner)",
-                    "battleground_anomaly": "Anomalie (Schlachtfeld)"
+                    "battleground_anomaly": "Anomalie (Schlachtfeld)",
+                    "battleground_quest_reward": "Questbelohnung (Schlachtfeld)",
+                    "battleground_spell": "Zauber (Schlachtfeld)",
+                    "battleground_trinket": "Schmuckstück (Schlachtfeld)"
                 },
                 "set": "Set:",
                 "rarity": "Seltenheit:",
@@ -970,7 +973,8 @@
                 "all": "Alle",
                 "undead": "Untot",
                 "battlecruiser": "Schwerer Kreuzer",
-                "zerg": "Zerg"
+                "zerg": "Zerg",
+                "protoss": "Protoss"
             },
             "filters": {
                 "hero": {
@@ -1012,7 +1016,8 @@
                 },
                 "stat-type": {
                     "hero": "Helden",
-                    "hero-power": "Heldenfähigkeit"
+                    "hero-power": "Heldenfähigkeit",
+                    "trinket": "Schmuckstücke"
                 },
                 "leaderboard": {
                     "search-placeholder": "Spieler suchen..."
@@ -1026,7 +1031,8 @@
                     "quests": "Quests"
                 },
                 "anomaly": {
-                    "all-anomalies": "Alle Anomalien"
+                    "all-anomalies": "Alle Anomalien",
+                    "validation-error-tooltip": "Bitte wähle eine beliebige Anzahl von Anomalien"
                 },
                 "card-type": {
                     "minion": "Diener",
@@ -1563,7 +1569,8 @@
             "match-stats": {
                 "no-data": {
                     "title": "Keine Daten für diesen Spielmodus",
-                    "ranked": "Spiele ein gewertetes Spiel oder starte Hearthstone, um mit der Aufzeichnung zu beginnen"
+                    "ranked": "Spiele ein gewertetes Spiel oder starte Hearthstone, um mit der Aufzeichnung zu beginnen",
+                    "battlegrounds": "Starte Hearthstone und öffne das Schlachtfeld, um mit der Aufzeichnung deiner Statistiken zu beginnen"
                 },
                 "header-total-matches": "Spiele insgesamt",
                 "header-player-class": "Name",
@@ -2671,7 +2678,8 @@
             "appearance": {
                 "battlegrounds": {
                     "title": "Schlachtfeld",
-                    "widget-background-color": "Widget-Hintergrundfarbe"
+                    "widget-background-color": "Widget-Hintergrundfarbe",
+                    "global": "Allgemein"
                 },
                 "reset-button": "Alles zurücksetzen"
             },
@@ -2860,7 +2868,24 @@
                 "use-anomaly-filter-for-live-stats-tooltip": "Wenn aktiviert wird für die bei der Heldenauswahl gezeigten Statistiken die im aktuellen Spiel vorhandene Anomalie berücksichtigt. ACHTUNG: Dies kann zu geringen Datenmengen führen",
                 "show-minions-auto-highlight-tooltip": "Hebt einige Diener im Gasthaus automatisch basierend auf deinem Held oder Spielfeld hervor (z.B. Gewiefte Glücksspielerin mit Käpt’n Glubschauge).",
                 "enable-battle-sim-tooltip": "Wenn aktiviert, zeige zu Beginn des Kampfes die Chancen auf Sieg, Unentschieden und Verlust",
-                "popup-hero-selection-screen-tooltip": "Wenn aktiviert, zeige bei der Heldenauswahl ein Fenster mit diversen Statistiken für die einzelnen Optionen"
+                "popup-hero-selection-screen-tooltip": "Wenn aktiviert, zeige bei der Heldenauswahl ein Fenster mit diversen Statistiken für die einzelnen Optionen",
+                "enable-battle-sim-label": "Kampfsimulation aktivieren",
+                "use-mmr-filter-for-live-stats-label-short": "Wertungsfilter",
+                "use-tribes-filter-for-live-stats-label-short": "Dienertypenfilter",
+                "show-hero-tier-label": "Overlay mit Heldenstatistiken",
+                "show-hero-tier-tooltip": "Zeigt bei der Heldenauswahl direkt über den Helden deren globale Durchschnittsplatzierungen an",
+                "show-hero-tips-label": "Tipps für Helden zeigen",
+                "show-sim-only-in-tavern-label": "Simulation nur nach Kampf zeigen",
+                "hide-simulation-tooltip": "Wenn aktiviert werden die Simulationsergebnisse nach dem Kampf wieder ausgeblendet",
+                "show-hero-tips-tooltip": "Der Wundersame Weisheitsball erscheint und zeigt dir Tipps von Experten für deinen aktuellen Helden, wenn du die Maus über ihm ziehst.",
+                "show-sim-only-in-tavern-tooltip": "Wenn aktiviert werden die Simulationsergebnisse im Kampf versteckt und erst dann angezeigt, wenn du ins Gasthaus zurückkehrst",
+                "hide-simulation-label": "Simulation nach Kampf verbergen",
+                "use-remote-simulator-tooltip": "Dadurch wird die Kampfsimulation auf dem Server durchgeführt, was deinen PC weniger stark belastet. Dafür dauert es dann etwas länger, bis die Ergebnisse ankommen.",
+                "show-intermediate-results-label": "Zwischenergebnisse zeigen",
+                "show-trinket-tips-label": "Tipps für Schmuckstücke",
+                "popup-post-match-stats-tooltip": "Wenn aktiviert wird das Schlachtfeld-Fenster immer am Ende eines Spiels für die Spielzusammenfassung angezeigt, auch wenn es vorher minimiert worden war",
+                "show-trinket-tips-tooltip": "Zeigt Tipps von den besten Spielern für Schmuckstücke, sowohl während der Auswahlphase im Overlay (für Premium-Nutzer) als auch in der Dienerliste (für alle).",
+                "show-intermediate-results-tooltip": "Zeigt schnell vorläufige Ergebnisse der Simulation, die sich dann immer weiter bis zum Endergebnis entwickeln"
             },
             "overlay": {
                 "show-banned-tribes-label": "Zeige gebannte Dienertypen",
@@ -2916,7 +2941,11 @@
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ Wertung und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger Wertung kann zu falschen Informationen führen.",
-                "show-in-leaderboard": "Über den Ranglistenkacheln anzeigen"
+                "show-in-leaderboard": "Über den Ranglistenkacheln anzeigen",
+                "text-2": "WICHTIG: Du musst zu Beginn einmal mit der Maus über jeden Spieler ziehen, damit die Informationen abgerufen werden können.",
+                "enable": "Wertung aus der Rangliste Im Overlay",
+                "show-in-opponent-recap-tooltip": "Spielernamen und Wertung über dem letzten bekannten Zustand des Spielfeldes eines Spielers im Overlay anzeigen",
+                "show-in-leaderboard-tooltip": "Spielernamen und Wertung direkt auf den Rangkacheln im Spiel anzeigen"
             },
             "session-widget": {
                 "size-title": "Widgetgröße",
@@ -2932,7 +2961,8 @@
                 "hide-when-friends-list-open": "Verbergen wenn Freundesliste offen",
                 "opacity-title": "Deckkraft des Widgets",
                 "label-tooltip": "Zeigt eine Zusammenfassung deiner aktuellen Spielsitzung. Besonders für Streamer nützlich"
-            }
+            },
+            "full-toggle-tooltip": "Schalte das aus, um die gesamte Funktionalität für das Schlachtfeld auf einmal zu deaktivieren"
         },
         "achievements": {
             "menu": {
@@ -3024,6 +3054,9 @@
             "games-played-label-global": "Gespielt",
             "cards": {
                 "description": "Analysiere Statistiken für alle Schlachtfeldkarten und finde heraus, welche Karten in der Meta eine zentrale Rolle spielen."
+            },
+            "comps": {
+                "description": "Lerne die erfolgreichsten Kompositionen und Strategien für das Schlachtfeld kennen, um in deinen Spielen richtig abzuräumen!"
             }
         },
         "spectator": {
