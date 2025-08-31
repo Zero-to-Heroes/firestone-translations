@@ -3053,7 +3053,8 @@
                 "lottery-block-text2": "Zu Beginn jeder Lotteriesaison werden die Punkte zurückgesetzt.",
                 "lottery-block-text3": "Hinweis: Wenn du mehrere Bildschirme hast, schalte im Lotteriefenster \"An Spiel anbinden\" aus und bewege es auf den Zweitbildschirm.",
                 "lottery-premium-section-tooltip": "Dieser Bereich ist nur für Premium-Nutzer verfügbar",
-                "lottery-block-text1": "Wenn du an der Lotterie teilnimmst, kannst du durch bestimmte Aktionen während des Spiels (z.B. Ressourcen verwenden) Punkte sammeln, solange das Lotteriefenster sichtbar ist. Am Ende des Monats werden 4 Sieger ausgelost (je mehr Punkte, desto bessere Chancen). Die Sieger erhalten ein zweimonatiges Premium-Abo und werden auf {{twitterLink}} und {{discordLink}} bekanntgegeben."
+                "lottery-block-text1": "Wenn du an der Lotterie teilnimmst, kannst du durch bestimmte Aktionen während des Spiels (z.B. Ressourcen verwenden) Punkte sammeln, solange das Lotteriefenster sichtbar ist. Am Ende des Monats werden 4 Sieger ausgelost (je mehr Punkte, desto bessere Chancen). Die Sieger erhalten ein zweimonatiges Premium-Abo und werden auf {{twitterLink}} und {{discordLink}} bekanntgegeben.",
+                "lottery-widget-settings-title": "Lotteriefenster-Einstellungen"
             },
             "widgets": {
                 "use-grouped-counters-label": "Verwende gruppierte Zähler",
@@ -3236,7 +3237,10 @@
                 "show-bottom-cards-separately-tooltip": "Zeigt die Karten, die bekanntermaßen unten im Deck sind, getrennt an",
                 "used-cards-go-to-bottom-tooltip": "Wenn aktiviert werden benutzte Karten in der Liste ganz unten angezeigt. Kann nur aktiviert werden, wenn die Einstellung Moderner Tracker deaktiviert ist",
                 "global-effects-tooltip": "Fügt oben im Tracker einen weiteren Bereich hinzu, der Effekte anzeigt, die für den Rest des Spiels gelten",
-                "show-bottom-cards-separately-label": "Zeige Unten im Deck"
+                "show-bottom-cards-separately-label": "Zeige Unten im Deck",
+                "buff-in-hand-tooltip": "Zeigt Boni für Karten auf der Hand deines Gegners",
+                "size-title": "Größe & Deckkraft",
+                "enable-secret-helper-tooltip": "Wenn aktiviert erscheint eine Übersicht über alle möglichen Geheimnisse, wenn dein Gegner ein Geheimnis ausspielt"
             },
             "your-deck": {
                 "counters": {
@@ -3396,7 +3400,8 @@
                 "show-ooc-tracker-tooltip": "Fügt eine Deckliste hinzu, während du zwischen den Matches Schätze auswählst. So kannst du zum Beispiel die Synergien zwischen den Karten erkennen.",
                 "max-health-option-blink": "Aufblitzen",
                 "max-health-option-mouseover": "Bei Mauskontakt",
-                "max-health-label": "Gegner max. Leben"
+                "max-health-label": "Gegner max. Leben",
+                "max-health-tooltip": "Wähle eine Art, das maximale Leben deines Gegners im Duellmodus anzuzeigen"
             },
             "turn-timer": {
                 "title": "Zug Timer",
@@ -3404,7 +3409,8 @@
                 "show-turn-timer-tooltip": "Zeigt ein Widget, das die vergangene Zeit im gesamten Spiel und im aktuellen Zug anzeigt, sowie wie viel Zeit noch für den aktuellen Zug übrig ist"
             },
             "mulligan": {
-                "size": "Größe"
+                "size": "Größe",
+                "show-mulligan-card-impact-label": "Karteneinfluss zeigen"
             },
             "max-resources-widget": {
                 "always-on": "Immer an",
@@ -3431,7 +3437,8 @@
                 "notifications-rewards-tooltip": "Eine Benachrichtigung anzeigen, wenn du außerhalb von Packungen eine Karte erhältst, typischerweise aus der Arena oder am Ende eines Monats",
                 "remove-duplicate-in-tooltip-tooltip": "Zeige höchstens eine Kopie jeder Karte in der Kontexthilfe, wenn du die Maus über bestimmte Karten im Tracker ziehst (z.B. für Karten, die alle gestorbenen Diener auflisten)",
                 "show-transformed-info-tooltip": "Zeigt die Karte, in die eine andere Karte verwandelt wurde (z.B. Wenn ein Diener in ein Schaf Verwandelt wird)",
-                "show-transformed-info-label": "Zeige umgewandelt in"
+                "show-transformed-info-label": "Zeige umgewandelt in",
+                "show-related-cards-tooltip": "Wenn du die Maus über eine Karte ziehst, zeige zugehörige Karten an (typischerweise diejenigen, die von der Karte erzeugt werden können)."
             },
             "history-show-only-new-cards": "Zeige nur neue Karten"
         },
@@ -3489,7 +3496,13 @@
                 "popup-hero-selection-screen-label": "Heldenauswahl aufklappen",
                 "simulator-number-of-sims-label": "Anzahl Simulationen",
                 "max-sim-duration-label": "Max. Simdauer",
-                "show-tribes-auto-highlight-label": "Gattungen auto-hervorheben"
+                "show-tribes-auto-highlight-label": "Gattungen auto-hervorheben",
+                "simulator-number-of-sims-tooltip": "Anzahl der Simulationen für jeden Kampf. Wir halten 5.000 für eine gute Anzahl. Ein höherer Wert erhöht die Genauigkeit weiter, aber dafür wird die Berechnung länger dauern und mehr Leistung verbrauchen.",
+                "show-hero-tooltip-tooltip": "Zeigt Heldenstatistiken und Strategietipps an, wenn du die Maus über das Heldenporträt auf dem Heldenauswahlbildschirm zu Beginn eines Spiels ziehst.",
+                "show-game-end-notif-tooltip": "Zeige eine Benachrichtigung unten rechts auf dem Bildschirm am Ende eines Spiels, die dich schnell zu den Spielstatistiken führt",
+                "max-sim-duration-tooltip": "Die maximale Zeit (in Millisekunden), die die Berechnung dauern darf. Wenn danach noch immer nicht die maximale Anzahl an Simulationen durchgeführt wurden, endet die Berechnung trotzdem und gibt dir ihr aktuelles Ergebnis.",
+                "simulator-config-title": "Simulatorkonfiguration",
+                "hero-stats-overlay-scale": "Größe des Heldenoverlays"
             },
             "overlay": {
                 "show-banned-tribes-label": "Zeige gebannte Dienertypen",
@@ -3567,7 +3580,12 @@
                 "counter-spells-played-label": "Ausgespielte Zauber",
                 "counter-tuskarr-raider-label": "Tuskarrfreibeuter",
                 "opponent-board-show-top-tooltip": "Wenn eingeschaltet wird das letzte bekannte Spielfeld des Gegners ganz oben auf dem Bildschirm angezeigt, ansonsten ist es ganz unten",
-                "counter-blood-gem-label": "Blutedelstein"
+                "counter-blood-gem-label": "Blutedelstein",
+                "minions-list-show-golden-cards-tooltip": "Zeige den Diener sowohl normal als auch in golden, wenn du die Maus über ihn ziehst",
+                "battle-simulation-example-label": "Simulationsbeispiel im Overlay",
+                "minions-list-show-buddies-label": "Partner zeigen",
+                "minions-list-include-trinkets-in-tribes-tooltip": "Fügt den Ansichten mit Dienern einer bestimmten Dienergattung zu der Gattung gehörige Schmuckstücke hinzu.",
+                "minions-list-show-on-mouse-over-tooltip": "Wenn deaktiviert musst du die Icons für die Dienerlisten anklicken, um sie zu öffnen. Ansonsten reicht es, die Maus darüber zu ziehen."
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ Wertung und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger Wertung kann zu falschen Informationen führen.",
