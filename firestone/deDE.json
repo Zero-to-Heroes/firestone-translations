@@ -2095,7 +2095,8 @@
     },
     "loading": {
         "hotkey": "Kilcken, um die App anzuzeigen",
-        "getting-ready": "Vorbereitung"
+        "getting-ready": "Vorbereitung",
+        "ready": "Deine Fähigkeiten sind bereit!"
     },
     "ftue": {
         "title": "Willkommen bei Firestone",
@@ -2582,7 +2583,9 @@
                         "author": "Erstellt von {{author}}"
                     },
                     "pin-tooltip": "Klicken, um alle Diener in dieser Komposition an-/abzupinnen",
-                    "header": "Kompositionen"
+                    "header": "Kompositionen",
+                    "trinkets-header": "Schmuckstücke",
+                    "trinkets-header-tooltip": "Schmuckstücke, die gut zu dieser Komposition passen"
                 },
                 "tribe-category-tooltip": "Alle {{tribeName}} Karten anzeigen. Rechtsklick, um alle {{tribeName}} Karten im Gasthaus hervorzuheben.",
                 "spells-tier-tooltip": "Zauber"
@@ -3406,11 +3409,19 @@
             "turn-timer": {
                 "title": "Zug Timer",
                 "show-turn-timer-label": "Zeige Zug Timer",
-                "show-turn-timer-tooltip": "Zeigt ein Widget, das die vergangene Zeit im gesamten Spiel und im aktuellen Zug anzeigt, sowie wie viel Zeit noch für den aktuellen Zug übrig ist"
+                "show-turn-timer-tooltip": "Zeigt ein Widget, das die vergangene Zeit im gesamten Spiel und im aktuellen Zug anzeigt, sowie wie viel Zeit noch für den aktuellen Zug übrig ist",
+                "show-turn-timer-match-length-label": "Spiellänge zeigen",
+                "size-title": "Timergröße",
+                "opacity-title": "Timerdeckkraft",
+                "width-title": "Timerbreite",
+                "show-turn-timer-match-length-tooltip": "Zeigt die Gesamtzeit an, die in diesem Spiel verstrichen ist, einschließlich Mulligan"
             },
             "mulligan": {
                 "size": "Größe",
-                "show-mulligan-card-impact-label": "Karteneinfluss zeigen"
+                "show-mulligan-card-impact-label": "Karteneinfluss zeigen",
+                "show-mulligan-deck-overview-label": "Deckübersicht zeigen",
+                "show-mulligan-deck-overview-tooltip": "Zeigt beim Mulligan eine Übersicht deines Decks mit dem Einfluss jeder Karte",
+                "show-mulligan-card-impact-tooltip": "Zeigt beim Mulligan den Einfluss jeder Karte auf die Gewinnrate deines Decks"
             },
             "max-resources-widget": {
                 "always-on": "Immer an",
@@ -3420,6 +3431,9 @@
                 "toggle": "Zähler zeigen",
                 "toggle-tooltip": "Wenn sich dein maximales Mana oder Leben ändert, wird ein Zähler angezeigt, der dir die neuen Werte mitteilt.",
                 "always-on-tooltip": "Den Zähler auch dann zeigen, wenn maximales Mana und Leben unverändert sind"
+            },
+            "lobby": {
+                "show-lobby-tracker-tooltip": "Zeigt die Deckliste für das ausgewählte Deck auf dem Deckauswahlbildschirm an."
             }
         },
         "collection": {
@@ -3438,9 +3452,15 @@
                 "remove-duplicate-in-tooltip-tooltip": "Zeige höchstens eine Kopie jeder Karte in der Kontexthilfe, wenn du die Maus über bestimmte Karten im Tracker ziehst (z.B. für Karten, die alle gestorbenen Diener auflisten)",
                 "show-transformed-info-tooltip": "Zeigt die Karte, in die eine andere Karte verwandelt wurde (z.B. Wenn ein Diener in ein Schaf Verwandelt wird)",
                 "show-transformed-info-label": "Zeige umgewandelt in",
-                "show-related-cards-tooltip": "Wenn du die Maus über eine Karte ziehst, zeige zugehörige Karten an (typischerweise diejenigen, die von der Karte erzeugt werden können)."
+                "show-related-cards-tooltip": "Wenn du die Maus über eine Karte ziehst, zeige zugehörige Karten an (typischerweise diejenigen, die von der Karte erzeugt werden können).",
+                "selective-notifications-label": "Du kannst Kartenbenachrichtigungen selektiv einschalten",
+                "remove-duplicate-in-tooltip-label": "Keine Duplikate in Kontexthilfe",
+                "show-related-cards-label": "Zugehörige Karten zeigen"
             },
-            "history-show-only-new-cards": "Zeige nur neue Karten"
+            "history-show-only-new-cards": "Zeige nur neue Karten",
+            "pack-stats-show-only-buyable-packs": "Nur kaufbare Packungen",
+            "pack-stats-show-only-buyable-packs-tooltip": "Zeige nur Packungen an, die du im Shop für Gold kaufen kannst",
+            "set-show-golden-stats": "Statistiken für goldene zeigen"
         },
         "duels": {
             "personal-decks-show-hidden-decks": "Zeige archivierte",
@@ -3502,7 +3522,18 @@
                 "show-game-end-notif-tooltip": "Zeige eine Benachrichtigung unten rechts auf dem Bildschirm am Ende eines Spiels, die dich schnell zu den Spielstatistiken führt",
                 "max-sim-duration-tooltip": "Die maximale Zeit (in Millisekunden), die die Berechnung dauern darf. Wenn danach noch immer nicht die maximale Anzahl an Simulationen durchgeführt wurden, endet die Berechnung trotzdem und gibt dir ihr aktuelles Ergebnis.",
                 "simulator-config-title": "Simulatorkonfiguration",
-                "hero-stats-overlay-scale": "Größe des Heldenoverlays"
+                "hero-stats-overlay-scale": "Größe des Heldenoverlays",
+                "show-trinket-stats-tooltip": "Zeigt die Auswahlrate und durchschnittliche Platzierung für die angebotenen Schmuckstücke.",
+                "show-overlay-button": "Overlay-Schaltfläche zeigen",
+                "show-next-opponent-recap-label": "Nächster Gegner Überblick",
+                "show-next-opponent-recap-tooltip": "Auf dem Schlachtfeldfenster für den Zweitbildschirm, zeige Infos über den nächsten Gegner in einem größeren Bereich oben, zusätzlich zu der Liste mit allen anderen darunter",
+                "show-hero-tooltip-label": "Helden-Kontexthilfe",
+                "show-overlay-button-tooltip": "Zeigt im Overlay eine Schaltfläche, die das Hauptfenster anzeigt oder verbirgt, als Alternative zu den Tastenkürzeln",
+                "popup-post-match-stats-label": "Statistiken nach dem Spiel",
+                "show-quest-stats-label": "Queststatistiken zeigen",
+                "show-game-end-notif-label": "Benachrichtigung am Spielende",
+                "show-trinket-stats-label": "Schmuckstück-Statistiken",
+                "show-quest-stats-tooltip": "Zeigt, wie viele Runden du durchschnittlich brauchst, um die angebotenen Quests abzuschließen, sowie die durchschnittliche Platzierung aller Spieler mit der zugehörigen Belohnung. Berücksichtige immer beides, bevor du eine Auswahl triffst!"
             },
             "overlay": {
                 "show-banned-tribes-label": "Zeige gebannte Dienertypen",
@@ -3549,7 +3580,7 @@
                 "counter-tavern-spells-buff-tooltip": "Zeigt die Angriff/Leben-Boni für deine Gasthauszauber, die Werte verleihen",
                 "minions-list-show-buddies-tooltip": "Zeige Partner immer, auch wenn es dir nicht gerade möglich ist, einen zu erhalten.",
                 "counter-magmaloc-tooltip": "Zeigt die Werte, die dein Magmaloc am Ende des Zuges erhalten wird",
-                "minions-list-group-minions-into-tribes-tooltip": "Fügt den Listen mit Dienern einer bestimmten Gattung auch passende Diener ohne Gattung hinzu. Zum Beispiel wäre dann Katastrophenkoch Nomi auch bei den Elementaren zu finden.",
+                "minions-list-group-minions-into-tribes-tooltip": "Fügt den Listen mit Dienern einer bestimmten Gattung auch zugehörige Diener ohne Gattung hinzu. Zum Beispiel wäre dann Katastrophenkoch Nomi auch bei den Elementaren zu finden.",
                 "minions-list-compositions": {
                     "header": "Kompositionen",
                     "fade-higher-tier-cards-label": "Karten höherer Stufe ausgrauen",
@@ -3585,7 +3616,13 @@
                 "battle-simulation-example-label": "Simulationsbeispiel im Overlay",
                 "minions-list-show-buddies-label": "Partner zeigen",
                 "minions-list-include-trinkets-in-tribes-tooltip": "Fügt den Ansichten mit Dienern einer bestimmten Dienergattung zu der Gattung gehörige Schmuckstücke hinzu.",
-                "minions-list-show-on-mouse-over-tooltip": "Wenn deaktiviert musst du die Icons für die Dienerlisten anklicken, um sie zu öffnen. Ansonsten reicht es, die Maus darüber zu ziehen."
+                "minions-list-show-on-mouse-over-tooltip": "Wenn deaktiviert musst du die Icons für die Dienerlisten anklicken, um sie zu öffnen. Ansonsten reicht es, die Maus darüber zu ziehen.",
+                "minions-list-show-trinkets-label": "Schmuckstücke zeigen",
+                "minions-list-show-on-mouse-over-label": "Dienerliste bei Mauskontakt zeigen",
+                "show-minions-list-label": "Dienerliste zeigen",
+                "show-minions-list-tooltip": "Zeigt eine Lister aller Diener im Spiel, gruppiert nach Gasthausstufe",
+                "last-opponent-board-tooltip": "Zeigt den letzten bekannten Zustand des Spielfeldes eines Gegners (und zusätzliche Infos), wenn du die Maus über dessen Portrait in der Rangliste ziehst",
+                "battle-simulation-tooltip": "Zeigt die aktuellen Simulationsergebnisse in einem kleinen Fenster im Overlay"
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ Wertung und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger Wertung kann zu falschen Informationen führen.",
