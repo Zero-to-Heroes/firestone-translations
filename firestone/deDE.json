@@ -1098,7 +1098,7 @@
             },
             "personal-stats": {
                 "hero": {
-                    "average-position": "Ø Position",
+                    "average-position": "Ø Platzierung",
                     "games-played": "Gespielte Partien",
                     "net-mmr": "Ø Wertung",
                     "empty-state-text": "Für die gewählten Filter wurden keinen Daten gefunden. Wenn du nach Daten für Schmuckstücke suchst, leere zuerst deinen lokalen Cache (Einstellungen > Allgemein > Daten > Lokalen Cache löschen)",
@@ -1121,7 +1121,10 @@
                         "community-value-tooltip": "Durchschnittlicher Wert aus der Community",
                         "net-mmr-tooltip": "Durchschnittlicher Gewinn/Verlust von Wertung pro Spiel",
                         "avg-mmr-loss-tooltip": "Durchschnittlicher Verlust von Wertung pro Spiel",
-                        "avg-mmr-gain-tooltip": "Durchschnittlicher Gewinn von Wertung pro Spiel"
+                        "avg-mmr-gain-tooltip": "Durchschnittlicher Gewinn von Wertung pro Spiel",
+                        "avg-mmr-loss": "Ø Wertungsverlust",
+                        "avg-mmr-gain": "Ø Wertungsgewinn",
+                        "net-mmr": "Ø Wertung"
                     },
                     "last-warbands": {
                         "title": "Letzte {{value}} Spiele",
@@ -1264,10 +1267,13 @@
                         "3-on-3-bis": "3 auf 3 (Level Zug 9)",
                         "4-on-4": "4 auf 4",
                         "3-on-3": "3 auf 3 (Level Zug 8)",
-                        "basic": "Standardkurve"
+                        "basic": "Standardkurve",
+                        "aggro-yogg": "Aggro Yogg Kurve",
+                        "basic-yogg": "Normale Yogg Kurve"
                     }
                 },
-                "date": "Veröffentlicht am {{date}} (Patch {{patch}})"
+                "date": "Veröffentlicht am {{date}} (Patch {{patch}})",
+                "curve-label": "Kurven: "
             },
             "bgs-tier-list": {
                 "header": "Questrangliste ({{value}} Spiele) "
@@ -2439,7 +2445,8 @@
                 "title": "Erstelle Kämpfe und simuliere das Ergebnis. Es werden Tastaturbefehle unterstützt:",
                 "control-minion": "Füge einen Diener mit \"{{playerKey}}\" zu deinem Spielbrett und mit \"{{opponentKey}}\" zum gegnerischen Spielbrett hinzu.",
                 "control-hero-power": "Ändere deine Heldenfähigkeit mit \"{{playerKey}}\" und die des Gegners mit \"{{opponentKey}}\"",
-                "control-hero": "Wechsle deinen Helden mit \"{{playerKey}}\" und den des Gegners mit \"{{opponentKey}}\""
+                "control-hero": "Wechsle deinen Helden mit \"{{playerKey}}\" und den des Gegners mit \"{{opponentKey}}\"",
+                "control-general": "Während der Auswahl kannst du mit \"Tab\" über die einzelnen Elemente iterieren, mit \"Leertaste\" Häkchen setzen und mit \"Enter\" die erste angebotene Option auswählen. Schließe danach die Auswahl mit \"Shift + Enter\" ab."
             },
             "eternal-legion-tooltip": "Die Anzahl befreundeter Ewiger Ritter, die dieses Spiel gestorben sind",
             "summon-mechs-tooltip": "Verleiht dem Diener \"Todesröcheln: ruft drei 1/1 Mechs herbei\"",
@@ -2447,7 +2454,7 @@
             "summon-plants": "Pflanzen herbeirufen",
             "frostling-bonus-tooltip": "Die Anzahl an Elementaren, die du dieses Spiel ausgespielt hast",
             "summon-plants-tooltip": "Verleiht dem Diener \"Todesröcheln: ruft zwei 1/1 Pflanzen herbei\"",
-            "bloodgem-attack": "Blutedelsteine - Angriff",
+            "bloodgem-attack": "Blutedelsteine: Angriff",
             "ancestral-automaton-tooltip": "Die Anzahl an Mechanoiden der Ahnen, die du dieses Spiel herbeigerufen hast",
             "teammate-board-tooltip": "Feld deines Partners. Klicken, um den Partner in die aktive Zone zu bewegen und sein Feld zu bearbeiten.",
             "reposition-button-tooltip-firstpass": "Berechne einige (~50) Simulationen für jede mögliche Permutation, um die schlechten schnell zu eliminieren",
@@ -2473,7 +2480,13 @@
             "battlecries-triggered": "Ausgelöste Kampfschreie",
             "beasts-summoned": "Herbeigerufene Wildtiere",
             "sneed-deathrattle": "Sneed-Effekt",
-            "undead-army": "Untote Armee"
+            "undead-army": "Untote Armee",
+            "friendly-minions-dead-last-combat": "Zuletzt gestorben",
+            "beetle-attack-buff": "Käfer: Angriffsboni",
+            "beetle-health-buff": "Käfer: Lebensboni",
+            "elemental-health-buff": "Elementare: Leben",
+            "elemental-attack-buff": "Elementare: Angriff",
+            "bloodgem-health": "Blutedelsteine: Leben"
         },
         "hero-stats": {
             "matches-played-label": "Gespielte Spiele",
@@ -2487,7 +2500,8 @@
             "avg-position-tooltip": "Durchschnittliche Platzierung",
             "avg-position-your-tooltip": "Deine Werte",
             "strategies-link-tooltip": "Öffnet das Hauptfenster, um Strategien für diesen Helden anzuzeigen",
-            "strategies-link": "Klicken für empfohlene Strategien"
+            "strategies-link": "Klicken für empfohlene Strategien",
+            "avg-position-label": "Ø Platzierung:"
         },
         "hero-selection": {
             "achievement-completed": "Errungenschaft abgeschlossen",
@@ -2557,7 +2571,8 @@
                     "tribes": "Dienertypen",
                     "tiers": "Stufen",
                     "tiers-tribes": "Diener",
-                    "mechanics": "Fähigkeiten"
+                    "mechanics": "Fähigkeiten",
+                    "compositions": "Komps"
                 },
                 "minion-banned-tooltip": "Diese Karte ist aufgrund der aktiven Anomalie gebannt",
                 "highlight-minion": "Diese Karte anpinnen, um sie im Gasthaus hervorzuheben. Du kannst auch auf Karten in der Dienerliste rechtsklicken, um sie hervorzuheben",
@@ -2587,7 +2602,8 @@
                     "pin-tooltip": "Klicken, um alle Diener in dieser Komposition an-/abzupinnen",
                     "header": "Kompositionen",
                     "trinkets-header": "Schmuckstücke",
-                    "trinkets-header-tooltip": "Schmuckstücke, die gut zu dieser Komposition passen"
+                    "trinkets-header-tooltip": "Schmuckstücke, die gut zu dieser Komposition passen",
+                    "cycles-header": "Rein und Raus"
                 },
                 "tribe-category-tooltip": "Alle {{tribeName}} Karten anzeigen. Rechtsklick, um alle {{tribeName}} Karten im Gasthaus hervorzuheben.",
                 "spells-tier-tooltip": "Zauber"
@@ -2675,8 +2691,9 @@
         "board": {
             "total-damage": "Gesamtschaden",
             "seen-just-now": "Aktuelles Spielfeld",
-            "seen-turns-ago": "Spielfeld von vor {{value}} Zügen",
-            "opponent-not-met": "Noch kein Kampf gegen diesen Spieler"
+            "seen-turns-ago": "Spielfeld vor {{value}} Zügen",
+            "opponent-not-met": "Noch kein Kampf gegen diesen Spieler",
+            "last-board-empty": "Letztes Spielfeld war leer"
         },
         "empty-state-title": "Zurzeit gibt es hier noch nichts",
         "empty-state-subtitle": "Beginne Schlachtfeld zu spielen, um Informationen zu erhalten"
@@ -3624,7 +3641,9 @@
                 "show-minions-list-label": "Dienerliste zeigen",
                 "show-minions-list-tooltip": "Zeigt eine Lister aller Diener im Spiel, gruppiert nach Gasthausstufe",
                 "last-opponent-board-tooltip": "Zeigt den letzten bekannten Zustand des Spielfeldes eines Gegners (und zusätzliche Infos), wenn du die Maus über dessen Portrait in der Rangliste ziehst",
-                "battle-simulation-tooltip": "Zeigt die aktuellen Simulationsergebnisse in einem kleinen Fenster im Overlay"
+                "battle-simulation-tooltip": "Zeigt die aktuellen Simulationsergebnisse in einem kleinen Fenster im Overlay",
+                "show-tribe-colors-tooltip": "Färbt die Symbole der einzelnen Dienergattungen in der Farbe der Gattung",
+                "show-tribe-colors-label": "Nach Gattung färben"
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ Wertung und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger Wertung kann zu falschen Informationen führen.",
