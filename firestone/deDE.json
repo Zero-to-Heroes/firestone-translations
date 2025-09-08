@@ -763,7 +763,8 @@
                 "in-packs": "In {{value}} Packungen",
                 "browse-set-button": "Set durchsuchen",
                 "total-non-golden-cards": "Insgesamt gesammelte nicht goldene Karten",
-                "total-golden-cards": "Insgesamt gesammelte Gold-, Diamant- und Signaturkarten"
+                "total-golden-cards": "Insgesamt gesammelte Gold-, Diamant- und Signaturkarten",
+                "pity-timer-reset-tooltip": "Wenn du den Timer für diese Packung zurücksetzt, werden alle bis jetzt geöffneten Packungen bei der Bestimmung, wann deine nächste Epische oder Legendäre Karte garantiert fällig ist, ignoriert."
             },
             "empty-state": {
                 "no-missing-card-in-set": {
@@ -1066,7 +1067,7 @@
                 "tribe": {
                     "all-tribes": "Alle Stämme",
                     "no-tribe": "Kein Dienertyp",
-                    "validation-error-tooltip": "Bitte wähle entweder alle Dienertypen oder nur 5"
+                    "validation-error-tooltip": "Bitte wähle entweder alle Dienergattungen oder nur 5"
                 },
                 "stat-type": {
                     "hero": "Helden",
@@ -1155,7 +1156,8 @@
                         "your-label": "Aktueller Versuch",
                         "your-tooltip": "Deine Werte für diesen Helden",
                         "community-label": "Durchschnitt für Held",
-                        "community-tooltip": "Durchschnittliche Summe der Dienerwerte (Angriff + Leben) zu Beginn des Kampfes in jedem Zug"
+                        "community-tooltip": "Durchschnittliche Summe der Dienerwerte (Angriff + Leben) zu Beginn des Kampfes in jedem Zug",
+                        "stat-label": "Wert"
                     },
                     "mmr": {
                         "empty-state-message": "Beginne Schlachtfeld mit diesem Helden zu spielen, um Informationen zu erhalten"
@@ -1163,7 +1165,8 @@
                 },
                 "rating": {
                     "empty-state-message": "Beginne Schlachtfeld zu spielen, um Informationen zu erhalten",
-                    "axis-label": "Wertung"
+                    "axis-label": "Wertung",
+                    "title": "Wertung / Spiele"
                 },
                 "records": {
                     "columns": {
@@ -1220,7 +1223,7 @@
                 "header-pick-rate": "Auswahlrate",
                 "header-pickrate": "Auswahlrate",
                 "header-games-played": "Gespielte Partien",
-                "tribe-impact-position-tooltip": "Wie sehr sich die durchschnittliche Platzierung besierend auf ausgewählten Dienertypen und Anomalie ändert",
+                "tribe-impact-position-tooltip": "Wie sehr sich die durchschnittliche Platzierung besierend auf ausgewählten Dienergattungen und Anomalie ändert",
                 "header-ungroup-difficulty-button": "Aufteilen",
                 "quest-tooltip-with-difficulty": "{{questName}} mit Schwierigkeitsstufe {{difficulty}} (erscheint als {0} auf dem Kartentext des Quests)",
                 "quest-tooltip-all-difficulties": "{{questName}} für alle Schwierigkeitsstufen",
@@ -1234,7 +1237,7 @@
                 "header-average-position-high-mmr": "Platzierung oberste {{value}}%",
                 "header-expand-all-button": "Alles ausklappen",
                 "header-tribes": "Stärkste Dienertypten",
-                "header-tribes-tooltip": "Diese Dienertypen haben den größten positiven Einfluss auf die durchschnittliche Platzierung des Helden, wenn sie im Spiel sind",
+                "header-tribes-tooltip": "Diese Dienergattungen haben den größten positiven Einfluss auf die durchschnittliche Platzierung des Helden, wenn sie im Spiel sind",
                 "header-collapse-all-button": "Alles einklappen",
                 "learn-more": "Wie wurde das berechnet?",
                 "header-group-difficulty-button": "Gruppe",
@@ -1249,7 +1252,10 @@
             "strategies": {
                 "curve": {
                     "action": {
-                        "buy": "Kaufen"
+                        "buy": "Kaufen",
+                        "sell": "Verkaufen",
+                        "hero-power": "Heldenfähigkeit",
+                        "level": "Level auf {{value}}"
                     },
                     "step": {
                         "gold": "{{value}} Gold",
@@ -1261,7 +1267,10 @@
                         "basic-yogg": "Verwendet eine 2-Kosten-Heropower, um schneller auf Tier 3 zu kommen.",
                         "aggro-yogg": "Verwendet eine 2-Kosten-Heropower, um ein gutes Tier 1s aufs Bord zu bekommen, bevor schneller auf 3 zu leveln",
                         "warrior": "Eine sehr gute Linie, wenn die Wirtschaft auf Stufe 1 und schnelle Drillinge stark sind.",
-                        "extended-warrior": "Eine sehr gute Linie, wenn die Wirtschaft auf Stufe 1 und schnelle Drillinge stark sind. Diese Variante ist eine Ausweichoption für den Fall, dass ein Drilling noch nicht aufgetaucht ist, wenn man die normale Kriegerkurve spielt."
+                        "extended-warrior": "Eine sehr gute Linie, wenn die Wirtschaft auf Stufe 1 und schnelle Drillinge stark sind. Diese Variante ist eine Ausweichoption für den Fall, dass ein Drilling noch nicht aufgetaucht ist, wenn man die normale Kriegerkurve spielt.",
+                        "3-on-3": "Nimmt zuerst viel Schaden für schnelle Diener der Stufe 3, levelt dann aggressiv",
+                        "4-on-4": "Nimmt zuerst viel Schaden für schnelle Diener der Stufe 4. Backup-Option bei schlechtem Gasthaus nach 3 auf 3; braucht 1 Gold extra",
+                        "3-on-3-bis": "Nimmt zuerst viel Schaden für schnelle Diener der Stufe 3"
                     },
                     "name": {
                         "3-on-3-bis": "3 auf 3 (Level Zug 9)",
@@ -1269,7 +1278,16 @@
                         "3-on-3": "3 auf 3 (Level Zug 8)",
                         "basic": "Standardkurve",
                         "aggro-yogg": "Aggro Yogg Kurve",
-                        "basic-yogg": "Normale Yogg Kurve"
+                        "basic-yogg": "Normale Yogg Kurve",
+                        "jeef": "Jeef-Kurve",
+                        "rafaam": "Rafaam-Kurve",
+                        "slow-rafaam": "Langsame Rafaam-Kurve",
+                        "pocky": "Pocky-Kurve",
+                        "extended-warrior": "Erweiterte Krieger-Kurve",
+                        "fast-jeef": "Schnelle Jeef-Kurve",
+                        "slow-jeef": "Langsame Jeef-Kurve",
+                        "warrior": "Krieger-Kurve",
+                        "toki": "Toki-Kurve"
                     }
                 },
                 "date": "Veröffentlicht am {{date}} (Patch {{patch}})",
@@ -1296,6 +1314,9 @@
                     "info": "Kombiniert Rohdaten mit dem Wissen der besten Spieler.",
                     "header": "Von Experten unterstützt",
                     "text": "Kompositionen und Tipps wurden von den besten Spielern erstellt"
+                },
+                "advice": {
+                    "title": "Strategie"
                 }
             }
         },
@@ -1600,7 +1621,16 @@
             "achievements_pin": "Wähle eine beliebige Anzahl von Errungenschaften aus, um sie während des Spiels zu verfolgen, und sieh zu, wie sie in Echtzeit aktualisiert werden",
             "minion_auto_highlight": "Mit einigen Helden gibt es Diener, die du immer kaufen solltest (z.B. Gewiefte Glücksspielerin mit Käpt’n Glubschauge). Firestone kann diese im Gasthaus automatisch hervorheben.",
             "guess_the_weight": "Einige Karten haben Kontexthilfen beim Entdecken",
-            "lottery": "Nimm an der monatlichen Lotterie teil, um Premiumabos zu gewinnen (aktivieren unter Einstellungen > Allgemein > Lotterie)"
+            "lottery": "Nimm an der monatlichen Lotterie teil, um Premiumabos zu gewinnen (aktivieren unter Einstellungen > Allgemein > Lotterie)",
+            "bg_wisdomball": "Du kannst Tipps von den besten Spielern direkt im Overlay erhalten und ihre Strategiern ausprobieren",
+            "bg_tab_key": "Drücke \"Tab\" für einen schnellen Überblick über alle Spieler",
+            "minions_list_by_tribe": "Du kannst die Diener in der Dienerliste nach Gattung gruppieren. Dadurch wird auch das Fenster mit verfügbaren Dienergattungen überflüssig.",
+            "constructed_deck_stats": "Erhalte detaillierte Statistiken (wie Gewinnrate beim Mulligan oder wenn gezogen) für einzelne Karten sowie für ganze Archetypen.",
+            "quest_stats": "Sieh die durchschnittliche Zeit zum Abschließen und Platzierung aller Quests und Belohnungen im Overlay",
+            "bg_hero_select": "Du kannst direkt bei der Heldenauswahl für jeden Helden Statistiken sehen",
+            "discover_highlight": "Beim Entdecken einer Karte werden relevante Infos in deinem Deck hervorgehoben",
+            "achievements_pick_for_me": "Du kannst die App 3 Errungenschaften zum Verfolgen auswählen lassen",
+            "constructed_deck_stats_free": "Stöbere kostenlos in den aktuellen Top-Decklisten!"
         },
         "streams": {
             "category": {
@@ -1701,7 +1731,8 @@
                 "stats": {
                     "mechsPlayed-tooltip": "Spiele Mechs um pro gespieltem Mech {{pointsGained}} Punkte zu erhalten",
                     "demonsPlayed-label": "Dämonen gespielt",
-                    "undeadPlayed-label": "Ausgespielte Untote"
+                    "undeadPlayed-label": "Ausgespielte Untote",
+                    "totalResourcesUsed-tooltip": "Erhalte {{pointsGained}} Punkte für jedes verbrauchte Mana (oder Gold auf dem Schachtfeld)"
                 },
                 "season-duration-end": "Season endet in {{ days }}d {{ hours }}h {{ minutes }}m",
                 "season-duration-end-tooltip": "Saison begonnen am {{ startDate}}"
@@ -1761,6 +1792,11 @@
             "check-status-online-link": "bei Tebex",
             "cant-subscribe-button": "Abo nicht möglich",
             "view-payment-history": "Zahlungsverlauf anzeigen"
+        },
+        "mercenaries": {
+            "menu": {
+                "composition-details": "Details für Komposition"
+            }
         }
     },
     "turn-timer": {
@@ -2380,7 +2416,10 @@
                 "reason-secret": "Geheimnisse",
                 "bug": "Ein unbekannter Fehler ist aufgetreten. Ein Fehlerbericht wurde automatisiert an die Entwickler gesendet",
                 "reason-enchantment": "{{cardName}} Verzauberung",
-                "general": "Diese Komposition ist nicht gut unterstützt, Ergebnisse können falsch sein (Grund: {{value}})"
+                "general": "Diese Komposition ist nicht gut unterstützt, Ergebnisse können falsch sein (Grund: {{value}})",
+                "reason-stitched": "Seuchenmord-Kreation",
+                "reason-festergut": "Fauldarm",
+                "reason-pirate": "Freibeuterin + Titus / Khadgar"
             },
             "result": {
                 "won": "Gewonnen",
@@ -2393,7 +2432,8 @@
             "damage-received-tooltip": "Ø Schaden bei Niederlage",
             "damage-dealt-tooltip": "In mindestens {{value}}% der Fälle wird der Schaden in diesem Bereich liegen",
             "locked-premium-info-tooltip": "Werde Premium, um Zwischenergebnisse im Simulator zu sehen und Ergebnisse früher zu erhalten",
-            "temp-result-tooltip": "Nur Zwischenergebnisse; die Simulation läuft noch und Endergebnisse können anders ausfallen"
+            "temp-result-tooltip": "Nur Zwischenergebnisse; die Simulation läuft noch und Endergebnisse können anders ausfallen",
+            "locked-premium-info": "Schnell-Sim freischalten"
         },
         "sim": {
             "update-minion-button-tooltip": "Diener aktualisieren",
@@ -2424,7 +2464,7 @@
             "heroes-header": "Helden",
             "search-heroes-placeholder": "Suche Helden",
             "update-minion-title": "Diener aktualisieren",
-            "summon-mechs": "Mech beschwören",
+            "summon-mechs": "Mechs beschwören",
             "minions-selection-title": "Diener",
             "search-minion-placeholder": "Suche Diener",
             "add-teammate-button": "Partner hinzufügen",
@@ -2436,7 +2476,7 @@
             "greater-trinkets-header": "Große Schmuckstücke",
             "lesser-trinkets-header": "Geringe Schmuckstücke",
             "ancestral-automaton": "Mechanoid der Ahnen",
-            "pirates-played-tooltip": "Die Anzahl an Piraten, die du bisher ausgespielt hast",
+            "pirates-played-tooltip": "Die Anzahl an Piraten, die du dieses Spiel ausgespielt hast",
             "undead-army-tooltip": "Der zusätzliche Angriff für deine Untoten",
             "reposition-button-secondpass": "Zweiter Durchlauf...",
             "quest-reward-search-placeholder": "Questbelohnung suchen",
@@ -2449,11 +2489,11 @@
                 "control-general": "Während der Auswahl kannst du mit \"Tab\" über die einzelnen Elemente iterieren, mit \"Leertaste\" Häkchen setzen und mit \"Enter\" die erste angebotene Option auswählen. Schließe danach die Auswahl mit \"Shift + Enter\" ab."
             },
             "eternal-legion-tooltip": "Die Anzahl befreundeter Ewiger Ritter, die dieses Spiel gestorben sind",
-            "summon-mechs-tooltip": "Verleiht dem Diener \"Todesröcheln: ruft drei 1/1 Mechs herbei\"",
+            "summon-mechs-tooltip": "Verleiht dem Diener \"Todesröcheln: Ruft drei 1/1 Mechs herbei\"",
             "show-buddies-button-title": "Partner anzeigen",
             "summon-plants": "Pflanzen herbeirufen",
             "frostling-bonus-tooltip": "Die Anzahl an Elementaren, die du dieses Spiel ausgespielt hast",
-            "summon-plants-tooltip": "Verleiht dem Diener \"Todesröcheln: ruft zwei 1/1 Pflanzen herbei\"",
+            "summon-plants-tooltip": "Verleiht dem Diener \"Todesröcheln: Ruft zwei 1/1 Pflanzen herbei\"",
             "bloodgem-attack": "Blutedelsteine: Angriff",
             "ancestral-automaton-tooltip": "Die Anzahl an Mechanoiden der Ahnen, die du dieses Spiel herbeigerufen hast",
             "teammate-board-tooltip": "Feld deines Partners. Klicken, um den Partner in die aktive Zone zu bewegen und sein Feld zu bearbeiten.",
@@ -2462,7 +2502,7 @@
             "empty-state-subtitle": "Dein erster Kampf wird hier angezeigt, nachdem er stattgefunden hat",
             "reposition-button-tooltip-cancel": "Klicken, um die Neupositionierung abzubrechen",
             "simulate-button-tooltip": "Den Kampf in der aktuellen Situation simulieren",
-            "empty-teammate-board": "Noch kein Feld. Klicken, um den Teampartner in den Arbeitsbereich zu bewegen.",
+            "empty-teammate-board": "Noch kein Spielfeld. Klicken, um den Teampartner in den Arbeitsbereich zu bewegen.",
             "importing": "Wird importiert, bitte warten",
             "reposition-button-tooltip-finalresult": "Berechne eine vollständige Simulation für die vielversprechendsten Kandidaten. Dies ist der längste Schritt und kann mehrere Minuten dauern",
             "reposition-button-finalresult": "Letzte Berechnungen...",
@@ -2470,7 +2510,7 @@
             "remove-teammate-button": "Teampartner entfernen",
             "export-confirmation": "Simulationscode wurde in Zwischenablage kopiert",
             "import-button-tooltip": "Simulationscode importieren, um den Simulator mit Leben zu füllen",
-            "reposition-button": "Neu positionieren",
+            "reposition-button": "Umpositionieren",
             "reposition-button-firstpass": "Erster Durchlauf...",
             "clear-button": "Löschen",
             "global-info-title-tooltip": "Klicken, um globale Effekte zu verändern",
@@ -2486,12 +2526,38 @@
             "beetle-health-buff": "Käfer: Lebensboni",
             "elemental-health-buff": "Elementare: Leben",
             "elemental-attack-buff": "Elementare: Angriff",
-            "bloodgem-health": "Blutedelsteine: Leben"
+            "bloodgem-health": "Blutedelsteine: Leben",
+            "haunted-carapace-health": "Verfluchter Panzer: Leben",
+            "bloodgem-health-tooltip": "Das zusätzliche Leben, das ein Blutedelstein verleiht",
+            "pirates-summoned-tooltip": "Die Anzahl an Piraten, die du dieses Spiel herbeigerufen hast",
+            "friendly-minions-dead-last-combat-tooltip": "Die Anzahl befreundeter Diener, die im letzten Kampf gestorben sind",
+            "battlecries-triggered-tooltip": "Die Anzahl an Kampfschreien, die du in diesem Spiel ausgelöst hast",
+            "select-quest-reward-placeholder": "Wähle eine Questbelohnung",
+            "resimulating-battle": "Wird neu simuliert",
+            "global-effects-header": "Globale Effekte",
+            "tavern-spells-cast-tooltip": "Die Anzahl an Gasthauszaubern, die du dieses Spiel gewirkt hast",
+            "pirates-played": "Gespielte Piraten",
+            "sneed-deathrattle-tooltip": "Wie oft die Heldenfähigkeit von Sneed auf diesen Diener eingesetzt wurde",
+            "pirates-summoned": "Herbeigerufene Piraten",
+            "haunted-carapace-attack": "Verfluchter Panzer: Angriff",
+            "haunted-carapace-attack-tooltip": "Der zusätzliche Angriff durch Verfluchte Panzer",
+            "haunted-carapace-health-tooltip": "Das zusätzliche Leben durch Verfluchte Panzer",
+            "tavern-spells-cast": "Gewirkte Gasthauszauber",
+            "frostling-bonus": "Frostling Bonus",
+            "eternal-legion": "Ewige Legion",
+            "magnetized": "Magnetisiert",
+            "beasts-summoned-tooltip": "Die Anzahl von Wildtieren, die du in diesem Spiel herbeigerufen hast",
+            "tavern-spell-health-buff": "Gasthauszauber: Leben",
+            "tavern-spell-attack-buff": "Gasthauszauber: Angriff",
+            "bloodgem-attack-tooltip": "Der zusätzliche Angriff, den ein Blutedelstein verleiht",
+            "magnetized-tooltip": "Die Anzahl an Dienern, die du dieses Spiel magnetisiert hast",
+            "spells-cast": "Gewirkte Zauber",
+            "spells-cast-tooltip": "Die Anzahl an Zaubern, die du dieses Spiel gewirkt hast"
         },
         "hero-stats": {
             "matches-played-label": "Gespielte Spiele",
-            "winning-tribes-title": "Dienertypen, die am meisten gewinnen",
-            "winning-tribes-title-tooltip": "Prozentsatz jedes Dienertypen, die im Durchschnitt in den besten 4 Trupps sind",
+            "winning-tribes-title": "Dienergattungen, die am meisten gewinnen",
+            "winning-tribes-title-tooltip": "Prozentsatz, wie oft jede Dienergattung im Durchschnitt in den besten 4 Trupps ist",
             "matches-played-tooltip": "Anzahl deiner Spiele mit diesem Held",
             "place": "Platz: {{value}}",
             "turn-winrate": "Gewinnrate pro Zug",
@@ -2501,7 +2567,8 @@
             "avg-position-your-tooltip": "Deine Werte",
             "strategies-link-tooltip": "Öffnet das Hauptfenster, um Strategien für diesen Helden anzuzeigen",
             "strategies-link": "Klicken für empfohlene Strategien",
-            "avg-position-label": "Ø Platzierung:"
+            "avg-position-label": "Ø Platzierung:",
+            "avg-position-details-tooltip-details-text": "Die durchschnittliche Platzierung aller Spieler mit diesem Helden im ausgewählten Wertungsbereich. Der Wert setzt sich wie folgt zusammen:"
         },
         "hero-selection": {
             "achievement-completed": "Errungenschaft abgeschlossen",
@@ -2549,7 +2616,9 @@
                 "rewards-title": "Questbelohnungen",
                 "reward-turn-tooltip": "Questbelohnung erhalten in Zug {{turn}}",
                 "buddy-tooltip-golden": "Erhielt die zwei weiteren Partner in Zug {{turn}}",
-                "score-board-tooltip": "Zusammenfassung all deiner Kämpfe gegen die anderen Spieler"
+                "score-board-tooltip": "Zusammenfassung all deiner Kämpfe gegen die anderen Spieler",
+                "rewards-empty-state": "Keine Questbelohnung",
+                "score-board-title": "Rangliste"
             },
             "minions-list": {
                 "reset-button": "Zurücksetzen",
@@ -2561,14 +2630,14 @@
                     "missing-board-linked": " oder ",
                     "tavern-level": "Du musst mindestens Gasthausstufe {{target}} sein.",
                     "missing-board-type": "Du brauchst min. {{typesAndQuantity}} Diener auf dem Feld oder der Hand",
-                    "menagerie": "Du brauchst min. 3 Diener mit verschiedenen Dienertypen auf dem Feld oder der Hand",
+                    "menagerie": "Du brauchst min. 3 Diener mit verschiedenen Gattungen auf dem Feld oder der Hand",
                     "missing-board-expected-quantity": "{{quantity}} {{minionType}}",
                     "mechanics": "Du brauchst min. {{numberOfMinions}} Diener mit {{mechanic}} auf dem Feld oder der Hand"
                 },
                 "trinket-name-lesser": "{{name}} (Gering)",
                 "navigation": {
                     "compositions-tooltip": "Kompositionen",
-                    "tribes": "Dienertypen",
+                    "tribes": "Dienergattungen",
                     "tiers": "Stufen",
                     "tiers-tribes": "Diener",
                     "mechanics": "Fähigkeiten",
@@ -2597,7 +2666,10 @@
                     },
                     "cycles-header-tooltip": "Karten, die du kaufen und direkt wieder verkaufen kannst, aber nicht auf dem Feld bleiben sollten",
                     "advice": {
-                        "author": "Erstellt von {{author}}"
+                        "author": "Erstellt von {{author}}",
+                        "when-to-commit": "Wann hierauf festlegen?",
+                        "difficulty-tooltip": "Wie schwer es ist, diese Komposition zu spielen",
+                        "how-to-play": "Anleitung"
                     },
                     "pin-tooltip": "Klicken, um alle Diener in dieser Komposition an-/abzupinnen",
                     "header": "Kompositionen",
@@ -2617,7 +2689,7 @@
                     "average-global-tooltip": "Runden, um die Quest zu erfüllen, unter Berücksichtigung aller Schwierigkeitsstufen und Helden",
                     "average-global-header": "Global",
                     "turns-to-complete-header": "Quest Runden zum Abschließen",
-                    "turns-to-complete-header-tooltip": "Queststatistiken für die obersten {{value}}% der Spieler seit letztem Patch, unter Berücksichtigung aller Dienertypen",
+                    "turns-to-complete-header-tooltip": "Queststatistiken für die obersten {{value}}% der Spieler seit letztem Patch, unter Berücksichtigung aller Dienergattungen",
                     "average-difficulty-tooltip": "Züge, um den Quest mit dieser Schwierigkeit abzuschließen, unter Berücksichtigung aller Helden. Spiele gesamt: {{value}}"
                 },
                 "free-uses-text": "noch {{value}}",
@@ -2626,7 +2698,7 @@
                     "average-placement-header": "Ø Platzierung für Belohnung",
                     "average-placement-hero": "Held",
                     "average-placement-global": "Global",
-                    "average-placement-tooltip": "Belohnungsstatistiken für die obersten {{value}}% der Spieler seit letztem Patch, unter Berücksichtigung aller Dienertypen",
+                    "average-placement-tooltip": "Belohnungsstatistiken für die obersten {{value}}% der Spieler seit letztem Patch, unter Berücksichtigung aller Dienergattungen",
                     "average-placement-global-tooltip": "Durchschnittliche Platzierung für alle Helden",
                     "average-placement-hero-tooltip": "Durchschnittliche Platzierung nur für diesen Held. Spiele gesamt: {{value}}"
                 },
@@ -2673,7 +2745,8 @@
                 "community-label": "Durchschnitt für Held",
                 "your-label": "Aktueller Versuch",
                 "turn-label": "Zug",
-                "delta-label": "+{{delta}} in dieser Runde"
+                "delta-label": "+{{delta}} in dieser Runde",
+                "stat-label": "Werte"
             },
             "live-stats-title": "Live-Statistiken - Zug {{turn}}",
             "current-board": "Dein aktuelles Feld",
@@ -2693,7 +2766,8 @@
             "seen-just-now": "Aktuelles Spielfeld",
             "seen-turns-ago": "Spielfeld vor {{value}} Zügen",
             "opponent-not-met": "Noch kein Kampf gegen diesen Spieler",
-            "last-board-empty": "Letztes Spielfeld war leer"
+            "last-board-empty": "Letztes Spielfeld war leer",
+            "stats-share-warning": "Gleiche Diener und ihre goldenen Versionen teilen sich dieselben Werte (Das hat unvermeidbare technische Gründe)"
         },
         "empty-state-title": "Zurzeit gibt es hier noch nichts",
         "empty-state-subtitle": "Beginne Schlachtfeld zu spielen, um Informationen zu erhalten"
@@ -3061,7 +3135,13 @@
                 "show-when-empty-tooltip": "Wenn aktiviert wird das Questfenster auch dann angezeigt, wenn alle Quests abgeschlossen sind",
                 "show-when-empty-label": "Anzeigen, wenn leer",
                 "show-in-game-label": "Im Spiel anzeigen",
-                "enable-quests-label": "Questfenster aktivieren"
+                "enable-quests-label": "Questfenster aktivieren",
+                "battlegrounds-tooltip": "Zeigt die Schlachtfeld-spezifischen Quests im Schlachtfeldmemü und im Spiel",
+                "constructed-on-bg-label": "HS auf Schlachtfeld",
+                "constructed-on-hub-label": "HS im Hauptmenü",
+                "constructed-on-hub-tooltip": "Zeigt die Quests für den Hearthstone-Modus im Hauptmenü",
+                "constructed-tooltip": "Zeigt die Quests für den Hearthstone-Modus in allen traditionellen Modi",
+                "constructed-on-bg-tooltip": "Zeigt die Quests für den Hearthstone-Modus in allen Schlachtfeld-Bildschrimen"
             },
             "premium": {
                 "link": "auf dem Wiki",
@@ -3101,7 +3181,7 @@
                 "launch": "Startoptionen",
                 "mulligan": "Mulligan",
                 "overlay": "Overlay",
-                "lobby": "Lobby"
+                "lobby": "Deckauswahl"
             },
             "global": {
                 "title": "Features aktivieren / deaktivieren",
@@ -3262,7 +3342,8 @@
                 "show-bottom-cards-separately-label": "Zeige Unten im Deck",
                 "buff-in-hand-tooltip": "Zeigt Boni für Karten auf der Hand deines Gegners",
                 "size-title": "Größe & Deckkraft",
-                "enable-secret-helper-tooltip": "Wenn aktiviert erscheint eine Übersicht über alle möglichen Geheimnisse, wenn dein Gegner ein Geheimnis ausspielt"
+                "enable-secret-helper-tooltip": "Wenn aktiviert erscheint eine Übersicht über alle möglichen Geheimnisse, wenn dein Gegner ein Geheimnis ausspielt",
+                "hand-markers-title": "Handmarker"
             },
             "your-deck": {
                 "counters": {
@@ -3423,7 +3504,8 @@
                 "max-health-option-blink": "Aufblitzen",
                 "max-health-option-mouseover": "Bei Mauskontakt",
                 "max-health-label": "Gegner max. Leben",
-                "max-health-tooltip": "Wähle eine Art, das maximale Leben deines Gegners im Duellmodus anzuzeigen"
+                "max-health-tooltip": "Wähle eine Art, das maximale Leben deines Gegners im Duellmodus anzuzeigen",
+                "show-ooc-hero-info-label": "Heldenstatistiken anzeigen"
             },
             "turn-timer": {
                 "title": "Zug Timer",
@@ -3452,7 +3534,9 @@
                 "always-on-tooltip": "Den Zähler auch dann zeigen, wenn maximales Mana und Leben unverändert sind"
             },
             "lobby": {
-                "show-lobby-tracker-tooltip": "Zeigt die Deckliste für das ausgewählte Deck auf dem Deckauswahlbildschirm an."
+                "show-lobby-tracker-tooltip": "Zeigt die Deckliste für das ausgewählte Deck auf dem Deckauswahlbildschirm an.",
+                "show-lobby-tracker": "Tracker bei Deckauswahl zeigen",
+                "title": "Tracker bei Deckauswahl"
             }
         },
         "collection": {
@@ -3489,7 +3573,7 @@
         "battlegrounds": {
             "menu": {
                 "general": "Allgemein",
-                "tribes": "Dienertypen",
+                "tribes": "Dienergattungen",
                 "overlay": "Overlay",
                 "leaderboard": "Bestenliste",
                 "minions-list": "Dienerliste",
@@ -3510,7 +3594,7 @@
                 "show-tribes-auto-highlight-tooltip": "Hebt alle Diener eines bestimmten Types im Gasthaus hervor, wenn du einen Helden spielst, der diesen Dienertyp bevorzugt kaufen möchte (wie z.B. Elementare mit Chenvaala)",
                 "use-anomaly-filter-for-live-stats-label-short": "Anomalienfilter",
                 "use-mmr-filter-for-live-stats-tooltip": "Wenn diese Funktion aktiviert ist, werden die Heldenbewertungen, die zu Beginn eines Spiels auf dem Heldenauswahlbildschirm angezeigt werden, unter Berücksichtigung deiner aktuellen Wertung berechnet. WARNUNG: Dies kann zu einer geringen Anzahl von Daten führen.",
-                "use-tribes-filter-for-live-stats-tooltip": "Wenn aktiviert werden für die bei der Heldenauswahl gezeigten Statistiken die im aktuellen Spiel verfügbaren Dienertypen berücksichtigt",
+                "use-tribes-filter-for-live-stats-tooltip": "Wenn aktiviert werden für die bei der Heldenauswahl gezeigten Statistiken die im aktuellen Spiel verfügbaren Dienergattungen berücksichtigt",
                 "use-anomaly-filter-for-live-stats-tooltip": "Wenn aktiviert wird für die bei der Heldenauswahl gezeigten Statistiken die im aktuellen Spiel vorhandene Anomalie berücksichtigt. ACHTUNG: Dies kann zu geringen Datenmengen führen",
                 "show-minions-auto-highlight-tooltip": "Hebt einige Diener im Gasthaus automatisch basierend auf deinem Held oder Spielfeld hervor (z.B. Gewiefte Glücksspielerin mit Käpt’n Glubschauge).",
                 "enable-battle-sim-tooltip": "Wenn aktiviert, zeige zu Beginn des Kampfes die Chancen auf Sieg, Unentschieden und Niederlage",
@@ -3555,20 +3639,20 @@
                 "show-quest-stats-tooltip": "Zeigt, wie viele Runden du durchschnittlich brauchst, um die angebotenen Quests abzuschließen, sowie die durchschnittliche Platzierung aller Spieler mit der zugehörigen Belohnung. Berücksichtige immer beides, bevor du eine Auswahl triffst!"
             },
             "overlay": {
-                "show-banned-tribes-label": "Zeige gebannte Dienertypen",
-                "show-banned-tribes-tooltip": "Zeige, welche Dienertypen im aktuellen Versuch gebannt sind",
-                "show-available-tribes-label": "Zeige verfügbare Dienertypen stattdessen",
-                "show-available-tribes-tooltip": "Zeige verfügbare Dienertypen statt der Gebannten",
+                "show-banned-tribes-label": "Zeige gebannte Dienergattungen",
+                "show-banned-tribes-tooltip": "Zeige, welche Dienergattungen im aktuellen Spiel gebannt sind",
+                "show-available-tribes-label": "Zeige stattdessen verfügbare Gattungen",
+                "show-available-tribes-tooltip": "Zeige verfügbare Dienergattungen statt der gebannten",
                 "banned-tribes-single-row-label": "Erzwinge einzelne Zeile",
                 "turn-counter-label": "Zeige Zug Zähler",
                 "last-opponent-icon-label": "Letztes Gegnersymbol",
-                "banned-tribes-title": "Gebannte Dienertypen",
+                "banned-tribes-title": "Gebannte Dienergattungen",
                 "banned-tribes-show-in-column-label": "In Spalte anzeigen",
-                "banned-tribes-show-in-column-tooltip": "Zeige die gebannten Dienertypen in der Spalte, anstatt in der Zeile",
+                "banned-tribes-show-in-column-tooltip": "Zeige die gebannten Dienergattungen in einer Spalte, anstatt in einer Zeile",
                 "banned-tribes-icon-size-label": "Icon Größe",
                 "minions-list-show-on-mouse-over-confirmation": "Verstanden, wir werden dir nur Details zu den Dienern zeigen, wenn du auf einen Stern klickst",
-                "minions-list-show-tribes-highlight-label": "Zeige Dienertypenhervorhebung",
-                "minions-list-show-tribes-highlight-tooltip": "Fügt Buttons hinzu, um bestimmte Dienertypen oder Mechaniken im Gasthaus hervorzuheben",
+                "minions-list-show-tribes-highlight-label": "Gattungenhervorhebung aktivieren",
+                "minions-list-show-tribes-highlight-tooltip": "Fügt Buttons hinzu, um bestimmte Dienergattungen oder Mechaniken im Gasthaus hervorzuheben",
                 "minions-list-show-golden-cards-label": "Zeige goldene Karten",
                 "counters-title": "Zähler",
                 "counter-soutshsea-label": "Südmeerschlägerin",
@@ -3643,7 +3727,13 @@
                 "last-opponent-board-tooltip": "Zeigt den letzten bekannten Zustand des Spielfeldes eines Gegners (und zusätzliche Infos), wenn du die Maus über dessen Portrait in der Rangliste ziehst",
                 "battle-simulation-tooltip": "Zeigt die aktuellen Simulationsergebnisse in einem kleinen Fenster im Overlay",
                 "show-tribe-colors-tooltip": "Färbt die Symbole der einzelnen Dienergattungen in der Farbe der Gattung",
-                "show-tribe-colors-label": "Nach Gattung färben"
+                "show-tribe-colors-label": "Nach Gattung färben",
+                "minions-list-show-mechanics-tiers-label": "Zeige Mechanikfilter",
+                "minions-list-show-compositions-label": "Kompositionen zeigen",
+                "minions-list-show-spells-at-bottom-label": "Zauber unten anzeigen",
+                "minions-list-show-tribe-tiers-label": "Gattungsfilter anzeigen",
+                "minions-list-show-spells-at-bottom-tooltip": "Zeigt die Zauber ganz unten in der Dienerliste an, statt ganz oben",
+                "minions-list-show-trinkets-tooltip": "Zeigt Schmuckstücke in der Dienerliste, wenn sie im Spiel sind und \"Gattungsfilter anzeigen\" aktiviert ist."
             },
             "leaderboard": {
                 "text-3": "ACHTUNG: Die Bestenliste enthält nur Spieler mit 8000+ Wertung und wir können die Einträge nur anhand der Spielernamen abgleichen. Eine Benutzung der Liste mit deutlich weniger Wertung kann zu falschen Informationen führen.",
