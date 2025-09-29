@@ -123,7 +123,8 @@
             "gift": "活动",
             "old_core_230": "旧核心系列",
             "embers_of_the_world_tree": "世界之树的余烬",
-            "lost_city_of_ungoro": "安戈洛龟途"
+            "lost_city_of_ungoro": "安戈洛龟途",
+            "day_of_rebirth": "重生之日"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -565,7 +566,8 @@
                 "header-discovered": "数据点",
                 "header-deck-winrate-impact-tooltip": "包含这张卡的套牌的整体表现与等级平均胜率相比有多好或多差",
                 "header-deck-winrate-impact": "影响",
-                "header-pickrate-high-wins-variable-tooltip": "在地下竞技场至少获得 {{value}} 胜场，或在普通竞技场获得 {{value2}} 胜场的选取率"
+                "header-pickrate-high-wins-variable-tooltip": "在地下竞技场至少获得 {{value}} 胜场，或在普通竞技场获得 {{value2}} 胜场的选取率",
+                "header-current-options": "当前选项"
             },
             "class-tier-list": {
                 "header-hero-name": "职业名",
@@ -902,7 +904,8 @@
                     "standard": "标准模式",
                     "wild": "狂野模式",
                     "classic": "经典模式",
-                    "twist": "幻变模式"
+                    "twist": "幻变模式",
+                    "all-formats-tooltip": "所有排名模式（酒馆乱斗和休闲模式除外）"
                 },
                 "rank-category": {
                     "leagues": "青铜到钻石",
@@ -2015,11 +2018,13 @@
                 "premium": "高级会员",
                 "epic": "Epic",
                 "friend": "Friend",
-                "premium-annual": "高级会员"
+                "premium-annual": "高级会员",
+                "premium-six-months": "高级会员"
             },
             "periodicity": {
                 "monthly": "每月",
-                "yearly": "每年"
+                "yearly": "每年",
+                "six-month": "六个月"
             },
             "title": "高级会员方案",
             "legacy-plan-text": "旧版订阅方案已取消并将在未来某一时间点停止服务。请考虑迁移到其他方案",
@@ -2042,7 +2047,10 @@
                 "monthly": "按月计费",
                 "yearly": "按年计费",
                 "click-to-copy-code": "点击复制代码到剪贴板",
-                "yearly-coupon-text": "限时优惠！截止至{{endDate}}，结账时使用以下代码可获得额外的{{reduction}}折扣："
+                "yearly-coupon-text": "限时优惠！截止至{{endDate}}，结账时使用以下代码可获得额外的{{reduction}}折扣：",
+                "six-month-subtext": "(节省 {{value}}%)",
+                "six-month": "每年收取两次费用",
+                "six-month-coupon-text": "限时优惠！截止至{{endDate}}，结账时使用以下代码可获得额外的{{reduction}}折扣："
             },
             "cant-subscribe-button": "无法订阅",
             "check-status-online-inactive": "已取消，但仍生效。查看详情 {{link}}",
@@ -2442,6 +2450,21 @@
         },
         "corpses": {
             "opponent": "对手目前有 {{value}} 份残骸"
+        },
+        "outcast": {
+            "player": "本局对战中你已使用过{{value}}次流放卡",
+            "opponent": "本局对战中对手已使用过{{value}}次流放卡"
+        },
+        "kiljaeden": {
+            "player": "你的{{cardName}}属性强化效果为+{{value}} / +{{value}}",
+            "opponent": "对手的{{cardName}}属性强化效果为+{{value}} / +{{value}}"
+        },
+        "undead-died-since-last-turn": {
+            "player": "在你的上回合之后有友方亡灵死亡，因此触发了你正在发现的部分卡牌的效果。"
+        },
+        "eliza-goreblade": {
+            "player": "你的随从拥有+{{value}}攻击力",
+            "opponent": "对手的随从拥有+{{value}}攻击力"
         }
     },
     "loading": {
@@ -3071,6 +3094,15 @@
                 "high-mmr-header-tooltip": "仅顶尖分段玩家的数据",
                 "global-header-tooltip": "全分段玩家的数据",
                 "view-tips": "查看提示"
+            },
+            "action-count": {
+                "actions-title": "本回合操作数",
+                "apm-title": "APM",
+                "apm-tooltip": "每分钟操作数，基于过去{{value}}秒的计算结果",
+                "close-tooltip": "关闭小部件。",
+                "close-ok": "关闭",
+                "close-confirmation-text": "关闭并停用小部件。您可以在设置中重新启用它。",
+                "close-cancel": "保持开启"
             }
         },
         "post-match-stats": {
@@ -3300,7 +3332,9 @@
                 "checking-for-updates": "正在检查...",
                 "checking-mod-for-updates": "正在检查{{modName}}的更新",
                 "update-available": "这个模组已更新新版本，点击进行更新",
-                "update-disabled": "这个模组有版本更新，但只有在游戏关闭后才能安装。"
+                "update-disabled": "这个模组有版本更新，但只有在游戏关闭后才能安装。",
+                "installed-mods-description-2": "以下模组已安装（删除 {{path}} 中的对应文件即可卸载）：",
+                "need-to-close-game-warning": "在安装/卸载/更新模组，或启用/禁用模组之前，您需要先关闭炉石传说。"
             },
             "third-party": {
                 "intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
@@ -3469,7 +3503,8 @@
                 "settings-title": "设置",
                 "export-settings-button-label": "导出设置",
                 "export-settings-button-tooltip": "将设置导出到文件，然后导入另一台电脑",
-                "import-settings-button-label": "导入设置"
+                "import-settings-button-label": "导入设置",
+                "import-settings-button-confirmed-label": "设置已导入"
             },
             "quests": {
                 "title": "任务",
@@ -3608,7 +3643,9 @@
                 "show-plagues-on-top": "在顶部显示疫病牌",
                 "show-transformed-into-tooltip": "将被变形的卡牌添加到记牌器中",
                 "show-transformed-into-label": "显示变形后的卡牌",
-                "attack-counter-size": "攻击力计数器尺寸"
+                "attack-counter-size": "攻击力计数器尺寸",
+                "hand-sort-by-zone-order": "手牌按区域顺序排序",
+                "hand-sort-by-zone-order-tooltip": "按区域顺序排列手牌，使手牌中的卡片按抽取顺序显示"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -3874,7 +3911,15 @@
                     "dive-the-golakka-depths-tooltip": "显示你已完成 {{cardName}} 任务的次数",
                     "enable-all": "启用全部计数器",
                     "dark-gifts-label": "黑暗之赐",
-                    "dark-gifts-tooltip": "显示你在本局对战中使用过的不同的黑暗之赐卡牌数量"
+                    "dark-gifts-tooltip": "显示你在本局对战中使用过的不同的黑暗之赐卡牌数量",
+                    "outcast-label": "流放卡",
+                    "outcast-tooltip": "显示你在本局对战中已使用过流放卡的数量",
+                    "undead-died-since-last-turn-label": "在你的上回合之后有亡灵死亡",
+                    "kiljaeden-label": "{{cardName}}",
+                    "undead-died-since-last-turn-tooltip": "当发现一张卡牌时，若其中一张具有“在你的上回合之后有友方亡灵死亡”的效果，则展示一个计数器提示该效果能触发。",
+                    "eliza-goreblade-tooltip": "显示{{cardName}}的额外攻击加成",
+                    "kiljaeden-tooltip": "显示{{cardName}}的属性加成",
+                    "eliza-goreblade-label": "{{cardName}}"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -4127,7 +4172,12 @@
                 "show-tribe-colors-label": "使用种族颜色",
                 "show-tribe-colors-tooltip": "用种族类型的颜色为每个小部件着色",
                 "minions-list-keep-in-bounds-label": "保持在范围内",
-                "minions-list-keep-in-bounds-tooltip": "确保列表不会超出范围太多。如果无法准确定位列表，请将其关闭"
+                "minions-list-keep-in-bounds-tooltip": "确保列表不会超出范围太多。如果无法准确定位列表，请将其关闭",
+                "actions-counter": {
+                    "title": "APM（每分钟操作数）计数器",
+                    "enable-label": "启用APM计数器",
+                    "enable-tooltip": "启用APM计数器。该功能将追踪您在本回合中执行的操作次数，并记录您的APM（每分钟操作次数）。"
+                }
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -4237,7 +4287,9 @@
                 "show-draft-tracker-pick-rate-tooltip": "在选牌记牌器中显示套牌每张卡牌的选取率信息",
                 "show-draft-tracker-pick-rate": "显示选取率",
                 "show-draft-tracker-impact": "显示影响",
-                "show-draft-tracker-impact-tooltip": "在选牌记牌器中显示套牌中每张牌的胜率影响"
+                "show-draft-tracker-impact-tooltip": "在选牌记牌器中显示套牌中每张牌的胜率影响",
+                "show-current-options": "显示当前选项",
+                "show-current-options-tooltip": "在选牌记牌器中显示当前向您提供的卡牌，以便您更轻松地与它们互动、查看相关卡牌等。"
             },
             "menu": {
                 "general": "通用",
@@ -4975,6 +5027,11 @@
         "stego_beasts": "剑龙流野兽",
         "avalanche_elementals": "雪崩流元素",
         "deep_blue_nagas": "深沉蓝调流纳迦",
-        "ultraviolet_elementals": "极紫外流元素"
+        "ultraviolet_elementals": "极紫外流元素",
+        "surveyor_quilboar": "测绘员流野猪人",
+        "rylak_quilboar": "双头飞龙流野猪人",
+        "cycle_quilboar": "循环流野猪人",
+        "handbuff_murloc": "手牌流鱼人",
+        "big_elementals": "大元素流"
     }
 }
