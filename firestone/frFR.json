@@ -123,7 +123,9 @@
             "gift": "Évènement",
             "old_core_230": "Remise du Fondamental",
             "embers_of_the_world_tree": "Les braises de l’Arbre-Monde",
-            "lost_city_of_ungoro": "La cité perdue d’Un’Goro"
+            "lost_city_of_ungoro": "La cité perdue d’Un’Goro",
+            "day_of_rebirth": "Le jour de la Renaissance",
+            "across_the_timeways": "Par-delà les voies temporelles"
         },
         "pack": {
             "classic": "Classique",
@@ -211,7 +213,10 @@
             "golden-year-of-the-raptor": "Année du Raptor (Doré)",
             "the-lost-city": "La cité perdue d’Un’Goro",
             "the-lost-city-catch-up": "Rattrapage (La cité perdue d’Un’Goro)",
-            "year-of-the-raptor": "Année du Raptor"
+            "year-of-the-raptor": "Année du Raptor",
+            "across-the-timeways-catch-up": "Rattrapage (Par-delà les voies temporelles)",
+            "across-the-timeways": "Par-delà les voies temporelles",
+            "golden-across-the-timeways": "Par-delà les voies temporelles (Doré)"
         },
         "ranks": {
             "constructed": {
@@ -553,7 +558,8 @@
                 "header-discovered": "Points de données",
                 "header-deck-winrate-impact": "Impact",
                 "header-pickrate-high-wins-variable-tooltip": "Taux de tirage pour les virées d’au moins {{value}} victoires en Arène souterraine, ou {{value2}} victoires en Arène",
-                "header-deck-winrate-impact-tooltip": "L’impact de la présence de cette carte dans un deck par rapport au taux de victoires moyen de la classe"
+                "header-deck-winrate-impact-tooltip": "L’impact de la présence de cette carte dans un deck par rapport au taux de victoires moyen de la classe",
+                "header-current-options": "Options actuelles"
             },
             "class-tier-list": {
                 "header-placement-distribution-tooltip": "Indique à quel point une classe se détache des autres pour un nombre donné de victoires. ",
@@ -902,7 +908,8 @@
                     "standard": "Standard",
                     "wild": "Libre",
                     "classic": "Classique",
-                    "twist": "Imprévu"
+                    "twist": "Imprévu",
+                    "all-formats-tooltip": "Tous rangs classés (sans Bras de fer et Non classé)"
                 },
                 "rank-category": {
                     "leagues": "Bronze-Diamant",
@@ -2020,11 +2027,13 @@
                 "legacy": "Héritage",
                 "premium": "Premium",
                 "epic": "Épique",
-                "premium-annual": "Premium"
+                "premium-annual": "Premium",
+                "premium-six-months": "Premium"
             },
             "periodicity": {
                 "monthly": "Par mois",
-                "yearly": "Par an"
+                "yearly": "Par an",
+                "six-month": "Pendant six mois"
             },
             "legacy-plan-text": "Le plan Héritage est obsolète et cessera d’être pris en charge à un moment donné. Veuillez envisager de migrer vers un autre plan.",
             "active-until": "Actif jusqu’au {{ date }} sans renouvellement",
@@ -2042,7 +2051,10 @@
                 "yearly-subtext": "(Économisez {{value}} %)",
                 "yearly": "Facturation annuelle",
                 "click-to-copy-code": "Cliquez pour copier le code dans le presse-papiers",
-                "yearly-coupon-text": "Offre limitée ! Jusqu’au {{endDate}}, obtenez {{reduction}} de réduction en utilisant le code suivant pendant votre paiement :"
+                "yearly-coupon-text": "Offre limitée ! Jusqu’au {{endDate}}, obtenez {{reduction}} de réduction en utilisant le code suivant pendant votre paiement :",
+                "six-month-subtext": "(Économisez {{value}} %)",
+                "six-month-coupon-text": "Offre à durée limitée ! Jusqu’à {{endDate}}, économisez {{reduction}} supplémentaires en utilisant ce code lors du paiement :",
+                "six-month": "Facturé deux fois par an"
             },
             "cant-subscribe-button": "Abonnement impossible",
             "check-status-online-inactive": "Annulé, mais toujours actif. Voir les détails {{link}}",
@@ -2442,6 +2454,21 @@
         },
         "corpses": {
             "opponent": "Votre adversaire a actuellement {{value}} cadavres"
+        },
+        "outcast": {
+            "player": "Vous avez joué {{value}} cartes avec Marginal pendant cette partie",
+            "opponent": "Votre adversaire a joué {{value}} cartes avec Marginal pendant cette partie"
+        },
+        "kiljaeden": {
+            "player": "Les améliorations de caractéristiques que vous donne {{cardName}} sont de +{{value}}/+{{value}}",
+            "opponent": "Les améliorations de caractéristiques données par {{cardName}} à votre adversaire sont de +{{value}}/+{{value}}"
+        },
+        "eliza-goreblade": {
+            "player": "Vos serviteur ont +{{value}} ATQ",
+            "opponent": "Les serviteurs de votre adversaire ont +{{value}} ATQ"
+        },
+        "undead-died-since-last-turn": {
+            "player": "Morts-vivants alliés morts après votre dernier tour, activant les effets de certaines des cartes que vous découvrez"
         }
     },
     "loading": {
@@ -2725,6 +2752,10 @@
                     "global-stats-tooltip": "Stats avec cette liste précise ; les stats en haut sont pour l’archétype"
                 },
                 "toggle-button-locked-tooltip": "Avec l’abonnement Premium, vous pouvez voir le guide de mulligan et les stats du deck. Cliquez pour vous abonner et débloquer tous les avantages Premium !"
+            },
+            "discover": {
+                "will-be-active": "Actif",
+                "will-be-active-tooltip": "L’effet de cette carte sera actif pendant ce tour si vous la choisissez"
             }
         },
         "stolen-tooltip": "Volée à l’adversaire",
@@ -3071,6 +3102,15 @@
                 "high-mmr-header-tooltip": "Valeur en ne considérant que le top des joueurs et joueuses",
                 "global-header-tooltip": "Valeur en considérant tous les joueurs et joueuses",
                 "view-tips": "Afficher les conseils"
+            },
+            "action-count": {
+                "apm-title": "APM",
+                "close-tooltip": "Ferme le widget.",
+                "actions-title": "Actions du tour",
+                "close-cancel": "Laisser ouvert",
+                "close-ok": "Fermer",
+                "apm-tooltip": "Actions par minute, comptées sur les {{value}} dernières secondes",
+                "close-confirmation-text": "Ferme et désactive le widget. Vous pouvez le rouvrir en l’activant depuis les paramètres"
             }
         },
         "post-match-stats": {
@@ -3300,7 +3340,9 @@
                 "checking-for-updates": "Vérification...",
                 "checking-mod-for-updates": "Vérification de {{modName}}",
                 "update-available": "Une nouvelle version de ce mod est disponible. Cliquez pour le mettre à jour",
-                "update-disabled": "Une nouvelle version de ce mod est disponible, mais vous ne pouvez pas l’installer avant de fermer le jeu"
+                "update-disabled": "Une nouvelle version de ce mod est disponible, mais vous ne pouvez pas l’installer avant de fermer le jeu",
+                "need-to-close-game-warning": "Vous devez fermer Hearthstone avant d’installer, de désintaller, de mettre à jour, d’activer ou de désactiver des mods.",
+                "installed-mods-description-2": "Les mods suivants sont installés (supprimez le fichier correspondant dans le dossier {{path}} pour les désinstaller) :"
             },
             "third-party": {
                 "intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Elles ne nous rapportent pas d’argent, mais nous recevons de l’exposition, puisque les sites parlent ensuite de nous :)",
@@ -3469,7 +3511,8 @@
                 "export-settings-button-tooltip": "Exporte vos paramètres dans un fichier, que vous pourrez réimporter sur un autre ordinateur",
                 "import-settings-button-label": "Importer paramètres",
                 "import-settings-button-tooltip": "Importe des paramètres depuis un fichier, exporté depuis un autre ordinateur",
-                "settings-title": "Paramètres"
+                "settings-title": "Paramètres",
+                "import-settings-button-confirmed-label": "Paramètres importés"
             },
             "quests": {
                 "title": "Quêtes",
@@ -3608,7 +3651,9 @@
                 "show-plagues-on-top-tooltip": "Affichez tous les Pestes de chevalier de la mort en haut de votre deck pour une meilleure lecture.",
                 "show-transformed-into-label": "Afficher les transformations",
                 "show-transformed-into-tooltip": "Ajoute dans le decktracker les cartes en lesquelles d’autres cartes ont été transformées",
-                "attack-counter-size": "Taille du compteur d’ATQ"
+                "attack-counter-size": "Taille du compteur d’ATQ",
+                "hand-sort-by-zone-order": "Main : tri par zone",
+                "hand-sort-by-zone-order-tooltip": "Trie la main selon l’ordre dans lequel les cartes ont été piochées"
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
@@ -3874,7 +3919,13 @@
                     "dive-the-golakka-depths-label": "Paladin Quête Murlocs",
                     "dive-the-golakka-depths-tooltip": "Affiche le nombre de fois que vous avez complété la Quête {{cardName}}",
                     "dark-gifts-tooltip": "Afficher le nombre de Sombres dons différents que vous avez joué pendant cette partie",
-                    "dark-gifts-label": "Sombres dons"
+                    "dark-gifts-label": "Sombres dons",
+                    "outcast-label": "Cartes avec Marginal",
+                    "outcast-tooltip": "Affiche le nombre de cartes avec Marginal que vous avez jouées pendant cette partie.",
+                    "kiljaeden-tooltip": "Afficher les caractéristiques supplémentaires données par {{cardName}}",
+                    "eliza-goreblade-tooltip": "Afficher l’ATQ supplémentaire donnée par {{cardName}}",
+                    "undead-died-since-last-turn-tooltip": "Lorsque vous découvrez une carte, si l’une d’elles a l’effet « Mort-vivant allié mort après votre dernier tour », affiche une infobulle indiquant que l’effet sera actif",
+                    "undead-died-since-last-turn-label": "Morts-vivants morts depuis votre dernier tour"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -4127,7 +4178,12 @@
                 "show-tribe-colors-tooltip": "Colorer les widgets de type",
                 "show-tribe-colors-label": "Utiliser les couleurs de type",
                 "minions-list-keep-in-bounds-tooltip": "Faire en sorte que la decklist ne sorte jamais trop de ses limites. Désactivez cette option si vous ne pouvez pas positionner la decklist comme vous le souhaitez",
-                "minions-list-keep-in-bounds-label": "Maintenir dans les limites"
+                "minions-list-keep-in-bounds-label": "Maintenir dans les limites",
+                "actions-counter": {
+                    "title": "Compteur d’APM",
+                    "enable-label": "Activer le compteur d’APM",
+                    "enable-tooltip": "Active le compteur d’APM. Il compte le nombre d’actions effectuées sur le tour ainsi que vos APM (actions par minute)"
+                }
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -4237,7 +4293,9 @@
                 "show-draft-tracker-pick-rate-tooltip": "Affiche les infos de taux de sélection de chaque carte de votre deck dans le tracker de tirage",
                 "show-impact-on-redraft": "Ne voir que les stats lors de l’édition de decks",
                 "show-impact-on-redraft-tooltip": "Ne voir que l’impact et les stats de tirage lorsque vous retirez des cartes de votre deck",
-                "show-draft-tracker-impact-tooltip": "Afficher l’impact sur le taux de victoires du deck de chaque carte de votre deck dans le tracker de tirage"
+                "show-draft-tracker-impact-tooltip": "Afficher l’impact sur le taux de victoires du deck de chaque carte de votre deck dans le tracker de tirage",
+                "show-current-options": "Afficher les options actuelles",
+                "show-current-options-tooltip": "Affiche les cartes qui vous sont actuellement proposées dans le tracker de tirage, afin que vous puissiez interagir avec elles, voir les cartes liées, etc."
             },
             "menu": {
                 "general": "Général",
@@ -5024,6 +5082,11 @@
         "deep_blue_nagas": "Nagas Grand blues",
         "end_of_turn_nagas": "Nagas Fin de tour",
         "rally_quilboar": "Hurans Ralliement",
-        "rally_menagerie": "Ménagerie Ralliement"
+        "rally_menagerie": "Ménagerie Ralliement",
+        "handbuff_murloc": "Murlocs handbuff",
+        "big_elementals": "Gros Élémentaires",
+        "cycle_quilboar": "Hurans cycle",
+        "rylak_quilboar": "Hurans Rylak",
+        "surveyor_quilboar": "Hurans surveillant"
     }
 }
