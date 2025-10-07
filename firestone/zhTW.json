@@ -124,7 +124,8 @@
             "embers_of_the_world_tree": "世界之樹的餘燼",
             "lost_city_of_ungoro": "安戈洛迷城",
             "day_of_rebirth": "重生之日",
-            "across_the_timeways": "時光特攻隊"
+            "across_the_timeways": "時光特攻隊",
+            "hero_skins": "-"
         },
         "pack": {
             "classic": "經典",
@@ -324,7 +325,8 @@
             "hrs-min-short": "{{hrs}}小時 {{min}}分"
         },
         "social": {
-            "twitter": "推特（Twitter）"
+            "twitter": "推特（Twitter）",
+            "discord": "Discord"
         },
         "card-type": {
             "trinket": "飾品"
@@ -368,7 +370,8 @@
                 "pack": "卡牌包",
                 "gold": "金幣",
                 "card": "卡牌",
-                "ticket": "旅店門票"
+                "ticket": "旅店門票",
+                "tooltip": "{{amount}} 個 {{rewardType}}"
             },
             "controls": {
                 "bug-button-tooltip": "回報一個錯誤",
@@ -402,7 +405,7 @@
             "filters": {
                 "time-patch": "目前版本 {{value}}",
                 "time": {
-                    "all-time-tooltip": "包括你在應用程式中加載的全部賽局。預設情況下，這些資料是過去 100 天的資料，但你可以在「設定」中的「常規」>「資料」下變更此設定。"
+                    "all-time-tooltip": "包括你在應用程式中加載的全部賽局。預設情況下，這些資料是過去 100 天的資料，但你可以在「設定」中的「一般」>「資料」下變更此設定。"
                 }
             },
             "errors": {
@@ -559,7 +562,7 @@
                 "card-drawn-winrate": "抽取勝率",
                 "hero-tier": "強度",
                 "hero-winrate": "勝率",
-                "locked-premium-info-tooltip": "第一張卡牌揀選統計可供全部使用者使用。英雄和其他卡牌揀選僅適用於高階會籍用戶。點選以開啟訂閱頁面，或前往「設定」以停用這些資訊框。",
+                "locked-premium-info-tooltip": "第一張卡牌揀選統計可供全部使用者使用。英雄和其他卡牌揀選僅適用於高階會籍用戶。點選即可開啟訂閱頁面，或前往「設定」以停用這些資訊框。",
                 "locked-premium-info": "成為高階會員來解鎖統計",
                 "card-deck-impact": "牌組影響（越大越好）",
                 "card-deck-impact-tooltip": "「牌組影響」是該卡牌在原牌組勝率（{{deckWinrate}}）與職業勝率之間的差異",
@@ -1065,7 +1068,7 @@
                     "added-cards-header": "新增的卡牌",
                     "copy-deckstring-button": "複製到爐石（牌組代碼）",
                     "removed-cards-header": "已移除的卡牌",
-                    "deviation-tooltip": "樣本量增加了每副牌勝率的不確定性。真實勝率介於基本勝率加上或減去此處顯示的不確定性之間的置信度為 95%。你可以在篩選器中切換“保守勝率”選項，以檢視考量這種不確定性的新勝率計算。",
+                    "deviation-tooltip": "樣本量增加了每副牌組勝率的不確定性。真實勝率介於基本勝率加上或減去此處顯示的不確定性之間的置信度為 95%。你可以在篩選器中切換「保守勝率」選項，以檢視一個將此不確定性納入考量的新勝率分數。",
                     "view-details-button": "檢視詳情",
                     "view-online-button-tooltip": "線上檢視更多統計：https://www.hsguru.com",
                     "view-online-button": "線上檢視",
@@ -1105,8 +1108,8 @@
                         "discovered-winrate-impact-header": "發現—影響",
                         "discovered-winrate-header": "發現—勝率",
                         "discovered-winrate-impact-header-tooltip": "顯示賽局中發現的卡牌相對於牌組勝率的平均勝率",
-                        "discovered-winrate-impact-tooltip-low-data": "⚠️ - 此牌僅被發現或抽到過 {{value}} 次，因此統計資料可能不準確。此數據使用牌組原型在傳說階級頂尖與鑽石階級高階玩家對戰所有職業時的統計資料。",
-                        "discovered-winrate-impact-tooltip-data": "此牌已被發現或抽到 {{value}} 次。此數據使用牌組原型在傳說階級頂尖與鑽石階級高階玩家對戰所有職業時的統計資料。",
+                        "discovered-winrate-impact-tooltip-low-data": "⚠️ - 此牌僅被發現或抽到過 {{value}} 次，因此統計資料可能不準確。此數據使用牌組原型在傳說階級頂尖與鑽石階級高階玩家賽局所有職業時的統計資料。",
+                        "discovered-winrate-impact-tooltip-data": "此牌已被發現或抽到 {{value}} 次。此數據使用牌組原型在傳說階級頂尖與鑽石階級高階玩家賽局所有職業時的統計資料。",
                         "play-coin-filter": {
                             "all": "後攻",
                             "coin": "後攻",
@@ -1138,7 +1141,8 @@
                 "discover-stats-header": "發現—統計",
                 "discover-stats-header-tooltip": "顯示賽局中發現的卡牌的統計資料。",
                 "winrate-second-header": "後攻",
-                "winrate-first-header": "先攻"
+                "winrate-first-header": "先攻",
+                "matchup-vs-tooltip": "對戰 {{className}}"
             },
             "notifications": {
                 "turn-start-title": "輪到你了！",
@@ -1254,7 +1258,7 @@
                     "games-played": "已遊玩局數",
                     "net-mmr": "評分變化",
                     "net-mmr-tooltip": "每場賽局平均評分變化",
-                    "empty-state-text": "我們找不到所選過濾器的任何統計資料。如果你嘗試取得飾品資料，你首先需要透過前往「設定」>「常規」>「資料」來重新整理並清除本機快取。"
+                    "empty-state-text": "我們找不到所選篩器的任何統計數據。如果你嘗試取得飾品資料，你首先需要前往「設定」>「一般」>「資料」清空本機快取以重新整理資料。"
                 },
                 "hero-details": {
                     "tabs": {
@@ -1399,7 +1403,8 @@
                 "header-card-details": "卡牌",
                 "card-search-placeholder": "搜尋卡牌...",
                 "header-impact-tooltip": "平均打出這張牌時，最終名次會發生多少變化",
-                "header-impact": "影響"
+                "header-impact": "影響",
+                "player-data-points": "{{value}}"
             },
             "bgs-tier-list": {
                 "header": "任務強度列表（{{value}} 場賽局） "
@@ -1429,16 +1434,16 @@
                         "warrior": "如果 1⭐️的理財手下和搶三合一實力強勁，這是一種非常有價值的玩法。",
                         "rafaam": "使用1金幣英雄能力、2金幣英雄能力與理財或旅店小費進行乾淨的升級",
                         "slow-rafaam": "使用1金幣英雄能力、2金幣英雄能力與理財或旅店小費進行乾淨的升級。跳過 3⭐️旅店以變得更強",
-                        "extended-warrior": "如果在 1⭐️理財和強行三合一都很強，這是一個非常有價值的玩法。 在常規龜縮玩法時，如果還沒有出現三合一，這個改變是一個備用選擇。",
+                        "extended-warrior": "如果在 1⭐️理財和強勢三合一都很強，這是一個非常有價值的策略。 這個變種是常規龜縮玩法的一個備用選擇，適用於尚未達成的情況。",
                         "toki": "一種遊玩不提供節奏的1金幣英雄能力的方法",
                         "pocky": "一個非常適用於1金幣的英雄能力",
                         "basic": "於關鍵開局更強，第4回合商店RNG弱勢。沒有英雄能力要求。",
                         "fast-basic": "於關鍵開局更強，第4回合商店RNG弱勢。沒有英雄能力要求。",
                         "3-on-3-bis": "犧牲早期生命值來讓陣容中有多個 3⭐️手下",
-                        "3-on-3": "犧牲早期生命值以快速獲得 3⭐️手下，然後提升⭐️",
+                        "3-on-3": "犧牲早期生命值以快速獲得 3⭐️手下，然後升級旅店⭐️",
                         "4-on-4": "犧牲早期生命值來快速獲得 3⭐️手下。 在第3回合升3⭐️旅店後刷到爛商店時的後備選項；需要理財",
                         "jeef": "使用 1⭐️理財手下和強大的對子靈活地開始賽局及變化。",
-                        "fast-jeef": "使用 1⭐️理財手下和強大的對子靈活地開始賽局及變化。快速提升⭐️。",
+                        "fast-jeef": "使用 1⭐️理財手下和強大的對子靈活地開始賽局及變化。快速升級旅店⭐️。",
                         "basic-yogg": "使用花費2金幣英雄能力來更快升級到3⭐️旅店",
                         "aggro-yogg": "使用2金幣的英雄能力，在更快升級到3⭐️旅店之前以獲取不錯的1⭐️手下到陣容中",
                         "slow-jeef": "使用 1⭐️理財和強大的手下對子來開局及靈活地變化。留在 2⭐️旅店 以鞏固陣容。"
@@ -1654,7 +1659,7 @@
                 "deck-saved-info": "牌組已儲存",
                 "save-deckcode-button-tooltip": "將此牌組加入我的牌組頁籤",
                 "show-buckets-button-label": "詞條",
-                "show-buckets-button-tooltip": "[實驗性] 顯示根據你牌組中的卡牌可以提供的協同卡牌池。假設協同卡牌池的提供方式如下：1）建立包括你牌組中至少一張卡牌的所有卡牌池列表，2）從中選擇一個提供。",
+                "show-buckets-button-tooltip": "【實驗性質】根據你牌組中的卡牌來顯示可供選擇的協同卡牌組合。假設是以下列方式根據目前牌組中的卡牌來決定獲得的協同組合：1）建立包含你牌組中至少一張卡牌的所有組合清單；2）接著從中隨機挑選一個組合供你選擇。",
                 "bucket-filter-button-tooltip": "依詞條過濾。 卡牌列表將僅包括至少有一張在選定詞條裡的卡牌",
                 "search-tooltip": {
                     "text": "你可以使用下列快速鍵進行搜尋：",
@@ -1686,7 +1691,8 @@
                 "header-winrate": "勝率",
                 "tier": "{{value}} 等級",
                 "data-points": "{{value}} 場",
-                "player-winrate-tooltip": "你於這個英雄的平均勝率"
+                "player-winrate-tooltip": "你於這個英雄的平均勝率",
+                "player-data-points": "{{value}}"
             }
         },
         "achievements": {
@@ -1792,7 +1798,9 @@
                     "legend-format": "{{format}} 傳說",
                     "ladder-default": "{{format}} 排名25",
                     "galakrond-explorers": "葛拉克朗的覺醒 - 探險者協會",
-                    "galakrond-evil": "葛拉克朗的覺醒 - 邪惡陣線"
+                    "galakrond-evil": "葛拉克朗的覺醒 - 邪惡陣線",
+                    "ladder-fallback": "{{format}} {{rank}}",
+                    "ladder": "{{format}} {{leagueName}} {{rank}}"
                 },
                 "went-first-tooltip": "先攻",
                 "went-second-tooltip": "後攻",
@@ -1852,7 +1860,7 @@
             "bg_wisdomball": "你可以直接從疊加層中獲得遊戲裏一些最佳玩家的建議並採用他們的策略",
             "collection_stats": "你可以檢視所顯示集群的卡牌歷史記錄和全域統計，並隨時在它們之間切換",
             "achievements_pick_for_me": "你可以讓應用程式來為你揀選並追蹤 3 項成就",
-            "lottery": "你可以參加每月樂透來贏得 Firestone 高階會員訂閱（從「設定」 > 「常規」 > 「樂透」頁面啟用）",
+            "lottery": "你可以參加每月抽獎來贏得 Firestone 高階會員訂閱（從「設定」 > 「一般」 > 「抽獎」頁面啟用）",
             "etc_buddies": "當扮演『樂團經理』精英牛頭大佬時，你可以看到發現池中的全部戰寵",
             "bg_hero_select": "你可以直接在英雄選擇介面上取得每個英雄的統計",
             "minions_list_by_tribe": "你可以啟用一個選項「在手下列表中新增按類別分組的列表」，這可以讓你在手下列表中按類別分組手下，從臃腫的類別小工具閒置出一些空間。",
@@ -1862,7 +1870,7 @@
             "category": {
                 "live-streams": "實況直播"
             },
-            "info-tooltip": "要在該列表中獲取你自己的實況，請從「設定」將你的 Firestone 連結到 Twitch。如果它曾經在這裡出現但現在已不見，請斷開並重新連結你的 Twitch 帳戶。",
+            "info-tooltip": "如要讓你的實況顯示在清單中，請從「設定」將你的 Firestone 連結到 Twitch。如果你的實況曾經在這裡出現但現在不再出現，請斷開並重新連結你的 Twitch 帳戶。",
             "language-tooltip": "直播間的語言",
             "current-viewers": "位觀眾",
             "empty-state-title": "沒有直播中的實況",
@@ -1886,12 +1894,12 @@
         "lottery": {
             "navigation": {
                 "achievements": "成就",
-                "lottery": "樂透"
+                "lottery": "抽獎"
             },
             "close-confirmation-button-ok": "不，我不要，告辭",
-            "close-confirmation-text-2": "關閉此視窗將停止獲取點數並停用臨時高階功能，直到你重新啟動應用程式。如果你有多個螢幕，請考慮使用頂端的「設定疊加層」開關將其移動到另一個螢幕。",
+            "close-confirmation-text-2": "關閉此視窗將停止獲取點數並停用臨時高階功能，直到你重新啟動應用程式。如果你是多螢幕配置，請考慮使用頂端的「設定疊加層」開關將其移動到另一個螢幕。",
             "lottery": {
-                "info-text": "參加樂透即可獲得 Firestone 訂閱者，每位訂閱者持續 2 個月。你需要一個 Overwolf 帳戶才能參加抽獎。只需在此視窗開啟時玩遊戲並達成目標即可累計點數（將同時收看廣告以支持開發者）。 ",
+                "info-text": "參加抽獎活動即可獲得 Firestone 訂閱，每次為期兩個月。你需要一個 Overwolf 帳戶才能參加抽獎。點數的累積方式很簡單：保持此視窗開啟，並遊玩遊戲與完成目標即可累計點數（廣告收益將用於支持開發者）。 ",
                 "stats": {
                     "beastsPlayed-label": "打出野獸",
                     "demonsPlayed-label": "打出惡魔",
@@ -1921,21 +1929,21 @@
                     "undeadPlayed-label": "打出不死族"
                 },
                 "season-duration-end-tooltip": "賽季已於 {{ startDate}} 開始",
-                "sign-in-button-text": "登入後即可參加樂透活動",
+                "sign-in-button-text": "登入後即可參加抽獎活動",
                 "season-duration-end": "本季將於『{{ days }}天 {{ hours }}小時 {{ minutes }}分鐘』後結束",
                 "points-text": "總積點數",
-                "sign-in-button-tooltip": "在沒有登入你的 Overwolf 帳戶的情況下無法參加賽季末樂透活動。但你仍然可以累計點數。"
+                "sign-in-button-tooltip": "在沒有登入你的 Overwolf 帳戶的情況下無法參加賽季末抽獎活動。但你仍然可以累計點數。"
             },
             "close-confirmation-button-cancel": "先留著",
             "achievements-pick-for-me-button-tooltip": "讓應用程式根據目前達成進度選擇 3 個成就供你追蹤",
-            "opt-out-confirmation-text": "你確定要選擇退出樂透嗎？此視窗支援開發人員，讓你在每個月末參加樂透活動，以獲得免費的 Firestone 訂閱",
-            "overlay-toggle-tooltip": "將樂透窗口綁定到遊戲窗口，使其始終可見。如果樂透與遊戲在同一螢幕上，你應該使用此選項",
-            "opt-out-tooltip": "點選以完全退出樂透小工具。你可以隨時從“設定” > “常規” > “樂透”中選擇重新加入。",
+            "opt-out-confirmation-text": "你確定要退出此抽獎功能嗎？ 此視窗能支持開發人員，並讓你每個月末有機會參加抽獎，獲得免費的 Firestone 訂閱。",
+            "overlay-toggle-tooltip": "將抽獎窗口綁定到遊戲窗口，使其始終可見。如果抽獎與遊戲在同一螢幕上，你應該使用此選項",
+            "opt-out-tooltip": "點選以完全退出抽獎小工具。你可以隨時從“設定” > “一般” > “抽獎”中選擇重新加入。",
             "achievements-title": "成就",
             "achievements-empty-state": "瀏覽應用程式中的成就區塊，然後選擇你要追蹤的成就。",
             "achievements-not-in-game": "啟動遊戲即可開始檢視你釘選的成就。",
-            "tracking-ongoing-tooltip": "樂透追蹤正在進行中，邊玩邊累計點數",
-            "tracking-not-ongoing-tooltip": "樂透追蹤已暫停，當小工具不可見時，你將不會累計點數",
+            "tracking-ongoing-tooltip": "抽獎追蹤正在進行中，邊玩邊累計點數",
+            "tracking-not-ongoing-tooltip": "抽獎追蹤已暫停，當小工具不可見時，你將不會累計點數",
             "opt-out-button-ok": "告辭",
             "achievements-pick-for-me-button": "為我挑選",
             "opt-out-button-cancel": "先留住",
@@ -2021,15 +2029,15 @@
             "presubscribe-modal": {
                 "cancel-button": "先不要",
                 "subscribe-button": "錢錢已準備好啦！",
-                "title": "以 {{plan}} 計劃訂閱",
-                "text-legacy": "你將被帶到 Overwolf 結帳頁面以完成訂閱，該頁面將在你的預設瀏覽器中開啟。你可以隨時透過應用程式解除訂閱。",
-                "text": "你將被帶到 Tebex 結帳頁面以完成訂閱，該頁面將在你的預設瀏覽器中開啟。你可以隨時透過應用程式解除訂閱。"
+                "title": "以 {{plan}} 方案訂閱",
+                "text-legacy": "你將被導向 Overwolf 結帳頁面以完成訂閱，該頁面將在你的預設瀏覽器中開啟。你隨時可以透過應用程式取消訂閱。",
+                "text": "你將被導向 Tebex 結帳頁面以完成訂閱，該頁面將在你的預設瀏覽器中開啟。你隨時可以透過應用程式取消訂閱。"
             },
             "unsubscribe-modal": {
                 "cancel-button": "留在舊訂閱",
-                "text-legacy": "解除訂閱將『終止』自動續訂你目前的訂閱。在當前訂閱期限結束之前，你仍可使用高階功能。⚠️此舊版計劃已棄用，因此你將無法重新訂閱該計劃。",
-                "title": "解除訂閱 {{plan}} 計劃？",
-                "text": "解除訂閱將『終止』自動續訂你目前的訂閱。在當前訂閱期限結束之前，你仍可使用高階功能。你將被帶到 Tebex 的結帳頁面以在那裡處理你的訂閱，並且它將於幾分鐘後在應用程式中更新。",
+                "text-legacy": "取消訂閱將會終止你的續訂。在當前訂閱期限結束之前，你仍可使用高階功能。⚠️舊版方案已棄用，因此在未來你將無法重新訂閱該特定方案。",
+                "title": "解除訂閱 {{plan}} 方案？",
+                "text": "取消訂閱將會終止你的自動續訂。在當前訂閱期限結束之前，你仍可使用高階功能。你將會被帶到 Tebex 的結帳頁面以在那裡處理你的訂閱，並且它將於幾分鐘後在應用程式中更新。",
                 "unsubscribe-ongoing-label": "解除訂閱中..."
             },
             "billing": {
@@ -2042,8 +2050,8 @@
                 "six-month-subtext": "（折扣優惠 {{value}}%）",
                 "six-month": "每半年計費一次"
             },
-            "unsubscribe-button-tooltip-legacy": "解除訂閱舊計劃。一旦解除訂閱，該計劃將不再出現在適用計劃列表中，你必須選擇其中一個新計劃才能繼續受益於高階功能。",
-            "title": "高階會籍計劃",
+            "unsubscribe-button-tooltip-legacy": "取消訂閱舊版方案。一旦取消，該方案將不會再顯示在可用方案清單中，你必須選擇一個新方案才能持續享有高階功能。",
+            "title": "高階會籍方案",
             "plan": {
                 "premium": "高階贊助者",
                 "legacy": "舊版訂閱",
@@ -2066,7 +2074,7 @@
                 "prioritySupport": "支援優先",
                 "removeAds": "移除廣告"
             },
-            "legacy-plan-text": "舊版訂閱計劃已被棄用並將在未來某個時間點停止支援。請考慮遷移至其他計劃。",
+            "legacy-plan-text": "舊版訂閱方案已被棄用並將在未來某個時間點停止支援。請考慮遷移至其他方案。",
             "auto-renew": "有效期至 {{ date }} ，『自動續訂』",
             "active-until": "有效期至 {{ date }} ，『不自動續訂』",
             "check-status-online": "有效並自動續訂。檢視詳情 {{link}}",
@@ -2078,8 +2086,8 @@
             "subscribe-button": "訂閱",
             "unsubscribe-button": "解除訂閱",
             "subscribe-button-upgrade": "升級",
-            "unsubscribe-button-tooltip": "解除訂閱當前計劃。你的訂閱在當前期限結束前仍然有效，並且不會自動續訂。",
-            "cant-subscribe-tooltip": "如果你已處於一個有效計劃，則無法訂閱其他計劃。請取消當前計劃並等待其到期。",
+            "unsubscribe-button-tooltip": "解除訂閱當前方案。你的訂閱在當前期限結束前仍然有效，並且不會自動續訂。",
+            "cant-subscribe-tooltip": "如果你已處於一個有效方案，則無法訂閱其他方案。請取消當前方案並等待其到期。",
             "override-checkbox-label": "無論如何讓我繼續新訂閱（放棄舊訂閱）",
             "override-confirmation": "⚠️我完全瞭解：如果繼續完成此訂閱流程，我將失去當前的舊訂閱",
             "login-to-subscribe": "登入以訂閱"
@@ -2527,6 +2535,10 @@
                 "all": "全部",
                 "starter": "主要傭兵",
                 "bench": "候補傭兵"
+            },
+            "mode": {
+                "pvp": "PvP",
+                "pve": "PvE"
             }
         },
         "menu": {
@@ -2656,7 +2668,8 @@
         "stats": {
             "deck-winrate": "牌組勝率",
             "deck-winrate-tooltip": "這個牌組從 {{value}} 開始的排名模式勝率",
-            "deck-winrate-vs-class-tooltip": "該牌組自 {{date}} 以來，排名對上 {{opponent}} 的勝率"
+            "deck-winrate-vs-class-tooltip": "此牌組自 {{date}} 以來，於排名中對戰 {{opponent}} 的勝率",
+            "deck-winrate-vs-class": "對戰 {{value}}"
         },
         "secrets-helper": {
             "title": "秘密小幫手"
@@ -2695,7 +2708,7 @@
                 "mulligan-impact-tooltip-free": "這張卡牌留在起始手牌中對你的勝率有多大影響。今天你還有 {{value}} 次免費使用機會。",
                 "deck-mulligan-overview-title": "牌組起手概觀",
                 "locked-premium-info-tooltip": "成為高階會員即可查詢你牌組的詳細起始手牌資訊。你每天可以免費使用此功能 {{value}} 次。",
-                "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對上 {{opponentClass}} | {{sampleSize}} 的賽局",
+                "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對戰 {{opponentClass}} | {{sampleSize}} 場賽局",
                 "deck-mulligan-filter-time-tooltip": "顯示自 {{timeFrame}} -（{{patchDetails}}）以來的所有賽局。點選進行更改。",
                 "sample-size-tooltip": "遊玩該牌組型態的賽局數（若有）；否則它會使用精確的牌組列表",
                 "deck-mulligan-filter-play-coin-tooltip": {
@@ -2746,11 +2759,11 @@
             "turn": "第 {{value}} 回合",
             "chance-label": "你的機率：",
             "win-chance-label": "獲勝",
-            "win-chance-tooltip": "你本次對戰的勝率",
+            "win-chance-tooltip": "你目前戰鬥的勝率",
             "tie-chance-label": "平手",
-            "tie-chance-tooltip": "你本次對戰的平手機率",
+            "tie-chance-tooltip": "你目前戰鬥的平手機率",
             "lose-chance-label": "戰敗",
-            "lose-chance-tooltip": "你本次對戰的敗率",
+            "lose-chance-tooltip": "你目前戰鬥的敗率",
             "damage-title": "傷害",
             "damage-dealt-tooltip": "可能的戰況中，有至少 {{value}}%， 傷害會在這個區間",
             "damage-received-tooltip": "平均受到傷害",
@@ -2793,7 +2806,7 @@
             "export-confirmation": "模擬程式碼已複製到剪貼簿",
             "import-button": "匯入",
             "import-button-tooltip": "匯入模擬程式碼以填充模擬器",
-            "reposition-button": "最優擺設",
+            "reposition-button": "最優站位",
             "reposition-button-firstpass": "第一次運算…",
             "reposition-button-secondpass": "第二次運算…",
             "reposition-button-finalresult": "最後一次模擬…",
@@ -2804,7 +2817,7 @@
             "reposition-button-tooltip-secondpass": "運行一定次數的模擬（~250）以獲得最佳佔位",
             "reposition-button-tooltip-finalresult": "為最佳佔位進行完整模擬。這需要用時最久，通常需要幾分鐘",
             "reposition-button-tooltip-done": "最佳站位已找到，正在清除暫存",
-            "reposition-button-tooltip-cancel": "點選以取消最優擺設",
+            "reposition-button-tooltip-cancel": "點選以取消最優站位",
             "reposition-button-tooltip-cancelling": "取消中， 請稍等",
             "actual": "實際",
             "simulated": "模擬",
@@ -2841,7 +2854,7 @@
                 "control-minion": "使用“{{playerKey}}”將手下添加到你的陣容，使用“{{opponentKey}}”將手下添加到對手的陣容",
                 "control-general": "每次揀選時，使用“Tab”循環瀏覽字段，並使用“Space”切換複選框。 使用 Enter 揀選第一個顯示的選項，然後使用 Shift + Enter 驗證最終揀選"
             },
-            "reposition-button-tooltip": "（測試版）找到適合你陣容的最佳擺設。根據 CPU 的核心數量和陣容的複雜程度，這可能需要幾分鐘的時間，並且會使用大量的 CPU 和 RAM。",
+            "reposition-button-tooltip": "（測試版）尋找適合你陣容的最優站位。根據 CPU的核心數量和陣容的複雜程度，此過程可能需要數分鐘的時間，並會佔用大量的 CPU 和 RAM 資源。",
             "global-effects-header": "光環影響",
             "quest-reward-header": "任務獎勵",
             "quest-reward-title": "任務獎勵",
@@ -2895,7 +2908,9 @@
             "haunted-carapace-health": "鬧鬼甲殼生命值",
             "haunted-carapace-attack-tooltip": "「鬧鬼甲殼」所提供的額外攻擊力",
             "haunted-carapace-health-tooltip": "「鬧鬼甲殼」所提供的額外生命值",
-            "haunted-carapace-attack": "鬧鬼甲殼攻擊力"
+            "haunted-carapace-attack": "鬧鬼甲殼攻擊力",
+            "select-trinket-placeholder": "選取一個飾品",
+            "gold-spent-this-game": "本賽局花費的金幣"
         },
         "hero-stats": {
             "finishes-title": "完賽數",
@@ -3059,7 +3074,7 @@
                 "global-header": "全域",
                 "pick-rate-title": "揀選率",
                 "high-mmr-header": "前 {{value}}%",
-                "high-mmr-header-tooltip": "於僅頂級玩家中的數值",
+                "high-mmr-header-tooltip": "於僅頂尖玩家中的數值",
                 "global-header-tooltip": "於整個玩家群中數值",
                 "placement-title": "平均名次",
                 "pick-rate-title-tooltip": "該飾品在玩家群中的揀選率。",
@@ -3072,7 +3087,12 @@
                 "actions-title": "本回合動作次數",
                 "close-cancel": "保持開啟",
                 "close-ok": "關閉",
-                "close-confirmation-text": "關閉並停用此小工具。你可以透過設定重新啟用它來再次打開"
+                "close-confirmation-text": "關閉並停用此小工具。你可以透過設定重新啟用它來再次打開",
+                "apm-title": "APM",
+                "avg-apm-tooltip": "本回合平均 APM",
+                "peak-apm-title": "峰值 APM",
+                "peak-apm-tooltip": "本回合峰值 APM",
+                "avg-apm-title": "平均 APM"
             }
         },
         "post-match-stats": {
@@ -3221,7 +3241,9 @@
                 "transparent": "透明"
             },
             "knob-zoom": {
-                "normal": "100%"
+                "normal": "100%",
+                "zoom-400": "400%",
+                "zoom-200": "200%"
             },
             "widget-size-label": "小工具大小",
             "show-advanced-settings-button": "顯示進階設定",
@@ -3237,7 +3259,7 @@
             }
         },
         "menu": {
-            "general": "常規",
+            "general": "一般",
             "decktracker": "記牌器",
             "battlegrounds": "英雄戰場",
             "mercenaries": "傭兵戰隊",
@@ -3253,26 +3275,28 @@
         },
         "general": {
             "menu": {
-                "general": "常規",
+                "general": "一般",
                 "localization": "在地化",
                 "bug-report": "報告問題",
                 "third-party": "第三方",
                 "quests": "任務",
                 "data": "資料",
-                "lottery": "樂透",
+                "lottery": "抽獎",
                 "mods": "模組",
                 "premium": "高階會員",
                 "appearance": "外觀",
                 "admin": "管理",
-                "widgets": "小工具"
+                "widgets": "小工具",
+                "discord": "Discord",
+                "broadcast": "Twitch"
             },
             "third-party": {
-                "intro": "我們堅信資料歸您所有，您理應能夠將這些資料同步到其他第三方網站，讓他們各司其職，發揮所長。雖然我們並未因此獲取任何報酬，但這有助於提升我們的曝光度，因為他們會為我們宣傳 😊",
+                "intro": "我們堅信你的資料歸您所有，你理應能夠將其同步到其他第三方網站，協助他們發揮最大的價值。雖然我們並未因此獲取任何報酬，但這有助於提升我們的曝光度，因為他們會為我們宣傳 😊",
                 "vs": {
-                    "pitch": "Vicious Syndicate 通過追蹤•搜集來自數千場遊戲資料和頂級玩家見解，建立了一份每周趨勢調查報告。你可以造訪他們的網站 {{websiteLink}}",
+                    "pitch": "Vicious Syndicate 會利用數千場賽局的數據，並結合頂尖玩家的見解，建立每週趨勢報告。你可以造訪他們的網站 **{{websiteLink}}**",
                     "website-link": "這裡",
-                    "next": "如果你決定為 vS Data Reaper 調查回報做出貢獻，Firestone 將匿名向他們傳送有關你在遊戲中的資訊（主要資料是每個玩家所使用的卡牌以及一些資料，例如玩家排名賽）。",
-                    "toggle-label": "為 vS Data Reaper 調查回報做出貢獻"
+                    "next": "如果你決定協助 vS 資料收割者報告（vS Data Reaper Report），Firestone 將會匿名傳送你的賽局資訊給他們（大多是每個玩家所使用的卡牌以及一些主要資料，像是玩家排名賽）。",
+                    "toggle-label": "協助 vS 資料收割者報告（vS Data Reaper Report）"
                 },
                 "ooc": {
                     "website-link": "這裡",
@@ -3282,13 +3306,13 @@
                     "connected-text": "你已登入",
                     "collection-synchronized": "牌庫已同步",
                     "next": "如果你連結 Out of Games 帳戶，Firestone 會將你的牌庫資料傳送至 Out of Games，以便你可在線上使用。",
-                    "pitch": "Out of Games 是一個《爐石戰記》社群網站，提供文章、指南、牌組、卡牌資料庫等。將你的牌庫蒐集同步到網站可以更輕鬆地找到要玩的牌組。你可以造訪他們的網站 {{websiteLink}}",
+                    "pitch": "Out of Games 是一個《爐石戰記》社群網站，提供文章、指南、牌組、卡牌資料庫等。將你的卡牌蒐集同步到該網站可以更輕鬆地找到想玩的牌組。你可以造訪他們的網站 {{websiteLink}}",
                     "title": "退出遊戲"
                 },
                 "d0nkey": {
-                    "pitch": "hsguru.com 是一個由粉絲建立網站，搜集了來自《爐石戰記》官方比賽以及實況主的牌組，讓任何人都能輕鬆找到有趣的牌組來玩。將你的牌組同步到 hsguru.com 可以讓你（如果你是實況主）與觀眾分享你的牌組，或幫助他們建立更好的資料庫，為社群提供更多免費服務。你可以造訪他們的網站： {{websiteLink}}",
+                    "pitch": "hsguru.com 是一個《爐石戰記》的粉絲網站，它會收集所有來自官方賽事以及知名實況主所使用的牌組，讓大家都能輕鬆找到有趣的牌組來遊玩。同步到 hsguru.com 將可以讓你跟觀眾分享你的牌組（如果你是實況主），或者協助他們建立更完善的資料庫，以便為社群提供更多免費服務。你可以造訪他們的網站： {{websiteLink}}",
                     "website-link": "這裡",
-                    "next": "如果你決定同步到 hsguru.com，Firestone 會將你玩的每場賽局傳送給他們，這些賽局將出現在網站上的特定區塊（目前仍在建置中）。預設情況下賽局重播為私人狀態，除非你同時進行實況。請參閱 {{link}} 以了解如何設定全部內容。",
+                    "next": "如果你決定同步到 hsguru.com，Firestone 將會把你遊玩的每場賽局都傳送給他們，這些賽局將會顯示在網站的一個特定區塊（目前仍在建構中）。重播紀錄預設為私人狀態，除非你同時進行實況。請參閱 {{link}} 以瞭解如何完成所有設定。",
                     "instructions-page-link": "說明頁",
                     "toggle-label": "將你的重播同步到 hsguru.com",
                     "toggle-collection-label": "將「我的牌庫」同步到 hsguru.com"
@@ -3315,7 +3339,7 @@
             },
             "twitch": {
                 "title": "在圖奇（Twitch）上推送",
-                "intro": "Firestone 圖奇（Twitch） 擴充功能允許你在 Twitch 實況中顯示你的牌組，並允許觀眾將滑鼠懸停在英雄戰場名次榜中的全部玩家上。 要啟用它，你需要：",
+                "intro": "Firestone 圖奇（Twitch） 擴充功能允許你在 Twitch 實況中顯示你的記牌器，並允許觀眾將滑鼠懸停在「英雄戰場的排行榜」中的所有玩家上方。若要啟用此功能，你需要：",
                 "todo-1": "1. 在你的頻道安裝Firestone Twitch擴充程式",
                 "todo-2": "2. 點選下方按鈕以連結你的Twitch帳戶至Firestone",
                 "todo-3": "3. 調整你的選項： ",
@@ -3326,7 +3350,7 @@
                 "configuration-title": "實況配置",
                 "delay-label": "直播延遲（毫秒）",
                 "delay-label-tooltip": "將傳送到 Twitch 的直播事件延遲多少毫秒， 如果你希望延遲實況以對抗狙擊手。",
-                "appear-on-live-streams-tooltip": "顯示在「實況直播」標籤上。該功能仍在開發中，將列出目前使用 Firestone 的全部實況主以及他們目前的遊戲類型、列表（如果適用）以及前往其 Twitch 直播的連結。",
+                "appear-on-live-streams-tooltip": "顯示在「實況直播」標籤上。該功能仍在開發中，將列出目前使用 Firestone 的全部實況主以及他們目前的遊戲類型、列表（如果適用），並提供前往其 Twitch 直播的連結。",
                 "appear-on-live-streams-label": "在實況直播中出現",
                 "other-options-title": "其他選項"
             },
@@ -3334,7 +3358,7 @@
                 "launch-on-game-start-label": "啟動遊戲時也啟動Firestone",
                 "launch-on-game-start-tooltip": "如果關閉，你每次都必須手動開啟",
                 "integrated-mode-label": "智慧模式",
-                "integrated-mode-tooltip": "開啟後，主視窗變為疊加層並綁定至遊戲視窗。建議將其用於單螢幕設定或者想在實況中顯示 Overwolf app。 更改此設定將自動重啟「設定」視窗和主視窗。",
+                "integrated-mode-tooltip": "啟用後，主視窗變為疊加層並綁定至遊戲視窗。建議在單螢幕配置下使用，或者在你進行實況時顯示此應用程式。 更改此設定將重啟設定視窗和主視窗。",
                 "session-recap-on-exit-label": "退出時的戰況總結",
                 "session-recap-on-exit-tooltip": "當你退出爐石戰記時顯示過去戰況的回顧",
                 "xp-recap-on-game-end-label": "賽局結束後顯示經驗值總結",
@@ -3375,7 +3399,7 @@
             },
             "localization": {
                 "title": "在地化",
-                "text-1": "應用程式的翻譯是由社群成員貢獻的，他們就像您一樣，慷慨地投入時間與精力，讓每個人都能用自己選擇的語言來使用這個應用程式。因此，請您享受並尊重他們的成果。",
+                "text-1": "應用程式的翻譯由社群協力完成，他們就像您一樣，慷慨地投入時間與心力，讓所有人都能以自己選擇的語言使用此應用程式。因此，請您享受並尊重他們的成果。",
                 "text-11": "這也意味著並非整個程式都會被翻譯。所以缺少翻譯的部分會用英文代替。",
                 "text-2": "如果你想幫忙翻譯這個程式，請檢閱說明。 {{link}}",
                 "link": "這裡",
@@ -3387,8 +3411,8 @@
                 "achievements": "成就",
                 "refresh-button-label": "重新整理",
                 "refresh-progress-button-label": "處理中...",
-                "clear-games-tooltip": "清除你的賽局，並根據你的喜好重新載入最新賽局（預設為最近 100 天，你可以透過啟用進階設定來變更）。如果你有很多賽局並且感覺該應用程式使用了太多記憶體，這可能會很有用",
-                "remote-intro-text": "Firestone 在線上儲存你的大部分資料，以便你可以輕鬆地在不同的電腦上使用這些資料。其中一些資料存儲在本機，以縮短應用程式的載入時間並降低頻寬使用。不過，你可以使用下面的按鈕強制刷新該資料，通常是在更換電腦之後。",
+                "clear-games-tooltip": "清除你的賽局資料，並根據你的偏好重新載入最新的賽局（預設為最近 100 天，你可以透過啟用「進階設定」來變更）。如果你的賽局資料過多，且感覺應用程式使用了太多記憶體，此功能將會有所幫助。",
+                "remote-intro-text": "Firestone 將你的大部分資料儲存於線上，以便你在不同的電腦間輕鬆使用。其中一些資料會快取在本機，以改善應用程式的載入時間並降低頻寬使用。但是，當你切換電腦後，通常可以使用下方的按鈕強制刷新這些資料。",
                 "games-period-options": {
                     "all-time": "全部時間",
                     "past-100": "最近 100 天",
@@ -3397,7 +3421,7 @@
                     "season-start": "賽季開始"
                 },
                 "disable-local-cache": "停用本機快取",
-                "disable-local-cache-tooltip": "停用賽局的本機快取。這將強制應用程式從伺服器檢索全部賽局，這會稍微減慢應用程式的載入速度。停用本機快取也會清除現有快取。",
+                "disable-local-cache-tooltip": "停用賽局的本機快取。這將強制此應用程式從伺服器擷取所有賽局，這會稍微減慢應用程式的載入速度。停用本機快取也會清除現有快取。",
                 "clear-button-label": "清除",
                 "games-period": "載入你的賽局",
                 "games-title": "賽局",
@@ -3446,7 +3470,7 @@
                 "update-available": "此模組有新版本囉。點選即可更新",
                 "installing-mod-manager": "正在下載模組管理器（~15 kB）...",
                 "game-running-error": "請在啟用 ／ 停用模組前，關閉「爐石戰記」。",
-                "disable-mods-description": "目前已啟用 Mod。點選以停用模組支援。它將刪除模組引擎及其配置，但模組檔案不會被刪除（如果你想重新啟用它們）。有關如何完全刪除全部內容的說明，請參閱維基。",
+                "disable-mods-description": "目前已啟用模組。點選即可停用模組支援。這會移除模組引擎及其配置，但模組檔案將會保留（以供未來重新啟用）。有關如何徹底移除所有內容的說明，請參閱維基。",
                 "instructions-link": "入門",
                 "game-location-placeholder": "遊戲安裝位置",
                 "update-disabled": "此模組有新版本，但你必須先關閉遊戲才能安裝",
@@ -3471,21 +3495,21 @@
                 "instructions": "請閱讀 {{link}} 以了解全部必要的詳細資訊。",
                 "refresh-engine": "重新整理引擎",
                 "installed-mods-description": "安裝了以下模組（刪除「爐石戰記」／「模組」中的相應檔案即可卸載）：",
-                "warning": "⚠️：模組修改了遊戲本身的行為方式，因此違反了遊戲的服務條款，並且可能會讓你被禁止，儘管我還沒有聽說過這樣的情況。下面列出的模組是*我認為*可以安全使用的模組，但以後會怎麼樣林北不知道。",
+                "warning": "⚠️：模組會修改遊戲本身的行為方式，因此可能違反遊戲的服務條款，並有可能導致你的帳戶被封鎖，儘管我尚未聽聞過這類的案例。下方列出的模組是*我個人認為*可以安全使用的，但風險仍須由使用者自行承擔。",
                 "installed-mods-description-2": "目前已安裝以下模組（刪除 {{path}} 中對應的檔案即可解除安裝）：",
                 "need-to-close-game-warning": "你必須先關閉《爐石戰記》，才能安裝／解除安裝／更新，或啟用／停用模組。"
             },
             "premium": {
-                "lottery-opacity-title": "樂透小工具不透明度",
-                "lottery-size-title": "樂透小工具大小",
-                "text-1": "成為高階會籍用戶是支援 Firestone 以及我為改進該應用程式而作出努力的最佳方式。此外，你還可以獲得許多功能，例如疊加層小工具、帶有你自己的個人資訊頁面的網站等等。你可以找到全部高階功能的詳細資訊 {{link}}。",
-                "lottery-button-text": "啟用樂透",
-                "lottery-block-title": "樂透",
+                "lottery-opacity-title": "抽獎小工具不透明度",
+                "lottery-size-title": "抽獎小工具大小",
+                "text-1": "成為高階會籍用戶是支持此應用程式和我為改進 Firestone 所做的工作的最佳方式。此外，你還可以獲得多項功能，像是疊加層小工具、一個帶有專屬個人資料頁面的網站以及更多的內容。你可以在 {{link}} 找到所有高階功能的詳細資訊。",
+                "lottery-button-text": "啟用抽獎",
+                "lottery-block-title": "抽獎",
                 "lottery-block-text3": "⚠️：如果你有多個螢幕，請嘗試在小工具中關閉「設定疊加層」，然後將其移至第二個螢幕。",
-                "lottery-block-text4": "⚠️：如果你是高階會籍用戶，選擇參加樂透將不會向你展示廣告 - 如果你中獎，我們將為你發放等值的獎品。",
-                "lottery-block-text2": "一旦新的樂透賽季開始，先前賽季的點數將被重設。",
+                "lottery-block-text4": "⚠️：如果你是高階會籍用戶，選擇參加抽獎將不會向你展示廣告 - 如果你中獎，我們將為你發放等值的獎品。",
+                "lottery-block-text2": "一旦新的抽獎賽季開始，先前賽季的點數將被重設。",
                 "title": "高階會員訂閱選項",
-                "lottery-block-text1": "參加樂透將通過你在玩遊戲時執行的一些操作（例如花費資源）並在樂透窗口可見的情況下累計點數。每個月末，將隨機選出 4 位得獎者（點數越多，獲勝的機會就越大）。獲獎者將獲得 2 個月的高階會員訂閱，並將在 {{twitterLink}} 和 {{discordLink}} 上公佈。",
+                "lottery-block-text1": "參與抽獎將可以透過遊玩遊戲時，在抽獎視窗可見的情況下完成某些動作（例如：花費資源）來累積點數。每個月底，系統將會隨機選出 4 位得獎者（累積越多的點數，中獎機會越高）。得獎者將可獲得 2 個月的高階會籍訂閱，並會在 {{twitterLink}} 與 {{discordLink}} 上公布。",
                 "lottery-widget-settings-title": "小工具設定",
                 "link": "維基上",
                 "lottery-premium-section-tooltip": "此區塊僅適用於高階會籍用戶"
@@ -3494,7 +3518,8 @@
                 "advanced-config-title": "進階配置",
                 "in-game-text": {
                     "mmr": "{{value}} 評分",
-                    "legend": "傳說 {{rank}}"
+                    "legend": "傳說 {{rank}}",
+                    "league": "{{league}} {{rank}}"
                 },
                 "discord-presence-label": "Discord 豐富內嵌",
                 "in-game-text-in-match-default-value": "在 一場 {mode} 遊戲中",
@@ -3574,7 +3599,7 @@
                 "show-matchup-winrate-tooltip": "有資料時在記牌器上顯示此牌組對抗對方職業的整體天梯勝率（僅標準或開放）",
                 "show-gifts-separately": "分別顯示非起始牌組的卡牌",
                 "reset-deck-position-after-trade": "更換後重設位置",
-                "reset-deck-position-after-trade-tooltip": "在更換一張「可更換」後，理論上該卡可以放在牌組的底部。 因此，默認情況下，當更換發生時，顯示“頂層”和“底層”的列表區塊會被清除。 如果你希望這些區塊即使在更換之後也保持其先前的顯示，請關閉此選項。",
+                "reset-deck-position-after-trade-tooltip": "在交易一張「可交易的」卡牌後，該卡牌理論上會被放置在牌組的底部。因此，當有交易行為發生時，顯示「牌組的頂部」和「牌組的底部」的區塊預設會被清除。如果你希望在交易後，這些區塊仍保留先前的數值，請關閉此選項。",
                 "show-stats-change": "顯示狀態變更",
                 "show-stats-change-tooltip": "在牌組列表中顯示某些卡牌發生的變化（如：點燃、鍛造錘）",
                 "show-cost-reduction": "更新牌堆裏的卡牌花費",
@@ -3593,23 +3618,23 @@
                 "counters-size": "計數器大小",
                 "discover-help": "「發現」上下文說明",
                 "show-gifts-separately-tooltip": "將被創建的卡牌（衍生卡等）顯示在各自的行中（每個創建源各自獨一行）。在舊式卡牌記牌器模式下不起作用。",
-                "streamer-mode-tooltip": "將你的名字和對手的名字替換為「你」和「對手」。這相等於遊戲的流媒體模式功能，在賽局中按 Ctrl + Shift + S 即可啟用該功能。",
+                "streamer-mode-tooltip": "將你的名字和對手的名字替換為「你」和「對手」。此功能鏡像了遊戲內的「實況主模式」，該模式在賽局中按 Ctrl + Shift + S 即可啟用",
                 "discover-help-tooltip": "在「發現卡牌」時顯示上下文說明。它可以簡單地突出顯示牌堆中的相關牌，也可以提供更具體的資訊。",
                 "show-transformed-into-tooltip": "將一張變形後的卡牌加入記牌器中",
                 "counters-use-expanded-view-label": "計數器視圖展開",
                 "show-board-in-separate-zone": "在單獨的區塊顯示版面",
-                "show-board-in-separate-zone-tooltip": "將戰場上的卡牌從「其他」移動到新的可折疊「戰場」區塊。",
+                "show-board-in-separate-zone-tooltip": "將戰場上的卡牌從「其他」移動到新的「戰場」可摺疊區段。",
                 "show-gifts-in-separate-zone": "在單獨的區塊顯示非起始卡牌",
                 "counters-use-expanded-view-tooltip": "如果適用，計數器提示框將在單獨的行列上顯示項目",
                 "group-same-cards": "將相同的卡牌分組在一起",
                 "show-transformed-into-label": "顯示已變形卡牌",
                 "group-same-cards-tooltip": "將具有相同卡牌 ID 的所有卡牌分組在一起，無論它們是否被丟棄、死亡、摧毀、使用不同的法力水晶花費等。",
-                "show-gifts-in-separate-zone-tooltip": "將創建的卡牌從「其他」區塊移動到新的「其他（衍生）」可折疊區塊。",
+                "show-gifts-in-separate-zone-tooltip": "將創建的卡牌從「其他」區塊移動到新的「其他（衍生）」可摺疊區段。",
                 "show-plagues-on-top-tooltip": "將所有DK「瘟疫」卡牌一起顯示在牌組頂端，以便更輕鬆地追蹤它們。",
                 "show-plagues-on-top": "在頂端顯示「瘟疫」",
                 "attack-counter-size": "攻擊力計數器大小",
                 "hand-sort-by-zone-order-tooltip": "依照區域順序來排序手牌，讓手牌中的卡牌以抽到的順序顯示",
-                "hand-sort-by-zone-order": "手牌按區塊排序"
+                "hand-sort-by-zone-order": "手牌按區域順序排序"
             },
             "modes": {
                 "title": "記牌器在下列模式處於作用中狀態",
@@ -3717,10 +3742,10 @@
                 "hand-markers-title": "手牌標記",
                 "hide-generated-cards-label": "隱藏生成的卡牌",
                 "group-cards-by-zone-label": "新現代記牌器",
-                "hide-generated-cards-tooltip": "隱藏由其他卡牌創建且不在手牌或牌堆中的卡牌。⚠️：隱藏創建的卡牌可能會導致某些功能在降級模式下運作（效能下降），例如卡牌突出顯示",
+                "hide-generated-cards-tooltip": "隱藏由其他卡牌產生且不在手牌或牌堆中的卡牌。⚠️：隱藏產生的卡牌可能會導致部分功能在降級模式下運作（效能下降），例如卡牌突出顯示",
                 "show-dk-runes-tooltip": "在記牌器頂端新增一個區塊，顯示牌組中已知的DK符文",
                 "show-dk-runes-label": "顯示DK符文",
-                "group-cards-by-zone-tooltip": "啟用時，記牌器會將卡牌分成可摺疊的部分（牌堆、手牌和其他），以啟用一些新功能。關閉此項將返回傳統顯示模式，全部卡牌都會集中在一個區塊",
+                "group-cards-by-zone-tooltip": "啟用時，記牌器會將卡牌分成可摺疊的區段（牌堆、手牌和其他），藉此啟用一些新功能。關閉此項將會返回「傳統顯示模式」，屆時所有卡牌將集中在單一區段。",
                 "known-decklist-label": "載入已知的牌組佇列",
                 "known-decklist-tooltip": "啟用時，如果在賽局開始時已知牌組資訊，記牌器將嘗試載入當前對手的牌組列表（例如在玩《威茲邦的英雄們》扭曲模式時）"
             },
@@ -3811,7 +3836,7 @@
                     "thirsty-drifter-label": "口渴的漂泊者",
                     "damage-taken-on-your-turn-label": "在你的回合受到的傷害",
                     "dead-minions-this-game-label": "手下（已死亡）",
-                    "damage-taken-on-your-turn-tooltip": "當你的手牌或牌堆中有一些使用此資訊的卡牌（例如「三溫暖常客」或「派對策劃員沃娜」）時，為你提供有關你的英雄在你的回合中受到的傷害的訊息（次數和總傷害）",
+                    "damage-taken-on-your-turn-tooltip": "此計數器提供英雄在你的回合中受到的傷害的資訊（次數與總傷害）。僅當你的手牌或牌堆中有使用此資訊的卡牌（例如「三溫暖常客」或「派對策劃員沃娜」）時",
                     "locations-used-label": "地點（已使用）",
                     "dead-minions-this-game-tooltip": "當你手上或牌堆中有相關卡牌時（例如「礦坑老大雷斯卡」），顯示本場賽局死亡的手下數量",
                     "locations-used-tooltip": "當你手上或牌堆中有依賴該資訊的卡牌時，顯示你已使用「地點」的次數",
@@ -3898,7 +3923,7 @@
                 "show-ooc-hero-info-label": "顯示英雄資料",
                 "show-ooc-hero-info-tooltip": "在決鬥開始之前， 當滑鼠移到選項上時顯示英雄／英雄能力／珍藏寶藏的資料",
                 "show-ooc-deck-select-label": "顯示快速牌組小工具",
-                "show-ooc-deck-select-tooltip": "在牌組構築介面上顯示小工具，可讓你快速複製玩過的最後一套牌組所使用的英雄／英雄能力／寶藏組合，以及最近的幾張高勝率牌組。"
+                "show-ooc-deck-select-tooltip": "在牌組構築介面上顯示小工具，可讓你快速複製先前使用此英雄／英雄能力／寶藏組合的最後一套牌組，以及最近的幾套高勝率牌組。"
             },
             "turn-timer": {
                 "title": "回合計時器",
@@ -3934,7 +3959,7 @@
         },
         "collection": {
             "menu": {
-                "general": "常規"
+                "general": "一般"
             },
             "general": {
                 "title": "一般選項",
@@ -3965,11 +3990,11 @@
         },
         "battlegrounds": {
             "menu": {
-                "general": "常規",
+                "general": "一般",
                 "overlay": "疊加層",
                 "session": "歷史賽局小工具",
                 "leaderboard": "排行榜",
-                "battle-odds": "對戰勝負率",
+                "battle-odds": "戰鬥勝負率",
                 "minions-list": "手下列表",
                 "tribes": "類別"
             },
@@ -3979,7 +4004,7 @@
                 "companion-app-title": "應用程式伴侶",
                 "enable-app-label": "啟用應用程式",
                 "integrated-mode-label": "智慧模式",
-                "integrated-mode-tooltip": "如果開啟，英雄戰場視窗將會變為疊加層並綁定遊戲視窗。建議將此用於單螢幕或是實況直播",
+                "integrated-mode-tooltip": "開啟後，英雄戰場視窗將會變為疊加層並鎖定至遊戲視窗。建議將此用於單螢幕配置或是實況直播",
                 "enable-battle-sim-label": "啟用戰場模擬",
                 "enable-battle-sim-tooltip": "啟用時你會在每場賽局開始時知道你獲勝／平手／戰敗的機率",
                 "hide-simulation-label": "戰鬥結束後隱藏模擬面板",
@@ -3991,7 +4016,7 @@
                 "popup-hero-selection-screen-label": "彈出英雄揀選介面",
                 "popup-hero-selection-screen-tooltip": "啟用此功能，將會在揀選英雄時彈出各英雄的資料",
                 "use-mmr-filter-for-live-stats-label-short": "評分篩選",
-                "use-mmr-filter-for-live-stats-tooltip": "啟用時，賽局開始時英雄選擇介面將顯示考量賽局當前適用的手下類別的英雄強度。 ⚠️：這可能會導致資料樣本量非常低，因此使用風險自負🙂️",
+                "use-mmr-filter-for-live-stats-tooltip": "啟用後，賽局開始時英雄選擇介面將顯示考量你目前的積分後的英雄強度。 ⚠️：這可能會導致資料樣本量過低，因此使用風險自負🙂️",
                 "use-tribe-filter-for-live-stats-label-short": "種族篩選",
                 "use-tribe-filter-for-live-stats-tooltip": "啟用時，比賽開始時英雄選擇屏幕上顯示的英雄等級將考慮遊戲當前可用的種族。 警告：這可能會導致數據樣本量非常低，因此使用風險自負:)",
                 "show-next-opponent-recap-label": "顯示下個對手的戰況回顧",
@@ -4007,7 +4032,7 @@
                 "popup-post-match-stats-tooltip": "啟用此功能會使英雄戰場視窗在賽局結束後顯示賽後資料，即使已將視窗最小化",
                 "simulator-config-title": "模擬配置",
                 "simulator-number-of-sims-label": "模擬次數",
-                "simulator-number-of-sims-tooltip": "每場賽局的模擬次數。我們發現5000是很好的模擬次數。增加次數會增進計算準確性但也會要求更多的電腦資源。",
+                "simulator-number-of-sims-tooltip": "每場戰鬥的模擬次數。我們發現 5,000 次模擬是一個不錯的基準點。增加此數值會增進計算準確性但也會佔用更多的電腦資源。",
                 "show-minions-auto-highlight-label": "自動突出顯示手下",
                 "show-tribes-auto-highlight-label": "自動突出顯示手下類別",
                 "show-minions-auto-highlight-tooltip": "根據你的英雄和面板陣容自動突出顯示旅店賣場中的一些手下（例如「保本賭客」於海盜派奇）。",
@@ -4015,12 +4040,12 @@
                 "use-anomaly-filter-for-live-stats-label-short": "異變篩選器",
                 "show-hero-tips-tooltip": "奇妙的智慧球出現，你可以透過將滑鼠懸停在它上面來快速檢視當前英雄的專業貼士。",
                 "show-quest-stats-label": "顯示任務統計",
-                "show-quest-stats-tooltip": "顯示要達成提供的每個任務所需的平均回合數，並顯示揀選相關獎勵的玩家的平均最終名次。揀選其中的任務獎勵時一定要考量兩者！",
+                "show-quest-stats-tooltip": "顯示要達成目前提供的任務所需的平均回合數，以及選擇該任務獎勵的玩家的平均最終名次。揀選任務獎勵時務必將兩者納入考量！",
                 "show-game-end-notif-tooltip": "賽局結束後在螢幕右下角顯示小通知，以快速存取你的賽局統計",
                 "show-game-end-notif-label": "顯示賽局覆盤通知視窗",
                 "show-hero-tips-label": "顯示英雄貼士",
                 "use-remote-simulator-tooltip": "打開該功能將在遠端伺服器上執行戰鬥模擬，從而釋放你的機器。另一方面，模擬結果將需要更長的時間才能送達",
-                "use-anomaly-filter-for-live-stats-tooltip": "啟用時，賽局開始時英雄揀選畫面上顯示的英雄評分將考量異變模式。⚠️：這可能會導致資料樣本量過低",
+                "use-anomaly-filter-for-live-stats-tooltip": "啟用後，賽局開始時英雄選擇介面將顯示考量異變模式的英雄強度。⚠️：這可能會導致資料樣本量過低",
                 "show-hero-tier-tooltip": "揀選英雄時，直接在英雄肖像上顯示英雄強度和全球平均名次。",
                 "use-remote-simulator-label": "使用遠端戰鬥模擬器",
                 "use-tribes-filter-for-live-stats-tooltip": "啟用時，賽局開始時英雄揀選畫面上顯示的英雄評級將考量當前旅店大堂的手下類別",
@@ -4030,9 +4055,9 @@
                 "max-sim-duration-label": "最大模擬持續時間",
                 "show-intermediate-results-label": "顯示中途結果",
                 "show-intermediate-results-tooltip": "顯示模擬戰鬥的中途隨著模擬持續進行而變化的結果",
-                "max-sim-duration-tooltip": "允許模擬運行的最長時間（以毫秒為單位）。如果在那之後仍然沒有達到最大模擬時間，模擬器將停止並給出最終模擬結果。",
+                "max-sim-duration-tooltip": "允許模擬運行的最長時間（以毫秒為單位）。如果超時後仍未達到最大模擬次數，模擬器將停止並提前輸出結果",
                 "show-trinket-tips-label": "顯示飾品貼士",
-                "show-trinket-tips-tooltip": "在疊加層（僅高階會員）或手下列表（所有人）的飾品選擇階段，顯示頂級 BG 玩家提供的飾品貼士。",
+                "show-trinket-tips-tooltip": "在疊加層（僅高階會員）或手下列表（所有人）的飾品選擇階段，顯示頂尖 BG 玩家提供的飾品貼士。",
                 "hero-stats-overlay-scale": "英雄統計資料疊加層大小"
             },
             "overlay": {
@@ -4158,7 +4183,7 @@
                 "enable": "在疊加層中使用排行榜資訊",
                 "title": "在疊加層中顯示排行榜資訊",
                 "show-in-opponent-recap": "在回顧中顯示",
-                "text-3": "⚠️：排行榜只有頂級玩家的資訊，我們必須以玩家名稱進行粗略的比對。因此，如果你在低／中評分上使用此功能，很有可能會獲得不正確的資訊。",
+                "text-3": "⚠️：排行榜僅包含頂尖玩家的資訊，且我們必須以玩家名稱進行模糊比對。因此，如果你在低／中積分層級使用此功能，很有可能會獲得不正確的資訊。",
                 "show-in-leaderboard": "顯示排名小磁磚",
                 "show-in-leaderboard-tooltip": "直接在賽局中的排名圖塊上顯示玩家姓名和評分資訊",
                 "text": "這些設定使應用程式可以將官方排行榜中的資訊直接提取到疊加層中，以便你可以在玩遊戲時存取其他玩家的評分資訊。",
@@ -4168,7 +4193,7 @@
         },
         "achievements": {
             "menu": {
-                "general": "常規"
+                "general": "一般"
             },
             "notifications": {
                 "title": "當你看到成就通知時更新",
@@ -4187,7 +4212,7 @@
         },
         "mercenaries": {
             "menu": {
-                "general": "常規",
+                "general": "一般",
                 "quests": "任務"
             },
             "general": {
@@ -4226,7 +4251,7 @@
         },
         "replays": {
             "menu": {
-                "general": "常規"
+                "general": "一般"
             },
             "empty-state": "尚未有任何設定"
         },
@@ -4252,7 +4277,7 @@
                 "show-current-options-tooltip": "在選牌記牌器中顯示你目前被提供的卡牌，以便你更輕鬆地與它們互動、檢視相關卡牌等"
             },
             "menu": {
-                "general": "常規",
+                "general": "一般",
                 "draft-tracker": "選牌記牌器"
             },
             "session-widget": {
@@ -4274,11 +4299,11 @@
         },
         "replay": {
             "menu": {
-                "general": "常規"
+                "general": "一般"
             },
             "general": {
                 "hide-games-vs-ai": "隱藏與AI對戰的遊戲",
-                "hide-games-vs-ai-tooltip": "在查閱完整重播列表時隱藏與AI對戰的遊戲"
+                "hide-games-vs-ai-tooltip": "在檢視完整重播清單時隱藏與AI對戰的場次"
             }
         }
     },
@@ -4350,7 +4375,7 @@
                 "description": "分析英雄戰場卡牌數據、等級表現，並找出哪些卡牌正在塑造當前環境。"
             },
             "comps": {
-                "description": "探索最成功的英雄戰場組合、卡牌協同效果和戰略，以稱霸你的對戰。"
+                "description": "探索最成功的英雄戰場組合、卡牌協同效果和戰略，以稱霸你的賽局。"
             }
         },
         "desktop-app": {
@@ -4988,7 +5013,7 @@
     "arena": {
         "overlay": {
             "mulligan": {
-                "mulligan-overview-footer": "對上 {{opponentClass}} | {{sampleSize}} 的賽局"
+                "mulligan-overview-footer": "對戰 {{opponentClass}} | {{sampleSize}} 場賽局"
             }
         }
     },
