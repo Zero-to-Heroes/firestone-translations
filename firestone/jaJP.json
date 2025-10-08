@@ -123,7 +123,9 @@
             "gift": "ギフト",
             "old_core_230": "過去のコア",
             "embers_of_the_world_tree": "世界樹の残火",
-            "lost_city_of_ungoro": "ウンゴロ最後の秘境"
+            "lost_city_of_ungoro": "ウンゴロ最後の秘境",
+            "across_the_timeways": "タイムウェイの旅人たち",
+            "day_of_rebirth": "再生の日"
         },
         "pack": {
             "classic": "クラシック",
@@ -211,7 +213,10 @@
             "golden-the-lost-city": "ゴールデン・ウンゴロ最後の秘境",
             "the-lost-city": "ウンゴロ最後の秘境",
             "the-lost-city-catch-up": "ウンゴロ最後の秘境・キャッチアップ",
-            "year-of-the-raptor": "ラプター年"
+            "year-of-the-raptor": "ラプター年",
+            "across-the-timeways": "タイムウェイの旅人たち",
+            "across-the-timeways-catch-up": "タイムウェイの旅人たち・キャッチアップ",
+            "golden-across-the-timeways": "ゴールデン・タイムウェイの旅人たち"
         },
         "ranks": {
             "constructed": {
@@ -374,7 +379,7 @@
             "controls": {
                 "bug-button-tooltip": "バグを報告",
                 "help-button-tooltip": "リリースノートを表示",
-                "website-button-tooltip": "ウェブサイトに移動する(プレミアムのみ)",
+                "website-button-tooltip": "Firestoneウェブサイト",
                 "default-confirmation-title": "よろしいですか？",
                 "default-confirmation-text": "この試合の間、トラッカーを閉じます",
                 "default-validation-button": "OK",
@@ -565,7 +570,9 @@
                 "header-discovered": "データポイント",
                 "header-deck-winrate-impact-tooltip": "このカードを含むデッキが、このクラスの全体的な平均勝率と比べ、どの程度良い/悪いパフォーマンスを発揮するかを表します",
                 "header-deck-winrate-impact": "影響",
-                "header-pickrate-high-wins-variable-tooltip": "地下闘技場で最低 {{value}}勝、もしくは通常闘技場で最低{{value2}}勝した挑戦においてのピック率です"
+                "header-pickrate-high-wins-variable-tooltip": "地下闘技場で最低 {{value}}勝、もしくは通常闘技場で最低{{value2}}勝した挑戦においてのピック率です",
+                "header-current-options": "現在のオプション",
+                "low-data-text": "データ不足。このカードは{{value}}試合でしか登場していないため、統計が不正確な可能性があります"
             },
             "class-tier-list": {
                 "header-hero-name": "名前",
@@ -902,7 +909,8 @@
                     "standard": "スタンダード",
                     "wild": "ワイルド",
                     "classic": "クラシック",
-                    "twist": "ツイスト"
+                    "twist": "ツイスト",
+                    "all-formats-tooltip": "全てのランク戦フォーマット(酒場の喧嘩とカジュアルを除く)"
                 },
                 "rank-category": {
                     "leagues": "ブロンズ・ダイヤモンド",
@@ -1112,8 +1120,8 @@
                         "discovered-winrate-header": "発見の勝率",
                         "discovered-winrate-impact-header-tooltip": "試合中にそのカードを発見できた場合の、デッキの勝率に対する平均勝率です",
                         "discovered-winrate-header-tooltip": "そのカードをゲーム中に発見できた場合の平均勝率です",
-                        "discovered-winrate-impact-tooltip-data": "このカードは{{value}}回発見されました",
-                        "discovered-winrate-impact-tooltip-low-data": "警告：このカードは{{value}}回しか発見/ドローされていません。よって、統計が不正確なことがあります",
+                        "discovered-winrate-impact-tooltip-data": "このカードは{{value}}回発見されました。統計には、レジェンド及びダイヤモンドランクの、全ての対戦相手に対する、このアーキタイプの情報を用いています",
+                        "discovered-winrate-impact-tooltip-low-data": "警告：このカードは{{value}}回しか発見/ドローされていません。よって、統計が不正確なことがあります。統計には、レジェンド及びダイヤモンドランクの、全ての対戦相手に対する、このアーキタイプの情報を用いています",
                         "play-coin-filter": {
                             "play": "先攻",
                             "all": "後攻",
@@ -2016,11 +2024,13 @@
                 "friend": "フレンド",
                 "legacy": "レガシー",
                 "premium": "プレミアム",
-                "premium-annual": "プレミアムサポーター"
+                "premium-annual": "プレミアムサポーター",
+                "premium-six-months": "プレミアムサポーター"
             },
             "periodicity": {
                 "monthly": "一ヶ月あたり",
-                "yearly": "一年あたり"
+                "yearly": "一年あたり",
+                "six-month": "六ヶ月分"
             },
             "title": "プレミアムプラン",
             "legacy-plan-text": "レガシープランは非推奨であり、将来のある時点でサポートを終了する予定です。他のプランへの移行をご検討ください。",
@@ -2042,7 +2052,10 @@
                 "monthly": "毎月の請求",
                 "yearly": "年間の請求",
                 "click-to-copy-code": "クリックしてデッキコードをクリップボードにコピー",
-                "yearly-coupon-text": "期間限定オファー！{{endDate}}まで、決済において下記のコードを使うと、追加で{{reduction}}の割引を受けられます"
+                "yearly-coupon-text": "期間限定オファー！{{endDate}}まで、決済において下記のコードを使うと、追加で{{reduction}}の割引を受けられます",
+                "six-month-subtext": "({{value}}% 割引)",
+                "six-month": "年に2回の請求",
+                "six-month-coupon-text": "期間限定オファー！{{endDate0}}まで、購入の際に以下のコードを使うと、追加で{{reduction}}の割引を受けられます："
             },
             "cant-subscribe-button": "サブスクライブできません",
             "cant-subscribe-tooltip": "すでに有効なプランがある間、他のプランにサブスクライブすることはできません。現在契約中のプランを解約し、有効期限が切れるまでお待ち下さい",
@@ -2272,7 +2285,7 @@
             "player": "対戦相手は前のターン{{value}}枚のカードを使用"
         },
         "bgs-gold-delta": {
-            "player": "次のターン、追加で{{value}}ゴールドを得て計{{maxValueText}} ゴールドになります。これらのカードの影響です：{{cards}}",
+            "player": "次のターン、追加で{{value}}ゴールドを得て、計{{maxValueText}} ゴールドになる",
             "up-to": "最大 {{maxValue}}",
             "card": "{{cardName}} (x{{count}})"
         },
@@ -2442,6 +2455,21 @@
         },
         "corpses": {
             "opponent": "対戦相手は今、{{value}}体の死体を持っている"
+        },
+        "eliza-goreblade": {
+            "opponent": "対戦相手のミニオンは追加で{{value}}の攻撃力を得る",
+            "player": "自分のミニオンは追加で{{value}}の攻撃力を得る"
+        },
+        "outcast": {
+            "opponent": "対戦相手はこの試合中{{value}}枚の異端カードを使用した",
+            "player": "この試合中、{{value}}枚の異端カードを使用した"
+        },
+        "kiljaeden": {
+            "player": "自分の「{{cardName}}」のステータス強化は+{{value}}/+{{value}}",
+            "opponent": "対戦相手の「{{cardName}}」のステータス強化は+{{value}}/+{{value}}"
+        },
+        "undead-died-since-last-turn": {
+            "player": "自分の前のターンより後に味方のアンデッドが死亡した。これにより、特定のカードの発見効果が有効になる"
         }
     },
     "loading": {
@@ -2725,6 +2753,10 @@
                 },
                 "toggle-button-locked-tooltip": "プレミアムユーザーはマリガンガイドやデッキの統計を閲覧できます。クリックしてプレミアム機能を開放！",
                 "toggle-button-tooltip": "デッキリストと詳細ビューを切り替えます"
+            },
+            "discover": {
+                "will-be-active": "アクティブ",
+                "will-be-active-tooltip": "このカードを選んだ場合、このカードの効果はこのターン中有効です"
             }
         },
         "stolen-tooltip": "対戦相手から盗んだ",
@@ -2901,7 +2933,9 @@
             "haunted-carapace-attack": "「幽鬼の甲殻」の攻撃",
             "haunted-carapace-health": "「幽鬼の甲殻」の体力",
             "haunted-carapace-attack-tooltip": "「幽鬼の甲殻」によって得られる追加の攻撃力です",
-            "haunted-carapace-health-tooltip": "「幽鬼の甲殻」によって得られる追加の体力です"
+            "haunted-carapace-health-tooltip": "「幽鬼の甲殻」によって得られる追加の体力です",
+            "select-trinket-placeholder": "装飾品を選択",
+            "gold-spent-this-game": "この試合中の消費ゴールド"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -3071,6 +3105,19 @@
                 "high-mmr-header-tooltip": "トッププレイヤーのみを考慮した値です",
                 "global-header-tooltip": "プレイヤー全体を考慮した値です",
                 "view-tips": "ヒントを見る"
+            },
+            "action-count": {
+                "apm-tooltip": "直近{{value}}秒間で計算された、一分間あたりの行動回数です",
+                "avg-apm-title": "平均APM",
+                "peak-apm-title": "最高APM",
+                "peak-apm-tooltip": "このターンの最高APM",
+                "close-cancel": "開いたままにする",
+                "close-ok": "閉じる",
+                "close-confirmation-text": "ウィジェットを閉じ、無効化します。設定から再度有効化することで、もう一度開くことができます",
+                "close-tooltip": "ウィジェットを閉じます",
+                "actions-title": "このターンのアクション",
+                "apm-title": "APM",
+                "avg-apm-tooltip": "このターンの平均APM"
             }
         },
         "post-match-stats": {
@@ -3299,7 +3346,9 @@
                 "checking-for-updates": "確認中…",
                 "checking-mod-for-updates": "{{modName}} を確認中",
                 "update-available": "このModの新しいバージョンが利用可能です。クリックして更新してください",
-                "update-disabled": "このModの新しいバージョンが利用可能ですが、ゲームを終了するまでインストールできません"
+                "update-disabled": "このModの新しいバージョンが利用可能ですが、ゲームを終了するまでインストールできません",
+                "need-to-close-game-warning": "Modのインストール/アンインストール/アップデート/有効化/無効化をする前に、ハースストーンを終了してください",
+                "installed-mods-description-2": "以下のModがインストールされています(アンインストールするには、{{path}}内の該当ファイルを削除してください)："
             },
             "third-party": {
                 "intro": "私たちは、あなたのデータがあなたのものであると信じています。 そして、あなたは他のサードパーティのウェブサイトにデータを同期させて、彼らを手助けすることができます。それによって私たちが報酬を受け取ることはありませんが、彼らが私たちを話題にだすことで、ある程度の露出を得ることができます :)",
@@ -3321,7 +3370,7 @@
                     "collection-synchronized": "コレクションが同期されました"
                 },
                 "d0nkey": {
-                    "pitch": "d0nkey.top は、ハースストーンの公式大会のデッキや、ストリーマーのデッキを集めたファンサイトで、誰でも簡単に面白いデッキを見つけることができます。d0nkey.top に同期することで、自分のデッキを視聴者と共有したり (配信者の場合)、d0nkey.top がより良いデータベースを構築し、コミュニティに無料のサービスを提供する手助けができます。d0nkey.top のサイトはこちら {{websiteLink}}",
+                    "pitch": "hsguru.com は、ハースストーンの公式大会のデッキや、ストリーマーのデッキを集めたファンサイトで、誰でも簡単に面白いデッキを見つけることができます。hsguru.com に同期することで、自分のデッキを視聴者と共有したり (配信者の場合)、d0nkey.top がより良いデータベースを構築し、コミュニティに無料のサービスを提供する手助けができます。hsguru.com のサイトはこちら {{websiteLink}}",
                     "website-link": "こちら",
                     "next": "hsguru.comと同期する場合、Firestoneはあなたの各試合を送信し、ウェブサイトの特定のセクションに表示されます (まだ開発中です)。試合のリプレイは、同時に配信している場合を除き、デフォルトで非公開になっています。設定方法は {{link}} を参照してください",
                     "instructions-page-link": "解説ページ",
@@ -3468,7 +3517,8 @@
                 "export-settings-button-tooltip": "設定をファイルに書き出します。別のコンピューターにインポートすることができます",
                 "import-settings-button-label": "設定をインポート",
                 "import-settings-button-tooltip": "設定をファイルからインポートします。他のコンピューターから書き出したファイルを使います",
-                "settings-title": "設定"
+                "settings-title": "設定",
+                "import-settings-button-confirmed-label": "設定をインポート"
             },
             "quests": {
                 "title": "クエスト",
@@ -3607,7 +3657,9 @@
                 "show-plagues-on-top-tooltip": "デスナイトの全ての疫病カードをデッキの一番上に表示し、目で追いやすくします",
                 "show-transformed-into-tooltip": "変身したカードをトラッカーに追加します",
                 "show-transformed-into-label": "変身したカードを表示",
-                "attack-counter-size": "攻撃力カウンターサイズ"
+                "attack-counter-size": "攻撃力カウンターサイズ",
+                "hand-sort-by-zone-order": "手札を引いた順で表示",
+                "hand-sort-by-zone-order-tooltip": "手札をゾーン順に並べます。これにより、手札のカードが引いた順番で表示されます"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
@@ -3873,7 +3925,15 @@
                     "dive-the-golakka-depths-label": "クエストマーロックパラディン",
                     "dive-the-golakka-depths-tooltip": "自分がクエスト「{{cardName}}」を達成した回数を表示します",
                     "dark-gifts-label": "悪夢の恵み",
-                    "dark-gifts-tooltip": "この対戦中に自分が使用した異なる悪魔の恵みの数を表示します"
+                    "dark-gifts-tooltip": "この対戦中に自分が使用した異なる悪魔の恵みの数を表示します",
+                    "outcast-label": "異端カード",
+                    "outcast-tooltip": "この試合中に使用した異端カードの数を表示します",
+                    "kiljaeden-label": "「{{cardName}}」",
+                    "eliza-goreblade-tooltip": "「{{cardName}}」による攻撃力ボーナスを表示します",
+                    "kiljaeden-tooltip": "「{{cardName}}」によるステータスボーナスを表示します",
+                    "undead-died-since-last-turn-tooltip": "発見したとき、選択肢に”自分の前のターンより後に味方のアンデッドが死んでいたら”という効果があったとき、その効果が有効であることを示すカウンターを表示します",
+                    "eliza-goreblade-label": "「{{cardName}}」",
+                    "undead-died-since-last-turn-label": "自分の前のターンより後に味方のアンデッドが死んだ"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -4056,7 +4116,7 @@
                 "minions-list-show-on-mouse-over-tooltip": "オフにした場合、ミニオンリストを表示するとき、酒場グレードのアイコンをクリックする必要があります",
                 "minions-list-show-on-mouse-over-confirmation": "分かりました。アイコンをクリックしたときのみミニオンの詳細を表示します",
                 "minions-list-group-minions-into-tribes-label": "関連するミニオンを種族に紐付ける",
-                "minions-list-group-minions-into-tribes-tooltip": "種族のないミニオンも関連する種族のセクションに含まれるようになります。たとえば、ソウルジャグラーは悪魔のセクションの下の方に表示されます",
+                "minions-list-group-minions-into-tribes-tooltip": "種族のないミニオンも、そのミニオンが関連する種族のセクションに含めます",
                 "minions-list-show-tribes-highlight-label": "種族を強調表示",
                 "minions-list-show-tribes-highlight-tooltip": "ボブの酒場の特定の種族のミニオンやキーワードを強調表示するボタンを追加します",
                 "minions-list-show-mechanics-highlight-label": "メカニズムの強調表示",
@@ -4126,7 +4186,12 @@
                 "show-tribe-colors-tooltip": "各ウィジェットを種族の色にします",
                 "show-tribe-colors-label": "種族の色を使用",
                 "minions-list-keep-in-bounds-label": "ゲーム画面内に収める",
-                "minions-list-keep-in-bounds-tooltip": "ミニオンリストがゲーム画面外にいかないようにします。もし配置したい場所にリストが配置できない場合、これをオフにしてください。"
+                "minions-list-keep-in-bounds-tooltip": "ミニオンリストがゲーム画面外にいかないようにします。もし配置したい場所にリストが配置できない場合、これをオフにしてください。",
+                "actions-counter": {
+                    "title": "APMカウンター",
+                    "enable-label": "APMカウンターを有効化",
+                    "enable-tooltip": "APMカウンターを有効化します。この機能では、そのターン中に何回行動したかを、APM(Action Per Minute,一分あたりの行動回数)として記録します"
+                }
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -4236,7 +4301,9 @@
                 "show-draft-tracker-impact-tooltip": "ドラフトトラッカーにおいて、全てのカードのデッキ勝率への影響を表示します",
                 "show-draft-tracker-pick-rate-tooltip": "ドラフトトラッカーにおいて、デッキの全てのカードのピック率の情報を表示します",
                 "show-impact-on-redraft-tooltip": "デッキからカードを削除するときのみ、影響やピック率の統計を表示します",
-                "show-impact-on-redraft": "デッキ編集時のみ統計を表示"
+                "show-impact-on-redraft": "デッキ編集時のみ統計を表示",
+                "show-current-options": "現在のオプションを表示",
+                "show-current-options-tooltip": "現在ドラフトトラッカーで提供されているカードを表示します。これにより、カードの操作や関連カードの確認などが簡単になります"
             },
             "menu": {
                 "general": "全般",
@@ -4974,6 +5041,12 @@
         "shield_mechs": "聖なる盾メカ",
         "ultraviolet_elementals": "ウルトラヴァイオレットエレメンタル",
         "rally_quilboar": "勝鬨キルボア",
-        "carapace_undead": "甲殻蘇生者アンデッド"
+        "carapace_undead": "甲殻蘇生者アンデッド",
+        "surveyor_quilboar": "測量士キルボア",
+        "handbuff_murloc": "ハンドバフマーロック",
+        "big_elementals": "ビッグエレメンタル",
+        "cycle_quilboar": "サイクルキルボア",
+        "rylak_quilboar": "ライラクキルボア",
+        "shield_quilboar": "聖盾キルボア"
     }
 }
