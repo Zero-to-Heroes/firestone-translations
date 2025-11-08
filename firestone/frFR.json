@@ -1438,8 +1438,8 @@
                         "special": "Spéciale"
                     },
                     "notes": {
-                        "basic": "Plus puissante avec un serviteur-jeton au départ, mais dépendante du magasin du tour 4. Aucun prérequis sur le pouvoir héroïque.",
-                        "fast-basic": "Plus puissante avec un serviteur-jeton au départ, mais dépendante du magasin du tour 4. Aucun prérequis sur le pouvoir héroïque.",
+                        "basic": "Plus puissante avec un token au départ, mais dépendante du magasin du tour 4. Aucun prérequis sur le pouvoir héroïque.",
+                        "fast-basic": "Plus puissante avec un token au départ, mais dépendante du magasin du tour 4. Aucun prérequis sur le pouvoir héroïque.",
                         "jeef": "Utilise l’économie du niveau de taverne 1 pour un début de partie flexible avec ses variations.",
                         "fast-jeef": "Utilise l’économie du niveau de taverne 1 pour un début de partie flexible avec ses variations. Monte de niveau rapidement.",
                         "slow-jeef": "Utilise l’économie du niveau de taverne 1 pour un début de partie flexible avec ses variations. Reste au niveau 2 pour stabiliser la troupe de guerre.",
@@ -1461,7 +1461,7 @@
                     },
                     "action": {
                         "buy": "Acheter",
-                        "buy-token": "Acheter un serviteur-jeton",
+                        "buy-token": "Acheter un token",
                         "roll": "Actualiser",
                         "sell": "Vendre",
                         "level": "Monter au niveau {{value}}",
@@ -1889,7 +1889,9 @@
         },
         "tavern-brawl": {
             "category": {
-                "meta": "Méta"
+                "meta": "Méta",
+                "overview": "Vue d’ensemble",
+                "personal-decks": "Decks perso"
             },
             "copy-deck-tooltip": "Cliquez pour copier un des decks les plus performants dans votre presse-papiers",
             "with-name": "Le Bras de fer de cette semaine est {{name}} (commencé le {{date}})",
@@ -2471,6 +2473,10 @@
         },
         "undead-died-since-last-turn": {
             "player": "Morts-vivants alliés morts après votre dernier tour, activant les effets de certaines des cartes que vous découvrez"
+        },
+        "rafaam-time": {
+            "player": "Vous avez joué {{unique}} cartes Rafaam différentes pendant cette partie ({{total}} en tout)",
+            "opponent": "Votre adversaire a joué {{unique}} cartes Rafaam différentes pendant cette partie ({{total}} en tout)"
         }
     },
     "loading": {
@@ -2772,7 +2778,8 @@
         "tourist": "Tourisme : {{className}}",
         "burns-in": "Brûlera dans {{value}}",
         "unknown-minion": "Serviteur inconnu",
-        "unknown-mechanics-card": "Carte inconnue avec {{mechanics}}"
+        "unknown-mechanics-card": "Carte inconnue avec {{mechanics}}",
+        "drawn-by": "Piochée par {{value}}"
     },
     "battlegrounds": {
         "menu": {
@@ -3786,7 +3793,9 @@
                 "opacity-title": "Opacité",
                 "hand-markers-title": "Marqueurs en main",
                 "known-decklist-label": "Charger les decks connus",
-                "known-decklist-tooltip": "Lorsque cette option est activée, le decktracker essaiera de charger le deck de l’adversaire au début de la partie s’il s'agit d’un deck connu (comme lors de la saison d’Imprévu Héroïsme de Mystifix)"
+                "known-decklist-tooltip": "Lorsque cette option est activée, le decktracker essaiera de charger le deck de l’adversaire au début de la partie s’il s'agit d’un deck connu (comme lors de la saison d’Imprévu Héroïsme de Mystifix)",
+                "sequence-info-tooltip": "Pour les cartes qui créent plusieurs cartes de la main de votre adversaire, affiche un indicateur pour vous aider à les distinguer",
+                "sequence-info-label": "Infos de séquence"
             },
             "your-deck": {
                 "ignore-decklist-label": "Ignorer le deck",
@@ -3947,7 +3956,9 @@
                     "undead-died-since-last-turn-tooltip": "Lorsque vous découvrez une carte, si l’une d’elles a l’effet « Mort-vivant allié mort après votre dernier tour », affiche une infobulle indiquant que l’effet sera actif",
                     "undead-died-since-last-turn-label": "Morts-vivants morts depuis votre dernier tour",
                     "kiljaeden-label": "{{cardName}}",
-                    "eliza-goreblade-label": "{{cardName}}"
+                    "eliza-goreblade-label": "{{cardName}}",
+                    "rafaam-time-tooltip": "Compte les cartes Rafaam que vous avez jouées pendant cette partie",
+                    "rafaam-time-label": "{{cardName}}"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -5051,7 +5062,60 @@
         "tog-warrior": "Guerrier Cire-Pilleur",
         "xl-odd-warrior": "Guerrier impair XL",
         "xl-taunt-warrior": "Guerrier Provocation XL",
-        "ashtongue-warlock": "Démoniste cendrelangue"
+        "ashtongue-warlock": "Démoniste cendrelangue",
+        "linecrackerdruid": "Druide brute forcenée",
+        "bbu-herenn-dk": "DK SSI Herenn",
+        "bbb-amalgam-dk": "DK sang amalgame",
+        "aggro-demon-hunter": "DH Aggro",
+        "bbu-menagerie-dk": "DK SSI ménagerie",
+        "bbu-quest-dk": "DK SSI Quête",
+        "bu-control-dk": "DK SI contrôle",
+        "blood-dk": "DK sang",
+        "ffu-herenn-dk": "DK GGI Herenn",
+        "peddler-dh": "DH colporteur",
+        "quest-dh": "DH Quête",
+        "huddle-up-druid": "Druide union parfaite",
+        "imbue-hunter": "Chasseur empreinte",
+        "quest-druid": "Druide Quête",
+        "quest-hunter": "Chasseur Quête",
+        "token-druid": "Druide token",
+        "dorian-rogue": "Voleur Dorian",
+        "quest-mage": "Mage Quête",
+        "quest-paladin": "Paladin Quête",
+        "quest-priest": "Prêtre Quête",
+        "quest-spell-mage": "Mage Quête Dégâts des sorts",
+        "terran-paladin": "Paladin Terrans",
+        "wilted-priest": "Prêtre ombre flétrie",
+        "animancer-warlock": "Démoniste animancienne",
+        "fyrakk-rogue": "Voleur Fyrakka",
+        "quest-rogue": "Voleur Quête",
+        "quest-shaman": "Chaman Quête",
+        "terran-shaman": "Chaman Terrans",
+        "bf-egglock": "Démoniste SG œuf",
+        "bf-quest-warlock": "Démoniste SG Quête",
+        "bfu-egglock": "Démoniste SGI œuf",
+        "ffu-egglock": "Démoniste GGI œuf",
+        "fu-animancer-warlock": "Démoniste GI animancienne",
+        "fu-concierge-warlock": "Démoniste GI réceptionniste",
+        "fu-egglock": "Démoniste GI œuf",
+        "fu-mill-warlock": "Démoniste GI meule",
+        "fu-quest-warlock": "Démoniste GI Quête",
+        "fu-starship-warlock": "Démoniste GI Vaisseau",
+        "fuu-starship-warlock": "Démoniste GII Vaisseau",
+        "f-egglock": "Démoniste G œuf",
+        "f-quest-warlock": "Démoniste G Quête",
+        "fuu-egglock": "Démoniste GII œuf",
+        "fuu-quest-warlock": "Démoniste GII Quête",
+        "u-animancer-warlock": "Démoniste I animancienne",
+        "u-concierge-warlock": "Démoniste I réceptionniste",
+        "u-egglock": "Démoniste I œuf",
+        "u-mill-warlock": "Démoniste I meule",
+        "u-starship-warlock": "Démoniste I Vaisseau",
+        "uu-quest-warlock": "Démoniste II Quête",
+        "briarspawn-warrior": "Guerrier drake ronceux",
+        "uu-wallow-warlock": "Démoniste II Saule",
+        "egg-warrior": "Démoniste œuf",
+        "quest-warrior": "Guerrier Quête"
     },
     "arena": {
         "overlay": {
