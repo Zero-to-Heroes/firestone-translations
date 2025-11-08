@@ -394,7 +394,7 @@
                 "supporter": "感謝你對我們的支持！你很酷:)",
                 "features-link": "點選檢視你將獲得的全部高階功能",
                 "unlock-text": "解鎖高階功能",
-                "cta-text": "立刻升級",
+                "cta-text": "即刻升級",
                 "unlock-subtext": "並移除全部廣告"
             },
             "graph": {
@@ -1112,7 +1112,7 @@
                         "discovered-winrate-impact-tooltip-low-data": "⚠️ - 此牌僅被發現或抽到過 {{value}} 次，因此統計資料可能不準確。此數據使用牌組原型在傳說階級頂尖與鑽石階級高階玩家賽局所有職業時的統計資料。",
                         "discovered-winrate-impact-tooltip-data": "此牌已被發現或抽到 {{value}} 次。此數據使用牌組原型在傳說階級頂尖與鑽石階級高階玩家賽局所有職業時的統計資料。",
                         "play-coin-filter": {
-                            "all": "後攻",
+                            "all": "所有行動次序",
                             "coin": "後攻",
                             "play": "先攻"
                         }
@@ -1727,7 +1727,7 @@
                 },
                 "deck": {
                     "all": "全部牌組",
-                    "deckstring-tooltip": "{{deckName}}（{{deckClass}}）， 最後使用於 {{lastPlayedDate}}"
+                    "deckstring-tooltip": "{{deckName}}({{deckClass}})， 上次使用({{lastPlayedDate}})"
                 },
                 "game-mode": {
                     "all": "全部模式",
@@ -1885,7 +1885,9 @@
         },
         "tavern-brawl": {
             "category": {
-                "meta": "環境趨勢"
+                "meta": "環境趨勢",
+                "personal-decks": "個人牌組",
+                "overview": "總覽"
             },
             "copy-deck-tooltip": "點選以將高勝率牌組複製到剪貼簿",
             "with-name": "本週的旅店大亂鬥是：{{name}} （開始於 {{date}}）",
@@ -1951,7 +1953,7 @@
             "overlay-toggle-label": "設定疊加層",
             "achievements-reset-button": "取消全部追蹤",
             "achievements-reset-button-tooltip": "取消追蹤全部成就並將其從螢幕上移除",
-            "achievements-progress": "{{current}} / {{max}}，{{thisGame}} 這場賽局"
+            "achievements-progress": "{{current}} / {{max}}，本場對戰：{{thisGame}}"
         },
         "profile": {
             "match-stats": {
@@ -2263,7 +2265,7 @@
         },
         "bgs-gold-delta": {
             "player": "下回合你將額外獲得 {{value}} 枚金幣 {{maxValueText}}",
-            "card": "「{{cardName}}」（共 {{count}} 張）",
+            "card": "「{{cardName}}」（{{count}} 次）",
             "up-to": "最高可達 {{maxValue}}"
         },
         "bgs-lord-of-gains": {
@@ -2447,6 +2449,10 @@
         "eliza-goreblade": {
             "player": "你的手下獲得 +{{value}} 攻擊力",
             "opponent": "對手的手下獲得 +{{value}} 攻擊力"
+        },
+        "rafaam-time": {
+            "player": "你在本賽局打出了 {{unique}} 張獨特的拉法姆（總計 {{total}} 張）",
+            "opponent": "對手在本賽局打出了 {{unique}} 張獨特的拉法姆（總計 {{total}} 張）"
         }
     },
     "loading": {
@@ -2748,7 +2754,8 @@
         "tourist": "遊客：{{className}}",
         "burns-in": "{{value}} 回合後捨棄",
         "unknown-minion": "未知手下",
-        "unknown-mechanics-card": "未知的 {{mechanics}} 機制卡牌"
+        "unknown-mechanics-card": "未知的 {{mechanics}} 機制卡牌",
+        "drawn-by": "被 {{value}} 抽取"
     },
     "battlegrounds": {
         "menu": {
@@ -3761,7 +3768,9 @@
                 "show-dk-runes-label": "顯示DK符文",
                 "group-cards-by-zone-tooltip": "啟用時，記牌器會將卡牌分成可摺疊的區段（牌堆、手牌和其他），藉此啟用一些新功能。關閉此項將會返回「傳統顯示模式」，屆時所有卡牌將集中在單一區段。",
                 "known-decklist-label": "載入已知的牌組佇列",
-                "known-decklist-tooltip": "啟用時，如果在賽局開始時已知牌組資訊，記牌器將嘗試載入當前對手的牌組列表（例如在玩《威茲邦的英雄們》扭曲模式時）"
+                "known-decklist-tooltip": "啟用時，如果在賽局開始時已知牌組資訊，記牌器將嘗試載入當前對手的牌組列表（例如在玩《威茲邦的英雄們》扭曲模式時）",
+                "sequence-info-tooltip": "一個指示器顯示「在對手手牌中被某張牌衍生多張不同的卡牌」，來幫助你識別哪張是哪張。",
+                "sequence-info-label": "順序資訊"
             },
             "your-deck": {
                 "ignore-decklist-label": "忽略牌組列表",
@@ -3920,7 +3929,9 @@
                     "undead-died-since-last-turn-tooltip": "當你在發現卡牌時，如果其中一張卡牌帶有「若友方不死族在你上回合結束後死亡」的效果，則會顯示一個計數器告知你該效果將可激活",
                     "kiljaeden-tooltip": "顯示「{{cardName}}」所提供的數值加成",
                     "eliza-goreblade-tooltip": "顯示「{{cardName}}」所提供的攻擊力加成",
-                    "eliza-goreblade-label": "「{{cardName}}」"
+                    "eliza-goreblade-label": "「{{cardName}}」",
+                    "rafaam-time-label": "{{cardName}}",
+                    "rafaam-time-tooltip": "追蹤你在本賽局打出的拉法姆次數。"
                 },
                 "discovery-zone-label": "發現區塊",
                 "discovery-zone-tooltip": "啟用後，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並突出顯示與牌堆的協同作用。"
@@ -5022,7 +5033,60 @@
         "wallow-warlock": "『惡樹』瓦洛術",
         "xl-uu-highlander-warlock": "40牌 UU無雙術",
         "xl-odd-warrior": "40牌 無限戰",
-        "ashtongue-warlock": "縛魂的灰舌術"
+        "ashtongue-warlock": "縛魂的灰舌術",
+        "bbu-herenn-dk": "BBU 海瑞恩DK",
+        "bbu-menagerie-dk": "BBU 動物園DK",
+        "bbu-quest-dk": "BBU 任務DK",
+        "bbb-amalgam-dk": "血魄聚合體DK",
+        "linecrackerdruid": "戰線擊破者德",
+        "bu-control-dk": "BU 控制DK",
+        "blood-dk": "血魄DK",
+        "ffu-herenn-dk": "FFU 海瑞恩DK",
+        "aggro-demon-hunter": "快攻惡魔獵人",
+        "peddler-dh": "靈魂販子DH",
+        "quest-dh": "任務DH",
+        "huddle-up-druid": "集合德",
+        "imbue-hunter": "注能獵",
+        "quest-druid": "任務德",
+        "quest-hunter": "任務獵",
+        "quest-mage": "任務法",
+        "quest-spell-mage": "任務法術法",
+        "token-druid": "鋪場德",
+        "dorian-rogue": "多里安賊",
+        "fyrakk-rogue": "菲拉卡賊",
+        "quest-paladin": "任務聖",
+        "quest-priest": "任務牧",
+        "terran-paladin": "星艦聖",
+        "wilted-priest": "枯萎魔影牧師",
+        "bf-egglock": "BF 蛋術",
+        "animancer-warlock": "動物法師術",
+        "bf-quest-warlock": "BF 任務術",
+        "bfu-egglock": "BFU 蛋術",
+        "quest-rogue": "任務賊",
+        "quest-shaman": "任務薩",
+        "terran-shaman": "星艦薩",
+        "ffu-egglock": "FFU 蛋術",
+        "fu-animancer-warlock": "FU 動物法師術",
+        "fu-concierge-warlock": "FU 接待員術",
+        "fu-egglock": "FU 蛋術",
+        "fu-mill-warlock": "FU 疲勞術",
+        "f-egglock": "冰霜蛋術",
+        "f-quest-warlock": "冰霜任務術",
+        "fu-quest-warlock": "FU 任務術",
+        "fu-starship-warlock": "FU 星艦術",
+        "fuu-egglock": "FUU 蛋術",
+        "fuu-quest-warlock": "FUU 任務術",
+        "fuu-starship-warlock": "FUU 星艦術",
+        "u-animancer-warlock": "穢邪動物法師術",
+        "u-concierge-warlock": "穢邪接待員術",
+        "u-egglock": "穢邪蛋術",
+        "briarspawn-warrior": "棘生飛龍戰",
+        "uu-quest-warlock": "雙穢邪任務術",
+        "uu-wallow-warlock": "雙穢邪瓦洛術",
+        "u-mill-warlock": "穢邪疲勞術",
+        "u-starship-warlock": "穢邪星艦術",
+        "egg-warrior": "蛋戰",
+        "quest-warrior": "任務戰"
     },
     "arena": {
         "overlay": {
