@@ -1889,7 +1889,9 @@
         },
         "tavern-brawl": {
             "category": {
-                "meta": "メタ"
+                "meta": "メタ",
+                "overview": "概要",
+                "personal-decks": "自分のデッキ"
             },
             "copy-deck-tooltip": "クリックして高勝率デッキのデッキコードをクリップボードにコピーします",
             "with-name": "今週の酒場の喧嘩: {{name}} ( {{date}} に開始)",
@@ -2055,7 +2057,8 @@
                 "yearly-coupon-text": "期間限定オファー！{{endDate}}まで、決済において下記のコードを使うと、追加で{{reduction}}の割引を受けられます",
                 "six-month-subtext": "({{value}}% 割引)",
                 "six-month": "年に2回の請求",
-                "six-month-coupon-text": "期間限定オファー！{{endDate0}}まで、購入の際に以下のコードを使うと、追加で{{reduction}}の割引を受けられます："
+                "six-month-coupon-text": "期間限定オファー！{{endDate0}}まで、購入の際に以下のコードを使うと、追加で{{reduction}}の割引を受けられます：",
+                "yearly-coupon-text-2": "{{expansionName}}のリリースを記念して、チェックアウト時に次のコードを入力すると、追加で{{reduction}}の割引を受けられます"
             },
             "cant-subscribe-button": "サブスクライブできません",
             "cant-subscribe-tooltip": "すでに有効なプランがある間、他のプランにサブスクライブすることはできません。現在契約中のプランを解約し、有効期限が切れるまでお待ち下さい",
@@ -2470,6 +2473,10 @@
         },
         "undead-died-since-last-turn": {
             "player": "自分の前のターンより後に味方のアンデッドが死亡した。これにより、特定のカードの発見効果が有効になる"
+        },
+        "rafaam-time": {
+            "player": "自分はこの試合中に{{unique}}体の異なるラファームを使用した(合計{{total}}体)",
+            "opponent": "対戦相手はこの試合中に{{unique}}体の異なるラファームを使用した(合計{{total}}体)"
         }
     },
     "loading": {
@@ -2771,7 +2778,8 @@
         "tourist": "観光客：{{className}}",
         "burns-in": "{{valyue}}ターンで燃える",
         "unknown-minion": "不明なミニオン",
-        "unknown-mechanics-card": "不明な{{mechanics}}カード"
+        "unknown-mechanics-card": "不明な{{mechanics}}カード",
+        "drawn-by": "「{{value}}」によりドロー"
     },
     "battlegrounds": {
         "menu": {
@@ -3784,7 +3792,9 @@
                 "opacity-title": "不透明度",
                 "hand-markers-title": "手札のマーク",
                 "known-decklist-label": "既知のデッキリストをロードする",
-                "known-decklist-tooltip": "有効にすると、対戦相手のデッキリストが既知の場合に、そのリストをロードします(例：ツイストで、「ウィズバンのヒーロー」シーズンをプレイしている時など)"
+                "known-decklist-tooltip": "有効にすると、対戦相手のデッキリストが既知の場合に、そのリストをロードします(例：ツイストで、「ウィズバンのヒーロー」シーズンをプレイしている時など)",
+                "sequence-info-label": "順序の情報",
+                "sequence-info-tooltip": "対戦相手が手札に複数の異なるカードを生成するカードを使用したとき、どれがどのカードであるかを識別するためのインジケーターを表示します"
             },
             "your-deck": {
                 "ignore-decklist-label": "デッキリストを無視",
@@ -3945,7 +3955,9 @@
                     "kiljaeden-tooltip": "「{{cardName}}」によるステータスボーナスを表示します",
                     "undead-died-since-last-turn-tooltip": "発見したとき、選択肢に”自分の前のターンより後に味方のアンデッドが死んでいたら”という効果があったとき、その効果が有効であることを示すカウンターを表示します",
                     "eliza-goreblade-label": "「{{cardName}}」",
-                    "undead-died-since-last-turn-label": "自分の前のターンより後に味方のアンデッドが死んだ"
+                    "undead-died-since-last-turn-label": "自分の前のターンより後に味方のアンデッドが死んだ",
+                    "rafaam-time-label": "「{{cardName}}」",
+                    "rafaam-time-tooltip": "試合中に自分が使用したラファーム達を記録します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -5000,7 +5012,60 @@
         "xl-seedlock": "XL悪魔の種ウォーロック",
         "tog-priest": "Togプリースト",
         "chad-warrior": "Chadウォリアー",
-        "xl-cta-paladin": "XL CTAパラディン"
+        "xl-cta-paladin": "XL CTAパラディン",
+        "bbu-menagerie-dk": "赤赤緑ミナジェリデスナイト",
+        "ffu-egglock": "青青緑卵ウォーロック",
+        "fu-mill-warlock": "青緑ミルウォーロック",
+        "fuu-quest-warlock": "青緑緑クエストウォーロック",
+        "fuu-starship-warlock": "青緑緑宇宙船ウォーロック",
+        "quest-druid": "クエストドルイド",
+        "quest-shaman": "クエストシャーマン",
+        "u-mill-warlock": "緑ミルウォーロック",
+        "aggro-demon-hunter": "アグロデーモンハンター",
+        "animancer-warlock": "アニマンサーウォーロック",
+        "bbu-herenn-dk": "赤赤緑ヘレンデスナイト",
+        "bbu-quest-dk": "赤赤緑クエストデスナイト",
+        "bf-egglock": "赤青卵ウォーロック",
+        "bf-quest-warlock": "赤青クエストウォーロック",
+        "bu-control-dk": "赤緑コントロールデスナイト",
+        "bbb-amalgam-dk": "赤融合体デスナイト",
+        "blood-dk": "赤デスナイト",
+        "dorian-rogue": "ドリアンローグ",
+        "ffu-herenn-dk": "青青緑ヘレンデスナイト",
+        "fu-animancer-warlock": "青緑アニマンサーウォーロック",
+        "fu-concierge-warlock": "青緑コンシェルジュウォーロック",
+        "fu-egglock": "青緑卵ウォーロック",
+        "fu-quest-warlock": "青緑クエストウォーロック",
+        "fu-starship-warlock": "青緑宇宙船ウォーロック",
+        "fuu-egglock": "青緑緑卵ウォーロック",
+        "bfu-egglock": "赤青緑卵ウォーロック",
+        "f-egglock": "青卵ウォーロック",
+        "f-quest-warlock": "青クエストウォーロック",
+        "fyrakk-rogue": "フィラークローグ",
+        "huddle-up-druid": "円陣ドルイド",
+        "imbue-hunter": "鼓舞ハンター",
+        "linecrackerdruid": "前線崩しドルイド",
+        "peddler-dh": "魂売人デーモンハンター",
+        "quest-dh": "クエストデーモンハンター",
+        "quest-hunter": "クエストハンター",
+        "quest-mage": "クエストメイジ",
+        "quest-paladin": "クエストパラディン",
+        "quest-priest": "クエストプリースト",
+        "quest-rogue": "クエストローグ",
+        "quest-spell-mage": "クエストスペルメイジ",
+        "terran-paladin": "テランパラディン",
+        "terran-shaman": "テランシャーマン",
+        "token-druid": "トークンドルイド",
+        "wilted-priest": "萎れた影プリースト",
+        "briarspawn-warrior": "ブライアースポーンウォリアー",
+        "uu-quest-warlock": "緑緑クエストウォーロック",
+        "uu-wallow-warlock": "緑緑ワロウウォーロック",
+        "egg-warrior": "卵ウォリアー",
+        "quest-warrior": "クエストウォリアー",
+        "u-animancer-warlock": "緑アニマンサーウォーロック",
+        "u-concierge-warlock": "緑コンシェルジュウォーロック",
+        "u-egglock": "緑卵ウォーロック",
+        "u-starship-warlock": "緑宇宙船ウォーロック"
     },
     "arena": {
         "overlay": {
