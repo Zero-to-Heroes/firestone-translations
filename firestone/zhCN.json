@@ -1889,7 +1889,9 @@
         },
         "tavern-brawl": {
             "category": {
-                "meta": "环境"
+                "meta": "环境",
+                "personal-decks": "个人套牌",
+                "overview": "概览"
             },
             "copy-deck-tooltip": "点击复制高胜率套牌到剪贴板",
             "with-name": "本周的乱斗模式是： {{name}} (开始于 {{date}} )",
@@ -2471,6 +2473,10 @@
         "eliza-goreblade": {
             "player": "你的随从拥有+{{value}}攻击力",
             "opponent": "对手的随从拥有+{{value}}攻击力"
+        },
+        "rafaam-time": {
+            "player": "你在本局对战中使用了{{unique}}个不同的拉法姆（共{{total}}个）",
+            "opponent": "对手在本局对战中使用了{{unique}}个不同的拉法姆（共{{total}}个）"
         }
     },
     "loading": {
@@ -2772,7 +2778,8 @@
         "tourist": "游客：{{className}}",
         "burns-in": "{{value}} 回合后弃掉",
         "unknown-minion": "未知随从",
-        "unknown-mechanics-card": "未知的{{mechanics}}机制卡牌"
+        "unknown-mechanics-card": "未知的{{mechanics}}机制卡牌",
+        "drawn-by": "由 {{value}} 抽取"
     },
     "battlegrounds": {
         "menu": {
@@ -3786,7 +3793,9 @@
                 "opacity-title": "透明度",
                 "hand-markers-title": "手牌标记",
                 "known-decklist-label": "加载已知卡牌列表",
-                "known-decklist-tooltip": "启用此功能，若在对局开始时知晓对手套牌详情，记牌器会自动加载当前对手的套牌（如幻变模式-“威兹班的英雄”）"
+                "known-decklist-tooltip": "启用此功能，若在对局开始时知晓对手套牌详情，记牌器会自动加载当前对手的套牌（如幻变模式-“威兹班的英雄”）",
+                "sequence-info-label": "顺序信息",
+                "sequence-info-tooltip": "对于在对手手牌中创建多张不同衍生卡的卡牌，显示一个指示器以帮助你识别它们"
             },
             "your-deck": {
                 "ignore-decklist-label": "忽略套牌内容",
@@ -3947,7 +3956,9 @@
                     "undead-died-since-last-turn-tooltip": "当发现一张卡牌时，若其中一张具有“在你的上回合之后有友方亡灵死亡”的效果，则展示一个计数器提示该效果能触发。",
                     "eliza-goreblade-tooltip": "显示{{cardName}}的额外攻击加成",
                     "kiljaeden-tooltip": "显示{{cardName}}的属性加成",
-                    "eliza-goreblade-label": "{{cardName}}"
+                    "eliza-goreblade-label": "{{cardName}}",
+                    "rafaam-time-label": "{{cardName}}",
+                    "rafaam-time-tooltip": "追踪你本局对战中使用过的拉法姆"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -5002,7 +5013,60 @@
         "tog-warrior": "托瓦格尔国王战",
         "xl-odd-warrior": "40-奇数战",
         "xl-taunt-warrior": "40-嘲讽战",
-        "ashtongue-warlock": "灰舌术"
+        "ashtongue-warlock": "灰舌术",
+        "linecrackerdruid": "阵线破坏者德",
+        "bbu-herenn-dk": "赫雷恩DK（红红绿）",
+        "bbu-menagerie-dk": "茶壶DK（红红绿）",
+        "bbb-amalgam-dk": "融合怪血DK",
+        "bbu-quest-dk": "任务DK（红红绿）",
+        "blood-dk": "血DK",
+        "bu-control-dk": "控制DK（红绿）",
+        "ffu-herenn-dk": "赫雷恩DK（蓝蓝绿）",
+        "aggro-demon-hunter": "快攻瞎",
+        "huddle-up-druid": "抱团德",
+        "imbue-hunter": "灌注猎",
+        "peddler-dh": "商贩瞎",
+        "quest-dh": "任务瞎",
+        "quest-druid": "任务德",
+        "token-druid": "铺场德",
+        "quest-hunter": "任务猎",
+        "quest-mage": "任务法",
+        "quest-paladin": "任务骑",
+        "quest-spell-mage": "任务法术法",
+        "terran-paladin": "人族骑",
+        "quest-priest": "任务牧",
+        "dorian-rogue": "多里安贼",
+        "fyrakk-rogue": "火龙贼",
+        "wilted-priest": "枯萎牧",
+        "quest-rogue": "任务贼",
+        "quest-shaman": "任务萨",
+        "bf-egglock": "蛋术（红蓝）",
+        "animancer-warlock": "动物术师术",
+        "terran-shaman": "人族萨",
+        "bf-quest-warlock": "任务术（红蓝）",
+        "bfu-egglock": "蛋术（红蓝绿）",
+        "f-egglock": "冰蛋术",
+        "ffu-egglock": "蛋术（蓝蓝绿）",
+        "f-quest-warlock": "冰任务术",
+        "fu-concierge-warlock": "礼宾术（蓝绿）",
+        "fu-animancer-warlock": "动物术师术（蓝绿）",
+        "fu-egglock": "蛋术（蓝绿）",
+        "fu-mill-warlock": "疲劳术（蓝绿）",
+        "fu-quest-warlock": "任务术（蓝绿）",
+        "fu-starship-warlock": "星舰术（蓝绿）",
+        "fuu-starship-warlock": "星舰术（蓝绿绿）",
+        "fuu-egglock": "蛋术（蓝绿绿）",
+        "fuu-quest-warlock": "任务术（蓝绿绿）",
+        "u-animancer-warlock": "邪动物术师术",
+        "u-concierge-warlock": "邪礼宾术",
+        "u-egglock": "邪蛋术",
+        "u-mill-warlock": "邪疲劳术",
+        "u-starship-warlock": "邪星舰术",
+        "uu-quest-warlock": "双邪任务术",
+        "uu-wallow-warlock": "双邪瓦洛术",
+        "briarspawn-warrior": "棘嗣幼龙战",
+        "egg-warrior": "蛋战",
+        "quest-warrior": "任务战"
     },
     "arena": {
         "overlay": {
