@@ -799,7 +799,11 @@
                 "pack-stat-tooltip": "Vous avez reçu {{totalPacks}} paquets {{packName}} depuis que vous avez commencé à jouer à Hearthstone",
                 "main-sets-group-name": "Ensembles principaux ({{totalPacks}})",
                 "non-buyable-group-name": "Paquets spéciaux ({{totalPacks}})",
-                "other-group-name": "Autres ({{totalPacks}})"
+                "other-group-name": "Autres ({{totalPacks}})",
+                "menu": {
+                    "pack-contents": "Meilleurs paquets",
+                    "stats": "Stats"
+                }
             },
             "set-stats": {
                 "title": "Stats de l’ensemble",
@@ -2477,6 +2481,12 @@
         "rafaam-time": {
             "player": "Vous avez joué {{unique}} cartes Rafaam différentes pendant cette partie ({{total}} en tout)",
             "opponent": "Votre adversaire a joué {{unique}} cartes Rafaam différentes pendant cette partie ({{total}} en tout)"
+        },
+        "bgs-undead-army": {
+            "player": "Vos Morts-vivants ont +{{value}} ATQ pendant cette partie"
+        },
+        "deep-blue": {
+            "player": "Vos cartes {{cardName}} donnent +{{atk}}/+{{health}}"
         }
     },
     "loading": {
@@ -2950,7 +2960,9 @@
             "goldrinn-attack": "ATQ de Goldrinn",
             "goldrinn-health": "PV de Goldrinn",
             "goldrinn-attack-tooltip": "L’ATQ supplémentaire donnée par Goldrinn pour le prochain combat uniquement",
-            "goldrinn-health-tooltip": "Les PV supplémentaires donnés par Goldrinn pour le prochain combat uniquement"
+            "goldrinn-health-tooltip": "Les PV supplémentaires donnés par Goldrinn pour le prochain combat uniquement",
+            "deep-blues": "Grand blues",
+            "deep-blues-tooltip": "Le nombre de grands blues que vous avez joués pendant cette partie"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3399,6 +3411,13 @@
                     "website-link": "ici",
                     "next": "Si vous décidez d'activer la synchronisation avec hearthstone-decks.net, Firestone leur enverra de façon anonyme chaque partie que vous jouez, avec quelques informations sur vos parties (code de deck, rang, résultats des parties).",
                     "toggle-label": "Synchroniser vos replays avec hearthstone-decks.net"
+                },
+                "hearthpwn": {
+                    "pitch": "Hearthpwn est un des plus gros sites de la communauté qui partage des decks, des articles et plus encore. En synchronisant votre collection avec le site, il est plus facile d’y trouver des decks à jouer et de consulter les stats de votre collection. Vous pouvez visiter le site {{websiteLink}}",
+                    "title": "Hearthpwn",
+                    "next": "Si vous décidez de synchroniser votre compte avec Hearthpwn, Firestone leur enverra les données de votre collection, afin que vous puissiez voir les stats de votre collection.",
+                    "toggle-label": "Synchroniser votre collection avec Hearthpwn",
+                    "website-link": "ici"
                 }
             },
             "bug-report": {
@@ -3608,7 +3627,9 @@
                 "grouped-counters-size": "Taille des compteurs groupés",
                 "size-tooltip": "Modifier la taille globale des widgets de l’application",
                 "counters-opacity-tooltip": "Modifier l’opacité des compteurs",
-                "use-grouped-counters-label": "Utiliser les compteurs groupés"
+                "use-grouped-counters-label": "Utiliser les compteurs groupés",
+                "card-tooltip-number-of-related-cards": "Nombre de cartes liées",
+                "card-tooltip-number-of-related-cards-tooltip": "Le nombre maximum de cartes liées à afficher en survolant la carte. Si le nombre de cartes liées dépasse ce nombre, un message générique indiquant le nombre de cartes liées sera affiché à la place."
             },
             "streamer": {
                 "battlegrounds": {
@@ -4222,7 +4243,11 @@
                     "title": "Compteur d’APM",
                     "enable-label": "Activer le compteur d’APM",
                     "enable-tooltip": "Active le compteur d’APM. Il compte le nombre d’actions effectuées sur le tour ainsi que vos APM (actions par minute)"
-                }
+                },
+                "counter-deep-blue": "Grand blues",
+                "counter-deep-blue-tooltip": "Affiche le buff actuel de vos grands blues",
+                "counter-undead-army-tooltip": "Affiche le buff d’ATQ total de vos Morts-vivants pendant cette partie",
+                "counter-undead-army-label": "Armée de Morts-vivants"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -5121,7 +5146,32 @@
         "briarspawn-warrior": "Guerrier drake ronceux",
         "uu-wallow-warlock": "Démoniste II Saule",
         "egg-warrior": "Démoniste œuf",
-        "quest-warrior": "Guerrier Quête"
+        "quest-warrior": "Guerrier Quête",
+        "arcane-mage": "Mage Arcanes",
+        "bbu-corpse-dk": "DK SSI cadavres",
+        "cliff-dive-dh": "DH saut de falaise",
+        "fff-herenn-dk": "DK givre Herenn",
+        "masochist-shaman": "Chaman masochiste",
+        "bfu-herenn-dk": "DK SGI Herenn",
+        "bu-handbuff-dk": "DK SI handbuff",
+        "bb-control-dk": "DK SS contrôle",
+        "bbb-talanji-dk": "DK sang Talanji",
+        "aura-paladin": "Paladin Aura",
+        "azshara-druid": "Druide Azshara",
+        "broxigar-dh": "DH Broxigar",
+        "deious-hunter": "Chasseur Déios",
+        "deious-paladin": "Paladin Déios",
+        "dragon-warrior": "Guerrier Dragons",
+        "xl-ffu-rafaamlock": "Démoniste GGI Rafaam",
+        "f-shredslock": "Démoniste G surfeur",
+        "hagatha-shaman": "Chaman Hagatha",
+        "handbuff-warrior": "Guerrier handbuff",
+        "krona-druid": "Druide Krona",
+        "no-hand-hunter": "Chaman sans main",
+        "no-minion-dh": "DH sans serviteur",
+        "octosari-dh": "DH Octosari",
+        "xl-rafaamlock": "Démoniste Rafaam",
+        "xl-uu-rafaamlock": "Démoniste II Rafaam"
     },
     "arena": {
         "overlay": {
