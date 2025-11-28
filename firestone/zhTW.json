@@ -796,7 +796,11 @@
                 "pack-stat-tooltip": "自你開始玩爐石戰記以來，你已收到 {{totalPacks}}包「{{packName}}」卡牌包",
                 "main-sets-group-name": "主系列（{{totalPacks}}）",
                 "non-buyable-group-name": "特殊包（{{totalPacks}}）",
-                "other-group-name": "其他（{{totalPacks}}）"
+                "other-group-name": "其他（{{totalPacks}}）",
+                "menu": {
+                    "pack-contents": "精選卡包",
+                    "stats": "統計資料"
+                }
             },
             "set-stats": {
                 "title": "拓展包統計",
@@ -1673,7 +1677,7 @@
                     "neutral-hero": "牌組代碼不支援於用中立珍藏寶藏的中立英雄（職業珍藏寶藏可以正常運作）",
                     "loe-hero": "牌組代碼不支援於新的探險者協會英雄"
                 },
-                "card-offering-rate-tooltip": "此詞條的提供率（意味著*如果向你提供此詞條時*， 你會有幾趴(%)機率得到此卡牌）",
+                "card-offering-rate-tooltip": "卡牌在此卡池內的提供機率（這表示：如果系統向你提供此卡池的選項，你將有幾趴(%)的機率被提供這張卡牌）",
                 "or": "或",
                 "import-deck-button-title": "匯入牌組",
                 "import-deck-button-tooltip": "匯入已複製的牌組代碼。 你仍然需要手動揀選你的英雄能力和珍藏寶藏，因為它們不是牌組代碼的一部分",
@@ -2453,6 +2457,12 @@
         "rafaam-time": {
             "player": "你在本賽局打出了 {{unique}} 張獨特的拉法姆（總計 {{total}} 張）",
             "opponent": "對手在本賽局打出了 {{unique}} 張獨特的拉法姆（總計 {{total}} 張）"
+        },
+        "bgs-undead-army": {
+            "player": "你的不死族在本場對戰中獲得 +{{value}} 點攻擊力"
+        },
+        "deep-blue": {
+            "player": "你的「{{cardName}}」 賦予 +{{atk}}/+{{health}}"
         }
     },
     "loading": {
@@ -2926,7 +2936,9 @@
             "goldrinn-health-tooltip": "「『巨狼先祖』戈德林」為下一次戰鬥提供的額外生命值",
             "goldrinn-attack": "「『巨狼先祖』戈德林」攻擊力",
             "goldrinn-health": "「『巨狼先祖』戈德林」生命值",
-            "goldrinn-attack-tooltip": "「『巨狼先祖』戈德林」為下一次戰鬥提供的額外攻擊力"
+            "goldrinn-attack-tooltip": "「『巨狼先祖』戈德林」為下一次戰鬥提供的額外攻擊力",
+            "deep-blues": "深情藍調",
+            "deep-blues-tooltip": "你在本場對戰中施放了多少張深情藍調"
         },
         "hero-stats": {
             "finishes-title": "完賽數",
@@ -3310,13 +3322,13 @@
             "third-party": {
                 "intro": "我們堅信你的資料歸您所有，你理應能夠將其同步到其他第三方網站，協助他們發揮最大的價值。雖然我們並未因此獲取任何報酬，但這有助於提升我們的曝光度，因為他們會為我們宣傳 😊",
                 "vs": {
-                    "pitch": "Vicious Syndicate 會利用數千場賽局的數據，並結合頂尖玩家的見解，建立每週趨勢報告。你可以造訪他們的網站 **{{websiteLink}}**",
-                    "website-link": "這裡",
+                    "pitch": "Vicious Syndicate 會利用數千場賽局的數據，並結合頂尖玩家的見解，建立每週趨勢報告。你可以造訪他們的網站 — {{websiteLink}}",
+                    "website-link": "「這裡」",
                     "next": "如果你決定協助 vS 資料收割者報告（vS Data Reaper Report），Firestone 將會匿名傳送你的賽局資訊給他們（大多是每個玩家所使用的卡牌以及一些主要資料，像是玩家排名賽）。",
                     "toggle-label": "協助 vS 資料收割者報告（vS Data Reaper Report）"
                 },
                 "ooc": {
-                    "website-link": "這裡",
+                    "website-link": "「這裡」",
                     "toggle-label": "牌庫同步後顯示通知",
                     "connect-button-text": "連結",
                     "disconnect-button-text": "斷開連結",
@@ -3328,7 +3340,7 @@
                 },
                 "d0nkey": {
                     "pitch": "hsguru.com 是一個《爐石戰記》的粉絲網站，它會收集所有來自官方賽事以及知名實況主所使用的牌組，讓大家都能輕鬆找到有趣的牌組來遊玩。同步到 hsguru.com 將可以讓你跟觀眾分享你的牌組（如果你是實況主），或者協助他們建立更完善的資料庫，以便為社群提供更多免費服務。你可以造訪他們的網站： {{websiteLink}}",
-                    "website-link": "這裡",
+                    "website-link": "「這裡」",
                     "next": "如果你決定同步到 hsguru.com，Firestone 將會把你遊玩的每場賽局都傳送給他們，這些賽局將會顯示在網站的一個特定區塊（目前仍在建構中）。重播紀錄預設為私人狀態，除非你同時進行實況。請參閱 {{link}} 以瞭解如何完成所有設定。",
                     "instructions-page-link": "說明頁",
                     "toggle-label": "將你的重播同步到 hsguru.com",
@@ -3336,9 +3348,16 @@
                 },
                 "hsdecks": {
                     "pitch": "Hearthstone-decks.net 分享在 High Legend 中玩過的全部傳統模式、新聞和文章的牌組。你可以拜訪他們 {{websiteLink}}",
-                    "website-link": "這裡",
+                    "website-link": "「這裡」",
                     "next": "如果你決定同步到 hearthstone-decks.net，Firestone 會向他們傳送你匿名玩的每場賽局以及有關你遊戲的一些資訊（牌組代碼、排名、賽局結果）",
                     "toggle-label": "將你的重播同步到 hearthstone-decks.net"
+                },
+                "hearthpwn": {
+                    "toggle-label": "將你的收藏同步至 Hearthpwn",
+                    "pitch": "Hearthpwn 是最大的社群網站之一，分享牌組、文章與更多資訊。將你的卡牌收藏同步到該網站，將更輕鬆地找到可玩的牌組，並查看你的收藏統計資料。你可以前往他們的網站 — {{websiteLink}}",
+                    "website-link": "「「這裡」」",
+                    "title": "Hearthpwn",
+                    "next": "如果你決定同步至 Hearthpwn，Firestone 會將你的收藏資料傳送給他們，讓你可以檢視收藏的統計資料。"
                 }
             },
             "bug-report": {
@@ -3360,7 +3379,7 @@
                 "todo-1": "1. 在你的頻道安裝Firestone Twitch擴充程式",
                 "todo-2": "2. 點選下方按鈕以連結你的Twitch帳戶至Firestone",
                 "todo-3": "3. 調整你的選項： ",
-                "link": "這裡",
+                "link": "「這裡」",
                 "login-button-text": "使用Twitch登入",
                 "logout-button-text": "中斷連結",
                 "logged-in-as-text": "登入身份：",
@@ -3419,7 +3438,7 @@
                 "text-1": "應用程式的翻譯由社群協力完成，他們就像您一樣，慷慨地投入時間與心力，讓所有人都能以自己選擇的語言使用此應用程式。因此，請您享受並尊重他們的成果。",
                 "text-11": "這也意味著並非整個程式都會被翻譯。所以缺少翻譯的部分會用英文代替。",
                 "text-2": "如果你想幫忙翻譯這個程式，請檢閱說明。 {{link}}",
-                "link": "這裡",
+                "link": "「這裡」",
                 "text-3": "請重新啟動應用程式以確保變更為新語言（右鍵點選系統匣中的 Firestone 圖示）。"
             },
             "data": {
@@ -3512,7 +3531,7 @@
                 "instructions": "請閱讀 {{link}} 以了解全部必要的詳細資訊。",
                 "refresh-engine": "重新整理引擎",
                 "installed-mods-description": "安裝了以下模組（刪除「爐石戰記」／「模組」中的相應檔案即可卸載）：",
-                "warning": "⚠️：模組會修改遊戲本身的行為方式，因此可能違反遊戲的服務條款，並有可能導致你的帳戶被封鎖，儘管我尚未聽聞過這類的案例。下方列出的模組是*我個人認為*可以安全使用的，但風險仍須由使用者自行承擔。",
+                "warning": "⚠️⚠️：模組會修改遊戲本身的行為方式，因此可能違反遊戲的服務條款，並有可能導致你的帳戶被封鎖，儘管我尚未聽聞過這類的案例。下方列出的模組是『我個人認為』可以安全使用的，但風險仍須由使用者自行承擔。",
                 "installed-mods-description-2": "目前已安裝以下模組（刪除 {{path}} 中對應的檔案即可解除安裝）：",
                 "need-to-close-game-warning": "你必須先關閉《爐石戰記》，才能安裝／解除安裝／更新，或啟用／停用模組。"
             },
@@ -3583,7 +3602,9 @@
                 "counters-opacity-tooltip": "調整所有應用程式計數器的不透明度",
                 "use-grouped-counters-label": "使用分組計數器",
                 "grouped-counters-size": "分組計數器大小",
-                "use-grouped-counters-tooltip": "將所有計數器（你和對手的計數器）分組在單一精簡的列表中"
+                "use-grouped-counters-tooltip": "將所有計數器（你和對手的計數器）分組在單一精簡的列表中",
+                "card-tooltip-number-of-related-cards-tooltip": "在卡牌提示視窗中顯示的相關卡牌的最大數量。如果相關卡牌數量超過此數值，你將會看到一個顯示相關卡牌總數的通用訊息",
+                "card-tooltip-number-of-related-cards": "相關卡牌的數量"
             },
             "streamer": {
                 "battlegrounds": {
@@ -4193,7 +4214,11 @@
                     "title": "APM 計數器",
                     "enable-label": "啟用 APM 計數器",
                     "enable-tooltip": "啟用 APM 計數器。此功能會追蹤你本回合採取的動作次數，以及你的 APM（每分鐘動作）"
-                }
+                },
+                "counter-deep-blue": "深情藍調",
+                "counter-deep-blue-tooltip": "顯示深情藍調目前的增益數值",
+                "counter-undead-army-tooltip": "顯示你的不死族在本場對戰中獲得的攻擊力增益總計。",
+                "counter-undead-army-label": "不死大軍"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
@@ -5092,7 +5117,32 @@
         "u-mill-warlock": "穢邪疲勞術",
         "u-starship-warlock": "穢邪星艦術",
         "egg-warrior": "蛋戰",
-        "quest-warrior": "任務戰"
+        "quest-warrior": "任務戰",
+        "arcane-mage": "秘法.法",
+        "aura-paladin": "光環.聖",
+        "bbu-corpse-dk": "BBU 屍體.DK",
+        "bfu-herenn-dk": "BFU 海瑞恩.DK",
+        "cliff-dive-dh": "跳崖運動.惡魔獵人",
+        "f-shredslock": "冰霜殘片.術",
+        "broxigar-dh": "布洛克斯.惡魔獵人",
+        "bb-control-dk": "鮮血控制.DK",
+        "bbb-talanji-dk": "鮮血塔蘭姬.DK",
+        "bu-handbuff-dk": "BU 手牌加加.DK",
+        "fff-herenn-dk": "冰霜海瑞恩.DK",
+        "azshara-druid": "艾薩拉.德",
+        "deious-hunter": "狡詐.獵",
+        "krona-druid": "克隆娜.德",
+        "no-hand-hunter": "無手牌.獵",
+        "no-minion-dh": "無手下.惡魔獵人",
+        "octosari-dh": "『八爪巨怪』.惡魔獵人",
+        "deious-paladin": "狡詐.聖",
+        "xl-ffu-rafaamlock": "FFU 拉法姆.術",
+        "hagatha-shaman": "哈嘉薩.薩",
+        "masochist-shaman": "受虐狂.薩",
+        "dragon-warrior": "龍類.戰",
+        "xl-rafaamlock": "拉法姆.術",
+        "xl-uu-rafaamlock": "穢邪拉法姆.術",
+        "handbuff-warrior": "手牌加加.戰"
     },
     "arena": {
         "overlay": {
