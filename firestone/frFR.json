@@ -1221,7 +1221,7 @@
                     "all-time": "Depuis toujours"
                 },
                 "tier": {
-                    "all-tiers": "Tous les niveaux",
+                    "all-tiers": "Tous les niveaux de taverne",
                     "tier": "Niveau {{value}}"
                 },
                 "tribe": {
@@ -1413,7 +1413,10 @@
                 "header-card-details": "Carte",
                 "card-search-placeholder": "Rechercher...",
                 "header-impact": "Impact",
-                "header-impact-tooltip": "En moyenne, de combien la position finale change lorsque cette carte est jouée"
+                "header-impact-tooltip": "En moyenne, de combien la position finale change lorsque cette carte est jouée",
+                "header-card-image": "Taverne",
+                "tavern-tier": "Niveau de taverne {{value}}",
+                "impact-hidden-tooltip": "Veuillez sélectionner un tour spécifique dans le menu déroulant ci-dessus pour montrer quel impact a le fait de jouer cette carte à ce tour"
             },
             "bgs-tier-list": {
                 "header": "Tierlist des quêtes ({{value}} parties) "
@@ -1697,7 +1700,8 @@
                 "import-deck-button-title": "Importer un deck",
                 "import-deck-button-tooltip": "Importez le code de deck actuellement dans votre presse-papiers. Vous devrez toujours choisir manuellement le pouvoir héroïque et le trésor spécial, car ils ne font pas partie du code du deck",
                 "missing-dust-tooltip": "Il vous manque {{value}} poussières pour créer ce deck",
-                "part-of-multiple-buckets-tooltip": "Cette carte est présente dans {{ value }} sélections différentes"
+                "part-of-multiple-buckets-tooltip": "Cette carte est présente dans {{ value }} sélections différentes",
+                "export-deckcode-tooltip": "Copier le code du deck dans le presse-papiers"
             },
             "empty-state": {
                 "title": "Rien ici pour le moment",
@@ -2487,6 +2491,10 @@
         },
         "deep-blue": {
             "player": "Vos cartes {{cardName}} donnent +{{atk}}/+{{health}}"
+        },
+        "cards-drawn-this-turn": {
+            "player": "Vous avez pioché {{value}} cartes pendant ce tour",
+            "opponent": "Votre adversaire a pioché {{value}} cartes pendant ce tour"
         }
     },
     "loading": {
@@ -3491,7 +3499,9 @@
                     "bottom-left": "En bas à gauche"
                 },
                 "show-notification": "Afficher les notifications Windows",
-                "show-notification-tooltip": "Afficher une notification Windows lorsque c’est votre tour, ou lorsque la phase de recrutement commence dans Champs de bataille"
+                "show-notification-tooltip": "Afficher une notification Windows lorsque c’est votre tour, ou lorsque la phase de recrutement commence dans Champs de bataille",
+                "close-to-tray-tooltip": "Fermer l’application dans la barre d’état système plutôt que de la quitter. Non recommandé, car fermer complètement l’application permet que les ressources soient régulièrement renouvelées.",
+                "close-to-tray-label": "Réduire dans la barre d’état"
             },
             "localization": {
                 "title": "Localisation",
@@ -3985,7 +3995,9 @@
                     "kiljaeden-label": "{{cardName}}",
                     "eliza-goreblade-label": "{{cardName}}",
                     "rafaam-time-tooltip": "Compte les cartes Rafaam que vous avez jouées pendant cette partie",
-                    "rafaam-time-label": "{{cardName}}"
+                    "rafaam-time-label": "{{cardName}}",
+                    "cards-drawn-this-turn-label": "Cartes piochées pendant ce tour",
+                    "cards-drawn-this-turn-tooltip": "Affiche le nombre de cartes que vous avez piochées pendant ce tour"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -5167,7 +5179,7 @@
         "hagatha-shaman": "Chaman Hagatha",
         "handbuff-warrior": "Guerrier handbuff",
         "krona-druid": "Druide Krona",
-        "no-hand-hunter": "Chaman sans main",
+        "no-hand-hunter": "Chasseur sans main",
         "no-minion-dh": "DH sans serviteur",
         "octosari-dh": "DH Octosari",
         "xl-rafaamlock": "Démoniste Rafaam",
