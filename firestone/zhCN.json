@@ -799,7 +799,11 @@
                 "pack-stat-tooltip": "这个账号获得过\n{{packName}}\n共计 {{totalPacks}} 包",
                 "main-sets-group-name": "主扩展包（{{totalPacks}}）",
                 "non-buyable-group-name": "特殊卡包（{{totalPacks}}）",
-                "other-group-name": "其他（{{totalPacks}}）"
+                "other-group-name": "其他（{{totalPacks}}）",
+                "menu": {
+                    "stats": "统计数据",
+                    "pack-contents": "最佳卡牌包"
+                }
             },
             "set-stats": {
                 "title": "扩展包统计数据",
@@ -2477,6 +2481,12 @@
         "rafaam-time": {
             "player": "你在本局对战中使用了{{unique}}个不同的拉法姆（共{{total}}个）",
             "opponent": "对手在本局对战中使用了{{unique}}个不同的拉法姆（共{{total}}个）"
+        },
+        "bgs-undead-army": {
+            "player": "你的亡灵在本局对战中获得+{{value}}攻击力"
+        },
+        "deep-blue": {
+            "player": "你的{{cardName}}获得+{{atk}}/+{{health}}"
         }
     },
     "loading": {
@@ -2950,7 +2960,9 @@
             "goldrinn-attack": "戈德林攻击力",
             "goldrinn-health": "戈德林生命值",
             "goldrinn-attack-tooltip": "巨狼戈德林为下一次战斗提供的额外攻击力",
-            "goldrinn-health-tooltip": "巨狼戈德林为下一次战斗提供的额外生命值"
+            "goldrinn-health-tooltip": "巨狼戈德林为下一次战斗提供的额外生命值",
+            "deep-blues": "深情蓝调",
+            "deep-blues-tooltip": "你在本局对战中施放了多少次深情蓝调"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -3399,6 +3411,13 @@
                     "website-link": "此处",
                     "next": "如果您决定同步到hearthstone-decks.net，Firestone 将向他们匿名发送一些关于您的游戏信息 (套牌代码、排名、对战结果等)",
                     "toggle-label": "同步您的回放到 hearthstone-decks.net"
+                },
+                "hearthpwn": {
+                    "pitch": "Hearthpwn 是最大的分享卡组、文章等内容的社区网站之一。将您的卡牌收藏同步到该网站可以更轻松地找到可玩的套牌并查看您收藏的统计数据。您可以访问他们的网站 {{websiteLink}}",
+                    "title": "Hearthpwn",
+                    "next": "如果您决定同步到 Hearthpwn，Firestone 将向他们发送您的收藏数据，以便您可以查看收藏的统计信息。",
+                    "toggle-label": "将你的收藏同步到 Hearthpwn",
+                    "website-link": "这里"
                 }
             },
             "bug-report": {
@@ -3608,7 +3627,9 @@
                 "counters-opacity-tooltip": "修改所有应用程序计数器的不透明度",
                 "use-grouped-counters-label": "使用分组计数器",
                 "use-grouped-counters-tooltip": "将所有计数器（你和对手的计数器）组合到一个紧凑的列表中",
-                "grouped-counters-size": "分组计数器尺寸"
+                "grouped-counters-size": "分组计数器尺寸",
+                "card-tooltip-number-of-related-cards": "相关卡牌的数量",
+                "card-tooltip-number-of-related-cards-tooltip": "在卡牌提示中显示相关卡牌的最大数量。如果卡牌数量超过此数值，你将看到一个包含相关卡牌数量的通用信息。"
             },
             "streamer": {
                 "battlegrounds": {
@@ -4222,7 +4243,11 @@
                     "title": "APM（每分钟操作数）计数器",
                     "enable-label": "启用APM计数器",
                     "enable-tooltip": "启用APM计数器。该功能将追踪您在本回合中执行的操作次数，并记录您的APM（每分钟操作次数）。"
-                }
+                },
+                "counter-deep-blue": "深情蓝调",
+                "counter-deep-blue-tooltip": "显示你的深情蓝调的当前增益值",
+                "counter-undead-army-tooltip": "显示你的亡灵在本局对战中的攻击总增益",
+                "counter-undead-army-label": "亡灵大军"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -5072,7 +5097,32 @@
         "uu-wallow-warlock": "双邪瓦洛术",
         "briarspawn-warrior": "棘嗣幼龙战",
         "egg-warrior": "蛋战",
-        "quest-warrior": "任务战"
+        "quest-warrior": "任务战",
+        "bb-control-dk": "控制血DK",
+        "bbb-talanji-dk": "塔兰吉血DK",
+        "fff-herenn-dk": "赫雷恩冰DK",
+        "bbu-corpse-dk": "残骸DK（红红绿）",
+        "bfu-herenn-dk": "赫雷恩DK（彩虹）",
+        "bu-handbuff-dk": "污手DK（红绿）",
+        "azshara-druid": "艾萨拉德",
+        "broxigar-dh": "布洛克斯加瞎",
+        "cliff-dive-dh": "跳水瞎",
+        "krona-druid": "克洛纳德",
+        "no-minion-dh": "无随从瞎",
+        "octosari-dh": "八爪巨怪瞎",
+        "deious-hunter": "狡诈猎",
+        "arcane-mage": "奥术法",
+        "aura-paladin": "光环骑",
+        "no-hand-hunter": "空手猎",
+        "f-shredslock": "冰残片术",
+        "hagatha-shaman": "哈加莎萨",
+        "masochist-shaman": "受虐萨",
+        "deious-paladin": "狡诈骑",
+        "xl-ffu-rafaamlock": "拉法姆术（蓝蓝绿）",
+        "xl-rafaamlock": "拉法姆术",
+        "dragon-warrior": "龙战",
+        "handbuff-warrior": "污手战",
+        "xl-uu-rafaamlock": "邪拉法姆术"
     },
     "arena": {
         "overlay": {
