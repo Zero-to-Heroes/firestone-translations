@@ -1409,7 +1409,10 @@
                 "card-search-placeholder": "搜尋卡牌...",
                 "header-impact-tooltip": "平均打出這張牌時，最終名次會發生多少變化",
                 "header-impact": "影響",
-                "player-data-points": "{{value}}"
+                "player-data-points": "{{value}}",
+                "header-card-image": "旅店",
+                "tavern-tier": "{{value}} ⭐️",
+                "impact-hidden-tooltip": "請在上方的下拉選單中選擇特定的回合，以顯示在該回合打出這張卡牌所造成的影響"
             },
             "bgs-tier-list": {
                 "header": "任務強度列表（{{value}} 場賽局） "
@@ -1682,7 +1685,8 @@
                 "import-deck-button-title": "匯入牌組",
                 "import-deck-button-tooltip": "匯入已複製的牌組代碼。 你仍然需要手動揀選你的英雄能力和珍藏寶藏，因為它們不是牌組代碼的一部分",
                 "missing-dust-tooltip": "缺少 {{value}} 魔塵來製作牌組",
-                "part-of-multiple-buckets-tooltip": "此卡牌存在於 {{ value }} 個不同的詞條中"
+                "part-of-multiple-buckets-tooltip": "此卡牌存在於 {{ value }} 個不同的詞條中",
+                "export-deckcode-tooltip": "複製牌組代碼到剪貼簿"
             },
             "empty-state": {
                 "title": "尚未有任何內容",
@@ -2463,6 +2467,10 @@
         },
         "deep-blue": {
             "player": "你的「{{cardName}}」 賦予 +{{atk}}/+{{health}}"
+        },
+        "cards-drawn-this-turn": {
+            "player": "你在本回合中抽到了 {{value}} 張卡牌",
+            "opponent": "對手在本回合中抽到了 {{value}} 張卡牌"
         }
     },
     "loading": {
@@ -3431,7 +3439,9 @@
                     "top-right": "↗️右上角"
                 },
                 "show-notification-tooltip": "在你的回合時，或是在英雄戰場（BG）的招募階段開始時，顯示 Windows 通知",
-                "show-notification": "顯示 Windows 通知"
+                "show-notification": "顯示 Windows 通知",
+                "close-to-tray-tooltip": "關閉應用程式時，縮小到系統匣而非完全退出。不建議使用此功能，因為完全關閉應用程式是確保資源定期釋放的好方法。",
+                "close-to-tray-label": "縮小到系統匣"
             },
             "localization": {
                 "title": "在地化",
@@ -3958,7 +3968,9 @@
                     "eliza-goreblade-tooltip": "顯示「{{cardName}}」所提供的攻擊力加成",
                     "eliza-goreblade-label": "「{{cardName}}」",
                     "rafaam-time-label": "{{cardName}}",
-                    "rafaam-time-tooltip": "追蹤你在本賽局打出的拉法姆次數。"
+                    "rafaam-time-tooltip": "追蹤你在本賽局打出的拉法姆次數。",
+                    "cards-drawn-this-turn-label": "本回合抽牌張數",
+                    "cards-drawn-this-turn-tooltip": "顯示你在本回合中抽到的卡牌張數"
                 },
                 "discovery-zone-label": "發現區塊",
                 "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並突出顯示與牌堆的協同作用。"
