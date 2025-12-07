@@ -799,7 +799,11 @@
                 "pack-stat-tooltip": "ハースストーンを始めてから {{totalPacks}} 個の {{packName}} のパックを入手しました",
                 "main-sets-group-name": "通常パック ({{totalPacks}} 個)",
                 "non-buyable-group-name": "特殊パック ({{totalPacks}} 個)",
-                "other-group-name": "その他 ({{totalPacks}} 個)"
+                "other-group-name": "その他 ({{totalPacks}} 個)",
+                "menu": {
+                    "pack-contents": "最高のパック",
+                    "stats": "統計"
+                }
             },
             "set-stats": {
                 "title": "セット統計",
@@ -1217,7 +1221,7 @@
                     "all-time": "全期間"
                 },
                 "tier": {
-                    "all-tiers": "全てのTier",
+                    "all-tiers": "全ての酒場Tier",
                     "tier": "Tier {{value}}"
                 },
                 "tribe": {
@@ -1409,7 +1413,10 @@
                 "header-card-details": "カード",
                 "card-search-placeholder": "カードを検索…",
                 "header-impact-tooltip": "このカードをプレイしたとき、平均して最終順位がどれくらい変化するかを示します",
-                "header-impact": "影響"
+                "header-impact": "影響",
+                "impact-hidden-tooltip": "上のドロップダウンから特定のターンを選択すると、そのターンにそのカードをプレイした場合の影響が表示されます",
+                "header-card-image": "酒場",
+                "tavern-tier": "酒場グレード{{value}}"
             },
             "bgs-tier-list": {
                 "header": "クエストTierリスト ({{value}} 試合) "
@@ -1693,7 +1700,8 @@
                 "import-deck-button-title": "デッキをインポート",
                 "import-deck-button-tooltip": "現在クリップボードにあるデッキコードをインポートします。 デッキコードに含まれていなければ、ヒーローパワーと愛用の宝物を手動で選択する必要があります",
                 "missing-dust-tooltip": "デッキを作るには {{value}} 魔素不足しています",
-                "part-of-multiple-buckets-tooltip": "このカードは {{ value }} 個の異なるバケットに存在しています"
+                "part-of-multiple-buckets-tooltip": "このカードは {{ value }} 個の異なるバケットに存在しています",
+                "export-deckcode-tooltip": "クリップボードにデッキコードをコピー"
             },
             "empty-state": {
                 "title": "まだ何もありません",
@@ -2056,7 +2064,7 @@
                 "click-to-copy-code": "クリックしてデッキコードをクリップボードにコピー",
                 "yearly-coupon-text": "期間限定オファー！{{endDate}}まで、決済において下記のコードを使うと、追加で{{reduction}}の割引を受けられます",
                 "six-month-subtext": "({{value}}% 割引)",
-                "six-month": "年に2回の請求",
+                "six-month": "6ヶ月ごとの請求",
                 "six-month-coupon-text": "期間限定オファー！{{endDate0}}まで、購入の際に以下のコードを使うと、追加で{{reduction}}の割引を受けられます：",
                 "yearly-coupon-text-2": "{{expansionName}}のリリースを記念して、チェックアウト時に次のコードを入力すると、追加で{{reduction}}の割引を受けられます"
             },
@@ -2477,6 +2485,16 @@
         "rafaam-time": {
             "player": "自分はこの試合中に{{unique}}体の異なるラファームを使用した(合計{{total}}体)",
             "opponent": "対戦相手はこの試合中に{{unique}}体の異なるラファームを使用した(合計{{total}}体)"
+        },
+        "bgs-undead-army": {
+            "player": "この試合中、自分のアンデッドは追加で{{value}}の攻撃力を得る"
+        },
+        "deep-blue": {
+            "player": "自分の「{{cardName}}」は+{{atk}}/+{{health}}を与える"
+        },
+        "cards-drawn-this-turn": {
+            "player": "このターンカードを{{value}}枚引いた",
+            "opponent": "このターン、対戦相手はカードを{{value}}枚引いた"
         }
     },
     "loading": {
@@ -2950,7 +2968,9 @@
             "goldrinn-attack": "ゴルドリンの攻撃力",
             "goldrinn-attack-tooltip": "ゴルドリンの効果で、次の戦闘のみに付与される追加の攻撃力です",
             "goldrinn-health": "ゴルドリンの体力",
-            "goldrinn-health-tooltip": "ゴルドリンの効果で、次の戦闘のみに付与される追加の体力です"
+            "goldrinn-health-tooltip": "ゴルドリンの効果で、次の戦闘のみに付与される追加の体力です",
+            "deep-blues": "ディープブルース",
+            "deep-blues-tooltip": "この試合中に使用したディープブルースの数です"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -3398,6 +3418,13 @@
                     "website-link": "こちら",
                     "next": "Hearthstone-decks.netに同期する場合、Firestoneは匿名であなたのプレイする試合のデッキコード、ランク試合結果などを送信します",
                     "toggle-label": "リプレイをheartstone-decks.netと同期"
+                },
+                "hearthpwn": {
+                    "title": "Hearthpwn",
+                    "next": "Hearthpwn に同期する場合、Firestone はコレクションのデータを Hearthpwn に送信するので、コレクションで統計情報を表示できます",
+                    "toggle-label": "Hearthpwnにコレクションを同期",
+                    "website-link": "こちら",
+                    "pitch": "Hearthpwnは、デッキや記事などを共有する最大級のコミュニティウェブサイトの一つです。カードコレクションをこのサイトに同期すると、プレイするデッキを見つけたり、コレクションの統計情報を確認したりするのが簡単になります。{{websiteLink}}からアクセスできます"
                 }
             },
             "bug-report": {
@@ -3471,7 +3498,9 @@
                     "top-right": "右上"
                 },
                 "show-notification": "Windowsの通知を表示",
-                "show-notification-tooltip": "ターン開始時、もしくはバトグラの雇用フェーズ開始時にWindowsの通知を表示します"
+                "show-notification-tooltip": "ターン開始時、もしくはバトグラの雇用フェーズ開始時にWindowsの通知を表示します",
+                "close-to-tray-label": "トレイに収納",
+                "close-to-tray-tooltip": "アプリを終了する代わりに、タスクトレイに収納します。アプリを終了することは、リソースを適切に解放するのに有効であるため、この設定は推奨されません"
             },
             "localization": {
                 "title": "ローカライズ",
@@ -3534,7 +3563,7 @@
                 "import-settings-button-label": "設定をインポート",
                 "import-settings-button-tooltip": "設定をファイルからインポートします。他のコンピューターから書き出したファイルを使います",
                 "settings-title": "設定",
-                "import-settings-button-confirmed-label": "設定をインポート"
+                "import-settings-button-confirmed-label": "設定がインポートされました"
             },
             "quests": {
                 "title": "クエスト",
@@ -3607,7 +3636,9 @@
                 "grouped-counters-size": "グループ化カウンターのサイズ",
                 "size-tooltip": "アプリの全てのウィジェットのサイズを変更します",
                 "counters-opacity-tooltip": "アプリの全てのカウンターの透明度を変更します",
-                "use-grouped-counters-label": "グループ化カウンターを使用"
+                "use-grouped-counters-label": "グループ化カウンターを使用",
+                "card-tooltip-number-of-related-cards": "関連するカードの数",
+                "card-tooltip-number-of-related-cards-tooltip": "ツールチップの関連するカードに表示されるカード枚数の最大数です。この数値を超える場合、関連するカードを表示する代わりにその枚数を示す汎用メッセージが表示されます"
             },
             "streamer": {
                 "battlegrounds": {
@@ -3963,7 +3994,9 @@
                     "eliza-goreblade-label": "「{{cardName}}」",
                     "undead-died-since-last-turn-label": "自分の前のターンより後に味方のアンデッドが死んだ",
                     "rafaam-time-label": "「{{cardName}}」",
-                    "rafaam-time-tooltip": "試合中に自分が使用したラファーム達を記録します"
+                    "rafaam-time-tooltip": "試合中に自分が使用したラファーム達を記録します",
+                    "cards-drawn-this-turn-label": "このターンに引いたカード",
+                    "cards-drawn-this-turn-tooltip": "このターンに引いたカードの枚数を表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -4221,7 +4254,11 @@
                     "title": "APMカウンター",
                     "enable-label": "APMカウンターを有効化",
                     "enable-tooltip": "APMカウンターを有効化します。この機能では、そのターン中に何回行動したかを、APM(Action Per Minute,一分あたりの行動回数)として記録します"
-                }
+                },
+                "counter-undead-army-tooltip": "アンデッドの攻撃力の合計バフ量を表示します",
+                "counter-undead-army-label": "アンデッド軍団",
+                "counter-deep-blue": "ディープブルース",
+                "counter-deep-blue-tooltip": "現在のディープブルースのバフ量を表示します"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -5071,7 +5108,32 @@
         "u-animancer-warlock": "緑アニマンサーウォーロック",
         "u-concierge-warlock": "緑コンシェルジュウォーロック",
         "u-egglock": "緑卵ウォーロック",
-        "u-starship-warlock": "緑宇宙船ウォーロック"
+        "u-starship-warlock": "緑宇宙船ウォーロック",
+        "cliff-dive-dh": "クリフダイビングデーモンハンター",
+        "xl-ffu-rafaamlock": "青青緑ラファームウォーロック",
+        "f-shredslock": "青シュレッダーウォーロック",
+        "no-hand-hunter": "ノーハンドハンター",
+        "no-minion-dh": "ノーミニオンデーモンハンター",
+        "bbb-talanji-dk": "赤タランジデスナイト",
+        "bbu-corpse-dk": "赤赤緑死体デスナイト",
+        "bfu-herenn-dk": "赤青緑ヘレンデスナイト",
+        "bb-control-dk": "赤コントロールデスナイト",
+        "bu-handbuff-dk": "赤緑ハンドバフデスナイト",
+        "broxigar-dh": "ブロキシガーデーモンハンター",
+        "fff-herenn-dk": "青ヘレンデスナイト",
+        "azshara-druid": "アズシャラドルイド",
+        "deious-hunter": "デイオスハンター",
+        "krona-druid": "クローナドルイド",
+        "octosari-dh": "オクトサリデーモンハンター",
+        "deious-paladin": "デイオスパラディン",
+        "arcane-mage": "魔力メイジ",
+        "aura-paladin": "オーラパラディン",
+        "hagatha-shaman": "ハガサシャーマン",
+        "masochist-shaman": "ムラディンシャーマン",
+        "dragon-warrior": "ドラゴンウォリアー",
+        "xl-uu-rafaamlock": "緑ラファームウォーロック",
+        "handbuff-warrior": "ハンドバフウォリアー",
+        "xl-rafaamlock": "ラファームウォーロック"
     },
     "arena": {
         "overlay": {
