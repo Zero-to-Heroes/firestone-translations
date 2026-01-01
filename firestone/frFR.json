@@ -1255,7 +1255,8 @@
                 },
                 "card-type": {
                     "minion": "Serviteurs",
-                    "spell": "Sorts"
+                    "spell": "Sorts",
+                    "timewarped": "Cartes chronodistordues"
                 },
                 "comps": {
                     "all-comps": "Toutes les compos"
@@ -1416,7 +1417,9 @@
                 "header-impact-tooltip": "En moyenne, de combien la position finale change lorsque cette carte est jouée",
                 "header-card-image": "Taverne",
                 "tavern-tier": "Niveau de taverne {{value}}",
-                "impact-hidden-tooltip": "Veuillez sélectionner un tour spécifique dans le menu déroulant ci-dessus pour montrer quel impact a le fait de jouer cette carte à ce tour"
+                "impact-hidden-tooltip": "Veuillez sélectionner un tour spécifique dans le menu déroulant ci-dessus pour montrer quel impact a le fait de jouer cette carte à ce tour",
+                "major-timewarped-tier": "Chronodistorsion majeure",
+                "minor-timewarped-tier": "Chronodistorsion mineure"
             },
             "bgs-tier-list": {
                 "header": "Tierlist des quêtes ({{value}} parties) "
@@ -1488,7 +1491,8 @@
                     "first-percent": "Puissance",
                     "expert-difficulty": "Difficulté",
                     "expert-difficulty-tooltip": "Difficulté (selon les avis d’experts)",
-                    "first-percent-tooltip": "Reflète le pourcentage de tous les top 1 obtenus avec cette composition, avec certains ajustements pour prendre en compte divers biais."
+                    "first-percent-tooltip": "Reflète le pourcentage de tous les top 1 obtenus avec cette composition, avec certains ajustements pour prendre en compte divers biais.",
+                    "recommended-cards": "Cartes recommandées"
                 },
                 "contributors": {
                     "info": "Combine des données pures et des informations fournies par les meilleurs joueurs et joueuses de Champs de bataille.",
@@ -1820,7 +1824,9 @@
                 "bgs-prizes-tooltip": "Les Prix de Sombrelune étaient disponibles",
                 "bgs-anomalies-tooltip": "Anomalie dans cette partie : {{value}}",
                 "watch-replay-online-button-tooltip": "Voir le replay en ligne (ouvre une fenêtre de votre navigateur)",
-                "watch-replay-online-button": "Navigateur"
+                "watch-replay-online-button": "Navigateur",
+                "battle-tag-copied": "Battletag copié dans le presse-papiers !",
+                "click-to-copy": "Cliquez pour copier"
             },
             "class-icon-toggle": {
                 "label": "Icônes de classes",
@@ -2484,7 +2490,8 @@
         },
         "rafaam-time": {
             "player": "Vous avez joué {{unique}} cartes Rafaam différentes pendant cette partie ({{total}} en tout)",
-            "opponent": "Votre adversaire a joué {{unique}} cartes Rafaam différentes pendant cette partie ({{total}} en tout)"
+            "opponent": "Votre adversaire a joué {{unique}} cartes Rafaam différentes pendant cette partie ({{total}} en tout)",
+            "title": "Cartes Rafaam"
         },
         "bgs-undead-army": {
             "player": "Vos Morts-vivants ont +{{value}} ATQ pendant cette partie"
@@ -2495,6 +2502,15 @@
         "cards-drawn-this-turn": {
             "player": "Vous avez pioché {{value}} cartes pendant ce tour",
             "opponent": "Votre adversaire a pioché {{value}} cartes pendant ce tour"
+        },
+        "bgs-rightmost-buff": {
+            "player": "Le serviteur le plus à droite de la taverne a +{{atk}}/+{{health}}"
+        },
+        "volumizer-buff": {
+            "player": "Vos volumateurs ont +{{atk}}/+{{health}} pendant cette partie"
+        },
+        "dragoncaller-alanna": {
+            "player": "Vous avez joué {{value}} sorts coûtant (5) cristaux ou plus pendant cette partie"
         }
     },
     "loading": {
@@ -2970,7 +2986,11 @@
             "goldrinn-attack-tooltip": "L’ATQ supplémentaire donnée par Goldrinn pour le prochain combat uniquement",
             "goldrinn-health-tooltip": "Les PV supplémentaires donnés par Goldrinn pour le prochain combat uniquement",
             "deep-blues": "Grand blues",
-            "deep-blues-tooltip": "Le nombre de grands blues que vous avez joués pendant cette partie"
+            "deep-blues-tooltip": "Le nombre de grands blues que vous avez joués pendant cette partie",
+            "volumizer-attack-buff-tooltip": "L’ATQ supplémentaire donnée par vos volumateurs",
+            "volumizer-attack-buff": "Buff d’ATQ des volumateurs",
+            "volumizer-health-buff": "Buff de PV des volumateurs",
+            "volumizer-health-buff-tooltip": "Les PV supplémentaires données par vos volumateurs"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3101,7 +3121,9 @@
                         "how-to-play": "Comment la jouer",
                         "author": "Conseils fournis par {{author}}",
                         "when-to-commit": "Quand y aller"
-                    }
+                    },
+                    "recommended-cards-header-tooltip": "Meilleures cartes à avoir dans la composition, même celle-ci est toujours viable sans elles",
+                    "recommended-cards-header": "Cartes recommandées"
                 }
             },
             "quests": {
@@ -3349,7 +3371,7 @@
                 "appearance": "Apparence",
                 "admin": "Admin",
                 "widgets": "Widgets",
-                "streamer": "Streameur/euse"
+                "streamer": "Stream"
             },
             "mods": {
                 "title": "Mods",
@@ -3639,7 +3661,10 @@
                 "counters-opacity-tooltip": "Modifier l’opacité des compteurs",
                 "use-grouped-counters-label": "Utiliser les compteurs groupés",
                 "card-tooltip-number-of-related-cards": "Nombre de cartes liées",
-                "card-tooltip-number-of-related-cards-tooltip": "Le nombre maximum de cartes liées à afficher en survolant la carte. Si le nombre de cartes liées dépasse ce nombre, un message générique indiquant le nombre de cartes liées sera affiché à la place."
+                "card-tooltip-number-of-related-cards-tooltip": "Le nombre maximum de cartes liées à afficher en survolant la carte. Si le nombre de cartes liées dépasse ce nombre, un message générique indiquant le nombre de cartes liées sera affiché à la place.",
+                "counters-widgets-size": "Taille des widgets compteurs",
+                "counters-widgets-size-tooltip": "Modifie la taille des widgets qui apparaissent en passant la souris sur certains compteurs, comme la liste des cartes Rafaam",
+                "help-tooltip-size": "Taille des infobulles"
             },
             "streamer": {
                 "battlegrounds": {
@@ -3712,8 +3737,12 @@
                 "show-transformed-into-label": "Afficher les transformations",
                 "show-transformed-into-tooltip": "Ajoute dans le decktracker les cartes en lesquelles d’autres cartes ont été transformées",
                 "attack-counter-size": "Taille du compteur d’ATQ",
-                "hand-sort-by-zone-order": "Main : tri par zone",
-                "hand-sort-by-zone-order-tooltip": "Trie la main selon l’ordre dans lequel les cartes ont été piochées"
+                "hand-sort-by-zone-order": "Main/Plateau : tri par zone",
+                "hand-sort-by-zone-order-tooltip": "Trie la main et le plateau selon l’ordre dans lequel les cartes y sont apparues",
+                "weapons-play-order-tooltip": "Inclut également les armes dans l’ordre de jeu",
+                "show-hero-power-in-board-zone": "Afficher le pouvoir héroïque dans la zone Plateau",
+                "show-hero-power-in-board-zone-tooltip": "Affiche le pouvoir héroïque dans la zone Plateau, ce qui permet d’afficher les cartes liées/générées au survol, et de mettre des cartes en surbrillance.",
+                "weapons-play-order": "Ordre de jeu des armes"
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
@@ -3832,7 +3861,8 @@
                 "current-effects-label": "Afficher les effets en cours",
                 "current-effects-use-enchantment-name-label": "Utiliser le nom de l’enchantement",
                 "current-effects-tooltip": "Lorsque cette option est activée, une nouvelle section apparaît en haut du decktracker, qui affiche les effets en cours sur les joueurs et joueuses, ainsi que leur deck",
-                "current-effects-use-enchantment-name-tooltip": "Lorsque cette option est activée, le nom de l’enchantement est utilisé plutôt que le nom de la carte"
+                "current-effects-use-enchantment-name-tooltip": "Lorsque cette option est activée, le nom de l’enchantement est utilisé plutôt que le nom de la carte",
+                "width-title": "Largeur"
             },
             "your-deck": {
                 "ignore-decklist-label": "Ignorer le deck",
@@ -3997,7 +4027,9 @@
                     "rafaam-time-tooltip": "Compte les cartes Rafaam que vous avez jouées pendant cette partie",
                     "rafaam-time-label": "{{cardName}}",
                     "cards-drawn-this-turn-label": "Cartes piochées pendant ce tour",
-                    "cards-drawn-this-turn-tooltip": "Affiche le nombre de cartes que vous avez piochées pendant ce tour"
+                    "cards-drawn-this-turn-tooltip": "Affiche le nombre de cartes que vous avez piochées pendant ce tour",
+                    "dragoncaller-alanna-label": "Mande-dragon Alanna",
+                    "dragoncaller-alanna-tooltip": "Affiche le nombre de sorts coûtant (5) cristaux ou plus que vous avez lancés pendant la partie"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -4259,7 +4291,17 @@
                 "counter-deep-blue": "Grand blues",
                 "counter-deep-blue-tooltip": "Affiche le buff actuel de vos grands blues",
                 "counter-undead-army-tooltip": "Affiche le buff d’ATQ total de vos Morts-vivants pendant cette partie",
-                "counter-undead-army-label": "Armée de Morts-vivants"
+                "counter-undead-army-label": "Armée de Morts-vivants",
+                "minions-list-show-timewarped-label": "Afficher les cartes chronodistordues",
+                "minions-list-show-all-mechanics-tooltip": "Étend l’onglet Pouvoirs pour afficher tous les mots-clés supportés",
+                "minions-list-show-single-tier-label": "Afficher la recherche",
+                "minions-list-show-all-mechanics-label": "Afficher tous les mots-clés",
+                "minions-list-show-timewarped-tooltip": "Lorsque des chronodistorsions sont dans la partie, affiche les cartes chronodistordues dans la liste des cartes.",
+                "minions-list-show-single-tier-tooltip": "Ajoute un bouton de recherche qui permet de filtrer les cartes par leur nom/texte.",
+                "counter-volumizer-buff-tooltip": "Affiche le buff d’ATQ/PV de vos volumateurs",
+                "counter-rightmost-tooltip": "Affiche le buff donné au serviteur le plus à droite de la taverne",
+                "counter-rightmost-label": "Buff du serviteur à droite",
+                "counter-volumizer-buff-label": "Buff des volumateurs"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -5242,6 +5284,19 @@
         "cycle_quilboar": "Hurans cycle",
         "rylak_quilboar": "Hurans Rylak",
         "surveyor_quilboar": "Hurans surveillant",
-        "shield_quilboar": "Hurans Boucliers"
+        "shield_quilboar": "Hurans Boucliers",
+        "eudora_pirates": "Pirates Eudora",
+        "evoker_dragons": "Dragons évocateur",
+        "frogger_beasts": "Bêtes sauteur",
+        "nomi_elementals": "Élémentaires Nomi",
+        "volumizer_mechs": "Mécas volumateurs",
+        "apm_pirate": "Pirates APM",
+        "avenge_dragons": "Dragons Vengeance",
+        "boost_shop_quilboar": "Hurans boost de taverne",
+        "lord_of_gains_nagas": "Nagas seigneur des gains",
+        "refresh_elementals": "Élémentaires actualisations",
+        "scam": "Scam",
+        "self_damage_beasts": "Bêtes auto-dégâts",
+        "tier_2_ballers": "Modeleurs niveau 2"
     }
 }
