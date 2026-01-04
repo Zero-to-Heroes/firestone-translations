@@ -1255,7 +1255,8 @@
                 },
                 "card-type": {
                     "minion": "ミニオン",
-                    "spell": "呪文"
+                    "spell": "呪文",
+                    "timewarped": "時渡カード"
                 },
                 "comps": {
                     "all-comps": "全ての構成"
@@ -1416,7 +1417,9 @@
                 "header-impact": "影響",
                 "impact-hidden-tooltip": "上のドロップダウンから特定のターンを選択すると、そのターンにそのカードをプレイした場合の影響が表示されます",
                 "header-card-image": "酒場",
-                "tavern-tier": "酒場グレード{{value}}"
+                "tavern-tier": "酒場グレード{{value}}",
+                "major-timewarped-tier": "上級時渡",
+                "minor-timewarped-tier": "下級時渡"
             },
             "bgs-tier-list": {
                 "header": "クエストTierリスト ({{value}} 試合) "
@@ -1488,7 +1491,8 @@
                     "first-percent": "パワー",
                     "first-percent-tooltip": "様々な偏りを考慮して調整した、この構成で達成された全ての1位の割合を反映しています",
                     "core-cards": "重要カード",
-                    "expert-difficulty": "難易度"
+                    "expert-difficulty": "難易度",
+                    "recommended-cards": "推奨カード"
                 },
                 "contributors": {
                     "text": "構成とヒントは、バトルグラウンドのトッププレイヤーによって作成されています",
@@ -1820,7 +1824,9 @@
                 "bgs-prizes-tooltip": "ダークムーンの景品が利用可能でした",
                 "bgs-anomalies-tooltip": "この試合の異常は{{value}}",
                 "watch-replay-online-button": "ブラウザで",
-                "watch-replay-online-button-tooltip": "リプレイをオンライで見る(ブラウザの新しいウィンドウを開きます)"
+                "watch-replay-online-button-tooltip": "リプレイをオンライで見る(ブラウザの新しいウィンドウを開きます)",
+                "battle-tag-copied": "バトルタグをクリップボードにコピー",
+                "click-to-copy": "クリックしてコピー"
             },
             "class-icon-toggle": {
                 "label": "クラスアイコンを使用",
@@ -2484,7 +2490,8 @@
         },
         "rafaam-time": {
             "player": "自分はこの試合中に{{unique}}体の異なるラファームを使用した(合計{{total}}体)",
-            "opponent": "対戦相手はこの試合中に{{unique}}体の異なるラファームを使用した(合計{{total}}体)"
+            "opponent": "対戦相手はこの試合中に{{unique}}体の異なるラファームを使用した(合計{{total}}体)",
+            "title": "ラファーム達"
         },
         "bgs-undead-army": {
             "player": "この試合中、自分のアンデッドは追加で{{value}}の攻撃力を得る"
@@ -2495,6 +2502,15 @@
         "cards-drawn-this-turn": {
             "player": "このターンカードを{{value}}枚引いた",
             "opponent": "このターン、対戦相手はカードを{{value}}枚引いた"
+        },
+        "bgs-rightmost-buff": {
+            "player": "酒場の右端のミニオンは+{{atk}}/+{{health}}を得る"
+        },
+        "volumizer-buff": {
+            "player": "自分の爆音器は、この試合中+{{atk}}/+{{health}} を得る"
+        },
+        "dragoncaller-alanna": {
+            "player": "この試合中、5コスト以上の呪文を{{value}}回使用した"
         }
     },
     "loading": {
@@ -2970,7 +2986,11 @@
             "goldrinn-health": "ゴルドリンの体力",
             "goldrinn-health-tooltip": "ゴルドリンの効果で、次の戦闘のみに付与される追加の体力です",
             "deep-blues": "ディープブルース",
-            "deep-blues-tooltip": "この試合中に使用したディープブルースの数です"
+            "deep-blues-tooltip": "この試合中に使用したディープブルースの数です",
+            "volumizer-attack-buff-tooltip": "自分の爆音器が与える追加の攻撃力",
+            "volumizer-health-buff-tooltip": "自分の爆音器が与える追加の体力",
+            "volumizer-attack-buff": "爆音器の攻撃力バフ",
+            "volumizer-health-buff": "爆音器の体力バフ"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -3101,7 +3121,9 @@
                         "hard": "難しい",
                         "medium": "普通",
                         "very-hard": "とても難しい"
-                    }
+                    },
+                    "recommended-cards-header": "推奨カード",
+                    "recommended-cards-header-tooltip": "なくても構成として成り立つが、構成に入れることを強く推奨するカードです"
                 }
             },
             "quests": {
@@ -3638,7 +3660,10 @@
                 "counters-opacity-tooltip": "アプリの全てのカウンターの透明度を変更します",
                 "use-grouped-counters-label": "グループ化カウンターを使用",
                 "card-tooltip-number-of-related-cards": "関連するカードの数",
-                "card-tooltip-number-of-related-cards-tooltip": "ツールチップの関連するカードに表示されるカード枚数の最大数です。この数値を超える場合、関連するカードを表示する代わりにその枚数を示す汎用メッセージが表示されます"
+                "card-tooltip-number-of-related-cards-tooltip": "ツールチップの関連するカードに表示されるカード枚数の最大数です。この数値を超える場合、関連するカードを表示する代わりにその枚数を示す汎用メッセージが表示されます",
+                "counters-widgets-size": "カウンターウイジェットのサイズ",
+                "help-tooltip-size": "ツールチップテキストサイズ",
+                "counters-widgets-size-tooltip": "ラファームのリストのように、カウンターにマウスオーバーした際に現れるウィジェットのサイズを変更します"
             },
             "streamer": {
                 "battlegrounds": {
@@ -3712,7 +3737,11 @@
                 "show-transformed-into-label": "変身したカードを表示",
                 "attack-counter-size": "攻撃力カウンターサイズ",
                 "hand-sort-by-zone-order": "手札を引いた順で表示",
-                "hand-sort-by-zone-order-tooltip": "手札をゾーン順に並べます。これにより、手札のカードが引いた順番で表示されます"
+                "hand-sort-by-zone-order-tooltip": "手札をゾーン順に並べます。これにより、手札のカードが引いた順番で表示されます",
+                "weapons-play-order-tooltip": "武器もプレイ順に含めます",
+                "show-hero-power-in-board-zone": "ボードゾーンにヒーローパワーを表示",
+                "weapons-play-order": "武器のプレイ順",
+                "show-hero-power-in-board-zone-tooltip": "”ボード”ゾーンにプレイヤーのヒーローパワーを表示します。これにより、ダイナミックプールの表示やハイライト表示が容易になります"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
@@ -3831,7 +3860,8 @@
                 "current-effects-label": "現在の効果を表示",
                 "current-effects-tooltip": "有効にした場合、トラッカーの上部にプレイヤー/デッキにかかっている効果を表示するセクションが新しく現れます",
                 "current-effects-use-enchantment-name-label": "エンチャント名を使用",
-                "current-effects-use-enchantment-name-tooltip": "有効にした場合、カード名の代わりにエンチャント名が表示されます"
+                "current-effects-use-enchantment-name-tooltip": "有効にした場合、カード名の代わりにエンチャント名が表示されます",
+                "width-title": "幅"
             },
             "your-deck": {
                 "ignore-decklist-label": "デッキリストを無視",
@@ -3996,7 +4026,9 @@
                     "rafaam-time-label": "「{{cardName}}」",
                     "rafaam-time-tooltip": "試合中に自分が使用したラファーム達を記録します",
                     "cards-drawn-this-turn-label": "このターンに引いたカード",
-                    "cards-drawn-this-turn-tooltip": "このターンに引いたカードの枚数を表示します"
+                    "cards-drawn-this-turn-tooltip": "このターンに引いたカードの枚数を表示します",
+                    "dragoncaller-alanna-label": "「ドラゴンコーラー・アランナ」",
+                    "dragoncaller-alanna-tooltip": "この試合中、あなたが使用した5コスト以上の呪文の数を表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -4258,7 +4290,17 @@
                 "counter-undead-army-tooltip": "アンデッドの攻撃力の合計バフ量を表示します",
                 "counter-undead-army-label": "アンデッド軍団",
                 "counter-deep-blue": "ディープブルース",
-                "counter-deep-blue-tooltip": "現在のディープブルースのバフ量を表示します"
+                "counter-deep-blue-tooltip": "現在のディープブルースのバフ量を表示します",
+                "minions-list-show-single-tier-tooltip": "名前やテキストでフィルターするための検索ボタンを追加します",
+                "counter-volumizer-buff-tooltip": "爆音器が与える攻撃力/体力の追加のバフ量を表示します",
+                "counter-rightmost-tooltip": "酒場の右端のミニオンへのバフ量を表示します",
+                "minions-list-show-all-mechanics-tooltip": "能力タブを拡大して全てのキーワードを表示します",
+                "counter-rightmost-label": "右端バフ",
+                "minions-list-show-single-tier-label": "検索を表示",
+                "minions-list-show-all-mechanics-label": "全てのキーワードを表示",
+                "minions-list-show-timewarped-label": "時渡を表示",
+                "counter-volumizer-buff-label": "爆音器のバフ",
+                "minions-list-show-timewarped-tooltip": "時渡がゲームに存在する時、時渡カードをカードリストに表示します"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -5192,6 +5234,19 @@
         "big_elementals": "ビッグエレメンタル",
         "cycle_quilboar": "サイクルキルボア",
         "rylak_quilboar": "ライラクキルボア",
-        "shield_quilboar": "聖盾キルボア"
+        "shield_quilboar": "聖盾キルボア",
+        "eudora_pirates": "ユードラ海賊",
+        "volumizer_mechs": "爆音器メカ",
+        "evoker_dragons": "エヴォーカードラゴン",
+        "frogger_beasts": "カエル獣",
+        "nomi_elementals": "ノミエレメンタル",
+        "refresh_elementals": "リロールエレメンタル",
+        "scam": "詐欺",
+        "self_damage_beasts": "自傷獣",
+        "apm_pirate": "APM海賊",
+        "avenge_dragons": "仇討ちドラゴン",
+        "boost_shop_quilboar": "酒場バフキルボア",
+        "lord_of_gains_nagas": "銭ゲバナーガ",
+        "tier_2_ballers": "グレ2ボーラーエレメンタル"
     }
 }
