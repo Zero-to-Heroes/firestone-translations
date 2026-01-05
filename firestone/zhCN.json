@@ -1255,7 +1255,8 @@
                 },
                 "card-type": {
                     "minion": "随从",
-                    "spell": "法术"
+                    "spell": "法术",
+                    "timewarped": "时空扭曲卡牌"
                 },
                 "comps": {
                     "all-comps": "全部流派"
@@ -1416,7 +1417,9 @@
                 "header-impact": "影响",
                 "header-card-image": "酒馆",
                 "tavern-tier": "酒馆等级{{value}}",
-                "impact-hidden-tooltip": "请在上方的下拉菜单中选择一个具体回合，以展示在该回合打出这张牌的影响"
+                "impact-hidden-tooltip": "请在上方的下拉菜单中选择一个具体回合，以展示在该回合打出这张牌的影响",
+                "major-timewarped-tier": "大型时空扭曲",
+                "minor-timewarped-tier": "小型时空扭曲"
             },
             "bgs-tier-list": {
                 "header": "任务评级表 ( {{value}} 场对战) "
@@ -1493,7 +1496,8 @@
                     "expert-difficulty": "难度",
                     "expert-difficulty-tooltip": "基于职业玩家见解的难度评级",
                     "first-percent": "强度",
-                    "first-percent-tooltip": "反映了此流派在所有取得第一名的对局中所占的百分比，并根据各种偏差进行了调整。"
+                    "first-percent-tooltip": "反映了此流派在所有取得第一名的对局中所占的百分比，并根据各种偏差进行了调整。",
+                    "recommended-cards": "推荐卡牌"
                 },
                 "advice": {
                     "title": "策略"
@@ -1820,7 +1824,9 @@
                 "bgs-prizes-tooltip": "暗月奖品可用",
                 "bgs-anomalies-tooltip": "本局游戏的畸变: {{value}}",
                 "watch-replay-online-button": "在浏览器中打开",
-                "watch-replay-online-button-tooltip": "在线观看回放（打开一个新的浏览器窗口）"
+                "watch-replay-online-button-tooltip": "在线观看回放（打开一个新的浏览器窗口）",
+                "battle-tag-copied": "战网昵称已复制到剪贴板",
+                "click-to-copy": "点击复制"
             },
             "class-icon-toggle": {
                 "label": "使用职业图标",
@@ -2484,7 +2490,8 @@
         },
         "rafaam-time": {
             "player": "你在本局对战中使用了{{unique}}个不同的拉法姆（共{{total}}个）",
-            "opponent": "对手在本局对战中使用了{{unique}}个不同的拉法姆（共{{total}}个）"
+            "opponent": "对手在本局对战中使用了{{unique}}个不同的拉法姆（共{{total}}个）",
+            "title": "拉法姆"
         },
         "bgs-undead-army": {
             "player": "你的亡灵在本局对战中获得+{{value}}攻击力"
@@ -2495,6 +2502,15 @@
         "cards-drawn-this-turn": {
             "player": "你在本回合中已经抽了{{value}}张卡牌",
             "opponent": "对手在本回合中已经抽了{{value}}张卡牌"
+        },
+        "bgs-rightmost-buff": {
+            "player": "酒馆最右边的卡牌获得+{{atk}}/+{{health}}"
+        },
+        "volumizer-buff": {
+            "player": "你的扩音机在本局对战中获得+{{atk}}/+{{health}}"
+        },
+        "dragoncaller-alanna": {
+            "player": "你在本局对战中已施放{{value}}次消耗5点及以上法力水晶的法术"
         }
     },
     "loading": {
@@ -2970,7 +2986,11 @@
             "goldrinn-attack-tooltip": "巨狼戈德林为下一次战斗提供的额外攻击力",
             "goldrinn-health-tooltip": "巨狼戈德林为下一次战斗提供的额外生命值",
             "deep-blues": "深情蓝调",
-            "deep-blues-tooltip": "你在本局对战中施放了多少次深情蓝调"
+            "deep-blues-tooltip": "你在本局对战中施放了多少次深情蓝调",
+            "volumizer-attack-buff-tooltip": "你的扩音机获得的额外攻击力",
+            "volumizer-health-buff-tooltip": "你的扩音机获得的额外生命值",
+            "volumizer-attack-buff": "扩音机攻击力加成",
+            "volumizer-health-buff": "扩音机生命值加成"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -3101,7 +3121,9 @@
                         "hard": "困难",
                         "medium": "中等",
                         "very-hard": "非常困难"
-                    }
+                    },
+                    "recommended-cards-header": "推荐卡牌",
+                    "recommended-cards-header-tooltip": "强烈推荐包含在阵容中的卡牌，即使在没有它们的情况下流派仍然可行"
                 }
             },
             "quests": {
@@ -3639,7 +3661,10 @@
                 "use-grouped-counters-tooltip": "将所有计数器（你和对手的计数器）组合到一个紧凑的列表中",
                 "grouped-counters-size": "分组计数器尺寸",
                 "card-tooltip-number-of-related-cards": "相关卡牌的数量",
-                "card-tooltip-number-of-related-cards-tooltip": "在卡牌提示中显示相关卡牌的最大数量。如果卡牌数量超过此数值，你将看到一个包含相关卡牌数量的通用信息。"
+                "card-tooltip-number-of-related-cards-tooltip": "在卡牌提示中显示相关卡牌的最大数量。如果卡牌数量超过此数值，你将看到一个包含相关卡牌数量的通用信息。",
+                "counters-widgets-size": "计数器小部件尺寸",
+                "help-tooltip-size": "鼠标提示文字尺寸",
+                "counters-widgets-size-tooltip": "修改鼠标悬停在某些计数器上时可以出现的小部件的尺寸，例如拉法姆列表"
             },
             "streamer": {
                 "battlegrounds": {
@@ -3712,8 +3737,12 @@
                 "show-transformed-into-tooltip": "将被变形的卡牌添加到记牌器中",
                 "show-transformed-into-label": "显示变形后的卡牌",
                 "attack-counter-size": "攻击力计数器尺寸",
-                "hand-sort-by-zone-order": "手牌按区域顺序排序",
-                "hand-sort-by-zone-order-tooltip": "按区域顺序排列手牌，使手牌中的卡片按抽取顺序显示"
+                "hand-sort-by-zone-order": "手牌/战场按区域顺序排序",
+                "hand-sort-by-zone-order-tooltip": "按区域顺序排列手牌和战场（当可见时），使手牌/战场中的卡牌按游戏内出现顺序显示",
+                "weapons-play-order-tooltip": "在出牌顺序中也包含武器",
+                "weapons-play-order": "武器使用顺序",
+                "show-hero-power-in-board-zone": "在战场区域显示英雄技能",
+                "show-hero-power-in-board-zone-tooltip": "在\"战场\"区域显示玩家的英雄技能。这有助于显示动态卡池和一些高亮效果。"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -3832,7 +3861,8 @@
                 "current-effects-use-enchantment-name-tooltip": "启用时，将使用强化效果的名称而非卡牌名称",
                 "current-effects-label": "显示当前效果",
                 "current-effects-use-enchantment-name-label": "使用强化效果名称",
-                "current-effects-tooltip": "启用此功能，记牌器顶端会出现一个新的区块用于记录当前影响英雄或牌库的效果。"
+                "current-effects-tooltip": "启用此功能，记牌器顶端会出现一个新的区块用于记录当前影响英雄或牌库的效果。",
+                "width-title": "宽度"
             },
             "your-deck": {
                 "ignore-decklist-label": "忽略套牌内容",
@@ -3997,7 +4027,9 @@
                     "rafaam-time-label": "{{cardName}}",
                     "rafaam-time-tooltip": "追踪你本局对战中使用过的拉法姆",
                     "cards-drawn-this-turn-label": "本回合抽到的卡牌",
-                    "cards-drawn-this-turn-tooltip": "显示你本回合抽到的卡牌数"
+                    "cards-drawn-this-turn-tooltip": "显示你本回合抽到的卡牌数",
+                    "dragoncaller-alanna-label": "巨龙召唤者奥兰纳",
+                    "dragoncaller-alanna-tooltip": "显示本局游戏中你施放了消耗5点或更多法力水晶的法术数量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -4259,7 +4291,17 @@
                 "counter-deep-blue": "深情蓝调",
                 "counter-deep-blue-tooltip": "显示你的深情蓝调的当前增益值",
                 "counter-undead-army-tooltip": "显示你的亡灵在本局对战中的攻击总增益",
-                "counter-undead-army-label": "亡灵大军"
+                "counter-undead-army-label": "亡灵大军",
+                "counter-volumizer-buff-tooltip": "显示你的扩音机的额外攻击力/生命值",
+                "counter-rightmost-tooltip": "显示酒馆最右边卡牌的增益效果",
+                "minions-list-show-single-tier-tooltip": "添加一个搜索按钮，可以按名称/文本筛选所有卡片。",
+                "minions-list-show-single-tier-label": "显示搜索",
+                "minions-list-show-all-mechanics-label": "显示所有关键词",
+                "minions-list-show-timewarped-label": "显示时空扭曲",
+                "minions-list-show-timewarped-tooltip": "当时空扭曲在游戏中时，在卡牌列表中显示时空扭曲卡牌。",
+                "minions-list-show-all-mechanics-tooltip": "展开“能力”标签以显示所有支持的关键词",
+                "counter-volumizer-buff-label": "扩音机加成",
+                "counter-rightmost-label": "最右边加成"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -5193,6 +5235,19 @@
         "cycle_quilboar": "循环流野猪人",
         "handbuff_murloc": "手牌流鱼人",
         "big_elementals": "大元素流",
-        "shield_quilboar": "圣盾流野猪人"
+        "shield_quilboar": "圣盾流野猪人",
+        "eudora_pirates": "尤朵拉流海盗",
+        "tier_2_ballers": "2级酒馆投球手",
+        "volumizer_mechs": "扩音机流机械",
+        "frogger_beasts": "跳蛙流野兽",
+        "nomi_elementals": "诺米流元素",
+        "scam": "下毒",
+        "evoker_dragons": "唤魔师流龙族",
+        "apm_pirate": "倒转流海盗",
+        "avenge_dragons": "复仇流龙族",
+        "boost_shop_quilboar": "商店增强流野猪人",
+        "lord_of_gains_nagas": "滑矛流纳迦",
+        "refresh_elementals": "刷新流元素",
+        "self_damage_beasts": "自伤流野兽"
     }
 }
