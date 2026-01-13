@@ -2492,6 +2492,13 @@
             "title": "計數器",
             "opponent": "對手",
             "player": "玩家"
+        },
+        "dead-minions-this-turn": {
+            "player": "本回合有 {{value}} 個手下死亡"
+        },
+        "specific-deaths": {
+            "player": "本賽局中你已有 {{value}} 個「{{cardName}}」手下死亡",
+            "opponent": "本賽局中對手已有 {{value}} 個「{{cardName}}」手下死亡"
         }
     },
     "loading": {
@@ -3583,7 +3590,7 @@
                 "lottery-block-text4": "⚠️：如果你是高階會籍用戶，選擇參加抽獎將不會向你展示廣告 - 如果你中獎，我們將為你發放等值的獎品。",
                 "lottery-block-text2": "一旦新的抽獎賽季開始，先前賽季的點數將被重設。",
                 "title": "高階會員訂閱選項",
-                "lottery-block-text1": "參與抽獎將可以透過遊玩遊戲時，在抽獎視窗可見的情況下完成某些動作（例如：花費資源）來累積點數。每個月底，系統將會隨機選出 4 位得獎者（累積越多的點數，中獎機會越高）。得獎者將可獲得 2 個月的高階會籍訂閱，並會在 {{twitterLink}} 與 {{discordLink}} 上公布。",
+                "lottery-block-text1": "參加抽獎活動可讓你在顯示抽獎視窗的狀態下，透過在遊戲中執行特定動作（例如花費資源）來累積點數。每兩週結束時，將隨機抽出 2 名中獎者（點數越多，中獎機率越高）。中獎者將獲得 2 個月的 Premium 會員資格，並會在 {{twitterLink}} 與 {{discordLink}} 上公布。",
                 "lottery-widget-settings-title": "小工具設定",
                 "link": "維基上",
                 "lottery-premium-section-tooltip": "此區塊僅適用於高階會籍用戶"
@@ -3806,7 +3813,7 @@
                     "wheel-of-death-tooltip": "在對手打出「{{cardName}}」後，顯示你死亡前的回合數",
                     "dragons-summoned-tooltip": "顯示對手已召喚龍類的數量。",
                     "elemental-streak-tooltip": "計算對手連續打出元素的回合數。只有當他們連續兩回合打出過元素時才會出現。",
-                    "dead-minions-this-game-tooltip": "當對手是死亡騎士或他們手上／牌堆中有相關卡牌（例如「礦坑老大雷斯卡」），顯示本場比賽死亡的手下數量",
+                    "dead-minions-this-game-tooltip": "當對手是死亡騎士或他們手上／牌堆中有相關卡牌（例如「礦坑老大雷斯卡」），顯示本賽局死亡的手下數量",
                     "discovers-tooltip": "計算對手「發現」卡牌的次數",
                     "libram-reduction-tooltip": "顯示對手「聖契」總降低的法力水晶花費",
                     "cards-drawn-tooltip": "當對手牌堆中有「{{cardName}}」，或他們是 {{cardClass}} 卡時，顯示他們在本局遊戲抽到的牌數",
@@ -4010,7 +4017,11 @@
                     "cards-drawn-this-turn-label": "本回合抽牌張數",
                     "cards-drawn-this-turn-tooltip": "顯示你在本回合中抽到的卡牌張數",
                     "dragoncaller-alanna-label": "「喚龍者阿蘭娜」",
-                    "dragoncaller-alanna-tooltip": "顯示你本局遊戲中施放消耗 5 點及以上法術的次數"
+                    "dragoncaller-alanna-tooltip": "顯示你本局遊戲中施放消耗 5 點及以上法術的次數",
+                    "treant-dead-label": "樹人（已死亡）",
+                    "treant-dead-tooltip": "顯示本賽局中死亡樹人的數量",
+                    "dead-minions-this-turn-label": "本回合死亡手下",
+                    "dead-minions-this-turn-tooltip": "顯示本回合死亡手下的數量"
                 },
                 "discovery-zone-label": "發現區塊",
                 "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並突出顯示與牌堆的協同作用。"
