@@ -125,7 +125,8 @@
             "embers_of_the_world_tree": "世界之树的余烬",
             "lost_city_of_ungoro": "安戈洛龟途",
             "day_of_rebirth": "重生之日",
-            "across_the_timeways": "穿越时间流"
+            "across_the_timeways": "穿越时间流",
+            "echoes_of_the_infinite": "永恒回响"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -2444,7 +2445,8 @@
             "player": "酒馆中的元素拥有额外的 +{{atk}}/+{{health}}"
         },
         "card-name-played": {
-            "player": "本局对战中你已经使用了{{times}}张{{cardName}}"
+            "player": "本局对战中你已经使用了{{times}}张{{cardName}}",
+            "opponent": "本局对战中对手已经使用了{{times}}张{{cardName}}"
         },
         "colossus-damage": {
             "player": "你的巨像会造成 1 + {{value}} 点伤害两次",
@@ -2511,6 +2513,18 @@
         },
         "dragoncaller-alanna": {
             "player": "你在本局对战中已施放{{value}}次消耗5点及以上法力水晶的法术"
+        },
+        "grouped": {
+            "title": "计数器",
+            "player": "玩家",
+            "opponent": "对手"
+        },
+        "dead-minions-this-turn": {
+            "player": "本回合有{{value}}个随从死亡"
+        },
+        "specific-deaths": {
+            "player": "本局对战中你已有{{value}}个{{cardName}}死亡",
+            "opponent": "本局对战中对手已有{{value}}个{{cardName}}死亡"
         }
     },
     "loading": {
@@ -2760,7 +2774,7 @@
         "unknown-info": "未知 {{info}}",
         "unknown-big-minion": "未知 {{cost}}+ 费随从",
         "card-dredged-tooltip": "被探底",
-        "card-tooltip-scroll-text": "按住“Shift”键可在鼠标离开卡牌时保持窗口开启并滚动卡牌。按“Q”关闭。",
+        "card-tooltip-scroll-text": "按住“Shift”键可在鼠标离开卡牌时保持窗口开启并滚动卡牌。点击任意位置关闭。",
         "unknown-mana-minion": "未知 {{manaCost}} 费随从",
         "overlay": {
             "mulligan": {
@@ -3124,7 +3138,8 @@
                     },
                     "recommended-cards-header": "推荐卡牌",
                     "recommended-cards-header-tooltip": "强烈推荐包含在阵容中的卡牌，即使在没有它们的情况下流派仍然可行"
-                }
+                },
+                "tier-category-tooltip": "查看所有{{value}}级卡牌。右键点击高亮显示酒馆中的所有{{value}}级卡牌。"
             },
             "quests": {
                 "turn-to-complete-tooltip": "当前分段的任务难度（数值越低越容易）：完成此任务平均需要{{averageTurnsToComplete}}回合，此英雄平均需要{{turnsToCompleteForHero}}回合，难度调整为{{turnsToCompleteImpact}}",
@@ -3540,7 +3555,7 @@
                 "lottery-block-title": "抽奖",
                 "lottery-block-text": "参与抽奖将有机会获得免费的Firestone会员。你可以通过正常游戏或完成相关任务来获得抽奖点数。每月将会从奖池中出抽取4位用户，这些用户将获得2个月的免费会员。点数越高被选中的可能就越大，中奖的用户将会公布在{{twitterLink}}和{{discordLink}}。",
                 "lottery-button-text": "启用抽奖",
-                "lottery-block-text1": "参与抽奖将有机会获得免费的Firestone会员。你可以通过正常游戏或完成相关任务来获得抽奖点数。每月将会从奖池中出抽取4位用户，这些用户将获得2个月的免费会员。点数越高被选中的可能就越大，中奖的用户将会公布在{{twitterLink}}和{{discordLink}}。",
+                "lottery-block-text1": "参与抽奖将有机会获得免费的Firestone会员。你可以通过正常游戏或完成相关任务来获得抽奖点数。每2周将会从奖池中出抽取2位用户，这些用户将获得2个月的免费会员。点数越高被选中的可能就越大，中奖的用户将会公布在{{twitterLink}}和{{discordLink}}。",
                 "lottery-block-text2": "每期抽奖的点数都会在抽奖时清空，不会累积到下一期。",
                 "lottery-block-text3": "注意：如果您有多个显示屏，请尝试改变小部件中的“设置浮窗”选项，并将其移动到第二个屏幕。",
                 "lottery-block-text4": "注意：当你已经是会员时仍然可以参与抽奖，并且不会显示广告。当你抽中会员的时候，你将获得相同价值的奖品。",
@@ -3619,8 +3634,10 @@
                     "text-2": "需要更多的占位符选项？通过{{discordLink}}让作者了解你的需求！",
                     "tokens": {
                         "mode": "当前模式（排名天梯、酒馆战棋等）",
-                        "hero": "你当前英雄的全名 ",
-                        "rank": "你在当前模式中的等级（天梯排名段位+等级，酒馆战棋或对决模式的排名积分）"
+                        "hero": "你当前英雄的全名",
+                        "rank": "你在当前模式中的等级（天梯排名段位+等级，酒馆战棋的排名积分）",
+                        "deckname": "你当前套牌的名称",
+                        "class": "你当前的职业"
                     },
                     "text": "你可以自定义显示你正在对局中的文本。你可以使用下列占位符："
                 },
@@ -4029,7 +4046,11 @@
                     "cards-drawn-this-turn-label": "本回合抽到的卡牌",
                     "cards-drawn-this-turn-tooltip": "显示你本回合抽到的卡牌数",
                     "dragoncaller-alanna-label": "巨龙召唤者奥兰纳",
-                    "dragoncaller-alanna-tooltip": "显示本局游戏中你施放了消耗5点或更多法力水晶的法术数量"
+                    "dragoncaller-alanna-tooltip": "显示本局游戏中你施放了消耗5点或更多法力水晶的法术数量",
+                    "dead-minions-this-turn-label": "本回合死亡的随从",
+                    "treant-dead-label": "树人（已死亡）",
+                    "treant-dead-tooltip": "显示本局对战中死亡的树人的数量",
+                    "dead-minions-this-turn-tooltip": "显示本回合中死亡的随从的数量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -4293,7 +4314,7 @@
                 "counter-undead-army-tooltip": "显示你的亡灵在本局对战中的攻击总增益",
                 "counter-undead-army-label": "亡灵大军",
                 "counter-volumizer-buff-tooltip": "显示你的扩音机的额外攻击力/生命值",
-                "counter-rightmost-tooltip": "显示酒馆最右边卡牌的增益效果",
+                "counter-rightmost-tooltip": "显示酒馆最右边随从的增益效果",
                 "minions-list-show-single-tier-tooltip": "添加一个搜索按钮，可以按名称/文本筛选所有卡片。",
                 "minions-list-show-single-tier-label": "显示搜索",
                 "minions-list-show-all-mechanics-label": "显示所有关键词",
