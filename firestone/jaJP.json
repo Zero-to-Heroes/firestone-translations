@@ -125,7 +125,8 @@
             "embers_of_the_world_tree": "世界樹の残火",
             "lost_city_of_ungoro": "ウンゴロ最後の秘境",
             "across_the_timeways": "タイムウェイの旅人たち",
-            "day_of_rebirth": "再生の日"
+            "day_of_rebirth": "再生の日",
+            "echoes_of_the_infinite": "無限の残響"
         },
         "pack": {
             "classic": "クラシック",
@@ -2444,7 +2445,8 @@
             "player": "酒場のエレメンタルは追加で+{{atk}}/+{{health}}を得る"
         },
         "card-name-played": {
-            "player": "この対戦中、「{{cardName}}」を{{times}}回使用した"
+            "player": "この対戦中、「{{cardName}}」を{{times}}回使用した",
+            "opponent": "対戦相手はこの試合中、「{{cardName}}」を{{times}}回使用した"
         },
         "colossus-damage": {
             "player": "自分のコロッサスは1+{{value}}ダメージを2回与えます",
@@ -2511,6 +2513,25 @@
         },
         "dragoncaller-alanna": {
             "player": "この試合中、5コスト以上の呪文を{{value}}回使用した"
+        },
+        "grouped": {
+            "title": "カウンター",
+            "player": "プレイヤー",
+            "opponent": "対戦相手"
+        },
+        "specific-deaths": {
+            "player": "この試合中、「{{cardName}}」が{{value}}体死亡した",
+            "opponent": "この試合中、対戦相手の「{{cardName}}」が{{value}}体死亡した"
+        },
+        "dead-minions-this-turn": {
+            "player": "このターン中にミニオンが{{value}}体死亡"
+        },
+        "tavern-stats": {
+            "player": "酒場のミニオンは追加で+{{atk}}/+{{health}}を得る"
+        },
+        "overload-this-game": {
+            "player": "この試合中、自分は{{value}}マナオーバーロードした",
+            "opponent": "対戦相手はこの試合中{{value}}マナオーバーロードした"
         }
     },
     "loading": {
@@ -2760,7 +2781,7 @@
         "unknown-info": "不明な{{info}}",
         "unknown-big-minion": "不明なコスト{{cost}}+のミニオン",
         "card-dredged-tooltip": "海底探査のカード",
-        "card-tooltip-scroll-text": "このウィンドウを開いたままにするには、\"Shift\"キーを押しながらマウスをカードから離します。\"Q\"キーを押すと閉じます",
+        "card-tooltip-scroll-text": "このウィンドウを開いたままにするには、\"Shift\"キーを押しながらマウスをカードから離します。別のどこかをクリックすると閉じます",
         "unknown-mana-minion": "{{manaCost}}マナの不明なミニオン",
         "overlay": {
             "mulligan": {
@@ -3124,7 +3145,8 @@
                     },
                     "recommended-cards-header": "推奨カード",
                     "recommended-cards-header-tooltip": "なくても構成として成り立つが、構成に入れることを強く推奨するカードです"
-                }
+                },
+                "tier-category-tooltip": "全てのグレード{{value}}カードを表示します。右クリックすると、酒場のグレード{{value}}カードをハイライトします"
             },
             "quests": {
                 "turn-to-complete-tooltip": "あなたのMMR帯において、このヒーローとそのクエスト難易度で、このクエストを達成するための平均ターン数です(低いほど優れています)。このクエストの平均達成ターンは {{averageTurnsToComplete}}ターン、このヒーローの平均達成ターンは{{turnsToCompleteForHero}} ターン、難易度調整は{{turnsToCompleteImpact}}ターンです。",
@@ -3175,6 +3197,17 @@
                 "actions-title": "このターンのアクション",
                 "apm-title": "APM",
                 "avg-apm-tooltip": "このターンの平均APM"
+            },
+            "timewarped": {
+                "impact-header-tooltip": "トップ{{value}}%のプレイヤーにおいて、このカードをピックした場合に最終順位がどれだけ変化するかを表します",
+                "impact-header": "影響",
+                "tier-header": "Tier",
+                "placement-header-tooltip": "このカードをピックした、トップ{{value}}のプレイヤーの平均最終順位です",
+                "data-points-header": "データポイント",
+                "placement-header": "順位",
+                "data-points-header-tooltip": "トップ{{value}}%のプレイヤーにおける、試合中のこのカードのピック率",
+                "free-uses-tooltip": "この機能は毎日無料で{{max}}回利用できます。今日は{{left}}回残っています",
+                "free-uses-text": "残り{{value}}回"
             }
         },
         "post-match-stats": {
@@ -3543,7 +3576,7 @@
                 "lottery-block-text3": "注：複数のスクリーンがある場合は、ウィジェットの「オーバーレイを表示」設定をオフに切り替えて、2番目のスクリーンに移動してみてください",
                 "lottery-block-text4": "注：プレミアムユーザーは、抽選に参加しても広告は表示されません。そしてもし当選したら、サブスクと同じくらいの価値の商品を一緒に探しましょう",
                 "lottery-block-text2": "抽選の新シーズンが始まると、以前のシーズンのポイントはリセットされます",
-                "lottery-block-text1": "抽選に参加すると、抽選ウィンドウが表示されている状態でゲームを遊び、マナの消費などを行うことで、ポイントを貯めることができます。毎月末に、4人の当選者がランダムに選ばれます（ポイントが多いほど、当選のチャンスが増えます）。当選者には2ヶ月のプレミアムサブスクリプションが贈られ、{{twitterLink}}と{{discordLink}}で発表されます。",
+                "lottery-block-text1": "抽選に参加すると、抽選ウィンドウが表示されている状態でゲームを遊び、マナの消費などを行うことで、ポイントを貯めることができます。2週間ごとに、2人の当選者がランダムに選ばれます（ポイントが多いほど、当選のチャンスが増えます）。当選者には2ヶ月のプレミアムサブスクリプションが贈られ、{{twitterLink}}と{{discordLink}}で発表されます。",
                 "lottery-size-title": "抽選ウィジェットのサイズ",
                 "lottery-premium-section-tooltip": "このセクションはプレミアムユーザーのみご利用いただけます",
                 "lottery-widget-settings-title": "ウィジェット設定"
@@ -3618,8 +3651,10 @@
                 "in-game-details": {
                     "tokens": {
                         "mode": "現在のモード(構築戦、バトルグラウンド等)",
-                        "hero": "現在のヒーローのフルネーム ",
-                        "rank": "該当モードでのあなたの現在のランク(構築戦では段位+ランク、バトルグラウンドとデュエルではレート)"
+                        "hero": "現在のヒーローのフルネーム",
+                        "rank": "該当モードでのあなたの現在のランク(構築戦では段位+ランク、バトルグラウンドではレート)",
+                        "deckname": "今使っているデッキの名前",
+                        "class": "自分の現在のクラス"
                     },
                     "text": "自分の試合中に表示される名前をカスタマイズできます。以下のプレースホルダー(placeholder)を利用可能",
                     "text-2": "もっとプレースホルダー(placeholder)をカスタムしたい？Discordで教えてね {{discordLink}}!"
@@ -3736,8 +3771,8 @@
                 "show-transformed-into-tooltip": "変身したカードをトラッカーに追加します",
                 "show-transformed-into-label": "変身したカードを表示",
                 "attack-counter-size": "攻撃力カウンターサイズ",
-                "hand-sort-by-zone-order": "手札を引いた順で表示",
-                "hand-sort-by-zone-order-tooltip": "手札をゾーン順に並べます。これにより、手札のカードが引いた順番で表示されます",
+                "hand-sort-by-zone-order": "手札と戦場を引いた順で表示",
+                "hand-sort-by-zone-order-tooltip": "手札と(表示されている場合)戦場をゾーン順に並べます。これにより、手札と戦場のカードは、ゲームに登場した順に表示されます",
                 "weapons-play-order-tooltip": "武器もプレイ順に含めます",
                 "show-hero-power-in-board-zone": "ボードゾーンにヒーローパワーを表示",
                 "weapons-play-order": "武器のプレイ順",
@@ -4028,7 +4063,13 @@
                     "cards-drawn-this-turn-label": "このターンに引いたカード",
                     "cards-drawn-this-turn-tooltip": "このターンに引いたカードの枚数を表示します",
                     "dragoncaller-alanna-label": "「ドラゴンコーラー・アランナ」",
-                    "dragoncaller-alanna-tooltip": "この試合中、あなたが使用した5コスト以上の呪文の数を表示します"
+                    "dragoncaller-alanna-tooltip": "この試合中、あなたが使用した5コスト以上の呪文の数を表示します",
+                    "treant-dead-label": "死亡したトレント",
+                    "overload-this-game-label": "試合中にしたオーバーロード",
+                    "overload-this-game-tooltip": "この試合中にオーバーロードしたマナの数を表示します",
+                    "dead-minions-this-turn-tooltip": "このターン中に死亡したミニオンの数を表示します",
+                    "treant-dead-tooltip": "この試合中に死亡したトレントの数を表示します",
+                    "dead-minions-this-turn-label": "このターンに死亡したミニオン"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -4300,7 +4341,9 @@
                 "minions-list-show-all-mechanics-label": "全てのキーワードを表示",
                 "minions-list-show-timewarped-label": "時渡を表示",
                 "counter-volumizer-buff-label": "爆音器のバフ",
-                "minions-list-show-timewarped-tooltip": "時渡がゲームに存在する時、時渡カードをカードリストに表示します"
+                "minions-list-show-timewarped-tooltip": "時渡がゲームに存在する時、時渡カードをカードリストに表示します",
+                "counter-tavern-stats-label": "酒場の統計",
+                "counter-tavern-stats-tooltip": "酒場のミニオンが追加で得る攻撃力/体力のバフを表示します"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
