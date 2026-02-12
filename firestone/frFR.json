@@ -661,6 +661,13 @@
                     "rare": "Rare",
                     "epic": "Épique",
                     "legendary": "Légendaire"
+                },
+                "picture-type": {
+                    "animated": "Animées",
+                    "animated-tooltip": "Survoler pour démarrer l’animation",
+                    "static": "Statiques",
+                    "animated-all-tooltip": "Toutes les images sont animées, sans besoin de passer la souris dessus. ATTENTION : cette fonctionnalité utilise beaucoup de ressources s’il y a beaucoup d’images sur la page",
+                    "animated-all": "Animées (toutes)"
                 }
             },
             "card-history": {
@@ -2474,7 +2481,8 @@
             "player": "Vous avez joué {{value}} Sombres dons différents pendant cette partie"
         },
         "corpses": {
-            "opponent": "Votre adversaire a actuellement {{value}} cadavres"
+            "opponent": "Votre adversaire a actuellement {{value}} cadavres",
+            "player": "Vous avez actuellement {{value}} cadavres"
         },
         "outcast": {
             "player": "Vous avez joué {{value}} cartes avec Marginal pendant cette partie",
@@ -2533,6 +2541,17 @@
         "overload-this-game": {
             "player": "Vous avez surchargé {{value}} cristaux de mana pendant cette partie",
             "opponent": "Votre adversaire a surchargé {{value}} cristaux de mana pendant cette partie"
+        },
+        "whelp-buff": {
+            "player": "Vos dragonnets ont +{{atk}}/+{{health}} pendant cette partie"
+        },
+        "runi": {
+            "player": "Les cartes réapparaîtront dans {{value}} tour(s)"
+        },
+        "windrunner-sisters": {
+            "player": "Vous avez joué les sœurs Coursevent suivantes pendant cette partie",
+            "title": "Sœurs Coursevent",
+            "opponent": "Votre adversaire a joué les sœurs Coursevent suivantes pendant cette partie"
         }
     },
     "loading": {
@@ -2991,8 +3010,8 @@
             "beetle-health-buff": "Buff de PV des hannetons",
             "battlecries-triggered-tooltip": "Le nombre de Cris de guerre que vous avez déclenchés pendant cette partie",
             "friendly-minions-dead-last-combat-tooltip": "Le nombre de serviteurs alliés morts pendant le dernier combat",
-            "elemental-attack-buff": "Amélioration d’ATQ des Élémentaires",
-            "elemental-health-buff": "Amélioration de PV des Élémentaires",
+            "elemental-attack-buff": "Buff d’ATQ des Élémentaires",
+            "elemental-health-buff": "Buff de PV des Élémentaires",
             "spells-cast": "Sorts lancés",
             "spells-cast-tooltip": "Nombre de sorts que vous avez lancés pendant cette partie",
             "tavern-spell-attack-buff": "Buff d’ATQ des sorts de taverne",
@@ -3012,7 +3031,11 @@
             "volumizer-attack-buff-tooltip": "L’ATQ supplémentaire donnée par vos volumateurs",
             "volumizer-attack-buff": "Buff d’ATQ des volumateurs",
             "volumizer-health-buff": "Buff de PV des volumateurs",
-            "volumizer-health-buff-tooltip": "Les PV supplémentaires données par vos volumateurs"
+            "volumizer-health-buff-tooltip": "Les PV supplémentaires données par vos volumateurs",
+            "whelp-attack-buff-tooltip": "L’ATQ supplémentaire de vos dragonnets",
+            "whelp-health-buff-tooltip": "Les PV supplémentaires de vos dragonnets",
+            "whelp-attack-buff": "Buff d’ATQ des dragonnets",
+            "whelp-health-buff": "Buff de PV des dragonnets"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3778,7 +3801,8 @@
                 "weapons-play-order-tooltip": "Inclut également les armes dans l’ordre de jeu",
                 "show-hero-power-in-board-zone": "Afficher le pouvoir héroïque dans la zone Plateau",
                 "show-hero-power-in-board-zone-tooltip": "Affiche le pouvoir héroïque dans la zone Plateau, ce qui permet d’afficher les cartes liées/générées au survol, et de mettre des cartes en surbrillance.",
-                "weapons-play-order": "Ordre de jeu des armes"
+                "weapons-play-order": "Ordre de jeu des armes",
+                "play-order-title": "Ordre de jeu"
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
@@ -4071,7 +4095,11 @@
                     "dead-minions-this-turn-label": "Serviteurs morts pendant ce tour",
                     "dead-minions-this-turn-tooltip": "Affiche le nombre de serviteurs morts pendant ce tour",
                     "overload-this-game-tooltip": "Affiche le nombre de cristaux de mana en Surcharge pendant cette partie",
-                    "overload-this-game-label": "Surcharge de la partie"
+                    "overload-this-game-label": "Surcharge de la partie",
+                    "windrunner-sisters-label": "Sœurs Coursevent",
+                    "windrunner-sisters-tooltip": "Affiche quelles sœurs Coursevent vous avez jouées pendant cette partie",
+                    "runi-tooltip": "Affiche les cartes qui apparaîtront après avoir joué {{cardName}}",
+                    "runi-label": "{{cardName}}"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -4317,10 +4345,10 @@
                 "counter-spells-played-tooltip": "Affiche le nombre de groupes de 4 sorts que vous avez lancés, ainsi que la progression vers la formation du groupe suivant",
                 "counter-tavern-spells-buff-tooltip": "Affiche les améliorations de vos sorts de la taverne qui confèrent des caractéristiques",
                 "counter-elemental-buff-tooltip": "Affiche les améliorations de vos Élémentaires qui confèrent des caractéristiques",
-                "counter-elemental-buff-label": "Améliorations des Élémentaires",
+                "counter-elemental-buff-label": "Buff des Élémentaires",
                 "counter-tavern-spells-buff-label": "Améliorations des sorts de la taverne",
                 "counter-elemental-tavern-stats-label": "Stats des Élémentaires dans la taverne",
-                "counter-elemental-tavern-stats-tooltip": "Affiche les caractéristiques supplémentaires des Élémentaires dans la taverne",
+                "counter-elemental-tavern-stats-tooltip": "Affiche le buff d’ATQ/PV des Élémentaires dans la taverne",
                 "show-tribe-colors-tooltip": "Colorer les widgets de type",
                 "show-tribe-colors-label": "Utiliser les couleurs de type",
                 "minions-list-keep-in-bounds-tooltip": "Faire en sorte que la decklist ne sorte jamais trop de ses limites. Désactivez cette option si vous ne pouvez pas positionner la decklist comme vous le souhaitez",
@@ -4344,8 +4372,10 @@
                 "counter-rightmost-tooltip": "Affiche le buff donné au serviteur le plus à droite de la taverne",
                 "counter-rightmost-label": "Buff du serviteur à droite",
                 "counter-volumizer-buff-label": "Buff des volumateurs",
-                "counter-tavern-stats-tooltip": "Affiche le buff d’ATQ et de PV des serviteurs dans la taverne",
-                "counter-tavern-stats-label": "Stats de taverne"
+                "counter-tavern-stats-tooltip": "Affiche le buff d’ATQ/PV des serviteurs dans la taverne",
+                "counter-tavern-stats-label": "Stats de taverne",
+                "counter-whelp-buff-label": "Buff des dragonnets",
+                "counter-whelp-buff-tooltip": "Affiche le buff d’ATQ/PV de vos dragonnets"
             },
             "session-widget": {
                 "title": "Widget de session",
