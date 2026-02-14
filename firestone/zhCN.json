@@ -661,6 +661,13 @@
                     "rare": "稀有",
                     "epic": "史诗",
                     "legendary": "传说"
+                },
+                "picture-type": {
+                    "animated-all-tooltip": "所有图片都是动态的，不需要鼠标悬停其上显示。警告：如果页面上有很多图片，会占用很多资源",
+                    "animated": "动态",
+                    "animated-all": "动态（全部）",
+                    "animated-tooltip": "鼠标悬停以开始动画",
+                    "static": "静态"
                 }
             },
             "card-history": {
@@ -2179,8 +2186,8 @@
             "player": "你已使用过的随从类型数：{{value}}"
         },
         "corpse": {
-            "player": "本局对战中你已消耗了{{value}}具残骸",
-            "opponent": "对手本局对战已消耗了{{value}}具残骸"
+            "player": "本局对战中你已消耗了{{value}}份残骸",
+            "opponent": "对手本局对战已消耗了{{value}}份残骸"
         },
         "overdraft": {
             "player": "强行透支：{{value}}点伤害"
@@ -2474,7 +2481,8 @@
             "opponent": "对手在本局对战中已使用过 {{value}} 种不同的黑暗之赐卡牌"
         },
         "corpses": {
-            "opponent": "对手目前有 {{value}} 份残骸"
+            "opponent": "对手目前有 {{value}} 份残骸",
+            "player": "你目前有{{value}}份残骸"
         },
         "outcast": {
             "player": "本局对战中你已使用过{{value}}次流放卡",
@@ -2533,6 +2541,17 @@
         "overload-this-game": {
             "player": "你在本局对战中过载了{{value}}个法力水晶",
             "opponent": "对手在本局对战中过载了{{value}}个法力水晶"
+        },
+        "whelp-buff": {
+            "player": "本局对战中，你的雏龙将获得+{{atk}}/+{{health}}"
+        },
+        "runi": {
+            "player": "卡牌会在{{value}}回合后回来"
+        },
+        "windrunner-sisters": {
+            "title": "风行者姐妹",
+            "player": "你在本局对战中已打出过这些风行者姐妹",
+            "opponent": "对手在本局对战中已打出过这些风行者姐妹"
         }
     },
     "loading": {
@@ -3012,7 +3031,11 @@
             "volumizer-attack-buff-tooltip": "你的扩音机获得的额外攻击力",
             "volumizer-health-buff-tooltip": "你的扩音机获得的额外生命值",
             "volumizer-attack-buff": "扩音机攻击力加成",
-            "volumizer-health-buff": "扩音机生命值加成"
+            "volumizer-health-buff": "扩音机生命值加成",
+            "whelp-attack-buff-tooltip": "你的雏龙获得的额外攻击力",
+            "whelp-health-buff-tooltip": "你的雏龙获得的额外生命值",
+            "whelp-attack-buff": "雏龙攻击力增益",
+            "whelp-health-buff": "雏龙生命值增益"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -3778,7 +3801,8 @@
                 "weapons-play-order-tooltip": "在出牌顺序中也包含武器",
                 "weapons-play-order": "武器使用顺序",
                 "show-hero-power-in-board-zone": "在战场区域显示英雄技能",
-                "show-hero-power-in-board-zone-tooltip": "在\"战场\"区域显示玩家的英雄技能。这有助于显示动态卡池和一些高亮效果。"
+                "show-hero-power-in-board-zone-tooltip": "在\"战场\"区域显示玩家的英雄技能。这有助于显示动态卡池和一些高亮效果。",
+                "play-order-title": "打出顺序"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -4071,7 +4095,11 @@
                     "treant-dead-tooltip": "显示本局对战中死亡的树人的数量",
                     "dead-minions-this-turn-tooltip": "显示本回合中死亡的随从的数量",
                     "overload-this-game-tooltip": "显示你在本局对战中过载的法力水晶数量",
-                    "overload-this-game-label": "本局对战中的过载"
+                    "overload-this-game-label": "本局对战中的过载",
+                    "windrunner-sisters-tooltip": "显示你在本局对战中打出过哪些风行者姐妹",
+                    "windrunner-sisters-label": "风行者姐妹",
+                    "runi-label": "{{cardName}}",
+                    "runi-tooltip": "展示在打出{{cardName}}后会回来的卡牌"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
@@ -4345,7 +4373,9 @@
                 "counter-volumizer-buff-label": "扩音机加成",
                 "counter-rightmost-label": "最右边加成",
                 "counter-tavern-stats-label": "酒馆统计数据",
-                "counter-tavern-stats-tooltip": "显示酒馆中随从的额外攻击力/生命值增益"
+                "counter-tavern-stats-tooltip": "显示酒馆中随从的额外攻击力/生命值增益",
+                "counter-whelp-buff-tooltip": "显示你的雏龙的攻击力/生命值额外增益",
+                "counter-whelp-buff-label": "雏龙增益"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
