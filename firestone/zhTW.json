@@ -419,7 +419,7 @@
                     "title": "無法讀取記憶體"
                 },
                 "truncated-logs": {
-                    "message": "嚴重錯誤：請更新遊戲的配置檔。點選即可線上查看更多資訊。",
+                    "message": "嚴重錯誤：請更新遊戲的配置檔。點選即可線上檢視更多資訊。",
                     "title": "日誌都卡住了"
                 }
             }
@@ -1497,7 +1497,8 @@
                     "first-percent": "戰力",
                     "expert-rating": "評等",
                     "expert-rating-tooltip": "根據專業玩家見解評定的強度等級",
-                    "recommended-cards": "推薦卡牌"
+                    "recommended-cards": "推薦卡牌",
+                    "cycle-cards": "刷牌用卡"
                 },
                 "contributors": {
                     "info": "統合了純粹的資料以及來自頂尖戰場玩家的見解。",
@@ -1506,6 +1507,12 @@
                 },
                 "advice": {
                     "title": "策略"
+                },
+                "tabs": {
+                    "details": "詳細資訊",
+                    "example-boards": "範例陣容",
+                    "example-boards-header": "點選以檢視範例陣容",
+                    "example-boards-locked-tooltip": "訂閱 Premium 以檢視高 MMR 玩家在對戰結束時的範例陣容"
                 }
             }
         },
@@ -1867,7 +1874,7 @@
             "xp-graph-title": "經驗值圖表"
         },
         "tips": {
-            "tip-1": "點選頂端的「❓️」圖示以查看應用程式的最新釋出說明",
+            "tip-1": "點選頂端的「❓️」圖示以檢視應用程式的最新釋出說明",
             "tip-2": "點選頂端的 「🪲」 圖示以回報錯誤或提議改進",
             "tip-3": "如果你遇到大錯誤（例如牌庫不同步、記牌器不工作等），請嘗試以管理員身份執行應用程式。",
             "tip-4": "設定有很多自訂選項，請隨時檢視以啟用／停用某些功能",
@@ -2821,7 +2828,7 @@
                     "global-stats-tooltip": "這個列表的統計數據是專屬於使用此確切牌組的結果，而頁面頂部的統計數據則是針對整副牌組型態。"
                 },
                 "close-button-tooltip": "停用牌組概覽。你可以從「設定」中重新啟用它",
-                "toggle-button-locked-tooltip": "高階會員可以查看該套牌的起手換牌指南和統計資料。點選訂閱以解鎖所有高階福利！"
+                "toggle-button-locked-tooltip": "高階會員可以檢視該套牌的起手換牌指南和統計資料。點選訂閱以解鎖所有高階福利！"
             },
             "discover": {
                 "will-be-active": "啟用",
@@ -3051,7 +3058,7 @@
             "not-enough-data-points-warning": "該英雄的樣本量很小（只有 {{value}} 個資料點），因此統計可能會關閉。你可以嘗試在「戰場」視窗的英雄揀選介面中停用一些過濾",
             "average-position": "名次",
             "tier": "強度",
-            "locked-premium-info-tooltip": "成為高階會員即可查看詳細的英雄統計。你每天可以免費使用此功能 {{value}} 次。",
+            "locked-premium-info-tooltip": "成為高階會員即可檢視詳細的英雄統計。你每天可以免費使用此功能 {{value}} 次。",
             "tribes-impact": "手下類別影響",
             "pickrate": "揀選率"
         },
@@ -3138,8 +3145,8 @@
                     "core-cards-header-tooltip": "對陣容必不可少的卡牌",
                     "add-ons-header-tooltip": "在陣容中最好擁有的卡牌",
                     "pin-tooltip": "點選以釘選／取消釘選此陣容中的所有手下",
-                    "cycles-header-tooltip": "通過買賣來觸發其效果，不需要留在棋盤上的循環卡牌",
-                    "cycles-header": "循環",
+                    "cycles-header-tooltip": "通過買賣來觸發其效果，不需要留在棋盤上的刷牌卡",
+                    "cycles-header": "刷牌",
                     "trinkets-header-tooltip": "與此陣容組成搭配的飾品",
                     "trinkets-header": "飾品",
                     "advice": {
@@ -3157,7 +3164,7 @@
                     "recommended-cards-header": "推薦卡牌",
                     "recommended-cards-header-tooltip": "強烈建議加入陣容的卡牌，即使沒有這些卡牌，該陣容仍可運作"
                 },
-                "tier-category-tooltip": "查看所有 {{value}}⭐️卡牌。點擊右鍵以高亮顯示旅店中所有的 {{value}}⭐️卡牌。"
+                "tier-category-tooltip": "檢視所有 {{value}}⭐️卡牌。點擊右鍵以高亮顯示旅店中所有的 {{value}}⭐️卡牌。"
             },
             "quests": {
                 "turn-to-complete-tooltip": "在你目前的MMR範圍內完成該英雄的任務的平均輪數和任務難度（越低越好）。任務完成的平均回合為 {{averageTurnsToComplete}}，英雄的平均回合為 {{turnsToCompleteForHero}}，難度修正為 {{turnsToCompleteImpact}}。",
@@ -3182,7 +3189,7 @@
                     "average-hero-tooltip": "以考量到所有困難的情況下對這位英雄達成任務的回合數。總遊玩賽局數：{{value}}"
                 },
                 "free-uses-text": "剩 {{value}} 次",
-                "locked-premium-info-tooltip": "成為高階會員即可查看詳細的任務和獎勵統計。你每天可以免費使用此功能 {{value}} 次。",
+                "locked-premium-info-tooltip": "成為高階會員即可檢視詳細的任務和獎勵統計。你每天可以免費使用此功能 {{value}} 次。",
                 "free-uses-tooltip": "你每天可以免費使用此功能 {{max}} 次，目前剩 {{left}} 次"
             },
             "trinkets": {
@@ -3452,7 +3459,7 @@
                 },
                 "hearthpwn": {
                     "toggle-label": "將你的收藏同步至 Hearthpwn",
-                    "pitch": "Hearthpwn 是最大的社群網站之一，分享牌組、文章與更多資訊。將你的卡牌收藏同步到該網站，將更輕鬆地找到可玩的牌組，並查看你的收藏統計資料。你可以前往他們的網站 — {{websiteLink}}",
+                    "pitch": "Hearthpwn 是最大的社群網站之一，分享牌組、文章與更多資訊。將你的卡牌收藏同步到該網站，將更輕鬆地找到可玩的牌組，並檢視你的收藏統計資料。你可以前往他們的網站 — {{websiteLink}}",
                     "website-link": "「「這裡」」",
                     "title": "Hearthpwn",
                     "next": "如果你決定同步至 Hearthpwn，Firestone 會將你的收藏資料傳送給他們，讓你可以檢視收藏的統計資料。"
@@ -3460,7 +3467,7 @@
             },
             "bug-report": {
                 "title": "意見傳送 ／ 報告問題",
-                "simulator-bug-text": "如果你想回報模擬器的錯誤（並盡可能提供協助），請查看回報教學",
+                "simulator-bug-text": "如果你想回報模擬器的錯誤（並盡可能提供協助），請檢視回報教學",
                 "general-bug-text": "請：首先檢查故障排除步驟",
                 "link-text": "這裡",
                 "email-placeholder": "你的電子郵件（推荐）",
@@ -4821,7 +4828,7 @@
         "excavate-paladin": "挖寶聖",
         "excavate-shaman": "挖寶薩",
         "excavate-warrior": "挖寶戰",
-        "cycle-rogue": "循環盜賊",
+        "cycle-rogue": "刷牌盜賊",
         "mech-warrior": "機械戰",
         "big-demon-warlock": "大惡魔術",
         "bu-death-knight": "鮮血／污穢 死亡騎士",
@@ -5077,7 +5084,7 @@
         "goldbeard-rogue": "竊貨手金鬍子盜賊",
         "hydration-druid": "補水站德",
         "amalgam-priest": "聚合體牧",
-        "archon-cycle-rogue": "聖堂武士循環盜賊",
+        "archon-cycle-rogue": "聖堂武士刷牌盜賊",
         "battlecruiser-shaman-": "星艦薩",
         "uu-plague-dk": "雙穢邪瘟疫DK",
         "uu-zerg-unholy-dk": "雙穢邪異化蟲DK",
@@ -5317,10 +5324,10 @@
         "boost_spell_naga": "法術加成流納迦",
         "overflow_undead": "擠擠流不死族",
         "self_damage_demons": "自傷流惡魔",
-        "cycle_elementals": "循環流元素",
+        "cycle_elementals": "刷牌流元素",
         "deathrattle_naga": "死聲流納迦",
         "bounty_pirates": "賞金流海盜",
-        "cycle_nagas": "循環流納迦",
+        "cycle_nagas": "刷牌流納迦",
         "damage_demons": "傷害流惡魔",
         "deep_blue_nagas": "深情藍調流納迦",
         "end_of_turn_murlocs": "回合結束流魚人",
@@ -5338,7 +5345,7 @@
         "rylak_quilboar": "鐵頭萊拉克流野豬人",
         "surveyor_quilboar": "手排流野豬人",
         "big_elementals": "大大流元素",
-        "cycle_quilboar": "循環流野豬人",
+        "cycle_quilboar": "刷牌流野豬人",
         "handbuff_murloc": "手牌加加流魚人",
         "shield_quilboar": "聖盾流野豬人",
         "eudora_pirates": "「尤多拉」流海盜",
@@ -5353,6 +5360,15 @@
         "lord_of_gains_nagas": "「滑矛」流納迦",
         "tier_2_ballers": "2⭐️強勢陣容",
         "apm_pirate": "手速流海盜",
-        "avenge_dragons": "報復流龍類"
+        "avenge_dragons": "報復流龍類",
+        "bomber_mechs": "轟炸者流機械",
+        "deathrattle_quilboar": "死聲流野豬人",
+        "end_of_turn_naga": "回合結束流納迦",
+        "lord_of_ruins_demons": "AOE流惡魔",
+        "stuntdrake_dragons": "報復流龍類",
+        "whelp_dragon": "幼龍流龍類",
+        "beasts_beetles": "甲蟲流野獸",
+        "spell_cycle": "刷法術流",
+        "apexis_mechs": "死聲機兵流機械"
     }
 }
