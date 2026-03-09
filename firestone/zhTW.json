@@ -393,8 +393,8 @@
             "ads": {
                 "support-the-dev": "支援開發並刪除廣告",
                 "supporter": "感謝你對我們的支持！你很酷:)",
-                "features-link": "點選檢視你將獲得的全部高階功能",
-                "unlock-text": "解鎖高階功能",
+                "features-link": "點選檢視你將獲得的全部 Premium 會籍功能",
+                "unlock-text": "解鎖 Premium 會籍功能",
                 "cta-text": "即刻升級",
                 "unlock-subtext": "並移除全部廣告"
             },
@@ -565,8 +565,8 @@
                 "card-drawn-winrate": "抽取勝率",
                 "hero-tier": "強度",
                 "hero-winrate": "勝率",
-                "locked-premium-info-tooltip": "第一張卡牌揀選統計可供全部使用者使用。英雄和其他卡牌揀選僅適用於高階會籍用戶。點選即可開啟訂閱頁面，或前往「設定」以停用這些資訊框。",
-                "locked-premium-info": "成為高階會員來解鎖統計",
+                "locked-premium-info-tooltip": "第一張卡牌揀選統計可供全部使用者使用。英雄和其他卡牌揀選僅適用於 Premium 會員。點選即可開啟訂閱頁面，或前往「設定」以停用這些資訊框。",
+                "locked-premium-info": "成為 Premium 會員來解鎖統計",
                 "card-deck-impact": "牌組影響（越大越好）",
                 "card-deck-impact-tooltip": "「牌組影響」是該卡牌在原牌組勝率（{{deckWinrate}}）與職業勝率之間的差異",
                 "card-drawn-impact": "抽取影響（越大越好）",
@@ -972,7 +972,7 @@
                 "use-conservative-winrate": "保守勝率",
                 "use-conservative-winrate-tooltip": "在勝率估算中整合與樣本量相關的不確定性",
                 "archetype-filter": {
-                    "all": "全部牌組型態"
+                    "all": "全部型態"
                 },
                 "sample-size-filter": "{{value}} 場賽局",
                 "use-conservative-estimate": "真實排名",
@@ -1018,7 +1018,7 @@
                 "winrate": "{{value}}% 勝率",
                 "last-used": "上次使用：{{value}}",
                 "created-on": "已創建：「{{value}}」",
-                "archive-button-tooltip": "歸檔牌組（你可以之後復原）",
+                "archive-button-tooltip": "封存這套牌組（你之後可以隨時還原）",
                 "restore-button-tooltip": "復原牌組",
                 "default-deck-name": "牌組名稱",
                 "move-button-tooltip": "將這副牌組拖曳到同職業的另一副牌組，以合併它們"
@@ -1070,14 +1070,14 @@
             "deckbuilder": {
                 "choose-your-format-title": "選擇你的玩法",
                 "choose-your-class-title": "揀選你的職業",
-                "build-your-deck-title": "組建你的牌組",
+                "build-your-deck-title": "構築牌組",
                 "go-back-format": "模式：{{formatName}} - 點選以返回模式選擇介面",
                 "go-back-class": "職業：{{className}} - 點選以返回職業選擇介面",
                 "import-deck-button-tooltip": "匯入已複製的牌組代碼"
             },
             "meta": {
                 "deck": {
-                    "archetype-core-cards-header": "牌組型態核心卡",
+                    "archetype-core-cards-header": "型態核心卡牌",
                     "cards-header-details": "（{{value}} 張卡牌）",
                     "added-cards-header": "新增的卡牌",
                     "copy-deckstring-button": "複製到爐石（牌組代碼）",
@@ -1089,9 +1089,9 @@
                     "view-decks-button": "檢視牌組",
                     "view-decks-button-tooltip": "檢視該型態的全部牌組",
                     "no-data-empty-state-title": "我們沒有該牌組／排名／時間／賽制組合的資料",
-                    "view-details-button-tooltip": "檢視卡牌等級的詳細資訊和更深入的統計（僅高階會員）",
-                    "added-cards-header-tooltip": "這牌組中不在核心卡中的卡牌",
-                    "removed-cards-header-tooltip": "這套牌組中沒有的核心卡牌",
+                    "view-details-button-tooltip": "檢視卡牌等級的詳細資訊和更深入的統計（僅 Premium 會員）",
+                    "added-cards-header-tooltip": "此牌組中包含但非屬核心的卡牌",
+                    "removed-cards-header-tooltip": "此牌組中未包含的核心卡牌",
                     "archetype-core-cards-header-tooltip": "此型態牌組的大多數牌組中都存在的牌"
                 },
                 "core-cards-header": "核心卡牌",
@@ -1114,16 +1114,16 @@
                         "drawn-winrate-impact-header": "抽取影響（越大越好）",
                         "drawn-winrate-header": "抽取勝率",
                         "drawn-winrate-header-tooltip": "卡牌在賽局中被抽出或換牌結束後出現在你的起始手牌中時的平均勝率",
-                        "copy-per-deck-header-tooltip": "此卡牌在該型態牌組中的平均張數",
+                        "copy-per-deck-header-tooltip": "此型態牌組中，該卡牌的平均張數",
                         "mulligan-winrate-impact-header": "起手影響",
-                        "drawn-winrate-impact-header-tooltip": "卡牌在賽局中被抽出或換牌結束後出現在你的起始手牌中時的牌組平均勝率",
-                        "copy-per-deck-header": "每副牌組中的平均張數",
+                        "drawn-winrate-impact-header-tooltip": "在對戰中抽到此卡牌，或於重抽階段結束時保留在起手牌中的情況下，相對於牌組基礎勝率的勝率變動",
+                        "copy-per-deck-header": "平均牌組張數",
                         "discovered-winrate-header-tooltip": "顯示賽局中發現的卡牌的平均勝率",
                         "discovered-winrate-impact-header": "發現—影響",
                         "discovered-winrate-header": "發現—勝率",
-                        "discovered-winrate-impact-header-tooltip": "顯示賽局中發現的卡牌相對於牌組勝率的平均勝率",
-                        "discovered-winrate-impact-tooltip-low-data": "⚠️ - 此牌僅被發現或抽到過 {{value}} 次，因此統計資料可能不準確。此數據使用牌組原型在傳說階級頂尖與鑽石階級高階玩家賽局所有職業時的統計資料。",
-                        "discovered-winrate-impact-tooltip-data": "此牌已被發現或抽到 {{value}} 次。此數據使用牌組原型在傳說階級頂尖與鑽石階級高階玩家賽局所有職業時的統計資料。",
+                        "discovered-winrate-impact-header-tooltip": "在對戰中「發現」此卡牌後，相對於牌組基礎勝率的勝率變動",
+                        "discovered-winrate-impact-tooltip-low-data": "⚠️ - 此牌僅被發現或抽到過 {{value}} 次，因此統計資料可能不準確。此數據使用牌組原型在傳說階級頂尖與鑽石階級 Premium玩家賽局所有職業時的統計資料。",
+                        "discovered-winrate-impact-tooltip-data": "此牌已被發現或抽到 {{value}} 次。此數據使用牌組原型在傳說階級頂尖與鑽石階級 Premium玩家賽局所有職業時的統計資料。",
                         "play-coin-filter": {
                             "all": "所有行動次序",
                             "coin": "後攻",
@@ -1595,12 +1595,12 @@
                 "winrate": "勝率",
                 "runs": "場次",
                 "starter-deck": "起始牌組",
-                "final-deck": "最後牌組",
+                "final-deck": "最終牌組",
                 "all-runs-with-deck": "\"{{deckName}}\" 的所有賽局",
                 "run-details": "場次詳情",
                 "number-of-runs": "挑戰的次數",
                 "average-wins-per-run": "每場平均獲勝數",
-                "archive-deck-tooltip": "歸檔牌組（你可以之後復原）",
+                "archive-deck-tooltip": "封存牌組（你之後可以隨時還原）",
                 "delete-deck-tooltip": "永久刪除牌組",
                 "restore-deck-tooltip": "復原牌組",
                 "rename-deck-tooltip": "重新命名牌組",
@@ -1675,7 +1675,7 @@
                 "choose-your-hero-title": "選擇你的英雄",
                 "choose-your-hero-power-title": "選擇你的英雄能力",
                 "choose-your-signature-treasure-title": "選擇你的珍藏寶藏",
-                "build-your-deck-title": "組建你的牌組",
+                "build-your-deck-title": "構築牌組",
                 "go-back-hero": "英雄：{{selectedCardName}} - 點選以返回英雄選擇介面",
                 "go-back-hero-power": "英雄能力：{{selectedCardName}} - 點選以返回英雄能力選擇介面",
                 "go-back-signature-treasure": "寶藏： {{selectedCardName}} - 點選以返回珍藏寶藏選擇介面",
@@ -1685,7 +1685,7 @@
                 "export-deckcode-button": "複製代碼",
                 "save-deck-button": "儲存牌組",
                 "deck-saved-info": "牌組已儲存",
-                "save-deckcode-button-tooltip": "將此牌組加入我的牌組頁籤",
+                "save-deckcode-button-tooltip": "將此牌組新增至「我的牌組」",
                 "show-buckets-button-label": "詞條",
                 "show-buckets-button-tooltip": "【實驗性質】根據你牌組中的卡牌來顯示可供選擇的協同卡牌組合。假設是以下列方式根據目前牌組中的卡牌來決定獲得的協同組合：1）建立包含你牌組中至少一張卡牌的所有組合清單；2）接著從中隨機挑選一個組合供你選擇。",
                 "bucket-filter-button-tooltip": "依詞條過濾。 卡牌列表將僅包括至少有一張在選定詞條裡的卡牌",
@@ -1802,8 +1802,8 @@
             "replay-info": {
                 "rank-issue-tooltip": "我們在獲取玩家排名時出了問題",
                 "versus": "對上",
-                "loot-icon-tooltip": "在此局後加入牌組的卡",
-                "treasure-icon-tooltip": "在此局後加入牌組的卡",
+                "loot-icon-tooltip": "此回合後新增至牌組的卡牌",
+                "treasure-icon-tooltip": "此回合後新增至牌組的卡牌",
                 "mmr": "評分",
                 "show-stats-button": "統計",
                 "show-stats-button-tooltip": "顯示統計資料",
@@ -1886,12 +1886,12 @@
             "tip-11": "[決鬥擂台] 將滑鼠游標懸停在對手的名字上也會顯示他們的職業",
             "ad-tip-prefix": "你知曉嗎？{{text}}",
             "share_profile_page": "線上訪問你自己的個人資料頁面，並與其他人分享以展示你的成就和統計資料",
-            "constructed_deck_stats_free": "免費瀏覽目前熱門牌組列表！",
+            "constructed_deck_stats_free": "免費瀏覽當前熱門的牌組清單！",
             "tip-0": "如果你有任何意見反應、錯誤或只是想聯繫，請訪問我們的 Discord（連結位於頂端）！",
             "discover_highlight": "「發現」時將滑鼠懸停在卡牌上會突出顯示牌堆中的相關資訊",
             "contextual_related_cards": "將滑鼠懸停在記牌器中的某些卡牌上以獲取有關它們作用效果的更多資訊",
             "mercs_terasure_highlight": "將滑鼠懸停在傭兵中的寶藏上可以突出隊伍中的協同作用",
-            "ad-tip-premium": "高階會員",
+            "ad-tip-premium": "Premium 會員",
             "bg_tab_key": "按下「Tab」即可快速概覽旅店大堂中全部玩家的進度",
             "achievements_pin": "選擇任意數量的成就以在遊戲過程中追蹤它們，並檢視它們的即時更新",
             "quest_stats": "直接在疊加層中檢視任務的平均完成輪數和獎勵的平均位置",
@@ -1902,7 +1902,7 @@
             "bg_wisdomball": "你可以直接從疊加層中獲得遊戲裏一些最佳玩家的建議並採用他們的策略",
             "collection_stats": "你可以檢視所顯示集群的卡牌歷史記錄和全域統計，並隨時在它們之間切換",
             "achievements_pick_for_me": "你可以讓應用程式來為你揀選並追蹤 3 項成就",
-            "lottery": "你可以參加每月抽獎來贏得 Firestone 高階會員訂閱（從「設定」 > 「一般」 > 「抽獎」頁面啟用）",
+            "lottery": "你可以參加每月抽獎來贏得 Firestone Premium 會員訂閱（從「設定」 > 「一般」 > 「抽獎」頁面啟用）",
             "etc_buddies": "當扮演『樂團經理』精英牛頭大佬時，你可以看到發現池中的全部戰寵",
             "bg_hero_select": "你可以直接在英雄選擇介面上取得每個英雄的統計",
             "minions_list_by_tribe": "你可以啟用一個選項「在手下列表中新增按類別分組的列表」，這可以讓你在手下列表中按類別分組手下，從臃腫的類別小工具閒置出一些空間。",
@@ -1933,7 +1933,7 @@
             "copy-deck-tooltip": "點選以將高勝率牌組複製到剪貼簿",
             "with-name": "本週的旅店大亂鬥是：{{name}} （開始於 {{date}}）",
             "no-name": "旅店大亂鬥，開始於 {{date}}",
-            "non-buildable-warning-tooltip": "你牌庫中缺少該職業的全部頂級牌組都需要的卡牌"
+            "non-buildable-warning-tooltip": "此職業的所有熱門牌組中，都包含你收藏中未擁有的卡牌"
         },
         "lottery": {
             "navigation": {
@@ -1941,7 +1941,7 @@
                 "lottery": "抽獎"
             },
             "close-confirmation-button-ok": "不，我不要，告辭",
-            "close-confirmation-text-2": "關閉此視窗將停止獲取點數並停用臨時高階功能，直到你重新啟動應用程式。如果你是多螢幕配置，請考慮使用頂端的「設定疊加層」開關將其移動到另一個螢幕。",
+            "close-confirmation-text-2": "關閉此視窗將停止獲取點數並停用臨時 Premium 會籍功能，直到你重新啟動應用程式。如果你是多螢幕配置，請考慮使用頂端的「設定疊加層」開關將其移動到另一個螢幕。",
             "lottery": {
                 "info-text": "參加抽獎活動即可獲得 Firestone 訂閱，每次為期兩個月。你需要一個 Overwolf 帳戶才能參加抽獎。點數的累積方式很簡單：保持此視窗開啟，並遊玩遊戲與完成目標即可累計點數（廣告收益將用於支持開發者）。 ",
                 "stats": {
@@ -2079,9 +2079,9 @@
             },
             "unsubscribe-modal": {
                 "cancel-button": "留在舊訂閱",
-                "text-legacy": "取消訂閱將會終止你的續訂。在當前訂閱期限結束之前，你仍可使用高階功能。⚠️舊版方案已棄用，因此在未來你將無法重新訂閱該特定方案。",
+                "text-legacy": "取消訂閱將會終止你的續訂。在當前訂閱期限結束之前，你仍可使用 Premium 會籍功能。⚠️舊版方案已棄用，因此在未來你將無法重新訂閱該特定方案。",
                 "title": "解除訂閱 {{plan}} 方案？",
-                "text": "取消訂閱將會終止你的自動續訂。在當前訂閱期限結束之前，你仍可使用高階功能。你將會被帶到 Tebex 的結帳頁面以在那裡處理你的訂閱，並且它將於幾分鐘後在應用程式中更新。",
+                "text": "取消訂閱將會終止你的自動續訂。在當前訂閱期限結束之前，你仍可使用 Premium 會籍功能。你將會被帶到 Tebex 的結帳頁面以在那裡處理你的訂閱，並且它將於幾分鐘後在應用程式中更新。",
                 "unsubscribe-ongoing-label": "解除訂閱中..."
             },
             "billing": {
@@ -2090,18 +2090,18 @@
                 "yearly-subtext": "（折扣優惠 {{value}}%）",
                 "yearly": "每年計費",
                 "click-to-copy-code": "點選將程式碼複製到剪貼簿",
-                "six-month-coupon-text": "限時優惠！在 {{endDate}} 之前，結帳時輸入以下代碼，即可額外享有 {{reduction}} 折扣：",
+                "six-month-coupon-text": "限時優惠！於 {{endDate}} 前，在結帳流程中使用以下代碼，即可額外享有 {{reduction}} 折扣：",
                 "six-month-subtext": "（折扣優惠 {{value}}%）",
                 "six-month": "每半年計費一次",
-                "yearly-coupon-text-2": "為了慶祝 {{expansionName}} 的推出，在結帳流程中使用以下代碼，即可額外獲得 {{reduction}} 的折扣："
+                "yearly-coupon-text-2": "為慶祝 {{expansionName}} 上線，於結帳流程中使用以下代碼，即可額外享有 {{reduction}} 折扣："
             },
-            "unsubscribe-button-tooltip-legacy": "取消訂閱舊版方案。一旦取消，該方案將不會再顯示在可用方案清單中，你必須選擇一個新方案才能持續享有高階功能。",
-            "title": "高階會籍方案",
+            "unsubscribe-button-tooltip-legacy": "取消訂閱舊版方案。一旦取消，該方案將不會再顯示在可用方案清單中，你必須選擇一個新方案才能持續享有 Premium 會籍功能。",
+            "title": "Premium 會籍方案",
             "plan": {
-                "premium": "高階贊助者",
+                "premium": "Premium 支持者",
                 "legacy": "舊版訂閱",
-                "premium-annual": "高階贊助者",
-                "premium-six-months": "高階贊助者"
+                "premium-annual": "Premium 支持者",
+                "premium-six-months": "Premium 支持者"
             },
             "periodicity": {
                 "monthly": "每月",
@@ -2109,13 +2109,13 @@
                 "six-month": "六個月"
             },
             "features": {
-                "title": "特色",
+                "title": "會籍功能",
                 "supportFirestone": "支持 Firestone",
                 "discordRole": "{{value}} Discord 角色",
                 "params": {
-                    "premium": "「高階贊助者」"
+                    "premium": "「Premium 支持者」"
                 },
-                "premiumFeatures": "高階功能",
+                "premiumFeatures": "Premium 會籍功能",
                 "prioritySupport": "支援優先",
                 "removeAds": "移除廣告"
             },
@@ -2809,7 +2809,7 @@
                 "mulligan-keep-rate": "(留牌率)%",
                 "mulligan-impact-tooltip-free": "這張卡牌留在起始手牌中對你的勝率有多大影響。今天你還有 {{value}} 次免費使用機會。",
                 "deck-mulligan-overview-title": "牌組起手概觀",
-                "locked-premium-info-tooltip": "成為高階會員即可查詢你牌組的詳細起始手牌資訊。你每天可以免費使用此功能 {{value}} 次。",
+                "locked-premium-info-tooltip": "成為 Premium 會員以檢視牌組的詳細重抽階段數據。你每天可免費使用此功能 {{value}} 次。",
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對戰 {{opponentClass}} | {{sampleSize}} 場賽局",
                 "deck-mulligan-filter-time-tooltip": "顯示自 {{timeFrame}} -（{{patchDetails}}）以來的所有賽局。點選進行更改。",
                 "sample-size-tooltip": "遊玩該牌組型態的賽局數（若有）；否則它會使用精確的牌組列表",
@@ -2828,7 +2828,7 @@
                     "global-stats-tooltip": "這個列表的統計數據是專屬於使用此確切牌組的結果，而頁面頂部的統計數據則是針對整副牌組型態。"
                 },
                 "close-button-tooltip": "停用牌組概覽。你可以從「設定」中重新啟用它",
-                "toggle-button-locked-tooltip": "高階會員可以檢視該套牌的起手換牌指南和統計資料。點選訂閱以解鎖所有高階福利！"
+                "toggle-button-locked-tooltip": "Premium 會員可以檢視該套牌的起手換牌指南和統計資料。點選訂閱以解鎖所有 Premium 福利！"
             },
             "discover": {
                 "will-be-active": "啟用",
@@ -2893,7 +2893,7 @@
             "temp-result-text": "模擬進行中",
             "locked-premium-info": "解鎖快速模擬",
             "temp-result-tooltip": "你看到的是中途模擬結果；模擬仍在進行中，最終模擬結果可能會發生變化",
-            "locked-premium-info-tooltip": "成為高階會員以啟用並提前獲得模擬戰鬥的中途結果",
+            "locked-premium-info-tooltip": "成為 Premium 會員以啟用並提前獲得模擬戰鬥的中途結果",
             "import-tooltip": "點選以在模擬器中匯入此戰鬥"
         },
         "sim": {
@@ -3058,7 +3058,7 @@
             "not-enough-data-points-warning": "該英雄的樣本量很小（只有 {{value}} 個資料點），因此統計可能會關閉。你可以嘗試在「戰場」視窗的英雄揀選介面中停用一些過濾",
             "average-position": "名次",
             "tier": "強度",
-            "locked-premium-info-tooltip": "成為高階會員即可檢視詳細的英雄統計。你每天可以免費使用此功能 {{value}} 次。",
+            "locked-premium-info-tooltip": "成為 Premium 會員即可檢視詳細的英雄統計。你每天可以免費使用此功能 {{value}} 次。",
             "tribes-impact": "手下類別影響",
             "pickrate": "揀選率"
         },
@@ -3189,7 +3189,7 @@
                     "average-hero-tooltip": "以考量到所有困難的情況下對這位英雄達成任務的回合數。總遊玩賽局數：{{value}}"
                 },
                 "free-uses-text": "剩 {{value}} 次",
-                "locked-premium-info-tooltip": "成為高階會員即可檢視詳細的任務和獎勵統計。你每天可以免費使用此功能 {{value}} 次。",
+                "locked-premium-info-tooltip": "成為 Premium 會員即可檢視詳細的任務和獎勵統計。你每天可以免費使用此功能 {{value}} 次。",
                 "free-uses-tooltip": "你每天可以免費使用此功能 {{max}} 次，目前剩 {{left}} 次"
             },
             "trinkets": {
@@ -3303,7 +3303,7 @@
             "copy-deck-tooltip-confirmation": "複製到剪貼簿， 然後你就可以將它匯入「爐石戰記」",
             "personal-deck-text": "你最後使用的牌組",
             "explore-decks-tooltip": "探索在英雄決鬥擂台中使用相同英雄／英雄能力／珍藏寶藏組合獲得 10 場以上勝利的其他牌組",
-            "build-deck-tooltip": "以內建牌組構建器來組建你自己的牌組",
+            "build-deck-tooltip": "使用本應用程式的牌組編輯器來構築你的牌組",
             "copy-personal-deck-tooltip": "這是你最後一次使用的牌組。點選將其牌組代碼複製到剪貼簿"
         }
     },
@@ -3381,7 +3381,7 @@
             "widget-size-label": "小工具大小",
             "show-advanced-settings-button": "顯示進階設定",
             "hide-advanced-settings-button": "隱藏進階設定",
-            "locked-tooltip": "成為高階會籍用戶即可使用此選項！ （透過點選主視窗中廣告區塊上方的文字，你可以成為高階會籍用戶並支持該應用程式）",
+            "locked-tooltip": "成為 Premium 會員即可使用此選項！ （透過點選主視窗中廣告區塊上方的文字，你可以成為 Premium 會員並支持該應用程式）",
             "counter-dropdown": {
                 "on-tooltip": "始終在偵測到你當前的牌堆、手牌和發現選項中，或者在賽局過程中打出過相關卡牌時，顯示計數器",
                 "limited": "有限的",
@@ -3416,7 +3416,7 @@
                 "data": "資料",
                 "lottery": "抽獎",
                 "mods": "模組",
-                "premium": "高階會員",
+                "premium": "Premium 會員",
                 "appearance": "外觀",
                 "admin": "管理",
                 "widgets": "小工具",
@@ -3521,7 +3521,7 @@
                 "reset-prefs-confirmation": "全部設定已重設。這包括圖示位置及Twitch設置，別忘了設定你需要的 :)",
                 "restart-app-button-label": "重啟應用程式",
                 "enable-mailbox-label": "啟用信箱",
-                "allow-games-share-tooltip": "允許應用程式展示你的賽局（和牌組列表）。該分享將是匿名的，但如果你正在處理私密的牌組列表，你可能需要將其關閉。",
+                "allow-games-share-tooltip": "翻譯：允許此應用程式分享你的對戰紀錄（與牌組清單）。分享過程將採取匿名方式，但如果你正在研究秘密牌組，建議關閉此選項。",
                 "enable-mailbox-unread-tooltip": "當你有未讀訊息時，信箱圖示上會顯示一個紅點。",
                 "enable-mailbox-tooltip": "顯示信箱選單，讓你可以在應用程式內存取最新的重要「爐石戰記」新聞。",
                 "enable-mailbox-unread-label": "顯示未讀取信箱",
@@ -3645,17 +3645,17 @@
             "premium": {
                 "lottery-opacity-title": "抽獎小工具不透明度",
                 "lottery-size-title": "抽獎小工具大小",
-                "text-1": "成為高階會籍用戶是支持此應用程式和我為改進 Firestone 所做的工作的最佳方式。此外，你還可以獲得多項功能，像是疊加層小工具、一個帶有專屬個人資料頁面的網站以及更多的內容。你可以在 {{link}} 找到所有高階功能的詳細資訊。",
+                "text-1": "成為 Premium 會員是支持此應用程式和我為改進 Firestone 所做的工作的最佳方式。此外，你還可以獲得多項功能，像是疊加層小工具、一個帶有專屬個人資料頁面的網站以及更多的內容。你可以在 {{link}} 找到所有 Premium 會籍功能的詳細資訊。",
                 "lottery-button-text": "啟用抽獎",
                 "lottery-block-title": "抽獎",
                 "lottery-block-text3": "⚠️：如果你有多個螢幕，請嘗試在小工具中關閉「設定疊加層」，然後將其移至第二個螢幕。",
-                "lottery-block-text4": "⚠️：如果你是高階會籍用戶，選擇參加抽獎將不會向你展示廣告 - 如果你中獎，我們將為你發放等值的獎品。",
+                "lottery-block-text4": "⚠️：如果你是 Premium 會員，選擇參加抽獎將不會向你展示廣告 - 如果你中獎，我們將為你發放等值的獎品。",
                 "lottery-block-text2": "一旦新的抽獎賽季開始，先前賽季的點數將被重設。",
-                "title": "高階會員訂閱選項",
+                "title": "Premium 會員訂閱選項",
                 "lottery-block-text1": "參加抽獎活動可讓你在顯示抽獎視窗的狀態下，透過在遊戲中執行特定動作（例如花費資源）來累積點數。每兩週結束時，將隨機抽出 2 名中獎者（點數越多，中獎機率越高）。中獎者將獲得 2 個月的 Premium 會員資格，並會在 {{twitterLink}} 與 {{discordLink}} 上公布。",
                 "lottery-widget-settings-title": "小工具設定",
                 "link": "維基上",
-                "lottery-premium-section-tooltip": "此區塊僅適用於高階會籍用戶"
+                "lottery-premium-section-tooltip": "此區塊僅適用於 Premium 會員"
             },
             "discord": {
                 "advanced-config-title": "進階配置",
@@ -3903,10 +3903,10 @@
                 "hand-markers-title": "手牌標記",
                 "hide-generated-cards-label": "隱藏生成的卡牌",
                 "group-cards-by-zone-label": "新現代記牌器",
-                "hide-generated-cards-tooltip": "隱藏由其他卡牌產生且不在手牌或牌堆中的卡牌。⚠️：隱藏產生的卡牌可能會導致部分功能在降級模式下運作（效能下降），例如卡牌突出顯示",
-                "show-dk-runes-tooltip": "在記牌器頂端新增一個區塊，顯示牌組中已知的DK符文",
+                "hide-generated-cards-tooltip": "隱藏由其他卡牌產生且不在手牌或牌堆中的卡牌。⚠️：隱藏生成的卡牌可能會導致部分功能降級運作（效能下降），例如卡牌突出顯示",
+                "show-dk-runes-tooltip": "在記牌器頂端新增一個區塊，，用以顯示該牌組中已知的死亡騎士符文",
                 "show-dk-runes-label": "顯示DK符文",
-                "group-cards-by-zone-tooltip": "啟用時，記牌器會將卡牌分成可摺疊的區塊（牌組、手牌及其他），並開啟部分新功能。關閉此選項可使用「經典」顯示模式，此模式會將所有卡牌歸類在單一區塊中。",
+                "group-cards-by-zone-tooltip": "啟用後，記牌器會將卡牌分為可折疊的區塊（牌組、手牌與其他），並開啟部分新功能。若關閉此選項，將會使用「傳統顯示模式」，所有卡牌會合併顯示在同一個區塊中。",
                 "known-decklist-label": "載入已知的牌組佇列",
                 "known-decklist-tooltip": "啟用時，如果在賽局開始時已知牌組資訊，記牌器將嘗試載入當前對手的牌組列表（例如在玩《威茲邦的英雄們》扭曲模式時）",
                 "sequence-info-tooltip": "一個指示器顯示「在對手手牌中被某張牌衍生多張不同的卡牌」，來幫助你識別哪張是哪張。",
@@ -4103,7 +4103,7 @@
                 "max-health-option-blink": "閃爍",
                 "max-health-option-mouseover": "滑鼠懸停",
                 "show-ooc-tracker-label": "在選單顯示記牌器",
-                "show-ooc-tracker-tooltip": "在戰鬥後的卡牌揀選階段顯示你的牌組，以讓你看到卡牌之間的連動。",
+                "show-ooc-tracker-tooltip": "在對戰之間挑選寶藏時顯示牌組清單。這能讓你檢視卡牌之間的協同作用等資訊。",
                 "show-ooc-hero-info-label": "顯示英雄資料",
                 "show-ooc-hero-info-tooltip": "在決鬥開始之前， 當滑鼠移到選項上時顯示英雄／英雄能力／珍藏寶藏的資料",
                 "show-ooc-deck-select-label": "顯示快速牌組小工具",
@@ -4183,7 +4183,7 @@
                 "tribes": "類別"
             },
             "full-toggle-label": "啟用英雄戰場",
-            "full-toggle-tooltip": "關閉以停用全部英雄戰場即時功能",
+            "full-toggle-tooltip": "關閉此選項以停用所有英雄戰場即時功能",
             "general": {
                 "companion-app-title": "應用程式伴侶",
                 "enable-app-label": "啟用應用程式",
@@ -4241,7 +4241,7 @@
                 "show-intermediate-results-tooltip": "顯示模擬戰鬥的中途隨著模擬持續進行而變化的結果",
                 "max-sim-duration-tooltip": "允許模擬運行的最長時間（以毫秒為單位）。如果超時後仍未達到最大模擬次數，模擬器將停止並提前輸出結果",
                 "show-trinket-tips-label": "顯示飾品貼士",
-                "show-trinket-tips-tooltip": "在疊加層（僅高階會員）或手下列表（所有人）的飾品選擇階段，顯示頂尖 BG 玩家提供的飾品貼士。",
+                "show-trinket-tips-tooltip": "在疊加層（僅 Premium 會員）或手下列表（所有人）的飾品選擇階段，顯示頂尖 BG 玩家提供的飾品貼士。",
                 "hero-stats-overlay-scale": "「英雄統計」疊加層大小"
             },
             "overlay": {
@@ -4459,8 +4459,8 @@
         },
         "arena": {
             "general": {
-                "show-card-selection-overlay-tooltip": "（僅高階會員）在選牌時顯示統計。",
-                "show-hero-selection-overlay-tooltip": "（僅高階會員）在選英雄時顯示統計",
+                "show-card-selection-overlay-tooltip": "（僅 Premium 會員）在選牌時顯示統計。",
+                "show-hero-selection-overlay-tooltip": "（僅 Premium 會員）在選英雄時顯示統計",
                 "show-card-selection-overlay": "選卡疊加層",
                 "show-draft-tracker": "選牌階段的記牌器",
                 "show-hero-selection-overlay": "英雄揀選階段疊加層",
@@ -4468,7 +4468,7 @@
                 "tracker-size": "選牌記牌器大小",
                 "draft-overlay-size": "「選牌」疊加層大小",
                 "show-card-stats-discover": "發現時的卡牌統計",
-                "show-card-stats-discover-tooltip": "顯示發現時的卡牌統計資料。非高階會員每天可使用 {{freeUses}} 場遊戲，高階會員可以無限使用",
+                "show-card-stats-discover-tooltip": "顯示發現時的卡牌統計資料。非 Premium 會員每天可使用 {{freeUses}} 場遊戲，Premium 會員可以無限使用",
                 "show-draft-tracker-pick-rate": "顯示揀選率",
                 "show-draft-tracker-pick-rate-tooltip": "在選牌記牌器中，顯示牌組裡每張卡的揀選率資訊",
                 "show-draft-tracker-impact": "顯示影響",
