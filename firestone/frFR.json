@@ -1844,7 +1844,12 @@
                 "battle-tag-copied": "Battletag copié dans le presse-papiers !",
                 "click-to-copy": "Cliquez pour copier",
                 "watch-replay-in-game-button": "En jeu",
-                "watch-replay-in-game-button-tooltip": "Regarder le replay en jeu (le jeu doit être lancé, et le mod « Replay Viewer » doit être installé)"
+                "watch-replay-in-game-button-tooltip": "Regarder le replay en jeu (le jeu doit être lancé, et le mod « Replay Viewer » doit être installé)",
+                "watch-replay-in-app-button": "Dans l’app",
+                "copy-in-game-link": "Copier le lien en jeu",
+                "copy-link": "Copier le lien",
+                "copy-link-tooltip": "Copier le lien du replay",
+                "copy-web-link": "Copier le lien web"
             },
             "class-icon-toggle": {
                 "label": "Icônes de classes",
@@ -1865,7 +1870,22 @@
                     "connection-failed": "Le replay n’a pas pu être téléchargé. Vérifiez vos paramètres de connexion (pare-feu, VPN, proxy, etc.)",
                     "mod-not-active": "Le mod « Replay Viewer » doit être activé pour utiliser les replays en jeu. Dans les Paramètres, dans l’onglet Mods, activez le mod « Replay Viewer ».",
                     "mod-not-installed": "Le mod « Replay Viewer » doit être installé pour utiliser les replays en jeu. Dans les Paramètres, dans l’onglet Mods, installez puis activez le mod « Replay Viewer ».",
-                    "download-failed": "Le replay n’a pas pu être téléchargé. Vérifiez vos paramètres de connexion (pare-feu, VPN, proxy, etc.)"
+                    "download-failed": "Le replay n’a pas pu être téléchargé. Vérifiez vos paramètres de connexion (pare-feu, VPN, proxy, etc.)",
+                    "rewind-block": "Cette partie a des instances de Rembobinage, qui ne sont pas gérés par la visionneuse de replays pour le moment."
+                }
+            },
+            "in-game-protocol": {
+                "error": {
+                    "in-game-title": "Visionnage du replay impossible",
+                    "fetch-failed": "Les données du replay n’ont pas pu être récupérées. Vérifiez votre connexion et réessayez.",
+                    "fetch-failed-title": "Chargement du replay impossible",
+                    "no-power-log-title": "Replay indisponible",
+                    "no-power-log": "Ce replay ne dispose pas de données en jeu.",
+                    "in-game": "Vous êtes actuellement dans une partie. Finissez-la d’abord pour regarder le replay en jeu."
+                },
+                "os-notification": {
+                    "install-mod-then-launch": "Installez le mod « Replay Viewer » dans les paramètres de Firestone, puis lancez Hearthstone pour regarder le replay en jeu.",
+                    "launch-hearthstone": "Lancez Hearthstone pour regarder ce replay en jeu."
                 }
             }
         },
@@ -2363,7 +2383,8 @@
             "opponent": "Votre adversaire a lancé {{value}} sorts sur des personnages"
         },
         "cards-played-from-another-class": {
-            "player": "Vous avez joué {{value}} cartes d’une autre classe"
+            "player": "Vous avez joué {{value}} cartes d’une autre classe",
+            "opponent": "Votre adversaire a joué {{value}} cartes d’une autre classe"
         },
         "queensguard": {
             "opponent": "Votre adversaire a lancé {{value}} sorts pendant ce tour",
@@ -2570,6 +2591,69 @@
             "player": "Vous avez joué les sœurs Coursevent suivantes pendant cette partie",
             "title": "Sœurs Coursevent",
             "opponent": "Votre adversaire a joué les sœurs Coursevent suivantes pendant cette partie"
+        },
+        "herald": {
+            "player": "Vous avez convoqué {{value}} fois pendant cette partie",
+            "opponent": "Votre adversaire a convoqué {{value}} fois pendant cette partie"
+        },
+        "frost-spells": {
+            "player": "Vous avez lancé {{value}} sorts de givre pendant cette partie",
+            "opponent": "Votre adversaire a lancé {{value}} sorts de givre pendant cette partie"
+        },
+        "overload-cards-played": {
+            "player": "Vous avez joué {{value}} cartes avec Surcharge pendant cette partie",
+            "opponent": "Votre adversaire a joué {{value}} cartes avec Surcharge pendant cette partie"
+        },
+        "friendly-attacks": {
+            "player": "Vos serviteurs ont attaqué {{value}} fois pendant cette partie",
+            "opponent": "Les serviteurs adverses ont attaqué {{value}} fois pendant cette partie"
+        },
+        "hero-damage-instances-this-turn": {
+            "opponent": "Votre héros ou héroïne a subi des dégâts {{value}} fois pendant ce tour",
+            "player": "Le héros ou l’héroïne adverse a subi des dégâts {{value}} fois pendant ce tour"
+        },
+        "cards-discarded": {
+            "opponent": "Votre adversaire a défaussé {{value}} cartes pendant cette partie",
+            "player": "Vous avez défaussé {{value}} cartes pendant cette partie"
+        },
+        "totems-summoned": {
+            "player": "{{value}} Totems invoqués pendant cette partie"
+        },
+        "non-class-cards-added-to-hand": {
+            "opponent": "{{value}} cartes de classe non-voleur ont été ajoutées à la main de votre adversaire pendant cette partie",
+            "player": "{{value}} cartes de classe non-voleur ont été ajoutées à votre main pendant cette partie"
+        },
+        "secrets-triggered": {
+            "player": "{{value}} de vos Secrets ont été déclenchés pendant cette partie"
+        },
+        "damage-to-opponent-this-turn": {
+            "player": "{{value}} points de dégâts infligés au héros ou à l’héroïne adverse pendant ce tour",
+            "opponent": "{{value}} points de dégâts infligés à votre héros ou héroïne pendant ce tour"
+        },
+        "fel-spells": {
+            "player": "Vous avez lancé {{value}} sorts de fiel pendant cette partie",
+            "opponent": "Votre adversaire a lancé {{value}} sorts de fiel pendant cette partie"
+        },
+        "freebird": {
+            "player": "Vous avez joué {{value}} oiseaux libres pendant cette partie",
+            "opponent": "Votre adversaire a joué {{value}} oiseaux libres pendant cette partie"
+        },
+        "shirvallah": {
+            "player": "Vous avez dépensé {{value}} cristaux de mana pour des sorts pendant cette partie. Shirvallah, le tigre coûte actuellement ({{cost}})"
+        },
+        "damage-taken-this-turn": {
+            "player": "Votre héros a subi {{value}} points de dégâts pendant ce tour",
+            "opponent": "Le héros ou l’héroïne adverse a subi {{value}} points de dégâts pendant ce tour"
+        },
+        "friendly-dead-minions-this-turn": {
+            "player": "{{value}} serviteurs alliés sont morts pendant ce tour",
+            "opponent": "{{value}} serviteurs adverses sont morts pendant ce tour"
+        },
+        "beasts-summoned": {
+            "player": "{{value}} Bêtes invoquées pendant cette partie"
+        },
+        "weapons-equipped": {
+            "player": "{{value}} armes équipées pendant cette partie"
         }
     },
     "loading": {
@@ -3482,7 +3566,9 @@
                 "update-available": "Une nouvelle version de ce mod est disponible. Cliquez pour le mettre à jour",
                 "update-disabled": "Une nouvelle version de ce mod est disponible, mais vous ne pouvez pas l’installer avant de fermer le jeu",
                 "need-to-close-game-warning": "Vous devez fermer Hearthstone avant d’installer, de désintaller, de mettre à jour, d’activer ou de désactiver des mods.",
-                "installed-mods-description-2": "Les mods suivants sont installés (supprimez le fichier correspondant dans le dossier {{path}} pour les désinstaller) :"
+                "installed-mods-description-2": "Les mods suivants sont installés (supprimez le fichier correspondant dans le dossier {{path}} pour les désinstaller) :",
+                "auto-update-label": "Mise à jour auto",
+                "auto-update-tooltip": "Met automatiquement à jour les mods quand une nouvelle version est disponible. Les nouvelles versions seront installées à la fermeture du jeu."
             },
             "third-party": {
                 "intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Elles ne nous rapportent pas d’argent, mais nous recevons de l’exposition, puisque les sites parlent ensuite de nous :)",
@@ -3927,7 +4013,8 @@
                     "holy-spells-tooltip": "Affiche le nombre de sorts du sacré lancés par votre adversaire. N’apparaît que si votre adversaire est un paladin",
                     "sea-shanty-tooltip": "Affiche le nombre de sorts que votre adversaire a lancés sur des personnages. N’apparaît que si votre adversaire est un paladin",
                     "corpses-label": "Cadavres",
-                    "corpses-tooltip": "Afficher un compteur avec le nombre total de cadavres de votre adversaire : il apparaît lorsque vous savez qu’il ou elle possède une carte qui dépense des cadavres mais que le jeu n’affiche pas le compteur"
+                    "corpses-tooltip": "Afficher un compteur avec le nombre total de cadavres de votre adversaire : il apparaît lorsque vous savez qu’il ou elle possède une carte qui dépense des cadavres mais que le jeu n’affiche pas le compteur",
+                    "herald-tooltip": "Affiche le niveau de convocation actuel de votre adversaire"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -4117,7 +4204,41 @@
                     "windrunner-sisters-label": "Sœurs Coursevent",
                     "windrunner-sisters-tooltip": "Affiche quelles sœurs Coursevent vous avez jouées pendant cette partie",
                     "runi-tooltip": "Affiche les cartes qui apparaîtront après avoir joué {{cardName}}",
-                    "runi-label": "{{cardName}}"
+                    "runi-label": "{{cardName}}",
+                    "beasts-summoned-label": "Bêtes invoquées",
+                    "cards-discarded-label": "Cartes défaussées",
+                    "damage-taken-this-turn-label": "Dégâts subis pendant ce tour",
+                    "fel-spells-played-label": "Sorts de fiel joués",
+                    "non-class-cards-added-to-hand-label": "Cartes de classe non-voleur ajoutées à votre main",
+                    "fel-spells-played-tooltip": "Affiche le nombre de sorts de fiel que vous avez lancés pendant cette partie",
+                    "overload-cards-played-tooltip": "Affiche le nombre de cartes avec Surcharge que vous avez jouées pendant cette partie",
+                    "non-class-cards-added-to-hand-tooltip": "Affiche le nombre de cartes de classe non-voleur que vous avez ajoutées à votre main pendant cette partie",
+                    "friendly-attacks-tooltip": "Affiche le nombre de fois que vos serviteurs ont attaqué pendant cette partie",
+                    "damage-taken-this-turn-tooltip": "Affiche les dégâts totaux subis par votre héros ou héroïne pendant ce tour",
+                    "shirvallah-tooltip": "Lorsque vous avez Shirvallah, le tigre dans votre main ou votre deck, affiche combien de mana vous avez dépensé en sorts et le coût actuel de Shirvallah",
+                    "friendly-attacks-label": "Attaques alliées",
+                    "herald-label": "Convocation",
+                    "herald-tooltip": "Affiche votre niveau actuel de convocation",
+                    "cards-discarded-tooltip": "Affiche le nombre de cartes que vous avez défaussées pendant cette partie",
+                    "damage-to-opponent-this-turn-label": "Dégâts à l’adversaire pendant ce tour",
+                    "hero-damage-instances-this-turn-label": "Instances de dégâts au héros ou à l’héroïne adverse",
+                    "freebird-label": "Oiseau libre",
+                    "friendly-dead-minions-this-turn-label": "Serviteurs alliés morts pendant ce tour",
+                    "frost-spells-label": "Sorts de givre",
+                    "overload-cards-played-label": "Cartes avec Surcharge jouées",
+                    "secrets-triggered-label": "Secrets déclenchés",
+                    "shirvallah-label": "Shirvallah, le tigre",
+                    "beasts-summoned-tooltip": "Affiche le nombre de Bêtes que vous avez invoquées pendant cette partie",
+                    "frost-spells-tooltip": "Affiche le nombre de sorts de givre que vous avez lancés pendant cette partie",
+                    "totems-summoned-tooltip": "Affiche le nombre de Totems que vous avez invoqués pendant cette partie",
+                    "friendly-dead-minions-this-turn-tooltip": "Affiche le nombre de serviteurs alliés morts pendant ce tour",
+                    "secrets-triggered-tooltip": "Affiche le nombre de Secrets que vous avez déclenchés pendant cette partie",
+                    "hero-damage-instances-this-turn-tooltip": "Affiche le nombre de fois que le héros ou l’héroïne adverse a subi des dégâts pendant ce tour",
+                    "weapons-equipped-tooltip": "Affiche le nombre d’armes que vous avez équipées pendant cette partie",
+                    "damage-to-opponent-this-turn-tooltip": "Affiche les dégâts totaux infligés au héros ou à l’héroïne adverse pendant ce tour",
+                    "totems-summoned-label": "Totems invoqués",
+                    "weapons-equipped-label": "Armes équipées",
+                    "freebird-tooltip": "Lorsque vous avez un oiseau libre dans votre main ou votre deck, affiche le nombre d’oiseaux libres que vous avez joués pendant cette partie"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -4530,11 +4651,21 @@
         },
         "replay": {
             "menu": {
-                "general": "Général"
+                "general": "Général",
+                "in-game": "En jeu",
+                "in-game-sharing": "Partage"
             },
             "general": {
                 "hide-games-vs-ai": "Masquer les parties contre l’IA",
                 "hide-games-vs-ai-tooltip": "Masquer les parties contre l’IA dans la liste des replays"
+            },
+            "in-game": {
+                "how-to-activate": "Pour activer les replays en jeu, vous devez être membre Premium, puis installer et activer le mod « Replay Viewer » dans l'onglet Mods des Paramètres. Vous verrez alors apparaître un nouveau bouton dans l'onglet Replays, qui vous permettra de regarder vos replays en jeu.",
+                "description": "Les replays en jeu sont une fonctionnalité Premium, avec laquelle vous pouvez regarder les replays de vos parties comme si vous utilisiez le mode Spectateur du jeu, donc avec tous les graphismes, animations et sons du jeu.",
+                "limitations": "Vous devez visionner un replay en jeu dans les 30 jours suivant sa création, sinon il sera supprimé du serveur. Les replays datant de plus de 30 jours seront toujours disponibles dans la visionneuse du navigateur, mais pas dans celle du jeu. Autres limitations : les parties avec des effets de Rembobinage ne sont pas gérées pour le moment."
+            },
+            "in-game-sharing": {
+                "description": "Vous pouvez partager vos replays avec n’importe qui ayant installé Firestone et activé le mod « Replay Viewer ». Pour ce faire, cliquez sur le bouton « Copier le lien » dans l’onglet Replays."
             }
         }
     },
