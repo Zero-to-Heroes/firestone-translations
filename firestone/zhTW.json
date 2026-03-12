@@ -541,7 +541,7 @@
                 "header-pickrate-high-wins-tooltip": "至少獲得 {{value}} 場賽局勝利的揀選率",
                 "header-play-on-curve-winrate": "按費出怪玩法的勝率",
                 "header-play-on-curve-total": "按費出怪玩法的總次數",
-                "header-play-on-curve-winrate-tooltip": "當你打出這張卡牌時的平均勝率，即當你的法力水晶與卡牌花費的一樣多時",
+                "header-play-on-curve-winrate-tooltip": "當你按費曲線打出此牌嘅平均勝率，即現有法力等於卡牌費用時",
                 "header-deck-winrate-tooltip": "包括這張卡牌的牌組勝率",
                 "header-mulligan-winrate": "起手勝率",
                 "header-mulligan-winrate-tooltip": "當你的起始手牌中有這張卡牌時的平均勝率",
@@ -1840,7 +1840,12 @@
                 "battle-tag-copied": "BattleTag 已複製到剪貼簿",
                 "click-to-copy": "點選以複製",
                 "watch-replay-in-game-button": "遊戲內",
-                "watch-replay-in-game-button-tooltip": "在遊戲內觀看重播（遊戲必須處於執行狀態，且須安裝「Replay Viewer」模組）"
+                "watch-replay-in-game-button-tooltip": "在遊戲內觀看重播（遊戲必須處於執行狀態，且須安裝「Replay Viewer」模組）",
+                "watch-replay-in-app-button": "應用程式內",
+                "copy-link": "複製連結",
+                "copy-web-link": "複製網頁連結",
+                "copy-in-game-link": "複製遊戲內連結",
+                "copy-link-tooltip": "複製重播連結"
             },
             "class-icon-toggle": {
                 "label": "使用職業圖示",
@@ -1858,10 +1863,25 @@
             "in-game": {
                 "error": {
                     "connection-failed": "無法下載重播。請檢查你的連線設定，例如防火牆、VPN、代理伺服器等。",
-                    "mod-not-installed": "你必須安裝「Replay Viewer」模組才能使用遊戲內重播。請前往「設定」，並在「模組」分頁下安裝並啟用「Replay Viewer」模組。",
+                    "mod-not-installed": "你必須安裝「Replay Viewer」模組才能使用遊戲內重播。請前往「設定」，並在「模組」頁籤下安裝並啟用「Replay Viewer」模組。",
                     "not-in-game": "必須在執行《爐石戰記》時才能使用遊戲內重播。請啟動《爐石戰記》後再試一次。",
                     "download-failed": "無法下載重播。請檢查你的連線設定，例如防火牆、VPN、代理伺服器等。",
-                    "mod-not-active": "你必須啟用「Replay Viewer」模組才能使用遊戲內重播。請前往「設定」，並在「模組」分頁下啟用「Replay Viewer」模組。"
+                    "mod-not-active": "你必須啟用「Replay Viewer」模組才能使用遊戲內重播。請前往「設定」，並在「模組」頁籤下啟用「Replay Viewer」模組。",
+                    "rewind-block": "本賽局含有倒轉區塊。目前「replay viewer」尚未完全支援此功能。"
+                }
+            },
+            "in-game-protocol": {
+                "os-notification": {
+                    "launch-hearthstone": "啟動《爐石戰記》以在遊戲內觀看此重播。",
+                    "install-mod-then-launch": "請在 Firestone 設定中安裝「Replay Viewer」模組，然後啟動《爐石戰記》以在遊戲內觀看。"
+                },
+                "error": {
+                    "no-power-log": "此重播缺乏遊戲內重播資料。",
+                    "fetch-failed": "無法取得重播資料。請檢查您的連線並再試一次。",
+                    "no-power-log-title": "重播無法使用",
+                    "in-game-title": "無法觀看重播",
+                    "fetch-failed-title": "無法載入重播",
+                    "in-game": "你目前正在對戰中。請先結束對戰再於遊戲內觀看重播。"
                 }
             }
         },
@@ -2276,7 +2296,7 @@
             "opponent": "對手本賽局中已消耗了 {{value}} 具屍體"
         },
         "gardens-grace": {
-            "player": "你的下一張「{{cardName}}」費用為 ({{cost}})（本賽局中你已打出總耗費 {{spellsMana}} 法力值的 {{spells}} 張神聖法術）"
+            "player": "下一張「{{cardName}}」費用 {{cost}}（本賽局你已施放 {{spells}} 張神聖法術，總耗費 {{spellsMana}} 點法力）"
         },
         "chained-guardian": {
             "player": "你已將 {{value}} 張「瘟疫」洗入對手的牌堆中"
@@ -2345,7 +2365,8 @@
             "opponent": "對手對角色施放過 {{value}} 個法術"
         },
         "cards-played-from-another-class": {
-            "player": "你打出過 {{value}} 張其他職業的卡牌"
+            "player": "你打出過 {{value}} 張其他職業的卡牌",
+            "opponent": "對手已打出 {{value}} 張其他職業的卡牌"
         },
         "queensguard": {
             "player": "本回合你已施放 {{value}} 個法術",
@@ -2359,7 +2380,7 @@
             "player": "本賽局中你打出過 {{value}} 個海盜"
         },
         "ceaseless": {
-            "player": "現在「{{cardName}}」的法力水晶為 {{cost}} 點。你和對手已經抽出、打出或摧毀了 {{value}} 張卡牌"
+            "player": "「{{cardName}}」費用 {{cost}}。你和對手已抽、打出或摧毀 {{value}} 張牌"
         },
         "discovers": {
             "player": "你已經發現了 {{value}} 次卡牌",
@@ -2398,8 +2419,8 @@
             "player": "你的下一艘星艦將降低 {{value}} 發射花費"
         },
         "protoss-minion-reduction": {
-            "player": "本賽局中你的神族手下花費降低 {{game}}，而你的下一個神族手下花費額外降低 {{next}}",
-            "opponent": "對手的神族手下在本賽局中花費減少 {{game}} 點，且他下一個神族手下額外減少 {{next}} 點花費。"
+            "player": "本賽局你神族手下費用降低 {{game}}，下一個神族手下額外降低 {{next}}",
+            "opponent": "本賽局對手神族手下費用降低 {{game}}，其下一個神族手下額外降低 {{next}}"
         },
         "combo-cards-played": {
             "player": "本賽局中你打出過 {{value}} 張連擊牌"
@@ -2455,8 +2476,8 @@
             "player": "你的「巨像」會造成 1 + {{value}} 點傷害，兩次"
         },
         "specific-cost": {
-            "opponent": "對手的「{{cardName}}」卡牌目前花費 {{value}} 顆法力水晶",
-            "player": "你的「{{cardName}}」卡牌目前花費 {{value}} 顆法力水晶"
+            "opponent": "對手的「{{cardName}}」目前費用 {{value}}",
+            "player": "你的「{{cardName}}」目前費用 {{value}}"
         },
         "cards-shuffled-into-your-deck": {
             "player": "本賽局中你的牌堆已經洗入卡牌 {{times}} 次",
@@ -2546,6 +2567,69 @@
         },
         "whelp-buff": {
             "player": "本賽局中你的幼龍獲得 +{{atk}}/+{{health}}"
+        },
+        "cards-discarded": {
+            "player": "本賽局你已捨棄 {{value}} 張牌",
+            "opponent": "本賽局對手已捨棄 {{value}} 張牌"
+        },
+        "friendly-attacks": {
+            "opponent": "本賽局對手的手下已攻擊 {{value}} 次",
+            "player": "本賽局你友方手下已攻擊 {{value}} 次"
+        },
+        "fel-spells": {
+            "player": "本賽局你已施放 {{value}} 次魔化法術",
+            "opponent": "本賽局對手已施放 {{value}} 次魔化法術"
+        },
+        "herald": {
+            "player": "本賽局你已預兆 {{value}} 次",
+            "opponent": "本賽局對手已預兆 {{value}} 次"
+        },
+        "overload-cards-played": {
+            "player": "本賽局你已打出 {{value}} 張超載卡牌",
+            "opponent": "對手本賽局已打出 {{value}} 張超載卡牌"
+        },
+        "frost-spells": {
+            "player": "本賽局你已施放 {{value}} 次冰霜法術",
+            "opponent": "本賽局對手已施放 {{value}} 次冰霜法術"
+        },
+        "freebird": {
+            "player": "本賽局你已打出 {{value}} 個「自由鳥」",
+            "opponent": "本賽局對手已打出 {{value}} 個「自由鳥」"
+        },
+        "damage-to-opponent-this-turn": {
+            "player": "本回合對敵方英雄造成 {{value}} 點傷害",
+            "opponent": "本回合對我方英雄造成 {{value}} 點傷害"
+        },
+        "friendly-dead-minions-this-turn": {
+            "player": "本回合有 {{value}} 個友方手下死亡",
+            "opponent": "本回合有 {{value}} 個敵方手下死亡"
+        },
+        "damage-taken-this-turn": {
+            "player": "本回合你英雄已受到 {{value}} 點傷害",
+            "opponent": "本回合對手英雄已受到 {{value}} 點傷害"
+        },
+        "beasts-summoned": {
+            "player": "本賽局已召喚 {{value}} 個野獸"
+        },
+        "totems-summoned": {
+            "player": "本賽局已召喚 {{value}} 個圖騰"
+        },
+        "non-class-cards-added-to-hand": {
+            "player": "本賽局已有 {{value}} 張非盜賊職業的卡牌加入你的手牌",
+            "opponent": "本賽局已有 {{value}} 張非盜賊職業的卡牌加入對手的手牌"
+        },
+        "weapons-equipped": {
+            "player": "本賽局你已裝備 {{value}} 把武器"
+        },
+        "hero-damage-instances-this-turn": {
+            "player": "本回合敵方英雄已受到 {{value}} 次傷害",
+            "opponent": "本回合你英雄受到傷害 {{value}} 次"
+        },
+        "secrets-triggered": {
+            "player": "本賽局你已觸發 {{value}} 個秘密"
+        },
+        "shirvallah": {
+            "player": "本賽局你已在法術上花費 {{value}} 點法力。 「『老虎』希爾瓦拉」目前消耗 {{cost}}"
         }
     },
     "loading": {
@@ -3508,7 +3592,7 @@
                 "hide-release-notes-tooltip": "不要顯示 Firestone 的新版本資訊",
                 "allow-games-share-label": "允許賽局分享",
                 "display-notifications-label": "顯示通知",
-                "display-notifications-tooltip": "切換吐司通知的全域可見性。啟用時，你仍可在對應的分頁中配置每個遊戲模式的通知",
+                "display-notifications-tooltip": "切換吐司通知的全域可見性。啟用時，你仍可在對應的頁籤中配置每個遊戲模式的通知",
                 "display-notifications-confirmation": "現在已關閉通知。",
                 "accessibility-title": "協助工具",
                 "flash-window": "閃爍爐石視窗",
@@ -3640,7 +3724,9 @@
                 "installed-mods-description": "安裝了以下模組（刪除「爐石戰記」／「模組」中的相應檔案即可卸載）：",
                 "warning": "⚠️⚠️：模組會修改遊戲本身的行為方式，因此違反遊戲的服務條款，並有可能導致你的帳戶被封鎖，儘管我尚未聽聞過這類的案例。下方列出是『我個人認為』可以安全使用的模組，但風險仍須由使用者自行承擔。",
                 "installed-mods-description-2": "目前已安裝以下模組（刪除 {{path}} 中對應的檔案即可解除安裝）：",
-                "need-to-close-game-warning": "你必須先關閉《爐石戰記》，才能安裝／解除安裝／更新，或啟用／停用模組。"
+                "need-to-close-game-warning": "你必須先關閉《爐石戰記》，才能安裝／解除安裝／更新，或啟用／停用模組。",
+                "auto-update-label": "自動更新",
+                "auto-update-tooltip": "當模組有新版本可用時將自動更新。新版本會在關閉遊戲時進行安裝。"
             },
             "premium": {
                 "lottery-opacity-title": "抽獎小工具不透明度",
@@ -3896,7 +3982,8 @@
                     "holy-spells-tooltip": "對手是聖騎士時，顯示對手已施放的神聖法術數量。",
                     "sea-shanty-tooltip": "對手是聖騎士時，顯示對手對角色施放過的法術數量。",
                     "corpses-tooltip": "顯示一個計數器，包含對手目前的總屍體數。當你知道對手擁有需要花費屍體數量的卡牌，而遊戲中沒有顯示內建計數器時，此功能便會出現",
-                    "corpses-label": "屍體"
+                    "corpses-label": "屍體",
+                    "herald-tooltip": "顯示對手目前的預兆等級"
                 },
                 "size-title": "大小與不透明度",
                 "opacity-title": "不透明度",
@@ -4090,7 +4177,41 @@
                     "windrunner-sisters-label": "風行者游俠姐妹",
                     "windrunner-sisters-tooltip": "顯示本賽局中你已打出的風行者游俠姐妹",
                     "runi-tooltip": "顯示打出「{{cardName}}」後會歸來的卡牌",
-                    "runi-label": "「{{cardName}}」"
+                    "runi-label": "「{{cardName}}」",
+                    "herald-label": "預兆",
+                    "herald-tooltip": "顯示目前的預兆等級",
+                    "fel-spells-played-label": "魔化法術（已施放）",
+                    "friendly-attacks-label": "友方攻擊數",
+                    "fel-spells-played-tooltip": "顯示本賽局你已施放的魔化法術數量",
+                    "cards-discarded-label": "卡牌（已捨棄）",
+                    "friendly-attacks-tooltip": "顯示本賽局友方手下的攻擊次數",
+                    "cards-discarded-tooltip": "顯示本賽局已捨棄的卡牌數量",
+                    "secrets-triggered-tooltip": "顯示本賽局已觸發的友方秘密數量",
+                    "secrets-triggered-label": "祕密「已觸發」",
+                    "shirvallah-label": "「『老虎』希爾瓦拉」",
+                    "shirvallah-tooltip": "當「『老虎』希爾瓦拉」在手牌或牌堆時，顯示你已花費多少法力值在法術上，以及「『老虎』希爾瓦拉」目前的法力消耗。",
+                    "freebird-label": "「自由鳥」",
+                    "overload-cards-played-tooltip": "顯示本賽局已施放的超載卡牌數量",
+                    "overload-cards-played-label": "超載卡牌（已打出）",
+                    "friendly-dead-minions-this-turn-label": "死亡友方手下（本回合）",
+                    "frost-spells-label": "冰霜法術",
+                    "frost-spells-tooltip": "顯示本賽局你已施放的冰霜法術數量",
+                    "damage-taken-this-turn-label": "受到傷害（本回合）",
+                    "friendly-dead-minions-this-turn-tooltip": "顯示本回合已死亡的友方手下數量",
+                    "damage-taken-this-turn-tooltip": "顯示本回合我方英雄受到的總傷害",
+                    "hero-damage-instances-this-turn-label": "對手傷害（次數/本回合）",
+                    "damage-to-opponent-this-turn-tooltip": "顯示本回合對敵方英雄造成的總傷害",
+                    "non-class-cards-added-to-hand-label": "加入手牌的非盜賊職業卡牌",
+                    "beasts-summoned-label": "野獸（已召喚）",
+                    "totems-summoned-label": "圖騰（已召喚）",
+                    "non-class-cards-added-to-hand-tooltip": "顯示本賽局已加入手牌的非盜賊職業卡牌數量",
+                    "weapons-equipped-label": "武器（已裝備）",
+                    "beasts-summoned-tooltip": "顯示本賽局你已召喚的野獸數量",
+                    "damage-to-opponent-this-turn-label": "傷害對手（本回合）",
+                    "totems-summoned-tooltip": "顯示本賽局已召喚的圖騰數量",
+                    "hero-damage-instances-this-turn-tooltip": "顯示本回合敵方英雄受到傷害的次數",
+                    "weapons-equipped-tooltip": "顯示本賽局已裝備的武器數量",
+                    "freebird-tooltip": "當「自由鳥」在你手牌或牌堆時，顯示本賽局你已打出幾張「自由鳥」。"
                 },
                 "discovery-zone-label": "發現區塊",
                 "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並突出顯示與牌堆的協同作用。"
@@ -4262,7 +4383,7 @@
                 "battle-simulation-label": "戰鬥模擬器疊加層",
                 "battle-simulation-tooltip": "在遊戲頂端顯示當前戰鬥的模擬結果",
                 "battle-simulation-example-label": "顯示模擬範本",
-                "battle-simulation-example-tooltip": "新增一個按鈕，可檢視模擬器如何達到特定結果的範本。⚠️：點選此按鈕將在預設瀏覽器中開啟新分頁",
+                "battle-simulation-example-tooltip": "新增一個按鈕，可檢視模擬器如何達到特定結果的範本。⚠️：點選此按鈕將在預設瀏覽器中開啟新頁籤",
                 "widget-size-label": "小工具大小",
                 "banned-tribes-title": "被禁的手下類別",
                 "banned-tribes-show-in-column-label": "在欄位中顯示",
@@ -4501,11 +4622,21 @@
         },
         "replay": {
             "menu": {
-                "general": "一般"
+                "general": "一般",
+                "in-game": "遊戲內",
+                "in-game-sharing": "分享"
             },
             "general": {
                 "hide-games-vs-ai": "隱藏與AI對戰的遊戲",
                 "hide-games-vs-ai-tooltip": "在檢視完整重播清單時隱藏與AI對戰的場次"
+            },
+            "in-game": {
+                "description": "遊戲內重播功能為 Premium 專屬，讓您可以如同使用遊戲觀戰模式般觀看自己的賽局重播——這意味著您可以體驗到遊戲內所有的視覺效果、動畫與音效。",
+                "how-to-activate": "若要啟用遊戲內重播，您必須成為 Premium 訂閱者，並在「設定」中的「模組」頁籤安裝並啟用「Hearthstone Replay Viewer」模組。完成後，您會在「重播」頁籤看到一個新按鈕，讓您能夠在遊戲內觀看重播。",
+                "limitations": "你需在建立後 30 日內於遊戲內觀看重播，否則伺服器將刪除該檔案。超過 30 日的重播仍可透過瀏覽器觀看，但無法在遊戲內檢視。其他限制包括：尚不支援具倒轉效果的賽局。"
+            },
+            "in-game-sharing": {
+                "description": "你可以將重播分享給任何安裝了 Firestone 並啟用「Replay Viewer」模組的人。若要分享重播，只需點擊「重播」頁籤中的複製連結按鈕即可。"
             }
         }
     },
