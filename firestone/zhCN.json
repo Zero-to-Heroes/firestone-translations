@@ -217,7 +217,10 @@
             "year-of-the-raptor": "迅猛龙年 卡牌包",
             "golden-across-the-timeways": "穿越时间流 金色卡牌包",
             "across-the-timeways": "穿越时间流 卡牌包",
-            "across-the-timeways-catch-up": "穿越时间流 追赶包"
+            "across-the-timeways-catch-up": "穿越时间流 追赶包",
+            "cataclysm": "大地的裂变 卡牌包",
+            "cataclysm-catch-up": "大地的裂变 追赶包",
+            "golden-cataclysm": "大地的裂变 金色卡牌包"
         },
         "ranks": {
             "constructed": {
@@ -566,7 +569,7 @@
                 "header-deck-winrate-tooltip": "包含该卡牌的套牌胜率",
                 "header-deck-total": "总对局数",
                 "header-play-on-curve-winrate": "按费拍怪胜率",
-                "header-play-on-curve-winrate-tooltip": "在法力消耗曲线上使用这张牌时的平均胜率，即当你的最大法力值与这张牌的法力消耗相同时的胜率",
+                "header-play-on-curve-winrate-tooltip": "在法力值消耗曲线上使用这张牌时的平均胜率，即当你的最大法力值与这张牌的法力值消耗相同时的胜率",
                 "header-play-on-curve-total": "按费使用次数",
                 "header-deck-total-tooltip": "此卡牌在套牌中的对局场数",
                 "header-discovered": "数据点",
@@ -1101,7 +1104,7 @@
                 },
                 "cards-header": "卡牌",
                 "class-header": "职业",
-                "cost-header": "费用",
+                "cost-header": "消耗",
                 "games-header": "对局",
                 "winrate-header": "胜率",
                 "core-cards-header": "核心卡",
@@ -2193,7 +2196,7 @@
             "player": "你已使用“蹦蹦兔”数量：{{value}}",
             "opponent": "对手已使用“蹦蹦兔”数量：{{value}}"
         },
-        "bolner": "本回合使用的第一张战吼牌：{{value}}",
+        "bolner": "本回合使用的第一张战吼牌是“{{value}}”",
         "multicaster": {
             "player": "你已使用过的法术派系：{{schools}}",
             "opponent": "对手已使用过的法术派系：{{schools}}",
@@ -2204,18 +2207,18 @@
             "player": "你可召唤 {{totalSummons}} 个“珊瑚元素”；已使用的法术派系：{{schools}}"
         },
         "brilliant-macaw": {
-            "player": "你使用的上一张战吼牌：{{value}}",
-            "opponent": "对手使用的上一张战吼牌：{{value}}"
+            "player": "你使用的上一张战吼牌是“{{value}}”",
+            "opponent": "对手使用的上一张战吼牌是“{{value}}”"
         },
         "monstrous-parrot": {
-            "player": "最近触发的己方亡语：{{value}}",
-            "opponent": "最近触发的敌方亡语：{{value}}"
+            "player": "最近触发的己方亡语是“{{value}}”",
+            "opponent": "最近触发的敌方亡语是“{{value}}”"
         },
         "vanessa": {
-            "player": "对手使用的上一张牌：{{value}}"
+            "player": "对手使用的上一张牌是“{{value}}”"
         },
         "lightray": {
-            "player": "你使用过{{value}}张圣骑士牌，光鳐当前法力消耗{{lightray}}"
+            "player": "你使用过{{value}}张圣骑士牌，光鳐当前法力值消耗{{lightray}}"
         },
         "naga-giant": {
             "player": "你的纳迦巨人法力值消耗：{{cost}}（本局对战你已使用法术：{{spells}}个，总消耗：{{spellsMana}} ）"
@@ -2238,22 +2241,22 @@
             "opponent": "对手的死亡倒计时：{{value}} 个回合"
         },
         "asvedon": {
-            "player": "对手使用的上一张法术牌：{{value}}"
+            "player": "对手使用的上一张法术牌是“{{value}}”"
         },
         "spectral-pillager": {
             "player": "鬼灵匪贼：{{value}}点伤害"
         },
         "lady-darkvein": {
-            "player": "你的上一张暗影法术牌：{{value}}",
-            "opponent": "对手上一张暗影法术牌：{{value}}"
+            "player": "你的上一张暗影法术牌是“{{value}}”",
+            "opponent": "对手上一张暗影法术牌是“{{value}}”"
         },
         "grey-sage-parrot": {
-            "player": "你的上一张{{cost}}+费法术：{{value}}",
-            "opponent": "对手上一张{{cost}}+费法术：{{value}}"
+            "player": "你的上一张{{cost}}+费法术是“{{value}}”",
+            "opponent": "对手上一张{{cost}}+费法术是“{{value}}”"
         },
         "cthun": {
-            "player": "你的克苏恩的属性为{{atk}}/{{health}}",
-            "opponent": "对手的克苏恩的属性为{{atk}}/{{health}}"
+            "player": "你的“克苏恩”的属性为{{atk}}/{{health}}",
+            "opponent": "对手的“克苏恩”的属性为{{atk}}/{{health}}"
         },
         "elemental": {
             "player": "你已使用元素牌：上回合{{lastTurn}} 张；本回合{{thisTurn}} 张",
@@ -2280,8 +2283,8 @@
             "opponent": "你给对手的“深渊诅咒”层数：{{value}} 。对手在下回合开始时受到诅咒伤害：{{totalDamageFromCursesInHand}}"
         },
         "galakrond": {
-            "player": "你已祈求“迦拉克隆” ：{{value}}次",
-            "opponent": "对手已祈求迦拉克隆 {{value}} 次"
+            "player": "你已祈求“迦拉克隆”：{{value}}次",
+            "opponent": "对手已祈求“迦拉克隆”：{{value}}次"
         },
         "hero-power-damage": {
             "player": "你的英雄技能累计造成伤害：{{value}}",
@@ -2296,8 +2299,8 @@
             "opponent": "对手“青玉魔像”属性值：{{value}}"
         },
         "libram": {
-            "player": "你已使用“圣契”牌数量：{{value}}",
-            "opponent": "对手已使用“圣契”牌数量：{{value}}"
+            "player": "你已使用圣契牌数量：{{value}}",
+            "opponent": "对手已使用圣契牌数量：{{value}}"
         },
         "si-seven": {
             "player": "你已使用“军情七处”牌数量：{{value}}",
@@ -2325,8 +2328,8 @@
             "opponent": "敌方已使用“星界自动机”数量：{{value}}"
         },
         "specific-summons": {
-            "player": "你已召唤过{{value}}个{{cardName}}",
-            "opponent": "对手已召唤过{{value}}个{{cardName}}"
+            "player": "你已召唤过{{value}}个“{{cardName}}”",
+            "opponent": "对手已召唤过{{value}}个“{{cardName}}”"
         },
         "chained-guardian": {
             "player": "你已向对手牌库洗入的“疫病”数量：{{value}}"
@@ -2335,8 +2338,8 @@
             "player": "你已使用过的奥秘数量：{{value}}"
         },
         "specific-plays": {
-            "opponent": "对手已使用了{{value}}张{{cardName}}卡牌",
-            "player": "你已使用了{{value}}张{{cardName}}"
+            "opponent": "对手已使用了{{value}}张“{{cardName}}”卡牌",
+            "player": "你已使用了{{value}}张“{{cardName}}”"
         },
         "tram-heist": {
             "player": "对手上回合使用了{{value}}张卡牌"
@@ -2346,7 +2349,7 @@
             "opponent": "对手已发掘{{totalExcavates}}次。对手下次发掘将获得等级{{nextTier}}的宝藏"
         },
         "gardens-grace": {
-            "player": "你的下一张{{cardName}}为{{cost}}费（本局游戏你已使用 {{spells}}个神圣法术，累计消耗{{spellsMana}}费）"
+            "player": "你的下一张“{{cardName}}”为{{cost}}费（本局游戏你已使用 {{spells}}个神圣法术，累计消耗{{spellsMana}}费）"
         },
         "bgs-gold-delta": {
             "player": "你将在下回合额外获得{{value}}枚铸币 {{maxValueText}}",
@@ -2354,7 +2357,7 @@
             "up-to": "不高于{{maxValue}}"
         },
         "bgs-blood-gem": {
-            "player": "你的{{cardName}}可使随从+{{attack}}/+{{health}}"
+            "player": "你的“{{cardName}}”可使随从+{{attack}}/+{{health}}"
         },
         "bgs-lord-of-gains": {
             "player": "你本回合使用了{{value}}种不同的法术，分别为：{{cards}}"
@@ -2404,7 +2407,7 @@
             "player": "本局对战中你已使用{{value}}张海盗牌"
         },
         "ceaseless": {
-            "player": "{{cardName}} 现在消耗{{cost}}点法力水晶。你和你的对手已经抽到，使用或摧毁了{{value}}张卡牌"
+            "player": "“{{cardName}}” 现在消耗{{cost}}点法力值。你和你的对手已经抽到，使用或摧毁了{{value}}张卡牌"
         },
         "discovers": {
             "opponent": "对手已经发现了{{value}}次卡牌",
@@ -2424,7 +2427,7 @@
             "player": "您的投球手将提供+{{value}}数值"
         },
         "bgs-beetles": {
-            "player": "你的 {{cardName}} 拥有 +{{atk}}/+{{health}}"
+            "player": "你的 “{{cardName}}” 拥有 +{{atk}}/+{{health}}"
         },
         "spells-on-friendly-characters": {
             "player": "您在本局对战中对己方角色施放了{{value}}张法术"
@@ -2440,10 +2443,10 @@
             "opponent": "对手已使用{{value}}张星灵法术"
         },
         "next-starship-launch": {
-            "player": "你的下一艘星舰发射法力消耗减少{{value}}点"
+            "player": "你的下一艘星舰发射法力值消耗减少{{value}}点"
         },
         "protoss-minion-reduction": {
-            "player": "本局对战中你的星灵随从法力消耗减少{{game}}点，且你的下一个星灵随从法力消耗额外减少{{next}}点",
+            "player": "本局对战中你的星灵随从法力值消耗减少{{game}}点，且你的下一个星灵随从法力值消耗额外减少{{next}}点",
             "opponent": "对手的星灵随从在本局对战中的法力值消耗会减少{{game}}点，且他的下一个星灵随从的法力值消耗会额外减少{{next}}点。"
         },
         "combo-cards-played": {
@@ -2462,10 +2465,10 @@
         },
         "aviana-elunes-chosen": {
             "player": "在{{turns}}回合后你的卡牌消耗为{{value}}点法力水晶",
-            "opponent": "在{{turns}}回合后对手的卡牌消耗为{{value}}点法力水晶"
+            "opponent": "在{{turns}}回合后对手的卡牌消耗为{{value}}点法力值"
         },
         "ysondre": {
-            "player": "在本局对战中伊森德雷已经死了{{value}}次"
+            "player": "在本局对战中“伊森德雷”已经死了{{value}}次"
         },
         "tyrande": {
             "player": "你已经使用过{{value}}张施放两次的法术",
@@ -2480,7 +2483,7 @@
             "opponent": "对手在本局对战中已灌注英雄技能{{value}}次"
         },
         "specific-cards-in-hand": {
-            "player": "你的手牌中有{{value}}张{{cardName}}"
+            "player": "你的手牌中有{{value}}张“{{cardName}}”"
         },
         "elemental-buff": {
             "player": "你的能使随从获得额外属性值的元素可额外获得 +{{atk}}/+{{health}}"
@@ -2492,16 +2495,16 @@
             "player": "酒馆中的元素拥有额外的 +{{atk}}/+{{health}}"
         },
         "card-name-played": {
-            "player": "本局对战中你已经使用了{{times}}张{{cardName}}",
-            "opponent": "本局对战中对手已经打出了{{times}}张{{cardName}}"
+            "player": "本局对战中你已经使用了{{times}}张“{{cardName}}”",
+            "opponent": "本局对战中对手已经打出了{{times}}张“{{cardName}}”"
         },
         "colossus-damage": {
-            "player": "你的巨像会造成 1 + {{value}} 点伤害两次",
-            "opponent": "对手的巨像会造成 1 + {{value}} 点伤害两次"
+            "player": "你的“巨像”会造成 1 + {{value}} 点伤害两次",
+            "opponent": "对手的“巨像”会造成 1 + {{value}} 点伤害两次"
         },
         "specific-cost": {
-            "opponent": "对手的 {{cardName}} 现在消耗 {{value}} 法力水晶",
-            "player": "你的 {{cardName}} 现在消耗 {{value}} 法力水晶"
+            "opponent": "对手的“{{cardName}}”现在消耗{{value}}点法力值",
+            "player": "你的“{{cardName}}”现在消耗{{value}}点法力值"
         },
         "cards-shuffled-into-your-deck": {
             "player": "本局对战中你已将卡牌洗入牌库 {{value}} 次",
@@ -2512,8 +2515,8 @@
             "opponent": "本局对战中对手英雄攻击了 {{times}} 次"
         },
         "dive-the-golakka-depths": {
-            "player": "你在本局对战中已完成{{cardName}}任务{{value}}次",
-            "opponent": "对手在本局对战中已完成{{cardName}}任务{{value}}次"
+            "player": "你在本局对战中已完成“{{cardName}}”任务{{value}}次",
+            "opponent": "对手在本局对战中已完成“{{cardName}}”任务{{value}}次"
         },
         "dark-gifts": {
             "player": "你在本局对战中已打出过 {{value}} 种不同的黑暗之赐卡牌",
@@ -2528,8 +2531,8 @@
             "opponent": "本局对战中对手已打出过{{value}}次流放卡"
         },
         "kiljaeden": {
-            "player": "你的{{cardName}}属性强化效果为+{{value}} / +{{value}}",
-            "opponent": "对手的{{cardName}}属性强化效果为+{{value}} / +{{value}}"
+            "player": "你的“{{cardName}}”属性强化效果为+{{value}} / +{{value}}",
+            "opponent": "对手的“{{cardName}}”属性强化效果为+{{value}} / +{{value}}"
         },
         "undead-died-since-last-turn": {
             "player": "在你的上回合之后有己方亡灵死亡，因此触发了你正在发现的部分卡牌的效果。"
@@ -2547,7 +2550,7 @@
             "player": "你的亡灵在本局对战中获得+{{value}}攻击力"
         },
         "deep-blue": {
-            "player": "你的{{cardName}}获得+{{atk}}/+{{health}}"
+            "player": "你的“{{cardName}}”获得+{{atk}}/+{{health}}"
         },
         "cards-drawn-this-turn": {
             "player": "你在本回合中已经抽了{{value}}张卡牌",
@@ -2560,7 +2563,7 @@
             "player": "你的扩音机在本局对战中获得+{{atk}}/+{{health}}"
         },
         "dragoncaller-alanna": {
-            "player": "你在本局对战中已打出{{value}}次消耗5点及以上法力水晶的法术"
+            "player": "你在本局对战中已打出{{value}}次消耗5点及以上法力值的法术"
         },
         "grouped": {
             "title": "计数器",
@@ -2571,8 +2574,8 @@
             "player": "本回合有{{value}}个随从死亡"
         },
         "specific-deaths": {
-            "player": "本局对战中你已有{{value}}个{{cardName}}死亡",
-            "opponent": "本局对战中对手已有{{value}}个{{cardName}}死亡"
+            "player": "本局对战中你已有{{value}}个“{{cardName}}”死亡",
+            "opponent": "本局对战中对手已有{{value}}个“{{cardName}}”死亡"
         },
         "tavern-stats": {
             "player": "酒馆中的随从拥有额外的 +{{atk}}/+{{health}}"
@@ -2601,8 +2604,8 @@
             "opponent": "对手在本局对战中已经打出了{{value}}个邪能法术"
         },
         "friendly-attacks": {
-            "player": "你的己方随从在本局对战中已经攻击了{{value}}次",
-            "opponent": "对手的随从在本局对战中已经攻击了{{value}}次"
+            "player": "你的单位在本局对战中已经攻击了{{value}}次",
+            "opponent": "对手的单位在本局对战中已经攻击了{{value}}次"
         },
         "herald": {
             "opponent": "对手在本局对战中已经兆示了{{value}}次",
@@ -2613,14 +2616,14 @@
             "opponent": "对手在本局对战中已经打出了{{value}}张过载卡牌"
         },
         "shirvallah": {
-            "player": "你在本局对战中已经消耗了{{value}}点法力水晶。西瓦尔拉现在的费用是{{cost}}点"
+            "player": "你在本局对战中已经消耗了{{value}}点法力值。“西瓦尔拉，猛虎之神”目前消耗{{cost}}点法力值"
         },
         "secrets-triggered": {
             "player": "本局对战中你的奥秘已触发了{{value}}次"
         },
         "freebird": {
-            "player": "你在本局对战中已经打出了{{value}}张自由飞鸟",
-            "opponent": "对手在本局对战中已经打出了{{value}}张自由飞鸟"
+            "player": "你在本局对战中已经打出了{{value}}张“自由飞鸟”",
+            "opponent": "对手在本局对战中已经打出了{{value}}张“自由飞鸟”"
         },
         "frost-spells": {
             "opponent": "对手在本局对战中已经施放了{{value}}个冰霜法术",
@@ -2632,7 +2635,7 @@
         },
         "friendly-dead-minions-this-turn": {
             "player": "本回合己方随从死亡数量：{{value}}",
-            "opponent": "本回合己方随从死亡数量：{{value}}"
+            "opponent": "本回合敌方随从死亡数量：{{value}}"
         },
         "hero-damage-instances-this-turn": {
             "player": "敌方英雄在本回合受到了{{value}}次伤害",
@@ -2646,7 +2649,7 @@
             "player": "在本局对战中召唤了{{value}}个图腾"
         },
         "weapons-equipped": {
-            "player": "本局对战中装备了{{value}}把武器"
+            "player": "你在本局对战中装备了{{value}}把武器"
         },
         "damage-taken-this-turn": {
             "player": "你的英雄在本回合受到了{{value}}点伤害",
@@ -2654,6 +2657,14 @@
         },
         "beasts-summoned": {
             "player": "在本局对战中召唤了{{value}}个野兽"
+        },
+        "spellweavers-brilliance": {
+            "player": "你在本回合中用法术造成了{{value}}点伤害",
+            "opponent": "对手在本回合中用法术造成了{{value}}点伤害"
+        },
+        "specific-cost-reduction": {
+            "player": "你的“{{cardName}}”法力值消耗减少了{{value}}点",
+            "opponent": "对手的“{{cardName}}”法力值消耗减少了{{value}}点"
         }
     },
     "loading": {
@@ -2951,7 +2962,8 @@
             "possible-cards": "可能的卡牌",
             "attack-buff": "攻击增益",
             "health-buff": "血量增益",
-            "spell-schools": "法术派系"
+            "spell-schools": "法术派系",
+            "damage": "造成伤害"
         },
         "tourist": "游客：{{className}}",
         "burns-in": "{{value}} 回合后弃掉",
@@ -2990,7 +3002,7 @@
                 "reason-festergut": "烂肠",
                 "bug": "出现未知错误，错误报告已自动发送给开发人员",
                 "reason-stitched": "普崔塞德的作品",
-                "reason-enchantment": "{{cardName}} 附加效果"
+                "reason-enchantment": "“{{cardName}}” 附加效果"
             },
             "result": {
                 "won": "胜",
@@ -3491,7 +3503,7 @@
             "hide-advanced-settings-button": "隐藏高级设置",
             "locked-tooltip": "成为会员用户即可解锁这个选项！（点击主界面右下角的广告上方的链接来支持开发者）",
             "counter-dropdown": {
-                "on-tooltip": "当你的套牌、手牌或发现选项中侦测到相关卡牌，或在本局对战中使用过相关卡牌时，显示对应计数器",
+                "on-tooltip": "当你的牌库、手牌或发现选项中侦测到相关卡牌，或在本局对战中使用过相关卡牌时，显示对应计数器",
                 "limited": "有限",
                 "off-tooltip": "从不显示计数器",
                 "limited-tooltip": "仅当你的套牌、手牌或发现选项中出现相关卡牌时才显示对应计数器",
@@ -3887,7 +3899,7 @@
                 "reset-button-tooltip": "重置记牌器位置。这可以解决您的记牌器无法显示在屏幕上的问题",
                 "reset-button-confirmation": "记牌器位置已经重置，并在下场对局中生效",
                 "counters-size": "计数器尺寸",
-                "counters-use-expanded-view-label": "计数器展开图",
+                "counters-use-expanded-view-label": "计数器展开显示",
                 "counters-use-expanded-view-tooltip": "启用时，计数器说明将会分行显示",
                 "show-board-in-separate-zone-tooltip": "将当前战场上的卡牌从“其他”区移至可折叠的“战场”区",
                 "show-gifts-in-separate-zone-tooltip": "将衍生的卡牌从“其他”区移至可折叠的“其他（衍生）”区",
@@ -3969,9 +3981,9 @@
                     "attack-on-board-label": "场攻",
                     "attack-on-board-tooltip": "显示对手随从和英雄的攻击力总和",
                     "watch-post-label": "哨所",
-                    "watch-post-tooltip": "显示对手使用“哨所”的数量。仅在对手牌库或手牌中有相关卡牌时显示。",
+                    "watch-post-tooltip": "显示对手使用哨所的数量。仅在对手牌库或手牌中有相关卡牌时显示。",
                     "libram-label": "圣契",
-                    "libram-tooltip": "显示对手使用的“圣契”牌数量。仅在对手牌库或手牌中有相关卡牌时显示",
+                    "libram-tooltip": "显示对手使用的圣契牌数量。仅在对手牌库或手牌中有相关卡牌时显示",
                     "elwynn-boar-label": "艾尔文野猪（死亡数）",
                     "elwynn-boar-tooltip": "显示对手已死亡的“艾尔文野猪”数量",
                     "volatile-skeleton-label": "不稳定的骷髅（死亡数）",
@@ -3990,14 +4002,14 @@
                     "chaotic-tendril-tooltip": "显示对手已使用的“混乱触须”数量",
                     "number-of-spells-tooltip": "显示对手使用过的最后一个法术。仅在对手使用过法术时显示。",
                     "excavate-tooltip": "显示对手当前和最高的发掘等级，并在你的鼠标移至计数器时显示对手可获得的下一等级的发掘宝藏",
-                    "wheel-of-death-tooltip": "在对手使用{{cardName}}后，显示你死亡前的剩余回合数",
+                    "wheel-of-death-tooltip": "在对手使用“{{cardName}}”后，显示你死亡前的剩余回合数",
                     "dragons-summoned-tooltip": "显示对手已召唤的龙的数量。",
                     "elemental-streak-tooltip": "计算你的对手连续使用元素牌的回合数。仅当其已至少连续两回合使用元素牌时显示。",
                     "dead-minions-this-game-tooltip": "当对手是死亡骑士或者他们手牌或套牌中有相关卡牌时（如“矿坑老板雷斯卡”），显示本局对战中已死亡的随从数量",
                     "discovers-tooltip": "计算对手发现卡牌的次数",
                     "libram-reduction-tooltip": "显示对手圣契法力值消耗的总减少量",
-                    "cards-drawn-tooltip": "当对手的套牌中有{{cardName}}，或者它们是{{cardClass}}卡时，显示它们在本局对战中抽到的卡牌数量",
-                    "abyssal-curse-tooltip": "显示对手的深渊诅咒的最高伤害",
+                    "cards-drawn-tooltip": "当对手的套牌中有“{{cardName}}”，或者它们是{{cardClass}}卡时，显示它们在本局对战中抽到的卡牌数量",
+                    "abyssal-curse-tooltip": "显示对手的“深渊诅咒”的最高伤害",
                     "damage-taken-on-your-turn-tooltip": "向您提供对手作为{{classes}}职业对局时在对手的回合中所受伤害的信息（次数和总伤害）",
                     "protoss-spells-tooltip": "显示对手本局使用过的星灵法术数量。只在对手是法师且至少使用过一次星灵法术时才显示",
                     "starships-launched-label": "已发射的星舰",
@@ -4039,13 +4051,13 @@
                     "jade-tooltip": "显示你的“青玉魔像”当前属性值",
                     "cthun-tooltip": "显示你的“克苏恩”当前属性值",
                     "fatigue-tooltip": "显示你下次受到的疲劳伤害",
-                    "abyssal-curse-tooltip": "显示你的”深渊诅咒“最高伤害",
+                    "abyssal-curse-tooltip": "显示你的“深渊诅咒”最高伤害",
                     "attack-on-board-tooltip": "显示你的随从和英雄的攻击力总和",
                     "number-of-spells-label": "法术（数量）",
                     "number-of-spells-tooltip": "显示你使用的法术数量。仅在你的牌库或手牌中有相关卡牌时显示",
                     "elementals-label": "元素",
                     "elementals-tooltip": "显示你在上回合使用过的元素牌数量。仅在你的手牌中有相关卡牌时显示",
-                    "watch-post-tooltip": "显示你召唤的”哨所“数量。仅在你的牌库或手牌中有相关卡牌时显示",
+                    "watch-post-tooltip": "显示你召唤的哨所数量。仅在你的牌库或手牌中有相关卡牌时显示",
                     "libram-tooltip": "显示您使用的圣契牌数量。仅在对手牌库或手牌中有相关卡牌时显示。",
                     "elwynn-boar-tooltip": "显示你的已死亡的”艾尔文野猪“数量",
                     "volatile-skeleton-tooltip": "显示你的已死亡的“不稳定的骷髅”数量",
@@ -4118,7 +4130,7 @@
                     "cards-drawn-tooltip": "当“{{cardName}}”在你的手牌中时，显示你已经抽到的卡牌数量",
                     "thirst-drifter-label": "口渴的流浪者",
                     "cards-drawn-label": "已抽到的卡牌",
-                    "wheel-of-death-tooltip": "在你使用{{cardName}}后，显示对手死亡前的剩余回合数",
+                    "wheel-of-death-tooltip": "在你使用“{{cardName}}”后，显示对手死亡前的剩余回合数",
                     "thirsty-drifter-label": "口渴的流浪者",
                     "thirsty-drifter-tooltip": "当“口渴的流浪者”在你的手牌或牌库中时，显示你已经使用过的(1)费卡牌数量",
                     "pirates-summoned-tooltip": "显示你已召唤的海盗的数量",
@@ -4148,13 +4160,13 @@
                     "spells-on-friendly-characters-label": "法术（己方）",
                     "spells-on-friendly-characters-tooltip": "显示本局对战中你对己方角色施放的法术卡牌的数量",
                     "combo-cards-played-label": "已使用的连击牌",
-                    "protoss-minion-reduction-label": "星灵随从法力消耗减少",
+                    "protoss-minion-reduction-label": "星灵随从法力值消耗减少",
                     "next-starship-launch-label": "下一艘星舰发射法力值消耗减少",
                     "protoss-spells-label": "已使用的星灵法术",
-                    "next-starship-launch-tooltip": "显示下一次星舰发射的法力消耗减少",
-                    "protoss-spells-tooltip": "如果你的套牌中有 {{cardName}}，则显示你在本局对战中使用过的星灵法术数量",
-                    "protoss-minion-reduction-tooltip": "显示星灵随从的总法力消耗减少数量（包括整个对局中适用的减少和仅适用于下一个随从的减少）",
-                    "combo-cards-played-tooltip": "当你手牌或牌库中有 {{cardName}} 时，显示你本局使用过的连击牌数量",
+                    "next-starship-launch-tooltip": "显示下一次星舰发射的法力值消耗减少",
+                    "protoss-spells-tooltip": "如果你的套牌中有 “{{cardName}}”，则显示你在本局对战中使用过的星灵法术数量",
+                    "protoss-minion-reduction-tooltip": "显示星灵随从的总法力值消耗减少数量（包括整个对局中适用的减少和仅适用于下一个随从的减少）",
+                    "combo-cards-played-tooltip": "当你手牌或牌库中有 “{{cardName}}” 时，显示你本局使用过的连击牌数量",
                     "cards-played-this-turn-tooltip": "如果套牌中有使用该牌的牌，显示本回合你已使用的卡牌数量",
                     "cards-played-this-turn-label": "本回合使用的卡牌",
                     "friendly-dead-minions-this-game-label": "已死亡的己方随从",
@@ -4163,21 +4175,21 @@
                     "tyrande-tooltip": "显示还剩多少法术会施放两次",
                     "tyrande-label": "泰兰德",
                     "aviana-elunes-chosen-tooltip": "显示艾维娜效果触发的剩余回合数",
-                    "dragons-in-hand-tooltip": "为{{cardName}}显示手牌中的龙卡牌数量",
+                    "dragons-in-hand-tooltip": "为“{{cardName}}”显示手牌中的龙卡牌数量",
                     "dragons-in-hand-label": "手牌中的龙",
                     "imbue-tooltip": "显示你在本局对战中灌注英雄技能的次数",
-                    "card-name-played-tooltip": "显示你使用{{cardName}}的次数",
+                    "card-name-played-tooltip": "显示你使用“{{cardName}}”的次数",
                     "colossus-damage-label": "巨像伤害",
                     "colossus-damage-tooltip": "显示你的巨像将会造成的伤害",
                     "cards-shuffled-into-your-deck-label": "卡牌（已洗入牌库）",
                     "cards-shuffled-into-your-deck-tooltip": "计算将牌洗入牌库的次数",
-                    "table-flip-tooltip": "显示 {{cardName}} 的费用。虽然计算起来很简单，但随时提醒用户法力水晶消耗还是很有用的",
+                    "table-flip-tooltip": "显示 “{{cardName}}” 的法力值消耗。虽然计算起来很简单，但随时提醒法力值消耗还是很有用的",
                     "table-flip-label": "{{cardName}}",
                     "hero-attacks-label": "英雄攻击次数",
                     "hero-attacks-tooltip": "显示你的英雄在本场对战中的攻击次数（如果你的手牌或套牌中的卡牌可以从该信息中获益）",
                     "disable-all": "禁用全部计数器",
                     "dive-the-golakka-depths-label": "圣骑士鱼人任务",
-                    "dive-the-golakka-depths-tooltip": "显示你已完成 {{cardName}} 任务的次数",
+                    "dive-the-golakka-depths-tooltip": "显示你已完成 “{{cardName}}” 任务的次数",
                     "enable-all": "启用全部计数器",
                     "dark-gifts-label": "黑暗之赐",
                     "dark-gifts-tooltip": "显示你在本局对战中打出过的不同的黑暗之赐卡牌数量",
@@ -4186,8 +4198,8 @@
                     "undead-died-since-last-turn-label": "在你的上回合之后有亡灵死亡",
                     "kiljaeden-label": "{{cardName}}",
                     "undead-died-since-last-turn-tooltip": "当发现一张卡牌时，若其中一张具有“在你的上回合之后有己方亡灵死亡”的效果，则显示一个计数器提示该效果能触发。",
-                    "eliza-goreblade-tooltip": "显示{{cardName}}的额外攻击加成",
-                    "kiljaeden-tooltip": "显示{{cardName}}的属性加成",
+                    "eliza-goreblade-tooltip": "显示“{{cardName}}”的额外攻击加成",
+                    "kiljaeden-tooltip": "显示“{{cardName}}”的属性加成",
                     "eliza-goreblade-label": "{{cardName}}",
                     "rafaam-time-label": "{{cardName}}",
                     "rafaam-time-tooltip": "追踪你本局对战中打出过的拉法姆",
@@ -4204,13 +4216,13 @@
                     "windrunner-sisters-tooltip": "显示你在本局对战中打出过哪些风行者姐妹",
                     "windrunner-sisters-label": "风行者姐妹",
                     "runi-label": "{{cardName}}",
-                    "runi-tooltip": "显示在打出{{cardName}}后会回来的卡牌",
+                    "runi-tooltip": "显示在打出“{{cardName}}”后会回来的卡牌",
                     "herald-label": "兆示",
                     "herald-tooltip": "显示你当前的兆示等级",
                     "cards-discarded-label": "弃掉的卡牌",
                     "fel-spells-played-label": "打出的邪能法术",
                     "friendly-attacks-label": "己方攻击次数",
-                    "fel-spells-played-tooltip": "显示你在本局对战中打出的邪能法术数量",
+                    "fel-spells-played-tooltip": "显示你在本局对战中施放的邪能法术数量",
                     "cards-discarded-tooltip": "显示你在本局对战中弃掉的卡牌数量",
                     "friendly-attacks-tooltip": "显示你的随从在本局对战中攻击的次数",
                     "secrets-triggered-label": "触发的奥秘",
@@ -4219,7 +4231,7 @@
                     "freebird-label": "自由飞鸟",
                     "frost-spells-label": "冰霜法术",
                     "frost-spells-tooltip": "显示你在本局对战中打出的冰霜法术数量",
-                    "freebird-tooltip": "当你手牌或牌库中有自由飞鸟时，显示你在本局对战中已打出的自由飞鸟的数量",
+                    "freebird-tooltip": "当你手牌或牌库中有“自由飞鸟”时，显示你在本局对战中已打出的“自由飞鸟”的数量",
                     "damage-to-opponent-this-turn-label": "本回合对对手造成的伤害",
                     "hero-damage-instances-this-turn-label": "对方英雄造成伤害次数",
                     "friendly-dead-minions-this-turn-tooltip": "显示本回合中己方死亡的随从数量",
@@ -4238,7 +4250,11 @@
                     "overload-cards-played-label": "打出的过载卡牌",
                     "shirvallah-label": "西瓦尔拉，猛虎之神",
                     "damage-taken-this-turn-tooltip": "显示你的英雄在本回合中受到的总伤害",
-                    "shirvallah-tooltip": "当你手牌或牌库中有西瓦尔拉时，显示你已为法术消耗了多少法力水晶，以及西瓦尔拉当前的费用"
+                    "shirvallah-tooltip": "当你手牌或牌库中有“西瓦尔拉，猛虎之神”时，显示你已为法术消耗了多少法力值，以及“西瓦尔拉，猛虎之神”当前的法力值消耗",
+                    "deathwing-reduction-label": "“死亡之翼”法力值消耗减少",
+                    "deathwing-reduction-tooltip": "显示你的“死亡之翼”总共减少的法力值消耗",
+                    "spellweavers-brilliance-label": "织法者的光辉",
+                    "spellweavers-brilliance-tooltip": "显示你在本回合中用法术造成的总伤害"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
