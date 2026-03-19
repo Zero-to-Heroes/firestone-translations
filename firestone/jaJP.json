@@ -217,7 +217,10 @@
             "year-of-the-raptor": "ラプター年",
             "across-the-timeways": "タイムウェイの旅人たち",
             "across-the-timeways-catch-up": "タイムウェイの旅人たち・キャッチアップ",
-            "golden-across-the-timeways": "ゴールデン・タイムウェイの旅人たち"
+            "golden-across-the-timeways": "ゴールデン・タイムウェイの旅人たち",
+            "cataclysm": "終焉のアゼロス",
+            "cataclysm-catch-up": "終焉のアゼロス・キャッチアップ",
+            "golden-cataclysm": "ゴールデン・終焉のアゼロス"
         },
         "ranks": {
             "constructed": {
@@ -1501,7 +1504,8 @@
                     "first-percent-tooltip": "様々な偏りを考慮して調整した、この構成で達成された全ての1位の割合を反映しています",
                     "core-cards": "重要カード",
                     "expert-difficulty": "難易度",
-                    "recommended-cards": "推奨カード"
+                    "recommended-cards": "推奨カード",
+                    "cycle-cards": "サイクルカード"
                 },
                 "contributors": {
                     "text": "構成とヒントは、バトルグラウンドのトッププレイヤーによって作成されています",
@@ -1510,6 +1514,12 @@
                 },
                 "advice": {
                     "title": "戦略"
+                },
+                "tabs": {
+                    "example-boards": "盤面の例",
+                    "details": "詳細",
+                    "example-boards-header": "クリックして盤面の例を表示",
+                    "example-boards-locked-tooltip": "プレミアムになると、高MMRにおける、ゲーム終盤のこれらの構成の例を見れます"
                 }
             }
         },
@@ -1837,7 +1847,12 @@
                 "battle-tag-copied": "バトルタグをクリップボードにコピー",
                 "click-to-copy": "クリックしてコピー",
                 "watch-replay-in-game-button-tooltip": "リプレイをゲーム内で見ます(ハースストーンが起動していることと、Replay Viewer Modがインストール去れている必要があります)",
-                "watch-replay-in-game-button": "ゲーム内"
+                "watch-replay-in-game-button": "ゲーム内",
+                "copy-link-tooltip": "リプレイのリンクをコピー",
+                "copy-web-link": "ウェブのリンクをコピー",
+                "watch-replay-in-app-button": "アプリ内",
+                "copy-link": "リンクをコピー",
+                "copy-in-game-link": "ゲーム内リンクをコピー"
             },
             "class-icon-toggle": {
                 "label": "クラスアイコンを使用",
@@ -1858,7 +1873,22 @@
                     "connection-failed": "リプレイをダウンロードできません。ファイアウォール、VPN、プロキシなど、ネット接続の設定を確認してください",
                     "download-failed": "リプレイをダウンロードできません。ファイアウォール、VPN、プロキシなど、ネット接続の設定を確認してください",
                     "mod-not-active": "ゲーム内リプレイを使うには、Replay Viewer Modを有効化する必要があります。設定から、ModタブにあるReplay Viewer Modを有効化してください",
-                    "mod-not-installed": "ゲーム内リプレイを使うには、Replay Viewer Modをインストールする必要があります。設定のModsタブから、Replay Viewer Modをインストールし、有効化してください"
+                    "mod-not-installed": "ゲーム内リプレイを使うには、Replay Viewer Modをインストールする必要があります。設定のModsタブから、Replay Viewer Modをインストールし、有効化してください",
+                    "rewind-block": "この試合はRewind blockが起きています。これらは現在のリプレイビューアでは正しくサポートされていません"
+                }
+            },
+            "in-game-protocol": {
+                "error": {
+                    "fetch-failed-title": "リプレイをロードできません",
+                    "no-power-log-title": "リプレイは利用できません",
+                    "no-power-log": "このリプレイには利用可能なゲーム内リプレイのデータがありません",
+                    "fetch-failed": "リプレイデータを読み込めません。接続を確認し、再度お試しください",
+                    "in-game": "現在ハースストーンを起動中です。ゲーム内リプレイを見るには、まずハースストーンを終了させてください",
+                    "in-game-title": "リプレイを視聴できません"
+                },
+                "os-notification": {
+                    "launch-hearthstone": "ハースストーンを起動してゲーム内リプレイを見る",
+                    "install-mod-then-launch": "ゲーム内リプレイを見るには、Firestoneの設定でReplay Viewer Modをインストールしてからハースストーンを起動してください"
                 }
             }
         },
@@ -2352,7 +2382,8 @@
             "opponent": "対戦相手はこの試合中に{{value}}枚の神聖呪文を使用した"
         },
         "cards-played-from-another-class": {
-            "player": "{{value}}枚の他クラスのカードを使用した"
+            "player": "{{value}}枚の他クラスのカードを使用した",
+            "opponent": "対戦相手は他のクラスのカードを{{value}}枚使用した"
         },
         "sea-shanty": {
             "player": "キャラクターに対し{{value}}枚の呪文を使用した",
@@ -2563,6 +2594,77 @@
             "title": "ウィンドランナー姉妹",
             "opponent": "対戦相手は、この試合中これらのウィンドランナー姉妹を使用した",
             "player": "自分はこの試合中、これらのウィンドランナー姉妹を使用した"
+        },
+        "herald": {
+            "opponent": "対戦相手はこの対戦中、{{value}}回伝令した",
+            "player": "自分はこの対戦中{{value}}回伝令した"
+        },
+        "overload-cards-played": {
+            "player": "自分はこの対戦中、オーバーロードカードを{{value}}枚使用した",
+            "opponent": "対戦相手はこの対戦中、オーバーロードカードを{{value}}枚使用した"
+        },
+        "secrets-triggered": {
+            "player": "この試合中、自分の秘策は{{value}}回発動した"
+        },
+        "shirvallah": {
+            "player": "自分はこの対戦中呪文を{{value}}マナ分使用した。シャヴァーラの現在のコストは{{cost}}"
+        },
+        "freebird": {
+            "player": "自分はこの対戦中、「フリーバード」を{{value}}回使用した",
+            "opponent": "対戦相手はこの対戦中、「フリーバード」を{{value}}回使用した"
+        },
+        "friendly-dead-minions-this-turn": {
+            "opponent": "このターン中、敵のミニオンは{{value}}体死亡した",
+            "player": "このターン中、味方のミニオンは{{value}}体死亡した"
+        },
+        "damage-taken-this-turn": {
+            "player": "このターン中、自分のヒーローは{{value}}ダメージを受けた",
+            "opponent": "対戦相手のヒーローはこのターン中、{{value}}ダメージを受けた"
+        },
+        "frost-spells": {
+            "opponent": "対戦相手はこの対戦中、凍気呪文を{{value}}回使用した",
+            "player": "自分はこの対戦中凍気呪文を{{value}}回使用した"
+        },
+        "damage-to-opponent-this-turn": {
+            "opponent": "このターン中、自分のヒーローは{{value}}ダメージを受けた",
+            "player": "このターン中、対戦相手のヒーローに{{value}}ダメージを与えた"
+        },
+        "hero-damage-instances-this-turn": {
+            "player": "このターン中、敵のヒーローはダメージを{{value}}回受けた",
+            "opponent": "自分のヒーローはこのターン中、ダメージを{{value}}回くらった"
+        },
+        "totems-summoned": {
+            "player": "この対戦中、{{value}}体のトーテムを召喚した"
+        },
+        "non-class-cards-added-to-hand": {
+            "opponent": "この試合中、{{value}}枚のローグ以外のクラスのカードが対戦相手の手札に加わった",
+            "player": "この試合中、{{value}}枚のローグ以外のクラスのカードを自分の手札に加えた"
+        },
+        "weapons-equipped": {
+            "player": "この試合中、武器を{{value}}回装備した"
+        },
+        "spellweavers-brilliance": {
+            "player": "自分はこのターン中呪文で{{value}}ダメージを与えた",
+            "opponent": "対戦相手はこのターン中、呪文で{{value}}ダメージを与えた"
+        },
+        "specific-cost-reduction": {
+            "opponent": "対戦相手の「{{cardName}}」のコストは{{value}}減った",
+            "player": "自分の「{{cardName}}」のコストは{{value}}減った"
+        },
+        "fel-spells": {
+            "player": "自分はこの対戦中、フェル呪文を{{value}}回使用した",
+            "opponent": "対戦相手はこの対戦中、フェル呪文を{{value}}回使用した"
+        },
+        "cards-discarded": {
+            "opponent": "対戦相手はこの対戦中、カードを{{value}}枚破棄した",
+            "player": "自分はこの対戦中、カードを{{value}}枚破棄した"
+        },
+        "friendly-attacks": {
+            "opponent": "対戦相手とそのミニオンは、この対戦中{{value}}回攻撃した",
+            "player": "自分とそのミニオンたちは、この対戦中{{value}}回攻撃した"
+        },
+        "beasts-summoned": {
+            "player": "この対戦中{{value}}体の獣を召喚した"
         }
     },
     "loading": {
@@ -2860,7 +2962,9 @@
             "possible-cards": "ありうるカード",
             "attack-buff": "攻撃力バフ",
             "health-buff": "体力バフ",
-            "spell-schools": "呪文系統"
+            "spell-schools": "呪文系統",
+            "main-attribute": "メイン属性",
+            "damage": "与えたダメージ"
         },
         "tourist": "観光客：{{className}}",
         "burns-in": "{{valyue}}ターンで燃える",
@@ -2894,7 +2998,7 @@
             "lethal-received-tooltip": "%でこの戦闘で死亡する",
             "composition-not-supported": {
                 "general": "この構成は十分な検証がなされないため、結果に誤差が生じる可能性があります(理由: {{value}})",
-                "reason-secret": "秘密",
+                "reason-secret": "秘策",
                 "reason-pirate": "海の荒くれ + バロン / カドガー",
                 "reason-festergut": "タダレハラワタ",
                 "bug": "不明なエラーが発生しました。開発者に自動的にバグが報告されました。",
@@ -3474,7 +3578,9 @@
                 "update-available": "このModの新しいバージョンが利用可能です。クリックして更新してください",
                 "update-disabled": "このModの新しいバージョンが利用可能ですが、ゲームを終了するまでインストールできません",
                 "need-to-close-game-warning": "Modのインストール/アンインストール/アップデート/有効化/無効化をする前に、ハースストーンを終了してください",
-                "installed-mods-description-2": "以下のModがインストールされています(アンインストールするには、{{path}}内の該当ファイルを削除してください)："
+                "installed-mods-description-2": "以下のModがインストールされています(アンインストールするには、{{path}}内の該当ファイルを削除してください)：",
+                "auto-update-label": "自動アップデート",
+                "auto-update-tooltip": "Modの新バージョンが利用可能になった時、自動でアップデートします。新バージョンは、ゲームを終了した際にインストールされます"
             },
             "third-party": {
                 "intro": "私たちは、あなたのデータがあなたのものであると信じています。 そして、あなたは他のサードパーティのウェブサイトにデータを同期させて、彼らを手助けすることができます。それによって私たちが報酬を受け取ることはありませんが、彼らが私たちを話題にだすことで、ある程度の露出を得ることができます :)",
@@ -3919,7 +4025,8 @@
                     "holy-spells-tooltip": "大戦相手が使用した神聖呪文の数を表示します。対戦相手がパラディンのときのみ表示されます",
                     "sea-shanty-tooltip": "対戦相手がキャラクターに使用した呪文の数を表示します。対戦相手がパラディンのときのみ表示されます",
                     "corpses-tooltip": "対戦相手の現在の死体の合計を示すカウンターを表示します。これは、対戦相手が死体消費カードを持っていることがわかっていて、ゲームでカウンターが表示されていない場合に表示されます",
-                    "corpses-label": "死体"
+                    "corpses-label": "死体",
+                    "herald-tooltip": "対戦相手の現在の伝令のレベルを表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -4109,7 +4216,45 @@
                     "runi-tooltip": "「{{cardName}}」をプレイした後に帰ってくるカードを表示します",
                     "windrunner-sisters-tooltip": "自分がこの試合中、どのウィンドランナー姉妹を使用したかを表示します",
                     "windrunner-sisters-label": "ウィンドランナー姉妹",
-                    "runi-label": "「{{cardName}}」"
+                    "runi-label": "「{{cardName}}」",
+                    "herald-label": "伝令",
+                    "herald-tooltip": "現在の伝令のレベルを表示します",
+                    "fel-spells-played-label": "フェル呪文の使用数",
+                    "friendly-attacks-label": "味方の攻撃回数",
+                    "cards-discarded-label": "カードの破棄数",
+                    "fel-spells-played-tooltip": "この対戦中に使用したフェル呪文の数を表示します",
+                    "friendly-attacks-tooltip": "この対戦中に味方のミニオンが攻撃した回数を表示します",
+                    "cards-discarded-tooltip": "この対戦中に破棄したカードの枚数を表示します",
+                    "secrets-triggered-label": "秘策の起動数",
+                    "shirvallah-label": "「トラのロア・シャヴァーラ」",
+                    "secrets-triggered-tooltip": "この試合中に起動した自分の秘策の数を表示します",
+                    "overload-cards-played-label": "オーバーロードカードの使用数",
+                    "overload-cards-played-tooltip": "この対戦中に使用したオーバーロードカードの数を表示します",
+                    "shirvallah-tooltip": "手札かデッキに「トラのロア・シャヴァーラ」がいるとき、呪文に費やしたマナ数と現在のシャヴァーラのコストを表示します",
+                    "frost-spells-label": "凍気呪文",
+                    "frost-spells-tooltip": "この対戦中に使用した凍気呪文の数を表示します",
+                    "freebird-tooltip": "「フリーバード」がデッキか手札にいるとき、この対戦中に使用した「フリーバード」の数を表示します",
+                    "damage-taken-this-turn-label": "このターンに受けたダメージ",
+                    "damage-to-opponent-this-turn-label": "このターンに与えたダメージ",
+                    "friendly-dead-minions-this-turn-label": "このターンに死亡した味方のミニオン数",
+                    "friendly-dead-minions-this-turn-tooltip": "このターン中に死亡した味方のミニオンの数を表示します",
+                    "damage-taken-this-turn-tooltip": "このターン中に自分のヒーローが受けた総ダメージ量を表示します",
+                    "hero-damage-instances-this-turn-label": "敵ヒーローダメージインスタンス",
+                    "non-class-cards-added-to-hand-label": "ローグ以外のクラスのカードが手札に加わった回数",
+                    "hero-damage-instances-this-turn-tooltip": "このターン中に敵のヒーローがくらったダメージを表示します",
+                    "damage-to-opponent-this-turn-tooltip": "このターン中に敵のヒーローに与えた総ダメージを表示します",
+                    "beasts-summoned-label": "召喚した獣の数",
+                    "totems-summoned-tooltip": "この対戦中に召喚したトーテムの数を表示します",
+                    "non-class-cards-added-to-hand-tooltip": "この対戦中自分の手札に加わったローグ以外のクラスのカードの枚数を表示します",
+                    "totems-summoned-label": "トーテム召喚数",
+                    "beasts-summoned-tooltip": "この対戦中に召喚した獣の数を表示します",
+                    "weapons-equipped-tooltip": "この対戦中に自分が武器を装備した回数を表示します",
+                    "spellweavers-brilliance-label": "「呪文の紡ぎ手の偉才」",
+                    "weapons-equipped-label": "武器の装備数",
+                    "spellweavers-brilliance-tooltip": "このターン中に呪文で敵に与えたダメージ量を表示します",
+                    "deathwing-reduction-tooltip": "デスウィングの総コスト軽減量を表示します",
+                    "deathwing-reduction-label": "デスウィングのコスト軽減",
+                    "freebird-label": "「フリーバード」"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
@@ -4522,11 +4667,21 @@
         },
         "replay": {
             "menu": {
-                "general": "全般"
+                "general": "全般",
+                "in-game-sharing": "共有",
+                "in-game": "ゲーム内"
             },
             "general": {
                 "hide-games-vs-ai": "NPCとの試合を隠す",
                 "hide-games-vs-ai-tooltip": "リプレイリスト全体を表示する時、NPCとの対戦を非表示にします"
+            },
+            "in-game": {
+                "description": "ゲーム内リプレイは、プレミアムユーザー限定機能です。ゲーム内リプレイでは、観戦モードを使っている時のようにリプレイを見れ、グラフィックやアニメーション、サウンドエフェクトが通常のゲームと同じように再生されます。",
+                "how-to-activate": "ゲーム内リプレイを有効にするには、プレミアムユーザーになり、設定のModsタブからHearhstone Replay Viewer Modのインストールと有効化をする必要があります。これらを行うと、リプレイタブに新しく出現するボタンでゲーム内リプレイを視聴可能になります",
+                "limitations": "ゲーム内リプレイは作成から30日間の間に視聴する必要があり、そうしないとサーバーから削除されます。作成から30日以上経過したリプレイはウェブブラウザでは視聴することができますが、ゲーム内リプレイでは視聴できません。その他の制限事項：巻き戻し効果はまだサポートされていません"
+            },
+            "in-game-sharing": {
+                "description": "自分のリプレイを、FirestoneをインストールしReplay Viewer Modを有効化している人と共有できます。リプレイを共有するには、リプレイタブにあるコピーリンク用ボタンをクリックしてください"
             }
         }
     },
@@ -5332,6 +5487,15 @@
         "avenge_dragons": "仇討ちドラゴン",
         "boost_shop_quilboar": "酒場バフキルボア",
         "lord_of_gains_nagas": "銭ゲバナーガ",
-        "tier_2_ballers": "グレ2ボーラーエレメンタル"
+        "tier_2_ballers": "グレ2ボーラーエレメンタル",
+        "lord_of_ruins_demons": "瓦礫の大将悪魔",
+        "stuntdrake_dragons": "スタントドレイクドラゴン",
+        "spell_cycle": "呪文サイクル",
+        "beasts_beetles": "獣甲虫",
+        "bomber_mechs": "爆弾メカ",
+        "deathrattle_quilboar": "断末魔キルボア",
+        "apexis_mechs": "アペクシスメカ",
+        "end_of_turn_naga": "ターン終了時ナーガ",
+        "whelp_dragon": "チビドラドラゴン"
     }
 }
