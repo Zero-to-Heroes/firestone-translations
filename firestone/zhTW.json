@@ -126,7 +126,8 @@
             "day_of_rebirth": "重生之日",
             "across_the_timeways": "時光特攻隊",
             "hero_skins": "-",
-            "echoes_of_the_infinite": "恆龍回響"
+            "echoes_of_the_infinite": "恆龍回響",
+            "cataclysm": "浩劫與重生"
         },
         "pack": {
             "classic": "經典",
@@ -297,7 +298,9 @@
             "modular": "合體",
             "bacon_buddy": "戰寵（夥伴）",
             "bacon_buffs_tavern_spell": "「旅店法術」加成",
-            "bacon_rally": "奮戰"
+            "bacon_rally": "奮戰",
+            "shatter": "碎裂",
+            "shattered": "已碎裂"
         },
         "legendary-minion": "傳說手下",
         "patch": "版本 {{version}}.{{number}} 釋出於 {{date}}",
@@ -720,8 +723,8 @@
                     "battleground_trinket": "飾品（英雄戰場）",
                     "pet": "寵物"
                 },
-                "set": "拓展包：",
-                "rarity": "稀有性：",
+                "set": "拓展包",
+                "rarity": "稀有性",
                 "rarities": {
                     "free": "免費",
                     "common": "普通",
@@ -855,7 +858,7 @@
                 "browse-set-button": "閱覽資料片",
                 "total-non-golden-cards": "已蒐集的非金卡總數",
                 "pity-timer-reset-tooltip": "包括保證下一個史詩／傳說的達成預計，重設此卡牌包的計數器會忽略在此之前開啟的所有卡牌包。",
-                "total-golden-cards": "已蒐集傳說卡、鑽石卡和珍藏卡的總數"
+                "total-golden-cards": "已蒐集金卡、鑽石卡和珍藏卡的總數"
             },
             "empty-state": {
                 "no-missing-card-in-set": {
@@ -1031,13 +1034,15 @@
             "decks": {
                 "empty-state-title": "尚未有任何內容",
                 "empty-state-subtitle": "遊玩一場排名賽局來開始，或先檢查上方的篩選器 :)",
-                "drag-to-merge-default": "將此牌組拖曳至另一副牌組即可合併為新版本",
-                "drag-to-merge": "放開即可為 {{deckName}} 牌組建立新版本",
+                "drag-to-merge-default": "將此牌組拖曳至另一個牌組以建立新群組",
+                "drag-to-merge": "放開以建立新群組",
                 "versions": {
                     "title": "牌組版本",
                     "click-to-view-version-stats-tooltip": "點選即可只檢視此版本的統計",
                     "click-to-view-all-stats-tooltip": "再次點選可同時檢視全部版本的統計"
-                }
+                },
+                "group-name-edit-tooltip": "編輯群組名稱",
+                "group-name-label": "群組名稱"
             },
             "ladder-stats": {
                 "title-player": "你職業的詳細資訊",
@@ -1193,7 +1198,7 @@
                 "naga": "「納迦」",
                 "pirate": "「海盜」",
                 "quilboar": "「野豬人」",
-                "blank": "「無類別」",
+                "blank": "無類別",
                 "all": "「全部」",
                 "undead": "「不死族」",
                 "protoss": "神族",
@@ -1931,7 +1936,7 @@
             "etc_buddies": "當扮演『樂團經理』精英牛頭大佬時，你可以看到發現池中的全部戰寵",
             "bg_hero_select": "你可以直接在英雄選擇介面上取得每個英雄的統計",
             "minions_list_by_tribe": "你可以啟用一個選項「在手下列表中新增按類別分組的列表」，這可以讓你在手下列表中按類別分組手下，從臃腫的類別小工具閒置出一些空間。",
-            "deck_merge": "你可以將一副牌組拖曳至另一副牌組上方，藉此將其指定為新版本"
+            "deck_merge": "你可以透過將一個牌組拖曳至另一個牌組來建立牌組群組"
         },
         "streams": {
             "category": {
@@ -2425,7 +2430,7 @@
         },
         "protoss-minion-reduction": {
             "player": "本賽局你神族手下費用降低 {{game}}，下一個神族手下額外降低 {{next}}",
-            "opponent": "本賽局對手神族手下費用降低 {{game}}，其下一個神族手下額外降低 {{next}}"
+            "opponent": "對手本賽局神族手下費用降低 {{game}}，其下一個神族手下額外降低 {{next}}"
         },
         "combo-cards-played": {
             "player": "本賽局你打出過 {{value}} 張連擊牌"
@@ -2575,7 +2580,7 @@
         },
         "cards-discarded": {
             "player": "本賽局你已捨棄 {{value}} 張牌",
-            "opponent": "本賽局對手已捨棄 {{value}} 張牌"
+            "opponent": "對手本賽局已捨棄 {{value}} 張牌"
         },
         "friendly-attacks": {
             "opponent": "本賽局敵方已攻擊 {{value}} 次",
@@ -2583,11 +2588,11 @@
         },
         "fel-spells": {
             "player": "本賽局你已施放 {{value}} 次魔化法術",
-            "opponent": "本賽局對手已施放 {{value}} 次魔化法術"
+            "opponent": "對手本賽局已施放 {{value}} 次魔化法術"
         },
         "herald": {
             "player": "本賽局你已預兆 {{value}} 次",
-            "opponent": "本賽局對手已預兆 {{value}} 次"
+            "opponent": "對手本賽局已預兆 {{value}} 次"
         },
         "overload-cards-played": {
             "player": "本賽局你已打出 {{value}} 張超載卡牌",
@@ -2595,11 +2600,11 @@
         },
         "frost-spells": {
             "player": "本賽局你已施放 {{value}} 個冰霜法術",
-            "opponent": "本賽局對手已施放 {{value}} 個冰霜法術"
+            "opponent": "對手本賽局已施放 {{value}} 個冰霜法術"
         },
         "freebird": {
             "player": "本賽局你已打出 {{value}} 個「自由鳥」",
-            "opponent": "本賽局對手已打出 {{value}} 個「自由鳥」"
+            "opponent": "對手本賽局已打出 {{value}} 個「自由鳥」"
         },
         "damage-to-opponent-this-turn": {
             "player": "本回合對敵方英雄造成 {{value}} 點傷害",
@@ -2647,6 +2652,18 @@
         "deathwing-cost-reduction": {
             "player": "你的「死亡之翼」費用降低 {{value}}",
             "opponent": "對手的「死亡之翼」費用降低 {{value}}"
+        },
+        "bgs-fodder-refresh": {
+            "player": "顯示你在接下來的 3 次重置中會出現多少個食料"
+        },
+        "ancestral-automaton": {
+            "player": "本賽局你已召喚 {{value}} 個遠古自動機"
+        },
+        "mrrglton-played": {
+            "player": "本賽局你已打出 {{value}} 個莫戈頓"
+        },
+        "kaelthas-spell-cycle": {
+            "player": "本回合施放的法術：{{spellCount}}。循環位置：{{value}}"
         }
     },
     "loading": {
@@ -2891,7 +2908,7 @@
         "unknown-mana-spell": "未知 {{manaCost}} 法力水晶法術",
         "unknown-info": "未知 {{info}}",
         "unknown-big-minion": "未知 {{cost}}+ 法力水晶消耗手下",
-        "card-dredged-tooltip": "探底",
+        "card-dredged-tooltip": "打撈的卡牌",
         "streamer-mode": {
             "opponent": "對手",
             "you": "你"
@@ -2954,7 +2971,9 @@
         "unknown-minion": "未知手下",
         "unknown-mechanics-card": "未知的 {{mechanics}} 機制卡牌",
         "drawn-by": "被 {{value}} 抽取",
-        "card-tooltip-big-pool-text": "卡牌池過大（{{ value }} 張卡牌），因此不予顯示"
+        "card-tooltip-big-pool-text": "卡牌池過大，無法顯示所有卡牌。",
+        "dredged-by": "由 {{value}} 打撈",
+        "card-tooltip-pool-size": "{{ value }} 張卡牌"
     },
     "battlegrounds": {
         "menu": {
@@ -3133,7 +3152,17 @@
             "whelp-attack-buff": "幼龍攻擊力加成",
             "whelp-health-buff-tooltip": "賦予你幼龍的額外生命值",
             "whelp-health-buff": "幼龍生命值加成",
-            "whelp-attack-buff-tooltip": "賦予你幼龍的額外攻擊力"
+            "whelp-attack-buff-tooltip": "賦予你幼龍的額外攻擊力",
+            "tavern-spells-cast-this-turn-tooltip": "顯示你於目前購買階段已施放的旅店法術數量",
+            "tavern-spells-cast-this-turn": "本回合施放的旅店法術",
+            "cards-played-this-turn-tooltip": "顯示你於目前購買階段已打出的卡牌數量",
+            "mrrgltons-played-this-game": "本賽局已打出的莫戈頓",
+            "back-to-back-cast-this-game": "本賽局已施放背靠背的次數",
+            "cards-played-this-turn": "本回合已打出的卡牌",
+            "deathrattles-triggered-this-game": "本賽局已觸發的死亡之聲",
+            "back-to-back-cast-this-game-tooltip": "顯示本賽局你已施放的「背靠背」旅店法術次數",
+            "mrrgltons-played-this-game-tooltip": "顯示本賽局你已打出的莫戈頓手下數量（莫戈頓媽媽 / 爸爸加成）",
+            "deathrattles-triggered-this-game-tooltip": "顯示本賽局你已觸發的死亡之聲效果次數（包含手下、法術等）"
         },
         "hero-stats": {
             "finishes-title": "完賽數",
@@ -4187,7 +4216,7 @@
                     "cards-drawn-this-turn-label": "本回合抽牌張數",
                     "cards-drawn-this-turn-tooltip": "顯示你在本回合中抽到的卡牌張數",
                     "dragoncaller-alanna-label": "「喚龍者阿蘭娜」",
-                    "dragoncaller-alanna-tooltip": "顯示你本賽局施放消耗 5 點及以上法術的次數",
+                    "dragoncaller-alanna-tooltip": "顯示本賽局你施放消耗 5 點及以上法術的次數",
                     "treant-dead-label": "樹人（已死亡）",
                     "treant-dead-tooltip": "顯示本賽局死亡樹人的數量",
                     "dead-minions-this-turn-label": "本回合死亡手下",
@@ -4235,7 +4264,9 @@
                     "spellweavers-brilliance-label": "織法者的光輝",
                     "spellweavers-brilliance-tooltip": "顯示本回合施放法術造成的總傷害",
                     "deathwing-reduction-label": "死亡之翼費用降低",
-                    "deathwing-reduction-tooltip": "顯示死亡之翼的總減費"
+                    "deathwing-reduction-tooltip": "顯示死亡之翼的總減費",
+                    "kaelthas-spell-cycle-label": "凱爾薩斯刷牌次數",
+                    "kaelthas-spell-cycle-tooltip": "當「{{cardName}}」在你的牌組中時，顯示你本回合處於 3 次法術循環中的位置（每施放第三個法術消耗為 (0)）"
                 },
                 "discovery-zone-label": "發現區塊",
                 "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並突出顯示與牌堆的協同作用。"
@@ -4387,7 +4418,9 @@
                 "max-sim-duration-tooltip": "允許模擬運行的最長時間（以毫秒為單位）。如果超時後仍未達到最大模擬次數，模擬器將停止並提前輸出結果",
                 "show-trinket-tips-label": "顯示飾品貼士",
                 "show-trinket-tips-tooltip": "在疊加層（僅 Premium 會員）或手下列表（所有人）的飾品選擇階段，顯示頂尖 BG 玩家提供的飾品貼士。",
-                "hero-stats-overlay-scale": "「英雄統計」疊加層大小"
+                "hero-stats-overlay-scale": "「英雄統計」疊加層大小",
+                "show-timewarped-stats-tooltip": "顯示你獲得的「時光扭曲」卡牌平均排名。",
+                "show-timewarped-stats-label": "顯示時光扭曲數據"
             },
             "overlay": {
                 "overlay-title": "疊加層配置",
@@ -4509,7 +4542,11 @@
                 "counter-tavern-stats-label": "旅店體質加成",
                 "counter-tavern-stats-tooltip": "顯示旅店中手下的額外攻擊力／生命值加成",
                 "counter-whelp-buff-label": "幼龍加成",
-                "counter-whelp-buff-tooltip": "顯示你的幼龍所獲得的額外攻擊力／生命值加成"
+                "counter-whelp-buff-tooltip": "顯示你的幼龍所獲得的額外攻擊力／生命值加成",
+                "counter-fodder-refresh-label": "食料重置次數",
+                "counter-fodder-refresh-tooltip": "顯示剩餘的「食料重置」次數",
+                "counter-mrrglton-played-label": "已打出的莫戈頓",
+                "counter-mrrglton-played-tooltip": "顯示你已打出多少次「莫戈頓家族」成員"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
@@ -5445,7 +5482,7 @@
         "xl-uu-rafaamlock": "穢邪拉法姆-術",
         "handbuff-warrior": "手牌加加-戰",
         "bbb-harold-dk": "血魄預兆-死騎",
-        "bbbu-starship-dk": "BBU星艦‐-死騎",
+        "bbbu-starship-dk": "血魄星艦‐死騎",
         "bbu-harold-dk": "BBU預兆-死騎",
         "buu-bwonsamdi-dk": "BUU塔蘭姬-死騎",
         "buu-control-dk": "BUU控制-死騎",
@@ -5470,7 +5507,22 @@
         "dino-egglock": "超巨龍蛋-術",
         "fu-location-warlock": "FU地點-術",
         "garona-rogue": "迦羅娜-賊",
-        "merithra-druid": "麥琳瑟拉-德"
+        "merithra-druid": "麥琳瑟拉-德",
+        "no-archetype": "無流派",
+        "777-miracle-rogue": "777 奇蹟-賊",
+        "boar-hunter": "野豬-獵",
+        "cta-paladin": "集結作戰-聖",
+        "igneous-odyn-warrior": "打撈歐丁戰",
+        "kingslayer-pirate-rogue": "顯赫海盜-賊",
+        "lc-quest-priest": "任務(光暗均衡)-牧",
+        "token-broxigar-dh": "顯赫(布洛克斯)-惡魔獵人",
+        "velarok-rogue": "節奏(維拉若克)-賊",
+        "xl-basher-warrior": "40牌 破壁重甲龍-戰",
+        "xl-dragon-druid": "40牌 龍-德",
+        "xl-hl-dragon-druid": "40牌 無雙龍-德",
+        "xl-hl-exodia-mage": "40牌 無雙禁忌序列-法",
+        "xl-hl-tog-druid": "40牌 無雙國王-德",
+        "xl-hl-tick-tock-warlock": "40牌 無雙終焉-術"
     },
     "arena": {
         "overlay": {
@@ -5495,11 +5547,11 @@
         "end_of_turn_elementals": "回合結束流元素",
         "kalecgos_dragons": "戰吼流龍類",
         "poet_dragons": "吟詩流龍類",
-        "spell_buff": "法術加成",
+        "spell_buff": "法術加成流",
         "electron_mechs": "合體流機械",
         "groundbreaker_naga": "破土者流納迦",
         "hand_buff_murlocs": "手牌加加流魚人",
-        "scam_murlocs": "貝斯流魚人",
+        "scam_murlocs": "詐欺流魚人",
         "stew_murlocs": "海鮮燉菜流魚人",
         "apm_pirates": "手速流海盜",
         "attack_undead": "主攻流不死族",
@@ -5538,9 +5590,9 @@
         "nomi_elementals": "「糯米」流元素",
         "refresh_elementals": "刷新流元素",
         "self_damage_beasts": "自傷流野獸",
-        "scam": "卑鄙流陣容",
+        "scam": "詐欺流",
         "lord_of_gains_nagas": "「滑矛」流納迦",
-        "tier_2_ballers": "2⭐️強勢陣容",
+        "tier_2_ballers": "球手流",
         "apm_pirate": "手速流海盜",
         "avenge_dragons": "報復流龍類",
         "bomber_mechs": "轟炸者流機械",
@@ -5551,6 +5603,27 @@
         "whelp_dragon": "幼龍流龍類",
         "beasts_beetles": "甲蟲流野獸",
         "spell_cycle": "刷法術流",
-        "apexis_mechs": "死聲機兵流機械"
+        "apexis_mechs": "死聲機兵流機械",
+        "mech_automaton": "自動機流機械",
+        "elemental_cycle": "刷牌流元素",
+        "pirate_exodia": "飛行荷蘭人流海盜",
+        "quilboar_avenge": "報復流野豬人",
+        "pirate_bounty": "賞金流海盜",
+        "demon_fodder": "食料流惡魔",
+        "murloc_mrrglton": "莫戈頓流魚人",
+        "quilboar_smuggler": "走私者流野豬人",
+        "neutral_back_to_back": "背靠背流",
+        "beast_self_damage": "自傷流野獸",
+        "beast_stegodon": "劍龍流野獸",
+        "murloc_handbuff": "手牌加加流魚人",
+        "dragon_kalecgos": "戰吼流(卡雷苟斯)龍類",
+        "murloc_scam": "詐欺流魚人",
+        "mech_shield": "聖盾流機械",
+        "undead_attack": "攻擊流不死族",
+        "naga_deep_blue": "深情藍調流納迦",
+        "naga_spellspam": "法術流納迦",
+        "elemental_tier2_ballers": "球手流",
+        "undead_end_of_turn": "回合結束流不死族",
+        "undead_overflow": "擠擠流不死族"
     }
 }
