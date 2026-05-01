@@ -126,7 +126,8 @@
             "lost_city_of_ungoro": "La cité perdue d’Un’Goro",
             "day_of_rebirth": "Le jour de la Renaissance",
             "across_the_timeways": "Par-delà les voies temporelles",
-            "echoes_of_the_infinite": "Échos de l’infini"
+            "echoes_of_the_infinite": "Échos de l’infini",
+            "cataclysm": "CATACLYSME"
         },
         "pack": {
             "classic": "Classique",
@@ -300,7 +301,9 @@
             "modular": "Magnétisme",
             "bacon_buddy": "Compagnon",
             "bacon_buffs_tavern_spell": "Buffs des sorts de taverne",
-            "bacon_rally": "Ralliement"
+            "bacon_rally": "Ralliement",
+            "shatter": "Scission",
+            "shattered": "Scindée"
         },
         "legendary-minion": "Serviteur légendaire",
         "patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -723,8 +726,8 @@
                     "battleground_trinket": "Bibelot (Champs de bataille)",
                     "pet": "Compagnon"
                 },
-                "set": "Ensemble :",
-                "rarity": "Rareté :",
+                "set": "Ensemble",
+                "rarity": "Rareté",
                 "rarities": {
                     "free": "Gratuit",
                     "common": "Commune",
@@ -1034,13 +1037,15 @@
             "decks": {
                 "empty-state-title": "Rien ici pour le moment",
                 "empty-state-subtitle": "Jouez en Partie classée pour commencer, ou vérifiez vos filtres ci-dessus :)",
-                "drag-to-merge-default": "Faites glisser ceci vers un autre deck pour le fusionner en tant que nouvelle version",
-                "drag-to-merge": "Lâchez-le pour créer une nouvelle version de {{deckName}}",
+                "drag-to-merge-default": "Faites glisser ceci vers un autre deck pour créer un nouveau groupe",
+                "drag-to-merge": "Lâchez-le pour créer un nouveau groupe",
                 "versions": {
                     "title": "Versions du deck",
                     "click-to-view-version-stats-tooltip": "Cliquez pour voir les stats de cette version uniquement",
                     "click-to-view-all-stats-tooltip": "Cliquez à nouveau pour voir les stats de toutes les versions"
-                }
+                },
+                "group-name-edit-tooltip": "Éditer le nom du groupe",
+                "group-name-label": "Nom du groupe"
             },
             "ladder-stats": {
                 "title-player": "Détail des classes jouées",
@@ -1923,7 +1928,7 @@
             "minion_play_order": "Les nombres sur les serviteurs du plateau indiquent l’ordre d’invocation, ce qui correspond aussi à l'ordre de résolution des Râles d’agonie",
             "achievements_pick_for_me": "Vous pouvez laisser l’application choisir automatiquement 3 hauts faits à suivre",
             "lottery": "Vous pouvez participer à un tirage au sort mensuel pour gagner des abonnements Firestone Premium (activez-le à partir de Paramètres > Général > Loterie).",
-            "deck_merge": "Vous pouvez fusionner un deck en tant que nouvelle version d'un autre en le faisant glisser sur l’ancienne version",
+            "deck_merge": "Vous pouvez créer des groupes de deck en déplaçant un deck sur un autre deck",
             "achievements_pin": "Sélectionnez n’importe quel nombre de hauts faits pour les suivre en jeu et les voir s’actualiser en temps réel",
             "collection_stats": "Vous pouvez consulter l’historique des cartes et les stats globales des ensembles affichés, et passer de l’un à l’autre à tout moment.",
             "mercs_terasure_highlight": "Passer la souris sur un trésor dans Mercenaires met en surbrillance les synergies de votre groupe",
@@ -2671,6 +2676,18 @@
         "deathwing-cost-reduction": {
             "player": "Le coût de vos cartes Aile de mort est réduit de ({{value}}) cristaux",
             "opponent": "Le coût des cartes Aile de mort de votre adversaire est réduit de ({{value}}) cristaux"
+        },
+        "ancestral-automaton": {
+            "player": "Vous avez invoqué {{value}} automates ancestraux pendant cette partie"
+        },
+        "bgs-fodder-refresh": {
+            "player": "Affiche le nombre de cartes Chair à démon qui apparaîtront dans vos 3 prochaines actualisations"
+        },
+        "mrrglton-played": {
+            "player": "Vous avez joué {{value}} cartes Mrrglton pendant cette partie"
+        },
+        "kaelthas-spell-cycle": {
+            "player": "Sorts lancés pendant ce tour : {{spellCounter}}. Position dans le cycle : {{value}}"
         }
     },
     "loading": {
@@ -2978,7 +2995,9 @@
         "unknown-minion": "Serviteur inconnu",
         "unknown-mechanics-card": "Carte inconnue avec {{mechanics}}",
         "drawn-by": "Piochée par {{value}}",
-        "card-tooltip-big-pool-text": "La liste de cartes est trop grosse ({{ value }} cartes) et n’est donc pas affichée"
+        "card-tooltip-big-pool-text": "La liste de cartes est trop grosse pour afficher toutes les cartes.",
+        "dredged-by": "Dragué par {{value}}",
+        "card-tooltip-pool-size": "{{ value }} cartes"
     },
     "battlegrounds": {
         "menu": {
@@ -3157,7 +3176,17 @@
             "whelp-attack-buff-tooltip": "L’ATQ supplémentaire de vos dragonnets",
             "whelp-health-buff-tooltip": "Les PV supplémentaires de vos dragonnets",
             "whelp-attack-buff": "Buff d’ATQ des dragonnets",
-            "whelp-health-buff": "Buff de PV des dragonnets"
+            "whelp-health-buff": "Buff de PV des dragonnets",
+            "deathrattles-triggered-this-game": "Râles d’agonie déclenchés pendant cette partie",
+            "deathrattles-triggered-this-game-tooltip": "Le nombre de Râles d’agonie que vous avez déclenchés pendant cette partie",
+            "tavern-spells-cast-this-turn": "Sorts de la taverne joués pendant ce tour",
+            "cards-played-this-turn": "Cartes jouées pendant ce tour",
+            "mrrgltons-played-this-game-tooltip": "Le nombre de serviteurs Mrrglton que vous avez joués pendant cette partie",
+            "cards-played-this-turn-tooltip": "Le nombre de cartes que vous avez jouées durant cette phase de recrutement",
+            "tavern-spells-cast-this-turn-tooltip": "Le nombre de sorts de la taverne que vous avez lancés pendant cette phase de recrutement",
+            "mrrgltons-played-this-game": "Mrrglton joués cette partie",
+            "back-to-back-cast-this-game": "Dos à dos joués cette partie",
+            "back-to-back-cast-this-game-tooltip": "Le nombre de sorts Dos à dos que vous avez lancés pendant cette partie"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -4004,7 +4033,7 @@
                     "shockspitter-tooltip": "Affiche le nombre de fois que votre adversaire a attaqué pendant cette partie. Il n’apparaît que si la classe de l’adversaire est chasseur et qu’il ou elle a attaqué au moins une fois",
                     "multicaster-tooltip": "Afficher les écoles de sorts que votre adversaire a utilisées pendant cette partie",
                     "astral-automaton-label": "Automate astral",
-                    "astral-automaton-tooltip": "Afficher le nombre d’automates astraux que votre adversaire a invoqués pendant cette partie",
+                    "astral-automaton-tooltip": "Afficher le nombre d’automates ancestraux que votre adversaire a invoqués pendant cette partie",
                     "earthen-golem-label": "Golem terrestre",
                     "earthen-golem-tooltip": "Afficher le nombre de golems terrestres que votre adversaire a invoqués pendant cette partie",
                     "number-of-spells-tooltip": "Affiche le nombre de sorts lancés par votre adversaire pendant cette partie. N’apparaît que si votre adversaire a lancé au moins un sort",
@@ -4113,7 +4142,7 @@
                     "multicaster-tooltip": "Afficher les écoles de sorts que vous avez utilisées pendant cette partie",
                     "coral-keeper-label": "Sentinelle des coraux",
                     "coral-keeper-tooltip": "Afficher les écoles de sorts pour lesquelles vous avez lancé un sort pendant cette partie",
-                    "astral-automaton-tooltip": "Afficher le nombre d’automates astraux que vous avez invoqué pendant cette partie",
+                    "astral-automaton-tooltip": "Afficher le nombre d’automates ancestraux que vous avez invoqués pendant cette partie",
                     "chained-guardian-label": "Pestes",
                     "chained-guardian-tooltip": "Afficher le nombre de cartes Peste placées dans le deck de votre adversaire pendant cette partie",
                     "earthen-golem-tooltip": "Afficher le nombre de golems terrestres que vous avez invoqués pendant cette partie",
@@ -4262,7 +4291,9 @@
                     "spellweavers-brilliance-label": "Génie du tisse-sort",
                     "spellweavers-brilliance-tooltip": "Affiche le total de dégâts que vous avez infligé avec des sorts pendant ce tour",
                     "deathwing-reduction-label": "Réduction du coût d’Aile de mort",
-                    "deathwing-reduction-tooltip": "Affiche la réduction totale de vos cartes Aile de mort"
+                    "deathwing-reduction-tooltip": "Affiche la réduction totale de vos cartes Aile de mort",
+                    "kaelthas-spell-cycle-label": "Cycle de sorts de Kael’thas",
+                    "kaelthas-spell-cycle-tooltip": "Affiche votre position dans le cycle des 3 sorts de chaque tour (le troisième sort coûte (0) cristal), lorsque {{cardName}} est dans votre deck"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -4414,7 +4445,9 @@
                 "max-sim-duration-tooltip": "Le temps maximum (en millisecondes) alloué pour une simulation. Si ce temps n’a pas permis d’atteindre le nombre max de simulations, elle s’arrêtera et donnera les résultats.",
                 "show-trinket-tips-label": "Afficher les conseils liés aux bibelots",
                 "show-trinket-tips-tooltip": "Afficher les conseils des meilleurs joueurs de Champs de bataille liés aux bibelots, pendant la phase de sélection dans l’overlay (pour les utilisateurs Premium) et dans la liste des serviteurs (pour tout le monde).",
-                "hero-stats-overlay-scale": "Taille de l’overlay des stats des héros"
+                "hero-stats-overlay-scale": "Taille de l’overlay des stats des héros",
+                "show-timewarped-stats-tooltip": "Affiche le placement moyen pour les cartes chronodistordues qui vous sont offertes.",
+                "show-timewarped-stats-label": "Afficher les stats en chronodistorsion"
             },
             "overlay": {
                 "overlay-title": "Configuration de l’overlay",
@@ -4538,7 +4571,11 @@
                 "counter-tavern-stats-tooltip": "Affiche le buff d’ATQ/PV des serviteurs dans la taverne",
                 "counter-tavern-stats-label": "Stats de taverne",
                 "counter-whelp-buff-label": "Buff des dragonnets",
-                "counter-whelp-buff-tooltip": "Affiche le buff d’ATQ/PV de vos dragonnets"
+                "counter-whelp-buff-tooltip": "Affiche le buff d’ATQ/PV de vos dragonnets",
+                "counter-fodder-refresh-label": "Démons actualisations",
+                "counter-fodder-refresh-tooltip": "Affiche le nombre d’actualisations contenant des Chairs à démon qu’il vous reste",
+                "counter-mrrglton-played-tooltip": "Affiche le nombre de cartes de la famille Mrrglton que vous avez jouées pendant cette partie",
+                "counter-mrrglton-played-label": "Mrrglton joués"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -5474,7 +5511,7 @@
         "xl-rafaamlock": "Démoniste Rafaam",
         "xl-uu-rafaamlock": "Démoniste II Rafaam",
         "ace-hunter": "Chasseur as",
-        "bbbu-starship-dk": "DK SSSI Vaisseau",
+        "bbbu-starship-dk": "DK sang Vaisseau",
         "bbu-harold-dk": "DK SSI convocation",
         "buu-bwonsamdi-dk": "DK SSI Bwonsamdi",
         "buu-control-dk": "DK SII contrôle",
@@ -5499,7 +5536,22 @@
         "imbue-rogue": "Voleur empreinte",
         "xl-splendiferous-whizbang": "Mystifix le Magnifique XL",
         "harold-warrior": "Guerrier convocation",
-        "xl-u-rafaamlock": "Démoniste I Rafaam XL"
+        "xl-u-rafaamlock": "Démoniste I Rafaam XL",
+        "no-archetype": "Sans archétype",
+        "777-miracle-rogue": "Voleur miracle 777",
+        "boar-hunter": "Chasseur sanglier",
+        "cta-paladin": "Paladin Appel aux armes",
+        "igneous-odyn-warrior": "Guerrier Odyn élémentaire igné",
+        "kingslayer-pirate-rogue": "Voleur Pirates Régicides",
+        "lc-quest-priest": "Prêtre Quête (Cité perdue)",
+        "token-broxigar-dh": "DH Broxigar token",
+        "velarok-rogue": "Voleur Velarok",
+        "xl-basher-warrior": "Guerrier brise-barricade XL",
+        "xl-dragon-druid": "Druide Dragons XL",
+        "xl-hl-dragon-druid": "Druide Dragons singleton XL",
+        "xl-hl-exodia-mage": "Mage Exodia singleton XL",
+        "xl-hl-tick-tock-warlock": "Démoniste Tique Taque singleton XL",
+        "xl-hl-tog-druid": "Druide Cire-Pilleur singleton XL"
     },
     "arena": {
         "overlay": {
@@ -5580,6 +5632,27 @@
         "beasts_beetles": "Bêtes hannetons",
         "lord_of_ruins_demons": "Démons seigneur des ruines",
         "spell_cycle": "Sorts cycle",
-        "whelp_dragon": "Dragons dragonnets"
+        "whelp_dragon": "Dragons dragonnets",
+        "pirate_exodia": "Pirates Exodia",
+        "demon_fodder": "Démons Chair à démon",
+        "mech_automaton": "Mécas automate",
+        "elemental_cycle": "Élémentaires cycle",
+        "murloc_mrrglton": "Murlocs Mrrglton",
+        "beast_self_damage": "Bêtes auto-dégâts",
+        "quilboar_avenge": "Hurans Vengeance",
+        "neutral_back_to_back": "Dos à dos",
+        "pirate_bounty": "Pirates primes",
+        "quilboar_smuggler": "Hurans trafiquante",
+        "murloc_scam": "Murlocs scam",
+        "murloc_handbuff": "Murlocs handbuff",
+        "dragon_kalecgos": "Dragons Kalecgos",
+        "mech_shield": "Mécas Bouclier divin",
+        "naga_spellspam": "Nagas sorts scam",
+        "beast_stegodon": "Bêtes stégosaure",
+        "elemental_tier2_ballers": "Modeleurs niveau 2",
+        "undead_attack": "Morts-vivants ATQ",
+        "naga_deep_blue": "Nagas Grand blues",
+        "undead_end_of_turn": "Morts-vivants Fin de tour",
+        "undead_overflow": "Déferlement de Morts-vivants"
     }
 }
