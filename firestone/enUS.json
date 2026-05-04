@@ -629,6 +629,10 @@
 					"all": "All card types"
 				},
 				"show-advanced-card-stats": "Advanced stats",
+				"class-stats-matrix": {
+					"label": "Hero power matrix",
+					"tooltip": "Show a matrix of winrates per class and hero power combination"
+				},
 				"hero-class": {
 					"all": "All hero classes"
 				},
@@ -684,7 +688,12 @@
 				"graph-placement-tooltip": "Gets to this total wins {{value}}% as often as the global average",
 				"header-tip": "How to play",
 				"show-more-tip": "Show more",
-				"tier": "Tier {{value}}"
+				"tier": "Tier {{value}}",
+				"matrix": {
+					"global": "Global",
+					"global-row-tooltip": "Aggregated winrate across every class for this hero power",
+					"cell-tooltip": "{{wins}} wins out of {{games}} games"
+				}
 			},
 			"card-stats": {
 				"total-cards-drafted": "Total cards drafted",
@@ -2318,6 +2327,26 @@
 		"libram-reduction": {
 			"player": "Your librams cost {{value}} less",
 			"opponent": "Your opponent's librams cost {{value}} less"
+		},
+		"leyline-spell-cost-discount": {
+			"player": "Your Leyline cost tracker is {{value}} (placeholder enchant; see 35.4 TODO)",
+			"opponent": "Your opponent's Leyline cost tracker is {{value}} (placeholder enchant; see 35.4 TODO)"
+		},
+		"leyline-spell-triggers": {
+			"player": "Your Leylines have triggered {{value}} times (placeholder enchant; see 35.4 TODO)",
+			"opponent": "Your opponent's Leylines have triggered {{value}} times (placeholder enchant; see 35.4 TODO)"
+		},
+		"animal-companion-aura": {
+			"player": "Animal Companion aura value: {{value}} (placeholder enchant; see 35.4 TODO)",
+			"opponent": "Opponent Animal Companion aura value: {{value}} (placeholder enchant; see 35.4 TODO)"
+		},
+		"silver-hand-recruit-aura": {
+			"player": "Silver Hand Recruit aura value: {{value}} (placeholder enchant; see 35.4 TODO)",
+			"opponent": "Opponent Silver Hand Recruit aura value: {{value}} (placeholder enchant; see 35.4 TODO)"
+		},
+		"talya-earthstrider-global-aura": {
+			"player": "Talya Earthstrider global effect value: {{value}} (placeholder enchant; see 35.4 TODO)",
+			"opponent": "Opponent Talya Earthstrider global effect value: {{value}} (placeholder enchant; see 35.4 TODO)"
 		},
 		"protoss-minion-reduction": {
 			"player": "Your protoss minions cost {{game}} less this game, and your next protoss minion costs an additional {{next}} less",
@@ -4117,6 +4146,16 @@
 					"cards-drawn-tooltip": "When your opponent has {{cardName}} in their deck, or if they are {{cardClass}}, show the number of cards they have drawn this game",
 					"protoss-spells-tooltip": "Show the number of Protoss Spells your opponent has played this game. Shows only if they are Mage and have played at least one Protoss Spell",
 					"libram-reduction-tooltip": "Show the total cost reduction of your opponent's librams",
+					"leyline-spell-cost-discount-label": "Leyline spell cost discount",
+					"leyline-spell-cost-discount-tooltip": "Show Leyline cost reduction from a placeholder deck enchant (35.4 — replace when live)",
+					"leyline-spell-triggers-label": "Leyline spell triggers",
+					"leyline-spell-triggers-tooltip": "Show how many times Leyline effects have triggered (placeholder enchant — 35.4)",
+					"animal-companion-aura-label": "Animal Companion aura",
+					"animal-companion-aura-tooltip": "Track Animal Companion replacement aura (placeholder enchant — 35.4)",
+					"silver-hand-recruit-aura-label": "Silver Hand Recruit aura",
+					"silver-hand-recruit-aura-tooltip": "Track Silver Hand Recruit buff aura (placeholder enchant — 35.4)",
+					"talya-earthstrider-global-aura-label": "Talya Earthstrider global",
+					"talya-earthstrider-global-aura-tooltip": "Track Talya Earthstrider global effect (placeholder enchant — 35.4)",
 					"starships-launched-label": "Starships launched",
 					"starships-launched-tooltip": "Show the number of Starships your opponent has launched this game and their contents"
 				},
@@ -4156,6 +4195,16 @@
 					"ceaseless-expanse-tooltip": "Show the number of times a card has been played, drawn or destroyed this game",
 					"libram-reduction-label": "Libram Reduction",
 					"libram-reduction-tooltip": "Show the total cost reduction of your librams",
+					"leyline-spell-cost-discount-label": "Leyline spell cost discount",
+					"leyline-spell-cost-discount-tooltip": "Show Leyline cost reduction from a placeholder deck enchant (35.4 — replace when live)",
+					"leyline-spell-triggers-label": "Leyline spell triggers",
+					"leyline-spell-triggers-tooltip": "Show how many times Leyline effects have triggered (placeholder enchant — 35.4)",
+					"animal-companion-aura-label": "Animal Companion aura",
+					"animal-companion-aura-tooltip": "Track Animal Companion replacement aura (placeholder enchant — 35.4)",
+					"silver-hand-recruit-aura-label": "Silver Hand Recruit aura",
+					"silver-hand-recruit-aura-tooltip": "Track Silver Hand Recruit buff aura (placeholder enchant — 35.4)",
+					"talya-earthstrider-global-aura-label": "Talya Earthstrider global",
+					"talya-earthstrider-global-aura-tooltip": "Track Talya Earthstrider global effect (placeholder enchant — 35.4)",
 					"protoss-minion-reduction-label": "Protoss Minion Cost Reduction",
 					"imbue-tooltip": "Show the number of times you have imbued your hero power this game",
 					"herald-label": "Herald",
