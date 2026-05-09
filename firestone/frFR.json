@@ -513,7 +513,11 @@
                     "arena-underground-tooltip": "Virées d’Arène souterraine, après la scission",
                     "arena-underground": "Arène souterraine"
                 },
-                "show-advanced-card-stats": "Stats avancées"
+                "show-advanced-card-stats": "Stats avancées",
+                "class-stats-matrix": {
+                    "label": "Matrice des pouvoirs héroïques",
+                    "tooltip": "Affiche une matrice de taux de victoires par combinaison de classe et pouvoir héroïque"
+                }
             },
             "stats": {
                 "title": "Aperçu des stats",
@@ -578,7 +582,12 @@
                 "header-placement-distribution": "Profil de victoires",
                 "graph-placement-tooltip": "Arrive à ce total de victoires {{value}} % aussi souvent que la moyenne globale",
                 "header-tip": "Comment jouer",
-                "show-more-tip": "Afficher plus"
+                "show-more-tip": "Afficher plus",
+                "matrix": {
+                    "global-row-tooltip": "Taux de victoires regroupé pour chaque classe avec ce pouvoir héroïque",
+                    "global": "Global",
+                    "cell-tooltip": "{{wins}} victoires sur {{games}} parties"
+                }
             },
             "draft": {
                 "hero-tier": "Niveau",
@@ -2688,6 +2697,30 @@
         },
         "kaelthas-spell-cycle": {
             "player": "Sorts lancés pendant ce tour : {{spellCounter}}. Position dans le cycle : {{value}}"
+        },
+        "animal-companion-aura": {
+            "player": "Les cartes compagnon animal invoquent des Bêtes qui coûtent ({{value}}) cristaux",
+            "opponent": "Les cartes compagnon animal invoquent des Bêtes qui coûtent ({{value}}) cristaux"
+        },
+        "talya-earthstrider-global-aura": {
+            "player": "Vos cartes compagnon animal invoquent {{value}} compagnons animaux supplémentaires",
+            "opponent": "Les cartes compagnon animal de votre adversaire invoquent {{value}} compagnons animaux supplémentaires"
+        },
+        "leyline-spell-effect-strength": {
+            "opponent": "Les effets des lignes telluriques de votre adversaire sont augmentés de {{value}}",
+            "player": "Les effets de vos lignes telluriques sont améliorés de {{value}}"
+        },
+        "leyline-spell-cost-discount": {
+            "player": "Vos lignes telluriques coûtent ({{value}}) cristaux de moins",
+            "opponent": "Les lignes telluriques de votre adversaire coûtent ({{value}}) cristaux de moins"
+        },
+        "leyline-spell-triggers": {
+            "player": "Vos lignes telluriques se déclenchent {{value}} fois supplémentaires",
+            "opponent": "Les lignes telluriques de votre adversaire se déclenchent {{value}} fois supplémentaires"
+        },
+        "silver-hand-recruit-aura": {
+            "player": "Vos recrues de la Main d’argent ont +{{atk}}/+{{health}}",
+            "opponent": "Les recrues de la Main d’argent de votre adversaire ont +{{atk}}/+{{health}}"
         }
     },
     "loading": {
@@ -4293,7 +4326,19 @@
                     "deathwing-reduction-label": "Réduction du coût d’Aile de mort",
                     "deathwing-reduction-tooltip": "Affiche la réduction totale de vos cartes Aile de mort",
                     "kaelthas-spell-cycle-label": "Cycle de sorts de Kael’thas",
-                    "kaelthas-spell-cycle-tooltip": "Affiche votre position dans le cycle des 3 sorts de chaque tour (le troisième sort coûte (0) cristal), lorsque {{cardName}} est dans votre deck"
+                    "kaelthas-spell-cycle-tooltip": "Affiche votre position dans le cycle des 3 sorts de chaque tour (le troisième sort coûte (0) cristal), lorsque {{cardName}} est dans votre deck",
+                    "silver-hand-recruit-aura-label": "Buffs des recrues de la Main d’argent",
+                    "animal-companion-aura-tooltip": "Suit les buffs de vos cartes compagnon animal",
+                    "animal-companion-aura-label": "Buffs de compagnon animal",
+                    "leyline-spell-cost-discount-label": "Réduction du coût des lignes telluriques",
+                    "leyline-spell-triggers-label": "Nombre de déclenchements des lignes telluriques",
+                    "leyline-spell-effect-strength-label": "Effets des lignes telluriques",
+                    "leyline-spell-cost-discount-tooltip": "Afficher la réduction de coût des lignes telluriques",
+                    "leyline-spell-triggers-tooltip": "Affiche combien de fois vos lignes telluriques se déclenchent",
+                    "leyline-spell-effect-strength-tooltip": "Affiche l’amélioration des effets de vos lignes telluriques",
+                    "talya-earthstrider-global-aura-label": "Talya Arpenterre",
+                    "talya-earthstrider-global-aura-tooltip": "Suit l’effet global de Talya Arpenterre",
+                    "silver-hand-recruit-aura-tooltip": "Suit les buffs de vos recrues de la Main d’argent"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
@@ -5653,6 +5698,10 @@
         "undead_attack": "Morts-vivants ATQ",
         "naga_deep_blue": "Nagas Grand blues",
         "undead_end_of_turn": "Morts-vivants Fin de tour",
-        "undead_overflow": "Déferlement de Morts-vivants"
+        "undead_overflow": "Déferlement de Morts-vivants",
+        "beast_banana": "Bêtes banane",
+        "beast_leviathan": "Bêtes léviathan",
+        "dragon_ring_bearer": "Dragons porteur d’anneaux",
+        "elemental_shop_buff": "Élémentaires boosts de taverne"
     }
 }
