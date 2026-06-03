@@ -568,7 +568,7 @@
                 "header-discovered": "資料量",
                 "header-deck-winrate-impact-tooltip": "相較於該職業的平均勝率，包含這張牌的牌組整體表現是好還是差",
                 "header-deck-winrate-impact": "影響",
-                "header-pickrate-high-wins-variable-tooltip": "該卡牌在「地下競技場中至少 ({{value}}) 場或在競技場中至少 {{value2}} 場」勝利的賽局的揀選率",
+                "header-pickrate-high-wins-variable-tooltip": "該卡牌在「地下競技場中至少 ({{value}}) 場或在競技場中至少 ({{value2}}) 場」勝利的賽局的揀選率",
                 "header-current-options": "目前選項",
                 "low-data-text": "數據不足。此卡牌僅在 ({{value}}) 場賽局出現過，因此統計數據可能不準確。"
             },
@@ -819,7 +819,7 @@
                 }
             },
             "pack-stats": {
-                "title": "全部時間的卡牌包（({{value}})）",
+                "title": "全部時間的卡牌包 ({{value}})",
                 "best-opened-packs-title": "開出最佳的 ({{value}}) 包卡牌包",
                 "best-opened-packs-title-tooltip": "你在運行 Firestone 時打開過最佳的卡牌包",
                 "pack-stat-tooltip": "自你開始玩爐石戰記以來，你已收到 {{totalPacks}}包「{{packName}}」卡牌包",
@@ -839,7 +839,7 @@
                 "dust": "魔塵",
                 "dust-tooltip": "你還需要 ({{value}}) 魔塵以完成該系列",
                 "duplicate-dust": "多的魔塵",
-                "duplicate-dust-tooltip": "你可以通過分解非黃金重複卡獲得 ({{value}}) 灰塵",
+                "duplicate-dust-tooltip": "你可以通過分解非黃金重複卡獲得 ({{value}}) 魔塵",
                 "golden-dust": "金卡魔塵",
                 "golden-dust-tooltip": "你還需要 ({{value}}) 魔塵以完成金卡系列",
                 "golden-duplicate-dust": "多的金卡魔塵",
@@ -1036,7 +1036,7 @@
             "deck-summary": {
                 "total-games": "({{value}}) 場賽局",
                 "winrate": "({{value}})% 勝率",
-                "last-used": "上次使用：({{value}})",
+                "last-used": "上次使用：{{value}}",
                 "created-on": "已創建：「{{value}}」",
                 "archive-button-tooltip": "封存這套牌組（你之後可以隨時還原）",
                 "restore-button-tooltip": "復原牌組",
@@ -1430,11 +1430,11 @@
                 "header-games-played": "已遊玩局數",
                 "header-games-played-tooltip": "在選定的時間區間內你使用該英雄遊玩的場數",
                 "header-pick-rate": "揀選率",
-                "header-pick-rate-high-mmr": "前({{value}})% 揀選率",
+                "header-pick-rate-high-mmr": "前 ({{value}})% 揀選率",
                 "header-pick-rate-high-mmr-tooltip": "在前 ({{value}})% 玩家中的揀選率",
                 "trinket-search-placeholder": "搜尋飾品...",
                 "header-trinket-details": "飾品",
-                "header-average-position-high-mmr": "前({{value}})% 名次",
+                "header-average-position-high-mmr": "前 ({{value}})% 名次",
                 "header-average-position-high-mmr-tooltip": "排名前 ({{value}})% 玩家的平均最終名次",
                 "header-pickrate": "揀選率",
                 "header-card-details": "卡牌",
@@ -1500,7 +1500,7 @@
                     },
                     "step": {
                         "turn": "回合 {{value}}",
-                        "gold": "({{value}}) 金幣"
+                        "gold": "({{value}}) 枚金幣"
                     }
                 },
                 "curve-label": "玩法路線： ",
@@ -1743,7 +1743,7 @@
                 "tier": "{{value}} 等",
                 "data-points": "({{value}}) 場",
                 "player-winrate-tooltip": "你於這個英雄的平均勝率",
-                "player-data-points": "{{value}}"
+                "player-data-points": "({{value}})"
             }
         },
         "achievements": {
@@ -1930,7 +1930,7 @@
             "share_profile_page": "線上獲取你的個人頁面，並與他人分享你的成就與數據。",
             "constructed_deck_stats_free": "免費瀏覽當前熱門的牌組清單！",
             "tip-0": "如有任何回饋、錯誤回報或想與我們聯繫，請造訪我們的 Discord（連結位於頂端）！",
-            "discover_highlight": "「發現」時將滑鼠懸停在卡牌上會突出顯示牌堆中的相關資訊",
+            "discover_highlight": "「發現」時將滑鼠懸停在卡牌上會標記牌堆中的相關資訊",
             "contextual_related_cards": "將滑鼠懸停在記牌器中的某些卡牌上以獲取有關它們作用效果的更多資訊",
             "mercs_terasure_highlight": "將滑鼠懸停在傭兵中的寶藏上可以突出隊伍中的協同作用",
             "ad-tip-premium": "Premium 會員",
@@ -1939,7 +1939,7 @@
             "quest_stats": "直接在疊加層中檢視任務的平均完成輪數和獎勵的平均位置",
             "guess_the_weight": "有些卡牌在「發現」過程中有上下文說明",
             "minion_play_order": "戰場上每個手下頂端的數字告訴你他們上場的順序 - 這就是死亡之聲觸發的順序",
-            "minion_auto_highlight": "在遊玩對應的英雄時一些手下可以腦袋空空看到就購買（例如保本賭客於海盜派奇）。 Firestone 會自動在商店中為你突出顯示這些手下。",
+            "minion_auto_highlight": "在遊玩對應的英雄時一些手下可以腦袋空空看到就購買（例如保本賭客於海盜派奇）。 Firestone 會自動在商店中為你標記這些手下。",
             "constructed_deck_stats": "檢視詳細的卡牌統計（例如起始手牌和抽取勝率）以及整副牌組型態的統計。",
             "bg_wisdomball": "你可以直接從疊加層中獲得遊戲裏一些最佳玩家的建議並採用他們的策略",
             "collection_stats": "你可以檢視所顯示集群的卡牌歷史記錄和全域統計，並隨時在它們之間切換",
@@ -2234,7 +2234,7 @@
             "opponent": "「{{value}}」是對手打出的最後一個暗影法術"
         },
         "grey-sage-parrot": {
-            "player": "你最後打出費用為 (({{cost}})) 或更多的法術是「{{value}}」",
+            "player": "你最後打出費用為 ({{cost}}) 或更多的法術是「{{value}}」",
             "opponent": "對手最後打出費用為 ({{cost}}) 或更多的法術是「{{value}}」"
         },
         "cthun": {
@@ -2259,11 +2259,11 @@
         },
         "fatigue": {
             "player": "你的下一次抽取受到 ({{value}}) 疲倦傷害",
-            "opponent": "對手的下一次抽取受到 ({{value}}) 疲倦傷害"
+            "opponent": "對手的下一次抽取受到 ({{value}}) 點疲倦傷害"
         },
         "abyssal-curse-2": {
-            "player": "深淵詛咒造成的最高傷害是 ({{value}}) ，你在下回合開始時受到 {{totalDamageFromCursesInHand}} 點傷害",
-            "opponent": "你的深淵詛咒最高傷害是 ({{value}}) ，對手將在下一回合開始時從手中的詛咒中受到 {{totalDamageFromCursesInHand}} 點傷害"
+            "player": "深淵詛咒造成的最高傷害是 ({{value}}) ，你在下回合開始時受到 ({{totalDamageFromCursesInHand}}) 點傷害",
+            "opponent": "你的深淵詛咒最高傷害是 ({{value}}) ，對手將在下一回合開始時從手中的詛咒中受到 ({{totalDamageFromCursesInHand}}) 點傷害"
         },
         "galakrond": {
             "player": "你已祈求葛拉克朗 ({{value}}) 次",
@@ -2278,8 +2278,8 @@
             "opponent": "對手的下一張「閃電龍鷹」卡牌將造成 ({{value}}) 點傷害"
         },
         "jade": {
-            "player": "你的「翠玉魔像」體質為 {{value}}",
-            "opponent": "對手的「翠玉魔像」體質為 {{value}}"
+            "player": "你的「翠玉魔像」體質為 ({{value}})",
+            "opponent": "對手的「翠玉魔像」體質為 ({{value}})"
         },
         "libram": {
             "player": "本賽局你施放過 ({{value}}) 張「聖契」",
@@ -2355,7 +2355,7 @@
             "player": "本回合你已施放 ({{value}}) 個不同的法術：{{cards}}"
         },
         "wheel-of-death": {
-            "player": "快脆啲！你會在 ({{value}}) 回合後賣鹹鴨蛋！！！",
+            "player": "快脆啲！你將在 ({{value}}) 回合後賣鹹鴨蛋！！！",
             "opponent": "堅持住！對手會在 ({{value}}) 回合內去賣鹹鴨蛋！！！"
         },
         "damage-taken-on-your-turn": {
@@ -2369,7 +2369,7 @@
             "player": "本賽局有 ({{value}}) 個手下死亡"
         },
         "cards-drawn": {
-            "player": "本賽局你抽取了 ({{value}}) 張卡牌",
+            "player": "本賽局你已抽取 ({{value}}) 張卡牌",
             "opponent": "對手本賽局已抽取 ({{value}}) 張卡牌"
         },
         "thirsty-drifter": {
@@ -2388,7 +2388,7 @@
         },
         "cards-played-from-another-class": {
             "player": "你打出過 ({{value}}) 張其他職業的卡牌",
-            "opponent": "對手已打出 {{value}} 張其他職業的卡牌"
+            "opponent": "對手已打出 ({{value}}) 張其他職業的卡牌"
         },
         "queensguard": {
             "player": "本回合你已施放 ({{value}}) 個法術",
@@ -2402,7 +2402,7 @@
             "player": "本賽局你打出過 ({{value}}) 個海盜"
         },
         "ceaseless": {
-            "player": "「{{cardName}}」費用為 {{cost}}。你和對手已抽、打出或摧毀 ({{value}}) 張牌"
+            "player": "「{{cardName}}」費用為 ({{cost}})。你和對手已抽、打出或摧毀 ({{value}}) 張牌"
         },
         "discovers": {
             "player": "你已發現 ({{value}}) 次卡牌",
@@ -2460,7 +2460,7 @@
         },
         "aviana-elunes-chosen": {
             "player": "{{turns}} 回合後，你的卡牌費用為 ({{value}})",
-            "opponent": "{{turns}} 回合後，對手的卡牌費用為 (({{value}}))"
+            "opponent": "({{turns}}) 回合後，對手的卡牌費用為 ({{value}})"
         },
         "tyrande": {
             "opponent": "對手已施放 ({{value}}) 個觸發兩次的法術",
@@ -2503,7 +2503,7 @@
         },
         "cards-shuffled-into-your-deck": {
             "player": "本賽局你的牌堆已洗入卡牌 {{times}} 次",
-            "opponent": "對手本賽局的牌堆已洗入卡牌 {{times}} 次"
+            "opponent": "對手本賽局的牌堆已洗入卡牌 ({{times}}) 次"
         },
         "hero-attacks": {
             "player": "本賽局你的英雄已攻擊 {{times}} 次",
@@ -2515,7 +2515,7 @@
         },
         "corpses": {
             "opponent": "對手目前擁有 ({{value}}) 個屍體",
-            "player": "你目前有 {{value}} 具屍體"
+            "player": "你目前有 ({{value}}) 具屍體"
         },
         "dark-gifts": {
             "opponent": "對手本賽局已打出 ({{value}}) 種不同的「黑暗贈禮」卡牌",
@@ -2548,7 +2548,7 @@
             "player": "你的「{{cardName}}」 賦予 +{{atk}}/+{{health}}"
         },
         "cards-drawn-this-turn": {
-            "player": "你在本回合中已抽到 ({{value}}) 張卡牌",
+            "player": "你在本回合中已抽取 ({{value}}) 張卡牌",
             "opponent": "對手在本回合中已抽到 ({{value}}) 張卡牌"
         },
         "bgs-rightmost-buff": {
@@ -2566,7 +2566,7 @@
             "player": "玩家"
         },
         "dead-minions-this-turn": {
-            "player": "本回合有 {{value}} 個手下死亡"
+            "player": "本回合有 ({{value}}) 個手下死亡"
         },
         "specific-deaths": {
             "player": "本賽局你已有 {{value}} 個「{{cardName}}」手下死亡",
@@ -2585,81 +2585,81 @@
             "player": "本賽局你已打出的風行者游俠姐妹"
         },
         "runi": {
-            "player": "卡牌將在 {{value}} 回合後歸來"
+            "player": "卡牌將在 ({{value}}) 回合後歸來"
         },
         "whelp-buff": {
             "player": "本賽局你的幼龍獲得 +{{atk}}/+{{health}}"
         },
         "cards-discarded": {
-            "player": "本賽局你已捨棄 {{value}} 張牌",
-            "opponent": "對手本賽局已捨棄 {{value}} 張牌"
+            "player": "本賽局你已捨棄 ({{value}}) 張牌",
+            "opponent": "對手本賽局已捨棄 ({{value}}) 張卡牌"
         },
         "friendly-attacks": {
-            "opponent": "本賽局敵方已攻擊 {{value}} 次",
-            "player": "本賽局友方已攻擊 {{value}} 次"
+            "opponent": "本賽局敵方已攻擊 ({{value}}) 次",
+            "player": "本賽局友方已攻擊 ({{value}}) 次"
         },
         "fel-spells": {
-            "player": "本賽局你已施放 {{value}} 次魔化法術",
-            "opponent": "對手本賽局已施放 {{value}} 次魔化法術"
+            "player": "本賽局你已施放 ({{value}}) 次魔化法術",
+            "opponent": "對手本賽局已施放 ({{value}}) 次魔化法術"
         },
         "herald": {
-            "player": "本賽局你已預兆 {{value}} 次",
-            "opponent": "對手本賽局已預兆 {{value}} 次"
+            "player": "本賽局你已預兆 ({{value}}) 次",
+            "opponent": "對手本賽局已預兆 ({{value}}) 次"
         },
         "overload-cards-played": {
-            "player": "本賽局你已打出 {{value}} 張超載卡牌",
-            "opponent": "對手本賽局已打出 {{value}} 張超載卡牌"
+            "player": "本賽局你已打出 ({{value}}) 張超載卡牌",
+            "opponent": "對手本賽局已打出 ({{value})} 張超載卡牌"
         },
         "frost-spells": {
-            "player": "本賽局你已施放 {{value}} 個冰霜法術",
-            "opponent": "對手本賽局已施放 {{value}} 個冰霜法術"
+            "player": "本賽局你已施放 ({{value}}) 個冰霜法術",
+            "opponent": "對手本賽局已施放 ({{value}}) 個冰霜法術"
         },
         "freebird": {
-            "player": "本賽局你已打出 {{value}} 個「自由鳥」",
-            "opponent": "對手本賽局已打出 {{value}} 個「自由鳥」"
+            "player": "本賽局你已打出 ({{value}}) 個「自由鳥」",
+            "opponent": "對手本賽局已打出 ({{value}}) 個「自由鳥」"
         },
         "damage-to-opponent-this-turn": {
-            "player": "本回合對敵方英雄造成 {{value}} 點傷害",
-            "opponent": "本回合對我方英雄造成 {{value}} 點傷害"
+            "player": "本回合對敵方英雄造成 ({{value}}) 點傷害",
+            "opponent": "本回合對我方英雄造成 ({{value}}) 點傷害"
         },
         "friendly-dead-minions-this-turn": {
-            "player": "本回合有 {{value}} 個友方手下死亡",
-            "opponent": "本回合有 {{value}} 個敵方手下死亡"
+            "player": "本回合有 ({{value}}) 個友方手下死亡",
+            "opponent": "本回合有 ({{value}}) 個敵方手下死亡"
         },
         "damage-taken-this-turn": {
-            "player": "本回合你英雄已受到 {{value}} 點傷害",
-            "opponent": "本回合對手英雄已受到 {{value}} 點傷害"
+            "player": "本回合你英雄已受到 ({{value}}) 點傷害",
+            "opponent": "本回合對手英雄已受到 ({{value}}) 點傷害"
         },
         "beasts-summoned": {
-            "player": "本賽局已召喚 {{value}} 個野獸"
+            "player": "本賽局已召喚 ({{value}}) 個野獸"
         },
         "totems-summoned": {
-            "player": "本賽局已召喚 {{value}} 個圖騰"
+            "player": "本賽局已召喚 ({{value}}) 個圖騰"
         },
         "non-class-cards-added-to-hand": {
-            "player": "本賽局已有 {{value}} 張非盜賊職業的卡牌加入你的手牌",
-            "opponent": "本賽局已有 {{value}} 張非盜賊職業的卡牌加入對手的手牌"
+            "player": "本賽局已有 ({{value}}) 張非盜賊職業的卡牌加入你的手牌",
+            "opponent": "本賽局已有 ({{value}}) 張非盜賊職業的卡牌加入對手的手牌"
         },
         "weapons-equipped": {
             "player": "本賽局你裝備過 {{value}} 把武器"
         },
         "hero-damage-instances-this-turn": {
             "player": "本回合敵方英雄受到傷害 {{value}} 次",
-            "opponent": "本回合你英雄受到傷害 {{value}} 次"
+            "opponent": "本回合你英雄受到傷害 ({{value}}) 次"
         },
         "secrets-triggered": {
-            "player": "本賽局你已觸發 {{value}} 個秘密"
+            "player": "本賽局你已觸發 ({{value}}) 個秘密"
         },
         "shirvallah": {
-            "player": "本賽局你已在法術上花費 ({{value}}) 點法力。 「『老虎』希爾瓦拉」目前費用 (({{cost}}))"
+            "player": "本賽局你已在法術上花費 ({{value}}) 點法力。 「『老虎』希爾瓦拉」目前費用 ({{cost}})"
         },
         "specific-cost-reduction": {
-            "opponent": "對手的「{{cardName}}」費用減少 {{value}}",
-            "player": "你的「{{cardName}}」費用減少 {{value}}"
+            "opponent": "對手的「{{cardName}}」費用減少 ({{value}})",
+            "player": "你的「{{cardName}}」費用減少 ({{value}})"
         },
         "spellweavers-brilliance": {
-            "player": "本回合你施放法術造成 {{value}} 點傷害",
-            "opponent": "本回合對手施放法術造成 {{value}} 點傷害"
+            "player": "本回合你施放法術造成 ({{value}}) 點傷害",
+            "opponent": "本回合對手施放法術造成 ({{value}}) 點傷害"
         },
         "deathwing-cost-reduction": {
             "player": "你的「死亡之翼」費用減少 {{value}}",
@@ -2669,10 +2669,10 @@
             "player": "顯示你在接下來的 3 次重置中會出現多少個食料"
         },
         "ancestral-automaton": {
-            "player": "本賽局你已召喚 {{value}} 個遠古自動機"
+            "player": "本賽局你已召喚 ({{value}}) 個遠古自動機"
         },
         "mrrglton-played": {
-            "player": "本賽局你已打出 {{value}} 個莫戈頓"
+            "player": "本賽局你已打出 ({{value}}) 個莫戈頓"
         },
         "kaelthas-spell-cycle": {
             "player": "本回合施放的法術：{{spellCount}}。循環位置：{{value}}"
@@ -2682,12 +2682,12 @@
             "opponent": "對手的地脈卡牌費用減少 ({{value}})"
         },
         "leyline-spell-effect-strength": {
-            "player": "地脈卡牌效果提高 {{value}}",
-            "opponent": "對手的地脈卡牌效果提高 {{value}}"
+            "player": "地脈卡牌效果提高 ({{value}})",
+            "opponent": "對手的地脈卡牌效果提高 ({{value}})"
         },
         "leyline-spell-triggers": {
-            "player": "地脈效果額外觸發 {{value}} 次",
-            "opponent": "對手的地脈效果額外觸發 {{value}} 次"
+            "player": "地脈效果額外觸發 ({{value}}) 次",
+            "opponent": "對手的地脈效果額外觸發 ({{value}}) 次"
         },
         "animal-companion-aura": {
             "player": "動物夥伴卡牌召喚出的野獸費用為 ({{value}})",
@@ -2698,7 +2698,7 @@
             "opponent": "對手的白銀之手新兵具有 +{{atk}}/+{{health}}"
         },
         "talya-earthstrider-global-aura": {
-            "opponent": "對手的動物夥伴卡牌會多召喚 {{value}} 個夥伴",
+            "opponent": "對手的動物夥伴卡牌會多召喚 ({{value}}) 個夥伴",
             "player": "動物夥伴卡牌會多召喚 {{value}} 個夥伴"
         },
         "bashana": {
@@ -2846,7 +2846,7 @@
             "bounties-to-farm": "農硬幣的地點",
             "current-task-tooltip": "該任務只能在傭兵戰隊中的篝火裡更新。",
             "maxed": "已達上限!",
-            "coins-to-farm-tooltip": "期待你的能從未達成的任務中獲得 ({{value}}) 枚代幣",
+            "coins-to-farm-tooltip": "預期你能從未完成的任務中獲得 ({{value}}) 枚硬幣",
             "empty-state-subtitle": "前往傭兵戰隊村莊的介面以重新整理資訊",
             "current-task-tooltip-title": "當前任務 {{taskNumber}}：{{taskTitle}}",
             "next-task-tooltip-title": "下個任務 {{taskNumber}}：{{taskTitle}}"
@@ -2916,7 +2916,7 @@
         "import": {
             "import-deckstring-tooltip": "匯入已複製的牌組代碼",
             "confirmation-title": "覆蓋牌組?",
-            "use-deck-text": "使用 ({{value}})?",
+            "use-deck-text": "使用 ({{value}})？",
             "use-deck-text-default": "要用已複製的牌組?",
             "button-text": "覆蓋",
             "cancel-text": "取消",
@@ -3010,7 +3010,7 @@
         "burns-in": "({{value}}) 回合後捨棄",
         "unknown-minion": "未知手下",
         "unknown-mechanics-card": "未知的 {{mechanics}} 機制卡牌",
-        "drawn-by": "被 ({{value}}) 抽取",
+        "drawn-by": "被 「{{value}}」 抽取",
         "card-tooltip-big-pool-text": "卡牌池過大，無法顯示所有卡牌。",
         "dredged-by": "由「{{value}}」打撈",
         "card-tooltip-pool-size": "{{ value }} 張卡牌"
@@ -3274,13 +3274,13 @@
             },
             "minions-list": {
                 "reset-button": "重設",
-                "mechanics-tier-tooltip": "檢視全部 ({{value}}) 卡牌。右鍵點選以突出顯示旅店中的全部 ({{value}}) 卡牌",
-                "highlight-tribe": "點選以突出顯示這個旅店的全部 ({{value}})",
-                "unhighlight-tribe": "點選以移除突出顯示這個旅店裡的 ({{value}})",
-                "highlight-mechanics": "點選以突出顯示旅店中的全部 ({{value}}) 卡牌",
-                "unhighlight-mechanics": "點選以從旅店中移除突出顯示 ({{value}}) 卡牌",
-                "highlight-minion": "釘選以在旅店裡突出顯示這張卡牌，你也可以右鍵點選手下列表中的任何卡牌以突出顯示它",
-                "unhighlight-minion": "取消釘選以移除在旅店裏突出顯示這張卡牌",
+                "mechanics-tier-tooltip": "檢視全部「{{value}}」卡牌。右鍵點選以標記旅店中的全部「{{value}}」卡牌",
+                "highlight-tribe": "點選以標記這個旅店的全部「{{value}}」",
+                "unhighlight-tribe": "點選以移除標記這個旅店裡的「{{value}}」",
+                "highlight-mechanics": "點選以標記旅店中的全部「{{value}})」卡牌",
+                "unhighlight-mechanics": "點選以從旅店中移除標記「{{value}}」卡牌",
+                "highlight-minion": "釘選以在旅店裡標記這張卡牌，你也可以右鍵點選手下列表中的任何卡牌以標記它",
+                "unhighlight-minion": "取消釘選以移除在旅店裏標記這張卡牌",
                 "buddies-tier-tooltip": "檢視遊戲中的全部戰寵",
                 "minion-banned-tooltip": "這張卡牌被禁用於當前異變",
                 "trinket-name-lesser": "{{name}}（次級）",
@@ -3306,7 +3306,7 @@
                     "tiers-tribes": "手下"
                 },
                 "spells-tier-tooltip": "「旅店法術」",
-                "tribe-category-tooltip": "檢視全部 {{tribeName}} 卡牌。右鍵點選以突出顯示旅店中的所有 {{tribeName}} 卡牌。",
+                "tribe-category-tooltip": "檢視全部「{{tribeName}}」卡牌。右鍵點選以標記旅店中的所有「{{tribeName}}」卡牌。",
                 "compositions": {
                     "header": "陣容組成",
                     "core-cards-header": "核心卡牌",
@@ -3337,7 +3337,7 @@
                     "recommended-cards-header": "推薦卡牌",
                     "recommended-cards-header-tooltip": "強烈建議加入陣容的卡牌，即使沒有這些卡牌，該陣容仍可運作"
                 },
-                "tier-category-tooltip": "檢視所有 {{value}}⭐️卡牌。點擊右鍵以高亮顯示旅店中所有的 {{value}}⭐️卡牌。"
+                "tier-category-tooltip": "檢視所有 {{value}}⭐️卡牌。右鍵點選以標記旅店中所有的 {{value}}⭐️卡牌。"
             },
             "quests": {
                 "turn-to-complete-tooltip": "在你目前的MMR範圍內完成該英雄的任務的平均輪數和任務難度（越低越好）。任務完成的平均回合為 {{averageTurnsToComplete}}，英雄的平均回合為 {{turnsToCompleteForHero}}，難度修正為 {{turnsToCompleteImpact}}。",
@@ -3378,7 +3378,7 @@
             },
             "action-count": {
                 "close-tooltip": "關閉小工具。",
-                "apm-tooltip": "每分鐘動作，以過去 ({{value}}) 秒計算",
+                "apm-tooltip": "每分鐘動作，以過去 ({{value}})秒 計算",
                 "actions-title": "本回合動作次數",
                 "close-cancel": "保持開啟",
                 "close-ok": "關閉",
@@ -3392,13 +3392,13 @@
             "timewarped": {
                 "impact-header": "影響",
                 "tier-header": "強度",
-                "placement-header-tooltip": "選擇此卡牌的前 {{value}}% 玩家的平均最終名次",
+                "placement-header-tooltip": "選擇此卡牌的前 ({{value}})% 玩家的平均最終名次",
                 "data-points-header": "資料量",
                 "impact-header-tooltip": "前 {{value}}% 玩家選擇此卡牌後，對最終名次造成的影響程度",
                 "placement-header": "名次",
                 "data-points-header-tooltip": "前 {{value}}% 玩家選擇此卡牌的對戰場數",
                 "free-uses-tooltip": "你每天可以免費使用此功能 {{max}} 次，目前剩 {{left}} 次",
-                "free-uses-text": "剩 {{value}} 次"
+                "free-uses-text": "剩 ({{value}}) 次"
             }
         },
         "post-match-stats": {
@@ -3495,7 +3495,7 @@
         },
         "summary": {
             "total-games": "({{value}}) 場賽局",
-            "total-games-tooltip": "從 ({{value}}) 開始的 {{gameMode}} 紀錄階段（使用頂端的重設按鈕開始一個新階段）",
+            "total-games-tooltip": "針對 {{gameMode}}，自 {{value}} 起（使用上方的重設按鈕來開始新的階段）",
             "total-games-tooltip-all-time": "從你為 {{gameMode}} 使用應用程式開始（使用上方的重設按鈕來啟用新的紀錄階段）",
             "mmr-tooltip": "你目前的評分",
             "delta-mmr-tooltip": "從紀錄階段開始至今你的配對評分增減",
@@ -3950,7 +3950,7 @@
                 "discover-help": "「發現」上下文說明",
                 "show-gifts-separately-tooltip": "將被創建的卡牌（衍生卡等）顯示在各自的行中（每個創建源各自獨一行）。在舊式卡牌記牌器模式下不起作用。",
                 "streamer-mode-tooltip": "將你的名字和對手的名字替換為「你」和「對手」。此功能鏡像了遊戲內的「實況主模式」，該模式在賽局按 Ctrl + Shift + S 即可啟用",
-                "discover-help-tooltip": "在「發現卡牌」時顯示上下文說明。它可以簡單地突出顯示牌堆中的相關牌，也可以提供更具體的資訊。",
+                "discover-help-tooltip": "在「發現卡牌」時顯示上下文說明。它可以簡單地標記牌堆中的相關牌，也可以提供更具體的資訊。",
                 "show-transformed-into-tooltip": "將一張變形後的卡牌加入記牌器中",
                 "counters-use-expanded-view-label": "計數器視圖展開",
                 "show-board-in-separate-zone": "在單獨的區塊顯示版面",
@@ -4081,7 +4081,7 @@
                 "hand-markers-title": "手牌標記",
                 "hide-generated-cards-label": "隱藏生成的卡牌",
                 "group-cards-by-zone-label": "新現代記牌器",
-                "hide-generated-cards-tooltip": "隱藏由其他卡牌產生且不在手牌或牌堆中的卡牌。⚠️：隱藏生成的卡牌可能會導致部分功能降級運作（效能下降），例如卡牌突出顯示",
+                "hide-generated-cards-tooltip": "隱藏由其他卡牌產生且不在手牌或牌堆中的卡牌。⚠️：隱藏生成的卡牌可能會導致部分功能降級運作（效能下降），例如卡牌標記",
                 "show-dk-runes-tooltip": "在記牌器頂端新增一個區塊，，用以顯示該牌組中已知的死亡騎士符文",
                 "show-dk-runes-label": "顯示死騎符文",
                 "group-cards-by-zone-tooltip": "啟用後，記牌器會將卡牌分為可折疊的區塊（牌組、手牌與其他），並開啟部分新功能。若關閉此選項，將會使用「傳統顯示模式」，所有卡牌會合併顯示在同一個區塊中。",
@@ -4323,7 +4323,7 @@
                     "leyline-spell-cost-discount-tooltip": "顯示地脈費用減少數值"
                 },
                 "discovery-zone-label": "發現區塊",
-                "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並突出顯示與牌堆的協同作用。"
+                "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並標記與牌堆的協同作用。"
             },
             "duels": {
                 "title": "決鬥擂台個人化設定",
@@ -4447,10 +4447,10 @@
                 "simulator-config-title": "模擬配置",
                 "simulator-number-of-sims-label": "模擬次數",
                 "simulator-number-of-sims-tooltip": "每場戰鬥的模擬次數。我們發現 5,000 次模擬是一個不錯的基準點。增加此數值會增進計算準確性但也會佔用更多的電腦資源。",
-                "show-minions-auto-highlight-label": "自動突出顯示手下",
-                "show-tribes-auto-highlight-label": "自動突出顯示手下類別",
-                "show-minions-auto-highlight-tooltip": "根據你的英雄和面板陣容自動突出顯示旅店賣場中的一些手下（例如「保本賭客」於海盜派奇）。",
-                "show-tribes-auto-highlight-tooltip": "自動突出顯示你於遊玩某些英雄時總是想在旅店賣場中購買的手下類別（例如「元素」於泫瓦拉）。",
+                "show-minions-auto-highlight-label": "自動標記手下",
+                "show-tribes-auto-highlight-label": "自動標記手下類別",
+                "show-minions-auto-highlight-tooltip": "根據你的英雄和面板陣容自動標記旅店賣場中的一些手下（例如「保本賭客」於海盜派奇）。",
+                "show-tribes-auto-highlight-tooltip": "自動標記你於遊玩某些英雄時總是想在旅店賣場中購買的手下類別（例如「元素」於泫瓦拉）。",
                 "use-anomaly-filter-for-live-stats-label-short": "異變篩選器",
                 "show-hero-tips-tooltip": "奇妙的智慧球出現，你可以透過將滑鼠懸停在它上面來快速檢視當前英雄的專業貼士。",
                 "show-quest-stats-label": "顯示任務統計",
@@ -4505,7 +4505,7 @@
                 "minions-list-show-on-mouse-over-tooltip": "未啟用時， 你必須點選旅店⭐️的圖示以顯示手下列表",
                 "minions-list-show-on-mouse-over-confirmation": "收到，將只會在你點選星星時顯示詳細手下資訊",
                 "minions-list-show-tribes-highlight-label": "將手下類別標記",
-                "minions-list-show-tribes-highlight-tooltip": "增加按鈕以在旅店中突出顯示特定類別的手下或關鍵字",
+                "minions-list-show-tribes-highlight-tooltip": "增加按鈕以在旅店中標記特定類別的手下或關鍵字",
                 "minions-list-show-mechanics-highlight-tooltip": "添加按鈕以突出顯示鮑勃酒館中的特定機制（例如戰吼或死亡之聲）",
                 "minions-list-show-mechanics-tiers-tooltip": "在手下列表中新增欄位，依照關鍵字來分組手下",
                 "minions-list-show-golden-cards-label": "顯示金卡",
@@ -4700,7 +4700,7 @@
                 "show-card-selection-overlay": "選卡疊加層",
                 "show-draft-tracker": "選牌階段的記牌器",
                 "show-hero-selection-overlay": "英雄揀選階段疊加層",
-                "show-draft-tracker-tooltip": "在選牌時顯示記牌器，這樣你可以在將滑鼠懸停在卡牌挑選介面上時，突出顯示協同作用",
+                "show-draft-tracker-tooltip": "在選牌時顯示記牌器，這樣你可以在將滑鼠懸停在卡牌挑選介面上時，標記協同作用",
                 "tracker-size": "選牌記牌器大小",
                 "draft-overlay-size": "「選牌」疊加層大小",
                 "show-card-stats-discover": "發現時的卡牌統計",
