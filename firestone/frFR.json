@@ -127,7 +127,8 @@
             "day_of_rebirth": "Le jour de la Renaissance",
             "across_the_timeways": "Par-delà les voies temporelles",
             "echoes_of_the_infinite": "Échos de l’infini",
-            "cataclysm": "CATACLYSME"
+            "cataclysm": "CATACLYSME",
+            "violet_hold": "Évasion du fort Pourpre"
         },
         "pack": {
             "classic": "Classique",
@@ -221,7 +222,9 @@
             "golden-across-the-timeways": "Par-delà les voies temporelles (Doré)",
             "cataclysm": "CATACLYSME",
             "cataclysm-catch-up": "Rattrapage (CATACLYSME)",
-            "golden-cataclysm": "CATACLYSME (Doré)"
+            "golden-cataclysm": "CATACLYSME (Doré)",
+            "violet-hold": "Évasion du fort Pourpre",
+            "golden-violet-hold": "Évasion du fort Pourpre (Doré)"
         },
         "ranks": {
             "constructed": {
@@ -2142,7 +2145,8 @@
                 "six-month-subtext": "(Économisez {{value}} %)",
                 "six-month-coupon-text": "Offre à durée limitée ! Jusqu’à {{endDate}}, économisez {{reduction}} supplémentaires en utilisant ce code lors du paiement :",
                 "six-month": "Facturé tous les 6 mois",
-                "yearly-coupon-text-2": "Pour célébrer le lancement de l’extension {{expansionName}}, obtenez {{reduction}} de réduction supplémentaires en utilisant le code suivant lors du paiement :"
+                "yearly-coupon-text-2": "Pour célébrer le lancement de l’extension {{expansionName}}, obtenez {{reduction}} de réduction supplémentaires en utilisant le code suivant lors du paiement :",
+                "coupon-text": "Pour célébrer le lancement de l’extension {{expansionName}}, obtenez {{reduction}} de réduction supplémentaire sur tous les plans en utilisant le code suivant lors du paiement :"
             },
             "cant-subscribe-button": "Abonnement impossible",
             "check-status-online-inactive": "Annulé, mais toujours actif. Voir les détails {{link}}",
@@ -2728,6 +2732,15 @@
         },
         "bashana": {
             "player": "Il reste {{value}} cristaux de mana de sorts de nature gravés dans les tréants de Bashana"
+        },
+        "jade-guardians": {
+            "player": "Vous avez joué {{value}} cartes coûtant 2 cristaux pendant cette partie",
+            "opponent": "Votre adversaire a joué {{value}} cartes coûtant 2 cristaux pendant cette partie"
+        },
+        "godfrey-the-betrayer": {
+            "title": "Godfrey, le traître",
+            "player": "Vous avez brûlé les cartes suivantes pendant cette partie, et {{value}} d’entre elles attendent de rejoindre votre main",
+            "opponent": "Votre adversaire a brûlé les cartes suivantes pendant cette partie, et {{value}} attendent de rejoindre sa main"
         }
     },
     "loading": {
@@ -2927,7 +2940,8 @@
             "board": "Plateau",
             "other-generated": "Autres (créées)",
             "discovery": "Découverte",
-            "current-effects": "Effets en cours"
+            "current-effects": "Effets en cours",
+            "void": "Le Vide"
         },
         "cards-in-hand-tooltip": "Cartes en main",
         "cards-left-in-deck-tooltip": "Cartes restantes dans le deck",
@@ -3659,7 +3673,15 @@
                 "need-to-close-game-warning": "Vous devez fermer Hearthstone avant d’installer, de désintaller, de mettre à jour, d’activer ou de désactiver des mods.",
                 "installed-mods-description-2": "Les mods suivants sont installés (supprimez le fichier correspondant dans le dossier {{path}} pour les désinstaller) :",
                 "auto-update-label": "Mise à jour auto",
-                "auto-update-tooltip": "Met automatiquement à jour les mods quand une nouvelle version est disponible. Les nouvelles versions seront installées à la fermeture du jeu."
+                "auto-update-tooltip": "Met automatiquement à jour les mods quand une nouvelle version est disponible. Les nouvelles versions seront installées à la fermeture du jeu.",
+                "reinstalling-mods": "Réinstallation des mods pour le moteur mis à jour...",
+                "migrating-engine": "Mise à jour du moteur de mods pour votre version de Hearthstone en cours...",
+                "engine-migration-start-message": "Hearthstone utilise désormais un client 64 bits. Firestone met à jour le moteur de mods pour faire correspondre les versions. Cela pourrait prendre un instant.",
+                "engine-migration-done-title": "Mise à jour du moteur de mods terminée",
+                "engine-migration-start-title": "Mise à jour du moteur de mods en cours",
+                "engine-migration-retry-title": "Mise à jour du moteur de mods en cours",
+                "engine-migration-retry-message": "Le moteur de mods ne peut pas être mis à jour tant que les fichiers sont en cours d’utilisation. Firestone réessaiera à la fermeture de Hearthstone.",
+                "engine-migration-done-message": "Le moteur de mods a été mis à jour. Merci de redémarrer Hearthstone pour charger vos mods."
             },
             "third-party": {
                 "intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Elles ne nous rapportent pas d’argent, mais nous recevons de l’exposition, puisque les sites parlent ensuite de nous :)",
@@ -3699,7 +3721,8 @@
                     "title": "Hearthpwn",
                     "next": "Si vous décidez de synchroniser votre compte avec Hearthpwn, Firestone leur enverra les données de votre collection, afin que vous puissiez voir les stats de votre collection.",
                     "toggle-label": "Synchroniser votre collection avec Hearthpwn",
-                    "website-link": "ici"
+                    "website-link": "ici",
+                    "toggle-label-collection": "Afficher une notification lorsque la collection est synchronisée"
                 }
             },
             "bug-report": {
@@ -3897,6 +3920,51 @@
                     "title": "Decktracker",
                     "use-new-card-tile-style": "Nouvelles tuiles",
                     "use-new-card-tile-style-tooltip": "Utiliser le nouveau style de tuiles de cartes dans le decktracker et les decklists"
+                },
+                "overlay-theme": {
+                    "title": "Thème d’overlay",
+                    "selector-label": "Thème",
+                    "intro": "Choisissez l’apparence des overlays en jeu (decktracker, compteurs, chances de combat, liste de serviteurs...).",
+                    "group": {
+                        "general": "Couleurs",
+                        "battlegrounds": "Couleurs de Champs de bataille"
+                    },
+                    "custom": "Personnalisé",
+                    "dark": "Sombre",
+                    "firestone": "Firestone",
+                    "firestone-dark": "Firestone (sombre)",
+                    "deck-tracker": "Nostalgique",
+                    "color": {
+                        "color-7": "Fond (sombre)",
+                        "color-5": "Fond (clair)",
+                        "color-6": "Fond (moyen)",
+                        "color-4": "Couleur de bordure",
+                        "color-1": "Couleur principale (claire)",
+                        "color-2": "Couleur secondaire",
+                        "color-3": "Couleur tertiaire",
+                        "color-8": "Couleur accentuée",
+                        "color-9": "Bordure de fond",
+                        "common-2": "Couleur de surbrillance",
+                        "common-1": "Couleur de texte neutre",
+                        "text": "Couleur de texte",
+                        "title": "Couleur de titre",
+                        "secondary-text": "Couleur de texte secondaire",
+                        "bgs-background-start": "Fond de widget (centre)",
+                        "bgs-background-end": "Fond de widget (bordure)"
+                    },
+                    "builtin-hint": "Vous voulez vos propres couleurs ? Créez un thème personnalisé pour choisir chaque couleur vous-même.",
+                    "customize-button": "Créer un thème personnalisé",
+                    "export-current-button": "Exporter dans un fichier",
+                    "reset-button": "Réinitialiser les couleurs",
+                    "save-button": "Sauvegarder en tant que nouveau thème",
+                    "name-placeholder": "Nom du thème",
+                    "apply-button": "Appliquer",
+                    "edit-button": "Éditer",
+                    "export-button": "Exporter dans un fichier",
+                    "saved-themes": "Vos thèmes sauvegardés",
+                    "delete-button": "Supprimer",
+                    "import-button": "Importer depuis un fichier",
+                    "import-error": "Ce fichier ne ressemble pas à un thème d’overlay Firestone valide."
                 }
             },
             "notifications": {
@@ -4349,10 +4417,16 @@
                     "leyline-spell-effect-strength-tooltip": "Affiche l’amélioration des effets de vos lignes telluriques",
                     "talya-earthstrider-global-aura-label": "Talya Arpenterre",
                     "talya-earthstrider-global-aura-tooltip": "Suit l’effet global de Talya Arpenterre",
-                    "silver-hand-recruit-aura-tooltip": "Suit les buffs de vos recrues de la Main d’argent"
+                    "silver-hand-recruit-aura-tooltip": "Suit les buffs de vos recrues de la Main d’argent",
+                    "jade-guardians-tooltip": "Afficher le nombre de fois que vous avez joué une carte coûtant 2 cristaux pendant cette partie",
+                    "card-dead-tooltip": "Afficher le nombre de cartes {{cardName}} alliées détruites pendant cette partie",
+                    "godfrey-the-betrayer-label": "Godfrey, le traître",
+                    "godfrey-the-betrayer-tooltip": "Affiche toutes les cartes que vous avez brûlées, ainsi que celles qui sont en attente de rejoindre votre main"
                 },
                 "discovery-zone-label": "Zone de découverte",
-                "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck."
+                "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck.",
+                "special-zones-label": "Zones spéciales",
+                "special-zones-tooltip": "Lorsque cette option est activée, de nouvelles sections apparaissent dans le decktracker pour gérer les cartes liées à Godfrey, le traître ou Irida Cherche-vice"
             },
             "duels": {
                 "title": "Options spécifiques à Duels",
