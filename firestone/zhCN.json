@@ -127,7 +127,8 @@
             "day_of_rebirth": "重生之日",
             "across_the_timeways": "穿越时间流",
             "echoes_of_the_infinite": "永恒回响",
-            "cataclysm": "大地的裂变"
+            "cataclysm": "大地的裂变",
+            "violet_hold": "逃离紫罗兰监狱"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -221,7 +222,9 @@
             "across-the-timeways-catch-up": "穿越时间流 追赶包",
             "cataclysm": "大地的裂变 卡牌包",
             "cataclysm-catch-up": "大地的裂变 追赶包",
-            "golden-cataclysm": "大地的裂变 金色卡牌包"
+            "golden-cataclysm": "大地的裂变 金色卡牌包",
+            "violet-hold": "逃离紫罗兰监狱 卡牌包",
+            "golden-violet-hold": "逃离紫罗兰监狱 金色卡牌包"
         },
         "ranks": {
             "constructed": {
@@ -2142,7 +2145,8 @@
                 "six-month-subtext": "(节省 {{value}}%)",
                 "six-month": "每6个月收费一次",
                 "six-month-coupon-text": "限时优惠！截止至{{endDate}}，结账时使用以下代码可获得额外的{{reduction}}折扣：",
-                "yearly-coupon-text-2": "为庆祝 {{expansionName}} 上线，在结账页面使用以下折扣代码以获得额外{{reduction}}的优惠："
+                "yearly-coupon-text-2": "为庆祝 {{expansionName}} 上线，在结账页面使用以下折扣代码以获得额外{{reduction}}的优惠：",
+                "coupon-text": "为庆祝{{expansionName}}上线，在结账过程中使用以下优惠码，所有方案即可获得额外的{{reduction}}优惠："
             },
             "cant-subscribe-button": "无法订阅",
             "check-status-online-inactive": "已取消，但仍生效。查看详情 {{link}}",
@@ -2728,6 +2732,15 @@
         },
         "bashana": {
             "player": "巴珊娜·符文图腾的树人还有{{value}}法力值的自然法术可以施放"
+        },
+        "godfrey-the-betrayer": {
+            "title": "背叛者高弗雷",
+            "player": "在本局对战中，你已经弃了以下卡牌，还有{{value}}张卡牌正在等待回到你的手牌中",
+            "opponent": "在本局对战中，对手已经弃了以下卡牌，还有{{value}}张卡牌正在等待回到其手牌中"
+        },
+        "jade-guardians": {
+            "player": "你在本局对战中使用了{{value}}个法力值消耗为2点的卡牌",
+            "opponent": "对手在本局对战中使用了{{value}}个法力值消耗为2点的卡牌"
         }
     },
     "loading": {
@@ -2927,7 +2940,8 @@
             "board": "战场",
             "other-generated": "其他（衍生）",
             "discovery": "发现",
-            "current-effects": "当前效果"
+            "current-effects": "当前效果",
+            "void": "虚空"
         },
         "cards-in-hand-tooltip": "手牌",
         "cards-left-in-deck-tooltip": "牌库",
@@ -3659,7 +3673,15 @@
                 "installed-mods-description-2": "以下模组已安装（删除 {{path}} 中的对应文件即可卸载）：",
                 "need-to-close-game-warning": "在安装/卸载/更新模组，或启用/禁用模组之前，您需要先关闭炉石传说。",
                 "auto-update-label": "自动更新",
-                "auto-update-tooltip": "当有新版本可用时自动更新模组。新版本会在关闭游戏时安装。"
+                "auto-update-tooltip": "当有新版本可用时自动更新模组。新版本会在关闭游戏时安装。",
+                "engine-migration-start-message": "炉石传说现已使用 64 位客户端。Firestone 正在更新模组引擎以匹配。这可能需要一分钟。",
+                "engine-migration-done-message": "模组引擎已更新。请重新启动炉石传说以加载您的模组。",
+                "engine-migration-retry-title": "模组引擎更新待处理",
+                "engine-migration-done-title": "模组引擎已更新",
+                "reinstalling-mods": "为更新后的引擎重新安装模组...",
+                "engine-migration-retry-message": "当文件正在使用时，模组引擎无法更新。Firestone 将在炉石传说关闭后重试。",
+                "engine-migration-start-title": "正在更新模组引擎",
+                "migrating-engine": "正在为你的炉石传说版本更新模组引擎..."
             },
             "third-party": {
                 "intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
@@ -3699,7 +3721,8 @@
                     "title": "Hearthpwn",
                     "next": "如果您决定同步到 Hearthpwn，Firestone 将向他们发送您的收藏数据，以便您可以查看收藏的统计信息。",
                     "toggle-label": "将你的收藏同步到 Hearthpwn",
-                    "website-link": "这里"
+                    "website-link": "这里",
+                    "toggle-label-collection": "当卡牌收藏同步完成时显示通知"
                 }
             },
             "bug-report": {
@@ -3897,6 +3920,51 @@
                     "title": "记牌器",
                     "use-new-card-tile-style-tooltip": "在记牌器或套牌列表中显示卡牌时使用新的卡牌砖块样式",
                     "use-new-card-tile-style": "新版卡牌砖块"
+                },
+                "overlay-theme": {
+                    "color": {
+                        "color-8": "强调色",
+                        "color-7": "背景（深色）",
+                        "bgs-background-end": "小部件背景（边缘）",
+                        "color-5": "背景（浅色）",
+                        "color-6": "背景（中等）",
+                        "color-9": "背景边框",
+                        "color-4": "边框颜色",
+                        "common-2": "高亮颜色",
+                        "common-1": "中性文字颜色",
+                        "color-1": "主要颜色（浅色）",
+                        "color-2": "次要颜色",
+                        "secondary-text": "次要文字颜色",
+                        "color-3": "第三次要颜色",
+                        "text": "文字颜色",
+                        "title": "标题颜色",
+                        "bgs-background-start": "小部件背景（中心）"
+                    },
+                    "intro": "选择游戏内浮窗的外观和样式（记牌器、计数器、战斗胜率、随从列表等）。",
+                    "group": {
+                        "battlegrounds": "酒馆战棋颜色",
+                        "general": "颜色"
+                    },
+                    "customize-button": "创建自定义主题",
+                    "custom": "自定义",
+                    "dark": "深色",
+                    "firestone": "Firestone",
+                    "firestone-dark": "Firestone 深色",
+                    "deck-tracker": "怀旧",
+                    "title": "浮窗主题",
+                    "reset-button": "重置颜色",
+                    "save-button": "保存为新主题",
+                    "selector-label": "主题",
+                    "builtin-hint": "想要选择你自己的颜色吗？创建一个自定义主题来亲自挑选每种颜色。",
+                    "name-placeholder": "主题名称",
+                    "apply-button": "应用",
+                    "delete-button": "删除",
+                    "edit-button": "编辑",
+                    "export-current-button": "导出到文件",
+                    "export-button": "导出到文件",
+                    "import-button": "从文件导入",
+                    "import-error": "这看起来不像一个有效的 Firestone 浮窗主题。",
+                    "saved-themes": "已保存的主题"
                 }
             },
             "notifications": {
@@ -4349,10 +4417,16 @@
                     "leyline-spell-triggers-label": "魔网法术触发次数",
                     "leyline-spell-triggers-tooltip": "显示魔网效果触发次数",
                     "leyline-spell-effect-strength-label": "魔网强度",
-                    "leyline-spell-effect-strength-tooltip": "显示魔网法术效果的强度"
+                    "leyline-spell-effect-strength-tooltip": "显示魔网法术效果的强度",
+                    "godfrey-the-betrayer-label": "背叛者高弗雷",
+                    "jade-guardians-tooltip": "显示你在本局对战中使用了多少次法力值消耗为2点的卡牌",
+                    "card-dead-tooltip": "显示 “{{cardName}}” 在我方战场死亡的次数",
+                    "godfrey-the-betrayer-tooltip": "显示所有你已弃掉的卡牌，以及哪些卡牌还在等待回到你的手牌"
                 },
                 "discovery-zone-label": "发现区",
-                "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。"
+                "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。",
+                "special-zones-tooltip": "启用后，记牌器中会出现一个新区块，显示被背叛者高弗雷或伊莉达·寻罪处理过的卡牌",
+                "special-zones-label": "特殊区"
             },
             "duels": {
                 "title": "对决模式个性化设置",
