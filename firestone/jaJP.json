@@ -127,7 +127,8 @@
             "across_the_timeways": "タイムウェイの旅人たち",
             "day_of_rebirth": "再生の日",
             "echoes_of_the_infinite": "無限の残響",
-            "cataclysm": "終焉のアゼロス"
+            "cataclysm": "終焉のアゼロス",
+            "violet_hold": "ヴァイオレット監獄を脱出せよ"
         },
         "pack": {
             "classic": "クラシック",
@@ -221,7 +222,9 @@
             "golden-across-the-timeways": "ゴールデン・タイムウェイの旅人たち",
             "cataclysm": "終焉のアゼロス",
             "cataclysm-catch-up": "終焉のアゼロス・キャッチアップ",
-            "golden-cataclysm": "ゴールデン・終焉のアゼロス"
+            "golden-cataclysm": "ゴールデン・終焉のアゼロス",
+            "violet-hold": "ヴァイオレット監獄を脱出せよ",
+            "golden-violet-hold": "ゴールデン・ヴァイオレット監獄を脱出せよ"
         },
         "ranks": {
             "constructed": {
@@ -2142,7 +2145,8 @@
                 "six-month-subtext": "({{value}}% 割引)",
                 "six-month": "6ヶ月ごとの請求",
                 "six-month-coupon-text": "期間限定オファー！{{endDate0}}まで、購入の際に以下のコードを使うと、追加で{{reduction}}の割引を受けられます：",
-                "yearly-coupon-text-2": "{{expansionName}}のリリースを記念して、チェックアウト時に次のコードを入力すると、追加で{{reduction}}の割引を受けられます"
+                "yearly-coupon-text-2": "{{expansionName}}のリリースを記念して、チェックアウト時に次のコードを入力すると、追加で{{reduction}}の割引を受けられます",
+                "coupon-text": "{{expansionName}}のリリースを祝して、期間中、下記のコードを会計中に使うと、全てのプランにおいて追加で{{reduction}}%の割引を得られます"
             },
             "cant-subscribe-button": "サブスクライブできません",
             "cant-subscribe-tooltip": "すでに有効なプランがある間、他のプランにサブスクライブすることはできません。現在契約中のプランを解約し、有効期限が切れるまでお待ち下さい",
@@ -2349,7 +2353,7 @@
         },
         "specific-summons": {
             "player": "{{value}}体の{{cardName}}を召喚した",
-            "opponent": "対戦相手は{{value}}体の{{cardName}}を召喚した"
+            "opponent": "対戦相手は{{value}}体の「{{cardName}}」を召喚した"
         },
         "chained-guardian": {
             "player": "{{value}}枚の「疫病」を対戦相手のデッキに混ぜた"
@@ -2359,7 +2363,7 @@
         },
         "specific-plays": {
             "player": "{{value}}枚の「{{cardName}}」を使用した",
-            "opponent": "対戦相手は{{value}}枚の{{cardName}}を使用した"
+            "opponent": "対戦相手は{{value}}枚の「{{cardName}}」を使用した"
         },
         "excavate": {
             "player": "発掘を{{totalExcavates}}回しました。次発掘するとレア度{{nextTier}}の宝物を入手します",
@@ -2484,7 +2488,7 @@
             "opponent": "この試合中敵のミニオンは{{value}}体死亡した"
         },
         "specific-cards-in-hand": {
-            "player": "手札に{{cardName}}が{{value}}枚ある"
+            "player": "手札に「{{cardName}}」が{{value}}枚ある"
         },
         "tyrande": {
             "player": "自分は{{value}}個の呪文を2回使用した",
@@ -2728,6 +2732,15 @@
         },
         "bashana": {
             "player": "「バシャナ・ルーントーテム」のトーテムが唱える自然呪文は、{{value}}マナ分残っている"
+        },
+        "jade-guardians": {
+            "player": "あなたはこの対戦中、{{value}}枚カードを2マナで使用した",
+            "opponent": "対戦相手はこの対戦中、{{value}}枚のカードを2マナで使用した"
+        },
+        "godfrey-the-betrayer": {
+            "title": "「裏切り者ゴッドフリー」",
+            "player": "あなたはこの対戦中これらのカードを燃やし、{{value}}枚が手札に戻っていない",
+            "opponent": "対戦相手はこれらのカードを燃やし、まだ{{value}}枚が手札に戻っていない"
         }
     },
     "loading": {
@@ -2927,7 +2940,8 @@
             "board": "陣地",
             "other-generated": "その他(生成)",
             "discovery": "発見中",
-            "current-effects": "現在の効果"
+            "current-effects": "現在の効果",
+            "void": "虚無"
         },
         "cards-in-hand-tooltip": "手に持っているカード",
         "cards-left-in-deck-tooltip": "デッキに残されたカード",
@@ -3658,7 +3672,15 @@
                 "need-to-close-game-warning": "Modのインストール/アンインストール/アップデート/有効化/無効化をする前に、ハースストーンを終了してください",
                 "installed-mods-description-2": "以下のModがインストールされています(アンインストールするには、{{path}}内の該当ファイルを削除してください)：",
                 "auto-update-label": "自動アップデート",
-                "auto-update-tooltip": "Modの新バージョンが利用可能になった時、自動でアップデートします。新バージョンは、ゲームを終了した際にインストールされます"
+                "auto-update-tooltip": "Modの新バージョンが利用可能になった時、自動でアップデートします。新バージョンは、ゲームを終了した際にインストールされます",
+                "migrating-engine": "ハースストーンのバージョンに合わせ、Modエンジンをアップデート中",
+                "engine-migration-start-message": "ハースストーンは現在64bitクライアントを使用しています。FirestoneはModエンジンをそれに適用しようとしています。この処理は数分かかります",
+                "engine-migration-retry-title": "Modエンジンアップデート保留中",
+                "engine-migration-done-title": "Modエンジンアップデート済",
+                "reinstalling-mods": "エンジンがアップデートされたためModを再インストール中",
+                "engine-migration-retry-message": "Modエンジンはファイル使用中にはアップデートできません。Firestoneはハースストーンが終了した際に再度試します",
+                "engine-migration-done-message": "Modエンジンがアップデートされました。、Modをロードするためにはハースストーンを再起動してください",
+                "engine-migration-start-title": "Modエンジンをアップデート中"
             },
             "third-party": {
                 "intro": "私たちは、あなたのデータがあなたのものであると信じています。 そして、あなたは他のサードパーティのウェブサイトにデータを同期させて、彼らを手助けすることができます。それによって私たちが報酬を受け取ることはありませんが、彼らが私たちを話題にだすことで、ある程度の露出を得ることができます :)",
@@ -3698,7 +3720,8 @@
                     "next": "Hearthpwn に同期する場合、Firestone はコレクションのデータを Hearthpwn に送信するので、コレクションで統計情報を表示できます",
                     "toggle-label": "Hearthpwnにコレクションを同期",
                     "website-link": "こちら",
-                    "pitch": "Hearthpwnは、デッキや記事などを共有する最大級のコミュニティウェブサイトの一つです。カードコレクションをこのサイトに同期すると、プレイするデッキを見つけたり、コレクションの統計情報を確認したりするのが簡単になります。{{websiteLink}}からアクセスできます"
+                    "pitch": "Hearthpwnは、デッキや記事などを共有する最大級のコミュニティウェブサイトの一つです。カードコレクションをこのサイトに同期すると、プレイするデッキを見つけたり、コレクションの統計情報を確認したりするのが簡単になります。{{websiteLink}}からアクセスできます",
+                    "toggle-label-collection": "コレクションと同期した時に通知を表示"
                 }
             },
             "bug-report": {
@@ -3896,6 +3919,51 @@
                     "use-new-card-tile-style": "新しいカードタイル",
                     "title": "デッキトラッカー",
                     "use-new-card-tile-style-tooltip": "デッキリストやトラッカーにおいて、カードタイルの新しいスタイルを使用します"
+                },
+                "overlay-theme": {
+                    "firestone": "Firestone",
+                    "intro": "ゲーム内オーバーレイの見た目を選んでください(デッキトラッカー、カウンター、勝敗予想、ミニオンリスト等)",
+                    "title": "オーバーレイテーマ",
+                    "selector-label": "テーマ",
+                    "group": {
+                        "battlegrounds": "背景色",
+                        "general": "色"
+                    },
+                    "custom": "カスタム",
+                    "dark": "ダーク",
+                    "firestone-dark": "Firestoneダーク",
+                    "deck-tracker": "ノスタルジック",
+                    "color": {
+                        "color-1": "プライマリカラー(ライト)",
+                        "color-2": "セカンダリカラー",
+                        "color-8": "アクセントカラー",
+                        "color-7": "背景(ダーク)",
+                        "color-5": "背景(ライト)",
+                        "color-6": "背景(中間)",
+                        "color-9": "背景のフチ",
+                        "color-4": "枠の色",
+                        "common-2": "ハイライトカラー",
+                        "common-1": "通常テキスト色",
+                        "color-3": "三次色",
+                        "secondary-text": "セカンダリテキスト色",
+                        "text": "テキスト色",
+                        "title": "タイトル色",
+                        "bgs-background-end": "ウィジェット背景色(フチ)",
+                        "bgs-background-start": "ウィジェット背景色(中)"
+                    },
+                    "customize-button": "カスタムテーマを作成",
+                    "builtin-hint": "自分で色を決めたい？自分で好きな色を選んでカスタムカラーテーマを作れるぞ",
+                    "apply-button": "適用",
+                    "delete-button": "消去",
+                    "edit-button": "編集",
+                    "export-current-button": "ファイルにエクスポート",
+                    "export-button": "ファイルにエクスポート",
+                    "import-button": "ファイルからインポート",
+                    "reset-button": "色をリセット",
+                    "save-button": "新しいテーマとして保存",
+                    "name-placeholder": "テーマ名",
+                    "import-error": "これはFirestoneのオーバーレイテーマとして不適合だと思われます",
+                    "saved-themes": "保存したテーマ"
                 }
             },
             "notifications": {
@@ -4348,10 +4416,16 @@
                     "kaelthas-spell-cycle-label": "ケルサス呪文サイクル",
                     "talya-earthstrider-global-aura-label": "「タルヤ・アースストライダー」",
                     "talya-earthstrider-global-aura-tooltip": "「タルヤ・アースストライダー」の効果を記録します",
-                    "silver-hand-recruit-aura-tooltip": "シルバーハンド新兵へのバフを記録します"
+                    "silver-hand-recruit-aura-tooltip": "シルバーハンド新兵へのバフを記録します",
+                    "godfrey-the-betrayer-label": "「裏切り者ゴッドフリー」",
+                    "godfrey-the-betrayer-tooltip": "全ての燃えたカードと、どのカードがまだ手札に戻っていないかを表示します",
+                    "jade-guardians-tooltip": "この対戦中、自分が2マナで使用したカードの回数を表示します",
+                    "card-dead-tooltip": "あなたの「{{cardName}}」が死亡した回数を表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
-                "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます"
+                "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます",
+                "special-zones-tooltip": "有効にすると、トラッカーに「裏切り者ゴッドフリー」や「悪の追求者イリダ」のための新しいセクションが現れるぞ",
+                "special-zones-label": "特殊ゾーン"
             },
             "duels": {
                 "title": "デュエル特有のオプション",
