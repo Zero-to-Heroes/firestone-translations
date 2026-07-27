@@ -149,22 +149,22 @@
             "dragons": "降臨！遠古巨龍",
             "black-temple": "外域之燼",
             "scholomance": "通靈學院",
-            "standard-hunter": "標準-惡魔獵人",
+            "standard-hunter": "標準卡牌包-獵人",
             "year-of-dragon": "巨龍年",
-            "standard-mage": "標準-法師",
+            "standard-mage": "標準卡牌包-法師",
             "the-barrens": "貧瘠之地",
             "stormwind": "暴風城",
             "golden-scholomance": "通靈學院（金色）",
             "darkmoon-faire": "暗月馬戲團：古神也瘋狂",
             "mercenaries": "傭兵戰隊",
-            "standard-druid": "標準-德魯伊",
-            "standard-paladin": "標準-聖騎士",
-            "standard-warrior": "標準-戰士",
-            "standard-priest": "標準-牧師",
-            "standard-rogue": "標準-盜賊",
-            "standard-shaman": "標準-薩滿",
-            "standard-warlock": "標準-術",
-            "standard-demonhunter": "標準-惡魔獵人",
+            "standard-druid": "標準卡牌包-德魯伊",
+            "standard-paladin": "標準卡牌包-聖騎士",
+            "standard-warrior": "標準卡牌包-戰士",
+            "standard-priest": "標準卡牌包-牧師",
+            "standard-rogue": "標準卡牌包-盜賊",
+            "standard-shaman": "標準卡牌包-薩滿",
+            "standard-warlock": "標準卡牌包-術士",
+            "standard-demonhunter": "標準卡牌包-惡魔獵人",
             "standard-deathknight": "標準死亡騎士",
             "golden-darkmoon-faire": "暗月馬戲團：古神也瘋狂（金色）",
             "alterac-valley": "決戰奧山",
@@ -221,7 +221,10 @@
             "cataclysm-catch-up": "浩劫與重生 追趕進度包",
             "golden-cataclysm": "浩劫與重生（金色）",
             "violet-hold": "紫羅蘭堡大逃亡",
-            "golden-violet-hold": "紫羅蘭堡大逃亡（金色）"
+            "golden-violet-hold": "紫羅蘭堡大逃亡（金色）",
+            "escape-from-violet-hold-catch-up": "紫羅蘭堡大逃亡追趕進度包",
+            "golden-escape-from-violet-hold": "紫羅蘭堡大逃亡（金色）",
+            "escape-from-violet-hold": "紫羅蘭堡大逃亡"
         },
         "ranks": {
             "constructed": {
@@ -1496,8 +1499,8 @@
                     "action": {
                         "level": "升級到 {{value}} 等",
                         "hero-power": "英雄能力",
-                        "buy": "購買",
-                        "buy-token": "購買一個理財手下",
+                        "buy": "雇用",
+                        "buy-token": "雇用一個理財手下",
                         "sell": "售出",
                         "roll": "搖一搖"
                     },
@@ -1942,7 +1945,7 @@
             "quest_stats": "直接在覆疊視窗中檢視任務的平均完成輪數和獎勵的平均位置",
             "guess_the_weight": "有些卡牌在「發現」過程中有上下文說明",
             "minion_play_order": "戰場上每個手下頂端的數字告訴你他們上場的順序 - 這就是死亡之聲觸發的順序",
-            "minion_auto_highlight": "在遊玩對應的英雄時一些手下可以腦袋空空看到就購買（例如保本賭客於海盜派奇）。 Firestone 會自動在商店中為你標記這些手下。",
+            "minion_auto_highlight": "在遊玩對應的英雄時一些手下可以腦袋空空看到就雇用（例如保本賭客於海盜派奇）。 Firestone 會自動在商店中為你標記這些手下。",
             "constructed_deck_stats": "檢視詳細的卡牌統計（例如起始手牌和抽取勝率）以及整副牌組型態的統計。",
             "bg_wisdomball": "你可以直接從覆疊視窗中獲得遊戲裏一些最佳玩家的建議並採用他們的策略",
             "collection_stats": "你可以檢視所顯示集群的卡牌歷史記錄和全域統計，並隨時在它們之間切換",
@@ -2548,7 +2551,7 @@
             "title": "拉法姆"
         },
         "bgs-undead-army": {
-            "player": "你的不死族在本賽局獲得 +{{value}} 點攻擊力"
+            "player": "本賽局你的不死族獲得 +{{atk}}/+{{health}}"
         },
         "deep-blue": {
             "player": "你的「{{cardName}}」 賦予 +{{atk}}/+{{health}}"
@@ -3155,7 +3158,7 @@
             "lesser-trinket-title": "次級飾品",
             "lesser-trinkets-header": "次級飾品",
             "global-info-title-tooltip": "點選以修改英雄的全域附魔",
-            "undead-army": "不死大軍（哎呦，全是不死族！）",
+            "undead-army": "不死大軍攻擊力（哎呦，全是不死族！）",
             "eternal-legion": "永恆軍團",
             "frostling-bonus": "罐裝小霜冰",
             "tavern-spells-cast": "旅店法術施放",
@@ -3212,16 +3215,18 @@
             "whelp-health-buff-tooltip": "賦予你幼龍的額外生命值",
             "whelp-health-buff": "幼龍生命值增益",
             "whelp-attack-buff-tooltip": "賦予你幼龍的額外攻擊力",
-            "tavern-spells-cast-this-turn-tooltip": "顯示你於目前購買階段已施放的旅店法術數量",
+            "tavern-spells-cast-this-turn-tooltip": "顯示你於目前雇用階段已施放的旅店法術數量",
             "tavern-spells-cast-this-turn": "本回合施放的旅店法術",
-            "cards-played-this-turn-tooltip": "顯示你於目前購買階段已打出的卡牌數量",
+            "cards-played-this-turn-tooltip": "顯示你於目前雇用階段已打出的卡牌數量",
             "mrrgltons-played-this-game": "本賽局已打出的莫戈頓",
             "back-to-back-cast-this-game": "本賽局已施放「背靠背」的次數",
             "cards-played-this-turn": "本回合已打出的卡牌",
             "deathrattles-triggered-this-game": "本賽局已觸發的死亡之聲",
             "back-to-back-cast-this-game-tooltip": "顯示本賽局你已施放的「背靠背」旅店法術次數",
             "mrrgltons-played-this-game-tooltip": "顯示本賽局你已打出的莫戈頓手下數量（莫戈頓媽媽 / 爸爸增益）",
-            "deathrattles-triggered-this-game-tooltip": "顯示本賽局你已觸發的死亡之聲效果次數（包括手下、法術等）"
+            "deathrattles-triggered-this-game-tooltip": "顯示本賽局你已觸發的死亡之聲效果次數（包括手下、法術等）",
+            "undead-army-health-tooltip": "你的不死族獲得的額外生命值",
+            "undead-army-health": "不死大軍生命值"
         },
         "hero-stats": {
             "finishes-title": "完賽數",
@@ -4147,7 +4152,9 @@
                     "corpses-label": "屍體",
                     "herald-tooltip": "顯示對手目前的預兆等級",
                     "bashana-label": "「巴珊娜‧符文圖騰」",
-                    "bashana-tooltip": "顯示巴珊娜的樹人還剩多少法力值可施放"
+                    "bashana-tooltip": "顯示巴珊娜的樹人還剩多少法力值可施放",
+                    "ancestral-automaton-tooltip": "顯示對手召喚遠古自動機的次數",
+                    "ancestral-automaton-label": "遠古自動機"
                 },
                 "size-title": "大小與不透明度",
                 "opacity-title": "不透明度",
@@ -4447,7 +4454,9 @@
                 "always-on-tooltip": "即使最大生命值／法力水晶沒有改變，也顯示小工具",
                 "toggle": "顯示小工具",
                 "show-horizontally": "水平顯示",
-                "show-horizontally-tooltip": "單行顯示最大資源，而不是單列"
+                "show-horizontally-tooltip": "單行顯示最大資源，而不是單列",
+                "show-corpses": "顯示屍體數",
+                "show-corpses-tooltip": "顯示你**當前**擁有的屍體數量"
             }
         },
         "collection": {
@@ -4473,7 +4482,7 @@
             },
             "history-show-only-new-cards": "只顯示新卡",
             "pack-stats-show-only-buyable-packs": "只顯示主要卡牌包",
-            "pack-stats-show-only-buyable-packs-tooltip": "僅顯示可以在商店中使用金幣購買的卡牌包，隱藏全部促銷及免費卡牌包",
+            "pack-stats-show-only-buyable-packs-tooltip": "僅顯示可以在商店中使用金幣雇用的卡牌包，隱藏全部促銷及免費卡牌包",
             "set-show-golden-stats": "顯示金卡統計"
         },
         "duels": {
@@ -4529,7 +4538,7 @@
                 "show-minions-auto-highlight-label": "自動標記手下",
                 "show-tribes-auto-highlight-label": "自動標記手下類別",
                 "show-minions-auto-highlight-tooltip": "根據你的英雄和面板陣容自動標記旅店賣場中的一些手下（例如「保本賭客」於海盜派奇）。",
-                "show-tribes-auto-highlight-tooltip": "自動標記你於遊玩某些英雄時總是想在旅店賣場中購買的手下類別（例如「元素」於泫瓦拉）。",
+                "show-tribes-auto-highlight-tooltip": "自動標記你於遊玩某些英雄時總是想在旅店賣場中雇用的手下類別（例如「元素」於泫瓦拉）。",
                 "use-anomaly-filter-for-live-stats-label-short": "異變篩選器",
                 "show-hero-tips-tooltip": "奇妙的智慧球出現，你可以透過將滑鼠懸停在它上面來快速檢視當前英雄的專業貼士。",
                 "show-quest-stats-label": "顯示任務統計",
@@ -4594,7 +4603,7 @@
                 "opponent-board-show-top-tooltip": "切換顯示對手陣容的位置（頂端或底部）",
                 "counters-title": "計數器",
                 "counter-soutshsea-label": "南海惡棍",
-                "counter-soutshsea-tooltip": "當「南海惡棍」在商店或你手中時，顯示本回合購買的海盜數量（若有）",
+                "counter-soutshsea-tooltip": "當「南海惡棍」在商店或你手中時，顯示本回合雇用的海盜數量（若有）",
                 "counter-majordomo-label": "管理者埃克索圖斯",
                 "counter-majordomo-tooltip": "顯示當「管理者埃克索圖斯」在商店、你的戰場或手上時本回合打出過的元素數量（若有）",
                 "minions-list-show-tribe-tiers-tooltip": "在手下列表中新增欄位，依照類別來分組手下",
@@ -4660,7 +4669,7 @@
                 },
                 "counter-deep-blue": "深情藍調",
                 "counter-deep-blue-tooltip": "顯示深情藍調目前的增益數值",
-                "counter-undead-army-tooltip": "顯示本賽局你的不死族獲得的攻擊力增益總計。",
+                "counter-undead-army-tooltip": "顯示本賽局你的不死族獲得的攻擊力／生命值增益總計",
                 "counter-undead-army-label": "不死大軍",
                 "counter-rightmost-tooltip": "顯示旅店最右側手下的增益",
                 "counter-volumizer-buff-tooltip": "顯示「音量機兵」的額外攻擊力／生命值增益",
@@ -4879,7 +4888,9 @@
         "show-tracker": "顯示牌組記牌器",
         "show-opponent-tracker": "顯示對手記牌器",
         "card-scale-tooltip": "修改顯示為提示框的卡牌大小",
-        "card-scale": "卡牌大小"
+        "card-scale": "卡牌大小",
+        "reconnect-for-chat-title": "重新連結 Twitch 以啟用 !deck 指令",
+        "reconnect-for-chat-text": "請前往「設定」並重新連結你的 Twitch 帳號，讓觀眾可以在聊天室中使用 !deck 指令"
     },
     "website": {
         "battlegrounds": {
@@ -5648,7 +5659,7 @@
         "igneous-odyn-warrior": "打撈歐丁-戰",
         "kingslayer-pirate-rogue": "顯赫海盜-賊",
         "lc-quest-priest": "任務(光暗均衡)-牧",
-        "token-broxigar-dh": "顯赫(布洛克斯)-惡魔獵人",
+        "token-broxigar-dh": "顯赫(布洛克斯)-惡獵",
         "velarok-rogue": "節奏(維拉若克)-賊",
         "xl-basher-warrior": "40牌 破壁重甲龍-戰",
         "xl-dragon-druid": "40牌 龍-德",
@@ -5660,7 +5671,48 @@
         "divergence-warlock": "分歧-術",
         "hostage-druid": "無賴-德",
         "leyline-mage": "地脈-法",
-        "burn-warrior": "直傷-戰"
+        "burn-warrior": "直傷-戰",
+        "bb-harold-dk": "雙血魄預兆-死騎",
+        "bfu-imbue-dk": "三色注能-DK",
+        "bu-egg-dk": "BU蛋-DK",
+        "buu-aggro-dk": "BUU快攻-DK",
+        "buu-dk": "BUU-DK",
+        "buu-egg-dk": "BUU蛋-DK",
+        "buu-quest-dk": "BUU任務-DK",
+        "chef-druid": "大廚-德",
+        "ffu-dk": "FFU-死騎",
+        "zuramat-druid": "牢獄(舒拉邁特)-德",
+        "demon-dh": "惡魔-惡獵",
+        "prepared-druid": "預備-德",
+        "archmage-paladin": "大法師(火球術)-聖",
+        "egg-paladin": "蛋-聖",
+        "toki-mage": "托奇-法",
+        "tripwire-hunter": "絆索-獵",
+        "face-hunter": "打臉-獵",
+        "manastorm-mage": "坐牢的曼納斯頓-法",
+        "mill-paladin": "爆牌(指揮官碧翠絲)-聖",
+        "peddler-paladin": "小販-聖",
+        "prepared-priest": "預備-牧",
+        "rat-trap-hunter": "捕鼠器-獵",
+        "ayaya-rogue": "幸運幣(阿雅)-賊",
+        "sanctum-priest": "OTK(晶紅聖所)-牧",
+        "securitybot-shaman": "警衛機器人(瑪格吉戰吼)-薩",
+        "thief-priest": "偷牌(阿薩琳娜)-牧",
+        "two-bit-rogue": "22(鋤大弟)-賊",
+        "mug-quest-shaman": "瑪格任務-薩",
+        "mug-shaman": "瑪格-薩",
+        "capriodi-warrior": "龍蛋-戰",
+        "zee-quest-shaman": "瑪格吉任務-薩",
+        "zee-shaman": "瑪格吉-薩",
+        "gladiator-warrior": "號召(競技血戰)-戰",
+        "godfrey-warlock": "『背叛者』高佛雷-術",
+        "logosh-warrior": "777(洛戈許)-戰",
+        "patron-warrior": "奴隸(毀滅燃炎)-戰",
+        "archmage-dh": "大法師(火球術)-惡魔獵手",
+        "attack-druid": "加攻-德",
+        "contraband-face-hunter": "違禁品打臉(老鼠王)-獵",
+        "void-dh": "虛無-惡獵",
+        "void-soul-dh": "虛無靈魂-惡獵"
     },
     "arena": {
         "overlay": {
@@ -5673,7 +5725,8 @@
         "max-resources": {
             "max-health-tooltip": "最大生命值",
             "max-mana-tooltip": "最大法力水晶",
-            "max-coins-tooltip": "最大金幣"
+            "max-coins-tooltip": "最大金幣",
+            "current-corpses-tooltip": "目前屍體數"
         }
     },
     "bgs-comp": {
