@@ -224,7 +224,10 @@
             "cataclysm-catch-up": "大地的裂变 追赶包",
             "golden-cataclysm": "大地的裂变 金色卡牌包",
             "violet-hold": "逃离紫罗兰监狱 卡牌包",
-            "golden-violet-hold": "逃离紫罗兰监狱 金色卡牌包"
+            "golden-violet-hold": "逃离紫罗兰监狱 金色卡牌包",
+            "escape-from-violet-hold": "逃离紫罗兰监狱 卡牌包",
+            "escape-from-violet-hold-catch-up": "逃离紫罗兰监狱 追赶包",
+            "golden-escape-from-violet-hold": "逃离紫罗兰监狱 金色卡牌包"
         },
         "ranks": {
             "constructed": {
@@ -2571,7 +2574,7 @@
             "title": "拉法姆"
         },
         "bgs-undead-army": {
-            "player": "你的亡灵在本局对战中获得+{{value}}攻击力"
+            "player": "你的亡灵在本局对战中获得 +{{atk}}/+{{health}}"
         },
         "deep-blue": {
             "player": "你的“{{cardName}}”获得+{{atk}}/+{{health}}"
@@ -3170,7 +3173,7 @@
                 "control-general": "在选择界面时，按下Tab切换选项的焦点，按下空格调整开关，按下回车选中第一项，Shift+回车确认修改"
             },
             "global-effects-header": "全局效果",
-            "undead-army-tooltip": "您的亡灵随从的额外攻击力",
+            "undead-army-tooltip": "你的亡灵随从的额外攻击力",
             "eternal-legion-tooltip": "本局对战中己方“永恒骑士”的死亡数量",
             "add-teammate-button": "添加队友",
             "empty-teammate-board": "尚无战场。点击切换至队友战场并编辑。",
@@ -3181,7 +3184,7 @@
             "greater-trinkets-header": "大型饰品",
             "lesser-trinket-title": "小型饰品",
             "lesser-trinkets-header": "小型饰品",
-            "undead-army": "亡灵大军",
+            "undead-army": "亡灵大军攻击力",
             "bloodgem-attack": "鲜血宝石攻击力加成",
             "eternal-legion": "永恒骑士",
             "frostling-bonus": "缤纷冰灵",
@@ -3244,7 +3247,9 @@
             "mrrgltons-played-this-game": "本局对战中使用过的莫格顿家族鱼人",
             "back-to-back-cast-this-game": "本局对战中施放“背靠背”的次数",
             "back-to-back-cast-this-game-tooltip": "你在本局对战中施放了多少次酒馆法术“背靠背”",
-            "cards-played-this-turn-tooltip": "你在本回合招募阶段中打出了多少张牌"
+            "cards-played-this-turn-tooltip": "你在本回合招募阶段中打出了多少张牌",
+            "undead-army-health-tooltip": "你的亡灵随从的额外生命值",
+            "undead-army-health": "亡灵大军生命值"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -4177,7 +4182,9 @@
                     "corpses-tooltip": "显示对手当前残骸总数的计数器 - 当你知道对手有一张消耗残骸的卡牌，但游戏中没有显示内置计数器时，此计数器就会出现",
                     "herald-tooltip": "显示对手当前的兆示等级",
                     "bashana-label": "巴珊娜·符文图腾",
-                    "bashana-tooltip": "显示巴珊娜·符文图腾的树人还剩多少法力值能施放"
+                    "bashana-tooltip": "显示巴珊娜·符文图腾的树人还剩多少法力值能施放",
+                    "ancestral-automaton-tooltip": "显示对手召唤了多少次星元自动机",
+                    "ancestral-automaton-label": "星元自动机"
                 },
                 "size-title": "尺寸和透明度",
                 "opacity-title": "透明度",
@@ -4473,7 +4480,9 @@
                 "always-on-tooltip": "即使最大生命值/法力水晶没有变化，也会显示小部件",
                 "toggle": "显示小部件",
                 "show-horizontally-tooltip": "单行显示最大资源，而不是单列显示",
-                "show-horizontally": "水平显示"
+                "show-horizontally": "水平显示",
+                "show-corpses": "显示残骸",
+                "show-corpses-tooltip": "显示你**当前**的残骸数量"
             }
         },
         "collection": {
@@ -4688,7 +4697,7 @@
                 },
                 "counter-deep-blue": "深沉蓝调",
                 "counter-deep-blue-tooltip": "显示你的深沉蓝调的当前增益值",
-                "counter-undead-army-tooltip": "显示你的亡灵在本局对战中的攻击总增益",
+                "counter-undead-army-tooltip": "显示你的亡灵在本局对战中的攻击力/生命值总增益",
                 "counter-undead-army-label": "亡灵大军",
                 "counter-volumizer-buff-tooltip": "显示你的扩音机的额外攻击力/生命值",
                 "counter-rightmost-tooltip": "显示酒馆最右边随从的增益效果",
@@ -4969,7 +4978,9 @@
         "show-tracker": "显示记牌器",
         "show-opponent-tracker": "显示对手记牌器",
         "card-scale": "卡牌尺寸",
-        "card-scale-tooltip": "调整作为提示出现的卡牌的尺寸"
+        "card-scale-tooltip": "调整作为提示出现的卡牌的尺寸",
+        "reconnect-for-chat-text": "请前往设置并重新连接您的Twitch账号，以便观众可以在聊天中使用 !deck",
+        "reconnect-for-chat-title": "重新连接Twitch以启用 !deck"
     },
     "archetype": {
         "mech-rogue": "机械贼",
@@ -5639,7 +5650,48 @@
         "companion-hunter": "伙伴猎",
         "divergence-warlock": "裂解术",
         "hostage-druid": "无限德",
-        "leyline-mage": "魔网法"
+        "leyline-mage": "魔网法",
+        "archmage-dh": "大法师瞎",
+        "attack-druid": "口德",
+        "bb-harold-dk": "兆示DK（红红）",
+        "bfu-imbue-dk": "灌注DK（彩虹）",
+        "bu-egg-dk": "蛋DK（红绿）",
+        "buu-aggro-dk": "快攻DK（红绿绿）",
+        "buu-dk": "红绿绿DK",
+        "buu-egg-dk": "蛋DK（红绿绿）",
+        "buu-quest-dk": "任务DK（红绿绿）",
+        "chef-druid": "主厨德",
+        "demon-dh": "恶魔瞎",
+        "ffu-dk": "蓝蓝绿DK",
+        "void-dh": "虚空瞎",
+        "void-soul-dh": "虚空灵魂瞎",
+        "archmage-paladin": "大法师骑",
+        "contraband-face-hunter": "私藏打脸猎",
+        "egg-paladin": "蛋骑",
+        "face-hunter": "打脸猎",
+        "manastorm-mage": "法力风暴法",
+        "mill-paladin": "爆牌骑",
+        "peddler-paladin": "精魂骑",
+        "prepared-druid": "预备德",
+        "rat-trap-hunter": "捕鼠猎",
+        "toki-mage": "托奇法",
+        "tripwire-hunter": "绊索猎",
+        "zuramat-druid": "祖拉玛特德",
+        "ayaya-rogue": "艾雅贼",
+        "capriodi-warrior": "CaprioDi战",
+        "gladiator-warrior": "角斗战",
+        "godfrey-warlock": "高弗雷术",
+        "logosh-warrior": "奇闻战",
+        "mug-quest-shaman": "法术任务萨",
+        "mug-shaman": "法术萨",
+        "patron-warrior": "奴隶战",
+        "prepared-priest": "预备牧",
+        "sanctum-priest": "圣地牧",
+        "securitybot-shaman": "安保机器人萨",
+        "thief-priest": "脏牧",
+        "two-bit-rogue": "打二贼",
+        "zee-quest-shaman": "随从任务萨",
+        "zee-shaman": "随从萨"
     },
     "arena": {
         "overlay": {
@@ -5652,7 +5704,8 @@
         "max-resources": {
             "max-health-tooltip": "最大生命值",
             "max-mana-tooltip": "最大法力水晶",
-            "max-coins-tooltip": "铸币上限"
+            "max-coins-tooltip": "铸币上限",
+            "current-corpses-tooltip": "当前残骸数量"
         }
     },
     "bgs-comp": {
