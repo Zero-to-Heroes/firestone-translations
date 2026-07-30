@@ -224,7 +224,10 @@
             "cataclysm-catch-up": "Rattrapage (CATACLYSME)",
             "golden-cataclysm": "CATACLYSME (Doré)",
             "violet-hold": "Évasion du fort Pourpre",
-            "golden-violet-hold": "Évasion du fort Pourpre (Doré)"
+            "golden-violet-hold": "Évasion du fort Pourpre (Doré)",
+            "escape-from-violet-hold": "Évasion du fort Pourpre",
+            "escape-from-violet-hold-catch-up": "Rattrapage (Évasion du fort Pourpre)",
+            "golden-escape-from-violet-hold": "Évasion du fort Pourpre (Doré)"
         },
         "ranks": {
             "constructed": {
@@ -2571,7 +2574,7 @@
             "title": "Cartes Rafaam"
         },
         "bgs-undead-army": {
-            "player": "Vos Morts-vivants ont +{{value}} ATQ pendant cette partie"
+            "player": "Vos Morts-vivants ont +{{atk}}/+{{health}} pendant cette partie"
         },
         "deep-blue": {
             "player": "Vos cartes {{cardName}} donnent +{{atk}}/+{{health}}"
@@ -3182,7 +3185,7 @@
             "greater-trinkets-header": "Bibelots supérieurs",
             "eternal-legion": "Légion éternelle",
             "lesser-trinkets-header": "Bibelots inférieurs",
-            "undead-army": "Armée de Morts-vivants",
+            "undead-army": "Armée de Morts-vivants : ATQ",
             "bloodgem-health": "PV des gemmes de sang",
             "bloodgem-attack": "ATQ des gemmes de sang",
             "frostling-bonus": "Bonus du givrelin",
@@ -3244,7 +3247,9 @@
             "tavern-spells-cast-this-turn-tooltip": "Le nombre de sorts de la taverne que vous avez lancés pendant cette phase de recrutement",
             "mrrgltons-played-this-game": "Mrrglton joués cette partie",
             "back-to-back-cast-this-game": "Dos à dos joués cette partie",
-            "back-to-back-cast-this-game-tooltip": "Le nombre de sorts Dos à dos que vous avez lancés pendant cette partie"
+            "back-to-back-cast-this-game-tooltip": "Le nombre de sorts Dos à dos que vous avez lancés pendant cette partie",
+            "undead-army-health-tooltip": "Les PV supplémentaires de vos Morts-vivants",
+            "undead-army-health": "Armée de Morts-vivants : PV"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -4177,7 +4182,9 @@
                     "corpses-tooltip": "Afficher un compteur avec le nombre total de cadavres de votre adversaire : il apparaît lorsque vous savez qu’il ou elle possède une carte qui dépense des cadavres mais que le jeu n’affiche pas le compteur",
                     "herald-tooltip": "Affiche le niveau de convocation actuel de votre adversaire",
                     "bashana-label": "Bashana",
-                    "bashana-tooltip": "Affiche le montant de mana restant à lancer depuis les tréants de Bashana"
+                    "bashana-tooltip": "Affiche le montant de mana restant à lancer depuis les tréants de Bashana",
+                    "ancestral-automaton-label": "Automate ancestral",
+                    "ancestral-automaton-tooltip": "Affiche le nombre de fois que votre adversaire a invoqué un automate ancestral"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -4473,7 +4480,9 @@
                 "toggle": "Afficher le widget",
                 "toggle-tooltip": "Lorsque vos PV max ou votre mana max change, affiche un widget qui indique les ressources max que vous avez dans cette partie",
                 "show-horizontally": "Afficher horizontalement",
-                "show-horizontally-tooltip": "Afficher les ressources max sur une seule ligne, au lieu d’une seule colonne"
+                "show-horizontally-tooltip": "Afficher les ressources max sur une seule ligne, au lieu d’une seule colonne",
+                "show-corpses": "Afficher les cadavres",
+                "show-corpses-tooltip": "Affiche le nombre **actuel** de cadavres que vous avez"
             }
         },
         "collection": {
@@ -4688,7 +4697,7 @@
                 },
                 "counter-deep-blue": "Grand blues",
                 "counter-deep-blue-tooltip": "Affiche le buff actuel de vos grands blues",
-                "counter-undead-army-tooltip": "Affiche le buff d’ATQ total de vos Morts-vivants pendant cette partie",
+                "counter-undead-army-tooltip": "Affiche le buff d’ATQ/PV total de vos Morts-vivants pendant cette partie",
                 "counter-undead-army-label": "Armée de Morts-vivants",
                 "minions-list-show-timewarped-label": "Afficher les cartes chronodistordues",
                 "minions-list-show-all-mechanics-tooltip": "Étend l’onglet Pouvoirs pour afficher tous les mots-clés supportés",
@@ -5017,7 +5026,9 @@
         "show-tracker": "Afficher le decktracker",
         "show-opponent-tracker": "Afficher le decktracker adverse",
         "card-scale": "Taille des cartes",
-        "card-scale-tooltip": "Modifier la taille des cartes en infobulles"
+        "card-scale-tooltip": "Modifier la taille des cartes en infobulles",
+        "reconnect-for-chat-title": "Reconnectez-vous à Twitch pour activer !deck",
+        "reconnect-for-chat-text": "Veuillez aller dans les Paramètres et vous reconnecter à votre compte Twitch pour que les viewers puissent utiliser !deck dans le tchat"
     },
     "archetype": {
         "mech-rogue": "Voleur Mécas",
@@ -5594,7 +5605,7 @@
         "terran-shaman": "Chaman Terrans",
         "bf-egglock": "Démoniste SG œuf",
         "bf-quest-warlock": "Démoniste SG Quête",
-        "bfu-egglock": "Démoniste SGI œuf",
+        "bfu-egglock": "Démoniste arc-en-ciel œuf",
         "ffu-egglock": "Démoniste GGI œuf",
         "fu-animancer-warlock": "Démoniste GI animancienne",
         "fu-concierge-warlock": "Démoniste GI réceptionniste",
@@ -5622,7 +5633,7 @@
         "cliff-dive-dh": "DH saut de falaise",
         "fff-herenn-dk": "DK givre Herenn",
         "masochist-shaman": "Chaman masochiste",
-        "bfu-herenn-dk": "DK SGI Herenn",
+        "bfu-herenn-dk": "DK arc-en-ciel Herenn",
         "bu-handbuff-dk": "DK SI handbuff",
         "bb-control-dk": "DK SS contrôle",
         "bbb-talanji-dk": "DK sang Talanji",
@@ -5688,7 +5699,48 @@
         "divergence-warlock": "Démoniste scission",
         "hostage-druid": "Druide otage",
         "leyline-mage": "Mage lignes telluriques",
-        "burn-warrior": "Guerrier burn"
+        "burn-warrior": "Guerrier burn",
+        "bb-harold-dk": "DK SS convocation",
+        "bfu-imbue-dk": "DK arc-en-ciel empreinte",
+        "archmage-dh": "DH archimage",
+        "buu-aggro-dk": "DK SII aggro",
+        "buu-dk": "DK SII",
+        "buu-egg-dk": "DK SII œuf",
+        "bu-egg-dk": "DK SI œuf",
+        "buu-quest-dk": "DK SII Quête",
+        "demon-dh": "DH Démons",
+        "ffu-dk": "DK GGI",
+        "attack-druid": "Druide ATQ",
+        "chef-druid": "Druide cheffe Nethrek",
+        "prepared-druid": "Druide Préparation",
+        "void-dh": "DH Vide",
+        "void-soul-dh": "DH âmes du Vide",
+        "contraband-face-hunter": "Hunter face contrebande",
+        "face-hunter": "Hunter face",
+        "manastorm-mage": "Mage Tempête-de-Mana",
+        "rat-trap-hunter": "Chasseur piège à rat",
+        "toki-mage": "Mage Toki",
+        "tripwire-hunter": "Chasseur fils-pièges",
+        "zuramat-druid": "Druide Zuramat",
+        "archmage-paladin": "Paladin archimage",
+        "ayaya-rogue": "Voleur Aya",
+        "egg-paladin": "Paladin œuf",
+        "mill-paladin": "Paladin meule",
+        "mug-quest-shaman": "Chaman Quête Verr",
+        "mug-shaman": "Chaman Verr",
+        "peddler-paladin": "Paladin colporteur",
+        "prepared-priest": "Prêtre Préparation",
+        "sanctum-priest": "Prêtre sanctum",
+        "securitybot-shaman": "Chaman bot de sécurité",
+        "thief-priest": "Prêtre voleur",
+        "two-bit-rogue": "Voleur à 2 ronds",
+        "zee-quest-shaman": "Chaman Quête Minh",
+        "gladiator-warrior": "Guerrier gladiateur",
+        "godfrey-warlock": "Démoniste Godfrey",
+        "logosh-warrior": "Guerrier Lo’Gosh",
+        "patron-warrior": "Guerrier client sinistre",
+        "zee-shaman": "Chaman Minh",
+        "capriodi-warrior": "Guerrier 25+"
     },
     "arena": {
         "overlay": {
@@ -5701,7 +5753,8 @@
         "max-resources": {
             "max-health-tooltip": "PV max",
             "max-mana-tooltip": "Mana max",
-            "max-coins-tooltip": "Or max"
+            "max-coins-tooltip": "Or max",
+            "current-corpses-tooltip": "Nombre de cadavres actuel"
         }
     },
     "bgs-comp": {
