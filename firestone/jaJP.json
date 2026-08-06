@@ -224,7 +224,10 @@
             "cataclysm-catch-up": "終焉のアゼロス・キャッチアップ",
             "golden-cataclysm": "ゴールデン・終焉のアゼロス",
             "violet-hold": "ヴァイオレット監獄を脱出せよ",
-            "golden-violet-hold": "ゴールデン・ヴァイオレット監獄を脱出せよ"
+            "golden-violet-hold": "ゴールデン・ヴァイオレット監獄を脱出せよ",
+            "escape-from-violet-hold": "ヴァイオレット監獄を脱出せよ",
+            "escape-from-violet-hold-catch-up": "ヴァイオレット監獄を脱出せよ・キャッチアップ",
+            "golden-escape-from-violet-hold": "ゴールデン・ヴァイオレット監獄を脱出せよ"
         },
         "ranks": {
             "constructed": {
@@ -2571,7 +2574,7 @@
             "title": "ラファーム達"
         },
         "bgs-undead-army": {
-            "player": "この試合中、自分のアンデッドは追加で{{value}}の攻撃力を得る"
+            "player": "この試合中、自分のアンデッドは+{{atk}}/+{{health}}を得る"
         },
         "deep-blue": {
             "player": "自分の「{{cardName}}」は+{{atk}}/+{{health}}を与える"
@@ -2741,6 +2744,9 @@
             "title": "「裏切り者ゴッドフリー」",
             "player": "あなたはこの対戦中これらのカードを燃やし、{{value}}枚が手札に戻っていない",
             "opponent": "対戦相手はこれらのカードを燃やし、まだ{{value}}枚が手札に戻っていない"
+        },
+        "tasty-lobster-buff": {
+            "player": "自分の「おいしいロブスター」は断末魔で+{{atk}}/+{{health}}を付与する"
         }
     },
     "loading": {
@@ -3170,7 +3176,7 @@
                 "control-general": "\"Tab\" で各選択時にフィールドを入れ替え、\"Space\" でチェックボックスを切り替えます。\"Enter\" で最初に表示されたオプションを選択し、\"Shift + Enter\" で最終選択を確定します。"
             },
             "global-effects-header": "グローバルエフェクト",
-            "undead-army-tooltip": "自分のアンデッドが得る追加の攻撃力",
+            "undead-army-tooltip": "自分のアンデッドが得る追加の攻撃力です",
             "eternal-legion-tooltip": "この対戦で死んだ味方の「永劫の騎士」の数",
             "add-teammate-button": "パートナーを追加",
             "empty-teammate-board": "戦場は空です。クリックでパートナーの戦場と交代して編集できます",
@@ -3182,7 +3188,7 @@
             "global-info-title": "ヒーローの常在効果",
             "eternal-legion": "「永劫の騎士」",
             "lesser-trinkets-header": "下級装飾品",
-            "undead-army": "アンデッド軍団",
+            "undead-army": "アンデッド軍団の攻撃力",
             "bloodgem-attack": "「血の宝石」の攻撃力",
             "bloodgem-health": "「血の宝石」の体力",
             "frostling-bonus": "「ビン入り氷霜」のバフ",
@@ -3244,7 +3250,11 @@
             "cards-played-this-turn-tooltip": "現在の雇用ターンに使用したカードの枚数です",
             "tavern-spells-cast-this-turn-tooltip": "現在の雇用ターン中に使用した呪文の数です",
             "mrrgltons-played-this-game": "この対戦中のマルグルトンの使用数",
-            "tavern-spells-cast-this-turn": "このターン中に使用した酒場の呪文の数"
+            "tavern-spells-cast-this-turn": "このターン中に使用した酒場の呪文の数",
+            "undead-army-health-tooltip": "自分のアンデッドが得る追加の体力です",
+            "tasty-lobsters-buff-tooltip": "この試合中「おいしいロブスター」の断末魔が何回発動したかです(次のロブスターの断末魔はこれに+1)",
+            "undead-army-health": "アンデッド軍団の体力",
+            "tasty-lobsters-buff": "「おいしいロブスター」のバフ"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -4176,7 +4186,9 @@
                     "corpses-label": "死体",
                     "herald-tooltip": "対戦相手の現在の伝令のレベルを表示します",
                     "bashana-label": "「バシャナ・ルーントーテム」",
-                    "bashana-tooltip": "「バシャナ・ルーントーテム」のトレントが唱える呪文の、残りのマナ数を表示する"
+                    "bashana-tooltip": "「バシャナ・ルーントーテム」のトレントが唱える呪文の、残りのマナ数を表示する",
+                    "ancestral-automaton-label": "「祖霊の自動人形」",
+                    "ancestral-automaton-tooltip": "対戦相手が召喚した「祖霊の自動人形」の数を表示します"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -4472,7 +4484,9 @@
                 "toggle": "ウィジェットを表示",
                 "title": "最大リソースウィジェット",
                 "show-horizontally": "水平方向に表示",
-                "show-horizontally-tooltip": "最大リソースを、一列の代わりに一行で表示します"
+                "show-horizontally-tooltip": "最大リソースを、一列の代わりに一行で表示します",
+                "show-corpses": "死体を表示",
+                "show-corpses-tooltip": "自分が持つ”現在の”死体の数を表示します"
             }
         },
         "collection": {
@@ -4685,7 +4699,7 @@
                     "enable-label": "APMカウンターを有効化",
                     "enable-tooltip": "APMカウンターを有効化します。この機能では、そのターン中に何回行動したかを、APM(Action Per Minute,一分あたりの行動回数)として記録します"
                 },
-                "counter-undead-army-tooltip": "アンデッドの攻撃力の合計バフ量を表示します",
+                "counter-undead-army-tooltip": "アンデッドの攻撃力/体力の合計バフ量を表示します",
                 "counter-undead-army-label": "アンデッド軍団",
                 "counter-deep-blue": "ディープブルース",
                 "counter-deep-blue-tooltip": "現在のディープブルースのバフ量を表示します",
@@ -4706,7 +4720,9 @@
                 "counter-mrrglton-played-tooltip": "この対戦で使用したマルグルトンの回数を表示します",
                 "counter-fodder-refresh-tooltip": "食餌あり入替の残り回数を表示します",
                 "counter-fodder-refresh-label": "食餌あり入替",
-                "counter-mrrglton-played-label": "マルグルトンの使用数"
+                "counter-mrrglton-played-label": "マルグルトンの使用数",
+                "counter-tasty-lobster-buff-label": "「おいしいロブスター」のバフ",
+                "counter-tasty-lobster-buff-tooltip": "自分の「おいしいロブスター」の断末魔のバフ量を表示します"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -4968,7 +4984,9 @@
         "show-tracker": "デッキトラッカーを表示",
         "show-opponent-tracker": "対戦相手の装飾品を表示",
         "card-scale": "カードサイズ",
-        "card-scale-tooltip": "ツールチップとして表示されるカードの大きさを変更します"
+        "card-scale-tooltip": "ツールチップとして表示されるカードの大きさを変更します",
+        "reconnect-for-chat-text": "設定にいき、あなたのTwitchアカウントを再接続すると、視聴者がチャット欄で!deckコマンドを使えるようになります",
+        "reconnect-for-chat-title": "Twitchを再接続して!deckコマンドを有効化"
     },
     "archetype": {
         "mech-rogue": "メカローグ",
@@ -5638,7 +5656,46 @@
         "companion-hunter": "相棒ハンター",
         "divergence-warlock": "分岐ウォーロック",
         "hostage-druid": "夢ループドルイド",
-        "leyline-mage": "レイラインメイジ"
+        "leyline-mage": "レイラインメイジ",
+        "bb-harold-dk": "赤赤Haroldデスナイト",
+        "bfu-imbue-dk": "赤青緑鼓舞デスナイト",
+        "bu-egg-dk": "赤緑タマゴデスナイト",
+        "buu-aggro-dk": "赤緑緑アグロデスナイト",
+        "buu-dk": "赤緑緑デスナイト",
+        "buu-egg-dk": "赤緑緑卵デスナイト",
+        "archmage-dh": "大魔術師デーモンハンター",
+        "buu-quest-dk": "赤緑緑クエストデスナイト",
+        "ffu-dk": "青青緑デスナイト",
+        "attack-druid": "アタックドルイド",
+        "void-soul-dh": "虚無の魂デーモンハンター",
+        "chef-druid": "シェフドルイド",
+        "demon-dh": "悪魔デーモンハンター",
+        "prepared-druid": "仕込みドルイド",
+        "void-dh": "虚無デーモンハンター",
+        "face-hunter": "フェイスハンター",
+        "contraband-face-hunter": "密輸フェイスハンター",
+        "rat-trap-hunter": "ネズミ罠ハンター",
+        "tripwire-hunter": "トリップワイヤーハンター",
+        "toki-mage": "トキメイジ",
+        "archmage-paladin": "大魔術師パラディン",
+        "manastorm-mage": "マナストームメイジ",
+        "egg-paladin": "卵パラディン",
+        "mill-paladin": "ミルパラディン",
+        "sanctum-priest": "聖域プリースト",
+        "prepared-priest": "仕込みプリースト",
+        "thief-priest": "盗賊プリースト",
+        "ayaya-rogue": "AYAYAローグ",
+        "mug-quest-shaman": "マグクエストシャーマン",
+        "mug-shaman": "マグシャーマン",
+        "securitybot-shaman": "警備ロボシャーマン",
+        "two-bit-rogue": "2bitローグ",
+        "zee-quest-shaman": "ジークエストシャーマン",
+        "godfrey-warlock": "ゴッドフリーウォーロック",
+        "logosh-warrior": "ロゴッシュウォリアー",
+        "patron-warrior": "パトロンウォリアー",
+        "gladiator-warrior": "剣闘士ウォリアー",
+        "zuramat-druid": "ズラマットドルイド",
+        "zee-shaman": "ジーシャーマン"
     },
     "arena": {
         "overlay": {
@@ -5651,7 +5708,8 @@
         "max-resources": {
             "max-mana-tooltip": "最大マナ",
             "max-health-tooltip": "最大体力",
-            "max-coins-tooltip": "最大ゴールド"
+            "max-coins-tooltip": "最大ゴールド",
+            "current-corpses-tooltip": "現在の死体"
         }
     },
     "bgs-comp": {
