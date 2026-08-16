@@ -2986,6 +2986,19 @@
 				"mulligan-impact-tooltip-free": "How strongly keeping this card in your opening hand impacts your winrate. You have {{value}} free uses left today.",
 				"mulligan-keep-rate": "Kept%",
 				"mulligan-keep-rate-tooltip": "How often this card is kept in the opening hand.",
+				"mulligan-keep-rate-tooltip-with-source": "How often this card is kept in the opening hand. Using {{source}} stats.",
+				"mulligan-impact-tooltip-premium-with-source": "How strongly keeping this card in your opening hand impacts your winrate. Using {{source}} stats.",
+				"mulligan-impact-tooltip-free-with-source": "How strongly keeping this card in your opening hand impacts your winrate. Using {{source}} stats. You have {{value}} free uses left today.",
+				"stats-source": {
+					"community": "Community",
+					"personal": "Yours",
+					"both": "Both"
+				},
+				"stats-source-short": {
+					"community": "C",
+					"personal": "Y"
+				},
+				"deck-mulligan-filter-stats-source-tooltip": "Show {{source}} per-card keep rate and mulligan impact. Click to change.",
 				"mulligan-card": "Card",
 				"deck-mulligan-overview-title": "Deck mulligan overview",
 				"deck-mulligan-filter-rank-bracket-tooltip": "Show games from {{rankBracket}}. Click to change.",
@@ -2999,6 +3012,9 @@
 				"deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | vs {{opponentClass}} | {{sampleSize}} games",
 				"locked-premium-info-tooltip": "Become premium to see detailed mulligan data for your deck. You can use this feature for free {{value}} times every day.",
 				"sample-size-tooltip": "The number of games played with that archetype (if available); otherwise it uses the exact deck list",
+				"sample-size-tooltip-personal": "The number of your own games with this deck that include per-card mulligan data",
+				"sample-size-tooltip-both": "Community games, then your own games with this deck that include per-card mulligan data",
+				"sample-size-both": "{{community}} community / {{personal}} yours",
 				"dismiss-tooltip": "Hide the mulligan guide"
 			},
 			"lobby": {
@@ -4608,6 +4624,11 @@
 				"keep-after-mulligan-5": "Keep for 5 seconds",
 				"keep-after-mulligan-10": "Keep for 10 seconds",
 				"keep-after-mulligan-until-dismissed": "Until dismissed",
+				"personal-min-games-label": "Show your mulligan stats after",
+				"personal-min-games-tooltip": "In the in-game mulligan overlay, your own keep rate and impact only replace community numbers once you have this many games with the current deck. The lobby table always shows whichever source you pick. Never keeps community numbers in the overlay. Always uses your stats as soon as you have any.",
+				"personal-min-games-never": "Never (community only in overlay)",
+				"personal-min-games-always": "Always (even with few games)",
+				"personal-min-games-count": "{{value}} games",
 				"size": "Size"
 			}
 		},
