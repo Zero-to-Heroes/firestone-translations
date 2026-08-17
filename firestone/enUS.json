@@ -2986,6 +2986,8 @@
 				"mulligan-impact-tooltip-free": "How strongly keeping this card in your opening hand impacts your winrate. You have {{value}} free uses left today.",
 				"mulligan-keep-rate": "Kept%",
 				"mulligan-keep-rate-tooltip": "How often this card is kept in the opening hand.",
+				"mulligan-keep-rate-yours-tooltip": "How often you keep this card in the opening hand.",
+				"mulligan-impact-yours-tooltip": "How strongly keeping this card in your opening hand impacts your winrate, based on your games.",
 				"mulligan-keep-rate-tooltip-with-source": "How often this card is kept in the opening hand. Using {{source}} stats.",
 				"mulligan-impact-tooltip-premium-with-source": "How strongly keeping this card in your opening hand impacts your winrate. Using {{source}} stats.",
 				"mulligan-impact-tooltip-free-with-source": "How strongly keeping this card in your opening hand impacts your winrate. Using {{source}} stats. You have {{value}} free uses left today.",
@@ -3015,6 +3017,8 @@
 				"sample-size-tooltip-personal": "The number of your own games with this deck that include per-card mulligan data",
 				"sample-size-tooltip-both": "Community games, then your own games with this deck that include per-card mulligan data",
 				"sample-size-both": "{{community}} community / {{personal}} yours",
+				"personal-min-games-warning": "The Yours columns are hidden until you have {{threshold}} games with this deck (you have {{current}}). Change this in Settings → Decktracker → Mulligan. The lobby table always shows your stats.",
+				"personal-min-games-warning-never": "The Yours columns are hidden in this overlay. Change this in Settings → Decktracker → Mulligan. The lobby table always shows your stats.",
 				"dismiss-tooltip": "Hide the mulligan guide"
 			},
 			"lobby": {
@@ -4625,8 +4629,8 @@
 				"keep-after-mulligan-10": "Keep for 10 seconds",
 				"keep-after-mulligan-until-dismissed": "Until dismissed",
 				"personal-min-games-label": "Show your mulligan stats after",
-				"personal-min-games-tooltip": "In the in-game mulligan overlay, your own keep rate and impact only replace community numbers once you have this many games with the current deck. The lobby table always shows whichever source you pick. Never keeps community numbers in the overlay. Always uses your stats as soon as you have any.",
-				"personal-min-games-never": "Never (community only in overlay)",
+				"personal-min-games-tooltip": "In the in-game mulligan overlay, your own keep rate and impact only appear once you have this many games with the current deck. The lobby table always shows whichever source you pick. Never: never show your stats in the overlay. Always: show them as soon as you have any.",
+				"personal-min-games-never": "Never (hide yours in overlay)",
 				"personal-min-games-always": "Always (even with few games)",
 				"personal-min-games-count": "{{value}} games",
 				"size": "Size"
