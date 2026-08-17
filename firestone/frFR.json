@@ -309,7 +309,9 @@
             "bacon_buffs_tavern_spell": "Buffs des sorts de taverne",
             "bacon_rally": "Ralliement",
             "shatter": "Scission",
-            "shattered": "Scindée"
+            "shattered": "Scindée",
+            "interactable_object": "Activation",
+            "discover": "Découverte"
         },
         "legendary-minion": "Serviteur légendaire",
         "patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -988,7 +990,9 @@
                     "past-3": "3 derniers jours",
                     "past-1": "Hier",
                     "current-season": "Cette saison",
-                    "past-20": "20 derniers jours"
+                    "past-20": "20 derniers jours",
+                    "today-tooltip": "Parties jouées depuis minuit (heure locale)",
+                    "today": "Aujourd’hui"
                 },
                 "deck-search": {
                     "placeholder": "Rechercher un deck...",
@@ -1548,7 +1552,7 @@
                 },
                 "tabs": {
                     "example-boards-locked-tooltip": "Devenez membre Premium pour voir des exemples à cote élevée de cette composition à la fin de la partie",
-                    "example-boards-header": "Cliquez pour voir des exemples de troupes de guerre",
+                    "example-boards-header": "Cliquez pour voir des exemples de troupes",
                     "details": "Détails",
                     "example-boards": "Exemples de troupes"
                 }
@@ -2164,7 +2168,8 @@
             "cant-subscribe-tooltip": "Vous ne pouvez pas vous abonner à un autre plan si vous avez déjà un plan en cours. Veuillez vous désabonner de votre plan actuel et attendre son expiration.",
             "override-checkbox-label": "Souscrire quand même",
             "override-confirmation": "Je comprends que je perdrai mon abonnement actuel si je termine le processus d’abonnement",
-            "login-to-subscribe": "Connectez-vous pour vous abonner"
+            "login-to-subscribe": "Connectez-vous pour vous abonner",
+            "third-party-auth-tools-unsupported": "La version Premium nécessite un abonnement officiel à Firestone. Les outils tiers de « réparation d’autorisation » ou de déverrouillage ne sont pas pris en charge et ne sont pas sûrs : ils peuvent demander des droits d’administrateur, et modifier le fichier hosts ou les règles du pare-feu. Veuillez les désinstaller et vous abonner via la page Premium officielle."
         },
         "communities": {
             "manage": {
@@ -3031,7 +3036,8 @@
                     "coin": "N’affiche que les parties où vous avez La pièce. Cliquez pour changer.",
                     "play": "N’affiche que les parties où vous commencez. Cliquez pour changer.",
                     "all": "Affiche les parties où vous jouez en premier et celles où vous avez La pièce. Cliquez pour changer."
-                }
+                },
+                "dismiss-tooltip": "Masquer le guide de mulligan"
             },
             "lobby": {
                 "close-button-tooltip": "Désactive l’aperçu du deck. Vous pourrez le réactiver dans les paramètres",
@@ -3060,7 +3066,8 @@
             "damage": "Inflige des dégâts",
             "main-attribute": "Attribut principal",
             "card-type": "Type de carte",
-            "mechanics": "Mécaniques"
+            "mechanics": "Mécaniques",
+            "cost-modifier": "Modificateur de coût"
         },
         "tourist": "Tourisme : {{className}}",
         "burns-in": "Brûlera dans {{value}}",
@@ -3070,7 +3077,8 @@
         "card-tooltip-big-pool-text": "La liste de cartes est trop grosse pour afficher toutes les cartes.",
         "dredged-by": "Dragué par {{value}}",
         "card-tooltip-pool-size": "{{ value }} cartes",
-        "prepared-tooltip": "Cette carte a été préparée pour {{value}} cristaux"
+        "prepared-tooltip": "Cette carte a été préparée pour {{value}} cristaux",
+        "card-mulliganed-away": "Retirée au mulligan"
     },
     "battlegrounds": {
         "menu": {
@@ -3114,7 +3122,8 @@
             "temp-result-text": "Sim en cours",
             "locked-premium-info-tooltip": "Devenez Premium pour activer les résultats intermédiaires dans le simulateur et obtenir les résultats plus rapidement",
             "locked-premium-info": "Débloquer la simulation rapide",
-            "temp-result-tooltip": "Ce sont des résultats intermédiaires ; la simulation est toujours en cours, les résultats finaux peuvent varier"
+            "temp-result-tooltip": "Ce sont des résultats intermédiaires ; la simulation est toujours en cours, les résultats finaux peuvent varier",
+            "odds-banner-label": "Chances de victoires"
         },
         "sim": {
             "add-minion-button-tooltip": "Cliquez pour ajouter un serviteur",
@@ -3263,7 +3272,13 @@
             "undead-army-health-tooltip": "Les PV supplémentaires de vos Morts-vivants",
             "undead-army-health": "Armée de Morts-vivants : PV",
             "tasty-lobsters-buff-tooltip": "Combien de Râles d’agonie de homards savoureux vous avez déclenchés cette partie (le prochain donne ce montant + 1)",
-            "tasty-lobsters-buff": "Buff de homard savoureux"
+            "tasty-lobsters-buff": "Buff de homard savoureux",
+            "golden-minions-played-this-game": "Serviteurs dorés joués",
+            "golden-minions-played-this-game-tooltip": "Le nombre de serviteurs dorés que vous avez joués pendant cette partie",
+            "eternal-knight-attack-buff": "Chevaliers éternels ATQ",
+            "eternal-knight-health-buff": "Chevaliers éternels PV",
+            "eternal-knight-health-buff-tooltip": "Le buff net de PV que vos chevaliers éternels reçoivent pendant cette partie (par exemple grâce au portrait éternel)",
+            "eternal-knight-attack-buff-tooltip": "Le buff net d’ATQ que vos chevaliers éternels reçoivent pendant cette partie (par exemple grâce au portrait éternel)"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3398,7 +3413,9 @@
                     "recommended-cards-header-tooltip": "Meilleures cartes à avoir dans la composition, même celle-ci est toujours viable sans elles",
                     "recommended-cards-header": "Cartes recommandées"
                 },
-                "tier-category-tooltip": "Afficher toutes les cartes de niveau {{value}}. Faites un clic droit pour mettre en surbrillance toutes les cartes de niveau {{value}} dans la taverne."
+                "tier-category-tooltip": "Afficher toutes les cartes de niveau {{value}}. Faites un clic droit pour mettre en surbrillance toutes les cartes de niveau {{value}} dans la taverne.",
+                "hide-all-mechanics-tooltip": "Réduit l’onglet Pouvoirs pour ne montrer que les mots-clés principaux",
+                "show-all-mechanics-tooltip": "Étend l’onglet Pouvoir pour afficher tous les mots-clés supportés"
             },
             "quests": {
                 "turn-to-complete-tooltip": "Nombre moyen de tours pour terminer cette quête avec ce héros ou cette héroïne, cette difficulté de quête (plus elle est faible, mieux c’est), et à cote similaire à la vôtre. En moyenne, il faut {{averageTurnsToComplete}} tours pour compléter la quête, {{turnsToCompleteForHero}} tours avec ce héros ou cette héroïne, et le modificateur de difficulté est de {{turnsToCompleteImpact}}.",
@@ -3460,6 +3477,46 @@
                 "data-points-header-tooltip": "Nombre de parties où cette carte a été choisie par le top {{value}} % des joueurs et joueuses",
                 "free-uses-tooltip": "Vous pouvez utiliser cette fonctionnalité gratuitement {{max}} fois par jour, et il vous reste {{left}} utilisations",
                 "free-uses-text": "Encore {{value}}"
+            },
+            "dark-gifts": {
+                "title": "Sombres dons",
+                "guaranteed": "Garanti",
+                "guaranteed-type": "Type garanti",
+                "turn": "Tour {{value}}",
+                "uses-left": "{{value}} utilisations restantes",
+                "guaranteed-disabled-tooltip": "À partir du tour {{value}}, un serviteur affiché est de votre type le plus représenté",
+                "reason": {
+                    "requires-minion-type": "Seulement offert pour les serviteurs avec un type",
+                    "requires-no-minion-type": "Seulement offert pour les serviteurs sans type",
+                    "requires-avenge": "Seulement offert pour les serviteurs avec Vengeance",
+                    "requires-battlecry-minion": "Seulement offert pour les serviteurs avec Cri de guerre",
+                    "requires-deathrattle-minion": "Seulement offert pour les serviteurs avec Râle d’agonie",
+                    "requires-divine-shield": "Seulement offert pour les serviteurs avec Bouclier divin",
+                    "requires-quilboar": "Seulement offert pour les Hurans",
+                    "requires-spellcraft": "Seulement offert pour les serviteurs avec Sorcellerie",
+                    "requires-end-of-turn": "Seulement offert pour les serviteurs avec un effet de fin de tour",
+                    "not-taunt": "Jamais offert pour les serviteurs avec Provocation",
+                    "requires-demon": "Seulement offert pour les Démons",
+                    "requires-dragon": "Seulement offert pour Dragons",
+                    "requires-mech": "Seulement offert pour les Mécas",
+                    "requires-murloc": "Seulement offert pour les Murlocs",
+                    "not-activate": "Jamais offert pour les serviteurs avec Activation",
+                    "not-avenge": "Jamais offert pour les serviteurs avec Vengeance",
+                    "not-beast-or-undead": "Jamais offert pour les Bêtes ou les Morts-vivants",
+                    "not-dragon": "Jamais offert pour les Dragons",
+                    "not-already-venomous": "Jamais offert pour les serviteurs qui ont déjà Venimosité",
+                    "not-lowest-tier": "Seulement offert pour les serviteurs du niveau le plus bas dans cette partie",
+                    "requires-battlecries-this-game": "Nécessite d’avoir déclenché un Cri de guerre pendant cette partie",
+                    "requires-deathrattles-this-game": "Nécessite d’avoir déclenché un Râle d’agonie pendant cette partie",
+                    "battlecry-gift-restriction": "Les serviteurs avec Cri de guerre peuvent seulement recevoir Vision double, Duplication, Dorure ou Voix résonnante",
+                    "choose-one-gift-restriction": "Les serviteurs avec Choix des armes peuvent seulement recevoir Vision double, Duplication, Dorure ou Voix résonnante",
+                    "deathrattle-stats-restriction": "Les serviteurs avec Râle d’agonie peuvent seulement recevoir Épée affûtée et Étreinte de la mort parmi les Sombres dons qui font gagner des caractéristiques",
+                    "lobby-quilboar-naga": "Jamais offert lorsque les Hurans ou les Nagas sont présents",
+                    "requires-tavern-tier-3": "Nécessite une taverne niveau 3 ou plus",
+                    "requires-tavern-spells-this-game": "Nécessite d’avoir lancé un sort de la taverne pendant cette partie"
+                },
+                "others": "Autres",
+                "has-condition": "Ce Sombre don a des conditions supplémentaires. Passez la souris dessus pour savoir pourquoi, ou sur un serviteur pour l’inspecter."
             }
         },
         "post-match-stats": {
@@ -3627,7 +3684,8 @@
                 "off-tooltip": "Ne jamais afficher le compteur",
                 "off": "Désactivé",
                 "on": "Activé"
-            }
+            },
+            "view-screenshot": "Voir la capture d’écran"
         },
         "menu": {
             "general": "Général",
@@ -3660,7 +3718,8 @@
                 "appearance": "Apparence",
                 "admin": "Admin",
                 "widgets": "Widgets",
-                "streamer": "Stream"
+                "streamer": "Stream",
+                "addons": "Add-ons"
             },
             "mods": {
                 "title": "Mods",
@@ -4011,13 +4070,24 @@
                 "card-tooltip-number-of-related-cards-tooltip": "Le nombre maximum de cartes liées à afficher en survolant la carte. Si le nombre de cartes liées dépasse ce nombre, un message générique indiquant le nombre de cartes liées sera affiché à la place.",
                 "counters-widgets-size": "Taille des widgets compteurs",
                 "counters-widgets-size-tooltip": "Modifie la taille des widgets qui apparaissent en passant la souris sur certains compteurs, comme la liste des cartes Rafaam",
-                "help-tooltip-size": "Taille des infobulles"
+                "help-tooltip-size": "Taille des infobulles",
+                "use-azalina-label": "Deviner grâce à Azalina",
+                "use-azalina-tooltip": "Si un joueur ou une joueuse a Azalina, la classe de l’adversaire peut être utilisée pour décider d’afficher certains compteurs (par exemple, si vous jouez prêtre contre voleur, le compteur de Gardiens de jade peut être affichée). EXPÉRIMENTAL"
             },
             "streamer": {
                 "battlegrounds": {
                     "show-full-anomaly-overlay": "Afficher l’overlay d’anomalie",
                     "show-full-anomaly-overlay-tooltip": "Ajoute une carte affichant l’anomalie en cours (lorsque les anomalies sont actives) pour que vos spectateurs et spectatrices puissent la voir plus facilement"
                 }
+            },
+            "addons": {
+                "instructions": "Ajoutez les dossiers d’add-ons dans <b>{{path}}</b>, puis appliquez sur Rafraîchir. Les add-ons tournent dans un bac à sable et ne reçoivent que les permissions qu’ils déclarent.",
+                "title": "Add-ons",
+                "open-folder": "Ouvrir le dossier",
+                "installed-title": "Add-ons installés",
+                "refresh": "Rafraîchir",
+                "empty": "Aucun add-on trouvé. Ouvrez le dossier et placez-y l’add-on.",
+                "permissions": "Permissions :"
             }
         },
         "decktracker": {
@@ -4090,7 +4160,9 @@
                 "show-hero-power-in-board-zone": "Afficher le pouvoir héroïque dans la zone Plateau",
                 "show-hero-power-in-board-zone-tooltip": "Affiche le pouvoir héroïque dans la zone Plateau, ce qui permet d’afficher les cartes liées/générées au survol, et de mettre des cartes en surbrillance.",
                 "weapons-play-order": "Ordre de jeu des armes",
-                "play-order-title": "Ordre de jeu"
+                "play-order-title": "Ordre de jeu",
+                "show-flavor-text-on-hover": "Afficher le texte d’ambiance au survol",
+                "show-flavor-text-on-hover-tooltip": "Lorsque vous passez la souris sur une carte dans le decktracker en jeu, affiche son texte d’ambiance dans la zone des notifications"
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
@@ -4448,7 +4520,8 @@
                     "jade-guardians-tooltip": "Afficher le nombre de fois que vous avez joué une carte coûtant 2 cristaux pendant cette partie",
                     "card-dead-tooltip": "Afficher le nombre de cartes {{cardName}} alliées détruites pendant cette partie",
                     "godfrey-the-betrayer-label": "Godfrey, le traître",
-                    "godfrey-the-betrayer-tooltip": "Affiche toutes les cartes que vous avez brûlées, ainsi que celles qui sont en attente de rejoindre votre main"
+                    "godfrey-the-betrayer-tooltip": "Affiche toutes les cartes que vous avez brûlées, ainsi que celles qui sont en attente de rejoindre votre main",
+                    "card-name-summoned-tooltip": "Affiche le nombre de cartes {{cardName}} que vous avez invoquées"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck.",
@@ -4484,7 +4557,13 @@
                 "show-mulligan-card-impact-label": "Afficher l’impact de la carte",
                 "show-mulligan-deck-overview-label": "Afficher l’aperçu du deck",
                 "show-mulligan-card-impact-tooltip": "Affiche l’impact de chaque carte de votre main sur le taux de victoires de votre deck",
-                "size": "Taille"
+                "size": "Taille",
+                "keep-after-mulligan-label": "Garder le widget après le mulligan",
+                "keep-after-mulligan-off": "Masquer immédiatement",
+                "keep-after-mulligan-5": "Garder affiché pendant 5 secondes",
+                "keep-after-mulligan-10": "Garder affiché pendant 10 secondes",
+                "keep-after-mulligan-tooltip": "Garde le guide de mulligan affiché après confirmation pour que vous puissiez inspecter les cartes piochées. Cachez-le immédiatement, après quelques secondes, ou jusqu’à ce que vous le fermiez.",
+                "keep-after-mulligan-until-dismissed": "Manuellement"
             },
             "lobby": {
                 "title": "Tracker sur l’écran de sélection",
@@ -4736,7 +4815,11 @@
                 "counter-mrrglton-played-tooltip": "Affiche le nombre de cartes de la famille Mrrglton que vous avez jouées pendant cette partie",
                 "counter-mrrglton-played-label": "Mrrglton joués",
                 "counter-tasty-lobster-buff-tooltip": "Affiche combien d’ATQ/PV vos homards savoureux donnent à leur mort",
-                "counter-tasty-lobster-buff-label": "Buff de homard savoureux"
+                "counter-tasty-lobster-buff-label": "Buff de homard savoureux",
+                "dark-gift-overlay-label": "Overlay des Sombres dons",
+                "dark-gift-overlay-tooltip": "Au survol du bouton Sombre découverte, affiche les serviteurs qu’il est possible de découvrir ainsi que les Sombres dons disponibles",
+                "hide-battle-odds-until-mouseover-label": "Masquer les chances jusqu’au passage de la souris",
+                "hide-battle-odds-until-mouseover-tooltip": "Lorsque cette option est activée, une petite bannière de chances de victoires reste en haut de l’écran, et les infos complètes (victoire/égalité/défaite) apparaissent lorsque vous passez la souris dessus"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -5571,13 +5654,13 @@
         "linecracker-druid": "Druide brute forcenée",
         "mechathun-druid": "Druide Méc’Thun",
         "old-aggro-druid": "Druide aggro d’antan",
-        "xl-hl-jtu-quest-mage": "Mage Quête UNG singleton XL",
+        "xl-hl-jtu-quest-mage": "Mage Ouverture du portail singleton XL",
         "xl-spell-damage-druid": "Druide Dégâts des sorts XL",
-        "jtu-quest-mage": "Mage Quête UNG",
+        "jtu-quest-mage": "Mage Ouverture du portail",
         "holy-wrath-paladin": "Paladin colère divine",
         "xl-cta-paladin": "Paladin Appel aux armes XL",
         "xl-holy-wrath-paladin": "Paladin colère divine XL",
-        "xl-jtu-quest-mage": "Mage Quête UNG XL",
+        "xl-jtu-quest-mage": "Mage Ouverture du portail XL",
         "boar-priest": "Prêtre sanglier",
         "hooktusk-rogue": "Voleur Double-Crochet",
         "tog-priest": "Prêtre Cire-Pilleur",
@@ -5587,8 +5670,8 @@
         "ashtoungue-warlock": "Démoniste cendrelangue",
         "xl-mill-rogue": "Voleur meule XL",
         "xl-uu-highlander-warlock": "Démoniste II singleton XL",
-        "jtu-quest-rogue": "Voleur Quête UNG",
-        "sou-quest-shaman": "Chaman Quête d’Uldum",
+        "jtu-quest-rogue": "Voleur Grotte des profondeurs",
+        "sou-quest-shaman": "Chaman Corruption des eaux",
         "chad-warrior": "Guerrier chad",
         "dragon-priest": "Prêtre Dragons",
         "tog-warrior": "Guerrier Cire-Pilleur",
@@ -5706,7 +5789,7 @@
         "cta-paladin": "Paladin Appel aux armes",
         "igneous-odyn-warrior": "Guerrier Odyn élémentaire igné",
         "kingslayer-pirate-rogue": "Voleur Pirates Régicides",
-        "lc-quest-priest": "Prêtre Quête (Cité perdue)",
+        "lc-quest-priest": "Prêtre Sol’etos",
         "token-broxigar-dh": "DH Broxigar token",
         "velarok-rogue": "Voleur Velarok",
         "xl-basher-warrior": "Guerrier brise-barricade XL",
@@ -5760,7 +5843,52 @@
         "logosh-warrior": "Guerrier Lo’Gosh",
         "patron-warrior": "Guerrier client sinistre",
         "zee-shaman": "Chaman Minh",
-        "capriodi-warrior": "Guerrier 25+"
+        "capriodi-warrior": "Guerrier 25+",
+        "harold-demon-warlock": "Démoniste Démons convocation",
+        "soothsayer-priest": "Prêtre devin",
+        "vanessa-rogue": "Voleur Vanessa",
+        "buu-aggro-plague-dk": "DK SII Pestes aggro",
+        "clone-cta-paladin": "Paladin clone Appel aux armes",
+        "hl-thief-priest": "Prêtre voleur singleton",
+        "harold-warlock": "Démoniste convocation",
+        "xl-exodia-mage": "Mage Exodia XL",
+        "xl-odd-questline-hunter": "Chasseur impair Suite de quêtes XL",
+        "alex-rogue": "Voleur Alexstrasza",
+        "hostage-rogue": "Voleur otage",
+        "mechathun-priest": "Prêtre Méc’thun",
+        "questline-priest": "Prêtre Suite de quêtes",
+        "switcheroo-priest": "Prêtre échange inattendu",
+        "xl-velarok-rogue": "Voleur Velarok XL",
+        "miracle-seedlock": "Démoniste graine démoniaque miracle",
+        "hl-igneous-warrior": "Guerrier élémentaire igné singleton",
+        "ohnahra-big-shaman": "Chaman grosses cartes Ohn’ahra",
+        "xl-hl-shudder-shaman": "Chaman Carniflore singleton XL",
+        "xl-hl-igneous-warrior": "Guerrier élémentaire igné singleton XL",
+        "xl-hl-n-roll-warrior": "Guerrier Rock’n’Rochenoire singleton XL",
+        "xl-hl-lc-quest-warrior": "Guerrier Latorvius singleton XL",
+        "buu-thalena-dk": "DK SII Thal’ena",
+        "deathrattle-hunter": "Chasseur Râle d’agonie",
+        "deios-hunter": "Chasseur Déios",
+        "hostage-imbue-druid": "Druide empreinte otage",
+        "xl-ilgynoth-dh": "DH Il’gynoth XL",
+        "barnes-druid": "Druide Barnes",
+        "pirate-dh": "DH Pirates",
+        "tog-druid": "Druide Cire-Pilleur",
+        "token-dh": "DH token",
+        "xl-buu-hl-plague-dk": "DK SII Pestes singleton XL",
+        "odd-questline-hunter": "Chasseur impair Suite de quêtes",
+        "rivendare-hunter": "Chasseur Vaillefendre",
+        "xl-deios-druid": "Druide Déios XL",
+        "xl-hl-leoroxx-hunter": "Chasseur Leoroxx singleton XL",
+        "xl-att-quest-hunter": "Chasseur Tique et Taque XL",
+        "xl-hl-att-quest-hunter": "Chasseur Tique et Taque singleton XL",
+        "clone-mech-paladin": "Paladin clone Mécas",
+        "exodia-paladin": "Paladin Exodia",
+        "hl-questline-priest": "Prêtre Suite de quêtes singleton",
+        "xl-hl-aura-paladin": "Paladin aura singleton XL",
+        "heal-burn-priest": "Prêtre soins burn",
+        "xl-burnlock": "Démoniste burn XL",
+        "xl-tick-tock-warlock": "Guerrier Tique et Taque XL"
     },
     "arena": {
         "overlay": {
@@ -5880,6 +6008,10 @@
         "neutral_nalaa": "Nalaa",
         "naga_spellbuff": "Nagas buff de sorts",
         "undead_butcher": "Morts-vivants boucher",
-        "undead_forsaken": "Morts-vivants tisserande"
+        "undead_forsaken": "Morts-vivants tisserande",
+        "demon_boost_shop": "Démons boosts de la taverne",
+        "quilboar_choose_one": "Hurans Choix des armes",
+        "pirate_discover": "Pirates découverte",
+        "beast_lobster": "Bêtes homard"
     }
 }
