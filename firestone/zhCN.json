@@ -309,7 +309,9 @@
             "bacon_buffs_tavern_spell": "酒馆法术的增益",
             "bacon_rally": "进击",
             "shatter": "裂变",
-            "shattered": "已裂变"
+            "shattered": "已裂变",
+            "discover": "发现",
+            "interactable_object": "发动"
         },
         "legendary-minion": "传说随从",
         "patch": "补丁 {{version}}.{{number}} 发布于{{date}}",
@@ -988,7 +990,9 @@
                     "past-3": "最近3天内",
                     "past-1": "一天内",
                     "past-20": "过去20天",
-                    "current-season": "当前赛季"
+                    "current-season": "当前赛季",
+                    "today-tooltip": "从当地时间凌晨起进行的对局",
+                    "today": "今天"
                 },
                 "deck-search": {
                     "placeholder": "搜索套牌...",
@@ -3031,7 +3035,8 @@
                     "play": "仅在您先手的对局中显示。点击更改。",
                     "all": "先手和后手的对局中都显示。点击更改。",
                     "coin": "仅在您后手的对局中显示。点击更改。"
-                }
+                },
+                "dismiss-tooltip": "隐藏换牌指南"
             },
             "lobby": {
                 "close-button-tooltip": "禁用套牌概览。您可以在设置中重新激活它",
@@ -3060,7 +3065,8 @@
             "damage": "造成伤害",
             "main-attribute": "主要属性",
             "card-type": "卡牌类型",
-            "mechanics": "机制"
+            "mechanics": "机制",
+            "cost-modifier": "消耗修改效果"
         },
         "tourist": "游客：{{className}}",
         "burns-in": "{{value}} 回合后弃掉",
@@ -3070,7 +3076,8 @@
         "card-tooltip-big-pool-text": "卡池过大无法显示所有卡牌。",
         "card-tooltip-pool-size": "{{ value }} 张卡牌",
         "dredged-by": "由 {{value}} 探底",
-        "prepared-tooltip": "这张卡已“预备”，法力值消耗为{{value}}点"
+        "prepared-tooltip": "这张卡已“预备”，法力值消耗为{{value}}点",
+        "card-mulliganed-away": "已换牌"
     },
     "battlegrounds": {
         "menu": {
@@ -3114,7 +3121,8 @@
             "locked-premium-info-tooltip": "成为会员，启用战棋模拟器中的半途结果，以提前知晓结果",
             "temp-result-text": "模拟进行中",
             "locked-premium-info": "解锁快速模拟",
-            "temp-result-tooltip": "你当前看到的是半途结果；模拟仍在进行，最终结果可能改变"
+            "temp-result-tooltip": "你当前看到的是半途结果；模拟仍在进行，最终结果可能改变",
+            "odds-banner-label": "对战胜率"
         },
         "sim": {
             "add-minion-button-tooltip": "点击添加一个随从",
@@ -3404,7 +3412,9 @@
                     "recommended-cards-header": "推荐卡牌",
                     "recommended-cards-header-tooltip": "强烈推荐包含在阵容中的卡牌，即使在没有它们的情况下流派仍然可行"
                 },
-                "tier-category-tooltip": "查看所有{{value}}级卡牌。右键点击高亮显示酒馆中的所有{{value}}级卡牌。"
+                "tier-category-tooltip": "查看所有{{value}}级卡牌。右键点击高亮显示酒馆中的所有{{value}}级卡牌。",
+                "hide-all-mechanics-tooltip": "折叠“能力”标签以仅显示主要关键词",
+                "show-all-mechanics-tooltip": "展开“能力”标签以显示所有支持的关键词"
             },
             "quests": {
                 "turn-to-complete-tooltip": "当前分段的任务难度（数值越低越容易）：完成此任务平均需要{{averageTurnsToComplete}}回合，此英雄平均需要{{turnsToCompleteForHero}}回合，难度调整为{{turnsToCompleteImpact}}",
@@ -3466,6 +3476,45 @@
                 "free-uses-text": "剩余{{value}}次",
                 "free-uses-tooltip": "您每天可以免费使用此功能{{max}}次，还剩{{left}}次使用机会",
                 "impact-header-tooltip": "排名前{{value}}%的玩家选择此卡牌后，对最终名次造成的影响程度"
+            },
+            "dark-gifts": {
+                "title": "黑暗之赐",
+                "guaranteed": "保证出现",
+                "guaranteed-type": "保证类型",
+                "reason": {
+                    "requires-avenge": "只能提供给具有复仇的随从",
+                    "requires-battlecry-minion": "只能提供给具有战吼的随从",
+                    "requires-deathrattle-minion": "只能提供给具有亡语的随从",
+                    "requires-divine-shield": "只能提供给具有圣盾的随从",
+                    "requires-quilboar": "只能提供给野猪人",
+                    "requires-spellcraft": "只能提供给具有塑造法术的随从",
+                    "requires-minion-type": "只能提供给有随从类型的随从",
+                    "requires-no-minion-type": "只能提供给没有随从类型的随从",
+                    "not-taunt": "不能提供给嘲讽随从",
+                    "not-avenge": "不能提供给复仇随从",
+                    "not-activate": "不能提供给发动随从",
+                    "requires-demon": "只能提供给恶魔",
+                    "requires-dragon": "只能提供给龙",
+                    "requires-mech": "只能提供给机械",
+                    "requires-murloc": "只能提供给鱼人",
+                    "not-already-venomous": "不能提供给已经具有烈毒或剧毒的随从",
+                    "not-dragon": "不能提供给龙随从",
+                    "not-beast-or-undead": "不能提供给野兽或亡灵随从",
+                    "not-lowest-tier": "只能提供给当前选项池中等级最低的随从。",
+                    "requires-tavern-tier-3": "需要酒馆等级3级或以上",
+                    "requires-battlecries-this-game": "需要在本局对战中触发过战吼",
+                    "requires-deathrattles-this-game": "需要在本局对战中触发过亡语",
+                    "requires-tavern-spells-this-game": "需要在本局对战中施放过战酒馆法术",
+                    "battlecry-gift-restriction": "战吼随从只能获得双重幻象、不断复制、镀金随从和吼声回荡",
+                    "choose-one-gift-restriction": "抉择随从只能获得双重幻象、不断复制、镀金随从和吼声回荡。",
+                    "deathrattle-stats-restriction": "除锋锐之剑和死亡之拥外，亡语随从不会获得能够提供属性值的黑暗之赐。",
+                    "lobby-quilboar-naga": "有野猪人或纳迦的对局中不会提供",
+                    "requires-end-of-turn": "只能提供给具有回合结束效果的随从"
+                },
+                "others": "其它",
+                "turn": "第{{value}}回合",
+                "uses-left": "还剩{{value}}次使用",
+                "has-condition": "这个黑暗之赐有额外条件。将鼠标悬停在此处查看原因，或悬停在随从上查看。"
             }
         },
         "post-match-stats": {
@@ -3633,7 +3682,8 @@
                 "limited-tooltip": "仅当你的套牌、手牌或发现选项中出现相关卡牌时才显示对应计数器",
                 "off": "关闭",
                 "on": "开启"
-            }
+            },
+            "view-screenshot": "查看截图"
         },
         "menu": {
             "general": "一般选项",
@@ -3666,7 +3716,8 @@
                 "appearance": "外观",
                 "admin": "管理员",
                 "widgets": "小部件",
-                "streamer": "主播"
+                "streamer": "主播",
+                "addons": "附加组件"
             },
             "mods": {
                 "title": "模组",
@@ -4017,13 +4068,24 @@
                 "card-tooltip-number-of-related-cards-tooltip": "在卡牌提示中显示相关卡牌的最大数量。如果卡牌数量超过此数值，你将看到一个包含相关卡牌数量的通用信息。",
                 "counters-widgets-size": "计数器小部件尺寸",
                 "help-tooltip-size": "鼠标提示文字尺寸",
-                "counters-widgets-size-tooltip": "修改鼠标悬停在某些计数器上时可以出现的小部件的尺寸，例如拉法姆列表"
+                "counters-widgets-size-tooltip": "修改鼠标悬停在某些计数器上时可以出现的小部件的尺寸，例如拉法姆列表",
+                "use-azalina-label": "预测自阿扎莉娜",
+                "use-azalina-tooltip": "如果玩家拥有阿扎莉娜，我们会根据对手的职业来决定是否显示一些计数器（例如，如果你是牧师，对手是潜行者，我们可以显示青玉守卫计数器）。实验性功能"
             },
             "streamer": {
                 "battlegrounds": {
                     "show-full-anomaly-overlay": "显示完整的畸变浮窗",
                     "show-full-anomaly-overlay-tooltip": "添加一张完整显示的畸变卡牌（当畸变可用时），以便您的观众能更轻松地看到当前畸变"
                 }
+            },
+            "addons": {
+                "title": "附加组件",
+                "instructions": "将附加组件文件夹拖入 <b>{{path}}</b>，然后点击刷新。附加组件在沙盒中运行，并且只能获得它们声明的权限。",
+                "installed-title": "已安装的附加组件",
+                "empty": "未找到附加组件。请打开文件夹并将附加组件包拖放到该文件夹。",
+                "open-folder": "打开文件夹",
+                "permissions": "权限：",
+                "refresh": "刷新"
             }
         },
         "decktracker": {
@@ -4096,7 +4158,8 @@
                 "weapons-play-order": "武器使用顺序",
                 "show-hero-power-in-board-zone": "在战场区域显示英雄技能",
                 "show-hero-power-in-board-zone-tooltip": "在“战场”区域显示玩家的英雄技能。这有助于显示动态卡池和一些高亮效果。",
-                "play-order-title": "打出顺序"
+                "play-order-title": "打出顺序",
+                "show-flavor-text-on-hover": "悬停时显示风味趣文"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -4360,7 +4423,7 @@
                     "dragons-in-hand-tooltip": "为“{{cardName}}”显示手牌中的龙卡牌数量",
                     "dragons-in-hand-label": "手牌中的龙",
                     "imbue-tooltip": "显示你在本局对战中灌注英雄技能的次数",
-                    "card-name-played-tooltip": "显示你使用“{{cardName}}”的次数",
+                    "card-name-played-tooltip": "显示你已打出“{{cardName}}”的次数",
                     "colossus-damage-label": "巨像伤害",
                     "colossus-damage-tooltip": "显示你的巨像将会造成的伤害",
                     "cards-shuffled-into-your-deck-label": "卡牌（已洗入牌库）",
@@ -4454,7 +4517,8 @@
                     "godfrey-the-betrayer-label": "背叛者高弗雷",
                     "jade-guardians-tooltip": "显示你在本局对战中使用了多少次法力值消耗为2点的卡牌",
                     "card-dead-tooltip": "显示 “{{cardName}}” 在我方战场死亡的次数",
-                    "godfrey-the-betrayer-tooltip": "显示所有你已弃掉的卡牌，以及哪些卡牌还在等待回到你的手牌"
+                    "godfrey-the-betrayer-tooltip": "显示所有你已弃掉的卡牌，以及哪些卡牌还在等待回到你的手牌",
+                    "card-name-summoned-tooltip": "显示你已召唤“{{cardName}}”的次数"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。",
@@ -4490,7 +4554,12 @@
                 "show-mulligan-card-impact-label": "显示卡牌影响",
                 "show-mulligan-deck-overview-label": "显示套牌总览",
                 "show-mulligan-card-impact-tooltip": "显示你手牌中的卡牌对套牌胜率的影响",
-                "size": "尺寸"
+                "size": "尺寸",
+                "keep-after-mulligan-off": "立即隐藏",
+                "keep-after-mulligan-10": "保留10秒",
+                "keep-after-mulligan-5": "保留5秒",
+                "keep-after-mulligan-label": "换牌后保留小部件",
+                "keep-after-mulligan-until-dismissed": "直到手动关闭"
             },
             "lobby": {
                 "show-lobby-tracker": "显示大厅记牌器",
@@ -4742,7 +4811,10 @@
                 "counter-mrrglton-played-label": "已使用的莫格顿家族",
                 "counter-mrrglton-played-tooltip": "显示你已打出多少次莫格顿家族鱼人",
                 "counter-tasty-lobster-buff-label": "美味龙虾加成",
-                "counter-tasty-lobster-buff-tooltip": "显示你的美味龙虾死亡时给予多少攻击力/生命值"
+                "counter-tasty-lobster-buff-tooltip": "显示你的美味龙虾死亡时给予多少攻击力/生命值",
+                "dark-gift-overlay-label": "黑暗之赐浮窗",
+                "dark-gift-overlay-tooltip": "当鼠标悬停在黑暗发现按钮上时，显示可能的黑暗发现随从和黑暗之赐",
+                "hide-battle-odds-until-mouseover-label": "鼠标悬停时才显示胜率"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
