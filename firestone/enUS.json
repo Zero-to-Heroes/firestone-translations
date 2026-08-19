@@ -5109,6 +5109,144 @@
 				}
 			}
 		},
+		"docs": {
+			"nav-label": "Docs",
+			"page-title": "Docs",
+			"page-subtitle": "Guides for setting up Firestone, streaming, mods, and public APIs.",
+			"toc-title": "On this page",
+			"permalink-aria": "Link to this section",
+			"back-label": "All docs",
+			"pages": {
+				"setup": {
+					"title": "Setting up Firestone",
+					"subtitle": "Firestone is highly configurable, but the default config might not be fully adapted to what you need (it's something I plan to work on at some point in the near future). So you will probably want to tweak a few things first, as more or less everything you see in the app can be toggled off or on.",
+					"blurb": "Tweak Firestone settings so the overlays and widgets match how you play.",
+					"intro": "<p>The settings is (I think) pretty easy to navigate: features are grouped by menus, and you can use the search box at the top to look for what you need.</p>",
+					"sections": {
+						"general": {
+							"title": "General",
+							"body": "<ul><li>In Global &gt; Widgets, you can change the global scale of widgets in the app.</li></ul>"
+						},
+						"streamer": {
+							"title": "Streamer",
+							"body": "<ul><li>You can activate the Twitch extension from the Integrations &gt; Twitch menu (or just search for \"Twitch\" with the top bar)</li></ul><p>(to be completed)</p>"
+						}
+					}
+				},
+				"twitch": {
+					"title": "Setting up the Twitch extension",
+					"subtitle": "Show your decklist and card overlays to viewers on Twitch.",
+					"blurb": "Connect Firestone to Twitch and capture overlays on stream.",
+					"sections": {
+						"what-is-the-twitch-extension": {
+							"title": "What is the Twitch extension",
+							"body": "<p>It adds a decklist overlay on the browser, which makes it easy for your users to see what is in your deck, as well as mouse over the cards and copy the deck code.</p><p>It also lets your viewers mouse over the cards on the board or in your hand to see what they do in detail.</p>"
+						},
+						"firestone-configuration": {
+							"title": "Firestone configuration",
+							"intro": "<p>First you need to login to Twitch from Firestone. Go to Settings &gt; General &gt; Twitch</p>",
+							"after-login": "<p>Once you're logged in, the screen will look like this</p>",
+							"overlays": "<p>You have nothing more to do, the tracker overlays (tracker, opponent tracker, secret helper counters, etc) will be automatically captured on stream.</p>"
+						},
+						"capturing-the-tracker": {
+							"title": "Capturing the tracker and overlays",
+							"body": "<p>By default, it should just work. However, if your Firestone overlays don't show up in-game, you can check this troubleshooting guide: <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176947-how-to-show-overwolf-in-game-while-streaming\" target=\"_blank\" rel=\"noopener noreferrer\">How to show Overwolf in-game while streaming</a></p>"
+						},
+						"capturing-main-and-battlegrounds": {
+							"title": "Capturing the Main Window and the Battlegrounds window",
+							"intro": "<p><em>If you're only interested in streaming your gameplay, you can probably ignore this section.</em></p><p>Firestone has two main windows that let you show your stats to your viewers - one specific to Battlegrounds that has stats for your current game, and one that has all the stats for your past games. By default, Firestone's main window and the Battlegrounds window are not overlays. This means you can move them outside of the game area, but on the other hand they are not captured on stream.</p><p>To capture them, you have two options:</p><ul><li>move them to a second screen, and capture the whole screen</li><li>enable the two \"overlay\" options shown below. This will bind the windows to the game screen (so no more dragging them outside) and will let OBS automatically capture them (changing these options may force Firestone to close and open back up once):</li></ul>"
+						},
+						"installing": {
+							"title": "Installing the Twitch extension",
+							"body": "<p>Then, you need to install the Firestone Twitch extension from <a href=\"https://dashboard.twitch.tv/extensions/jbmhw349lqbus9j8tx4wac18nsja9u\" target=\"_blank\" rel=\"noopener noreferrer\">the Twitch dashboard</a> (the link is also present on the Firestone Settings screen).</p><p>Then you simply have to install it, and no configuration is required.</p><p><strong>ATTENTION:</strong> from time to time Twitch disconnects you from Firestone. So in case you can't see any interactive overlay on your channel, please first check in the Firestone settings that you are indeed properly logged into Twitch.</p>"
+						}
+					}
+				},
+				"creator-code": {
+					"title": "How to use a Creator Code",
+					"subtitle": "When subscribing to Firestone premium on Tebex, you might want to enter a Creator Code to support your favorite content creator and get a discount.",
+					"blurb": "Support a creator and get a discount when you subscribe to Premium.",
+					"intro": "<p>The process is very straightforward: on the checkout page, simply enter the code they have shared with you in the field shown below:</p>",
+					"sections": {
+						"notes": {
+							"title": "Notes",
+							"body": "<ul><li>The code only applies to the first period you're subscribing to. I am in talks with Tebex to have this code automatically re-apply every time, but for the meantime the best way to make sure you support your creator monthly is to subscribe with the code, then cancel, then manually re-enter the code once your current sub is over.</li><li>The code is valid for all plans (monthly / yearly)</li><li>In case of issues, please ping @sebastientromp <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">on Discord</a></li></ul>"
+						}
+					}
+				},
+				"lottery": {
+					"title": "Firestone Lottery",
+					"subtitle": "Win a 2-months subscription to Firestone Premium.",
+					"blurb": "Earn points while you play for a chance to win Premium.",
+					"intro": "<p>The Firestone Lottery gives you a chance to win a 2-months subscription to Firestone Premium.</p><p>You can participate to the Firestone Lottery by having the Lottery window open and visible while you play (it also works if you're tracking achievements).</p><p>Every season (currently two weeks), you can earn points by performing certain actions in-game, which are visible on the Lottery window. Each action grants you points, that accumulate for the duration of season after each game. At the end of the season, two winners are drawn at random from everyone who participated, weighted based on the points you have accumulated. The more points you have, the higher the chances you can win.</p>"
+				},
+				"mods": {
+					"title": "Mods",
+					"subtitle": "Use community mods with Firestone's BepInEx-based mod manager.",
+					"blurb": "Install and develop Hearthstone mods through Firestone.",
+					"intro": "<p><strong>WARNING:</strong> modding Hearthstone is against the game's Terms of Services and could get you banned. So use these at your own risk.</p><p><strong>WARNING:</strong> Firestone Mod Manager is for now only available on the beta version of the app. See <a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/beta-test.md\" target=\"_blank\" rel=\"noopener noreferrer\">beta-test.md</a></p>",
+					"sections": {
+						"installing": {
+							"title": "Installing mods",
+							"body": "<p>First, you will need to enable mods support inside Firestone from the Settings &gt; General &gt; Mods section (the game needs to be closed for this).</p><p>You should follow each mod's specific instructions, but the gist is:</p><ul><li>Copy the mod main file to the <code>Hearthstone/BepInEx/plugins</code> folder</li><li>Copy the mod dependencies to the <code>Hearthstone/BepInEx/plugins</code> folder (same folder)</li></ul><p>Then restart the game. The mod will be detected in Firestone once you have started the game with the new mod once.</p>"
+						},
+						"known-mods": {
+							"title": "Known mods",
+							"body": "<p><strong>WARNING:</strong> these mods are created and maintained by the community, so I can't offer any support. Please open Github issues on the mods' respective repositories instead. And as mentioned above, modding HS is against the game's ToS, so I am not endorsing any of them. However, I have personally reviewed them, and think that what they do is \"safe\" and shouldn't risk you a ban (but, see the warning at the top of the page).</p><ul><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-auto-squelch\" target=\"_blank\" rel=\"noopener noreferrer\">AutoSquelch</a>. Never see your opponent's emotes.</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-golden-buddy-tooltip\" target=\"_blank\" rel=\"noopener noreferrer\">Golden Buddy Tooltip</a>. See the golden version of your Buddy when mousing over the Buddy button</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-show-collection-exact-count\" target=\"_blank\" rel=\"noopener noreferrer\">Show Collection Exact Card Count</a>. Replaces the \"9+\" in your collection with the exact card count</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-remove-ghost-overlay\" target=\"_blank\" rel=\"noopener noreferrer\">Remove Collection Ghost Overlay</a>. Remove the \"ghost\" overlay when examining cards you don't own in your collection, thus letting you see all the card details and deciding for yourself if you want to craft the card for its beautiful art.</li></ul>"
+						},
+						"old-mods": {
+							"title": "Old Mods",
+							"body": "<p>These are unmaintained mods that don't work anymore. If any of them is of interest to you, please post an issue on the mod's repository to ask the maintainer to update it for the new mod manager in Firestone.</p><ul><li><a href=\"https://github.com/sebastientromp/hs-melon-hide-mercenary-emotes\" target=\"_blank\" rel=\"noopener noreferrer\">Hide Mercenary Emote</a>. Remove the lines / bubbles said by some mercs (e.g. Diamond portraits)</li><li><a href=\"https://github.com/sebastientromp/hs-melon-increase-game-speed-vs-ai\" target=\"_blank\" rel=\"noopener noreferrer\">Increase Animation Speed vs AI</a>. Makes the animation at 4x speed when playing against the AI. <strong>WARNING:</strong> caution when using this mod, as increasing the game speed (even against the AI) might be frowned upon by Blizzard</li></ul>"
+						},
+						"developing": {
+							"title": "Developing mods",
+							"body": "<p>Firestone ships with an integrated version of <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>. It is a pretty easy way to install Mods to add features to the game. You can also install BepInEx yourself.</p><p>See the BepInEx documentation for developing BepInEx plugins, or look at existing mods. Or ping me on <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a></p><p>Hearthstone- and Firestone-specific capabilities (like knowing the deck state of both players) will be available later on for you to use in your mods. So you could in theory build a fully integrated tracker :)</p>"
+						},
+						"requirements": {
+							"title": "Requirements",
+							"body": "<p>In order to be recognized by Firestone's Mod Manager, your mod should expose a Config with a Name, Version, Guid and DownloadLink (pointing to the repo). External dependencies are not yet supported, ping me if that's something you need.</p>"
+						},
+						"not-ok": {
+							"title": "Mods that are definitely not OK",
+							"body": "<ul><li>Mods that give you an unfair advantage / cheating</li><li>Mods that give you access to cosmetics that you haven't unlocked</li><li>More generally, any mod that gives you access to some things which you should otherwise buy with in-game resources or real currency, or that go against the dev intents</li></ul>"
+						}
+					}
+				},
+				"developer-resources": {
+					"title": "Developer resources",
+					"subtitle": "Public Firestone APIs for stats, infographics, or just for fun.",
+					"blurb": "Public stats APIs for Battlegrounds, Duels, and card data.",
+					"intro": "<p>You can use these APIs directly to build interesting stats, infographics, or just for fun. If you publish anything, be sure to credit Firestone as the source of the data.</p><p>If you want to use data for a public app, please reach out to me on <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a></p>",
+					"sections": {
+						"api-links": {
+							"title": "API links",
+							"body": "<p>A few placeholders used at various places in the APIs:</p><ul><li><code>%timeSuffix%</code> can be replaced by <code>all-time</code>, <code>past-three</code>, <code>past-seven</code> or <code>last-patch</code> to get data for different time periods</li><li><code>%tribeSuffix%</code> is either <code>all-tribes</code> (recommended), or a combination of five tribes, separated by a hyphen (<code>-</code>), and using the tribe id as defined in <a href=\"https://github.com/Zero-to-Heroes/hs-reference-data/blob/master/src/enums/race.ts\" target=\"_blank\" rel=\"noopener noreferrer\">race.ts</a> (but the sample size is usually too small)</li></ul>"
+						},
+						"general": {
+							"title": "General",
+							"body": "<ul><li>All cards: <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</code></a><ul><li>Other languages are also accessible by replacing <code>enUS</code> with a language code supported by HS</li></ul></li></ul>"
+						},
+						"battlegrounds": {
+							"title": "Battlegrounds",
+							"body": "<ul><li>Hero stats: <code>https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-%tribeSuffix%-%timeSuffix%.gz.json</code><ul><li>e.g. <a href=\"https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-all-tribes-last-patch.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">bgs-global-stats-all-tribes-last-patch.gz.json</a></li><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li><li>Perfect games: <a href=\"https://static.zerotoheroes.com/api/bgs-perfect-games.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/bgs-perfect-games.json</code></a><ul><li><a href=\"https://github.com/Zero-to-Heroes/trigger-publish-bgs-perfect-game\" target=\"_blank\" rel=\"noopener noreferrer\">trigger-publish-bgs-perfect-game</a></li></ul></li><li>Quest stats: <code>https://static.zerotoheroes.com/api/bgs/quests/bgs-global-stats-%timeSuffix%.gz.json</code><ul><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li></ul>"
+						},
+						"duels": {
+							"title": "Duels",
+							"body": "<ul><li>Hero / hero power / signature treasure: <code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-%mmr%-%date%.gz.json</code></li><li>High-wins decks: <a href=\"https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json</code></a></li><li>Buckets: <a href=\"https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json</code></a></li></ul>"
+						}
+					}
+				}
+			},
+			"images": {
+				"setup-settings": "Firestone settings search box",
+				"twitch-settings": "Firestone Twitch settings while logged out",
+				"twitch-connected": "Firestone Twitch settings after connecting an account",
+				"twitch-main-window": "Setting to capture the Firestone main window on stream",
+				"twitch-battlegrounds-window": "Setting to capture the Battlegrounds window on stream",
+				"creator-code-checkout": "Tebex checkout page with the creator code field",
+				"creator-code-field": "Creator code field on the Tebex checkout page"
+			}
+		},
 		"battlegrounds": {
 			"comps": {
 				"description": "Explore the most successful Battlegrounds compositions, synergies, and strategies to dominate your matches."
