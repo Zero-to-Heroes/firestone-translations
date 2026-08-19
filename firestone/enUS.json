@@ -4992,6 +4992,123 @@
 		}
 	},
 	"website": {
+		"faq": {
+			"nav-label": "FAQ",
+			"page-title": "FAQ & Troubleshooting",
+			"page-subtitle": "Common issues and fixes for Firestone.",
+			"toc-title": "On this page",
+			"permalink-aria": "Link to this section",
+			"images": {
+				"reset-widgets": "Settings button to reset all overlay widget positions",
+				"run-as-admin": "Windows shortcut properties with Run as administrator enabled",
+				"grant-permissions": "Windows compatibility settings with all privileges granted",
+				"task-manager-columns": "Task Manager Details tab, Select Columns menu",
+				"elevated-column": "Task Manager column picker with Elevated checked",
+				"firestone-elevated": "Task Manager showing whether Firestone is running as admin",
+				"force-d3d11": "Battle.net launch options with the -force-d3d11 parameter",
+				"russia-firewall-1": "Windows Firewall rule targeting Overwolf",
+				"russia-firewall-2": "Windows Firewall rule scope",
+				"russia-firewall-3": "Windows Firewall rule blocking Cloudflare IPs for Overwolf"
+			},
+			"sections": {
+				"mainland-china": {
+					"title": "对于中国大陆用户 - For users from mainland China",
+					"body": "<ul><li><p>我听说如果你同时安装了“中国大陆”客户端和“世界其他地区”客户端，Firestone 只能在其中一个客户端上运行。</p><ul><li>看来你可以在登录后转到“收藏”屏幕来解决这个问题</li></ul></li><li><p>I've been told that if you have both the \"mainland China\" client and the \"rest of the world\" client installed, Firestone will only work on one of them.</p><ul><li>It looks like you can fix this by going to the \"Collection\" screen once you're logged in</li></ul></li></ul>"
+				},
+				"general-checklist": {
+					"title": "General checklist",
+					"body": "<ul><li>Make sure Overwolf is running <strong>before</strong> you launch Hearthstone</li><li>(Especially after a new patch) Close HS, close Firestone, restart Firestone, restart HS. This will force the app update (updating while the game is running does not always work well)</li><li>Check if you can launch Firestone on the desktop (meaning when HS is not running). If nothing happens:<ul><li>Please check the other sections below (most notably the ones at the bottom of this page about <a href=\"/faq#connectivity-issues-global\">connectivity issues</a>)</li><li>If nothing helps, please create a log zip and send it to me manually (on Discord for instance). See <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">how to get your Overwolf logs</a></li></ul></li><li>Check (while HS is running) whether you have a <code>Decks.log</code> file in your Hearthstone install folder under <code>Logs/Hearthstone_XXX</code>. If not, reboot HS</li><li>Try disabling your antivirus / firewall, and restart Firestone</li><li>If Firestone is flashing / blinking, it could be an issue with a new Lenovo app called LegionZone. Try deactivating it to see if it solves the issue.</li><li>Check that your in-game clock indicates the correct time. This can happen if your system time is not configured properly, typically the \"Adjust for daylight saving time automatically\" option is deactivated</li></ul>"
+				},
+				"app-isnt-showing": {
+					"title": "App isn't showing",
+					"body": "<ul><li>Make sure Overwolf is running <strong>before</strong> you launch Hearthstone</li><li>Check that the Overwolf overlay is enabled: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf game settings</a></li><li>Run Firestone as admin (you'll have to close Overwolf and reopen it afterwards). See <a href=\"/faq#memory-reading-error\">Memory Reading Error / Run as admin</a></li><li>Check if you can access <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> from <strong>Chrome</strong>. If not, this means that there is an issue with your router / ISP / VPN that blocks access to AWS. Parental control is also a known cause for this issue.<ul><li><strong>IMPORTANT</strong>: this seems to be a more prevalent cause of issues recently, so please check your parental control settings (also with your ISP), and whitelist <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> and <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li><li>Also see the <a href=\"/faq#connectivity-issues-global\">connectivity issues</a> section at the bottom of this page</li></ul></li><li>It has been found out that DirectX 12 can interfere with the overlay rendering. Try to disable it to see if it improves the situation (TODO: detailed instructions needed)</li><li>If everything fails, and if your game is installed under C:\\Program Files or C:\\Program Files (x86), try moving the game to another folder. These folders are protected and might cause some issue when the app tries to read the game's information</li></ul>"
+				},
+				"widgets-not-showing": {
+					"title": "A few specific widgets are not showing",
+					"body": "<p>If you can't see some widgets (e.g. you can't see your tracker, but can see the turn at which cards have been drawn in the opponent's hand), it's possible that they have moved off-screen. You can reset (all) widget positions using this button in the settings:</p>"
+				},
+				"images-are-not-showing": {
+					"title": "Images are not showing",
+					"body": "<ul><li>Check if you're able to display this <strong>using Google Chrome</strong>: <a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>If not, this means that something is blocking access to Firestone's content. This is usually a Firewall or Antivirus on your local machine, but can sometimes come from your Internet Service Provider. See <a href=\"/faq#other-things-to-try\">Other things to try</a></li></ul></li><li>Check the <a href=\"/faq#connectivity-issues-global\">Connectivity issues</a> sections at the bottom of the page</li><li>If you can display it in your browser, but not in the app, this means that something is preventing the app from accessing this content.<ul><li>Try disabling your firewall and anti-virus<blockquote><p>I found the firewall settings and set all the \"overwolf\" related settings to pass, which solved the problem.</p></blockquote></li><li>If nothing helps, this probably means some other security restriction is at work, but this will be very specific to your computer<ul><li>If you manage to solve this, please send me a message and I'll add what you did as a possible solution for others :)</li></ul></li><li>Reinstalling Firestone sometimes seems to help</li></ul></li></ul>"
+				},
+				"game-is-crashing": {
+					"title": "Game is crashing",
+					"body": "<ul><li>See <a href=\"https://us.forums.blizzard.com/en/hearthstone/t/pc-crash-every-game-with-possible-solution/141218\" target=\"_blank\" rel=\"noopener noreferrer\">this Blizzard forum thread</a>. You need to add the <code>-force-d3d11</code> parameter, as shown in this screenshot:</li><li>There can be issues with RivaTuner / MSI AfterBurner. See <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000177860-overwolf-and-conflicts-with-rivatuner\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf and conflicts with RivaTuner</a></li><li>If you're using AMD, you can try disabling AMD Fluid Motion Frames 2</li><li>One user reported that the game would crash in windowed mode, but not in fullscreen.</li><li>Overwolf does not yet support ARM processors, and running it on an ARM processor machine can cause the game to crash</li></ul>"
+				},
+				"incompatible-software": {
+					"title": "Incompatible Software",
+					"body": "<p>If you have one of these running, please try to close it, close Hearthstone, restart Overwolf and try again:</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>"
+				},
+				"game-is-slow": {
+					"title": "Game is slow",
+					"body": "<ul><li>If the game experiences some stuttering / \"choppy\" animations while Firestone is running, you can try capping the game's FPS.<ul><li>To do so, edit the <code>options.txt</code> file in <code>%localappdata%\\Blizzard\\Hearthstone</code> and change / add <code>targetframerate=60</code> to something lower (I use 60, others use 140 with success as well)</li></ul></li><li>Some users have found that turning off G-Sync through the graphics card helps</li><li><blockquote><p>I have AMD GPU and I just switch off AMD FreeSync in HS and there is no more lagging.</p></blockquote></li></ul>"
+				},
+				"high-resource-usage": {
+					"title": "High resource usage",
+					"body": "<ul><li>Some users have reported high GPU usage, which was caused by the Outplayed app. If that happens, try to deactivate it</li></ul>"
+				},
+				"no-cards": {
+					"title": "CRITICAL ERROR: Could not load the cards database",
+					"body": "<ul><li>Check if you can access <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</a> from Chrome</li><li>If not, this means that there is an issue with your router / ISP / VPN that blocks access to AWS. Parental control is also a known cause for this issue.<ul><li>Antivirus software can sometimes block the access, try turning it off</li><li><strong>IMPORTANT</strong>: this seems to be a more prevalent cause of issues recently, so please check your parental control settings (also with your ISP), and whitelist <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> and <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li></ul></li><li>If nothing helps, email me at <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>"
+				},
+				"no-cards-other": {
+					"title": "Other things to try",
+					"body": "<ul><li>Someone managed to fix the issue by hard killing Overwolf from the task manager, closing Hearthstone, and restarting Overwolf</li><li>Launching the app as admin can maybe fix the issue as well</li></ul>"
+				},
+				"memory-reading-error": {
+					"title": "Memory Reading Error / Run as admin",
+					"intro": "<p>The \"Memory reading\" error occurs when the app doesn't have the rights to access the game client's memory. Usually this is caused by issues with permissions / rights (and so running it as admin usually solves it).</p><p>A bit more details on all the steps needed to run as admin:</p>",
+					"admin-steps": "<ul><li>Close HS</li><li>Close Overwolf</li><li>Change Firestone and/or Overwolf shortcuts to \"run as admin\"<ul><li>Overwolf.exe and OverwolfLauncher.exe should be run as admin</li><li>You can also activate the \"apply to all users\" button</li></ul></li></ul>",
+					"after-admin": "<ul><li>Restart Overwolf (some users had to restart their full computer)</li><li>Then you can restart HS</li><li>If it still doesn't work (even after <strong>a full computer restart</strong>), check if Hearthstone itself is running as admin. If it is, try to run it without admin privileges.</li><li>If you're still having issues, you can try to grant all permissions in that screen:</li></ul>"
+				},
+				"memory-reading-other": {
+					"title": "Other things to try if you have the \"Memory reading\" error",
+					"body": "<ul><li>You can also try to run <code>sfc /scannow</code> in a command prompt, as this has solved the issue for at least 2 players</li><li>\"Manually ending all processes related to hearthstone, bnet, overwolf, firestone, etc and then relaunching hs and firestone seems to have fixed it. A regular restart of hearthstone and overwolf/firestone via the system tray didn't\"</li><li>One user managed to solve this issue by installing Overwolf in the same subdirectory as Hearthstone (like <code>D:\\Blizzard\\HS\\Hearthstone</code> and <code>D:\\Blizzard\\HS\\Overwolf</code>), so might be worth a try</li></ul>"
+				},
+				"check-if-running-as-admin": {
+					"title": "Check if the app is running as admin",
+					"step-1": "<ol><li>Open the Task Manager (Ctrl + Shift + Esc), then go to the Details tab. Right click on the header bar and click on Select Columns</li></ol>",
+					"step-2": "<ol start=\"2\"><li>Make sure that the Elevated column is checked</li></ol>",
+					"step-3": "<ol start=\"3\"><li>Now navigate to the Firestone entry in the list. If Firestone is running as admin, it should say Yes in the related Elevated column (which is not the case for me in the screenshot)</li></ol>"
+				},
+				"truncated-logs": {
+					"title": "App is stuck / Logs are stuck",
+					"body": "<p>If the app works for a while, then suddenly stops after a few games, it's possible that the Hearthstone logs stop being produced.</p><p>Do the following steps:</p><ul><li>Close Hearthstone</li><li>Go to your Hearthstone install folder, where the <code>Hearthstone.exe</code> file is located</li><li>Check whether a <code>client.config</code> file is present in this folder<ul><li>If there isn't, create one</li></ul></li><li>Replace the contents of the <code>client.config</code> file with this:<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>Restart Hearthstone</li></ul><p>If after this you still experience the game being stuck, then something wrong is going on, and please open a bug report with the button at the top right of the app's main window :)</p>"
+				},
+				"truncated-logs-other": {
+					"title": "If this doesn't work",
+					"body": "<p>Uninstall / reinstall might fix it:</p><blockquote><p>I deleted the %localappdata%\\Blizzard\\Hearthstone address file you gave me, and deleted all the cache files in Hearthstone, and reinstalled the game, and the problem was solved.</p></blockquote><p>Do you have another program that interacts with Hearthstone? From a Chinese user:</p><blockquote><p>我发现问题了，我用一个中国特有的启动器启动游戏，然后炉石传说的文件夹关于日志的文件就会消失。不用它启动就不会有问题。</p></blockquote>"
+				},
+				"app-doesnt-update": {
+					"title": "App doesn't update",
+					"body": "<ol><li>Exit Overwolf</li><li>Open the folder C:\\Users\\&lt;your_user_name&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>Delete the folder named 'lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob'</li><li>Open the folder C:\\Users\\&lt;your_user_name&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>Delete the folder named 'lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob'</li><li>Launch Overwolf</li><li>Try to install the app again</li></ol>"
+				},
+				"other-things-to-try": {
+					"title": "Other things to try"
+				},
+				"virgin-media-web-safe": {
+					"title": "Virgin media, Web Safe",
+					"body": "<p>If you're using Virgin Media to connect (at least from the UK), it looks like \"Virgin media child safe\" could prevent access to some data that Firestone needs to work. I have no idea why that is so, but deactivating it seems to solve the issue.</p><p>There have been other similar issues with Web Safe, and adding an exception for static.zerotoheroes.com seems to do the trick.</p>"
+				},
+				"dns": {
+					"title": "DNS",
+					"body": "<p>From another user who had the same issue:</p><blockquote><p>None of the things you listed were an issue, but my partner figured out what was wrong and I wanted to send it to you to help others with the same issue if all other things do not work. He had me change network adapter DNS settings to Google's DNS [Primary 8.8.8.8 and Secondary 8.8.4.4].</p></blockquote><p>More detailed instructions:</p><ol><li>Control Panel\\Network and Internet\\Network Connections</li><li>Right click on the type of connection you use</li><li>Find \"Internet Protocol Version 4 (TCP/IPv4)\" under \"This connection uses the following items\"</li><li>Click Properties</li><li>Select Use the following DNS Server</li><li>Set to 8.8.8.8 (Google)</li><li>Close and open Firestone.</li></ol>"
+				},
+				"hard-kill-apps": {
+					"title": "Hard kill apps",
+					"body": "<blockquote><p>Hello, closed firestone from task manager as well as overwolf and after opening it again everything worked as intended. A simple restart to firestone didn't solve the issue.</p></blockquote>"
+				},
+				"connectivity-issues-global": {
+					"title": "Connectivity issues (Global)",
+					"body": "<ul><li>Try to disable your antivirus / firewall / VPN</li><li>If you know how to, whitelist the following domains:<ul><li>zerotoheroes.com</li><li>firestoneapp.com</li><li>amazonaws.com</li><li>overwolf.com</li></ul></li><li>Reinstalling Firestone sometimes seems to help</li></ul>"
+				},
+				"connectivity-issues-russia": {
+					"title": "Connectivity issues (Russia)",
+					"body": "<p><strong>Try this if you're connecting from Russia</strong>. Below are a few things users did on their machine to resolve connectivity issues.</p><blockquote><p>Uninstalling and reinstalling Firestone worked for me</p><p>Fixed it by adding it to the blacklist in goodbye dpi <a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a></p><p>Both of those things apply specifically to GoodbyeDPI users. For it to work in Google Chrome, you have to go to chrome://flags and disable three specific flags:</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>Since some users seem to have issues just with cloudflare-ech.com (it was banned by some providers in Russia a couple of days ago) so adding it to the blacklist txt solves the issue. I would also add static.firestoneapp.com to that list but it wasn't necessary in my case.</p><p>Firstly I pinged cloudflare from cmd a few times to get IPs. Then I created a Windows Firewall rule to block all connections from fetched IPs only for Overwolf.exe. It might be necessary to reinstall Firestone afterwards:</p></blockquote>",
+					"more": "<blockquote><p>Turn on VPN on your computer, download Hearthstone, delete your program in Overwolf, download it again, turn off VPN and everything will work. Do these manipulations before each entry into the game. Relevant for Russia.</p><p>The problem was most likely in the cloudflare-ech.com blockings in Russia. Fixed this by upgrading the app that me and some people use to bypass the Discord blockings (working similarly to the GoodbyeDPI) past the version 1.5.2 where cloudflare-ech.com was added to the blacklist. The app: <a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>. Since the app is somewhat popular in Russia - upgrading it past v1.5.2 should help for some of your users.</p></blockquote>"
+				}
+			}
+		},
 		"battlegrounds": {
 			"comps": {
 				"description": "Explore the most successful Battlegrounds compositions, synergies, and strategies to dominate your matches."
