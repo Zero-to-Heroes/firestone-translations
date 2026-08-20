@@ -5123,6 +5123,55 @@
             "decks": "牌組",
             "meta": "環境趨勢",
             "description": "免費檢視任何牌位區間的職業、卡牌和牌組數據。"
+        },
+        "faq": {
+            "sections": {
+                "memory-reading-error": {
+                    "intro": "<p>「記憶體讀取」錯誤是指應用程式沒有存取遊戲用戶端記憶體的權限。這通常是由權限問題引起的（因此以管理員身份運行通常可以解決此問題）。 </p><p>以下是更多以管理員身分執行所需步驟的詳細資訊：</p>"
+                },
+                "app-doesnt-update": {
+                    "body": "<ol><li>退出 Overwolf</li><li>開啟資料夾 C:\\Users\\&lt;您的使用者名稱&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>刪除名為「lnknbakkpommmjjdnelmjjdbocfpnpbkijjnob」的資料夾</li><li>開啟資料夾C:\\Users\\&lt;您的使用者名稱&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>刪除名為「lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob」的資料夾</li><li>啟動 Overwolf</liol><li>再次嘗試應用程式</li></li>"
+                },
+                "check-if-running-as-admin": {
+                    "step-1": "<ol><li>開啟工作管理員（Ctrl + Shift + Esc），然後轉到「詳細資料」標籤。右鍵單擊標題欄，然後按一下“選取欄位”。 </li></ol>",
+                    "step-2": "<ol start=\"2\">請確認「已提高權限」欄位已勾選</li></ol>",
+                    "step-3": "<ol start=\"3\"><li>接著在清單中找到 Firestone 項目。若 Firestone 是以系統管理員身分執行，對應的「已提高權限」欄位應顯示為「是」（截圖中的情況則代表未以系統管理員身分執行）。</li></ol>"
+                },
+                "truncated-logs-other": {
+                    "body": "<p>卸載/重新安裝或許能解決問題：</p><blockquote><p>我刪除了您給的 %localappdata%\\Blizzard\\Hearthstone 地址裡的檔案，並刪除了爐石戰記中的所有快取文件，然後重新安裝了遊戲，問題就解決了。 </p></blockquote><p>您是否安裝了其他與爐石戰記互動的程式？ （來自一位中國用戶）：</p><blockquote><p>我发现问题了，我用一个中国特有的启动器启动游戏，然后炉石传说的文件夹关于日志的文件就会消失。不用它启动就不会有问题。</p></blockquote>"
+                },
+                "mainland-china": {
+                    "body": "<ul><li><p>我听说如果你同时安装了“中国大陆”客户端和“世界其他地区”客户端，Firestone 只能在其中一个客户端上运行。</p><ul><li>看来你可以在登录后转到“收藏”屏幕来解决这个问题</li></ul></li><li><p>我聽說如果你同時安裝了「中國地區」用戶端和「其它國家/地區（例如台灣）」用戶端，但 Firestone 只能在其中一個用戶端上運作。 </p><ul><li>登入後，進入「收藏」介面似乎可以解決這個問題。 </li></ul></li></ul>"
+                },
+                "images-are-not-showing": {
+                    "body": "<ul><li>請檢查您是否能夠使用 Google Chrome 顯示此內容：<a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>如果無法顯示，則表示某些程式阻止了您造訪 Firestone 的內容。這通常是您本機電腦上的防火牆或防毒軟體造成的，但有時也可能是您的網路服務供應商造成的。 </li>請參閱<a href=\"/faq#other-things-to-try\">其他嘗試方法</a></li></ul></li><li>請查看頁面底部的<a href=\"/faq#connectivity-issues-global\">連接問題</a>部分</li><li>如果您可以在瀏覽器中顯示此應用程式無法顯示此應用程式。 <ul><li>嘗試停用防火牆和防毒軟體。 <blockquote><p>我找到了防火牆設置，並將所有與“Overwolf”相關的設置都設置為允許，問題就解決了。 </p></blockquote></li><li>如果上述方法都無效，則可能表示有其他安全限制，但這取決於您的電腦。 <ul><li>如果您成功解決了此問題，請給我留言，我會將您的解決方法添加到列表中，供其他人參考 :)</li></ul></li><li>重新安裝 Firestone 有時似乎會有幫助。 </li></ul></li></ul>"
+                },
+                "connectivity-issues-russia": {
+                    "body": "<p><strong>如果您從俄羅斯連接，請嘗試以下方法</strong>。以下是一些使用者在電腦上解決連線問題的方法。 </p><blockquote><p>卸載並重新安裝 Firestone 對我有效</p><p>通過將其添加到 Goodbye DPI 的黑名單中解決了問題<a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a> </p><p>這些尤其適用於 GoodbyeDPI 用戶。要在 Google Chrome 中正常工作，您需要訪問 chrome://flags 並禁用以下三個特定標誌：</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>由於部分用戶似乎只在使用 cloudflare-ech.com 時遇到問題（該網站幾天前被俄羅斯的一些服務商屏蔽），因此將其添加到黑名單文本文件中可以解決問題。我原本也想將 static.firestoneapp.com 添加到該列表中，但就我的情況而言，沒有必要。 </p><p>首先，我從命令提示字元中 ping 了幾次 cloudflare 以取得其 IP 位址。然後，我建立了一條 Windows 防火牆規則，僅針對 Overwolf.exe 封鎖來自已取得 IP 位址的所有連線。之後可能需要重新安裝 Firestone：</p></blockquote>",
+                    "more": "<blockquote><p>在你的電腦上開啟 VPN，下載《爐石戰記》，在 Overwolf 中刪除此應用程式後重新下載，接著關閉 VPN，一切就能正常運作。每次進入遊戲前請重複這些操作。此方法適用於俄羅斯。</p><p>問題很可能出在俄羅斯封鎖了 cloudflare-ech.com。自 1.5.2 以後的版本已將 cloudflare-ech.com 加入黑名單，我透過升級自己與其他人用來繞過 Discord 封鎖的應用程式（運作方式類似 GoodbyeDPI）解決了這個問題。該應用程式網址為：<a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>。由於該應用程式在俄羅斯頗受歡迎，更新至 v1.5.2 以上版本應該能幫助到你的一部分使用者。</p></blockquote>"
+                },
+                "hard-kill-apps": {
+                    "body": "<blockquote><p>哈囉，從工作管理員強制關閉 Firestone 以及 Overwolf 後重新開啟，一切就會恢復正常。單純重新啟動 Firestone 並無法解決問題。</p></blockquote>"
+                },
+                "incompatible-software": {
+                    "body": "<p>如果您正在執行以下程式之一，請嘗試將其關閉，關閉爐石傳說，重啟 Overwolf 後再試一次：</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>"
+                },
+                "widgets-not-showing": {
+                    "body": "<p>如果您看不到某些小工具（例如，您看不到自己的記牌器，但可以看到對手手牌的抽牌回合），則可能是它們被移出了螢幕。您可以使用設定中的此按鈕重設（所有）小工具的位置：</p>"
+                },
+                "dns": {
+                    "body": "<p>來自另一位遇到同樣問題的用戶：</p><blockquote><p>您列出的那些方法都不是問題所在，但我的拍檔找到了問題所在，我想把解決方法分享給您，希望能幫助其他遇到同樣問題的用戶。他要我把網路介面卡的 DNS 設定改成Google的 DNS 伺服器 [主要 DNS 伺服器 8.8.8.8，備用 DNS 伺服器 8.8.4.4]。 </p></blockquote><p>更詳細的步驟：</p><ol><li>控制台\\網路和網際網路\\網路連線</li><li>右鍵點選您使用的連線類型(如乙太網路)</li><li>在選單中點選「內容」</li><li>在「這個連線使用下列項目」下找到「網際網路通訊協定第4版(TCP/IPv4)」</li><li>稍右下方點選「內容」</li><li>設定為 8.8.8.8 (Google)</li><li>關閉並重新開啟 Firestone。 </li></ol>"
+                },
+                "virgin-media-web-safe": {
+                    "body": "<p>如果您使用 Virgin Media 連線網路（至少在英國境內），似乎「Virgin Media 兒童安全模式」會阻止 Firestone 存取一些運作所需的資料。我不知道原因，但禁用該模式似乎可以解決問題。 </p><p>Web Safe 也出現過類似的問題，為 static.zerotoheroes.com 增加例外（白名單）似乎可以解決問題。 </p>"
+                },
+                "truncated-logs": {
+                    "body": "<p>如果應用程式已運行一段時間，在玩了幾局遊戲後突然停止，則可能是爐石戰記日誌停止生成。 </p><p>請依照以下步驟操作：</p><ul><li>關掉爐石戰記</li><li>前往爐石戰記安裝資料夾，找到 <code>Hearthstone.exe</code> 檔案</li><li>檢查此資料夾中是否存在 <code>client.config</code> 檔案</ul><li>如果沒有，請建立一個</li></ul></li><li>將 <code>client.config</code> 檔案的內容替換為以下內容：<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>重啟爐石戰記</li></ul><p>如果完成這些步驟後遊戲仍然卡住，則說明出現了問題，請點擊應用主視窗右上角的按鈕回報錯誤🙂️</p>"
+                },
+                "no-cards": {
+                    "body": "<ul><li>請檢查您是否可以從 Chrome 瀏覽器存取 <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</a></li><li>如果無法訪問，則表示您的路由器/ISP/VPN有問題，導致無法存取 AWS。 </li>家長監護也是造成此問題的已知原因之一。 <ul><li>防毒軟體有時會阻止訪問，請嘗試將其關閉</li><li><strong>⚠️</strong>：最近這似乎是導致問題的一個更普遍的原因，因此請檢查您的家長控制設定（也請諮詢您的網路服務供應商），並將 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> and <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名單</li></ul></li><li>如果以上方法都無效，請發送電子郵件至信箱 <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>"
+                }
+            }
         }
     },
     "archetype": {
