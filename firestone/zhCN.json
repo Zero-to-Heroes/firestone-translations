@@ -1069,7 +1069,8 @@
                 "export-deck-picture-tooltip": "将套牌列表以图片形式复制到剪贴板",
                 "export-deck-picture-failed": "截图失败",
                 "export-deck-picture-still-working": "仍在处理中...",
-                "export-deck-picture-working": "正在截取高分辨率截图..."
+                "export-deck-picture-working": "正在截取高分辨率截图...",
+                "export-deck-picture-copied-tooltip": "现在可以将其粘贴到你常用的社交网络了"
             },
             "deck-recap": {
                 "overall-stats-header": "数据总览",
@@ -2194,7 +2195,8 @@
             "cant-subscribe-tooltip": "您不能在已有激活方案的情况下订阅其他方案。请取消当前方案并等待其到期。",
             "override-checkbox-label": "无论如何让我继续订阅",
             "override-confirmation": "我已了解：如果我完成此订阅流程，我将失去当前的订阅",
-            "login-to-subscribe": "登录订阅"
+            "login-to-subscribe": "登录订阅",
+            "third-party-auth-tools-unsupported": "高级会员需要通过 Firestone 官方订阅。第三方“授权修复”或解锁工具不受支持且不安全——它们通常会要求管理员权限，并修改 hosts 文件或防火墙规则。请将其移除，并通过官方高级会员页面订阅。"
         },
         "communities": {
             "join": {
@@ -3079,7 +3081,10 @@
                 "mulligan-impact-yours-tooltip": "起手调度保留此卡牌对你胜率的影响程度，基于你的对局。",
                 "deck-mulligan-filter-stats-source-tooltip": "显示每张卡的保留率和换牌影响。点击更改。",
                 "sample-size-tooltip-both": "先是社区对局，然后是你自己的使用此套牌的对局，其中包括每张牌的换牌数据",
-                "sample-size-both": "{{community}} 社区 / {{personal}} 个人"
+                "sample-size-both": "{{community}} 社区 / {{personal}} 个人",
+                "personal-min-games-warning-never": "此浮窗已禁用个人统计，因此将继续显示社区数据。可前往“设置 → 记牌器 →起手调度”更改此设置。",
+                "personal-min-games-warning": "你的统计需要使用这套牌进行 {{threshold}} 场对局（当前为 {{current}} 场）。在达到要求前，此浮窗将继续显示社区数据。可前往“设置 → 套牌追踪器 → 换牌”更改此设置。",
+                "sample-size-tooltip-personal": "你使用这套牌进行且包含逐卡换牌数据的对局数量"
             },
             "lobby": {
                 "close-button-tooltip": "禁用套牌概览。您可以在设置中重新激活它",
@@ -3552,12 +3557,19 @@
                     "choose-one-gift-restriction": "抉择随从只能获得双重幻象、不断复制、镀金随从和吼声回荡。",
                     "deathrattle-stats-restriction": "除锋锐之剑和死亡之拥外，亡语随从不会获得能够提供属性值的黑暗之赐。",
                     "lobby-quilboar-naga": "有野猪人或纳迦的对局中不会提供",
-                    "requires-end-of-turn": "只能提供给具有回合结束效果的随从"
+                    "requires-end-of-turn": "只能提供给具有回合结束效果的随从",
+                    "stitched-salvager": "不能提供给缝合回收者",
+                    "not-tier-7": "不能提供给7级随从",
+                    "not-venomous-or-poisonous": "不能提供给有烈毒或剧毒的随从",
+                    "charisma-banned-minion": "不能提供给这个随从",
+                    "lobby-dragon": "有龙的对局中不会提供",
+                    "not-highest-trigger-count": "仅当这是你最常触发的成长条件时才提供"
                 },
                 "others": "其它",
                 "turn": "第{{value}}回合",
                 "uses-left": "还剩{{value}}次使用",
-                "has-condition": "这个黑暗之赐有额外条件。将鼠标悬停在此处查看原因，或悬停在随从上查看。"
+                "has-condition": "这个黑暗之赐有额外条件。将鼠标悬停在此处查看原因，或悬停在随从上查看。",
+                "guaranteed-disabled-tooltip": "从第 {{value}} 回合起，提供的随从中有一个会是你最常见的类型"
             }
         },
         "post-match-stats": {
@@ -4202,7 +4214,8 @@
                 "show-hero-power-in-board-zone": "在战场区域显示英雄技能",
                 "show-hero-power-in-board-zone-tooltip": "在“战场”区域显示玩家的英雄技能。这有助于显示动态卡池和一些高亮效果。",
                 "play-order-title": "打出顺序",
-                "show-flavor-text-on-hover": "悬停时显示风味趣文"
+                "show-flavor-text-on-hover": "悬停时显示风味趣文",
+                "show-flavor-text-on-hover-tooltip": "将鼠标悬停在游戏内记牌器中的卡牌上时，在通知区域显示其趣味描述"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -4608,7 +4621,9 @@
                 "keep-after-mulligan-tooltip": "确认后仍显示换牌指南，方便查看抽到的卡牌。可设置立即隐藏、几秒钟后隐藏，或直到你手动关闭它。",
                 "personal-min-games-never": "从不（浮窗中隐藏你的个人数据）",
                 "personal-min-games-label": "显示你的起手换牌数据，局数达到",
-                "sync-past-games-label": "同步过去的对局"
+                "sync-past-games-label": "同步过去的对局",
+                "personal-min-games-tooltip": "在游戏内换牌浮窗中，只有当你使用当前套牌达到此对局数后，才会显示你自己的保留率和影响。大厅表格始终显示你选择的数据来源。“从不”：浮窗中从不显示你的统计。“始终”：只要有任何数据就立即显示。",
+                "sync-past-games-tooltip": "高级会员：下载此功能上线前（或重新安装后）你所进行对局的逐卡换牌数据，以便计入“你的”统计。Firestone 运行期间进行的对局始终会保存在本地。免费用户只能使用这些本地对局数据。"
             },
             "lobby": {
                 "show-lobby-tracker": "显示大厅记牌器",
@@ -4863,7 +4878,8 @@
                 "counter-tasty-lobster-buff-tooltip": "显示你的美味龙虾死亡时给予多少攻击力/生命值",
                 "dark-gift-overlay-label": "黑暗之赐浮窗",
                 "dark-gift-overlay-tooltip": "当鼠标悬停在黑暗发现按钮上时，显示可能的黑暗发现随从和黑暗之赐",
-                "hide-battle-odds-until-mouseover-label": "鼠标悬停时才显示胜率"
+                "hide-battle-odds-until-mouseover-label": "鼠标悬停时才显示胜率",
+                "hide-battle-odds-until-mouseover-tooltip": "启用后，屏幕顶部会保留一个小型战斗胜率横幅；将鼠标移到其上时，会显示完整的胜／平／负组件"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -5078,6 +5094,472 @@
             "meta": "环境",
             "decks": "套牌",
             "description": "免费查看任何分段区间的职业、卡牌和套牌数据"
+        },
+        "auth": {
+            "callback": {
+                "returning": "正在返回 Firestone 应用……",
+                "fallback-html": "如果没有任何反应，请<a class=\"open-app-link\" href=\"{{url}}\">单击此处打开 Firestone</a>。",
+                "please-wait": "正在验证你的账户，请稍候",
+                "signing-in": "正在登录……",
+                "success": "成功！",
+                "failed": "⚠️ Sign in failed",
+                "hint": "浏览器可能会询问是否打开 Firestone 应用——请选择“允许”或“打开”。",
+                "try-again": "重试"
+            },
+            "privacy-html": "登录即表示你同意我们的<a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/tos.md\" target=\"_blank\" rel=\"noopener noreferrer\">隐私政策</a>",
+            "subtitle": "登录以在多台设备之间同步数据",
+            "coming-soon": "即将推出",
+            "continue-with-battlenet": "使用 Battle.net 继续",
+            "continue-with-google": "使用 Google 继续",
+            "continue-with-overwolf": "使用 Overwolf 继续",
+            "errors": {
+                "cancelled": "身份验证已取消或被拒绝。",
+                "generic": "出现错误，请重试。",
+                "no-code": "未收到授权代码。",
+                "invalid-response": "身份验证响应无效。",
+                "invalid-state": "状态参数无效，请重新登录。",
+                "missing-verifier": "缺少 PKCE 代码验证器，请重新登录。",
+                "failed": "无法完成登录，请重试。"
+            }
+        },
+        "faq": {
+            "images": {
+                "elevated-column": "勾选“已提升”的任务管理器列选择器",
+                "grant-permissions": "已授予所有权限的 Windows 兼容性设置",
+                "run-as-admin": "已启用“以管理员身份运行”的 Windows 快捷方式属性",
+                "russia-firewall-3": "为 Overwolf 阻止 Cloudflare IP 的 Windows 防火墙规则",
+                "reset-widgets": "用于重置所有浮窗组件位置的设置按钮",
+                "firestone-elevated": "任务管理器中显示 Firestone 是否以管理员身份运行",
+                "force-d3d11": "带有 -force-d3d11 参数的 Battle.net 启动选项",
+                "russia-firewall-1": "针对 Overwolf 的 Windows 防火墙规则",
+                "russia-firewall-2": "Windows 防火墙规则的作用域",
+                "task-manager-columns": "任务管理器“详细信息”选项卡中的“选择列”菜单"
+            },
+            "sections": {
+                "game-is-crashing": {
+                    "title": "游戏崩溃",
+                    "body": "<ul><li>参见<a href=\"https://us.forums.blizzard.com/en/hearthstone/t/pc-crash-every-game-with-possible-solution/141218\" target=\"_blank\" rel=\"noopener noreferrer\">这个暴雪论坛帖子</a>。你需要添加 <code>-force-d3d11</code> 参数，如此截图所示：</li><li>RivaTuner／MSI AfterBurner 可能会引发问题。参见<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000177860-overwolf-and-conflicts-with-rivatuner\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 与 RivaTuner 的冲突</a></li><li>如果使用 AMD，可尝试禁用 AMD Fluid Motion Frames 2</li><li>有用户报告称，游戏在窗口模式下会崩溃，而全屏模式下不会。</li><li>Overwolf 尚不支持 ARM 处理器，在 ARM 处理器设备上运行可能导致游戏崩溃</li></ul>"
+                },
+                "game-is-slow": {
+                    "title": "游戏运行缓慢",
+                    "body": "<ul><li>如果运行 Firestone 时游戏出现卡顿／动画不流畅，可尝试限制游戏帧率。<ul><li>编辑 <code>%localappdata%\\Blizzard\\Hearthstone</code> 中的 <code>options.txt</code> 文件，将 <code>targetframerate=60</code> 修改或添加为更低的值（我使用 60，其他人使用 140 也取得了不错效果）</li></ul></li><li>部分用户发现，在显卡设置中关闭 G-Sync 会有所帮助</li><li><blockquote><p>我使用 AMD 显卡，在《炉石传说》中关闭 AMD FreeSync 后就不再卡顿了。</p></blockquote></li></ul>"
+                },
+                "incompatible-software": {
+                    "body": "<p>如果正在运行以下任一程序，请将其关闭，再关闭《炉石传说》、重启 Overwolf，然后重试：</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>",
+                    "title": "不兼容的软件"
+                },
+                "high-resource-usage": {
+                    "title": "资源占用过高",
+                    "body": "<ul><li>部分用户报告 GPU 占用率很高，原因是 Outplayed 应用。如遇此情况，请尝试停用该应用</li></ul>"
+                },
+                "no-cards": {
+                    "title": "严重错误：无法加载卡牌数据库",
+                    "body": "<ul><li>检查能否使用 Chrome 访问 <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</a></li><li>如果不能，说明路由器／网络服务提供商／VPN 可能阻止了对 AWS 的访问。家长控制也可能导致此问题。<ul><li>杀毒软件有时会阻止访问，请尝试将其关闭</li><li><strong>重要</strong>：近期此原因似乎更为常见，请检查家长控制设置（包括网络服务提供商处的设置），并将 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> 和 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名单</li></ul></li><li>如果仍无帮助，请发送邮件至 <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>"
+                },
+                "memory-reading-error": {
+                    "title": "内存读取错误／以管理员身份运行",
+                    "intro": "<p>当应用没有权限访问游戏客户端内存时，会出现“内存读取”错误。通常是权限问题所致（因此以管理员身份运行一般可以解决）。</p><p>以下是以管理员身份运行所需步骤的详细说明：</p>",
+                    "admin-steps": "<ul><li>关闭《炉石传说》</li><li>关闭 Overwolf</li><li>将 Firestone 和／或 Overwolf 快捷方式设置为“以管理员身份运行”<ul><li>Overwolf.exe 和 OverwolfLauncher.exe 应以管理员身份运行</li><li>也可以启用“为所有用户更改设置”</li></ul></li></ul>",
+                    "after-admin": "<ul><li>重新启动 Overwolf（部分用户需要重启整台电脑）</li><li>然后重新启动《炉石传说》</li><li>如果仍然无效（即使<strong>完整重启电脑</strong>后），请检查《炉石传说》本身是否以管理员身份运行。如果是，请尝试以普通权限运行。</li><li>如果问题依旧，可尝试在该界面授予所有权限：</li></ul>"
+                },
+                "no-cards-other": {
+                    "body": "<ul><li>有用户通过任务管理器强制结束 Overwolf、关闭《炉石传说》并重新启动 Overwolf 后解决了问题</li><li>以管理员身份启动应用也可能解决此问题</li></ul>",
+                    "title": "其他可尝试的方法"
+                },
+                "memory-reading-other": {
+                    "title": "出现“内存读取”错误时的其他尝试",
+                    "body": "<ul><li>也可以尝试在命令提示符中运行 <code>sfc /scannow</code>，至少已有 2 名玩家通过此方法解决问题</li><li>“手动结束所有与《炉石传说》、Battle.net、Overwolf、Firestone 等相关的进程，然后重新启动《炉石传说》和 Firestone，似乎解决了问题。仅从系统托盘正常重启《炉石传说》和 Overwolf／Firestone 并没有效果。”</li><li>有用户通过将 Overwolf 安装在与《炉石传说》相同的父目录下（例如 <code>D:\\Blizzard\\HS\\Hearthstone</code> 和 <code>D:\\Blizzard\\HS\\Overwolf</code>）解决了问题，也值得一试</li></ul>"
+                },
+                "check-if-running-as-admin": {
+                    "step-1": "<ol><li>打开任务管理器（Ctrl + Shift + Esc），然后前往“详细信息”选项卡。右键单击标题栏，再单击“选择列”</li></ol>",
+                    "step-2": "<ol start=\"2\"><li>确保已勾选“已提升”列</li></ol>",
+                    "title": "检查应用是否以管理员身份运行",
+                    "step-3": "<ol start=\"3\"><li>在列表中找到 Firestone。如果 Firestone 以管理员身份运行，对应的“已提升”列应显示“是”（截图中的我并非如此）</li></ol>"
+                },
+                "truncated-logs": {
+                    "title": "应用卡住／日志停止更新",
+                    "body": "\"<p>如果应用起初可以正常工作，但在几场对局后突然停止，可能是《炉石传说》不再生成日志。</p><p>请执行以下步骤：</p><ul><li>关闭《炉石传说》</li><li>前往包含 <code>Hearthstone.exe</code> 的游戏安装目录</li><li>检查该目录中是否存在 <code>client.config</code> 文件<ul><li>如果没有，请新建一个</li></ul></li><li>将 <code>client.config</code> 的内容替换为：<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>重新启动《炉石传说》</li></ul><p>如果之后游戏仍然卡住，则可能存在其他问题。请使用应用主窗口右上角的按钮提交错误报告 :)</p>\""
+                },
+                "truncated-logs-other": {
+                    "title": "如果此方法无效",
+                    "body": "<p>卸载后重新安装可能会解决问题：</p><blockquote><p>我删除了你提供的 %localappdata%\\Blizzard\\Hearthstone 地址文件，也删除了《炉石传说》的所有缓存文件，然后重新安装游戏，问题就解决了。</p></blockquote><p>你是否还安装了其他会与《炉石传说》交互的程序？一位中国用户表示：</p><blockquote><p>我发现问题了，我用一个中国特有的启动器启动游戏，然后炉石传说的文件夹关于日志的文件就会消失。不用它启动就不会有问题。</p></blockquote>"
+                },
+                "app-doesnt-update": {
+                    "title": "应用无法更新",
+                    "body": "<ol><li>退出 Overwolf</li><li>打开文件夹 C:\\Users\\&lt;你的用户名&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>删除名为“lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob”的文件夹</li><li>打开文件夹 C:\\Users\\&lt;你的用户名&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>删除名为“lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob”的文件夹</li><li>启动 Overwolf</li><li>再次尝试安装应用</li></ol>"
+                },
+                "dns": {
+                    "title": "DNS",
+                    "body": "<p>另一位遇到相同问题的用户表示：</p><blockquote><p>你列出的问题都不存在，但我的伴侣找出了原因。如果其他方法都无效，希望这能帮助遇到相同问题的人。他让我将网络适配器的 DNS 设置改为 Google DNS［首选 8.8.8.8，备用 8.8.4.4］。</p></blockquote><p>详细步骤：</p><ol><li>控制面板\\网络和 Internet\\网络连接</li><li>右键单击你使用的连接类型</li><li>在“此连接使用下列项目”中找到“Internet 协议版本 4 (TCP/IPv4)”</li><li>单击“属性”</li><li>选择“使用下面的 DNS 服务器地址”</li><li>设为 8.8.8.8（Google）</li><li>关闭并重新打开 Firestone。</li></ol>"
+                },
+                "other-things-to-try": {
+                    "title": "其他可尝试的方法"
+                },
+                "virgin-media-web-safe": {
+                    "title": "Virgin Media、网页安全",
+                    "body": "<p>如果你使用 Virgin Media 连接网络（至少在英国是如此），“Virgin Media 儿童安全”可能会阻止访问 Firestone 运行所需的部分数据。原因不明，但停用它似乎可以解决问题。</p><p>Web Safe 也曾引发类似问题；为 static.zerotoheroes.com 添加例外似乎有效。</p>"
+                },
+                "hard-kill-apps": {
+                    "title": "强制结束应用",
+                    "body": "<blockquote><p>你好，我从任务管理器关闭了 Firestone 和 Overwolf，再次打开后一切恢复正常。仅重启 Firestone 无法解决问题。</p></blockquote>"
+                },
+                "connectivity-issues-global": {
+                    "title": "连接问题（全球）",
+                    "body": "<ul><li>尝试禁用杀毒软件／防火墙／VPN</li><li>如果知道如何操作，请将以下域名加入白名单：<ul><li>zerotoheroes.com</li><li>firestoneapp.com</li><li>amazonaws.com</li><li>overwolf.com</li></ul></li><li>重新安装 Firestone 有时也会有所帮助</li></ul>"
+                },
+                "connectivity-issues-russia": {
+                    "title": "连接问题（俄罗斯）",
+                    "body": "<p><strong>如果你从俄罗斯连接，请尝试以下方法</strong>。以下是一些用户在其设备上解决连接问题的方法。</p><blockquote><p>卸载并重新安装 Firestone 对我有效</p><p>将其加入 GoodbyeDPI 的黑名单后问题得到解决：<a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a></p><p>上述两种方法均专门适用于 GoodbyeDPI 用户。若要让 Google Chrome 正常工作，需要前往 chrome://flags 并禁用三个特定标志：</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>有些用户似乎只在访问 cloudflare-ech.com 时遇到问题（几天前被俄罗斯的部分服务提供商封锁），因此将其加入黑名单 txt 文件即可解决。我也会把 static.firestoneapp.com 加入该列表，不过我这里并非必需。</p><p>首先，我在 cmd 中多次 ping Cloudflare 以获取 IP。然后创建 Windows 防火墙规则，仅阻止 Overwolf.exe 连接这些 IP。之后可能需要重新安装 Firestone：</p></blockquote>",
+                    "more": "<blockquote><p>在电脑上开启 VPN，下载《炉石传说》，删除 Overwolf 中的应用后重新下载，再关闭 VPN，一切即可恢复正常。每次进入游戏前都要执行这些操作。适用于俄罗斯。</p><p>问题很可能源于俄罗斯对 cloudflare-ech.com 的封锁。我和一些人使用一款类似 GoodbyeDPI 的应用绕过 Discord 封锁，将其升级到 1.5.2 以上版本后解决了问题，因为该版本已将 cloudflare-ech.com 加入黑名单。应用地址：<a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>。该应用在俄罗斯较为流行，升级到 1.5.2 以上版本应该能帮助部分用户。</p></blockquote>"
+                },
+                "app-isnt-showing": {
+                    "title": "应用未显示",
+                    "body": "<ul><li>请确保在启动《炉石传说》<strong>之前</strong>已运行 Overwolf</li><li>检查 Overwolf 浮窗是否已启用：<a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 游戏设置</a></li><li>以管理员身份运行 Firestone（之后需要关闭并重新打开 Overwolf）。参见<a href=\"/faq#memory-reading-error\">内存读取错误／以管理员身份运行</a></li><li>检查能否使用 <strong>Chrome</strong> 访问 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a>。如果不能，说明路由器／网络服务提供商／VPN 可能阻止了对 AWS 的访问。家长控制也可能导致此问题。<ul><li><strong>重要</strong>：近期此原因似乎更为常见，请检查家长控制设置（包括网络服务提供商处的设置），并将 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> 和 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名单</li><li>另请参阅本页底部的<a href=\"/faq#connectivity-issues-global\">连接问题</a>章节</li></ul></li><li>DirectX 12 可能会干扰浮窗渲染。尝试禁用它，看看情况是否改善（TODO：需要详细说明）</li><li>如果所有方法都无效，而且游戏安装在 C:\\Program Files 或 C:\\Program Files (x86) 下，请尝试将游戏移至其他文件夹。这些目录受到系统保护，应用读取游戏信息时可能因此出现问题</li></ul>"
+                },
+                "general-checklist": {
+                    "body": "<ul><li>请确保在启动《炉石传说》<strong>之前</strong>已运行 Overwolf</li><li>（尤其是在新补丁发布后）关闭《炉石传说》和 Firestone，然后依次重新启动 Firestone 和《炉石传说》。这会强制更新应用（游戏运行时更新有时无法正常完成）</li><li>检查能否从桌面启动 Firestone（即《炉石传说》未运行时）。如果没有任何反应：<ul><li>请查看下方其他章节（尤其是本页底部有关<a href=\"/faq#connectivity-issues-global\">连接问题</a>的章节）</li><li>如果仍无帮助，请创建日志压缩包并手动发送给我（例如通过 Discord）。参见<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">如何获取 Overwolf 日志</a></li></ul></li><li>在《炉石传说》运行时，检查游戏安装目录的 <code>Logs/Hearthstone_XXX</code> 下是否有 <code>Decks.log</code> 文件。如果没有，请重启游戏</li><li>尝试禁用杀毒软件／防火墙，然后重启 Firestone</li><li>如果 Firestone 闪烁，可能是联想的新应用 LegionZone 所致。尝试停用它，看看问题是否解决。</li><li>检查游戏内时钟显示的时间是否正确。系统时间配置不当时可能出现此问题，通常是因为关闭了“自动调整夏令时”选项</li></ul>",
+                    "title": "常规检查清单"
+                },
+                "mainland-china": {
+                    "body": "<ul><li><p>我听说，如果你同时安装了“中国大陆”客户端和“世界其他地区”客户端，Firestone 只能在其中一个客户端上运行。</p><ul><li>登录后前往“我的收藏”界面，似乎可以解决此问题</li></ul></li></ul>",
+                    "title": "对于中国大陆用户"
+                },
+                "widgets-not-showing": {
+                    "title": "部分特定组件未显示",
+                    "body": "<p>如果看不到某些组件（例如看不到自己的记牌器，但能看到对手手牌中各卡牌的抽取回合），它们可能已被移到屏幕之外。可在设置中使用此按钮重置（所有）组件的位置：</p>"
+                },
+                "images-are-not-showing": {
+                    "title": "图片未显示",
+                    "body": "<ul><li>检查能否<strong>使用 Google Chrome</strong> 显示此图片：<a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>如果不能，说明有程序阻止访问 Firestone 内容。通常是本机的防火墙或杀毒软件，有时也可能来自网络服务提供商。参见<a href=\"/faq#other-things-to-try\">其他可尝试的方法</a></li></ul></li><li>查看本页底部的<a href=\"/faq#connectivity-issues-global\">连接问题</a>章节</li><li>如果能在浏览器中显示，但不能在应用中显示，说明有程序阻止应用访问此内容。<ul><li>尝试禁用防火墙和杀毒软件<blockquote><p>我找到防火墙设置，将所有与“overwolf”相关的设置改为允许后，问题就解决了。</p></blockquote></li><li>如果仍无帮助，可能还有其他安全限制在起作用，但具体情况因电脑而异<ul><li>如果你成功解决了问题，请给我留言，我会把你的方法添加为供其他用户参考的解决方案 :)</li></ul></li><li>重新安装 Firestone 有时也会有所帮助</li></ul></li></ul>"
+                }
+            },
+            "nav-label": "常见问题",
+            "page-title": "常见问题与故障排除",
+            "page-subtitle": "Firestone 常见问题及解决方法。",
+            "permalink-aria": "此章节的链接",
+            "toc-title": "本页内容"
+        },
+        "meta": {
+            "title": "Firestone - 炉石传说数据与环境洞察"
+        },
+        "nav": {
+            "download-alt": "下载 Firestone",
+            "home": "Firestone 首页",
+            "premium": "高级会员",
+            "language": "语言"
+        },
+        "redirect": {
+            "in-game-replay": "正在跳转至 Firestone……",
+            "partner": "正在跳转……"
+        },
+        "monitoring": {
+            "simulator": {
+                "document-title": "酒馆战棋模拟器准确率 — Firestone",
+                "page-title": "酒馆战棋模拟器准确率",
+                "legend-good": "准确率 > 0.5：良好",
+                "legend-needs-work": "低于此值：有待改进",
+                "legend-very-good": "准确率 > 0.8：非常好",
+                "load-error": "无法加载模拟器准确率数据。",
+                "loading": "正在加载准确率数据……",
+                "chart-label": "准确率",
+                "empty-range": "所选日期范围内没有数据。",
+                "from": "从",
+                "resolution-daily": "当前显示每日数据。",
+                "resolution-monthly": "当前显示每月汇总（所选范围超过 180 天）。",
+                "resolution-weekly": "当前显示每周汇总（所选范围超过 45 天）。",
+                "to": "至",
+                "tooltip-failures": "准确率：{{accuracy}}",
+                "tooltip-games": "对局数：{{games}}",
+                "tooltip-version": "版本：{{version}}",
+                "tooltip-accuracy": "准确率：{{accuracy}}",
+                "page-lead": "跟踪酒馆战棋战斗模拟器随时间推移与真实对局结果相符的频率。"
+            }
+        },
+        "premium": {
+            "document-title": "Firestone 高级会员 — www.firestoneapp.com",
+            "cta": {
+                "download": "下载 Firestone",
+                "get": "获取 Firestone"
+            },
+            "hero": {
+                "note": "订阅需在 Firestone 应用内购买（高级会员选项卡或心形图标）。价格会在应用内结账时显示。",
+                "title": "Firestone 高级会员",
+                "subtitle": "解锁完整的辅助体验：各界面提供更深入的数据、无限使用游戏内浮窗、移除广告，以及更多助你快速提升的功能。"
+            },
+            "summary": {
+                "title": "你将获得",
+                "unlimited-overlays": "无限使用传统对战模式的发现与换牌浮窗，以及酒馆战棋的选择与数据浮窗（免费用户有每日或每周次数限制）",
+                "battlegrounds": "酒馆战棋英雄选择浮窗、任务与奖励数据、提示、自动高亮、大厅洞察及赛后明细",
+                "support": "支持 Firestone 持续开发",
+                "ad-free": "移除应用内广告",
+                "meta-analytics": "完整的环境套牌与套牌类型分析、卡牌级明细，以及应用内内容更丰富的套牌页面"
+            },
+            "free-tier": {
+                "title": "免费版 vs 高级会员",
+                "lead": "Firestone 可永久免费使用。许多浮窗提供每日或每周免费次数；高级会员可无限使用这些指南。",
+                "arena": "竞技模式：发现每日 {{discovers}} 次；换牌每日 {{mulligan}} 次；选牌浮窗每周 {{draft}} 次",
+                "constructed": "传统对战：发现浮窗每日 {{discovers}} 次；换牌指南每日 {{mulligan}} 次",
+                "unlimited": "高级会员会移除上述浮窗的次数限制，让你在关键时刻始终有数据可用。",
+                "battlegrounds": "酒馆战棋：英雄选择浮窗每日 {{heroSelection}} 次；任务每日 {{quests}} 次；饰品每日 {{trinkets}} 次；时空扭曲每日 {{timewarped}} 次"
+            },
+            "subscribe": {
+                "step-1": "安装并打开 Firestone（Overwolf）。",
+                "step-2": "出现提示时，使用 Overwolf 账户登录。",
+                "step-3": "通过心形图标或应用内的高级会员入口打开高级会员页面，然后选择订阅方案。",
+                "title": "如何订阅",
+                "step-4": "可随时通过 Tebex 付款历史管理或取消订阅——相关链接会显示在高级会员界面中。"
+            },
+            "carousel": {
+                "gallery": "媒体图库，共{{count}}项",
+                "roledescription": "轮播图",
+                "hint": "滑动或使用箭头浏览",
+                "next": "下一项",
+                "previous": "上一项"
+            },
+            "lightbox": {
+                "close": "关闭全尺寸图片",
+                "view-full-size": "查看全尺寸图片：{{alt}}"
+            },
+            "sections": {
+                "battlegrounds": {
+                    "items": {
+                        "example-boards": {
+                            "screenshots": {
+                                "comp-details": {
+                                    "alt": "流派详情中的示例场面",
+                                    "caption": "海盗手速流派的示例场面"
+                                }
+                            },
+                            "text": "流派详情中的示例场面"
+                        },
+                        "hero-selection": {
+                            "text": "在初始选择的关键阶段显示含评级和数据的英雄选择浮窗",
+                            "screenshots": {
+                                "overlay": {
+                                    "caption": "含评级和数据的英雄选择浮窗",
+                                    "alt": "酒馆战棋英雄选择浮窗，在选择阶段显示英雄选项、评级和数据"
+                                }
+                            }
+                        },
+                        "lobby-overview": {
+                            "screenshots": {
+                                "overview": {
+                                    "alt": "大厅中所有英雄的快速概览",
+                                    "caption": "大厅中所有英雄的快速概览"
+                                }
+                            },
+                            "text": "在大厅中按 Tab 快速查看所有英雄概览"
+                        },
+                        "trinket-stats": {
+                            "text": "浮窗中的饰品数据"
+                        },
+                        "quest-rewards": {
+                            "text": "针对你的英雄和 MMR 的任务完成度与奖励排名参考",
+                            "screenshots": {
+                                "stats": {
+                                    "alt": "浮窗中的酒馆战棋任务与奖励数据",
+                                    "caption": "任务完成度与奖励数据"
+                                }
+                            }
+                        },
+                        "fight-by-fight": {
+                            "screenshots": {
+                                "chart": {
+                                    "caption": "逐场战斗胜率走势预测图",
+                                    "alt": "酒馆战棋逐场战斗胜率走势预测图"
+                                }
+                            },
+                            "text": "逐场战斗胜率走势预测图"
+                        },
+                        "hero-page-extras": {
+                            "text": "英雄页面附加内容：评级摘要及该英雄的近期回放",
+                            "screenshots": {
+                                "hero-stats": {
+                                    "caption": "英雄页面附加内容：近期回放",
+                                    "alt": "酒馆战棋英雄页面附加内容，显示该英雄的近期回放"
+                                }
+                            }
+                        },
+                        "lobby-history": {
+                            "screenshots": {
+                                "scoreboard": {
+                                    "alt": "酒馆战棋大厅历史，显示你与大厅中其他玩家的胜负记录",
+                                    "caption": "与大厅中其他玩家的胜负记录"
+                                }
+                            },
+                            "text": "与大厅中其他玩家的胜负记录"
+                        },
+                        "post-match-stats": {
+                            "screenshots": {
+                                "stats": {
+                                    "caption": "丰富的游戏内与赛后数据",
+                                    "alt": "酒馆战棋赛后数据，显示丰富的游戏内与赛后数据"
+                                }
+                            },
+                            "text": "丰富的游戏内与赛后数据"
+                        },
+                        "past-match-stats": {
+                            "screenshots": {
+                                "replays": {
+                                    "alt": "酒馆战棋回放数据，显示以往对局的详细复盘数据",
+                                    "caption": "以往对局的详细复盘数据"
+                                }
+                            },
+                            "text": "“回放”中以往对局的详细复盘数据"
+                        },
+                        "auto-highlight": {
+                            "text": "根据你的英雄自动高亮酒馆中的随从"
+                        },
+                        "remote-sim": {
+                            "text": "本地模拟对电脑负担较重时，可选择使用远程战斗模拟"
+                        }
+                    },
+                    "title": "酒馆战棋"
+                },
+                "constructed": {
+                    "title": "传统对战",
+                    "items": {
+                        "meta-by-rank": {
+                            "screenshots": {
+                                "decks": {
+                                    "alt": "传统对战模式环境数据，显示传说等级的当前环境套牌",
+                                    "caption": "传说等级的当前环境套牌"
+                                },
+                                "archetypes": {
+                                    "alt": "传统对战模式环境数据，显示竞技玩家的当前环境套牌类型",
+                                    "caption": "天梯等级区间的当前环境套牌类型"
+                                },
+                                "card-stats": {
+                                    "alt": "传统对战模式环境数据，显示兆示贼套牌类型的详细卡牌数据",
+                                    "caption": "套牌类型层级的详细卡牌数据"
+                                }
+                            },
+                            "text": "按等级查看当前环境：套牌、套牌类型及详细的逐卡数据"
+                        },
+                        "mulligan-overlay": {
+                            "screenshots": {
+                                "guide": {
+                                    "alt": "传统对战模式换牌指南浮窗",
+                                    "caption": "无限使用换牌指南浮窗"
+                                }
+                            },
+                            "text": "无限使用换牌指南浮窗"
+                        },
+                        "deck-overview": {
+                            "screenshots": {
+                                "details": {
+                                    "alt": "传统对战模式套牌概览，显示该套牌的近期回放",
+                                    "caption": "套牌概览与近期回放"
+                                }
+                            },
+                            "text": "套牌页面中的套牌概览与近期回放"
+                        },
+                        "lobby-mulligan": {
+                            "text": "排队对局前可在大厅中使用换牌指南",
+                            "screenshots": {
+                                "lobby": {
+                                    "alt": "传统对战模式换牌指南，可在排队对局前从大厅访问",
+                                    "caption": "可在大厅中使用的换牌指南"
+                                }
+                            }
+                        },
+                        "discover-overlay": {
+                            "text": "无限使用发现浮窗数据"
+                        }
+                    }
+                },
+                "arena": {
+                    "items": {
+                        "card-pick": {
+                            "screenshots": {
+                                "overlay": {
+                                    "alt": "浮窗中的卡牌选择数据",
+                                    "caption": "浮窗中的卡牌选择数据"
+                                }
+                            },
+                            "text": "浮窗中的卡牌选择数据"
+                        },
+                        "class-pick": {
+                            "screenshots": {
+                                "overlay": {
+                                    "alt": "无限使用浮窗中的职业选择数据",
+                                    "caption": "无限使用浮窗中的职业选择数据"
+                                }
+                            },
+                            "text": "无限使用浮窗中的职业选择数据"
+                        },
+                        "mulligan-overlay": {
+                            "text": "无限使用换牌指南浮窗",
+                            "screenshots": {
+                                "guide": {
+                                    "alt": "竞技模式换牌指南浮窗",
+                                    "caption": "无限使用换牌指南浮窗"
+                                }
+                            }
+                        },
+                        "runs-insights": {
+                            "screenshots": {
+                                "overview": {
+                                    "alt": "你的竞技模式轮次的更多洞察",
+                                    "caption": "你的竞技模式轮次的更多洞察"
+                                }
+                            },
+                            "text": "你的竞技模式轮次的更多洞察"
+                        }
+                    },
+                    "title": "竞技模式"
+                },
+                "collection": {
+                    "items": {
+                        "per-set-stats": {
+                            "screenshots": {
+                                "global": {
+                                    "alt": "详细的全局收藏数据",
+                                    "caption": "详细的全局收藏数据"
+                                },
+                                "per-set": {
+                                    "alt": "详细的各系列收藏数据",
+                                    "caption": "详细的各系列收藏数据"
+                                }
+                            },
+                            "text": "详细的各系列收藏数据"
+                        },
+                        "pack-history": {
+                            "screenshots": {
+                                "history": {
+                                    "alt": "按时间排序的卡牌与开卡包历史",
+                                    "caption": "按时间排序的卡牌与开卡包历史"
+                                }
+                            },
+                            "text": "按时间排序的卡牌与开卡包历史"
+                        }
+                    },
+                    "title": "收藏"
+                },
+                "general": {
+                    "items": {
+                        "discord-presence": {
+                            "screenshots": {
+                                "status": {
+                                    "caption": "支持自定义状态占位符的 Discord 丰富显示状态",
+                                    "alt": "支持自定义状态占位符的 Discord 丰富显示状态"
+                                }
+                            },
+                            "text": "支持自定义状态占位符的 Discord 丰富显示状态"
+                        },
+                        "in-game-replays": {
+                            "text": "内容丰富的游戏内回放",
+                            "screenshots": {
+                                "replay": {
+                                    "alt": "内容丰富的游戏内回放，保留游戏原有音效与动画",
+                                    "caption": "内容丰富的游戏内回放，保留游戏原有音效与动画"
+                                }
+                            }
+                        }
+                    },
+                    "title": "常规功能与回放"
+                }
+            }
         }
     },
     "twitch": {
