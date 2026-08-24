@@ -2196,7 +2196,8 @@
                 "six-month-coupon-text": "Offre à durée limitée ! Jusqu’à {{endDate}}, économisez {{reduction}} supplémentaires en utilisant ce code lors du paiement :",
                 "six-month": "Facturé tous les 6 mois",
                 "yearly-coupon-text-2": "Pour célébrer le lancement de l’extension {{expansionName}}, obtenez {{reduction}} de réduction supplémentaires en utilisant le code suivant lors du paiement :",
-                "coupon-text": "Pour célébrer le lancement de l’extension {{expansionName}}, obtenez {{reduction}} de réduction supplémentaire sur tous les plans en utilisant le code suivant lors du paiement :"
+                "coupon-text": "Pour célébrer le lancement de l’extension {{expansionName}}, obtenez {{reduction}} de réduction supplémentaire sur tous les plans en utilisant le code suivant lors du paiement :",
+                "six-month-2": "6 mois"
             },
             "cant-subscribe-button": "Abonnement impossible",
             "check-status-online-inactive": "Annulé, mais toujours actif. Voir les détails {{link}}",
@@ -5123,6 +5124,41 @@
             "sections": {
                 "dns": {
                     "body": "<p>De la part d’une autre personne avec le même problème :</p><blockquote><p>Aucun des éléments listés n’est problématique, mais une de mes connaissances a trouvé ce qui bloquait, et je voulais te l’envoyer pour aider les autres personnes avec le même problème si aucune autre solution ne fonctionne. Elle a changé les paramètres DNS de ma carte réseau pour ceux du DNS de Google (principal 8.8.8.8 ; secondaire : 8.8.4.4).</p></blockquote><p>Instructions plus détaillées :</p><ol><li>Panneau de configuration\\Réseau et Internet\\Afficher les connexions réseau</li><li>Clic droit sur le type de connexion utilisé</li><li>Trouvez « Protocole Internet version 4 (TCP/IPv4) » dans le menu « Cette connexion utilise les éléments suivants »</li><li>Cliquez sur Propriétés</li><li>Sélectionnez « Utiliser l’adresse de serveur DNS suivante »</li><li>Rentrer « 8.8.8.8 » (Google)</li><li>Fermez et rouvrez Firestone</li></ol>"
+                },
+                "hard-kill-apps": {
+                    "body": "<blockquote><p>Bonjour, j’ai fermé Firestone et Overwolf depuis le gestionnaire de tâches, et en le rouvrant, tout fonctionnait correctement. Un simple redémarrage de Firestone n’a pas réglé le problème.</p></blockquote>"
+                },
+                "check-if-running-as-admin": {
+                    "step-2": "<ol start=\"2\"><li>Veillez à ce que la colonne Élevé soit cochée</li></ol>",
+                    "step-3": "<ol start=\"3\"><li>Maintenant, naviguez vers l’entrée Firestone dans la liste. Si Firestone a été lancé en tant qu’admin, la colonne Élevé devrait indiquer Oui (ce qui n’est pas le cas dans ma capture d’écran)</li></ol>",
+                    "step-1": "<ol><li>Ouvrez le gestionnaire de tâches (Ctrl + Shift + Échap), puis allez dans l’onglet Détails. Faites un clic droit sur la barre d’en-tête, puis cliquez sur Sélectionner des colonnes</li></ol>"
+                },
+                "app-doesnt-update": {
+                    "body": "<ol><li>Fermez Overwolf</li><li>Ouvrez le dossier C:\\Utilisateurs\\&lt;votre_nom&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>Supprimez le dossier « lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob »</li><li>Ouvrez le dossier C:\\Utilisateurs\\&lt;votre_nom&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>Supprimez le dossier « lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob »</li><li>Lancez Overwolf</li><li>Réessayez d’installer l’application</li></ol>"
+                },
+                "connectivity-issues-russia": {
+                    "body": "<p><strong>Essayez ceci si vous vous connectez depuis la Russie.</strong> Ci-dessous se trouvent quelques manipulations que des Russes ont effectuées sur leurs machines afin de résoudre des problèmes de connexion.</p><blockquote><p>Désinstaller et réinstaller Firestone a fonctionné pour moi</p><p>J’ai résolu le problème en ajoutant à la liste noire dans GoodbyeDPI <a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a></p><p>Ces deux manipulations s’appliquent spécifiquement aux personnes utilisant GoodbyeDPI. Pour que cela fonctionne dans Google Chrome, vous devez aller sur chrome://flags et désactiver trois drapeaux spécifiques :</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>Puisque certaines personnes semblent seulement avoir des problèmes avec cloudflare-ech.com (le site a été banni de certains fournisseurs en Russie il y a quelques jours), l’ajouter au blacklist txt résout le problème. J’ajouterais également static.firestoneapp.com à cette liste, mais ce n’était pas nécessaire dans mon cas.</p><p>D’abord, j’ai envoyé un ping à Cloudflare depuis un invité de commandes cmd quelques fois pour obtenir des adresses IP. Puis j'ai créé une règle pare-feu Windows pour bloquer toutes les connexions des IP récupérées uniquement pour Overwolf.exe. Il peut être nécessaire de réinstaller Firestone par la suite :</p></blockquote>",
+                    "more": "<blockquote><p>Activez le VPN sur votre ordinateur, installez Hearthstone, supprimez votre programme dans Overwolf, téléchargez-le à nouveau, désactivez le VPN et tout devrait fonctionner. Effectuez ces opérations avant chaque lancement du jeu. Valable pour la Russie.</p><p>Le problème venait sûrement du blocage de cloudflare-ech.com en Russie. J’ai résolu ce problème en mettant à jour l’application que moi et quelques personnes utilisons pour outrepasser les blocages de Discord (elle fonctionne de manière similaire à GoodbyeDPI) vers une version supérieure à 1.5.2, où cloudflare-ech.com a été ajouté à la liste noire. L’application : <a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>. Puisque l’application semble être populaire en Russie, la mettre à jour vers une version supérieure à 1.5.2 devrait aider certaines personnes.</p></blockquote>"
+                }
+            }
+        },
+        "auth": {
+            "callback": {
+                "fallback-suffix": "."
+            },
+            "privacy-suffix": " "
+        },
+        "docs": {
+            "pages": {
+                "mods": {
+                    "intro": "<p><strong>ATTENTION :</strong> ajouter des mods à Hearthstone vient à l’encontre des conditions d’utilisation du jeu et pourrait vous faire bannir. Utilisez ces programmes en connaissance de cause.</p><p><strong>ATTENTION :</strong> pour le moment, le gestionnaire de mods pour Firestone n’est disponible que dans la version bêta de l’application. Voir<a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/beta-test.md\" target=\"_blank\" rel=\"noopener noreferrer\">beta-test.md</a></p>"
+                },
+                "twitch": {
+                    "sections": {
+                        "capturing-main-and-battlegrounds": {
+                            "intro": "<p><em>Si streamer votre gameplay est la seule chose qui vous intéresse, vous pouvez probablement ignorer cette section.</em></p><p>Firestone possède deux fenêtres principales qui permettent de montrer vos stats à vos spectateurs et spectatrices : une spécifique à Champs de bataille, qui possède les stats de votre partie en cours, et une avec toutes les stats de vos parties précédentes. Par défaut, la fenêtre principale de Firestone et celle de Champs de bataille ne sont pas des overlays. Ceci signifie que vous pouvez les déplacer en dehors de la zone de jeu, mais aussi qu’elles ne sont pas capturées par le stream.</p><p>Pour les capturer, vous avez deux options :</p><ul><li>les déplacer sur un deuxième écran, et capturer l’écran entier</li><li>activer les deux options « Overlay » montrées ci-dessous. Ceci liera les fenêtres à l’écran de jeu (plus possible donc de les déplacer ailleurs) et permettra à OBS de les capturer automatiquement (changer ces paramètres peut forcer Firestone à redémarrer) :</li></ul>"
+                        }
+                    }
                 }
             }
         }
