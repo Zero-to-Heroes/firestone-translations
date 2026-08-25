@@ -128,7 +128,9 @@
             "hero_skins": "-",
             "echoes_of_the_infinite": "恆龍回響",
             "cataclysm": "浩劫與重生",
-            "violet_hold": "紫羅蘭堡大逃亡"
+            "violet_hold": "紫羅蘭堡大逃亡",
+            "azeroths_most_wanted": "艾澤拉斯頭號要犯",
+            "restoration_of_azeroth": "艾澤拉斯復興"
         },
         "pack": {
             "classic": "經典",
@@ -376,8 +378,8 @@
                 "blurb": "進階會員：下載此功能上線前對局的逐卡調度資料，以便計入你的統計。"
             },
             "bgsShowHeroPowerExtraInfo": {
-                "title": "英雄技能額外資訊",
-                "blurb": "將滑鼠停在英雄技能上時，在卡片提示中顯示額外即時資訊（例如已經進入廚師餅乾鍋中的隨從類型）。"
+                "title": "英雄能力額外資訊",
+                "blurb": "將滑鼠停在英雄能力上時，在卡片提示中顯示額外即時資訊（例如已經進入廚師餅乾鍋中的手下類型）。"
             },
             "modsAutoUpdateMode": {
                 "title": "模組自動更新",
@@ -1024,7 +1026,7 @@
                     "past-20": "過去20天",
                     "current-season": "目前賽季",
                     "today": "今天",
-                    "today-tooltip": "自當地時間凌晨起進行的對戰"
+                    "today-tooltip": "自當地時間凌晨起進行的賽局"
                 },
                 "deck-search": {
                     "placeholder": "尋找牌組",
@@ -1077,7 +1079,14 @@
             },
             "deck-details": {
                 "copy-deck-code-button": "複製牌組代碼",
-                "deck-archived": "牌組已封存，但仍然計入整體數據。如果你希望其數據被忽略，請移除此版本"
+                "deck-archived": "牌組已封存，但仍然計入整體數據。如果你希望其數據被忽略，請移除此版本",
+                "export-deck-picture-button": "複製圖片",
+                "export-deck-picture-still-working": "仍在處理中...",
+                "export-deck-picture-working": "正在截取高解像度螢幕截圖...",
+                "export-deck-picture-copied": "已複製至剪貼簿！",
+                "export-deck-picture-tooltip": "將套牌清單作為圖片複製至剪貼簿",
+                "export-deck-picture-failed": "螢幕擷取失敗",
+                "export-deck-picture-copied-tooltip": "你現在可以將其貼上至你喜愛的社群網路"
             },
             "deck-recap": {
                 "overall-stats-header": "總計",
@@ -1933,7 +1942,7 @@
             "list": {
                 "load-more-button": "點選讀取更多重播...",
                 "empty-state-title": "尚無紀錄",
-                "empty-state-subtitle": "進行一場對戰以開始使用重播"
+                "empty-state-subtitle": "進行一場賽局以開始使用重播"
             },
             "in-game": {
                 "error": {
@@ -1952,7 +1961,7 @@
                 },
                 "error": {
                     "no-power-log": "此重播缺乏遊戲內重播資料。",
-                    "fetch-failed": "無法取得重播資料。請檢查您的連線並再試一次。",
+                    "fetch-failed": "無法取得重播資料。請檢查你的連線並再試一次。",
                     "no-power-log-title": "重播無法使用",
                     "in-game-title": "無法觀看重播",
                     "fetch-failed-title": "無法載入重播",
@@ -2191,7 +2200,11 @@
                 "six-month-subtext": "（折扣優惠 {{value}}%）",
                 "six-month": "半年計費",
                 "yearly-coupon-text-2": "為慶祝 {{expansionName}} 上線，於結帳流程中使用以下代碼，即可額外享有 {{reduction}} 折扣：",
-                "coupon-text": "為慶祝 {{expansionName}} 上線，在結帳過程中輸入以下折扣碼，所有方案即可享有額外 {{reduction}} 優惠："
+                "coupon-text": "為慶祝 {{expansionName}} 上線，在結帳過程中輸入以下折扣碼，所有方案即可享有額外 {{reduction}} 優惠：",
+                "six-month-2": "6 個月",
+                "annual-toggle-header": "扣款週期為每",
+                "monthly-2": "月",
+                "yearly-2": "年"
             },
             "unsubscribe-button-tooltip-legacy": "取消訂閱舊版方案。一旦取消，該方案將不會再顯示在可用方案清單中，你必須選擇一個新方案才能持續享有 Premium 會籍功能。",
             "title": "Premium 會籍方案",
@@ -2937,10 +2950,10 @@
         },
         "team-widget": {
             "cooldown-left-tooltip": "冷卻時間為 {{value}} 回合",
-            "number-of-users-tooltip": "該技能在本次戰鬥的使用次數",
+            "number-of-users-tooltip": "該能力在本次戰鬥的使用次數",
             "base-speed-text": "基本速度：{{value}}",
-            "speed-buff": "這個技能將會在下一回合加速 {{value}}",
-            "speed-debuff": "這個技能將會在下回合減速 {{value}}",
+            "speed-buff": "這個能力將會在下一回合加速 {{value}}",
+            "speed-debuff": "這個能力將會在下回合減速 {{value}}",
             "empty-state": "進入戰鬥（懸賞或PvP）以瀏覽你的陣容資訊",
             "merc-level-tooltip": "目前傭兵等級",
             "unrecognized-mercenary": "無法識別的傭兵",
@@ -3049,7 +3062,27 @@
                     "play": "僅顯示你先攻的對局。點選此處更改。",
                     "all": "一起顯示先攻或後攻的對局。點選此處更改。"
                 },
-                "dismiss-tooltip": "隱藏換牌指南"
+                "dismiss-tooltip": "隱藏換牌指南",
+                "mulligan-impact-tooltip-premium-with-source": "將此單卡留在起手牌對你的勝率影響程度。使用 {{source}} 數據。",
+                "mulligan-keep-rate-yours-tooltip": "你有多常將此單卡留在起手牌。",
+                "mulligan-keep-rate-tooltip-with-source": "此單卡留在起手牌的頻率。使用 {{source}} 數據。",
+                "mulligan-impact-yours-tooltip": "根據你的對戰紀錄，將此單卡留在起手牌對你的勝率影響程度。",
+                "mulligan-impact-tooltip-free-with-source": "將此單卡留在起手牌對你的勝率影響程度。使用 {{source}} 數據。你今天還剩下 {{value}} 次免費使用額度。",
+                "stats-source-short": {
+                    "personal": "我",
+                    "community": "社群"
+                },
+                "stats-source": {
+                    "community": "社群",
+                    "personal": "你的數據",
+                    "both": "兩者"
+                },
+                "sample-size-tooltip-personal": "你使用此套牌且包含單卡換牌數據的個人賽局數",
+                "deck-mulligan-filter-stats-source-tooltip": "顯示 {{source}} 的單卡留牌率與換牌影響。點選以更換。",
+                "sample-size-both": "{{community}} 社群數據 / {{personal}} 你的數據",
+                "sample-size-tooltip-both": "社群賽局數，接著是你使用此套牌且包含單卡換牌數據的賽局數",
+                "personal-min-games-warning": "「你的數據」需要使用此套牌進行 {{threshold}} 場對戰（你目前有 {{current}} 場）。在此之前，覆疊介面將保持顯示「社群數據」。請至「設定」→「記牌器」→「起手換牌」中變更此設定。",
+                "personal-min-games-warning-never": "此覆疊介面已停用「你的數據」，因此將保持顯示「社群數據」。請至「設定」→「記牌器」→「起手換牌」中變更此設定。"
             },
             "lobby": {
                 "toggle-button-tooltip": "在清單視圖和詳細資料視圖之間切換",
@@ -3487,7 +3520,7 @@
                 "data-points-header": "資料量",
                 "impact-header-tooltip": "前 {{value}}% 玩家選擇此卡牌後，對最終名次造成的影響程度",
                 "placement-header": "名次",
-                "data-points-header-tooltip": "前 {{value}}% 玩家選擇此卡牌的對戰場數",
+                "data-points-header-tooltip": "前 {{value}}% 玩家選擇此卡牌的賽局數",
                 "free-uses-tooltip": "你每天可以免費使用此功能 {{max}} 次，目前剩 {{left}} 次",
                 "free-uses-text": "剩 {{value}} 次"
             },
@@ -3522,14 +3555,40 @@
                     "deathrattle-stats-restriction": "死聲手下在屬性值提升贈禮中只能獲得[磨利劍刃]或[死亡的擁抱]",
                     "not-beast-or-undead": "不會出現在「野獸」或「不死族」手下的選單中",
                     "requires-murloc": "僅會出現在「魚人」手下的選單中",
-                    "requires-no-minion-type": "僅會出現在「無類別」手下的選單中"
+                    "requires-no-minion-type": "僅會出現在「無類別」手下的選單中",
+                    "charisma-banned-minion": "此手下無法獲得",
+                    "lobby-dragon": "大廳中有龍類時無法獲得",
+                    "not-highest-trigger-count": "僅當此項為你觸發次數最多的成長條件時提供",
+                    "not-venomous-or-poisonous": "劇毒或毒素手下無法獲得",
+                    "stitched-salvager": "縫合拾荒者無法獲得",
+                    "not-tier-7": "旅店 7⭐️手下無法獲得"
                 },
                 "turn": "回合 {{value}}",
                 "uses-left": "剩 {{value}} 次使用",
                 "others": "其它",
                 "title": "黑暗贈禮",
                 "guaranteed-disabled-tooltip": "自第 {{value}} 回合起，選單中將保證出現一個你數量最多的手下類型",
-                "has-condition": "此贈禮有額外限制條件。將游標懸停於此檢視原因，或懸停在手下進行確認。"
+                "has-condition": "此贈禮有額外限制條件。將游標懸停於此檢視原因，或懸停在手下進行確認。",
+                "expired": "已過時",
+                "expires-soon": "即將過時",
+                "pool": "池",
+                "rules": "規則",
+                "restriction": {
+                    "no-magnetic-sell-hand": "合體手下、帶有「當你賣出此手下時」效果的手下，以及旨在保留於手牌中的手下無法獲得黑暗贈禮。",
+                    "guaranteed-type": "從第 6 回合開始，提供的三隻手下中會有一隻為你數量最多的類別。",
+                    "battlecry-choose-one": "戰吼與二選一手下僅能獲得[雙重幻象]、[複製]、[鍍金]或[迴響之聲]。",
+                    "lobby-bans": "[抵抗]與[卓越]在有龍類的大廳中禁止出現。[敵意]禁止在劇毒或毒素手面上出現。[魅力]禁止在旅店 7⭐️手面上出現。",
+                    "rarer-gifts": "鍍金、持久恐懼、泰坦之力與免疫比其他贈禮更為罕見。",
+                    "golemancy-salvager": "縫合拾荒者無法獲得魔像術。",
+                    "scaling-highest": "在「戰傷」、「死亡擁抱」與「吸取法術」中，僅會提供最常觸發的條件。",
+                    "battlecry-before-5": "第 5 回合前不會提供戰吼與二選一手下。",
+                    "deathrattle-stats": "死亡之聲手下在屬性值加成類贈禮中僅能獲得[磨利劍刃]或[死亡的擁抱]。"
+                },
+                "turns-plus": "{{min}} 回合以上",
+                "wiki-link": "爐石戰記 Wiki — 黑暗贈禮",
+                "wiki-source": "來源：",
+                "arrives": "稍後抵達",
+                "turns-open": "{{value}} 場對戰"
             }
         },
         "post-match-stats": {
@@ -3732,7 +3791,8 @@
                 "discord": "Discord",
                 "broadcast": "Twitch",
                 "streamer": "實況主",
-                "addons": "附加功能"
+                "addons": "附加功能",
+                "account": "帳號"
             },
             "third-party": {
                 "intro": "我們堅信你的資料歸你所有，且你理應能夠將其同步到其他第三方網站，協助這些網站發揮所長來處理這些數據。雖然我們並未從中獲利，但因為這些網站會提及我們，我們也因此獲得了一些曝光度😊",
@@ -3832,7 +3892,7 @@
                 "reset-prefs-confirmation": "全部設定已重設。這包括圖示位置及Twitch設置，別忘了設定你需要的 :)",
                 "restart-app-button-label": "重啟應用程式",
                 "enable-mailbox-label": "啟用信箱",
-                "allow-games-share-tooltip": "翻譯：允許此應用程式分享你的對戰紀錄（與牌組清單）。分享過程將採取匿名方式，但如果你正在研究秘密牌組，建議關閉此選項。",
+                "allow-games-share-tooltip": "翻譯：允許此應用程式分享你的賽局紀錄（與牌組清單）。分享過程將採取匿名方式，但如果你正在研究秘密牌組，建議關閉此選項。",
                 "enable-mailbox-unread-tooltip": "當你有未讀訊息時，信箱圖示上會顯示一個紅點。",
                 "enable-mailbox-tooltip": "顯示「信箱」選單，讓你直接在程式內獲取《爐石戰記》最新要聞。",
                 "enable-mailbox-unread-label": "顯示未讀取信箱",
@@ -3853,7 +3913,7 @@
             },
             "localization": {
                 "title": "在地化",
-                "text-1": "本應用程式的翻譯由社群協力完成，感謝像您一樣慷慨投入時間與心力的志工，讓每個人都能以自己選擇的語言來使用。因此，請在享受成果之餘，也給予他們的勞動成果一份尊重。",
+                "text-1": "本應用程式的翻譯由社群協力完成，感謝像你一樣慷慨投入時間與心力的志工，讓每個人都能以自己選擇的語言來使用。因此，請在享受成果之餘，也給予他們的勞動成果一份尊重。",
                 "text-11": "這也意味著並非整個程式都會被翻譯。所以缺少翻譯的部分會用英文代替。",
                 "text-2": "如果你想幫忙翻譯這個程式，請檢閱說明。 {{link}}",
                 "link": "「這裡」",
@@ -3880,7 +3940,7 @@
                 "games-period": "載入你的賽局",
                 "games-title": "賽局",
                 "other-title": "其他",
-                "packs-tooltip": "重新整理你的卡牌包。此動作每 7 天自動完成一次。",
+                "packs-tooltip": "從伺服器重新整理你的卡牌包歷史紀錄。請在重新安裝 Firestone 或更換電腦後使用此功能。",
                 "games-tooltip": "重新整理你的遊戲。它將檢索自你開始使用該應用程式以來的全部賽局，這可能需要一段時間",
                 "total-games": "該應用程式總共檢索了 {{value}} 場賽局",
                 "achievements-tooltip": "重新整理你的成就。",
@@ -3953,7 +4013,7 @@
                 "installed-mods-description-2": "目前已安裝以下模組（刪除 {{path}} 中對應的檔案即可解除安裝）：",
                 "need-to-close-game-warning": "你必須先關閉《爐石戰記》，才能安裝／解除安裝／更新，或啟用／停用模組。",
                 "auto-update-label": "自動更新",
-                "auto-update-tooltip": "當模組有新版本可用時將自動更新。新版本會在關閉遊戲時進行安裝。",
+                "auto-update-tooltip": "當模組有新版本可用時自動進行更新。新版本將在關閉遊戲時進行安裝。<br><br>受信任的模組是由 Firestone 或在其監督下開發與維護。<br><br>已驗證的模組由第三方開發，並由 Firestone 定期檢查。在這種情況下，僅有獲得 Firestone 核准的版本才會自動更新。",
                 "engine-migration-retry-title": "模組引擎更新待處理",
                 "engine-migration-done-title": "模組引擎已更新",
                 "reinstalling-mods": "正在為更新後的引擎重新安裝模組...",
@@ -3961,7 +4021,28 @@
                 "engine-migration-start-title": "正在更新模組引擎",
                 "migrating-engine": "正在為你的《爐石戰記》版本更新模組引擎...",
                 "engine-migration-start-message": "《爐石戰記》現已改用 64 位元用戶端。Firestone 正同步更新模組引擎，這可能需要一下下的時間。",
-                "engine-migration-retry-message": "檔案正在使用中，無法更新模組引擎。Firestone 將在《爐石戰記》關閉後重試。"
+                "engine-migration-retry-message": "檔案正在使用中，無法更新模組引擎。Firestone 將在《爐石戰記》關閉後重試。",
+                "update-available-unreviewed": "此模組有新版本可用，但尚未經過 Firestone 審閱。點選仍要更新。",
+                "auto-update-off": "關閉",
+                "auto-update-all": "全部",
+                "import-button": "匯入",
+                "import-in-progress": "正在匯入模組...",
+                "auto-update-trusted": "僅可信模組",
+                "import-invalid-url": "請貼上 GitHub 專案庫網址 (https://github.com/owner/repo)。",
+                "import-success": "已匯入模組。系統將根據你的自動更新設定進行自動更新。",
+                "import-download-failed": "無法下載模組。請稍後再試。",
+                "import-fetch-failed": "無法讀取該 GitHub 專案庫。請檢查網址並重試。",
+                "import-already-present": "此模組已在你的清單中。",
+                "source-trusted": "可信",
+                "source-third-party": "第三方",
+                "source-third-party-tooltip": "未經 Firestone 審核。僅當你選擇「全部」時才會自動更新。",
+                "source-verified": "已驗證",
+                "import-no-dll": "在此 GitHub 專案庫的最新 Release 中找不到 .dll 檔案。",
+                "source-trusted-tooltip": "由 Firestone 或在其監督下開發與維護。",
+                "source-verified-tooltip": "由第三方開發，並由 Firestone 定期檢查。僅有獲得 Firestone 核准的版本才會自動更新。",
+                "import-placeholder": "GitHub 專案庫網址",
+                "auto-update-trusted-verified": "僅可信與已驗證的模組",
+                "import-no-install-path": "請先設定你的遊戲安裝位置。"
             },
             "premium": {
                 "lottery-opacity-title": "抽獎小工具不透明度",
@@ -3976,7 +4057,9 @@
                 "lottery-block-text1": "參加抽獎活動可讓你在顯示抽獎視窗的狀態下，透過在遊戲中執行特定動作（例如花費資源）來累積點數。每兩週結束時，將隨機抽出 2 名中獎者（點數越多，中獎機率越高）。中獎者將獲得 2 個月的 Premium 會員資格，並會在 {{twitterLink}} 與 {{discordLink}} 上公布。",
                 "lottery-widget-settings-title": "小工具設定",
                 "link": "維基上",
-                "lottery-premium-section-tooltip": "此區塊僅適用於 Premium 會員"
+                "lottery-premium-section-tooltip": "此區塊僅適用於 Premium 會員",
+                "lottery-sync-label": "抽獎積分",
+                "lottery-sync-tooltip": "從伺服器還原本賽季的抽獎積分。請在重新安裝 Firestone 後使用此功能。"
             },
             "discord": {
                 "advanced-config-title": "進階配置",
@@ -4100,6 +4183,32 @@
                 "open-folder": "開啟資料夾",
                 "permissions": "權限：",
                 "refresh": "重新整理"
+            },
+            "account": {
+                "intro-signed-out": "登入以同步你的賽局歷史紀錄。之後你可以連結其他登入提供者。",
+                "sign-in-button": "登入",
+                "provider-overwolf": "Overwolf",
+                "intro-battlenet-linked": "此 Battle.net 登入已連結至你的 Overwolf Firestone 帳號。解除連結即可分別使用各個登入方式。",
+                "not-signed-in": "你尚未登入。",
+                "unlink-battlenet-label": "Battle.net",
+                "link-battlenet-button": "連結 Battle.net",
+                "link-battlenet-need-overwolf": "請先使用 Overwolf 登入，再重試連結 Battle.net。",
+                "provider-unknown": "未知的提供者",
+                "unlink-battlenet-failed": "無法解除連結 Battle.net。請稍後再試。",
+                "unlink-battlenet-confirmation": "你確定嗎？",
+                "unlink-battlenet-button": "解除連結 Battle.net",
+                "log-out-label": "帳號",
+                "log-out-button": "登出",
+                "log-out-tooltip": "在此裝置上登出你的 Firestone 帳號。",
+                "sign-in-label": "帳號",
+                "provider-battlenet": "Battle.net",
+                "link-battlenet-label": "Battle.net",
+                "unlink-battlenet-tooltip": "解除 Battle.net 與你的 Overwolf Firestone 帳號之連結。解除後，每次登入將僅顯示各自的遊戲歷史紀錄。",
+                "intro": "將 Battle.net 帳號連結至你現有的 Overwolf Firestone 登入，即可使用 Battle.net 登入並保留相同的賽局歷史紀錄。",
+                "link-battlenet-tooltip": "請先使用 Overwolf 登入，再連結 Battle.net。完成後，你即可使用 Battle.net 登入並重新整理數據。",
+                "sign-in-tooltip": "開啟登入頁面以使用 Overwolf 或 Battle.net 登入。",
+                "signed-in-as": "已透過 {{provider}} 登入為 <b>{{name}}</b>。Firestone 使用者名稱：{{username}}",
+                "intro-battlenet": "你已使用 Battle.net 登入。若要連結現有的 Overwolf 帳號（以下載賽局紀錄），你需要先登出並重新使用 Overwolf 帳號登入。"
             }
         },
         "decktracker": {
@@ -4573,7 +4682,14 @@
                 "keep-after-mulligan-label": "換牌後保留小工具",
                 "keep-after-mulligan-until-dismissed": "直到手動關閉",
                 "keep-after-mulligan-off": "立即隱藏",
-                "keep-after-mulligan-tooltip": "在你確認後繼續保持換牌指南可見，方便你檢視抽到的卡牌。可設定為立即隱藏、數秒後隱藏，或持續顯示直到手動關閉。"
+                "keep-after-mulligan-tooltip": "在你確認後繼續保持換牌指南可見，方便你檢視抽到的卡牌。可設定為立即隱藏、數秒後隱藏，或持續顯示直到手動關閉。",
+                "personal-min-games-tooltip": "在遊戲內換牌覆疊介面中，只有當你使用當前套牌達到此對戰場次時，才會顯示你自己的留牌率與影響力。大廳表格則始終顯示你選擇的數據來源。「從不」：絕不在覆疊介面中顯示你的數據。「總是」：只要你有任何對戰紀錄就立即顯示。",
+                "personal-min-games-label": "在達到以下賽局次後顯示你的換牌數據",
+                "personal-min-games-always": "總是（即使賽局數較少）",
+                "personal-min-games-never": "從不（於覆疊介面中隱藏你的數據）",
+                "personal-min-games-count": "{{value}} 場對戰",
+                "sync-past-games-label": "同步過往對戰紀錄",
+                "sync-past-games-tooltip": "Premium：下載在此功能推出前（或重新安裝後）你所進行對戰的單卡換牌數據，讓「你的數據」能將其納入計算。當 Firestone 執行時你所進行的對戰總是會儲存在本機。免費版使用者僅能取得這些本機對戰紀錄。"
             },
             "lobby": {
                 "show-lobby-tracker-tooltip": "在牌組選擇畫面上顯示所選牌組清單",
@@ -4827,7 +4943,9 @@
                 "hide-battle-odds-until-mouseover-label": "移至上方時才顯示勝率",
                 "dark-gift-overlay-tooltip": "將游標懸停在‐黑暗發現‐按鈕上時，顯示可能的黑暗發現手下與黑暗贈禮",
                 "dark-gift-overlay-label": "黑暗贈禮覆疊介面",
-                "hide-battle-odds-until-mouseover-tooltip": "啟用時，螢幕上方會保持顯示小型勝率橫幅，當你將游標移至上方時才會顯示完整的勝／平／敗小工具"
+                "hide-battle-odds-until-mouseover-tooltip": "啟用時，螢幕上方會保持顯示小型勝率橫幅，當你將游標移至上方時才會顯示完整的勝／平／敗小工具",
+                "hero-power-extra-info-label": "英雄能力額外資訊",
+                "hero-power-extra-info-tooltip": "懸停於英雄能力時，在卡牌工具提示中顯示額外的即時詳細資訊（例如餅乾大廚的湯鍋裡已有哪些手下類別）。"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
@@ -4882,13 +5000,13 @@
             },
             "general": {
                 "player-team-widget-label": "我方隊伍小工具",
-                "player-team-widget-tooltip": "顯示全部你的英雄、技能和裝備",
+                "player-team-widget-tooltip": "顯示全部你的英雄、能力和裝備",
                 "opponent-team-widget-label": "對手陣容小工具",
-                "opponent-team-widget-tooltip": "顯示一個概覽對手全部已知的英雄、技能和裝備的覆疊視窗",
+                "opponent-team-widget-tooltip": "顯示一個概覽對手全部已知的英雄、能力和裝備的覆疊視窗",
                 "map-team-widget-label": "隊伍小工具：懸賞地圖",
-                "map-team-widget-tooltip": "在懸賞地圖上顯示一個概覽你全部英雄、技能和裝備的覆疊視窗。能幫助你在選擇路徑和寶藏時檢視隊伍。",
+                "map-team-widget-tooltip": "在懸賞地圖上顯示一個概覽你全部英雄、能力和裝備的覆疊視窗。能幫助你在選擇路徑和寶藏時檢視隊伍。",
                 "village-team-widget-label": "隊伍小工具：村莊",
-                "village-team-widget-tooltip": "在收藏和隊伍選擇介面中顯示你全部英雄、技能和裝備的覆疊視窗",
+                "village-team-widget-tooltip": "在收藏和隊伍選擇介面中顯示你全部英雄、能力和裝備的覆疊視窗",
                 "action-queue-pve-label": "行動順序小工具（PVE）",
                 "action-queue-pve-tooltip": "顯示PVE戰鬥中的行動順序清單",
                 "action-queue-pvp-label": "行動順序小工具（PVP）",
@@ -4898,7 +5016,7 @@
                 "tasks-label": "顯示任務按鈕",
                 "tasks-tooltip": "在隊伍小工具下方加入一個小按鈕，將滑鼠游標停在上方以檢視當前任務。在PVP時隱藏",
                 "synergies-label": "標記連動卡牌",
-                "synergies-tooltip": "當滑鼠游標停在技能或裝備上（在隊伍小工具中）或寶藏（在寶藏揀選介面時），隊伍小工具會標記與其有連動的全部卡牌",
+                "synergies-tooltip": "當滑鼠游標停在能力或裝備上（在隊伍小工具中）或寶藏（在寶藏揀選介面時），隊伍小工具會標記與其有連動的全部卡牌",
                 "turn-counter-battle-label": "賽局回合計數器",
                 "your-team": "小工具大小 - 你的隊伍",
                 "opponent-team": "小工具大小 - 對手隊伍",
@@ -4970,11 +5088,11 @@
             },
             "general": {
                 "hide-games-vs-ai": "隱藏與AI對戰的遊戲",
-                "hide-games-vs-ai-tooltip": "在檢視完整重播清單時隱藏與AI對戰的場次"
+                "hide-games-vs-ai-tooltip": "在檢視完整重播清單時隱藏與AI對戰的賽局數"
             },
             "in-game": {
-                "description": "遊戲內重播功能為 Premium 專屬，讓您可以如同使用遊戲觀戰模式般觀看自己的賽局重播——這意味著您可以體驗到遊戲內所有的視覺效果、動畫與音效。",
-                "how-to-activate": "若要啟用遊戲內重播，您必須成為 Premium 訂閱者，並在「設定」中的「模組」頁籤安裝並啟用「Hearthstone Replay Viewer」模組。完成後，您會在「重播」頁籤看到一個新按鈕，讓您能夠在遊戲內觀看重播。",
+                "description": "遊戲內重播功能為 Premium 專屬，讓你可以如同使用遊戲觀戰模式般觀看自己的賽局重播——這意味著你可以體驗到遊戲內所有的視覺效果、動畫與音效。",
+                "how-to-activate": "若要啟用遊戲內重播，你必須成為 Premium 訂閱者，並在「設定」中的「模組」頁籤安裝並啟用「Hearthstone Replay Viewer」模組。完成後，你會在「重播」頁籤看到一個新按鈕，讓你能夠在遊戲內觀看重播。",
                 "limitations": "你需在建立後 30 日內於遊戲內觀看重播，否則伺服器將刪除該檔案。超過 30 日的重播仍可透過瀏覽器觀看，但無法在遊戲內檢視。其他限制包括：尚不支援具倒轉效果的賽局。"
             },
             "in-game-sharing": {
@@ -5143,51 +5261,616 @@
         "faq": {
             "sections": {
                 "memory-reading-error": {
-                    "intro": "<p>「記憶體讀取」錯誤是指應用程式沒有存取遊戲用戶端記憶體的權限。這通常是由權限問題引起的（因此以管理員身份運行通常可以解決此問題）。 </p><p>以下是更多以管理員身分執行所需步驟的詳細資訊：</p>"
+                    "intro": "<p>「記憶體讀取」錯誤是指應用程式沒有存取遊戲用戶端記憶體的權限。這通常是由權限問題引起的（因此以管理員身份運行通常可以解決此問題）。 </p><p>以下是更多以管理員身分執行所需步驟的詳細資訊：</p>",
+                    "title": "記憶體讀取錯誤 / 以管理員身份執行",
+                    "admin-steps": "<ul><li>關閉《爐石戰記》</li><li>關閉 Overwolf</li><li>將 Firestone 及／或 Overwolf 捷徑變更為「以系統管理員身分執行」<ul><li>Overwolf.exe 與 OverwolfLauncher.exe 應以系統管理員身分執行</li><li>你也可以啟用「套用到所有使用者」按鈕</li></ul></li></ul>",
+                    "after-admin": "<ul><li>重新啟動 Overwolf（部分使用者需要重新啟動整台電腦）</li><li>接著你可以重新啟動《爐石戰記》</li><li>若仍無法運作（即使在<strong>完整重新啟動電腦</strong>之後），請檢查《爐石戰記》本身是否以系統管理員身分執行。若是，請嘗試在不具備系統管理員權限的情況下執行它。</li><li>若你依然遇到問題，可以嘗試在該畫面中授予所有權限：</li></ul>"
                 },
                 "app-doesnt-update": {
-                    "body": "<ol><li>退出 Overwolf</li><li>開啟資料夾 C:\\Users\\&lt;您的使用者名稱&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>刪除名為「lnknbakkpommmjjdnelmjjdbocfpnpbkijjnob」的資料夾</li><li>開啟資料夾C:\\Users\\&lt;您的使用者名稱&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>刪除名為「lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob」的資料夾</li><li>啟動 Overwolf</liol><li>再次嘗試應用程式</li></li>"
+                    "body": "<ol><li>退出 Overwolf</li><li>開啟資料夾 C:\\Users\\&lt;你的使用者名稱&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>刪除名為「lnknbakkpommmjjdnelmjjdbocfpnpbkijjnob」的資料夾</li><li>開啟資料夾C:\\Users\\&lt;你的使用者名稱&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>刪除名為「lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob」的資料夾</li><li>啟動 Overwolf</liol><li>再次嘗試應用程式</li></li>",
+                    "title": "應用程式未更新"
                 },
                 "check-if-running-as-admin": {
                     "step-1": "<ol><li>開啟工作管理員（Ctrl + Shift + Esc），然後轉到「詳細資料」標籤。右鍵單擊標題欄，然後按一下“選取欄位”。 </li></ol>",
                     "step-2": "<ol start=\"2\">請確認「已提高權限」欄位已勾選</li></ol>",
-                    "step-3": "<ol start=\"3\"><li>接著在清單中找到 Firestone 項目。若 Firestone 是以系統管理員身分執行，對應的「已提高權限」欄位應顯示為「是」（截圖中的情況則代表未以系統管理員身分執行）。</li></ol>"
+                    "step-3": "<ol start=\"3\"><li>接著在清單中找到 Firestone 項目。若 Firestone 是以系統管理員身分執行，對應的「已提高權限」欄位應顯示為「是」（截圖中的情況則代表未以系統管理員身分執行）。</li></ol>",
+                    "title": "檢查應用程式是否以管理員身份執行"
                 },
                 "truncated-logs-other": {
-                    "body": "<p>卸載/重新安裝或許能解決問題：</p><blockquote><p>我刪除了您給的 %localappdata%\\Blizzard\\Hearthstone 地址裡的檔案，並刪除了爐石戰記中的所有快取文件，然後重新安裝了遊戲，問題就解決了。 </p></blockquote><p>您是否安裝了其他與爐石戰記互動的程式？ （來自一位中國用戶）：</p><blockquote><p>我发现问题了，我用一个中国特有的启动器启动游戏，然后炉石传说的文件夹关于日志的文件就会消失。不用它启动就不会有问题。</p></blockquote>"
+                    "body": "<p>卸載/重新安裝或許能解決問題：</p><blockquote><p>我刪除了你給的 %localappdata%\\Blizzard\\Hearthstone 地址裡的檔案，並刪除了爐石戰記中的所有快取文件，然後重新安裝了遊戲，問題就解決了。 </p></blockquote><p>你是否安裝了其他與爐石戰記互動的程式？ （來自一位中國用戶）：</p><blockquote><p>我发现问题了，我用一个中国特有的启动器启动游戏，然后炉石传说的文件夹关于日志的文件就会消失。不用它启动就不会有问题。</p></blockquote>",
+                    "title": "若此方法無效"
                 },
                 "mainland-china": {
-                    "body": "<ul><li><p>我听说如果你同时安装了“中国大陆”客户端和“世界其他地区”客户端，Firestone 只能在其中一个客户端上运行。</p><ul><li>看来你可以在登录后转到“收藏”屏幕来解决这个问题</li></ul></li><li><p>我聽說如果你同時安裝了「中國地區」用戶端和「其它國家/地區（例如台灣）」用戶端，但 Firestone 只能在其中一個用戶端上運作。 </p><ul><li>登入後，進入「收藏」介面似乎可以解決這個問題。 </li></ul></li></ul>"
+                    "body": "<ul><li><p>我听说如果你同时安装了“中国大陆”客户端和“世界其他地区”客户端，Firestone 只能在其中一个客户端上运行。</p><ul><li>看来你可以在登录后转到“收藏”屏幕来解决这个问题</li></ul></li><li><p>我聽說如果你同時安裝了「中國大陸」用戶端和「其它國家/地區」用戶端，但 Firestone 只能在其中一個用戶端上運作。 </p><ul><li>登入後，進入「收藏」介面似乎可以解決這個問題。 </li></ul></li></ul>",
+                    "title": "對於中國大陸用戶 - For users from mainland China"
                 },
                 "images-are-not-showing": {
-                    "body": "<ul><li>請檢查您是否能夠使用 Google Chrome 顯示此內容：<a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>如果無法顯示，則表示某些程式阻止了您造訪 Firestone 的內容。這通常是您本機電腦上的防火牆或防毒軟體造成的，但有時也可能是您的網路服務供應商造成的。 </li>請參閱<a href=\"/faq#other-things-to-try\">其他嘗試方法</a></li></ul></li><li>請查看頁面底部的<a href=\"/faq#connectivity-issues-global\">連接問題</a>部分</li><li>如果您可以在瀏覽器中顯示此應用程式無法顯示此應用程式。 <ul><li>嘗試停用防火牆和防毒軟體。 <blockquote><p>我找到了防火牆設置，並將所有與“Overwolf”相關的設置都設置為允許，問題就解決了。 </p></blockquote></li><li>如果上述方法都無效，則可能表示有其他安全限制，但這取決於您的電腦。 <ul><li>如果您成功解決了此問題，請給我留言，我會將您的解決方法添加到列表中，供其他人參考 :)</li></ul></li><li>重新安裝 Firestone 有時似乎會有幫助。 </li></ul></li></ul>"
+                    "body": "<ul><li>請檢查你是否能夠使用 Google Chrome 顯示此內容：<a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>如果無法顯示，則表示某些程式阻止了你造訪 Firestone 的內容。這通常是你本機電腦上的防火牆或防毒軟體造成的，但有時也可能是你的網路服務供應商造成的。 </li>請參閱<a href=\"/faq#other-things-to-try\">其他嘗試方法</a></li></ul></li><li>請查看頁面底部的<a href=\"/faq#connectivity-issues-global\">連接問題</a>部分</li><li>如果你可以在瀏覽器中顯示此應用程式無法顯示此應用程式。 <ul><li>嘗試停用防火牆和防毒軟體。 <blockquote><p>我找到了防火牆設置，並將所有與“Overwolf”相關的設置都設置為允許，問題就解決了。 </p></blockquote></li><li>如果上述方法都無效，則可能表示有其他安全限制，但這取決於你的電腦。 <ul><li>如果你成功解決了此問題，請給我留言，我會將你的解決方法添加到清單中，供其他人參考 :)</li></ul></li><li>重新安裝 Firestone 有時似乎會有幫助。 </li></ul></li></ul>",
+                    "title": "圖片無法顯示"
                 },
                 "connectivity-issues-russia": {
-                    "body": "<p><strong>如果您從俄羅斯連接，請嘗試以下方法</strong>。以下是一些使用者在電腦上解決連線問題的方法。 </p><blockquote><p>卸載並重新安裝 Firestone 對我有效</p><p>通過將其添加到 Goodbye DPI 的黑名單中解決了問題<a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a> </p><p>這些尤其適用於 GoodbyeDPI 用戶。要在 Google Chrome 中正常工作，您需要訪問 chrome://flags 並禁用以下三個特定標誌：</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>由於部分用戶似乎只在使用 cloudflare-ech.com 時遇到問題（該網站幾天前被俄羅斯的一些服務商屏蔽），因此將其添加到黑名單文本文件中可以解決問題。我原本也想將 static.firestoneapp.com 添加到該列表中，但就我的情況而言，沒有必要。 </p><p>首先，我從命令提示字元中 ping 了幾次 cloudflare 以取得其 IP 位址。然後，我建立了一條 Windows 防火牆規則，僅針對 Overwolf.exe 封鎖來自已取得 IP 位址的所有連線。之後可能需要重新安裝 Firestone：</p></blockquote>",
-                    "more": "<blockquote><p>在你的電腦上開啟 VPN，下載《爐石戰記》，在 Overwolf 中刪除此應用程式後重新下載，接著關閉 VPN，一切就能正常運作。每次進入遊戲前請重複這些操作。此方法適用於俄羅斯。</p><p>問題很可能出在俄羅斯封鎖了 cloudflare-ech.com。自 1.5.2 以後的版本已將 cloudflare-ech.com 加入黑名單，我透過升級自己與其他人用來繞過 Discord 封鎖的應用程式（運作方式類似 GoodbyeDPI）解決了這個問題。該應用程式網址為：<a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>。由於該應用程式在俄羅斯頗受歡迎，更新至 v1.5.2 以上版本應該能幫助到你的一部分使用者。</p></blockquote>"
+                    "body": "<p><strong>如果你從俄羅斯連接，請嘗試以下方法</strong>。以下是一些使用者在電腦上解決連線問題的方法。 </p><blockquote><p>卸載並重新安裝 Firestone 對我有效</p><p>通過將其添加到 Goodbye DPI 的黑名單中解決了問題<a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a> </p><p>這些尤其適用於 GoodbyeDPI 用戶。要在 Google Chrome 中正常工作，你需要訪問 chrome://flags 並禁用以下三個特定標誌：</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>由於部分用戶似乎只在使用 cloudflare-ech.com 時遇到問題（該網站幾天前被俄羅斯的一些服務商屏蔽），因此將其添加到黑名單文本文件中可以解決問題。我原本也想將 static.firestoneapp.com 添加到該清單中，但就我的情況而言，沒有必要。 </p><p>首先，我從命令提示字元中 ping 了幾次 cloudflare 以取得其 IP 位址。然後，我建立了一條 Windows 防火牆規則，僅針對 Overwolf.exe 封鎖來自已取得 IP 位址的所有連線。之後可能需要重新安裝 Firestone：</p></blockquote>",
+                    "more": "<blockquote><p>在你的電腦上開啟 VPN，下載《爐石戰記》，在 Overwolf 中刪除此應用程式後重新下載，接著關閉 VPN，一切就能正常運作。每次進入遊戲前請重複這些操作。此方法適用於俄羅斯。</p><p>問題很可能出在俄羅斯封鎖了 cloudflare-ech.com。自 1.5.2 以後的版本已將 cloudflare-ech.com 加入黑名單，我透過升級自己與其他人用來繞過 Discord 封鎖的應用程式（運作方式類似 GoodbyeDPI）解決了這個問題。該應用程式網址為：<a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>。由於該應用程式在俄羅斯頗受歡迎，更新至 v1.5.2 以上版本應該能幫助到你的一部分使用者。</p></blockquote>",
+                    "title": "連線問題（俄羅斯）"
                 },
                 "hard-kill-apps": {
-                    "body": "<blockquote><p>哈囉，從工作管理員強制關閉 Firestone 以及 Overwolf 後重新開啟，一切就會恢復正常。單純重新啟動 Firestone 並無法解決問題。</p></blockquote>"
+                    "body": "<blockquote><p>哈囉，從工作管理員強制關閉 Firestone 以及 Overwolf 後重新開啟，一切就會恢復正常。單純重新啟動 Firestone 並無法解決問題。</p></blockquote>",
+                    "title": "強制結束應用程式"
                 },
                 "incompatible-software": {
-                    "body": "<p>如果您正在執行以下程式之一，請嘗試將其關閉，關閉爐石傳說，重啟 Overwolf 後再試一次：</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>"
+                    "body": "<p>如果你正在執行以下程式之一，請嘗試將其關閉，關閉爐石傳說，重啟 Overwolf 後再試一次：</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>",
+                    "title": "不相容的軟體"
                 },
                 "widgets-not-showing": {
-                    "body": "<p>如果您看不到某些小工具（例如，您看不到自己的記牌器，但可以看到對手手牌的抽牌回合），則可能是它們被移出了螢幕。您可以使用設定中的此按鈕重設（所有）小工具的位置：</p>"
+                    "body": "<p>如果你看不到某些小工具（例如，你看不到自己的記牌器，但可以看到對手手牌的抽牌回合），則可能是它們被移出了螢幕。你可以使用設定中的此按鈕重設（所有）小工具的位置：</p>",
+                    "title": "少數特定小工具未顯示"
                 },
                 "dns": {
-                    "body": "<p>來自另一位遇到同樣問題的用戶：</p><blockquote><p>您列出的那些方法都不是問題所在，但我的拍檔找到了問題所在，我想把解決方法分享給您，希望能幫助其他遇到同樣問題的用戶。他要我把網路介面卡的 DNS 設定改成Google的 DNS 伺服器 [主要 DNS 伺服器 8.8.8.8，備用 DNS 伺服器 8.8.4.4]。 </p></blockquote><p>更詳細的步驟：</p><ol><li>控制台\\網路和網際網路\\網路連線</li><li>右鍵點選您使用的連線類型(如乙太網路)</li><li>在選單中點選「內容」</li><li>在「這個連線使用下列項目」下找到「網際網路通訊協定第4版(TCP/IPv4)」</li><li>稍右下方點選「內容」</li><li>設定為 8.8.8.8 (Google)</li><li>關閉並重新開啟 Firestone。 </li></ol>"
+                    "body": "<p>來自另一位遇到同樣問題的用戶：</p><blockquote><p>你列出的那些方法都不是問題所在，但我的拍檔找到了問題所在，我想把解決方法分享給你，希望能幫助其他遇到同樣問題的用戶。他要我把網路介面卡的 DNS 設定改成Google的 DNS 伺服器 [主要 DNS 伺服器 8.8.8.8，備用 DNS 伺服器 8.8.4.4]。 </p></blockquote><p>更詳細的步驟：</p><ol><li>控制台\\網路和網際網路\\網路連線</li><li>右鍵點選你使用的連線類型(如乙太網路)</li><li>在選單中點選「內容」</li><li>在「這個連線使用下列項目」下找到「網際網路通訊協定第4版(TCP/IPv4)」</li><li>稍右下方點選「內容」</li><li>設定為 8.8.8.8 (Google)</li><li>關閉並重新開啟 Firestone。 </li></ol>",
+                    "title": "DNS"
                 },
                 "virgin-media-web-safe": {
-                    "body": "<p>如果您使用 Virgin Media 連線網路（至少在英國境內），似乎「Virgin Media 兒童安全模式」會阻止 Firestone 存取一些運作所需的資料。我不知道原因，但禁用該模式似乎可以解決問題。 </p><p>Web Safe 也出現過類似的問題，為 static.zerotoheroes.com 增加例外（白名單）似乎可以解決問題。 </p>"
+                    "body": "<p>如果你使用 Virgin Media 連線網路（至少在英國境內），似乎「Virgin Media 兒童安全模式」會阻止 Firestone 存取一些運作所需的資料。我不知道原因，但禁用該模式似乎可以解決問題。 </p><p>Web Safe 也出現過類似的問題，為 static.zerotoheroes.com 增加例外（白名單）似乎可以解決問題。 </p>",
+                    "title": "Virgin media, Web Safe （維珍媒體Virgin Media 是英國的一家電訊企業）"
                 },
                 "truncated-logs": {
-                    "body": "<p>如果應用程式已運行一段時間，在玩了幾局遊戲後突然停止，則可能是爐石戰記日誌停止生成。 </p><p>請依照以下步驟操作：</p><ul><li>關掉爐石戰記</li><li>前往爐石戰記安裝資料夾，找到 <code>Hearthstone.exe</code> 檔案</li><li>檢查此資料夾中是否存在 <code>client.config</code> 檔案</ul><li>如果沒有，請建立一個</li></ul></li><li>將 <code>client.config</code> 檔案的內容替換為以下內容：<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>重啟爐石戰記</li></ul><p>如果完成這些步驟後遊戲仍然卡住，則說明出現了問題，請點選應用主視窗右上角的按鈕回報錯誤🙂️</p>"
+                    "body": "<p>如果應用程式已運行一段時間，在玩了幾局遊戲後突然停止，則可能是爐石戰記日誌停止生成。 </p><p>請依照以下步驟操作：</p><ul><li>關掉爐石戰記</li><li>前往爐石戰記安裝資料夾，找到 <code>Hearthstone.exe</code> 檔案</li><li>檢查此資料夾中是否存在 <code>client.config</code> 檔案</ul><li>如果沒有，請建立一個</li></ul></li><li>將 <code>client.config</code> 檔案的內容替換為以下內容：<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>重啟爐石戰記</li></ul><p>如果完成這些步驟後遊戲仍然卡住，則說明出現了問題，請點選應用主視窗右上角的按鈕回報錯誤🙂️</p>",
+                    "title": "應用程式卡住／日誌紀錄(Logs)卡住"
                 },
                 "no-cards": {
-                    "body": "<ul><li>請檢查您是否可以從 Chrome 瀏覽器存取 <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</a></li><li>如果無法訪問，則表示您的路由器/ISP/VPN有問題，導致無法存取 AWS。 </li>家長監護也是造成此問題的已知原因之一。 <ul><li>防毒軟體有時會阻止訪問，請嘗試將其關閉</li><li><strong>⚠️</strong>：最近這似乎是導致問題的一個更普遍的原因，因此請檢查您的家長控制設定（也請諮詢您的網路服務供應商），並將 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> and <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名單</li></ul></li><li>如果以上方法都無效，請發送電子郵件至信箱 <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>"
+                    "body": "<ul><li>請檢查你是否可以從 Chrome 瀏覽器存取 <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</a></li><li>如果無法訪問，則表示你的路由器/ISP/VPN有問題，導致無法存取 AWS。 </li>家長監護也是造成此問題的已知原因之一。 <ul><li>防毒軟體有時會阻止訪問，請嘗試將其關閉</li><li><strong>⚠️</strong>：最近這似乎是導致問題的一個更普遍的原因，因此請檢查你的家長控制設定（也請諮詢你的網路服務供應商），並將 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> and <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名單</li></ul></li><li>如果以上方法都無效，請發送電子郵件至信箱 <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>",
+                    "title": "❌嚴重錯誤：無法載入卡牌資料庫"
+                },
+                "app-isnt-showing": {
+                    "body": "<ul><li>請確保在啟動《爐石戰記》<strong>之前</strong> Overwolf 已在執行中</li><li>檢查 Overwolf 覆疊是否已啟用：<a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 遊戲設定</a></li><li>以系統管理員身分執行 Firestone（你必須在事後關閉 Overwolf 並重新開啟）。參閱<a href=\"/faq#memory-reading-error\">記憶體讀取錯誤／以系統管理員身分執行</a></li><li>檢查你是否能透過 <strong>Chrome</strong> 存取 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a>。若不行，代表你的路由器／網路服務提供者（ISP）／VPN 存在阻擋 AWS 存取的問題。家長監護功能也是導致此問題的已知原因之一。<ul><li><strong>重要</strong>：這似乎是近期較常見的問題原因，請檢查你的家長監護設定（亦包括你的 ISP 設定），並將 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> 與 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名單</li><li>另請參閱本頁底部的<a href=\"/faq#connectivity-issues-global\">連線問題</a>區塊</li></ul></li><li>已知 DirectX 12 可能會干擾覆疊渲染。嘗試停用它以確認是否能改善情況（待補：需要詳細說明指引）</li><li>若所有方法皆失敗，且你的遊戲安裝於 C:\\Program Files 或 C:\\Program Files (x86) 下，請嘗試將遊戲移動至其他資料夾。這些資料夾受系統保護，當應用程式嘗試讀取遊戲資訊時可能會引發問題</li></ul>",
+                    "title": "應用程式未顯示"
+                },
+                "general-checklist": {
+                    "title": "一般自我檢查清單",
+                    "body": "<ul><li>請確保在啟動《爐石戰記》<strong>之前</strong> Overwolf 已在執行中</li><li>（特別是在新改版發布後）關閉《爐石戰記》、關閉 Firestone、重新啟動 Firestone，再重新啟動《爐石戰記》。這會強制更新應用程式（在遊戲執行時更新並不總能順利進行）</li><li>檢查是否可以在桌面啟動 Firestone（指在《爐石戰記》未執行的狀態下）。若完全沒反應：<ul><li>請檢查下方其他區塊（特別是本頁底部的<a href=\"/faq#connectivity-issues-global\">連線問題</a>部分）</li><li>若依然無法解決，請建立日誌紀錄(Log)壓縮檔並手動傳送給我（例如在 Discord 上）。參閱<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">如何取得你的 Overwolf 日誌紀錄</a></li></ul></li><li>檢查（在《爐石戰記》執行時）於《爐石戰記》安裝資料夾下的 <code>Logs/Hearthstone_XXX</code> 是否存在 <code>Decks.log</code> 檔案。若無，請重新啟動《爐石戰記》</li><li>嘗試停用你的防毒軟體／防火牆，並重新啟動 Firestone</li><li>若 Firestone 出現閃爍，可能是與 Lenovo 名為 LegionZone 的新應用程式衝突。嘗試停用該程式以確認是否能解決問題</li><li>檢查你的遊戲內時鐘是否顯示正確時間。若系統時間設定不正確（通常是「自動調整夏令時間」選項被停用）可能會發生此情況</li></ul>"
+                },
+                "no-cards-other": {
+                    "title": "其他可以嘗試的方法",
+                    "body": "<ul><li>有使用者透過從工作管理員強制關閉 Overwolf、關閉《爐石戰記》並重新啟動 Overwolf 成功解決了問題</li><li>以系統管理員身分啟動應用程式或許也能解決此問題</li></ul>"
+                },
+                "memory-reading-other": {
+                    "title": "若遇到「記憶體讀取」錯誤，其他可以嘗試的方法",
+                    "body": "<ul><li>你也可以嘗試在命令提示字元中執行 <code>sfc /scannow</code>，這已為至少 2 名玩家解決了問題</li><li>「手動結束所有與 hearthstone、bnet、overwolf、firestone 等相關的程序，然後重新啟動《爐石戰記》與 Firestone 似乎解決了問題。透過系統工作列常規重新啟動《爐石戰記》與 Overwolf/Firestone 則無效」</li><li>一名使用者成功透過將 Overwolf 安裝在與《爐石戰記》相同的子目錄下解決了此問題（例如 <code>D:\\Blizzard\\HS\\Hearthstone</code> 與 <code>D:\\Blizzard\\HS\\Overwolf</code>），因此值得一試</li></ul>"
+                },
+                "other-things-to-try": {
+                    "title": "其他可以嘗試的方法"
+                },
+                "connectivity-issues-global": {
+                    "body": "<ul><li>嘗試停用你的防毒軟體／防火牆／VPN</li><li>若你知道如何操作，請將以下網域加入白名單：<ul><li>zerotoheroes.com</li><li>firestoneapp.com</li><li>amazonaws.com</li><li>overwolf.com</li></ul></li><li>重新安裝 Firestone 有時似乎有所幫助</li></ul>",
+                    "title": "連線問題（全球）"
+                },
+                "game-is-crashing": {
+                    "title": "遊戲發生崩潰",
+                    "body": "<ul><li>參閱<a href=\"https://us.forums.blizzard.com/en/hearthstone/t/pc-crash-every-game-with-possible-solution/141218\" target=\"_blank\" rel=\"noopener noreferrer\">此暴雪討論區討論串</a>。你需要新增 <code>-force-d3d11</code> 參數，如本截圖所示：</li><li>RivaTuner / MSI AfterBurner 可能會引發衝突。參閱<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000177860-overwolf-and-conflicts-with-rivatuner\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 與 RivaTuner 的衝突</a></li><li>若你使用 AMD 顯示卡，可以嘗試停用 AMD Fluid Motion Frames 2</li><li>有使用者回報遊戲在視窗化模式下會崩潰，但在全螢幕模式下則不會。</li><li>Overwolf 尚未支援 ARM 處理器，在 ARM 處理器裝置上執行可能會導致遊戲崩潰</li></ul>"
+                },
+                "game-is-slow": {
+                    "title": "遊戲運行緩慢",
+                    "body": "<ul><li>若遊戲在執行 Firestone 時出現畫面卡頓／「不流暢」的動畫，你可以嘗試限制遊戲的 FPS。<ul><li>若要這樣做，請編輯 <code>%localappdata%\\Blizzard\\Hearthstone</code> 中的 <code>options.txt</code> 檔案，將 <code>targetframerate=60</code> 修改或新增為較低數值（我自己使用 60，其他人使用 140 也同樣成功）</li></ul></li><li>部分使用者發現透過顯示卡驅動關閉 G-Sync 會有所幫助</li><li><blockquote><p>我有 AMD 顯示卡，我只要在《爐石戰記》中關閉 AMD FreeSync 就不會再卡頓了。</p></blockquote></li></ul>"
+                },
+                "high-resource-usage": {
+                    "body": "<ul><li>部分使用者回報 GPU 使用率過高，這是由 Outplayed 應用程式引起的。若發生狀況，請嘗試停用那個應用程式</li></ul>",
+                    "title": "資源佔用過高"
                 }
+            },
+            "permalink-aria": "連結至此區段",
+            "toc-title": "本頁索引",
+            "images": {
+                "reset-widgets": "重設所有覆疊小工具位置的設定按鈕",
+                "firestone-elevated": "工作管理員顯示 Firestone 是否以管理員身份執行",
+                "grant-permissions": "授予所有權限的 Windows 相容性設定",
+                "run-as-admin": "已啟用「以管理員身份執行」的 Windows 捷徑內容",
+                "task-manager-columns": "工作管理員「詳細資料」分頁，「選取欄位」選單",
+                "elevated-column": "工作管理員「選取欄位」器，勾選「已提高權限」",
+                "force-d3d11": "包含 -force-d3d11 參數的 Battle.net 啟動選項",
+                "russia-firewall-3": "為 Overwolf 阻擋 Cloudflare IP 的 Windows 防火牆規則",
+                "russia-firewall-2": "Windows 防火牆規則作用範圍",
+                "russia-firewall-1": "針對 Overwolf 的 Windows 防火牆規則"
+            },
+            "page-subtitle": "Firestone 的常見問題與修復方法。",
+            "nav-label": "常見問題",
+            "page-title": "常見問題與疑難排解"
+        },
+        "docs": {
+            "pages": {
+                "developer-resources": {
+                    "sections": {
+                        "duels": {
+                            "title": "決鬥擂台",
+                            "body": "<ul><li>英雄／英雄能力／簽名寶藏：<code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-%mmr%-%date%.gz.json</code></li><li>高勝率套牌：<a href=\"https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json</code></a></li><li>寶牌包：<a href=\"https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json</code></a></li></ul>"
+                        },
+                        "api-links": {
+                            "body": "<p>API 各處使用的少數預位符：</p><ul><li><code>",
+                            "title": "API 連結"
+                        },
+                        "battlegrounds": {
+                            "title": "英雄戰場",
+                            "body": "<ul><li>英雄統計數據：<code>https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-%tribeSuffix%-%timeSuffix%.gz.json</code><ul><li>例如：<a href=\"https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-all-tribes-last-patch.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">bgs-global-stats-all-tribes-last-patch.gz.json</a></li><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li><li>完美賽局：<a href=\"https://static.zerotoheroes.com/api/bgs-perfect-games.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/bgs-perfect-games.json</code></a><ul><li><a href=\"https://github.com/Zero-to-Heroes/trigger-publish-bgs-perfect-game\" target=\"_blank\" rel=\"noopener noreferrer\">trigger-publish-bgs-perfect-game</a></li></ul></li><li>任務統計數據：<code>https://static.zerotoheroes.com/api/bgs/quests/bgs-global-stats-%timeSuffix%.gz.json</code><ul><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li></ul>"
+                        },
+                        "general": {
+                            "body": "<ul><li>所有卡牌：<a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</code></a><ul><li>將 <code>enUS</code> 替換為《爐石戰記》支援的語言代碼即可存取其他語言版本</li></ul></li></ul>",
+                            "title": "一般設定"
+                        }
+                    },
+                    "title": "開發者資源",
+                    "subtitle": "用於統計數據、資訊圖表或僅供娛樂的公開 Firestone API。",
+                    "blurb": "用於英雄戰場、決鬥領主與卡牌數據的公開統計 API。",
+                    "intro": "<p>你可以直接使用這些 API 來建立有趣的統計數據、懶人包圖表，或純粹出於興趣製作。若你發表任何內容，請務必註明 Firestone 為資料來源。</p><p>若你想將資料用於公開應用程式，請透過 <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 與我聯繫。</p>"
+                },
+                "setup": {
+                    "sections": {
+                        "streamer": {
+                            "body": "<ul><li>你可以透過「整合」&gt;「Twitch」選單啟用 Twitch 擴充功能（或直接透過頂部欄搜尋「Twitch」）</li></ul><p>（待補充）</p>",
+                            "title": "實況主"
+                        },
+                        "general": {
+                            "body": "<ul><li>在「全域」&gt;「小工具」中，你可以變更應用程式中小工具的全域縮放比例。</li></ul>",
+                            "title": "一般設定"
+                        }
+                    },
+                    "subtitle": "Firestone 具有高度的可自訂性，但預設設定可能無法完全滿足你的需求（這是我計劃在近期改進的部分）。因此你可能需要先調整一些選項，因為你在應用程式中看到的幾乎所有內容都可以自由開啟或關閉。",
+                    "title": "設定 Firestone",
+                    "intro": "<p>這些設定（我認為）相當容易導覽：功能依選單進行分類，你也可以使用頂部的搜尋方塊尋找所需項目。</p>",
+                    "blurb": "微調 Firestone 設定，讓覆疊介面與小工具更符合你的遊戲習慣。"
+                },
+                "twitch": {
+                    "sections": {
+                        "what-is-the-twitch-extension": {
+                            "body": "<p>它會在瀏覽器上新增套牌清單覆疊，方便你的觀眾檢視你套牌中的內容，並可將游標移至卡牌上方以及複製套牌代碼。</p><p>它也能讓你的觀眾將游標移至牌桌上或手牌中的卡牌上方，詳細檢視卡牌效果。</p>",
+                            "title": "什麼是 Twitch 擴充功能"
+                        },
+                        "firestone-configuration": {
+                            "intro": "<p>首先你需要從 Firestone 登入 Twitch。請前往「設定」&gt;「一般設定」&gt;「Twitch」</p>",
+                            "overlays": "<p>你無需進行其他操作，記牌器覆疊（記牌器、對手記牌器、秘密輔助計數器等）將會自動擷取至實況中。</p>",
+                            "after-login": "<p>登入完成後，畫面會如下所示</p>",
+                            "title": "Firestone 設定"
+                        },
+                        "capturing-the-tracker": {
+                            "body": "<p>預設情況下應該能直接運作。然而，若你的 Firestone 覆疊未在遊戲內顯示，你可以參考此疑難排解指南：<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176947-how-to-show-overwolf-in-game-while-streaming\" target=\"_blank\" rel=\"noopener noreferrer\">實況時如何在遊戲內顯示 Overwolf</a></p>",
+                            "title": "擷取記牌器與覆疊介面"
+                        },
+                        "capturing-main-and-battlegrounds": {
+                            "title": "擷取主視窗與英雄戰場視窗",
+                            "intro": "<p><em>如果你只對實況你的遊戲過程感興趣，你大概可以忽略這個部分。</em></p><p>Firestone 擁有兩個主要視窗，可以讓你向觀眾展示統計數據——一個是酒館戰棋專用視窗，用來顯示你當前對局的統計數據；另一個則包含你過去所有對局的統計數據。預設情況下，Firestone 的主視窗與酒館戰棋視窗並非覆疊。這意味著你可以將它們移至遊戲區域之外，但另一方面，它們不會被擷取到實況中。</p><p>若要擷取它們，你有兩種選擇：</p><ul><li>將它們移動到第二個螢幕，並擷取整個螢幕</li><li>啟用下方顯示的兩個「覆疊」選項。這會將視窗綁定至遊戲畫面（因此無法再將它們拖曳至外部），並可讓 OBS 自動擷取它們（變更這些選項可能會強制 Firestone 關閉並重新開啟一次）：</li></ul>"
+                        },
+                        "installing": {
+                            "title": "安裝 Twitch 擴充功能",
+                            "body": "<p>接著，你需要從 <a href=\"https://dashboard.twitch.tv/extensions/jbmhw349lqbus9j8tx4wac18nsja9u\" target=\"_blank\" rel=\"noopener noreferrer\">Twitch 控制台</a>安裝 Firestone Twitch 擴充功能（該連結亦提供於 Firestone 設定畫面中）。</p><p>之後只需安裝即可，無需進行額外設定。</p><p><strong>🚨</strong> Twitch 偶爾會將你從 Firestone 登出。因此若你無法在頻道上看到任何互動式覆疊，請先至 Firestone 設定中確認你確實已正常登入 Twitch。</p>"
+                        }
+                    },
+                    "blurb": "將 Firestone 連結至 Twitch 並在直播中擷取覆疊介面。",
+                    "title": "設定 Twitch 擴充功能",
+                    "subtitle": "在 Twitch 上向觀眾展示你的套牌清單與卡牌覆疊介面。"
+                },
+                "creator-code": {
+                    "sections": {
+                        "notes": {
+                            "body": "<ul><li>此代碼僅適用於你首期訂閱的時間。我正在與 Tebex 洽談讓此代碼每次自動重新套用，但目前確保你每月都能支持創作者的最佳方式，是使用代碼訂閱後取消自動續訂，並在當前訂閱結束後手動重新輸入代碼。</li><li>此代碼適用於所有方案（月繳／年繳）</li><li>若遇到問題，請在 <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上敲 @sebastientromp</li></ul>",
+                            "title": "備註"
+                        }
+                    },
+                    "title": "如何使用創作者代碼",
+                    "blurb": "訂閱 Premium 時，支持創作者並獲得折扣。",
+                    "intro": "<p>此流程非常簡單直接：在結帳頁面上，只需在下方顯示欄位中輸入創作者與你分享的代碼即可：</p>",
+                    "subtitle": "在 Tebex 訂閱 Firestone Premium 時，你可以輸入創作者代碼以支持你喜愛的內容創作者並獲得折扣。"
+                },
+                "mods": {
+                    "sections": {
+                        "installing": {
+                            "body": "<p>首先，你需要在 Firestone 內部透過「設定」&gt;「一般」&gt;「模組」區塊來啟用模組支援（執行此步驟時遊戲必須處於關閉狀態）。</p><p>你應遵循每個模組的特定說明，但核心要點為：</p><ul><li>將模組的主要檔案複製到 <code>Hearthstone/BepInEx/plugins</code> 資料夾</li><li>將模組的相依性套件複製到 <code>Hearthstone/BepInEx/plugins</code> 資料夾（同一個資料夾）</li></ul><p>接著重新啟動遊戲。當你使用新安裝的模組啟動過一次遊戲後，Firestone 便會偵測到該模組。</p>",
+                            "title": "安裝模組"
+                        },
+                        "known-mods": {
+                            "title": "已知模組",
+                            "body": "<p><strong>⚠️</strong> 這些模組是由社群建立與維護，因此我無法提供任何支援。請改為在各模組的 GitHub 專案庫中建立 Issue。此外如上所述，為《爐石戰記》使用模組違反了該遊戲的服務條款，因此我並不背書任何模組。不過我個人已審閱過這些模組，認為它們的功能屬於「安全」範疇，不應有遭封鎖的風險（但仍請參閱頁面頂端的警告）。</p><ul><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-auto-squelch\" target=\"_blank\" rel=\"noopener noreferrer\">自動消音</a>：永遠不必再看到對手的表情。</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-golden-buddy-tooltip\" target=\"_blank\" rel=\"noopener noreferrer\">金卡夥伴提示工具</a>：將游標移至夥伴按鈕上方時，可查看該夥伴的金卡版本。</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-show-collection-exact-count\" target=\"_blank\" rel=\"noopener noreferrer\">顯示收藏多餘卡牌計數</a>：將收藏頁面中的「9+」替換為精確的卡牌持有數量。</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-remove-ghost-overlay\" target=\"_blank\" rel=\"noopener noreferrer\">移除收藏鬼影覆疊</a>：在收藏頁面中檢閱未擁有的卡牌時，移除「虛影」覆疊，以便完整檢視卡牌細節，並自行決定是否因精美的插畫而製作該卡牌。</li></ul>"
+                        },
+                        "developing": {
+                            "title": "開發模組",
+                            "body": "<p>Firestone 隨附內建版本的 <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>。這是安裝模組以在遊戲中新增功能的極簡易方式。你也可以自行安裝 BepInEx。</p><p>開發 BepInEx 外掛程式請參閱 BepInEx 說明文件，或參考現有的模組。你也可以在 <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上敲我。</p><p>《爐石戰記》與 Firestone 特有的功能（例如取得雙方玩家的套牌狀態）稍後將可供你在自己的模組中使用。因此理論上你將能打造出一個完全整合的記牌器 🙂️</p>"
+                        },
+                        "not-ok": {
+                            "title": "明確禁止使用的模組",
+                            "body": "<ul><li>提供不公平優勢／外掛作弊的模組</li><li>讓你能存取尚未解鎖的造型外觀的模組</li><li>更廣泛地說，任何讓你存取本應透過遊戲內資源或真實貨幣購買之內容的模組，或違背開發者意圖的模組</li></ul>"
+                        },
+                        "old-mods": {
+                            "title": "舊版模組",
+                            "body": "<p>這些是已停止維護且不再運作的模組。若你對其中任何模組感興趣，請在該模組的專案庫中建立 Issue，要求維護者將其更新以適應 Firestone 的新版管理器。</p><ul><li><a href=\"https://github.com/sebastientromp/hs-melon-hide-mercenary-emotes\" target=\"_blank\" rel=\"noopener noreferrer\">隱藏傭兵表情</a>：移除部分傭兵（例如鑽石頭像）所說的台詞／對話框</li><li><a href=\"https://github.com/sebastientromp/hs-melon-increase-game-speed-vs-ai\" target=\"_blank\" rel=\"noopener noreferrer\">加速和AI對戰時的動畫</a>：對戰 AI 時將動畫速度提高至 4 倍。<strong>⚠️</strong> 使用此模組時請小心，因為提高遊戲速度（即使是對戰 AI）可能會遭到暴雪關切</li></ul>"
+                        },
+                        "requirements": {
+                            "title": "需求",
+                            "body": "<p>為了能被 Firestone 的模組管理器辨識，你的模組應公開一份包含 Name(名稱)、Version(版本)、Guid(組建) 與 DownloadLink（下載連結，指向專案庫）的 Config。目前尚不支援外部相依性套件，若你有此需求請至 Discord 敲我。</p>"
+                        }
+                    },
+                    "blurb": "透過 Firestone 安裝與開發《爐石戰記》模組。",
+                    "title": "模組",
+                    "intro": "<p><strong>⚠️ 為《爐石戰記》使用模組(Mod)違反了該遊戲的服務條款，並可能導致你的帳號遭到封鎖。請自行承擔使用風險。</p><p><strong>",
+                    "subtitle": "透過 Firestone 智慧型 BepInEx 模組管理器使用社群模組。"
+                },
+                "lottery": {
+                    "intro": "<p>Firestone 抽獎讓你有機會贏得為期 2 個月的 Firestone Premium 版訂閱權限。</p><p>你只要在遊玩時開啟並保持抽獎視窗可見即可參與 Firestone 抽獎（追蹤成就時同樣有效）。</p><p>每個賽季（目前為每兩週），你皆可透過在遊戲中執行特定動作來獲得積分，這些動作均顯示於抽獎視窗中。每項動作都會為你提供積分，並在每局賽季期間的每場賽局結束後累積。賽季結束時，系統將從所有參與者中隨機抽出兩名獲勝者，權重根據你所累積的積分計算。積分越多，獲勝機率越高。</p>",
+                    "blurb": "在遊戲時賺取積分，即有機會贏得 Premium 特權。",
+                    "title": "Firestone 抽獎",
+                    "subtitle": "贏取為期 2 個月的 Firestone Premium 訂閱。"
+                }
+            },
+            "images": {
+                "twitch-settings": "登出狀態下的 Firestone Twitch 設定",
+                "setup-settings": "Firestone 設定搜尋框",
+                "creator-code-field": "Tebex 結帳頁面上的創作者代碼欄位",
+                "twitch-connected": "連結帳號後的 Firestone Twitch 設定",
+                "twitch-battlegrounds-window": "在實況中擷取英雄戰場視窗的設定",
+                "twitch-main-window": "在實況中擷取 Firestone 主視窗的設定",
+                "creator-code-checkout": "包含創作者代碼欄位的 Tebex 結帳頁面"
+            },
+            "back-label": "所有說明文檔",
+            "nav-label": "文檔",
+            "page-title": "文檔",
+            "page-subtitle": "包含設定 Firestone、串流、模組以及公開 API 的指南。",
+            "permalink-aria": "連結至此區段",
+            "toc-title": "本頁索引"
+        },
+        "auth": {
+            "coming-soon": "即將推出",
+            "linking": "正在將你重新導向至 Battle.net…",
+            "privacy-suffix": " ",
+            "callback": {
+                "link-success": "Battle.net 已連結！",
+                "fallback-prefix": "若沒有任何反應， ",
+                "fallback-link": "點選此處開啟 Firestone",
+                "fallback-suffix": ".",
+                "link-returning": "正在將你返回 Firestone 應用程式。你現在可以使用 Battle.net 登入。",
+                "signing-in": "正在為你登入...",
+                "please-wait": "請稍候，我們正在驗證你的帳號",
+                "success": "成功！",
+                "failed": "⚠️ 登入失敗",
+                "returning": "正在將你返回 Firestone 應用程式…",
+                "hint": "你的瀏覽器可能會詢問是否開啟 Firestone 應用程式 — 請選擇「允許」或「開啟」。",
+                "try-again": "重試"
+            },
+            "privacy-link": "隱私權政策",
+            "errors": {
+                "failed": "無法完成登入。請重試。",
+                "invalid-response": "無效的身份驗證回應。",
+                "battlenet-not-configured": "尚無法使用 Battle.net 登入。請稍後再試。",
+                "missing-link-token": "此連結已過期。請在 Overwolf 登入狀態下，從 Firestone 應用程式內開啟「連結 Battle.net」。",
+                "no-code": "未收到授權碼",
+                "generic": "發生錯誤，請重試。",
+                "cancelled": "驗證已取消或被拒絕。",
+                "invalid-state": "無效的狀態參數。請嘗試重新登入。",
+                "missing-verifier": "缺少 PKCE 驗證碼。請嘗試重新登入。"
+            },
+            "privacy-prefix": "登入即代表你同意我們的 ",
+            "link-subtitle": "將 Battle.net 連結至你的 Firestone 帳號",
+            "subtitle": "登入以跨裝置同步你的數據",
+            "continue-with-battlenet": "使用 Battle.net 繼續",
+            "continue-with-google": "使用 Google 繼續",
+            "continue-with-overwolf": "使用 Overwolf 繼續"
+        },
+        "monitoring": {
+            "simulator": {
+                "legend-needs-work": "低於此標準需待改進",
+                "loading": "正在載入準確度數據…",
+                "document-title": "英雄戰場模擬器準確度 — Firestone",
+                "page-lead": "追蹤英雄戰場戰鬥模擬器隨時間推移與實際遊戲結果相符的頻率。",
+                "legend-good": "準確度大於 0.5 為良好",
+                "legend-very-good": "準確度大於 0.8 為優良",
+                "page-title": "英雄戰場模擬器準確度",
+                "empty-range": "選定的日期範圍內無數據。",
+                "resolution-weekly": "顯示每週總計（選定的範圍大於 45 天）。",
+                "to": "至",
+                "resolution-daily": "顯示每日數值。",
+                "chart-label": "準確度",
+                "load-error": "無法載入模擬器準確度數據。",
+                "from": "從",
+                "tooltip-version": "版本：{{version}}",
+                "tooltip-games": "賽局數：{{games}}",
+                "resolution-monthly": "顯示每月總計（選定的範圍大於 180 天）。",
+                "tooltip-accuracy": "準確度：{{accuracy}}",
+                "tooltip-failures": "失敗次數：{{failures}}"
             }
+        },
+        "premium": {
+            "cta": {
+                "download": "下載 Firestone",
+                "get": "取得 Firestone"
+            },
+            "sections": {
+                "battlegrounds": {
+                    "items": {
+                        "example-boards": {
+                            "text": "流派詳細資訊中的範例陣容",
+                            "screenshots": {
+                                "comp-details": {
+                                    "caption": "海盜 APM 流派的範例陣容",
+                                    "alt": "流派詳細資訊中的範例陣容"
+                                }
+                            }
+                        },
+                        "quest-rewards": {
+                            "screenshots": {
+                                "stats": {
+                                    "caption": "任務完成與獎勵數據統計",
+                                    "alt": "覆疊介面中的英雄戰場任務與獎勵數據"
+                                }
+                            },
+                            "text": "針對你的英雄與 MMR 提供任務完成與獎勵選擇的參考背景資訊"
+                        },
+                        "lobby-history": {
+                            "text": "與大廳中其他玩家的勝敗戰績歷史",
+                            "screenshots": {
+                                "scoreboard": {
+                                    "caption": "與大廳中其他玩家的勝敗戰績歷史",
+                                    "alt": "英雄戰場大廳對戰紀錄，顯示對戰大廳中與其他玩家的勝負紀錄"
+                                }
+                            }
+                        },
+                        "hero-page-extras": {
+                            "screenshots": {
+                                "hero-stats": {
+                                    "caption": "英雄頁面額外功能：近期重播紀錄",
+                                    "alt": "英雄戰場英雄頁面額外功能，顯示該英雄最近的重播紀錄"
+                                }
+                            },
+                            "text": "英雄頁面額外功能：梯隊摘要、該英雄近期重播紀錄"
+                        },
+                        "post-match-stats": {
+                            "screenshots": {
+                                "stats": {
+                                    "caption": "豐富的遊戲內與賽後數據統計",
+                                    "alt": "英雄戰場賽後數據，顯示豐富的遊戲內與賽後統計數據"
+                                }
+                            },
+                            "text": "豐富的遊戲內與賽後數據統計"
+                        },
+                        "past-match-stats": {
+                            "text": "對戰重播中過往賽局的詳細回顧統計",
+                            "screenshots": {
+                                "replays": {
+                                    "caption": "過往賽局的詳細回顧統計",
+                                    "alt": "英雄戰場重播數據，顯示過往賽局的詳細回顧統計"
+                                }
+                            }
+                        },
+                        "trinket-stats": {
+                            "text": "覆疊介面上的飾品數據"
+                        },
+                        "hero-selection": {
+                            "text": "在初始選擇最關鍵的時刻，提供包含梯隊與數據的英雄選擇覆疊介面",
+                            "screenshots": {
+                                "overlay": {
+                                    "alt": "英雄戰場英雄選擇覆疊，在選牌階段顯示英雄選項的梯隊與數據",
+                                    "caption": "包含梯隊與數據的英雄選擇覆疊"
+                                }
+                            }
+                        },
+                        "lobby-overview": {
+                            "text": "在大廳按下 Tab 鍵即可快速查看完整英雄總覽",
+                            "screenshots": {
+                                "overview": {
+                                    "alt": "大廳中所有英雄的快速總覽",
+                                    "caption": "大廳中所有英雄的快速總覽"
+                                }
+                            }
+                        },
+                        "fight-by-fight": {
+                            "screenshots": {
+                                "chart": {
+                                    "alt": "英雄戰場逐場勝率展望圖表",
+                                    "caption": "每場戰鬥勝率預測圖表"
+                                }
+                            },
+                            "text": "每場戰鬥勝率預測圖表"
+                        },
+                        "remote-sim": {
+                            "text": "當電腦本機模擬負荷過重時，可選擇使用遠端戰鬥模擬"
+                        },
+                        "auto-highlight": {
+                            "text": "根據你的英雄自動高亮旅店中的手下"
+                        }
+                    },
+                    "title": "英雄戰場"
+                },
+                "constructed": {
+                    "items": {
+                        "meta-by-rank": {
+                            "screenshots": {
+                                "card-stats": {
+                                    "alt": "對戰模式主流數據，顯示預兆盜賊原型的詳細單卡數據",
+                                    "caption": "套牌原型層級的詳細單卡數據"
+                                },
+                                "decks": {
+                                    "caption": "傳說階級當前的主流套牌",
+                                    "alt": "對戰模式主流數據，顯示傳說階級當前的主流套牌"
+                                },
+                                "archetypes": {
+                                    "alt": "對戰模式主流數據，顯示競爭型玩家當前的主流套牌原型",
+                                    "caption": "競爭階級區間當前的主流套牌原型"
+                                }
+                            },
+                            "text": "依階級分類的當前主流：套牌、原型與詳細單卡數據"
+                        },
+                        "lobby-mulligan": {
+                            "text": "在配對佇列前可於大廳查看的換牌指南",
+                            "screenshots": {
+                                "lobby": {
+                                    "alt": "在配對佇列前可於大廳中查看的對戰模式換牌指南",
+                                    "caption": "可於大廳查看的換牌指南"
+                                }
+                            }
+                        },
+                        "mulligan-overlay": {
+                            "text": "換牌指南覆疊無限制使用",
+                            "screenshots": {
+                                "guide": {
+                                    "alt": "對戰模式換牌指南覆疊",
+                                    "caption": "換牌指南覆疊無限制使用"
+                                }
+                            }
+                        },
+                        "deck-overview": {
+                            "text": "套牌頁面上的套牌總覽與最近重播紀錄",
+                            "screenshots": {
+                                "details": {
+                                    "alt": "對戰模式套牌總覽，顯示該套牌最近的重播紀錄",
+                                    "caption": "套牌總覽與最近的重播紀錄"
+                                }
+                            }
+                        },
+                        "discover-overlay": {
+                            "text": "發現覆疊數據無限制使用"
+                        }
+                    },
+                    "title": "對戰模式"
+                },
+                "arena": {
+                    "items": {
+                        "class-pick": {
+                            "screenshots": {
+                                "overlay": {
+                                    "alt": "覆疊介面中的職業選擇數據無限制使用",
+                                    "caption": "覆疊介面中的職業選擇數據無限制使用"
+                                }
+                            },
+                            "text": "覆疊介面中的職業選擇數據無限制使用"
+                        },
+                        "mulligan-overlay": {
+                            "text": "換牌指南覆疊無限制使用",
+                            "screenshots": {
+                                "guide": {
+                                    "caption": "換牌指南覆疊無限制使用",
+                                    "alt": "競技場換牌指南覆疊"
+                                }
+                            }
+                        },
+                        "runs-insights": {
+                            "text": "競技場輪次額外分析",
+                            "screenshots": {
+                                "overview": {
+                                    "caption": "競技場輪次額外分析",
+                                    "alt": "競技場輪次額外分析"
+                                }
+                            }
+                        },
+                        "card-pick": {
+                            "text": "覆疊介面中的選牌數據",
+                            "screenshots": {
+                                "overlay": {
+                                    "alt": "覆疊介面中的選牌數據",
+                                    "caption": "覆疊介面中的選牌數據"
+                                }
+                            }
+                        }
+                    },
+                    "title": "競技場"
+                },
+                "collection": {
+                    "items": {
+                        "pack-history": {
+                            "screenshots": {
+                                "history": {
+                                    "alt": "按時間順序排列的卡牌與卡牌包歷史紀錄",
+                                    "caption": "按時間順序排列的卡牌與卡牌包歷史紀錄"
+                                }
+                            },
+                            "text": "按時間順序排列的卡牌與卡牌包歷史紀錄"
+                        },
+                        "per-set-stats": {
+                            "screenshots": {
+                                "global": {
+                                    "caption": "詳細的全域收藏數據",
+                                    "alt": "詳細的全域收藏數據"
+                                },
+                                "per-set": {
+                                    "alt": "依系列分類的詳細收藏數據",
+                                    "caption": "依系列分類的詳細收藏數據"
+                                }
+                            },
+                            "text": "依系列分類的詳細收藏數據"
+                        }
+                    },
+                    "title": "收藏"
+                },
+                "general": {
+                    "items": {
+                        "discord-presence": {
+                            "screenshots": {
+                                "status": {
+                                    "caption": "包含自訂狀態預設文字的 Discord 豐富效果",
+                                    "alt": "包含自訂狀態預設文字的 Discord 豐富效果"
+                                }
+                            },
+                            "text": "包含自訂狀態預設文字的 Discord 豐富效果"
+                        },
+                        "in-game-replays": {
+                            "text": "豐富的遊戲內重播",
+                            "screenshots": {
+                                "replay": {
+                                    "alt": "豐富的遊戲內重播，包含遊戲原汁原味的音效與動畫",
+                                    "caption": "豐富的遊戲內重播，包含遊戲原汁原味的音效與動畫"
+                                }
+                            }
+                        }
+                    },
+                    "title": "一般與重播"
+                }
+            },
+            "summary": {
+                "title": "你將獲得的權益",
+                "unlimited-overlays": "無限制使用傳統爐石對戰中的發現與換牌覆疊，以及英雄戰場的選擇與數據覆疊（免費版使用者有每日或每週限制）",
+                "ad-free": "移除應用程式內廣告",
+                "meta-analytics": "應用程式內提供完整的主流套牌與原型分析、單卡數據分析，以及更豐富的套牌頁面",
+                "battlegrounds": "英雄戰場英雄選擇覆疊、任務與獎勵數據、提示、自動高亮、大廳分析以及賽後數據分析",
+                "support": "支持 Firestone 的持續開發"
+            },
+            "hero": {
+                "subtitle": "解鎖完整的輔助工具體驗：每個畫面皆有更深入的數據、無限制的遊戲內覆疊介面、無廣告，以及更多快速提升技術的方法。",
+                "title": "Firestone Premium",
+                "note": "請於 Firestone 應用程式內購買訂閱（Premium 分頁或愛心圖示）。價格將於應用程式內的結帳頁面顯示。"
+            },
+            "document-title": "Firestone Premium — www.firestoneapp.com",
+            "free-tier": {
+                "title": "免費版與 Premium 版比較",
+                "lead": "Firestone 可保持免費使用。許多覆疊介面皆包含每日或每週的免費額度；升級 Premium 則可解鎖這些指南的無限次使用權限。",
+                "arena": "競技場：每日可使用 {{discovers}} 次發現；每日可使用 {{mulligan}} 次換牌；每週可使用 {{draft}} 次選牌覆疊",
+                "constructed": "對戰模式：每日可使用 {{discovers}} 次發現覆疊；每日可使用 {{mulligan}} 次換牌指南",
+                "unlimited": "Premium 解鎖了上述覆疊介面的這些限制，讓你在關鍵時刻總能掌握精確數據。",
+                "battlegrounds": "英雄戰場：每日可使用 {{heroSelection}} 次英雄選擇覆疊；每日可使用 {{quests}} 次任務；每日可使用 {{trinkets}} 次飾品；每日可使用 {{timewarped}} 次時光扭曲"
+            },
+            "subscribe": {
+                "title": "如何訂閱",
+                "step-1": "安裝並開啟 Firestone (Overwolf)。",
+                "step-2": "跳出提示時，請使用你的 Overwolf 帳號登入。",
+                "step-3": "從愛心圖示或應用程式內的 Premium 入口開啟 Premium，然後選擇訂閱方案。",
+                "step-4": "可隨時透過 Tebex 付款紀錄管理或取消訂閱 — 相關連結顯示於 Premium 畫面內。"
+            },
+            "lightbox": {
+                "close": "關閉全尺寸圖片",
+                "view-full-size": "檢視完整尺寸：{{alt}}"
+            },
+            "carousel": {
+                "gallery": "媒體藝廊，共 {{count}} 個項目",
+                "next": "下一個項目",
+                "previous": "上一個項目",
+                "hint": "滑動或使用箭頭以瀏覽",
+                "roledescription": "輪播"
+            }
+        },
+        "meta": {
+            "title": "Firestone - 《爐石戰記》數據統計與主流分析"
+        },
+        "nav": {
+            "home": "Firestone 首頁",
+            "premium": "Premium",
+            "download-alt": "下載 Firestone",
+            "language": "語言"
+        },
+        "redirect": {
+            "partner": "正在重新導向...",
+            "in-game-replay": "正在重新導向至 Firestone..."
         }
     },
     "archetype": {
@@ -5280,7 +5963,7 @@
         "warlock": "未知型態-術",
         "xl-casino-mage": "40牌 賭命-法",
         "paladin": "未知型態-聖",
-        "shaman": "未知型態-薩滿",
+        "shaman": "未知型態-薩",
         "xl-fuu-plague-dk": "40牌 FUU瘟疫-死騎",
         "xl-thief-rogue": "40牌 偷偷-賊",
         "warrior": "未知型態-戰",
@@ -5662,7 +6345,7 @@
         "shadow-priest": "暗影-牧",
         "ravenous-cliff-dive-dh": "死聲跳崖運動-惡魔獵",
         "xl-hooktusk-rogue": "40牌 鉤牙-賊",
-        "xl-seedlock": "40牌 惡魔之種-術",
+        "xl-seedlock": "40牌 任務(惡魔之種)-術",
         "bbu-menagerie-succ-dk": "BBU動物園血蛭-死騎",
         "bbb-succ-dk": "血魄血蛭-死騎",
         "imbue-shaman": "注能-薩",
@@ -5690,7 +6373,7 @@
         "asteroid-imbue-shaman": "隕星注能-薩",
         "uu-starship-warlock": "雙穢邪星艦-術",
         "bbu-even-dk": "BBU偶數-死騎",
-        "questline-dh": "任務-惡魔獵",
+        "questline-dh": "任務線(一決雌雄)-惡魔獵",
         "xl-buu-starship-dk": "40牌 BUU星艦-死騎",
         "uuu-aggro-plague-dk": "穢邪瘟疫快攻-死騎",
         "linecracker-druid": "戰線擊破者德",
@@ -5726,7 +6409,7 @@
         "xl-aviana-druid": "40牌 艾維娜-德",
         "xl-malygos-druid": "40牌 瑪里苟斯-德",
         "nazmani-priest": "納茲曼織血者-牧",
-        "xl-hl-questline-priest": "40牌 無雙任務-牧",
+        "xl-hl-questline-priest": "40牌 無雙任務線(尋求指引)-牧",
         "xl-shadow-priest": "40牌 暗影-牧",
         "u-wallow-warlock": "穢邪『惡樹』瓦洛-術",
         "f-wallow-warlock": "冰霜『惡樹』瓦洛-術",
@@ -5917,16 +6600,16 @@
         "clone-mech-paladin": "機械(指揮官碧翠絲)-聖",
         "exodia-paladin": "四騎士-聖",
         "hl-igneous-warrior": "無雙(火成熔岩吞噬者)-戰",
-        "hl-questline-priest": "無雙任務線-牧",
+        "hl-questline-priest": "無雙任務線(尋求指引)-牧",
         "hl-thief-priest": "無雙小偷-牧",
         "harold-demon-warlock": "預兆惡魔-術",
         "harold-warlock": "預兆-術",
         "heal-burn-priest": "燒血(晶紅聖所)-牧",
         "hostage-rogue": "無賴-賊",
         "miracle-seedlock": "奇蹟任務(惡魔之種)-術",
-        "ohnahra-big-shaman": "雍亞拉大怪-薩滿",
+        "ohnahra-big-shaman": "雍亞拉大怪-薩",
         "pirate-dh": "海盜-惡魔獵",
-        "questline-priest": "任務線(尋求指引)-牧師",
+        "questline-priest": "任務線(尋求指引)-牧",
         "rivendare-hunter": "瑞文戴爾-獵",
         "soothsayer-priest": "預卜者-牧",
         "switcheroo-priest": "立場對調-牧",
@@ -5945,7 +6628,16 @@
         "xl-hl-shudder-shaman": "40牌 無雙戰吼(哮斗龍)-薩",
         "xl-ilgynoth-dh": "40牌 OTK(伊蓋諾斯)-惡魔獵",
         "xl-tick-tock-warlock": "40牌 終焉-術",
-        "xl-velarok-rogue": "40牌 節奏(維拉若克)-賊"
+        "xl-velarok-rogue": "40牌 節奏(維拉若克)-賊",
+        "raza-dh": "英雄能力(靈魂獻祭)-惡魔獵",
+        "xl-champions-druid": "40牌 OTK(艾澤拉斯的勇士)-德",
+        "xl-hl-questline-mage": "40牌 無雙任務線(法師的策略)-法",
+        "xl-hl-shadow-priest": "40牌 無雙暗影-牧",
+        "xl-hl-thief-priest": "40牌 無雙偷偷-牧",
+        "chad-seedlock": "泰迪斯任務(惡魔之種)-術",
+        "cute-warrior": "可愛-戰",
+        "hl-n-roll-warrior": "無雙黑石搖滾-戰",
+        "xl-hl-imbue-rogue": "40牌 無雙注能-賊"
     },
     "arena": {
         "overlay": {
@@ -6069,6 +6761,10 @@
         "demon_boost_shop": "商店增益流惡魔",
         "quilboar_choose_one": "二選一流野豬人",
         "pirate_discover": "發現流海盜",
-        "beast_lobster": "龍蝦流野獸"
+        "beast_lobster": "龍蝦流野獸",
+        "naga_end_of_turn": "回合結束流納迦",
+        "neutral_tea_set": "茶具流",
+        "beast_beetle": "甲蟲流野獸",
+        "dragon_evoker": "「炎鑄喚術師」流龍類"
     }
 }
