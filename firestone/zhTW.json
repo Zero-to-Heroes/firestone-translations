@@ -3842,7 +3842,7 @@
                 "general-bug-text": "請：首先檢查故障排除步驟",
                 "link-text": "這裡",
                 "email-placeholder": "你的電子郵件（推荐）",
-                "message-placeholder": "請輸入內容。若要回報錯誤，請嘗試描述錯誤發生時你正在進行的操作，以及發生了什麼狀況讓你決定回報此錯誤。",
+                "message-placeholder": "請輸入內容。若要回報錯誤，請嘗試描述錯誤發生時你正在進行的動作，以及發生了什麼狀況讓你決定回報此錯誤。",
                 "send-button": "傳送",
                 "status-uploading-logs": "日誌檔上傳中",
                 "status-sending-feedback": "日誌檔上傳完畢， 正在傳送意見反應",
@@ -5290,7 +5290,7 @@
                 },
                 "connectivity-issues-russia": {
                     "body": "<p><strong>如果你從俄羅斯連接，請嘗試以下方法</strong>。以下是一些使用者在電腦上解決連線問題的方法。 </p><blockquote><p>卸載並重新安裝 Firestone 對我有效</p><p>通過將其添加到 Goodbye DPI 的黑名單中解決了問題<a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a> </p><p>這些尤其適用於 GoodbyeDPI 用戶。要在 Google Chrome 中正常工作，你需要訪問 chrome://flags 並禁用以下三個特定標誌：</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>由於部分用戶似乎只在使用 cloudflare-ech.com 時遇到問題（該網站幾天前被俄羅斯的一些服務商屏蔽），因此將其添加到黑名單文本文件中可以解決問題。我原本也想將 static.firestoneapp.com 添加到該清單中，但就我的情況而言，沒有必要。 </p><p>首先，我從命令提示字元中 ping 了幾次 cloudflare 以取得其 IP 位址。然後，我建立了一條 Windows 防火牆規則，僅針對 Overwolf.exe 封鎖來自已取得 IP 位址的所有連線。之後可能需要重新安裝 Firestone：</p></blockquote>",
-                    "more": "<blockquote><p>在你的電腦上開啟 VPN，下載《爐石戰記》，在 Overwolf 中刪除此應用程式後重新下載，接著關閉 VPN，一切就能正常運作。每次進入遊戲前請重複這些操作。此方法適用於俄羅斯。</p><p>問題很可能出在俄羅斯封鎖了 cloudflare-ech.com。自 1.5.2 以後的版本已將 cloudflare-ech.com 加入黑名單，我透過升級自己與其他人用來繞過 Discord 封鎖的應用程式（運作方式類似 GoodbyeDPI）解決了這個問題。該應用程式網址為：<a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>。由於該應用程式在俄羅斯頗受歡迎，更新至 v1.5.2 以上版本應該能幫助到你的一部分使用者。</p></blockquote>",
+                    "more": "<blockquote><p>在你的電腦上開啟 VPN，下載《爐石戰記》，在 Overwolf 中刪除此應用程式後重新下載，接著關閉 VPN，一切就能正常運作。每次進入遊戲前請重複這些動作。此方法適用於俄羅斯。</p><p>問題很可能出在俄羅斯封鎖了 cloudflare-ech.com。自 1.5.2 以後的版本已將 cloudflare-ech.com 加入黑名單，我透過升級自己與其他人用來繞過 Discord 封鎖的應用程式（運作方式類似 GoodbyeDPI）解決了這個問題。該應用程式網址為：<a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>。由於該應用程式在俄羅斯頗受歡迎，更新至 v1.5.2 以上版本應該能幫助到你的一部分使用者。</p></blockquote>",
                     "title": "連線問題（俄羅斯）"
                 },
                 "hard-kill-apps": {
@@ -5314,7 +5314,7 @@
                     "title": "Virgin media, Web Safe （維珍媒體Virgin Media 是英國的一家電訊企業）"
                 },
                 "truncated-logs": {
-                    "body": "<p>如果應用程式已運行一段時間，在玩了幾局遊戲後突然停止，則可能是爐石戰記日誌停止生成。 </p><p>請依照以下步驟操作：</p><ul><li>關掉爐石戰記</li><li>前往爐石戰記安裝資料夾，找到 <code>Hearthstone.exe</code> 檔案</li><li>檢查此資料夾中是否存在 <code>client.config</code> 檔案</ul><li>如果沒有，請建立一個</li></ul></li><li>將 <code>client.config</code> 檔案的內容替換為以下內容：<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>重啟爐石戰記</li></ul><p>如果完成這些步驟後遊戲仍然卡住，則說明出現了問題，請點選應用主視窗右上角的按鈕回報錯誤🙂️</p>",
+                    "body": "<p>如果應用程式已運行一段時間，在玩了幾局遊戲後突然停止，則可能是爐石戰記日誌停止生成。 </p><p>請依照以下步驟動作：</p><ul><li>關掉爐石戰記</li><li>前往爐石戰記安裝資料夾，找到 <code>Hearthstone.exe</code> 檔案</li><li>檢查此資料夾中是否存在 <code>client.config</code> 檔案</ul><li>如果沒有，請建立一個</li></ul></li><li>將 <code>client.config</code> 檔案的內容替換為以下內容：<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>重啟爐石戰記</li></ul><p>如果完成這些步驟後遊戲仍然卡住，則說明出現了問題，請點選應用主視窗右上角的按鈕回報錯誤🙂️</p>",
                     "title": "應用程式卡住／日誌紀錄(Logs)卡住"
                 },
                 "no-cards": {
@@ -5341,7 +5341,7 @@
                     "title": "其他可以嘗試的方法"
                 },
                 "connectivity-issues-global": {
-                    "body": "<ul><li>嘗試停用你的防毒軟體／防火牆／VPN</li><li>若你知道如何操作，請將以下網域加入白名單：<ul><li>zerotoheroes.com</li><li>firestoneapp.com</li><li>amazonaws.com</li><li>overwolf.com</li></ul></li><li>重新安裝 Firestone 有時似乎有所幫助</li></ul>",
+                    "body": "<ul><li>嘗試停用你的防毒軟體／防火牆／VPN</li><li>若你知道如何動作，請將以下網域加入白名單：<ul><li>zerotoheroes.com</li><li>firestoneapp.com</li><li>amazonaws.com</li><li>overwolf.com</li></ul></li><li>重新安裝 Firestone 有時似乎有所幫助</li></ul>",
                     "title": "連線問題（全球）"
                 },
                 "game-is-crashing": {
@@ -5425,7 +5425,7 @@
                         },
                         "firestone-configuration": {
                             "intro": "<p>首先你需要從 Firestone 登入 Twitch。請前往「設定」&gt;「一般設定」&gt;「Twitch」</p>",
-                            "overlays": "<p>你無需進行其他操作，記牌器覆疊（記牌器、對手記牌器、秘密輔助計數器等）將會自動擷取至實況中。</p>",
+                            "overlays": "<p>你無需進行其他動作，記牌器覆疊（記牌器、對手記牌器、秘密輔助計數器等）將會自動擷取至實況中。</p>",
                             "after-login": "<p>登入完成後，畫面會如下所示</p>",
                             "title": "Firestone 設定"
                         },
