@@ -128,7 +128,9 @@
             "across_the_timeways": "穿越时间流",
             "echoes_of_the_infinite": "永恒回响",
             "cataclysm": "大地的裂变",
-            "violet_hold": "逃离紫罗兰监狱"
+            "violet_hold": "逃离紫罗兰监狱",
+            "restoration_of_azeroth": "治愈艾泽拉斯",
+            "azeroths_most_wanted": "艾泽拉斯头号通缉"
         },
         "pack": {
             "classic": "经典模式 卡牌包",
@@ -2203,7 +2205,11 @@
                 "six-month": "每6个月收费一次",
                 "six-month-coupon-text": "限时优惠！截止至{{endDate}}，结账时使用以下代码可获得额外的{{reduction}}折扣：",
                 "yearly-coupon-text-2": "为庆祝 {{expansionName}} 上线，在结账页面使用以下折扣代码以获得额外{{reduction}}的优惠：",
-                "coupon-text": "为庆祝{{expansionName}}上线，在结账过程中使用以下优惠码，所有方案即可获得额外的{{reduction}}优惠："
+                "coupon-text": "为庆祝{{expansionName}}上线，在结账过程中使用以下优惠码，所有方案即可获得额外的{{reduction}}优惠：",
+                "annual-toggle-header": "付款周期为每",
+                "six-month-2": "6个月",
+                "yearly-2": "年",
+                "monthly-2": "月"
             },
             "cant-subscribe-button": "无法订阅",
             "check-status-online-inactive": "已取消，但仍生效。查看详情 {{link}}",
@@ -3585,7 +3591,27 @@
                 "turn": "第{{value}}回合",
                 "uses-left": "还剩{{value}}次使用",
                 "has-condition": "这个黑暗之赐有额外条件。将鼠标悬停在此处查看原因，或悬停在随从上查看。",
-                "guaranteed-disabled-tooltip": "从第 {{value}} 回合起，提供的随从中有一个会是你最常见的类型"
+                "guaranteed-disabled-tooltip": "从第 {{value}} 回合起，提供的随从中有一个会是你最常见的类型",
+                "turns-plus": "{{min}}+",
+                "turns-open": "{{min}}–{{max}}",
+                "restriction": {
+                    "scaling-highest": "在战争之痕、死亡之拥与法术虹吸这三种中，只能提供触发概率最高的一种。",
+                    "guaranteed-type": "从第6回合开始，提供的随从中必定有一个属于你数量最多的随从类型。",
+                    "no-magnetic-sell-hand": "具有磁力的随从、具有“当你出售本随从时”效果的随从，以及设计上需要留在手牌中的随从无法获得黑暗之赐。",
+                    "battlecry-before-5": "第5回合之前不会提供具有战吼或抉择的随从。",
+                    "battlecry-choose-one": "战吼与抉择随从只能获得双重幻象、不断复制、镀金随从和吼声回荡。",
+                    "deathrattle-stats": "除锋锐之剑和死亡之拥外，亡语随从不会获得能够提供属性值的黑暗之赐。",
+                    "rarer-gifts": "镀金随从、回荡恐怖、泰坦之力和无懈可击比其他黑暗之赐更为稀有。",
+                    "golemancy-salvager": "缝合回收者无法获得魔像秘术。",
+                    "lobby-bans": "顽强抗性和超凡脱俗在有龙的大厅中被禁止。敌意难息在剧毒或烈毒随从上被禁止。魅力感召在7级随从上被禁止。"
+                },
+                "arrives": "稍后到达",
+                "expired": "已过时",
+                "expires-soon": "即将过时",
+                "wiki-link": "炉石传说百科 — 黑暗之赐",
+                "pool": "池",
+                "rules": "规则",
+                "wiki-source": "来源："
             }
         },
         "post-match-stats": {
@@ -3788,7 +3814,8 @@
                 "admin": "管理员",
                 "widgets": "小部件",
                 "streamer": "主播",
-                "addons": "附加组件"
+                "addons": "附加组件",
+                "account": "账号"
             },
             "mods": {
                 "title": "模组",
@@ -3826,7 +3853,7 @@
                 "installed-mods-description-2": "以下模组已安装（删除 {{path}} 中的对应文件即可卸载）：",
                 "need-to-close-game-warning": "在安装/卸载/更新模组，或启用/禁用模组之前，您需要先关闭炉石传说。",
                 "auto-update-label": "自动更新",
-                "auto-update-tooltip": "当有新版本可用时自动更新模组。新版本会在关闭游戏时安装。",
+                "auto-update-tooltip": "当有新版本可用时自动更新模组。新版本会在关闭游戏时安装。<br><br>受信任的模组由 Firestone 开发和维护，或在其监督下开发和维护。<br><br>经过验证的模组由第三方开发，Firestone 会定期进行检查。在这种情况下，只有 Firestone 批准的版本才会自动更新。",
                 "engine-migration-start-message": "炉石传说现已使用 64 位客户端。Firestone 正在更新模组引擎以匹配。这可能需要一分钟。",
                 "engine-migration-done-message": "模组引擎已更新。请重新启动炉石传说以加载您的模组。",
                 "engine-migration-retry-title": "模组引擎更新待处理",
@@ -3834,7 +3861,28 @@
                 "reinstalling-mods": "为更新后的引擎重新安装模组...",
                 "engine-migration-retry-message": "当文件正在使用时，模组引擎无法更新。Firestone 将在炉石传说关闭后重试。",
                 "engine-migration-start-title": "正在更新模组引擎",
-                "migrating-engine": "正在为你的炉石传说版本更新模组引擎..."
+                "migrating-engine": "正在为你的炉石传说版本更新模组引擎...",
+                "update-available-unreviewed": "此模组有新版本可用，但尚未由 Firestone 进行审核。仍要更新它请点击。",
+                "import-fetch-failed": "无法读取该 GitHub 仓库。请检查网址并重试。",
+                "source-verified-tooltip": "由第三方开发，由 Firestone 定期检查。只有 Firestone 批准的版本才会自动更新。",
+                "source-verified": "已验证",
+                "auto-update-all": "全部",
+                "import-download-failed": "无法下载模组。请稍后再试。",
+                "import-no-dll": "在该仓库的最新 GitHub 发布中找不到 .dll 文件。",
+                "source-trusted-tooltip": "由 Firestone 开发和维护，或在其监督下开发和维护。",
+                "import-placeholder": "GitHub 仓库网址",
+                "import-button": "导入",
+                "import-in-progress": "正在导入模组...",
+                "import-success": "模组已导入。它将根据您的自动更新设置自动更新。",
+                "source-third-party-tooltip": "未由 Firestone 审核。只有当你选择“全部”时才会自动更新。",
+                "auto-update-off": "关闭",
+                "auto-update-trusted-verified": "仅限受信任并经过验证的模组",
+                "auto-update-trusted": "仅限受信任的模组",
+                "import-invalid-url": "请粘贴一个 GitHub 仓库的网址 (https://github.com/owner/repo)。",
+                "import-no-install-path": "首先设置游戏安装位置。",
+                "source-third-party": "第三方",
+                "import-already-present": "此模组已在你的列表中。",
+                "source-trusted": "受信任的"
             },
             "third-party": {
                 "intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
@@ -3975,7 +4023,9 @@
                 "lottery-widget-settings-title": "小部件设置",
                 "lottery-size-title": "抽奖小部件尺寸",
                 "lottery-opacity-title": "抽奖小部件透明度",
-                "lottery-premium-section-tooltip": "此功能仅限会员用户使用"
+                "lottery-premium-section-tooltip": "此功能仅限会员用户使用",
+                "lottery-sync-label": "抽奖积分",
+                "lottery-sync-tooltip": "从服务器恢复本赛季的抽奖积分。在重新安装 Firestone 后使用此功能。"
             },
             "data": {
                 "remote-title": "远程数据",
@@ -3986,7 +4036,7 @@
                 "total-games": "已完成获取{{value}}场对局记录。",
                 "other-title": "其他",
                 "packs": "卡牌包",
-                "packs-tooltip": "刷新您的开包记录。每隔7天会自动刷新。",
+                "packs-tooltip": "从服务器刷新您的开包历史记录。在重新安装 Firestone 或更换电脑后使用此功能。",
                 "games-tooltip": "刷新历史记录，获取自从使用Firestone以来的所有对局记录（可能需要等待一段时间）。",
                 "clear-games-tooltip": "清除历史并根据设置重新加载对局记录（默认加载最近100天内的数据，可以通过启用高级设置来调整这个数值）。如果对局历史很多且记牌器占用了大量内存，清理历史或许有助于减小占用。",
                 "games-period": "加载对局历史记录：",
@@ -4157,6 +4207,32 @@
                 "open-folder": "打开文件夹",
                 "permissions": "权限：",
                 "refresh": "刷新"
+            },
+            "account": {
+                "unlink-battlenet-failed": "无法解除与 Battle.net 的关联。请稍后再试。",
+                "intro": "将您的 Battle.net 账号关联到现有的 Overwolf Firestone 登录，以便您可以使用 Battle.net 登录并保留相同的对局历史。",
+                "intro-signed-out": "登录以同步你的对局历史记录。之后你可以关联其他的登录提供者。",
+                "intro-battlenet": "你已使用 Battle.net 登录。如果想关联现有的 Overwolf 账户（以下载对局历史记录），需要先退出并使用 Overwolf 账户重新登录。",
+                "sign-in-label": "账号",
+                "log-out-label": "账号",
+                "unlink-battlenet-confirmation": "您确定吗？",
+                "provider-battlenet": "Battle.net",
+                "link-battlenet-label": "Battle.net",
+                "unlink-battlenet-label": "Battle.net",
+                "unlink-battlenet-tooltip": "取消 Battle.net 与你的 Overwolf Firestone 账户的关联。取消后，每次登录将只显示各自的游戏历史记录。",
+                "link-battlenet-button": "关联 Battle.net",
+                "link-battlenet-tooltip": "请先使用 Overwolf 登录，然后关联 Battle.net。之后您可以使用 Battle.net 登录并刷新您的数据。",
+                "link-battlenet-need-overwolf": "请先使用 Overwolf 登录，然后关联 Battle.net。",
+                "log-out-button": "登出",
+                "sign-in-tooltip": "打开登录页面，使用 Overwolf 或 Battle.net 登录。",
+                "provider-overwolf": "Overwolf",
+                "sign-in-button": "登录",
+                "log-out-tooltip": "在此设备上登出你的 Firestone 账号。",
+                "signed-in-as": "已通过 {{provider}} 登录为 <b>{{name}}</b>。Firestone 用户名：{{username}}",
+                "intro-battlenet-linked": "此 Battle.net 登录与您的 Overwolf Firestone 账户相关联。如需单独使用，请解除关联。",
+                "unlink-battlenet-button": "取消 Battle.net 关联",
+                "not-signed-in": "尚未登录。",
+                "provider-unknown": "未知的提供者"
             }
         },
         "decktracker": {
@@ -4895,7 +4971,9 @@
                 "dark-gift-overlay-label": "黑暗之赐浮窗",
                 "dark-gift-overlay-tooltip": "当鼠标悬停在黑暗发现按钮上时，显示可能的黑暗发现随从和黑暗之赐",
                 "hide-battle-odds-until-mouseover-label": "鼠标悬停时才显示胜率",
-                "hide-battle-odds-until-mouseover-tooltip": "启用后，屏幕顶部会保留一个小型战斗胜率横幅；将鼠标移到其上时，会显示完整的胜／平／负组件"
+                "hide-battle-odds-until-mouseover-tooltip": "启用后，屏幕顶部会保留一个小型战斗胜率横幅；将鼠标移到其上时，会显示完整的胜／平／负组件",
+                "hero-power-extra-info-label": "英雄技能额外信息",
+                "hero-power-extra-info-tooltip": "将鼠标悬停在英雄技能上时，在卡牌提示中显示额外的实时详情（例如已经进入厨师曲奇锅中的随从类型）。"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -5120,7 +5198,12 @@
                 "success": "成功！",
                 "failed": "⚠️ Sign in failed",
                 "hint": "浏览器可能会询问是否打开 Firestone 应用——请选择“允许”或“打开”。",
-                "try-again": "重试"
+                "try-again": "重试",
+                "fallback-prefix": "如果没有任何反应， ",
+                "link-success": "Battle.net 已关联！",
+                "fallback-link": "点击此处启动 Firestone",
+                "fallback-suffix": ".",
+                "link-returning": "正在返回 Firestone 应用。你现在可以使用 Battle.net 登录。"
             },
             "privacy-html": "登录即表示你同意我们的<a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/tos.md\" target=\"_blank\" rel=\"noopener noreferrer\">隐私政策</a>",
             "subtitle": "登录以在多台设备之间同步数据",
@@ -5135,8 +5218,15 @@
                 "invalid-response": "身份验证响应无效。",
                 "invalid-state": "状态参数无效，请重新登录。",
                 "missing-verifier": "缺少 PKCE 代码验证器，请重新登录。",
-                "failed": "无法完成登录，请重试。"
-            }
+                "failed": "无法完成登录，请重试。",
+                "battlenet-not-configured": "Battle.net 登录暂不可用，请稍后重试。",
+                "missing-link-token": "此链接已过期。请使用 Overwolf 登录 Firestone 应用，然后打开“关联 Battle.net”。"
+            },
+            "link-subtitle": "将 Battle.net 关联到你的 Firestone 账号",
+            "linking": "正在将你重定向至 Battle.net…",
+            "privacy-link": "隐私政策",
+            "privacy-prefix": "登录即表示你同意我们的 ",
+            "privacy-suffix": " "
         },
         "faq": {
             "images": {
@@ -5576,6 +5666,144 @@
                     "title": "常规功能与回放"
                 }
             }
+        },
+        "docs": {
+            "images": {
+                "setup-settings": "Firestone 设置搜索框",
+                "twitch-connected": "连接账号后的 Firestone Twitch 设置",
+                "twitch-settings": "未登录时的 Firestone Twitch 设置",
+                "twitch-main-window": "用于在直播中采集 Firestone 主窗口的设置",
+                "creator-code-checkout": "带有创作者代码字段的 Tebex 结账页面",
+                "twitch-battlegrounds-window": "用于在直播中采集酒馆战棋窗口的设置",
+                "creator-code-field": "Tebex 结账页面上的创作者代码字段"
+            },
+            "back-label": "所有文档",
+            "page-subtitle": "关于设置 Firestone、直播、模组和公开 API 的指南。",
+            "pages": {
+                "creator-code": {
+                    "blurb": "订阅高级会员时支持创作者并获得折扣。",
+                    "intro": "<p>操作非常简单：在结账页面的下图所示字段中，输入创作者分享给你的代码即可：</p>",
+                    "sections": {
+                        "notes": {
+                            "body": "<ul><li>该代码仅适用于首次订阅周期。我正在与 Tebex 沟通，希望以后能让代码在每个周期自动重复应用。在此之前，如果你想每月持续支持创作者，最好的办法是使用代码订阅，然后取消订阅，并在当前订阅结束后手动重新输入代码。</li><li>该代码适用于所有方案（月付／年付）</li><li>如遇问题，请在 <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上联系 @sebastientromp</li></ul>",
+                            "title": "备注"
+                        }
+                    },
+                    "subtitle": "在 Tebex 上订阅 Firestone 高级会员时，你可以输入创作者代码来支持喜爱的内容创作者并获得折扣。",
+                    "title": "如何使用创作者代码"
+                },
+                "developer-resources": {
+                    "intro": "<p>你可以直接使用这些 API 构建有趣的统计数据、信息图，或只是用于娱乐。如果发布任何内容，请务必注明 Firestone 为数据来源。</p><p>如果你想将这些数据用于公开应用，请在 <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上联系我。</p>",
+                    "blurb": "酒馆战棋、对决模式和卡牌数据的公开统计 API。",
+                    "subtitle": "用于统计、信息图或娱乐用途的 Firestone 公开 API。",
+                    "title": "开发者资源",
+                    "sections": {
+                        "api-links": {
+                            "title": "API 链接",
+                            "body": "<p>API 中多个位置会使用以下占位符：</p><ul><li><code>%timeSuffix%</code> 可替换为 <code>all-time</code>、<code>past-three</code>、<code>past-seven</code> 或 <code>last-patch</code>，以获取不同时间段的数据</li><li><code>%tribeSuffix%</code> 可以是 <code>all-tribes</code>（推荐），也可以是五个种族的组合；种族之间用连字符（<code>-</code>）分隔，并使用 <a href=\"https://github.com/Zero-to-Heroes/hs-reference-data/blob/master/src/enums/race.ts\" target=\"_blank\" rel=\"noopener noreferrer\">race.ts</a> 中定义的种族 ID（但这种情况下样本量通常太小）</li></ul>"
+                        },
+                        "general": {
+                            "title": "通用",
+                            "body": "<ul><li>所有卡牌：<a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</code></a><ul><li>将 <code>enUS</code> 替换为《炉石传说》支持的语言代码，即可访问其他语言的数据</li></ul></li></ul>"
+                        },
+                        "duels": {
+                            "body": "<ul><li>英雄／英雄技能／签名宝藏：<code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-%mmr%-%date%.gz.json</code></li><li>高胜场套牌：\n<a href=\"https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json</code></a></li><li>宝藏池：<a href=\"https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>\nhttps://static.zerotoheroes.com/api/duels/duels-buckets.gz.json</code></a></li></ul>",
+                            "title": "对决模式"
+                        },
+                        "battlegrounds": {
+                            "title": "酒馆战棋",
+                            "body": "<ul><li>英雄统计：<code>https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-%tribeSuffix%-%timeSuffix%.gz.json</code><ul><li>例如：\n<a href=\"https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-all-tribes-last-patch.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">bgs-global-stats-all-tribes-last-patch.gz.json</a></li><li>\n<a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li><li>完美对局：\n<a href=\"https://static.zerotoheroes.com/api/bgs-perfect-games.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/bgs-perfect-games.json</code></a><ul><li>\n<a href=\"https://github.com/Zero-to-Heroes/trigger-publish-bgs-perfect-game\" target=\"_blank\" rel=\"noopener noreferrer\">trigger-publish-bgs-perfect-game</a></li></ul></li><li>任务统计：<code>\nhttps://static.zerotoheroes.com/api/bgs/quests/bgs-global-stats-%timeSuffix%.gz.json</code><ul><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li></ul>"
+                        }
+                    }
+                },
+                "setup": {
+                    "blurb": "调整 Firestone 设置，让浮窗和小部件符合你的游戏习惯。",
+                    "sections": {
+                        "general": {
+                            "title": "通用",
+                            "body": "<ul><li>你可以在“全局 &gt; 小部件”中调整应用内小部件的全局缩放比例。</li></ul>"
+                        },
+                        "streamer": {
+                            "title": "主播",
+                            "body": "<ul><li>你可以从“整合 &gt; Twitch”菜单启用 Twitch 扩展（也可以直接使用顶部的搜索栏搜索“Twitch”）</li></ul><p>（待补充）</p>"
+                        }
+                    },
+                    "title": "设置 Firestone",
+                    "intro": "<p>设置界面（我认为）很容易使用：各项功能按菜单分组，你也可以使用顶部的搜索框查找所需内容。</p>",
+                    "subtitle": "Firestone 的可配置项非常丰富，但默认配置可能无法完全满足你的需求（我计划在不久的将来着手改进这一点）。因此，你可能需要先调整一些设置，因为应用中几乎所有显示内容都可以开启或关闭。"
+                },
+                "twitch": {
+                    "blurb": "将 Firestone 连接到 Twitch，并在直播中采集浮窗。",
+                    "sections": {
+                        "capturing-main-and-battlegrounds": {
+                            "title": "采集主窗口和酒馆战棋窗口",
+                            "intro": "<p><em>如果你只想直播游戏过程，可以跳过本节。</em></p><p>Firestone 有两个可向观众展示统计数据的主要窗口：一个是显示当前对局统计的酒馆战棋专用窗口，另一个是显示过往所有对局统计的主窗口。默认情况下，Firestone 主窗口和酒馆战棋窗口并不是浮窗。这意味着你可以将它们移到游戏区域之外，但直播也无法采集到它们。</p><p>如需采集，有两种方法：</p><ul><li>将它们移到第二块屏幕，并采集整个屏幕</li><li>启用下方所示的两个“浮窗”选项。这会将窗口绑定到游戏画面（因此无法再将其拖到画面之外），并让 OBS 自动采集它们（更改这些选项可能会导致 Firestone 关闭并重新启动一次）：</li></ul>"
+                        },
+                        "capturing-the-tracker": {
+                            "body": "<p>默认情况下，此功能应该可以直接使用。不过，如果 Firestone 浮窗未在游戏中显示，请参阅此故障排除指南：<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176947-how-to-show-overwolf-in-game-while-streaming\" target=\"_blank\" rel=\"noopener noreferrer\">直播时如何在游戏中显示 Overwolf</a></p>",
+                            "title": "采集记牌器和浮窗"
+                        },
+                        "firestone-configuration": {
+                            "after-login": "<p>登录后，界面将如下所示。</p>",
+                            "intro": "<p>首先，你需要在 Firestone 中登录 Twitch。前往“设置 &gt; 通用 &gt; Twitch”。</p>",
+                            "overlays": "<p>无需进行其他操作，记牌器浮窗（记牌器、对手记牌器、奥秘助手计数器等）会自动在直播中被采集。</p>",
+                            "title": "Firestone 设置"
+                        },
+                        "installing": {
+                            "title": "安装 Twitch 扩展",
+                            "body": "<p>接下来，你需要从 <a href=\"https://dashboard.twitch.tv/extensions/jbmhw349lqbus9j8tx4wac18nsja9u\" target=\"_blank\" rel=\"noopener noreferrer\">Twitch 控制面板</a>安装 Firestone Twitch 扩展（Firestone 设置界面中也提供了该链接）。</p><p>安装即可，无需进行任何配置。</p><p><strong>注意：</strong>Twitch 偶尔会断开与 Firestone 的连接。因此，如果你的频道中看不到任何交互式浮窗，请先在 Firestone 设置中确认已正确登录 Twitch。</p>"
+                        },
+                        "what-is-the-twitch-extension": {
+                            "body": "<p>它会在浏览器中添加套牌列表浮窗，让观众可以轻松查看你的套牌内容、将鼠标悬停在卡牌上查看详情，以及复制套牌代码。</p><p>观众还可以将鼠标悬停在场上或你手牌中的卡牌上，查看卡牌的详细效果。</p>",
+                            "title": "什么是 Twitch 扩展"
+                        }
+                    },
+                    "subtitle": "在 Twitch 上向观众展示你的套牌列表和卡牌浮窗。",
+                    "title": "设置 Twitch 扩展"
+                },
+                "mods": {
+                    "sections": {
+                        "old-mods": {
+                            "title": "旧版模组",
+                            "body": "<p>以下模组已停止维护，无法再正常使用。如果你对其中某个模组感兴趣，请在该模组的代码仓库中提交 Issue，请维护者针对 Firestone 的新模组管理器进行更新。</p><ul><li><a href=\"https://github.com/sebastientromp/hs-melon-hide-mercenary-emotes\" target=\"_blank\" rel=\"noopener noreferrer\">Hide Mercenary Emote</a>：移除部分佣兵说出的台词／气泡（例如钻石头像）。</li><li><a href=\"https://github.com/sebastientromp/hs-melon-increase-game-speed-vs-ai\" target=\"_blank\" rel=\"noopener noreferrer\">Increase Animation Speed vs AI</a>：与 AI 对战时将动画速度提升至 4 倍。<strong>警告：</strong>使用此模组时请谨慎，因为提高游戏速度（即使只用于对抗 AI）也可能不受暴雪认可。</li></ul>"
+                        },
+                        "installing": {
+                            "body": "<p>首先，你需要在 Firestone 的“设置 &gt; 通用 &gt; 模组”中启用模组支持（进行此操作时需要关闭游戏）。</p><p>你应遵循每个模组各自的说明，大致步骤如下：</p><ul><li>将模组主文件复制到 <code>Hearthstone/BepInEx/plugins</code> 文件夹</li><li>将模组依赖项复制到 <code>Hearthstone/BepInEx/plugins</code> 文件夹（同一文件夹）</li></ul><p>然后重新启动游戏。安装新模组后启动一次游戏，Firestone 即可检测到该模组。</p>",
+                            "title": "安装模组"
+                        },
+                        "known-mods": {
+                            "body": "<p><strong>警告：</strong>这些模组由社区创建和维护，因此我无法提供支持。请前往相应模组的代码仓库提交 GitHub Issue。如上所述，修改《炉石传说》违反游戏服务条款，因此我不为其中任何模组背书。不过，我亲自审核过这些模组，认为其功能是“安全的”，应该不会带来封号风险（但仍请参阅页面顶部的警告）。</p><ul><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-auto-squelch\" target=\"_blank\" rel=\"noopener noreferrer\">AutoSquelch</a>：不再显示对手的表情。</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-golden-buddy-tooltip\" target=\"_blank\" rel=\"noopener noreferrer\">Golden Buddy Tooltip</a>：将鼠标悬停在伙伴按钮上时，查看伙伴的金色版本</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-show-collection-exact-count\" target=\"_blank\" rel=\"noopener noreferrer\">Show Collection Exact Card Count</a>：将收藏中的“9+”替换为准确的卡牌数量</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-remove-ghost-overlay\" target=\"_blank\" rel=\"noopener noreferrer\">Remove Collection Ghost Overlay</a>：查看收藏中未拥有的卡牌时移除“鬼影”遮罩，让你能看清所有卡牌详情，并自行决定是否要为精美原画制作该卡牌。</li></ul>",
+                            "title": "已知模组"
+                        },
+                        "developing": {
+                            "title": "开发模组",
+                            "body": "<p>Firestone 内置了 <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>，可以方便地安装为游戏添加功能的模组。你也可以自行安装 BepInEx。</p><p>有关开发 BepInEx 插件的信息，请参阅 BepInEx 文档或现有模组，也可以在 <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上联系我。</p><p>未来还会提供《炉石传说》和 Firestone 专属功能（例如获知双方玩家的套牌状态）供你的模组使用。理论上，你甚至可以构建一个完全集成的记牌器 :)</p>"
+                        },
+                        "not-ok": {
+                            "body": "<ul><li>提供不公平优势／用于作弊的模组</li><li>让你使用尚未解锁的外观的模组</li><li>更广泛地说，任何让你获得原本需要用游戏内资源或真实货币购买的内容，或违背开发者意图的模组</li></ul>",
+                            "title": "明确禁止的模组"
+                        },
+                        "requirements": {
+                            "body": "<p>要让 Firestone 模组管理器识别你的模组，模组应公开一个包含 Name（名称）、Version（版本号）、Guid（全局唯一标识符） 和 DownloadLink（下载链接，指向代码仓库）的 Config（配置文件）。目前尚不支持外部依赖项，如有此需求请联系我。</p>",
+                            "title": "要求"
+                        }
+                    },
+                    "blurb": "通过 Firestone 安装和开发《炉石传说》模组。",
+                    "subtitle": "使用 Firestone 基于 BepInEx 的模组管理器安装社区模组。",
+                    "title": "模组",
+                    "intro": "<p><strong>警告：</strong>修改《炉石传说》违反游戏服务条款，并可能导致封号。请自行承担使用风险。</p><p><strong>警告：</strong>Firestone 模组管理器目前仅在应用的测试版中提供。请参阅 <a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/beta-test.md\" target=\"_blank\" rel=\"noopener noreferrer\">beta-test.md</a></p>"
+                },
+                "lottery": {
+                    "title": "Firestone 抽奖",
+                    "blurb": "在游戏过程中赚取积分，赢取高级会员。",
+                    "subtitle": "赢取 2 个月的 Firestone 高级会员。",
+                    "intro": "<p>Firestone 抽奖让你有机会赢取 2 个月的 Firestone 高级会员。</p><p>游戏时保持抽奖窗口打开且可见，即可参与 Firestone 抽奖（追踪成就时也有效）。</p><p>每个赛季（目前为两周），你可以通过完成抽奖窗口中列出的特定游戏内操作来赚取积分。每场对局结束后，积分都会在整个赛季期间累积。赛季结束时，将从所有参与者中随机抽取两名获奖者；抽中概率按累计积分加权。积分越多，获奖机会越大。</p>"
+                }
+            },
+            "nav-label": "文档",
+            "page-title": "文档",
+            "permalink-aria": "此章节的链接",
+            "toc-title": "本页内容"
         }
     },
     "twitch": {
@@ -6382,7 +6610,16 @@
         "xl-velarok-rogue": "40-威拉罗克贼",
         "xl-hl-n-roll-warrior": "40-宇宙黑石战",
         "xl-hl-igneous-warrior": "40-宇宙火成战",
-        "xl-hl-lc-quest-warrior": "40-宇宙失落之城任务战"
+        "xl-hl-lc-quest-warrior": "40-宇宙失落之城任务战",
+        "cute-warrior": "可爱战",
+        "xl-champions-druid": "40-勇士德",
+        "xl-hl-imbue-rogue": "40-宇宙灌注贼",
+        "xl-hl-shadow-priest": "40-宇宙暗牧",
+        "xl-hl-thief-priest": "40-宇宙脏牧",
+        "chad-seedlock": "塔迪乌斯恶魔之种术",
+        "hl-n-roll-warrior": "宇宙黑石战",
+        "raza-dh": "走A瞎",
+        "xl-hl-questline-mage": "40-宇宙任务线法"
     },
     "arena": {
         "overlay": {
@@ -6506,6 +6743,10 @@
         "demon_boost_shop": "商店增强流恶魔",
         "quilboar_choose_one": "抉择流野猪人",
         "pirate_discover": "发现流海盗",
-        "beast_lobster": "龙虾流野兽"
+        "beast_lobster": "龙虾流野兽",
+        "naga_end_of_turn": "回合结束流纳迦",
+        "dragon_evoker": "唤魔师流龙族",
+        "beast_beetle": "甲虫流野兽",
+        "neutral_tea_set": "喝茶流"
     }
 }
