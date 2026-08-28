@@ -2622,8 +2622,12 @@
 			"opponent": "Your opponent's next relic's power will be {{value}}"
 		},
 		"fatigue": {
-			"player": "Your next draw fatigues for {{value}} damage",
-			"opponent": "Opponent next draw fatigues for {{value}} damage"
+			"player": "Your next draw fatigues for {{value}} damage. Fatigue kills in {{draws}} draws ({{totalDamage}} total damage)",
+			"opponent": "Opponent next draw fatigues for {{value}} damage. Fatigue kills in {{draws}} draws ({{totalDamage}} total damage)",
+			"next": {
+				"player": "Your next draw fatigues for {{value}} damage",
+				"opponent": "Opponent next draw fatigues for {{value}} damage"
+			}
 		},
 		"cards-discarded": {
 			"player": "You have discarded {{value}} cards this game",
@@ -4178,6 +4182,8 @@
 				"unlink-overwolf-tooltip": "Disconnect Overwolf from this Battle.net Firestone account. Each login will then only show its own game history.",
 				"unlink-overwolf-confirmation": "Are you sure?",
 				"unlink-overwolf-failed": "Could not unlink Overwolf. Try again later.",
+				"unlink-last-login-label": "Account",
+				"unlink-last-login-failed": "You must keep at least one login method on this Firestone account.",
 				"log-out-label": "Account",
 				"log-out-button": "Log out",
 				"log-out-tooltip": "Sign out of your Firestone account on this device."
