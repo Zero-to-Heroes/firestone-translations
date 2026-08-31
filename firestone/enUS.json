@@ -5132,6 +5132,10 @@
 					"title": "对于中国大陆用户 - For users from mainland China",
 					"body": "<ul><li><p>我听说如果你同时安装了“中国大陆”客户端和“世界其他地区”客户端，Firestone 只能在其中一个客户端上运行。</p><ul><li>看来你可以在登录后转到“收藏”屏幕来解决这个问题</li></ul></li><li><p>I've been told that if you have both the \"mainland China\" client and the \"rest of the world\" client installed, Firestone will only work on one of them.</p><ul><li>It looks like you can fix this by going to the \"Collection\" screen once you're logged in</li></ul></li></ul>"
 				},
+				"login-opens-overwolf": {
+					"title": "Login opens Overwolf instead of Firestone Standalone",
+					"body": "<p>The website signs you back into the desktop app with a <code>firestoneapp://</code> link. Overwolf also registers that protocol, so Windows can launch Overwolf even if you already quit it.</p><ul><li>Open <strong>Windows Settings → Apps → Default apps</strong></li><li>Search for <strong>Firestone Standalone</strong>, or for the protocol <code>firestoneapp</code></li><li>Set Firestone Standalone as the default handler</li></ul><p>Closing Overwolf does not unregister the protocol. Firestone Standalone re-registers <code>firestoneapp://</code> each time it starts, but Windows may still prefer Overwolf until you change the default app.</p>"
+				},
 				"general-checklist": {
 					"title": "General checklist",
 					"body": "<ul><li>Make sure Overwolf is running <strong>before</strong> you launch Hearthstone</li><li>(Especially after a new patch) Close HS, close Firestone, restart Firestone, restart HS. This will force the app update (updating while the game is running does not always work well)</li><li>Check if you can launch Firestone on the desktop (meaning when HS is not running). If nothing happens:<ul><li>Please check the other sections below (most notably the ones at the bottom of this page about <a href=\"/faq#connectivity-issues-global\">connectivity issues</a>)</li><li>If nothing helps, please create a log zip and send it to me manually (on Discord for instance). See <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">how to get your Overwolf logs</a></li></ul></li><li>Check (while HS is running) whether you have a <code>Decks.log</code> file in your Hearthstone install folder under <code>Logs/Hearthstone_XXX</code>. If not, reboot HS</li><li>Try disabling your antivirus / firewall, and restart Firestone</li><li>If Firestone is flashing / blinking, it could be an issue with a new Lenovo app called LegionZone. Try deactivating it to see if it solves the issue.</li><li>Check that your in-game clock indicates the correct time. This can happen if your system time is not configured properly, typically the \"Adjust for daylight saving time automatically\" option is deactivated</li></ul>"
@@ -5421,6 +5425,7 @@
 				"fallback-link": "click here to open Firestone",
 				"fallback-suffix": ".",
 				"hint": "Your browser may ask to open the Firestone app — choose Allow or Open.",
+				"overwolf-hint": "If Overwolf opens instead of Firestone Standalone, <a href=\"/faq#login-opens-overwolf\">change the Windows default app</a> for firestoneapp:// links.",
 				"failed": "⚠️ Sign in failed",
 				"try-again": "Try Again"
 			},
