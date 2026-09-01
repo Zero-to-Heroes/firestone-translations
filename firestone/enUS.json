@@ -5170,6 +5170,10 @@
 					"title": "Game is slow",
 					"body": "<ul><li>If the game experiences some stuttering / \"choppy\" animations while Firestone is running, you can try capping the game's FPS.<ul><li>To do so, edit the <code>options.txt</code> file in <code>%localappdata%\\Blizzard\\Hearthstone</code> and change / add <code>targetframerate=60</code> to something lower (I use 60, others use 140 with success as well)</li></ul></li><li>Some users have found that turning off G-Sync through the graphics card helps</li><li><blockquote><p>I have AMD GPU and I just switch off AMD FreeSync in HS and there is no more lagging.</p></blockquote></li></ul>"
 				},
+				"game-is-slow-high-refresh": {
+					"title": "High-refresh monitors (NVIDIA)",
+					"body": "<p>Capping the game at 60 FPS can make high-APM play feel sluggish. A better alternative on a high-refresh monitor is to cap slightly below the refresh rate and keep variable refresh working:</p><ul><li>Set the game and GPU frame limiter to your monitor's <strong>refresh rate minus 6</strong> (for example, 144 Hz → 138 FPS)</li><li>Keep <strong>G-Sync</strong> or <strong>FreeSync</strong> enabled and working</li><li>In NVIDIA Control Panel or NVIDIA Profile Inspector, set <strong>Vertical Sync</strong> to <strong>Fast Sync</strong></li></ul><p>Typical NVIDIA Profile Inspector values for a 144 Hz display:</p><ul><li>Frame Rate Limiter V3: 138 FPS</li><li>GSYNC - Application Mode: Fullscreen and Windowed</li><li>GSYNC - Application State: Allow</li><li>GSYNC - Global Feature: On</li><li>GSYNC - Global Mode: Fullscreen and Windowed</li><li>Vertical Sync: Fast Sync</li></ul>"
+				},
 				"high-resource-usage": {
 					"title": "High resource usage",
 					"body": "<ul><li>Some users have reported high GPU usage, which was caused by the Outplayed app. If that happens, try to deactivate that app</li></ul>"
