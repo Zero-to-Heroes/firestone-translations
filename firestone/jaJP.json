@@ -2192,7 +2192,8 @@
                 "six-month": "6ヶ月ごとの請求",
                 "six-month-coupon-text": "期間限定オファー！{{endDate0}}まで、購入の際に以下のコードを使うと、追加で{{reduction}}の割引を受けられます：",
                 "yearly-coupon-text-2": "{{expansionName}}のリリースを記念して、チェックアウト時に次のコードを入力すると、追加で{{reduction}}の割引を受けられます",
-                "coupon-text": "{{expansionName}}のリリースを祝して、期間中、下記のコードを会計中に使うと、全てのプランにおいて追加で{{reduction}}%の割引を得られます"
+                "coupon-text": "{{expansionName}}のリリースを祝して、期間中、下記のコードを会計中に使うと、全てのプランにおいて追加で{{reduction}}%の割引を得られます",
+                "six-month-2": "6ヶ月"
             },
             "cant-subscribe-button": "サブスクライブできません",
             "cant-subscribe-tooltip": "すでに有効なプランがある間、他のプランにサブスクライブすることはできません。現在契約中のプランを解約し、有効期限が切れるまでお待ち下さい",
@@ -4986,6 +4987,125 @@
             "meta": "メタ",
             "decks": "デッキ",
             "description": "どのランク帯でも、クラス、カード、デッキの統計を無料で表示できます。"
+        },
+        "faq": {
+            "sections": {
+                "widgets-not-showing": {
+                    "body": "<p>一部のウィジェットが表示されない場合（例：トラッカーは表示されないが、相手の手札のカードが何ターン目に引かれたかは表示される場合など）、それらが画面外に移動してしまっている可能性があります。設定にあるこちらのボタンを使用すると、(全ての)ウィジェットの位置をリセットできます</p>"
+                },
+                "images-are-not-showing": {
+                    "body": "<ul><li> <strong>Google Chromeを使用して</strong>こちらを表示できるか確認してください: <a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>表示できない場合、何かがFirestoneのコンテンツへのアクセスをブロックしています。 通常はお使いのPCのファイアウォールやウイルス対策ソフトが原因ですが、インターネットプロバイダ（ISP）に起因する場合もあります。 See <a href=\"/faq#other-things-to-try\">その他の解決策</a>を参照してください。</li></ul></li><li>ページ下部にある <a href=\"/faq#connectivity-issues-global\">接続に関する問題</a> セクションを確認してください。</li><li>ブラウザで表示できるにもかかわらずアプリ内で表示されない場合は、アプリによる当該コンテンツへのアクセスが妨げられています。<ul><li>ファイアウォールとウイルス対策ソフトを一時的に無効にしてみてください。<blockquote><p>ファイアウォールの設定を開き、「Overwolf」に関連する項目をすべて許可（通過）に設定したところ、問題が解決しました。</p></blockquote></li><li>それでも解決しない場合、お使いのPC固有のその他のセキュリティ制限が機能している可能性があります。<ul><li>もし自力で解決できた場合は、他のユーザーへの解決策として追加しますので、ぜひ手順をメッセージで教えてください :)</li></ul></li><li>Firestoneを再インストールすることで解決するケースもあります。</li></ul></li></ul>"
+                },
+                "incompatible-software": {
+                    "body": "<p>これらが起動している場合は、終了してからハースストーンを閉じ、Overwolfを再起動した上で再度試してみてください：</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>"
+                },
+                "check-if-running-as-admin": {
+                    "step-2": "<ol start=\"2\"><li>「Elevated」の項目にチェックが入っていることを確認します</li></ol>",
+                    "step-3": "<ol start=\"3\"><li>リスト内のFirestoneのエントリまで移動します。Firestoneが管理者として実行されている場合、該当する「Elevated」列に「Yes」と表示されます（スクリーンショットの私の環境では「Yes」になっていません）。</li></ol>",
+                    "step-1": "<ol><li>タスクマネージャーを開き（Ctrl + Shift + Esc）、「詳細」タブに移動します。ヘッダーバーを右クリックし、「列の選択」をクリックします</li></ol>"
+                },
+                "app-doesnt-update": {
+                    "body": "<ol><li>Overwolfを終了します</li><li> C:\\Users\\&lt;your_user_name&gt;\\AppData\\Local\\Overwolf\\Extensions\\ フォルダを開きます</li><li>'lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob' という名前のフォルダを削除します</li><li>C:\\Users\\&lt;your_user_name&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\ フォルダを開きます</li><li> 'lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob'という名前のフォルダを削除します</li><li>Overwolfを起動します</li><li>アプリの再インストールを試します</li></ol>"
+                },
+                "hard-kill-apps": {
+                    "body": "<blockquote><p>こんにちは。タスクマネージャーからFirestoneとOverwolfの両方を終了し、再度開いたところ、すべて意図した通りに動作しました。Firestoneの単純な再起動だけでは問題は解決しませんでした。</p></blockquote>"
+                },
+                "connectivity-issues-russia": {
+                    "body": "<p><strong>ロシアから接続している場合はこちらを試してみてください</strong>. B以下は、接続の問題を解決するためにユーザーが自身のPCで実施したいくつかの手順です。</p><blockquote><p>Firestoneをアンインストールして再インストールする</p><p>GoodbyeDPIのブラックリストに <a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/を追加する</a></p><p>これら2つの操作はどちらも特にGoodbyeDPIユーザー向けです。 Google Chromeで正しく動作させるには、chrome://flags にアクセスし、以下の3つの特定フラグを無効にする</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>数日前にロシアのプロバイダの一部でcloudflare-ech.comがブロックされたため、これだけで問題が発生しているユーザーもいるようです。そのため、ブラックリストのtxtファイルにそれを追加することで問題が解決します。自分の場合は不要でしたが、static.firestoneapp.com もそのリストに追加しておくとよいかもしれません。</p><p>まずコマンドプロンプト（cmd）からCloudflareに数回pingを送信してIPアドレスを取得しました。次に、Windows Defender ファイアウォールで規則を作成し、取得したIPからの接続をOverwolf.exeに対してのみブロックしました。その後、Firestoneの再インストールが必要になる場合があります：</p></blockquote>",
+                    "more": "<blockquote><p>PCでVPNをオンにし、ハースストーンをダウンロードし、Overwolf内のプログラムを削除してから再ダウンロードし、VPNをオフにすれば、すべて正常に動作します。ゲームを起動するたびにこの操作を行ってください。ロシア国内で有効です。</p><p>問題はおそらくロシアにおけるcloudflare-ech.comのブロックにあると思われます。 自分や一部のユーザーがDiscordのブロック回避（GoodbyeDPIと同様に機能するもの）に使用しているアプリを、cloudflare-ech.comがブラックリストに追加されたバージョン1.5.2以降にアップデートすることで修正できました。アプリはこちら: <a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>. このアプリはロシア国内で比較的普及しているため、v1.5.2以降にアップデートすることで一部のユーザーに有効なはずです。</p></blockquote>"
+                },
+                "virgin-media-web-safe": {
+                    "body": "<p>ヴァージン・メディア（Virgin Media）接続をご利用の場合（少なくともイギリスからの場合）、「Virgin Media Child Safe」機能によってFirestoneの動作に必要な一部のデータへのアクセスがブロックされる可能性があるようです。なぜそうなるのかは不明ですが、この機能を無効にすることで問題が解決するようです。</p><p>Web Safeに関しても同様の問題が発生しており、static.zerotoheroes.com を例外に追加することで解決するようです。</p>"
+                },
+                "memory-reading-error": {
+                    "intro": "<p>「Memory reading（メモリ読み取り）」エラーは、アプリがゲームクライアントのメモリにアクセスする権限を持っていない場合に発生します。通常、これは許可やアクセス権限の問題が原因であり、管理者として実行することで大抵は解決します。</p><p>管理者として実行するために必要な全手順の詳細はこちらです：</p>"
+                },
+                "dns": {
+                    "body": "<p>同じ問題を抱えていた別のユーザーからの情報：</p><blockquote><p>挙げられていた手順はどれも問題の原因ではありませんでしたが、パートナーが何が間違っていたかを解明したため、他の解決策でうまく行かなかった場合に同じ問題を抱える他の人の助けになればと思いお送りします。彼にネットワークアダプターのDNS設定をGoogleのDNS［優先 8.8.8.8、代替 8.8.4.4］に変更してもらいました</p></blockquote><p>より詳細な手順：</p><ol><li>コントロール パネル\\ネットワークとインターネット\\ネットワーク接続 を開きます</li><li>使用している接続の種類を右クリックします</li><li>「この接続は次の項目を使用します」の中にある「インターネット プロトコル バージョン 4 (TCP/IPv4)」を探します\"</li><li>「プロパティ」をクリックします</li><li>「次の DNS サーバーのアドレスを使う」を選択します</li><li>8.8.8.8 (Google) に設定します</li><li>Firestoneを一度閉じてから再度開きます。</li></ol>"
+                },
+                "truncated-logs": {
+                    "body": "<p>アプリがしばらく正常に動作した後、数試合プレイしたところで突然停止してしまう場合、ハースストーンのログ出力が停止している可能性があります。</p><p>以下の手順を行ってください：</p><ul><li>ハースストーンを終了します</li><li><code>Hearthstone.exe</code> ファイルが存在する、ハースストーンのインストールフォルダに移動します</li><li>このフォルダ内に <code>client.config</code> ファイルが存在するか確認します<ul><li>存在しない場合は、新規作成してください</li></ul></li><li> <code>client.config</code> ファイルの内容を以下のように書き換えます<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>ハースストーンを再起動します</li></ul><p>これを行った後もゲームが停止する現象が続く場合、何かの問題が発生していますので、アプリのメインウィンドウの右上にあるボタンからバグレポートを送信してください :)</p>"
+                },
+                "truncated-logs-other": {
+                    "body": "<p>アンインストール／再インストールで問題が解決する可能性があります：</p><blockquote><p>%localappdata%\\Blizzard\\Hearthstone のアドレスのファイルを削除し、ハースストーン内のすべてのキャッシュファイルを消去してからゲームを再インストールしたところ、問題が解決しました。</p></blockquote><p>ハースストーンと干渉する他のプログラムを使用していませんか？中国のユーザーからの情報：</p><blockquote><p>我发现问题了，我用一个中国特有的启动器启动游戏，然后炉石传说的文件夹关于日志的文件就会消失。不用它启动就不会有问题。(訳：原因がわかりました。中国独自のランチャーを使ってゲームを起動すると、ハースストーンのフォルダ内にあるログに関するファイルが消えてしまうようです。そのランチャーを使わずに起動すれば問題は発生しません。)</p></blockquote>"
+                },
+                "mainland-china": {
+                    "body": "<ul><li><p>我听说如果你同时安装了“中国大陆”客户端和“世界其他地区”客户端，Firestone 只能在其中一个客户端上运行。</p><ul><li>看来你可以在登录后转到“收藏”屏幕来解决这个问题</li></ul></li><li><p>中国本土向け」クライアントと「その他の地域向け」クライアントの双方をインストールしている場合、Firestoneが片方でしか機能しないという報告があります。</p><ul><li>ログイン後に「コレクション」画面を開くことで解決できる可能性があります。</li></ul></li></ul>"
+                },
+                "no-cards": {
+                    "body": "<ul><li>Chromeなどのブラウザから <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</a> にアクセスできるか確認してください。</li><li>アクセスできない場合、ルーター、プロバイダ（ISP）、またはVPNの問題によりAWSへの接続がブロックされている可能性があります。ペアレンタルコントロールもこの問題のよくある原因です。<ul><li>ウイルス対策ソフトがアクセスをブロックしている場合があるため、一時的に無効化を試みてください。</li><li><strong>重要</strong>: これは最近特に増えている原因です。ペアレンタルコントロールの設定（プロバイダ側の設定含む）を確認し 、 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> と <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a>をホワイトリストに登録してください。</li></ul></li><li>どうしても解決しない場合は、 <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a>までメールでお問い合わせください。</li></ul>"
+                }
+            }
+        },
+        "docs": {
+            "pages": {
+                "setup": {
+                    "intro": "<p>設定は(思うに)非常に簡単に操作できます: 機能はメニューごとにグループ化されており、上部の検索ボックスを使用して必要な項目を検索することもできます。</p>"
+                },
+                "twitch": {
+                    "sections": {
+                        "firestone-configuration": {
+                            "intro": "<p>まず、FirestoneからTwitchにログインする必要があります。設定 &gt; 全般 &gt; Twitchに移動して下さい。</p>",
+                            "after-login": "<p>ログインが完了すると、以下のような画面になります</p>",
+                            "overlays": "<p>これ以上の設定は必要ありません。トラッカーオーバーレイ（自分のトラッカー、相手のトラッカー、秘策ヘルパー、各種カウンターなど）は配信画面へ自動的にキャプチャされます。</p>"
+                        },
+                        "capturing-the-tracker": {
+                            "body": "<p>デフォルトでは、そのままで正常に動作します。ただし、ゲーム内にFirestoneのオーバーレイが表示されない場合は、こちらのトラブルシューティングガイドをご確認ください： <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176947-how-to-show-overwolf-in-game-while-streaming\" target=\"_blank\" rel=\"noopener noreferrer\">配信中にゲーム内でOverwolfを表示する方法</a></p>"
+                        },
+                        "what-is-the-twitch-extension": {
+                            "body": "<p>これにより、ブラウザ上にデッキリストのオーバーレイが追加され、視聴者はデッキの内容を簡単に確認できるほか、デッキコードをコピーしたりできるようになります。</p><p>また、盤面や手札にあるカードの上にマウスを乗せることで、そのカードの詳細な効果を確認することも可能になります。</p>"
+                        },
+                        "capturing-main-and-battlegrounds": {
+                            "intro": "<p><em>ゲームプレイの配信だけに興味がある場合は、このセクションを無視しても問題ありません。</em></p><p>Firestoneには、視聴者に統計情報を表示するための2つのメインウィンドウがあります。1つはバトルグラウンド専用で現在のゲームの統計を表示するもの、もう1つは過去の全ゲームの統計を表示するものです。デフォルトでは、Firestoneのメインウィンドウとバトルグラウンドウィンドウはオーバーレイ表示ではありません。これは、ゲーム画面の外へ移動できる反面、配信上でキャプチャされないことを意味します。</p><p>これらをキャプチャするには、2つの方法があります:</p><ul><li>2台目のモニターに移動させ、画面全体をキャプチャする</li><li>以下に示す2つの「オーバーレイ」設定を有効にする。これにより、ウィンドウがゲーム画面に固定され（ゲーム外へのドラッグはできなくなります）、OBSが自動的にキャプチャできるようになります（これらの設定を変更すると、Firestoneが一度終了して再起動する場合があります）：</li></ul>"
+                        },
+                        "installing": {
+                            "body": "<p>次に、 <a href=\"https://dashboard.twitch.tv/extensions/jbmhw349lqbus9j8tx4wac18nsja9u\" target=\"_blank\" rel=\"noopener noreferrer\">the Twitch dashboard</a>からFirestone Twitch拡張機能をインストールする必要があります(リンクはFirestoneの設定画面にもあります)。</p><p>インストールを行うだけで、特別な設定は一切不要です。</p><p><strong>注意：</strong>Twitchの仕様により、Firestoneとの連携が定期的にログアウトされることがあります。チャンネル上にインタラクティブオーバーレイが表示されない場合は、まずFirestoneの設定画面でTwitchに正常にログインしているか確認してください。</p>"
+                        }
+                    }
+                },
+                "mods": {
+                    "sections": {
+                        "requirements": {
+                            "body": "<p>FirestoneのMod Managerに認識されるには、Mod側で Name、Version、Guid、およびDownloadLink（リポジトリへのリンク）を含むConfigを公開する必要があります。外部依存関係は現在サポートされていませんが、必要な場合は個別に連絡してください。</p>"
+                        },
+                        "known-mods": {
+                            "body": "<p><strong>警告：</strong> これらのModはコミュニティによって作成・管理されているため、私は一切のサポートを提供できません。代わりに、各モッドのGitHubリポジトリでIssueを開いてください。また前述の通り、ハースストーンのMod利用はゲームの利用規約に違反するため、私はこれらはいかなる理由でも推奨しません。ただし、私個人が内容を確認したところ、機能としては「安全」でありアカウント停止リスクは低いと考えています（ただし、ページ上部の警告をご覧ください）。</p><ul><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-auto-squelch\" target=\"_blank\" rel=\"noopener noreferrer\">AutoSquelch</a>. 相手のエモートを一切表示しないようにします。</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-golden-buddy-tooltip\" target=\"_blank\" rel=\"noopener noreferrer\">Golden Buddy Tooltip</a>. バディボタンの上にマウスを乗せた際、ゴールデンのバディを表示します。</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-show-collection-exact-count\" target=\"_blank\" rel=\"noopener noreferrer\">Show Collection Exact Card Count</a>. コレクション内の「9+」という表記を、正確な所持枚数に置き換えます。</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-remove-ghost-overlay\" target=\"_blank\" rel=\"noopener noreferrer\">Remove Collection Ghost Overlay</a>. コレクションで未所持のカードを確認する際に、グレーアウト（ゴースト表示）を解除します。これによりカードの詳細情報をすべて確認でき、美しいアートのために作成するかどうかを判断できるようになります。</li></ul>"
+                        },
+                        "installing": {
+                            "body": "<p>まず、Firestoneの 設定 &gt; 全般 &gt; Mods セクションから、Modsを有効にする必要があります (ハースストーンは終了している必要があります)。</p><p>その後、各Modの固有のインストラクションに従う必要がありますが、おおよその流れはこうです:</p><ul><li>Modのメインファイルを<code>Hearthstone/BepInEx/plugins</code> フォルダにコピーする</li><li>Modの関連ファイル を<code>Hearthstone/BepInEx/plugins</code> フォルダ (同じフォルダ)にコピーする</li></ul><p>その後ハースストーンを再起動します。 新しいModを入れた状態でハースストーンを起動すると、FirestoneがModを認識します</p>"
+                        },
+                        "developing": {
+                            "body": "<p>Firestoneには、組み込みバージョンの <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>が同梱されています。 これを利用すると、ゲームに機能を追加するModを簡単にインストールできます。また、BepInExをご自身で個別にインストールすることも可能です。</p><p>BepInExプラグインの開発については、BepInExの公式ドキュメントを参照するか、既存のModを参考にしてください。または私に <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a>でメンションを送ることもできます。</p><p>ハースストーンやFirestone固有の機能（両プレイヤーのデッキ状態の把握など）は、今後のアップデートによりモッド内で利用できるようになる予定です。理論上は、完全に統合されたトラッカーを自作することも可能になります:)</p>"
+                        },
+                        "old-mods": {
+                            "body": "<p>これらはメンテナンスが停止しており、現在は動作しないModです。 興味のあるModがある場合は、ModのリポジトリでIssueを送信し、開発者にFirestoneの新しいMod Managerに対応した更新を依頼してください。</p><ul><li><a href=\"https://github.com/sebastientromp/hs-melon-hide-mercenary-emotes\" target=\"_blank\" rel=\"noopener noreferrer\">Hide Mercenary Emote</a>. 一部のマーセナリー（ダイヤモンドポートレートなど）の台詞や吹き出しを非表示にします。</li><li><a href=\"https://github.com/sebastientromp/hs-melon-increase-game-speed-vs-ai\" target=\"_blank\" rel=\"noopener noreferrer\">Increase Animation Speed vs AI</a>. AI（NPC）との対戦時にゲームのアニメーション速度を4倍にします。<strong>警告</strong>： AI対戦であってもゲーム速度の変更はBlizzardの規約に抵触する恐れがあるため、このModの使用には十分ご注意ください。</li></ul>"
+                        }
+                    },
+                    "intro": "<p><strong>警告：</strong> ハースストーンのMod利用はゲームの利用規約に違反しており、アカウントがBANされる可能性があります。そのため、ご自身の責任においてご利用ください。</p><p><strong>警告：</strong>Firestone Mod Manager は現在、アプリのベータ版でのみ利用可能です。詳細は <a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/beta-test.md\" target=\"_blank\" rel=\"noopener noreferrer\">beta-test.md</a>をご覧ください</p>"
+                },
+                "developer-resources": {
+                    "intro": "<p>これらのAPIを直接使用して、興味深い統計データの作成、インフォグラフィックの作成、あるいは単に楽しむために活用することができます。成果物を公開する際は、データの出所としてFirestoneを必ずクレジット表記してください。</p><p>公開アプリでデータを使用したい場合は、<a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a>で私に直接ご連絡ください。</p>",
+                    "sections": {
+                        "general": {
+                            "body": "<ul><li>すべてのカード： <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</code></a><ul><li> <code>enUS</code> 部分をハースストーンが対応している言語コードに変更することで、他の言語のデータにもアクセスできます</li></ul></li></ul>"
+                        },
+                        "api-links": {
+                            "body": "<p>APIの各所で使用されるプレースホルダーについて：</p><ul><li><code>%timeSuffix%</code> は、データの集計期間に応じて <code>all-time</code>, <code>past-three</code>, <code>past-seven</code> or <code>last-patch</code> に置き換えることができます。</li><li><code>%tribeSuffix%</code> は <code>all-tribes</code> (推奨)を指定するか、<a href=\"https://github.com/Zero-to-Heroes/hs-reference-data/blob/master/src/enums/race.ts\" target=\"_blank\" rel=\"noopener noreferrer\">race.ts</a> で定義されている種族IDをハイフン(<code>-</code>), で繋いだ5つの種族の組み合わせを指定します（ただし後者はサンプルサイズが小さくなりすぎることが多いです）。</li></ul>"
+                        }
+                    }
+                },
+                "creator-code": {
+                    "intro": "<p>手続きは非常に簡単です：チェックアウト（お支払い）ページにて、提示されたコードを以下のフィールドに入力するだけです：</p>"
+                },
+                "lottery": {
+                    "intro": "<p>Firestone Lottery(抽選)では、Firestone Premiumの2ヶ月間サブスクリプションを獲得するチャンスがあります。</p><p>Firestone Lotteryに参加するには、プレイ中にLottery（抽選）ウィンドウを開いて表示状態にしておきます(実績を追跡している場合でも有効です）。</p><p>各シーズン（現在は2週間単位）ごとに、ゲーム内で特定の特定アクションを行うことでポイントを獲得できます(抽選ウィンドウを表示状態にするのを忘れずに)。 各アクションで得たポイントは、シーズン期間中ゲームを終えるごとに蓄積されていきます。シーズンの最後に、獲得したポイントに応じて重み付けされた上で、参加者全員の中から抽選で2名の当選者がランダムに選ばれます。ポイントが多ければ多いほど、当選確率が高くなります。</p>"
+                }
+            }
+        },
+        "auth": {
+            "callback": {
+                "fallback-suffix": "."
+            }
         }
     },
     "twitch": {
