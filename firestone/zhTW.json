@@ -2287,7 +2287,9 @@
 			"override-checkbox-label": "無論如何讓我繼續新訂閱（放棄舊訂閱）",
 			"override-confirmation": "⚠️ 我完全瞭解：如果繼續完成此訂閱流程，我將失去當前的舊訂閱",
 			"login-to-subscribe": "登入以訂閱",
-			"third-party-auth-tools-unsupported": "🚨 Premium 功能需要訂閱官方 Firestone。第三方「授權修復」或解鎖工具均不受支援且不安全——這類工具通常會要求系統管理員權限，並修改 hosts 檔案或防火牆規則。請移除該類工具，並透過官方 Premium 頁面進行訂閱。"
+			"third-party-auth-tools-unsupported": "🚨 Premium 功能需要訂閱官方 Firestone。第三方「授權修復」或解鎖工具均不受支援且不安全——這類工具通常會要求系統管理員權限，並修改 hosts 檔案或防火牆規則。請移除該類工具，並透過官方 Premium 頁面進行訂閱。",
+			"price-taxes-excluded-tooltip": "稅金將在結帳時根據你的帳單地址另行加上。",
+			"price-taxes-excluded": "（含稅）"
 		}
 	},
 	"turn-timer": {
@@ -2368,8 +2370,12 @@
 			"opponent": "對手下一個文物的力量將是 {{value}}"
 		},
 		"fatigue": {
-			"player": "你的下一次抽取受到 {{value}} 疲倦傷害",
-			"opponent": "對手的下一次抽取受到 {{value}} 點疲倦傷害"
+			"player": "你的下一次抽取受到 {{value}} 疲倦傷害。將在抽取 {{draws}} 次後死於疲倦（共造成 {{totalDamage}} 點傷害）",
+			"opponent": "對手的下一次抽取受到 {{value}} 點疲倦傷害。將在抽取 {{draws}} 次後死於疲倦（共造成 {{totalDamage}} 點傷害）",
+			"next": {
+				"opponent": "對手下一次抽取將受到 {{value}} 點疲倦傷害",
+				"player": "你下一次抽取將受到 {{value}} 點疲倦傷害"
+			}
 		},
 		"abyssal-curse-2": {
 			"player": "深淵詛咒造成的最高傷害是 {{value}} ，你在下回合開始時受到 {{totalDamageFromCursesInHand}} 點傷害",
@@ -2825,6 +2831,10 @@
 		},
 		"tasty-lobster-buff": {
 			"player": "你的美味龍蝦死亡時給予 +{{atk}}/+{{health}}"
+		},
+		"flesh-giant": {
+			"player": "你的英雄生命值在你的回合內已變動 {{times}} 次",
+			"opponent": "對手的英雄生命值在其回合內已變動 {{times}} 次"
 		}
 	},
 	"loading": {
@@ -3058,7 +3068,9 @@
 			"deck-winrate-vs-class": "對戰 {{value}}"
 		},
 		"secrets-helper": {
-			"title": "秘密小幫手"
+			"title": "秘密小幫手",
+			"filtered-to-hovered": "顯示懸停的秘密",
+			"on-board-secret": "此秘密正在場上"
 		},
 		"card-burned": "爆牌",
 		"card-transformed": "已變形的卡牌",
@@ -3943,13 +3955,16 @@
 				"notification-positions": {
 					"top-left": "↖️左上角",
 					"bottom-left": "↙️左下角",
-					"bottom-right": "↘️右下角",
-					"top-right": "↗️右上角"
+					"bottom-right": "右下角↘️",
+					"top-right": "右上角↗️"
 				},
 				"show-notification-tooltip": "在你的回合時，或是在英雄戰場（BG）的招募階段開始時，顯示 Windows 通知",
 				"show-notification": "顯示 Windows 通知",
 				"close-to-tray-tooltip": "關閉應用程式時，縮小到系統匣而非完全退出。不建議使用此功能，因為完全關閉應用程式是確保資源定期釋放的好方法。",
-				"close-to-tray-label": "縮小到系統匣"
+				"close-to-tray-label": "縮小到系統匣",
+				"launch-on-windows-start-tooltip": "隨 Windows 開機啟動 Firestone 並保持在系統工作列，以便在啟動《爐石戰記》時準備好覆疊介面。如果你從工作列完全結束程式，請在遊戲前重新開啟 Firestone。",
+				"notifications-size": "通知大小",
+				"launch-on-windows-start-label": "隨 Windows 開機啟動 Firestone"
 			},
 			"localization": {
 				"title": "在地化",
@@ -4094,7 +4109,7 @@
 				"lottery-block-text4": "🚨 如果你是 Premium 會員，選擇參加抽獎將不會向你展示廣告 - 如果你中獎，我們將為你發放等值的獎品。",
 				"lottery-block-text2": "一旦新的抽獎賽季開始，先前賽季的點數將被重設。",
 				"title": "Premium 會員訂閱選項",
-				"lottery-block-text1": "參加抽獎活動可讓你在顯示抽獎視窗的狀態下，透過在遊戲中執行特定動作（例如花費資源）來累積點數。每兩週結束時，將隨機抽出 2 名中獎者（點數越多，中獎機率越高）。中獎者將獲得 2 個月的 Premium 會員資格，並會在 {{twitterLink}} 與 {{discordLink}} 上公布。",
+				"lottery-block-text1": "參加抽獎活動可讓你在顯示抽獎視窗的狀態下，透過在遊戲中執行特定動作（例如花費資源）來累積點數。每兩週結束時，將隨機抽出 2 名中獎者（點數越多，中獎機率越高）。中獎者將獲得 2 個月的 Premium 會員資格，並會在 {{twitterLink}} 與 {{discordLink}} 上公佈。",
 				"lottery-widget-settings-title": "小工具設定",
 				"link": "維基上",
 				"lottery-premium-section-tooltip": "此區塊僅適用於 Premium 會員",
@@ -4248,7 +4263,20 @@
 				"link-battlenet-tooltip": "請先使用 Overwolf 登入，再連結 Battle.net。完成後，你即可使用 Battle.net 登入並重新整理數據。",
 				"sign-in-tooltip": "開啟登入頁面以使用 Overwolf 或 Battle.net 登入。",
 				"signed-in-as": "已透過 {{provider}} 登入為 <b>{{name}}</b>。Firestone 使用者名稱：{{username}}",
-				"intro-battlenet": "你已使用 Battle.net 登入。若要連結現有的 Overwolf 帳號（以下載賽局紀錄），你需要先登出並重新使用 Overwolf 帳號登入。"
+				"intro-battlenet": "你已使用 Battle.net 登入。連結現有的 Overwolf 帳號即可將該賽局歷史紀錄轉移至此登入帳號。",
+				"unlink-last-login-label": "帳號",
+				"unlink-overwolf-confirmation": "你確定嗎？",
+				"unlink-overwolf-tooltip": "將 Overwolf 從此 Battle.net Firestone 帳號中斷連結。之後每個登入方式將僅顯示其自身的賽局歷史紀錄。",
+				"intro-battlenet-linked-overwolf": "此 Battle.net 登入已連結至一個 Overwolf 帳號，讓你可以查看該對戰歷史紀錄。解除連結 Overwolf 即可分別使用各個登入方式。",
+				"unlink-overwolf-failed": "無法解除連結 Overwolf。請稍後再試。",
+				"link-overwolf-button": "連結 Overwolf",
+				"link-overwolf-tooltip": "連結現有的 Overwolf Firestone 帳號。這能讓你匯入現有的數據（對戰紀錄、卡牌包等）。",
+				"signed-in-linked-overwolf-tooltip": "已連結的 Overwolf 帳號：{{name}}",
+				"link-overwolf-need-battlenet": "請先使用 Battle.net 登入，再重試連結 Overwolf。",
+				"link-overwolf-label": "Overwolf",
+				"unlink-overwolf-label": "Overwolf",
+				"unlink-overwolf-button": "解除連結 Overwolf",
+				"unlink-last-login-failed": "你必須在此 Firestone 帳號上保留至少一種登入方式。"
 			}
 		},
 		"decktracker": {
@@ -4323,7 +4351,11 @@
 				"show-hero-power-in-board-zone-tooltip": "在「戰場」區域顯示玩家的英雄能力。這有助於顯示動態卡池和部分高亮效果。",
 				"play-order-title": "打出順序",
 				"show-flavor-text-on-hover": "懸停時顯示趣味文字",
-				"show-flavor-text-on-hover-tooltip": "在遊戲內記牌器將游標懸停於卡牌時，於通知欄角顯示其趣味文字"
+				"show-flavor-text-on-hover-tooltip": "在遊戲內記牌器將游標懸停於卡牌時，於通知欄角顯示其趣味文字",
+				"hide-play-order-on-blocking-ui-tooltip": "當畫面出現遊戲選單、發現選項或放大檢視的卡牌（手牌、場面或對戰歷史紀錄）時，隱藏出牌順序數字",
+				"show-flavor-text-on-in-game-hover": "檢視卡牌時顯示趣味文字",
+				"hide-play-order-on-blocking-ui": "當遊戲 UI 出現時隱藏",
+				"show-flavor-text-on-in-game-hover-tooltip": "在《爐石戰記》中檢視卡牌（手牌或場面）時，於通知角落顯示其風味文字"
 			},
 			"modes": {
 				"title": "記牌器在下列模式處於作用中狀態",
@@ -4429,7 +4461,8 @@
 					"bashana-label": "「巴珊娜‧符文圖騰」",
 					"bashana-tooltip": "顯示巴珊娜的樹人還剩多少法力值可施放",
 					"ancestral-automaton-tooltip": "顯示對手召喚遠古自動機的次數",
-					"ancestral-automaton-label": "遠古自動機"
+					"ancestral-automaton-label": "遠古自動機",
+					"flesh-giant-tooltip": "當對手的職業為 {{classes}} 時，顯示對手英雄生命值在其回合內變動的次數"
 				},
 				"size-title": "大小與不透明度",
 				"opacity-title": "不透明度",
@@ -4680,7 +4713,9 @@
 					"card-dead-tooltip": "顯示「{{cardName}}」在我方戰場死亡的次數",
 					"godfrey-the-betrayer-label": "「『背叛者』高佛雷」",
 					"godfrey-the-betrayer-tooltip": "顯示所有你已摧毀的卡牌，以及哪些卡牌仍在等待返回你的手牌",
-					"card-name-summoned-tooltip": "顯示你已召喚「{{cardName}}」的次數"
+					"card-name-summoned-tooltip": "顯示你已召喚「{{cardName}}」的次數",
+					"flesh-giant-label": "血肉巨人",
+					"flesh-giant-tooltip": "當你手牌或牌組中有血肉巨人時，顯示你英雄生命值在你的回合內變動的次數"
 				},
 				"discovery-zone-label": "發現區塊",
 				"discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並標記與牌堆的協同作用。",
@@ -4985,7 +5020,9 @@
 				"dark-gift-overlay-label": "黑暗贈禮覆疊介面",
 				"hide-battle-odds-until-mouseover-tooltip": "啟用時，螢幕上方會保持顯示小型勝率橫幅，當你將游標移至上方時才會顯示完整的勝／平／敗小工具",
 				"hero-power-extra-info-label": "英雄能力額外資訊",
-				"hero-power-extra-info-tooltip": "懸停於英雄能力時，在卡牌工具提示中顯示額外的即時詳細資訊（例如餅乾大廚的湯鍋裡已有哪些手下類別）。"
+				"hero-power-extra-info-tooltip": "懸停於英雄能力時，在卡牌工具提示中顯示額外的即時詳細資訊（例如餅乾大廚的湯鍋裡已有哪些手下類別）。",
+				"always-show-tavern-tier-label": "總是顯示旅店⭐️",
+				"always-show-tavern-tier-tooltip": "在英雄戰場排行榜的玩家頭像旁顯示每位玩家當前的旅店⭐️。"
 			},
 			"session-widget": {
 				"title": "歷史賽局小工具",
@@ -5395,6 +5432,14 @@
 				"high-resource-usage": {
 					"body": "<ul><li>部分使用者回報 GPU 使用率過高，這是由 Outplayed 應用程式引起的。若發生狀況，請嘗試停用那個應用程式</li></ul>",
 					"title": "資源佔用過高"
+				},
+				"login-opens-overwolf": {
+					"title": "登入時開啟的是 Overwolf 而非 Firestone Standalone",
+					"body": "<p>網站會透過 <code>firestoneapp://</code> 連結將你登回桌面應用程式。Overwolf 同樣註冊了該協定，因此即使你已經關閉 Overwolf，Windows 仍可能會啟動 Overwolf。</p><ul><li>開啟 <strong>Windows 設定 → 應用程式 → 預設應用程式</strong></li><li>搜尋 <strong>Firestone Standalone</strong> 或協定 <code>firestoneapp</code></li><li>將 Firestone Standalone 設定為預設處理程式</li></ul><p>關閉 Overwolf 並不會註銷該協定。每次啟動時 Firestone Standalone 都會重新註冊 <code>firestoneapp://</code>，但在你變更預設應用程式之前，Windows 可能仍會偏好使用 Overwolf。</p>"
+				},
+				"game-is-slow-high-refresh": {
+					"body": "<p>將遊戲幀率限制在 60 FPS 可能會讓高 APM 操作感到遲鈍。在高重新整理率螢幕上的更好替代方案是將幀率限制在略低於螢幕重新整理率的數值，並保持可變重新整理率正常運作：</p><ul><li>將遊戲與 GPU 的幀率限制器設定為你螢幕的<strong>重新整理率減 6</strong>（例如：144 Hz → 138 FPS）</li><li>保持 <strong>G-Sync</strong> 或 <strong>FreeSync</strong> 啟用並正常運作</li><li>在 NVIDIA 控制面板或 NVIDIA Profile Inspector 中，將<strong>垂直同步</strong>設定為 <strong>Fast Sync</strong></li></ul><p>144 Hz 顯示器的典型 NVIDIA Profile Inspector 設定值：</p><ul><li>Frame Rate Limiter V3: 138 FPS</li><li>GSYNC - Application Mode: Fullscreen and Windowed</li><li>GSYNC - Application State: Allow</li><li>GSYNC - Global Feature: On</li><li>GSYNC - Global Mode: Fullscreen and Windowed</li><li>Vertical Sync: Fast Sync</li></ul>",
+					"title": "高重新整理率螢幕 (NVIDIA)"
 				}
 			},
 			"permalink-aria": "連結至此區段",
@@ -5489,7 +5534,7 @@
 				"creator-code": {
 					"sections": {
 						"notes": {
-							"body": "<ul><li>此代碼僅適用於你首期訂閱的時間。我正在與 Tebex 洽談讓此代碼每次自動重新套用，但目前確保你每月都能支持創作者的最佳方式，是使用代碼訂閱後取消自動續訂，並在當前訂閱結束後手動重新輸入代碼。</li><li>此代碼適用於所有方案（月繳／年繳）</li><li>若遇到問題，請在 <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上敲 @sebastientromp</li></ul>",
+							"body": "<ul><li>此代碼僅適用於你首期訂閱的時間。我正在與 Tebex 洽談讓此代碼每次自動重新套用，但目前確保你每月都能支持創作者的最佳方式，是使用代碼訂閱後取消自動續訂，並在目前的訂閱週期結束後手動重新輸入代碼。</li><li>此代碼適用於所有方案（月繳／年繳）</li><li>若遇到問題，請在 <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上敲 @sebastientromp</li></ul>",
 							"title": "備註"
 						}
 					},
@@ -5569,7 +5614,10 @@
 				"failed": "⚠️ 登入失敗",
 				"returning": "正在將你返回 Firestone 應用程式…",
 				"hint": "你的瀏覽器可能會詢問是否開啟 Firestone 應用程式 — 請選擇「允許」或「開啟」。",
-				"try-again": "重試"
+				"try-again": "重試",
+				"overwolf-hint": "如果開啟的是 Overwolf 而非 Firestone Standalone，請<a href=\"/faq#login-opens-overwolf\">變更 Windows 預設應用程式</a>以處理 firestoneapp:// 連結。",
+				"link-returning-overwolf": "正在將你返回 Firestone 應用程式。你的 Overwolf 對戰歷史紀錄現在可在以此 Battle.net 登入時使用。",
+				"link-success-overwolf": "已連結 Overwolf！"
 			},
 			"privacy-link": "隱私權政策",
 			"errors": {
@@ -5581,14 +5629,17 @@
 				"generic": "發生錯誤，請重試。",
 				"cancelled": "驗證已取消或被拒絕。",
 				"invalid-state": "無效的狀態參數。請嘗試重新登入。",
-				"missing-verifier": "缺少 PKCE 驗證碼。請嘗試重新登入。"
+				"missing-verifier": "缺少 PKCE 驗證碼。請嘗試重新登入。",
+				"missing-link-token-overwolf": "此連結已過期。請在 Battle.net 登入狀態下，從 Firestone 應用程式內開啟「連結 Overwolf」。"
 			},
 			"privacy-prefix": "登入即代表你同意我們的 ",
 			"link-subtitle": "將 Battle.net 連結至你的 Firestone 帳號",
 			"subtitle": "登入以跨裝置同步你的數據",
 			"continue-with-battlenet": "使用 Battle.net 繼續",
 			"continue-with-google": "使用 Google 繼續",
-			"continue-with-overwolf": "使用 Overwolf 繼續"
+			"continue-with-overwolf": "使用 Overwolf 繼續",
+			"link-subtitle-overwolf": "將 Overwolf 連結至你的 Firestone 帳號",
+			"linking-overwolf": "正在將你重新導向至 Overwolf…"
 		},
 		"monitoring": {
 			"simulator": {
@@ -5910,7 +5961,8 @@
 		},
 		"redirect": {
 			"partner": "正在重新導向...",
-			"in-game-replay": "正在重新導向至 Firestone..."
+			"in-game-replay": "正在重新導向至 Firestone...",
+			"premium-checkout": "正在重新導向至 Firestone..."
 		}
 	},
 	"archetype": {
@@ -6677,7 +6729,8 @@
 		"chad-seedlock": "泰迪斯任務(惡魔之種)-術",
 		"cute-warrior": "可愛-戰",
 		"hl-n-roll-warrior": "無雙黑石搖滾-戰",
-		"xl-hl-imbue-rogue": "40牌 無雙注能-賊"
+		"xl-hl-imbue-rogue": "40牌 無雙注能-賊",
+		"seedlock": "任務(惡魔之種)-術"
 	},
 	"arena": {
 		"overlay": {

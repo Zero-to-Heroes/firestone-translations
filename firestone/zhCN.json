@@ -2258,7 +2258,9 @@
 			"override-checkbox-label": "无论如何让我继续订阅",
 			"override-confirmation": "我已了解：如果我完成此订阅流程，我将失去当前的订阅",
 			"login-to-subscribe": "登录订阅",
-			"third-party-auth-tools-unsupported": "高级会员需要通过 Firestone 官方订阅。第三方“授权修复”或解锁工具不受支持且不安全——它们通常会要求管理员权限，并修改 hosts 文件或防火墙规则。请将其移除，并通过官方高级会员页面订阅。"
+			"third-party-auth-tools-unsupported": "高级会员需要通过 Firestone 官方订阅。第三方“授权修复”或解锁工具不受支持且不安全——它们通常会要求管理员权限，并修改 hosts 文件或防火墙规则。请将其移除，并通过官方高级会员页面订阅。",
+			"price-taxes-excluded": "（+ 税）",
+			"price-taxes-excluded-tooltip": "在结账时，会根据您的账单地址添加税费。"
 		},
 		"communities": {
 			"join": {
@@ -2403,8 +2405,12 @@
 			"opponent": "对手下一个“圣物”数值：{{value}}"
 		},
 		"fatigue": {
-			"player": "你的下一次疲劳伤害：{{value}}",
-			"opponent": "对手下一次疲劳伤害：{{value}}"
+			"player": "你的下一次疲劳伤害：{{value}}。疲劳在{{draws}}次抽牌后致命（总共造成{{totalDamage}}点伤害）",
+			"opponent": "对手下一次疲劳伤害：{{value}}。疲劳在{{draws}}次抽牌后致命（总共造成{{totalDamage}}点伤害）",
+			"next": {
+				"player": "你的下次抽牌疲劳伤害为{{value}}点",
+				"opponent": "对手下次抽牌疲劳伤害为{{value}}点"
+			}
 		},
 		"abyssal-curse-2": {
 			"player": "对手给你的“深渊诅咒”层数：{{value}} 。你在下回合开始时受到诅咒伤害：{{totalDamageFromCursesInHand}}",
@@ -2848,6 +2854,10 @@
 		},
 		"tasty-lobster-buff": {
 			"player": "你的美味龙虾死亡时给予 +{{atk}}/+{{health}}"
+		},
+		"flesh-giant": {
+			"player": "你的英雄的生命值在你的回合中变化了{{times}}次",
+			"opponent": "对手的英雄的生命值在对手的回合中变化了{{times}}次"
 		}
 	},
 	"loading": {
@@ -3081,7 +3091,9 @@
 			"deck-winrate-vs-class-tooltip": "此套牌自 {{date}} 以来对战 {{opponent}} 的天梯胜率"
 		},
 		"secrets-helper": {
-			"title": "奥秘助手"
+			"title": "奥秘助手",
+			"filtered-to-hovered": "显示悬停的奥秘",
+			"on-board-secret": "这个奥秘正在发挥作用"
 		},
 		"streamer-mode": {
 			"you": "您",
@@ -4039,7 +4051,10 @@
 				"show-notification": "显示 Windows 系统通知",
 				"show-notification-tooltip": "在你的回合开始或酒馆战棋的招募阶段开始时显示 Windows 系统通知",
 				"close-to-tray-label": "关闭到系统托盘",
-				"close-to-tray-tooltip": "将应用程序关闭到系统托盘而不是彻底退出它。不推荐这样做，因为完全关闭应用程序是确保资源定期正确释放的好方法。"
+				"close-to-tray-tooltip": "将应用程序关闭到系统托盘而不是彻底退出它。不推荐这样做，因为完全关闭应用程序是确保资源定期正确释放的好方法。",
+				"notifications-size": "通知尺寸",
+				"launch-on-windows-start-label": "随 Windows 启动 Firestone",
+				"launch-on-windows-start-tooltip": "随 Windows 启动 Firestone 并将其保持在系统托盘中，以便炉石传说启动时浮窗已准备就绪。如果你从系统托盘完全退出，请在玩游戏前再次启动Firestone。"
 			},
 			"localization": {
 				"title": "本地化",
@@ -4252,7 +4267,7 @@
 				"unlink-battlenet-failed": "无法解除与 Battle.net 的关联。请稍后再试。",
 				"intro": "将您的 Battle.net 账号关联到现有的 Overwolf Firestone 登录，以便您可以使用 Battle.net 登录并保留相同的对局历史。",
 				"intro-signed-out": "登录以同步你的对局历史记录。之后你可以关联其他的登录提供者。",
-				"intro-battlenet": "你已使用 Battle.net 登录。如果想关联现有的 Overwolf 账户（以下载对局历史记录），需要先退出并使用 Overwolf 账户重新登录。",
+				"intro-battlenet": "你已使用 Battle.net 登录。将现有的 Overwolf 账户关联到此登录，以导入该登录的对局历史记录。",
 				"sign-in-label": "账号",
 				"log-out-label": "账号",
 				"unlink-battlenet-confirmation": "您确定吗？",
@@ -4272,7 +4287,20 @@
 				"intro-battlenet-linked": "此 Battle.net 登录与您的 Overwolf Firestone 账户相关联。如需单独使用，请解除关联。",
 				"unlink-battlenet-button": "取消 Battle.net 关联",
 				"not-signed-in": "尚未登录。",
-				"provider-unknown": "未知的提供者"
+				"provider-unknown": "未知的提供者",
+				"link-overwolf-button": "关联 Overwolf",
+				"link-overwolf-tooltip": "关联现有的 Overwolf Firestone 账号。这将允许你导入现有数据（对局历史、开包历史等）。",
+				"unlink-last-login-label": "账号",
+				"unlink-overwolf-confirmation": "您确定吗？",
+				"unlink-overwolf-failed": "无法解除与 Overwolf 的关联。请稍后再试。",
+				"unlink-overwolf-tooltip": "断开 Overwolf 与此使用 Battle.net 登录的 Firestone 账号的关联。之后每次登录将只显示其自己的对局历史记录。",
+				"unlink-last-login-failed": "你必须在这个 Firestone 账号上保留至少一种登录方式。",
+				"link-overwolf-label": "Overwolf",
+				"unlink-overwolf-label": "Overwolf",
+				"signed-in-linked-overwolf-tooltip": "关联的 Overwolf 账号：{{name}}",
+				"link-overwolf-need-battlenet": "请先使用 Battle.net 登录，然后再次尝试关联 Overwolf。",
+				"intro-battlenet-linked-overwolf": "此 Battle.net 登录与你的 Overwolf 账号相关联。如需单独使用每个登录，请解除 Overwolf 的关联。",
+				"unlink-overwolf-button": "取消 Overwolf 关联"
 			}
 		},
 		"decktracker": {
@@ -4347,7 +4375,11 @@
 				"show-hero-power-in-board-zone-tooltip": "在“战场”区域显示玩家的英雄技能。这有助于显示动态卡池和一些高亮效果。",
 				"play-order-title": "打出顺序",
 				"show-flavor-text-on-hover": "悬停时显示风味趣文",
-				"show-flavor-text-on-hover-tooltip": "将鼠标悬停在游戏内记牌器中的卡牌上时，在通知区域显示其趣味描述"
+				"show-flavor-text-on-hover-tooltip": "将鼠标悬停在游戏内记牌器中的卡牌上时，在通知区域显示其风味趣闻",
+				"show-flavor-text-on-in-game-hover": "查看卡牌时显示风味趣文",
+				"hide-play-order-on-blocking-ui-tooltip": "当游戏菜单、发现选项或放大的卡片（手牌、战场或历史记录）显示在屏幕上时，隐藏打出顺序数字",
+				"hide-play-order-on-blocking-ui": "当游戏界面显示时隐藏",
+				"show-flavor-text-on-in-game-hover-tooltip": "在查看炉石传说中的卡牌（手牌或战场）时，在显示通知的角落显示其风味趣文"
 			},
 			"modes": {
 				"title": "记牌器将在以下模式中开启",
@@ -4459,7 +4491,8 @@
 					"bashana-label": "巴珊娜·符文图腾",
 					"bashana-tooltip": "显示巴珊娜·符文图腾的树人还剩多少法力值能施放",
 					"ancestral-automaton-tooltip": "显示对手召唤了多少次星元自动机",
-					"ancestral-automaton-label": "星元自动机"
+					"ancestral-automaton-label": "星元自动机",
+					"flesh-giant-tooltip": "显示对手在作为{{classes}}职业时，对手英雄的生命值在他们的回合中变化了多少次"
 				},
 				"size-title": "尺寸和透明度",
 				"opacity-title": "透明度",
@@ -4706,7 +4739,9 @@
 					"jade-guardians-tooltip": "显示你在本局对战中使用了多少次法力值消耗为2点的卡牌",
 					"card-dead-tooltip": "显示 “{{cardName}}” 在我方战场死亡的次数",
 					"godfrey-the-betrayer-tooltip": "显示所有你已弃掉的卡牌，以及哪些卡牌还在等待回到你的手牌",
-					"card-name-summoned-tooltip": "显示你已召唤“{{cardName}}”的次数"
+					"card-name-summoned-tooltip": "显示你已召唤“{{cardName}}”的次数",
+					"flesh-giant-label": "血肉巨人",
+					"flesh-giant-tooltip": "当你的手牌或牌库中有血肉巨人时，显示你的英雄的生命值在你的回合中变化了多少次"
 				},
 				"discovery-zone-label": "发现区",
 				"discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。",
@@ -5013,7 +5048,9 @@
 				"hide-battle-odds-until-mouseover-label": "鼠标悬停时才显示胜率",
 				"hide-battle-odds-until-mouseover-tooltip": "启用后，屏幕顶部会保留一个小型战斗胜率横幅；将鼠标移到其上时，会显示完整的胜／平／负组件",
 				"hero-power-extra-info-label": "英雄技能额外信息",
-				"hero-power-extra-info-tooltip": "将鼠标悬停在英雄技能上时，在卡牌提示中显示额外的实时详情（例如已经进入厨师曲奇锅中的随从类型）。"
+				"hero-power-extra-info-tooltip": "将鼠标悬停在英雄技能上时，在卡牌提示中显示额外的实时详情（例如已经进入厨师曲奇锅中的随从类型）。",
+				"always-show-tavern-tier-tooltip": "在酒馆战棋排行榜上，在每位玩家头像旁显示当前酒馆等级。",
+				"always-show-tavern-tier-label": "始终显示酒馆等级"
 			},
 			"session-widget": {
 				"title": "战绩记录小部件",
@@ -5243,7 +5280,10 @@
 				"link-success": "Battle.net 已关联！",
 				"fallback-link": "点击此处启动 Firestone",
 				"fallback-suffix": ".",
-				"link-returning": "正在返回 Firestone 应用。你现在可以使用 Battle.net 登录。"
+				"link-returning": "正在返回 Firestone 应用。你现在可以使用 Battle.net 登录。",
+				"link-returning-overwolf": "正在返回 Firestone 应用。你在 Overwolf 中的对局历史现在可以在这个 Battle.net 登录中查看。",
+				"link-success-overwolf": "Overwolf 已关联！",
+				"overwolf-hint": "如果打开的是 Overwolf 而不是 Firestone 独立版，请<a href=\"/faq#login-opens-overwolf\">更改 Windows 默认应用</a>以处理 firestoneapp:// 链接。"
 			},
 			"privacy-html": "登录即表示你同意我们的<a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/tos.md\" target=\"_blank\" rel=\"noopener noreferrer\">隐私政策</a>",
 			"subtitle": "登录以在多台设备之间同步数据",
@@ -5260,13 +5300,16 @@
 				"missing-verifier": "缺少 PKCE 代码验证器，请重新登录。",
 				"failed": "无法完成登录，请重试。",
 				"battlenet-not-configured": "Battle.net 登录暂不可用，请稍后重试。",
-				"missing-link-token": "此链接已过期。请使用 Overwolf 登录 Firestone 应用，然后打开“关联 Battle.net”。"
+				"missing-link-token": "此链接已过期。请使用 Overwolf 登录 Firestone 应用，然后打开“关联 Battle.net”。",
+				"missing-link-token-overwolf": "此链接已过期。请使用 Firestone 用 Battle.net 登录后打开关联 Overwolf。"
 			},
 			"link-subtitle": "将 Battle.net 关联到你的 Firestone 账号",
 			"linking": "正在将你重定向至 Battle.net…",
 			"privacy-link": "隐私政策",
 			"privacy-prefix": "登录即表示你同意我们的 ",
-			"privacy-suffix": " "
+			"privacy-suffix": " ",
+			"linking-overwolf": "正在将你重定向至 Overwolf…",
+			"link-subtitle-overwolf": "将 Overwolf 关联到你的 Firestone 账号"
 		},
 		"faq": {
 			"images": {
@@ -5377,6 +5420,14 @@
 				"images-are-not-showing": {
 					"title": "图片未显示",
 					"body": "<ul><li>检查能否<strong>使用 Google Chrome</strong> 显示此图片：<a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>如果不能，说明有程序阻止访问 Firestone 内容。通常是本机的防火墙或杀毒软件，有时也可能来自网络服务提供商。参见<a href=\"/faq#other-things-to-try\">其他可尝试的方法</a></li></ul></li><li>查看本页底部的<a href=\"/faq#connectivity-issues-global\">连接问题</a>章节</li><li>如果能在浏览器中显示，但不能在应用中显示，说明有程序阻止应用访问此内容。<ul><li>尝试禁用防火墙和杀毒软件<blockquote><p>我找到防火墙设置，将所有与“overwolf”相关的设置改为允许后，问题就解决了。</p></blockquote></li><li>如果仍无帮助，可能还有其他安全限制在起作用，但具体情况因电脑而异<ul><li>如果你成功解决了问题，请给我留言，我会把你的方法添加为供其他用户参考的解决方案 :)</li></ul></li><li>重新安装 Firestone 有时也会有所帮助</li></ul></li></ul>"
+				},
+				"login-opens-overwolf": {
+					"title": "登录后打开的是 Overwolf 而不是 Firestone 独立版",
+					"body": "<p>网站会通过 <code>firestoneapp://</code> 链接让你重新登录桌面应用。Overwolf 也注册了该协议，因此即使你已经退出 Overwolf，Windows 仍可能启动它。</p><ul><li>打开 <strong>Windows 设置 → 应用 → 默认应用</strong></li><li>搜索 <strong>Firestone Standalone</strong> 或协议 <code>firestoneapp</code></li><li>将 Firestone Standalone 设置为默认处理程序</li></ul><p>关闭 Overwolf 并不会注销该协议。Firestone 独立版每次启动时都会重新注册 <code>firestoneapp://</code>，但在你更改默认应用之前，Windows 仍可能优先选择 Overwolf。</p>"
+				},
+				"game-is-slow-high-refresh": {
+					"body": "<p>将游戏帧率限制为 60 FPS 会让高频操作显得迟缓。对于高刷新率显示器，更好的方案是将帧率限制在略低于刷新率的水平，同时保持可变刷新率正常工作：</p><ul><li>将游戏和 GPU 的帧率限制设置为显示器的 <strong>刷新率减 6</strong>（例如，144 Hz → 138 FPS）</li><li>保持 <strong>G-Sync</strong> 或 <strong>FreeSync</strong> 启用并正常工作</li><li>在 NVIDIA 控制面板或 NVIDIA Profile Inspector 中，将 <strong>垂直同步</strong> 设置为 <strong>快速</strong></li></ul><p>144 Hz 显示器常用的 NVIDIA Profile Inspector 设置值：</p><ul><li>Frame Rate Limiter V3: 138 FPS</li><li>GSYNC - Application Mode: Fullscreen and Windowed</li><li>GSYNC - Application State: Allow</li><li>GSYNC - Global Feature: On</li><li>GSYNC - Global Mode: Fullscreen and Windowed</li><li>Vertical Sync: Fast Sync</li></ul>",
+					"title": "高刷显示器（NVIDIA）"
 				}
 			},
 			"nav-label": "常见问题",
@@ -5396,7 +5447,8 @@
 		},
 		"redirect": {
 			"in-game-replay": "正在跳转至 Firestone……",
-			"partner": "正在跳转……"
+			"partner": "正在跳转……",
+			"premium-checkout": "正在跳转至 Firestone……"
 		},
 		"monitoring": {
 			"simulator": {
@@ -5725,7 +5777,7 @@
 					"intro": "<p>操作非常简单：在结账页面的下图所示字段中，输入创作者分享给你的代码即可：</p>",
 					"sections": {
 						"notes": {
-							"body": "<ul><li>该代码仅适用于首次订阅周期。我正在与 Tebex 沟通，希望以后能让代码在每个周期自动重复应用。在此之前，如果你想每月持续支持创作者，最好的办法是使用代码订阅，然后取消订阅，并在当前订阅结束后手动重新输入代码。</li><li>该代码适用于所有方案（月付／年付）</li><li>如遇问题，请在 <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上联系 @sebastientromp</li></ul>",
+							"body": "<ul><li>该代码仅适用于首次订阅周期。我正在与 Tebex 沟通，希望以后能让代码在每个周期自动重复应用。在此之前，如果你想每月持续支持创作者，最好的办法是使用代码订阅，然后取消你的订阅，并在当前订阅结束后手动重新输入代码。</li><li>该代码适用于所有方案（月付／年付）</li><li>如遇问题，请在 <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 上联系 @sebastientromp</li></ul>",
 							"title": "备注"
 						}
 					},
@@ -6659,7 +6711,8 @@
 		"chad-seedlock": "塔迪乌斯恶魔之种术",
 		"hl-n-roll-warrior": "宇宙黑石战",
 		"raza-dh": "走A瞎",
-		"xl-hl-questline-mage": "40-宇宙任务线法"
+		"xl-hl-questline-mage": "40-宇宙任务线法",
+		"seedlock": "恶魔之种术"
 	},
 	"arena": {
 		"overlay": {
