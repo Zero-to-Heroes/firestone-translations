@@ -1,5 +1,6 @@
 import { mkdir, readdir, readFile, writeFile } from 'fs/promises';
 import { buildConstructedGlobal, mergeGlobal, removeEmpty, stripMappedKeys } from './build-global';
+import { resolveTermPlaceholders } from './resolve-term-placeholders';
 
 const process = async () => {
 	const files = await readdir('./firestone/');
@@ -21,8 +22,9 @@ const process = async () => {
 
 		const locale = file.replace(/\.json$/, '');
 		const leftoverGlobal = stripMappedKeys(json.global ?? {}, map);
+		let hsTerms: Record<string, string> = {};
 		if (needsHsTerms(leftoverGlobal, json.global)) {
-			const hsTerms = await loadHsTerms(locale);
+			hsTerms = await loadHsTerms(locale);
 			const { global: constructed, missing } = buildConstructedGlobal(map, hsTerms);
 			if (missing.length) {
 				throw new Error(`Missing hs-terms for ${locale}:\n${missing.join('\n')}`);
@@ -30,7 +32,10 @@ const process = async () => {
 			json.global = mergeGlobal(constructed, leftoverGlobal);
 		} else if (Object.keys(leftoverGlobal).length) {
 			json.global = leftoverGlobal;
+			hsTerms = await loadHsTerms(locale).catch(() => ({}));
 		}
+
+		resolveTermPlaceholders(json, hsTerms, locale);
 
 		const jsonWithoutEmpty = removeEmpty(json);
 		await writeFile(`./dist/i18n/${file}`, JSON.stringify(jsonWithoutEmpty, null, '\t') + '\n');
