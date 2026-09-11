@@ -10,7 +10,9 @@
 		"@types/fs-extra": "^9.0.13"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build:i18n": "ts-node upload-translations.ts",
+		"ai-gaps": "ts-node scripts/missing-ai-keys.ts"
 	},
 	"repository": {
 		"type": "git",

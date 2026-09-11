@@ -1,0 +1,3055 @@
+{
+	"app": {
+		"achievements": {
+			"enable-live-tracking": "Aktivieren",
+			"history": {
+				"empty-state-subtitle": "Schließe eine Errungenschaft ab, um zu starten!"
+			},
+			"pin-without-tracking-confirmation-text": "Du heftest eine Errungenschaft an, aber die Live-Verfolgung ist deaktiviert. Sollen wir sie aktivieren?"
+		},
+		"arena": {
+			"card-search-tooltip": "Du kannst Kommas (,) nutzen, um mehrere Karten gleichzeitig zu suchen.",
+			"card-stats": {
+				"header-current-options": "Aktuelle Optionen",
+				"header-deck-winrate-impact-tooltip": "Wie viel besser oder schlechter Decks mit dieser Karte insgesamt im Vergleich zur durchschnittlichen Klassengewinnrate abschneiden",
+				"header-drawn-total": "Gezogen gesamt",
+				"header-drawn-winrate": "Gezogen Sieg-%",
+				"header-drawn-winrate-tooltip": "Wie oft du gewinnst, nachdem du die Karte gezogen hast",
+				"header-mulligan-winrate": "Mulligan Sieg-%",
+				"header-mulligan-winrate-tooltip": "Die durchschnittliche Gewinnrate, wenn du diese Karte auf der Starthand hast",
+				"header-offered-total": "Angeboten gesamt",
+				"header-pickrate-high-wins": "Auswahlrate {{value}}+ Siege",
+				"header-pickrate-high-wins-short": "AR {{value}}+",
+				"header-pickrate-high-wins-tooltip": "Auswahlrate für Durchläufe mit mindestens {{value}} Siegen",
+				"header-pickrate-high-wins-variable-tooltip": "Auswahlrate für Durchläufe mit mindestens {{value}} Siegen in Arena Untergrund bzw. {{value2}} Siegen in der Arena",
+				"header-pickrate-impact": "Auswahlrate-Delta",
+				"header-pickrate-impact-tooltip": "Der Unterschied in der Auswahlrate zwischen Durchläufen mit mindestens {{value}} Siegen und der durchschnittlichen Auswahlrate dieser Karte",
+				"header-pickrate-tooltip": "Wie oft diese Karte im Draft gewählt wird, wenn sie angeboten wird",
+				"header-play-on-curve-total": "Auf Kurve gespielt gesamt",
+				"header-play-on-curve-winrate": "Auf Kurve Sieg-%",
+				"header-play-on-curve-winrate-tooltip": "Die durchschnittliche Gewinnrate, wenn du diese Karte auf Kurve spielst, also wenn du genau so viel Mana hast, wie sie kostet",
+				"low-data-text": "Wenig Daten. Diese Karte kam nur in {{value}} Spielen vor, die Statistiken können daher ungenau sein.",
+				"total-cards-drafted": "Karten im Draft gesamt"
+			},
+			"class-tier-list": {
+				"graph-placement-tooltip": "Erreicht diese Gesamtsiege {{value}}% so oft wie der globale Durchschnitt",
+				"header-tip": "Spielweise",
+				"matrix": {
+					"cell-tooltip": "{{wins}} Siege aus {{games}} Spielen",
+					"global": "Global",
+					"global-column-tooltip": "Aggregierte Gewinnrate über alle Heldenfähigkeiten dieser Klasse",
+					"global-row-tooltip": "Aggregierte Gewinnrate über alle Klassen für diese Heldenfähigkeit",
+					"reset-sort-corner": "Standardreihenfolge der Zeilen und Spalten wiederherstellen"
+				},
+				"show-more-tip": "Mehr anzeigen"
+			},
+			"deck-details": {
+				"deck-summary-header": "Durchlauf-Übersicht"
+			},
+			"draft": {
+				"card-deck-impact-tooltip": "Der Deck-Einfluss ist die Differenz zwischen der rohen Deck-Gewinnrate der Karte ({{deckWinrate}}) und der Klassengewinnrate",
+				"card-drawn-impact-tooltip": "Der Gezogen-Einfluss ist die Differenz zwischen der rohen Gezogen-Gewinnrate der Karte ({{drawWinrate}}) und der Klassengewinnrate",
+				"remove-locked-premium-info-tooltip": "Diese Infobox für diese Funktion dauerhaft ausblenden"
+			},
+			"filters": {
+				"card-class": {
+					"neutral": "Nur Neutral"
+				},
+				"card-type": {
+					"legendary": "Legendär",
+					"taverns_of_time": "Gasthäuser der Zeit",
+					"treasure": "Schatz"
+				},
+				"class-stats-matrix": {
+					"label": "Heldenfähigkeiten-Matrix",
+					"tooltip": "Zeigt eine Matrix der Gewinnraten pro Klasse und Heldenfähigkeit"
+				}
+			},
+			"menu": {
+				"arena-top-runs": "High-Win-Durchläufe",
+				"my-stats": "Meine Statistiken"
+			},
+			"personal-stats": {
+				"average-match-time": "Spielzeit",
+				"average-match-time-tooltip": "Die durchschnittliche Dauer deiner Spiele",
+				"header-average-wins": "Siege pro Durchlauf",
+				"header-runs": "Durchläufe",
+				"header-time-played": "Spielzeit",
+				"header-winrate-coin": "Gewinnrate Münze",
+				"header-winrate-first": "Gewinnrate Erster",
+				"leaderboard-average": "Rangliste Ø",
+				"leaderboard-average-tooltip": "Dein Durchschnitt, wie er für die Rangliste berechnet wird. Die genauen Details sind hier etwas komplex — komm auf Discord, wenn du mehr wissen möchtest",
+				"reward-dust": "Staub-Belohnungen",
+				"reward-dust-tooltip": "Die gesamte / durchschnittliche Staubmenge, die du in der Arena gewonnen hast. Nur Durchläufe mit vollständigen Belohnungsdaten",
+				"reward-gold": "Gold-Belohnungen",
+				"reward-gold-tooltip": "Die gesamte / durchschnittliche Goldmenge, die du in der Arena gewonnen hast. Nur Durchläufe mit vollständigen Belohnungsdaten",
+				"reward-packs": "Packungs-Belohnungen",
+				"reward-packs-tooltip": "Die gesamte / durchschnittliche Anzahl Packungen, die du in der Arena gewonnen hast. Nur Durchläufe mit vollständigen Belohnungsdaten",
+				"reward-tickets": "Ticket-Belohnungen",
+				"reward-tickets-tooltip": "Die gesamte / durchschnittliche Anzahl Arena-Tickets, die du in der Arena gewonnen hast. Nur Durchläufe mit vollständigen Belohnungsdaten"
+			},
+			"runs": {
+				"underground-run-name": "Arena Untergrund {{value}} Siege"
+			}
+		},
+		"battlegrounds": {
+			"compositions": {
+				"columns": {
+					"cycle-cards": "Cycle-Karten",
+					"recommended-cards": "Empfohlene Karten"
+				},
+				"tabs": {
+					"details": "Details",
+					"example-boards": "Beispielbretter",
+					"example-boards-header": "Klicken, um Beispielbretter anzusehen",
+					"example-boards-locked-tooltip": "Hol dir Premium, um High-MMR-Beispiele zu sehen, wie diese Kompositionen am Spielende aussehen"
+				}
+			},
+			"filters": {
+				"card-type": {
+					"timewarped": "Zeitverschobene Karten"
+				},
+				"signature-treasure": {
+					"all": "Alle Sig.-Schätze"
+				},
+				"stat-type": {
+					"signature-treasure": "Signaturschätze"
+				}
+			},
+			"personal-stats": {
+				"records": {
+					"title": "Helden mit den besten Rekorden"
+				}
+			},
+			"strategies": {
+				"curve": {
+					"action": {
+						"buy-token": "Token kaufen",
+						"roll": "Neu würfeln"
+					},
+					"name": {
+						"fast-basic": "Schnelle Basiskurve",
+						"special": "Spezial"
+					},
+					"notes": {
+						"basic": "Stärker mit Token-Start, Schwäche durch Shop-RNG in Zug 4. Keine Anforderung an die Heldenfähigkeit.",
+						"fast-basic": "Stärker mit Token-Start, Schwäche durch Shop-RNG in Zug 4. Keine Anforderung an die Heldenfähigkeit.",
+						"fast-jeef": "Nutzt Stufe-1-Ökonomie und starke Paare für einen flexiblen Start mit Varianten. Steigt schnell auf.",
+						"jeef": "Nutzt Stufe-1-Ökonomie und starke Paare für einen flexiblen Start mit Varianten.",
+						"rafaam": "Sauberes Aufleveln mit 1-Kosten-Heldenfähigkeit, 2-Kosten-Heldenfähigkeit plus Ökonomie oder Gasthaustrinkern",
+						"slow-jeef": "Nutzt Stufe-1-Ökonomie und starke Paare für einen flexiblen Start mit Varianten. Bleibt auf Stufe 2, um das Brett zu festigen.",
+						"slow-rafaam": "Sauberes Aufleveln mit 1-Kosten-Heldenfähigkeit, 2-Kosten-Heldenfähigkeit plus Ökonomie oder Gasthaustrinkern. Auf Stufe 2 abschneiden, um stärker zu werden"
+					}
+				}
+			},
+			"tier-list": {
+				"header-card-image": "Gasthaus",
+				"header-ungroup-difficulty-button-tooltip": "Quests aufteilen, sodass jede Schwierigkeit in einer eigenen Zeile erscheint",
+				"impact-hidden-tooltip": "Bitte wähle oben im Dropdown einen bestimmten Zug, um den Einfluss dieser Karte in diesem Zug zu sehen",
+				"major-timewarped-tier": "Große Zeitverschiebung",
+				"minor-timewarped-tier": "Kleine Zeitverschiebung",
+				"tavern-tier": "Tavernenstufe {{value}}"
+			},
+			"tribes": {
+				"terran": "Terran"
+			}
+		},
+		"collection": {
+			"card-details": {
+				"faction": "Fraktion:",
+				"factions": {
+					"none": "Keine"
+				},
+				"race": "Volk:",
+				"sounds": {
+					"effect": {
+						"holiday": "Feiertag"
+					}
+				},
+				"types": {
+					"hero_power": "Heldenfähigkeit",
+					"pet": "Begleiter"
+				}
+			},
+			"card-history": {
+				"click-to-show-stats": "Klicken, um Statistiken für die sichtbaren Sets anzuzeigen",
+				"signature-card": "Signatur {{cardName}}",
+				"version": {
+					"signature": "Signatur"
+				}
+			},
+			"card-search": {
+				"search-box-tooltip": "Du kannst folgende Schlüsselwörter in der Suche nutzen: text: (sucht im Kartentext statt nur im Namen), name:, cards:all (inkl. nicht sammelbarer Karten), tribe: "
+			},
+			"filters": {
+				"picture-type": {
+					"animated-tooltip": "Maus darüberbewegen, um die Animation zu starten",
+					"static": "Statisch"
+				}
+			},
+			"pack-stats": {
+				"menu": {
+					"pack-contents": "Beste Packungen",
+					"stats": "Statistiken"
+				}
+			},
+			"sets": {
+				"pity-timer-reset-button": "Timer zurücksetzen"
+			}
+		},
+		"communities": {
+			"details": {
+				"leaderboards": {
+					"runs-completed-header": "Durchläufe"
+				},
+				"menu": {
+					"friendly-battles": "Freundliche Kämpfe",
+					"internal-ladder": "Rangliste",
+					"internal-ladder-tooltip": "Deine eigene ELO-Rangliste, in der Kämpfe der Mitglieder gegeneinander in Freundlichen Herausforderungen zählen"
+				}
+			}
+		},
+		"decktracker": {
+			"deck-details": {
+				"deck-archived": "Das Deck ist archiviert, zählt aber weiter zu den globalen Statistiken. Wirf diese Version raus, wenn ihre Statistiken ignoriert werden sollen",
+				"export-deck-picture-button": "Bild kopieren",
+				"export-deck-picture-copied": "In die Zwischenablage kopiert!",
+				"export-deck-picture-copied-tooltip": "Du kannst es jetzt in dein Lieblingsnetzwerk einfügen",
+				"export-deck-picture-failed": "Screenshot fehlgeschlagen",
+				"export-deck-picture-still-working": "Läuft noch...",
+				"export-deck-picture-tooltip": "Die Deckliste als Bild in die Zwischenablage kopieren",
+				"export-deck-picture-working": "Erstelle hochauflösenden Screenshot..."
+			},
+			"deckbuilder": {
+				"go-back-class": "Klasse: {{className}} – Klicken, um zur Klassenauswahl zurückzukehren",
+				"go-back-format": "Format: {{formatName}} – Klicken, um zur Formatauswahl zurückzukehren"
+			},
+			"decks": {
+				"group-name-edit-tooltip": "Den Namen der Gruppe bearbeiten",
+				"group-name-label": "Gruppenname"
+			},
+			"filters": {
+				"card-filter": {
+					"all": "Karten auswählen"
+				},
+				"rank-bracket": {
+					"bronze-gold": "Bronze-Gold",
+					"competitive": "Kompetitiv",
+					"competitive-tooltip": "Top 2000 Legende und Diamant 1–4",
+					"legend": "Legende",
+					"platinum": "Platin",
+					"top-2000-legend": "Top 2000 Legende"
+				},
+				"time-filter": {
+					"today": "Heute",
+					"today-tooltip": "Spiele seit Mitternacht Ortszeit"
+				},
+				"use-conservative-estimate-tooltip": "Die Unsicherheit durch die Stichprobengröße in die Schätzung der Durchschnittsplatzierung einbeziehen",
+				"use-conservative-winrate-tooltip": "Die Unsicherheit durch die Stichprobengröße in die Gewinnratenschätzung einbeziehen"
+			},
+			"ladder-stats": {
+				"going-first-button-label": "Nur am Zug",
+				"going-second-button-label": "Nur Münze"
+			},
+			"matchup-info": {
+				"win-coin-percent-header": "Sieg% Münze",
+				"win-coin-total-header": "Siege Münze",
+				"win-play-percent-header": "Sieg% Am Zug",
+				"win-play-total-header": "Siege Am Zug"
+			},
+			"menu": {
+				"meta-archetypes-header": "Meta-Archetypen"
+			},
+			"meta": {
+				"card-stats-header-tooltip": "Zeigt, welche Karten aus den Kernkarten des Archetyps entfernt oder hinzugefügt wurden. Klicke auf ein Deck für Details",
+				"core-cards-header-tooltip": "Zeigt, welche Karten aus den Kernkarten des Archetyps entfernt oder hinzugefügt wurden. Klicke auf ein Deck für Details",
+				"deck-type-header": "Typ",
+				"deck": {
+					"added-cards-header-tooltip": "Die Karten, die in diesem Deck sind, aber nicht zu den Kernkarten gehören",
+					"archetype-core-cards-header": "Kernkarten des Archetyps",
+					"archetype-core-cards-header-tooltip": "Die Karten, die in den meisten Decks dieses Archetyps vorkommen",
+					"copy-deckstring-button": "Nach Hearthstone kopieren",
+					"no-data-empty-state-title": "Wir haben keine Daten für diese Kombination aus Deck/Rang/Zeit/Format",
+					"removed-cards-header-tooltip": "Die Kernkarten, die nicht in diesem Deck sind",
+					"view-details-button": "Details ansehen",
+					"view-online-button": "Online ansehen",
+					"view-online-button-tooltip": "Mehr Statistiken online unter https://www.hsguru.com"
+				},
+				"details": {
+					"cards": {
+						"copy-1-header-tooltip": "Anteil der Decks dieses Archetyps, die mindestens ein Exemplar dieser Karte enthalten",
+						"copy-2-header-tooltip": "Anteil der Decks dieses Archetyps, die zwei Exemplare dieser Karte enthalten",
+						"copy-per-deck-header": "Ø Exemplare pro Deck",
+						"copy-per-deck-header-tooltip": "Durchschnittliche Anzahl Exemplare dieser Karte in Decks dieses Archetyps",
+						"discovered-winrate-impact-tooltip-data": "Diese Karte wurde {{value}} Mal entdeckt oder gezogen. Das nutzt die Archetyp-Statistiken gegen alle Klassen, für Top-Legende und hohes Diamant.",
+						"discovered-winrate-impact-tooltip-low-data": "Achtung – diese Karte wurde nur {{value}} Mal entdeckt oder gezogen, die Statistiken können ungenau sein. Das nutzt die Archetyp-Statistiken gegen alle Klassen, für Top-Legende und hohes Diamant.",
+						"drawn-winrate-header": "Gezogen Sieg-%",
+						"drawn-winrate-header-tooltip": "Durchschnittliche Gewinnrate, wenn die Karte im Spiel gezogen wird oder nach dem Mulligan auf der Starthand liegt",
+						"drawn-winrate-impact-header": "Gezogen Einfluss",
+						"drawn-winrate-impact-header-tooltip": "Durchschnittliche Gewinnrate relativ zur Deck-Gewinnrate, wenn die Karte im Spiel gezogen wird oder nach dem Mulligan auf der Starthand liegt",
+						"mulligan-kept-header-tooltip": "Wie oft die Karte im Mulligan behalten wird",
+						"mulligan-winrate-header": "Mulligan Sieg-%",
+						"mulligan-winrate-header-tooltip": "Durchschnittliche Gewinnrate, wenn die Karte nach dem Mulligan auf der Starthand liegt",
+						"mulligan-winrate-impact-header": "Mulligan Einfluss",
+						"mulligan-winrate-impact-header-tooltip": "Je höher, desto besser. Die durchschnittliche Gewinnrate der Karte relativ zur Deck-Gewinnrate, wenn sie nach dem Mulligan auf der Starthand liegt",
+						"play-coin-filter": {
+							"all": "Münze und Am Zug",
+							"coin": "Mit Münze",
+							"play": "Am Zug"
+						},
+						"show-relative-info-button": "Einfluss anzeigen",
+						"show-relative-info-button-tooltip": "Zeigt die Gewinnrate jeder Karte relativ zur Archetyp-Gewinnrate"
+					},
+					"deck-type": "Deckliste"
+				},
+				"discover-stats-header": "Entdecken-Statistiken",
+				"discover-stats-header-tooltip": "Zeigt Statistiken zu Karten, die im Spiel entdeckt wurden.",
+				"matchups-header": "Matchups",
+				"matchups-header-tooltip": "Zeigt die Gewinnrate gegen alle anderen Klassen. Archetyp-Matchups kommen später, bleib dran :)"
+			},
+			"notifications": {
+				"turn-start-message": "Du bist am Zug (Zug {{value}})!"
+			},
+			"personal-stats-ranking": {
+				"header": "Rangentwicklung / Spiele"
+			}
+		},
+		"duels": {
+			"classes-recap": {
+				"avg-wins-per-run": "Ø Siege pro Durchlauf",
+				"faced-tooltip": "Du hast {{opponentClass}} {{totalMatches}} Mal mit einer {{winrate}}% Gewinnrate getroffen",
+				"stat-tooltip": "Du hast {{numberOfRuns}} Durchläufe und {{totalMatches}} Spiele mit {{playerClass}} mit einer {{winrate}}% Gewinnrate gespielt"
+			},
+			"deck-stat": {
+				"average-wins-per-run": "Ø Siege pro Durchlauf",
+				"no-meta-deck": "Kein Meta-Deck",
+				"no-meta-deck-tooltip": "Wir konnten kein High-Win-Deck mit dieser Kombination aus Held / Heldenfähigkeit / Signaturschatz finden.",
+				"no-personal-deck": "Kein letzter Durchlauf",
+				"no-personal-deck-tooltip": "Wir konnten keinen deiner Durchläufe mit dieser Kombination aus Deck / Heldenfähigkeit / Signaturschatz finden.",
+				"number-of-runs": "Anzahl Durchläufe",
+				"run-details": "Durchlauf-Details"
+			},
+			"deckbuilder": {
+				"bucket-filter-button-tooltip": "Nach Bucket filtern. Die Kartenliste enthält nur Karten, die zu mindestens einem der ausgewählten Buckets gehören",
+				"card-offering-rate-tooltip": "Angebotsrate in diesem Bucket (das heißt: *wenn dir dieser Bucket angeboten wird*, hast du diese % Chance, diese Karte angeboten zu bekommen)",
+				"choose-your-signature-treasure-title": "Wähle deinen Signaturschatz",
+				"dk-runes-text": "TK-Runen",
+				"dk-runes-tooltip": "Die Todesritter-Runen in deinem Deck. Der Deckbau ist abhängig von den Runen in deinem Deck eingeschränkt (siehe die Infos im Spiel)",
+				"export-deckcode-tooltip": "Den Deckcode in die Zwischenablage kopieren",
+				"go-back-hero": "Held: {{selectedCardName}} – Klicken, um zur Heldenauswahl zurückzukehren",
+				"go-back-hero-power": "Heldenfähigkeit: {{selectedCardName}} – Klicken, um zur Heldenfähigkeiten-Auswahl zurückzukehren",
+				"go-back-signature-treasure": "Schatz: {{selectedCardName}} – Klicken, um zur Signaturschatz-Auswahl zurückzukehren",
+				"import-deck-button-tooltip": "Den Deckcode aus der Zwischenablage importieren. Heldenfähigkeit und Signaturschatz musst du weiterhin manuell wählen, da sie nicht Teil des Deckcodes sind",
+				"ongoing-deck-building": "Laufend ({{currentCards}} / {{maxCards}})",
+				"part-of-multiple-buckets-tooltip": "Diese Karte ist in {{ value }} verschiedenen Buckets",
+				"search-tooltip": {
+					"info-4": "bucket:none – nur Karten suchen, die zu keinem Bucket gehören",
+					"text": "Du kannst folgende Shortcuts zur Suche nutzen:"
+				},
+				"show-buckets-button-label": "Buckets anzeigen",
+				"show-buckets-button-tooltip": "[EXPERIMENTELL] Zeigt die Synergie-Buckets, die dir anhand der Karten in deinem Deck angeboten werden können. Annahme: 1) alle Buckets sammeln, die mindestens eine Karte aus deinem Deck enthalten, und 2) einen davon anbieten.",
+				"warning": {
+					"loe-hero": "Der Deckcode wird von HS selbst für die neuen Helden der Forscherliga nicht unterstützt",
+					"neutral-hero": "Der Deckcode wird von HS selbst für Neutrale Helden mit ihrem Neutralen Signaturschatz nicht unterstützt (Klassen-Signaturschätze funktionieren)"
+				}
+			},
+			"filters": {
+				"deck-sort": {
+					"last-played": "Zuletzt gespielt"
+				},
+				"dust": {
+					"all": "Alle Staubwerte",
+					"own": "Alle Karten besitzen"
+				},
+				"game-mode": {
+					"all-tooltip": "Community-Statistiken zeigen nur Daten für Heroische Duelle. Deine eigenen Statistiken zeigen Ungewertet und Heroisch.",
+					"casual-tooltip": "Community-Statistiken zeigen nur Daten für Heroische Duelle. Deine eigenen Statistiken zeigen nur Ungewertet."
+				},
+				"signature-treasure": {
+					"all": "Alle Signaturschätze"
+				},
+				"stat-type": {
+					"signature-treasure": "Signaturschatz"
+				},
+				"treasure-sort": {
+					"global-offering": "Globales Angebot",
+					"global-pickrate": "Globale Auswahlrate"
+				}
+			},
+			"menu": {
+				"buckets": "Buckets",
+				"high-win-decks": "High-Win-Decks"
+			},
+			"run": {
+				"replays-title": "Aufzeichnungen desselben Durchlaufs"
+			},
+			"search": {
+				"deck": {
+					"placeholder": "Decks suchen...",
+					"placeholder-tooltip": "Gib einen Kartennamen ein, um Decks zu finden, die diese Karte im Starterdeck haben"
+				}
+			},
+			"tier-list": {
+				"header": "Rangliste ({{value}} Spiele) ",
+				"player-winrate-tooltip": "Deine durchschnittliche Gewinnrate mit diesem Helden"
+			}
+		},
+		"global": {
+			"errors": {
+				"truncated-logs": {
+					"title": "Logs hängen"
+				}
+			}
+		},
+		"lottery": {
+			"achievements-empty-state": "Schau im Bereich Errungenschaften in der App nach und wähle, welche du verfolgen möchtest.",
+			"achievements-pick-for-me-button": "Für mich wählen",
+			"achievements-pick-for-me-button-tooltip": "Lass die App 3 Errungenschaften zum Verfolgen wählen, basierend auf ihrem aktuellen Fortschritt",
+			"achievements-reset-button": "Alle abwählen",
+			"close-confirmation-button-cancel": "Offen lassen",
+			"close-confirmation-button-ok": "Trotzdem schließen",
+			"hide-account-name": "Kontoname ausblenden",
+			"hide-account-name-tooltip": "Den Kontonamen im Lotteriefenster ausblenden",
+			"lottery": {
+				"info-text": "Nimm an einer Verlosung teil, um Firestone-Abos zu gewinnen, jeweils 2 Monate. Du brauchst ein Overwolf-Konto, um teilzunehmen. Punkte sammelst du einfach, indem du spielst und die Ziele erfüllst, während dieses Fenster offen ist (die Werbung unterstützt den Entwickler). ",
+				"points-text": "Punkte gesamt",
+				"sign-in-button-text": "Anmelden, um teilzunehmen",
+				"sign-in-button-tooltip": "Du musst dich bei deinem Overwolf-Konto anmelden, um an der Saisonend-Verlosung teilzunehmen. Punkte kannst du auch ohne Anmeldung sammeln.",
+				"stats": {
+					"beastsPlayed-label": "Wildtiere gespielt",
+					"beastsPlayed-tooltip": "Spiele Wildtiere, um {{pointsGained}} Punkte pro gespieltem Wildtier zu verdienen",
+					"damageWithSpells-label": "Schaden mit Zaubern",
+					"damageWithSpells-tooltip": "Verursache Schaden mit Zaubern, um {{pointsGained}} Punkte pro Schaden zu verdienen",
+					"demonsPlayed-tooltip": "Spiele Dämonen, um {{pointsGained}} Punkte pro gespieltem Dämon zu verdienen",
+					"dragonsPlayed-label": "Drachen gespielt",
+					"dragonsPlayed-tooltip": "Spiele Drachen, um {{pointsGained}} Punkte pro gespieltem Drachen zu verdienen",
+					"elementalsPlayed-tooltip": "Spiele Elementare, um {{pointsGained}} Punkte pro gespieltem Elementar zu verdienen",
+					"mechsPlayed-label": "Mechs gespielt",
+					"murlocsPlayed-label": "Murlocs gespielt",
+					"murlocsPlayed-tooltip": "Spiele Murlocs, um {{pointsGained}} Punkte pro gespieltem Murloc zu verdienen",
+					"nagasPlayed-label": "Naga gespielt",
+					"nagasPlayed-tooltip": "Spiele Naga, um {{pointsGained}} Punkte pro gespieltem Naga zu verdienen",
+					"piratesPlayed-label": "Piraten gespielt",
+					"piratesPlayed-tooltip": "Spiele Piraten, um {{pointsGained}} Punkte pro gespieltem Piraten zu verdienen",
+					"quilboarsPlayed-label": "Stacheleber gespielt",
+					"quilboarsPlayed-tooltip": "Spiele Stacheleber, um {{pointsGained}} Punkte pro gespieltem Stacheleber zu verdienen",
+					"spellsPlayed-label": "Zauber gespielt",
+					"spellsPlayed-tooltip": "Spiele Zauber, um {{pointsGained}} Punkte pro gespieltem Zauber zu verdienen",
+					"totalResourcesUsed-label": "Ressourcen genutzt",
+					"undeadPlayed-tooltip": "Spiele Untote, um {{pointsGained}} Punkte pro gespieltem Untoten zu verdienen"
+				}
+			},
+			"opt-out-button-cancel": "Dabei bleiben",
+			"opt-out-button-ok": "Austragen"
+		},
+		"menu": {
+			"duels-passive-treasure-header": "Passive",
+			"duels-signature-treasure-header": "Signaturen"
+		},
+		"premium": {
+			"billing": {
+				"annual-toggle-header": "Abrechnung alle",
+				"coupon-text": "Zur Feier des Starts von {{expansionName}} erhältst du zusätzlich {{reduction}} auf alle Pläne, wenn du beim Checkout folgenden Code verwendest:",
+				"monthly-2": "Monat",
+				"six-month-2": "6 Monate",
+				"six-month-coupon-text": "Zeitlich begrenztes Angebot! Bis {{endDate}} erhältst du zusätzlich {{reduction}}, wenn du beim Checkout folgenden Code verwendest:",
+				"yearly-2": "Jahr",
+				"yearly-coupon-text-2": "Zur Feier des Starts von {{expansionName}} erhältst du zusätzlich {{reduction}}, wenn du beim Checkout folgenden Code verwendest:"
+			},
+			"cant-subscribe-tooltip": "Du kannst kein weiteres Abo abschließen, solange du schon ein aktives Abo hast. Bitte kündige dein aktuelles Abo und warte, bis es abläuft.",
+			"login-to-subscribe": "Anmelden, um zu abonnieren",
+			"override-checkbox-label": "Trotzdem abonnieren lassen",
+			"override-confirmation": "Ich verstehe, dass ich mein aktuelles Abo verliere, wenn ich den Abo-Vorgang abschließe",
+			"periodicity": {
+				"six-month": "Für sechs Monate"
+			},
+			"plan": {
+				"premium-six-months": "Premium-Unterstützer"
+			},
+			"presubscribe-modal": {
+				"cancel-button": "Abbrechen",
+				"subscribe-button": "Los geht’s!",
+				"text": "Du wirst zur Tebex-Checkout-Seite weitergeleitet, um das Abo abzuschließen. Sie öffnet sich in deinem Standardbrowser. Du kannst dein Abo jederzeit in der App kündigen.",
+				"text-legacy": "Du wirst zur Overwolf-Checkout-Seite weitergeleitet, um das Abo abzuschließen. Sie öffnet sich in deinem Standardbrowser. Du kannst dein Abo jederzeit in der App kündigen.",
+				"title": "Abo für den Plan {{plan}}"
+			},
+			"price-taxes-excluded": "(+ Steuern)",
+			"price-taxes-excluded-tooltip": "Steuern werden beim Checkout anhand deiner Rechnungsadresse hinzugefügt.",
+			"subscribe-button-epic": "Werde Epic!",
+			"third-party-auth-tools-unsupported": "Premium erfordert ein offizielles Firestone-Abo. Drittanbieter-Tools zum „Reparieren der Autorisierung“ oder Freischalten werden nicht unterstützt und sind unsicher — sie verlangen typischerweise Administratorrechte und ändern die Hosts-Datei oder Firewall-Regeln. Bitte entferne sie und abonniere über die offizielle Premium-Seite.",
+			"unsubscribe-modal": {
+				"cancel-button": "Abo behalten",
+				"title": "Abo für den Plan {{plan}} kündigen?"
+			}
+		},
+		"profile": {
+			"match-stats": {
+				"header-top-1": "Top 1",
+				"header-top-4": "Top 4",
+				"header-wins-bg": "Siege (Top 4)",
+				"no-data": {
+					"arena": "Spiele ein Arena-Spiel oder starte Hearthstone, um deine Statistiken aufzuzeichnen",
+					"duels": "Spiele ein Duell oder starte Hearthstone und öffne den Duelle-Bildschirm, um deine Statistiken aufzuzeichnen"
+				}
+			},
+			"xp-seasons": {
+				"season": "Saison {{seasonNumber}}"
+			}
+		},
+		"replays": {
+			"filters": {
+				"game-mode": {
+					"friendly": "Freundlich",
+					"ranked-twist": "Gewerteter Haken"
+				}
+			},
+			"in-game-protocol": {
+				"error": {
+					"fetch-failed": "Wir konnten die Replay-Daten nicht laden. Bitte prüfe deine Verbindung und versuche es erneut.",
+					"fetch-failed-title": "Replay konnte nicht geladen werden",
+					"in-game": "Du bist gerade in einem laufenden Spiel. Beende zuerst dein Spiel, um die Aufzeichnung im Spiel anzusehen.",
+					"in-game-title": "Replay kann nicht angesehen werden",
+					"no-power-log": "Für diese Aufzeichnung sind keine In-Game-Replay-Daten verfügbar.",
+					"no-power-log-title": "Replay nicht verfügbar"
+				},
+				"os-notification": {
+					"install-mod-then-launch": "Installiere den Replay-Viewer-Mod in den Firestone-Einstellungen und starte dann Hearthstone, um im Spiel zuzusehen.",
+					"launch-hearthstone": "Starte Hearthstone, um diese Aufzeichnung im Spiel anzusehen."
+				}
+			},
+			"in-game": {
+				"error": {
+					"connection-failed": "Wir konnten die Aufzeichnung nicht herunterladen. Bitte prüfe deine Verbindungseinstellungen, z. B. Firewall, VPN, Proxy usw.",
+					"download-failed": "Wir konnten die Aufzeichnung nicht herunterladen. Bitte prüfe deine Verbindungseinstellungen, z. B. Firewall, VPN, Proxy usw.",
+					"mod-not-active": "Du musst den Replay-Viewer-Mod aktivieren, um In-Game-Replays zu nutzen. Gehe in die Einstellungen und aktiviere unter Mods den Replay-Viewer-Mod.",
+					"mod-not-installed": "Du musst den Replay-Viewer-Mod installieren, um In-Game-Replays zu nutzen. Gehe in die Einstellungen und installiere sowie aktiviere unter Mods den Replay-Viewer-Mod.",
+					"not-in-game": "In-Game-Replays funktionieren nur, wenn Hearthstone läuft. Bitte starte Hearthstone und versuche es erneut.",
+					"rewind-block": "Dieses Spiel enthält Rewind-Blöcke. Diese werden vom Replay-Viewer noch nicht korrekt unterstützt."
+				}
+			},
+			"replay-info": {
+				"battle-tag-copied": "Battle-Tag in die Zwischenablage kopiert",
+				"click-to-copy": "Klicken zum Kopieren",
+				"copy-in-game-link": "In-Game-Link kopieren",
+				"copy-link": "Link kopieren",
+				"copy-link-tooltip": "Replay-Link kopieren",
+				"copy-web-link": "Web-Link kopieren",
+				"game-mode-tooltip": {
+					"galakrond-evil": "Galakronds Erwachen – B.Ö.S.E."
+				},
+				"watch-replay-in-app-button": "In der App",
+				"watch-replay-in-game-button": "Im Spiel",
+				"watch-replay-in-game-button-tooltip": "Aufzeichnung im Spiel ansehen (das Spiel muss laufen und der Replay-Viewer-Mod muss installiert sein)"
+			}
+		},
+		"share": {
+			"reddit": {
+				"flair-tooltip": "Flair, mit dem du deinen Beitrag taggst. Manche Subreddits lehnen Beiträge ohne Flair ab"
+			}
+		},
+		"tavern-brawl": {
+			"category": {
+				"overview": "Übersicht",
+				"personal-decks": "Eigene Decks"
+			},
+			"no-name": "Kartenchaos, gestartet am {{date}}"
+		},
+		"tips": {
+			"collection_stats": "Du kannst den Kartenverlauf und die globalen Statistiken der angezeigten Sets sehen und jederzeit dazwischen wechseln",
+			"mercs_terasure_highlight": "Wenn du in Söldnern die Maus über einen Schatz bewegst, werden die Synergien in deinem Team hervorgehoben",
+			"tip-6": "[Söldner] Wähle in Aufzeichnungen die Option „Söldner (PvP)“, um mehr Details zu den Teams in jedem Spiel zu sehen"
+		}
+	},
+	"archetype": {
+		"'xl-shaggro-priest": "XL Shaggro Priester",
+		"777-miracle-rogue": "777 Miracle Schurke",
+		"abyssal-chadlock": "Abyssal Chadlock",
+		"abyssal-warlock": "Abyssal Hexenmeister",
+		"ace-hunter": "Ace Jäger",
+		"alex-rogue": "Alex Schurke",
+		"amalgam-hunter": "Amalgam Jäger",
+		"amalgam-priest": "Amalgam Priester",
+		"amalgam-rogue": "Amalgam Schurke",
+		"among-us-dh": "Among Us Dämonenjäger",
+		"anchorite-priest": "Anchorite Priester",
+		"animancer-warlock": "Animancer Hexenmeister",
+		"archmage-dh": "Archmage Dämonenjäger",
+		"archmage-paladin": "Archmage Paladin",
+		"archon-cycle-rogue": "Archon Cycle Schurke",
+		"archon-rogue": "Archon Schurke",
+		"armor-dh": "Rüstung Dämonenjäger",
+		"armor-priest": "Rüstung Priester",
+		"ashamane-rogue": "Ashamane Schurke",
+		"ashtoungue-warlock": "Ashtongue Hexenmeister",
+		"asteroid-imbue-shaman": "Asteroid Erfüllen Schamane",
+		"astral-communion-druid": "Astrale Kommunion Druide",
+		"attack-dh": "Attack Dämonenjäger",
+		"attack-druid": "Attack Druide",
+		"automaton-priest": "Automaton Priester",
+		"aviana-druid": "Aviana Druide",
+		"aviana-priest": "Aviana Priester",
+		"ayaya-rogue": "Ayaya Schurke",
+		"azshara-druid": "Azshara Druide",
+		"bad-druid": "Bad Druide",
+		"bad-mage": "Bad Magier",
+		"barnes-druid": "Barnes Druide",
+		"battlecruiser-shaman-": "Schwerer Kreuzer Schamane",
+		"bb-control-dk": "Blut Control DK",
+		"bb-harold-dk": "BB Harold DK",
+		"bbb-amalgam-dk": "Blut Amalgam DK",
+		"bbb-contol-dk": "Blut Control DK",
+		"bbb-control-dk": "Blut Control DK",
+		"bbb-harold-dk": "Blut Harold DK",
+		"bbb-highlander-dk": "Blut Highlander DK",
+		"bbb-starship-dk": "Blut Raumschiff DK",
+		"bbb-starship-succ-dk": "Blut Raumschiff Succ DK",
+		"bbb-succ-dk": "Blut Succ DK",
+		"bbb-talanji-dk": "Blut Talanji DK",
+		"bbb-undead-dk": "BBB Untot DK",
+		"bbbu-starship-dk": "Blut Raumschiff DK",
+		"bbf-menagerie-succ-dk": "BBF Menagerie Succ DK",
+		"bbu-buttons-dk": "BBU Buttons DK",
+		"bbu-control-dk": "BBU Control DK",
+		"bbu-corpse-dk": "BBU Leiche DK",
+		"bbu-death-knight": "BBU Todesritter",
+		"bbu-deathrattle-dk": "BBU Todesröcheln DK",
+		"bbu-even-dk": "BBU Gerade DK",
+		"bbu-handbuff-dk": "BBU Handbuff DK",
+		"bbu-harold-dk": "BBU Harold DK",
+		"bbu-herenn-dk": "BBU Herenn DK",
+		"bbu-highlander-dk": "BBU Highlander DK",
+		"bbu-menagerie-dk": "BBU Menagerie DK",
+		"bbu-menagerie-succ-dk": "BBU Menagerie Succ DK",
+		"bbu-plague-dk": "BBU Seuche DK",
+		"bbu-quest-dk": "BBU Quest DK",
+		"bbu-starship-dk": "BBU Raumschiff DK",
+		"bbu-starship-succ-dk": "BBU Raumschiff Succ DK",
+		"bbu-succ-dk": "BBU Succ DK",
+		"bbu-zerg-dk": "BBU Zerg DK",
+		"beast-demon-hunter": "Wildtier Dämonenjäger",
+		"beast-hunter": "Wildtier Jäger",
+		"beast-warrior": "Wildtier Krieger",
+		"bf-egglock": "BF Egglock",
+		"bf-quest-warlock": "BF Quest Hexenmeister",
+		"bff-buttons-dk": "BFF Buttons DK",
+		"bffu-rainbow-dk": "Rainbow DK",
+		"bffuu-rainbow-dk": "Rainbow DK",
+		"bfu-aggro-dk": "Rainbow Aggressiv DK",
+		"bfu-deathrattle-warlock": "Rainbow Todesröcheln Hexenmeister",
+		"bfu-egglock": "BFU Egglock",
+		"bfu-even-death-knight": "Rainbow Gerade Todesritter",
+		"bfu-excavate-dk": "Rainbow Ausgraben DK",
+		"bfu-handbuff-dk": "Handbuff DK",
+		"bfu-herenn-dk": "BFU Herenn DK",
+		"bfu-highlander-dk": "Rainbow Highlander DK",
+		"bfu-imbue-dk": "BFU Erfüllen DK",
+		"bfu-rainbow-dk": "Rainbow DK",
+		"bfu-rainbow-excavate-dk": "Rainbow Ausgraben DK",
+		"bfu-rainbox-plague-dk": "Rainbow Seuche DK",
+		"bfu-undead-dk": "Rainbow Untot DK",
+		"bfuu-rainbow-dk": "Rainbow DK",
+		"big-beast-hunter": "Big Wildtier Jäger",
+		"big-demon-hunter": "Big Dämonenjäger",
+		"big-demon-warlock": "Big Dämon Hexenmeister",
+		"big-druid": "Big Druide",
+		"big-paladin": "Big Paladin",
+		"big-shaman": "Big Schamane",
+		"big-spell-mage": "Großer Zauber Magier",
+		"blood-dk": "Blut DK",
+		"boar-hunter": "Boar Jäger",
+		"boar-priest": "Boar Priester",
+		"bonk-shaman": "Bonk Schamane",
+		"brann-warrior": "Brann Krieger",
+		"briarspawn-warrior": "Briarspawn Krieger",
+		"broxigar-dh": "Broxigar Dämonenjäger",
+		"bu-control-dk": "BU Control DK",
+		"bu-death-knight": "Blood/Unheilig Todesritter",
+		"bu-deathrattle-dk": "Blood/Unheilig Todesröcheln DK",
+		"bu-egg-dk": "BU Egg DK",
+		"bu-handbuff-dk": "BU Handbuff DK",
+		"burn-mage": "Burn Magier",
+		"burn-rogue": "Burn Schurke",
+		"burn-spell-mage": "Burn Zauber Magier",
+		"burn-warrior": "Burn Krieger",
+		"buttons-dk": "Buttons DK",
+		"buttons-rainbow-dk": "Buttons Rainbow DK",
+		"buu-aggro-dk": "BUU Aggressiv DK",
+		"buu-aggro-plague-dk": "BUU Aggressiv Seuche DK",
+		"buu-buttons-dk": "BUU Buttons DK",
+		"buu-bwonsamdi-dk": "BUU Bwonsamdi DK",
+		"buu-control-dk": "BUU Control DK",
+		"buu-corpse-dk": "BUU Leiche DK",
+		"buu-death-knight": "BUU Todesritter",
+		"buu-deathrattle-dk": "BUU Todesröcheln DK",
+		"buu-dk": "BUU DK",
+		"buu-egg-dk": "BUU Egg DK",
+		"buu-handbuff-dk": "BUU Handbuff DK",
+		"buu-highlander-dk": "BUU Highlander DK",
+		"buu-plague-dk": "BUU Seuche DK",
+		"buu-quest-dk": "BUU Quest DK",
+		"buu-starship-dk": "BUU Raumschiff DK",
+		"buu-starship-plague-dk": "BUU Raumschiff Seuche DK",
+		"buu-thalena-dk": "BUU Thalena DK",
+		"buu-zerg-dk": "BUU Zerg DK",
+		"capriodi-warrior": "Capriodi Krieger",
+		"chad-seedlock": "Chad Seedlock",
+		"chad-warrior": "Chad Krieger",
+		"chadadin": "Chadadin",
+		"chadlock": "Thaddius Hexenmeister",
+		"chef-druid": "Chef Druide",
+		"cleave-hunter": "Cleave Jäger",
+		"cliff-dive-dh": "Cliff Dive Dämonenjäger",
+		"clone-cta-paladin": "Clone CTA Paladin",
+		"clone-mech-paladin": "Clone Mech Paladin",
+		"coc-rogue": "Coc Schurke",
+		"cocacle-rogue": "Miracle Concoction Schurke",
+		"coin-rogue": "Coin Schurke",
+		"colifero-demon-hunter": "Colifero Dämonenjäger",
+		"colifero-hunter": "Colifero Jäger",
+		"combo-rogue": "Combo Schurke",
+		"companion-hunter": "Companion Jäger",
+		"concierge-druid": "Concierge Druide",
+		"concierge-hunter": "Concierge Jäger",
+		"contraband-face-hunter": "Contraband Face Jäger",
+		"control-priest": "Control Priester",
+		"control-warlock": "Control Hexenmeister",
+		"control-warrior": "Control Krieger",
+		"copy-druid": "Copy Druide",
+		"cta-paladin": "CTA Paladin",
+		"cute-demon-hunter": "Cute Dämonenjäger",
+		"cute-warrior": "Cute Krieger",
+		"cutlass-rogue": "Cutlass Schurke",
+		"cycle-dh": "Cycle Dämonenjäger",
+		"cycle-odyn-warrior": "Cycle Odyn Krieger",
+		"cycle-rogue": "Cycle Schurke",
+		"dark-gift-rogue": "Dark Gift Schurke",
+		"deathrattle-dh": "Todesröcheln Dämonenjäger",
+		"deathrattle-hunter": "Todesröcheln Jäger",
+		"deckless-warlock": "Deckless Hexenmeister",
+		"defense-terran-shaman": "Defense Terran Schamane",
+		"deios-hunter": "Deios Jäger",
+		"deious-hunter": "Deious Jäger",
+		"deious-paladin": "Deious Paladin",
+		"demon-dh": "Dämon Dämonenjäger",
+		"demon-warlock": "Dämon Hexenmeister",
+		"dino-egglock": "Dino Egglock",
+		"discover-hunter": "Entdecken Jäger",
+		"divergence-warlock": "Divergence Hexenmeister",
+		"dorian-rogue": "Dorian Schurke",
+		"draenei-mage": "Draenei Magier",
+		"draenei-priest": "Draenei Priester",
+		"draenei-warrior": "Draenei Krieger",
+		"dragon-druid": "Drache Druide",
+		"dragon-hunter": "Drache Jäger",
+		"dragon-priest": "Drache Priester",
+		"dragon-warrior": "Drache Krieger",
+		"drilling-rogue": "Drilling Schurke",
+		"drum-druid": "Drum Druide",
+		"drunk-mage": "Drunk Magier",
+		"drunk-paladin": "Drunk Paladin",
+		"dude-paladin": "Dude Paladin",
+		"dungar-druid": "Dungar Druide",
+		"dungar-shaman": "Dungar Schamane",
+		"egg-hunter": "Egg Jäger",
+		"egg-paladin": "Egg Paladin",
+		"egg-priest": "Egg Priester",
+		"egg-warrior": "Egg Krieger",
+		"elemental-rogue": "Elementar Schurke",
+		"end-of-turnadin": "Ende des Zugesadin",
+		"enrage-warrior": "Enrage Krieger",
+		"even-shaman": "Gerade Schamane",
+		"even-warlock": "Gerade Hexenmeister",
+		"evolve-shaman": "Entwickeln Schamane",
+		"excavate-mage": "Ausgraben Magier",
+		"excavate-paladin": "Ausgraben Paladin",
+		"excavate-shaman": "Ausgraben Schamane",
+		"excavate-warrior": "Ausgraben Krieger",
+		"exodia-paladin": "Exodia Paladin",
+		"f-egglock": "Frost Egglock",
+		"f-location-warlock": "Frost Schauplatz Hexenmeister",
+		"f-painlock": "Single Frost Painlock",
+		"f-quest-warlock": "Frost Quest Hexenmeister",
+		"f-shredslock": "Frost Shredslock",
+		"f-splendiferous-whizbang": "Splendiferous Wurbelfitz",
+		"f-wallow-warlock": "Frost Wallow Hexenmeister",
+		"f-warrior": "F Krieger",
+		"face-hunter": "Face Jäger",
+		"fatigue-demon-hunter": "Erschöpfung Dämonenjäger",
+		"fdos-shaman": "Other Side Schamane",
+		"fel-dh": "Dämonisch Dämonenjäger",
+		"ff-insanity-warlock": "Frost Insanity Hexenmeister",
+		"ff-kiljaeden-warlock": "Double Frost Kil'jaeden Hexenmeister",
+		"ff-location-warlock": "FF Schauplatz Hexenmeister",
+		"ff-wheel-warlock": "Frost Wheel Hexenmeister",
+		"fff-buttons-dk": "Frost Buttons DK",
+		"fff-death-knight": "Frost Todesritter",
+		"fff-excavate-dk": "Frost Ausgraben DK",
+		"fff-herenn-dk": "Frost Herenn DK",
+		"fff-undead-dk": "Frost Untot DK",
+		"ffu-armor-warlock": "FFU Rüstung Hexenmeister",
+		"ffu-buttons-dk": "FFU Buttons DK",
+		"ffu-death-knight": "FFU Todesritter",
+		"ffu-deathrattle-dk": "FFU Todesröcheln DK",
+		"ffu-deathrattle-warlock": "FFU Todesröcheln Hexenmeister",
+		"ffu-deckless-warlock": "FFU Deckless Hexenmeister",
+		"ffu-dk": "FFU DK",
+		"ffu-egglock": "FFU Egglock",
+		"ffu-excavate-dk": "FFU Ausgraben DK",
+		"ffu-frost-dk": "FFU Frost DK",
+		"ffu-frostbitten-dk": "FFU Frostbitten DK",
+		"ffu-herenn-dk": "FFU Herenn DK",
+		"ffu-highlander-dk": "FFU Highlander DK",
+		"ffu-menagerie-dk": "FFU Menagerie DK",
+		"ffu-mill-warlock": "FFU Mill Hexenmeister",
+		"ffu-plague-dk": "FFU Seuche DK",
+		"ffu-starship-dk": "FFU Raumschiff DK",
+		"ffu-starship-warlock": "FFU Raumschiff Hexenmeister",
+		"ffu-stego-herenn-dk": "FFU Stego Herenn DK",
+		"ffu-zerg-dk": "FFU Zerg DK",
+		"ffu-zerg-frost-dk": "FFU Zerg Frost DK",
+		"fizzle-priest": "Fizzle Priester",
+		"fizzle-rogue": "Fizzle Schurke",
+		"fizzle-warrior": "Fizzle Krieger",
+		"floppy-hunter": "Floppy Jäger",
+		"frost-dk": "Frost DK",
+		"frost-mage": "Frost Magier",
+		"fu-animancer-warlock": "FU Animancer Hexenmeister",
+		"fu-concierge-warlock": "FU Concierge Hexenmeister",
+		"fu-deathrattle-dk": "FU Todesröcheln DK",
+		"fu-egglock": "FU Egglock",
+		"fu-excavate-dk": "FU Ausgraben DK",
+		"fu-location-warlock": "FU Schauplatz Hexenmeister",
+		"fu-mill-warlock": "FU Mill Hexenmeister",
+		"fu-quest-warlock": "FU Quest Hexenmeister",
+		"fu-starship-warlock": "FU Raumschiff Hexenmeister",
+		"fu-wallow-warlock": "FU Wallow Hexenmeister",
+		"fu-zerg-dk": "FU Zerg DK",
+		"fuu-death-knight": "FUU Todesritter",
+		"fuu-deathrattle-dk": "FUU Todesröcheln DK",
+		"fuu-deathrattle-warlock": "FUU Todesröcheln Hexenmeister",
+		"fuu-egglock": "FUU Egglock",
+		"fuu-excavate-dk": "FUU Ausgraben DK",
+		"fuu-frostbitten-dk": "FUU Frostbitten DK",
+		"fuu-highlander-dk": "FUU Highlander DK",
+		"fuu-mech-dk": "FUU Mech DK",
+		"fuu-plague-dk": "FUU Seuche DK",
+		"fuu-quest-warlock": "FUU Quest Hexenmeister",
+		"fuu-starship-dk": "FUU Raumschiff DK",
+		"fuu-starship-warlock": "FUU Raumschiff Hexenmeister",
+		"fuu-zerg-dk": "FUU Zerg DK",
+		"fyrakk-rogue": "Fyrakk Schurke",
+		"gaia-paladin": "Gaia Paladin",
+		"gaia-pure-paladin": "Gaia Rein Paladin",
+		"garona-rogue": "Garona Schurke",
+		"giants-druid": "Giants Druide",
+		"giants-mage": "Giants Magier",
+		"giants-priest": "Giants Priester",
+		"giants-rogue": "Giants Schurke",
+		"giants-shaman": "Giants Schamane",
+		"giants-warrior": "Giants Krieger",
+		"gladiator-warrior": "Gladiator Krieger",
+		"godfrey-warlock": "Godfrey Hexenmeister",
+		"goldbeard-rogue": "Goldbeard Schurke",
+		"hagatha-shaman": "Hagatha Schamane",
+		"handbuff-hunter": "Handbuff Jäger",
+		"handbuff-paladin": "Handbuff Paladin",
+		"handbuff-warrior": "Handbuff Krieger",
+		"handlock": "Handlock",
+		"harold-demon-warlock": "Harold Dämon Hexenmeister",
+		"harold-dh": "Harold Dämonenjäger",
+		"harold-egglock": "Harold Egglock",
+		"harold-rogue": "Harold Schurke",
+		"harold-shaman": "Harold Schamane",
+		"harold-warlock": "Harold Hexenmeister",
+		"harold-warrior": "Harold Krieger",
+		"heal-burn-priest": "Heal Burn Priester",
+		"hero-power-druid": "Heldenfähigkeit Druide",
+		"highlander-dh": "Highlander Dämonenjäger",
+		"highlander-dk": "Highlander Todesritter",
+		"highlander-druid": "Highlander Druide",
+		"highlander-hunter": "Highlander Jäger",
+		"highlander-mage": "Highlander Magier",
+		"highlander-paladin": "Highlander Paladin",
+		"highlander-priest": "Highlander Priester",
+		"highlander-pure-paladin": "Highlander Rein Paladin",
+		"highlander-rogue": "Highlander Schurke",
+		"highlander-shaman": "Highlander Schamane",
+		"highlander-warlock": "Highlander Hexenmeister",
+		"highlander-warrior": "Highlander Krieger",
+		"hl-igneous-warrior": "HL Igneous Krieger",
+		"hl-n-roll-warrior": "HL Blackrock'n'Roll Krieger",
+		"hl-questline-priest": "HL Questreihe Priester",
+		"hl-thief-priest": "HL Thief Priester",
+		"hog-demon-hunter": "Hog Dämonenjäger",
+		"holy-wrath-paladin": "Heiliger Zorn Paladin",
+		"hooktusk-rogue": "Hooktusk Schurke",
+		"hostage-druid": "Hostage Druide",
+		"hostage-imbue-druid": "Hostage Erfüllen Druide",
+		"hostage-rogue": "Hostage Schurke",
+		"huddle-up-druid": "Huddle Up Druide",
+		"hydration-druid": "Hydration Druide",
+		"hydration-warrior": "Hydration Krieger",
+		"igneous-odyn-warrior": "Igneous Odyn Krieger",
+		"ignis-druid": "Ignis Druide",
+		"imbue-druid": "Erfüllen Druide",
+		"imbue-hunter": "Erfüllen Jäger",
+		"imbue-mage": "Erfüllen Magier",
+		"imbue-paladin": "Erfüllen Paladin",
+		"imbue-priest": "Erfüllen Priester",
+		"imbue-rogue": "Erfüllen Schurke",
+		"imbue-shaman": "Erfüllen Schamane",
+		"implock": "Implock",
+		"incindius-rogue": "Incindius Schurke",
+		"incindius-shaman": "Incindius Schamane",
+		"insanity-warlock": "Insanity Hexenmeister",
+		"j-lock": "J-Lock",
+		"jackpot-rogue": "Jackpot Schurke",
+		"jive-shaman": "Jive Schamane",
+		"jtu-quest-mage": "JTU Quest Magier",
+		"jtu-quest-rogue": "JTU Quest Schurke",
+		"justicar-warrior": "Justicar Krieger",
+		"kiljaeden-dh": "Kil'jaeden Dämonenjäger",
+		"kiljaeden-warlock": "Kil'jaeden Hexenmeister",
+		"kingslayer-pirate-rogue": "Kingslayer Pirat Schurke",
+		"krona-druid": "Krona Druide",
+		"lamplighter-rogue": "Lamplighter Schurke",
+		"lc-quest-priest": "LC Quest Priester",
+		"leyline-mage": "Leyline Magier",
+		"libram-aura-paladin": "Buchband Aura Paladin",
+		"libram-paladin": "Buchband Paladin",
+		"lightshow-mage": "Lightshow Magier",
+		"linecrackerdruid": "Linecracker Druide",
+		"location-priest": "Schauplatz Priester",
+		"location-wallow-warlock": "Schauplatz Wallow Hexenmeister",
+		"location-warlock": "Schauplatz Hexenmeister",
+		"logosh-warrior": "Lo'Gosh Krieger",
+		"lynessa-libram-paladin": "Lynessa Buchband Paladin",
+		"lynessa-otk-paladin": "Lynessa OTK Paladin",
+		"lynessa-paladin": "Lynessa Paladin",
+		"maestra-rogue": "Maestra Schurke",
+		"manastorm-mage": "Manastorm Magier",
+		"masochist-shaman": "Masochist Schamane",
+		"mech-paladin": "Mech Paladin",
+		"mech-rogue": "Mech Schurke",
+		"mech-shaman": "Mech Schamane",
+		"mech-warlock": "Mech Hexenmeister",
+		"mech-warrior": "Mech Krieger",
+		"mechathun-druid": "Mech'Thun Druide",
+		"mechathun-priest": "Mech'Thun Priester",
+		"menagerie-dh": "Menagerie Dämonenjäger",
+		"menagerie-mage": "Menagerie Magier",
+		"menagerie-paladin": "Menagerie Paladin",
+		"menagerie-priest": "Menagerie Priester",
+		"menagerie-warrior": "Menagerie Krieger",
+		"merithra-druid": "Merithra Druide",
+		"mill-paladin": "Mill Paladin",
+		"miracle-druid": "Miracle Druide",
+		"miracle-rogue": "Miracle Schurke",
+		"miracle-seedlock": "Miracle Seedlock",
+		"moonbeam-druid": "Moonbeam Druide",
+		"mug-quest-shaman": "Mug Quest Schamane",
+		"mug-shaman": "Mug Schamane",
+		"murloc-demon-hunter": "Murloc Dämonenjäger",
+		"murloc-shaman": "Murloc Schamane",
+		"murloc-warrior": "Murloc Krieger",
+		"murmur-otk-shaman": "Murmur OTK Schamane",
+		"murmur-shaman": "Murmur Schamane",
+		"mystery-egg-hunter": "Mystery Egg Jäger",
+		"naga-demon-hunter": "Naga Dämonenjäger",
+		"naga-priest": "Naga Priester",
+		"naga-shopper-dh": "Naga Shopper Dämonenjäger",
+		"nature-shaman": "Natur Schamane",
+		"nazmani-priest": "Nazmani Priester",
+		"nebula-shaman": "Nebula Schamane",
+		"no-archetype": "Kein Archetyp",
+		"no-hand-hunter": "No Hand Jäger",
+		"no-minion-dh": "No Minion Dämonenjäger",
+		"nostalgia-shaman": "Nostalgia Schamane",
+		"oathbreaker-paladin": "Oathbreaker Paladin",
+		"octosari-dh": "Octosari Dämonenjäger",
+		"odd-questline-hunter": "Ungerade Questreihe Jäger",
+		"odd-warrior": "Ungerade Krieger",
+		"odyn-warrior": "Odyn Krieger",
+		"ogre-rogue": "Ogre Schurke",
+		"ohnahra-big-shaman": "Ohn'ahra Big Schamane",
+		"old-aggro-druid": "Old Aggressiv Druide",
+		"orb-big-spell-mage": "Orb Großer Zauber Magier",
+		"orb-mage": "Orb Magier",
+		"outcast-dh": "Outcast Dämonenjäger",
+		"overheal-priest": "Überheilung Priester",
+		"overload-shaman": "Overload Schamane",
+		"owlonius-druid": "Owlonius Druide",
+		"pain-demon-hunter": "Pain Dämonenjäger",
+		"pain-priest": "Pain Priester",
+		"pain-rogue": "Pain Schurke",
+		"pain-zarimi-priest": "Pain Zarimi Priester",
+		"painlock": "Painlock",
+		"patron-warrior": "Patron Krieger",
+		"peddler-dh": "Peddler Dämonenjäger",
+		"peddler-paladin": "Peddler Paladin",
+		"pip-priest": "Pip Priester",
+		"pipsi-paladin": "Pipsi Paladin",
+		"pirate-demon-hunter": "Pirat Dämonenjäger",
+		"pirate-dh": "Pirat Dämonenjäger",
+		"pirate-rogue": "Pirat Schurke",
+		"pirate-shaman": "Pirat Schamane",
+		"prepared-druid": "Prepared Druide",
+		"prepared-priest": "Prepared Priester",
+		"protoss-druid": "Protoss Druide",
+		"protoss-imbue-mage": "Protoss Erfüllen Magier",
+		"protoss-mage": "Protoss Magier",
+		"protoss-priest": "Protoss Priester",
+		"protoss-rogue": "Protoss Schurke",
+		"pure-paladin": "Rein Paladin",
+		"quasar-rogue": "Quasar Schurke",
+		"quest-dh": "Quest Dämonenjäger",
+		"quest-drud": "Quest Druide",
+		"quest-druid": "Quest Druide",
+		"quest-hunter": "Quest Jäger",
+		"quest-mage": "Quest Magier",
+		"quest-paladin": "Quest Paladin",
+		"quest-priest": "Quest Priester",
+		"quest-rogue": "Quest Schurke",
+		"quest-shaman": "Quest Schamane",
+		"quest-spell-mage": "Quest Zauber Magier",
+		"quest-warlock": "Quest Hexenmeister",
+		"quest-warrior": "Quest Krieger",
+		"questline-dh": "Questreihe Dämonenjäger",
+		"questline-priest": "Questreihe Priester",
+		"rainbow-dk": "Rainbow Todesritter",
+		"rainbow-excavate-dk": "Rainbow Ausgraben DK",
+		"rainbow-mage": "Rainbow Magier",
+		"rainbow-menagerie-dk": "Rainbow Menagerie DK",
+		"rainbow-naga-mage": "Rainbow Naga Magier",
+		"rainbow-shaman": "Rainbow Schamane",
+		"rainbow-starship-dk": "Rainbow Raumschiff DK",
+		"ramp-druid": "Ramp Druide",
+		"rat-trap-hunter": "Rat Trap Jäger",
+		"ravenous-cliff-dive-dh": "Ravenous Cliff Dive Dämonenjäger",
+		"raylla-imbue-mage": "Raylla Erfüllen Magier",
+		"raza-dh": "Raza Dämonenjäger",
+		"relic-demon-hunter": "Relic Dämonenjäger",
+		"riff-warrior": "Riff Krieger",
+		"rivendare-hunter": "Rivendare Jäger",
+		"rock-n-roll-warrior": "Blackrock'n'Roll Krieger",
+		"rommath-mage": "Rommath Magier",
+		"sanctum-priest": "Sanctum Priester",
+		"sandwich-warrior": "Sandwich Krieger",
+		"sd-starship-druid": "SD Raumschiff Druide",
+		"secret-hunter": "Geheimnis Jäger",
+		"secret-mage": "Geheimnis Magier",
+		"secret-rogue": "Geheimnis Schurke",
+		"securitybot-shaman": "Securitybot Schamane",
+		"seedlock": "Seedlock",
+		"shadow-priest": "Schatten Priester",
+		"shaffar-hunter": "Shaffar Jäger",
+		"shaffar-rogue": "Shaffar Schurke",
+		"shaggro-priest": "Shaggro Priester",
+		"shaper-discover-hunter": "Shaper Entdecken Jäger",
+		"shopper-dh": "Shopper Dämonenjäger",
+		"skyla-imbue-mage": "Skyla Erfüllen Magier",
+		"sludge-warlock": "Sludge Hexenmeister",
+		"snek-warlock": "Snake Hexenmeister",
+		"sonya-rogue": "Sonya Schurke",
+		"soothsayer-priest": "Soothsayer Priester",
+		"sou-quest-shaman": "SOU Quest Schamane",
+		"spell-damage-druid": "Zauberschaden Druide",
+		"spell-damage-shaman": "Zauberschaden Schamane",
+		"spell-demon-hunter": "Zauber Dämonenjäger",
+		"spell-mage": "Zauber Magier",
+		"splendiferous-whizbang": "Splendiferous Wurbelfitz",
+		"spooky-mage": "Spooky Magier",
+		"starship-demon-hunter": "Raumschiff Dämonenjäger",
+		"starship-druid": "Raumschiff Druide",
+		"starship-hunter": "Raumschiff Jäger",
+		"starship-paladin": "Raumschiff Paladin",
+		"starship-priest": "Raumschiff Priester",
+		"starship-rogue": "Raumschiff Schurke",
+		"starship-warlock": "Raumschiff Hexenmeister",
+		"starship-warrior": "Raumschiff Krieger",
+		"supernova-mage": "Supernova Magier",
+		"swarm-shaman": "Swarm Schamane",
+		"switcheroo-priest": "Switcheroo Priester",
+		"taunt-warrior": "Spott Krieger",
+		"tempo-druid": "Tempo Druide",
+		"tentacle-demon-hunter": "Tentacle Dämonenjäger",
+		"tentacle-mage": "Tentacle Magier",
+		"tentacle-rogue": "Tentacle Schurke",
+		"tentacle-warlock": "Tentacle Hexenmeister",
+		"terran-paladin": "Terran Paladin",
+		"terran-shaman": "Terran Schamane",
+		"terran-warrior": "Terran Krieger",
+		"thief-priest": "Thief Priester",
+		"thief-rogue": "Thief Schurke",
+		"tog-druid": "Tog Druide",
+		"tog-priest": "Tog Priester",
+		"tog-warrior": "Tog Krieger",
+		"token-broxigar-dh": "Token Broxigar Dämonenjäger",
+		"token-dh": "Token Dämonenjäger",
+		"token-druid": "Token Druide",
+		"toki-mage": "Toki Magier",
+		"tony-druid": "Tony Druide",
+		"topior-druid": "Topior Druide",
+		"totem-shaman": "Totem Schamane",
+		"treant-druid": "Treant Druide",
+		"tripwire-hunter": "Tripwire Jäger",
+		"turbulus-shaman": "Turbulus Schamane",
+		"two-bit-rogue": "Two Bit Schurke",
+		"u-animancer-warlock": "Unheilig Animancer Hexenmeister",
+		"u-armor-warlock": "Single Unheilig Rüstung Hexenmeister",
+		"u-concierge-warlock": "Unheilig Concierge Hexenmeister",
+		"u-deathrattle-warlock": "Single Unheilig Todesröcheln Hexenmeister",
+		"u-egglock": "Unheilig Egglock",
+		"u-mill-warlock": "Unheilig Mill Hexenmeister",
+		"u-starship-warlock": "Unheilig Raumschiff Hexenmeister",
+		"u-unholy-dk": "Single Unheilig DK",
+		"u-wallow-warlock": "Unheilig Wallow Hexenmeister",
+		"undead-priest": "Untot Priester",
+		"unholy-dk": "Unheilig DK",
+		"uu-armor-warlock": "Double Unheilig Rüstung Hexenmeister",
+		"uu-deathrattle-warlock": "Double Unheilig Todesröcheln Hexenmeister",
+		"uu-deckless-warlock": "Double Unheilig Deckless Hexenmeister",
+		"uu-demon-warlock": "Double Unheilig Dämon Hexenmeister",
+		"uu-insanity-warlock": "UU Insanity Hexenmeister",
+		"uu-plague-dk": "Double Unheilig Seuche DK",
+		"uu-quest-warlock": "Double Unheilig Quest Hexenmeister",
+		"uu-snek-warlock": "Double Unheilig Snek Hexenmeister",
+		"uu-starship-warlock": "Double Unheilig Raumschiff Hexenmeister",
+		"uu-unholy-dk": "Double Unheilig DK",
+		"uu-wallow-warlock": "Double Unheilig Wallow Hexenmeister",
+		"uu-zerg-unholy-dk": "Double Unheilig Zerg DK",
+		"uuu-aggro-dk": "Unheilig Aggressiv DK",
+		"uuu-aggro-plague-dk": "Unheilig Aggressiv Seuche DK",
+		"uuu-deathrattle-dk": "Unheilig Todesröcheln DK",
+		"uuu-even-death-knight": "Unheilig Gerade Todesritter",
+		"uuu-highlander-dk": "Unheilig Highlander DK",
+		"uuu-plague-dk": "Unheilig Seuche DK",
+		"uuu-undead-death-knight": "Unheilig Untot Todesritter",
+		"uuu-undead-dk": "Unheilig Untot DK",
+		"vanessa-rogue": "Vanessa Schurke",
+		"velarok-rogue": "Velarok Schurke",
+		"void-dh": "Void Dämonenjäger",
+		"void-soul-dh": "Void Soul Dämonenjäger",
+		"wallow-warlock": "Wallow Hexenmeister",
+		"weapon-dh": "Waffe Dämonenjäger",
+		"weapon-rogue": "Waffe Schurke",
+		"wheel-warlock": "Wheel Hexenmeister",
+		"wilted-priest": "Wilted Priester",
+		"xl-abyssal-warlock": "XL Abyssal Hexenmeister",
+		"xl-att-quest-hunter": "XL AtT Quest Jäger",
+		"xl-aviana-druid": "XL Aviana Druide",
+		"xl-basher-warrior": "XL Basher Krieger",
+		"xl-bbb-control-dk": "XL Blut Control DK",
+		"xl-bbb-death-knight": "XL Blut DK",
+		"xl-bbb-highlander-dk": "XL Blut Highlander DK",
+		"xl-bbb-undead-dk": "XL Blut Untot DK",
+		"xl-bbu-control-dk": "XL BBU Control DK",
+		"xl-bbu-highlander-dk": "XL BBU Highlander DK",
+		"xl-bf-painlock": "XL BF Painlock",
+		"xl-bfu-deathrattle-warlock": "XL Rainbow Todesröcheln Hexenmeister",
+		"xl-bfu-excavate-dk": "XL Rainbow Ausgraben DK",
+		"xl-bfu-handbuff-dk": "XL Rainbow Handbuff DK",
+		"xl-bfu-highlander-dk": "XL Rainbow Highlander DK",
+		"xl-big-beast-hunter": "XL Big Wildtier Jäger",
+		"xl-big-spell-mage": "XL Großer Zauber Magier",
+		"xl-burnlock": "XL Burnlock",
+		"xl-buttons-rainbow-dk": "XL Buttons Rainbow DK",
+		"xl-buu-highlander-dk": "XL BUU Highlander DK",
+		"xl-buu-hl-plague-dk": "XL BUU HL Seuche DK",
+		"xl-buu-plague-dk": "XL BUU Seuche DK",
+		"xl-buu-starship-dk": "XL BUU Raumschiff DK",
+		"xl-casino-mage": "XL Casino Magier",
+		"xl-chadlock": "XL Chadlock",
+		"xl-champions-druid": "XL Champions Druide",
+		"xl-coc-rogue": "XL Coc Schurke",
+		"xl-coc-thief-rogue": "XL Coc Thief Schurke",
+		"xl-coin-rogue": "XL Coin Schurke",
+		"xl-control-priest": "XL Control Priester",
+		"xl-control-warlock": "XL Control Hexenmeister",
+		"xl-cta-paladin": "XL CTA Paladin",
+		"xl-cutlass-rogue": "XL Cutlass Schurke",
+		"xl-deios-druid": "XL Deios Druide",
+		"xl-draenei-demon-hunter": "XL Draenei Dämonenjäger",
+		"xl-dragon-druid": "XL Drache Druide",
+		"xl-drilling-rogue": "XL Drilling Schurke",
+		"xl-druid": "XL Druide",
+		"xl-dungar-druid": "XL Dungar Druide",
+		"xl-elemental-mage": "XL Elementar Magier",
+		"xl-elemental-shaman": "XL Elementar Schamane",
+		"xl-excavate-mage": "XL Ausgraben Magier",
+		"xl-excavate-odyn-warrior": "XL Ausgraben Odyn Krieger",
+		"xl-excavate-odyn-warror": "XL Ausgraben Odyn Krieger",
+		"xl-excavate-paladin": "XL Ausgraben Paladin",
+		"xl-excavate-warrior": "XL Ausgraben Krieger",
+		"xl-exodia-mage": "XL Exodia Magier",
+		"xl-f-insanity-warlock": "XL F Insanity Hexenmeister",
+		"xl-fatigue-demon-hunter": "XL Erschöpfung Dämonenjäger",
+		"xl-ff-handlock": "XL FF Handlock",
+		"xl-ffu-rafaamlock": "FFU Rafaamlock",
+		"xl-fuu-highlander-dk": "XL FUU Highlander DK",
+		"xl-fuu-plague-dk": "XL FUU Seuche DK",
+		"xl-gaia-paladin": "XL Gaia Paladin",
+		"xl-handbuff-hunter": "XL Handbuff Jäger",
+		"xl-handbuff-paladin": "XL Handbuff Paladin",
+		"xl-handlock": "XL Handlock",
+		"xl-hero-power-druid": "XL Heldenfähigkeit Druide",
+		"xl-highlander-dh": "XL Highlander Dämonenjäger",
+		"xl-highlander-druid": "XL Highlander Druide",
+		"xl-highlander-hunter": "XL Highlander Jäger",
+		"xl-highlander-mage": "XL Highlander Magier",
+		"xl-highlander-paladin": "XL Highlander Paladin",
+		"xl-highlander-priest": "XL Highlander Priester",
+		"xl-highlander-rogue": "XL Highlander Schurke",
+		"xl-highlander-shaman": "XL Highlander Schamane",
+		"xl-highlander-warlock": "XL Highlander Hexenmeister",
+		"xl-highlander-warrior": "XL Highlander Krieger",
+		"xl-hl-att-quest-hunter": "XL HL AtT Quest Jäger",
+		"xl-hl-aura-paladin": "XL HL Aura Paladin",
+		"xl-hl-dragon-druid": "XL HL Drache Druide",
+		"xl-hl-exodia-mage": "XL HL Exodia Magier",
+		"xl-hl-igneous-warrior": "XL HL Igneous Krieger",
+		"xl-hl-imbue-rogue": "XL HL Erfüllen Schurke",
+		"xl-hl-jtu-quest-mage": "XL HL JTU Quest Magier",
+		"xl-hl-lc-quest-warrior": "XL HL LC Quest Krieger",
+		"xl-hl-leoroxx-hunter": "XL HL Leoroxx Jäger",
+		"xl-hl-n-roll-warrior": "XL HL Blackrock'n'Roll Krieger",
+		"xl-hl-questline-mage": "XL HL Questreihe Magier",
+		"xl-hl-questline-priest": "XL HL Questreihe Priester",
+		"xl-hl-shadow-priest": "XL HL Schatten Priester",
+		"xl-hl-shudder-shaman": "XL HL Shudder Schamane",
+		"xl-hl-thief-priest": "XL HL Thief Priester",
+		"xl-hl-tick-tock-warlock": "XL HL Tick Tock Hexenmeister",
+		"xl-hl-tog-druid": "XL HL Tog Druide",
+		"xl-holy-wrath-paladin": "XL Heiliger Zorn Paladin",
+		"xl-hooktusk-rogue": "XL Hooktusk Schurke",
+		"xl-hostage-mage": "XL Hostage Magier",
+		"xl-hydration-warrior": "XL Hydration Krieger",
+		"xl-ilgynoth-dh": "XL Il'gynoth Dämonenjäger",
+		"xl-imbue-mage": "XL Erfüllen Magier",
+		"xl-insanity-warlock": "XL Insanity Hexenmeister",
+		"xl-jackpot-rogue": "XL Jackpot Schurke",
+		"xl-jive-shaman": "XL Jive Schamane",
+		"xl-jtu-quest-mage": "XL JTU Quest Magier",
+		"xl-justicar-warrior": "XL Justicar Krieger",
+		"xl-maestra-rogue": "XL Maestra Schurke",
+		"xl-mage": "XL Other Magier",
+		"xl-malygos-druid": "XL Malygos Druide",
+		"xl-mech-warrior": "XL Mech Krieger",
+		"xl-menagerie-druid": "XL Menagerie Druide",
+		"xl-mill-druid": "XL Mill Druide",
+		"xl-mill-rogue": "XL Mill Schurke",
+		"xl-miracle-druid": "XL Miracle Druide",
+		"xl-mystery-egg-hunter": "XL Mystery Egg Jäger",
+		"xl-odd-questline-hunter": "XL Ungerade Questreihe Jäger",
+		"xl-odd-warrior": "XL Ungerade Krieger",
+		"xl-odyn-warrior": "XL Odyn Krieger",
+		"xl-ogre-rogue": "XL Ogre Schurke",
+		"xl-orb-big-spell-mage": "XL Orb Großer Zauber Magier",
+		"xl-orb-mage": "XL Orb Magier",
+		"xl-owlonius-druid": "XL Owlonius Druide",
+		"xl-painlock": "XL Painlock",
+		"xl-pipsi-paladin": "XL Pipsi Paladin",
+		"xl-priest": "XL Priester",
+		"xl-quest-mage": "XL Quest Magier",
+		"xl-rafaamlock": "Rafaamlock",
+		"xl-rainbow-dk": "XL Rainbow DK",
+		"xl-rainbow-excavate-dk": "XL Rainbow Ausgraben DK",
+		"xl-rainbow-mage": "XL Rainbow Magier",
+		"xl-rainbow-shaman": "XL Rainbow Schamane",
+		"xl-ramp-druid": "XL Ramp Druide",
+		"xl-rock-n-roll-warrior": "XL Blackrock'n'Roll Krieger",
+		"xl-rogue": "XL Other Schurke",
+		"xl-rommath-mage": "XL Rommath Magier",
+		"xl-secret-hunter": "XL Geheimnis Jäger",
+		"xl-secret-mage": "XL Geheimnis Magier",
+		"xl-seedlock": "XL Seedlock",
+		"xl-shadow-priest": "XL Schatten Priester",
+		"xl-shaman": "XL Other Schamane",
+		"xl-snek-warlock": "XL Snake Hexenmeister",
+		"xl-spell-damage-druid": "XL Zauberschaden Druide",
+		"xl-splendiferous-whizbang": "XL Splendiferous Wurbelfitz",
+		"xl-taunt-warrior": "XL Spott Krieger",
+		"xl-tempo-druid": "XL Tempo Druide",
+		"xl-thief-rogue": "XL Thief Schurke",
+		"xl-tick-tock-warlock": "XL Tick Tock Hexenmeister",
+		"xl-tony-druid": "XL Tony Druide",
+		"xl-topior-druid": "XL Topior Druide",
+		"xl-u-rafaamlock": "XL U Rafaamlock",
+		"xl-uu-highlander-warlock": "XL UU Highlander Hexenmeister",
+		"xl-uu-insanity-warlock": "XL Untot Insanity Hexenmeister",
+		"xl-uu-rafaamlock": "Unheilig Rafaamlock",
+		"xl-uu-snek-warlock": "XL Untot Snek Hexenmeister",
+		"xl-uuu-plague-dk": "XL UUU Seuche DK",
+		"xl-velarok-rogue": "XL Velarok Schurke",
+		"xl-warrior": "XL Krieger",
+		"xl-wheel-warlock": "XL Wheel Hexenmeister",
+		"xl-zilliax-warrior": "XL Zilliax Krieger",
+		"zealot-otk-priest": "Zealot OTK Priester",
+		"zee-quest-shaman": "Zee Quest Schamane",
+		"zee-shaman": "Zee Schamane",
+		"zerg-attack-dh": "Zerg Attack Dämonenjäger",
+		"zerg-discover-hunter": "Zerg Entdecken Jäger",
+		"zerg-egg-hunter": "Zerg Egg Jäger",
+		"zerg-hunter": "Zerg Jäger",
+		"zerg-rainbow-dk": "Zerg Rainbow DK",
+		"zerg-unholy-dk": "Zerg Unheilig DK",
+		"zerg-zoo-hunter": "Zerg Zoo Jäger",
+		"zilliax-warrior": "Zilliax Krieger",
+		"zuramat-druid": "Zuramat Druide"
+	},
+	"battlegrounds": {
+		"battle": {
+			"odds-banner-label": "Kampfchancen"
+		},
+		"hero-stats": {
+			"avg-position-global-tooltip": "Globaler Wert",
+			"finishes-title": "Platzierungen"
+		},
+		"in-game": {
+			"action-count": {
+				"close-cancel": "Offen lassen",
+				"close-confirmation-text": "Widget schließen und deaktivieren. Du kannst es in den Einstellungen wieder aktivieren",
+				"close-ok": "Schließen",
+				"close-tooltip": "Widget schließen."
+			},
+			"dark-gifts": {
+				"arrives": "Kommt später",
+				"expired": "Abgelaufen",
+				"expires-soon": "Läuft bald ab",
+				"guaranteed": "Garantiert",
+				"guaranteed-disabled-tooltip": "Ab Zug {{value}} ist einer der angebotenen Diener dein häufigster Typ",
+				"guaranteed-type": "Garantierter Typ",
+				"has-condition": "Dieses Geschenk hat zusätzliche Anforderungen. Bewege die Maus hierher, um zu sehen warum, oder über einen Diener, um ihn zu prüfen.",
+				"others": "Andere",
+				"pool": "Pool",
+				"reason": {
+					"battlecry-gift-restriction": "Kampfschrei-Diener können nur Doppelsicht, Replikation, Vergolden oder Echoende Stimme erhalten",
+					"charisma-banned-minion": "Wird für diesen Diener nicht angeboten",
+					"choose-one-gift-restriction": "Auswählen-Diener können nur Doppelsicht, Replikation, Vergolden oder Echoende Stimme erhalten",
+					"deathrattle-stats-restriction": "Todesröcheln-Diener können unter den Werte-Geschenken nur Geschärftes Schwert oder Umarmung des Todes erhalten",
+					"lobby-dragon": "Wird nicht angeboten, wenn Drachen in der Lobby sind",
+					"lobby-quilboar-naga": "Wird nicht angeboten, wenn Stacheleber oder Naga in der Lobby sind",
+					"not-activate": "Wird nicht für Aktivieren-Diener angeboten",
+					"not-already-venomous": "Wird nicht für Diener angeboten, die bereits giftig sind",
+					"not-avenge": "Wird nicht für Rache-Diener angeboten",
+					"not-beast-or-undead": "Wird nicht für Wildtiere oder Untote angeboten",
+					"not-dragon": "Wird nicht für Drachen angeboten",
+					"not-highest-trigger-count": "Wird nur angeboten, wenn dies deine am häufigsten ausgelöste Skalierungsbedingung ist",
+					"not-lowest-tier": "Wird nur für die Diener der niedrigsten Stufe in diesem Pool angeboten",
+					"not-taunt": "Wird nicht für Spott-Diener angeboten",
+					"not-tier-7": "Wird nicht für Stufe-7-Diener angeboten",
+					"not-venomous-or-poisonous": "Wird nicht für giftige oder Giftig-Diener angeboten",
+					"requires-avenge": "Wird nur für Rache-Diener angeboten",
+					"requires-battlecries-this-game": "Erfordert, dass in diesem Spiel ein Kampfschrei ausgelöst wurde",
+					"requires-battlecry-minion": "Wird nur für Kampfschrei-Diener angeboten",
+					"requires-deathrattle-minion": "Wird nur für Todesröcheln-Diener angeboten",
+					"requires-deathrattles-this-game": "Erfordert, dass in diesem Spiel ein Todesröcheln ausgelöst wurde",
+					"requires-demon": "Wird nur für Dämonen angeboten",
+					"requires-divine-shield": "Wird nur für Gottesschild-Diener angeboten",
+					"requires-dragon": "Wird nur für Drachen angeboten",
+					"requires-end-of-turn": "Wird nur für Ende-des-Zuges-Diener angeboten",
+					"requires-mech": "Wird nur für Mechs angeboten",
+					"requires-minion-type": "Wird nur für Diener mit einem Typ angeboten",
+					"requires-murloc": "Wird nur für Murlocs angeboten",
+					"requires-no-minion-type": "Wird nur für Diener ohne Typ angeboten",
+					"requires-quilboar": "Wird nur für Stacheleber angeboten",
+					"requires-spellcraft": "Wird nur für Zauberkunst-Diener angeboten",
+					"requires-tavern-spells-this-game": "Erfordert, dass in diesem Spiel ein Gasthauszauber gewirkt wurde",
+					"requires-tavern-tier-3": "Erfordert Tavernenstufe 3 oder höher",
+					"stitched-salvager": "Wird nicht für Zusammengeflickten Bergungsarbeiter angeboten"
+				},
+				"restriction": {
+					"battlecry-before-5": "Kampfschrei- und Auswählen-Diener werden vor Zug 5 nicht angeboten.",
+					"battlecry-choose-one": "Kampfschrei- und Auswählen-Diener können nur Doppelsicht, Replikation, Vergolden oder Echoende Stimme erhalten.",
+					"deathrattle-stats": "Todesröcheln-Diener können unter den Werte-Geschenken nur Geschärftes Schwert oder Umarmung des Todes erhalten.",
+					"golemancy-salvager": "Golemantie kann nicht für Zusammengeflickten Bergungsarbeiter angeboten werden.",
+					"guaranteed-type": "Ab Zug 6 ist einer der drei angebotenen Diener dein häufigster Typ.",
+					"lobby-bans": "Widerstand und Transzendenz sind in Drachen-Lobbys gesperrt. Feindseligkeit ist für giftige oder Giftig-Diener gesperrt. Charisma ist für Stufe-7-Diener gesperrt.",
+					"no-magnetic-sell-hand": "Magnetische Diener, Diener mit einem Effekt beim Verkaufen und Diener, die in der Hand bleiben sollen, können keine Dunklen Geschenke erhalten.",
+					"rarer-gifts": "Vergolden, Anhaltender Schrecken, Titanische Stärke und Unverwundbarkeit sind seltener als andere Geschenke.",
+					"scaling-highest": "Unter Kampfnarben, Umarmung des Todes und Zaubersog können nur die am häufigsten ausgelösten Bedingungen angeboten werden."
+				},
+				"rules": "Regeln",
+				"title": "Dunkle Geschenke",
+				"turn": "Zug {{value}}",
+				"turns-open": "{{min}}–{{max}}",
+				"turns-plus": "{{min}}+",
+				"uses-left": "Noch {{value}} Nutzungen",
+				"wiki-link": "Hearthstone-Wiki — Dunkles Geschenk",
+				"wiki-source": "Quelle:"
+			},
+			"minions-list": {
+				"compositions": {
+					"filters": {
+						"browsing": "Durchstöbern",
+						"exploring": "Erkunden"
+					},
+					"recommended-cards-header": "Empfohlene Karten",
+					"recommended-cards-header-tooltip": "Karten, die in der Komposition sehr empfohlen sind, auch wenn sie ohne sie noch spielbar ist"
+				},
+				"hide-all-mechanics-tooltip": "Klappt den Power-Tab ein, sodass nur die wichtigsten Schlüsselwörter sichtbar sind",
+				"show-all-mechanics-tooltip": "Klappt den Power-Tab aus, um alle unterstützten Schlüsselwörter zu zeigen",
+				"tier-category-tooltip": "Alle Karten der Stufe {{value}} anzeigen. Rechtsklick, um alle Stufe-{{value}}-Karten im Gasthaus hervorzuheben."
+			},
+			"timewarped": {
+				"data-points-header": "Datenpunkte",
+				"data-points-header-tooltip": "Die Anzahl der Spiele, in denen diese Karte von den besten {{value}}% der Spieler gewählt wurde",
+				"free-uses-text": "Noch {{value}}",
+				"free-uses-tooltip": "Du kannst diese Funktion jeden Tag {{max}} Mal kostenlos nutzen und hast noch {{left}} Nutzungen übrig",
+				"impact-header": "Einfluss",
+				"impact-header-tooltip": "Wie stark sich die Endplatzierung ändert, wenn die besten {{value}}% der Spieler diese Karte wählen",
+				"placement-header": "Platzierung",
+				"tier-header": "Rang"
+			}
+		},
+		"sim": {
+			"back-to-back-cast-this-game": "Hintereinander gewirkt in diesem Spiel",
+			"back-to-back-cast-this-game-tooltip": "Wie viele Hintereinander-Gasthauszauber du in diesem Spiel gewirkt hast",
+			"cards-played-this-turn": "Karten in diesem Zug gespielt",
+			"cards-played-this-turn-tooltip": "Wie viele Karten du im aktuellen Rekrutierungszug gespielt hast",
+			"deathrattles-triggered-this-game": "Todesröcheln in diesem Spiel ausgelöst",
+			"deathrattles-triggered-this-game-tooltip": "Wie viele Todesröcheln-Effekte du in diesem Spiel ausgelöst hast (Diener, Zauber usw.)",
+			"deep-blues": "Deep Blues",
+			"deep-blues-tooltip": "Wie viele Deep Blues du in diesem Spiel gespielt hast",
+			"eternal-knight-attack-buff": "Ewiger Ritter Angriff",
+			"eternal-knight-attack-buff-tooltip": "Der flache Angriffsbonus, den deine Ewigen Ritter in diesem Spiel erhalten (z. B. durch Ewiges Porträt)",
+			"eternal-knight-health-buff": "Ewiger Ritter Gesundheit",
+			"eternal-knight-health-buff-tooltip": "Der flache Gesundheitsbonus, den deine Ewigen Ritter in diesem Spiel erhalten (z. B. durch Ewiges Porträt)",
+			"gold-spent-this-game": "Gold in diesem Spiel ausgegeben",
+			"golden-minions-played-this-game": "Goldene Diener gespielt",
+			"golden-minions-played-this-game-tooltip": "Die Anzahl goldener Diener, die du in diesem Spiel gespielt hast",
+			"goldrinn-attack": "Goldrinn Angriff",
+			"goldrinn-attack-tooltip": "Der zusätzliche Angriff, den Goldrinn nur für den nächsten Kampf verleiht",
+			"goldrinn-health": "Goldrinn Gesundheit",
+			"goldrinn-health-tooltip": "Die zusätzliche Gesundheit, die Goldrinn nur für den nächsten Kampf verleiht",
+			"mrrgltons-played-this-game": "Mrrgltons in diesem Spiel gespielt",
+			"mrrgltons-played-this-game-tooltip": "Wie viele Mrrglton-Diener du in diesem Spiel gespielt hast (Mama-/Papa-Mrrglton-Skalierung)",
+			"select-trinket-placeholder": "Schmuckstück wählen",
+			"tasty-lobsters-buff": "Leckerer-Hummer-Bonus",
+			"tasty-lobsters-buff-tooltip": "Wie oft Todesröcheln von Leckerer Hummer in diesem Spiel ausgelöst wurden (das nächste Hummer-Todesröcheln gibt dies + 1)",
+			"tavern-spells-cast-this-turn": "Gasthauszauber in diesem Zug",
+			"tavern-spells-cast-this-turn-tooltip": "Wie viele Gasthauszauber du im aktuellen Rekrutierungszug gewirkt hast",
+			"undead-army-health": "Untote-Armee Gesundheit",
+			"undead-army-health-tooltip": "Die zusätzliche Gesundheit deiner Untoten",
+			"volumizer-attack-buff": "Volumizer-Angriffsbonus",
+			"volumizer-attack-buff-tooltip": "Der zusätzliche Angriff deiner Volumizer",
+			"volumizer-health-buff": "Volumizer-Gesundheitsbonus",
+			"volumizer-health-buff-tooltip": "Die zusätzliche Gesundheit deiner Volumizer",
+			"whelp-attack-buff": "Welpen-Angriffsbonus",
+			"whelp-attack-buff-tooltip": "Der zusätzliche Angriff deiner Welpen",
+			"whelp-health-buff": "Welpen-Gesundheitsbonus",
+			"whelp-health-buff-tooltip": "Die zusätzliche Gesundheit deiner Welpen"
+		}
+	},
+	"bgs-comp": {
+		"apexis_mechs": "Apexis Mechs",
+		"avenge_dragons": "Rache Drachen",
+		"beast_banana": "Banana Wildtiere",
+		"beast_beetle": "Beetle Wildtiere",
+		"beast_goldrinn": "Goldrinn Wildtiere",
+		"beast_leviathan": "Leviathan Wildtiere",
+		"beast_lobster": "Lobster Wildtiere",
+		"beast_self_damage": "Selbstschaden Wildtiere",
+		"beast_stegodon": "Stegodon Wildtiere",
+		"beasts_beetles": "Wildtiere Beetles",
+		"beetle_beasts": "Beetle Wildtiere",
+		"big_elementals": "Große Elementare",
+		"bomber_mechs": "Bomber Mechs",
+		"boost_quilboar": "Boost Stacheleber",
+		"boost_shop_quilboar": "Shop-Boost Stacheleber",
+		"boost_spell_naga": "Boost Zauber Naga",
+		"bounty_pirates": "Bounty Piratn",
+		"buff_shop_demons": "Shop-Buff Dämonen",
+		"carapace_undead": "Carapace Untot",
+		"charmwing_dragons": "Charmwing Drachen",
+		"cycle_elementals": "Cycle Elementars",
+		"cycle_nagas": "Cycle Naga",
+		"cycle_quilboar": "Cycle Stacheleber",
+		"damage_demons": "Damage Dämonen",
+		"deathrattle_quilboar": "Todesröcheln Stacheleber",
+		"deep_blue_nagas": "Deep Blue Naga",
+		"demon_boost_shop": "Shop-Boost Dämonen",
+		"demon_fodder": "Fodder Dämonen",
+		"demon_self_damage": "Selbstschaden Dämonen",
+		"dragon_evoker": "Evoker Drachen",
+		"dragon_kalecgos": "Kalecgos Drachen",
+		"dragon_ring_bearer": "Ring Bearer Drachen",
+		"easter_egg": "Osterei",
+		"electron_mechs": "Electron Mechs",
+		"elemental_cycle": "Cycle Elementars",
+		"elemental_shop_buff": "Shop-Buff Elementars",
+		"elemental_tier2_ballers": "Stufe-2-Ballers",
+		"elemental_ultraviolet": "Ultraviolet Elementars",
+		"end_of_turn_elementals": "Ende des Zuges Elementars",
+		"end_of_turn_murlocs": "Ende des Zuges Murlocs",
+		"end_of_turn_naga": "Ende des Zuges Naga",
+		"end_of_turn_nagas": "Ende des Zuges Naga",
+		"eudora_pirates": "Eudora Piratn",
+		"evoker_dragons": "Evoker Drachen",
+		"frogger_beasts": "Frogger Wildtiere",
+		"goldrinn_beasts": "Goldrinn Wildtiere",
+		"groundbreaker_naga": "Groundbreaker Naga",
+		"handbuff_murloc": "Handbuff Murlocs",
+		"kalecgos_dragons": "Kalecgos Drachen",
+		"lord_of_gains_nagas": "Lord of Gains Naga",
+		"lord_of_ruins_demons": "Lord of Ruins Dämonen",
+		"magnet_mechs": "Magnet Mechs",
+		"mech_automaton": "Automaton Mechs",
+		"mech_magnet": "Magnet Mechs",
+		"mech_shield": "Shield Mechs",
+		"murloc_handbuff": "Handbuff Murlocs",
+		"murloc_mrrglton": "Mrrglton Murlocs",
+		"murloc_scam": "Scam Murlocs",
+		"naga_deep_blue": "Deep Blue Naga",
+		"naga_end_of_turn": "Ende des Zuges Naga",
+		"naga_groundbreaker": "Groundbreaker Naga",
+		"naga_spellbuff": "Zauberbuff Naga",
+		"naga_spellspam": "Zauberpam Naga",
+		"neutral_back_to_back": "Hintereinander",
+		"neutral_nalaa": "Nalaa",
+		"neutral_tea_set": "Teeservice",
+		"nomi_elementals": "Nomi Elementars",
+		"overflow_undead": "Overflow Untot",
+		"pirate_bounty": "Bounty Piratn",
+		"pirate_discover": "Entdecken Piratn",
+		"pirate_end_of_turn": "Ende des Zuges Piratn",
+		"pirate_eudora": "Eudora Piratn",
+		"pirate_exodia": "Exodia Piratn",
+		"poet_dragons": "Poet Drachen",
+		"quilboar_avenge": "Rache Stacheleber",
+		"quilboar_choose_one": "Auswählen Stacheleber",
+		"quilboar_deathrattle": "Todesröcheln Stacheleber",
+		"quilboar_smuggler": "Smuggler Stacheleber",
+		"rally_menagerie": "Mobilisieren Menagerie",
+		"rally_quilboar": "Mobilisieren Stacheleber",
+		"refresh_elementals": "Refresh Elementars",
+		"rylak_quilboar": "Rylak Stacheleber",
+		"scam": "Scam",
+		"scam_murlocs": "Scam Murlocs",
+		"self_damage_beasts": "Selbstschaden Wildtiere",
+		"self_damage_demons": "Selbstschaden Dämonen",
+		"shield_mechs": "Shield Mechs",
+		"shield_quilboar": "Shield Stacheleber",
+		"shop_eating_demons": "Shop-Fresser Dämonen",
+		"silithid_beasts": "Silithid Wildtiere",
+		"spell_buff": "Zauber-Buff",
+		"spell_cycle": "Zauber-Cycle",
+		"stego_beasts": "Stego Wildtiere",
+		"stew_murlocs": "Stew Murlocs",
+		"stuntdrake_dragons": "Stuntdrake Drachen",
+		"surveyor_quilboar": "Surveyor Stacheleber",
+		"tier_2_ballers": "Stufe-2-Ballers",
+		"ultraviolet_elementals": "Ultraviolet Elementars",
+		"undead_attack": "Attack Untot",
+		"undead_butcher": "Butcher Untot",
+		"undead_end_of_turn": "Ende des Zuges Untot",
+		"undead_forsaken": "Forsaken Untot",
+		"undead_overflow": "Overflow Untot",
+		"volumizer_mechs": "Volumizer Mechs",
+		"whelp_dragon": "Whelp Drachen"
+	},
+	"counters": {
+		"ancestral-automaton": {
+			"player": "Du hast in diesem Spiel {{value}} Mechanoide der Ahnen herbeigerufen"
+		},
+		"animal-companion-aura": {
+			"opponent": "Tiergefährten-Karten rufen Wildtiere herbei, die ({{value}}) kosten",
+			"player": "Tiergefährten-Karten rufen Wildtiere herbei, die ({{value}}) kosten"
+		},
+		"bashana": {
+			"player": "Es sind noch Naturzauber im Wert von {{value}} Mana übrig, die aus Bashanas Treants gewirkt werden können"
+		},
+		"beasts-summoned": {
+			"player": "{{value}} Wildtiere in diesem Spiel herbeigerufen"
+		},
+		"bgs-fodder-refresh": {
+			"player": "Zeigt, wie viele Kanonenfutter-Token in deinen nächsten 3 Erneuerungen erscheinen"
+		},
+		"cards-discarded": {
+			"opponent": "Dein Gegner hat in diesem Spiel {{value}} Karten abgeworfen",
+			"player": "Du hast in diesem Spiel {{value}} Karten abgeworfen"
+		},
+		"cards-played-from-another-class": {
+			"opponent": "Dein Gegner hat {{value}} Karten einer anderen Klasse gespielt"
+		},
+		"damage-taken-this-turn": {
+			"opponent": "Der Held deines Gegners hat in diesem Zug {{value}} Schaden genommen",
+			"player": "Dein Held hat in diesem Zug {{value}} Schaden genommen"
+		},
+		"damage-to-opponent-this-turn": {
+			"opponent": "{{value}} Schaden in diesem Zug an deinem Helden",
+			"player": "{{value}} Schaden in diesem Zug am gegnerischen Helden"
+		},
+		"deathwing-cost-reduction": {
+			"opponent": "Die Kosten der Todesschwinge-Karten deines Gegners sind um {{value}} reduziert",
+			"player": "Die Kosten deiner Todesschwinge-Karten sind um {{value}} reduziert"
+		},
+		"fatigue": {
+			"next": {
+				"opponent": "Der nächste Zug des Gegners verursacht {{value}} Erschöpfungsschaden",
+				"player": "Dein nächster Zug verursacht {{value}} Erschöpfungsschaden"
+			}
+		},
+		"fel-spells": {
+			"opponent": "Dein Gegner hat in diesem Spiel {{value}} Dämonisch-Zauber gespielt",
+			"player": "Du hast in diesem Spiel {{value}} Dämonisch-Zauber gespielt"
+		},
+		"flesh-giant": {
+			"opponent": "Die Gesundheit des gegnerischen Helden hat sich während seiner Züge {{times}} Mal geändert",
+			"player": "Die Gesundheit deines Helden hat sich während deiner Züge {{times}} Mal geändert"
+		},
+		"freebird": {
+			"opponent": "Dein Gegner hat in diesem Spiel {{value}} Freebirds gespielt",
+			"player": "Du hast in diesem Spiel {{value}} Freebirds gespielt"
+		},
+		"friendly-attacks": {
+			"opponent": "Die Seite deines Gegners hat in diesem Spiel {{value}} Mal angegriffen",
+			"player": "Deine Seite hat in diesem Spiel {{value}} Mal angegriffen"
+		},
+		"friendly-dead-minions-this-turn": {
+			"opponent": "{{value}} gegnerische Diener sind in diesem Zug gestorben",
+			"player": "{{value}} befreundete Diener sind in diesem Zug gestorben"
+		},
+		"frost-spells": {
+			"opponent": "Dein Gegner hat in diesem Spiel {{value}} Frostzauber gewirkt",
+			"player": "Du hast in diesem Spiel {{value}} Frostzauber gewirkt"
+		},
+		"godfrey-the-betrayer": {
+			"opponent": "Dein Gegner hat in diesem Spiel die folgenden Karten verbrannt, und {{value}} warten noch darauf, auf seine Hand zurückzukehren",
+			"player": "Du hast in diesem Spiel die folgenden Karten verbrannt, und {{value}} warten noch darauf, auf deine Hand zurückzukehren",
+			"title": "Godfrey der Verräter"
+		},
+		"grouped": {
+			"player": "Spieler"
+		},
+		"herald": {
+			"opponent": "Dein Gegner hat in diesem Spiel {{value}} Mal heroldet",
+			"player": "Du hast in diesem Spiel {{value}} Mal heroldet"
+		},
+		"hero-damage-instances-this-turn": {
+			"opponent": "Dein Held hat in diesem Zug {{value}} Mal Schaden genommen",
+			"player": "Der gegnerische Held hat in diesem Zug {{value}} Mal Schaden genommen"
+		},
+		"jade-guardians": {
+			"opponent": "Dein Gegner hat in diesem Spiel {{value}} 2-Kosten-Karten gespielt",
+			"player": "Du hast in diesem Spiel {{value}} 2-Kosten-Karten gespielt"
+		},
+		"kaelthas-spell-cycle": {
+			"player": "Zauber in diesem Zug: {{spellCount}}. Cycle-Position: {{value}}"
+		},
+		"leyline-spell-cost-discount": {
+			"opponent": "Die Leylinien-Karten deines Gegners kosten {{value}} weniger",
+			"player": "Deine Leylinien-Karten kosten {{value}} weniger"
+		},
+		"leyline-spell-effect-strength": {
+			"opponent": "Die Effekte der Leylinien-Karten deines Gegners sind um {{value}} erhöht",
+			"player": "Die Effekte deiner Leylinien-Karten sind um {{value}} erhöht"
+		},
+		"leyline-spell-triggers": {
+			"opponent": "Die Leylinien deines Gegners lösen {{value}} zusätzliche Male aus",
+			"player": "Deine Leylinien lösen {{value}} zusätzliche Male aus"
+		},
+		"mrrglton-played": {
+			"player": "Du hast in diesem Spiel {{value}} Mrrgltons gespielt"
+		},
+		"non-class-cards-added-to-hand": {
+			"opponent": "{{value}} klassenfremde (nicht-Schurke) Karten wurden in diesem Spiel auf die Hand deines Gegners gelegt",
+			"player": "{{value}} klassenfremde (nicht-Schurke) Karten wurden in diesem Spiel auf deine Hand gelegt"
+		},
+		"overload-cards-played": {
+			"opponent": "Dein Gegner hat in diesem Spiel {{value}} Überladung-Karten gespielt",
+			"player": "Du hast in diesem Spiel {{value}} Überladung-Karten gespielt"
+		},
+		"secrets-triggered": {
+			"player": "{{value}} deiner Geheimnisse haben in diesem Spiel ausgelöst"
+		},
+		"shirvallah": {
+			"player": "Du hast in diesem Spiel {{value}} Mana für Zauber ausgegeben. Shirvallah kostet jetzt {{cost}}"
+		},
+		"silver-hand-recruit-aura": {
+			"opponent": "Rekruten der Silbernen Hand haben +{{atk}}/+{{health}}",
+			"player": "Rekruten der Silbernen Hand haben +{{atk}}/+{{health}}"
+		},
+		"specific-cost-reduction": {
+			"opponent": "Die Kosten von {{cardName}} deines Gegners sind um {{value}} reduziert",
+			"player": "Die Kosten von {{cardName}} sind um {{value}} reduziert"
+		},
+		"spellweavers-brilliance": {
+			"opponent": "Dein Gegner hat in diesem Zug {{value}} Schaden mit Zaubern verursacht",
+			"player": "Du hast in diesem Zug {{value}} Schaden mit Zaubern verursacht"
+		},
+		"talya-earthstrider-global-aura": {
+			"opponent": "Die Tiergefährten-Karten deines Gegners rufen {{value}} weitere Gefährten herbei",
+			"player": "Deine Tiergefährten-Karten rufen {{value}} weitere Gefährten herbei"
+		},
+		"tasty-lobster-buff": {
+			"player": "Deine Leckeren Hummer geben +{{atk}}/+{{health}}, wenn sie sterben"
+		},
+		"totems-summoned": {
+			"player": "{{value}} Totems in diesem Spiel herbeigerufen"
+		},
+		"weapons-equipped": {
+			"player": "{{value}} Waffen in diesem Spiel ausgerüstet"
+		},
+		"windrunner-sisters": {
+			"opponent": "Dein Gegner hat in diesem Spiel diese Windläufer-Schwestern gespielt",
+			"player": "Du hast in diesem Spiel diese Windläufer-Schwestern gespielt",
+			"title": "Windläufer-Schwestern"
+		}
+	},
+	"decktracker": {
+		"burns-in": "Verbrennt in {{value}}",
+		"card-mulliganed-away": "Weggemulligant",
+		"drawn-by": "Gezogen durch {{value}}",
+		"dredged-by": "Geborgen durch {{value}}",
+		"gift-created-by-multiple-cards": "Erstellt von <br/> mehreren Quellen",
+		"gift-created-by-single-card": "Erstellt von <br/> {{value}}",
+		"guessed-info": {
+			"card-type": "Kartentyp",
+			"cost-modifier": "Kostenmodifikator",
+			"damage": "Verursacht Schaden",
+			"health-buff": "Gesundheitsbonus",
+			"main-attribute": "Hauptattribut",
+			"mechanics": "Mechaniken"
+		},
+		"overlay": {
+			"discover": {
+				"will-be-active-tooltip": "Dieser Karteneffekt ist in diesem Zug aktiv, wenn du sie wählst"
+			},
+			"lobby": {
+				"deck-stats": {
+					"global-stats-subtitle": "Globale Deckliste-Statistiken",
+					"global-stats-tooltip": "Statistiken mit genau dieser Liste – die Statistiken oben gelten für den gesamten Archetyp"
+				},
+				"toggle-button-locked-tooltip": "Premium-Nutzer können den Mulligan-Guide und die Statistiken für das Deck sehen. Klicke, um zu abonnieren und alle Premium-Vorteile freizuschalten!",
+				"toggle-button-tooltip": "Zwischen Listen- und Detailansicht umschalten"
+			},
+			"mulligan": {
+				"deck-mulligan-filter-play-coin-tooltip": {
+					"all": "Zeigt Spiele, in denen du am Zug bist oder die Münze hast. Klicken, um zu ändern.",
+					"coin": "Zeigt nur Spiele, in denen du die Münze hast. Klicken, um zu ändern.",
+					"play": "Zeigt nur Spiele, in denen du am Zug bist. Klicken, um zu ändern."
+				},
+				"deck-mulligan-filter-stats-source-tooltip": "Zeigt {{source}} Behalterate und Mulligan-Einfluss pro Karte. Klicken, um zu ändern.",
+				"deck-mulligan-filter-time-tooltip": "Zeigt Spiele für {{timeFrame}} {{patchDetails}}. Klicken, um zu ändern.",
+				"deck-mulligan-overview-title": "Deck-Mulligan-Übersicht",
+				"dismiss-tooltip": "Mulligan-Guide ausblenden",
+				"locked-premium-info-tooltip": "Werde Premium, um detaillierte Mulligan-Daten für dein Deck zu sehen. Du kannst diese Funktion jeden Tag {{value}} Mal kostenlos nutzen.",
+				"mulligan-impact-tooltip-free-with-source": "Wie stark es deine Gewinnrate beeinflusst, diese Karte auf der Starthand zu behalten. Nutzt {{source}}-Statistiken. Du hast heute noch {{value}} kostenlose Nutzungen.",
+				"mulligan-impact-tooltip-premium-with-source": "Wie stark es deine Gewinnrate beeinflusst, diese Karte auf der Starthand zu behalten. Nutzt {{source}}-Statistiken.",
+				"mulligan-impact-yours-tooltip": "Wie stark es deine Gewinnrate beeinflusst, diese Karte auf der Starthand zu behalten, basierend auf deinen Spielen.",
+				"mulligan-keep-rate-tooltip-with-source": "Wie oft diese Karte auf der Starthand behalten wird. Nutzt {{source}}-Statistiken.",
+				"mulligan-keep-rate-yours-tooltip": "Wie oft du diese Karte auf der Starthand behältst.",
+				"no-mulligan-data-tooltip": "Wir konnten keine Mulligan-Daten für diesen Archetyp finden",
+				"personal-min-games-warning": "Deine Statistiken brauchen {{threshold}} Spiele mit diesem Deck (du hast {{current}}). Dieses Overlay bleibt bis dahin auf Community. Ändere das unter Einstellungen → Decktracker → Mulligan.",
+				"personal-min-games-warning-never": "Deine Statistiken sind für dieses Overlay deaktiviert, daher bleibt es auf Community. Ändere das unter Einstellungen → Decktracker → Mulligan.",
+				"sample-size-both": "{{community}} Community / {{personal}} deine",
+				"sample-size-tooltip": "Die Anzahl der Spiele mit diesem Archetyp (falls verfügbar); sonst wird die genaue Deckliste genutzt",
+				"sample-size-tooltip-both": "Community-Spiele, dann deine eigenen Spiele mit diesem Deck, die Mulligan-Daten pro Karte enthalten",
+				"sample-size-tooltip-personal": "Die Anzahl deiner eigenen Spiele mit diesem Deck, die Mulligan-Daten pro Karte enthalten",
+				"stats-source-short": {
+					"community": "C",
+					"personal": "D"
+				},
+				"stats-source": {
+					"both": "Beide",
+					"community": "Community",
+					"personal": "Deine"
+				}
+			}
+		},
+		"prepared-tooltip": "Diese Karte wurde für {{value}} Mana vorbereitet",
+		"secrets-helper": {
+			"filtered-to-hovered": "Zeigt das anvisierte Geheimnis",
+			"on-board-secret": "Dieses Geheimnis ist im Spiel"
+		},
+		"tourist": "Tourist: {{className}}",
+		"unknown-mechanics-card": "Unbekannte {{mechanics}}-Karte",
+		"unknown-minion": "Unbekannter Diener",
+		"zones": {
+			"current-effects": "Aktuelle Effekte",
+			"void": "Die Leere"
+		}
+	},
+	"duels": {
+		"deck-select": {
+			"build-deck-tooltip": "Baue dein eigenes Deck mit dem Deckbuilder der App",
+			"copy-personal-deck-tooltip": "Das ist dein letzter Durchlauf mit dieser Kombination. Klicken, um den Deckcode in die Zwischenablage zu kopieren",
+			"explore-decks-tooltip": "Entdecke andere Decks, die in Heroischen Duellen 10+ Siege mit derselben Kombination aus Held / Heldenfähigkeit / Signaturschatz erreicht haben"
+		},
+		"hero-info": {
+			"community-value-tooltip": "Community-Wert, mit den Filtern aus der Haupt-App",
+			"footer": "Halte die Umschalttaste gedrückt, wenn du die Heldenkarte verlässt, damit dies nicht verschwindet",
+			"stats-period": "Statistiken seit Patch {{patchNumber}} ({{patchDate}})",
+			"stats-period-time": "Statistiken der letzten {{value}} Tage",
+			"top-decks-header": "High-Win-Decks ({{value}} Decks)",
+			"win-distribution-header": "Siegverteilung ({{value}} Durchläufe)"
+		}
+	},
+	"ftue": {
+		"experience": {
+			"power": {
+				"text": "Zeigt erweiterte Einstellungen und zusätzliche Overlays für Power-User.",
+				"title": "Ich will alle Tools"
+			},
+			"recommended": {
+				"text": "Das volle Standarderlebnis mit den üblichen Overlays und Widgets. Sehr empfohlen, wenn du Premium hast.",
+				"title": "Empfohlen"
+			},
+			"simple": {
+				"text": "Nur die wichtigsten Widgets, mit so wenig Ablenkung auf dem Bildschirm wie möglich.",
+				"title": "Bitte schlicht"
+			},
+			"subtitle": "Du kannst das später ändern oder diese Einführung in den Einstellungen erneut abspielen.",
+			"title": "Wie viel Hilfe möchtest du?"
+		},
+		"finish": {
+			"experience-power": "Ich will alle Tools",
+			"experience-recommended": "Empfohlen",
+			"experience-simple": "Bitte schlicht",
+			"replay-warning": "Dadurch werden Overlay- und Widget-Einstellungen an deine Wahl angepasst. Du kannst deine vorherigen Einstellungen danach unter Einstellungen → App → Admin wiederherstellen.",
+			"text": "Du hast {{experience}} gewählt. Öffne die Einstellungen jederzeit über das Zahnrad. Du kannst diese Einführung unter Einstellungen → App → Admin erneut abspielen.",
+			"title": "Alles bereit"
+		},
+		"overview": {
+			"battlegrounds": {
+				"text": "Von der Heldenwahl über Kampfsimulation und die Dienerliste bis zum Überblick nach dem Spiel.",
+				"title": "Schlachtfeld"
+			},
+			"constructed": {
+				"text": "Ein Live-Decktracker, Mulligan-Hilfe sowie Meta- und eigene Statistiken in diesem Fenster.",
+				"title": "Konstruktion"
+			},
+			"learn-more": "Mehr Details",
+			"more": {
+				"text": "Draft-Hilfe in der Arena, deine Kartensammlung und Aufzeichnungen vergangener Spiele.",
+				"title": "Arena, Sammlung und Verlauf"
+			},
+			"overlays": {
+				"text": "Helfer erscheinen automatisch, wenn ein Spiel startet.",
+				"title": "Overlays im Spiel"
+			},
+			"title": "Was Firestone kann"
+		},
+		"setup-intro": "Diese kurze Einrichtung lässt dich die App vor dem Start an deine Vorlieben anpassen.",
+		"steps": {
+			"achievements": {
+				"text": "Fordere dich das ganze Spiel über. Hier findest du alle Taten, die du vollbracht hast."
+			},
+			"arena": {
+				"text": "Sieh dir deine letzten Arena-Durchläufe und Belohnungen an."
+			},
+			"battlegrounds": {
+				"text": "Unser Helfer im Spiel erscheint, sobald du ein Spiel startest! Wir begleiten dich von der Heldenwahl bis nach dem Match."
+			},
+			"collection": {
+				"text": "Hier findest du alle Karten im Spiel mit detaillierten Infos (du kannst sogar ihre Sounds abspielen)."
+			},
+			"decktracker": {
+				"text": "Verfolge deine Karten im Spiel und deine Deckstatistiken."
+			},
+			"duels": {
+				"text": "Sieh dir globale und eigene Statistiken an sowie eine Auswahl erfolgreicher Decks für Ungewertete und Heroische Duelle."
+			}
+		},
+		"subtitle-2": "Es hat zwei Hauptteile: Overlays im Spiel mit Live-Infos, die dir bei den besten Entscheidungen helfen, und eine Desktop-App mit Statistiken zu all deinen Spielen, deiner Sammlung und mehr."
+	},
+	"global": {
+		"mechanics": {
+			"interactable_object": "Aktivieren"
+		},
+		"set": {
+			"azeroths_most_wanted": "Azeroths Meistgesuchte",
+			"day_of_rebirth": "Tag der Wiedergeburt",
+			"echoes_of_the_infinite": "Echos der Unendlichkeit",
+			"old_core_230": "Alter Kern",
+			"restoration_of_azeroth": "Wiederherstellung Azeroths"
+		}
+	},
+	"mercenaries": {
+		"empty-state": {
+			"subtitle": "Spiele ein paar Söldner-Matches, um zu starten! Und prüfe oben deine Filter :)"
+		},
+		"hero-stats": {
+			"coins-left-header-tooltip": "Münzen, die du insgesamt für diesen Söldner in Reserve hast",
+			"coins-needed-header-tooltip": "Münzen, die du noch brauchst, um diesen Söldner vollständig auszubauen",
+			"coins-to-farm-header-tooltip": "Münzen, die du noch verdienen musst, um diesen Söldner vollständig auszubauen (zählt Münzen, die du schon hast, und Münzen, die du durch das Abschließen aller Aufgaben erhältst)",
+			"global-usage-tooltip": "Wie oft jede Fähigkeit von der Community pro Einsatz genutzt wird",
+			"your-usage-tooltip": "Wie oft jede Fähigkeit von dir pro Einsatz genutzt wird"
+		},
+		"team-widget": {
+			"base-speed-text": "Basisgeschwindigkeit: {{value}}",
+			"create-team-button-label": "{{mercName}}-Team erstellen",
+			"create-team-button-ok-label": "Teamcode in die Zwischenablage kopiert",
+			"speed-buff": "Diese Fähigkeit ist nächsten Zug um {{value}} schneller",
+			"speed-debuff": "Diese Fähigkeit ist nächsten Zug um {{value}} langsamer"
+		}
+	},
+	"new-version": {
+		"view-online": "Online ansehen"
+	},
+	"settings": {
+		"arena": {
+			"general": {
+				"show-current-options": "Aktuelle Optionen anzeigen",
+				"show-current-options-tooltip": "Zeigt die Karten, die dir gerade angeboten werden, im Draft-Tracker, damit du leichter mit ihnen interagieren, verwandte Karten sehen usw. kannst."
+			}
+		},
+		"battlegrounds": {
+			"general": {
+				"show-timewarped-stats-label": "Zeitverschobene Statistiken anzeigen",
+				"show-timewarped-stats-tooltip": "Zeigt die durchschnittliche Platzierung der zeitverschobenen Karten, die dir angeboten werden."
+			},
+			"overlay": {
+				"always-show-tavern-tier-label": "Tavernenstufe immer anzeigen",
+				"always-show-tavern-tier-tooltip": "Zeigt die aktuelle Tavernenstufe jedes Spielers neben dem Porträt in der Schlachtfeld-Rangliste.",
+				"counter-fodder-refresh-label": "Kanonenfutter-Erneuerungen",
+				"counter-fodder-refresh-tooltip": "Zeigt, wie viele Kanonenfutter-Erneuerungen du noch hast",
+				"counter-mrrglton-played-label": "Mrrgltons gespielt",
+				"counter-mrrglton-played-tooltip": "Zeigt, wie oft du ein Mitglied der Mrrglton-Familie gespielt hast",
+				"counter-tasty-lobster-buff-label": "Leckerer-Hummer-Bonus",
+				"counter-tasty-lobster-buff-tooltip": "Zeigt, wie viel Angriff/Gesundheit deine Leckeren Hummer beim Tod geben",
+				"counter-undead-army-label": "Untote Armee",
+				"dark-gift-overlay-label": "Dunkle-Geschenke-Overlay",
+				"dark-gift-overlay-tooltip": "Zeigt die möglichen Diener der Dunklen Entdeckung und Dunklen Geschenke, wenn du die Maus über den Button Dunkle Entdeckung bewegst",
+				"hero-power-extra-info-label": "Heldenfähigkeit Extra-Infos",
+				"hero-power-extra-info-tooltip": "Beim Darüberfahren deiner Heldenfähigkeit werden zusätzliche Live-Details im Kartentooltip angezeigt (z. B. die Dienerarten, die bereits in Cookies Topf sind).",
+				"hide-battle-odds-until-mouseover-label": "Chancen erst beim Darüberfahren",
+				"hide-battle-odds-until-mouseover-tooltip": "Wenn aktiv, bleibt ein kleines Banner für Kampfchancen oben, und das vollständige Sieg-/Patt-/Niederlage-Widget erscheint, wenn du die Maus darüber bewegst",
+				"minions-list-show-all-mechanics-label": "Alle Schlüsselwörter anzeigen",
+				"minions-list-show-all-mechanics-tooltip": "Klappt den Power-Tab aus, um alle unterstützten Schlüsselwörter zu zeigen",
+				"minions-list-show-single-tier-label": "Suche anzeigen",
+				"minions-list-show-timewarped-label": "Zeitverschoben anzeigen",
+				"minions-list-show-timewarped-tooltip": "Wenn Zeitverschoben im Spiel ist, die zeitverschobenen Karten in der Kartenliste anzeigen."
+			}
+		},
+		"decktracker": {
+			"duels": {
+				"show-ooc-deck-select-label": "Schnell-Deck-Widget anzeigen",
+				"show-ooc-deck-select-tooltip": "Zeigt auf dem Deckbau-Bildschirm ein Widget, mit dem du schnell dein letztes Deck mit dieser Kombination aus Held / Heldenfähigkeit / Signaturschatz kopieren kannst, plus ein paar aktuelle High-Win-Decks.",
+				"show-ooc-hero-info-tooltip": "Zeigt Statistiken zu Held / Heldenfähigkeit / Signaturschatz, wenn du im Spiel vor einem Duelle-Durchlauf die Maus über die Optionen bewegst.",
+				"show-ooc-tracker-label": "Tracker in der Lobby anzeigen"
+			},
+			"global": {
+				"hand-sort-by-zone-order": "Hand / Feld nach Zonenreihenfolge",
+				"hand-sort-by-zone-order-tooltip": "Sortiert Hand und Feld (wenn sichtbar) nach Zonenreihenfolge, sodass die Karten in der Reihenfolge erscheinen, in der sie im Spiel liegen",
+				"hide-play-order-on-blocking-ui": "Bei Spiel-UI ausblenden",
+				"hide-play-order-on-blocking-ui-tooltip": "Blendet die Zugreihenfolge-Zahlen aus, wenn das Spielmenü, Entdecken-Optionen oder eine vergrößerte Karte (Hand, Feld oder Verlauf) sichtbar sind",
+				"play-order-title": "Zugreihenfolge",
+				"show-flavor-text-on-hover": "Flavour-Text beim Darüberfahren",
+				"show-flavor-text-on-hover-tooltip": "Beim Darüberfahren einer Karte im Tracker im Spiel wird der Flavour-Text in der Benachrichtigungsecke angezeigt",
+				"show-flavor-text-on-in-game-hover": "Flavour-Text beim Inspizieren",
+				"show-flavor-text-on-in-game-hover-tooltip": "Beim Inspizieren einer Karte in Hearthstone (Hand oder Spielfeld) wird der Flavour-Text in der Benachrichtigungsecke angezeigt",
+				"show-hero-power-in-board-zone": "Heldenfähigkeit im Feldbereich",
+				"show-hero-power-in-board-zone-tooltip": "Zeigt die Heldenfähigkeit des Spielers im Bereich „Feld“. Hilft bei dynamischen Pools und manchen Hervorhebungen.",
+				"show-matchup-winrate": "Matchup-Gewinnrate anzeigen",
+				"show-tooltips-on-hover": "Karten-Tooltips anzeigen",
+				"weapons-play-order": "Waffen-Zugreihenfolge"
+			},
+			"max-resources-widget": {
+				"show-corpses": "Leichen anzeigen",
+				"show-corpses-tooltip": "Zeigt die **aktuelle** Anzahl deiner Leichen"
+			},
+			"mulligan": {
+				"keep-after-mulligan-10": "10 Sekunden behalten",
+				"keep-after-mulligan-5": "5 Sekunden behalten",
+				"keep-after-mulligan-label": "Widget nach dem Mulligan behalten",
+				"keep-after-mulligan-off": "Sofort ausblenden",
+				"keep-after-mulligan-tooltip": "Behält den Mulligan-Guide nach der Bestätigung sichtbar, damit du die gezogenen Karten prüfen kannst. Sofort ausblenden, nach ein paar Sekunden oder bis du ihn schließt.",
+				"keep-after-mulligan-until-dismissed": "Bis zum Schließen",
+				"personal-min-games-always": "Immer (auch bei wenigen Spielen)",
+				"personal-min-games-count": "{{value}} Spiele",
+				"personal-min-games-label": "Deine Mulligan-Statistiken anzeigen nach",
+				"personal-min-games-never": "Nie (deine im Overlay ausblenden)",
+				"personal-min-games-tooltip": "Im Mulligan-Overlay im Spiel erscheinen deine eigene Behalterate und der Einfluss erst, wenn du so viele Spiele mit dem aktuellen Deck hast. Die Lobby-Tabelle zeigt immer die Quelle, die du wählst. Nie: deine Statistiken im Overlay nie zeigen. Immer: sobald du irgendwelche hast.",
+				"sync-past-games-label": "Frühere Spiele synchronisieren",
+				"sync-past-games-tooltip": "Premium: Lade Mulligan-Daten pro Karte für Spiele vor diesem Feature (oder nach einer Neuinstallation) herunter, damit deine Statistiken sie enthalten. Spiele, die du mit laufendem Firestone spielst, werden immer lokal gespeichert. Kostenlose Nutzer erhalten nur diese lokalen Spiele."
+			},
+			"opponent-deck": {
+				"counters": {
+					"ancestral-automaton-label": "Mechanoid der Ahnen",
+					"ancestral-automaton-tooltip": "Zeigt, wie oft dein Gegner einen Mechanoiden der Ahnen herbeigerufen hat",
+					"bashana-label": "Bashana",
+					"bashana-tooltip": "Zeigt, wie viel Mana noch aus Bashanas Treants gewirkt werden kann",
+					"flesh-giant-tooltip": "Zeigt, wie oft sich die Gesundheit des gegnerischen Helden während seiner Züge geändert hat, wenn er als {{classes}} spielt",
+					"herald-tooltip": "Zeigt die aktuelle Herold-Stufe deines Gegners"
+				},
+				"current-effects-label": "Aktuelle Effekte anzeigen",
+				"current-effects-tooltip": "Wenn aktiv, erscheint oben im Tracker ein neuer Abschnitt mit aktuellen Effekten auf den Spieler / das Deck",
+				"current-effects-use-enchantment-name-label": "Verzauberungsname nutzen",
+				"current-effects-use-enchantment-name-tooltip": "Wenn aktiv, wird der Name der Verzauberung statt des Kartennamens verwendet",
+				"sequence-info-label": "Reihenfolge-Infos",
+				"sequence-info-tooltip": "Bei Karten, die mehrere verschiedene Karten auf der gegnerischen Hand erzeugen, einen Hinweis zeigen, damit du sie unterscheiden kannst",
+				"show-dk-runes-label": "TK-Runen anzeigen",
+				"width-title": "Breite"
+			},
+			"your-deck": {
+				"counters": {
+					"animal-companion-aura-label": "Tiergefährten-Boni",
+					"animal-companion-aura-tooltip": "Verfolgt die Boni auf Tiergefährten-Karten",
+					"beasts-summoned-label": "Herbeigerufene Wildtiere",
+					"beasts-summoned-tooltip": "Zeigt, wie viele Wildtiere du in diesem Spiel herbeigerufen hast",
+					"card-dead-tooltip": "Zeigt, wie oft {{cardName}} auf deiner Seite gestorben ist",
+					"card-name-summoned-tooltip": "Zeigt, wie oft du {{cardName}}-Karten herbeigerufen hast",
+					"cards-discarded-label": "Abgeworfene Karten",
+					"cards-discarded-tooltip": "Zeigt, wie viele Karten du in diesem Spiel abgeworfen hast",
+					"damage-taken-this-turn-label": "Schaden in diesem Zug",
+					"damage-taken-this-turn-tooltip": "Zeigt den gesamten Schaden, den dein Held in diesem Zug genommen hat",
+					"damage-to-opponent-this-turn-label": "Schaden am Gegner in diesem Zug",
+					"damage-to-opponent-this-turn-tooltip": "Zeigt den gesamten Schaden, der dem gegnerischen Helden in diesem Zug zugefügt wurde",
+					"deathwing-reduction-label": "Todesschwinge-Kostenreduktion",
+					"deathwing-reduction-tooltip": "Zeigt die gesamte Kostenreduktion deiner Todesschwinge-Karten",
+					"fel-spells-played-label": "Dämonisch-Zauber gespielt",
+					"fel-spells-played-tooltip": "Zeigt, wie viele Dämonisch-Zauber du in diesem Spiel gewirkt hast",
+					"flesh-giant-label": "Fleischriese",
+					"flesh-giant-tooltip": "Wenn du Fleischriese auf der Hand oder im Deck hast, zeigt, wie oft sich die Gesundheit deines Helden während deiner Züge geändert hat",
+					"freebird-label": "Freebird",
+					"freebird-tooltip": "Wenn du einen Freebird auf der Hand oder im Deck hast, zeigt, wie viele Freebirds du in diesem Spiel gespielt hast",
+					"friendly-attacks-label": "Freundliche Angriffe",
+					"friendly-attacks-tooltip": "Zeigt, wie oft deine befreundeten Diener in diesem Spiel angegriffen haben",
+					"friendly-dead-minions-this-turn-label": "Gestorbene befreundete Diener in diesem Zug",
+					"friendly-dead-minions-this-turn-tooltip": "Zeigt, wie viele befreundete Diener in diesem Zug gestorben sind",
+					"frost-spells-label": "Frostzauber",
+					"frost-spells-tooltip": "Zeigt, wie viele Frostzauber du in diesem Spiel gewirkt hast",
+					"godfrey-the-betrayer-label": "Godfrey der Verräter",
+					"godfrey-the-betrayer-tooltip": "Zeigt alle Karten, die du verbrannt hast, und welche noch auf deine Hand warten",
+					"herald-label": "Herold",
+					"herald-tooltip": "Zeigt deine aktuelle Herold-Stufe",
+					"hero-damage-instances-this-turn-label": "Schadensinstanzen am gegnerischen Helden",
+					"hero-damage-instances-this-turn-tooltip": "Zeigt, wie oft der gegnerische Held in diesem Zug Schaden genommen hat",
+					"jade-guardians-tooltip": "Zeigt, wie oft du in diesem Spiel eine 2-Kosten-Karte gespielt hast",
+					"kaelthas-spell-cycle-label": "Kael'thas-Zauberzyklus",
+					"kaelthas-spell-cycle-tooltip": "Zeigt deine Position im 3-Zauber-Zyklus in diesem Zug (jeder dritte Zauber kostet (0)), wenn {{cardName}} in deinem Deck ist",
+					"leyline-spell-cost-discount-label": "Leylinien-Kostenrabatt",
+					"leyline-spell-cost-discount-tooltip": "Zeigt die Leylinien-Kostenreduktion",
+					"leyline-spell-effect-strength-label": "Leylinien-Stärke",
+					"leyline-spell-effect-strength-tooltip": "Zeigt die Stärke der Leylinien-Zaubereffekte",
+					"leyline-spell-triggers-label": "Leylinien-Auslösungen",
+					"leyline-spell-triggers-tooltip": "Zeigt, wie oft Leylinien-Effekte ausgelöst haben",
+					"non-class-cards-added-to-hand-label": "Klassenfremde (nicht-Schurke) Karten auf die Hand",
+					"non-class-cards-added-to-hand-tooltip": "Zeigt, wie viele klassenfremde (nicht-Schurke) Karten in diesem Spiel auf deine Hand gelegt wurden",
+					"overload-cards-played-label": "Überladung-Karten gespielt",
+					"overload-cards-played-tooltip": "Zeigt, wie viele Überladung-Karten du in diesem Spiel gespielt hast",
+					"secrets-triggered-label": "Ausgelöste Geheimnisse",
+					"secrets-triggered-tooltip": "Zeigt, wie viele befreundete Geheimnisse in diesem Spiel ausgelöst haben",
+					"shirvallah-label": "Shirvallah, der Tiger",
+					"shirvallah-tooltip": "Wenn du Shirvallah, den Tiger, auf der Hand oder im Deck hast, zeigt, wie viel Mana du für Zauber ausgegeben hast und die aktuellen Kosten von Shirvallah",
+					"silver-hand-recruit-aura-label": "Rekruten-der-Silbernen-Hand-Boni",
+					"silver-hand-recruit-aura-tooltip": "Verfolgt die Boni auf Rekruten der Silbernen Hand",
+					"spellweavers-brilliance-label": "Glanz der Zauberweberin",
+					"spellweavers-brilliance-tooltip": "Zeigt den gesamten Schaden, den du in diesem Zug mit Zaubern verursacht hast",
+					"talya-earthstrider-global-aura-label": "Talya Erdenwanderin",
+					"talya-earthstrider-global-aura-tooltip": "Verfolgt den globalen Effekt von Talya Erdenwanderin",
+					"totems-summoned-label": "Herbeigerufene Totems",
+					"totems-summoned-tooltip": "Zeigt, wie viele Totems du in diesem Spiel herbeigerufen hast",
+					"undead-died-since-last-turn-label": "Untote seit dem letzten Zug gestorben",
+					"weapons-equipped-label": "Ausgerüstete Waffen",
+					"weapons-equipped-tooltip": "Zeigt, wie viele Waffen du in diesem Spiel ausgerüstet hast",
+					"windrunner-sisters-label": "Windläufer-Schwestern",
+					"windrunner-sisters-tooltip": "Zeigt, welche der Windläufer-Schwestern du in diesem Spiel gespielt hast"
+				},
+				"discovery-zone-tooltip": "Wenn aktiv, erscheint im Tracker ein neuer Abschnitt mit den Entdecken-Optionen, die dir angeboten werden. So siehst du verwandte Karten und Synergien mit deinem Deck.",
+				"special-zones-label": "Spezialzonen",
+				"special-zones-tooltip": "Wenn aktiv, erscheint im Tracker ein neuer Abschnitt für Karten, die von Godfrey dem Verräter oder Irida Sündensucherin verwaltet werden"
+			}
+		},
+		"general": {
+			"account": {
+				"intro": "Verknüpfe ein Battle.net-Konto mit deiner bestehenden Overwolf-Firestone-Anmeldung, damit du dich mit Battle.net anmelden und denselben Spielverlauf behalten kannst.",
+				"intro-battlenet": "Du bist mit Battle.net angemeldet. Verknüpfe ein bestehendes Overwolf-Konto, um diesen Spielverlauf in diese Anmeldung zu holen.",
+				"intro-battlenet-linked": "Diese Battle.net-Anmeldung ist mit deinem Overwolf-Firestone-Konto verknüpft. Trenne die Verknüpfung, um jede Anmeldung getrennt zu nutzen.",
+				"intro-battlenet-linked-overwolf": "Diese Battle.net-Anmeldung ist mit einem Overwolf-Konto verknüpft, damit du diesen Spielverlauf siehst. Trenne Overwolf, um jede Anmeldung getrennt zu nutzen.",
+				"intro-signed-out": "Melde dich an, um deinen Spielverlauf zu synchronisieren. Weitere Anmeldeanbieter kannst du danach verknüpfen.",
+				"link-battlenet-button": "Battle.net verknüpfen",
+				"link-battlenet-label": "Battle.net",
+				"link-battlenet-need-overwolf": "Melde dich zuerst mit Overwolf an und versuche dann erneut, Battle.net zu verknüpfen.",
+				"link-battlenet-tooltip": "Melde dich zuerst mit Overwolf an und verknüpfe dann Battle.net. Danach kannst du dich mit Battle.net anmelden und deine Daten aktualisieren.",
+				"link-overwolf-button": "Overwolf verknüpfen",
+				"link-overwolf-label": "Overwolf",
+				"link-overwolf-need-battlenet": "Melde dich zuerst mit Battle.net an und versuche dann erneut, Overwolf zu verknüpfen.",
+				"link-overwolf-tooltip": "Verknüpfe ein bestehendes Overwolf-Firestone-Konto. Dadurch kannst du deine vorhandenen Daten importieren (Spiele, Packungen usw.).",
+				"log-out-button": "Abmelden",
+				"log-out-label": "Konto",
+				"log-out-tooltip": "Melde dich auf diesem Gerät von deinem Firestone-Konto ab.",
+				"not-signed-in": "Du bist nicht angemeldet.",
+				"perks-history-detail": "Spiele, die keinem Konto zugeordnet sind, werden nach etwa einem Jahr bereinigt.",
+				"perks-history-title": "Dein Spielverlauf bleibt online",
+				"perks-intro": "Die Anmeldung ist kostenlos. Sie macht Firestone einfach besser für dich.",
+				"perks-lottery-detail": "Punkte sammeln sich weiterhin lokal; melde dich an, um sie zu synchronisieren und am Saisonende teilzunehmen.",
+				"perks-lottery-title": "An der Lotterie teilnehmen",
+				"perks-replays-detail": "Ohne Konto werden Replay-Dateien nach 60 Tagen entfernt.",
+				"perks-replays-title": "Aufzeichnungen halten etwa ein Jahr",
+				"perks-sync-detail": "Spielverlauf, Packungsstatistiken und Errungenschaften bleiben bei dir, wenn du neu installierst oder den Rechner wechselst.",
+				"perks-sync-title": "Deine Daten folgen dir",
+				"perks-title": "Warum anmelden?",
+				"provider-battlenet": "Battle.net",
+				"provider-overwolf": "Overwolf",
+				"provider-unknown": "unbekannter Anbieter",
+				"sign-in-button": "Anmelden",
+				"sign-in-label": "Konto",
+				"sign-in-tooltip": "Öffnet die Anmeldeseite, um dich mit Overwolf oder Battle.net anzumelden.",
+				"signed-in-as": "Angemeldet als <b>{{name}}</b> über {{provider}}. Firestone-Benutzername: {{username}}",
+				"signed-in-linked-overwolf-tooltip": "Verknüpftes Overwolf-Konto: {{name}}",
+				"unlink-battlenet-button": "Battle.net trennen",
+				"unlink-battlenet-confirmation": "Sind Sie sicher?",
+				"unlink-battlenet-failed": "Battle.net konnte nicht getrennt werden. Versuche es später erneut.",
+				"unlink-battlenet-label": "Battle.net",
+				"unlink-battlenet-tooltip": "Trennt Battle.net von deinem Overwolf-Firestone-Konto. Jede Anmeldung zeigt dann nur noch den eigenen Spielverlauf.",
+				"unlink-last-login-failed": "Du musst mindestens eine Anmeldemethode an diesem Firestone-Konto behalten.",
+				"unlink-last-login-label": "Konto",
+				"unlink-overwolf-button": "Overwolf trennen",
+				"unlink-overwolf-confirmation": "Sind Sie sicher?",
+				"unlink-overwolf-failed": "Overwolf konnte nicht getrennt werden. Versuche es später erneut.",
+				"unlink-overwolf-label": "Overwolf",
+				"unlink-overwolf-tooltip": "Trennt Overwolf von diesem Battle.net-Firestone-Konto. Jede Anmeldung zeigt dann nur noch den eigenen Spielverlauf."
+			},
+			"addons": {
+				"empty": "Keine Add-ons gefunden. Öffne den Ordner und lege ein Add-on-Paket dort ab.",
+				"installed-title": "Installierte Add-ons",
+				"instructions": "Lege Add-on-Ordner in <b>{{path}}</b> ab und klicke dann auf Aktualisieren. Add-ons laufen in einer Sandbox und erhalten nur die Berechtigungen, die sie angeben.",
+				"open-folder": "Ordner öffnen",
+				"permissions": "Berechtigungen:",
+				"refresh": "Aktualisieren",
+				"title": "Add-ons"
+			},
+			"appearance": {
+				"decktracker": {
+					"use-new-card-tile-style-tooltip": "Den neuen Kartenkachel-Stil nutzen, wenn Karten im Tracker oder in Decklisten angezeigt werden"
+				},
+				"overlay-theme": {
+					"apply-button": "Anwenden",
+					"builtin-hint": "Eigene Farben? Erstelle ein eigenes Theme und wähle jede Farbe selbst.",
+					"color": {
+						"bgs-background-end": "Widget-Hintergrund (Rand)",
+						"bgs-background-start": "Widget-Hintergrund (Mitte)",
+						"color-1": "Primärfarbe (hell)",
+						"color-2": "Sekundärfarbe",
+						"color-3": "Tertiärfarbe",
+						"color-4": "Rahmenfarbe",
+						"color-5": "Hintergrund (hell)",
+						"color-6": "Hintergrund (mittel)",
+						"color-7": "Hintergrund (dunkel)",
+						"color-8": "Akzentfarbe",
+						"color-9": "Hintergrundrand",
+						"common-1": "Neutrale Textfarbe",
+						"common-2": "Hervorhebungsfarbe",
+						"secondary-text": "Sekundäre Textfarbe",
+						"text": "Textfarbe",
+						"title": "Titelfarbe"
+					},
+					"custom": "Eigene",
+					"customize-button": "Eigenes Theme erstellen",
+					"dark": "Dunkel",
+					"deck-tracker": "Nostalgisch",
+					"delete-button": "Löschen",
+					"edit-button": "Bearbeiten",
+					"export-button": "In Datei exportieren",
+					"export-current-button": "In Datei exportieren",
+					"firestone": "Firestone",
+					"firestone-dark": "Firestone Dunkel",
+					"group": {
+						"battlegrounds": "Schlachtfeld-Farben",
+						"general": "Farben"
+					},
+					"import-button": "Aus Datei importieren",
+					"import-error": "Das sieht nicht nach einem gültigen Firestone-Overlay-Theme aus.",
+					"intro": "Wähle das Aussehen der Overlays im Spiel (Decktracker, Zähler, Kampfchancen, Dienerliste...).",
+					"name-placeholder": "Themename",
+					"reset-button": "Farben zurücksetzen",
+					"save-button": "Als neues Theme speichern",
+					"saved-themes": "Deine gespeicherten Themes",
+					"selector-label": "Theme",
+					"title": "Overlay-Theme"
+				}
+			},
+			"data": {
+				"import-settings-button-confirmed-label": "Einstellungen importiert"
+			},
+			"discord": {
+				"in-game-details": {
+					"tokens": {
+						"class": "Deine aktuelle Klasse",
+						"deckname": "Der Name deines aktuellen Decks"
+					}
+				}
+			},
+			"launch": {
+				"close-to-tray-label": "In den Infobereich schließen",
+				"close-to-tray-tooltip": "Schließt die App in den Infobereich statt sie zu beenden. Nicht empfohlen, denn das vollständige Schließen ist ein guter Weg, Ressourcen regelmäßig freizugeben.",
+				"launch-on-windows-start-label": "Firestone mit Windows starten",
+				"launch-on-windows-start-tooltip": "Startet Firestone mit Windows und belässt es im Infobereich, damit Overlays bereit sind, wenn Hearthstone startet. Wenn du über den Infobereich vollständig beendest, starte Firestone vor dem Spielen erneut.",
+				"notifications-size": "Benachrichtigungsgröße",
+				"replay-ftue-button-label": "Einführung erneut abspielen",
+				"replay-ftue-button-text": "Start",
+				"replay-ftue-tooltip": "Zeigt die Ersteinrichtung erneut. Die Wahl einer Erfahrungsstufe aktualisiert Overlay-Einstellungen.",
+				"restore-ftue-settings-button-label": "Vorherige Einstellungen wiederherstellen",
+				"restore-ftue-settings-button-text": "Wiederherstellen",
+				"restore-ftue-settings-confirmation": "Die Einstellungen von vor dem letzten Einführungsprofil wiederherstellen?",
+				"restore-ftue-settings-tooltip": "Stellt die Overlay-Einstellungen wieder her, die du hattest, bevor du zuletzt ein Einführungsprofil angewendet hast. Spätere Profiländerungen überschreiben dieses Backup nicht."
+			},
+			"menu": {
+				"account": "Konto",
+				"addons": "Add-ons",
+				"streamer": "Streamer"
+			},
+			"mods": {
+				"auto-update-all": "Alle",
+				"auto-update-label": "Auto-Update",
+				"auto-update-off": "Aus",
+				"auto-update-tooltip": "Aktualisiert Mods automatisch, wenn eine neue Version verfügbar ist. Neue Versionen werden beim Schließen des Spiels installiert.<br><br>Vertrauenswürdige Mods werden von Firestone entwickelt und gepflegt oder unter Aufsicht von Firestone.<br><br>Verifizierte Mods stammen von Dritten, mit regelmäßigen Prüfungen durch Firestone. In dem Fall werden nur von Firestone freigegebene Versionen automatisch aktualisiert.",
+				"auto-update-trusted": "Nur vertrauenswürdige Mods",
+				"auto-update-trusted-verified": "Nur vertrauenswürdige und verifizierte Mods",
+				"engine-migration-done-message": "Die Mod-Engine wurde aktualisiert. Bitte starte Hearthstone neu, damit deine Mods geladen werden.",
+				"engine-migration-done-title": "Mod-Engine aktualisiert",
+				"engine-migration-retry-message": "Die Mod-Engine konnte nicht aktualisiert werden, weil Dateien in Verwendung waren. Firestone versucht es erneut, wenn Hearthstone geschlossen wird.",
+				"engine-migration-retry-title": "Mod-Engine-Update ausstehend",
+				"engine-migration-start-message": "Hearthstone nutzt jetzt einen 64-Bit-Client. Firestone aktualisiert die Mod-Engine entsprechend. Das kann eine Minute dauern.",
+				"engine-migration-start-title": "Mod-Engine wird aktualisiert",
+				"import-already-present": "Dieser Mod ist bereits in deiner Liste.",
+				"import-button": "Importieren",
+				"import-download-failed": "Der Mod konnte nicht heruntergeladen werden. Bitte versuche es später erneut.",
+				"import-fetch-failed": "Dieses GitHub-Repository konnte nicht gelesen werden. Prüfe die URL und versuche es erneut.",
+				"import-in-progress": "Mod wird importiert...",
+				"import-invalid-url": "Bitte füge eine GitHub-Repository-URL ein (https://github.com/owner/repo).",
+				"import-no-dll": "In der neuesten GitHub-Release dieses Repositories wurde keine .dll gefunden.",
+				"import-no-install-path": "Lege zuerst den Installationsort des Spiels fest.",
+				"import-placeholder": "GitHub-Repository-URL",
+				"import-success": "Mod importiert. Er wird gemäß deiner Auto-Update-Einstellung aktualisiert.",
+				"installed-mods-description-2": "Folgende Mods sind installiert (lösche die zugehörige Datei in {{path}}, um sie zu deinstallieren):",
+				"migrating-engine": "Mod-Engine für deine Hearthstone-Version wird aktualisiert...",
+				"need-to-close-game-warning": "Du musst Hearthstone schließen, bevor du Mods installierst / deinstallierst / aktualisierst oder aktivierst / deaktivierst.",
+				"reinstalling-mods": "Mods für die aktualisierte Engine werden neu installiert...",
+				"source-third-party": "Drittanbieter",
+				"source-third-party-tooltip": "Nicht von Firestone geprüft. Auto-Updates nur, wenn du Alle wählst.",
+				"source-trusted": "Vertrauenswürdig",
+				"source-trusted-tooltip": "Entwickelt und gepflegt von Firestone oder unter Aufsicht von Firestone.",
+				"source-verified": "Verifiziert",
+				"source-verified-tooltip": "Von einem Dritten entwickelt, mit regelmäßigen Prüfungen durch Firestone. Nur von Firestone freigegebene Versionen werden automatisch aktualisiert.",
+				"update-available-unreviewed": "Eine neue Version dieses Mods ist verfügbar, wurde aber noch nicht von Firestone geprüft. Klicken, um trotzdem zu aktualisieren."
+			},
+			"premium": {
+				"lottery-sync-label": "Lotteriepunkte",
+				"lottery-sync-tooltip": "Stellt die Lotteriepunkte dieser Saison vom Server wieder her. Nutze das nach einer Neuinstallation von Firestone."
+			},
+			"quests": {
+				"mercenaries-tooltip": "Zeigt die Aufgaben-Widgets auf allen Söldner-Bildschirmen. Das Aktivieren des Aufgaben-Widgets entfernt den Aufgaben-Button aus der Teamliste."
+			},
+			"streamer": {
+				"battlegrounds": {
+					"show-full-anomaly-overlay": "Vollständiges Anomalie-Overlay anzeigen"
+				}
+			},
+			"third-party": {
+				"hearthpwn": {
+					"next": "Wenn du dich für die Synchronisierung mit Hearthpwn entscheidest, sendet Firestone ihnen deine Sammlungsdaten, damit du Statistiken zu deiner Sammlung sehen kannst.",
+					"pitch": "Hearthpwn ist eine der größten Community-Websites mit Decks, Artikeln und mehr. Wenn du deine Kartensammlung mit der Seite synchronisierst, findest du leichter Decks und siehst Statistiken zu deiner Sammlung. Du kannst sie {{websiteLink}} besuchen",
+					"title": "Hearthpwn",
+					"toggle-label": "Sammlung mit Hearthpwn synchronisieren",
+					"toggle-label-collection": "Benachrichtigung anzeigen, wenn die Sammlung synchronisiert ist"
+				}
+			},
+			"widgets": {
+				"card-tooltip-number-of-related-cards": "Anzahl verwandter Karten",
+				"card-tooltip-number-of-related-cards-tooltip": "Die maximale Anzahl verwandter Karten im Kartentooltip. Gibt es mehr Karten, siehst du stattdessen eine allgemeine Meldung mit der Anzahl.",
+				"counters-widgets-size": "Größe der Zähler-Widgets",
+				"counters-widgets-size-tooltip": "Ändert die Größe der Widgets, die beim Darüberfahren mancher Zähler erscheinen, z. B. Rafaams Liste",
+				"help-tooltip-size": "Tooltip-Textgröße",
+				"use-azalina-label": "Aus Azalina ableiten",
+				"use-azalina-tooltip": "Wenn ein Spieler Azalina hat, nutzen wir die Klasse des Gegners, um zu entscheiden, ob manche Zähler angezeigt werden (z. B. wenn du als Priester gegen einen Schurken spielst, können wir den Jadegolemwächter-Zähler zeigen). EXPERIMENTELL"
+			}
+		},
+		"global": {
+			"view-screenshot": "Screenshot ansehen"
+		},
+		"mercenaries": {
+			"general": {
+				"action-queue": "Widgetgröße – Aktionswarteschlange",
+				"map-team-widget-label": "Team-Widget: Karte",
+				"map-team-widget-tooltip": "Zeigt ein Overlay mit all deinen Helden, Fähigkeiten und Ausrüstungen auf der Kopfgeldkarte. Nützlich, um dein Team beim Wegwählen oder Schatzwählen leicht zu prüfen",
+				"opponent-team": "Widgetgröße – Gegnerteam",
+				"opponent-team-widget-label": "Gegnerteam-Widget",
+				"opponent-team-widget-tooltip": "Zeigt ein Overlay mit allen bekannten Helden, Fähigkeiten und Ausrüstungen des Gegners",
+				"player-team-widget-label": "Spielerteam-Widget",
+				"player-team-widget-tooltip": "Zeigt ein Overlay mit all deinen Helden, Fähigkeiten und Ausrüstungen",
+				"role-chart-label": "Rollen-Dreieck anzeigen",
+				"role-chart-tooltip": "Fügt unter dem Team-Widget einen kleinen Button hinzu, über den du das Schadensbonus-Dreieck der Rollen siehst",
+				"synergies-label": "Synergien hervorheben",
+				"synergies-tooltip": "Wenn du die Maus über eine Fähigkeit oder Ausrüstung (im Team-Widget) oder einen Schatz (bei der Schatzwahl) bewegst, werden alle Karten im Team-Widget hervorgehoben, die dazu Synergien haben",
+				"tasks-label": "Aufgaben-Button anzeigen",
+				"village-team-widget-label": "Team-Widget: Dorf",
+				"village-team-widget-tooltip": "Zeigt ein Overlay mit all deinen Helden, Fähigkeiten und Ausrüstungen auf den Sammlungs- und Teamauswahl-Bildschirmen"
+			},
+			"quests": {
+				"empty-team": "Du hast noch kein Ersatzteam gebaut. ",
+				"explanation": "Wähle bis zu 6 Söldner, die automatisch die freien Plätze füllen, wenn ein Aufgaben-Team gebaut wird (von links nach rechts)."
+			}
+		},
+		"replay": {
+			"in-game-sharing": {
+				"description": "Du kannst deine Aufzeichnungen mit jedem teilen, der Firestone installiert und den Replay-Viewer-Mod aktiviert hat. Um eine Aufzeichnung zu teilen, klicke einfach auf den Link-kopieren-Button im Tab Aufzeichnungen."
+			},
+			"in-game": {
+				"description": "In-Game-Replays lassen dich deine Spiele ansehen, als wärst du im Zuschauermodus – mit allen Grafiken, Animationen und Soundeffekten des Spiels.",
+				"how-to-activate": "Um In-Game-Replays zu aktivieren, installiere und aktiviere den Hearthstone Replay-Viewer-Mod unter Mods in den Einstellungen. Danach siehst du im Tab Aufzeichnungen einen neuen Button, mit dem du deine Aufzeichnungen im Spiel ansehen kannst.",
+				"limitations": "Du musst eine Aufzeichnung innerhalb von 30 Tagen nach ihrer Erstellung im Spiel ansehen, sonst wird sie vom Server gelöscht. Ältere Aufzeichnungen bleiben im Browser-Viewer verfügbar, aber nicht im Spiel. Weitere Einschränkung: Spiele mit Rewind-Effekten werden noch nicht unterstützt."
+			},
+			"menu": {
+				"in-game": "Im Spiel",
+				"in-game-sharing": "Teilen"
+			}
+		}
+	},
+	"turn-timer": {
+		"player-total-turn-tooltip": "Gesamtzeit in diesem Spiel."
+	},
+	"twitch": {
+		"battle-simulator-size": "Kampfsimulator-Größe",
+		"card-scale": "Kartengröße",
+		"card-scale-tooltip": "Die Größe der Karten ändern, die als Tooltips erscheinen",
+		"cards-in-deck-opponent-tooltip": "Es sind {{cardsInDeck}} Karten im Deck deines Gegners und {{cardsInHand}} auf seiner Hand",
+		"cards-in-deck-player-tooltip": "Es sind {{cardsInDeck}} Karten in deinem Deck und {{cardsInHand}} auf deiner Hand",
+		"constructed-section-title": "Konstruktion",
+		"could-not-log-error-title": "Wir konnten dich nicht bei deinem Twitch-Konto anmelden",
+		"hide-battle-odds-in-combat": "Chancen im Kampf ausblenden",
+		"hide-battle-odds-in-combat-tooltip": "Kampfchancen während des Kampfes nicht anzeigen",
+		"hide-battle-odds-in-tavern": "Chancen im Gasthaus ausblenden",
+		"hide-battle-odds-in-tavern-tooltip": "Kampfchancen während der Gasthausphase nicht anzeigen",
+		"hide-battle-odds-when-empty": "Chancen ausblenden, wenn leer",
+		"hide-battle-odds-when-empty-tooltip": "Das Kampfchancen-Widget komplett ausblenden, wenn keine Chancen verfügbar sind, statt leere Infos zu zeigen",
+		"last-board-size": "Größe des letzten Bretts",
+		"last-board-size-tooltip": "Die Größe der Gegnerübersicht ändern, die erscheint, wenn du die Maus über das Heldenporträt in der Rangliste bewegst.",
+		"move-magnifier-icon-on-top": "Gegner-Icon oben",
+		"move-magnifier-icon-on-top-tooltip": "Das Gegnerübersichts-Icon nach oben in der Rangliste verschieben",
+		"reconnect-for-chat-text": "Bitte gehe in die Einstellungen und verbinde dein Twitch-Konto erneut, damit Zuschauer !deck im Chat nutzen können",
+		"reconnect-for-chat-title": "Twitch neu verbinden, um !deck zu aktivieren",
+		"scale": "Skalierung",
+		"show-battle-simulator": "Kampfchancen anzeigen",
+		"show-hero-cards-help": "Heldenkarten anzeigen",
+		"show-hero-cards-help-tooltip": "Die Heldenfähigkeit anzeigen, wenn du die Maus über ein Heldenporträt in der Rangliste bewegst",
+		"show-minions-list": "Dienerliste anzeigen",
+		"show-minions-list-golden-cards-tooltip": "Zeigt die goldene Version jedes Dieners, wenn du die Maus über das Bild in der Liste bewegst",
+		"show-minions-list-tooltip": "Zeigt ein Widget mit allen Dienern im Spiel. Beim Darüberfahren siehst du die volle Karte sowie die goldene Version",
+		"show-opponent-tracker": "Gegner-Tracker anzeigen",
+		"show-related-cards-help": "Verwandte Karten anzeigen",
+		"show-related-cards-help-tooltip": "Wenn du die Maus über eine Karte bewegst, auch die dazugehörigen Karten anzeigen (typischerweise Karten, die sie erzeugt).",
+		"show-tracker": "Decktracker anzeigen"
+	},
+	"website": {
+		"arena": {
+			"description": "Helden- und Kartenstatistiken sowie erfolgreiche vergangene Decks und mehr ansehen – KOSTENLOS."
+		},
+		"auth": {
+			"callback": {
+				"failed": "⚠️ Anmeldung fehlgeschlagen",
+				"fallback-link": "hier klicken, um Firestone zu öffnen",
+				"fallback-prefix": "Wenn nichts passiert, ",
+				"fallback-suffix": ".",
+				"hint": "Dein Browser fragt möglicherweise, ob die Firestone-App geöffnet werden soll — wähle Zulassen oder Öffnen.",
+				"link-returning": "Du wirst zur Firestone-App zurückgeleitet. Du kannst dich jetzt mit Battle.net anmelden.",
+				"link-returning-overwolf": "Du wirst zur Firestone-App zurückgeleitet. Dein Overwolf-Spielverlauf ist jetzt unter dieser Battle.net-Anmeldung verfügbar.",
+				"link-success": "Battle.net verknüpft!",
+				"link-success-overwolf": "Overwolf verknüpft!",
+				"overwolf-hint": "Wenn statt Firestone Standalone Overwolf öffnet, <a href=\"/faq#login-opens-overwolf\">ändere die Standard-App in Windows</a> für firestoneapp://-Links.",
+				"please-wait": "Bitte warten, während wir dein Konto prüfen",
+				"returning": "Du wirst zur Firestone-App zurückgeleitet…",
+				"signing-in": "Du wirst angemeldet...",
+				"success": "Erfolg!",
+				"try-again": "Erneut versuchen"
+			},
+			"coming-soon": "Demnächst",
+			"continue-with-battlenet": "Weiter mit Battle.net",
+			"continue-with-google": "Weiter mit Google",
+			"continue-with-overwolf": "Weiter mit Overwolf",
+			"errors": {
+				"battlenet-not-configured": "Die Battle.net-Anmeldung ist noch nicht verfügbar. Bitte versuche es später erneut.",
+				"cancelled": "Die Authentifizierung wurde abgebrochen oder abgelehnt.",
+				"failed": "Die Anmeldung konnte nicht abgeschlossen werden. Bitte versuche es erneut.",
+				"generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+				"invalid-response": "Ungültige Authentifizierungsantwort.",
+				"invalid-state": "Ungültiger State-Parameter. Bitte versuche die Anmeldung erneut.",
+				"missing-link-token": "Dieser Link ist abgelaufen. Öffne Battle.net verknüpfen in der Firestone-App, während du mit Overwolf angemeldet bist.",
+				"missing-link-token-overwolf": "Dieser Link ist abgelaufen. Öffne Overwolf verknüpfen in der Firestone-App, während du mit Battle.net angemeldet bist.",
+				"missing-verifier": "PKCE-Code-Verifier fehlt. Bitte versuche die Anmeldung erneut.",
+				"no-code": "Kein Autorisierungscode empfangen."
+			},
+			"link-subtitle": "Battle.net mit deinem Firestone-Konto verknüpfen",
+			"link-subtitle-overwolf": "Overwolf mit deinem Firestone-Konto verknüpfen",
+			"linking": "Du wirst zu Battle.net weitergeleitet…",
+			"linking-overwolf": "Du wirst zu Overwolf weitergeleitet…",
+			"privacy-link": "Datenschutzrichtlinie",
+			"privacy-prefix": "Mit der Anmeldung stimmst du unserer ",
+			"subtitle": "Melde dich an, um deine Daten geräteübergreifend zu synchronisieren"
+		},
+		"constructed": {
+			"description": "Klassen-, Karten- und Deckstatistiken für jeden Rangbereich ansehen – KOSTENLOS.",
+			"meta": "Meta"
+		},
+		"docs": {
+			"back-label": "Alle Docs",
+			"images": {
+				"creator-code-checkout": "Tebex-Checkout-Seite mit dem Creator-Code-Feld",
+				"creator-code-field": "Creator-Code-Feld auf der Tebex-Checkout-Seite",
+				"setup-settings": "Firestone-Einstellungssuche",
+				"twitch-battlegrounds-window": "Einstellung, um das Schlachtfeld-Fenster im Stream aufzunehmen",
+				"twitch-connected": "Firestone-Twitch-Einstellungen nach dem Verbinden eines Kontos",
+				"twitch-main-window": "Einstellung, um das Firestone-Hauptfenster im Stream aufzunehmen",
+				"twitch-settings": "Firestone-Twitch-Einstellungen im abgemeldeten Zustand"
+			},
+			"nav-label": "Docs",
+			"page-subtitle": "Anleitungen zu Firestone-Einrichtung, Streaming, Mods und öffentlichen APIs.",
+			"page-title": "Docs",
+			"pages": {
+				"creator-code": {
+					"blurb": "Unterstütze einen Creator und erhalte einen Rabatt, wenn du Premium abonnierst.",
+					"intro": "<p>Der Ablauf ist sehr einfach: Gib auf der Checkout-Seite einfach den Code, den sie mit dir geteilt haben, in das unten gezeigte Feld ein:</p>",
+					"sections": {
+						"notes": {
+							"body": "<ul><li>Der Code gilt nur für den ersten Zeitraum, den du abonnierst. Ich bin mit Tebex im Gespräch, damit dieser Code automatisch jedes Mal erneut angewendet wird, aber bis dahin ist der beste Weg, deinen Creator monatlich zu unterstützen: mit dem Code abonnieren, dann das Abo kündigen und den Code manuell erneut eingeben, sobald dein aktuelles Abo endet.</li><li>Der Code gilt für alle Pläne (monatlich / jährlich)</li><li>Bei Problemen bitte @sebastientromp <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">auf Discord</a> anpingen</li></ul>",
+							"title": "Hinweise"
+						}
+					},
+					"subtitle": "Wenn du Firestone Premium auf Tebex abonnierst, möchtest du vielleicht einen Creator Code eingeben, um deinen Lieblingscreator zu unterstützen und einen Rabatt zu bekommen.",
+					"title": "So nutzt du einen Creator Code"
+				},
+				"developer-resources": {
+					"blurb": "Öffentliche Statistik-APIs für Schlachtfeld, Duelle und Kartendaten.",
+					"intro": "<p>Du kannst diese APIs direkt nutzen, um interessante Statistiken, Infografiken oder einfach zum Spaß zu bauen. Wenn du etwas veröffentlichst, nenne bitte Firestone als Datenquelle.</p><p>Wenn du Daten für eine öffentliche App nutzen willst, kontaktiere mich bitte auf <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a></p>",
+					"sections": {
+						"api-links": {
+							"body": "<p>Ein paar Platzhalter, die an verschiedenen Stellen in den APIs genutzt werden:</p><ul><li><code>%timeSuffix%</code> kann durch <code>all-time</code>, <code>past-three</code>, <code>past-seven</code> oder <code>last-patch</code> ersetzt werden, um Daten für unterschiedliche Zeiträume zu erhalten</li><li><code>%tribeSuffix%</code> ist entweder <code>all-tribes</code> (empfohlen) oder eine Kombination aus fünf Völkern, getrennt durch einen Bindestrich (<code>-</code>), mit der Volks-ID wie in <a href=\"https://github.com/Zero-to-Heroes/hs-reference-data/blob/master/src/enums/race.ts\" target=\"_blank\" rel=\"noopener noreferrer\">race.ts</a> definiert (die Stichprobe ist meist zu klein)</li></ul>",
+							"title": "API-Links"
+						},
+						"battlegrounds": {
+							"body": "<ul><li>Heldenstatistiken: <code>https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-%tribeSuffix%-%timeSuffix%.gz.json</code><ul><li>z. B. <a href=\"https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-all-tribes-last-patch.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">bgs-global-stats-all-tribes-last-patch.gz.json</a></li><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li><li>Perfekte Spiele: <a href=\"https://static.zerotoheroes.com/api/bgs-perfect-games.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/bgs-perfect-games.json</code></a><ul><li><a href=\"https://github.com/Zero-to-Heroes/trigger-publish-bgs-perfect-game\" target=\"_blank\" rel=\"noopener noreferrer\">trigger-publish-bgs-perfect-game</a></li></ul></li><li>Queststatistiken: <code>https://static.zerotoheroes.com/api/bgs/quests/bgs-global-stats-%timeSuffix%.gz.json</code><ul><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li></ul>",
+							"title": "Schlachtfeld"
+						},
+						"duels": {
+							"body": "<ul><li>Held / Heldenfähigkeit / Signaturschatz: <code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-%mmr%-%date%.gz.json</code></li><li>High-Win-Decks: <a href=\"https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json</code></a></li><li>Buckets: <a href=\"https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json</code></a></li></ul>",
+							"title": "Duelle"
+						},
+						"general": {
+							"body": "<ul><li>Alle Karten: <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</code></a><ul><li>Andere Sprachen erreichst du, indem du <code>enUS</code> durch einen von HS unterstützten Sprachcode ersetzt</li></ul></li></ul>",
+							"title": "Allgemein"
+						}
+					},
+					"subtitle": "Öffentliche Firestone-APIs für Statistiken, Infografiken oder einfach zum Spaß.",
+					"title": "Ressourcen für Entwickler"
+				},
+				"lottery": {
+					"blurb": "Sammle Punkte beim Spielen und gewinne Premium.",
+					"intro": "<p>Die Firestone-Lotterie gibt dir die Chance, ein 2-Monats-Abo von Firestone Premium zu gewinnen.</p><p>Du nimmst teil, indem das Lotteriefenster offen und sichtbar ist, während du spielst (es funktioniert auch, wenn du Errungenschaften verfolgst).</p><p>Jede Saison (derzeit zwei Wochen) kannst du Punkte durch bestimmte Aktionen im Spiel verdienen, die im Lotteriefenster sichtbar sind. Jede Aktion gibt Punkte, die sich über die Saison nach jedem Spiel ansammeln. Am Saisonende werden zwei Gewinner zufällig aus allen Teilnehmenden gezogen, gewichtet nach den gesammelten Punkten. Je mehr Punkte du hast, desto höher sind deine Gewinnchancen.</p>",
+					"subtitle": "Gewinne ein 2-Monats-Abo von Firestone Premium.",
+					"title": "Firestone-Lotterie"
+				},
+				"mods": {
+					"blurb": "Installiere und entwickle Hearthstone-Mods über Firestone.",
+					"intro": "<p><strong>ACHTUNG:</strong> Das Modden von Hearthstone verstößt gegen die Nutzungsbedingungen des Spiels und könnte zu einem Bann führen. Nutze das auf eigenes Risiko.</p><p><strong>ACHTUNG:</strong> Der Firestone Mod Manager ist vorerst nur in der Beta-Version der App verfügbar. Siehe <a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/beta-test.md\" target=\"_blank\" rel=\"noopener noreferrer\">beta-test.md</a></p>",
+					"sections": {
+						"developing": {
+							"body": "<p>Firestone liefert eine integrierte Version von <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>. Das ist ein ziemlich einfacher Weg, Mods zu installieren, um dem Spiel Funktionen hinzuzufügen. Du kannst BepInEx auch selbst installieren.</p><p>Siehe die BepInEx-Dokumentation zum Entwickeln von BepInEx-Plugins oder schau dir bestehende Mods an. Oder ping mich auf <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a></p><p>Hearthstone- und Firestone-spezifische Fähigkeiten (z. B. den Deckzustand beider Spieler zu kennen) werden später für deine Mods verfügbar sein. Theoretisch könntest du also einen voll integrierten Tracker bauen :)</p>",
+							"title": "Mods entwickeln"
+						},
+						"installing": {
+							"body": "<p>Zuerst musst du die Mod-Unterstützung in Firestone unter Einstellungen &gt; Allgemein &gt; Mods aktivieren (das Spiel muss dafür geschlossen sein).</p><p>Du solltest den jeweiligen Anleitungen der Mods folgen, aber im Kern gilt:</p><ul><li>Kopiere die Hauptdatei des Mods in den Ordner <code>Hearthstone/BepInEx/plugins</code></li><li>Kopiere die Abhängigkeiten des Mods in denselben Ordner <code>Hearthstone/BepInEx/plugins</code></li></ul><p>Starte danach das Spiel neu. Der Mod wird in Firestone erkannt, sobald du das Spiel einmal mit dem neuen Mod gestartet hast.</p>",
+							"title": "Mods installieren"
+						},
+						"known-mods": {
+							"body": "<p><strong>ACHTUNG:</strong> Diese Mods werden von der Community erstellt und gepflegt, daher kann ich keinen Support anbieten. Bitte öffne Github-Issues in den jeweiligen Repositories der Mods. Und wie oben erwähnt verstößt das Modden von HS gegen die AGB, ich unterstütze das also nicht. Ich habe sie aber persönlich geprüft und denke, dass das, was sie tun, „sicher“ ist und keinen Bann riskieren sollte (siehe aber die Warnung oben auf der Seite).</p><ul><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-auto-squelch\" target=\"_blank\" rel=\"noopener noreferrer\">AutoSquelch</a>. Nie wieder Emotes des Gegners sehen.</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-golden-buddy-tooltip\" target=\"_blank\" rel=\"noopener noreferrer\">Golden Buddy Tooltip</a>. Sieh die goldene Version deines Partners, wenn du die Maus über den Partner-Button bewegst</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-show-collection-exact-count\" target=\"_blank\" rel=\"noopener noreferrer\">Show Collection Exact Card Count</a>. Ersetzt das „9+“ in deiner Sammlung durch die genaue Kartenanzahl</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-remove-ghost-overlay\" target=\"_blank\" rel=\"noopener noreferrer\">Remove Collection Ghost Overlay</a>. Entfernt das „Geister“-Overlay beim Betrachten von Karten, die du in der Sammlung nicht besitzt, sodass du alle Kartendetails siehst und selbst entscheiden kannst, ob du die Karte wegen der schönen Grafik herstellen willst.</li></ul>",
+							"title": "Bekannte Mods"
+						},
+						"not-ok": {
+							"body": "<ul><li>Mods, die einen unfairen Vorteil / Cheats geben</li><li>Mods, die Zugang zu Kosmetik geben, die du nicht freigeschaltet hast</li><li>Allgemeiner: jeder Mod, der Zugriff auf Dinge gibt, die du sonst mit Spielressourcen oder echtem Geld kaufen müsstest, oder der gegen die Absichten der Entwickler geht</li></ul>",
+							"title": "Mods, die definitiv nicht OK sind"
+						},
+						"old-mods": {
+							"body": "<p>Das sind nicht mehr gepflegte Mods, die nicht mehr funktionieren. Wenn einer davon für dich interessant ist, öffne bitte ein Issue im Repository des Mods und bitte den Maintainer, ihn für den neuen Mod Manager in Firestone zu aktualisieren.</p><ul><li><a href=\"https://github.com/sebastientromp/hs-melon-hide-mercenary-emotes\" target=\"_blank\" rel=\"noopener noreferrer\">Hide Mercenary Emote</a>. Entfernt die Zeilen / Sprechblasen mancher Söldner (z. B. Diamant-Porträts)</li><li><a href=\"https://github.com/sebastientromp/hs-melon-increase-game-speed-vs-ai\" target=\"_blank\" rel=\"noopener noreferrer\">Increase Animation Speed vs AI</a>. Setzt die Animation auf 4x Geschwindigkeit gegen die KI. <strong>ACHTUNG:</strong> Sei vorsichtig mit diesem Mod, denn das Erhöhen der Spielgeschwindigkeit (auch gegen die KI) könnte Blizzard missfallen</li></ul>",
+							"title": "Alte Mods"
+						},
+						"requirements": {
+							"body": "<p>Damit Firestones Mod Manager deinen Mod erkennt, sollte er eine Config mit Name, Version, Guid und DownloadLink (zum Repo) bereitstellen. Externe Abhängigkeiten werden noch nicht unterstützt – ping mich, wenn du das brauchst.</p>",
+							"title": "Anforderungen"
+						}
+					},
+					"subtitle": "Nutze Community-Mods mit Firestones BepInEx-basiertem Mod Manager.",
+					"title": "Mods"
+				},
+				"setup": {
+					"blurb": "Passe die Firestone-Einstellungen an, damit Overlays und Widgets zu deiner Spielweise passen.",
+					"intro": "<p>Die Einstellungen sind (finde ich) ziemlich einfach zu bedienen: Funktionen sind in Menüs gruppiert, und du kannst das Suchfeld oben nutzen, um zu finden, was du brauchst.</p>",
+					"sections": {
+						"general": {
+							"body": "<ul><li>Unter Global &gt; Widgets kannst du die globale Skalierung der Widgets in der App ändern.</li></ul>",
+							"title": "Allgemein"
+						},
+						"streamer": {
+							"body": "<ul><li>Die Twitch-Erweiterung kannst du unter Integrationen &gt; Twitch aktivieren (oder einfach oben nach „Twitch“ suchen)</li></ul><p>(wird noch ergänzt)</p>",
+							"title": "Streamer"
+						}
+					},
+					"subtitle": "Firestone ist stark konfigurierbar, aber die Standardkonfiguration passt vielleicht nicht ganz zu dem, was du brauchst (daran will ich demnächst arbeiten). Du wirst also wahrscheinlich zuerst ein paar Dinge anpassen wollen, denn mehr oder weniger alles in der App lässt sich ein- oder ausschalten.",
+					"title": "Firestone einrichten"
+				},
+				"twitch": {
+					"blurb": "Verbinde Firestone mit Twitch und nimm Overlays im Stream auf.",
+					"sections": {
+						"capturing-main-and-battlegrounds": {
+							"intro": "<p><em>Wenn du nur dein Gameplay streamen willst, kannst du diesen Abschnitt wahrscheinlich ignorieren.</em></p><p>Firestone hat zwei Hauptfenster, mit denen du deinen Zuschauern Statistiken zeigen kannst – eines speziell für Schlachtfeld mit Stats zum aktuellen Spiel und eines mit allen Stats zu vergangenen Spielen. Standardmäßig sind das Firestone-Hauptfenster und das Schlachtfeld-Fenster keine Overlays. Du kannst sie also außerhalb des Spielbereichs bewegen, aber sie werden dafür nicht im Stream aufgenommen.</p><p>Um sie aufzunehmen, hast du zwei Optionen:</p><ul><li>verschiebe sie auf einen zweiten Bildschirm und nimm den ganzen Bildschirm auf</li><li>aktiviere die beiden unten gezeigten „Overlay“-Optionen. Dadurch werden die Fenster an den Spielbildschirm gebunden (kein Ziehen mehr nach draußen) und OBS kann sie automatisch aufnehmen (das Ändern dieser Optionen kann Firestone einmal schließen und neu öffnen):</li></ul>",
+							"title": "Hauptfenster und Schlachtfeld-Fenster aufnehmen"
+						},
+						"capturing-the-tracker": {
+							"body": "<p>Standardmäßig sollte es einfach funktionieren. Wenn deine Firestone-Overlays im Spiel nicht erscheinen, schau in diese Fehlerbehebung: <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176947-how-to-show-overwolf-in-game-while-streaming\" target=\"_blank\" rel=\"noopener noreferrer\">How to show Overwolf in-game while streaming</a></p>",
+							"title": "Tracker und Overlays aufnehmen"
+						},
+						"firestone-configuration": {
+							"after-login": "<p>Sobald du angemeldet bist, sieht der Bildschirm so aus</p>",
+							"intro": "<p>Zuerst musst du dich in Firestone bei Twitch anmelden. Gehe zu Einstellungen &gt; Allgemein &gt; Twitch</p>",
+							"overlays": "<p>Du musst nichts weiter tun, die Tracker-Overlays (Tracker, Gegner-Tracker, Geheimnishelfer, Zähler usw.) werden automatisch im Stream aufgenommen.</p>",
+							"title": "Firestone-Konfiguration"
+						},
+						"installing": {
+							"body": "<p>Dann musst du die Firestone-Twitch-Erweiterung über <a href=\"https://dashboard.twitch.tv/extensions/jbmhw349lqbus9j8tx4wac18nsja9u\" target=\"_blank\" rel=\"noopener noreferrer\">das Twitch-Dashboard</a> installieren (der Link steht auch auf dem Firestone-Einstellungsbildschirm).</p><p>Danach einfach installieren, eine Konfiguration ist nicht nötig.</p><p><strong>ACHTUNG:</strong> Von Zeit zu Zeit trennt Twitch dich von Firestone. Wenn du also kein interaktives Overlay auf deinem Kanal siehst, prüfe zuerst in den Firestone-Einstellungen, ob du wirklich bei Twitch angemeldet bist.</p>",
+							"title": "Die Twitch-Erweiterung installieren"
+						},
+						"what-is-the-twitch-extension": {
+							"body": "<p>Sie fügt ein Deckliste-Overlay im Browser hinzu, damit deine Zuschauer leicht sehen, was in deinem Deck ist, die Maus über die Karten bewegen und den Deckcode kopieren können.</p><p>Außerdem können Zuschauer die Maus über Karten auf dem Feld oder in deiner Hand bewegen, um im Detail zu sehen, was sie tun.</p>",
+							"title": "Was ist die Twitch-Erweiterung"
+						}
+					},
+					"subtitle": "Zeige deinen Zuschauern auf Twitch deine Deckliste und Karten-Overlays.",
+					"title": "Die Twitch-Erweiterung einrichten"
+				}
+			},
+			"permalink-aria": "Link zu diesem Abschnitt",
+			"toc-title": "Auf dieser Seite"
+		},
+		"downloads": {
+			"document-title": "Firestone herunterladen — www.firestoneapp.com",
+			"editions-label": "Verfügbare Editionen",
+			"features": {
+				"battlegrounds": {
+					"alt": "Schlachtfeld-Dienerliste nach Volk gruppiert mit Tavernenstufen-Filtern",
+					"blurb": "Durchsuche die Gasthaus-Dienerliste nach Stufe, Volk oder Mechanik, plus Kampfchancen und Lobby-Tools.",
+					"caption": "Schlachtfeld-Dienerliste",
+					"title": "Schlachtfeld-Begleiter"
+				},
+				"collection": {
+					"alt": "Sammlungsübersicht mit Abschlussfortschritt für jedes Hearthstone-Set",
+					"blurb": "Durchsuche deine gesamte Sammlung, sieh den Set-Abschluss auf einen Blick und verfolge Packungen, Pity-Timer und Extra-Exemplare.",
+					"caption": "Sammlungsübersicht nach Set",
+					"title": "Sammlungstracker"
+				},
+				"deck-tracker": {
+					"alt": "Hearthstone-Spielfeld mit Firestone-Decktracker-Overlays auf beiden Seiten",
+					"blurb": "Sieh, was in Deck, Hand, Feld und Friedhof übrig ist — plus gegnerische Karten, Geheimnishelfer und Zähler — während du spielst.",
+					"caption": "Decktracker und Overlays im Spiel",
+					"title": "Decktracker"
+				},
+				"lead": "Der Begleiter funktioniert ohne Abo. Manche Overlays haben ein tägliches oder wöchentliches Kontingent; Premium entfernt diese Limits.",
+				"mods": {
+					"alt": "Firestone-Mods-Einstellungen mit Community-Mods und Ein/Aus-Schaltern",
+					"blurb": "Aktiviere Community-Mods in den Einstellungen — Auto-Squelch, Deck-Autocomplete, Sammlungsanpassungen und mehr — jeweils mit einem Schalter.",
+					"caption": "Integrierter Mod Manager",
+					"title": "Mods"
+				},
+				"overlays": {
+					"alt": "Entdecken-Overlay mit Gezogen-Einfluss-Statistiken auf jeder angebotenen Karte",
+					"blurb": "Entdecken- und Mulligan-Guides mit einem täglichen kostenlosen Kontingent, damit du die Zahlen hast, wenn es zählt.",
+					"caption": "Entdecken-Overlay mit Gezogen-Einfluss-Statistiken",
+					"title": "Overlays im Spiel"
+				},
+				"related-cards": {
+					"alt": "Decktracker zeigt verwandte Karten beim Darüberfahren einer Karte in der Liste",
+					"blurb": "Bewege die Maus über eine Karte im Tracker, um die Karten zu sehen, die sie erzeugt oder zu denen sie gehört — direkt neben deiner Liste.",
+					"caption": "Verwandte Karten beim Darüberfahren",
+					"title": "Verwandte Karten"
+				},
+				"title": "Was du kostenlos bekommst"
+			},
+			"hero": {
+				"subtitle": "Der kostenlose Hearthstone-Begleiter: Decktracker, Overlays, Sammlung, Schlachtfeld-Tools und mehr.",
+				"title": "Firestone herunterladen"
+			},
+			"lightbox": {
+				"close": "Vollbild schließen",
+				"view-full-size": "Vollgröße ansehen: {{alt}}"
+			},
+			"overwolf": {
+				"badge": "Jetzt verfügbar",
+				"blurb": "Die aktuelle öffentliche Version. Erfordert die Overwolf-Desktop-App.",
+				"cta": "Für Overwolf herunterladen",
+				"note": "Overwolf wird installiert, falls du es noch nicht hast.",
+				"title": "Overwolf"
+			},
+			"premium": {
+				"cta": "Premium ansehen",
+				"lead": "Premium schaltet unbegrenzte Entdecken- und Mulligan-Overlays, volle Meta-Analysen und Schlachtfeld-Extras frei.",
+				"title": "Unbegrenzte Overlays und tiefere Statistiken?"
+			},
+			"standalone": {
+				"badge": "Geschlossene Beta",
+				"blurb": "Firestone ohne Overwolf. Noch in geschlossener Beta.",
+				"cta": "Standalone herunterladen",
+				"discord-cta": "Frag uns auf Discord",
+				"discord-lead": "Frühen Zugang?",
+				"title": "Standalone"
+			}
+		},
+		"faq": {
+			"images": {
+				"elevated-column": "Task-Manager-Spaltenauswahl mit aktiviertem „Erhöht“",
+				"firestone-elevated": "Task-Manager zeigt, ob Firestone als Admin läuft",
+				"force-d3d11": "Battle.net-Startoptionen mit dem Parameter -force-d3d11",
+				"grant-permissions": "Windows-Kompatibilitätseinstellungen mit allen erteilten Berechtigungen",
+				"reset-widgets": "Einstellungsbutton, um alle Overlay-Widget-Positionen zurückzusetzen",
+				"run-as-admin": "Windows-Verknüpfungseigenschaften mit aktiviertem „Als Administrator ausführen“",
+				"russia-firewall-1": "Windows-Firewall-Regel für Overwolf",
+				"russia-firewall-2": "Geltungsbereich der Windows-Firewall-Regel",
+				"russia-firewall-3": "Windows-Firewall-Regel, die Cloudflare-IPs für Overwolf blockiert",
+				"task-manager-columns": "Task-Manager-Tab Details, Menü Spalten auswählen"
+			},
+			"nav-label": "FAQ",
+			"page-subtitle": "Häufige Probleme und Lösungen für Firestone.",
+			"page-title": "FAQ & Fehlerbehebung",
+			"permalink-aria": "Link zu diesem Abschnitt",
+			"sections": {
+				"app-doesnt-update": {
+					"body": "<ol><li>Beende Overwolf</li><li>Öffne den Ordner C:\\Users\\&lt;dein_benutzername&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>Lösche den Ordner namens 'lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob'</li><li>Öffne den Ordner C:\\Users\\&lt;dein_benutzername&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>Lösche den Ordner namens 'lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob'</li><li>Starte Overwolf</li><li>Versuche, die App erneut zu installieren</li></ol>",
+					"title": "App aktualisiert sich nicht"
+				},
+				"app-isnt-showing": {
+					"body": "<ul><li>Stelle sicher, dass Overwolf <strong>läuft</strong>, bevor du Hearthstone startest</li><li>Prüfe, ob das Overwolf-Overlay aktiviert ist: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf-Spieleinstellungen</a></li><li>Führe Firestone als Admin aus (danach musst du Overwolf schließen und neu öffnen). Siehe <a href=\"/faq#memory-reading-error\">Speicher-Lesefehler / Als Admin ausführen</a></li><li>Prüfe, ob du <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> in <strong>Chrome</strong> öffnen kannst. Wenn nicht, blockiert dein Router / ISP / VPN den Zugriff auf AWS. Jugendschutz ist ebenfalls eine bekannte Ursache.<ul><li><strong>WICHTIG</strong>: Das scheint zuletzt häufiger die Ursache zu sein. Bitte prüfe deine Jugendschutz-Einstellungen (auch beim ISP) und setze <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> und <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> auf die Whitelist</li><li>Siehe auch den Abschnitt <a href=\"/faq#connectivity-issues-global\">Verbindungsprobleme</a> weiter unten</li></ul></li><li>DirectX 12 kann das Overlay-Rendering stören. Versuche, es zu deaktivieren, um zu sehen, ob es besser wird (TODO: detaillierte Anleitung nötig)</li><li>Wenn alles scheitert und dein Spiel unter C:\\Program Files oder C:\\Program Files (x86) liegt, versuche, das Spiel in einen anderen Ordner zu verschieben. Diese Ordner sind geschützt und können Probleme verursachen, wenn die App Spielinformationen lesen will</li></ul>",
+					"title": "App wird nicht angezeigt"
+				},
+				"check-if-running-as-admin": {
+					"step-1": "<ol><li>Öffne den Task-Manager (Strg + Umschalt + Esc) und gehe zum Tab Details. Rechtsklick auf die Kopfzeile und klicke auf Spalten auswählen</li></ol>",
+					"step-2": "<ol start=\"2\"><li>Stelle sicher, dass die Spalte Erhöht aktiviert ist</li></ol>",
+					"step-3": "<ol start=\"3\"><li>Gehe zum Firestone-Eintrag in der Liste. Wenn Firestone als Admin läuft, sollte in der Spalte Erhöht „Ja“ stehen (was bei mir im Screenshot nicht der Fall ist)</li></ol>",
+					"title": "Prüfen, ob die App als Admin läuft"
+				},
+				"connectivity-issues-global": {
+					"body": "<ul><li>Versuche, Antivirus / Firewall / VPN zu deaktivieren</li><li>Wenn du weißt wie, setze folgende Domains auf die Whitelist:<ul><li>zerotoheroes.com</li><li>firestoneapp.com</li><li>amazonaws.com</li><li>overwolf.com</li></ul></li><li>Firestone neu zu installieren hilft manchmal</li></ul>",
+					"title": "Verbindungsprobleme (global)"
+				},
+				"connectivity-issues-russia": {
+					"body": "<p><strong>Probiere das, wenn du dich aus Russland verbindest</strong>. Hier ein paar Dinge, die Nutzer auf ihrem Rechner gemacht haben, um Verbindungsprobleme zu lösen.</p><blockquote><p>Firestone deinstallieren und neu installieren hat bei mir geholfen</p><p>Behoben, indem ich es in goodbye dpi auf die Blacklist gesetzt habe <a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a></p><p>Beides gilt speziell für GoodbyeDPI-Nutzer. Damit es in Google Chrome funktioniert, musst du chrome://flags öffnen und drei bestimmte Flags deaktivieren:</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>Manche Nutzer haben nur mit cloudflare-ech.com Probleme (es wurde vor ein paar Tagen von manchen Anbietern in Russland gesperrt), daher löst das Hinzufügen zur Blacklist-txt das Problem. Ich würde auch static.firestoneapp.com auf diese Liste setzen, aber in meinem Fall war das nicht nötig.</p><p>Zuerst habe ich Cloudflare ein paar Mal in der cmd angepingt, um IPs zu bekommen. Dann habe ich eine Windows-Firewall-Regel erstellt, die alle Verbindungen von den gefundenen IPs nur für Overwolf.exe blockiert. Danach kann eine Neuinstallation von Firestone nötig sein:</p></blockquote>",
+					"more": "<blockquote><p>Schalte VPN auf dem Rechner ein, lade Hearthstone herunter, lösche das Programm in Overwolf, lade es erneut herunter, schalte VPN aus und alles funktioniert. Mach das vor jedem Spieleinstieg. Relevant für Russland.</p><p>Das Problem lag sehr wahrscheinlich an den Sperren von cloudflare-ech.com in Russland. Behoben, indem die App, die ich und andere nutzen, um Discord-Sperren zu umgehen (ähnlich wie GoodbyeDPI), über Version 1.5.2 aktualisiert wurde, in der cloudflare-ech.com auf die Blacklist kam. Die App: <a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>. Da die App in Russland ziemlich beliebt ist, sollte ein Update über v1.5.2 manchen Nutzern helfen.</p></blockquote>",
+					"title": "Verbindungsprobleme (Russland)"
+				},
+				"dns": {
+					"body": "<p>Von einem anderen Nutzer mit demselben Problem:</p><blockquote><p>Nichts von dem, was du aufgelistet hast, war das Problem, aber mein Partner hat herausgefunden, was falsch war, und ich wollte es dir schicken, damit es anderen hilft, wenn alles andere nicht klappt. Er hat mich die DNS-Einstellungen des Netzwerkadapters auf Googles DNS ändern lassen [Primär 8.8.8.8 und Sekundär 8.8.4.4].</p></blockquote><p>Ausführlichere Schritte:</p><ol><li>Systemsteuerung\\Netzwerk und Internet\\Netzwerkverbindungen</li><li>Rechtsklick auf die Verbindung, die du nutzt</li><li>Finde „Internetprotokoll, Version 4 (TCP/IPv4)“ unter „Diese Verbindung verwendet folgende Elemente“</li><li>Klicke auf Eigenschaften</li><li>Wähle „Folgende DNS-Serveradressen verwenden“</li><li>Setze auf 8.8.8.8 (Google)</li><li>Schließe Firestone und öffne es erneut.</li></ol>",
+					"title": "DNS"
+				},
+				"game-is-crashing": {
+					"body": "<ul><li>Siehe <a href=\"https://us.forums.blizzard.com/en/hearthstone/t/pc-crash-every-game-with-possible-solution/141218\" target=\"_blank\" rel=\"noopener noreferrer\">diesen Blizzard-Forenthread</a>. Du musst den Parameter <code>-force-d3d11</code> hinzufügen, wie in diesem Screenshot:</li><li>Es kann Probleme mit RivaTuner / MSI AfterBurner geben. Siehe <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000177860-overwolf-and-conflicts-with-rivatuner\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf and conflicts with RivaTuner</a></li><li>Wenn du AMD nutzt, kannst du AMD Fluid Motion Frames 2 deaktivieren</li><li>Ein Nutzer berichtete, dass das Spiel im Fenstermodus abstürzt, aber nicht im Vollbild.</li><li>Overwolf unterstützt noch keine ARM-Prozessoren; auf einem ARM-Rechner kann das Spiel abstürzen</li></ul>",
+					"title": "Spiel stürzt ab"
+				},
+				"game-is-slow-high-refresh": {
+					"body": "<p>Das Spiel auf 60 FPS zu deckeln kann High-APM-Spiel träge anfühlen lassen. Eine bessere Alternative auf einem Monitor mit hoher Bildwiederholrate ist, etwas unter der Bildwiederholrate zu deckeln und variable Refresh-Raten zu behalten:</p><ul><li>Setze Spiel- und GPU-Framelimiter auf die <strong>Bildwiederholrate minus 6</strong> (z. B. 144 Hz → 138 FPS)</li><li>Lass <strong>G-Sync</strong> oder <strong>FreeSync</strong> aktiviert und funktionsfähig</li><li>Im NVIDIA Control Panel oder NVIDIA Profile Inspector setze <strong>Vertical Sync</strong> auf <strong>Fast Sync</strong></li></ul><p>Typische NVIDIA-Profile-Inspector-Werte für ein 144-Hz-Display:</p><ul><li>Frame Rate Limiter V3: 138 FPS</li><li>GSYNC - Application Mode: Fullscreen and Windowed</li><li>GSYNC - Application State: Allow</li><li>GSYNC - Global Feature: On</li><li>GSYNC - Global Mode: Fullscreen and Windowed</li><li>Vertical Sync: Fast Sync</li></ul>",
+					"title": "Monitore mit hoher Bildwiederholrate (NVIDIA)"
+				},
+				"game-is-slow": {
+					"body": "<ul><li>Wenn das Spiel stottert / „ruckelige“ Animationen hat, während Firestone läuft, kannst du die FPS des Spiels deckeln.<ul><li>Bearbeite dazu die Datei <code>options.txt</code> in <code>%localappdata%\\Blizzard\\Hearthstone</code> und ändere / füge <code>targetframerate=60</code> auf einen niedrigeren Wert (ich nutze 60, andere 140 ebenfalls erfolgreich)</li></ul></li><li>Manche Nutzer haben festgestellt, dass das Ausschalten von G-Sync über die Grafikkarte hilft</li><li><blockquote><p>Ich habe eine AMD-GPU und schalte AMD FreeSync in HS aus, dann gibt es kein Lag mehr.</p></blockquote></li></ul>",
+					"title": "Spiel ist langsam"
+				},
+				"general-checklist": {
+					"body": "<ul><li>Stelle sicher, dass Overwolf <strong>läuft</strong>, bevor du Hearthstone startest</li><li>(Besonders nach einem neuen Patch) HS schließen, Firestone schließen, Firestone neu starten, HS neu starten. Das erzwingt das App-Update (Aktualisieren während das Spiel läuft, funktioniert nicht immer gut)</li><li>Prüfe, ob du Firestone auf dem Desktop starten kannst (also wenn HS nicht läuft). Wenn nichts passiert:<ul><li>Bitte prüfe die anderen Abschnitte unten (vor allem die ganz unten zu <a href=\"/faq#connectivity-issues-global\">Verbindungsproblemen</a>)</li><li>Wenn nichts hilft, erstelle bitte ein Log-Zip und schick es mir manuell (z. B. auf Discord). Siehe <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">how to get your Overwolf logs</a></li></ul></li><li>Prüfe (während HS läuft), ob eine Datei <code>Decks.log</code> im Hearthstone-Installationsordner unter <code>Logs/Hearthstone_XXX</code> existiert. Wenn nicht, starte HS neu</li><li>Versuche, Antivirus / Firewall zu deaktivieren, und starte Firestone neu</li><li>Wenn Firestone blinkt, könnte eine neue Lenovo-App namens LegionZone die Ursache sein. Versuche, sie zu deaktivieren</li><li>Prüfe, ob die Uhr im Spiel die richtige Zeit anzeigt. Das kann passieren, wenn die Systemzeit falsch eingestellt ist, typischerweise ist „Automatisch an Sommerzeit anpassen“ deaktiviert</li></ul>",
+					"title": "Allgemeine Checkliste"
+				},
+				"hard-kill-apps": {
+					"body": "<blockquote><p>Hallo, ich habe Firestone und Overwolf im Task-Manager beendet und nach dem erneuten Öffnen hat alles wie vorgesehen funktioniert. Ein einfacher Neustart von Firestone hat das Problem nicht gelöst.</p></blockquote>",
+					"title": "Apps hart beenden"
+				},
+				"high-resource-usage": {
+					"body": "<ul><li>Manche Nutzer haben hohe GPU-Last gemeldet, verursacht durch die App Outplayed. Wenn das passiert, versuche, diese App zu deaktivieren</li></ul>",
+					"title": "Hohe Ressourcenauslastung"
+				},
+				"images-are-not-showing": {
+					"body": "<ul><li>Prüfe, ob du das <strong>in Google Chrome</strong> anzeigen kannst: <a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>Wenn nicht, blockiert etwas den Zugriff auf Firestone-Inhalte. Meist ist das eine Firewall oder ein Antivirus auf dem Rechner, manchmal auch der Internetanbieter. Siehe <a href=\"/faq#other-things-to-try\">Andere Dinge zum Ausprobieren</a></li></ul></li><li>Siehe die Abschnitte <a href=\"/faq#connectivity-issues-global\">Verbindungsprobleme</a> weiter unten</li><li>Wenn du es im Browser siehst, aber nicht in der App, verhindert etwas, dass die App auf diesen Inhalt zugreift.<ul><li>Versuche, Firewall und Antivirus zu deaktivieren<blockquote><p>Ich habe die Firewall-Einstellungen gefunden und alle „overwolf“-bezogenen Einstellungen durchgelassen, das hat das Problem gelöst.</p></blockquote></li><li>Wenn nichts hilft, greift wahrscheinlich eine andere Sicherheitsbeschränkung, die sehr spezifisch für deinen Rechner ist<ul><li>Wenn du das löst, schick mir bitte eine Nachricht, dann füge ich hinzu, was du gemacht hast, als mögliche Lösung für andere :)</li></ul></li><li>Firestone neu zu installieren hilft manchmal</li></ul></li></ul>",
+					"title": "Bilder werden nicht angezeigt"
+				},
+				"incompatible-software": {
+					"body": "<p>Wenn eines davon läuft, schließe es bitte, schließe Hearthstone, starte Overwolf neu und versuche es erneut:</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>",
+					"title": "Inkompatible Software"
+				},
+				"login-opens-overwolf": {
+					"body": "<p>Die Website meldet dich mit einem <code>firestoneapp://</code>-Link wieder in der Desktop-App an. Overwolf registriert dieses Protokoll ebenfalls, daher kann Windows Overwolf starten, selbst wenn du es schon beendet hast.</p><ul><li>Öffne <strong>Windows-Einstellungen → Apps → Standard-Apps</strong></li><li>Suche nach <strong>Firestone Standalone</strong> oder nach dem Protokoll <code>firestoneapp</code></li><li>Setze Firestone Standalone als Standardhandler</li></ul><p>Overwolf zu schließen hebt die Protokollregistrierung nicht auf. Firestone Standalone registriert <code>firestoneapp://</code> bei jedem Start neu, aber Windows bevorzugt Overwolf möglicherweise weiter, bis du die Standard-App änderst.</p>",
+					"title": "Anmeldung öffnet Overwolf statt Firestone Standalone"
+				},
+				"mainland-china": {
+					"body": "<ul><li><p>我听说如果你同时安装了“中国大陆”客户端和“世界其他地区”客户端，Firestone 只能在其中一个客户端上运行。</p><ul><li>看来你可以在登录后转到“收藏”屏幕来解决这个问题</li></ul></li><li><p>Mir wurde gesagt, dass Firestone nur auf einem der beiden Clients funktioniert, wenn du sowohl den Client für „Festlandchina“ als auch den für den „Rest der Welt“ installiert hast.</p><ul><li>Es sieht so aus, als könntest du das beheben, indem du nach dem Anmelden zum Bildschirm „Sammlung“ gehst</li></ul></li></ul>",
+					"title": "对于中国大陆用户 - Für Nutzer aus Festlandchina"
+				},
+				"memory-reading-error": {
+					"admin-steps": "<ul><li>HS schließen</li><li>Overwolf schließen</li><li>Firestone- und/oder Overwolf-Verknüpfungen auf „Als Administrator ausführen“ stellen<ul><li>Overwolf.exe und OverwolfLauncher.exe sollten als Admin laufen</li><li>Du kannst auch „Für alle Benutzer anwenden“ aktivieren</li></ul></li></ul>",
+					"after-admin": "<ul><li>Overwolf neu starten (manche Nutzer mussten den ganzen Rechner neu starten)</li><li>Dann kannst du HS neu starten</li><li>Wenn es immer noch nicht funktioniert (auch nach einem <strong>vollständigen Neustart</strong>), prüfe, ob Hearthstone selbst als Admin läuft. Falls ja, versuche es ohne Adminrechte.</li><li>Wenn du immer noch Probleme hast, kannst du auf diesem Bildschirm alle Berechtigungen erteilen:</li></ul>",
+					"intro": "<p>Der Fehler „Speicher lesen“ tritt auf, wenn die App keine Rechte hat, auf den Speicher des Spielclients zuzugreifen. Meist liegt das an Berechtigungen / Rechten (deshalb löst das Ausführen als Admin es meist).</p><p>Etwas mehr Details zu allen Schritten, um als Admin zu laufen:</p>",
+					"title": "Speicher-Lesefehler / Als Admin ausführen"
+				},
+				"memory-reading-other": {
+					"body": "<ul><li>Du kannst auch <code>sfc /scannow</code> in einer Eingabeaufforderung ausführen, das hat das Problem für mindestens 2 Spieler gelöst</li><li>„Alle Prozesse zu Hearthstone, Battle.net, Overwolf, Firestone usw. manuell zu beenden und dann HS und Firestone neu zu starten, hat es behoben. Ein normaler Neustart von Hearthstone und Overwolf/Firestone über den Infobereich nicht.“</li><li>Ein Nutzer hat das Problem gelöst, indem er Overwolf im selben Unterordner wie Hearthstone installiert hat (z. B. <code>D:\\Blizzard\\HS\\Hearthstone</code> und <code>D:\\Blizzard\\HS\\Overwolf</code>), das könnte sich lohnen</li></ul>",
+					"title": "Andere Dinge zum Ausprobieren bei „Speicher lesen“"
+				},
+				"no-cards-other": {
+					"body": "<ul><li>Jemand hat das Problem behoben, indem er Overwolf im Task-Manager hart beendet, Hearthstone geschlossen und Overwolf neu gestartet hat</li><li>Die App als Admin zu starten kann das Problem ebenfalls beheben</li></ul>",
+					"title": "Andere Dinge zum Ausprobieren"
+				},
+				"no-cards": {
+					"body": "<ul><li>Prüfe, ob du <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</a> in Chrome öffnen kannst</li><li>Wenn nicht, blockiert dein Router / ISP / VPN den Zugriff auf AWS. Jugendschutz ist ebenfalls eine bekannte Ursache.<ul><li>Antivirus kann den Zugriff manchmal blockieren, versuche ihn auszuschalten</li><li><strong>WICHTIG</strong>: Das scheint zuletzt häufiger die Ursache zu sein. Bitte prüfe deine Jugendschutz-Einstellungen (auch beim ISP) und setze <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> und <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> auf die Whitelist</li></ul></li><li>Wenn nichts hilft, schreib mir an <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>",
+					"title": "KRITISCHER FEHLER: Kartendatenbank konnte nicht geladen werden"
+				},
+				"other-things-to-try": {
+					"title": "Andere Dinge zum Ausprobieren"
+				},
+				"truncated-logs-other": {
+					"body": "<p>Deinstallieren / Neuinstallieren kann es beheben:</p><blockquote><p>Ich habe die Datei unter %localappdata%\\Blizzard\\Hearthstone gelöscht, die du mir genannt hast, alle Cache-Dateien in Hearthstone gelöscht, das Spiel neu installiert, und das Problem war gelöst.</p></blockquote><p>Hast du ein anderes Programm, das mit Hearthstone interagiert? Von einem chinesischen Nutzer:</p><blockquote><p>我发现问题了，我用一个中国特有的启动器启动游戏，然后炉石传说的文件夹关于日志的文件就会消失。不用它启动就不会有问题。</p></blockquote>",
+					"title": "Wenn das nicht hilft"
+				},
+				"truncated-logs": {
+					"body": "<p>Wenn die App eine Weile funktioniert und dann nach ein paar Spielen plötzlich stoppt, kann es sein, dass die Hearthstone-Logs nicht mehr geschrieben werden.</p><p>Mach Folgendes:</p><ul><li>Hearthstone schließen</li><li>Gehe in deinen Hearthstone-Installationsordner, in dem die Datei <code>Hearthstone.exe</code> liegt</li><li>Prüfe, ob eine Datei <code>client.config</code> in diesem Ordner liegt<ul><li>Falls nicht, erstelle eine</li></ul></li><li>Ersetze den Inhalt der Datei <code>client.config</code> durch Folgendes:<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>Hearthstone neu starten</li></ul><p>Wenn das Spiel danach immer noch hängt, läuft etwas falsch — bitte öffne einen Fehlerbericht mit dem Button oben rechts im Hauptfenster der App :)</p>",
+					"title": "App hängt / Logs hängen"
+				},
+				"virgin-media-web-safe": {
+					"body": "<p>Wenn du dich über Virgin Media verbindest (zumindest aus Großbritannien), scheint „Virgin media child safe“ den Zugriff auf manche Daten zu blockieren, die Firestone braucht. Ich weiß nicht genau warum, aber das Deaktivieren scheint das Problem zu lösen.</p><p>Es gab ähnliche Probleme mit Web Safe, und eine Ausnahme für static.zerotoheroes.com scheint zu helfen.</p>",
+					"title": "Virgin Media, Web Safe"
+				},
+				"widgets-not-showing": {
+					"body": "<p>Wenn du manche Widgets nicht siehst (z. B. keinen Tracker, aber den Zug, in dem Karten auf der gegnerischen Hand gezogen wurden), sind sie möglicherweise außerhalb des Bildschirms. Du kannst (alle) Widget-Positionen mit diesem Button in den Einstellungen zurücksetzen:</p>",
+					"title": "Einzelne Widgets werden nicht angezeigt"
+				}
+			},
+			"toc-title": "Auf dieser Seite"
+		},
+		"meta": {
+			"title": "Firestone – Hearthstone-Statistiken und Meta-Einblicke"
+		},
+		"monitoring": {
+			"simulator": {
+				"chart-label": "Genauigkeit",
+				"document-title": "Genauigkeit des SF-Simulators — Firestone",
+				"empty-range": "Keine Daten im gewählten Zeitraum.",
+				"from": "Von",
+				"legend-good": "Genauigkeit > 0,5 ist gut",
+				"legend-needs-work": "Darunter besteht Nachholbedarf",
+				"legend-very-good": "Genauigkeit > 0,8 ist sehr gut",
+				"load-error": "Die Genauigkeitsdaten des Simulators konnten nicht geladen werden.",
+				"loading": "Genauigkeitsdaten werden geladen…",
+				"page-lead": "Zeigt, wie oft der Schlachtfeld-Kampfsimulator über die Zeit mit echten Spielergebnissen übereinstimmt.",
+				"page-title": "Genauigkeit des SF-Simulators",
+				"resolution-daily": "Tägliche Werte.",
+				"resolution-monthly": "Monatliche Summen (gewählter Zeitraum länger als 180 Tage).",
+				"resolution-weekly": "Wöchentliche Summen (gewählter Zeitraum länger als 45 Tage).",
+				"to": "Bis",
+				"tooltip-accuracy": "Genauigkeit: {{accuracy}}",
+				"tooltip-failures": "Fehler: {{failures}}",
+				"tooltip-games": "Spiele: {{games}}",
+				"tooltip-version": "Version: {{version}}"
+			}
+		},
+		"nav": {
+			"download-alt": "Firestone herunterladen",
+			"downloads": "Downloads",
+			"home": "Firestone-Startseite",
+			"language": "Sprache",
+			"premium": "Premium"
+		},
+		"premium": {
+			"carousel": {
+				"gallery": "Mediengalerie, {{count}} Einträge",
+				"hint": "Wische oder nutze die Pfeile zum Durchstöbern",
+				"next": "Nächster Eintrag",
+				"previous": "Vorheriger Eintrag",
+				"roledescription": "Karussell"
+			},
+			"cta": {
+				"download": "Firestone herunterladen",
+				"get": "Firestone holen"
+			},
+			"document-title": "Firestone Premium — www.firestoneapp.com",
+			"free-tier": {
+				"arena": "Arena: {{discovers}} Entdecken-Nutzungen pro Tag; {{mulligan}} Mulligan-Nutzungen pro Tag; {{draft}} Draft-Overlay-Nutzung pro Woche",
+				"battlegrounds": "Schlachtfeld: {{heroSelection}} Heldenwahl-Overlay-Nutzungen pro Tag; {{quests}} Quest-Nutzungen pro Tag; {{trinkets}} Schmuckstück-Nutzungen pro Tag; {{timewarped}} Zeitverschoben-Nutzungen pro Tag",
+				"constructed": "Konstruktion: {{discovers}} Entdecken-Overlay-Nutzungen pro Tag; {{mulligan}} Mulligan-Guide-Nutzungen pro Tag",
+				"lead": "Firestone bleibt kostenlos nutzbar. Viele Overlays haben ein tägliches oder wöchentliches Kontingent; Premium schaltet unbegrenzte Nutzung dieser Guides frei.",
+				"title": "Kostenlos vs. Premium",
+				"unlimited": "Premium entfernt diese Limits für die oben genannten Overlays, damit du die Zahlen immer hast, wenn es zählt."
+			},
+			"hero": {
+				"note": "Abos werden in der Firestone-App gekauft (Premium-Tab oder Herz-Icon). Die Preise siehst du beim Checkout in der App.",
+				"subtitle": "Schalte das volle Begleiter-Erlebnis frei: tiefere Statistiken auf jedem Bildschirm, unbegrenzte Overlays im Spiel, keine Werbung und mehr Wege, schneller besser zu werden.",
+				"title": "Firestone Premium"
+			},
+			"lightbox": {
+				"close": "Vollbild schließen",
+				"view-full-size": "Vollgröße ansehen: {{alt}}"
+			},
+			"sections": {
+				"arena": {
+					"items": {
+						"card-pick": {
+							"screenshots": {
+								"overlay": {
+									"alt": "Kartenwahl-Statistiken im Overlay",
+									"caption": "Kartenwahl-Statistiken im Overlay"
+								}
+							},
+							"text": "Kartenwahl-Statistiken im Overlay"
+						},
+						"class-pick": {
+							"screenshots": {
+								"overlay": {
+									"alt": "Unbegrenzte Klassenwahl-Statistiken im Overlay",
+									"caption": "Unbegrenzte Klassenwahl-Statistiken im Overlay"
+								}
+							},
+							"text": "Unbegrenzte Klassenwahl-Statistiken im Overlay"
+						},
+						"mulligan-overlay": {
+							"screenshots": {
+								"guide": {
+									"alt": "Arena-Mulligan-Guide-Overlay",
+									"caption": "Unbegrenztes Mulligan-Guide-Overlay"
+								}
+							},
+							"text": "Unbegrenztes Mulligan-Guide-Overlay"
+						},
+						"runs-insights": {
+							"screenshots": {
+								"overview": {
+									"alt": "Zusätzliche Einblicke in deine Arena-Durchläufe",
+									"caption": "Zusätzliche Einblicke in deine Arena-Durchläufe"
+								}
+							},
+							"text": "Zusätzliche Einblicke in deine Arena-Durchläufe"
+						}
+					},
+					"title": "Arena"
+				},
+				"battlegrounds": {
+					"items": {
+						"auto-highlight": {
+							"text": "Diener im Gasthaus automatisch anhand deines Helden hervorheben"
+						},
+						"example-boards": {
+							"screenshots": {
+								"comp-details": {
+									"alt": "Beispielbretter in den Kompositionsdetails",
+									"caption": "Beispielbretter für die Pirat-APM-Komposition"
+								}
+							},
+							"text": "Beispielbretter in den Kompositionsdetails"
+						},
+						"fight-by-fight": {
+							"screenshots": {
+								"chart": {
+									"alt": "Schlachtfeld-Diagramm zur Gewinnrate von Kampf zu Kampf",
+									"caption": "Diagramm zur Gewinnrate von Kampf zu Kampf"
+								}
+							},
+							"text": "Diagramm zur Gewinnrate von Kampf zu Kampf"
+						},
+						"hero-page-extras": {
+							"screenshots": {
+								"hero-stats": {
+									"alt": "Schlachtfeld-Heldenseite mit aktuellen Aufzeichnungen dieses Helden",
+									"caption": "Extras auf der Heldenseite: aktuelle Aufzeichnungen"
+								}
+							},
+							"text": "Extras auf der Heldenseite: Rang-Zusammenfassung, aktuelle Aufzeichnungen mit diesem Helden"
+						},
+						"hero-selection": {
+							"screenshots": {
+								"overlay": {
+									"alt": "Schlachtfeld-Heldenwahl-Overlay mit Helden, Rängen und Statistiken in der Wahlphase",
+									"caption": "Heldenwahl-Overlay mit Rängen und Statistiken"
+								}
+							},
+							"text": "Heldenwahl-Overlay mit Rängen und Statistiken genau dort, wo es in der ersten Auswahl zählt"
+						},
+						"lobby-history": {
+							"screenshots": {
+								"scoreboard": {
+									"alt": "Schlachtfeld-Lobbyverlauf mit Sieg/Niederlage gegen andere in deiner Lobby",
+									"caption": "Sieg/Niederlage-Verlauf gegen andere in deiner Lobby"
+								}
+							},
+							"text": "Sieg/Niederlage-Verlauf gegen andere in deiner Lobby"
+						},
+						"lobby-overview": {
+							"screenshots": {
+								"overview": {
+									"alt": "Schnelle Übersicht aller Helden in der Lobby",
+									"caption": "Schnelle Übersicht aller Helden in der Lobby"
+								}
+							},
+							"text": "Drücke Tab in der Lobby für eine schnelle Übersicht aller Helden"
+						},
+						"past-match-stats": {
+							"screenshots": {
+								"replays": {
+									"alt": "Schlachtfeld-Aufzeichnungsstatistiken mit detailliertem Überblick vergangener Spiele",
+									"caption": "Detaillierte Überblickstatistiken vergangener Spiele"
+								}
+							},
+							"text": "Detaillierte Überblickstatistiken vergangener Spiele in Aufzeichnungen"
+						},
+						"post-match-stats": {
+							"screenshots": {
+								"stats": {
+									"alt": "Schlachtfeld-Statistiken nach dem Spiel mit reichen In-Game- und Nachspiel-Daten",
+									"caption": "Reiche In-Game- und Nachspiel-Statistiken"
+								}
+							},
+							"text": "Reiche In-Game- und Nachspiel-Statistiken"
+						},
+						"quest-rewards": {
+							"screenshots": {
+								"stats": {
+									"alt": "Schlachtfeld-Quest- und Belohnungsstatistiken im Overlay",
+									"caption": "Questabschluss- und Belohnungsstatistiken"
+								}
+							},
+							"text": "Questabschluss und Belohnungsplatzierung im Kontext deines Helden und MMR"
+						},
+						"remote-sim": {
+							"text": "Optionale Remote-Kampfsimulation, wenn die lokale Sim deinen PC stark belastet"
+						},
+						"trinket-stats": {
+							"text": "Schmuckstück-Statistiken im Overlay"
+						}
+					},
+					"title": "Schlachtfeld"
+				},
+				"collection": {
+					"items": {
+						"pack-history": {
+							"screenshots": {
+								"history": {
+									"alt": "Chronologischer Karten- und Packungsverlauf",
+									"caption": "Chronologischer Karten- und Packungsverlauf"
+								}
+							},
+							"text": "Chronologischer Karten- und Packungsverlauf"
+						},
+						"per-set-stats": {
+							"screenshots": {
+								"global": {
+									"alt": "Detaillierte globale Sammlungsstatistiken",
+									"caption": "Detaillierte globale Sammlungsstatistiken"
+								},
+								"per-set": {
+									"alt": "Detaillierte Sammlungsstatistiken pro Set",
+									"caption": "Detaillierte Sammlungsstatistiken pro Set"
+								}
+							},
+							"text": "Detaillierte Sammlungsstatistiken pro Set"
+						}
+					},
+					"title": "Sammlung"
+				},
+				"constructed": {
+					"items": {
+						"deck-overview": {
+							"screenshots": {
+								"details": {
+									"alt": "Konstruktions-Deckübersicht mit aktuellen Aufzeichnungen dieses Decks",
+									"caption": "Deckübersicht und aktuelle Aufzeichnungen"
+								}
+							},
+							"text": "Deckübersicht und aktuelle Aufzeichnungen auf der Deckseite"
+						},
+						"discover-overlay": {
+							"text": "Unbegrenzte Entdecken-Overlay-Statistiken"
+						},
+						"lobby-mulligan": {
+							"screenshots": {
+								"lobby": {
+									"alt": "Konstruktions-Mulligan-Guide in der Lobby vor dem Queue",
+									"caption": "Mulligan-Guide in der Lobby"
+								}
+							},
+							"text": "Mulligan-Guide in der Lobby, bevor du in die Queue gehst"
+						},
+						"meta-by-rank": {
+							"screenshots": {
+								"archetypes": {
+									"alt": "Konstruktions-Metastatistiken mit aktuellen Meta-Archetypen für kompetitive Spieler",
+									"caption": "Aktuelle Meta-Archetypen für kompetitive Rangbereiche"
+								},
+								"card-stats": {
+									"alt": "Konstruktions-Metastatistiken mit detaillierten Kartenstatistiken für den Archetyp Herold-Schurke",
+									"caption": "Detaillierte Kartenstatistiken auf Archetyp-Ebene"
+								},
+								"decks": {
+									"alt": "Konstruktions-Metastatistiken mit aktuellen Meta-Decks auf Legendestufe",
+									"caption": "Aktuelle Meta-Decks auf Legendestufe"
+								}
+							},
+							"text": "Aktuelles Meta nach Rang: Decks, Archetypen und detaillierte Kartenstatistiken"
+						},
+						"mulligan-overlay": {
+							"screenshots": {
+								"guide": {
+									"alt": "Konstruktions-Mulligan-Guide-Overlay",
+									"caption": "Unbegrenztes Mulligan-Guide-Overlay"
+								}
+							},
+							"text": "Unbegrenztes Mulligan-Guide-Overlay"
+						}
+					},
+					"title": "Konstruktion"
+				},
+				"general": {
+					"items": {
+						"discord-presence": {
+							"screenshots": {
+								"status": {
+									"alt": "Discord Rich Presence mit eigenen Status-Platzhaltern",
+									"caption": "Discord Rich Presence mit eigenen Status-Platzhaltern"
+								}
+							},
+							"text": "Discord Rich Presence mit eigenen Status-Platzhaltern"
+						},
+						"in-game-replays": {
+							"screenshots": {
+								"replay": {
+									"alt": "Reiche In-Game-Aufzeichnung mit Originalsounds und Animationen des Spiels",
+									"caption": "Reiche In-Game-Aufzeichnung mit Originalsounds und Animationen des Spiels"
+								}
+							},
+							"text": "Reiche In-Game-Aufzeichnungen"
+						}
+					},
+					"title": "Allgemein & Aufzeichnungen"
+				}
+			},
+			"subscribe": {
+				"step-1": "Installiere und öffne Firestone (Overwolf).",
+				"step-2": "Melde dich bei Aufforderung mit deinem Overwolf-Konto an.",
+				"step-3": "Öffne Premium über das Herz-Icon oder den Premium-Eintrag in der App und wähle einen Plan.",
+				"step-4": "Verwalte oder kündige jederzeit über den Tebex-Zahlungsverlauf — die Links siehst du auf dem Premium-Bildschirm.",
+				"title": "So abonnierst du"
+			},
+			"summary": {
+				"ad-free": "Werbung in der App entfernen",
+				"battlegrounds": "Schlachtfeld-Heldenwahl-Overlay, Quest- und Belohnungsstatistiken, Tipps, Auto-Hervorhebung, Lobby-Einblicke und Aufschlüsselungen nach dem Spiel",
+				"meta-analytics": "Volle Meta-Deck- und Archetyp-Analysen, Aufschlüsselungen auf Kartenebene und reichere Deckseiten in der App",
+				"support": "Unterstütze die laufende Entwicklung von Firestone",
+				"title": "Was du bekommst",
+				"unlimited-overlays": "Unbegrenzte Nutzung der Entdecken- und Mulligan-Overlays im klassischen Hearthstone sowie der Schlachtfeld-Wahl- und Statistik-Overlays (kostenlose Nutzer haben tägliche oder wöchentliche Limits)"
+			}
+		},
+		"redirect": {
+			"in-game-replay": "Weiterleitung zu Firestone...",
+			"partner": "Weiterleitung...",
+			"premium-checkout": "Weiterleitung zu Firestone..."
+		}
+	},
+	"widgets": {
+		"max-resources": {
+			"current-corpses-tooltip": "Aktuelle Leichen",
+			"max-coins-tooltip": "Maximales Gold",
+			"max-health-tooltip": "Maximale Gesundheit",
+			"max-mana-tooltip": "Maximales Mana"
+		}
+	}
+}

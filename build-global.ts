@@ -89,3 +89,53 @@ export const deepMerge = (base: JsonObject, overlay: JsonObject): JsonObject => 
 };
 
 export const cloneJson = <T>(value: T): T => JSON.parse(JSON.stringify(value));
+
+const SKIP_FLATTEN_KEYS = new Set(['unused-do-not-translate']);
+
+export const getPath = (obj: JsonObject | undefined, path: string): unknown => {
+	if (!obj) {
+		return undefined;
+	}
+	return path.split('.').reduce<unknown>((acc, part) => {
+		if (!acc || typeof acc !== 'object') {
+			return undefined;
+		}
+		return (acc as JsonObject)[part];
+	}, obj);
+};
+
+export const flattenLeaves = (obj: JsonObject | undefined, prefix = ''): Record<string, string> => {
+	const out: Record<string, string> = {};
+	if (!obj) {
+		return out;
+	}
+	for (const [key, val] of Object.entries(obj)) {
+		if (SKIP_FLATTEN_KEYS.has(key)) {
+			continue;
+		}
+		const path = prefix ? `${prefix}.${key}` : key;
+		if (val && typeof val === 'object' && !Array.isArray(val)) {
+			Object.assign(out, flattenLeaves(val, path));
+		} else if (typeof val === 'string' && val.length) {
+			out[path] = val;
+		}
+	}
+	return out;
+};
+
+export const mergeHumanOverAi = (ai: JsonObject, human: JsonObject): JsonObject => {
+	const overlay = (base: JsonObject, src: JsonObject): JsonObject => {
+		for (const [key, value] of Object.entries(src)) {
+			if (value === null || value === '') {
+				continue;
+			}
+			if (value && typeof value === 'object' && !Array.isArray(value)) {
+				base[key] = overlay(base[key] && typeof base[key] === 'object' ? base[key] : {}, value);
+			} else {
+				base[key] = value;
+			}
+		}
+		return base;
+	};
+	return overlay(cloneJson(ai), human);
+};

@@ -25,6 +25,14 @@ You can mix tags with ngx-translate placeholders (`{{value}}`, `{{min}}`). Leave
 
 Tags stay in Crowdin. `upload.sh` replaces them when building `dist/i18n`. An unknown tag or a cycle fails the upload. Add new tags only in `enUS.json`; other languages come from Crowdin.
 
+## AI-complete locale files (`{locale}-ai.json`)
+
+`upload.sh` also publishes a second file per locale next to the Crowdin file, e.g. `https://static.firestoneapp.com/data/i18n/deDE-ai.json`.
+
+Each key uses the human string from `firestone/{locale}.json` when it is present and non-empty, otherwise the string from `firestone-ai/{locale}.json`. `enUS-ai.json` is always identical to `enUS.json`.
+
+`firestone-ai/` is filled **on request** (ask to fill AI translations / refresh auto-translations / update firestone-ai). A refresh also re-translates keys whose English source changed since the last AI fill. It does not run automatically on upload. `upload.sh` prints missing/stale counts and still publishes whatever AI files are already committed.
+
 # TODO
 
 Apart from translating the various pieces of text (see the Crowdin project for that), there are a few things left to do in the app itself:
