@@ -492,7 +492,7 @@
             },
             "ads": {
                 "support-the-dev": "支援開發並刪除廣告",
-                "supporter": "感謝你對我們的支持！你很酷:)",
+                "supporter": "感謝你對我們的支持！你超讚🙂️",
                 "features-link": "點選檢視你將獲得的全部 Premium 會籍功能",
                 "unlock-text": "解鎖 Premium 會籍功能",
                 "cta-text": "即刻升級",
@@ -515,7 +515,7 @@
                     "message": "嚴重錯誤：無法載入卡牌資料庫。點選即可線上檢視更多資訊。"
                 },
                 "memory-reading": {
-                    "message": "嚴重錯誤：無法讀取遊戲記憶體。點選以線上檢視更多資訊。",
+                    "message": "嚴重錯誤：遊戲內覆疊介面可能會遺失，因為 Firestone 無法讀取遊戲資料。點選以在線上查看更多資訊。",
                     "title": "無法讀取記憶體"
                 },
                 "truncated-logs": {
@@ -3889,7 +3889,7 @@
                 "discord": "Discord",
                 "broadcast": "Twitch",
                 "streamer": "實況主",
-                "addons": "附加功能",
+                "addons": "附加元件",
                 "account": "帳號"
             },
             "third-party": {
@@ -4025,7 +4025,11 @@
                 "text-11": "這也意味著並非整個程式都會被翻譯。所以缺少翻譯的部分會用英文替代。",
                 "text-2": "如果你想幫忙翻譯這個程式，請檢閱說明。 {{link}}",
                 "link": "「這裡」",
-                "text-3": "請重新啟動應用程式以確保變更為新語言（右鍵點選系統匣中的 Firestone 圖示）。"
+                "text-3": "請重新啟動應用程式以確保變更為新語言（右鍵點選系統匣中的 Firestone 圖示）。",
+                "ai-title": "AI 翻譯",
+                "ai-toggle-tooltip": "使用 AI 生成的文字填補未翻譯的字串。社群翻譯永遠享有優先權。",
+                "ai-toggle-label": "使用 AI 翻譯",
+                "ai-text": "啟用後，缺失的翻譯將由 AI 生成的文字填補。社群翻譯永遠享有優先權。AI 生成的字串可能不夠完美，若無可用的 AI 翻譯，則仍會顯示英文。"
             },
             "data": {
                 "remote-title": "遠端資料",
@@ -4150,7 +4154,8 @@
                 "source-verified-tooltip": "由第三方開發，並由 Firestone 定期檢查。僅有獲得 Firestone 核准的版本才會自動更新。",
                 "import-placeholder": "GitHub 專案庫網址",
                 "auto-update-trusted-verified": "僅可信與已驗證的模組",
-                "import-no-install-path": "請先設定你的遊戲安裝位置。"
+                "import-no-install-path": "請先設定你的遊戲安裝位置。",
+                "explanation": "模組是可以用來改變《爐石戰記》遊戲本身行為的外掛程式。"
             },
             "premium": {
                 "lottery-opacity-title": "抽獎小工具不透明度",
@@ -4284,13 +4289,14 @@
                 }
             },
             "addons": {
-                "title": "附加功能",
-                "instructions": "將附加功能資料夾拖放至 <b>{{path}}</b>，然後按一下「重新整理」。附加功能會在沙盒中執行，且僅具備其聲明的權限。",
-                "installed-title": "已安裝的附加功能",
-                "empty": "未找到任何附加功能。請開啟該資料夾並將附加功能套件拖放至該處。",
+                "title": "附加元件",
+                "instructions": "將附加元件資料夾拖放至 <b>{{path}}</b>，然後按一下「重新整理」。附加元件會在沙盒中執行，且僅具備其聲明的權限。",
+                "installed-title": "已安裝的附加元件",
+                "empty": "未找到任何附加元件。請開啟該資料夾並將附加元件套件拖放至該處。",
                 "open-folder": "開啟資料夾",
                 "permissions": "權限：",
-                "refresh": "重新整理"
+                "refresh": "重新整理",
+                "explanation": "（實驗性功能）附加元件是 Firestone 本身的選擇性擴充功能。它們在沙盒中執行，且僅取得其宣告的權限。它們不會修改《爐石戰記》遊戲用戶端。"
             },
             "account": {
                 "intro-signed-out": "登入以同步你的賽局歷史紀錄。之後你可以連結其他登入提供者。",
@@ -4329,7 +4335,17 @@
                 "link-overwolf-label": "Overwolf",
                 "unlink-overwolf-label": "Overwolf",
                 "unlink-overwolf-button": "解除連結 Overwolf",
-                "unlink-last-login-failed": "你必須在此 Firestone 帳號上保留至少一種登入方式。"
+                "unlink-last-login-failed": "你必須在此 Firestone 帳號上保留至少一種登入方式。",
+                "perks-title": "為什麼要登入？",
+                "perks-lottery-title": "參加抽獎活動",
+                "perks-history-detail": "未連結至帳號的對戰紀錄將在大約一年後被清理刪除。",
+                "perks-replays-title": "重播將保留約一年",
+                "perks-replays-detail": "若未登入帳號，重播檔案將在 60 天後被移除。",
+                "perks-sync-title": "你的數據隨你移動",
+                "perks-lottery-detail": "點數仍會在本機累積；登入以進行同步並在賽季結束時參加抽獎。",
+                "perks-intro": "免費註冊登入。這能讓 Firestone 為你提供更完善的服務。",
+                "perks-sync-detail": "當你重新安裝或更換電腦時，對戰歷史紀錄、卡牌包數據與成就都會完整保留。",
+                "perks-history-title": "你的對戰歷史紀錄將保留在雲端"
             }
         },
         "decktracker": {
@@ -4771,7 +4787,7 @@
                     "flesh-giant-tooltip": "當你手牌或牌組中有血肉巨人時，顯示你英雄生命值在你的回合內變動的次數"
                 },
                 "discovery-zone-label": "發現區塊",
-                "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到相關卡牌並標記與牌堆的協同作用。",
+                "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到並標記牌堆的相關卡牌與協同作用。",
                 "special-zones-tooltip": "啟用後，記牌器中會出現一個新區塊，用來顯示由「『背叛者』高佛雷」或「伊莉妲‧尋罪者」所處理的卡牌",
                 "special-zones-label": "特殊區域"
             },
@@ -5391,7 +5407,7 @@
         "faq": {
             "sections": {
                 "memory-reading-error": {
-                    "intro": "<p>「記憶體讀取」錯誤是指應用程式沒有存取遊戲用戶端記憶體的權限。這通常是由權限問題引起的（因此以管理員身份運行通常可以解決此問題）。 </p><p>以下是更多以管理員身分執行所需步驟的詳細資訊：</p>",
+                    "intro": "<p>「記憶體讀取」錯誤會在應用程式無法讀取遊戲用戶端記憶體時發生。這通常是由於權限問題所致（因此以管理員身份執行通常可以解決）。在 Windows 11 上，即使覆疊視窗本身有顯示，<a href=\"/faq#smart-app-control\">智慧型應用程式控制</a> 仍可能會阻擋 Firestone 的記憶體讀取 DLL。</p><p>以下是以管理員身份執行所需步驟的詳細說明：</p>",
                     "title": "記憶體讀取錯誤 / 以管理員身份執行",
                     "admin-steps": "<ul><li>關閉《爐石戰記》</li><li>關閉 Overwolf</li><li>將 Firestone 及／或 Overwolf 捷徑變更為「以系統管理員身分執行」<ul><li>Overwolf.exe 與 OverwolfLauncher.exe 應以系統管理員身分執行</li><li>你也可以啟用「套用到所有使用者」按鈕</li></ul></li></ul>",
                     "after-admin": "<ul><li>重新啟動 Overwolf（部分使用者需要重新啟動整台電腦）</li><li>接著你可以重新啟動《爐石戰記》</li><li>若仍無法運作（即使在<strong>完整重新啟動電腦</strong>之後），請檢查《爐石戰記》本身是否以系統管理員身分執行。若是，請嘗試在不具備系統管理員權限的情況下執行它。</li><li>若你依然遇到問題，可以嘗試在該畫面中授予所有權限：</li></ul>"
@@ -5415,7 +5431,7 @@
                     "title": "對於中國大陸用戶 - For users from mainland China"
                 },
                 "images-are-not-showing": {
-                    "body": "<ul><li>請檢查你是否能夠使用 Google Chrome 顯示此內容：<a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li>如果無法顯示，則表示某些程式阻止了你造訪 Firestone 的內容。這通常是你本機電腦上的防火牆或防毒軟體造成的，但有時也可能是你的網路服務供應商造成的。 </li>請參閱<a href=\"/faq#other-things-to-try\">其他嘗試方法</a></li></ul></li><li>請查看頁面底部的<a href=\"/faq#connectivity-issues-global\">連接問題</a>部分</li><li>如果你可以在瀏覽器中顯示此應用程式無法顯示此應用程式。 <ul><li>嘗試停用防火牆和防毒軟體。 <blockquote><p>我找到了防火牆設置，並將所有與“Overwolf”相關的設置都設置為允許，問題就解決了。 </p></blockquote></li><li>如果上述方法都無效，則可能表示有其他安全限制，但這取決於你的電腦。 <ul><li>如果你成功解決了此問題，請給我留言，我會將你的解決方法添加到清單中，供其他人參考 :)</li></ul></li><li>重新安裝 Firestone 有時似乎會有幫助。 </li></ul></li></ul>",
+                    "body": "<ul><li>請檢查你是否能夠使用 Google Chrome 顯示此內容：<a href=\"https://static.firestoneapp.com/cards/zhTW/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/zhTW/512/EX1_014t.png</a><ul><li>如果無法顯示，則表示某些程式阻止了你造訪 Firestone 的內容。這通常是你本機電腦上的防火牆或防毒軟體造成的，但有時也可能是你的網路服務供應商造成的。 </li>請參閱<a href=\"/faq#other-things-to-try\">其他嘗試方法</a></li></ul></li><li>請查看頁面底部的<a href=\"/faq#connectivity-issues-global\">連接問題</a>部分</li><li>如果你可以在瀏覽器中顯示此應用程式無法顯示此應用程式。 <ul><li>嘗試停用防火牆和防毒軟體。 <blockquote><p>我找到了防火牆設置，並將所有與“Overwolf”相關的設置都設置為允許，問題就解決了。 </p></blockquote></li><li>如果上述方法都無效，則可能表示有其他安全限制，但這取決於你的電腦。 <ul><li>如果你成功解決了此問題，請給我留言，我會將你的解決方法添加到清單中，供其他人參考 :)</li></ul></li><li>重新安裝 Firestone 有時似乎會有幫助。 </li></ul></li></ul>",
                     "title": "圖片無法顯示"
                 },
                 "connectivity-issues-russia": {
@@ -5448,11 +5464,11 @@
                     "title": "應用程式卡住／日誌紀錄(Logs)卡住"
                 },
                 "no-cards": {
-                    "body": "<ul><li>請檢查你是否可以從 Chrome 瀏覽器存取 <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</a></li><li>如果無法訪問，則表示你的路由器/ISP/VPN有問題，導致無法存取 AWS。 </li>家長監護也是造成此問題的已知原因之一。 <ul><li>防毒軟體有時會阻止訪問，請嘗試將其關閉</li><li><strong>⚠️</strong>：最近這似乎是導致問題的一個更普遍的原因，因此請檢查你的家長控制設定（也請諮詢你的網路服務供應商），並將 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> and <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名單</li></ul></li><li>如果以上方法都無效，請發送電子郵件至信箱 <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>",
+                    "body": "<ul><li>請檢查你是否可以從 Chrome 瀏覽器存取 <a href=\"https://static.firestoneapp.com/data/cards/cards_zhTW.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/cards/cards_zhTW.gz.json</a></li><li>如果無法訪問，則表示你的路由器/網路服務供應商 (ISP業者) /VPN有問題，導致無法存取 AWS。 </li>家長監護也是造成此問題的已知原因之一。 <ul><li>防毒軟體有時會阻止訪問，請嘗試將其關閉</li><li><strong>⚠️</strong>：最近這似乎是導致問題的一個更普遍的原因，因此請檢查你的家長控制設定（也請諮詢你的ISP業者），並將 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> and <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名單</li></ul></li><li>如果以上方法都無效，請發送電子郵件至信箱 <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>",
                     "title": "❌嚴重錯誤：無法載入卡牌資料庫"
                 },
                 "app-isnt-showing": {
-                    "body": "<ul><li>請確保在啟動《爐石戰記》<strong>之前</strong> Overwolf 已在執行中</li><li>檢查 Overwolf 覆疊是否已啟用：<a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 遊戲設定</a></li><li>以系統管理員身分執行 Firestone（你必須在事後關閉 Overwolf 並重新開啟）。參閱<a href=\"/faq#memory-reading-error\">記憶體讀取錯誤／以系統管理員身分執行</a></li><li>檢查你是否能透過 <strong>Chrome</strong> 存取 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a>。若不行，代表你的路由器／網路服務提供者（ISP）／VPN 存在阻擋 AWS 存取的問題。家長監護功能也是導致此問題的已知原因之一。<ul><li><strong>重要</strong>：這似乎是近期較常見的問題原因，請檢查你的家長監護設定（亦包括你的 ISP 設定），並將 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> 與 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名單</li><li>另請參閱本頁底部的<a href=\"/faq#connectivity-issues-global\">連線問題</a>區塊</li></ul></li><li>已知 DirectX 12 可能會干擾覆疊渲染。嘗試停用它以確認是否能改善情況（待補：需要詳細說明指引）</li><li>若所有方法皆失敗，且你的遊戲安裝於 C:\\Program Files 或 C:\\Program Files (x86) 下，請嘗試將遊戲移動至其他資料夾。這些資料夾受系統保護，當應用程式嘗試讀取遊戲資訊時可能會引發問題</li></ul>",
+                    "body": "<ul><li>請確保在啟動《爐石戰記》<strong>之前</strong>，Overwolf 已經在執行中</li><li>檢查 Overwolf 覆疊介面是否已啟用：<a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 遊戲設定</a></li><li>以管理員身份執行 Firestone（你必須先關閉 Overwolf，然後在事後重新開啟）。請參閱 <a href=\"/faq#memory-reading-error\">記憶體讀取錯誤 / 以管理員身份執行</a></li><li>在 Windows 11 上，智慧型應用程式控制可能會阻擋 Firestone 的記憶體讀取器，導致覆疊介面保持空白。請參閱 <a href=\"/faq#smart-app-control\">智慧型應用程式控制</a></li><li>檢查你是否能透過 <strong>Chrome</strong> 存取 <a href=\"https://static.firestoneapp.com/data/i18n/zhTW.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/zhTW.json</a>。如果不行，這意味著你的路由器 / 網路服務供應商 (ISP業者) / VPN 存在阻止存取 AWS 的問題。家長監護功能也是導致此問題的已知原因之一。<ul><li><strong>重要提示</strong>：這似乎是近期較常發生的問題原因，因此請檢查你的家長監護設定（包括你的ISP業者提供的服務），並將 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> 與 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名單</li><li>另請參閱本頁底部的 <a href=\"/faq#connectivity-issues-global\">連線問題</a> 章節</li></ul></li><li>已發現 DirectX 12 可能會干擾覆疊介面的渲染。請嘗試將其停用，看看是否能改善狀況（待辦事項：需要提供詳細說明）</li><li>如果所有方法都失敗，且你的遊戲安裝在 C:\\Program Files 或 C:\\Program Files (x86) 目錄下，請嘗試將遊戲移動到其他資料夾。這些資料夾受系統保護，當應用程式嘗試讀取遊戲資訊時可能會引發問題</li></ul>",
                     "title": "應用程式未顯示"
                 },
                 "general-checklist": {
@@ -5476,7 +5492,7 @@
                 },
                 "game-is-crashing": {
                     "title": "遊戲發生崩潰",
-                    "body": "<ul><li>參閱<a href=\"https://us.forums.blizzard.com/en/hearthstone/t/pc-crash-every-game-with-possible-solution/141218\" target=\"_blank\" rel=\"noopener noreferrer\">此暴雪討論區討論串</a>。你需要新增 <code>-force-d3d11</code> 參數，如本截圖所示：</li><li>RivaTuner / MSI AfterBurner 可能會引發衝突。參閱<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000177860-overwolf-and-conflicts-with-rivatuner\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 與 RivaTuner 的衝突</a></li><li>若你使用 AMD 顯示卡，可以嘗試停用 AMD Fluid Motion Frames 2</li><li>有使用者回報遊戲在視窗化模式下會崩潰，但在全螢幕模式下則不會。</li><li>Overwolf 尚未支援 ARM 處理器，在 ARM 處理器裝置上執行可能會導致遊戲崩潰</li></ul>"
+                    "body": "<ul><li>參閱<a href=\"https://us.forums.blizzard.com/en/hearthstone/t/pc-crash-every-game-with-possible-solution/141218\" target=\"_blank\" rel=\"noopener noreferrer\">此暴雪討論區討論串</a>。你需要新增 <code>-force-d3d11</code> 參數，如本截圖所示：</li><li>RivaTuner / MSI AfterBurner 可能會引發衝突。參閱<a href=\"https://support.overwolf.com/support/solutions/articles/9000177860-overwolf-and-conflicts-with-rivatuner\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 與 RivaTuner 的衝突</a></li><li>若你使用 AMD 顯示卡，可以嘗試停用 AMD Fluid Motion Frames 2</li><li>有使用者回報遊戲在視窗化模式下會崩潰，但在全螢幕模式下則不會。</li><li>Overwolf 尚未支援 ARM 處理器，在 ARM 處理器裝置上執行可能會導致遊戲崩潰</li></ul>"
                 },
                 "game-is-slow": {
                     "title": "遊戲運行緩慢",
@@ -5493,6 +5509,10 @@
                 "game-is-slow-high-refresh": {
                     "body": "<p>將遊戲幀率限制在 60 FPS 可能會讓高 APM 操作感到遲鈍。在高重新整理率螢幕上的更好替代方案是將幀率限制在略低於螢幕重新整理率的數值，並保持可變重新整理率正常運作：</p><ul><li>將遊戲與 GPU 的幀率限制器設定為你螢幕的<strong>重新整理率減 6</strong>（例如：144 Hz → 138 FPS）</li><li>保持 <strong>G-Sync</strong> 或 <strong>FreeSync</strong> 啟用並正常運作</li><li>在 NVIDIA 控制面板或 NVIDIA Profile Inspector 中，將<strong>垂直同步</strong>設定為 <strong>Fast Sync</strong></li></ul><p>144 Hz 顯示器的典型 NVIDIA Profile Inspector 設定值：</p><ul><li>Frame Rate Limiter V3: 138 FPS</li><li>GSYNC - Application Mode: Fullscreen and Windowed</li><li>GSYNC - Application State: Allow</li><li>GSYNC - Global Feature: On</li><li>GSYNC - Global Mode: Fullscreen and Windowed</li><li>Vertical Sync: Fast Sync</li></ul>",
                     "title": "高重新整理率螢幕 (NVIDIA)"
+                },
+                "smart-app-control": {
+                    "title": "Windows 11 智慧型應用程式控制",
+                    "body": "<p>Windows 11 的 <strong>智慧型應用程式控制</strong> 可能會阻擋 Firestone 的記憶體讀取檔案 (<code>OverwolfUnitySpy.dll</code>)。當這種情況發生時：</p><ul><li>你在遊戲內看不到任何小工具</li><li>重新啟動 Firestone 或《爐石戰記》也無法解決問題</li><li>Firestone 主視窗（收藏、數據統計）仍可正常運作</li></ul><p>要檢查 智慧型應用程式控制是否開啟：請開啟 <strong>Windows 安全性 → 應用程式與瀏覽器控制 → 智慧型應用程式控制設定</strong>。請參閱微軟的 <a href=\"https://support.microsoft.com/zh-tw/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">智慧型應用程式控制常見問題</a>。</p><p>請更新至最新版本的 Firestone。近期的版本已對記憶體讀取外掛程式進行數位簽署，以便 Windows 允許其執行。若你已使用最新版本但覆疊介面仍保持空白，請透過應用程式回報錯誤。</p>"
                 }
             },
             "permalink-aria": "連結至此區段",
@@ -5530,7 +5550,7 @@
                             "body": "<ul><li>英雄統計數據：<code>https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-%tribeSuffix%-%timeSuffix%.gz.json</code><ul><li>例如：<a href=\"https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-all-tribes-last-patch.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">bgs-global-stats-all-tribes-last-patch.gz.json</a></li><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li><li>完美賽局：<a href=\"https://static.zerotoheroes.com/api/bgs-perfect-games.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/bgs-perfect-games.json</code></a><ul><li><a href=\"https://github.com/Zero-to-Heroes/trigger-publish-bgs-perfect-game\" target=\"_blank\" rel=\"noopener noreferrer\">trigger-publish-bgs-perfect-game</a></li></ul></li><li>任務統計數據：<code>https://static.zerotoheroes.com/api/bgs/quests/bgs-global-stats-%timeSuffix%.gz.json</code><ul><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\">cron-build-bgs-hero-stats</a></li></ul></li></ul>"
                         },
                         "general": {
-                            "body": "<ul><li>所有卡牌：<a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</code></a><ul><li>將 <code>enUS</code> 替換為《爐石戰記》支援的語言代碼即可存取其他語言版本</li></ul></li></ul>",
+                            "body": "<ul><li>所有卡牌：<a href=\"https://static.firestoneapp.com/data/cards/cards_zhTW.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_zhTW.gz.json</code></a><ul><li>將 <code>zhTW</code> 替換為《爐石戰記》支援的語言代碼即可存取其他語言版本</li></ul></li></ul>",
                             "title": "一般設定"
                         }
                     },
@@ -6010,12 +6030,85 @@
             "home": "Firestone 首頁",
             "premium": "Premium",
             "download-alt": "下載 Firestone",
-            "language": "語言"
+            "language": "語言",
+            "downloads": "下載項目"
         },
         "redirect": {
             "partner": "正在重新導向...",
             "in-game-replay": "正在重新導向至 Firestone...",
             "premium-checkout": "正在重新導向至 Firestone..."
+        },
+        "downloads": {
+            "document-title": "下載 Firestone — www.firestoneapp.com",
+            "overwolf": {
+                "badge": "現已推出",
+                "title": "Overwolf",
+                "blurb": "目前的公開發行版本。需要配合 Overwolf 桌面應用程式執行。",
+                "cta": "下載 Overwolf 版",
+                "note": "若尚未安裝 Overwolf，將會為你進行安裝。"
+            },
+            "standalone": {
+                "title": "獨立版 (Standalone)",
+                "badge": "封閉測試 (Closed beta)",
+                "cta": "下載獨立版 (Standalone)",
+                "blurb": "不含 Overwolf 的 Firestone 版本。目前仍處於封閉測試階段。",
+                "discord-cta": "在 Discord 上詢問我們",
+                "discord-lead": "想搶先體驗嗎？"
+            },
+            "features": {
+                "title": "你能獲得的免費功能",
+                "deck-tracker": {
+                    "title": "牌組記牌器",
+                    "blurb": "在對戰時查看牌堆、手牌、戰場與墓地中的剩餘卡牌——並提供對手卡牌、秘密協助工具與計數器。",
+                    "caption": "遊戲內牌組記牌器與覆疊介面",
+                    "alt": "兩側皆有 Firestone 牌組記牌器覆疊介面的《爐石戰記》對戰畫面"
+                },
+                "lead": "本輔助工具無需訂閱即可免費使用。部分覆疊介面設有每日或每週的使用額度；訂閱 Premium 即可解除這些限制。",
+                "collection": {
+                    "alt": "顯示各個《爐石戰記》系列收集進度的收藏總覽",
+                    "title": "收藏追蹤器",
+                    "blurb": "瀏覽完整的卡牌收藏，一目瞭然進度，並追蹤卡牌包、保底計數器與重複卡牌。",
+                    "caption": "按卡牌包劃分的收藏總覽"
+                },
+                "battlegrounds": {
+                    "title": "英雄戰場輔助工具",
+                    "blurb": "按⭐️、類別或機制瀏覽旅店手下清單，並提供勝率預測與大廳工具。",
+                    "caption": "英雄戰場手下清單",
+                    "alt": "按類別分組並帶有旅店⭐️篩選器的英雄戰場手下清單"
+                },
+                "related-cards": {
+                    "alt": "當滑鼠懸停在清單中的卡牌時牌組記牌器顯示相關卡牌",
+                    "title": "相關卡牌",
+                    "caption": "滑鼠懸停時顯示相關卡牌",
+                    "blurb": "將滑鼠懸停在記牌器中的卡牌上，即可在清單旁直接查看其生成或相關的卡牌。"
+                },
+                "overlays": {
+                    "title": "遊戲內覆疊介面",
+                    "alt": "顯示每張可選卡牌抽牌影響數據的發現覆疊介面",
+                    "caption": "帶有抽牌影響數據的發現覆疊介面",
+                    "blurb": "提供發現與起手換牌指引，並附帶每日免費額度，讓你在關鍵時刻掌握數據。"
+                },
+                "mods": {
+                    "alt": "帶有開啟/關閉開關的 Firestone 社群模組設定清單",
+                    "title": "模組",
+                    "caption": "內建模組管理器",
+                    "blurb": "從「設定」中一鍵啟用社群模組——包含自動表情靜音、牌組自動完成、卡牌收藏調整等功能。"
+                }
+            },
+            "lightbox": {
+                "close": "關閉全尺寸圖片",
+                "view-full-size": "檢視全尺寸圖片：{{alt}}"
+            },
+            "premium": {
+                "lead": "訂閱 Premium 可解鎖無限次數的發現與起手換牌覆疊介面、完整的環境數據分析以及英雄戰場額外功能。",
+                "cta": "查看 Premium 方案",
+                "title": "想要無限次的覆疊介面與更深入的數據分析嗎？"
+            },
+            "editions-label": "可用的版本",
+            "hero": {
+                "title": "下載 Firestone",
+                "subtitle": "免費的《爐石戰記》輔助工具：牌組記牌器、覆疊介面、卡牌收藏、英雄戰場工具等。"
+            }
         }
     },
     "archetype": {
