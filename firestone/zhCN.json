@@ -518,7 +518,7 @@
                 },
                 "memory-reading": {
                     "title": "无法读取内存",
-                    "message": "严重错误：无法读取游戏内存。点击在线查看更多信息。"
+                    "message": "严重错误：游戏内浮窗可能缺失，因为Firestone无法读取游戏。点击在线查看更多信息。"
                 },
                 "truncated-logs": {
                     "message": "严重错误：请更新游戏配置文件。点击在线查看更多信息。",
@@ -3980,7 +3980,8 @@
                 "import-no-install-path": "首先设置游戏安装位置。",
                 "source-third-party": "第三方",
                 "import-already-present": "此模组已在你的列表中。",
-                "source-trusted": "受信任的"
+                "source-trusted": "受信任的",
+                "explanation": "模组是一类可以改变《炉石传说》游戏行为的插件。"
             },
             "third-party": {
                 "intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
@@ -4115,7 +4116,11 @@
                 "text-11": "这也意味着Firestone中会有部分翻译遗漏，它们将会以英文显示。",
                 "text-2": "如果您想要参与Firestone的翻译，请查看 {{link}} 的教程。",
                 "link": "此处",
-                "text-3": "请重启Firestone（右键点击系统托盘中的 Firestone 图标）以确保变更为新语言。"
+                "text-3": "请重启Firestone（右键点击系统托盘中的 Firestone 图标）以确保变更为新语言。",
+                "ai-text": "启用后，缺失的翻译将被AI生成的文本填充。社区翻译始终优先。AI生成可能不完美，如果没有AI翻译，则仍然使用英语。",
+                "ai-title": "AI翻译",
+                "ai-toggle-tooltip": "用AI生成的文本填充未翻译的字符串。总是优先使用社区翻译。",
+                "ai-toggle-label": "使用AI翻译"
             },
             "premium": {
                 "title": "会员选项",
@@ -4314,7 +4319,8 @@
                 "empty": "未找到附加组件。请打开文件夹并将附加组件包拖放到该文件夹。",
                 "open-folder": "打开文件夹",
                 "permissions": "权限：",
-                "refresh": "刷新"
+                "refresh": "刷新",
+                "explanation": "（实验性功能）附加组件是 Firestone 本身的可选扩展。它们在沙盒环境中运行，并且只能使用其声明的权限，不会修改《炉石传说》客户端。"
             },
             "account": {
                 "unlink-battlenet-failed": "无法解除与 Battle.net 的关联。请稍后再试。",
@@ -4353,7 +4359,17 @@
                 "signed-in-linked-overwolf-tooltip": "关联的 Overwolf 账号：{{name}}",
                 "link-overwolf-need-battlenet": "请先使用 Battle.net 登录，然后再次尝试关联 Overwolf。",
                 "intro-battlenet-linked-overwolf": "此 Battle.net 登录与你的 Overwolf 账号相关联。如需单独使用每个登录，请解除 Overwolf 的关联。",
-                "unlink-overwolf-button": "取消 Overwolf 关联"
+                "unlink-overwolf-button": "取消 Overwolf 关联",
+                "perks-replays-title": "回放大约保存一年",
+                "perks-intro": "登录免费。这能让 Firestone 更好地为你服务。",
+                "perks-title": "为什么要登录？",
+                "perks-sync-title": "你的数据会随你同步",
+                "perks-sync-detail": "无论重新安装还是更换电脑，你的对局记录、开包统计和成就都会随你保留。",
+                "perks-lottery-title": "进入彩票抽奖",
+                "perks-lottery-detail": "积分仍然在本地累积；登录以同步它们并在赛季结束时进入抽奖。",
+                "perks-replays-detail": "没有账号，回放文件将在60天后被删除。",
+                "perks-history-title": "你的对局记录会保留在云端",
+                "perks-history-detail": "未关联账号的对局记录大约会在一年后自动清除。"
             }
         },
         "decktracker": {
@@ -5400,7 +5416,7 @@
                 },
                 "memory-reading-error": {
                     "title": "内存读取错误／以管理员身份运行",
-                    "intro": "<p>当应用没有权限访问游戏客户端内存时，会出现“内存读取”错误。通常是权限问题所致（因此以管理员身份运行一般可以解决）。</p><p>以下是以管理员身份运行所需步骤的详细说明：</p>",
+                    "intro": "<p>当应用无法读取游戏客户端内存时，会出现“内存读取”错误。通常是权限问题所致（因此以管理员身份运行一般可以解决）。在 Windows 11 上，<a href=\"/faq#smart-app-control\">智能应用控制</a> 也可以阻止 Firestone 的内存读取器 DLL，即使浮窗本身显示了也是如此。</p><p>以下是以管理员身份运行所需步骤的详细说明：</p>",
                     "admin-steps": "<ul><li>关闭《炉石传说》</li><li>关闭 Overwolf</li><li>将 Firestone 和／或 Overwolf 快捷方式设置为“以管理员身份运行”<ul><li>Overwolf.exe 和 OverwolfLauncher.exe 应以管理员身份运行</li><li>也可以启用“为所有用户更改设置”</li></ul></li></ul>",
                     "after-admin": "<ul><li>重新启动 Overwolf（部分用户需要重启整台电脑）</li><li>然后重新启动《炉石传说》</li><li>如果仍然无效（即使<strong>完整重启电脑</strong>后），请检查《炉石传说》本身是否以管理员身份运行。如果是，请尝试以普通权限运行。</li><li>如果问题依旧，可尝试在该界面授予所有权限：</li></ul>"
                 },
@@ -5456,7 +5472,7 @@
                 },
                 "app-isnt-showing": {
                     "title": "应用未显示",
-                    "body": "<ul><li>请确保在启动《炉石传说》<strong>之前</strong>已运行 Overwolf</li><li>检查 Overwolf 浮窗是否已启用：<a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 游戏设置</a></li><li>以管理员身份运行 Firestone（之后需要关闭并重新打开 Overwolf）。参见<a href=\"/faq#memory-reading-error\">内存读取错误／以管理员身份运行</a></li><li>检查能否使用 <strong>Chrome</strong> 访问 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a>。如果不能，说明路由器／网络服务提供商／VPN 可能阻止了对 AWS 的访问。家长控制也可能导致此问题。<ul><li><strong>重要</strong>：近期此原因似乎更为常见，请检查家长控制设置（包括网络服务提供商处的设置），并将 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> 和 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名单</li><li>另请参阅本页底部的<a href=\"/faq#connectivity-issues-global\">连接问题</a>章节</li></ul></li><li>DirectX 12 可能会干扰浮窗渲染。尝试禁用它，看看情况是否改善（TODO：需要详细说明）</li><li>如果所有方法都无效，而且游戏安装在 C:\\Program Files 或 C:\\Program Files (x86) 下，请尝试将游戏移至其他文件夹。这些目录受到系统保护，应用读取游戏信息时可能因此出现问题</li></ul>"
+                    "body": "<ul><li>请确保在启动《炉石传说》<strong>之前</strong>已运行 Overwolf</li><li>检查 Overwolf 浮窗是否已启用：<a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 游戏设置</a></li><li>以管理员身份运行 Firestone（之后需要关闭并重新打开 Overwolf）。参见<a href=\"/faq#memory-reading-error\">内存读取错误／以管理员身份运行</a></li><li>在 Windows 11 中，智能应用控制可以阻止 Firestone 的内存读取器，使得浮窗保持空白。参见 <a href=\"/faq#smart-app-control\">智能应用控制</a></li><li>检查能否使用 <strong>Chrome</strong> 访问 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a>。如果不能，说明路由器／网络服务提供商／VPN 可能阻止了对 AWS 的访问。家长控制也可能导致此问题。<ul><li><strong>重要</strong>：近期此原因似乎更为常见，请检查家长控制设置（包括网络服务提供商处的设置），并将 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> 和 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a> 加入白名单</li><li>另请参阅本页底部的<a href=\"/faq#connectivity-issues-global\">连接问题</a>章节</li></ul></li><li>DirectX 12 可能会干扰浮窗渲染。尝试禁用它，看看情况是否改善（TODO：需要详细说明）</li><li>如果所有方法都无效，而且游戏安装在 C:\\Program Files 或 C:\\Program Files (x86) 下，请尝试将游戏移至其他文件夹。这些目录受到系统保护，应用读取游戏信息时可能因此出现问题</li></ul>"
                 },
                 "general-checklist": {
                     "body": "<ul><li>请确保在启动《炉石传说》<strong>之前</strong>已运行 Overwolf</li><li>（尤其是在新补丁发布后）关闭《炉石传说》和 Firestone，然后依次重新启动 Firestone 和《炉石传说》。这会强制更新应用（游戏运行时更新有时无法正常完成）</li><li>检查能否从桌面启动 Firestone（即《炉石传说》未运行时）。如果没有任何反应：<ul><li>请查看下方其他章节（尤其是本页底部有关<a href=\"/faq#connectivity-issues-global\">连接问题</a>的章节）</li><li>如果仍无帮助，请创建日志压缩包并手动发送给我（例如通过 Discord）。参见<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">如何获取 Overwolf 日志</a></li></ul></li><li>在《炉石传说》运行时，检查游戏安装目录的 <code>Logs/Hearthstone_XXX</code> 下是否有 <code>Decks.log</code> 文件。如果没有，请重启游戏</li><li>尝试禁用杀毒软件／防火墙，然后重启 Firestone</li><li>如果 Firestone 闪烁，可能是联想的新应用 LegionZone 所致。尝试停用它，看看问题是否解决。</li><li>检查游戏内时钟显示的时间是否正确。系统时间配置不当时可能出现此问题，通常是因为关闭了“自动调整夏令时”选项</li></ul>",
@@ -5481,6 +5497,10 @@
                 "game-is-slow-high-refresh": {
                     "body": "<p>将游戏帧率限制为 60 FPS 会让高频操作显得迟缓。对于高刷新率显示器，更好的方案是将帧率限制在略低于刷新率的水平，同时保持可变刷新率正常工作：</p><ul><li>将游戏和 GPU 的帧率限制设置为显示器的 <strong>刷新率减 6</strong>（例如，144 Hz → 138 FPS）</li><li>保持 <strong>G-Sync</strong> 或 <strong>FreeSync</strong> 启用并正常工作</li><li>在 NVIDIA 控制面板或 NVIDIA Profile Inspector 中，将 <strong>垂直同步</strong> 设置为 <strong>快速</strong></li></ul><p>144 Hz 显示器常用的 NVIDIA Profile Inspector 设置值：</p><ul><li>Frame Rate Limiter V3: 138 FPS</li><li>GSYNC - Application Mode: Fullscreen and Windowed</li><li>GSYNC - Application State: Allow</li><li>GSYNC - Global Feature: On</li><li>GSYNC - Global Mode: Fullscreen and Windowed</li><li>Vertical Sync: Fast Sync</li></ul>",
                     "title": "高刷显示器（NVIDIA）"
+                },
+                "smart-app-control": {
+                    "title": "Windows 11 智能应用控制",
+                    "body": "<p>Windows 11 的 <strong>智能应用控制</strong> 可能会阻止 Firestone 的内存读取器文件（<code>OverwolfUnitySpy.dll</code>）。发生这种情况时：</p><ul><li>游戏内不会显示任何小部件</li><li>重启 Firestone 或《炉石传说》也无法解决问题</li><li>Firestone 主窗口（收藏、统计等）仍可正常使用</li></ul><p>要检查智能应用控制是否已开启，请打开 <strong>Windows 安全中心 → 应用和浏览器控制 → 智能应用控制设置</strong>。详情请参阅微软的 <a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">智能应用控制常见问题</a>。</p><p>请将 Firestone 更新至最新版本。近期版本已对内存读取插件进行签名，以便 Windows 允许其正常运行。如果你已经使用最新版本，但游戏内浮窗仍然没有内容，请通过应用提交错误报告。</p>"
                 }
             },
             "nav-label": "常见问题",
@@ -5496,7 +5516,8 @@
             "download-alt": "下载 Firestone",
             "home": "Firestone 首页",
             "premium": "高级会员",
-            "language": "语言"
+            "language": "语言",
+            "downloads": "下载"
         },
         "redirect": {
             "in-game-replay": "正在跳转至 Firestone……",
@@ -5949,6 +5970,78 @@
             "page-title": "文档",
             "permalink-aria": "此章节的链接",
             "toc-title": "本页内容"
+        },
+        "downloads": {
+            "document-title": "下载 Firestone — www.firestoneapp.com",
+            "overwolf": {
+                "note": "如果尚未安装 Overwolf，安装 Firestone 时会一并安装。",
+                "blurb": "当前公开版本，需要安装 Overwolf 桌面应用。",
+                "badge": "现已上线",
+                "cta": "下载 Overwolf 版",
+                "title": "Overwolf"
+            },
+            "standalone": {
+                "badge": "封闭测试",
+                "blurb": "无需 Overwolf 的 Firestone 独立版，目前仍处于封闭测试阶段。",
+                "title": "独立版",
+                "cta": "下载独立版",
+                "discord-lead": "想要提前获取？",
+                "discord-cta": "在 Discord 上咨询我们"
+            },
+            "features": {
+                "deck-tracker": {
+                    "title": "记牌器",
+                    "blurb": "对局中随时查看牌库、手牌、场上卡牌和墓地中的卡牌，还可查看对手卡牌、奥秘提示以及相关计数器。",
+                    "caption": "游戏内的记牌器和浮窗",
+                    "alt": "一个双方带有 Firestone 记牌器浮窗的炉石传说棋盘"
+                },
+                "lead": "助手无需订阅即可使用。某些浮窗有每日或每周的使用限额；高级会员会移除这些限制。",
+                "related-cards": {
+                    "alt": "鼠标悬停在一张记牌器列表中卡牌上时显示相关卡牌",
+                    "title": "相关卡牌",
+                    "caption": "鼠标悬停时显示相关卡牌",
+                    "blurb": "将鼠标悬停在记牌器中的卡牌上，即可在列表旁查看其生成卡牌和相关卡牌。"
+                },
+                "collection": {
+                    "title": "收藏追踪",
+                    "blurb": "浏览完整收藏，一目了然地查看各系列的收集进度，并追踪开包、保底进度和多余卡牌。",
+                    "caption": "按扩展包查看收藏概况",
+                    "alt": "收藏概况，显示炉石传说每个扩展包的完成进度"
+                },
+                "battlegrounds": {
+                    "alt": "酒馆战棋随从列表按类型分组，并带有酒馆等级过滤器",
+                    "caption": "酒馆战棋随从列表",
+                    "title": "酒馆战棋助手",
+                    "blurb": "按等级、种族或机制浏览酒馆随从列表，以及对战胜率和大厅工具。"
+                },
+                "mods": {
+                    "blurb": "可在设置中启用社区模组，包括自动屏蔽表情、自动补全卡组、收藏功能调整等，每项功能都能一键开关。",
+                    "caption": "内置模组管理器",
+                    "alt": "Firestone 模组设置，列出了社区模组及开关",
+                    "title": "模组"
+                },
+                "title": "你能免费获得什么",
+                "overlays": {
+                    "blurb": "每天可免费使用一定次数的发现和起手换牌指南，在关键时刻为你的选择提供数据参考。",
+                    "alt": "发现浮窗，显示了每张卡抽到后的影响数据",
+                    "caption": "带有抽到后影响数据的发现浮窗",
+                    "title": "游戏内浮窗"
+                }
+            },
+            "lightbox": {
+                "view-full-size": "查看全尺寸图片：{{alt}}",
+                "close": "关闭全尺寸图片"
+            },
+            "premium": {
+                "lead": "高级会员可解锁无限次发现与起手留牌浮窗、完整的环境数据分析，以及更多酒馆战棋功能。",
+                "cta": "查看高级会员",
+                "title": "想要无限使用浮窗和更深入的数据分析？"
+            },
+            "hero": {
+                "title": "下载 Firestone",
+                "subtitle": "免费的《炉石传说》游戏助手，记牌器、游戏内浮窗、收藏管理、酒馆战棋工具等功能一应俱全。"
+            },
+            "editions-label": "可用版本"
         }
     },
     "twitch": {
