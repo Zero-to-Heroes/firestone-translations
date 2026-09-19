@@ -1,52 +1,4 @@
 {
-	"ftue": {
-		"experience": {
-			"power": {
-				"text": "顯示進階設定與額外覆蓋層，適合重度玩家。",
-				"title": "我要全部工具"
-			},
-			"recommended": {
-				"text": "完整預設體驗，包含常用覆蓋層與小工具。若你有 Premium 支持者，非常推薦這個選項。",
-				"title": "推薦"
-			},
-			"simple": {
-				"text": "只保留主要小工具，盡量減少畫面上的干擾。",
-				"title": "保持簡單"
-			},
-			"subtitle": "之後可以再改，也可以在設定中重新播放這段介紹。",
-			"title": "你需要多少協助？"
-		},
-		"finish": {
-			"experience-power": "我要全部工具",
-			"experience-recommended": "推薦",
-			"experience-simple": "保持簡單",
-			"replay-warning": "這會依你的選擇更新覆蓋層與小工具設定。之後可以在設定 → 應用程式 → 管理員中還原先前的設定。",
-			"text": "你選擇了{{experience}}。隨時點擊齒輪圖示開啟設定。也可以在設定 → 應用程式 → 管理員中重新播放這段介紹。",
-			"title": "一切就緒"
-		},
-		"overview": {
-			"battlegrounds": {
-				"text": "從選擇英雄、戰鬥模擬與隨從清單，到賽後回顧。",
-				"title": "英雄戰場"
-			},
-			"constructed": {
-				"text": "即時記牌器、調度協助，以及此視窗中的環境與個人統計。",
-				"title": "排名模式"
-			},
-			"learn-more": "查看更多詳情",
-			"more": {
-				"text": "競技場的選牌協助、你的牌庫收藏，以及過往賽局重播。",
-				"title": "競技場、收藏與歷史"
-			},
-			"overlays": {
-				"text": "賽局開始時，小幫手會自動出現。",
-				"title": "遊戲內覆蓋層"
-			},
-			"title": "Firestone 能做什麼"
-		},
-		"setup-intro": "這段簡短設定能讓你在開始前依自己的喜好調整應用程式。",
-		"subtitle-2": "它有兩個主要部分：遊戲內覆蓋層，提供即時資訊協助你做出最佳決策；以及桌面應用程式，包含所有賽局統計、卡牌收藏等。"
-	},
 	"settings": {
 		"general": {
 			"account": {
@@ -61,20 +13,37 @@
 				"perks-sync-title": "資料隨身走",
 				"perks-title": "為什麼要登入？"
 			},
-			"launch": {
-				"replay-ftue-button-label": "重新播放介紹",
-				"replay-ftue-button-text": "開始",
-				"replay-ftue-tooltip": "再次顯示首次設定。選擇體驗等級會更新覆蓋層設定。",
-				"restore-ftue-settings-button-label": "還原先前設定",
-				"restore-ftue-settings-button-text": "還原",
-				"restore-ftue-settings-confirmation": "還原上次介紹設定檔之前的設定？",
-				"restore-ftue-settings-tooltip": "還原你上次套用介紹設定檔之前的覆蓋層設定。之後更改設定檔不會覆寫這份備份。"
-			},
 			"localization": {
 				"ai-text": "啟用後，缺少的翻譯會以 AI 產生的文字補上。社群翻譯一律優先。AI 文字可能不夠完美；若沒有 AI 翻譯，仍會使用英文。",
 				"ai-title": "AI 翻譯",
 				"ai-toggle-label": "使用 AI 翻譯",
 				"ai-toggle-tooltip": "以 AI 產生的文字填補尚未翻譯的字串。社群翻譯一律優先。"
+			},
+			"addons": {
+				"explanation": "（實驗性）附加功能是 Firestone 本身的選用擴充。它們會在沙盒中執行，且僅具備其聲明的權限。它們不會修改《爐石戰記》用戶端。"
+			},
+			"hotkeys": {
+				"battlegrounds": "顯示/隱藏英雄戰場視窗",
+				"change": "變更",
+				"collection": "顯示/隱藏主視窗",
+				"conflict": "該組合已被 {{hotkey}} 使用。",
+				"failed": "無法指定此快速鍵。它可能已被其他應用程式使用。",
+				"intro": "變更用來顯示或隱藏 Firestone 視窗的按鍵。按一下「變更」，然後按下新組合。Escape 可取消。",
+				"listening": "請按下按鍵...",
+				"live-info": "顯示即時資訊",
+				"reset": "重設",
+				"title": "快速鍵"
+			},
+			"menu": {
+				"hotkeys": "快速鍵"
+			},
+			"mods": {
+				"explanation": "模組是會改變《爐石戰記》本身行為的外掛程式。"
+			}
+		},
+		"decktracker": {
+			"global": {
+				"individual-counters-size": "個別計數器大小"
 			}
 		}
 	},
@@ -149,10 +118,79 @@
 				"discord-cta": "在 Discord 上聯絡我們",
 				"discord-lead": "想要搶先體驗？",
 				"title": "獨立版"
+			},
+			"social-proof": {
+				"carousel": {
+					"gallery": "使用 Firestone 的冠軍，{{count}} 位玩家",
+					"goto": "顯示 {{name}}",
+					"next": "下一位冠軍",
+					"previous": "上一位冠軍",
+					"roledescription": "輪播"
+				},
+				"champions": {
+					"bunnyhoppor": {
+						"alt": "Bunnyhoppor（2022 年爐石戰記世界冠軍）的官方圖",
+						"portrait-alt": "Bunnyhoppor 的肖像"
+					},
+					"demoshadow": {
+						"alt": "Demoshadow（2026 年爐石戰記夏季冠軍）的官方圖",
+						"portrait-alt": "Demoshadow 的肖像"
+					},
+					"denimblue": {
+						"alt": "DenimBlue，多次歐洲地下競技場排行榜第一",
+						"portrait-alt": "DenimBlue 的肖像"
+					},
+					"kwanwoo": {
+						"alt": "Kwanwoo（2026 年爐石戰記冬季冠軍）的官方圖",
+						"portrait-alt": "Kwanwoo 的肖像"
+					},
+					"mlyanming": {
+						"alt": "mlYanming（2024 年爐石戰記世界冠軍）的官方圖",
+						"portrait-alt": "mlYanming 的肖像"
+					},
+					"otgxhh": {
+						"alt": "2026 年爐石戰記世界冠軍 OTGxhh 在台上舉起獎盃",
+						"portrait-alt": "OTGxhh 的肖像"
+					},
+					"pockettrain": {
+						"alt": "PocketTrain（2023 年爐石戰記世界冠軍）的官方圖",
+						"portrait-alt": "PocketTrain 的肖像"
+					},
+					"slyders": {
+						"alt": "Slyders，多次歐洲英雄戰場排行榜第一",
+						"portrait-alt": "Slyders 的肖像"
+					}
+				},
+				"lead": "世界冠軍、大師巡迴賽優勝者與排行榜頂尖玩家都在使用 Firestone——包括 2026 年世界冠軍 OTGxhh。",
+				"title": "冠軍都在用",
+				"titles": {
+					"bg-eu-number-one": "多次歐洲英雄戰場第一",
+					"summer-champion": "{{year}} 夏季冠軍",
+					"ua-eu-number-one": "多次歐洲地下競技場第一",
+					"winter-champion": "{{year}} 冬季冠軍",
+					"world-champion": "{{year}} 世界冠軍"
+				}
 			}
 		},
 		"nav": {
 			"downloads": "下載"
+		},
+		"faq": {
+			"sections": {
+				"smart-app-control": {
+					"body": "<p>Windows 11 的<strong>智慧應用程式控制</strong>可能會封鎖 Firestone 的記憶體讀取檔案（<code>OverwolfUnitySpy.dll</code>）。發生時：</p><ul><li>遊戲中看不到小工具</li><li>重新啟動 Firestone 或《爐石戰記》沒有幫助</li><li>Firestone 主視窗（收藏、統計）仍可能正常運作</li></ul><p>若要檢查智慧應用程式控制是否開啟：開啟<strong>Windows 安全性 → 應用程式及瀏覽器控制 → 智慧應用程式控制設定</strong>。請參閱 Microsoft 的<a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">智慧應用程式控制常見問題</a>。</p><p>請更新到最新版 Firestone。近期版本已為記憶體讀取外掛程式簽署，讓 Windows 可以允許它。如果你已經是最新版本，但重疊顯示仍是空的，請從應用程式回報錯誤。</p>",
+					"title": "Windows 11 智慧應用程式控制"
+				}
+			}
 		}
+	},
+	"decktracker": {
+		"guessed-info": {
+			"minion-type": "手下類型",
+			"minion-types": "手下類型"
+		}
+	},
+	"quests": {
+		"bloodstones-daily": "每日血石"
 	}
 }

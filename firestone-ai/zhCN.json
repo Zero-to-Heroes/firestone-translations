@@ -1,52 +1,4 @@
 {
-	"ftue": {
-		"experience": {
-			"power": {
-				"text": "显示进阶设置和额外覆盖层，适合重度玩家。",
-				"title": "我要全部工具"
-			},
-			"recommended": {
-				"text": "完整体验，包含常用覆盖层和小部件。如果你有高级会员，非常推荐这个选项。",
-				"title": "推荐"
-			},
-			"simple": {
-				"text": "只保留主要小部件，尽量减少屏幕上的干扰。",
-				"title": "尽量简洁"
-			},
-			"subtitle": "之后可以再改，也可以在设置中重新播放这段介绍。",
-			"title": "你需要多少帮助？"
-		},
-		"finish": {
-			"experience-power": "我要全部工具",
-			"experience-recommended": "推荐",
-			"experience-simple": "尽量简洁",
-			"replay-warning": "这会按你的选择更新覆盖层和小部件设置。之后可以在设置 → 应用 → 管理员中恢复之前的设置。",
-			"text": "你选择了{{experience}}。随时点击齿轮图标打开设置。也可以在设置 → 应用 → 管理员中重新播放这段介绍。",
-			"title": "一切就绪"
-		},
-		"overview": {
-			"battlegrounds": {
-				"text": "从选择英雄、战斗模拟和随从列表，到对战后的回顾。",
-				"title": "酒馆战棋"
-			},
-			"constructed": {
-				"text": "实时记牌器、调度帮助，以及本窗口中的环境和个人数据。",
-				"title": "天梯模式"
-			},
-			"learn-more": "查看更多详情",
-			"more": {
-				"text": "竞技模式的选牌帮助、你的卡牌收藏，以及过往对战回放。",
-				"title": "竞技模式、收藏与历史"
-			},
-			"overlays": {
-				"text": "对战开始时，助手会自动出现。",
-				"title": "游戏内覆盖层"
-			},
-			"title": "Firestone 能做什么"
-		},
-		"setup-intro": "这段简短设置能让你在开始前按自己的喜好调整应用。",
-		"subtitle-2": "它有两个主要部分：游戏内覆盖层，提供实时信息帮助你做出最佳决策；以及桌面应用，包含所有对战数据、卡牌收藏等。"
-	},
 	"settings": {
 		"general": {
 			"account": {
@@ -61,20 +13,37 @@
 				"perks-sync-title": "数据随身走",
 				"perks-title": "为什么要登录？"
 			},
-			"launch": {
-				"replay-ftue-button-label": "重新播放介绍",
-				"replay-ftue-button-text": "开始",
-				"replay-ftue-tooltip": "再次显示首次设置。选择体验级别会更新覆盖层设置。",
-				"restore-ftue-settings-button-label": "恢复之前的设置",
-				"restore-ftue-settings-button-text": "恢复",
-				"restore-ftue-settings-confirmation": "恢复上次介绍配置之前的设置？",
-				"restore-ftue-settings-tooltip": "恢复你上次应用介绍配置之前的覆盖层设置。之后更改配置不会覆盖这份备份。"
-			},
 			"localization": {
 				"ai-text": "启用后，缺失的翻译会用 AI 生成的文本补全。社区翻译始终优先。AI 文本可能不够完美；如果没有 AI 翻译，仍会显示英文。",
 				"ai-title": "AI 翻译",
 				"ai-toggle-label": "使用 AI 翻译",
 				"ai-toggle-tooltip": "用 AI 生成的文本填补未翻译的字符串。社区翻译始终优先。"
+			},
+			"addons": {
+				"explanation": "（实验性）附加组件是 Firestone 自身的可选扩展。它们在沙盒中运行，并且只能获得所声明的权限。它们不会修改炉石传说客户端。"
+			},
+			"hotkeys": {
+				"battlegrounds": "显示/隐藏酒馆战棋窗口",
+				"change": "更改",
+				"collection": "显示/隐藏主窗口",
+				"conflict": "该组合已被 {{hotkey}} 占用。",
+				"failed": "无法分配此快捷键。它可能已被其他应用占用。",
+				"intro": "更改用于显示或隐藏 Firestone 窗口的按键。点击“更改”，然后按下新组合。Escape 取消。",
+				"listening": "请按下一个键...",
+				"live-info": "显示实时信息",
+				"reset": "重置",
+				"title": "快捷键"
+			},
+			"menu": {
+				"hotkeys": "快捷键"
+			},
+			"mods": {
+				"explanation": "模组是会改变炉石传说本身行为的插件。"
+			}
+		},
+		"decktracker": {
+			"global": {
+				"individual-counters-size": "单个计数器尺寸"
 			}
 		}
 	},
@@ -149,10 +118,79 @@
 				"discord-cta": "在 Discord 上联系我们",
 				"discord-lead": "想要抢先体验？",
 				"title": "独立版"
+			},
+			"social-proof": {
+				"carousel": {
+					"gallery": "使用 Firestone 的冠军，{{count}} 名选手",
+					"goto": "显示 {{name}}",
+					"next": "下一位冠军",
+					"previous": "上一位冠军",
+					"roledescription": "轮播"
+				},
+				"champions": {
+					"bunnyhoppor": {
+						"alt": "Bunnyhoppor（2022 年炉石传说世界冠军）的官方图",
+						"portrait-alt": "Bunnyhoppor 的肖像"
+					},
+					"demoshadow": {
+						"alt": "Demoshadow（2026 年炉石传说夏季冠军）的官方图",
+						"portrait-alt": "Demoshadow 的肖像"
+					},
+					"denimblue": {
+						"alt": "DenimBlue，多次欧洲地下竞技场排行榜第一",
+						"portrait-alt": "DenimBlue 的肖像"
+					},
+					"kwanwoo": {
+						"alt": "Kwanwoo（2026 年炉石传说冬季冠军）的官方图",
+						"portrait-alt": "Kwanwoo 的肖像"
+					},
+					"mlyanming": {
+						"alt": "mlYanming（2024 年炉石传说世界冠军）的官方图",
+						"portrait-alt": "mlYanming 的肖像"
+					},
+					"otgxhh": {
+						"alt": "2026 年炉石传说世界冠军 OTGxhh 在台上举起奖杯",
+						"portrait-alt": "OTGxhh 的肖像"
+					},
+					"pockettrain": {
+						"alt": "PocketTrain（2023 年炉石传说世界冠军）的官方图",
+						"portrait-alt": "PocketTrain 的肖像"
+					},
+					"slyders": {
+						"alt": "Slyders，多次欧洲酒馆战棋排行榜第一",
+						"portrait-alt": "Slyders 的肖像"
+					}
+				},
+				"lead": "世界冠军、大师巡回赛冠军和排行榜顶尖选手都在使用 Firestone——包括 2026 年世界冠军 OTGxhh。",
+				"title": "冠军都在用",
+				"titles": {
+					"bg-eu-number-one": "多次欧洲酒馆战棋第一",
+					"summer-champion": "{{year}} 夏季冠军",
+					"ua-eu-number-one": "多次欧洲地下竞技场第一",
+					"winter-champion": "{{year}} 冬季冠军",
+					"world-champion": "{{year}} 世界冠军"
+				}
 			}
 		},
 		"nav": {
 			"downloads": "下载"
+		},
+		"faq": {
+			"sections": {
+				"smart-app-control": {
+					"body": "<p>Windows 11 的<strong>智能应用控制</strong>可能会拦截 Firestone 的内存读取文件（<code>OverwolfUnitySpy.dll</code>）。出现这种情况时：</p><ul><li>游戏内看不到小组件</li><li>重启 Firestone 或炉石传说没有帮助</li><li>Firestone 主窗口（收藏、统计）仍可能正常工作</li></ul><p>要检查智能应用控制是否开启：打开<strong>Windows 安全 → 应用和浏览器控制 → 智能应用控制设置</strong>。参见 Microsoft 的<a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">智能应用控制常见问题</a>。</p><p>请更新到最新版 Firestone。近期版本已为内存读取插件签名，以便 Windows 允许它。如果你已经是最新版本，但叠加层仍是空的，请从应用内报告错误。</p>",
+					"title": "Windows 11 智能应用控制"
+				}
+			}
 		}
+	},
+	"decktracker": {
+		"guessed-info": {
+			"minion-type": "随从类型",
+			"minion-types": "随从类型"
+		}
+	},
+	"quests": {
+		"bloodstones-daily": "每日血石"
 	}
 }

@@ -549,7 +549,9 @@
 			"cost-modifier": "ตัวปรับต้นทุน",
 			"damage": "สร้างดาเมจ",
 			"main-attribute": "คุณสมบัติหลัก",
-			"mechanics": "กลไก"
+			"mechanics": "กลไก",
+			"minion-type": "ประเภทมินเนี่ยน",
+			"minion-types": "ประเภทมินเนี่ยน"
 		},
 		"overlay": {
 			"mulligan": {
@@ -672,7 +674,8 @@
 				"show-flavor-text-on-hover": "แสดงข้อความบรรยากาศเมื่อชี้เมาส์",
 				"show-flavor-text-on-hover-tooltip": "เมื่อชี้เมาส์ที่การ์ดในแทร็กเกอร์ระหว่างเกม จะแสดงข้อความบรรยากาศที่มุมการแจ้งเตือน",
 				"show-flavor-text-on-in-game-hover": "แสดงข้อความบรรยากาศเมื่อตรวจการ์ด",
-				"show-flavor-text-on-in-game-hover-tooltip": "เมื่อตรวจการ์ดใน Hearthstone (มือหรือสนาม) จะแสดงข้อความบรรยากาศที่มุมการแจ้งเตือน"
+				"show-flavor-text-on-in-game-hover-tooltip": "เมื่อตรวจการ์ดใน Hearthstone (มือหรือสนาม) จะแสดงข้อความบรรยากาศที่มุมการแจ้งเตือน",
+				"individual-counters-size": "ขนาดตัวนับแต่ละอัน"
 			},
 			"max-resources-widget": {
 				"show-corpses": "แสดงศพ",
@@ -826,7 +829,8 @@
 				"open-folder": "เปิดโฟลเดอร์",
 				"permissions": "สิทธิ์:",
 				"refresh": "รีเฟรช",
-				"title": "แอดออน"
+				"title": "แอดออน",
+				"explanation": "(ทดลอง) แอดออนเป็นส่วนขยายเสริมของ Firestone เอง ทำงานในแซนด์บ็อกซ์และได้เฉพาะสิทธิ์ที่ประกาศ ไม่แก้ไขไคลเอนต์ Hearthstone"
 			},
 			"appearance": {
 				"overlay-theme": {
@@ -889,7 +893,8 @@
 			},
 			"menu": {
 				"account": "บัญชี",
-				"addons": "แอดออน"
+				"addons": "แอดออน",
+				"hotkeys": "ปุ่มลัด"
 			},
 			"mods": {
 				"auto-update-all": "ทั้งหมด",
@@ -922,7 +927,8 @@
 				"source-trusted-tooltip": "พัฒนาและดูแลโดยหรือภายใต้การกำกับของ Firestone",
 				"source-verified": "ยืนยันแล้ว",
 				"source-verified-tooltip": "พัฒนาโดยบุคคลที่สาม โดย Firestone ตรวจเป็นประจำ จะอัปเดตอัตโนมัติเฉพาะเวอร์ชันที่ Firestone อนุมัติ",
-				"update-available-unreviewed": "ม็อดนี้มีเวอร์ชันใหม่ แต่ Firestone ยังไม่ได้ตรวจทาน คลิกเพื่ออัปเดตอยู่ดี"
+				"update-available-unreviewed": "ม็อดนี้มีเวอร์ชันใหม่ แต่ Firestone ยังไม่ได้ตรวจทาน คลิกเพื่ออัปเดตอยู่ดี",
+				"explanation": "ม็อดเป็นปลั๊กอินที่เปลี่ยนพฤติกรรมของ Hearthstone เอง"
 			},
 			"premium": {
 				"lottery-sync-label": "แต้มลอตเตอรี่",
@@ -942,6 +948,18 @@
 				"ai-title": "คำแปล AI",
 				"ai-toggle-label": "ใช้คำแปล AI",
 				"ai-toggle-tooltip": "เติมข้อความที่ยังไม่ถูกแปลด้วยข้อความที่สร้างโดย AI คำแปลจากชุมชนมีลำดับความสำคัญก่อนเสมอ"
+			},
+			"hotkeys": {
+				"battlegrounds": "แสดง/ซ่อนหน้าต่างสนามรบ",
+				"change": "เปลี่ยน",
+				"collection": "แสดง/ซ่อนหน้าต่างหลัก",
+				"conflict": "ชุดคีย์นี้ถูกใช้โดย {{hotkey}} อยู่แล้ว",
+				"failed": "กำหนดปุ่มลัดนี้ไม่ได้ อาจถูกแอปอื่นใช้ไปแล้ว",
+				"intro": "เปลี่ยนปุ่มที่ใช้แสดงหรือซ่อนหน้าต่าง Firestone คลิกเปลี่ยน แล้วกดชุดคีย์ใหม่ Escape ยกเลิก",
+				"listening": "กดปุ่ม...",
+				"live-info": "แสดงข้อมูลสด",
+				"reset": "รีเซ็ต",
+				"title": "ปุ่มลัด"
 			}
 		},
 		"global": {
@@ -1217,6 +1235,58 @@
 				"discord-cta": "ถามเราบน Discord",
 				"discord-lead": "อยากได้สิทธิ์เข้าถึงก่อนใคร?",
 				"title": "Standalone"
+			},
+			"social-proof": {
+				"carousel": {
+					"gallery": "แชมป์ที่ใช้ Firestone {{count}} คน",
+					"goto": "แสดง {{name}}",
+					"next": "แชมป์ถัดไป",
+					"previous": "แชมป์ก่อนหน้า",
+					"roledescription": "คารูเซล"
+				},
+				"champions": {
+					"bunnyhoppor": {
+						"alt": "กราฟิกทางการของ Bunnyhoppor แชมป์โลกHearthstone 2022",
+						"portrait-alt": "ภาพเหมือนของ Bunnyhoppor"
+					},
+					"demoshadow": {
+						"alt": "กราฟิกทางการของ Demoshadow แชมป์ฤดูร้อนHearthstone 2026",
+						"portrait-alt": "ภาพเหมือนของ Demoshadow"
+					},
+					"denimblue": {
+						"alt": "DenimBlue อันดับ 1 กระดานลีดเดอร์อารีน่าใต้ดินยุโรปหลายครั้ง",
+						"portrait-alt": "ภาพเหมือนของ DenimBlue"
+					},
+					"kwanwoo": {
+						"alt": "กราฟิกทางการของ Kwanwoo แชมป์ฤดูหนาวHearthstone 2026",
+						"portrait-alt": "ภาพเหมือนของ Kwanwoo"
+					},
+					"mlyanming": {
+						"alt": "กราฟิกทางการของ mlYanming แชมป์โลกHearthstone 2024",
+						"portrait-alt": "ภาพเหมือนของ mlYanming"
+					},
+					"otgxhh": {
+						"alt": "OTGxhh แชมป์โลกHearthstone 2026 ถือถ้วยบนเวที",
+						"portrait-alt": "ภาพเหมือนของ OTGxhh"
+					},
+					"pockettrain": {
+						"alt": "กราฟิกทางการของ PocketTrain แชมป์โลกHearthstone 2023",
+						"portrait-alt": "ภาพเหมือนของ PocketTrain"
+					},
+					"slyders": {
+						"alt": "Slyders อันดับ 1 กระดานลีดเดอร์สนามรบยุโรปหลายครั้ง",
+						"portrait-alt": "ภาพเหมือนของ Slyders"
+					}
+				},
+				"lead": "แชมป์โลก ผู้ชนะ Masters Tour และผู้เล่นท็อปกระดานลีดเดอร์เล่นกับ Firestone รวมถึงแชมป์โลก 2026 OTGxhh",
+				"title": "แชมป์ใช้งาน",
+				"titles": {
+					"bg-eu-number-one": "อันดับ 1 สนามรบยุโรปหลายครั้ง",
+					"summer-champion": "แชมป์ฤดูร้อน {{year}}",
+					"ua-eu-number-one": "อันดับ 1 อารีน่าใต้ดินยุโรปหลายครั้ง",
+					"winter-champion": "แชมป์ฤดูหนาว {{year}}",
+					"world-champion": "แชมป์โลก {{year}}"
+				}
 			}
 		},
 		"faq": {
@@ -1242,7 +1312,7 @@
 					"title": "แอปไม่อัปเดต"
 				},
 				"app-isnt-showing": {
-					"body": "<ul><li>ตรวจให้แน่ใจว่า Overwolf ทำงาน<strong>ก่อน</strong>เปิด Hearthstone</li><li>ตรวจว่าโอเวอร์เลย์ Overwolf เปิดอยู่: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">ตั้งค่าเกม Overwolf</a></li><li>รัน Firestone ในฐานะผู้ดูแลระบบ (ต้องปิด Overwolf แล้วเปิดใหม่หลังจากนั้น) ดู <a href=\"/faq#memory-reading-error\">ข้อผิดพลาดการอ่านหน่วยความจำ / รันในฐานะผู้ดูแลระบบ</a></li><li>ตรวจว่าเข้าถึง <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> จาก <strong>Chrome</strong> ได้หรือไม่ ถ้าไม่ได้ แปลว่าราวเตอร์ / ISP / VPN ของคุณบล็อกการเข้าถึง AWS การควบคุมโดยผู้ปกครองก็เป็นสาเหตุที่รู้จัก<ul><li><strong>สำคัญ</strong>: นี่ดูจะเป็นสาเหตุที่พบบ่อยขึ้นเมื่อเร็วๆ นี้ ดังนั้นกรุณาตรวจการตั้งค่าควบคุมโดยผู้ปกครอง (รวมกับ ISP) และอนุญาต <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> และ <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li><li>ดูส่วน <a href=\"/faq#connectivity-issues-global\">ปัญหาการเชื่อมต่อ</a> ด้านล่างของหน้านี้ด้วย</li></ul></li><li>พบว่า DirectX 12 อาจรบกวนการเรนเดอร์โอเวอร์เลย์ ลองปิดเพื่อดูว่าดีขึ้นหรือไม่ (TODO: ต้องการคำแนะนำละเอียด)</li><li>ถ้าทุกอย่างล้มเหลว และเกมติดตั้งใต้ C:\\Program Files หรือ C:\\Program Files (x86) ลองย้ายเกมไปโฟลเดอร์อื่น โฟลเดอร์เหล่านี้ถูกป้องกันและอาจทำให้แอปอ่านข้อมูลเกมไม่ได้</li></ul>",
+					"body": "<ul><li>ตรวจให้แน่ใจว่า Overwolf ทำงาน<strong>ก่อน</strong>เปิด Hearthstone</li><li>ตรวจว่าโอเวอร์เลย์ Overwolf เปิดอยู่: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">ตั้งค่าเกม Overwolf</a></li><li>รัน Firestone ในฐานะผู้ดูแลระบบ (ต้องปิด Overwolf แล้วเปิดใหม่หลังจากนั้น) ดู <a href=\"/faq#memory-reading-error\">ข้อผิดพลาดการอ่านหน่วยความจำ / รันในฐานะผู้ดูแลระบบ</a></li><li>บน Windows 11 Smart App Control อาจบล็อกตัวอ่านหน่วยความจำของ Firestone ทำให้โอเวอร์เลย์ว่าง ดู <a href=\"/faq#smart-app-control\">Smart App Control</a></li><li>ตรวจว่าเข้าถึง <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> จาก <strong>Chrome</strong> ได้หรือไม่ ถ้าไม่ได้ แปลว่าราวเตอร์ / ISP / VPN ของคุณบล็อกการเข้าถึง AWS การควบคุมโดยผู้ปกครองก็เป็นสาเหตุที่รู้จัก<ul><li><strong>สำคัญ</strong>: นี่ดูจะเป็นสาเหตุที่พบบ่อยขึ้นเมื่อเร็วๆ นี้ ดังนั้นกรุณาตรวจการตั้งค่าควบคุมโดยผู้ปกครอง (รวมกับ ISP) และอนุญาต <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> และ <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li><li>ดูส่วน <a href=\"/faq#connectivity-issues-global\">ปัญหาการเชื่อมต่อ</a> ด้านล่างของหน้านี้ด้วย</li></ul></li><li>พบว่า DirectX 12 อาจรบกวนการเรนเดอร์โอเวอร์เลย์ ลองปิดเพื่อดูว่าดีขึ้นหรือไม่ (TODO: ต้องการคำแนะนำละเอียด)</li><li>ถ้าทุกอย่างล้มเหลว และเกมติดตั้งใต้ C:\\Program Files หรือ C:\\Program Files (x86) ลองย้ายเกมไปโฟลเดอร์อื่น โฟลเดอร์เหล่านี้ถูกป้องกันและอาจทำให้แอปอ่านข้อมูลเกมไม่ได้</li></ul>",
 					"title": "แอปไม่แสดง"
 				},
 				"check-if-running-as-admin": {
@@ -1307,7 +1377,7 @@
 				"memory-reading-error": {
 					"admin-steps": "<ul><li>ปิด HS</li><li>ปิด Overwolf</li><li>เปลี่ยนทางลัด Firestone และ/หรือ Overwolf เป็น \"รันในฐานะผู้ดูแลระบบ\"<ul><li>ควรรัน Overwolf.exe และ OverwolfLauncher.exe ในฐานะผู้ดูแลระบบ</li><li>เปิดปุ่ม \"ใช้กับผู้ใช้ทั้งหมด\" ได้ด้วย</li></ul></li></ul>",
 					"after-admin": "<ul><li>รีสตาร์ท Overwolf (ผู้ใช้บางคนต้องรีสตาร์ทคอมพิวเตอร์ทั้งเครื่อง)</li><li>จากนั้นเปิด HS ใหม่ได้</li><li>ถ้ายังไม่ได้ (แม้หลัง<strong>รีสตาร์ทคอมพิวเตอร์ทั้งเครื่อง</strong>) ตรวจว่า Hearthstone เองรันในฐานะผู้ดูแลระบบหรือไม่ ถ้าใช่ ลองรันโดยไม่มีสิทธิ์ผู้ดูแลระบบ</li><li>ถ้ายังมีปัญหา ลองให้สิทธิ์ทั้งหมดในหน้าจอนั้น:</li></ul>",
-					"intro": "<p>ข้อผิดพลาด \"การอ่านหน่วยความจำ\" เกิดเมื่อแอปไม่มีสิทธิ์เข้าถึงหน่วยความจำของไคลเอนต์เกม มักเกิดจากปัญหาสิทธิ์ (ดังนั้นรันในฐานะผู้ดูแลระบบมักแก้ได้)</p><p>รายละเอียดขั้นตอนการรันในฐานะผู้ดูแลระบบเพิ่มเติม:</p>",
+					"intro": "<p>ข้อผิดพลาด \"การอ่านหน่วยความจำ\" เกิดเมื่อแอปอ่านหน่วยความจำของไคลเอนต์เกมไม่ได้ มักเกิดจากปัญหาสิทธิ์ (ดังนั้นรันในฐานะผู้ดูแลระบบมักแก้ได้) บน Windows 11 <a href=\"/faq#smart-app-control\">Smart App Control</a> ก็สามารถบล็อก DLL ตัวอ่านหน่วยความจำของ Firestone ได้ แม้หน้าต่างโอเวอร์เลย์จะปรากฏ</p><p>รายละเอียดขั้นตอนการรันในฐานะผู้ดูแลระบบเพิ่มเติม:</p>",
 					"title": "ข้อผิดพลาดการอ่านหน่วยความจำ / รันในฐานะผู้ดูแลระบบ"
 				},
 				"memory-reading-other": {
@@ -1340,6 +1410,10 @@
 				"widgets-not-showing": {
 					"body": "<p>ถ้าคุณไม่เห็นวิดเจ็ตบางตัว (เช่น ไม่เห็นแทร็กเกอร์ แต่เห็นเทิร์นที่การ์ดถูกจั่วในมือฝ่ายตรงข้าม) เป็นไปได้ว่าเลื่อนออกนอกจอ คุณรีเซ็ตตำแหน่งวิดเจ็ต (ทั้งหมด) ได้ด้วยปุ่มนี้ในการตั้งค่า:</p>",
 					"title": "วิดเจ็ตบางตัวไม่แสดง"
+				},
+				"smart-app-control": {
+					"body": "<p><strong>Smart App Control</strong> ของ Windows 11 อาจบล็อกไฟล์ตัวอ่านหน่วยความจำของ Firestone (<code>OverwolfUnitySpy.dll</code>) เมื่อเกิดเหตุนี้:</p><ul><li>คุณไม่เห็นวิดเจ็ตในเกม</li><li>รีสตาร์ท Firestone หรือ Hearthstone ไม่ช่วย</li><li>หน้าต่างหลักของ Firestone (คอลเลกชัน สถิติ) ยังใช้งานได้</li></ul><p>ตรวจว่า Smart App Control เปิดอยู่หรือไม่: เปิด <strong>ความปลอดภัยของ Windows → การควบคุมแอปและเบราว์เซอร์ → การตั้งค่า Smart App Control</strong> ดู <a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">คำถามที่พบบ่อยของ Smart App Control</a> ของ Microsoft</p><p>อัปเดต Firestone เป็นเวอร์ชันล่าสุด รุ่นใหม่ลงนามปลั๊กอินตัวอ่านหน่วยความจำเพื่อให้ Windows อนุญาตได้ หากคุณใช้เวอร์ชันล่าสุดแล้วแต่โอเวอร์เลย์ยังว่าง กรุณารายงานบั๊กจากในแอป</p>",
+					"title": "Windows 11 Smart App Control"
 				}
 			},
 			"toc-title": "ในหน้านี้"
@@ -1673,5 +1747,8 @@
 		"max-resources": {
 			"current-corpses-tooltip": "ศพปัจจุบัน"
 		}
+	},
+	"quests": {
+		"bloodstones-daily": "บลัดสโตนรายวัน"
 	}
 }

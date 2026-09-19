@@ -548,7 +548,9 @@
 			"cost-modifier": "비용 수정치",
 			"damage": "피해를 줌",
 			"main-attribute": "주요 속성",
-			"mechanics": "능력"
+			"mechanics": "능력",
+			"minion-type": "하수인 유형",
+			"minion-types": "하수인 유형"
 		},
 		"overlay": {
 			"mulligan": {
@@ -671,7 +673,8 @@
 				"show-flavor-text-on-hover": "마우스 올리면 플레이버 텍스트 표시",
 				"show-flavor-text-on-hover-tooltip": "게임 내 트래커에서 카드에 마우스를 올리면 알림 모서리에 플레이버 텍스트를 표시합니다",
 				"show-flavor-text-on-in-game-hover": "카드를 자세히 볼 때 플레이버 텍스트 표시",
-				"show-flavor-text-on-in-game-hover-tooltip": "Hearthstone에서 카드(손 또는 전장)를 자세히 볼 때 알림 모서리에 플레이버 텍스트를 표시합니다"
+				"show-flavor-text-on-in-game-hover-tooltip": "Hearthstone에서 카드(손 또는 전장)를 자세히 볼 때 알림 모서리에 플레이버 텍스트를 표시합니다",
+				"individual-counters-size": "개별 카운터 크기"
 			},
 			"max-resources-widget": {
 				"show-corpses": "시체 표시",
@@ -823,7 +826,8 @@
 				"open-folder": "폴더 열기",
 				"permissions": "권한:",
 				"refresh": "새로고침",
-				"title": "애드온"
+				"title": "애드온",
+				"explanation": "(실험적) 애드온은 Firestone 자체를 위한 선택적 확장입니다. 샌드박스에서 실행되며 선언한 권한만 받습니다. 하스스톤 클라이언트를 수정하지 않습니다."
 			},
 			"appearance": {
 				"overlay-theme": {
@@ -886,7 +890,8 @@
 			},
 			"menu": {
 				"account": "계정",
-				"addons": "애드온"
+				"addons": "애드온",
+				"hotkeys": "단축키"
 			},
 			"mods": {
 				"auto-update-all": "모두",
@@ -919,7 +924,8 @@
 				"source-trusted-tooltip": "Firestone이 개발하거나 감독합니다.",
 				"source-verified": "검증됨",
 				"source-verified-tooltip": "타사가 개발하고 Firestone이 정기적으로 확인합니다. Firestone이 승인한 버전만 자동 업데이트됩니다.",
-				"update-available-unreviewed": "이 모드의 새 버전이 있지만 Firestone이 아직 검토하지 않았습니다. 클릭하면 그래도 업데이트합니다."
+				"update-available-unreviewed": "이 모드의 새 버전이 있지만 Firestone이 아직 검토하지 않았습니다. 클릭하면 그래도 업데이트합니다.",
+				"explanation": "모드는 하스스톤 자체의 동작을 바꾸는 플러그인입니다."
 			},
 			"premium": {
 				"lottery-sync-label": "복권 포인트",
@@ -939,6 +945,18 @@
 				"ai-title": "AI 번역",
 				"ai-toggle-label": "AI 번역 사용",
 				"ai-toggle-tooltip": "번역되지 않은 문자열을 AI 생성 텍스트로 채웁니다. 커뮤니티 번역이 항상 우선합니다."
+			},
+			"hotkeys": {
+				"battlegrounds": "전장 창 표시/숨기기",
+				"change": "변경",
+				"collection": "메인 창 표시/숨기기",
+				"conflict": "이 조합은 이미 {{hotkey}}에서 사용 중입니다.",
+				"failed": "이 단축키를 지정할 수 없습니다. 다른 앱에서 이미 사용 중일 수 있습니다.",
+				"intro": "Firestone 창을 표시하거나 숨기는 키를 변경하세요. 변경을 클릭한 뒤 새 조합을 누르세요. Esc는 취소합니다.",
+				"listening": "키를 누르세요...",
+				"live-info": "실시간 정보 표시",
+				"reset": "초기화",
+				"title": "단축키"
 			}
 		},
 		"global": {
@@ -1214,6 +1232,58 @@
 				"discord-cta": "Discord에서 문의",
 				"discord-lead": "선행 접근이 필요하신가요?",
 				"title": "Standalone"
+			},
+			"social-proof": {
+				"carousel": {
+					"gallery": "Firestone을 사용하는 챔피언, {{count}}명의 플레이어",
+					"goto": "{{name}} 보기",
+					"next": "다음 챔피언",
+					"previous": "이전 챔피언",
+					"roledescription": "캐러셀"
+				},
+				"champions": {
+					"bunnyhoppor": {
+						"alt": "2022 하스스톤 월드 챔피언 Bunnyhoppor의 공식 그래픽",
+						"portrait-alt": "Bunnyhoppor의 초상"
+					},
+					"demoshadow": {
+						"alt": "2026 하스스톤 서머 챔피언 Demoshadow의 공식 그래픽",
+						"portrait-alt": "Demoshadow의 초상"
+					},
+					"denimblue": {
+						"alt": "DenimBlue, 유럽 지하 투기장 순위표 1위 다수",
+						"portrait-alt": "DenimBlue의 초상"
+					},
+					"kwanwoo": {
+						"alt": "2026 하스스톤 윈터 챔피언 Kwanwoo의 공식 그래픽",
+						"portrait-alt": "Kwanwoo의 초상"
+					},
+					"mlyanming": {
+						"alt": "2024 하스스톤 월드 챔피언 mlYanming의 공식 그래픽",
+						"portrait-alt": "mlYanming의 초상"
+					},
+					"otgxhh": {
+						"alt": "2026 하스스톤 월드 챔피언 OTGxhh가 무대에서 트로피를 들고 있는 모습",
+						"portrait-alt": "OTGxhh의 초상"
+					},
+					"pockettrain": {
+						"alt": "2023 하스스톤 월드 챔피언 PocketTrain의 공식 그래픽",
+						"portrait-alt": "PocketTrain의 초상"
+					},
+					"slyders": {
+						"alt": "Slyders, 유럽 전장 순위표 1위 다수",
+						"portrait-alt": "Slyders의 초상"
+					}
+				},
+				"lead": "월드 챔피언, 마스터스 투어 우승자, 순위표 상위 플레이어가 Firestone과 함께 플레이합니다. 2026 월드 챔피언 OTGxhh도 포함됩니다.",
+				"title": "챔피언들이 사용합니다",
+				"titles": {
+					"bg-eu-number-one": "유럽 전장 1위 다수",
+					"summer-champion": "{{year}} 서머 챔피언",
+					"ua-eu-number-one": "유럽 지하 투기장 1위 다수",
+					"winter-champion": "{{year}} 윈터 챔피언",
+					"world-champion": "{{year}} 월드 챔피언"
+				}
 			}
 		},
 		"faq": {
@@ -1239,7 +1309,7 @@
 					"title": "앱이 업데이트되지 않음"
 				},
 				"app-isnt-showing": {
-					"body": "<ul><li>Hearthstone을 실행하기 <strong>전에</strong> Overwolf가 실행 중인지 확인하세요</li><li>Overwolf 오버레이가 켜져 있는지 확인하세요: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 게임 설정</a></li><li>Firestone을 관리자로 실행하세요 (이후 Overwolf를 닫고 다시 열어야 합니다). <a href=\"/faq#memory-reading-error\">메모리 읽기 오류 / 관리자로 실행</a>을 보세요</li><li><strong>Chrome</strong>에서 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a>에 접근할 수 있는지 확인하세요. 안 되면 라우터 / ISP / VPN이 AWS 접근을 막는 것입니다. 자녀 보호도 흔한 원인입니다.<ul><li><strong>중요</strong>: 최근 이 원인이 더 많아 보이니, 자녀 보호 설정(ISP 포함)을 확인하고 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a>과 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a>을 허용 목록에 넣으세요</li><li>이 페이지 하단의 <a href=\"/faq#connectivity-issues-global\">연결 문제</a> 섹션도 보세요</li></ul></li><li>DirectX 12가 오버레이 렌더링을 방해할 수 있습니다. 꺼 보고 나아지는지 확인해 보세요 (TODO: 자세한 안내 필요)</li><li>모두 실패하고 게임이 C:\\Program Files 또는 C:\\Program Files (x86)에 설치되어 있다면, 다른 폴더로 옮겨 보세요. 이 폴더는 보호되어 앱이 게임 정보를 읽을 때 문제가 날 수 있습니다</li></ul>",
+					"body": "<ul><li>Hearthstone을 실행하기 <strong>전에</strong> Overwolf가 실행 중인지 확인하세요</li><li>Overwolf 오버레이가 켜져 있는지 확인하세요: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf 게임 설정</a></li><li>Firestone을 관리자로 실행하세요 (이후 Overwolf를 닫고 다시 열어야 합니다). <a href=\"/faq#memory-reading-error\">메모리 읽기 오류 / 관리자로 실행</a>을 보세요</li><li>Windows 11에서 스마트 앱 컨트롤이 Firestone의 메모리 리더를 막아 오버레이가 비어 있을 수 있습니다. <a href=\"/faq#smart-app-control\">스마트 앱 컨트롤</a>을 보세요</li><li><strong>Chrome</strong>에서 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a>에 접근할 수 있는지 확인하세요. 안 되면 라우터 / ISP / VPN이 AWS 접근을 막는 것입니다. 자녀 보호도 흔한 원인입니다.<ul><li><strong>중요</strong>: 최근 이 원인이 더 많아 보이니, 자녀 보호 설정(ISP 포함)을 확인하고 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a>과 <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a>을 허용 목록에 넣으세요</li><li>이 페이지 하단의 <a href=\"/faq#connectivity-issues-global\">연결 문제</a> 섹션도 보세요</li></ul></li><li>DirectX 12가 오버레이 렌더링을 방해할 수 있습니다. 꺼 보고 나아지는지 확인해 보세요 (TODO: 자세한 안내 필요)</li><li>모두 실패하고 게임이 C:\\Program Files 또는 C:\\Program Files (x86)에 설치되어 있다면, 다른 폴더로 옮겨 보세요. 이 폴더는 보호되어 앱이 게임 정보를 읽을 때 문제가 날 수 있습니다</li></ul>",
 					"title": "앱이 보이지 않음"
 				},
 				"check-if-running-as-admin": {
@@ -1304,7 +1374,7 @@
 				"memory-reading-error": {
 					"admin-steps": "<ul><li>HS를 닫습니다</li><li>Overwolf를 닫습니다</li><li>Firestone 및/또는 Overwolf 바로 가기를 \"관리자 권한으로 실행\"으로 바꿉니다<ul><li>Overwolf.exe와 OverwolfLauncher.exe를 관리자로 실행해야 합니다</li><li>\"모든 사용자에게 적용\" 버튼도 켤 수 있습니다</li></ul></li></ul>",
 					"after-admin": "<ul><li>Overwolf를 다시 시작합니다 (컴퓨터를 통째로 재시작한 사용자도 있습니다)</li><li>그런 다음 HS를 다시 시작할 수 있습니다</li><li>그래도 안 되면 (<strong>컴퓨터 전체 재시작</strong> 후에도), Hearthstone 자체가 관리자로 실행 중인지 확인하세요. 그렇다면 관리자 권한 없이 실행해 보세요.</li><li>여전히 문제가 있으면 그 화면에서 모든 권한을 부여해 볼 수 있습니다:</li></ul>",
-					"intro": "<p>\"메모리 읽기\" 오류는 앱이 게임 클라이언트 메모리에 접근할 권한이 없을 때 발생합니다. 보통 권한 / 권리 문제이며 (그래서 관리자로 실행하면 대개 해결됩니다).</p><p>관리자로 실행하는 데 필요한 단계에 대한 조금 더 자세한 내용:</p>",
+					"intro": "<p>\"메모리 읽기\" 오류는 앱이 게임 클라이언트 메모리를 읽지 못할 때 발생합니다. 보통 권한 / 권리 문제이며 (그래서 관리자로 실행하면 대개 해결됩니다). Windows 11에서는 오버레이 창이 보여도 <a href=\"/faq#smart-app-control\">스마트 앱 컨트롤</a>이 Firestone의 메모리 리더 DLL을 차단할 수 있습니다.</p><p>관리자로 실행하는 데 필요한 단계에 대한 조금 더 자세한 내용:</p>",
 					"title": "메모리 읽기 오류 / 관리자로 실행"
 				},
 				"memory-reading-other": {
@@ -1337,6 +1407,10 @@
 				"widgets-not-showing": {
 					"body": "<p>일부 위젯이 보이지 않으면 (예: 트래커는 안 보이지만 상대 손에서 카드가 뽑힌 턴은 보임), 화면 밖으로 이동했을 수 있습니다. 설정의 이 버튼으로 (모든) 위젯 위치를 초기화할 수 있습니다:</p>",
 					"title": "특정 위젯 몇 개가 보이지 않음"
+				},
+				"smart-app-control": {
+					"body": "<p>Windows 11 <strong>스마트 앱 컨트롤</strong>은 Firestone의 메모리 리더 파일(<code>OverwolfUnitySpy.dll</code>)을 차단할 수 있습니다. 그때는:</p><ul><li>게임 안 위젯이 보이지 않습니다</li><li>Firestone이나 하스스톤을 다시 시작해도 해결되지 않습니다</li><li>Firestone 메인 창(컬렉션, 통계)은 계속 동작할 수 있습니다</li></ul><p>스마트 앱 컨트롤이 켜져 있는지 확인하려면 <strong>Windows 보안 → 앱 및 브라우저 제어 → 스마트 앱 컨트롤 설정</strong>을 여세요. Microsoft의 <a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">스마트 앱 컨트롤 FAQ</a>를 참고하세요.</p><p>최신 Firestone으로 업데이트하세요. 최근 버전은 메모리 리더 플러그인에 서명하므로 Windows가 허용할 수 있습니다. 이미 최신 버전인데도 오버레이가 비어 있으면 앱에서 버그를 제보해 주세요.</p>",
+					"title": "Windows 11 스마트 앱 컨트롤"
 				}
 			},
 			"toc-title": "이 페이지에서"
@@ -1670,5 +1744,8 @@
 		"max-resources": {
 			"current-corpses-tooltip": "현재 시체"
 		}
+	},
+	"quests": {
+		"bloodstones-daily": "일일 블러드스톤"
 	}
 }

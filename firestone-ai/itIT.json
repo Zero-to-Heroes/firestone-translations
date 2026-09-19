@@ -549,7 +549,9 @@
 			"cost-modifier": "Modificatore di costo",
 			"damage": "Infligge danni",
 			"main-attribute": "Attributo principale",
-			"mechanics": "Meccaniche"
+			"mechanics": "Meccaniche",
+			"minion-type": "Tipo di servitore",
+			"minion-types": "Tipi di servitore"
 		},
 		"overlay": {
 			"mulligan": {
@@ -672,7 +674,8 @@
 				"show-flavor-text-on-hover": "Mostra il testo atmosferico al passaggio del mouse",
 				"show-flavor-text-on-hover-tooltip": "Passando il mouse su una carta nel tracker in partita, mostra il testo atmosferico nell'angolo delle notifiche",
 				"show-flavor-text-on-in-game-hover": "Mostra il testo atmosferico all'ispezione delle carte",
-				"show-flavor-text-on-in-game-hover-tooltip": "Quando ispezioni una carta in Hearthstone (mano o campo), mostra il testo atmosferico nell'angolo delle notifiche"
+				"show-flavor-text-on-in-game-hover-tooltip": "Quando ispezioni una carta in Hearthstone (mano o campo), mostra il testo atmosferico nell'angolo delle notifiche",
+				"individual-counters-size": "Dimensione dei singoli contatori"
 			},
 			"max-resources-widget": {
 				"show-corpses": "Mostra i Cadaveri",
@@ -826,7 +829,8 @@
 				"open-folder": "Apri cartella",
 				"permissions": "Permessi:",
 				"refresh": "Aggiorna",
-				"title": "Componenti aggiuntivi"
+				"title": "Componenti aggiuntivi",
+				"explanation": "(SPERIMENTALE) I componenti aggiuntivi sono estensioni opzionali di Firestone. Vengono eseguiti in una sandbox e ottengono solo i permessi che dichiarano. Non modificano il client di Hearthstone."
 			},
 			"appearance": {
 				"overlay-theme": {
@@ -889,7 +893,8 @@
 			},
 			"menu": {
 				"account": "Account",
-				"addons": "Componenti aggiuntivi"
+				"addons": "Componenti aggiuntivi",
+				"hotkeys": "Scorciatoie"
 			},
 			"mods": {
 				"auto-update-all": "Tutti",
@@ -922,7 +927,8 @@
 				"source-trusted-tooltip": "Sviluppato e mantenuto da Firestone o sotto la sua supervisione.",
 				"source-verified": "Verificato",
 				"source-verified-tooltip": "Sviluppato da una terza parte, con controlli regolari di Firestone. Si aggiornano automaticamente solo le versioni approvate da Firestone.",
-				"update-available-unreviewed": "È disponibile una nuova versione di questo mod, ma non è ancora stata esaminata da Firestone. Clicca per aggiornarlo comunque."
+				"update-available-unreviewed": "È disponibile una nuova versione di questo mod, ma non è ancora stata esaminata da Firestone. Clicca per aggiornarlo comunque.",
+				"explanation": "Le mod sono plugin che cambiano il comportamento di Hearthstone."
 			},
 			"premium": {
 				"lottery-sync-label": "Punti lotteria",
@@ -942,6 +948,18 @@
 				"ai-title": "Traduzioni IA",
 				"ai-toggle-label": "Usa le traduzioni IA",
 				"ai-toggle-tooltip": "Completa le stringhe non tradotte con testo generato dall'IA. Le traduzioni della community hanno sempre la priorità."
+			},
+			"hotkeys": {
+				"battlegrounds": "Mostra/nascondi la finestra Campi di Battaglia",
+				"change": "Cambia",
+				"collection": "Mostra/nascondi la finestra principale",
+				"conflict": "Questa combinazione è già usata da {{hotkey}}.",
+				"failed": "Impossibile assegnare questa scorciatoia. Potrebbe essere già usata da un'altra app.",
+				"intro": "Cambia i tasti usati per mostrare o nascondere le finestre di Firestone. Clicca su Cambia, poi premi la nuova combinazione. Esc annulla.",
+				"listening": "Premi un tasto...",
+				"live-info": "Mostra informazioni live",
+				"reset": "Ripristina",
+				"title": "Scorciatoie"
 			}
 		},
 		"global": {
@@ -1217,6 +1235,58 @@
 				"discord-cta": "Chiedici su Discord",
 				"discord-lead": "Vuoi l'accesso anticipato?",
 				"title": "Standalone"
+			},
+			"social-proof": {
+				"carousel": {
+					"gallery": "Campioni che usano Firestone, {{count}} giocatori",
+					"goto": "Mostra {{name}}",
+					"next": "Campione successivo",
+					"previous": "Campione precedente",
+					"roledescription": "carosello"
+				},
+				"champions": {
+					"bunnyhoppor": {
+						"alt": "Grafica ufficiale di Bunnyhoppor, campione del mondo di Hearthstone 2022",
+						"portrait-alt": "Ritratto di Bunnyhoppor"
+					},
+					"demoshadow": {
+						"alt": "Grafica ufficiale di Demoshadow, campione estivo di Hearthstone 2026",
+						"portrait-alt": "Ritratto di Demoshadow"
+					},
+					"denimblue": {
+						"alt": "DenimBlue, più volte n. 1 della classifica Arena Sotterranea UE",
+						"portrait-alt": "Ritratto di DenimBlue"
+					},
+					"kwanwoo": {
+						"alt": "Grafica ufficiale di Kwanwoo, campione invernale di Hearthstone 2026",
+						"portrait-alt": "Ritratto di Kwanwoo"
+					},
+					"mlyanming": {
+						"alt": "Grafica ufficiale di mlYanming, campione del mondo di Hearthstone 2024",
+						"portrait-alt": "Ritratto di mlYanming"
+					},
+					"otgxhh": {
+						"alt": "OTGxhh, campione del mondo di Hearthstone 2026, con il trofeo sul palco",
+						"portrait-alt": "Ritratto di OTGxhh"
+					},
+					"pockettrain": {
+						"alt": "Grafica ufficiale di PocketTrain, campione del mondo di Hearthstone 2023",
+						"portrait-alt": "Ritratto di PocketTrain"
+					},
+					"slyders": {
+						"alt": "Slyders, più volte n. 1 della classifica Campi di Battaglia UE",
+						"portrait-alt": "Ritratto di Slyders"
+					}
+				},
+				"lead": "Campioni del mondo, vincitori del Masters Tour e giocatori in cima alla classifica giocano con Firestone — incluso il campione del mondo 2026, OTGxhh.",
+				"title": "Usato dai campioni",
+				"titles": {
+					"bg-eu-number-one": "Più volte n. 1 Campi di Battaglia UE",
+					"summer-champion": "Campione estivo {{year}}",
+					"ua-eu-number-one": "Più volte n. 1 Arena Sotterranea UE",
+					"winter-champion": "Campione invernale {{year}}",
+					"world-champion": "Campione del mondo {{year}}"
+				}
 			}
 		},
 		"faq": {
@@ -1242,7 +1312,7 @@
 					"title": "L'app non si aggiorna"
 				},
 				"app-isnt-showing": {
-					"body": "<ul><li>Assicurati che Overwolf sia in esecuzione <strong>prima</strong> di avviare Hearthstone</li><li>Controlla che l'overlay Overwolf sia abilitato: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Impostazioni di gioco Overwolf</a></li><li>Esegui Firestone come amministratore (dovrai chiudere Overwolf e riaprirlo dopo). Vedi <a href=\"/faq#memory-reading-error\">Errore di lettura della memoria / Esegui come amministratore</a></li><li>Controlla se puoi accedere a <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> da <strong>Chrome</strong>. Se no, c'è un problema con il router / ISP / VPN che blocca l'accesso ad AWS. Anche il controllo parentale è una causa nota.<ul><li><strong>IMPORTANTE</strong>: di recente sembra una causa più frequente, quindi controlla le impostazioni del controllo parentale (anche del tuo ISP) e metti in whitelist <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> e <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li><li>Vedi anche la sezione <a href=\"/faq#connectivity-issues-global\">problemi di connettività</a> in fondo a questa pagina</li></ul></li><li>È emerso che DirectX 12 può interferire con il rendering degli overlay. Prova a disabilitarlo per vedere se migliora la situazione (TODO: servono istruzioni dettagliate)</li><li>Se tutto fallisce, e se il gioco è installato in C:\\Program Files o C:\\Program Files (x86), prova a spostarlo in un'altra cartella. Queste cartelle sono protette e possono causare problemi quando l'app tenta di leggere le informazioni del gioco</li></ul>",
+					"body": "<ul><li>Assicurati che Overwolf sia in esecuzione <strong>prima</strong> di avviare Hearthstone</li><li>Controlla che l'overlay Overwolf sia abilitato: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Impostazioni di gioco Overwolf</a></li><li>Esegui Firestone come amministratore (dovrai chiudere Overwolf e riaprirlo dopo). Vedi <a href=\"/faq#memory-reading-error\">Errore di lettura della memoria / Esegui come amministratore</a></li><li>Su Windows 11, il Controllo app intelligente può bloccare il lettore di memoria di Firestone e lasciare l'overlay vuoto. Vedi <a href=\"/faq#smart-app-control\">Controllo app intelligente</a></li><li>Controlla se puoi accedere a <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> da <strong>Chrome</strong>. Se no, c'è un problema con il router / ISP / VPN che blocca l'accesso ad AWS. Anche il controllo parentale è una causa nota.<ul><li><strong>IMPORTANTE</strong>: di recente sembra una causa più frequente, quindi controlla le impostazioni del controllo parentale (anche del tuo ISP) e metti in whitelist <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> e <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li><li>Vedi anche la sezione <a href=\"/faq#connectivity-issues-global\">problemi di connettività</a> in fondo a questa pagina</li></ul></li><li>È emerso che DirectX 12 può interferire con il rendering degli overlay. Prova a disabilitarlo per vedere se migliora la situazione (TODO: servono istruzioni dettagliate)</li><li>Se tutto fallisce, e se il gioco è installato in C:\\Program Files o C:\\Program Files (x86), prova a spostarlo in un'altra cartella. Queste cartelle sono protette e possono causare problemi quando l'app tenta di leggere le informazioni del gioco</li></ul>",
 					"title": "L'app non si vede"
 				},
 				"check-if-running-as-admin": {
@@ -1307,7 +1377,7 @@
 				"memory-reading-error": {
 					"admin-steps": "<ul><li>Chiudi HS</li><li>Chiudi Overwolf</li><li>Cambia i collegamenti di Firestone e/o Overwolf in \"esegui come amministratore\"<ul><li>Overwolf.exe e OverwolfLauncher.exe dovrebbero essere eseguiti come amministratore</li><li>Puoi anche attivare il pulsante \"applica a tutti gli utenti\"</li></ul></li></ul>",
 					"after-admin": "<ul><li>Riavvia Overwolf (alcuni utenti hanno dovuto riavviare l'intero computer)</li><li>Poi puoi riavviare HS</li><li>Se ancora non funziona (anche dopo <strong>un riavvio completo del computer</strong>), controlla se Hearthstone stesso è in esecuzione come amministratore. Se lo è, prova a eseguirlo senza privilegi di amministratore.</li><li>Se hai ancora problemi, puoi provare a concedere tutti i permessi in quella schermata:</li></ul>",
-					"intro": "<p>L'errore \"Lettura della memoria\" si verifica quando l'app non ha i diritti per accedere alla memoria del client di gioco. Di solito è causato da problemi di permessi / diritti (e quindi eseguirla come amministratore di solito lo risolve).</p><p>Qualche dettaglio in più su tutti i passaggi per eseguire come amministratore:</p>",
+					"intro": "<p>L'errore \"Lettura della memoria\" si verifica quando l'app non può leggere la memoria del client di gioco. Di solito è causato da problemi di permessi / diritti (e quindi eseguirla come amministratore di solito lo risolve). Su Windows 11, il <a href=\"/faq#smart-app-control\">Controllo app intelligente</a> può anche bloccare la DLL lettrice di memoria di Firestone, anche se la finestra overlay compare.</p><p>Qualche dettaglio in più su tutti i passaggi per eseguire come amministratore:</p>",
 					"title": "Errore di lettura della memoria / Esegui come amministratore"
 				},
 				"memory-reading-other": {
@@ -1340,6 +1410,10 @@
 				"widgets-not-showing": {
 					"body": "<p>Se non vedi alcuni widget (ad es. non vedi il tracker, ma vedi il turno in cui le carte sono state pescate nella mano dell'avversario), è possibile che si siano spostati fuori dallo schermo. Puoi reimpostare (tutte) le posizioni dei widget con questo pulsante nelle impostazioni:</p>",
 					"title": "Alcuni widget specifici non si vedono"
+				},
+				"smart-app-control": {
+					"body": "<p>Il <strong>Controllo app intelligente</strong> di Windows 11 può bloccare il file lettore di memoria di Firestone (<code>OverwolfUnitySpy.dll</code>). Quando succede:</p><ul><li>Non vedi i widget in gioco</li><li>Riavviare Firestone o Hearthstone non aiuta</li><li>La finestra principale di Firestone (collezione, statistiche) può continuare a funzionare</li></ul><p>Per verificare se il Controllo app intelligente è attivo: apri <strong>Sicurezza di Windows → Controllo di app e browser → Impostazioni del Controllo app intelligente</strong>. Vedi le <a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">FAQ sul Controllo app intelligente</a> di Microsoft.</p><p>Aggiorna all'ultima versione di Firestone. Le versioni recenti firmano il plugin lettore di memoria così Windows può consentirlo. Se sei già all'ultima versione e gli overlay restano vuoti, segnala un bug dall'app.</p>",
+					"title": "Controllo app intelligente di Windows 11"
 				}
 			},
 			"toc-title": "In questa pagina"
@@ -1673,5 +1747,8 @@
 		"max-resources": {
 			"current-corpses-tooltip": "Cadaveri attuali"
 		}
+	},
+	"quests": {
+		"bloodstones-daily": "Pietre di sangue giornaliere"
 	}
 }
