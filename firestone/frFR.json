@@ -515,7 +515,7 @@
                     "message": "ERREUR CRITIQUE : impossible de charger la base de données des cartes. Cliquez pour plus d’infos en ligne."
                 },
                 "memory-reading": {
-                    "message": "ERREUR CRITIQUE : impossible de lire la mémoire du jeu. Cliquez pour plus d’infos en ligne.",
+                    "message": "ERREUR CRITIQUE : les overlays en jeu sont absents car Firestone n’a pas pu lire le jeu. Cliquez pour plus d’infos en ligne.",
                     "title": "Lecture de la mémoire impossible"
                 },
                 "truncated-logs": {
@@ -2392,8 +2392,8 @@
             "opponent": "La puissance de la prochaine relique de votre adversaire sera de {{value}}"
         },
         "fatigue": {
-            "player": "Votre prochaine pioche vous infligera {{value}} points de dégâts de fatigue",
-            "opponent": "La prochaine pioche de votre adversaire lui infligera {{value}} points de dégâts de fatigue"
+            "player": "Votre prochaine pioche vous infligera {{value}} points de dégâts de fatigue. La fatigue sera fatale dans {{draws}} pioches ({{totalDamage}} points de dégâts au total)",
+            "opponent": "La prochaine pioche de votre adversaire lui infligera {{value}} points de dégâts de fatigue. La fatigue sera fatale dans {{draws}} pioche ({{totalDamage}} points de dégâts au total)"
         },
         "abyssal-curse-2": {
             "player": "La malédiction abyssale la plus forte de votre adversaire était à {{value}} points de dégâts, et vous subirez {{totalDamageFromCursesInHand}} points de dégâts des malédictions en main au début du prochain tour",
@@ -2846,8 +2846,8 @@
     },
     "ftue": {
         "title": "Bienvenue dans Firestone",
-        "subtitle": "Que diriez-vous d’une visite rapide ?",
-        "start-button": "Commençons",
+        "subtitle": "Firestone est un compagnon pour Hearthstone. Très performant et intuitif, il est utilisé par des centaines de milliers de personnes à travers le monde, de niveau débutant jusqu’à champion du monde.",
+        "start-button": "Continuer",
         "skip-button": "Passer",
         "previous-button": "Précédent",
         "next-button": "Suivant",
@@ -2880,6 +2880,11 @@
             "collection": {
                 "title": "Collection",
                 "text": "Vous pouvez trouver ici toutes les cartes du jeu, avec des informations détaillées (vous pouvez même jouer leurs audios)."
+            }
+        },
+        "overview": {
+            "constructed": {
+                "text": "Cette fenêtre affiche un suivi en temps réel du deck, une aide au mulligan, ainsi que des stats personnelles et du méta-jeu."
             }
         }
     },
@@ -3797,7 +3802,8 @@
                 "admin": "Admin",
                 "widgets": "Widgets",
                 "streamer": "Stream",
-                "addons": "Add-ons"
+                "addons": "Add-ons",
+                "account": "Compte"
             },
             "mods": {
                 "title": "Mods",
@@ -3835,7 +3841,7 @@
                 "need-to-close-game-warning": "Vous devez fermer Hearthstone avant d’installer, de désintaller, de mettre à jour, d’activer ou de désactiver des mods.",
                 "installed-mods-description-2": "Les mods suivants sont installés (supprimez le fichier correspondant dans le dossier {{path}} pour les désinstaller) :",
                 "auto-update-label": "Mise à jour auto",
-                "auto-update-tooltip": "Met automatiquement à jour les mods quand une nouvelle version est disponible. Les nouvelles versions seront installées à la fermeture du jeu.",
+                "auto-update-tooltip": "Met automatiquement à jour les mods quand une nouvelle version est disponible. Les nouvelles versions sont installées à la fermeture du jeu.<br><br>Les mods de confiance sont développés et maintenus par Firestone, ou au moins sous sa supervision.<br><br>Les mods vérifiés sont développés par des tiers, avec des vérifications régulières de la part de Firestone. Seules les versions approuvées par Firestone sont automatiquement mises à jour dans ce cas.",
                 "reinstalling-mods": "Réinstallation des mods pour le moteur mis à jour...",
                 "migrating-engine": "Mise à jour du moteur de mods pour votre version de Hearthstone en cours...",
                 "engine-migration-start-message": "Hearthstone utilise désormais un client 64 bits. Firestone met à jour le moteur de mods pour faire correspondre les versions. Cela pourrait prendre un instant.",
@@ -3843,7 +3849,8 @@
                 "engine-migration-start-title": "Mise à jour du moteur de mods en cours",
                 "engine-migration-retry-title": "Mise à jour du moteur de mods en cours",
                 "engine-migration-retry-message": "Le moteur de mods ne peut pas être mis à jour tant que les fichiers sont en cours d’utilisation. Firestone réessaiera à la fermeture de Hearthstone.",
-                "engine-migration-done-message": "Le moteur de mods a été mis à jour. Merci de redémarrer Hearthstone pour charger vos mods."
+                "engine-migration-done-message": "Le moteur de mods a été mis à jour. Merci de redémarrer Hearthstone pour charger vos mods.",
+                "update-available-unreviewed": "Une nouvelle version de ce mod est disponible, mais elle n’a pas encore été validée par Firestone. Cliquez ici pour quand même la mettre à jour."
             },
             "third-party": {
                 "intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Elles ne nous rapportent pas d’argent, mais nous recevons de l’exposition, puisque les sites parlent ensuite de nous :)",
@@ -3968,7 +3975,8 @@
                 "text-11": "Cela signifie également que toutes les parties de l’application ne seront pas traduites dans votre langue. Dans ce cas, les éléments manquants seront affichés en anglais.",
                 "text-2": "Si vous voulez aider à traduire l’application, veuillez consulter les instructions {{link}}.",
                 "link": "ici",
-                "text-3": "Veuillez redémarrer l’application (avec un clic droit sur Firestone dans la barre des tâches) pour vous assurer que la nouvelle langue est prise en compte."
+                "text-3": "Veuillez redémarrer l’application (avec un clic droit sur Firestone dans la barre des tâches) pour vous assurer que la nouvelle langue est prise en compte.",
+                "ai-title": "Traductions IA"
             },
             "premium": {
                 "title": "Options d’abonnement Premium",
@@ -3995,7 +4003,7 @@
                 "total-games": "L’application a récupéré un total de {{value}} parties",
                 "other-title": "Autres",
                 "packs": "Paquets",
-                "packs-tooltip": "Actualisez vos paquets. Cela se fait automatiquement tous les 7 jours.",
+                "packs-tooltip": "Actualisez l’historique de vos paquets depuis le serveur. Utilisez cette option après avoir réinstallé Firestone ou changé d’ordinateur.",
                 "games-tooltip": "Acutaliser vos parties. Ceci récupérera toutes vos parties depuis que vous avez commencé à utiliser l’application, et cela peut prendre un certain temps",
                 "clear-games-tooltip": "Effacer vos parties et recharger les dernières parties selon vos préférences (100 derniers jours par défaut, que vous pouvez modifier en activant les paramètres avancés). Cela peut être utile si vous avez beaucoup de parties et que l’application utilise trop de RAM",
                 "games-period": "Chargez vos parties depuis",
@@ -4165,7 +4173,13 @@
                 "installed-title": "Add-ons installés",
                 "refresh": "Rafraîchir",
                 "empty": "Aucun add-on trouvé. Ouvrez le dossier et placez-y l’add-on.",
-                "permissions": "Permissions :"
+                "permissions": "Permissions :",
+                "explanation": "(EXPÉRIMENTAL) Les add-ons sont des extensions optionnelles pour Firestone en tant que tel. Ils tournent dans un environnement spécifique, et ne reçoivent que les permissions qu’ils ont déclarées. Ils ne modifient pas le client Hearthstone."
+            },
+            "account": {
+                "sign-in-label": "Compte",
+                "unlink-last-login-label": "Compte",
+                "log-out-label": "Compte"
             }
         },
         "decktracker": {
@@ -5043,8 +5057,8 @@
                 "hide-games-vs-ai-tooltip": "Masquer les parties contre l’IA dans la liste des replays"
             },
             "in-game": {
-                "how-to-activate": "Pour activer les replays en jeu, vous devez être membre Premium, puis installer et activer le mod « Replay Viewer » dans l'onglet Mods des Paramètres. Vous verrez alors apparaître un nouveau bouton dans l'onglet Replays, qui vous permettra de regarder vos replays en jeu.",
-                "description": "Les replays en jeu sont une fonctionnalité Premium, avec laquelle vous pouvez regarder les replays de vos parties comme si vous utilisiez le mode Spectateur du jeu, donc avec tous les graphismes, animations et sons du jeu.",
+                "how-to-activate": "Pour activer les replays en jeu, installez et activez le mod « Replay Viewer » dans l'onglet Mods des Paramètres. Vous verrez alors apparaître un nouveau bouton dans l'onglet Replays, qui vous permettra de regarder vos replays en jeu.",
+                "description": "Les replays en jeu vous permettent de regarder les replays de vos parties comme si vous utilisiez le mode Spectateur du jeu, donc avec tous les graphismes, animations et sons du jeu.",
                 "limitations": "Vous devez visionner un replay en jeu dans les 30 jours suivant sa création, sinon il sera supprimé du serveur. Les replays datant de plus de 30 jours seront toujours disponibles dans la visionneuse du navigateur, mais pas dans celle du jeu. Autres limitations : les parties avec des effets de Rembobinage ne sont pas gérées pour le moment."
             },
             "in-game-sharing": {
@@ -5233,10 +5247,19 @@
                 "developer-resources": {
                     "sections": {
                         "api-links": {
-                            "body": "<p>Quelques placeholders sont utilisés à divers endroits dans les API :</p><ul><li><code>%timeSuffix%</code> peut être remplacer par <code>all-time</code>, <code>past-three</code>, <code>past-seven</code> ou <code>last-patch</code> afin de récupérer les données pour différentes périodes</li><li><code>%tribeSuffix</code> correspond soit à <code>all-tribes</code> (recommandé), ou à une combinaison de cinq types de serviteurs, séparés par un trait d’union (<code>-</code>), et en utilisant l’id du type de serviteur comme défini dans <a href=\"https://github.com/Zero-to-Heroes/hs-reference-data/blob/master/src/enums/race.ts\" target=\"_blank\" rel=\"noopener noreferrer\">race.ts</a> (mais la taille d’échantillonnage est généralement trop faible)</li></ul>"
+                            "body": "<p>Quelques placeholders sont utilisés à divers endroits dans les API :</p><ul><li><code>%timeSuffix%</code> peut être remplacer par <code>all-time</code>, <code>past-three</code>, <code>past-seven</code> ou <code>last-patch</code> afin de récupérer les données pour différentes périodes</li><li><code>%tribeSuffix</code> correspond soit à <code>all-tribes</code> (recommandé), ou à une combinaison de cinq types de serviteurs, séparés par un trait d’union (<code>-</code>), et en utilisant l’id du type de serviteur comme défini dans <a href=\"https://github.com/Zero-to-Heroes/hs-reference-data/blob/master/src/enums/race.ts\" target=\"_blank\" rel=\"noopener noreferrer\">race.ts</a> (mais la taille d’échantillonnage est généralement trop faible)</li></ul>",
+                            "title": "Liens d’API"
                         }
                     }
                 }
+            }
+        },
+        "monitoring": {
+            "simulator": {
+                "legend-very-good": "Une précision > 0,5 est très bonne",
+                "legend-good": "Une précision > 0,5 est bonne",
+                "chart-label": "Précision",
+                "tooltip-accuracy": "Précision : {{accuracy}}"
             }
         }
     },
