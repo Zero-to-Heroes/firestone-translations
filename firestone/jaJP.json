@@ -516,7 +516,7 @@
                     "title": "カードをロードできません"
                 },
                 "memory-reading": {
-                    "message": "致命的なエラー：ゲームのメモリが読み込めません。クリックするとオンラインで詳細な情報を表示します",
+                    "message": "致命的なエラー：Firestoneがゲームを読み込めないため、ゲーム内オーバーレイが作動していないようです。クリックするとオンラインで詳細な情報を表示します",
                     "title": "メモリが読み込めません"
                 },
                 "truncated-logs": {
@@ -3978,7 +3978,8 @@
                 "auto-update-all": "全て",
                 "auto-update-trusted-verified": "Trusted ModとVerified Modのみ",
                 "import-invalid-url": "GithubのレポジトリのURLをペーストしてください (https://github.com/owner/repo)",
-                "source-trusted": "Trusted"
+                "source-trusted": "Trusted",
+                "explanation": "Modは、Hearthstone自体の挙動を変更するプラグインです"
             },
             "third-party": {
                 "intro": "私たちは、あなたのデータがあなたのものであると信じています。 そして、あなたは他のサードパーティのウェブサイトにデータを同期させて、彼らを手助けすることができます。それによって私たちが報酬を受け取ることはありませんが、彼らが私たちを話題にだすことで、ある程度の露出を得ることができます :)",
@@ -4113,7 +4114,11 @@
                 "text-11": "これは、アプリの全ての部分があなたの言語に翻訳されるわけではないことを意味しています。 その場合、欠落している部分は英語で表示されます",
                 "text-2": "アプリの翻訳を手伝いたい場合は、 {{link}} の手順をご覧ください",
                 "link": "こちら",
-                "text-3": "アプリを再起動して（パソコンのシステムトレイにあるFirestoneのアイコンを右クリック→再起動）、新しく設定された言語が適用されているか確認してください"
+                "text-3": "アプリを再起動して（パソコンのシステムトレイにあるFirestoneのアイコンを右クリック→再起動）、新しく設定された言語が適用されているか確認してください",
+                "ai-text": "有効にすると、未翻訳のテキストがAI生成テキストで補完されます。コミュニティによる翻訳が常に優先されます。AIによる翻訳は不正確な場合があり、AI翻訳が存在しない場合は英語が表示されます",
+                "ai-title": "AI翻訳",
+                "ai-toggle-label": "AI翻訳を使う",
+                "ai-toggle-tooltip": "未翻訳のテキストをAI生成テキストで補完します。コミュニティによる翻訳が常に優先されます"
             },
             "premium": {
                 "title": "プレミアムサブスクオプション",
@@ -4312,7 +4317,8 @@
                 "installed-title": "インストール済みのアドオン",
                 "open-folder": "フォルダを開く",
                 "refresh": "更新",
-                "permissions": "権限"
+                "permissions": "権限",
+                "explanation": "(実験的)アドオンは、Firestone自体に機能を追加するオプション拡張機能です。サンドボックス内で動作し、宣言された権限のみを取得します。Hearthstoneクライアントを変更することはありません。"
             },
             "account": {
                 "intro-signed-out": "サインインして対戦履歴を同期します。その後に他のログインプロバイダーを追加連携できます。",
@@ -4351,7 +4357,17 @@
                 "link-overwolf-button": "Overwolfを連携",
                 "link-overwolf-label": "Overwolf",
                 "link-overwolf-need-battlenet": "最初にBattle.netでログインし、もう一度「Overwolfを連携」をお試しください。",
-                "link-overwolf-tooltip": "既存のOverwolf Firestoneアカウントを連携します。これにより、既存のデータ（対戦記録、パックなど）をインポートできるようになります。"
+                "link-overwolf-tooltip": "既存のOverwolf Firestoneアカウントを連携します。これにより、既存のデータ（対戦記録、パックなど）をインポートできるようになります。",
+                "perks-history-detail": "アカウントに紐付けられていない対戦記録は、約1年後に消去されます",
+                "perks-lottery-detail": "ポイントはローカルでも蓄積されます。サインインすると、ポイントの同期とシーズン終了時のエントリーができます",
+                "perks-sync-title": "データはアカウントに同期されます",
+                "perks-history-title": "対戦履歴はオンラインです",
+                "perks-intro": "サインインは無料です。サインインすると、Firestoneはもっと機能的になります",
+                "perks-lottery-title": "抽選に応募する",
+                "perks-replays-detail": "アカウントを使わない場合、リプレファイルは約60日で消去されます",
+                "perks-replays-title": "リプレイの保存期間は約1年間です",
+                "perks-sync-detail": "対戦履歴、パック統計、実績は、再インストールやPCを買い替えた場合でも保持されます。",
+                "perks-title": "サインインするべき？"
             }
         },
         "decktracker": {
@@ -5355,7 +5371,7 @@
                     "title": "Virgin media, Web Safe"
                 },
                 "memory-reading-error": {
-                    "intro": "<p>「Memory reading（メモリ読み取り）」エラーは、アプリがゲームクライアントのメモリにアクセスする権限を持っていない場合に発生します。通常、これは許可やアクセス権限の問題が原因であり、管理者として実行することで大抵は解決します。</p><p>管理者として実行するために必要な全手順の詳細はこちらです：</p>",
+                    "intro": "<p>「メモリ読み取り」エラーは、アプリがゲームクライアントのメモリを読み取れない場合に発生します。多くの場合、アクセス権限が原因です(管理者として実行することで通常は解決します)。Windows 11では、オーバーレイウィンドウ自体が表示されている場合でも、 <a href=\"/faq#smart-app-control\">Smart App Control</a> がFirestoneのメモリリーダーDLLをブロックすることがあります。</p><p>管理者として実行するための詳細な手順は以下のとおりです:</p>",
                     "title": "メモリーリーディングエラー/管理者として実行",
                     "admin-steps": "<ul><li>ハースストーンを終了します</li><li>Overwolfを終了します</li><li>FirestoneおよびOverwolfのショートカットを「管理者として実行」するようにします<ul><li>Overwolf.exe および OverwolfLauncher.exe を管理者として実行するように設定してください</li><li>「すべてのユーザーの設定を変更」ボタンから設定を有効化することもできます</li></ul></li></ul>",
                     "after-admin": "<ul><li>Overwolfを再起動します（PC自体の再起動が必要だったケースもあります）</li><li>その後、ハースストーンを再起動します。</li><li><strong>PCの完全な再起動</strong>)を行った後でも機能しない場合は、ハースストーン自体が「管理者として実行」されているか確認してください。管理者権限で実行されている場合は、通常権限（管理者権限なし）で起動してみてください。.</li><li>それでも問題が解消しない場合は、該当の画面で全てのアクセス権限を許可（付与）してみてください。</li></ul>"
@@ -5386,7 +5402,7 @@
                 },
                 "app-isnt-showing": {
                     "title": "アプリが表示されない",
-                    "body": "<ul><li>ハースストーンを起動する <strong>前に</strong> 、Overwolfが起動していることを確認してください。</li><li>Overwolfのオーバーレイが有効になっているか確認してください: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">>Overwolfのゲーム設定</a></li><li>Firestoneを管理者として実行します（実行後、Overwolfを一度終了して再起動する必要があります）。 <a href=\"/faq#memory-reading-error\">Memory Reading Error / Run as admin</a>を参照してください。</li><li><strong>Chrome</strong>から、 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> にアクセスできるか確認してください。アクセスできない場合、ルーター、プロバイダ（ISP）、またはVPNの問題によりAWSへの接続がブロックされています。ペアレンタルコントロールもこの問題のよくある原因です。<ul><li><strong>重要</strong>:これは最近特に増えている原因です。ペアレンタルコントロールの設定（プロバイダ側の設定含む）を確認し、 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> および <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a>をホワイトリストに登録してください。</li><li>このページの下部にある <a href=\"/faq#connectivity-issues-global\">connectivity issues</a> セクションも併せて参照してください。</li></ul></li><li>DirectX 12がオーバーレイの描画と干渉することが判明しています。無効化して状況が改善するか確認してください（TODO: 詳細な手順が必要）。</li><li>すべての方法を試しても解決せず、ゲームが C:\\Program Files または C:\\Program Files (x86)にインストールされている場合は、ゲームを別のフォルダに移動してみてください。 これらのフォルダは保護されているため、アプリがゲームの情報を読み取る際に問題が発生する可能性があります。</li></ul>"
+                    "body": "<ul><li>ハースストーンを起動する <strong>前に</strong> 、Overwolfが起動していることを確認してください。</li><li>Overwolfのオーバーレイが有効になっているか確認してください: <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">>Overwolfのゲーム設定</a></li><li>Firestoneを管理者として実行します（実行後、Overwolfを一度終了して再起動する必要があります）。 <a href=\"/faq#memory-reading-error\">Memory Reading Error / Run as admin</a>を参照してください。</li>Windows11では、Smart App Controlが、Firestoneのメモリリーダーをブロックし、オーバーレイが機能しない可能性があります。<a href=\"/faq#smart-app-control\">Smart App Control</a>をご覧ください</li><li><li><strong>Chrome</strong>から、 <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> にアクセスできるか確認してください。アクセスできない場合、ルーター、プロバイダ（ISP）、またはVPNの問題によりAWSへの接続がブロックされています。ペアレンタルコントロールもこの問題のよくある原因です。<ul><li><strong>重要</strong>:これは最近特に増えている原因です。ペアレンタルコントロールの設定（プロバイダ側の設定含む）を確認し、 <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> および <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a>をホワイトリストに登録してください。</li><li>このページの下部にある <a href=\"/faq#connectivity-issues-global\">connectivity issues</a> セクションも併せて参照してください。</li></ul></li><li>DirectX 12がオーバーレイの描画と干渉することが判明しています。無効化して状況が改善するか確認してください（TODO: 詳細な手順が必要）。</li><li>すべての方法を試しても解決せず、ゲームが C:\\Program Files または C:\\Program Files (x86)にインストールされている場合は、ゲームを別のフォルダに移動してみてください。 これらのフォルダは保護されているため、アプリがゲームの情報を読み取る際に問題が発生する可能性があります。</li></ul>"
                 },
                 "game-is-crashing": {
                     "title": "ゲームがクラッシュする",
@@ -5422,6 +5438,10 @@
                 "memory-reading-other": {
                     "body": "<ul><li>コマンドプロンプトで <code>sfc /scannow</code> を実行してみてください。少なくとも2名のプレイヤーで問題が解決した事例があります。</li><li>「ハースストーン、Battle.net、Overwolf、Firestone等に関連する全プロセスをタスクマネージャー等で手動終了してから、ハースストーンとFirestoneを再起動することで解決しました。タスクトレイからの通常の再起動ではダメでした」</li><li>Overwolfをハースストーンと同じサブディレクトリ配下（例 <code>D:\\Blizzard\\HS\\Hearthstone</code> と <code>D:\\Blizzard\\HS\\Overwolf</code>）にインストールすることで問題を解決できた例もありますので、試してみる価値はあります。</li></ul>",
                     "title": "「メモリ読み取り」エラーが発生した場合のその他の試行項目"
+                },
+                "smart-app-control": {
+                    "body": "<p>Windows 11の<strong>Smart App Control</strong> によって、Firestoneのメモリ読み取り用ファイル (<code>OverwolfUnitySpy.dll</code>)がブロックされることがあります。この問題が発生すると、以下の症状が生じます：</p><ul><li>ゲーム内にウィジェットが表示されない</li><li>FirestoneやHearthstoneを再起動しても改善しない</li><li>Firestoneのメインウィンドウ（コレクションや戦績など）は正常に動作する</li></ul><p>スマート アプリ コントロールが有効になっているか確認するには、 <strongWindows セキュリティ → アプリとブラウザーのコントロール → スマート アプリ コントロールの設定</strong>の順に開きます。詳細は <a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">スマート アプリ コントロールに関するよくある質問（FAQ）</a>をご参照ください。</p><p>Firestoneを最新バージョンにアップデートしてください。最近のリリースではメモリ読み取り用プラグインに署名が施されているため、Windows側で実行が許可されます。すでに最新バージョンをご利用中で、それでもオーバーレイが表示されない場合は、アプリ内からバグ報告を送信してください。</p>",
+                    "title": "Windows 11のスマート アプリ コントロール"
                 }
             },
             "nav-label": "FAQ",
@@ -5626,7 +5646,8 @@
             "premium": "プレミアム",
             "download-alt": "Firestoneをダウンロード",
             "home": "Firestoneホーム",
-            "language": "言語"
+            "language": "言語",
+            "downloads": "ダウンロード"
         },
         "redirect": {
             "partner": "リダイレクト中…",
@@ -5944,6 +5965,78 @@
         },
         "meta": {
             "title": "Firestone - ハースストーンの統計とメタの洞察"
+        },
+        "downloads": {
+            "document-title": "Firestoneをダウンロード— www.firestoneapp.com",
+            "editions-label": "利用可能なエディション",
+            "hero": {
+                "title": "Firestoneをダウンロード",
+                "subtitle": "無料のハースストーンコンパニオン：デッキトラッカー、オーバーレイ、コレクション、バトルグラウンドツール、などなど"
+            },
+            "overwolf": {
+                "badge": "現在利用可能",
+                "blurb": "現在の公開リリース。Overwolfのデスクトップアプリが必要です",
+                "cta": "Overwolfをダウンロード",
+                "title": "Overwolf",
+                "note": "まだお持ちでないない場合、Overwolfがインストールされます"
+            },
+            "standalone": {
+                "badge": "クローズドベータ",
+                "blurb": "Overwolfなしで動作するFirestoneです。現在クローズドベータ中です",
+                "cta": "スタンドアロンをダウンロード",
+                "discord-cta": "Discordで質問する",
+                "discord-lead": "アーリーアクセスとはなんですか？",
+                "title": "スタンドアロン"
+            },
+            "features": {
+                "deck-tracker": {
+                    "alt": "Firestoneのデッキトラッカーオーバーレイが両端に表示された、ハースストーンの盤面です",
+                    "caption": "ゲーム内トラッカーとオーバーレイ",
+                    "title": "デッキトラッカー",
+                    "blurb": "プレイ中、自分のデッキ、手札、盤面、墓地、ーそして対戦相手のカード、秘策ヘルパー、カウンターを見よう"
+                },
+                "title": "無料で手に入るもの",
+                "related-cards": {
+                    "alt": "リスト内のカードにマウスオーバーしたとき、関連するカードを表示しているデッキトラッカー",
+                    "title": "関連するカード",
+                    "caption": "マウスオーバーした時の関連カード",
+                    "blurb": "トラッカー内のカードにマウスオーバーすると、そのカードが生成するカードや関連カードがリストのすぐ隣に表示されます"
+                },
+                "overlays": {
+                    "caption": "ドロー影響統計が表示された発見オーバーレイ",
+                    "title": "ゲーム内オーバーレイ",
+                    "alt": "カードが提示された際、ドロー影響統計を表示している発見オーバーレイです",
+                    "blurb": "発見とマリガンガイドは毎日一定回数まで無料で利用でき、必要な時に情報を得ることができます"
+                },
+                "battlegrounds": {
+                    "title": "バトルグラウンド・コンパニオン",
+                    "caption": "バトルグラウンドのミニオンリスト",
+                    "alt": "バトルグラウンドのミニオンリストは種族と酒場グレードのフィルターで分類されています",
+                    "blurb": "酒場のミニオンリストをグレード、種族、メカニズム別に閲覧できるほか、シミュレータやロビー用ツールも利用できます"
+                },
+                "collection": {
+                    "alt": "コレクション概要は、ハースストーンの各カードセットごとの収集率を表示します",
+                    "caption": "セットごとのコレクション概要",
+                    "title": "コレクショントラッカー",
+                    "blurb": "コレクション全体を一覧表示し、セットの収集率を一目で確認できます。また、パックの開封状況や天井カウンタ、余分なカードの追跡も可能です"
+                },
+                "mods": {
+                    "alt": "コミュニティModをオン・オフのトグル付きで一覧表示している、FirestoneのMod設定画面です",
+                    "blurb": "コミュニティModを設定から有効化しよう ーオートスケルチ、自動デッキ補完、コレクション調整など ー それぞれにトグル付き",
+                    "title": "Mod",
+                    "caption": "ビルトインModマネージャ"
+                },
+                "lead": "コンパニオンはサブスクリプションなしでも動作します。オーバーレイのいくつかは、週、または日ごとの利用制限があります。プレミアムだと制限を解除できます"
+            },
+            "lightbox": {
+                "close": "フルサイズの画像を閉じる",
+                "view-full-size": "フルサイズを見る: {{alt}}"
+            },
+            "premium": {
+                "cta": "プレミアムを見る",
+                "title": "無制限のオーバーレイと詳細な統計とはなんですか？",
+                "lead": "プレミアムでは、無制限の発見・マリガンオーバーレイ、完全なメタ解析、そしてバトルグラウンドの追加機能が利用可能になります"
+            }
         }
     },
     "twitch": {
