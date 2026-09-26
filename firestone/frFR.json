@@ -5206,6 +5206,24 @@
                 },
                 "truncated-logs": {
                     "body": "<p>Si l’application fonctionne pendant un certain temps, puis s’arrête soudainement après quelques parties, il est possible que la génération des logs de Hearthstone se soit arrêtée.</p><p>Suivez ces étapes :</p><ul><li>Fermez Hearthstone</li><li>Accédez au dossier d’installation de Hearthstone, où se trouve le fichier <code>Hearthstone.exe</code></li><li>Vérifiez si le fichier <code>client.config</code> y est présent<ul><li>S’il y est absent, créez-en un</li></ul></li><li>Remplacez le contenu du fichier <code>client.config</code> par ceci :<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>Redémarrez Hearthstone</li></ul><p>Si le jeu continue de se bloquer après cette manipulation, quelque chose ne va pas. Veuillez alors ouvrir un rapport de bug avec le bouton situé en haut à droite de la fenêtre principale de l’application :)</p>"
+                },
+                "memory-reading-error": {
+                    "intro": "<p>L'erreur « Lecture de la mémoire » se produit lorsque l'application ne parvient pas à lire la mémoire du client du jeu. Ce problème est souvent dû à des autorisations ou à des droits d'accès (et le fait de l'exécuter en tant qu'administrateur permet donc généralement de le résoudre). Sous Windows 11, <a href=\"/faq#smart-app-control\">Smart App Control</a> peut également bloquer la DLL de lecture de mémoire de Firestone, même lorsque la fenêtre de superposition s'affiche.</p><p>Voici quelques détails supplémentaires sur toutes les étapes nécessaires pour exécuter l'application en tant qu'administrateur :</p>"
+                },
+                "login-opens-overwolf": {
+                    "body": "<p>Le site web vous reconnecte à l'application de bureau via un lien de type « <code>firestoneapp://</code> ». Overwolf enregistre également ce protocole, ce qui permet à Windows de lancer Overwolf même si vous l'avez déjà fermé.</p><ul><li> Ouvrez <strong>les Paramètres Windows → Applications → Applications par défaut</strong></li><li> Recherchez <strong>Firestone Standalone</strong>, ou le protocole <code>firestoneapp</code></li><li> Définissez Firestone Standalone comme gestionnaire par défaut</li></ul><p> La fermeture d'Overwolf ne désenregistre pas le protocole. Firestone Standalone réenregistre <code>firestoneapp://</code> à chaque démarrage, mais Windows peut continuer à privilégier Overwolf tant que vous n'avez pas modifié l'application par défaut.</p>"
+                },
+                "truncated-logs-other": {
+                    "body": "<p>Une désinstallation puis une réinstallation pourraient résoudre le problème :</p><blockquote><p> J'ai supprimé le fichier d'adresse %localappdata%\\Blizzard\\Hearthstone que vous m'avez indiqué, ainsi que tous les fichiers de cache de Hearthstone, puis j'ai réinstallé le jeu, et le problème a été résolu.</p></blockquote><p> Avez-vous un autre programme qui interagit avec Hearthstone ? Message d’un utilisateur chinois :</p><blockquote><p> J’ai trouvé la cause du problème : lorsque je lance le jeu via un lanceur spécifique à la Chine, les fichiers de journalisation du dossier Hearthstone disparaissent. Si je ne l’utilise pas pour lancer le jeu, il n’y a aucun problème.</p></blockquote>"
+                },
+                "smart-app-control": {
+                    "body": "<p>Windows 11 <strong>Smart App Control</strong> peut bloquer le fichier de lecture de mémoire de Firestone (<code>OverwolfUnitySpy.dll</code>). Lorsque cela se produit :</p><ul><li> Vous ne voyez pas les widgets dans le jeu</li><li>Redémarrer Firestone ou Hearthstone ne résout pas le problème</li><li>La fenêtre principale de Firestone (collection, statistiques) peut toujours fonctionner</li></ul><p> Pour vérifier si le contrôle intelligent des applications est activé : ouvrez <strong>Sécurité Windows → Contrôle des applications &amp; navigateur → Paramètres du contrôle intelligent des applications</strong>. Consultez la FAQ de Microsoft sur Smart App Control : <a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\"></a> .</p><p>Mettez à jour Firestone vers la dernière version. Les versions récentes signent le plugin de lecture de mémoire afin que Windows puisse l'autoriser. Si vous disposez déjà de la dernière version et que les superpositions restent vides, veuillez signaler un bug depuis l'application.</p>"
+                },
+                "mainland-china": {
+                    "body": "<ul><li><p>J'ai entendu dire que si l'on installe à la fois le client « Chine continentale » et celui « Reste du monde », Firestone ne peut fonctionner que sur l'un des deux.</p><ul><li> Il semble que vous puissiez résoudre ce problème en accédant à l'écran « Collection » après vous être connecté</li></ul></li><li> <p> On m'a dit que si vous aviez installé à la fois le client « Chine continentale » et le client « Reste du monde », Firestone ne fonctionnerait que sur l'un d'entre eux.</p><ul><li> Il semble que vous puissiez résoudre ce problème en vous rendant sur l'écran « Collection » une fois connecté.</li></ul></li></ul>"
+                },
+                "game-is-slow-high-refresh": {
+                    "body": "<p>Limiter le jeu à 60 FPS peut donner l’impression que le jeu à APM élevé est lent. Une meilleure alternative sur un écran à taux de rafraîchissement élevé consiste à fixer la limite légèrement en dessous du taux de rafraîchissement et à maintenir le rafraîchissement variable :</p><ul><li> Réglez le limiteur de frames du jeu et du GPU sur le taux de rafraîchissement de votre écran <strong>moins 6</strong> (par exemple, 144 Hz → 138 FPS)</li><li>Veillez à ce que <strong>G-Sync</strong> ou <strong>FreeSync</strong> soit activé et fonctionne correctement</li><li>Dans le Panneau de configuration NVIDIA ou NVIDIA Profile Inspector, réglez <strong>la synchronisation verticale</strong> sur <strong>Fast Sync</strong></li></ul><p> Valeurs types de NVIDIA Profile Inspector pour un écran à 144 Hz :</p><ul><li> Limiteur de fréquence d’images V3 : 138 FPS</li><li>GSYNC - Mode d'application : Plein écran et Fenêtré</li><li>GSYNC - État de l'application : Autoriser</li><li>GSYNC - Fonctionnalité globale : Activée</li><li>GSYNC - Mode global : Plein écran et Fenêtré</li><li>Synchronisation verticale : Fast Sync</li></ul>"
                 }
             }
         },
@@ -5228,6 +5246,12 @@
                         },
                         "developing": {
                             "body": "<p>Firestone est fourni avec une version intégrée de <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>. C’est un moyen assez simple d’installer des mods pour ajouter des fonctionnalités au jeu. Vous pouvez également installer BepInEx par vous-même.</p><p>Référez-vous à la documentation de BepInEx pour développer des plugins BepInEx, ou regardez les mods existants. Vous pouvez également me mentionner sur <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a></p><p>Des fonctionnalités spécifiques à Hearthstone et Firestone (par exemple connaître l’état du deck des deux adversaires) seront disponibles lors de la création de vos mods. Vous pourriez en théorie construire un decktracker entièrement intégré :)</p>"
+                        },
+                        "requirements": {
+                            "body": "<p>Pour être reconnu par le Mod Manager de Firestone, votre mod doit comporter un fichier « Config » contenant les champs « Name », « Version », « Guid » et « DownloadLink » (pointant vers le dépôt). Les dépendances externes ne sont pas encore prises en charge ; n'hésitez pas à me contacter si vous en avez besoin.</p>"
+                        },
+                        "old-mods": {
+                            "body": "<p>Il s'agit de mods qui ne sont plus maintenus et qui ne fonctionnent plus. Si l'un d'entre eux vous intéresse, veuillez créer un ticket sur le dépôt du mod afin de demander au responsable de le mettre à jour pour le nouveau gestionnaire de mods de Firestone.</p><ul><li><a href=\"https://github.com/sebastientromp/hs-melon-hide-mercenary-emotes\" target=\"_blank\" rel=\"noopener noreferrer\"> Masquer les emotes des mercenaires</a>. Supprimer les répliques / bulles de certains mercenaires (par exemple, les portraits « Diamond »)</li><li><a href=\"https://github.com/sebastientromp/hs-melon-increase-game-speed-vs-ai\" target=\"_blank\" rel=\"noopener noreferrer\"> Augmenter la vitesse d’animation contre l’IA</a>. Permet de multiplier la vitesse d’animation par 4 lors des parties contre l’IA. <strong>AVERTISSEMENT :</strong> soyez prudent lorsque vous utilisez ce mod, car l’augmentation de la vitesse du jeu (même contre l’IA) pourrait être mal vue par Blizzard</li></ul>"
                         }
                     }
                 },
@@ -5240,7 +5264,15 @@
                             "body": "<p>Par défaut, cela devrait fonctionner sans problème. Cependant, si vos overlays Firestone n’apparaissent pas en jeu, vous pouvez consulter ce guide de dépannage :<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176947-how-to-show-overwolf-in-game-while-streaming\" target=\"_blank\" rel=\"noopener noreferrer\">Comment afficher Overwolf en jeu pendant un stream</a></p>"
                         },
                         "firestone-configuration": {
-                            "intro": "<p>Vous devez d’abord vous connecter à Twitch depuis Firestone. Allez dans Paramètres &gt; Général &gt; Twitch</p>"
+                            "intro": "<p>Vous devez d’abord vous connecter à Twitch depuis Firestone. Allez dans Paramètres &gt; Général &gt; Twitch</p>",
+                            "after-login": "<p>Une fois connecté, l'écran se présentera comme suit</p>",
+                            "overlays": "<p>Vous n'avez rien d'autre à faire : les marqueurs de suivi (marqueur de suivi, marqueur d'adversaire, pions d'aide secrets, etc.) seront automatiquement capturés pendant le streaming.</p>"
+                        },
+                        "what-is-the-twitch-extension": {
+                            "body": "<p>Il ajoute une superposition de la liste de deck dans le navigateur, ce qui permet à vos utilisateurs de voir facilement la composition de votre deck, mais aussi de passer la souris sur les cartes et de copier le code du deck.</p><p>Il permet également à vos visiteurs de passer la souris sur les cartes présentes sur le plateau ou dans votre main pour découvrir en détail leurs effets.</p>"
+                        },
+                        "installing": {
+                            "body": "<p>Ensuite, vous devez installer l'extension Firestone pour Twitch depuis <a href=\"https://dashboard.twitch.tv/extensions/jbmhw349lqbus9j8tx4wac18nsja9u\" target=\"_blank\" rel=\"noopener noreferrer\">dans le tableau de bord de Twitch</a> (le lien est également disponible dans l'écran des paramètres de Firestone).</p><p>Il vous suffit ensuite de l'installer ; aucune configuration n'est nécessaire.</p><p><strong> ATTENTION :</strong> Il arrive parfois que Twitch vous déconnecte de Firestone. Ainsi, si vous ne voyez aucune superposition interactive sur votre chaîne, veuillez d'abord vérifier dans les paramètres de Firestone que vous êtes bien connecté à Twitch.</p>"
                         }
                     }
                 },
@@ -5249,8 +5281,21 @@
                         "api-links": {
                             "body": "<p>Quelques placeholders sont utilisés à divers endroits dans les API :</p><ul><li><code>%timeSuffix%</code> peut être remplacer par <code>all-time</code>, <code>past-three</code>, <code>past-seven</code> ou <code>last-patch</code> afin de récupérer les données pour différentes périodes</li><li><code>%tribeSuffix</code> correspond soit à <code>all-tribes</code> (recommandé), ou à une combinaison de cinq types de serviteurs, séparés par un trait d’union (<code>-</code>), et en utilisant l’id du type de serviteur comme défini dans <a href=\"https://github.com/Zero-to-Heroes/hs-reference-data/blob/master/src/enums/race.ts\" target=\"_blank\" rel=\"noopener noreferrer\">race.ts</a> (mais la taille d’échantillonnage est généralement trop faible)</li></ul>",
                             "title": "Liens d’API"
+                        },
+                        "general": {
+                            "body": "<ul><li>Toutes les cartes : <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</code></a><ul><li> D'autres langues sont également disponibles en remplaçant <code>enUS</code> par un code de langue pris en charge par HS</li></ul></li></ul>"
                         }
-                    }
+                    },
+                    "intro": "<p>Vous pouvez utiliser ces API directement pour créer des statistiques intéressantes, des infographies ou simplement pour le plaisir. Si vous publiez quoi que ce soit, n'oubliez pas de citer Firestone comme source des données.</p><p>Si vous souhaitez utiliser ces données pour une application publique, n'hésitez pas à me contacter sur Discord à l'adresse <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">.</a></p>"
+                },
+                "setup": {
+                    "intro": "<p>Je trouve que l'interface des paramètres est assez intuitive : les fonctionnalités sont regroupées par menus, et vous pouvez utiliser le champ de recherche en haut de la page pour trouver ce dont vous avez besoin.</p>"
+                },
+                "lottery": {
+                    "intro": "<p>La loterie Firestone vous offre la possibilité de remporter un abonnement de deux mois à Firestone Premium.</p><p>Vous pouvez participer à la loterie Firestone en laissant la fenêtre de la loterie ouverte et visible pendant que vous jouez (cela fonctionne également si vous suivez vos succès).</p><p>À chaque saison (actuellement de deux semaines), vous pouvez gagner des points en effectuant certaines actions dans le jeu, qui sont indiquées dans la fenêtre de la loterie. Chaque action vous rapporte des points, qui s'accumulent tout au long de la saison après chaque partie. À la fin de la saison, deux gagnants sont tirés au sort parmi tous les participants, en fonction du nombre de points que vous avez accumulés. Plus vous avez de points, plus vous avez de chances de gagner.</p>"
+                },
+                "creator-code": {
+                    "intro": "<p>La procédure est très simple : sur la page de paiement, il vous suffit de saisir le code qu'ils vous ont communiqué dans le champ indiqué ci-dessous :</p>"
                 }
             }
         },
