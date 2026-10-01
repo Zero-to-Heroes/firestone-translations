@@ -38,12 +38,38 @@
 				"hotkeys": "快速鍵"
 			},
 			"mods": {
-				"explanation": "模組是會改變《爐石戰記》本身行為的外掛程式。"
+				"explanation": "模組是會改變《爐石戰記》本身行為的外掛程式。",
+				"restart-required": "請重啟爐石戰記以使此變更生效。"
+			},
+			"launch": {
+				"close-app-on-game-exit-label": "離開遊戲時關閉應用程式",
+				"close-app-on-game-exit-tooltip": "關閉爐石戰記時一併結束 Firestone。若已開啟「退出時的戰況總結」，則無法使用此選項。",
+				"disable-hardware-acceleration-label": "停用硬體加速",
+				"disable-hardware-acceleration-tooltip": "以 CPU 而非顯示卡繪製應用程式視窗與覆疊介面。這會降低應用程式的記憶體用量，但動畫與捲動可能會消耗更多 CPU。若出現畫面異常或空白視窗，此選項也可能有幫助。需重新啟動應用程式。",
+				"disable-low-memory-rendering-label": "停用低記憶體渲染",
+				"disable-low-memory-rendering-tooltip": "預設狀況下，應用程式會以較小的圖形緩衝區繪製視窗與覆疊介面，在遊戲中約可節省 100 MB 記憶體。若視窗或覆疊介面顯示異常或捲動不順，請開啟此選項。將在下次啟動應用程式時生效。",
+				"disable-overlay-shared-texture-label": "停用快速遊戲內覆疊",
+				"disable-overlay-shared-texture-tooltip": "預設狀況下，遊戲內覆疊介面會直接透過顯示卡傳送到遊戲，大幅降低 CPU 用量。若覆疊介面沒有顯示、顯示異常，或阻擋遊戲中的點選，請開啟此選項。將在下次啟動爐石戰記時生效。"
+			},
+			"twitch": {
+				"another-pc-sending": "目前正從該頻道的另一台電腦推送",
+				"broadcast-from-this-pc": "從此電腦推送",
+				"sending-overlay": "目前正從此電腦推送"
 			}
 		},
 		"decktracker": {
 			"global": {
-				"individual-counters-size": "個別計數器大小"
+				"individual-counters-size": "個別計數器大小",
+				"use-single-highlight-color": "使用單一標記顏色",
+				"use-single-highlight-color-tooltip": "所有相關卡牌標記使用相同顏色，而不是依優先順序使用不同顏色。"
+			}
+		},
+		"battlegrounds": {
+			"overlay": {
+				"counter-cards-discarded-this-game-label": "已棄掉卡牌",
+				"counter-cards-discarded-this-game-tooltip": "顯示本賽局你已棄掉的卡牌數量",
+				"counter-deity-label": "神",
+				"counter-deity-tooltip": "顯示你的「神」的攻擊力與生命值"
 			}
 		}
 	},
@@ -182,15 +208,210 @@
 					"title": "Windows 11 智慧應用程式控制"
 				}
 			}
+		},
+		"docs": {
+			"pages": {
+				"mods": {
+					"sections": {
+						"configuration": {
+							"body": "<p>玩家可以在 Firestone 中變更你的模組選項。請在名為 <code>Firestone</code> 的區段中，以 <code>Config.Bind</code> 綁定每個選項。外掛程式啟動過一次後，Firestone 會在「設定」&gt;「模組」底下以模組名稱新增一個頁面。</p><p>僅會顯示名稱為 <code>Firestone</code>，或是 <code>Firestone</code> 後面加上群組（例如 <code>Firestone.Replay</code>）的區段。<code>General</code> 中繼資料（<code>Name</code>、<code>Guid</code>、<code>Version</code>、<code>DownloadLink</code>、<code>Description</code>）仍會留在模組清單上。</p><pre><code>Config.Bind(\"Firestone\", \"EnableFoo\", true, \"Enable Foo\\nTurns the feature on.\");\n\nConfig.Bind(\"Firestone.Replay\", \"Speed\", 1f,\n    new ConfigDescription(\"Playback speed\", new AcceptableValueRange&lt;float&gt;(0.5f, 4f)));\n\nConfig.Bind(\"Firestone\", \"Mode\", Mode.Fast, \"Which mode to use\");</code></pre> <p>說明的第一行是標籤，後續行是提示框。<code>Firestone.Replay</code> 是標題為 Replay 的群組。單純的 <code>Firestone</code> 區段沒有群組標題。設定會依 <code>Bind</code> 呼叫的順序顯示。</p><p>此外掛程式執行過一次後頁面才會出現，因為那時 BepInEx 才會寫入 cfg。在 Firestone 中變更數值會更新該檔案，外掛程式會在下次啟動爐石戰記時讀取。若遊戲已在執行中，Firestone 會請玩家重新啟動遊戲。</p>",
+							"title": "Firestone 中的設定"
+						}
+					}
+				}
+			}
 		}
 	},
 	"decktracker": {
 		"guessed-info": {
 			"minion-type": "手下類型",
 			"minion-types": "手下類型"
-		}
+		},
+		"created-by-label": "創建者",
+		"drawn-by-label": "抽取者"
 	},
 	"quests": {
 		"bloodstones-daily": "每日血石"
+	},
+	"androidDeckTracker": {
+		"onboarding": {
+			"accountTitle": "帳號",
+			"barSubtitle": "記牌器",
+			"barTitle": "Firestone",
+			"checkAgain": "再檢查",
+			"developerSettings": "開啟開發人員選項",
+			"grant": "允許",
+			"intro": "請閱讀下列說明，在手機上設定 Firestone。這是一次性設定，我們會逐步引導你，盡可能讓過程更輕鬆。",
+			"openSettings": "開啟設定",
+			"overlayPermission": "允許顯示在其他應用程式上層",
+			"overlayPermissionBody": "牌組清單僅供顯示，不會攔截原本要給爐石戰記的點選。可用一個小按鈕顯示或隱藏。",
+			"pairClose": "關閉",
+			"pairHint": "輸入 6 位數代碼",
+			"pairNotReady": "代碼送出前，代碼畫面就已關閉。請再次顯示代碼，保持該畫面開啟，然後在 Firestone 通知中輸入這 6 位數。",
+			"pairWaiting": "請將代碼留在畫面上，然後在此輸入 6 位數。",
+			"pairWrongCode": "該代碼無效。請輸入畫面上顯示的代碼。",
+			"progress": "步驟 {current}／{total}",
+			"readyBody": "開始一場爐石戰記對戰。牌組清單會顯示在對戰上方。",
+			"readyTitle": "記牌器運作中",
+			"setup": "繼續",
+			"setupBody": "準備好進入下一個畫面時，點選「繼續」。",
+			"shizukuInstall": "安裝 Shizuku",
+			"shizukuInstallBody": "Shizuku 可讓 Firestone 讀取爐石戰記的日誌檔。",
+			"shizukuPermission": "在 Shizuku 中允許 Firestone",
+			"shizukuStart": "啟動 Shizuku",
+			"shizukuStartBody": "開啟無線偵錯，啟動 Shizuku，然後回來這裡。每次重新開機後都需要再做一次。",
+			"shizukuStopped": "Shizuku 已停止",
+			"shizukuStoppedBody": "Shizuku 已停止，通常是重新開機後。點選「設定」將其開啟。在信任的 Wi-Fi 上，下次可以自動啟動。",
+			"signInBody": "點選以使用 Battle.net 登入，即可將所有賽局儲存到你的 Firestone 帳號。你的 Battle.net 資訊絕不會分享給 Firestone。",
+			"signInButton": "使用 Battle.net 登入",
+			"signOut": "登出",
+			"signedIn": "已登入為 {name}。結束的賽局會儲存到此帳號。",
+			"signedInNote": "你的賽局現已同步到帳號，可從桌面應用程式擷取。",
+			"stepAllowInstalls": "點選「繼續」。Android 會開啟 Firestone 的設定。開啟「允許來自這個來源」，然後回到這裡。",
+			"stepAllowInstallsTitle": "允許安裝",
+			"stepDeveloper": "點選「繼續」。在手機資訊畫面中，捲動到「組建編號」並點選 7 次，直到手機顯示已開啟開發人員選項。然後回來這裡。",
+			"stepDeveloperButton": "開啟手機資訊",
+			"stepDeveloperTitle": "開啟開發人員選項",
+			"stepGrant": "點選「繼續」。Android 會詢問是否允許 Firestone 使用輔助程式。點選「允許」。",
+			"stepGrantButton": "允許 Firestone",
+			"stepGrantTitle": "允許 Firestone",
+			"stepInstallTitle": "安裝輔助程式",
+			"stepInstalling": "點選「繼續」。Android 會請你安裝 Firestone 所需的輔助程式。確認安裝後，回到此畫面。",
+			"stepNearby": "點選「繼續」。Android 會詢問是否允許 Firestone 在此手機上尋找無線偵錯。點選「允許」。",
+			"stepNearbyButton": "允許",
+			"stepNearbyTitle": "允許此手機上的 Firestone",
+			"stepOverlay": "點選「繼續」，讓 Firestone 顯示在遊戲上方。在接著出現的清單中找到 Firestone，並允許它顯示在其他應用程式上層。然後回到這裡。",
+			"stepOverlayButton": "允許牌組清單",
+			"stepOverlayTitle": "在遊戲上方顯示 Firestone",
+			"stepPair": "點選「顯示代碼」。點選「無線偵錯」，再點選「使用配對碼配對裝置」。保持該畫面開啟。點選 Firestone 通知，並在其中輸入 6 位數代碼。",
+			"stepPairButton": "顯示代碼",
+			"stepPairTitle": "輸入配對碼",
+			"stepStart": "點選「繼續」以啟動輔助程式。請留在此畫面。這需要幾秒鐘。若需要配對碼，下一步會說明。",
+			"stepStartTitle": "啟動輔助程式",
+			"stepUnsupported": "此 Android 版本無法執行記牌器。",
+			"stepWireless": "點選「繼續」。找到「無線偵錯」並開啟開關。若手機詢問此 Wi-Fi，請允許。然後回來這裡。",
+			"stepWirelessButton": "開啟開關",
+			"stepWirelessTitle": "開啟無線偵錯",
+			"title": "設定記牌器"
+		},
+		"overlay": {
+			"notificationText": "追蹤中",
+			"notificationTitle": "Firestone 記牌器",
+			"opponent": "對手",
+			"player": "你的牌組",
+			"unknownCard": "未知卡牌"
+		}
+	},
+	"app": {
+		"tray": {
+			"log-in": "登入",
+			"log-out": "登出 ({{username}})",
+			"main-window-requires-premium": "主視窗（需 Premium）",
+			"open-log-folder": "開啟日誌資料夾",
+			"premium-required-tooltip": "Firestone — 需要 Premium 帳號。請從選單登入。",
+			"settings-requires-premium": "設定（需 Premium）"
+		},
+		"updates": {
+			"standalone": {
+				"detail": "重新啟動 Firestone 以套用更新。",
+				"later": "稍後",
+				"message": "已下載新版本的 Firestone（{{version}}）。",
+				"restart": "重新啟動",
+				"title": "Firestone 更新"
+			}
+		}
+	},
+	"archetype": {
+		"astral-druid": "星體-德",
+		"boar-otk-druid": "野豬OTK-德",
+		"champions-druid": "艾澤拉斯的勇士-德",
+		"deios-rogue": "時空領主戴歐司-賊",
+		"divine-spirit-priest": "神聖之靈-牧",
+		"dragon-pirate-warrior": "龍海盜-戰",
+		"drake-warlock": "幼龍-術",
+		"exodia-mage": "禁忌序列-法",
+		"fatigue-dh": "疲勞-惡魔獵",
+		"gnoll-miracle-rogue": "豺狼人奇蹟-賊",
+		"harold-piglock": "預兆豬-術",
+		"harold-void-soul-dh": "預兆虛無靈魂-惡魔獵",
+		"hl-lc-quest-priest": "HL LC 任務-牧",
+		"hl-thief-rogue": "HL 偷偷-賊",
+		"hl-velarok-rogue": "HL 節奏(維拉若克)-賊",
+		"igneous-warrior": "火成熔岩吞噬者-戰",
+		"infinity-paladin": "無限-聖",
+		"jtu-quest-priest": "JTU 任務-牧",
+		"kingsbane-rogue": "弒君-賊",
+		"lc-quest-warrior": "LC 任務-戰",
+		"mechathun-paladin": "機神克蘇恩-聖",
+		"mill-rogue": "疲倦-賊",
+		"mine-rogue": "地雷-賊",
+		"naga-dh": "納迦-惡魔獵",
+		"odd-paladin": "奇數-聖",
+		"ohnahra-shaman": "雍亞拉-薩",
+		"pirate-burnlock": "海盜直傷-術",
+		"pirate-warrior": "海盜-戰",
+		"questline-warrior": "任務線-戰",
+		"sif-mage": "希芙-法",
+		"sneaky-ayaya-rogue": "偷偷阿雅-賊",
+		"sneaky-harold-rogue": "偷偷預兆-賊",
+		"sneaky-rogue": "偷偷-賊",
+		"star-grazer-druid": "噬星者-德",
+		"sulthraze-warrior": "蘇薩斯-戰",
+		"tyrande-priest": "泰蘭妲-牧",
+		"warsong-warrior": "戰歌-戰",
+		"xl-astral-druid": "XL 星體-德",
+		"xl-beetle-druid": "XL 甲蟲-德",
+		"xl-demon-boarlock": "XL 惡魔野豬-術",
+		"xl-egg-paladin": "XL 蛋-聖",
+		"xl-hl-big-spell-mage": "XL HL 大法術-法",
+		"xl-hl-exodia-paladin": "XL HL 四騎士-聖",
+		"xl-hl-lpg-mage": "XL HL LPG-法",
+		"xl-hl-questline-warrior": "XL HL 任務線-戰",
+		"xl-hl-rainbow-dk": "XL HL 彩虹-死騎",
+		"xl-hl-sou-quest-shaman": "XL HL SOU 任務-薩",
+		"xl-hl-thief-rogue": "XL HL 偷偷-賊",
+		"xl-igneous-odyn-warrior": "XL 打撈歐丁-戰",
+		"xl-kingsbane-rogue": "XL 弒君-賊",
+		"xl-lc-quest-priest": "XL LC 任務-牧",
+		"xl-lc-quest-shaman": "XL LC 任務-薩",
+		"xl-lc-quest-warrior": "XL LC 任務-戰",
+		"xl-questline-warrior": "XL 任務線-戰",
+		"xl-shudderwock-shaman": "XL 沙德沃克-薩",
+		"xl-tog-dh": "XL 國王-惡魔獵",
+		"xl-warlock": "XL 術"
+	},
+	"battlegrounds": {
+		"in-game": {
+			"dark-gifts": {
+				"reason": {
+					"lobby-no-aberration": "僅會在這場對局包含「變異怪」時出現",
+					"requires-activate": "僅會出現在[啟動]手下的選單中",
+					"requires-discards-this-game": "需要本賽局中曾棄掉過卡牌"
+				}
+			}
+		},
+		"sim": {
+			"cards-discarded-this-game": "本賽局已棄掉的卡牌",
+			"cards-discarded-this-game-tooltip": "本賽局你已棄掉的卡牌數量"
+		}
+	},
+	"bgs-comp": {
+		"aberration_deathrattle": "死聲流變異怪",
+		"aberration_discard": "棄掉流變異怪",
+		"dragon_shield": "聖盾流龍類",
+		"mech_glambot": "「Glambot」流機械",
+		"mech_volumizer": "「音量機兵」流機械"
+	},
+	"counters": {
+		"bgs-cards-discarded-this-game": {
+			"player": "本賽局你已棄掉 {{value}} 張卡牌"
+		},
+		"bgs-deity": {
+			"player": "你的「{{cardName}}」體質是 {{atk}}/{{health}}"
+		}
+	},
+	"twitch": {
+		"lease-held-text": "點選以開啟設定並從此電腦推送",
+		"lease-held-title": "另一台電腦正在此頻道推送"
 	}
 }
