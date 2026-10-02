@@ -556,7 +556,10 @@
         "updates": {
             "update-available": "有新版本囉！點選即可更新",
             "update-error": "更新應用程式時出錯。 請重啟 Overwolf 以強制更新",
-            "restart-needed": "新版本準備就緒，點選以重新啟動應用程式（建議在未進行遊戲時執行動作）"
+            "restart-needed": "新版本準備就緒，點選以重新啟動應用程式（建議在未進行遊戲時執行動作）",
+            "standalone": {
+                "message": "已下載新版本的 Firestone（{{version}}）。"
+            }
         },
         "arena": {
             "menu": {
@@ -3625,7 +3628,7 @@
             },
             "dark-gifts": {
                 "guaranteed": "保證出現",
-                "guaranteed-type": "保證手下類型",
+                "guaranteed-type": "保證種類",
                 "reason": {
                     "not-dragon": "不會出現在「龍類」手下的選單中",
                     "not-avenge": "不會出現在[報復]手下的選單中",
@@ -3656,10 +3659,10 @@
                     "requires-murloc": "僅會出現在「魚人」手下的選單中",
                     "requires-no-minion-type": "僅會出現在「無類別」手下的選單中",
                     "charisma-banned-minion": "此手下無法獲得",
-                    "lobby-dragon": "大廳中有龍類時無法獲得",
+                    "lobby-dragon": "大廳中有「龍類」時無法獲得",
                     "not-highest-trigger-count": "僅當此項為你觸發次數最多的成長條件時提供",
                     "not-venomous-or-poisonous": "劇毒或毒素手下無法獲得",
-                    "stitched-salvager": "縫合拾荒者無法獲得",
+                    "stitched-salvager": "「縫合拾荒者」無法獲得",
                     "not-tier-7": "旅店 7⭐️手下無法獲得"
                 },
                 "turn": "回合 {{value}}",
@@ -3676,11 +3679,11 @@
                     "no-magnetic-sell-hand": "合體手下、帶有「當你賣出此手下時」效果的手下，以及旨在保留於手牌中的手下無法獲得黑暗贈禮。",
                     "guaranteed-type": "從第 6 回合開始，提供的三隻手下中會有一隻為你數量最多的類別。",
                     "battlecry-choose-one": "戰吼與二選一手下僅能獲得[雙重幻象]、[複製]、[鍍金]或[迴響之聲]。",
-                    "lobby-bans": "[抵抗]與[卓越]在有龍類的大廳中禁止出現。[敵意]禁止在劇毒或毒素手面上出現。[魅力]禁止在旅店 7⭐️手面上出現。",
-                    "rarer-gifts": "鍍金、持久恐懼、泰坦之力與免疫比其他贈禮更為罕見。",
-                    "golemancy-salvager": "縫合拾荒者無法獲得魔像術。",
-                    "scaling-highest": "在「戰傷」、「死亡擁抱」與「吸取法術」中，僅會提供最常觸發的條件。",
-                    "battlecry-before-5": "第 5 回合前不會提供戰吼與二選一手下。",
+                    "lobby-bans": "[抵抗]與[卓越]在有龍類的大廳中禁止出現。[敵意]在劇毒或毒素手下裡禁止出現。[魅力]在旅店 7⭐️手下裡禁止出現。",
+                    "rarer-gifts": "[鍍金]、[恐懼延續]、[泰坦之力]與[無敵]比其他贈禮更為罕見。",
+                    "golemancy-salvager": "「縫合拾荒者」無法獲得[魔像術]。",
+                    "scaling-highest": "在「戰鬥傷疤」、「死亡的擁抱」、「法術虹吸」與「褻瀆」中，僅會提供最常觸發的條件。",
+                    "battlecry-before-5": "第 5 回合前不會提供[戰吼]與[二選一]手下。",
                     "deathrattle-stats": "死亡之聲手下在屬性值加成類贈禮中僅能獲得[磨利劍刃]或[死亡的擁抱]。"
                 },
                 "turns-plus": "{{min}} 回合以上",
@@ -5642,6 +5645,9 @@
                         "requirements": {
                             "title": "需求",
                             "body": "<p>為了能被 Firestone 的模組管理器辨識，你的模組應公開一份包含 Name(名稱)、Version(版本)、Guid(組建) 與 DownloadLink（下載連結，指向專案庫）的 Config。目前尚不支援外部相依性套件，若你有此需求請至 Discord 敲我。</p>"
+                        },
+                        "configuration": {
+                            "body": "```\nwebsite.docs.pages.mods.sections.configuration.body\n<p>玩家可以在 Firestone 中變更你的模組選項。請在名稱為 <code>Firestone</code> 的區塊中使用 <code>Config.Bind</code> 來綁定各個選項。當外掛程式啟動過一次後，Firestone 就會以該模組的名稱，在「設定 &gt; 模組」底下新增一個頁面。</p><p>系統僅會顯示名稱為 <code>Firestone</code>，或是 <code>Firestone</code> 後方帶有分組名稱（例如 <code>Firestone.Replay</code>）的區塊。而 <code>General</code> 的元資料（<code>Name</code>、<code>Guid</code>、<code>Version</code>、<code>DownloadLink</code>、<code>Description</code>）則會保留在模組清單中。</p><pre><code>Config.Bind(\"Firestone\", \"EnableFoo\", true, \"Enable Foo\\nTurns the feature on.\");\n\nConfig.Bind(\"Firestone.Replay\", \"Speed\", 1f,\n    new ConfigDescription(\"Playback speed\", new AcceptableValueRange&lt;float&gt;(0.5f, 4f)));\n\nConfig.Bind(\"Firestone\", \"Mode\", Mode.Fast, \"Which mode to use\");</code></pre> <p>描述的第一行會作為標籤，後續行數則作為工具提示。<code>Firestone.Replay</code> 是一個標題為 Replay 的分組；而單純的 <code>Firestone</code> 區塊則沒有分組標題。設定選項會依照呼叫 <code>Bind</code> 的順序呈現。</p><p>當外掛程式執行過一次後，該頁面就會顯示，因為此時 BepInEx 會寫入 cfg 檔案。在 Firestone 中變更數值會更新該檔案，而外掛程式將會在下次啟動《爐石戰記》時讀取它。如果遊戲已經在執行中，Firestone 會提示玩家重新啟動遊戲。</p>\n\n```"
                         }
                     },
                     "blurb": "透過 Firestone 安裝與開發《爐石戰記》模組。",
@@ -7006,5 +7012,13 @@
         "neutral_tea_set": "茶具流",
         "beast_beetle": "甲蟲流野獸",
         "dragon_evoker": "「炎鑄喚術師」流龍類"
+    },
+    "androidDeckTracker": {
+        "onboarding": {
+            "stepGrantTitle": "允許 Firestone",
+            "stepGrantButton": "允許 Firestone",
+            "accountTitle": "帳號",
+            "stepNearbyButton": "允許"
+        }
     }
 }
