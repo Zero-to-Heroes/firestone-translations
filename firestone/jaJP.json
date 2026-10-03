@@ -530,7 +530,13 @@
             "restart": "Firestoneを再起動",
             "reset-positions": "ウィンドウの位置をリセット",
             "settings": "設定",
-            "main-window": "メインウィンドウを表示"
+            "main-window": "メインウィンドウを表示",
+            "log-in": "ログイン",
+            "log-out": "ログアウト ({{username}})",
+            "main-window-requires-premium": "メインウィンドウ(プレミアムが必要)",
+            "open-log-folder": "ログフォルダを開く",
+            "premium-required-tooltip": "Firestone—プレミアムアカウントが必要です。メニューからログインしてください",
+            "settings-requires-premium": "設定(プレミアムが必要)"
         },
         "internal": {
             "memory": {
@@ -557,7 +563,14 @@
         "updates": {
             "update-available": "新バージョンをご利用いただけます。クリックしてアップデートして下さい",
             "update-error": "アプリの更新中にエラーが発生しました。更新のため、Overwolfを再起動してください",
-            "restart-needed": "新しいバージョンがあります。クリックしてアプリを再起動して下さい。試合時以外での再起動をお勧めします。"
+            "restart-needed": "新しいバージョンがあります。クリックしてアプリを再起動して下さい。試合時以外での再起動をお勧めします。",
+            "standalone": {
+                "detail": "Firestoneを再起動してアップデートを適用してください",
+                "later": "後で",
+                "message": "新しいFirestoneのバージョン({{version}}) がダウンロードされました",
+                "restart": "再起動",
+                "title": "Firestoneのアップデート"
+            }
         },
         "arena": {
             "menu": {
@@ -2858,6 +2871,12 @@
         "flesh-giant": {
             "opponent": "対戦相手のヒーローの体力は相手のターン中に{{times}}回変わった",
             "player": "自分のヒーローの体力は自分のターン中に{{times}}回変わった"
+        },
+        "bgs-cards-discarded-this-game": {
+            "player": "この試合中、{{value}} 枚のカードを破棄した"
+        },
+        "bgs-deity": {
+            "player": "自分の「 {{cardName}} 」は {{atk}}/{{health}}"
         }
     },
     "loading": {
@@ -2868,7 +2887,7 @@
     "ftue": {
         "title": "Firestoneへようこそ",
         "subtitle": "Firestoneは、非常に強力で直感的に使えるハースストーンのコンパニオンアプリです。初心者から世界チャンピオンに至るまで、世界中の数十万人のプレイヤーに愛用されています。",
-        "start-button": "続ける",
+        "start-button": "続行",
         "skip-button": "スキップ",
         "previous-button": "前へ",
         "next-button": "次へ",
@@ -3234,7 +3253,9 @@
             "damage": "与えたダメージ",
             "card-type": "カードタイプ",
             "mechanics": "キーワード",
-            "cost-modifier": "コスト補正"
+            "cost-modifier": "コスト補正",
+            "minion-type": "ミニオンタイプ",
+            "minion-types": "ミニオンタイプ"
         },
         "tourist": "観光客：{{className}}",
         "burns-in": "{{valyue}}ターンで燃える",
@@ -3245,7 +3266,9 @@
         "dredged-by": "海底探査by「{{value}}」",
         "card-tooltip-pool-size": "{{value}}枚のカード",
         "prepared-tooltip": "このカードは{{value}}マナで準備済みです",
-        "card-mulliganed-away": "マリガンで返却"
+        "card-mulliganed-away": "マリガンで返却",
+        "created-by-label": "生成：",
+        "drawn-by-label": "ドロー："
     },
     "battlegrounds": {
         "menu": {
@@ -3445,7 +3468,9 @@
             "eternal-knight-attack-buff": "「永劫の騎士」の攻撃力",
             "eternal-knight-attack-buff-tooltip": "通常の「永劫の騎士」がこの試合中に得る攻撃力バフです(例：永劫の肖像画から)",
             "golden-minions-played-this-game": "ゴールデンミニオンの使用数",
-            "golden-minions-played-this-game-tooltip": "この試合中にゴールデンミニオンを使用した回数です"
+            "golden-minions-played-this-game-tooltip": "この試合中にゴールデンミニオンを使用した回数です",
+            "cards-discarded-this-game-tooltip": "この試合中に破棄されたカード枚数です",
+            "cards-discarded-this-game": "今まで破棄されたカード数"
         },
         "hero-stats": {
             "finishes-title": "終了",
@@ -3659,7 +3684,7 @@
                     "guaranteed-type": "6ターン目から、提示されるミニオンのうち1体は自分の最も多い種族のミニオンになります",
                     "lobby-bans": "レジスタンスと超越はドラゴンのいる試合では提示されません。敵意は毒袋と猛毒ミニオンには提示されません。カリスマ性はグレード7ミニオンには提示されません。",
                     "rarer-gifts": "金めっき、巨人の力、難攻不落は他の悪夢の恵みよりレアです",
-                    "scaling-highest": "戦傷、死の抱擁、呪文抽出の中では、最も発動回数が多いものだけが提示されます",
+                    "scaling-highest": "戦傷、死の抱擁、呪文抽出、神秘の精髄の中では、最も発動回数が多いものだけが提示されます",
                     "battlecry-before-5": "雄叫びと選択ミニオンは5ターン目以前は提示されません。",
                     "no-magnetic-sell-hand": "超電磁ミニオン、売ったときに効果が発動するミニオン、手札に留めると効果がでるミニオンには悪夢の恵みは提示されません",
                     "golemancy-salvager": "ゴーレム術は「縫い目のサルベージャー」には提示されません"
@@ -3698,7 +3723,10 @@
                     "not-highest-trigger-count": "これが最も発動させたステータス強化条件のときのみ提示されます",
                     "requires-deathrattles-this-game": "この試合中、断末魔が発動している必要があります",
                     "requires-demon": "悪魔にのみ提示されます",
-                    "requires-quilboar": "キルボアにのみ提示されます"
+                    "requires-quilboar": "キルボアにのみ提示されます",
+                    "lobby-no-aberration": "異形がロビーに出現しているときのみ提示されます",
+                    "requires-activate": "発動ミニオンのみに提示されます",
+                    "requires-discards-this-game": "この試合中にカードが破棄されている必要があります"
                 },
                 "wiki-link": "Hearthstone Wiki — 悪夢の恵み",
                 "wiki-source": "ソース：",
@@ -3841,7 +3869,8 @@
         }
     },
     "quests": {
-        "quests-completed": "全てのクエストを完了しました"
+        "quests-completed": "全てのクエストを完了しました",
+        "bloodstones-daily": "デイリー闇市通貨"
     },
     "settings": {
         "title": "設定",
@@ -3912,7 +3941,8 @@
                 "widgets": "ウィジェット",
                 "streamer": "配信者",
                 "account": "アカウント",
-                "addons": "アドオン"
+                "addons": "アドオン",
+                "hotkeys": "ホットキー"
             },
             "mods": {
                 "title": "Mod",
@@ -3980,7 +4010,8 @@
                 "auto-update-trusted-verified": "Trusted ModとVerified Modのみ",
                 "import-invalid-url": "GithubのレポジトリのURLをペーストしてください (https://github.com/owner/repo)",
                 "source-trusted": "Trusted",
-                "explanation": "Modは、Hearthstone自体の挙動を変更するプラグインです"
+                "explanation": "Modは、Hearthstone自体の挙動を変更するプラグインです",
+                "restart-required": "ハースストーンを再起動してこの変更を適用する"
             },
             "third-party": {
                 "intro": "私たちは、あなたのデータがあなたのものであると信じています。 そして、あなたは他のサードパーティのウェブサイトにデータを同期させて、彼らを手助けすることができます。それによって私たちが報酬を受け取ることはありませんが、彼らが私たちを話題にだすことで、ある程度の露出を得ることができます :)",
@@ -4052,7 +4083,10 @@
                 "delay-label-tooltip": "このミリ秒でTwitchの配信を遅延させます。ストリームスナイプに対して有効です",
                 "other-options-title": "その他のオプション",
                 "appear-on-live-streams-label": "配信タブに掲載",
-                "appear-on-live-streams-tooltip": "\"配信\"タブに掲載されます。この機能は開発中です。Firestone を使用中の配信者、ゲームモード、配信へのリンク、その他の情報などが表示されます。"
+                "appear-on-live-streams-tooltip": "\"配信\"タブに掲載されます。この機能は開発中です。Firestone を使用中の配信者、ゲームモード、配信へのリンク、その他の情報などが表示されます。",
+                "broadcast-from-this-pc": "このPCから配信",
+                "sending-overlay": "現在、このPCから配信中です",
+                "another-pc-sending": "現在、そのチャンネルで別のPCからの配信が行われています"
             },
             "launch": {
                 "launch-on-game-start-label": "ハースストーン開始時にFirestoneを起動",
@@ -4107,7 +4141,15 @@
                 "replay-ftue-button-text": "スタート",
                 "restore-ftue-settings-button-label": "過去の設定を復元します",
                 "restore-ftue-settings-button-text": "復元",
-                "restore-ftue-settings-confirmation": "最近のイントロダクションプロフィール適用前の設定を復元しますか？"
+                "restore-ftue-settings-confirmation": "最近のイントロダクションプロフィール適用前の設定を復元しますか？",
+                "close-app-on-game-exit-label": "ゲーム終了時にアプリを閉じる",
+                "disable-hardware-acceleration-label": "ハードウェアアクセラレーションを無効化",
+                "disable-low-memory-rendering-label": "低メモリレンダリングを無効化",
+                "disable-low-memory-rendering-tooltip": "デフォルトでは、本アプリはより小さなグラフィックスバッファでウィンドウとオーバーレイを描画するため、ゲーム中のメモリ使用量を約100MB節約できます。ウィンドウやオーバーレイの表示がおかしい場合や、スクロールがスムーズでない場合は、この設定を有効にしてください。次回のアプリ起動時から適用されます",
+                "disable-overlay-shared-texture-label": "ゲーム内高速オーバーレイを無効化",
+                "disable-overlay-shared-texture-tooltip": "デフォルトでは、ゲーム内オーバーレイはグラフィックボード経由でゲームに直接送信されるため、CPU使用量を大幅に削減できます。オーバーレイが表示されない場合や、表示がおかしい場合、またはゲーム内のクリックが機能しなくなる場合は、この設定を有効にしてください。次回のハースストーン起動時から適用されます",
+                "close-app-on-game-exit-tooltip": "ハースストーンの終了時にFirestoneを終了します。終了時のセッションまとめが有効になっている場合は使用できません",
+                "disable-hardware-acceleration-tooltip": "アプリのウィンドウやオーバーレイの描画処理を、グラフィックボードの代わりにCPUで行います。アプリのメモリ使用量は減りますが、アニメーションやスクロール時にCPU使用量が増加する場合があります。表示の不具合やウィンドウが真っ白になる現象の改善にも有効です。変更の適用にはアプリの再起動が必要です"
             },
             "localization": {
                 "title": "ローカライズ",
@@ -4369,6 +4411,18 @@
                 "perks-replays-title": "リプレイの保存期間は約1年間です",
                 "perks-sync-detail": "対戦履歴、パック統計、実績は、再インストールやPCを買い替えた場合でも保持されます。",
                 "perks-title": "サインインするべき？"
+            },
+            "hotkeys": {
+                "battlegrounds": "バトルグラウンドウィンドウを表示/非表示",
+                "change": "変更",
+                "collection": "メインウィンドウを表示/非表示",
+                "intro": "Firestoneのウィンドウを表示または非表示にするキーを変更します。「変更」をクリックしてから、新しいキーの組み合わせを押してください。Escキーでキャンセルできます",
+                "conflict": "その組み合わせはすでに{{hotkey}}で使用されています",
+                "failed": "このホットキーをアサインできません。すでに他のアプリによって使用されている可能性があります",
+                "listening": "キーを押してください…",
+                "live-info": "ライブ情報を表示",
+                "reset": "リセット",
+                "title": "ホットキー"
             }
         },
         "decktracker": {
@@ -4447,7 +4501,10 @@
                 "hide-play-order-on-blocking-ui-tooltip": "スクリーン上でゲームメニュー、発見、カードを拡大表示(手札、盤面、履歴)などをしている際はミニオンの使用順を隠します",
                 "show-flavor-text-on-hover": "ホバーでフレーバーテキストを表示",
                 "show-flavor-text-on-in-game-hover": "カードを注視したとき、フレーバーテキストを表示",
-                "show-flavor-text-on-in-game-hover-tooltip": "ハースストーンでカードを注視したとき(手札か盤面)、そのカードのフレーバーテキストを通知欄に表示します"
+                "show-flavor-text-on-in-game-hover-tooltip": "ハースストーンでカードを注視したとき(手札か盤面)、そのカードのフレーバーテキストを通知欄に表示します",
+                "individual-counters-size": "個々のカウンターのサイズ",
+                "use-single-highlight-color": "単一のハイライトカラーを使用",
+                "use-single-highlight-color-tooltip": "優先度ごとに異なるハイライトカラーを使う代わりに、全ての関連するカードのハイライトに同じ色を使います"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
@@ -5118,7 +5175,11 @@
                 "always-show-tavern-tier-label": "酒場グレードを常に表示",
                 "always-show-tavern-tier-tooltip": "バトルグラウンドのリーダーボードで、ポートレートの隣に各プレイヤーの現在の酒場グレードを表示します",
                 "hide-battle-odds-until-mouseover-tooltip": "有効化すると、小さなシミュレーターのバナーがスクリーンの上部に表示され、マウスオーバーするとフル版(勝ち、負け、引き分け)のウィジェットが表示されます",
-                "hero-power-extra-info-label": "ヒーローパワーの追加情報"
+                "hero-power-extra-info-label": "ヒーローパワーの追加情報",
+                "counter-deity-label": "神祇",
+                "counter-deity-tooltip": "自分の神祇の攻撃力と体力を表示します",
+                "counter-cards-discarded-this-game-label": "破棄されたカード",
+                "counter-cards-discarded-this-game-tooltip": "この試合中、何枚のカードが破棄されたかを表示します"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -5535,6 +5596,10 @@
                         "not-ok": {
                             "title": "絶対にNGなMOD",
                             "body": "<ul><li>不公平なアドバンテージを与えるMod／チート行為に該当するMod</li><li>未解放のスキンやコスメティック要素へのアクセスを可能にするMod</li><li>平たく言うと、本来ゲーム内リソースやリアルマネーで購入すべきコンテンツへのアクセスを可能にするMod、または開発者の意図に反するMod</li></ul>"
+                        },
+                        "configuration": {
+                            "body": "<p>プレイヤーはFirestoneからお使いのModのオプションを変更できます。<code>Firestone</code>という名前のセクション内で、 <code>Config.Bind</code>を使用して各オプションをバインドしてください。プラグインが一度起動すると、Firestoneは設定 &gt; Modの下にMod名を使用したページを追加します。</p><p><code>Firestone</code>という名前のセクション、または<code>Firestone.Replay</code>のように、<code>Firestone</code> の後にグループ名が続くセクションのみが表示されます。  <code>General</code> メタデータ(<code>Name</code>, <code>Guid</code>, <code>Version</code>, <code>DownloadLink</code>, <code>Description</code>) はMod一覧にそのまま残ります。\n\n</p><pre><code>Config.Bind(\"Firestone\", \"EnableFoo\", true, \"Enable Foo\\nTurns the feature on.\");\nConfig.Bind(\"Firestone.Replay\", \"Speed\", 1f,\n    new ConfigDescription(\"Playback speed\", new AcceptableValueRange&lt;float&gt;(0.5f, 4f)));\nConfig.Bind(\"Firestone\", \"Mode\", Mode.Fast, \"Which mode to use\");</code></pre> <p>\n\n説明文（description）の最初の行がラベルになります。2行目以降はツールチップとして表示されます。 <code>Firestone.Replay</code> は「Replay」というタイトルのグループになります。プレーンな<code>Firestone</code> セクションにはグループの見出しはありません。設定項目は<code>Bind</code>が呼び出された順序で表示されます。</p><p>BepInExがcfgファイルを書き出すのがプラグインの実行時であるため、このページはプラグインが一度実行された後に表示されます。Firestoneで値を変更するとそのファイルが更新され、次回のHearthstone起動時にプラグインによって読み込まれます。ゲームがすでに起動している場合、Firestoneはプレイヤーに再起動を促します。</p>",
+                            "title": "Firestoneでの設定"
                         }
                     },
                     "intro": "<p><strong>警告：</strong> ハースストーンのMod利用はゲームの利用規約に違反しており、アカウントがBANされる可能性があります。そのため、ご自身の責任においてご利用ください。</p><p><strong>警告：</strong>Firestone Mod Manager は現在、アプリのベータ版でのみ利用可能です。詳細は <a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/beta-test.md\" target=\"_blank\" rel=\"noopener noreferrer\">beta-test.md</a>をご覧ください</p>",
@@ -6037,6 +6102,58 @@
                 "cta": "プレミアムを見る",
                 "title": "無制限のオーバーレイと詳細な統計とはなんですか？",
                 "lead": "プレミアムでは、無制限の発見・マリガンオーバーレイ、完全なメタ解析、そしてバトルグラウンドの追加機能が利用可能になります"
+            },
+            "social-proof": {
+                "lead": "2026年世界チャンピオンとなったOTGxhhを含む、世界チャンピオン、マスターズツアーチャンピオン、ランキングトップのFirestone使用プレイヤー達",
+                "title": "チャンピオン達も使用",
+                "titles": {
+                    "world-champion": "{{year}}年の世界選手権チャンピオン",
+                    "bg-eu-number-one": "バトルグラウンドのEUランキングで複数回1位",
+                    "summer-champion": "{{year}}年の夏季選手権チャンピオン",
+                    "ua-eu-number-one": "地下闘技場のEUランキングで複数回1位",
+                    "winter-champion": "{{year}}年の冬季選手権チャンピオン"
+                },
+                "carousel": {
+                    "gallery": "Firestoneを使用したチャンピオン、{{count}}名のプレイヤー達です",
+                    "previous": "前のチャンピオン",
+                    "roledescription": "カルーセル",
+                    "goto": "{{name}}を表示",
+                    "next": "次のチャンピオン"
+                },
+                "champions": {
+                    "demoshadow": {
+                        "alt": "2026年、ハースストーン夏季選手権でのDemoshadowの公式画像",
+                        "portrait-alt": "Demoshadowの肖像"
+                    },
+                    "otgxhh": {
+                        "alt": "2026年、ハースストーン世界選手権にてステージでトロフィーを掲げるOTGxhh",
+                        "portrait-alt": "OTGxhhの肖像"
+                    },
+                    "kwanwoo": {
+                        "alt": "2026年、ハースストーン冬季選手権でのKwanwooの公式画像",
+                        "portrait-alt": "Kwanwooの肖像"
+                    },
+                    "bunnyhoppor": {
+                        "alt": "2022年、ハースストーン世界選手権でのBunnyhopporの公式画像です",
+                        "portrait-alt": "Bunnyhopporの肖像"
+                    },
+                    "mlyanming": {
+                        "alt": "2024年、ハースストーン世界選手権でのmlYanmingの公式画像",
+                        "portrait-alt": "mlYanmingの肖像"
+                    },
+                    "pockettrain": {
+                        "alt": "2023年、ハースストーン世界選手権でのPocketTrainでの公式画像",
+                        "portrait-alt": "PocketTrainの肖像"
+                    },
+                    "denimblue": {
+                        "portrait-alt": "DenimBlueの肖像",
+                        "alt": "EUの地下闘技場ランキング1位を複数回獲得したDenimBlue"
+                    },
+                    "slyders": {
+                        "alt": "EUのバトルグラウンドランキングで複数回1位を獲得したSlyders",
+                        "portrait-alt": "Slydersの肖像"
+                    }
+                }
             }
         }
     },
@@ -6087,7 +6204,9 @@
         "card-scale": "カードサイズ",
         "card-scale-tooltip": "ツールチップとして表示されるカードの大きさを変更します",
         "reconnect-for-chat-text": "設定にいき、あなたのTwitchアカウントを再接続すると、視聴者がチャット欄で!deckコマンドを使えるようになります",
-        "reconnect-for-chat-title": "Twitchを再接続して!deckコマンドを有効化"
+        "reconnect-for-chat-title": "Twitchを再接続して!deckコマンドを有効化",
+        "lease-held-text": "クリックして設定を開き、このPCから配信します",
+        "lease-held-title": "このチャンネルで別のPCが配信中です"
     },
     "archetype": {
         "mech-rogue": "メカローグ",
@@ -6854,7 +6973,64 @@
         "token-dh": "トークンデーモンハンター",
         "xl-burnlock": "XLバーンウォーロック",
         "xl-exodia-mage": "XLエグゾディアメイジ",
-        "xl-hl-leoroxx-hunter": "XLハイランダーレオロックスハンター"
+        "xl-hl-leoroxx-hunter": "XLハイランダーレオロックスハンター",
+        "harold-void-soul-dh": "伝令虚無の魂デモハン",
+        "infinity-paladin": "無限パラディン",
+        "tyrande-priest": "ティランダプリースト",
+        "deios-rogue": "デイオスローグ",
+        "dragon-pirate-warrior": "ドラゴン海賊ウォリアー",
+        "drake-warlock": "ドレイクウォーロック",
+        "harold-piglock": "伝令ピッグウォーロック",
+        "mill-rogue": "ミルローグ",
+        "sneaky-ayaya-rogue": "隠れ身AYAYAローグ",
+        "sneaky-harold-rogue": "隠れ身伝令ローグ",
+        "sneaky-rogue": "隠れ身ローグ",
+        "fatigue-dh": "疲労デーモンハンター",
+        "naga-dh": "ナーガデモハン",
+        "pirate-warrior": "海賊ウォリアー",
+        "xl-hl-rainbow-dk": "XLハイランダーレインボーデスナイト",
+        "astral-druid": "星霊交信ドルイド",
+        "boar-otk-druid": "イノシシOTKドルイド",
+        "champions-druid": "アゼロスの英雄たちドルイド",
+        "xl-tog-dh": "XLトグデモハン",
+        "exodia-mage": "エクゾディアメイジ",
+        "star-grazer-druid": "スター・グレイザードルイド",
+        "xl-astral-druid": "XL星霊交信ドルイド",
+        "xl-beetle-druid": "XL甲虫ドルイド",
+        "mechathun-paladin": "メックトゥーンパラディン",
+        "odd-paladin": "奇数パラディン",
+        "sif-mage": "Sifメイジ",
+        "xl-egg-paladin": "XL卵パラディン",
+        "xl-hl-big-spell-mage": "XLハイランダービッグスペルメイジ",
+        "xl-hl-exodia-paladin": "XLハイランダーエクゾディアパラディン",
+        "xl-hl-lpg-mage": "XLハイランダーLPGメイジ",
+        "divine-spirit-priest": "神授の霊力プリースト",
+        "gnoll-miracle-rogue": "ノールミラクルローグ",
+        "hl-lc-quest-priest": "ハイランダーLCDクエストプリースト",
+        "hl-thief-rogue": "ハイランダー泥棒ローグ",
+        "jtu-quest-priest": "JTUクエストプリースト",
+        "xl-lc-quest-priest": "XL LCクエストプリースト",
+        "hl-velarok-rogue": "ハイランダーヴェラロックローグ",
+        "kingsbane-rogue": "キングスベインローグ",
+        "mine-rogue": "マインローグ",
+        "ohnahra-shaman": "オウナーラシャーマン",
+        "pirate-burnlock": "海賊バーンウォーロック",
+        "xl-demon-boarlock": "XL悪魔イノシシウォーロック",
+        "xl-hl-sou-quest-shaman": "XLハイランダーSOUクエストシャーマン",
+        "xl-hl-thief-rogue": "XLハイランダー泥棒ローグ",
+        "xl-kingsbane-rogue": "XLキングスベインローグ",
+        "xl-lc-quest-shaman": "XL LCクエストシャーマン",
+        "xl-shudderwock-shaman": "XLシャダウォックシャーマン",
+        "igneous-warrior": "イグニスウォリアー",
+        "lc-quest-warrior": "LCクエストウォリアー",
+        "questline-warrior": "連続クエストウォリアー",
+        "xl-warlock": "XLウォーロック",
+        "sulthraze-warrior": "スルスラズウォリアー",
+        "warsong-warrior": "ウォーソングウォリアー",
+        "xl-hl-questline-warrior": "XLハイランダー連続クエストウォリアー",
+        "xl-igneous-odyn-warrior": "XKイグニスオーディンウォリアー",
+        "xl-lc-quest-warrior": "XL LCクエストウォリアー",
+        "xl-questline-warrior": "XL連続クエストウォリアー"
     },
     "arena": {
         "overlay": {
@@ -6982,7 +7158,12 @@
         "dragon_evoker": "エヴォーカードラゴン",
         "beast_lobster": "ロブスター獣",
         "demon_boost_shop": "酒場バフ悪魔",
-        "pirate_discover": "発見海賊"
+        "pirate_discover": "発見海賊",
+        "aberration_deathrattle": "断末魔異形",
+        "mech_glambot": "グラムボットメカ",
+        "aberration_discard": "破棄異形",
+        "dragon_shield": "聖なる盾ドラゴン",
+        "mech_volumizer": "爆音器メカ"
     },
     "androidDeckTracker": {
         "onboarding": {
@@ -6991,7 +7172,7 @@
             "intro": "スマートフォンでFirestoneをセットアップするには、以下の手順をお読みください。設定は初回の一度のみです。できる限り簡単に完了できるよう順を追ってご案内します。",
             "accountTitle": "アカウント",
             "progress": "Step ({current} / {total})",
-            "setup": "続ける",
+            "setup": "続行",
             "setupBody": "次の画面へ進む準備ができたら「続ける」をタップしてください。",
             "pairClose": "閉じる",
             "pairHint": "6桁のコードを入力",
@@ -7009,7 +7190,48 @@
             "readyTitle": "トラッカーが起動中",
             "shizukuPermission": "Shizuku内でFirestoneを許可",
             "readyBody": "ハースストーンを起動してください。試合中、デッキリストが表示されます",
-            "developerSettings": "開発者向き設定を開く"
+            "developerSettings": "開発者向き設定を開く",
+            "title": "デッキトラッカーをセットアップ",
+            "signOut": "サインアウト",
+            "signedInNote": "対戦記録がアカウントに同期されました。デスクトップ アプリからも取得が可能です。",
+            "stepInstallTitle": "ヘルパーをインストール",
+            "stepAllowInstallsTitle": "インストールを許可",
+            "stepAllowInstalls": "「続行」をタップしてください。AndroidのFirestone用の設定画面が開きます。「この提供元を許可」を有効にしてから、この画面に戻ってください。",
+            "stepInstalling": "「続行」をタップしてください。Firestoneに必要なヘルパーのインストール確認が表示されますので、インストールを承認してからこの画面に戻ってください。",
+            "stepDeveloperButton": "スマホの情報を開く",
+            "stepDeveloperTitle": "開発者オプションを有効化",
+            "stepDeveloper": "「続行」をタップしてください。端末情報画面が開いたら「ビルド番号」までスクロールし、デベロッパーモード（開発者向けオプション）が有効になったと表示されるまで7回タップしてください。完了したらこの画面に戻ってください。",
+            "stepWirelessButton": "スイッチをオンにしてください",
+            "stepWireless": "「続行」をタップしてください。「ワイヤレスデバッグ」を探してスイッチをオンにします。このWi-Fiネットワークに関する確認が表示された場合は、許可してください。完了したらこの画面に戻ってください。",
+            "stepWirelessTitle": "ワイヤレスデバックを有効化",
+            "stepNearby": "「続行」をタップしてください。Androidがこの端末上でワイヤレスデバッグを検出するための許可を求めてきますので、「許可」をタップしてください。",
+            "stepNearbyTitle": "このスマホでFirestoneを許可",
+            "stepNearbyButton": "許可",
+            "stepPairTitle": "ペアコードを入力してください",
+            "stepStart": "「続行」をタップしてヘルパーを起動してください。数秒かかりますので、この画面のままお待ちください。ペアコードが必要な場合は、次のステップで説明します。",
+            "stepStartTitle": "ヘルパーを起動",
+            "stepPairButton": "コードを表示",
+            "stepPair": "「コードを表示」をタップしてください。「ワイヤレスデバッグ」をタップし、次に「ペアコードでデバイスをペア設定」をタップします。その画面を開いたまま、Firestoneの通知をタップして6桁のペア設定コードを入力してください。",
+            "stepGrantTitle": "Firestoneを許可",
+            "stepGrant": "「続行」をタップしてください。AndroidがFirestoneによるヘルパー機能の使用許可を確認してきますので、「許可」をタップしてください。",
+            "stepGrantButton": "Firestoneを許可",
+            "stepOverlay": "「続行」をタップして、ゲームの上にFirestoneを重ねて表示できるようにします。表示される一覧からFirestoneを探し、「他のアプリの上に重ねて表示」を許可してから、この画面に戻ってください。",
+            "stepOverlayTitle": "ハースストーンの上にFirestoneを表示",
+            "stepOverlayButton": "デッキリストを許可",
+            "stepUnsupported": "このAndroidのバージョンでは、トラッカーを起動できません",
+            "shizukuStartBody": "ワイヤレスデバッグを開き、Shizukuを起動してからここへ戻ってください。なお、再起動を行うたびにこの操作が必要となります。",
+            "shizukuStopped": "Shizukuが停止しました",
+            "shizukuStoppedBody": "通常、再起動などが原因で、Shizukuが停止しました。「セットアップ」をタップして起動してください。信頼できるWi-Fi上であれば、次回からは自動的に起動できます。",
+            "signInBody": "タップしてBattle.netアカウントでサインインすると、すべての対戦記録をFirestoneアカウントに保存できるようになります。Battle.netの情報がFirestoneに共有されることは一切ありません。",
+            "signInButton": "Battle.netでサインイン",
+            "signedIn": "{name}としてサインインしました。終了した試合はこのアカウントに保存されます"
+        },
+        "overlay": {
+            "player": "自分のデッキ",
+            "unknownCard": "不明なカード",
+            "notificationText": "トラッキングを実行中",
+            "notificationTitle": "Firestoneデッキトラッカー",
+            "opponent": "対戦相手"
         }
     }
 }
