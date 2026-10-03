@@ -531,7 +531,13 @@
             "restart": "重启Firestone",
             "reset-positions": "恢复窗口默认位置",
             "settings": "设置",
-            "main-window": "显示主窗口"
+            "main-window": "显示主窗口",
+            "premium-required-tooltip": "Firestone — 需要会员账号。在菜单中登录。",
+            "log-in": "登录",
+            "log-out": "登出 ({{username}})",
+            "main-window-requires-premium": "主窗口（需要会员）",
+            "open-log-folder": "打开日志目录",
+            "settings-requires-premium": "设置（需要会员）"
         },
         "internal": {
             "memory": {
@@ -558,7 +564,14 @@
         "updates": {
             "update-available": "有新版本可用！点击开始更新",
             "update-error": "更新应用程序时发生错误。请重启Overwolf以强制更新",
-            "restart-needed": "新版本已准备好，点击重启应用。我们建议您在进入对战前重新启动。"
+            "restart-needed": "新版本已准备好，点击重启应用。我们建议您在进入对战前重新启动。",
+            "standalone": {
+                "title": "Firestone 更新",
+                "later": "稍后",
+                "restart": "重启",
+                "message": "已下载新版本的 Firestone（{{version}}）。",
+                "detail": "重启 Firestone 应用更新。"
+            }
         },
         "arena": {
             "menu": {
@@ -2553,7 +2566,7 @@
             "player": "你的圣契法力值消耗降低了{{value}}点"
         },
         "bgs-free-refresh": {
-            "player": "您还剩{{value}}次免费重掷"
+            "player": "您还剩{{value}}次免费刷新"
         },
         "bgs-magnetized": {
             "player": "您在本局对战中已磁力了{{value}}张卡牌"
@@ -2859,6 +2872,12 @@
         "flesh-giant": {
             "player": "你的英雄的生命值在你的回合中变化了{{times}}次",
             "opponent": "对手的英雄的生命值在对手的回合中变化了{{times}}次"
+        },
+        "bgs-cards-discarded-this-game": {
+            "player": "你在本局对战中已经弃了{{value}}张卡牌"
+        },
+        "bgs-deity": {
+            "player": "你的{{cardName}}是{{atk}}/{{health}}"
         }
     },
     "loading": {
@@ -3235,7 +3254,9 @@
             "main-attribute": "主要属性",
             "card-type": "卡牌类型",
             "mechanics": "机制",
-            "cost-modifier": "消耗修改效果"
+            "cost-modifier": "消耗修改效果",
+            "minion-type": "随从类型",
+            "minion-types": "随从类型"
         },
         "tourist": "游客：{{className}}",
         "burns-in": "{{value}} 回合后弃掉",
@@ -3246,7 +3267,9 @@
         "card-tooltip-pool-size": "{{ value }} 张卡牌",
         "dredged-by": "由 {{value}} 探底",
         "prepared-tooltip": "这张卡已“预备”，法力值消耗为{{value}}点",
-        "card-mulliganed-away": "已换牌"
+        "card-mulliganed-away": "已换牌",
+        "created-by-label": "创建者",
+        "drawn-by-label": "抽取者"
     },
     "battlegrounds": {
         "menu": {
@@ -3446,7 +3469,9 @@
             "eternal-knight-health-buff": "永恒骑士生命值",
             "golden-minions-played-this-game": "已打出的金色随从",
             "eternal-knight-health-buff-tooltip": "本局对战中你的“永恒骑士”获得的固定生命值加成（例如来自永恒肖像）",
-            "golden-minions-played-this-game-tooltip": "你在本局对战中打出的金色随从数量"
+            "golden-minions-played-this-game-tooltip": "你在本局对战中打出的金色随从数量",
+            "cards-discarded-this-game": "本局对战中弃掉的卡牌",
+            "cards-discarded-this-game-tooltip": "你在本局对战中弃掉了多少卡牌"
         },
         "hero-stats": {
             "finishes-title": "已完成",
@@ -3684,7 +3709,9 @@
                     "not-venomous-or-poisonous": "不能提供给有烈毒或剧毒的随从",
                     "charisma-banned-minion": "不能提供给这个随从",
                     "lobby-dragon": "有龙的对局中不会提供",
-                    "not-highest-trigger-count": "仅当这是你最常触发的成长条件时才提供"
+                    "not-highest-trigger-count": "仅当这是你最常触发的成长条件时才提供",
+                    "lobby-no-aberration": "有畸变怪的对局中才会提供",
+                    "requires-activate": "只能提供给具有发动的随从"
                 },
                 "others": "其它",
                 "turn": "第{{value}}回合",
@@ -3694,7 +3721,7 @@
                 "turns-plus": "{{min}}+",
                 "turns-open": "{{min}}–{{max}}",
                 "restriction": {
-                    "scaling-highest": "在战争之痕、死亡之拥与法术虹吸这三种中，只能提供触发概率最高的一种。",
+                    "scaling-highest": "在战争之痕、死亡之拥、法术虹吸与厌弃渎神这几种中，只能提供触发概率最高的一种。",
                     "guaranteed-type": "从第6回合开始，提供的随从中必定有一个属于你数量最多的随从类型。",
                     "no-magnetic-sell-hand": "具有磁力的随从、具有“当你出售本随从时”效果的随从，以及设计上需要留在手牌中的随从无法获得黑暗之赐。",
                     "battlecry-before-5": "第5回合之前不会提供具有战吼或抉择的随从。",
@@ -3914,7 +3941,8 @@
                 "widgets": "小部件",
                 "streamer": "主播",
                 "addons": "附加组件",
-                "account": "账号"
+                "account": "账号",
+                "hotkeys": "快捷键"
             },
             "mods": {
                 "title": "模组",
@@ -3982,7 +4010,8 @@
                 "source-third-party": "第三方",
                 "import-already-present": "此模组已在你的列表中。",
                 "source-trusted": "受信任的",
-                "explanation": "模组是一类可以改变《炉石传说》游戏行为的插件。"
+                "explanation": "模组是一类可以改变《炉石传说》游戏行为的插件。",
+                "restart-required": "重启炉石传说应用修改。"
             },
             "third-party": {
                 "intro": "我们相信您的数据属于您。您如果能够将数据同步到其他第三方网站，就能帮助他们做最好的事情。 我们的行为是无偿的，但是我们确实会收获些流量，因为他们会提及我们:)",
@@ -4054,7 +4083,8 @@
                 "delay-label-tooltip": "延迟推流给Twitch的时长。如果您被狙击了，这将很有用",
                 "other-options-title": "更多选项",
                 "appear-on-live-streams-label": "在直播时显示",
-                "appear-on-live-streams-tooltip": "在”直播”选项卡上显示。 此功能仍在开发中，将列出所有正在使用Firestone的主播及其当前游戏模式，并链接到他们的Twitch直播间。"
+                "appear-on-live-streams-tooltip": "在”直播”选项卡上显示。 此功能仍在开发中，将列出所有正在使用Firestone的主播及其当前游戏模式，并链接到他们的Twitch直播间。",
+                "broadcast-from-this-pc": "用这台电脑直播"
             },
             "launch": {
                 "launch-on-game-start-label": "游戏开始时启动 Firestone",
@@ -4109,7 +4139,12 @@
                 "restore-ftue-settings-button-label": "恢复之前的设置",
                 "replay-ftue-button-text": "开始",
                 "replay-ftue-tooltip": "再次显示首次设置。选择体验级别将更新浮窗设置。",
-                "restore-ftue-settings-confirmation": "恢复上次介绍配置之前的设置？"
+                "restore-ftue-settings-confirmation": "恢复上次介绍配置之前的设置？",
+                "disable-hardware-acceleration-label": "禁用硬件加速",
+                "disable-overlay-shared-texture-label": "禁用快速游戏内浮窗",
+                "disable-low-memory-rendering-label": "禁用低内存渲染",
+                "disable-low-memory-rendering-tooltip": "默认情况下，该应用程序使用较小的图形缓冲区渲染其窗口和浮窗，这可在游戏中节省约 100 MB 的内存。如果窗口或浮窗看起来不正常或滚动效果不佳，请开启此功能。将在下次应用程序启动时生效。",
+                "disable-overlay-shared-texture-tooltip": "默认情况下，游戏内浮窗直接通过显卡发送到游戏中，这样可以大大减少 CPU 的使用。如果浮窗未显示、显示不正确或挡住了游戏中的点击，请开启此功能。将在下次启动炉石传说时生效。"
             },
             "localization": {
                 "title": "本地化",
@@ -4371,6 +4406,17 @@
                 "perks-replays-detail": "没有账号，回放文件将在60天后被删除。",
                 "perks-history-title": "你的对局记录会保留在云端",
                 "perks-history-detail": "未关联账号的对局记录大约会在一年后自动清除。"
+            },
+            "hotkeys": {
+                "title": "快捷键",
+                "battlegrounds": "显示/隐藏酒馆战棋窗口",
+                "collection": "显示/隐藏主窗口",
+                "live-info": "显示实时信息",
+                "intro": "修改用于显示或隐藏 Firestone 窗口的按键。点击更改，然后按新的组合键。Esc 取消。",
+                "change": "修改",
+                "listening": "按一个键...",
+                "reset": "重置",
+                "conflict": "这个组合键已被{{hotkey}}占用。"
             }
         },
         "decktracker": {
@@ -4449,7 +4495,9 @@
                 "show-flavor-text-on-in-game-hover": "查看卡牌时显示风味趣文",
                 "hide-play-order-on-blocking-ui-tooltip": "当游戏菜单、发现选项或放大的卡片（手牌、战场或历史记录）显示在屏幕上时，隐藏打出顺序数字",
                 "hide-play-order-on-blocking-ui": "当游戏界面显示时隐藏",
-                "show-flavor-text-on-in-game-hover-tooltip": "在查看炉石传说中的卡牌（手牌或战场）时，在显示通知的角落显示其风味趣文"
+                "show-flavor-text-on-in-game-hover-tooltip": "在查看炉石传说中的卡牌（手牌或战场）时，在显示通知的角落显示其风味趣文",
+                "individual-counters-size": "单独的计数器尺寸",
+                "use-single-highlight-color": "使用单一高亮颜色"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -5068,10 +5116,10 @@
                 "counter-baller-tooltip": "显示你的下一个投球手的增益",
                 "counter-baller-label": "投球手",
                 "counter-beetle-label": "甲虫",
-                "counter-free-refresh-label": "免费重掷",
+                "counter-free-refresh-label": "免费刷新",
                 "counter-magnetized-label": "磁力",
                 "counter-magnetized-tooltip": "显示您在本局对战中已磁力的次数",
-                "counter-free-refresh-tooltip": "显示您剩余的免费重掷次数",
+                "counter-free-refresh-tooltip": "显示您剩余的免费刷新次数",
                 "counter-spells-played-label": "已施放的法术",
                 "counter-spells-played-tooltip": "显示你施放了多少组 4个法术，以及你目前达成下一组法术的进度",
                 "counter-tavern-spells-buff-label": "酒馆法术增益",
@@ -5120,7 +5168,11 @@
                 "hero-power-extra-info-label": "英雄技能额外信息",
                 "hero-power-extra-info-tooltip": "将鼠标悬停在英雄技能上时，在卡牌提示中显示额外的实时详情（例如已经进入厨师曲奇锅中的随从类型）。",
                 "always-show-tavern-tier-tooltip": "在酒馆战棋排行榜上，在每位玩家头像旁显示当前酒馆等级。",
-                "always-show-tavern-tier-label": "始终显示酒馆等级"
+                "always-show-tavern-tier-label": "始终显示酒馆等级",
+                "counter-cards-discarded-this-game-tooltip": "显示你在本局对战中丢弃了多少张卡牌",
+                "counter-deity-tooltip": "显示你的神明攻击力和生命值",
+                "counter-cards-discarded-this-game-label": "弃掉的卡牌",
+                "counter-deity-label": "神明"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -5953,6 +6005,9 @@
                         "requirements": {
                             "body": "<p>要让 Firestone 模组管理器识别你的模组，模组应公开一个包含 Name（名称）、Version（版本号）、Guid（全局唯一标识符） 和 DownloadLink（下载链接，指向代码仓库）的 Config（配置文件）。目前尚不支持外部依赖项，如有此需求请联系我。</p>",
                             "title": "要求"
+                        },
+                        "configuration": {
+                            "title": "在 Firestone 中设置"
                         }
                     },
                     "blurb": "通过 Firestone 安装和开发《炉石传说》模组。",
@@ -6042,7 +6097,59 @@
                 "title": "下载 Firestone",
                 "subtitle": "免费的《炉石传说》游戏助手，记牌器、游戏内浮窗、收藏管理、酒馆战棋工具等功能一应俱全。"
             },
-            "editions-label": "可用版本"
+            "editions-label": "可用版本",
+            "social-proof": {
+                "title": "冠军们都在用",
+                "titles": {
+                    "world-champion": "{{year}}年世界冠军",
+                    "bg-eu-number-one": "多次欧服酒馆战棋第1",
+                    "summer-champion": "{{year}}年夏季冠军",
+                    "winter-champion": "{{year}}年冬季冠军",
+                    "ua-eu-number-one": "多次欧服地下竞技场第1"
+                },
+                "lead": "世界冠军、大师巡回赛冠军，以及顶级天梯玩家们都在用 Firestone — 也包括2026世界冠军小红花（OTGxhh）。",
+                "carousel": {
+                    "gallery": "使用 Firestone 的世界冠军，共 {{count}} 位玩家",
+                    "next": "下一个冠军",
+                    "goto": "显示{{name}}",
+                    "previous": "上一个冠军",
+                    "roledescription": "轮播图"
+                },
+                "champions": {
+                    "otgxhh": {
+                        "alt": "OTGxhh，2026炉石传说世界冠军，在台上拿着奖杯",
+                        "portrait-alt": "OTGxhh 的肖像"
+                    },
+                    "demoshadow": {
+                        "alt": "Demoshadow 的官方照片，2026炉石传说夏季冠军",
+                        "portrait-alt": "Demoshadow 的肖像"
+                    },
+                    "kwanwoo": {
+                        "alt": "Kwanwoo 的官方照片，2026炉石传说冬季冠军",
+                        "portrait-alt": "Kwanwoo 的肖像"
+                    },
+                    "mlyanming": {
+                        "alt": "mlYanming 的官方照片。2024炉石传说世界冠军",
+                        "portrait-alt": "mlYanming 的肖像"
+                    },
+                    "denimblue": {
+                        "alt": "DenimBlue，多次欧服地下竞技场排行榜第1",
+                        "portrait-alt": "DenimBlue 的肖像"
+                    },
+                    "bunnyhoppor": {
+                        "alt": "Bunnyhoppor 的官方照片，2022炉石传说世界冠军",
+                        "portrait-alt": "Bunnyhoppor 的肖像"
+                    },
+                    "pockettrain": {
+                        "alt": "PocketTrain 的官方照片，2023炉石传说世界冠军",
+                        "portrait-alt": "PocketTrain 的肖像"
+                    },
+                    "slyders": {
+                        "alt": "Slyders，多次欧服酒馆战棋排行榜第1",
+                        "portrait-alt": "Slyders 的肖像"
+                    }
+                }
+            }
         }
     },
     "twitch": {
@@ -6092,7 +6199,9 @@
         "card-scale": "卡牌尺寸",
         "card-scale-tooltip": "调整作为提示出现的卡牌的尺寸",
         "reconnect-for-chat-text": "请前往设置并重新连接您的Twitch账号，以便观众可以在聊天中使用 !deck",
-        "reconnect-for-chat-title": "重新连接Twitch以启用 !deck"
+        "reconnect-for-chat-title": "重新连接Twitch以启用 !deck",
+        "lease-held-text": "点击打开设置并用这台电脑直播",
+        "lease-held-title": "另一台电脑正在用此频道直播"
     },
     "archetype": {
         "mech-rogue": "机械贼",
@@ -6859,7 +6968,64 @@
         "hl-n-roll-warrior": "宇宙黑石战",
         "raza-dh": "走A瞎",
         "xl-hl-questline-mage": "40-宇宙任务线法",
-        "seedlock": "恶魔之种术"
+        "seedlock": "恶魔之种术",
+        "dragon-pirate-warrior": "龙海盗战",
+        "drake-warlock": "幼龙术",
+        "harold-piglock": "兆示猪神术",
+        "harold-void-soul-dh": "兆示虚空灵魂瞎",
+        "infinity-paladin": "无穷骑",
+        "mill-rogue": "爆牌贼",
+        "pirate-warrior": "海盗战",
+        "tyrande-priest": "泰兰德牧",
+        "sneaky-ayaya-rogue": "潜行艾雅贼",
+        "sneaky-rogue": "潜行贼",
+        "astral-druid": "星界德",
+        "champions-druid": "勇士德",
+        "divine-spirit-priest": "神圣之灵牧",
+        "exodia-mage": "无限火球法",
+        "fatigue-dh": "疲劳瞎",
+        "hl-lc-quest-priest": "宇宙寻求平衡任务牧",
+        "jtu-quest-priest": "任务牧",
+        "mechathun-paladin": "机克骑",
+        "naga-dh": "纳迦瞎",
+        "odd-paladin": "奇数骑",
+        "sif-mage": "西芙法",
+        "star-grazer-druid": "吞星兽德",
+        "xl-astral-druid": "宇宙星界德",
+        "xl-beetle-druid": "宇宙甲虫德",
+        "boar-otk-druid": "野猪OTK德",
+        "xl-egg-paladin": "宇宙蛋骑",
+        "xl-hl-big-spell-mage": "40-宇宙大法术法",
+        "xl-hl-exodia-paladin": "40-宇宙天启骑",
+        "xl-hl-lpg-mage": "40-宇宙口袋银河法",
+        "xl-tog-dh": "40-托瓦格尔瞎",
+        "hl-thief-rogue": "宇宙剽窃贼",
+        "igneous-warrior": "火成战",
+        "kingsbane-rogue": "弑君贼",
+        "lc-quest-warrior": "任务战",
+        "mine-rogue": "水雷贼",
+        "ohnahra-shaman": "欧恩哈拉萨",
+        "questline-warrior": "任务线战",
+        "sulthraze-warrior": "鞭笞者苏萨斯战",
+        "warsong-warrior": "战歌战",
+        "xl-demon-boarlock": "宇宙恶魔野猪术",
+        "pirate-burnlock": "海盗弃牌术",
+        "xl-hl-sou-quest-shaman": "40-宇宙任务萨",
+        "xl-hl-thief-rogue": "40-宇宙剽窃贼",
+        "xl-igneous-odyn-warrior": "40-火成奥丁战",
+        "xl-kingsbane-rogue": "40-弑君贼",
+        "xl-lc-quest-priest": "40-寻求平衡任务牧",
+        "xl-lc-quest-shaman": "40-任务萨",
+        "xl-lc-quest-warrior": "40-任务战",
+        "xl-questline-warrior": "40-任务线战",
+        "xl-warlock": "40-术",
+        "deios-rogue": "戴欧斯贼",
+        "gnoll-miracle-rogue": "豺狼人奇迹贼",
+        "hl-velarok-rogue": "宇宙威拉罗克贼",
+        "xl-hl-questline-warrior": "40-宇宙任务线战",
+        "sneaky-harold-rogue": "潜行兆示贼",
+        "xl-hl-rainbow-dk": "40-宇宙彩虹DK",
+        "xl-shudderwock-shaman": "40-沙德沃克萨"
     },
     "arena": {
         "overlay": {
@@ -6987,6 +7153,53 @@
         "naga_end_of_turn": "回合结束流纳迦",
         "dragon_evoker": "唤魔师流龙族",
         "beast_beetle": "甲虫流野兽",
-        "neutral_tea_set": "喝茶流"
+        "neutral_tea_set": "喝茶流",
+        "aberration_deathrattle": "亡语流畸变怪",
+        "mech_glambot": "炫彩机器人流机械",
+        "dragon_shield": "圣盾流龙族",
+        "mech_volumizer": "扩音机流机械",
+        "aberration_discard": "弃牌流畸变怪"
+    },
+    "androidDeckTracker": {
+        "onboarding": {
+            "stepNearbyButton": "允许",
+            "stepNearbyTitle": "在此设备上允许 Firestone",
+            "stepAllowInstallsTitle": "允许安装",
+            "pairClose": "关闭",
+            "setup": "继续",
+            "barSubtitle": "记牌器",
+            "barTitle": "Firestone",
+            "stepInstallTitle": "安装助手",
+            "signOut": "登出",
+            "stepStartTitle": "启动助手",
+            "progress": "第{current}步，共{total}步",
+            "stepDeveloperButton": "打开设备信息",
+            "title": "设置记牌器",
+            "pairHint": "输入6位数代码",
+            "stepPairTitle": "输入配对码",
+            "stepGrantButton": "允许 Firestone",
+            "overlayPermission": "允许显示在其他应用上层",
+            "stepOverlayButton": "允许套牌列表",
+            "checkAgain": "再次检查",
+            "grant": "授权",
+            "shizukuInstall": "安装 Shizuku",
+            "signInButton": "使用 Battle.net 登录",
+            "shizukuStart": "启动 Shizuku",
+            "developerSettings": "打开开发者设置",
+            "openSettings": "打开设置",
+            "shizukuStopped": "Shizuku 已停止",
+            "stepOverlayTitle": "在游戏上方显示 Firestone",
+            "accountTitle": "账号",
+            "stepGrantTitle": "允许 Firestone",
+            "shizukuPermission": "在 Shizuku 中允许 Firestone",
+            "shizukuInstallBody": "Shizuku 能使 Firestone 读取到炉石传说的日志文件。",
+            "stepPairButton": "显示代码"
+        },
+        "overlay": {
+            "notificationTitle": "Firestone 记牌器",
+            "opponent": "对手",
+            "player": "你的套牌",
+            "unknownCard": "未知卡牌"
+        }
     }
 }
