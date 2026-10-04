@@ -3711,7 +3711,8 @@
                     "lobby-dragon": "有龙的对局中不会提供",
                     "not-highest-trigger-count": "仅当这是你最常触发的成长条件时才提供",
                     "lobby-no-aberration": "有畸变怪的对局中才会提供",
-                    "requires-activate": "只能提供给具有发动的随从"
+                    "requires-activate": "只能提供给具有发动的随从",
+                    "requires-discards-this-game": "需要本局对战中曾弃掉一张牌"
                 },
                 "others": "其它",
                 "turn": "第{{value}}回合",
@@ -3870,7 +3871,8 @@
         }
     },
     "quests": {
-        "quests-completed": "您已完成所有任务"
+        "quests-completed": "您已完成所有任务",
+        "bloodstones-daily": "每日血石"
     },
     "settings": {
         "title": "设置",
@@ -4084,7 +4086,9 @@
                 "other-options-title": "更多选项",
                 "appear-on-live-streams-label": "在直播时显示",
                 "appear-on-live-streams-tooltip": "在”直播”选项卡上显示。 此功能仍在开发中，将列出所有正在使用Firestone的主播及其当前游戏模式，并链接到他们的Twitch直播间。",
-                "broadcast-from-this-pc": "用这台电脑直播"
+                "broadcast-from-this-pc": "用这台电脑直播",
+                "another-pc-sending": "当前正通过另一台电脑在该频道直播。",
+                "sending-overlay": "当前正通过这台电脑直播。"
             },
             "launch": {
                 "launch-on-game-start-label": "游戏开始时启动 Firestone",
@@ -4144,7 +4148,10 @@
                 "disable-overlay-shared-texture-label": "禁用快速游戏内浮窗",
                 "disable-low-memory-rendering-label": "禁用低内存渲染",
                 "disable-low-memory-rendering-tooltip": "默认情况下，该应用程序使用较小的图形缓冲区渲染其窗口和浮窗，这可在游戏中节省约 100 MB 的内存。如果窗口或浮窗看起来不正常或滚动效果不佳，请开启此功能。将在下次应用程序启动时生效。",
-                "disable-overlay-shared-texture-tooltip": "默认情况下，游戏内浮窗直接通过显卡发送到游戏中，这样可以大大减少 CPU 的使用。如果浮窗未显示、显示不正确或挡住了游戏中的点击，请开启此功能。将在下次启动炉石传说时生效。"
+                "disable-overlay-shared-texture-tooltip": "默认情况下，游戏内浮窗直接通过显卡发送到游戏中，这样可以大大减少 CPU 的使用。如果浮窗未显示、显示不正确或挡住了游戏中的点击，请开启此功能。将在下次启动炉石传说时生效。",
+                "close-app-on-game-exit-label": "离开游戏时关闭应用",
+                "disable-hardware-acceleration-tooltip": "使用 CPU 而非显卡渲染应用窗口和浮窗。这可以降低应用的显存占用，但动画和滚动可能会占用更多 CPU。如果出现显示异常或窗口空白，也可以尝试启用此选项。更改后需重启应用。",
+                "close-app-on-game-exit-tooltip": "关闭炉石传说时退出 Firestone。启用“结束游戏时显示战绩”后，此选项不可用。"
             },
             "localization": {
                 "title": "本地化",
@@ -4416,7 +4423,8 @@
                 "change": "修改",
                 "listening": "按一个键...",
                 "reset": "重置",
-                "conflict": "这个组合键已被{{hotkey}}占用。"
+                "conflict": "这个组合键已被{{hotkey}}占用。",
+                "failed": "无法设置此快捷键。它可能已被其他应用占用。"
             }
         },
         "decktracker": {
@@ -4497,7 +4505,8 @@
                 "hide-play-order-on-blocking-ui": "当游戏界面显示时隐藏",
                 "show-flavor-text-on-in-game-hover-tooltip": "在查看炉石传说中的卡牌（手牌或战场）时，在显示通知的角落显示其风味趣文",
                 "individual-counters-size": "单独的计数器尺寸",
-                "use-single-highlight-color": "使用单一高亮颜色"
+                "use-single-highlight-color": "使用单一高亮颜色",
+                "use-single-highlight-color-tooltip": "所有相关卡牌的高亮效果使用相同颜色，不再按高亮优先级使用不同颜色。"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -6007,7 +6016,8 @@
                             "title": "要求"
                         },
                         "configuration": {
-                            "title": "在 Firestone 中设置"
+                            "title": "在 Firestone 中设置",
+                            "body": "<p>玩家可以在 Firestone 中更改你的模组选项。请使用 <code>Config.Bind</code> 将每个选项绑定到名为 <code>Firestone</code> 的配置分组。插件至少启动过一次后，Firestone 会在“设置 &gt; 模组”下添加一个以模组名称命名的页面。</p><p>只有名为 <code>Firestone</code> 的配置分组，或以 <code>Firestone</code> 开头并带有分组名称的配置分组（如 <code>Firestone.Replay</code>）会显示在该页面中。<code>General</code> 元数据（<code>Name</code>、<code>Guid</code>、<code>Version</code>、<code>DownloadLink</code>、<code>Description</code>）仍显示在模组列表中。</p><pre><code>Config.Bind(\"Firestone\", \"EnableFoo\", true, \"Enable Foo\\nTurns the feature on.\");\n\nConfig.Bind(\"Firestone.Replay\", \"Speed\", 1f,\n    new ConfigDescription(\"Playback speed\", new AcceptableValueRange&lt;float&gt;(0.5f, 4f)));\n\nConfig.Bind(\"Firestone\", \"Mode\", Mode.Fast, \"Which mode to use\");</code></pre> <p>描述的第一行用作选项名称，后续各行用作提示文本。<code>Firestone.Replay</code> 会显示为标题为 Replay 的分组。单独的 <code>Firestone</code> 配置分组没有分组标题。设置项按 <code>Bind</code> 调用的顺序显示。</p><p>插件运行后，该页面才会出现，因为 BepInEx 会在此时写入 cfg 文件。在 Firestone 中更改选项值会更新该文件；插件会在下次启动《炉石传说》时读取新值。如果游戏已经在运行，Firestone 会提示玩家重启游戏。</p>"
                         }
                     },
                     "blurb": "通过 Firestone 安装和开发《炉石传说》模组。",
@@ -7193,13 +7203,40 @@
             "stepGrantTitle": "允许 Firestone",
             "shizukuPermission": "在 Shizuku 中允许 Firestone",
             "shizukuInstallBody": "Shizuku 能使 Firestone 读取到炉石传说的日志文件。",
-            "stepPairButton": "显示代码"
+            "stepPairButton": "显示代码",
+            "stepWirelessButton": "打开切换开关",
+            "intro": "请阅读以下说明，在手机上设置 Firestone。这是一次性设置，我们会引导你完成，尽量让操作简单。",
+            "stepStart": "点击“继续”以启动助手程序。请停留在此页面，启动需要几秒钟。如果需要配对码，下一步会说明如何操作。",
+            "setupBody": "准备好进入下一页面时，点击“继续”。",
+            "stepAllowInstalls": "点击“继续”。Android 会打开 Firestone 的设置页面。开启“允许来自此来源”，然后返回此页面。",
+            "stepNearby": "点击“继续”。Android 会询问是否允许 Firestone 查找此手机上的无线调试服务，请点击“允许”。",
+            "stepInstalling": "点击“继续”。Android 会提示安装 Firestone 所需的助手程序。确认安装后，返回此页面。",
+            "stepWireless": "点击“继续”。找到“无线调试”并开启开关。如果手机询问是否允许在当前 Wi-Fi 网络下使用，请选择“允许”，然后返回此页面。",
+            "stepDeveloper": "点击“继续”。在手机信息页面中，向下滚动找到“版本号”，连续点击 7 次，直到手机提示已开启开发者选项，然后返回此页面。",
+            "stepPair": "点击“显示配对码”。进入“无线调试”，再点击“使用配对码配对设备”。保持该页面打开，然后点击 Firestone 通知，在其中输入显示的 6 位配对码。",
+            "stepDeveloperTitle": "开启开发者选项",
+            "stepWirelessTitle": "开启无线调试",
+            "signedInNote": "你的对局现已同步至账号，可在桌面应用中查看。",
+            "pairWaiting": "验证码保留在屏幕上，然后在此处输入这 6 位数字。",
+            "shizukuStartBody": "打开无线调试，启动 Shizuku，然后返回。每次重启设备后都需要重新操作。",
+            "shizukuStoppedBody": "Shizuku 已停止运行，通常是因为设备重启。点击“设置”打开 Shizuku。在受信任的 Wi-Fi 网络下，下次可自动启动。",
+            "signedIn": "已以 {name} 的身份登录。已结束的对局会保存到此账号。",
+            "readyBody": "开始一场炉石传说对局。套牌列表会显示在浮窗中。",
+            "stepOverlay": "点击“继续”，允许 Firestone 显示在游戏画面上方。在随后出现的列表中找到 Firestone，开启“允许显示在其他应用上层”，然后返回此页面。",
+            "stepGrant": "点击“继续”。Android 会询问是否允许 Firestone 使用助手程序，请点击“允许”。",
+            "signInBody": "点击以使用 Battle.net 登录，这样就能将所有对局保存到你的 Firestone 账户。你的 Battle.net 账户信息不会与 Firestone 共享。",
+            "pairWrongCode": "配对码无效。请输入屏幕上显示的配对码。",
+            "pairNotReady": "配对码页面在提交前关闭了。请重新显示配对码并保持该页面打开，然后在 Firestone 通知中输入这 6 位数字。",
+            "overlayPermissionBody": "套牌列表仅供查看，不会拦截你在炉石传说中的点击。你可以通过一个小按钮显示或隐藏它。",
+            "stepUnsupported": "此 Android 版本无法运行记牌器。",
+            "readyTitle": "记牌器正在运行"
         },
         "overlay": {
             "notificationTitle": "Firestone 记牌器",
             "opponent": "对手",
             "player": "你的套牌",
-            "unknownCard": "未知卡牌"
+            "unknownCard": "未知卡牌",
+            "notificationText": "记牌器运行中"
         }
     }
 }
