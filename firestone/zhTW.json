@@ -427,7 +427,7 @@
             },
             "constructedDeckArchetypeOverrides": {
                 "title": "選擇套牌架構",
-                "blurb": "當自動配對錯誤或缺少時，可在「我的套牌」與大廳追蹤器中手動指定架構。"
+                "blurb": "當自動配對錯誤或遺失時，可在「我的套牌」與大廳記牌器中手動指定原型。"
             },
             "replay-in-game": {
                 "title": "遊戲內高清重播",
@@ -529,7 +529,13 @@
             "restart": "重啟應用程式",
             "settings": "設定",
             "main-window": "顯示主要視窗",
-            "reset-positions": "重設視窗位置"
+            "reset-positions": "重設視窗位置",
+            "log-in": "登入",
+            "log-out": "登出（{{username}}）",
+            "main-window-requires-premium": "主視窗（需要 Premium 帳號）",
+            "open-log-folder": "開啟記錄檔資料夾",
+            "premium-required-tooltip": "Firestone — 需要 Premium 帳號。請從選單進行登入。",
+            "settings-requires-premium": "設定（需要 Premium 帳號）"
         },
         "internal": {
             "memory": {
@@ -558,7 +564,11 @@
             "update-error": "更新應用程式時出錯。 請重啟 Overwolf 以強制更新",
             "restart-needed": "新版本準備就緒，點選以重新啟動應用程式（建議在未進行遊戲時執行動作）",
             "standalone": {
-                "message": "已下載新版本的 Firestone（{{version}}）。"
+                "message": "已下載新版本的 Firestone（{{version}}）。",
+                "title": "Firestone 更新",
+                "later": "稍後",
+                "restart": "重新啟動",
+                "detail": "重新啟動 Firestone 以套用更新。"
             }
         },
         "arena": {
@@ -1507,7 +1517,7 @@
             "tier-list": {
                 "header": "英雄強度清單（{{value}} 場賽局） ",
                 "header-hero-details": "英雄",
-                "header-tribes": "最強玩法",
+                "header-tribes": "此大廳最強玩法",
                 "header-combat-winrate": "戰鬥勝率",
                 "header-group-difficulty-button": "分組",
                 "header-group-difficulty-button-tooltip": "將任務按名稱分組，這樣你就可以檢視所有任務的全部難度",
@@ -2038,7 +2048,7 @@
             "tip-0": "如有任何回饋、錯誤回報或想與我們聯繫，請造訪我們的 Discord（連結位於頂端）！",
             "discover_highlight": "「發現」時將滑鼠懸停在卡牌上會標記牌堆中的相關資訊",
             "contextual_related_cards": "將滑鼠懸停在記牌器中的某些卡牌上以獲取有關它們作用效果的更多資訊",
-            "mercs_terasure_highlight": "將滑鼠懸停在傭兵中的寶藏上可以突出隊伍中的協同作用",
+            "mercs_terasure_highlight": "將滑鼠懸停在傭兵中的寶藏上可以標記隊伍中的協同作用",
             "ad-tip-premium": "Premium 會員",
             "bg_tab_key": "按下「Tab」即可快速概覽旅店大堂中全部玩家的進度",
             "achievements_pin": "選擇任意數量的成就以在遊戲過程中追蹤它們，並檢視它們的即時更新",
@@ -2839,6 +2849,12 @@
         "flesh-giant": {
             "player": "你的英雄生命值在你的回合內已變動 {{times}} 次",
             "opponent": "對手的英雄生命值在其回合內已變動 {{times}} 次"
+        },
+        "bgs-deity": {
+            "player": "你的 {{cardName}} 體質為 {{atk}}/{{health}}"
+        },
+        "bgs-cards-discarded-this-game": {
+            "player": "你本賽局已捨棄 {{value}} 張卡牌"
         }
     },
     "loading": {
@@ -3215,7 +3231,9 @@
             "main-attribute": "主要特徵",
             "card-type": "卡牌種類",
             "mechanics": "機制",
-            "cost-modifier": "費用修改效果"
+            "cost-modifier": "費用修改效果",
+            "minion-types": "手下類型",
+            "minion-type": "手下類型"
         },
         "tourist": "遊客：{{className}}",
         "burns-in": "{{value}} 回合後捨棄",
@@ -3226,7 +3244,9 @@
         "dredged-by": "由「{{value}}」打撈",
         "card-tooltip-pool-size": "{{ value }} 張卡牌",
         "prepared-tooltip": "此卡牌已獲得「預備」效果，費用為 {{value}}",
-        "card-mulliganed-away": "已換走"
+        "card-mulliganed-away": "已換走",
+        "created-by-label": "建立者",
+        "drawn-by-label": "抽牌者"
     },
     "battlegrounds": {
         "menu": {
@@ -3426,7 +3446,9 @@
             "golden-minions-played-this-game": "金卡手下（已打出）",
             "eternal-knight-attack-buff-tooltip": "你的永恆騎士在本賽局獲得的固定攻擊力加成（例如來自永恆頭像）",
             "eternal-knight-health-buff-tooltip": "你的永恆騎士在本賽局獲得的固定生命值加成（例如來自永恆頭像）",
-            "golden-minions-played-this-game-tooltip": "你在本賽局中打出的金卡手下數量"
+            "golden-minions-played-this-game-tooltip": "你在本賽局打出的金卡手下數量",
+            "cards-discarded-this-game": "本賽局捨棄的卡牌",
+            "cards-discarded-this-game-tooltip": "本賽局你已捨棄的卡牌數量"
         },
         "hero-stats": {
             "finishes-title": "完賽數",
@@ -3647,11 +3669,11 @@
                     "requires-end-of-turn": "僅會出現在[回合結束時]手下的選單中",
                     "requires-minion-type": "僅會出現在擁有類別的手下的選單中",
                     "not-lowest-tier": "僅會出現在此池中最低階的手下的選單中",
-                    "requires-battlecries-this-game": "需要本賽局中曾觸發過[戰吼]",
-                    "requires-deathrattles-this-game": "需要本賽局中曾觸發過[死亡之聲]",
-                    "requires-tavern-spells-this-game": "需要本賽局中曾施放過旅店法術",
+                    "requires-battlecries-this-game": "需要本賽局曾觸發過[戰吼]",
+                    "requires-deathrattles-this-game": "需要本賽局曾觸發過[死亡之聲]",
+                    "requires-tavern-spells-this-game": "需要本賽局曾施放過旅店法術",
                     "choose-one-gift-restriction": "手下只能選擇一個獲得[雙重幻象]、[複製]、[鍍金]或[迴響之聲]",
-                    "lobby-quilboar-naga": "當這場對局包含「野豬人」或「納迦」時不會出現",
+                    "lobby-quilboar-naga": "大廳中有「野豬人」或「納迦」時不會出現",
                     "requires-tavern-tier-3": "需要旅店等級 3 或以上",
                     "battlecry-gift-restriction": "戰吼手下只能獲得[雙重幻象]、[複製]、[鍍金]或[迴響之聲]",
                     "deathrattle-stats-restriction": "死聲手下在屬性值提升贈禮中只能獲得[磨利劍刃]或[死亡的擁抱]",
@@ -3659,11 +3681,14 @@
                     "requires-murloc": "僅會出現在「魚人」手下的選單中",
                     "requires-no-minion-type": "僅會出現在「無類別」手下的選單中",
                     "charisma-banned-minion": "此手下無法獲得",
-                    "lobby-dragon": "大廳中有「龍類」時無法獲得",
+                    "lobby-dragon": "大廳中有「龍類」時不會出現",
                     "not-highest-trigger-count": "僅當此項為你觸發次數最多的成長條件時提供",
                     "not-venomous-or-poisonous": "劇毒或毒素手下無法獲得",
                     "stitched-salvager": "「縫合拾荒者」無法獲得",
-                    "not-tier-7": "旅店 7⭐️手下無法獲得"
+                    "not-tier-7": "旅店 7⭐️手下無法獲得",
+                    "requires-activate": "僅會在「啟動」手下裡提供",
+                    "lobby-no-aberration": "僅在大廳中有變異怪時會出現",
+                    "requires-discards-this-game": "需要在本賽局曾捨棄過卡牌"
                 },
                 "turn": "回合 {{value}}",
                 "uses-left": "剩 {{value}} 次使用",
@@ -3823,7 +3848,8 @@
         }
     },
     "quests": {
-        "quests-completed": "你已達成全部任務"
+        "quests-completed": "你已達成全部任務",
+        "bloodstones-daily": "每日鮮血寶石"
     },
     "settings": {
         "title": "設定",
@@ -3894,7 +3920,8 @@
                 "broadcast": "Twitch",
                 "streamer": "實況主",
                 "addons": "附加元件",
-                "account": "帳號"
+                "account": "帳號",
+                "hotkeys": "快速鍵"
             },
             "third-party": {
                 "intro": "我們堅信你的資料歸你所有，且你理應能夠將其同步到其他第三方網站，協助這些網站發揮所長來處理這些數據。雖然我們並未從中獲利，但因為這些網站會提及我們，我們也因此獲得了一些曝光度😊",
@@ -3966,7 +3993,10 @@
                 "delay-label-tooltip": "將傳送到 Twitch 的直播事件延遲多少毫秒， 如果你希望延遲實況以對抗狙擊手。",
                 "appear-on-live-streams-tooltip": "顯示在「實況直播」標籤上。該功能仍在開發中，將列出目前使用 Firestone 的全部實況主以及他們目前的遊戲類型、清單（如果適用），並提供前往其 Twitch 直播的連結。",
                 "appear-on-live-streams-label": "在實況直播中出現",
-                "other-options-title": "其他選項"
+                "other-options-title": "其他選項",
+                "another-pc-sending": "目前正由另一台電腦在此頻道進行實況",
+                "broadcast-from-this-pc": "從這台電腦進行實況",
+                "sending-overlay": "目前正從這台電腦進行實況"
             },
             "launch": {
                 "launch-on-game-start-label": "啟動遊戲時也啟動Firestone",
@@ -4021,7 +4051,15 @@
                 "replay-ftue-tooltip": "再次顯示首次設定指引。選擇偏好的體驗層級將會更新覆疊介面設定。",
                 "replay-ftue-button-text": "開始",
                 "restore-ftue-settings-confirmation": "要還原上次套用新手指引設定檔之前的設定嗎？",
-                "restore-ftue-settings-tooltip": "還原上次套用新手指引設定檔之前的覆疊設定。後續對設定檔進行的變更不會覆蓋此備份。"
+                "restore-ftue-settings-tooltip": "還原上次套用新手指引設定檔之前的覆疊設定。後續對設定檔進行的變更不會覆蓋此備份。",
+                "close-app-on-game-exit-label": "離開遊戲時關閉應用程式",
+                "disable-low-memory-rendering-label": "停用低記憶體繪製",
+                "disable-low-memory-rendering-tooltip": "預設情況下，應用程式會以較小的圖形緩衝區來繪製視窗和覆蓋畫面，這可以在遊戲中節省約 100 MB 的記憶體。如果視窗或覆蓋畫面顯示異常或滾動不順暢，請開啟此選項。將於下次啟動應用程式時生效。",
+                "disable-overlay-shared-texture-tooltip": "預設情況下，遊戲內覆蓋畫面會直接透過顯示卡傳送到遊戲中，這能顯著降低 CPU 使用率。如果覆蓋畫面未顯示、顯示異常或阻擋了遊戲內的點擊，請開啟此選項。將於下次啟動《爐石戰記》時生效。",
+                "disable-overlay-shared-texture-label": "停用高速遊戲內覆蓋畫面",
+                "disable-hardware-acceleration-label": "停用硬體加速",
+                "disable-hardware-acceleration-tooltip": "改由 CPU 處理應用程式視窗與覆蓋畫面的繪製，而非透過顯示卡。這會降低應用程式的記憶體使用量，但動畫與滾動可能會消耗較多 CPU。此功能亦有助於解決畫面異常或視窗空白的問題。需要重新啟動應用程式。",
+                "close-app-on-game-exit-tooltip": "當《爐石戰記》關閉時一併退出 Firestone。若已開啟「退出時的戰況總結」，則無法使用此功能。"
             },
             "localization": {
                 "title": "在地化",
@@ -4159,7 +4197,8 @@
                 "import-placeholder": "GitHub 專案庫網址",
                 "auto-update-trusted-verified": "僅可信與已驗證的模組",
                 "import-no-install-path": "請先設定你的遊戲安裝位置。",
-                "explanation": "模組是可以用來改變《爐石戰記》遊戲本身行為的外掛程式。"
+                "explanation": "模組是可以用來改變《爐石戰記》遊戲本身行為的外掛程式。",
+                "restart-required": "需要重新啟動《爐石戰記》以套用此變更。"
             },
             "premium": {
                 "lottery-opacity-title": "抽獎小工具不透明度",
@@ -4224,7 +4263,7 @@
                         "color-5": "背景（淺色）",
                         "color-6": "背景（中等）",
                         "color-4": "邊框色彩",
-                        "common-2": "高亮色彩",
+                        "common-2": "標記色彩",
                         "common-1": "中性文字色彩",
                         "color-1": "主色彩（淺色）",
                         "color-2": "次要色彩",
@@ -4350,6 +4389,18 @@
                 "perks-intro": "免費註冊登入。這能讓 Firestone 為你提供更完善的服務。",
                 "perks-sync-detail": "當你重新安裝或更換電腦時，對戰歷史紀錄、卡牌包數據與成就都會完整保留。",
                 "perks-history-title": "你的對戰歷史紀錄將保留在雲端"
+            },
+            "hotkeys": {
+                "change": "變更",
+                "failed": "無法指派此快速鍵。可能已被其他應用程式使用。",
+                "title": "快速鍵",
+                "listening": "請按下按鍵...",
+                "reset": "重設",
+                "live-info": "顯示即時資訊",
+                "battlegrounds": "顯示/隱藏英雄戰場視窗",
+                "collection": "顯示/隱藏主視窗",
+                "intro": "變更用於顯示或隱藏 Firestone 視窗的快速鍵。點選「變更」，然後按下新的按鍵組合。按 Escape 可取消。",
+                "conflict": "此組合鍵已被 {{hotkey}} 使用。"
             }
         },
         "decktracker": {
@@ -4421,14 +4472,17 @@
                 "weapons-play-order-tooltip": "在出牌順序中也包含武器",
                 "show-hero-power-in-board-zone": "在戰場區域顯示英雄能力",
                 "weapons-play-order": "武器出牌順序",
-                "show-hero-power-in-board-zone-tooltip": "在「戰場」區域顯示玩家的英雄能力。這有助於顯示動態卡池和部分高亮效果。",
+                "show-hero-power-in-board-zone-tooltip": "在「戰場」區域顯示玩家的英雄能力。這有助於顯示動態卡池和部分標記。",
                 "play-order-title": "打出順序",
                 "show-flavor-text-on-hover": "懸停時顯示趣味文字",
                 "show-flavor-text-on-hover-tooltip": "在遊戲內記牌器將游標懸停於卡牌時，於通知欄角顯示其趣味文字",
                 "hide-play-order-on-blocking-ui-tooltip": "當畫面出現遊戲選單、發現選項或放大檢視的卡牌（手牌、場面或對戰歷史紀錄）時，隱藏出牌順序數字",
                 "show-flavor-text-on-in-game-hover": "檢視卡牌時顯示趣味文字",
                 "hide-play-order-on-blocking-ui": "當遊戲 UI 出現時隱藏",
-                "show-flavor-text-on-in-game-hover-tooltip": "在《爐石戰記》中檢視卡牌（手牌或場面）時，於通知角落顯示其風味文字"
+                "show-flavor-text-on-in-game-hover-tooltip": "在《爐石戰記》中檢視卡牌（手牌或場面）時，於通知角落顯示其風味文字",
+                "individual-counters-size": "個別計數器尺寸",
+                "use-single-highlight-color": "使用單一標記顏色",
+                "use-single-highlight-color-tooltip": "為所有相關卡牌的標記使用相同顏色，而非依據標記優先順序使用不同顏色。"
             },
             "modes": {
                 "title": "記牌器在下列模式處於作用中狀態",
@@ -5095,7 +5149,11 @@
                 "hero-power-extra-info-label": "英雄能力額外資訊",
                 "hero-power-extra-info-tooltip": "懸停於英雄能力時，在卡牌工具提示中顯示額外的即時詳細資訊（例如餅乾大廚的湯鍋裡已有哪些手下類別）。",
                 "always-show-tavern-tier-label": "總是顯示旅店⭐️",
-                "always-show-tavern-tier-tooltip": "在英雄戰場排行榜的玩家頭像旁顯示每位玩家當前的旅店⭐️。"
+                "always-show-tavern-tier-tooltip": "在英雄戰場排行榜的玩家頭像旁顯示每位玩家當前的旅店⭐️。",
+                "counter-deity-tooltip": "顯示古神的攻擊力與生命值",
+                "counter-cards-discarded-this-game-label": "卡牌（已捨棄）",
+                "counter-cards-discarded-this-game-tooltip": "顯示你在本賽局已捨棄的卡牌數量",
+                "counter-deity-label": "古神"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
@@ -5297,7 +5355,9 @@
         "card-scale-tooltip": "修改顯示為提示框的卡牌大小",
         "card-scale": "卡牌大小",
         "reconnect-for-chat-title": "重新連結 Twitch 以啟用 !deck 指令",
-        "reconnect-for-chat-text": "請前往「設定」並重新連結你的 Twitch 帳號，讓觀眾可以在聊天室中使用 !deck 指令"
+        "reconnect-for-chat-text": "請前往「設定」並重新連結你的 Twitch 帳號，讓觀眾可以在聊天室中使用 !deck 指令",
+        "lease-held-text": "點選以開啟設定並從這台電腦進行實況",
+        "lease-held-title": "另一台電腦正在此頻道進行實況"
     },
     "website": {
         "battlegrounds": {
@@ -5647,7 +5707,8 @@
                             "body": "<p>為了能被 Firestone 的模組管理器辨識，你的模組應公開一份包含 Name(名稱)、Version(版本)、Guid(組建) 與 DownloadLink（下載連結，指向專案庫）的 Config。目前尚不支援外部相依性套件，若你有此需求請至 Discord 敲我。</p>"
                         },
                         "configuration": {
-                            "body": "```\nwebsite.docs.pages.mods.sections.configuration.body\n<p>玩家可以在 Firestone 中變更你的模組選項。請在名稱為 <code>Firestone</code> 的區塊中使用 <code>Config.Bind</code> 來綁定各個選項。當外掛程式啟動過一次後，Firestone 就會以該模組的名稱，在「設定 &gt; 模組」底下新增一個頁面。</p><p>系統僅會顯示名稱為 <code>Firestone</code>，或是 <code>Firestone</code> 後方帶有分組名稱（例如 <code>Firestone.Replay</code>）的區塊。而 <code>General</code> 的元資料（<code>Name</code>、<code>Guid</code>、<code>Version</code>、<code>DownloadLink</code>、<code>Description</code>）則會保留在模組清單中。</p><pre><code>Config.Bind(\"Firestone\", \"EnableFoo\", true, \"Enable Foo\\nTurns the feature on.\");\n\nConfig.Bind(\"Firestone.Replay\", \"Speed\", 1f,\n    new ConfigDescription(\"Playback speed\", new AcceptableValueRange&lt;float&gt;(0.5f, 4f)));\n\nConfig.Bind(\"Firestone\", \"Mode\", Mode.Fast, \"Which mode to use\");</code></pre> <p>描述的第一行會作為標籤，後續行數則作為工具提示。<code>Firestone.Replay</code> 是一個標題為 Replay 的分組；而單純的 <code>Firestone</code> 區塊則沒有分組標題。設定選項會依照呼叫 <code>Bind</code> 的順序呈現。</p><p>當外掛程式執行過一次後，該頁面就會顯示，因為此時 BepInEx 會寫入 cfg 檔案。在 Firestone 中變更數值會更新該檔案，而外掛程式將會在下次啟動《爐石戰記》時讀取它。如果遊戲已經在執行中，Firestone 會提示玩家重新啟動遊戲。</p>\n\n```"
+                            "body": "```\nwebsite.docs.pages.mods.sections.configuration.body\n<p>玩家可以在 Firestone 中變更你的模組選項。請在名稱為 <code>Firestone</code> 的區塊中使用 <code>Config.Bind</code> 來綁定各個選項。當外掛程式啟動過一次後，Firestone 就會以該模組的名稱，在「設定 &gt; 模組」底下新增一個頁面。</p><p>系統僅會顯示名稱為 <code>Firestone</code>，或是 <code>Firestone</code> 後方帶有分組名稱（例如 <code>Firestone.Replay</code>）的區塊。而 <code>General</code> 的元資料（<code>Name</code>、<code>Guid</code>、<code>Version</code>、<code>DownloadLink</code>、<code>Description</code>）則會保留在模組清單中。</p><pre><code>Config.Bind(\"Firestone\", \"EnableFoo\", true, \"Enable Foo\\nTurns the feature on.\");\n\nConfig.Bind(\"Firestone.Replay\", \"Speed\", 1f,\n    new ConfigDescription(\"Playback speed\", new AcceptableValueRange&lt;float&gt;(0.5f, 4f)));\n\nConfig.Bind(\"Firestone\", \"Mode\", Mode.Fast, \"Which mode to use\");</code></pre> <p>描述的第一行會作為標籤，後續行數則作為工具提示。<code>Firestone.Replay</code> 是一個標題為 Replay 的分組；而單純的 <code>Firestone</code> 區塊則沒有分組標題。設定選項會依照呼叫 <code>Bind</code> 的順序呈現。</p><p>當外掛程式執行過一次後，該頁面就會顯示，因為此時 BepInEx 會寫入 cfg 檔案。在 Firestone 中變更數值會更新該檔案，而外掛程式將會在下次啟動《爐石戰記》時讀取它。如果遊戲已經在執行中，Firestone 會提示玩家重新啟動遊戲。</p>\n\n```",
+                            "title": "Firestone 中的設定"
                         }
                     },
                     "blurb": "透過 Firestone 安裝與開發《爐石戰記》模組。",
@@ -5840,7 +5901,7 @@
                             "text": "當電腦本機模擬負荷過重時，可選擇使用遠端戰鬥模擬"
                         },
                         "auto-highlight": {
-                            "text": "根據你的英雄自動高亮旅店中的手下"
+                            "text": "根據你的英雄自動標記旅店中的手下"
                         }
                     },
                     "title": "英雄戰場"
@@ -5994,7 +6055,7 @@
                 "unlimited-overlays": "無限制使用傳統爐石對戰中的發現與換牌覆疊，以及英雄戰場的選擇與數據覆疊（免費版使用者有每日或每週限制）",
                 "ad-free": "移除應用程式內廣告",
                 "meta-analytics": "應用程式內提供完整的主流套牌與原型分析、單卡數據分析，以及更豐富的套牌頁面",
-                "battlegrounds": "英雄戰場英雄選擇覆疊、任務與獎勵數據、提示、自動高亮、大廳分析以及賽後數據分析",
+                "battlegrounds": "英雄戰場英雄選擇覆疊、任務與獎勵數據、提示、自動標記、大廳分析以及賽後數據分析",
                 "support": "支持 Firestone 的持續開發"
             },
             "hero": {
@@ -6115,6 +6176,58 @@
             "hero": {
                 "title": "下載 Firestone",
                 "subtitle": "免費的《爐石戰記》輔助工具：牌組記牌器、覆疊介面、卡牌收藏、英雄戰場工具等。"
+            },
+            "social-proof": {
+                "titles": {
+                    "summer-champion": "{{year}} 年夏季賽冠軍",
+                    "world-champion": "{{year}} 年世界冠軍",
+                    "bg-eu-number-one": "多次榮登歐洲伺服器英雄戰場排行榜第一名",
+                    "ua-eu-number-one": "多次榮登歐洲伺服器地下競技場排行榜第一名",
+                    "winter-champion": "{{year}} 年冬季賽冠軍"
+                },
+                "carousel": {
+                    "next": "下一位頂尖好手",
+                    "previous": "上一位頂尖好手",
+                    "goto": "顯示 {{name}}",
+                    "roledescription": "輪播",
+                    "gallery": "使用 Firestone 的頂尖好手，共 {{count}} 位玩家"
+                },
+                "champions": {
+                    "bunnyhoppor": {
+                        "alt": "Bunnyhoppor 官方宣傳圖，2022 爐石戰記世界冠軍",
+                        "portrait-alt": "Bunnyhoppor 肖像"
+                    },
+                    "demoshadow": {
+                        "alt": "Demoshadow 官方宣傳圖，2026 爐石戰記夏季賽冠軍",
+                        "portrait-alt": "Demoshadow 肖像"
+                    },
+                    "kwanwoo": {
+                        "alt": "Kwanwoo 官方宣傳圖，2026 爐石戰記冬季賽冠軍",
+                        "portrait-alt": "Kwanwoo 肖像"
+                    },
+                    "pockettrain": {
+                        "alt": "PocketTrain 官方宣傳圖，2023 爐石戰記世界冠軍",
+                        "portrait-alt": "PocketTrain 肖像"
+                    },
+                    "denimblue": {
+                        "portrait-alt": "DenimBlue 肖像",
+                        "alt": "DenimBlue，多次榮登歐洲伺服器地下競技場排行榜第一名"
+                    },
+                    "otgxhh": {
+                        "portrait-alt": "OTGxhh 肖像",
+                        "alt": "OTGxhh，2026 爐石戰記世界冠軍，在台上高舉獎盃"
+                    },
+                    "slyders": {
+                        "portrait-alt": "Slyders 肖像",
+                        "alt": "Slyders，多次榮登歐洲伺服器英雄戰場排行榜第一名"
+                    },
+                    "mlyanming": {
+                        "portrait-alt": "mlYanming 肖像",
+                        "alt": "mlYanming 官方宣傳圖，2024 爐石戰記世界冠軍"
+                    }
+                },
+                "title": "冠軍選手的選擇",
+                "lead": "世界冠軍、大師職業賽冠軍以及排行榜頂尖玩家都在使用 Firestone —— 包括 2026 年世界冠軍 OTGxhh。"
             }
         }
     },
@@ -6333,7 +6446,7 @@
         "pain-rogue": "痛苦-賊",
         "bfu-deathrattle-warlock": "彩虹死聲-術",
         "rainbow-shaman": "彩虹-薩",
-        "fatigue-demon-hunter": "疲勞-惡魔獵",
+        "fatigue-demon-hunter": "疲倦-惡魔獵",
         "handbuff-hunter": "手牌加加-獵",
         "amalgam-hunter": "聚合體-獵",
         "concierge-hunter": "接待員-獵",
@@ -6395,7 +6508,7 @@
         "xl-cutlass-rogue": "40牌 彎刀-賊",
         "xl-elemental-shaman": "40牌 元素-薩",
         "xl-excavate-paladin": "40牌 挖寶-聖",
-        "xl-fatigue-demon-hunter": "40牌 疲勞-惡魔獵",
+        "xl-fatigue-demon-hunter": "40牌 疲倦-惡魔獵",
         "xl-handbuff-hunter": "40牌 手牌加加-獵",
         "xl-mech-warrior": "40牌 機械-戰",
         "xl-pipsi-paladin": "40牌 皮西‧繪蹄-聖",
@@ -6629,7 +6742,7 @@
         "xl-holy-wrath-paladin": "40牌 一拳-聖",
         "boar-priest": "艾爾文森林野豬-牧",
         "hooktusk-rogue": "鉤牙-賊",
-        "jtu-quest-rogue": "洞穴歷險任務-賊",
+        "jtu-quest-rogue": "任務(洞穴歷險)-賊",
         "xl-mill-rogue": "40牌 疲倦-賊",
         "sou-quest-shaman": "腐化水域戰吼-薩",
         "ashtoungue-warlock": "縛魂的灰舌術",
@@ -6815,10 +6928,10 @@
         "securitybot-shaman": "警衛機器人(瑪格吉戰吼)-薩",
         "thief-priest": "偷牌(阿薩琳娜)-牧",
         "two-bit-rogue": "22(鋤大弟)-賊",
-        "mug-quest-shaman": "瑪格任務-薩",
+        "mug-quest-shaman": "瑪格(法術)任務-薩",
         "mug-shaman": "瑪格-薩",
         "capriodi-warrior": "龍蛋-戰",
-        "zee-quest-shaman": "瑪格吉任務-薩",
+        "zee-quest-shaman": "吉(手下)任務-薩",
         "zee-shaman": "瑪格吉-薩",
         "gladiator-warrior": "號召(競技血戰)-戰",
         "godfrey-warlock": "『背叛者』高佛雷-術",
@@ -6862,7 +6975,7 @@
         "token-dh": "鋪場-惡魔獵",
         "vanessa-rogue": "頭目凡妮莎-賊",
         "xl-buu-hl-plague-dk": "40牌 BUU無雙瘟疫-死騎",
-        "xl-burnlock": "40牌 棄牌蛋-術",
+        "xl-burnlock": "40牌 棄牌-術",
         "xl-deios-druid": "40牌 時空領主戴歐司-德",
         "xl-exodia-mage": "40牌 禁忌序列-法",
         "xl-hl-att-quest-hunter": "40牌 無雙任務(決戰終焉之刻)-獵",
@@ -6883,7 +6996,64 @@
         "cute-warrior": "可愛-戰",
         "hl-n-roll-warrior": "無雙黑石搖滾-戰",
         "xl-hl-imbue-rogue": "40牌 無雙注能-賊",
-        "seedlock": "任務(惡魔之種)-術"
+        "seedlock": "任務(惡魔之種)-術",
+        "champions-druid": "勇士-德",
+        "deios-rogue": "時空領主戴歐司-賊",
+        "dragon-pirate-warrior": "龍類海盜-戰",
+        "drake-warlock": "大地飛龍-術",
+        "fatigue-dh": "疲倦-惡魔獵",
+        "harold-piglock": "預兆豬豬-術",
+        "harold-void-soul-dh": "預兆虛無靈魂-惡魔獵",
+        "infinity-paladin": "無限-聖",
+        "mill-rogue": "疲倦-賊",
+        "naga-dh": "納迦-惡魔獵",
+        "pirate-warrior": "海盜-戰",
+        "sneaky-ayaya-rogue": "潛行阿雅-賊",
+        "sneaky-harold-rogue": "潛行預兆-賊",
+        "sneaky-rogue": "潛行-賊",
+        "tyrande-priest": "泰蘭妲-牧",
+        "xl-hl-rainbow-dk": "40牌 無雙彩虹-死騎",
+        "xl-tog-dh": "40牌 托戈瓦哥國王-惡魔獵",
+        "divine-spirit-priest": "神聖精神-牧",
+        "xl-hl-exodia-paladin": "40牌 無雙四騎士-聖",
+        "exodia-mage": "大法師(安東尼達斯)-法",
+        "gnoll-miracle-rogue": "豺狼人奇蹟-賊",
+        "hl-thief-rogue": "無雙偷偷-賊",
+        "hl-velarok-rogue": "無雙維拉若克-賊",
+        "igneous-warrior": "火成熔岩吞噬者-戰",
+        "kingsbane-rogue": "王禍-賊",
+        "xl-lc-quest-priest": "40牌 任務(光暗均衡)-牧",
+        "xl-lc-quest-shaman": "40牌 任務(火山之靈)-薩",
+        "mechathun-paladin": "機神克蘇恩-聖",
+        "mine-rogue": "水雷-賊",
+        "odd-paladin": "奇數-聖",
+        "ohnahra-shaman": "雍亞拉-薩",
+        "pirate-burnlock": "海盜棄牌-術",
+        "sif-mage": "希芙-法",
+        "star-grazer-druid": "星辰巨鯨-德",
+        "xl-astral-druid": "40牌 星體共融-德",
+        "xl-beetle-druid": "40牌 甲蟲-德",
+        "xl-demon-boarlock": "40P牌 惡魔豬豬-術",
+        "xl-hl-big-spell-mage": "40牌 無雙大法術-法",
+        "xl-hl-lpg-mage": "40牌 無雙(露娜的口袋銀河)-法",
+        "xl-hl-sou-quest-shaman": "40牌 無雙任務(腐化水域)-薩",
+        "xl-hl-thief-rogue": "40牌 無雙偷偷-賊",
+        "xl-kingsbane-rogue": "40牌 王禍-賊",
+        "xl-warlock": "40牌 術",
+        "xl-lc-quest-warrior": "40牌 任務(進入迷城)-戰",
+        "questline-warrior": "任務線(掠奪碼頭)-戰",
+        "sulthraze-warrior": "蘇薩斯-戰",
+        "warsong-warrior": "戰歌-戰",
+        "xl-igneous-odyn-warrior": "40牌 歐丁(火成熔岩吞噬者)-戰",
+        "xl-questline-warrior": "40牌 任務線(掠奪碼頭)-戰",
+        "astral-druid": "星體共融-德",
+        "boar-otk-druid": "野豬一回殺-德",
+        "hl-lc-quest-priest": "無雙任務(光暗均衡)-牧",
+        "lc-quest-warrior": "任務(進入迷城)-戰",
+        "jtu-quest-priest": "任務(喚醒造物者)-牧",
+        "xl-egg-paladin": "40牌 蛋-聖",
+        "xl-hl-questline-warrior": "40牌 無雙任務線(掠奪碼頭)-戰",
+        "xl-shudderwock-shaman": "40牌 哮斗龍-薩"
     },
     "arena": {
         "overlay": {
@@ -7011,7 +7181,12 @@
         "naga_end_of_turn": "回合結束流納迦",
         "neutral_tea_set": "茶具流",
         "beast_beetle": "甲蟲流野獸",
-        "dragon_evoker": "「炎鑄喚術師」流龍類"
+        "dragon_evoker": "「炎鑄喚術師」流龍類",
+        "aberration_deathrattle": "死聲流變異怪",
+        "mech_glambot": "華麗機器人流機械",
+        "dragon_shield": "聖盾術流龍類",
+        "mech_volumizer": "「音量機兵」流機械",
+        "aberration_discard": "捨棄流變異怪"
     },
     "androidDeckTracker": {
         "onboarding": {
