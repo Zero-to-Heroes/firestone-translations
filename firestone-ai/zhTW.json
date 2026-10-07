@@ -2,240 +2,98 @@
 	"settings": {
 		"general": {
 			"account": {
-				"perks-history-detail": "未綁定帳號的賽局大約一年後會被清理。",
-				"perks-history-title": "對戰紀錄會保存在線上",
-				"perks-intro": "登入是免費的，只是讓 Firestone 更好地為你服務。",
-				"perks-lottery-detail": "點數仍會在本機累積；登入後即可同步，並在賽季結束時參加抽獎。",
-				"perks-lottery-title": "參加抽獎",
-				"perks-replays-detail": "沒有帳號時，重播檔案會在 60 天後刪除。",
-				"perks-replays-title": "重播大約保留一年",
-				"perks-sync-detail": "重新安裝或更換電腦後，對戰紀錄、卡牌包統計與成就都會跟著你。",
-				"perks-sync-title": "資料隨身走",
-				"perks-title": "為什麼要登入？"
-			},
-			"localization": {
-				"ai-text": "啟用後，缺少的翻譯會以 AI 產生的文字補上。社群翻譯一律優先。AI 文字可能不夠完美；若沒有 AI 翻譯，仍會使用英文。",
-				"ai-title": "AI 翻譯",
-				"ai-toggle-label": "使用 AI 翻譯",
-				"ai-toggle-tooltip": "以 AI 產生的文字填補尚未翻譯的字串。社群翻譯一律優先。"
-			},
-			"addons": {
-				"explanation": "（實驗性）附加功能是 Firestone 本身的選用擴充。它們會在沙盒中執行，且僅具備其聲明的權限。它們不會修改《爐石戰記》用戶端。"
-			},
-			"hotkeys": {
-				"battlegrounds": "顯示/隱藏英雄戰場視窗",
-				"change": "變更",
-				"collection": "顯示/隱藏主視窗",
-				"conflict": "該組合已被 {{hotkey}} 使用。",
-				"failed": "無法指定此快速鍵。它可能已被其他應用程式使用。",
-				"intro": "變更用來顯示或隱藏 Firestone 視窗的按鍵。按一下「變更」，然後按下新組合。Escape 可取消。",
-				"listening": "請按下按鍵...",
-				"live-info": "顯示即時資訊",
-				"reset": "重設",
-				"title": "快速鍵"
-			},
-			"menu": {
-				"hotkeys": "快速鍵"
-			},
-			"mods": {
-				"explanation": "模組是會改變《爐石戰記》本身行為的外掛程式。",
-				"restart-required": "請重啟爐石戰記以使此變更生效。"
-			},
-			"launch": {
-				"close-app-on-game-exit-label": "離開遊戲時關閉應用程式",
-				"close-app-on-game-exit-tooltip": "關閉爐石戰記時一併結束 Firestone。若已開啟「退出時的戰況總結」，則無法使用此選項。",
-				"disable-hardware-acceleration-label": "停用硬體加速",
-				"disable-hardware-acceleration-tooltip": "以 CPU 而非顯示卡繪製應用程式視窗與覆疊介面。這會降低應用程式的記憶體用量，但動畫與捲動可能會消耗更多 CPU。若出現畫面異常或空白視窗，此選項也可能有幫助。需重新啟動應用程式。",
-				"disable-low-memory-rendering-label": "停用低記憶體渲染",
-				"disable-low-memory-rendering-tooltip": "預設狀況下，應用程式會以較小的圖形緩衝區繪製視窗與覆疊介面，在遊戲中約可節省 100 MB 記憶體。若視窗或覆疊介面顯示異常或捲動不順，請開啟此選項。將在下次啟動應用程式時生效。",
-				"disable-overlay-shared-texture-label": "停用快速遊戲內覆疊",
-				"disable-overlay-shared-texture-tooltip": "預設狀況下，遊戲內覆疊介面會直接透過顯示卡傳送到遊戲，大幅降低 CPU 用量。若覆疊介面沒有顯示、顯示異常，或阻擋遊戲中的點選，請開啟此選項。將在下次啟動爐石戰記時生效。"
-			},
-			"twitch": {
-				"another-pc-sending": "目前正從該頻道的另一台電腦推送",
-				"broadcast-from-this-pc": "從此電腦推送",
-				"sending-overlay": "目前正從此電腦推送"
+				"link-battlenet-failed": "無法開始綁定 Battle.net。請稍後再試。"
 			}
 		},
 		"decktracker": {
-			"global": {
-				"individual-counters-size": "個別計數器大小",
-				"use-single-highlight-color": "使用單一標記顏色",
-				"use-single-highlight-color-tooltip": "所有相關卡牌標記使用相同顏色，而不是依優先順序使用不同顏色。"
-			}
-		},
-		"battlegrounds": {
-			"overlay": {
-				"counter-cards-discarded-this-game-label": "已棄掉卡牌",
-				"counter-cards-discarded-this-game-tooltip": "顯示本賽局你已棄掉的卡牌數量",
-				"counter-deity-label": "神",
-				"counter-deity-tooltip": "顯示你的「神」的攻擊力與生命值"
+			"your-deck": {
+				"counters": {
+					"aqir-goliath-label": "亞基巨像",
+					"aqir-goliath-tooltip": "當你的手牌或牌庫中有亞基巨像時，顯示你本回合打出了多少張連擊牌",
+					"broodqueen-shakar-label": "孵化女王沙卡爾",
+					"broodqueen-shakar-tooltip": "當你的手牌或牌庫中有孵化女王沙卡爾時，顯示本回合還有多少個友方隨從需要死亡",
+					"colossus-of-the-cold-label": "寒冰巨像",
+					"colossus-of-the-cold-tooltip": "當你的手牌或牌庫中有寒冰巨像時，顯示你還需要在法術上花費多少法力",
+					"cthun-abilities-label": "克蘇恩技能",
+					"cthun-abilities-tooltip": "當你的手牌或牌庫中有克蘇恩，帝國之眼時，顯示你已觸發它的四項技能中的多少項",
+					"ghuun-blood-runes-label": "戈霍恩鮮血符文",
+					"ghuun-blood-runes-tooltip": "當你的手牌或牌庫中有戈霍恩時，顯示你本局打出了多少個鮮血符文",
+					"nzoth-dreams-end-label": "恩佐斯，夢境終結",
+					"nzoth-dreams-end-tooltip": "當你的手牌或牌庫中有恩佐斯，夢境終結時，顯示你已召喚的亡語隨從數量，以及它的目前費用",
+					"uldir-runes-label": "奧迪爾隔離",
+					"uldir-runes-tooltip": "當你的手牌或牌庫中有奧迪爾隔離時，顯示你打出了多少種符文",
+					"yshaarj-titan-bane-label": "亞煞拉俱，泰坦剋星",
+					"yshaarj-titan-bane-tooltip": "當你的手牌或牌庫中有亞煞拉俱，泰坦剋星時，顯示你還需要在隨從上花費多少法力"
+				}
 			}
 		}
 	},
 	"website": {
-		"downloads": {
-			"document-title": "下載 Firestone — www.firestoneapp.com",
-			"editions-label": "可用版本",
-			"features": {
-				"battlegrounds": {
-					"alt": "依種族分組並帶有酒館等級篩選的英雄戰場隨從清單",
-					"blurb": "依等級、種族或關鍵字瀏覽酒館隨從清單，還有戰鬥勝率與大廳工具。",
-					"caption": "英雄戰場隨從清單",
-					"title": "英雄戰場助手"
-				},
-				"collection": {
-					"alt": "顯示每個爐石戰記資料片收集進度的收藏總覽",
-					"blurb": "瀏覽全部收藏，一眼查看資料片完成度，並追蹤卡牌包、保底與多餘卡牌。",
-					"caption": "依資料片查看收藏總覽",
-					"title": "收藏追蹤"
-				},
-				"deck-tracker": {
-					"alt": "爐石戰記對戰畫面，兩側顯示 Firestone 記牌器覆蓋層",
-					"blurb": "對戰中查看牌組、手牌、場面與墳場剩餘卡牌，以及對手卡牌、奧秘助手與計數器。",
-					"caption": "遊戲內記牌器與覆蓋層",
-					"title": "記牌器"
-				},
-				"lead": "無需訂閱即可使用。部分覆蓋層有每日或每週額度；Premium 支持者可取消這些限制。",
-				"mods": {
-					"alt": "Firestone 模組設定，列出可開關的社群模組",
-					"blurb": "在設定中一鍵啟用社群模組——自動禁言、套牌自動補齊、收藏調整等。",
-					"caption": "內建模組管理員",
-					"title": "模組"
-				},
-				"overlays": {
-					"alt": "發現覆蓋層，顯示每張可選卡牌的抽到影響數據",
-					"blurb": "發現與調度指南帶有每日免費額度，關鍵時刻能看到數據。",
-					"caption": "帶抽到影響數據的發現覆蓋層",
-					"title": "遊戲內覆蓋層"
-				},
-				"related-cards": {
-					"alt": "滑鼠懸停記牌器中的卡牌時顯示相關卡牌",
-					"blurb": "將滑鼠移到記牌器中的卡牌上，即可在清單旁看到它生成或相關的卡牌。",
-					"caption": "懸停顯示相關卡牌",
-					"title": "相關卡牌"
-				},
-				"title": "免費能得到什麼"
+		"uninstall": {
+			"comment": {
+				"body": "幾句話就夠了。如果希望得到回覆，請留下聯絡方式。",
+				"contact-label": "電子郵件或 Discord（選填）",
+				"contact-placeholder": "電子郵件或 Discord ID",
+				"placeholder": "發生了什麼事？",
+				"skip": "略過",
+				"submit": "傳送",
+				"title": "有什麼想告訴我們的？"
 			},
-			"hero": {
-				"subtitle": "免費的爐石戰記助手：記牌器、覆蓋層、收藏、英雄戰場工具等。",
-				"title": "下載 Firestone"
+			"competitor": {
+				"body": "寫出名稱即可。",
+				"placeholder": "應用程式名稱",
+				"submit": "傳送",
+				"title": "你要換到哪個應用程式？"
 			},
-			"lightbox": {
-				"close": "關閉完整尺寸圖片",
-				"view-full-size": "查看完整尺寸：{{alt}}"
+			"discord-cta": "在 Discord 上聯絡我們",
+			"discord-lead": "還是解決不了？",
+			"document-title": "解除安裝 Firestone",
+			"faq": {
+				"body": "如果什麼都不顯示，通常只要在 Overwolf 的設定裡開啟《爐石戰記》覆蓋層即可。請查看下方的常見問題。",
+				"checklist": "開啟常見問題",
+				"dismiss": "關閉",
+				"title": "幾個簡單步驟通常就夠了"
 			},
-			"overwolf": {
-				"badge": "現已推出",
-				"blurb": "目前的公開發行版。需要 Overwolf 桌面應用程式。",
-				"cta": "下載 Overwolf 版",
-				"note": "若尚未安裝 Overwolf，將會一併安裝。",
-				"title": "Overwolf"
-			},
+			"page-subtitle": "如果方便的話，我們很想知道你解除安裝的原因。只需要幾秒鐘。",
+			"page-title": "很遺憾看到你離開",
 			"premium": {
+				"body": "Premium 訂閱會關閉廣告，並解鎖額外的覆蓋層和統計。",
 				"cta": "查看 Premium",
-				"lead": "Premium 支持者可解鎖無限次發現與調度覆蓋層、完整環境分析，以及額外的英雄戰場功能。",
-				"title": "想要無限覆蓋層與更深入的統計？"
+				"dismiss": "不用了，謝謝",
+				"title": "Premium 會去掉廣告"
+			},
+			"reasons-label": "請選擇主要原因。",
+			"reasons": {
+				"ads": "廣告太煩了",
+				"bugs": "錯誤太多",
+				"competitor": "換到另一個桌面應用程式",
+				"didnt-work": "完全不能用",
+				"not-useful": "我覺得沒什麼用",
+				"other": "其他",
+				"overwolf": "我喜歡這個應用程式，只是不想用 Overwolf",
+				"performance": "我遇到了效能問題",
+				"reinstall": "我遇到了問題，解除安裝是為了嘗試修復",
+				"stopped-playing": "不再玩《爐石戰記》了"
 			},
 			"standalone": {
-				"badge": "封閉測試",
-				"blurb": "不依賴 Overwolf 的 Firestone。仍在封閉測試中。",
-				"cta": "下載獨立版",
-				"discord-cta": "在 Discord 上聯絡我們",
-				"discord-lead": "想要搶先體驗？",
-				"title": "獨立版"
+				"body": "有一個不需要 Overwolf 的版本。它仍在封閉測試中，但就是同一個 Firestone：牌組追蹤、覆蓋層以及其他功能。要試試嗎？",
+				"cta": "下載 Firestone Standalone",
+				"dismiss": "不用了，謝謝",
+				"title": "不使用 Overwolf 的 Firestone"
 			},
-			"social-proof": {
-				"carousel": {
-					"gallery": "使用 Firestone 的冠軍，{{count}} 位玩家",
-					"goto": "顯示 {{name}}",
-					"next": "下一位冠軍",
-					"previous": "上一位冠軍",
-					"roledescription": "輪播"
-				},
-				"champions": {
-					"bunnyhoppor": {
-						"alt": "Bunnyhoppor（2022 年爐石戰記世界冠軍）的官方圖",
-						"portrait-alt": "Bunnyhoppor 的肖像"
-					},
-					"demoshadow": {
-						"alt": "Demoshadow（2026 年爐石戰記夏季冠軍）的官方圖",
-						"portrait-alt": "Demoshadow 的肖像"
-					},
-					"denimblue": {
-						"alt": "DenimBlue，多次歐洲地下競技場排行榜第一",
-						"portrait-alt": "DenimBlue 的肖像"
-					},
-					"kwanwoo": {
-						"alt": "Kwanwoo（2026 年爐石戰記冬季冠軍）的官方圖",
-						"portrait-alt": "Kwanwoo 的肖像"
-					},
-					"mlyanming": {
-						"alt": "mlYanming（2024 年爐石戰記世界冠軍）的官方圖",
-						"portrait-alt": "mlYanming 的肖像"
-					},
-					"otgxhh": {
-						"alt": "2026 年爐石戰記世界冠軍 OTGxhh 在台上舉起獎盃",
-						"portrait-alt": "OTGxhh 的肖像"
-					},
-					"pockettrain": {
-						"alt": "PocketTrain（2023 年爐石戰記世界冠軍）的官方圖",
-						"portrait-alt": "PocketTrain 的肖像"
-					},
-					"slyders": {
-						"alt": "Slyders，多次歐洲英雄戰場排行榜第一",
-						"portrait-alt": "Slyders 的肖像"
-					}
-				},
-				"lead": "世界冠軍、大師巡迴賽優勝者與排行榜頂尖玩家都在使用 Firestone——包括 2026 年世界冠軍 OTGxhh。",
-				"title": "冠軍都在用",
-				"titles": {
-					"bg-eu-number-one": "多次歐洲英雄戰場第一",
-					"summer-champion": "{{year}} 夏季冠軍",
-					"ua-eu-number-one": "多次歐洲地下競技場第一",
-					"winter-champion": "{{year}} 冬季冠軍",
-					"world-champion": "{{year}} 世界冠軍"
-				}
-			}
-		},
-		"nav": {
-			"downloads": "下載"
-		},
-		"faq": {
-			"sections": {
-				"smart-app-control": {
-					"body": "<p>Windows 11 的<strong>智慧應用程式控制</strong>可能會封鎖 Firestone 的記憶體讀取檔案（<code>OverwolfUnitySpy.dll</code>）。發生時：</p><ul><li>遊戲中看不到小工具</li><li>重新啟動 Firestone 或《爐石戰記》沒有幫助</li><li>Firestone 主視窗（收藏、統計）仍可能正常運作</li></ul><p>若要檢查智慧應用程式控制是否開啟：開啟<strong>Windows 安全性 → 應用程式及瀏覽器控制 → 智慧應用程式控制設定</strong>。請參閱 Microsoft 的<a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\">智慧應用程式控制常見問題</a>。</p><p>請更新到最新版 Firestone。近期版本已為記憶體讀取外掛程式簽署，讓 Windows 可以允許它。如果你已經是最新版本，但重疊顯示仍是空的，請從應用程式回報錯誤。</p>",
-					"title": "Windows 11 智慧應用程式控制"
-				}
-			}
-		},
-		"docs": {
-			"pages": {
-				"mods": {
-					"sections": {
-						"configuration": {
-							"body": "<p>玩家可以在 Firestone 中變更你的模組選項。請在名為 <code>Firestone</code> 的區段中，以 <code>Config.Bind</code> 綁定每個選項。外掛程式啟動過一次後，Firestone 會在「設定」&gt;「模組」底下以模組名稱新增一個頁面。</p><p>僅會顯示名稱為 <code>Firestone</code>，或是 <code>Firestone</code> 後面加上群組（例如 <code>Firestone.Replay</code>）的區段。<code>General</code> 中繼資料（<code>Name</code>、<code>Guid</code>、<code>Version</code>、<code>DownloadLink</code>、<code>Description</code>）仍會留在模組清單上。</p><pre><code>Config.Bind(\"Firestone\", \"EnableFoo\", true, \"Enable Foo\\nTurns the feature on.\");\n\nConfig.Bind(\"Firestone.Replay\", \"Speed\", 1f,\n    new ConfigDescription(\"Playback speed\", new AcceptableValueRange&lt;float&gt;(0.5f, 4f)));\n\nConfig.Bind(\"Firestone\", \"Mode\", Mode.Fast, \"Which mode to use\");</code></pre> <p>說明的第一行是標籤，後續行是提示框。<code>Firestone.Replay</code> 是標題為 Replay 的群組。單純的 <code>Firestone</code> 區段沒有群組標題。設定會依 <code>Bind</code> 呼叫的順序顯示。</p><p>此外掛程式執行過一次後頁面才會出現，因為那時 BepInEx 才會寫入 cfg。在 Firestone 中變更數值會更新該檔案，外掛程式會在下次啟動爐石戰記時讀取。若遊戲已在執行中，Firestone 會請玩家重新啟動遊戲。</p>",
-							"title": "Firestone 中的設定"
-						}
-					}
-				}
+			"thanks": {
+				"body": "祝你一切順利，隨時歡迎回來。如果你留下了聯絡方式，我們會盡快回覆。",
+				"title": "謝謝你告訴我們"
 			}
 		}
 	},
 	"decktracker": {
-		"guessed-info": {
-			"minion-type": "手下類型",
-			"minion-types": "手下類型"
-		},
-		"created-by-label": "創建者",
-		"drawn-by-label": "抽取者"
-	},
-	"quests": {
-		"bloodstones-daily": "每日血石"
+		"card-tooltip-assemble-body": "手下",
+		"card-tooltip-assemble-first": "上半",
+		"card-tooltip-assemble-second": "下半"
 	},
 	"androidDeckTracker": {
 		"onboarding": {
-			"accountTitle": "帳號",
 			"barSubtitle": "記牌器",
 			"barTitle": "Firestone",
 			"checkAgain": "再檢查",
@@ -246,9 +104,9 @@
 			"overlayPermission": "允許顯示在其他應用程式上層",
 			"overlayPermissionBody": "牌組清單僅供顯示，不會攔截原本要給爐石戰記的點選。可用一個小按鈕顯示或隱藏。",
 			"pairClose": "關閉",
-			"pairHint": "輸入 6 位數代碼",
-			"pairNotReady": "代碼送出前，代碼畫面就已關閉。請再次顯示代碼，保持該畫面開啟，然後在 Firestone 通知中輸入這 6 位數。",
-			"pairWaiting": "請將代碼留在畫面上，然後在此輸入 6 位數。",
+			"pairHint": "在此輸入配對碼",
+			"pairNotReady": "配對碼送出前，配對碼畫面就關閉了。請重新顯示配對碼，保持該畫面開啟，然後在 Firestone 通知上點選「輸入配對碼」。",
+			"pairWaiting": "這則通知上會出現一個按鈕。點選它即可開啟輸入框。請保持配對畫面開啟。",
 			"pairWrongCode": "該代碼無效。請輸入畫面上顯示的代碼。",
 			"progress": "步驟 {current}／{total}",
 			"readyBody": "開始一場爐石戰記對戰。牌組清單會顯示在對戰上方。",
@@ -269,21 +127,18 @@
 			"signedInNote": "你的賽局現已同步到帳號，可從桌面應用程式擷取。",
 			"stepAllowInstalls": "點選「繼續」。Android 會開啟 Firestone 的設定。開啟「允許來自這個來源」，然後回到這裡。",
 			"stepAllowInstallsTitle": "允許安裝",
-			"stepDeveloper": "點選「繼續」。在手機資訊畫面中，捲動到「組建編號」並點選 7 次，直到手機顯示已開啟開發人員選項。然後回來這裡。",
+			"stepDeveloper": "點選「繼續」。如果開發人員選項已經開啟，會打開那個畫面。如果沒有開啟，會打開手機資訊畫面。向下捲動到「版本號碼」，連續點選 7 次，直到手機提示已開啟開發人員選項，然後返回。",
 			"stepDeveloperButton": "開啟手機資訊",
 			"stepDeveloperTitle": "開啟開發人員選項",
 			"stepGrant": "點選「繼續」。Android 會詢問是否允許 Firestone 使用輔助程式。點選「允許」。",
-			"stepGrantButton": "允許 Firestone",
-			"stepGrantTitle": "允許 Firestone",
 			"stepInstallTitle": "安裝輔助程式",
 			"stepInstalling": "點選「繼續」。Android 會請你安裝 Firestone 所需的輔助程式。確認安裝後，回到此畫面。",
 			"stepNearby": "點選「繼續」。Android 會詢問是否允許 Firestone 在此手機上尋找無線偵錯。點選「允許」。",
-			"stepNearbyButton": "允許",
 			"stepNearbyTitle": "允許此手機上的 Firestone",
 			"stepOverlay": "點選「繼續」，讓 Firestone 顯示在遊戲上方。在接著出現的清單中找到 Firestone，並允許它顯示在其他應用程式上層。然後回到這裡。",
 			"stepOverlayButton": "允許牌組清單",
 			"stepOverlayTitle": "在遊戲上方顯示 Firestone",
-			"stepPair": "點選「顯示代碼」。點選「無線偵錯」，再點選「使用配對碼配對裝置」。保持該畫面開啟。點選 Firestone 通知，並在其中輸入 6 位數代碼。",
+			"stepPair": "6 位數配對碼要填在 Firestone 通知裡，不是在這個畫面，也不是在設定裡。點選「顯示配對碼」。在設定中點選「無線偵錯」，再點選「使用配對碼配對裝置」。保持該畫面開啟。在 Firestone 通知上點選「輸入配對碼」，並在開啟的輸入框裡填入 6 位數字。",
 			"stepPairButton": "顯示代碼",
 			"stepPairTitle": "輸入配對碼",
 			"stepStart": "點選「繼續」以啟動輔助程式。請留在此畫面。這需要幾秒鐘。若需要配對碼，下一步會說明。",
@@ -292,126 +147,96 @@
 			"stepWireless": "點選「繼續」。找到「無線偵錯」並開啟開關。若手機詢問此 Wi-Fi，請允許。然後回來這裡。",
 			"stepWirelessButton": "開啟開關",
 			"stepWirelessTitle": "開啟無線偵錯",
-			"title": "設定記牌器"
+			"title": "設定記牌器",
+			"closeApp": "關閉 Firestone",
+			"closeAppNote": "這會停止記錄並移除通知。從手機強制關閉應用程式時，應用程式無法自己送出通知。",
+			"discord": "Discord",
+			"pairEnter": "輸入配對碼",
+			"pairInputLabel": "6 位數配對碼",
+			"pairReady": "點選「輸入配對碼」。在這則通知開啟的輸入框中填入 6 位數字。配對碼送出之前，不要返回 Firestone。",
+			"reportButton": "傳送報告",
+			"reportFailed": "報告無法傳送。請在連線後再試一次。",
+			"reportHint": "出了什麼問題？",
+			"reportSending": "正在傳送報告…",
+			"reportSent": "報告已傳送。謝謝。",
+			"reportTitle": "回報錯誤",
+			"stepDeveloperStillOff": "開發人員選項仍未開啟。點選「繼續」，然後在手機資訊畫面連續點選「版本號碼」7 次。",
+			"stepWifi": "點選「繼續」。連上 Wi-Fi 後再返回。沒有 Wi-Fi 時無法開啟無線偵錯。",
+			"stepWifiTitle": "連線到 Wi-Fi",
+			"website": "網站"
 		},
 		"overlay": {
-			"notificationText": "追蹤中",
-			"notificationTitle": "Firestone 記牌器",
+			"notificationText": "正在記錄你的《爐石戰記》對局",
+			"notificationTitle": "Firestone 正在記錄",
 			"opponent": "對手",
 			"player": "你的牌組",
-			"unknownCard": "未知卡牌"
+			"unknownCard": "未知卡牌",
+			"format": {
+				"classic": "經典",
+				"twist": "扭曲",
+				"wild": "開放"
+			},
+			"league": {
+				"bronze": "青銅",
+				"diamond": "鑽石",
+				"gold": "黃金",
+				"platinum": "白金",
+				"silver": "白銀"
+			},
+			"mode": {
+				"arena": "競技場",
+				"arenaUnderground": "地下競技場",
+				"battlegrounds": "英雄戰場",
+				"battlegroundsDuo": "英雄戰場 雙打",
+				"battlegroundsFriendly": "英雄戰場",
+				"casual": "休閒",
+				"friendly": "好友賽局",
+				"legend": "傳說",
+				"mercenaries": "傭兵戰隊",
+				"practice": "練習",
+				"ranked": "排名模式",
+				"tavernBrawl": "旅店大亂鬥",
+				"unknown": "對局"
+			},
+			"readerAttached": "未連線",
+			"readerLogs": "沒有紀錄",
+			"readerSetup": "尚未設定",
+			"readerTracking": "記錄中",
+			"restartText": "Firestone 還原了一項《爐石戰記》只在啟動時讀取的設定。請完全結束《爐石戰記》後再開啟，對局才會繼續被記錄。",
+			"restartTitle": "重新啟動《爐石戰記》"
 		}
 	},
 	"app": {
-		"tray": {
-			"log-in": "登入",
-			"log-out": "登出 ({{username}})",
-			"main-window-requires-premium": "主視窗（需 Premium）",
-			"open-log-folder": "開啟日誌資料夾",
-			"premium-required-tooltip": "Firestone — 需要 Premium 帳號。請從選單登入。",
-			"settings-requires-premium": "設定（需 Premium）"
-		},
-		"updates": {
-			"standalone": {
-				"detail": "重新啟動 Firestone 以套用更新。",
-				"later": "稍後",
-				"message": "已下載新版本的 Firestone（{{version}}）。",
-				"restart": "重新啟動",
-				"title": "Firestone 更新"
+		"replays": {
+			"replay-info": {
+				"played-on-mobile": "在手機上遊玩"
 			}
 		}
-	},
-	"archetype": {
-		"astral-druid": "星體-德",
-		"boar-otk-druid": "野豬OTK-德",
-		"champions-druid": "艾澤拉斯的勇士-德",
-		"deios-rogue": "時空領主戴歐司-賊",
-		"divine-spirit-priest": "神聖之靈-牧",
-		"dragon-pirate-warrior": "龍海盜-戰",
-		"drake-warlock": "幼龍-術",
-		"exodia-mage": "禁忌序列-法",
-		"fatigue-dh": "疲勞-惡魔獵",
-		"gnoll-miracle-rogue": "豺狼人奇蹟-賊",
-		"harold-piglock": "預兆豬-術",
-		"harold-void-soul-dh": "預兆虛無靈魂-惡魔獵",
-		"hl-lc-quest-priest": "HL LC 任務-牧",
-		"hl-thief-rogue": "HL 偷偷-賊",
-		"hl-velarok-rogue": "HL 節奏(維拉若克)-賊",
-		"igneous-warrior": "火成熔岩吞噬者-戰",
-		"infinity-paladin": "無限-聖",
-		"jtu-quest-priest": "JTU 任務-牧",
-		"kingsbane-rogue": "弒君-賊",
-		"lc-quest-warrior": "LC 任務-戰",
-		"mechathun-paladin": "機神克蘇恩-聖",
-		"mill-rogue": "疲倦-賊",
-		"mine-rogue": "地雷-賊",
-		"naga-dh": "納迦-惡魔獵",
-		"odd-paladin": "奇數-聖",
-		"ohnahra-shaman": "雍亞拉-薩",
-		"pirate-burnlock": "海盜直傷-術",
-		"pirate-warrior": "海盜-戰",
-		"questline-warrior": "任務線-戰",
-		"sif-mage": "希芙-法",
-		"sneaky-ayaya-rogue": "偷偷阿雅-賊",
-		"sneaky-harold-rogue": "偷偷預兆-賊",
-		"sneaky-rogue": "偷偷-賊",
-		"star-grazer-druid": "噬星者-德",
-		"sulthraze-warrior": "蘇薩斯-戰",
-		"tyrande-priest": "泰蘭妲-牧",
-		"warsong-warrior": "戰歌-戰",
-		"xl-astral-druid": "XL 星體-德",
-		"xl-beetle-druid": "XL 甲蟲-德",
-		"xl-demon-boarlock": "XL 惡魔野豬-術",
-		"xl-egg-paladin": "XL 蛋-聖",
-		"xl-hl-big-spell-mage": "XL HL 大法術-法",
-		"xl-hl-exodia-paladin": "XL HL 四騎士-聖",
-		"xl-hl-lpg-mage": "XL HL LPG-法",
-		"xl-hl-questline-warrior": "XL HL 任務線-戰",
-		"xl-hl-rainbow-dk": "XL HL 彩虹-死騎",
-		"xl-hl-sou-quest-shaman": "XL HL SOU 任務-薩",
-		"xl-hl-thief-rogue": "XL HL 偷偷-賊",
-		"xl-igneous-odyn-warrior": "XL 打撈歐丁-戰",
-		"xl-kingsbane-rogue": "XL 弒君-賊",
-		"xl-lc-quest-priest": "XL LC 任務-牧",
-		"xl-lc-quest-shaman": "XL LC 任務-薩",
-		"xl-lc-quest-warrior": "XL LC 任務-戰",
-		"xl-questline-warrior": "XL 任務線-戰",
-		"xl-shudderwock-shaman": "XL 沙德沃克-薩",
-		"xl-tog-dh": "XL 國王-惡魔獵",
-		"xl-warlock": "XL 術"
-	},
-	"battlegrounds": {
-		"in-game": {
-			"dark-gifts": {
-				"reason": {
-					"lobby-no-aberration": "僅會在這場對局包含「變異怪」時出現",
-					"requires-activate": "僅會出現在[啟動]手下的選單中",
-					"requires-discards-this-game": "需要本賽局中曾棄掉過卡牌"
-				}
-			}
-		},
-		"sim": {
-			"cards-discarded-this-game": "本賽局已棄掉的卡牌",
-			"cards-discarded-this-game-tooltip": "本賽局你已棄掉的卡牌數量"
-		}
-	},
-	"bgs-comp": {
-		"aberration_deathrattle": "死聲流變異怪",
-		"aberration_discard": "棄掉流變異怪",
-		"dragon_shield": "聖盾流龍類",
-		"mech_glambot": "「Glambot」流機械",
-		"mech_volumizer": "「音量機兵」流機械"
 	},
 	"counters": {
-		"bgs-cards-discarded-this-game": {
-			"player": "本賽局你已棄掉 {{value}} 張卡牌"
+		"aqir-goliath": {
+			"player": "你本回合打出了 {{value}} 張連擊牌。亞基巨像的費用降低{{reduction}}點"
 		},
-		"bgs-deity": {
-			"player": "你的「{{cardName}}」體質是 {{atk}}/{{health}}"
+		"broodqueen-shakar": {
+			"player": "本回合還有 {{value}} 個友方隨從需要死亡"
+		},
+		"colossus-of-the-cold": {
+			"player": "寒冰巨像解凍前，法術還需要花費 {{value}} 點法力（已花費{{spent}}）"
+		},
+		"cthun-abilities": {
+			"player": "你本局已觸發克蘇恩的 4 項技能中的 {{value}} 項"
+		},
+		"ghuun-blood-runes": {
+			"player": "你本局打出了 {{value}} 個鮮血符文"
+		},
+		"nzoth-dreams-end": {
+			"player": "你本局召喚了 {{value}} 個亡語隨從。恩佐斯，夢境終結的費用為{{cost}}"
+		},
+		"uldir-runes": {
+			"player": "你本局打出了 3 種符文中的 {{value}} 種卡牌"
+		},
+		"yshaarj-titan-bane": {
+			"player": "本局隨從還需要花費 {{value}} 點法力（已花費{{spent}}）"
 		}
-	},
-	"twitch": {
-		"lease-held-text": "點選以開啟設定並從此電腦推送",
-		"lease-held-title": "另一台電腦正在此頻道推送"
 	}
 }

@@ -539,7 +539,8 @@
 				},
 				"watch-replay-in-app-button": "In der App",
 				"watch-replay-in-game-button": "Im Spiel",
-				"watch-replay-in-game-button-tooltip": "Aufzeichnung im Spiel ansehen (das Spiel muss laufen und der Replay-Viewer-Mod muss installiert sein)"
+				"watch-replay-in-game-button-tooltip": "Aufzeichnung im Spiel ansehen (das Spiel muss laufen und der Replay-Viewer-Mod muss installiert sein)",
+				"played-on-mobile": "Auf dem Handy gespielt"
 			}
 		},
 		"share": {
@@ -1786,6 +1787,30 @@
 		},
 		"bgs-deity": {
 			"player": "Deine {{cardName}} ist ein {{atk}}/{{health}}"
+		},
+		"aqir-goliath": {
+			"player": "Du hast in diesem Zug {{value}} Kombo-Karten ausgespielt. Aqir-Goliath kostet {{reduction}} weniger"
+		},
+		"broodqueen-shakar": {
+			"player": "Noch {{value}} befreundete Diener, die in diesem Zug sterben müssen"
+		},
+		"colossus-of-the-cold": {
+			"player": "Noch {{value}} Mana für Zauber, bevor Koloss der Kälte auftaut ({{spent}} ausgegeben)"
+		},
+		"cthun-abilities": {
+			"player": "Du hast in diesem Spiel {{value}} von 4 Fähigkeiten von C'Thun ausgelöst"
+		},
+		"ghuun-blood-runes": {
+			"player": "Du hast in diesem Spiel {{value}} Blutrunen ausgespielt"
+		},
+		"nzoth-dreams-end": {
+			"player": "Du hast in diesem Spiel {{value}} Todesröcheln-Diener herbeigerufen. N'Zoth, Traumende kostet {{cost}}"
+		},
+		"uldir-runes": {
+			"player": "Du hast in diesem Spiel Karten aus {{value}} von 3 Runenarten ausgespielt"
+		},
+		"yshaarj-titan-bane": {
+			"player": "Noch {{value}} Mana für Diener in diesem Spiel ({{spent}} ausgegeben)"
 		}
 	},
 	"decktracker": {
@@ -1864,7 +1889,10 @@
 			"void": "Die Leere"
 		},
 		"created-by-label": "Erstellt von",
-		"drawn-by-label": "Gezogen von"
+		"drawn-by-label": "Gezogen von",
+		"card-tooltip-assemble-body": "Diener",
+		"card-tooltip-assemble-first": "Erste Hälfte",
+		"card-tooltip-assemble-second": "Zweite Hälfte"
 	},
 	"duels": {
 		"deck-select": {
@@ -2148,7 +2176,23 @@
 					"weapons-equipped-label": "Ausgerüstete Waffen",
 					"weapons-equipped-tooltip": "Zeigt, wie viele Waffen du in diesem Spiel ausgerüstet hast",
 					"windrunner-sisters-label": "Windläufer-Schwestern",
-					"windrunner-sisters-tooltip": "Zeigt, welche der Windläufer-Schwestern du in diesem Spiel gespielt hast"
+					"windrunner-sisters-tooltip": "Zeigt, welche der Windläufer-Schwestern du in diesem Spiel gespielt hast",
+					"aqir-goliath-label": "Aqir-Goliath",
+					"aqir-goliath-tooltip": "Wenn du Aqir-Goliath in der Hand oder im Deck hast, zeige, wie viele Kombo-Karten du in diesem Zug gespielt hast",
+					"broodqueen-shakar-label": "Brutkönigin Sha'kar",
+					"broodqueen-shakar-tooltip": "Wenn du Brutkönigin Sha'kar in der Hand oder im Deck hast, zeige, wie viele befreundete Diener in diesem Zug noch sterben müssen",
+					"colossus-of-the-cold-label": "Koloss der Kälte",
+					"colossus-of-the-cold-tooltip": "Wenn du Koloss der Kälte in der Hand oder im Deck hast, zeige, wie viel Mana du noch für Zauber ausgeben musst",
+					"cthun-abilities-label": "C'Thuns Fähigkeiten",
+					"cthun-abilities-tooltip": "Wenn du C'Thun, Auge des Imperiums in der Hand oder im Deck hast, zeige, wie viele der vier Fähigkeiten du ausgelöst hast",
+					"ghuun-blood-runes-label": "G'huuns Blutrunen",
+					"ghuun-blood-runes-tooltip": "Wenn du G'huun in der Hand oder im Deck hast, zeige, wie viele Blutrunen du in diesem Spiel gespielt hast",
+					"nzoth-dreams-end-label": "N'Zoth, Traumende",
+					"nzoth-dreams-end-tooltip": "Wenn du N'Zoth, Traumende in der Hand oder im Deck hast, zeige, wie viele Todesröcheln-Diener du beschworen hast und was er aktuell kostet",
+					"uldir-runes-label": "Uldir-Quarantäne",
+					"uldir-runes-tooltip": "Wenn du Uldir-Quarantäne in der Hand oder im Deck hast, zeige, wie viele Runenarten du gespielt hast",
+					"yshaarj-titan-bane-label": "Y'Shaarj, Titanenbann",
+					"yshaarj-titan-bane-tooltip": "Wenn du Y'Shaarj, Titanenbann in der Hand oder im Deck hast, zeige, wie viel Mana du noch für Diener ausgeben musst"
 				},
 				"discovery-zone-tooltip": "Wenn aktiv, erscheint im Tracker ein neuer Abschnitt mit den Entdecken-Optionen, die dir angeboten werden. So siehst du verwandte Karten und Synergien mit deinem Deck.",
 				"special-zones-label": "Spezialzonen",
@@ -2203,7 +2247,8 @@
 				"unlink-overwolf-confirmation": "Sind Sie sicher?",
 				"unlink-overwolf-failed": "Overwolf konnte nicht getrennt werden. Versuche es später erneut.",
 				"unlink-overwolf-label": "Overwolf",
-				"unlink-overwolf-tooltip": "Trennt Overwolf von diesem Battle.net-Firestone-Konto. Jede Anmeldung zeigt dann nur noch den eigenen Spielverlauf."
+				"unlink-overwolf-tooltip": "Trennt Overwolf von diesem Battle.net-Firestone-Konto. Jede Anmeldung zeigt dann nur noch den eigenen Spielverlauf.",
+				"link-battlenet-failed": "Battle.net konnte nicht verknüpft werden. Versuch es später erneut."
 			},
 			"addons": {
 				"empty": "Keine Add-ons gefunden. Öffne den Ordner und lege ein Add-on-Paket dort ab.",
@@ -3241,6 +3286,63 @@
 			"in-game-replay": "Weiterleitung zu Firestone...",
 			"partner": "Weiterleitung...",
 			"premium-checkout": "Weiterleitung zu Firestone..."
+		},
+		"uninstall": {
+			"comment": {
+				"body": "Ein paar Worte genügen. Hinterlass einen Kontakt, wenn du eine Antwort möchtest.",
+				"contact-label": "E-Mail oder Discord (optional)",
+				"contact-placeholder": "E-Mail oder Discord-ID",
+				"placeholder": "Was ist passiert?",
+				"skip": "Überspringen",
+				"submit": "Senden",
+				"title": "Was sollten wir wissen?"
+			},
+			"competitor": {
+				"body": "Der Name genügt.",
+				"placeholder": "Name der App",
+				"submit": "Senden",
+				"title": "Zu welcher App wechselst du?"
+			},
+			"discord-cta": "Schreib uns auf Discord",
+			"discord-lead": "Kommst du nicht weiter?",
+			"document-title": "Firestone deinstallieren",
+			"faq": {
+				"body": "Wenn gar nichts erscheint, liegt es meist nur daran, dass das Hearthstone-Overlay in den Overwolf-Einstellungen nicht aktiv ist. Sieh dir bitte die FAQ unten an.",
+				"checklist": "FAQ öffnen",
+				"dismiss": "Schließen",
+				"title": "Ein paar einfache Schritte reichen meist"
+			},
+			"page-subtitle": "Wenn es dir nichts ausmacht, würden wir gern wissen, warum du deinstallierst. Es dauert nur ein paar Sekunden.",
+			"page-title": "Schade, dass du gehst",
+			"premium": {
+				"body": "Ein Premium-Abo schaltet die Werbung aus und öffnet die zusätzlichen Overlays und Statistiken.",
+				"cta": "Premium ansehen",
+				"dismiss": "Nein danke",
+				"title": "Premium entfernt die Werbung"
+			},
+			"reasons-label": "Bitte wähl den Hauptgrund.",
+			"reasons": {
+				"ads": "Die Werbung hat mich gestört",
+				"bugs": "Es hatte zu viele Fehler",
+				"competitor": "Ich wechsle zu einer anderen Desktop-App",
+				"didnt-work": "Es hat überhaupt nicht funktioniert",
+				"not-useful": "Ich habe es nicht nützlich gefunden",
+				"other": "Sonstiges",
+				"overwolf": "Die App hat mir gefallen, ich will nur Overwolf nicht nutzen",
+				"performance": "Ich hatte Leistungsprobleme",
+				"reinstall": "Ich hatte ein Problem und deinstalliere, um es zu beheben",
+				"stopped-playing": "Ich spiele kein Hearthstone mehr"
+			},
+			"standalone": {
+				"body": "Es gibt eine Version ohne Overwolf. Sie ist noch in der geschlossenen Beta, aber es ist dasselbe Firestone: Decktracker, Overlays und der Rest. Möchtest du sie ausprobieren?",
+				"cta": "Firestone Standalone herunterladen",
+				"dismiss": "Nein danke",
+				"title": "Firestone ohne Overwolf"
+			},
+			"thanks": {
+				"body": "Wir wünschen dir alles Gute und freuen uns, wenn du zurückkommst. Wenn du einen Kontakt hinterlassen hast, melden wir uns so schnell wie möglich.",
+				"title": "Danke, dass du es uns gesagt hast"
+			}
 		}
 	},
 	"widgets": {
@@ -3267,9 +3369,9 @@
 			"overlayPermission": "Anzeige über anderen Apps erlauben",
 			"overlayPermissionBody": "Die Deckliste ist nur zur Anzeige da und nimmt keine Tipps entgegen, die für Hearthstone gedacht sind. Ein kleiner Button zeigt oder verbirgt sie.",
 			"pairClose": "Schließen",
-			"pairHint": "Gib den 6-stelligen Code ein",
-			"pairNotReady": "Der Code-Bildschirm wurde geschlossen, bevor der Code gesendet wurde. Zeige den Code erneut, lass den Bildschirm offen und tippe die 6 Ziffern in die Firestone-Benachrichtigung.",
-			"pairWaiting": "Lass den Code auf dem Bildschirm und tippe die 6 Ziffern hier ein.",
+			"pairHint": "Kopplungscode hier eingeben",
+			"pairNotReady": "Der Code-Bildschirm wurde geschlossen, bevor der Code gesendet wurde. Zeig den Code erneut an, lass den Bildschirm offen und tippe auf der Firestone-Benachrichtigung auf „Code eingeben“.",
+			"pairWaiting": "Auf dieser Benachrichtigung erscheint eine Schaltfläche. Tippe darauf, um ein Textfeld zu öffnen. Lass den Kopplungsbildschirm offen.",
 			"pairWrongCode": "Dieser Code hat nicht funktioniert. Tippe den Code ein, der auf dem Bildschirm angezeigt wird.",
 			"progress": "Schritt {current} von {total}",
 			"readyBody": "Starte ein Hearthstone-Spiel. Die Deckliste erscheint über dem Match.",
@@ -3290,7 +3392,7 @@
 			"signedInNote": "Deine Spiele werden jetzt mit deinem Konto synchronisiert und können in der Desktop-App abgerufen werden.",
 			"stepAllowInstalls": "Tippe auf Weiter. Android öffnet eine Einstellung für Firestone. Schalte „Aus dieser Quelle zulassen“ ein und komm dann hierher zurück.",
 			"stepAllowInstallsTitle": "Installationen erlauben",
-			"stepDeveloper": "Tippe auf Weiter. Auf dem Bildschirm „Telefoninfo“ scrolle zu Build-Nummer und tippe 7 Mal darauf, bis das Telefon sagt, dass die Entwickleroptionen aktiv sind. Dann komm zurück.",
+			"stepDeveloper": "Tippe auf Weiter. Wenn die Entwickleroptionen schon an sind, öffnet sich dieser Bildschirm. Wenn nicht, öffnet sich der Bildschirm mit den Telefoninfos. Scrolle zu Build-Nummer und tippe 7-mal darauf, bis das Telefon meldet, dass die Entwickleroptionen an sind, und komm dann zurück.",
 			"stepDeveloperButton": "Telefoninfo öffnen",
 			"stepDeveloperTitle": "Entwickleroptionen aktivieren",
 			"stepGrant": "Tippe auf Weiter. Android fragt, ob Firestone den Helfer nutzen darf. Tippe auf Zulassen.",
@@ -3304,7 +3406,7 @@
 			"stepOverlay": "Tippe auf Weiter, damit Firestone über dem Spiel angezeigt werden darf. Finde Firestone in der Liste, die erscheint, und erlaube die Anzeige über anderen Apps. Dann komm hierher zurück.",
 			"stepOverlayButton": "Deckliste erlauben",
 			"stepOverlayTitle": "Firestone über dem Spiel anzeigen",
-			"stepPair": "Tippe auf Code anzeigen. Tippe auf „Drahtloses Debuggen“ und dann auf „Gerät mit Pairing-Code koppeln“. Lass diesen Bildschirm offen. Tippe auf die Firestone-Benachrichtigung und gib dort den 6-stelligen Code ein.",
+			"stepPair": "Der 6-stellige Code wird in der Firestone-Benachrichtigung eingegeben, nicht auf diesem Bildschirm und nicht in den Einstellungen. Tippe auf „Code anzeigen“. Tippe in den Einstellungen auf Drahtloses Debugging und dann auf Gerät mit Pairing-Code koppeln. Lass den Bildschirm offen. Tippe auf der Firestone-Benachrichtigung auf „Code eingeben“ und gib die 6 Ziffern in das Feld ein, das sich öffnet.",
 			"stepPairButton": "Code anzeigen",
 			"stepPairTitle": "Pairing-Code eingeben",
 			"stepStart": "Tippe auf Weiter, um den Helfer zu starten. Bleib auf diesem Bildschirm. Es dauert ein paar Sekunden. Falls ein Pairing-Code nötig ist, erklärt der nächste Schritt das.",
@@ -3313,14 +3415,63 @@
 			"stepWireless": "Tippe auf Weiter. Finde Drahtloses Debuggen und schalte den Schalter ein. Wenn das Telefon nach diesem WLAN fragt, erlaube es. Dann komm zurück.",
 			"stepWirelessButton": "Schalter öffnen",
 			"stepWirelessTitle": "Drahtloses Debuggen aktivieren",
-			"title": "Decktracker einrichten"
+			"title": "Decktracker einrichten",
+			"closeApp": "Firestone schließen",
+			"closeAppNote": "Das beendet die Aufzeichnung und entfernt den Hinweis. Wenn du die App über das Handy erzwingst, kann sie keinen eigenen Hinweis senden.",
+			"discord": "Discord",
+			"pairEnter": "Code eingeben",
+			"pairInputLabel": "6-stelliger Code",
+			"pairReady": "Tippe auf „Code eingeben“. Gib die 6 Ziffern in das Feld ein, das auf dieser Benachrichtigung erscheint. Geh erst zu Firestone zurück, wenn der Code gesendet wurde.",
+			"reportButton": "Bericht senden",
+			"reportFailed": "Der Bericht konnte nicht gesendet werden. Versuch es erneut, wenn du online bist.",
+			"reportHint": "Was ist schiefgelaufen?",
+			"reportSending": "Bericht wird gesendet…",
+			"reportSent": "Bericht gesendet. Danke.",
+			"reportTitle": "Fehler melden",
+			"stepDeveloperStillOff": "Die Entwickleroptionen sind noch aus. Tippe auf Weiter und dann auf dem Bildschirm mit den Telefoninfos 7-mal auf Build-Nummer.",
+			"stepWifi": "Tippe auf Weiter. Verbinde dich mit einem WLAN und komm dann zurück. Drahtloses Debugging lässt sich ohne WLAN nicht einschalten.",
+			"stepWifiTitle": "Mit WLAN verbinden",
+			"website": "Webseite"
 		},
 		"overlay": {
-			"notificationText": "Tracking läuft",
-			"notificationTitle": "Firestone-Decktracker",
+			"notificationText": "Deine Hearthstone-Spiele werden aufgezeichnet",
+			"notificationTitle": "Firestone zeichnet auf",
 			"opponent": "Gegner",
 			"player": "Dein Deck",
-			"unknownCard": "Unbekannte Karte"
+			"unknownCard": "Unbekannte Karte",
+			"format": {
+				"classic": "Klassik",
+				"twist": "Der Haken",
+				"wild": "Wild"
+			},
+			"league": {
+				"bronze": "Bronze",
+				"diamond": "Diamant",
+				"gold": "Gold",
+				"platinum": "Platin",
+				"silver": "Silber"
+			},
+			"mode": {
+				"arena": "Arena",
+				"arenaUnderground": "Arena Untergrund",
+				"battlegrounds": "Schlachtfeld",
+				"battlegroundsDuo": "Schlachtfeld: Duos",
+				"battlegroundsFriendly": "Schlachtfeld",
+				"casual": "Ungewertet",
+				"friendly": "Freundlich",
+				"legend": "Legende",
+				"mercenaries": "Söldner",
+				"practice": "Übung",
+				"ranked": "Gewertet",
+				"tavernBrawl": "Kartenchaos",
+				"unknown": "Spiel"
+			},
+			"readerAttached": "Nicht verbunden",
+			"readerLogs": "Keine Logs",
+			"readerSetup": "Nicht eingerichtet",
+			"readerTracking": "Aufzeichnung",
+			"restartText": "Firestone hat eine Einstellung wiederhergestellt, die Hearthstone nur beim Start liest. Beende Hearthstone vollständig und öffne es erneut, damit Spiele weiter aufgezeichnet werden.",
+			"restartTitle": "Hearthstone neu starten"
 		}
 	}
 }

@@ -93,7 +93,8 @@
 				"copy-link": "링크 복사",
 				"copy-link-tooltip": "다시 보기 링크 복사",
 				"copy-web-link": "웹 링크 복사",
-				"watch-replay-in-app-button": "앱에서"
+				"watch-replay-in-app-button": "앱에서",
+				"played-on-mobile": "모바일에서 플레이"
 			}
 		},
 		"tray": {
@@ -629,6 +630,30 @@
 		},
 		"bgs-deity": {
 			"player": "당신의 {{cardName}}은(는) {{atk}}/{{health}}입니다"
+		},
+		"aqir-goliath": {
+			"player": "이번 턴에 연계 카드를 {{value}}장 냈습니다. 아퀴르 골리앗의 비용이 {{reduction}} 감소합니다"
+		},
+		"broodqueen-shakar": {
+			"player": "이번 턴에 아군 하수인 {{value}}명이 더 죽어야 합니다"
+		},
+		"colossus-of-the-cold": {
+			"player": "냉기의 거신이 녹기 전에 주문에 쓸 마나가 {{value}} 남았습니다 ({{spent}} 사용)"
+		},
+		"cthun-abilities": {
+			"player": "이번 게임에서 크툰 능력 4개 중 {{value}}개를 발동했습니다"
+		},
+		"ghuun-blood-runes": {
+			"player": "이번 게임에서 혈기 룬을 {{value}}개 사용했습니다"
+		},
+		"nzoth-dreams-end": {
+			"player": "이번 게임에서 죽음의 메아리 하수인을 {{value}}명 소환했습니다. 느조스, 꿈의 끝 비용은 {{cost}}입니다"
+		},
+		"uldir-runes": {
+			"player": "이번 게임에서 룬 종류 3개 중 {{value}}개의 카드를 사용했습니다"
+		},
+		"yshaarj-titan-bane": {
+			"player": "이번 게임에서 하수인에 쓸 마나가 {{value}} 남았습니다 ({{spent}} 사용)"
 		}
 	},
 	"decktracker": {
@@ -677,7 +702,10 @@
 			"void": "공허"
 		},
 		"created-by-label": "생성한 이",
-		"drawn-by-label": "뽑은 이"
+		"drawn-by-label": "뽑은 이",
+		"card-tooltip-assemble-body": "하수인",
+		"card-tooltip-assemble-first": "앞부분",
+		"card-tooltip-assemble-second": "뒷부분"
 	},
 	"ftue": {
 		"experience": {
@@ -862,7 +890,23 @@
 					"totems-summoned-label": "소환한 토템",
 					"totems-summoned-tooltip": "이번 게임에서 소환한 토템 수를 표시합니다",
 					"weapons-equipped-label": "장착한 무기",
-					"weapons-equipped-tooltip": "이번 게임에서 장착한 무기 수를 표시합니다"
+					"weapons-equipped-tooltip": "이번 게임에서 장착한 무기 수를 표시합니다",
+					"aqir-goliath-label": "아퀴르 골리앗",
+					"aqir-goliath-tooltip": "아퀴르 골리앗이 손패나 덱에 있을 때, 이번 턴에 낸 연계 카드 수를 표시합니다",
+					"broodqueen-shakar-label": "무리의 여왕 샤카르",
+					"broodqueen-shakar-tooltip": "무리의 여왕 샤카르가 손패나 덱에 있을 때, 이번 턴에 아군 하수인이 몇 명 더 죽어야 하는지 표시합니다",
+					"colossus-of-the-cold-label": "냉기의 거신",
+					"colossus-of-the-cold-tooltip": "냉기의 거신이 손패나 덱에 있을 때, 얼음이 풀리기 전에 주문에 써야 할 마나가 얼마나 남았는지 표시합니다",
+					"cthun-abilities-label": "크툰 능력",
+					"cthun-abilities-tooltip": "크툰, 제국의 눈이 손패나 덱에 있을 때, 능력 4개 중 몇 개를 발동했는지 표시합니다",
+					"ghuun-blood-runes-label": "군 혈기 룬",
+					"ghuun-blood-runes-tooltip": "군이 손패나 덱에 있을 때, 이번 게임에서 사용한 혈기 룬 수를 표시합니다",
+					"nzoth-dreams-end-label": "느조스, 꿈의 끝",
+					"nzoth-dreams-end-tooltip": "느조스, 꿈의 끝이 손패나 덱에 있을 때, 소환한 죽음의 메아리 하수인 수와 현재 비용을 표시합니다",
+					"uldir-runes-label": "울디르 격리",
+					"uldir-runes-tooltip": "울디르 격리가 손패나 덱에 있을 때, 사용한 룬 종류의 수를 표시합니다",
+					"yshaarj-titan-bane-label": "이샤라즈, 티탄의 파멸",
+					"yshaarj-titan-bane-tooltip": "이샤라즈, 티탄의 파멸이 손패나 덱에 있을 때, 하수인에 써야 할 마나가 얼마나 남았는지 표시합니다"
 				},
 				"special-zones-label": "특수 구역",
 				"special-zones-tooltip": "켜면 트래커에 배신자 고드프리 또는 이리다 신시커가 다루는 카드용 새 구역이 나타납니다"
@@ -916,7 +960,8 @@
 				"unlink-overwolf-confirmation": "정말인가요?",
 				"unlink-overwolf-failed": "Overwolf 연결을 해제하지 못했습니다. 나중에 다시 시도해 주세요.",
 				"unlink-overwolf-label": "Overwolf",
-				"unlink-overwolf-tooltip": "이 Battle.net Firestone 계정에서 Overwolf를 분리합니다. 이후 각 로그인은 자신의 게임 기록만 보여 줍니다."
+				"unlink-overwolf-tooltip": "이 Battle.net Firestone 계정에서 Overwolf를 분리합니다. 이후 각 로그인은 자신의 게임 기록만 보여 줍니다.",
+				"link-battlenet-failed": "Battle.net 연동을 시작하지 못했습니다. 나중에 다시 시도하세요."
 			},
 			"addons": {
 				"empty": "애드온이 없습니다. 폴더를 열고 애드온 패키지를 넣으세요.",
@@ -1857,6 +1902,63 @@
 			"in-game-replay": "Firestone으로 이동하는 중...",
 			"partner": "이동하는 중...",
 			"premium-checkout": "Firestone으로 이동하는 중..."
+		},
+		"uninstall": {
+			"comment": {
+				"body": "몇 마디면 충분합니다. 답장을 원하면 연락처를 남겨 주세요.",
+				"contact-label": "이메일 또는 Discord (선택)",
+				"contact-placeholder": "이메일 또는 Discord ID",
+				"placeholder": "무슨 일이 있었나요?",
+				"skip": "건너뛰기",
+				"submit": "보내기",
+				"title": "무엇을 알려 주시겠어요?"
+			},
+			"competitor": {
+				"body": "이름만으로 충분합니다.",
+				"placeholder": "앱 이름",
+				"submit": "보내기",
+				"title": "어떤 앱으로 바꾸시나요?"
+			},
+			"discord-cta": "Discord로 문의",
+			"discord-lead": "아직도 막혔나요?",
+			"document-title": "Firestone 제거",
+			"faq": {
+				"body": "아무것도 보이지 않는다면, 보통 Overwolf 설정에서 하스스톤 오버레이만 켜면 됩니다. 아래 FAQ를 확인해 주세요.",
+				"checklist": "FAQ 열기",
+				"dismiss": "닫기",
+				"title": "간단한 단계만으로 해결되는 경우가 많습니다"
+			},
+			"page-subtitle": "괜찮으시다면 제거하는 이유를 알려 주세요. 몇 초면 됩니다.",
+			"page-title": "떠나신다니 아쉽습니다",
+			"premium": {
+				"body": "Premium 구독은 광고를 끄고 추가 오버레이와 통계를 엽니다.",
+				"cta": "Premium 보기",
+				"dismiss": "사양합니다",
+				"title": "Premium은 광고를 없앱니다"
+			},
+			"reasons-label": "주된 이유를 골라 주세요.",
+			"reasons": {
+				"ads": "광고가 거슬렸습니다",
+				"bugs": "버그가 너무 많았습니다",
+				"competitor": "다른 데스크톱 앱으로 바꿉니다",
+				"didnt-work": "전혀 작동하지 않았습니다",
+				"not-useful": "유용하지 않았습니다",
+				"other": "기타",
+				"overwolf": "앱은 마음에 들었지만 Overwolf는 쓰고 싶지 않습니다",
+				"performance": "성능 문제가 있었습니다",
+				"reinstall": "문제가 있어 고치려고 제거합니다",
+				"stopped-playing": "하스스톤을 그만뒀습니다"
+			},
+			"standalone": {
+				"body": "Overwolf가 필요 없는 버전이 있습니다. 아직 비공개 베타지만 같은 Firestone입니다. 덱 추적, 오버레이, 그 외 기능이 들어 있습니다. 사용해 보시겠어요?",
+				"cta": "Firestone Standalone 다운로드",
+				"dismiss": "사양합니다",
+				"title": "Overwolf 없는 Firestone"
+			},
+			"thanks": {
+				"body": "언제나 다시 오시기를 바랍니다. 연락처를 남기셨다면 가능한 한 빨리 답변드리겠습니다.",
+				"title": "알려 주셔서 감사합니다"
+			}
 		}
 	},
 	"widgets": {
@@ -1880,9 +1982,9 @@
 			"overlayPermission": "다른 앱 위에 표시 허용",
 			"overlayPermissionBody": "덱 목록은 표시만 하므로 Hearthstone을 위한 터치를 가로채지 않습니다. 작은 버튼으로 보이거나 숨길 수 있습니다.",
 			"pairClose": "닫기",
-			"pairHint": "6자리 코드를 입력하세요",
-			"pairNotReady": "코드가 보내지기 전에 코드 화면이 닫혔습니다. 코드를 다시 표시하고, 그 화면을 연 채로 두고, Firestone 알림에 6자리를 입력하세요.",
-			"pairWaiting": "코드를 화면에 둔 채로, 여기에 6자리를 입력하세요.",
+			"pairHint": "페어링 코드를 여기에 입력하세요",
+			"pairNotReady": "코드가 전송되기 전에 코드 화면이 닫혔습니다. 코드를 다시 표시하고 그 화면을 연 채로 Firestone 알림에서 코드 입력을 누르세요.",
+			"pairWaiting": "이 알림에 버튼이 나타납니다. 누르면 입력 칸이 열립니다. 페어링 화면은 열어 두세요.",
 			"pairWrongCode": "그 코드는 동작하지 않았습니다. 화면에 표시된 코드를 입력하세요.",
 			"progress": "{total}단계 중 {current}단계",
 			"readyBody": "Hearthstone 게임을 시작하세요. 덱 목록이 대전 위에 나타납니다.",
@@ -1903,7 +2005,7 @@
 			"signedInNote": "이제 게임이 계정과 동기화되며, 데스크톱 앱에서 가져올 수 있습니다.",
 			"stepAllowInstalls": "계속을 탭하세요. Android가 Firestone 설정을 엽니다. 이 출처 허용을 켠 뒤 여기로 돌아와 주세요.",
 			"stepAllowInstallsTitle": "설치 허용",
-			"stepDeveloper": "계속을 탭하세요. 휴대폰 정보 화면에서 빌드 번호까지 스크롤한 뒤 7번 탭하세요. 개발자 옵션이 켜졌다고 나오면 돌아와 주세요.",
+			"stepDeveloper": "계속을 누르세요. 개발자 옵션이 이미 켜져 있으면 그 화면이 열립니다. 꺼져 있으면 휴대전화 정보 화면이 열립니다. 빌드 번호까지 스크롤한 뒤, 개발자 옵션이 켜졌다는 안내가 나올 때까지 7번 누르고 돌아오세요.",
 			"stepDeveloperButton": "휴대폰 정보 열기",
 			"stepDeveloperTitle": "개발자 옵션 켜기",
 			"stepGrant": "계속을 탭하세요. Android가 Firestone이 도우미를 쓸 수 있는지 묻습니다. 허용을 탭하세요.",
@@ -1917,7 +2019,7 @@
 			"stepOverlay": "계속을 탭하여 Firestone이 게임 위에 표시되게 하세요. 나타나는 목록에서 Firestone을 찾아 다른 앱 위에 표시를 허용한 뒤 여기로 돌아와 주세요.",
 			"stepOverlayButton": "덱 목록 허용",
 			"stepOverlayTitle": "게임 위에 Firestone 표시",
-			"stepPair": "코드 표시를 탭하세요. \"무선 디버깅\"을 탭한 뒤 \"페어링 코드로 기기 페어링\"을 탭하세요. 그 화면을 연 채로 두세요. Firestone 알림을 탭하고 거기에 6자리 코드를 입력하세요.",
+			"stepPair": "6자리 코드는 이 화면이나 설정이 아니라 Firestone 알림에 입력합니다. 코드 표시를 누르세요. 설정에서 무선 디버깅을 누른 다음 페어링 코드로 기기 페어링을 누르세요. 그 화면을 열어 두세요. Firestone 알림에서 코드 입력을 누르고, 열리는 칸에 6자리를 입력하세요.",
 			"stepPairButton": "코드 표시",
 			"stepPairTitle": "페어링 코드 입력",
 			"stepStart": "계속을 탭하여 도우미를 시작하세요. 이 화면에 머무르세요. 몇 초 걸립니다. 페어링 코드가 필요하면 다음 단계에서 안내합니다.",
@@ -1926,14 +2028,63 @@
 			"stepWireless": "계속을 탭하세요. 무선 디버깅을 찾아 스위치를 켜세요. 이 Wi-Fi에 대해 물으면 허용하세요. 그런 다음 돌아와 주세요.",
 			"stepWirelessButton": "스위치 열기",
 			"stepWirelessTitle": "무선 디버깅 켜기",
-			"title": "덱 트래커 설정"
+			"title": "덱 트래커 설정",
+			"closeApp": "Firestone 닫기",
+			"closeAppNote": "추적을 멈추고 알림을 없앱니다. 휴대전화에서 앱을 강제로 닫으면 앱이 자체 알림을 보낼 수 없습니다.",
+			"discord": "Discord",
+			"pairEnter": "코드 입력",
+			"pairInputLabel": "6자리 코드",
+			"pairReady": "코드 입력을 누르세요. 이 알림에 열리는 칸에 6자리를 입력합니다. 코드가 전송될 때까지 Firestone으로 돌아가지 마세요.",
+			"reportButton": "보고서 보내기",
+			"reportFailed": "보고서를 보내지 못했습니다. 온라인이 되면 다시 시도하세요.",
+			"reportHint": "무엇이 잘못되었나요?",
+			"reportSending": "보고서를 보내는 중…",
+			"reportSent": "보고서를 보냈습니다. 감사합니다.",
+			"reportTitle": "버그 신고",
+			"stepDeveloperStillOff": "개발자 옵션이 아직 꺼져 있습니다. 계속을 누른 다음, 휴대전화 정보 화면에서 빌드 번호를 7번 누르세요.",
+			"stepWifi": "계속을 누르세요. Wi-Fi에 연결한 뒤 돌아오세요. 네트워크가 없으면 무선 디버깅을 켤 수 없습니다.",
+			"stepWifiTitle": "Wi-Fi에 연결",
+			"website": "웹사이트"
 		},
 		"overlay": {
-			"notificationText": "트래킹 중",
-			"notificationTitle": "Firestone 덱 트래커",
+			"notificationText": "하스스톤 게임을 기록하고 있습니다",
+			"notificationTitle": "Firestone이 추적 중",
 			"opponent": "상대방",
 			"player": "당신의 덱",
-			"unknownCard": "정체불명의 카드"
+			"unknownCard": "정체불명의 카드",
+			"format": {
+				"classic": "클래식",
+				"twist": "변칙",
+				"wild": "야생"
+			},
+			"league": {
+				"bronze": "브론즈",
+				"diamond": "다이아몬드",
+				"gold": "골드",
+				"platinum": "플래티넘",
+				"silver": "실버"
+			},
+			"mode": {
+				"arena": "투기장",
+				"arenaUnderground": "지하 투기장",
+				"battlegrounds": "전장",
+				"battlegroundsDuo": "태그 전장",
+				"battlegroundsFriendly": "전장",
+				"casual": "일반전",
+				"friendly": "친선전",
+				"legend": "전설",
+				"mercenaries": "용병단",
+				"practice": "연습",
+				"ranked": "등급전",
+				"tavernBrawl": "선술집 난투",
+				"unknown": "게임"
+			},
+			"readerAttached": "연결 안 됨",
+			"readerLogs": "로그 없음",
+			"readerSetup": "설정 안 됨",
+			"readerTracking": "추적 중",
+			"restartText": "Firestone이 하스스톤이 시작할 때만 읽는 설정을 되돌려 놓았습니다. 게임 기록을 계속하려면 하스스톤을 완전히 종료한 뒤 다시 여세요.",
+			"restartTitle": "하스스톤 다시 시작"
 		}
 	}
 }

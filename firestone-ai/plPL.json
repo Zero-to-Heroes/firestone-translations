@@ -94,7 +94,8 @@
 				"copy-link": "Kopiuj link",
 				"copy-link-tooltip": "Kopiuj link do powtórki",
 				"copy-web-link": "Kopiuj link internetowy",
-				"watch-replay-in-app-button": "W aplikacji"
+				"watch-replay-in-app-button": "W aplikacji",
+				"played-on-mobile": "Zagrano na urządzeniu mobilnym"
 			}
 		},
 		"tray": {
@@ -630,6 +631,30 @@
 		},
 		"bgs-deity": {
 			"player": "Twój {{cardName}} to {{atk}}/{{health}}"
+		},
+		"aqir-goliath": {
+			"player": "Zagrałeś w tej turze {{value}} kart z Kombo. Aqirski goliat kosztuje o {{reduction}} mniej"
+		},
+		"broodqueen-shakar": {
+			"player": "Jeszcze {{value}} przyjaznych sług musi zginąć w tej turze"
+		},
+		"colossus-of-the-cold": {
+			"player": "Zostało {{value}} many do wydania na zaklęcia, zanim Kolos Zimna się odmrozi (wydano {{spent}})"
+		},
+		"cthun-abilities": {
+			"player": "Uruchomiłeś {{value}} z 4 zdolności C'Thuna w tej grze"
+		},
+		"ghuun-blood-runes": {
+			"player": "Zagrałeś {{value}} run krwi w tej grze"
+		},
+		"nzoth-dreams-end": {
+			"player": "Przyzwałeś {{value}} sług z Ostatnim tchnieniem w tej grze. N'Zoth, Kres Snu kosztuje {{cost}}"
+		},
+		"uldir-runes": {
+			"player": "Zagrałeś karty z {{value}} z 3 rodzajów run w tej grze"
+		},
+		"yshaarj-titan-bane": {
+			"player": "Zostało {{value}} many do wydania na sługi w tej grze (wydano {{spent}})"
 		}
 	},
 	"decktracker": {
@@ -678,7 +703,10 @@
 			"void": "Pustka"
 		},
 		"created-by-label": "Utworzona przez",
-		"drawn-by-label": "Dobrana przez"
+		"drawn-by-label": "Dobrana przez",
+		"card-tooltip-assemble-body": "Stronnik",
+		"card-tooltip-assemble-first": "Pierwsza połowa",
+		"card-tooltip-assemble-second": "Druga połowa"
 	},
 	"ftue": {
 		"experience": {
@@ -865,7 +893,23 @@
 					"totems-summoned-label": "Przywołane Totemy",
 					"totems-summoned-tooltip": "Pokaż liczbę Totemów, które przywołałeś w tej grze",
 					"weapons-equipped-label": "Założone bronie",
-					"weapons-equipped-tooltip": "Pokaż liczbę broni, które założyłeś w tej grze"
+					"weapons-equipped-tooltip": "Pokaż liczbę broni, które założyłeś w tej grze",
+					"aqir-goliath-label": "Aqirski goliat",
+					"aqir-goliath-tooltip": "Gdy masz Aqirskiego goliata w ręce lub w talii, pokazuj, ile kart z Kombo zagrałeś w tej turze",
+					"broodqueen-shakar-label": "Królowa miotu Sha'kar",
+					"broodqueen-shakar-tooltip": "Gdy masz Królową miotu Sha'kar w ręce lub w talii, pokazuj, ile przyjaznych sług musi jeszcze zginąć w tej turze",
+					"colossus-of-the-cold-label": "Kolos Zimna",
+					"colossus-of-the-cold-tooltip": "Gdy masz Kolosa Zimna w ręce lub w talii, pokazuj, ile many musisz jeszcze wydać na zaklęcia",
+					"cthun-abilities-label": "Zdolności C'Thuna",
+					"cthun-abilities-tooltip": "Gdy masz C'Thuna, Oko Imperium w ręce lub w talii, pokazuj, ile z czterech zdolności uruchomiłeś",
+					"ghuun-blood-runes-label": "Runy krwi G'huuna",
+					"ghuun-blood-runes-tooltip": "Gdy masz G'huuna w ręce lub w talii, pokazuj, ile run krwi zagrałeś w tej grze",
+					"nzoth-dreams-end-label": "N'Zoth, Kres Snu",
+					"nzoth-dreams-end-tooltip": "Gdy masz N'Zotha, Kres Snu w ręce lub w talii, pokazuj, ile sług z Ostatnim tchnieniem przyzwałeś i jaki jest jego aktualny koszt",
+					"uldir-runes-label": "Kwarantanna Uldiru",
+					"uldir-runes-tooltip": "Gdy masz Kwarantannę Uldiru w ręce lub w talii, pokazuj, ile rodzajów run zagrałeś",
+					"yshaarj-titan-bane-label": "Y'Shaarj, Zguba Tytanów",
+					"yshaarj-titan-bane-tooltip": "Gdy masz Y'Shaarja, Zgubę Tytanów w ręce lub w talii, pokazuj, ile many musisz jeszcze wydać na sługi"
 				},
 				"special-zones-label": "Strefy specjalne",
 				"special-zones-tooltip": "Gdy aktywne, w trackerze pojawia się nowa sekcja dla kart obsługiwanych przez Godfreya Zdrajcę lub Iridę Sinseeker"
@@ -919,7 +963,8 @@
 				"unlink-overwolf-confirmation": "Czy na pewno?",
 				"unlink-overwolf-failed": "Nie udało się odłączyć Overwolf. Spróbuj ponownie później.",
 				"unlink-overwolf-label": "Overwolf",
-				"unlink-overwolf-tooltip": "Odłącz Overwolf od tego konta Battle.net Firestone. Każde logowanie będzie wtedy pokazywać tylko własną historię gier."
+				"unlink-overwolf-tooltip": "Odłącz Overwolf od tego konta Battle.net Firestone. Każde logowanie będzie wtedy pokazywać tylko własną historię gier.",
+				"link-battlenet-failed": "Nie udało się rozpocząć łączenia z Battle.net. Spróbuj ponownie później."
 			},
 			"addons": {
 				"empty": "Nie znaleziono dodatków. Otwórz folder i wrzuć tam pakiet dodatku.",
@@ -1860,6 +1905,63 @@
 			"in-game-replay": "Przekierowanie do Firestone...",
 			"partner": "Przekierowanie...",
 			"premium-checkout": "Przekierowanie do Firestone..."
+		},
+		"uninstall": {
+			"comment": {
+				"body": "Wystarczy kilka słów. Zostaw kontakt, jeśli chcesz odpowiedzi.",
+				"contact-label": "E-mail lub Discord (opcjonalnie)",
+				"contact-placeholder": "e-mail lub ID Discord",
+				"placeholder": "Co się stało?",
+				"skip": "Pomiń",
+				"submit": "Wyślij",
+				"title": "Co powinniśmy wiedzieć?"
+			},
+			"competitor": {
+				"body": "Wystarczy nazwa.",
+				"placeholder": "Nazwa aplikacji",
+				"submit": "Wyślij",
+				"title": "Na jaką aplikację się przenosisz?"
+			},
+			"discord-cta": "Napisz do nas na Discordzie",
+			"discord-lead": "Nadal utknąłeś?",
+			"document-title": "Odinstaluj Firestone",
+			"faq": {
+				"body": "Jeśli nic się nie pojawia, zwykle wystarczy włączyć nakładkę Hearthstone w ustawieniach Overwolf. Zobacz FAQ poniżej.",
+				"checklist": "Otwórz FAQ",
+				"dismiss": "Zamknij",
+				"title": "Zwykle wystarczy kilka prostych kroków"
+			},
+			"page-subtitle": "Jeśli nie masz nic przeciwko, chcielibyśmy wiedzieć, dlaczego odinstalowujesz. Zajmie to tylko kilka sekund.",
+			"page-title": "Przykro nam, że odchodzisz",
+			"premium": {
+				"body": "Subskrypcja Premium wyłącza reklamy i odblokowuje dodatkowe nakładki oraz statystyki.",
+				"cta": "Zobacz Premium",
+				"dismiss": "Nie, dziękuję",
+				"title": "Premium usuwa reklamy"
+			},
+			"reasons-label": "Wybierz główny powód.",
+			"reasons": {
+				"ads": "Reklamy mi przeszkadzały",
+				"bugs": "Było za dużo błędów",
+				"competitor": "Przechodzę na inną aplikację na komputer",
+				"didnt-work": "W ogóle nie działało",
+				"not-useful": "Nie było dla mnie przydatne",
+				"other": "Inne",
+				"overwolf": "Aplikacja mi się podobała, po prostu nie chcę używać Overwolf",
+				"performance": "Miałem problemy z wydajnością",
+				"reinstall": "Miałem problem i odinstalowuję, żeby spróbować go naprawić",
+				"stopped-playing": "Przestałem grać w Hearthstone"
+			},
+			"standalone": {
+				"body": "Jest wersja, która nie wymaga Overwolf. Nadal jest w zamkniętej becie, ale to ten sam Firestone: śledzenie talii, nakładki i reszta. Chcesz ją wypróbować?",
+				"cta": "Pobierz Firestone Standalone",
+				"dismiss": "Nie, dziękuję",
+				"title": "Firestone bez Overwolf"
+			},
+			"thanks": {
+				"body": "Życzymy wszystkiego dobrego i czekamy na twój powrót. Jeśli zostawiłeś kontakt, odezwiemy się tak szybko, jak to możliwe.",
+				"title": "Dziękujemy, że nam powiedziałeś"
+			}
 		}
 	},
 	"widgets": {
@@ -1883,9 +1985,9 @@
 			"overlayPermission": "Zezwól na wyświetlanie nad innymi aplikacjami",
 			"overlayPermissionBody": "Lista talii jest tylko do podglądu, więc nie przechwytuje stuknięć przeznaczonych dla Hearthstone. Mały przycisk ją pokazuje lub ukrywa.",
 			"pairClose": "Zamknij",
-			"pairHint": "Wpisz 6-cyfrowy kod",
-			"pairNotReady": "Ekran z kodem zamknął się, zanim kod został wysłany. Pokaż kod ponownie, zostaw ten ekran otwarty i wpisz 6 cyfr w powiadomieniu Firestone.",
-			"pairWaiting": "Zostaw kod na ekranie, a potem wpisz tutaj 6 cyfr.",
+			"pairHint": "Wpisz tutaj kod parowania",
+			"pairNotReady": "Ekran kodu zamknął się, zanim kod został wysłany. Pokaż kod ponownie, zostaw ten ekran otwarty i stuknij Wpisz kod w powiadomieniu Firestone.",
+			"pairWaiting": "Na tym powiadomieniu pojawi się przycisk. Stuknij go, aby otworzyć pole tekstowe. Zostaw ekran parowania otwarty.",
 			"pairWrongCode": "Ten kod nie zadziałał. Wpisz kod widoczny na ekranie.",
 			"progress": "Krok {current} z {total}",
 			"readyBody": "Zacznij grę w Hearthstone. Lista talii pojawi się nad meczem.",
@@ -1906,7 +2008,7 @@
 			"signedInNote": "Twoje gry są teraz synchronizowane z kontem i można je odzyskać w aplikacji desktopowej.",
 			"stepAllowInstalls": "Dotknij Kontynuuj. Android otworzy ustawienie dla Firestone. Włącz Zezwalaj z tego źródła i wróć tutaj.",
 			"stepAllowInstallsTitle": "Zezwól na instalacje",
-			"stepDeveloper": "Dotknij Kontynuuj. Na ekranie informacji o telefonie przewiń do Numer kompilacji i stuknij go 7 razy, aż telefon powie, że opcje programistyczne są włączone. Potem wróć.",
+			"stepDeveloper": "Stuknij Kontynuuj. Jeśli opcje programisty są już włączone, otworzy się ten ekran. Jeśli nie, otworzy się ekran informacji o telefonie. Przewiń do Numer kompilacji i stuknij go 7 razy, aż telefon powie, że opcje programisty są włączone, a potem wróć.",
 			"stepDeveloperButton": "Otwórz informacje o telefonie",
 			"stepDeveloperTitle": "Włącz opcje programistyczne",
 			"stepGrant": "Dotknij Kontynuuj. Android zapyta, czy Firestone może używać pomocnika. Dotknij Zezwól.",
@@ -1920,7 +2022,7 @@
 			"stepOverlay": "Dotknij Kontynuuj, żeby Firestone mogło pokazywać się nad grą. Znajdź Firestone na liście, która się pojawi, i zezwól na wyświetlanie nad innymi aplikacjami. Potem wróć tutaj.",
 			"stepOverlayButton": "Zezwól na listę talii",
 			"stepOverlayTitle": "Pokaż Firestone nad grą",
-			"stepPair": "Dotknij Pokaż kod. Dotknij „Debugowanie bezprzewodowe”, a potem „Sparuj urządzenie za pomocą kodu parowania”. Zostaw ten ekran otwarty. Dotknij powiadomienia Firestone i wpisz tam 6-cyfrowy kod.",
+			"stepPair": "6-cyfrowy kod wpisuje się w powiadomieniu Firestone, nie na tym ekranie i nie w Ustawieniach. Stuknij Pokaż kod. W Ustawieniach stuknij Debugowanie bezprzewodowe, a potem Sparuj urządzenie przy użyciu kodu parowania. Zostaw ten ekran otwarty. W powiadomieniu Firestone stuknij Wpisz kod i wpisz 6 cyfr w polu, które się otworzy.",
 			"stepPairButton": "Pokaż kod",
 			"stepPairTitle": "Wpisz kod parowania",
 			"stepStart": "Dotknij Kontynuuj, żeby uruchomić pomocnika. Zostań na tym ekranie. To zajmie kilka sekund. Jeśli będzie potrzebny kod parowania, wyjaśni to następny krok.",
@@ -1929,14 +2031,63 @@
 			"stepWireless": "Dotknij Kontynuuj. Znajdź Debugowanie bezprzewodowe i włącz przełącznik. Jeśli telefon zapyta o tę sieć Wi-Fi, zezwól. Potem wróć.",
 			"stepWirelessButton": "Otwórz przełącznik",
 			"stepWirelessTitle": "Włącz debugowanie bezprzewodowe",
-			"title": "Skonfiguruj Talia Tracker"
+			"title": "Skonfiguruj Talia Tracker",
+			"closeApp": "Zamknij Firestone",
+			"closeAppNote": "To zatrzymuje śledzenie i usuwa powiadomienie. Wymuszenie zamknięcia aplikacji z telefonu nie może wysłać własnego powiadomienia.",
+			"discord": "Discord",
+			"pairEnter": "Wpisz kod",
+			"pairInputLabel": "6-cyfrowy kod",
+			"pairReady": "Stuknij Wpisz kod. Wpisz 6 cyfr w polu, które otworzy się na tym powiadomieniu. Nie wracaj do Firestone, dopóki kod nie zostanie wysłany.",
+			"reportButton": "Wyślij zgłoszenie",
+			"reportFailed": "Nie udało się wysłać zgłoszenia. Spróbuj ponownie, gdy będziesz online.",
+			"reportHint": "Co poszło nie tak?",
+			"reportSending": "Wysyłanie zgłoszenia…",
+			"reportSent": "Zgłoszenie wysłane. Dziękujemy.",
+			"reportTitle": "Zgłoś błąd",
+			"stepDeveloperStillOff": "Opcje programisty są wciąż wyłączone. Stuknij Kontynuuj, a potem stuknij Numer kompilacji 7 razy na ekranie informacji o telefonie.",
+			"stepWifi": "Stuknij Kontynuuj. Połącz się z siecią Wi-Fi, a potem wróć. Debugowania bezprzewodowego nie da się włączyć bez sieci.",
+			"stepWifiTitle": "Połącz z Wi-Fi",
+			"website": "Strona"
 		},
 		"overlay": {
-			"notificationText": "Śledzenie w toku",
-			"notificationTitle": "Talia Tracker Firestone",
+			"notificationText": "Twoje gry w Hearthstone są nagrywane",
+			"notificationTitle": "Firestone śledzi",
 			"opponent": "Przeciwnik",
 			"player": "Twoja talia",
-			"unknownCard": "Nieznana karta"
+			"unknownCard": "Nieznana karta",
+			"format": {
+				"classic": "Klasyk",
+				"twist": "Przeplatanka",
+				"wild": "Dzicz"
+			},
+			"league": {
+				"bronze": "Brąz",
+				"diamond": "Diament",
+				"gold": "Złoto",
+				"platinum": "Platyna",
+				"silver": "Srebro"
+			},
+			"mode": {
+				"arena": "Arena",
+				"arenaUnderground": "Arena Podziemna",
+				"battlegrounds": "Ustawka",
+				"battlegroundsDuo": "Ustawka w duecie",
+				"battlegroundsFriendly": "Ustawka",
+				"casual": "Rozrywka",
+				"friendly": "Przyjacielska",
+				"legend": "Legenda",
+				"mercenaries": "Najemnicy",
+				"practice": "Trening",
+				"ranked": "Rankingowa",
+				"tavernBrawl": "Karczemna bójka",
+				"unknown": "Gra"
+			},
+			"readerAttached": "Niepodłączony",
+			"readerLogs": "Brak logów",
+			"readerSetup": "Nieskonfigurowany",
+			"readerTracking": "Śledzenie",
+			"restartText": "Firestone przywrócił ustawienie, które Hearthstone odczytuje tylko przy starcie. Zamknij Hearthstone całkowicie i otwórz je ponownie, żeby gry nadal były nagrywane.",
+			"restartTitle": "Uruchom ponownie Hearthstone"
 		}
 	}
 }

@@ -94,7 +94,8 @@
 				"copy-link": "Copiar link",
 				"copy-link-tooltip": "Copiar link do replay",
 				"copy-web-link": "Copiar link da web",
-				"watch-replay-in-app-button": "No app"
+				"watch-replay-in-app-button": "No app",
+				"played-on-mobile": "Jogada no celular"
 			}
 		},
 		"tray": {
@@ -630,6 +631,30 @@
 		},
 		"bgs-deity": {
 			"player": "Seu {{cardName}} é um {{atk}}/{{health}}"
+		},
+		"aqir-goliath": {
+			"player": "Você jogou {{value}} cartas de Combo neste turno. Golias Aqir custa {{reduction}} a menos"
+		},
+		"broodqueen-shakar": {
+			"player": "Ainda faltam {{value}} lacaios aliados morrerem neste turno"
+		},
+		"colossus-of-the-cold": {
+			"player": "Faltam {{value}} de mana para gastar em feitiços antes de o Colosso do Frio descongelar ({{spent}} gasto)"
+		},
+		"cthun-abilities": {
+			"player": "Você ativou {{value}} de 4 habilidades de C'Thun nesta partida"
+		},
+		"ghuun-blood-runes": {
+			"player": "Você jogou {{value}} runas de sangue nesta partida"
+		},
+		"nzoth-dreams-end": {
+			"player": "Você invocou {{value}} lacaios com Último Suspiro nesta partida. N'Zoth, Fim do Sonho custa {{cost}}"
+		},
+		"uldir-runes": {
+			"player": "Você jogou cartas de {{value}} de 3 tipos de runa nesta partida"
+		},
+		"yshaarj-titan-bane": {
+			"player": "Faltam {{value}} de mana para gastar em lacaios nesta partida ({{spent}} gasto)"
 		}
 	},
 	"decktracker": {
@@ -678,7 +703,10 @@
 			"void": "O Vazio"
 		},
 		"created-by-label": "Criada por",
-		"drawn-by-label": "Comprada por"
+		"drawn-by-label": "Comprada por",
+		"card-tooltip-assemble-body": "Lacaio",
+		"card-tooltip-assemble-first": "Primeira metade",
+		"card-tooltip-assemble-second": "Segunda metade"
 	},
 	"ftue": {
 		"experience": {
@@ -865,7 +893,23 @@
 					"totems-summoned-label": "Totens Evocados",
 					"totems-summoned-tooltip": "Mostrar o número de Totens que você evocou nesta partida",
 					"weapons-equipped-label": "Armas Equipadas",
-					"weapons-equipped-tooltip": "Mostrar o número de armas que você equipou nesta partida"
+					"weapons-equipped-tooltip": "Mostrar o número de armas que você equipou nesta partida",
+					"aqir-goliath-label": "Golias Aqir",
+					"aqir-goliath-tooltip": "Quando você tem Golias Aqir na mão ou no baralho, mostra quantas cartas de Combo você jogou neste turno",
+					"broodqueen-shakar-label": "Rainha da ninhada Sha'kar",
+					"broodqueen-shakar-tooltip": "Quando você tem Rainha da ninhada Sha'kar na mão ou no baralho, mostra quantos lacaios aliados ainda precisam morrer neste turno",
+					"colossus-of-the-cold-label": "Colosso do Frio",
+					"colossus-of-the-cold-tooltip": "Quando você tem Colosso do Frio na mão ou no baralho, mostra quanto de mana ainda falta gastar em feitiços",
+					"cthun-abilities-label": "Habilidades de C'Thun",
+					"cthun-abilities-tooltip": "Quando você tem C'Thun, Olho do Império na mão ou no baralho, mostra quantas das quatro habilidades você ativou",
+					"ghuun-blood-runes-label": "Runas de sangue de G'huun",
+					"ghuun-blood-runes-tooltip": "Quando você tem G'huun na mão ou no baralho, mostra quantas runas de sangue você jogou nesta partida",
+					"nzoth-dreams-end-label": "N'Zoth, Fim do Sonho",
+					"nzoth-dreams-end-tooltip": "Quando você tem N'Zoth, Fim do Sonho na mão ou no baralho, mostra quantos lacaios com Último Suspiro você invocou e o custo atual",
+					"uldir-runes-label": "Quarentena de Uldir",
+					"uldir-runes-tooltip": "Quando você tem Quarentena de Uldir na mão ou no baralho, mostra quantos tipos de runa você jogou",
+					"yshaarj-titan-bane-label": "Y'Shaarj, Ruína dos Titãs",
+					"yshaarj-titan-bane-tooltip": "Quando você tem Y'Shaarj, Ruína dos Titãs na mão ou no baralho, mostra quanto de mana ainda falta gastar em lacaios"
 				},
 				"special-zones-label": "Zonas Especiais",
 				"special-zones-tooltip": "Quando ativo, uma nova seção aparece no tracker para cartas tratadas por Godfrey the Betrayer ou Irida Sinseeker"
@@ -919,7 +963,8 @@
 				"unlink-overwolf-confirmation": "Tem certeza?",
 				"unlink-overwolf-failed": "Não foi possível desvincular o Overwolf. Tente novamente mais tarde.",
 				"unlink-overwolf-label": "Overwolf",
-				"unlink-overwolf-tooltip": "Desconectar o Overwolf desta conta Firestone do Battle.net. Cada login passará a mostrar só o próprio histórico de partidas."
+				"unlink-overwolf-tooltip": "Desconectar o Overwolf desta conta Firestone do Battle.net. Cada login passará a mostrar só o próprio histórico de partidas.",
+				"link-battlenet-failed": "Não foi possível iniciar a vinculação com a Battle.net. Tente de novo mais tarde."
 			},
 			"addons": {
 				"empty": "Nenhum add-on encontrado. Abra a pasta e coloque um pacote de add-on lá.",
@@ -1860,6 +1905,63 @@
 			"in-game-replay": "Redirecionando para o Firestone...",
 			"partner": "Redirecionando...",
 			"premium-checkout": "Redirecionando para o Firestone..."
+		},
+		"uninstall": {
+			"comment": {
+				"body": "Algumas palavras bastam. Deixe um contato se quiser uma resposta.",
+				"contact-label": "E-mail ou Discord (opcional)",
+				"contact-placeholder": "e-mail ou ID do Discord",
+				"placeholder": "O que aconteceu?",
+				"skip": "Pular",
+				"submit": "Enviar",
+				"title": "O que devemos saber?"
+			},
+			"competitor": {
+				"body": "O nome basta.",
+				"placeholder": "Nome do app",
+				"submit": "Enviar",
+				"title": "Para qual app você está mudando?"
+			},
+			"discord-cta": "Fale conosco no Discord",
+			"discord-lead": "Ainda travou?",
+			"document-title": "Desinstalar o Firestone",
+			"faq": {
+				"body": "Se nada aparecer, em geral basta ativar a sobreposição do Hearthstone nas configurações do Overwolf. Veja as perguntas frequentes abaixo.",
+				"checklist": "Abrir as FAQ",
+				"dismiss": "Fechar",
+				"title": "Alguns passos simples costumam resolver"
+			},
+			"page-subtitle": "Se não se importar, gostaríamos de saber por que você está desinstalando. Leva só alguns segundos.",
+			"page-title": "Sentimos muito em ver você ir",
+			"premium": {
+				"body": "Uma assinatura Premium desliga os anúncios e libera as sobreposições e estatísticas extras.",
+				"cta": "Ver Premium",
+				"dismiss": "Não, obrigado",
+				"title": "O Premium remove os anúncios"
+			},
+			"reasons-label": "Escolha o motivo principal.",
+			"reasons": {
+				"ads": "Os anúncios me incomodavam",
+				"bugs": "Tinha bugs demais",
+				"competitor": "Estou mudando para outro app de computador",
+				"didnt-work": "Não funcionou de jeito nenhum",
+				"not-useful": "Não achei útil",
+				"other": "Outro",
+				"overwolf": "Gostei do app, só não quero usar o Overwolf",
+				"performance": "Tive problemas de desempenho",
+				"reinstall": "Tive um problema e estou desinstalando para tentar corrigir",
+				"stopped-playing": "Parei de jogar Hearthstone"
+			},
+			"standalone": {
+				"body": "Existe uma versão que não precisa do Overwolf. Ela ainda está em beta fechado, mas é o mesmo Firestone: rastreador de baralho, sobreposições e o resto. Quer experimentar?",
+				"cta": "Baixar o Firestone Standalone",
+				"dismiss": "Não, obrigado",
+				"title": "Firestone sem Overwolf"
+			},
+			"thanks": {
+				"body": "Desejamos tudo de bom e vamos receber você de volta quando quiser. Se deixou um contato, responderemos o quanto antes.",
+				"title": "Obrigado por nos contar"
+			}
 		}
 	},
 	"widgets": {
@@ -1883,9 +1985,9 @@
 			"overlayPermission": "Permitir exibição sobre outros apps",
 			"overlayPermissionBody": "A lista do deck é só visual, então não captura toques destinados ao Hearthstone. Um botão pequeno a mostra ou oculta.",
 			"pairClose": "Fechar",
-			"pairHint": "Digite o código de 6 dígitos",
-			"pairNotReady": "A tela do código fechou antes de o código ser enviado. Mostre o código de novo, deixe essa tela aberta e digite os 6 dígitos na notificação do Firestone.",
-			"pairWaiting": "Deixe o código na tela e depois digite os 6 dígitos aqui.",
+			"pairHint": "Insira o código de pareamento aqui",
+			"pairNotReady": "A tela do código fechou antes do envio. Mostre o código de novo, deixe essa tela aberta e toque em Inserir código na notificação do Firestone.",
+			"pairWaiting": "Um botão vai aparecer nesta notificação. Toque nele para abrir uma caixa de texto. Deixe a tela de pareamento aberta.",
 			"pairWrongCode": "Esse código não funcionou. Digite o código mostrado na tela.",
 			"progress": "Passo {current} de {total}",
 			"readyBody": "Inicie uma partida de Hearthstone. A lista do deck aparece sobre o combate.",
@@ -1906,7 +2008,7 @@
 			"signedInNote": "Suas partidas agora são sincronizadas com a sua conta e podem ser recuperadas no aplicativo de desktop.",
 			"stepAllowInstalls": "Toque em Continuar. O Android abre uma configuração do Firestone. Ative Permitir desta fonte e depois volte aqui.",
 			"stepAllowInstallsTitle": "Permitir instalações",
-			"stepDeveloper": "Toque em Continuar. Na tela de informações do celular, role até Número da versão e toque 7 vezes, até o celular informar que as opções do desenvolvedor estão ativas. Depois volte.",
+			"stepDeveloper": "Toque em Continuar. Se as opções do desenvolvedor já estiverem ativadas, essa tela abre. Se não estiverem, a tela de informações do telefone abre. Role até Número da versão e toque nele 7 vezes, até o telefone dizer que as opções do desenvolvedor estão ativadas, e depois volte.",
 			"stepDeveloperButton": "Abrir informações do celular",
 			"stepDeveloperTitle": "Ativar opções do desenvolvedor",
 			"stepGrant": "Toque em Continuar. O Android vai perguntar se o Firestone pode usar o auxiliar. Toque em Permitir.",
@@ -1920,7 +2022,7 @@
 			"stepOverlay": "Toque em Continuar para o Firestone aparecer sobre o jogo. Encontre o Firestone na lista que vai aparecer e permita que ele seja exibido sobre outros apps. Depois volte aqui.",
 			"stepOverlayButton": "Permitir a lista do deck",
 			"stepOverlayTitle": "Mostrar o Firestone sobre o jogo",
-			"stepPair": "Toque em Mostrar o código. Toque em \"Depuração sem fio\" e depois em \"Emparelhar dispositivo com código de emparelhamento\". Deixe essa tela aberta. Toque na notificação do Firestone e digite o código de 6 dígitos lá.",
+			"stepPair": "O código de 6 dígitos é digitado na notificação do Firestone, não nesta tela e não em Configurações. Toque em Mostrar o código. Em Configurações, toque em Depuração por Wi-Fi e depois em Parear dispositivo com código de pareamento. Deixe essa tela aberta. Na notificação do Firestone, toque em Inserir código e digite os 6 dígitos na caixa que abrir.",
 			"stepPairButton": "Mostrar o código",
 			"stepPairTitle": "Digite o código de emparelhamento",
 			"stepStart": "Toque em Continuar para iniciar o auxiliar. Permaneça nesta tela. Leva alguns segundos. Se for preciso um código de emparelhamento, o próximo passo explica.",
@@ -1929,14 +2031,63 @@
 			"stepWireless": "Toque em Continuar. Encontre Depuração sem fio e ligue o interruptor. Se o celular perguntar sobre este Wi-Fi, permita. Depois volte.",
 			"stepWirelessButton": "Abrir o interruptor",
 			"stepWirelessTitle": "Ativar a depuração sem fio",
-			"title": "Configurar o deck tracker"
+			"title": "Configurar o deck tracker",
+			"closeApp": "Fechar Firestone",
+			"closeAppNote": "Isso interrompe o rastreamento e remove o aviso. Forçar o fechamento do app pelo celular não consegue enviar um aviso próprio.",
+			"discord": "Discord",
+			"pairEnter": "Inserir código",
+			"pairInputLabel": "Código de 6 dígitos",
+			"pairReady": "Toque em Inserir código. Digite os 6 dígitos na caixa que abre nesta notificação. Não volte ao Firestone até o código ser enviado.",
+			"reportButton": "Enviar relatório",
+			"reportFailed": "Não foi possível enviar o relatório. Tente de novo quando estiver online.",
+			"reportHint": "O que deu errado?",
+			"reportSending": "Enviando o relatório…",
+			"reportSent": "Relatório enviado. Obrigado.",
+			"reportTitle": "Reportar um bug",
+			"stepDeveloperStillOff": "As opções do desenvolvedor ainda estão desativadas. Toque em Continuar e depois toque em Número da versão 7 vezes na tela de informações do telefone.",
+			"stepWifi": "Toque em Continuar. Entre em uma rede Wi-Fi e depois volte. A depuração por Wi-Fi não pode ser ativada sem uma rede.",
+			"stepWifiTitle": "Conectar ao Wi-Fi",
+			"website": "Site"
 		},
 		"overlay": {
-			"notificationText": "Rastreamento em andamento",
-			"notificationTitle": "Deck tracker do Firestone",
+			"notificationText": "Suas partidas de Hearthstone estão sendo gravadas",
+			"notificationTitle": "Firestone está gravando",
 			"opponent": "Oponente",
 			"player": "Seu deck",
-			"unknownCard": "Carta desconhecida"
+			"unknownCard": "Carta desconhecida",
+			"format": {
+				"classic": "Clássico",
+				"twist": "Alternativo",
+				"wild": "Livre"
+			},
+			"league": {
+				"bronze": "Bronze",
+				"diamond": "Diamante",
+				"gold": "Ouro",
+				"platinum": "Platina",
+				"silver": "Prata"
+			},
+			"mode": {
+				"arena": "Arena",
+				"arenaUnderground": "Arena Subterrânea",
+				"battlegrounds": "Campos de Batalha",
+				"battlegroundsDuo": "Campos de Batalha em Duo",
+				"battlegroundsFriendly": "Campos de Batalha",
+				"casual": "Casual",
+				"friendly": "Amistoso",
+				"legend": "Lenda",
+				"mercenaries": "Mercenários",
+				"practice": "Praticar",
+				"ranked": "Ranqueada",
+				"tavernBrawl": "Contenda de Taverna",
+				"unknown": "Jogo"
+			},
+			"readerAttached": "Não conectado",
+			"readerLogs": "Sem logs",
+			"readerSetup": "Não configurado",
+			"readerTracking": "Rastreando",
+			"restartText": "O Firestone restaurou uma configuração que o Hearthstone só lê na inicialização. Feche o Hearthstone por completo e abra de novo para que as partidas continuem sendo gravadas.",
+			"restartTitle": "Reiniciar o Hearthstone"
 		}
 	}
 }
