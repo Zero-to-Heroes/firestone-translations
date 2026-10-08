@@ -1986,7 +1986,8 @@
                 "copy-web-link": "复制网页链接",
                 "watch-replay-in-app-button": "在应用程序中",
                 "copy-in-game-link": "复制游戏内链接",
-                "copy-link-tooltip": "复制回放链接"
+                "copy-link-tooltip": "复制回放链接",
+                "played-on-mobile": "在手机上玩"
             },
             "class-icon-toggle": {
                 "label": "使用职业图标",
@@ -2878,6 +2879,30 @@
         },
         "bgs-deity": {
             "player": "你的{{cardName}}是{{atk}}/{{health}}"
+        },
+        "uldir-runes": {
+            "player": "你在本局对战中已使用过{{value}}种符文类型的卡牌，共3种"
+        },
+        "aqir-goliath": {
+            "player": "你在本回合已使用{{value}}张连击牌。“亚基巨怪”的法力值消耗减少{{reduction}}点。"
+        },
+        "nzoth-dreams-end": {
+            "player": "你在本局对战中已召唤了{{value}}个亡语随从。“恩佐斯，梦境之末”的法力值消耗为{{cost}}"
+        },
+        "ghuun-blood-runes": {
+            "player": "你在本局对战中已使用{{value}}张鲜血符文牌。"
+        },
+        "cthun-abilities": {
+            "player": "你在本局对战中已触发克苏恩的4个技能中的{{value}}个"
+        },
+        "broodqueen-shakar": {
+            "player": "本回合还需有{{value}}个友方随从死亡"
+        },
+        "yshaarj-titan-bane": {
+            "player": "本局对战中还需在随从牌上消耗{{value}}点法力值（已消耗{{spent}}点）"
+        },
+        "colossus-of-the-cold": {
+            "player": "冰寒巨人守护者解冻前，还需在法术牌上消耗{{value}}点法力值（已消耗{{spent}}点）"
         }
     },
     "loading": {
@@ -3269,7 +3294,10 @@
         "prepared-tooltip": "这张卡已“预备”，法力值消耗为{{value}}点",
         "card-mulliganed-away": "已换牌",
         "created-by-label": "创建者",
-        "drawn-by-label": "抽取者"
+        "drawn-by-label": "抽取者",
+        "card-tooltip-assemble-first": "前半",
+        "card-tooltip-assemble-body": "随从",
+        "card-tooltip-assemble-second": "后半"
     },
     "battlegrounds": {
         "menu": {
@@ -4412,7 +4440,8 @@
                 "perks-lottery-detail": "积分仍然在本地累积；登录以同步它们并在赛季结束时进入抽奖。",
                 "perks-replays-detail": "没有账号，回放文件将在60天后被删除。",
                 "perks-history-title": "你的对局记录会保留在云端",
-                "perks-history-detail": "未关联账号的对局记录大约会在一年后自动清除。"
+                "perks-history-detail": "未关联账号的对局记录大约会在一年后自动清除。",
+                "link-battlenet-failed": "无法开始关联 Battle.net 账号，请稍后重试。"
             },
             "hotkeys": {
                 "title": "快捷键",
@@ -4871,7 +4900,20 @@
                     "flesh-giant-tooltip": "当你的手牌或牌库中有血肉巨人时，显示你的英雄的生命值在你的回合中变化了多少次",
                     "cthun-abilities-label": "克苏恩的技能",
                     "aqir-goliath-label": "亚基巨怪",
-                    "broodqueen-shakar-label": "巢穴女王沙卡尔"
+                    "broodqueen-shakar-label": "巢穴女王沙卡尔",
+                    "cthun-abilities-tooltip": "当“克苏恩，帝国之眼”在你的手牌或牌库中时，显示你已触发其四种技能中的几种。",
+                    "colossus-of-the-cold-tooltip": "当“伊希斯特”在你的手牌或牌库中时，显示还需消耗多少法力值用于施放法术牌。",
+                    "uldir-runes-tooltip": "当“奥迪尔隔离区”在你的手牌或牌库中时，显示你已使用过的符文类型数量。",
+                    "colossus-of-the-cold-label": "冰寒巨人守护者",
+                    "ghuun-blood-runes-label": "戈霍恩鲜血符文",
+                    "nzoth-dreams-end-label": "恩佐斯，梦境之末",
+                    "uldir-runes-label": "奥迪尔隔离区",
+                    "aqir-goliath-tooltip": "当“亚基巨怪”在你的手牌或牌库中时，显示你本回合已使用的连击牌数量。",
+                    "broodqueen-shakar-tooltip": "当“巢穴女王沙卡尔”在你的手牌或牌库中时，显示本回合还需要有多少个友方随从死亡。",
+                    "ghuun-blood-runes-tooltip": "当“戈霍恩”在你的手牌或牌库中时，显示你在本局对战中已使用的鲜血符文数量。",
+                    "nzoth-dreams-end-tooltip": "当“恩佐斯，梦境之末”在你的手牌或牌库中时，显示你在本局对战中已召唤的亡语随从数量，以及它当前的法力值消耗。",
+                    "yshaarj-titan-bane-tooltip": "当“亚煞极，泰坦杀神”在你的手牌或牌库中时，显示还需在随从牌上消耗多少法力值。",
+                    "yshaarj-titan-bane-label": "亚煞极，泰坦杀神"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。",
@@ -6166,13 +6208,59 @@
         },
         "uninstall": {
             "premium": {
-                "body": "订阅会员即可关闭广告，并解锁额外的游戏内浮窗和统计数据。"
+                "body": "订阅会员即可关闭广告，并解锁额外的游戏内浮窗和统计数据。",
+                "dismiss": "不用了，谢谢",
+                "title": "开通会员可去除广告",
+                "cta": "查看高级会员"
             },
             "comment": {
-                "body": "简单说说原因即可。如果希望我们回复，请留下联系方式。"
+                "body": "简单说说原因即可。如果希望我们回复，请留下联系方式。",
+                "contact-label": "电子邮箱或 Discord（选填）",
+                "submit": "发送",
+                "skip": "跳过",
+                "placeholder": "出什么问题了？",
+                "title": "有什么想告诉我们的吗？",
+                "contact-placeholder": "电子邮箱或 Discord ID"
             },
             "competitor": {
-                "placeholder": "应用名"
+                "placeholder": "应用名",
+                "submit": "发送",
+                "body": "提供名字即可。",
+                "title": "您准备改用哪个应用？"
+            },
+            "reasons": {
+                "overwolf": "我挺喜欢这个应用，只是不想使用 Overwolf",
+                "competitor": "改用其他桌面应用了",
+                "not-useful": "我觉得它对我没什么帮助",
+                "reinstall": "我遇到了问题，想尝试卸载后重新安装来解决",
+                "performance": "我遇到了性能问题",
+                "didnt-work": "完全不起作用",
+                "bugs": "Bug 有点太多了",
+                "other": "其他",
+                "stopped-playing": "已经不玩炉石传说了",
+                "ads": "广告让我觉得很烦"
+            },
+            "faq": {
+                "body": "如果完全没有显示内容，通常只需在 Overwolf 设置中启用《炉石传说》悬浮窗即可。请查看下方的常见问题解答。",
+                "dismiss": "关闭",
+                "checklist": "打开常见问题",
+                "title": "通常只需几个简单步骤就能解决问题。"
+            },
+            "standalone": {
+                "body": "有一个无需 Overwolf 的版本，目前仍处于封闭测试阶段，但功能和 Firestone 一样，包括记牌器、浮窗等。想要试试吗？",
+                "cta": "下载 Firestone 独立版",
+                "title": "无需 Overwolf 的 Firestone",
+                "dismiss": "不用了，谢谢"
+            },
+            "page-subtitle": "如果愿意的话欢迎告诉我们您卸载的原因，只需花几秒钟。",
+            "reasons-label": "请选择主要原因。",
+            "document-title": "卸载 Firestone",
+            "page-title": "很遗憾您的离开",
+            "discord-cta": "欢迎通过 Discord 联系我们",
+            "discord-lead": "问题还卡在那吗？",
+            "thanks": {
+                "title": "感谢您告诉我们",
+                "body": "祝您一切顺利，欢迎随时回来。如果您留下了联系方式，我们会尽快回复。"
             }
         }
     },
@@ -7199,7 +7287,7 @@
             "progress": "第{current}步，共{total}步",
             "stepDeveloperButton": "打开设备信息",
             "title": "设置记牌器",
-            "pairHint": "输入6位数代码",
+            "pairHint": "在此处输入配对码",
             "stepPairTitle": "输入配对码",
             "stepGrantButton": "允许 Firestone",
             "overlayPermission": "允许显示在其他应用上层",
@@ -7226,8 +7314,8 @@
             "stepNearby": "点击“继续”。Android 会询问是否允许 Firestone 查找此手机上的无线调试服务，请点击“允许”。",
             "stepInstalling": "点击“继续”。Android 会提示安装 Firestone 所需的助手程序。确认安装后，返回此页面。",
             "stepWireless": "点击“继续”。找到“无线调试”并开启开关。如果手机询问是否允许在当前 Wi-Fi 网络下使用，请选择“允许”，然后返回此页面。",
-            "stepDeveloper": "点击“继续”。在手机信息页面中，向下滚动找到“版本号”，连续点击 7 次，直到手机提示已开启开发者选项，然后返回此页面。",
-            "stepPair": "点击“显示配对码”。进入“无线调试”，再点击“使用配对码配对设备”。保持该页面打开，然后点击 Firestone 通知，在其中输入显示的 6 位配对码。",
+            "stepDeveloper": "点击“继续”。如果已开启开发者选项，系统会直接打开对应页面。如果尚未开启，则会打开手机信息页面。滚动找到“版本号”并连续点击 7 次，直到手机提示开发者选项已开启，然后返回。",
+            "stepPair": "6 位配对码要输入到 Firestone 通知中，不是在此页面或“设置”中输入。点击“显示配对码”。在“设置”中点击“无线调试”，然后点击“使用配对码配对设备”，并保持该页面开启。在 Firestone 通知上点击“输入代码”，再将 6 位数字输入弹出的输入框中。",
             "stepDeveloperTitle": "开启开发者选项",
             "stepWirelessTitle": "开启无线调试",
             "signedInNote": "你的对局现已同步至账号，可在桌面应用中查看。",
@@ -7240,32 +7328,66 @@
             "stepGrant": "点击“继续”。Android 会询问是否允许 Firestone 使用助手程序，请点击“允许”。",
             "signInBody": "点击以使用 Battle.net 登录，这样就能将所有对局保存到你的 Firestone 账户。你的 Battle.net 账户信息不会与 Firestone 共享。",
             "pairWrongCode": "配对码无效。请输入屏幕上显示的配对码。",
-            "pairNotReady": "配对码页面在提交前关闭了。请重新显示配对码并保持该页面打开，然后在 Firestone 通知中输入这 6 位数字。",
+            "pairNotReady": "配对码页面在提交前关闭了。请重新显示配对码并保持该页面打开，然后在 Firestone 通知中点击“输入代码”。",
             "overlayPermissionBody": "套牌列表仅供查看，不会拦截你在炉石传说中的点击。你可以通过一个小按钮显示或隐藏它。",
             "stepUnsupported": "此 Android 版本无法运行记牌器。",
             "readyTitle": "记牌器正在运行",
             "closeApp": "关闭 Firestone",
-            "pairInputLabel": "6 位数代码"
+            "pairInputLabel": "6 位数代码",
+            "reportSending": "正在发送报告…",
+            "pairReady": "点击“输入代码”，在打开的通知输入框中输入这 6 位数字。代码发送前，请不要返回 Firestone。",
+            "closeAppNote": "这会停止追踪并移除通知。从手机上强行关闭应用时，应用无法自行发送通知。",
+            "stepWifiTitle": "连接 Wi-Fi",
+            "stepDeveloperStillOff": "开发者选项尚未开启。请点击“继续”，然后在设备信息页面连续点击“版本号”7 次。",
+            "pairEnter": "输入代码",
+            "stepWifi": "点击“继续”，连接 Wi-Fi 网络后再返回。未连接 Wi-Fi 时无法开启无线调试。",
+            "discord": "Discord",
+            "reportTitle": "提交错误",
+            "reportSent": "报告已发送，谢谢。",
+            "reportButton": "发送报告",
+            "reportFailed": "报告发送失败。请在联网后重试。",
+            "website": "网站",
+            "reportHint": "哪里出了问题？"
         },
         "overlay": {
-            "notificationTitle": "Firestone 记牌器",
+            "notificationTitle": "Firestone 正在记牌",
             "opponent": "对手",
             "player": "你的套牌",
             "unknownCard": "未知卡牌",
-            "notificationText": "记牌器运行中",
+            "notificationText": "正在记录你的《炉石传说》对局",
             "mode": {
                 "arena": "竞技模式",
                 "battlegrounds": "酒馆战棋",
                 "battlegroundsFriendly": "酒馆战棋",
                 "battlegroundsDuo": "战棋双打",
-                "casual": "休闲模式"
+                "casual": "休闲模式",
+                "friendly": "好友对战",
+                "unknown": "对局",
+                "legend": "传说",
+                "mercenaries": "佣兵战纪",
+                "practice": "练习模式",
+                "ranked": "天梯模式",
+                "tavernBrawl": "乱斗模式",
+                "arenaUnderground": "地下竞技场"
             },
             "league": {
-                "bronze": "青铜"
+                "bronze": "青铜",
+                "diamond": "钻石",
+                "gold": "金币",
+                "platinum": "白金",
+                "silver": "白银"
             },
             "format": {
-                "classic": "经典模式"
-            }
+                "classic": "经典模式",
+                "twist": "幻变模式",
+                "wild": "狂野模式"
+            },
+            "restartText": "Firestone 已恢复一项炉石传说仅在启动时读取的设置。请完全退出并重新打开游戏，以便继续记录对局。",
+            "readerLogs": "无日志",
+            "readerAttached": "未关联",
+            "readerSetup": "未设置",
+            "restartTitle": "重启炉石传说",
+            "readerTracking": "记牌中"
         }
     }
 }
