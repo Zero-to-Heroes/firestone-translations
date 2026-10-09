@@ -1351,7 +1351,7 @@
                 },
                 "rank": {
                     "all": "不限分段",
-                    "percentile": "前 {{percentile}}% ({{mmr}}+)"
+                    "percentile": "前{{percentile}}% ({{mmr}}+)"
                 },
                 "rank-group": {
                     "per-match": "显示每一场对战",
@@ -2141,7 +2141,7 @@
                     "nagasPlayed-tooltip": "打出纳迦来获取点数（{{pointsGained}}点）",
                     "undeadPlayed-label": "打出的亡灵",
                     "undeadPlayed-tooltip": "打出亡灵来获取点数（{{pointsGained}}点）",
-                    "spellsPlayed-label": "打出的法术",
+                    "spellsPlayed-label": "已施放的法术",
                     "spellsPlayed-tooltip": "打出法术来获取点数（{{pointsGained}}点）",
                     "damageWithSpells-label": "使用法术造成伤害",
                     "damageWithSpells-tooltip": "使用法术造成伤害来获取点数（{{pointsGained}}点）"
@@ -2366,7 +2366,7 @@
             "player": "你使用过{{value}}张圣骑士牌，光鳐当前法力值消耗{{lightray}}"
         },
         "naga-giant": {
-            "player": "你的纳迦巨人法力值消耗：{{cost}}（本局对战你已使用法术：{{spells}}个，总消耗：{{spellsMana}} ）"
+            "player": "你的“纳迦巨人”法力值消耗：{{cost}}（本局对战你已使用法术：{{spells}}个，总消耗：{{spellsMana}} ）"
         },
         "menagerie": {
             "player": "你已使用过的随从类型数：{{value}}"
@@ -2432,8 +2432,8 @@
             "opponent": "你给对手的“深渊诅咒”层数：{{value}} 。对手在下回合开始时受到诅咒伤害：{{totalDamageFromCursesInHand}}"
         },
         "galakrond": {
-            "player": "你已祈求“迦拉克隆”：{{value}}次",
-            "opponent": "对手已祈求“迦拉克隆”：{{value}}次"
+            "player": "你已祈求“迦拉克隆”{{value}}次",
+            "opponent": "对手已祈求“迦拉克隆”{{value}}次"
         },
         "hero-power-damage": {
             "player": "你的英雄技能累计造成伤害：{{value}}",
@@ -2536,7 +2536,7 @@
         },
         "cards-played-from-another-class": {
             "player": "你已使用了{{value}}张另一职业的卡牌",
-            "opponent": "对手已打出了{{value}}张另一职业的卡牌"
+            "opponent": "对手已使用过{{value}}张另一职业的卡牌"
         },
         "queensguard": {
             "player": "你本回合已使用法术牌数量：{{value}}",
@@ -2645,7 +2645,7 @@
         },
         "card-name-played": {
             "player": "本局对战中你已经使用了{{times}}张“{{cardName}}”",
-            "opponent": "本局对战中对手已经打出了{{times}}张“{{cardName}}”"
+            "opponent": "本局对战中对手已经使用了{{times}}张“{{cardName}}”"
         },
         "colossus-damage": {
             "player": "你的“巨像”会造成 1 + {{value}} 点伤害两次",
@@ -2668,16 +2668,16 @@
             "opponent": "对手在本局对战中已完成“{{cardName}}”任务{{value}}次"
         },
         "dark-gifts": {
-            "player": "你在本局对战中已打出过 {{value}} 种不同的黑暗之赐卡牌",
-            "opponent": "对手在本局对战中已打出过 {{value}} 种不同的黑暗之赐卡牌"
+            "player": "你在本局对战中已使用过{{value}}种不同的黑暗之赐卡牌",
+            "opponent": "对手在本局对战中已使用过{{value}}种不同的黑暗之赐卡牌"
         },
         "corpses": {
             "opponent": "对手目前有 {{value}} 份残骸",
             "player": "你目前有{{value}}份残骸"
         },
         "outcast": {
-            "player": "本局对战中你已打出过{{value}}次流放卡",
-            "opponent": "本局对战中对手已打出过{{value}}次流放卡"
+            "player": "本局对战中你已使用过{{value}}次流放卡",
+            "opponent": "本局对战中对手已使用过{{value}}次流放卡"
         },
         "kiljaeden": {
             "player": "你的“{{cardName}}”属性强化效果为+{{value}} / +{{value}}",
@@ -2691,8 +2691,8 @@
             "opponent": "对手的随从拥有+{{value}}攻击力"
         },
         "rafaam-time": {
-            "player": "你在本局对战中打出了{{unique}}个不同的拉法姆（共{{total}}个）",
-            "opponent": "对手在本局对战中打出了{{unique}}个不同的拉法姆（共{{total}}个）",
+            "player": "你在本局对战中使用过{{unique}}个不同的拉法姆（共{{total}}个）",
+            "opponent": "对手在本局对战中使用了{{unique}}个不同的拉法姆（共{{total}}个）",
             "title": "拉法姆"
         },
         "bgs-undead-army": {
@@ -2712,7 +2712,7 @@
             "player": "你的扩音机在本局对战中获得+{{atk}}/+{{health}}"
         },
         "dragoncaller-alanna": {
-            "player": "你在本局对战中已打出{{value}}次消耗5点及以上法力值的法术"
+            "player": "你在本局对战中已使用过{{value}}次消耗5点及以上法力值的法术"
         },
         "grouped": {
             "title": "计数器",
@@ -2741,16 +2741,16 @@
         },
         "windrunner-sisters": {
             "title": "风行者姐妹",
-            "player": "你在本局对战中已打出过这些风行者姐妹",
-            "opponent": "对手在本局对战中已打出过这些风行者姐妹"
+            "player": "你在本局对战中已使用过这些风行者姐妹",
+            "opponent": "对手在本局对战中已使用过这些风行者姐妹"
         },
         "cards-discarded": {
             "player": "你在本局对战中已经弃掉了{{value}}张卡牌",
             "opponent": "对手在本局对战中已经弃掉了{{value}}张卡牌"
         },
         "fel-spells": {
-            "player": "你在本局对战中已经打出了{{value}}个邪能法术",
-            "opponent": "对手在本局对战中已经打出了{{value}}个邪能法术"
+            "player": "你在本局对战中已经施放了{{value}}个邪能法术",
+            "opponent": "对手在本局对战中已经施放了{{value}}个邪能法术"
         },
         "friendly-attacks": {
             "player": "你的友方角色在本局对战中已经攻击了{{value}}次",
@@ -2761,8 +2761,8 @@
             "player": "你在本局对战中已经兆示了{{value}}次"
         },
         "overload-cards-played": {
-            "player": "你在本局对战中已经打出了{{value}}张过载卡牌",
-            "opponent": "对手在本局对战中已经打出了{{value}}张过载卡牌"
+            "player": "你在本局对战中已经使用了{{value}}张过载卡牌",
+            "opponent": "对手在本局对战中已经使用了{{value}}张过载卡牌"
         },
         "shirvallah": {
             "player": "你在本局对战中已经消耗了{{value}}点法力值。“西瓦尔拉，猛虎之神”目前消耗{{cost}}点法力值"
@@ -2771,8 +2771,8 @@
             "player": "本局对战中你的奥秘已触发了{{value}}次"
         },
         "freebird": {
-            "player": "你在本局对战中已经打出了{{value}}张“自由飞鸟”",
-            "opponent": "对手在本局对战中已经打出了{{value}}张“自由飞鸟”"
+            "player": "你在本局对战中已经使用了{{value}}张“自由飞鸟”",
+            "opponent": "对手在本局对战中已经使用了{{value}}张“自由飞鸟”"
         },
         "frost-spells": {
             "opponent": "对手在本局对战中已经施放了{{value}}个冰霜法术",
@@ -2868,7 +2868,7 @@
             "opponent": "对手在本局对战中使用了{{value}}个法力值消耗为2点的卡牌"
         },
         "tasty-lobster-buff": {
-            "player": "你的美味龙虾死亡时给予 +{{atk}}/+{{health}}"
+            "player": "你的“美味龙虾”死亡时给予 +{{atk}}/+{{health}}"
         },
         "flesh-giant": {
             "player": "你的英雄的生命值在你的回合中变化了{{times}}次",
@@ -3348,7 +3348,7 @@
             "add-minion-button-tooltip": "点击添加一个随从",
             "update-minion-button-tooltip": "选择其他随从替换此随从",
             "remove-minion-button-tooltip": "移除随从",
-            "versus": "VS",
+            "versus": "对阵",
             "simulate-button": "模拟",
             "simulating-button": "正在模拟对战...",
             "simulate-button-tooltip": "以新站位模拟上场战斗",
@@ -3469,7 +3469,7 @@
             "goldrinn-attack-tooltip": "巨狼戈德林为下一次战斗提供的额外攻击力",
             "goldrinn-health-tooltip": "巨狼戈德林为下一次战斗提供的额外生命值",
             "deep-blues": "深沉蓝调",
-            "deep-blues-tooltip": "你在本局对战中打出了多少次深沉蓝调",
+            "deep-blues-tooltip": "你在本局对战中已施放了多少次“深沉蓝调”",
             "volumizer-attack-buff-tooltip": "你的扩音机获得的额外攻击力",
             "volumizer-health-buff-tooltip": "你的扩音机获得的额外生命值",
             "volumizer-attack-buff": "扩音机攻击力加成",
@@ -3483,11 +3483,11 @@
             "deathrattles-triggered-this-game-tooltip": "本局游戏中你共触发了多少次亡语效果（随从、法术等）",
             "tavern-spells-cast-this-turn-tooltip": "在本回合招募阶段中，你施放了多少个酒馆法术",
             "mrrgltons-played-this-game-tooltip": "你在本局对战中使用过多少个莫格顿家族随从（莫格顿大妈/莫格顿老爹强化）",
-            "cards-played-this-turn": "本回合已打出的卡牌",
+            "cards-played-this-turn": "本回合使用过的卡牌",
             "mrrgltons-played-this-game": "本局对战中使用过的莫格顿家族鱼人",
             "back-to-back-cast-this-game": "本局对战中施放“背靠背”的次数",
             "back-to-back-cast-this-game-tooltip": "你在本局对战中施放了多少次酒馆法术“背靠背”",
-            "cards-played-this-turn-tooltip": "你在本回合招募阶段中打出了多少张牌",
+            "cards-played-this-turn-tooltip": "你在本回合招募阶段中使用了多少张牌",
             "undead-army-health-tooltip": "你的亡灵随从的额外生命值",
             "undead-army-health": "亡灵大军生命值",
             "tasty-lobsters-buff-tooltip": "美味龙虾的亡语在本局对战中已经触发过多少次（下一个龙虾亡语会 +1）",
@@ -3495,9 +3495,9 @@
             "eternal-knight-attack-buff-tooltip": "本局对战中你的“永恒骑士”获得的固定攻击力加成（例如来自永恒肖像）",
             "eternal-knight-attack-buff": "永恒骑士攻击力",
             "eternal-knight-health-buff": "永恒骑士生命值",
-            "golden-minions-played-this-game": "已打出的金色随从",
+            "golden-minions-played-this-game": "使用过的金色随从",
             "eternal-knight-health-buff-tooltip": "本局对战中你的“永恒骑士”获得的固定生命值加成（例如来自永恒肖像）",
-            "golden-minions-played-this-game-tooltip": "你在本局对战中打出的金色随从数量",
+            "golden-minions-played-this-game-tooltip": "你在本局对战中使用过的金色随从数量",
             "cards-discarded-this-game": "本局对战中弃掉的卡牌",
             "cards-discarded-this-game-tooltip": "你在本局对战中弃掉了多少卡牌"
         },
@@ -3543,7 +3543,7 @@
             },
             "opponents": {
                 "title": "所有英雄",
-                "next-opponent-title": "第 {{turn}} 回合 - 下个对手",
+                "next-opponent-title": "第{{turn}}回合 - 下个对手",
                 "empty-state-title": "暂无记录",
                 "empty-state-subtitle": "选择一个英雄，等待您的对手！",
                 "score-board-title": "计分板",
@@ -3558,7 +3558,7 @@
                 "triple-empty-state": "没有新的三连",
                 "buddies-title": "获得伙伴",
                 "buddies-empty-state": "没有伙伴",
-                "buddy-text": "第 {{turn}} 回合",
+                "buddy-text": "第{{turn}}回合",
                 "buddy-tooltip": "在第 {{turn}} 回合获得第一个伙伴",
                 "buddy-tooltip-golden": "在第 {{turn}} 回合获得另两个伙伴",
                 "rewards-title": "任务奖励",
@@ -4081,7 +4081,7 @@
                     "title": "Hearthpwn",
                     "next": "如果您决定同步到 Hearthpwn，Firestone 将向他们发送您的收藏数据，以便您可以查看收藏的统计信息。",
                     "toggle-label": "将你的收藏同步到 Hearthpwn",
-                    "website-link": "这里",
+                    "website-link": "此处",
                     "toggle-label-collection": "当卡牌收藏同步完成时显示通知"
                 }
             },
@@ -4580,7 +4580,7 @@
                 "buff-in-hand-tooltip": "显示对手手牌受到的增益",
                 "secrets-helper-title": "奥秘助手",
                 "enable-secret-helper-label": "启用奥秘助手",
-                "enable-secret-helper-tooltip": "当启用时，会显示一个记录对手所有可能奥秘的弹窗",
+                "enable-secret-helper-tooltip": "启用此功能，会显示一个记录对手所有可能奥秘的弹窗",
                 "counters": {
                     "title": "计数器",
                     "galakrond-label": "迦拉克隆",
@@ -4736,7 +4736,7 @@
                     "secrets-tooltip": "当你拥有受益于已使用奥秘数量的卡牌时，显示使用过的奥秘数量",
                     "chaotic-tendril-label": "混乱触须",
                     "chaotic-tendril-tooltip": "显示你已使用的“混乱触须”数量",
-                    "secrets-label": "奥秘（已使用的）",
+                    "secrets-label": "已使用的奥秘",
                     "excavate-label": "发掘",
                     "tram-heist-label": "飞车劫掠",
                     "tram-heist-tooltip": "当“{{cardName}}”在你的手牌中时，显示对手上回合使用过的卡牌",
@@ -4772,7 +4772,7 @@
                     "dragons-played-tooltip": "显示你已使用的龙的数量",
                     "ceaseless-expanse-label": "无界空宇",
                     "ceaseless-expanse-tooltip": "显示本局对战中使用、抽到或摧毁的卡牌数量",
-                    "dragons-played-label": "龙（已使用的）",
+                    "dragons-played-label": "已使用的龙",
                     "discovers-label": "发现",
                     "discovers-tooltip": "计算你发现卡牌的次数",
                     "libram-reduction-label": "圣契减费",
@@ -4800,7 +4800,7 @@
                     "dragons-in-hand-tooltip": "为“{{cardName}}”显示手牌中的龙卡牌数量",
                     "dragons-in-hand-label": "手牌中的龙",
                     "imbue-tooltip": "显示你在本局对战中灌注英雄技能的次数",
-                    "card-name-played-tooltip": "显示你已打出“{{cardName}}”的次数",
+                    "card-name-played-tooltip": "显示你已使用过“{{cardName}}”的次数",
                     "colossus-damage-label": "巨像伤害",
                     "colossus-damage-tooltip": "显示你的巨像将会造成的伤害",
                     "cards-shuffled-into-your-deck-label": "卡牌（已洗入牌库）",
@@ -4814,9 +4814,9 @@
                     "dive-the-golakka-depths-tooltip": "显示你已完成 “{{cardName}}” 任务的次数",
                     "enable-all": "启用全部计数器",
                     "dark-gifts-label": "黑暗之赐",
-                    "dark-gifts-tooltip": "显示你在本局对战中打出过的不同的黑暗之赐卡牌数量",
+                    "dark-gifts-tooltip": "显示你在本局对战中使用过的不同的黑暗之赐卡牌数量",
                     "outcast-label": "流放卡",
-                    "outcast-tooltip": "显示你在本局对战中已打出过流放卡的数量",
+                    "outcast-tooltip": "显示你在本局对战中已使用过流放卡的数量",
                     "undead-died-since-last-turn-label": "在你的上回合之后有亡灵死亡",
                     "kiljaeden-label": "{{cardName}}",
                     "undead-died-since-last-turn-tooltip": "当发现一张卡牌时，若其中一张具有“在你的上回合之后有己方亡灵死亡”的效果，则显示一个计数器提示该效果能触发。",
@@ -4824,36 +4824,36 @@
                     "kiljaeden-tooltip": "显示“{{cardName}}”的属性加成",
                     "eliza-goreblade-label": "{{cardName}}",
                     "rafaam-time-label": "{{cardName}}",
-                    "rafaam-time-tooltip": "追踪你本局对战中打出过的拉法姆",
+                    "rafaam-time-tooltip": "追踪你本局对战中使用过的拉法姆",
                     "cards-drawn-this-turn-label": "本回合抽到的卡牌",
                     "cards-drawn-this-turn-tooltip": "显示你本回合抽到的卡牌数",
                     "dragoncaller-alanna-label": "巨龙召唤者奥兰纳",
                     "dragoncaller-alanna-tooltip": "显示本局游戏中你施放了消耗5点或更多法力水晶的法术数量",
                     "dead-minions-this-turn-label": "本回合死亡的随从",
-                    "treant-dead-label": "树人（已死亡）",
+                    "treant-dead-label": "已死亡的树人",
                     "treant-dead-tooltip": "显示本局对战中死亡的树人的数量",
                     "dead-minions-this-turn-tooltip": "显示本回合中死亡的随从的数量",
                     "overload-this-game-tooltip": "显示你在本局对战中过载的法力水晶数量",
                     "overload-this-game-label": "本局对战中的过载",
-                    "windrunner-sisters-tooltip": "显示你在本局对战中打出过哪些风行者姐妹",
+                    "windrunner-sisters-tooltip": "显示你在本局对战中使用过哪些风行者姐妹",
                     "windrunner-sisters-label": "风行者姐妹",
                     "runi-label": "{{cardName}}",
-                    "runi-tooltip": "显示在打出“{{cardName}}”后会回来的卡牌",
+                    "runi-tooltip": "显示在使用“{{cardName}}”后会回来的卡牌",
                     "herald-label": "兆示",
                     "herald-tooltip": "显示你当前的兆示等级",
                     "cards-discarded-label": "弃掉的卡牌",
-                    "fel-spells-played-label": "打出的邪能法术",
+                    "fel-spells-played-label": "已施放邪能法术",
                     "friendly-attacks-label": "己方攻击次数",
                     "fel-spells-played-tooltip": "显示你在本局对战中施放的邪能法术数量",
                     "cards-discarded-tooltip": "显示你在本局对战中弃掉的卡牌数量",
                     "friendly-attacks-tooltip": "显示你的随从在本局对战中攻击的次数",
                     "secrets-triggered-label": "触发的奥秘",
-                    "overload-cards-played-tooltip": "显示你在本局对战中打出的过载卡牌数量",
+                    "overload-cards-played-tooltip": "显示你在本局对战中使用过的过载卡牌数量",
                     "secrets-triggered-tooltip": "显示本回合中己方奥秘被触发的数量",
                     "freebird-label": "自由飞鸟",
                     "frost-spells-label": "冰霜法术",
-                    "frost-spells-tooltip": "显示你在本局对战中打出的冰霜法术数量",
-                    "freebird-tooltip": "当你手牌或牌库中有“自由飞鸟”时，显示你在本局对战中已打出的“自由飞鸟”的数量",
+                    "frost-spells-tooltip": "显示你在本局对战中施放过的冰霜法术数量",
+                    "freebird-tooltip": "当“自由飞鸟”在你手牌或牌库中时，显示你在本局对战中已使用过的“自由飞鸟”的数量",
                     "damage-to-opponent-this-turn-label": "本回合对对手造成的伤害",
                     "hero-damage-instances-this-turn-label": "对方英雄造成伤害次数",
                     "friendly-dead-minions-this-turn-tooltip": "显示本回合中己方死亡的随从数量",
@@ -4869,10 +4869,10 @@
                     "weapons-equipped-label": "装备的武器",
                     "damage-taken-this-turn-label": "本回合受到的伤害",
                     "friendly-dead-minions-this-turn-label": "本回合死亡的己方随从",
-                    "overload-cards-played-label": "打出的过载卡牌",
+                    "overload-cards-played-label": "已使用的过载卡牌",
                     "shirvallah-label": "西瓦尔拉，猛虎之神",
                     "damage-taken-this-turn-tooltip": "显示你的英雄在本回合中受到的总伤害",
-                    "shirvallah-tooltip": "当你手牌或牌库中有“西瓦尔拉，猛虎之神”时，显示你已为法术消耗了多少法力值，以及“西瓦尔拉，猛虎之神”当前的法力值消耗",
+                    "shirvallah-tooltip": "当“西瓦尔拉，猛虎之神”在你手牌或牌库中时，显示你已为法术消耗了多少法力值，以及“西瓦尔拉，猛虎之神”当前的法力值消耗",
                     "deathwing-reduction-label": "“死亡之翼”法力值消耗减少",
                     "deathwing-reduction-tooltip": "显示你的“死亡之翼”总共减少的法力值消耗",
                     "spellweavers-brilliance-label": "织法者的光辉",
@@ -4897,7 +4897,7 @@
                     "godfrey-the-betrayer-tooltip": "显示所有你已弃掉的卡牌，以及哪些卡牌还在等待回到你的手牌",
                     "card-name-summoned-tooltip": "显示你已召唤“{{cardName}}”的次数",
                     "flesh-giant-label": "血肉巨人",
-                    "flesh-giant-tooltip": "当你的手牌或牌库中有血肉巨人时，显示你的英雄的生命值在你的回合中变化了多少次",
+                    "flesh-giant-tooltip": "当“血肉巨人”在你的手牌或牌库中时，显示你的英雄的生命值在你的回合中变化了多少次",
                     "cthun-abilities-label": "克苏恩的技能",
                     "aqir-goliath-label": "亚基巨怪",
                     "broodqueen-shakar-label": "巢穴女王沙卡尔",
@@ -4917,7 +4917,7 @@
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。",
-                "special-zones-tooltip": "启用后，记牌器中会出现一个新区块，显示被背叛者高弗雷或伊莉达·寻罪处理过的卡牌",
+                "special-zones-tooltip": "启用此功能，记牌器中会出现一个新区块，显示被背叛者高弗雷或伊莉达·寻罪处理过的卡牌",
                 "special-zones-label": "特殊区"
             },
             "duels": {
@@ -5212,13 +5212,13 @@
                 "counter-fodder-refresh-label": "饲料刷新次数",
                 "counter-fodder-refresh-tooltip": "显示剩余的饲料刷新次数",
                 "counter-mrrglton-played-label": "已使用的莫格顿家族",
-                "counter-mrrglton-played-tooltip": "显示你已打出多少次莫格顿家族鱼人",
+                "counter-mrrglton-played-tooltip": "显示你已使用过多少次莫格顿家族鱼人",
                 "counter-tasty-lobster-buff-label": "美味龙虾加成",
                 "counter-tasty-lobster-buff-tooltip": "显示你的美味龙虾死亡时给予多少攻击力/生命值",
                 "dark-gift-overlay-label": "黑暗之赐浮窗",
                 "dark-gift-overlay-tooltip": "当鼠标悬停在黑暗发现按钮上时，显示可能的黑暗发现随从和黑暗之赐",
                 "hide-battle-odds-until-mouseover-label": "鼠标悬停时才显示胜率",
-                "hide-battle-odds-until-mouseover-tooltip": "启用后，屏幕顶部会保留一个小型战斗胜率横幅；将鼠标移到其上时，会显示完整的胜／平／负组件",
+                "hide-battle-odds-until-mouseover-tooltip": "启用此功能，屏幕顶部会保留一个小型战斗胜率横幅；将鼠标移到其上时，会显示完整的胜／平／负组件",
                 "hero-power-extra-info-label": "英雄技能额外信息",
                 "hero-power-extra-info-tooltip": "将鼠标悬停在英雄技能上时，在卡牌提示中显示额外的实时详情（例如已经进入厨师曲奇锅中的随从类型）。",
                 "always-show-tavern-tier-tooltip": "在酒馆战棋排行榜上，在每位玩家头像旁显示当前酒馆等级。",
@@ -6568,7 +6568,7 @@
         "xl-painlock": "40-自伤术",
         "xl-rainbow-excavate-dk": "40-多系发掘DK",
         "buttons-rainbow-dk": "多系DK（彩虹）",
-        "uu-insanity-warlock": "游客疲劳术",
+        "uu-insanity-warlock": "双邪疲劳术",
         "xl-bfu-handbuff-dk": "40-污手DK（彩虹）",
         "xl-tony-druid": "40-托尼德",
         "xl-wheel-warlock": "40-轮盘术",
@@ -6737,7 +6737,7 @@
         "buu-zerg-dk": "异虫DK（红绿绿）",
         "uu-zerg-unholy-dk": "双邪异虫DK",
         "lynessa-otk-paladin": "莱妮莎OTK骑",
-        "bu-deathrattle-dk": "亡语DK（红/绿）",
+        "bu-deathrattle-dk": "血邪亡语DK",
         "ffu-zerg-frost-dk": "异虫冰DK（蓝蓝绿）",
         "fu-deathrattle-dk": "亡语DK（蓝绿）",
         "uu-plague-dk": "双邪疫病DK",
@@ -6746,7 +6746,7 @@
         "uuu-deathrattle-dk": "邪亡语DK",
         "zerg-attack-dh": "异虫打脸瞎",
         "zerg-rainbow-dk": "异虫DK（彩虹）",
-        "zerg-unholy-dk": "异虫DK（绿）",
+        "zerg-unholy-dk": "异虫邪DK",
         "protoss-druid": "星灵德",
         "shaffar-hunter": "虚灵猎",
         "protoss-mage": "星灵法",
@@ -6771,8 +6771,8 @@
         "uu-deckless-warlock": "双邪弃牌术",
         "starship-shaman": "星舰萨",
         "ravenous-cliff-dive-dh": "地狱犬跳崖瞎",
-        "u-wallow-warlock": "瓦洛术（绿）",
-        "bbb-starship-succ-dk": "星舰血蛭DK（红）",
+        "u-wallow-warlock": "邪瓦洛术",
+        "bbb-starship-succ-dk": "星舰血蛭血DK",
         "deathrattle-dh": "亡语瞎",
         "imbue-druid": "灌注德",
         "imbue-mage": "灌注法",
@@ -6783,7 +6783,7 @@
         "ffu-mill-warlock": "爆牌术（蓝蓝绿）",
         "ffu-starship-warlock": "星舰术（蓝蓝绿）",
         "ffu-zerg-dk": "异虫DK（蓝蓝绿）",
-        "f-wallow-warlock": "瓦洛术（蓝）",
+        "f-wallow-warlock": "冰瓦洛术",
         "protoss-imbue-mage": "星灵灌注法",
         "bfu-aggro-dk": "彩虹快攻DK",
         "rainbow-menagerie-dk": "彩虹茶壶DK",
@@ -6805,8 +6805,8 @@
         "xl-seedlock": "40-恶魔之种术",
         "bbu-menagerie-succ-dk": "茶壶血蛭DK（红红绿）",
         "bbu-succ-dk": "血蛭DK（红红绿）",
-        "bbb-succ-dk": "血蛭DK（红）",
-        "bbb-starship-dk": "星舰DK（红）",
+        "bbb-succ-dk": "血蛭血DK",
+        "bbb-starship-dk": "星舰血DK",
         "dark-gift-rogue": "黑赐贼",
         "ffu-deckless-warlock": "弃牌术（蓝蓝绿）",
         "fu-wallow-warlock": "瓦洛术（蓝绿）",
@@ -6848,8 +6848,8 @@
         "tog-priest": "托瓦格尔国王牧",
         "xl-hl-questline-priest": "40-宇宙任务牧",
         "hooktusk-rogue": "钩牙贼",
-        "jtu-quest-rogue": "任务贼",
-        "sou-quest-shaman": "任务萨",
+        "jtu-quest-rogue": "水晶核心任务贼",
+        "sou-quest-shaman": "腐化水源任务萨",
         "xl-mill-rogue": "40-爆牌贼",
         "xl-shadow-priest": "40-暗牧",
         "xl-uu-highlander-warlock": "40-双邪宇宙术",
@@ -7022,7 +7022,7 @@
         "sanctum-priest": "圣地牧",
         "securitybot-shaman": "安保机器人萨",
         "thief-priest": "脏牧",
-        "two-bit-rogue": "打二贼",
+        "two-bit-rogue": "二费贼",
         "zee-quest-shaman": "随从任务萨",
         "zee-shaman": "随从萨",
         "clone-cta-paladin": "复制战斗号角骑",
@@ -7097,7 +7097,7 @@
         "exodia-mage": "无限火球法",
         "fatigue-dh": "疲劳瞎",
         "hl-lc-quest-priest": "宇宙寻求平衡任务牧",
-        "jtu-quest-priest": "任务牧",
+        "jtu-quest-priest": "唤醒造物者任务牧",
         "mechathun-paladin": "机克骑",
         "naga-dh": "纳迦瞎",
         "odd-paladin": "奇数骑",
@@ -7114,7 +7114,7 @@
         "hl-thief-rogue": "宇宙剽窃贼",
         "igneous-warrior": "火成战",
         "kingsbane-rogue": "弑君贼",
-        "lc-quest-warrior": "任务战",
+        "lc-quest-warrior": "失落之城任务战",
         "mine-rogue": "水雷贼",
         "ohnahra-shaman": "欧恩哈拉萨",
         "questline-warrior": "任务线战",
@@ -7122,13 +7122,13 @@
         "warsong-warrior": "战歌战",
         "xl-demon-boarlock": "40-恶魔野猪术",
         "pirate-burnlock": "海盗弃牌术",
-        "xl-hl-sou-quest-shaman": "40-宇宙任务萨",
+        "xl-hl-sou-quest-shaman": "40-宇宙腐化水源任务萨",
         "xl-hl-thief-rogue": "40-宇宙剽窃贼",
         "xl-igneous-odyn-warrior": "40-火成奥丁战",
         "xl-kingsbane-rogue": "40-弑君贼",
         "xl-lc-quest-priest": "40-寻求平衡任务牧",
-        "xl-lc-quest-shaman": "40-任务萨",
-        "xl-lc-quest-warrior": "40-任务战",
+        "xl-lc-quest-shaman": "40-群山之灵任务萨",
+        "xl-lc-quest-warrior": "40-失落之城任务战",
         "xl-questline-warrior": "40-任务线战",
         "xl-warlock": "40-术",
         "deios-rogue": "戴欧斯贼",
