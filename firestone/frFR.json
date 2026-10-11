@@ -128,7 +128,8 @@
             "across_the_timeways": "Par-delà les voies temporelles",
             "echoes_of_the_infinite": "Échos de l’infini",
             "cataclysm": "CATACLYSME",
-            "violet_hold": "Évasion du fort Pourpre"
+            "violet_hold": "Évasion du fort Pourpre",
+            "azeroths_most_wanted": "Fugitifs d’Azeroth"
         },
         "pack": {
             "classic": "Classique",
@@ -529,7 +530,11 @@
             "restart": "Redémarrer Firestone",
             "reset-positions": "Réinitialiser les positions des fenêtres",
             "settings": "Paramètres",
-            "main-window": "Afficher la fenêtre principale"
+            "main-window": "Afficher la fenêtre principale",
+            "log-in": "Connexion",
+            "log-out": "Déconnexion ({{username}})",
+            "main-window-requires-premium": "Fenêtre principale (Premium uniquement)",
+            "settings-requires-premium": "Paramètres (Premium uniquement)"
         },
         "internal": {
             "memory": {
@@ -556,7 +561,11 @@
         "updates": {
             "update-available": "Mise à jour disponible ! Cliquez pour la télécharger",
             "update-error": "Une erreur s’est produite lors de la mise à jour de l’application, veuillez redémarrer Overwolf pour forcer la mise à jour",
-            "restart-needed": "Nouvelle version disponible ! Cliquez pour redémarrer l’application. Nous vous recommandons de ne pas le faire pendant une partie"
+            "restart-needed": "Nouvelle version disponible ! Cliquez pour redémarrer l’application. Nous vous recommandons de ne pas le faire pendant une partie",
+            "standalone": {
+                "message": "Une nouvelle version de Firestone ({{version}}) a été téléchargée.",
+                "later": "Plus tard"
+            }
         },
         "arena": {
             "menu": {
@@ -1119,7 +1128,13 @@
             },
             "deck-details": {
                 "copy-deck-code-button": "Copier le code du deck",
-                "deck-archived": "Le deck est archivé, mais compte toujours dans les stats globales. Éliminez cette version si vous voulez qu’il soit ignoré"
+                "deck-archived": "Le deck est archivé, mais compte toujours dans les stats globales. Éliminez cette version si vous voulez qu’il soit ignoré",
+                "export-deck-picture-tooltip": "Copiez la decklist sous forme d’image dans votre presse-papiers",
+                "export-deck-picture-button": "Copier l’image",
+                "export-deck-picture-still-working": "Toujours en cours...",
+                "export-deck-picture-working": "Capture d’écran haute résolution...",
+                "export-deck-picture-copied": "Copié dans le presse-papiers !",
+                "export-deck-picture-copied-tooltip": "Vous pouvez désormais le partager sur votre réseau social préféré"
             },
             "deck-recap": {
                 "overall-stats-header": "Stats générales",
@@ -2237,7 +2252,10 @@
                 "six-month": "Facturé tous les 6 mois",
                 "yearly-coupon-text-2": "Pour célébrer le lancement de l’extension {{expansionName}}, obtenez {{reduction}} de réduction supplémentaires en utilisant le code suivant lors du paiement :",
                 "coupon-text": "Pour célébrer le lancement de l’extension {{expansionName}}, obtenez {{reduction}} de réduction supplémentaire sur tous les plans en utilisant le code suivant lors du paiement :",
-                "six-month-2": "6 mois"
+                "six-month-2": "6 mois",
+                "annual-toggle-header": "Fréquence de facturation :",
+                "monthly-2": "Mois",
+                "yearly-2": "Année"
             },
             "cant-subscribe-button": "Abonnement impossible",
             "check-status-online-inactive": "Annulé, mais toujours actif. Voir les détails {{link}}",
@@ -2393,7 +2411,10 @@
         },
         "fatigue": {
             "player": "Votre prochaine pioche vous infligera {{value}} points de dégâts de fatigue. La fatigue sera fatale dans {{draws}} pioches ({{totalDamage}} points de dégâts au total)",
-            "opponent": "La prochaine pioche de votre adversaire lui infligera {{value}} points de dégâts de fatigue. La fatigue sera fatale dans {{draws}} pioche ({{totalDamage}} points de dégâts au total)"
+            "opponent": "La prochaine pioche de votre adversaire lui infligera {{value}} points de dégâts de fatigue. La fatigue sera fatale dans {{draws}} pioche ({{totalDamage}} points de dégâts au total)",
+            "next": {
+                "player": "Votre prochaine pioche vous infligera {{value}} points de dégâts de fatigue"
+            }
         },
         "abyssal-curse-2": {
             "player": "La malédiction abyssale la plus forte de votre adversaire était à {{value}} points de dégâts, et vous subirez {{totalDamageFromCursesInHand}} points de dégâts des malédictions en main au début du prochain tour",
@@ -2524,7 +2545,7 @@
             "player": "Vous avez joué {{value}} Pirates pendant cette partie"
         },
         "ceaseless": {
-            "player": "{{cardName}} coûte actuellement {{cost}} cristaux. {{value}} cartes ont été piochées, jouées ou détruites pendant cette partie"
+            "player": "{{cardName}} coûte actuellement ({{cost}}) cristaux. {{value}} cartes ont été piochées, jouées ou détruites pendant cette partie"
         },
         "discovers": {
             "player": "Vous avez découvert {{value}} cartes",
@@ -2837,6 +2858,40 @@
         },
         "tasty-lobster-buff": {
             "player": "Vos homards savoureux donnent +{{atk}}/+{{health}} quand ils meurent"
+        },
+        "bgs-cards-discarded-this-game": {
+            "player": "Vous avez défaussé {{value}} cartes pendant cette partie"
+        },
+        "uldir-runes": {
+            "player": "Vous avez joué des cartes de {{value}} sur 3 types de runes pendant cette partie"
+        },
+        "ghuun-blood-runes": {
+            "player": "Vous avez joué {{value}} runes de sang pendant cette partie"
+        },
+        "nzoth-dreams-end": {
+            "player": "Vous avez invoqué {{value}} serviteurs avec Râle d’agonie pendant cette partie. N’Zoth, la fin du Rêve coûte ({{cost}}) cristaux"
+        },
+        "yshaarj-titan-bane": {
+            "player": "Il reste {{value}} cristaux de mana à dépenser pour des serviteurs pendant cette partie ({{spent}} cristaux déjà dépensés)"
+        },
+        "bgs-deity": {
+            "player": "Votre {{cardName}} a {{atk}}/{{health}}"
+        },
+        "aqir-goliath": {
+            "player": "Vous avez joué {{value}} cartes avec Combo pendant ce tour. Le goliath aqir coûte ({{reduction}}) cristaux de moins"
+        },
+        "cthun-abilities": {
+            "player": "Vous avez déclenché {{value}} des 4 capacités de C’Thun pendant cette partie"
+        },
+        "flesh-giant": {
+            "player": "Les PV de votre héros ou héroïne ont changé {{times}} fois pendant vos tours",
+            "opponent": "Les PV du héros ou de l’héroïne de votre adversaire ont changé {{times}} fois pendant ses tours"
+        },
+        "broodqueen-shakar": {
+            "player": "Il faut encore que {{value}} serviteurs alliés meurent pendant ce tour"
+        },
+        "colossus-of-the-cold": {
+            "player": "Il reste {{value}} cristaux de mana à dépenser pour des sorts avant que le colosse du froid ne dégèle ({{spent}} cristaux déjà dépensés)"
         }
     },
     "loading": {
@@ -2884,8 +2939,36 @@
         },
         "overview": {
             "constructed": {
-                "text": "Cette fenêtre affiche un suivi en temps réel du deck, une aide au mulligan, ainsi que des stats personnelles et du méta-jeu."
-            }
+                "text": "Cette fenêtre affiche un suivi en temps réel du deck, une aide au mulligan, ainsi que des stats personnelles et du méta-jeu.",
+                "title": "Construit"
+            },
+            "more": {
+                "title": "Arène, collection et historique"
+            },
+            "battlegrounds": {
+                "title": "Champs de bataille"
+            },
+            "overlays": {
+                "title": "Overlays en jeu"
+            },
+            "title": "Ce que Firestone fait"
+        },
+        "finish": {
+            "experience-power": "Je veux tous les outils",
+            "text": "Vous avez choisi {{experience}}. Ouvrez les Paramètres avec l’icône en forme d’engrenage. Vous pouvez rejouer cette introduction depuis Paramètres → App → Admin.",
+            "experience-simple": "Expérience simplifiée",
+            "title": "Tout est prêt"
+        },
+        "subtitle-2": "Il y a deux éléments principaux : des overlays en jeu avec des infos en direct pour vous aider à prendre les meilleures décisions ; et une application avec les stats sur toutes vos parties, votre collection de cartes et plus encore.",
+        "experience": {
+            "power": {
+                "title": "Je veux tous les outils"
+            },
+            "simple": {
+                "title": "Expérience simplifiée",
+                "text": "Seulement les widgets principaux, avec aussi peu d’éléments à l’écran que nécessaire."
+            },
+            "subtitle": "Vous pouvez changer cette option plus tard, ou rejouer cette introduction depuis les Paramètres."
         }
     },
     "new-version": {
@@ -3075,7 +3158,8 @@
             "deck-winrate-vs-class-tooltip": "Taux de victoires de ce deck en Partie classée contre {{opponent}} depuis le {{date}}"
         },
         "secrets-helper": {
-            "title": "Assistant des Secrets"
+            "title": "Assistant des Secrets",
+            "filtered-to-hovered": "Secret affiché en passant la souris"
         },
         "streamer-mode": {
             "you": "Vous",
@@ -3120,7 +3204,25 @@
                     "play": "N’affiche que les parties où vous commencez. Cliquez pour changer.",
                     "all": "Affiche les parties où vous jouez en premier et celles où vous avez La pièce. Cliquez pour changer."
                 },
-                "dismiss-tooltip": "Masquer le guide de mulligan"
+                "dismiss-tooltip": "Masquer le guide de mulligan",
+                "mulligan-keep-rate-yours-tooltip": "À quelle fréquence vous gardez cette carte dans votre main de départ",
+                "mulligan-impact-yours-tooltip": "À quel point conserver cette carte dans votre main de départ impacte votre taux de victoires, selon vos parties",
+                "mulligan-impact-tooltip-premium-with-source": "L’impact de la présence de cette carte dans votre main de départ sur votre taux de victoires. Source des stats : {{source}}",
+                "mulligan-keep-rate-tooltip-with-source": "À quelle fréquence cette carte est conservée dans la main de départ. Source des stats : {{source}}",
+                "mulligan-impact-tooltip-free-with-source": "L’impact de la présence de cette carte dans votre main de départ sur votre taux de victoires. Source des stats : {{source}}. Il vous reste {{value}} utilisations gratuites aujourd’hui.",
+                "stats-source": {
+                    "both": "Les deux",
+                    "community": "Communautaire",
+                    "personal": "Vous"
+                },
+                "stats-source-short": {
+                    "community": "C",
+                    "personal": "V"
+                },
+                "personal-min-games-warning-never": "Vos stats sont désactivées dans l’overlay, donc cela reste sur Communauté. Vous pouvez changer cette options dans Paramètres → Decktracker → Mulligan",
+                "personal-min-games-warning": "Vos stats ont besoin de {{threshold}} parties avec ce deck (vous en avez {{current}}). L’overlay restera sur Communauté pendant ce temps. Vous pouvez changer ce paramètre dans Paramètres → Decktracker → Mulligan",
+                "sample-size-tooltip-both": "Parties de la communauté, puis vos propres parties avec ce deck, incluant les données de mulligan carte par carte",
+                "sample-size-both": "{{community}} communauté / {{personal}} vous"
             },
             "lobby": {
                 "close-button-tooltip": "Désactive l’aperçu du deck. Vous pourrez le réactiver dans les paramètres",
@@ -3150,7 +3252,9 @@
             "main-attribute": "Attribut principal",
             "card-type": "Type de carte",
             "mechanics": "Mécaniques",
-            "cost-modifier": "Modificateur de coût"
+            "cost-modifier": "Modificateur de coût",
+            "minion-type": "Type de serviteur",
+            "minion-types": "Types de serviteur"
         },
         "tourist": "Tourisme : {{className}}",
         "burns-in": "Brûlera dans {{value}}",
@@ -3161,7 +3265,9 @@
         "dredged-by": "Dragué par {{value}}",
         "card-tooltip-pool-size": "{{ value }} cartes",
         "prepared-tooltip": "Cette carte a été préparée pour {{value}} cristaux",
-        "card-mulliganed-away": "Retirée au mulligan"
+        "card-mulliganed-away": "Retirée au mulligan",
+        "card-tooltip-assemble-body": "Serviteur",
+        "created-by-label": "Créée par"
     },
     "battlegrounds": {
         "menu": {
@@ -3361,7 +3467,8 @@
             "eternal-knight-attack-buff": "Chevaliers éternels ATQ",
             "eternal-knight-health-buff": "Chevaliers éternels PV",
             "eternal-knight-health-buff-tooltip": "Le buff net de PV que vos chevaliers éternels reçoivent pendant cette partie (par exemple grâce au portrait éternel)",
-            "eternal-knight-attack-buff-tooltip": "Le buff net d’ATQ que vos chevaliers éternels reçoivent pendant cette partie (par exemple grâce au portrait éternel)"
+            "eternal-knight-attack-buff-tooltip": "Le buff net d’ATQ que vos chevaliers éternels reçoivent pendant cette partie (par exemple grâce au portrait éternel)",
+            "cards-discarded-this-game": "Cartes défaussées pendant cette partie"
         },
         "hero-stats": {
             "finishes-title": "Hauts faits",
@@ -3596,10 +3703,28 @@
                     "deathrattle-stats-restriction": "Les serviteurs avec Râle d’agonie peuvent seulement recevoir Épée affûtée et Étreinte de la mort parmi les Sombres dons qui font gagner des caractéristiques",
                     "lobby-quilboar-naga": "Jamais offert lorsque les Hurans ou les Nagas sont présents",
                     "requires-tavern-tier-3": "Nécessite une taverne niveau 3 ou plus",
-                    "requires-tavern-spells-this-game": "Nécessite d’avoir lancé un sort de la taverne pendant cette partie"
+                    "requires-tavern-spells-this-game": "Nécessite d’avoir lancé un sort de la taverne pendant cette partie",
+                    "lobby-dragon": "Pas offert lorsque des Dragons sont dans la partie",
+                    "charisma-banned-minion": "Pas offert pour ce serviteur",
+                    "stitched-salvager": "Pas offert pour le récupérateur raccomodé",
+                    "not-highest-trigger-count": "Seulement offert si c’est votre condition la plus déclenchée",
+                    "not-tier-7": "Pas offert pour les serviteurs de niveau 7",
+                    "not-venomous-or-poisonous": "Pas offert pour les serviteurs avec Venimosité ou Toxicité",
+                    "requires-activate": "Seulement offert pour les serviteurs avec Activation",
+                    "lobby-no-aberration": "Seulmement offert quand les Aberrations sont dans la partie"
                 },
                 "others": "Autres",
-                "has-condition": "Ce Sombre don a des conditions supplémentaires. Passez la souris dessus pour savoir pourquoi, ou sur un serviteur pour l’inspecter."
+                "has-condition": "Ce Sombre don a des conditions supplémentaires. Passez la souris dessus pour savoir pourquoi, ou sur un serviteur pour l’inspecter.",
+                "turns-plus": "{{min}}+",
+                "turns-open": "{{min}}–{{max}}",
+                "arrives": "Arrive plus tard",
+                "restriction": {
+                    "battlecry-before-5": "Les serviteurs avec Cri de guerre ou Choix des armes ne sont pas proposés avant le tour 5.",
+                    "no-magnetic-sell-hand": "Les serviteurs avec Magnétisme, ceux avec un effet quand vous les vendez, et ceux censés rester en main ne peuvent pas recevoir de Sombre don.",
+                    "battlecry-choose-one": "Les serviteurs avec Cri de guerre ou Choix des armes peuvent seulement recevoir Vision double, Duplication, Dorure ou Voix résonnante.",
+                    "scaling-highest": "Parmi Cicatrices de guerre, Étreinte de la mort, Siphon magique et Dégradation, seuls les Sombres dons avec les conditions les plus déclenchées peuvent être proposés."
+                },
+                "wiki-source": "Source :"
             }
         },
         "post-match-stats": {
@@ -3850,7 +3975,17 @@
                 "engine-migration-retry-title": "Mise à jour du moteur de mods en cours",
                 "engine-migration-retry-message": "Le moteur de mods ne peut pas être mis à jour tant que les fichiers sont en cours d’utilisation. Firestone réessaiera à la fermeture de Hearthstone.",
                 "engine-migration-done-message": "Le moteur de mods a été mis à jour. Merci de redémarrer Hearthstone pour charger vos mods.",
-                "update-available-unreviewed": "Une nouvelle version de ce mod est disponible, mais elle n’a pas encore été validée par Firestone. Cliquez ici pour quand même la mettre à jour."
+                "update-available-unreviewed": "Une nouvelle version de ce mod est disponible, mais elle n’a pas encore été validée par Firestone. Cliquez ici pour quand même la mettre à jour.",
+                "auto-update-all": "Tous",
+                "auto-update-off": "Désactivé",
+                "import-no-dll": "Impossible de trouver un fichier .dll dans la dernière version GitHub de ce dépôt.",
+                "import-success": "Le mod a été importé. Sa mise à jour automatique dépend de vos paramètres.",
+                "import-download-failed": "Impossible de télécharger le mod. Veuillez réessayer plus tard.",
+                "source-verified": "Vérifié",
+                "source-third-party-tooltip": "Non vérifié par Firestone. Ne se met à jour automatiquement que si vous choisissez Tout.",
+                "explanation": "Les mods sont des plugins qui changent le comportement de Hearthstone lui-même.",
+                "import-button": "Importer",
+                "import-in-progress": "Importation du mod..."
             },
             "third-party": {
                 "intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Elles ne nous rapportent pas d’argent, mais nous recevons de l’exposition, puisque les sites parlent ensuite de nous :)",
@@ -3922,7 +4057,8 @@
                 "delay-label-tooltip": "Délaie les événements envoyés à Twitch par cette quantité de millisecondes. Utile si votre stream est délayé pour combattre les snipers",
                 "other-options-title": "Autres options",
                 "appear-on-live-streams-label": "Apparaître dans les streams",
-                "appear-on-live-streams-tooltip": "Apparaissez dans l’onglet « Streams ». Cette fonctionnalité, toujours en cours de développement, liste toutes les personnes qui streament actuellement avec Firestone, ainsi que leur mode de jeu actuel, leur deck (s’il existe), et un lien pour accéder à leur stream Twitch."
+                "appear-on-live-streams-tooltip": "Apparaissez dans l’onglet « Streams ». Cette fonctionnalité, toujours en cours de développement, liste toutes les personnes qui streament actuellement avec Firestone, ainsi que leur mode de jeu actuel, leur deck (s’il existe), et un lien pour accéder à leur stream Twitch.",
+                "broadcast-from-this-pc": "Diffuser depuis cet ordinateur"
             },
             "launch": {
                 "launch-on-game-start-label": "Lancer Firestone quand une partie commence",
@@ -3967,7 +4103,15 @@
                 "show-notification": "Afficher les notifications Windows",
                 "show-notification-tooltip": "Afficher une notification Windows lorsque c’est votre tour, ou lorsque la phase de recrutement commence dans Champs de bataille",
                 "close-to-tray-tooltip": "Fermer l’application dans la barre d’état système plutôt que de la quitter. Non recommandé, car fermer complètement l’application permet que les ressources soient régulièrement renouvelées.",
-                "close-to-tray-label": "Réduire dans la barre d’état"
+                "close-to-tray-label": "Réduire dans la barre d’état",
+                "disable-low-memory-rendering-tooltip": "Par défaut, l’application affiche ses fenêtres et ses overlays à l’aide de buffers graphiques plus petits, ce qui permet d’économiser environ 100 Mo de mémoire pendant une partie. Activez cette option si les fenêtres ou l’overlay semblent incorrects, ou si le défilement fonctionne mal. Cette modification prendra effet au prochain démarrage de l’application.",
+                "close-app-on-game-exit-label": "Fermer l’appli en quittant le jeu",
+                "launch-on-windows-start-label": "Lancer Firestone avec Windows",
+                "launch-on-windows-start-tooltip": "Lance Firestone avec Windows et le garde dans la barre d’état système pour que les overlays soient prêts au lancement de Hearthstone. Si vous fermez complètement l’application depuis la barre d’état système, relancez Firestone avant de jouer.",
+                "notifications-size": "Taille des notifications",
+                "replay-ftue-button-text": "Lecture",
+                "replay-ftue-tooltip": "Afficher à nouveau le setup initial. Choisir une expérience mettra à jour vos paramètres d’overlay.",
+                "disable-overlay-shared-texture-tooltip": "Par défaut, l’overlay en jeu est transmise directement au jeu via la carte graphique, ce qui utilise beaucoup moins le CPU. Activez cette option si l’overlay ne s’affiche pas ou pas correctement, ou si elle vous empêche de cliquer dans le jeu. Cette modification prendra effet au prochain démarrage de Hearthstone."
             },
             "localization": {
                 "title": "Localisation",
@@ -3976,7 +4120,8 @@
                 "text-2": "Si vous voulez aider à traduire l’application, veuillez consulter les instructions {{link}}.",
                 "link": "ici",
                 "text-3": "Veuillez redémarrer l’application (avec un clic droit sur Firestone dans la barre des tâches) pour vous assurer que la nouvelle langue est prise en compte.",
-                "ai-title": "Traductions IA"
+                "ai-title": "Traductions IA",
+                "ai-toggle-label": "Utiliser des traductions IA"
             },
             "premium": {
                 "title": "Options d’abonnement Premium",
@@ -3992,7 +4137,8 @@
                 "lottery-size-title": "Taille du widget loterie",
                 "lottery-block-text3": "Note : si vous avez plusieurs écrans, essayez de désactiver le paramètre « Définir la superposition » dans le widget et déplacez-le sur un autre écran.",
                 "lottery-premium-section-tooltip": "Cette section n’est accessible qu’aux membres Premium",
-                "lottery-widget-settings-title": "Paramètres du widget"
+                "lottery-widget-settings-title": "Paramètres du widget",
+                "lottery-sync-label": "Points de loterie"
             },
             "data": {
                 "remote-title": "Données distantes",
@@ -4179,7 +4325,43 @@
             "account": {
                 "sign-in-label": "Compte",
                 "unlink-last-login-label": "Compte",
-                "log-out-label": "Compte"
+                "log-out-label": "Compte",
+                "intro": "Lier votre compte Battle.net à votre compte Overwolf Firestone existant, afin que vous puissiez vous connexter avec Battle.net et garder le même historique de parties.",
+                "intro-signed-out": "Connectez-vous pour synchroniser votre historique de parties. Vous pourrez ensuite associer d’autres services d’authentification.",
+                "intro-battlenet": "Votre compte est connecté avec Battle.net. Liez un compte Overwolf existant pour importer son historique de parties dans cette session.",
+                "sign-in-button": "Connexion",
+                "signed-in-linked-overwolf-tooltip": "Compte Overwolf lié : {{name}}",
+                "not-signed-in": "Votre compte n’est pas connecté.",
+                "signed-in-as": "Connexion active : <b>{{name}}</b>, via {{provider}}. Pseudo Firestone : {{username}}",
+                "link-battlenet-label": "Battle.net",
+                "link-battlenet-button": "Lier à Battle.net",
+                "provider-unknown": "fournisseur inconnu",
+                "link-battlenet-need-overwolf": "Connectez-vous d’abord à Overwolf, puis réessayez le lien à Battle.net.",
+                "link-battlenet-tooltip": "Connectez-vous d’abord avec Overwolf, puis liez votre compte avec Battle.net. Ensuite, vous pourrez vous connecter avec Battle.net et actualiser vos données.",
+                "unlink-battlenet-confirmation": "Confirmer ?",
+                "unlink-battlenet-label": "Battle.net",
+                "unlink-battlenet-button": "Délier Battle.net",
+                "link-overwolf-button": "Lier à Overwolf",
+                "link-overwolf-tooltip": "Lier un compte Overwolf Firestone existant. Cette option vous permet d’importer vos données existantes (parties, paquets, etc.).",
+                "link-overwolf-need-battlenet": "Connectez-vous d’abord avec Battle.net, puis réessayez le lien avec Overwolf.",
+                "unlink-overwolf-button": "Délier Overwolf",
+                "unlink-overwolf-confirmation": "Confirmer ?",
+                "unlink-last-login-failed": "Vous devez garder au moins une méthode d’authentification sur ce compte Firestone.",
+                "log-out-button": "Déconnexion",
+                "perks-sync-title": "Vos données vous suivent",
+                "log-out-tooltip": "Se déconnecter de votre compte Firestone de cet appareil.",
+                "perks-intro": "La connexion est gratuite. Elle permet à Firestone de mieux fonctionner pour vous.",
+                "perks-sync-detail": "L’historique des parties, les stats des paquets et les hauts faits restent avec vous quand vous réinstallez ou que vous changez d’ordinateur.",
+                "perks-history-title": "L’historique de vos parties reste en ligne",
+                "provider-battlenet": "Battle.net"
+            },
+            "hotkeys": {
+                "change": "Modifier",
+                "intro": "Modifiez les raccourcis clavier permettant d’afficher ou de masquer les fenêtres Firestone. Cliquez sur Modifier, puis saisissez la nouvelle combinaison de touches. La touche Échap annule l’opération.",
+                "failed": "Impossible d’utiliser ce raccourci clavier. Il est peut-être déjà utilisé par une autre application.",
+                "live-info": "Afficher les infos en direct",
+                "battlegrounds": "Afficher/Masquer la fenêtre Champs de bataille",
+                "collection": "Afficher/Masquer la fenêtre principale"
             }
         },
         "decktracker": {
@@ -4254,7 +4436,11 @@
                 "weapons-play-order": "Ordre de jeu des armes",
                 "play-order-title": "Ordre de jeu",
                 "show-flavor-text-on-hover": "Afficher le texte d’ambiance au survol",
-                "show-flavor-text-on-hover-tooltip": "Lorsque vous passez la souris sur une carte dans le decktracker en jeu, affiche son texte d’ambiance dans la zone des notifications"
+                "show-flavor-text-on-hover-tooltip": "Lorsque vous passez la souris sur une carte dans le decktracker en jeu, affiche son texte d’ambiance dans la zone des notifications",
+                "show-flavor-text-on-in-game-hover": "Afficher le texte d’ambiance à l’inspection des cartes",
+                "use-single-highlight-color": "Utiliser une seule couleur de surbrillance",
+                "use-single-highlight-color-tooltip": "Utiliser la même couleur pour chaque carte liée, au lieu d’une couleur différence pour chaque priorité de surbrillance.",
+                "individual-counters-size": "Dimensions individuelles des compteurs"
             },
             "modes": {
                 "title": "Le decktracker est actif pour les modes suivants",
@@ -4366,7 +4552,8 @@
                     "bashana-label": "Bashana",
                     "bashana-tooltip": "Affiche le montant de mana restant à lancer depuis les tréants de Bashana",
                     "ancestral-automaton-label": "Automate ancestral",
-                    "ancestral-automaton-tooltip": "Affiche le nombre de fois que votre adversaire a invoqué un automate ancestral"
+                    "ancestral-automaton-tooltip": "Affiche le nombre de fois que votre adversaire a invoqué un automate ancestral",
+                    "flesh-giant-tooltip": "Affiche le nombre de fois que les PV de votre adversaire ont changé pendant ses tours si sa classe est {{classes}}"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -4613,7 +4800,13 @@
                     "card-dead-tooltip": "Afficher le nombre de cartes {{cardName}} alliées détruites pendant cette partie",
                     "godfrey-the-betrayer-label": "Godfrey, le traître",
                     "godfrey-the-betrayer-tooltip": "Affiche toutes les cartes que vous avez brûlées, ainsi que celles qui sont en attente de rejoindre votre main",
-                    "card-name-summoned-tooltip": "Affiche le nombre de cartes {{cardName}} que vous avez invoquées"
+                    "card-name-summoned-tooltip": "Affiche le nombre de cartes {{cardName}} que vous avez invoquées",
+                    "nzoth-dreams-end-label": "N’Zoth, la fin du Rêve",
+                    "yshaarj-titan-bane-label": "Y’Shaarj, le fléau des Titans",
+                    "broodqueen-shakar-label": "Sha’kar, matriarche des couvées",
+                    "cthun-abilities-label": "Capacités de C’Thun",
+                    "aqir-goliath-label": "Goliath aqir",
+                    "uldir-runes-label": "Zone de confinement d’Uldir"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck.",
@@ -4655,7 +4848,13 @@
                 "keep-after-mulligan-5": "Garder affiché pendant 5 secondes",
                 "keep-after-mulligan-10": "Garder affiché pendant 10 secondes",
                 "keep-after-mulligan-tooltip": "Garde le guide de mulligan affiché après confirmation pour que vous puissiez inspecter les cartes piochées. Cachez-le immédiatement, après quelques secondes, ou jusqu’à ce que vous le fermiez.",
-                "keep-after-mulligan-until-dismissed": "Manuellement"
+                "keep-after-mulligan-until-dismissed": "Manuellement",
+                "personal-min-games-label": "Afficher vos stats de mulligan après",
+                "personal-min-games-tooltip": "Dans l’overlay de mulligan, vos taux personnels n’apparaissent qu’après avoir fait ce nombre de parties avec le deck. Le tableau affiche toujours la source que vous choisissez. Jamais : n’affiche jamais vos stats dans l’overlay. Toujours : les afficher dès que vous en avez.",
+                "personal-min-games-never": "Jamais (cache les vôtres de l’overlay)",
+                "personal-min-games-always": "Toujours (même avec peu de parties)",
+                "personal-min-games-count": "{{value}} parties",
+                "sync-past-games-label": "Synchroniser les parties précédentes"
             },
             "lobby": {
                 "title": "Tracker sur l’écran de sélection",
@@ -4911,7 +5110,9 @@
                 "dark-gift-overlay-label": "Overlay des Sombres dons",
                 "dark-gift-overlay-tooltip": "Au survol du bouton Sombre découverte, affiche les serviteurs qu’il est possible de découvrir ainsi que les Sombres dons disponibles",
                 "hide-battle-odds-until-mouseover-label": "Masquer les chances jusqu’au passage de la souris",
-                "hide-battle-odds-until-mouseover-tooltip": "Lorsque cette option est activée, une petite bannière de chances de victoires reste en haut de l’écran, et les infos complètes (victoire/égalité/défaite) apparaissent lorsque vous passez la souris dessus"
+                "hide-battle-odds-until-mouseover-tooltip": "Lorsque cette option est activée, une petite bannière de chances de victoires reste en haut de l’écran, et les infos complètes (victoire/égalité/défaite) apparaissent lorsque vous passez la souris dessus",
+                "always-show-tavern-tier-label": "Toujours afficher le niveau de taverne",
+                "counter-cards-discarded-this-game-label": "Cartes défaussées"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -5186,55 +5387,130 @@
                 "check-if-running-as-admin": {
                     "step-2": "<ol start=\"2\"><li>Veillez à ce que la colonne Élevé soit cochée</li></ol>",
                     "step-3": "<ol start=\"3\"><li>Maintenant, naviguez vers l’entrée Firestone dans la liste. Si Firestone a été lancé en tant qu’admin, la colonne Élevé devrait indiquer Oui (ce qui n’est pas le cas dans ma capture d’écran)</li></ol>",
-                    "step-1": "<ol><li>Ouvrez le gestionnaire de tâches (Ctrl + Shift + Échap), puis allez dans l’onglet Détails. Faites un clic droit sur la barre d’en-tête, puis cliquez sur Sélectionner des colonnes</li></ol>"
+                    "step-1": "<ol><li>Ouvrez le gestionnaire de tâches (Ctrl + Shift + Échap), puis allez dans l’onglet Détails. Faites un clic droit sur la barre d’en-tête, puis cliquez sur Sélectionner des colonnes</li></ol>",
+                    "title": "Vérifiez si l’application s’exécute en tant qu’administrateur"
                 },
                 "app-doesnt-update": {
-                    "body": "<ol><li>Fermez Overwolf</li><li>Ouvrez le dossier C:\\Utilisateurs\\&lt;votre_nom&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>Supprimez le dossier « lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob »</li><li>Ouvrez le dossier C:\\Utilisateurs\\&lt;votre_nom&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>Supprimez le dossier « lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob »</li><li>Lancez Overwolf</li><li>Réessayez d’installer l’application</li></ol>"
+                    "body": "<ol><li>Fermez Overwolf</li><li>Ouvrez le dossier C:\\Utilisateurs\\&lt;votre_nom&gt;\\AppData\\Local\\Overwolf\\Extensions\\</li><li>Supprimez le dossier « lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob »</li><li>Ouvrez le dossier C:\\Utilisateurs\\&lt;votre_nom&gt;\\AppData\\Local\\Overwolf\\PackagesCache\\</li><li>Supprimez le dossier « lnknbakkpommmjjdnelmfbjjdbocfpnpbkijjnob »</li><li>Lancez Overwolf</li><li>Réessayez d’installer l’application</li></ol>",
+                    "title": "L'application ne se met pas à jour"
                 },
                 "connectivity-issues-russia": {
                     "body": "<p><strong>Essayez ceci si vous vous connectez depuis la Russie.</strong> Ci-dessous se trouvent quelques manipulations que des Russes ont effectuées sur leurs machines afin de résoudre des problèmes de connexion.</p><blockquote><p>Désinstaller et réinstaller Firestone a fonctionné pour moi</p><p>J’ai résolu le problème en ajoutant à la liste noire dans GoodbyeDPI <a href=\"https://static.firestoneapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/</a></p><p>Ces deux manipulations s’appliquent spécifiquement aux personnes utilisant GoodbyeDPI. Pour que cela fonctionne dans Google Chrome, vous devez aller sur chrome://flags et désactiver trois drapeaux spécifiques :</p><ol><li>#enable-quic</li><li>#enable-tls-kyber</li><li>#use-ml-kem</li></ol><p>Puisque certaines personnes semblent seulement avoir des problèmes avec cloudflare-ech.com (le site a été banni de certains fournisseurs en Russie il y a quelques jours), l’ajouter au blacklist txt résout le problème. J’ajouterais également static.firestoneapp.com à cette liste, mais ce n’était pas nécessaire dans mon cas.</p><p>D’abord, j’ai envoyé un ping à Cloudflare depuis un invité de commandes cmd quelques fois pour obtenir des adresses IP. Puis j'ai créé une règle pare-feu Windows pour bloquer toutes les connexions des IP récupérées uniquement pour Overwolf.exe. Il peut être nécessaire de réinstaller Firestone par la suite :</p></blockquote>",
-                    "more": "<blockquote><p>Activez le VPN sur votre ordinateur, installez Hearthstone, supprimez votre programme dans Overwolf, téléchargez-le à nouveau, désactivez le VPN et tout devrait fonctionner. Effectuez ces opérations avant chaque lancement du jeu. Valable pour la Russie.</p><p>Le problème venait sûrement du blocage de cloudflare-ech.com en Russie. J’ai résolu ce problème en mettant à jour l’application que moi et quelques personnes utilisons pour outrepasser les blocages de Discord (elle fonctionne de manière similaire à GoodbyeDPI) vers une version supérieure à 1.5.2, où cloudflare-ech.com a été ajouté à la liste noire. L’application : <a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>. Puisque l’application semble être populaire en Russie, la mettre à jour vers une version supérieure à 1.5.2 devrait aider certaines personnes.</p></blockquote>"
+                    "more": "<blockquote><p>Activez le VPN sur votre ordinateur, installez Hearthstone, supprimez votre programme dans Overwolf, téléchargez-le à nouveau, désactivez le VPN et tout devrait fonctionner. Effectuez ces opérations avant chaque lancement du jeu. Valable pour la Russie.</p><p>Le problème venait sûrement du blocage de cloudflare-ech.com en Russie. J’ai résolu ce problème en mettant à jour l’application que moi et quelques personnes utilisons pour outrepasser les blocages de Discord (elle fonctionne de manière similaire à GoodbyeDPI) vers une version supérieure à 1.5.2, où cloudflare-ech.com a été ajouté à la liste noire. L’application : <a href=\"https://github.com/Flowseal/zapret-discord-youtube/releases\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/Flowseal/zapret-discord-youtube/releases</a>. Puisque l’application semble être populaire en Russie, la mettre à jour vers une version supérieure à 1.5.2 devrait aider certaines personnes.</p></blockquote>",
+                    "title": "Problèmes de connexion (Russie)"
                 },
                 "widgets-not-showing": {
-                    "body": "<p>Si certains widgets ne s’affichent pas (par exemple, si vous ne voyez pas votre decktracker, mais que vous voyez à quel tour les cartes ont été piochées dans la main de votre adversaire), il est possible que ces widgets soient sortis de l’écran. Vous pouvez réinitialiser la position de tous les widgets à l’aide de ce bouton dans les Paramètres :</p>"
+                    "body": "<p>Si certains widgets ne s’affichent pas (par exemple, si vous ne voyez pas votre decktracker, mais que vous voyez à quel tour les cartes ont été piochées dans la main de votre adversaire), il est possible que ces widgets soient sortis de l’écran. Vous pouvez réinitialiser la position de tous les widgets à l’aide de ce bouton dans les Paramètres :</p>",
+                    "title": "Certains widgets ne s’affichent pas"
                 },
                 "incompatible-software": {
-                    "body": "<p>Si l’un de ces programmes est en cours d’exécution, essayez de le fermer, puis fermez Hearthstone, redémarrez Overwolf et réessayez :</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>"
+                    "body": "<p>Si l’un de ces programmes est en cours d’exécution, essayez de le fermer, puis fermez Hearthstone, redémarrez Overwolf et réessayez :</p><ul><li>RivaTuner</li><li>MSI AfterBurner</li><li>a-volute.nahimic</li></ul>",
+                    "title": "Logiciels incompatibles"
                 },
                 "virgin-media-web-safe": {
-                    "body": "<p>Si vous utilisez Virgin Media pour vous connecter (du moins depuis le Royaume-Uni), il semblerait que la fonction « Virgin Media Child Safe » puisse empêcher l accès à certaines données nécessaires au bon fonctionnement de Firestone. Je ne sais pas pourquoi ceci arrive, mais désactiver cette option semble résoudre le problème.</p><p>D’autres problèmes similaires ont été signalés avec Web Safe, et l’ajout d’une exception pour static.zerotoheroes.com semble résoudre le problème.</p>"
+                    "body": "<p>Si vous utilisez Virgin Media pour vous connecter (du moins depuis le Royaume-Uni), il semblerait que la fonction « Virgin Media Child Safe » puisse empêcher l accès à certaines données nécessaires au bon fonctionnement de Firestone. Je ne sais pas pourquoi ceci arrive, mais désactiver cette option semble résoudre le problème.</p><p>D’autres problèmes similaires ont été signalés avec Web Safe, et l’ajout d’une exception pour static.zerotoheroes.com semble résoudre le problème.</p>",
+                    "title": "Virgin Media, Web Safe"
                 },
                 "truncated-logs": {
-                    "body": "<p>Si l’application fonctionne pendant un certain temps, puis s’arrête soudainement après quelques parties, il est possible que la génération des logs de Hearthstone se soit arrêtée.</p><p>Suivez ces étapes :</p><ul><li>Fermez Hearthstone</li><li>Accédez au dossier d’installation de Hearthstone, où se trouve le fichier <code>Hearthstone.exe</code></li><li>Vérifiez si le fichier <code>client.config</code> y est présent<ul><li>S’il y est absent, créez-en un</li></ul></li><li>Remplacez le contenu du fichier <code>client.config</code> par ceci :<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>Redémarrez Hearthstone</li></ul><p>Si le jeu continue de se bloquer après cette manipulation, quelque chose ne va pas. Veuillez alors ouvrir un rapport de bug avec le bouton situé en haut à droite de la fenêtre principale de l’application :)</p>"
+                    "body": "<p>Si l’application fonctionne pendant un certain temps, puis s’arrête soudainement après quelques parties, il est possible que la génération des logs de Hearthstone se soit arrêtée.</p><p>Suivez ces étapes :</p><ul><li>Fermez Hearthstone</li><li>Accédez au dossier d’installation de Hearthstone, où se trouve le fichier <code>Hearthstone.exe</code></li><li>Vérifiez si le fichier <code>client.config</code> y est présent<ul><li>S’il y est absent, créez-en un</li></ul></li><li>Remplacez le contenu du fichier <code>client.config</code> par ceci :<pre><code>[Log]\nFileSizeLimit.Int=-1</code></pre></li><li>Redémarrez Hearthstone</li></ul><p>Si le jeu continue de se bloquer après cette manipulation, quelque chose ne va pas. Veuillez alors ouvrir un rapport de bug avec le bouton situé en haut à droite de la fenêtre principale de l’application :)</p>",
+                    "title": "L'application est bloquée / Les journaux sont bloqués"
                 },
                 "memory-reading-error": {
-                    "intro": "<p>L'erreur « Lecture de la mémoire » se produit lorsque l'application ne parvient pas à lire la mémoire du client du jeu. Ce problème est souvent dû à des autorisations ou à des droits d'accès (et le fait de l'exécuter en tant qu'administrateur permet donc généralement de le résoudre). Sous Windows 11, <a href=\"/faq#smart-app-control\">Smart App Control</a> peut également bloquer la DLL de lecture de mémoire de Firestone, même lorsque la fenêtre de superposition s'affiche.</p><p>Voici quelques détails supplémentaires sur toutes les étapes nécessaires pour exécuter l'application en tant qu'administrateur :</p>"
+                    "intro": "<p>L'erreur « Lecture de la mémoire » se produit lorsque l'application ne parvient pas à lire la mémoire du client du jeu. Ce problème est souvent dû à des autorisations ou à des droits d'accès (et le fait de l'exécuter en tant qu'administrateur permet donc généralement de le résoudre). Sous Windows 11, <a href=\"/faq#smart-app-control\">Smart App Control</a> peut également bloquer la DLL de lecture de mémoire de Firestone, même lorsque la fenêtre de superposition s'affiche.</p><p>Voici quelques détails supplémentaires sur toutes les étapes nécessaires pour exécuter l'application en tant qu'administrateur :</p>",
+                    "admin-steps": "<ul><li>Fermer HS</li><li>Fermer Overwolf</li><li>Modifier les raccourcis Firestone et/ou Overwolf pour les exécuter « en tant qu'administrateur »<ul><li>Les fichiers Overwolf.exe et OverwolfLauncher.exe doivent être exécutés en tant qu'administrateur</li><li>Vous pouvez également cliquer sur le bouton « Appliquer à tous les utilisateurs »</li></ul></li></ul>",
+                    "title": "Erreur de lecture de la mémoire / Exécuter en tant qu'administrateur",
+                    "after-admin": "<ul><li>Redémarrez Overwolf (certains utilisateurs ont dû redémarrer entièrement leur ordinateur)</li><li>. Vous pouvez ensuite redémarrer Hearthstone</li><li>. Si cela ne fonctionne toujours pas (même après <strong>et un redémarrage complet de l'ordinateur</strong>), vérifiez si Hearthstone s'exécute en tant qu'administrateur. Si c'est le cas, essayez de le lancer sans privilèges d'administrateur.</li><li>Si vous rencontrez toujours des problèmes, vous pouvez essayer d'accorder toutes les autorisations dans cet écran :</li></ul>"
                 },
                 "login-opens-overwolf": {
-                    "body": "<p>Le site web vous reconnecte à l'application de bureau via un lien de type « <code>firestoneapp://</code> ». Overwolf enregistre également ce protocole, ce qui permet à Windows de lancer Overwolf même si vous l'avez déjà fermé.</p><ul><li> Ouvrez <strong>les Paramètres Windows → Applications → Applications par défaut</strong></li><li> Recherchez <strong>Firestone Standalone</strong>, ou le protocole <code>firestoneapp</code></li><li> Définissez Firestone Standalone comme gestionnaire par défaut</li></ul><p> La fermeture d'Overwolf ne désenregistre pas le protocole. Firestone Standalone réenregistre <code>firestoneapp://</code> à chaque démarrage, mais Windows peut continuer à privilégier Overwolf tant que vous n'avez pas modifié l'application par défaut.</p>"
+                    "body": "<p>Le site web vous reconnecte à l'application de bureau via un lien de type « <code>firestoneapp://</code> ». Overwolf enregistre également ce protocole, ce qui permet à Windows de lancer Overwolf même si vous l'avez déjà fermé.</p><ul><li> Ouvrez <strong>les Paramètres Windows → Applications → Applications par défaut</strong></li><li> Recherchez <strong>Firestone Standalone</strong>, ou le protocole <code>firestoneapp</code></li><li> Définissez Firestone Standalone comme gestionnaire par défaut</li></ul><p> La fermeture d'Overwolf ne désenregistre pas le protocole. Firestone Standalone réenregistre <code>firestoneapp://</code> à chaque démarrage, mais Windows peut continuer à privilégier Overwolf tant que vous n'avez pas modifié l'application par défaut.</p>",
+                    "title": "La connexion lance Overwolf au lieu de Firestone Standalone"
                 },
                 "truncated-logs-other": {
-                    "body": "<p>Une désinstallation puis une réinstallation pourraient résoudre le problème :</p><blockquote><p> J'ai supprimé le fichier d'adresse %localappdata%\\Blizzard\\Hearthstone que vous m'avez indiqué, ainsi que tous les fichiers de cache de Hearthstone, puis j'ai réinstallé le jeu, et le problème a été résolu.</p></blockquote><p> Avez-vous un autre programme qui interagit avec Hearthstone ? Message d’un utilisateur chinois :</p><blockquote><p> J’ai trouvé la cause du problème : lorsque je lance le jeu via un lanceur spécifique à la Chine, les fichiers de journalisation du dossier Hearthstone disparaissent. Si je ne l’utilise pas pour lancer le jeu, il n’y a aucun problème.</p></blockquote>"
+                    "body": "<p>Une désinstallation puis une réinstallation pourraient résoudre le problème :</p><blockquote><p> J'ai supprimé le fichier d'adresse %localappdata%\\Blizzard\\Hearthstone que vous m'avez indiqué, ainsi que tous les fichiers de cache de Hearthstone, puis j'ai réinstallé le jeu, et le problème a été résolu.</p></blockquote><p> Avez-vous un autre programme qui interagit avec Hearthstone ? Message d’un utilisateur chinois :</p><blockquote><p> J’ai trouvé la cause du problème : lorsque je lance le jeu via un lanceur spécifique à la Chine, les fichiers de journalisation du dossier Hearthstone disparaissent. Si je ne l’utilise pas pour lancer le jeu, il n’y a aucun problème.</p></blockquote>",
+                    "title": "Si ça ne fonctionne pas"
                 },
                 "smart-app-control": {
                     "body": "<p>Windows 11 <strong>Smart App Control</strong> peut bloquer le fichier de lecture de mémoire de Firestone (<code>OverwolfUnitySpy.dll</code>). Lorsque cela se produit :</p><ul><li> Vous ne voyez pas les widgets dans le jeu</li><li>Redémarrer Firestone ou Hearthstone ne résout pas le problème</li><li>La fenêtre principale de Firestone (collection, statistiques) peut toujours fonctionner</li></ul><p> Pour vérifier si le contrôle intelligent des applications est activé : ouvrez <strong>Sécurité Windows → Contrôle des applications &amp; navigateur → Paramètres du contrôle intelligent des applications</strong>. Consultez la FAQ de Microsoft sur Smart App Control : <a href=\"https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions\" target=\"_blank\" rel=\"noopener noreferrer\"></a> .</p><p>Mettez à jour Firestone vers la dernière version. Les versions récentes signent le plugin de lecture de mémoire afin que Windows puisse l'autoriser. Si vous disposez déjà de la dernière version et que les superpositions restent vides, veuillez signaler un bug depuis l'application.</p>"
                 },
                 "mainland-china": {
-                    "body": "<ul><li><p>J'ai entendu dire que si l'on installe à la fois le client « Chine continentale » et celui « Reste du monde », Firestone ne peut fonctionner que sur l'un des deux.</p><ul><li> Il semble que vous puissiez résoudre ce problème en accédant à l'écran « Collection » après vous être connecté</li></ul></li><li> <p> On m'a dit que si vous aviez installé à la fois le client « Chine continentale » et le client « Reste du monde », Firestone ne fonctionnerait que sur l'un d'entre eux.</p><ul><li> Il semble que vous puissiez résoudre ce problème en vous rendant sur l'écran « Collection » une fois connecté.</li></ul></li></ul>"
+                    "body": "<ul><li><p>J'ai entendu dire que si l'on installe à la fois le client « Chine continentale » et celui « Reste du monde », Firestone ne peut fonctionner que sur l'un des deux.</p><ul><li> Il semble que vous puissiez résoudre ce problème en accédant à l'écran « Collection » après vous être connecté</li></ul></li><li> <p> On m'a dit que si vous aviez installé à la fois le client « Chine continentale » et le client « Reste du monde », Firestone ne fonctionnerait que sur l'un d'entre eux.</p><ul><li> Il semble que vous puissiez résoudre ce problème en vous rendant sur l'écran « Collection » une fois connecté.</li></ul></li></ul>",
+                    "title": "对于中国大陆用户 — Pour les personnes en Chine continentale"
                 },
                 "game-is-slow-high-refresh": {
                     "body": "<p>Limiter le jeu à 60 FPS peut donner l’impression que le jeu à APM élevé est lent. Une meilleure alternative sur un écran à taux de rafraîchissement élevé consiste à fixer la limite légèrement en dessous du taux de rafraîchissement et à maintenir le rafraîchissement variable :</p><ul><li> Réglez le limiteur de frames du jeu et du GPU sur le taux de rafraîchissement de votre écran <strong>moins 6</strong> (par exemple, 144 Hz → 138 FPS)</li><li>Veillez à ce que <strong>G-Sync</strong> ou <strong>FreeSync</strong> soit activé et fonctionne correctement</li><li>Dans le Panneau de configuration NVIDIA ou NVIDIA Profile Inspector, réglez <strong>la synchronisation verticale</strong> sur <strong>Fast Sync</strong></li></ul><p> Valeurs types de NVIDIA Profile Inspector pour un écran à 144 Hz :</p><ul><li> Limiteur de fréquence d’images V3 : 138 FPS</li><li>GSYNC - Mode d'application : Plein écran et Fenêtré</li><li>GSYNC - État de l'application : Autoriser</li><li>GSYNC - Fonctionnalité globale : Activée</li><li>GSYNC - Mode global : Plein écran et Fenêtré</li><li>Synchronisation verticale : Fast Sync</li></ul>"
                 },
                 "no-cards": {
-                    "body": "<ul><li>Vérifiez si vous pouvez accéder à <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">, https://static.firestoneapp.com/data/cards/cards_enUS.gz.json et</a> depuis Chrome</li><li>. Si ce n'est pas le cas, cela signifie qu'il y a un problème avec votre routeur, votre FAI ou votre VPN qui bloque l'accès à AWS. Le contrôle parental est également une cause connue de ce problème.<ul><li>Les logiciels antivirus peuvent parfois bloquer l'accès ; essayez de les désactiver</li><li><strong> IMPORTANT</strong>: cela semble être une cause de plus en plus fréquente de problèmes ces derniers temps ; veuillez donc vérifier vos paramètres de contrôle parental (ainsi qu’auprès de votre FAI) et ajouter à la liste blanche <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> ainsi que <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li></ul></li> <li> Si rien ne fonctionne, envoyez-moi un e-mail à <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>"
+                    "body": "<ul><li>Vérifiez si vous pouvez accéder à <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">, https://static.firestoneapp.com/data/cards/cards_enUS.gz.json et</a> depuis Chrome</li><li>. Si ce n'est pas le cas, cela signifie qu'il y a un problème avec votre routeur, votre FAI ou votre VPN qui bloque l'accès à AWS. Le contrôle parental est également une cause connue de ce problème.<ul><li>Les logiciels antivirus peuvent parfois bloquer l'accès ; essayez de les désactiver</li><li><strong> IMPORTANT</strong>: cela semble être une cause de plus en plus fréquente de problèmes ces derniers temps ; veuillez donc vérifier vos paramètres de contrôle parental (ainsi qu’auprès de votre FAI) et ajouter à la liste blanche <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.zerotoheroes.com</a> ainsi que <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li></ul></li> <li> Si rien ne fonctionne, envoyez-moi un e-mail à <a href=\"mailto:support@firestoneapp.com\">support@firestoneapp.com</a></li></ul>",
+                    "title": "ERREUR CRITIQUE : impossible de charger la base de données des cartes"
+                },
+                "connectivity-issues-global": {
+                    "title": "Problèmes de connexion (mondial)",
+                    "body": "<ul><li>Essayez de désactiver votre antivirus, votre pare-feu ou votre VPN</li><li>. Si vous savez comment faire, ajoutez les domaines suivants à la liste blanche :<ul><li>, zerotoheroes.com,</li><li>, firestoneapp.com,</li><li>, amazonaws.com,</li><li>, overwolf.com,</li></ul>,</li><li>. La réinstallation de Firestone semble parfois résoudre le problème.</li></ul>"
+                },
+                "game-is-slow": {
+                    "body": "<ul><li>Si le jeu présente des saccades ou des animations « saccadées » lorsque Firestone est en cours d'exécution, vous pouvez essayer de limiter le nombre d'images par seconde (FPS) du jeu.<ul><li>Pour ce faire, modifiez le fichier options.txt d'<code></code> situé dans <code>%localappdata%\\Blizzard\\Hearthstone</code> et remplacez / ajoutez <code>targetframerate=60</code> par une valeur inférieure (j'utilise 60, d'autres utilisent 140 avec succès également)</li></ul></li><li> Certains utilisateurs ont constaté que la désactivation de G-Sync via la carte graphique aide</li><li><blockquote><p> J'ai un GPU AMD et je désactive simplement AMD FreeSync dans HS, ce qui élimine tout décalage.</p></blockquote></li></ul>"
+                },
+                "general-checklist": {
+                    "body": "<ul><li>Assurez-vous qu’Overwolf est bien en cours d’exécution <strong>avant</strong> de lancer Hearthstone</li><li>(surtout après un nouveau patch). Fermez HS, fermez Firestone, redémarrez Firestone, puis redémarrez HS. Cela forcera la mise à jour de l'application (la mise à jour pendant que le jeu est en cours d'exécution ne fonctionne pas toujours correctement)</li><li>Vérifiez si vous pouvez lancer Firestone sur le bureau (c'est-à-dire lorsque Hearthstone n'est pas en cours d'exécution). Si rien ne se passe :<ul><li>Veuillez consulter les autres sections ci-dessous (notamment celles en bas de cette page concernant les problèmes de connectivité à <a href=\"/faq#connectivity-issues-global\"></a> )</li><li>Si rien ne fonctionne, veuillez créer un fichier ZIP contenant les journaux et me l’envoyer manuellement (sur Discord par exemple). Consultez <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">pour savoir comment récupérer vos journaux Overwolf</a></li></ul></li> <li> Vérifiez (lorsque HS est en cours d’exécution) si vous disposez d’un fichier <code>Decks.log</code> dans le dossier d’installation de Hearthstone, sous <code>Logs/Hearthstone_XXX</code>. Si ce n’est pas le cas, redémarrez Hearthstone</li><li>. Essayez de désactiver votre antivirus et votre pare-feu, puis redémarrez Firestone</li><li>. Si Firestone clignote, cela peut être dû à une nouvelle application Lenovo appelée LegionZone. Essayez de la désactiver pour voir si cela résout le problème.</li><li>Vérifiez que l'horloge du jeu indique l'heure correcte. Ce problème peut survenir si l'heure système n'est pas configurée correctement ; en général, l'option « Ajuster automatiquement l'heure d'été » est désactivée</li></ul>"
+                },
+                "app-isnt-showing": {
+                    "body": "<ul><li>Assurez-vous qu’Overwolf est bien en cours d’exécution <strong>avant</strong> de lancer Hearthstone</li><li>Vérifiez que la superposition Overwolf est activée : <a href=\"https://support.overwolf.com/support/solutions/articles/9000178795-overwolf-game-settings\" target=\"_blank\" rel=\"noopener noreferrer\">Paramètres de jeu Overwolf</a></li><li> Lancez Hearthstone en tant qu’administrateur (vous devrez fermer Overwolf puis le relancer ensuite). Voir <a href=\"/faq#memory-reading-error\">Erreur de lecture de la mémoire / Exécuter en tant qu’administrateur</a></li><li> Sous Windows 11, Smart App Control peut bloquer le lecteur de mémoire de Firestone, ce qui fait que l’overlay reste vide. Voir <a href=\"/faq#smart-app-control\">Smart App Control</a></li><li> Vérifiez si vous pouvez accéder à <a href=\"https://static.firestoneapp.com/data/i18n/enUS.json\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/data/i18n/enUS.json</a> depuis <strong>Chrome</strong>. Si ce n’est pas le cas, cela signifie qu’il y a un problème avec votre routeur / FAI / VPN qui bloque l’accès à AWS. Le contrôle parental est également une cause connue de ce problème.<ul><li><strong> </strong> IMPORTANT : cela semble être une cause de plus en plus fréquente de problèmes ces derniers temps ; veuillez donc vérifier vos paramètres de contrôle parental (ainsi qu’auprès de votre FAI) et ajouter <a href=\"https://static.zerotoheroes.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static à la liste blanche.zerotoheroes.com</a> et <a href=\"https://static.firestoneapp.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com</a></li><li> Consultez également la section « Problèmes de connectivité avec <a href=\"/faq#connectivity-issues-global\">»</a> au bas de cette page</li></ul></li><li> Il a été constaté que DirectX 12 peut interférer avec le rendu de la superposition. Essayez de le désactiver pour voir si cela améliore la situation (À faire : instructions détaillées nécessaires)</li><li>Si rien ne fonctionne et que votre jeu est installé dans C:\\Program Files ou C:\\Program Files (x86), essayez de le déplacer vers un autre dossier. Ces dossiers sont protégés et peuvent poser des problèmes lorsque l'application tente de lire les informations du jeu</li></ul>",
+                    "title": "L'application ne s'affiche pas"
+                },
+                "images-are-not-showing": {
+                    "body": "<ul><li>Vérifiez si vous parvenez à afficher cette page <strong>à l'aide de Google Chrome :</strong>: <a href=\"https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png\" target=\"_blank\" rel=\"noopener noreferrer\">https://static.firestoneapp.com/cards/enUS/512/EX1_014t.png</a><ul><li> Si ce n'est pas le cas, cela signifie qu'un élément bloque l'accès au contenu de Firestone. Il s’agit généralement d’un pare-feu ou d’un antivirus installé sur votre ordinateur, mais cela peut parfois provenir de votre fournisseur d’accès Internet. Consultez <a href=\"/faq#other-things-to-try\">Autres solutions à essayer</a></li></ul></li> <li> Consultez la page <a href=\"/faq#connectivity-issues-global\">Problèmes de connectivité</a> sections en bas de la page</li><li>Si vous pouvez afficher le contenu dans votre navigateur, mais pas dans l’application, cela signifie que quelque chose empêche l’application d’accéder à ce contenu.<ul><li>Essayez de désactiver votre pare-feu et votre antivirus<blockquote><p>J’ai trouvé les paramètres du pare-feu et j’ai configuré tous les paramètres liés à « Overwolf » pour les autoriser, ce qui a résolu le problème.</p></blockquote></li><li> Si rien ne fonctionne, cela signifie probablement qu’une autre restriction de sécurité est en place, mais cela dépendra spécifiquement de votre ordinateur<ul><li>Si vous parvenez à résoudre ce problème, envoyez-moi un message et j’ajouterai votre solution comme option possible pour les autres utilisateurs :)</li></ul></li><li> La réinstallation de Firestone semble parfois aider</li></ul></li></ul>",
+                    "title": "Les images ne s’affichent pas"
+                },
+                "high-resource-usage": {
+                    "body": "<ul><li>Certains utilisateurs ont signalé une utilisation élevée du GPU, causée par l'application Outplayed. Si cela se produit, essayez de désactiver cette application.</li></ul>"
+                },
+                "no-cards-other": {
+                    "body": "<ul><li>Quelqu'un a réussi à résoudre le problème en forçant la fermeture d'Overwolf depuis le Gestionnaire des tâches, en fermant Hearthstone, puis en redémarrant Overwolf</li><li>. Lancer l'application en tant qu'administrateur pourrait également permettre de résoudre le problème.</li></ul>"
+                },
+                "memory-reading-other": {
+                    "body": "<ul><li>Vous pouvez également essayer d'exécuter « <code>sfc /scannow »</code> dans une invite de commande, car cela a résolu le problème pour au moins deux joueurs</li><li> « Fermer manuellement tous les processus liés à Hearthstone, Bnet, Overwolf, Firestone, etc., puis relancer Hearthstone et Firestone semble avoir résolu le problème. Un simple redémarrage de Hearthstone et d’Overwolf/Firestone via la barre d’état système n’a pas fonctionné »</li><li>Un utilisateur a réussi à résoudre ce problème en installant Overwolf dans le même sous-répertoire que Hearthstone (par exemple <code>D:\\Blizzard\\HS\\Hearthstone</code> et <code>D:\\Blizzard\\HS\\Overwolf</code>), cela vaut donc peut-être la peine d’essayer</li></ul>"
+                },
+                "game-is-crashing": {
+                    "body": "<ul><li>Consultez <a href=\"https://us.forums.blizzard.com/en/hearthstone/t/pc-crash-every-game-with-possible-solution/141218\" target=\"_blank\" rel=\"noopener noreferrer\">ce fil de discussion du forum Blizzard</a>. Vous devez ajouter le paramètre <code>-force-d3d11</code>, comme indiqué sur cette capture d'écran :</li><li>Des problèmes peuvent survenir avec RivaTuner / MSI AfterBurner. Voir <a href=\"https://support.overwolf.com/en/support/solutions/articles/9000177860-overwolf-and-conflicts-with-rivatuner\" target=\"_blank\" rel=\"noopener noreferrer\">Overwolf et les conflits avec RivaTuner</a></li><li> Si vous utilisez une carte graphique AMD, vous pouvez essayer de désactiver AMD Fluid Motion Frames 2</li><li>Un utilisateur a signalé que le jeu plantait en mode fenêtré, mais pas en plein écran.</li><li>Overwolf ne prend pas encore en charge les processeurs ARM, et son exécution sur une machine équipée d’un processeur ARM peut provoquer le plantage du jeu</li></ul>"
                 }
-            }
+            },
+            "permalink-aria": "Lien vers cette section",
+            "toc-title": "Sur cette page",
+            "images": {
+                "force-d3d11": "Options de lancement Battle.net avec le paramètre -force-d3d11"
+            },
+            "page-subtitle": "Problèmes courants et solutions pour Firestone."
         },
         "auth": {
             "callback": {
-                "fallback-suffix": "."
+                "fallback-suffix": ".",
+                "signing-in": "Connexion en cours...",
+                "hint": "Votre navigateur peut vous demander d’ouvrir l’app Firestone : choisissez Autoriser ou Ouvrir.",
+                "fallback-link": "Cliquez ici pour ouvrir Firestone",
+                "link-success": "Compte Battle.net lié !",
+                "success": "Succès !",
+                "fallback-prefix": "Si rien ne se passe, ",
+                "overwolf-hint": "Si Overwolf s'ouvre à la place de Firestone Standalone, <a href=\"/faq#login-opens-overwolf\">modifiez l'</a> ation de l'application par défaut de Windows pour les liens firestoneapp://.",
+                "failed": "⚠️ Échec de la connexion"
             },
-            "privacy-suffix": " "
+            "privacy-suffix": " ",
+            "errors": {
+                "no-code": "Aucun code d'autorisation n'a été reçu.",
+                "invalid-state": "Paramètre d’état non valide. Veuillez réessayer de vous connecter.",
+                "battlenet-not-configured": "La connexion Battle.net n’est pas disponible pour le moment. Veuillez réessayer plus tard.",
+                "generic": "Une erreur s'est produite. Veuillez réessayer.",
+                "cancelled": "L’authentification a été annulée ou refusée.",
+                "invalid-response": "Réponse d’authentification invalide.",
+                "missing-verifier": "Le vérificateur de code PKCE est manquant. Veuillez réessayer de vous connecter."
+            },
+            "subtitle": "Connectez-vous pour synchroniser vos données sur tous vos appareils",
+            "link-subtitle-overwolf": "Lier votre compte Firestone à Overwolf",
+            "continue-with-overwolf": "Continuer avec Overwolf",
+            "continue-with-battlenet": "Continuer avec Battle.net",
+            "privacy-prefix": "En vous connectant, vous acceptez nos ",
+            "coming-soon": "Prochainement",
+            "continue-with-google": "Continuer avec Google",
+            "link-subtitle": "Lier votre compte Firestone à Battle.net"
         },
         "docs": {
             "pages": {
@@ -5242,10 +5518,12 @@
                     "intro": "<p><strong>ATTENTION :</strong> ajouter des mods à Hearthstone vient à l’encontre des conditions d’utilisation du jeu et pourrait vous faire bannir. Utilisez ces programmes en connaissance de cause.</p><p><strong>ATTENTION :</strong> pour le moment, le gestionnaire de mods pour Firestone n’est disponible que dans la version bêta de l’application. Voir<a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/beta-test.md\" target=\"_blank\" rel=\"noopener noreferrer\">beta-test.md</a></p>",
                     "sections": {
                         "known-mods": {
-                            "body": "<p><strong>ATTENTION :</strong> ces mods sont créés et maintenus par la communauté, donc je ne peux pas vous venir en aide. Merci d’ouvrir un ticket Github sur les dépôts respectifs des mods à la place. Et comme indiqué ci-dessus, ajouter des mods à Hearthstone vient à l’encontre des conditions d’utilisation du jeu, je décline donc toute responsabilité quant à d’éventuels bans. Cependant, je les ai personnellement vérifiés, et je pense que ce qu’ils font est « sûr » et que vous ne risquez pas un bannissement (cependant, voyez bien l’avertissement en haut de page).</p><ul><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-auto-squelch\" target=\"_blank\" rel=\"noopener noreferrer\">AutoSquelch</a>. Cache les emotes de vos adversaires.</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-golden-buddy-tooltip\" target=\"_blank\" rel=\"noopener noreferrer\">Golden Buddy Tooltip</a>. Affiche une version dorée de votre Compagnon quand vous passez la souris sur votre bouton de Compagnon</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-show-collection-exact-count\" target=\"_blank\" rel=\"noopener noreferrer\">Show Collection Exact Card Count</a>. Remplace la mention « 9+ » dans la collection par le nombre exact de cartes possédées</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-remove-ghost-overlay\" target=\"_blank\" rel=\"noopener noreferrer\">Remove Collection Ghost Overlay</a>. Retire l’overlay fantomatique lorsque vous examinez des cartes que vous ne possédez pas dans la collection, ce qui vous permet de voir les détails de la carte, et de décider si vous voulez créer la carte, et admirer sa magnifique illustration.</li></ul>"
+                            "body": "<p><strong>ATTENTION :</strong> ces mods sont créés et maintenus par la communauté, donc je ne peux pas vous venir en aide. Merci d’ouvrir un ticket Github sur les dépôts respectifs des mods à la place. Et comme indiqué ci-dessus, ajouter des mods à Hearthstone vient à l’encontre des conditions d’utilisation du jeu, je décline donc toute responsabilité quant à d’éventuels bans. Cependant, je les ai personnellement vérifiés, et je pense que ce qu’ils font est « sûr » et que vous ne risquez pas un bannissement (cependant, voyez bien l’avertissement en haut de page).</p><ul><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-auto-squelch\" target=\"_blank\" rel=\"noopener noreferrer\">AutoSquelch</a>. Cache les emotes de vos adversaires.</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-golden-buddy-tooltip\" target=\"_blank\" rel=\"noopener noreferrer\">Golden Buddy Tooltip</a>. Affiche une version dorée de votre Compagnon quand vous passez la souris sur votre bouton de Compagnon</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-show-collection-exact-count\" target=\"_blank\" rel=\"noopener noreferrer\">Show Collection Exact Card Count</a>. Remplace la mention « 9+ » dans la collection par le nombre exact de cartes possédées</li><li><a href=\"https://github.com/Zero-to-Heroes/firestone-bepinex-remove-ghost-overlay\" target=\"_blank\" rel=\"noopener noreferrer\">Remove Collection Ghost Overlay</a>. Retire l’overlay fantomatique lorsque vous examinez des cartes que vous ne possédez pas dans la collection, ce qui vous permet de voir les détails de la carte, et de décider si vous voulez créer la carte, et admirer sa magnifique illustration.</li></ul>",
+                            "title": "Mods connus"
                         },
                         "installing": {
-                            "body": "<p>Vous devez d’abord activer la prise en charge des mods dans Firestone depuis Paramètres &gt;, puis Général &gt; Mods (le jeu doit être fermé).</p><p>Vous devez suivre les instructions spécifiques à chaque mod, mais la routine est la suivante :</p><ul><li>Copiez le fichier principal du mod dans le dossier <code>Hearthstone/BepInEx/plugins</code></li><li> Copiez les dépendances du mod dans le dossier <code>Hearthstone/BepInEx/plugins</code> (même dossier)</li></ul><p> Redémarrez le jeu. Le mod sera détecté dans Firestone au prochain démarrage du jeu avec le nouveau mod.</p>"
+                            "body": "<p>Vous devez d’abord activer la prise en charge des mods dans Firestone depuis Paramètres &gt;, puis Général &gt; Mods (le jeu doit être fermé).</p><p>Vous devez suivre les instructions spécifiques à chaque mod, mais la routine est la suivante :</p><ul><li>Copiez le fichier principal du mod dans le dossier <code>Hearthstone/BepInEx/plugins</code></li><li> Copiez les dépendances du mod dans le dossier <code>Hearthstone/BepInEx/plugins</code> (même dossier)</li></ul><p> Redémarrez le jeu. Le mod sera détecté dans Firestone au prochain démarrage du jeu avec le nouveau mod.</p>",
+                            "title": "Installation des mods"
                         },
                         "developing": {
                             "body": "<p>Firestone est fourni avec une version intégrée de <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>. C’est un moyen assez simple d’installer des mods pour ajouter des fonctionnalités au jeu. Vous pouvez également installer BepInEx par vous-même.</p><p>Référez-vous à la documentation de BepInEx pour développer des plugins BepInEx, ou regardez les mods existants. Vous pouvez également me mentionner sur <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a></p><p>Des fonctionnalités spécifiques à Hearthstone et Firestone (par exemple connaître l’état du deck des deux adversaires) seront disponibles lors de la création de vos mods. Vous pourriez en théorie construire un decktracker entièrement intégré :)</p>"
@@ -5254,17 +5532,30 @@
                             "body": "<p>Pour être reconnu par le Mod Manager de Firestone, votre mod doit comporter un fichier « Config » contenant les champs « Name », « Version », « Guid » et « DownloadLink » (pointant vers le dépôt). Les dépendances externes ne sont pas encore prises en charge ; n'hésitez pas à me contacter si vous en avez besoin.</p>"
                         },
                         "old-mods": {
-                            "body": "<p>Il s'agit de mods qui ne sont plus maintenus et qui ne fonctionnent plus. Si l'un d'entre eux vous intéresse, veuillez créer un ticket sur le dépôt du mod afin de demander au responsable de le mettre à jour pour le nouveau gestionnaire de mods de Firestone.</p><ul><li><a href=\"https://github.com/sebastientromp/hs-melon-hide-mercenary-emotes\" target=\"_blank\" rel=\"noopener noreferrer\"> Masquer les emotes des mercenaires</a>. Supprimer les répliques / bulles de certains mercenaires (par exemple, les portraits « Diamond »)</li><li><a href=\"https://github.com/sebastientromp/hs-melon-increase-game-speed-vs-ai\" target=\"_blank\" rel=\"noopener noreferrer\"> Augmenter la vitesse d’animation contre l’IA</a>. Permet de multiplier la vitesse d’animation par 4 lors des parties contre l’IA. <strong>AVERTISSEMENT :</strong> soyez prudent lorsque vous utilisez ce mod, car l’augmentation de la vitesse du jeu (même contre l’IA) pourrait être mal vue par Blizzard</li></ul>"
+                            "body": "<p>Il s'agit de mods qui ne sont plus maintenus et qui ne fonctionnent plus. Si l'un d'entre eux vous intéresse, veuillez créer un ticket sur le dépôt du mod afin de demander au responsable de le mettre à jour pour le nouveau gestionnaire de mods de Firestone.</p><ul><li><a href=\"https://github.com/sebastientromp/hs-melon-hide-mercenary-emotes\" target=\"_blank\" rel=\"noopener noreferrer\"> Masquer les emotes des mercenaires</a>. Supprimer les répliques / bulles de certains mercenaires (par exemple, les portraits « Diamond »)</li><li><a href=\"https://github.com/sebastientromp/hs-melon-increase-game-speed-vs-ai\" target=\"_blank\" rel=\"noopener noreferrer\"> Augmenter la vitesse d’animation contre l’IA</a>. Permet de multiplier la vitesse d’animation par 4 lors des parties contre l’IA. <strong>AVERTISSEMENT :</strong> soyez prudent lorsque vous utilisez ce mod, car l’augmentation de la vitesse du jeu (même contre l’IA) pourrait être mal vue par Blizzard</li></ul>",
+                            "title": "Anciens mods"
+                        },
+                        "configuration": {
+                            "body": "<p>Les joueurs peuvent modifier les options de votre mod depuis Firestone. Associez chaque option à l'aide de <code>Config.Bind</code> dans une section nommée <code>Firestone</code>. Une fois le plugin lancé, Firestone ajoute une page sous Paramètres > Mods, portant le nom du mod.</p><p>Seules les sections nommées <code>Firestone</code> ou <code>Firestone</code> suivies d'un groupe tel que <code>Firestone.Les fichiers de relecture</code> sont affichés. Les métadonnées <code>General</code> (<code>Name</code>, <code>Guid</code>, <code>Version</code>, <code>DownloadLink</code>, <code>Description</code>) restent dans la liste des mods.</p><pre><code> Config.Bind(\"Firestone\", \"EnableFoo\", true, \"Activer Foo\\nActive la fonctionnalité.\");\n\nConfig.Bind(\"Firestone.Replay\", \"Speed\", 1f,\n    new ConfigDescription(\"Vitesse de lecture\", new AcceptableValueRange<float>(0.5f, 4f)));\n\nConfig.Bind(\"Firestone\", \"Mode\", Mode.Fast, \"Mode à utiliser\");</code></pre> <p> La première ligne de la description correspond au libellé. Les lignes suivantes constituent l’info-bulle. <code>Firestone.Replay</code> est un groupe intitulé « Replay ». Une section simple <code>Firestone</code> ne comporte pas d’en-tête de groupe. Les paramètres apparaissent dans l’ordre des appels de la commande « Bind » <code></code> .</p><p>La page s’affiche une fois que le plugin s’est exécuté, car c’est à ce moment-là que BepInEx écrit le fichier cfg. La modification d’une valeur dans Firestone met à jour ce fichier, et le plugin le lit au prochain démarrage de Hearthstone. Si le jeu est déjà en cours d’exécution, Firestone demande au joueur de le redémarrer.</p>"
+                        },
+                        "not-ok": {
+                            "body": "<ul><li>Les mods qui vous confèrent un avantage déloyal / qui permettent de tricher</li><li>Les mods qui vous donnent accès à des éléments cosmétiques que vous n'avez pas encore débloqués</li><li>Plus généralement, tout mod qui vous donne accès à des éléments que vous devriez normalement acheter avec des ressources du jeu ou de l'argent réel, ou qui vont à l'encontre des intentions des développeurs</li></ul>",
+                            "title": "Les mods qui sont absolument inacceptables"
                         }
-                    }
+                    },
+                    "blurb": "Installez et développez vos mods Hearthstone via Firestone.",
+                    "subtitle": "Utilisez les mods de la communauté avec le gestionnaire de mods de Firestone basé sur BepInEx.",
+                    "title": "Mods"
                 },
                 "twitch": {
                     "sections": {
                         "capturing-main-and-battlegrounds": {
-                            "intro": "<p><em>Si streamer votre gameplay est la seule chose qui vous intéresse, vous pouvez probablement ignorer cette section.</em></p><p>Firestone possède deux fenêtres principales qui permettent de montrer vos stats à vos spectateurs et spectatrices : une spécifique à Champs de bataille, qui possède les stats de votre partie en cours, et une avec toutes les stats de vos parties précédentes. Par défaut, la fenêtre principale de Firestone et celle de Champs de bataille ne sont pas des overlays. Ceci signifie que vous pouvez les déplacer en dehors de la zone de jeu, mais aussi qu’elles ne sont pas capturées par le stream.</p><p>Pour les capturer, vous avez deux options :</p><ul><li>les déplacer sur un deuxième écran, et capturer l’écran entier</li><li>activer les deux options « Overlay » montrées ci-dessous. Ceci liera les fenêtres à l’écran de jeu (plus possible donc de les déplacer ailleurs) et permettra à OBS de les capturer automatiquement (changer ces paramètres peut forcer Firestone à redémarrer) :</li></ul>"
+                            "intro": "<p><em>Si streamer votre gameplay est la seule chose qui vous intéresse, vous pouvez probablement ignorer cette section.</em></p><p>Firestone possède deux fenêtres principales qui permettent de montrer vos stats à vos spectateurs et spectatrices : une spécifique à Champs de bataille, qui possède les stats de votre partie en cours, et une avec toutes les stats de vos parties précédentes. Par défaut, la fenêtre principale de Firestone et celle de Champs de bataille ne sont pas des overlays. Ceci signifie que vous pouvez les déplacer en dehors de la zone de jeu, mais aussi qu’elles ne sont pas capturées par le stream.</p><p>Pour les capturer, vous avez deux options :</p><ul><li>les déplacer sur un deuxième écran, et capturer l’écran entier</li><li>activer les deux options « Overlay » montrées ci-dessous. Ceci liera les fenêtres à l’écran de jeu (plus possible donc de les déplacer ailleurs) et permettra à OBS de les capturer automatiquement (changer ces paramètres peut forcer Firestone à redémarrer) :</li></ul>",
+                            "title": "Capture de la fenêtre principale et de la fenêtre Champs de bataille"
                         },
                         "capturing-the-tracker": {
-                            "body": "<p>Par défaut, cela devrait fonctionner sans problème. Cependant, si vos overlays Firestone n’apparaissent pas en jeu, vous pouvez consulter ce guide de dépannage :<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176947-how-to-show-overwolf-in-game-while-streaming\" target=\"_blank\" rel=\"noopener noreferrer\">Comment afficher Overwolf en jeu pendant un stream</a></p>"
+                            "body": "<p>Par défaut, cela devrait fonctionner sans problème. Cependant, si vos overlays Firestone n’apparaissent pas en jeu, vous pouvez consulter ce guide de dépannage :<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176947-how-to-show-overwolf-in-game-while-streaming\" target=\"_blank\" rel=\"noopener noreferrer\">Comment afficher Overwolf en jeu pendant un stream</a></p>",
+                            "title": "Capture du decktracker et des overlays"
                         },
                         "firestone-configuration": {
                             "intro": "<p>Vous devez d’abord vous connecter à Twitch depuis Firestone. Allez dans Paramètres &gt; Général &gt; Twitch</p>",
@@ -5275,9 +5566,12 @@
                             "body": "<p>Il ajoute une superposition de la liste de deck dans le navigateur, ce qui permet à vos utilisateurs de voir facilement la composition de votre deck, mais aussi de passer la souris sur les cartes et de copier le code du deck.</p><p>Il permet également à vos visiteurs de passer la souris sur les cartes présentes sur le plateau ou dans votre main pour découvrir en détail leurs effets.</p>"
                         },
                         "installing": {
-                            "body": "<p>Ensuite, vous devez installer l'extension Firestone pour Twitch depuis <a href=\"https://dashboard.twitch.tv/extensions/jbmhw349lqbus9j8tx4wac18nsja9u\" target=\"_blank\" rel=\"noopener noreferrer\">dans le tableau de bord de Twitch</a> (le lien est également disponible dans l'écran des paramètres de Firestone).</p><p>Il vous suffit ensuite de l'installer ; aucune configuration n'est nécessaire.</p><p><strong> ATTENTION :</strong> Il arrive parfois que Twitch vous déconnecte de Firestone. Ainsi, si vous ne voyez aucune superposition interactive sur votre chaîne, veuillez d'abord vérifier dans les paramètres de Firestone que vous êtes bien connecté à Twitch.</p>"
+                            "body": "<p>Ensuite, vous devez installer l'extension Firestone pour Twitch depuis <a href=\"https://dashboard.twitch.tv/extensions/jbmhw349lqbus9j8tx4wac18nsja9u\" target=\"_blank\" rel=\"noopener noreferrer\">dans le tableau de bord de Twitch</a> (le lien est également disponible dans l'écran des paramètres de Firestone).</p><p>Il vous suffit ensuite de l'installer ; aucune configuration n'est nécessaire.</p><p><strong> ATTENTION :</strong> Il arrive parfois que Twitch vous déconnecte de Firestone. Ainsi, si vous ne voyez aucune superposition interactive sur votre chaîne, veuillez d'abord vérifier dans les paramètres de Firestone que vous êtes bien connecté à Twitch.</p>",
+                            "title": "Installation de l’extension Twitch"
                         }
-                    }
+                    },
+                    "blurb": "Connectez Firestone à Twitch et enregistrez des superpositions pendant vos diffusions.",
+                    "subtitle": "Affiche votre decklist et les overlays de cartes à vos spectateurs et spectatrices sur Twitch."
                 },
                 "developer-resources": {
                     "sections": {
@@ -5287,28 +5581,383 @@
                         },
                         "general": {
                             "body": "<ul><li>Toutes les cartes : <a href=\"https://static.firestoneapp.com/data/cards/cards_enUS.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.firestoneapp.com/data/cards/cards_enUS.gz.json</code></a><ul><li> D'autres langues sont également disponibles en remplaçant <code>enUS</code> par un code de langue pris en charge par HS</li></ul></li></ul>"
+                        },
+                        "duels": {
+                            "body": "<ul><li>Héros / pouvoir de héros / trésor emblématique : <code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-%mmr%-%date%.gz.json</code></li><li> Decks les plus performants : <a href=\"https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-global-stats-hero-class-decks.gz.json</code></a></li><li> Paniers : <a href=\"https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/duels/duels-buckets.gz.json</code></a></li></ul>"
+                        },
+                        "battlegrounds": {
+                            "body": "<ul><li>Statistiques des héros : <code>https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-%tribeSuffix%-%timeSuffix%.gz.json</code><ul><li> par exemple : <a href=\"https://static.zerotoheroes.com/api/bgs/heroes/bgs-global-stats-all-tribes-last-patch.gz.json\" target=\"_blank\" rel=\"noopener noreferrer\">bgs-global-stats-all-tribes-last-patch.gz.json</a></li><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\"> cron-build-bgs-hero-stats</a></li></ul></li> <li> Parties parfaites : <a href=\"https://static.zerotoheroes.com/api/bgs-perfect-games.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>https://static.zerotoheroes.com/api/bgs-perfect-games.json</code></a><ul><li> <a href=\"https://github.com/Zero-to-Heroes/trigger-publish-bgs-perfect-game\" target=\"_blank\" rel=\"noopener noreferrer\"> trigger-publish-bgs-perfect-game</a></li></ul></li> <li> Statistiques des quêtes : <code>https://static.zerotoheroes.com/api/bgs/quests/bgs-global-stats-%timeSuffix%.gz.json</code><ul><li><a href=\"https://github.com/Zero-to-Heroes/cron-build-bgs-hero-stats\" target=\"_blank\" rel=\"noopener noreferrer\"> cron-build-bgs-hero-stats</a></li></ul></li></ul>",
+                            "title": "Champs de bataille"
                         }
                     },
                     "intro": "<p>Vous pouvez utiliser ces API directement pour créer des statistiques intéressantes, des infographies ou simplement pour le plaisir. Si vous publiez quoi que ce soit, n'oubliez pas de citer Firestone comme source des données.</p><p>Si vous souhaitez utiliser ces données pour une application publique, n'hésitez pas à me contacter sur Discord à l'adresse <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">.</a></p>"
                 },
                 "setup": {
-                    "intro": "<p>Je trouve que l'interface des paramètres est assez intuitive : les fonctionnalités sont regroupées par menus, et vous pouvez utiliser le champ de recherche en haut de la page pour trouver ce dont vous avez besoin.</p>"
+                    "intro": "<p>Je trouve que l'interface des paramètres est assez intuitive : les fonctionnalités sont regroupées par menus, et vous pouvez utiliser le champ de recherche en haut de la page pour trouver ce dont vous avez besoin.</p>",
+                    "sections": {
+                        "streamer": {
+                            "title": "Streamer",
+                            "body": "<ul><li>Vous pouvez activer l'extension Twitch depuis le menu « Intégrations » &gt; de Twitch (ou simplement rechercher « Twitch » dans la barre de recherche en haut de la page)</li></ul><p> (à compléter)</p>"
+                        },
+                        "general": {
+                            "body": "<ul><li>Dans la section « Widgets d'&gt; s globales », vous pouvez modifier l'échelle globale des widgets dans l'application.</li></ul>"
+                        }
+                    }
                 },
                 "lottery": {
                     "intro": "<p>La loterie Firestone vous offre la possibilité de remporter un abonnement de deux mois à Firestone Premium.</p><p>Vous pouvez participer à la loterie Firestone en laissant la fenêtre de la loterie ouverte et visible pendant que vous jouez (cela fonctionne également si vous suivez vos succès).</p><p>À chaque saison (actuellement de deux semaines), vous pouvez gagner des points en effectuant certaines actions dans le jeu, qui sont indiquées dans la fenêtre de la loterie. Chaque action vous rapporte des points, qui s'accumulent tout au long de la saison après chaque partie. À la fin de la saison, deux gagnants sont tirés au sort parmi tous les participants, en fonction du nombre de points que vous avez accumulés. Plus vous avez de points, plus vous avez de chances de gagner.</p>"
                 },
                 "creator-code": {
-                    "intro": "<p>La procédure est très simple : sur la page de paiement, il vous suffit de saisir le code qu'ils vous ont communiqué dans le champ indiqué ci-dessous :</p>"
+                    "intro": "<p>La procédure est très simple : sur la page de paiement, il vous suffit de saisir le code qu'ils vous ont communiqué dans le champ indiqué ci-dessous :</p>",
+                    "title": "Comment utiliser un code créateur",
+                    "sections": {
+                        "notes": {
+                            "body": "<ul><li>Ce code ne s'applique qu'à la première période d'abonnement. Je suis en pourparlers avec Tebex pour que ce code soit automatiquement réutilisé à chaque fois, mais en attendant, la meilleure façon de soutenir votre créateur chaque mois est de vous abonner avec le code, puis de résilier votre abonnement, avant de saisir à nouveau le code manuellement une fois votre abonnement actuel terminé.</li><li>Le code est valable pour tous les forfaits (mensuels / annuels)</li><li>En cas de problème, veuillez contacter @sebastientromp <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">sur Discord</a></li></ul>",
+                            "title": "Notes"
+                        }
+                    },
+                    "blurb": "Soutenez un créateur et bénéficiez d'une réduction en vous abonnant à Premium."
                 }
-            }
+            },
+            "back-label": "Tous les documents",
+            "permalink-aria": "Lien vers cette section",
+            "toc-title": "Sur cette page"
         },
         "monitoring": {
             "simulator": {
                 "legend-very-good": "Une précision > 0,5 est très bonne",
                 "legend-good": "Une précision > 0,5 est bonne",
                 "chart-label": "Précision",
-                "tooltip-accuracy": "Précision : {{accuracy}}"
+                "tooltip-accuracy": "Précision : {{accuracy}}",
+                "tooltip-version": "Version : {{version}}",
+                "page-title": "Précision du simulateur Champs de bataille",
+                "document-title": "Précision du simulateur Champs de bataille — Firestone",
+                "legend-needs-work": "En-dessous, du travail est nécessaire",
+                "loading": "Chargement des données de précision…",
+                "empty-range": "Aucune donnée n'est disponible pour la période sélectionnée.",
+                "resolution-daily": "Affichage des valeurs journalières.",
+                "resolution-monthly": "Affichage des totaux mensuels (la période sélectionnée dépasse 180 jours).",
+                "resolution-weekly": "Affichage des totaux hebdomadaires (la période sélectionnée dépasse 45 jours)."
             }
+        },
+        "premium": {
+            "sections": {
+                "arena": {
+                    "items": {
+                        "class-pick": {
+                            "text": "Utilisation illimitée de l’overlay de choix de classe",
+                            "screenshots": {
+                                "overlay": {
+                                    "alt": "Utilisation illimitée de l’overlay de choix de classe",
+                                    "caption": "Utilisation illimitée de l’overlay de choix de classe"
+                                }
+                            }
+                        },
+                        "mulligan-overlay": {
+                            "screenshots": {
+                                "guide": {
+                                    "alt": "Overlay du guide de mulligan en Arène",
+                                    "caption": "Utilisation illimitée de l’overlay de mulligan"
+                                }
+                            },
+                            "text": "Utilisation illimitée de l’overlay de mulligan"
+                        },
+                        "card-pick": {
+                            "screenshots": {
+                                "overlay": {
+                                    "caption": "Stats sur le choix des cartes dans l’overlay",
+                                    "alt": "Stats sur le choix des cartes dans l’overlay"
+                                }
+                            },
+                            "text": "Stats sur le choix des cartes dans l’overlay"
+                        },
+                        "runs-insights": {
+                            "screenshots": {
+                                "overview": {
+                                    "caption": "Informations supplémentaires sur vos virées en Arène",
+                                    "alt": "Informations supplémentaires sur vos virées en Arène"
+                                }
+                            },
+                            "text": "Informations supplémentaires sur vos virées en Arène"
+                        }
+                    },
+                    "title": "Arène"
+                },
+                "collection": {
+                    "title": "Collection",
+                    "items": {
+                        "pack-history": {
+                            "text": "Historique des cartes et des paquets",
+                            "screenshots": {
+                                "history": {
+                                    "caption": "Historique des cartes et des paquets",
+                                    "alt": "Historique des cartes et des paquets"
+                                }
+                            }
+                        }
+                    }
+                },
+                "battlegrounds": {
+                    "items": {
+                        "past-match-stats": {
+                            "screenshots": {
+                                "replays": {
+                                    "alt": "Les statistiques des rediffusions de Battlegrounds présentent un récapitulatif détaillé des statistiques des matchs passés"
+                                }
+                            }
+                        },
+                        "hero-page-extras": {
+                            "screenshots": {
+                                "hero-stats": {
+                                    "alt": "Extras de Champs de bataille avec les replays récents pour ce héros ou cette héroïne"
+                                }
+                            }
+                        },
+                        "auto-highlight": {
+                            "text": "Mettre automatiquement en surbrillance les serviteurs présents dans la taverne en fonction de votre héros"
+                        },
+                        "hero-selection": {
+                            "screenshots": {
+                                "overlay": {
+                                    "alt": "Fenêtre de sélection des héros de Battlegrounds affichant les choix de héros avec leurs niveaux et leurs statistiques pendant la phase de sélection"
+                                }
+                            }
+                        },
+                        "quest-rewards": {
+                            "screenshots": {
+                                "stats": {
+                                    "alt": "Statistiques des quêtes et des récompenses de Battlegrounds dans la fenêtre superposée"
+                                }
+                            }
+                        },
+                        "lobby-history": {
+                            "screenshots": {
+                                "scoreboard": {
+                                    "alt": "Historique du lobby de Battlegrounds affichant le bilan de victoires/défaites face aux autres joueurs de votre lobby"
+                                }
+                            }
+                        },
+                        "fight-by-fight": {
+                            "screenshots": {
+                                "chart": {
+                                    "alt": "Tableau de taux de victoires combat par combat dans Champs de bataille"
+                                }
+                            }
+                        },
+                        "post-match-stats": {
+                            "screenshots": {
+                                "stats": {
+                                    "alt": "Les statistiques d'après-match de Battlegrounds, qui fournissent de nombreuses données en cours de partie et après la partie"
+                                }
+                            }
+                        }
+                    },
+                    "title": "Champs de bataille"
+                },
+                "constructed": {
+                    "title": "Construit",
+                    "items": {
+                        "meta-by-rank": {
+                            "screenshots": {
+                                "decks": {
+                                    "alt": "Statistiques de méta générées automatiquement, présentant les decks de méta actuels au rang Légende"
+                                },
+                                "card-stats": {
+                                    "alt": "Statistiques méta générées présentant les caractéristiques détaillées des cartes de l'archétype « Herald Rogue »"
+                                },
+                                "archetypes": {
+                                    "alt": "Statistiques de méta générées présentant les archétypes actuels de la méta pour les joueurs de compétition"
+                                }
+                            }
+                        },
+                        "mulligan-overlay": {
+                            "screenshots": {
+                                "guide": {
+                                    "caption": "Utilisation illimitée de l’overlay de mulligan",
+                                    "alt": "Superposition du guide du mulligan construit"
+                                }
+                            },
+                            "text": "Utilisation illimitée de l’overlay de mulligan"
+                        },
+                        "discover-overlay": {
+                            "text": "Utilisation illimitée de l’overlay de stats de découverte"
+                        },
+                        "deck-overview": {
+                            "screenshots": {
+                                "details": {
+                                    "alt": "Aperçu du deck construit, présentant les récentes parties disputées avec ce deck"
+                                }
+                            }
+                        },
+                        "lobby-mulligan": {
+                            "screenshots": {
+                                "lobby": {
+                                    "alt": "Guide détaillé sur le « mulligan » accessible dans le hall avant de rejoindre une file d'attente pour une partie",
+                                    "caption": "Guide « Mulligan » disponible dans le hall d'accueil"
+                                }
+                            },
+                            "text": "Guide « Mulligan » accessible dans le hall avant de rejoindre une file d'attente pour une partie"
+                        }
+                    }
+                }
+            },
+            "carousel": {
+                "next": "Élément suivant",
+                "roledescription": "carrousel",
+                "gallery": "Galerie multimédia, {{count}} éléments",
+                "hint": "Faites glisser votre doigt ou utilisez les flèches pour parcourir"
+            },
+            "subscribe": {
+                "step-4": "Vous pouvez gérer ou annuler votre abonnement à tout moment depuis l'historique des paiements Tebex — les liens s'affichent dans l'écran « Premium ».",
+                "title": "Comment s’abonner",
+                "step-1": "Installez et ouvrez Firestone (Overwolf).",
+                "step-2": "Se connecter avec votre compte Overwolf quand une fenêtre apparaît."
+            },
+            "lightbox": {
+                "view-full-size": "Afficher en grand format : {{alt}}",
+                "close": "Fermer l'image en grand format"
+            },
+            "hero": {
+                "note": "Les abonnements s'achètent depuis l'application Firestone (onglet « Premium » ou icône en forme de cœur). Les tarifs sont indiqués lors du paiement dans l'application.",
+                "subtitle": "Profitez pleinement de l'expérience de l'application compagnon : des statistiques plus détaillées sur chaque écran, des superpositions illimitées dans le jeu, aucune publicité et davantage de moyens de progresser plus rapidement."
+            },
+            "summary": {
+                "unlimited-overlays": "Utilisation illimitée des overlays de mulligan et de découverte dans Hearthstone traditionnel, avec des overlays Champs de bataille pour les choix et les stats (la formule gratuite a des limites quotidiennes ou hebdomadaires)",
+                "battlegrounds": "Fenêtre de sélection des héros dans Battlegrounds, statistiques sur les quêtes et les récompenses, astuces, mise en évidence automatique, analyses du salon et bilans d'après-match",
+                "support": "Soutenir le développement continu de Firestone"
+            },
+            "free-tier": {
+                "arena": "Arène : {{discovers}} utilisations de découverte par jour ; {{mulligan}} utilisations du mulligan par jour ; {{draft}} utilisations de l’overlay de tirage par semaine",
+                "constructed": "En construit : {{discovers}} utilisations de l’overlay de découverte par jour ; {{mulligan}} utilisations du guide de mulligan par jour",
+                "battlegrounds": "Champs de bataille : {{heroSelection}} utilisations de l’overlay de sélection des héros par jour ; {{quests}} utilisations pour les Quêtes par jour ; {{trinkets}} utilisations pour les bibelots par jour ; {{timewarped}} utilisation des cartes chronodistordues par jour"
+            }
+        },
+        "downloads": {
+            "editions-label": "Éditions disponibles",
+            "social-proof": {
+                "title": "Utilisé par les champions",
+                "titles": {
+                    "summer-champion": "Champion été {{year}}",
+                    "world-champion": "Champion du monde {{year}}",
+                    "winter-champion": "Champion hiver {{year}}",
+                    "bg-eu-number-one": "Plusieurs top 1 européens Champs de bataille",
+                    "ua-eu-number-one": "Plusieurs top 1 européens en Arène"
+                },
+                "carousel": {
+                    "gallery": "{{count}} joueurs et joueuses utilisent Firestone",
+                    "roledescription": "carrousel",
+                    "next": "Champion suivant",
+                    "goto": "Afficher {{name}}"
+                },
+                "champions": {
+                    "otgxhh": {
+                        "alt": "OTGxhh, champion du monde de Hearthstone 2026, brandissant son trophée sur scène"
+                    },
+                    "demoshadow": {
+                        "alt": "Image officielle de Demoshadow, champion été 2026 de Hearthstone"
+                    },
+                    "kwanwoo": {
+                        "alt": "Illustration officielle de Kwanwoo, champion hiver 2026 de Hearthstone"
+                    },
+                    "mlyanming": {
+                        "alt": "Image officielle de mlYanming, champion du monde 2024 de Hearthstone"
+                    },
+                    "pockettrain": {
+                        "alt": "Image officielle de PocketTrain, champion du monde 2023 de Hearthstone"
+                    },
+                    "bunnyhoppor": {
+                        "alt": "Illustration officielle de Bunnyhoppor, champion du monde 2022 de Hearthstone"
+                    },
+                    "slyders": {
+                        "alt": "Slyders, multiple top 1 européen Champs de bataille"
+                    }
+                }
+            },
+            "overwolf": {
+                "badge": "Disponible dès maintenant"
+            },
+            "standalone": {
+                "title": "Autonome",
+                "discord-cta": "Demandez-nous sur Discord",
+                "badge": "Bêta fermée",
+                "discord-lead": "Un accès anticipé ?"
+            },
+            "features": {
+                "deck-tracker": {
+                    "caption": "Decktracker en jeu et overlays"
+                },
+                "related-cards": {
+                    "blurb": "Passez la souris sur une fiche de votre outil de suivi pour voir les fiches qu'elle génère ou auxquelles elle est liée, juste à côté de votre liste."
+                },
+                "overlays": {
+                    "title": "Overlays en jeu"
+                },
+                "collection": {
+                    "title": "Tracker de collection",
+                    "blurb": "Parcourez l'intégralité de votre collection, visualisez d'un seul coup d'œil les séries complètes et suivez vos paquets, vos compteurs de chance et vos exemplaires en double.",
+                    "alt": "Vue d’ensemble montrant la progression de complétion de chaque ensemble de cartes Hearthstone",
+                    "caption": "Vue d’ensemble de la collection par ensemble"
+                },
+                "battlegrounds": {
+                    "title": "Compagnon de champs de bataille",
+                    "blurb": "Parcourez la liste des serviteurs de la taverne par niveau, tribu ou mécanique, et découvrez les cotes de combat ainsi que les outils du salon.",
+                    "alt": "Liste des serviteurs de Battlegrounds classés par tribu, avec des filtres par niveau de taverne",
+                    "caption": "Liste des serviteurs de Battlegrounds"
+                },
+                "mods": {
+                    "title": "Mods",
+                    "caption": "Gestionnaire de mods intégré"
+                }
+            },
+            "lightbox": {
+                "close": "Fermer l'image en grand format",
+                "view-full-size": "Afficher en grand format : {{alt}}"
+            },
+            "premium": {
+                "title": "Des overlays illimités et des stats plus approfondies ?"
+            }
+        },
+        "uninstall": {
+            "document-title": "Désinstaller Firestone",
+            "page-title": "Nous sommes désolés de vous voir partir",
+            "page-subtitle": "Si cela ne vous dérange pas, nous aimerions savoir pourquoi vous désinstallez l'application : cela ne prend que quelques secondes.",
+            "reasons": {
+                "not-useful": "Je n’ai pas trouvé ça utile",
+                "reinstall": "J’ai eu un problème, et je désinstalle pour essayer de le résoudre",
+                "performance": "J’ai eu des problèmes de performance",
+                "overwolf": "J’aime l’application, mais je ne veux pas utiliser Overwolf",
+                "didnt-work": "Ça n’a pas du tout fonctionné",
+                "bugs": "Il y avait trop de bugs",
+                "stopped-playing": "J’ai arrêté de jouer à Hearthstone",
+                "competitor": "Je change d’application de bureau"
+            },
+            "standalone": {
+                "dismiss": "Non merci"
+            },
+            "faq": {
+                "title": "Quelques étapes simples suffisent généralement pour régler le problème",
+                "body": "Si rien ne s'affiche, il suffit généralement d'activer la superposition Hearthstone dans les paramètres d'Overwolf. Veuillez consulter la FAQ ci-dessous."
+            },
+            "premium": {
+                "body": "Un abonnement Premium permet de désactiver les publicités et de débloquer les superpositions et les statistiques supplémentaires.",
+                "dismiss": "Non merci"
+            },
+            "competitor": {
+                "placeholder": "Nom de l'application"
+            },
+            "comment": {
+                "body": "Quelques mots suffisent. Laissez vos coordonnées si vous voulez recevoir une réponse.",
+                "placeholder": "Que s’est-il passé ?",
+                "skip": "Passer",
+                "contact-placeholder": "adresse e-mail ou identifiant Discord"
+            },
+            "discord-lead": "Vous êtes toujours bloqué ?",
+            "thanks": {
+                "body": "Nous vous souhaitons le meilleur, et nous vous accueillerons à nouveau avec plaisir. Si vous avez laissé vos coordonnées, vous vous répondrons dès que possible."
+            }
+        },
+        "nav": {
+            "language": "Langue"
         }
     },
     "twitch": {
@@ -5358,7 +6007,9 @@
         "card-scale": "Taille des cartes",
         "card-scale-tooltip": "Modifier la taille des cartes en infobulles",
         "reconnect-for-chat-title": "Reconnectez-vous à Twitch pour activer !deck",
-        "reconnect-for-chat-text": "Veuillez aller dans les Paramètres et vous reconnecter à votre compte Twitch pour que les viewers puissent utiliser !deck dans le tchat"
+        "reconnect-for-chat-text": "Veuillez aller dans les Paramètres et vous reconnecter à votre compte Twitch pour que les viewers puissent utiliser !deck dans le tchat",
+        "lease-held-title": "Un autre appareil streame déjà sur cette chaîne",
+        "lease-held-text": "Cliquez ici pour ouvrir les paramètres et diffuser depuis cet ordinateur"
     },
     "archetype": {
         "mech-rogue": "Voleur Mécas",
@@ -6115,7 +6766,52 @@
         "xl-hl-aura-paladin": "Paladin aura singleton XL",
         "heal-burn-priest": "Prêtre soins burn",
         "xl-burnlock": "Démoniste burn XL",
-        "xl-tick-tock-warlock": "Guerrier Tique et Taque XL"
+        "xl-tick-tock-warlock": "Guerrier Tique et Taque XL",
+        "xl-hl-shadow-priest": "Prêtre ombre singleton XL",
+        "xl-hl-thief-priest": "Prêtre voleur singleton XL",
+        "xl-hl-imbue-rogue": "Voleur empreinte singleton XL",
+        "chad-seedlock": "Démoniste graine démoniaque Thaddius",
+        "infinity-paladin": "Paladin infini",
+        "mill-rogue": "Voleur meule",
+        "sneaky-ayaya-rogue": "Voleur Aya Camouflage",
+        "sneaky-harold-rogue": "Voleur convocation Camouflage",
+        "sneaky-rogue": "Voleur Camouflage",
+        "tyrande-priest": "Prêtre Tyrande",
+        "xl-hl-questline-mage": "Mage Suite de quêtes singleton XL",
+        "astral-druid": "Druide communion astrale",
+        "boar-otk-druid": "Druide sanglier OTK",
+        "champions-druid": "Druide champions d’Azeroth",
+        "jtu-quest-priest": "Prêtre Réveil des Faiseurs",
+        "mechathun-paladin": "Paladin Méc’Thun",
+        "naga-dh": "DH Nagas",
+        "sif-mage": "Mage Sif",
+        "star-grazer-druid": "Druide stellivore",
+        "xl-hl-big-spell-mage": "Mage gros sorts singleton XL",
+        "xl-hl-lpg-mage": "Mage Galaxie de poche singleton XL",
+        "xl-hl-rainbow-dk": "DK arc-en-ciel singleton XL",
+        "xl-lc-quest-priest": "Prêtre Sol’etos XL",
+        "xl-tog-dh": "DH Cire-Pilleur XL",
+        "igneous-warrior": "Guerrier élémentaire igné",
+        "lc-quest-warrior": "Guerrier Entrer dans la cité perdue",
+        "mine-rogue": "Voleur mine",
+        "ohnahra-shaman": "Chaman Ohn’ahra",
+        "sulthraze-warrior": "Guerrier Sul’thraze",
+        "warsong-warrior": "Guerrier chanteguerre",
+        "xl-demon-boarlock": "Démoniste sanglier Démons XL",
+        "xl-hl-questline-warrior": "Guerrier Suite de quêtes singleton XL",
+        "xl-hl-sou-quest-shaman": "Chaman Corruption des eaux singleton XL",
+        "xl-hl-thief-rogue": "Voleur voleur singleton XL",
+        "xl-igneous-odyn-warrior": "Guerrier Odyn élémentaire igné XL",
+        "kingsbane-rogue": "Voleur Plaie des rois",
+        "xl-kingsbane-rogue": "Voleur Plaie des rois XL",
+        "xl-lc-quest-shaman": "Chaman Esprit de la montagne XL",
+        "xl-lc-quest-warrior": "Guerrier Entrer dans la cité perdue XL",
+        "xl-shudderwock-shaman": "Chaman Carniflore XL",
+        "xl-warlock": "Démoniste XL",
+        "xl-questline-warrior": "Guerrier Suite de quêtes XL",
+        "odd-paladin": "Paladin impair",
+        "xl-egg-paladin": "Paladin œuf XL",
+        "xl-hl-exodia-paladin": "Paladin Exodia singleton XL"
     },
     "arena": {
         "overlay": {
@@ -6239,6 +6935,64 @@
         "demon_boost_shop": "Démons boosts de la taverne",
         "quilboar_choose_one": "Hurans Choix des armes",
         "pirate_discover": "Pirates découverte",
-        "beast_lobster": "Bêtes homard"
+        "beast_lobster": "Bêtes homard",
+        "beast_beetle": "Bêtes hannetons",
+        "mech_volumizer": "Mécas volumateurs"
+    },
+    "androidDeckTracker": {
+        "overlay": {
+            "mode": {
+                "battlegrounds": "Champs de bataille",
+                "legend": "Légende",
+                "casual": "Non classé",
+                "arena": "Arène",
+                "battlegroundsFriendly": "Champs de bataille",
+                "battlegroundsDuo": "Duos de champs de bataille",
+                "arenaUnderground": "Arène souterraine",
+                "mercenaries": "Mercenaires"
+            },
+            "readerLogs": "Aucun log",
+            "readerSetup": "Non configuré",
+            "league": {
+                "bronze": "Bronze",
+                "silver": "Argent"
+            },
+            "format": {
+                "classic": "Classique"
+            },
+            "notificationText": "Vos parties Hearthstone sont enregistrées",
+            "player": "Votre deck",
+            "unknownCard": "Carte inconnue"
+        },
+        "onboarding": {
+            "stepGrantTitle": "Autoriser Firestone",
+            "overlayPermission": "Autoriser l’affichage par-dessus d’autres applications",
+            "readyBody": "Démarrez une partie de Hearthstone. La decklist apparaît au-dessus de la partie.",
+            "signedInNote": "Vos parties sont synchronisées avec votre compte, et peuvent être récupérées dans l’application de bureau.",
+            "accountTitle": "Compte",
+            "signOut": "Déconnexion",
+            "stepGrantButton": "Autoriser Firestone",
+            "shizukuPermission": "Autoriser Firestone dans Shizuku",
+            "stepOverlayButton": "Autoriser la decklist",
+            "checkAgain": "Vérifier à nouveau",
+            "closeApp": "Fermer Firestone",
+            "shizukuInstall": "Installez Shinjuku",
+            "signInButton": "Se connecter avec Battle.net",
+            "signedIn": "Connexion active : {name}. Les parties terminées sont enregistrées sur ce compte.",
+            "shizukuStart": "Lancer Shizuku",
+            "website": "Site web",
+            "stepNearbyButton": "Autoriser",
+            "stepNearbyTitle": "Autoriser Firestone sur cet appareil",
+            "stepAllowInstallsTitle": "Autoriser les installations",
+            "stepWifiTitle": "Se connecter au Wi-Fi",
+            "setup": "Continuer",
+            "stepInstallTitle": "Installez l’assistant",
+            "stepPairButton": "Afficher le code",
+            "stepStartTitle": "Lancer l’assistant",
+            "progress": "Étape {current} sur {total}",
+            "pairWaiting": "Un bouton apparaîtra sur cette notification. Appuyez dessus pour ouvrir une zone de texte. Laissez l’écran de couplage ouvert.",
+            "pairClose": "Fermer",
+            "pairInputLabel": "Code à 6 chiffres"
+        }
     }
 }
