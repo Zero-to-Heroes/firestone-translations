@@ -1,5 +1,78 @@
 export type JsonObject = { [key: string]: any };
 
+const KEYWORD_PREFIX = 'GLOBAL_KEYWORD_';
+const BARE_TERM = /^«TERM:[^»]+»$/;
+
+/** Every GLOBAL_KEYWORD_* becomes mechanics.<suffix>, unless the explicit map already owns that path. */
+export const mechanicsFromKeywords = (
+	hsTerms: Record<string, string>,
+	explicitPaths: ReadonlySet<string>,
+): Record<string, string> => {
+	const extra: Record<string, string> = {};
+	for (const key of Object.keys(hsTerms)) {
+		if (!key.startsWith(KEYWORD_PREFIX)) {
+			continue;
+		}
+		const suffix = key.slice(KEYWORD_PREFIX.length).toLowerCase();
+		if (!suffix) {
+			continue;
+		}
+		const path = `mechanics.${suffix}`;
+		if (explicitPaths.has(path)) {
+			continue;
+		}
+		if (!hsTerms[key]?.trim()) {
+			continue;
+		}
+		extra[path] = key;
+	}
+	return extra;
+};
+
+/** Explicit map entries win over the generated keyword paths. */
+export const mergeTermMaps = (
+	explicitMap: Record<string, string>,
+	keywordMap: Record<string, string>,
+): Record<string, string> => {
+	return { ...keywordMap, ...explicitMap };
+};
+
+/**
+ * Paths whose first segment is a top-level locale key (`app.…`) are written on the locale root.
+ * Every other path stays relative to `global`, matching the existing map.
+ */
+export const splitTermMap = (
+	map: Record<string, string>,
+	rootKeys: ReadonlySet<string>,
+): { globalRelative: Record<string, string>; fromRoot: Record<string, string> } => {
+	const globalRelative: Record<string, string> = {};
+	const fromRoot: Record<string, string> = {};
+	for (const [path, termKey] of Object.entries(map)) {
+		const head = path.split('.')[0];
+		if (rootKeys.has(head)) {
+			fromRoot[path] = termKey;
+		} else {
+			globalRelative[path] = termKey;
+		}
+	}
+	return { globalRelative, fromRoot };
+};
+
+export const findBareTermTokens = (json: JsonObject, prefix = ''): string[] => {
+	const hits: string[] = [];
+	for (const [key, value] of Object.entries(json ?? {})) {
+		const path = prefix ? `${prefix}.${key}` : key;
+		if (typeof value === 'string') {
+			if (BARE_TERM.test(value.trim())) {
+				hits.push(`${path} = ${value.trim()}`);
+			}
+		} else if (value && typeof value === 'object' && !Array.isArray(value)) {
+			hits.push(...findBareTermTokens(value, path));
+		}
+	}
+	return hits;
+};
+
 export const buildConstructedGlobal = (
 	map: Record<string, string>,
 	hsTerms: Record<string, string>,

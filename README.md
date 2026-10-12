@@ -23,7 +23,9 @@ Two forms:
 
 You can mix tags with ngx-translate placeholders (`{{value}}`, `{{min}}`). Leave those as-is.
 
-Tags stay in Crowdin. `upload.sh` replaces them when building `dist/i18n`. An unknown tag or a cycle fails the upload. Add new tags only in `enUS.json`; other languages come from Crowdin.
+Tags stay in the source files. `upload.sh` replaces them when building `dist/i18n`. An unknown tag or a cycle fails the upload. Add new tags only in `enUS.json`; other languages come from Weblate.
+
+A string whose entire value is one `«TERM:…»` token fails the upload. If the whole string is an official client term, map the key in `hs-terms/global-map.json` instead of putting it in the locale file. Keywords (`GLOBAL_KEYWORD_*`) are published automatically as `global.mechanics.<suffix>`.
 
 ## AI-complete locale files (`{locale}-ai.json`)
 
