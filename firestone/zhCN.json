@@ -1716,7 +1716,8 @@
                     "example-boards-header": "点击查看示例战场阵容",
                     "example-boards": "示例战场阵容",
                     "example-boards-locked-tooltip": "升级会员查看这些流派在高分段中游戏终局时的示例阵容"
-                }
+                },
+                "loading-example-boards": "正在加载示例战场阵容"
             }
         },
         "duels": {
@@ -2964,7 +2965,10 @@
             "player": "本局对战中还需在随从牌上消耗{{value}}点法力值（已消耗{{spent}}点）"
         },
         "colossus-of-the-cold": {
-            "player": "冰寒巨人守护者解冻前，还需在法术牌上消耗{{value}}点法力值（已消耗{{spent}}点）"
+            "player": "“冰寒巨人守护者”解冻前，还需在法术牌上消耗{{value}}点法力值（已消耗{{spent}}点）"
+        },
+        "bgs-tavern-spells-cast": {
+            "player": "你在本局对战中已施放了{{value}}个酒馆法术"
         }
     },
     "loading": {
@@ -3267,7 +3271,7 @@
         "unknown-info": "未知 {{info}}",
         "unknown-big-minion": "未知的{{cost}}+费随从",
         "card-dredged-tooltip": "被探底",
-        "card-tooltip-scroll-text": "按住“Shift”键可在鼠标离开卡牌时保持窗口开启并滚动卡牌。点击任意位置关闭。",
+        "card-tooltip-scroll-text": "按住“{{ binding }}”键可在鼠标离开卡牌时保持窗口开启并滚动卡牌。点击任意位置关闭。",
         "unknown-mana-minion": "未知的{{manaCost}}费随从",
         "overlay": {
             "mulligan": {
@@ -4510,12 +4514,16 @@
                 "battlegrounds": "显示/隐藏酒馆战棋窗口",
                 "collection": "显示/隐藏主窗口",
                 "live-info": "显示实时信息",
-                "intro": "修改用于显示或隐藏 Firestone 窗口的按键。点击更改，然后按新的组合键。Esc 取消。",
+                "intro": "点击“更改”，然后按下新的快捷键组合，即可更改 Firestone 中使用的键盘快捷键。对于卡池提示，你也可以点击鼠标侧键，或单独按 Shift、Ctrl 或 Alt。按 Esc 可取消。",
                 "change": "修改",
                 "listening": "按一个键...",
                 "reset": "重置",
                 "conflict": "这个组合键已被{{hotkey}}占用。",
-                "failed": "无法设置此快捷键。它可能已被其他应用占用。"
+                "failed": "无法设置此快捷键。它可能已被其他应用占用。",
+                "live-info-tooltip": "在酒馆战棋对局中按住此按键，可显示更多排行榜详情：酒馆等级、伙伴、三连、连胜、随从类型、伤害、饰品和任务。",
+                "scroll-pools-tooltip": "按住此键可保持卡牌提示框打开，方便滚动浏览卡牌池。你可以单独绑定 Shift、Ctrl 或 Alt，也可以绑定组合键或鼠标侧键。",
+                "scroll-pools": "滚动卡池",
+                "listening-scroll-pools": "请按一个按键或鼠标侧键..."
             }
         },
         "decktracker": {
@@ -4723,7 +4731,9 @@
                 "current-effects-label": "显示当前效果",
                 "current-effects-use-enchantment-name-label": "使用强化效果名称",
                 "current-effects-tooltip": "启用此功能，记牌器顶端会出现一个新的区块用于记录当前影响英雄或牌库的效果。",
-                "width-title": "宽度"
+                "width-title": "宽度",
+                "extra-info-label": "额外信息标记",
+                "extra-info-tooltip": "当已知对手手牌中的卡牌有法力值消耗降低等额外信息时，在卡牌上显示标记"
             },
             "your-deck": {
                 "ignore-decklist-label": "忽略套牌内容",
@@ -4964,7 +4974,7 @@
                     "aqir-goliath-label": "亚基巨怪",
                     "broodqueen-shakar-label": "巢穴女王沙卡尔",
                     "cthun-abilities-tooltip": "当“克苏恩，帝国之眼”在你的手牌或牌库中时，显示你已触发其四种技能中的几种。",
-                    "colossus-of-the-cold-tooltip": "当“伊希斯特”在你的手牌或牌库中时，显示还需消耗多少法力值用于施放法术牌。",
+                    "colossus-of-the-cold-tooltip": "当“冰寒巨人守护者”在你的手牌或牌库中时，显示还需消耗多少法力值用于施放法术牌。",
                     "uldir-runes-tooltip": "当“奥迪尔隔离区”在你的手牌或牌库中时，显示你已使用过的符文类型数量。",
                     "colossus-of-the-cold-label": "冰寒巨人守护者",
                     "ghuun-blood-runes-label": "戈霍恩鲜血符文",
@@ -5288,7 +5298,9 @@
                 "counter-cards-discarded-this-game-tooltip": "显示你在本局对战中丢弃了多少张卡牌",
                 "counter-deity-tooltip": "显示你的神明攻击力和生命值",
                 "counter-cards-discarded-this-game-label": "弃掉的卡牌",
-                "counter-deity-label": "神明"
+                "counter-deity-label": "神明",
+                "counter-tavern-spells-cast-label": "施放酒馆法术",
+                "counter-tavern-spells-cast-tooltip": "显示你在本局对战中已施放了多少个酒馆法术"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -7332,7 +7344,12 @@
         "mech_glambot": "炫彩机器人流机械",
         "dragon_shield": "圣盾流龙族",
         "mech_volumizer": "扩音机流机械",
-        "aberration_discard": "弃牌流畸变怪"
+        "aberration_discard": "弃牌流畸变怪",
+        "mech_apm": "手速流机械",
+        "elemental_azerite": "艾泽里特流元素",
+        "quilboar_felboar_spam": "邪能流野猪人",
+        "dragon_spell_power": "法强流龙族",
+        "elemental_tempest": "无羁雷暴流元素"
     },
     "androidDeckTracker": {
         "onboarding": {
