@@ -847,12 +847,12 @@
                 },
                 "owned": {
                     "all": "全部",
-                    "own": "已擁有",
-                    "dontown": "未擁有",
-                    "missingplayablecopies": "僅缺失的可用卡牌",
-                    "goldenown": "已擁有金卡",
-                    "notpremiumnotcompleted": "僅缺失的（非金卡）",
-                    "notcompleted": "僅缺失的（金卡和非金卡）"
+                    "own": "僅顯示擁有的卡牌",
+                    "dontown": "僅顯示未擁有的卡牌",
+                    "missingplayablecopies": "僅顯示缺少可對戰副本的卡牌",
+                    "goldenown": "僅顯示擁有的金卡",
+                    "notpremiumnotcompleted": "僅顯示未集齊普通（非金卡）副本的卡牌",
+                    "notcompleted": "僅顯示未集齊副本的卡牌"
                 },
                 "rarity": {
                     "all": "任何稀有性",
@@ -1713,7 +1713,8 @@
                     "example-boards": "範例陣容",
                     "example-boards-header": "點選以檢視範例陣容",
                     "example-boards-locked-tooltip": "訂閱 Premium 以檢視高 MMR 玩家在對戰結束時的範例陣容"
-                }
+                },
+                "loading-example-boards": "正在載入範例陣容"
             }
         },
         "duels": {
@@ -2917,7 +2918,7 @@
             "player": "你的 {{cardName}} 體質為 {{atk}}/{{health}}"
         },
         "bgs-cards-discarded-this-game": {
-            "player": "你本賽局已捨棄 {{value}} 張卡牌"
+            "player": "本賽局你已捨棄 {{value}} 張卡牌"
         },
         "uldir-runes": {
             "player": "本賽局你已打出 3 種符文類型中的 {{value}} 種"
@@ -2942,6 +2943,9 @@
         },
         "nzoth-dreams-end": {
             "player": "本賽局你已召喚 {{value}} 個死亡之聲手下。「『夢境終結』恩若司」的費用為 {{cost}}"
+        },
+        "bgs-tavern-spells-cast": {
+            "player": "本賽局你已施放 {{value}} 個旅店法術"
         }
     },
     "loading": {
@@ -3244,7 +3248,7 @@
             "opponent": "對手",
             "you": "你"
         },
-        "card-tooltip-scroll-text": "將滑鼠移出卡牌時按住“Shift”鍵可保持此視窗開啟並捲動卡牌。點選任意位置將其關閉。",
+        "card-tooltip-scroll-text": "將滑鼠移開卡牌時按住 {{ binding }}，可保持此視窗開啟並滾動檢視卡牌。點選任意處即可關閉。",
         "overlay": {
             "mulligan": {
                 "deck-mulligan-filter-opponent-tooltip": "顯示對陣 {{opponent}} 的賽局。點選進行更改。",
@@ -3666,7 +3670,7 @@
                     },
                     "difficulty": {
                         "easy": "簡易",
-                        "medium": "中等",
+                        "medium": "普通",
                         "hard": "困難",
                         "very-hard": "非常困難"
                     },
@@ -4490,8 +4494,12 @@
                 "live-info": "顯示即時資訊",
                 "battlegrounds": "顯示/隱藏英雄戰場視窗",
                 "collection": "顯示/隱藏主視窗",
-                "intro": "變更用於顯示或隱藏 Firestone 視窗的快速鍵。點選「變更」，然後按下新的按鍵組合。按 Escape 可取消。",
-                "conflict": "此組合鍵已被 {{hotkey}} 使用。"
+                "intro": "變更 Firestone 所使用的快速鍵。點選「變更」，然後按下新的組合鍵。對於卡牌池，你也可以按下滑鼠側鍵，或單獨按下 Shift、Ctrl 或 Alt。按下 Escape 可取消。",
+                "conflict": "此組合鍵已被 {{hotkey}} 使用。",
+                "live-info-tooltip": "在英雄戰場賽局期間按住此鍵，可顯示額外的排行榜詳細資訊：旅店等級、夥伴、三合一卡牌、連勝數、手下類別、傷害、飾品與任務。",
+                "scroll-pools-tooltip": "按住此鍵可保持卡牌工具提示開啟，以便滾動檢視其卡牌池。你可以單獨綁定 Shift、Ctrl 或 Alt，亦可設定組合鍵或滑鼠側鍵。",
+                "listening-scroll-pools": "請按下按鍵或滑鼠側鍵…",
+                "scroll-pools": "滾動卡牌池"
             }
         },
         "decktracker": {
@@ -4521,7 +4529,7 @@
                 "show-deck-winrate": "顯示牌組勝率",
                 "show-deck-winrate-tooltip": "有資料時在記牌器上顯示此牌組的整體天梯勝率（僅標準或開放）",
                 "show-matchup-winrate": "顯示配對勝率",
-                "show-matchup-winrate-tooltip": "有資料時在記牌器上顯示此牌組對抗對方職業的整體天梯勝率（僅標準或開放）",
+                "show-matchup-winrate-tooltip": "有資料時在記牌器上顯示此牌組對抗對手職業的整體天梯勝率（僅標準或開放）",
                 "show-gifts-separately": "分別顯示非起始牌組的卡牌",
                 "reset-deck-position-after-trade": "交易後重設位置",
                 "reset-deck-position-after-trade-tooltip": "交換「可更換」卡牌後，該牌理論上會置於牌組底部。因此預設狀況下，進行交換時會清空「牌組頂端」與「牌組底部」區塊。若希望交換後仍保留這些區塊的原有數值，請關閉此選項。",
@@ -4629,9 +4637,9 @@
                     "attack-on-board-label": "場上攻擊力總和",
                     "attack-on-board-tooltip": "顯示敵人手下和英雄的攻擊力總和",
                     "watch-post-label": "哨所",
-                    "watch-post-tooltip": "顯示本賽局對方打出的哨所數量。只有在牌組或手牌中找到相關卡牌時啟用",
+                    "watch-post-tooltip": "顯示本賽局對手打出的哨所數量。只有在牌組或手牌中找到相關卡牌時啟用",
                     "libram-label": "聖契",
-                    "libram-tooltip": "顯示本賽局對方打出的聖契數量。只有在牌組或手牌中找到相關卡牌時啟用",
+                    "libram-tooltip": "顯示本賽局對手打出的聖契數量。只有在牌組或手牌中找到相關卡牌時啟用",
                     "elwynn-boar-label": "「艾爾文野豬」的死亡數量",
                     "elwynn-boar-tooltip": "顯示對手「艾爾文野豬」的死亡數量",
                     "volatile-skeleton-label": "「易變骷髏」死亡數",
@@ -4657,7 +4665,7 @@
                     "dead-minions-this-game-tooltip": "當對手是死亡騎士或他們手上／牌堆中有相關卡牌（例如「礦坑老大雷斯卡」），顯示本賽局死亡的手下數量",
                     "discovers-tooltip": "計算對手「發現」卡牌的次數",
                     "libram-reduction-tooltip": "顯示對手「聖契」總減少的費用",
-                    "cards-drawn-tooltip": "當對手牌堆中有「{{cardName}}」，或他們是 [{{cardClass}}] 卡時，顯示他們在本賽局抽到的牌數",
+                    "cards-drawn-tooltip": "當對手牌堆中有「{{cardName}}」，或他們是 [{{cardClass}}] 職業牌時，顯示他們在本賽局已抽取的卡牌數量",
                     "abyssal-curse-tooltip": "顯示對手最高的深淵詛咒傷害",
                     "damage-taken-on-your-turn-tooltip": "當對手使用的職業為 [{{classes}}] 時，提供對手在他們回合所受到的傷害資訊（次數與總傷害）",
                     "protoss-spells-tooltip": "顯示對手本賽局已施放的神族法術數量。只有當他們是法師並且至少施放過一次神族法術時才會顯示",
@@ -4699,7 +4707,9 @@
                 "current-effects-use-enchantment-name-tooltip": "啟用時，將會使用光環效果的名稱來替代卡牌的名稱",
                 "current-effects-label": "顯示目前的光環效果",
                 "current-effects-tooltip": "啟用時，記牌器頂端會出現一個新的區塊，顯示目前影響玩家或牌堆的光環效果",
-                "width-title": "寬度"
+                "width-title": "寬度",
+                "extra-info-label": "額外資訊標記",
+                "extra-info-tooltip": "當得知對手手牌的額外資訊（例如費用減少）時，在卡牌上顯示標記"
             },
             "your-deck": {
                 "ignore-decklist-label": "忽略牌組清單",
@@ -4942,7 +4952,7 @@
                     "broodqueen-shakar-label": "「育母沙卡」",
                     "aqir-goliath-tooltip": "當你手牌或牌堆中有「亞基巨像」時，顯示你本回合已打出的連擊牌數量",
                     "cthun-abilities-tooltip": "當你手牌或牌堆中有「『帝國之眼』克蘇恩」時，顯示你已觸發其四種能力中的幾種",
-                    "ghuun-blood-runes-tooltip": "當你手牌或牌堆中有「古翰」時，顯示你本賽局已打出的血魄符文數量",
+                    "ghuun-blood-runes-tooltip": "當你手牌或牌堆中有「古翰」時，顯示本賽局你已打出的血魄符文數量",
                     "uldir-runes-tooltip": "當你手牌或牌堆中有「奧迪爾隔離」時，顯示你已打出的符文類型數量",
                     "nzoth-dreams-end-label": "「『夢境終結』恩若司」",
                     "yshaarj-titan-bane-label": "「『泰坦剋星』亞煞拉懼」",
@@ -5260,7 +5270,9 @@
                 "counter-deity-tooltip": "顯示古神的攻擊力與生命值",
                 "counter-cards-discarded-this-game-label": "卡牌（已捨棄）",
                 "counter-cards-discarded-this-game-tooltip": "顯示你在本賽局已捨棄的卡牌數量",
-                "counter-deity-label": "古神"
+                "counter-deity-label": "古神",
+                "counter-tavern-spells-cast-tooltip": "顯示本賽局你已施放的旅店法術數量",
+                "counter-tavern-spells-cast-label": "已施放旅店法術"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
@@ -7280,7 +7292,7 @@
         "shield_quilboar": "聖盾流野豬人",
         "eudora_pirates": "「尤多拉」流海盜",
         "evoker_dragons": "「炎鑄喚術師」流龍類",
-        "volumizer_mechs": "「音量機兵」流機械",
+        "volumizer_mechs": "音量機兵流機械",
         "boost_shop_quilboar": "旅店加加流野豬人",
         "frogger_beasts": "「跳躍蛙」流野獸",
         "nomi_elementals": "「糯米」流元素",
@@ -7349,8 +7361,13 @@
         "aberration_deathrattle": "死聲流變異怪",
         "mech_glambot": "華麗機器人流機械",
         "dragon_shield": "聖盾術流龍類",
-        "mech_volumizer": "「音量機兵」流機械",
-        "aberration_discard": "捨棄流變異怪"
+        "mech_volumizer": "音量機兵流機械",
+        "aberration_discard": "捨棄流變異怪",
+        "mech_apm": "手速流機械",
+        "elemental_azerite": "法術流(活化的艾澤萊晶岩)元素",
+        "quilboar_felboar_spam": "魔豬流野豬人",
+        "dragon_spell_power": "法術傷害流龍類",
+        "elemental_tempest": "無縛風暴流元素"
     },
     "androidDeckTracker": {
         "onboarding": {
