@@ -2,7 +2,13 @@
 	"decktracker": {
 		"card-tooltip-assemble-body": "ミニオン",
 		"card-tooltip-assemble-first": "前半",
-		"card-tooltip-assemble-second": "後半"
+		"card-tooltip-assemble-second": "後半",
+		"card-tooltip-assemble-appearance-rate": "出現率",
+		"card-tooltip-assemble-other-class": "{{ class }}以外",
+		"card-tooltip-assemble-pick": "ピック",
+		"card-tooltip-assemble-pick-rate": "ピック率",
+		"card-tooltip-assemble-sort-by": "並べ替え",
+		"gift-reborn-from": "蘇り：<br/>{{value}}"
 	},
 	"settings": {
 		"decktracker": {
@@ -20,17 +26,45 @@
 					"ghuun-blood-runes-tooltip": "グフーンが手札またはデッキにあるとき、この対戦でプレイした血のルーンの数を表示します",
 					"nzoth-dreams-end-label": "ンゾス、夢の終わり",
 					"nzoth-dreams-end-tooltip": "ンゾス、夢の終わりが手札またはデッキにあるとき、召喚した断末魔ミニオンの数と現在のコストを表示します",
-					"uldir-runes-label": "ウルディル隔離",
-					"uldir-runes-tooltip": "ウルディル隔離が手札またはデッキにあるとき、プレイしたルーンの種類数を表示します",
 					"yshaarj-titan-bane-label": "ヤシャラージ、タイタンの禍",
 					"yshaarj-titan-bane-tooltip": "ヤシャラージ、タイタンの禍が手札またはデッキにあるとき、ミニオンに使うマナがあとどれだけ必要かを表示します"
 				}
+			},
+			"global": {
+				"flavor-text-size": "フレーバーテキストのサイズ"
+			},
+			"opponent-deck": {
+				"counters": {
+					"cthun-abilities-label": "クトゥーンの能力",
+					"cthun-abilities-tooltip": "相手がクトゥーン、帝国の瞳を手札、デッキ、または盤面に持っているとき、4つの能力のうちいくつ発動したかを表示します"
+				},
+				"extra-info-label": "追加情報マーカー",
+				"extra-info-tooltip": "コスト減少など、追加情報が分かっているとき、相手の手札のカードにマーカーを表示します"
 			}
 		},
 		"general": {
 			"account": {
 				"link-battlenet-failed": "Battle.netの連携を開始できませんでした。後でもう一度お試しください。"
+			},
+			"hotkeys": {
+				"clear": "クリア",
+				"listening-scroll-pools": "キーまたはマウスのサイドボタンを押してください…",
+				"live-info-tooltip": "バトルグラウンドの対戦中にこのキーを押したままにすると、順位表の追加情報を表示します。酒場レベル、バディ、トリプル、連勝、タイプ、ダメージ、装飾品、クエスト。",
+				"scroll-pools": "カードプールをスクロール",
+				"scroll-pools-tooltip": "これを押したままにするとカードのツールチップが開いたままになり、カードプールをスクロールできます。Shift、Ctrl、Altの単独、キーの組み合わせ、またはマウスのサイドボタンを割り当てられます。"
+			},
+			"quests": {
+				"size-label": "クエストウィジェットのサイズ"
 			}
+		},
+		"battlegrounds": {
+			"overlay": {
+				"counter-tavern-spells-cast-label": "酒場の呪文の使用数",
+				"counter-tavern-spells-cast-tooltip": "この試合中に使用した酒場の呪文の数を表示します"
+			}
+		},
+		"global": {
+			"mark-all-read": "すべて既読にする"
 		}
 	},
 	"website": {
@@ -90,6 +124,19 @@
 				"body": "またいつでもお待ちしています。連絡先を残した場合は、できるだけ早くご返信します。",
 				"title": "教えていただきありがとうございます"
 			}
+		},
+		"constructed": {
+			"assemble": "合成",
+			"assemble-appearance-rate": "出現",
+			"assemble-appearance-rate-hint": "この選択肢が提示された頻度",
+			"assemble-base": "ベース",
+			"assemble-error": "合成プールを読み込めませんでした。後でもう一度お試しください。",
+			"assemble-left": "左",
+			"assemble-loading": "読み込み中...",
+			"assemble-pick-rate": "選択",
+			"assemble-pick-rate-hint": "提示されたときに選ばれた頻度",
+			"assemble-right": "右",
+			"cards": "カード"
 		}
 	},
 	"androidDeckTracker": {
@@ -152,6 +199,11 @@
 			"replay-info": {
 				"played-on-mobile": "モバイルでプレイ"
 			}
+		},
+		"battlegrounds": {
+			"compositions": {
+				"loading-example-boards": "サンプル盤面を読み込み中"
+			}
 		}
 	},
 	"counters": {
@@ -165,7 +217,8 @@
 			"player": "冷気の巨像の凍結が解けるまでに、スペルへ使うマナがあと{{value}}必要です（{{spent}}消費済み）"
 		},
 		"cthun-abilities": {
-			"player": "この対戦でクトゥーンの能力を4つのうち{{value}}個発動しました"
+			"player": "この対戦でクトゥーンの能力を4つのうち{{value}}個発動しました",
+			"opponent": "この対戦で相手はクトゥーンの能力を4つのうち{{value}}個発動しました"
 		},
 		"ghuun-blood-runes": {
 			"player": "この対戦で血のルーンを{{value}}個プレイしました"
@@ -173,11 +226,23 @@
 		"nzoth-dreams-end": {
 			"player": "この対戦で断末魔ミニオンを{{value}}体召喚しました。ンゾス、夢の終わりのコストは{{cost}}です"
 		},
-		"uldir-runes": {
-			"player": "この対戦で3種類のうち{{value}}種類のルーンのカードをプレイしました"
-		},
 		"yshaarj-titan-bane": {
 			"player": "この対戦でミニオンに使うマナがあと{{value}}必要です（{{spent}}消費済み）"
+		},
+		"bgs-tavern-spells-cast": {
+			"player": "この試合中、酒場の呪文を{{value}}回使用した"
+		}
+	},
+	"bgs-comp": {
+		"dragon_spell_power": "呪文ダメージドラゴン",
+		"elemental_azerite": "アゼライトエレメンタル",
+		"elemental_tempest": "テンペストエレメンタル",
+		"mech_apm": "APMメカ",
+		"quilboar_felboar_spam": "フェルボア連打キルボア"
+	},
+	"global": {
+		"mechanics": {
+			"cards_discarded_this_game": "破棄"
 		}
 	}
 }

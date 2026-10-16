@@ -29,7 +29,8 @@
 					"example-boards": "Przykładowe plansze",
 					"example-boards-header": "Kliknij, aby zobaczyć przykładowe plansze",
 					"example-boards-locked-tooltip": "Weź Premium, aby zobaczyć przykłady wysokiego MMR, jak te kompozycje wyglądają na końcu gry"
-				}
+				},
+				"loading-example-boards": "Wczytywanie przykładowych plansz"
 			}
 		},
 		"decktracker": {
@@ -195,7 +196,7 @@
 		"libram-aura-paladin": "Libram Aura Paladyn",
 		"logosh-warrior": "Lo'Gosh Wojownik",
 		"manastorm-mage": "Manastorm Mag",
-		"mechathun-priest": "Mech'Thun Kapłan",
+		"mechathun-priest": "Mecha'Thun Kapłan",
 		"merithra-druid": "Merithra Druid",
 		"mill-paladin": "Mill Paladyn",
 		"miracle-seedlock": "Cud Seedlock",
@@ -282,7 +283,7 @@
 		"kingsbane-rogue": "Kingsbane Łotr",
 		"lc-quest-warrior": "LC Zadanie Wojownik",
 		"linecracker-druid": "Linecracker Druid",
-		"mechathun-paladin": "Mech'Thun Paladyn",
+		"mechathun-paladin": "Mecha'Thun Paladyn",
 		"mill-rogue": "Mill Łotr",
 		"mine-rogue": "Mine Łotr",
 		"naga-dh": "Naga Łowca Demonów",
@@ -484,7 +485,12 @@
 		"aberration_discard": "Odrzut Aberracje",
 		"dragon_shield": "Shield Smoki",
 		"mech_glambot": "Glambot Mechy",
-		"mech_volumizer": "Volumizer Mechy"
+		"mech_volumizer": "Volumizer Mechy",
+		"dragon_spell_power": "Smoki obrażeń zaklęć",
+		"elemental_azerite": "Żywiołaki Azerit",
+		"elemental_tempest": "Żywiołaki Tempest",
+		"mech_apm": "Mechy APM",
+		"quilboar_felboar_spam": "Felboar-spam Kolcozwierze"
 	},
 	"counters": {
 		"ancestral-automaton": {
@@ -642,7 +648,8 @@
 			"player": "Zostało {{value}} many do wydania na zaklęcia, zanim Kolos Zimna się odmrozi (wydano {{spent}})"
 		},
 		"cthun-abilities": {
-			"player": "Uruchomiłeś {{value}} z 4 zdolności C'Thuna w tej grze"
+			"player": "Uruchomiłeś {{value}} z 4 zdolności C'Thuna w tej grze",
+			"opponent": "Przeciwnik uruchomił {{value}} z 4 zdolności C'Thuna w tej grze"
 		},
 		"ghuun-blood-runes": {
 			"player": "Zagrałeś {{value}} run krwi w tej grze"
@@ -650,11 +657,11 @@
 		"nzoth-dreams-end": {
 			"player": "Przyzwałeś {{value}} sług z Ostatnim tchnieniem w tej grze. N'Zoth, Kres Snu kosztuje {{cost}}"
 		},
-		"uldir-runes": {
-			"player": "Zagrałeś karty z {{value}} z 3 rodzajów run w tej grze"
-		},
 		"yshaarj-titan-bane": {
 			"player": "Zostało {{value}} many do wydania na sługi w tej grze (wydano {{spent}})"
+		},
+		"bgs-tavern-spells-cast": {
+			"player": "Rzuciłeś {{value}} zaklęć tawerny w tej grze"
 		}
 	},
 	"decktracker": {
@@ -706,7 +713,13 @@
 		"drawn-by-label": "Dobrana przez",
 		"card-tooltip-assemble-body": "Stronnik",
 		"card-tooltip-assemble-first": "Pierwsza połowa",
-		"card-tooltip-assemble-second": "Druga połowa"
+		"card-tooltip-assemble-second": "Druga połowa",
+		"card-tooltip-assemble-appearance-rate": "Częstość pojawiania się",
+		"card-tooltip-assemble-other-class": "Nie {{ class }}",
+		"card-tooltip-assemble-pick": "Wybierz",
+		"card-tooltip-assemble-pick-rate": "Współczynnik wyboru",
+		"card-tooltip-assemble-sort-by": "Sortuj wg",
+		"gift-reborn-from": "Odrodzenie z <br/> {{value}}"
 	},
 	"ftue": {
 		"experience": {
@@ -758,7 +771,8 @@
 	},
 	"global": {
 		"mechanics": {
-			"interactable_object": "Aktywacja"
+			"interactable_object": "Aktywacja",
+			"cards_discarded_this_game": "Odrzucenie"
 		},
 		"set": {
 			"azeroths_most_wanted": "Najbardziej poszukiwani Azeroth",
@@ -789,7 +803,9 @@
 				"counter-cards-discarded-this-game-label": "Odrzucone karty",
 				"counter-cards-discarded-this-game-tooltip": "Pokaż, ile kart odrzuciłeś w tej grze",
 				"counter-deity-label": "Bóstwo",
-				"counter-deity-tooltip": "Pokaż atak i zdrowie twojego Bóstwa"
+				"counter-deity-tooltip": "Pokaż atak i zdrowie twojego Bóstwa",
+				"counter-tavern-spells-cast-label": "Rzucone zaklęcia tawerny",
+				"counter-tavern-spells-cast-tooltip": "Pokaż, ile zaklęć tawerny rzuciłeś w tej grze"
 			}
 		},
 		"decktracker": {
@@ -802,7 +818,8 @@
 				"show-flavor-text-on-in-game-hover-tooltip": "Przy podglądzie karty w Hearthstone (ręka lub plansza) pokaż jej tekst fabularny w rogu powiadomień",
 				"individual-counters-size": "Rozmiar pojedynczych liczników",
 				"use-single-highlight-color": "Użyj jednego koloru podświetlenia",
-				"use-single-highlight-color-tooltip": "Użyj tego samego koloru dla każdego podświetlenia powiązanych kart zamiast innego koloru dla każdego priorytetu podświetlenia."
+				"use-single-highlight-color-tooltip": "Użyj tego samego koloru dla każdego podświetlenia powiązanych kart zamiast innego koloru dla każdego priorytetu podświetlenia.",
+				"flavor-text-size": "Rozmiar tekstu fabularnego"
 			},
 			"max-resources-widget": {
 				"show-corpses": "Pokaż Zwłoki",
@@ -830,8 +847,12 @@
 					"bashana-label": "Bashana",
 					"bashana-tooltip": "Pokaż, ile many zostało do rzucenia z Drzewców Bashany",
 					"flesh-giant-tooltip": "Pokaż, ile razy zdrowie bohatera przeciwnika zmieniło się w jego turach, gdy gra jako {{classes}}",
-					"herald-tooltip": "Pokaż aktualny poziom Heralda przeciwnika"
-				}
+					"herald-tooltip": "Pokaż aktualny poziom Heralda przeciwnika",
+					"cthun-abilities-label": "Zdolności C'Thuna",
+					"cthun-abilities-tooltip": "Gdy przeciwnik ma C'Thuna, Oko Imperium w ręce, w talii lub na polu bitwy, pokazuj, ile z czterech zdolności uruchomił"
+				},
+				"extra-info-label": "Znacznik dodatkowych informacji",
+				"extra-info-tooltip": "Pokaż znacznik na kartach w ręce przeciwnika, gdy znane są dodatkowe informacje, na przykład obniżenie kosztu"
 			},
 			"your-deck": {
 				"counters": {
@@ -906,8 +927,6 @@
 					"ghuun-blood-runes-tooltip": "Gdy masz G'huuna w ręce lub w talii, pokazuj, ile run krwi zagrałeś w tej grze",
 					"nzoth-dreams-end-label": "N'Zoth, Kres Snu",
 					"nzoth-dreams-end-tooltip": "Gdy masz N'Zotha, Kres Snu w ręce lub w talii, pokazuj, ile sług z Ostatnim tchnieniem przyzwałeś i jaki jest jego aktualny koszt",
-					"uldir-runes-label": "Kwarantanna Uldiru",
-					"uldir-runes-tooltip": "Gdy masz Kwarantannę Uldiru w ręce lub w talii, pokazuj, ile rodzajów run zagrałeś",
 					"yshaarj-titan-bane-label": "Y'Shaarj, Zguba Tytanów",
 					"yshaarj-titan-bane-tooltip": "Gdy masz Y'Shaarja, Zgubę Tytanów w ręce lub w talii, pokazuj, ile many musisz jeszcze wydać na sługi"
 				},
@@ -1108,20 +1127,29 @@
 				"collection": "Pokaż/ukryj główne okno",
 				"conflict": "Ta kombinacja jest już używana przez {{hotkey}}.",
 				"failed": "Nie udało się przypisać tego skrótu. Może już być używany przez inną aplikację.",
-				"intro": "Zmień klawisze służące do pokazywania lub ukrywania okien Firestone. Kliknij Zmień, a potem naciśnij nową kombinację. Escape anuluje.",
+				"intro": "Zmień skróty klawiaturowe używane w Firestone. Kliknij Zmień, a potem naciśnij nową kombinację. Dla pul kart możesz też kliknąć boczny przycisk myszy albo nacisnąć sam Shift, Ctrl lub Alt. Escape anuluje.",
 				"listening": "Naciśnij klawisz...",
 				"live-info": "Pokaż informacje na żywo",
 				"reset": "Resetuj",
-				"title": "Skróty"
+				"title": "Skróty",
+				"clear": "Wyczyść",
+				"listening-scroll-pools": "Naciśnij klawisz lub boczny przycisk myszy...",
+				"live-info-tooltip": "Przytrzymaj ten klawisz podczas gry w Battlegrounds, aby pokazać dodatkowe szczegóły rankingu: poziom tawerny, towarzysz, trójki, seria zwycięstw, plemiona, obrażenia, ozdoby i zadania.",
+				"scroll-pools": "Przewijaj pule kart",
+				"scroll-pools-tooltip": "Przytrzymaj, aby tooltip karty pozostał otwarty i można było przewijać jej pulę kart. Możesz przypisać sam Shift, Ctrl lub Alt, kombinację klawiszy albo boczny przycisk myszy."
 			},
 			"twitch": {
 				"another-pc-sending": "Obecnie nadawane z innego komputera na tym kanale",
 				"broadcast-from-this-pc": "Nadawaj z tego komputera",
 				"sending-overlay": "Obecnie nadawane z tego komputera"
+			},
+			"quests": {
+				"size-label": "Rozmiar widżetu zadania"
 			}
 		},
 		"global": {
-			"view-screenshot": "Zobacz zrzut ekranu"
+			"view-screenshot": "Zobacz zrzut ekranu",
+			"mark-all-read": "Oznacz wszystkie jako przeczytane"
 		},
 		"replay": {
 			"in-game-sharing": {
@@ -1962,6 +1990,19 @@
 				"body": "Życzymy wszystkiego dobrego i czekamy na twój powrót. Jeśli zostawiłeś kontakt, odezwiemy się tak szybko, jak to możliwe.",
 				"title": "Dziękujemy, że nam powiedziałeś"
 			}
+		},
+		"constructed": {
+			"assemble": "Składanie",
+			"assemble-appearance-rate": "Widziana",
+			"assemble-appearance-rate-hint": "Jak często oferowano tę opcję",
+			"assemble-base": "Baza",
+			"assemble-error": "Nie udało się wczytać pul Składania. Spróbuj ponownie później.",
+			"assemble-left": "Lewa",
+			"assemble-loading": "Wczytywanie...",
+			"assemble-pick-rate": "Wybrana",
+			"assemble-pick-rate-hint": "Jak często opcja była wybierana, gdy ją oferowano",
+			"assemble-right": "Prawa",
+			"cards": "Karty"
 		}
 	},
 	"widgets": {

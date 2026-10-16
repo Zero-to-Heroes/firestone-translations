@@ -29,7 +29,8 @@
 					"example-boards": "ตัวอย่างบอร์ด",
 					"example-boards-header": "คลิกเพื่อดูตัวอย่างบอร์ด",
 					"example-boards-locked-tooltip": "สมัครพรีเมียมเพื่อดูตัวอย่างบอร์ด MMR สูงว่าคอมป์เหล่านี้หน้าตาเป็นอย่างไรตอนจบเกม"
-				}
+				},
+				"loading-example-boards": "กำลังโหลดกระดานตัวอย่าง"
 			}
 		},
 		"decktracker": {
@@ -195,7 +196,7 @@
 		"libram-aura-paladin": "ตำรา Aura พาลาดิน",
 		"logosh-warrior": "Lo'Gosh วอร์ริเออร์",
 		"manastorm-mage": "Manastorm เมจ",
-		"mechathun-priest": "Mech'Thun พรีสต์",
+		"mechathun-priest": "Mecha'Thun พรีสต์",
 		"merithra-druid": "Merithra ดรูอิด",
 		"mill-paladin": "Mill พาลาดิน",
 		"miracle-seedlock": "Miracle Seedlock",
@@ -282,7 +283,7 @@
 		"kingsbane-rogue": "Kingsbane โร้ก",
 		"lc-quest-warrior": "LC เควส วอร์ริเออร์",
 		"linecracker-druid": "Linecracker ดรูอิด",
-		"mechathun-paladin": "Mech'Thun พาลาดิน",
+		"mechathun-paladin": "Mecha'Thun พาลาดิน",
 		"mill-rogue": "Mill โร้ก",
 		"mine-rogue": "Mine โร้ก",
 		"naga-dh": "นาก้า DH",
@@ -484,7 +485,12 @@
 		"aberration_discard": "อสูรวิปริต ทิ้ง",
 		"dragon_shield": "มังกร Shield",
 		"mech_glambot": "เมค Glambot",
-		"mech_volumizer": "เมค Volumizer"
+		"mech_volumizer": "เมค Volumizer",
+		"dragon_spell_power": "มังกรความเสียหายเวท",
+		"elemental_azerite": "ธาตุ Azerite",
+		"elemental_tempest": "ธาตุ Tempest",
+		"mech_apm": "เมค APM",
+		"quilboar_felboar_spam": "ควิลโบร์ Felboar สแปม"
 	},
 	"counters": {
 		"ancestral-automaton": {
@@ -642,7 +648,8 @@
 			"player": "ต้องใช้มานากับเวทอีก {{value}} ก่อนยักษ์แห่งความหนาวจะละลาย (ใช้ไป {{spent}})"
 		},
 		"cthun-abilities": {
-			"player": "คุณเรียกใช้ความสามารถของ C'Thun ไปแล้ว {{value}} จาก 4 อย่างในเกมนี้"
+			"player": "คุณเรียกใช้ความสามารถของ C'Thun ไปแล้ว {{value}} จาก 4 อย่างในเกมนี้",
+			"opponent": "คู่ต่อสู้ของคุณเรียกใช้ความสามารถของ C'Thun ไปแล้ว {{value}} จาก 4 อย่างในเกมนี้"
 		},
 		"ghuun-blood-runes": {
 			"player": "คุณเล่นรูนเลือดไป {{value}} อันในเกมนี้"
@@ -650,11 +657,11 @@
 		"nzoth-dreams-end": {
 			"player": "คุณอัญเชิญมินเนียนเสียงสุดท้ายไป {{value}} ตัวในเกมนี้ N'Zoth, จุดจบแห่งฝัน ราคา {{cost}}"
 		},
-		"uldir-runes": {
-			"player": "คุณเล่นการ์ดจากรูน {{value}} ใน 3 ชนิดในเกมนี้"
-		},
 		"yshaarj-titan-bane": {
 			"player": "ต้องใช้มานากับมินเนียนอีก {{value}} ในเกมนี้ (ใช้ไป {{spent}})"
+		},
+		"bgs-tavern-spells-cast": {
+			"player": "คุณร่ายคาถาโรงเตี๊ยมไปแล้ว {{value}} ครั้งในเกมนี้"
 		}
 	},
 	"decktracker": {
@@ -706,7 +713,13 @@
 		"drawn-by-label": "จั่วโดย",
 		"card-tooltip-assemble-body": "มินเนี่ยน",
 		"card-tooltip-assemble-first": "ครึ่งแรก",
-		"card-tooltip-assemble-second": "ครึ่งหลัง"
+		"card-tooltip-assemble-second": "ครึ่งหลัง",
+		"card-tooltip-assemble-appearance-rate": "อัตราการปรากฏ",
+		"card-tooltip-assemble-other-class": "ไม่ใช่ {{ class }}",
+		"card-tooltip-assemble-pick": "เลือก",
+		"card-tooltip-assemble-pick-rate": "อัตราเลือก",
+		"card-tooltip-assemble-sort-by": "เรียงตาม",
+		"gift-reborn-from": "คืนชีพจาก <br/> {{value}}"
 	},
 	"ftue": {
 		"experience": {
@@ -758,7 +771,8 @@
 	},
 	"global": {
 		"mechanics": {
-			"interactable_object": "เปิดใช้งาน"
+			"interactable_object": "เปิดใช้งาน",
+			"cards_discarded_this_game": "ทิ้ง"
 		},
 		"set": {
 			"azeroths_most_wanted": "อาชญากรที่ต้องการตัวที่สุดแห่งอะเซรอธ",
@@ -789,7 +803,9 @@
 				"counter-cards-discarded-this-game-label": "การ์ดที่ทิ้ง",
 				"counter-cards-discarded-this-game-tooltip": "แสดงจำนวนการ์ดที่คุณทิ้งในเกมนี้",
 				"counter-deity-label": "เทพ",
-				"counter-deity-tooltip": "แสดงพลังโจมตีและพลังชีวิตของเทพของคุณ"
+				"counter-deity-tooltip": "แสดงพลังโจมตีและพลังชีวิตของเทพของคุณ",
+				"counter-tavern-spells-cast-label": "คาถาโรงเตี๊ยมที่ร่าย",
+				"counter-tavern-spells-cast-tooltip": "แสดงจำนวนคาถาโรงเตี๊ยมที่คุณร่ายในเกมนี้"
 			}
 		},
 		"decktracker": {
@@ -802,7 +818,8 @@
 				"show-flavor-text-on-in-game-hover-tooltip": "เมื่อตรวจการ์ดใน Hearthstone (มือหรือสนาม) จะแสดงข้อความบรรยากาศที่มุมการแจ้งเตือน",
 				"individual-counters-size": "ขนาดตัวนับแต่ละอัน",
 				"use-single-highlight-color": "ใช้สีไฮไลต์สีเดียว",
-				"use-single-highlight-color-tooltip": "ใช้สีเดียวกันสำหรับไฮไลต์การ์ดที่เกี่ยวข้องทุกอัน แทนที่จะใช้สีต่างกันตามลำดับความสำคัญของไฮไลต์"
+				"use-single-highlight-color-tooltip": "ใช้สีเดียวกันสำหรับไฮไลต์การ์ดที่เกี่ยวข้องทุกอัน แทนที่จะใช้สีต่างกันตามลำดับความสำคัญของไฮไลต์",
+				"flavor-text-size": "ขนาดข้อความบรรยากาศ"
 			},
 			"max-resources-widget": {
 				"show-corpses": "แสดงศพ",
@@ -830,8 +847,12 @@
 					"bashana-label": "Bashana",
 					"bashana-tooltip": "แสดงมานาที่เหลือให้ร่ายจากทรีแอนท์ของ Bashana",
 					"flesh-giant-tooltip": "แสดงว่าพลังชีวิตฮีโร่ฝ่ายตรงข้ามเปลี่ยนกี่ครั้งในช่วงเทิร์นของพวกเขา เมื่อเล่นเป็น {{classes}}",
-					"herald-tooltip": "แสดงระดับ Herald ปัจจุบันของฝ่ายตรงข้าม"
-				}
+					"herald-tooltip": "แสดงระดับ Herald ปัจจุบันของฝ่ายตรงข้าม",
+					"cthun-abilities-label": "ความสามารถของ C'Thun",
+					"cthun-abilities-tooltip": "แสดงว่าคู่ต่อสู้เรียกใช้ความสามารถทั้งสี่ของ C'Thun, ดวงตาแห่งจักรวรรดิไปแล้วกี่อย่าง เมื่อมีมันในมือ ในเด็ค หรือบนกระดาน"
+				},
+				"extra-info-label": "เครื่องหมายข้อมูลเพิ่มเติม",
+				"extra-info-tooltip": "แสดงเครื่องหมายบนการ์ดในมือของคู่ต่อสู้เมื่อทราบข้อมูลเพิ่มเติม เช่น การลดค่าใช้จ่าย"
 			},
 			"your-deck": {
 				"counters": {
@@ -906,8 +927,6 @@
 					"ghuun-blood-runes-tooltip": "เมื่อคุณมี G'huun ในมือหรือในเด็ค แสดงว่าคุณเล่นรูนเลือดไปกี่อันในเกมนี้",
 					"nzoth-dreams-end-label": "N'Zoth, จุดจบแห่งฝัน",
 					"nzoth-dreams-end-tooltip": "เมื่อคุณมี N'Zoth, จุดจบแห่งฝันในมือหรือในเด็ค แสดงจำนวนมินเนียนเสียงสุดท้ายที่คุณอัญเชิญ และค่าใช้จ่ายปัจจุบัน",
-					"uldir-runes-label": "การกักกันอุลดีร์",
-					"uldir-runes-tooltip": "เมื่อคุณมีการกักกันอุลดีร์ในมือหรือในเด็ค แสดงว่าคุณเล่นรูนกี่ชนิด",
 					"yshaarj-titan-bane-label": "Y'Shaarj, หายนะแห่งไททัน",
 					"yshaarj-titan-bane-tooltip": "เมื่อคุณมี Y'Shaarj, หายนะแห่งไททันในมือหรือในเด็ค แสดงว่าต้องใช้มานากับมินเนียนอีกเท่าไร"
 				},
@@ -1108,20 +1127,29 @@
 				"collection": "แสดง/ซ่อนหน้าต่างหลัก",
 				"conflict": "ชุดคีย์นี้ถูกใช้โดย {{hotkey}} อยู่แล้ว",
 				"failed": "กำหนดปุ่มลัดนี้ไม่ได้ อาจถูกแอปอื่นใช้ไปแล้ว",
-				"intro": "เปลี่ยนปุ่มที่ใช้แสดงหรือซ่อนหน้าต่าง Firestone คลิกเปลี่ยน แล้วกดชุดคีย์ใหม่ Escape ยกเลิก",
+				"intro": "เปลี่ยนปุ่มลัดที่ใช้ใน Firestone คลิกเปลี่ยน แล้วกดชุดคีย์ใหม่ สำหรับพูลการ์ด คุณสามารถคลิกปุ่มข้างเมาส์ หรือกด Shift, Ctrl หรือ Alt เพียงปุ่มเดียวได้ Escape ยกเลิก",
 				"listening": "กดปุ่ม...",
 				"live-info": "แสดงข้อมูลสด",
 				"reset": "รีเซ็ต",
-				"title": "ปุ่มลัด"
+				"title": "ปุ่มลัด",
+				"clear": "ล้าง",
+				"listening-scroll-pools": "กดปุ่มหรือปุ่มข้างเมาส์...",
+				"live-info-tooltip": "กดปุ่มนี้ค้างไว้ระหว่างเกม Battlegrounds เพื่อแสดงรายละเอียดอันดับเพิ่มเติม: ระดับโรงเตี๊ยม, คู่หู, ทริปเปิล, สตรีควิน, เผ่า, ความเสียหาย, เครื่องประดับ และเควสต์",
+				"scroll-pools": "เลื่อนพูลการ์ด",
+				"scroll-pools-tooltip": "กดค้างไว้เพื่อให้ทูลทิปการ์ดเปิดอยู่ และเลื่อนพูลการ์ดได้ คุณสามารถผูก Shift, Ctrl หรือ Alt เพียงปุ่มเดียว ชุดคีย์ หรือปุ่มข้างเมาส์"
 			},
 			"twitch": {
 				"another-pc-sending": "กำลังออกอากาศจาก PC อื่นบนช่องนั้น",
 				"broadcast-from-this-pc": "ออกอากาศจาก PC นี้",
 				"sending-overlay": "กำลังออกอากาศจาก PC นี้"
+			},
+			"quests": {
+				"size-label": "ขนาดวิดเจ็ตเควสต์"
 			}
 		},
 		"global": {
-			"view-screenshot": "ดูภาพหน้าจอ"
+			"view-screenshot": "ดูภาพหน้าจอ",
+			"mark-all-read": "ทำเครื่องหมายว่าอ่านทั้งหมดแล้ว"
 		},
 		"replay": {
 			"in-game-sharing": {
@@ -1962,6 +1990,19 @@
 				"body": "ขอให้โชคดี และยินดีต้อนรับกลับเมื่อใดก็ได้ ถ้าคุณฝากช่องทางติดต่อไว้ เราจะตอบกลับโดยเร็วที่สุด",
 				"title": "ขอบคุณที่บอกเรา"
 			}
+		},
+		"constructed": {
+			"assemble": "ประกอบร่าง",
+			"assemble-appearance-rate": "ปรากฏ",
+			"assemble-appearance-rate-hint": "ตัวเลือกนี้ถูกเสนอบ่อยแค่ไหน",
+			"assemble-base": "ฐาน",
+			"assemble-error": "ไม่สามารถโหลดพูลประกอบร่างได้ โปรดลองอีกครั้งในภายหลัง",
+			"assemble-left": "ซ้าย",
+			"assemble-loading": "กำลังโหลด...",
+			"assemble-pick-rate": "ถูกเลือก",
+			"assemble-pick-rate-hint": "เมื่อถูกเสนอ ตัวเลือกนี้ถูกเลือกบ่อยแค่ไหน",
+			"assemble-right": "ขวา",
+			"cards": "การ์ด"
 		}
 	},
 	"widgets": {

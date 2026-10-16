@@ -29,7 +29,8 @@
 					"example-boards": "Tableros de ejemplo",
 					"example-boards-header": "Haz clic para ver tableros de ejemplo",
 					"example-boards-locked-tooltip": "Hazte Seguidor Premium para ver ejemplos de alto MMR de cómo lucen estas composiciones al final de la partida"
-				}
+				},
+				"loading-example-boards": "Cargando tableros de ejemplo"
 			}
 		},
 		"decktracker": {
@@ -282,7 +283,7 @@
 		"kingsbane-rogue": "Kingsbane Pícaro",
 		"lc-quest-warrior": "LC Quest Guerrero",
 		"linecracker-druid": "Linecracker Druida",
-		"mechathun-paladin": "Meca'Thun Paladin",
+		"mechathun-paladin": "Meca'Thun Paladín",
 		"mill-rogue": "Molino Pícaro",
 		"mine-rogue": "Mina Pícaro",
 		"naga-dh": "Naga DH",
@@ -484,7 +485,12 @@
 		"aberration_discard": "Aberraciones Descarte",
 		"dragon_shield": "Dragones Escudo",
 		"mech_glambot": "Mecas Glambot",
-		"mech_volumizer": "Mecas Volumizer"
+		"mech_volumizer": "Mecas Volumizer",
+		"dragon_spell_power": "Dragones de daño de hechizo",
+		"elemental_azerite": "Elementales de Azerita",
+		"elemental_tempest": "Elementales Tempest",
+		"mech_apm": "Mecas APM",
+		"quilboar_felboar_spam": "Jabaespín spam Felboar"
 	},
 	"counters": {
 		"ancestral-automaton": {
@@ -642,7 +648,8 @@
 			"player": "Te faltan {{value}} de maná por gastar en hechizos antes de que Coloso del Frío se descongele ({{spent}} gastado)"
 		},
 		"cthun-abilities": {
-			"player": "Activaste {{value}} de 4 habilidades de C'Thun en esta partida"
+			"player": "Activaste {{value}} de 4 habilidades de C'Thun en esta partida",
+			"opponent": "Tu oponente activó {{value}} de 4 habilidades de C'Thun en esta partida"
 		},
 		"ghuun-blood-runes": {
 			"player": "Jugaste {{value}} runas de sangre en esta partida"
@@ -650,11 +657,11 @@
 		"nzoth-dreams-end": {
 			"player": "Invocaste {{value}} esbirros con Último aliento en esta partida. N'Zoth, Fin del Sueño cuesta {{cost}}"
 		},
-		"uldir-runes": {
-			"player": "Jugaste cartas de {{value}} de 3 tipos de runas en esta partida"
-		},
 		"yshaarj-titan-bane": {
 			"player": "Te faltan {{value}} de maná por gastar en esbirros en esta partida ({{spent}} gastado)"
+		},
+		"bgs-tavern-spells-cast": {
+			"player": "Has lanzado {{value}} hechizos de taberna esta partida"
 		}
 	},
 	"decktracker": {
@@ -706,7 +713,13 @@
 		"drawn-by-label": "Robada por",
 		"card-tooltip-assemble-body": "Esbirro",
 		"card-tooltip-assemble-first": "Primera mitad",
-		"card-tooltip-assemble-second": "Segunda mitad"
+		"card-tooltip-assemble-second": "Segunda mitad",
+		"card-tooltip-assemble-appearance-rate": "Tasa de aparición",
+		"card-tooltip-assemble-other-class": "No {{ class }}",
+		"card-tooltip-assemble-pick": "Elegir",
+		"card-tooltip-assemble-pick-rate": "Tasa de selección",
+		"card-tooltip-assemble-sort-by": "Ordenar por",
+		"gift-reborn-from": "Renacer de <br/> {{value}}"
 	},
 	"ftue": {
 		"experience": {
@@ -758,7 +771,8 @@
 	},
 	"global": {
 		"mechanics": {
-			"interactable_object": "Activar"
+			"interactable_object": "Activar",
+			"cards_discarded_this_game": "Descarte"
 		},
 		"set": {
 			"azeroths_most_wanted": "Los más buscados de Azeroth",
@@ -789,7 +803,9 @@
 				"counter-cards-discarded-this-game-label": "Cartas descartadas",
 				"counter-cards-discarded-this-game-tooltip": "Muestra cuántas cartas has descartado esta partida",
 				"counter-deity-label": "Deidad",
-				"counter-deity-tooltip": "Muestra el ataque y la salud de tu Deidad"
+				"counter-deity-tooltip": "Muestra el ataque y la salud de tu Deidad",
+				"counter-tavern-spells-cast-label": "Hechizos de taberna lanzados",
+				"counter-tavern-spells-cast-tooltip": "Muestra cuántos hechizos de taberna has lanzado esta partida"
 			}
 		},
 		"decktracker": {
@@ -802,7 +818,8 @@
 				"show-flavor-text-on-in-game-hover-tooltip": "Al inspeccionar una carta en Hearthstone (mano o tablero), muestra su texto de ambientación en la esquina de notificaciones",
 				"individual-counters-size": "Tamaño de contadores individuales",
 				"use-single-highlight-color": "Usar un solo color de resaltado",
-				"use-single-highlight-color-tooltip": "Usa el mismo color para cada resaltado de cartas relacionadas, en lugar de un color distinto para cada prioridad de resaltado."
+				"use-single-highlight-color-tooltip": "Usa el mismo color para cada resaltado de cartas relacionadas, en lugar de un color distinto para cada prioridad de resaltado.",
+				"flavor-text-size": "Tamaño del texto de ambientación"
 			},
 			"max-resources-widget": {
 				"show-corpses": "Mostrar cadáveres",
@@ -830,8 +847,12 @@
 					"bashana-label": "Bashana",
 					"bashana-tooltip": "Muestra cuánto maná queda por lanzar de los Ents de Bashana",
 					"flesh-giant-tooltip": "Muestra cuántas veces cambió la Salud del héroe de tu oponente durante sus turnos cuando juega como {{classes}}",
-					"herald-tooltip": "Muestra el nivel actual de Heraldo de tu oponente"
-				}
+					"herald-tooltip": "Muestra el nivel actual de Heraldo de tu oponente",
+					"cthun-abilities-label": "Habilidades de C'Thun",
+					"cthun-abilities-tooltip": "Cuando tu oponente tiene a C'Thun, Ojo del Imperio en la mano, en el mazo o en el tablero, muestra cuántas de sus cuatro habilidades activó"
+				},
+				"extra-info-label": "Marcador de información extra",
+				"extra-info-tooltip": "Muestra un marcador en las cartas de la mano del oponente cuando se conoce información adicional, como una reducción de costo"
 			},
 			"your-deck": {
 				"counters": {
@@ -906,8 +927,6 @@
 					"ghuun-blood-runes-tooltip": "Cuando tienes G'huun en la mano o en el mazo, muestra cuántas runas de sangre jugaste en esta partida",
 					"nzoth-dreams-end-label": "N'Zoth, Fin del Sueño",
 					"nzoth-dreams-end-tooltip": "Cuando tienes N'Zoth, Fin del Sueño en la mano o en el mazo, muestra cuántos esbirros con Último aliento invocaste y su costo actual",
-					"uldir-runes-label": "Cuarentena de Uldir",
-					"uldir-runes-tooltip": "Cuando tienes Cuarentena de Uldir en la mano o en el mazo, muestra cuántos tipos de runas jugaste",
 					"yshaarj-titan-bane-label": "Y'Shaarj, Perdición de los Titanes",
 					"yshaarj-titan-bane-tooltip": "Cuando tienes Y'Shaarj, Perdición de los Titanes en la mano o en el mazo, muestra cuánto maná te falta por gastar en esbirros"
 				},
@@ -1108,20 +1127,29 @@
 				"collection": "Mostrar/ocultar la ventana principal",
 				"conflict": "Esa combinación ya la usa {{hotkey}}.",
 				"failed": "No se pudo asignar este atajo. Puede que otra app ya lo esté usando.",
-				"intro": "Cambia las teclas para mostrar u ocultar las ventanas de Firestone. Haz clic en Cambiar y presiona la nueva combinación. Escape cancela.",
+				"intro": "Cambia los atajos de teclado usados en Firestone. Haz clic en Cambiar y presiona la nueva combinación. Para los pools de cartas también puedes hacer clic en un botón lateral del mouse, o presionar Mayús, Ctrl o Alt por sí solos. Escape cancela.",
 				"listening": "Presiona una tecla...",
 				"live-info": "Mostrar información en vivo",
 				"reset": "Restablecer",
-				"title": "Atajos de teclado"
+				"title": "Atajos de teclado",
+				"clear": "Borrar",
+				"listening-scroll-pools": "Presiona una tecla o un botón lateral del mouse...",
+				"live-info-tooltip": "Mantén presionada esta tecla durante una partida de Battlegrounds para mostrar detalles extra de la clasificación: nivel de taberna, compa, triples, racha de victorias, tribus, daño, abalorios y misiones.",
+				"scroll-pools": "Desplazar pools de cartas",
+				"scroll-pools-tooltip": "Mantén presionado para que el tooltip de la carta siga abierto y puedas desplazar su pool de cartas. Puedes asignar Mayús, Ctrl o Alt por sí solos, una combinación de teclas o un botón lateral del mouse."
 			},
 			"twitch": {
 				"another-pc-sending": "Actualmente transmitiendo desde otra PC en ese canal",
 				"broadcast-from-this-pc": "Transmitir desde esta PC",
 				"sending-overlay": "Actualmente transmitiendo desde esta PC"
+			},
+			"quests": {
+				"size-label": "Tamaño del widget de misión"
 			}
 		},
 		"global": {
-			"view-screenshot": "Ver captura"
+			"view-screenshot": "Ver captura",
+			"mark-all-read": "Marcar todo como leído"
 		},
 		"replay": {
 			"in-game-sharing": {
@@ -1962,6 +1990,19 @@
 				"body": "Te deseamos lo mejor y te esperamos cuando quieras. Si dejaste un contacto, te responderemos lo antes posible.",
 				"title": "Gracias por contarnos"
 			}
+		},
+		"constructed": {
+			"assemble": "Ensamblar",
+			"assemble-appearance-rate": "Vista",
+			"assemble-appearance-rate-hint": "Con qué frecuencia se ofreció esta opción",
+			"assemble-base": "Base",
+			"assemble-error": "No se han podido cargar los pools de Ensamblar. Inténtalo de nuevo más tarde.",
+			"assemble-left": "Izquierda",
+			"assemble-loading": "Cargando...",
+			"assemble-pick-rate": "Elegida",
+			"assemble-pick-rate-hint": "Con qué frecuencia se eligió la opción cuando se ofreció",
+			"assemble-right": "Derecha",
+			"cards": "Cartas"
 		}
 	},
 	"widgets": {

@@ -29,7 +29,8 @@
 					"example-boards": "예시 보드",
 					"example-boards-header": "클릭하여 예시 보드 보기",
 					"example-boards-locked-tooltip": "프리미엄을 구독하면 게임 종료 시 이 조합이 고 MMR에서 어떤 모습인지 예시를 볼 수 있습니다"
-				}
+				},
+				"loading-example-boards": "예시 보드를 불러오는 중"
 			}
 		},
 		"decktracker": {
@@ -483,7 +484,12 @@
 		"aberration_discard": "버림 돌연변이",
 		"dragon_shield": "보호막 용족",
 		"mech_glambot": "글램봇 기계",
-		"mech_volumizer": "볼류마이저 기계"
+		"mech_volumizer": "볼류마이저 기계",
+		"dragon_spell_power": "주문 공격력 용족",
+		"elemental_azerite": "아제라이트 정령",
+		"elemental_tempest": "템페스트 정령",
+		"mech_apm": "APM 기계",
+		"quilboar_felboar_spam": "펠보어 스팸 가시멧돼지"
 	},
 	"counters": {
 		"ancestral-automaton": {
@@ -641,7 +647,8 @@
 			"player": "냉기의 거신이 녹기 전에 주문에 쓸 마나가 {{value}} 남았습니다 ({{spent}} 사용)"
 		},
 		"cthun-abilities": {
-			"player": "이번 게임에서 크툰 능력 4개 중 {{value}}개를 발동했습니다"
+			"player": "이번 게임에서 크툰 능력 4개 중 {{value}}개를 발동했습니다",
+			"opponent": "이번 게임에서 상대가 크툰 능력 4개 중 {{value}}개를 발동했습니다"
 		},
 		"ghuun-blood-runes": {
 			"player": "이번 게임에서 혈기 룬을 {{value}}개 사용했습니다"
@@ -649,11 +656,11 @@
 		"nzoth-dreams-end": {
 			"player": "이번 게임에서 죽음의 메아리 하수인을 {{value}}명 소환했습니다. 느조스, 꿈의 끝 비용은 {{cost}}입니다"
 		},
-		"uldir-runes": {
-			"player": "이번 게임에서 룬 종류 3개 중 {{value}}개의 카드를 사용했습니다"
-		},
 		"yshaarj-titan-bane": {
 			"player": "이번 게임에서 하수인에 쓸 마나가 {{value}} 남았습니다 ({{spent}} 사용)"
+		},
+		"bgs-tavern-spells-cast": {
+			"player": "이번 게임에서 선술집 주문을 {{value}}개 시전했습니다"
 		}
 	},
 	"decktracker": {
@@ -705,7 +712,13 @@
 		"drawn-by-label": "뽑은 이",
 		"card-tooltip-assemble-body": "하수인",
 		"card-tooltip-assemble-first": "앞부분",
-		"card-tooltip-assemble-second": "뒷부분"
+		"card-tooltip-assemble-second": "뒷부분",
+		"card-tooltip-assemble-appearance-rate": "등장률",
+		"card-tooltip-assemble-other-class": "{{ class }} 아님",
+		"card-tooltip-assemble-pick": "선택",
+		"card-tooltip-assemble-pick-rate": "픽률",
+		"card-tooltip-assemble-sort-by": "정렬",
+		"gift-reborn-from": "환생：<br/> {{value}}"
 	},
 	"ftue": {
 		"experience": {
@@ -757,7 +770,8 @@
 	},
 	"global": {
 		"mechanics": {
-			"interactable_object": "활성화"
+			"interactable_object": "활성화",
+			"cards_discarded_this_game": "버리기"
 		},
 		"set": {
 			"azeroths_most_wanted": "아제로스의 현상수배범",
@@ -788,7 +802,9 @@
 				"counter-cards-discarded-this-game-label": "버린 카드",
 				"counter-cards-discarded-this-game-tooltip": "이번 게임에서 버린 카드 수를 표시합니다",
 				"counter-deity-label": "신",
-				"counter-deity-tooltip": "신의 공격력과 체력을 표시합니다"
+				"counter-deity-tooltip": "신의 공격력과 체력을 표시합니다",
+				"counter-tavern-spells-cast-label": "시전한 선술집 주문",
+				"counter-tavern-spells-cast-tooltip": "이번 게임에서 시전한 선술집 주문의 수를 표시합니다"
 			}
 		},
 		"decktracker": {
@@ -801,7 +817,8 @@
 				"show-flavor-text-on-in-game-hover-tooltip": "Hearthstone에서 카드(손 또는 전장)를 자세히 볼 때 알림 모서리에 플레이버 텍스트를 표시합니다",
 				"individual-counters-size": "개별 카운터 크기",
 				"use-single-highlight-color": "강조 색을 하나로 쓰기",
-				"use-single-highlight-color-tooltip": "관련 카드 강조마다 다른 색을 쓰지 않고, 모두 같은 색을 씁니다."
+				"use-single-highlight-color-tooltip": "관련 카드 강조마다 다른 색을 쓰지 않고, 모두 같은 색을 씁니다.",
+				"flavor-text-size": "플레이버 텍스트 크기"
 			},
 			"max-resources-widget": {
 				"show-corpses": "시체 표시",
@@ -829,8 +846,12 @@
 					"bashana-label": "바샤나",
 					"bashana-tooltip": "바샤나의 나무정령에서 시전할 마나가 얼마나 남았는지 표시합니다",
 					"flesh-giant-tooltip": "상대가 {{classes}}(으)로 플레이할 때, 상대 턴 동안 상대 영웅의 체력이 몇 번 변경되었는지 표시합니다",
-					"herald-tooltip": "상대의 현재 전령 레벨을 표시합니다"
-				}
+					"herald-tooltip": "상대의 현재 전령 레벨을 표시합니다",
+					"cthun-abilities-label": "크툰 능력",
+					"cthun-abilities-tooltip": "상대가 크툰, 제국의 눈을 손패, 덱 또는 전장에 가지고 있을 때, 능력 4개 중 몇 개를 발동했는지 표시합니다"
+				},
+				"extra-info-label": "추가 정보 표시",
+				"extra-info-tooltip": "비용 감소처럼 추가 정보를 알 때 상대 손패의 카드에 표시를 보여 줍니다"
 			},
 			"your-deck": {
 				"counters": {
@@ -903,8 +924,6 @@
 					"ghuun-blood-runes-tooltip": "군이 손패나 덱에 있을 때, 이번 게임에서 사용한 혈기 룬 수를 표시합니다",
 					"nzoth-dreams-end-label": "느조스, 꿈의 끝",
 					"nzoth-dreams-end-tooltip": "느조스, 꿈의 끝이 손패나 덱에 있을 때, 소환한 죽음의 메아리 하수인 수와 현재 비용을 표시합니다",
-					"uldir-runes-label": "울디르 격리",
-					"uldir-runes-tooltip": "울디르 격리가 손패나 덱에 있을 때, 사용한 룬 종류의 수를 표시합니다",
 					"yshaarj-titan-bane-label": "이샤라즈, 티탄의 파멸",
 					"yshaarj-titan-bane-tooltip": "이샤라즈, 티탄의 파멸이 손패나 덱에 있을 때, 하수인에 써야 할 마나가 얼마나 남았는지 표시합니다"
 				},
@@ -1105,20 +1124,29 @@
 				"collection": "메인 창 표시/숨기기",
 				"conflict": "이 조합은 이미 {{hotkey}}에서 사용 중입니다.",
 				"failed": "이 단축키를 지정할 수 없습니다. 다른 앱에서 이미 사용 중일 수 있습니다.",
-				"intro": "Firestone 창을 표시하거나 숨기는 키를 변경하세요. 변경을 클릭한 뒤 새 조합을 누르세요. Esc는 취소합니다.",
+				"intro": "Firestone에서 사용하는 단축키를 변경하세요. 변경을 클릭한 뒤 새 조합을 누르세요. 카드 풀의 경우 마우스 사이드 버튼을 클릭하거나 Shift, Ctrl 또는 Alt를 단독으로 누를 수도 있습니다. Esc는 취소합니다.",
 				"listening": "키를 누르세요...",
 				"live-info": "실시간 정보 표시",
 				"reset": "초기화",
-				"title": "단축키"
+				"title": "단축키",
+				"clear": "지우기",
+				"listening-scroll-pools": "키 또는 마우스 사이드 버튼을 누르세요...",
+				"live-info-tooltip": "전장 게임 중에 이 키를 누르고 있으면 순위표의 추가 정보를 표시합니다. 선술집 등급, 전우, 삼연, 연승, 종족, 피해, 장신구, 퀘스트.",
+				"scroll-pools": "카드 풀 스크롤",
+				"scroll-pools-tooltip": "길게 누르면 카드 툴팁이 열린 채로 카드 풀을 스크롤할 수 있습니다. Shift, Ctrl, Alt 단독, 키 조합 또는 마우스 사이드 버튼을 지정할 수 있습니다."
 			},
 			"twitch": {
 				"another-pc-sending": "현재 다른 PC에서 그 채널로 방송 중입니다",
 				"broadcast-from-this-pc": "이 PC에서 방송하기",
 				"sending-overlay": "현재 이 PC에서 방송 중입니다"
+			},
+			"quests": {
+				"size-label": "퀘스트 위젯 크기"
 			}
 		},
 		"global": {
-			"view-screenshot": "스크린샷 보기"
+			"view-screenshot": "스크린샷 보기",
+			"mark-all-read": "모두 읽음으로 표시"
 		},
 		"replay": {
 			"in-game-sharing": {
@@ -1959,6 +1987,19 @@
 				"body": "언제나 다시 오시기를 바랍니다. 연락처를 남기셨다면 가능한 한 빨리 답변드리겠습니다.",
 				"title": "알려 주셔서 감사합니다"
 			}
+		},
+		"constructed": {
+			"assemble": "조립",
+			"assemble-appearance-rate": "등장",
+			"assemble-appearance-rate-hint": "이 선택지가 제시된 빈도",
+			"assemble-base": "기반",
+			"assemble-error": "조립 풀을 불러오지 못했습니다. 나중에 다시 시도해 주세요.",
+			"assemble-left": "왼쪽",
+			"assemble-loading": "불러오는 중...",
+			"assemble-pick-rate": "선택",
+			"assemble-pick-rate-hint": "제시되었을 때 선택된 빈도",
+			"assemble-right": "오른쪽",
+			"cards": "카드"
 		}
 	},
 	"widgets": {

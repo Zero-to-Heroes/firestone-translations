@@ -1,7 +1,6 @@
 {
 	"app": {
 		"achievements": {
-			"enable-live-tracking": "Aktivieren",
 			"history": {
 				"empty-state-subtitle": "Schließe eine Errungenschaft ab, um zu starten!"
 			},
@@ -103,7 +102,8 @@
 					"example-boards": "Beispielbretter",
 					"example-boards-header": "Klicken, um Beispielbretter anzusehen",
 					"example-boards-locked-tooltip": "Hol dir Premium, um High-MMR-Beispiele zu sehen, wie diese Kompositionen am Spielende aussehen"
-				}
+				},
+				"loading-example-boards": "Beispielboards werden geladen"
 			},
 			"filters": {
 				"card-type": {
@@ -149,9 +149,6 @@
 				"major-timewarped-tier": "Große Zeitverschiebung",
 				"minor-timewarped-tier": "Kleine Zeitverschiebung",
 				"tavern-tier": "Tavernenstufe {{value}}"
-			},
-			"tribes": {
-				"terran": "Terran"
 			}
 		},
 		"collection": {
@@ -952,8 +949,8 @@
 		"mech-shaman": "Mech Schamane",
 		"mech-warlock": "Mech Hexenmeister",
 		"mech-warrior": "Mech Krieger",
-		"mechathun-druid": "Mech'Thun Druide",
-		"mechathun-priest": "Mech'Thun Priester",
+		"mechathun-druid": "Mecha-C'Thun-Druide",
+		"mechathun-priest": "Mecha-C'Thun-Priester",
 		"menagerie-dh": "Menagerie Dämonenjäger",
 		"menagerie-mage": "Menagerie Magier",
 		"menagerie-paladin": "Menagerie Paladin",
@@ -1335,7 +1332,7 @@
 		"kingsbane-rogue": "Königsmord Schurke",
 		"lc-quest-warrior": "LC Quest Krieger",
 		"linecracker-druid": "Linecracker Druide",
-		"mechathun-paladin": "Mech'Thun Paladin",
+		"mechathun-paladin": "Mecha-C'Thun-Paladin",
 		"mill-rogue": "Mill Schurke",
 		"mine-rogue": "Mine Schurke",
 		"naga-dh": "Naga Dämonenjäger",
@@ -1632,7 +1629,12 @@
 		"aberration_discard": "Abwurf-Aberrationen",
 		"dragon_shield": "Schild-Drachen",
 		"mech_glambot": "Glambot-Mechs",
-		"mech_volumizer": "Volumizer-Mechs"
+		"mech_volumizer": "Volumizer-Mechs",
+		"dragon_spell_power": "Zauberschaden-Drachen",
+		"elemental_azerite": "Azerit-Elementare",
+		"elemental_tempest": "Tempest-Elementare",
+		"mech_apm": "APM-Mechs",
+		"quilboar_felboar_spam": "Felboar-Spam-Stacheleber"
 	},
 	"counters": {
 		"ancestral-automaton": {
@@ -1798,7 +1800,8 @@
 			"player": "Noch {{value}} Mana für Zauber, bevor Koloss der Kälte auftaut ({{spent}} ausgegeben)"
 		},
 		"cthun-abilities": {
-			"player": "Du hast in diesem Spiel {{value}} von 4 Fähigkeiten von C'Thun ausgelöst"
+			"player": "Du hast in diesem Spiel {{value}} von 4 Fähigkeiten von C'Thun ausgelöst",
+			"opponent": "Dein Gegner hat in diesem Spiel {{value}} von 4 Fähigkeiten von C'Thun ausgelöst"
 		},
 		"ghuun-blood-runes": {
 			"player": "Du hast in diesem Spiel {{value}} Blutrunen ausgespielt"
@@ -1806,11 +1809,11 @@
 		"nzoth-dreams-end": {
 			"player": "Du hast in diesem Spiel {{value}} Todesröcheln-Diener herbeigerufen. N'Zoth, Traumende kostet {{cost}}"
 		},
-		"uldir-runes": {
-			"player": "Du hast in diesem Spiel Karten aus {{value}} von 3 Runenarten ausgespielt"
-		},
 		"yshaarj-titan-bane": {
 			"player": "Noch {{value}} Mana für Diener in diesem Spiel ({{spent}} ausgegeben)"
+		},
+		"bgs-tavern-spells-cast": {
+			"player": "Du hast in diesem Spiel {{value}} Gasthauszauber gewirkt"
 		}
 	},
 	"decktracker": {
@@ -1892,7 +1895,13 @@
 		"drawn-by-label": "Gezogen von",
 		"card-tooltip-assemble-body": "Diener",
 		"card-tooltip-assemble-first": "Erste Hälfte",
-		"card-tooltip-assemble-second": "Zweite Hälfte"
+		"card-tooltip-assemble-second": "Zweite Hälfte",
+		"card-tooltip-assemble-appearance-rate": "Erscheinungsrate",
+		"card-tooltip-assemble-other-class": "Nicht {{ class }}",
+		"card-tooltip-assemble-pick": "Auswählen",
+		"card-tooltip-assemble-pick-rate": "Auswahlrate",
+		"card-tooltip-assemble-sort-by": "Sortieren nach",
+		"gift-reborn-from": "Wiederkehr von <br/> {{value}}"
 	},
 	"duels": {
 		"deck-select": {
@@ -1979,7 +1988,8 @@
 	},
 	"global": {
 		"mechanics": {
-			"interactable_object": "Aktivieren"
+			"interactable_object": "Aktivieren",
+			"cards_discarded_this_game": "Verwerfen"
 		},
 		"set": {
 			"azeroths_most_wanted": "Azeroths Meistgesuchte",
@@ -2047,7 +2057,9 @@
 				"counter-cards-discarded-this-game-label": "Abgeworfene Karten",
 				"counter-cards-discarded-this-game-tooltip": "Zeigt, wie viele Karten du in diesem Spiel abgeworfen hast",
 				"counter-deity-label": "Gottheit",
-				"counter-deity-tooltip": "Zeigt Angriff und Leben deiner Gottheit"
+				"counter-deity-tooltip": "Zeigt Angriff und Leben deiner Gottheit",
+				"counter-tavern-spells-cast-label": "Gewirkte Gasthauszauber",
+				"counter-tavern-spells-cast-tooltip": "Zeigt, wie viele Gasthauszauber du in diesem Spiel gewirkt hast"
 			}
 		},
 		"decktracker": {
@@ -2074,7 +2086,8 @@
 				"weapons-play-order": "Waffen-Zugreihenfolge",
 				"individual-counters-size": "Größe einzelner Zähler",
 				"use-single-highlight-color": "Eine einzige Hervorhebungsfarbe nutzen",
-				"use-single-highlight-color-tooltip": "Dieselbe Farbe für jede Hervorhebung verwandter Karten nutzen, statt einer anderen Farbe je nach Priorität."
+				"use-single-highlight-color-tooltip": "Dieselbe Farbe für jede Hervorhebung verwandter Karten nutzen, statt einer anderen Farbe je nach Priorität.",
+				"flavor-text-size": "Größe des Flavour-Texts"
 			},
 			"max-resources-widget": {
 				"show-corpses": "Leichen anzeigen",
@@ -2102,7 +2115,9 @@
 					"bashana-label": "Bashana",
 					"bashana-tooltip": "Zeigt, wie viel Mana noch aus Bashanas Treants gewirkt werden kann",
 					"flesh-giant-tooltip": "Zeigt, wie oft sich die Gesundheit des gegnerischen Helden während seiner Züge geändert hat, wenn er als {{classes}} spielt",
-					"herald-tooltip": "Zeigt die aktuelle Herold-Stufe deines Gegners"
+					"herald-tooltip": "Zeigt die aktuelle Herold-Stufe deines Gegners",
+					"cthun-abilities-label": "C'Thuns Fähigkeiten",
+					"cthun-abilities-tooltip": "Zeigt, wie viele der vier Fähigkeiten von C'Thun, Auge des Imperiums dein Gegner ausgelöst hat, wenn er sie in der Hand, im Deck oder auf dem Spielfeld hat"
 				},
 				"current-effects-label": "Aktuelle Effekte anzeigen",
 				"current-effects-tooltip": "Wenn aktiv, erscheint oben im Tracker ein neuer Abschnitt mit aktuellen Effekten auf den Spieler / das Deck",
@@ -2111,7 +2126,9 @@
 				"sequence-info-label": "Reihenfolge-Infos",
 				"sequence-info-tooltip": "Bei Karten, die mehrere verschiedene Karten auf der gegnerischen Hand erzeugen, einen Hinweis zeigen, damit du sie unterscheiden kannst",
 				"show-dk-runes-label": "TK-Runen anzeigen",
-				"width-title": "Breite"
+				"width-title": "Breite",
+				"extra-info-label": "Zusatzinfo-Markierung",
+				"extra-info-tooltip": "Zeigt eine Markierung bei Karten in der Hand des Gegners, wenn Zusatzinfos bekannt sind, etwa eine Kostenreduzierung"
 			},
 			"your-deck": {
 				"counters": {
@@ -2189,8 +2206,6 @@
 					"ghuun-blood-runes-tooltip": "Wenn du G'huun in der Hand oder im Deck hast, zeige, wie viele Blutrunen du in diesem Spiel gespielt hast",
 					"nzoth-dreams-end-label": "N'Zoth, Traumende",
 					"nzoth-dreams-end-tooltip": "Wenn du N'Zoth, Traumende in der Hand oder im Deck hast, zeige, wie viele Todesröcheln-Diener du beschworen hast und was er aktuell kostet",
-					"uldir-runes-label": "Uldir-Quarantäne",
-					"uldir-runes-tooltip": "Wenn du Uldir-Quarantäne in der Hand oder im Deck hast, zeige, wie viele Runenarten du gespielt hast",
 					"yshaarj-titan-bane-label": "Y'Shaarj, Titanenbann",
 					"yshaarj-titan-bane-tooltip": "Wenn du Y'Shaarj, Titanenbann in der Hand oder im Deck hast, zeige, wie viel Mana du noch für Diener ausgeben musst"
 				},
@@ -2391,7 +2406,8 @@
 				"lottery-sync-tooltip": "Stellt die Lotteriepunkte dieser Saison vom Server wieder her. Nutze das nach einer Neuinstallation von Firestone."
 			},
 			"quests": {
-				"mercenaries-tooltip": "Zeigt die Aufgaben-Widgets auf allen Söldner-Bildschirmen. Das Aktivieren des Aufgaben-Widgets entfernt den Aufgaben-Button aus der Teamliste."
+				"mercenaries-tooltip": "Zeigt die Aufgaben-Widgets auf allen Söldner-Bildschirmen. Das Aktivieren des Aufgaben-Widgets entfernt den Aufgaben-Button aus der Teamliste.",
+				"size-label": "Größe des Quest-Widgets"
 			},
 			"streamer": {
 				"battlegrounds": {
@@ -2428,11 +2444,16 @@
 				"collection": "Hauptfenster ein-/ausblenden",
 				"conflict": "Diese Kombination wird bereits von {{hotkey}} verwendet.",
 				"failed": "Dieser Hotkey konnte nicht zugewiesen werden. Er wird möglicherweise bereits von einer anderen App verwendet.",
-				"intro": "Ändere die Tasten, mit denen Firestone-Fenster ein- oder ausgeblendet werden. Klicke auf Ändern und drücke dann die neue Kombination. Escape bricht ab.",
+				"intro": "Ändere die Tastenkürzel in Firestone. Klicke auf Ändern und drücke dann die neue Kombination. Für Kartenpools kannst du auch eine Seitentaste der Maus anklicken oder Umschalt, Strg oder Alt allein drücken. Escape bricht ab.",
 				"listening": "Taste drücken...",
 				"live-info": "Live-Informationen anzeigen",
 				"reset": "Zurücksetzen",
-				"title": "Tastenkürzel"
+				"title": "Tastenkürzel",
+				"clear": "Löschen",
+				"listening-scroll-pools": "Taste oder Seitentaste der Maus drücken...",
+				"live-info-tooltip": "Halte diese Taste während eines Battlegrounds-Spiels gedrückt, um zusätzliche Details der Bestenliste anzuzeigen: Tavernenstufe, Partner, Dreier, Siegesserie, Typen, Schaden, Schmuckstücke und Quests.",
+				"scroll-pools": "Kartenpools scrollen",
+				"scroll-pools-tooltip": "Halte dies gedrückt, damit der Kartentooltip offen bleibt und du seinen Kartenpool scrollen kannst. Du kannst Umschalt, Strg oder Alt allein, eine Tastenkombination oder eine Seitentaste der Maus belegen."
 			},
 			"twitch": {
 				"another-pc-sending": "Wird derzeit von einem anderen PC auf diesem Kanal übertragen",
@@ -2441,7 +2462,8 @@
 			}
 		},
 		"global": {
-			"view-screenshot": "Screenshot ansehen"
+			"view-screenshot": "Screenshot ansehen",
+			"mark-all-read": "Alle als gelesen markieren"
 		},
 		"mercenaries": {
 			"general": {
@@ -2566,7 +2588,18 @@
 		},
 		"constructed": {
 			"description": "Klassen-, Karten- und Deckstatistiken für jeden Rangbereich ansehen – KOSTENLOS.",
-			"meta": "Meta"
+			"meta": "Meta",
+			"assemble": "Zusammenstellen",
+			"assemble-appearance-rate": "Gesehen",
+			"assemble-appearance-rate-hint": "Wie oft diese Option angeboten wurde",
+			"assemble-base": "Basis",
+			"assemble-error": "Die Pools für Zusammenstellen konnten nicht geladen werden. Bitte versuche es später erneut.",
+			"assemble-left": "Links",
+			"assemble-loading": "Wird geladen...",
+			"assemble-pick-rate": "Gewählt",
+			"assemble-pick-rate-hint": "Wie oft die Option gewählt wurde, wenn sie angeboten wurde",
+			"assemble-right": "Rechts",
+			"cards": "Karten"
 		},
 		"docs": {
 			"back-label": "Alle Docs",
