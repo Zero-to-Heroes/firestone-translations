@@ -313,7 +313,8 @@
             "shatter": "裂变",
             "shattered": "已裂变",
             "discover": "发现",
-            "interactable_object": "发动"
+            "interactable_object": "发动",
+            "cards_discarded_this_game": "弃牌"
         },
         "legendary-minion": "传说随从",
         "patch": "补丁 {{version}}.{{number}} 发布于{{date}}",
@@ -420,8 +421,8 @@
                 "blurb": "选择你想要的帮助程度：简洁布局、推荐默认设置，或全部额外工具。可随时在设置中重看引导。"
             },
             "notificationsScale": {
-                "title": "通知大小",
-                "blurb": "更改屏幕上通知的显示大小。"
+                "title": "通知尺寸",
+                "blurb": "更改屏幕上通知的显示尺寸。"
             },
             "secretsHelper": {
                 "title": "多个奥秘",
@@ -528,12 +529,12 @@
                 "blurb": "显示你在本局游戏中施放的酒馆法术数量。"
             },
             "questsWidgetScale": {
-                "title": "任务小组件大小",
-                "blurb": "更改任务小组件的大小。"
+                "title": "任务小组件尺寸",
+                "blurb": "更改任务小组件的尺寸。"
             },
             "overlayFlavorTextScale": {
-                "title": "风味文字大小",
-                "blurb": "更改鼠标悬停在卡牌上时显示的风味文字的大小。"
+                "title": "风味文字尺寸",
+                "blurb": "更改鼠标悬停在卡牌上时显示的风味文字的尺寸。"
             }
         },
         "menu": {
@@ -2980,7 +2981,8 @@
             "player": "你在本局对战中已使用{{value}}张鲜血符文牌。"
         },
         "cthun-abilities": {
-            "player": "你在本局对战中已触发克苏恩的4个技能中的{{value}}个"
+            "player": "你在本局对战中已触发克苏恩的4个技能中的{{value}}个",
+            "opponent": "对手在本局对战中已触发克苏恩的4个技能中的{{value}}个"
         },
         "broodqueen-shakar": {
             "player": "本回合还需有{{value}}个友方随从死亡"
@@ -3387,7 +3389,13 @@
         "drawn-by-label": "抽取者",
         "card-tooltip-assemble-first": "前半",
         "card-tooltip-assemble-body": "随从",
-        "card-tooltip-assemble-second": "后半"
+        "card-tooltip-assemble-second": "后半",
+        "gift-reborn-from": "复活自 <br/> {{value}}",
+        "card-tooltip-assemble-appearance-rate": "出现率",
+        "card-tooltip-assemble-pick": "选择",
+        "card-tooltip-assemble-other-class": "非{{ class }}",
+        "card-tooltip-assemble-pick-rate": "选取率",
+        "card-tooltip-assemble-sort-by": "排序方式"
     },
     "battlegrounds": {
         "menu": {
@@ -4026,7 +4034,8 @@
                 "off": "关闭",
                 "on": "开启"
             },
-            "view-screenshot": "查看截图"
+            "view-screenshot": "查看截图",
+            "mark-all-read": "全部标记为已读"
         },
         "menu": {
             "general": "一般选项",
@@ -4357,7 +4366,8 @@
                 "battlegrounds-label": "酒馆战棋",
                 "battlegrounds-tooltip": "在酒馆战棋对战和其主界面中显示包含战棋任务的任务小部件",
                 "mercenaries-label": "佣兵战纪",
-                "mercenaries-tooltip": "在所有佣兵战纪界面中显示任务小部件。启用任务小部件将移除队伍列表中任务按钮。"
+                "mercenaries-tooltip": "在所有佣兵战纪界面中显示任务小部件。启用任务小部件将移除队伍列表中任务按钮。",
+                "size-label": "任务小组件尺寸"
             },
             "discord": {
                 "advanced-config-title": "高级选项",
@@ -4547,7 +4557,8 @@
                 "live-info-tooltip": "在酒馆战棋对局中按住此按键，可显示更多排行榜详情：酒馆等级、伙伴、三连、连胜、随从类型、伤害、饰品和任务。",
                 "scroll-pools-tooltip": "按住此键可保持卡牌提示框打开，方便滚动浏览卡牌池。你可以单独绑定 Shift、Ctrl 或 Alt，也可以绑定组合键或鼠标侧键。",
                 "scroll-pools": "滚动卡池",
-                "listening-scroll-pools": "请按一个按键或鼠标侧键..."
+                "listening-scroll-pools": "请按一个按键或鼠标侧键...",
+                "clear": "清除"
             }
         },
         "decktracker": {
@@ -4629,7 +4640,8 @@
                 "show-flavor-text-on-in-game-hover-tooltip": "在查看炉石传说中的卡牌（手牌或战场）时，在显示通知的角落显示其风味趣文",
                 "individual-counters-size": "单独的计数器尺寸",
                 "use-single-highlight-color": "使用单一高亮颜色",
-                "use-single-highlight-color-tooltip": "所有相关卡牌的高亮效果使用相同颜色，不再按高亮优先级使用不同颜色。"
+                "use-single-highlight-color-tooltip": "所有相关卡牌的高亮效果使用相同颜色，不再按高亮优先级使用不同颜色。",
+                "flavor-text-size": "风味文字尺寸"
             },
             "modes": {
                 "title": "记牌器将在以下模式中开启",
@@ -4742,7 +4754,9 @@
                     "bashana-tooltip": "显示巴珊娜·符文图腾的树人还剩多少法力值能施放",
                     "ancestral-automaton-tooltip": "显示对手召唤了多少次星元自动机",
                     "ancestral-automaton-label": "星元自动机",
-                    "flesh-giant-tooltip": "显示对手在作为{{classes}}职业时，对手英雄的生命值在他们的回合中变化了多少次"
+                    "flesh-giant-tooltip": "显示对手在作为{{classes}}职业时，对手英雄的生命值在他们的回合中变化了多少次",
+                    "cthun-abilities-label": "克苏恩的技能",
+                    "cthun-abilities-tooltip": "当“克苏恩，帝国之眼”在对手的手牌、牌库或场上时，显示其四个技能中对手已触发了多少个"
                 },
                 "size-title": "尺寸和透明度",
                 "opacity-title": "透明度",
@@ -5538,7 +5552,18 @@
         "constructed": {
             "meta": "环境",
             "decks": "套牌",
-            "description": "免费查看任何分段区间的职业、卡牌和套牌数据"
+            "description": "免费查看任何分段区间的职业、卡牌和套牌数据",
+            "assemble": "拼装",
+            "cards": "卡牌",
+            "assemble-loading": "正在加载...",
+            "assemble-base": "基础",
+            "assemble-error": "无法加载拼装卡池。请稍后再试。",
+            "assemble-pick-rate-hint": "此选项在出现时被选中的频率",
+            "assemble-appearance-rate-hint": "此选择出现的频率",
+            "assemble-left": "左",
+            "assemble-pick-rate": "已选",
+            "assemble-right": "右",
+            "assemble-appearance-rate": "见过"
         },
         "auth": {
             "callback": {
