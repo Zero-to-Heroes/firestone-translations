@@ -312,7 +312,8 @@
             "shatter": "Scission",
             "shattered": "Scindée",
             "interactable_object": "Activation",
-            "discover": "Découverte"
+            "discover": "Découverte",
+            "cards_discarded_this_game": "Défaussée"
         },
         "legendary-minion": "Serviteur légendaire",
         "patch": "Mise à jour {{version}}.{{number}} publiée le {{date}}",
@@ -3354,7 +3355,8 @@
         "prepared-tooltip": "Cette carte a été préparée pour {{value}} cristaux",
         "card-mulliganed-away": "Retirée au mulligan",
         "card-tooltip-assemble-body": "Serviteur",
-        "created-by-label": "Créée par"
+        "created-by-label": "Créée par",
+        "card-tooltip-assemble-appearance-rate": "Taux d’apparition"
     },
     "battlegrounds": {
         "menu": {
@@ -3809,7 +3811,8 @@
                     "battlecry-before-5": "Les serviteurs avec Cri de guerre ou Choix des armes ne sont pas proposés avant le tour 5.",
                     "no-magnetic-sell-hand": "Les serviteurs avec Magnétisme, ceux avec un effet quand vous les vendez, et ceux censés rester en main ne peuvent pas recevoir de Sombre don.",
                     "battlecry-choose-one": "Les serviteurs avec Cri de guerre ou Choix des armes peuvent seulement recevoir Vision double, Duplication, Dorure ou Voix résonnante.",
-                    "scaling-highest": "Parmi Cicatrices de guerre, Étreinte de la mort, Siphon magique et Dégradation, seuls les Sombres dons avec les conditions les plus déclenchées peuvent être proposés."
+                    "scaling-highest": "Parmi Cicatrices de guerre, Étreinte de la mort, Siphon magique et Dégradation, seuls les Sombres dons avec les conditions les plus déclenchées peuvent être proposés.",
+                    "deathrattle-stats": "Les serviteurs avec Râle d’agonie peuvent seulement recevoir Épée affûtée et Étreinte de la mort parmi les Sombres dons qui font gagner des caractéristiques"
                 },
                 "wiki-source": "Source :"
             }
@@ -3944,7 +3947,8 @@
         }
     },
     "quests": {
-        "quests-completed": "Vous avez fini toutes vos quêtes"
+        "quests-completed": "Vous avez fini toutes vos quêtes",
+        "bloodstones-daily": "Pierres de sang quotidiennes"
     },
     "settings": {
         "title": "Paramètres",
@@ -4072,7 +4076,10 @@
                 "source-third-party-tooltip": "Non vérifié par Firestone. Ne se met à jour automatiquement que si vous choisissez Tout.",
                 "explanation": "Les mods sont des plugins qui changent le comportement de Hearthstone lui-même.",
                 "import-button": "Importer",
-                "import-in-progress": "Importation du mod..."
+                "import-in-progress": "Importation du mod...",
+                "import-fetch-failed": "Impossible de lire ce dépôt GitHub. Vérifiez l’URL et réessayez.",
+                "source-trusted-tooltip": "Développé et mis à jour par Firestone ou sous sa supervision.",
+                "source-verified-tooltip": "Développé par des tiers, mais sous contrôle régulier de Firestone. Seules les versions approuvées par Firestone sont automatiquement mises à jour."
             },
             "third-party": {
                 "intro": "Nous pensons que vos données vous appartiennent, et que vous devriez être en mesure de les synchroniser avec d’autres sites web tiers pour les aider à faire tout ce qu’ils font de mieux avec elles. Elles ne nous rapportent pas d’argent, mais nous recevons de l’exposition, puisque les sites parlent ensuite de nous :)",
@@ -4145,7 +4152,9 @@
                 "other-options-title": "Autres options",
                 "appear-on-live-streams-label": "Apparaître dans les streams",
                 "appear-on-live-streams-tooltip": "Apparaissez dans l’onglet « Streams ». Cette fonctionnalité, toujours en cours de développement, liste toutes les personnes qui streament actuellement avec Firestone, ainsi que leur mode de jeu actuel, leur deck (s’il existe), et un lien pour accéder à leur stream Twitch.",
-                "broadcast-from-this-pc": "Diffuser depuis cet ordinateur"
+                "broadcast-from-this-pc": "Diffuser depuis cet ordinateur",
+                "another-pc-sending": "Diffusion en cours d’un autre PC sur cette chaîne",
+                "sending-overlay": "Diffusion en cours depuis ce PC"
             },
             "launch": {
                 "launch-on-game-start-label": "Lancer Firestone quand une partie commence",
@@ -4198,7 +4207,10 @@
                 "notifications-size": "Taille des notifications",
                 "replay-ftue-button-text": "Lecture",
                 "replay-ftue-tooltip": "Afficher à nouveau le setup initial. Choisir une expérience mettra à jour vos paramètres d’overlay.",
-                "disable-overlay-shared-texture-tooltip": "Par défaut, l’overlay en jeu est transmise directement au jeu via la carte graphique, ce qui utilise beaucoup moins le CPU. Activez cette option si l’overlay ne s’affiche pas ou pas correctement, ou si elle vous empêche de cliquer dans le jeu. Cette modification prendra effet au prochain démarrage de Hearthstone."
+                "disable-overlay-shared-texture-tooltip": "Par défaut, l’overlay en jeu est transmise directement au jeu via la carte graphique, ce qui utilise beaucoup moins le CPU. Activez cette option si l’overlay ne s’affiche pas ou pas correctement, ou si elle vous empêche de cliquer dans le jeu. Cette modification prendra effet au prochain démarrage de Hearthstone.",
+                "disable-overlay-shared-texture-label": "Désactiver l’overlay rapide en jeu",
+                "disable-low-memory-rendering-label": "Désactiver le rendu basse mémoire",
+                "disable-hardware-acceleration-label": "Désactiver l'accélération matérielle"
             },
             "localization": {
                 "title": "Localisation",
@@ -4440,7 +4452,11 @@
                 "perks-intro": "La connexion est gratuite. Elle permet à Firestone de mieux fonctionner pour vous.",
                 "perks-sync-detail": "L’historique des parties, les stats des paquets et les hauts faits restent avec vous quand vous réinstallez ou que vous changez d’ordinateur.",
                 "perks-history-title": "L’historique de vos parties reste en ligne",
-                "provider-battlenet": "Battle.net"
+                "provider-battlenet": "Battle.net",
+                "unlink-battlenet-failed": "Impossible de délier Battle.net. Veuillez réessayer plus tard.",
+                "unlink-overwolf-failed": "Impossible de délier Overwolf. Veuillez réessayer plus tard.",
+                "link-battlenet-failed": "Impossible de commencer la liaison avec Battle.net. Réessayez plus tard.",
+                "unlink-battlenet-tooltip": "Déconnecter Battle.net de votre compte Firestone Overwolf. Chaque connexion aura son propre historique de parties."
             },
             "hotkeys": {
                 "change": "Modifier",
@@ -4448,7 +4464,8 @@
                 "failed": "Impossible d’utiliser ce raccourci clavier. Il est peut-être déjà utilisé par une autre application.",
                 "live-info": "Afficher les infos en direct",
                 "battlegrounds": "Afficher/Masquer la fenêtre Champs de bataille",
-                "collection": "Afficher/Masquer la fenêtre principale"
+                "collection": "Afficher/Masquer la fenêtre principale",
+                "clear": "Effacer"
             }
         },
         "decktracker": {
@@ -4640,7 +4657,8 @@
                     "bashana-tooltip": "Affiche le montant de mana restant à lancer depuis les tréants de Bashana",
                     "ancestral-automaton-label": "Automate ancestral",
                     "ancestral-automaton-tooltip": "Affiche le nombre de fois que votre adversaire a invoqué un automate ancestral",
-                    "flesh-giant-tooltip": "Affiche le nombre de fois que les PV de votre adversaire ont changé pendant ses tours si sa classe est {{classes}}"
+                    "flesh-giant-tooltip": "Affiche le nombre de fois que les PV de votre adversaire ont changé pendant ses tours si sa classe est {{classes}}",
+                    "cthun-abilities-label": "Capacités de C’Thun"
                 },
                 "size-title": "Taille et opacité",
                 "opacity-title": "Opacité",
@@ -4893,7 +4911,8 @@
                     "broodqueen-shakar-label": "Sha’kar, matriarche des couvées",
                     "cthun-abilities-label": "Capacités de C’Thun",
                     "aqir-goliath-label": "Goliath aqir",
-                    "uldir-runes-label": "Zone de confinement d’Uldir"
+                    "uldir-runes-label": "Zone de confinement d’Uldir",
+                    "colossus-of-the-cold-label": "Colosse du Froid"
                 },
                 "discovery-zone-label": "Zone de découverte",
                 "discovery-zone-tooltip": "Lorsque cette option est activée, une nouvelle section avec les options de découverte proposées apparaît dans le decktracker, ce qui permet d’afficher les cartes associées et les synergies avec votre deck.",
@@ -5199,7 +5218,8 @@
                 "hide-battle-odds-until-mouseover-label": "Masquer les chances jusqu’au passage de la souris",
                 "hide-battle-odds-until-mouseover-tooltip": "Lorsque cette option est activée, une petite bannière de chances de victoires reste en haut de l’écran, et les infos complètes (victoire/égalité/défaite) apparaissent lorsque vous passez la souris dessus",
                 "always-show-tavern-tier-label": "Toujours afficher le niveau de taverne",
-                "counter-cards-discarded-this-game-label": "Cartes défaussées"
+                "counter-cards-discarded-this-game-label": "Cartes défaussées",
+                "counter-deity-label": "Divinité"
             },
             "session-widget": {
                 "title": "Widget de session",
@@ -5461,12 +5481,17 @@
         "constructed": {
             "decks": "Decks",
             "meta": "Méta",
-            "description": "Affichez GRATUITEMENT la classe, les cartes et les statistiques du deck, pour n’importe quel rang."
+            "description": "Affichez GRATUITEMENT la classe, les cartes et les statistiques du deck, pour n’importe quel rang.",
+            "assemble": "Assemblage",
+            "assemble-base": "Base",
+            "cards": "Cartes",
+            "assemble-error": "Impossible de charger les pools d'assemblage. Veuillez réessayer plus tard."
         },
         "faq": {
             "sections": {
                 "dns": {
-                    "body": "<p>De la part d’une autre personne avec le même problème :</p><blockquote><p>Aucun des éléments listés n’est problématique, mais une de mes connaissances a trouvé ce qui bloquait, et je voulais te l’envoyer pour aider les autres personnes avec le même problème si aucune autre solution ne fonctionne. Elle a changé les paramètres DNS de ma carte réseau pour ceux du DNS de Google (principal 8.8.8.8 ; secondaire : 8.8.4.4).</p></blockquote><p>Instructions plus détaillées :</p><ol><li>Panneau de configuration\\Réseau et Internet\\Afficher les connexions réseau</li><li>Clic droit sur le type de connexion utilisé</li><li>Trouvez « Protocole Internet version 4 (TCP/IPv4) » dans le menu « Cette connexion utilise les éléments suivants »</li><li>Cliquez sur Propriétés</li><li>Sélectionnez « Utiliser l’adresse de serveur DNS suivante »</li><li>Rentrer « 8.8.8.8 » (Google)</li><li>Fermez et rouvrez Firestone</li></ol>"
+                    "body": "<p>De la part d’une autre personne avec le même problème :</p><blockquote><p>Aucun des éléments listés n’est problématique, mais une de mes connaissances a trouvé ce qui bloquait, et je voulais te l’envoyer pour aider les autres personnes avec le même problème si aucune autre solution ne fonctionne. Elle a changé les paramètres DNS de ma carte réseau pour ceux du DNS de Google (principal 8.8.8.8 ; secondaire : 8.8.4.4).</p></blockquote><p>Instructions plus détaillées :</p><ol><li>Panneau de configuration\\Réseau et Internet\\Afficher les connexions réseau</li><li>Clic droit sur le type de connexion utilisé</li><li>Trouvez « Protocole Internet version 4 (TCP/IPv4) » dans le menu « Cette connexion utilise les éléments suivants »</li><li>Cliquez sur Propriétés</li><li>Sélectionnez « Utiliser l’adresse de serveur DNS suivante »</li><li>Rentrer « 8.8.8.8 » (Google)</li><li>Fermez et rouvrez Firestone</li></ol>",
+                    "title": "DNS"
                 },
                 "hard-kill-apps": {
                     "body": "<blockquote><p>Bonjour, j’ai fermé Firestone et Overwolf depuis le gestionnaire de tâches, et en le rouvrant, tout fonctionnait correctement. Un simple redémarrage de Firestone n’a pas réglé le problème.</p></blockquote>"
@@ -5613,7 +5638,8 @@
                             "title": "Installation des mods"
                         },
                         "developing": {
-                            "body": "<p>Firestone est fourni avec une version intégrée de <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>. C’est un moyen assez simple d’installer des mods pour ajouter des fonctionnalités au jeu. Vous pouvez également installer BepInEx par vous-même.</p><p>Référez-vous à la documentation de BepInEx pour développer des plugins BepInEx, ou regardez les mods existants. Vous pouvez également me mentionner sur <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a></p><p>Des fonctionnalités spécifiques à Hearthstone et Firestone (par exemple connaître l’état du deck des deux adversaires) seront disponibles lors de la création de vos mods. Vous pourriez en théorie construire un decktracker entièrement intégré :)</p>"
+                            "body": "<p>Firestone est fourni avec une version intégrée de <a href=\"https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">BepInEx</a>. C’est un moyen assez simple d’installer des mods pour ajouter des fonctionnalités au jeu. Vous pouvez également installer BepInEx par vous-même.</p><p>Référez-vous à la documentation de BepInEx pour développer des plugins BepInEx, ou regardez les mods existants. Vous pouvez également me mentionner sur <a href=\"https://discord.gg/vKeB3gnKTy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a></p><p>Des fonctionnalités spécifiques à Hearthstone et Firestone (par exemple connaître l’état du deck des deux adversaires) seront disponibles lors de la création de vos mods. Vous pourriez en théorie construire un decktracker entièrement intégré :)</p>",
+                            "title": "Développement de mods"
                         },
                         "requirements": {
                             "body": "<p>Pour être reconnu par le Mod Manager de Firestone, votre mod doit comporter un fichier « Config » contenant les champs « Name », « Version », « Guid » et « DownloadLink » (pointant vers le dépôt). Les dépendances externes ne sont pas encore prises en charge ; n'hésitez pas à me contacter si vous en avez besoin.</p>"
@@ -5677,7 +5703,8 @@
                             "title": "Champs de bataille"
                         }
                     },
-                    "intro": "<p>Vous pouvez utiliser ces API directement pour créer des statistiques intéressantes, des infographies ou simplement pour le plaisir. Si vous publiez quoi que ce soit, n'oubliez pas de citer Firestone comme source des données.</p><p>Si vous souhaitez utiliser ces données pour une application publique, n'hésitez pas à me contacter sur Discord à l'adresse <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">.</a></p>"
+                    "intro": "<p>Vous pouvez utiliser ces API directement pour créer des statistiques intéressantes, des infographies ou simplement pour le plaisir. Si vous publiez quoi que ce soit, n'oubliez pas de citer Firestone comme source des données.</p><p>Si vous souhaitez utiliser ces données pour une application publique, n'hésitez pas à me contacter sur Discord à l'adresse <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">.</a></p>",
+                    "title": "Ressources de développement"
                 },
                 "setup": {
                     "intro": "<p>Je trouve que l'interface des paramètres est assez intuitive : les fonctionnalités sont regroupées par menus, et vous pouvez utiliser le champ de recherche en haut de la page pour trouver ce dont vous avez besoin.</p>",
@@ -5708,7 +5735,10 @@
             },
             "back-label": "Tous les documents",
             "permalink-aria": "Lien vers cette section",
-            "toc-title": "Sur cette page"
+            "toc-title": "Sur cette page",
+            "images": {
+                "creator-code-field": "Champ « Code du créateur » sur la page de paiement de Tebex"
+            }
         },
         "monitoring": {
             "simulator": {
@@ -5724,7 +5754,8 @@
                 "empty-range": "Aucune donnée n'est disponible pour la période sélectionnée.",
                 "resolution-daily": "Affichage des valeurs journalières.",
                 "resolution-monthly": "Affichage des totaux mensuels (la période sélectionnée dépasse 180 jours).",
-                "resolution-weekly": "Affichage des totaux hebdomadaires (la période sélectionnée dépasse 45 jours)."
+                "resolution-weekly": "Affichage des totaux hebdomadaires (la période sélectionnée dépasse 45 jours).",
+                "load-error": "Impossible de charger les données de précision du simulateur."
             }
         },
         "premium": {
@@ -5781,6 +5812,19 @@
                                     "alt": "Historique des cartes et des paquets"
                                 }
                             }
+                        },
+                        "per-set-stats": {
+                            "screenshots": {
+                                "global": {
+                                    "alt": "Statistiques détaillées sur les recouvrements à l'échelle mondiale",
+                                    "caption": "Statistiques détaillées sur les recouvrements à l'échelle mondiale"
+                                },
+                                "per-set": {
+                                    "alt": "Statistiques détaillées de collecte par lot",
+                                    "caption": "Statistiques détaillées de collecte par lot"
+                                }
+                            },
+                            "text": "Statistiques détaillées de collecte par lot"
                         }
                     }
                 },
@@ -5789,9 +5833,11 @@
                         "past-match-stats": {
                             "screenshots": {
                                 "replays": {
-                                    "alt": "Les statistiques des rediffusions de Battlegrounds présentent un récapitulatif détaillé des statistiques des matchs passés"
+                                    "alt": "Les statistiques des rediffusions de Battlegrounds présentent un récapitulatif détaillé des statistiques des matchs passés",
+                                    "caption": "Statistiques détaillées des matchs précédents"
                                 }
-                            }
+                            },
+                            "text": "Statistiques détaillées des matchs précédents dans la rubrique « Replays »"
                         },
                         "hero-page-extras": {
                             "screenshots": {
@@ -5847,15 +5893,19 @@
                         "meta-by-rank": {
                             "screenshots": {
                                 "decks": {
-                                    "alt": "Statistiques de méta générées automatiquement, présentant les decks de méta actuels au rang Légende"
+                                    "alt": "Statistiques de méta générées automatiquement, présentant les decks de méta actuels au rang Légende",
+                                    "caption": "Les decks méta actuels au rang Légende"
                                 },
                                 "card-stats": {
-                                    "alt": "Statistiques méta générées présentant les caractéristiques détaillées des cartes de l'archétype « Herald Rogue »"
+                                    "alt": "Statistiques méta générées présentant les caractéristiques détaillées des cartes de l'archétype « Herald Rogue »",
+                                    "caption": "Statistiques détaillées des cartes au niveau de l'archétype"
                                 },
                                 "archetypes": {
-                                    "alt": "Statistiques de méta générées présentant les archétypes actuels de la méta pour les joueurs de compétition"
+                                    "alt": "Statistiques de méta générées présentant les archétypes actuels de la méta pour les joueurs de compétition",
+                                    "caption": "Méta-archétypes actuels pour les échelons de classement compétitifs"
                                 }
-                            }
+                            },
+                            "text": "Méta actuelle par classement : decks, archétypes et statistiques détaillées par carte"
                         },
                         "mulligan-overlay": {
                             "screenshots": {
@@ -5872,9 +5922,11 @@
                         "deck-overview": {
                             "screenshots": {
                                 "details": {
-                                    "alt": "Aperçu du deck construit, présentant les récentes parties disputées avec ce deck"
+                                    "alt": "Aperçu du deck construit, présentant les récentes parties disputées avec ce deck",
+                                    "caption": "Présentation du deck et rediffusions récentes"
                                 }
-                            }
+                            },
+                            "text": "Présentation du deck et rediffusions récentes sur la page dédiée au deck"
                         },
                         "lobby-mulligan": {
                             "screenshots": {
@@ -5957,6 +6009,9 @@
                     },
                     "slyders": {
                         "alt": "Slyders, multiple top 1 européen Champs de bataille"
+                    },
+                    "denimblue": {
+                        "alt": "DenimBlue, n° 1 à plusieurs reprises au classement de l'Underground Arena de l'UE"
                     }
                 }
             },
@@ -5971,10 +6026,12 @@
             },
             "features": {
                 "deck-tracker": {
-                    "caption": "Decktracker en jeu et overlays"
+                    "caption": "Decktracker en jeu et overlays",
+                    "title": "Decktracker"
                 },
                 "related-cards": {
-                    "blurb": "Passez la souris sur une fiche de votre outil de suivi pour voir les fiches qu'elle génère ou auxquelles elle est liée, juste à côté de votre liste."
+                    "blurb": "Passez la souris sur une fiche de votre outil de suivi pour voir les fiches qu'elle génère ou auxquelles elle est liée, juste à côté de votre liste.",
+                    "alt": "Outil de suivi de deck affichant les cartes associées lorsque l'on passe la souris sur une carte de la liste"
                 },
                 "overlays": {
                     "title": "Overlays en jeu"
@@ -6898,7 +6955,9 @@
         "xl-questline-warrior": "Guerrier Suite de quêtes XL",
         "odd-paladin": "Paladin impair",
         "xl-egg-paladin": "Paladin œuf XL",
-        "xl-hl-exodia-paladin": "Paladin Exodia singleton XL"
+        "xl-hl-exodia-paladin": "Paladin Exodia singleton XL",
+        "cute-warrior": "Guerrier mignon",
+        "deios-rogue": "Voleur Déios"
     },
     "arena": {
         "overlay": {
@@ -7024,7 +7083,11 @@
         "pirate_discover": "Pirates découverte",
         "beast_lobster": "Bêtes homard",
         "beast_beetle": "Bêtes hannetons",
-        "mech_volumizer": "Mécas volumateurs"
+        "mech_volumizer": "Mécas volumateurs",
+        "aberration_deathrattle": "Aberrations Râle d’agonie",
+        "mech_apm": "Mécas APM",
+        "elemental_azerite": "Élémentaires d’azérite",
+        "aberration_discard": "Aberration défausse"
     },
     "androidDeckTracker": {
         "overlay": {
@@ -7042,7 +7105,8 @@
             "readerSetup": "Non configuré",
             "league": {
                 "bronze": "Bronze",
-                "silver": "Argent"
+                "silver": "Argent",
+                "diamond": "Diamant"
             },
             "format": {
                 "classic": "Classique"
@@ -7079,7 +7143,9 @@
             "progress": "Étape {current} sur {total}",
             "pairWaiting": "Un bouton apparaîtra sur cette notification. Appuyez dessus pour ouvrir une zone de texte. Laissez l’écran de couplage ouvert.",
             "pairClose": "Fermer",
-            "pairInputLabel": "Code à 6 chiffres"
+            "pairInputLabel": "Code à 6 chiffres",
+            "stepDeveloperStillOff": "Les options développeur sont toujours désactivées. Appuyez sur Continuer, puis appuyez 7 fois sur le numéro de build dans l’écran des infos du smartphone.",
+            "barSubtitle": "Decktracker"
         }
     }
 }
