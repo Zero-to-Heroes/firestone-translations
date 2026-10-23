@@ -312,7 +312,8 @@
             "bacon_rally": "勝鬨",
             "shatter": "粉砕",
             "shattered": "粉砕片",
-            "interactable_object": "発動"
+            "interactable_object": "発動",
+            "cards_discarded_this_game": "破棄"
         },
         "legendary-minion": "レジェンドミニオン",
         "patch": "パッチ{{version}}.{{number}} が{{date}} にリリース！",
@@ -1739,7 +1740,8 @@
                     "details": "詳細",
                     "example-boards-header": "クリックして盤面の例を表示",
                     "example-boards-locked-tooltip": "プレミアムになると、高MMRにおける、ゲーム終盤のこれらの構成の例を見れます"
-                }
+                },
+                "loading-example-boards": "盤面の例を読み込む"
             }
         },
         "duels": {
@@ -2071,7 +2073,8 @@
                 "copy-web-link": "ウェブのリンクをコピー",
                 "watch-replay-in-app-button": "アプリ内",
                 "copy-link": "リンクをコピー",
-                "copy-in-game-link": "ゲーム内リンクをコピー"
+                "copy-in-game-link": "ゲーム内リンクをコピー",
+                "played-on-mobile": "モバイルで遊んだ"
             },
             "class-icon-toggle": {
                 "label": "クラスアイコンを使用",
@@ -2963,6 +2966,32 @@
         },
         "bgs-deity": {
             "player": "自分の「 {{cardName}} 」は {{atk}}/{{health}}"
+        },
+        "broodqueen-shakar": {
+            "player": "このターン中、味方のミニオンをあと{{value}}体死亡させる"
+        },
+        "colossus-of-the-cold": {
+            "player": "具象体の凍結が解除されるまで、あと{{value}}マナ分の呪文を使う({{spent}}マナ使用済み)"
+        },
+        "yshaarj-titan-bane": {
+            "player": "この試合中、ミニオンにあと{{value}}マナ消費する({{spent}}マナ消費した)"
+        },
+        "aqir-goliath": {
+            "player": "このターン中、コンボカードを{{value}}枚使用した。「巨躯のアキア」のコストは{{reduction}}減る"
+        },
+        "ghuun-blood-runes": {
+            "player": "自分はこの試合中、血のルーンを{{value}}個使用した",
+            "opponent": "対戦相手はこの試合中、血のルーンを{{value}}個使用した"
+        },
+        "bgs-tavern-spells-cast": {
+            "player": "この試合中、酒場の呪文を{{value}}枚使用した"
+        },
+        "cthun-abilities": {
+            "opponent": "対戦相手はこの試合中、クトゥーンの4つの能力のうち{{value}}つを使用済み",
+            "player": "自分はこの試合中、クトゥーンの4つの能力のうち{{value}}つを使用済み"
+        },
+        "nzoth-dreams-end": {
+            "player": "自分はこの試合中、断末魔ミニオンを{{value}}体召喚した。「夢の終焉ン=ゾス」のコストは{{cost}}"
         }
     },
     "loading": {
@@ -3265,7 +3294,7 @@
         "unknown-info": "不明な{{info}}",
         "unknown-big-minion": "不明なコスト{{cost}}+のミニオン",
         "card-dredged-tooltip": "海底探査のカード",
-        "card-tooltip-scroll-text": "このウィンドウを開いたままにするには、\"Shift\"キーを押しながらマウスをカードから離します。別のどこかをクリックすると閉じます",
+        "card-tooltip-scroll-text": "このウィンドウを開いたままにするには、\"{{ binding }}\"キーを押しながらマウスをカードから離します。別のどこかをクリックすると閉じます",
         "unknown-mana-minion": "{{manaCost}}マナの不明なミニオン",
         "overlay": {
             "mulligan": {
@@ -3354,7 +3383,16 @@
         "prepared-tooltip": "このカードは{{value}}マナで準備済みです",
         "card-mulliganed-away": "マリガンで返却",
         "created-by-label": "生成：",
-        "drawn-by-label": "ドロー："
+        "drawn-by-label": "ドロー：",
+        "card-tooltip-assemble-body": "ミニオン",
+        "card-tooltip-assemble-second": "後半",
+        "gift-reborn-from": "<br/>{{value}}から蘇り",
+        "card-tooltip-assemble-appearance-rate": "出現率",
+        "card-tooltip-assemble-pick": "ピック",
+        "card-tooltip-assemble-sort-by": "並び替え順",
+        "card-tooltip-assemble-first": "前半",
+        "card-tooltip-assemble-other-class": "{{ class }}ではない",
+        "card-tooltip-assemble-pick-rate": "ピック率"
     },
     "battlegrounds": {
         "menu": {
@@ -3992,7 +4030,8 @@
                 "on": "オン",
                 "off-tooltip": "どんなときでもカウンターを表示しません"
             },
-            "view-screenshot": "スクリーンショットを閲覧"
+            "view-screenshot": "スクリーンショットを閲覧",
+            "mark-all-read": "全てを既読にする"
         },
         "menu": {
             "general": "全般",
@@ -4323,7 +4362,8 @@
                 "battlegrounds-label": "バトルグラウンド",
                 "battlegrounds-tooltip": "試合中とメイン画面で、バトルグラウンド用のクエストウィジェットを表示する",
                 "mercenaries-label": "マーセナリーズ",
-                "mercenaries-tooltip": "マーセナリーズの全ての場面で、仕事のウィジェットを表示します。それを起動すると、チームリスト画面から仕事確認ボタンが削除されます"
+                "mercenaries-tooltip": "マーセナリーズの全ての場面で、仕事のウィジェットを表示します。それを起動すると、チームリスト画面から仕事確認ボタンが削除されます",
+                "size-label": "クエストウィジェットのサイズ"
             },
             "discord": {
                 "advanced-config-title": "高度な設定",
@@ -4496,19 +4536,25 @@
                 "perks-replays-detail": "アカウントを使わない場合、リプレファイルは約60日で消去されます",
                 "perks-replays-title": "リプレイの保存期間は約1年間です",
                 "perks-sync-detail": "対戦履歴、パック統計、実績は、再インストールやPCを買い替えた場合でも保持されます。",
-                "perks-title": "サインインするべき？"
+                "perks-title": "サインインするべき？",
+                "link-battlenet-failed": "Battle.netとのリンクを開始できません。またあとでお試しください"
             },
             "hotkeys": {
                 "battlegrounds": "バトルグラウンドウィンドウを表示/非表示",
                 "change": "変更",
                 "collection": "メインウィンドウを表示/非表示",
-                "intro": "Firestoneのウィンドウを表示または非表示にするキーを変更します。「変更」をクリックしてから、新しいキーの組み合わせを押してください。Escキーでキャンセルできます",
+                "intro": "Firestoneで使用するキーボードショートカットを変更できます。「変更」をクリックし、新しいキーの組み合わせを押してください。カードプール用には、マウスのサイドボタンを割り当てたり、Shift、Ctrl、Altキーを単独で設定したりすることも可能です。Escキーを押すとキャンセルされます",
                 "conflict": "その組み合わせはすでに{{hotkey}}で使用されています",
                 "failed": "このホットキーをアサインできません。すでに他のアプリによって使用されている可能性があります",
                 "listening": "キーを押してください…",
                 "live-info": "ライブ情報を表示",
                 "reset": "リセット",
-                "title": "ホットキー"
+                "title": "ホットキー",
+                "live-info-tooltip": "このキーを押しっぱなしにすると、バトルグラウンドの試合中、リーダーボードの追加情報を表示できます(酒場グレード、バディ、トリプル、連勝数、種族、装飾品、クエストなど)",
+                "scroll-pools": "カードプールのスクロール",
+                "clear": "削除",
+                "listening-scroll-pools": "キーかマウスのサイドボタンを押してください…",
+                "scroll-pools-tooltip": "このキーを押しっぱなしにすると、カードのツールチップを表示させ続け、カードプールをスクロールすることができます。Shift、Ctr、Altキー単体、キーの組み合わせ、マウスのサイドボタンを割り当てられます"
             }
         },
         "decktracker": {
@@ -4590,7 +4636,8 @@
                 "show-flavor-text-on-in-game-hover-tooltip": "ハースストーンでカードを注視したとき(手札か盤面)、そのカードのフレーバーテキストを通知欄に表示します",
                 "individual-counters-size": "個々のカウンターのサイズ",
                 "use-single-highlight-color": "単一のハイライトカラーを使用",
-                "use-single-highlight-color-tooltip": "優先度ごとに異なるハイライトカラーを使う代わりに、全ての関連するカードのハイライトに同じ色を使います"
+                "use-single-highlight-color-tooltip": "優先度ごとに異なるハイライトカラーを使う代わりに、全ての関連するカードのハイライトに同じ色を使います",
+                "flavor-text-size": "フレーバーテキストのサイズ"
             },
             "modes": {
                 "title": "デッキトラッカーは以下のモードで有効です",
@@ -4703,7 +4750,11 @@
                     "bashana-tooltip": "「バシャナ・ルーントーテム」のトレントが唱える呪文の、残りのマナ数を表示する",
                     "ancestral-automaton-label": "「祖霊の自動人形」",
                     "ancestral-automaton-tooltip": "対戦相手が召喚した「祖霊の自動人形」の数を表示します",
-                    "flesh-giant-tooltip": "対戦相手が{{classes}}のヒーローでいるとき、対戦相手の体力が相手ターン中に何回変化したかを表示します"
+                    "flesh-giant-tooltip": "対戦相手が{{classes}}のヒーローでいるとき、対戦相手の体力が相手ターン中に何回変化したかを表示します",
+                    "ghuun-blood-runes-label": "「グフーン」の血のルーン",
+                    "cthun-abilities-label": "「帝国の目クトゥーン」の能力",
+                    "cthun-abilities-tooltip": "「帝国の目クトゥーン」4つの能力のうち、対戦相手が何個発動したかを表示します。関連カードが手札、デッキまたは陣地にある時に表示されます",
+                    "ghuun-blood-runes-tooltip": "この試合中、対戦相手が血のルーンを何個使用したかを表示します。対戦相手がデスナイトで、血のルーン3つのデッキを使っていて、最低一つの血のルーンカードを使用した際に表示されます"
                 },
                 "size-title": "サイズと不透明度",
                 "opacity-title": "不透明度",
@@ -4716,7 +4767,9 @@
                 "current-effects-tooltip": "有効にした場合、トラッカーの上部にプレイヤー/デッキにかかっている効果を表示するセクションが新しく現れます",
                 "current-effects-use-enchantment-name-label": "エンチャント名を使用",
                 "current-effects-use-enchantment-name-tooltip": "有効にした場合、カード名の代わりにエンチャント名が表示されます",
-                "width-title": "幅"
+                "width-title": "幅",
+                "extra-info-label": "追加情報マーカー",
+                "extra-info-tooltip": "対戦相手の手札にコスト軽減などの既知の追加情報がある際、カード上にマーカーを表示します"
             },
             "your-deck": {
                 "ignore-decklist-label": "デッキリストを無視",
@@ -4952,7 +5005,21 @@
                     "card-dead-tooltip": "あなたの「{{cardName}}」が死亡した回数を表示します",
                     "card-name-summoned-tooltip": "「{{cardName}}」を召喚した回数を表示します",
                     "flesh-giant-tooltip": "自分の手札かデッキに「肉の巨人」がある場合、自分のヒーローの体力が自分のターン中に何回変化したかを表示します",
-                    "flesh-giant-label": "「肉の巨人」"
+                    "flesh-giant-label": "「肉の巨人」",
+                    "nzoth-dreams-end-label": "「夢の終焉ン=ゾス」",
+                    "nzoth-dreams-end-tooltip": "「夢の終焉ン=ゾス」が自分の手札かデッキにいるとき、自分が断末魔ミニオンを何体召喚したかと、現在のコストを表示します",
+                    "yshaarj-titan-bane-label": "「タイタン殺しヤシャラージュ」",
+                    "yshaarj-titan-bane-tooltip": "「タイタン殺しヤシャラージュ」が自分の手札かデッキにいるとき、あと何マナをミニオンに消費するかを表示します",
+                    "broodqueen-shakar-label": "「ブルードクイーン・シャカー」",
+                    "colossus-of-the-cold-label": "「イシセト」の具象体",
+                    "colossus-of-the-cold-tooltip": "自分の手札かデッキに「イシセト」の具象体がいるとき、あと何マナをスペルに消費するかを表示します",
+                    "aqir-goliath-label": "「巨躯のアキア」",
+                    "ghuun-blood-runes-label": "「グフーン」の血のルーン",
+                    "aqir-goliath-tooltip": "自分の手札かデッキに「巨躯のアキア」がいるとき、このターン中に何枚のコンボカードを使用したかを表示します",
+                    "ghuun-blood-runes-tooltip": "「グフーン」が自分の手札かデッキにいるとき、この試合中に血のルーンを何個使用したかを表示します",
+                    "broodqueen-shakar-tooltip": "「ブルードクイーン・シャカー」が自分の手札かデッキにいるとき、このターン中に味方のミニオンをあと何体死亡させるかを表示します",
+                    "cthun-abilities-label": "「帝国の目クトゥーン」の能力",
+                    "cthun-abilities-tooltip": "「帝国の目クトゥーン」が自分の手札かデッキにあるとき、4つの能力のうち何を起動したかを表示します"
                 },
                 "discovery-zone-label": "発見ゾーン",
                 "discovery-zone-tooltip": "有効にすると、発見をしている最中、トラッカーに\"発見中\"セクションが現れます。ここにはその発見で選べるカードが表示され、デッキのカードとのシナジーをハイライト表示することができます",
@@ -5265,7 +5332,9 @@
                 "counter-deity-label": "神祇",
                 "counter-deity-tooltip": "自分の神祇の攻撃力と体力を表示します",
                 "counter-cards-discarded-this-game-label": "破棄されたカード",
-                "counter-cards-discarded-this-game-tooltip": "この試合中、何枚のカードが破棄されたかを表示します"
+                "counter-cards-discarded-this-game-tooltip": "この試合中、何枚のカードが破棄されたかを表示します",
+                "counter-tavern-spells-cast-label": "酒場の呪文の使用数",
+                "counter-tavern-spells-cast-tooltip": "この試合中、酒場の呪文を何枚使用したかを表示します"
             },
             "session-widget": {
                 "title": "戦績ウィジェット",
@@ -5479,7 +5548,27 @@
         "constructed": {
             "meta": "メタ",
             "decks": "デッキ",
-            "description": "どのランク帯でも、クラス、カード、デッキの統計を無料で表示できます。"
+            "description": "どのランク帯でも、クラス、カード、デッキの統計を無料で表示できます。",
+            "assemble": "合成",
+            "assemble-appearance-rate-hint": "この選択肢はどのくらいの頻度で提示されましたか？",
+            "assemble-base": "ベース",
+            "assemble-error": "合成プールを読み込めませんでした。また後で再度お試しください",
+            "assemble-left": "左",
+            "assemble-loading": "読み込み中…",
+            "assemble-appearance-rate": "既知",
+            "assemble-pick-rate": "ピック率",
+            "assemble-pick-rate-hint": "これが提示された際にこれが選択された割合です",
+            "assemble-right": "右",
+            "cards": "カード",
+            "discover": "発見",
+            "discover-all-classes": "全てのクラス",
+            "discover-card": "カード",
+            "discover-games": "プレイ回数",
+            "discover-loading": "読み込み中…",
+            "discover-offered": "提示",
+            "discover-picked": "選択",
+            "discover-search": "カードを検索",
+            "discover-error": "発見の統計を読み込めません。また後で再度お試しください"
         },
         "faq": {
             "sections": {
@@ -6241,6 +6330,63 @@
                     }
                 }
             }
+        },
+        "uninstall": {
+            "reasons-label": "主な理由を選択してください",
+            "reasons": {
+                "competitor": "他のデスクトップアプリに変える",
+                "didnt-work": "うまく動かなかった",
+                "not-useful": "便利だと思わなかった",
+                "overwolf": "アプリは好きだけど、Overwolfを使いたくない",
+                "performance": "パフォーマンスに問題があった",
+                "reinstall": "問題があり、解決のためにアンインストールしてみる",
+                "other": "その他",
+                "stopped-playing": "ハースストーンを遊ばなくなる",
+                "ads": "広告が邪魔だった",
+                "bugs": "バグが多かった"
+            },
+            "standalone": {
+                "dismiss": "いいえ、結構です",
+                "body": "Overwolfを使用しないバージョンがあります。現在クローズドベータ中ですが、トラッカー機能、オーバーレイなど、Firestoneと全く同じことができます。こちらを試してみますか？",
+                "cta": "Firestoneスタンドアロンをダウンロード",
+                "title": "OverwolfなしのFirestone"
+            },
+            "faq": {
+                "title": "おおよその場合、いくつかの簡単な手順で解決できます",
+                "body": "何も表示されない場合は、Overwolfの設定で、ハースストーンのオーバーレイを有効にするだけで解決することがほとんどです。以下のFAQをご確認ください",
+                "checklist": "FAQを開く",
+                "dismiss": "却下"
+            },
+            "comment": {
+                "contact-label": "EメールまたはDiscord(任意)",
+                "contact-placeholder": "EメールまたはDiscord ID",
+                "skip": "スキップ",
+                "submit": "送信",
+                "body": "一言でも構いません。返信をご希望の場合は、連絡先を残してください",
+                "placeholder": "何がありましたか？",
+                "title": "何か私たちに伝えたいことはありますか？"
+            },
+            "page-title": "あなたがいなくなってしまうのは残念です",
+            "premium": {
+                "dismiss": "いいえ、結構です",
+                "cta": "プレミアムを見る",
+                "body": "プレミアムサブスクリプションに登録すると、広告が非表示になり、追加のオーバーレイや統計が利用可能になります",
+                "title": "プレミアムで広告を削除"
+            },
+            "thanks": {
+                "title": "教えていただきありがとうございました",
+                "body": "ご利用ありがとうございました。またいつでもお戻りください。ご連絡先を伺っている場合は、できるだけ早くこちらから改めてご連絡いたします。"
+            },
+            "document-title": "Firestoneをアンインストール",
+            "page-subtitle": "よろしければ、アンインストールする理由をお聞かせください。ほんの少しで終わります",
+            "competitor": {
+                "submit": "送信",
+                "title": "どのアプリに切り替えるつもりですか？",
+                "body": "名前だけで十分です",
+                "placeholder": "アプリネーム"
+            },
+            "discord-lead": "まだ行き詰まっていますか？",
+            "discord-cta": "Discordでご連絡ください"
         }
     },
     "twitch": {
@@ -7249,7 +7395,12 @@
         "mech_glambot": "グラムボットメカ",
         "aberration_discard": "破棄異形",
         "dragon_shield": "聖なる盾ドラゴン",
-        "mech_volumizer": "爆音器メカ"
+        "mech_volumizer": "爆音器メカ",
+        "dragon_spell_power": "呪文パワードラゴン",
+        "elemental_azerite": "アゼライトエレメンタル",
+        "elemental_tempest": "解き放たれし嵐エレメンタル",
+        "mech_apm": "APMメカ",
+        "quilboar_felboar_spam": "フェルボア連打キルボア"
     },
     "androidDeckTracker": {
         "onboarding": {
@@ -7261,9 +7412,9 @@
             "setup": "続行",
             "setupBody": "次の画面へ進む準備ができたら「続ける」をタップしてください。",
             "pairClose": "閉じる",
-            "pairHint": "6桁のコードを入力",
-            "pairNotReady": "コード送信前に入力画面が閉じてしまいました。コードを再表示し、その画面を開いたまま、Firestoneの通知に6桁のコードを入力してください。",
-            "pairWaiting": "コードを画面上に表示したまま、ここに6桁の数字を入力してください。",
+            "pairHint": "ペアリングコードをここに入力",
+            "pairNotReady": "コード送信前に入力画面が閉じてしまいました。コードを再表示し、その画面を開いたまま、Firestoneの通知にコードを入力してください。",
+            "pairWaiting": "この通知にボタンが表示されます。それをタップすると、テキストボックスが開きます。ペアリング画面は開いたままにしておいてください。",
             "pairWrongCode": "That code did not work. Type the code shown on screen.",
             "shizukuInstall": "Shizukuをインストール",
             "shizukuInstallBody": "ShizukuはFirestoneにハースストーンのログを読みこませます",
@@ -7286,7 +7437,7 @@
             "stepInstalling": "「続行」をタップしてください。Firestoneに必要なヘルパーのインストール確認が表示されますので、インストールを承認してからこの画面に戻ってください。",
             "stepDeveloperButton": "スマホの情報を開く",
             "stepDeveloperTitle": "開発者オプションを有効化",
-            "stepDeveloper": "「続行」をタップしてください。端末情報画面が開いたら「ビルド番号」までスクロールし、デベロッパーモード（開発者向けオプション）が有効になったと表示されるまで7回タップしてください。完了したらこの画面に戻ってください。",
+            "stepDeveloper": "「続行」をタップします。すでに「開発者向けオプション」が有効になっている場合は、その画面が開きます。有効になっていない場合は、端末情報画面が開きます。「ビルド番号」の項目までスクロールし、そこを7回タップしてください。「開発者向けオプションが有効になりました」といったメッセージが表示されたら、前の画面に戻ります。",
             "stepWirelessButton": "スイッチをオンにしてください",
             "stepWireless": "「続行」をタップしてください。「ワイヤレスデバッグ」を探してスイッチをオンにします。このWi-Fiネットワークに関する確認が表示された場合は、許可してください。完了したらこの画面に戻ってください。",
             "stepWirelessTitle": "ワイヤレスデバックを有効化",
@@ -7297,7 +7448,7 @@
             "stepStart": "「続行」をタップしてヘルパーを起動してください。数秒かかりますので、この画面のままお待ちください。ペアコードが必要な場合は、次のステップで説明します。",
             "stepStartTitle": "ヘルパーを起動",
             "stepPairButton": "コードを表示",
-            "stepPair": "「コードを表示」をタップしてください。「ワイヤレスデバッグ」をタップし、次に「ペアコードでデバイスをペア設定」をタップします。その画面を開いたまま、Firestoneの通知をタップして6桁のペア設定コードを入力してください。",
+            "stepPair": "6桁のコードは、この画面や設定画面ではなく、Firestoneの通知に入力します。「コードを表示」をタップしてください。次に「設定」で「ワイヤレスデバッグ」をタップし、「ペアリングコードでデバイスをペアリング」を選択します。その画面は開いたままにしておいてください。Firestoneの通知にある「コードを入力」をタップし、表示された入力欄に6桁のコードを入力します。",
             "stepGrantTitle": "Firestoneを許可",
             "stepGrant": "「続行」をタップしてください。AndroidがFirestoneによるヘルパー機能の使用許可を確認してきますので、「許可」をタップしてください。",
             "stepGrantButton": "Firestoneを許可",
@@ -7310,14 +7461,63 @@
             "shizukuStoppedBody": "通常、再起動などが原因で、Shizukuが停止しました。「セットアップ」をタップして起動してください。信頼できるWi-Fi上であれば、次回からは自動的に起動できます。",
             "signInBody": "タップしてBattle.netアカウントでサインインすると、すべての対戦記録をFirestoneアカウントに保存できるようになります。Battle.netの情報がFirestoneに共有されることは一切ありません。",
             "signInButton": "Battle.netでサインイン",
-            "signedIn": "{name}としてサインインしました。終了した試合はこのアカウントに保存されます"
+            "signedIn": "{name}としてサインインしました。終了した試合はこのアカウントに保存されます",
+            "pairReady": "「コードを入力」をタップします。この通知上の入力欄に6桁のコードを入力してください。コードを送信するまでは、Firestoneの画面に戻らないようにしてください。",
+            "stepDeveloperStillOff": "「開発者向けオプション」がオフになっています。「続行」をタップし、続いて端末情報画面で「ビルド番号」を7回タップしてください。",
+            "stepWifi": "「続ける」をタップしてください。Wi-Fiに接続してから、ここに戻ってきてください。Wi-Fiに接続していないと、ワイヤレスデバッグを有効にすることはできません。",
+            "stepWifiTitle": "Wi-Fiに接続",
+            "reportButton": "レポートを送信",
+            "discord": "Discord",
+            "reportHint": "何がうまくいきませんでしたか？",
+            "reportTitle": "バグを報告",
+            "website": "ウェブサイト",
+            "closeApp": "Firestoneを終了",
+            "closeAppNote": "これにより、追跡が停止され、通知も削除されます。アプリをスマートフォン上で強制終了させた場合、アプリ側から通知を送信することはできません",
+            "reportFailed": "レポートが送信されませんでした。オンラインになったとき再度お試しください",
+            "reportSending": "レポートを送信中…",
+            "reportSent": "レポートが送信されました。感謝します",
+            "pairEnter": "コードを入力",
+            "pairInputLabel": "6桁のコード"
         },
         "overlay": {
             "player": "自分のデッキ",
             "unknownCard": "不明なカード",
-            "notificationText": "トラッキングを実行中",
-            "notificationTitle": "Firestoneデッキトラッカー",
-            "opponent": "対戦相手"
+            "notificationText": "ハースストーンの対戦は記録されています",
+            "notificationTitle": "Firestoneが記録中",
+            "opponent": "対戦相手",
+            "mode": {
+                "ranked": "ランク戦",
+                "battlegrounds": "バトルグラウンド",
+                "legend": "レジェンド",
+                "arena": "闘技場",
+                "arenaUnderground": "地下闘技場",
+                "battlegroundsDuo": "バトルグラウンド・デュオ",
+                "battlegroundsFriendly": "バトルグラウンド",
+                "casual": "カジュアル",
+                "friendly": "フレンド対戦",
+                "practice": "練習",
+                "tavernBrawl": "酒場の喧嘩",
+                "mercenaries": "マーセナリーズ",
+                "unknown": "ゲーム"
+            },
+            "restartText": "ハースストーン起動時にのみ読み込む設定が、Firestoneによって元に戻されました。ハースストーンを完全に終了してから再起動することで、対戦の記録が継続されるようになります。",
+            "restartTitle": "ハースストーンを再起動",
+            "readerAttached": "添付されていません",
+            "readerLogs": "ログがありません",
+            "readerSetup": "セットアップされていません",
+            "readerTracking": "記録",
+            "format": {
+                "classic": "クラシック",
+                "wild": "ワイルド",
+                "twist": "ツイスト"
+            },
+            "league": {
+                "bronze": "ブロンズ",
+                "gold": "ゴールド",
+                "silver": "シルバー",
+                "diamond": "ダイアモンド",
+                "platinum": "プラチナ"
+            }
         }
     }
 }
