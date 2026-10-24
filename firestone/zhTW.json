@@ -376,7 +376,7 @@
             },
             "decktrackerMulliganDownloadPastStats": {
                 "title": "同步過往起手換牌賽局資料",
-                "blurb": "Premium 會員：下載在此功能推出前你所進行對局的單卡起手換牌資料，讓你的統計數據能包含這些紀錄。"
+                "blurb": "Premium 會員：下載此功能推出前你所進行對局的每張卡牌起手調牌資料，讓「你的」統計資料也能包含這些數據。"
             },
             "bgsShowHeroPowerExtraInfo": {
                 "title": "英雄能力額外資訊",
@@ -777,7 +777,7 @@
                 "header-deck-winrate-impact": "影響",
                 "header-pickrate-high-wins-variable-tooltip": "該卡牌在「地下競技場中至少 {{value}} 場或在競技場中至少 {{value2}} 場」勝利的賽局的揀選率",
                 "header-current-options": "目前選項",
-                "low-data-text": "數據不足。此卡牌僅在 {{value}} 場賽局出現過，因此統計數據可能不準確。"
+                "low-data-text": "資料不足。此卡牌僅在 {{value}} 場賽局出現過，因此統計數據可能不準確。"
             },
             "draft": {
                 "card-drawn-winrate": "抽取勝率",
@@ -827,12 +827,12 @@
                 "reward-dust": "魔塵獎勵",
                 "reward-gold": "金幣獎勵",
                 "reward-packs": "卡牌包獎勵",
-                "reward-gold-tooltip": "你在競技場中贏得的金幣總／平均量。僅包括我們擁有完整獎勵數據的賽局",
-                "reward-packs-tooltip": "你在競技場中贏得的卡牌包總／平均量。僅包括我們擁有完整獎勵數據的賽局",
-                "reward-dust-tooltip": "你在競技場中贏得的魔塵總／平均量。僅包括我們擁有完整獎勵數據的賽局",
+                "reward-gold-tooltip": "你在競技場中贏得的金幣總數／平均量。僅包含擁有完整獎勵資料的對戰",
+                "reward-packs-tooltip": "你在競技場中贏得的卡牌包總數／平均量。僅包含擁有完整獎勵資料的對戰",
+                "reward-dust-tooltip": "你在競技場中贏得的魔塵總數／平均量。僅包含擁有完整獎勵資料的對戰",
                 "average-match-time": "賽局時長",
                 "average-match-time-tooltip": "你的平均賽局時長",
-                "reward-tickets-tooltip": "你在競技場中贏得的競技場門票總／平均數量。僅包含我們擁有完整獎勵數據的場次",
+                "reward-tickets-tooltip": "你在競技場中贏得的競技場門票總數／平均量。僅包含擁有完整獎勵資料的對戰",
                 "reward-tickets": "門票獎勵"
             }
         },
@@ -1351,7 +1351,7 @@
                         "mulligan-winrate-impact-header-tooltip": "這是卡牌在你的起手換牌後相對於牌組勝率的平均勝率，數值越高越好。",
                         "drawn-winrate-impact-header": "抽取影響",
                         "drawn-winrate-header": "抽取勝率",
-                        "drawn-winrate-header-tooltip": "卡牌在賽局被抽出或換牌結束後出現在你的起始手牌中時的平均勝率",
+                        "drawn-winrate-header-tooltip": "當這張卡牌在對戰中被抽到，或在起手換牌結束時留在你的起始手牌中的平均勝率",
                         "copy-per-deck-header-tooltip": "此型態牌組中，該牌平均放入的張數",
                         "mulligan-winrate-impact-header": "起手影響",
                         "drawn-winrate-impact-header-tooltip": "在對戰中抽到此卡牌，或於起手換牌結束時保留在手中的狀況下，相對於牌組基礎勝率的勝率變動",
@@ -1360,8 +1360,8 @@
                         "discovered-winrate-impact-header": "發現（影響）",
                         "discovered-winrate-header": "發現—勝率",
                         "discovered-winrate-impact-header-tooltip": "在對戰中「發現」此卡牌後，相對於牌組基礎勝率的勝率變動",
-                        "discovered-winrate-impact-tooltip-low-data": "⚠️ 此牌僅被發現或抽到過 {{value}} 次，因此統計資料可能不準確。此數據使用牌組原型在傳說階級頂尖與鑽石階級 Premium玩家賽局所有職業時的統計資料。",
-                        "discovered-winrate-impact-tooltip-data": "此牌已被發現或抽到 {{value}} 次。此數據使用牌組原型在傳說階級頂尖與鑽石階級 Premium玩家賽局所有職業時的統計資料。",
+                        "discovered-winrate-impact-tooltip-low-data": "⚠️此牌僅被發現或抽到 {{value}} 次，因此統計數據可能不準確。此資料採用頂尖傳說與高階鑽石玩家對戰所有職業時的牌組型態統計數據。",
+                        "discovered-winrate-impact-tooltip-data": "此牌已被發現或抽到 {{value}} 次。此數據採用頂尖傳說與高階鑽石玩家對戰所有職業時的牌組型態統計數據。",
                         "play-coin-filter": {
                             "all": "所有行動次序",
                             "coin": "後攻",
@@ -1498,7 +1498,7 @@
                     "games-played": "已遊玩局數",
                     "net-mmr": "評分變化",
                     "net-mmr-tooltip": "每場賽局平均評分變化",
-                    "empty-state-text": "我們找不到所選篩器的任何統計數據。如果你嘗試取得飾品資料，你首先需要前往「設定」>「一般設定」>「資料」清空本機快取以重新整理資料。"
+                    "empty-state-text": "找不到符合所選篩選條件的統計數據。若要取得飾品資料，請先前往「設定」>「一般設定」>「資料」，清除本機快取來重新整理資料。"
                 },
                 "hero-details": {
                     "tabs": {
@@ -1608,7 +1608,7 @@
                 "header-combat-winrate": "戰鬥勝率",
                 "header-group-difficulty-button": "分組",
                 "header-group-difficulty-button-tooltip": "將任務按名稱分組，這樣你就可以檢視所有任務的全部難度",
-                "learn-more": "這些數據是怎麼計算出來的呢？",
+                "learn-more": "這些數據是如何計算出來的？",
                 "header-average-position": "平均名次",
                 "header-average-turns-to-complete": "平均回合完賽數",
                 "header-collapse-all-button": "全部收縮",
@@ -2145,7 +2145,7 @@
             "guess_the_weight": "有些卡牌在「發現」過程中有上下文說明",
             "minion_play_order": "戰場上每個手下頂端的數字告訴你他們上場的順序 - 這就是死亡之聲觸發的順序",
             "minion_auto_highlight": "在遊玩對應的英雄時一些手下可以腦袋空空看到就購買（例如保本賭客於海盜派奇）。 Firestone 會自動在商店中為你標記這些手下。",
-            "constructed_deck_stats": "檢視詳細的卡牌統計（例如起始手牌和抽取勝率）以及整副牌組型態的統計。",
+            "constructed_deck_stats": "檢視詳細的卡牌統計數據（例如起手換牌和抽取勝率）以及整副牌組型態的統計數據。",
             "bg_wisdomball": "你可以直接從覆疊視窗中獲得遊戲裡一些最佳玩家的建議並採用他們的策略",
             "collection_stats": "你可以檢視所顯示集群的卡牌歷史記錄和全域統計，並隨時在它們之間切換",
             "achievements_pick_for_me": "你可以讓應用程式來為你揀選並追蹤 3 項成就",
@@ -2949,7 +2949,8 @@
             "player": "本賽局你已打出 3 種符文類型中的 {{value}} 種"
         },
         "ghuun-blood-runes": {
-            "player": "本賽局已打出血魄符文卡牌：{{value}} 張"
+            "player": "本賽局已打出血魄符文卡牌：{{value}} 張",
+            "opponent": "對手在本賽局已打出的血魄符文：{{value}} 個"
         },
         "aqir-goliath": {
             "player": "本回合已打出連擊牌：{{value}} 張。「亞基巨像」的費用減少：{{reduction}}"
@@ -3282,13 +3283,13 @@
                 "mulligan-impact": "影響",
                 "no-mulligan-data": "沒有資料",
                 "deck-mulligan-filter-rank-bracket-tooltip": "顯示自 {{rankBracket}} 段位以來的所有賽局。點選進行更改。",
-                "mulligan-impact-tooltip-premium": "這張卡牌留在起始手牌中對你的勝率有多大影響。",
-                "no-mulligan-data-tooltip": "我們找不到此型態牌組的任何起始手牌資料",
-                "mulligan-keep-rate-tooltip": "這張卡牌在起始手牌中的保留率。",
+                "mulligan-impact-tooltip-premium": "在起手時保留這張卡牌對你的勝率有多大影響。",
+                "no-mulligan-data-tooltip": "我們找不到此牌組型態的任何起手換牌資料",
+                "mulligan-keep-rate-tooltip": "這張卡牌在起手時被保留的機率。",
                 "mulligan-keep-rate": "留牌率%",
-                "mulligan-impact-tooltip-free": "這張卡牌留在起始手牌中對你的勝率有多大影響。你今天還可以免費使用 {{value}} 次。",
+                "mulligan-impact-tooltip-free": "在起手時保留這張卡牌對你的勝率有多大影響。你今天還可以免費使用 {{value}} 次。",
                 "deck-mulligan-overview-title": "牌組起手概觀",
-                "locked-premium-info-tooltip": "成為 Premium 會員以檢視牌組的詳細起始手牌數據。你每天可免費使用此功能 {{value}} 次。",
+                "locked-premium-info-tooltip": "成為 Premium 會員以檢視牌組的詳細起手換牌資料。你每天可免費使用此功能 {{value}} 次。",
                 "deck-mulligan-overview-footer": "{{format}} | {{rankBracket}} | 對戰 {{opponentClass}} | {{sampleSize}} 場賽局",
                 "deck-mulligan-filter-time-tooltip": "顯示自 {{timeFrame}} -（{{patchDetails}}）以來的所有賽局。點選進行更改。",
                 "sample-size-tooltip": "遊玩該牌組型態的賽局數（若有）；否則它會使用精確的牌組清單",
@@ -3312,10 +3313,10 @@
                     "personal": "你的數據",
                     "both": "兩者"
                 },
-                "sample-size-tooltip-personal": "你使用此套牌且包含單卡換牌數據的個人賽局數",
+                "sample-size-tooltip-personal": "你使用此套牌且包含單卡起手換牌資料的個人賽局數",
                 "deck-mulligan-filter-stats-source-tooltip": "顯示{{source}}的單卡留牌率與換牌影響。點選以變更。",
                 "sample-size-both": "{{community}} 社群數據 / {{personal}} 你的數據",
-                "sample-size-tooltip-both": "社群賽局數，接著是你使用此套牌且包含單卡換牌數據的賽局數",
+                "sample-size-tooltip-both": "社群賽局數，以及你使用此套牌且包含單卡起手換牌資料的個人賽局數",
                 "personal-min-games-warning": "「你的數據」需要使用此套牌進行 {{threshold}} 場對戰（你目前有 {{current}} 場）。在此之前，覆疊視窗將保持顯示「社群數據」。請至「設定」→「記牌器」→「起手換牌」中變更此設定。",
                 "personal-min-games-warning-never": "此覆疊視窗已停用「你的數據」，因此將保持顯示「社群數據」。請至「設定」→「記牌器」→「起手換牌」中變更此設定。"
             },
@@ -4051,9 +4052,9 @@
                 "hotkeys": "快速鍵"
             },
             "third-party": {
-                "intro": "我們堅信你的資料歸你所有，且你理應能夠將其同步到其他第三方網站，協助這些網站發揮所長來處理這些數據。雖然我們並未從中獲利，但因為這些網站會提及我們，我們也因此獲得了一些曝光度😊",
+                "intro": "我們堅信你的資料歸你所有，且你理應能夠將其同步到其他第三方網站，協助這些網站發揮所長來處理這些資料。雖然我們並未從中獲利，但因為這些網站會提及我們，我們也因此獲得了一些曝光度😊",
                 "vs": {
-                    "pitch": "Vicious Syndicate 會利用數千場賽局的數據，並結合頂尖玩家的見解，建立每週趨勢報告。你可以造訪他們的網站 — {{websiteLink}}",
+                    "pitch": "Vicious Syndicate 透過結合數千場對戰的數據與頂尖玩家的見解，每週產出環境趨勢報告。你可以造訪他們的網站：{{websiteLink}}",
                     "website-link": "「這裡」",
                     "next": "如果你決定協助 vS 資料收割者報告（vS Data Reaper Report），Firestone 將會匿名傳送你的賽局資訊給他們（大多是每個玩家所使用的卡牌以及一些主要資料，像是玩家排名賽）。",
                     "toggle-label": "協助 vS 資料收割者報告（vS Data Reaper Report）"
@@ -4490,7 +4491,7 @@
                 "link-battlenet-label": "Battle.net",
                 "unlink-battlenet-tooltip": "解除 Battle.net 與你的 Overwolf Firestone 帳號之連結。解除後，每次登入將僅顯示各自的遊戲歷史紀錄。",
                 "intro": "將 Battle.net 帳號連結至你現有的 Overwolf Firestone 登入，即可使用 Battle.net 登入並保留相同的賽局歷史紀錄。",
-                "link-battlenet-tooltip": "請先使用 Overwolf 登入，再連結 Battle.net。完成後，你即可使用 Battle.net 登入並重新整理數據。",
+                "link-battlenet-tooltip": "請先使用 Overwolf 登入，再連結 Battle.net 帳號。完成後，即可使用 Battle.net 登入並重新整理你的資料。",
                 "sign-in-tooltip": "開啟登入頁面以使用 Overwolf 或 Battle.net 登入。",
                 "signed-in-as": "已透過 {{provider}} 登入為 <b>{{name}}</b>。Firestone 使用者名稱：{{username}}",
                 "intro-battlenet": "你已使用 Battle.net 登入。連結現有的 Overwolf 帳號即可將該賽局歷史紀錄轉移至此登入帳號。",
@@ -4500,7 +4501,7 @@
                 "intro-battlenet-linked-overwolf": "此 Battle.net 登入已連結至一個 Overwolf 帳號，讓你可以檢視該對戰歷史紀錄。解除連結 Overwolf 即可分別使用各個登入方式。",
                 "unlink-overwolf-failed": "無法解除連結 Overwolf。請稍後再試。",
                 "link-overwolf-button": "連結 Overwolf",
-                "link-overwolf-tooltip": "連結現有的 Overwolf Firestone 帳號。這能讓你匯入現有的數據（對戰紀錄、卡牌包等）。",
+                "link-overwolf-tooltip": "連結現有的 Overwolf Firestone 帳號。這能讓你匯入現有的資料（對戰紀錄、卡牌包等）。",
                 "signed-in-linked-overwolf-tooltip": "已連結的 Overwolf 帳號：{{name}}",
                 "link-overwolf-need-battlenet": "請先使用 Battle.net 登入，再重試連結 Overwolf。",
                 "link-overwolf-label": "Overwolf",
@@ -4512,7 +4513,7 @@
                 "perks-history-detail": "未連結至帳號的對戰紀錄將在大約一年後被清理刪除。",
                 "perks-replays-title": "重播將保留約一年",
                 "perks-replays-detail": "若未登入帳號，重播檔案將在 60 天後被移除。",
-                "perks-sync-title": "你的數據隨你移動",
+                "perks-sync-title": "你的資料隨你同行",
                 "perks-lottery-detail": "點數仍會在本機累積；登入以進行同步並在賽季結束時參加抽獎。",
                 "perks-intro": "免費註冊登入。這能讓 Firestone 為你提供更完善的服務。",
                 "perks-sync-detail": "當你重新安裝或更換電腦時，對戰歷史紀錄、卡牌包數據與成就都會完整保留。",
@@ -4726,7 +4727,9 @@
                     "ancestral-automaton-label": "遠古自動機",
                     "flesh-giant-tooltip": "當對手的職業為 {{classes}} 時，顯示對手英雄生命值在其回合內變動的次數",
                     "cthun-abilities-label": "克蘇恩能力",
-                    "cthun-abilities-tooltip": "當對手手牌、牌堆或場上有「『帝國之眼』克蘇恩」時，顯示他們已觸發其四種能力中的幾種"
+                    "cthun-abilities-tooltip": "當對手手牌、牌堆或場上有「『帝國之眼』克蘇恩」時，顯示他們已觸發其四種能力中的幾種",
+                    "ghuun-blood-runes-label": "「古翰」血魄符文",
+                    "ghuun-blood-runes-tooltip": "當對手使用三血魄牌組的死亡騎士，且已打出至少一張血魄符文卡牌時，顯示他在本賽局已打出的血魄符文數量"
                 },
                 "size-title": "大小與不透明度",
                 "opacity-title": "不透明度",
@@ -5032,7 +5035,7 @@
                 "show-mulligan-deck-overview-label": "顯示牌組概覽",
                 "size": "大小",
                 "show-mulligan-card-impact-label": "顯示卡牌影響",
-                "show-mulligan-deck-overview-tooltip": "透過每張卡牌的起始手牌影響來顯示你的牌組概覽",
+                "show-mulligan-deck-overview-tooltip": "顯示你的牌組總覽以及每張卡牌的起手換牌影響力",
                 "show-mulligan-card-impact-tooltip": "顯示你手中的每張卡牌對你牌組勝率的影響",
                 "keep-after-mulligan-10": "保留 10 秒",
                 "keep-after-mulligan-5": "保留 5 秒",
@@ -5046,7 +5049,7 @@
                 "personal-min-games-never": "從不（於覆疊視窗中隱藏你的數據）",
                 "personal-min-games-count": "{{value}} 場對戰",
                 "sync-past-games-label": "同步過往對戰紀錄",
-                "sync-past-games-tooltip": "Premium：下載在此功能推出前（或重新安裝後）你所進行對戰的單卡換牌數據，讓「你的數據」能將其納入計算。當 Firestone 執行時你所進行的對戰總是會儲存在本機。免費版使用者僅能取得這些本機對戰紀錄。"
+                "sync-past-games-tooltip": "Premium：下載在此功能推出前（或重新安裝後）你所進行對戰的單卡起手換牌數據，讓「你的統計數據」能將其納入計算。當 Firestone 執行時你所進行的對戰都會自動儲存在本機。免費版使用者僅能取得這些本機對戰紀錄。"
             },
             "lobby": {
                 "show-lobby-tracker-tooltip": "在牌組選擇畫面上顯示所選牌組清單",
@@ -5634,7 +5637,16 @@
             "assemble-pick-rate": "已選取",
             "assemble-right": "右側",
             "assemble-appearance-rate": "已出現",
-            "assemble-error": "無法載入組裝池，請稍後再試。"
+            "assemble-error": "無法載入組裝池，請稍後再試。",
+            "discover-error": "無法載入發現統計資料，請稍後再試。",
+            "discover": "發現",
+            "discover-loading": "載入中...",
+            "discover-all-classes": "所有職業",
+            "discover-search": "搜尋卡牌",
+            "discover-card": "卡牌",
+            "discover-offered": "出現次數",
+            "discover-games": "對局場次",
+            "discover-picked": "揀選次數"
         },
         "faq": {
             "sections": {
@@ -5788,7 +5800,7 @@
                     },
                     "title": "開發者資源",
                     "subtitle": "用於統計數據、資訊圖表或僅供娛樂的公開 Firestone API。",
-                    "blurb": "用於英雄戰場、決鬥領主與卡牌數據的公開統計 API。",
+                    "blurb": "用於英雄戰場、決鬥擂台與卡牌資料的公開統計數據 API。",
                     "intro": "<p>你可以直接使用這些 API 來建立有趣的統計數據、懶人包圖表，或純粹出於興趣製作。若你發表任何內容，請務必註明 Firestone 為資料來源。</p><p>若你想將資料用於公開應用程式，請透過 <a href=\"https://discord.gg/FhEHn8w\" target=\"_blank\" rel=\"noopener noreferrer\">Discord</a> 與我聯繫。</p>"
                 },
                 "setup": {
@@ -5943,7 +5955,7 @@
             },
             "privacy-prefix": "登入即代表你同意我們的 ",
             "link-subtitle": "將 Battle.net 連結至你的 Firestone 帳號",
-            "subtitle": "登入以跨裝置同步你的數據",
+            "subtitle": "登入以跨裝置同步你的資料",
             "continue-with-battlenet": "使用 Battle.net 繼續",
             "continue-with-google": "使用 Google 繼續",
             "continue-with-overwolf": "使用 Overwolf 繼續",
@@ -5953,18 +5965,18 @@
         "monitoring": {
             "simulator": {
                 "legend-needs-work": "低於此標準需待改進",
-                "loading": "正在載入準確度數據…",
+                "loading": "正在載入準確度資料…",
                 "document-title": "英雄戰場模擬器準確度 — Firestone",
                 "page-lead": "追蹤英雄戰場戰鬥模擬器隨時間推移與實際遊戲結果相符的頻率。",
                 "legend-good": "準確度大於 0.5 為良好",
                 "legend-very-good": "準確度大於 0.8 為優良",
                 "page-title": "英雄戰場模擬器準確度",
-                "empty-range": "選定的日期範圍內無數據。",
+                "empty-range": "選定的日期範圍內沒有資料。",
                 "resolution-weekly": "顯示每週總計（選定的範圍大於 45 天）。",
                 "to": "至",
                 "resolution-daily": "顯示每日數值。",
                 "chart-label": "準確度",
-                "load-error": "無法載入模擬器準確度數據。",
+                "load-error": "無法載入模擬器準確度資料。",
                 "from": "從",
                 "tooltip-version": "版本：{{version}}",
                 "tooltip-games": "賽局數：{{games}}",
