@@ -211,8 +211,8 @@
 				"blurb": "Show how many Combo cards you have played this turn."
 			},
 			"playerGhuunBloodRunesCounter": {
-				"title": "G'huun Blood Runes counter",
-				"blurb": "Show how many Blood Runes you have played this game."
+				"title": "G'huun Health counter",
+				"blurb": "Show how much Health G'huun steals (6 plus Blood Runes played this game)."
 			},
 			"playerUldirRunesCounter": {
 				"title": "Uldir Quarantine counter",
@@ -253,6 +253,10 @@
 			"opponentCthunAbilitiesCounter": {
 				"title": "Opponent's C'Thun abilities counter",
 				"blurb": "Show how many of C'Thun, Eye of the Empire's four abilities your opponent has triggered."
+			},
+			"opponentNzothDreamsEndCounter": {
+				"title": "Opponent's N'Zoth, Dream's End counter",
+				"blurb": "Show how many Deathrattle minions your opponent has summoned, and N'Zoth's current cost."
 			},
 			"playerBgsTavernSpellsCastCounter": {
 				"title": "Tavern spells cast counter",
@@ -2622,7 +2626,8 @@
 			"player": "You have spent {{value}} mana on spells this game. Shirvallah now costs {{cost}}"
 		},
 		"nzoth-dreams-end": {
-			"player": "You have summoned {{value}} Deathrattle minions this game. N'Zoth, Dream's End costs {{cost}}"
+			"player": "You have summoned {{value}} Deathrattle minions this game. N'Zoth, Dream's End costs {{cost}}",
+			"opponent": "Your opponent has summoned {{value}} Deathrattle minions this game. N'Zoth, Dream's End costs {{cost}}"
 		},
 		"yshaarj-titan-bane": {
 			"player": "{{value}} mana left to spend on minions this game ({{spent}} spent)"
@@ -2641,8 +2646,8 @@
 			"player": "You have played {{value}} Combo cards this turn. Aqir Goliath costs {{reduction}} less"
 		},
 		"ghuun-blood-runes": {
-			"player": "You have played {{value}} Blood Runes this game",
-			"opponent": "Your opponent has played {{value}} Blood Runes this game"
+			"player": "G'huun steals {{value}} Health ({{runes}} Blood Runes played)",
+			"opponent": "G'huun steals {{value}} Health ({{runes}} Blood Runes played)"
 		},
 		"overload-cards-played": {
 			"player": "You have played {{value}} Overload cards this game",
@@ -3890,6 +3895,7 @@
 				"refresh-engine": "Refresh engine",
 				"refresh-engine-tooltip": "After each Hearthstone client patch, you will need to refresh the engine (or disable mods altogether), otherwise the game will fail to start.",
 				"refreshing-engine": "Copying libs...",
+				"download-failed": "Could not download the mod libraries. Click Enable mods again to resume.",
 				"add-mods-title": "3. Add mods",
 				"add-mods-description": "Find some mods, and follow the instructions from the {{link}} guide to install them (which also contains a list of a few mods that I think are safe to use).",
 				"installed-mods-description": "The following mods are installed (delete the corresponding file in Hearthstone/Mods to uninstall them):",
@@ -4537,8 +4543,10 @@
 					"corpse-spent-tooltip": "Show a counter with the total amount of corpses the opponent spent. It appears when the opponent has played one rune of each type, and is likely to have Climactic Nectrotic Explosion.",
 					"cthun-abilities-label": "C'Thun abilities",
 					"cthun-abilities-tooltip": "Show how many of C'Thun, Eye of the Empire's four abilities your opponent has triggered, when they have it in hand, deck or on board",
-					"ghuun-blood-runes-label": "G'huun Blood Runes",
-					"ghuun-blood-runes-tooltip": "When your opponent is a Death Knight playing a triple Blood deck and has played at least one Blood Rune, show how many Blood Runes they have played this game",
+					"nzoth-dreams-end-label": "N'Zoth, Dream's End",
+					"nzoth-dreams-end-tooltip": "When enabled, show how many Deathrattle minions your opponent has summoned and N'Zoth, Dream's End's current cost once they have summoned at least one",
+					"ghuun-blood-runes-label": "G'huun Health",
+					"ghuun-blood-runes-tooltip": "When your opponent is a Death Knight playing a triple Blood deck and has played at least one Blood Rune, show how much Health G'huun steals (6 plus Blood Runes played this game)",
 					"corpses-label": "Corpses",
 					"corpses-tooltip": "Show a counter with the current total corpses for the opponent - it appears when you know they have a corpse spending card and the game doesn't show the counter",
 					"wheel-of-death-tooltip": "After your opponent plays {{cardName}}, shows the number of turns before you die",
@@ -4784,8 +4792,8 @@
 					"cthun-abilities-tooltip": "When you have C'Thun, Eye of the Empire in hand or deck, show how many of its four abilities you have triggered",
 					"aqir-goliath-label": "Aqir Goliath",
 					"aqir-goliath-tooltip": "When you have Aqir Goliath in hand or deck, show how many Combo cards you have played this turn",
-					"ghuun-blood-runes-label": "G'huun Blood Runes",
-					"ghuun-blood-runes-tooltip": "When you have G'huun in hand or deck, show how many Blood Runes you have played this game",
+					"ghuun-blood-runes-label": "G'huun Health",
+					"ghuun-blood-runes-tooltip": "When you have G'huun in hand or deck, show how much Health G'huun steals (6 plus Blood Runes played this game)",
 					"overload-cards-played-label": "Overload Cards Played",
 					"overload-cards-played-tooltip": "Show the number of Overload cards you have played this game",
 					"freebird-label": "Freebird",
@@ -5487,6 +5495,10 @@
 			"assemble-right": "Right",
 			"assemble-appearance-rate": "Seen",
 			"assemble-appearance-rate-hint": "How frequently was this option offered",
+			"assemble-game": "game",
+			"assemble-games": "games",
+			"assemble-games-hint": "Games in which a base was offered. A game that assembled more than one base is counted once per base.",
+			"discover-offered-count-hint": "Times this card was offered",
 			"assemble-pick-rate": "Picked",
 			"assemble-pick-rate-hint": "How often the option was chosen when it was offered",
 			"discover": "Discover",
