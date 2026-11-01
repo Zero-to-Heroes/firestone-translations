@@ -678,7 +678,8 @@
                 "card-stats": "卡牌統計",
                 "class-tier-list": "職業強度清單",
                 "my-stats": "我的統計",
-                "arena-top-runs": "高勝賽局"
+                "arena-top-runs": "高勝賽局",
+                "cards": "卡牌"
             },
             "filters": {
                 "time": {
@@ -1129,7 +1130,8 @@
                 "ranking-header": "排名賽局",
                 "deckbuilder-header": "牌組構建",
                 "meta-decks-header": "趨勢牌組",
-                "meta-archetypes-header": "趨勢牌組型態"
+                "meta-archetypes-header": "趨勢牌組型態",
+                "cards-header": "卡牌"
             },
             "filters": {
                 "filter-info-tooltip": "變更這些篩選條件也會影響記牌器在遊戲中顯示的統計資料",
@@ -1394,7 +1396,9 @@
                 "discover-stats-header-tooltip": "顯示賽局發現的卡牌的統計資料。",
                 "winrate-second-header": "後攻",
                 "winrate-first-header": "先攻",
-                "matchup-vs-tooltip": "對戰 {{className}}"
+                "matchup-vs-tooltip": "對戰 {{className}}",
+                "load-error": "請檢查你的網路連線後重試。",
+                "load-error-title": "無法載入這些統計資料"
             },
             "notifications": {
                 "turn-start-title": "輪到你了！",
@@ -2393,6 +2397,10 @@
             "third-party-auth-tools-unsupported": "🚨 Premium 功能需要訂閱官方 Firestone。第三方「授權修復」或解鎖工具均不受支援且不安全——這類工具通常會要求系統管理員權限，並修改 hosts 檔案或防火牆規則。請移除該類工具，並透過官方 Premium 頁面進行訂閱。",
             "price-taxes-excluded-tooltip": "稅金將在結帳時根據你的帳單地址另行加上。",
             "price-taxes-excluded": "（含稅）"
+        },
+        "cards": {
+            "back-to-assemble": "所有組裝卡牌",
+            "back-to-discover": "所有發現卡牌"
         }
     },
     "turn-timer": {
@@ -3351,7 +3359,9 @@
             "mechanics": "機制",
             "cost-modifier": "費用修改效果",
             "minion-types": "手下類型",
-            "minion-type": "手下類型"
+            "minion-type": "手下類型",
+            "attack": "攻擊力",
+            "health": "生命值"
         },
         "tourist": "遊客：{{className}}",
         "burns-in": "{{value}} 回合後捨棄",
@@ -4327,7 +4337,8 @@
                 "auto-update-trusted-verified": "僅可信與已驗證的模組",
                 "import-no-install-path": "請先設定你的遊戲安裝位置。",
                 "explanation": "模組是可以用來改變《爐石戰記》遊戲本身行為的外掛程式。",
-                "restart-required": "需要重新啟動《爐石戰記》以套用此變更。"
+                "restart-required": "需要重新啟動《爐石戰記》以套用此變更。",
+                "download-failed": "無法下載模組櫃。請再次點選「啟用模組」以繼續。"
             },
             "premium": {
                 "lottery-opacity-title": "抽獎小工具不透明度",
@@ -4452,7 +4463,9 @@
                 "counters-widgets-size-tooltip": "修改當滑鼠游標懸停在某些計數器（如拉法姆清單）時顯示的小工具尺寸",
                 "help-tooltip-size": "小工具提示字型尺寸",
                 "use-azalina-label": "使用阿薩琳娜進行預測",
-                "use-azalina-tooltip": "若玩家擁有阿薩琳娜，系統會根據對手的職業來決定是否顯示部分計數器（例如：若你使用的職業是牧師，而對手是盜賊，系統可顯示翠玉守護者計數器）。實驗性功能"
+                "use-azalina-tooltip": "若玩家擁有阿薩琳娜，系統會根據對手的職業來決定是否顯示部分計數器（例如：若你使用的職業是牧師，而對手是盜賊，系統可顯示翠玉守護者計數器）。實驗性功能",
+                "card-tooltip-canvas-fallback-tooltip": "若卡牌提示圖片載入失敗，將直接繪製卡牌，避免顯示破損的圖片。",
+                "card-tooltip-canvas-fallback": "卡牌圖片備用方案"
             },
             "streamer": {
                 "battlegrounds": {
@@ -5000,7 +5013,8 @@
                     "colossus-of-the-cold-label": "「寒冰巨像」",
                     "aqir-goliath-label": "「亞基巨像」",
                     "ghuun-blood-runes-label": "「古翰」生命值",
-                    "uldir-runes-label": "「奧迪爾隔離」"
+                    "uldir-runes-label": "「奧迪爾隔離」",
+                    "hodir-label": "「霍迪爾」"
                 },
                 "discovery-zone-label": "發現區塊",
                 "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到並標記牌堆的相關卡牌與協同作用。",
@@ -5646,7 +5660,8 @@
             "discover-card": "卡牌",
             "discover-offered": "出現次數",
             "discover-games": "對局場次",
-            "discover-picked": "揀選次數"
+            "discover-picked": "揀選次數",
+            "assemble-games-hint": "提供基底的對戰。組裝超過一個基底的對戰會按每個基底分別計入一次。"
         },
         "faq": {
             "sections": {
@@ -6355,7 +6370,11 @@
             "editions-label": "可用的版本",
             "hero": {
                 "title": "追蹤每一場《爐石戰記》對戰，完全免費",
-                "subtitle": "牌組記牌器、覆疊視窗、卡牌收藏、英雄戰場工具等，盡在遊戲中。"
+                "subtitle": "牌組記牌器、覆疊視窗、卡牌收藏、英雄戰場工具等，盡在遊戲中。",
+                "cta": "下載 Firestone",
+                "step-1-title": "安裝",
+                "step-2-title": "啟動《爐石戰記》",
+                "step-3-text": "Firestone 會自動開始追蹤。"
             },
             "social-proof": {
                 "titles": {
@@ -6477,20 +6496,84 @@
                 "col-actions": "動作",
                 "you": "（你）",
                 "col-action": "動作",
-                "user-id": "帳號 ID"
+                "user-id": "帳號 ID",
+                "admin-hint": "管理員可以編輯所有內容並管理貢獻者。",
+                "badge": "顯示在其祕訣上的徽章",
+                "edit-title": "編輯貢獻者",
+                "nav-label": "管理員",
+                "title": "管理員",
+                "subtitle": "貢獻者與歷史紀錄",
+                "tab-contributors": "貢獻者 · {{value}}",
+                "loading": "正在載入貢獻者與活動…",
+                "col-added": "已新增",
+                "col-content-types": "可編輯",
+                "role-admin": "管理員",
+                "role-author": "作者",
+                "edit": "編輯",
+                "all-content-types": "全部",
+                "before": "之前",
+                "details": "變更詳細資料",
+                "add-title": "新增貢獻者",
+                "after": "之後",
+                "form-error-user-id": "請輸入帳號 ID。",
+                "form-error-name": "請輸入顯示在其祕訣上的名稱。",
+                "cancel": "取消",
+                "action-created": "已建立",
+                "action-edited": "已編輯",
+                "action-contributor-added": "已新增貢獻者",
+                "action-contributor-updated": "已更新貢獻者",
+                "action-contributor-removed": "已移除貢獻者"
             },
             "hero-power-tips": {
                 "write-basic": "+ 撰寫你的基本祕訣",
                 "add-hero": "+ 英雄專屬",
                 "add-lobby": "+ 大廳情境",
-                "curve-3-on-3": "第3回合3⭐️旅店"
+                "curve-3-on-3": "第3回合3⭐️旅店",
+                "nav-label": "英雄能力祕訣",
+                "confirm-delete": "要刪除此祕訣嗎？玩家將無法再看到它。",
+                "details": "詳細資料",
+                "title": "英雄能力祕訣",
+                "powers-label": "英雄能力",
+                "loading": "正在載入你的祕訣…",
+                "filter-all": "全部",
+                "filter-label": "篩選",
+                "basic-tip": "基本祕訣",
+                "delete": "刪除",
+                "edit": "編輯",
+                "form-title-edit-basic": "編輯基本祕訣",
+                "form-title-edit-hero": "編輯英雄專屬祕訣",
+                "form-title-edit-lobby": "編輯大廳情境祕訣",
+                "hero": "英雄",
+                "curve-basic": "基礎",
+                "curves": "玩法路線",
+                "discard": "捨棄",
+                "language": "語言",
+                "preview-app": "應用程式",
+                "preview-app-colors": "應用程式顏色",
+                "preview-game": "遊戲內",
+                "preview-panel-title": "Firestone 祕訣",
+                "variant-lobby-empty": "大廳情境",
+                "status-draft-saved": "草稿已儲存至本機 · {{time}}",
+                "status-editing": "正在編輯你已發布的祕訣"
             },
             "errors": {
-                "contradictory_tribes": "種族不能同時存在與不存在。"
+                "contradictory_tribes": "種族不能同時存在與不存在。",
+                "generic": "無法發布 ({{code}})。您的草稿已保留在此裝置上。",
+                "not_configured": "目前無法使用貢獻功能。",
+                "network_error": "無法連線至伺服器。請檢查您的網路連線後重試。"
+            },
+            "nav-label": "貢獻",
+            "comps": {
+                "nav-label": "陣容"
+            },
+            "unavailable": {
+                "home": "回到 Firestone",
+                "body": "貢獻功能僅開放給已批准的帳號。若要成為貢獻者，請將你的帳號 ID（位於帳號選單中）傳送給 Firestone 團隊。"
             }
         },
         "account": {
-            "account-id-copied": "已複製帳號 ID"
+            "account-id-copied": "已複製帳號 ID",
+            "copy-account-id": "複製帳號 ID"
         }
     },
     "archetype": {
@@ -7315,7 +7398,26 @@
         "jtu-quest-priest": "任務(喚醒造物者)-牧",
         "xl-egg-paladin": "40牌 蛋-聖",
         "xl-hl-questline-warrior": "40牌 無雙任務線(掠奪碼頭)-戰",
-        "xl-shudderwock-shaman": "40牌 哮斗龍-薩"
+        "xl-shudderwock-shaman": "40牌 哮斗龍-薩",
+        "ammunae-nzoth-druid": "死聲(恩若司,安姆內)-德",
+        "ammunae-druid": "死聲(安姆內)-德",
+        "bfu-nzoth-handbuff-dk": "BFU 手牌加加(恩若司)-死騎",
+        "beast-attack-druid": "野獸攻擊-德",
+        "beast-druid": "野獸-德",
+        "bbb-nzoth-handbuff-dk": "血魄手牌加加(恩若司)-死騎",
+        "cthun-dh": "克蘇恩-惡魔獵",
+        "cthun-druid": "克蘇恩-德",
+        "mech-hunter": "機械-獵",
+        "dragon-mage": "龍-法",
+        "holy-paladin": "神聖-聖",
+        "cthun-priest": "克蘇恩-牧",
+        "medivh-priest": "『聖者』麥迪文-牧",
+        "cthun-shaman": "克蘇恩-薩",
+        "cthun-warlock": "克蘇恩-術",
+        "j-Lock": "J -術",
+        "dragon-warlock": "龍-術",
+        "armor-warrior": "護甲-戰",
+        "harold-cthun-warlock": "預兆克蘇恩-術"
     },
     "arena": {
         "overlay": {
@@ -7454,7 +7556,10 @@
         "quilboar_felboar_spam": "魔豬流野豬人",
         "dragon_spell_power": "法術傷害流龍類",
         "elemental_tempest": "無縛風暴流元素",
-        "undead_apm": "APM流不死族"
+        "undead_apm": "APM流不死族",
+        "murloc_end_of_turn": "回合結束流魚人",
+        "undead_eternal_knight": "永恆騎士流不死族",
+        "quilboar_gem_spam": "鮮血寶石流(熱氣勘測員)野豬人"
     },
     "androidDeckTracker": {
         "onboarding": {
