@@ -479,8 +479,8 @@
                 "blurb": "顯示你本回合打出了多少張連擊牌。"
             },
             "playerGhuunBloodRunesCounter": {
-                "title": "戈霍恩鮮血符文計數器",
-                "blurb": "顯示你本局打出了多少個鮮血符文。"
+                "title": "「古翰」生命值計數器",
+                "blurb": "顯示「古翰」偷取多少生命值（基礎 [6] 點加上已打出的血魄符文數量）。"
             },
             "playerUldirRunesCounter": {
                 "title": "奧迪爾隔離計數器",
@@ -2949,8 +2949,8 @@
             "player": "本賽局你已打出 3 種符文類型中的 {{value}} 種"
         },
         "ghuun-blood-runes": {
-            "player": "本賽局已打出血魄符文卡牌：{{value}} 張",
-            "opponent": "對手在本賽局已打出的血魄符文：{{value}} 個"
+            "player": "「古翰」偷取 {{value}} 點生命值（已打出血魄符文：{{value}} 個）",
+            "opponent": "「古翰」偷取 {{value}} 點生命值（對手已打出血魄符文：{{value}} 個）"
         },
         "aqir-goliath": {
             "player": "本回合已打出連擊牌：{{value}} 張。「亞基巨像」的費用減少：{{reduction}}"
@@ -4728,8 +4728,8 @@
                     "flesh-giant-tooltip": "當對手的職業為 {{classes}} 時，顯示對手英雄生命值在其回合內變動的次數",
                     "cthun-abilities-label": "克蘇恩能力",
                     "cthun-abilities-tooltip": "當對手手牌、牌堆或場上有「『帝國之眼』克蘇恩」時，顯示他們已觸發其四種能力中的幾種",
-                    "ghuun-blood-runes-label": "「古翰」血魄符文",
-                    "ghuun-blood-runes-tooltip": "當對手使用三血魄牌組的死亡騎士，且已打出至少一張血魄符文卡牌時，顯示他在本賽局已打出的血魄符文數量"
+                    "ghuun-blood-runes-label": "「古翰」生命值",
+                    "ghuun-blood-runes-tooltip": "當對手使用三血魄牌組的死亡騎士，且已打出至少一個血魄符文時，顯示「古翰」偷取多少生命值（基礎 [6] 點加上已打出的血魄符文數量）。"
                 },
                 "size-title": "大小與不透明度",
                 "opacity-title": "不透明度",
@@ -4993,13 +4993,13 @@
                     "broodqueen-shakar-label": "「育母沙卡」",
                     "aqir-goliath-tooltip": "當手牌或牌堆中有「亞基巨像」時，顯示你本回合已打出的連擊牌數量",
                     "cthun-abilities-tooltip": "當手牌或牌堆中有「『帝國之眼』克蘇恩」時，顯示你已觸發其四種能力中的幾種",
-                    "ghuun-blood-runes-tooltip": "當手牌或牌堆中有「古翰」時，顯示本賽局你已打出的血魄符文數量",
+                    "ghuun-blood-runes-tooltip": "當手牌或牌堆中有「古翰」時，顯示「古翰」偷取多少生命值（基礎 [6] 點加上已打出的血魄符文數量）。",
                     "uldir-runes-tooltip": "當你手牌或牌堆中有「奧迪爾隔離」時，顯示你已打出的符文類型數量",
                     "nzoth-dreams-end-label": "「『夢境終結』恩若司」",
                     "yshaarj-titan-bane-label": "「『泰坦剋星』亞煞拉懼」",
                     "colossus-of-the-cold-label": "「寒冰巨像」",
                     "aqir-goliath-label": "「亞基巨像」",
-                    "ghuun-blood-runes-label": "「古翰」血魄符文",
+                    "ghuun-blood-runes-label": "「古翰」生命值",
                     "uldir-runes-label": "「奧迪爾隔離」"
                 },
                 "discovery-zone-label": "發現區塊",
@@ -6311,7 +6311,7 @@
                     "caption": "遊戲內牌組記牌器與覆疊視窗",
                     "alt": "兩側皆有 Firestone 牌組記牌器覆疊視窗的《爐石戰記》對戰畫面"
                 },
-                "lead": "本輔助工具無需訂閱即可免費使用。部分覆疊視窗設有每日或每週的使用額度；訂閱 Premium 即可解除這些限制。",
+                "lead": "本輔助工具完全免費。幾乎所有功能皆無需訂閱即可體驗，成為 Premium 會員即可解除所有限制。",
                 "collection": {
                     "alt": "顯示各個《爐石戰記》系列收集進度的收藏總覽",
                     "title": "收藏追蹤器",
@@ -6354,8 +6354,8 @@
             },
             "editions-label": "可用的版本",
             "hero": {
-                "title": "下載 Firestone",
-                "subtitle": "免費的《爐石戰記》輔助工具：牌組記牌器、覆疊視窗、卡牌收藏、英雄戰場工具等。"
+                "title": "追蹤每一場《爐石戰記》對戰，完全免費",
+                "subtitle": "牌組記牌器、覆疊視窗、卡牌收藏、英雄戰場工具等，盡在遊戲中。"
             },
             "social-proof": {
                 "titles": {
@@ -6466,6 +6466,31 @@
                 "title": "感謝你的回饋",
                 "body": "祝福你一切順利，隨時歡迎你回來。若有留下聯絡方式，我們將盡快回覆你。"
             }
+        },
+        "contribute": {
+            "admin": {
+                "nothing": "（無）",
+                "add-confirm": "新增",
+                "tab-activity": "啟動",
+                "add": "+ 新增貢獻者",
+                "col-account": "帳號",
+                "col-actions": "動作",
+                "you": "（你）",
+                "col-action": "動作",
+                "user-id": "帳號 ID"
+            },
+            "hero-power-tips": {
+                "write-basic": "+ 撰寫你的基本祕訣",
+                "add-hero": "+ 英雄專屬",
+                "add-lobby": "+ 大廳情境",
+                "curve-3-on-3": "第3回合3⭐️旅店"
+            },
+            "errors": {
+                "contradictory_tribes": "種族不能同時存在與不存在。"
+            }
+        },
+        "account": {
+            "account-id-copied": "已複製帳號 ID"
         }
     },
     "archetype": {
@@ -7428,7 +7453,8 @@
         "elemental_azerite": "法術流(活化的艾澤萊晶岩)元素",
         "quilboar_felboar_spam": "魔豬流野豬人",
         "dragon_spell_power": "法術傷害流龍類",
-        "elemental_tempest": "無縛風暴流元素"
+        "elemental_tempest": "無縛風暴流元素",
+        "undead_apm": "APM流不死族"
     },
     "androidDeckTracker": {
         "onboarding": {
