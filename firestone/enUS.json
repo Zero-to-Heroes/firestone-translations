@@ -2128,6 +2128,268 @@
 			"achievements-reset-button-tooltip": "Untrack all achievements and remove them from the screen",
 			"achievements-pick-for-me-button": "Pick for me",
 			"achievements-pick-for-me-button-tooltip": "Let the app pick 3 achievements for you to track, based on their current completion"
+		},
+		"replay-viewer": {
+			"story": {
+				"damage-to-targets": "{{amount}} damage to {{count}} targets",
+				"source-deals": "{{source}} deals {{damage}}",
+				"source-dealing": "{{source}}, dealing {{damage}}",
+				"casts": "{{caster}} casts {{spells}}",
+				"badge": {
+					"choice": "Choice",
+					"forge": "Forge",
+					"trade": "Trade"
+				},
+				"cards-count": "{{count}} cards",
+				"picked": "picked {{cards}}",
+				"discover-from": "Discover: {{source}}",
+				"discover": "Discover",
+				"mana-change": "{{before}} to {{after}} mana",
+				"forged": "Forged {{card}}",
+				"traded": "Traded {{card}} for a card",
+				"trade-cost": "1 mana",
+				"secret-revealed": "Secret revealed: {{secret}}",
+				"lethal": "Lethal",
+				"a-card": "a card",
+				"a-secret": "a secret",
+				"a-card-capitalized": "A card",
+				"plays": "{{who}} plays {{what}}",
+				"mulligan-done": "Mulligan done",
+				"is-forged": "{{card}} is forged",
+				"key-moment": {
+					"board-wipe": "Board wipe",
+					"big-hit": "Big hit",
+					"swing": "Swing",
+					"secret": "Secret revealed"
+				},
+				"turn": "Turn {{turn}}",
+				"turn-mana": "{{mana}} mana",
+				"turn-steps": "{{count}} steps",
+				"mulligan": {
+					"kept-all": "{{who}} kept all {{count}} cards",
+					"kept-replaced": "{{who}} kept {{kept}}, replaced {{replaced}}",
+					"replaced-all": "{{who}} replaced all {{replaced}}",
+					"replaced": "{{who}} replaced {{replaced}}",
+					"title": "Mulligan"
+				},
+				"you": "You",
+				"opponent": "Opponent"
+			},
+			"decklists": {
+				"cards": "{{count}} cards",
+				"unknown-deck": "The deck of the player isn't known for this replay.",
+				"seen": "{{count}} of 30 seen",
+				"no-opponent-card": "No card of the opponent is shown in this replay.",
+				"code-copied": "Deck code copied",
+				"copy-code": "Copy deck code",
+				"export": "Export deck"
+			},
+			"error": {
+				"title": "This replay can't be played",
+				"missing": "The replay no longer exists, or the link is wrong.",
+				"unsupported": "Its game type isn't supported by the viewer yet.",
+				"damaged": "The file is damaged or the connection was interrupted while loading it.",
+				"try-again": "Try again"
+			},
+			"loading": {
+				"parsing": "Parsing the replay",
+				"preparing": "Preparing the replay",
+				"label": "Preparing your replay",
+				"progress": "Preparing your replay · turn {{turn}} of {{total}}"
+			},
+			"header": {
+				"turns": "{{count}} turns",
+				"versus": "{{mine}} vs {{opponent}}",
+				"format": {
+					"standard": "Standard",
+					"wild": "Wild",
+					"twist": "Twist",
+					"classic": "Classic"
+				},
+				"mode": {
+					"ranked": "Ranked",
+					"arena": "Arena",
+					"arena-underground": "Underground Arena",
+					"duels": "Duels",
+					"tavern-brawl": "Tavern Brawl",
+					"battlegrounds": "Battlegrounds",
+					"practice": "Practice",
+					"friendly": "Friendly",
+					"casual": "Casual"
+				},
+				"rank": {
+					"legend": "Legend",
+					"legend-number": "Legend #{{rank}}"
+				},
+				"duration": {
+					"seconds": "{{value}} s",
+					"minutes": "{{value}} min",
+					"hours": "{{hours}} h {{minutes}} min"
+				},
+				"age": {
+					"just-now": "just now"
+				},
+				"result": {
+					"victory": "Victory",
+					"defeat": "Defeat",
+					"tie": "Tie"
+				},
+				"class": {
+					"demonhunter": "Demon Hunter",
+					"deathknight": "Death Knight"
+				},
+				"decklists": "Decklists",
+				"shortcuts": "Keyboard shortcuts",
+				"share": "Share replay",
+				"link-copied": "Link copied",
+				"copy-link": "Copy link to this moment",
+				"view-in-firestone": "View in Firestone (HD)",
+				"firestone-hint": "If nothing happens, make sure Firestone is installed and running.",
+				"shortcut": {
+					"play-pause": "Play / pause",
+					"step": "Previous / next step",
+					"view": "Switch between the board and the action view",
+					"turn": "Previous / next turn",
+					"speed": "Change the speed"
+				}
+			},
+			"action-view": {
+				"half": {
+					"first": "First half",
+					"second": "Second half"
+				},
+				"choice-tag": "Choice · {{kind}}",
+				"turn-source": "Turn {{turn}} · {{source}}",
+				"turn": "Turn {{turn}}",
+				"kind": {
+					"assemble": "Assemble",
+					"choose-one": "Choose One",
+					"adapt": "Adapt",
+					"dredge": "Dredge",
+					"discover": "Discover"
+				},
+				"result": {
+					"victory": "Victory",
+					"defeat": "Defeat",
+					"tie": "Tie",
+					"conceded": "Conceded"
+				},
+				"stat": {
+					"turns": "Turns",
+					"duration": "Duration"
+				},
+				"progress": "Step {{position}} of {{count}} · {{elapsed}} / {{total}}",
+				"decided": "Decided in {{seconds}}s",
+				"you-traded": "You traded a card",
+				"opponent-traded": "Opponent traded a card",
+				"you-forged": "You forged a card",
+				"opponent-forged": "Opponent forged a card",
+				"end-of-game": "End of game",
+				"left-option": "Left option",
+				"picked-option": "Picked option",
+				"right-option": "Right option",
+				"other-option": "Other option",
+				"base": "Base",
+				"added-to-hand": "Added to hand",
+				"result-label": "Result",
+				"you-offered": "You were offered",
+				"opponent-offered": "Opponent was offered",
+				"side-option": "Side option",
+				"picked": "Picked",
+				"before": "Before",
+				"after": "After",
+				"forged": "Forged",
+				"from-your-hand": "From your hand",
+				"from-their-hand": "From their hand",
+				"shuffled": "Shuffled into deck",
+				"deck-change": "Deck {{before}} to {{after}} · {{cost}} mana",
+				"drawn": "Drawn",
+				"watch-key-moments": "Watch the {{count}} key moments",
+				"restart": "Restart from the mulligan",
+				"top-taken": "Top half taken",
+				"bottom-taken": "Bottom half taken",
+				"not-used": "Not used",
+				"added-to-your-hand": "Added to your hand",
+				"added-to-their-hand": "Added to their hand",
+				"not-picked": "Not picked"
+			},
+			"common": {
+				"download-xml": "Download XML",
+				"close": "Close"
+			},
+			"transport": {
+				"previous-turn": "Previous turn (Ctrl + Left)",
+				"previous-step": "Previous step (Left)",
+				"pause": "Pause (Space)",
+				"play": "Play (Space)",
+				"next-step": "Next step (Right)",
+				"next-turn": "Next turn (Ctrl + Right)",
+				"change-speed": "Change playback speed",
+				"speed": "{{speed}}x speed",
+				"copy-link": "Copy link to moment"
+			},
+			"turn": {
+				"mine": "Your turn",
+				"opponent": "Opponent's turn"
+			},
+			"view-toggle": {
+				"label": "View",
+				"board": "Board",
+				"action": "Action view"
+			},
+			"story-panel": {
+				"title": "Events",
+				"hint": "Click any line to jump there",
+				"filter": "Filter the story",
+				"everything": "Everything",
+				"key-moments": "Key moments",
+				"turn-title": "Turn {{turn}} · {{side}}",
+				"empty": "Nothing to show with these filters."
+			},
+			"momentum": {
+				"title": "Game momentum",
+				"chart": "Hero health and board strength over the game",
+				"key-moment": "Key moment {{number}}: {{label}}",
+				"turn": "Turn"
+			},
+			"mulligan": {
+				"replaced": "Replaced",
+				"coin": "Drew The Coin"
+			},
+			"hero-strip": {
+				"playing": "Playing",
+				"mana": "Mana",
+				"locked": "{{count}} locked",
+				"deck": "Deck",
+				"overload": "Overload {{count}} next turn",
+				"spell-damage": "Spell damage +{{amount}}",
+				"corpses": "Corpses",
+				"quest": "Quest",
+				"secret": "Secret ?"
+			},
+			"stage": {
+				"cast": "What is cast",
+				"now-playing": "Now playing",
+				"enchantments": "Enchantments",
+				"deck-title": "{{name}} · Deck",
+				"never-revealed": "Never revealed",
+				"keyword": {
+					"colossal": "Colossal",
+					"titan": "Titan",
+					"starship": "Starship",
+					"magnetic": "Magnetic",
+					"echo": "Echo",
+					"outcast": "Outcast",
+					"twinspell": "Twinspell",
+					"corrupt": "Corrupt",
+					"infuse": "Infuse"
+				}
+			},
+			"minion": {
+				"old-god-abilities": "Abilities of the Old God",
+				"ability-used": "Used",
+				"ability-available": "Available"
+			}
 		}
 	},
 	"turn-timer": {
@@ -3896,6 +4158,7 @@
 				"enable-mods": "Enable mods",
 				"disable-mods": "Disable mods",
 				"game-running-error": "Hearthstone is currently running. Please close it before enabling / disabling mods.",
+				"wrong-path-error": "Your game install location doesn't look like a Hearthstone folder. Please check the path and click Check again.",
 				"refresh-engine": "Refresh engine",
 				"refresh-engine-tooltip": "After each Hearthstone client patch, you will need to refresh the engine (or disable mods altogether), otherwise the game will fail to start.",
 				"refreshing-engine": "Copying libs...",
