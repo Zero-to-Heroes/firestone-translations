@@ -481,8 +481,8 @@
                 "blurb": "显示你本回合打出了多少张连击牌。"
             },
             "playerGhuunBloodRunesCounter": {
-                "title": "戈霍恩鲜血符文计数器",
-                "blurb": "显示你本局打出了多少个鲜血符文。"
+                "title": "“戈霍恩”生命值计数器",
+                "blurb": "显示“戈霍恩”偷取多少点生命值（基础6点加上已使用的鲜血符文数量）。"
             },
             "playerUldirRunesCounter": {
                 "title": "奥迪尔隔离计数器",
@@ -1131,7 +1131,8 @@
                 "ranking-header": "等级",
                 "deckbuilder-header": "构筑套牌",
                 "meta-decks-header": "环境套牌",
-                "meta-archetypes-header": "环境套牌类型"
+                "meta-archetypes-header": "环境套牌类型",
+                "cards-header": "卡牌"
             },
             "filters": {
                 "filter-info-tooltip": "更改筛选器将会影响游戏中记牌器显示的数据",
@@ -1397,7 +1398,9 @@
                 "discover-stats-header": "发现数据",
                 "discover-stats-header-tooltip": "在对局中显示已发现的卡牌数据",
                 "winrate-first-header": "先手",
-                "winrate-second-header": "后手"
+                "winrate-second-header": "后手",
+                "load-error": "检查你的网络连接并重试。",
+                "load-error-title": "无法载入这些统计数据"
             },
             "notifications": {
                 "turn-start-message": "该你出牌了（第 {{value}} 回合）！",
@@ -2978,8 +2981,8 @@
             "player": "你在本局对战中已召唤了{{value}}个亡语随从。“恩佐斯，梦境之末”的法力值消耗为{{cost}}"
         },
         "ghuun-blood-runes": {
-            "player": "你在本局对战中已使用{{value}}张鲜血符文牌。",
-            "opponent": "对手在本局对战中已经使用了{{value}}个鲜血符文"
+            "player": "“戈霍恩”偷取{{value}}点生命值（已使用鲜血符文：{{value}}个）",
+            "opponent": "“戈霍恩”偷取{{value}}点生命值（对手已使用鲜血符文：{{value}}个）"
         },
         "cthun-abilities": {
             "player": "你在本局对战中已触发克苏恩的4个技能中的{{value}}个",
@@ -3374,7 +3377,9 @@
             "mechanics": "机制",
             "cost-modifier": "法力值消耗修改",
             "minion-type": "随从类型",
-            "minion-types": "随从类型"
+            "minion-types": "随从类型",
+            "attack": "攻击力",
+            "health": "生命值"
         },
         "tourist": "游客：{{className}}",
         "burns-in": "{{value}}回合后弃掉",
@@ -4758,8 +4763,9 @@
                     "flesh-giant-tooltip": "显示对手在作为{{classes}}职业时，对手英雄的生命值在他们的回合中变化了多少次",
                     "cthun-abilities-label": "克苏恩的技能",
                     "cthun-abilities-tooltip": "当“克苏恩，帝国之眼”在对手的手牌、牌库或场上时，显示其四个技能中对手已触发了多少个",
-                    "ghuun-blood-runes-label": "戈霍恩鲜血符文",
-                    "ghuun-blood-runes-tooltip": "当对手使用三鲜血符文的死亡骑士套牌且本局至少使用过一鲜血符文的卡牌时，显示对手在本局对战中已使用的鲜血符文数量。"
+                    "ghuun-blood-runes-label": "“戈霍恩”生命值",
+                    "ghuun-blood-runes-tooltip": "当对手使用三鲜血符文的死亡骑士套牌且本局至少使用过一鲜血符文的卡牌时，显示“戈霍恩”偷取多少点生命值（基础6点加上已使用的鲜血符文数量）。",
+                    "nzoth-dreams-end-label": "恩佐斯，梦境之末"
                 },
                 "size-title": "尺寸和透明度",
                 "opacity-title": "透明度",
@@ -5018,15 +5024,17 @@
                     "colossus-of-the-cold-tooltip": "当“冰寒巨人守护者”在你的手牌或牌库中时，显示还需消耗多少法力值用于施放法术牌。",
                     "uldir-runes-tooltip": "当“奥迪尔隔离区”在你的手牌或牌库中时，显示你已使用过的符文类型数量。",
                     "colossus-of-the-cold-label": "冰寒巨人守护者",
-                    "ghuun-blood-runes-label": "戈霍恩鲜血符文",
+                    "ghuun-blood-runes-label": "“戈霍恩”生命值",
                     "nzoth-dreams-end-label": "恩佐斯，梦境之末",
                     "uldir-runes-label": "奥迪尔隔离区",
                     "aqir-goliath-tooltip": "当“亚基巨怪”在你的手牌或牌库中时，显示你本回合已使用的连击牌数量。",
                     "broodqueen-shakar-tooltip": "当“巢穴女王沙卡尔”在你的手牌或牌库中时，显示本回合还需要有多少个友方随从死亡。",
-                    "ghuun-blood-runes-tooltip": "当“戈霍恩”在你的手牌或牌库中时，显示你在本局对战中已使用的鲜血符文数量。",
+                    "ghuun-blood-runes-tooltip": "当“戈霍恩”在你的手牌或牌库中时，显示“戈霍恩”偷取多少点生命值（基础6点加上已使用的鲜血符文数量）。",
                     "nzoth-dreams-end-tooltip": "当“恩佐斯，梦境之末”在你的手牌或牌库中时，显示你在本局对战中已召唤的亡语随从数量，以及它当前的法力值消耗。",
                     "yshaarj-titan-bane-tooltip": "当“亚煞极，泰坦杀神”在你的手牌或牌库中时，显示还需在随从牌上消耗多少法力值。",
-                    "yshaarj-titan-bane-label": "亚煞极，泰坦杀神"
+                    "yshaarj-titan-bane-label": "亚煞极，泰坦杀神",
+                    "hodir-label": "霍迪尔",
+                    "hodir-tooltip": "显示“巨人之父霍迪尔”还能设为8/8属性值的随从数量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。",
@@ -6241,7 +6249,7 @@
                     "caption": "游戏内的记牌器和浮窗",
                     "alt": "一个双方带有 Firestone 记牌器浮窗的炉石传说棋盘"
                 },
-                "lead": "助手无需订阅即可使用。某些浮窗有每日或每周的使用限额；高级会员会移除这些限制。",
+                "lead": "本助手可免费使用。几乎所有功能无需订阅即可体验，成为会员会解除所有限制。",
                 "related-cards": {
                     "alt": "鼠标悬停在一张记牌器列表中卡牌上时显示相关卡牌",
                     "title": "相关卡牌",
@@ -6284,8 +6292,8 @@
                 "title": "想要无限使用浮窗和更深入的数据分析？"
             },
             "hero": {
-                "title": "下载 Firestone",
-                "subtitle": "免费的《炉石传说》游戏助手，记牌器、游戏内浮窗、收藏管理、酒馆战棋工具等功能一应俱全。"
+                "title": "记录每一局炉石对局，完全免费",
+                "subtitle": "记牌器、游戏内浮窗、收藏管理、酒馆战棋工具等功能一应俱全。"
             },
             "editions-label": "可用版本",
             "social-proof": {
@@ -7272,7 +7280,38 @@
         "xl-hl-questline-warrior": "40-宇宙任务线战",
         "sneaky-harold-rogue": "潜行兆示贼",
         "xl-hl-rainbow-dk": "40-宇宙彩虹DK",
-        "xl-shudderwock-shaman": "40-沙德沃克萨"
+        "xl-shudderwock-shaman": "40-沙德沃克萨",
+        "bfu-nzoth-handbuff-dk": "恩佐斯污手DK（红蓝绿）",
+        "bbb-nzoth-handbuff-dk": "恩佐斯污手血DK",
+        "void-cthun-dh": "虚空克苏恩瞎",
+        "ammunae-nzoth-druid": "阿穆纳伊恩佐斯德",
+        "beast-attack-druid": "野兽口德",
+        "beast-druid": "野兽德",
+        "cthun-dh": "克苏恩瞎",
+        "ammunae-druid": "阿穆纳伊德",
+        "nzoth-hunter": "恩佐斯猎",
+        "nzoth-mech-hunter": "恩佐斯机械猎",
+        "summoner-mage": "召唤法",
+        "cthun-druid": "克苏恩德",
+        "dragon-mage": "龙法",
+        "mech-hunter": "机械猎",
+        "nzoth-druid": "恩佐斯德",
+        "cthun-priest": "克苏恩牧",
+        "cthun-shaman": "克苏恩萨",
+        "medivh-priest": "麦迪文牧",
+        "nzoth-priest": "恩佐斯牧",
+        "nzoth-rogue": "恩佐斯贼",
+        "yogg-paladin": "尤格萨隆骑",
+        "yshaarj-warrior": "亚煞极战",
+        "holy-paladin": "圣骑",
+        "zee-cthun-shaman": "克苏恩随从萨",
+        "armor-warrior": "护甲战",
+        "cthun-warlock": "克苏恩术",
+        "dragon-warlock": "龙术",
+        "harold-cthun-warlock": "兆示克苏恩术",
+        "j-Lock": "大王控制术",
+        "nzoth-warlock": "恩佐斯术",
+        "nzoth-warrior": "恩佐斯战"
     },
     "arena": {
         "overlay": {
@@ -7410,7 +7449,11 @@
         "elemental_azerite": "艾泽里特流元素",
         "quilboar_felboar_spam": "邪能流野猪人",
         "dragon_spell_power": "法强流龙族",
-        "elemental_tempest": "无羁雷暴流元素"
+        "elemental_tempest": "无羁雷暴流元素",
+        "undead_apm": "手速流亡灵",
+        "murloc_end_of_turn": "回合结束流鱼人",
+        "undead_eternal_knight": "永恒骑士流亡灵",
+        "quilboar_gem_spam": "鲜血宝石流野猪人"
     },
     "androidDeckTracker": {
         "onboarding": {
