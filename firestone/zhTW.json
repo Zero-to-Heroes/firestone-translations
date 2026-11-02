@@ -463,7 +463,7 @@
                 "blurb": "顯示你還需要在隨從上花費多少法力。"
             },
             "playerColossusOfTheColdCounter": {
-                "title": "寒冰巨像計數器",
+                "title": "寒冷巨像計數器",
                 "blurb": "顯示在它解凍之前，你還需要在法術上花費多少法力。"
             },
             "playerBroodqueenShakarCounter": {
@@ -533,6 +533,10 @@
             "overlayFlavorTextScale": {
                 "title": "趣味描述字型大小",
                 "blurb": "變更滑鼠停留在卡牌上時顯示的趣味描述字型的大小。"
+            },
+            "opponentNzothDreamsEndCounter": {
+                "title": "「『夢境終結』恩若司」計數器",
+                "blurb": "顯示「『夢境終結』恩若司」的效果數值。"
             }
         },
         "menu": {
@@ -1111,7 +1115,7 @@
             "logout-button": "登出",
             "clipboard": {
                 "title": "剪貼簿",
-                "tooltip": "複製當前畫面至剪貼簿",
+                "tooltip": "擷取當前畫面至剪貼簿",
                 "confirmation": "影像已複製到剪貼簿"
             },
             "reddit": {
@@ -1240,7 +1244,7 @@
                 "export-deck-picture-still-working": "仍在處理中...",
                 "export-deck-picture-working": "正在截取高解像度螢幕截圖...",
                 "export-deck-picture-copied": "已複製至剪貼簿！",
-                "export-deck-picture-tooltip": "將套牌清單作為圖片複製至剪貼簿",
+                "export-deck-picture-tooltip": "將套牌清單作為圖片擷取至剪貼簿",
                 "export-deck-picture-failed": "螢幕擷取失敗",
                 "export-deck-picture-copied-tooltip": "你現在可以將其貼上至你喜愛的社群網路"
             },
@@ -1619,7 +1623,7 @@
                 "header-expand-all-button": "展開全部",
                 "tribe-impact-position-tooltip": "根據所選類別和異變狀況，來決定造成平均名次會發生多少變化",
                 "header-net-mmr": "評分變化",
-                "header-placement-distribution": "名次分布",
+                "header-placement-distribution": "名次分佈",
                 "header-quest-details": "任務",
                 "header-quest-reward-details": "任務獎勵",
                 "header-ungroup-difficulty-button": "拆分",
@@ -1683,7 +1687,7 @@
                         "warrior": "如果 1⭐️的理財手下和搶三合一實力強勁，這是一種非常有價值的玩法。",
                         "rafaam": "利用 (1) 費英雄能力、搭配經濟的手牌/手牌資源使用 (2) 費英雄能力，或是搭配旅店三合一來順暢升級",
                         "slow-rafaam": "利用 (1) 費英雄能力、搭配經濟資源使用 (2) 費英雄能力，或是搭配旅店三合一來順暢升級。在 2⭐️旅店停留較久以提升場面強度",
-                        "extended-warrior": "如果在 1⭐️理財和強勢三合一都很強，這是一個非常有價值的策略。 這個變種是常規龜縮玩法的一個備用選擇，適用於尚未達成的狀況。",
+                        "extended-warrior": "如果在 1⭐️理財和強制三合一都很強，這是一個非常高價值的策略路線。 這個變體適用於尚未達成三合一的狀況，是常規龜縮玩法的一個備用選擇。",
                         "toki": "一種遊玩不提供節奏的1金幣英雄能力的方法",
                         "pocky": "一個非常適用於1金幣的英雄能力",
                         "basic": "於關鍵開局更強，第4回合商店RNG弱勢。沒有英雄能力要求。",
@@ -1944,7 +1948,7 @@
             },
             "tier-list": {
                 "header-hero-details": "卡牌",
-                "header-placement-distribution": "名次分布",
+                "header-placement-distribution": "名次分佈",
                 "player-data-points-tooltip": "你使用此牌的遊戲數量",
                 "header": "名次清單（{{value}} 場賽局） ",
                 "header-winrate": "勝率",
@@ -2400,7 +2404,278 @@
         },
         "cards": {
             "back-to-assemble": "所有組裝卡牌",
-            "back-to-discover": "所有發現卡牌"
+            "back-to-discover": "所有發現卡牌",
+            "stats": "卡牌統計"
+        },
+        "replay-viewer": {
+            "story": {
+                "a-card-capitalized": "一張卡牌",
+                "key-moment": {
+                    "big-hit": "重擊",
+                    "board-wipe": "清除戰場",
+                    "swing": "局勢逆轉",
+                    "secret": "觸發秘密"
+                },
+                "badge": {
+                    "choice": "選擇",
+                    "forge": "鑄造",
+                    "trade": "更換"
+                },
+                "discover": "發現",
+                "discover-from": "發現：{{source}}",
+                "forged": "已鑄造「{{card}}」",
+                "lethal": "致命一擊",
+                "mulligan-done": "起手換牌完成",
+                "mulligan": {
+                    "title": "起手換牌",
+                    "kept-all": "保留了所有卡牌",
+                    "kept-replaced": "保留了部分卡牌並替換了其他卡牌",
+                    "replaced-all": "替換了所有卡牌",
+                    "replaced": "替換了卡牌"
+                },
+                "you": "你",
+                "trade-cost": "1 點法力",
+                "damage-to-targets": "對目標造成傷害",
+                "source-deals": "{{source}} 造成了傷害",
+                "source-dealing": "{{source}} 正在造成傷害",
+                "casts": "施放了",
+                "cards-count": "{{count}} 張卡牌",
+                "picked": "選擇了",
+                "mana-change": "法力水晶變更",
+                "traded": "已更換",
+                "secret-revealed": "秘密已揭示",
+                "a-card": "一張卡牌",
+                "a-secret": "一個秘密",
+                "plays": "打出了",
+                "is-forged": "已鑄造",
+                "turn": "第 {{turn}} 回合",
+                "turn-mana": "{{mana}} 費",
+                "turn-steps": "{{steps}} 個動作",
+                "opponent": "對手"
+            },
+            "banner": {
+                "back-to-old": "返回舊版檢視器",
+                "new-viewer": "體驗全新重播檢視器"
+            },
+            "coming-soon": {
+                "title": "行動版即將推出",
+                "text": "英雄戰場與傭兵戰隊重播尚不支援行動裝置。請在電腦上開啟此頁面觀看。"
+            },
+            "header": {
+                "mode": {
+                    "arena": "競技場",
+                    "battlegrounds": "英雄戰場",
+                    "casual": "休閒",
+                    "duels": "決鬥擂台",
+                    "friendly": "友誼賽",
+                    "ranked": "排名賽",
+                    "arena-underground": "地下競技場",
+                    "tavern-brawl": "旅店大亂鬥",
+                    "practice": "練習模式"
+                },
+                "format": {
+                    "classic": "經典",
+                    "standard": "標準",
+                    "wild": "開放",
+                    "twist": "扭曲"
+                },
+                "rank": {
+                    "legend": "傳說",
+                    "legend-number": "傳說第 {{rank}} 名"
+                },
+                "shortcut": {
+                    "speed": "變更速度",
+                    "play-pause": "播放／暫停",
+                    "step": "上一步／下一步",
+                    "view": "切換檢視模式",
+                    "turn": "上一回合／下一回合"
+                },
+                "copy-link": "複製此時刻的連結",
+                "class": {
+                    "deathknight": "死亡騎士",
+                    "demonhunter": "惡魔獵手"
+                },
+                "decklists": "牌組列表",
+                "result": {
+                    "defeat": "敗北",
+                    "victory": "勝利",
+                    "tie": "平手"
+                },
+                "shortcuts": "鍵盤快速鍵",
+                "duration": {
+                    "hours": "{{hours}} 小時",
+                    "seconds": "{{seconds}} 秒",
+                    "minutes": "{{minutes}} 分鐘"
+                },
+                "age": {
+                    "just-now": "剛剛"
+                },
+                "link-copied": "已複製連結",
+                "firestone-hint": "如果沒有反應，請確認 Firestone 已安裝並正在執行。",
+                "turns": "{{turns}} 個回合",
+                "versus": "VS",
+                "share": "分享重播",
+                "view-in-firestone": "在 Firestone 中檢視"
+            },
+            "decklists": {
+                "copy-code": "複製牌組代碼",
+                "export": "匯出牌組",
+                "code-copied": "已複製牌組代碼",
+                "no-opponent-card": "此重播中未顯示對手的任何卡牌。",
+                "cards": "卡牌列表",
+                "unknown-deck": "未知牌組",
+                "seen": "已看到的卡牌"
+            },
+            "error": {
+                "unsupported": "此檢視器尚不支援此遊戲類型。",
+                "title": "載入重播時發生錯誤",
+                "missing": "找不到此重播。",
+                "damaged": "此重播檔案已損毀。",
+                "try-again": "請稍後再試。"
+            },
+            "action-view": {
+                "kind": {
+                    "adapt": "自適應",
+                    "assemble": "組裝",
+                    "choose-one": "選擇一個",
+                    "discover": "發現",
+                    "dredge": "打撈"
+                },
+                "choice-tag": "選擇 · {{kind}}",
+                "result": {
+                    "conceded": "已投降",
+                    "defeat": "敗北",
+                    "victory": "勝利",
+                    "tie": "平手"
+                },
+                "decided": "於 {{seconds}} 秒內分出勝負",
+                "stat": {
+                    "duration": "持續時間",
+                    "turns": "回合數"
+                },
+                "half": {
+                    "first": "前半場",
+                    "second": "後半場"
+                },
+                "opponent-forged": "對手進行了鑄造",
+                "added-to-hand": "已加入手牌",
+                "after": "之後",
+                "base": "基底",
+                "before": "之前",
+                "deck-change": "牌組由 {{before}} 變更為 {{after}} · {{cost}} 點法力",
+                "drawn": "已抽取",
+                "forged": "已鑄造",
+                "from-their-hand": "來自對手的手牌",
+                "from-your-hand": "來自你的手牌",
+                "left-option": "左側選項",
+                "picked-option": "選擇的選項",
+                "right-option": "右側選項",
+                "added-to-your-hand": "已加入你的手牌",
+                "bottom-taken": "選取下半部",
+                "not-used": "未使用",
+                "added-to-their-hand": "已加入對手的手牌",
+                "end-of-game": "對戰結束",
+                "turn-source": "第 {{turn}} 回合 · {{source}}",
+                "turn": "第 {{turn}} 回合",
+                "progress": "對戰進度",
+                "you-traded": "你進行了更換",
+                "opponent-traded": "對手進行了更換",
+                "you-forged": "你進行了鑄造",
+                "other-option": "其他選項",
+                "result-label": "對戰結果",
+                "you-offered": "提供給你的選項",
+                "opponent-offered": "提供給對手的選項",
+                "side-option": "旁支選項",
+                "picked": "已選擇",
+                "shuffled": "已洗入牌組",
+                "watch-key-moments": "觀看關鍵時刻",
+                "restart": "重新播放",
+                "top-taken": "選取上半部",
+                "not-picked": "未選擇"
+            },
+            "common": {
+                "close": "關閉",
+                "download-xml": "下載 XML"
+            },
+            "transport": {
+                "next-step": "下一步（右方向鍵）",
+                "next-turn": "下一回合（Ctrl + 右方向鍵）",
+                "copy-link": "複製此時刻的連結",
+                "speed": "播放速度",
+                "change-speed": "變更播放速度",
+                "previous-turn": "上一回合 (Ctrl + 左方向鍵)",
+                "previous-step": "上一步 (左方向鍵)",
+                "pause": "暫停 (空白鍵)",
+                "play": "播放 (空白鍵)"
+            },
+            "view-toggle": {
+                "board": "戰場",
+                "action": "動作檢視",
+                "label": "檢視模式"
+            },
+            "stage": {
+                "keyword": {
+                    "colossal": "巨型",
+                    "corrupt": "腐化",
+                    "echo": "迴響",
+                    "infuse": "注能",
+                    "magnetic": "合體",
+                    "titan": "泰坦",
+                    "starship": "星艦",
+                    "outcast": "流放",
+                    "twinspell": "雙生法術"
+                },
+                "enchantments": "附魔",
+                "never-revealed": "從未揭示",
+                "cast": "施放",
+                "now-playing": "正在播放",
+                "deck-title": "牌組內容"
+            },
+            "hero-strip": {
+                "corpses": "屍體",
+                "deck": "牌組",
+                "mana": "法力水晶",
+                "playing": "對戰中",
+                "locked": "鎖定中",
+                "overload": "載過",
+                "spell-damage": "法術傷害",
+                "quest": "任務",
+                "secret": "秘密"
+            },
+            "mulligan": {
+                "coin": "抽到後攻幸運幣",
+                "replaced": "已換牌"
+            },
+            "story-panel": {
+                "title": "事件",
+                "everything": "全部",
+                "filter": "篩選對戰記錄",
+                "key-moments": "關鍵時刻",
+                "hint": "點選任意行即可跳至該處",
+                "turn-title": "第 {{turn}} 回合對戰紀錄",
+                "empty": "此回合無記錄到的動作"
+            },
+            "momentum": {
+                "title": "對戰勢頭",
+                "key-moment": "關鍵時刻 {{number}}：{{label}}",
+                "chart": "對戰過程中的英雄生命值與場面強度",
+                "turn": "第 {{turn}} 回合勢頭"
+            },
+            "minion": {
+                "ability-available": "可用",
+                "ability-used": "能力已使用",
+                "old-god-abilities": "古神的能力"
+            },
+            "loading": {
+                "parsing": "正在解析重播資料…",
+                "preparing": "正在準備視覺化呈現…",
+                "label": "正在載入重播…",
+                "progress": "載入進度：{{percent}}%"
+            },
+            "turn": {
+                "mine": "你的回合",
+                "opponent": "對手的回合"
+            }
         }
     },
     "turn-timer": {
@@ -2964,7 +3239,7 @@
             "player": "本回合已打出連擊牌：{{value}} 張。「亞基巨像」的費用減少：{{reduction}}"
         },
         "colossus-of-the-cold": {
-            "player": "「寒冰巨像」解凍前，剩餘需要花費在法術上的法力為 {{value}}（已花費 {{spent}}）"
+            "player": "「寒冷巨像」解凍前，剩餘需要花費在法術上的法力為 {{value}}（已花費 {{spent}}）"
         },
         "cthun-abilities": {
             "player": "本賽局在 4 種克蘇恩能力中已觸發：{{value}} 種",
@@ -2977,10 +3252,15 @@
             "player": "本賽局剩餘需要花費在手下上的法力：{{value}}（已花費 {{spent}}）"
         },
         "nzoth-dreams-end": {
-            "player": "本賽局已召喚死亡之聲手下：{{value}} 個。「『夢境終結』恩若司」的費用：{{cost}}"
+            "player": "本賽局已召喚死亡之聲手下：{{value}} 個。「『夢境終結』恩若司」的費用：{{cost}}",
+            "opponent": "對手的「『夢境終結』恩若司」數值：{{value}}"
         },
         "bgs-tavern-spells-cast": {
             "player": "本賽局已施放的旅店法術：{{value}} 個"
+        },
+        "hodir": {
+            "player": "霍迪爾效果已在手牌/牌組套用",
+            "opponent": "霍迪爾效果已在對手的手牌/牌組套用"
         }
     },
     "loading": {
@@ -4248,7 +4528,8 @@
                 "import-settings-button-label": "匯入設定",
                 "import-settings-button-tooltip": "從文檔匯入設定（你可能已從另一台電腦匯出該文檔）",
                 "settings-title": "設定",
-                "import-settings-button-confirmed-label": "設定已匯入"
+                "import-settings-button-confirmed-label": "設定已匯入",
+                "refresh-signed-out": "請先登入以重新整理資料。"
             },
             "quests": {
                 "title": "任務",
@@ -4338,7 +4619,8 @@
                 "import-no-install-path": "請先設定你的遊戲安裝位置。",
                 "explanation": "模組是可以用來改變《爐石戰記》遊戲本身行為的外掛程式。",
                 "restart-required": "需要重新啟動《爐石戰記》以套用此變更。",
-                "download-failed": "無法下載模組櫃。請再次點選「啟用模組」以繼續。"
+                "download-failed": "無法下載模組櫃。請再次點選「啟用模組」以繼續。",
+                "wrong-path-error": "指定的模組路徑無效。"
             },
             "premium": {
                 "lottery-opacity-title": "抽獎小工具不透明度",
@@ -4743,7 +5025,8 @@
                     "cthun-abilities-tooltip": "當對手手牌、牌堆或場上有「『帝國之眼』克蘇恩」時，顯示他們已觸發其四種能力中的幾種",
                     "ghuun-blood-runes-label": "「古翰」生命值",
                     "ghuun-blood-runes-tooltip": "當對手使用三血魄牌組的死亡騎士，且已打出至少一個血魄符文時，顯示「古翰」偷取多少生命值（基礎 [6] 點加上已打出的血魄符文數量）。",
-                    "nzoth-dreams-end-label": "「『夢境終結』恩若司」"
+                    "nzoth-dreams-end-label": "「『夢境終結』恩若司」",
+                    "nzoth-dreams-end-tooltip": "顯示對手的「『夢境終結』恩若司」累積數值。"
                 },
                 "size-title": "大小與不透明度",
                 "opacity-title": "不透明度",
@@ -5000,7 +5283,7 @@
                     "flesh-giant-label": "「血肉巨人」",
                     "flesh-giant-tooltip": "當手牌或牌堆中有「血肉巨人」時，顯示你英雄生命值在你的回合內變動的次數",
                     "broodqueen-shakar-tooltip": "當手牌或牌堆中有「育母沙卡」時，顯示本回合仍需死亡的友方手下數量",
-                    "colossus-of-the-cold-tooltip": "當手牌或牌堆中有「寒冰巨像」時，顯示剩餘需要花費在法術上的法力",
+                    "colossus-of-the-cold-tooltip": "當手牌或牌堆中有「寒冷巨像」時，顯示剩餘需要花費在法術上的法力",
                     "yshaarj-titan-bane-tooltip": "當手牌或牌堆中有「『泰坦剋星』亞煞拉懼」時，顯示剩餘需要花費在手下上的法力",
                     "nzoth-dreams-end-tooltip": "當手牌或牌堆中有「『夢境終結』恩若司」時，顯示其當前費用以及你已召喚的死亡之聲手下數量",
                     "cthun-abilities-label": "克蘇恩能力",
@@ -5011,11 +5294,12 @@
                     "uldir-runes-tooltip": "當你手牌或牌堆中有「奧迪爾隔離」時，顯示你已打出的符文類型數量",
                     "nzoth-dreams-end-label": "「『夢境終結』恩若司」",
                     "yshaarj-titan-bane-label": "「『泰坦剋星』亞煞拉懼」",
-                    "colossus-of-the-cold-label": "「寒冰巨像」",
+                    "colossus-of-the-cold-label": "「寒冷巨像」",
                     "aqir-goliath-label": "「亞基巨像」",
                     "ghuun-blood-runes-label": "「古翰」生命值",
                     "uldir-runes-label": "「奧迪爾隔離」",
-                    "hodir-label": "「霍迪爾」"
+                    "hodir-label": "「霍迪爾」",
+                    "hodir-tooltip": "顯示霍迪爾效果是否已作用於牌組或手牌。"
                 },
                 "discovery-zone-label": "發現區塊",
                 "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到並標記牌堆的相關卡牌與協同作用。",
@@ -5662,7 +5946,10 @@
             "discover-offered": "出現次數",
             "discover-games": "對局場次",
             "discover-picked": "揀選次數",
-            "assemble-games-hint": "提供基底的對戰。組裝超過一個基底的對戰會按每個基底分別計入一次。"
+            "assemble-games-hint": "提供基底的對戰。組裝超過一個基底的對戰會按每個基底分別計入一次。",
+            "assemble-game": "[組裝]機制對戰",
+            "assemble-games": "[組裝]機制對戰總數",
+            "discover-offered-count-hint": "顯示該卡牌在「發現」選擇中出現的次數。"
         },
         "faq": {
             "sections": {
@@ -5733,7 +6020,7 @@
                 },
                 "general-checklist": {
                     "title": "一般自我檢查清單",
-                    "body": "<ul><li>請確保在啟動《爐石戰記》<strong>之前</strong> Overwolf 已在執行中</li><li>（特別是在新改版發布後）關閉《爐石戰記》、關閉 Firestone、重新啟動 Firestone，再重新啟動《爐石戰記》。這會強制更新應用程式（在遊戲執行時更新並不總能順利進行）</li><li>檢查是否可以在桌面啟動 Firestone（指在《爐石戰記》未執行的狀態下）。若完全沒反應：<ul><li>請檢查下方其他區塊（特別是本頁底部的<a href=\"/faq#connectivity-issues-global\">連線問題</a>部分）</li><li>若依然無法解決，請建立日誌紀錄(Log)壓縮檔並手動傳送給我（例如在 Discord 上）。參閱<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">如何取得你的 Overwolf 日誌紀錄</a></li></ul></li><li>檢查（在《爐石戰記》執行時）於《爐石戰記》安裝資料夾下的 <code>Logs/Hearthstone_XXX</code> 是否存在 <code>Decks.log</code> 檔案。若無，請重新啟動《爐石戰記》</li><li>嘗試停用你的防毒軟體／防火牆，並重新啟動 Firestone</li><li>若 Firestone 出現閃爍，可能是與 Lenovo 名為 LegionZone 的新應用程式衝突。嘗試停用該程式以確認是否能解決問題</li><li>檢查你的遊戲內時鐘是否顯示正確時間。若系統時間設定不正確（通常是「自動調整夏令時間」選項被停用）可能會發生此情況</li></ul>"
+                    "body": "<ul><li>請確保在啟動《爐石戰記》<strong>之前</strong> Overwolf 已在執行中</li><li>（特別是在新改版發佈後）關閉《爐石戰記》、關閉 Firestone、重新啟動 Firestone，再重新啟動《爐石戰記》。這會強制更新應用程式（在遊戲執行時更新並不總能順利進行）</li><li>檢查是否可以在桌面啟動 Firestone（指在《爐石戰記》未執行的狀態下）。若完全沒反應：<ul><li>請檢查下方其他區塊（特別是本頁底部的<a href=\"/faq#connectivity-issues-global\">連線問題</a>部分）</li><li>若依然無法解決，請建立日誌紀錄(Log)壓縮檔並手動傳送給我（例如在 Discord 上）。參閱<a href=\"https://support.overwolf.com/en/support/solutions/articles/9000176827-how-to-get-your-overwolf-logs\" target=\"_blank\" rel=\"noopener noreferrer\">如何取得你的 Overwolf 日誌紀錄</a></li></ul></li><li>檢查（在《爐石戰記》執行時）於《爐石戰記》安裝資料夾下的 <code>Logs/Hearthstone_XXX</code> 是否存在 <code>Decks.log</code> 檔案。若無，請重新啟動《爐石戰記》</li><li>嘗試停用你的防毒軟體／防火牆，並重新啟動 Firestone</li><li>若 Firestone 出現閃爍，可能是與 Lenovo 名為 LegionZone 的新應用程式衝突。嘗試停用該程式以確認是否能解決問題</li><li>檢查你的遊戲內時鐘是否顯示正確時間。若系統時間設定不正確（通常是「自動調整夏令時間」選項被停用）可能會發生此情況</li></ul>"
                 },
                 "no-cards-other": {
                     "title": "其他可以嘗試的方法",
@@ -5976,7 +6263,8 @@
             "continue-with-google": "使用 Google 繼續",
             "continue-with-overwolf": "使用 Overwolf 繼續",
             "link-subtitle-overwolf": "將 Overwolf 連結至你的 Firestone 帳號",
-            "linking-overwolf": "正在將你重新導向至 Overwolf…"
+            "linking-overwolf": "正在將你重新導向至 Overwolf…",
+            "web-subtitle": "登入以管理你的 Firestone 帳號與設定"
         },
         "monitoring": {
             "simulator": {
@@ -6317,7 +6605,8 @@
                 "cta": "下載獨立版 (Standalone)",
                 "blurb": "不含 Overwolf 的 Firestone 版本。目前仍處於封閉測試階段。",
                 "discord-cta": "在 Discord 上詢問我們",
-                "discord-lead": "想搶先體驗嗎？"
+                "discord-lead": "想搶先體驗嗎？",
+                "skip": "跳過此步驟"
             },
             "features": {
                 "title": "你能獲得的免費功能",
@@ -6327,7 +6616,7 @@
                     "caption": "遊戲內牌組記牌器與覆疊視窗",
                     "alt": "兩側皆有 Firestone 牌組記牌器覆疊視窗的《爐石戰記》對戰畫面"
                 },
-                "lead": "本輔助工具完全免費。幾乎所有功能皆無需訂閱即可體驗，成為 Premium 會員即可解除所有限制。",
+                "lead": "輔助工具完全免費。幾乎所有功能皆無需訂閱即可體驗，成為 Premium 會員即可解除所有限制。",
                 "collection": {
                     "alt": "顯示各個《爐石戰記》系列收集進度的收藏總覽",
                     "title": "收藏追蹤器",
@@ -6375,7 +6664,10 @@
                 "cta": "下載 Firestone",
                 "step-1-title": "安裝",
                 "step-2-title": "啟動《爐石戰記》",
-                "step-3-text": "Firestone 會自動開始追蹤。"
+                "step-3-text": "Firestone 會自動開始追蹤。",
+                "badge": "免費下載",
+                "step-2-text": "啟動遊戲後，對戰追蹤與覆疊視窗將自動載入。",
+                "step-3-title": "自動追蹤對戰"
             },
             "social-proof": {
                 "titles": {
@@ -6523,12 +6815,43 @@
                 "action-edited": "已編輯",
                 "action-contributor-added": "已新增貢獻者",
                 "action-contributor-updated": "已更新貢獻者",
-                "action-contributor-removed": "已移除貢獻者"
+                "action-contributor-removed": "已移除貢獻者",
+                "col-role": "權限身分",
+                "col-when": "時間",
+                "col-who": "操作者",
+                "col-target": "目標對象",
+                "no-activity": "尚無變更。",
+                "no-contributors": "尚無貢獻者。",
+                "view": "檢視",
+                "remove": "移除",
+                "restore": "還原",
+                "restore-creation": "還原建立狀態",
+                "confirm-restore": "確定要還原此項目嗎？",
+                "confirm-restore-creation": "確定要還原至初次建立的狀態嗎？",
+                "restored": "已成功還原",
+                "confirm-remove": "確定要移除此貢獻者嗎？",
+                "removed": "已成功移除",
+                "no-badge": "無徽章",
+                "link": "個人／社群連結",
+                "link-hint": "點擊徽章時所跳轉的 URL 網址（選填）。",
+                "soon": "即將推出",
+                "form-error-link": "請輸入有效的 URL 網址。",
+                "form-error-content-types": "請至少選擇一種可編輯的內容類型。",
+                "form-error-exists": "該帳號 ID 已存在於貢獻者列表中。",
+                "save": "儲存變更",
+                "action-unpublished": "取消發佈",
+                "action-restored": "已還原",
+                "display-name": "顯示在其祕訣上的名稱",
+                "added": "已成功新增",
+                "updated": "已成功更新",
+                "user-id-placeholder": "請輸入使用者帳號 ID",
+                "user-id-hint": "從使用者帳號選單中複製的唯一 ID。",
+                "display-name-hint": "此名稱將顯示於該貢獻者所編寫的祕訣旁。"
             },
             "hero-power-tips": {
                 "write-basic": "+ 撰寫你的基本祕訣",
                 "add-hero": "+ 英雄專屬",
-                "add-lobby": "+ 大廳情境",
+                "add-lobby": "+ 大廳環境",
                 "curve-3-on-3": "第3回合3⭐️旅店",
                 "nav-label": "英雄能力祕訣",
                 "confirm-delete": "要刪除此祕訣嗎？玩家將無法再看到它。",
@@ -6543,7 +6866,7 @@
                 "edit": "編輯",
                 "form-title-edit-basic": "編輯基本祕訣",
                 "form-title-edit-hero": "編輯英雄專屬祕訣",
-                "form-title-edit-lobby": "編輯大廳情境祕訣",
+                "form-title-edit-lobby": "編輯大廳環境祕訣",
                 "hero": "英雄",
                 "curve-basic": "基礎",
                 "curves": "玩法路線",
@@ -6553,15 +6876,83 @@
                 "preview-app-colors": "應用程式顏色",
                 "preview-game": "遊戲內",
                 "preview-panel-title": "Firestone 祕訣",
-                "variant-lobby-empty": "大廳情境",
+                "variant-lobby-empty": "大廳環境",
                 "status-draft-saved": "草稿已儲存至本機 · {{time}}",
-                "status-editing": "正在編輯你已發布的祕訣"
+                "status-editing": "正在編輯你已發佈的祕訣",
+                "search-label": "搜尋祕訣",
+                "filter-update": "需要更新",
+                "write-basic-hint": "撰寫適用於該英雄能力的一般性建議。",
+                "variants": "變體祕訣",
+                "outdated-title": "祕訣內容可能已過時",
+                "power-changed": "英雄能力已更新，請審視並調整祕訣內容。",
+                "form-title-new-hero": "新增英雄專屬祕訣",
+                "lobby": "大廳環境",
+                "lobby-summary-lacks": "缺少 {{tribe}}",
+                "tip": "祕訣內容",
+                "tip-hint": "請保持簡潔明瞭，為玩家提供實用的操作建議。",
+                "tip-placeholder": "請在此輸入祕訣文字…",
+                "details-hint": "提供額外細節或戰術說明（選填）。",
+                "details-placeholder": "補充說明…",
+                "optional": "（選填）",
+                "save": "儲存祕訣",
+                "preview": "預覽祕訣",
+                "preview-empty": "無可預覽的內容",
+                "variant-hero": "英雄專屬變體",
+                "variant-lobby-has": "特定種族存在時的變體",
+                "variant-lobby-lacks": "特定種族不在時的變體",
+                "status-publishing": "正在發佈祕訣…",
+                "status-published": "已發佈",
+                "status-draft-kept": "草稿已保留",
+                "status-new": "新草稿",
+                "status-restored": "草稿已還原",
+                "form-title-new-basic": "新增基本祕訣",
+                "filter-none": "尚無祕訣。",
+                "status-none": "尚無祕訣。",
+                "lobby-has": "大廳包含：{{tribe}}",
+                "deleted": "祕訣已成功刪除",
+                "status-update": "需要更新",
+                "form-title-new-lobby": "新增大廳環境祕訣",
+                "subtitle": "管理與編輯英雄能力的提示與祕訣",
+                "search-placeholder": "輸入關鍵字或英雄名稱…",
+                "power-count": "{{count}} 個英雄能力",
+                "status-count": "狀態：{{status}}",
+                "used-by": "提供者：{{author}}",
+                "your-tips": "你撰寫的祕訣",
+                "your-tips-hint": "這裡列出了你為社群貢獻的所有祕訣。",
+                "variants-hint": "針對特定英雄或大廳環境新增專屬祕訣。",
+                "no-variants": "尚無變體祕訣",
+                "rewrite": "重寫祕訣",
+                "pick-power": "選擇英雄能力",
+                "lobby-lacks": "大廳缺少：{{tribe}}",
+                "lobby-pick": "選擇大廳條件",
+                "lobby-summary-has": "包含 {{tribe}}",
+                "published": "祕訣已成功發佈"
             },
             "errors": {
-                "contradictory_tribes": "種族不能同時存在與不存在。",
-                "generic": "無法發布 ({{code}})。您的草稿已保留在此裝置上。",
+                "contradictory_tribes": "一個手下類別不能是“薛丁格貓”（同時設定[包括]和[不包括]）",
+                "generic": "無法發佈 ({{code}})。您的草稿已保留在此裝置上。",
                 "not_configured": "目前無法使用貢獻功能。",
-                "network_error": "無法連線至伺服器。請檢查您的網路連線後重試。"
+                "network_error": "無法連線至伺服器。請檢查您的網路連線後重試。",
+                "duplicate_variant": "已存在相同條件的變體祕訣。",
+                "item_not_found": "此祕訣已不存在。",
+                "unknown_hero": "未知的英雄戰場的英雄。",
+                "required": "此為必填欄位。",
+                "not_your_item": "您沒有權限修改非您建立的內容。",
+                "unknown_tribe": "其中一個類別不是英雄戰場的類別。",
+                "unknown_hero_power": "未知的英雄能力。",
+                "invalid_url": "無效的 URL 格式。",
+                "invalid_role": "無效的權限身分設定。",
+                "unknown_content_type": "未知的內容類型。",
+                "contributor_not_found": "找不到該貢獻者資料。",
+                "audit_entry_not_found": "找不到稽核紀錄。",
+                "invalid_json": "JSON 格式錯誤。",
+                "signed_out": "您已登出，請重新登入後再試。",
+                "too_long": "輸入的文字超過長度限制。",
+                "generic-admin": "管理員操作失敗，請重試。",
+                "last_admin": "無法移除最後一位管理員。",
+                "not_an_admin": "需要管理員權限才能執行此操作。",
+                "not_a_contributor": "此帳號尚未取得貢獻者權限。",
+                "invalid_token": "登入憑證無效或已過期。"
             },
             "nav-label": "貢獻",
             "comps": {
@@ -6569,12 +6960,18 @@
             },
             "unavailable": {
                 "home": "回到 Firestone",
-                "body": "貢獻功能僅開放給已批准的帳號。若要成為貢獻者，請將你的帳號 ID（位於帳號選單中）傳送給 Firestone 團隊。"
+                "body": "貢獻功能僅開放給已批准的帳號。若要成為貢獻者，請將你的帳號 ID（位於帳號選單中）傳送給 Firestone 團隊。",
+                "title": "目前無法存取貢獻系統"
+            },
+            "trinkets": {
+                "nav-label": "飾品"
             }
         },
         "account": {
             "account-id-copied": "已複製帳號 ID",
-            "copy-account-id": "複製帳號 ID"
+            "copy-account-id": "複製帳號 ID",
+            "sign-in": "登入",
+            "sign-out": "登出"
         }
     },
     "archetype": {
@@ -7420,12 +7817,17 @@
         "armor-warrior": "護甲-戰",
         "harold-cthun-warlock": "預兆克蘇恩-術",
         "nzoth-druid": "恩若司-德",
-        "nzoth-hunter": "恩若斯-獵",
-        "nzoth-mech-hunter": "恩若斯機械-獵",
-        "nzoth-priest": "恩若斯-牧",
-        "nzoth-rogue": "恩若斯-賊",
-        "nzoth-warlock": "恩若斯-術",
-        "nzoth-warrior": "恩若斯-戰"
+        "nzoth-hunter": "恩若司-獵",
+        "nzoth-mech-hunter": "恩若司機械-獵",
+        "nzoth-priest": "恩若司-牧",
+        "nzoth-rogue": "恩若司-賊",
+        "nzoth-warlock": "恩若司-術",
+        "nzoth-warrior": "恩若司-戰",
+        "zee-cthun-shaman": "克蘇恩手下-薩",
+        "yshaarj-warrior": "亞煞拉懼-戰",
+        "void-cthun-dh": "虛無靈魂克蘇恩-惡魔獵",
+        "yogg-paladin": "尤格薩倫-聖",
+        "summoner-mage": "召喚(坐牢的曼納斯頓)-法"
     },
     "arena": {
         "overlay": {
