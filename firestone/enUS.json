@@ -269,6 +269,30 @@
 			"overlayFlavorTextScale": {
 				"title": "Flavor text size",
 				"blurb": "Change the size of the flavor text shown when hovering a card."
+			},
+			"playerHodirCounter": {
+				"title": "Hodir counter",
+				"blurb": "Show how many times Hodir, Father of Giants can still set a minion to 8/8."
+			},
+			"opponentHodirCounter": {
+				"title": "Opponent's Hodir counter",
+				"blurb": "Show how many times the opponent's Hodir, Father of Giants can still set a minion to 8/8."
+			},
+			"opponentGhuunBloodRunesCounter": {
+				"title": "Opponent's G'huun Health counter",
+				"blurb": "Show how much Health the opponent's G'huun steals. Off by default."
+			},
+			"cardTooltipUseCanvasFallback": {
+				"title": "Draw missing card images",
+				"blurb": "When a card image fails to load, draw the card. Off by default."
+			},
+			"replayViewerV2": {
+				"title": "New constructed replay viewer",
+				"blurb": "Watch constructed replays in a new viewer, with key moments, the board, and decklists. You can switch back to the classic viewer."
+			},
+			"cardsDiscoverAssembleTabs": {
+				"title": "Discover and Assemble stats",
+				"blurb": "Constructed and Arena have a Cards tab with Discover and Assemble stats. Assemble pools can be filtered by class."
 			}
 		},
 		"menu": {
@@ -2661,6 +2685,10 @@
 			"player": "You have played {{value}} spells that triggered twice",
 			"opponent": "Your opponent has played {{value}} spells that triggered twice"
 		},
+		"therazane": {
+			"player": "Your next spell of these {{value}} schools casts twice: {{schools}}",
+			"opponent": "Your opponent's next spell of these {{value}} schools casts twice: {{schools}}"
+		},
 		"hodir": {
 			"player": "The next {{value}} minions you play will be set to 8/8",
 			"opponent": "The next {{value}} minions your opponent plays will be set to 8/8"
@@ -4982,6 +5010,8 @@
 					"deathwing-reduction-tooltip": "Show the total cost reduction of your Deathwings",
 					"tyrande-label": "Tyrande",
 					"tyrande-tooltip": "Show the number of spells left that will play twice",
+					"therazane-label": "Therazane",
+					"therazane-tooltip": "Show the spell schools whose next spell will cast twice",
 					"hodir-label": "Hodir",
 					"hodir-tooltip": "Show how many minions Hodir, Father of Giants can still set to 8/8",
 					"damage-taken-on-your-turn-label": "Damage taken on your turns",
