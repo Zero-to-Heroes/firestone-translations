@@ -480,8 +480,8 @@
                 "blurb": "このターンにプレイしたコンボカードの枚数を表示します。"
             },
             "playerGhuunBloodRunesCounter": {
-                "title": "グフーンの血のルーンのカウンター",
-                "blurb": "この対戦でプレイした血のルーンの数を表示します。"
+                "title": "「グフーン」の体力カウンター",
+                "blurb": "「グフーン」が体力をいくつ奪うかを表示します(6+この試合中に使用した血のルーンの数)"
             },
             "playerUldirRunesCounter": {
                 "title": "ウルディル隔離のカウンター",
@@ -534,6 +534,10 @@
             "overlayFlavorTextScale": {
                 "title": "フレーバーテキストのサイズ",
                 "blurb": "カードにマウスを合わせたときに表示されるフレーバーテキストのサイズを変更します。"
+            },
+            "opponentNzothDreamsEndCounter": {
+                "blurb": "対戦相手が何体の断末魔ミニオンを召喚したかと、「夢の終焉ン=ゾス」の現在のコストを表示します",
+                "title": "対戦相手の「夢の終焉ン=ゾス」カウンター"
             }
         },
         "menu": {
@@ -679,7 +683,8 @@
                 "card-stats": "カード統計",
                 "class-tier-list": "クラスTier表",
                 "arena-top-runs": "高勝利数の挑戦",
-                "my-stats": "自分の成績"
+                "my-stats": "自分の成績",
+                "cards": "カード"
             },
             "filters": {
                 "time": {
@@ -1130,7 +1135,8 @@
                 "ranking-header": "ランキング",
                 "deckbuilder-header": "デッキ構築ヘルパー",
                 "meta-decks-header": "メタ・デッキ",
-                "meta-archetypes-header": "メタ・アーキタイプ"
+                "meta-archetypes-header": "メタ・アーキタイプ",
+                "cards-header": "カード"
             },
             "filters": {
                 "filter-info-tooltip": "これらのフィルタを変更すると、ゲーム中のトラッカーに表示される統計にも影響します",
@@ -1396,7 +1402,9 @@
                 "discover-stats-header": "発見の統計",
                 "discover-stats-header-tooltip": "試合中に発見したカードの統計を表示します",
                 "winrate-first-header": "先攻",
-                "winrate-second-header": "後攻"
+                "winrate-second-header": "後攻",
+                "load-error": "接続を確認し、再度お試しください",
+                "load-error-title": "統計を読み込めませんでした"
             },
             "notifications": {
                 "turn-start-title": "あんたのターンだ！",
@@ -2411,6 +2419,205 @@
             "please-log-in": "ギルド機能を使うにはログインして下さい",
             "what-are-guilds": "ギルドとは？",
             "leave-community-button": "ギルドを脱退"
+        },
+        "cards": {
+            "back-to-discover": "全ての発見カード",
+            "stats": "統計",
+            "back-to-assemble": "全ての合成カード"
+        },
+        "replay-viewer": {
+            "banner": {
+                "new-viewer": "あなたは新しいリプレイビューワを使用しています",
+                "back-to-old": "昔のビューワに戻す"
+            },
+            "coming-soon": {
+                "title": "モバイル版はまもなく実装",
+                "text": "バトルグラウンドとマーセナリーズのリプレイは現在モバイルでは利用できません。このページをパソコンで開いてご覧ください"
+            },
+            "decklists": {
+                "code-copied": "デッキコードがコピーされました",
+                "copy-code": "デッキコードをコピー",
+                "no-opponent-card": "このリプレイでは、対戦タイテのカードは表示されません",
+                "unknown-deck": "このリプレイでは対戦相手のデッキは分かりません",
+                "cards": "{{count}}枚のカード",
+                "export": "デッキをエクスポート",
+                "seen": "30件中{{count}}件目"
+            },
+            "error": {
+                "damaged": "ファイルが破損しているか、読み込み中に接続が中断されました",
+                "missing": "リプレイが存在しないか、リンクが間違っています",
+                "try-again": "再度お試しください",
+                "unsupported": "このモードは現在ビューワではサポートされていません",
+                "title": "このリプレイは再生できません"
+            },
+            "header": {
+                "format": {
+                    "classic": "クラシック",
+                    "standard": "スタンダード",
+                    "twist": "ツイスト",
+                    "wild": "ワイルド"
+                },
+                "mode": {
+                    "ranked": "ランク戦",
+                    "practice": "練習",
+                    "arena": "闘技場",
+                    "battlegrounds": "バトルグラウンド",
+                    "casual": "カジュアル",
+                    "duels": "デュエル",
+                    "friendly": "フレンド対戦",
+                    "tavern-brawl": "酒場の喧嘩",
+                    "arena-underground": "地下闘技場"
+                },
+                "turns": "{{count}}ターン",
+                "versus": "{{mine}} vs {{opponent}}",
+                "age": {
+                    "just-now": "今すぐ"
+                },
+                "class": {
+                    "deathknight": "デスナイト",
+                    "demonhunter": "デーモンハンター"
+                },
+                "copy-link": "このモーメントのリンクをコピー",
+                "decklists": "デッキリスト",
+                "duration": {
+                    "minutes": "{{value}}分",
+                    "seconds": "{{value}}秒",
+                    "hours": "{{hours}}時間{{minutes}}分"
+                },
+                "firestone-hint": "何も起きない場合、Firestoneがインストールされ、起動していることをご確認ください",
+                "link-copied": "リンクがコピーされました",
+                "rank": {
+                    "legend": "レジェンド",
+                    "legend-number": "レジェンド{{rank}}位"
+                },
+                "result": {
+                    "defeat": "敗北",
+                    "tie": "引き分け",
+                    "victory": "勝利"
+                },
+                "share": "リプレイを共有",
+                "shortcut": {
+                    "speed": "再生速度を変更",
+                    "step": "前/次のステップ",
+                    "view": "盤面とアクションビューを切り替える",
+                    "turn": "前/次のターン",
+                    "play-pause": "再生/停止"
+                },
+                "shortcuts": "キーボードショートカット",
+                "view-in-firestone": "ハースストーンのクライアントで見る"
+            },
+            "loading": {
+                "label": "あなたのリプレイを準備中",
+                "parsing": "リプレイを解析中",
+                "preparing": "リプレイを準備中",
+                "progress": "あなたのリプレイを準備中・{{total}}ターン中{{turn}}ターン目"
+            },
+            "action-view": {
+                "half": {
+                    "first": "前半",
+                    "second": "後半"
+                },
+                "kind": {
+                    "adapt": "適応",
+                    "assemble": "合成",
+                    "choose-one": "選択",
+                    "discover": "発見",
+                    "dredge": "海底探査"
+                },
+                "result": {
+                    "defeat": "敗北",
+                    "tie": "引き分け",
+                    "conceded": "降参",
+                    "victory": "勝利"
+                },
+                "turn": "{{turn}}ターン目",
+                "added-to-their-hand": "相手の手札に追加",
+                "added-to-your-hand": "自分の手札に追加",
+                "after": "後",
+                "base": "ベース",
+                "before": "前",
+                "decided": "{{seconds}}秒以内に決断",
+                "drawn": "引いた",
+                "end-of-game": "ゲーム終了",
+                "forged": "鍛造済み",
+                "from-their-hand": "相手の手札から",
+                "from-your-hand": "自分の手札から",
+                "left-option": "左の選択肢",
+                "not-used": "不使用",
+                "not-picked": "不選択",
+                "opponent-traded": "対戦相手がカードを交換した",
+                "opponent-forged": "対戦相手がカードを鍛造",
+                "other-option": "その他のオプション",
+                "picked": "選択",
+                "picked-option": "選んだオプション",
+                "restart": "マリガンから再スタート",
+                "result-label": "結果",
+                "right-option": "右の選択肢",
+                "shuffled": "デッキに混ざった",
+                "side-option": "左右の選択肢",
+                "stat": {
+                    "duration": "期間",
+                    "turns": "ターン"
+                },
+                "watch-key-moments": "{{count}}個のキーモーメントを見る",
+                "you-forged": "自分がカードを鍛造",
+                "you-offered": "自分に提示された",
+                "added-to-hand": "手札に追加",
+                "bottom-taken": "とられた下半分",
+                "choice-tag": "選択 · {{kind}}",
+                "opponent-offered": "対戦相手に提示された",
+                "progress": "ステップ {{count}}中{{position}}  · {{elapsed}} / {{total}}",
+                "you-traded": "自分がカードを交換"
+            },
+            "common": {
+                "close": "閉じる",
+                "download-xml": "XMLをダウンロード"
+            },
+            "story-panel": {
+                "everything": "全て",
+                "empty": "このフィルターでは何も表示されません"
+            },
+            "hero-strip": {
+                "deck": "デッキ",
+                "mana": "マナ",
+                "overload": "次のターン、{{count}}マナがオーバーロード",
+                "quest": "クエスト",
+                "secret": "秘策？",
+                "corpses": "死体",
+                "spell-damage": "呪文ダメージ+{{amount}}"
+            },
+            "momentum": {
+                "chart": "ゲームを通じたヒーローの体力と盤面の強さ",
+                "key-moment": "キーモーメント{{number}}: {{label}}",
+                "turn": "ターン"
+            },
+            "mulligan": {
+                "coin": "コインを引いた",
+                "replaced": "交換済み"
+            },
+            "stage": {
+                "cast": "唱えられたもの",
+                "now-playing": "プレイ中",
+                "deck-title": "{{name}} · デッキ",
+                "enchantments": "エンハンスメント",
+                "keyword": {
+                    "colossal": "超大型",
+                    "corrupt": "変妖",
+                    "echo": "木霊",
+                    "infuse": "吸魂",
+                    "magnetic": "超電磁",
+                    "outcast": "異端",
+                    "starship": "宇宙船",
+                    "titan": "タイタン",
+                    "twinspell": "双呪文"
+                },
+                "never-revealed": "明かされなかった"
+            },
+            "minion": {
+                "ability-available": "利用可能",
+                "ability-used": "使用済み",
+                "old-god-abilities": "旧神の能力"
+            }
         }
     },
     "turn-timer": {
