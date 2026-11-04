@@ -538,6 +538,30 @@
             "opponentNzothDreamsEndCounter": {
                 "blurb": "対戦相手が何体の断末魔ミニオンを召喚したかと、「夢の終焉ン=ゾス」の現在のコストを表示します",
                 "title": "対戦相手の「夢の終焉ン=ゾス」カウンター"
+            },
+            "cardTooltipUseCanvasFallback": {
+                "blurb": "カード画像の読み込みに失敗したとき、そのカードを描画します。デフォルトではオフです",
+                "title": "足りないカード画像を描画する"
+            },
+            "cardsDiscoverAssembleTabs": {
+                "blurb": "構築と闘技場において、発見と合成のカードタブがあります。合成プールはクラスによってフィルターできます",
+                "title": "発見と合成の統計"
+            },
+            "opponentGhuunBloodRunesCounter": {
+                "title": "対戦相手の「グフーン」体力カウンター",
+                "blurb": "対戦相手の「グフーン」が体力をいくつ吸い取るかを表示します。デフォルトではオフです"
+            },
+            "playerHodirCounter": {
+                "blurb": "「巨人の父ホディル」が何回ミニオンのステータスを8/8にするかを表示します",
+                "title": "「巨人の父ホディル」カウンター"
+            },
+            "opponentHodirCounter": {
+                "blurb": "対戦相手の「巨人の父ホディル」が、何回ミニオンのステータスを8/8にするかを表示します",
+                "title": "対戦相手の「巨人の父ホディル」カウンター"
+            },
+            "replayViewerV2": {
+                "blurb": "構築のリプレイを新しいビューワで見ます。キーモーメント、盤面、デッキリストが利用できます。古いビューワに戻すこともできます",
+                "title": "新しい構築リプレイビューワ"
             }
         },
         "menu": {
@@ -1717,7 +1741,8 @@
                         "level": "グレード {{value}} に上げる",
                         "hero-power": "ヒーローパワー"
                     }
-                }
+                },
+                "outdated": "このヒーローパワーが改修前のときに書かれました"
             },
             "compositions": {
                 "columns": {
@@ -1750,6 +1775,11 @@
                     "example-boards-locked-tooltip": "プレミアムになると、高MMRにおける、ゲーム終盤のこれらの構成の例を見れます"
                 },
                 "loading-example-boards": "盤面の例を読み込む"
+            },
+            "hero-power-tips": {
+                "title": "Firestone Tips",
+                "variant-lobby-lacks": "{{tribes}}がロビーにいない",
+                "variant-lobby-has": "{{tribes}}がロビーにいる"
             }
         },
         "duels": {
@@ -2617,6 +2647,57 @@
                 "ability-available": "利用可能",
                 "ability-used": "使用済み",
                 "old-god-abilities": "旧神の能力"
+            },
+            "story": {
+                "is-forged": "「{{card}} 」が鍛造された",
+                "mulligan": {
+                    "kept-all": "{{who}}が{{count}}枚のカード全てをキープ",
+                    "title": "マリガン",
+                    "kept-replaced": "{{who}}が{{kept}}枚をキープし、{{replaced}}枚を入れ替えた",
+                    "replaced": "{{who}}が{{replaced}}枚を入れ替えた",
+                    "replaced-all": "{{who}}が{{replaced}}枚全てを入れ替えた"
+                },
+                "opponent": "対戦相手",
+                "turn-steps": "ステップ{{count}}",
+                "cards-count": "カード{{count}}枚",
+                "casts": "「{{caster}}」は「{{spells}}」を使用した",
+                "damage-to-targets": "{{count}}体のターゲットに{{amount}} ダメージ",
+                "picked": "{{cards}}を選択",
+                "source-dealing": "「{{source}}」が {{damage}}ダメージを与えた",
+                "source-deals": "「{{source}}」が {{damage}}ダメージを与えた",
+                "discover": "発見",
+                "discover-from": "発見: {{source}}",
+                "forged": "鍛造：「{{card}}」",
+                "lethal": "リーサル",
+                "mana-change": "{{before}}マナから{{after}}マナへ",
+                "plays": "{{who}}が「{{what}}」を使用",
+                "secret-revealed": "秘策が判明：「{{secret}}」",
+                "trade-cost": "1マナ",
+                "traded": "「{{card}}」を交換",
+                "key-moment": {
+                    "big-hit": "ビッグヒット",
+                    "board-wipe": "盤面ワイプ",
+                    "secret": "秘策が判明",
+                    "swing": "スウィング"
+                },
+                "mulligan-done": "マリガン完了",
+                "turn": "{{turn}}Turn目",
+                "turn-mana": "{{mana}}マナ",
+                "you": "自分"
+            },
+            "turn": {
+                "mine": "自分のターン"
+            },
+            "transport": {
+                "pause": "ポーズ(Space)",
+                "play": "再生(Space)",
+                "previous-step": "前のステップ(←)",
+                "previous-turn": "前のターン(Ctrl+←)",
+                "change-speed": "再生速度を変更",
+                "copy-link": "リンクをモーメントにコピー",
+                "next-step": "次のステップ(→)",
+                "next-turn": "次のターン(Ctrl+→)",
+                "speed": "{{speed}}倍速"
             }
         }
     },
