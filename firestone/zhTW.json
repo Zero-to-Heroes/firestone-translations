@@ -537,6 +537,30 @@
             "opponentNzothDreamsEndCounter": {
                 "title": "「『夢境終結』恩若司」計數器",
                 "blurb": "顯示「『夢境終結』恩若司」的效果數值。"
+            },
+            "playerHodirCounter": {
+                "title": "霍迪爾計數器",
+                "blurb": "顯示「『巨人先祖』霍迪爾」仍可將手下數值改為 8/8 的剩餘次數。"
+            },
+            "replayViewerV2": {
+                "blurb": "透過包含關鍵時刻、手牌場面與對戰套牌列表的新版檢視器觀看對戰重播。你隨時可以切換回經典檢視器。",
+                "title": "全新標準／狂野模式重播檢視器"
+            },
+            "cardsDiscoverAssembleTabs": {
+                "title": "發現與組裝統計數據",
+                "blurb": "對戰模式與競技場新增包含「發現」與「組裝」統計數據的卡牌分頁。組裝池可依職業進行篩選。"
+            },
+            "opponentHodirCounter": {
+                "title": "對手的「『巨人先祖』霍迪爾」計數器",
+                "blurb": "顯示對手的「『巨人先祖』霍迪爾」爾仍可將手下數值改為 8/8 的剩餘次數。"
+            },
+            "opponentGhuunBloodRunesCounter": {
+                "title": "對手的「古翰」生命值計數器",
+                "blurb": "顯示對手的「古翰」偷取了多少生命值。預設為關閉。"
+            },
+            "cardTooltipUseCanvasFallback": {
+                "title": "繪製缺失的卡牌圖案",
+                "blurb": "當卡牌圖案載入失敗時，自動繪製卡牌。預設為關閉。"
             }
         },
         "menu": {
@@ -1715,7 +1739,8 @@
                     }
                 },
                 "curve-label": "玩法路線： ",
-                "date": "於 {{date}} 釋出（版本 {{patch}}）"
+                "date": "於 {{date}} 釋出（版本 {{patch}}）",
+                "outdated": "針對舊版英雄能力所撰寫"
             },
             "compositions": {
                 "columns": {
@@ -1748,6 +1773,12 @@
                     "example-boards-locked-tooltip": "訂閱 Premium 以檢視高 MMR 玩家在對戰結束時的範例陣容"
                 },
                 "loading-example-boards": "正在載入範例陣容"
+            },
+            "hero-power-tips": {
+                "title": "Firestone 祕訣",
+                "variant-hero": "僅限 {{hero}}",
+                "variant-lobby-has": "大廳包含 {{tribes}}",
+                "variant-lobby-lacks": "大廳沒有 {{tribes}}"
             }
         },
         "duels": {
@@ -3261,6 +3292,10 @@
         "hodir": {
             "player": "霍迪爾效果已在手牌/牌組套用",
             "opponent": "霍迪爾效果已在對手的手牌/牌組套用"
+        },
+        "therazane": {
+            "player": "你的下 {{value}} 個系別的法術將施放兩次：{{schools}}",
+            "opponent": "對手的下 {{value}} 個系別的法術將施放兩次：{{schools}}"
         }
     },
     "loading": {
@@ -3663,7 +3698,8 @@
         "card-tooltip-assemble-pick-rate": "選取率",
         "card-tooltip-assemble-sort-by": "排序依據",
         "card-tooltip-assemble-appearance-rate": "出現率",
-        "gift-reborn-from": "重生自 <br/> {{value}}"
+        "gift-reborn-from": "重生自 <br/> {{value}}",
+        "assembled-card": "已組装：{{value}}"
     },
     "battlegrounds": {
         "menu": {
@@ -4105,7 +4141,8 @@
                     "not-tier-7": "旅店 7⭐️手下無法獲得",
                     "requires-activate": "僅會在[啟動]手下裡提供",
                     "lobby-no-aberration": "僅在大廳中有變異怪時會出現",
-                    "requires-discards-this-game": "需要在本賽局曾捨棄過卡牌"
+                    "requires-discards-this-game": "需要在本賽局曾捨棄過卡牌",
+                    "relentless-deflector": "「不懈偏斜者」無法獲得隱秘"
                 },
                 "turn": "回合 {{value}}",
                 "uses-left": "剩 {{value}} 次使用",
@@ -5299,7 +5336,9 @@
                     "ghuun-blood-runes-label": "「古翰」生命值",
                     "uldir-runes-label": "「奧迪爾隔離」",
                     "hodir-label": "「霍迪爾」",
-                    "hodir-tooltip": "顯示霍迪爾效果是否已作用於牌組或手牌。"
+                    "hodir-tooltip": "顯示霍迪爾效果是否已作用於牌組或手牌。",
+                    "therazane-label": "「『大地守護者』瑟拉贊恩」",
+                    "therazane-tooltip": "顯示下個法術將施放兩次之法術系別"
                 },
                 "discovery-zone-label": "發現區塊",
                 "discovery-zone-tooltip": "啟用時，記牌器中會出現一個新區塊，其中包括賽局為你提供的「發現」選項。這可以讓你看到並標記牌堆的相關卡牌與協同作用。",
@@ -5612,7 +5651,9 @@
                 "counter-cards-discarded-this-game-tooltip": "顯示本賽局已捨棄的卡牌數量",
                 "counter-deity-label": "古神",
                 "counter-tavern-spells-cast-tooltip": "顯示本賽局你已施放的旅店法術數量",
-                "counter-tavern-spells-cast-label": "已施放旅店法術"
+                "counter-tavern-spells-cast-label": "已施放旅店法術",
+                "hero-power-tips-label": "英雄能力祕訣",
+                "hero-power-tips-tooltip": "當滑鼠懸停在英雄能力上時，顯示由 Firestone 社群撰寫的祕訣（Premium 專屬）。"
             },
             "session-widget": {
                 "title": "歷史賽局小工具",
@@ -6606,7 +6647,7 @@
                 "blurb": "不含 Overwolf 的 Firestone 版本。目前仍處於封閉測試階段。",
                 "discord-cta": "在 Discord 上詢問我們",
                 "discord-lead": "想搶先體驗嗎？",
-                "skip": "跳過此步驟"
+                "skip": "想要略過 Overwolf 嗎？"
             },
             "features": {
                 "title": "你能獲得的免費功能",
@@ -6667,7 +6708,7 @@
                 "step-3-text": "Firestone 會自動開始追蹤。",
                 "badge": "免費下載",
                 "step-2-text": "啟動遊戲後，對戰追蹤與覆疊視窗將自動載入。",
-                "step-3-title": "自動追蹤對戰"
+                "step-3-title": "遊玩"
             },
             "social-proof": {
                 "titles": {
@@ -6936,8 +6977,8 @@
                 "duplicate_variant": "已存在相同條件的變體指南。",
                 "item_not_found": "此指南已不存在。",
                 "unknown_hero": "未知的英雄戰場的英雄。",
-                "required": "此為必填欄位。",
-                "not_your_item": "您沒有權限修改非您建立的內容。",
+                "required": "部分必填欄位為空。",
+                "not_your_item": "此祕訣屬於其他作者。",
                 "unknown_tribe": "其中一個類別不是英雄戰場的類別。",
                 "unknown_hero_power": "未知的英雄能力。",
                 "invalid_url": "無效的 URL 格式。",
@@ -6951,8 +6992,8 @@
                 "generic-admin": "管理員操作失敗，請重試。",
                 "last_admin": "無法移除最後一位管理員。",
                 "not_an_admin": "需要管理員權限才能執行此操作。",
-                "not_a_contributor": "此帳號尚未取得貢獻者權限。",
-                "invalid_token": "登入憑證無效或已過期。"
+                "not_a_contributor": "你的帳號無法再發布祕訣。",
+                "invalid_token": "你已被登出。請重新登入以發佈。"
             },
             "nav-label": "貢獻",
             "comps": {
