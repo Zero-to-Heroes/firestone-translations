@@ -478,7 +478,7 @@
             },
             "playerAqirGoliathCounter": {
                 "title": "亚基巨像计数器",
-                "blurb": "显示你本回合打出了多少张连击牌。"
+                "blurb": "显示你在本回合使用了多少张连击牌。"
             },
             "playerGhuunBloodRunesCounter": {
                 "title": "“戈霍恩”生命值计数器",
@@ -486,7 +486,7 @@
             },
             "playerUldirRunesCounter": {
                 "title": "“奥迪尔隔离区”计数器",
-                "blurb": "显示你本局打出了多少种符文。"
+                "blurb": "显示你本局对战中使用了多少种符文。"
             },
             "playerBgsDeityCounter": {
                 "title": "神明计数器",
@@ -539,6 +539,30 @@
             "opponentNzothDreamsEndCounter": {
                 "title": "对手的“恩佐斯，梦境之末”计数器",
                 "blurb": "显示对手已召唤的亡语随从数量，以及恩佐斯的当前费用。"
+            },
+            "playerHodirCounter": {
+                "blurb": "显示“巨人之父霍迪尔”还能将多少个随从设为8/8属性值。",
+                "title": "“巨人之父霍迪尔”计数器"
+            },
+            "replayViewerV2": {
+                "blurb": "在新版查看器中观看对战模式回放，查看关键时刻、场面和套牌列表。你也可以切回经典版查看器。",
+                "title": "全新传统对战回放查看器"
+            },
+            "cardTooltipUseCanvasFallback": {
+                "blurb": "当卡牌图片加载失败时，改为绘制卡牌。此功能默认关闭。",
+                "title": "绘制未能加载的卡牌图片"
+            },
+            "cardsDiscoverAssembleTabs": {
+                "blurb": "传统对战模式和竞技模式的“卡牌”标签页中包含发现牌和拼装牌统计数据。拼装池可以按职业筛选。",
+                "title": "“发现”与“拼装”卡牌统计数据"
+            },
+            "opponentGhuunBloodRunesCounter": {
+                "blurb": "显示对手的“戈霍恩”偷取多少点生命值。默认关闭。",
+                "title": "对手的“戈霍恩”生命值计数器"
+            },
+            "opponentHodirCounter": {
+                "title": "对手的“巨人之父霍迪尔”计数器",
+                "blurb": "显示对手的“巨人之父霍迪尔”还能将多少个随从设为8/8属性值。"
             }
         },
         "menu": {
@@ -927,7 +951,7 @@
             },
             "card-search": {
                 "search-box-placeholder": "搜索卡牌...",
-                "search-box-tooltip": "您可以在搜索中使用以下关键词：text:(搜索卡牌描述而非仅仅名称)| name: | cards:all (包括不可收藏的卡牌) | tribe:(种族)  ",
+                "search-box-tooltip": "您可以在搜索中使用以下关键词：text:(搜索卡牌描述而非仅仅名称)| name: | cards:all (包括不可收藏的卡牌) | tribe:(随从类型) ",
                 "loading": "正在载入更多卡牌...",
                 "results-title": "正在搜索 {{value}}"
             },
@@ -1718,7 +1742,8 @@
                         "level": "升{{value}}本",
                         "hero-power": "英雄技能"
                     }
-                }
+                },
+                "outdated": "此内容是对英雄技能的旧版本撰写的"
             },
             "compositions": {
                 "contributors": {
@@ -1751,6 +1776,12 @@
                     "example-boards-locked-tooltip": "升级会员查看这些流派在高分段中游戏终局时的示例阵容"
                 },
                 "loading-example-boards": "正在加载示例战场阵容"
+            },
+            "hero-power-tips": {
+                "title": "Firestone 技巧提示",
+                "variant-hero": "仅{{hero}}",
+                "variant-lobby-lacks": "大厅中没有{{tribes}}",
+                "variant-lobby-has": "大厅中有{{tribes}}"
             }
         },
         "duels": {
@@ -2162,7 +2193,7 @@
             "collection_stats": "你可以随时查看不同卡包的卡牌历史、统计数据等信息",
             "quest_stats": "在浮窗直接查看完成任务的平均回合数和奖励的平均位次",
             "minion_auto_highlight": "在扮演特定英雄时可无脑购买特定的随从（例如在扮演海盗帕奇斯时遇见白赚赌徒）。Firestone将自动高亮商店中的这些随从",
-            "minions_list_by_tribe": "你可以选择将随从按种族分组（可以稍微节省一点空间，需要在设置里开启）",
+            "minions_list_by_tribe": "你可以选择将随从按随从类型分组（可以稍微节省一点空间，需要在设置里开启）",
             "constructed_deck_stats": "查看卡牌数据详情（例如起手或抽到胜率），以及所有套牌类型数据",
             "constructed_deck_stats_free": "免费查看当前的顶尖套牌！"
         },
@@ -2554,9 +2585,9 @@
                 "choice-tag": "选择 · {{kind}}",
                 "result": {
                     "conceded": "投降",
-                    "defeat": "败",
-                    "victory": "胜",
-                    "tie": "平"
+                    "defeat": "败北",
+                    "victory": "胜利",
+                    "tie": "平局"
                 },
                 "added-to-your-hand": "置入你的手牌",
                 "added-to-their-hand": "置入对方手牌",
@@ -2692,7 +2723,7 @@
                 "turn": "回合"
             },
             "mulligan": {
-                "coin": "抽到硬币",
+                "coin": "抽到幸运币",
                 "replaced": "已换"
             }
         }
@@ -3284,6 +3315,10 @@
         "hodir": {
             "player": "你接下来使用的{{value}}个随从将变为 8/8。",
             "opponent": "对手接下来使用的{{value}}个随从将变为 8/8。"
+        },
+        "therazane": {
+            "opponent": "对手接下来施放的这{{value}}个法术派系的法术会施放两次：{{schools}}",
+            "player": "你接下来施放的这{{value}}个法术派系的法术会施放两次：{{schools}}"
         }
     },
     "loading": {
@@ -3686,7 +3721,8 @@
         "card-tooltip-assemble-pick": "选择",
         "card-tooltip-assemble-other-class": "非{{ class }}",
         "card-tooltip-assemble-pick-rate": "选取率",
-        "card-tooltip-assemble-sort-by": "排序方式"
+        "card-tooltip-assemble-sort-by": "排序方式",
+        "assembled-card": "已拼装：“{{value}}”"
     },
     "battlegrounds": {
         "menu": {
@@ -3943,7 +3979,7 @@
                 "tavern-empty-state": "暂未升本",
                 "last-opponent-icon-tooltip": "是上回合的对手",
                 "triple-title": "新的三连",
-                "triple-tooltip": "截止上次战斗，此对手通过三连获得了 {{quantity}} 个 {{tier}} 星随从",
+                "triple-tooltip": "截止上次战斗，此对手通过三连获得了{{quantity}}个{{tier}}级随从",
                 "triple-empty-state": "没有新的三连",
                 "buddies-title": "获得伙伴",
                 "buddies-empty-state": "没有伙伴",
@@ -3971,7 +4007,7 @@
                 "minion-banned-tooltip": "此卡牌已在当前畸变中禁用。",
                 "rules": {
                     "missing-board-type": "需要你的战场和手牌中有至少2个{{typesAndQuantity}}随从",
-                    "menagerie": "需要你的战场和手牌包含至少3个不同种族的随从",
+                    "menagerie": "需要你的战场和手牌包含至少3个不同随从类型的随从",
                     "tavern-level": "需要你的酒馆等级至少为{{target}}",
                     "missing-board-expected-quantity": "{{quantity}} {{minionType}}",
                     "missing-board-linked": " 或 ",
@@ -4032,7 +4068,7 @@
                 "reward-position-tooltip": "在当前分段里，选择这个任务的玩家平均的最终排名",
                 "reward": {
                     "average-placement-global-tooltip": "全英雄平均最终名次",
-                    "average-placement-tooltip": "补丁后前{{value}}%玩家的奖励数据，计入全种族",
+                    "average-placement-tooltip": "补丁后前{{value}}%玩家的奖励数据，计入全部随从类型",
                     "average-placement-hero-tooltip": "此英雄平均最终名次（总计{{value}}场）",
                     "average-placement-global": "全局",
                     "average-placement-hero": "英雄",
@@ -4043,7 +4079,7 @@
                     "average-difficulty-header": "难度",
                     "average-global-tooltip": "完成任务的回合数，计入所有难度和所有英雄",
                     "average-difficulty-tooltip": "完成特定难度任务的回合数，计入所有英雄。总场数：{{value}}",
-                    "turns-to-complete-header-tooltip": "补丁后前{{value}}%玩家的任务数据，计入全种族",
+                    "turns-to-complete-header-tooltip": "补丁后前{{value}}%玩家的任务数据，计入全部随从类型",
                     "turns-to-complete-header": "完成任务的回合数",
                     "average-global-header": "全局",
                     "average-hero-header": "英雄",
@@ -4129,18 +4165,19 @@
                     "not-highest-trigger-count": "仅当这是你最常触发的成长条件时才提供",
                     "lobby-no-aberration": "有畸变怪的对局中才会提供",
                     "requires-activate": "只能提供给具有发动的随从",
-                    "requires-discards-this-game": "需要本局对战中曾弃掉一张牌"
+                    "requires-discards-this-game": "需要本局对战中曾弃掉一张牌",
+                    "relentless-deflector": "铁血防御机不会获得隐秘鬼祟"
                 },
                 "others": "其它",
                 "turn": "第{{value}}回合",
                 "uses-left": "还剩{{value}}次使用",
                 "has-condition": "这个黑暗之赐有额外条件。将鼠标悬停在此处查看原因，或悬停在随从上查看。",
-                "guaranteed-disabled-tooltip": "从第 {{value}} 回合起，提供的随从中有一个会是你最常见的类型",
+                "guaranteed-disabled-tooltip": "从第{{value}}回合开始，你必定会看到一个与你最常见的随从类型相同的随从。从第{{value2}}回合开始，你必定会看到两个。",
                 "turns-plus": "{{min}}+",
                 "turns-open": "{{min}}–{{max}}",
                 "restriction": {
                     "scaling-highest": "在战争之痕、死亡之拥、法术虹吸与厌弃渎神这几种中，只能提供触发概率最高的一种。",
-                    "guaranteed-type": "从第6回合开始，提供的随从中必定有一个属于你数量最多的随从类型。",
+                    "guaranteed-type": "从第{{value}}回合开始，你必定会看到一个与你最常见的随从类型相同的随从。从第{{value2}}回合开始，你必定会看到两个。",
                     "no-magnetic-sell-hand": "具有磁力的随从、具有“当你出售本随从时”效果的随从，以及设计上需要留在手牌中的随从无法获得黑暗之赐。",
                     "battlecry-before-5": "第5回合之前不会提供具有战吼或抉择的随从。",
                     "battlecry-choose-one": "战吼与抉择随从只能获得双重幻象、不断复制、镀金随从和吼声回荡。",
@@ -4931,7 +4968,7 @@
                 "show-flavor-text-on-hover": "悬停时显示风味趣文",
                 "show-flavor-text-on-hover-tooltip": "将鼠标悬停在游戏内记牌器中的卡牌上时，在通知区域显示其风味趣闻",
                 "show-flavor-text-on-in-game-hover": "查看卡牌时显示风味趣文",
-                "hide-play-order-on-blocking-ui-tooltip": "当游戏菜单、发现选项或放大的卡片（手牌、战场或历史记录）显示在屏幕上时，隐藏打出顺序数字",
+                "hide-play-order-on-blocking-ui-tooltip": "当游戏菜单、发现选项或放大的卡牌（手牌、战场或历史记录）显示在屏幕上时，隐藏打出顺序数字",
                 "hide-play-order-on-blocking-ui": "当游戏界面显示时隐藏",
                 "show-flavor-text-on-in-game-hover-tooltip": "在查看炉石传说中的卡牌（手牌或战场）时，在显示通知的角落显示其风味趣文",
                 "individual-counters-size": "单独的计数器尺寸",
@@ -5324,8 +5361,10 @@
                     "nzoth-dreams-end-tooltip": "当“恩佐斯，梦境之末”在你的手牌或牌库中时，显示你在本局对战中已召唤的亡语随从数量，以及它当前的法力值消耗。",
                     "yshaarj-titan-bane-tooltip": "当“亚煞极，泰坦杀神”在你的手牌或牌库中时，显示还需在随从牌上消耗多少法力值。",
                     "yshaarj-titan-bane-label": "亚煞极，泰坦杀神",
-                    "hodir-label": "霍迪尔",
-                    "hodir-tooltip": "显示“巨人之父霍迪尔”还能设为8/8属性值的随从数量"
+                    "hodir-label": "巨人之父霍迪尔",
+                    "hodir-tooltip": "显示“巨人之父霍迪尔”还能将多少个随从设为8/8属性值",
+                    "therazane-label": "地母塞拉赞恩",
+                    "therazane-tooltip": "显示下一个会施放两次的法术派系"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。",
@@ -5432,7 +5471,7 @@
                 "leaderboard": "排行榜",
                 "battle-odds": "对战胜率",
                 "minions-list": "随从列表",
-                "tribes": "种族"
+                "tribes": "随从类型"
             },
             "full-toggle-label": "在酒馆战棋中启用记牌器",
             "full-toggle-tooltip": "关闭后，将停用记牌器的所有战棋实时功能",
@@ -5479,8 +5518,8 @@
                 "use-anomaly-filter-for-live-stats-label-short": "筛选畸变",
                 "use-anomaly-filter-for-live-stats-tooltip": "启用此功能，在对局开始时的英雄选择界面中，英雄评级将考虑当前对局的畸变。警告：可能存在数据量不足的情况",
                 "show-minions-auto-highlight-label": "自动高亮随从",
-                "show-tribes-auto-highlight-label": "自动高亮种族",
-                "show-tribes-auto-highlight-tooltip": "在扮演特定英雄时自动高亮特定种族的随从（例如在扮演齐恩瓦拉时高亮元素）",
+                "show-tribes-auto-highlight-label": "自动高亮随从类型",
+                "show-tribes-auto-highlight-tooltip": "在扮演特定英雄时自动高亮特定随从类型的随从（例如在扮演齐恩瓦拉时高亮元素）",
                 "show-minions-auto-highlight-tooltip": "根据您的英雄和场面阵容自动高亮显示一些随从（例如在扮演海盗帕奇斯时高亮白赚赌徒）",
                 "use-remote-simulator-label": "使用云端战斗模拟器",
                 "use-remote-simulator-tooltip": "开启后将在云端模拟战斗结果。可以减小对电脑的占用，但计算结果会稍有延迟。",
@@ -5507,7 +5546,7 @@
                 "banned-tribes-single-row-label": "强制单行显示",
                 "banned-tribes-single-row-tooltip": "强制单行显示随从类型",
                 "show-minions-list-label": "显示随从列表",
-                "show-minions-list-tooltip": "显示各星级的随从列表",
+                "show-minions-list-tooltip": "按酒馆等级分组显示随从列表",
                 "turn-counter-label": "显示回合数",
                 "last-opponent-icon-label": "上个对手的图标",
                 "last-opponent-icon-tooltip": "在位次榜上，为您的上个对手添加一个标记",
@@ -5524,7 +5563,7 @@
                 "banned-tribes-icon-size-label": "图标尺寸",
                 "minions-list-title": "随从列表",
                 "minions-list-show-on-mouse-over-label": "鼠标悬停时显示随从列表",
-                "minions-list-show-on-mouse-over-tooltip": "停用此功能，您将需要点击酒馆星级图标来显示随从列表",
+                "minions-list-show-on-mouse-over-tooltip": "停用此功能，你将需要点击酒馆等级图标来显示随从列表",
                 "minions-list-show-on-mouse-over-confirmation": "知道了，我们只会在您点击“星星”时为您显示随从的详细信息",
                 "minions-list-group-minions-into-tribes-label": "按随从池归类随从",
                 "minions-list-group-minions-into-tribes-tooltip": "这将会把无类型的随从归入它们本来所属的随从类型分区。",
@@ -5546,8 +5585,8 @@
                 "counter-magmaloc-tooltip": "显示“熔岩鱼人”在回合结束时获得的属性值",
                 "counter-majordomo-label": "管理者埃克索图斯",
                 "counter-majordomo-tooltip": "当“管理者埃克索图斯”在酒馆、战场或您的手牌中时，显示您在本回合中使用元素牌的数量",
-                "minions-list-show-tribe-tiers-tooltip": "添加按种族分类的随从列表",
-                "minions-list-show-tribe-tiers-label": "显示种族评级",
+                "minions-list-show-tribe-tiers-tooltip": "添加按随从类型分类的随从列表",
+                "minions-list-show-tribe-tiers-label": "显示随从类型评级",
                 "minions-list-show-spells-at-bottom-label": "在底部显示法术",
                 "minions-list-show-spells-at-bottom-tooltip": "在随从列表的底部显示法术，而不是在顶部",
                 "gold-delta-label": "金三角",
@@ -5564,9 +5603,9 @@
                 "counter-tuskarr-raider-tooltip": "显示你在本局对战中使用的海盗牌数量",
                 "counter-tuskarr-raider-label": "海象人海盗",
                 "minions-list-show-trinkets-label": "显示饰品",
-                "minions-list-show-trinkets-tooltip": "当对局中存在饰品且已启用“种族评级”，在随从列表中显示饰品",
-                "minions-list-include-trinkets-in-tribes-label": "包括种族专属饰品",
-                "minions-list-include-trinkets-in-tribes-tooltip": "当查看特定种族的随从时将种族专属饰品纳入列表",
+                "minions-list-show-trinkets-tooltip": "当对局中存在饰品且已启用“随从类型评级”，在随从列表中显示饰品",
+                "minions-list-include-trinkets-in-tribes-label": "包括随从类型专属饰品",
+                "minions-list-include-trinkets-in-tribes-tooltip": "当查看特定随从类型的随从时将该类型专属饰品纳入列表",
                 "minions-list-new-header-label": "使用新版顶栏",
                 "minions-list-show-buddies-tooltip": "始终显示伙伴，即使您目前没有办法获得伙伴。",
                 "minions-list-show-buddies-label": "显示伙伴",
@@ -5594,8 +5633,8 @@
                 "counter-elemental-buff-tooltip": "显示元素额外获得的攻击/生命值增益",
                 "counter-elemental-tavern-stats-tooltip": "在酒馆中为元素显示额外的攻击力/生命值增益",
                 "counter-elemental-tavern-stats-label": "酒馆元素统计",
-                "show-tribe-colors-label": "使用种族颜色",
-                "show-tribe-colors-tooltip": "用种族类型的颜色为每个小部件着色",
+                "show-tribe-colors-label": "使用随从类型颜色",
+                "show-tribe-colors-tooltip": "用随从类型的颜色为每个小部件着色",
                 "minions-list-keep-in-bounds-label": "保持在范围内",
                 "minions-list-keep-in-bounds-tooltip": "确保列表不会超出范围太多。如果无法准确定位列表，请将其关闭",
                 "actions-counter": {
@@ -5640,7 +5679,9 @@
                 "counter-cards-discarded-this-game-label": "弃掉的卡牌",
                 "counter-deity-label": "神明",
                 "counter-tavern-spells-cast-label": "施放酒馆法术",
-                "counter-tavern-spells-cast-tooltip": "显示你在本局对战中已施放了多少个酒馆法术"
+                "counter-tavern-spells-cast-tooltip": "显示你在本局对战中已施放了多少个酒馆法术",
+                "hero-power-tips-tooltip": "鼠标悬停在英雄技能上时，显示 Firestone 社区为其撰写的技巧提示（会员功能）。",
+                "hero-power-tips-label": "英雄技能技巧"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -5887,7 +5928,7 @@
                 "please-wait": "正在验证你的账户，请稍候",
                 "signing-in": "正在登录……",
                 "success": "成功！",
-                "failed": "⚠️ Sign in failed",
+                "failed": "⚠️ 登录失败",
                 "hint": "浏览器可能会询问是否打开 Firestone 应用——请选择“允许”或“打开”。",
                 "try-again": "重试",
                 "fallback-prefix": "如果没有任何反应， ",
@@ -6563,7 +6604,7 @@
                     "alt": "酒馆战棋随从列表按类型分组，并带有酒馆等级过滤器",
                     "caption": "酒馆战棋随从列表",
                     "title": "酒馆战棋助手",
-                    "blurb": "按等级、种族或机制浏览酒馆随从列表，以及对战胜率和大厅工具。"
+                    "blurb": "按等级、随从类型或机制浏览酒馆随从列表，以及对战胜率和大厅工具。"
                 },
                 "mods": {
                     "blurb": "可在设置中启用社区模组，包括自动屏蔽表情、自动补全套牌、收藏功能调整等，每项功能都能一键开关。",
@@ -6763,7 +6804,7 @@
                 "variant-lobby-empty": "大厅环境",
                 "variant-lobby-lacks": "大厅中没有{{tribes}}",
                 "variant-hero": "仅{{hero}}",
-                "variant-lobby-has": "大厅有{{tribes}}",
+                "variant-lobby-has": "大厅中有{{tribes}}",
                 "status-editing": "正在编辑你已发布的技巧",
                 "status-new": "新草稿",
                 "status-draft-kept": "草稿已保存在此设备上。",
@@ -6782,7 +6823,7 @@
                 "curve-basic": "基本",
                 "curves": "玩法路线",
                 "form-title-edit-hero": "编辑英雄专属技巧",
-                "preview-panel-title": "Firestone 技巧",
+                "preview-panel-title": "Firestone 技巧提示",
                 "form-title-new-hero": "新英雄专属技巧",
                 "status-published": "已发布",
                 "lobby-has": "有",
