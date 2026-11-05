@@ -1,248 +1,436 @@
 {
 	"decktracker": {
-		"card-tooltip-assemble-body": "ミニオン",
-		"card-tooltip-assemble-first": "前半",
-		"card-tooltip-assemble-second": "後半",
-		"card-tooltip-assemble-appearance-rate": "出現率",
-		"card-tooltip-assemble-other-class": "{{ class }}以外",
-		"card-tooltip-assemble-pick": "ピック",
-		"card-tooltip-assemble-pick-rate": "ピック率",
-		"card-tooltip-assemble-sort-by": "並べ替え",
-		"gift-reborn-from": "蘇り：<br/>{{value}}"
+		"assembled-card": "合成：{{value}}",
+		"guessed-info": {
+			"attack": "攻撃力",
+			"health": "体力"
+		}
 	},
 	"settings": {
 		"decktracker": {
 			"your-deck": {
 				"counters": {
-					"aqir-goliath-label": "アキール・ゴリアテ",
-					"aqir-goliath-tooltip": "アキール・ゴリアテが手札またはデッキにあるとき、このターンにプレイしたコンボカードの枚数を表示します",
-					"broodqueen-shakar-label": "ブルードクイーン・シャカール",
-					"broodqueen-shakar-tooltip": "ブルードクイーン・シャカールが手札またはデッキにあるとき、このターンにあと何体の味方ミニオンが死亡する必要があるかを表示します",
-					"colossus-of-the-cold-label": "冷気の巨像",
-					"colossus-of-the-cold-tooltip": "冷気の巨像が手札またはデッキにあるとき、スペルへ使うマナがあとどれだけ必要かを表示します",
-					"cthun-abilities-label": "クトゥーンの能力",
-					"cthun-abilities-tooltip": "クトゥーン、帝国の瞳が手札またはデッキにあるとき、4つの能力のうちいくつ発動したかを表示します",
-					"ghuun-blood-runes-label": "グフーンの血のルーン",
-					"ghuun-blood-runes-tooltip": "グフーンが手札またはデッキにあるとき、この対戦でプレイした血のルーンの数を表示します",
-					"nzoth-dreams-end-label": "ンゾス、夢の終わり",
-					"nzoth-dreams-end-tooltip": "ンゾス、夢の終わりが手札またはデッキにあるとき、召喚した断末魔ミニオンの数と現在のコストを表示します",
-					"yshaarj-titan-bane-label": "ヤシャラージ、タイタンの禍",
-					"yshaarj-titan-bane-tooltip": "ヤシャラージ、タイタンの禍が手札またはデッキにあるとき、ミニオンに使うマナがあとどれだけ必要かを表示します"
+					"ancestral-automaton-tooltip": "自分が「祖霊の自動人形」を召喚した回数を表示します",
+					"crash-of-thunder-label": "「雷鳴の轟き」",
+					"crash-of-thunder-tooltip": "手札かデッキに「雷鳴の轟き」があるとき、このターンに使用した自然呪文の数を表示します",
+					"cthun-cost-label": "「クトゥーン」のコスト",
+					"cthun-cost-tooltip": "「帝国の目クトゥーン」のコスト減少を表示します",
+					"hodir-label": "「ホディル」",
+					"hodir-tooltip": "「巨人の父ホディル」があと何体のミニオンを8/8にできるかを表示します",
+					"specific-deaths": "対戦相手の「{{cardName}}」が死亡した回数を表示します",
+					"therazane-label": "「セラゼイン」",
+					"therazane-tooltip": "次の呪文が2回発動する呪文系統を表示します",
+					"ysondre-label": "「イソンドレ」",
+					"ysondre-tooltip": "この試合中に死亡した「イソンドレ」の数を表示します"
 				}
-			},
-			"global": {
-				"flavor-text-size": "フレーバーテキストのサイズ"
 			},
 			"opponent-deck": {
 				"counters": {
-					"cthun-abilities-label": "クトゥーンの能力",
-					"cthun-abilities-tooltip": "相手がクトゥーン、帝国の瞳を手札、デッキ、または盤面に持っているとき、4つの能力のうちいくつ発動したかを表示します"
-				},
-				"extra-info-label": "追加情報マーカー",
-				"extra-info-tooltip": "コスト減少など、追加情報が分かっているとき、相手の手札のカードにマーカーを表示します"
+					"cards-discarded-tooltip": "この試合で対戦相手が破棄したカードの枚数を表示します",
+					"cthun-cost-label": "「クトゥーン」のコスト",
+					"cthun-cost-tooltip": "「帝国の目クトゥーン」のコスト減少を表示します",
+					"hero-attacks-tooltip": "この試合で対戦相手のヒーローが攻撃した回数を表示します",
+					"nzoth-dreams-end-label": "「夢の終焉ン=ゾス」",
+					"nzoth-dreams-end-tooltip": "有効にすると、対戦相手が断末魔ミニオンを1体以上召喚したあと、その召喚数と「夢の終焉ン=ゾス」の現在のコストを表示します"
+				}
 			}
 		},
 		"general": {
-			"account": {
-				"link-battlenet-failed": "Battle.netの連携を開始できませんでした。後でもう一度お試しください。"
+			"data": {
+				"refresh-signed-out": "サーバーから対戦履歴をすべて再ダウンロードするには、サインインが必要です。"
 			},
-			"hotkeys": {
-				"clear": "クリア",
-				"listening-scroll-pools": "キーまたはマウスのサイドボタンを押してください…",
-				"live-info-tooltip": "バトルグラウンドの対戦中にこのキーを押したままにすると、順位表の追加情報を表示します。酒場レベル、バディ、トリプル、連勝、タイプ、ダメージ、装飾品、クエスト。",
-				"scroll-pools": "カードプールをスクロール",
-				"scroll-pools-tooltip": "これを押したままにするとカードのツールチップが開いたままになり、カードプールをスクロールできます。Shift、Ctrl、Altの単独、キーの組み合わせ、またはマウスのサイドボタンを割り当てられます。"
+			"launch": {
+				"show-main-window-on-launch-label": "起動時にメインウィンドウを開く",
+				"show-main-window-on-launch-tooltip": "オフにすると、Firestoneはシステムトレイで起動します。トレイアイコンからメインウィンドウを開いてください。"
 			},
-			"quests": {
-				"size-label": "クエストウィジェットのサイズ"
+			"mods": {
+				"download-failed": "Modライブラリをダウンロードできませんでした。「Modを有効にする」をもう一度クリックすると再開します。",
+				"wrong-path-error": "ゲームのインストール場所がハースストーンのフォルダではないようです。パスを確認して、「確認」をもう一度クリックしてください。"
+			},
+			"widgets": {
+				"card-tooltip-canvas-fallback": "カード画像の代替表示",
+				"card-tooltip-canvas-fallback-tooltip": "カードのツールチップ画像を読み込めないとき、壊れた画像の代わりにカードを描画します。"
 			}
 		},
 		"battlegrounds": {
 			"overlay": {
-				"counter-tavern-spells-cast-label": "酒場の呪文の使用数",
-				"counter-tavern-spells-cast-tooltip": "この試合中に使用した酒場の呪文の数を表示します"
+				"hero-power-tips-label": "ヒーローパワーのヒント",
+				"hero-power-tips-tooltip": "ヒーローパワーにマウスを重ねると、Firestoneコミュニティが書いたヒントを表示します（プレミアム）。"
 			}
-		},
-		"global": {
-			"mark-all-read": "すべて既読にする"
 		}
 	},
 	"website": {
-		"uninstall": {
-			"comment": {
-				"body": "一言で十分です。返信が必要な場合は連絡先を残してください。",
-				"contact-label": "メールまたはDiscord（任意）",
-				"contact-placeholder": "メールまたはDiscord ID",
-				"placeholder": "何が起きましたか？",
-				"skip": "スキップ",
-				"submit": "送信",
-				"title": "知らせておきたいことはありますか？"
+		"constructed": {
+			"assemble-game": "試合",
+			"assemble-games": "試合",
+			"assemble-games-hint": "ベースが提示された試合です。複数のベースを合成した試合は、ベースごとに1回ずつ数えられます。",
+			"discover-offered-count-hint": "このカードが提示された回数"
+		},
+		"account": {
+			"account-id-copied": "アカウントIDをコピーしました",
+			"copy-account-id": "アカウントIDをコピー",
+			"sign-in": "サインイン",
+			"sign-out": "サインアウト"
+		},
+		"auth": {
+			"web-subtitle": "Firestoneのウェブサイトにサインイン"
+		},
+		"contribute": {
+			"admin": {
+				"action-contributor-added": "貢献者を追加",
+				"action-contributor-removed": "貢献者を削除",
+				"action-contributor-updated": "貢献者を更新",
+				"action-created": "作成",
+				"action-edited": "編集",
+				"action-restored": "復元",
+				"action-unpublished": "非公開",
+				"add": "+ 貢献者を追加",
+				"add-confirm": "追加",
+				"add-title": "貢献者を追加",
+				"added": "{{name}}が貢献できるようになりました。",
+				"admin-hint": "管理者はすべての内容を編集でき、貢献者を管理できます。",
+				"after": "変更後",
+				"all-content-types": "すべて",
+				"badge": "ヒントに表示するバッジ",
+				"before": "変更前",
+				"cancel": "キャンセル",
+				"col-account": "アカウント",
+				"col-action": "内容",
+				"col-actions": "操作",
+				"col-added": "追加日",
+				"col-content-types": "編集可",
+				"col-role": "役割",
+				"col-target": "対象",
+				"col-when": "日時",
+				"col-who": "実行者",
+				"confirm-remove": "{{name}}を削除しますか？公開済みのヒントは残りますが、編集はできなくなります。",
+				"confirm-restore": "この変更の前の内容にヒントを戻しますか？",
+				"confirm-restore-creation": "このヒントは以前は存在しませんでした。続行するとヒントが削除されます。続行しますか？",
+				"details": "変更の詳細",
+				"display-name": "ヒントに表示する名前",
+				"display-name-hint": "プレイヤーには、その人が書いたすべてのヒントの横にこの名前が表示されます。",
+				"edit": "編集",
+				"edit-title": "貢献者を編集",
+				"form-error-content-types": "編集できる項目を1つ以上選んでください。",
+				"form-error-exists": "このアカウントはすでに貢献者です（{{name}}）。既存の項目を編集してください。",
+				"form-error-link": "プロフィールリンクは https:// で始まる必要があります。",
+				"form-error-name": "ヒントに表示する名前を入力してください。",
+				"form-error-user-id": "アカウントIDを入力してください。",
+				"link": "プロフィールリンク",
+				"link-hint": "任意、ヒントに表示",
+				"loading": "貢献者とアクティビティを読み込み中…",
+				"nav-label": "管理者",
+				"no-activity": "まだ変更はありません。",
+				"no-badge": "なし",
+				"no-contributors": "まだ貢献者はいません。",
+				"nothing": "（なし）",
+				"remove": "削除",
+				"removed": "{{name}}を削除しました。",
+				"restore": "変更前の版に戻す",
+				"restore-creation": "このヒントを取り下げる",
+				"restored": "復元しました。アプリには数時間以内に反映されます。",
+				"role-admin": "管理者",
+				"role-author": "作者",
+				"save": "保存",
+				"soon": "近日",
+				"subtitle": "貢献者と履歴",
+				"tab-activity": "アクティビティ",
+				"tab-contributors": "貢献者 · {{value}}",
+				"title": "管理者",
+				"updated": "{{name}}を更新しました。",
+				"user-id": "アカウントID",
+				"user-id-hint": "プレイヤーは、ウェブサイトのアカウントメニューの「アカウントIDをコピー」で確認できます。",
+				"user-id-placeholder": "プレイヤーがアカウントメニューからコピーしたIDを貼り付け",
+				"view": "表示",
+				"you": "（あなた）"
 			},
-			"competitor": {
-				"body": "名前だけで十分です。",
-				"placeholder": "アプリ名",
-				"submit": "送信",
-				"title": "どのアプリに乗り換えますか？"
+			"comps": {
+				"nav-label": "構成"
 			},
-			"discord-cta": "Discordで連絡する",
-			"discord-lead": "まだ解決しませんか？",
-			"document-title": "Firestoneをアンインストール",
-			"faq": {
-				"body": "何も表示されない場合は、Overwolfの設定でハースストーンのオーバーレイを有効にするだけで直ることがほとんどです。下のFAQをご覧ください。",
-				"checklist": "FAQを開く",
-				"dismiss": "閉じる",
-				"title": "簡単な手順で直ることがほとんどです"
+			"errors": {
+				"audit_entry_not_found": "この変更はもう見つかりません。",
+				"contradictory_tribes": "同じ種族を「含む」と「含まない」の両方にはできません。",
+				"contributor_not_found": "この貢献者はすでに削除されています。",
+				"duplicate_variant": "このバリアントのヒントはすでにあります。そちらを編集してください。",
+				"generic": "公開できませんでした（{{code}}）。下書きはこの端末に残しています。",
+				"generic-admin": "処理できませんでした（{{code}}）。もう一度お試しください。",
+				"invalid_json": "リクエストの形式が正しくありません。",
+				"invalid_role": "不明な役割です。",
+				"invalid_token": "サインアウトされています。公開するには、もう一度サインインしてください。",
+				"invalid_url": "プロフィールリンクは https:// で始まる必要があります。",
+				"item_not_found": "このヒントはもう存在しません。",
+				"last_admin": "管理者は常に1人以上必要です。",
+				"network_error": "サーバーに接続できませんでした。接続を確認してもう一度お試しください。",
+				"not_a_contributor": "このアカウントはもうヒントを公開できません。",
+				"not_an_admin": "このアカウントはもう管理者ではありません。",
+				"not_configured": "現在、貢献機能は利用できません。",
+				"not_your_item": "このヒントは別の作者のものです。",
+				"required": "必須項目が空です。",
+				"signed_out": "サインアウトされています。公開するには、もう一度サインインしてください。",
+				"too_long": "このヒントは長すぎます。",
+				"unknown_content_type": "存在しないコンテンツタイプが含まれています。",
+				"unknown_hero": "このヒーローはバトルグラウンドのヒーローではありません。",
+				"unknown_hero_power": "このヒーローパワーはまだ登録されていません。",
+				"unknown_tribe": "バトルグラウンドの種族ではないものが含まれています。"
 			},
-			"page-subtitle": "よろしければ、アンインストールの理由を教えてください。数秒で終わります。",
-			"page-title": "ご利用ありがとうございました",
-			"premium": {
-				"body": "Premiumのサブスクリプションは広告を消し、追加のオーバーレイと統計を解放します。",
-				"cta": "Premiumを見る",
-				"dismiss": "結構です",
-				"title": "Premiumで広告がなくなります"
+			"hero-power-tips": {
+				"add-hero": "+ ヒーロー専用",
+				"add-lobby": "+ ロビー条件",
+				"basic-tip": "基本のヒント",
+				"confirm-delete": "このヒントを削除しますか？プレイヤーには表示されなくなります。",
+				"curve-3-on-3": "3オン3",
+				"curve-basic": "基本",
+				"curves": "カーブ",
+				"delete": "削除",
+				"deleted": "ヒントを削除しました。",
+				"details": "詳細",
+				"details-hint": "任意 · アプリのみ",
+				"details-placeholder": "いつ方針を変えるか、ショップで何を探すか",
+				"discard": "破棄",
+				"edit": "編集",
+				"filter-all": "すべて",
+				"filter-label": "フィルター",
+				"filter-none": "まだヒントなし",
+				"filter-update": "更新が必要",
+				"form-title-edit-basic": "基本のヒントを編集",
+				"form-title-edit-hero": "ヒーロー専用ヒントを編集",
+				"form-title-edit-lobby": "ロビー条件のヒントを編集",
+				"form-title-new-basic": "新しい基本のヒント",
+				"form-title-new-hero": "新しいヒーロー専用ヒント",
+				"form-title-new-lobby": "新しいロビー条件のヒント",
+				"hero": "ヒーロー",
+				"language": "言語",
+				"loading": "ヒントを読み込み中…",
+				"lobby": "ロビーの条件",
+				"lobby-has": "含む",
+				"lobby-lacks": "含まない",
+				"lobby-pick": "種族を1つ以上選んでください",
+				"lobby-summary-has": "これらの種族がすべてロビーにいるときに表示：{{tribes}}",
+				"lobby-summary-lacks": "これらの種族がいずれもロビーにいないときに表示：{{tribes}}",
+				"nav-label": "ヒーローパワーのヒント",
+				"no-variants": "バリアントはありません。ヒーローやロビーによってこのパワーの使い方が変わるときに追加してください。",
+				"optional": "任意",
+				"outdated-title": "パワーが変更されました。ヒント{{value}}件は以前のテキスト向けに書かれています",
+				"pick-power": "ヒーローパワーを選ぶか、Ctrl+Kを押してください",
+				"power-changed": "パッチ{{patch}} - パワーが変更されました",
+				"power-count": "ヒーローパワー {{shown}} / {{total}}",
+				"powers-label": "ヒーローパワー",
+				"preview": "プレビュー",
+				"preview-app": "アプリ",
+				"preview-app-colors": "アプリの配色",
+				"preview-empty": "ヒントはここに表示されます",
+				"preview-game": "ゲーム内",
+				"preview-panel-title": "Firestoneのヒント",
+				"published": "ヒントを公開しました。数時間以内にアプリへ反映されます。",
+				"rewrite": "現在のテキストに合わせて書き直す",
+				"save": "保存して公開",
+				"search-label": "ヒーローパワーを検索",
+				"search-placeholder": "パワー、ヒーロー、カードテキスト",
+				"status-count": "ヒント{{value}}件",
+				"status-draft-kept": "下書きはこの端末に残しています",
+				"status-draft-saved": "下書きを端末に保存 · {{time}}",
+				"status-editing": "公開済みのヒントを編集中",
+				"status-new": "新しい下書き",
+				"status-none": "まだヒントなし",
+				"status-published": "公開済み",
+				"status-publishing": "公開中…",
+				"status-restored": "未保存の下書きを復元しました",
+				"status-update": "更新が必要",
+				"subtitle": "バトルグラウンドでヒーローパワーにマウスを重ねると表示されるヒント",
+				"tip": "ヒント",
+				"tip-hint": "ゲーム内とアプリに表示",
+				"tip-placeholder": "このパワーをどう使うとよいですか？",
+				"title": "ヒーローパワーのヒント",
+				"used-by": "使用者：{{heroes}}",
+				"variant-hero": "{{hero}}のみ",
+				"variant-lobby-empty": "ロビー条件",
+				"variant-lobby-has": "ロビーに{{tribes}}",
+				"variant-lobby-lacks": "ロビーに{{tribes}}なし",
+				"variants": "バリアント",
+				"variants-hint": "条件に合うとき、基本のヒントの代わりに表示されます",
+				"write-basic": "+ 基本のヒントを書く",
+				"write-basic-hint": "プレイヤーがこのパワーにマウスを重ねるたびに表示されます",
+				"your-tips": "あなたのヒント",
+				"your-tips-hint": "ここに表示されるのはあなただけです。"
 			},
-			"reasons-label": "主な理由を選んでください。",
-			"reasons": {
-				"ads": "広告が邪魔だった",
-				"bugs": "不具合が多すぎた",
-				"competitor": "別のデスクトップアプリに乗り換える",
-				"didnt-work": "まったく動かなかった",
-				"not-useful": "役に立たなかった",
-				"other": "その他",
-				"overwolf": "アプリは気に入っていたが、Overwolfは使いたくない",
-				"performance": "パフォーマンスに問題があった",
-				"reinstall": "問題があり、直すためにアンインストールする",
-				"stopped-playing": "ハースストーンをやめた"
+			"nav-label": "貢献",
+			"trinkets": {
+				"nav-label": "装飾品"
 			},
-			"standalone": {
-				"body": "Overwolfが不要な版があります。まだクローズドベータですが、同じFirestoneです。デッキリスト、オーバーレイ、その他の機能が含まれます。試しますか？",
-				"cta": "Firestone Standaloneをダウンロード",
-				"dismiss": "結構です",
-				"title": "OverwolfなしのFirestone"
-			},
-			"thanks": {
-				"body": "またいつでもお待ちしています。連絡先を残した場合は、できるだけ早くご返信します。",
-				"title": "教えていただきありがとうございます"
+			"unavailable": {
+				"body": "貢献は承認されたアカウントのみ利用できます。貢献者になるには、アカウントメニューのアカウントIDをFirestoneチームまで送ってください。",
+				"home": "Firestoneに戻る",
+				"title": "このセクションはお使いのアカウントでは利用できません"
 			}
 		},
-		"constructed": {
-			"assemble": "合成",
-			"assemble-appearance-rate": "出現",
-			"assemble-appearance-rate-hint": "この選択肢が提示された頻度",
-			"assemble-base": "ベース",
-			"assemble-error": "合成プールを読み込めませんでした。後でもう一度お試しください。",
-			"assemble-left": "左",
-			"assemble-loading": "読み込み中...",
-			"assemble-pick-rate": "選択",
-			"assemble-pick-rate-hint": "提示されたときに選ばれた頻度",
-			"assemble-right": "右",
-			"cards": "カード"
-		}
-	},
-	"androidDeckTracker": {
-		"onboarding": {
-			"closeApp": "Firestoneを閉じる",
-			"closeAppNote": "記録を停止し、通知を消します。スマートフォンからアプリを強制終了しても、その操作自体の通知は送れません。",
-			"discord": "Discord",
-			"pairEnter": "コードを入力",
-			"pairInputLabel": "6桁のコード",
-			"pairReady": "「コードを入力」をタップしてください。この通知に開く欄へ6桁を入力します。コードが送信されるまでFirestoneに戻らないでください。",
-			"reportButton": "報告を送信",
-			"reportFailed": "報告を送信できませんでした。オンラインのときに再度お試しください。",
-			"reportHint": "何が問題でしたか？",
-			"reportSending": "報告を送信しています…",
-			"reportSent": "報告を送信しました。ありがとうございます。",
-			"reportTitle": "不具合を報告",
-			"stepDeveloperStillOff": "開発者オプションはまだオフです。「続行」をタップし、端末情報画面で「ビルド番号」を7回タップしてください。",
-			"stepWifi": "「続行」をタップしてください。Wi-Fiに接続してから戻ってください。Wi-Fiがないとワイヤレスデバッグはオンにできません。",
-			"stepWifiTitle": "Wi-Fiに接続",
-			"website": "ウェブサイト"
-		},
-		"overlay": {
-			"format": {
-				"classic": "クラシック",
-				"twist": "ツイスト",
-				"wild": "ワイルド"
+		"downloads": {
+			"hero": {
+				"badge": "最も安定したバージョン",
+				"cta": "Firestoneをダウンロード",
+				"step-1-title": "インストール",
+				"step-2-text": "いつも通りゲームを起動します。",
+				"step-2-title": "ハースストーンを起動",
+				"step-3-text": "Firestoneが自動で記録を始めます。",
+				"step-3-title": "プレイ"
 			},
-			"league": {
-				"bronze": "ブロンズ",
-				"diamond": "ダイヤモンド",
-				"gold": "ゴールド",
-				"platinum": "プラチナ",
-				"silver": "シルバー"
-			},
-			"mode": {
-				"arena": "闘技場",
-				"arenaUnderground": "地下闘技場",
-				"battlegrounds": "バトルグラウンド",
-				"battlegroundsDuo": "バトルグラウンド・デュオ",
-				"battlegroundsFriendly": "バトルグラウンド",
-				"casual": "カジュアル",
-				"friendly": "フレンド対戦",
-				"legend": "レジェンド",
-				"mercenaries": "マーセナリーズ",
-				"practice": "練習",
-				"ranked": "ランク戦",
-				"tavernBrawl": "酒場の喧嘩",
-				"unknown": "対戦"
-			},
-			"readerAttached": "未接続",
-			"readerLogs": "ログなし",
-			"readerSetup": "未設定",
-			"readerTracking": "記録中",
-			"restartText": "Firestoneは、ハースストーンが起動時にだけ読み込む設定を元に戻しました。対戦の記録を続けるには、ハースストーンを完全に終了してから開き直してください。",
-			"restartTitle": "ハースストーンを再起動"
+			"standalone": {
+				"skip": "Overwolfをスキップしますか？"
+			}
 		}
 	},
 	"app": {
-		"replays": {
-			"replay-info": {
-				"played-on-mobile": "モバイルでプレイ"
+		"battlegrounds": {
+			"hero-power-tips": {
+				"variant-hero": "{{hero}}のみ"
 			}
 		},
-		"battlegrounds": {
-			"compositions": {
-				"loading-example-boards": "サンプル盤面を読み込み中"
+		"replay-viewer": {
+			"action-view": {
+				"deck-change": "デッキ {{before}} → {{after}} · {{cost}}マナ",
+				"top-taken": "前半を採用",
+				"turn-source": "ターン{{turn}} · {{source}}"
+			},
+			"bg": {
+				"anomaly": "異常",
+				"combat": "戦闘",
+				"combat-details": "手順",
+				"combat-end": "終了",
+				"combat-start": "開始",
+				"combat-summary": "概要",
+				"combat-vs": "{{hero}}との戦闘",
+				"damage": "{{n}}ダメージ",
+				"discover": "発見",
+				"eliminated": "脱落",
+				"empty-board": "盤面にミニオンはいません",
+				"empty-shop": "バーテンダー・ボブは何も売っていません",
+				"end": "終了",
+				"events": "イベント",
+				"game-info": "試合情報",
+				"gold": "ゴールド",
+				"health-graph": "プレイヤーの体力",
+				"hero-selection": "ヒーロー選択",
+				"mmr": "レート",
+				"picked": "選択",
+				"place": {
+					"1": "1位",
+					"2": "2位",
+					"3": "3位",
+					"4": "4位",
+					"5": "5位",
+					"6": "6位",
+					"7": "7位",
+					"8": "8位"
+				},
+				"recruit": "雇用",
+				"result": {
+					"lost": "負け",
+					"tied": "引き分け",
+					"won": "勝ち"
+				},
+				"round": "ラウンド{{n}}",
+				"rounds": "ラウンド",
+				"run": "ラウンド",
+				"tavern-opens": "ラウンド{{n}}：酒場が開く",
+				"tier": "酒場レベル",
+				"tribes": "この試合の種族",
+				"versus": "対"
+			},
+			"hero-strip": {
+				"locked": "{{count}}ロック",
+				"playing": "プレイ中"
+			},
+			"momentum": {
+				"title": "試合の流れ"
+			},
+			"story-panel": {
+				"filter": "ストーリーを絞り込む",
+				"hint": "行をクリックすると、その位置に移動します",
+				"key-moments": "重要な場面",
+				"title": "イベント",
+				"turn-title": "ターン{{turn}} · {{side}}"
+			},
+			"story": {
+				"a-card": "カード",
+				"a-card-capitalized": "カード",
+				"a-secret": "秘策",
+				"badge": {
+					"choice": "選択",
+					"forge": "鍛造",
+					"trade": "交換"
+				}
+			},
+			"turn": {
+				"opponent": "対戦相手のターン"
+			},
+			"view-toggle": {
+				"action": "アクション表示",
+				"board": "盤面",
+				"label": "表示"
 			}
 		}
 	},
 	"counters": {
-		"aqir-goliath": {
-			"player": "このターンにコンボカードを{{value}}枚プレイしました。アキール・ゴリアテのコストが{{reduction}}下がります"
-		},
-		"broodqueen-shakar": {
-			"player": "このターンにあと{{value}}体の味方ミニオンが死亡する必要があります"
-		},
-		"colossus-of-the-cold": {
-			"player": "冷気の巨像の凍結が解けるまでに、スペルへ使うマナがあと{{value}}必要です（{{spent}}消費済み）"
-		},
-		"cthun-abilities": {
-			"player": "この対戦でクトゥーンの能力を4つのうち{{value}}個発動しました",
-			"opponent": "この対戦で相手はクトゥーンの能力を4つのうち{{value}}個発動しました"
-		},
-		"ghuun-blood-runes": {
-			"player": "この対戦で血のルーンを{{value}}個プレイしました"
-		},
 		"nzoth-dreams-end": {
-			"player": "この対戦で断末魔ミニオンを{{value}}体召喚しました。ンゾス、夢の終わりのコストは{{cost}}です"
+			"opponent": "対戦相手はこの試合中、断末魔ミニオンを{{value}}体召喚した。「夢の終焉ン=ゾス」のコストは{{cost}}"
 		},
-		"yshaarj-titan-bane": {
-			"player": "この対戦でミニオンに使うマナがあと{{value}}必要です（{{spent}}消費済み）"
+		"crash-of-thunder": {
+			"player": "このターンに自然呪文を{{value}}枚使用した。「雷鳴の轟き」のコストは{{cost}}"
 		},
-		"bgs-tavern-spells-cast": {
-			"player": "この試合中、酒場の呪文を{{value}}回使用した"
+		"hodir": {
+			"opponent": "対戦相手が次にプレイするミニオン{{value}}体は8/8になる",
+			"player": "次に自分がプレイするミニオン{{value}}体は8/8になる"
+		},
+		"therazane": {
+			"opponent": "対戦相手が次に使うこれら{{value}}系統の呪文は2回発動する：{{schools}}",
+			"player": "次に自分が使うこれら{{value}}系統の呪文は2回発動する：{{schools}}"
 		}
 	},
 	"bgs-comp": {
-		"dragon_spell_power": "呪文ダメージドラゴン",
-		"elemental_azerite": "アゼライトエレメンタル",
-		"elemental_tempest": "テンペストエレメンタル",
-		"mech_apm": "APMメカ",
-		"quilboar_felboar_spam": "フェルボア連打キルボア"
+		"murloc_end_of_turn": "ターン終了時マーロック",
+		"quilboar_gem_spam": "宝石連打キルボア",
+		"undead_apm": "APMアンデッド",
+		"undead_eternal_knight": "永劫の騎士アンデッド"
 	},
-	"global": {
-		"mechanics": {
-			"cards_discarded_this_game": "破棄"
+	"archetype": {
+		"ammunae-druid": "アムネイドルイド",
+		"ammunae-nzoth-druid": "アムネインゾスドルイド",
+		"armor-warrior": "装甲ウォリアー",
+		"bbb-nzoth-handbuff-dk": "赤ンゾスハンドバフデスナイト",
+		"beast-attack-druid": "獣攻撃ドルイド",
+		"beast-druid": "獣ドルイド",
+		"bfu-nzoth-handbuff-dk": "レインボーンゾスハンドバフデスナイト",
+		"cthun-dh": "クトゥーンデーモンハンター",
+		"cthun-druid": "クトゥーンドルイド",
+		"cthun-priest": "クトゥーンプリースト",
+		"cthun-shaman": "クトゥーンシャーマン",
+		"cthun-warlock": "クトゥーンウォーロック",
+		"dragon-mage": "ドラゴンメイジ",
+		"dragon-warlock": "ドラゴンウォーロック",
+		"harold-cthun-warlock": "Haroldクトゥーンウォーロック",
+		"holy-paladin": "神聖パラディン",
+		"j-Lock": "Jウォーロック",
+		"mech-hunter": "メカハンター",
+		"medivh-priest": "メディヴプリースト",
+		"nzoth-druid": "ンゾスドルイド",
+		"nzoth-hunter": "ンゾスハンター",
+		"nzoth-mech-hunter": "ンゾスメカハンター",
+		"nzoth-priest": "ンゾスプリースト",
+		"nzoth-rogue": "ンゾスローグ",
+		"nzoth-warlock": "ンゾスウォーロック",
+		"nzoth-warrior": "ンゾスウォリアー",
+		"summoner-mage": "召喚師メイジ",
+		"void-cthun-dh": "虚無クトゥーンデーモンハンター",
+		"yogg-paladin": "ヨグパラディン",
+		"yshaarj-warrior": "ヤシャラージュウォリアー",
+		"zee-cthun-shaman": "ジークトゥーンシャーマン"
+	},
+	"battlegrounds": {
+		"in-game": {
+			"dark-gifts": {
+				"reason": {
+					"relentless-deflector": "「容赦なきディフレクター」には「忍びやか」は提示されない"
+				}
+			}
 		}
 	}
 }

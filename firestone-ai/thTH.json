@@ -17,6 +17,9 @@
 					"label": "ตารางพลังฮีโร่",
 					"tooltip": "แสดงตารางอัตราชนะตามคู่ของอาชีพและพลังฮีโร่"
 				}
+			},
+			"menu": {
+				"cards": "การ์ด"
 			}
 		},
 		"battlegrounds": {
@@ -31,6 +34,15 @@
 					"example-boards-locked-tooltip": "สมัครพรีเมียมเพื่อดูตัวอย่างบอร์ด MMR สูงว่าคอมป์เหล่านี้หน้าตาเป็นอย่างไรตอนจบเกม"
 				},
 				"loading-example-boards": "กำลังโหลดกระดานตัวอย่าง"
+			},
+			"hero-power-tips": {
+				"title": "เคล็ดลับ Firestone",
+				"variant-hero": "เฉพาะ {{hero}}",
+				"variant-lobby-has": "ล็อบบี้มี {{tribes}}",
+				"variant-lobby-lacks": "ล็อบบี้ไม่มี {{tribes}}"
+			},
+			"strategies": {
+				"outdated": "เขียนไว้สำหรับพลังฮีโร่เวอร์ชันเก่า"
 			}
 		},
 		"decktracker": {
@@ -52,6 +64,13 @@
 					"today": "วันนี้",
 					"today-tooltip": "เกมที่เล่นตั้งแต่เที่ยงคืนตามเวลาท้องถิ่น"
 				}
+			},
+			"menu": {
+				"cards-header": "การ์ด"
+			},
+			"meta": {
+				"load-error": "ตรวจการเชื่อมต่อ แล้วลองอีกครั้ง",
+				"load-error-title": "โหลดสถิติชุดนี้ไม่ได้"
 			}
 		},
 		"lottery": {
@@ -114,6 +133,356 @@
 				"message": "ดาวน์โหลด Firestone เวอร์ชันใหม่ ({{version}}) แล้ว",
 				"restart": "รีสตาร์ท",
 				"title": "อัปเดต Firestone"
+			}
+		},
+		"cards": {
+			"back-to-assemble": "การ์ด Assemble ทั้งหมด",
+			"back-to-discover": "การ์ดค้นพบทั้งหมด",
+			"stats": "สถิติ"
+		},
+		"feature-spotlights": {
+			"cardTooltipUseCanvasFallback": {
+				"blurb": "เมื่อภาพการ์ดโหลดไม่สำเร็จ จะวาดการ์ดขึ้นมาแทน ปิดไว้เป็นค่าเริ่มต้น",
+				"title": "วาดภาพการ์ดที่โหลดไม่ได้"
+			},
+			"cardsDiscoverAssembleTabs": {
+				"blurb": "หน้าสร้างเด็คและสังเวียนมีแท็บการ์ด พร้อมสถิติค้นพบและ Assemble กรองพูล Assemble ตามอาชีพได้",
+				"title": "สถิติค้นพบและ Assemble"
+			},
+			"opponentGhuunBloodRunesCounter": {
+				"blurb": "แสดงว่า G'huun ของคู่ต่อสู้ดูดพลังชีวิตไปเท่าไร ปิดไว้เป็นค่าเริ่มต้น",
+				"title": "ตัวนับพลังชีวิต G'huun ของคู่ต่อสู้"
+			},
+			"opponentHodirCounter": {
+				"blurb": "แสดงว่า Hodir, Father of Giants ของคู่ต่อสู้ยังปรับมินเนียนเป็น 8/8 ได้อีกกี่ครั้ง",
+				"title": "ตัวนับ Hodir ของคู่ต่อสู้"
+			},
+			"opponentNzothDreamsEndCounter": {
+				"blurb": "แสดงจำนวนมินเนียนเสียงสุดท้ายที่คู่ต่อสู้อัญเชิญ และค่าใช้จ่ายปัจจุบันของ N'Zoth",
+				"title": "ตัวนับ N'Zoth, จุดจบแห่งฝัน ของคู่ต่อสู้"
+			},
+			"playerHodirCounter": {
+				"blurb": "แสดงว่า Hodir, Father of Giants ยังปรับมินเนียนเป็น 8/8 ได้อีกกี่ครั้ง",
+				"title": "ตัวนับ Hodir"
+			},
+			"replayViewerV2": {
+				"blurb": "ดูรีเพลย์เกมสร้างเด็คในตัวดูใหม่ พร้อมจังหวะสำคัญ สนาม และรายการเด็ค สลับกลับไปตัวดูแบบเดิมได้",
+				"title": "ตัวดูรีเพลย์เกมสร้างเด็คแบบใหม่"
+			}
+		},
+		"replay-viewer": {
+			"action-view": {
+				"added-to-hand": "เข้ามือ",
+				"added-to-their-hand": "เข้ามือคู่ต่อสู้",
+				"added-to-your-hand": "เข้ามือคุณ",
+				"after": "หลัง",
+				"base": "พื้นฐาน",
+				"before": "ก่อน",
+				"bottom-taken": "ใช้ครึ่งล่างแล้ว",
+				"choice-tag": "ตัวเลือก · {{kind}}",
+				"decided": "ตัดสินใจใน {{seconds}} วิ",
+				"deck-change": "เด็ค {{before}} เป็น {{after}} · มานา {{cost}}",
+				"drawn": "จั่วแล้ว",
+				"end-of-game": "จบเกม",
+				"forged": "หล่อหลอมแล้ว",
+				"from-their-hand": "จากมือคู่ต่อสู้",
+				"from-your-hand": "จากมือคุณ",
+				"half": {
+					"first": "ครึ่งแรก",
+					"second": "ครึ่งหลัง"
+				},
+				"kind": {
+					"adapt": "ปรับตัว",
+					"assemble": "Assemble",
+					"choose-one": "เลือกหนึ่งอย่าง",
+					"discover": "ค้นพบ",
+					"dredge": "ขุด"
+				},
+				"left-option": "ตัวเลือกซ้าย",
+				"not-picked": "ไม่ได้เลือก",
+				"not-used": "ไม่ได้ใช้",
+				"opponent-forged": "คู่ต่อสู้หล่อหลอมการ์ด",
+				"opponent-offered": "คู่ต่อสู้ได้รับตัวเลือก",
+				"opponent-traded": "คู่ต่อสู้แลกการ์ด",
+				"other-option": "ตัวเลือกอื่น",
+				"picked": "เลือกแล้ว",
+				"picked-option": "ตัวเลือกที่เลือก",
+				"progress": "ขั้น {{position}} จาก {{count}} · {{elapsed}} / {{total}}",
+				"restart": "เริ่มเล่นใหม่จากมัลลิแกน",
+				"result-label": "ผล",
+				"result": {
+					"conceded": "ยอมแพ้",
+					"defeat": "แพ้",
+					"tie": "เสมอ",
+					"victory": "ชนะ"
+				},
+				"right-option": "ตัวเลือกขวา",
+				"shuffled": "สับเข้าเด็ค",
+				"side-option": "ตัวเลือกด้านข้าง",
+				"stat": {
+					"duration": "ระยะเวลา",
+					"turns": "เทิร์น"
+				},
+				"top-taken": "ใช้ครึ่งบนแล้ว",
+				"turn": "เทิร์น {{turn}}",
+				"turn-source": "เทิร์น {{turn}} · {{source}}",
+				"watch-key-moments": "ดูจังหวะสำคัญ {{count}} จุด",
+				"you-forged": "คุณหล่อหลอมการ์ด",
+				"you-offered": "คุณได้รับตัวเลือก",
+				"you-traded": "คุณแลกการ์ด"
+			},
+			"banner": {
+				"back-to-old": "กลับไปใช้ตัวดูแบบเดิม",
+				"new-viewer": "คุณกำลังใช้ตัวดูรีเพลย์แบบใหม่"
+			},
+			"bg": {
+				"anomaly": "ความผิดปกติ",
+				"combat": "ต่อสู้",
+				"combat-details": "ทีละขั้น",
+				"combat-end": "จบ",
+				"combat-start": "เริ่ม",
+				"combat-summary": "สรุป",
+				"combat-vs": "สู้กับ {{hero}}",
+				"damage": "ความเสียหาย {{n}}",
+				"discover": "ค้นพบ",
+				"eliminated": "ตกรอบ",
+				"empty-board": "ไม่มีมินเนียนบนสนาม",
+				"empty-shop": "Bob ไม่มีของจะขาย",
+				"end": "จบ",
+				"events": "เหตุการณ์",
+				"game-info": "ข้อมูลเกม",
+				"gold": "ทอง",
+				"health-graph": "พลังชีวิตผู้เล่น",
+				"hero-selection": "เลือกฮีโร่",
+				"mmr": "เรตติ้ง",
+				"picked": "เลือกแล้ว",
+				"place": {
+					"1": "ที่ 1",
+					"2": "ที่ 2",
+					"3": "ที่ 3",
+					"4": "ที่ 4",
+					"5": "ที่ 5",
+					"6": "ที่ 6",
+					"7": "ที่ 7",
+					"8": "ที่ 8"
+				},
+				"recruit": "รับสมัคร",
+				"result": {
+					"lost": "แพ้",
+					"tied": "เสมอ",
+					"won": "ชนะ"
+				},
+				"round": "รอบที่ {{n}}",
+				"rounds": "รอบ",
+				"run": "รอบ",
+				"tavern-opens": "รอบที่ {{n}}: โรงเตี๊ยมเปิด",
+				"tier": "ระดับโรงเตี๊ยม",
+				"tribes": "เผ่าในเกมนี้",
+				"versus": "พบ"
+			},
+			"coming-soon": {
+				"text": "ยังดูรีเพลย์สนามรบและทหารรับจ้างบนมือถือไม่ได้ เปิดหน้านี้บนคอมพิวเตอร์เพื่อรับชม",
+				"title": "เวอร์ชันมือถือกำลังจะมา"
+			},
+			"common": {
+				"close": "ปิด",
+				"download-xml": "ดาวน์โหลด XML"
+			},
+			"decklists": {
+				"cards": "การ์ด {{count}} ใบ",
+				"code-copied": "คัดลอกโค้ดเด็คแล้ว",
+				"copy-code": "คัดลอกโค้ดเด็ค",
+				"export": "ส่งออกเด็ค",
+				"no-opponent-card": "รีเพลย์นี้ไม่มีการ์ดของคู่ต่อสู้ให้ดู",
+				"seen": "เห็นแล้ว {{count}} จาก 30",
+				"unknown-deck": "ยังไม่รู้เด็คของผู้เล่นในรีเพลย์นี้"
+			},
+			"error": {
+				"damaged": "ไฟล์เสียหาย หรือการเชื่อมต่อขาดขณะโหลด",
+				"missing": "รีเพลย์นี้ไม่มีอยู่แล้ว หรือลิงก์ไม่ถูกต้อง",
+				"title": "เล่นรีเพลย์นี้ไม่ได้",
+				"try-again": "ลองอีกครั้ง",
+				"unsupported": "ตัวดูยังไม่รองรับโหมดเกมนี้"
+			},
+			"header": {
+				"age": {
+					"just-now": "เมื่อสักครู่"
+				},
+				"class": {
+					"deathknight": "อัศวินมรณะ",
+					"demonhunter": "นักล่าปีศาจ"
+				},
+				"copy-link": "คัดลอกลิงก์ถึงช่วงนี้",
+				"decklists": "รายการเด็ค",
+				"duration": {
+					"hours": "{{hours}} ชม. {{minutes}} นาที",
+					"minutes": "{{value}} นาที",
+					"seconds": "{{value}} วิ"
+				},
+				"firestone-hint": "ถ้าไม่มีอะไรเกิดขึ้น ให้ตรวจว่าติดตั้ง Firestone แล้ว และโปรแกรมกำลังทำงาน",
+				"format": {
+					"classic": "คลาสสิก",
+					"standard": "มาตรฐาน",
+					"twist": "ทวิสต์",
+					"wild": "ไวลด์"
+				},
+				"link-copied": "คัดลอกลิงก์แล้ว",
+				"mode": {
+					"arena": "สังเวียน",
+					"arena-underground": "สังเวียนใต้ดิน",
+					"battlegrounds": "สนามรบ",
+					"casual": "ปกติ",
+					"duels": "ดวล",
+					"friendly": "มิตรภาพ",
+					"practice": "ฝึกซ้อม",
+					"ranked": "จัดอันดับ",
+					"tavern-brawl": "ศึกโรงเตี๊ยม"
+				},
+				"rank": {
+					"legend": "ตำนาน",
+					"legend-number": "ตำนาน #{{rank}}"
+				},
+				"result": {
+					"defeat": "แพ้",
+					"tie": "เสมอ",
+					"victory": "ชนะ"
+				},
+				"share": "แชร์รีเพลย์",
+				"shortcut": {
+					"play-pause": "เล่น / หยุดชั่วคราว",
+					"speed": "เปลี่ยนความเร็ว",
+					"step": "ขั้นก่อนหน้า / ขั้นถัดไป",
+					"turn": "เทิร์นก่อนหน้า / เทิร์นถัดไป",
+					"view": "สลับระหว่างสนามกับมุมมองแอ็กชัน"
+				},
+				"shortcuts": "ปุ่มลัด",
+				"turns": "{{count}} เทิร์น",
+				"versus": "{{mine}} พบ {{opponent}}",
+				"view-in-firestone": "ดูในไคลเอนต์ HS"
+			},
+			"hero-strip": {
+				"corpses": "ศพ",
+				"deck": "เด็ค",
+				"locked": "ล็อก {{count}}",
+				"mana": "มานา",
+				"overload": "โอเวอร์โหลด {{count}} เทิร์นหน้า",
+				"playing": "กำลังเล่น",
+				"quest": "เควสต์",
+				"secret": "กับดัก ?",
+				"spell-damage": "ความเสียหายเวท +{{amount}}"
+			},
+			"loading": {
+				"label": "กำลังเตรียมรีเพลย์ของคุณ",
+				"parsing": "กำลังอ่านข้อมูลรีเพลย์",
+				"preparing": "กำลังเตรียมรีเพลย์",
+				"progress": "กำลังเตรียมรีเพลย์ของคุณ · เทิร์น {{turn}} จาก {{total}}"
+			},
+			"minion": {
+				"ability-available": "ใช้ได้",
+				"ability-used": "ใช้แล้ว",
+				"old-god-abilities": "ความสามารถของเทพโบราณ"
+			},
+			"momentum": {
+				"chart": "พลังชีวิตฮีโร่และความแข็งแกร่งของสนามตลอดเกม",
+				"key-moment": "จังหวะสำคัญ {{number}}: {{label}}",
+				"title": "โมเมนตัมของเกม",
+				"turn": "เทิร์น"
+			},
+			"mulligan": {
+				"coin": "จั่วได้เหรียญ",
+				"replaced": "เปลี่ยนแล้ว"
+			},
+			"stage": {
+				"cast": "เวทที่ร่าย",
+				"deck-title": "{{name}} · เด็ค",
+				"enchantments": "ผลพิเศษ",
+				"keyword": {
+					"colossal": "ขนาดยักษ์",
+					"corrupt": "ครอบงำ",
+					"echo": "เสียงสะท้อน",
+					"infuse": "ซึมซับ",
+					"magnetic": "แม่เหล็ก",
+					"outcast": "ผ่าเหล่า",
+					"starship": "ยานอวกาศ",
+					"titan": "ไททัน",
+					"twinspell": "ทวิอาคม"
+				},
+				"never-revealed": "ยังไม่เคยเปิด",
+				"now-playing": "กำลังเล่นตอนนี้"
+			},
+			"story-panel": {
+				"empty": "ไม่มีอะไรให้แสดงกับตัวกรองนี้",
+				"everything": "ทั้งหมด",
+				"filter": "กรองเหตุการณ์",
+				"hint": "คลิกที่บรรทัดเพื่อกระโดดไปจุดนั้น",
+				"key-moments": "จังหวะสำคัญ",
+				"title": "เหตุการณ์",
+				"turn-title": "เทิร์น {{turn}} · {{side}}"
+			},
+			"story": {
+				"a-card": "การ์ดใบหนึ่ง",
+				"a-card-capitalized": "การ์ดใบหนึ่ง",
+				"a-secret": "กับดัก",
+				"badge": {
+					"choice": "ตัวเลือก",
+					"forge": "หล่อหลอม",
+					"trade": "แลกเปลี่ยน"
+				},
+				"cards-count": "การ์ด {{count}} ใบ",
+				"casts": "{{caster}} ร่าย {{spells}}",
+				"damage-to-targets": "ความเสียหาย {{amount}} ใส่ {{count}} เป้าหมาย",
+				"discover": "ค้นพบ",
+				"discover-from": "ค้นพบ: {{source}}",
+				"forged": "หล่อหลอม {{card}}",
+				"is-forged": "{{card}} ถูกหล่อหลอม",
+				"key-moment": {
+					"big-hit": "โจมตีหนัก",
+					"board-wipe": "เคลียร์สนาม",
+					"secret": "เปิดกับดัก",
+					"swing": "พลิกสถานการณ์"
+				},
+				"lethal": "จบเกม",
+				"mana-change": "มานาจาก {{before}} เป็น {{after}}",
+				"mulligan-done": "มัลลิแกนเสร็จ",
+				"mulligan": {
+					"kept-all": "{{who}} เก็บไว้ครบ {{count}} ใบ",
+					"kept-replaced": "{{who}} เก็บ {{kept}} เปลี่ยน {{replaced}}",
+					"replaced": "{{who}} เปลี่ยน {{replaced}}",
+					"replaced-all": "{{who}} เปลี่ยนทิ้งครบ {{replaced}}",
+					"title": "มัลลิแกน"
+				},
+				"opponent": "คู่ต่อสู้",
+				"picked": "เลือก {{cards}}",
+				"plays": "{{who}} เล่น {{what}}",
+				"secret-revealed": "เปิดกับดัก: {{secret}}",
+				"source-dealing": "{{source}} สร้างความเสียหาย {{damage}}",
+				"source-deals": "{{source}} สร้างความเสียหาย {{damage}}",
+				"trade-cost": "1 มานา",
+				"traded": "แลก {{card}} เป็นการ์ดใบใหม่",
+				"turn": "เทิร์น {{turn}}",
+				"turn-mana": "มานา {{mana}}",
+				"turn-steps": "{{count}} ขั้น",
+				"you": "คุณ"
+			},
+			"transport": {
+				"change-speed": "เปลี่ยนความเร็วการเล่น",
+				"copy-link": "คัดลอกลิงก์ถึงช่วงนี้",
+				"next-step": "ขั้นถัดไป (Right)",
+				"next-turn": "เทิร์นถัดไป (Ctrl + Right)",
+				"pause": "หยุดชั่วคราว (Space)",
+				"play": "เล่น (Space)",
+				"previous-step": "ขั้นก่อนหน้า (Left)",
+				"previous-turn": "เทิร์นก่อนหน้า (Ctrl + Left)",
+				"speed": "ความเร็ว {{speed}}x"
+			},
+			"turn": {
+				"mine": "เทิร์นของคุณ",
+				"opponent": "เทิร์นของคู่ต่อสู้"
+			},
+			"view-toggle": {
+				"action": "มุมมองแอ็กชัน",
+				"board": "สนาม",
+				"label": "มุมมอง"
 			}
 		}
 	},
@@ -319,7 +688,38 @@
 		"xl-questline-warrior": "XL Questline วอร์ริเออร์",
 		"xl-shudderwock-shaman": "XL Shudderwock แชมาน",
 		"xl-tog-dh": "XL Tog DH",
-		"xl-warlock": "XL วอร์ล็อค"
+		"xl-warlock": "XL วอร์ล็อค",
+		"ammunae-druid": "Ammunae ดรูอิด",
+		"ammunae-nzoth-druid": "Ammunae N'Zoth ดรูอิด",
+		"armor-warrior": "เกราะ วอร์ริเออร์",
+		"bbb-nzoth-handbuff-dk": "เลือด N'Zoth บัฟมือ อัศวินมรณะ",
+		"beast-attack-druid": "โจมตีสัตว์ ดรูอิด",
+		"beast-druid": "สัตว์ ดรูอิด",
+		"bfu-nzoth-handbuff-dk": "BFU N'Zoth บัฟมือ อัศวินมรณะ",
+		"cthun-dh": "C'Thun นักล่าปีศาจ",
+		"cthun-druid": "C'Thun ดรูอิด",
+		"cthun-priest": "C'Thun พรีสต์",
+		"cthun-shaman": "C'Thun แชมาน",
+		"cthun-warlock": "C'Thun วอร์ล็อค",
+		"dragon-mage": "มังกร เมจ",
+		"dragon-warlock": "มังกร วอร์ล็อค",
+		"harold-cthun-warlock": "Harold C'Thun วอร์ล็อค",
+		"holy-paladin": "ศักดิ์สิทธิ์ พาลาดิน",
+		"j-Lock": "J-วอร์ล็อค",
+		"mech-hunter": "เครื่องจักร นักล่า",
+		"medivh-priest": "Medivh พรีสต์",
+		"nzoth-druid": "N'Zoth ดรูอิด",
+		"nzoth-hunter": "N'Zoth นักล่า",
+		"nzoth-mech-hunter": "N'Zoth เครื่องจักร นักล่า",
+		"nzoth-priest": "N'Zoth พรีสต์",
+		"nzoth-rogue": "N'Zoth โร้ก",
+		"nzoth-warlock": "N'Zoth วอร์ล็อค",
+		"nzoth-warrior": "N'Zoth วอร์ริเออร์",
+		"summoner-mage": "ผู้อัญเชิญ เมจ",
+		"void-cthun-dh": "Void C'Thun นักล่าปีศาจ",
+		"yogg-paladin": "Yogg พาลาดิน",
+		"yshaarj-warrior": "Y'Shaarj วอร์ริเออร์",
+		"zee-cthun-shaman": "Zee C'Thun แชมาน"
 	},
 	"battlegrounds": {
 		"battle": {
@@ -331,7 +731,7 @@
 				"expired": "หมดอายุแล้ว",
 				"expires-soon": "ใกล้หมดอายุ",
 				"guaranteed": "รับประกัน",
-				"guaranteed-disabled-tooltip": "ตั้งแต่เทิร์น {{value}} มินเนี่ยนที่เสนอหนึ่งตัวจะเป็นประเภทที่คุณมีมากที่สุด",
+				"guaranteed-disabled-tooltip": "ตั้งแต่เทิร์น {{value}} คุณจะได้มินเนียนจากเผ่าที่คุณมีมากที่สุดแน่นอนหนึ่งตัว และตั้งแต่เทิร์น {{value2}} จะได้สองตัว",
 				"guaranteed-type": "ประเภทที่รับประกัน",
 				"has-condition": "ของขวัญนี้มีเงื่อนไขเพิ่ม ชี้ที่นี่เพื่อดูสาเหตุ หรือชี้ที่มินเนี่ยนเพื่อตรวจ",
 				"others": "อื่นๆ",
@@ -373,14 +773,15 @@
 					"stitched-salvager": "ไม่เสนอให้ Stitched Salvager",
 					"lobby-no-aberration": "เสนอเฉพาะเมื่อล็อบบี้มีอสูรวิปริต",
 					"requires-activate": "เสนอเฉพาะมินเนี่ยนเปิดใช้งาน",
-					"requires-discards-this-game": "ต้องมีการ์ดถูกทิ้งแล้วในเกมนี้"
+					"requires-discards-this-game": "ต้องมีการ์ดถูกทิ้งแล้วในเกมนี้",
+					"relentless-deflector": "จะไม่เสนอ Furtiveness เมื่อมี Relentless Deflector"
 				},
 				"restriction": {
 					"battlecry-before-5": "มินเนี่ยนโห่ร้องและเลือกหนึ่งจะไม่ถูกเสนอก่อนเทิร์น 5",
 					"battlecry-choose-one": "มินเนี่ยนโห่ร้องและเลือกหนึ่งรับได้เฉพาะ Double Vision, Replication, Gilding หรือ Echoing Voice",
 					"deathrattle-stats": "มินเนี่ยนเสียงสุดท้ายรับของขวัญเพิ่มสเตตัสได้เฉพาะ Sharpened Sword หรือ Death's Embrace",
 					"golemancy-salvager": "Golemancy ไม่สามารถเสนอให้ Stitched Salvager ได้",
-					"guaranteed-type": "ตั้งแต่เทิร์น 6 มินเนี่ยนที่เสนอสามตัวหนึ่งตัวจะเป็นประเภทที่คุณมีมากที่สุด",
+					"guaranteed-type": "ตั้งแต่เทิร์น {{value}} ร้านจะเสนอมินเนียนจากเผ่าที่คุณมีมากที่สุดให้คุณหนึ่งตัวแน่นอน และสองตัวตั้งแต่เทิร์น {{value2}}",
 					"lobby-bans": "Resistance และ Transcendence ถูกแบนในล็อบบี้มังกร Hostility ถูกแบนบนมินเนี่ยนมีพิษ Charisma ถูกแบนบนมินเนี่ยนเทียร์ 7",
 					"no-magnetic-sell-hand": "มินเนี่ยนแม่เหล็ก มินเนี่ยนที่มีเอฟเฟกต์เมื่อขาย และมินเนี่ยนที่ตั้งใจให้อยู่ในมือ ไม่สามารถรับของขวัญมืดได้",
 					"rarer-gifts": "Gilding, Persisting Horror, Titanic Strength และ Invulnerability หายากกว่าของขวัญอื่น",
@@ -490,7 +891,11 @@
 		"elemental_azerite": "ธาตุ Azerite",
 		"elemental_tempest": "ธาตุ Tempest",
 		"mech_apm": "เมค APM",
-		"quilboar_felboar_spam": "ควิลโบร์ Felboar สแปม"
+		"quilboar_felboar_spam": "ควิลโบร์ Felboar สแปม",
+		"murloc_end_of_turn": "เมอร์ล็อคจบเทิร์น",
+		"quilboar_gem_spam": "ควิลบอร์สแปมผลึก",
+		"undead_apm": "อันเดด APM",
+		"undead_eternal_knight": "อันเดด Eternal Knight"
 	},
 	"counters": {
 		"ancestral-automaton": {
@@ -652,16 +1057,29 @@
 			"opponent": "คู่ต่อสู้ของคุณเรียกใช้ความสามารถของ C'Thun ไปแล้ว {{value}} จาก 4 อย่างในเกมนี้"
 		},
 		"ghuun-blood-runes": {
-			"player": "คุณเล่นรูนเลือดไป {{value}} อันในเกมนี้"
+			"player": "G'huun ดูดพลังชีวิต {{value}} (เล่นรูนเลือดไปแล้ว {{runes}})",
+			"opponent": "G'huun ดูดพลังชีวิต {{value}} (เล่นรูนเลือดไปแล้ว {{runes}})"
 		},
 		"nzoth-dreams-end": {
-			"player": "คุณอัญเชิญมินเนียนเสียงสุดท้ายไป {{value}} ตัวในเกมนี้ N'Zoth, จุดจบแห่งฝัน ราคา {{cost}}"
+			"player": "คุณอัญเชิญมินเนียนเสียงสุดท้ายไป {{value}} ตัวในเกมนี้ N'Zoth, จุดจบแห่งฝัน ราคา {{cost}}",
+			"opponent": "คู่ต่อสู้อัญเชิญมินเนียนเสียงสุดท้ายไปแล้ว {{value}} ตัวในเกมนี้ N'Zoth, จุดจบแห่งฝัน ใช้ {{cost}} มานา"
 		},
 		"yshaarj-titan-bane": {
 			"player": "ต้องใช้มานากับมินเนียนอีก {{value}} ในเกมนี้ (ใช้ไป {{spent}})"
 		},
 		"bgs-tavern-spells-cast": {
 			"player": "คุณร่ายคาถาโรงเตี๊ยมไปแล้ว {{value}} ครั้งในเกมนี้"
+		},
+		"crash-of-thunder": {
+			"player": "คุณร่ายเวทธรรมชาติไปแล้ว {{value}} ใบในเทิร์นนี้ Crash of Thunder ใช้ {{cost}} มานา"
+		},
+		"hodir": {
+			"opponent": "มินเนียน {{value}} ตัวถัดไปที่คู่ต่อสู้เล่น จะถูกปรับเป็น 8/8",
+			"player": "มินเนียน {{value}} ตัวถัดไปที่คุณเล่น จะถูกปรับเป็น 8/8"
+		},
+		"therazane": {
+			"opponent": "เวทใบถัดไปของคู่ต่อสู้ใน {{value}} สำนักนี้จะร่ายสองครั้ง: {{schools}}",
+			"player": "เวทใบถัดไปของคุณใน {{value}} สำนักนี้จะร่ายสองครั้ง: {{schools}}"
 		}
 	},
 	"decktracker": {
@@ -674,7 +1092,9 @@
 			"main-attribute": "คุณสมบัติหลัก",
 			"mechanics": "กลไก",
 			"minion-type": "ประเภทมินเนี่ยน",
-			"minion-types": "ประเภทมินเนี่ยน"
+			"minion-types": "ประเภทมินเนี่ยน",
+			"attack": "พลังโจมตี",
+			"health": "พลังชีวิต"
 		},
 		"overlay": {
 			"mulligan": {
@@ -719,7 +1139,8 @@
 		"card-tooltip-assemble-pick": "เลือก",
 		"card-tooltip-assemble-pick-rate": "อัตราเลือก",
 		"card-tooltip-assemble-sort-by": "เรียงตาม",
-		"gift-reborn-from": "คืนชีพจาก <br/> {{value}}"
+		"gift-reborn-from": "คืนชีพจาก <br/> {{value}}",
+		"assembled-card": "ประกอบแล้ว: {{value}}"
 	},
 	"ftue": {
 		"experience": {
@@ -805,7 +1226,9 @@
 				"counter-deity-label": "เทพ",
 				"counter-deity-tooltip": "แสดงพลังโจมตีและพลังชีวิตของเทพของคุณ",
 				"counter-tavern-spells-cast-label": "คาถาโรงเตี๊ยมที่ร่าย",
-				"counter-tavern-spells-cast-tooltip": "แสดงจำนวนคาถาโรงเตี๊ยมที่คุณร่ายในเกมนี้"
+				"counter-tavern-spells-cast-tooltip": "แสดงจำนวนคาถาโรงเตี๊ยมที่คุณร่ายในเกมนี้",
+				"hero-power-tips-label": "เคล็ดลับพลังฮีโร่",
+				"hero-power-tips-tooltip": "เมื่อชี้ที่พลังฮีโร่ของคุณ จะแสดงเคล็ดลับที่ชุมชน Firestone เขียนไว้ให้พลังนั้น (พรีเมียม)"
 			}
 		},
 		"decktracker": {
@@ -849,7 +1272,15 @@
 					"flesh-giant-tooltip": "แสดงว่าพลังชีวิตฮีโร่ฝ่ายตรงข้ามเปลี่ยนกี่ครั้งในช่วงเทิร์นของพวกเขา เมื่อเล่นเป็น {{classes}}",
 					"herald-tooltip": "แสดงระดับ Herald ปัจจุบันของฝ่ายตรงข้าม",
 					"cthun-abilities-label": "ความสามารถของ C'Thun",
-					"cthun-abilities-tooltip": "แสดงว่าคู่ต่อสู้เรียกใช้ความสามารถทั้งสี่ของ C'Thun, ดวงตาแห่งจักรวรรดิไปแล้วกี่อย่าง เมื่อมีมันในมือ ในเด็ค หรือบนกระดาน"
+					"cthun-abilities-tooltip": "แสดงว่าคู่ต่อสู้เรียกใช้ความสามารถทั้งสี่ของ C'Thun, ดวงตาแห่งจักรวรรดิไปแล้วกี่อย่าง เมื่อมีมันในมือ ในเด็ค หรือบนกระดาน",
+					"cards-discarded-tooltip": "แสดงจำนวนการ์ดที่คู่ต่อสู้ทิ้งในเกมนี้",
+					"cthun-cost-label": "ค่าใช้จ่าย C'Thun",
+					"cthun-cost-tooltip": "แสดงว่าค่าใช้จ่ายของ C'Thun, ดวงตาแห่งจักรวรรดิ ลดลงเท่าไร",
+					"ghuun-blood-runes-label": "พลังชีวิต G'huun",
+					"ghuun-blood-runes-tooltip": "เมื่อคู่ต่อสู้เป็นอัศวินมรณะที่ใช้เด็คเลือดสามรูน และเล่นรูนเลือดอย่างน้อยหนึ่งอัน จะแสดงว่า G'huun ดูดพลังชีวิตไปเท่าไร (6 บวกรูนเลือดที่เล่นในเกมนี้)",
+					"hero-attacks-tooltip": "แสดงจำนวนครั้งที่ฮีโร่ของคู่ต่อสู้โจมตีในเกมนี้",
+					"nzoth-dreams-end-label": "N'Zoth, จุดจบแห่งฝัน",
+					"nzoth-dreams-end-tooltip": "เมื่อเปิดใช้ จะแสดงจำนวนมินเนียนเสียงสุดท้ายที่คู่ต่อสู้อัญเชิญ และค่าใช้จ่ายปัจจุบันของ N'Zoth, จุดจบแห่งฝัน หลังอัญเชิญไปแล้วอย่างน้อยหนึ่งตัว"
 				},
 				"extra-info-label": "เครื่องหมายข้อมูลเพิ่มเติม",
 				"extra-info-tooltip": "แสดงเครื่องหมายบนการ์ดในมือของคู่ต่อสู้เมื่อทราบข้อมูลเพิ่มเติม เช่น การลดค่าใช้จ่าย"
@@ -923,12 +1354,24 @@
 					"colossus-of-the-cold-tooltip": "เมื่อคุณมียักษ์แห่งความหนาวในมือหรือในเด็ค แสดงว่าต้องใช้มานากับเวทอีกเท่าไร",
 					"cthun-abilities-label": "ความสามารถของ C'Thun",
 					"cthun-abilities-tooltip": "เมื่อคุณมี C'Thun, ดวงตาแห่งจักรวรรดิในมือหรือในเด็ค แสดงว่าคุณเรียกใช้ความสามารถทั้งสี่ไปแล้วกี่อย่าง",
-					"ghuun-blood-runes-label": "รูนเลือดของ G'huun",
-					"ghuun-blood-runes-tooltip": "เมื่อคุณมี G'huun ในมือหรือในเด็ค แสดงว่าคุณเล่นรูนเลือดไปกี่อันในเกมนี้",
+					"ghuun-blood-runes-label": "พลังชีวิต G'huun",
+					"ghuun-blood-runes-tooltip": "เมื่อมี G'huun ในมือหรือในเด็ค จะแสดงว่า G'huun ดูดพลังชีวิตไปเท่าไร (6 บวกรูนเลือดที่เล่นในเกมนี้)",
 					"nzoth-dreams-end-label": "N'Zoth, จุดจบแห่งฝัน",
 					"nzoth-dreams-end-tooltip": "เมื่อคุณมี N'Zoth, จุดจบแห่งฝันในมือหรือในเด็ค แสดงจำนวนมินเนียนเสียงสุดท้ายที่คุณอัญเชิญ และค่าใช้จ่ายปัจจุบัน",
 					"yshaarj-titan-bane-label": "Y'Shaarj, หายนะแห่งไททัน",
-					"yshaarj-titan-bane-tooltip": "เมื่อคุณมี Y'Shaarj, หายนะแห่งไททันในมือหรือในเด็ค แสดงว่าต้องใช้มานากับมินเนียนอีกเท่าไร"
+					"yshaarj-titan-bane-tooltip": "เมื่อคุณมี Y'Shaarj, หายนะแห่งไททันในมือหรือในเด็ค แสดงว่าต้องใช้มานากับมินเนียนอีกเท่าไร",
+					"ancestral-automaton-tooltip": "แสดงจำนวนครั้งที่คุณอัญเชิญ Ancestral Automaton",
+					"crash-of-thunder-label": "Crash of Thunder",
+					"crash-of-thunder-tooltip": "เมื่อมี Crash of Thunder ในมือหรือในเด็ค จะแสดงว่าคุณร่ายเวทธรรมชาติไปกี่ใบในเทิร์นนี้",
+					"cthun-cost-label": "ค่าใช้จ่าย C'Thun",
+					"cthun-cost-tooltip": "แสดงว่าค่าใช้จ่ายของ C'Thun, ดวงตาแห่งจักรวรรดิ ลดลงเท่าไร",
+					"hodir-label": "Hodir",
+					"hodir-tooltip": "แสดงว่า Hodir, Father of Giants ยังปรับมินเนียนเป็น 8/8 ได้อีกกี่ตัว",
+					"specific-deaths": "แสดงจำนวนครั้งที่ {{cardName}} ตายให้ฝั่งคู่ต่อสู้",
+					"therazane-label": "Therazane",
+					"therazane-tooltip": "แสดงสำนักเวทที่เวทใบถัดไปจะร่ายสองครั้ง",
+					"ysondre-label": "Ysondre",
+					"ysondre-tooltip": "แสดงจำนวนครั้งที่ Ysondre ตายในเกมนี้"
 				},
 				"special-zones-label": "โซนพิเศษ",
 				"special-zones-tooltip": "เมื่อเปิด จะมีส่วนใหม่ในแทร็กเกอร์สำหรับการ์ดที่จัดการโดย Godfrey the Betrayer หรือ Irida Sinseeker"
@@ -1060,7 +1503,9 @@
 				"disable-low-memory-rendering-label": "ปิดการเรนเดอร์แบบประหยัดหน่วยความจำ",
 				"disable-low-memory-rendering-tooltip": "โดยค่าเริ่มต้น แอปเรนเดอร์หน้าต่างและโอเวอร์เลย์ด้วยบัฟเฟอร์กราฟิกที่เล็กกว่า ซึ่งประหยัดหน่วยความจำประมาณ 100 MB ในเกม เปิดตัวเลือกนี้ถ้าหน้าต่างหรือโอเวอร์เลย์ดูผิด หรือเลื่อนได้ไม่ดี มีผลเมื่อแอปเริ่มครั้งถัดไป",
 				"disable-overlay-shared-texture-label": "ปิดโอเวอร์เลย์ในเกมแบบเร็ว",
-				"disable-overlay-shared-texture-tooltip": "โดยค่าเริ่มต้น โอเวอร์เลย์ในเกมถูกส่งไปยังเกมโดยตรงผ่านการ์ดจอ ซึ่งใช้ CPU น้อยกว่ามาก เปิดตัวเลือกนี้ถ้าโอเวอร์เลย์ไม่ขึ้น ดูผิด หรือบังการคลิกในเกม มีผลเมื่อ Hearthstone เริ่มครั้งถัดไป"
+				"disable-overlay-shared-texture-tooltip": "โดยค่าเริ่มต้น โอเวอร์เลย์ในเกมถูกส่งไปยังเกมโดยตรงผ่านการ์ดจอ ซึ่งใช้ CPU น้อยกว่ามาก เปิดตัวเลือกนี้ถ้าโอเวอร์เลย์ไม่ขึ้น ดูผิด หรือบังการคลิกในเกม มีผลเมื่อ Hearthstone เริ่มครั้งถัดไป",
+				"show-main-window-on-launch-label": "เปิดหน้าต่างหลักเมื่อเริ่มโปรแกรม",
+				"show-main-window-on-launch-tooltip": "เมื่อปิดไว้ Firestone จะไปอยู่ที่ถาดระบบ เปิดหน้าต่างหลักได้จากไอคอนบนถาด"
 			},
 			"menu": {
 				"account": "บัญชี",
@@ -1100,7 +1545,9 @@
 				"source-verified-tooltip": "พัฒนาโดยบุคคลที่สาม โดย Firestone ตรวจเป็นประจำ จะอัปเดตอัตโนมัติเฉพาะเวอร์ชันที่ Firestone อนุมัติ",
 				"update-available-unreviewed": "ม็อดนี้มีเวอร์ชันใหม่ แต่ Firestone ยังไม่ได้ตรวจทาน คลิกเพื่ออัปเดตอยู่ดี",
 				"explanation": "ม็อดเป็นปลั๊กอินที่เปลี่ยนพฤติกรรมของ Hearthstone เอง",
-				"restart-required": "รีสตาร์ท Hearthstone เพื่อให้การเปลี่ยนแปลงนี้มีผล"
+				"restart-required": "รีสตาร์ท Hearthstone เพื่อให้การเปลี่ยนแปลงนี้มีผล",
+				"download-failed": "ดาวน์โหลดไลบรารีม็อดไม่สำเร็จ คลิกเปิดใช้ม็อดอีกครั้งเพื่อทำต่อ",
+				"wrong-path-error": "ตำแหน่งติดตั้งเกมไม่เหมือนโฟลเดอร์ของ Hearthstone โปรดตรวจเส้นทาง แล้วคลิกตรวจสอบอีกครั้ง"
 			},
 			"premium": {
 				"lottery-sync-label": "แต้มลอตเตอรี่",
@@ -1113,7 +1560,9 @@
 			},
 			"widgets": {
 				"use-azalina-label": "เดาจาก Azalina",
-				"use-azalina-tooltip": "ถ้าผู้เล่นมี Azalina เราใช้อาชีพฝ่ายตรงข้ามเพื่อตัดสินว่าจะแสดงตัวนับบางตัวหรือไม่ (เช่น ถ้าคุณเป็นพรีสต์ปะทะโร้ก จะแสดงตัวนับ Jade Guardians ได้) ทดลอง"
+				"use-azalina-tooltip": "ถ้าผู้เล่นมี Azalina เราใช้อาชีพฝ่ายตรงข้ามเพื่อตัดสินว่าจะแสดงตัวนับบางตัวหรือไม่ (เช่น ถ้าคุณเป็นพรีสต์ปะทะโร้ก จะแสดงตัวนับ Jade Guardians ได้) ทดลอง",
+				"card-tooltip-canvas-fallback": "ภาพการ์ดสำรอง",
+				"card-tooltip-canvas-fallback-tooltip": "ถ้าโหลดภาพทูลทิปการ์ดไม่สำเร็จ จะวาดการ์ดให้แทน ไม่ปล่อยภาพเสียค้างไว้"
 			},
 			"localization": {
 				"ai-text": "เมื่อเปิดใช้ คำแปลที่ขาดจะถูกเติมด้วยข้อความที่สร้างโดย AI คำแปลจากชุมชนมีลำดับความสำคัญก่อนเสมอ ข้อความ AI อาจไม่สมบูรณ์แบบ และหากไม่มีคำแปล AI จะยังใช้ภาษาอังกฤษ",
@@ -1145,6 +1594,9 @@
 			},
 			"quests": {
 				"size-label": "ขนาดวิดเจ็ตเควสต์"
+			},
+			"data": {
+				"refresh-signed-out": "ต้องเข้าสู่ระบบก่อน จึงจะดาวน์โหลดประวัติเกมทั้งหมดจากเซิร์ฟเวอร์ใหม่ได้"
 			}
 		},
 		"global": {
@@ -1213,7 +1665,8 @@
 			"linking-overwolf": "กำลังพาไปที่ Overwolf…",
 			"privacy-link": "นโยบายความเป็นส่วนตัว",
 			"privacy-prefix": "การเข้าสู่ระบบหมายความว่าคุณยอมรับ ",
-			"subtitle": "เข้าสู่ระบบเพื่อซิงก์ข้อมูลข้ามอุปกรณ์"
+			"subtitle": "เข้าสู่ระบบเพื่อซิงก์ข้อมูลข้ามอุปกรณ์",
+			"web-subtitle": "เข้าสู่ระบบเว็บไซต์ Firestone"
 		},
 		"docs": {
 			"back-label": "เอกสารทั้งหมด",
@@ -1379,7 +1832,7 @@
 					"caption": "เด็ค แทรคเกอร์และโอเวอร์เลย์ในเกม",
 					"title": "เด็ค แทรคเกอร์"
 				},
-				"lead": "คู่หูใช้งานได้โดยไม่ต้องสมัครสมาชิก โอเวอร์เลย์บางตัวมีโควตารายวันหรือรายสัปดาห์ พรีเมียมจะยกเลิกขีดจำกัดเหล่านั้น",
+				"lead": "คู่หูนี้ใช้ได้ฟรี ฟีเจอร์เกือบทั้งหมดลองใช้ได้โดยไม่ต้องสมัครสมาชิก และพรีเมียมจะปลดข้อจำกัดทั้งหมด",
 				"mods": {
 					"alt": "ตั้งค่าม็อด Firestone แสดงม็อดชุมชนพร้อมสวิตช์เปิด/ปิด",
 					"blurb": "เปิดม็อดชุมชนจากตั้งค่า — ปิดเสียงอัตโนมัติ เติมเด็คอัตโนมัติ ปรับคอลเล็กชัน และอื่นๆ — สวิตช์ละหนึ่งอัน",
@@ -1401,8 +1854,15 @@
 				"title": "สิ่งที่คุณได้ฟรี"
 			},
 			"hero": {
-				"subtitle": "คู่หู Hearthstone ฟรี: เด็ค แทรคเกอร์ โอเวอร์เลย์ คอลเล็กชัน เครื่องมือสนามรบ และอื่นๆ",
-				"title": "ดาวน์โหลด Firestone"
+				"subtitle": "ตัวติดตามเด็ค โอเวอร์เลย์ คอลเล็กชัน และเครื่องมือสนามรบ อยู่ในเกม",
+				"title": "ติดตามทุกเกม Hearthstone ฟรี",
+				"badge": "เวอร์ชันที่เสถียรที่สุด",
+				"cta": "ดาวน์โหลด Firestone",
+				"step-1-title": "ติดตั้ง",
+				"step-2-text": "เปิดเกมตามปกติ",
+				"step-2-title": "เปิด Hearthstone",
+				"step-3-text": "Firestone จะเริ่มจดเกมให้เอง",
+				"step-3-title": "เล่น"
 			},
 			"lightbox": {
 				"close": "ปิดรูปขนาดเต็ม",
@@ -1426,7 +1886,8 @@
 				"cta": "ดาวน์โหลด Standalone",
 				"discord-cta": "ถามเราบน Discord",
 				"discord-lead": "อยากได้สิทธิ์เข้าถึงก่อนใคร?",
-				"title": "Standalone"
+				"title": "Standalone",
+				"skip": "อยากข้าม Overwolf หรือไม่?"
 			},
 			"social-proof": {
 				"carousel": {
@@ -2002,7 +2463,214 @@
 			"assemble-pick-rate": "ถูกเลือก",
 			"assemble-pick-rate-hint": "เมื่อถูกเสนอ ตัวเลือกนี้ถูกเลือกบ่อยแค่ไหน",
 			"assemble-right": "ขวา",
-			"cards": "การ์ด"
+			"cards": "การ์ด",
+			"assemble-game": "เกม",
+			"assemble-games": "เกม",
+			"assemble-games-hint": "นับเกมที่มีการเสนอการ์ดฐาน ถ้าเกมหนึ่งประกอบมากกว่าหนึ่งฐาน จะนับแยกทีละฐาน",
+			"discover": "ค้นพบ",
+			"discover-all-classes": "ทุกอาชีพ",
+			"discover-card": "การ์ด",
+			"discover-error": "โหลดสถิติค้นพบไม่ได้ โปรดลองใหม่ภายหลัง",
+			"discover-games": "จำนวนครั้งที่เล่น",
+			"discover-loading": "กำลังโหลด...",
+			"discover-offered": "ถูกเสนอ",
+			"discover-offered-count-hint": "จำนวนครั้งที่การ์ดใบนี้ถูกเสนอ",
+			"discover-picked": "ถูกเลือก",
+			"discover-search": "ค้นหาการ์ด"
+		},
+		"account": {
+			"account-id-copied": "คัดลอกรหัสบัญชีแล้ว",
+			"copy-account-id": "คัดลอกรหัสบัญชี",
+			"sign-in": "เข้าสู่ระบบ",
+			"sign-out": "ออกจากระบบ"
+		},
+		"contribute": {
+			"admin": {
+				"action-contributor-added": "เพิ่มผู้ร่วมเขียนแล้ว",
+				"action-contributor-removed": "นำผู้ร่วมเขียนออกแล้ว",
+				"action-contributor-updated": "อัปเดตผู้ร่วมเขียนแล้ว",
+				"action-created": "สร้างแล้ว",
+				"action-edited": "แก้ไขแล้ว",
+				"action-restored": "กู้คืนแล้ว",
+				"action-unpublished": "ยกเลิกการเผยแพร่",
+				"add": "+ เพิ่มผู้ร่วมเขียน",
+				"add-confirm": "เพิ่ม",
+				"add-title": "เพิ่มผู้ร่วมเขียน",
+				"added": "{{name}} ร่วมเขียนได้แล้ว",
+				"admin-hint": "ผู้ดูแลแก้ไขได้ทุกอย่าง และจัดการผู้ร่วมเขียนได้",
+				"after": "หลัง",
+				"all-content-types": "ทั้งหมด",
+				"badge": "ป้ายที่แสดงบนเคล็ดลับของคนนี้",
+				"before": "ก่อน",
+				"cancel": "ยกเลิก",
+				"col-account": "บัญชี",
+				"col-action": "การกระทำ",
+				"col-actions": "คำสั่ง",
+				"col-added": "วันที่เพิ่ม",
+				"col-content-types": "แก้ไขได้",
+				"col-role": "บทบาท",
+				"col-target": "เป้าหมาย",
+				"col-when": "เมื่อ",
+				"col-who": "ผู้ทำ",
+				"confirm-remove": "นำ {{name}} ออกหรือไม่? เคล็ดลับที่เผยแพร่แล้วยังอยู่ แต่จะแก้ไขไม่ได้อีก",
+				"confirm-restore": "คืนเคล็ดลับนี้กลับไปเป็นแบบก่อนเปลี่ยนหรือไม่?",
+				"confirm-restore-creation": "เดิมไม่มีเคล็ดลับนี้ หากทำต่อจะลบเคล็ดลับออก ทำต่อหรือไม่?",
+				"details": "รายละเอียดที่เปลี่ยน",
+				"display-name": "ชื่อที่แสดงบนเคล็ดลับ",
+				"display-name-hint": "ผู้เล่นจะเห็นชื่อนี้ข้างเคล็ดลับทุกข้อที่คนนี้เขียน",
+				"edit": "แก้ไข",
+				"edit-title": "แก้ไขผู้ร่วมเขียน",
+				"form-error-content-types": "เลือกอย่างน้อยหนึ่งอย่างที่คนนี้แก้ไขได้",
+				"form-error-exists": "บัญชีนี้เป็นผู้ร่วมเขียนอยู่แล้ว ({{name}}) ให้แก้ไขรายการนั้นแทน",
+				"form-error-link": "ลิงก์โปรไฟล์ต้องขึ้นต้นด้วย https://",
+				"form-error-name": "กรอกชื่อที่จะแสดงบนเคล็ดลับ",
+				"form-error-user-id": "กรอกรหัสบัญชี",
+				"link": "ลิงก์โปรไฟล์",
+				"link-hint": "ไม่บังคับ จะแสดงบนเคล็ดลับ",
+				"loading": "กำลังโหลดผู้ร่วมเขียนและประวัติ…",
+				"nav-label": "ผู้ดูแล",
+				"no-activity": "ยังไม่มีการเปลี่ยนแปลง",
+				"no-badge": "ไม่มี",
+				"no-contributors": "ยังไม่มีผู้ร่วมเขียน",
+				"nothing": "(ไม่มี)",
+				"remove": "นำออก",
+				"removed": "นำ {{name}} ออกแล้ว",
+				"restore": "คืนค่าก่อนเปลี่ยน",
+				"restore-creation": "นำเคล็ดลับนี้ลง",
+				"restored": "กู้คืนแล้ว แอปจะอัปเดตภายในไม่กี่ชั่วโมง",
+				"role-admin": "ผู้ดูแล",
+				"role-author": "ผู้เขียน",
+				"save": "บันทึก",
+				"soon": "เร็วๆ นี้",
+				"subtitle": "ผู้ร่วมเขียนและประวัติ",
+				"tab-activity": "กิจกรรม",
+				"tab-contributors": "ผู้ร่วมเขียน · {{value}}",
+				"title": "ผู้ดูแล",
+				"updated": "อัปเดต {{name}} แล้ว",
+				"user-id": "รหัสบัญชี",
+				"user-id-hint": "ผู้เล่นดูได้จากเมนูบัญชีบนเว็บไซต์ ในหัวข้อคัดลอกรหัสบัญชี",
+				"user-id-placeholder": "วางรหัสที่ผู้เล่นคัดลอกจากเมนูบัญชี",
+				"view": "ดู",
+				"you": "(คุณ)"
+			},
+			"comps": {
+				"nav-label": "คอมพ์"
+			},
+			"errors": {
+				"audit_entry_not_found": "ไม่พบการเปลี่ยนแปลงนี้แล้ว",
+				"contradictory_tribes": "เผ่าเดียวกันจะทั้งมีและไม่มีพร้อมกันไม่ได้",
+				"contributor_not_found": "ผู้ร่วมเขียนคนนี้ถูกนำออกไปแล้ว",
+				"duplicate_variant": "คุณมีเคล็ดลับของรูปแบบนี้อยู่แล้ว ให้ไปแก้ไขอันนั้นแทน",
+				"generic": "เผยแพร่ไม่สำเร็จ ({{code}}) ฉบับร่างยังอยู่บนเครื่องนี้",
+				"generic-admin": "ทำไม่สำเร็จ ({{code}}) ลองอีกครั้ง",
+				"invalid_json": "คำขอมีรูปแบบไม่ถูกต้อง",
+				"invalid_role": "ไม่รู้จักบทบาทนี้",
+				"invalid_token": "คุณออกจากระบบแล้ว เข้าสู่ระบบใหม่เพื่อเผยแพร่",
+				"invalid_url": "ลิงก์โปรไฟล์ต้องขึ้นต้นด้วย https://",
+				"item_not_found": "เคล็ดลับนี้ไม่มีอยู่แล้ว",
+				"last_admin": "ต้องมีผู้ดูแลอย่างน้อยหนึ่งคนเสมอ",
+				"network_error": "เชื่อมต่อเซิร์ฟเวอร์ไม่ได้ ตรวจการเชื่อมต่อแล้วลองอีกครั้ง",
+				"not_a_contributor": "บัญชีของคุณเผยแพร่เคล็ดลับไม่ได้อีกแล้ว",
+				"not_an_admin": "บัญชีของคุณไม่ได้เป็นผู้ดูแลแล้ว",
+				"not_configured": "ยังเปิดให้ร่วมเขียนไม่ได้ในตอนนี้",
+				"not_your_item": "เคล็ดลับนี้เป็นของผู้เขียนคนอื่น",
+				"required": "ยังกรอกช่องที่จำเป็นไม่ครบ",
+				"signed_out": "คุณออกจากระบบแล้ว เข้าสู่ระบบใหม่เพื่อเผยแพร่",
+				"too_long": "เคล็ดลับนี้ยาวเกินไป",
+				"unknown_content_type": "มีประเภทเนื้อหาที่ไม่มีอยู่จริง",
+				"unknown_hero": "ฮีโร่นี้ไม่ใช่ฮีโร่สนามรบ",
+				"unknown_hero_power": "ยังไม่รู้จักพลังฮีโร่นี้",
+				"unknown_tribe": "มีเผ่าที่ไม่ได้ใช้ในสนามรบ"
+			},
+			"hero-power-tips": {
+				"add-hero": "+ เฉพาะฮีโร่",
+				"add-lobby": "+ ตามล็อบบี้",
+				"basic-tip": "เคล็ดลับพื้นฐาน",
+				"confirm-delete": "ลบเคล็ดลับนี้หรือไม่? ผู้เล่นจะไม่เห็นอีก",
+				"curve-3-on-3": "3-on-3",
+				"curve-basic": "พื้นฐาน",
+				"curves": "เคิร์ฟ",
+				"delete": "ลบ",
+				"deleted": "ลบเคล็ดลับแล้ว",
+				"details": "รายละเอียด",
+				"details-hint": "ไม่บังคับ · เห็นได้เฉพาะในแอป",
+				"details-placeholder": "เมื่อไรควรเปลี่ยนแผน และควรมองหาอะไรในร้าน",
+				"discard": "ละทิ้ง",
+				"edit": "แก้ไข",
+				"filter-all": "ทั้งหมด",
+				"filter-label": "ตัวกรอง",
+				"filter-none": "ยังไม่มีเคล็ดลับ",
+				"filter-update": "ต้องอัปเดต",
+				"form-title-edit-basic": "แก้ไขเคล็ดลับพื้นฐาน",
+				"form-title-edit-hero": "แก้ไขเคล็ดลับเฉพาะฮีโร่",
+				"form-title-edit-lobby": "แก้ไขเคล็ดลับตามล็อบบี้",
+				"form-title-new-basic": "เคล็ดลับพื้นฐานใหม่",
+				"form-title-new-hero": "เคล็ดลับเฉพาะฮีโร่ใหม่",
+				"form-title-new-lobby": "เคล็ดลับตามล็อบบี้ใหม่",
+				"hero": "ฮีโร่",
+				"language": "ภาษา",
+				"loading": "กำลังโหลดเคล็ดลับของคุณ…",
+				"lobby": "เมื่อล็อบบี้",
+				"lobby-has": "มี",
+				"lobby-lacks": "ไม่มี",
+				"lobby-pick": "เลือกเผ่าอย่างน้อยหนึ่งเผ่า",
+				"lobby-summary-has": "แสดงเมื่อล็อบบี้มีเผ่าเหล่านี้ครบ: {{tribes}}",
+				"lobby-summary-lacks": "แสดงเมื่อล็อบบี้ไม่มีเผ่าเหล่านี้เลย: {{tribes}}",
+				"nav-label": "เคล็ดลับพลังฮีโร่",
+				"no-variants": "ยังไม่มีรูปแบบย่อย เพิ่มได้เมื่อฮีโร่หรือล็อบบี้เปลี่ยนวิธีใช้พลังนี้",
+				"optional": "ไม่บังคับ",
+				"outdated-title": "พลังถูกเปลี่ยน - เคล็ดลับ {{value}} รายการของคุณเขียนตามข้อความเก่า",
+				"pick-power": "เลือกพลังฮีโร่ หรือกด Ctrl+K",
+				"power-changed": "แพตช์ {{patch}} - พลังถูกเปลี่ยน",
+				"power-count": "พลังฮีโร่ {{shown}} จาก {{total}}",
+				"powers-label": "พลังฮีโร่",
+				"preview": "ตัวอย่าง",
+				"preview-app": "แอป",
+				"preview-app-colors": "สีแบบในแอป",
+				"preview-empty": "เคล็ดลับของคุณจะแสดงที่นี่",
+				"preview-game": "ในเกม",
+				"preview-panel-title": "เคล็ดลับ Firestone",
+				"published": "เผยแพร่เคล็ดลับแล้ว จะขึ้นในแอปภายในไม่กี่ชั่วโมง",
+				"rewrite": "เขียนใหม่ให้ตรงข้อความปัจจุบัน",
+				"save": "บันทึกและเผยแพร่",
+				"search-label": "ค้นหาพลังฮีโร่",
+				"search-placeholder": "ชื่อพลัง ฮีโร่ หรือข้อความการ์ด",
+				"status-count": "{{value}} เคล็ดลับ",
+				"status-draft-kept": "ฉบับร่างยังเก็บไว้ในเครื่องนี้",
+				"status-draft-saved": "บันทึกฉบับร่างในเครื่องแล้ว · {{time}}",
+				"status-editing": "กำลังแก้ไขเคล็ดลับที่เผยแพร่แล้ว",
+				"status-new": "ฉบับร่างใหม่",
+				"status-none": "ยังไม่มีเคล็ดลับ",
+				"status-published": "เผยแพร่แล้ว",
+				"status-publishing": "กำลังเผยแพร่…",
+				"status-restored": "กู้ฉบับร่างที่ยังไม่บันทึกกลับมาแล้ว",
+				"status-update": "ต้องอัปเดต",
+				"subtitle": "เคล็ดลับที่ผู้เล่นเห็นเมื่อชี้พลังฮีโร่ในสนามรบ",
+				"tip": "เคล็ดลับ",
+				"tip-hint": "แสดงทั้งในเกมและในแอป",
+				"tip-placeholder": "ผู้เล่นควรใช้พลังนี้อย่างไร?",
+				"title": "เคล็ดลับพลังฮีโร่",
+				"used-by": "ใช้โดย {{heroes}}",
+				"variant-hero": "เฉพาะ {{hero}}",
+				"variant-lobby-empty": "ตามล็อบบี้",
+				"variant-lobby-has": "ล็อบบี้มี {{tribes}}",
+				"variant-lobby-lacks": "ล็อบบี้ไม่มี {{tribes}}",
+				"variants": "รูปแบบย่อย",
+				"variants-hint": "แสดงแทนเคล็ดลับพื้นฐานเมื่อเข้าเงื่อนไข",
+				"write-basic": "+ เขียนเคล็ดลับพื้นฐาน",
+				"write-basic-hint": "แสดงทุกครั้งที่ผู้เล่นชี้ที่พลังนี้",
+				"your-tips": "เคล็ดลับของคุณ",
+				"your-tips-hint": "ตรงนี้มีแค่คุณที่เห็น"
+			},
+			"nav-label": "ร่วมเขียน",
+			"trinkets": {
+				"nav-label": "เครื่องประดับ"
+			},
+			"unavailable": {
+				"body": "การร่วมเขียนเปิดให้เฉพาะบัญชีที่อนุมัติแล้ว หากอยากเป็นผู้ร่วมเขียน ให้ส่งรหัสบัญชี (จากเมนูบัญชี) มาที่ทีม Firestone",
+				"home": "กลับสู่ Firestone",
+				"title": "ส่วนนี้ยังไม่เปิดให้บัญชีของคุณ"
+			}
 		}
 	},
 	"widgets": {

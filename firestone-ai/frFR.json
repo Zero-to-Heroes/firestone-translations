@@ -3,6 +3,13 @@
 		"decktracker": {
 			"deck-details": {
 				"export-deck-picture-failed": "Échec de la capture d’écran"
+			},
+			"menu": {
+				"cards-header": "Cartes"
+			},
+			"meta": {
+				"load-error": "Vérifiez votre connexion et réessayez.",
+				"load-error-title": "Impossible de charger ces stats"
 			}
 		},
 		"premium": {
@@ -15,33 +22,389 @@
 		"updates": {
 			"standalone": {
 				"detail": "Redémarrez Firestone pour appliquer les mises à jour.",
-				"restart": "Redémarrer",
-				"title": "Mise à jour Firestone"
+				"restart": "Redémarrer"
 			}
 		},
 		"battlegrounds": {
 			"compositions": {
 				"loading-example-boards": "Chargement des plateaux d’exemple"
+			},
+			"hero-power-tips": {
+				"title": "Conseils Firestone",
+				"variant-hero": "{{hero}} uniquement",
+				"variant-lobby-has": "{{tribes}} dans le salon",
+				"variant-lobby-lacks": "Pas de {{tribes}} dans le salon"
+			},
+			"strategies": {
+				"outdated": "Rédigé pour une ancienne version de ce pouvoir héroïque"
 			}
 		},
 		"replays": {
 			"replay-info": {
 				"played-on-mobile": "Jouée sur mobile"
 			}
+		},
+		"arena": {
+			"menu": {
+				"cards": "Cartes"
+			}
+		},
+		"cards": {
+			"back-to-assemble": "Toutes les cartes d’Assemblage",
+			"back-to-discover": "Toutes les cartes de Découverte",
+			"stats": "Stats"
+		},
+		"feature-spotlights": {
+			"cardTooltipUseCanvasFallback": {
+				"blurb": "Si l’image d’une carte ne se charge pas, la carte est dessinée. Désactivé par défaut.",
+				"title": "Dessiner les images de cartes manquantes"
+			},
+			"cardsDiscoverAssembleTabs": {
+				"blurb": "Le mode construit et l’Arène ont un onglet Cartes avec les stats de Découverte et d’Assemblage. Les réservoirs d’Assemblage peuvent être filtrés par classe.",
+				"title": "Stats de Découverte et d’Assemblage"
+			},
+			"opponentGhuunBloodRunesCounter": {
+				"blurb": "Affiche les points de vie que le G’huun de l’adversaire vole. Désactivé par défaut.",
+				"title": "Compteur de PV du G’huun adverse"
+			},
+			"opponentHodirCounter": {
+				"blurb": "Affiche combien de fois le Hodir, père des géants de l’adversaire peut encore mettre un serviteur à 8/8.",
+				"title": "Compteur de Hodir adverse"
+			},
+			"opponentNzothDreamsEndCounter": {
+				"blurb": "Affiche le nombre de serviteurs avec Râle d’agonie que votre adversaire a invoqués, et le coût actuel de N’Zoth.",
+				"title": "Compteur de N’Zoth, la fin du Rêve adverse"
+			},
+			"playerHodirCounter": {
+				"blurb": "Affiche combien de fois Hodir, père des géants peut encore mettre un serviteur à 8/8.",
+				"title": "Compteur de Hodir"
+			},
+			"replayViewerV2": {
+				"blurb": "Regardez les replays du mode construit dans un nouveau lecteur, avec les moments clés, le plateau et les listes de decks. Vous pouvez revenir au lecteur classique.",
+				"title": "Nouveau lecteur de replays du mode construit"
+			}
+		},
+		"replay-viewer": {
+			"action-view": {
+				"added-to-hand": "Ajoutée à la main",
+				"added-to-their-hand": "Ajoutée à sa main",
+				"added-to-your-hand": "Ajoutée à votre main",
+				"after": "Après",
+				"base": "Base",
+				"before": "Avant",
+				"bottom-taken": "Moitié du bas prise",
+				"choice-tag": "Choix · {{kind}}",
+				"decided": "Décidé en {{seconds}} s",
+				"deck-change": "Deck de {{before}} à {{after}} · {{cost}} mana",
+				"drawn": "Piochée",
+				"end-of-game": "Fin de la partie",
+				"forged": "Forgée",
+				"from-their-hand": "Depuis sa main",
+				"from-your-hand": "Depuis votre main",
+				"half": {
+					"first": "Première moitié",
+					"second": "Deuxième moitié"
+				},
+				"kind": {
+					"adapt": "Adaptation",
+					"assemble": "Assemblage",
+					"choose-one": "Choix des armes",
+					"discover": "Découverte",
+					"dredge": "Dragage"
+				},
+				"left-option": "Option de gauche",
+				"not-picked": "Non choisie",
+				"not-used": "Non utilisée",
+				"opponent-forged": "L’adversaire a forgé une carte",
+				"opponent-offered": "On a proposé à l’adversaire",
+				"opponent-traded": "L’adversaire a échangé une carte",
+				"other-option": "Autre option",
+				"picked": "Choisie",
+				"picked-option": "Option choisie",
+				"progress": "Étape {{position}} sur {{count}} · {{elapsed}} / {{total}}",
+				"restart": "Reprendre depuis le mulligan",
+				"result-label": "Résultat",
+				"result": {
+					"conceded": "Abandon",
+					"defeat": "Défaite",
+					"tie": "Égalité",
+					"victory": "Victoire"
+				},
+				"right-option": "Option de droite",
+				"shuffled": "Mélangée dans le deck",
+				"side-option": "Option sur le côté",
+				"stat": {
+					"duration": "Durée",
+					"turns": "Tours"
+				},
+				"top-taken": "Moitié du haut prise",
+				"turn": "Tour {{turn}}",
+				"turn-source": "Tour {{turn}} · {{source}}",
+				"watch-key-moments": "Voir les {{count}} moments clés",
+				"you-forged": "Vous avez forgé une carte",
+				"you-offered": "On vous a proposé",
+				"you-traded": "Vous avez échangé une carte"
+			},
+			"banner": {
+				"back-to-old": "Revenir à l’ancien lecteur",
+				"new-viewer": "Vous utilisez le nouveau lecteur de replay."
+			},
+			"bg": {
+				"anomaly": "Anomalie",
+				"combat": "Combat",
+				"combat-details": "Pas à pas",
+				"combat-end": "Fin",
+				"combat-start": "Début",
+				"combat-summary": "Résumé",
+				"combat-vs": "Combat contre {{hero}}",
+				"damage": "{{n}} dégâts",
+				"discover": "Découverte",
+				"eliminated": "Éliminé",
+				"empty-board": "Aucun serviteur dans la troupe de guerre",
+				"empty-shop": "Bob n’a rien à vendre",
+				"end": "Fin",
+				"events": "Événements",
+				"game-info": "Infos de la partie",
+				"gold": "Or",
+				"health-graph": "Vie des joueurs",
+				"hero-selection": "Choix du héros",
+				"mmr": "MMR",
+				"picked": "Choisi",
+				"place": {
+					"1": "1er",
+					"2": "2e",
+					"3": "3e",
+					"4": "4e",
+					"5": "5e",
+					"6": "6e",
+					"7": "7e",
+					"8": "8e"
+				},
+				"recruit": "Recrutement",
+				"result": {
+					"lost": "Perdu",
+					"tied": "Égalité",
+					"won": "Gagné"
+				},
+				"round": "Tour {{n}}",
+				"rounds": "Tours",
+				"run": "Tours",
+				"tavern-opens": "Tour {{n}} : la taverne ouvre",
+				"tier": "Niveau de taverne",
+				"tribes": "Types de cette partie",
+				"versus": "vs"
+			},
+			"coming-soon": {
+				"text": "Les replays des Champs de bataille et des Mercenaires ne sont pas encore disponibles sur mobile. Ouvrez cette page sur un ordinateur pour le visionner.",
+				"title": "Version mobile bientôt disponible"
+			},
+			"common": {
+				"close": "Fermer",
+				"download-xml": "Télécharger le XML"
+			},
+			"decklists": {
+				"cards": "{{count}} cartes",
+				"code-copied": "Code de deck copié",
+				"copy-code": "Copier le code de deck",
+				"export": "Exporter le deck",
+				"no-opponent-card": "Aucune carte de l’adversaire n’est affichée dans ce replay.",
+				"seen": "{{count}} sur 30 vues",
+				"unknown-deck": "Le deck du joueur n’est pas connu pour ce replay."
+			},
+			"error": {
+				"damaged": "Le fichier est endommagé, ou la connexion a été interrompue pendant le chargement.",
+				"missing": "Ce replay n’existe plus, ou le lien est incorrect.",
+				"title": "Impossible de lire ce replay",
+				"try-again": "Réessayer",
+				"unsupported": "Ce mode de jeu n’est pas encore pris en charge par le lecteur."
+			},
+			"header": {
+				"age": {
+					"just-now": "à l’instant"
+				},
+				"class": {
+					"deathknight": "Chevalier de la mort",
+					"demonhunter": "Chasseur de démons"
+				},
+				"copy-link": "Copier le lien de ce moment",
+				"decklists": "Listes de decks",
+				"duration": {
+					"hours": "{{hours}} h {{minutes}} min",
+					"minutes": "{{value}} min",
+					"seconds": "{{value}} s"
+				},
+				"firestone-hint": "Si rien ne se passe, vérifiez que Firestone est installé et lancé.",
+				"format": {
+					"classic": "Classique",
+					"standard": "Standard",
+					"twist": "Imprévu",
+					"wild": "Libre"
+				},
+				"link-copied": "Lien copié",
+				"mode": {
+					"arena": "Arène",
+					"arena-underground": "Arène souterraine",
+					"battlegrounds": "Champs de bataille",
+					"casual": "Non classé",
+					"duels": "Duels",
+					"friendly": "Duel amical",
+					"practice": "Entraînement",
+					"ranked": "Partie classée",
+					"tavern-brawl": "Bras de fer"
+				},
+				"rank": {
+					"legend": "Légende",
+					"legend-number": "Légende #{{rank}}"
+				},
+				"result": {
+					"defeat": "Défaite",
+					"tie": "Égalité",
+					"victory": "Victoire"
+				},
+				"share": "Partager le replay",
+				"shortcut": {
+					"play-pause": "Lecture / pause",
+					"speed": "Changer la vitesse",
+					"step": "Étape précédente / suivante",
+					"turn": "Tour précédent / suivant",
+					"view": "Basculer entre le plateau et la vue des actions"
+				},
+				"shortcuts": "Raccourcis clavier",
+				"turns": "{{count}} tours",
+				"versus": "{{mine}} vs {{opponent}}",
+				"view-in-firestone": "Voir dans le client HS"
+			},
+			"hero-strip": {
+				"corpses": "Cadavres",
+				"deck": "Deck",
+				"locked": "{{count}} verrouillées",
+				"mana": "Mana",
+				"overload": "Surcharge {{count}} au prochain tour",
+				"playing": "Joue",
+				"quest": "Quête",
+				"secret": "Secret ?",
+				"spell-damage": "Dégâts des sorts +{{amount}}"
+			},
+			"loading": {
+				"label": "Préparation de votre replay",
+				"parsing": "Analyse du replay",
+				"preparing": "Préparation du replay",
+				"progress": "Préparation de votre replay · tour {{turn}} sur {{total}}"
+			},
+			"minion": {
+				"ability-available": "Disponible",
+				"ability-used": "Utilisée",
+				"old-god-abilities": "Capacités du Dieu très ancien"
+			},
+			"momentum": {
+				"chart": "Vie du héros et puissance du plateau au cours de la partie",
+				"key-moment": "Moment clé {{number}} : {{label}}",
+				"title": "Dynamique de la partie",
+				"turn": "Tour"
+			},
+			"mulligan": {
+				"coin": "A pioché La pièce",
+				"replaced": "Remplacée"
+			},
+			"stage": {
+				"cast": "Sorts lancés",
+				"deck-title": "{{name}} · Deck",
+				"enchantments": "Enchantements",
+				"keyword": {
+					"colossal": "Colossal",
+					"corrupt": "Corruption",
+					"echo": "Écho",
+					"infuse": "Imprégnation",
+					"magnetic": "Magnétisme",
+					"outcast": "Marginal",
+					"starship": "Vaisseau",
+					"titan": "Titan",
+					"twinspell": "Sort double"
+				},
+				"never-revealed": "Jamais révélée",
+				"now-playing": "En cours"
+			},
+			"story-panel": {
+				"empty": "Rien à afficher avec ces filtres.",
+				"everything": "Tout",
+				"filter": "Filtrer le récit",
+				"hint": "Cliquez sur une ligne pour y aller",
+				"key-moments": "Moments clés",
+				"title": "Événements",
+				"turn-title": "Tour {{turn}} · {{side}}"
+			},
+			"story": {
+				"a-card": "une carte",
+				"a-card-capitalized": "Une carte",
+				"a-secret": "un secret",
+				"badge": {
+					"choice": "Choix",
+					"forge": "Forge",
+					"trade": "Échange"
+				},
+				"cards-count": "{{count}} cartes",
+				"casts": "{{caster}} lance {{spells}}",
+				"damage-to-targets": "{{amount}} dégâts à {{count}} cibles",
+				"discover": "Découverte",
+				"discover-from": "Découverte : {{source}}",
+				"forged": "A forgé {{card}}",
+				"is-forged": "{{card}} est forgée",
+				"key-moment": {
+					"big-hit": "Gros coup",
+					"board-wipe": "Nettoyage de plateau",
+					"secret": "Secret révélé",
+					"swing": "Basculement"
+				},
+				"lethal": "Létal",
+				"mana-change": "{{before}} à {{after}} mana",
+				"mulligan-done": "Mulligan terminé",
+				"mulligan": {
+					"kept-all": "{{who}} : {{count}} cartes gardées",
+					"kept-replaced": "{{who}} : {{kept}} gardées, {{replaced}} remplacées",
+					"replaced": "{{who}} : {{replaced}} remplacées",
+					"replaced-all": "{{who}} : tout remplacé ({{replaced}})",
+					"title": "Mulligan"
+				},
+				"opponent": "Adversaire",
+				"picked": "a choisi {{cards}}",
+				"plays": "{{who}} : joue {{what}}",
+				"secret-revealed": "Secret révélé : {{secret}}",
+				"source-dealing": "{{source}}, infligeant {{damage}}",
+				"source-deals": "{{source}} inflige {{damage}}",
+				"trade-cost": "1 mana",
+				"traded": "A échangé {{card}} contre une carte",
+				"turn": "Tour {{turn}}",
+				"turn-mana": "{{mana}} mana",
+				"turn-steps": "{{count}} étapes",
+				"you": "Vous"
+			},
+			"transport": {
+				"change-speed": "Changer la vitesse de lecture",
+				"copy-link": "Copier le lien du moment",
+				"next-step": "Étape suivante (Droite)",
+				"next-turn": "Tour suivant (Ctrl + Droite)",
+				"pause": "Pause (Espace)",
+				"play": "Lecture (Espace)",
+				"previous-step": "Étape précédente (Gauche)",
+				"previous-turn": "Tour précédent (Ctrl + Gauche)",
+				"speed": "Vitesse {{speed}}x"
+			},
+			"turn": {
+				"mine": "Votre tour",
+				"opponent": "Tour de l’adversaire"
+			},
+			"view-toggle": {
+				"action": "Vue des actions",
+				"board": "Plateau",
+				"label": "Vue"
+			}
 		}
 	},
 	"archetype": {
-		"cute-warrior": "Guerrier Cute",
 		"hl-n-roll-warrior": "Guerrier Rock’n’Rochenoire singleton",
 		"raza-dh": "DH Raza",
 		"seedlock": "Démoniste graine démoniaque",
 		"xl-champions-druid": "Druide Champions XL",
-		"deios-rogue": "Voleur Déios",
-		"divine-spirit-priest": "Prêtre Esprit divin",
-		"dragon-pirate-warrior": "Guerrier Dragons Pirates",
-		"drake-warlock": "Démoniste drake",
-		"exodia-mage": "Mage Exodia",
-		"fatigue-dh": "DH fatigue",
 		"gnoll-miracle-rogue": "Voleur miracle gnoll",
 		"harold-piglock": "Démoniste sanglier convocation",
 		"harold-void-soul-dh": "DH âmes du Vide convocation",
@@ -52,21 +415,50 @@
 		"pirate-warrior": "Guerrier Pirates",
 		"questline-warrior": "Guerrier Suite de quêtes",
 		"xl-astral-druid": "Druide astral XL",
-		"xl-beetle-druid": "Druide hannetons XL"
+		"xl-beetle-druid": "Druide hannetons XL",
+		"ammunae-druid": "Druide Ammunae",
+		"ammunae-nzoth-druid": "Druide Ammunae N’Zoth",
+		"armor-warrior": "Guerrier armure",
+		"bbb-nzoth-handbuff-dk": "DK sang N’Zoth handbuff",
+		"beast-attack-druid": "Druide Bêtes ATQ",
+		"beast-druid": "Druide Bêtes",
+		"bfu-nzoth-handbuff-dk": "DK arc-en-ciel N’Zoth handbuff",
+		"cthun-dh": "DH C’Thun",
+		"cthun-druid": "Druide C’Thun",
+		"cthun-priest": "Prêtre C’Thun",
+		"cthun-shaman": "Chaman C’Thun",
+		"cthun-warlock": "Démoniste C’Thun",
+		"dragon-mage": "Mage Dragons",
+		"dragon-warlock": "Démoniste Dragons",
+		"harold-cthun-warlock": "Démoniste Harold C’Thun",
+		"holy-paladin": "Paladin Sacré",
+		"j-Lock": "Démoniste J",
+		"mech-hunter": "Chasseur Mécas",
+		"medivh-priest": "Prêtre Medivh",
+		"nzoth-druid": "Druide N’Zoth",
+		"nzoth-hunter": "Chasseur N’Zoth",
+		"nzoth-mech-hunter": "Chasseur Mécas N’Zoth",
+		"nzoth-priest": "Prêtre N’Zoth",
+		"nzoth-rogue": "Voleur N’Zoth",
+		"nzoth-warlock": "Démoniste N’Zoth",
+		"nzoth-warrior": "Guerrier N’Zoth",
+		"summoner-mage": "Mage invocateur",
+		"void-cthun-dh": "DH Vide C’Thun",
+		"yogg-paladin": "Paladin Yogg",
+		"yshaarj-warrior": "Guerrier Y’Shaarj",
+		"zee-cthun-shaman": "Chaman Zee C’Thun"
 	},
 	"battlegrounds": {
 		"in-game": {
 			"dark-gifts": {
-				"expired": "Expiré",
-				"expires-soon": "Expire bientôt",
 				"pool": "Réserve",
 				"reason": {
-					"requires-discards-this-game": "Nécessite qu’une carte ait été défaussée pendant cette partie"
+					"requires-discards-this-game": "Nécessite qu’une carte ait été défaussée pendant cette partie",
+					"relentless-deflector": "La Discrétion n’est pas proposée pour le Déflecteur implacable"
 				},
 				"restriction": {
-					"deathrattle-stats": "Parmi les dons qui confèrent des caractéristiques, les serviteurs avec Râle d’agonie ne peuvent bénéficier que d’Épée affûtée ou d’Étreinte de la mort.",
 					"golemancy-salvager": "Golemancie ne peut pas être proposé sur Récupérateur recousu.",
-					"guaranteed-type": "À partir du tour 6, l’un des trois serviteurs proposés est de votre type le plus courant.",
+					"guaranteed-type": "À partir du tour {{value}}, vous êtes assuré de voir un serviteur de votre type le plus représenté, et deux serviteurs à partir du tour {{value2}}.",
 					"lobby-bans": "Résistance et Prééminence sont interdits dans les parties avec Dragons. Hostilité est interdit sur les serviteurs avec Venimosité ou Toxicité. Charisme est interdit sur les serviteurs de niveau 7.",
 					"rarer-gifts": "Dorure, Horreur persistante, Force titanesque et Invulnérabilité sont plus rares que les autres dons."
 				},
@@ -79,18 +471,15 @@
 		}
 	},
 	"bgs-comp": {
-		"dragon_evoker": "Dragons évocateur",
-		"naga_end_of_turn": "Nagas Fin de tour",
 		"neutral_tea_set": "Service à thé",
-		"aberration_deathrattle": "Aberrations Râle d’agonie",
-		"aberration_discard": "Aberrations défausse",
 		"dragon_shield": "Dragons Bouclier divin",
 		"mech_glambot": "Mécas Glambot",
 		"dragon_spell_power": "Dragons dégâts des sorts",
-		"elemental_azerite": "Élémentaires azérite",
 		"elemental_tempest": "Élémentaires Tempest",
-		"mech_apm": "Mécas APM",
-		"quilboar_felboar_spam": "Hurans spam Felboar"
+		"murloc_end_of_turn": "Murlocs Fin de tour",
+		"quilboar_gem_spam": "Hurans spam de gemmes",
+		"undead_apm": "Morts-vivants APM",
+		"undead_eternal_knight": "Morts-vivants Chevalier éternel"
 	},
 	"counters": {
 		"fatigue": {
@@ -103,6 +492,23 @@
 		},
 		"bgs-tavern-spells-cast": {
 			"player": "Vous avez lancé {{value}} sorts de la taverne pendant cette partie"
+		},
+		"crash-of-thunder": {
+			"player": "Vous avez lancé {{value}} sorts de Nature pendant ce tour. Foudre tonitruante coûte {{cost}}"
+		},
+		"ghuun-blood-runes": {
+			"opponent": "G’huun vole {{value}} points de vie ({{runes}} runes de sang jouées)"
+		},
+		"hodir": {
+			"opponent": "Les {{value}} prochains serviteurs que votre adversaire joue seront mis à 8/8",
+			"player": "Les {{value}} prochains serviteurs que vous jouez seront mis à 8/8"
+		},
+		"nzoth-dreams-end": {
+			"opponent": "Votre adversaire a invoqué {{value}} serviteurs avec Râle d’agonie pendant cette partie. N’Zoth, la fin du Rêve coûte {{cost}}"
+		},
+		"therazane": {
+			"opponent": "Le prochain sort de votre adversaire, parmi ces {{value}} écoles, se lance deux fois : {{schools}}",
+			"player": "Votre prochain sort de ces {{value}} écoles se lance deux fois : {{schools}}"
 		}
 	},
 	"decktracker": {
@@ -115,15 +521,18 @@
 		"secrets-helper": {
 			"on-board-secret": "Ce Secret est en jeu"
 		},
-		"drawn-by-label": "Piochée par",
 		"card-tooltip-assemble-first": "Première moitié",
 		"card-tooltip-assemble-second": "Seconde moitié",
-		"card-tooltip-assemble-appearance-rate": "Taux d’apparition",
 		"card-tooltip-assemble-other-class": "Pas {{ class }}",
 		"card-tooltip-assemble-pick": "Choisir",
 		"card-tooltip-assemble-pick-rate": "Taux de sélection",
 		"card-tooltip-assemble-sort-by": "Trier par",
-		"gift-reborn-from": "Réincarnation de <br/> {{value}}"
+		"gift-reborn-from": "Réincarnation de <br/> {{value}}",
+		"assembled-card": "Assemblé : {{value}}",
+		"guessed-info": {
+			"attack": "Attaque",
+			"health": "Vie"
+		}
 	},
 	"ftue": {
 		"experience": {
@@ -145,9 +554,6 @@
 				"text": "De la sélection du héros ou de l’héroïne à la simulation de combat et la liste des serviteurs, puis le récapitulatif d’après-match."
 			},
 			"learn-more": "Voir plus de détails",
-			"more": {
-				"text": "Aide à la sélection en Arène, votre collection de cartes, et les replays des parties passées."
-			},
 			"overlays": {
 				"text": "Les assistants apparaissent automatiquement au début d’une partie."
 			}
@@ -157,9 +563,6 @@
 	"global": {
 		"set": {
 			"restoration_of_azeroth": "Salut d’Azeroth"
-		},
-		"mechanics": {
-			"cards_discarded_this_game": "Défausse"
 		}
 	},
 	"settings": {
@@ -168,11 +571,9 @@
 				"always-show-tavern-tier-tooltip": "Afficher le niveau de taverne actuel de chaque joueur ou joueuse à côté de son portrait dans le classement des Champs de bataille.",
 				"hero-power-extra-info-label": "Infos supplémentaires du pouvoir héroïque",
 				"hero-power-extra-info-tooltip": "Lorsque vous survolez votre pouvoir héroïque, afficher des détails en direct supplémentaires dans l’infobulle de la carte (par exemple les types de serviteurs déjà dans le chaudron de Cookie le cuistot).",
-				"counter-cards-discarded-this-game-tooltip": "Affiche le nombre de cartes que vous avez défaussées pendant cette partie",
-				"counter-deity-label": "Divinité",
-				"counter-deity-tooltip": "Afficher l’attaque et les PV de votre Divinité",
 				"counter-tavern-spells-cast-label": "Sorts de la taverne lancés",
-				"counter-tavern-spells-cast-tooltip": "Affiche le nombre de sorts de taverne que vous avez lancés pendant cette partie"
+				"hero-power-tips-label": "Conseils de pouvoir héroïque",
+				"hero-power-tips-tooltip": "Au survol de votre pouvoir héroïque, affiche les conseils écrits par la communauté Firestone (Premium)."
 			}
 		},
 		"decktracker": {
@@ -187,10 +588,16 @@
 			},
 			"opponent-deck": {
 				"counters": {
-					"cthun-abilities-label": "Capacités de C’Thun",
-					"cthun-abilities-tooltip": "Affiche combien des quatre capacités de C’Thun, Œil de l’empire votre adversaire a déclenchées, lorsqu’il l’a en main, dans le deck ou sur le plateau"
+					"cthun-abilities-tooltip": "Affiche combien des quatre capacités de C’Thun, Œil de l’empire votre adversaire a déclenchées, lorsqu’il l’a en main, dans le deck ou sur le plateau",
+					"cards-discarded-tooltip": "Affiche le nombre de cartes que votre adversaire a défaussées pendant cette partie",
+					"cthun-cost-label": "Coût de C’Thun",
+					"cthun-cost-tooltip": "Affiche la réduction de coût de C’Thun, l’Œil de l’Empire",
+					"ghuun-blood-runes-label": "PV de G’huun",
+					"ghuun-blood-runes-tooltip": "Lorsque votre adversaire est un chevalier de la mort avec un deck triple Sang et a joué au moins une rune de sang, affiche les points de vie que G’huun vole (6 plus les runes de sang jouées pendant cette partie)",
+					"hero-attacks-tooltip": "Affiche le nombre de fois que le héros ou l’héroïne de votre adversaire a attaqué pendant cette partie",
+					"nzoth-dreams-end-label": "N’Zoth, la fin du Rêve",
+					"nzoth-dreams-end-tooltip": "Lorsque l’option est activée, affiche le nombre de serviteurs avec Râle d’agonie que votre adversaire a invoqués et le coût actuel de N’Zoth, la fin du Rêve, dès qu’au moins un a été invoqué"
 				},
-				"extra-info-label": "Marqueur d’infos supplémentaires",
 				"extra-info-tooltip": "Affiche un marqueur sur les cartes dans la main de l’adversaire lorsque des informations supplémentaires sont connues, comme une réduction de coût"
 			},
 			"your-deck": {
@@ -199,13 +606,24 @@
 					"flesh-giant-tooltip": "Lorsque vous avez Géant de chair en main ou dans le deck, afficher combien de fois les PV de votre héros ou héroïne ont changé pendant vos tours",
 					"aqir-goliath-tooltip": "Lorsque vous avez Goliath aqir en main ou dans votre deck, affiche le nombre de cartes Combo que vous avez jouées ce tour",
 					"broodqueen-shakar-tooltip": "Lorsque vous avez Reine de la couvée Sha'kar en main ou dans votre deck, affiche combien de serviteurs alliés doivent encore mourir ce tour",
-					"colossus-of-the-cold-label": "Colosse du froid",
 					"colossus-of-the-cold-tooltip": "Lorsque vous avez Colosse du froid en main ou dans votre deck, affiche le mana qu'il vous reste à dépenser en sorts",
 					"cthun-abilities-tooltip": "Lorsque vous avez C'Thun, Œil de l'empire en main ou dans votre deck, affiche combien de ses quatre capacités vous avez déclenchées",
-					"ghuun-blood-runes-label": "Runes de sang de G'huun",
-					"ghuun-blood-runes-tooltip": "Lorsque vous avez G'huun en main ou dans votre deck, affiche le nombre de runes de sang que vous avez jouées dans cette partie",
+					"ghuun-blood-runes-label": "PV de G’huun",
+					"ghuun-blood-runes-tooltip": "Lorsque vous avez G’huun en main ou dans le deck, affiche les points de vie que G’huun vole (6 plus les runes de sang jouées pendant cette partie)",
 					"nzoth-dreams-end-tooltip": "Lorsque vous avez N'Zoth, Fin du rêve en main ou dans votre deck, affiche le nombre de serviteurs avec Râle d'agonie que vous avez invoqués et son coût actuel",
-					"yshaarj-titan-bane-tooltip": "Lorsque vous avez Y'Shaarj, Fléau des titans en main ou dans votre deck, affiche le mana qu'il vous reste à dépenser en serviteurs"
+					"yshaarj-titan-bane-tooltip": "Lorsque vous avez Y'Shaarj, Fléau des titans en main ou dans votre deck, affiche le mana qu'il vous reste à dépenser en serviteurs",
+					"ancestral-automaton-tooltip": "Affiche le nombre de fois que vous avez invoqué un Automate ancestral",
+					"crash-of-thunder-label": "Foudre tonitruante",
+					"crash-of-thunder-tooltip": "Lorsque vous avez Foudre tonitruante en main ou dans le deck, affiche le nombre de sorts de Nature que vous avez lancés pendant ce tour",
+					"cthun-cost-label": "Coût de C’Thun",
+					"cthun-cost-tooltip": "Affiche la réduction de coût de C’Thun, l’Œil de l’Empire",
+					"hodir-label": "Hodir",
+					"hodir-tooltip": "Affiche combien de serviteurs Hodir, père des géants peut encore mettre à 8/8",
+					"specific-deaths": "Affiche le nombre de fois que {{cardName}} est mort chez votre adversaire",
+					"therazane-label": "Therazane",
+					"therazane-tooltip": "Affiche les écoles de sorts dont le prochain sort sera lancé deux fois",
+					"ysondre-label": "Ysondre",
+					"ysondre-tooltip": "Affiche le nombre de fois qu’Ysondre est morte pendant cette partie"
 				}
 			}
 		},
@@ -216,18 +634,12 @@
 				"link-overwolf-label": "Overwolf",
 				"perks-history-detail": "Les parties qui ne sont pas liées à un compte sont nettoyées au bout d’environ un an.",
 				"perks-lottery-detail": "Les points s’accumulent toujours localement ; connectez-vous pour les synchroniser et participer à la fin de la saison.",
-				"perks-lottery-title": "Participer au tirage de la loterie",
 				"perks-replays-detail": "Sans compte, les fichiers de replay sont supprimés après 60 jours.",
 				"perks-replays-title": "Les replays durent environ un an",
 				"perks-title": "Pourquoi se connecter ?",
 				"provider-overwolf": "Overwolf",
 				"sign-in-tooltip": "Ouvrir la page de connexion pour vous identifier avec Overwolf ou Battle.net.",
-				"unlink-battlenet-failed": "Impossible de dissocier Battle.net. Réessayez plus tard.",
-				"unlink-battlenet-tooltip": "Dissocier Battle.net de votre compte Overwolf Firestone. Chaque connexion n’affichera alors que son propre historique de parties.",
-				"unlink-overwolf-failed": "Impossible de dissocier Overwolf. Réessayez plus tard.",
-				"unlink-overwolf-label": "Overwolf",
-				"unlink-overwolf-tooltip": "Dissocier Overwolf de ce compte Battle.net Firestone. Chaque connexion n’affichera alors que son propre historique de parties.",
-				"link-battlenet-failed": "Impossible de lancer la liaison avec Battle.net. Réessayez plus tard."
+				"unlink-overwolf-label": "Overwolf"
 			},
 			"launch": {
 				"replay-ftue-button-label": "Revoir l’introduction",
@@ -236,10 +648,8 @@
 				"restore-ftue-settings-confirmation": "Restaurer les paramètres d’avant le dernier profil d’introduction ?",
 				"restore-ftue-settings-tooltip": "Remettre les paramètres d’overlay que vous aviez avant d’appliquer le dernier profil d’introduction. Les changements de profil ultérieurs n’écrasent pas cette sauvegarde.",
 				"close-app-on-game-exit-tooltip": "Quitte Firestone lorsque Hearthstone se ferme. Indisponible lorsque le récapitulatif de session à la fermeture est activé.",
-				"disable-hardware-acceleration-label": "Désactiver l’accélération matérielle",
-				"disable-hardware-acceleration-tooltip": "Dessine les fenêtres et overlays de l’application sur le processeur plutôt que sur la carte graphique. Cela réduit l’utilisation de mémoire de l’application, mais les animations et le défilement peuvent utiliser plus de processeur. Peut aussi aider en cas de problèmes d’affichage ou de fenêtres vides. Nécessite de relancer l’application.",
-				"disable-low-memory-rendering-label": "Désactiver le rendu basse mémoire",
-				"disable-overlay-shared-texture-label": "Désactiver l’overlay en jeu rapide"
+				"show-main-window-on-launch-label": "Ouvrir la fenêtre principale au lancement",
+				"show-main-window-on-launch-tooltip": "Si l’option est désactivée, Firestone démarre dans la zone de notification. Ouvrez la fenêtre principale depuis son icône."
 			},
 			"menu": {
 				"hotkeys": "Raccourcis"
@@ -248,40 +658,40 @@
 				"auto-update-trusted": "Mods de confiance uniquement",
 				"auto-update-trusted-verified": "Mods de confiance et vérifiés uniquement",
 				"import-already-present": "Ce mod est déjà dans votre liste.",
-				"import-fetch-failed": "Impossible de lire ce dépôt GitHub. Vérifiez l’URL et réessayez.",
 				"import-invalid-url": "Veuillez coller une URL de dépôt GitHub (https://github.com/owner/repo).",
 				"import-no-install-path": "Définissez d’abord l’emplacement d’installation du jeu.",
 				"import-placeholder": "URL du dépôt GitHub",
 				"source-third-party": "Tiers",
 				"source-trusted": "De confiance",
-				"source-trusted-tooltip": "Développé et maintenu par Firestone ou sous sa supervision.",
-				"source-verified-tooltip": "Développé par un tiers, avec des contrôles réguliers par Firestone. Seules les versions approuvées par Firestone sont mises à jour automatiquement.",
-				"restart-required": "Redémarrez Hearthstone pour que ce changement s’applique."
+				"restart-required": "Redémarrez Hearthstone pour que ce changement s’applique.",
+				"download-failed": "Impossible de télécharger les bibliothèques de mods. Cliquez à nouveau sur Activer les mods pour reprendre.",
+				"wrong-path-error": "L’emplacement d’installation ne ressemble pas à un dossier Hearthstone. Veuillez vérifier le chemin et cliquer à nouveau sur Vérifier."
 			},
 			"premium": {
 				"lottery-sync-tooltip": "Restaurer les points de loterie de cette saison depuis le serveur. Utilisez ceci après avoir réinstallé Firestone."
 			},
 			"localization": {
-				"ai-text": "Lorsque cette option est activée, les traductions manquantes sont complétées par du texte généré par IA. Les traductions de la communauté ont toujours la priorité. Les textes IA peuvent être imparfaits, et l’anglais reste utilisé s’il n’existe pas de traduction IA.",
-				"ai-toggle-tooltip": "Complète les textes non traduits avec du texte généré par IA. Les traductions de la communauté ont toujours la priorité."
+				"ai-text": "Lorsque cette option est activée, les traductions manquantes sont complétées par du texte généré par IA. Les traductions de la communauté ont toujours la priorité. Les textes IA peuvent être imparfaits, et l’anglais reste utilisé s’il n’existe pas de traduction IA."
 			},
 			"hotkeys": {
 				"conflict": "Cette combinaison est déjà utilisée par {{hotkey}}.",
 				"listening": "Appuyez sur une touche...",
 				"reset": "Réinitialiser",
 				"title": "Raccourcis",
-				"clear": "Effacer",
 				"listening-scroll-pools": "Appuyez sur une touche ou un bouton latéral de la souris...",
 				"live-info-tooltip": "Maintenez cette touche pendant une partie de Battlegrounds pour afficher des détails supplémentaires du classement : niveau de taverne, compagnon, triplés, série de victoires, tribus, dégâts, bibelots et quêtes.",
 				"scroll-pools": "Faire défiler les pools de cartes",
 				"scroll-pools-tooltip": "Maintenez ceci pour garder l’infobulle de la carte ouverte et faire défiler son pool de cartes. Vous pouvez assigner Maj, Ctrl ou Alt seuls, une combinaison de touches ou un bouton latéral de la souris."
 			},
-			"twitch": {
-				"another-pc-sending": "Actuellement en diffusion depuis un autre PC sur cette chaîne",
-				"sending-overlay": "Actuellement en diffusion depuis ce PC"
-			},
 			"quests": {
 				"size-label": "Taille du widget de quête"
+			},
+			"data": {
+				"refresh-signed-out": "Vous devez vous connecter pour retélécharger tout votre historique de parties depuis le serveur."
+			},
+			"widgets": {
+				"card-tooltip-canvas-fallback": "Image de carte de secours",
+				"card-tooltip-canvas-fallback-tooltip": "Si l’image d’infobulle d’une carte ne se charge pas, dessine la carte au lieu de laisser une image cassée."
 			}
 		},
 		"global": {
@@ -299,27 +709,21 @@
 				"try-again": "Réessayer"
 			},
 			"errors": {
-				"failed": "Impossible de terminer la connexion. Veuillez réessayer.",
 				"missing-link-token": "Ce lien a expiré. Ouvrez Lier Battle.net depuis l’application Firestone tout en étant connecté avec Overwolf.",
 				"missing-link-token-overwolf": "Ce lien a expiré. Ouvrez Lier Overwolf depuis l’application Firestone tout en étant connecté avec Battle.net."
 			},
 			"linking": "Redirection vers Battle.net…",
 			"linking-overwolf": "Redirection vers Overwolf…",
-			"privacy-link": "Politique de confidentialité"
+			"privacy-link": "Politique de confidentialité",
+			"web-subtitle": "Connectez-vous au site Firestone"
 		},
 		"docs": {
 			"images": {
 				"creator-code-checkout": "Page de paiement Tebex avec le champ code créateur",
-				"creator-code-field": "Champ code créateur sur la page de paiement Tebex",
-				"setup-settings": "Champ de recherche des paramètres Firestone",
 				"twitch-battlegrounds-window": "Paramètre pour capturer la fenêtre Champs de bataille sur le stream",
-				"twitch-connected": "Paramètres Twitch de Firestone après connexion d’un compte",
-				"twitch-main-window": "Paramètre pour capturer la fenêtre principale de Firestone sur le stream",
-				"twitch-settings": "Paramètres Twitch de Firestone hors connexion"
+				"twitch-main-window": "Paramètre pour capturer la fenêtre principale de Firestone sur le stream"
 			},
-			"nav-label": "Docs",
 			"page-subtitle": "Guides pour configurer Firestone, streamer, les mods et les API publiques.",
-			"page-title": "Docs",
 			"pages": {
 				"creator-code": {
 					"subtitle": "Lorsque vous vous abonnez à Firestone Premium sur Tebex, vous pouvez entrer un code créateur pour soutenir votre créateur ou créatrice de contenu préféré et obtenir une réduction."
@@ -327,26 +731,17 @@
 				"developer-resources": {
 					"blurb": "API publiques de stats pour Champs de bataille, Duels et les données de cartes.",
 					"sections": {
-						"duels": {
-							"title": "Duels"
-						},
 						"general": {
 							"title": "Général"
 						}
 					},
-					"subtitle": "API publiques Firestone pour les stats, les infographies, ou juste pour le plaisir.",
-					"title": "Ressources pour les développeurs"
+					"subtitle": "API publiques Firestone pour les stats, les infographies, ou juste pour le plaisir."
 				},
 				"lottery": {
-					"blurb": "Gagnez des points en jouant pour tenter de gagner Premium.",
-					"subtitle": "Gagnez un abonnement de 2 mois à Firestone Premium.",
-					"title": "Loterie Firestone"
+					"subtitle": "Gagnez un abonnement de 2 mois à Firestone Premium."
 				},
 				"mods": {
 					"sections": {
-						"developing": {
-							"title": "Développer des mods"
-						},
 						"requirements": {
 							"title": "Prérequis"
 						},
@@ -362,14 +757,10 @@
 							"title": "Général"
 						}
 					},
-					"subtitle": "Firestone est très configurable, mais la configuration par défaut n’est peut-être pas tout à fait adaptée à vos besoins (c’est quelque chose que je prévois d’améliorer prochainement). Vous voudrez donc probablement ajuster quelques éléments d’abord, car à peu près tout ce que vous voyez dans l’application peut être activé ou désactivé.",
 					"title": "Configurer Firestone"
 				},
 				"twitch": {
 					"sections": {
-						"firestone-configuration": {
-							"title": "Configuration Firestone"
-						},
 						"what-is-the-twitch-extension": {
 							"title": "Qu’est-ce que l’extension Twitch"
 						}
@@ -379,37 +770,30 @@
 			}
 		},
 		"downloads": {
-			"document-title": "Télécharger Firestone — www.firestoneapp.com",
 			"features": {
 				"deck-tracker": {
 					"alt": "Plateau Hearthstone avec les overlays du decktracker Firestone des deux côtés",
-					"blurb": "Voyez ce qu’il reste dans votre deck, votre main, le plateau et le cimetière — plus les cartes de l’adversaire, l’assistant des Secrets et les compteurs — pendant que vous jouez.",
-					"title": "Decktracker"
+					"blurb": "Voyez ce qu’il reste dans votre deck, votre main, le plateau et le cimetière — plus les cartes de l’adversaire, l’assistant des Secrets et les compteurs — pendant que vous jouez."
 				},
-				"lead": "Le compagnon fonctionne sans abonnement. Certains overlays ont un quota quotidien ou hebdomadaire ; Premium retire ces limites.",
-				"mods": {
-					"alt": "Paramètres Mods de Firestone listant les mods de la communauté avec des interrupteurs marche/arrêt",
-					"blurb": "Activez les mods de la communauté depuis les Paramètres — silence auto, auto-complétion de deck, ajustements de collection, et plus — avec un interrupteur chacun."
-				},
-				"overlays": {
-					"alt": "Overlay de Découverte montrant les stats d’impact à la pioche sur chaque carte proposée",
-					"blurb": "Guides de Découverte et de mulligan avec un quota quotidien gratuit pour avoir les chiffres au bon moment.",
-					"caption": "Overlay de Découverte avec stats d’impact à la pioche"
-				},
+				"lead": "Le compagnon fonctionne gratuitement. Presque toutes les fonctionnalités sont accessibles sans abonnement, et passer en Premium lève toutes les limitations.",
 				"related-cards": {
-					"alt": "Decktracker montrant les cartes liées au survol d’une carte de la liste",
 					"caption": "Cartes liées au survol",
 					"title": "Cartes liées"
 				},
 				"title": "Ce que vous obtenez gratuitement"
 			},
 			"hero": {
-				"subtitle": "Le compagnon Hearthstone gratuit : decktracker, overlays, collection, outils Champs de bataille, et plus encore.",
-				"title": "Télécharger Firestone"
+				"subtitle": "Suivi de deck, overlays, collection et outils des Champs de bataille, dans le jeu.",
+				"badge": "La version la plus stable",
+				"cta": "Télécharger Firestone",
+				"step-1-title": "Installer",
+				"step-2-text": "Ouvrez le jeu comme d’habitude.",
+				"step-2-title": "Lancer Hearthstone",
+				"step-3-text": "Firestone commence le suivi tout seul.",
+				"step-3-title": "Jouer"
 			},
 			"overwolf": {
 				"blurb": "La version publique actuelle. Nécessite l’application de bureau Overwolf.",
-				"cta": "Télécharger pour Overwolf",
 				"note": "Overwolf sera installé si vous ne l’avez pas déjà.",
 				"title": "Overwolf"
 			},
@@ -419,7 +803,7 @@
 			},
 			"standalone": {
 				"blurb": "Firestone sans Overwolf. Toujours en bêta fermée.",
-				"cta": "Télécharger Standalone"
+				"skip": "Vous voulez éviter Overwolf ?"
 			},
 			"social-proof": {
 				"carousel": {
@@ -433,7 +817,6 @@
 						"portrait-alt": "Portrait de Demoshadow"
 					},
 					"denimblue": {
-						"alt": "DenimBlue, plusieurs fois n°1 du classement Arène souterraine UE",
 						"portrait-alt": "Portrait de DenimBlue"
 					},
 					"kwanwoo": {
@@ -467,12 +850,7 @@
 				"russia-firewall-3": "Règle du Pare-feu Windows bloquant les IP Cloudflare pour Overwolf",
 				"task-manager-columns": "Onglet Détails du Gestionnaire des tâches, menu Sélectionner des colonnes"
 			},
-			"nav-label": "FAQ",
-			"page-title": "FAQ et dépannage",
 			"sections": {
-				"dns": {
-					"title": "DNS"
-				},
 				"game-is-crashing": {
 					"title": "Le jeu plante"
 				},
@@ -505,23 +883,15 @@
 				}
 			}
 		},
-		"meta": {
-			"title": "Firestone - Stats Hearthstone et analyses de la méta"
-		},
 		"monitoring": {
 			"simulator": {
 				"from": "Du",
-				"load-error": "Impossible de charger les données de précision du simulateur.",
 				"page-lead": "Suit à quel point le simulateur de combat des Champs de bataille correspond aux résultats réels des parties au fil du temps.",
 				"to": "Au",
-				"tooltip-failures": "Échecs : {{failures}}",
 				"tooltip-games": "Parties : {{games}}"
 			}
 		},
 		"nav": {
-			"download-alt": "Télécharger Firestone",
-			"downloads": "Téléchargements",
-			"home": "Accueil Firestone",
 			"premium": "Premium"
 		},
 		"premium": {
@@ -529,38 +899,16 @@
 				"previous": "Élément précédent"
 			},
 			"cta": {
-				"download": "Télécharger Firestone",
 				"get": "Obtenir Firestone"
 			},
-			"document-title": "Firestone Premium — www.firestoneapp.com",
 			"free-tier": {
 				"lead": "Firestone reste utilisable gratuitement. De nombreux overlays incluent un quota quotidien ou hebdomadaire ; Premium débloque une utilisation illimitée de ces guides.",
 				"title": "Gratuit vs Premium",
 				"unlimited": "Premium retire ces limites pour les overlays ci-dessus afin que vous ayez toujours les chiffres au bon moment."
 			},
-			"hero": {
-				"title": "Firestone Premium"
-			},
 			"sections": {
 				"battlegrounds": {
 					"items": {
-						"example-boards": {
-							"screenshots": {
-								"comp-details": {
-									"alt": "Exemples de troupes sur les détails de composition",
-									"caption": "Exemples de troupes pour la comp Pirates APM"
-								}
-							},
-							"text": "Exemples de troupes sur les détails de composition"
-						},
-						"fight-by-fight": {
-							"screenshots": {
-								"chart": {
-									"caption": "Graphique des perspectives de taux de victoires combat par combat"
-								}
-							},
-							"text": "Graphique des perspectives de taux de victoires combat par combat"
-						},
 						"hero-page-extras": {
 							"screenshots": {
 								"hero-stats": {
@@ -594,14 +942,6 @@
 							},
 							"text": "Appuyez sur Tab dans le salon pour un aperçu rapide de tous les héros"
 						},
-						"past-match-stats": {
-							"screenshots": {
-								"replays": {
-									"caption": "Stats de récapitulatif détaillées des parties passées"
-								}
-							},
-							"text": "Stats de récapitulatif détaillées des parties passées dans Replays"
-						},
 						"post-match-stats": {
 							"screenshots": {
 								"stats": {
@@ -626,60 +966,8 @@
 						}
 					}
 				},
-				"collection": {
-					"items": {
-						"per-set-stats": {
-							"screenshots": {
-								"global": {
-									"alt": "Stats détaillées de la collection globale",
-									"caption": "Stats détaillées de la collection globale"
-								},
-								"per-set": {
-									"alt": "Stats détaillées de collection par extension",
-									"caption": "Stats détaillées de collection par extension"
-								}
-							},
-							"text": "Stats détaillées de collection par extension"
-						}
-					}
-				},
-				"constructed": {
-					"items": {
-						"deck-overview": {
-							"screenshots": {
-								"details": {
-									"caption": "Aperçu du deck et replays récents"
-								}
-							},
-							"text": "Aperçu du deck et replays récents sur la page du deck"
-						},
-						"meta-by-rank": {
-							"screenshots": {
-								"archetypes": {
-									"caption": "Archétypes méta actuels pour les paliers de rang Compétitif"
-								},
-								"card-stats": {
-									"caption": "Stats détaillées des cartes au niveau de l’archétype"
-								},
-								"decks": {
-									"caption": "Decks méta actuels au rang Légende"
-								}
-							},
-							"text": "Méta actuelle par rang : decks, archétypes et stats détaillées par carte"
-						}
-					}
-				},
 				"general": {
 					"items": {
-						"discord-presence": {
-							"screenshots": {
-								"status": {
-									"alt": "Présence enrichie Discord avec des placeholders de statut personnalisés",
-									"caption": "Présence enrichie Discord avec des placeholders de statut personnalisés"
-								}
-							},
-							"text": "Présence enrichie Discord avec des placeholders de statut personnalisés"
-						},
 						"in-game-replays": {
 							"screenshots": {
 								"replay": {
@@ -709,7 +997,6 @@
 		},
 		"uninstall": {
 			"comment": {
-				"contact-label": "E-mail ou Discord (facultatif)",
 				"submit": "Envoyer",
 				"title": "Que devons-nous savoir ?"
 			},
@@ -720,8 +1007,7 @@
 			},
 			"discord-cta": "Nous écrire sur Discord",
 			"faq": {
-				"checklist": "Ouvrir la FAQ",
-				"dismiss": "Fermer"
+				"checklist": "Ouvrir la FAQ"
 			},
 			"premium": {
 				"cta": "Voir Premium",
@@ -734,7 +1020,6 @@
 			},
 			"standalone": {
 				"body": "Il existe une version qui n'a pas besoin d'Overwolf. Elle est encore en bêta fermée, mais c'est le même Firestone : suivi de deck, superpositions et le reste. Voulez-vous l'essayer ?",
-				"cta": "Télécharger Firestone Standalone",
 				"title": "Firestone sans Overwolf"
 			},
 			"thanks": {
@@ -742,32 +1027,225 @@
 			}
 		},
 		"constructed": {
-			"assemble": "Assemblage",
 			"assemble-appearance-rate": "Vue",
 			"assemble-appearance-rate-hint": "Fréquence à laquelle cette option a été proposée",
-			"assemble-base": "Base",
-			"assemble-error": "Impossible de charger les pools d’Assemblage. Veuillez réessayer plus tard.",
 			"assemble-left": "Gauche",
 			"assemble-loading": "Chargement...",
 			"assemble-pick-rate": "Choisie",
 			"assemble-pick-rate-hint": "Fréquence à laquelle l’option a été choisie lorsqu’elle était proposée",
 			"assemble-right": "Droite",
-			"cards": "Cartes"
+			"assemble-game": "partie",
+			"assemble-games": "parties",
+			"assemble-games-hint": "Parties dans lesquelles une base a été proposée. Une partie qui a assemblé plus d’une base est comptée une fois par base.",
+			"discover-games": "Fois jouée",
+			"discover-loading": "Chargement...",
+			"discover-offered": "Proposée",
+			"discover-offered-count-hint": "Nombre de fois où cette carte a été proposée",
+			"discover-picked": "Choisie",
+			"discover-search": "Rechercher une carte"
+		},
+		"account": {
+			"account-id-copied": "Identifiant de compte copié",
+			"copy-account-id": "Copier l’identifiant de compte",
+			"sign-in": "Connexion",
+			"sign-out": "Déconnexion"
+		},
+		"contribute": {
+			"admin": {
+				"action-contributor-added": "Contributeur ajouté",
+				"action-contributor-removed": "Contributeur retiré",
+				"action-contributor-updated": "Contributeur mis à jour",
+				"action-created": "Créé",
+				"action-edited": "Modifié",
+				"action-restored": "Restauré",
+				"action-unpublished": "Dépublié",
+				"add": "+ Ajouter un contributeur",
+				"add-confirm": "Ajouter",
+				"add-title": "Ajouter un contributeur",
+				"added": "{{name}} peut maintenant contribuer.",
+				"admin-hint": "Les admins peuvent tout modifier et gérer les contributeurs.",
+				"after": "Après",
+				"all-content-types": "Tout",
+				"badge": "Badge affiché sur ses conseils",
+				"before": "Avant",
+				"cancel": "Annuler",
+				"col-account": "Compte",
+				"col-action": "Action",
+				"col-actions": "Actions",
+				"col-added": "Ajouté",
+				"col-content-types": "Peut modifier",
+				"col-role": "Rôle",
+				"col-target": "Cible",
+				"col-when": "Quand",
+				"col-who": "Qui",
+				"confirm-remove": "Retirer {{name}} ? Ses conseils publiés restent en ligne, mais il ou elle ne peut plus les modifier.",
+				"confirm-restore": "Remettre ce conseil comme il était avant cette modification ?",
+				"confirm-restore-creation": "Ce conseil n’existait pas auparavant. Continuer le supprimera. Continuer ?",
+				"details": "Détails de la modification",
+				"display-name": "Nom affiché sur ses conseils",
+				"display-name-hint": "Les joueurs voient ce nom à côté de chaque conseil rédigé.",
+				"edit": "Modifier",
+				"edit-title": "Modifier le contributeur",
+				"form-error-content-types": "Choisissez au moins un contenu qu’il ou elle peut modifier.",
+				"form-error-exists": "Ce compte est déjà contributeur ({{name}}). Modifiez-le plutôt.",
+				"form-error-link": "Le lien du profil doit commencer par https://",
+				"form-error-name": "Saisissez le nom affiché sur ses conseils.",
+				"form-error-user-id": "Saisissez l’identifiant de compte.",
+				"link": "Lien du profil",
+				"link-hint": "facultatif, affiché sur ses conseils",
+				"loading": "Chargement des contributeurs et de l’activité...",
+				"nav-label": "Admin",
+				"no-activity": "Aucune modification pour le moment.",
+				"no-badge": "Aucun",
+				"no-contributors": "Aucun contributeur pour le moment.",
+				"nothing": "(rien)",
+				"remove": "Retirer",
+				"removed": "{{name}} a été retiré.",
+				"restore": "Restaurer la version d’avant",
+				"restore-creation": "Retirer ce conseil",
+				"restored": "Restauré. L’application se mettra à jour d’ici quelques heures.",
+				"role-admin": "Admin",
+				"role-author": "Auteur",
+				"save": "Enregistrer",
+				"soon": "bientôt",
+				"subtitle": "Contributeurs et historique",
+				"tab-activity": "Activité",
+				"tab-contributors": "Contributeurs · {{value}}",
+				"title": "Admin",
+				"updated": "{{name}} a été mis à jour.",
+				"user-id": "Identifiant de compte",
+				"user-id-hint": "Les joueurs le trouvent dans le menu du compte du site, sous Copier l’identifiant de compte.",
+				"user-id-placeholder": "Collez l’identifiant que le joueur a copié depuis le menu de son compte",
+				"view": "Voir",
+				"you": "(vous)"
+			},
+			"comps": {
+				"nav-label": "Compos"
+			},
+			"errors": {
+				"audit_entry_not_found": "Cette modification est introuvable.",
+				"contradictory_tribes": "Un type ne peut pas être à la fois présent et absent.",
+				"contributor_not_found": "Ce contributeur a déjà été retiré.",
+				"duplicate_variant": "Vous avez déjà un conseil pour cette variante. Modifiez celui-là.",
+				"generic": "Impossible de publier ({{code}}). Votre brouillon est conservé sur cet appareil.",
+				"generic-admin": "Cela n’a pas fonctionné ({{code}}). Réessayez.",
+				"invalid_json": "La requête est mal formée.",
+				"invalid_role": "Rôle inconnu.",
+				"invalid_token": "Vous avez été déconnecté. Reconnectez-vous pour publier.",
+				"invalid_url": "Le lien du profil doit commencer par https://",
+				"item_not_found": "Ce conseil n’existe plus.",
+				"last_admin": "Il doit toujours y avoir au moins un admin.",
+				"network_error": "Impossible de joindre le serveur. Vérifiez votre connexion et réessayez.",
+				"not_a_contributor": "Votre compte ne peut plus publier de conseils.",
+				"not_an_admin": "Votre compte n’est plus admin.",
+				"not_configured": "Contribuer n’est pas disponible pour le moment.",
+				"not_your_item": "Ce conseil appartient à un autre auteur.",
+				"required": "Certains champs obligatoires sont vides.",
+				"signed_out": "Vous avez été déconnecté. Reconnectez-vous pour publier.",
+				"too_long": "Ce conseil est trop long.",
+				"unknown_content_type": "L’un des types de contenu n’existe pas.",
+				"unknown_hero": "Ce héros n’est pas un héros des Champs de bataille.",
+				"unknown_hero_power": "Ce pouvoir héroïque n’est pas encore connu.",
+				"unknown_tribe": "L’un des types n’est pas un type des Champs de bataille."
+			},
+			"hero-power-tips": {
+				"add-hero": "+ Spécifique au héros",
+				"add-lobby": "+ Contexte de salon",
+				"basic-tip": "Conseil de base",
+				"confirm-delete": "Supprimer ce conseil ? Les joueurs ne le verront plus.",
+				"curve-3-on-3": "3 sur 3",
+				"curve-basic": "Basique",
+				"curves": "Courbes",
+				"delete": "Supprimer",
+				"deleted": "Conseil supprimé.",
+				"details": "Détails",
+				"details-hint": "facultatif · application seulement",
+				"details-placeholder": "Quand s’en écarter, quoi chercher dans le magasin",
+				"discard": "Abandonner",
+				"edit": "Modifier",
+				"filter-all": "Tous",
+				"filter-label": "Filtre",
+				"filter-none": "Pas encore de conseil",
+				"filter-update": "À mettre à jour",
+				"form-title-edit-basic": "Modifier le conseil de base",
+				"form-title-edit-hero": "Modifier le conseil spécifique au héros",
+				"form-title-edit-lobby": "Modifier le conseil de contexte de salon",
+				"form-title-new-basic": "Nouveau conseil de base",
+				"form-title-new-hero": "Nouveau conseil spécifique au héros",
+				"form-title-new-lobby": "Nouveau conseil de contexte de salon",
+				"hero": "Héros",
+				"language": "Langue",
+				"loading": "Chargement de vos conseils...",
+				"lobby": "Lorsque le salon",
+				"lobby-has": "a",
+				"lobby-lacks": "n’a pas",
+				"lobby-pick": "Choisissez un ou plusieurs types",
+				"lobby-summary-has": "Affiché lorsque tous ces types sont dans le salon : {{tribes}}",
+				"lobby-summary-lacks": "Affiché lorsqu’aucun de ces types n’est dans le salon : {{tribes}}",
+				"nav-label": "Conseils de pouvoir héroïque",
+				"no-variants": "Aucune variante. Ajoutez-en une lorsqu’un héros ou un salon change la façon de jouer ce pouvoir.",
+				"optional": "facultatif",
+				"outdated-title": "Pouvoir modifié – {{value}} de vos conseils ont été rédigés pour l’ancien texte",
+				"pick-power": "Choisissez un pouvoir héroïque, ou appuyez sur Ctrl+K",
+				"power-changed": "Patch {{patch}} – pouvoir modifié",
+				"power-count": "{{shown}} sur {{total}} pouvoirs héroïques",
+				"powers-label": "Pouvoirs héroïques",
+				"preview": "Aperçu",
+				"preview-app": "Application",
+				"preview-app-colors": "Couleurs de l’application",
+				"preview-empty": "Votre conseil apparaît ici",
+				"preview-game": "En jeu",
+				"preview-panel-title": "Conseils Firestone",
+				"published": "Conseil publié. Il sera disponible dans l’application d’ici quelques heures.",
+				"rewrite": "Réécrire pour le texte actuel",
+				"save": "Enregistrer et publier",
+				"search-label": "Rechercher des pouvoirs héroïques",
+				"search-placeholder": "Pouvoir, héros ou texte de carte",
+				"status-count": "{{value}} conseil(s)",
+				"status-draft-kept": "Votre brouillon est conservé sur cet appareil",
+				"status-draft-saved": "Brouillon enregistré en local · {{time}}",
+				"status-editing": "Modification de votre conseil publié",
+				"status-new": "Nouveau brouillon",
+				"status-none": "Pas encore de conseil",
+				"status-published": "Publié",
+				"status-publishing": "Publication...",
+				"status-restored": "Brouillon non enregistré restauré",
+				"status-update": "À mettre à jour",
+				"subtitle": "Conseils que les joueurs voient en survolant un pouvoir héroïque dans les Champs de bataille",
+				"tip": "Conseil",
+				"tip-hint": "affiché en jeu et dans l’application",
+				"tip-placeholder": "Que doit faire un joueur avec ce pouvoir ?",
+				"title": "Conseils de pouvoir héroïque",
+				"used-by": "Utilisé par {{heroes}}",
+				"variant-hero": "{{hero}} uniquement",
+				"variant-lobby-empty": "Contexte de salon",
+				"variant-lobby-has": "{{tribes}} dans le salon",
+				"variant-lobby-lacks": "Pas de {{tribes}} dans le salon",
+				"variants": "Variantes",
+				"variants-hint": "affichées à la place de votre conseil de base lorsqu’elles correspondent",
+				"write-basic": "+ Écrire votre conseil de base",
+				"write-basic-hint": "Affiché dès qu’un joueur survole ce pouvoir",
+				"your-tips": "Vos conseils",
+				"your-tips-hint": "Personne d’autre ne les voit ici."
+			},
+			"nav-label": "Contribuer",
+			"trinkets": {
+				"nav-label": "Bibelots"
+			},
+			"unavailable": {
+				"body": "Les contributions sont ouvertes aux comptes approuvés. Pour devenir contributeur, envoyez votre identifiant de compte (depuis le menu du compte) à l’équipe Firestone.",
+				"home": "Retour à Firestone",
+				"title": "Cette section n’est pas disponible pour votre compte"
+			}
 		}
-	},
-	"quests": {
-		"bloodstones-daily": "Pierres de sang quotidiennes"
 	},
 	"androidDeckTracker": {
 		"onboarding": {
-			"barSubtitle": "Decktracker",
-			"barTitle": "Firestone",
 			"developerSettings": "Ouvrir les options pour les développeurs",
 			"grant": "Autoriser",
 			"intro": "Veuillez lire les instructions ci-dessous pour configurer Firestone sur votre téléphone. C’est une configuration unique, et nous vous guidons étape par étape pour que ce soit aussi simple que possible.",
 			"openSettings": "Ouvrir les paramètres",
 			"overlayPermissionBody": "La liste de deck est uniquement affichée : elle ne capte pas les appuis destinés à Hearthstone. Un petit bouton l’affiche ou la masque.",
-			"pairHint": "Saisissez le code d'association ici",
 			"pairNotReady": "L'écran du code s'est fermé avant l'envoi du code. Affichez à nouveau le code, laissez cet écran ouvert et appuyez sur Saisir le code dans la notification Firestone.",
 			"pairWrongCode": "Ce code n’a pas fonctionné. Saisissez le code affiché à l’écran.",
 			"readyTitle": "Le tracker est en cours d’exécution",
@@ -795,8 +1273,6 @@
 			"stepWirelessTitle": "Activer le débogage sans fil",
 			"title": "Configurer le decktracker",
 			"closeAppNote": "Cela arrête le suivi et retire l'avis. Forcer la fermeture de l'appli depuis le téléphone ne peut pas envoyer son propre avis.",
-			"discord": "Discord",
-			"pairEnter": "Saisir le code",
 			"pairReady": "Appuyez sur Saisir le code. Saisissez les 6 chiffres dans le champ qui s'ouvre sur cette notification. Ne retournez pas dans Firestone tant que le code n'est pas envoyé.",
 			"reportButton": "Envoyer le rapport",
 			"reportFailed": "Le rapport n'a pas pu être envoyé. Réessayez lorsque vous êtes en ligne.",
@@ -804,18 +1280,15 @@
 			"reportSending": "Envoi du rapport…",
 			"reportSent": "Rapport envoyé. Merci.",
 			"reportTitle": "Signaler un bug",
-			"stepDeveloperStillOff": "Les options pour les développeurs sont encore désactivées. Appuyez sur Continuer, puis appuyez 7 fois sur Numéro de build dans l'écran d'infos du téléphone.",
 			"stepWifi": "Appuyez sur Continuer. Rejoignez un réseau Wi-Fi, puis revenez. Le débogage sans fil ne peut pas être activé sans réseau."
 		},
 		"overlay": {
-			"notificationTitle": "Firestone enregistre",
 			"opponent": "Adversaire",
 			"format": {
 				"twist": "Imprévu",
 				"wild": "Libre"
 			},
 			"league": {
-				"diamond": "Diamant",
 				"gold": "Or",
 				"platinum": "Platine"
 			},
@@ -828,7 +1301,6 @@
 			},
 			"readerAttached": "Non relié",
 			"readerTracking": "Suivi",
-			"restartText": "Firestone a rétabli un paramètre que Hearthstone ne lit qu'au démarrage. Quittez complètement Hearthstone et rouvrez-le pour que les parties continuent d'être enregistrées.",
 			"restartTitle": "Redémarrer Hearthstone"
 		}
 	}

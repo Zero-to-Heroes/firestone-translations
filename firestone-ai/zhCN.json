@@ -1,59 +1,86 @@
 {
 	"settings": {
 		"general": {
-			"hotkeys": {
-				"clear": "清除"
-			},
-			"quests": {
-				"size-label": "任务组件大小"
+			"launch": {
+				"show-main-window-on-launch-label": "启动时打开主窗口",
+				"show-main-window-on-launch-tooltip": "关闭此选项时，Firestone 会在系统托盘中启动。点击托盘图标即可打开主窗口。"
 			}
 		},
 		"decktracker": {
-			"global": {
-				"flavor-text-size": "风味趣文大小"
-			},
 			"opponent-deck": {
 				"counters": {
-					"cthun-abilities-label": "克苏恩的技能",
-					"cthun-abilities-tooltip": "当“克苏恩，帝国之眼”在对手的手牌、牌库或战场上时，显示其已触发四种技能中的几种"
+					"cards-discarded-tooltip": "显示对手在本局对战中弃掉的卡牌数量",
+					"cthun-cost-label": "克苏恩费用",
+					"cthun-cost-tooltip": "显示“克苏恩，帝国之眼”的法力值消耗减免",
+					"hero-attacks-tooltip": "显示对手的英雄在本局对战中攻击的次数"
+				}
+			},
+			"your-deck": {
+				"counters": {
+					"ancestral-automaton-tooltip": "显示你在本局对战中召唤“星元自动机”的次数",
+					"crash-of-thunder-label": "雷电崩鸣",
+					"crash-of-thunder-tooltip": "当“雷电崩鸣”在你的手牌或牌库中时，显示你本回合已施放的自然法术数量",
+					"cthun-cost-label": "克苏恩费用",
+					"cthun-cost-tooltip": "显示“克苏恩，帝国之眼”的法力值消耗减免",
+					"specific-deaths": "显示对手的“{{cardName}}”在本局对战中死亡的次数",
+					"ysondre-label": "伊森德雷",
+					"ysondre-tooltip": "显示本局对战中“伊森德雷”的死亡次数"
 				}
 			}
-		},
-		"global": {
-			"mark-all-read": "全部标为已读"
 		}
-	},
-	"website": {
-		"constructed": {
-			"assemble": "拼装",
-			"assemble-appearance-rate": "出现",
-			"assemble-appearance-rate-hint": "该选项被提供的频率",
-			"assemble-base": "基础",
-			"assemble-error": "无法加载拼装池。请稍后再试。",
-			"assemble-left": "左",
-			"assemble-loading": "加载中...",
-			"assemble-pick-rate": "选取",
-			"assemble-pick-rate-hint": "该选项在被提供时被选取的频率",
-			"assemble-right": "右",
-			"cards": "卡牌"
-		}
-	},
-	"decktracker": {
-		"card-tooltip-assemble-appearance-rate": "出现率",
-		"card-tooltip-assemble-other-class": "非{{ class }}",
-		"card-tooltip-assemble-pick": "选取",
-		"card-tooltip-assemble-pick-rate": "选取率",
-		"card-tooltip-assemble-sort-by": "排序",
-		"gift-reborn-from": "复生自<br/>{{value}}"
 	},
 	"counters": {
-		"cthun-abilities": {
-			"opponent": "你的对手在本局对战中已触发克苏恩的4个技能中的{{value}}个"
+		"crash-of-thunder": {
+			"player": "你本回合已施放了{{value}}个自然法术。“雷电崩鸣”的法力值消耗为{{cost}}"
 		}
 	},
-	"global": {
-		"mechanics": {
-			"cards_discarded_this_game": "弃牌"
+	"app": {
+		"replay-viewer": {
+			"bg": {
+				"anomaly": "畸变",
+				"combat": "战斗",
+				"combat-details": "逐步",
+				"combat-end": "结束",
+				"combat-start": "开始",
+				"combat-summary": "摘要",
+				"combat-vs": "对战{{hero}}",
+				"damage": "{{n}}点伤害",
+				"discover": "发现",
+				"eliminated": "已淘汰",
+				"empty-board": "场上没有随从",
+				"empty-shop": "鲍勃没什么可卖的",
+				"end": "结束",
+				"events": "事件",
+				"game-info": "对局信息",
+				"gold": "铸币",
+				"health-graph": "玩家生命值",
+				"hero-selection": "选择英雄",
+				"mmr": "排名积分",
+				"picked": "已选",
+				"place": {
+					"1": "第一",
+					"2": "第二",
+					"3": "第三",
+					"4": "第四",
+					"5": "第五",
+					"6": "第六",
+					"7": "第七",
+					"8": "第八"
+				},
+				"recruit": "招募",
+				"result": {
+					"lost": "负",
+					"tied": "平",
+					"won": "胜"
+				},
+				"round": "第{{n}}回合",
+				"rounds": "回合",
+				"run": "回合",
+				"tavern-opens": "第{{n}}回合：酒馆开门",
+				"tier": "酒馆等级",
+				"tribes": "本局随从类型",
+				"versus": "对阵"
+			}
 		}
 	}
 }

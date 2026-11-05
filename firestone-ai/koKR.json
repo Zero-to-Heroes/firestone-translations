@@ -17,6 +17,9 @@
 					"label": "영웅 능력 매트릭스",
 					"tooltip": "직업과 영웅 능력 조합별 승률 매트릭스를 표시합니다"
 				}
+			},
+			"menu": {
+				"cards": "카드"
 			}
 		},
 		"battlegrounds": {
@@ -31,6 +34,15 @@
 					"example-boards-locked-tooltip": "프리미엄을 구독하면 게임 종료 시 이 조합이 고 MMR에서 어떤 모습인지 예시를 볼 수 있습니다"
 				},
 				"loading-example-boards": "예시 보드를 불러오는 중"
+			},
+			"hero-power-tips": {
+				"title": "Firestone 팁",
+				"variant-hero": "{{hero}} 전용",
+				"variant-lobby-has": "로비에 {{tribes}}",
+				"variant-lobby-lacks": "로비에 {{tribes}} 없음"
+			},
+			"strategies": {
+				"outdated": "이 영웅 능력의 이전 버전 기준으로 작성됨"
 			}
 		},
 		"decktracker": {
@@ -52,6 +64,13 @@
 					"today": "오늘",
 					"today-tooltip": "로컬 자정 이후 플레이한 게임"
 				}
+			},
+			"menu": {
+				"cards-header": "카드"
+			},
+			"meta": {
+				"load-error": "연결을 확인하고 다시 시도하세요.",
+				"load-error-title": "이 통계를 불러오지 못했습니다"
 			}
 		},
 		"lottery": {
@@ -113,6 +132,356 @@
 				"message": "새 Firestone 버전({{version}})이 다운로드되었습니다.",
 				"restart": "재시작",
 				"title": "Firestone 업데이트"
+			}
+		},
+		"cards": {
+			"back-to-assemble": "모든 조립 카드",
+			"back-to-discover": "모든 발견 카드",
+			"stats": "통계"
+		},
+		"feature-spotlights": {
+			"cardTooltipUseCanvasFallback": {
+				"blurb": "카드 이미지를 불러오지 못하면 카드를 직접 그립니다. 기본적으로 꺼져 있습니다.",
+				"title": "없는 카드 이미지 그리기"
+			},
+			"cardsDiscoverAssembleTabs": {
+				"blurb": "대전과 투기장에 발견·조립 통계가 있는 카드 탭이 있습니다. 조립 풀은 직업별로 걸러 볼 수 있습니다.",
+				"title": "발견 및 조립 통계"
+			},
+			"opponentGhuunBloodRunesCounter": {
+				"blurb": "상대 그훈이 훔치는 생명력을 표시합니다. 기본적으로 꺼져 있습니다.",
+				"title": "상대 그훈 생명력 카운터"
+			},
+			"opponentHodirCounter": {
+				"blurb": "상대의 거인의 아버지 호디르가 하수인 능력치를 8/8로 만들 수 있는 남은 횟수를 표시합니다.",
+				"title": "상대 호디르 카운터"
+			},
+			"opponentNzothDreamsEndCounter": {
+				"blurb": "상대가 소환한 죽음의 메아리 하수인 수와 느조스의 현재 비용을 표시합니다.",
+				"title": "상대 느조스, 꿈의 끝 카운터"
+			},
+			"playerHodirCounter": {
+				"blurb": "거인의 아버지 호디르가 하수인 능력치를 8/8로 만들 수 있는 남은 횟수를 표시합니다.",
+				"title": "호디르 카운터"
+			},
+			"replayViewerV2": {
+				"blurb": "주요 순간, 보드, 덱 목록이 있는 새 화면에서 대전 리플레이를 시청합니다. 이전 화면으로 되돌릴 수 있습니다.",
+				"title": "새 대전 리플레이 화면"
+			}
+		},
+		"replay-viewer": {
+			"action-view": {
+				"added-to-hand": "손패로",
+				"added-to-their-hand": "상대 손패로",
+				"added-to-your-hand": "내 손패로",
+				"after": "이후",
+				"base": "기반",
+				"before": "이전",
+				"bottom-taken": "아래 절반을 가져옴",
+				"choice-tag": "선택 · {{kind}}",
+				"decided": "{{seconds}}초 만에 결정",
+				"deck-change": "덱 {{before}}장 → {{after}}장 · 마나 {{cost}}",
+				"drawn": "뽑음",
+				"end-of-game": "게임 종료",
+				"forged": "제련",
+				"from-their-hand": "상대 손패에서",
+				"from-your-hand": "내 손패에서",
+				"half": {
+					"first": "앞 절반",
+					"second": "뒤 절반"
+				},
+				"kind": {
+					"adapt": "적응",
+					"assemble": "조립",
+					"choose-one": "선택",
+					"discover": "발견",
+					"dredge": "인양"
+				},
+				"left-option": "왼쪽",
+				"not-picked": "선택 안 함",
+				"not-used": "사용 안 함",
+				"opponent-forged": "상대가 카드를 제련했습니다",
+				"opponent-offered": "상대가 받은 제안",
+				"opponent-traded": "상대가 카드를 교환했습니다",
+				"other-option": "다른 쪽",
+				"picked": "선택함",
+				"picked-option": "고른 쪽",
+				"progress": "{{position}} / {{count}}단계 · {{elapsed}} / {{total}}",
+				"restart": "멀리건부터 다시",
+				"result-label": "결과",
+				"result": {
+					"conceded": "항복",
+					"defeat": "패배",
+					"tie": "무승부",
+					"victory": "승리"
+				},
+				"right-option": "오른쪽",
+				"shuffled": "덱에 섞음",
+				"side-option": "옆 선택",
+				"stat": {
+					"duration": "시간",
+					"turns": "턴"
+				},
+				"top-taken": "위 절반을 가져옴",
+				"turn": "턴 {{turn}}",
+				"turn-source": "턴 {{turn}} · {{source}}",
+				"watch-key-moments": "주요 순간 {{count}}개 보기",
+				"you-forged": "카드를 제련했습니다",
+				"you-offered": "내가 받은 제안",
+				"you-traded": "카드를 교환했습니다"
+			},
+			"banner": {
+				"back-to-old": "이전 화면으로 돌아가기",
+				"new-viewer": "새 리플레이 화면을 사용 중입니다."
+			},
+			"bg": {
+				"anomaly": "변칙",
+				"combat": "전투",
+				"combat-details": "한 수씩",
+				"combat-end": "종료",
+				"combat-start": "시작",
+				"combat-summary": "요약",
+				"combat-vs": "전투: {{hero}}",
+				"damage": "피해 {{n}}",
+				"discover": "발견",
+				"eliminated": "탈락",
+				"empty-board": "보드에 하수인이 없습니다",
+				"empty-shop": "밥이 팔 것이 없습니다",
+				"end": "종료",
+				"events": "이벤트",
+				"game-info": "게임 정보",
+				"gold": "골드",
+				"health-graph": "플레이어 체력",
+				"hero-selection": "영웅 선택",
+				"mmr": "레이팅",
+				"picked": "선택",
+				"place": {
+					"1": "1위",
+					"2": "2위",
+					"3": "3위",
+					"4": "4위",
+					"5": "5위",
+					"6": "6위",
+					"7": "7위",
+					"8": "8위"
+				},
+				"recruit": "모집",
+				"result": {
+					"lost": "패배",
+					"tied": "무승부",
+					"won": "승리"
+				},
+				"round": "{{n}}라운드",
+				"rounds": "라운드",
+				"run": "라운드",
+				"tavern-opens": "{{n}}라운드: 선술집이 열립니다",
+				"tier": "선술집 단계",
+				"tribes": "이번 판의 종족",
+				"versus": "대"
+			},
+			"coming-soon": {
+				"text": "전장과 용병단 리플레이는 아직 모바일에서 볼 수 없습니다. 컴퓨터에서 이 페이지를 여세요.",
+				"title": "모바일 버전 준비 중"
+			},
+			"common": {
+				"close": "닫기",
+				"download-xml": "XML 다운로드"
+			},
+			"decklists": {
+				"cards": "카드 {{count}}장",
+				"code-copied": "덱 코드를 복사했습니다",
+				"copy-code": "덱 코드 복사",
+				"export": "덱 내보내기",
+				"no-opponent-card": "이 리플레이에는 상대 카드가 나오지 않습니다.",
+				"seen": "30장 중 {{count}}장 확인",
+				"unknown-deck": "이 리플레이에서는 플레이어의 덱을 알 수 없습니다."
+			},
+			"error": {
+				"damaged": "파일이 손상되었거나, 불러오는 동안 연결이 끊겼습니다.",
+				"missing": "리플레이가 없거나 링크가 잘못되었습니다.",
+				"title": "이 리플레이는 재생할 수 없습니다",
+				"try-again": "다시 시도",
+				"unsupported": "이 게임 유형은 아직 뷰어에서 지원하지 않습니다."
+			},
+			"header": {
+				"age": {
+					"just-now": "방금"
+				},
+				"class": {
+					"deathknight": "죽음의 기사",
+					"demonhunter": "악마사냥꾼"
+				},
+				"copy-link": "이 시점 링크 복사",
+				"decklists": "덱 목록",
+				"duration": {
+					"hours": "{{hours}}시간 {{minutes}}분",
+					"minutes": "{{value}}분",
+					"seconds": "{{value}}초"
+				},
+				"firestone-hint": "반응이 없으면 Firestone이 설치되어 실행 중인지 확인하세요.",
+				"format": {
+					"classic": "클래식",
+					"standard": "정규",
+					"twist": "변칙",
+					"wild": "야생"
+				},
+				"link-copied": "링크를 복사했습니다",
+				"mode": {
+					"arena": "투기장",
+					"arena-underground": "지하 투기장",
+					"battlegrounds": "전장",
+					"casual": "일반전",
+					"duels": "결투",
+					"friendly": "친선전",
+					"practice": "연습",
+					"ranked": "등급전",
+					"tavern-brawl": "선술집 난투"
+				},
+				"rank": {
+					"legend": "전설",
+					"legend-number": "전설 #{{rank}}"
+				},
+				"result": {
+					"defeat": "패배",
+					"tie": "무승부",
+					"victory": "승리"
+				},
+				"share": "리플레이 공유",
+				"shortcut": {
+					"play-pause": "재생 / 일시 정지",
+					"speed": "속도 변경",
+					"step": "이전 / 다음 단계",
+					"turn": "이전 / 다음 턴",
+					"view": "보드와 행동 보기 전환"
+				},
+				"shortcuts": "키보드 단축키",
+				"turns": "{{count}}턴",
+				"versus": "{{mine}} 대 {{opponent}}",
+				"view-in-firestone": "하스스톤 클라이언트에서 보기"
+			},
+			"hero-strip": {
+				"corpses": "시체",
+				"deck": "덱",
+				"locked": "{{count}} 잠김",
+				"mana": "마나",
+				"overload": "다음 턴 과부하 {{count}}",
+				"playing": "진행 중",
+				"quest": "퀘스트",
+				"secret": "비밀 ?",
+				"spell-damage": "주문 공격력 +{{amount}}"
+			},
+			"loading": {
+				"label": "리플레이 준비 중",
+				"parsing": "리플레이 분석 중",
+				"preparing": "리플레이를 준비하는 중",
+				"progress": "리플레이 준비 중 · {{turn}} / {{total}}턴"
+			},
+			"minion": {
+				"ability-available": "사용 가능",
+				"ability-used": "사용함",
+				"old-god-abilities": "고대 신의 능력"
+			},
+			"momentum": {
+				"chart": "게임 동안의 영웅 생명력과 보드 전력",
+				"key-moment": "주요 순간 {{number}}: {{label}}",
+				"title": "게임의 흐름",
+				"turn": "턴"
+			},
+			"mulligan": {
+				"coin": "동전을 뽑음",
+				"replaced": "교체함"
+			},
+			"stage": {
+				"cast": "시전한 주문",
+				"deck-title": "{{name}} · 덱",
+				"enchantments": "마법 부여",
+				"keyword": {
+					"colossal": "거수",
+					"corrupt": "타락",
+					"echo": "잔상",
+					"infuse": "주입",
+					"magnetic": "합체",
+					"outcast": "추방자",
+					"starship": "우주선",
+					"titan": "티탄",
+					"twinspell": "이중 주문"
+				},
+				"never-revealed": "한 번도 공개되지 않음",
+				"now-playing": "재생 중"
+			},
+			"story-panel": {
+				"empty": "이 필터에 해당하는 내용이 없습니다.",
+				"everything": "전체",
+				"filter": "기록 필터",
+				"hint": "줄을 누르면 그 시점으로 이동합니다",
+				"key-moments": "주요 순간",
+				"title": "이벤트",
+				"turn-title": "턴 {{turn}} · {{side}}"
+			},
+			"story": {
+				"a-card": "카드",
+				"a-card-capitalized": "카드",
+				"a-secret": "비밀",
+				"badge": {
+					"choice": "선택",
+					"forge": "제련",
+					"trade": "교환"
+				},
+				"cards-count": "카드 {{count}}장",
+				"casts": "{{caster}}의 {{spells}} 시전",
+				"damage-to-targets": "{{amount}} 피해, 대상 {{count}}곳",
+				"discover": "발견",
+				"discover-from": "발견: {{source}}",
+				"forged": "{{card}} 제련",
+				"is-forged": "{{card}} 제련됨",
+				"key-moment": {
+					"big-hit": "강타",
+					"board-wipe": "전멸",
+					"secret": "비밀 공개",
+					"swing": "스윙"
+				},
+				"lethal": "레탈",
+				"mana-change": "마나 {{before}} → {{after}}",
+				"mulligan-done": "멀리건 완료",
+				"mulligan": {
+					"kept-all": "{{who}} · 카드 {{count}}장 모두 유지",
+					"kept-replaced": "{{who}} · 유지 {{kept}}장 · 교체 {{replaced}}",
+					"replaced": "{{who}} · 교체 {{replaced}}",
+					"replaced-all": "{{who}} · {{replaced}} 모두 교체",
+					"title": "멀리건"
+				},
+				"opponent": "상대",
+				"picked": "{{cards}} 선택",
+				"plays": "{{who}}의 {{what}} 사용",
+				"secret-revealed": "비밀 공개: {{secret}}",
+				"source-dealing": "{{source}}, {{damage}} 피해",
+				"source-deals": "{{source}}의 {{damage}} 피해",
+				"trade-cost": "마나 1",
+				"traded": "{{card}} 카드를 다른 카드로 교환",
+				"turn": "턴 {{turn}}",
+				"turn-mana": "마나 {{mana}}",
+				"turn-steps": "{{count}}단계",
+				"you": "나"
+			},
+			"transport": {
+				"change-speed": "재생 속도 변경",
+				"copy-link": "이 시점 링크 복사",
+				"next-step": "다음 단계 (오른쪽)",
+				"next-turn": "다음 턴 (Ctrl + 오른쪽)",
+				"pause": "일시 정지 (스페이스)",
+				"play": "재생 (스페이스)",
+				"previous-step": "이전 단계 (왼쪽)",
+				"previous-turn": "이전 턴 (Ctrl + 왼쪽)",
+				"speed": "{{speed}}배속"
+			},
+			"turn": {
+				"mine": "내 턴",
+				"opponent": "상대의 턴"
+			},
+			"view-toggle": {
+				"action": "행동 보기",
+				"board": "보드",
+				"label": "보기"
 			}
 		}
 	},
@@ -318,7 +687,38 @@
 		"xl-questline-warrior": "XL 연속 퀘스트 전사",
 		"xl-shudderwock-shaman": "XL 셔더워크 주술사",
 		"xl-tog-dh": "XL 토그 악마사냥꾼",
-		"xl-warlock": "XL 흑마법사"
+		"xl-warlock": "XL 흑마법사",
+		"ammunae-druid": "아뮤내 드루이드",
+		"ammunae-nzoth-druid": "아뮤내 느조스 드루이드",
+		"armor-warrior": "방어도 전사",
+		"bbb-nzoth-handbuff-dk": "혈기 느조스 손패 강화 죽음의 기사",
+		"beast-attack-druid": "야수 공격 드루이드",
+		"beast-druid": "야수 드루이드",
+		"bfu-nzoth-handbuff-dk": "무지개 느조스 손패 강화 죽음의 기사",
+		"cthun-dh": "크툰 악마사냥꾼",
+		"cthun-druid": "크툰 드루이드",
+		"cthun-priest": "크툰 사제",
+		"cthun-shaman": "크툰 주술사",
+		"cthun-warlock": "크툰 흑마법사",
+		"dragon-mage": "용족 마법사",
+		"dragon-warlock": "용족 흑마법사",
+		"harold-cthun-warlock": "Harold 크툰 흑마법사",
+		"holy-paladin": "신성 성기사",
+		"j-Lock": "J 흑마법사",
+		"mech-hunter": "기계 사냥꾼",
+		"medivh-priest": "메디브 사제",
+		"nzoth-druid": "느조스 드루이드",
+		"nzoth-hunter": "느조스 사냥꾼",
+		"nzoth-mech-hunter": "느조스 기계 사냥꾼",
+		"nzoth-priest": "느조스 사제",
+		"nzoth-rogue": "느조스 도적",
+		"nzoth-warlock": "느조스 흑마법사",
+		"nzoth-warrior": "느조스 전사",
+		"summoner-mage": "소환사 마법사",
+		"void-cthun-dh": "공허 크툰 악마사냥꾼",
+		"yogg-paladin": "요그 성기사",
+		"yshaarj-warrior": "이샤라즈 전사",
+		"zee-cthun-shaman": "지 크툰 주술사"
 	},
 	"battlegrounds": {
 		"battle": {
@@ -330,7 +730,7 @@
 				"expired": "만료됨",
 				"expires-soon": "곧 만료",
 				"guaranteed": "보장",
-				"guaranteed-disabled-tooltip": "{{value}}턴부터 제안되는 하수인 중 하나는 가장 많은 종족입니다",
+				"guaranteed-disabled-tooltip": "{{value}}턴부터 가장 많은 종족의 하수인 하나가 확정됩니다. {{value2}}턴부터는 두 개가 확정됩니다.",
 				"guaranteed-type": "보장 종족",
 				"has-condition": "이 선물에는 추가 조건이 있습니다. 여기에 마우스를 올려 이유를 보거나, 하수인에 마우스를 올려 확인해 보세요.",
 				"others": "기타",
@@ -372,14 +772,15 @@
 					"stitched-salvager": "봉합된 인양자에게는 제안되지 않습니다",
 					"lobby-no-aberration": "로비에 돌연변이가 있을 때만 제안됩니다",
 					"requires-activate": "활성화 하수인에게만 제안됩니다",
-					"requires-discards-this-game": "이번 게임에서 카드가 버려졌어야 합니다"
+					"requires-discards-this-game": "이번 게임에서 카드가 버려졌어야 합니다",
+					"relentless-deflector": "끈질긴 방어병에는 은밀함이 제안되지 않습니다"
 				},
 				"restriction": {
 					"battlecry-before-5": "전투의 함성과 선택 하수인은 5턴 전에는 제안되지 않습니다.",
 					"battlecry-choose-one": "전투의 함성과 선택 하수인은 복시, 복제, 금박, 메아리치는 목소리만 받을 수 있습니다.",
 					"deathrattle-stats": "죽음의 메아리 하수인은 능력치 증가 선물 중 날카로운 검 또는 죽음의 포옹만 받을 수 있습니다.",
 					"golemancy-salvager": "골렘술은 봉합된 인양자에게 제안될 수 없습니다.",
-					"guaranteed-type": "6턴부터 제안되는 하수인 3장 중 하나는 가장 많은 종족입니다.",
+					"guaranteed-type": "{{value}}턴부터 가장 많은 종족의 하수인 하나가 확정으로 제안되고, {{value2}}턴부터는 두 개가 제안됩니다.",
 					"lobby-bans": "저항과 초월은 용족 로비에서 금지됩니다. 적대는 독소 또는 독성 하수인에게 금지됩니다. 카리스마는 7단계 하수인에게 금지됩니다.",
 					"no-magnetic-sell-hand": "자석 하수인, 판매 시 효과가 있는 하수인, 손에 남겨 두는 하수인은 어둠의 선물을 받을 수 없습니다.",
 					"rarer-gifts": "금박, 지속되는 공포, 티탄의 힘, 무적은 다른 선물보다 드뭅니다.",
@@ -489,7 +890,11 @@
 		"elemental_azerite": "아제라이트 정령",
 		"elemental_tempest": "템페스트 정령",
 		"mech_apm": "APM 기계",
-		"quilboar_felboar_spam": "펠보어 스팸 가시멧돼지"
+		"quilboar_felboar_spam": "펠보어 스팸 가시멧돼지",
+		"murloc_end_of_turn": "턴 종료 멀록",
+		"quilboar_gem_spam": "보석 난사 가시멧돼지",
+		"undead_apm": "APM 언데드",
+		"undead_eternal_knight": "영원의 기사 언데드"
 	},
 	"counters": {
 		"ancestral-automaton": {
@@ -651,16 +1056,29 @@
 			"opponent": "이번 게임에서 상대가 크툰 능력 4개 중 {{value}}개를 발동했습니다"
 		},
 		"ghuun-blood-runes": {
-			"player": "이번 게임에서 혈기 룬을 {{value}}개 사용했습니다"
+			"player": "그훈이 생명력을 {{value}} 훔칩니다 (혈기 룬 {{runes}}개 사용)",
+			"opponent": "그훈이 생명력을 {{value}} 훔칩니다 (혈기 룬 {{runes}}개 사용)"
 		},
 		"nzoth-dreams-end": {
-			"player": "이번 게임에서 죽음의 메아리 하수인을 {{value}}명 소환했습니다. 느조스, 꿈의 끝 비용은 {{cost}}입니다"
+			"player": "이번 게임에서 죽음의 메아리 하수인을 {{value}}명 소환했습니다. 느조스, 꿈의 끝 비용은 {{cost}}입니다",
+			"opponent": "상대가 이번 게임에서 죽음의 메아리 하수인을 {{value}}마리 소환했습니다. 느조스, 꿈의 끝의 비용은 {{cost}}입니다"
 		},
 		"yshaarj-titan-bane": {
 			"player": "이번 게임에서 하수인에 쓸 마나가 {{value}} 남았습니다 ({{spent}} 사용)"
 		},
 		"bgs-tavern-spells-cast": {
 			"player": "이번 게임에서 선술집 주문을 {{value}}개 시전했습니다"
+		},
+		"crash-of-thunder": {
+			"player": "이번 턴에 자연 주문을 {{value}}번 시전했습니다. 빗발치는 천둥의 비용은 {{cost}}입니다"
+		},
+		"hodir": {
+			"opponent": "상대가 다음에 내는 하수인 {{value}}개의 능력치가 8/8이 됩니다",
+			"player": "다음에 내는 하수인 {{value}}개의 능력치가 8/8이 됩니다"
+		},
+		"therazane": {
+			"opponent": "상대의 다음 주문 중 이 {{value}}개 속성은 두 번 시전됩니다: {{schools}}",
+			"player": "다음 주문 중 이 {{value}}개 속성은 두 번 시전됩니다: {{schools}}"
 		}
 	},
 	"decktracker": {
@@ -673,7 +1091,9 @@
 			"main-attribute": "주요 속성",
 			"mechanics": "능력",
 			"minion-type": "하수인 유형",
-			"minion-types": "하수인 유형"
+			"minion-types": "하수인 유형",
+			"attack": "공격력",
+			"health": "체력"
 		},
 		"overlay": {
 			"mulligan": {
@@ -718,7 +1138,8 @@
 		"card-tooltip-assemble-pick": "선택",
 		"card-tooltip-assemble-pick-rate": "픽률",
 		"card-tooltip-assemble-sort-by": "정렬",
-		"gift-reborn-from": "환생：<br/> {{value}}"
+		"gift-reborn-from": "환생：<br/> {{value}}",
+		"assembled-card": "조립: {{value}}"
 	},
 	"ftue": {
 		"experience": {
@@ -804,7 +1225,9 @@
 				"counter-deity-label": "신",
 				"counter-deity-tooltip": "신의 공격력과 체력을 표시합니다",
 				"counter-tavern-spells-cast-label": "시전한 선술집 주문",
-				"counter-tavern-spells-cast-tooltip": "이번 게임에서 시전한 선술집 주문의 수를 표시합니다"
+				"counter-tavern-spells-cast-tooltip": "이번 게임에서 시전한 선술집 주문의 수를 표시합니다",
+				"hero-power-tips-label": "영웅 능력 팁",
+				"hero-power-tips-tooltip": "영웅 능력에 마우스를 올리면 Firestone 커뮤니티가 쓴 팁을 표시합니다 (프리미엄)."
 			}
 		},
 		"decktracker": {
@@ -848,7 +1271,15 @@
 					"flesh-giant-tooltip": "상대가 {{classes}}(으)로 플레이할 때, 상대 턴 동안 상대 영웅의 체력이 몇 번 변경되었는지 표시합니다",
 					"herald-tooltip": "상대의 현재 전령 레벨을 표시합니다",
 					"cthun-abilities-label": "크툰 능력",
-					"cthun-abilities-tooltip": "상대가 크툰, 제국의 눈을 손패, 덱 또는 전장에 가지고 있을 때, 능력 4개 중 몇 개를 발동했는지 표시합니다"
+					"cthun-abilities-tooltip": "상대가 크툰, 제국의 눈을 손패, 덱 또는 전장에 가지고 있을 때, 능력 4개 중 몇 개를 발동했는지 표시합니다",
+					"cards-discarded-tooltip": "이번 게임에서 상대가 버린 카드 수를 표시합니다",
+					"cthun-cost-label": "크툰 비용",
+					"cthun-cost-tooltip": "크툰, 제국의 눈의 비용 감소를 표시합니다",
+					"ghuun-blood-runes-label": "그훈 생명력",
+					"ghuun-blood-runes-tooltip": "상대가 혈기 룬 3개 죽음의 기사 덱을 쓰고 혈기 룬을 하나 이상 냈으면, 그훈이 훔치는 생명력을 표시합니다 (기본 6 + 이번 게임에 낸 혈기 룬)",
+					"hero-attacks-tooltip": "이번 게임에서 상대 영웅이 공격한 횟수를 표시합니다",
+					"nzoth-dreams-end-label": "느조스, 꿈의 끝",
+					"nzoth-dreams-end-tooltip": "켜 두면, 상대가 죽음의 메아리 하수인을 한 마리 이상 소환한 뒤 소환한 수와 느조스, 꿈의 끝의 현재 비용을 표시합니다"
 				},
 				"extra-info-label": "추가 정보 표시",
 				"extra-info-tooltip": "비용 감소처럼 추가 정보를 알 때 상대 손패의 카드에 표시를 보여 줍니다"
@@ -920,12 +1351,24 @@
 					"colossus-of-the-cold-tooltip": "냉기의 거신이 손패나 덱에 있을 때, 얼음이 풀리기 전에 주문에 써야 할 마나가 얼마나 남았는지 표시합니다",
 					"cthun-abilities-label": "크툰 능력",
 					"cthun-abilities-tooltip": "크툰, 제국의 눈이 손패나 덱에 있을 때, 능력 4개 중 몇 개를 발동했는지 표시합니다",
-					"ghuun-blood-runes-label": "군 혈기 룬",
-					"ghuun-blood-runes-tooltip": "군이 손패나 덱에 있을 때, 이번 게임에서 사용한 혈기 룬 수를 표시합니다",
+					"ghuun-blood-runes-label": "그훈 생명력",
+					"ghuun-blood-runes-tooltip": "손패나 덱에 그훈이 있으면, 그훈이 훔치는 생명력을 표시합니다 (기본 6 + 이번 게임에 낸 혈기 룬).",
 					"nzoth-dreams-end-label": "느조스, 꿈의 끝",
 					"nzoth-dreams-end-tooltip": "느조스, 꿈의 끝이 손패나 덱에 있을 때, 소환한 죽음의 메아리 하수인 수와 현재 비용을 표시합니다",
 					"yshaarj-titan-bane-label": "이샤라즈, 티탄의 파멸",
-					"yshaarj-titan-bane-tooltip": "이샤라즈, 티탄의 파멸이 손패나 덱에 있을 때, 하수인에 써야 할 마나가 얼마나 남았는지 표시합니다"
+					"yshaarj-titan-bane-tooltip": "이샤라즈, 티탄의 파멸이 손패나 덱에 있을 때, 하수인에 써야 할 마나가 얼마나 남았는지 표시합니다",
+					"ancestral-automaton-tooltip": "고대의 전투로봇을 소환한 횟수를 표시합니다",
+					"crash-of-thunder-label": "빗발치는 천둥",
+					"crash-of-thunder-tooltip": "손패나 덱에 빗발치는 천둥이 있으면, 이번 턴에 시전한 자연 주문 수를 표시합니다",
+					"cthun-cost-label": "크툰 비용",
+					"cthun-cost-tooltip": "크툰, 제국의 눈의 비용 감소를 표시합니다",
+					"hodir-label": "호디르",
+					"hodir-tooltip": "거인의 아버지 호디르가 아직 능력치를 8/8로 만들 수 있는 하수인 수를 표시합니다",
+					"specific-deaths": "상대 쪽에서 {{cardName}} 카드가 죽은 횟수를 표시합니다",
+					"therazane-label": "테라제인",
+					"therazane-tooltip": "다음 주문이 두 번 시전될 주문 속성을 표시합니다",
+					"ysondre-label": "이손드레",
+					"ysondre-tooltip": "이번 게임에서 이손드레가 죽은 횟수를 표시합니다"
 				},
 				"special-zones-label": "특수 구역",
 				"special-zones-tooltip": "켜면 트래커에 배신자 고드프리 또는 이리다 신시커가 다루는 카드용 새 구역이 나타납니다"
@@ -1057,7 +1500,9 @@
 				"disable-low-memory-rendering-label": "저메모리 렌더링 끄기",
 				"disable-low-memory-rendering-tooltip": "기본적으로 앱은 더 작은 그래픽 버퍼로 창과 오버레이를 그려, 게임 중 메모리를 약 100MB 절약합니다. 창이나 오버레이가 이상해 보이거나 스크롤이 끊기면 이 옵션을 켜세요. 다음번 앱 시작부터 적용됩니다.",
 				"disable-overlay-shared-texture-label": "빠른 게임 내 오버레이 끄기",
-				"disable-overlay-shared-texture-tooltip": "기본적으로 게임 내 오버레이는 그래픽 카드를 통해 게임에 바로 전달되어 CPU를 훨씬 덜 씁니다. 오버레이가 안 보이거나, 이상해 보이거나, 게임 클릭을 막으면 이 옵션을 켜세요. 다음번 Hearthstone 시작부터 적용됩니다."
+				"disable-overlay-shared-texture-tooltip": "기본적으로 게임 내 오버레이는 그래픽 카드를 통해 게임에 바로 전달되어 CPU를 훨씬 덜 씁니다. 오버레이가 안 보이거나, 이상해 보이거나, 게임 클릭을 막으면 이 옵션을 켜세요. 다음번 Hearthstone 시작부터 적용됩니다.",
+				"show-main-window-on-launch-label": "실행 시 메인 창 열기",
+				"show-main-window-on-launch-tooltip": "끄면 Firestone이 시스템 트레이에서 시작합니다. 메인 창은 트레이 아이콘에서 여세요."
 			},
 			"menu": {
 				"account": "계정",
@@ -1097,7 +1542,9 @@
 				"source-verified-tooltip": "타사가 개발하고 Firestone이 정기적으로 확인합니다. Firestone이 승인한 버전만 자동 업데이트됩니다.",
 				"update-available-unreviewed": "이 모드의 새 버전이 있지만 Firestone이 아직 검토하지 않았습니다. 클릭하면 그래도 업데이트합니다.",
 				"explanation": "모드는 하스스톤 자체의 동작을 바꾸는 플러그인입니다.",
-				"restart-required": "이 변경을 적용하려면 Hearthstone을 다시 시작해 주세요."
+				"restart-required": "이 변경을 적용하려면 Hearthstone을 다시 시작해 주세요.",
+				"download-failed": "모드 라이브러리를 다운로드하지 못했습니다. 모드 사용을 다시 누르면 이어받습니다.",
+				"wrong-path-error": "게임 설치 경로가 하스스톤 폴더로 보이지 않습니다. 경로를 확인한 뒤 다시 확인을 누르세요."
 			},
 			"premium": {
 				"lottery-sync-label": "복권 포인트",
@@ -1110,7 +1557,9 @@
 			},
 			"widgets": {
 				"use-azalina-label": "아잘리나로 추측",
-				"use-azalina-tooltip": "플레이어에게 아잘리나가 있으면, 상대 직업을 보고 일부 카운터를 표시할지 결정합니다 (예: 사제로 도적을 상대하면 비취 수호자 카운터를 표시할 수 있습니다). 실험적"
+				"use-azalina-tooltip": "플레이어에게 아잘리나가 있으면, 상대 직업을 보고 일부 카운터를 표시할지 결정합니다 (예: 사제로 도적을 상대하면 비취 수호자 카운터를 표시할 수 있습니다). 실험적",
+				"card-tooltip-canvas-fallback": "카드 이미지 대체",
+				"card-tooltip-canvas-fallback-tooltip": "카드 툴팁 이미지를 불러오지 못하면, 깨진 이미지 대신 카드를 직접 그립니다."
 			},
 			"localization": {
 				"ai-text": "켜면 빠진 번역을 AI가 생성한 텍스트로 채웁니다. 커뮤니티 번역이 항상 우선합니다. AI 문구는 완벽하지 않을 수 있으며, AI 번역이 없으면 영어가 사용됩니다.",
@@ -1142,6 +1591,9 @@
 			},
 			"quests": {
 				"size-label": "퀘스트 위젯 크기"
+			},
+			"data": {
+				"refresh-signed-out": "서버에서 전체 게임 기록을 다시 받으려면 로그인해야 합니다."
 			}
 		},
 		"global": {
@@ -1210,7 +1662,8 @@
 			"linking-overwolf": "Overwolf로 이동하는 중…",
 			"privacy-link": "개인정보 처리방침",
 			"privacy-prefix": "로그인하면 다음에 동의하게 됩니다: ",
-			"subtitle": "로그인하여 기기 간 데이터를 동기화하세요"
+			"subtitle": "로그인하여 기기 간 데이터를 동기화하세요",
+			"web-subtitle": "Firestone 웹사이트에 로그인"
 		},
 		"docs": {
 			"back-label": "모든 문서",
@@ -1376,7 +1829,7 @@
 					"caption": "게임 내 덱 트래커와 오버레이",
 					"title": "덱 트래커"
 				},
-				"lead": "도우미는 구독 없이도 동작합니다. 일부 오버레이는 일일 또는 주간 허용량이 있고, 프리미엄은 그 제한을 없앱니다.",
+				"lead": "이 앱은 무료로 쓸 수 있습니다. 구독 없이도 거의 모든 기능을 체험할 수 있고, 프리미엄이면 제한이 모두 풀립니다.",
 				"mods": {
 					"alt": "켜기/끄기 토글이 있는 커뮤니티 모드를 나열하는 Firestone 모드 설정",
 					"blurb": "설정에서 커뮤니티 모드를 켜세요 — 자동 침묵, 덱 자동 완성, 수집품 조정 등 — 각각 토글 하나입니다.",
@@ -1398,8 +1851,15 @@
 				"title": "무료로 받는 것"
 			},
 			"hero": {
-				"subtitle": "무료 Hearthstone 도우미: 덱 트래커, 오버레이, 수집품, 전장 도구 등.",
-				"title": "Firestone 다운로드"
+				"subtitle": "게임 안의 덱 트래커, 오버레이, 수집품, 전장 도구.",
+				"title": "모든 하스스톤 게임을 무료로 기록하세요",
+				"badge": "가장 안정적인 버전",
+				"cta": "Firestone 다운로드",
+				"step-1-title": "설치",
+				"step-2-text": "평소처럼 게임을 여세요.",
+				"step-2-title": "하스스톤 실행",
+				"step-3-text": "Firestone이 알아서 기록을 시작합니다.",
+				"step-3-title": "플레이"
 			},
 			"lightbox": {
 				"close": "전체 크기 이미지 닫기",
@@ -1423,7 +1883,8 @@
 				"cta": "Standalone 다운로드",
 				"discord-cta": "Discord에서 문의",
 				"discord-lead": "선행 접근이 필요하신가요?",
-				"title": "Standalone"
+				"title": "Standalone",
+				"skip": "Overwolf를 건너뛰고 싶나요?"
 			},
 			"social-proof": {
 				"carousel": {
@@ -1999,7 +2460,214 @@
 			"assemble-pick-rate": "선택",
 			"assemble-pick-rate-hint": "제시되었을 때 선택된 빈도",
 			"assemble-right": "오른쪽",
-			"cards": "카드"
+			"cards": "카드",
+			"assemble-game": "게임",
+			"assemble-games": "게임",
+			"assemble-games-hint": "기반이 제안된 게임입니다. 한 게임에서 기반을 둘 이상 조립하면, 기반마다 따로 한 번씩 집계됩니다.",
+			"discover": "발견",
+			"discover-all-classes": "모든 직업",
+			"discover-card": "카드",
+			"discover-error": "발견 통계를 불러오지 못했습니다. 나중에 다시 시도해 주세요.",
+			"discover-games": "플레이 횟수",
+			"discover-loading": "불러오는 중...",
+			"discover-offered": "제안",
+			"discover-offered-count-hint": "이 카드가 제안된 횟수",
+			"discover-picked": "선택",
+			"discover-search": "카드 검색"
+		},
+		"account": {
+			"account-id-copied": "계정 ID를 복사했습니다",
+			"copy-account-id": "계정 ID 복사",
+			"sign-in": "로그인",
+			"sign-out": "로그아웃"
+		},
+		"contribute": {
+			"admin": {
+				"action-contributor-added": "기여자 추가",
+				"action-contributor-removed": "기여자 제거",
+				"action-contributor-updated": "기여자 수정",
+				"action-created": "생성",
+				"action-edited": "수정",
+				"action-restored": "복원",
+				"action-unpublished": "게시 취소",
+				"add": "+ 기여자 추가",
+				"add-confirm": "추가",
+				"add-title": "기여자 추가",
+				"added": "{{name}} 님이 이제 기여할 수 있습니다.",
+				"admin-hint": "관리자는 모든 내용을 고치고 기여자를 관리할 수 있습니다.",
+				"after": "이후",
+				"all-content-types": "전체",
+				"badge": "팁에 표시할 배지",
+				"before": "이전",
+				"cancel": "취소",
+				"col-account": "계정",
+				"col-action": "작업",
+				"col-actions": "동작",
+				"col-added": "추가",
+				"col-content-types": "수정 범위",
+				"col-role": "역할",
+				"col-target": "대상",
+				"col-when": "일시",
+				"col-who": "누가",
+				"confirm-remove": "{{name}} 님을 제거할까요? 이미 올린 팁은 그대로 남지만, 더 이상 고칠 수 없습니다.",
+				"confirm-restore": "이 변경 전 상태로 팁을 되돌릴까요?",
+				"confirm-restore-creation": "이전에는 이 팁이 없었습니다. 계속하면 팁이 삭제됩니다. 계속할까요?",
+				"details": "변경 내용",
+				"display-name": "팁에 표시할 이름",
+				"display-name-hint": "플레이어는 이 사람이 쓴 모든 팁 옆에서 이 이름을 봅니다.",
+				"edit": "수정",
+				"edit-title": "기여자 수정",
+				"form-error-content-types": "수정할 수 있는 항목을 하나 이상 고르세요.",
+				"form-error-exists": "이미 기여자인 계정입니다 ({{name}}). 그 항목을 수정하세요.",
+				"form-error-link": "프로필 링크는 https://로 시작해야 합니다.",
+				"form-error-name": "팁에 표시할 이름을 입력하세요.",
+				"form-error-user-id": "계정 ID를 입력하세요.",
+				"link": "프로필 링크",
+				"link-hint": "선택, 팁에 표시",
+				"loading": "기여자와 활동을 불러오는 중…",
+				"nav-label": "관리자",
+				"no-activity": "아직 변경이 없습니다.",
+				"no-badge": "없음",
+				"no-contributors": "아직 기여자가 없습니다.",
+				"nothing": "(없음)",
+				"remove": "제거",
+				"removed": "{{name}} 님을 제거했습니다.",
+				"restore": "이전 버전으로 되돌리기",
+				"restore-creation": "이 팁 내리기",
+				"restored": "되돌렸습니다. 몇 시간 안에 앱에 반영됩니다.",
+				"role-admin": "관리자",
+				"role-author": "작성자",
+				"save": "저장",
+				"soon": "곧",
+				"subtitle": "기여자와 기록",
+				"tab-activity": "활동",
+				"tab-contributors": "기여자 · {{value}}",
+				"title": "관리자",
+				"updated": "{{name}} 님의 정보를 고쳤습니다.",
+				"user-id": "계정 ID",
+				"user-id-hint": "웹사이트 계정 메뉴의 계정 ID 복사에서 확인할 수 있습니다.",
+				"user-id-placeholder": "플레이어가 계정 메뉴에서 복사한 ID를 붙여넣으세요",
+				"view": "보기",
+				"you": "(나)"
+			},
+			"comps": {
+				"nav-label": "구성"
+			},
+			"errors": {
+				"audit_entry_not_found": "이 변경을 더 이상 찾을 수 없습니다.",
+				"contradictory_tribes": "한 종족을 있음과 없음으로 동시에 지정할 수 없습니다.",
+				"contributor_not_found": "이미 제거된 기여자입니다.",
+				"duplicate_variant": "이 변형의 팁이 이미 있습니다. 그 팁을 수정하세요.",
+				"generic": "게시하지 못했습니다 ({{code}}). 초안은 이 기기에 남아 있습니다.",
+				"generic-admin": "실패했습니다 ({{code}}). 다시 시도하세요.",
+				"invalid_json": "요청 형식이 잘못되었습니다.",
+				"invalid_role": "알 수 없는 역할입니다.",
+				"invalid_token": "로그아웃되었습니다. 게시하려면 다시 로그인하세요.",
+				"invalid_url": "프로필 링크는 https://로 시작해야 합니다.",
+				"item_not_found": "이 팁은 더 이상 없습니다.",
+				"last_admin": "관리자는 항상 한 명 이상이어야 합니다.",
+				"network_error": "서버에 연결하지 못했습니다. 연결을 확인하고 다시 시도하세요.",
+				"not_a_contributor": "이 계정은 더 이상 팁을 게시할 수 없습니다.",
+				"not_an_admin": "이 계정은 더 이상 관리자가 아닙니다.",
+				"not_configured": "지금은 기여 기능을 이용할 수 없습니다.",
+				"not_your_item": "다른 작성자의 팁입니다.",
+				"required": "비어 있는 필수 항목이 있습니다.",
+				"signed_out": "로그아웃되었습니다. 게시하려면 다시 로그인하세요.",
+				"too_long": "팁이 너무 깁니다.",
+				"unknown_content_type": "없는 콘텐츠 유형이 포함되어 있습니다.",
+				"unknown_hero": "전장 영웅이 아닙니다.",
+				"unknown_hero_power": "아직 모르는 영웅 능력입니다.",
+				"unknown_tribe": "전장 종족이 아닌 항목이 있습니다."
+			},
+			"hero-power-tips": {
+				"add-hero": "+ 영웅별",
+				"add-lobby": "+ 로비 조건",
+				"basic-tip": "기본 팁",
+				"confirm-delete": "이 팁을 삭제할까요? 플레이어에게 더 이상 보이지 않습니다.",
+				"curve-3-on-3": "3턴 3단계",
+				"curve-basic": "기본",
+				"curves": "커브",
+				"delete": "삭제",
+				"deleted": "팁을 삭제했습니다.",
+				"details": "상세",
+				"details-hint": "선택 · 앱 전용",
+				"details-placeholder": "언제 벗어나는지, 상점에서 무엇을 볼지",
+				"discard": "버리기",
+				"edit": "수정",
+				"filter-all": "전체",
+				"filter-label": "필터",
+				"filter-none": "아직 팁 없음",
+				"filter-update": "업데이트 필요",
+				"form-title-edit-basic": "기본 팁 수정",
+				"form-title-edit-hero": "영웅별 팁 수정",
+				"form-title-edit-lobby": "로비 조건 팁 수정",
+				"form-title-new-basic": "새 기본 팁",
+				"form-title-new-hero": "새 영웅별 팁",
+				"form-title-new-lobby": "새 로비 조건 팁",
+				"hero": "영웅",
+				"language": "언어",
+				"loading": "팁을 불러오는 중…",
+				"lobby": "로비에 종족이",
+				"lobby-has": "있을 때",
+				"lobby-lacks": "없을 때",
+				"lobby-pick": "종족을 하나 이상 고르세요",
+				"lobby-summary-has": "로비에 다음이 모두 있으면 표시: {{tribes}}",
+				"lobby-summary-lacks": "로비에 다음이 하나도 없으면 표시: {{tribes}}",
+				"nav-label": "영웅 능력 팁",
+				"no-variants": "변형이 없습니다. 영웅이나 로비에 따라 플레이가 달라지면 추가하세요.",
+				"optional": "선택",
+				"outdated-title": "능력 변경 - 팁 {{value}}개가 이전 문구로 작성됨",
+				"pick-power": "영웅 능력을 고르거나 Ctrl+K를 누르세요",
+				"power-changed": "패치 {{patch}} - 능력 변경",
+				"power-count": "{{shown}} / {{total}}개 영웅 능력",
+				"powers-label": "영웅 능력",
+				"preview": "미리보기",
+				"preview-app": "앱",
+				"preview-app-colors": "앱 색",
+				"preview-empty": "팁이 여기에 나타납니다",
+				"preview-game": "게임 내",
+				"preview-panel-title": "Firestone 팁",
+				"published": "팁을 게시했습니다. 몇 시간 안에 앱에 반영됩니다.",
+				"rewrite": "현재 문구로 다시 쓰기",
+				"save": "저장 및 게시",
+				"search-label": "영웅 능력 검색",
+				"search-placeholder": "능력, 영웅, 카드 문구",
+				"status-count": "팁 {{value}}개",
+				"status-draft-kept": "초안이 이 기기에 남아 있습니다",
+				"status-draft-saved": "초안을 기기에 저장함 · {{time}}",
+				"status-editing": "게시한 팁을 수정하는 중",
+				"status-new": "새 초안",
+				"status-none": "아직 팁 없음",
+				"status-published": "게시됨",
+				"status-publishing": "게시 중…",
+				"status-restored": "저장하지 않은 초안을 되돌렸습니다",
+				"status-update": "업데이트 필요",
+				"subtitle": "전장에서 영웅 능력에 마우스를 올리면 보이는 팁",
+				"tip": "팁",
+				"tip-hint": "게임과 앱에 표시",
+				"tip-placeholder": "이 능력으로 무엇을 해야 하나요?",
+				"title": "영웅 능력 팁",
+				"used-by": "{{heroes}} 사용",
+				"variant-hero": "{{hero}} 전용",
+				"variant-lobby-empty": "로비 조건",
+				"variant-lobby-has": "로비에 {{tribes}}",
+				"variant-lobby-lacks": "로비에 {{tribes}} 없음",
+				"variants": "변형",
+				"variants-hint": "조건이 맞으면 기본 팁 대신 표시됩니다",
+				"write-basic": "+ 기본 팁 쓰기",
+				"write-basic-hint": "플레이어가 이 능력에 마우스를 올리면 표시됩니다",
+				"your-tips": "내 팁",
+				"your-tips-hint": "여기서는 나만 볼 수 있습니다."
+			},
+			"nav-label": "기여",
+			"trinkets": {
+				"nav-label": "장신구"
+			},
+			"unavailable": {
+				"body": "기여는 승인된 계정만 할 수 있습니다. 기여자가 되려면 계정 메뉴의 계정 ID를 Firestone 팀에 보내세요.",
+				"home": "Firestone으로",
+				"title": "이 계정으로는 이용할 수 없는 섹션입니다"
+			}
 		}
 	},
 	"widgets": {

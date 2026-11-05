@@ -1,59 +1,86 @@
 {
 	"settings": {
 		"general": {
-			"hotkeys": {
-				"clear": "清除"
-			},
-			"quests": {
-				"size-label": "任務元件大小"
+			"launch": {
+				"show-main-window-on-launch-label": "啟動時開啟主視窗",
+				"show-main-window-on-launch-tooltip": "關閉此選項時，Firestone 會在系統匣中啟動。請從系統匣圖示開啟主視窗。"
 			}
 		},
 		"decktracker": {
-			"global": {
-				"flavor-text-size": "趣味文字大小"
-			},
 			"opponent-deck": {
 				"counters": {
-					"cthun-abilities-label": "克蘇恩能力",
-					"cthun-abilities-tooltip": "當對手的手牌、牌堆或場上有「『帝國之眼』克蘇恩」時，顯示其已觸發四種能力中的幾種"
+					"cards-discarded-tooltip": "顯示本賽局對手已捨棄的卡牌數量",
+					"cthun-cost-label": "「克蘇恩」消耗",
+					"cthun-cost-tooltip": "顯示『帝國之眼』克蘇恩減少的消耗",
+					"hero-attacks-tooltip": "顯示對手英雄在本賽局攻擊的次數"
+				}
+			},
+			"your-deck": {
+				"counters": {
+					"ancestral-automaton-tooltip": "顯示你召喚「遠古自動機」的次數",
+					"crash-of-thunder-label": "「轟響雷霆」",
+					"crash-of-thunder-tooltip": "當手牌或牌堆中有「轟響雷霆」時，顯示你本回合已施放的自然法術數量",
+					"cthun-cost-label": "「克蘇恩」消耗",
+					"cthun-cost-tooltip": "顯示『帝國之眼』克蘇恩減少的消耗",
+					"specific-deaths": "顯示對手的「{{cardName}}」在本賽局死亡的次數",
+					"ysondre-label": "「伊索德雷」",
+					"ysondre-tooltip": "顯示「伊索德雷」在本賽局死亡的次數"
 				}
 			}
-		},
-		"global": {
-			"mark-all-read": "全部標為已讀"
 		}
-	},
-	"website": {
-		"constructed": {
-			"assemble": "組裝",
-			"assemble-appearance-rate": "出現",
-			"assemble-appearance-rate-hint": "此選項被提供的頻率",
-			"assemble-base": "基礎",
-			"assemble-error": "無法載入組裝池。請稍後再試。",
-			"assemble-left": "左",
-			"assemble-loading": "載入中...",
-			"assemble-pick-rate": "揀選",
-			"assemble-pick-rate-hint": "此選項在被提供時被揀選的頻率",
-			"assemble-right": "右",
-			"cards": "卡牌"
-		}
-	},
-	"decktracker": {
-		"card-tooltip-assemble-appearance-rate": "出現率",
-		"card-tooltip-assemble-other-class": "非{{ class }}",
-		"card-tooltip-assemble-pick": "揀選",
-		"card-tooltip-assemble-pick-rate": "揀選率",
-		"card-tooltip-assemble-sort-by": "排序",
-		"gift-reborn-from": "重生自<br/>「{{value}}」"
 	},
 	"counters": {
-		"cthun-abilities": {
-			"opponent": "本賽局你的對手在 4 種克蘇恩能力中已觸發 {{value}} 種"
+		"crash-of-thunder": {
+			"player": "你本回合已施放 {{value}} 個自然法術。「轟響雷霆」消耗：{{cost}}"
 		}
 	},
-	"global": {
-		"mechanics": {
-			"cards_discarded_this_game": "捨棄"
+	"app": {
+		"replay-viewer": {
+			"bg": {
+				"anomaly": "異變",
+				"combat": "戰鬥",
+				"combat-details": "逐步檢視",
+				"combat-end": "結束",
+				"combat-start": "開始",
+				"combat-summary": "摘要",
+				"combat-vs": "與 {{hero}} 戰鬥",
+				"damage": "{{n}} 點傷害",
+				"discover": "發現",
+				"eliminated": "已淘汰",
+				"empty-board": "場上沒有手下",
+				"empty-shop": "鮑伯沒有東西可賣",
+				"end": "結束",
+				"events": "事件",
+				"game-info": "對戰資訊",
+				"gold": "金幣",
+				"health-graph": "玩家生命值",
+				"hero-selection": "英雄選擇",
+				"mmr": "積分",
+				"picked": "已選擇",
+				"place": {
+					"1": "第 1 名",
+					"2": "第 2 名",
+					"3": "第 3 名",
+					"4": "第 4 名",
+					"5": "第 5 名",
+					"6": "第 6 名",
+					"7": "第 7 名",
+					"8": "第 8 名"
+				},
+				"recruit": "招募",
+				"result": {
+					"lost": "落敗",
+					"tied": "平手",
+					"won": "獲勝"
+				},
+				"round": "第 {{n}} 回合",
+				"rounds": "回合",
+				"run": "回合",
+				"tavern-opens": "第 {{n}} 回合：旅店開啟",
+				"tier": "旅店等級",
+				"tribes": "本局手下種族",
+				"versus": "VS"
+			}
 		}
 	}
 }

@@ -17,6 +17,9 @@
 					"label": "Matriz de poderes de héroe",
 					"tooltip": "Muestra una matriz de porcentajes de victorias por combinación de clase y poder de héroe"
 				}
+			},
+			"menu": {
+				"cards": "Cartas"
 			}
 		},
 		"battlegrounds": {
@@ -31,6 +34,15 @@
 					"example-boards-locked-tooltip": "Hazte Premium para ver ejemplos de alto MMR de cómo quedan estas composiciones al final de la partida"
 				},
 				"loading-example-boards": "Cargando tableros de ejemplo"
+			},
+			"hero-power-tips": {
+				"title": "Consejos de Firestone",
+				"variant-hero": "Solo {{hero}}",
+				"variant-lobby-has": "{{tribes}} en la sala",
+				"variant-lobby-lacks": "Sin {{tribes}} en la sala"
+			},
+			"strategies": {
+				"outdated": "Escrito para una versión anterior de este poder de héroe"
 			}
 		},
 		"decktracker": {
@@ -52,6 +64,13 @@
 					"today": "Hoy",
 					"today-tooltip": "Partidas jugadas desde la medianoche local"
 				}
+			},
+			"menu": {
+				"cards-header": "Cartas"
+			},
+			"meta": {
+				"load-error": "Comprueba la conexión e inténtalo de nuevo.",
+				"load-error-title": "No se han podido cargar estas estadísticas"
 			}
 		},
 		"lottery": {
@@ -114,6 +133,356 @@
 				"message": "Se ha descargado una nueva versión de Firestone ({{version}}).",
 				"restart": "Reiniciar",
 				"title": "Actualización de Firestone"
+			}
+		},
+		"cards": {
+			"back-to-assemble": "Todas las cartas de Ensamblar",
+			"back-to-discover": "Todas las cartas de Descubrir",
+			"stats": "Estadísticas"
+		},
+		"feature-spotlights": {
+			"cardTooltipUseCanvasFallback": {
+				"blurb": "Si no carga la imagen de una carta, dibújala. Desactivado por defecto.",
+				"title": "Dibujar imágenes de carta que falten"
+			},
+			"cardsDiscoverAssembleTabs": {
+				"blurb": "Construido y Arena tienen una pestaña de Cartas con estadísticas de Descubrir y Ensamblar. Los conjuntos de Ensamblar se pueden filtrar por clase.",
+				"title": "Estadísticas de Descubrir y Ensamblar"
+			},
+			"opponentGhuunBloodRunesCounter": {
+				"blurb": "Muestra cuánta Salud roba el G'huun del rival. Desactivado por defecto.",
+				"title": "Contador de Salud de G'huun del rival"
+			},
+			"opponentHodirCounter": {
+				"blurb": "Muestra cuántas veces el Hodir, padre de gigantes del rival todavía puede poner un esbirro a 8/8.",
+				"title": "Contador de Hodir del rival"
+			},
+			"opponentNzothDreamsEndCounter": {
+				"blurb": "Muestra cuántos esbirros con Último aliento ha invocado tu rival y el coste actual de N'Zoth.",
+				"title": "Contador de N'Zoth, Fin del Sueño del rival"
+			},
+			"playerHodirCounter": {
+				"blurb": "Muestra cuántas veces Hodir, padre de gigantes todavía puede poner un esbirro a 8/8.",
+				"title": "Contador de Hodir"
+			},
+			"replayViewerV2": {
+				"blurb": "Mira las repeticiones de construido en un visor nuevo, con momentos clave, el tablero y las listas de mazos. Puedes volver al visor clásico.",
+				"title": "Nuevo visor de repeticiones de construido"
+			}
+		},
+		"replay-viewer": {
+			"action-view": {
+				"added-to-hand": "Añadida a la mano",
+				"added-to-their-hand": "Añadida a su mano",
+				"added-to-your-hand": "Añadida a tu mano",
+				"after": "Después",
+				"base": "Base",
+				"before": "Antes",
+				"bottom-taken": "Mitad inferior tomada",
+				"choice-tag": "Elección · {{kind}}",
+				"decided": "Decidido en {{seconds}} s",
+				"deck-change": "Mazo de {{before}} a {{after}} · {{cost}} de maná",
+				"drawn": "Robada",
+				"end-of-game": "Fin de la partida",
+				"forged": "Forjada",
+				"from-their-hand": "Desde su mano",
+				"from-your-hand": "Desde tu mano",
+				"half": {
+					"first": "Primera mitad",
+					"second": "Segunda mitad"
+				},
+				"kind": {
+					"adapt": "Adapta",
+					"assemble": "Ensamblar",
+					"choose-one": "Elige uno",
+					"discover": "Descubrir",
+					"dredge": "Dragar"
+				},
+				"left-option": "Opción izquierda",
+				"not-picked": "No elegida",
+				"not-used": "No usada",
+				"opponent-forged": "El oponente ha forjado una carta",
+				"opponent-offered": "Se le ofreció al oponente",
+				"opponent-traded": "El oponente ha comerciado una carta",
+				"other-option": "Otra opción",
+				"picked": "Elegida",
+				"picked-option": "Opción elegida",
+				"progress": "Paso {{position}} de {{count}} · {{elapsed}} / {{total}}",
+				"restart": "Reiniciar desde la baza",
+				"result-label": "Resultado",
+				"result": {
+					"conceded": "Rendición",
+					"defeat": "Derrota",
+					"tie": "Empate",
+					"victory": "Victoria"
+				},
+				"right-option": "Opción derecha",
+				"shuffled": "Barajada al mazo",
+				"side-option": "Opción lateral",
+				"stat": {
+					"duration": "Duración",
+					"turns": "Turnos"
+				},
+				"top-taken": "Mitad superior tomada",
+				"turn": "Turno {{turn}}",
+				"turn-source": "Turno {{turn}} · {{source}}",
+				"watch-key-moments": "Ver los {{count}} momentos clave",
+				"you-forged": "Has forjado una carta",
+				"you-offered": "Se te ofreció",
+				"you-traded": "Has comerciado una carta"
+			},
+			"banner": {
+				"back-to-old": "Volver al visor anterior",
+				"new-viewer": "Estás usando el nuevo visor de repeticiones."
+			},
+			"bg": {
+				"anomaly": "Anomalía",
+				"combat": "Combate",
+				"combat-details": "Paso a paso",
+				"combat-end": "Fin",
+				"combat-start": "Inicio",
+				"combat-summary": "Resumen",
+				"combat-vs": "Combate contra {{hero}}",
+				"damage": "{{n}} de daño",
+				"discover": "Descubrir",
+				"eliminated": "Eliminado",
+				"empty-board": "No hay esbirros en el tablero",
+				"empty-shop": "Bob no tiene nada que vender",
+				"end": "Fin",
+				"events": "Eventos",
+				"game-info": "Datos de la partida",
+				"gold": "Oro",
+				"health-graph": "Salud de los jugadores",
+				"hero-selection": "Selección de héroe",
+				"mmr": "Puntuación",
+				"picked": "Elegido",
+				"place": {
+					"1": "1st",
+					"2": "2nd",
+					"3": "3rd",
+					"4": "4th",
+					"5": "5th",
+					"6": "6th",
+					"7": "7th",
+					"8": "8th"
+				},
+				"recruit": "Reclutamiento",
+				"result": {
+					"lost": "Perdió",
+					"tied": "Empató",
+					"won": "Ganó"
+				},
+				"round": "Ronda {{n}}",
+				"rounds": "Rondas",
+				"run": "Rondas",
+				"tavern-opens": "Ronda {{n}}: se abre la taberna",
+				"tier": "Nivel de taberna",
+				"tribes": "Tribus de esta partida",
+				"versus": "vs"
+			},
+			"coming-soon": {
+				"text": "Las repeticiones de Campos de batalla y Mercenarios todavía no están en el móvil. Abre esta página en un ordenador para verla.",
+				"title": "Versión para móvil próximamente"
+			},
+			"common": {
+				"close": "Cerrar",
+				"download-xml": "Descargar XML"
+			},
+			"decklists": {
+				"cards": "{{count}} cartas",
+				"code-copied": "Código de mazo copiado",
+				"copy-code": "Copiar código de mazo",
+				"export": "Exportar mazo",
+				"no-opponent-card": "Esta repetición no muestra ninguna carta del oponente.",
+				"seen": "{{count}} de 30 vistas",
+				"unknown-deck": "No se conoce el mazo del jugador en esta repetición."
+			},
+			"error": {
+				"damaged": "El archivo está dañado o se cortó la conexión al cargarlo.",
+				"missing": "La repetición ya no existe o el enlace no es correcto.",
+				"title": "No se puede reproducir esta repetición",
+				"try-again": "Reintentar",
+				"unsupported": "Este modo de juego todavía no está en el visor."
+			},
+			"header": {
+				"age": {
+					"just-now": "ahora mismo"
+				},
+				"class": {
+					"deathknight": "Caballero de la Muerte",
+					"demonhunter": "Cazador de demonios"
+				},
+				"copy-link": "Copiar enlace a este momento",
+				"decklists": "Listas de mazos",
+				"duration": {
+					"hours": "{{hours}} h {{minutes}} min",
+					"minutes": "{{value}} min",
+					"seconds": "{{value}} s"
+				},
+				"firestone-hint": "Si no pasa nada, comprueba que Firestone está instalado y en marcha.",
+				"format": {
+					"classic": "Clásico",
+					"standard": "Estándar",
+					"twist": "Giro",
+					"wild": "Salvaje"
+				},
+				"link-copied": "Enlace copiado",
+				"mode": {
+					"arena": "Arena",
+					"arena-underground": "Arena Subterránea",
+					"battlegrounds": "Campos de batalla",
+					"casual": "Casual",
+					"duels": "Duelos",
+					"friendly": "Amistoso",
+					"practice": "Práctica",
+					"ranked": "Clasificatoria",
+					"tavern-brawl": "Pelea de taberna"
+				},
+				"rank": {
+					"legend": "Leyenda",
+					"legend-number": "Leyenda #{{rank}}"
+				},
+				"result": {
+					"defeat": "Derrota",
+					"tie": "Empate",
+					"victory": "Victoria"
+				},
+				"share": "Compartir repetición",
+				"shortcut": {
+					"play-pause": "Reproducir / pausar",
+					"speed": "Cambiar la velocidad",
+					"step": "Paso anterior / siguiente",
+					"turn": "Turno anterior / siguiente",
+					"view": "Cambiar entre el tablero y la vista de acciones"
+				},
+				"shortcuts": "Atajos de teclado",
+				"turns": "{{count}} turnos",
+				"versus": "{{mine}} vs {{opponent}}",
+				"view-in-firestone": "Ver en el cliente de HS"
+			},
+			"hero-strip": {
+				"corpses": "Cadáveres",
+				"deck": "Mazo",
+				"locked": "{{count}} bloqueadas",
+				"mana": "Maná",
+				"overload": "Sobrecarga {{count}} el próximo turno",
+				"playing": "Jugando",
+				"quest": "Misión",
+				"secret": "¿Secreto?",
+				"spell-damage": "Daño con hechizos +{{amount}}"
+			},
+			"loading": {
+				"label": "Preparando tu repetición",
+				"parsing": "Leyendo la repetición",
+				"preparing": "Preparando la repetición",
+				"progress": "Preparando tu repetición · turno {{turn}} de {{total}}"
+			},
+			"minion": {
+				"ability-available": "Disponible",
+				"ability-used": "Usada",
+				"old-god-abilities": "Habilidades del Dios Antiguo"
+			},
+			"momentum": {
+				"chart": "Salud del héroe y fuerza del tablero a lo largo de la partida",
+				"key-moment": "Momento clave {{number}}: {{label}}",
+				"title": "Impulso de la partida",
+				"turn": "Turno"
+			},
+			"mulligan": {
+				"coin": "Robó la Moneda",
+				"replaced": "Reemplazada"
+			},
+			"stage": {
+				"cast": "Qué se lanza",
+				"deck-title": "{{name}} · Mazo",
+				"enchantments": "Encantamientos",
+				"keyword": {
+					"colossal": "Colosal",
+					"corrupt": "Corrupción",
+					"echo": "Eco",
+					"infuse": "Imbuir",
+					"magnetic": "Magnético",
+					"outcast": "Proscrito",
+					"starship": "Astronave",
+					"titan": "Titán",
+					"twinspell": "Hechizo doble"
+				},
+				"never-revealed": "Nunca revelada",
+				"now-playing": "En reproducción"
+			},
+			"story-panel": {
+				"empty": "No hay nada que mostrar con estos filtros.",
+				"everything": "Todo",
+				"filter": "Filtrar la historia",
+				"hint": "Haz clic en una línea para ir ahí",
+				"key-moments": "Momentos clave",
+				"title": "Eventos",
+				"turn-title": "Turno {{turn}} · {{side}}"
+			},
+			"story": {
+				"a-card": "una carta",
+				"a-card-capitalized": "Una carta",
+				"a-secret": "un secreto",
+				"badge": {
+					"choice": "Elección",
+					"forge": "Forja",
+					"trade": "Comerciar"
+				},
+				"cards-count": "{{count}} cartas",
+				"casts": "{{caster}} lanza {{spells}}",
+				"damage-to-targets": "{{amount}} de daño a {{count}} objetivos",
+				"discover": "Descubrir",
+				"discover-from": "Descubrir: {{source}}",
+				"forged": "Forjó {{card}}",
+				"is-forged": "{{card}} se forja",
+				"key-moment": {
+					"big-hit": "Gran golpe",
+					"board-wipe": "Limpieza de tablero",
+					"secret": "Secreto revelado",
+					"swing": "Vuelco"
+				},
+				"lethal": "Letal",
+				"mana-change": "{{before}} a {{after}} de maná",
+				"mulligan-done": "Baza terminada",
+				"mulligan": {
+					"kept-all": "{{who}}: conservó las {{count}} cartas",
+					"kept-replaced": "{{who}}: conservó {{kept}} y reemplazó {{replaced}}",
+					"replaced": "{{who}}: reemplazó {{replaced}}",
+					"replaced-all": "{{who}}: reemplazó las {{replaced}}",
+					"title": "Baza"
+				},
+				"opponent": "Oponente",
+				"picked": "eligió {{cards}}",
+				"plays": "{{who}}: juega {{what}}",
+				"secret-revealed": "Secreto revelado: {{secret}}",
+				"source-dealing": "{{source}}, infligiendo {{damage}}",
+				"source-deals": "{{source}} inflige {{damage}}",
+				"trade-cost": "1 de maná",
+				"traded": "Comerció {{card}} por una carta",
+				"turn": "Turno {{turn}}",
+				"turn-mana": "{{mana}} de maná",
+				"turn-steps": "{{count}} pasos",
+				"you": "Tú"
+			},
+			"transport": {
+				"change-speed": "Cambiar la velocidad",
+				"copy-link": "Copiar enlace al momento",
+				"next-step": "Paso siguiente (Derecha)",
+				"next-turn": "Turno siguiente (Ctrl + Derecha)",
+				"pause": "Pausa (Espacio)",
+				"play": "Reproducir (Espacio)",
+				"previous-step": "Paso anterior (Izquierda)",
+				"previous-turn": "Turno anterior (Ctrl + Izquierda)",
+				"speed": "velocidad {{speed}}x"
+			},
+			"turn": {
+				"mine": "Tu turno",
+				"opponent": "Turno del oponente"
+			},
+			"view-toggle": {
+				"action": "Vista de acciones",
+				"board": "Tablero",
+				"label": "Vista"
 			}
 		}
 	},
@@ -319,7 +688,38 @@
 		"xl-questline-warrior": "XL Questline Guerrero",
 		"xl-shudderwock-shaman": "XL Shudderwock Chamán",
 		"xl-tog-dh": "XL Tog Cazador de demonios",
-		"xl-warlock": "XL Brujo"
+		"xl-warlock": "XL Brujo",
+		"ammunae-druid": "Ammunae Druida",
+		"ammunae-nzoth-druid": "Ammunae N'Zoth Druida",
+		"armor-warrior": "Armadura Guerrero",
+		"bbb-nzoth-handbuff-dk": "Sangre N'Zoth Handbuff Caballero de la Muerte",
+		"beast-attack-druid": "Bestia Ataque Druida",
+		"beast-druid": "Bestia Druida",
+		"bfu-nzoth-handbuff-dk": "BFU N'Zoth Handbuff Caballero de la Muerte",
+		"cthun-dh": "C'Thun Cazador de demonios",
+		"cthun-druid": "C'Thun Druida",
+		"cthun-priest": "C'Thun Sacerdote",
+		"cthun-shaman": "C'Thun Chamán",
+		"cthun-warlock": "C'Thun Brujo",
+		"dragon-mage": "Dragón Mago",
+		"dragon-warlock": "Dragón Brujo",
+		"harold-cthun-warlock": "Harold C'Thun Brujo",
+		"holy-paladin": "Sagrado Paladín",
+		"j-Lock": "J-Lock",
+		"mech-hunter": "Meca Cazador",
+		"medivh-priest": "Medivh Sacerdote",
+		"nzoth-druid": "N'Zoth Druida",
+		"nzoth-hunter": "N'Zoth Cazador",
+		"nzoth-mech-hunter": "N'Zoth Meca Cazador",
+		"nzoth-priest": "N'Zoth Sacerdote",
+		"nzoth-rogue": "N'Zoth Pícaro",
+		"nzoth-warlock": "N'Zoth Brujo",
+		"nzoth-warrior": "N'Zoth Guerrero",
+		"summoner-mage": "Invocador Mago",
+		"void-cthun-dh": "Vacío C'Thun Cazador de demonios",
+		"yogg-paladin": "Yogg Paladín",
+		"yshaarj-warrior": "Y'Shaarj Guerrero",
+		"zee-cthun-shaman": "Zee C'Thun Chamán"
 	},
 	"battlegrounds": {
 		"battle": {
@@ -331,7 +731,7 @@
 				"expired": "Caducado",
 				"expires-soon": "Caduca pronto",
 				"guaranteed": "Garantizado",
-				"guaranteed-disabled-tooltip": "A partir del turno {{value}}, uno de los esbirros ofrecidos es de tu tipo más común",
+				"guaranteed-disabled-tooltip": "A partir del turno {{value}}, tendrás garantizado un esbirro de tu tribu más común. A partir del turno {{value2}}, tendrás garantizados dos.",
 				"guaranteed-type": "Tipo garantizado",
 				"has-condition": "Este don tiene requisitos extra. Pasa el cursor aquí para ver por qué, o sobre un esbirro para comprobarlo.",
 				"others": "Otros",
@@ -373,14 +773,15 @@
 					"stitched-salvager": "No se ofrece en Recuperador cosido",
 					"lobby-no-aberration": "Solo se ofrece cuando hay Aberraciones en la sala",
 					"requires-activate": "Solo se ofrece en esbirros con Activar",
-					"requires-discards-this-game": "Requiere que se haya descartado una carta en esta partida"
+					"requires-discards-this-game": "Requiere que se haya descartado una carta en esta partida",
+					"relentless-deflector": "Furtividad no se ofrece en Deflector incansable"
 				},
 				"restriction": {
 					"battlecry-before-5": "Los esbirros con Grito de guerra y Elige uno no se ofrecen antes del turno 5.",
 					"battlecry-choose-one": "Los esbirros con Grito de guerra y Elige uno solo pueden recibir Doble visión, Replicación, Dorado o Voz resonante.",
 					"deathrattle-stats": "Los esbirros con Último aliento solo pueden recibir Espada afilada o Abrazo de la Muerte entre los dones de estadísticas.",
 					"golemancy-salvager": "Golemancia no se puede ofrecer en Recuperador cosido.",
-					"guaranteed-type": "A partir del turno 6, uno de los tres esbirros ofrecidos es de tu tipo más común.",
+					"guaranteed-type": "Desde el turno {{value}}, se te garantiza un esbirro de tu tribu más común, y dos a partir del turno {{value2}}.",
 					"lobby-bans": "Resistencia y Trascendencia están prohibidas en salas de Dragones. Hostilidad está prohibida en esbirros Venenosos. Carisma está prohibido en esbirros de nivel 7.",
 					"no-magnetic-sell-hand": "Los esbirros Magnéticos, los que tienen un efecto al venderlos y los pensados para quedarse en la mano no pueden recibir Dones oscuros.",
 					"rarer-gifts": "Dorado, Horror persistente, Fuerza titánica e Invulnerabilidad son más raros que el resto de dones.",
@@ -490,7 +891,11 @@
 		"elemental_azerite": "Elementales de Azerita",
 		"elemental_tempest": "Elementales Tempest",
 		"mech_apm": "Mecas APM",
-		"quilboar_felboar_spam": "Jabaespines spam Felboar"
+		"quilboar_felboar_spam": "Jabaespines spam Felboar",
+		"murloc_end_of_turn": "Murloc Fin de turno",
+		"quilboar_gem_spam": "Jabaespín Spam de gemas",
+		"undead_apm": "No-muertos APM",
+		"undead_eternal_knight": "No-muertos Caballero eterno"
 	},
 	"counters": {
 		"ancestral-automaton": {
@@ -652,16 +1057,29 @@
 			"opponent": "Tu oponente ha activado {{value}} de 4 habilidades de C'Thun en esta partida"
 		},
 		"ghuun-blood-runes": {
-			"player": "Has jugado {{value}} runas de sangre en esta partida"
+			"player": "G'huun roba {{value}} de Salud ({{runes}} runas de sangre jugadas)",
+			"opponent": "G'huun roba {{value}} de Salud ({{runes}} runas de sangre jugadas)"
 		},
 		"nzoth-dreams-end": {
-			"player": "Has invocado {{value}} esbirros con Último aliento en esta partida. N'Zoth, Fin del Sueño cuesta {{cost}}"
+			"player": "Has invocado {{value}} esbirros con Último aliento en esta partida. N'Zoth, Fin del Sueño cuesta {{cost}}",
+			"opponent": "Tu oponente ha invocado {{value}} esbirros con Último aliento esta partida. N'Zoth, Fin del Sueño cuesta {{cost}}"
 		},
 		"yshaarj-titan-bane": {
 			"player": "Te faltan {{value}} de maná por gastar en esbirros en esta partida ({{spent}} gastado)"
 		},
 		"bgs-tavern-spells-cast": {
 			"player": "Has lanzado {{value}} hechizos de taberna en esta partida"
+		},
+		"crash-of-thunder": {
+			"player": "Has lanzado {{value}} hechizos de Naturaleza este turno. Estruendo de truenos cuesta {{cost}}"
+		},
+		"hodir": {
+			"opponent": "Los próximos {{value}} esbirros que juegue tu oponente se pondrán a 8/8",
+			"player": "Los próximos {{value}} esbirros que juegues se pondrán a 8/8"
+		},
+		"therazane": {
+			"opponent": "El próximo hechizo de tu oponente de estas {{value}} escuelas se lanza dos veces: {{schools}}",
+			"player": "Tu próximo hechizo de estas {{value}} escuelas se lanza dos veces: {{schools}}"
 		}
 	},
 	"decktracker": {
@@ -674,7 +1092,9 @@
 			"main-attribute": "Atributo principal",
 			"mechanics": "Mecánicas",
 			"minion-type": "Tipo de esbirro",
-			"minion-types": "Tipos de esbirro"
+			"minion-types": "Tipos de esbirro",
+			"attack": "Ataque",
+			"health": "Salud"
 		},
 		"overlay": {
 			"mulligan": {
@@ -719,7 +1139,8 @@
 		"card-tooltip-assemble-pick": "Elegir",
 		"card-tooltip-assemble-pick-rate": "Tasa de selección",
 		"card-tooltip-assemble-sort-by": "Ordenar por",
-		"gift-reborn-from": "Renacer de <br/> {{value}}"
+		"gift-reborn-from": "Renacer de <br/> {{value}}",
+		"assembled-card": "Ensamblada: {{value}}"
 	},
 	"ftue": {
 		"experience": {
@@ -805,7 +1226,9 @@
 				"counter-deity-label": "Deidad",
 				"counter-deity-tooltip": "Muestra el ataque y la salud de tu Deidad",
 				"counter-tavern-spells-cast-label": "Hechizos de taberna lanzados",
-				"counter-tavern-spells-cast-tooltip": "Muestra cuántos hechizos de taberna has lanzado en esta partida"
+				"counter-tavern-spells-cast-tooltip": "Muestra cuántos hechizos de taberna has lanzado en esta partida",
+				"hero-power-tips-label": "Consejos de poder de héroe",
+				"hero-power-tips-tooltip": "Al pasar el cursor por tu poder de héroe, muestra los consejos que ha escrito la comunidad de Firestone (Premium)."
 			}
 		},
 		"decktracker": {
@@ -849,7 +1272,15 @@
 					"flesh-giant-tooltip": "Muestra cuántas veces cambió la Salud del héroe de tu oponente durante sus turnos cuando juega como {{classes}}",
 					"herald-tooltip": "Muestra el nivel de Heraldo actual de tu oponente",
 					"cthun-abilities-label": "Habilidades de C'Thun",
-					"cthun-abilities-tooltip": "Cuando tu oponente tiene a C'Thun, Ojo del Imperio en la mano, en el mazo o en el tablero, muestra cuántas de sus cuatro habilidades ha activado"
+					"cthun-abilities-tooltip": "Cuando tu oponente tiene a C'Thun, Ojo del Imperio en la mano, en el mazo o en el tablero, muestra cuántas de sus cuatro habilidades ha activado",
+					"cards-discarded-tooltip": "Mostrar cuántas cartas ha descartado tu oponente en esta partida",
+					"cthun-cost-label": "Coste de C'Thun",
+					"cthun-cost-tooltip": "Mostrar la reducción de coste de C'Thun, Ojo del Imperio",
+					"ghuun-blood-runes-label": "Salud de G'huun",
+					"ghuun-blood-runes-tooltip": "Si tu oponente es Caballero de la Muerte con un mazo de triple Sangre y ha jugado al menos una runa de sangre, mostrar cuánta Salud roba G'huun (6 más las runas de sangre jugadas en esta partida)",
+					"hero-attacks-tooltip": "Mostrar cuántas veces ha atacado el héroe de tu oponente en esta partida",
+					"nzoth-dreams-end-label": "N'Zoth, Fin del Sueño",
+					"nzoth-dreams-end-tooltip": "Si está activado, mostrar cuántos esbirros con Último aliento ha invocado tu oponente y el coste actual de N'Zoth, Fin del Sueño cuando haya invocado al menos uno"
 				},
 				"extra-info-label": "Marcador de información extra",
 				"extra-info-tooltip": "Muestra un marcador en las cartas de la mano del oponente cuando se conoce información adicional, como una reducción de coste"
@@ -923,12 +1354,24 @@
 					"colossus-of-the-cold-tooltip": "Cuando tienes Coloso del Frío en la mano o en el mazo, muestra cuánto maná te falta por gastar en hechizos",
 					"cthun-abilities-label": "Habilidades de C'Thun",
 					"cthun-abilities-tooltip": "Cuando tienes C'Thun, Ojo del Imperio en la mano o en el mazo, muestra cuántas de sus cuatro habilidades has activado",
-					"ghuun-blood-runes-label": "Runas de sangre de G'huun",
-					"ghuun-blood-runes-tooltip": "Cuando tienes G'huun en la mano o en el mazo, muestra cuántas runas de sangre has jugado en esta partida",
+					"ghuun-blood-runes-label": "Salud de G'huun",
+					"ghuun-blood-runes-tooltip": "Si tienes G'huun en la mano o en el mazo, mostrar cuánta Salud roba G'huun (6 más las runas de sangre jugadas en esta partida)",
 					"nzoth-dreams-end-label": "N'Zoth, Fin del Sueño",
 					"nzoth-dreams-end-tooltip": "Cuando tienes N'Zoth, Fin del Sueño en la mano o en el mazo, muestra cuántos esbirros con Último aliento has invocado y su coste actual",
 					"yshaarj-titan-bane-label": "Y'Shaarj, Perdición de los Titanes",
-					"yshaarj-titan-bane-tooltip": "Cuando tienes Y'Shaarj, Perdición de los Titanes en la mano o en el mazo, muestra cuánto maná te falta por gastar en esbirros"
+					"yshaarj-titan-bane-tooltip": "Cuando tienes Y'Shaarj, Perdición de los Titanes en la mano o en el mazo, muestra cuánto maná te falta por gastar en esbirros",
+					"ancestral-automaton-tooltip": "Mostrar cuántas veces has invocado un Autómata ancestral",
+					"crash-of-thunder-label": "Estruendo de truenos",
+					"crash-of-thunder-tooltip": "Si tienes Estruendo de truenos en la mano o en el mazo, mostrar cuántos hechizos de Naturaleza has lanzado este turno",
+					"cthun-cost-label": "Coste de C'Thun",
+					"cthun-cost-tooltip": "Mostrar la reducción de coste de C'Thun, Ojo del Imperio",
+					"hodir-label": "Hodir",
+					"hodir-tooltip": "Mostrar cuántos esbirros puede poner todavía a 8/8 Hodir, padre de gigantes",
+					"specific-deaths": "Mostrar cuántas veces murió {{cardName}} por tu oponente",
+					"therazane-label": "Therazane",
+					"therazane-tooltip": "Mostrar las escuelas de hechizo cuyo próximo hechizo se lanzará dos veces",
+					"ysondre-label": "Ysondre",
+					"ysondre-tooltip": "Mostrar el número de veces que Ysondre murió esta partida"
 				},
 				"special-zones-label": "Zonas especiales",
 				"special-zones-tooltip": "Si está activo, aparece una nueva sección en el rastreador para las cartas gestionadas por Godfrey el Traidor o Irida Sinseeker"
@@ -1060,7 +1503,9 @@
 				"disable-low-memory-rendering-label": "Desactivar renderizado de bajo consumo de memoria",
 				"disable-low-memory-rendering-tooltip": "Por defecto, la app renderiza sus ventanas y la superposición con búferes gráficos más pequeños, lo que ahorra unos 100 MB de memoria en las partidas. Activa esto si las ventanas o la superposición se ven mal o se desplazan mal. Se aplica la próxima vez que se inicie la app.",
 				"disable-overlay-shared-texture-label": "Desactivar superposición rápida en el juego",
-				"disable-overlay-shared-texture-tooltip": "Por defecto, la superposición en el juego se envía al juego directamente a través de la tarjeta gráfica, lo que usa mucha menos CPU. Activa esto si la superposición no aparece, se ve mal o bloquea los clics en el juego. Se aplica la próxima vez que se inicie Hearthstone."
+				"disable-overlay-shared-texture-tooltip": "Por defecto, la superposición en el juego se envía al juego directamente a través de la tarjeta gráfica, lo que usa mucha menos CPU. Activa esto si la superposición no aparece, se ve mal o bloquea los clics en el juego. Se aplica la próxima vez que se inicie Hearthstone.",
+				"show-main-window-on-launch-label": "Abrir la ventana principal al iniciar",
+				"show-main-window-on-launch-tooltip": "Si está desactivado, Firestone arranca en la bandeja del sistema. Abre la ventana principal desde el icono de la bandeja."
 			},
 			"menu": {
 				"account": "Cuenta",
@@ -1100,7 +1545,9 @@
 				"source-verified-tooltip": "Desarrollado por un tercero, con revisiones periódicas de Firestone. Solo se actualizan automáticamente las versiones que Firestone ha aprobado.",
 				"update-available-unreviewed": "Hay una versión nueva de este mod, pero Firestone aún no la ha revisado. Haz clic para actualizarla de todos modos.",
 				"explanation": "Los mods son plugins que cambian el comportamiento de Hearthstone.",
-				"restart-required": "Reinicia Hearthstone para que se aplique este cambio."
+				"restart-required": "Reinicia Hearthstone para que se aplique este cambio.",
+				"download-failed": "No se han podido descargar las librerías de mods. Haz clic en Habilitar mods otra vez para seguir.",
+				"wrong-path-error": "La carpeta del juego no parece de Hearthstone. Revisa la ruta y haz clic en Comprobar de nuevo."
 			},
 			"premium": {
 				"lottery-sync-label": "Puntos del sorteo",
@@ -1113,7 +1560,9 @@
 			},
 			"widgets": {
 				"use-azalina-label": "Adivinar desde Azalina",
-				"use-azalina-tooltip": "Si un jugador tiene a Azalina, usamos la clase del oponente para decidir si mostrar algunos contadores (p. ej., si eres Sacerdote contra un Pícaro, podemos mostrar el contador de Guardianes de jade). EXPERIMENTAL"
+				"use-azalina-tooltip": "Si un jugador tiene a Azalina, usamos la clase del oponente para decidir si mostrar algunos contadores (p. ej., si eres Sacerdote contra un Pícaro, podemos mostrar el contador de Guardianes de jade). EXPERIMENTAL",
+				"card-tooltip-canvas-fallback": "Respaldo de imagen de carta",
+				"card-tooltip-canvas-fallback-tooltip": "Si no carga la imagen del tooltip de una carta, dibuja la carta en vez de dejar una imagen rota."
 			},
 			"localization": {
 				"ai-text": "Si está activado, las traducciones que falten se completan con texto generado por IA. Las traducciones de la comunidad siempre tienen prioridad. El texto de la IA puede no ser perfecto y, si no hay traducción de IA, se sigue usando el inglés.",
@@ -1145,6 +1594,9 @@
 			},
 			"quests": {
 				"size-label": "Tamaño del widget de misión"
+			},
+			"data": {
+				"refresh-signed-out": "Tienes que iniciar sesión para volver a descargar todo el historial de partidas del servidor."
 			}
 		},
 		"global": {
@@ -1213,7 +1665,8 @@
 			"linking-overwolf": "Redirigiéndote a Overwolf…",
 			"privacy-link": "Política de privacidad",
 			"privacy-prefix": "Al iniciar sesión, aceptas nuestra ",
-			"subtitle": "Inicia sesión para sincronizar tus datos entre dispositivos"
+			"subtitle": "Inicia sesión para sincronizar tus datos entre dispositivos",
+			"web-subtitle": "Inicia sesión en la web de Firestone"
 		},
 		"docs": {
 			"back-label": "Toda la documentación",
@@ -1379,7 +1832,7 @@
 					"caption": "Rastreador de mazos y superposiciones en el juego",
 					"title": "Rastreador de mazos"
 				},
-				"lead": "El compañero funciona sin suscripción. Algunas superposiciones tienen un cupo diario o semanal; Premium quita esos límites.",
+				"lead": "El compañero funciona gratis. Casi todas las funciones se pueden usar sin suscripción, y pasarte a Premium quita todos los límites.",
 				"mods": {
 					"alt": "Ajustes de Mods de Firestone con la lista de mods de la comunidad y conmutadores de encendido/apagado",
 					"blurb": "Activa mods de la comunidad desde Ajustes — silencio automático, autocompletar mazos, ajustes de colección y más — con un conmutador cada uno.",
@@ -1401,8 +1854,15 @@
 				"title": "Lo que obtienes gratis"
 			},
 			"hero": {
-				"subtitle": "El compañero gratis de Hearthstone: rastreador de mazos, superposiciones, colección, herramientas de Campos de batalla y más.",
-				"title": "Descargar Firestone"
+				"subtitle": "Rastreador de mazos, superposiciones, colección y herramientas de Campos de batalla, dentro del juego.",
+				"title": "Registra cada partida de Hearthstone, gratis",
+				"badge": "La versión más estable",
+				"cta": "Descargar Firestone",
+				"step-1-title": "Instalar",
+				"step-2-text": "Abre el juego como siempre.",
+				"step-2-title": "Iniciar Hearthstone",
+				"step-3-text": "Firestone empieza a registrar la partida solo.",
+				"step-3-title": "Jugar"
 			},
 			"lightbox": {
 				"close": "Cerrar imagen a tamaño completo",
@@ -1426,7 +1886,8 @@
 				"cta": "Descargar Standalone",
 				"discord-cta": "Pregúntanos en Discord",
 				"discord-lead": "¿Quieres acceso anticipado?",
-				"title": "Standalone"
+				"title": "Standalone",
+				"skip": "¿Quieres saltarte Overwolf?"
 			},
 			"social-proof": {
 				"carousel": {
@@ -2002,7 +2463,214 @@
 			"assemble-pick-rate": "Elegida",
 			"assemble-pick-rate-hint": "Con qué frecuencia se eligió la opción cuando se ofreció",
 			"assemble-right": "Derecha",
-			"cards": "Cartas"
+			"cards": "Cartas",
+			"assemble-game": "partida",
+			"assemble-games": "partidas",
+			"assemble-games-hint": "Partidas en las que se ofreció una base. Si en una partida se ensambló más de una base, cuenta una vez por cada base.",
+			"discover": "Descubrir",
+			"discover-all-classes": "Todas las clases",
+			"discover-card": "Carta",
+			"discover-error": "No se han podido cargar las estadísticas de Descubrir. Inténtalo más tarde.",
+			"discover-games": "Veces jugada",
+			"discover-loading": "Cargando...",
+			"discover-offered": "Ofrecida",
+			"discover-offered-count-hint": "Veces que se ofreció esta carta",
+			"discover-picked": "Elegida",
+			"discover-search": "Buscar una carta"
+		},
+		"account": {
+			"account-id-copied": "ID de cuenta copiado",
+			"copy-account-id": "Copiar ID de cuenta",
+			"sign-in": "Iniciar sesión",
+			"sign-out": "Cerrar sesión"
+		},
+		"contribute": {
+			"admin": {
+				"action-contributor-added": "Colaborador añadido",
+				"action-contributor-removed": "Colaborador quitado",
+				"action-contributor-updated": "Colaborador actualizado",
+				"action-created": "Creado",
+				"action-edited": "Editado",
+				"action-restored": "Restaurado",
+				"action-unpublished": "Despublicado",
+				"add": "+ Añadir colaborador",
+				"add-confirm": "Añadir",
+				"add-title": "Añadir colaborador",
+				"added": "{{name}} ya puede contribuir.",
+				"admin-hint": "Los admins pueden editarlo todo y gestionar a los colaboradores.",
+				"after": "Después",
+				"all-content-types": "Todo",
+				"badge": "Insignia que se ve en sus consejos",
+				"before": "Antes",
+				"cancel": "Cancelar",
+				"col-account": "Cuenta",
+				"col-action": "Acción",
+				"col-actions": "Acciones",
+				"col-added": "Añadido",
+				"col-content-types": "Puede editar",
+				"col-role": "Rol",
+				"col-target": "Sobre",
+				"col-when": "Cuándo",
+				"col-who": "Quién",
+				"confirm-remove": "¿Quitar a {{name}}? Sus consejos publicados siguen en línea, pero ya no podrá editar.",
+				"confirm-restore": "¿Dejar este consejo como estaba antes del cambio?",
+				"confirm-restore-creation": "El consejo no existía antes. Si sigues, se eliminará. ¿Continuar?",
+				"details": "Detalle del cambio",
+				"display-name": "Nombre que se ve en sus consejos",
+				"display-name-hint": "Los jugadores ven este nombre junto a cada consejo que escriben.",
+				"edit": "Editar",
+				"edit-title": "Editar colaborador",
+				"form-error-content-types": "Elige al menos una cosa que pueda editar.",
+				"form-error-exists": "Esta cuenta ya es colaboradora ({{name}}). Edítala.",
+				"form-error-link": "El enlace del perfil tiene que empezar por https://",
+				"form-error-name": "Escribe el nombre que se ve en sus consejos.",
+				"form-error-user-id": "Escribe el ID de cuenta.",
+				"link": "Enlace del perfil",
+				"link-hint": "opcional, se ve en sus consejos",
+				"loading": "Cargando colaboradores y actividad…",
+				"nav-label": "Admin",
+				"no-activity": "Todavía no hay cambios.",
+				"no-badge": "Ninguna",
+				"no-contributors": "Todavía no hay colaboradores.",
+				"nothing": "(nada)",
+				"remove": "Quitar",
+				"removed": "Se ha quitado a {{name}}.",
+				"restore": "Restaurar la versión anterior",
+				"restore-creation": "Retirar este consejo",
+				"restored": "Restaurado. La app se actualizará en unas horas.",
+				"role-admin": "Admin",
+				"role-author": "Autor",
+				"save": "Guardar",
+				"soon": "pronto",
+				"subtitle": "Colaboradores e historial",
+				"tab-activity": "Actividad",
+				"tab-contributors": "Colaboradores · {{value}}",
+				"title": "Admin",
+				"updated": "Se ha actualizado a {{name}}.",
+				"user-id": "ID de cuenta",
+				"user-id-hint": "Los jugadores lo ven en el menú de cuenta de la web, en Copiar ID de cuenta.",
+				"user-id-placeholder": "Pega el ID que el jugador copió en su menú de cuenta",
+				"view": "Ver",
+				"you": "(tú)"
+			},
+			"comps": {
+				"nav-label": "Composiciones"
+			},
+			"errors": {
+				"audit_entry_not_found": "Este cambio ya no está.",
+				"contradictory_tribes": "Una tribu no puede estar presente y ausente a la vez.",
+				"contributor_not_found": "Este colaborador ya estaba quitado.",
+				"duplicate_variant": "Ya tienes un consejo para esta variante. Edita ese.",
+				"generic": "No se ha podido publicar ({{code}}). El borrador se conserva en este dispositivo.",
+				"generic-admin": "No ha funcionado ({{code}}). Inténtalo de nuevo.",
+				"invalid_json": "La petición no es válida.",
+				"invalid_role": "Rol desconocido.",
+				"invalid_token": "Se ha cerrado la sesión. Inicia sesión de nuevo para publicar.",
+				"invalid_url": "El enlace del perfil tiene que empezar por https://",
+				"item_not_found": "Este consejo ya no existe.",
+				"last_admin": "Siempre tiene que haber al menos un admin.",
+				"network_error": "No se ha podido llegar al servidor. Comprueba la conexión e inténtalo de nuevo.",
+				"not_a_contributor": "Tu cuenta ya no puede publicar consejos.",
+				"not_an_admin": "Tu cuenta ya no es admin.",
+				"not_configured": "Ahora mismo no se puede contribuir.",
+				"not_your_item": "Este consejo es de otro autor.",
+				"required": "Faltan campos obligatorios.",
+				"signed_out": "Se ha cerrado la sesión. Inicia sesión de nuevo para publicar.",
+				"too_long": "Este consejo es demasiado largo.",
+				"unknown_content_type": "Uno de los tipos de contenido no existe.",
+				"unknown_hero": "Este héroe no es de Campos de batalla.",
+				"unknown_hero_power": "Este poder de héroe todavía no se conoce.",
+				"unknown_tribe": "Una de las tribus no es de Campos de batalla."
+			},
+			"hero-power-tips": {
+				"add-hero": "+ Del héroe",
+				"add-lobby": "+ De la sala",
+				"basic-tip": "Consejo básico",
+				"confirm-delete": "¿Eliminar este consejo? Los jugadores dejarán de verlo.",
+				"curve-3-on-3": "3 en 3",
+				"curve-basic": "Básica",
+				"curves": "Curvas",
+				"delete": "Eliminar",
+				"deleted": "Consejo eliminado.",
+				"details": "Detalles",
+				"details-hint": "opcional · solo en la app",
+				"details-placeholder": "Cuándo salirse de la curva y qué buscar en la tienda",
+				"discard": "Descartar",
+				"edit": "Editar",
+				"filter-all": "Todos",
+				"filter-label": "Filtro",
+				"filter-none": "Todavía sin consejo",
+				"filter-update": "Necesita actualización",
+				"form-title-edit-basic": "Editar consejo básico",
+				"form-title-edit-hero": "Editar consejo del héroe",
+				"form-title-edit-lobby": "Editar consejo de sala",
+				"form-title-new-basic": "Nuevo consejo básico",
+				"form-title-new-hero": "Nuevo consejo del héroe",
+				"form-title-new-lobby": "Nuevo consejo de sala",
+				"hero": "Héroe",
+				"language": "Idioma",
+				"loading": "Cargando tus consejos…",
+				"lobby": "Cuando la sala",
+				"lobby-has": "tiene",
+				"lobby-lacks": "no tiene",
+				"lobby-pick": "Elige una o varias tribus",
+				"lobby-summary-has": "Se muestra cuando todas estas están en la sala: {{tribes}}",
+				"lobby-summary-lacks": "Se muestra cuando ninguna de estas está en la sala: {{tribes}}",
+				"nav-label": "Consejos de poder de héroe",
+				"no-variants": "No hay variantes. Añade una si un héroe o la sala cambian cómo se juega este poder.",
+				"optional": "opcional",
+				"outdated-title": "El poder ha cambiado: {{value}} de tus consejos se escribió para el texto anterior",
+				"pick-power": "Elige un poder de héroe, o pulsa Ctrl+K",
+				"power-changed": "Parche {{patch}}: el poder ha cambiado",
+				"power-count": "{{shown}} de {{total}} poderes de héroe",
+				"powers-label": "Poderes de héroe",
+				"preview": "Vista previa",
+				"preview-app": "App",
+				"preview-app-colors": "Colores de la app",
+				"preview-empty": "Aquí verás tu consejo",
+				"preview-game": "En partida",
+				"preview-panel-title": "Consejos de Firestone",
+				"published": "Consejo publicado. Aparecerá en la app en unas horas.",
+				"rewrite": "Reescribir con el texto actual",
+				"save": "Guardar y publicar",
+				"search-label": "Buscar poderes de héroe",
+				"search-placeholder": "Poder, héroe o texto de la carta",
+				"status-count": "{{value}} consejo(s)",
+				"status-draft-kept": "El borrador se conserva en este dispositivo",
+				"status-draft-saved": "Borrador guardado en local · {{time}}",
+				"status-editing": "Estás editando tu consejo publicado",
+				"status-new": "Borrador nuevo",
+				"status-none": "Todavía sin consejo",
+				"status-published": "Publicado",
+				"status-publishing": "Publicando…",
+				"status-restored": "Se ha recuperado tu borrador sin guardar",
+				"status-update": "Necesita actualización",
+				"subtitle": "Consejos que ven los jugadores al pasar el cursor por un poder de héroe en Campos de batalla",
+				"tip": "Consejo",
+				"tip-hint": "se ve en la partida y en la app",
+				"tip-placeholder": "¿Qué debería hacer el jugador con este poder?",
+				"title": "Consejos de poder de héroe",
+				"used-by": "Lo usan {{heroes}}",
+				"variant-hero": "Solo {{hero}}",
+				"variant-lobby-empty": "Contexto de sala",
+				"variant-lobby-has": "{{tribes}} en la sala",
+				"variant-lobby-lacks": "Sin {{tribes}} en la sala",
+				"variants": "Variantes",
+				"variants-hint": "sustituyen a tu consejo básico cuando encajan",
+				"write-basic": "+ Escribe tu consejo básico",
+				"write-basic-hint": "Se muestra al pasar el cursor por este poder",
+				"your-tips": "Tus consejos",
+				"your-tips-hint": "Esto solo lo ves tú."
+			},
+			"nav-label": "Contribuir",
+			"trinkets": {
+				"nav-label": "Abalorios"
+			},
+			"unavailable": {
+				"body": "Contribuir está reservado a las cuentas aprobadas. Para ser colaborador, envía tu ID de cuenta (está en el menú de cuenta) al equipo de Firestone.",
+				"home": "Volver a Firestone",
+				"title": "Esta sección no está disponible para tu cuenta"
+			}
 		}
 	},
 	"widgets": {
