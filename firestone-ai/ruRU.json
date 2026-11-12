@@ -63,6 +63,73 @@
 			},
 			"strategies": {
 				"outdated": "Написано для старой версии этой силы героя"
+			},
+			"personal-stats": {
+				"hero-details": {
+					"tabs": {
+						"tavern-timings": "Темп таверны"
+					}
+				}
+			},
+			"tavern-timings": {
+				"compare-heroes-tooltip": "Среди верхних 25% MMR, игроки на 1–2 месте: {{hero}} против всех героев",
+				"compare-mmr": "MMR",
+				"compare-mmr-tooltip": "Верхние 10% MMR против нижних 50% MMR",
+				"compare-winners": "Победители",
+				"compare-winners-tooltip": "Среди верхних 25% MMR: игроки на 1–2 месте против остальных",
+				"group-bottom-50": "Нижние 50%",
+				"group-others": "Места 3–8",
+				"group-top-10": "Верхние 10%",
+				"group-winners": "Места 1–2",
+				"hover": {
+					"curve-step": "У{{tier}} на ходе {{turn}}",
+					"no-placement-past-t4": "Нет места после 4 уровня: кто поздно доходит до 5 уровня, тот просто продержался достаточно долго.",
+					"now": "сейчас",
+					"reach-title": "Когда {{hero}} достигает уровня {{tier}}",
+					"tier-on": "Уровень {{value}} на",
+					"title": "{{hero}} · Уровень {{tier}} → {{next}}",
+					"your-curve": "Игроки с вашей кривой ({{curve}})"
+				},
+				"legend-left": "Слева: {{group}}",
+				"legend-right": "Справа: {{group}}",
+				"never": "никогда",
+				"no-data": "Пока нет статистики таверны для этого героя с этими фильтрами.",
+				"openings-curve-header": "У2 · У3 · У4 на ходе",
+				"played": "Сыграно",
+				"reach-cell-tooltip": "Уровень {{tier}} на ходе {{turn}} · {{games}} игр<br/>В среднем они финишировали на месте {{avg}}.<br/>Игроки из верхних 25%, ещё в игре на ходе {{turn}}: {{reference}}.",
+				"reach-column-header": "Достигнут на ходе",
+				"reach-legend-better": "Место лучше",
+				"reach-legend-never": "Никогда: против всех, кто достиг уровня",
+				"reach-legend-worse": "Место хуже",
+				"reach-never": "Никогда",
+				"reach-never-tooltip": "Уровень {{tier}} так и не достигнут · {{games}} игр<br/>В среднем они финишировали на месте {{avg}}, против {{reference}} для всех игр, дошедших до уровня {{from}}.",
+				"reach-row": "Уровень {{from}} → {{to}}",
+				"reach-subtitle": "Верхние 25% MMR · Разница места против всех игроков из верхних 25%, ещё в игре на этом ходе",
+				"reach-title": "Когда выходить на каждый уровень",
+				"recommended-best": "Лучшая",
+				"recommended-curves-title": "Рекомендуемые кривые",
+				"recommended-delta-header": "к средн.",
+				"recommended-delta-tooltip": "Среднее место с этой кривой по сравнению со всеми играми тех же игроков ({{group}}).",
+				"recommended-most-played": "Чаще всего",
+				"takeaway-ahead-text": "{{a}}% на уровне {{tier}} или выше на ходе {{turn}}, против {{b}}%.",
+				"takeaway-ahead-title": "Впереди на ходе {{turn}}",
+				"takeaway-behind-title": "Позади на ходе {{turn}}",
+				"takeaway-hold-range-title": "Ходы {{from}}–{{to}}: они остаются",
+				"takeaway-hold-title": "Ход {{turn}}: они остаются",
+				"takeaway-level-range-title": "Ходы {{from}}–{{to}}: они чаще повышают уровень",
+				"takeaway-level-title": "Ход {{turn}}: они чаще повышают уровень",
+				"takeaway-points": "{{value}} очк.",
+				"takeaway-upgrade-text": "Ход {{turn}}: {{a}}% тех, кто на уровне {{from}}, переходят на уровень {{to}}, против {{b}}%.",
+				"takeaways-none": "Явной разницы между группами нет.",
+				"takeaways-title-heroes": "Что иначе делают победители с {{hero}}",
+				"takeaways-title-mmr": "Что иначе делают лучшие игроки",
+				"takeaways-title-winners": "Что иначе делают победители",
+				"tier-mix-title": "Уровень таверны по ходам",
+				"tier-mix-tooltip-end-of-turn": "Уровень в конце хода",
+				"tier-mix-tooltip-from-tier": "Уровень {{from}} → {{to}}",
+				"tier-mix-tooltip-games": "Игроки",
+				"tier-mix-tooltip-title": "Ход {{turn}} · игроки ещё в игре",
+				"tier-mix-tooltip-upgraded": "Повысили уровень на этом ходе"
 			}
 		},
 		"collection": {
@@ -302,7 +369,8 @@
 			},
 			"banner": {
 				"back-to-old": "Вернуться к старому просмотрщику",
-				"new-viewer": "Вы смотрите повтор в новом просмотрщике."
+				"new-viewer": "Вы смотрите повтор в новом просмотрщике.",
+				"dismiss": "Закрыть"
 			},
 			"bg": {
 				"anomaly": "Аномалия",
@@ -347,7 +415,50 @@
 				"tavern-opens": "Раунд {{n}}: таверна открывается",
 				"tier": "Уровень таверны",
 				"tribes": "Типы существ в этой партии",
-				"versus": "против"
+				"versus": "против",
+				"activates": "{{card}} срабатывает",
+				"back-to-summary": "К сводке",
+				"choice": "Выбор",
+				"chose-from": "Выбрано {{card}} из {{n}} вариантов",
+				"damage-from": "Уровень {{tier}} + {{n}} существ",
+				"damage-from-one": "Уровень {{tier}} + 1 существо",
+				"discover-dark-gift": "Тёмный дар",
+				"discover-greater-trinket": "Большой аксессуар",
+				"discover-lesser-trinket": "Малый аксессуар",
+				"draw-source": "От {{source}}",
+				"draws": "Получает {{cards}}",
+				"end-title": "Конец игры",
+				"event-discover": "Обнаружение",
+				"final-board": "Финальное поле",
+				"game": "Игра",
+				"health": "Здоровье",
+				"hero": "Герой",
+				"lobby": "Лобби",
+				"minutes": "{{n}} мин",
+				"mode": "Режим",
+				"mode-solo": "Поля сражений · соло",
+				"next": "Дальше:",
+				"offer-from": "{{title}} от {{source}}",
+				"other-players": "Остальные игроки",
+				"place-label": "место",
+				"power-replaces": "{{power}} заменяет {{from}} на {{to}}",
+				"power-summons": "{{power}} призывает {{to}}",
+				"quest-progress": "Прогресс: {{n}}/{{total}}",
+				"quest-reward": "Награда",
+				"restart": "Начать с выбора героя",
+				"round-vs": "Раунд {{n}} против {{hero}}",
+				"rounds-count": "{{n}} раундов",
+				"sold-effect": "{{card}} срабатывает",
+				"stat": {
+					"total-stats": "Сумма характеристик",
+					"triples": "Тройки",
+					"won": "Выигранные раунды"
+				},
+				"step-of": "Шаг {{n}} из {{total}}",
+				"step-through": "Бой по шагам",
+				"tap-to-close": "Нажмите снаружи, чтобы закрыть",
+				"uses-card": "Использует {{card}}",
+				"you": "Вы"
 			},
 			"coming-soon": {
 				"text": "Повторы Полей сражений и Наёмников на телефоне пока недоступны. Откройте эту страницу на компьютере, чтобы посмотреть.",
@@ -427,7 +538,8 @@
 				"shortcuts": "Горячие клавиши",
 				"turns": "{{count}} ходов",
 				"versus": "{{mine}} против {{opponent}}",
-				"view-in-firestone": "Открыть в клиенте HS"
+				"view-in-firestone": "Открыть в клиенте HS",
+				"switch-to-old": "Перейти к старому просмотру"
 			},
 			"hero-strip": {
 				"corpses": "Трупы",
@@ -552,6 +664,12 @@
 				"action": "Действия",
 				"board": "Стол",
 				"label": "Вид"
+			},
+			"swipe-hint": {
+				"next": "Смахните влево, чтобы перейти дальше",
+				"ok": "Понятно",
+				"previous": "Смахните вправо, чтобы вернуться",
+				"title": "Смахивайте, чтобы листать повтор"
 			}
 		}
 	},
@@ -1015,6 +1133,35 @@
 			"whelp-health-buff-tooltip": "Дополнительное здоровье ваших дракончиков",
 			"cards-discarded-this-game": "Карты, сброшенные в этой игре",
 			"cards-discarded-this-game-tooltip": "Сколько карт ты сбросил в этой игре"
+		},
+		"hero-selection": {
+			"recap": {
+				"adjusted-for-lobby": "учитывает типы существ и особые настройки вроде аномалий",
+				"all-heroes": "пунктир: все герои",
+				"average-short": "средн.",
+				"combat-winrate": "Процент побед в бою",
+				"game": "игра",
+				"game-plan": "План игры",
+				"games": "игр",
+				"last-played": "Последняя игра {{value}}",
+				"more-tips": "ещё +{{value}} в приложении",
+				"no-recent-games": "Нет недавних игр",
+				"peak-range": "пик У{{from}}–{{to}}",
+				"peak-single": "пик У{{value}}",
+				"rating-per-game": "Оценка за игру",
+				"tip-patch": "патч {{value}}",
+				"top-4": "Топ-4",
+				"tribes": "Типы существ",
+				"turn": "У{{value}}",
+				"win": "Победа",
+				"you": "Вы"
+			}
+		},
+		"hero-stats": {
+			"avg-position-details-tooltip-estimated-position": "Ожидаемое место",
+			"avg-position-details-tooltip-hero-average": "Среднее героя",
+			"avg-position-details-tooltip-lobby-tribes": "Типы существ в этом лобби",
+			"pick-rate-label": "Частота выбора:"
 		}
 	},
 	"bgs-comp": {
@@ -1551,7 +1698,11 @@
 				"counter-tavern-spells-cast-label": "Заклинания из таверны",
 				"counter-tavern-spells-cast-tooltip": "Показывает, сколько заклинаний из таверны вы разыграли за эту игру",
 				"hero-power-tips-label": "Подсказки к силе героя",
-				"hero-power-tips-tooltip": "При наведении на силу героя показывать подсказки, которые написало сообщество Firestone (премиум)."
+				"hero-power-tips-tooltip": "При наведении на силу героя показывать подсказки, которые написало сообщество Firestone (премиум).",
+				"quest-stats-frame-size-label": "Размер виджета заданий",
+				"quest-stats-size-label": "Размер статистики заданий",
+				"tavern-stats-label": "Статистика таверны при наведении",
+				"tavern-stats-tooltip": "При наведении на кнопку улучшения таверны показывает рекомендуемые кривые вашего героя и момент, когда игроки обычно выходят на следующий уровень."
 			}
 		},
 		"decktracker": {
@@ -1745,11 +1896,11 @@
 				"intro-battlenet-linked": "Этот вход Battle.net привязан к аккаунту Overwolf Firestone. Отвяжите, чтобы использовать каждый вход отдельно.",
 				"intro-battlenet-linked-overwolf": "Этот вход Battle.net привязан к аккаунту Overwolf, чтобы видеть ту историю матчей. Отвяжите Overwolf, чтобы использовать каждый вход отдельно.",
 				"intro-signed-out": "Войдите, чтобы синхронизировать историю игр. Другие способы входа можно привязать позже.",
-				"link-battlenet-button": "Привязать Battle.net",
+				"link-battlenet-button": "Привязать",
 				"link-battlenet-label": "Battle.net",
 				"link-battlenet-need-overwolf": "Сначала войдите через Overwolf, затем снова нажмите «Привязать Battle.net».",
 				"link-battlenet-tooltip": "Сначала войдите через Overwolf, затем привяжите Battle.net. После этого можно входить через Battle.net и обновлять данные.",
-				"link-overwolf-button": "Привязать Overwolf",
+				"link-overwolf-button": "Привязать",
 				"link-overwolf-label": "Overwolf",
 				"link-overwolf-need-battlenet": "Сначала войдите через Battle.net, затем снова нажмите «Привязать Overwolf».",
 				"link-overwolf-tooltip": "Привязать существующий аккаунт Overwolf Firestone. Это позволит импортировать ваши данные (матчи, комплекты и т. д.).",
@@ -1758,36 +1909,52 @@
 				"log-out-tooltip": "Выйти из аккаунта Firestone на этом устройстве.",
 				"not-signed-in": "Вы не вошли в аккаунт.",
 				"perks-history-detail": "Игры, не привязанные к аккаунту, удаляются примерно через год.",
-				"perks-history-title": "История матчей хранится онлайн",
+				"perks-history-title": "История матчей навсегда",
 				"perks-intro": "Вход бесплатный. Он просто делает Firestone удобнее для вас.",
-				"perks-lottery-detail": "Очки копятся локально; войдите, чтобы синхронизировать их и участвовать в розыгрыше в конце сезона.",
+				"perks-lottery-detail": "Шанс выиграть подписку Premium на 2 месяца в конце каждых двух недель.",
 				"perks-lottery-title": "Участвовать в лотерее",
-				"perks-replays-detail": "Без аккаунта файлы повторов удаляются через 60 дней.",
-				"perks-replays-title": "Повторы хранятся около года",
-				"perks-sync-detail": "История матчей, статистика комплектов и достижения остаются с вами при переустановке или смене компьютера.",
-				"perks-sync-title": "Данные следуют за вами",
+				"perks-replays-detail": "Без учётной записи файлы повторов удаляются через 60 дней, а через год — если вы вошли (у пользователей Premium они хранятся всегда).",
+				"perks-replays-title": "Храните повторы дольше",
+				"perks-sync-detail": "Получите полную историю матчей и статистику после переустановки или смены компьютера.",
+				"perks-sync-title": "Сохраните данные",
 				"perks-title": "Зачем входить?",
 				"provider-battlenet": "Battle.net",
 				"provider-overwolf": "Overwolf",
 				"provider-unknown": "неизвестный провайдер",
 				"sign-in-button": "Войти",
 				"sign-in-label": "Аккаунт",
-				"sign-in-tooltip": "Открыть страницу входа, чтобы войти через Overwolf или Battle.net.",
+				"sign-in-tooltip": "Открывает страницу входа.",
 				"signed-in-as": "Вы вошли как <b>{{name}}</b> через {{provider}}. Имя пользователя Firestone: {{username}}",
 				"signed-in-linked-overwolf-tooltip": "Привязанный аккаунт Overwolf: {{name}}",
-				"unlink-battlenet-button": "Отвязать Battle.net",
+				"unlink-battlenet-button": "Отвязать",
 				"unlink-battlenet-confirmation": "Вы уверены?",
 				"unlink-battlenet-failed": "Не удалось отвязать Battle.net. Попробуйте позже.",
 				"unlink-battlenet-label": "Battle.net",
 				"unlink-battlenet-tooltip": "Отключить Battle.net от аккаунта Overwolf Firestone. После этого каждый вход будет показывать только свою историю игр.",
 				"unlink-last-login-failed": "На этом аккаунте Firestone должен остаться хотя бы один способ входа.",
 				"unlink-last-login-label": "Аккаунт",
-				"unlink-overwolf-button": "Отвязать Overwolf",
+				"unlink-overwolf-button": "Отвязать",
 				"unlink-overwolf-confirmation": "Вы уверены?",
 				"unlink-overwolf-failed": "Не удалось отвязать Overwolf. Попробуйте позже.",
 				"unlink-overwolf-label": "Overwolf",
 				"unlink-overwolf-tooltip": "Отключить Overwolf от этого аккаунта Battle.net Firestone. После этого каждый вход будет показывать только свою историю игр.",
-				"link-battlenet-failed": "Не удалось начать привязку Battle.net. Попробуйте позже."
+				"link-battlenet-failed": "Не удалось начать привязку Battle.net. Попробуйте позже.",
+				"hide-premium-lock-buttons-label": "Скрыть кнопки блокировки Premium",
+				"hide-premium-lock-buttons-tooltip": "Скрывает кнопки перехода на Premium, которые появляются, когда бесплатные ежедневные использования функций Premium закончились",
+				"intro-other": "Привяжите других поставщиков к этой учётной записи Firestone.",
+				"link-generic-label": "Учётная запись",
+				"link-need-sign-in": "Сначала войдите в Firestone, затем попробуйте привязать снова.",
+				"link-provider-button": "Привязать",
+				"link-provider-tooltip": "Добавьте {{provider}} как ещё один способ входа в эту учётную запись Firestone.",
+				"link-provider-unavailable": "Этот вход пока недоступен.",
+				"provider-email": "Эл. почта",
+				"provider-google": "Google",
+				"provider-wechat": "WeChat",
+				"unlink-generic-failed": "Не удалось отвязать этот вход. Попробуйте позже.",
+				"unlink-generic-label": "Учётная запись",
+				"unlink-provider-button": "Отвязать",
+				"unlink-provider-confirmation": "Вы уверены?",
+				"unlink-provider-tooltip": "Уберите {{provider}} как способ входа в эту учётную запись Firestone."
 			},
 			"addons": {
 				"empty": "Дополнения не найдены. Откройте папку и положите туда пакет дополнения.",
@@ -1886,7 +2053,8 @@
 				"account": "Аккаунт",
 				"addons": "Дополнения",
 				"streamer": "Стример",
-				"hotkeys": "Горячие клавиши"
+				"hotkeys": "Горячие клавиши",
+				"privacy": "Конфиденциальность"
 			},
 			"mods": {
 				"auto-update-all": "Все",
@@ -1987,7 +2155,15 @@
 				"sending-overlay": "Сейчас трансляция идёт с этого ПК"
 			},
 			"quests": {
-				"size-label": "Размер виджета задачи"
+				"size-label": "Размер виджета задачи",
+				"list-size-label": "Размер списка заданий"
+			},
+			"privacy": {
+				"intro": "Выберите, как Firestone и рекламные партнёры используют данные на этом устройстве. Это можно изменить в любой момент.",
+				"manage-button": "Управлять",
+				"manage-label": "Конфиденциальность рекламы",
+				"manage-tooltip": "Открывает настройки конфиденциальности рекламы. Набор параметров зависит от вашего региона.",
+				"title": "Конфиденциальность"
 			}
 		},
 		"global": {
@@ -2013,7 +2189,33 @@
 		"reconnect-for-chat-text": "Перейдите в Настройки и заново подключите аккаунт Twitch, чтобы зрители могли использовать !deck в чате",
 		"reconnect-for-chat-title": "Переподключите Twitch, чтобы включить !deck",
 		"lease-held-text": "Нажми, чтобы открыть Настройки и транслировать с этого ПК",
-		"lease-held-title": "Другой ПК транслирует на этом канале"
+		"lease-held-title": "Другой ПК транслирует на этом канале",
+		"config": {
+			"battle-simulator": "Симулятор боя",
+			"battlegrounds": "Поля сражений",
+			"constructed": "Констрактед",
+			"general": "Общее",
+			"horizontal-offset": "Сдвиг по горизонтали",
+			"horizontal-offset-help": "Сдвигает поле при наведении. Подстройте под область захвата.",
+			"invert-tracker": "Поменять сторону трекеров",
+			"invert-tracker-help": "Показывает трекер слева экрана для зрителей. Они по-прежнему могут его двигать.",
+			"language": "Язык",
+			"language-auto": "Авто",
+			"language-help": "Берёт язык Twitch или язык браузера, если Twitch его не передаёт.",
+			"magnifier": "Значок лупы сверху",
+			"magnifier-bottom": "Снизу",
+			"magnifier-help": "Фиксирует положение значка лупы, чтобы он не мешал трансляции.",
+			"magnifier-options-help": "Пользователь: каждый зритель выбирает снизу или сверху. Снизу — по умолчанию. Снизу и Сверху фиксируют это положение в таблице.",
+			"magnifier-top": "Сверху",
+			"magnifier-user": "Пользователь",
+			"minion-list": "Список существ",
+			"opponent-tracker": "Трекер противника",
+			"page-title": "Страница настроек",
+			"save": "Сохранить",
+			"title": "Оверлей Firestone",
+			"widgets": "Виджеты",
+			"widgets-help": "Зрители видят их по умолчанию, но могут изменить это в настройках."
+		}
 	},
 	"website": {
 		"auth": {
@@ -2032,7 +2234,11 @@
 				"returning": "Возвращаем вас в приложение Firestone…",
 				"signing-in": "Выполняется вход...",
 				"success": "Готово!",
-				"try-again": "Попробовать снова"
+				"try-again": "Попробовать снова",
+				"link-returning-generic": "Возврат в приложение Firestone. Теперь этим входом можно пользоваться в учётной записи Firestone.",
+				"link-success-email": "Вход по почте добавлен!",
+				"link-success-google": "Google привязан!",
+				"link-success-wechat": "WeChat привязан!"
 			},
 			"coming-soon": "Скоро",
 			"continue-with-battlenet": "Продолжить с Battle.net",
@@ -2048,7 +2254,9 @@
 				"missing-link-token": "Ссылка устарела. Откройте «Привязать Battle.net» в приложении Firestone, войдя через Overwolf.",
 				"missing-link-token-overwolf": "Ссылка устарела. Откройте «Привязать Overwolf» в приложении Firestone, войдя через Battle.net.",
 				"missing-verifier": "Отсутствует PKCE code verifier. Попробуйте войти снова.",
-				"no-code": "Код авторизации не получен."
+				"no-code": "Код авторизации не получен.",
+				"missing-link-token-generic": "Ссылка устарела. Снова откройте кнопку привязки в настройках приложения Firestone.",
+				"provider-not-configured": "Этот вход пока недоступен. Попробуйте позже."
 			},
 			"link-subtitle": "Привяжите Battle.net к аккаунту Firestone",
 			"link-subtitle-overwolf": "Привяжите Overwolf к аккаунту Firestone",
@@ -2057,7 +2265,53 @@
 			"privacy-link": "Политика конфиденциальности",
 			"privacy-prefix": "Входя, вы соглашаетесь с нашей ",
 			"subtitle": "Войдите, чтобы синхронизировать данные между устройствами",
-			"web-subtitle": "Войдите на сайт Firestone"
+			"web-subtitle": "Войдите на сайт Firestone",
+			"continue-with-wechat": "Продолжить с WeChat",
+			"email": {
+				"back-to-sign-in": "Назад ко входу",
+				"confirm-password": "Подтвердите новый пароль",
+				"create-account": "Создать учётную запись",
+				"display-name": "Отображаемое имя",
+				"email": "Эл. почта",
+				"errors": {
+					"already-linked": "У этой учётной записи Firestone уже есть вход по почте.",
+					"email-in-use": "Учётная запись с этой почтой уже есть. Войдите или сбросьте пароль.",
+					"email-not-verified": "Сначала подтвердите адрес почты. Ссылка в папке входящих.",
+					"email-pending": "Регистрация этой почты ждёт подтверждения. Проверьте эту почту или попробуйте завтра.",
+					"invalid-credentials": "Неверная почта или пароль.",
+					"invalid-email": "Введите корректный адрес почты.",
+					"invalid-fs-token": "Сессия Firestone истекла. Войдите снова из приложения и повторите попытку.",
+					"invalid-password": "Пароль должен быть от 10 до 200 символов.",
+					"invalid-token": "Ссылка недействительна или устарела. Запросите новую и попробуйте снова.",
+					"password-mismatch": "Пароли не совпадают.",
+					"too-many-requests": "Слишком много попыток. Подождите несколько минут и попробуйте снова."
+				},
+				"forgot-password": "Забыли пароль?",
+				"link-email": "Добавить вход по почте",
+				"new-password": "Новый пароль",
+				"no-account": "Создать учётную запись",
+				"or": "или",
+				"password": "Пароль",
+				"password-hint": "Не меньше 10 символов.",
+				"resend-verification": "Отправить письмо ещё раз",
+				"reset-done-body": "Возврат в приложение Firestone…",
+				"reset-done-title": "Пароль обновлён!",
+				"reset-password": "Задать новый пароль",
+				"reset-sent": "Если учётная запись использует {{email}}, мы отправили ссылку для сброса пароля.",
+				"reset-subtitle": "Выберите новый пароль",
+				"send-reset": "Отправить ссылку",
+				"sign-in": "Войти по почте",
+				"verification-sent": "Мы отправили ссылку для подтверждения на {{email}}. Откройте её, чтобы закончить.",
+				"verified-body": "Возврат в приложение Firestone…",
+				"verified-title": "Почта подтверждена!",
+				"verifying": "Подтверждаем почту…"
+			},
+			"link-subtitle-email": "Добавьте вход по почте и паролю к учётной записи Firestone",
+			"link-subtitle-google": "Привязать Google к учётной записи Firestone",
+			"link-subtitle-wechat": "Привязать WeChat к учётной записи Firestone",
+			"linking-google": "Переход в Google…",
+			"linking-wechat": "Переход в WeChat…",
+			"privacy-suffix": "."
 		},
 		"docs": {
 			"back-label": "Все документы",
@@ -2517,7 +2771,7 @@
 				"unlimited": "Премиум снимает эти лимиты для оверлеев выше, чтобы цифры всегда были под рукой в важный момент."
 			},
 			"hero": {
-				"note": "Подписка оформляется в приложении Firestone (вкладка Премиум или иконка сердца). Цены показываются при оформлении в приложении.",
+				"note": "Оформите подписку здесь с учётной записью Firestone или с экрана Premium в приложении.",
 				"subtitle": "Откройте полный опыт помощника: более глубокая статистика на каждом экране, безлимитные игровые оверлеи, без рекламы и больше способов расти быстрее.",
 				"title": "Firestone Premium"
 			},
@@ -2766,10 +3020,10 @@
 				}
 			},
 			"subscribe": {
-				"step-1": "Установите и откройте Firestone (Overwolf).",
-				"step-2": "Войдите в аккаунт Overwolf, когда появится запрос.",
-				"step-3": "Откройте Премиум по иконке сердца или пункту Премиум в приложении и выберите план.",
-				"step-4": "Управляйте подпиской или отменяйте её в любое время через историю платежей Tebex — ссылки есть на экране Премиум.",
+				"step-1": "Войдите на этот сайт учётной записью, которой пользуетесь в Firestone.",
+				"step-2": "Выберите план выше и завершите оплату на Tebex.",
+				"step-3": "Premium откроется в приложении через несколько минут. Подписаться можно и с экрана Premium в приложении.",
+				"step-4": "Управляйте подпиской или отмените её в любой момент на этой странице или в приложении.",
 				"title": "Как подписаться"
 			},
 			"summary": {
@@ -2779,7 +3033,15 @@
 				"support": "Поддержать дальнейшую разработку Firestone",
 				"title": "Что вы получаете",
 				"unlimited-overlays": "Безлимитные оверлеи открытия и муллигана в классическом Hearthstone и оверлеи выбора и статистики Полей сражений (у бесплатных пользователей дневные или недельные лимиты)"
-			}
+			},
+			"apps-note": "В Firestone войдите этой учётной записью или привяжите её в Настройки > Учётная запись, чтобы получить преимущества Premium в приложении.",
+			"checkout": {
+				"cancel": "Оплата отменена. Списания не было.",
+				"failed": "Не удалось открыть оплату. Попробуйте через минуту.",
+				"success-done": "Готово: Premium активен на вашей учётной записи.",
+				"success-pending": "Спасибо, что поддерживаете Firestone! Оплата подтверждается, Premium появится здесь через несколько минут."
+			},
+			"status-error": "Сейчас не удалось проверить подписку. Если вы уже подписаны, подписываться снова не нужно: обновите страницу через минуту."
 		},
 		"redirect": {
 			"in-game-replay": "Перенаправление в Firestone...",
@@ -2873,7 +3135,9 @@
 			"account-id-copied": "ID учётной записи скопирован",
 			"copy-account-id": "Скопировать ID учётной записи",
 			"sign-in": "Войти",
-			"sign-out": "Выйти"
+			"sign-out": "Выйти",
+			"go-premium": "Оформить Premium",
+			"manage-subscription": "Управлять подпиской"
 		},
 		"contribute": {
 			"admin": {

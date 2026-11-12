@@ -50,12 +50,47 @@
 			"widgets": {
 				"card-tooltip-canvas-fallback": "カード画像の代替表示",
 				"card-tooltip-canvas-fallback-tooltip": "カードのツールチップ画像を読み込めないとき、壊れた画像の代わりにカードを描画します。"
+			},
+			"account": {
+				"hide-premium-lock-buttons-label": "プレミアムのロックボタンを隠す",
+				"hide-premium-lock-buttons-tooltip": "プレミアム機能の1日の無料回数を使い切ったあとに出るプレミアム案内ボタンを隠します",
+				"intro-other": "ほかのログイン方法をこのFirestoneアカウントにリンクします。",
+				"link-generic-label": "アカウント",
+				"link-need-sign-in": "先にFirestoneにサインインしてから、もう一度リンクしてください。",
+				"link-provider-button": "リンク",
+				"link-provider-tooltip": "{{provider}}を、このFirestoneアカウントへの別のサインイン方法として追加します。",
+				"link-provider-unavailable": "このログインはまだ利用できません。",
+				"provider-email": "メール",
+				"provider-google": "Google",
+				"provider-wechat": "WeChat",
+				"unlink-generic-failed": "このログインを解除できませんでした。あとでもう一度お試しください。",
+				"unlink-generic-label": "アカウント",
+				"unlink-provider-button": "解除",
+				"unlink-provider-confirmation": "よろしいですか？",
+				"unlink-provider-tooltip": "{{provider}}を、このFirestoneアカウントのサインイン方法から外します。"
+			},
+			"menu": {
+				"privacy": "プライバシー"
+			},
+			"privacy": {
+				"intro": "この端末でのFirestoneと広告パートナーによるデータの使い方を管理します。いつでも変更できます。",
+				"manage-button": "管理",
+				"manage-label": "広告のプライバシー設定",
+				"manage-tooltip": "広告のプライバシー設定を開きます。表示される項目は地域によって異なります。",
+				"title": "プライバシー"
+			},
+			"quests": {
+				"list-size-label": "クエスト一覧のサイズ"
 			}
 		},
 		"battlegrounds": {
 			"overlay": {
 				"hero-power-tips-label": "ヒーローパワーのヒント",
-				"hero-power-tips-tooltip": "ヒーローパワーにマウスを重ねると、Firestoneコミュニティが書いたヒントを表示します（プレミアム）。"
+				"hero-power-tips-tooltip": "ヒーローパワーにマウスを重ねると、Firestoneコミュニティが書いたヒントを表示します（プレミアム）。",
+				"quest-stats-frame-size-label": "クエストウィジェットのサイズ",
+				"quest-stats-size-label": "クエスト統計のサイズ",
+				"tavern-stats-label": "ホバーで酒場統計を表示",
+				"tavern-stats-tooltip": "酒場のアップグレードボタンにカーソルを合わせると、そのヒーローのおすすめカーブと、次のティアに到達する目安を表示します。"
 			}
 		}
 	},
@@ -70,10 +105,68 @@
 			"account-id-copied": "アカウントIDをコピーしました",
 			"copy-account-id": "アカウントIDをコピー",
 			"sign-in": "サインイン",
-			"sign-out": "サインアウト"
+			"sign-out": "サインアウト",
+			"go-premium": "プレミアムにする",
+			"manage-subscription": "サブスクリプションを管理"
 		},
 		"auth": {
-			"web-subtitle": "Firestoneのウェブサイトにサインイン"
+			"web-subtitle": "Firestoneのウェブサイトにサインイン",
+			"callback": {
+				"link-returning-generic": "Firestoneアプリに戻ります。このログインでFirestoneアカウントにサインインできます。",
+				"link-success-email": "メールログインを追加しました",
+				"link-success-google": "Googleをリンクしました",
+				"link-success-wechat": "WeChatをリンクしました"
+			},
+			"continue-with-wechat": "WeChatで続ける",
+			"email": {
+				"back-to-sign-in": "サインインに戻る",
+				"confirm-password": "新しいパスワードを確認",
+				"create-account": "アカウントを作成",
+				"display-name": "表示名",
+				"email": "メール",
+				"errors": {
+					"already-linked": "このFirestoneアカウントにはすでにメールログインがあります。",
+					"email-in-use": "このメールはすでに使われています。サインインするか、パスワードをリセットしてください。",
+					"email-not-verified": "先にメールアドレスを確認してください。受信トレイのリンクを開いてください。",
+					"email-pending": "このメールの登録は確認待ちです。その受信トレイを見るか、明日もう一度お試しください。",
+					"invalid-credentials": "メールアドレスまたはパスワードが違います。",
+					"invalid-email": "有効なメールアドレスを入力してください。",
+					"invalid-fs-token": "Firestoneのセッションが切れました。アプリから再度ログインしてやり直してください。",
+					"invalid-password": "パスワードは10〜200文字にしてください。",
+					"invalid-token": "このリンクは無効か、期限切れです。新しいリンクをリクエストしてください。",
+					"password-mismatch": "2つのパスワードが一致しません。",
+					"too-many-requests": "試行回数が多すぎます。数分待ってからもう一度お試しください。"
+				},
+				"forgot-password": "パスワードをお忘れですか？",
+				"link-email": "メールログインを追加",
+				"new-password": "新しいパスワード",
+				"no-account": "アカウントを作成",
+				"or": "または",
+				"password": "パスワード",
+				"password-hint": "10文字以上。",
+				"resend-verification": "確認メールを再送",
+				"reset-done-body": "Firestoneアプリに戻っています…",
+				"reset-done-title": "パスワードを更新しました",
+				"reset-password": "新しいパスワードを設定",
+				"reset-sent": "{{email}} のアカウントがある場合、パスワード再設定のリンクを送りました。",
+				"reset-subtitle": "新しいパスワードを選んでください",
+				"send-reset": "再設定リンクを送る",
+				"sign-in": "メールでサインイン",
+				"verification-sent": "{{email}} に確認リンクを送りました。開いて完了してください。",
+				"verified-body": "Firestoneアプリに戻っています…",
+				"verified-title": "メールを確認しました",
+				"verifying": "メールを確認しています…"
+			},
+			"errors": {
+				"missing-link-token-generic": "このリンクは期限切れです。Firestoneアプリの設定からリンク用ボタンをもう一度開いてください。",
+				"provider-not-configured": "このログインはまだ利用できません。あとでもう一度お試しください。"
+			},
+			"link-subtitle-email": "Firestoneアカウントにメールとパスワードのログインを追加",
+			"link-subtitle-google": "GoogleをFirestoneアカウントにリンク",
+			"link-subtitle-wechat": "WeChatをFirestoneアカウントにリンク",
+			"linking-google": "Googleへ移動しています…",
+			"linking-wechat": "WeChatへ移動しています…",
+			"privacy-suffix": "。"
 		},
 		"contribute": {
 			"admin": {
@@ -276,12 +369,89 @@
 			"standalone": {
 				"skip": "Overwolfをスキップしますか？"
 			}
+		},
+		"premium": {
+			"apps-note": "Firestoneではこのアカウントでサインインするか、設定 > アカウントからリンクすると、アプリでプレミアム特典を受けられます。",
+			"checkout": {
+				"cancel": "購入をキャンセルしました。請求はありません。",
+				"failed": "購入画面を開けませんでした。しばらくしてからもう一度お試しください。",
+				"success-done": "完了しました。アカウントでプレミアムが有効です。",
+				"success-pending": "Firestoneを支援していただきありがとうございます。支払いを確認中で、数分以内にここにプレミアムが表示されます。"
+			},
+			"status-error": "いまサブスクリプションを確認できませんでした。すでに登録済みなら、もう一度登録する必要はありません。しばらくしてページを更新してください。"
 		}
 	},
 	"app": {
 		"battlegrounds": {
 			"hero-power-tips": {
 				"variant-hero": "{{hero}}のみ"
+			},
+			"personal-stats": {
+				"hero-details": {
+					"tabs": {
+						"tavern-timings": "酒場のタイミング"
+					}
+				}
+			},
+			"tavern-timings": {
+				"compare-heroes-tooltip": "MMR上位25%のうち、1位または2位で終わったプレイヤー: {{hero}} 対 全ヒーロー",
+				"compare-mmr": "MMR",
+				"compare-mmr-tooltip": "MMR上位10% 対 下位50%",
+				"compare-winners": "勝者",
+				"compare-winners-tooltip": "MMR上位25%のうち、1位または2位で終わったプレイヤー 対 その他",
+				"group-bottom-50": "下位50%",
+				"group-others": "3〜8位",
+				"group-top-10": "上位10%",
+				"group-winners": "1〜2位",
+				"hover": {
+					"curve-step": "T{{tier}}をターン{{turn}}",
+					"no-placement-past-t4": "ティア4より後の順位はありません。ティア5に遅く到達するのは、それまで生き残ったプレイヤーです。",
+					"now": "現在",
+					"reach-title": "{{hero}}がティア{{tier}}に到達するとき",
+					"tier-on": "ティア{{value}}を",
+					"title": "{{hero}} · ティア{{tier}} → {{next}}",
+					"your-curve": "同じカーブのプレイヤー（{{curve}}）"
+				},
+				"legend-left": "左: {{group}}",
+				"legend-right": "右: {{group}}",
+				"never": "なし",
+				"no-data": "このフィルターでは、このヒーローの酒場統計がまだありません。",
+				"openings-curve-header": "T2 · T3 · T4を到達したターン",
+				"played": "プレイ数",
+				"reach-cell-tooltip": "ターン{{turn}}にティア{{tier}} · {{games}}戦<br/>平均順位は{{avg}}。<br/>ターン{{turn}}にまだ残っている上位25%のプレイヤー: {{reference}}。",
+				"reach-column-header": "到達ターン",
+				"reach-legend-better": "順位が良い",
+				"reach-legend-never": "未到達: そのティアに到達した全員との比較",
+				"reach-legend-worse": "順位が悪い",
+				"reach-never": "未到達",
+				"reach-never-tooltip": "ティア{{tier}}に到達せず · {{games}}戦<br/>平均順位は{{avg}}。ティア{{from}}に到達した全試合の{{reference}}との比較。",
+				"reach-row": "ティア{{from}} → {{to}}",
+				"reach-subtitle": "MMR上位25% · そのターンに残っている上位25%全員との順位差",
+				"reach-title": "各ティアへの到達目安",
+				"recommended-best": "最良",
+				"recommended-curves-title": "おすすめのカーブ",
+				"recommended-delta-header": "平均比",
+				"recommended-delta-tooltip": "このカーブの平均順位を、同じプレイヤー層（{{group}}）の全試合と比べた差。",
+				"recommended-most-played": "最多",
+				"takeaway-ahead-text": "ターン{{turn}}にティア{{tier}}以上なのは{{a}}%で、比較対象は{{b}}%。",
+				"takeaway-ahead-title": "ターン{{turn}}で先行",
+				"takeaway-behind-title": "ターン{{turn}}で遅れ",
+				"takeaway-hold-range-title": "ターン{{from}}–{{to}}: 据え置きが多い",
+				"takeaway-hold-title": "ターン{{turn}}: 据え置きが多い",
+				"takeaway-level-range-title": "ターン{{from}}–{{to}}: より多くアップグレード",
+				"takeaway-level-title": "ターン{{turn}}: より多くアップグレード",
+				"takeaway-points": "{{value}} pt",
+				"takeaway-upgrade-text": "ターン{{turn}}: ティア{{from}}の{{a}}%がティア{{to}}へ進み、比較対象は{{b}}%。",
+				"takeaways-none": "2つのグループに明確な差はありません。",
+				"takeaways-title-heroes": "{{hero}}の勝者が違う点",
+				"takeaways-title-mmr": "上位プレイヤーが違う点",
+				"takeaways-title-winners": "勝者が違う点",
+				"tier-mix-title": "ターンごとの酒場ティア",
+				"tier-mix-tooltip-end-of-turn": "ターン終了時のティア",
+				"tier-mix-tooltip-from-tier": "ティア{{from}} → {{to}}",
+				"tier-mix-tooltip-games": "プレイヤー",
+				"tier-mix-tooltip-title": "ターン{{turn}} · まだ残っているプレイヤー",
+				"tier-mix-tooltip-upgraded": "このターンにアップグレード"
 			}
 		},
 		"replay-viewer": {
@@ -333,7 +503,50 @@
 				"tavern-opens": "ラウンド{{n}}：酒場が開く",
 				"tier": "酒場レベル",
 				"tribes": "この試合の種族",
-				"versus": "対"
+				"versus": "対",
+				"activates": "{{card}}が発動",
+				"back-to-summary": "要約に戻る",
+				"choice": "選択",
+				"chose-from": "{{n}}枚から{{card}}を選択",
+				"damage-from": "ティア{{tier}} + ミニオン{{n}}体",
+				"damage-from-one": "ティア{{tier}} + ミニオン1体",
+				"discover-dark-gift": "ダークギフト",
+				"discover-greater-trinket": "上級装飾品",
+				"discover-lesser-trinket": "下級装飾品",
+				"draw-source": "{{source}}から",
+				"draws": "{{cards}}を得る",
+				"end-title": "ゲーム終了",
+				"event-discover": "発見",
+				"final-board": "最終ボード",
+				"game": "ゲーム",
+				"health": "体力",
+				"hero": "ヒーロー",
+				"lobby": "ロビー",
+				"minutes": "{{n}}分",
+				"mode": "モード",
+				"mode-solo": "バトルグラウンド · ソロ",
+				"next": "次:",
+				"offer-from": "{{source}}からの{{title}}",
+				"other-players": "他のプレイヤー",
+				"place-label": "順位",
+				"power-replaces": "{{power}}が{{from}}を{{to}}に置き換え",
+				"power-summons": "{{power}}が{{to}}を召喚",
+				"quest-progress": "進行: {{n}}/{{total}}",
+				"quest-reward": "報酬",
+				"restart": "ヒーロー選択からやり直す",
+				"round-vs": "ラウンド{{n}} 対 {{hero}}",
+				"rounds-count": "{{n}}ラウンド",
+				"sold-effect": "{{card}}が誘発",
+				"stat": {
+					"total-stats": "ステータス合計",
+					"triples": "トリプル",
+					"won": "勝利ラウンド"
+				},
+				"step-of": "ステップ {{n}} / {{total}}",
+				"step-through": "戦闘を1手ずつ見る",
+				"tap-to-close": "外側をタップして閉じる",
+				"uses-card": "{{card}}を使用",
+				"you": "自分"
 			},
 			"hero-strip": {
 				"locked": "{{count}}ロック",
@@ -366,6 +579,18 @@
 				"action": "アクション表示",
 				"board": "盤面",
 				"label": "表示"
+			},
+			"banner": {
+				"dismiss": "閉じる"
+			},
+			"header": {
+				"switch-to-old": "以前のビューアに切り替え"
+			},
+			"swipe-hint": {
+				"next": "左にスワイプして次のステップ",
+				"ok": "了解",
+				"previous": "右にスワイプして前のステップ",
+				"title": "スワイプでリプレイを進める"
 			}
 		}
 	},
@@ -431,6 +656,63 @@
 					"relentless-deflector": "「容赦なきディフレクター」には「忍びやか」は提示されない"
 				}
 			}
+		},
+		"hero-selection": {
+			"recap": {
+				"adjusted-for-lobby": "種族やアノマリーなどの特殊設定を考慮",
+				"all-heroes": "破線: 全ヒーロー",
+				"average-short": "平均",
+				"combat-winrate": "戦闘勝率",
+				"game": "戦",
+				"game-plan": "立ち回り",
+				"games": "戦",
+				"last-played": "最終プレイ {{value}}",
+				"more-tips": "アプリ内にあと{{value}}件",
+				"no-recent-games": "最近の対戦なし",
+				"peak-range": "ピーク T{{from}}–{{to}}",
+				"peak-single": "ピーク T{{value}}",
+				"rating-per-game": "1戦あたりの評価",
+				"tip-patch": "パッチ {{value}}",
+				"top-4": "トップ4",
+				"tribes": "種族",
+				"turn": "T{{value}}",
+				"win": "勝利",
+				"you": "自分"
+			}
+		},
+		"hero-stats": {
+			"avg-position-details-tooltip-estimated-position": "推定順位",
+			"avg-position-details-tooltip-hero-average": "ヒーロー平均",
+			"avg-position-details-tooltip-lobby-tribes": "このロビーの種族",
+			"pick-rate-label": "選択率:"
+		}
+	},
+	"twitch": {
+		"config": {
+			"battle-simulator": "戦闘シミュレータ",
+			"battlegrounds": "バトルグラウンド",
+			"constructed": "構築戦",
+			"general": "全般",
+			"horizontal-offset": "横方向のオフセット",
+			"horizontal-offset-help": "マウスオーバー時のボードを横にずらします。キャプチャ範囲に合わせて調整してください。",
+			"invert-tracker": "トラッカーの位置を反転",
+			"invert-tracker-help": "視聴者にはトラッカーを画面の左側に表示します。視聴者は自分で移動できます。",
+			"language": "言語",
+			"language-auto": "自動",
+			"language-help": "Twitchの言語を使い、Twitchが言語を渡さないときはブラウザの言語を使います。",
+			"magnifier": "虫めがねアイコンを上に",
+			"magnifier-bottom": "下",
+			"magnifier-help": "配信の邪魔にならないよう、虫めがねアイコンの位置を固定します。",
+			"magnifier-options-help": "ユーザー: 視聴者ごとに下か上を選べます。初期値は下です。下と上はリーダーボード上の位置を固定します。",
+			"magnifier-top": "上",
+			"magnifier-user": "ユーザー",
+			"minion-list": "ミニオンリスト",
+			"opponent-tracker": "対戦相手トラッカー",
+			"page-title": "設定ページ",
+			"save": "保存",
+			"title": "Firestoneオーバーレイ",
+			"widgets": "ウィジェット",
+			"widgets-help": "視聴者には初期状態で表示されますが、設定で自分用に変更できます。"
 		}
 	}
 }

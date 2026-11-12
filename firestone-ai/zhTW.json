@@ -4,6 +4,37 @@
 			"launch": {
 				"show-main-window-on-launch-label": "啟動時開啟主視窗",
 				"show-main-window-on-launch-tooltip": "關閉此選項時，Firestone 會在系統匣中啟動。請從系統匣圖示開啟主視窗。"
+			},
+			"account": {
+				"hide-premium-lock-buttons-label": "隱藏高級版鎖定按鈕",
+				"hide-premium-lock-buttons-tooltip": "隱藏高級版功能用完每日免費次數後出現的開通按鈕",
+				"intro-other": "把其他登入方式連結到這個 Firestone 帳號。",
+				"link-generic-label": "帳號",
+				"link-need-sign-in": "請先登入 Firestone，然後再試一次連結。",
+				"link-provider-button": "連結",
+				"link-provider-tooltip": "把 {{provider}} 添加為登入這個 Firestone 帳號的另一種方式。",
+				"link-provider-unavailable": "這種登入方式還不可用。",
+				"provider-email": "郵箱",
+				"provider-google": "Google",
+				"provider-wechat": "微信",
+				"unlink-generic-failed": "無法取消連結。請稍後再試。",
+				"unlink-generic-label": "帳號",
+				"unlink-provider-button": "取消連結",
+				"unlink-provider-confirmation": "確定嗎？",
+				"unlink-provider-tooltip": "移除用 {{provider}} 登入這個 Firestone 帳號的方式。"
+			},
+			"menu": {
+				"privacy": "隱私"
+			},
+			"privacy": {
+				"intro": "管理 Firestone 及其廣告合作方如何使用這臺設備上的資料。你可以隨時更改。",
+				"manage-button": "管理",
+				"manage-label": "廣告隱私設定",
+				"manage-tooltip": "打開廣告隱私設定。顯示的選項取決於你所在的地區。",
+				"title": "隱私"
+			},
+			"quests": {
+				"list-size-label": "任務列表大小"
 			}
 		},
 		"decktracker": {
@@ -26,6 +57,14 @@
 					"ysondre-label": "「伊索德雷」",
 					"ysondre-tooltip": "顯示「伊索德雷」在本賽局死亡的次數"
 				}
+			}
+		},
+		"battlegrounds": {
+			"overlay": {
+				"quest-stats-frame-size-label": "任務組件大小",
+				"quest-stats-size-label": "任務統計大小",
+				"tavern-stats-label": "懸停時顯示酒館資料",
+				"tavern-stats-tooltip": "懸停酒館升級按鈕時，顯示該英雄的推薦曲線，以及玩家通常何時升到下一級。"
 			}
 		}
 	},
@@ -79,8 +118,264 @@
 				"tavern-opens": "第 {{n}} 回合：旅店開啟",
 				"tier": "旅店等級",
 				"tribes": "本局手下種族",
-				"versus": "VS"
+				"versus": "VS",
+				"activates": "{{card}} 觸發",
+				"back-to-summary": "返回摘要",
+				"choice": "選擇",
+				"chose-from": "從 {{n}} 個選項中選擇了 {{card}}",
+				"damage-from": "{{tier}} 級 + {{n}} 個手下",
+				"damage-from-one": "{{tier}} 級 + 1 個手下",
+				"discover-dark-gift": "黑暗贈禮",
+				"discover-greater-trinket": "強效飾品",
+				"discover-lesser-trinket": "次級飾品",
+				"draw-source": "來自 {{source}}",
+				"draws": "獲得 {{cards}}",
+				"end-title": "對局結束",
+				"event-discover": "發現",
+				"final-board": "最終場面",
+				"game": "對局",
+				"health": "生命值",
+				"hero": "英雄",
+				"lobby": "大廳",
+				"minutes": "{{n}} 分鐘",
+				"mode": "模式",
+				"mode-solo": "戰場 · 单人",
+				"next": "下一步：",
+				"offer-from": "來自 {{source}} 的 {{title}}",
+				"other-players": "其他玩家",
+				"place-label": "名次",
+				"power-replaces": "{{power}} 將 {{from}} 替換為 {{to}}",
+				"power-summons": "{{power}} 召喚 {{to}}",
+				"quest-progress": "進度：{{n}}/{{total}}",
+				"quest-reward": "獎勵",
+				"restart": "從選擇英雄重新開始",
+				"round-vs": "第 {{n}} 回合 對 {{hero}}",
+				"rounds-count": "{{n}} 個回合",
+				"sold-effect": "{{card}} 觸發",
+				"stat": {
+					"total-stats": "屬性合計",
+					"triples": "三連",
+					"won": "勝場回合"
+				},
+				"step-of": "第 {{n}} 步，共 {{total}} 步",
+				"step-through": "逐步查看戰鬥",
+				"tap-to-close": "點外側關閉",
+				"uses-card": "使用 {{card}}",
+				"you": "你"
+			},
+			"banner": {
+				"dismiss": "關閉"
+			},
+			"header": {
+				"switch-to-old": "切換到旧版查看器"
+			},
+			"swipe-hint": {
+				"next": "向左滑看下一步",
+				"ok": "知道了",
+				"previous": "向右滑看上一步",
+				"title": "滑動瀏覽回放"
 			}
+		},
+		"battlegrounds": {
+			"personal-stats": {
+				"hero-details": {
+					"tabs": {
+						"tavern-timings": "酒館節奏"
+					}
+				}
+			},
+			"tavern-timings": {
+				"compare-heroes-tooltip": "在 MMR 前 25% 中，獲得第 1 或第 2 名的玩家：{{hero}} 對比全部英雄",
+				"compare-mmr": "MMR",
+				"compare-mmr-tooltip": "MMR 前 10% 對比後 50%",
+				"compare-winners": "勝者",
+				"compare-winners-tooltip": "在 MMR 前 25% 中：第 1 或第 2 名對比其他人",
+				"group-bottom-50": "後 50%",
+				"group-others": "第 3–8 名",
+				"group-top-10": "前 10%",
+				"group-winners": "第 1–2 名",
+				"hover": {
+					"curve-step": "第 {{turn}} 回合到 T{{tier}}",
+					"no-placement-past-t4": "4 級之後沒有名次：晚到 5 級的人，是活得足夠久的人。",
+					"now": "現在",
+					"reach-title": "{{hero}} 何時升到 {{tier}} 級",
+					"tier-on": "{{value}} 級於",
+					"title": "{{hero}} · {{tier}} 級 → {{next}}",
+					"your-curve": "與你曲線相同的玩家（{{curve}}）"
+				},
+				"legend-left": "左：{{group}}",
+				"legend-right": "右：{{group}}",
+				"never": "從未",
+				"no-data": "這些篩選條件下還沒有這位英雄的酒館資料。",
+				"openings-curve-header": "回合升到 T2 · T3 · T4",
+				"played": "場次",
+				"reach-cell-tooltip": "第 {{turn}} 回合升到 {{tier}} 級 · {{games}} 場<br/>平均名次 {{avg}}。<br/>第 {{turn}} 回合仍在局中的前 25% 玩家：{{reference}}。",
+				"reach-column-header": "升到的回合",
+				"reach-legend-better": "名次更好",
+				"reach-legend-never": "從未：對比所有升到該等級的人",
+				"reach-legend-worse": "名次更差",
+				"reach-never": "從未",
+				"reach-never-tooltip": "從未升到 {{tier}} 級 · {{games}} 場<br/>平均名次 {{avg}}，對比所有升到 {{from}} 級的對局 {{reference}}。",
+				"reach-row": "{{from}} 級 → {{to}}",
+				"reach-subtitle": "MMR 前 25% · 與該回合仍在局中的全部前 25% 玩家的名次差",
+				"reach-title": "何時升到每一級",
+				"recommended-best": "最佳",
+				"recommended-curves-title": "推薦曲線",
+				"recommended-delta-header": "對比平均",
+				"recommended-delta-tooltip": "這條曲線的平均名次，與同一批玩家（{{group}}）的全部對局相比。",
+				"recommended-most-played": "打得最多",
+				"takeaway-ahead-text": "第 {{turn}} 回合有 {{a}}% 在 {{tier}} 級或更高，對比 {{b}}%。",
+				"takeaway-ahead-title": "第 {{turn}} 回合領先",
+				"takeaway-behind-title": "第 {{turn}} 回合落後",
+				"takeaway-hold-range-title": "第 {{from}}–{{to}} 回合：他們停留",
+				"takeaway-hold-title": "第 {{turn}} 回合：他們停留",
+				"takeaway-level-range-title": "第 {{from}}–{{to}} 回合：他們更常升級",
+				"takeaway-level-title": "第 {{turn}} 回合：他們更常升級",
+				"takeaway-points": "{{value}} 分",
+				"takeaway-upgrade-text": "第 {{turn}} 回合：處於 {{from}} 級的人有 {{a}}% 升到 {{to}} 級，對比 {{b}}%。",
+				"takeaways-none": "兩組之間沒有明顯差別。",
+				"takeaways-title-heroes": "{{hero}} 的勝者有何不同",
+				"takeaways-title-mmr": "頂尖玩家有何不同",
+				"takeaways-title-winners": "勝者有何不同",
+				"tier-mix-title": "各回合的酒館等級",
+				"tier-mix-tooltip-end-of-turn": "回合結束時的等級",
+				"tier-mix-tooltip-from-tier": "{{from}} 級 → {{to}}",
+				"tier-mix-tooltip-games": "玩家",
+				"tier-mix-tooltip-title": "第 {{turn}} 回合 · 仍在局中的玩家",
+				"tier-mix-tooltip-upgraded": "本回合升級"
+			}
+		}
+	},
+	"battlegrounds": {
+		"hero-selection": {
+			"recap": {
+				"adjusted-for-lobby": "會計入手下種族以及異變等特殊設定",
+				"all-heroes": "虛線：全部英雄",
+				"average-short": "平均",
+				"combat-winrate": "戰鬥勝率",
+				"game": "場",
+				"game-plan": "運營思路",
+				"games": "場",
+				"last-played": "上次游玩 {{value}}",
+				"more-tips": "應用程式裡還有 {{value}} 條",
+				"no-recent-games": "沒有最近的對局",
+				"peak-range": "峰值 T{{from}}–{{to}}",
+				"peak-single": "峰值 T{{value}}",
+				"rating-per-game": "每場評分",
+				"tip-patch": "補丁 {{value}}",
+				"top-4": "前四",
+				"tribes": "手下種族",
+				"turn": "T{{value}}",
+				"win": "勝利",
+				"you": "你"
+			}
+		},
+		"hero-stats": {
+			"avg-position-details-tooltip-estimated-position": "預計名次",
+			"avg-position-details-tooltip-hero-average": "英雄平均",
+			"avg-position-details-tooltip-lobby-tribes": "本大廳的手下種族",
+			"pick-rate-label": "選擇率："
+		}
+	},
+	"twitch": {
+		"config": {
+			"battle-simulator": "戰鬥模擬器",
+			"battlegrounds": "戰場",
+			"constructed": "標準構築",
+			"general": "常規",
+			"horizontal-offset": "水平偏移",
+			"horizontal-offset-help": "左右移動懸停時的場面。按你的採集區域來調整。",
+			"invert-tracker": "對調追蹤器位置",
+			"invert-tracker-help": "給觀眾把追蹤器顯示在螢幕左側。他們仍然可以自己移動。",
+			"language": "語言",
+			"language-auto": "自動",
+			"language-help": "使用 Twitch 語言；Twitch 沒有提供時，使用瀏覽器語言。",
+			"magnifier": "放大鏡圖標在上方",
+			"magnifier-bottom": "底部",
+			"magnifier-help": "固定放大鏡圖標的位置，避免挡住直播畫面。",
+			"magnifier-options-help": "用戶：每位觀眾自己選底部或頂部。預設是底部。底部和頂部會在排行榜上強制使用該位置。",
+			"magnifier-top": "頂部",
+			"magnifier-user": "用戶",
+			"minion-list": "手下清單",
+			"opponent-tracker": "對手追蹤器",
+			"page-title": "配置頁面",
+			"save": "保存",
+			"title": "Firestone 覆疊視窗",
+			"widgets": "組件",
+			"widgets-help": "觀眾預設能看到這些，但可以在設定裡自己更改。"
+		}
+	},
+	"website": {
+		"account": {
+			"go-premium": "開通高級版",
+			"manage-subscription": "管理訂閱"
+		},
+		"auth": {
+			"callback": {
+				"link-returning-generic": "正在返回 Firestone 應用程式。你現在可以用這種登入方式進入 Firestone 帳號。",
+				"link-success-email": "已添加郵箱登入！",
+				"link-success-google": "已連結 Google！",
+				"link-success-wechat": "已連結微信！"
+			},
+			"continue-with-wechat": "使用微信繼續",
+			"email": {
+				"back-to-sign-in": "返回登入",
+				"confirm-password": "確認新密碼",
+				"create-account": "創建帳號",
+				"display-name": "顯示名稱",
+				"email": "郵箱",
+				"errors": {
+					"already-linked": "這個 Firestone 帳號已經有郵箱登入。",
+					"email-in-use": "已有帳號使用這個郵箱。請登入，或重置密碼。",
+					"email-not-verified": "請先確認郵箱地址。鏈接在收件箱裡。",
+					"email-pending": "這個郵箱的注冊正在等待確認。請查看該收件箱，或明天再試。",
+					"invalid-credentials": "郵箱或密碼不正確。",
+					"invalid-email": "請輸入有效的郵箱地址。",
+					"invalid-fs-token": "Firestone 會話已過期。請從應用程式重新登入後再試。",
+					"invalid-password": "密碼長度必须在 10 到 200 個字符之間。",
+					"invalid-token": "這個鏈接無效或已過期。請重新獲取後再試。",
+					"password-mismatch": "兩次輸入的密碼不一致。",
+					"too-many-requests": "嘗試次數過多。請等幾分鐘再試。"
+				},
+				"forgot-password": "忘記密碼？",
+				"link-email": "添加郵箱登入",
+				"new-password": "新密碼",
+				"no-account": "創建帳號",
+				"or": "或",
+				"password": "密碼",
+				"password-hint": "至少 10 個字符。",
+				"resend-verification": "重新發送確認郵件",
+				"reset-done-body": "正在返回 Firestone 應用程式…",
+				"reset-done-title": "密碼已更新！",
+				"reset-password": "設定新密碼",
+				"reset-sent": "如果有帳號使用 {{email}}，我們已向其發送重置密碼的鏈接。",
+				"reset-subtitle": "選擇一個新密碼",
+				"send-reset": "發送重置鏈接",
+				"sign-in": "使用郵箱登入",
+				"verification-sent": "我們已向 {{email}} 發送確認鏈接。打開它即可完成。",
+				"verified-body": "正在返回 Firestone 應用程式…",
+				"verified-title": "郵箱已確認！",
+				"verifying": "正在確認郵箱…"
+			},
+			"errors": {
+				"missing-link-token-generic": "這個鏈接已過期。請在 Firestone 應用程式設定裡重新打開連結按鈕。",
+				"provider-not-configured": "這種登入方式還不可用。請稍後再試。"
+			},
+			"link-subtitle-email": "為 Firestone 帳號添加郵箱和密碼登入",
+			"link-subtitle-google": "將 Google 連結到 Firestone 帳號",
+			"link-subtitle-wechat": "將微信連結到 Firestone 帳號",
+			"linking-google": "正在跳轉到 Google…",
+			"linking-wechat": "正在跳轉到微信…"
+		},
+		"premium": {
+			"apps-note": "在 Firestone 中用這個帳號登入，或在設定 > 帳號裡連結它，即可在應用程式中獲得高級版權益。",
+			"checkout": {
+				"cancel": "已取消結賬。沒有扣款。",
+				"failed": "無法打開結賬。請稍後再試。",
+				"success-done": "已經就绪：高級版已在你的帳號上生效。",
+				"success-pending": "感謝支持 Firestone！正在確認付款，高級版會在幾分鐘內顯示在這裡。"
+			},
+			"status-error": "現在無法檢查你的訂閱。如果已經訂閱，不必再次訂閱：請稍後再刷新頁面。"
 		}
 	}
 }

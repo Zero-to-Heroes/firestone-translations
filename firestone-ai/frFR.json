@@ -37,6 +37,73 @@
 			},
 			"strategies": {
 				"outdated": "Rédigé pour une ancienne version de ce pouvoir héroïque"
+			},
+			"personal-stats": {
+				"hero-details": {
+					"tabs": {
+						"tavern-timings": "Rythme de taverne"
+					}
+				}
+			},
+			"tavern-timings": {
+				"compare-heroes-tooltip": "Parmi les 25 % de MMR les plus élevés, les joueurs qui ont fini 1er ou 2e : {{hero}} contre tous les héros",
+				"compare-mmr": "MMR",
+				"compare-mmr-tooltip": "10 % de MMR les plus élevés contre 50 % les plus bas",
+				"compare-winners": "Gagnants",
+				"compare-winners-tooltip": "Parmi les 25 % de MMR les plus élevés : les joueurs qui ont fini 1er ou 2e contre les autres",
+				"group-bottom-50": "50 % les plus bas",
+				"group-others": "Places 3e–8e",
+				"group-top-10": "10 % les plus élevés",
+				"group-winners": "Places 1re–2e",
+				"hover": {
+					"curve-step": "N{{tier}} au tour {{turn}}",
+					"no-placement-past-t4": "Pas de place après le niveau 4 : ceux qui atteignent le niveau 5 tard sont ceux qui ont survécu assez longtemps.",
+					"now": "maintenant",
+					"reach-title": "Quand {{hero}} atteint le niveau {{tier}}",
+					"tier-on": "Niveau {{value}} au",
+					"title": "{{hero}} · Niveau {{tier}} → {{next}}",
+					"your-curve": "Joueurs avec votre courbe ({{curve}})"
+				},
+				"legend-left": "Gauche : {{group}}",
+				"legend-right": "Droite : {{group}}",
+				"never": "jamais",
+				"no-data": "Pas encore de stats de taverne pour ce héros avec ces filtres.",
+				"openings-curve-header": "N2 · N3 · N4 au tour",
+				"played": "Jouées",
+				"reach-cell-tooltip": "Niveau {{tier}} au tour {{turn}} · {{games}} parties<br/>Ils ont fini {{avg}} en moyenne.<br/>Joueurs du top 25 % encore en jeu au tour {{turn}} : {{reference}}.",
+				"reach-column-header": "Atteint au tour",
+				"reach-legend-better": "Mieux placés",
+				"reach-legend-never": "Jamais : contre tous ceux qui ont atteint le niveau",
+				"reach-legend-worse": "Moins bien placés",
+				"reach-never": "Jamais",
+				"reach-never-tooltip": "Niveau {{tier}} jamais atteint · {{games}} parties<br/>Ils ont fini {{avg}} en moyenne, contre {{reference}} pour toutes les parties qui ont atteint le niveau {{from}}.",
+				"reach-row": "Niveau {{from}} → {{to}}",
+				"reach-subtitle": "25 % de MMR les plus élevés · Écart de place contre tous les joueurs du top 25 % encore en jeu à ce tour",
+				"reach-title": "Quand atteindre chaque niveau",
+				"recommended-best": "Meilleure",
+				"recommended-curves-title": "Courbes recommandées",
+				"recommended-delta-header": "vs moy.",
+				"recommended-delta-tooltip": "Place moyenne avec cette courbe, comparée à toutes les parties des mêmes joueurs ({{group}}).",
+				"recommended-most-played": "La plus jouée",
+				"takeaway-ahead-text": "{{a}} % sont au niveau {{tier}} ou plus au tour {{turn}}, contre {{b}} %.",
+				"takeaway-ahead-title": "En avance au tour {{turn}}",
+				"takeaway-behind-title": "En retard au tour {{turn}}",
+				"takeaway-hold-range-title": "Tours {{from}}–{{to}} : ils restent",
+				"takeaway-hold-title": "Tour {{turn}} : ils restent",
+				"takeaway-level-range-title": "Tours {{from}}–{{to}} : ils montent plus",
+				"takeaway-level-title": "Tour {{turn}} : ils montent plus",
+				"takeaway-points": "{{value}} pts",
+				"takeaway-upgrade-text": "Tour {{turn}} : {{a}} % de ceux au niveau {{from}} passent au niveau {{to}}, contre {{b}} %.",
+				"takeaways-none": "Pas de différence nette entre les deux groupes.",
+				"takeaways-title-heroes": "Ce que les gagnants avec {{hero}} font autrement",
+				"takeaways-title-mmr": "Ce que les meilleurs joueurs font autrement",
+				"takeaways-title-winners": "Ce que les gagnants font autrement",
+				"tier-mix-title": "Niveau de taverne par tour",
+				"tier-mix-tooltip-end-of-turn": "Niveau à la fin du tour",
+				"tier-mix-tooltip-from-tier": "Niveau {{from}} → {{to}}",
+				"tier-mix-tooltip-games": "Joueurs",
+				"tier-mix-tooltip-title": "Tour {{turn}} · joueurs encore en jeu",
+				"tier-mix-tooltip-upgraded": "Montés ce tour"
 			}
 		},
 		"replays": {
@@ -147,7 +214,8 @@
 			},
 			"banner": {
 				"back-to-old": "Revenir à l’ancien lecteur",
-				"new-viewer": "Vous utilisez le nouveau lecteur de replay."
+				"new-viewer": "Vous utilisez le nouveau lecteur de replay.",
+				"dismiss": "Fermer"
 			},
 			"bg": {
 				"anomaly": "Anomalie",
@@ -192,7 +260,50 @@
 				"tavern-opens": "Tour {{n}} : la taverne ouvre",
 				"tier": "Niveau de taverne",
 				"tribes": "Types de cette partie",
-				"versus": "vs"
+				"versus": "vs",
+				"activates": "{{card}} s'active",
+				"back-to-summary": "Retour au résumé",
+				"choice": "Choix",
+				"chose-from": "A choisi {{card}} parmi {{n}} options",
+				"damage-from": "Niveau {{tier}} + {{n}} serviteurs",
+				"damage-from-one": "Niveau {{tier}} + 1 serviteur",
+				"discover-dark-gift": "Don ténébreux",
+				"discover-greater-trinket": "Bibelot supérieur",
+				"discover-lesser-trinket": "Bibelot inférieur",
+				"draw-source": "Depuis {{source}}",
+				"draws": "Obtient {{cards}}",
+				"end-title": "Fin de partie",
+				"event-discover": "Découverte",
+				"final-board": "Plateau final",
+				"game": "Partie",
+				"health": "Vie",
+				"hero": "Héros",
+				"lobby": "Lobby",
+				"minutes": "{{n}} min",
+				"mode": "Mode",
+				"mode-solo": "Champs de bataille · Solo",
+				"next": "Suivant :",
+				"offer-from": "{{title}} depuis {{source}}",
+				"other-players": "Les autres joueurs",
+				"place-label": "place",
+				"power-replaces": "{{power}} remplace {{from}} par {{to}}",
+				"power-summons": "{{power}} invoque {{to}}",
+				"quest-progress": "Progression : {{n}}/{{total}}",
+				"quest-reward": "Récompense",
+				"restart": "Reprendre depuis le choix du héros",
+				"round-vs": "Manche {{n}} contre {{hero}}",
+				"rounds-count": "{{n}} manches",
+				"sold-effect": "{{card}} se déclenche",
+				"stat": {
+					"total-stats": "Stats totales",
+					"triples": "Triples",
+					"won": "Manches gagnées"
+				},
+				"step-of": "Étape {{n}} sur {{total}}",
+				"step-through": "Avancer dans le combat",
+				"tap-to-close": "Touchez à l'extérieur pour fermer",
+				"uses-card": "Utilise {{card}}",
+				"you": "Vous"
 			},
 			"coming-soon": {
 				"text": "Les replays des Champs de bataille et des Mercenaires ne sont pas encore disponibles sur mobile. Ouvrez cette page sur un ordinateur pour le visionner.",
@@ -272,7 +383,8 @@
 				"shortcuts": "Raccourcis clavier",
 				"turns": "{{count}} tours",
 				"versus": "{{mine}} vs {{opponent}}",
-				"view-in-firestone": "Voir dans le client HS"
+				"view-in-firestone": "Voir dans le client HS",
+				"switch-to-old": "Passer à l'ancien visionneur"
 			},
 			"hero-strip": {
 				"corpses": "Cadavres",
@@ -397,6 +509,12 @@
 				"action": "Vue des actions",
 				"board": "Plateau",
 				"label": "Vue"
+			},
+			"swipe-hint": {
+				"next": "Balayez vers la gauche pour l'étape suivante",
+				"ok": "Compris",
+				"previous": "Balayez vers la droite pour l'étape précédente",
+				"title": "Balayez pour avancer dans la rediffusion"
 			}
 		}
 	},
@@ -468,6 +586,35 @@
 		},
 		"sim": {
 			"cards-discarded-this-game-tooltip": "Le nombre de cartes que vous avez défaussées pendant cette partie"
+		},
+		"hero-selection": {
+			"recap": {
+				"adjusted-for-lobby": "tient compte des tribus et des réglages spéciaux comme les anomalies",
+				"all-heroes": "pointillés : tous les héros",
+				"average-short": "moy.",
+				"combat-winrate": "Taux de victoire en combat",
+				"game": "partie",
+				"game-plan": "Plan de jeu",
+				"games": "parties",
+				"last-played": "Joué pour la dernière fois {{value}}",
+				"more-tips": "+{{value}} de plus dans l'appli",
+				"no-recent-games": "Aucune partie récente",
+				"peak-range": "pic N{{from}}–{{to}}",
+				"peak-single": "pic N{{value}}",
+				"rating-per-game": "Note par partie",
+				"tip-patch": "patch {{value}}",
+				"top-4": "Top 4",
+				"tribes": "Tribus",
+				"turn": "N{{value}}",
+				"win": "Victoire",
+				"you": "Vous"
+			}
+		},
+		"hero-stats": {
+			"avg-position-details-tooltip-estimated-position": "Place estimée",
+			"avg-position-details-tooltip-hero-average": "Moyenne du héros",
+			"avg-position-details-tooltip-lobby-tribes": "Tribus de ce lobby",
+			"pick-rate-label": "Taux de choix :"
 		}
 	},
 	"bgs-comp": {
@@ -573,7 +720,11 @@
 				"hero-power-extra-info-tooltip": "Lorsque vous survolez votre pouvoir héroïque, afficher des détails en direct supplémentaires dans l’infobulle de la carte (par exemple les types de serviteurs déjà dans le chaudron de Cookie le cuistot).",
 				"counter-tavern-spells-cast-label": "Sorts de la taverne lancés",
 				"hero-power-tips-label": "Conseils de pouvoir héroïque",
-				"hero-power-tips-tooltip": "Au survol de votre pouvoir héroïque, affiche les conseils écrits par la communauté Firestone (Premium)."
+				"hero-power-tips-tooltip": "Au survol de votre pouvoir héroïque, affiche les conseils écrits par la communauté Firestone (Premium).",
+				"quest-stats-frame-size-label": "Taille du widget de quête",
+				"quest-stats-size-label": "Taille des stats de quête",
+				"tavern-stats-label": "Stats de taverne au survol",
+				"tavern-stats-tooltip": "Quand vous survolez le bouton d'amélioration de la taverne, affiche les courbes recommandées pour votre héros et le moment où les joueurs atteignent en général le niveau suivant."
 			}
 		},
 		"decktracker": {
@@ -633,13 +784,29 @@
 				"intro-battlenet-linked-overwolf": "Cette connexion Battle.net est liée à un compte Overwolf afin que vous puissiez voir cet historique de parties. Dissociez Overwolf pour utiliser chaque connexion séparément.",
 				"link-overwolf-label": "Overwolf",
 				"perks-history-detail": "Les parties qui ne sont pas liées à un compte sont nettoyées au bout d’environ un an.",
-				"perks-lottery-detail": "Les points s’accumulent toujours localement ; connectez-vous pour les synchroniser et participer à la fin de la saison.",
-				"perks-replays-detail": "Sans compte, les fichiers de replay sont supprimés après 60 jours.",
-				"perks-replays-title": "Les replays durent environ un an",
+				"perks-lottery-detail": "Une chance de gagner un abonnement Premium de 2 mois à la fin de chaque période de deux semaines.",
+				"perks-replays-detail": "Sans compte, les fichiers de rediffusion sont supprimés après 60 jours, et après un an une fois connecté (ils restent pour toujours pour les utilisateurs premium).",
+				"perks-replays-title": "Gardez vos rediffusions plus longtemps",
 				"perks-title": "Pourquoi se connecter ?",
 				"provider-overwolf": "Overwolf",
-				"sign-in-tooltip": "Ouvrir la page de connexion pour vous identifier avec Overwolf ou Battle.net.",
-				"unlink-overwolf-label": "Overwolf"
+				"sign-in-tooltip": "Ouvre la page de connexion.",
+				"unlink-overwolf-label": "Overwolf",
+				"hide-premium-lock-buttons-label": "Masquer les boutons de verrou premium",
+				"hide-premium-lock-buttons-tooltip": "Masque les boutons Passer en premium qui apparaissent quand les utilisations quotidiennes gratuites des fonctions premium sont épuisées",
+				"intro-other": "Liez d'autres fournisseurs à ce compte Firestone.",
+				"link-generic-label": "Compte",
+				"link-need-sign-in": "Connectez-vous d'abord à Firestone, puis réessayez de lier.",
+				"link-provider-button": "Lier",
+				"link-provider-tooltip": "Ajoutez {{provider}} comme autre moyen de vous connecter à ce compte Firestone.",
+				"link-provider-unavailable": "Cette connexion n'est pas encore disponible.",
+				"provider-email": "E-mail",
+				"provider-google": "Google",
+				"provider-wechat": "WeChat",
+				"unlink-generic-failed": "Impossible de dissocier cette connexion. Réessayez plus tard.",
+				"unlink-generic-label": "Compte",
+				"unlink-provider-button": "Dissocier",
+				"unlink-provider-confirmation": "Confirmer ?",
+				"unlink-provider-tooltip": "Retirez {{provider}} comme moyen de vous connecter à ce compte Firestone."
 			},
 			"launch": {
 				"replay-ftue-button-label": "Revoir l’introduction",
@@ -652,7 +819,8 @@
 				"show-main-window-on-launch-tooltip": "Si l’option est désactivée, Firestone démarre dans la zone de notification. Ouvrez la fenêtre principale depuis son icône."
 			},
 			"menu": {
-				"hotkeys": "Raccourcis"
+				"hotkeys": "Raccourcis",
+				"privacy": "Confidentialité"
 			},
 			"mods": {
 				"auto-update-trusted": "Mods de confiance uniquement",
@@ -684,7 +852,8 @@
 				"scroll-pools-tooltip": "Maintenez ceci pour garder l’infobulle de la carte ouverte et faire défiler son pool de cartes. Vous pouvez assigner Maj, Ctrl ou Alt seuls, une combinaison de touches ou un bouton latéral de la souris."
 			},
 			"quests": {
-				"size-label": "Taille du widget de quête"
+				"size-label": "Taille du widget de quête",
+				"list-size-label": "Taille de la liste de quêtes"
 			},
 			"data": {
 				"refresh-signed-out": "Vous devez vous connecter pour retélécharger tout votre historique de parties depuis le serveur."
@@ -692,6 +861,13 @@
 			"widgets": {
 				"card-tooltip-canvas-fallback": "Image de carte de secours",
 				"card-tooltip-canvas-fallback-tooltip": "Si l’image d’infobulle d’une carte ne se charge pas, dessine la carte au lieu de laisser une image cassée."
+			},
+			"privacy": {
+				"intro": "Choisissez comment Firestone et ses partenaires publicitaires utilisent les données sur cet appareil. Vous pouvez changer cela à tout moment.",
+				"manage-button": "Gérer",
+				"manage-label": "Confidentialité des pubs",
+				"manage-tooltip": "Ouvre les réglages de confidentialité des pubs. Les options dépendent de votre région.",
+				"title": "Confidentialité"
 			}
 		},
 		"global": {
@@ -706,16 +882,67 @@
 				"link-success-overwolf": "Overwolf lié !",
 				"please-wait": "Veuillez patienter pendant la vérification de votre compte",
 				"returning": "Retour vers l’application Firestone…",
-				"try-again": "Réessayer"
+				"try-again": "Réessayer",
+				"link-returning-generic": "Retour vers l'appli Firestone. Vous pouvez maintenant utiliser cette connexion pour votre compte Firestone.",
+				"link-success-email": "Connexion e-mail ajoutée !",
+				"link-success-google": "Google lié !",
+				"link-success-wechat": "WeChat lié !"
 			},
 			"errors": {
 				"missing-link-token": "Ce lien a expiré. Ouvrez Lier Battle.net depuis l’application Firestone tout en étant connecté avec Overwolf.",
-				"missing-link-token-overwolf": "Ce lien a expiré. Ouvrez Lier Overwolf depuis l’application Firestone tout en étant connecté avec Battle.net."
+				"missing-link-token-overwolf": "Ce lien a expiré. Ouvrez Lier Overwolf depuis l’application Firestone tout en étant connecté avec Battle.net.",
+				"missing-link-token-generic": "Ce lien a expiré. Rouvrez le bouton de liaison dans les paramètres de l'appli Firestone.",
+				"provider-not-configured": "Cette connexion n'est pas encore disponible. Réessayez plus tard."
 			},
 			"linking": "Redirection vers Battle.net…",
 			"linking-overwolf": "Redirection vers Overwolf…",
 			"privacy-link": "Politique de confidentialité",
-			"web-subtitle": "Connectez-vous au site Firestone"
+			"web-subtitle": "Connectez-vous au site Firestone",
+			"continue-with-wechat": "Continuer avec WeChat",
+			"email": {
+				"back-to-sign-in": "Retour à la connexion",
+				"confirm-password": "Confirmer le nouveau mot de passe",
+				"create-account": "Créer un compte",
+				"display-name": "Nom affiché",
+				"email": "E-mail",
+				"errors": {
+					"already-linked": "Ce compte Firestone a déjà une connexion par e-mail.",
+					"email-in-use": "Un compte utilise déjà cet e-mail. Connectez-vous ou réinitialisez le mot de passe.",
+					"email-not-verified": "Confirmez d'abord votre adresse e-mail. Le lien est dans votre boîte de réception.",
+					"email-pending": "Une inscription pour cet e-mail attend une confirmation. Vérifiez cette boîte, ou réessayez demain.",
+					"invalid-credentials": "E-mail ou mot de passe incorrect.",
+					"invalid-email": "Saisissez une adresse e-mail valide.",
+					"invalid-fs-token": "Votre session Firestone a expiré. Reconnectez-vous depuis l'appli et réessayez.",
+					"invalid-password": "Les mots de passe doivent contenir entre 10 et 200 caractères.",
+					"invalid-token": "Ce lien est invalide ou a expiré. Demandez-en un nouveau et réessayez.",
+					"password-mismatch": "Les deux mots de passe ne correspondent pas.",
+					"too-many-requests": "Trop de tentatives. Attendez quelques minutes et réessayez."
+				},
+				"forgot-password": "Mot de passe oublié ?",
+				"link-email": "Ajouter une connexion e-mail",
+				"new-password": "Nouveau mot de passe",
+				"no-account": "Créer un compte",
+				"or": "ou",
+				"password": "Mot de passe",
+				"password-hint": "Au moins 10 caractères.",
+				"resend-verification": "Renvoyer l'e-mail de confirmation",
+				"reset-done-body": "Retour vers l'appli Firestone…",
+				"reset-done-title": "Mot de passe mis à jour !",
+				"reset-password": "Choisir un nouveau mot de passe",
+				"reset-sent": "Si un compte utilise {{email}}, nous lui avons envoyé un lien pour réinitialiser le mot de passe.",
+				"reset-subtitle": "Choisissez un nouveau mot de passe",
+				"send-reset": "Envoyer le lien",
+				"sign-in": "Connexion par e-mail",
+				"verification-sent": "Nous avons envoyé un lien de confirmation à {{email}}. Ouvrez-le pour terminer.",
+				"verified-body": "Retour vers l'appli Firestone…",
+				"verified-title": "E-mail confirmé !",
+				"verifying": "Confirmation de votre e-mail…"
+			},
+			"link-subtitle-email": "Ajoutez une connexion e-mail et mot de passe à votre compte Firestone",
+			"link-subtitle-google": "Lier Google à votre compte Firestone",
+			"link-subtitle-wechat": "Lier WeChat à votre compte Firestone",
+			"linking-google": "Redirection vers Google…",
+			"linking-wechat": "Redirection vers WeChat…"
 		},
 		"docs": {
 			"images": {
@@ -982,13 +1209,21 @@
 				}
 			},
 			"subscribe": {
-				"step-3": "Ouvrez Premium via l’icône de cœur ou l’entrée Premium dans l’application, puis choisissez un plan."
+				"step-3": "Le premium se débloque dans l'appli en quelques minutes. Vous pouvez aussi vous abonner depuis l'écran Premium dans l'appli."
 			},
 			"summary": {
 				"ad-free": "Supprimer les publicités dans l’application",
 				"meta-analytics": "Analyses méta complètes des decks et archétypes, détails au niveau des cartes, et pages de deck plus riches dans l’application",
 				"title": "Ce que vous obtenez"
-			}
+			},
+			"apps-note": "Dans Firestone, connectez-vous avec ce compte, ou liez-le dans Paramètres > Compte pour obtenir les avantages premium dans l'appli.",
+			"checkout": {
+				"cancel": "Paiement annulé. Vous n'avez pas été débité.",
+				"failed": "Impossible d'ouvrir le paiement. Réessayez dans un instant.",
+				"success-done": "C'est bon : le premium est actif sur votre compte.",
+				"success-pending": "Merci de soutenir Firestone ! Le paiement est en cours de confirmation, le premium apparaîtra ici dans quelques minutes."
+			},
+			"status-error": "Impossible de vérifier votre abonnement pour le moment. Si vous êtes déjà abonné, inutile de vous réabonner : actualisez la page dans un instant."
 		},
 		"redirect": {
 			"in-game-replay": "Redirection vers Firestone...",
@@ -1048,7 +1283,9 @@
 			"account-id-copied": "Identifiant de compte copié",
 			"copy-account-id": "Copier l’identifiant de compte",
 			"sign-in": "Connexion",
-			"sign-out": "Déconnexion"
+			"sign-out": "Déconnexion",
+			"go-premium": "Passer en premium",
+			"manage-subscription": "Gérer l'abonnement"
 		},
 		"contribute": {
 			"admin": {
@@ -1302,6 +1539,34 @@
 			"readerAttached": "Non relié",
 			"readerTracking": "Suivi",
 			"restartTitle": "Redémarrer Hearthstone"
+		}
+	},
+	"twitch": {
+		"config": {
+			"battle-simulator": "Simulateur de combat",
+			"battlegrounds": "Champs de bataille",
+			"constructed": "Construit",
+			"general": "Général",
+			"horizontal-offset": "Décalage horizontal",
+			"horizontal-offset-help": "Décale le plateau au survol. Ajustez-le selon la zone de capture.",
+			"invert-tracker": "Inverser la position des suivis",
+			"invert-tracker-help": "Affiche votre suivi à gauche de l'écran pour vos spectateurs. Ils peuvent toujours le déplacer.",
+			"language": "Langue",
+			"language-auto": "Auto",
+			"language-help": "Utilise la langue Twitch, ou celle du navigateur si Twitch n'en fournit pas.",
+			"magnifier": "Icône loupe en haut",
+			"magnifier-bottom": "Bas",
+			"magnifier-help": "Force la position de l'icône loupe pour qu'elle ne gêne pas votre stream.",
+			"magnifier-options-help": "Utilisateur : chaque spectateur choisit bas ou haut. Bas est la valeur par défaut. Bas et Haut forcent cette position sur le classement.",
+			"magnifier-top": "Haut",
+			"magnifier-user": "Utilisateur",
+			"minion-list": "Liste de serviteurs",
+			"opponent-tracker": "Suivi de l'adversaire",
+			"page-title": "Page de configuration",
+			"save": "Enregistrer",
+			"title": "Overlay Firestone",
+			"widgets": "Widgets",
+			"widgets-help": "Les spectateurs les voient par défaut, mais peuvent les changer dans les paramètres."
 		}
 	}
 }
