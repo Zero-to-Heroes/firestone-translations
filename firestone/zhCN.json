@@ -2134,7 +2134,7 @@
                     "not-in-game": "游戏内回放只有在炉石传说运行时才有效。请启动炉石传说再试一次。",
                     "mod-not-active": "你需要启用 Replay Viewer 模组才能使用游戏内的回放。请前往设置，在模组标签下启用 Replay Viewer 模组。",
                     "mod-not-installed": "你需要启用 Replay Viewer 模组才能使用游戏内的回放。请前往设置，在模组标签下启用 Replay Viewer 模组。",
-                    "connection-failed": "我们无法下载回放。请检查您的连接设置，例如您的防火墙、VPN、代理等。",
+                    "connection-failed": "Firestone 无法连接到回放查看器模组。请确认炉石传说正在运行且模组已启用，并检查防火墙或 VPN 设置。",
                     "download-failed": "我们无法下载回放。请检查您的连接设置，例如您的防火墙、VPN、代理等。",
                     "rewind-block": "这局对战有回溯区块。这些区块目前还未被 Replay Viewer 正确支持。"
                 }
@@ -2570,7 +2570,8 @@
                 },
                 "link-copied": "链接已复制",
                 "view-in-firestone": "在炉石客户端中查看",
-                "firestone-hint": "如果没有任何反应，请确保已安装并运行了 Firestone。"
+                "firestone-hint": "如果没有任何反应，请确保已安装并运行了 Firestone。",
+                "switch-to-old": "切换到旧版查看器"
             },
             "action-view": {
                 "kind": {
@@ -2697,7 +2698,8 @@
             },
             "banner": {
                 "back-to-old": "返回旧版查看器",
-                "new-viewer": "你正在使用新版回放查看器。"
+                "new-viewer": "你正在使用新版回放查看器。",
+                "dismiss": "关闭"
             },
             "error": {
                 "unsupported": "查看器暂不支持此游戏类型。",
@@ -2725,6 +2727,95 @@
             "mulligan": {
                 "coin": "抽到幸运币",
                 "replaced": "已换"
+            },
+            "bg": {
+                "end": "结束",
+                "game-info": "对局信息",
+                "hero-selection": "英雄选择",
+                "run": "回合",
+                "tribes": "本局的随从类型",
+                "anomaly": "畸变",
+                "combat": "战斗",
+                "combat-summary": "摘要",
+                "health-graph": "玩家生命值",
+                "mmr": "等级积分",
+                "recruit": "招募",
+                "rounds": "回合",
+                "combat-details": "逐步演示",
+                "combat-end": "结束",
+                "combat-start": "开始",
+                "discover": "发现",
+                "picked": "选取",
+                "round": "第{{n}}回合",
+                "damage": "{{n}}点伤害",
+                "eliminated": "淘汰",
+                "empty-board": "战场上没有随从",
+                "empty-shop": "鲍勃没东西可卖",
+                "events": "事件",
+                "gold": "铸币",
+                "tier": "酒馆等级",
+                "versus": "对阵",
+                "combat-vs": "与{{hero}}战斗",
+                "place": {
+                    "1": "第1名",
+                    "2": "第2名",
+                    "3": "第3名",
+                    "4": "第4名",
+                    "5": "第5名",
+                    "6": "第6名",
+                    "7": "第7名",
+                    "8": "第8名"
+                },
+                "result": {
+                    "lost": "落败",
+                    "tied": "战平",
+                    "won": "获胜"
+                },
+                "tavern-opens": "第{{n}}回合：酒馆开启",
+                "damage-from-one": "{{tier}}级酒馆 + 1个随从",
+                "other-players": "其他玩家",
+                "step-through": "逐步查看战斗过程",
+                "rounds-count": "{{n}}回合",
+                "sold-effect": "{{card}}触发次数",
+                "back-to-summary": "返回摘要",
+                "choice": "选择",
+                "chose-from": "从{{n}}个选项中选择了{{card}}",
+                "damage-from": "{{tier}}级酒馆 + {{n}}个随从",
+                "discover-dark-gift": "黑暗之赐",
+                "discover-greater-trinket": "大型饰品",
+                "minutes": "{{n}}分钟",
+                "activates": "{{card}}发动次数",
+                "place-label": "名次",
+                "you": "您",
+                "discover-lesser-trinket": "小型饰品",
+                "draw-source": "来源：{{source}}",
+                "draws": "获得{{cards}}",
+                "end-title": "对局结束",
+                "event-discover": "发现",
+                "final-board": "最终阵容",
+                "game": "对局",
+                "health": "生命值",
+                "hero": "英雄",
+                "lobby": "大厅",
+                "mode": "模式",
+                "mode-solo": "酒馆战棋 · 单打",
+                "next": "下一步：",
+                "restart": "从英雄选择开始重播",
+                "round-vs": "第{{n}}回合，对手是{{hero}}...",
+                "stat": {
+                    "total-stats": "总计",
+                    "triples": "三连次数",
+                    "won": "获胜回合数"
+                },
+                "step-of": "第{{n}}步，共{{total}}步",
+                "tap-to-close": "点击外部区域关闭",
+                "uses-card": "使用{{card}}"
+            },
+            "swipe-hint": {
+                "next": "向左滑动进入下一步",
+                "previous": "向右滑动进入上一步",
+                "title": "滑动以浏览回放",
+                "ok": "知道了"
             }
         }
     },
@@ -3231,7 +3322,7 @@
             "player": "本回合施放的法术数量：{{spellCount}}。循环位置：{{value}}"
         },
         "ancestral-automaton": {
-            "player": "本局对战中你已召唤了{{value}}个星元自动机"
+            "player": "本局对战中你已召唤了{{value}}个“星界自动机”"
         },
         "leyline-spell-cost-discount": {
             "opponent": "对手的魔网牌法力值消耗降低了{{value}}点",
@@ -3319,6 +3410,9 @@
         "therazane": {
             "opponent": "对手接下来施放的这{{value}}个法术派系的法术会施放两次：{{schools}}",
             "player": "你接下来施放的这{{value}}个法术派系的法术会施放两次：{{schools}}"
+        },
+        "crash-of-thunder": {
+            "player": "你在本回合已施放{{value}}个自然法术。“雷电崩鸣”的法力值消耗为{{cost}}。"
         }
     },
     "loading": {
@@ -3942,7 +4036,11 @@
             "strategies-link": "点击以查看推荐策略",
             "strategies-link-tooltip": "将打开单独窗口来显示这个英雄的玩法建议",
             "avg-position-details-tooltip-base-value": "基础值",
-            "avg-position-details-tooltip-details-text": "所有玩家扮演这个英雄在此分段时的平均排名，受下列因素影响"
+            "avg-position-details-tooltip-details-text": "所有玩家扮演这个英雄在此分段时的平均排名，受下列因素影响",
+            "avg-position-details-tooltip-hero-average": "英雄平均值",
+            "avg-position-details-tooltip-estimated-position": "预计名次",
+            "avg-position-details-tooltip-lobby-tribes": "本局大厅中的随从类型",
+            "pick-rate-label": "选取率："
         },
         "hero-selection": {
             "achievement-completed": "完成成就",
@@ -4399,7 +4497,8 @@
                 "streamer": "主播",
                 "addons": "附加组件",
                 "account": "账号",
-                "hotkeys": "快捷键"
+                "hotkeys": "快捷键",
+                "privacy": "隐私"
             },
             "mods": {
                 "title": "模组",
@@ -4608,7 +4707,9 @@
                 "disable-overlay-shared-texture-tooltip": "默认情况下，游戏内浮窗直接通过显卡发送到游戏中，这样可以大大减少 CPU 的使用。如果浮窗未显示、显示不正确或挡住了游戏中的点击，请开启此功能。将在下次启动炉石传说时生效。",
                 "close-app-on-game-exit-label": "离开游戏时关闭应用",
                 "disable-hardware-acceleration-tooltip": "使用 CPU 而非显卡渲染应用窗口和浮窗。这可以降低应用的显存占用，但动画和滚动可能会占用更多 CPU。如果出现显示异常或窗口空白，也可以尝试启用此选项。更改后需重启应用。",
-                "close-app-on-game-exit-tooltip": "关闭炉石传说时退出 Firestone。启用“结束游戏时显示战绩”后，此选项不可用。"
+                "close-app-on-game-exit-tooltip": "关闭炉石传说时退出 Firestone。启用“结束游戏时显示战绩”后，此选项不可用。",
+                "show-main-window-on-launch-tooltip": "关闭时，Firestone 会启动到系统托盘中。点击托盘中的图标即可打开主窗口。",
+                "show-main-window-on-launch-label": "启动时打开主窗口"
             },
             "localization": {
                 "title": "本地化",
@@ -4838,20 +4939,20 @@
                 "link-battlenet-label": "Battle.net",
                 "unlink-battlenet-label": "Battle.net",
                 "unlink-battlenet-tooltip": "取消 Battle.net 与你的 Overwolf Firestone 账户的关联。取消后，每次登录将只显示各自的游戏历史记录。",
-                "link-battlenet-button": "关联 Battle.net",
+                "link-battlenet-button": "关联",
                 "link-battlenet-tooltip": "请先使用 Overwolf 登录，然后关联 Battle.net。之后您可以使用 Battle.net 登录并刷新您的数据。",
                 "link-battlenet-need-overwolf": "请先使用 Overwolf 登录，然后关联 Battle.net。",
                 "log-out-button": "登出",
-                "sign-in-tooltip": "打开登录页面，使用 Overwolf 或 Battle.net 登录。",
+                "sign-in-tooltip": "打开登录页面。",
                 "provider-overwolf": "Overwolf",
                 "sign-in-button": "登录",
                 "log-out-tooltip": "在此设备上登出你的 Firestone 账号。",
                 "signed-in-as": "已通过 {{provider}} 登录为 <b>{{name}}</b>。Firestone 用户名：{{username}}",
                 "intro-battlenet-linked": "此 Battle.net 登录与您的 Overwolf Firestone 账户相关联。如需单独使用，请解除关联。",
-                "unlink-battlenet-button": "取消 Battle.net 关联",
+                "unlink-battlenet-button": "取消关联",
                 "not-signed-in": "尚未登录。",
                 "provider-unknown": "未知的提供者",
-                "link-overwolf-button": "关联 Overwolf",
+                "link-overwolf-button": "关联",
                 "link-overwolf-tooltip": "关联现有的 Overwolf Firestone 账号。这将允许你导入现有数据（对局历史、开包历史等）。",
                 "unlink-last-login-label": "账号",
                 "unlink-overwolf-confirmation": "您确定吗？",
@@ -4863,7 +4964,7 @@
                 "signed-in-linked-overwolf-tooltip": "关联的 Overwolf 账号：{{name}}",
                 "link-overwolf-need-battlenet": "请先使用 Battle.net 登录，然后再次尝试关联 Overwolf。",
                 "intro-battlenet-linked-overwolf": "此 Battle.net 登录与你的 Overwolf 账号相关联。如需单独使用每个登录，请解除 Overwolf 的关联。",
-                "unlink-overwolf-button": "取消 Overwolf 关联",
+                "unlink-overwolf-button": "取消关联",
                 "perks-replays-title": "回放大约保存一年",
                 "perks-intro": "登录免费。这能让 Firestone 更好地为你服务。",
                 "perks-title": "为什么要登录？",
@@ -4874,7 +4975,23 @@
                 "perks-replays-detail": "没有账号，回放文件将在60天后被删除。",
                 "perks-history-title": "你的对局记录会保留在云端",
                 "perks-history-detail": "未关联账号的对局记录大约会在一年后自动清除。",
-                "link-battlenet-failed": "无法开始关联 Battle.net 账号，请稍后重试。"
+                "link-battlenet-failed": "无法开始关联 Battle.net 账号，请稍后重试。",
+                "hide-premium-lock-buttons-tooltip": "免费使用次数耗尽后，隐藏会员功能旁出现的“升级会员”按钮",
+                "unlink-generic-failed": "无法解除此登录方式的关联，请稍后重试。",
+                "provider-wechat": "微信",
+                "hide-premium-lock-buttons-label": "隐藏会员锁定按钮",
+                "intro-other": "将其他服务商账号关联到此 Firestone 账号。",
+                "link-generic-label": "账号",
+                "link-need-sign-in": "请先登录 Firestone 账号，然后再尝试关联。",
+                "link-provider-button": "关联",
+                "link-provider-tooltip": "将 {{provider}} 添加为此 Firestone 账号的另一种登录方式。",
+                "link-provider-unavailable": "此登录方式暂不可用。",
+                "provider-google": "Google",
+                "unlink-generic-label": "账号",
+                "unlink-provider-button": "取消关联",
+                "unlink-provider-confirmation": "您确定吗？",
+                "unlink-provider-tooltip": "移除 {{provider}} 登录方式，使其无法再用于登录此 Firestone 账号。",
+                "provider-email": "邮箱"
             },
             "hotkeys": {
                 "title": "快捷键",
@@ -4892,6 +5009,13 @@
                 "scroll-pools": "滚动卡池",
                 "listening-scroll-pools": "请按一个按键或鼠标侧键...",
                 "clear": "清除"
+            },
+            "privacy": {
+                "manage-tooltip": "打开广告隐私设置。其中选项因所在地区而异。",
+                "intro": "管理 Firestone 及其广告合作伙伴对本设备数据的使用方式。你可以随时更改设置。",
+                "manage-button": "管理",
+                "manage-label": "广告隐私设置",
+                "title": "隐私"
             }
         },
         "decktracker": {
@@ -5071,7 +5195,7 @@
                     "starships-launched-label": "已发射的星舰",
                     "starships-launched-tooltip": "显示对手本局对战中发射的星舰数量及其组件",
                     "hero-power-use-label": "英雄技能使用",
-                    "ysondre-tooltip": "显示在本局对战中伊森德雷的死亡次数",
+                    "ysondre-tooltip": "显示“伊森德雷”在本局对战中的死亡次数",
                     "ysondre-label": "伊森德雷",
                     "hero-power-use-tooltip": "显示你使用英雄技能的次数",
                     "imbue-tooltip": "显示对手在本局对战中灌注英雄技能的次数",
@@ -5085,15 +5209,19 @@
                     "herald-tooltip": "显示对手当前的兆示等级",
                     "bashana-label": "巴珊娜·符文图腾",
                     "bashana-tooltip": "显示巴珊娜·符文图腾的树人还剩多少法力值能施放",
-                    "ancestral-automaton-tooltip": "显示对手召唤了多少次星元自动机",
-                    "ancestral-automaton-label": "星元自动机",
+                    "ancestral-automaton-tooltip": "显示对手召唤了多少次“星界自动机”",
+                    "ancestral-automaton-label": "星界自动机",
                     "flesh-giant-tooltip": "显示对手在作为{{classes}}职业时，对手英雄的生命值在他们的回合中变化了多少次",
                     "cthun-abilities-label": "克苏恩的技能",
                     "cthun-abilities-tooltip": "当“克苏恩，帝国之眼”在对手的手牌、牌库或场上时，显示其四个技能中对手已触发了多少个",
                     "ghuun-blood-runes-label": "“戈霍恩”生命值",
                     "ghuun-blood-runes-tooltip": "当对手使用三鲜血符文的死亡骑士套牌且本局至少使用过一鲜血符文的卡牌时，显示“戈霍恩”偷取多少点生命值（基础6点加上已使用的鲜血符文数量）。",
                     "nzoth-dreams-end-label": "恩佐斯，梦境之末",
-                    "nzoth-dreams-end-tooltip": "启用后，当对手至少召唤过一个亡语随从时，显示其召唤的亡语随从数量，以及“恩佐斯，梦境之末”的当前法力消耗。"
+                    "nzoth-dreams-end-tooltip": "启用后，当对手至少召唤过一个亡语随从时，显示其召唤的亡语随从数量，以及“恩佐斯，梦境之末”的当前法力消耗。",
+                    "cards-discarded-tooltip": "显示对手在本局对战中弃掉的卡牌数量",
+                    "cthun-cost-label": "克苏恩法力值消耗",
+                    "cthun-cost-tooltip": "显示“克苏恩，帝国之眼”降低的法力值消耗",
+                    "hero-attacks-tooltip": "显示对手的英雄在本局对战中攻击的次数"
                 },
                 "size-title": "尺寸和透明度",
                 "opacity-title": "透明度",
@@ -5364,7 +5492,15 @@
                     "hodir-label": "巨人之父霍迪尔",
                     "hodir-tooltip": "显示“巨人之父霍迪尔”还能将多少个随从设为8/8属性值",
                     "therazane-label": "地母塞拉赞恩",
-                    "therazane-tooltip": "显示下一个会施放两次的法术派系"
+                    "therazane-tooltip": "显示下一个会施放两次的法术派系",
+                    "ancestral-automaton-tooltip": "显示你召唤“星界自动机”的次数",
+                    "specific-deaths": "显示 “{{cardName}}” 为对手死亡的次数",
+                    "ysondre-label": "伊森德雷",
+                    "ysondre-tooltip": "显示“伊森德雷”在本局对战中的死亡次数",
+                    "cthun-cost-label": "克苏恩法力值消耗",
+                    "cthun-cost-tooltip": "显示“克苏恩，帝国之眼”降低的法力值消耗",
+                    "crash-of-thunder-label": "雷电崩鸣",
+                    "crash-of-thunder-tooltip": "当“雷电崩鸣”在你的手牌或牌库中时，显示你在本回合施放的自然法术数量"
                 },
                 "discovery-zone-label": "发现区",
                 "discovery-zone-tooltip": "启用此功能，将在记牌器中分离出一个新的分区记录你的发现选项。此功能可以方便你查看关联卡牌并高亮显示你套牌中的卡牌配合。",
@@ -5681,7 +5817,9 @@
                 "counter-tavern-spells-cast-label": "施放酒馆法术",
                 "counter-tavern-spells-cast-tooltip": "显示你在本局对战中已施放了多少个酒馆法术",
                 "hero-power-tips-tooltip": "鼠标悬停在英雄技能上时，显示 Firestone 社区为其撰写的技巧提示（会员功能）。",
-                "hero-power-tips-label": "英雄技能技巧"
+                "hero-power-tips-label": "英雄技能技巧",
+                "quest-stats-frame-size-label": "任务小组件尺寸",
+                "quest-stats-size-label": "任务数据尺寸"
             },
             "session-widget": {
                 "title": "战绩记录小部件",
@@ -5938,7 +6076,11 @@
                 "link-returning": "正在返回 Firestone 应用。你现在可以使用 Battle.net 登录。",
                 "link-returning-overwolf": "正在返回 Firestone 应用。你在 Overwolf 中的对局历史现在可以在这个 Battle.net 登录中查看。",
                 "link-success-overwolf": "Overwolf 已关联！",
-                "overwolf-hint": "如果打开的是 Overwolf 而不是 Firestone 独立版，请<a href=\"/faq#login-opens-overwolf\">更改 Windows 默认应用</a>以处理 firestoneapp:// 链接。"
+                "overwolf-hint": "如果打开的是 Overwolf 而不是 Firestone 独立版，请<a href=\"/faq#login-opens-overwolf\">更改 Windows 默认应用</a>以处理 firestoneapp:// 链接。",
+                "link-returning-generic": "正在返回 Firestone 应用。现在你可以使用此登录方式登录 Firestone 账号。",
+                "link-success-google": "Google 已关联！",
+                "link-success-wechat": "微信已关联！",
+                "link-success-email": "邮箱登录方式已添加！"
             },
             "privacy-html": "登录即表示你同意我们的<a href=\"https://github.com/Zero-to-Heroes/firestone/blob/master/tos.md\" target=\"_blank\" rel=\"noopener noreferrer\">隐私政策</a>",
             "subtitle": "登录以在多台设备之间同步数据",
@@ -5956,7 +6098,9 @@
                 "failed": "无法完成登录，请重试。",
                 "battlenet-not-configured": "Battle.net 登录暂不可用，请稍后重试。",
                 "missing-link-token": "此链接已过期。请使用 Overwolf 登录 Firestone 应用，然后打开“关联 Battle.net”。",
-                "missing-link-token-overwolf": "此链接已过期。请使用 Firestone 用 Battle.net 登录后打开关联 Overwolf。"
+                "missing-link-token-overwolf": "此链接已过期。请使用 Firestone 用 Battle.net 登录后打开关联 Overwolf。",
+                "missing-link-token-generic": "此链接已过期。请重新从 Firestone 应用设置中点击关联按钮。",
+                "provider-not-configured": "此登录方式暂不可用，请稍后重试。"
             },
             "link-subtitle": "将 Battle.net 关联到你的 Firestone 账号",
             "linking": "正在将你重定向至 Battle.net…",
@@ -5965,7 +6109,52 @@
             "privacy-suffix": " ",
             "linking-overwolf": "正在将你重定向至 Overwolf…",
             "link-subtitle-overwolf": "将 Overwolf 关联到你的 Firestone 账号",
-            "web-subtitle": "登录 Firestone 官网"
+            "web-subtitle": "登录 Firestone 官网",
+            "email": {
+                "no-account": "创建账号",
+                "reset-sent": "如果有账号使用 {{email}}，我们已向该邮箱发送密码重置链接。",
+                "verifying": "正在验证邮箱…",
+                "or": "或",
+                "errors": {
+                    "invalid-fs-token": "你的 Firestone 会话已过期，请在应用中重新登录后重试。",
+                    "invalid-email": "请输入有效的邮箱地址。",
+                    "invalid-password": "密码长度必须在 10 到 200 个字符之间。",
+                    "already-linked": "此 Firestone 账号已关联邮箱登录方式。",
+                    "email-in-use": "已有账号使用此邮箱。请登录或重置密码。",
+                    "email-not-verified": "请先验证邮箱地址，并检查收件箱中的验证链接。",
+                    "email-pending": "此邮箱的注册申请尚待确认。请查看该邮箱的收件箱，或明天再试。",
+                    "invalid-token": "此链接无效或已过期。请重新获取链接后再试。",
+                    "password-mismatch": "两次输入的密码不一致。",
+                    "invalid-credentials": "邮箱或密码错误。",
+                    "too-many-requests": "尝试次数过多，请稍等几分钟后重试。"
+                },
+                "email": "邮箱",
+                "back-to-sign-in": "返回登录",
+                "confirm-password": "确认新密码",
+                "create-account": "创建账号",
+                "display-name": "显示名称",
+                "forgot-password": "忘记密码？",
+                "link-email": "添加邮箱登录",
+                "new-password": "新密码",
+                "password": "密码",
+                "password-hint": "至少 10 个字符。",
+                "resend-verification": "重新发送确认邮件",
+                "reset-done-body": "正在返回 Firestone 应用……",
+                "reset-done-title": "密码已更新！",
+                "reset-password": "设置新密码",
+                "reset-subtitle": "设置新密码",
+                "send-reset": "发送重置链接",
+                "sign-in": "使用邮箱登录",
+                "verification-sent": "我们已向 {{email}} 发送确认链接，请打开链接完成验证。",
+                "verified-body": "正在返回 Firestone 应用……",
+                "verified-title": "邮箱已验证！"
+            },
+            "link-subtitle-email": "为你的 Firestone 账号添加邮箱和密码登录方式。",
+            "link-subtitle-google": "将 Google 关联到你的 Firestone 账号",
+            "linking-google": "正在将你重定向至 Google…",
+            "linking-wechat": "正在跳转至微信……",
+            "link-subtitle-wechat": "将微信关联到你的 Firestone 账号",
+            "continue-with-wechat": "使用微信继续"
         },
         "faq": {
             "images": {
@@ -6102,7 +6291,7 @@
         "nav": {
             "download-alt": "下载 Firestone",
             "home": "Firestone 首页",
-            "premium": "高级会员",
+            "premium": "会员",
             "language": "语言",
             "downloads": "下载"
         },
@@ -6138,10 +6327,11 @@
             "document-title": "Firestone 高级会员 — www.firestoneapp.com",
             "cta": {
                 "download": "下载 Firestone",
-                "get": "获取 Firestone"
+                "get": "获取 Firestone",
+                "see-plans": "查看方案"
             },
             "hero": {
-                "note": "订阅需在 Firestone 应用内购买（高级会员选项卡或心形图标）。价格会在应用内结账时显示。",
+                "note": "使用 Firestone 账号直接在此处订阅，也可以前往应用内的“会员”页面订阅。",
                 "title": "Firestone 高级会员",
                 "subtitle": "解锁完整的辅助体验：各界面提供更深入的数据、无限使用游戏内浮窗、移除广告，以及更多助你快速提升的功能。"
             },
@@ -6162,11 +6352,11 @@
                 "battlegrounds": "酒馆战棋：英雄选择浮窗每日 {{heroSelection}} 次；任务每日 {{quests}} 次；饰品每日 {{trinkets}} 次；时空扭曲每日 {{timewarped}} 次"
             },
             "subscribe": {
-                "step-1": "安装并打开 Firestone（Overwolf）。",
-                "step-2": "出现提示时，使用 Overwolf 账户登录。",
-                "step-3": "通过心形图标或应用内的高级会员入口打开高级会员页面，然后选择订阅方案。",
+                "step-1": "请使用 Firestone 账号登录此网站。",
+                "step-2": "请先在上方选择计划，然后通过 Tebex 完成付款。",
+                "step-3": "几分钟后你就可以在应用中使用高级版功能。你也可以在应用内的“会员”页面订阅。",
                 "title": "如何订阅",
-                "step-4": "可随时通过 Tebex 付款历史管理或取消订阅——相关链接会显示在高级会员界面中。"
+                "step-4": "你可以随时在此页面或应用中管理或取消订阅，都会跳转至 Tebex。"
             },
             "carousel": {
                 "gallery": "媒体图库，共{{count}}项",
@@ -6418,6 +6608,53 @@
                     },
                     "title": "常规功能与回放"
                 }
+            },
+            "checkout": {
+                "success-pending": "感谢你支持 Firestone！正在确认付款，通常不到一分钟即可完成……",
+                "cancel": "结账已取消，未产生任何扣费。",
+                "success-slow": "你的付款仍在处理中，请稍后几分钟刷新此页面。如果仍未显示会员订阅状态，请通过 Discord 联系我们。",
+                "success-done": "一切就绪，你的账号已开通会员订阅。"
+            },
+            "plans": {
+                "apps-note": "会员权益与你的 Firestone 账号绑定。请在 Firestone 应用中登录同一个账号。对于 Overwolf 版 Firestone，在此处购买高级版后，只有将 Overwolf 登录方式关联到该账号才能解锁，你可以在此处使用 Overwolf 登录，也可以在应用设置中关联 Overwolf。",
+                "billed": {
+                    "yearly": "每年收费 {{price}}",
+                    "six-month": "每6个月收费 {{price}}",
+                    "monthly": "付款周期为每个月"
+                },
+                "error": {
+                    "signed-out": "会话已过期，请重新登录以订阅。",
+                    "checkout-failed": "无法打开结账页面，请稍后重试。"
+                },
+                "per-month": "{{price}} / 月",
+                "period": {
+                    "yearly": "年付",
+                    "monthly": "月付",
+                    "six-month": "半年付"
+                },
+                "lead": "所有计划解锁的会员功能都相同，订阅期限越长，月均费用越低。",
+                "save": "立省{{value}}%",
+                "title": "选择你的订阅计划",
+                "loading": "正在加载订阅计划…",
+                "redirecting": "正在打开结账页面…",
+                "sign-in-to-subscribe": "登录后订阅",
+                "subscribe": "订阅",
+                "taxes": "此价格不含税费，结账时会根据你的账单地址计算并添加。付款由 Tebex 处理。"
+            },
+            "subscription": {
+                "manage-note": "请前往我们的支付合作伙伴 Tebex 取消订阅或更新付款方式。Tebex 会要求你使用结账时填写的邮箱登录。",
+                "title": "你的订阅",
+                "unknown-plan": "会员",
+                "ending": "已取消订阅，会员仍可使用至 {{date}}。",
+                "ending-no-date": "已取消订阅，会员仍可使用至当前周期结束。",
+                "manage": "管理订阅",
+                "renews": "订阅有效，将于 {{date}} 续订。",
+                "renews-no-date": "订阅有效，将自动续订。",
+                "switch-note": "如需更换方案，请先取消当前订阅，待其到期后再重新订阅。"
+            },
+            "status": {
+                "error": "暂时无法查询你的订阅状态。如果你已经订阅，无需重复订阅，请稍后刷新页面。",
+                "loading": "正在检查订阅状态…"
             }
         },
         "docs": {
@@ -6755,7 +6992,10 @@
             "copy-account-id": "复制账号ID",
             "sign-out": "登出",
             "sign-in": "登录",
-            "account-id-copied": "已复制账号ID"
+            "account-id-copied": "已复制账号ID",
+            "go-premium": "升级会员",
+            "manage-subscription": "管理订阅",
+            "premium-badge": "会员"
         },
         "contribute": {
             "nav-label": "贡献",
