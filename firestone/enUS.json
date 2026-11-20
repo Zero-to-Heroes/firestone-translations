@@ -2799,9 +2799,6 @@
 		"elemental-buff": {
 			"player": "Your Elementals that grant stats grant an additional +{{atk}}/+{{health}}"
 		},
-		"ancestral-automaton": {
-			"player": "You have summoned {{value}} Ancestral Automatons this game"
-		},
 		"volumizer-buff": {
 			"player": "Your Volumizers get +{{atk}}/+{{health}} this game"
 		},
@@ -4869,6 +4866,8 @@
 				"refresh-signed-out": "You need to sign in to re-download your full game history from the server.",
 				"clear-games-label": "Clear games.",
 				"clear-games-tooltip": "Clear your games, and reload the latest games based on your preferences (last 100 days by default, you can change that by enabling the Advanced Settings). This might be useful if you have a lot of games and feel that the app is using too much RAM",
+				"keep-local-games-label": "Keep local games",
+				"keep-local-games-tooltip": "When refreshing, keep games that are already in the app but no longer on the server, for example because they were automatically purged. Turn this off to keep only the games that come from the server and remove your local games.",
 				"games-period": "Load your games for",
 				"games-period-options": {
 					"all-time": "All time",
@@ -5208,8 +5207,7 @@
 					"galakrond-tooltip": "Show the number of times your opponent has invoked Galakrond (appears only when the opponent plays Galakrond or a card that Invokes Galakrond)",
 					"pogo-label": "Pogo-Hopper",
 					"pogo-tooltip": "Show the number of times your opponent has played a Pogo-Hopper",
-					"ancestral-automaton-label": "Ancestral Automaton",
-					"ancestral-automaton-tooltip": "Show the number of times your opponent has summoned an Ancestral Automaton",
+					"ancestral-automaton-label": "{{cardName}}",
 					"discovers-tooltip": "Counts the number of times your opponent has Discovered a card",
 					"earthen-golem-label": "Earthen Golem",
 					"earthen-golem-tooltip": "Show the number of times your opponent has summoned an Earthen Golem",
@@ -5298,7 +5296,6 @@
 					"card-name-summoned-tooltip": "Show the number of times you have summoned {{cardName}} cards",
 					"card-dead-tooltip": "Show the number of times {{cardName}} have died on your side",
 					"specific-deaths": "Show the number of times {{cardName}} died for your opponent",
-					"ancestral-automaton-tooltip": "Show the number of times you have summoned an Ancestral Automaton",
 					"galakrond-tooltip": "Show the number of times you have invoked Galakrond (appears only when you play Galakrond or a card that Invokes Galakrond)",
 					"pogo-tooltip": "Show the number of times you have played a Pogo-Hopper",
 					"jade-guardians-tooltip": "Show the number of times you have played a 2-cost card this game",
